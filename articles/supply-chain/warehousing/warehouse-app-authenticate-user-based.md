@@ -98,11 +98,6 @@ The following procedure shows one way to register an application in Microsoft En
     ms-appx-web://microsoft.aad.brokerplugin/{clientId}
     ```
 
-    > [!NOTE]
-    > If you still have devices running the deprecated version 3.x of the app, you must also add the following redirect URI:
-    >
-    > `ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333`
-
     Select **Configure** to save your settings and close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
 
 1. On the **Redirect URI configuration** tab, select **Add redirect URI**.
@@ -112,23 +107,7 @@ The following procedure shows one way to register an application in Microsoft En
     - **Package name** – Enter the following value (case sensitive):
 
         ``` text
-        com.Microsoft.Warehousemanagement
-        ```
-
-    - **Signature hash** – Enter the following value:
-
-        ``` text
-        Xo8WBi6jzSxKDVR4drqm84yr9iU=
-        ```
-
-    Select **Configure** to save your settings and close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
-
-1. Repeat the previous two steps to add another Android platform configuration, but this time set the following values:
-
-    - **Package name** – Enter the following value (case sensitive and different from the previous configuration):
-
-        ``` text
-        com.microsoft.warehousemanagement
+        com.Microsoft.WarehouseManagement
         ```
 
     - **Signature hash** – Enter the following value:
@@ -137,9 +116,7 @@ The following procedure shows one way to register an application in Microsoft En
         hpavxC1xAIAr5u39m1waWrUbsO8=
         ```
 
-    > [!TIP]
-    > - The first signature hash (`Xo8WBi6jzSxKDVR4drqm84yr9iU=`) enables brokered authentication and is required for features such as [Conditional Access](warehouse-app-conditional-access-enable.md) and [SSO](#sso). The second hash (`hpavxC1xAIAr5u39m1waWrUbsO8=`) supports older versions of the app. Include both to ensure full compatibility.
-    > - The values for **Package name** are case sensitive and the required casing is different for each Android platform configuration. The values are otherwise similar.
+    Select **Configure** to save your settings and close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
 
 1. On the **Redirect URI configuration** tab, select **Add redirect URI**.
 
