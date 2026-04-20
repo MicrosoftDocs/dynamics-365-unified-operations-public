@@ -85,7 +85,7 @@ The following procedure shows one way to register an application in Microsoft En
 1. On the left navigation pane, expand **Manage** and select **App registrations**.
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
-1. Your new app registration opens. Make a note of the **Application (client) ID** value, because you'll need it later. This ID is referred to later in this article as the *client ID*.
+1. Your new app registration opens. Make a note of the **Application (client) ID** value, because you need it later. This ID is referred to later in this article as the *client ID*.
 1. In the **Manage** list, select **Authentication**.
 1. On the **Authentication** page for the new app, open the **Settings** tab, set **Allow public client flows** to *Enabled*, and select **Save**.
 
@@ -156,13 +156,13 @@ The following procedure shows one way to register an application in Microsoft En
 1. In the **Request API permissions** dialog, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
 1. Use the search field at the top of the page to find and open the **Microsoft Entra ID** service.
 1. On the left navigation pane, expand **Manage** and select **Enterprise applications**. Then, in the new **Manage** list, select **All applications**.
-1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app that's found matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
+1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
 1. On the left navigation pane, expand **Manage** and select **Properties**.
 1. Set the **Assignment required?** option to *Yes* and the **Visible to users?** option to *No*. Then select **Save** on the toolbar.
 1. On the left navigation pane, expand **Manage** and select **Users and groups**.
 1. On the toolbar, select **Add user/group**.
 1. On the **Add Assignment** page, select the link under the **Users** heading.
-1. In the **Users** dialog, select each user that you'll use to authenticate devices with Supply Chain Management.
+1. In the **Users** dialog, select each user that you use to authenticate devices with Supply Chain Management.
 1. Select **Select** to apply your settings and close the dialog. Then select **Assign** to apply your settings and close the **Add Assignment** page.
 1. In the **Security** list, select **Permissions**.
 1. Select **Grant admin consent for \<*your tenant*\>**, and grant admin consent on behalf of your users. If you lack the necessary permissions, return to the **Manage** list, open **Properties**, and set the **Assignment required?** option to *False*. Each user can then provide consent individually.
@@ -217,7 +217,7 @@ To revoke access, follow these steps:
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the left navigation pane, select **Microsoft Entra ID**, and ensure that you're in the correct directory.
 1. In the **Manage** list, select **Users**.
-1. Find the user account that's associated with the device code, and select the name to open the user's profile.
+1. To open the user's profile, find the user account associated with the device code, and select the name.
 1. On the toolbar, select **Revoke sessions** to revoke the user account's sessions.
 
 > [!NOTE]
