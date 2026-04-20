@@ -56,4 +56,4 @@ For information about the maintenance windows for each region, see [What are the
 | Station 6 | May 18 to May 19, 2026 | May 30 to May 31, 2026 |
 
 > [!IMPORTANT]
-> This update applies only to environments that are on version 10.0.45 or earlier. For version 10.0.46 environments, the update is skipped.
+> This update applies only to environments that are on version 10.0.45 or earlier. For version 10.0.46 environments and later, the update is skipped.
