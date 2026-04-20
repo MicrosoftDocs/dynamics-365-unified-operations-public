@@ -4,7 +4,7 @@ description: The Pricing management module is deprecated and no longer available
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 10/25/2024
+ms.date: 4/20/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
