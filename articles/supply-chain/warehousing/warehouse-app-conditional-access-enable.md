@@ -15,7 +15,7 @@ ms.custom:
 
 The Warehouse Management mobile app supports *brokered authentication*, a sign-in method where an OS-level identity broker, such as Microsoft Authenticator or Intune Company Portal, handles authentication and token management on behalf of the app. When you use brokered authentication, the broker provides Microsoft Entra ID with device identity, compliance status, and security signals during every authentication request.
 
-Brokered authentication makes the app compatible with [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies. Conditional Access is a policy engine in Microsoft Entra ID that your organization's IT administrators can configure to control access based on conditions such as user identity, device compliance, location, and risk level. For example, you might use Conditional Access to require multifactor authentication (MFA) or block access from unmanaged devices.
+Brokered authentication makes the app compatible with [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies. Conditional Access is an optional, opt-in policy engine in Microsoft Entra ID that your organization's IT administrators can configure to control access based on conditions such as user identity, device compliance, location, and risk level. For example, you might use Conditional Access to require multifactor authentication (MFA) or block access from unmanaged devices. Conditional Access isn't required to run the Warehouse Management mobile app—enable it only if your organization chooses to enforce these policies.
 
 > [!IMPORTANT]
 > The Warehouse Management mobile app doesn't configure or enforce Conditional Access policies. It uses brokered authentication as a communication layer that passes the required signals to Microsoft Entra ID. Your organization's IT administrators are responsible for the configuration of Conditional Access policies and their rules in [Microsoft Entra ID](/entra/identity/conditional-access/overview).
@@ -64,13 +64,17 @@ Follow these steps to set up Microsoft Authenticator. The procedure is the same 
 
 Brokered authentication works with the global Microsoft Entra ID application—you don't need a manual app registration. We recommend the global application because it's simpler to set up and maintain.
 
-If you already use a manual app registration for other reasons (such as on-premises environment requirements), it also works with brokered authentication. In this case, ensure that your registration includes the Android signature hash: `Xo8WBi6jzSxKDVR4drqm84yr9iU=`. Learn more in [Manually create an application registration in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service).
+The global application is provided as a Microsoft first-party application (FPA) and is available on the Azure commercial cloud. If your environment is deployed on a US government cloud—such as US Government Community Cloud (GCC) or GCC High—the global application isn't available, and you must use a manual app registration instead.
+
+If you already use a manual app registration for other reasons (such as on-premises environment requirements or a government cloud deployment), it also works with brokered authentication. Learn more in [Manually create an application registration in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service).
 
 <a name="config-devices"></a>
 
 ## Configure devices to use brokered authentication
 
-When you use the global application, brokered authentication is enabled by default on all platforms. The only additional configuration required is enabling the new redirect URI on **Android devices**. You can configure devices manually through the app UI or automatically by distributing a JSON file via QR code or MDM.
+When you use the global application, brokered authentication is enabled by default on all platforms. You can configure devices manually through the app UI or automatically by distributing a JSON file via QR code or MDM.
+
+If you don't want to use brokered authentication, set the **Brokered authentication** option to *No* on the **Edit connection** page (or set `"UseBroker": false` in the JSON configuration). If the device doesn't have Microsoft Authenticator installed, the app falls back to a standard username and password connection.
 
 ### Configure the connection manually
 
@@ -86,7 +90,6 @@ To manually set up a connection, follow these steps on each device:
 
     - **Authentication method** – Set to *Username and Password*.
     - **Cloud** – Set to *Azure Global* (recommended). If you use a manual app registration, set to *Manual* and also provide the **Microsoft Entra ID client** and **Microsoft Entra ID tenant** values.
-    - **AndroidNewRedirectURI** – If you're using an Android device, set this option to *Yes*. This is the only additional setting required for Android to use brokered authentication.
 
     Configure all the other settings as described in [Manually configure the application](install-configure-warehouse-management-app.md#config-manually).
 
@@ -97,17 +100,13 @@ To manually set up a connection, follow these steps on each device:
 
 To prepare for automatic connection configurations distributed by using a QR code or MDM system, create a JSON file that contains the connection details. Learn more in [Configure the application by importing connection settings](install-configure-warehouse-management-app.md#configure-the-application-by-importing-connection-settings).
 
-For Android devices, add the following setting to your JSON configuration file:
-
-- `"AndroidNewRedirectURI": true`
-
 For all platforms, the connection must use username/password authentication, which you specify as follows in the JSON file:
 
 - `"ConnectionType": "UsernamePassword"`
 
 When you use the global application (`"AuthCloud": "AzureGlobal"`), brokered authentication is enabled by default, so you don't need to set `"UseBroker"` or `"AuthCloud"` explicitly.
 
-The following example shows a JSON configuration that uses the global application with brokered authentication enabled on Android:
+The following example shows a JSON configuration that uses the global application with brokered authentication enabled:
 
 ```json
 {
@@ -117,8 +116,7 @@ The following example shows a JSON configuration that uses the global applicatio
     "IsEditable": true,
     "IsDefaultConnection": true,
     "ConnectionType": "UsernamePassword",
-    "AuthCloud": "AzureGlobal",
-    "AndroidNewRedirectURI": true
+    "AuthCloud": "AzureGlobal"
 }
 ```
 
