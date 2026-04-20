@@ -29,6 +29,9 @@ This section lists the features included in this release when available. The art
 
 | Module or feature area | Feature name | More information | Enabled by |
 | --- | --- | --- | --- |
+| Agent foundation | Deep links for Dynamics 365 ERP MCP | This feature enables responses generated from agent experiences to include direct navigation links to the corresponding records in the ERP application. When an MCP request retrieves or modifies record data, the MCP response includes a deep link URL that opens the application context used to generate that response. Learn more in [Deep links for Dynamics 365 ERP MCP](../../dev-itpro/copilot/mcp/mcp-deep-links). | Administrator |
+| Agent foundation | Attachment support for Dynamics 365 ERP MCP | The feature enables the Dynamics 365 ERP MCP server to read, create, modify, and delete attachment records in the Dynamics 365 ERP applications. Learn more in [Enable agents to work with attachments through Dynamics 365 ERP MCP server](https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities/enable-agents-work-file-attachments-through-dynamics-365-erp-mcp-server). | Administrator |
+
 
 
 ## Feature enhancements included in this release
@@ -41,6 +44,7 @@ This section has a table that lists enhancements included in this release when a
 | Developer tools | X++ | The `client` and `server` keywords that you can apply to X++ methods are now flagged as warnings. Remove these keywords in existing code and don't use them in new code. These keywords were useful in Ax 2012 when developers could choose to run methods on the client or the server tier. Currently, all methods execute on the server tier and these keywords don't make sense and might be confusing to new users. | &nbsp; |
 | Developer tools | X++ | Introduced a new option for the X++ compiler executable, xppc.exe. You can now apply the `-notodos` option which causes `todo` comments, where developers state a desire to finish something, to not make it into the output logs. | &nbsp; |
 | Developer tools | X++ | The SysDict class that provides reflection over X++ classes is augmented with the ability to determine if a class is internal and whether a method is internal or protected internal. Similarly, the AccessSpecifier enum is updated accordingly. | &nbsp; |
+| Agent foundation | Enhanced data tools for read operations | The data tools for read operations in the Dynamics 365 ERP MCP server moved from OData to SQL, enabling additional operators in data retrieval for agent scenarios. In this release, the `data_find_entities` tool in the MCP server is replaced with a new `data_find_entities_sql` tool. Learn more in [Data tools](../../dev-itpro/copilot/copilot-mcp#data-tools). | On by default |
 
 ### Bug fixes
 
