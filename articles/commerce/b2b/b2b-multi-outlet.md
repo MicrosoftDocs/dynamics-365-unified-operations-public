@@ -141,9 +141,21 @@ The following distinctions apply to order history, order templates, and invoices
 - Administrator-level users can share order templates with other users in the same organization.
 - Orders and order templates include clear labeling that identifies the user who created them.
  
-#### Order history page enhancements
+#### Order history enhancements
+
+Order history 
 
 Administrator-level users who have access to multiple organizations can see all orders by selecting a new option on the order history page. The order history page also includes search and filter capabilities to help users find orders quickly and easily.
+
+#### Order template enhancements
+
+
+#### Invoice enhancements
+
+
+#### Wishlist enhancements
+
+
 
 #### Expanded B2B indirect workflows to use contact-based users
 
@@ -178,15 +190,26 @@ Updated options within the customer service form are available to search for a s
 The **B2B Multi-Outlet Ordering with Contact-Based Access** feature is available starting with Commerce version 10.0.48.
 
 > [!NOTE]
-> - Enabling this feature will trigger a batch job to migrate any existing B2B customers, B2B2B channels (distributors) and OBO configurations/users as part of the activation process.
 > - This migration cannot be reversed and the feature can't be disabled once enabled. Testing in a non-production environment is strongly recommended.
  
 To enable the feature, follow these steps:
  
 1. In Commerce headquarters, go to **Feature management** (**System administration > Workspaces > Feature management**).
 1. Search for and enable the **B2B Multi-Outlet Ordering with Contact-Based Access** feature.
+1. Run the **Migrate B2B Multi-Outlet Customers** Batch job (**Retail and Commerce > Retail and Commerce IT**, mandatory for environments with existing B2B customers)
 1. Run the Commerce Data Exchange (CDX) **1010 (Customers)** job.
- 
+
+
+## Existing B2B customer migration
+
+Enabling this feature requires a one-time batch job execution to migrate any existing B2B customers, B2B2B channels (distributors) and OBO configurations/users as part of the activation process. The batch job is called **Migrate B2B Multi-Outlet Customers** and is located under **Retail and Commerce > Retail and Commerce IT**. This batch job will take the following steps:
+
+1. Find all organization type customers attached to a customer hierarchy.
+1. Create a contact under the organization for each person type customer attached to the customer hierarchy. This contact will use the same Party ID as the person type account for traceability.
+1. Attach the existing authentication details as part of the pairing process to the new contact(s).
+1. Assign the same role (Admin or User) to the new contact(s).
+
+Once these steps are complete and the updated configurations and data is available to the website through the CDX **1010 (Customers)** job, existing users will be able to sign in using their existing credentials and use the web site as normal.
 
 ## Additional resources
 
