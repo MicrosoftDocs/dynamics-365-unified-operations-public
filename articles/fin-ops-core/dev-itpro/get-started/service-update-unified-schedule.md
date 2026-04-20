@@ -1,6 +1,6 @@
 ---
 title: Release schedule for service updates (unified environments)
-description: Learn about the release schedule for service updates for unified environments managed through PPAC, including station-to-region mapping.
+description: Learn about the release schedule for service updates for unified environments managed through Power Platform admin center, including station-to-region mapping.
 author: sharmaaarsh
 ms.author: sharmaaarsh
 ms.topic: article
@@ -12,9 +12,10 @@ ms.search.region: Global
 
 # Release schedule for service updates (unified environments)
 
-This article provides the release schedule for service updates for unified environments managed through the Power Platform Admin Center (PPAC).
+This article provides the release schedule for service updates for unified environments managed through the Power Platform admin center.
 
-The detailed schedule for each service update, along with its corresponding build version and provisioning app version, is published before the start of the rollout. Microsoft sends a notification to customers whose environments are scheduled to receive the update.
+The detailed schedule for each service update, along with its corresponding build version and provisioning app version, is published before the start of the rollout. Microsoft sends a notification to customers 
+whose environments are scheduled to receive the update.
 
 To determine when your environment is updated, find the region in the station-to-region mapping in the following section and cross-reference it with the upcoming service update schedule.
 
@@ -33,7 +34,7 @@ For information about the maintenance windows for each region, see [What are the
 
 > [!IMPORTANT]
 >
-> 1. This service update only applies to unified environments managed through PPAC.
+> 1. This service update only applies to unified environments managed through Power Platform admin center.
 > 1. Weekday support is also available for production environments through the maintenance settings page as mentioned [here](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-faq?context=/dynamics365/context/commerce#how-do-i-configure-my-production-environment-to-receive-pqu-updates-on-weekdays).
 
 ## Release schedule
