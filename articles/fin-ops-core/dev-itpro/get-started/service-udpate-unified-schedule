@@ -6,7 +6,7 @@ ms.author: sharmaaarsh
 ms.topic: article
 ms.date: 04/20/2026
 ms.custom: bap-template
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ms.search.region: Global
 ---
 
@@ -16,7 +16,7 @@ This article provides the release schedule for service updates for unified envir
 
 The detailed schedule for each service update, along with its corresponding build version and provisioning app version, is published before the start of the rollout. Microsoft sends a notification to customers whose environments are scheduled to receive the update.
 
-To determine when your environment is updated, find the region in the station-to-region mapping below and cross-reference it with the upcoming service update schedule.
+To determine when your environment is updated, find the region in the station-to-region mapping in the following section and cross-reference it with the upcoming service update schedule.
 
 For information about the maintenance windows for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows)
 
@@ -32,10 +32,11 @@ For information about the maintenance windows for each region, see [What are the
 | Station 6 | DoD, Government Community Cloud, China |
 
 > [!IMPORTANT]
-> 1. This service update will only apply for unified environments managed through PPAC.
-> 2. Weekday support is also available for production environments through the maintenance settings page as mentioned [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-faq?context=/dynamics365/context/commerce#how-do-i-configure-my-production-environment-to-receive-pqu-updates-on-weekdays).
+>
+> 1. This service update only applies to unified environments managed through PPAC.
+> 1. Weekday support is also available for production environments through the maintenance settings page as mentioned [here](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-faq?context=/dynamics365/context/commerce#how-do-i-configure-my-production-environment-to-receive-pqu-updates-on-weekdays).
 
-## Release Schedule
+## Release schedule
 
 ### <a name="schedule"></a> Service update 10.0.47 schedule
 
@@ -45,7 +46,7 @@ For information about the maintenance windows for each region, see [What are the
 
 **Unified Environment Provisioning Application Version:** 10.0.47.1
 
-| Stations | Upcoming Sandbox Schedule | Upcoming Production Schedule |
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
 | Station 1 | April 29 to April 30, 2026 | NA |
 | Station 2 | May 4 to May 5, 2026 | May 16 to May 17, 2026 |
@@ -55,4 +56,4 @@ For information about the maintenance windows for each region, see [What are the
 | Station 6 | May 18 to May 19, 2026 | May 30 to May 31, 2026 |
 
 > [!IMPORTANT]
-> This update will only be applied for environments that are on 10.0.45 or below. For 10.0.46 environments, this update will be skipped.
+> This update applies only to environments that are on version 10.0.45 or earlier. For version 10.0.46 environments, the update is skipped.
