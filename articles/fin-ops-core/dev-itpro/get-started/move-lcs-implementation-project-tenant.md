@@ -72,6 +72,61 @@ On the new tenant, you get a new Lifecycle Services project that you must initia
 1. Deploy the nonproduction environments in the new Lifecycle Services project.
 1. Apply the required code packages to the environments. Make sure that the target is running the same application version as the source. Use [All-in-one deployable packages](../dev-tools/aio-deployable-packages.md) and include any ISV licenses, if applicable.
 1. Upload data to the environments. You can move the data through data packages or by restoring the database. If you restore the database, you need to remap some properties to the new tenant.
+   1. If you are restoring the database execute this SQL command after updating the placeholders:
+   ```
+     -- =============================================
+      -- Script: Update AAD Tenant in SYSCONFIG
+      -- Purpose: Updates the AAD tenant domain and tenant ID
+      --          in the SYSCONFIG table after a tenant migration.
+      -- =============================================
+    
+      DECLARE @NewTenantDomain VARCHAR(255)
+      DECLARE @NewTenantId VARCHAR(255)
+      DECLARE @OldTenantDomain VARCHAR(255)
+      DECLARE @OldTenantId VARCHAR(255)
+    
+      SET @NewTenantDomain = '<new-tenant-domain>' -- New AAD tenant domain (e.g., contoso.onmicrosoft.com)
+      SET @NewTenantId = '<new-tenant-id>'         -- New AAD tenant ID (GUID)
+      SET @OldTenantDomain = '<old-tenant-domain>' -- Current AAD tenant domain
+      SET @OldTenantId = '<old-tenant-id>'         -- Current AAD tenant ID (GUID)
+    
+      -- Back up SYSCONFIG before making changes
+      PRINT 'Backing up SYSCONFIG table...'
+      SELECT * INTO SYSCONFIG_BKP FROM SYSCONFIG
+    
+      -- Update tenant domain
+      IF EXISTS (SELECT VALUE FROM SYSCONFIG
+                 WHERE CONFIGTYPE = 0 AND ID = 0 AND VALUE = @OldTenantDomain)
+      BEGIN
+          PRINT 'Updating tenant domain to: ' + @NewTenantDomain
+          UPDATE SYSCONFIG
+          SET VALUE = @NewTenantDomain
+          WHERE CONFIGTYPE = 0
+            AND ID = 0
+            AND VALUE = @OldTenantDomain
+      END
+      ELSE
+      BEGIN
+          PRINT 'No tenant domain update required.'
+      END
+    
+      -- Update tenant ID
+      IF EXISTS (SELECT VALUE FROM SYSCONFIG
+                 WHERE CONFIGTYPE = 1 AND ID = 0 AND VALUE = @OldTenantId)
+      BEGIN
+          PRINT 'Updating tenant ID to: ' + @NewTenantId
+          UPDATE SYSCONFIG
+          SET VALUE = @NewTenantId
+          WHERE CONFIGTYPE = 1
+            AND ID = 0
+            AND VALUE = @OldTenantId
+      END
+      ELSE
+      BEGIN
+          PRINT 'No tenant ID update required.'
+      END
+   ```
+    
 1. Update your user information.
 1. Remove all user accounts except the admin user.
 1. Fix the admin user record in USERINFO.
