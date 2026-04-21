@@ -15,7 +15,19 @@ ms.topic: how-to
 
 The impact analysis can automatically run based on supplier changes received through emails or the Vendor Collaboration Module. Whichever is configured will also show the results of the impact analysis for review directly in existing pages in Dynamics 365, so the purchaser can decide how to respond in their existing workflow.
 
-See [Set up, configure and test impact analysis](procurement-agent-impact-analysis-setup.md) for how to configure these sources.
+## Set up sources that automatically trigger impact analysis
+
+If impact analysis is to be used on incoming change requests received through emails or the Vendor Collaboration Module, then these must be enabled first.
+
+Learn more in [Supplier communications features of the Procurement Agent (production ready preview)](procurement-agent-supplier-com-overview.md) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
+
+To enable the impact analysis to run based on change requests coming through one or both sources, follow these steps:
+
+1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has permissions to manage the agent configuration.
+2. Go to **Agents** > **Agents**.
+3. On the **Library** tab, look for *(Production-ready preview) Impact analysis - Procurement Agent*, select **Select**.
+4. Select *Source* to enable *vendor emails* if using supplier communications and/or the *Vendor Collaboration Module*.
+5. Select **Activate**.
 
 ## Review changes received via email (supplier communications)
 

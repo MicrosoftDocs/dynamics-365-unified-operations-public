@@ -25,7 +25,7 @@ For changes with downstream impact on orders, or ones that cause inventory level
 
 If purchasers must accept a change with impact, they now know straight away which internal stakeholders to be informed.
 
-Impact analysis automatically analyzes the downstream impact of changes that arrive through e-mails (via the Procurement Agent - Supplier communications features) and through the Vendor Collaboration Module of Supply Chain Management if configured and enabled.
+Impact analysis automatically analyzes the downstream impact of changes that arrive through e-mails (Procurement Agent - Supplier communications) and through the Vendor Collaboration Module of Supply Chain Management if configured and enabled.
 
 See [Review impact of purchase order changes from vendors](procurement-agent-impact-analysis-review-changes.md).
 
@@ -46,6 +46,8 @@ Learn more in [Simulate if purchase order changes have impact](procurement-agent
 
 Impact analysis incurs charges based on the number of Microsoft Copilot Studio credits you use when running it. It has a fixed cost per run and a variable cost that depends on the resources it consumes. This is controlled by the agent management configurations.
 
-Impact analysis runs on changes communicated by vendors through the configured sources(s). If impact analysis has been set up and configured to run for changes coming through emails via supplier communications, then credits will be charged when the conditions in the configuration of supplier communications are met. For example, if supplier communications has been configured to run on incoming emails from all vendors in a shared mailbox, and impact analysis is configured to run on vendor emails, then impact analysis will consume credits when any vendor sends an email about purchase order changes. The fixed cost applies each time the agent runs, and the variable cost depends on the number of changes communicated.
+Impact analysis runs on changes communicated by vendors through the configured sources(s). If impact analysis has been set up and configured to run for changes coming through emails via supplier communications, then credits will be charged when the conditions in the configuration of supplier communications are met. For example, if supplier communications has been configured to run on incoming emails from all vendors in a shared mailbox, and impact analysis is configured to run on vendor emails, then impact analysis will consume credits when any vendor sends an email about purchase order changes.
+
+The fixed cost applies each time the agent runs, and the variable cost depends on the number of line changes communicated.
 
 Learn about the billing rates and management for Copilot Studio in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management).
