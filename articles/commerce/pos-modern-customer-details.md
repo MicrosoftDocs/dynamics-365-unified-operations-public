@@ -16,18 +16,16 @@ ms.custom:
 
 **Applies to:** Dynamics 365 Commerce version 10.0.48 and later
 
-The modernized customer details page in Store Commerce replaces the legacy customer details view with a React-based, responsive experience. The new page surfaces existing capabilities — including Copilot customer insights and recommended products — in a redesigned layout, and introduces a richer extensibility model for partners and ISVs.
+The modernized customer details page in Store Commerce replaces the legacy customer details view with a React-based, responsive experience. The new page surfaces existing capabilities � including Copilot customer insights and recommended products � in a redesigned layout, and introduces a richer extensibility model for partners and ISVs.
 
 This article describes how to enable the modernized customer details page and explains what's available in version 10.0.48.
 
 ## Prerequisites
 
 - Store Commerce app version 10.0.48 or later
-- The following feature flag must be enabled in Commerce headquarters:
-  - `Dynamics.AX.Application.RetailModernCustomerDetailsPageFeature`
 
 > [!NOTE]
-> When this feature flag is enabled, the legacy customer details view is automatically replaced. The two views cannot be active simultaneously.
+> When this feature is enabled, the legacy customer details view is automatically replaced. The two views cannot be active simultaneously.
 
 ## Enable the modernized customer details page
 
@@ -44,10 +42,10 @@ This article describes how to enable the modernized customer details page and ex
 
 The customer details page has been rebuilt using React and Fluent UI, consistent with the broader Store Commerce modernization effort. The page uses a component-based structure organized into the following areas:
 
-- **Header / customer info section** — renders differently depending on device form factor (desktop vs. phone)
-- **Command bar** — a responsive `CustomerDetailsCommandBar` component that adapts label visibility based on screen width
-- **Tab bar** — a Fluent UI `TabList` wrapper managing navigation between the four content tabs
-- **Tab content area** — each tab renders independently, with key data preloaded for a faster experience
+- **Header / customer info section** � renders differently depending on device form factor (desktop vs. phone)
+- **Command bar** � a responsive `CustomerDetailsCommandBar` component that adapts label visibility based on screen width
+- **Tab bar** � a Fluent UI `TabList` wrapper managing navigation between the four content tabs
+- **Tab content area** � each tab renders independently, with key data preloaded for a faster experience
 
 This architecture aligns the customer details page with other modernized views in Store Commerce and enables the extensibility model described later in this article.
 
@@ -79,7 +77,7 @@ Three primary actions are available from the command bar.
 
 ### Copilot customer insights
 
-The Copilot **Customer insights** tile is now rendered within the React-based Account summary tab. This is a re-integration of the existing Copilot insights capability into the modernized page structure — the underlying insights content is unchanged from prior releases.
+The Copilot **Customer insights** tile is now rendered within the React-based Account summary tab. This is a re-integration of the existing Copilot insights capability into the modernized page structure � the underlying insights content is unchanged from prior releases.
 
 If the summary fails to generate, a refresh control appears on the tile to allow the associate to try again.
 
@@ -167,3 +165,4 @@ The following capabilities are under active development and are planned for a fu
 - [Copilot in Dynamics 365 Commerce overview](copilot-overview.md)
 - [Client book management](clienteling-overview.md)
 - [Customer management in Store Commerce](customer-mgmt-stores.md)
+
