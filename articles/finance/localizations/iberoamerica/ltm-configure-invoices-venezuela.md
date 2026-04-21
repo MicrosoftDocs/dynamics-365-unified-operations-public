@@ -2,7 +2,7 @@
 title: Configure sales and purchase invoices for Venezuela
 description: Learn how to configure sales and purchase invoices for Venezuela.
 author: Fhernandez0088
-ms.date: 05/15/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.author: v-cpicon

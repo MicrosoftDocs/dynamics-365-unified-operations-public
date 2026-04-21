@@ -202,7 +202,7 @@ Follow these steps to enable licensing for your solution.
 1. Import the license into the target environment.
 
     > [!NOTE]
-    > In production systems, complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this article.
+    > In production systems, complete this step from Microsoft Dynamics Lifecycle Services, by using a deployable package. For more information, see the "Production environments" section later in this article.
 
     | Parameter name                | Description                                                                                            |
     |-------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -244,7 +244,7 @@ To protect your configuration keys and license codes, release them in binary for
 
 ## Production environments
 
-To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all installations: \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip. The Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\.
+To install ISV licenses in production systems, you must use a deployable package through Lifecycle Services. You can find a template package for configuration mode at the following location in all installations: \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip. The Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="media/isv_template_location.png" alt-text="Screenshot of location of the template package for configuration mode.":::

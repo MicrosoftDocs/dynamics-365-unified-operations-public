@@ -1,6 +1,6 @@
 ---
 title: Import Electronic reporting (ER) configurations
-description: Learn how to import Electronic reporting (ER) configurations from Lifecycle Services (LCS) to a local business data application.
+description: Learn how to import Electronic reporting (ER) configurations from Lifecycle Services to a local business data application.
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
@@ -20,7 +20,7 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from Microsoft Dynamics Lifecycle Services (LCS) to a local business data application or Tier-1 environment. 
+This article explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from Microsoft Dynamics Lifecycle Services to a local business data application or Tier-1 environment. 
 
 1. Sign in to your application by using one of the following roles:
 
@@ -47,7 +47,7 @@ This article explains how to download [Electronic reporting (ER) configurations]
     6. Select **OK** to confirm and save the new repository.
     7. In the grid, select the new repository of the **File system** type.
 
-6. In your browser, open another tab, and sign in to LCS.
+6. In your browser, open another tab, and sign in to Lifecycle Services.
 7. In the Shared asset library, select the **GER Configuration** asset type, and then  download file **GER Configurations - All**.
     > [!NOTE]
     > All the ER configurations are in a zip file for download.

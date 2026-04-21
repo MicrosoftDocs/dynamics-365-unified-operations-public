@@ -4,7 +4,7 @@ description: Learn about how the STARTSWITH Electronic reporting (ER) function i
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 02/11/2021
+ms.date: 04/08/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: IT Pro

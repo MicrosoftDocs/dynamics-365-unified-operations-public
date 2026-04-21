@@ -26,7 +26,7 @@ Before you complete the steps in this article, you must update your local agent.
 
 ## Reconfigure your environment
 
-1. In Lifecycle Services (LCS), navigate to your on-premises project and open the **Environments** blade. 
+1. In Lifecycle Services, navigate to your on-premises project and open the **Environments** blade. 
 
 2. Do one of the following based on whether you are going to reconfigure or take a new deployment.
 

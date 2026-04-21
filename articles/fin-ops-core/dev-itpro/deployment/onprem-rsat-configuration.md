@@ -57,7 +57,7 @@ Before you begin, make sure that you have at least version 2.15.0 of the infrast
 
 ## Update the local agent configuration
 
-Before you begin, make sure that you have at least local agent 3.1.0. Otherwise, download the latest version from Microsoft Dynamics Lifecycle Services (LCS).
+Before you begin, make sure that you have at least local agent 3.1.0. Otherwise, download the latest version from Microsoft Dynamics Lifecycle Services.
 
 1. Remove the local agent if it's already provisioned in the Azure Service Fabric cluster.
 
@@ -75,11 +75,11 @@ Before you begin, make sure that you have at least local agent 3.1.0. Otherwise,
 
 ## Deploy or service your environment
 
-For new environments that you didn't deploy, see [Deploy your Finance + Operations environment from LCS](.\setup-deploy-on-premises-pu41.md#deploy) for information about how to deploy your environment.
+For new environments that you didn't deploy, see [Deploy your Finance + Operations environment from Lifecycle Services](.\setup-deploy-on-premises-pu41.md#deploy) for information about how to deploy your environment.
 
 For existing environments, service the environment to apply the changes by deploying a new package or following these steps.
 
-1. In [LCS](https://lcs.dynamics.com), select the **Full Details** link for the environment where you want to apply the RSAT configuration.
+1. In [Lifecycle Services](https://lcs.dynamics.com), select the **Full Details** link for the environment where you want to apply the RSAT configuration.
 1. Select **Maintain**, and then select **Update Settings**. Don't change any settings.
 1. Select **Prepare**.
 

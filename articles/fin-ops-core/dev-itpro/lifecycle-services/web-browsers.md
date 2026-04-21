@@ -17,7 +17,7 @@ ms.search.validFrom: 03/22/2022
 [!include[banner](../includes/banner.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
-Users can access Microsoft Dynamics Lifecyle Services (LCS) by using the most recent versions of these popular browsers: 
+Users can access Microsoft Dynamics Lifecyle Services by using the most recent versions of these popular browsers: 
 
 - Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf))
 - Google Chrome

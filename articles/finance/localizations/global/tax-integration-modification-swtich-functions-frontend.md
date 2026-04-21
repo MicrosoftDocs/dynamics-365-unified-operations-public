@@ -3,8 +3,8 @@ title: Modifications on switch functions and the front end
 description: Learn about the modifications that are required on switch functions and the front end to integrate a new transaction, including code examples.
 author: Qiuchen-Ren
 ms.author: qire
-ms.topic: article
-ms.date: 04/25/2022
+ms.topic: concept-article
+ms.date: 04/13/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -78,7 +78,7 @@ if (Tax::isTaxIntegrationEnabledForBusinessProcess(TaxIntegrationBusinessProcess
 }
 ```
 
-![Override sales tax control visible.](../media/tax-group.png)
+:::image type="content" source="../media/tax-group.png" alt-text="Screenshot of the Override sales tax control visible.":::
 
 Find all buttons that can trigger tax calculation, and reread the data source after tax calculation. Because several fields are updated during the calculation of tax integration, the data source of the form must also be refreshed to reflect the changes. The following example uses free text invoices. This code is from `CustFreeInvoice.xpp`.
 
@@ -111,15 +111,15 @@ Usually, there can be three buttons:
 
 - **Sales tax** button on the Action Pane
 
-    ![Sales tax button on the Action Pane.](../media/tax-on-header.png)
+    :::image type="content" source="../media/tax-on-header.png" alt-text="Screenshot of the Sales tax button on the Action Pane.":::
 
 - **Totals** button on the Action Pane
 
-    ![Totals button on the Action Pane.](../media/total-on-header.png)
+    :::image type="content" source="../media/total-on-header.png" alt-text="Screenshot of the Totals button on the Action Pane.":::
 
 - **Sales tax** button on the line
 
-    ![Sales tax button on the line.](../media/tax-on-line.png)
+    :::image type="content" source="../media/tax-on-line.png" alt-text="Screenshot of the Sales tax button on the line.":::
 
 If other buttons trigger tax calculation, call the refresh in the `clicked()` method of those buttons.
 

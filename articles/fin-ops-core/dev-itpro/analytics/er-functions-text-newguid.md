@@ -4,7 +4,7 @@ description: Learn about how the NEWGUID Electronic reporting (ER) function is u
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 09/09/2021
+ms.date: 04/08/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: IT Pro

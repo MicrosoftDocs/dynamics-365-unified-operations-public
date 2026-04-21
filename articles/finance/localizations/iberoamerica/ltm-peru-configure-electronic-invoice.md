@@ -3,7 +3,7 @@ title: Configure electronic invoice parameters for Peru
 description: Learn how to configure the information required to generate the electronic invoice XML for Peru.
 author: SandraYamamoto0602
 ms.topic: how-to
-ms.date: 10/15/2025
+ms.date: 04/13/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.author: v-sandraya

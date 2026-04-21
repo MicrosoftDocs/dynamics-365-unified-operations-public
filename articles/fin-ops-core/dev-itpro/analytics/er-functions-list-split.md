@@ -4,7 +4,7 @@ description: Learn about how the SPLIT Electronic reporting (ER) function is use
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/01/2021
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
