@@ -72,8 +72,9 @@ On the new tenant, you get a new Lifecycle Services project that you must initia
 1. Deploy the nonproduction environments in the new Lifecycle Services project.
 1. Apply the required code packages to the environments. Make sure that the target is running the same application version as the source. Use [All-in-one deployable packages](../dev-tools/aio-deployable-packages.md) and include any ISV licenses, if applicable.
 1. Upload data to the environments. You can move the data through data packages or by restoring the database. If you restore the database, you need to remap some properties to the new tenant.
-   1. This script is only required if you are performing a database restore. After the restore is complete on the
-  target environment, update the placeholders with your old and new tenant details and execute the SQL command.:
+   1. This script is only required if you are performing a database restore. Before doing the export, update the placeholders with your old and new tenant details and execute the SQL command on the source environment.
+      1. This will take the backup of SYSCONFIG table and update the value of the tenant with target tenant information.
+      2. Once the export is done you will need to recover this table to get back the source tenant information. The script to do this is attached below.
    ```
      -- =============================================
       -- Script: Update AAD Tenant in SYSCONFIG
@@ -126,6 +127,12 @@ On the new tenant, you get a new Lifecycle Services project that you must initia
       BEGIN
           PRINT 'No tenant ID update required.'
       END
+   ```
+   ```
+     -- Restore SYSCONFIG to original values after export
+      DELETE FROM SYSCONFIG
+      INSERT INTO SYSCONFIG SELECT * FROM SYSCONFIG_BKP
+      DROP TABLE SYSCONFIG_BKP
    ```
     
 1. Update your user information.
