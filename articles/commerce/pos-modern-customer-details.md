@@ -18,13 +18,13 @@ ms.custom:
 
 The modernized customer details page in Store Commerce replaces the legacy customer details view with a React-based, responsive experience. The new page surfaces existing capabilities — including Copilot customer insights and recommended products — in a redesigned layout, and introduces a richer extensibility model for partners and ISVs.
 
-This article describes how to enable the modernized customer details page, explains what's available in version 10.0.48, and previews what's planned for the next release.
+This article describes how to enable the modernized customer details page and explains what's available in version 10.0.48.
 
 ## Prerequisites
 
 - Store Commerce app version 10.0.48 or later
 - The following feature flag must be enabled in Commerce headquarters:
-  - `StoreCommerce.EnableModernCustomerDetailsPage`
+  - `Dynamics.AX.Application.RetailModernCustomerDetailsPageFeature`
 
 > [!NOTE]
 > When this feature flag is enabled, the legacy customer details view is automatically replaced. The two views cannot be active simultaneously.
@@ -32,7 +32,7 @@ This article describes how to enable the modernized customer details page, expla
 ## Enable the modernized customer details page
 
 1. In Commerce headquarters, go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
-2. Search for **Modern customer details page** and select **Enable now**.
+2. Search for **Enable modernized customer details page** and select **Enable now**.
 3. Run the **1110 (Global configuration)** distribution schedule job to push the changes to channel databases.
 4. Restart the Store Commerce app.
 
@@ -47,7 +47,7 @@ The customer details page has been rebuilt using React and Fluent UI, consistent
 - **Header / customer info section** — renders differently depending on device form factor (desktop vs. phone)
 - **Command bar** — a responsive `CustomerDetailsCommandBar` component that adapts label visibility based on screen width
 - **Tab bar** — a Fluent UI `TabList` wrapper managing navigation between the four content tabs
-- **Tab content area** — each tab renders independently, allowing content to load on demand
+- **Tab content area** — each tab renders independently, with key data preloaded for a faster experience
 
 This architecture aligns the customer details page with other modernized views in Store Commerce and enables the extensibility model described later in this article.
 
@@ -55,40 +55,37 @@ This architecture aligns the customer details page with other modernized views i
 
 The page adapts to the device form factor automatically.
 
-- **Desktop:** Full-width header card with customer image, name, contact information, loyalty tier, and a horizontal command bar with labeled buttons.
-- **Phone/mobile:** Compact header with key identifiers and a simplified action bar. Button labels are hidden on screens narrower than 768 px. Contact actions such as calling a phone number are accessible directly from the header.
+- **Desktop:** Full-width header card with customer image, name, contact information, and a horizontal command bar with labeled buttons.
+- **Phone/mobile:** Compact header with key identifiers and a simplified action bar. All command bar actions except **Add to sale** are available in the **More actions** drawer. Contact actions such as calling a phone number are accessible directly from the header.
 
 The page is organized into four tabs:
 
 | Tab | Description |
 |-----|-------------|
-| **Account summary** | High-level overview including Copilot insights and recommended products |
+| **Account summary** | High-level overview including Copilot insights and customer wishlists |
 | **Timeline** | Customer interaction and purchase event history |
-| **Account details** | Loyalty cards, affiliations, and wishlists |
-| **Transactions** | Purchase transaction history (see note below) |
-
-> [!NOTE]
-> The Transactions tab is introduced in 10.0.48 as part of the page structure. Full inline transaction detail rendering is planned for the next release.
+| **Account details** | Shipping addresses, loyalty cards, recent purchases, affiliations, and attributes |
+| **Transactions** | Purchase transaction history with inline detail view |
 
 ### Command bar actions
 
 Three primary actions are available from the command bar.
 
-| Action | Description | Notes |
-|--------|-------------|-------|
-| **Add to sale** | Adds the customer to the current cart and navigates to the cart view | Disabled if no customer is loaded |
-| **Add to client book** | Adds the customer to the associate's client book | Disabled for async customers |
-| **Edit account** | Opens the customer edit workflow | Disabled if no customer is loaded |
+| Action | Description |
+|--------|-------------|
+| **Add to sale** | Adds the customer to the current cart and navigates to the cart view |
+| **Add to client book** | Adds the customer to the associate's client book |
+| **Edit account** | Opens the customer edit workflow |
 
 ### Copilot customer insights
 
 The Copilot **Customer insights** tile is now rendered within the React-based Account summary tab. This is a re-integration of the existing Copilot insights capability into the modernized page structure — the underlying insights content is unchanged from prior releases.
 
-Associates can manually refresh the insights using the refresh control on the tile.
+If the summary fails to generate, a refresh control appears on the tile to allow the associate to try again.
 
 ### Recommended products carousel
 
-The **Recommended products** carousel is now rendered within the React-based Account summary tab, surfacing up to seven AI-suggested products for the customer.
+The **Recommended products** carousel appears at the bottom of the page and surfaces AI-suggested products for the customer. Up to 30 products are shown on desktop, and up to 10 on mobile.
 
 - **Desktop:** Fluent UI carousel with previous/next navigation.
 - **Phone/mobile:** Horizontally scrollable card list.
@@ -103,7 +100,11 @@ A new **New customer** shortcut is available on the transaction page toolbar, al
 
 ## Extend the customer details page
 
-Version 10.0.48 introduces extensibility support for the modernized customer details page. Extensions can add custom app bar commands to the page command bar by extending `CustomerDetailsExtensionCommandBase` from `PosApi/Extend/Views/CustomerDetailsView`.
+The modernized customer details page supports the same extensibility model as the legacy customer details view. Existing extensions built for the legacy view are compatible with the modernized page with no changes required.
+
+Extensions can add custom app bar commands to the page command bar by extending `CustomerDetailsExtensionCommandBase` from `PosApi/Extend/Views/CustomerDetailsView`.
+
+Custom controls defined for the customer details view appear in the **Additional** tab, which is shown automatically when any custom controls are present.
 
 Extensions are registered in the POS extension manifest under `components.extend.views.CustomerDetailsView.appBarCommands`.
 
@@ -131,10 +132,11 @@ The manifest schema for a `CustomerDetailsView` extension entry is:
 
 ### Page events available to extension commands
 
-`CustomerDetailsExtensionCommandBase` exposes three message handlers that fire automatically as the page loads data:
+`CustomerDetailsExtensionCommandBase` exposes message handlers that fire automatically as the page loads data:
 
 | Handler property | Message | Payload type | When it fires |
 |-----------------|---------|-------------|---------------|
+| `initializeHandler` | `Initialize` | `CustomerDetailsInitializeData` | The extension mounts and receives the initial page state |
 | `affiliationAddedHandler` | `AffiliationAdded` | `CustomerDetailsAffiliationAddedData` | An affiliation is added to the customer |
 | `loyaltyCardsLoadedHandler` | `LoyaltyCardsLoaded` | `CustomerDetailsLoyaltyCardsLoadedData` | Loyalty card data finishes loading |
 | `wishListsLoadedHandler` | `WishListsLoaded` | `CustomerDetailsWishListsLoadedData` | Wishlist data finishes loading |
@@ -149,12 +151,9 @@ The following capabilities are under active development and are planned for a fu
 
 | Capability | Description |
 |------------|-------------|
-| **Inline transaction details** | Full transaction list and expandable inline detail view (line items, payments) on the Transactions tab |
 | **Inline add affiliation** | Add affiliations to a customer directly from the Account details tab, without opening a separate dialog |
 | **Tag management** | View and manage customer tags from the customer details page |
 | **Wishlist product details** | View product names and prices directly within a customer's wishlist on the Account details tab |
-| **Timeline filters** | Filter the Timeline tab by event type, date range, or channel |
-| **Extensibility on compact/mobile layout** | Extension points for app bar commands on the phone form factor |
 
 > [!NOTE]
 > Features listed in this section are subject to change. They do not represent a commitment to ship in any specific release.
