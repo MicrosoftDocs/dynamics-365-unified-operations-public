@@ -1,10 +1,10 @@
 ---
 title: Release schedule for service updates (unified environments)
 description: Learn about the release schedule for service updates for unified environments managed through Power Platform admin center, including station-to-region mapping.
-author: sharmaaarsh
+author: aarsh-msft
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 04/20/2026
+ms.date: 04/21/2026
 ms.custom: bap-template
 ms.reviewer: twheeloc
 ms.search.region: Global
