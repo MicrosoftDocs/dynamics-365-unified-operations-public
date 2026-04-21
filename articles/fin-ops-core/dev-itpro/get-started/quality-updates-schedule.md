@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 03/31/2026
+ms.date: 04/21/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -112,7 +112,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Unified Environment Provisioning Application Version: 10.0.45.9**
 
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
 | Station 1 | March 30 to April 2, 2026 | NA |
 | Station 2 | April 6 to April 9, 2026 | April 18 to April 19, 2026 |
@@ -129,7 +129,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Unified Environment Provisioning Application Version: 10.0.45.10**
 
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
 | Station 1 | April 27 to April 30, 2026 | NA |
 | Station 2 | May 4 to May 7, 2026 | May 16 to May 17, 2026 |
@@ -146,7 +146,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Unified Environment Provisioning Application Version: 10.0.46.5**
 
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
 | Station 1 | April 6 to April 9, 2026 | NA |
 | Station 2 | April 13 to April 16, 2026 | April 25 to April 26, 2026 |
@@ -163,7 +163,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Unified Environment Provisioning Application Version: 10.0.47.2**
 
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
 | Station 1 | April 8 to April 11, 2026 | NA |
 | Station 2 | April 13 to April 16, 2026 | April 18 to April 19, 2026 |
@@ -180,7 +180,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Unified Environment Provisioning Application Version: 10.0.47.3**
 
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
 | Station 1 | April 22 to April 25, 2026 | NA |
 | Station 2 | April 27 to April 30, 2026 | May 2 to May 3, 2026 |
