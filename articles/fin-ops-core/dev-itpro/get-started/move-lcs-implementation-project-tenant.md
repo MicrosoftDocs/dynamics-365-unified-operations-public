@@ -1,10 +1,10 @@
 ---
 title: Move Lifecycle Services implementation projects to different Microsoft Entra tenants
 description: Learn about how to move your subscriptions and Lifecycle Services Implementation project to a different Microsoft Entra tenant.
-author: twheeloc
+author: thedsk8-microsoft
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 03/26/2026
+ms.date: 04/21/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -73,8 +73,8 @@ On the new tenant, you get a new Lifecycle Services project that you must initia
 1. Apply the required code packages to the environments. Make sure that the target is running the same application version as the source. Use [All-in-one deployable packages](../dev-tools/aio-deployable-packages.md) and include any ISV licenses, if applicable.
 1. Upload data to the environments. You can move the data through data packages or by restoring the database. If you restore the database, you need to remap some properties to the new tenant.
    1. This script is only required if you are performing a database restore. Before doing the export, update the placeholders with your old and new tenant details and execute the SQL command on the source environment.
-      1. This will take the backup of SYSCONFIG table and update the value of the tenant with target tenant information.
-      2. Once the export is done you will need to recover this table to get back the source tenant information. The script to do this is attached below.
+      1. This takes the backup of SYSCONFIG table and updates the value of the tenant with target tenant information.
+      2. Once the export is done, you'll need to recover this table to get back the source tenant information. Use the script below: 
    ```
      -- =============================================
       -- Script: Update AAD Tenant in SYSCONFIG
