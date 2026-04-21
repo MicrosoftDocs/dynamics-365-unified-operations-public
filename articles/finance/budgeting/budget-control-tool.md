@@ -16,11 +16,12 @@ ms.assetid:
 
 # Budget control data maintenance tool
 
-If you experience data inconsistency with a specific budget-controlled document, start with the **Budget control data maintenance** tool. 
+If you experience data inconsistency with a specific budget-controlled document, start with the **Budget control data maintenance** tool.
 The **Budget control data maintenance** tool can:
- - delete and recreate existing budget data from a source document
- - review the budget to find documents that weren't previously budget-checked but should be checked now, either because of configuration changes or because budget control was turned on or off.
- - uses the accounting distributions to determine the correct budget amounts. If there are problems with the distributions, the budget data is incorrect.
+
+- delete and recreate existing budget data from a source document
+- review the budget to find documents that weren't previously budget-checked but should be checked now, either because of configuration changes or because budget control was turned on or off.
+- use the accounting distributions to determine the correct budget amounts. If there are problems with the distributions, the budget data is incorrect.
 
 To run the **Budget control data maintenance** tool, follow these steps:
 
@@ -37,7 +38,7 @@ The tool finds all documents that relieve each other. For example, you specify d
 
 ### Budget control dimension values provider
 
-The **Budget control data maintenance** tool includes a **Budget control dimension values provider** scenario that adjusts the dimension values in budget data. Typically, you use this scenario when you add a new segment to the ledger account structure. It finds all dimension values that are currently used in budget data and transfers them to match the current account structure.
+The **Budget control data maintenance** tool includes a **Budget control dimension values provider** scenario that adjusts the dimension values in budget data. Typically, use this scenario when you add a new segment to the ledger account structure. It finds all dimension values that are currently used in budget data and transfers them to match the current account structure.
 
 If you want to preserve historical data and keep the previous account structure, adjust the date range so that only data in the specified range is updated.
 
@@ -54,5 +55,3 @@ To run the **Budget control dimension values provider** scenario, follow these s
 
 > [!NOTE]
 > By default, the **Document status** field is set to **Confirmed**. If there's budget data in a draft state, complete the steps again and select **Draft**.
-
-
