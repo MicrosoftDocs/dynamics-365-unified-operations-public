@@ -100,7 +100,7 @@ After you complete all the configuration steps described in the previous chapter
 > If some of the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!IMPORTANT]
-> Make sure that the **Vendor invoice Mapping to destination** and **Response message model mapping to destination** Electronic Reporting configurations are marked as **Default for model mapping**.
+> Make sure that the **Vendor invoice Mapping to destination** and **Response message model mapping to destination (FR)** Electronic Reporting configurations are marked as **Default for model mapping**.
     
 ## Configure the electronic invoicing features
 
@@ -472,6 +472,14 @@ Set up units of measure.
 
 ## Issue electronic invoices
 
+> [!IMPORTANT]
+>  **Electronic invoicing scope**
+>
+>The following types of documents will be *excluded* from **E-Invoicing** individual submissions and will be *included* into the scope of **E-Reporting**. 
+>
+>- **Non-domestic Business-to-Business (B2B) invoices** - the invoices issued to buyers whose **Delivery** address is outside France.
+>- **All Business-to-Consumer (B2C) invoices** - the invoices issued for the customers that do not have the **SIREN** registration number defined.
+
 After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. Submission process consists of of 3 major steps. 
 
 - **Submission of e-invoices to Edicom** - at this stage, the system generates the XMLs of e-invoices and submit it to Edicom.
@@ -480,14 +488,6 @@ After you complete the required configuration steps, generate and submit electro
 
 :::image type="content" source="e-inv-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
-### Electronic invoicing scope
-
-The following types of documents will be excluded from **E-Invoicing** individual submissions and will be included into the scope of **E-Reporting**. 
-
-- **Non-domestic Business-to-Business (B2B) invoices** - the invoices issued to buyers whose **Delivery** address is outside France.
-- **All Business-to-Consumer (B2C) invoices** - the invoices issued for the customers that do not have the **SIREN** registration number defined.
-  
- 
 ### Submission of e-invoices to Edicom
 
 To start electronic invoices submission process, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
