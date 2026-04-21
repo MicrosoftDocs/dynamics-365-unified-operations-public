@@ -23,8 +23,6 @@ This article describes how to enable the modernized workflows and what's availab
 ## Prerequisites
 
 - Store Commerce app version 10.0.48 or later
-- The following feature flag must be enabled in Commerce headquarters:
-  - `Dynamics.AX.Application.RetailModernCustomerDetailsPageFeature`
 
 ## Enable the modernized customer create and edit workflows
 
@@ -34,13 +32,13 @@ This article describes how to enable the modernized workflows and what's availab
 4. Restart the Store Commerce app.
 
 > [!NOTE]
-> When this feature flag is enabled, the legacy customer add/edit view is automatically replaced. The two views cannot be active simultaneously. This flag also controls the modernized customer details page — enabling it activates both experiences simultaneously.
+> When this feature flag is enabled, the legacy customer add/edit view is automatically replaced. The two views cannot be active simultaneously. This flag also controls the modernized customer details page � enabling it activates both experiences simultaneously.
 
 ---
 
 ## React-based form layout
 
-The customer create and edit view has been rebuilt on React and Fluent UI with a responsive, section-based layout. The form is organized into named sections — including **Customer information**, **Contact information**, and **Address** — with Fluent UI styling and skeleton loading for a faster perceived experience.
+The customer create and edit view has been rebuilt on React and Fluent UI with a responsive, section-based layout. The form is organized into named sections � including **Customer information**, **Contact information**, and **Address** � with Fluent UI styling and skeleton loading for a faster perceived experience.
 
 The layout adapts to device form factor automatically:
 
@@ -75,7 +73,7 @@ The modernized workflow supports configurable name pattern validation via regex.
 
 ## Save and add to transaction
 
-When creating a customer from the transaction page, associates can use the **Save and add to transaction** action to save the new customer record and immediately attach them to the current cart — without navigating to the customer details page first.
+When creating a customer from the transaction page, associates can use the **Save and add to transaction** action to save the new customer record and immediately attach them to the current cart � without navigating to the customer details page first.
 
 ---
 
@@ -106,3 +104,4 @@ Extensions are registered in the POS extension manifest under `components.extend
 - [Modernized customer details page in Store Commerce](pos-modern-customer-details.md)
 - [Store Commerce extensibility overview](dev-itpro/pos-extension/pos-extension-overview.md)
 - [Customer management in Store Commerce](customer-mgmt-stores.md)
+
