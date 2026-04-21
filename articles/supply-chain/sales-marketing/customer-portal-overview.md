@@ -4,7 +4,7 @@ description: Learn about the Customer portal and integration in modern supply ch
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: overview
-ms.date: 06/07/2024
+ms.date: 4/21/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -27,7 +27,7 @@ The Customer portal template has all the customization capabilities that the por
 > By itself, the template isn't expected to be completely functional. It just serves as an enabler for customers who want to create an externally facing website so that enterprise customers can engage with data from Supply Chain Management.
 
 > [!NOTE]
-> The Customer portal documentation is directed at admins, customizers, and system integrators who will set up the Customer portal for a Supply Chain Management installation. It uses the terms _customer_ and _user_ to describe people who are customers of the organization that is running Supply Chain Management, and who will use the final portal itself.
+> The Customer portal documentation is directed at admins, customizers, and system integrators who set up the Customer portal for a Supply Chain Management installation. It uses the terms _customer_ and _user_ to describe people who are customers of the organization that is running Supply Chain Management, and who use the final portal itself.
 
 ## Video
 
@@ -42,10 +42,10 @@ The Customer portal is designed for companies that run Supply Chain Management a
 - They want to build an externally facing website that communicates order processing information (such as order status or account information) directly from their Supply Chain Management system to their enterprise customers.
 - They're transitioning from Dynamics AX 2012 to Supply Chain Management and previously used the [AX 2012 Customer self-service portal](/dynamicsax-2012/appuser-itpro/about-the-customer-self-service-portal).
 
-The following types of organizations are **not** good candidates for implementing the Customer portal:
+The following types of organizations aren't good candidates for implementing the Customer portal:
 
 - Companies that want to build a website for non-enterprise customers. These companies should consider creating a [Dynamics 365 Commerce e-commerce website](../../commerce/create-ecommerce-site.md).
-- Companies that are already using an existing Power Apps portals website for a similar purpose. These companies won't receive any additional benefits from the Customer portal. The Customer portal is delivered as a template that acts as a guide and a starting point for customers who want to "connect the dots" between dual-write, Supply Chain Management, and Power Apps portals. If you've already set up a website that serves this purpose, you might not gain much value from using the Customer portal template to reprovision that website.
+- Companies that are already using an existing Power Apps portals website for a similar purpose. These companies don't receive any additional benefits from the Customer portal. The Customer portal is delivered as a template that acts as a guide and a starting point for customers who want to "connect the dots" between dual-write, Supply Chain Management, and Power Apps portals. If you already set up a website that serves this purpose, you might not gain much value from using the Customer portal template to reprovision that website.
 
 ## How does it work?
 
@@ -55,7 +55,7 @@ The Customer portal is provided as a Power Apps portals template. It depends on 
 
 [Dual-write](/powerapps/maker/portals/overview) is an out-of-box infrastructure product that provides near-real-time interaction between customer engagements apps and finance and operations apps. Dual-write provides bidirectional integration between finance and operations apps and Microsoft Dataverse. Therefore, it provides an integrated user experience across the apps. The Customer portal depends on tables that are synced with dual-write. Before data from Supply Chain Management can be surfaced in the Customer portal, dual-write must be enabled for all the appropriate tables.
 
-![Customer portal dependencies.](media/customer-portal-elements.png "Customer portal dependencies")
+:::image type="content" source="media/customer-portal-elements.png" alt-text="Screenshot of Customer portal dependencies diagram showing the relationship between Power Apps portals, dual-write, and Supply Chain Management.":::
 
 The Customer portal acts as a starting point for organizations that want to use Power Apps portals to build an externally facing website that uses data from their Supply Chain Management installation. It helps organizations connect dual-write, Supply Chain Management, and Power Apps portals.
 
