@@ -1,6 +1,6 @@
 ---
 title: Modernized customer create and edit workflows in Store Commerce
-description: Learn about the modernized customer create and edit workflows in Store Commerce POS, including the combined address save, address validation, extensibility model, and how to enable them.
+description: Learn about the modernized customer create and edit workflows in Store Commerce POS, including the combined address save, address completeness, extensibility model, and how to enable them.
 author: anush6121
 ms.author: anvenkat
 ms.topic: article
@@ -24,17 +24,17 @@ This article describes how to enable the modernized workflows and what's availab
 
 - Store Commerce app version 10.0.48 or later
 - The following feature flag must be enabled in Commerce headquarters:
-  - `StoreCommerce.EnableModernCustomerDetailsPage`
+  - `Dynamics.AX.Application.RetailModernCustomerDetailsPageFeature`
 
 ## Enable the modernized customer create and edit workflows
 
 1. In Commerce headquarters, go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
-2. Search for **Modern customer details page** and select **Enable now**.
+2. Search for **Enable modernized customer details page** and select **Enable now**.
 3. Run the **1110 (Global configuration)** distribution schedule job to push the changes to channel databases.
 4. Restart the Store Commerce app.
 
 > [!NOTE]
-> When this feature flag is enabled, the legacy customer add/edit view is automatically replaced. The two views cannot be active simultaneously.
+> When this feature flag is enabled, the legacy customer add/edit view is automatically replaced. The two views cannot be active simultaneously. This flag also controls the modernized customer details page — enabling it activates both experiences simultaneously.
 
 ---
 
@@ -51,23 +51,25 @@ The layout adapts to device form factor automatically:
 
 ## Combined customer and address save
 
-The address section is now part of the customer create and edit form. Associates complete customer information and address entry in a single view and save both with one action.
+The address section is now part of the customer create form. Associates complete customer information and address entry in a single view and save both with one action.
 
-This replaces the legacy two-step flow where customer record creation and address creation were separate saves. When address validation is enabled, the combined save ensures every customer record has an associated address at the time of creation, preventing downstream issues at checkout and in fiscal compliance scenarios.
+This replaces the legacy two-step flow where customer record creation and address creation were separate saves. When address completeness is enabled, the combined save ensures every customer record has an associated address at the time of creation, preventing downstream issues at checkout and in fiscal compliance scenarios.
+
+To edit a customer's address after the record has been created, associates use the **Manage addresses** button in the **Shipping addresses** section of the customer details page.
 
 ---
 
-## Address validation
+## Address completeness
 
-Mandatory address validation requires a customer record to have an associated address before it can be saved. Associates are prompted to complete the address section if they attempt to save without one.
+Mandatory address completeness requires a customer record to have an associated address before it can be saved. Associates are prompted to complete the address section if they attempt to save without one.
 
-Address validation is controlled by a CSU flight and is not enabled by default. To enable it for your environment, contact Microsoft support.
+Address completeness is controlled by a CSU flight and is not enabled by default. To enable it for your environment, contact Microsoft support.
 
 ---
 
 ## Name pattern validation
 
-The modernized workflow supports configurable name pattern validation via regex. Administrators can define name format requirements in headquarters, and associates are prompted inline when the entered name does not match the required pattern.
+The modernized workflow supports configurable name pattern validation via regex. Administrators can define name format requirements through extensions, and associates are prompted inline when the entered name does not match the required pattern.
 
 ---
 
@@ -79,11 +81,12 @@ When creating a customer from the transaction page, associates can use the **Sav
 
 ## Extend the customer create and edit view
 
-Version 10.0.48 introduces extensibility support for the modernized customer add/edit view. Extensions can:
+The modernized customer add/edit view supports the same extensibility model as the legacy customer add/edit view. Existing extensions built for the legacy view are compatible with the modernized page with no changes required. Extensions can:
 
 - Add custom **app bar commands** by extending `CustomerAddEditExtensionCommandBase` from `PosApi/Extend/Views/CustomerAddEditView`
 - Define **custom field definitions** using `CustomerFieldDefinitions` to add, reorder, or modify fields displayed in the form sections
 - Implement **custom name pattern validation** by providing a regex pattern through the extension configuration
+- Add **custom controls** that appear in the form view, consistent with legacy customer add/edit view behavior
 
 Extensions are registered in the POS extension manifest under `components.extend.views.CustomerAddEditView`.
 
@@ -93,7 +96,7 @@ Extensions are registered in the POS extension manifest under `components.extend
 
 | Version | Enhancements |
 |---|---|
-| 10.0.48 | React-based form layout, combined customer and address save, optional address validation (CSU flight), name pattern validation, Save and add to transaction action, extensibility support |
+| 10.0.48 | React-based form layout, combined customer and address save, optional address completeness (CSU flight), name pattern validation, Save and add to transaction action, extensibility support |
 
 ---
 
