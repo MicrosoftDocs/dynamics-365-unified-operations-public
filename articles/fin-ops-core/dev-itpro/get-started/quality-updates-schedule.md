@@ -54,73 +54,57 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.45 PQU-5 | January 28, 2026 | February 2, 2026 to March 8, 2026| Completed |
 | 10.0.45 PQU-6 | February 25, 2026 | March 2, 2026 to April 5, 2026| Completed |
 | 10.0.45 PQU-7 | March 25, 2026 | March 30, 2026 to May 3, 2026| In-Progress |
-| 10.0.45 PQU-8 | April 22, 2026 | April 27, 2026 to May 30, 2026| Not Started |
+| 10.0.45 PQU-8 | April 22, 2026 | April 27, 2026 to May 30, 2026| In-Progress |
 | 10.0.45 PQU-9 | May 27, 2026 | June 1, 2026 to July 5, 2026| Not Started |
 | 10.0.46 PQU-1 | February 4, 2026 | February 9, 2025 to March 14, 2026 | Completed |
-| 10.0.46 PQU-2 | March 4, 2026 | March 9, 2026 to April 11, 2026| In-Progress |
+| 10.0.46 PQU-2 | March 4, 2026 | March 9, 2026 to April 11, 2026| Completed |
 | 10.0.46 PQU-3 | April 1, 2026 | April 6, 2026 to May 9, 2026| In-Progress |
 | 10.0.46 PQU-4 | April 29, 2026 | May 4, 2026 to June 6, 2026| Not Started |
 | 10.0.46 PQU-5 | May 27, 2026 | June 1, 2026 to July 4, 2026| Not Started |
 | 10.0.46 PQU-6 | June 24, 2026 | June 29, 2026 to August 1, 2026| Not Started |
 | 10.0.46 PQU-7 | July 22, 2026 | July 27, 2026 to August 29, 2026| Not Started |
 | 10.0.46 PQU-8 | August 21, 2026 | August 31, 2026 to October 3, 2026| Not Started |
-| 10.0.47 PQU-1 | April 8, 2026 | April 8, 2026 to May 8, 2026| In-Progress |
-| 10.0.47 PQU-2 | April 22, 2026 | April 22, 2026 to May 22, 2026| Not Started |
-| 10.0.47 PQU-3 | May 6, 2026 | May 6, 2026 to June 5, 2026| Not Started |
-| 10.0.47 PQU-4 | May 20, 2026 | May 20, 2026 to June 19, 2026| Not Started |
-| 10.0.47 PQU-5 | June 3, 2026 | June 3, 2026 to July 3, 2026| Not Started |
-| 10.0.47 PQU-6 | June 17, 2026 | June 17, 2026 to July 17, 2026| Not Started |
-| 10.0.47 PQU-7 | July 1, 2026 | July 1, 2026 to July 31, 2026| Not Started |
-| 10.0.47 PQU-8 | July 15, 2026 | July 15, 2026 to August 14, 2026| Not Started |
-| 10.0.47 PQU-9 | July 29, 2026 | July 29, 2026 to August 28, 2026| Not Started |
-| 10.0.47 PQU-10 | August 12, 2026 | August 12, 2026 to September 11, 2026| Not Started |
-| 10.0.47 PQU-11 | August 26, 2026 | August 26, 2026 to September 25, 2026| Not Started |
-| 10.0.47 PQU-12 | September 9, 2026 | September 9, 2026 to October 9, 2026| Not Started |
-| 10.0.47 PQU-13 | September 23, 2026 | September 23, 2026 to October 23, 2026| Not Started |
-| 10.0.47 PQU-14 | October 7, 2026 | October 7, 2026 to November 6, 2026| Not Started |
-| 10.0.47 PQU-15 | October 21, 2026 | October 21, 2026 to November 20, 2026| Not Started |
-| 10.0.47 PQU-16 | November 4, 2026 | November 4, 2026 to December 4, 2026| Not Started |
-| 10.0.47 PQU-17 | November 25, 2026 | November 25, 2026 to December 25, 2026| Not Started |
-| 10.0.48 PQU-1 | July 8, 2026 | July 8, 2026 to August 7, 2026| Not Started |
-| 10.0.48 PQU-2 | July 22, 2026 | July 22, 2026 to August 21, 2026| Not Started |
-| 10.0.48 PQU-3 | August 5, 2026 | August 5, 2026 to September 4, 2026| Not Started |
-| 10.0.48 PQU-4 | August 19, 2026 | August 19, 2026 to September 18, 2026| Not Started |
-| 10.0.48 PQU-5 | September 2, 2026 | September 2, 2026 to October 2, 2026| Not Started |
-| 10.0.48 PQU-6 | September 16, 2026 | September 16, 2026 to October 16, 2026| Not Started |
-| 10.0.48 PQU-7 | September 30, 2026 | September 30, 2026 to October 30, 2026| Not Started |
-| 10.0.48 PQU-8 | October 14, 2026 | October 14, 2026 to November 13, 2026| Not Started |
-| 10.0.48 PQU-9 | October 28, 2026 | October 28, 2026 to November 27, 2026| Not Started |
-| 10.0.48 PQU-10 | November 11, 2026 | November 11, 2026 to December 11, 2026| Not Started |
-| 10.0.48 PQU-11 | November 25, 2026 | November 25, 2026 to December 25, 2026| Not Started |
-| 10.0.48 PQU-12 | December 9, 2026 | December 9, 2026 to January 8, 2027| Not Started |
-| 10.0.48 PQU-13 | December 23, 2026 | December 23, 2026 to January 22, 2027| Not Started |
-| 10.0.48 PQU-14 | January 6, 2027 | January 6, 2027 to February 5, 2027| Not Started |
-| 10.0.48 PQU-15 | January 20, 2027 | January 20, 2027 to February 19, 2027| Not Started |
-| 10.0.48 PQU-16 | February 3, 2027 | February 3, 2027 to March 5, 2027| Not Started |
-| 10.0.48 PQU-17 | February 24, 2027 | February 24, 2027 to March 26, 2027| Not Started |
+| 10.0.47 PQU-1 | April 8, 2026 | April 8, 2026 to May 2, 2026| In-Progress |
+| 10.0.47 PQU-2 | April 22, 2026 | April 22, 2026 to May 16, 2026| In-Progress |
+| 10.0.47 PQU-3 | May 6, 2026 | May 6, 2026 to May 30, 2026| Not Started |
+| 10.0.47 PQU-4 | May 20, 2026 | May 20, 2026 to June 13, 2026| Not Started |
+| 10.0.47 PQU-5 | June 3, 2026 | June 3, 2026 to June 27, 2026| Not Started |
+| 10.0.47 PQU-6 | June 17, 2026 | June 17, 2026 to July 11, 2026| Not Started |
+| 10.0.47 PQU-7 | July 1, 2026 | July 1, 2026 to July 25, 2026| Not Started |
+| 10.0.47 PQU-8 | July 15, 2026 | July 15, 2026 to August 8, 2026| Not Started |
+| 10.0.47 PQU-9 | July 29, 2026 | July 29, 2026 to August 22, 2026| Not Started |
+| 10.0.47 PQU-10 | August 12, 2026 | August 12, 2026 to September 5, 2026| Not Started |
+| 10.0.47 PQU-11 | August 26, 2026 | August 26, 2026 to September 19, 2026| Not Started |
+| 10.0.47 PQU-12 | September 9, 2026 | September 9, 2026 to October 3, 2026| Not Started |
+| 10.0.47 PQU-13 | September 23, 2026 | September 23, 2026 to October 17, 2026| Not Started |
+| 10.0.47 PQU-14 | October 7, 2026 | October 7, 2026 to October 31, 2026| Not Started |
+| 10.0.47 PQU-15 | October 21, 2026 | October 21, 2026 to November 14, 2026| Not Started |
+| 10.0.47 PQU-16 | November 4, 2026 | November 4, 2026 to November 28, 2026| Not Started |
+| 10.0.47 PQU-17 | November 25, 2026 | November 25, 2026 to December 19, 2026| Not Started |
+| 10.0.48 PQU-1 | July 8, 2026 | July 8, 2026 to August 1, 2026| Not Started |
+| 10.0.48 PQU-2 | July 22, 2026 | July 22, 2026 to August 15, 2026| Not Started |
+| 10.0.48 PQU-3 | August 5, 2026 | August 5, 2026 to August 29, 2026| Not Started |
+| 10.0.48 PQU-4 | August 19, 2026 | August 19, 2026 to September 12, 2026| Not Started |
+| 10.0.48 PQU-5 | September 2, 2026 | September 2, 2026 to September 26, 2026| Not Started |
+| 10.0.48 PQU-6 | September 16, 2026 | September 16, 2026 to October 10, 2026| Not Started |
+| 10.0.48 PQU-7 | September 30, 2026 | September 30, 2026 to October 24, 2026| Not Started |
+| 10.0.48 PQU-8 | October 14, 2026 | October 14, 2026 to November 7, 2026| Not Started |
+| 10.0.48 PQU-9 | October 28, 2026 | October 28, 2026 to November 21, 2026| Not Started |
+| 10.0.48 PQU-10 | November 11, 2026 | November 11, 2026 to December 5, 2026| Not Started |
+| 10.0.48 PQU-11 | November 25, 2026 | November 25, 2026 to December 19, 2026| Not Started |
+| 10.0.48 PQU-12 | December 9, 2026 | December 9, 2026 to January 2, 2027| Not Started |
+| 10.0.48 PQU-13 | December 23, 2026 | December 23, 2026 to January 16, 2027| Not Started |
+| 10.0.48 PQU-14 | January 6, 2027 | January 6, 2027 to January 30, 2027| Not Started |
+| 10.0.48 PQU-15 | January 20, 2027 | January 20, 2027 to February 13, 2027| Not Started |
+| 10.0.48 PQU-16 | February 3, 2027 | February 3, 2027 to February 27, 2027| Not Started |
+| 10.0.48 PQU-17 | February 24, 2027 | February 24, 2027 to March 20, 2027| Not Started |
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 > Canceled* - PQU will occur only on Station-1. Releases for other stations have been canceled due to the holiday deployment freeze, and the build will be available for manual uptake.
+> For environments configured with a weekday update schedule, updates are applied on the selected weekday following the published rollout schedule.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.45 Release-6 train schedule
-
-**App version: 10.0.2345.175**
-
-**Platform version: 7.0.7690.117**
-
-**Unified Environment Provisioning Application Version: 10.0.45.8**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | March 2 to March 5, 2026 | NA |
-| Station 2 | March 9 to March 12, 2026 | March 21 to March 22, 2026 |
-| Station 3 | March 10 to March 13, 2026 | March 21 to March 22, 2026 |
-| Station 4 | March 16 to March 19, 2026 | March 28 to March 1, 2026 |
-| Station 5 | March 23 to March 26, 2026 | April 4 to April 5, 2026 |
-| Station 6 | March 24 to March 27, 2026 | April 4 to April 5, 2026 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.45 Release-7 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.45 Release-7 train schedule
 
 **App version: 10.0.2345.190**
 
@@ -137,22 +121,22 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | April 20 to April 23, 2026 | May 2 to May 3, 2026 |
 | Station 6 | April 21 to April 24, 2026 | May 2 to May 3, 2026 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.46 Release-2 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.45 Release-8 train schedule
 
-**App version: 10.0.2428.114**
+**App version: 10.0.2345.212**
 
-**Platform version: 7.0.7778.56**
+**Platform version: 7.0.7690.141**
 
-**Unified Environment Provisioning Application Version: 10.0.46.3**
+**Unified Environment Provisioning Application Version: 10.0.45.10**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | March 9 to March 12, 2026 | NA |
-| Station 2 | March 16 to March 19, 2026 | March 28 to March 29, 2026 |
-| Station 3 | March 17 to March 20, 2026 | March 28 to March 29, 2026 |
-| Station 4 | March 23 to March 26, 2026 | April 4 to April 5, 2026 |
-| Station 5 | March 30 to April 2, 2026 | April 11 to April 12, 2026 |
-| Station 6 | March 31 to April 3, 2026 | April 11 to April 12, 2026 |
+| Station 1 | April 27 to April 30, 2026 | NA |
+| Station 2 | May 4 to May 7, 2026 | May 16 to May 17, 2026 |
+| Station 3 | May 5 to May 8, 2026 | May 16 to May 17, 2026 |
+| Station 4 | May 11 to May 14, 2026 | May 23 to May 24, 2026 |
+| Station 5 | May 18 to May 21, 2026 | May 30 to May 31, 2026 |
+| Station 6 | May 19 to May 22, 2026 | May 30 to May 31, 2026 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.46 Release-3 train schedule
 
@@ -171,7 +155,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | April 27 to April 30, 2026 | May 9 to May 10, 2026 |
 | Station 6 | April 28 to May 1, 2026 | May 9 to May 10, 2026 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-1 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-1 train schedule
 
 **App version: 10.0.2527.78**
 
@@ -187,6 +171,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | April 20 to April 23, 2026 | April 25 to April 26, 2026 |
 | Station 5 | April 27 to April 30, 2026 | May 2 to May 3, 2026 |
 | Station 6 | April 27 to April 30, 2026 | May 2 to May 3, 2026 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-2 train schedule
+
+**App version: 10.0.2527.93**
+
+**Platform version: 7.0.7858.80**
+
+**Unified Environment Provisioning Application Version: 10.0.47.3**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | April 22 to April 25, 2026 | NA |
+| Station 2 | April 27 to April 30, 2026 | May 2 to May 3, 2026 |
+| Station 3 | April 27 to April 30, 2026 | May 2 to May 3, 2026 |
+| Station 4 | May 4 to May 7, 2026 | May 9 to May 10, 2026 |
+| Station 5 | May 11 to May 14, 2026 | May 16 to May 17, 2026 |
+| Station 6 | May 11 to May 14, 2026 | May 16 to May 17, 2026 |
 
 > [!IMPORTANT]
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
