@@ -46,8 +46,8 @@ Set a few general parameters on the **Material handling equipment interface para
 1. Go to **Material handling equipment interface \> Setup \> Material handling equipment interface parameters**.
 1. On the **General** tab, set the following fields:
 
-        - **User mappings** – Map system users to their related warehouse workers. The system users call the inbound queue service. Selected workers are assigned the work operations (picks and puts) that are processed through the inbound queue. Work operations are performed in the default warehoues of each worker.
-        - **Enable inbound message ID** – When you set this option to *Yes*, if a duplicate inbound message ID is received, the message is rejected and an error message is displayed that states the message already exists. When you set this option to *No*, duplicate inbound message IDs are allowed.
+    - **User mappings** – Map system users to their related warehouse workers. The system users call the inbound queue service. Selected workers are assigned the work operations (picks and puts) that are processed through the inbound queue. Work operations are performed in the default warehoues of each worker.
+    - **Enable inbound message ID** – When you set this option to *Yes*, if a duplicate inbound message ID is received, the message is rejected and an error message is displayed that states the message already exists. When you set this option to *No*, duplicate inbound message IDs are allowed.
     - **Enable manual inbound message creation** – When you set this option to *Yes*, you can simulate inbound messages by creating a record directly from the **Inbound queue** page.
 
 1. On the **Number sequences** tab, select the system-wide number sequences that generate unique IDs for the inbound queue items, outbound queue items, and work line pairs.

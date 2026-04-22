@@ -129,7 +129,7 @@ Follow these steps to set up a container packing policy.
 
 1. On the **Overview** tab, set the following fields. These fields specify what actions to take when the container closes, whether to operate with or without work creation, and when to release the container from the packing station.
 
-        - **Weight unit** – Select the default unit of measure to use when a container is closed and manifested. Typically, this unit of measure is the unit of measure that a scale at the packing station uses. This field applies to policies with or without work creation.
+    - **Weight unit** – Select the default unit of measure to use when a container is closed and manifested. Typically, this unit of measure is the unit of measure that a scale at the packing station uses. This field applies to policies with or without work creation.
     - **Container closing policy** – Select one of the following options to define what should occur when the container is closed:
 
         - *Automatic release* – The container is considered released from the packing station, and the action that is specified in the **Container release policy** field is triggered.

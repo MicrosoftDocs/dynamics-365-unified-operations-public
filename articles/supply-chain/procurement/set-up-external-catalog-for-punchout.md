@@ -56,7 +56,7 @@ This section gives more details about task 4 in the preceding section.
 1. Select the **Add** button to start mapping the procurement categories to the external catalog. Then, in the Category name list, select a category. The list of categories is a superset of procurement categories that the vendor is mapped to in all the legal entities set up for the vendor.
 
     > [!NOTE]
-        > Procurement policies are used to allow or restrict access to categories for the buying legal entity or receiving operating unit. Punchout to an external catalog requires that you allow access to at least one of the procurement categories mapped to the catalog.
+    > Procurement policies are used to allow or restrict access to categories for the buying legal entity or receiving operating unit. Punchout to an external catalog requires that you allow access to at least one of the procurement categories mapped to the catalog.
 
 1. Set up the cXML setup request message that is sent to the vendor. The automatically generated message format is the minimal template that is required in order to start a session. Fill in values for the tags.
 
