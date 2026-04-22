@@ -41,6 +41,8 @@ The online extensibility development environment can preview customizations in a
 
 [Set up a development environment](setup-dev-environment.md)
 
+[eCommerce Platform Modernization](ecommerce-platform-modernization.md)
+
 [Configure a development environment (.env) file](configure-env-file.md)
 
 [Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)

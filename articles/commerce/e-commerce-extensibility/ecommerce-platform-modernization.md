@@ -1,6 +1,6 @@
 ---
 title: E-commerce platform modernization
-description: Learn about the platform modernization efforts for the Dynamics 365 Commerce online SDK, including Node.js runtime upgrades and the deprecation timeline for Node.js 16.
+description: Learn about platform modernization efforts for the Dynamics 365 Commerce online SDK, including Node.js runtime upgrades, TypeScript upgrades, and the deprecation timeline for Node.js 16.
 author: mithun-microsoft
 ms.date: 04/15/2026
 ms.topic: overview
@@ -68,6 +68,40 @@ To prepare for Node.js 16 deprecation, complete the following steps before the 1
    ```console
    yarn start
    ```
+
+## TypeScript upgrade
+
+Starting with online SDK package version **9.55** (SDK bootloader version 1.55), the Dynamics 365 Commerce online SDK upgraded its TypeScript compiler from **TypeScript 3.x** to **TypeScript 4.2.4**. This upgrade brings improved type checking, better editor tooling support, and access to modern TypeScript language features.
+
+### Supported TypeScript version
+
+| TypeScript version | Support status |
+|--------------------|----------------|
+| TypeScript 3.x | No longer supported |
+| TypeScript 4.2.4 | Supported (current) |
+
+> [!NOTE]
+> The TypeScript version is pinned in the SDK's `package.json` resolutions to **4.2.4**. After upgrading to SDK package version 9.55 or later, the correct TypeScript version is automatically resolved when you run `yarn install`.
+
+### What you need to do
+
+If you're upgrading from an SDK version earlier than 9.55, complete the following steps:
+
+1. **Update your SDK package** — upgrade to SDK package version 9.55 or later. For instructions, see [SDK and module library updates](sdk-updates.md).
+
+1. **Reinstall dependencies** — run `yarn install` from the root of your SDK repository to pick up the updated TypeScript compiler.
+
+   ```console
+   yarn install
+   ```
+
+1. **Build and fix type errors** — run `yarn build` and resolve any new TypeScript compilation errors. TypeScript 4.x introduces stricter type checking compared to TypeScript 3.x.
+
+   ```console
+   yarn build
+   ```
+
+For a full list of changes between TypeScript 3.x and 4.x, see the [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html).
 
 ## Additional resources
 
