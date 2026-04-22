@@ -31,7 +31,10 @@ This article includes information and links to resources that can help you set u
   - [Purchase complementary fiscal documents](latam-bra-purchase-complementary-fiscal-documents.md)
   - [Referenced fiscal documents](latam-bra-referenced-fiscal-documents.md)
   - [Sales complementary fiscal documents](latam-bra-sales-complementary-fiscal-documents.md)
-  - [Service electronic fiscal document](latam-bra-service-electronic-fiscal-document.md)
+  - Service electronic fiscal document:
+     - [NFS-e Service Invoices](brazil-nfs-e-service-invoices.md)
+     - [NFS-e service invoices for projects](brazil-nfs-e-service-invoices-projects.md)
+     - [Service electronic fiscal document- RPS text file](latam-bra-service-electronic-fiscal-document.md) - deprecated
   - [Journals generated during the electronic payment return process](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
  - [NF-e process](latam-bra-nf-e-process.md)
    - [Automatic transmission of NF-e fiscal documents](br-00058-automatic-transmission-nf-e-fiscal-documents.md)
