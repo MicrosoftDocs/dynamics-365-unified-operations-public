@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.48
 
 # Electronic invoicing for France
 
-This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified Partner Agent (**PA**) acting as the last mile connector.
+This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified service provider acting as an Approved Platform (*Plateforme Agréée* - **PA**) .
 
 :::image type="content" source="emea-fra-einoices-flow.jpg" alt-text="Screenshot of the e-invoicing and e-rporting flow for France.":::
 
@@ -31,9 +31,9 @@ Watch the overview of the French electronic invoicing implementation in Finance.
 Before you start, make sure these prerequisites are in place:
 
 - The company is a registered taxpayer in France.
-- The company has a signed agreement with the certified Partner Agent and obtained the credentials required for esablishing a secure connection to Partner Agent's infrastructure.
+- The company has a signed agreement with the selected Approved Platform and obtained the credentials required for esablishing a secure connection to the Approved Platform's infrastructure.
   > [!NOTE]
-  > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Partner Agent (PA). For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
+  > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Approved Platform (PA). For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
   
   Watch the overview of the Edicom credentials configuration in Finance. More details are provided in the [next](#EdCred) chapters.
   > [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
