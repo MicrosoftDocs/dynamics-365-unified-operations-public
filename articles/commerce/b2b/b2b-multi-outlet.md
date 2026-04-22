@@ -146,7 +146,7 @@ Invoices have built-in filtering to support contact users, with users having the
 
 #### Wishlist enhancements
 
-Wishlists are contact aware with this feature, allowing for each user to maintain their own wishlist for an organization.
+Wishlists are contact-aware with this feature, allowing for each user to maintain their own wishlist for an organization.
 
 #### Expanded B2B indirect workflows to use contact-based users
 
