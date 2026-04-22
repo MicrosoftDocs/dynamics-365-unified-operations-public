@@ -9,7 +9,7 @@ ms.custom:
   - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: France
-ms.search.validFrom: 2026-04-15
+ms.search.validFrom: 2026-04-22
 ms.dyn365.ops.version: AX 10.0.48
 ---
 
@@ -637,6 +637,7 @@ The list of the mandatory status codes supported in electronic invoicing for Mic
 
 - Invoice model
   - Invoice model mapping
+  - Invoice model mapping (FR)
   - UBL Sales e-invoice (FR)
   - UBL Sales e-credit note (FR)
   - UBL Project e-invoice (FR)
@@ -650,11 +651,13 @@ The list of the mandatory status codes supported in electronic invoicing for Mic
   - Edicom invoice status reject format
 - Customer invoice context model
   - Import invoice context model
+  - Import invoice context model (FR)
   - Import response context
   - AP response context
   - AR response context
 - Response message model
   - Response message model mapping to destination
+  - Response message model mapping to destination (FR)
   - Edicom life cycle status format (FR)
   - Edicom Response status parsing format(FR)
   - Edicom Response Invoice Status (FR)
