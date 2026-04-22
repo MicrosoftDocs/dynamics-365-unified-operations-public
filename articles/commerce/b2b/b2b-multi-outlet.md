@@ -200,7 +200,7 @@ Enabling this feature requires a one-time batch job execution to migrate any exi
 1. Attach the existing authentication details as part of the pairing process to the new contact(s).
 1. Assign the same role (Admin or User) to the new contact(s).
 
-Once these steps are complete and the updated configurations and data is available to the website through the CDX **1010 (Customers)** job, existing users will be able to sign in using their existing credentials and use the web site as normal.
+Once these steps are complete and the updated configurations and data is available to the website through the CDX **1010 (Customers)** job, existing users will be able to sign in using their existing credentials and use the website as normal.
 
 ## Additional resources
 
