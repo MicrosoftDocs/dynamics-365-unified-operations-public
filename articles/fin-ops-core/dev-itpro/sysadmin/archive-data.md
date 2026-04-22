@@ -6,13 +6,13 @@ ms.author: Weijiesa
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/26/2026
+ms.date: 04/22/2026
 ms.reviewer: twheeloc
 ---
 
 # Archive data in Dynamics 365 finance and operations apps with Dataverse
 
-This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps. Finance and operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long term retention.
+This article describes how to archive data in Microsoft Dynamics 365 Finance and Operations apps. Finance and Operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and Operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long term retention.
 
 ## Business application data lifecycle
 
@@ -36,8 +36,26 @@ This feature currently supports archiving the following types of finance and ope
 - Dynamics 365 Supply Chain Management Inventory transactions
 - Dynamics 365 Supply Chain Management Inventory journals
 - Dynamics 365 Supply Chain Management Sales orders
+- Dynamics 365 Commerce transactions
 
 Support for additional data types is planned in future releases.
+
+> [!IMPORTANT]
+> Microsoft identified a synchronization issue that affects certain Data Archive scenarios when synchronizing Dynamics 365 finance and operations data to the [Dataverse-managed data lake](archive-view.md#view-archived-data-in-the-dataverse-managed-data-lake). In these scenarios, private or internal fields aren't copied. To resolve this issue, Microsoft updates the affected fields to make them public.
+>
+> The affected fields remain available in your Dynamics 365 finance and operations tables. We will fix the data synchronization issue by copying the missing fields from those tables into our Dataverse-managed data lake.
+>
+> When you install the hotfix in your Dynamics 365 finance and operations environment, which makes the affected fields public, the system automatically detects the update. No action on your part is needed. This detection occurs automatically through a [Proactive quality update](../get-started/quality-updates-schedule.md) by June 2026, depending on your current version. Alternatively, you can choose to install the hotfix manually to trigger detection sooner.
+>
+> These are the minimum application build versions:
+>
+> | Release | Availability | Platform number |
+> |---|---|---|
+> | 10.0.45/Platform update 69 | 10.0.2345.216 or higher| 7.0.7690.144 |
+> | 10.0.46/Platform update 70 | 10.0.2428.162 or higher| 7.0.7778.98 |
+> | 10.0.47/Platform update 71 | 10.0.2527.94 or higher| 7.0.7858.80 |
+> 
+> To support the fix, the system temporarily disables the creation of new archive jobs while allowing any in-progress scheduled jobs to complete. After the data synchronization issue is resolved, the system re-enables the archive jobs. If you need further assistance, contact Microsoft Support.
 
 
 ## How archiving of finance and operations data works
@@ -85,7 +103,7 @@ Administrators can view the storage size in the existing Power Platform admin ce
 
 ### View the storage consumed by archived data in Dataverse long term retention
 
-To view the storage consumed by archived data, follow these steps.
+To view the storage consumed by archived data, follow these steps:
 
 - Go to the [Power Platform admin center reports for Dataverse](/power-platform/admin/capacity-storage).
 
@@ -93,7 +111,7 @@ On the **Dataverse database storage** report, the archived finance and operation
 
 For example, when the administrator views the **Dataverse database storage** report, the General ledger tables appear as **\<*tablename*\>-Retained**. These tables provide a logical view of the storage capacity consumed by the Finance table that's archived in Dataverse long term retention. In the example of the report in the following illustration, the mesrp\_generaljournalentrybientity-Retained table is a Finance General ledger functional scenario table that is archived. If the \<*tablename*\>-Retained table isn't visible on the report, download the report to Excel for viewing.
 
-![Screenshot that shows an example of the Dataverse database storage report.](./media/storage.png)
+:::image type="content" source="./media/storage.png" alt-text="Screenshot of the Dataverse database storage report example.":::
 
 To view the storage consumed by finance and operations data, follow these steps:
 
