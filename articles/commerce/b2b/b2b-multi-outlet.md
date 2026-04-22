@@ -132,38 +132,29 @@ For users who can act on behalf of multiple organizations or outlets, the follow
  
 When the B2B multioutlet feature is enabled, the business partner sign-up process allows for new B2B prospects to be submitted and processed with approval. The new contact-based user can then use the storefront sign-up process to gain access to the storefront.
  
-#### Contact-level orders, order templates and invoices
- 
-The following distinctions apply to order history, order templates, and invoices based on their permission level:
-
-- Users can review and maintain their own orders, order templates, and invoices.
-- Administrator-level users can view organization-wide order history and invoices for their organization.
-- Administrator-level users can share order templates with other users in the same organization.
-- Orders and order templates include clear labeling that identifies the user who created them.
- 
 #### Order history enhancements
 
-Order history 
-
-Administrator-level users who have access to multiple organizations can see all orders by selecting a new option on the order history page. The order history page also includes search and filter capabilities to help users find orders quickly and easily.
+Order history fully supports the display of contact based orders, through automatic filtering of a user's own orders on the page, and user labelling on orders so it is clear who is responsible for each order listed. Administrator-level users who have access to multiple organizations can see all orders by selecting a new option on the order history page. The updated order history with search and filter options is also supported when using this feature.
 
 #### Order template enhancements
 
+Order templates are contact aware with this feature and administrator-level users can share order templates across their organization. This allows for other users to leverage their work, while also protecting the original creator's template by not allowing edits to the shared order template by anyone other than the original order template creator. Clear user labelling on order templates is available to help distinguish who created each order template and if it is a shared order template or not.  Additional filter options are available with this to help users see only their order templates, or include shared order templates as well.
 
 #### Invoice enhancements
 
+Invoices has built in filtering to support contact users, with users having the ability to see and pay invoices attached to orders they have placed, and administrator-level users able to see and pay any invoice for a given organization.
 
 #### Wishlist enhancements
 
-
+Wishlists are contact aware with this feature, allowing for each user to maintain their own wishlist for an organization.
 
 #### Expanded B2B indirect workflows to use contact-based users
 
-Distributors are able to switch between managing multiple B2B buyer and seller accounts with a single set of credentials through the same process using customer hierarchies.
+Distributors are able to use a single set of credentials for multiple B2B buyer and seller organizations through the same process using customer hierarchies that B2B buyer organizations have access to. The channel assignment functionality through the customer hierarchy works with this feature, aligning organizations with the correct list of distributor (direct or indirect) options on the B2B website.
 
 #### Account manager access to contact-based users through On behalf of (OBO) capabilities
 
-OBO-enabled sales representatives or account managers can select contact-based users at their assigned organizations to act on behalf of those contacts and access the same controls. Additionally, clear labeling on orders and order templates created through OBO will include the representative's or account manager's name and the selected contact's name.
+OBO-enabled sales representatives or account managers can select contact-based users at their assigned organizations to act on behalf of those contacts and access the same controls. Additionally, clear labeling on orders and order templates created through OBO will include the representative's or account manager's name and the selected contact's name. OBO users will authenticate using their Headquarters credentials seamlessly through a separate sign in option on the B2B website.
 
 ### Contact-aware call center experiences
  
@@ -216,6 +207,8 @@ Once these steps are complete and the updated configurations and data is availab
 [B2B multioutlet configuration](b2b-multi-outlet-configuration.md)
 [B2B indirect workflows](b2b-indirect.md)
 [Enable on behalf of (OBO) functionality](../on-behalf-of.md)
+[Order history with search and filters module](../order-history-module.md)
+[Invoice management for B2B e-commerce websites](/invoice-management.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
