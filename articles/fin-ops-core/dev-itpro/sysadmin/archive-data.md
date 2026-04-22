@@ -51,8 +51,7 @@ Support for additional data types is planned in future releases.
 >
 > | Release | Availability | Platform number |
 > |---|---|---|
->
-> | 10.0.45/Platform update 69 | 10.0.2345.xxx or higher| 7.0.7690.144 |
+> | 10.0.45/Platform update 69 | 10.0.2345.216 or higher| 7.0.7690.144 |
 > | 10.0.46/Platform update 70 | 10.0.2428.162 or higher| 7.0.7778.98 |
 > | 10.0.47/Platform update 71 | 10.0.2527.94 or higher| 7.0.7858.80 |
 > 
