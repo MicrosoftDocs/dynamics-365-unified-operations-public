@@ -58,6 +58,15 @@ The following table shows the Electronic invoicing globalization features that a
 > [!IMPORTANT]
 > We were planning to transition NF-e/NFS-e and CFDI to our Electronic Invoicing service. For quite a while, the features and formats for NF-e/NFS-e have been in preview in Brazil, and those for CFDI have been in preview in Mexico. However, because of a lack of interest in adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing service platform in those countries/regions. The format of these documents won't contain the latest compliance changes that were published since the preview release. In the meantime, we recommend continuing that you use our built-in X++ implementations in Brazil and Mexico. **These implementations are kept up to date with the legislation.** For more information, see [Brazil NF-e process overview](../brazil/latam-bra-nf-e-process.md) and [Electronic invoices (CFDI)](../iberoamerica/latam-mex-CFDI-electronic-invoices.md).
 
+> [!NOTE]
+> Electronic invoicing capabilities for Brazil (NF-e for goods and NFS-e for services) are implemented in Dynamics 365 Finance by using Electronic Reporting (ER) configurations and country-specific localization features.  
+> 
+> As part of the Brazil tax reform updates, the generation of NF-e and NFS-e XML formats has been transitioned to the Electronic Reporting framework to support evolving tax rules and classifications.
+> 
+> NF-e documents continue to be submitted to SEFAZ using existing integration mechanisms in Finance, while NFS-e (Federal and São Paulo formats) are generated as XML files that require integration or a third-party solution for submission and digital signature.
+> 
+> For Brazil, the Electronic Invoicing Service is not used; instead, use the built-in localization and ER-based configurations for compliant electronic invoice generation.
+
 ## Preview features
 
 The following table shows the Electronic invoicing Service globalization features that are currently in preview.
