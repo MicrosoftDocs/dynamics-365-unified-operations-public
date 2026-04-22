@@ -594,6 +594,8 @@
           items:
           - name: Payment methods
             href: payment-methods.md
+          - name: Set up payment profiles for registers
+            href: payment-profile-registers.md
           - name: Payment methods in call centers
             href: work-with-payments.md
           - name: Refund payment processing in call centers
@@ -612,8 +614,6 @@
             href: cash-denominations.md
           - name: Configure credit card processing
             href: tasks/configure-credit-card-processing.md
-          - name: Set up payment profiles for registers
-            href: payment-profile-registers.md
           - name: Skip "change due" dialog box in POS
             href: dev-itpro/skip-change-due.md
           - name: Dynamics 365 Payment Connector for Adyen
