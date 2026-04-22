@@ -2,7 +2,7 @@
 title: Print a Ledger Posting report for LATAM
 description: Learn how to print a Ledger Posting report for Latin America, including prerequisites and a process for printing a ledger posting report.
 author: Fhernandez0088
-ms.author: v-federicohe
+ms.author: v-mpizmeny
 ms.topic: how-to
 ms.date: 01/05/2026
 ms.custom: bap-template
@@ -25,25 +25,26 @@ Before you can print a **Ledger Posting** report, the following prerequisites mu
 - You must enable the country/region-specific LATAM feature and the general feature.
 - Download the specific report configurations from the Dataverse configuration repository. These formats are applicable to all LATAM countries, except Bolivia.
 
-| Element |                    Format name                    |
-|:-------:|:-------------------------------------------------:|
-| Model   | :::no-loc text="Ledger Accounting LATAM":::                               |
-| Format  | :::no-loc text="Ledger Posting LATAM":::                         |
-
-> [!IMPORTANT]
-> For Bolivia, :::no-loc text="Ledger Posting Bolivia"::: must be imported instead.
+| Element |                    Format name                    | Country |
+|:-------:|:-------------------------------------------------:|:---------------------------------------:|
+| Model   | :::no-loc text="Ledger accounting reports":::    | All LATAM countries |
+| Model   | :::no-loc text="Ledger Accounting LATAM":::      | All LATAM countries |
+| Format  | :::no-loc text="Ledger Posting LATAM":::         | All LATAM countries excluding Bolivia |
+| Format  | :::no-loc text="Ledger Posting Bolivia":::         | Bolivia |
 
 Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
-- You must create a new SSRS Reports/Services reference and configure it in the following way:
+## Configure SSRS Reports / Services references
+
+- You must create a new SSRS Reports/Services references record and configure it in the following way:
 
   - In the **Report/Service Id** field, enter **LedgerPosting**.
   - In the **Report/Service name** field, enter **LedgerPost**.
   - In the **Report/Service type** field, select an ER configuration.
-  - In the **Model mapping name** field, select **Ledger accounting LTM**.
-  - In the **Data model definition** field, select **LedgerPosting**.
-  - In the **Format mapping** field, select **Ledger Posting LATAM**.
+  - In the **Model mapping name** field, select **:::no-loc text="Ledger accounting LTM":::**.
+  - In the **Data model definition** field, select **:::no-loc text="Ledger Posting":::**.
+  - In the **Format mapping** field, select **:::no-loc text="Ledger Posting LATAM":::** (**:::no-loc text="Ledger Posting Bolivia":::** for Bolivia)
   - In the list of report/service types, enable **Ledger Posting**.
 
 ## Print the Ledger Posting report for Latin America
