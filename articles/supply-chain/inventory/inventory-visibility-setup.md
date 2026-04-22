@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 03/10/2026
+ms.date: 04/21/2026
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -45,25 +45,33 @@ The following table lists the countries/regions where Inventory Visibility is cu
 | Canada Central | cca |
 | Canada East | eca |
 | China East 2 | cne2 |
+| China East 3 | cne3 |
 | China North 2 | cnn2 |
+| China North 3 | cnn3 |
 | Europe North | neu |
 | Europe West | weu |
 | France Central | cfr |
 | France South | sfr |
 | India Central | cin |
 | India South | sin |
+| Italy North | nit |
 | Japan East | ejp |
 | Japan West | wjp |
 | Norway East | eno |
 | Norway West | wno |
+| Poland Central | cpl |
 | South Africa West | wza |
 | South Africa North | nza |
+| Sweden Central | cse |
 | Switzerland North | nch |
 | Switzerland West | wch |
+| UAE Central | cae |
 | UAE North | nae |
 | UK South | suk |
 | UK West | wuk |
+| US Central | cus |
 | US East | eus |
+| US East 2 | eus2 |
 | US West | wus |
 
 ## <a name="install-add-in"></a>Install the Inventory Visibility Add-in
