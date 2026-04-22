@@ -33,6 +33,8 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+Here is a **ready‑to‑paste Markdown table row** aligned to the *Microsoft Learn – Regulatory updates* format:
+| Brazil | April 2026 | 10.0.47, also available in prior versions | Regulatory update to extend [NFS-e support for project-based invoicing](../brazil/brazil-nfs-e-service-invoices-projects.md) scenarios, enabling compliant XML generation for São Paulo and Federal NFS-e formats. Includes NBS field, service location attributes, tax estimation percentages, and updates to ER configurations for fiscal document mapping. |
 | Italy | March 2026 | 10.0.48, also available in prior versions | Updated [Unique certification](../italy/emea-ita-exil-unique-certification.md) (Certificazione Unica) form aligned with the provision of January 15, 2026 (Prot. n. 9454/2026) for tax year 2025. |
 | Lithuania | March 2026 | 10.0.48, also available in prior versions | New VMI VAT codes PVM58, PVM59, and PVM60 for [i.SAF reporting](../lithuania/emea-ltu-isaf.md), effective from January 1, 2026, aligned with the updated 12% VAT rate classification. |
 | Lithuania | March 2026 | 10.0.48, also available in prior versions | Updated [VAT declaration (FR0600)](../lithuania/emea-ltu-vat-declaration-lithuania.md) with a new field 29A to support the 12% VAT rate, effective from January 1, 2026. |
