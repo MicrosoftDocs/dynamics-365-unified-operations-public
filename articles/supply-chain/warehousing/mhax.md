@@ -4,7 +4,7 @@ description: Learn how to set up the material handling equipment interface (MHAX
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 01/29/2024
+ms.date: 4/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WMHEParameters, WMHESubscription, WMHEQueueManagerWorkspace, WMHEInboundQueue, WMHEOutboundQueue
@@ -17,22 +17,22 @@ ms.search.form: WMHEParameters, WMHESubscription, WMHEQueueManagerWorkspace, WMH
 You can use the *material handling equipment interface* (MHAX) to connect external physical material handling (MH) systems to a warehouse that is managed by warehouse management processes (WMS) in Microsoft Dynamics 365 Supply Chain Management. The interface between the WMS and MH systems consists of two queues: one for outbound events (WMS to MH) and one for inbound events (MH to WMS). The WMS system generates outbound events based on work lines that are created during various work creation and execution processes. The MH system then regularly polls the WMS system for new events and processes the responses. After the MH system has finished handling the events in accordance with work instructions, it sends inbound events, such as work line completion and short picking.
 
 > [!IMPORTANT]
-> By enabling this feature, your data may be shared with the third-party services that you select. You control what data is shared with the third-party (if any). Your use of the third-party services is your responsibility and is governed by terms agreed between you and the third party. Your privacy is important to us. To learn more, read our [Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
+> By enabling this feature, your data might be shared with the third-party services that you select. You control what data is shared with the third-party (if any). Your use of the third-party services is your responsibility and is governed by terms agreed between you and the third party. Your privacy is important to us. To learn more, read our [Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
 
 The following illustration shows the various elements and the order that processes occur in when you use MHAX integration.
 
-![MHAX components and interactions.](media/mhax-components.png "MHAX components and interactions")
+:::image type="content" source="media/mhax-components.png" alt-text="Screenshot of MHAX components and interactions.":::
 
-Here is an explanation of the interactions that are shown in the previous illustration:
+Here's an explanation of the interactions that are shown in the previous illustration:
 
 1. During work creation or work execution, outbound events are created in the outbound queue.
-2. The MH equipment connects to the MH equipment service, polls for any new events that are relevant to it, and processes those events.
-3. When the MH equipment is ready to report back, it connects to the service again and submits inbound events. Those events are immediately processed by the queue processor.
-4. Based on the inbound event data, the queue processor might run existing work, modify it, or create new work.
+1. The MH equipment connects to the MH equipment service, polls for any new events that are relevant to it, and processes those events.
+1. When the MH equipment is ready to report back, it connects to the service again and submits inbound events. The queue processor immediately processes those events.
+1. Based on the inbound event data, the queue processor might run existing work, modify it, or create new work.
 
 ## Turn on the MHAX feature
 
-Before you can use the MHAX feature, you must turn on its configuration key.
+Before you can use the MHAX feature, turn on its configuration key.
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
@@ -41,16 +41,16 @@ Before you can use the MHAX feature, you must turn on its configuration key.
 
 ## Set MHAX parameters
 
-You must set a few general parameters on the **Material handling equipment interface parameters** page to configure the feature.
+Set a few general parameters on the **Material handling equipment interface parameters** page to configure the feature.
 
 1. Go to **Material handling equipment interface \> Setup \> Material handling equipment interface parameters**.
-2. On the **General** tab, set the following fields:
+1. On the **General** tab, set the following fields:
 
-    - **User mappings** – Map system users to their related warehouse workers. The system users are used to call the inbound queue service. Selected workers will be assigned the work operations (picks and puts) that are processed through the inbound queue. Work operations will be performed in the default warehouse of each worker.
-    - **Enable inbound message ID** – When this option is set to *Yes*, if a duplicate inbound message ID is received, the message will be rejected, and an error message will state that the message already exists. When this option is set to *No*, duplicate inbound message IDs will be allowed.
-    - **Enable manual inbound message creation** – When this option is set to *Yes*, you can simulate inbound messages by creating a record directly from the **Inbound queue** page.
+        - **User mappings** – Map system users to their related warehouse workers. The system users call the inbound queue service. Selected workers are assigned the work operations (picks and puts) that are processed through the inbound queue. Work operations are performed in the default warehoues of each worker.
+        - **Enable inbound message ID** – When you set this option to *Yes*, if a duplicate inbound message ID is received, the message is rejected and an error message is displayed that states the message already exists. When you set this option to *No*, duplicate inbound message IDs are allowed.
+    - **Enable manual inbound message creation** – When you set this option to *Yes*, you can simulate inbound messages by creating a record directly from the **Inbound queue** page.
 
-3. On the **Number sequences** tab, select the system-wide number sequences that should be used to generate unique IDs for the inbound queue items, outbound queue items, and work line pairs.
+1. On the **Number sequences** tab, select the system-wide number sequences that generate unique IDs for the inbound queue items, outbound queue items, and work line pairs.
 
 ## Outbound events
 
@@ -78,23 +78,23 @@ To create a subscription, go to **Material handling equipment interface \> Setup
 - **Outbound transaction type** – The type of events that the subscription should contain.
 - **Payload generator** – An optional code extension that can enter additional information in the **Payload** field of the outbound event.
 
-A query can be associated with each subscription. This query filters work lines and headers to further limit the work that will use the subscription to generate events. To add a query to a subscription, select the **Run query** check box for the relevant subscription on the **Subscriptions** page, and then select **Edit query** on the Action Pane. The standard Supply Chain Management query editor appears.
+You can associate a query with each subscription. This query filters work lines and headers to further limit the work that uses the subscription to generate events. To add a query to a subscription, select the **Run query** check box for the relevant subscription on the **Subscriptions** page, and then select **Edit query** on the Action Pane. The standard Supply Chain Management query editor appears.
 
-In addition, the subscription includes a *subscription map* that maps fields from either the work header or the work line to some or all of the 10 free data fields of the outbound event, as required. To return information to the MHAX service, you will typically include the work line record ID or the *work line pair ID*. (The work line pair ID is a new property that enables the system to use a single return command to process pick and put lines.) The remaining fields depend on the use case. Some examples are provided later in this article.
+In addition, the subscription includes a *subscription map* that maps fields from either the work header or the work line to some or all of the 10 free data fields of the outbound event, as required. To return information to the MHAX service, typically include the work line record ID or the *work line pair ID*. (The work line pair ID is a new property that enables the system to use a single return command to process pick and put lines.) The remaining fields depend on the use case. Some examples are provided later in this article.
 
 To set up a subscription map, select the relevant subscription on the **Subscriptions** page, and then select **Subscription map** on the Action Pane. In the **Subscription map** dialog box that appears, you can assign a table and field for each available data field as you require.
 
 ### Outbound event types
 
-This section describes the various events types that are available. (Event types are also known as *transaction types*.) It also explains when each type of event is created in the WMS system.
+This section describes the various event types that are available. (Event types are also known as *transaction types*.) It also explains when each type of event is created in the WMS system.
 
 #### Work creation events (WorkCreation)
 
-Work creation events are created after work is generated by the application. This behavior applies to most types of work creation processes, most notably to the creation of picking and replenishment work. In general, if work is created in an *Open* state, which indicates that the work is ready to be run by a worker, a work creation event will be generated. In addition, work creation events will be generated for basic movement work (not movement by template work), even though that work isn't created as open work.
+Work creation events are created after work is generated by the application. This behavior applies to most types of work creation processes, most notably to the creation of picking and replenishment work. In general, if work is created in an *Open* state, which indicates that the work is ready to be run by a worker, a work creation event is generated. In addition, work creation events are generated for basic movement work (not movement by template work), even though that work isn't created as open work.
 
 A notable exception to this behavior is cycle counting work, which isn't currently supported. Stock counts in the MH system are outside the scope of MHAX, and the results of counts must be imported into an inventory counting journal.
 
-After work has been created, the MHAX service processes the work lines that are generated and assigns a work line pair ID to all generated work lines for each work header. The objective is to group all the pick work lines with the successive puts under one work line pair ID. (The groups correspond to pick/put pairs in work templates.) In this way, a single ID can be used to report work completion for all related pick and put lines. The grouping process starts with the first line and then continues with the same ID until it encounters a successive pair of put/pick work lines. The running ID is assigned to the put line of that pair. A new ID is then used for the pick line of the pair onward. This process continues until it has processed all lines that belong to the work header.
+After work is created, the MHAX service processes the generated work lines and assigns a work line pair ID to all generated work lines for each work header. The objective is to group all the pick work lines with the successive puts under one work line pair ID. (The groups correspond to pick/put pairs in work templates.) In this way, a single ID can be used to report work completion for all related pick and put lines. The grouping process starts with the first line and then continues with the same ID until it encounters a successive pair of put/pick work lines. The running ID is assigned to the put line of that pair. A new ID is then used for the pick line of the pair onward. This process continues until it processes all lines that belong to the work header.
 
 As a special feature of work creation events, if the **Blocked wave** option is set to *Yes* on the work header, the events that are generated will have a status of *Blocked* instead of the usual status of *Ready* that is used to send them to the MH system. The **Blocked wave** flag on the work header indicates that the work header isn't yet ready for workers to run, perhaps because of unfinished replenishment work. When the **Blocked wave** flag is cleared, events that have already been generated are unblocked and are available for the MH system to retrieve from the queue.
 
@@ -116,11 +116,11 @@ Pick/put completion events are triggered when the status of the pick/put line ch
 
 ### Monitor the outbound queue
 
-To review your outbound queue, go to **Material handling equipment interface \> Common \> Outbound queue**. The **Outbound queue** page lists every outbound queue item and its status. Select a queue item to view its details. These details include the item's transaction type, the subscription that it used, and values for each data field (**data01** through **data10**) and the payload.
+To review your outbound queue, go to **Material handling equipment interface > Common > Outbound queue**. The **Outbound queue** page lists every outbound queue item and its status. Select a queue item to view its details. These details include the item's transaction type, the subscription that it used, and values for each data field (**data01** through **data10**) and the payload.
 
 ### Clean up the outbound queue
 
-Eventually, your outbound queue will start to become full of queue items that have already been sent. To remove these items, go to **Material handling equipment interface \> Periodic tasks \> Cleanup \> Outbound queue cleanup**.
+Eventually, your outbound queue starts to fill with queue items that are already sent. To remove these items, go to **Material handling equipment interface > Periodic tasks > Cleanup > Outbound queue cleanup**.
 
 ## Inbound events
 
@@ -128,7 +128,7 @@ This section describes the various types of inbound events that the MH system ca
 
 ### Structure of inbound events
 
-When an inbound event is submitted, the external system must supply the inbound transaction type together with up to 10 parameters (**data01** through **data10**). Optional validation can make sure that the MHAX service hasn't received the same inbound event more than one time. To enable this validation, each inbound event must have a unique message ID. If a duplicate message ID is received, and if the **Enable inbound message ID** option is set to *Yes* on the **Material handling equipment interface parameters** page, the message will be rejected. An error message will state that the message already exists.
+When an inbound event is submitted, the external system must supply the inbound transaction type together with up to 10 parameters (**data01** through **data10**). Optional validation can make sure that the MHAX service doesn't receive the same inbound event more than one time. To enable this validation, each inbound event must have a unique message ID. If a duplicate message ID is received, and if the **Enable inbound message ID** option is set to *Yes* on the **Material handling equipment interface parameters** page, the message is rejected. An error message states that the message already exists.
 
 In addition to the incoming data fields, the system assigns a unique inbound queue ID to the event.
 
@@ -149,13 +149,13 @@ Work-confirm events require that the incoming data fields include the following 
 - **data03** – The ID of the license plate to pick from.
 - **data04** – The work header's target license plate ID.
 
-If the work line pair ID is provided, all pick, put, or custom work lines that are marked by the work line pair ID, and that have a status of *Open* or *In process*, are run sequentially. If a work line record ID (`RecId` value) is provided, the work line must be a pick, put, or custom work line that has a status of *Open* or *In process*.
+If the work line pair ID is provided, all pick, put, or custom work lines that are marked by the work line pair ID, and that have a status of *Open* or *In process*, are run sequentially. If a work line record ID (`RecId` value) is provided, the work line must be a pick, put, or custom work line with a status of *Open* or *In process*.
 
 Pick lines from license plate–controlled locations require that the **data03** specify the license plate that should be picked from, regardless of whether the lines are marked by the work line record ID or the work line pair ID. The **data04** field must specify the work header's target license plate for the pick.
 
 Put lines don't accept further information. They are run based only on the current work line's location and the work's target license plate. If the put must be done to a different location, change the location of the work line as described in the [Override events](#override-events) section later in this article.
 
-Custom work lines don't require, or support, any additional information in the inbound event.
+Custom work lines don't require or support any additional information in the inbound event.
 
 #### Short pick events (ShortPick)
 
@@ -191,28 +191,28 @@ The system performs a license plate receiving operation, based on the license pl
 
 ### Monitor the inbound queue
 
-To review your inbound queue, go to **Material handling equipment interface \> Common \> Inbound queue**. The **Inbound queue** page lists every inbound queue item and its status. Select a queue item to view its details. These details include the item's transaction type, the message ID, and values for each data field (**data01** through **data10**).
+To review your inbound queue, go to **Material handling equipment interface > Common > Inbound queue**. The **Inbound queue** page lists every inbound queue item and its status. Select a queue item to view its details. These details include the item's transaction type, the message ID, and values for each data field (**data01** through **data10**).
 
-If an error or another type of log item occurred while inbound events were processed, you can inspect the log by selecting **Error log** on the Action Pane.
+If an error or another type of log item occurs while processing inbound events, you can inspect the log by selecting **Error log** on the Action Pane.
 
 ### Inbound event processing
 
-Inbound events are first written to the database, and they are then immediately (synchronously) run. If an error occurs during processing, the event is still written to the queue, but the status is set to *Errored*. The MHAX service returns an error message to the MH system and stores the error log in the inbound event record for later investigation.
+Inbound events are first written to the database and are then immediately (synchronously) run. If an error occurs during processing, the event is still written to the queue, but the status is set to *Errored*. The MHAX service returns an error message to the MH system and stores the error log in the inbound event record for later investigation.
 
 Events that have a status of *Errored* can be reprocessed later if the error condition is fixed. To reprocess them, follow one of these steps:
 
-- Go to **Material handling equipment interface \> Common \> Inbound queue**. Select the relevant inbound queue, and then select **Reprocess** on the Action Pane.
-- Go to **Material handling equipment interface \> Common \> Reprocess errored inbound queue**. A standard batch job dialog box appears. There, you can set up a record filter, and schedule or run a batch job to reprocess the queue.
+- Go to **Material handling equipment interface > Common > Inbound queue**. Select the relevant inbound queue, and then select **Reprocess** on the Action Pane.
+- Go to **Material handling equipment interface > Common > Reprocess errored inbound queue**. A standard batch job dialog box appears. There, you can set up a record filter, and schedule or run a batch job to reprocess the queue.
 
-All work operations (picks and puts) are run by using the worker who is selected in the **User ID** field on the **Material handling equipment interface parameters** page.
+All work operations (picks and puts) run by using the worker who is selected in the **User ID** field on the **Material handling equipment interface parameters** page.
 
 ### Clean up the inbound queue
 
-Eventually, your inbound queue will start to become full of queue items that have already been processed. To remove these items, go to **Material handling equipment interface \> Periodic tasks \> Cleanup \> Inbound queue cleanup**.
+Eventually, your inbound queue fills with queue items that are already processed. To remove these items, go to **Material handling equipment interface > Periodic tasks > Cleanup > Inbound queue cleanup**.
 
 ## Get a quick overview by using the queue manager
 
-To get a quick overview of all the activity that is related to your inbound and outbound queues, go to **Material handling equipment interface \> Workspaces \> Queue manager**. The **Queue manager** page provides a set of tabs and tiles that you can use to monitor and explore your queues. It also provides useful links to most of the other pages that are mentioned in this article.
+To get a quick overview of all the activity that's related to your inbound and outbound queues, go to **Material handling equipment interface > Workspaces > Queue manager**. The **Queue manager** page provides a set of tabs and tiles that you can use to monitor and explore your queues. It also provides useful links to most of the other pages that are mentioned in this article.
 
 ## Connect to the MHAX service
 
