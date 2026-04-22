@@ -9,7 +9,7 @@ ms.custom:
   - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: France
-ms.search.validFrom: 2026-04-22
+ms.search.validFrom: 2026-04-24
 ms.dyn365.ops.version: AX 10.0.48
 ---
 
