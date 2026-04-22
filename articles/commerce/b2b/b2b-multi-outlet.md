@@ -195,8 +195,8 @@ To enable the feature, follow these steps:
 
 Enabling this feature requires a one-time batch job execution to migrate any existing B2B customers, B2B2B channels (distributors) and OBO configurations/users as part of the activation process. The batch job is called **Migrate B2B Multi-Outlet Customers** and is located under **Retail and Commerce > Retail and Commerce IT**. This batch job will take the following steps:
 
-1. Find all organization type customers attached to a customer hierarchy.
-1. Create a contact under the organization for each person type customer attached to the customer hierarchy. This contact will use the same Party ID as the person type account for traceability.
+1. Find all organization-type customers attached to a customer hierarchy.
+1. Create a contact under the organization for each person-type customer attached to the customer hierarchy. This contact will use the same Party ID as the person-type account for traceability.
 1. Attach the existing authentication details as part of the pairing process to the new contact(s).
 1. Assign the same role (Admin or User) to the new contact(s).
 
