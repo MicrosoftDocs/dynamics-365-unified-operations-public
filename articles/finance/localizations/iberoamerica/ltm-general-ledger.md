@@ -2,7 +2,7 @@
 title: Printing configuration for General Ledger LATAM
 description: Learn about the configuration that's required to print a general ledger report for Latin America, including a process for printing the general ledger report. 
 author: Fhernandez0088
-ms.author: v-federicohe
+ms.author: v-mpizmeny
 ms.topic: how-to
 ms.date: 01/05/2026
 ms.custom: bap-template
@@ -25,29 +25,25 @@ Before you print the general ledger report, the following prerequisites must be 
 - The country/region-specific LATAM feature and the general feature must be enabled.
 - Download the specific report configurations from the Dataverse configuration repository. These formats are applicable to all LATAM countries, except Colombia and Peru
 
-| Element |                    Format name                    |
-|:-------:|:-------------------------------------------------:|
-| Model   | :::no-loc text="Ledger Accounting LATAM":::                               |
-| Format  | :::no-loc text="General Ledger LATAM":::                         |
-
-> [!IMPORTANT]
-> For Colombia and Peru, specific formats must be also imported.
-> | Country |                    Format name                    | Link MSFT Learn |
-> |:-------:|:-------------------------------------------------:|:----------:|
-> | Colombia   | :::no-loc text="General Ledger CO":::  |[Set up and generate a printed general ledger report for Colombia]() |
-> | Peru  | :::no-loc text="General Ledger PE"::: |[Set up and generate a printed general ledger report for Peru]() |
+| Element |                    Format name                    | Country |
+|:-------:|:-------------------------------------------------:|:---------------------------------------:|
+| Model   | :::no-loc text="Ledger accounting reports":::    | All LATAM countries |
+| Model   | :::no-loc text="Ledger Accounting LATAM":::  | All LATAM countries |
+| Format  | :::no-loc text="General Ledger LATAM"::: | All LATAM countries |
+| Format  | :::no-loc text="General Ledger CO"::: | Colombia |
+| Format  | :::no-loc text="General Ledger PE"::: | Peru |
 
 Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 - The SSRS Reports/Services references must be configured in the following way:
 
-  - **Report/Service Id:** Enter **GeneralLedger**.
-  - **Report/Service name:** Enter **GeneralLedger**.
+  - **Report/Service Id:** Enter **General Ledger**.
+  - **Report/Service name:** Enter a descriptive name.
   - **Report/Service type:** Select an ER configuration.
-  - **Model mapping name:** Select **Ledger Accounting**.
-  - **Data model definition:** Select **GeneralLedger**.
-  - **Format mapping:** Select **General Ledger LATAM**.
+  - **Model mapping name:** Select **:::no-loc text="Ledger Accounting":::**.
+  - **Data model definition:** Select **:::no-loc text="GeneralLedger":::**.
+  - **Format mapping:** Select **:::no-loc text="General Ledger LATAM":::**. (**:::no-loc text="General Ledger CO":::** for Colombia, **:::no-loc text="General Ledger PE":::** for Peru)
   - **Report/Service type:** Set the **General Ledger** option to **Yes**.
 
 - You must have transactions that have been posted.
