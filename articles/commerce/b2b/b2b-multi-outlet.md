@@ -187,7 +187,7 @@ To enable the feature, follow these steps:
  
 1. In Commerce headquarters, go to **Feature management** (**System administration > Workspaces > Feature management**).
 1. Search for and enable the **B2B Multi-Outlet Ordering with Contact-Based Access** feature.
-1. Run the **Migrate B2B Multi-Outlet Customers** Batch job (**Retail and Commerce > Retail and Commerce IT**, mandatory for environments with existing B2B customers)
+1. Run the **Migrate B2B Multi-Outlet Customers** Batch job (**Retail and Commerce > Retail and Commerce IT**). This step is mandatory for environments with existing B2B customers.
 1. Run the Commerce Data Exchange (CDX) **1010 (Customers)** job.
 
 
