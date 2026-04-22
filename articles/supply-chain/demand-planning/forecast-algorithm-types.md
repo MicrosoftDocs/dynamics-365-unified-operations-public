@@ -4,7 +4,7 @@ description: Learn how each of the available forecasting algorithms works in Dem
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: concept-article
-ms.date: 11/29/2024
+ms.date: 4/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -16,8 +16,8 @@ ms.search.form:
 
 Demand planning in Microsoft Dynamics 365 Supply Chain Management includes four popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, *Prophet*, and *XGBoost*.
 
-- Auto-ARIMA is suited for *stationary data*. Stationary data is data that has constant mean, constant standard deviation, and no seasonality.
-- Error, trend, and seasonality (ETS) excels if your business case is simple and the data has various patterns, such linear or exponential trends, *or* if you want the forecast to give more weight to the most recent data.
+- Auto-ARIMA works well with *stationary data*. Stationary data is data that has a constant mean, constant standard deviation, and no seasonality.
+- Error, trend, and seasonality (ETS) works well if your business case is simple and the data has various patterns, such as linear or exponential trends, *or* if you want the forecast to give more weight to the most recent data.
 - Prophet works best with complex, real-world data.
 - eXtreme Gradient Boosting (XGBoost) can generate a forecast based on multiple inputs.
 
@@ -85,7 +85,7 @@ When you run a forecast calculation by using the best fit model, the system opti
 
 The following chart shows the overall sales forecast across all dimensions (all products in all stores) over the next nine months, found by using three different forecast models. The green line represents the best fit model. Because the best fit model selects the best forecast model for each product and dimension combination, it avoids the outliers that can occur if a single model is used for all dimension combinations. As a result, the overall best fit forecast resembles an average of the single-model forecasts.
 
-:::image type="content" source="media/forecast-model-compare-graph.png" alt-text="Chart that shows forecast results from three different forecast models, based on the same historical data":::
+:::image type="content" source="media/forecast-model-compare-graph.png" alt-text="Screenshot of chart that shows forecast results from three different forecast models, based on the same historical data.":::
 
 Legend:
 
@@ -95,7 +95,7 @@ Legend:
 
 ### Best fit model versions
 
-The best fit model algorithm is available in several versions, as described in the following table. Usually, you should use the newest version that's available, but to ensure that all of your existing forecast models continue to work, the older versions remain available and supported until further notice. To use one of these algorithms, select the appropriate version in the [configuration settings](design-forecast-models.md) for the *Forecast* step in your forecast model.
+The best fit model algorithm is available in several versions, as described in the following table. Usually, you should use the newest version that's available. However, to ensure that all of your existing forecast models continue to work, the older versions remain available and supported until further notice. To use one of these algorithms, select the appropriate version in the [configuration settings](design-forecast-models.md) for the *Forecast* step in your forecast model.
 
 | Name | Version required | Description |
 |--|--|--|
@@ -106,7 +106,7 @@ The best fit model algorithm is available in several versions, as described in t
 > [!IMPORTANT]
 >
 > - *Best fit model - version 2* and *Best fit model - version 3* are preview features.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520). They're available before an official release so that customers can get early access and provide feedback.
 
 ## Auto-ARIMA: The time traveler's delight
 
@@ -134,33 +134,33 @@ Auto-ARIMA works especially well with time series data that shows a stable patte
 
 The AR component uses the following equation:
 
-Y(t) = c &plus; ɸ1Y(t&minus;1) &plus; ɸ2Y(t&minus;2) &plus; &hellip; &plus; ɸpY(t&minus;p) &plus; ϵ(t)
+Y(t) = c + ɸ1Y(t−1) + ɸ2Y(t−2) + ... + ɸpY(t−p) + ϵ(t)
 
 Key:
 
 - *Y(t)* – The value at time *t*.
 - *c* – A constant.
-- *ɸ1, ɸ2, &hellip; ɸp* – Coefficients of the model.
+- *ɸ1, ɸ2, ... ɸp* – Coefficients of the model.
 - *ϵ(t)* – The white noise error term.
 
 #### Moving average calculation
 
 The MA component uses the following equation:
 
-Y(t) = c &plus; ϵ(t) &plus; ϴ1ϵ(t&minus;1) &plus; ϴ2ϵ(t&minus;2) &plus; &hellip; &plus; ϴqϵ(t&minus;q)
+Y(t) = c + ϵ(t) + ϴ1ϵ(t−1) + ϴ2ϵ(t−2) + ... + ϴqϵ(t−q)
 
 Key:
 
 - *Y(t)* – The value at time *t*.
 - *c* – A constant.
-- *ϵ(t), ϵ(t&minus;1), &hellip; ϵ(t&minus;q)* – Error terms at time *t*, *t*&minus;1, &hellip; *t*&minus;*q*.
-- *ϴ1, ϴ2, &hellip; ϴq* – Coefficients of the model.
+- *ϵ(t), ϵ(t−1), ... ϵ(t−q)* – Error terms at time *t*, *t*−1, ... *t*−*q*.
+- *ϴ1, ϴ2, ... ϴq* – Coefficients of the model.
 
 #### ARIMA calculation
 
 The auto-ARIMA algorithm combines the AR and MA components by using the following equation:
 
-ARIMA = AR &plus; MA (after differencing the time series)
+ARIMA = AR + MA (after differencing the time series)
 
 ## ETS: The shape-shifter
 
@@ -193,7 +193,7 @@ Here's a step-by-step explanation of the algorithm:
 
 The ETS algorithm uses the following equation:
 
-F(t&plus;1) = αA(t) &plus; \[1&minus;α\]F(t)
+F(t&plus;1) = αA(t) + \[1&minus;α\]F(t)
 
 Key:
 
@@ -204,7 +204,7 @@ Key:
 
 ## Prophet: The visionary forecasting guru
 
-Prophet was developed by Facebook's research team. It's a modern and flexible forecasting algorithm that can handle the challenges of real-world data. It's especially effective at handling missing values, outliers, and complex patterns. It performs best with seasonal data, accounts for holidays during forecasting, and doesn't need much preprocessing.
+Facebook's research team developed Prophet. It's a modern and flexible forecasting algorithm that can handle the challenges of real-world data. It's especially effective at handling missing values, outliers, and complex patterns. It performs best with seasonal data, accounts for holidays during forecasting, and doesn't need much preprocessing.
 
 Prophet works by decomposing the time series data into several components, such as trend, seasonality, and holidays, and then fitting a model to each component. This approach enables Prophet to accurately capture the nuances in your data and produce reliable forecasts. Prophet is ideal for businesses that have irregular demand patterns or frequent outliers. It's also ideal for businesses that are affected by special events such as holidays or promotions.
 
