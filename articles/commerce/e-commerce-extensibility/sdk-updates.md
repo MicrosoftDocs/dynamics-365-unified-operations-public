@@ -45,7 +45,7 @@ Patch versions don't change dependencies on the Commerce Scale Unit and you can 
 
 ### Module library versions mapped to Commerce Scale Unit versions 
 
-The following table maps module library versions to Commerce Scale Unit versions. Use the same module library versions for the Retail Server proxy and Fabrikam design kit as the ones mapped to the Commerce Scale Unit. The table lists current supported versions as of **September 15, 2023**.
+The following table maps module library versions to Commerce Scale Unit versions. Use the same module library versions for the Retail Server proxy and Fabrikam design kit as the ones mapped to the Commerce Scale Unit. The table lists current supported versions as of **April 2026**.
 
 | Commerce Scale Unit version | Maximum module library version |
 | --------------- | --------------- |
@@ -73,6 +73,18 @@ The following table maps module library versions to Commerce Scale Unit versions
 | 10.0.34 | 9.44.x |
 | 10.0.35 | 9.45.x |
 | 10.0.36 | 9.46.x |
+| 10.0.37 | 9.47.x |
+| 10.0.38 | 9.48.x |
+| 10.0.39 | 9.49.x |
+| 10.0.40 | 9.50.x |
+| 10.0.41 | 9.51.x |
+| 10.0.42 | 9.52.x |
+| 10.0.43 | 9.53.x |
+| 10.0.44 | 9.54.x |
+| 10.0.45 | 9.55.x |
+| 10.0.46 | 9.56.x |
+| 10.0.47 | 9.57.x |
+| 10.0.48 | 9.58.x |
 
 ## Pull updates
 
