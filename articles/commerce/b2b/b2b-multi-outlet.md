@@ -154,7 +154,7 @@ Distributors are able to use a single set of credentials for multiple B2B buyer 
 
 #### Account manager access to contact-based users through On behalf of (OBO) capabilities
 
-OBO-enabled sales representatives or account managers can select contact-based users at their assigned organizations to act on behalf of those contacts and access the same controls. Additionally, clear labeling on orders and order templates created through OBO will include the representative's or account manager's name and the selected contact's name. OBO users will authenticate using their Headquarters credentials seamlessly through a separate sign in option on the B2B website.
+OBO-enabled sales representatives or account managers can select contact-based users at their assigned organizations to act on behalf of those contacts and access the same controls. Additionally, clear labeling on orders and order templates created through OBO will include the representative's or account manager's name and the selected contact's name. OBO users will authenticate using their Commerce headquarters credentials seamlessly through a separate sign-in option on the B2B website.
 
 ### Contact-aware call center experiences
  
