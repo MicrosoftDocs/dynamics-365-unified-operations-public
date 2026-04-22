@@ -38,13 +38,13 @@ Learn more in [Import electronic reporting (ER) configurations from Dataverse](.
 
 - The SSRS Reports/Services references must be configured in the following way:
 
-  - **Report/Service Id:** Enter **General Ledger**.
-  - **Report/Service name:** Enter a descriptive name.
-  - **Report/Service type:** Select an ER configuration.
-  - **Model mapping name:** Select **:::no-loc text="Ledger Accounting":::**.
-  - **Data model definition:** Select **:::no-loc text="GeneralLedger":::**.
-  - **Format mapping:** Select **:::no-loc text="General Ledger LATAM":::**. (**:::no-loc text="General Ledger CO":::** for Colombia, **:::no-loc text="General Ledger PE":::** for Peru)
-  - **Report/Service type:** Set the **General Ledger** option to **Yes**.
+  - In the **Report/Service Id** field, enter **General Ledger**.
+  - In the **Report/Service name** field, enter a descriptive name.
+  - In the **Report/Service type** field, select an ER configuration.
+  - In the **Model mapping name** field, select **:::no-loc text="Ledger Accounting":::**.
+  - In the **Data model definition** field, select **:::no-loc text="GeneralLedger":::**.
+  - In the **Format mapping** field, select **:::no-loc text="General Ledger LATAM":::**. (**:::no-loc text="General Ledger CO":::** for Colombia, **:::no-loc text="General Ledger PE":::** for Peru)
+  - In the **Report/Service type** field, set the **General Ledger** option to **Yes**.
 
 - You must have transactions that have been posted.
 
