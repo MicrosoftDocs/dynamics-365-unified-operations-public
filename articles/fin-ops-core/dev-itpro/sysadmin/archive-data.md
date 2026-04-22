@@ -50,9 +50,9 @@ Support for additional data types is planned in future releases.
 > These are the minimum application build versions:
 > | Release | Availability | Platform number |
 > |---|---|---|
-> | 10.0.45/Platform update 69 | 10.0.2345.212 or higher| 7.0.7690.144 |
-> | 10.0.46/Platform update 70 | 10.0.2428.159 or higher| 7.0.7778.98 |
-> | 10.0.47/Platform update 71 | 10.0.2527.91 or higher| 7.0.7858.80 |
+> | 10.0.45/Platform update 69 | 10.0.2345.xxx or higher| 7.0.7690.144 |
+> | 10.0.46/Platform update 70 | 10.0.2428.162 or higher| 7.0.7778.98 |
+> | 10.0.47/Platform update 71 | 10.0.2527.94 or higher| 7.0.7858.80 |
 > 
 > To support the fix, the system temporarily disables the creation of new archive jobs while allowing any in-progress scheduled jobs to complete. After the data synchronization issue is resolved, the system re-enables the archive jobs.
 >
