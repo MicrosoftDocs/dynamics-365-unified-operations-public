@@ -208,7 +208,7 @@ Once these steps are complete and the updated configurations and data is availab
 [B2B indirect workflows](b2b-indirect.md)
 [Enable on behalf of (OBO) functionality](../on-behalf-of.md)
 [Order history with search and filters module](../order-history-module.md)
-[Invoice management for B2B e-commerce websites](/invoice-management.md)
+[Invoice management for B2B e-commerce websites](invoice-management.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
