@@ -45,8 +45,15 @@ Support for additional data types is planned in future releases.
 >
 > The affected fields remain available in your Dynamics 365 finance and operations tables. We will fix the data synchronization issue by copying the missing fields from those tables into our Dataverse-managed data lake (MDL).
 >
-> When you install the backport [YYY] in your Dynamics 365 finance and operations environment, which makes the affected fields public, the system automatically detects the update. No action on your part is needed. This detection occurs automatically through a [Proactive Quality Update](../get-started/quality-updates-schedule.md) by early June 2026, depending on your current version. Alternatively, you can choose to install the backport manually to trigger detection sooner.
+> When you install the hotfix in your Dynamics 365 finance and operations environment, which makes the affected fields public, the system automatically detects the update. No action on your part is needed. This detection occurs automatically through a [Proactive Quality Update](../get-started/quality-updates-schedule.md) by June 2026, depending on your current version. Alternatively, you can choose to install the hotfix manually to trigger detection sooner.
 >
+> These are the minimum application build versions:
+> | Release | Availability | Platform number |
+> |---|---|---|
+> | 10.0.45/Platform update 69 | 10.0.2345.212 or higher| 7.0.7690.144 |
+> | 10.0.46/Platform update 70 | 10.0.2428.159 or higher| 7.0.7778.98 |
+> | 10.0.47/Platform update 71 | 10.0.2527.91 or higher| 7.0.7858.80 |
+> 
 > To support the fix, the system temporarily disables the creation of new archive jobs while allowing any in-progress scheduled jobs to complete. After the data synchronization issue is resolved, the system re-enables the archive jobs.
 >
 > If you need further assistance, contact Microsoft Support.
