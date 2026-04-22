@@ -18,8 +18,7 @@ ms.assetid: 46e40a3a-784f-4a1e-b185-c4b8ad63518f
 
 [!include [banner](../../includes/banner.md)]
 
-> **Important**
->  
+> [!IMPORTANT]
 > The Recibo Provisório de Serviços (RPS) text-based integration described in this article reflects a legacy approach that is no longer supported under current Brazilian regulations.
 >  
 > As of January 1, 2026, the RPS text format has been deprecated by the Brazilian tax authorities. Customers and partners should use the NFS-e (Nota Fiscal de Serviço Eletrônica) XML-based formats instead.
