@@ -142,7 +142,7 @@ Order templates are contact aware with this feature and administrator-level user
 
 #### Invoice enhancements
 
-Invoices has built in filtering to support contact users, with users having the ability to see and pay invoices attached to orders they have placed, and administrator-level users able to see and pay any invoice for a given organization.
+Invoices have built-in filtering to support contact users, with users having the ability to see and pay invoices attached to orders they have placed, and administrator-level users able to see and pay any invoice for a given organization.
 
 #### Wishlist enhancements
 
