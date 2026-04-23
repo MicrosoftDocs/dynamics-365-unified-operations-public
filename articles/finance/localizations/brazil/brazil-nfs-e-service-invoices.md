@@ -25,11 +25,11 @@ This functionality uses Electronic Reporting.
 > [!IMPORTANT]
 > The following scope limitations apply to the NFS-e feature — both for São Paulo and Federal:
 >
->**Submission and digital signature** — Our scope does not include submission to NFS-e web services (neither São Paulo nor Federal). Additionally, the XML is not digitally signed. A customization or third-party solution is required to submit and sign the NFS-e XML — you will need to implement your own signature and end-to-end integration or use an ISV/third-party solution.
+>**Submission and digital signature** — The scope doesn't include submission to NFS-e web services (São Paulo or Federal), and the XML isn't digitally signed. To submit and sign the NFS-e XML, you must implement your own signature and end-to-end integration, or use an ISV or third-party solution.
 >
->**Official NFS-e fiscal document and access key** — We support only the DPS (Documento Preliminar de Serviços) part of the process. The official NFS-e is issued after the municipality or federal authority processes the DPS and returns the access key. There is currently no standard field for the 50-character NFS-e access key. Customers and partners should plan to persist this value via an extension (for example, on the fiscal document and/or invoice) as part of their integration.
+>**Official NFS-e Fiscal document and Access key** — Only the DPS (Documento Preliminar de Serviços) part of the process is supported. The official NFS-e is issued after the municipality or federal authority processes the DPS and returns the access key. There's currently no standard field for the 50-character NFS-e access key, so you must persist this value through an extension (for example, on the fiscal document or invoice) as part of your integration.
 >
->**Inbound vendor service invoices** — Recording of NBS codes on vendor service invoices (purchase side) is not included in the current scope. There is no legal requirement mandating NBS on the purchase side today, but this is on our backlog for future consideration as NBS is gradually being incorporated into fiscal standards.
+>**Inbound vendor service invoices** — Recording NBS codes on vendor service invoices (purchase side) isn't in the current scope. There's no legal requirement for NBS on the purchase side today, but it's on the backlog for future consideration as NBS is gradually incorporated into fiscal standards.
 
 Before you can generate an **NFS-e** (Nota Fiscal de Serviço Eletrônica - both for São Paulo and Federal) XML in Microsoft Dynamics 365 Finance, complete the key setup steps outlined in this article. Each of the following sections covers a specific prerequisite, with navigation paths and field names to help you configure the system correctly. These steps apply to both end users and IT admins responsible for the Brazilian service invoice process.
 
