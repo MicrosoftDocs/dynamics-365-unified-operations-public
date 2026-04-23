@@ -53,6 +53,7 @@ Learn more in [Import electronic reporting (ER) configurations from Dataverse](.
 1. In the **Report ID** field, select the corresponding report/service ID.
 1. In the **From date** and **To date** fields, select the date range of the transactions that you want to print.
 1. In the **Ledger account** field, select the account number if you want to print the transactions for a specific account.
+1. Set the **Start page number** field.
 1. Select the posting layers to include on the report.
 1. Select **Print**.
 
