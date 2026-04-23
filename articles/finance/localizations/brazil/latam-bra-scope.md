@@ -207,10 +207,19 @@ The following sections list the features that are specific to Brazil.
 - Outbound fiscal document viewer
 - Display approximated taxes
 - Manual maintenance of Ficha Conteúdo de Importação (FCI) by product, fiscal establishment, and period
-- The localization supports issuing fiscal document models 1, 1-A, and 55, and the Services fiscal document for São Paulo city. Partners must customize the requirements or behavior for unsupported fiscal document models.
+- The localization supports issuing fiscal document models 1, 1-A, and 55, and the NFS-e Services fiscal documents for São Paulo city and Federal. Partners must customize the requirements or behavior for unsupported fiscal document models.
 
     > [!NOTE]
     > The localization doesn't support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.
+
+    > [!IMPORTANT]
+    > The Recibo Provisório de Serviços (RPS) text-based integration described in this article reflects a legacy approach that is no longer supported under current Brazilian regulations.
+    >  
+    > As of January 1, 2026, the RPS text format has been deprecated by the Brazilian tax authorities. Customers and partners should use the NFS-e (Nota Fiscal de Serviço Eletrônica) XML-based formats instead.
+    >  
+    > Microsoft Dynamics 365 Finance provides support for NFS-e generation using Electronic Reporting (ER), including the São Paulo municipal format and the Federal standard format. For more information about the current implementation and required setup, see:
+    > - [NFS-e Service Invoices - formats for São Paulo and Federal](brazil-nfs-e-service-invoices.md)
+    > - [NFS-e service invoices for project-based scenarios](brazil-nfs-e-service-invoices-projects.md)
 
 ### Sales return
 
