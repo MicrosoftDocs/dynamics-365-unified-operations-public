@@ -83,7 +83,10 @@ This article includes information and links to resources that can help you set u
   - [Miscellaneous charges on free text invoices](br-00050-miscellaneous-charge-free-text-invoice.md)
   - [Create and post a sales complementary fiscal document](br-00052-1-create-post-sales-complementary-fiscal-documents.md)
   - [Cancel a sales complementary fiscal document](br-00052-2-cancel-sales-complementary-fiscal-document.md)
-  - [Service electronic fiscal document using text files](br00059-service-electronic-fiscal-document-text-files.md)
+  - [Service electronic fiscal document]:
+     - [NFS-e Service Invoices](brazil-nfs-e-service-invoices.md)
+     - [NFS-e service invoices for projects](brazil-nfs-e-service-invoices-projects.md)
+     - [Service electronic fiscal document using text files](br00059-service-electronic-fiscal-document-text-files.md) - deprecated
   - [Set up interest and fines for vendor payments](br-00065-1-set-up-interest-fines-vendor-payments.md)
   - [Calculate interest and fines on vendor payments](br-00065-2-calculate-interest-fines-vendor-payments.md)
   - [Set up interest and fines on customer payments](br-00066-1-set-up-interest-fines-customer-payments.md)
