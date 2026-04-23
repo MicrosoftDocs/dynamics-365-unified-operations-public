@@ -64,6 +64,7 @@ The system defaults the establishment on customer invoices (including prepayment
 1. Site-based defaulting - on customer invoice posting from a sales order, the system leverages the existing invoice split functionality by site and delivery information. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Summary update** > **Split based on**. This functionality helps guarantee that the site linked to establishment representing the company’s establishment in the transaction and the delivery information representing the customer’s establishment in transaction are identified for the invoice.  
 
 Based on this information, the system defines:
+
 - Establishment on the invoice header
 - Registration IDs of the company’s establishment. The **Registration IDs** field allows users to preview and validate all registration identifiers that the system uses during invoice posting.
 
