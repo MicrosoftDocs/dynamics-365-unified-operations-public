@@ -700,6 +700,8 @@
                   href: public-sector/budget-analysis-report.md
                 - name: Budget control statistics vs. Budget analysis report
                   href: budgeting/budget-control-statistics-and-budget-analysis-report.md
+                - name: Budget control data maintenance tool
+                  href: budgeting/budget-control-tool.md
                 - name: Purchase order year-end process
                   href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
