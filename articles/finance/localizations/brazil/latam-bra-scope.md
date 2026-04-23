@@ -213,11 +213,11 @@ The following sections list the features that are specific to Brazil.
     > The localization doesn't support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.
 
     > [!IMPORTANT]
-    > The Recibo Provisório de Serviços (RPS) text-based integration described in this article reflects a legacy approach that is no longer supported under current Brazilian regulations.
+    > The Recibo Provisório de Serviços (RPS) text-based feature mentioned in this article reflects a legacy approach that is no longer supported under current Brazilian regulations.
     >  
     > As of January 1, 2026, the RPS text format has been deprecated by the Brazilian tax authorities. Customers and partners should use the NFS-e (Nota Fiscal de Serviço Eletrônica) XML-based formats instead.
     >  
-    > Microsoft Dynamics 365 Finance provides support for NFS-e generation using Electronic Reporting (ER), including the São Paulo municipal format and the Federal standard format. For more information about the current implementation and required setup, see:
+    > Now Microsoft Dynamics 365 Finance provides support for NFS-e generation using Electronic Reporting (ER), including the São Paulo municipal format and the Federal standard format. For more information about the current implementation and required setup, see:
     > - [NFS-e Service Invoices - formats for São Paulo and Federal](brazil-nfs-e-service-invoices.md)
     > - [NFS-e service invoices for project-based scenarios](brazil-nfs-e-service-invoices-projects.md)
 
@@ -259,6 +259,7 @@ The following sections list the features that are specific to Brazil.
 - NFS-e service invoices for project-based scenarios
 - Service electronic fiscal document using .txt files - outdated
 - Recibo Provisório de Serviços (RPS) for São Paulo city - outdated
+- **Out of scope**: Submission and digital signature, Import of a returned official NFS-e and Access key, Inbound vendor service invoices
 
 ### Financial and treasury
 
