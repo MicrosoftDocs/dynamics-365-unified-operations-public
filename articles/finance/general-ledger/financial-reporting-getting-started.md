@@ -34,7 +34,7 @@ The Financial reporting add-in lets financial and business professionals create,
 3. Agree to the terms, and then select **Install**.
 
 > [!NOTE]
-> Environments managed in Power Platform admin center (PPAC) such as Unified developer experience environments don't have the option to install the Financial reporting add-in. Contace support if you need to set up Financial reporting on a PPAC based environment. 
+> Environments managed in Power Platform admin center (PPAC) such as Unified developer experience environments don't have the option to install the Financial reporting add-in. Contact support if you need to set up Financial reporting on a PPAC based environment. 
 
 ## Uninstall the Financial reporting add-in
 
