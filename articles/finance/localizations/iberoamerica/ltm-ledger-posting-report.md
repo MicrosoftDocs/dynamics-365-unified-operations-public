@@ -1,7 +1,7 @@
 ---
 title: Print a Ledger Posting report for LATAM
 description: Learn how to print a Ledger Posting report for Latin America, including prerequisites and a process for printing a ledger posting report.
-author: Fhernandez0088
+author: MatiasPizmeny01
 ms.author: v-mpizmeny
 ms.topic: how-to
 ms.date: 01/05/2026
@@ -23,7 +23,7 @@ Before you can print a **Ledger Posting** report, the following prerequisites mu
 
 - The legal entity must have an address in a country/region that's within the LATAM localization.
 - You must enable the country/region-specific LATAM feature and the general feature.
-- Download the specific report configurations from the Dataverse configuration repository. These formats are applicable to all LATAM countries, except Bolivia.
+- Download the specific report configurations from the Dataverse configuration repository.
 
 | Element |                    Format name                    | Country |
 |:-------:|:-------------------------------------------------:|:---------------------------------------:|
