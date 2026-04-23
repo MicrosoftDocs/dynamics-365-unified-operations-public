@@ -28,10 +28,9 @@ To run the **Budget control data maintenance** tool, follow these steps:
 1. Go to **Budgeting** > **Periodic** > **Budget control data maintenance**.
 1. Define a date range.
 1. Select **Select scenarios**, and then select **Source document reprocessing provider**.
-1. In the dialog box that appears, specify the document type and document number. To retrieve multiple documents at the same time, use wildcard characters in the **Document number** field. Alternatively, specify
-  a comma-separated list of document numbers.
+1. In the dialog box that appears, specify the document type and document number. To retrieve multiple documents at the same time, use wildcard characters in the **Document number** field. Alternatively, specify a comma-separated list of document numbers.
 
-The tool finds all documents that relieve each other. For example, you specify document PO00123, which relieves document PR005678. In this case, both documents appear in the grid, and they're processed as a group.
+    The tool finds all documents that relieve each other. For example, you specify document PO00123, which relieves document PR005678. In this case, both documents appear in the grid, and they're processed as a group.
 
 1. To process the documents that the tool finds, select **Process documents**.
 1. Complete the remaining dialog boxes.
@@ -48,8 +47,7 @@ To run the **Budget control dimension values provider** scenario, follow these s
 1. Enter a date range. You can set the date range to years before go-live or several years in the future.
 1. Select **Select scenarios**, and then select **Budget control dimension values provider**.
 
- If there are documents to process, the grid is populated with the records that must be updated. The records that appear in the grid are only the unique combinations of budget control dimension values that
- must be updated. For each combination, there might be one or many transactions.
+    If there are documents to process, the grid is populated with the records that must be updated. The records that appear in the grid are only the unique combinations of budget control dimension values that must be updated. For each combination, there might be one or many transactions.
 
 1. Select the records to update, and then select **Process documents**. The operation might take some time, depending on the number of records that must be processed.
 
