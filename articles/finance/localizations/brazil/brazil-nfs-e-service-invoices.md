@@ -97,7 +97,7 @@ When you use the **Federal standard NFS-e format**, enter three percentage value
 - **Approximate % of municipal taxes** – estimated portion of total tax that's municipal.
 
 **Where to enter**: These fields appear on the **Released product details form** under the **Fiscal information** FastTab in the **NFS-E TAX BURDEN** group - for cities using the national layout.
-**Action**: Enter values in each field so that they total 100%. For example, if only municipal ISS applies, you might input 0%, 0%, and 100%. If federal PIS/COFINS taxes apply, you might split it (for example, 10% federal, 0% state, 90% municipal). Make sure all three fields are filled (use 0% where a level doesn't apply). This information is included in the Federal NFS-e XML to meet the reporting requirements of the federal layout.
+**Action**: Enter values in each field so that they do not exceed 100%. For example, if only municipal ISS applies, you might input 0%, 0%, and Z%. If federal PIS/COFINS taxes apply, you might split it (for example, X% federal, 0% state, Z% municipal). Make sure all three fields are filled (use 0% where a level doesn't apply). This information is included in the Federal NFS-e XML to meet the reporting requirements of the federal layout.
 
 By completing the preceding configurations, your Dynamics 365 Finance environment meets the prerequisites for NFS-e generation. When the environment is correctly set, code tables are populated, fields are filled on products and documents, and required indicators are provided, you can proceed to generate NFS-e XML files that comply with the Brazilian electronic service invoice standards.
 
