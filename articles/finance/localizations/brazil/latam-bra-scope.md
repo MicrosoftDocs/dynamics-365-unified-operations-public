@@ -244,10 +244,12 @@ The following sections list the features that are specific to Brazil.
 - Automatic sending of electronic fiscal document through email for customers, vendors, and transportation companies
 - **Out of scope**: Overall purpose services in the NF-e
 
-### NFS-e Services (São Paulo city)
+### NFS-e Services
 
-- Service electronic fiscal document using .txt files
-- Recibo Provisório de Serviços (RPS) for São Paulo city
+- NFS-e Service Invoices - formats for São Paulo city and Federal
+- NFS-e service invoices for project-based scenarios
+- Service electronic fiscal document using .txt files - outdated
+- Recibo Provisório de Serviços (RPS) for São Paulo city - outdated
 
 ### Financial and treasury
 
