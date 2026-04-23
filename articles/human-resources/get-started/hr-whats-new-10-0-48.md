@@ -22,3 +22,21 @@ This article lists the features that are new or changed for Microsoft Dynamics 3
 - **Preview of release:** April 2026
 - **General availability of release (self-update):** June 2026
 - **General availability of release (auto-update):** July 2026
+
+## Features included in this release
+This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was 
+originally published.
+
+| Module or feature area | Feature name | More information | Enabled by |
+|---|---|---|---|
+|Personnel management    | Expire jobs and job titles | This feature allows HR Teams to set expiration dates for jobs and job titles in Dynamics 365 Human Resources. Expired items are hidden from selection lists and can’t be assigned to new positions, but all historical data is retained for reporting and compliance. | Feature management |
+
+## Feature enhancements included in this release
+
+This section contains a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+
+| Module or feature area | Feature name | More information | Enabled by |
+|---|---|---|---|
+|             | Error handling for the closed activity | Changed behavior of opening 'closed' activities in a non-editable/view-only state to prevent unintended modifications which was earlier causing warning loop.|     |
+|Automatic assignment of compensation level for recruitement request|To reduce user friction, compensation details are now auto populated when exactly one compensation option exists, keeping existing behavior of user selection when multiple options are available.|    |
+
