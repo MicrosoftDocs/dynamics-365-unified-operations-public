@@ -49,11 +49,11 @@ Support for additional data types is planned in future releases.
 >
 > These are the minimum application build versions:
 >
-> | Release | Availability | Platform number |
-> |---|---|---|
-> | 10.0.45/Platform update 69 | 10.0.2345.216 or higher| 7.0.7690.144 or higher |
-> | 10.0.46/Platform update 70 | 10.0.2428.162 or higher| 7.0.7778.98 or higher |
-> | 10.0.47/Platform update 71 | 10.0.2527.94 or higher| 7.0.7858.80 or higher |
+> | Release | Availability | 
+> |---|---|
+> | 10.0.45/Platform update 69 | 10.0.2345.220 or higher|
+> | 10.0.46/Platform update 70 | 10.0.2428.162 or higher|
+> | 10.0.47/Platform update 71 | 10.0.2527.94 or higher|
 > 
 > To support the fix, the system temporarily disables the creation of new archive jobs while allowing any in-progress scheduled jobs to complete. After the data synchronization issue is resolved, the system re-enables the archive jobs. If you need further assistance, contact Microsoft Support.
 
