@@ -113,9 +113,9 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 1. On the **Versions** tab, check that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify these required **Edicom** connection and integration parameters:
 
-    - **Service ID** – Use the service ID (Domain) number from Edicom to identify the company.
+    - **Domain** – Use the domain number (can be also referred as **Service ID**) from Edicom to identify the company.
     - **Group** – Use the group code for internal routing within the Edicom infrastructure.
-    - **Destination** – Construct the destination by appending **_EDIWIN** to the service ID number. For example, if the service ID number is **123456**, enter **123456_EDIWIN**.
+    - **Destination** – Construct the destination by appending **_EDIWIN** to the Domain/Service ID number. For example, if the Domain number is **123456**, enter **123456_EDIWIN**.
     - **Token** – Select the name of the [token](#Tok) you created earlier.
 
 1. Each copy starts as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
