@@ -61,14 +61,14 @@ If any required registration ID is missing or invalid, posting is blocked.
 
 The system defaults the establishment on customer invoices (including prepayment invoices) based on the following logic:
 
-1. Site-based defaulting - on customer invoice posting from a sales order, the system leverages the existing invoice split functionality by site and delivery information. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Summary update** > **Split based on**. This functionality helps guarantee that the site linked to establishment representing the company’s establishment in the transaction and the delivery information representing the customer’s establishment in transaction are identified for the invoice.  
+1. Site-based defaulting is based on customer invoice posting from a sales order, the system applies the existing invoice split functionality by site and delivery information. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Summary update** > **Split based on**. This functionality helps guarantee that the site linked to establishment representing the company’s establishment in the transaction and the delivery information representing the customer’s establishment in transaction are identified for the invoice.  
 
 Based on this information, the system defines:
 
 - Establishment on the invoice header
 - Registration IDs of the company’s establishment. The **Registration IDs** field allows users to preview and validate all registration identifiers that the system uses during invoice posting.
 
-1. Financial dimension–based defaulting - on customer invoice posting from General journal or Free text invoice. If a financial dimension value used on the invoice is linked to an establishment, the system automatically assigns the linked establishment.
+1. Financial dimension–based defaulting is based on customer invoice posting from General journal or Free text invoice. If a financial dimension value used on the invoice is linked to an establishment, the system automatically assigns the linked establishment.
 
     - Validation rule: If multiple financial dimensions point to different establishments, posting fails with a validation error.
 
@@ -80,9 +80,9 @@ Based on this information, the system defines:
 > [!NOTE]
 If you don't assign an **Establishment** to an invoice, the system treats this scenario as only one establishment represented by legal entity itself. In this case, the **Establishment** field isn't filled in and no registration IDs are defined and stored for establishment source.
 
-1. **Registration IDs** set up as mandatory are effective on the invoice date for the address purposes of the address set as default for “Head company” purpose or primary address if there is no address marked with “Head company” purpose of given legal entity must be stored for the customer invoice header.
+1. **Registration IDs** set up as mandatory are effective on the invoice date for the address purposes of the address set as default for "Head company" purpose or primary address if there's no address marked with "Head company" purpose of given legal entity must be stored for the customer invoice header.
 
-1. Mandatory **Registration IDs** of the **Establishment** stored for the customer invoice must be stored for the customer invoice header based on the **Validation rules** settings effective on the invoice date. If the **Establishment** wasn't assigned to invoice, this is treated as an only one establishment represented by legal entity itself scenario. In this case, it is expected that all the registration IDs including the one identifying the establishment of the main company is also specified on the legal entity.
+1. Mandatory **Registration IDs** of the **Establishment** stored for the customer invoice must be stored for the customer invoice header based on the **Validation rules** settings effective on the invoice date. If the **Establishment** wasn't assigned to invoice, this is treated as an only one establishment represented by legal entity itself scenario. In this case, it's expected that all the registration IDs including the one identifying the establishment of the main company are also specified on the legal entity.
 
 1. Customer's **Registration IDs** that are set up as mandatory are effective on the invoice date in the **Validation rules** settings. The invoice date must be stored for the customer invoice header for the following customer’s addresses:
 
@@ -94,4 +94,4 @@ When establishment id governance is enabled:
 
 - Customer invoices and free text invoices always represent one issuing establishment.
 - Required registration IDs are validated and stored.
-- Accounts receivable parameters decide the defaulting behaviour.
+- Accounts receivable parameters decide the defaulting behavior.
