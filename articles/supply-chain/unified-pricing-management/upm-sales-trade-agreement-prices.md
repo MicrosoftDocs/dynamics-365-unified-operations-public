@@ -55,6 +55,15 @@ Several configuration settings affect the way that sales trade agreements work i
 
 1. On the **General** tab, set the **Date type** field to the type of date that you'll use when you set up criteria for matching pricing rule records. The available values are *Today*, *Requested ship date*, *Requested receipt date*, and *Created date*.
 
+ > [!NOTE]
+ > If your organization uses only Unified pricing management and does not use traditional trade 
+agreements (created via **Sales and marketing > Prices and discounts > Trade agreement journals**), the 
+parameters on the **Activate price/discount** page (**Sales and marketing > Setup > Prices and discounts >
+ > Activate price/discount**) are not required. You can safely set all toggles on this page to *No*. 
+These parameters control which combinations of customer/item dimensions are available for traditional 
+trade agreement journal lines, and they have no effect on UPM pricing rules, price structures, or price 
+component codes.
+
 ### Concurrency example
 
 The following table shows an example of combinations of price component code attributes.
