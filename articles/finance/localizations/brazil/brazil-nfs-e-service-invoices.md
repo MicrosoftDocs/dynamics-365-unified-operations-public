@@ -25,7 +25,7 @@ This functionality uses Electronic Reporting.
 > [!IMPORTANT]
 > The following scope limitations apply to the NFS-e feature — both for São Paulo and Federal:
 >
->**Submission and digital signature** — The scope doesn't include submission to NFS-e web services (São Paulo or Federal), and the XML isn't digitally signed. To submit and sign the NFS-e XML, you must implement your own signature and end-to-end integration, or use an ISV or third-party solution.
+>**Submission and digital signature** — The scope doesn't include submission to NFS-e web services, and the XML isn't digitally signed. To submit and sign the NFS-e XML, you must implement your own signature and end-to-end integration, or use an ISV or third-party solution.
 >
 >**Official NFS-e Fiscal document and Access key** — Only the DPS (Documento Preliminar de Serviços) part of the process is supported. The official NFS-e is issued after the municipality or federal authority processes the DPS and returns the access key. There's currently no standard field for the 50-character NFS-e access key, so you must persist this value through an extension (for example, on the fiscal document or invoice) as part of your integration.
 >
