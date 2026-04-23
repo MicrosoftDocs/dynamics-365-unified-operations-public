@@ -1,7 +1,7 @@
 ---
 title: Printing configuration for General Ledger LATAM
 description: Learn about the configuration that's required to print a general ledger report for Latin America, including a process for printing the general ledger report. 
-author: Fhernandez0088
+author: MatiasPizmeny01
 ms.author: v-mpizmeny
 ms.topic: how-to
 ms.date: 01/05/2026
@@ -23,7 +23,7 @@ Before you print the general ledger report, the following prerequisites must be 
 
 - The legal entity must have an address in a country/region that's within the LATAM localization.
 - The country/region-specific LATAM feature and the general feature must be enabled.
-- Download the specific report configurations from the Dataverse configuration repository. These formats are applicable to all LATAM countries, except Colombia and Peru
+- Download the specific report configurations from the Dataverse configuration repository.
 
 | Element |                    Format name                    | Country |
 |:-------:|:-------------------------------------------------:|:---------------------------------------:|
@@ -36,9 +36,11 @@ Before you print the general ledger report, the following prerequisites must be 
 Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
+## Configure SSRS Reports / Services references
+
 - The SSRS Reports/Services references must be configured in the following way:
 
-  - In the **Report/Service Id** field, enter **General Ledger**.
+  - In the **Report/Service Id** field, enter **GeneralLedger**.
   - In the **Report/Service name** field, enter a descriptive name.
   - In the **Report/Service type** field, select an ER configuration.
   - In the **Model mapping name** field, select **:::no-loc text="Ledger Accounting":::**.
@@ -53,7 +55,7 @@ Learn more in [Import electronic reporting (ER) configurations from Dataverse](.
 Follow these steps to print the general ledger report for Latin America.
 
 1. Go to **General Ledger** \> **Inquiries and Reports** \> **LATAM** \> **General Ledger**.
-1. In the **General Ledger** dialog box, in the **Report Id** field, select **General Ledger**.
+1. In the **Report ID** field, select the corresponding report/service ID.
 1. In the **From date** and **To date** fields, select the date range of the transactions that you want to print.
 1. Set the **Initial legal number** field.
 1. Set the **Starting page** field.
