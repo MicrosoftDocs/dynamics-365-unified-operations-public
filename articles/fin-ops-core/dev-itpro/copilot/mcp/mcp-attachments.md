@@ -49,22 +49,20 @@ The MCP response with the file resource comes in the following shape:
 3. The agent receives a summary text block followed by a resource block containing the full JSON.
 4. The agent reads the resource to extract individual records.
 
-For example
-
 ### API action tool
-The `api_invoke_action` tool also accepts `returnAsResource`. When set to `true`, the action response is returned as an embedded resource, mirroring the query-tool pattern and raising the allowed response size to 5 MB.
+The `api_invoke_action` tool also accepts `returnAsResource`. When set to `true`, the action response is returned as an embedded resource, mirroring the query-tool pattern and raising the allowed response size to 5 MB. The same size limits and error-handling rules apply as for the query tools. If the inline limit is exceeded, the error's fix field suggests setting returnAsResource=true.
 
-The same size limits, flight gate, and error-handling rules apply as for the query tools. If the inline limit is exceeded, the error's fix field suggests setting returnAsResource=true.
-
-### Form tools with output menu items
+### Form tools with SRS reports and output menu items
 When using form tools in the MCP server, the agent has the ability to click a button that prints a report as an output menu item. The MCP server can run these actions, receiving the output file, appending it to the tool response as an embedded resource alongside the updated form state.
+
+When the agent opens a form with `FormStyle` = "Report" for SRS reports, the MCP server detects the `McpReportForm` pattern and injects guidance instructing the agent to use the report's export buttons. Clicking an export button triggers the download path described in the previous section.
 
 The MCP response is in the following shape:
 
 | Content block |	Type | Description |
 | ------------- | ----- | ----------- |
-| `Content[0]` |	`text`	| Summary, for example "Button ExportToExcel was clicked. File 'report.xlsx' was downloaded." |
-| `Content[1]` |	`text` |	Full form state JSON (McpToolInvocationResponseBody). |
+| `Content[0]` |	`text`	| Summary, for example "Button Print was clicked. File 'report.pdf' was downloaded." |
+| `Content[1]` |	`text` |	Full form state JSON. |
 | `Content[2..N]` |	`resource` |	One EmbeddedResource per downloaded file, with URI `file://{fileName}`. Binary files are returned as base64 `Blob`; text files are returned as UTF-8 `Text`. |
 
 For example, an agent can run the Vendor Aging Report with a prompt like "Run the Vendor Aging Report, aging as of today's date." The agent then uses form tools to find the form and run the report, creating a PDF file. The MCP tool response then includes a file reference for the document, similar to the below response. The agent then summarizes the results of the file, and includes a link to download the PDF file.
@@ -91,9 +89,15 @@ For example, an agent can run the Vendor Aging Report with a prompt like "Run th
 ]
 ```
 
+## Input scenarios: files attached to records
+Input scenarios involve the agent obtaining file content — from the user or from a prior output scenario — and attaching it to the ERP business record through custom APIs. The custom APIs are added to the agent through a flow in Microsoft Copilot Studio. With this feature you can upload files referenced in your agent as attachments to records in the ERP system. For example, uploading PDF documents of orders to attach them to the related record. You can do this using Copilot Studio capabilities for working wtih files in your agent
 
+The action to perform the upload is not built directly into the MCP server. A flow connecting the record to the finance and operations environment is used for the file upload, and needs to be added as a tool in the Copilot Studio Agent. However, use of the flow assumes the Dynamics 365 ERP MCP server is added as a tool in the agent to get details of the record to which the file will be attached.
 
-## Configure attachments
+> [!NOTE] 
+> This feature uses the Microsoft Dataverse connector in the Power Platform, limiting the feature usage to Microsoft Copilot Studio.
+
+### Configure attachment inputs
 
 1. On the **Tools** tab of the agent, select **Add a tool**.
 2. In the **Add tool** dialog, select the **Flow** filter, then search for and add the **Add an attachment to a record in ERP** flow.
@@ -112,3 +116,17 @@ For example, an agent can run the Vendor Aging Report with a prompt like "Run th
    - In the **Choose a variable** dialog, select the **Formula** tab, and enter the following formula: `First(System.Activity.Attachments).Name`.
    - Select **Insert**.
 5. **Save** the tool.
+6. If you haven't already, add the Dynamics 365 ERP MCP server as a tool in your agent following the steps outlined in [Build an agent with Dynamics 365 ERP MCP](../build-agent-mcp).
+
+You can then begin prompting the agent to attach files added to your agent to records in the ERP.
+
+## Known limitations
+
+| Area | Limitation |	Workaround |
+| ---- | ---------- | ---------- |
+| Document upload |	Only the Copilot Studio client receives full `DocumentUploadControl` guidance with API parameters. |	Other clients must use Copilot Studio or invoke the custom API through another integration. |
+| Upload size |	Maximum attachment size is 15 MB (`DocuParameters.maxFileSizeInFileSystemInBytesLong()`). The API validates size twice — first from the base64 length estimate, then after decoding to a `MemoryStream`. |	Pre-validate file size before encoding to base64. |
+| Download size |	There is a 5 MB per-file limit and a 60-second timeout for both SAS URIs and filemanagement URLs. |	No workaround for files larger than 5 MB today. Raise the limit through ECS if necessary. |
+| Resource response |	Resource mode is available only for `data_find_entities` and `data_find_entities_sql`, not for create/update/delete. |	Issue separate read queries when large results are expected. |
+| Duplicate attachment |	`McpAttachFileToRecordCustomAPI` does not enforce uniqueness. |	Always call `McpIsFileAlreadyAttachedToRecord` first. |
+| Global tables |	`isTableGlobal` must be set explicitly. An incorrect value produces a wrong DocuRef.RefCompanyId. |	Check the table metadata, or confirm with data_get_entity_metadata. |
