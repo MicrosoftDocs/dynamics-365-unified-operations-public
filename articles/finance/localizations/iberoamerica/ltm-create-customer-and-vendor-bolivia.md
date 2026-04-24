@@ -2,7 +2,7 @@
 title: Create customer and vendor records with an address in Bolivia
 description: Learn how to create customer and vendor records that have an address in Bolivia.
 author: Cpicon85
-ms.date: 02/18/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.author: v-cpicon
@@ -30,7 +30,7 @@ Before you create records for customers and vendors who are located in Bolivia, 
 
 ## Create a record for a customer in Bolivia
 
-To create a record for a customer in Bolivia, follow these steps.
+To create a record for a customer in Bolivia, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select **New**.
 1. In the **Type** field, select **Organization** for **Persona Juridica** or **Person** for **Persona natural**.
@@ -58,7 +58,7 @@ To create a record for a customer in Bolivia, follow these steps.
 
 ## Create a record for a vendor in Bolivia
 
-To create a record for a vendor in Bolivia, follow these steps.
+To create a record for a vendor in Bolivia, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select **New**.
 1. In the **Type** field, select **Organization** for **Persona juridica** or **Person** for **Persona natural**.

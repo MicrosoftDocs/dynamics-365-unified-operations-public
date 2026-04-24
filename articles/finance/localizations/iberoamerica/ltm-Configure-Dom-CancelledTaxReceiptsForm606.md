@@ -2,7 +2,7 @@
 title: Configure printing for Cancelled Tax Receipts Submission Form 608
 description: Learn about the required configuration for printing Cancelled Tax Receipts Submission Form 608 for the Dominican Republic.
 author: Cpicon85
-ms.date: 04/09/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -33,7 +33,7 @@ Before you can generate the **Format 608 DO** report, the following prerequisite
 
 ## Configure application-specific parameters
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspace**, and select **Reporting configurations**.
 1. In the **LTM Tax** report, select **Format 608 DO**. Then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -47,7 +47,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Run the Format 608 DO report
 
-To generate the **Format 608 DO** report, follow these steps.
+To generate the **Format 608 DO** report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select a value.

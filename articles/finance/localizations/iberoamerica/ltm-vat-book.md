@@ -4,7 +4,7 @@ description: Learn how to set up and use value-added tax (VAT) books, including 
 author: Cpicon85
 ms.author: v-cpicon
 ms.topic: article
-ms.date: 09/20/2023 
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # VAT book printing configuration
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 Value-added tax (VAT) books refer to the records and accounting documents that businesses use to keep track of their transactions for VAT purposes. Although the specific requirements for VAT books can vary from one country/region to another, they generally include the date of the transaction, the customer/vendor information, and the tax information details.
 
@@ -31,15 +33,15 @@ Before you complete the steps in this article to generate and print the report, 
 Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that's used in the transactions. Depending on the country/region that you want to configure the report for, the applicable conditions are shown.
 
 1. Open the **Electronic reporting** workspace, and select **Reporting configurations**.
-2. Select the VAT book format for your country, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
-3. On the **Application specific parameters** page, On the **Conditions** FastTab, select **Add**.
-4. In the **Lookup result** field, select an option. For example, select **VAT**.
-5. In the **Tax Code** field, select the appropriate tax code that's used for VAT tax rates for your country/region.
+1. Select the VAT book format for your country/region, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. On the **Application specific parameters** page, On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** field, select an option. For example, select **VAT**.
+1. In the **Tax Code** field, select the appropriate tax code that's used for VAT tax rates for your country/region.
 
     > [!NOTE]
     > VAT books are formats that depend on the LTM tax report model. Therefore, it's important that taxes are registered for transactions. The codes that you select here must match the codes that are registered in the transactions.
 
-6. Repeat steps 4 and 5 for each column of the report.
+1. Repeat steps 4 and 5 for each column of the report.
 
 To ensure that the report shows the transactions that meet the configured conditions, complete the **Lookup result** field with blank and non-blank conditions.
 
@@ -47,8 +49,8 @@ To ensure that the report shows the transactions that meet the configured condit
 Follow these steps to generate the VAT book report.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-2. In the **Format mapping** field, enter or select a value. Then select **OK**.
-3. In the **From date** and **To date** fields, enter the date range to include on the report.
-4. Select **OK**.
+1. In the **Format mapping** field, enter or select a value. Then select **OK**.
+1. In the **From date** and **To date** fields, enter the date range to include on the report.
+1. Select **OK**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

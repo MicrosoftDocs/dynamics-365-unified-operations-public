@@ -4,7 +4,7 @@ description: Learn how to configure environments to use a separate, dedicated se
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 01/21/2024
+ms.date: 04/02/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -19,9 +19,9 @@ ms.dyn365.ops.version: 10.0.32
 
 [!include[banner](../includes/banner.md)]
 
-You can have dedicated nodes that contain Microsoft SQL Server Integration Services (SSIS), or you can install SSIS on other node types. If you want dedicated SSIS nodes, specify which machines host the node type by entering the details for the nodes in your ConfigTemplate.xml file.
+You can use dedicated nodes that contain Microsoft SQL Server Integration Services (SSIS), or you can install SSIS on other node types. If you want dedicated SSIS nodes, specify which machines host the node type by entering the details for the nodes in your ConfigTemplate.xml file.
 
-If your use of the Data Management Framework (DMF) is low, you might not want to have dedicated nodes. Instead, you can specify which nodes SSIS is installed on. In the **ServiceFabricCluster** section of your ConfigTemplate.xml file, update the **hasSSIS** attribute to **true** for each virtual machine (VM). In this case, you should set the **disabled** attribute to **true** for the **SSISNodeType** node type in the ConfigTemplate.xml file.
+If your use of the Data Management Framework (DMF) is low, you might not want to use dedicated nodes. Instead, specify which nodes SSIS is installed on. In the **ServiceFabricCluster** section of your ConfigTemplate.xml file, update the **hasSSIS** attribute to **true** for each virtual machine (VM). In this case, set the **disabled** attribute to **true** for the **SSISNodeType** node type in the ConfigTemplate.xml file.
 
 > [!NOTE]
 > If you disable the **SSISNodeType** node type but don't set the **hasSSIS** attribute on any node, the scripts and installation logic provision the DMF service to all nodes of the **BatchOnlyAOSNodeType** type. If that node type doesn't exist, the DMF service is provisioned to all nodes of the **AOSNodeType** type.
@@ -63,7 +63,7 @@ For information about how to add a new node to your cluster, see [Add an SSIS no
     .\Configure-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -FileShareReference "aos"
     ```
 
-1. If you want the DMF service to run on specific nodes, you can update your ConfigTemplate.xml file. Set the **hasSSIS** property to **true** for the nodes that you want.
+1. If you want the DMF service to run on specific nodes, update your ConfigTemplate.xml file. Set the **hasSSIS** property to **true** for the nodes that you want.
 
     > [!NOTE]
     > As of infrastructure scripts 2.20.0 and local agent 3.3.0, node tag management is automatically performed, and no action is required if a node is restarted. If you use an older version of the infrastructure scripts or local agent, you must run the following command from a node that belongs to the Azure Service Fabric cluster.

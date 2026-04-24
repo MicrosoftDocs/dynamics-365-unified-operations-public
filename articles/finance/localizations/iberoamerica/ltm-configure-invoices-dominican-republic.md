@@ -2,7 +2,7 @@
 title: Configure sales and purchase invoices for the Dominican Republic
 description: Learn how to configure sales and purchase invoices for the Dominican Republic.
 author: cpicon85
-ms.date: 04/03/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -29,7 +29,7 @@ Configure the following pages to use them in future sales transactions:
 - Number sequence
 - Journal names
 
-To configure a sales invoice, follow these steps.
+To configure a sales invoice, follow these steps:
 
 1. Create the **document class type** that represents the fiscal documents that will be used in future transactions. Examples include invoices, credit notes, debit notes, and packing slips. Learn more in [Document class type for Latin America](ltm-core-document-class-type.md).
 1. Create **document class letters** according to the requirements of the Dominican fiscal authorities.

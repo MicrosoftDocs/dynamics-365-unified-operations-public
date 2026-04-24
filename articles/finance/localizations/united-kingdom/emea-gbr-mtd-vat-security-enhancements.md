@@ -80,7 +80,7 @@ For more information, see [Install the add-in for Electronic invoicing microserv
 > [!IMPORTANT]
 > Before you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, make sure you complete this step for all legal entities that interact with HMRC's APIs: [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup.md#entities).
 
-To enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps.
+To enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps:
 
 1. Go to **Workspaces** \> **Feature management**.
 1. In the list of features, search for **Security enhancements in UK MTD VAT integration (cloud-based deployments only)**.
@@ -98,13 +98,13 @@ If the status of the  feature shows as unavailable (error), you might not meet t
 
 After you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your Finance sandbox environment, your environment is ready to work with MTD endpoints of HMRC.
 
-To integrate with sandbox MTD endpoints of HMRC and create a test user, follow these steps.
+To integrate with sandbox MTD endpoints of HMRC and create a test user, follow these steps:
 
 1. On HMRC Developer Hub, create a test user. Learn more in [Create test user - HMRC Developer Hub - GOV.UK](https://developer.service.hmrc.gov.uk/api-test-user).
 1. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, and select the **UK MTD VAT TEST** processing.
 1. On the **Message additional fields** FastTab, select the **Tax registration number** field, and enter the **VAT Registration Number** value of the test user that you created.  
 
-To validate the integration with sandbox MTD endpoints of HMRC from your sandbox environment, follow these steps.
+To validate the integration with sandbox MTD endpoints of HMRC from your sandbox environment, follow these steps:
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT TEST** processing.
 1. On the **Messages** FastTab, select **New**.
@@ -137,7 +137,7 @@ To integrate with production MTD endpoints of HMRC, use the user ID and password
 - **User ID** – The name that you use to access HMRC while requesting an authorization code.
 - **Password** – The password that you use to access HMRC while requesting an authorization code.
 
-To validate the integration with production MTD endpoints of HMRC from your production environment, follow these steps.
+To validate the integration with production MTD endpoints of HMRC from your production environment, follow these steps:
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing.
 1. On the **Messages** FastTab, select **New**.

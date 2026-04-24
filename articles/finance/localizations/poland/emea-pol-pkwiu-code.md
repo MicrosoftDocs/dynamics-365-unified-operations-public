@@ -29,7 +29,7 @@ To ensure that users include a PKWiU code on all invoices, select one of the fol
 
 Category hierarchies are used to classify products or transactions for reporting and analysis. The category hierarchy that is of the Sales category hierarchy type is used for organizing products for sales activities. You can assign a PKWiU code to the sales category hierarchy so that the PKWiU code is included on invoices that include non-inventoried items. 
 
-To assign a PKWiU code to the sales category hierarchy, follow these steps.
+To assign a PKWiU code to the sales category hierarchy, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Setup** \> **Categories and attributes** \> **Category hierarchies**. 
 1. Select the sales category hierarchy.
@@ -38,7 +38,7 @@ To assign a PKWiU code to the sales category hierarchy, follow these steps.
 
 ## Assign a PKWiU code to released products
 
-To assign a PKWiU code to released products, follow these steps.
+To assign a PKWiU code to released products, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Common** \> **Released products**. 
 1. Select the released product to assign a PKWiU code to.

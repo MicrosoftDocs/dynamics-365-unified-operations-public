@@ -2,7 +2,7 @@
 title: Set up a legal entity and tax information for Bolivia
 description: Learn how to set up a legal entity and tax information for a company in Bolivia.
 author: Cpicon85
-ms.date: 02/10/2025
+ms.date: 04/14/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.author: v-cpicon
@@ -19,7 +19,7 @@ Before you begin, open the **Feature management** workspace, and verify that the
 
 ## Create a legal entity
 
-To create a legal entity, follow these steps.
+To create a legal entity, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select **New**.
 1. In the address setup, set up the address format for Bolivia.
@@ -31,7 +31,7 @@ To create a legal entity, follow these steps.
 
 ## Set up tax information
 
-To set up tax information, follow these steps.
+To set up tax information, follow these steps:
 
 1. [Create a document class letter](ltm-core-document-class-letter.md) without a prefix. This document class letter is used in taxpayer and document class configurations.
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**, and select **New**.

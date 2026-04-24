@@ -28,7 +28,7 @@ Maintenance request lifecycle states define the stages that a request can go thr
 
 ## Manage maintenance request lifecycle states
 
-To manage the maintenance request lifecycle states that you need, follow these steps.
+To manage the maintenance request lifecycle states that you need, follow these steps:
 
 1. Go to **Asset management** \> **Setup** \> **Maintenance requests** \> **Lifecycle states**.
     :::image type="content" source="media/02-setup-for-requests.png" alt-text="Screenshot of the Maintenance request lifecycle states page." lightbox="media/02-setup-for-requests.png":::

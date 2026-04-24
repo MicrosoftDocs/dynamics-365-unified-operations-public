@@ -2,7 +2,7 @@
 title: Configure printing for Relationship purchases Book reports for Venezuela
 description: Learn how to configure printing for Relationship purchases Book reports for Venezuela. 
 author: Cpicon85
-ms.date: 02/05/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -40,7 +40,7 @@ Before you can generate the report, the following prerequisites must be met:
 
 ## Configure application-specific parameters
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. In the **LTM Tax Report** group, select the **Declaration Reports Relationship purchases Book VE** format.
@@ -58,7 +58,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate Relationship purchases Book reports
 
-To generate Relationship purchases Book reports, follow these steps.
+To generate Relationship purchases Book reports, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select the value that represents these reports.

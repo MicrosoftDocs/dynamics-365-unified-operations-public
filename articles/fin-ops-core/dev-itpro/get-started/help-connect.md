@@ -28,7 +28,7 @@ Finance and operations apps include conceptual overviews and other articles that
 
 :::image type="content" source="../../fin-ops/get-started/media/help-architecture.png" alt-text="Screenshot of Help architecture.":::
 
-The in-product Help system pulls articles from Microsoft Learn and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
+The in-product Help system pulls articles from Microsoft Learn and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services.
 
 ## Adding task guides
 
@@ -39,7 +39,7 @@ On the **System parameters** page, system admins can configure access to the rel
 
 > [!NOTE]
 > - To configure Help, you must sign in by using an account in the same tenant as the tenant where the app is deployed.
-> - You can't connect an LCS library from an instance of the app that runs on a local virtual hard drive (VHD).
+> - You can't connect an Lifecycle Services library from an instance of the app that runs on a local virtual hard drive (VHD).
 
 :::image type="content" source="../../fin-ops/get-started/media/system-parameters_ops-1024x437.png" alt-text="Screenshot of System Parameters form with Help settings.":::
 
@@ -48,7 +48,7 @@ To configure task guides for a solution, follow these steps on the **System para
 > [!IMPORTANT]
 > The first time that you open the **Help** tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the **System Parameters** page.
 >
-> :::image type="content" source="../../fin-ops/get-started/media/connect-to-lcs-crop.png" alt-text="Screenshot of Connect to LCS.":::
+> :::image type="content" source="../../fin-ops/get-started/media/connect-to-lcs-crop.png" alt-text="Screenshot of Connect to Lifecycle Services.":::
 
 1. Select the Lifecycle Services project to connect to.
 1. Select the BPM libraries (within the selected project) to retrieve task recordings from.
@@ -72,7 +72,7 @@ You can use task guides to create custom Help, or you can connect a custom Help 
 
 ### Create custom Help by using task guides
 
-You can create custom Help for the supported apps by creating task recordings that reflect your implementation and then saving them to a Business process library in LCS. You can't create custom task guides for Human Resources.
+You can create custom Help for the supported apps by creating task recordings that reflect your implementation and then saving them to a Business process library in Lifecycle Services. You can't create custom task guides for Human Resources.
 
 If you're a partner, and you promote a library to a corporate library and include it in a solution, it becomes available to your customers. You can also make a copy of the APQC Unified Library, then open the task recordings in the copy, edit them, and save your changes. For more information, see [Task recorder resources](../user-interface/task-recorder.md).
 

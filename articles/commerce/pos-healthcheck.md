@@ -103,7 +103,7 @@ The following health check charts are added to provide more insights into networ
 
     :::image type="content" source="media/WIFIsignalstrength.jpg" alt-text="Screenshot that shows an example of a Wi-Fi signal strength chart on the Connectivity health report page.":::
 
-To access a health check chart in Store Commerce, follow these steps.
+To access a health check chart in Store Commerce, follow these steps:
 
 1. Go to the **Available tests** page.
 1. Select the checkbox for the network health check that you want to run.

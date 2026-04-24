@@ -36,7 +36,6 @@ The following FAQ articles discuss issues specific to Supply Chain Management:
 - [Procurement FAQ](procurement/procurement-faq.md)
 - [Product-related translations FAQ](pim/translations-product-related-information.md)
 - [Calculations for product configuration models FAQ](pim/calculate-product-configuration-models.md)
-- [Product information management FAQ](pim/product-information-faq.md)
 - [Sales order FAQs](sales-marketing/sales-orders-faq.md)
 - [Schedule sales history data cleanup](sales-marketing/sales-update-history-cleanup-performance-improvements.md)
 - [DDMRP FAQ](master-planning/planning-optimization/ddmrp-faqs.md)
@@ -50,7 +49,7 @@ The following FAQ articles discuss issues related to the platform shared by all 
 - [Go-live for implementation projects FAQ](../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json)
 - [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json)
 - [Open in Excel experiences FAQ](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json)
-- [Subscriptions, LCS projects, and Microsoft Entra tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json)
+- [Subscriptions, Lifecycle Services projects, and Microsoft Entra tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json)
 - [Workflow FAQ](../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json)
 
 ## Other support resources

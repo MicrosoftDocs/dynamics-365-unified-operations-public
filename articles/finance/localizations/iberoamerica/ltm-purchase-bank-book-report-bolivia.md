@@ -2,7 +2,7 @@
 title: Configure printing for purchase bank books for Bolivia
 description: Learn about the required configuration for printing a purchase bank book report for Bolivia.
 author: Cpicon85
-ms.date: 03/13/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -76,7 +76,7 @@ In the event of a successive tract contract, you might add a **Letter code** fie
 
 ## Set up application-specific parameters
 
-To set up application-specific parameters, follow these steps.
+To set up application-specific parameters, follow these steps:
 
 1. Open the **Electronic reporting** workspace, and select **Reporting configurations**.
 1. Select **Purchase Bank Book BO**, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -88,7 +88,7 @@ To set up application-specific parameters, follow these steps.
 
 ## Run the Purchase Bank Book BO report
 
-To run the **Purchase Bank Book BO** report, follow these steps.
+To run the **Purchase Bank Book BO** report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select a value.

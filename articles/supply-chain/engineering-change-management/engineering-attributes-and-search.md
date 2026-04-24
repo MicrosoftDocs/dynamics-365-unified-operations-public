@@ -24,7 +24,7 @@ Each engineering attribute must belong to an *attribute type*. This requirement 
 
 ### Set up engineering attribute types
 
-To view, create, or edit an engineering attribute type, follow these steps.
+To view, create, or edit an engineering attribute type, follow these steps:
 
 1. Go to **Engineering change management \> Setup \> Attributes \> Attribute types**.
 1. Select an existing attribute type in the list pane, or select **New** on the Action Pane to create a new attribute type.
@@ -38,7 +38,7 @@ To view, create, or edit an engineering attribute type, follow these steps.
 
 ### Set up engineering attributes
 
-To view, create, or edit an engineering attribute, follow these steps.
+To view, create, or edit an engineering attribute, follow these steps:
 
 1. Go to **Engineering change management \> Setup \> Attributes \> Engineering attributes**.
 1. Select an existing attribute in the list pane, or select **New** on the Action Pane to create a new attribute.

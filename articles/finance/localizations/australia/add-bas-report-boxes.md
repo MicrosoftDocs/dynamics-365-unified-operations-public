@@ -2,9 +2,9 @@
 title: Add BAS report boxes and generate the Australia Business Activity Statement BAS
 description: This article describes how to add BAS report boxes and generate the BAS in Australia with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/11/2025
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: Australia
 ms.search.validFrom: 2016-06-30
@@ -18,7 +18,7 @@ ms.custom:
 
 This article describes how to add BAS report boxes and generate the BAS in Australia with Microsoft Dynamics 365 Finance.
 
-The following procedures walk you through how to add business activity statements (BAS) report boxes and generate the BAS in Australia. The procedures were created using the demo data company 'USMF' with a primary legal entity address in Australia.
+The following procedures walk you through how to add business activity statements (BAS) report boxes and generate the BAS in Australia. The procedures use the demo data company 'USMF' with a primary legal entity address in Australia.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Before you can execute the following procedures, you must define the additional 
 
 ## Add BAS report boxes and print the Australia BAS
 
-To add BAS report boxes and print the Australia BAS, follow these steps.
+To add BAS report boxes and print the Australia BAS, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Additional BAS report boxes**.
 1. Select **New**.
@@ -43,7 +43,7 @@ To add BAS report boxes and print the Australia BAS, follow these steps.
 1. In the **5B Credit from PAYG** field, enter a number.
 1. In the **6B Credit fringe benefits tax** field, enter a number.
 1. Select the **Back cover page** tab.
-1. In the **W1 Total payroll** field, enter a number for total salary, wages and other payments.  
+1. In the **W1 Total payroll** field, enter a number for total salary, wages, and other payments.  
 1. In the **W-2 Withheld from payroll** field, enter a number for the total amount you withheld from salaries, wages, and other payments. This value includes payments to contractors under a voluntary agreement shown in box **W1**.  
 1. In the **W3 Withheld from investment where no TFN** field, enter a number. The W3 value covers other types of withholding such as interest, dividends, unit trust, or other investment distributions provided with a TFN (includes a nonresident), and any payments made to foreign residents. 
 1. In the **W4 Withheld from invoices where no ABN** field, enter the total amount you withheld from payments to suppliers who didn't quote their ABN.  
@@ -65,7 +65,7 @@ To add BAS report boxes and print the Australia BAS, follow these steps.
 
 ## Generate the Australian BAS
 
-To generate the Australian BAS, follow these steps.
+To generate the Australian BAS, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Australian BAS**.
 1. In the **Settlement period** field, select the drop-down button to open the lookup.
@@ -73,9 +73,7 @@ To generate the Australian BAS, follow these steps.
 1. In the list, select the link in the selected row.
 1. In the **From date** field, enter a date value.
 1. In the **Transaction date** field, enter a date value.
-7. Select or clear the **Post and settle GST** checkbox.
-8. Select **OK**.
-
-
+1. Select or clear the **Post and settle GST** checkbox.
+1. Select **OK**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,9 @@
 title: Maintain fixed-asset master data files for deductible expenses
 description: Learn how to maintain fixed asset master data files for deductible expenses for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -25,7 +25,7 @@ The following procedures were created using the demo data company JPMF.
 
 ## Set up a fixed asset group
 
-To set up a fixed asset group, follow these steps.
+To set up a fixed asset group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset groups**.
 1. Select **New**.
@@ -35,7 +35,7 @@ To set up a fixed asset group, follow these steps.
 1. Select a number sequence code to autogenerate the fixed asset number.
 1. Select the default location for new fixed assets.
 1. Select **Books**.
-9. Select **New**.
+1. Select **New**.
 1. In the **Book** field, enter a value. For example, enter "200RED_CUR".  
 1. Expand the **General** section and configure the options.
 1. Select **Save**.
@@ -46,14 +46,12 @@ To set up a fixed asset group, follow these steps.
 
 ## Create a fixed asset
 
-To create a fixed asset, follow these steps.
+To create a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select **New**.
 1. In the **Fixed asset group** field, enter a value. You can use the fixed asset group that you created, or you can use "BUIL-M".  
 1. Select **Books**.
 1. Verify that the books were created automatically.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

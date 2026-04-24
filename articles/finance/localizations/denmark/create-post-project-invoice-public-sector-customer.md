@@ -2,9 +2,9 @@
 title: Create and post a project invoice for a public sector customer
 description: This article describes how to create and post a project invoice for a customer using OIOUBL electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 author: mrolecki
-ms.author: mrolecki
+ms.author: egolub
 ms.topic: how-to
-ms.date: 03/11/2025
+ms.date: 12/16/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -19,16 +19,17 @@ ms.custom:
 
 This article describes how to create and post a project invoice for a customer using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 
-The following procedures walk you through how to create and post a project invoice for a customer using OIOUBL electronic invoicing. The procedures wer created using the demo data company USMF with the country/region of legal entity primary address updated to Denmark.
+The following procedures walk you through how to create and post a project invoice for a customer using OIOUBL electronic invoicing. The procedures use the demo data company USMF with the country/region of legal entity primary address updated to Denmark.
 
 Before you can complete this procedure, you must complete the following procedures:
+
 - Import OIOUBL electronic invoicing electronic reporting configurations
 - Set up OIOUBL electronic invoicing
 - Set up a customer account for OIOUBL electronic invoicing
 
 ## Update a project contract
 
-To update a project contract, follow these steps.
+To update a project contract, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Projects \> Project contracts**.
 1. Use the Quick Filter to find records. For example, filter on the **Project contract ID** field with a value of "000057". Select a project contract that has a customer funding source that's enabled for electronic invoicing.  
@@ -43,7 +44,7 @@ To update a project contract, follow these steps.
 
 ## Create a project transaction
 
-To create a project transaction, follow these steps.
+To create a project transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Item tasks \> Item requirements**.
 1. Select **New**.
@@ -54,12 +55,12 @@ To create a project transaction, follow these steps.
 1. Select **Packing slip**.
 1. Expand the **Parameters** section.
 1. In the **Quantity** field, select **All**.
-10. Select **OK**.
-11. Select **OK**.
+1. Select **OK**.
+1. Select **OK**.
 
-## Create a proposal and post an invoice 
+## Create a proposal and post an invoice
 
-To create a proposal and post an invoice, follow these steps.
+To create a proposal and post an invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Project invoices \> Project invoice proposals**.
 1. Select **New**.
@@ -72,7 +73,7 @@ To create a proposal and post an invoice, follow these steps.
 
 ## Generate an OIOUBL project invoice
 
-To generate an OIOUBL project invoice, follow these steps.
+To generate an OIOUBL project invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Project invoices \> Project invoices**.
 1. Use the Quick Filter to find records. For example, filter on the **Project contract ID** field with a value of "000057".
@@ -82,12 +83,10 @@ To generate an OIOUBL project invoice, follow these steps.
 
 ## View an OIOUBL electronic invoice
 
-To view an OIOUBL electronic invoice, follow these steps.
+To view an OIOUBL electronic invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**.
 1. Select **Show files**.
 1. Select **Open**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

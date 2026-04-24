@@ -4,7 +4,7 @@ description: Learn how to configure and use vendor electronic invoice import for
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.date: 08/19/2024
+ms.date: 04/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Chile
 ms.search.validFrom: 2024-08-07
@@ -61,7 +61,7 @@ To enable an inbound flow, you must create a feature setup of the **Import chann
 
     The following illustration shows the parameters for the feature setup set to the values that Edicom provided to Microsoft for testing purposes. The values that you enter will differ. Edicom provides these values to you when you're onboarded.
 
-    ![Screenshot that shows the configured Feature setup parameters of the Import channel for the Globalization feature for Chile.](ltm-chl-vend-e-invoice-import-channel-parms.png)
+    :::image type="content" source="ltm-chl-vend-e-invoice-import-channel-parms.png" alt-text="Screenshot of the configured Feature setup parameters of the Import channel for the Globalization feature for Chile.":::
 
 ### Applicability rules
 
@@ -71,7 +71,7 @@ Applicability rules must be correctly configured to provide context, so that the
 
 Out of the box, variables are provided with the specific feature setup to support the `EdicomId`, `Response`, and `ResponseXML` variables, as shown in the following illustration.
 
-![Screenshot of the setup on the Variables tab of the Feature version setup page.](ltm-chl-vend-e-invoice-variables.png)
+:::image type="content" source="ltm-chl-vend-e-invoice-variables.png" alt-text="Screenshot of the setup on the Variables tab of the Feature version setup page.":::
 
 > [!NOTE]
 > After the feature setup is completed, save, complete, and deploy the version.
@@ -87,7 +87,7 @@ Out of the box, variables are provided with the specific feature setup to suppor
 
     The following illustration shows an example of the change.
 
-    ![Screenshot of the change of data channel context.](ltm-chl-vend-e-invoice-CustInvContextModel-channel-name.png)
+    :::image type="content" source="ltm-chl-vend-e-invoice-CustInvContextModel-channel-name.png" alt-text="Screenshot of the change of data channel context.":::
 
 1. Return to **Reporting configurations**.
 1. Select the **Vendor invoice Mapping to destination LATAM** configuration.
@@ -105,7 +105,7 @@ Out of the box, variables are provided with the specific feature setup to suppor
     - **Document context:** Customer invoice context model - Application response context
     - **Electronic document model mapping:** Pending vendor invoice model mapping - Application response
 
-    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](ltm-chl-e-invoice-documents-app-response.png)
+    :::image type="content" source="ltm-chl-e-invoice-documents-app-response.png" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
 1. On the **Integration channels** tab, create records. Specify a channel name of the **Import** type, and specify the document context configuration for every required company.
 1. For each channel, add an import source, and set the following values for it:
@@ -114,20 +114,20 @@ Out of the box, variables are provided with the specific feature setup to suppor
     - **Data entity name:** Select **Vendor invoice header**.
     - **Model mapping:** Specify the model mapping for the invoice import.
 
-    ![Screenshot of the Integration channels tab of the Electronic document parameters page.](ltm-chl-vend-e-invoice-parms-integration-channels.png)
+    :::image type="content" source="ltm-chl-vend-e-invoice-parms-integration-channels.png" alt-text="Screenshot of the Integration channels tab of the Electronic document parameters page.":::
 
 1. Save your changes, and close the page.
 
 ### Configure vendor data
 
-During the import process, vendors are identified by their tax exempt number. To enable correct vendor identification, follow these steps.
+During the import process, vendors are identified by their tax exempt number. To enable correct vendor identification, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
 1. On the **LATAM** FastTab, in the **Country identification number** field, enter a valid identification number of the country for the vendor. This number is used to identify the vendor during import, by matching it to the value of the **DTE\\Documento\\Encabezado\\RUTEmisor** element in the import XML file.
 
 ### Configure products
 
-During the import process, products are identified by their external descriptions. These descriptions are usually vendor-specific. To enable correct product identification, follow these steps.
+During the import process, products are identified by their external descriptions. These descriptions are usually vendor-specific. To enable correct product identification, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Select a product, and then, on the **Purchase** menu, in the **Related information** section, select **External item description**.
@@ -143,7 +143,7 @@ During the import process, products are identified by their external description
 
 ## Import vendor electronic invoices and send application responses
 
-To run the import vendor electronic invoices, follow these steps.
+To run the import vendor electronic invoices, follow these steps:
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
 1. In the **Receive electronic documents** dialog box, specify the parameters as required.
@@ -166,7 +166,7 @@ Successfully imported vendor electronic invoices are shown in the system as pend
 
 After the imported vendor electronic invoice is reviewed on the **Pending vendor invoices** page (**Accounts payable** \> **Invoices** \> **Pending vendor invoices**), an application response can be saved and submitted. The application response indicates either acceptance or rejection of the invoice. If the invoice is either accepted with discrepancies or rejected, the response includes comments. If the invoice is rejected, the response also includes the reason for the rejection.
 
-To fill in the application response, follow these steps.
+To fill in the application response, follow these steps:
 
 1. Open the **Pending vendor invoices** page in edit mode for the desired invoice.
 1. On the Action Pane, select **Review**.
@@ -185,7 +185,7 @@ To fill in the application response, follow these steps.
 
 1. Select **Save**.
 
-    ![Screenshot of an application response in the Review dropdown dialog box.](ltm-chl-vend-e-invoice-app-response.png)
+    :::image type="content" source="ltm-chl-vend-e-invoice-app-response.png" alt-text="Screenshot of an application response in the Review dropdown dialog box.":::
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
 1. On the **Records to include** FastTab, select **Filter**.

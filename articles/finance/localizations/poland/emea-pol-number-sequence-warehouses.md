@@ -22,7 +22,7 @@ This article explains how to set up number sequences for purchase product receip
 
 You can set up a number sequence for purchase product receipts by warehouse on the **Accounts payable parameters** page. You can number delivery documents separately for each warehouse. 
 
-To set up a number sequence for purchase product receipts by warehouse, follow these steps.
+To set up a number sequence for purchase product receipts by warehouse, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**. 
 2. In the left pane, select **Number sequences**. 
@@ -39,7 +39,7 @@ To set up a number sequence for purchase product receipts by warehouse, follow t
 
 You can set up a number sequence for sales packing slips by warehouse on the **Accounts receivable parameters** page. You can number delivery documents separately for each warehouse. 
 
-To set up a number sequence for sales packing slips by warehouse, follow these steps.
+To set up a number sequence for sales packing slips by warehouse, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**. 
 2. In the left pane, select **Updates**. Select the **Independent delivery note numbering** checkbox. 

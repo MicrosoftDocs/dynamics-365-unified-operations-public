@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 ms.topic: how-to
-ms.date: 12/02/2024
+ms.date: 4/21/2026
 ms.custom: 
   - bap-template
 ---
@@ -61,79 +61,11 @@ By using the sample data that is described in the previous sections, you can run
 
 In this case, the content of the report that is generated will resemble the following example.
 
-<table>
-<thead>
-<tr>
-    <th rowspan="2">Item number</th>
-    <th rowspan="2">Site</th>
-    <th rowspan="2">On-hand quantity</th>
-    <th rowspan="2">On-hand value</th>
-    <th rowspan="2">Inventory value quantity</th>
-    <th rowspan="2">Inventory value</th>
-    <th rowspan="2">Average unit cost</th>
-    <th colspan="2">5/8/2020 - 5/1/2020</th>
-    <th colspan="2">4/30/2020 - 4/1/2020</th>
-    <th colspan="2">3/31/2020 - 3/1/2020</th>
-</tr>
-<tr>
-    <th>P1:Quantity</th>
-    <th>P1:Amount</th>
-    <th>P2:Quantity</th>
-    <th>P2:Amount</th>
-    <th>P3:Quantity</th>
-    <th>P3:Amount</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>1000</td>
-    <td>1</td>
-    <td>14</td>
-    <td>1,283.33</td>
-    <td>14</td>
-    <td>1,283.33</td>
-    <td>91.67</td>
-    <td></td>
-    <td></td>
-    <td>5.00</td>
-    <td>458.33</td>
-    <td>9.00</td>
-    <td>825.00</td>
-</tr>
-<tr>
-    <td>1000</td>
-    <td>2</td>
-    <td>10</td>
-    <td>2,000.00</td>
-    <td>10</td>
-    <td>2,000.00</td>
-    <td>200.00</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>10.00</td>
-    <td>2,000.00</td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-    <td><strong>1000 Totals</strong></td>
-    <td></td>
-    <td><strong>24.00</strong></td>
-    <td><strong>3,283.33</strong></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td><strong>5.00</strong></td>
-    <td><strong>458.33</strong></td>
-    <td><strong>19</strong></td>
-    <td><strong>2,825.00</strong></td>
-</tr>
-</tfoot>
-</table>
+| Item number | Site | On-hand quantity | On-hand value | Inventory value quantity | Inventory value | Average unit cost | P1:Quantity (5/8/2020 - 5/1/2020) | P1:Amount (5/8/2020 - 5/1/2020) | P2:Quantity (4/30/2020 - 4/1/2020) | P2:Amount (4/30/2020 - 4/1/2020) | P3:Quantity (3/31/2020 - 3/1/2020) | P3:Amount (3/31/2020 - 3/1/2020) |
+|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| 1000 | 1 | 14 | 1,283.33 | 14 | 1,283.33 | 91.67 |  |  | 5.00 | 458.33 | 9.00 | 825.00 |
+| 1000 | 2 | 10 | 2,000.00 | 10 | 2,000.00 | 200.00 |  |  |  |  | 10.00 | 2,000.00 |
+| **1000 Totals** |  | **24.00** | **3,283.33** |  |  |  |  |  | **5.00** | **458.33** | **19** | **2,825.00** |
 
 Note the following details in this example report:
 
@@ -150,99 +82,12 @@ Note the following details in this example report:
 
 If you run the same report again, but this time you set both the **Site** and **Warehouse** fields to *View*, the new report will resemble the following example.
 
-<table>
-<thead>
-<tr>
-    <th rowspan="2">Item number</th>
-    <th rowspan="2">Site</th>
-    <th rowspan="2">Warehouse</th>
-    <th rowspan="2">On-hand quantity</th>
-    <th rowspan="2">On-hand value</th>
-    <th rowspan="2">Inventory value quantity</th>
-    <th rowspan="2">Inventory value</th>
-    <th rowspan="2">Average unit cost</th>
-    <th colspan="2">5/8/2020 - 5/1/2020</th>
-    <th colspan="2">4/30/2020 - 4/1/2020</th>
-    <th colspan="2">3/31/2020 - 3/1/2020</th>
-</tr>
-<tr>
-    <th>P1:Quantity</th>
-    <th>P1:Amount</th>
-    <th>P2:Quantity</th>
-    <th>P2:Amount</th>
-    <th>P3:Quantity</th>
-    <th>P3:Amount</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>1000</td>
-    <td>1</td>
-    <td>11</td>
-    <td>10</td>
-    <td>916.67</td>
-    <td>14</td>
-    <td>1,283.33</td>
-    <td>91.67</td>
-    <td></td>
-    <td></td>
-    <td>5.00</td>
-    <td>458.33</td>
-    <td>5.00</td>
-    <td>458.33</td>
-</tr>
-<tr>
-    <td>1000</td>
-    <td>1</td>
-    <td>12</td>
-    <td>4</td>
-    <td>366.67</td>
-    <td>14</td>
-    <td>1,283.33</td>
-    <td>91.67</td>
-    <td>4.00</td>
-    <td>366.67</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td>1000</td>
-    <td>2</td>
-    <td></td>
-    <td>10</td>
-    <td>2,000.00</td>
-    <td>10</td>
-    <td>2,000.00</td>
-    <td>200.00</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>10.00</td>
-    <td>2,000.00</td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-    <td><strong>1000 Totals</strong></td>
-    <td></td>
-    <td></td>
-    <td><strong>24.00</strong></td>
-    <td><strong>3,283.33</strong></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td><strong>4.00</strong></td>
-    <td><strong>366.67</strong></td>
-    <td><strong>5.00</strong></td>
-    <td><strong>458.33</strong></td>
-    <td><strong>15</strong></td>
-    <td><strong>2,458.33</strong></td>
-</tr>
-</tfoot>
-</table>
+| Item number | Site | Warehouse | On-hand quantity | On-hand value | Inventory value quantity | Inventory value | Average unit cost | P1:Quantity (5/8/2020 - 5/1/2020) | P1:Amount (5/8/2020 - 5/1/2020) | P2:Quantity (4/30/2020 - 4/1/2020) | P2:Amount (4/30/2020 - 4/1/2020) | P3:Quantity (3/31/2020 - 3/1/2020) | P3:Amount (3/31/2020 - 3/1/2020) |
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| 1000 | 1 | 11 | 10 | 916.67 | 14 | 1,283.33 | 91.67 |  |  | 5.00 | 458.33 | 5.00 | 458.33 |
+| 1000 | 1 | 12 | 4 | 366.67 | 14 | 1,283.33 | 91.67 | 4.00 | 366.67 |  |  |  |  |
+| 1000 | 2 |  | 10 | 2,000.00 | 10 | 2,000.00 | 200.00 |  |  |  |  | 10.00 | 2,000.00 |
+| **1000 Totals** |  |  | **24.00** | **3,283.33** |  |  |  | **4.00** | **366.67** | **5.00** | **458.33** | **15** | **2,458.33** |
 
 This time, site 1 is split into two rows, one for warehouse 11 and one for warehouse 12. However, the **Inventory value quantity**, **Inventory value**, and **Average unit cost** values are the same, because **Warehouse** isn't a financial inventory dimension.
 
@@ -257,98 +102,11 @@ If you run the inventory closing for May and then run the previous report again,
 
 The new report will resemble the following example.
 
-<table>
-<thead>
-<tr>
-    <th rowspan="2">Item number</th>
-    <th rowspan="2">Site</th>
-    <th rowspan="2">Warehouse</th>
-    <th rowspan="2">On-hand quantity</th>
-    <th rowspan="2">On-hand value</th>
-    <th rowspan="2">Inventory value quantity</th>
-    <th rowspan="2">Inventory value</th>
-    <th rowspan="2">Average unit cost</th>
-    <th colspan="2">5/31/2020 - 5/1/2020</th>
-    <th colspan="2">4/30/2020 - 4/1/2020</th>
-    <th colspan="2">3/31/2020 - 3/1/2020</th>
-</tr>
-<tr>
-    <th>P1:Quantity</th>
-    <th>P1:Amount</th>
-    <th>P2:Quantity</th>
-    <th>P2:Amount</th>
-    <th>P3:Quantity</th>
-    <th>P3:Amount</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>1000</td>
-    <td>1</td>
-    <td>11</td>
-    <td>10</td>
-    <td>910.70</td>
-    <td>14</td>
-    <td>1,275.00</td>
-    <td>91.07</td>
-    <td>0.00</td>
-    <td></td>
-    <td>5.00</td>
-    <td>455.36</td>
-    <td>5.00</td>
-    <td>455.36</td>
-</tr>
-<tr>
-    <td>1000</td>
-    <td>1</td>
-    <td>12</td>
-    <td>4</td>
-    <td>364.29</td>
-    <td>14</td>
-    <td>1,275.00</td>
-    <td>91.07</td>
-    <td>4.00</td>
-    <td>364.29</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td>1000</td>
-    <td>2</td>
-    <td></td>
-    <td>10</td>
-    <td>2,000.00</td>
-    <td>10</td>
-    <td>2,000.00</td>
-    <td>200.00</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>10.00</td>
-    <td>2,000.00</td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-    <td><strong>1000 Totals</strong></td>
-    <td></td>
-    <td></td>
-    <td><strong>24.00</strong></td>
-    <td><strong>3,275.00</strong></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td><strong>4.00</strong></td>
-    <td><strong>364.29</strong></td>
-    <td><strong>5.00</strong></td>
-    <td><strong>455.36</strong></td>
-    <td><strong>15</strong></td>
-    <td><strong>2,455.36</strong></td>
-</tr>
-</tfoot>
-</table>
+| Item number | Site | Warehouse | On-hand quantity | On-hand value | Inventory value quantity | Inventory value | Average unit cost | P1:Quantity (5/31/2020 - 5/1/2020) | P1:Amount (5/31/2020 - 5/1/2020) | P2:Quantity (4/30/2020 - 4/1/2020) | P2:Amount (4/30/2020 - 4/1/2020) | P3:Quantity (3/31/2020 - 3/1/2020) | P3:Amount (3/31/2020 - 3/1/2020) |
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| 1000 | 1 | 11 | 10 | 910.70 | 14 | 1,275.00 | 91.07 | 0.00 |  | 5.00 | 455.36 | 5.00 | 455.36 |
+| 1000 | 1 | 12 | 4 | 364.29 | 14 | 1,275.00 | 91.07 | 4.00 | 364.29 |  |  |  |  |
+| 1000 | 2 |  | 10 | 2,000.00 | 10 | 2,000.00 | 200.00 |  |  |  |  | 10.00 | 2,000.00 |
+| **1000 Totals** |  |  | **24.00** | **3,275.00** |  |  |  | **4.00** | **364.29** | **5.00** | **455.36** | **15** | **2,455.36** |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

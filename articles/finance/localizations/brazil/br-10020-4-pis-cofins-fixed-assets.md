@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/27/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ When a legal entity purchases a fixed asset, the PIS and COFINS tax credit that 
 
 The following procedure uses the BRMF demo company.
 
-To configure the fixed asset PIS and COFINS tax credit to be appropriated in installments, follow these steps.
+To configure the fixed asset PIS and COFINS tax credit to be appropriated in installments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Select **New**.

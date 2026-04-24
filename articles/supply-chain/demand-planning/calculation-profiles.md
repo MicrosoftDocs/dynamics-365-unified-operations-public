@@ -28,7 +28,7 @@ Typically, a manager or system administrator creates the initial collection of r
 
 You have to run a calculation profile only as often as you import new data into the relevant tables. Some profiles must be run only occasionally, whereas others must be run almost every time that a user works with the app.
 
-To generate a new calculated time series by running an existing calculation profile, follow these steps.
+To generate a new calculated time series by running an existing calculation profile, follow these steps:
 
 1. On the navigation pane, select **Operations** \> **Calculations**.
 1. Find the profile for the type of calculation that you want to run, and select the link for it in the **Name** column.
@@ -53,7 +53,7 @@ To generate a new calculated time series by running an existing calculation prof
 
 Each time that your organization requires a new type of calculation, a manager or admin must create a new calculation profile. After the profile is created, it becomes available to users, who can run it as often as they require.
 
-To create or edit a calculation profile, follow these steps.
+To create or edit a calculation profile, follow these steps:
 
 1. On the navigation pane, select **Operations** \> **Calculations**.
 1. On the Action Pane, select **New**.

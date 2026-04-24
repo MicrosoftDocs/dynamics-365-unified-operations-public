@@ -24,7 +24,7 @@ Sales books and purchase books are legacy documents that must be prepared and st
 
 ### Set up parameters for sales and purchase books
 
-To set up parameters for sales and purchase books, follow these steps.
+To set up parameters for sales and purchase books, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. On the **Accounts receivable parameters** page, on the **Number sequences** tab, define a number sequence for the **Sales book** reference.
@@ -41,7 +41,7 @@ To set up parameters for sales and purchase books, follow these steps.
 
 #### Generate a sales book
 
-To generate a sales book, follow these steps.
+To generate a sales book, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Sales book \> Sales books journal**.
 1. On the **Sales books journal** page, create a sales books journal. You can create a book only if all the books that are listed on the page are closed.
@@ -67,7 +67,7 @@ The following commands are available on the Action Pane of the **Sales books jou
 
 #### Print a sales book
 
-To print a sales book, follow these steps.
+To print a sales book, follow these steps:
 
 1. On the **Sales books journal** page, select the sales books journal line, and then select **Print \> Sales book**.
 1. In the **Sales book to Microsoft Office Excel** dialog, define the following parameters:
@@ -81,7 +81,7 @@ To print a sales book, follow these steps.
 
 #### Print a sales book additional sheet
 
-To print a sales book additional sheet, follow these steps.
+To print a sales book additional sheet, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Sales books journal** page.
 1. Select the sales books journal line, and then select **Print \> Print additional list**.
@@ -94,7 +94,7 @@ Currently, only corrective and revision factures that decrease the VAT amount th
 
 #### Generate a purchase book
 
-To generate a purchase book, follow these steps.
+To generate a purchase book, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Purchase book \> Purchase books journal**. 
 1. On the **Purchase books journal** page, create a purchase books journal. You can create a book only if all the books that are listed on the page are closed.
@@ -120,7 +120,7 @@ The following commands are available on the Action Pane of the **Purchase books 
 
 #### Print a purchase book
 
-To print a purchase book, follow these steps.
+To print a purchase book, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Purchase books journal** page.
 1. Select the purchase books journal line, and then select **Print \> Purchase book**.
@@ -134,7 +134,7 @@ To print a purchase book, follow these steps.
 
 #### Print a purchase book additional sheet
 
-To print a purchase book additional sheet, follow these steps.
+To print a purchase book additional sheet, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Purchase books journal** page.
 1. Select the purchase books journal line, and then select **Print \> Print additional list**.
@@ -149,7 +149,7 @@ The facture accounting journal contains a list of issued and received invoice-fa
 
 ### Set up parameters for a factures journal
 
-To set up parameters for a factures journal, follow these steps.
+To set up parameters for a factures journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **General ledger parameters** page.
 1. On the **Sales tax** tab, on the **Tax options** FastTab, define the following parameters:
@@ -158,7 +158,7 @@ To set up parameters for a factures journal, follow these steps.
 
 ### Print a facture accounting journal
 
-To print a facture accounting journal, follow these steps.
+To print a facture accounting journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Inquiries and reports \> Journal reports \> Facture accounting journal**.
 1. In the **Facture accounting journal** dialog, in the **Date interval code** field, select a reporting period. Alternatively, specify your own date range by using the **From date** and **To date** fields.

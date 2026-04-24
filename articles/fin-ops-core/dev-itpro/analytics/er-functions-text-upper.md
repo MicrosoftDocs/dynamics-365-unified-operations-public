@@ -4,7 +4,7 @@ description: Learn about how the UPPER Electronic reporting (ER) function is use
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 12/05/2019
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 [!include [banner](../includes/banner.md)]
 
-The `UPPER` function returns the specified text string as a *String* value after it has been converted to uppercase letters.
+The `UPPER` function returns the specified text string as a *String* value after it converts the text to uppercase letters.
 
 ## Syntax
 

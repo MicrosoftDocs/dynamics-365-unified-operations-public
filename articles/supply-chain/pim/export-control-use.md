@@ -29,7 +29,7 @@ To define the export controls that apply to the items that you trade in, set up 
 
 When advanced export management is [enabled](export-control-configure.md), it adds a new **Advanced export management configuration** FastTab to the **Product details** page for products and product masters. Use this FastTab to specify the Export Control Classification Number (ECCN) and other export control settings for the product in different jurisdictions.
 
-To set up advanced export management for a product or product master, follow these steps.
+To set up advanced export management for a product or product master, follow these steps:
 
 1. Sign in to Microsoft Dynamics 365 Supply Chain Management.
 1. Go to **Product information management \> Products \> All products and product masters**.
@@ -49,7 +49,7 @@ To set up advanced export management for a product or product master, follow the
 
 When you create a released product that's based on a global product, the **Advanced export management configuration** settings for the global product become default export control values for the released product. If the **Advanced export management configuration** settings for the global product are changed after the product is released, those new settings aren't updated on the related released product unless the product is re-released. Because released products are associated with a specific legal entity, only the ECCNs for jurisdictions that are enabled for that legal entity are inherited from the global product.
 
-To set up advanced export management for a released product, follow these steps.
+To set up advanced export management for a released product, follow these steps:
 
 1. Use the company picker to select the legal entity where you want to work.
 1. Go to **Product information management \> Products \> Released products**.

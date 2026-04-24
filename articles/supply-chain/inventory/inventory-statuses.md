@@ -4,7 +4,7 @@ description: Learn how you can use inventory statuses to categorize and keep tra
 author: banluo-ms
 ms.author: banluo
 ms.topic: how-to
-ms.date: 11/15/2024
+ms.date: 4/21/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
@@ -15,7 +15,7 @@ ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatus
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how you can use inventory statuses to categorize and keep track of inventory.
+This article describes how to use inventory statuses to categorize and keep track of inventory.
 
 ## Set up and use inventory statuses
 
@@ -49,14 +49,14 @@ To plan coverage for items that have an available inventory status, select the *
 
 You can change inventory statuses either by using the **On-hand by location** page or by using a batch job.
 
-To change inventory status of individually selected records, follow these steps.
+To change inventory status of individually selected records, follow these steps:
 
 1. Go to **Warehouse management** \> **Inquiries and reports** \> **On-hand by location**.
 1. Use the **Site**, **Warehouse**, and **Location** fields to find the relevant location.
 1. On the **Locations** tab, select the location.
 1. On the **On-hand** tab, select the relevant records, and then select the **Inventory status change** button.
 
-To set up a batch job task that selects and updates records, follow these steps.
+To set up a batch job task that selects and updates records, follow these steps:
 
 1. Go to **Warehouse management** \> **Periodic tasks** \> **Warehouse management inventory status change**.
 1. On the **Parameters** FastTab, set **To inventory status** to the status value you want to update the selected records to.

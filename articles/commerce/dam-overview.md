@@ -2,10 +2,9 @@
 title: Digital asset management overview
 description: This article provides an overview of digital asset management in Microsoft Dynamics 365 Commerce site builder.
 author: josaw1
-ms.date: 05/28/2024
+ms.date: 01/21/2026
 ms.topic: overview
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -20,18 +19,18 @@ ms.custom:
 This article provides an overview of digital asset management in Microsoft Dynamics 365 Commerce site builder.
 
 Dynamics 365 Commerce site builder's Media Library features rich digital asset management functionality, including support for:
-- Image assets.
-- Video assets.
-- Other types of binary assets, such as Office documents and PDF files.
-- Localized images.
-- Folder uploads.
-- Cropped images.
-- Customized image focal points.
-- Omnichannel image assets (product, product variants, catalog, category, worker, and customer images).
+- Image assets
+- Video assets
+- Other types of binary assets, such as Office documents and PDF files
+- Localized images
+- Folder uploads
+- Cropped images
+- Customized image focal points
+- Omnichannel image assets (product, product variants, catalog, category, worker, and customer images)
 
 Digital assets are channel-specific, except for omnichannel assets, which are environment-wide by default. 
 
-Digital assets and management features are located within site builder under **Media Library** on the left navigation pane within a site.
+You can find digital assets and management features within site builder under **Media Library** on the left navigation pane within a site.
 
 ## Additional resources
 

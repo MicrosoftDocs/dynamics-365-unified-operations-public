@@ -234,7 +234,7 @@ The raw recording file (developer recording) is useful for developer scenarios, 
 ## Playing back a recording 
 The **playback** functionality of Task recorder can automatically run the steps of an existing recording by using the pages and values that were originally recorded. Playback mode can be used to update an existing recording if changes were made to the underlying application, and those changes altered the business process steps that are required for the scenario. It's important to remember that, in this mode, Task recorder simultaneously re-records the steps and plays them back. When the playback is completed, a new recording is produced that reflects both the steps that were run from the existing recording and any new steps that the user manually performed. Any steps that aren't run either by the user or automatically by Task recorder aren't included in this new recording. 
 
-To play back an existing recording, follow these steps.
+To play back an existing recording, follow these steps:
 1. Refresh the browser tab. 
     > [!NOTE]
     > It's a good practice to refresh the browser before each new recording.

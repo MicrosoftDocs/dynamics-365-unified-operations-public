@@ -131,11 +131,11 @@ Before you can use the aggregated material availability check feature, your syst
 
 - Your system must meet the prerequisites that are listed at the beginning of this article.
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Aggregated material availability check* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature named *Aggregated material availability check* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### View information about aggregated material availability
 
-To gain an overview of the total material requirements by spare part and warehouse dimension across all selected work orders, follow these steps.
+To gain an overview of the total material requirements by spare part and warehouse dimension across all selected work orders, follow these steps:
 
 1. If the **Work order material availability check** page isn't already open, open it as described earlier in this article.
 1. In the bottom section of the page, on the **Aggregated on-hand inventory** tab, review the information that is shown.

@@ -4,7 +4,7 @@ description: Learn about tools and guidelines related to application lifecycle m
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 10/16/2019
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro
@@ -25,6 +25,7 @@ These topics describe tools and guidelines related to continuous delivery of you
 - [Development and continuous delivery FAQ](continuous-delivery-faq.md)
 
 ## Build and test automation
+
 - [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 - [Build automation that uses Microsoft-hosted agents and Azure Pipelines](hosted-build-automation.md)
 - [Testing and validations](../perf-test/testing-validation.md)
@@ -33,6 +34,7 @@ These topics describe tools and guidelines related to continuous delivery of you
 - [Acceptance test library resources](../perf-test/acceptance-test-library.md)
 
 ### Advanced topics in build automation
+
 - [Exclude test packages from build output](exclude-test-packages.md)
 - [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md)
 - [Update model versions in the automated build](version-models-build.md)
@@ -42,10 +44,10 @@ These topics describe tools and guidelines related to continuous delivery of you
 - [Insider tips on development and customization (blog)](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax)
 
 ## Servicing
-- [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md)
+
+- [Download updates from Microsoft Dynamics Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
 - [Patch SQL Server Reporting Services (SSRS) in one-box environments](../migration-upgrade/patch-reporting-service-environment.md)
 - [Update the Visual Studio development tools](update-development-tools.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -21,7 +21,7 @@ You can use the **Copy schedule** page to create a new billing schedule from an 
 
 ## Copy a billing schedule
 
-To copy a billing schedule, follow these steps.
+To copy a billing schedule, follow these steps:
 
 1. On the **All billing schedules** or **Active billing schedules** list page, select an existing billing schedule.
 2. On the **Billing schedule** tab, select **Copy schedule**.

@@ -4,6 +4,8 @@ description: Learn about configuration data templates and how to create them, in
 author: rcarlson
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -26,7 +28,7 @@ Configuration data templates are predefined lists of entities for each module ar
 
 The **Template** page in the **Data management** workspace provides tools that help you create a template of entities. This page resembles the configurations page, and the two features work in a similar manner. Use **Enhanced view** to take advantage of the new features.
 
-To create a template, follow these steps.
+To create a template, follow these steps:
 
 1. Select **New** to create a template. Enter an ID and name for the template. The status is set to **Draft**.
 1. Add or remove entities as needed.
@@ -47,7 +49,7 @@ Your template can now be used in a project. You might want to use more features 
 
 In the July 2017 update, we released predefined templates to help you create configuration data projects. The templates are sequenced, so that the data that the entities generate are processed in the correct order. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
 
-Default templates are delivered together with each new release. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS) so that you can push them to an instance. However, for current releases, select the **Templates** tile in the **Data management** workspace, and then select **Load default templates** to load the templates. To see the **Load default templates** menu, you must use **Enhanced view**.
+Default templates are delivered together with each new release. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services so that you can push them to an instance. However, for current releases, select the **Templates** tile in the **Data management** workspace, and then select **Load default templates** to load the templates. To see the **Load default templates** menu, you must use **Enhanced view**.
 
 After the templates are loaded, you can change them to suit your business requirements. If you ever want to retrieve the original default templates, you can use the **Load default templates** button to add them back to your system. The templates are replaced with the latest versions. If you made changes to the templates, you can make a copy of the original templates by exporting them.
 

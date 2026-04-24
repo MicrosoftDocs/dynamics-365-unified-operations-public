@@ -4,7 +4,7 @@ description: This article describes how to create sales orders and corrective li
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 03/11/2025
+ms.date: 04/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Estonia
 ms.search.validFrom: 2016-06-30
@@ -22,9 +22,9 @@ The following procedures use the demo data company DEMF with a primary address i
 
 ## Create a sales order
 
-To create a sales order, follow these steps.
+To create a sales order, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable > Orders > All sales orders**.
 1. Select **New**.
 1. In the **Customer account** field, enter or select a value.
 1. Select **OK**.
@@ -44,9 +44,9 @@ To create a sales order, follow these steps.
 
 ## Create a credit note for a sales order
 
-To create a sales order for a sales order, follow these steps.
+To create a credit note for a sales order, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable > Orders > All sales orders**.
 1. Select **New**.
 1. In the **Customer account** field, enter or select a value.
 1. Select **OK**.
@@ -66,7 +66,5 @@ To create a sales order for a sales order, follow these steps.
 1. In the list, find and select the desired record.
 1. Select **OK**.
 1. Select **OK**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

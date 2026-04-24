@@ -1,11 +1,10 @@
 ---
 title: Request properties object
-description: This article covers the request properties object in Microsoft Dynamics 365 Commerce.
+description: Learn about the request properties object in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 02/05/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,9 +15,9 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article covers the request properties object in Microsoft Dynamics 365 Commerce.
+This article describes the request properties object in Microsoft Dynamics 365 Commerce.
 
-The request properties object represents an HTTP request and includes various data properties, such as the requested URL, locale, device, user, cookies, and query string parameters. To get the request information, modules can access a read-only request context object that is named **this.props.context**, and they can change module behavior as required.
+The request properties object represents an HTTP request and includes various data properties, such as the requested URL, locale, device, user, cookies, and query string parameters. To get the request information, modules can access a read-only request context object named **this.props.context**. Modules can change their behavior as needed based on this information.
 
 ## Example
 
@@ -35,12 +34,12 @@ if (this.props.context.request.user.isAuthenticated) {
 ## General properties
 
 * **url** – The requested URL.
-* **locale** – The locale context (for example, **"en-us"**).
-* **textDirection** – The text direction (the possible values are **"rtl"** and **"ltr"**).
+* **locale** – The locale context, such as **"en-us"**.
+* **textDirection** – The text direction. The possible values are **"rtl"** and **"ltr"**.
 * **sitePath** – The full path of the site.
 * **device** – The device that the request came from.
 
-  * **Type** – The device type (for example, **"pc"**).
+  * **Type** – The device type, such as **"pc"**.
 
 * **user** – Information about the user. The following properties are included:
 
@@ -136,7 +135,7 @@ interface IRequestContext {
 
 ## Test a module that has an authenticated signed-in state
 
-Some modules might require that the state be **signed-in** for testing. To create a page mock with the signed-in user state for testing modules, follow the steps in [simulate-the-signed-in-state](test-page-mock.md#simulate-the-signed-in-state).
+Some modules require the **signed-in** state for testing. To create a page mock with the signed-in user state for testing modules, follow the steps in [simulate-the-signed-in-state](test-page-mock.md#simulate-the-signed-in-state).
 
 ## Additional resources
 
@@ -157,6 +156,5 @@ Some modules might require that the state be **signed-in** for testing. To creat
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

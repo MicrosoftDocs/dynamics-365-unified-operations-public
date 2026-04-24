@@ -3,15 +3,14 @@ title: Public sector accounting in France
 description: Learn about public sector accounting in France, including prerequisites and outlines on French public sector topics and vendor invoice payment holds.
 author: music727
 ms.author: mibeinar
-ms.topic: article
-ms.date: 06/03/2025
+ms.topic: how-to
+ms.date: 03/11/2026
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: France
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.search.industry: Public sector
 ms.assetid: f6bfb9dd-c3a7-48d3-b31d-23e6f27c1323
+ms.custom: 
+  - bap-template
 ---
 
 # Public sector accounting in France
@@ -24,26 +23,23 @@ This article describes public sector accounting in France.
 
 The French public sector features are available when the following conditions are met:
 
--   The **Public Sector** configuration key and the **French regulatory** subkey are selected.
--   The **Use French public sector accounting rules** option is selected on the **Budgeting parameters** page.
--   The default country/region code is France.
+- The **Public Sector** configuration key and the **French regulatory** subkey are selected.
+- The **Use French public sector accounting rules** option is selected on the **Budgeting parameters** page.
+- The default country/region code is France.
 
-Additional setup steps for specific features are covered in the article for each feature.
+For additional setup steps for specific features, see the article for each feature.
 
 ## French public sector topics
--   [Mandats de paiement](emea-fra-mandats-de-paiement.md): The director uses the mandat de paiement to notify and authorize the accountant to pay a specific amount to another entity.
--   [Vendor invoice payment holds](emea-fra-vendor-invoice-payment-holds-public-sector.md): The standard processes related to payment hold for vendor invoices are augmented for French entities in the public sector.
--   [Titres de recette](emea-fra-titres-de-recette-public-sector.md): The director uses the titre de recette to notify and authorize the accountant to collect a specific amount from another entity.
--   [Commitments](emea-fra-commitments-public-sector.md): Commitments are used to reserve budgeted amounts. This allows an organization to explicitly track budget reservations for management and reporting throughout the expenditure cycle.
--   [Procurement and sourcing](emea-fra-procurement-sourcing-public-sector.md):
-    -   The standard features related to purchase agreements are augmented for French entities in the public sector. For example, you can create tranches and lots, control department access, manage vendor certifications, and set up prime contractors, co-contractors, and subcontractors. These capabilities help you meet the requirements of the Code des Marchés Publics.
-    -   To meet public sector regulatory requirements in France, set spending thresholds for purchases in the procurement categories that are defined by the Clé de Contrôle Marché. A **Spending thresholds by category** policy rule that is used with purchasing policies lets you use effective date attributes, predicted expenditure amounts, and threshold amounts to support required procurement practices. The policy rule also ensures the efficient and effective use of public funds.
 
+- [Mandats de paiement](emea-fra-mandats-de-paiement.md): The director uses the mandat de paiement to notify and authorize the accountant to pay a specific amount to another entity.
+- [Vendor invoice payment holds](emea-fra-vendor-invoice-payment-holds-public-sector.md): The standard processes related to payment hold for vendor invoices are augmented for French entities in the public sector.
+- [Titres de recette](emea-fra-titres-de-recette-public-sector.md): The director uses the titre de recette to notify and authorize the accountant to collect a specific amount from another entity.
+- [Commitments](emea-fra-commitments-public-sector.md): Commitments reserve budgeted amounts. This feature allows an organization to explicitly track budget reservations for management and reporting throughout the expenditure cycle.
+- [Procurement and sourcing](emea-fra-procurement-sourcing-public-sector.md):
+  - The standard features related to purchase agreements are augmented for French entities in the public sector. For example, you can create tranches and lots, control department access, manage vendor certifications, and set up prime contractors, co-contractors, and subcontractors. These capabilities help you meet the requirements of the Code des Marchés Publics.
+  - To meet public sector regulatory requirements in France, set spending thresholds for purchases in the procurement categories that the Clé de Contrôle Marché defines. Use a **Spending thresholds by category** policy rule with purchasing policies to use effective date attributes, predicted expenditure amounts, and threshold amounts to support required procurement practices. The policy rule also ensures the efficient and effective use of public funds.
 
->[!NOTE]
+> [!NOTE]
 > The **Commitment** functionality doesn't support transactions related to Projects. For more information, see [General budget reservations](../../public-sector/general-budget-reservation-tasks.md).
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

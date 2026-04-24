@@ -23,19 +23,19 @@ ms.assetid:
 
 As a business user, you can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure formats for outbound documents that must be generated in accordance with the legal requirements of various countries or regions. When these requirements demand that outbound documents be generated in different languages for different countries or regions, you can configure a single ER format that contains language-dependent resources. In that way, you can reuse the format to generate outbound documents for various countries or regions. You might also want to use a single ER format to generate an outbound document in different languages for corresponding customers, vendors, subsidiaries, or any other parties.
 
-You can configure ER data models and model mappings as the data sources of configured ER formats to define the data flow that specifies what application data is put into generated documents. As an ER configuration [provider](general-electronic-reporting.md#Provider), you can [publish](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) configured data models, model mappings, and formats as components of an ER solution to generate specific outbound documents. You can also allow customers to [upload](general-electronic-reporting-manage-configuration-lifecycle.md) the published ER solution so that it can be used and customized. If you expect that customers might speak other languages, you can configure the ER components so that they contain language-dependent resources. In that way, the content of an editable ER component can be presented in a customer's user-preferred language at design time.
+You can configure ER data models and model mappings as the data sources of configured ER formats to define the data flow that specifies what application data is put into generated documents. As an ER configuration [provider](general-electronic-reporting.md#Provider), you can [publish](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lifecycle-services) configured data models, model mappings, and formats as components of an ER solution to generate specific outbound documents. You can also allow customers to [upload](general-electronic-reporting-manage-configuration-lifecycle.md) the published ER solution so that it can be used and customized. If you expect that customers might speak other languages, you can configure the ER components so that they contain language-dependent resources. In that way, the content of an editable ER component can be presented in a customer's user-preferred language at design time.
 
 You can configure language-dependent resources as ER labels. You can then use those labels to configure ER components for the following purposes:
 
 - At design time:
 
-    - Present the content of configured ER components in the user-preferred language.
+  - Present the content of configured ER components in the user-preferred language.
 
 - At runtime:
 
-    - Generate language-dependent content for outbound documents.
-    - Provide warning and error messages in the user-preferred language.
-    - Prompt for required fields in the user-preferred language.
+  - Generate language-dependent content for outbound documents.
+  - Provide warning and error messages in the user-preferred language.
+  - Prompt for required fields in the user-preferred language.
 
 ER labels can be configured in every ER [configuration](general-electronic-reporting.md#Configuration) that contains different components. The labels can be maintained independently of the configured logic of ER data models, ER model mappings, and ER format components.
 
@@ -202,7 +202,7 @@ You can export either all labels or the labels for a single language that you sp
 
 ![Sample of the exported file containing ER lables for DE-AT language.](./media/er-multilingual-labels-in-xml.png)
 
-This format is used for automatic translation of labels by  external translation services such as [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md). When you receive the translated labels, you can import them back into the draft version of an ER configuration that contains the ER components that own those labels. Select the draft version of an ER configuration that contains the editable ER component, and select **Exchange \> Load labels**.
+This format is used for automatic translation of labels by  external translation services. When you receive the translated labels, you can import them back into the draft version of an ER configuration that contains the ER components that own those labels. Select the draft version of an ER configuration that contains the editable ER component, and select **Exchange \> Load labels**.
 
 ![ER Configurations page allowing to import ER labels to the selected conviguration version.](./media/er-multilingual-labels-load.png)
 
@@ -246,11 +246,9 @@ To apply the selected storage schema for keeping labels of all ER configurations
 1. Go to **Organization administration** > **Periodic** > **Apply the selected labels storing schema for all ER configurations**.
 2. Select **OK**.
 
-
 ## Additional resources
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Electronic Reporting functions](er-formula-language.md#Functions)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

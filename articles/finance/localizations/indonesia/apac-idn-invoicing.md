@@ -66,7 +66,7 @@ Follow these steps to create invoice numbers for one period at a time for a comp
 
 5. Repeat steps 1 through 4 to create invoice numbers for additional periods.
 
-If a company has multiple branches, and each branch should have its own numeration of tax invoices, follow these steps.
+If a company has multiple branches, and each branch should have its own numeration of tax invoices, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Tax branch**, and create the required number of branches.
 2. Add tax branches to the ledger account structure. For more information, see [Create account structure](../../general-ledger/tasks/create-account-structures.md).

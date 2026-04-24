@@ -3,7 +3,7 @@ title: Configure electronic invoice parameters for Paraguay
 description: Learn how to configure the information required to generate the electronic invoice XML for Paraguay.
 author: Fhernandez0088
 ms.topic: how-to
-ms.date: 04/17/2025
+ms.date: 04/13/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.author: v-federicohe
@@ -125,7 +125,7 @@ Before you complete the procedures in this article, the following prerequisites 
 
 When you issue an electronic document that has an associated document, you must select **References** on the posting page and add the associated document. Complete the reason code and the reason description for the associated document.
 
-Before you can use the **References** button on an electronic document, you must follow these steps.
+Before you can use the **References** button on an electronic document, you must follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Electronic documents references**, and select the tax application that was created for Paraguayan electronic invoices.
 1. In the document class that is used in the transaction, set the **Use reference document** option to **Yes**.

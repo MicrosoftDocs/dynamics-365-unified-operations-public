@@ -1,10 +1,10 @@
 ---
 title: Update the environment administrator
-description: Learn about how to change the environment administrator for a finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn about how to change the environment administrator for a finance and operations apps environment in Microsoft Dynamics Lifecycle Services.
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 04/28/2023
+ms.date: 03/06/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global 
@@ -14,20 +14,21 @@ ms.search.validFrom: 2018-03-05
 # Update the environment administrator
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
-When you create a finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS), one of the configuration options requires that you select a user as the environment administrator. This user becomes the email account that is associated with the default **Admin** user record that the System Administrator role is assigned to in finance and operations apps.
+When you create a finance and operations apps environment in Microsoft Dynamics Lifecycle Services, one of the configuration options requires that you select a user as the environment administrator. This user becomes the email account that is associated with the default **Admin** user record that the System Administrator role is assigned to in finance and operations apps.
 
 The Admin user is critical in some situations in the apps, such as when system batch jobs are run. These jobs must run with administrator privileges. They should not be associated with a regular user from your company, because that user's Microsoft Entra account will be disabled if they leave your organization.
 
-However, we know that the Admin user account is occasionally disabled in Microsoft Entra ID, and there is no way to change the **Admin** user record in the apps. Previously, this issue was manually supported via a support ticket, but it has now been made a self-service action in LCS.
+However, we know that the Admin user account is occasionally disabled in Microsoft Entra ID, and there is no way to change the **Admin** user record in the apps. Previously, this issue was manually supported via a support ticket, but it has now been made a self-service action in Lifecycle Services.
 
 ## Change the environment administrator account
 
-To change the environment administrator, you must be a project owner in the LCS project.
+To change the environment administrator, you must be a project owner in the Lifecycle Services project.
 
-1. In LCS, go to your project, and open your environment details page.
+1. In Lifecycle Services, go to your project, and open your environment details page.
 2. Select **Maintain \> Update environment admin**.
-3. In the dialog box that appears, select another Project Owner or Environment Admin user from your LCS project.
+3. In the dialog box that appears, select another Project Owner or Environment Admin user from your Lifecycle Services project.
 4. Select **Save**.
 
 > [!IMPORTANT]

@@ -1,10 +1,10 @@
 ---
-title: Set up Dynamics 365 Payment Connector for Adyen (preview)
+title: Set up Dynamics 365 Payment Connector for Adyen
 description: Learn how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
 ms.date: 11/24/2025
 ms.topic: how-to
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
@@ -13,10 +13,9 @@ ms.custom:
   - bap-template
 ---
 
-# Set up Dynamics 365 Payment Connector for Adyen (preview)
+# Set up Dynamics 365 Payment Connector for Adyen
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen. For an overview of the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md).
 
@@ -44,7 +43,7 @@ In addition to the following instructions, you must also configure your Adyen ac
 
 To process payments in Commerce headquarters via the Adyen connector, you must configure Adyen connector and set it up as the default payment processor for new credit cards. 
 
-To configure a default payment processor, follow these steps.
+To configure a default payment processor, follow these steps:
 
 1. Sign in to Commerce headquarters and go to **Accounts receivable \> Payments setup \> Payment services**.
 1. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
@@ -202,7 +201,7 @@ The Adyen payment connector can be configured to communicate with devices via th
 
 ##### Configure the PIN pad
 
-To configure the PIN pad, follow these steps.
+To configure the PIN pad, follow these steps:
 
 1. On the **PIN pad** FastTab, in the **PIN pad** field, select **Network**.
 1. In the **Device name** field, enter **MicrosoftAdyenDeviceV001**.
@@ -259,7 +258,7 @@ The configuration in headquarters at **Accounts receivable \> Payments setup \> 
 
 ### Configure the Adyen connector for online stores
 
-To configure the Adyen connector for online stores, follow these steps.
+To configure the Adyen connector for online stores, follow these steps:
 
 1. Go to **Retail and Commerce \> Channels \> Online stores**.
 1. Select the online store to add the Dynamics 365 Payment Connector for Adyen.
@@ -369,6 +368,7 @@ For answers to frequently asked questions regarding the Dynamics 365 Payment Con
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
 
 
 

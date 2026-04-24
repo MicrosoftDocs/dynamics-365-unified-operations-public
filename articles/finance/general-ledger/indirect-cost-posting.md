@@ -48,7 +48,7 @@ The exact process that is used to calculate indirect costs might vary slightly f
 
 You must create at least one cost group to use for indirect costs. There is no limit to the number of cost groups that you can use. Consider how you calculate your costs and whether there are different rates for different types of costs. For example, your organization manufactures food products. Some raw materials and finished goods are dry goods, and have one indirect cost for warehousing. Other raw materials and finished goods are refrigerated, and have a higher indirect cost. In this case, you might want to create two cost groups: **Dry material overhead** and **Refrigerated material overhead**.
 
-To create a cost group for indirect costs, follow these steps.
+To create a cost group for indirect costs, follow these steps:
 
 1. Go to **Production control &gt; Setup &gt; Routes &gt; Cost groups**.
 2. Select **New** to create a group.
@@ -97,7 +97,7 @@ For example, you use the volume of inputs for a specific cost group that is link
 
 ### Create a total node for indirect costs in the costing sheet
 
-To create a total node for indirect costs in the costing sheet, follow these steps.
+To create a total node for indirect costs in the costing sheet, follow these steps:
 
 1. Go to **Cost management &gt; Indirect cost accounting policies setup &gt; Costing sheet**.
 2. In the tree, select a node that represents the cost of goods that have been manufactured.
@@ -110,7 +110,7 @@ To create a total node for indirect costs in the costing sheet, follow these ste
 
 ### Create an indirect cost group node in the costing sheet
 
-To create an indirect cost group node in the costing sheet, follow these steps.
+To create an indirect cost group node in the costing sheet, follow these steps:
 
 1. Go to **Cost management &gt; Indirect cost accounting policies setup &gt; Costing sheet**.
 2. In the tree, select the node that you want to create the indirect cost under. For example, select the total node for **Production overhead**.
@@ -123,7 +123,7 @@ To create an indirect cost group node in the costing sheet, follow these steps.
 
 ### Create a surcharge indirect cost
 
-To create a surcharge indirect cost in your costing sheet, follow these steps.
+To create a surcharge indirect cost in your costing sheet, follow these steps:
 
 1. Go to **Cost management &gt; Indirect cost accounting policies setup &gt; Costing sheet**.
 2. In the tree, select the indirect cost group node that you want to create the indirect cost under. For example, select the total node for **TRANSP - Transportation Overhead**.

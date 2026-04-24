@@ -1,10 +1,10 @@
 ---
 title: Restart environment services
-description: Learn about how to restart individual services in environments that are deployed through Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn about how to restart individual services in environments that are deployed through Microsoft Dynamics Lifecycle Services.
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 03/15/2022
+ms.date: 03/06/2026
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -17,20 +17,21 @@ ms.dyn365.ops.version: 7.3
 # Restart environment services
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
-You can use the Restart services functionality in Microsoft Dynamics Lifecycle Services (LCS) to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment of the **Self-service** type. You can use this functionality to restart the following services:
+You can use the Restart services functionality in Microsoft Dynamics Lifecycle Services to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment of the **Self-service** type. You can use this functionality to restart the following services:
 
 - **Finance and operations apps service** - This includes the X++ runtime, as well as batch functinality.
 - **Data management service**  - This is also known as the Data Import/Export service.
 - **Financial reporting service** - Used to generate financial statements. 
 
-Any user who has been added as a project owner, organization admin, or environment manager in an LCS project has permissions to use this functionality.
+Any user who has been added as a project owner, organization admin, or environment manager in an Lifecycle Services project has permissions to use this functionality.
 
 ## Restart a specific service
 
-To restart a specific service in a deployed environment, follow these steps.
+To restart a specific service in a deployed environment, follow these steps:
 
-1. In LCS, open the appropriate project, and select the environment to restart the service for.
+1. In Lifecycle Services, open the appropriate project, and select the environment to restart the service for.
 2. On the **Environment details** page, select **Maintain** &gt; **Restart services**.
 3. In the **Restart a service** dialog box, select the service to restart, and then select **OK**.
 

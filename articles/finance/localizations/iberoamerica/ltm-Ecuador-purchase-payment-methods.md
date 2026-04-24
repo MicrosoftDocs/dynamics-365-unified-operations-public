@@ -2,7 +2,7 @@
 title: Configure Ecuadorian purchase payment methods printing 
 description: Learn how to configure the Ecuadorian purchase payment methods report for printing.
 author: Fhernandez0088
-ms.date: 01/17/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -36,7 +36,7 @@ Before you can generate and print the report, the following prerequisites must b
 
 Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that is used in the transactions. Depending on the country/region that you want to configure the report for, the applicable conditions are shown.
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Open the **Electronic Reporting** workspace, and select **Reporting configurations**.
 1. Select the **EC Purchases Payment Methods** format, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -51,7 +51,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Run the purchase payment methods report
 
-To generate the purchase payment methods report, follow these steps.
+To generate the purchase payment methods report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **EC Purchases Payment Methods**.

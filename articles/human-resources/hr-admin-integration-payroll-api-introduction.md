@@ -3,8 +3,8 @@
 
 title: Payroll integration API introduction
 description: This article describes the Dynamics 365 Human Resources Payroll integration API.
-author: twheeloc
-ms.date: 09/03/2025
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: concept-article
 # optional metadata
 
@@ -26,11 +26,11 @@ ms.dyn365.ops.version: Human Resources
 
 
 >[!NOTE]
->For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking.
+>For the payroll integration to work for customers using the mshr entities for Ceredian Dayforce, navigate to [API-based payroll integration with Ceridian Dayforce](./hr-admin-payroll-api-integration-dayforce.md).
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This document describes the Dynamics 365 Human Resources Payroll integration API. The API enables streamlined end-to-end integrations between Human Resources and partnering payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction, and contribution information. When you hire an employee and enter the required profile and pay information into Human Resources, the payroll system pulls this information to use when processing payroll. Any updates made to the employee or pay information are also pulled for use in later pay runs.
+This article describes the Dynamics 365 Human Resources Payroll integration API. The API enables streamlined end-to-end integrations between Human Resources and partnering payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction, and contribution information. When you hire an employee and enter the required profile and pay information into Human Resources, the payroll system pulls this information to use when processing payroll. Any updates made to the employee or pay information are also pulled for use in later pay runs.
 
 [![Payroll integration flow.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
@@ -41,7 +41,7 @@ To enable the integration, Human Resources includes the following components:
 
 ## Microsoft Dataverse
 
-This API is built on Microsoft Dataverse (formerly Common Data Service). All RESTful interaction with this API is done via the Microsoft Dataverse Web API, which uses OData. This API is a subset of the Dataverse Web API. The Dataverse Web API defines characteristics such as authentication, SLAs, batch, concurrency control, and error handling.
+This API is built on Microsoft Dataverse. All RESTful interaction with this API is done via the Microsoft Dataverse Web API, which uses OData. This API is a subset of the Dataverse Web API. The Dataverse Web API defines characteristics such as authentication, SLAs, batch, concurrency control, and error handling.
 
 For more general information about the Microsoft Dataverse Web API, see:
 
@@ -59,7 +59,7 @@ This documentation includes details and developer guidance for using the Dataver
 
 The endpoints for the Payroll integration API use the virtual table platform capabilities of Microsoft Dataverse. By default, the virtual tables and their associated API endpoints aren't deployed for Human Resources environments, enabling organizations to determine which OData endpoints will be exposed for the environment. To use the API, the virtual tables for the Human Resources entities must be generated for the environment.
 
-For information on generating the virtual tables for the API, see [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md).
+For information on generating the virtual tables for the API, see [Configure Dataverse virtual tables](./../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 
 ## Data model
 
@@ -71,16 +71,15 @@ The following diagram illustrates relationships within the API. Several types ha
 
 Entities:
 
-- [Payroll employee](hr-admin-integration-payroll-api-payroll-employee.md)
-- [Payroll worker address](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Payroll fixed compensation plan](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
-- [Payroll variable compensation plan](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
-- [Payroll position job](hr-admin-integration-payroll-api-payroll-position-job.md)
-- [Payroll position](hr-admin-integration-payroll-api-payroll-position.md)
+- [Payroll employee](payroll-integration-payroll-employee.md)
+- [Payroll worker address](payroll-integration-payroll-worker-address-current.md)
+- [Payroll fixed compensation plan](payroll-integration-compensation-fixed-employee.md)
+- [Payroll variable compensation enrollment](payroll-integration-variable-compensation-enrollment.md)
+- [Payroll position job](payroll-integration-payroll-position-job.md)
+- [Payroll position](payroll-integration-position.md)
 
 ## See also
 
-[Generate and review payroll entities](hr-admin-integration-payroll-api-generate-review-entities.md)<br>
 [Configure Human Resources parameters](hr-setup-parameters.md)<br>
 [Configure Human Resources shared parameters](hr-setup-shared-parameters.md)<br>
 [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>

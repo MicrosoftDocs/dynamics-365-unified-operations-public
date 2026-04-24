@@ -54,7 +54,7 @@ In the next three steps, you'll set up the connection to Key Vault. First, you'l
 
 ### Step 3: Set up a key vault to use with sealed bidding
 
-To set up your key vault, follow these steps. The order of the steps is important.
+To set up your key vault, follow these steps: The order of the steps is important.
 
 1. If you haven't already set up an Azure subscription that is separate from the subscription where you're running Supply Chain Management, set it up.
 1. Set up a key vault in your separate Azure storage. Learn more in [Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
@@ -62,7 +62,7 @@ To set up your key vault, follow these steps. The order of the steps is importan
 
 ### Step 4: Configure Key Vault parameters in Supply Chain Management
 
-To configure Supply Chain Management to communicate with the key vault during sealed bidding, follow these steps.
+To configure Supply Chain Management to communicate with the key vault during sealed bidding, follow these steps:
 
 1. Sign in to Supply Chain Management, and go to **System administration \> Setup \> Key Vault parameters**.
 1. Select **New** to create a record, and set the following fields for it:
@@ -81,7 +81,7 @@ To configure Supply Chain Management to communicate with the key vault during se
 
 ### Step 5: Set the key expiration time
 
-To set the expiration time that is applied to the key that is generated for every new bid, follow these steps.
+To set the expiration time that is applied to the key that is generated for every new bid, follow these steps:
 
 1. Go to **Procurement and sourcing parameters \> Setup \> Procurement and sourcing parameters**.
 1. On the **Request for quotation** tab, in the **Days offset** field, enter the number of days that the RFQ period should last. When an RFQ is created, the number of days that you enter here is added to the system date to define the default expiration date for the RFQ.
@@ -96,14 +96,14 @@ Every RFQ case has a bid type. The bid type defines whether that RFQ case provid
 
 #### RFQ cases that don't have a solicitation type
 
-To set the default bid type that is assigned to new RFQ cases that aren't assigned a solicitation type when they're created, follow these steps.
+To set the default bid type that is assigned to new RFQ cases that aren't assigned a solicitation type when they're created, follow these steps:
 
 1. Go to **Procurement and sourcing parameters \> Setup \> Procurement and sourcing parameters**.
 1. On the **Request for quotation** tab, set the **Bid type** field to *Sealed*.
 
 #### RFQ cases that have a solicitation type
 
-To set the default bid type that is assigned to new RFQ cases that are assigned a solicitation type when they're created, follow these steps.
+To set the default bid type that is assigned to new RFQ cases that are assigned a solicitation type when they're created, follow these steps:
 
 1. Go to **Procurement and sourcing \> Setup \> Request for Quotation \> Solicitation type**.
 1. Create a new solicitation type, or select an existing solicitation type where you want to use a bid type of *Sealed*.

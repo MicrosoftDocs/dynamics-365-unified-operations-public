@@ -2,7 +2,7 @@
 title: Configure printing for Cash and Banks Ledger reports for Peru
 description: Learn how to configure printing for Cash and Banks Ledger reports for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 05/07/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -56,7 +56,7 @@ Before you can generate and print Cash and Banks Ledger reports, the following p
 
 ## Configure application-specific parameters for both formats
 
-To configure application-specific parameters for both the Cash and Bank Ledger F1.1 format and the Cash and Bank Ledger F1.2 format, follow these steps.
+To configure application-specific parameters for both the Cash and Bank Ledger F1.1 format and the Cash and Bank Ledger F1.2 format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspace**, and select **Reporting configurations**.
 1. In the left pane, select the format to configure.
@@ -69,7 +69,7 @@ To configure application-specific parameters for both the Cash and Bank Ledger F
 
 ## Generate reports for both formats
 
-To generate reports for both the Cash and Bank Ledger F1.1 format and the Cash and Bank Ledger F1.2 format, follow these steps.
+To generate reports for both the Cash and Bank Ledger F1.1 format and the Cash and Bank Ledger F1.2 format, follow these steps:
 
 1. In Finance, go to **General ledger** \> **Inquiries and reports** \> **LATAM** \> **General ledger**.
 1. For each report format, in the **Report ID** field, select the report ID that was created.

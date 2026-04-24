@@ -2,10 +2,9 @@
 title: Ratings and reviews FAQ
 description: This article provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
 author: gvrmohanreddy
-ms.date: 08/09/2024
-ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.date: 04/09/2026
+ms.topic: faq
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2021-09-03
@@ -18,6 +17,10 @@ ms.custom:
 [!include [banner](includes/banner.md)]
 
 This article provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
+
+
+> [!IMPORTANT]
+> The Dynamics 365 Commerce Ratings and Reviews license is no longer available for new purchases and renewals.
 
 ### How do I hide the ratings refiner that appears on search results and category pages if my e-commerce site doesn't use the ratings and reviews solution?
 

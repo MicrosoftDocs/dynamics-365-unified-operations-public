@@ -4,7 +4,7 @@ description: Learn how to set up transaction posting for Latin America (LATAM), 
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -13,22 +13,24 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [does not apply to](includes/does-not-apply-to.md)]
+
 This article provides the information that you need and the steps that you must complete to set up the functionality for posting transactions in Latin America (LATAM) by using LATAM-specific features. Supported transactions include customer and vendor invoices, customer and vendor payments, and remission documents.
 
 ## Step 1. Activate LATAM features
 
 1. Open the **Feature management** workspace.
-2. In the list, find and select the **LATAM globalization expansion** feature for each country/region that you want to enable the functionality for, and then select **Enable now**. 
+1. In the list, find and select the **LATAM globalization expansion** feature for each country/region that you want to enable the functionality for, and then select **Enable now**. 
 
 ## Step 2. Set the company's primary address to a LATAM country/region
 
 You can enable and use the LATAM-specific features only if the company's primary address is in LATAM. Follow these steps to set the primary address so that it's in LATAM.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select the legal entity that you're updating the primary address for.
-3. On the **Addresses** FastTab, select **Add**.
-4. Enter the address information, and mark the address as **Primary**.
-5. Select **OK**.
+1. Select the legal entity that you're updating the primary address for.
+1. On the **Addresses** FastTab, select **Add**.
+1. Enter the address information, and mark the address as **Primary**.
+1. Select **OK**.
 
 ## Step 3. Create tax ID types according to the country/region legislation
 

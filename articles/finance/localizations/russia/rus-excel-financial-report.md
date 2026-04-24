@@ -25,7 +25,7 @@ Before you read this article, you should review [Create electronic reporting (ER
 
 Set up a financial report so that it has the list of financial report cells and rules for calculating financial reports cells.
 
-To set up a financial report, follow these steps.
+To set up a financial report, follow these steps:
 
 1. Upload data management package settings. For this example, upload the **RU Accounting reporting 5.07 (2016).zip** data management package settings as described in [Accounting reporting in electronic format](rus-accounting-reporting.md).
 1. In Dynamics 365 Finance, go to **General ledger \> Financial reports setup \> Financial reports**.
@@ -45,7 +45,7 @@ Create an ER configuration format that is based on the **Financial reports model
 
 Before you complete this procedure, see [ER Design a configuration for generating reports in OPENXML format (November 2016)](../../../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=%2ffin-and-ops%2ftoc.json) for information about how to set up an ER configuration that generates a report in Excel format.
 
-To , follow these steps.
+To , follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest version of the following ER configurations:
 
@@ -125,7 +125,7 @@ To , follow these steps.
 
 You can configure the Electronic messages feature to run any ER configuration.
 
-To run the ER format that is based on the **Financial reports model**, follow these steps.
+To run the ER format that is based on the **Financial reports model**, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Inquiries and reports \> Financial reports (Russia)**.
 1. In the **Financial reports (Russia)** dialog, in the **Format mapping** field, select the ER format that should be run. For example, select **Balance sheet format Excel example (RU)**.

@@ -30,7 +30,7 @@ Before you begin, you must [configure Italian sales tax books](emea-ita-sales-ta
 
 A sales tax summary report is generated as part of Italian sales tax books electronic reporting. If the **Separate summary register** checkbox is selected for the related [sales tax authority](emea-ita-vat-statements-details.md#sales-tax-authority), a separate sales tax book must be set up as summary sections in sales tax books and sales tax book sections. If the **Separate summary register** checkbox is cleared for the related [sales tax authority](emea-ita-vat-statements-details.md#sales-tax-authority), the **Print summary and payment** checkbox must be selected for one of the Italian sales tax books of the **Sales** type on the **Italian sales tax books** page.
 
-To generate a sales tax summary report, follow these steps.
+To generate a sales tax summary report, follow these steps:
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. The **Report sales tax for settlement period** dialog box appears.
 1. In the **Settlement period** field, select the sales tax settlement period to generate the report for.

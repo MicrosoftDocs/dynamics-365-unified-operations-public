@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/20/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ You can issue a service fiscal document for a customer who bought services from 
 
 The following procedure uses the BRMF demo company.
 
-To issue a service fiscal document for a customer who bought services from the fiscal establishment, follow these steps.
+To issue a service fiscal document for a customer who bought services from the fiscal establishment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Select **New**.

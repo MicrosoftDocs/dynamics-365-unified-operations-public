@@ -2,7 +2,7 @@
 title: Configure printing for the IGV withholding tax report for Peru
 description: Learn how to configure printing for the General Sales Tax (IGV) withholding tax report for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 05/07/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -40,7 +40,7 @@ Before you can generate and print IGV withholding tax reports, the following pre
 
 ## Configure application-specific parameters
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces**, and select **Reporting configurations**.
 1. In the **LTM Tax report** group, select the desired format.
@@ -57,7 +57,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate an IGV withholding tax report
 
-To generate an IGV withholding tax report, follow these steps.
+To generate an IGV withholding tax report, follow these steps:
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select a value.

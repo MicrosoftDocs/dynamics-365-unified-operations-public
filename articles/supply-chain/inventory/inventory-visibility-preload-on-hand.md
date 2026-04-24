@@ -41,7 +41,7 @@ The **Onhand index query preload results** page provides a view for the *On-han
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
-To turn on and configure preloaded on-hand queries in UI version 2, follow these steps.
+To turn on and configure preloaded on-hand queries in UI version 2, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
@@ -60,7 +60,7 @@ To turn on and configure preloaded on-hand queries in UI version 2, follow these
 
 This section applies when you're using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
 
-To turn on and configure preloaded on-hand queries in UI version 1, follow these steps.
+To turn on and configure preloaded on-hand queries in UI version 1, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
@@ -73,7 +73,7 @@ To turn on and configure preloaded on-hand queries in UI version 1, follow these
 
 ## <a name="additional-tip-for-viewing-data"></a>Filter and browse the preloaded query
 
-To filter and browser the preloaded query, follow these steps.
+To filter and browser the preloaded query, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select **Inventory visibility**. <!--KFM: Seems like you can only see this page from the new UI. Is that right? -->

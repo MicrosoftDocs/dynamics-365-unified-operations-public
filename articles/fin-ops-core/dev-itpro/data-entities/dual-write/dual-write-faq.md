@@ -2,9 +2,11 @@
 title: Dual-write FAQ
 description: Read answers to frequently asked questions about dual-write including questions about dual-write setup, administration, management, and mapping concepts between apps.
 author: twheeloc
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: faq
-ms.date: 06/2/2025
+ms.custom: 
+  - bap-template
+ms.date: 04/03/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,38 +18,38 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article lists frequently asked questions about dual-write and provides brief answers to help you quickly get the information that you require.
+This article lists frequently asked questions about dual-write and provides brief answers to help you quickly get the information that you need.
 
 ## Dual-write setup
 
-### Do you plan to enable dual-write to use Dataverse as a hub between multiple finance and operations environments? If Dataverse is used as a hub, data can be synced between two or more finance and operations environments.
+### Do you plan to enable dual-write to use Dataverse as a hub between multiple finance and operations environments? If Dataverse is used as a hub, you can sync data between two or more finance and operations environments.
 
 The current plan of record is to restrict dual-write to a one-to-one (1:1) mapping between a single finance and operations environment and a single Dataverse environment.
 
 ### Can I control the sequencing of maps in dual-write, as I can in Data integrator?
 
-Dual-write is transaction-based. For example, if a change in a finance and operations app triggers synchronization of multiple maps with Dataverse, by default, those changes are sequenced in the order in which they're updated in the database. This pattern makes more sense in the context of initial synchronization. The system provides related table maps in a specified order, and you can reorder the list so that it best suits your environment.
+Dual-write is transaction-based. For example, if a change in a finance and operations app triggers synchronization of multiple maps with Dataverse, by default, the system sequences those changes in the order in which they're updated in the database. This pattern makes more sense in the context of initial synchronization. The system provides related table maps in a specified order, and you can reorder the list so that it best suits your environment.
 
 ### Do application users require any special permissions to enable or configure dual-write?
 
-You must have two Microsoft Entra applications set up for the finance and operations environment and two application users set up in the Dataverse environment. These application users should contain the appropriate application IDs. For the connection to work properly, you must give the applications the relevant table permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites.md#verify-requirements-and-grant-access).
+You must set up two Microsoft Entra applications for the finance and operations environment and two application users in the Dataverse environment. These application users should contain the appropriate application IDs. For the connection to work properly, you must give the applications the relevant table permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites.md#verify-requirements-and-grant-access).
 
 ### Do end users require any special permissions to enable or configure dual-write?
 
 End users who are configuring dual-write mappings should have System Administrator security roles assigned in both Dataverse and finance and operations environments.
 
-Dual-write mappings can be accessed by multiple users, as long as all the users and environments belong to a single tenant, and the user has the required security and licenses assignment.
+Multiple users can access dual-write mappings as long as all the users and environments belong to a single tenant, and the user has the required security and licenses assignment.
 
-> [NOTE!]
-> Users assigned in Entra Id from an outside tenant can't be used. 
+> [!NOTE]
+> You can't use users assigned in Entra Id from an outside tenant.  
 
-### I have multiple legal entities. Some of my maps are legal table–specific or valid for only some of the legal entities. What is the best way to address this requirement? Can I apply a filter such as Company = USMF to address it?
+### I have multiple legal entities. Some of my maps are legal table–specific or valid for only some of the legal entities. What's the best way to address this requirement? Can I apply a filter such as Company = USMF to address it?
 
-Legal table mapping can be done when the Dataverse environment is linked. You can't map table maps to a specific legal entity.
+You can map legal tables when you link the Dataverse environment. You can't map table maps to a specific legal entity.
 
-### If dual-write solutions are installed in Dataverse, can I uninstall them?
+### If I install dual-write solutions in Dataverse, can I uninstall them?
 
-Dual-write solutions are managed solutions that can be uninstalled. However, when a managed solution is uninstalled, all components in the solution are deleted. Any data that's stored in the components is also deleted. For more information, see [Maintain managed solutions](/powerapps/developer/common-data-service/maintain-managed-solutions).
+Dual-write solutions are managed solutions that you can uninstall. However, when you uninstall a managed solution, you delete all components in the solution. You also delete any data that's stored in the components. For more information, see [Maintain managed solutions](/powerapps/developer/common-data-service/maintain-managed-solutions).
 
 ### I have data in both a customer engagement app and a finance and operations app, and I bootstrap my existing data in the customer engagement app. If my data isn't currently aligned, can I specify a master source for the initialization run, so that all differences are applied to the target?
 
@@ -67,7 +69,7 @@ For more advanced examples for Dataverse, see [Filter results](/powerapps/develo
 
 For more advanced finance and operations filters, see [Using Expressions in Query Ranges](/dynamicsax-2012/developer/using-expressions-in-query-ranges) and [Advanced filtering and query syntax](../../../fin-ops/get-started/advanced-filtering-query-options.md).
 
-### Dual-write live synchronization introduces tight coupling across applications. What happens if one side fails? Will the other side fail too?
+### Dual-write live synchronization introduces tight coupling across applications. What happens if one side fails? Does the other side fail too?
 
 When the integration is in live synchronization mode, if the synchronization fails on one of the apps, the other app also fails, and users receive an error. When the integration is paused, changes are staged. They're then written when the target system is up and running. For more information about how to automatically pause integrations, see [Alert notifications](errors-and-alerts.md#alert-notifications).
 
@@ -77,12 +79,12 @@ The integration follows the complete sequence of changes. In the example, the cu
 
 ### How do I handle a finance and operations database transfer from PROD to STAGE? What is the effect on dual-write? After the transfer, the systems are no longer in sync. Is the synchronization done automatically?
 
-Each pair of linked environments (finance and operations environment and Dataverse environment) should be treated as a single unit and refreshed accordingly. For example, if you're refreshing a sandbox from production, both the finance and operations sandbox environment and the Dataverse sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments must be unlinked. After the data refresh in target environments, the following tables should be cleaned up:
+Treat each pair of linked environments (finance and operations environment and Dataverse environment) as a single unit and refresh them accordingly. For example, if you're refreshing a sandbox from production, refresh both the finance and operations sandbox environment and the Dataverse sandbox environment from their production counterparts. If you already use dual-write in target environments, unlink those environments. After the data refresh in target environments, clean up the following tables:
 
 + Finance and operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**.
 + Dataverse tables: **DualwriteRuntimeConfiguration**.
 
-The environments must be relinked and the maps reactivated manually.
+Manually relink the environments and reactivate the maps.
 
 ### I need real-time integration, and I want to move some tables or scenarios from Data integrator to dual-write. What might change during migration?
 
@@ -94,7 +96,7 @@ In general, three things might change during migration:
 
 ### On finance and operations data tables, can I develop unbounded columns that flow to Dataverse by using dual-write?
 
-Yes. You can use both [computed columns and virtual columns](../data-entity-computed-columns-virtual-fields.md). However, you should monitor the performance overhead from the X++ logic that's required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, transactions originating in Dataverse cannot use virtual columns to transform or calculate values in X++ and return the calculated value to Dataverse in the same transaction. This isn't a valid or supported use case for dual-write.
+Yes. You can use both [computed columns and virtual columns](../data-entity-computed-columns-virtual-fields.md). However, monitor the performance overhead from the X++ logic that's required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, transactions originating in Dataverse can't use virtual columns to transform or calculate values in X++ and return the calculated value to Dataverse in the same transaction. This isn't a valid or supported use case for dual-write.
 
 ### When I use the Dataverse offline app, what happens if I can't sync the data after reconnection? Does this situation cause an inconsistent state between the Dataverse environment and the finance and operations environment?
 
@@ -102,14 +104,14 @@ You can interact with Dataverse data offline when you use the [Dynamics 365 for 
 
 ## Mapping concepts between apps
 
-### How are number sequences handled? For example, the customer account number is automatically generated in finance and operations apps, but it's added manually in customer engagement apps.
+### How are number sequences handled? For example, the customer account number is automatically generated in finance and operations apps, but you add it manually in customer engagement apps.
 
 Number sequences for finance and operations apps and customer engagement apps aren't connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats or create a range for each app. Here are some examples:
 
 + In the finance and operations app, use **F0001, F0002, F0003**. In the customer engagement app, use **C0001, C0002, C0003**.
 + In the finance and operations app, use **US0001 to US4999**. In the customer engagement app, use **US5000 to US9999**.
 
-If a table is created in only one system, set up the number sequence in the source app only. For more information, see [Autonumber columns](/powerapps/maker/data-platform/autonumber-fields).
+If you create a table in only one system, set up the number sequence in the source app only. For more information, see [Autonumber columns](/powerapps/maker/data-platform/autonumber-fields).
 
 ### Can I map a company-specific table in a customer engagement app with a global table in a finance and operations app, or a global table in a customer engagement app with a company-specific table in a finance and operations app?
 
@@ -124,12 +126,12 @@ To enable table maps for dual-write, you must define an alternate key in Dataver
 ### Can I merge accounts in customer engagement apps and party records in finance and operations apps while using dual-write?
 
 No, there's no parity between the merging functionalities in finance and operations apps and customer engagement apps. As a result, when a dual-write mapping is present on a table: 
-+ Merging accounts in customer engagement apps won't execute.
-+ Merging party records in finance and operations apps may result in data mismatch.
++ Merging accounts in customer engagement apps doesn't execute.
++ Merging party records in finance and operations apps might result in data mismatch.
 
 ### Is there a document about best practices for table usage? Should I use Customers V2, Customers V3, or Customer Details? What is the difference between these tables, and what is the use case for each?
 
-You should use the [out-of-box scenarios](./customer-mapping.md) if you can, because they cover common scenarios such as customer/vendor integration.
+Use the [out-of-box scenarios](./customer-mapping.md) if you can, because they cover common scenarios such as customer/vendor integration.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

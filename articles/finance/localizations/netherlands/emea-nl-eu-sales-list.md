@@ -27,7 +27,7 @@ As a prerequisite, you should learn about EU sales list reporting and create all
 
 ### Set up XML namespaces for the EU sales list in XML
 
-To set up XML namespaces for the EU sales list in XML, follow these steps.
+To set up XML namespaces for the EU sales list in XML, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces** \> **Electronic reporting**, and import version 1.10 or higher of the format, **EU Sales list (NL).** For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 1. Select **Configurations** \> **Application specific parameters setup**.
@@ -46,7 +46,7 @@ For more information about how to get the values from official documentation, se
 
 To set up and generate the Dutch EU sales list for [Multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), go to the **Feature management** workspace and enable the feature, **Dutch ICP declaration**. 
 
-To set up EU sales list reporting formats, follow these steps.
+To set up EU sales list reporting formats, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
 1. On the **EU sales list** tab, in the **File format mapping** field, select the ER format **EU sales list (NL)** that you imported.
@@ -61,7 +61,7 @@ Digipoort is the service used to transmit declarations to the Dutch government. 
 
 ### Set up Azure Key Vault for certificate storage
 
-To set up Azure Key Vault for certificate storage, follow these steps.
+To set up Azure Key Vault for certificate storage, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration** \> **Setup** \> **System parameters**.
 1. On the **General** tab, set the **Use advanced certificate store** option to **Yes**.
@@ -82,7 +82,7 @@ For more information about how to set up Key Vault parameters, see [Set up the 
 
 ### Set up electronic tax declaration parameters
 
-To set up electronic tax declaration parameters, follow these steps.
+To set up electronic tax declaration parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Electronic tax declaration parameters**.
 
@@ -102,7 +102,7 @@ To set up electronic tax declaration parameters, follow these steps.
 
 ### Set up Dutch electronic tax declaration parameters
 
-To set up Dutch electronic tax declaration parameters, follow these steps.
+To set up Dutch electronic tax declaration parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Electronic tax declaration parameters**.
 
@@ -120,7 +120,7 @@ To set up Dutch electronic tax declaration parameters, follow these steps.
 
 ### Transfer transactions and preview files
 
-To transfer transactions and preview files, follow these steps.
+To transfer transactions and preview files, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**. Transfer the EU sales list transactions for the Netherlands to the EU sales list.
 1. Mark any corrected lines as **Corrected**.
@@ -140,7 +140,7 @@ To transfer transactions and preview files, follow these steps.
 
 ### Create ICP declaration and send to Digipoort
 
-To create ICP declaration and send to Digipoort, follow these steps.
+To create ICP declaration and send to Digipoort, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Dutch electronic ICP declaration**.
 1. Select **New**, and in the **Create electronic ICP declaration** dialog box, select **Company tax registration number**.
@@ -183,7 +183,7 @@ To view the changes in EU sales list, complete the following steps.
 
 ### VAT declaration
 
-To view the changes in VAT declaration, follow these steps.
+To view the changes in VAT declaration, follow these steps:
 
 1. Open the file, Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-ob-aangifte-2021.html to see the changes in VAT declaration.
 1. In the file, under **Schema referenties,** you can see xsd schema names for taxonomies NT14 and NT11. Take the name of xsd schema for entering to **XSDSchema** lookup result. Find more details about application specific parameters for VAT declaration format in [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) article in **Set up XSD schema and namespaces** section.

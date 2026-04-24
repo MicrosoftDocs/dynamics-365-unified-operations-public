@@ -3,8 +3,8 @@ title: Availability of Electronic Invoicing Service features by country or regio
 description: Learn about the out-of-box features that are available for each country or region, including overviews on generally available features.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
-ms.date: 09/22/2025
+ms.topic: concept-article
+ms.date: 04/13/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -32,7 +32,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chile-elec-invo-conncection.md) | Sales invoices, project invoices, and packing slips |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chl-vend-e-invoice.md) | Import vendor invoices |
 | Colombia | [Colombia Electronic Invoice (CO)](../iberoamerica/ltm-colombia-electronic-invoice-configuration.md) | Sales invoices and project invoices |
-| Costa Rica | [Costa Rica electronic invoice (CRI)](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) | Sales invoices and project invoices |
+| Costa Rica | [Costa Rica electronic invoice (CRI)](../iberoamerica/ltm-costa-rica-ei-connect-configuration.md) | Sales invoices and project invoices |
 | Denmark | Danish electronic invoice (DK) | Sales invoices and project invoices |
 | Egypt | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 | Estonia | Estonian electronic invoice (EE) | Sales invoices and project invoices |

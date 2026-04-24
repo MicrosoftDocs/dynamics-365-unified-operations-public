@@ -2,7 +2,7 @@
 title: Configure printing for the simplified Electronic Sales and Income Registry (RVIE) report for Peru
 description: Learn how to configure printing for the simplified version of the Electronic Sales and Income Registry (RVIE) report for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 06/03/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -48,7 +48,7 @@ Before you can generate and print simplified RVIE reports, the following prerequ
 
 ## Configure application-specific parameters for the simplified RVIE annex reports including the Excel output
 
-To configure application-specific parameters for a simplified RVIE report, follow these steps.
+To configure application-specific parameters for a simplified RVIE report, follow these steps:
 
 1. In Finance, go to **Organization administration** \> **Workspaces**, and select **Reporting configurations**.
 1. In the **LTM Tax report** group, for each format that is listed in the [Prerequisites](#prerequisites) section, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -74,7 +74,7 @@ To configure application-specific parameters for a simplified RVIE report, follo
 
 ## Generate an RVIE report
 
-To generate any RVIE annex report, follow these steps.
+To generate any RVIE annex report, follow these steps:
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select a format listed in the [Prerequisites](#prerequisites) section.

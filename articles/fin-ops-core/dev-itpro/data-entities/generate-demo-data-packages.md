@@ -4,7 +4,9 @@ description: Learn how to use demo data packages to generate data for your syste
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 10/29/2025
+ms.custom: 
+  - bap-template
+ms.date: 04/03/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -16,14 +18,14 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-In previous releases, demo data was delivered as a database. In Microsoft Dynamics 365 Finance, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
+In previous releases, demo data was delivered as a database. In Microsoft Dynamics 365 Finance, Enterprise edition 7.3, a subset of demo data is released as data packages. You can find these packages in the Shared asset library in Microsoft Dynamics Lifecycle Services. You can load these packages into an empty environment.
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
-- The download times are faster.
-- You can import just the data packages that you require.
-- You can edit the spreadsheets to customize the data for your customers.
-- Updated demo data can be provided quickly through LCS.
+- Faster download times.
+- Import only the data packages that you require.
+- Edit the spreadsheets to customize the data for your customers.
+- Quickly provide updated demo data through Lifecycle Services.
 
 > [!NOTE]
 > The demo data packages aren't yet a full replacement for the demo database that is currently provided.
@@ -34,20 +36,20 @@ The demo data packages are designed to be layered on top of each other, as shown
 
 :::image type="content" source="./media/demodatapackages_layers.png" alt-text="Screenshot of demo data packages layered structure diagram.":::
 
-However, the global information for one demo scenario might have different requirements than the global information for another demo scenario. For example, the dimensions for one scenario interfere with the dimensions for another scenario. In this case, a separate global information package is created, and only packages that are related to that global information can be layered on top of the package.
+However, the global information for one demo scenario might have different requirements than the global information for another demo scenario. For example, the dimensions for one scenario interfere with the dimensions for another scenario. In this case, you create a separate global information package, and only packages that are related to that global information can be layered on top of the package.
 
-For example, there's currently a commercial system and shared package as well as a separate public sector system and shared package that can't be used together.
+For example, there's currently a commercial system and shared package as well as a separate public sector system and shared package that you can't use together.
 
 ### System and Shared package
 
-The base package, System and Shared, is the foundation for all other packages. This package creates legal entities, loads the global address book, and adds other shared information. It must be loaded first to support all the remaining packages. The package is named **100-System and Shared.zip**.
+The base package, System and Shared, is the foundation for all other packages. This package creates legal entities, loads the global address book, and adds other shared information. You must load it first to support all the remaining packages. The package is named **100-System and Shared.zip**.
 
-After the System and Shared package is loaded, you'll see one or more of the following legal entities.
+After you load the System and Shared package, you see one or more of the following legal entities.
 
 | Legal entity | Description |
 |--------------|-------------|
-| HQUS | The US-based headquarters for your demo company. This company is based on the original USMF data, but it has been changed to remove the manufacturing focus in the name. It includes setup information that is intended for US companies. |
-| HQEU | The non-US-based headquarters for your demo company. This company is based on the original DEMF data, but it has been changed to remove the manufacturing focus in the name. It includes setup information that is intended for non-US companies. |
+| HQUS | The US-based headquarters for your demo company. This company is based on the original USMF data, but it removes the manufacturing focus in the name. It includes setup information that is intended for US companies. |
+| HQEU | The non-US-based headquarters for your demo company. This company is based on the original DEMF data, but it removes the manufacturing focus in the name. It includes setup information that is intended for non-US companies. |
 | CONS | A small consolidations company. |
 | PICH | A process industries company that is focused on chemicals. |
 | PIFB | A process industries company that is focused on food and beverages. |
@@ -56,9 +58,9 @@ After the System and Shared package is loaded, you'll see one or more of the fol
 
 The Financials data packages contain data for the general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting for a single company. The names of these data packages consist of **200-Financials** followed by the legal entity that the packages are intended for. For example, the Financials data package for the HQUS legal entity is named **200-Financials-HQUS.zip**.
 
-At least two financial companies are required for cross-company tasks such as centralized payments. To facilitate cross-company tasks, all customers and vendors have been added to each legal entity. The CONS legal entity is required if you want to do consolidations.
+At least two financial companies are required for cross-company tasks such as centralized payments. To facilitate cross-company tasks, add all customers and vendors to each legal entity. The CONS legal entity is required if you want to do consolidations.
 
-The Financials data packages also have five inventory products to support the creation of invoices that can move through the accounts receivable and accounts payable processes. These items use a minimum of inventory and product functionality to support those processes. However, you no longer have to set up products when you want to demonstrate only Financials functionality. More complete products are added when you import the Supply chain data packages.
+The Financials data packages also include five inventory products to support the creation of invoices that can move through the accounts receivable and accounts payable processes. These items use a minimum of inventory and product functionality to support those processes. However, you no longer have to set up products when you want to demonstrate only Financials functionality. More complete products are added when you import the Supply chain data packages.
 
 ### Expense management
 
@@ -70,28 +72,28 @@ The Project management and accounting data packages contain data for project acc
 
 ### Supply chain
 
-The Supply chain data packages contain data for inventory management, product information, procurement and sourcing, sales and marketing, quality management, warehouse management, transportation management, production control, process manufacturing, costing, and master planning for a single company. Because of the large number of entities, the Supply chain packages for some companies have been split into two packages. You must load both packages to complete the supply chain scenarios. However, you can load these packages as two separate projects.
+The Supply chain data packages contain data for inventory management, product information, procurement and sourcing, sales and marketing, quality management, warehouse management, transportation management, production control, process manufacturing, costing, and master planning for a single company. Because of the large number of entities, the Supply chain packages for some companies are split into two packages. You must load both packages to complete the supply chain scenarios. However, you can load these packages as two separate projects.
 
-These names of these data packages consist of **300-Supply chain** followed by the legal entity that the packages are intended for. For example, the Supply chain data package for the PICH legal entity is named **300-Supply chain-PICH.zip**. The supply chain package for the HQUS legal entity is split into packages that are named **300-Supply chain 1 of 2-HQUS.zip** and **300-Supply chain 2 of 2-HQUS.zip**.
+The names of these data packages consist of **300-Supply chain** followed by the legal entity that the packages are intended for. For example, the Supply chain data package for the PICH legal entity is named **300-Supply chain-PICH.zip**. The supply chain package for the HQUS legal entity is split into packages that are named **300-Supply chain 1 of 2-HQUS.zip** and **300-Supply chain 2 of 2-HQUS.zip**.
 
 ## Demo data package releases
 
-The demo data packages are released through LCS and are specific to a release. The contents of a given package are subject to change as we add more demo scenarios and tune the packages.
+Microsoft releases the demo data packages through Lifecycle Services, and they're specific to a release. The contents of a given package are subject to change as Microsoft adds more demo scenarios and tunes the packages.
 
 Package names include a release identifier. For example, for finance and operations 7.3, **Demo data-7.3-** precedes the package name that uses the previously described naming conventions. For example, the full name of the Financials package for the HQUS legal entity for finance and operations 7.3 is **Demo data-7.3-200-Financials-HQUS.zip**.
 
 ## Before you load the packages
 
-Before you load the data packages, you must manually follow these steps.
+Before you load the data packages, manually follow these steps:
 
 1. If you want to sign in as a specific user, change the user's email address to the sign-in address that you want to use. You can make this change in the **User information** data entity spreadsheet or, after you load data, on the **Users** page (**System administration** &gt; **Users**).
 1. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this article.
-1. If you aren't using the en-us locale, you might need to alter the source data format to match the format the packages were built on.
-Once you've loaded a data entity, select into the source data format column, which should be specified as value = Excel. From the next page, again select Excel. From within the source data formats page, the bottom FastTab is regional settings. Change the language locale to en-us if it isn't specified as en-us. After loading packages, you can change it back to its original non en-us value.
+1. If you're not using the en-us locale, you might need to alter the source data format to match the format the packages were built on.
+1. Once you load a data entity, select into the source data format column, which should be specified as value = Excel. From the next page, again select Excel. From within the source data formats page, the bottom FastTab is regional settings. Change the language locale to en-us if it isn't specified as en-us. After loading packages, you can change it back to its original non en-us value.
 
 ## Load the packages
 
-The data packages must be loaded into a specific legal entity in a specific order. The number before the name of the package gives you guidance about the order that the data must be loaded in. For example, you must import **100-System and Shared.zip** before you can load the Financials package for the HQUS legal entity, **200-Financials-HQUS.zip**. Then, to add Supply chain data to the HQUS legal entity, you can load **300-Supply chain 1 of 2-HQUS.zip** and **300-Supply chain 2 of 2-HQUS.zip**.
+You must load the data packages into a specific legal entity in a specific order. The number before the name of the package shows you the order for loading the data. For example, you must import **100-System and Shared.zip** before you can load the Financials package for the HQUS legal entity, **200-Financials-HQUS.zip**. Then, to add Supply chain data to the HQUS legal entity, you can load **300-Supply chain 1 of 2-HQUS.zip** and **300-Supply chain 2 of 2-HQUS.zip**.
 
 Follow these steps to load the packages.
 
@@ -101,13 +103,13 @@ Follow these steps to load the packages.
 1. Enter a name for the job. For example, enter **Import shared information**.
 1. Select **Add file**.
 1. Select **Upload and add**, and browse to the data package that you want to import. You must start with the System and Shared data package.
-1. Select the data package, and wait for the data to be loaded.
-1. After the data is loaded, close the dialog box, and then select **Import**.
+1. Select the data package, and wait for the data to load.
+1. After the data loads, close the dialog box, and then select **Import**.
 1. Repeat steps 5 through 8 for every package that you want to load. Be sure to switch to the legal entity that the data package is intended for.
 
 ### Loading package combinations
 
-The following packages can be loaded. When you import any package except the System and Shared package, you must be in the legal entity that is listed in the package name. The System and Shared package can be loaded from any legal entity. However, it's typically loaded from the default company, DAT.
+You can load the following packages. When you import any package except the System and Shared package, you must be in the legal entity that the package name lists. You can load the System and Shared package from any legal entity. However, you typically load it from the default company, DAT.
 
 Commercial Data
 
@@ -136,41 +138,41 @@ Public Sector data
 | 200 - PSUS Financials | You can load this package alone. |
 | 900 - PSUS Financial transactions | Load this package after the PSUS Financials package. |
 
-To load the data correctly, you need to load one package at a time, import it, and then load the next one once the import is complete.
+To load the data correctly, load one package at a time, import it, and then load the next one once the import is complete.
 
 ### Troubleshooting and known issues
 
 > [!NOTE]
-> We discovered an issue with the Number sequence references entity that causes a random failure during import although the data in the packages is correct. If you see an error during the import of number sequence references, follow these steps to process the failed records.
+> An issue with the Number sequence references entity causes a random failure during import, even though the data in the packages is correct. If you see an error during the import of number sequence references, follow these steps to process the failed records.
 >
-> 1. Select on the name of the entity (**number sequence references**) to display a form that lists all of the records in the data package.
-> 1. Select on **Copy data to target**.
+> 1. Select the name of the entity (**number sequence references**) to display a form that lists all of the records in the data package.
+> 1. Select **Copy data to target**.
 > 1. Change the **Run for** value to **Criteria** and **Change Rows with previous errors** to **Yes**.
 > 1. Select **Ok** and then select **Run** on the form that appears.
 > 1. Repeat these steps until all records import without error.
 
 > [!NOTE]
-> There's currently an issue that some data entities have the same name, which can cause an import failure for **document types** and **date intervals** in the **200 - Financials** packages. If you see an error during the import of these entities extract them from the .zip file provided and manually import, making sure to use the **document types** pointing to **DocuTypeEntity** and **date intervals** pointing to **LedgerDateIntervalEntity**. Once these are imported, you can retry the failed records from the **200 - Financials** packages.
+> Currently, some data entities have the same name, which can cause an import failure for **document types** and **date intervals** in the **200 - Financials** packages. If you see an error during the import of these entities, extract them from the .zip file provided and manually import them. Make sure to use the **document types** pointing to **DocuTypeEntity** and **date intervals** pointing to **LedgerDateIntervalEntity**. After you import these entities, you can retry the failed records from the **200 - Financials** packages.
 
 ### After you load the packages
 
 Check **Ready to post** if anything needs to be posted. In some cases, individual demo scripts might recommend some setup be done prior to loading this data.
 
-In some cases, there might be data that you want to add because of a special scenario or a missing entity. Add that data after you've finished loading the data packages. You might also want to manually post transactions or add your own data packages to enhance the demo experience.
+In some cases, you might want to add data because of a special scenario or a missing entity. Add that data after you finish loading the data packages. You might also want to manually post transactions or add your own data packages to enhance the demo experience.
 
-After you load the data packages, you must also manually follow these steps.
+After you load the data packages, manually follow these steps:
 
 1. Start the workflow jobs. Select **System administration** &gt; **Workflow infrastructure configuration**, and then select **OK**.
 1. Set up policy precedence rules. Select **Procurement and sourcing** &gt; **Setup** &gt; **Policies** &gt; **Purchasing policies**, and then select **Parameters**. Then select **Companies**, and move it to the right column.
-1. Set up policy precedence before importing Expense packages. Select **Expense management** &gt; **Setup** &gt; **Policies** &gt; **Expense report**, and then select **Parameters**. then select **Companies**, and move it to the right column.
-1. After you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
+1. Set up policy precedence before importing Expense packages. Select **Expense management** &gt; **Setup** &gt; **Policies** &gt; **Expense report**, and then select **Parameters**. Then select **Companies**, and move it to the right column.
+1. After you load the Project management and accounting packages, run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job runs, automatic generation of team functionality is enabled in the project's work breakdown structure (WBS).
 1. Add Print management settings for each module.
 
 ## Transactions and automatic posting
 
-Many scenarios for demo data require that transactions be processed after they're imported. You can process transactions by using the Ready to post feature. This feature includes both a page that lets you define the transactions that should be posted, and an entity that lets you import the definitions and automatically run them.
+Many scenarios for demo data require processing transactions after import. Use the **Ready to post** feature to process transactions. This feature includes both a page that you use to define the transactions that should be posted, and an entity that you use to import the definitions and automatically run them.
 
-The following transaction types are supported when demo data is posted.
+The following transaction types support posting when demo data is posted.
 
 | Document | Entity document ID | Date filter | ID filters | Other filters |
 |----------|--------------------|-------------|------------|---------------|
@@ -189,7 +191,7 @@ The following transaction types are supported when demo data is posted.
 | Vendor invoice | VendorInvoice |Posting date | Invoice number | Approved, not in use, not yet |
 | Vendor payment journal | VendorPaymentJournal | Transaction date | Journal number | Not posted, not workflow, not system blocked |
 
-For journals that support date ranges, the Ready to post process examines all the journal lines for a date that falls in the specified range. If any line in the journal falls in the date range, the search is stopped, and the whole batch is posted.
+For journals that support date ranges, the **Ready to post** process examines all the journal lines for a date that falls in the specified range. If any line in the journal falls in the date range, the search stops, and the whole batch is posted.
 
 ### The Ready to post process
 
@@ -203,25 +205,25 @@ The Ready to post feature uses a batch to monitor the list of transaction types 
 1. Select **Add line** to add a transaction type.
 1. Select the transaction target. For journals, the target is **Post**. For other transactions, the target depends on the transaction type.
 1. Specify a start date and an end date (that is, a date range) to limit the transactions that are processed (when available).
-1. Specify a "from" document and a "to" document (that is, a document range) to limit the transactions that will be processed (when available).
+1. Specify a "from" document and a "to" document (that is, a document range) to limit the transactions that are processed (when available).
 1. Select **Add line** to add more transaction types. You can use the same type on multiple lines.
-1. Select **Mark ready to post**. The batch status is changed from **Open** to **Ready**, and the posting monitor starts to process each line.
-1. If you want to process a document immediately, select **Process documents**. The batch status is changed to **Scheduled**, and a batch is started without using the posting monitor.
+1. Select **Mark ready to post**. The batch status changes from **Open** to **Ready**, and the posting monitor starts to process each line.
+1. If you want to process a document immediately, select **Process documents**. The batch status changes to **Scheduled**, and a batch starts without using the posting monitor.
 
-When the batch is running, the status is changed to **In Progress**.
+When the batch is running, the status changes to **In Progress**.
 
-When the batch is completed, the status is changed to **Successful** or **Error**, depending on the results. The posting results are shown at the bottom of the page.
+When the batch completes, the status changes to **Successful** or **Error**, depending on the results. The posting results appear at the bottom of the page.
 
 #### Use the Ready to post entity to process transactions
 
-An entity that is named **Demo data posting** lets you import a list of document types that you want to post. The entity creates a demo data job on the **Ready to post** page. If you've started the posting monitor, the transactions are automatically posted after you import the data by using the entity.
+An entity named **Demo data posting** lets you import a list of document types that you want to post. The entity creates a demo data job on the **Ready to post** page. If you start the posting monitor, the transactions are automatically posted after you import the data by using the entity.
 
 The following columns appear in the **Ready to post** entity.
 
 | Column | Purpose |
 |--------|---------|
 | DemoDataJob | The unique ID of the demo data job to run. Use the same ID for every line that belongs to a single job. |
-| LineNum | The order that the tasks will be run in. |
+| LineNum | The order that the tasks run in. |
 | DataProjectId | A link to the data project that contains the **Ready to post** entity. This information is for export only. |
 | DemoDataJobStatus | The status of your demo data project. This information is for export only. |
 | Document | The document type to process. |
@@ -234,6 +236,6 @@ The following columns appear in the **Ready to post** entity.
 
 Insert the **Ready to post** entity at the end of your data project, after all the transaction entities. In the data project, specify a sequence number that's larger than the sequence numbers that are used for the transactions entities.
 
-If you have a mixture of transactions, some of which should be processed whereas others shouldn't be processed, you must use date and document ranges to limit the transactions that are processed. If you can't use the ranges, you must use a separate data package for the unposted transactions.
+If you have a mixture of transactions, some of which should be processed whereas others shouldn't be processed, use date and document ranges to limit the transactions that are processed. If you can't use the ranges, use a separate data package for the unposted transactions.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -173,11 +173,11 @@ Each customer's total outstanding credit is calculated as the sum of outstanding
 To use the credit limit feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Credit limit check on work order dispatch* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature named *Credit limit check on work order dispatch* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Configure the credit limit check
 
-To configure the credit limit check, follow these steps.
+To configure the credit limit check, follow these steps:
 
 1. Go to **Asset Management** \> **Setup** \> **Asset management parameters**.
 1. Open the **Work orders** tab.
@@ -189,7 +189,7 @@ To configure the credit limit check, follow these steps.
 
 ### Set customer credit limits
 
-To set the credit limit for a customer, follow these steps.
+To set the credit limit for a customer, follow these steps:
 
 1. Go to **Credit and collections** \> **Customers** \> **All customers**.
 1. Select and open a customer record (if you're following the examples provided previously, you could choose *US-013* (*Pelican Wholesales*)).

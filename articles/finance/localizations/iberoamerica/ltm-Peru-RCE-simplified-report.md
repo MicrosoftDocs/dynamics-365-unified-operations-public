@@ -2,7 +2,7 @@
 title: Configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru
 description: Learn how to configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 06/03/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -50,7 +50,7 @@ Before you can generate and print the reports, the following prerequisites must 
 
 ## Configure application-specific parameters for the simplified annex including the Excel output
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. In the **LTM Tax report** group, for each format that is listed in the [Prerequisites](#prerequisites) section, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -70,7 +70,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate an RCE annex report
 
-To generate any RCE annex report including the Excel output, follow these steps.
+To generate any RCE annex report including the Excel output, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select a format listed in the [Prerequisites](#prerequisites) section.

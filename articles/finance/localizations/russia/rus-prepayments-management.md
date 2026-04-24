@@ -58,7 +58,7 @@ To create a posting profile for prepayments, follow the procedure in [Customer p
 
 ### Set up a sales tax payable ledger account
 
-To set up a sales tax payable ledger account, follow these steps.
+To set up a sales tax payable ledger account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Ledger posting groups**.
 1. Select a separate ledger posting group for advances that are received.
@@ -74,7 +74,7 @@ tax](../../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md).
 
 After a prepayment is registered, a facture is automatically created. The facture number is generated based on the number sequence that is set up in the General ledger parameters.
 
-To set up a number sequence for the facture, follow these steps.
+To set up a number sequence for the facture, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Prepayment facture** reference.
@@ -84,7 +84,7 @@ To set up a number sequence for the facture, follow these steps.
 
 ### Set up accounts receivable parameters for prepayments
 
-To set up accounts receivable parameters for prepayments, follow these steps.
+To set up accounts receivable parameters for prepayments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Ledger and sales tax** tab, on the **Payment** FastTab, set the **Sales tax on prepayment journal voucher** option to **Yes** to specify that sales tax must be calculated when the prepayment is posted. (This option is a standard field.)
@@ -110,7 +110,7 @@ To set up accounts receivable parameters for prepayments, follow these steps.
 
 ### Register a prepayment from a customer and print the facture
 
-To register a prepayment from a customer and print the facture, follow these steps.
+To register a prepayment from a customer and print the facture, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Payments** \> **Customer payment journal**.
 1. Select **New** to create a payment journal, and then, in the **Name** field, select the payment name.
@@ -141,7 +141,7 @@ To register a prepayment from a customer and print the facture, follow these ste
 
 If unsettled payment documents (that is, part of the payment amount) remain at the end of reporting period, the payment documents (or part of the documents) must be converted to prepayments and included in the sales book.
 
-To transform a customer payment to a customer prepayment, follow these steps.
+To transform a customer payment to a customer prepayment, follow these steps:
 
 1. In Dynamics 365 Finance, post a customer payment in standard way.
 1. Go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Sales books journal**.
@@ -170,7 +170,7 @@ Additionally, you can transform a prepayment back to a payment. In this case, th
 
 At the end of the reporting period, you can view prepayments and create factures for any prepayments that factures weren't automatically created for at the posting stage.
 
-To create factures at the end of a reporting period, follow these steps.
+To create factures at the end of a reporting period, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Facture creation for prepayment**. The **Facture create** page shows the prepayments that factures weren't automatically created for.
 1. Select the **Mark** checkbox for every prepayment that you want to create a facture for. (Alternatively, use the **Mark All** button on the Action Pane to select all the prepayments on the page.) Then, on the Action Pane, select **Create facture**.
@@ -181,7 +181,7 @@ To create factures at the end of a reporting period, follow these steps.
 
 ### Settle a customer prepayment with a facture for shipment
 
-To settle a customer prepayment with a facture for shipment, follow these steps.
+To settle a customer prepayment with a facture for shipment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. On the Action Pane, on the **Collect** tab, in the **Settle** group, select **Facture and payment settlement** to open the **Facture and payment settlement** page. This page lets you filter invoices by facture number.
@@ -225,7 +225,7 @@ To create a posting profile for prepayments, follow the procedure in [Vendor pos
 
 ### Set up an incoming tax payment ledger account
 
-To set up an incoming tax payment ledger account, follow these steps.
+To set up an incoming tax payment ledger account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Ledger posting groups**.
 1. Select a separate ledger posting group for advances that are paid.
@@ -236,7 +236,7 @@ To set up an incoming tax payment ledger account, follow these steps.
 
 ### Set up accounts payable parameters for prepayments
 
-To set up accounts payable parameters for prepayments, follow these steps.
+To set up accounts payable parameters for prepayments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 1. On the **Ledger and sales tax** tab, on the **Payment** FastTab, set the **Sales tax on prepayment in payment journal** option to **No** to prevent taxes from being posted before the incoming facture is registered.
@@ -258,14 +258,14 @@ To set up accounts payable parameters for prepayments, follow these steps.
 
 ### Set up a number sequence for incoming VAT processing
 
-To set up a number sequence for incoming VAT processing, follow these steps.
+To set up a number sequence for incoming VAT processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **VAT processing voucher** reference.
 
 ### Register a supplier's facture for a prepayment
 
-To register a supplier's facture for a prepayment, follow these steps.
+To register a supplier's facture for a prepayment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Vendor payment journal**, and create a journal.
 1. On the Action Pane, select **Lines**, and then, on the **List** tab, on the payment journal line, set the **Date**, **Account**, **Description**, **Debit**, **Offset account type**, **Offset account**, and **Currency** fields.
@@ -297,7 +297,7 @@ The generated facture will be reflected on the **Facture journal** page, where t
 
 After you register a prepayment facture, the VAT amount from the prepayment facture can be processed for deduction.
 
-To process incoming VAT on the received facture for the prepayment, follow these steps.
+To process incoming VAT on the received facture for the prepayment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Purchase book** \> **Incoming VAT processing**.
 1. On the Action Pane, select **Select** to find the required facture.
@@ -321,7 +321,7 @@ When a facture for the purchase of goods is received from a seller, the customer
 
 Additional actions are required after the incoming facture for goods, work, and services is posted. For example, if a seller makes a delivery, the incoming invoice and the incoming facture for this delivery are updated, and the invoice and the previously registered prepayment are settled.
 
-To recover previously accepted deductible VAT on prepayment, follow these steps.
+To recover previously accepted deductible VAT on prepayment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Purchase book** \> **Incoming VAT processing**.
 1. On the Action Pane, select **Select** to find the required payment, and then select **OK** to add lines for processing.

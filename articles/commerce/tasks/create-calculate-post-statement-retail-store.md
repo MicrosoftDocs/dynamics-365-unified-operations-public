@@ -1,12 +1,11 @@
 --- 
 title: Create, calculate, and post statements for a retail store
-description: This article describes the manual steps for creating, calculating, and posting a statement for a store. 
+description: Learn how to manually create, calculate, and post a statement for a store in Microsoft Dynamics 365 Commerce. 
 author: jashanno
-ms.date: 08/29/2018
+ms.date: 02/06/2026
 ms.topic: how-to 
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable   
-audience: Application User 
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-06-30 
@@ -17,26 +16,30 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the manual steps for creating, calculating, and posting a statement for a store. There are also batch jobs that can be configured for the same tasks. The steps for configuring and running the batch jobs can be found in other articles. To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics 365 Commerce. This recording uses the USRT company in demo data.
+This article describes the manual steps for creating, calculating, and posting a statement for a store in Microsoft Dynamics 365 Commerce.
 
-1. Select **Store financials** from the home page.
-2. Select **New statement**.
-3. In the **Store number** field, select a option from the drop-down.
-4. Select **OK**.
-5. The **Setup** group has the settings that control what transactions are included in the statement and how they are grouped into statement lines. You can open the **Setup** group and change these settings, or you can use the defaults.  
-    - The **Statement method** field defines how the statement lines will be grouped.  
+You can also configure batch jobs for the same tasks.
+
+To complete the following procedure, you must have transactions that were completed in POS and then pulled into Dynamics 365 Commerce. The procedure uses the USRT company in demo data.
+
+To create, calculate, and post statements for a retail store, follow  these steps:
+
+1. In Commerce headquarters, go to **Store financials**.
+1. Select **New statement**.
+1. In the **Store number** field, select an option from the drop-down list.
+1. Select **OK**.
+1. The **Setup** group has the settings that control what transactions are included in the statement and how they're grouped into statement lines. You can open the **Setup** group and change these settings, or you can use the default settings.  
+    - The **Statement method** field defines how the statement lines are grouped.  
     - Select a staff member or a register in the **staff/register** field if you want to calculate a statement only for the specific staff member or register.  
-6. In the **Closing method** field, select an option.
-7. Select **Calculate statement** from the Action Pane.
-8. Select **Yes**.
-    - After calculating the statement, there should be lines created with total amounts for each payment method and statement method that was used.  
+1. In the **Closing method** field, select an option.
+1. Select **Calculate statement** from the Action Pane.
+1. Select **Yes**.
+        - After calculating the statement, the system creates lines with total amounts for each payment method and statement method you used.    
     - Enter a counted amount in each line if it needs to be entered or updated. The counted field is populated with amounts from tender declarations done in POS.  
-9. Select **Post statement** from the Action Pane.
-10. Select **Close**.
-11. Close the pane.
-12. At the home page, select **Store financials**.
-13. Select the **Posted statements** tab.
-
-
+1. Select **Post statement** from the Action Pane.
+1. Select **Close**.
+1. Close the pane.
+1. At the home page, select **Store financials**.
+1. Select the **Posted statements** tab.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

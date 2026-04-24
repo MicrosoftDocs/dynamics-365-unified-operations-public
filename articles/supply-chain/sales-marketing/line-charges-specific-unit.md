@@ -26,7 +26,7 @@ The *Specific unit* and *Specific unit match* categories are supported for sales
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.38 or later.
-- The feature that is named *Unit of measure for line level charges* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, it's mandatory and can't be turned off.
+- The feature named *Unit of measure for line level charges* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, it's mandatory and can't be turned off.
 
 ## Example scenario: Set up line-level auto charges for specific units and unit matching
 
@@ -79,7 +79,7 @@ Follow these steps to set up a line charge in auto charges.
 
 ### Use the auto charges on a sales order
 
-The charges can now be automatically applied to a sales quotation line or a sales order line. To apply the charges to a sales order line, follow these steps.
+The charges can now be automatically applied to a sales quotation line or a sales order line. To apply the charges to a sales order line, follow these steps:
 
 1. Go to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
 1. On the Action Pane, select **New** to create a sales order.

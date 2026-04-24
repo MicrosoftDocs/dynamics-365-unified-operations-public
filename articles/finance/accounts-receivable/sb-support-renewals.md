@@ -34,7 +34,7 @@ For example, a company might offer the following support and renewal levels.
 | Silver | 20% | 14% |
 | Bronze | 15% | 10% |
 
-To create a support or renewal level, follow these steps.
+To create a support or renewal level, follow these steps:
 
 1. On the **Support and renewal levels** page, select **New**.
 2. In the **Support level** field, enter a unique name.
@@ -66,7 +66,7 @@ Before you use the support and renewal functionality, the following tasks must b
 2. On the **Item setup** page, associate an item with support and renewal items. This task is required only if you want to set up default values for support and/or renewal items.
 3. On the **Recurring contract billing parameters** page, specify the default support and renewal settings for new billing schedules.
 
-To apply different support levels to items and update renewal information, follow these steps.
+To apply different support levels to items and update renewal information, follow these steps:
 
 1. On the **All sales orders** page, create a sales order.
 2. On the **Sales order lines** FastTab, add an item.
@@ -89,7 +89,7 @@ The support and renewal process is available for the sales order only. When you 
 
 On the **Support and renewal audit** page, you can review the details of the billing schedule lines that are created from the renewal item on a sales order. This option is available when the billing schedule line item is a renewal item.
 
-To edit support and renewal information for a billing schedule line, follow these steps.
+To edit support and renewal information for a billing schedule line, follow these steps:
 
 1. On the **All billing schedules** page, select the billing schedule number.
 2. In the **Billing schedule lines** section, select a line, and then select **Support and renewal**.

@@ -41,7 +41,7 @@ For this scenario, you must have demo data installed, and you must use the **USM
 
 ### Turn on the auto-update shipment functionality
 
-To turn on the auto-update shipment functionality, follow these steps.
+To turn on the auto-update shipment functionality, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 2. Select warehouse **24**.
@@ -51,7 +51,7 @@ After you change the value to **Always**, any increases or decreases in the quan
 
 ### Change the wave template so that load lines aren't automatically processed
 
-To configure the wave template so that it doesn't automatically process load lines, follow these steps.
+To configure the wave template so that it doesn't automatically process load lines, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
 2. Select wave template **24 Shipping default**.
@@ -62,7 +62,7 @@ It's important that no work be automatically created and released as part of the
 
 ### Create a sales order
 
-To create a sales order, follow these steps.
+To create a sales order, follow these steps:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 2. Select customer **US-003**.
@@ -75,7 +75,7 @@ Because you changed the wave template in the previous procedure, no load or work
 
 ### Decrease the quantity on a sales order line
 
-To decrease the quantity on a sales order line, follow these steps.
+To decrease the quantity on a sales order line, follow these steps:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 2. Select the sales order that you just released to the warehouse.
@@ -84,7 +84,7 @@ To decrease the quantity on a sales order line, follow these steps.
 
 ### Increase the quantity on a sales order line
 
-To increase the quantity on a sales order line, follow these steps.
+To increase the quantity on a sales order line, follow these steps:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 2. Select the sales order that you previously released to the warehouse.
@@ -100,7 +100,7 @@ Although the quantity on the load line was increased from 8 to 12, only eight it
 
 ### Add a sales order line
 
-To add a sales order line, follow these steps.
+To add a sales order line, follow these steps:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 2. Select the sales order that you previously released to the warehouse.
@@ -114,7 +114,7 @@ Because the sales order line that you just added to the existing shipment hasn't
 
 ### Process a wave
 
-To process the wave, follow these steps.
+To process the wave, follow these steps:
 
 1. Go to **Warehouse management \> Outbound waves \> Shipment waves \> All waves**.
 2. Select the wave that you previously created.

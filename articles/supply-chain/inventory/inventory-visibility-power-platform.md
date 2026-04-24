@@ -36,7 +36,7 @@ Before you can use UI version 2 to work with the Inventory Visibility app, the f
 
 ## <a name="ui-version"></a>Switch between user interface versions
 
-Regardless of which version of the user interface is active, you can switch to the other version at any time. However, only the settings that you apply in the active version of the UI have any effect. To switch between the two versions, follow these steps.
+Regardless of which version of the user interface is active, you can switch to the other version at any time. However, only the settings that you apply in the active version of the UI have any effect. To switch between the two versions, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select one of the following options:
@@ -50,7 +50,7 @@ The Inventory Visibility service is deployed on Azure Service Fabric in multiple
 
 `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
-To obtain your service endpoint and runtime configuration, follow these steps.
+To obtain your service endpoint and runtime configuration, follow these steps:
 
 1. On the [UI version 2](#ui-version) navigation pane, select **Admin settings**.
 1. On the **Show service details** tile, select **Manage**.
@@ -189,7 +189,7 @@ The following table shows the features that Inventory Visibility offers. Each of
 | [Inventory summary](inventory-visibility-inventory-summary.md) | Periodically sync your raw inventory summary from the cache to Dataverse. This feature isn't compatible with advanced warehouse items. Enable either this feature or the *Preloaded on-hand* feature. Don't enable both features. |
 | [Preload on-hand](inventory-visibility-preload-on-hand.md) | Periodically preload the inventory summary to Dataverse from a query result. The query result can be configured with the dimensions that are most relevant to your business. This feature is compatible with advanced warehouse items. Enable either this feature or the *Inventory summary* feature. Don't enable both features. |
 
-By default, all these features are disabled. To turn a feature on or off, and to make related configuration settings, follow these steps.
+By default, all these features are disabled. To turn a feature on or off, and to make related configuration settings, follow these steps:
 
 1. On the [UI version 2](#ui-version) navigation pane, select **Feature management**.
 1. Find the tile for the feature that you want to turn on or off, and then select **Manage**.

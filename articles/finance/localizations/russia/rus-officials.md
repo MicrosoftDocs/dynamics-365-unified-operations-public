@@ -27,7 +27,7 @@ Use the **Officials** page to set up the officials who are involved in the trans
 
 You must set up records for the officials who are responsible for transportation on both sides of the transactions. Therefore, you must set up records for the officials both on the customer or vendor side, and on the company side. This information is required when you generate and print a transportation invoice and a job ticket that are based on a bill of lading.
 
-To set up officials who generate transportation invoices and job tickets, follow these steps.
+To set up officials who generate transportation invoices and job tickets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 1. To set up records for the officials who are responsible for transportation on outgoing documents for customers, on the **Sales orders** tab, select either **Invoice** or **Invoice - credit-note**, and then follow these steps:
@@ -56,7 +56,7 @@ This procedure applies to features in the **Inventory management** module. It do
 
 Use the **Officials** page to set up the officials who are involved in the item counting process for the **Counting list (INV-5)** report.
 
-To set up officials for the counting list (INV-5) report, follow these steps.
+To set up officials for the counting list (INV-5) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 1. On the **Inventory** tab, in the left pane, select **Counting list (INV-5)**.
@@ -75,7 +75,7 @@ This procedure applies to features in the **Inventory management** module. It do
 
 Use the **Officials** page to set up officials for the **Counting act (INV-6)** report. You can identify the company officials who are involved in the item counting process for the report.
 
-To set up officials for the Counting act INV-6 report, follow these steps.
+To set up officials for the Counting act INV-6 report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 1. On the **Inventory** tab, in the left pane, select **Counting act (INV-6)**.
@@ -88,7 +88,7 @@ To set up officials for the Counting act INV-6 report, follow these steps.
 
 Use the **Officials** page to set up the members and chair of the commission that is responsible for the NVFA Statement of writing-off (No. MB-8) report.
 
-To set up officials for the NVFA statement of writing-off (No. MB-8) report, follow these steps.
+To set up officials for the NVFA statement of writing-off (No. MB-8) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 1. On the **Fixed assets** tab, select **NVFA Statement of writing-off (No. MB-8)**.
@@ -100,7 +100,7 @@ To set up officials for the NVFA statement of writing-off (No. MB-8) report, fol
 
 Use the **Shipment** page to set up officials for the **Issue slip (M-15)** report that is generated for bailment.
 
-To set up officials for the Issue slip (M-15) report, follow these steps.
+To set up officials for the Issue slip (M-15) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Periodic** \> **Transfer orders**.
 1. On the **Transfer orders** form, select a transfer order for bailment.

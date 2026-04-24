@@ -4,6 +4,8 @@ description: Learn about the LedgerJournalHeader data entity in finance and oper
 author: edupont04
 ms.author: epegors
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 02/02/2024
 ms.collection: FastTrack
 ---

@@ -2,7 +2,7 @@
 title: Configure printing for Goods and Services sales Submission Form 607
 description: Learn about the required configuration for printing Goods and Services sales Submission Form 607 for the Dominican Republic.
 author: Cpicon85
-ms.date: 04/14/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -44,7 +44,7 @@ Before you can generate the **Format 607 DO** report, the following prerequisite
 
 ## Configure application-specific parameters
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspace**, and select **Reporting configurations**.
 1. In the **LTM Tax** report, select **Format 607 DO**. Then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -69,7 +69,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Run the Format 607 DO report
 
-To generate the **Format 607 DO** report, follow these steps.
+To generate the **Format 607 DO** report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select a value.

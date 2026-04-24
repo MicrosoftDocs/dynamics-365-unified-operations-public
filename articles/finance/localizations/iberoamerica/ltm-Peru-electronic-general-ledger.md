@@ -2,7 +2,7 @@
 title: Set up and generate an electronic general ledger report for Peru
 description: Learn how to set up and generate an electronic general ledger report for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 04/17/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -48,7 +48,7 @@ Before you can print an electronic general ledger report for Peru, the following
 
 ## Print the ledger posting report for Peru
 
-To print the ledger posting report for Peru, follow these steps.
+To print the ledger posting report for Peru, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **LATAM** \> **General Ledger**.
 1. In the **Report ID** field, select the corresponding report/service ID.

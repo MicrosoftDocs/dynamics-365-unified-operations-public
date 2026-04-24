@@ -2,9 +2,9 @@
 title: Propose and post the impairment amount on a cash generating unit
 description: Learn how to propose and post impairment amounts that are recognized and calculated on a cash generating unit for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -17,15 +17,15 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to propose and post impairment amounts that are recognized and calculated on a cash generating unit for Japan in Microsoft Dynamics 365 Finance.
+This article explains how to propose and post impairment amounts that you recognize and calculate on a cash generating unit for Japan in Microsoft Dynamics 365 Finance.
 
-For Japan, after the calculation of the impairment amount, you can propose and post it in a fixed asset journal.
+For Japan, after you calculate the impairment amount, you can propose and post it in a fixed asset journal.
 
-Before completing the following procedure you must create and confirm a recognition test, and also select the **Fixed Asset** configuration key.
+Before you complete the following procedure, you must create and confirm a recognition test, and also select the **Fixed Asset** configuration key.
 
 The procedure uses the demo data company JPMF.
 
-To propose and post impairment amounts recognized and calculated on a cash generating unit, follow these steps.
+To propose and post impairment amounts that you recognize and calculate on a cash generating unit, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.
@@ -36,7 +36,5 @@ To propose and post impairment amounts recognized and calculated on a cash gener
 1. In the **Impairment test ID** field, enter the ID of the recognition test that you want to post.
 1. Select **OK**.
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

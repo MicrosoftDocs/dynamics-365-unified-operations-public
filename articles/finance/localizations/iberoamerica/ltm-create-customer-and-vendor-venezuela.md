@@ -2,7 +2,7 @@
 title: Create customer and vendor records with an address in Venezuela
 description: Learn how to create customer and vendor records that have an address in Venezuela.
 author: Fhernandez0088
-ms.date: 05/15/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -32,7 +32,7 @@ Before you create records for customers and vendors who are in Venezuela, the fo
 
 ## Create a record for a customer in Venezuela
 
-To create a record for a customer in Venezuela, follow these steps.
+To create a record for a customer in Venezuela, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select **New**.
 1. In the **Type** field, select **Organization** for **Sociedad** or **Person** for **Persona natural**.
@@ -60,7 +60,7 @@ To create a record for a customer in Venezuela, follow these steps.
 
 ## Create a record for a vendor in Venezuela
 
-To create a record for a vendor in Venezuela, follow these steps.
+To create a record for a vendor in Venezuela, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select **New**.
 1. In the **Type** field, select **Organization** for **Sociedad** or **Person** for **Persona natural**.

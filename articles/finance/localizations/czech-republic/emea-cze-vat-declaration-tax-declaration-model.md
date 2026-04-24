@@ -3,10 +3,10 @@ title: VAT declaration (Czech Republic)
 description: Learn about the value-added tax (VAT) declaration for the Czech Republic, including overviews on taxable transactions, VAT deductions, and and tax calculations.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
-ms.date: 06/10/2025
+ms.date: 04/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Czech Republic
 ms.search.validFrom: 2017-07-20
@@ -324,9 +324,9 @@ For more information, see [Download Electronic reporting configurations from Lif
 To automatically generate a VAT declaration, you should associate sales tax codes in the application and report fields in the ER configuration.
 
 1. Go to **Workspaces \> Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VAT declaration XML (CZ)** configuration, and then select **Configurations \> Application specific parameters setup**.
-3. On the **Lookups** FastTab, select the **\$ReportFieldLookup** lookup.
-4. On the **Conditions** FastTab, associate the sales tax codes and report fields.
+1. Select the **VAT declaration XML (CZ)** configuration, and then select **Configurations \> Application specific parameters setup**.
+1. On the **Lookups** FastTab, select the **\$ReportFieldLookup** lookup.
+1. On the **Conditions** FastTab, associate the sales tax codes and report fields.
 
     | Column          | Description |
     |-----------------|-------------|
@@ -334,7 +334,7 @@ To automatically generate a VAT declaration, you should associate sales tax code
     | Tax code (Code) | <p>Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate report field.</p><p>We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one report field.</p> |
     | Name            | <p>If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one report field, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note). |
 
-5. To prevent the format from throwing an exception error message because of missed setup when you run the report, create the following line as the last line in the parameters.
+1. To prevent the format from throwing an exception error message because of missed setup when you run the report, create the following line as the last line in the parameters.
 
     | Lookup result | Tax code (Code) | Name          |
     |---------------|-----------------|---------------|
@@ -345,24 +345,24 @@ To automatically generate a VAT declaration, you should associate sales tax code
     >
     > If you create this line, make sure that you set up parameters for all sales tax codes in the system. Then, if any sales tax codes are missing in the setup, tax transactions that use those codes won't be collected for VAT declaration. If you don't create this line, and any tax transactions use sales tax codes that aren't configured in the application-specific parameters, you will receive an error message when you run the report.
 
-6. In the **State** field, select **Completed**, and review the parameters.
+1. In the **State** field, select **Completed**, and review the parameters.
 
-    [![Conditions FastTab on the Application specific parameters page.](../media/Pic1_ReportFieldLookup.png)](../media/Pic1_ReportFieldLookup.png)
+    :::image type="content" source="../media/Pic1_ReportFieldLookup.png" alt-text="Screenshot of the Conditions FastTab on the Application specific parameters page.":::
 
-7. On the Action Pane, select **Export** to export the parameters to an XML file.
-8. Select the **VAT declaration Excel (CZ**) configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (CZ)**. 
-9. In the **State** field, select **Completed**.
-10. Select the **VAT control statement XML (CZ)** configuration, and then select the same values that you selected in step 4.
-11. In the **State** field, select **Completed**.
+1. On the Action Pane, select **Export** to export the parameters to an XML file.
+1. Select the **VAT declaration Excel (CZ**) configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (CZ)**. 
+1. In the **State** field, select **Completed**.
+1. Select the **VAT control statement XML (CZ)** configuration, and then select the same values that you selected in step 4.
+1. In the **State** field, select **Completed**.
 
 ### Set up parameters for subject codes 
 
 To automatically classify a transaction by using the subject code of a reverse charge in sections A1 and B1 of the VAT control statement, associate pairs of reverse charge item groups and item sales tax groups in the application, and then supply the codes to the ER configuration.
 
 1. Go to **Workspaces \> Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VAT control statement XML (CZ)** configuration, and then select **Configurations \> Application specific parameters setup**.
-3. On the **Lookups** FastTab, select **\$SubjectCodeLookup**.
-4. On the **Conditions** FastTab, associate reverse charge item groups and subject codes.
+1. Select the **VAT control statement XML (CZ)** configuration, and then select **Configurations \> Application specific parameters setup**.
+1. On the **Lookups** FastTab, select **\$SubjectCodeLookup**.
+1. On the **Conditions** FastTab, associate reverse charge item groups and subject codes.
 
     | Column                              | Description |
     |-------------------------------------|-------------|
@@ -370,29 +370,29 @@ To automatically classify a transaction by using the subject code of a reverse c
     | Reverse charge code (Code)          | Select the reverse charge item group to associate with the selected subject code. For some transactions, if you post incoming reverse charge transactions that don't have a reference to the product, you must associate the item sales tax group with the subject code. In this case, select **\*Blank\*** in this field. To prevent an exception error from being generated when transactions don't have a reverse charge, the application-specific parameters must always include one line where the **Lookup result** field is set to **Other** and the **Reverse charge code (Code)** field is set to **\*Blank\***. This line must be the last line in the setup. |
     | Item sales tax group (TaxItemGroup) | Select the item sales tax group to associate with the selected subject code. You must select a specific item sales tax group if you don't have an appropriate reverse charge item group that will be used when you post incoming reverse charge transactions that don't have a reference to the product (for example, transactions from the vendor invoice journal). Otherwise, for all lines, you can select **\*Not blank\*** in this column. |
 
-5. To prevent the format from failing and throwing an exception error message because of missed setup, set up the following line as the last line.
+1. To prevent the format from failing and throwing an exception error message because of missed setup, set up the following line as the last line.
 
     | Lookup result | Reverse charge code (Code) | Item sales tax group (TaxItemGroup) | Comment |
     |---------------|----------------------------|-------------------------------------|---------|
     | Other         | \*Blank\*                  | \*Not blank\*                       | This line must be set up to prevent an error message from being generated for transactions that don't have a reverse charge code. |
 
-[![Lookup for the subject code.](../media/Pic2_SubjectCodeLookup.png)](../media/Pic2_SubjectCodeLookup.png)
+:::image type="content" source="../media/Pic2_SubjectCodeLookup.png" alt-text="Screenshot of the lookup for the subject code.":::
 
 ### Set up parameters for fulfillment mode codes
 
 To automatically classify a transaction by using the fulfillment mode code in section A4 of the VAT control statement, associate sales tax codes in the application and fulfillment subjects mode codes in the ER configuration.
 
 1. Go to **Workspaces \> Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VAT control statement XML (CZ)** configuration, and then select **Configurations \> Application specific parameters setup**.
-3. On the **Lookups** FastTab, select **\$FulfillmentModeCodeLookup**.
-4. On the **Conditions** FastTab, associate the sales tax codes and fulfillment subjects mode codes.
+1. Select the **VAT control statement XML (CZ)** configuration, and then select **Configurations \> Application specific parameters setup**.
+1. On the **Lookups** FastTab, select **\$FulfillmentModeCodeLookup**.
+1. On the **Conditions** FastTab, associate the sales tax codes and fulfillment subjects mode codes.
 
     | Column          | Description |
     |-----------------|-------------|
     | Lookup result   | Select a fulfillment code. For the full list of codes, see the [Section A4: Taxable sales with amounts above 10,000 including VAT and all VAT adjustments made for customer bad debts](#sectionA4) section earlier in this article. |
     | Tax code (Code) | Select the sales tax code. |
 
-5. If you have transactions that use only normal filling, you can create the following line in the setup. Otherwise, set up the same line that you set up as the last line of the preceding setup, to prevent the format from failing and throwing an exception error message because of missed setup.
+1. If you have transactions that use only normal filling, you can create the following line in the setup. Otherwise, set up the same line that you set up as the last line of the preceding setup, to prevent the format from failing and throwing an exception error message because of missed setup.
 
     | Lookup result | Tax code (Code) |
     |---------------|-----------------|
@@ -403,9 +403,9 @@ To automatically classify a transaction by using the fulfillment mode code in se
 A sales transaction can automatically be classified as fulfilling the condition that there was no obligation to issue a tax document, so that the transaction should be shown in section A5, regardless of the threshold. To automatically classify a sales transaction in this way, associate pairs of sales tax groups and sales tax codes from the application with **Yes** or **No** conditions in the ER configuration.
 
 1. Go to **Workspaces \> Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VAT control statement XML (CZ)** configuration, and then select **Configurations \> Application specific parameters setup**.
-3. On the **Lookups** FastTab, select **\$NoTaxDocument**.
-4. On the **Conditions** FastTab, associate sales tax groups and sales tax codes.
+1. Select the **VAT control statement XML (CZ)** configuration, and then select **Configurations \> Application specific parameters setup**.
+1. On the **Lookups** FastTab, select **\$NoTaxDocument**.
+1. On the **Conditions** FastTab, associate sales tax groups and sales tax codes.
 
     | Column          | Description |
     |-----------------|-------------|
@@ -413,32 +413,32 @@ A sales transaction can automatically be classified as fulfilling the condition 
     | Sales tax group | Select the sales tax group to associate with the customer if there is no obligation to issue tax document. If you can determine the condition by using only a sales tax code, select **\*Not blank\***. |
     | Tax code (Code) | Select the sales tax code to assign to the transaction if there is no obligation to issue a tax document. If you can determine conditions by using only a sales tax group, select **\*Not blank\***. |
 
-5. To prevent the format from failing and throwing an exception because of missed setup, create the following line as the last line in the setup.
+1. To prevent the format from failing and throwing an exception because of missed setup, create the following line as the last line in the setup.
 
     | Lookup result | Sales tax group (TaxGroup) | Tax code (Code) |
     |---------------|----------------------------|-----------------|
     | No            | \*Not blank\*              | \*Not blank\*   |
 
-6. Review the parameters.
+1. Review the parameters.
 
-    [![Lookup for the condition that there is no obligation to issue a tax document.](../media/Pic3_NoTaxDocumentLookup.png)](../media/Pic3_NoTaxDocumentLookup.png)
+    :::image type="content" source="../media/Pic3_NoTaxDocumentLookup.png" alt-text="Screenshot of the lookup for the condition that there is no obligation to issue a tax document.":::
 
-7. Update the **State** field for all the parameters to **Completed**.
+1. Update the **State** field for all the parameters to **Completed**.
 
 ## Download and import the Data management package that has example settings for Electronic messages
 
 The data package that includes example settings contains Electronic message settings that are used to generate the VAT declaration and the VAT control statement, and to preview the VAT declaration in Excel. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
 1. In LCS, in the Shared asset library, select **Data package** as the asset type, and then download the **CZ VAT EM declaration package** package. The downloaded file is named **CZ VAT declaration EM package.zip**.
-2. In the **Data management** workspace, select **Import**.
-3. In the **Job details** section, set the following values:
+1. In the **Data management** workspace, select **Import**.
+1. In the **Job details** section, set the following values:
 
     - In the **Name** field, enter a name for the job.
     - In the **Data source format** field, select **Package**.
 
-4. In the **Upload data file** field, select **Upload**, and then select the **CZ VAT declaration EM package.zip** file that you downloaded.
-5. After the data entities are uploaded, select **Import**.
-6. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**, and validate the electronic message processing that you imported.
+1. In the **Upload data file** field, select **Upload**, and then select the **CZ VAT declaration EM package.zip** file that you downloaded.
+1. After the data entities are uploaded, select **Import**.
+1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**, and validate the electronic message processing that you imported.
 
     | Processing            | Processing code | Description                                 |
     |-----------------------|-----------------|---------------------------------------------|
@@ -448,7 +448,7 @@ The data package that includes example settings contains Electronic message sett
 ## Configure Electronic messages
 
 1. Go to **Tax \> Setup \> Electronic messages \> Additional fields**, and select the line that has an additional field.
-2. On the **Value** FastTab, add the following values for the field.
+1. On the **Value** FastTab, add the following values for the field.
 
     | Additional field     | Value |
     |----------------------|--------|
@@ -457,8 +457,8 @@ The data package that includes example settings contains Electronic message sett
     | TaxAuthorityToFile   | Enter the code of the tax authority that the declaration file will be sent to. |
     | ProRataCoef          | Enter the pro rata coefficient that was applied during the year. If you must apply a pro rata coefficient in the declaration, enter the decimal value between 0 and 1, and use a comma as the separator. |
 
-3. Go to **Tax \> Setup \> Electronic messages \> Electronic message processing**, and select the line that has processing. 
-4. On the **Message additional fields** FastTab, set up the default values for declaration parameters.
+1. Go to **Tax \> Setup \> Electronic messages \> Electronic message processing**, and select the line that has processing. 
+1. On the **Message additional fields** FastTab, set up the default values for declaration parameters.
 
     | Processing                                               | Additional field         | Comment | XML element |
     |----------------------------------------------------------|--------------------------|---------|-------------|
@@ -471,9 +471,9 @@ The data package that includes example settings contains Electronic message sett
     | DPHDP3 (VAT declaration)                                 | \<ProRataCoef\>          | Select the pro rata coefficient that you entered earlier. | koef\_p20\_nov |
     | DPHDP3 (VAT declaration), DPHKH1 (VAT control statement) | \<NullDeclaration\>      | Select **No**, which is the default value. This field indicates whether you submit a null declaration. You should be able to change the default value during declaration processing. | <p>**VAT declaration:**</p><ul><li>Trans = "N" if Yes</li><li>Trans = "A" if No</li></ul><p>**VAT control statement:**</p><ul><li>vyzva\_odp = "B" if Yes</li></ul> |
 
-5. Go to **Tax \> Setup \> Electronic messages \> Populate records actions**, select the line, and then select **Edit query**.
-6. Use the filter to specify the settlement periods that should be included in the report. 
-7. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
+1. Go to **Tax \> Setup \> Electronic messages \> Populate records actions**, select the line, and then select **Edit query**.
+1. Use the filter to specify the settlement periods that should be included in the report. 
+1. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
 ## Configure system parameters and master records
 
@@ -494,12 +494,12 @@ You should complete the following setup before you generate a VAT declaration.
 For more information about how to set up and use reverse charge functionality, see [Reverse charge VAT](../global/emea-reverse-charge.md).
 
 1. Go to **Tax \> Setup \> Sales tax \> Reverse charge item groups**, and create a group.
-2. On the **Setup** FastTab, in the **Sales/purchase** field, select **Purchase**.
-3. Create a line, and select an item code, item group, or procurement category code to associate the purchase with the new reverse charge item group. 
-4. In the **Item code** field, select **Table**, **Group**, or **Category**.
-5. If you selected **Table** or **Group** in the **Item code** field, in the **Item relation** field, select an item code or item group, respectively.
-6. If you selected **Category** in the **Item code** field, in the **Category** field, select a procurement category.
-7. On the **Setup** FastTab, in the **Sales/purchase** field, select **Sales**, and associate the item, item group, or procurement category as described in steps 4 through 6.
+1. On the **Setup** FastTab, in the **Sales/purchase** field, select **Purchase**.
+1. Create a line, and select an item code, item group, or procurement category code to associate the purchase with the new reverse charge item group. 
+1. In the **Item code** field, select **Table**, **Group**, or **Category**.
+1. If you selected **Table** or **Group** in the **Item code** field, in the **Item relation** field, select an item code or item group, respectively.
+1. If you selected **Category** in the **Item code** field, in the **Category** field, select a procurement category.
+1. On the **Setup** FastTab, in the **Sales/purchase** field, select **Sales**, and associate the item, item group, or procurement category as described in steps 4 through 6.
 
 ## Generate a VAT declaration
 
@@ -507,22 +507,22 @@ For more information about how to set up and use reverse charge functionality, s
 
 The following steps are applicable to the example electronic message processing that is available from LCS.
 
-To generate the XML file for the VAT declaration, follow these steps.
+To generate the XML file for the VAT declaration, follow these steps:
 
 1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
-2. In the left pane, select the report format to generate. For example, select **DPHDP3**.
-3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
-4. Select the message line that is created, enter a description, and then specify the start and end dates for the declaration.
-5. On the **Messages** FastTab, select **Collect data**, and then select **OK**.
-6. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, any sales tax payments of the selected period that weren't included in any other message of the same processing are included.
-7. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the declaration dialog box.
-8. On the **Message additional fields** FastTab, validate the value of the \<**NullDeclaration\>** option. Set it to **Yes** if you're reporting a null declaration.
-9. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select the **Ready to generate** action, and then select **OK**. Validate that the message status is changed to **Ready to generate**.
-10. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview DPHDP3 in Excel**, and then select **OK**. 
-11. In the **Electronic reporting parameters** dialog box, enter the parameters of the VAT declaration, and then select **OK**. For information about the parameters that are available, see the table in step 14. 
-12. If you generate an Excel file together with a VAT declaration preview, select **Attachments** in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts that are in the Excel document.
-13. On the **Messages** FastTab, select **Generate report**. In the **Run processing** dialog box, select **Generate DPHDP3** to generate an XML file, and then select **OK**.
-14. In the **Electronic reporting parameters** dialog box, enter the following information.
+1. In the left pane, select the report format to generate. For example, select **DPHDP3**.
+1. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
+1. Select the message line that is created, enter a description, and then specify the start and end dates for the declaration.
+1. On the **Messages** FastTab, select **Collect data**, and then select **OK**.
+1. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, any sales tax payments of the selected period that weren't included in any other message of the same processing are included.
+1. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the declaration dialog box.
+1. On the **Message additional fields** FastTab, validate the value of the \<**NullDeclaration\>** option. Set it to **Yes** if you're reporting a null declaration.
+1. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select the **Ready to generate** action, and then select **OK**. Validate that the message status is changed to **Ready to generate**.
+1. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview DPHDP3 in Excel**, and then select **OK**. 
+1. In the **Electronic reporting parameters** dialog box, enter the parameters of the VAT declaration, and then select **OK**. For information about the parameters that are available, see the table in step 14. 
+1. If you generate an Excel file together with a VAT declaration preview, select **Attachments** in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts that are in the Excel document.
+1. On the **Messages** FastTab, select **Generate report**. In the **Run processing** dialog box, select **Generate DPHDP3** to generate an XML file, and then select **OK**.
+1. In the **Electronic reporting parameters** dialog box, enter the following information.
 
     | Field                                                                                                                               | Description |
     |-------------------------------------------------------------------------------------------------------------------------------------|-------------|
@@ -537,30 +537,30 @@ To generate the XML file for the VAT declaration, follow these steps.
     | Value of exempt sales not included in calculation of coefficient, Value of taxable sales not included in calculation of coefficient | <p>For the December declaration, specify the amounts of exempt sales and taxable sales, respectively, that aren't included in the calculation of the new coefficient, if your company had these sales during the year.</p><p>This amount will be exported to row 51 of the declaration.</p> |
     | Value of annual settlement of tax deduction                                                                                         | <p>For the December declaration, specify the amount of annual tax deduction adjustment that is caused by application of the new pro rata coefficient.</p><p>This amount will be exported to row 53 of the declaration.</p> |
 
-15. Select **OK**. When the declaration in XML format has been generated, the status of the message is changed to **Generated**.
+1. Select **OK**. When the declaration in XML format has been generated, the status of the message is changed to **Generated**.
 
-    [![Electronic message that has Generated status.](../media/PicEM.jpg)](../media/PicEM.jpg)
+    :::image type="content" source="../media/PicEM.jpg" alt-text="Screenshot of the Electronic message that has Generated status.":::
 
     If an error occurs while the report is being generated, the status of the message is changed to **Technical error**.
 
-16. Select **Attachments**, and then select **Open** to open the file. Review the file. If it looks correct, update the status to **Approved**. Select **Update status**, and then, in the **Update status** dialog box, select **Approve**, and then select **OK**.
+1. Select **Attachments**, and then select **Open** to open the file. Review the file. If it looks correct, update the status to **Approved**. Select **Update status**, and then, in the **Update status** dialog box, select **Approve**, and then select **OK**.
 
     If you must delete a message, you can select **Allow delete** and then select **OK**.
 
     If the message status is **Technical error**, you can update the message status to one of the initial statuses: **Created** or **Ready to generate**.
 
-17. On the **Action log** FastTab, review all user actions for the current message.
-18. When you've finished generating the VAT declaration, manually send the generated file to the tax authority.
+1. On the **Action log** FastTab, review all user actions for the current message.
+1. When you've finished generating the VAT declaration, manually send the generated file to the tax authority.
 
 ### Generate a VAT control statement from Electronic messages
 
-To generate the XML file for the VAT control statement, follow these steps.
+To generate the XML file for the VAT control statement, follow these steps:
 
 1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
-2. In the left pane, select the report format to generate. For example, select **DPHKH1**.
-3. Follow steps 3 through 9 of the previous procedure to create the message and update its status to **Ready to generate**.
-4. On the **Messages** FastTab, select **Generate report**. In the **Run processing** dialog box, select **Generate DPHKH1** to generate the XML file, and then select **OK**.
-5. In the **Electronic reporting parameters** dialog box, enter the following information.
+1. In the left pane, select the report format to generate. For example, select **DPHKH1**.
+1. Follow steps 3 through 9 of the previous procedure to create the message and update its status to **Ready to generate**.
+1. On the **Messages** FastTab, select **Generate report**. In the **Run processing** dialog box, select **Generate DPHKH1** to generate the XML file, and then select **OK**.
+1. In the **Electronic reporting parameters** dialog box, enter the following information.
 
     | Field                                                                                                               | Description |
     |---------------------------------------------------------------------------------------------------------------------|-------------|
@@ -571,7 +571,7 @@ To generate the XML file for the VAT control statement, follow these steps.
 ### Generate a VAT declaration in Excel from the Report sales tax for settlement period periodic task.
 
 1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report sales tax for settlement period**.
-2. Enter the following information.
+1. Enter the following information.
 
     | Field                     | Description |
     |---------------------------|-------------|
@@ -579,12 +579,12 @@ To generate the XML file for the VAT control statement, follow these steps.
     | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated (the **Sales tax payment version** field is set to **Original**).</li><li>**Corrections** – Generate a report for sales tax transactions of all the subsequent sales tax payments for the period (the **Sales tax payment version** field is set to **Latest corrections**).</li><li>**Total list** – Generate a report for all sales tax transactions for the period, including the original and all corrections.</li></ul> |
     | From date                 | Select the first date of the reporting period. |
 
-3. Select **OK**, and review the Excel file that is generated.
+1. Select **OK**, and review the Excel file that is generated.
 
 ### Generate VAT declaration in Excel from Sales tax payments
 
 1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Settle and post sales tax**.
-2. Enter the following information.
+1. Enter the following information.
 
     | Field                     | Description |
     |---------------------------|-------------|
@@ -592,8 +592,8 @@ To generate the XML file for the VAT control statement, follow these steps.
     | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – Generate the original sales tax payment for the settlement period.</li><li>**Latest corrections** – Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.</li></ul> |
     | From date                 | Select the first date of the reporting period. |
 
-3. Select **OK**. 
-4. Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax payments**, and review the sales tax payment line that is generated.
+1. Select **OK**. 
+1. Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax payments**, and review the sales tax payment line that is generated.
 
 ## Run a VAT declaration for several legal entities
 
@@ -602,11 +602,11 @@ To use the formats to report the VAT declaration for a group of several legal en
 ### Set up Electronic messages to collect data from several legal entities
 
 1. Go to **Workspaces \> Feature management**, find **Cross-company queries for the populate records actions** in the list, and then select **Enable now** to turn on the feature.
-2. Go to **Tax \> Setup \> Electronic messages \> Populate records actions**.
+1. Go to **Tax \> Setup \> Electronic messages \> Populate records actions**.
 
     On the **Populate records action** page, in the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
 
-3. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting, and enter the following information.
+1. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting, and enter the following information.
 
     | Field                  | Description |
     |------------------------|-------------|
@@ -620,7 +620,7 @@ To use the formats to report the VAT declaration for a group of several legal en
     | Company                | Select the ID of the legal entity. |
     | User query             | The check box is automatically selected when you define criteria by selecting **Edit query**. |
 
-4. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
+1. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
 
 When this setup is completed, the **Collect data** function on the **Electronic messages** page will collect sales tax payments from all legal entities that you define here.
 
@@ -631,25 +631,25 @@ The following prerequisites must be in place before you can complete this proced
 - The **Date of VAT register** field on the **Sales tax** tab of the **General ledger parameters** page must have the same value for all the legal entities that you collect data for.
 - A sales tax payment must be posted for the reporting period in all legal entities.
 
-To generate a VAT declaration for multiple legal entities, follow these steps.
+To generate a VAT declaration for multiple legal entities, follow these steps:
 
 1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
-2. In the left pane, select the report format to generate. For example, select **DPHDP3**.
-3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
-4. Select the message line that was created, enter a description, and then specify the start and end dates for the declaration.
-5. On the **Messages** FastTab, select **Collect data**, and then select **OK**.
-6. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. On each line, the **Company** field indicates the legal entity where the sales tax payment is processed.
-7. To review the sales tax payments, select **Original document**.
-8. To exclude some sales tax payments from processing, select **Delete**.
-9. Process the declaration. After the file is generated, review the report, and verify that it contains all the tax transactions that are included in the selected sales tax payments.
+1. In the left pane, select the report format to generate. For example, select **DPHDP3**.
+1. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
+1. Select the message line that was created, enter a description, and then specify the start and end dates for the declaration.
+1. On the **Messages** FastTab, select **Collect data**, and then select **OK**.
+1. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. On each line, the **Company** field indicates the legal entity where the sales tax payment is processed.
+1. To review the sales tax payments, select **Original document**.
+1. To exclude some sales tax payments from processing, select **Delete**.
+1. Process the declaration. After the file is generated, review the report, and verify that it contains all the tax transactions that are included in the selected sales tax payments.
 
 ## Attach a file or a note to the VAT declaration
 
 You can attach a file or a text note to the XML file for the VAT declaration. Attached files will be exported as Base64 binary file attachments to the **Prilohy** XML element. Attached text notes will be exported to the **VetaR** sections of the XML file. 
 
 1. Go to **Organization administration \> Document management \> Active document tables**, and then, in the **Table name** field, select **Sales tax payment**.
-2. Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax payments**, select a line that has a sales tax payment, and then select the **Attachments** button in the upper-right corner.
-3. On the **Attachments for Sales tax payments** page, follow one of these steps:
+1. Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax payments**, select a line that has a sales tax payment, and then select the **Attachments** button in the upper-right corner.
+1. On the **Attachments for Sales tax payments** page, follow one of these steps:
 
     - To attach a file, select **New \> File**, and add a file attachment.
     - To add a text note, select **New \> Note**, and then enter information in the **Description** and **Notes** fields.
@@ -659,25 +659,25 @@ You can attach a file or a text note to the XML file for the VAT declaration. At
 ### Write off customer bad debts by using the Write off function
 
 1. On the **All customers** page, create a customer.
-2. On the **All free text invoices** page, create and post a free text invoice.
-3. On the **Sales tax codes** page, create a sales tax code that is named **WRITEOFF21**. This sales tax code will be used to write off bad debts at 21 percent of the VAT rate.
-4. Go to **General ledger \> Ledger setup \> Journal setup \> Journal names**, and create a general ledger journal that is named **WriteOff**. In the **Journal type** field, select **Daily**.
-5. Go to **Accounts receivable \> Setup \> Account receivable parameters**, and then, on the **Collections** tab, on the **Write-off** FastTab, in the **Write-off journal** field, select the **WriteOff** journal. Set the **Separate sales tax** option to **Yes**.
-6. Go to **Accounts receivable \> Customers \> All customers**, select the customer record that you created in step 1, and then select **Collections \> Write off**. In the **Write off** dialog box, set the **Write-off date**, **Reason code**, and **Description** fields, and then select **OK**.
-7. Go to **General ledger \> Journal entries \> General journals**, select the **writeOff** journal that was automatically generated, and then select **Lines**. Review the three lines that were created:
+1. On the **All free text invoices** page, create and post a free text invoice.
+1. On the **Sales tax codes** page, create a sales tax code that is named **WRITEOFF21**. This sales tax code will be used to write off bad debts at 21 percent of the VAT rate.
+1. Go to **General ledger \> Ledger setup \> Journal setup \> Journal names**, and create a general ledger journal that is named **WriteOff**. In the **Journal type** field, select **Daily**.
+1. Go to **Accounts receivable \> Setup \> Account receivable parameters**, and then, on the **Collections** tab, on the **Write-off** FastTab, in the **Write-off journal** field, select the **WriteOff** journal. Set the **Separate sales tax** option to **Yes**.
+1. Go to **Accounts receivable \> Customers \> All customers**, select the customer record that you created in step 1, and then select **Collections \> Write off**. In the **Write off** dialog box, set the **Write-off date**, **Reason code**, and **Description** fields, and then select **OK**.
+1. Go to **General ledger \> Journal entries \> General journals**, select the **writeOff** journal that was automatically generated, and then select **Lines**. Review the three lines that were created:
 
     - first line has **Customer** account type and the total invoice amount that includes VAT
     - second line has **Ledger** account type and the invoice amount without VAT
     - third line has **Ledger** account type and the VAT amount
 
-8. Select the line that has the VAT amount. Then, on the **General** tab, in the **Sales tax code** field, select the **WRITEOFF21** sales tax code that you created in step 3.
-9. Post the journal, and then review the posted sales tax transaction:
+1. Select the line that has the VAT amount. Then, on the **General** tab, in the **Sales tax code** field, select the **WRITEOFF21** sales tax code that you created in step 3.
+1. Post the journal, and then review the posted sales tax transaction:
 
     - The **Sales tax direction** field should be set to **Sales tax payable**.
     - The **Amount origin** field should equal the invoice amount without VAT.
     - The **Actual sales tax amount** field should equal the VAT amount.
 
-10. In the **Electronic reporting** workspace, select the configuration that has the VAT declaration format, select **Configurations \> Application specific parameters \> Set up**, and then create the following lines.
+1. In the **Electronic reporting** workspace, select the configuration that has the VAT declaration format, select **Configurations \> Application specific parameters \> Set up**, and then create the following lines.
 
     | Lookup result                         | Tax code (Code) | Name              |
     |---------------------------------------|-----------------|-------------------|
@@ -689,11 +689,11 @@ You can attach a file or a text note to the XML file for the VAT declaration. At
 The following procedure provides an example that shows how to write off vendor bad debts.
 
 1. Go to **Accounts payable \> Vendors \> All vendors**, and create a vendor record.
-2. Create and post a vendor invoice.
-3. On the **Sales tax codes** page, review the settings of the **WRITEOFF21** sales tax code. Alternatively, create a new vendor before you write off the vendor bad debts.
-4. Create a sales tax group that is named **WRITEOFF**. Then, on the **Setup** FastTab, add a line that uses the **WRITEOFF21** sales tax code.
-5. On the **Items sales tax groups** page, select the appropriate item sales tax group. Then, on the **Setup** FastTab, add a line that uses the **WRITEOFF21** sales tax code.
-6. On the **Daily general journal** page, create a line for manually writing off the vendor invoice, and enter the following information.
+1. Create and post a vendor invoice.
+1. On the **Sales tax codes** page, review the settings of the **WRITEOFF21** sales tax code. Alternatively, create a new vendor before you write off the vendor bad debts.
+1. Create a sales tax group that is named **WRITEOFF**. Then, on the **Setup** FastTab, add a line that uses the **WRITEOFF21** sales tax code.
+1. On the **Items sales tax groups** page, select the appropriate item sales tax group. Then, on the **Setup** FastTab, add a line that uses the **WRITEOFF21** sales tax code.
+1. On the **Daily general journal** page, create a line for manually writing off the vendor invoice, and enter the following information.
 
     | Field               | Description |
     |---------------------|-------------|
@@ -702,14 +702,14 @@ The following procedure provides an example that shows how to write off vendor b
     | Account             | Select the vendor account that you just created. |
     | Debit               | Enter the write-off amount. |
 
-7. On the **General** tab, select the **WRITEOFF** sales tax group and the item sales tax group that you selected in step 5.
-8. Settle the open vendor invoice, and post the journal. Then review the following information in the posted sales tax transaction:
+1. On the **General** tab, select the **WRITEOFF** sales tax group and the item sales tax group that you selected in step 5.
+1. Settle the open vendor invoice, and post the journal. Then review the following information in the posted sales tax transaction:
 
     - The **Sales tax direction** field should be set to **Sales tax receivable**.
     - The value of the **Amount origin** field should equal the invoice amount without VAT.
     - The value of the **Actual sales tax amount** field should equal the VAT amount.
 
-9. In the **Electronic reporting** workspace, select the configuration that has the VAT declaration format, select **Configurations \> Application specific parameters \> Set up**, and then create the following lines.
+1. In the **Electronic reporting** workspace, select the configuration that has the VAT declaration format, select **Configurations \> Application specific parameters \> Set up**, and then create the following lines.
 
     | Lookup result                       | Tax code (Code) | Name                 |
     |-------------------------------------|-----------------|----------------------|
@@ -721,7 +721,7 @@ The following procedure provides an example that shows how to write off vendor b
 The following procedure provides an example that shows how to post a correction of VAT deduction (row 45).
 
 1. On the **Sales tax codes** page, create a sales tax code that is named **CORR**. This code will be used specifically for corrections to the VAT deduction that is reflected in row 45 of the VAT declaration.
-2. Go to **General ledger \> Journal entries \> General journals**, and select the daily journal. Then select **Lines**, and create the following journal line.
+1. Go to **General ledger \> Journal entries \> General journals**, and select the daily journal. Then select **Lines**, and create the following journal line.
 
     | Field               | Description |
     |---------------------|-------------|
@@ -733,14 +733,14 @@ The following procedure provides an example that shows how to post a correction 
     | Offset account type | Select **Ledger**. |
     | Offset account      | Select the ledger account that is used to offset the posting of the VAT deduction. |
  
-3. On the **General** tab, in the **Sales tax code** field, select the **CORR** sales tax code that you just created.
-4. Post the journal, and then review the following information in the posted sales tax transaction:
+1. On the **General** tab, in the **Sales tax code** field, select the **CORR** sales tax code that you just created.
+1. Post the journal, and then review the following information in the posted sales tax transaction:
 
     - The **Sales tax direction** field should be set to **Sales tax receivable**.
     - The **Amount origin** field should be set to **0** (zero).
     - The value of the **Actual sales tax amount** field should equal the debit amount.
 
-5. In the **Electronic reporting** workspace, select the configuration that has the VAT declaration format, select **Configurations \> Application specific parameters \> Set up**, and then create the following lines.
+1. In the **Electronic reporting** workspace, select the configuration that has the VAT declaration format, select **Configurations \> Application specific parameters \> Set up**, and then create the following lines.
 
     | Lookup result          | Tax code (Code) | Name                 |
     |------------------------|-----------------|----------------------|

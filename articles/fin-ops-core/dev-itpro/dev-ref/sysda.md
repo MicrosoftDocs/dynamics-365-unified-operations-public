@@ -4,7 +4,7 @@ description: Learn how to create extensible queries and data access statements b
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 08/20/2021
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -18,24 +18,24 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains how to create extensible queries by using the SysDa application programming interface (API).
 
-The extensible SysDa API provides almost all the data access possibilities that are available in X++. In fact, the APIs are wrappers around the code that the X++ compiler would generate. Therefore, use of the SysDa classes carries no overhead, unlike use of the **QueryRun** object, for example. Additionally, the check that the X++ compiler does on data access statements is your responsibility. For example, you create a **where** clause that compares a globally unique identifier (GUID) to an integer. The X++ compiler would diagnose this clause as an error.
+The extensible SysDa API provides almost all the data access possibilities that are available in X++. In fact, the APIs are wrappers around the code that the X++ compiler generates. Therefore, use of the SysDa classes doesn't add any overhead, unlike use of the **QueryRun** object, for example. Additionally, you're responsible for ensuring the correctness of data access statements. For example, you create a **where** clause that compares a globally unique identifier (GUID) to an integer. The X++ compiler would diagnose this clause as an error.
 
-The SysDa APIs include an extensive set of APIs for creating custom queries. However, there is a smaller set of types that drives the primary query activities:
+The SysDa APIs include an extensive set of APIs for creating custom queries. However, a smaller set of types drives the primary query activities:
 
-+ Select: **SysDaQueryObject**, **SysDaSearchObject**, and **SysDaSearchStatement**
-+ Update: **SysDaUpdateObject** and **SysDaUpdateStatement**
-+ Insert: **SysDaInsertObject** and **SysDaInsertStatement**
-+ Delete: **SysDaQueryObject**, **SysDaDeleteObject**, and **SysDaDeleteStatement**
+- Select: **SysDaQueryObject**, **SysDaSearchObject**, and **SysDaSearchStatement**
+- Update: **SysDaUpdateObject** and **SysDaUpdateStatement**
+- Insert: **SysDaInsertObject** and **SysDaInsertStatement**
+- Delete: **SysDaQueryObject**, **SysDaDeleteObject**, and **SysDaDeleteStatement**
 
-The following sections provide examples of each type of query and the customizations that it supports. The examples use a table that is named TestTable. This table has two fields: a string field that is named **stringField** and an integer field that is named **intField**.
+The following sections provide examples of each type of query and the customizations that it supports. The examples use a table named TestTable. This table has two fields: a string field named **stringField** and an integer field named **intField**.
 
 ## Select query
 
-To run a **select** query, follow these steps.
+To run a **select** query, follow these steps:
 
-1. Create and configure a **SysDaQueryObject** object that specifies the table instance that will contain the designated records.
-2. Create a **SysDaSearchObject** object, and pass the **SysDaQueryObject** object to the constructor.
-3. Iterate over the results of the query by passing the **SysDaSearchObject** object to the **SysDaSearchStatement.findNext()** method.
+1. Create and configure a **SysDaQueryObject** object that specifies the table instance that contains the designated records.
+1. Create a **SysDaSearchObject** object, and pass the **SysDaQueryObject** object to the constructor.
+1. Iterate over the results of the query by passing the **SysDaSearchObject** object to the **SysDaSearchStatement.findNext()** method.
 
 The following example finds all rows in TestTable where **intField** \<= **5**.
 
@@ -87,16 +87,17 @@ SysDaQueryObjectBuilder supports all four **JOIN** clauses:
 - EXISTS
 - NOT EXISTS JOIN
 
-It supports all 5 aggregation functions: namely,
+It supports all five aggregation functions:
+
 - COUNT
 - SUM
 - AVG
-- MIN 
+- MIN
 - MAX
 
 It supports WHERE clauses, and multiple WHERE clauses are ANDed.
 
-It supports all seven comparison expressions: namely,
+It supports all seven comparison expressions:
 
 - ==
 - \<\>
@@ -105,6 +106,7 @@ It supports all seven comparison expressions: namely,
 - \<
 - \<=
 - LIKE
+- IN
 
 It supports ORDER BY clauses.
 
@@ -172,10 +174,10 @@ SysDaQueryObjectBuilder::from(exampleTable)
 
 ## Update statement
 
-To run an **update** statement, follow these steps.
+To run an **update** statement, follow these steps:
 
 1. Create and configure a **SysDaUpdateObject** object.
-2. Update data by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object. Because updates modify the data in the database, you must wrap the call to **execute** in **ttsbegin** and **ttscommit** statements.
+1. Update data by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** method. Because updates modify the data in the database, wrap the call to **execute** in **ttsbegin** and **ttscommit** statements.
 
 The following example updates **stringField** to **"fifty"** for all rows where **intField** = **50**.
 
@@ -213,12 +215,12 @@ info("Updated value is: " + t1.stringField);
 
 ## Insert statement
 
-To run an **insert** statement, follow these steps.
+To run an **insert** statement, follow these steps:
 
 1. Create and configure a **SysDaInsertObject** object to specify which fields are updated during the insertion.
-2. Create and configure a **SysDaQueryObject** object that specifies the source of the rows to insert. The order of the fields in **SysDaQueryObject.projection()** must match the order of the fields in **SysDaInsertObject.fields()**.
-3. Assign the **SysDaQueryObject** object to the **SysDaInsertObject** object.
-4. Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.
+1. Create and configure a **SysDaQueryObject** object that specifies the source of the rows to insert. The order of the fields in **SysDaQueryObject.projection()** must match the order of the fields in **SysDaInsertObject.fields()**.
+1. Assign the **SysDaQueryObject** object to the **SysDaInsertObject** object.
+1. Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.
 
 The following example inserts rows where **intField** = **40** and **stringField** = **"en-us"** into TestTable.
 
@@ -272,11 +274,11 @@ info(any2Str(t1.intField) + ":" + t1.stringField);
 
 ## Delete statement
 
-To run a **delete** statement, follow these steps.
+To run a **delete** statement, follow these steps:
 
 1. Create and configure a **SysDaQueryObject** object to specify which rows to delete.
-2. Create a **SysDaDeleteObject** object, and pass the **SysDaQueryObject** object to the constructor.
-3. Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.
+1. Create a **SysDaDeleteObject** object, and pass the **SysDaQueryObject** object to the constructor.
+1. Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.
 
 The following example deletes rows where **intField** is an even number.
 
@@ -315,20 +317,48 @@ ttscommit;
 info("Number of rows deleted: " + any2Str(t.RowCount()));
 ```
 
+## IN keyword
+
+The SysDaInExpression class filters rows based on values from a list. It is a strongly typed container that is derived from the Array class.
+The following example filters rows where the **TransType** value is equal to either Sales or Cust.
+
+```xpp
+CustTrans custTrans;
+SysDaQueryObject qe = new SysDaQueryObject(custTrans);
+Array array = new Array(Types::Integer);
+
+array.value(1, LedgerTransType::Sales);
+array.value(2, LedgerTransType::Cust);
+
+qe.firstOnlyHint = SysDaFirstOnlyHint::FirstOnly10;
+qe.whereClause(new SysDaInExpression(
+    new SysDaFieldExpression(custTrans, fieldStr(CustTrans, TransType)),
+    new SysDaValueExpression(array.pack())));
+
+SysDaSearchObject so = new SysDaSearchObject(qe);
+SysDaSearchStatement ss = new SysDaSearchStatement();
+
+while (ss.findNext(so))
+{
+    info(strFmt('%1 - %2', custTrans.AccountNum, custTrans.TransType));
+}
+
+//so.toString: WHILE SELECT FIRSTONLY10 FROM CustTrans WHERE (CustTrans.TransType in System.Object[])
+```
+
 ## Clauses
 
 SysDa queries support several clauses:
 
-+ **whereClause** – The **where** clause is constructed from objects that inherit from **SysDaQueryExpression**. Examples are **SysDaEqualsExpression**, **SysDaNotEqualsExpression**, and **SysDaLessThanExpression**. You can find the full list by filtering in Application Explorer.
-+ **orderByClause**
-+ **groupByClause**
-+ **joinClause** with **joinClauseKind**
-+ **joinedQuery**
-+ **settingClause**
+- **whereClause** – Construct the **where** clause from objects that inherit from **SysDaQueryExpression**. Examples include **SysDaEqualsExpression**, **SysDaNotEqualsExpression**, and **SysDaLessThanExpression**. To see the full list, filter in Application Explorer.
+- **orderByClause**
+- **groupByClause**
+- **joinClause** with **joinClauseKind**
+- **joinedQuery**
+- **settingClause**
 
 ## Troubleshooting
 
-You can use the **toString()** method on **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the statement that you're building.
-
+To view the statement you're building, use the **toString()** method on **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -32,7 +32,7 @@ To build out the Store Commerce app for Android or iOS with hardware station ext
   
 ## Build out the Store Commerce app for Android or iOS using the Store Commerce mobile SDK
 
-To build out the Store Commerce app for Android or iOS using the Store Commerce mobile software development kit (SDK), follow these steps.
+To build out the Store Commerce app for Android or iOS using the Store Commerce mobile software development kit (SDK), follow these steps:
 
 1. Navigate to the [Microsoft Lifecycle Services Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
 1. Under **Retail Self-service package**, download the latest Store Commerce for Android package (version 10.0.41 onwards for Android extensibility, version 10.0.44 onwards for iOS extensibility).

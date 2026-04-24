@@ -85,7 +85,7 @@ Performance and review of purchasing is supported through *procurement and accou
 ### Documentation resources
 
 - [Monitor consignment inventory using vendor collaboration](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
-- [Create a purchase order from a sales order](../sales-marketing/tasks/create-purchase-order-sales-order.md)
+- [Create purchase orders from sales orders](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 - [Create a consignment replenishment order](../inventory/tasks/create-consignment-replenishment-order.md)
 - [Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 - [Vendor posting profiles](../../finance/accounts-payable/vendor-posting-profiles.md)

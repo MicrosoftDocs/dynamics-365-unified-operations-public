@@ -22,7 +22,7 @@ This functionality can be used to track the progress of picking work. The featur
 
 To set up your visualizations, you create a collection of filters (views) and design each filter so that it shows a different type of analysis. You use the **Configure filters** page to design the filters.
 
-To set up an outbound workload visualization, follow these steps.
+To set up an outbound workload visualization, follow these steps:
 
 1. Go to **Warehouse management \> Warehouse monitoring reports \> Outbound workload visualization**.
 

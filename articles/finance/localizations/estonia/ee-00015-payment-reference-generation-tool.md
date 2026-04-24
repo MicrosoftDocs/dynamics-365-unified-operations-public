@@ -6,7 +6,7 @@ ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/11/2025
+ms.date: 04/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Estonia
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ The following procedures walk you through generating the payment references. The
 
 ## Specify a number sequence for payment references
 
-To specify a number sequence for payment references, follow these steps.
+To specify a number sequence for payment references, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Select the **Number sequences** tab.
@@ -32,14 +32,14 @@ To specify a number sequence for payment references, follow these steps.
 
 ## Create payment reference numbers
 
-To create payment reference numbers, follow these steps.
+To create payment reference numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Create payment reference numbers**.
-2. in the **Create payment reference numbers** field, select **Yes**.
-    > [!NOTE]
-    > To remove reference numbers already assigned to customers, select **Delete payment reference numbers**. To limit the number of customers for which you want to remove or create reference numbers, go to the **Record to include** section and apply criteria for customers or customer groups.  
-3. Select **OK**.
+1. in the **Create payment reference numbers** field, select **Yes**.
 
+   > [!NOTE]
+   > To remove reference numbers already assigned to customers, select **Delete payment reference numbers**. To limit the number of customers for which you want to remove or create reference numbers, go to the **Record to include** section and apply criteria for customers or customer groups.  
 
+1. Select **OK**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

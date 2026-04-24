@@ -28,7 +28,7 @@ In Finance, you can manually adjust the exchange rate on free text invoices and 
 
 This section explains how to use currency conversion on free text invoices.
 
-To manually update the exchange rate on a free text invoice, follow these steps.
+To manually update the exchange rate on a free text invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Invoices** \> **All free text invoices**.
 1. Select the free text invoice that you want to change the exchange rate for.
@@ -57,7 +57,7 @@ When the free text invoice is posted to the ledger, you can view the updated amo
 
 This section explains how to use currency conversion on purchase orders.
 
-To manually update the exchange rate on a purchase order, follow these steps.
+To manually update the exchange rate on a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order that you want to change the exchange rate for.

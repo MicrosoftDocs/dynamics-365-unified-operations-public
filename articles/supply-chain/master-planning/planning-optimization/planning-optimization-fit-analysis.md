@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: MpsFitAnalysis, MpsIntegrationParameters
 ms.topic: how-to
-ms.date: 11/19/2025
+ms.date: 03/26/2026
 ms.custom:
   - bap-template
 ---
@@ -26,7 +26,7 @@ You should analyze the result from the Planning Optimization fit analysis as par
 
 ## Run Planning Optimization fit analysis
 
-To run the Planning Optimization fit analysis and view the results, follow these steps.
+To run the Planning Optimization fit analysis and view the results, follow these steps:
 
 1. Select a company (legal entity) from the company picker in the navigation bar.
 1. Go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**.
@@ -39,31 +39,31 @@ To run the Planning Optimization fit analysis and view the results, follow these
 The following table shows the various results that can appear after a fit analysis. Number signs (*\#*) are replaced with a number that indicates the number of records that have the listed issue.
 
 > [!IMPORTANT]
-> For features that aren't yet supported, the following table provides an availability estimate based on our current roadmap. These estimates are subject to change without notice.
+> For features that aren't yet supported, the following table provides an availability estimate based on the current roadmap. These estimates are subject to change without notice.
 
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
-| Actions | Coverage groups with Actions calculation enabled: *\#* | This feature is now supported. | Supported |
-| Base calendars | Calendars using base calendar: *\#* | This feature is now supported. | Supported |
-| Batch disposition codes | Non-nettable batch disposition masters: *\#* | This feature is now supported. Learn more in [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) | Supported |
-| Capable to promise (CTP) | Default order settings with delivery date control set to CTP: *\#* | In Supply Chain Management 10.0.28 and newer, a process called *CTP for Planning Optimization* makes confirmed ship and receipt dates available after the dynamic plan runs. For older versions of Supply Chain Management, the legacy CTP setting is ignored when Planning Optimization is enabled. | Supported |
-| Firming | Coverage groups with auto firming time fence set: *\#* | In version 10.0.7 and later, firming is supported as a separate firming batch job after master planning is completed. Auto firming for Planning Optimization is based on the order date (start date), not the requirement date (end date). This behavior ensures that firming of planned orders occurs in due time, without having to include lead time in the firming time fence. | Supported |
-| Firming | Item coverage records with auto firming set: *\#* | In version 10.0.7 and later, auto firming is supported as a separate firming batch job after master planning is completed. Auto firming for Planning Optimization is based on the order date (start date), not the requirement date (end date). This behavior ensures that firming of planned orders occurs in due time, without having to include lead time in the firming time fence. | Supported |
-| Firming | Master plans with auto firming set: *\#* | In version 10.0.7 and later, auto firming is supported as a separate firming batch job after master planning is completed. Auto firming for Planning Optimization is based on the order date (start date), not the requirement date (end date). This behavior ensures that firming of planned orders occurs in due time, without having to include lead time in the firming time fence. | Supported |
-| Planning items | Planning Items: *\#* | This feature is now supported for all versions of Supply Chain Management. | Supported |
-| Forecast | Coverage groups with "Include intercompany orders" disabled: *\#* | This feature is now supported. Learn more in [Intercompany planning](Intercompany-planning.md) | Supported |
-| Forecast | Coverage groups with "Reduce forecast by" setting set to a value different than "Orders": *\#* | This feature is now supported. Learn more in [Master planning with demand forecasts](demand-forecast.md) | Supported |
-| Forecast | Forecast models with sub models: *\#* |  This feature is now supported. Learn more in [Master planning with demand forecasts](demand-forecast.md) | Supported |
-| Forecast | Master plans with "Include supply forecast" enabled: *\#* | This feature is now supported. Learn more in [Master planning with supply forecasts](supply-forecast.md) | Supported |
-| Freeze time fence | Coverage groups with freeze time fence set: *\#* | This feature is now supported. To use it, enable the *Freezing time fence for Planning optimization* feature in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.| Supported |
-| Freeze time fence | Item coverage records with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | Supported |
-| Freeze time fence | Master plans with freeze time fence set: *\#* | This feature is now supported. To use it, enable the *Freezing time fence for Planning optimization* feature in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.| Supported |
-| Intercompany | Master plans including planned downstream demand: *\#* | This feature is now supported. Learn more in [Intercompany planning](Intercompany-planning.md) | Supported |
-| Kanban | Item coverage records with planned order type kanban: *\#* | This feature is now supported. To use it, enable the *Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46. | Supported |
-| Kanban | Items with default order type kanban: *\#* | This feature is now supported. To use it, enable the *Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46. | Supported |
-| Product lifecycle state | Product lifecycle states not active for planning: *\#* | This feature is now supported. Learn more in [Exclude products that have specific product lifecycle states](product-lifecycle-state.md) | Supported |
-| Production | BOM lines with rounding or multiple setup: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported|
-| Production | BOM/formula lines with formula measurement: *\#* | This feature is supported in version 10.0.33 and higher. | Supported |
+| Actions | Coverage groups with Actions calculation enabled | This feature is now supported. | Supported |
+| Base calendars | Calendars using base calendar | This feature is now supported. | Supported |
+| Batch disposition codes | Non-nettable batch disposition masters | This feature is now supported. Learn more in [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) | Supported |
+| Capable to promise (CTP) | Default order settings with delivery date control set to CTP | In Supply Chain Management 10.0.28 and newer, a process called *CTP for Planning Optimization* makes confirmed ship and receipt dates available after the dynamic plan runs. For older versions of Supply Chain Management, the legacy CTP setting is ignored when Planning Optimization is enabled. | Supported |
+| Firming | Coverage groups with auto firming time fence set | In version 10.0.7 and later, firming is supported as a separate firming batch job after master planning is completed. Auto firming for Planning Optimization is based on the order date (start date), not the requirement date (end date). This behavior ensures that firming of planned orders occurs in due time, without having to include lead time in the firming time fence. | Supported |
+| Firming | Item coverage records with auto firming set | In version 10.0.7 and later, auto firming is supported as a separate firming batch job after master planning is completed. Auto firming for Planning Optimization is based on the order date (start date), not the requirement date (end date). This behavior ensures that firming of planned orders occurs in due time, without having to include lead time in the firming time fence. | Supported |
+| Firming | Master plans with auto firming set | In version 10.0.7 and later, auto firming is supported as a separate firming batch job after master planning is completed. Auto firming for Planning Optimization is based on the order date (start date), not the requirement date (end date). This behavior ensures that firming of planned orders occurs in due time, without having to include lead time in the firming time fence. | Supported |
+| Planning items | Planning Items | This feature is now supported for all versions of Supply Chain Management. | Supported |
+| Forecast | Coverage groups with "Include intercompany orders" disabled | This feature is now supported. Learn more in [Intercompany planning](Intercompany-planning.md) | Supported |
+| Forecast | Coverage groups with "Reduce forecast by" setting set to a value different than "Orders" | This feature is now supported. Learn more in [Master planning with demand forecasts](demand-forecast.md) | Supported |
+| Forecast | Forecast models with sub models |  This feature is now supported. Learn more in [Master planning with demand forecasts](demand-forecast.md) | Supported |
+| Forecast | Master plans with "Include supply forecast" enabled | This feature is now supported. Learn more in [Master planning with supply forecasts](supply-forecast.md) | Supported |
+| Freeze time fence | Coverage groups with freeze time fence set | This feature is now supported. To use it, enable the *Freezing time fence for Planning optimization* feature in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.| Supported |
+| Freeze time fence | Item coverage records with freeze time fence set | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | Supported |
+| Freeze time fence | Master plans with freeze time fence set | This feature is now supported. To use it, enable the *Freezing time fence for Planning optimization* feature in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.| Supported |
+| Intercompany | Master plans including planned downstream demand | This feature is now supported. Learn more in [Intercompany planning](Intercompany-planning.md) | Supported |
+| Kanban | Item coverage records with planned order type kanban | This feature is now supported. To use it, enable the *Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46. | Supported |
+| Kanban | Items with default order type kanban | This feature is now supported. To use it, enable the *Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46. | Supported |
+| Product lifecycle state | Product lifecycle states not active for planning | This feature is now supported. Learn more in [Exclude products that have specific product lifecycle states](product-lifecycle-state.md) | Supported |
+| Production | BOM lines with rounding or multiple setup | This feature is supported as of June 1, 2023. No feature management is required. | Supported|
+| Production | BOM/formula lines with formula measurement | This feature is supported in version 10.0.33 and higher. | Supported |
 | Production | BOM/formula lines with item substitution (plan groups): *\#* | This feature is now supported. To use it, enable the *Item substitution (Plan group) support for Planning Optimization* and/or *Item substitution for bill of materials in Planning optimization* features in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.43).| Supported |
 | Production | BOM/formula lines with negative quantity: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported |
 | Production | BOM/formula lines with resource consumption: *\#* | This feature is now supported. | Supported|
@@ -79,7 +79,7 @@ The following table shows the various results that can appear after a fit analys
 | Production | Resources scheduled with finite capacity: *\#* | This feature is now supported.| Supported |
 | Production | Routes used in planning: *\#* | This feature is supported. | Supported |
 | Production | Sales line reservation using explosion: *\#* | This scenario isn't yet supported. Sales line reservations aren't automatically made during explosion.  | Future wave |
-| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders is supported starting in version 10.0.32. A Planning Optimization run is performed for the items contained in the production order and its respective components in its BOM. | Supported |
+| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders is supported starting in version 10.0.32, with a private preview available for version 10.0.31 (contact Microsoft Support to request access to the private preview feature on version 10.0.31). A Planning Optimization run is performed for the items contained in the production order and its respective components in its BOM. | Supported |
 | Request for quotations | Master plans with request for quotations enabled: *\#* | This feature is supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Requisitions | Master plans with requisitions enabled: *\#* | This feature is now supported. Learn more in [Purchase requisitions](purchase-requisitions.md) | Supported |
 | Safety margins | Coverage groups with safety margin: *\#* | This feature is now supported. Learn more in [Safety margins](safety-margins.md) | Supported |
@@ -87,6 +87,8 @@ The following table shows the various results that can appear after a fit analys
 | Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is now supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Shelf life | Master plans with shelf life enabled: *\#* | This feature is now supported. | Supported |
 | Custom inventory dimensions | Tracking dimension groups with one or more custom inventory dimensions: *\#* | This feature is now supported for all versions of Supply Chain Management. No set up is required. | Supported |
+| Intercompany Planning | Setup Intercompany planning execution with planning optimization: *\#* | This scenario isn't yet supported. It is not yet possible to setup Planning Optimization to execute automatically across legal entities according to the Intercompany planning group setup and using the run menu item to invoke the actual planning execution. It is possible to run the cross legal entity planning execution manually or by setting up sequentially scheduled batch jobs for each legal entity planning execution | Future wave |
+| Production |  Planning Optimization support for requirement types skills, courses, certificates, and titles. | This scenario isn't yet supported. | Future wave |
 
 ## Related information
 
