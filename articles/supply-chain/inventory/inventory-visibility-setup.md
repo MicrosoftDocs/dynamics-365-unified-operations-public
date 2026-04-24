@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/21/2026
+ms.date: 04/24/2026
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -20,18 +20,18 @@ ms.custom:
 This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
 > [!TIP]
-> If you're a feature consultant or solution consultant, we recommend that you join the [D365 SCM Inventory Management and Inventory Visibility](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDgxNTg0NjQifQ) community on Microsoft Viva Engage, where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features.
+> If you're a feature consultant or solution consultant, join the [D365 SCM Inventory Management and Inventory Visibility](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDgxNTg0NjQifQ) community on Microsoft Viva Engage. Read about the latest developments, exchange tips with other consultants and developers, and discuss features.
 >
 > For useful code samples and troubleshooting guides, visit the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
 >
-> If you're experiencing technical issues or running into exceptions, you can get help by contacting Microsoft Support through Microsoft Dynamics Lifecycle Services or the Power Platform admin center. Be sure to include your Supply Chain Management environment ID when you contact them.
+> If you're experiencing technical issues or running into exceptions, get help by contacting Microsoft Support through Microsoft Dynamics Lifecycle Services or the Power Platform admin center. Be sure to include your Supply Chain Management environment ID when you contact them.
 
 ## Inventory Visibility prerequisites
 
-Before you install the Inventory Visibility, you must complete the following tasks:
+Before you install Inventory Visibility, complete the following tasks:
 
-- Obtain a Supply Chain Management environment that's linked to a Dataverse environment.
-- Make sure that the prerequisites for setting up add-ins have been completed. For information about these prerequisites, see [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Inventory Visibility doesn't require dual-write linking.
+- Get a Supply Chain Management environment that's linked to a Dataverse environment.
+- Make sure that you complete the prerequisites for setting up add-ins. For information about these prerequisites, see [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Inventory Visibility doesn't require dual-write linking.
 
 The following table lists the countries/regions where Inventory Visibility is currently supported.
 
@@ -76,10 +76,10 @@ The following table lists the countries/regions where Inventory Visibility is cu
 
 ## <a name="install-add-in"></a>Install the Inventory Visibility Add-in
 
-Before you install the add-in, register an application and add a client secret to Microsoft Entra under your Azure subscription. For instructions, see [Register an application](/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Be sure to make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you'll need them later.
+Before you install the add-in, register an application and add a client secret to Microsoft Entra under your Azure subscription. For instructions, see [Register an application](/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Make sure to note the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you'll need them later.
 
 > [!IMPORTANT]
-> If you have more than one environment, create a different Microsoft Entra application for each of them. If you use the same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. As a result, only the latest installation will be valid.
+> If you have more than one environment, create a different Microsoft Entra application for each environment. If you use the same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue occurs for older environments. As a result, only the latest installation is valid.
 
 You can install the Inventory Visibility Add-in from either of two places:
 
@@ -103,8 +103,8 @@ After you register an application and add a client secret to Microsoft Entra ID,
 1. In the list, select **Inventory Visibility**.
 1. Set the following fields for your environment:
 
-    - **Microsoft Entra application (client) ID** – Enter the Microsoft Entra application ID that you created and made a note of earlier.
-    - **Microsoft Entra tenant ID** – Enter the tenant ID that you made a note of earlier.
+    - **Microsoft Entra application (client) ID** – Enter the Microsoft Entra application ID that you created and noted earlier.
+    - **Microsoft Entra tenant ID** – Enter the tenant ID that you noted earlier.
 
     :::image type="content" source="media/inventory-visibility-setup.png" alt-text="Screenshot of the Setup add-in page." lightbox="media/inventory-visibility-setup.png":::
 
@@ -113,9 +113,9 @@ After you register an application and add a client secret to Microsoft Entra ID,
 1. In Dataverse, select the **Apps** section in the left navigation, and verify that the **Inventory Visibility** Power Apps is installed successfully.
 
 > [!NOTE]
-> If the system warns you that you don't have permission to install Inventory Visibility on Lifecycle Services, you must contact the administrator to modify your permission.
+> If the system warns you that you don't have permission to install Inventory Visibility on Lifecycle Services, contact the administrator to modify your permission.
 >
-> If it takes more than an hour to install from the Lifecycle Services page, then your user account probably lacks permission to install solutions in the Dataverse environment. Follow these steps to resolve the issue:
+> If it takes more than an hour to install from the Lifecycle Services page, your user account probably lacks permission to install solutions in the Dataverse environment. Follow these steps to resolve the issue:
 >
 > 1. Cancel the Inventory Visibility Add-in installation process from the Lifecycle Services page.
 > 1. [Install the Inventory Visibility Add-in from the Power Platform admin center](#install-from-power-platform).
@@ -126,7 +126,7 @@ After you register an application and add a client secret to Microsoft Entra ID,
 After you register an application and add a client secret to Microsoft Entra ID, you must install the Inventory Visibility Add-in.
 
 > [!IMPORTANT]
-> Unless you using the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview), you should check for linking mismatch warnings in Lifecycle Services before you install Inventory Visibility. To do so, open the details page for your environment in Lifecycle Services and look for a warning that resembles the following example: "Microsoft has detected that your environment is linked via dual-write to a different destination than specified in Power Platform Integration, which isn't recommended." If you see this warning, it's possible that your dual-write environment is linked to a Dataverse instance, but Lifecycle Services isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. For information about how to fix this issue, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). After the linking mismatch is fixed, you can install Inventory Visibility.
+> Unless you're using the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview), check for linking mismatch warnings in Lifecycle Services before you install Inventory Visibility. To do so, open the details page for your environment in Lifecycle Services and look for a warning that resembles the following example: "Microsoft has detected that your environment is linked via dual-write to a different destination than specified in Power Platform Integration, which isn't recommended." If you see this warning, it's possible that your dual-write environment is linked to a Dataverse instance, but Lifecycle Services isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. For information about how to fix this issue, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). After you fix the linking mismatch, you can install Inventory Visibility.
 
 Follow these steps to install the Inventory Visibility Add-in.
 
@@ -154,14 +154,14 @@ Follow these steps to install the Inventory Visibility Add-in.
 
 ### <a name="setup-inventory-visibility-integration"></a>Set up Inventory Visibility integration
 
-Once you've installed the add-in, prepare your Supply Chain Management system to work with it by following these steps.
+After you install the add-in, prepare your Supply Chain Management system to work with it by following these steps.
 
 1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility integration* feature. As of Supply Chain Management version 10.0.45, it's mandatory and can't be turned off.
 1. Go to **Inventory Management** \> **Set up** \> **Inventory Visibility Integration parameters**.
 1. Open the **General** tab and make the following settings:
 
     - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. Learn more in [Find your service endpoint and read the configuration](inventory-visibility-power-platform.md#endpoint).
-    - **Maximum number of records in a single request** – Set to the maximum number of records to include in a single request. You must enter a positive integer less than or equal to 1000. The default value is 512. We strongly recommend keeping the default value unless you've received advice from Microsoft Support or are otherwise certain that you need to change it.
+    - **Maximum number of records in a single request** – Set the maximum number of records to include in a single request. Enter a positive integer that's less than or equal to 1,000. The default value is 512. Keep the default value unless Microsoft Support advises you to change it or you're otherwise certain that you need to change it.
 
 1. The following optional features enhance the functionality of Inventory Visibility. Decide whether you want to use any of these features. If you do, set them up. (You can also set them up later.)
 
@@ -171,7 +171,7 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
     - **Preload a streamlined on-hand query** – This feature provides an aggregated inventory summary for products by configured dimensions. For information about how to enable and set up this feature, see [Preload a streamlined on-hand query](inventory-visibility-preload-on-hand.md).
     - **Track time-series inventory in Inventory Visibility** – This feature enables Supply Chain Management to send its on-hand change schedule to Inventory Visibility to support available-to-promise (ATP) calculations. For information about how to enable and set up this feature, see [Track time-series inventory in Inventory Visibility](inventory-visibility-track-atp.md).
 
-1. After you finish setting up the optional features you selected, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
+1. After you finish setting up the optional features you selected, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management are now posted to Inventory Visibility.
 
 > [!NOTE]
 > When you enable the Inventory Visibility integration job, if you receive an error that states that you must update the partition schema, see the [Update partition schema to two if you get an error when enabling the Inventory Visibility integration job](#update-partition-two) section of this article for instructions.
@@ -190,7 +190,7 @@ If you receive this error, follow these steps to update your [partition schema](
 
 1. In Power Apps, [delete all inventory data](inventory-visibility-power-platform.md#delete-data).
 1. Set up a system to send [API requests](inventory-visibility-api.md) to Inventory Visibility.
-1. After data is deleted, call the `Get` API with a body of `none` to get all partition IDs (by using `/api/environment/{environmentId}/allpartitionids`). Review the response to confirm that data has been completely cleared. The result should be empty.
+1. After data is deleted, call the `Get` API with a body of `none` to get all partition IDs (by using `/api/environment/{environmentId}/allpartitionids`). Review the response to confirm that data is completely cleared. The result should be empty.
 1. Call the `Post` API with a body of `none` to change the partition schema (by using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
 1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature, and [update the configuration](inventory-visibility-power-platform.md#update-configuration).
 1. In Power Apps, [review the runtime configuration](inventory-visibility-power-platform.md#endpoint). The `CachePartitonIdVersion` field should show a value of `ByLocationAndProductIdMod64`.
@@ -231,7 +231,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
 The uninstall process terminates the Inventory Visibility Add-in, unregisters the add-in from Lifecycle Services, and deletes any temporary data that's stored in the Inventory Visibility Add-in data cache. Primary inventory data that was synced to your Dataverse subscription isn't deleted.
 
 > [!IMPORTANT]
-> If you want to continue to use Inventory Visibility in the current environment, we recommend that you don't delete all solutions from your Dataverse environment. If you want to delete all inventory data in Dataverse, we recommend that you use the [delete all inventory data](inventory-visibility-power-platform.md#delete-data) option.
+> If you want to continue to use Inventory Visibility in the current environment, don't delete all solutions from your Dataverse environment. If you want to delete all inventory data in Dataverse, use the [delete all inventory data](inventory-visibility-power-platform.md#delete-data) option.
 
 > [!NOTE]
 > If you must delete all solutions that are related to Inventory Visibility, follow these steps:
@@ -253,6 +253,6 @@ The uninstall process terminates the Inventory Visibility Add-in, unregisters th
 
 ## <a name="move-data"></a>Move data between Supply Chain Management databases and Dataverse environments
 
-There are several ways to migrate data between Supply Chain Management databases and Dataverse environments. For instructions, see the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples/blob/main/Troubleshooting%20Guide/Database%20and%20Dataverse%20Movement.md).
+You can migrate data between Supply Chain Management databases and Dataverse environments in several ways. For instructions, see the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples/blob/main/Troubleshooting%20Guide/Database%20and%20Dataverse%20Movement.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
