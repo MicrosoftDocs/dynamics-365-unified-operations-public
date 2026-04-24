@@ -49,7 +49,7 @@ Follow these steps to set a company to continue to use the deprecated master pla
 
 ## Unsupported features and exceptions
 
-If your company requires features that aren't yet supported by Planning Optimization (such as kanban), you can continue to use the deprecated engine for the affected companies. Supply Chain Management includes an automated exception process that evaluates your system and shows appropriate instructions for each legal entity. For more information about the exception process and the features supported by Planning Optimization, see [Migration to Planning Optimization for master planning](new-master-planning-engine.md#exception-process-for-version-10032-and-later).
+If your company requires features that aren't yet supported by Planning Optimization, you can continue to use the deprecated engine for the affected companies. Supply Chain Management includes an automated exception process that evaluates your system and shows appropriate instructions for each legal entity. For more information about the exception process and the features supported by Planning Optimization, see [Migration to Planning Optimization for master planning](new-master-planning-engine.md#exception-process-for-version-10032-and-later).
 
 ## Next steps
 
