@@ -1,4 +1,20 @@
+---
+title: Enable contextual switching of Store Commerce from any application
+description: Learn how external applications can launch Store Commerce and invoke specific business actions such as add items to cart or recall order etc. to complete a workflow or transaction
+author: shajain
+ms.date: 04/23/2026
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.reviewer: mirao
+ms.search.region: Global
+ms.author: shajain
+ms.search.validFrom: 2026-04-23
+---
+
 # Launch Store Commerce via custom protocol URLs
+
+[!include [banner](../includes/banner.md)]
 
 This article explains how external applications can launch Store Commerce and invoke specific business actions such as add items to cart or recall order etc. to complete a workflow or transaction
 
