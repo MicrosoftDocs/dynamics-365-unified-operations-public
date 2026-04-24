@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/05/2025
+ms.date: 04/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Arab Emirates (UAE)
 ms.search.validFrom: 2017-06-30
@@ -76,7 +76,7 @@ To select the ER configuration in general ledger parameters, follow these steps:
 The first section of the FAF for the UAE represents the following information about the reporting legal entity:
 
 - **Taxable person name** – The name of the taxable person. The value represents the name that's specified in the **Taxable person name** field on the **Legal entities** page. For more information, see [Configure VAT for a legal entity](uae-vat-setup-reporting.md#header-information).
-- **TRN** – The Tax Registration Number (TRN) of the business user. To report the TRN of the company that's reporting the FAF, the system retrieves the value from the registration ID. The registration ID is defined in the properties of the legal entity that's associated with the **VAT ID** registration category that's valid on the date that's specified for the **To date** parameter of the report. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
+- **TRN** – The Tax Registration Number (TRN) of the business user. To report the TRN of the company that's reporting the FAF, the system retrieves the value from the registration ID. The registration ID is defined in the properties of the legal entity that's associated with the **VAT ID** registration category that's valid on the date that's specified for the **To date** parameter of the report. Learn about detailed concepts, setup guidance, and examples in [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 - **Tax agency name**, **TAN**, **Tax agent name**, and **TAAN** – The name and Tax Agency Number (TAN) of the tax agency, and the name and Tax Agent Approval Number (TAAN) of the tax agent. These values are required when electronic VAT reports are prepared by a contracted tax agent or vendor. The values are collected from parameters that are set up in the corresponding fields on the **Legal entities** page. For more information, see [Configure VAT for a legal entity](uae-vat-setup-reporting.md#header-information).
 
 ## Generate a FAF for the UAE
