@@ -1,5 +1,5 @@
 ---
-title: Platform updates for version 10.0.48 of finance and operations apps (April 2026)
+title: Platform updates for version 10.0.48 of finance and operations apps (June 2026)
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.48 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
@@ -13,7 +13,7 @@ ms.custom:
 ms.search.region: Global
 ---
 
-# Platform updates for version 10.0.48 of finance and operations apps (January 2026)
+# Platform updates for version 10.0.48 of finance and operations apps (June 2026)
 
 [!include [banner](../includes/banner.md)]
 
