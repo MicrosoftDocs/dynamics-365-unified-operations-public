@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.48
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.48. This version has a build number of nnnnnnn and is available on the following schedule:
+This article lists features that are new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.48. This version has a build number of 10.0.2645 and is available on the following schedule:
 
 - **Preview of release:** April 2026
 - **General availability of release (self-update):** June 2026
@@ -46,13 +46,6 @@ The following table lists the features that are included in this release. Micros
 | Omni-channel | Enable credit management support for Commerce orders |Credit limit management is essential for business-to-business (B2B) organizations because most transactions occur on accounts, often involving large orders, long fulfillment cycles, and repeat purchasing. This feature enhancement extends the standard credit management framework to all Commerce orders across channels, ensuring the consistent application of credit policies between Commerce and Supply Chain Management. | Admins |
 | Call center | Prevent editing of authorizations from call center |Some merchants enable the automatic capture of authorizations with their payment processors; however, Commerce system is unaware of the capture and hence voids or adjusts the authorization based on order actions. This can result in captured payments being refunded to the customer and new payments shown on the customer’s account. However, the refunds can take some time to show up and customers being unaware of this, assume that they have been charged multiple times. With this feature, the existing authorizations cannot be edited either systematically (e.g., partial or full cancellation) or manually from call center. Such modifications need to happen in the payment processor’s portal. | Admins |
 
-## Features turned on by default in this release
-
-The following table lists the features that are turned on by default in version 10.0.48. You can still disable these features in **Feature management** if necessary.
-
-| Module | Feature name | More information |
-| --- | --- | --- |
-
 
 ## Resources
 
@@ -62,7 +55,7 @@ Microsoft Dynamics 365 Commerce version 10.0.48 includes platform updates. For m
   
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.48, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=nnnnnn).
+For information about the bug fixes included in each of the updates that are part of version 10.0.48, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1125352).
 
 ### Dynamics 365 and industry clouds: 2025 release wave 2 plan
 
