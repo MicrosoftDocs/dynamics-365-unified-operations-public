@@ -29,7 +29,7 @@ This section lists the features included in this release when available. The art
 
 | Module or feature area | Feature name | More information | Enabled by |
 | --- | --- | --- | --- |
-| Agent foundation | Deep links for Dynamics 365 ERP MCP | This feature enables responses generated from agent experiences to include direct navigation links to the corresponding records in the ERP application. When an MCP request retrieves or modifies record data, the MCP response includes a deep link URL that opens the application context used to generate that response. Learn more in [Deep links for Dynamics 365 ERP MCP](../../dev-itpro/copilot/mcp/mcp-deep-links.md). | Administrator |
+| Agent foundation | Deep links for Dynamics 365 ERP MCP | This feature enables responses generated from agent experiences to include direct navigation links to the corresponding records in the ERP application. When an MCP request retrieves or modifies record data, the MCP response includes a deep link URL that opens the application context used to generate that response. | Administrator |
 | Agent foundation | Attachment support for Dynamics 365 ERP MCP | The feature enables the Dynamics 365 ERP MCP server to read, create, modify, and delete attachment records in the Dynamics 365 ERP applications. Learn more in [Enable agents to work with attachments through Dynamics 365 ERP MCP server](/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities/enable-agents-work-file-attachments-through-dynamics-365-erp-mcp-server). | Administrator |
 
 
