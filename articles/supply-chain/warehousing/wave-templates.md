@@ -90,8 +90,8 @@ To set up a wave template, follow these steps:
 
 1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template. The wave methods perform the actions that are created by the template, such creating or distributing work. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template. You can't remove the predefined wave methods. However, you can rearrange the order of the methods and add additional methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template. To add an additional method, do the following:
 
-    - Select a method on the **Remaining methods** pane, and then select the **Left** arrow to add it to the **Selected methods** pane.
-    - To change the sequence, select a method, and then select **Up** or **Down** arrows.
+    - Select a method on the **Remaining methods** pane, and then select the **Add** button (right arrow) to add it to the **Selected methods** pane.
+    - To change the sequence, select a method, and then select **Move up** or **Move down** arrows.
 
     > [!NOTE]
     > When you add a method, it’s automatically listed in the appropriate location in the sequence of steps.
