@@ -1,6 +1,7 @@
 ---
 title: Set up warehouse spatial locations (preview)
 description: Learn how to assign coordinates to warehouse locations and configure sorting algorithms to optimize picking routes.
+show_latex: true
 author: ismailjad
 ms.author: ismailjad
 ms.reviewer: kamaybac
