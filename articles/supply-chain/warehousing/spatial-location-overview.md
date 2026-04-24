@@ -1,6 +1,7 @@
 ---
 title: Warehouse spatial location overview (preview)
 description: Learn how to assign coordinates to warehouse locations to optimize picking routes and reduce travel time.
+show_latex: true
 author: ismailjad
 ms.author: ismailjad
 ms.reviewer: kamaybac
