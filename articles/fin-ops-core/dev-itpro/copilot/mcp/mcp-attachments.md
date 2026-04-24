@@ -26,6 +26,15 @@ This article describes the supported scenarios, the tools and APIs that back the
 ## Output scenarios
 Output scenarios occur when the MCP server sends binary or large-text content back to the LLM as an MCP embedded resource. There are three triggers: data query tools, the action execution tool, and form interaction tools.
 
+> [!IMPORTANT]
+> Working with files for output scenarios is a preview feature. Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2216214), and are available before an official release so customers can get early access and provide feedback.
+
+### Prerequisites
+The following prerequisites must be met to enable output scenarios for files with the Dynamics 365 ERP MCP server:
+- Finance and operations apps must be version 10.0.48 or later.
+- Enable the Dynamics 365 ERP MCP server in your environment. For more information, see [Use Model Context Protocol for finance and operations apps](../copilot-mcp.md).
+- In Feature Management, enable the **Enable output menu items for MCP** feature.
+
 ### SQL and OData data query tools
 Both `data_find_entities_sql` and `data_find_entities` accept an optional Boolean parameter, `returnAsResource`. When set to `true`, the query result JSON is returned as an MCP embedded resource instead of inline text, which raises the allowed response size from roughly 160 KB to 5 MB, enabling agents to work with greater response sizes.
 
