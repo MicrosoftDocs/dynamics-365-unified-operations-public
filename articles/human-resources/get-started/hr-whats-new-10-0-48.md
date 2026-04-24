@@ -56,8 +56,8 @@ For information about the bug fixes that are included in this update, sign in to
 For information about regulatory updates for finance and operations apps, see [Regulatory updates](../../finance/localizations/global/regulatory-updates.md). Another way to learn about regulatory updates is to
 sign in to Lifecycle Services and view the planned regulatory updates by using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
-### Dynamics 365 and industry clouds: 2025 release wave 2 plan
+### Dynamics 365 and industry clouds: 2026 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2025 release wave 2 plan](/dynamics365/release-plan/2025wave2/). We've captured all the details, end to end, top to bottom, that you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2026 release wave 1 plan](/dynamics365/release-plan/2026wave1/). We've captured all the details, end to end, top to bottom, that you can use for planning.
