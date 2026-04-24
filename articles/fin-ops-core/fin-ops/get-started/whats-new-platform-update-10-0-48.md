@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-This article lists the features in the platform updates for version 10.0.48 of finance and operations apps. This version uses build number nnnnnn and is available on the following schedule:
+This article lists the features in the platform updates for version 10.0.48 of finance and operations apps. This version uses build number 7.0.7996 and is available on the following schedule:
 
 - **Preview of release:** April 2026
 - **General availability of release (self-update):** June 2026
