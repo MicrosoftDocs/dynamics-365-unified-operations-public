@@ -4,7 +4,7 @@ description: Learn how to prepare your environment to interoperate with ID-porte
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 09/03/2025
+ms.date: 04/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2021-11-18
@@ -310,7 +310,7 @@ To define the VAT registration number that the **NO VAT return with direct submi
 
     ![Setting up the VAT registration number of the company that is reporting a VAT return.](../media/emea-nor-vat-return-tax-registration-number.png)
 
-If the VAT registration number isn't specified in the **Tax registration number** additional field of the **NO VAT returns** processing, the system retrieves it from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **NO VAT returns** processing, the system retrieves it from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. Learn about detailed concepts, setup guidance, and examples in [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 
 ## <a id="preview-format"></a>Set up a paper format to preview VAT returns
 
