@@ -2,7 +2,7 @@
 title: Configure printing for Cancelled Tax Receipts Submission Form 608
 description: Learn about the required configuration for printing Cancelled Tax Receipts Submission Form 608 for the Dominican Republic.
 author: Cpicon85
-ms.date: 04/09/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

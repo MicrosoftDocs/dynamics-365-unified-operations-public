@@ -2,7 +2,7 @@
 title: Configure printing for the Ecuador Sales book by establishment report
 description: Learn how to set up and use the Ecuador Sales book by establishment report.
 author: Fhernandez0088
-ms.date: 01/03/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

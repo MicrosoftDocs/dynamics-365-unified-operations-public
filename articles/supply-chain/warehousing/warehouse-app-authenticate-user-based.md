@@ -85,7 +85,7 @@ The following procedure shows one way to register an application in Microsoft En
 1. On the left navigation pane, expand **Manage** and select **App registrations**.
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
-1. Your new app registration opens. Make a note of the **Application (client) ID** value, because you'll need it later. This ID is referred to later in this article as the *client ID*.
+1. Your new app registration opens. Make a note of the **Application (client) ID** value, because you need it later. This ID is referred to later in this article as the *client ID*.
 1. In the **Manage** list, select **Authentication**.
 1. On the **Authentication** page for the new app, open the **Settings** tab, set **Allow public client flows** to *Enabled*, and select **Save**.
 
@@ -98,11 +98,6 @@ The following procedure shows one way to register an application in Microsoft En
     ms-appx-web://microsoft.aad.brokerplugin/{clientId}
     ```
 
-    > [!NOTE]
-    > If you still have devices running the deprecated version 3.x of the app, you must also add the following redirect URI:
-    >
-    > `ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333`
-
     Select **Configure** to save your settings and close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
 
 1. On the **Redirect URI configuration** tab, select **Add redirect URI**.
@@ -112,23 +107,7 @@ The following procedure shows one way to register an application in Microsoft En
     - **Package name** – Enter the following value (case sensitive):
 
         ``` text
-        com.Microsoft.Warehousemanagement
-        ```
-
-    - **Signature hash** – Enter the following value:
-
-        ``` text
-        Xo8WBi6jzSxKDVR4drqm84yr9iU=
-        ```
-
-    Select **Configure** to save your settings and close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
-
-1. Repeat the previous two steps to add another Android platform configuration, but this time set the following values:
-
-    - **Package name** – Enter the following value (case sensitive and different from the previous configuration):
-
-        ``` text
-        com.microsoft.warehousemanagement
+        com.Microsoft.WarehouseManagement
         ```
 
     - **Signature hash** – Enter the following value:
@@ -137,9 +116,7 @@ The following procedure shows one way to register an application in Microsoft En
         hpavxC1xAIAr5u39m1waWrUbsO8=
         ```
 
-    > [!TIP]
-    > - The first signature hash (`Xo8WBi6jzSxKDVR4drqm84yr9iU=`) enables brokered authentication and is required for features such as [Conditional Access](warehouse-app-conditional-access-enable.md) and [SSO](#sso). The second hash (`hpavxC1xAIAr5u39m1waWrUbsO8=`) supports older versions of the app. Include both to ensure full compatibility.
-    > - The values for **Package name** are case sensitive and the required casing is different for each Android platform configuration. The values are otherwise similar.
+    Select **Configure** to save your settings and close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
 
 1. On the **Redirect URI configuration** tab, select **Add redirect URI**.
 
@@ -156,13 +133,13 @@ The following procedure shows one way to register an application in Microsoft En
 1. In the **Request API permissions** dialog, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
 1. Use the search field at the top of the page to find and open the **Microsoft Entra ID** service.
 1. On the left navigation pane, expand **Manage** and select **Enterprise applications**. Then, in the new **Manage** list, select **All applications**.
-1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app that's found matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
+1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
 1. On the left navigation pane, expand **Manage** and select **Properties**.
 1. Set the **Assignment required?** option to *Yes* and the **Visible to users?** option to *No*. Then select **Save** on the toolbar.
 1. On the left navigation pane, expand **Manage** and select **Users and groups**.
 1. On the toolbar, select **Add user/group**.
 1. On the **Add Assignment** page, select the link under the **Users** heading.
-1. In the **Users** dialog, select each user that you'll use to authenticate devices with Supply Chain Management.
+1. In the **Users** dialog, select each user that you use to authenticate devices with Supply Chain Management.
 1. Select **Select** to apply your settings and close the dialog. Then select **Assign** to apply your settings and close the **Add Assignment** page.
 1. In the **Security** list, select **Permissions**.
 1. Select **Grant admin consent for \<*your tenant*\>**, and grant admin consent on behalf of your users. If you lack the necessary permissions, return to the **Manage** list, open **Properties**, and set the **Assignment required?** option to *False*. Each user can then provide consent individually.
@@ -206,7 +183,7 @@ The following table lists the broker apps that must be installed on a device for
 > [!IMPORTANT]
 >
 > - To use mobile mass deployment (MDM), you must enable SSO.
-> - The Warehouse Management mobile app does *not* support [shared device mode](/entra/identity-platform/msal-shared-devices).
+> - The Warehouse Management mobile app *doesn't* support [shared device mode](/entra/identity-platform/msal-shared-devices).
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
 
@@ -217,7 +194,7 @@ To revoke access, follow these steps:
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the left navigation pane, select **Microsoft Entra ID**, and ensure that you're in the correct directory.
 1. In the **Manage** list, select **Users**.
-1. Find the user account that's associated with the device code, and select the name to open the user's profile.
+1. To open the user's profile, find the user account associated with the device code, and select the name.
 1. On the toolbar, select **Revoke sessions** to revoke the user account's sessions.
 
 > [!NOTE]

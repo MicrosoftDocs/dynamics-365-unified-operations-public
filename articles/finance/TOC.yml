@@ -300,6 +300,8 @@
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
             - name: Set up vendor invoice policies
               href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Vendor ship‑from address support on invoices
+              href: accounts-payable/vendor-ship-from-address.md
             - name: Automate vendor payment proposals
               href: accounts-payable/automate-vendor-payment-proposal.md
             - name: Positive pay overview
@@ -700,6 +702,8 @@
                   href: public-sector/budget-analysis-report.md
                 - name: Budget control statistics vs. Budget analysis report
                   href: budgeting/budget-control-statistics-and-budget-analysis-report.md
+                - name: Budget control data maintenance tool
+                  href: budgeting/budget-control-tool.md
                 - name: Purchase order year-end process
                   href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
@@ -1278,6 +1282,8 @@
                       href: general-ledger/dimensions-default-values.md
                     - name: Journal posting failure due to imbalance
                       href: general-ledger/posting-fail-imbalance.md
+                    - name: Establishments and registration IDs in General journals
+                      href: general-ledger/general-journal-establishments.md                        
                     - name: Reverse journal posting
                       href: general-ledger/reverse-journal-posting.md
                     - name: Why can't I reverse this transaction?
@@ -1406,6 +1412,8 @@
                   href: general-ledger/consolidate-online.md
                 - name: Consolidate online templates
                   href: general-ledger/Consolidation-templates.md
+                - name: Recreate missing consolidation transactions
+                  href: general-ledger/recreate-missing-consolidation-trx.md
                 - name: Import subsidiary data from files
                   href: general-ledger/import-subsidiary-data-from-files.md
                 - name: Export subsidiary data to a file
@@ -1816,6 +1824,8 @@
                           href: localizations/global/tax-service-set-up-environment-master-data-lookup.md?context=/dynamics365/context/finance
                         - name: Sync the tax setup from the Tax Calculation feature to Finance
                           href: localizations/global/global-master-data-sync-tax-calculation-service-finance.md
+                        - name: Automate tax feature creation based on tax master data (Preview)
+                          href: localizations/global/global-automate-tax-feature-creation.md                
                     - name: Determination
                       items:
                         - name: Tax calculation data model
@@ -2868,9 +2878,11 @@
                       href: localizations/france/fr-00004-french-bills-exchange-promissory-notes.md
                     - name: French Intrastat
                       href: localizations/france/emea-fra-intrastat.md
-                    - name: NAF codes and siret numbers
-                      href: localizations/france/emea-fra-naf-codes-siret-numbers.md
-                    - name: Set up NAF codes and Siret numbers
+                    - name: Establishments in France
+                      href: localizations/france/emea-fra-establishments-for-france.md
+                    - name: Registration numbers setup for France
+                      href: localizations/france/emea-fra-registration-numbers-setup-for-france.md
+                    - name: NAF codes
                       href: localizations/france/fr-00003-naf-codes-siret-numbers.md
                     - name: Penalties for past due customer payments
                       href: localizations/france/emea-fra-apply-penalty-customer-payment-past-due.md
@@ -5585,6 +5597,10 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?context=/dynamics365/context/finance
                 - name: Configure address books
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?context=/dynamics365/context/finance
+                - name: Configure Registration IDs
+                  href: ../fin-ops-core/dev-itpro/organization-administration/registration-ids.md?context=/dynamics365/context/finance
+                - name: Define invoice party applicability rules for registration categories
+                  href: ../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md?context=/dynamics365/context/finance
             - name: Workflow system
               items:
                 - name: Workflow system overview

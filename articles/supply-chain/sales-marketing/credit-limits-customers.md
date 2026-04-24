@@ -4,7 +4,7 @@ description: Access an overview of how credit limits work in Dynamics 365 Supply
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 11/16/2023
+ms.date: 4/21/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: CustParameters
@@ -110,15 +110,15 @@ make changes in this page.
 
 Use the **Accounts receivable parameters** page to specify whether to display a
 warning or error if the credit limit is exceeded. This warning or error is
-displayed when a user is entering or posting information, or it's included in a
-log if the documents are being processed by an electronic service. You must be a
+displayed when a user enters or posts information, or it's included in a
+log if an electronic service processes the documents. You must be a
 member of the System administrator (-SYSADMIN-) security role to make changes on
 this page.
 
 | Field | Description |
 |--|--|
 | Message when exceeding credit limit (in the Credit rating area) | Select how messages about credit limits being exceeded are displayed to users. Select from the following options:<ul><li>*Error* – An error message is displayed. This usually stops the current operation and the conflict must be resolved before the process can continue.</li><li>*Warning* – A warning message is displayed, but the process can continue.</li></ul> |
-| Message when exceeding credit limit (in the AIF area) | Select how messages about credit limits being exceeded are delivered in a log. Select from the following options:<ul><li>*Error* – An error message is displayed in the **Exceptions** page, and the document won't be processed until the error is resolved.</li><li>*Warning* – A warning message is displayed in the Exceptions page, but the process can continue.</li></ul> |
+| Message when exceeding credit limit (in the AIF area) | Select how messages about credit limits being exceeded are delivered in a log. Select from the following options:<ul><li>*Error* – An error message is displayed in the **Exceptions** page, and the document isn't processed until the error is resolved.</li><li>*Warning* – A warning message is displayed in the **Exceptions** page, but the process can continue.</li></ul> |
 
 ## How do I specify the credit limit amount for a specific customer?
 
@@ -126,24 +126,24 @@ Use the **Customers** page to specify the credit limit amount for a specific
 customer. You must be a member of a security role that has the Maintain customer
 master (CustCustomersMaintain) duty assigned to it to make changes in this page.
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers** and open a customer account.
+1. Go to **Accounts receivable** > **Customers** > **All customers** and open a customer account.
 1. In the **Customers** page, on the Action Pane, select **Edit**.
-1. Enter a currency amount in the **Credit limit** field. This value must be higher than zero (0), and will be used as the credit limit amount.
-1. If it's required, enter a license number or other government-issued identification in the **Government identification** field.
+1. Enter a currency amount in the **Credit limit** field. This value must be higher than zero (0), and is used as the credit limit amount.
+1. If required, enter a license number or other government-issued identification in the **Government identification** field.
 
 > [!NOTE]
-> In the **Accounts receivable parameters** page, a credit limit type is typically selected. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** page in order to check the customer’s credit limit against the customer’s balance. For more information about credit limit types, see “What documents and processes can I check credit limits for?” in this article.
+> In the **Accounts receivable parameters** page, you typically select a credit limit type. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** page to check the customer’s credit limit against the customer’s balance. For more information about credit limit types, see “What documents and processes can I check credit limits for?” in this article.
 
 ## How do I manually check credit limits on sales orders?
 
-Sometimes, you might have to manually check a customer’s credit limit. For
-example, you might manually check a customer’s credit limit before you start
-entering a sales order. You can use the **Sales order** page to manually check
+Sometimes, you need to manually check a customer’s credit limit. For
+example, you might check a customer’s credit limit before you start
+entering a sales order. Use the **Sales order** page to manually check
 credit limits. You must be a member of a security role that has the Maintain
 sales order (SalesOrderMaintain) duty assigned to it to make changes in this
 page.
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders** and open a sales order.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders** and open a sales order.
 1. In the **Sales order** page, on the Action Pane, on the **Manage** tab, select **Check credit limit**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

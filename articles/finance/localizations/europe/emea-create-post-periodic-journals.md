@@ -3,7 +3,7 @@ title: Split periods in periodic journals
 description: Learn about split periods in periodic journals or recurring journals for legal entities in Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User
