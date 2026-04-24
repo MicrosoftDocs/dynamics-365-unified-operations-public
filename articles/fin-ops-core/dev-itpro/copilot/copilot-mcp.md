@@ -63,6 +63,7 @@ The following data tools are available in the Dynamics 365 ERP MCP server.
 | `data_delete_entities` | Delete data records by using OData. | 
 | `data_update_entities` | Update data records by using OData. | 
 | `data_find_entities` | Find or read data records by using OData. |
+| `data_find_entities_sql` | Find or read records by using SQL. This tool replaces the `data_find_entities` tool that uses OData in version 10.0.48 of finance and operations apps. |
 
 ### Form tools
 
