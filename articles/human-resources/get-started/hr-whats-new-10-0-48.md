@@ -35,10 +35,10 @@ originally published.
 
 This section contains a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
-| Module or feature area | Feature name | More information | Enabled by |
-|---|---|---|---|
-|             | Error handling for the closed activity | Changed behavior of opening 'closed' activities in a non-editable/view-only state to prevent unintended modifications which was earlier causing warning loop.|     |
-|Automatic assignment of compensation level for recruitement request|To reduce user friction, compensation details are now auto populated when exactly one compensation option exists, keeping existing behavior of user selection when multiple options are available.|    |
+| Module or feature area | Feature name | More information |
+|---|---|---|
+| Human Resources  | Error handling for the closed activity | Changed behavior of opening 'closed' activities in a non-editable or view-only state to prevent unintended modifications which was earlier causing warning loop.|    
+|Recruiting |Automatic assignment of compensation level for recruitement request|To reduce user friction, compensation details are now auto populated when exactly one compensation option exists, keeping existing behavior of user selection when multiple options are available.|  
 
 ## Additional resources
 
