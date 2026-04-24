@@ -596,6 +596,8 @@
           items:
           - name: Payment methods
             href: payment-methods.md
+          - name: Set up payment profiles for registers
+            href: payment-profile-registers.md
           - name: Payment methods in call centers
             href: work-with-payments.md
           - name: Refund payment processing in call centers
