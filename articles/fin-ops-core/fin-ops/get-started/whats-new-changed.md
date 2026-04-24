@@ -7,7 +7,7 @@ ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 05/08/2025
+ms.date: 04/24/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.collection: get-started
@@ -42,7 +42,7 @@ To see what's new or changed in the Platform updates for finance and operations 
 ## Lifecycle Services releases
 To see what's new or changed in Lifecycle Services, see the following article:
 
-- [What's new or changed in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
+- [What's new or changed in Lifecycle Services](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
 
