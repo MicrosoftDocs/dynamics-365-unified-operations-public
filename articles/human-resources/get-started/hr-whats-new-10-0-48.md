@@ -45,7 +45,7 @@ This section contains a table that lists the enhancements that are included in t
 ### Platform updates for finance and operations apps
 
 Dynamics 365 Human Resources version 10.0.48 includes platform updates. For more information, see 
-[Platform updates for version 10.0.48 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-48.md).
+[Platform updates for version 10.0.48 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-10-0-48.md).
 
 ### Bug fixes
 
