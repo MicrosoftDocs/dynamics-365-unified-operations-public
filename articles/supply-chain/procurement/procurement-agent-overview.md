@@ -44,7 +44,7 @@ Learn more in [Supplier communications features of the Procurement Agent](procur
 
 Impact analysis evaluates how supplier changes affect inventory, production schedules, and customer deliveries. When a supplier change is received through configured sources, impact analysis automatically assesses the downstream effects on orders and inventory. This allows procurement teams to understand the consequences of a change before deciding whether to accept it or take further action.
 
-Vendors may send change requests through various channels. Impact analysis supports these coming in through emails via supplier communications as well as the Vendor Collaboration Module by classifying changes as "Has impact" and "No impact". See [Review the impact of purchase order changes from vendors](procurement-agent-impact-analysis-review-changes.md)
+Vendors may send change requests through various channels. Impact analysis supports these coming in through emails via supplier communications as well as the vendor collaboration interface by classifying changes as "Has impact" and "No impact". See [Review the impact of purchase order changes from vendors](procurement-agent-impact-analysis-review-changes.md)
 
 The impact analysis can also be manually initiated on a purchase order. See [Impact simulation](procurement-agent-impact-analysis-simulation.md)
 
@@ -52,7 +52,7 @@ See [Impact analysis overview](procurement-agent-impact-analysis-overview.md).
 
 ## How the Procurement Agent capabilities work together
 
-This section describes how the Procurement Agent capabilities fit into the procurement workflow based on whether supplier communications or the Vendor Collaboration Module is used to communicate with suppliers on purchase order changes.
+This section describes how the Procurement Agent capabilities fit into the procurement workflow based on whether supplier communications or the vendor collaboration interface is used to communicate with suppliers on purchase order changes.
 
 ### If using emails through supplier communications together with impact analysis
 
@@ -67,12 +67,12 @@ This section describes how the Procurement Agent capabilities fit into the procu
 7. *No impact*: The purchaser can accept the change and update the purchase order (supplier communications)
 8. *Has impact*: The purchaser can view more details about the impact (impact analysis) and determine how to proceed. This can be to follow up with the supplier, accept the change and update the PO if nothing can be done (supplier communications), cancel the PO, as well as informing stakeholders.
 
-### If using Vendor Collaboration Module together with impact analysis
+### If using vendor collaboration interface together with impact analysis
 
 :::image type="content" source="media/procurement-agent-vendor-collaboration-impact-analysis.png" alt-text="Diagram of the vendor collaboration workflow showing PO change request, impact analysis, and decision steps." lightbox="media/procurement-agent-vendor-collaboration-impact-analysis.png":::
 
 1. Send purchase order to vendor
-2. Receive purchase order change request via the Vendor Collaboration Module's *In external review requires action* tab in the **Purchase order preparation** workspace
+2. Receive purchase order change request via the vendor collaboration interface's *In external review requires action* tab in the **Purchase order preparation** workspace
 3. Analyze downstream impact of the change (impact analysis)
 4. Decision based on impact analysis result (impact analysis)
 5. *No impact*: The purchaser can accept the change and update the purchase order

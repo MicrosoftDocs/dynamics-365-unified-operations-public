@@ -51,7 +51,7 @@ The Procurement Agent can determine what each email is about (for example, wheth
 
 ### Review the impact of purchase order changes from vendors overview
 
-Impact analysis automatically analyzes the downstream impact of change requests that arrive through e-mails (Procurement Agent - Supplier communications) and through the Vendor Collaboration Module if configured and enabled.
+Impact analysis automatically analyzes the downstream impact of change requests that arrive through e-mails (Procurement Agent - Supplier communications) and through the vendor collaboration interface if configured and enabled.
 
 Purchasing teams regularly receive change requests from suppliers, including delivery delays, quantity reductions, and purchase order cancellations. Each change request can potentially affect safety stock, production schedules, internal transfers, and customer commitments.
 
@@ -59,7 +59,7 @@ In most cases, purchasers will not want to spend time on changes to purchase ord
 
 For changes with downstream impact on orders, or ones that cause inventory levels to go below certain thresholds, purchasers need to quickly understand the details, consequences, and decide how to respond. Purchasers often follow up with the supplier. If purchasers must accept a change with impact, they now know straight away which internal stakeholders to be informed.
 
-### Simulate if purchase order changes have impact overview
+### Simulate whether purchase order changes have impact overview
 
 The impact simulation capability allows purchasers and planners to test the impact of changes on purchase orders, for which changes have not been directly communicated through supported sources. This could be to proactively test changes on high-priority or at-risk purchase orders, or running the impact analysis on changes communicated through non-supported sources such as phone.
 
@@ -94,11 +94,11 @@ The *Review the impact of purchase order changes from vendors* capability will o
 
 If emails through supplier commmunications are enabled during setup, this capability will run only when supplier communications classifies an incoming email as *Requested changes*, and when conditions in active configurations set up by the user for the *Speed up updates in purchase orders based on incoming vendor emails* capability are met. I.e. only for specified mailboxes and vendors.
 
-If the Vendor Collaboration Module is enabled, this capability will run on *In external review requires action* messages only.
+If the vendor collaboration interface is enabled, this capability will run on *In external review requires action* messages only.
 
-### Simulate if purchase order changes have impact capability
+### Simulate whether purchase order changes have impact capability
 
-The *Simulate if purchase order changes have impact* capability can be used as long as the *Procurement agent - Impact analysis* feature has been enabled in feature management. It only runs when the user changes a date and/or quantity of a purchase order and clicks *Simulate impact*.
+The *Simulate whether purchase order changes have impact* capability can be used as long as the *Procurement agent - Impact analysis* feature has been enabled in feature management. It only runs when the user changes a date and/or quantity of a purchase order and clicks *Simulate impact*.
 
 ## What is the intended use of the Procurement Agent?
 
@@ -107,7 +107,7 @@ The Procurement Agent has the following intended uses:
 - The *Send follow-up emails to vendors on purchase orders* capability streamlines the process of following up on purchase orders. By default, it identifies orders that are delayed or unconfirmed. It presents a draft message to purchasers, who can review and modify it, copy it to their email client, and/or send it.
 - The *Speed up updates in purchase orders based on incoming vendor emails* capability saves purchasers time by automatically reading emails, extracting information from it, mapping that information to information in the system.
 - The *Review the impact of purchase order changes from vendors* capability saves purchasers time in manually analyzing planning data to understand if a change request has downstream impact.
-- The *Simulate if purchase order changes have impact* capability enables purchasers and planners to be on top of potential purchase order changes and to test different scenarios.
+- The *Simulate whether purchase order changes have impact* capability enables purchasers and planners to be on top of potential purchase order changes and to test different scenarios.
 
 ## How was the Procurement Agent evaluated? What metrics are used to measure performance?
 

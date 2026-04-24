@@ -2469,7 +2469,7 @@
             href: procurement/procurement-agent-impact-analysis-setup.md
           - name: Review impact of purchase order changes from vendors
             href: procurement/procurement-agent-impact-analysis-review-changes.md
-          - name: Simulate if purchase order changes have impact
+          - name: Simulate whether purchase order changes have impact
             href: procurement/procurement-agent-impact-analysis-simulation.md
         - name: Supplier communications (production ready preview)
           items:

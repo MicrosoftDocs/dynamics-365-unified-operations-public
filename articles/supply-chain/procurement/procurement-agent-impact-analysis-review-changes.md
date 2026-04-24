@@ -1,6 +1,6 @@
 ---
 title: Review impact of purchase order changes from vendors (production ready preview)
-description: Purchase order impact analysis helps you review and respond to vendor changes in Dynamics 365. Learn how to assess and manage supply chain risks.
+description: Purchase order impact analysis helps you review and respond to vendor changes. Learn how to assess and manage supply chain risks.
 author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
@@ -17,46 +17,46 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The impact analysis can automatically run based on supplier changes received through emails or the Vendor Collaboration Module. Whichever is configured will also show the results of the impact analysis for review directly in existing pages in Dynamics 365, so the purchaser can decide how to respond in their existing workflow.
+Impact analysis can automatically run based on supplier changes received through emails or the vendor collaboration interface. Whichever options you configure also show the results of the impact analysis for review directly in Dynamics 365 Supply Chain Management, so purchasers can decide how to respond in their existing workflow.
 
 ## Set up sources that automatically trigger impact analysis
 
-If impact analysis is to be used on incoming change requests received through emails or the Vendor Collaboration Module, then these must be enabled first.
+To use impact analysis on incoming change requests received through emails or the vendor collaboration interface, first enable the relevant sources.
 
 Learn more in [Supplier communications features of the Procurement Agent (production ready preview)](procurement-agent-supplier-com-overview.md) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
-To enable the impact analysis to run based on change requests coming through one or both sources, follow these steps:
+To enable impact analysis to run based on change requests coming through one or both sources, follow these steps:
 
-1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has permissions to manage the agent configuration.
-2. Go to **Agents** > **Agents**.
-3. On the **Library** tab, look for *(Production-ready preview) Impact analysis - Procurement Agent*, select **Select**.
-4. Select *Source* to enable *vendor emails* if using supplier communications and/or the *Vendor Collaboration Module*.
-5. Select **Activate**.
+1. Sign in to the Supply Chain Management environment as a user who has permissions to manage the agent configuration.
+1. Go to **Agents** \> **Agents**.
+1. On the **Library** tab, look for *(Production-ready preview) Impact analysis - Procurement Agent*, and select **Select**.
+1. Select *Source* to enable *vendor emails* if you're using supplier communications and/or the *Vendor Collaboration Module*.
+1. Select **Activate**.
 
 ## Review changes received via email (supplier communications)
 
-Supplier communications classifies whether emails from vendors are confirmations, change requests, or related to something else (i.e. "Other"). If enabled, impact analysis runs automatically for all change requests received.
+The supplier communications features of the Procurement Agent classify whether emails from vendors are confirmations, change requests, or related to something else (indicated as *Other*). If you enable impact analysis, it runs automatically for all the change requests you receive.
 
-1. Go to: **Procurement and sourcing > Purchase order receipt and follow-up workspace > Emails from vendors** or **Supplier communications > Emails from vendors**
-2. Click on an email classified as a **Change request** in the left-hand navigation pane, and locate the change summary table. Changed fields are **highlighted in bold**.
-3. Look for the **Impact** column, which shows:
+1. Go to: **Procurement and sourcing** \> **Purchase order receipt and follow-up workspace** \> **Emails from vendors** or **Supplier communications** \> **Emails from vendors**
+1. Select an email classified as a **Change request** in the left-hand navigation pane, and locate the change summary table. Changed fields are **highlighted in bold**.
+1. Look for the **Impact** column, which shows:
    - **Has impact** - Change affects downstream orders and/or inventory levels
    - **No impact** - Change can be safely accepted
-4. The **Purchase order line impact** section shows a brief summary of impact.
-5. Click **View details** to see the complete impact analysis
+1. The **Purchase order line impact** section shows a brief summary of impact.
+1. Select **View details** to see the complete impact analysis.
 
-## Review changes received via Vendor Collaboration Module
+## Review changes received via vendor collaboration interface
 
-1. Go to: **Procurement and sourcing > Purchase order preparation workspace**
-2. Click: **In external review requires action**
-3. Filter for or navigate to a purchase order with vendor response status: **Accepted with changes**
-4. To view more details about the impact, either:
-    - Click **View impact analysis** button, which directs to the **View details** page described below
-    - Click **View responses to latest sent order** button to see the vendor's proposed changes. In the **Purchase order line impact** section, review the impact summary and click **View details** to see the full impact analysis.
+1. Go to: **Procurement and sourcing** \> **Purchase order preparation workspace**
+1. Select **In external review requires action**
+1. Filter for or navigate to a purchase order with vendor response status: **Accepted with changes**
+1. To view more details about the impact, either:
+    - Select **View impact analysis**, which directs to the **View details** page described in the following section.
+    - Select **View responses to latest sent order** to see the vendor's proposed changes. In the **Purchase order line impact** section, review the impact summary and select **View details** to see the full impact analysis.
 
 ## Impact analysis view details page
 
-When you click **View details** or **View impact analysis**, the impact analysis page opens with the following sections:
+When you select **View details** or **View impact analysis**, the impact analysis page opens with the sections described in the following sub-sections.
 
 ### Filter and item information
 
@@ -69,13 +69,13 @@ Here, you can find:
 You can:
 
 - Switch between different lines on the same PO with impact
-- Click the net requirements link to see the detailed planning logic used for the impact calculation
+- Select the net requirements link to see the detailed planning logic used for the impact calculation
 
 ### Purchase order line impact
 
 This is an AI-generated summary of the downstream impact, including specific mentions of affected orders and inventory issues. The agent analyzes the full impact details and provides a concise natural language explanation to provide a quick overview before diving into detailed tables and graphs.
 
-### Impacted orders (table)
+### Impacted orders
 
 This section shows a detailed table of all downstream orders affected by the purchase order change:
 
@@ -86,11 +86,11 @@ This section shows a detailed table of all downstream orders affected by the pur
 | **Customer/Reference** | Customer name for sales orders, or production/transfer number |
 | **Tracing Method** | How the order is linked: **Pegging** (from planning) or **Marking** (explicit reservation) |
 
-Here, you can: use the **View order**, **View item** and **View customer** buttons to re-direct to pages in Dynamics 365 Supply Chain Management.
+Here, you can use the **View order**, **View item**, and **View customer** buttons to open related pages in Supply Chain Management.
 
 If this table is empty, the change has no direct impact on specific orders.
 
-### Impacted inventory (table and graph)
+### Impacted inventory
 
 This section shows if the purchase order change causes inventory to drop below safety stock or go negative.
 
@@ -112,8 +112,6 @@ The table in the **Impacted inventory** section shows the following information:
 #### Inventory projection graph
 
 The graph visualizes inventory levels over time, showing how the purchase order change affects your projected inventory.
-
-**Graph elements:**
 
 The graph includes a **legend** with two lines:
 
@@ -141,6 +139,6 @@ Purchasers may accept changes that:
 They can accept changes without navigating back to the purchase order by following the steps:
 
 - Learn how to accept changes when using supplier communications in [Review and apply purchase order changes received in vendor emails](procurement-agent-supplier-com-apply-email-changes.md).
-- Learn how to accept changes when using the Vendor Collaboration Module in [Updating a PO when a vendor suggests changes](vendor-collaboration-work-external-vendors.md#updating-a-po-when-a-vendor-suggests-changes)
+- Learn how to accept changes when using the vendor collaboration interface in [Updating a PO when a vendor suggests changes](vendor-collaboration-work-external-vendors.md#updating-a-po-when-a-vendor-suggests-changes)
 
 For changes with impact that the purchaser accepts, they now know what the exact impact will be, and can communicate in a targeted manner to relevant colleagues in sales, production, planning, senior management and so on.
