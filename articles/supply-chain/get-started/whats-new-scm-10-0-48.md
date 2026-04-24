@@ -29,7 +29,8 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
-| Procurement and sourcing | Manage the downstream impact of PO changes with Procurement Agent impact analysis | [Impact analysis overview (production ready preview)](../procurement/procurement-agent-impact-analysis-overview.md) | Feature management:<ul><li>*(Production ready preview) Agent management*</li><li>*(Production-ready preview) Procurement Agent - Impact analysis*</li></ul><!-- KFM: Confirm FM requirements. --> |
+| Procurement and sourcing | Manage the downstream impact of PO changes with Procurement Agent impact analysis | *Coming soon* | Feature management:<ul><li>*(Production ready preview) Agent management*</li><li>*(Production-ready preview) Procurement Agent - Impact analysis*</li></ul> |
+| Procurement and sourcing | Try out the *updates from vendors* feature without a complete email setup |  |  Enabled by default |
 | Warehouse management | Cluster picking strategy | [Cluster picking strategy](../warehousing/set-up-cluster-picking.md#cluster-picking-strategy) | Enabled by default |
 | Warehouse management | Warehouse spatial location | [Warehouse spatial location overview (preview)](../warehousing/spatial-location-overview.md) | Feature management:<br>*Warehouse spatial location* |
 
