@@ -1,5 +1,5 @@
 ---
-title: What's new or changed in Dynamics 365 Human Resources 10.0.48 (April 2026)
+title: What's new or changed in Dynamics 365 Human Resources 10.0.48 (June 2026)
 description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.48 preview release.
 author: twheeloc
 ms.author: twheeloc
@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ---
 
-# What's new or changed in Dynamics 365 Human Resources 10.0.48 (April 2026)
+# What's new or changed in Dynamics 365 Human Resources 10.0.48 (June 2026)
 
 [!include [banner](../../includes/preview-banner.md)]
 
