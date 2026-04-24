@@ -17,11 +17,13 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes how to set up impact analysis as a standalone Procurement Agent capability for use with the Vendor Collaboration Module and/or manual simulation. If you want to use both supplier communications and impact analysis together, and already have set up supplier communications, you will need to adhere to the following additional prerequisites:
+This article describes how to set up impact analysis as a standalone Procurement Agent capability for use with the Vendor Collaboration Module and/or manual simulation.
 
-- Later Microsoft Dynamics 365 Supply Chain Management version
-- Turn on specific feature for impact analysis in feature management
-<!-- - Triggering power automate flow for impact analysis - LS: Will updated shortly after public preview date -->
+If you want to use both supplier communications and impact analysis together and already have set up supplier communications, you will need to adhere to the following additional steps:
+
+- Later Microsoft Dynamics 365 Supply Chain Management version (10.0.48)
+- Turn on specific feature for impact analysis in feature management *(Production ready preview) Procurement Agent - Impact analysis*
+- Activate the triggering power automate flow for impact analysis (*(Production ready preview) Setup Procurement Agent - Impact analysis*) <-- LS: Will updated shortly after public preview date -->
 
 ## Prerequisites
 
