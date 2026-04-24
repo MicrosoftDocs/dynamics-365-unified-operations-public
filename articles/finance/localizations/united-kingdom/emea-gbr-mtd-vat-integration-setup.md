@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/25/2025
+ms.date: 04/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-07-30
@@ -234,7 +234,7 @@ To define the VAT registration number that the MTD VAT feature in Finance uses t
 1. On the **Message additional fields** FastTab, in the **Tax registration number** field, enter the VAT registration number that you want to use to send the VAT return to HMRC.
 1. Save your changes.
 
-If you don't specify the VAT registration number in the **Tax registration number** additional field of the **UK MTD VAT returns** processing, the system retrieves it from the registration ID that you define in the properties of the legal entity that's associated with the **VAT ID** registration category. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
+If you don't specify the VAT registration number in the **Tax registration number** additional field of the **UK MTD VAT returns** processing, the system retrieves it from the registration ID that you define in the properties of the legal entity that's associated with the **VAT ID** registration category. Learn about detailed concepts, setup guidance, and examples in [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 
 ## <a id="format"></a>Generate the VAT statement (VAT 100 report) in paper format
 

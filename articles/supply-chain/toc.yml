@@ -3165,6 +3165,8 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Use establishments on sales order lines
+          href: sales-marketing/establishments-on-sales-order-lines.md
         - name: Use external item identifiers to add products to orders
           href: sales-marketing/external-item-product-search-lookup.md
         - name: Copy lines between sales orders
