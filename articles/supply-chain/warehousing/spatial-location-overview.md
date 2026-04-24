@@ -102,7 +102,7 @@ The *distance calculation strategy* controls how the system measures the distanc
 
 The *straight-line calculation strategy* works best for open warehouse layouts where workers can move diagonally, such as open floor areas or wide-aisle warehouses. It calculates the direct (Euclidean) distance between two points. It assumes that workers can move freely in any direction between locations. It's calculated using the formula:
 
-    $distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (\lvert z_2 \rvert + \lvert z_1 \rvert)^2}$
+$distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (\lvert z_2 \rvert + \lvert z_1 \rvert)^2}$
 
 The horizontal component uses the difference in X and Y coordinates. The vertical component uses the sum of the absolute heights of both locations (as explained in the [Vertical distance calculation](#vertical-distance-calculation) section).
 
@@ -110,7 +110,7 @@ The horizontal component uses the difference in X and Y coordinates. The vertica
 
 The *city-block calculation strategy* works best for warehouses with aisle-based layouts where workers walk along aisles and turn corners rather than cutting across open space. It calculates the distance along a grid-like path (also known as Manhattan distance). It assumes that workers must follow aisles and can't cut diagonally. It's calculated using the formula:
 
-    $distance = \lvert x_2 - x_1 \rvert + \lvert y_2 - y_1 \rvert + \lvert z_2 \rvert + \lvert z_1 \rvert$
+$distance = \lvert x_2 - x_1 \rvert + \lvert y_2 - y_1 \rvert + \lvert z_2 \rvert + \lvert z_1 \rvert$
 
 The horizontal component sums the absolute differences in X and Y separately, which means the distance reflects the path a worker takes along aisles (first walking along one axis, then the other). The vertical component uses the sum of the absolute heights of both locations (as explained in the [Vertical distance calculation](#vertical-distance-calculation) section).
 
