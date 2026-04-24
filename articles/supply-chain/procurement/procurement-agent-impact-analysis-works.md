@@ -1,15 +1,21 @@
 ---
-title: How impact analysis works
+title: How impact analysis works (production ready preview)
 description: Understand how impact analysis works to identify and resolve issues caused by purchase order line changes, ensuring smooth order fulfillment.
-#customer intent: As a purchaser and planner, I want to understand how impact analysis uses planning data and pegging relationships to determine if supplier changes have impact, so that I can understand and trust the outcome.
 author: lisascholz91
 ms.author: lisascholz
-ms.reviewer: lisascholz
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: concept-article
 ms.date: 04/24/2026
-ms.topic: article
+ms.custom:
+  - bap-template
 ---
 
-# How impact analysis works
+# How impact analysis works (production ready preview)
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This article explains how impact analysis determines whether a purchase order line change has downstream impact. It runs automatically based on configured sources, but can also be manually initiated.
 

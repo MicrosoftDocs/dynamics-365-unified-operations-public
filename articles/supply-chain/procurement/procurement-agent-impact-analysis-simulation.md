@@ -1,15 +1,21 @@
 ---
-title: procurement-agent-impact-analysis-simulation.md
+title: Simulate purchase order changes and review their impact (production ready preview)
 description: Simulate purchase order changes and review their impact in real time. Take control of your procurement process and make data-driven decisions with confidence.
-#customer intent: As a planner, I want to test the impact of changing receipt dates or quantities on a purchase order so that I can proactively manage supply chain risks.
 author: lisascholz91
 ms.author: lisascholz
-ms.reviewer: lisascholz
-ms.date: 04/24/2026
+ms.reviewer: kamaybac
+ms.search.form:
 ms.topic: how-to
+ms.date: 04/24/2026
+ms.custom:
+  - bap-template
 ---
 
-# Simulate if purchase order changes have impact
+# Simulate if purchase order changes have impact (production ready preview)
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The impact simulation capability allows purchasers and planners to test the impact of changes not directly or explicitly communicated through e-mails via configured channels. This could be proactively testing potential changes to critical or at-risk purchase orders, seeing if changes received through external channels have an impact, or evaluating if supplier follow-up proposals to increase quantities or deliver earlier solves the impact.
 

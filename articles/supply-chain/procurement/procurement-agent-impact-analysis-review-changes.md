@@ -1,17 +1,21 @@
 ---
-title: procurement-agent-impact-analysis-review-changes
+title: Review impact of purchase order changes from vendors (production ready preview)
 description: Purchase order impact analysis helps you review and respond to vendor changes in Dynamics 365. Learn how to assess and manage supply chain risks.
-#customer intent: As a purchaser, I want to review the impact of vendor-initiated purchase order changes so that I can make informed decisions before accepting or rejecting them.
 author: lisascholz91
 ms.author: lisascholz
-ms.reviewer: lisascholz
-ms.date: 04/24/2026
+ms.reviewer: kamaybac
+ms.search.form:
 ms.topic: how-to
+ms.date: 04/24/2026
+ms.custom:
+  - bap-template
 ---
 
-# Review impact of purchase order changes from vendors
+# Review impact of purchase order changes from vendors (production ready preview)
 
-[This article is prerelease documentation and is subject to change.]
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The impact analysis can automatically run based on supplier changes received through emails or the Vendor Collaboration Module. Whichever is configured will also show the results of the impact analysis for review directly in existing pages in Dynamics 365, so the purchaser can decide how to respond in their existing workflow.
 

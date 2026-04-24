@@ -1,21 +1,27 @@
 ---
-title: procurement-agent-impact-analysis-setup.md
-description: "Set up Procurement Agent impact analysis: Follow this guide to configure features, assign permissions, and activate Power Automate flows in Dynamics 365."
-#customer intent: As an IT admin, I want to enable the required features and update apps in Dynamics 365 Supply Chain Management so that impact analysis works as expected.
+title: Set up impact analysis (production ready preview)
+description: Learn how to configure features, assign permissions, and activate Power Automate flows in Dynamics 365.
 author: lisascholz91
 ms.author: lisascholz
-ms.reviewer: lisascholz
-ms.date: 04/21/2026
-ms.topic: install-set-up-deploy
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 04/24/2026
+ms.custom:
+  - bap-template
 ---
 
-# Set up impact analysis
+# Set up impact analysis (production ready preview)
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This article describes how to set up impact analysis as a standalone Procurement Agent capability for use with the Vendor Collaboration Module and/or manual simulation. If you want to use both supplier communications and impact analysis together, and already have set up supplier communications, you will need to adhere to the following additional prerequisites:
 
 - Later Microsoft Dynamics 365 Supply Chain Management version
 - Turn on specific feature for impact analysis in feature management
-- <!-- Triggering power automate flow for impact analysis - LS: Will updated shortly after public preview date -->
+<!-- - Triggering power automate flow for impact analysis - LS: Will updated shortly after public preview date -->
 
 ## Prerequisites
 

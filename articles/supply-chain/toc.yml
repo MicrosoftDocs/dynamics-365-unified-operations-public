@@ -2455,13 +2455,11 @@
           href: procurement/tasks/create-project-purchase-order.md
         - name: Create a repeat purchase order
           href: procurement/tasks/create-repeat-purchase-order.md
-      - name: Procurement Agent
+      - name: Procurement Agent (production ready preview)
         items:
         - name: Procurement Agent overview
           href: procurement/procurement-agent-overview.md
-        - name: Set up the Procurement Agent
-          href: procurement/procurement-agent-setup.md
-        - name: Impact analysis
+        - name: Impact analysis (production ready preview)
           items:
           - name: Impact analysis overview
             href: procurement/procurement-agent-impact-analysis-overview.md
