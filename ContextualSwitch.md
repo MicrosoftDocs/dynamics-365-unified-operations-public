@@ -61,6 +61,7 @@ https://{your-cpos-url}/POS?actionName={actionName}&param={base64-encoded-json}
 - Store Commerce version 10.0.48 or later.
 - The `StoreCommerce.EnableDeepLinkFlight` feature flag must be enabled (enabled by default).
 - The user must be logged in. If the user is not logged in when a URL is received, Store Commerce queues the request and processes it after login.
+- Use the latest version of Commerce SDK i.e., SDK versions 9.58 or higher if you are building your Store Commerce app.
 
 ## Supported platforms
 
