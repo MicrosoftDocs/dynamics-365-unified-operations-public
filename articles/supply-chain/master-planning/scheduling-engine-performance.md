@@ -40,9 +40,9 @@ To understand how a given setup affects performance, it's important to know how 
 
 The basic process of scheduling an order consists of three main steps:
 
-- **Loading data** û X++ data models transform into the engine's internal data model as jobs and constraints.
-- **Scheduling** û The engine processes the given model and constraints to generate a result. It requests working time information and existing capacity reservations from X++ as needed.
-- **Save data** û X++ code processes the engine result, in the form of job capacity reservation slots, to save capacity reservations and update the start and end times of the jobs, operation, or order.
+- **Loading data** - X++ data models transform into the engine's internal data model as jobs and constraints.
+- **Scheduling** - The engine processes the given model and constraints to generate a result. It requests working time information and existing capacity reservations from X++ as needed.
+- **Save data** - X++ code processes the engine result, in the form of job capacity reservation slots, to save capacity reservations and update the start and end times of the jobs, operation, or order.
 
 ## Load data into the engine
 
@@ -67,7 +67,7 @@ The standard link between two jobs is `FinishStart`, which means the end time of
 For operation 20, where the quantity of resources has been set to 3, the process job has been split into three distinct jobs where all the jobs must run at the exact same time.
 In this case, the route group has been set up to not reserve capacity for queue after times, which is why there's only a single job for the queue after.
 
-The scheduling engine understands only the concepts of jobs and doesnÆt recognize operations. This means that when doing operation scheduling, the operations are also split into jobs, although these won't be persisted in the database.
+The scheduling engine understands only the concepts of jobs and doesn'y recognize operations. This means that when doing operation scheduling, the operations are also split into jobs, although these won't be persisted in the database.
 
 For each job, we'll also define what the job capacity requirement is (the number of seconds required). Depending on how the resource requirements have been defined, we might also, for each job, send a list of all the potential applicable resources that the job could run on and what the capacity requirement is for that specific resource. Although the list of applicable resources is sent when building the model, the engine ensures the resource assignment stays valid for the entire job duration.
 
@@ -217,7 +217,7 @@ When scheduling with multiple engine instances, the result isn't fully determini
 
 Operation scheduling, also known as rough-cut capacity planning, can be harder to solve from an engine standpoint if finite capacity is used because more data is needed to determine feasibility.
 
-The capacity of a resource group depends on which and how many resources are members of the resource group. A resource group itself doesn't have any capacityùonly when resources are members of the group does it have capacity. Because the resource group membership can vary over time, capacity must be evaluated per day.
+The capacity of a resource group depends on which and how many resources are members of the resource group. A resource group itself doesn't have any capacity-only  when resources are members of the group does it have capacity. Because the resource group membership can vary over time, capacity must be evaluated per day.
 
 In operations scheduling, the resource group's calendar is used to determine the start and end times for each operation. This means that the resource group's calendar places a limit on how much time can be operations scheduled for one operation on one day in one resource group. Unlike the calendar for specific resources, the efficiency data of the resource group's calendar is ignored because it only denotes opening hours, not actual capacity.
 
@@ -251,10 +251,10 @@ To get specific details of the input and output of the scheduling process, enabl
 
 On this page, select **Enable logging** on the Action Pane and then run the scheduling for the production order. When complete, return to the **Scheduling tracing cockpit** page and select **Disable logging** on the Action Pane. Refresh the page, and a new line appears in the grid. Select the new line, and then select **Download** on the Action Pane. This will give you a .zip compressed folder containing the following files:
 
-- **Log.txt** û This is the log file that describes the steps the engine goes through. It's detailed and can be overwhelming, but when experimenting with the route setup to resolve performance problems, look for the time difference between the first and last line. This shows the exact time the scheduler spent.
-- **XmlModel.xml** û This contains the model that is built in X++ and that the engine operates on. The `JobId` used in the file correlates to the `RecId` from the source table containing the jobs (`ReqRouteJob` or `ProdRouteJob`). In this file, check that the dates in `ConstraintJobStartsAt` and `ConstraintJobEndsAt` are as expected, the `JobGoal` property is set correctly, and the jobs are related through the `JobLink` constraints.
-- **XmlSlots.xml** û This contains all the working times and capacity reservations that the engine has requested. The calendar working times and reservations will only be requested by the engine for the time periods where it tries to place the jobs (and an extra buffer), so if the file contains times very far in the future, it might be an indication of a problem with the setup. The `ResourceProperty` nodes display the resource group and capabilities associated with each resource, along with the relevant time periods.
-- **Result.xml** û This contains the result of the scheduling run.
+- **Log.txt** - This is the log file that describes the steps the engine goes through. It's detailed and can be overwhelming, but when experimenting with the route setup to resolve performance problems, look for the time difference between the first and last line. This shows the exact time the scheduler spent.
+- **XmlModel.xml** - This contains the model that is built in X++ and that the engine operates on. The `JobId` used in the file correlates to the `RecId` from the source table containing the jobs (`ReqRouteJob` or `ProdRouteJob`). In this file, check that the dates in `ConstraintJobStartsAt` and `ConstraintJobEndsAt` are as expected, the `JobGoal` property is set correctly, and the jobs are related through the `JobLink` constraints.
+- **XmlSlots.xml** - This contains all the working times and capacity reservations that the engine has requested. The calendar working times and reservations will only be requested by the engine for the time periods where it tries to place the jobs (and an extra buffer), so if the file contains times very far in the future, it might be an indication of a problem with the setup. The `ResourceProperty` nodes display the resource group and capabilities associated with each resource, along with the relevant time periods.
+- **Result.xml** - This contains the result of the scheduling run.
 
 The tracing functionality adds significant performance overhead, so use it only to investigate scheduling specific orders in a controlled manner. If it's turned on during a master planning run, it will quickly reach its size limit and stop.
 
