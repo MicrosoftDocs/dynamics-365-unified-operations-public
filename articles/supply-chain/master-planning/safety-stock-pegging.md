@@ -4,8 +4,10 @@ description: Learn how to specify how strictly the system should peg safety stoc
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 01/10/2024
+ms.date: 04/25/2026
 ms.custom: bap-template
+ms.collection:
+  - ai-assisted
 ms.reviewer: kamaybac
 ms.search.form:
 ---
@@ -41,3 +43,11 @@ Safety stock pegging options are set at the coverage group level. Follow these s
 
     - *No* – Safety stock isn't considered actual demand, and any actual demand is prioritized over it. Although a planned order can be created to fulfill safety stock, any actual demand that arrives later can claim the planned safety stock quantity. (The actual demand will be pegged against the planned order.) This option lets you provide a higher level of service for your customers.
     - *Yes* – The system applies strict safety stock pegging. Any planned order that's created to fulfill safety stock remains pegged against safety stock. If this option is selected, whenever the system calculates that a planned order is needed to fulfill safety stock, that safety stock remains prioritized over real demand. This option can provide better visibility in some scenarios, such as when you're using a large number of negative days.
+
+> [!IMPORTANT]
+> When you enable strict safety stock pegging, the system ignores pegging priority for safety stock planned orders. This behavior can lead to unreliable net requirements pegging and the creation of unwanted planned orders, because the safety stock demand is always prioritized regardless of any pegging priority rules you configured. Before you enable this option, carefully evaluate whether the trade-off between safety stock visibility and potential over-ordering is acceptable for your planning scenario. For more information about how safety stock behavior differs between the deprecated master planning engine and Planning Optimization, see [Safety stock fulfillment with the deprecated master planning engine](safety-stock-replenishment-in-deprecated-engine.md#differences-in-safety-stock-functionality).
+
+## Related information
+
+- [Safety stock fulfillment for items](safety-stock-replenishment.md)
+- [Safety stock fulfillment with the deprecated master planning engine](safety-stock-replenishment-in-deprecated-engine.md)

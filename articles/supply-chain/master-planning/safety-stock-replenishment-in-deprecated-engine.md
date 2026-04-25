@@ -4,8 +4,10 @@ description: Learn how safety stock functionality differs when you use the depre
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 04/19/2023
+ms.date: 04/25/2026
 ms.custom: bap-template
+ms.collection:
+  - ai-assisted
 ms.reviewer: kamaybac
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 ---
@@ -25,6 +27,9 @@ The following table summarizes the differences in safety stock functionality bet
 | **Meaning of safety stock** | <p>Safety stock ensures that the accumulated on-hand inventory is always above the minimum value that's defined in the item coverage settings for each item.</p><p>Safety stock isn't actual demand.</p><p>Demand is prioritized over the safety stock.</p> | <p>Safety stock is a demand just like other types of demand.</p><p>You can choose when safety stock will be fulfilled.</p> |
 | **When safety stock is fulfilled** | Safety stock is always fulfilled on *Today's date* + *Procurement time*, regardless of the setting for the item coverage. | On the **Item coverage** page for an item, on the **General** tab, the **Fulfill minimum** field defines when the safety stock must be fulfilled. The options are *Today's date*, *Today's date + procurement time*, *First issue*, and *Coverage time fence*. |
 | **Safety stock pegging and net requirements** | The *Safety stock* requirement type isn't included and isn't shown on the **Net requirements** page. Safety stock doesn't represent demand, and no requirement date is associated with it. Instead, it sets a constraint on the amount of inventory that must be present at all times. However, the value of the **Minimum** field is still considered when planned orders are calculated during master planning. We recommend that you inspect the **Accumulated quantity** column on the **Net requirements** page to confirm that this value was considered. Because the pegging differs, different actions might be suggested. | Safety stock is a demand type, similar to a sales order line, forecast line, or bill of materials (BOM) line. Master planning will always fulfill it on the date that's specified in the **Fulfill minimum** field. In some cases, safety stock might take precedence over actual demand fulfillment. |
+
+> [!NOTE]
+> When strict safety stock pegging is enabled, the system ignores pegging priority for safety stock planned orders. This can result in unreliable net requirements pegging and the creation of unwanted planned orders. For more information about strict safety stock pegging, see [Safety stock pegging options](safety-stock-pegging.md).
 
 ## Safety stock fulfillment date options
 
