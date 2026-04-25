@@ -4,9 +4,11 @@ description: Learn how negative on-hand is handled, including a step-by-step pro
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 07/22/2021
+ms.date: 04/25/2026
 ms.custom:
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
+ms.collection:
+  - ai-assisted
 ms.search.form: ReqCreatePlanWorkspace
 ---
 
@@ -76,5 +78,27 @@ The system is configured in the following way:
 - The sales order quantity is physically reserved against existing on-hand inventory.
 
 You then adjust the quantity of product *FG* so that the on-hand inventory becomes 5. Because the on-hand product inventory is 5, the sales order quantity is now reserved against quantity that is not available on-hand (it would be similar if on-hand were 0, in which case the sales order would be reserved against negative inventory). If you run master planning now, a planned order of quantity 5 for *FG* will be created to supply the sales order, because master planning will always use existing supply or create a new planned order to supply the physical reservation.
+
+## Handle negative on-hand with coverage groups
+
+Because Planning Optimization treats negative aggregate on-hand as 0 (zero), you might need to configure your coverage groups to ensure that inventory is replenished to the levels your business requires. To control how the system responds to negative on-hand scenarios, you can define minimum and maximum quantities in item coverage groups.
+
+To configure coverage groups for handling negative on-hand, follow these steps:
+
+1. Go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**.
+1. Select or create a coverage group, and then set the **Coverage code** field to *Min/Max*.
+1. Go to **Master planning** > **Master planning** > **Setup** > **Coverage** > **Item coverage** for the relevant items.
+1. Set the **Minimum** field to the lowest inventory level that you want to maintain.
+1. Set the **Maximum** field to the target inventory level for replenishment.
+
+When you run master planning, the system creates planned orders to bring inventory back up to the maximum level whenever the projected on-hand falls below the minimum level. This approach helps maintain appropriate inventory levels even when the system encounters negative on-hand quantities.
+
+For more information about coverage codes and how each replenishment method works, see [Coverage settings](../../coverage-settings.md).
+
+## Related information
+
+- [Differences between Planning Optimization and the deprecated master planning engine](planning-optimization-differences-with-built-in.md)
+- [Coverage settings](../../coverage-settings.md)
+- [Safety stock fulfillment for items](../../safety-stock-replenishment.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
