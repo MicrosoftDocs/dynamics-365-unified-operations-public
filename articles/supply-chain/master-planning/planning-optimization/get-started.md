@@ -6,9 +6,11 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.topic: how-to
-ms.date: 03/10/2026
+ms.date: 04/25/2026
 ms.custom:
   - bap-template
+ms.collection:
+  - ai-assisted
 ---
 
 # Get started with master planning
@@ -37,7 +39,10 @@ To use Planning Optimization, you must make sure your system has all of the prer
 
 Before you install the Planning Optimization Add-in, the following prerequisites must be in place:
 
-- You must be running Supply Chain Management on an Lifecycle Services enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
+- You must be running Supply Chain Management on a Lifecycle Services enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
+
+    > [!IMPORTANT]
+    > Planning Optimization can't be installed on a development (OneBox) environment. It requires a Lifecycle Services–enabled, high-availability environment, tier 2 or higher. If you need to troubleshoot installation issues, see [Troubleshoot Planning Optimization](planning-optimization-trouble-shooting.md).
 
 - Your system must be set up for Power Platform integration. Learn more in [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
