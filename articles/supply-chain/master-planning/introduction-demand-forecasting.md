@@ -6,9 +6,11 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ReqDemPlanCreateForecastDialog
 ms.topic: how-to
-ms.date: 01/30/2025
+ms.date: 04/25/2026
 ms.custom: 
   - bap-template
+ms.collection:
+  - ai-assisted
 ---
 
 # Demand forecasting overview
@@ -76,6 +78,21 @@ The first part of authorizing forecast (**Demand forecast UOM \> Inventory UOM**
 > [!NOTE]
 > The demand forecast UOM doesn't have to have any specific meaning. It can be defined as *Demand forecast unit*. For each of the products, you can define the conversion to be 1:1 with the inventory UOM.
 
+## Troubleshoot demand forecasting
+
+If you experience issues with demand forecasting, review the following table for guidance on common tasks and scenarios before you contact support.
+
+| Area | Description | Learn more |
+|---|---|---|
+| Setup and configuration | Configure demand forecasting parameters, allocation keys, Machine Learning connections, and intercompany planning groups. | [Demand forecasting setup](demand-forecasting-setup.md) |
+| Baseline forecast generation | Generate a statistical baseline forecast from historical transaction data using Azure Machine Learning. | [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md) |
+| Forecast adjustments | Make manual adjustments to a baseline forecast before authorizing it for use in master planning. | [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md) |
+| Forecast authorization | Authorize adjusted demand forecasts so they can be consumed by the master planning process. | [Authorize an adjusted forecast](authorize-adjusted-forecast.md) |
+| Forecast accuracy | Monitor and measure the accuracy of demand forecasts to improve future predictions. | [Monitor forecast accuracy](monitor-forecast-accuracy.md) |
+| Outlier removal | Identify and remove outliers from historical transaction data to improve forecast quality. | [Remove outliers from historical transaction data](remove-historical-outliers-calculating-demand-forecast.md) |
+| Forecast reduction | Understand how demand forecasts are reduced by actual transactions during master planning, including differences between Planning Optimization and the deprecated engine. | [Master planning with demand forecasts](planning-optimization/demand-forecast.md) |
+| Business process guidance | Review the end-to-end business process for demand forecasting within the Forecast to Plan scenario. | [Forecast to Plan: Demand forecasting overview](/dynamics365/guidance/business-processes/forecast-to-plan-demand-forecasting-overview) |
+
 ## Related information
 
 - [Demand forecasting setup](demand-forecasting-setup.md)
@@ -85,6 +102,8 @@ The first part of authorizing forecast (**Demand forecast UOM \> Inventory UOM**
 - [Monitor forecast accuracy](monitor-forecast-accuracy.md)
 - [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
 - [Intercompany planning groups for demand forecasting](intercompany-planning-groups-demand-forecasting.md)  
+- [Master planning with demand forecasts](planning-optimization/demand-forecast.md)
+- [Forecast to Plan: Demand forecasting overview](/dynamics365/guidance/business-processes/forecast-to-plan-demand-forecasting-overview)
 - [Video: Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 - [Webinar: Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
