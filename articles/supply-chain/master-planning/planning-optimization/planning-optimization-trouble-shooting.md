@@ -6,9 +6,11 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: troubleshooting-general
-ms.date: 03/10/2026
+ms.date: 04/25/2026
 ms.custom:
   - bap-template
+ms.collection:
+  - ai-assisted
 ---
 
 # Troubleshoot Planning Optimization
@@ -280,10 +282,21 @@ After running a master plan, you might receive the following error:
 
 If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is being tracked by serial number, then the serial number dimension can't be used as a coverage dimension because the system doesn't know which serial numbers should be supplied. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
 
+## Company information tab is blank on the Planning Optimization parameters page
+
+When you open the **Planning Optimization parameters** page and select the **Company information** tab, the tab appears blank. The **Exclude company from running Planning Optimization** toggle might also appear greyed out and disabled.
+
+This behavior is by design. The **Company information** tab and toggle are only relevant for companies that have been granted an exception to continue using the deprecated master planning engine. Starting from Supply Chain Management version 10.0.41, Planning Optimization is the standard master planning engine for all new deployments and legal entities. If your company wasn't enabled to use the deprecated planning engine, the **Company information** tab is intentionally empty and the toggle is disabled because there's no need to configure an exclusion.
+
+If your company received an exception to use the deprecated planning engine and you still see the tab as blank, create a support ticket stating the reason for the exception.
+
+For more information, see [Continue to use deprecated master planning with existing companies](../continue-using-deprecated-planning.md) and [Migration to Planning Optimization for master planning](../new-master-planning-engine.md).
+
 ## Related information
 
 - [Get started with master planning](get-started.md)
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
 - [Differences between Planning Optimization and the deprecated master planning engine](planning-optimization-differences-with-built-in.md)
+- [Continue to use deprecated master planning with existing companies](../continue-using-deprecated-planning.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
