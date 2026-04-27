@@ -46,7 +46,7 @@ The basic process of scheduling an order consists of three main steps:
 
 ## Load data into the engine
 
-The scheduling engine uses a more abstract data model than the Supply Chain Management database because itÆs a generic engine that handles multiple data sources. The concepts of route, secondary operations, and run time are translated into the generic job and constraint model that the engine exposes. The logic for building the model includes significant business logic and varies depending on the source data. The responsible X++ class is `WrkCtrScheduler`, which includes derived classes for planned production orders, released production orders, and project forecasts.
+The scheduling engine uses a more abstract data model than the Supply Chain Management database because it's a generic engine that handles multiple data sources. The concepts of route, secondary operations, and run time are translated into the generic job and constraint model that the engine exposes. The logic for building the model includes significant business logic and varies depending on the source data. The responsible X++ class is `WrkCtrScheduler`, which includes derived classes for planned production orders, released production orders, and project forecasts.
 
 For example, consider a route shown in the following table and image, which is relatively simple.
 
@@ -67,7 +67,7 @@ The standard link between two jobs is `FinishStart`, which means the end time of
 For operation 20, where the quantity of resources has been set to 3, the process job has been split into three distinct jobs where all the jobs must run at the exact same time.
 In this case, the route group has been set up to not reserve capacity for queue after times, which is why there's only a single job for the queue after.
 
-The scheduling engine understands only the concepts of jobs and doesn'y recognize operations. This means that when doing operation scheduling, the operations are also split into jobs, although these won't be persisted in the database.
+The scheduling engine understands only the concepts of jobs and doesn't recognize operations. This means that when doing operation scheduling, the operations are also split into jobs, although these won't be persisted in the database.
 
 For each job, we'll also define what the job capacity requirement is (the number of seconds required). Depending on how the resource requirements have been defined, we might also, for each job, send a list of all the potential applicable resources that the job could run on and what the capacity requirement is for that specific resource. Although the list of applicable resources is sent when building the model, the engine ensures the resource assignment stays valid for the entire job duration.
 
@@ -217,7 +217,7 @@ When scheduling with multiple engine instances, the result isn't fully determini
 
 Operation scheduling, also known as rough-cut capacity planning, can be harder to solve from an engine standpoint if finite capacity is used because more data is needed to determine feasibility.
 
-The capacity of a resource group depends on which and how many resources are members of the resource group. A resource group itself doesn't have any capacity-only  when resources are members of the group does it have capacity. Because the resource group membership can vary over time, capacity must be evaluated per day.
+The capacity of a resource group depends on which and how many resources are members of the resource group. A resource group itself doesn't have any capacity—only when resources are members of the group does it have capacity. Because the resource group membership can vary over time, capacity must be evaluated per day.
 
 In operations scheduling, the resource group's calendar is used to determine the start and end times for each operation. This means that the resource group's calendar places a limit on how much time can be operations scheduled for one operation on one day in one resource group. Unlike the calendar for specific resources, the efficiency data of the resource group's calendar is ignored because it only denotes opening hours, not actual capacity.
 
