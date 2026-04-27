@@ -1,6 +1,6 @@
 ---
 title: Deep links for Dynamics 365 ERP MCP (preview)
-description: A desciption for genaration and use of deep link URLs through the Dynamics 365 ERP MCP server
+description: Learn about generating and using deep link URLs through the Dynamics 365 ERP MCP server
 author: jaredha
 ms.author: jaredha
 ms.reviewer: johnmichalak
@@ -24,14 +24,14 @@ The target for the deep link navigation depends on the number of records retriev
 | Prompt | MCP request | Response |
 | ------ | ----------- | -------- |
 | In which customer group is customer account US-001? | The MCP server uses the `data_find_entities_sql` tool to query the CustomersV3 entity for the given customer. | The MCP response includes: <ul><li>The customer group for the customer.</li><li>A deep link URL to the `CustTable` details form for the customer</li></ul> |
-| Show me all customers whose name begins with "Contoso". | The MCP server uses the `data_find_entities_sql` tool to query the CustomersV3 entity to find all customers where the name is like 'Contoso%'. | The MCP response includes: <ul><li>The list of all customers whose name starts with "Contoso".</li><li>A deep link URL to the `CustTable` list page, with a filter applied to the Name column for only values that begin with "Contoso".</li></ul> |
-| Confirm sales order 000811. | The MCP server uses form tools to open select the "Confirm now" action on the `SalesTableDetails` form for order number 000811. | The MCP response includes: <ul><li>Detail about the confirmed sales order.</li><li>A deep link URL to the `SalesTable` list page, with a filter applied limiting the list to the single record for order number 000811.</li></ul>
+| Show me all customers whose name begins with "Contoso". | The MCP server uses the `data_find_entities_sql` tool to query the CustomersV3 entity to find all customers where the name is like 'Contoso%'. | The MCP response includes: <ul><li>The list of all customers whose name starts with "Contoso".</li><li>A deep link URL to the `CustTable` list page, with a filter applied to the **Name** column for only values that begin with "Contoso".</li></ul> |
+| Confirm sales order 000811. | The MCP server uses form tools to open select the **Confirm now** action on the `SalesTableDetails` page for order number 000811. | The MCP response includes: <ul><li>Detail about the confirmed sales order.</li><li>A deep link URL to the `SalesTable` list page, with a filter applied limiting the list to the single record for order number 000811.</li></ul>
 
 The MCP deep link feature returns the deep link URL in the MCP response, but this feature doesn't necessarily mean that the agent orchestrator automatically formats and displays the deep link to the user in the agent response. Each agent client might have different formats and surfaces for displaying deep links and citations. You might need to add guidance in your agent instructions on how to format and display the deep link in the agent response. For example, in an agent in Copilot Studio, you can add instructions similar to the following:
 
 ```
-# Citation And Deep Links Instructions
-- Tool responses may include citations in a `DeepLinks` array in the JSON body. Each deep link has a `Url` and `Label`. Always include these links in your response as clickable markdown links (e.g. `🔗 Label`) so the user can navigate directly to the referenced form or record in D365.
+# Citation and deep link instructions
+- Tool responses may include citations in a `DeepLinks` array in the JSON body. Each deep link has a `Url` and `Label`. Always include these links in your response as clickable markdown links (e.g. `Label`) so the user can navigate directly to the referenced form or record in D365.
 - Always render DeepLinks URLs exactly as returned by tools — never reconstruct, simplify, or strip query parameters (including encoded q= parameters). Use the full URL verbatim in markdown link syntax.
 ```
 
@@ -49,19 +49,16 @@ When the navigation results in multiple matching records, the `McpDeepLinkBrowse
 
 The MCP has multiple sets of tools for completing MCP operations. Because of the differences in technologies among the tool sets, the deep link URL is generated differently depending on the MCP tool used to fulfill the request. This also results in slightly different behavior for the deep link navigation, noted in the examples in the previous section.
 
-**For SQL-based MCP tools**, filters are extracted from the WHERE clause of the tool query. A three-tier link generation strategy is then applied:
-
+For SQL-based MCP tools, filters are extracted from the WHERE clause of the tool query. A three-tier link generation strategy is then applied:
 1. A complete set of filtered records is derived from the query.
 1. If the system can't fully resolve the filters against the available filters on the list page, it falls back to a per-record deep link. For example, for queries that have complex joins or subqueries, the filters might not be fully resolved.
-1. If record-level filtering isn't possible, the deep link URL targets the relevant list page without filters. The user can then manually filter the form to find the relevant record.
+1. If record-level filtering isn't possible, the deep link URL targets the relevant list page without filters. The user can then manually filter the page to find the relevant record.
 
-**For OData-based MCP tools:**
-
+For OData-based MCP tools:
 - After create or update operations, the system generates deep links by using entity key fields.
 - The system supports entity-to-table field resolution, including fields from joined data sources. For example, `OrganizationName` on the entity resolves to `DirPartyTable.Name` on the data source of the related form.
 
-**For form-based MCP tools:**
-
+For form-based MCP tools:
 - The active form's primary table and tracked filter expressions are captured.
 - If the main form doesn't contain usable filters, the system attempts to use filters from subform data sources.
 
@@ -98,7 +95,7 @@ Optionally, add the `crossCompany=true` parameter to the URL to display data fro
 ## Known limitations
 
 - The system doesn't generate deep links for aggregate data entities (AxAggregateDataEntity) because it can't resolve them to base tables.
-- Complex SQL queries that include joins, subqueries, conditional logic, or arithmetic expressions in the WHERE clause fall back to per-record deep links.
+- Complex SQL queries that include joins, subqueries, conditional logic, or arithmetic expressions in the WHERE clause fall-back to per-record deep links.
 - SQL aggregation queries, such as those that use GROUP BY, SUM, or COUNT, don't generate deep links.
 - The McpDeepLinkBrowser currently provides view-only navigation and doesn't support click-through to detail forms.
 - The entity resolver can't currently resolve the PurchaseRequisitionNumber field on PurchReqTable.
