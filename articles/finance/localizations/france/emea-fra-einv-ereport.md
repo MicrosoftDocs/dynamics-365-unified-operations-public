@@ -159,7 +159,7 @@ The system preconfigures electronic documents when you deploy the globalization 
    - **Failed**
    - **Pending update actions execution**
 
-:::image type="content" source="e-invoice-fra-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
+:::image type="content" source="e-invoice-fra-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
 1. For the **Customer invoice response** electronic document, select **Response types**.
 1. Select **New** to create a new response type.
@@ -204,7 +204,7 @@ The system preconfigures electronic documents when you deploy the globalization 
 1. In the **Model mapping** field, select the **Import vendor invoice** mapping from the **Vendor invoice import Edicom (FR)** configuration.
 1. Select **Save**, and then close the page.
 
-:::image type="content" source="e-invoice-fra-integr-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
+:::image type="content" source="e-invoice-fra-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
 
 > [!NOTE]
 > If you use integration channels names other than **InvStatus**, **EdiStatus**, and **EdiImport**, or import source name other than **ResponseXml**, you need to make related changes in the involved context configurations and invoicing feature setups' applicability rules and variables.
@@ -272,7 +272,7 @@ If you configure Branch IDs, the system uses them as electronic addresses for ro
 To support scenarios when companies have multiple subsidiaries with their own registration numbers such as SIREN, SIRET, VAT ID, and Branch ID as an electronic address, you need to activate and configure the **Establishments** functionality. For more information, see the following articles:
 
 - [Invoice party applicability rules for registration categories](../../../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md)
-- [Establishments in France](emea-fra-establishments-in-france.md)
+- [Establishments in France](emea-fra-establishments-for-france.md)
 - [Registration numbers setup for France](emea-fra-registration-numbers-setup-for-france.md)
 
 > [!NOTE]
@@ -358,7 +358,7 @@ Set up electronic document properties.
 1. Save your changes, and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-   :::image type="content" source="emea-fra-einvoices-e-addresses.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
+   :::image type="content" source="emea-fra-e-invoices-addresses.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
 
 ### Enter the seller electronic address
 
@@ -486,7 +486,7 @@ After you complete the required configuration steps, generate and submit electro
 - **Inquiring statuses of submitted e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Failed** if the submitted invoice is **Rejected** by Edicom due to various reasons, or **Pending update actions execution** if the submitted invoice is successfully validated by Edicom and the system is ready for further processing.
 - **Update statuses of submitted e-invoices** - at this stage, D365 and Edicom can intercommunicate exchanging different e-invoices statuses until the concluding status is reached or due to pre-configured timeout.
 
-:::image type="content" source="e-invoice-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
+:::image type="content" source="e-invoice-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
 ### Submission of e-invoices to Edicom
 
