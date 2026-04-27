@@ -17,7 +17,7 @@ The deep links capability in the Dynamics 365 ERP MCP server enables responses g
 
 ## Deep link navigation
 
-The deep link URL is returned as a parameter in the response to requests to the MCP server. The agent can then format the URL to include it in the agent response to the user.
+The response to requests to the MCP server returns the deep link URL as a parameter. The agent can then format the URL to include it in the agent response to the user.
 
 The target for the deep link navigation depends on the number of records retrieved in the response. If a single record is returned in the response, the deep link targets the details form for that single record. A prompt that returns multiple records in the response includes a single deep link to a list page in the client, filtered to the records returned in the response. Consider the following examples:
 
@@ -43,23 +43,26 @@ When you invoke a deep link, the system evaluates the query filters and determin
 | ------------ | ------------------- |
 | 0 records | Displays a modal error dialog |
 | 1 result with formRef | Opens the record's detail form directly. |
-| Multiple results, or no formRef | Opens the `McpDeepLinkBrowser` grid view to display the list of records. This is a dynamically-generated grid view. Data sources and columns are created at runtime and supported columns may include joined table fields. Column order is defined as: <ol><li>Primary key fields</li><li>Company (dataAreaId) for cross-company queries</li><li>Filtered fields</li><li>Remaining available fields</li></ol> |
+| Multiple results, or no formRef | Opens the `McpDeepLinkBrowser` grid view to display the list of records. This view is dynamically generated. Data sources and columns are created at runtime, and supported columns might include joined table fields. The column order is defined as: <ol><li>Primary key fields</li><li>Company (dataAreaId) for cross-company queries</li><li>Filtered fields</li><li>Remaining available fields</li></ol> |
 
 When the navigation results in multiple matching records, the `McpDeepLinkBrowser` provides a dynamically generated grid view.
 
-The MCP has multiple sets of tools for completing MCP operations. Because of the differences in technologies among the tool sets, the deep link URL is generated differently depending on the MCP tool used to fulfill the request. This also results in slightly different behavior for the deep link navigation, noted in the examples in the previous section.
+The MCP has multiple sets of tools for completing MCP operations. Because of the differences in technologies among the tool sets, the deep link URL is generated differently depending on the MCP tool used to fulfill the request. This difference also results in slightly different behavior for the deep link navigation, as noted in the examples in the previous section.
 
-For SQL-based MCP tools, filters are extracted from the WHERE clause of the tool query. A three-tier link generation strategy is then applied:
-1. A complete set of filtered records is derived from the query.
+For SQL-based MCP tools, the system extracts filters from the WHERE clause of the tool query. It then applies a three-tier link generation strategy:
+
+1. The system derives a complete set of filtered records from the query.
 1. If the system can't fully resolve the filters against the available filters on the list page, it falls back to a per-record deep link. For example, for queries that have complex joins or subqueries, the filters might not be fully resolved.
 1. If record-level filtering isn't possible, the deep link URL targets the relevant list page without filters. The user can then manually filter the page to find the relevant record.
 
 For OData-based MCP tools:
+
 - After create or update operations, the system generates deep links by using entity key fields.
 - The system supports entity-to-table field resolution, including fields from joined data sources. For example, `OrganizationName` on the entity resolves to `DirPartyTable.Name` on the data source of the related form.
 
 For form-based MCP tools:
-- The active form's primary table and tracked filter expressions are captured.
+
+- The system captures the active form's primary table and tracked filter expressions.
 - If the main form doesn't contain usable filters, the system attempts to use filters from subform data sources.
 
 ### Deep link URL format
@@ -95,7 +98,7 @@ Optionally, add the `crossCompany=true` parameter to the URL to display data fro
 ## Known limitations
 
 - The system doesn't generate deep links for aggregate data entities (AxAggregateDataEntity) because it can't resolve them to base tables.
-- Complex SQL queries that include joins, subqueries, conditional logic, or arithmetic expressions in the WHERE clause fall-back to per-record deep links.
+- Complex SQL queries that include joins, subqueries, conditional logic, or arithmetic expressions in the WHERE clause fall back to per-record deep links.
 - SQL aggregation queries, such as those that use GROUP BY, SUM, or COUNT, don't generate deep links.
 - The McpDeepLinkBrowser currently provides view-only navigation and doesn't support click-through to detail forms.
 - The entity resolver can't currently resolve the PurchaseRequisitionNumber field on PurchReqTable.
