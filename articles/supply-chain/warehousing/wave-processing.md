@@ -93,7 +93,7 @@ When a wave is created but isn't yet released, you can manually specify what to 
     Repeat this step for each line to add. To add all lines, select **Add all**.
 
     > [!TIP]
-        > For shipment waves, you can quickly find a specific order by selecting a custom filter in the **Wave filter code** field. Wave filter codes contain query criteria for shipments created in the **Wave filters** form. This field isn't available for production waves or kanban waves.
+    > For shipment waves, you can quickly find a specific order by selecting a custom filter in the **Wave filter code** field. Wave filter codes contain query criteria for shipments created in the **Wave filters** form. This field isn't available for production waves or kanban waves.
     > A green check mark in the **On wave** column indicates that the shipment is added to the wave.
 
 ### Process the wave to create the picking work
@@ -168,9 +168,9 @@ If needed, you can cancel a wave that you processed. To cancel a wave, and the p
 
 1. Depending on the type of wave to cancel, go to one of the following locations:
 
-            - **Warehouse management** > **Outbound waves** > **Shipment waves** > **All waves**.
-            - **Warehouse management** > **Outbound waves** > **Production waves** > **All production waves**.
-            - **Warehouse management** > **Outbound waves** > **Kanban waves** > **All kanban waves**.
+    - **Warehouse management** > **Outbound waves** > **Shipment waves** > **All waves**.
+    - **Warehouse management** > **Outbound waves** > **Production waves** > **All production waves**.
+    - **Warehouse management** > **Outbound waves** > **Kanban waves** > **All kanban waves**.
 
 1. Select the wave to cancel. On the Action Pane, on the **Work** tab, select **Cancel**.
 
