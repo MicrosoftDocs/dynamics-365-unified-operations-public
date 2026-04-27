@@ -532,7 +532,7 @@ As part of the document lifecycle, some buyer responses for successfully submitt
 
 You can run the procedure multiple times to retrieve various lifecycle document statuses from Edicom until it reaches a **termination** status code or a predefined **timeout**.
 
-If any termination document status code is reached, the related document's submission status will be updated to **Completed** - this concludes the lifecycle of the document. All other, "non-termination", document statuses are for information only and keep the **Pending update actions execution** submission status intact.
+If the procedure reaches any termination document status code, it updates the related document's submission status to **Completed** - this status concludes the lifecycle of the document. All other, non-termination, document statuses are for information only and keep the **Pending update actions execution** submission status intact.
 
 :::image type="content" source="e-inv-fra-update-status.jpg" alt-text="Screenshot of submission log statuses.":::
 
