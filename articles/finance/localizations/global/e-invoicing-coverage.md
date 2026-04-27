@@ -2,13 +2,8 @@
 title: Supported electronic invoicing countries and regions
 description: This article describes for which countries and regions electronic invoicing is supported or planned in Microsoft Dynamics 365 Finance.
 author: ilikond
-<<<<<<< FR_E_invoice
 ms.date: 04/24/2026
 ms.topic: article
-=======
-ms.date: 01/06/2026
-ms.topic: concept-article
->>>>>>> main
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -59,7 +54,8 @@ The next section contains detailed information about out-of-box e-invoicing func
 <<<<<<< FR_E_invoice
 | Egypt | <p>Generation and direct submission to the Egyptian Tax Authority of electronic invoices for sales and project invoices, credit notes, and debit notes in the country/region-specific format.</p><p>Learn more: [Electronic invoicing in Egypt](../mea/gs-e-invoicing-eg-get-started.md)</p> | Available |
 =======
-| Egypt | <p>Generation and direct submission to the Egyptian Tax Authority of electronic invoices for sales and project invoices, credit notes, and debit notes in the country/region-specific format.</p><p>Learn more: [Electronic invoicing in Egypt ](../mea/gs-e-invoicing-eg-get-started.md)</p> | Available |
+| Egypt | <p>Generation and direct submission to the Egyptian Tax Authority of electronic invoices for sales and project invoices, credit notes, and debit notes in the country/region-specific format.</p><p>Learn more: [Electronic invoicing in Egypt](../mea/gs-e-invoicing-eg-get-started.md)</p> | Available |
+
 >>>>>>> main
 | Estonia | <p>Generation of electronic invoices for sales and project invoices and credit notes in the country/region-specific format.</p><p>Learn more: [Export of customers electronic invoices in Estonia](https://support.microsoft.com/topic/a-country-specific-update-for-estonia-to-support-export-of-customers-electronic-invoices-in-microsoft-dynamics-365-finance-3f3295b4-62f8-ff24-169a-794379d1fce4)</p> | Available |
 | Finland | <p>Generation of electronic invoices for sales and project invoices and credit notes in the **Finvoice** format.</p><p>Learn more: [Export of customers electronic invoices in Finland](https://support.microsoft.com/topic/a-country-specific-update-for-finland-to-support-export-of-customers-electronic-invoices-in-microsoft-dynamics-365-finance-72a33347-e68c-5b39-dbbb-ee9a59d3671f)</p> | Available |
