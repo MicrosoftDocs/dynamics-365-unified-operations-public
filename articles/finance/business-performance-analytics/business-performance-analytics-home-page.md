@@ -85,7 +85,7 @@ Business performance analytics is an innovative reporting tool that is included 
 
 ## Data reporting capacity
 
-Customers who use Business performance analytics are currently entitled to report on up to eight quarters of data. The volume of data is also constrained by the storage capacity of the A3 SKU for Power BI Embedded. Customers that can't fit their data within the constraints of the Power BI A3 SKU should consider waiting for a future release, where additional data reporting capacity will be available. That future release will expand the data limits, so that larger data sets can be reported and analyzed.
+Customers who use Business performance analytics are currently entitled to report on up to eight quarters of data. The volume of data is also constrained by the storage capacity of the A6 SKU for Power BI Embedded. Customers that can't fit their data within the constraints of the Power BI A6 SKU should consider waiting for a future release, where additional data reporting capacity will be available. That future release will expand the data limits, so that larger data sets can be reported and analyzed.
 
 ## Data refresh frequency
 
