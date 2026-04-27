@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.48
 
 This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified service provider acting as an Approved Platform (*Plateforme Agréée* - **PA**).
 
-:::image type="content" source="emea-fra-einoices-flow.jpg" alt-text="Screenshot of the e-invoicing and e-reporting flow for France.":::
+:::image type="content" source="emea-fra-einvoices-flow.jpg" alt-text="Screenshot of the e-invoicing and e-reporting flow for France.":::
 
 > [!NOTE]
 > This electronic invoicing approach uses an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
@@ -159,7 +159,7 @@ The system preconfigures electronic documents when you deploy the globalization 
    - **Failed**
    - **Pending update actions execution**
 
-:::image type="content" source="e-inv-fra-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
+:::image type="content" source="e-invoice-fra-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
 1. For the **Customer invoice response** electronic document, select **Response types**.
 1. Select **New** to create a new response type.
@@ -204,7 +204,7 @@ The system preconfigures electronic documents when you deploy the globalization 
 1. In the **Model mapping** field, select the **Import vendor invoice** mapping from the **Vendor invoice import Edicom (FR)** configuration.
 1. Select **Save**, and then close the page.
 
-:::image type="content" source="e-inv-fra-integr-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
+:::image type="content" source="e-invoice-fra-integr-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
 
 > [!NOTE]
 > If you use integration channels names other than **InvStatus**, **EdiStatus**, and **EdiImport**, or import source name other than **ResponseXml**, you need to make related changes in the involved context configurations and invoicing feature setups' applicability rules and variables.
@@ -358,7 +358,7 @@ Set up electronic document properties.
 1. Save your changes, and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-   :::image type="content" source="emea-fra-einoices-e-addresses.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
+   :::image type="content" source="emea-fra-einvoices-e-addresses.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
 
 ### Enter the seller electronic address
 
@@ -416,7 +416,7 @@ For Project invoices, the functionality of Advanced notes doesn't apply. Follow 
 1. Save your changes and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-:::image type="content" source="e-inv-fra-properties.jpg" alt-text="Screenshot of the properties types configuration.":::
+:::image type="content" source="e-invoice-fra-properties.jpg" alt-text="Screenshot of the properties types configuration.":::
 
 #### Enter the Legal Entity mandatory notes
 
@@ -486,7 +486,7 @@ After you complete the required configuration steps, generate and submit electro
 - **Inquiring statuses of submitted e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Failed** if the submitted invoice is **Rejected** by Edicom due to various reasons, or **Pending update actions execution** if the submitted invoice is successfully validated by Edicom and the system is ready for further processing.
 - **Update statuses of submitted e-invoices** - at this stage, D365 and Edicom can intercommunicate exchanging different e-invoices statuses until the concluding status is reached or due to pre-configured timeout.
 
-:::image type="content" source="e-inv-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
+:::image type="content" source="e-invoice-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
 ### Submission of e-invoices to Edicom
 
@@ -534,7 +534,7 @@ You can run the procedure multiple times to retrieve various lifecycle document 
 
 If the procedure reaches any termination document status code, it updates the related document's submission status to **Completed** - this status concludes the lifecycle of the document. All other, non-termination, document statuses are for information only and keep the **Pending update actions execution** submission status intact.
 
-:::image type="content" source="e-inv-fra-update-status.jpg" alt-text="Screenshot of submission log statuses.":::
+:::image type="content" source="e-invoice-fra-update-status.jpg" alt-text="Screenshot of submission log statuses.":::
 
 You can configure the status codes for successful or unsuccessful termination and the timeout period in days in the related feature setup parameters.
 To configure the parameters, follow these steps.
@@ -547,7 +547,7 @@ To configure the parameters, follow these steps.
 1. Select the **Number of days** parameter. In the **Value** column, enter the number of days after which the pipeline terminates regardless of the processing document status.
 1. Complete and deploy the feature.
 
-:::image type="content" source="e-inv-fra-termination.jpg" alt-text="Screenshot of termination parameters configuration.":::
+:::image type="content" source="e-invoice-fra-termination.jpg" alt-text="Screenshot of termination parameters configuration.":::
 
 ## Receive incoming electronic invoices
 
