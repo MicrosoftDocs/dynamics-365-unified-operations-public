@@ -108,7 +108,7 @@ To create the required connections, follow these steps:
 
 ### <a name="trigger-flows"></a>Activate the triggering Power Automate flows
 
-<!-- LS: The engineers caught this part too late so we will not be able to have it available by April 24th. Either we leave it knowing it will not be there right away (but soon after), or we leave it blank and saying "coming soon" or "to be updated soon"? I know this is not ideal. -->
+<!-- LS: The engineers caught this part too late so we will not be able to have it available by April 24th. This section must be updated to reflect the final version before we publish this topic. -->
 
 To finish setting up the agent identity, you must activate the triggering Power Automate flows. Follow these steps to use a canvas app and finish the setup.
 
