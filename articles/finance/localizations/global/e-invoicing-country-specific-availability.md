@@ -3,8 +3,8 @@ title: Availability of Electronic Invoicing Service features by country or regio
 description: Learn about the out-of-box features that are available for each country or region, including overviews on generally available features.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
-ms.date: 09/22/2025
+ms.topic: concept-article
+ms.date: 04/13/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak

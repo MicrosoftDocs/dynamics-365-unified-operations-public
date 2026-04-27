@@ -4,7 +4,7 @@ description: Learn how to design an Electronic reporting (ER) format that keeps 
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 02/28/2022
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -18,27 +18,26 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
+This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) [format](er-overview-components.md#format-component) that generates outbound documents in Microsoft Excel and manage document pagination so that rows that are created stay on the same page.
 
-This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) [format](er-overview-components.md#format-component) that generates outbound documents in Microsoft Excel and manage document pagination so that rows that are created are kept on the same page.
+In this example, you modify the Microsoft-provided ER format that's used to print free text invoices in Excel. Your modifications let you manage the pagination of a generated free text invoice report so that all the rows of a single invoice line stay on the same page when possible.
 
-In this example, you will modify the Microsoft-provided ER format that is used to print free text invoices in Excel. Your modifications will let you manage the pagination of a generated free text invoice report so that all the rows of a single invoice line are kept on the same page when possible.
+You can complete the procedures in this article in the **USMF** company. No coding is required.
 
-The procedures in this article can be completed in the **USMF** company. No coding is required.
-
-In this example, you will create the required ER [configurations](general-electronic-reporting.md#Configuration) for the **Litware, Inc.** sample company. Make sure that the configuration provider for the **Litware, Inc.** (`http://www.litware.com`) sample company is listed for the ER framework, and that it's marked as **Active**. If this configuration provider isn't listed, or if it isn't marked as **Active**, follow the steps in [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+In this example, you create the required ER [configurations](general-electronic-reporting.md#Configuration) for the **Litware, Inc.** sample company. Make sure that the configuration provider for the **Litware, Inc.** (`http://www.litware.com`) sample company is listed for the ER framework, and that it's marked as **Active**. If this configuration provider isn't listed, or if it isn't marked as **Active**, follow the steps in [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## Enter a new free text invoice
 
 1. Follow the steps in [Create a free text invoice](../../../finance/accounts-receivable/create-free-text-invoice-new.md#create-a-free-text-invoice-1) to add a free text invoice.
 
     1. Add a single line to the invoice.
-    2. Add five notes for the invoice line.
+    1. Add five notes for the invoice line.
 
-    ![Reviewing the invoice line notes on the Attachments page.](./media/er-keep-excel-rows-together-notes.png)
+    :::image type="content" source="./media/er-keep-excel-rows-together-notes.png" alt-text="Screenshot of reviewing the invoice line notes on the Attachments page.":::
 
-2. Follow the steps in [Copy lines](../../../finance/accounts-receivable/create-free-text-invoice-new.md#copy-lines) to create five additional invoice lines that are copies the invoice line that you added in the previous step.
+1. Follow the steps in [Copy lines](../../../finance/accounts-receivable/create-free-text-invoice-new.md#copy-lines) to create five additional invoice lines that are copies of the invoice line that you added in the previous step.
 
-    ![Reviewing the free text invoice lines on the Free text invoice page.](./media/er-keep-excel-rows-together-invoice.png)
+    :::image type="content" source="./media/er-keep-excel-rows-together-invoice.png" alt-text="Screenshot of reviewing the free text invoice lines on the Free text invoice page.":::
 
 ## Configure the ER framework
 
@@ -46,7 +45,7 @@ Follow the steps in [Configure the ER framework](er-quick-start2-customize-repor
 
 ## Import the standard ER format configuration
 
-Follow the steps in [Import the standard ER format configuration](er-quick-start2-customize-report.md#ImportERSolution1) to add the standard ER configurations to your current instance of Dynamics 365 Finance. For example, import version **252.116** of the **Free text invoice (Excel)** format configuration. Base version **252** of the base **Invoice model** configuration is automatically imported from the repository together with the required **Invoice model mapping** configuration.
+Follow the steps in [Import the standard ER format configuration](er-quick-start2-customize-report.md#ImportERSolution1) to add the standard ER configurations to your current instance of Dynamics 365 Finance. For example, import version **252.116** of the **Free text invoice (Excel)** format configuration. The base version **252** of the base **Invoice model** configuration is automatically imported from the repository together with the required **Invoice model mapping** configuration.
 
 ## Set up print management to use the standard ER format
 
@@ -59,27 +58,27 @@ Follow the steps in [Configure a format destination for on-screen preview](er-qu
 ## Print a free text invoice by using the standard ER format
 
 1. Follow the steps in [Print a free text invoice](er-embed-images-header-footer-excel-reports.md#ProcessInvoice1) to use the standard ER format to generate a free text invoice report in Excel format for the added invoice.
-2. Download the generated Excel workbook, and review it in the Excel desktop application.
+1. Download the generated Excel workbook, and review it in the Excel desktop application.
 
     Notice that the sixth line of the invoice starts on the first page of the report and continues on the second page. The last note appears on the second page, and it isn't obvious that it belongs to the sixth invoice line. Therefore, the page break in the middle of the content for the invoice line makes this document more difficult to read.
 
-    ![Reviewing the pagination of the generated free text invoice in the Excel desktop application.](./media/er-keep-excel-rows-together-invoice1.gif)
+    :::image type="content" source="./media/er-keep-excel-rows-together-invoice1.gif" alt-text="Screenshot of reviewing the pagination of the generated free text invoice in the Excel desktop application.":::
 
 The remaining procedures in this article show how you can tune the standard ER format to improve the look and readability of the invoice report by keeping all the content for a single invoice line on the same page.
 
 ## Create a custom format
 
-Follow the steps in [Create a custom format](er-embed-images-header-footer-excel-reports.md#DeriveProvidedFormat) to derive a format from the imported ER format and create a **Free text invoice (Excel) custom** ER configuration that is available for editing and modification.
+Follow the steps in [Create a custom format](er-embed-images-header-footer-excel-reports.md#DeriveProvidedFormat) to derive a format from the imported ER format and create a **Free text invoice (Excel) custom** ER configuration that you can edit and modify.
 
 ## Edit the custom format
 
 1. Follow the steps in [Create a custom format](er-embed-images-header-footer-excel-reports.md#ConfigureDerivedFormat) to open the derived ER format for editing in the ER format designer.
-2. On the **Format designer** page, in the format component tree in the left pane, expand **Free text invoice \> Sheet \> InvoiceLines**, and select the **InvoiceLines_Values** component.
-3. On the **Format** tab, set the **Keep rows together** option to **Yes**.
+1. On the **Format designer** page, in the format component tree in the left pane, expand **Free text invoice \> Sheet \> InvoiceLines**, and select the **InvoiceLines_Values** component.
+1. On the **Format** tab, set the **Keep rows together** option to **Yes**.
 
-    ![Setting the Keep rows together option for the editable ER format on the Format designer page.](./media/er-keep-excel-rows-together-format.png)
+    :::image type="content" source="./media/er-keep-excel-rows-together-format.png" alt-text="Screenshot of setting the Keep rows together option for the editable ER format on the Format designer page.":::
 
-4. Select **Save**, and close the page.
+1. Select **Save**, and close the page.
 
 ## Mark the custom format as runnable
 
@@ -96,11 +95,11 @@ Follow the steps in [Configure a format destination for on-screen preview](er-qu
 ## Print a free text invoice by using the custom ER format
 
 1. Follow the steps in [Print a free text invoice](er-embed-images-header-footer-excel-reports.md#ProcessInvoice2) to use the custom ER format to generate a free text invoice report in Excel format for the added invoice.
-2. Download the generated Excel workbook, and review it in the Excel desktop application.
+1. Download the generated Excel workbook, and review it in the Excel desktop application.
 
     Notice that the sixth line of the invoice starts on the second page, and all the Excel rows that represent this invoice line appear together on that page.
 
-    ![Reviewing the updated pagination of the generated free text invoice in the Excel desktop application.](./media/er-keep-excel-rows-together-invoice2.gif)
+    :::image type="content" source="./media/er-keep-excel-rows-together-invoice2.gif" alt-text="Screenshot of reviewing the updated pagination of the generated free text invoice in the Excel desktop application.":::
 
 ## Additional resources
 

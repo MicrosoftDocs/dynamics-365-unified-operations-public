@@ -32,7 +32,7 @@ If you don't already have cloud subscription licenses, work with your cloud serv
 
 ## Configure Lifecycle Services cloud implementation project
 
-If no finance and operations cloud-named user subscription licenses have previously been activated on the Microsoft Entra tenant, a new Microsoft Dynamics Lifecycle Services cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have a Lifecycle Services cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Microsoft Entra tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
+If no finance and operations cloud-named user subscription licenses have previously been activated on the Microsoft Entra tenant, a new Microsoft Dynamics Lifecycle Services cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have a Lifecycle Services cloud implementation project created. For more information, see [Multiple Microsoft Dynamics Lifecycle Services projects and production environments on one Microsoft Entra tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
 
 After your Lifecycle Services cloud implementation project has been created, you must fully configure it. As part of this configuration, you must complete the following steps (and others):
 

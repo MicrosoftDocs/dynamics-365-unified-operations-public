@@ -3,7 +3,7 @@ title: Payment slip report for Europe
 description: Learn about payment slip reports for Europe, including an outline on setting up a creditor ID number for financial institutions in Denmark.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User

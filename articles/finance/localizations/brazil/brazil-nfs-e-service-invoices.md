@@ -4,7 +4,7 @@ description: Learn about the steps to set up and generate Brazilian NFS-e Servic
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.date: 01/07/2026
+ms.date: 04/15/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 01/02/2026
@@ -138,5 +138,10 @@ To import e-invoicing configuration files, follow these steps:
 ## Generate NFS-e service electronic invoices
 
 After you complete all the required configuration steps, you can generate electronic invoices for posted invoices by going to **Accounts receivable > Periodic tasks > NFS-e export**.
+
+## Additional resources
+
+- [Set up Brazil reformed tax](brazil-reform-setup.md)
+- [Work with NFS-e service invoices for projects](brazil-nfs-e-service-invoices-projects.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

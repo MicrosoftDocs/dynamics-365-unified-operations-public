@@ -3,7 +3,7 @@ title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.date: 12/17/2025
+ms.date: 04/15/2026
 ms.topic: article
 ms.custom: 
   - bap-template
@@ -33,12 +33,17 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| Italy | March 2026 | 10.0.48, also available in prior versions | Updated [Unique certification](../italy/emea-ita-exil-unique-certification.md) (Certificazione Unica) form aligned with the provision of January 15, 2026 (Prot. n. 9454/2026) for tax year 2025. |
+| Lithuania | March 2026 | 10.0.48, also available in prior versions | New VMI VAT codes PVM58, PVM59, and PVM60 for [i.SAF reporting](../lithuania/emea-ltu-isaf.md), effective from January 1, 2026, aligned with the updated 12% VAT rate classification. |
+| Lithuania | March 2026 | 10.0.48, also available in prior versions | Updated [VAT declaration (FR0600)](../lithuania/emea-ltu-vat-declaration-lithuania.md) with a new field 29A to support the 12% VAT rate, effective from January 1, 2026. |
+| Spain | March 2026 | 10.0.48, also available in prior versions | Updated [Declaration 347](../spain/emea-esp-declaration-347-report.md) annual informative return for fiscal year 2025. |
+| Spain | February 2026 | 10.0.48, also available in prior versions | Updated [VAT declaration Model 303](../spain/emea-esp-vat-declaration-spain.md) registry design for fiscal year 2026. |
+| Germany | January 2026 | 10.0.48, also available in prior versions | Support for generating the [EU Sales list for Germany](../germany/emea-deu-eu-sales-list.md) in XML file format. |
 | Netherlands | December 2025 | 10.0.47, also available in prior versions | Regulatory update to support version 4.0 of [Audit file (XML Auditfile Financieel, XAF)](../netherlands/emea-nl-audit-file.md). |
 | Poland | December 2025 | 10.0.47, also available in prior versions | Regulatory update to support version (3) of [VAT declaration for Poland, JPK-V7](../poland/emea-pol-vdek.md), effective from February 1, 2026. |
 | United Kingdom | November 2025 | 10.0.47, also available in prior versions | Regulatory update to support [Statistics on payment practices report](../united-kingdom/emea-gbr-statistics-on-payment-practices-report.md) the Reporting on Payment Practices and Performance (Amendment) Regulations 2025. |
 | Germany | November 2025 | 10.0.47, also available in prior versions | EU Sales list for Germany in CSV format. [EU Sales list for Germany](../germany/emea-deu-eu-sales-list.md) |
-| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support generating the e-Bupot file 
- \([Withholding tax report for Indonesia](../indonesia/apac-idn-wht-declaration.md)\) for reporting periods starting from 2025 based on the withholding tax transactions.  |	
+| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support generating the e-Bupot file \([Withholding tax report for Indonesia](../indonesia/apac-idn-wht-declaration.md)\) for reporting periods starting from 2025 based on the withholding tax transactions.  |	
 | Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support  generating the [SPT Masa PPN \(Pajak Pertambahan Nilai\) VAT declaration](../indonesia/apac-idn-ppn-declaration.md) in Excel format for reporting periods starting from 2025. |	
 | Estonia | July 2025 | 10.0.46, also available in prior versions | Regulatory update to support changes in VAT declaration format for Estonia 2025. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
 | Australia | May 2025| 10.0.45, 10.0.44HF, 10.0.43HF, 10.0.42HF | Regulatory update to support changes in Payment times reporting schema (PTRS) required for Australian legal entities for periods from July 1, 2024. [Payment times reporting schema](../australia/apac-aus-payment-times-report.md) |
@@ -75,11 +80,8 @@ For the latest regulatory update plans, refer to the following table.
 |      Poland      |   April 2023| 10.0.34 | Updates Payment terms in commercial transactions report (PL-00053) in accordance to D20222414L |
 |      Saudi Arabia      |   November 2022| 10.0.32 | Retail - Electronic invoicing in Saudi Arabia - Phase 2 |
 
-
 ## Additional resources
-- For more information about all planned and released country/region-specific regulatory updates, see [Search for country/region-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
-- For a list of the localizations that are supported, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
-
-
+- For more information about all planned and released country or region-specific regulatory updates, see [Search for country/region-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
+- For a list of the supported localizations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
