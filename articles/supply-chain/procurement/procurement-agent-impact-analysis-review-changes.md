@@ -39,7 +39,7 @@ To enable impact analysis to run based on change requests coming through one or 
 The supplier communications features of the Procurement Agent classify whether emails from vendors are confirmations, change requests, or related to something else (indicated as *Other*). If you enable impact analysis, it runs automatically for all the change requests you receive.
 
 1. Open the **(Preview) Emails from vendors** page by doing one of the following steps:
-    - Go to: **Procurement and sourcing** \> **Purchase order receipt and follow-up**. Then select the **(Preview) Emails from vendors** tile.
+    - Go to **Procurement and sourcing** \> **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace. Then select the **(Preview) Emails from vendors** tile.
     - Go to **Procurement and sourcing** \> **(Preview) Procurement Agent - Supplier communications** \> **(Preview) Emails from vendors**.
 
 1. Select an email classified as a *Change request* in the list pane, and then look at the change summary table, where changed fields are highlighted in bold. <!-- KFM: I didn't see any of these features here. I couldn't confirm the remaining part of this procedure. -->
