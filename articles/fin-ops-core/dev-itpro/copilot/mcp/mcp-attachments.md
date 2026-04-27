@@ -133,7 +133,7 @@ The action to perform the upload isn't built directly into the MCP server. A flo
    - In the **Choose a variable** dialog, select the **Formula** tab, and enter the following formula: `First(System.Activity.Attachments).Name`.
    - Select **Insert**.
 1. **Save** the tool.
-1. If you didn't already, add the Dynamics 365 ERP MCP server as a tool in your agent by following the steps outlined in [Build an agent with Dynamics 365 ERP MCP](../build-agent-mcp).
+1. If you didn't already, add the Dynamics 365 ERP MCP server as a tool in your agent by following the steps outlined in [Build an agent with Dynamics 365 ERP MCP](../build-agent-mcp.md).
 
 You can then begin prompting the agent to attach files you add to your agent to records in the ERP.
 
