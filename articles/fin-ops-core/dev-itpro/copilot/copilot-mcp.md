@@ -4,7 +4,7 @@ description: Learn how to use a Model Context Protocol (MCP) server to create an
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 03/11/2026
+ms.date: 04/27/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -37,11 +37,11 @@ Before you can use the Dynamics 365 ERP MCP server, you must meet the following 
 - Your environment is Tier 2 or above, or a Unified Developer Environment. The MCP server isn't supported on Cloud Hosted Environments (CHE).
 
 > [!NOTE]
-> An earlier version of the MCP server, known as the "static Dynamics 365 ERP MCP" server, built on the Dataverse connector framework, has 13 tools that enable specific business functions for Dynamics 365 Finance and Supply Chain Management. This static server will be **retired in the 2026 calendar year**. The server is still available in finance and operations apps environments with version 10.0.2263.17 and greater. However, to avoid disruption when the static server is retired, use the new dynamic Dynamics 365 ERP MCP server that is the subject of this documentation.
+> An earlier version of the MCP server, known as the "static Dynamics 365 ERP MCP" server, built on the Dataverse connector framework, has 13 tools that enable specific business functions for Dynamics 365 Finance and Supply Chain Management. This static server is **retired in the 2026 calendar year**. The server is still available in finance and operations apps environments with version 10.0.2263.17 and greater. However, to avoid disruption when the static server is retired, use the new dynamic Dynamics 365 ERP MCP server that is the subject of this documentation.
 
 ## Dynamic MCP tools
 
-The Dynamics 365 ERP MCP server has three categories of tools for working with the data and business logic of finance and operations apps:
+The Dynamics 365 ERP MCP server provides three categories of tools for working with the data and business logic of finance and operations apps:
 
 - **Data tools:** These tools enable the agent to perform standard data operations to create, read, update, and delete data in your finance and operations apps environment.
 - **Form tools:** These tools enable the agent to perform operations that are available on pages in the application.  
@@ -51,7 +51,7 @@ The Dynamics 365 ERP MCP server has three categories of tools for working with t
 
 Data tools in the MCP server enable the agent to work with application data through data entities. The agent can use these tools to perform Create, Read, Update, Delete (CRUD) operations with the application data in your environment.
 
-Working with data through data entities is more efficient for standard CRUD operations, providing better performance and fewer tool calls to perform the operations than using the form tools described in the next section. If you find that your agent is using form tools for operations that the agent could perform more optimally through data tools, you can improve performance by adding guidance in your agent instructions on which tools the agent should use for your scenarios. The agent orchestration should then use these tools to translate the natural language prompts in the agent into data operations performed in the finance and operations apps environment.
+Working with data through data entities is more efficient for standard CRUD operations. It provides better performance and requires fewer tool calls to perform the operations than using the form tools described in the next section. If you find that your agent is using form tools for operations that the agent could perform more optimally through data tools, you can improve performance by adding guidance in your agent instructions on which tools the agent should use for your scenarios. The agent orchestration should then use these tools to translate the natural language prompts in the agent into data operations performed in the finance and operations apps environment.
 
 The following data tools are available in the Dynamics 365 ERP MCP server.
 
@@ -60,8 +60,8 @@ The following data tools are available in the Dynamics 365 ERP MCP server.
 | `data_find_entity_type` | Find OData entity types. This tool is needed for calling the `data_get_entity_metadata` tool. The tool returns multiple top hits that might be related to your query. You decide which one matches your search. |
 | `data_get_entity_metadata` | Get metadata for an entity. This metadata is needed for calling the `data_find_entities`, `data_create_entities`, `data_update_entities`, and `data_delete_entities` tools. |
 | `data_create_entities` | Create data records by using OData. Deep inserts aren't supported for create. |
-| `data_delete_entities` | Delete data records by using OData. | 
-| `data_update_entities` | Update data records by using OData. | 
+| `data_delete_entities` | Delete data records by using OData. |
+| `data_update_entities` | Update data records by using OData. |
 | `data_find_entities` | Find or read data records by using OData. |
 | `data_find_entities_sql` | Find or read records by using SQL. This tool replaces the `data_find_entities` tool that uses OData in version 10.0.48 of finance and operations apps. |
 
@@ -92,6 +92,7 @@ The following form tools are available in the Dynamics 365 ERP MCP server.
 | `form_sort_grid_column` | Sort a grid by a grid column |
 
 ### Action tools
+
 Action tools enable the agent to find and directly invoke classes in finance and operations apps code that agents can use. While working through data entities and form interactions makes millions of actions available to agents, there might be scenarios where the action or business logic isn't available through the entities or application client, or the agent needs direct access to the logic through code.
 
 In these situations, a developer can write a class in finance and operations apps code to make the business logic available through the MCP server. The developer creates the class by using the AI tool framework. You can find and invoke any classes created as AI tools that implement the `ICustomAPI` interface and have appropriate security defined for the associated menu action item in the MCP server by using the `api_find_actions` and `api_invoke_action` tools. Classes that are configured correctly to use the `ICustomAPI` interface as AI tools appear in the list on the **Synchronize Dataverse Custom APIs** (CustomApiTable) form.
@@ -118,6 +119,7 @@ Similarly, the entities returned in the response to the `data_find_entity_type` 
 Limiting the menu items, entities, and APIs by using roles is important for limiting the scope of the agent. It also improves agent orchestration by limiting the context the agent needs to orchestrate over to find the right form, data, or actions.
 
 ## Allowed MCP clients
+
 When you enable the Dynamics 365 ERP MCP server in your environment, you choose which agent platforms can access the server. By default, only the following two platforms can access the MCP server:
 
 | Platform | Client ID |
@@ -133,13 +135,15 @@ You must grant access to any other agent platforms that need to access the MCP s
 ## Licensing
 
 ### Billing rates for standard user licenses
+
 Two types of costs are associated with using the Dynamics 365 ERP MCP server in an agent:
+
 1. The agent orchestration cost (LLM cost), and
 1. The MCP server execution cost (tool calls to the server).
 
 These costs differ when you use the MCP server in Microsoft Copilot Studio versus other agent clients, such as Microsoft Foundry or non-Microsoft clients. When you use the MCP server in Copilot Studio, the tool calls align with the *Agent Action* feature, which bills at a fixed rate per tool call. In Copilot Studio, billing for the *Agent Action* feature includes both the LLM cost for orchestration and the execution of the MCP server. Because Copilot Studio is a low-code platform, it abstracts away the variable LLM cost of token consumption and provides a fixed rate for both orchestration and tool invocation. There's no incremental charge for the execution cost of the MCP server.
 
-For agents built on other agent clients, usage of the Dynamics 365 ERP MCP server incurs a cost of 1 copilot credit per 10 tool calls to the server (or .1 credits per tool call). This is an incremental cost charged by Microsoft for the execution of the MCP server. The cost for the LLM orchestration is a separate charge by the agent client for token consumption, based on that rates of that client.
+For agents built on other agent clients, usage of the Dynamics 365 ERP MCP server incurs a cost of 1 copilot credit per 10 tool calls to the server (or 0.1 credits per tool call). This cost is an incremental charge by Microsoft for the execution of the MCP server. The cost for the LLM orchestration is a separate charge by the agent client for token consumption, based on the rates of that client.
 
 |  | Microsoft Copilot Studio | Other agent client |
 | - | ----------------------- | ------------------ |
@@ -147,17 +151,21 @@ For agents built on other agent clients, usage of the Dynamics 365 ERP MCP serve
 | **Tool execution cost** | Included in the fixed orchestration rate | Billed at **0.1 Copilot Credits** per tool call |
 
 For more information about Copilot Studio licensing and credits, see:
+
 - [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management)
 - [Microsoft Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995).
 
 ### Premium user licenses
+
 The following premium licenses are exempt from the tool execution billing *for agents built on clients other than Copilot Studio*. Agents built on Copilot Studio continue to bill at the fixed rate per tool call for users with these premium licenses.
+
 - Dynamics 365 Finance Premium
 - Dynamics 365 Supply Chain Management Premium
 
 For Copilot Studio agents, agent usage is included in the Microsoft 365 Copilot license. Business to Employee usage of Copilot Studio agents is included in the Microsoft 365 Copilot USL when the user of that agent is licensed with Microsoft 365 Copilot and the agent operates by using the authenticated Microsoft 365 Copilot USL user's identity. In these cases, the tool calls to the Dynamics 365 ERP MCP server don't incur additional credit consumption.
 
 ### Agent licenses
+
 Currently, you don't need Dynamics 365 finance and operations user licenses for your agent's identity. While users who interact with a chat-based agent need a user license for the Dynamics 365 application to access the data and business operations of the application, the agent identity doesn't need an additional license. This requirement also applies to autonomous agents without an interactive user, as long as the agent is either built in Microsoft Copilot Studio or accesses Dynamics 365 finance and operations through any of the Dynamics 365 ERP MCP servers.
 
 Agent identities are exempt from Dynamics 365 finance and operations user license requirements when you assign them to the **System agent** security role in Dynamics 365 finance and operations apps. The role is available by default for Dynamics 365 finance and operations apps environments. It provides no permissions and has no duties or privileges assigned to it, and you shouldn't add any app permissions. The role is intended only to exempt the agent from licensing requirements where applicable. Assign other security roles to your agent that grant the appropriate app permissions based on the tasks the agent performs.
