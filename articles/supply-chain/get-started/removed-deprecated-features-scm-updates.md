@@ -24,6 +24,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.48 release
+
+### Asset Management mobile app
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft has decided not to continue active development of the Asset Management mobile app. |
+| **Replaced by another feature?** | No first-party replacement. The source code is available as open source for customers and partners who want to take ownership. |
+| **Product areas affected** | Supply Chain Management – Asset Management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Deprecated as of April 30, 2026. Microsoft continues to provide critical maintenance and keeps the app available for installation through the Power Platform admin center until October 30, 2026. After that date, the app is removed and no further updates are issued. Existing installations continue to work in customer tenants. The source code is available under the MIT license at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). Learn more in [Asset Management mobile app overview](../asset-management/asset-management-mobile-app/asset-management-mobile-app-overview.md). |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.46 release
 
 ### Data Integrator templates for Dynamics 365 Field Service
