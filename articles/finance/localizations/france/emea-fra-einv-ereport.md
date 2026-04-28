@@ -17,7 +17,6 @@ ms.dyn365.ops.version: AX 10.0.48
 
 This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified service provider acting as an Approved Platform (*Platform Agréée* - **PA**).
 
-:::image type="content" source="emea-fra-einvoices-flow.jpg" alt-text="Screenshot of the e-invoicing and e-reporting flow for France.":::
 
 > [!NOTE]
 > This electronic invoicing approach uses an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
@@ -486,7 +485,6 @@ After you complete the required configuration steps, generate and submit electro
 - **Inquiring statuses of submitted e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Failed** if the submitted invoice is **Rejected** by Edicom due to various reasons, or **Pending update actions execution** if the submitted invoice is successfully validated by Edicom and the system is ready for further processing.
 - **Update statuses of submitted e-invoices** - at this stage, Dynamics 365 and Edicom can intercommunicate exchanging different e-invoices statuses until the concluding status is reached or due to preconfigured timeout.
 
-:::image type="content" source="e-invoice-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
 ### Submission of e-invoices to Edicom
 
