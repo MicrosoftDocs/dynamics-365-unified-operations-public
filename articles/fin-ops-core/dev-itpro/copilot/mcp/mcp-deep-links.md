@@ -13,8 +13,6 @@ ms.date: 4/28/2026
 
 # Deep links for Dynamics 365 ERP MCP (preview)
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 The deep links capability in the Dynamics 365 ERP MCP server enables responses generated from Microsoft Copilot and agent experiences to include direct navigation links to the corresponding records in Dynamics 365 finance and operations apps. When an MCP request retrieves or modifies record data, the MCP response includes a deep link URL that opens the application context used to generate that response. This allows users to seamlessly transition from conversational or agent-driven interactions into the relevant transactional or master data forms within the Dynamics 365 ERP client.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
