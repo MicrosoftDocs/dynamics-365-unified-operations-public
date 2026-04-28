@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.48 (April 2026)
+title: Preview features in Dynamics 365 Commerce 10.0.48 (June 2026)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.48. 
 author: johnmichalak
 ms.author: johnmichalak
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.48
 
 ---
 
-# What's new or changed in Dynamics 365 Commerce 10.0.48 (April 2026)
+# What's new or changed in Dynamics 365 Commerce 10.0.48 (June 2026)
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,7 +51,7 @@ The following table lists the features that are included in this release. Micros
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Commerce version 10.0.48 includes platform updates. For more information, see [Platform updates for version 10.0.48 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-48.md). 
+Microsoft Dynamics 365 Commerce version 10.0.48 includes platform updates. For more information, see [Platform updates for version 10.0.48 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-10-0-48.md). 
   
 ### Bug fixes
 
