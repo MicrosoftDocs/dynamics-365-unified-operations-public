@@ -4,7 +4,7 @@ description: Learn about the strategy and scope for tax, finance, and accounting
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: overview
-ms.date: 03/04/2026
+ms.date: 04/28/2026
 ms.reviewer: johnmichalak
 ms.search.validFrom: 2018-04-30
 ms.custom: 
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft has included in Microsoft Dynamics 365 Finance for Brazil.
+This article describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft includes in Microsoft Dynamics 365 Finance for Brazil.
 
 In general, Microsoft invests significant resources in extending the business process functionality of Dynamics 365 Finance by developing features and functionality to address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Microsoft Dynamics generally available.
 
@@ -23,7 +23,7 @@ The software helps organizations run their business operations while complying w
 
 However, Microsoft Dynamics doesn't address all laws, regulations, or commercial requirements in Brazil, because laws and regulations vary in the way that they affect organizations. You can find additional details in the [Localization Availability Guide](https://aka.ms/dynamics_365_international_availability_deck).
 
-Channel partners play an important role in our global strategy for delivering Microsoft Dynamics to help customers meet local laws and regulatory requirements for Brazil. By taking advantage of the extensible nature of the development architecture of Microsoft Dynamics, channel partners can address a customer's specific business needs during implementation, either through configuration of the software (when configuration options are available) or through partner-created customizations or localizations (if customization or localization is required). Although channel partners might provide solutions that meet specific regulatory requirements that are unique to municipalities, cities, states, or other regions in Brazil, Microsoft doesn't provide any guarantees or warranties (expressed, implied, statutory, or otherwise) that partner-created solutions comply with local business, tax and regulatory, legal, or other applicable requirements.
+Channel partners play an important role in Microsoft's global strategy for delivering Microsoft Dynamics to help customers meet local laws and regulatory requirements for Brazil. By taking advantage of the extensible nature of the development architecture of Microsoft Dynamics, channel partners can address a customer's specific business needs during implementation, either through configuration of the software (when configuration options are available) or through partner-created customizations or localizations (if customization or localization is required). Although channel partners might provide solutions that meet specific regulatory requirements that are unique to municipalities, cities, states, or other regions in Brazil, Microsoft doesn't provide any guarantees or warranties (expressed, implied, statutory, or otherwise) that partner-created solutions comply with local business, tax and regulatory, legal, or other applicable requirements.
 
 Channel partners or customers are solely responsible for any configurations, customizations, localizations, or translations that they create or implement on behalf of customers. This responsibility also covers any updates for these solutions, and any support or other service that is provided to customers for such solutions. You must contact your channel partner for information about the solutions that the channel partner creates for licensed versions of Microsoft Dynamics.
 
@@ -40,17 +40,17 @@ Channel partners or customers are solely responsible for any configurations, cus
 
 ## <a name="brazilian-localization-strategy"></a>Brazilian localization strategy
 
-In general, Microsoft's strategy for addressing the tax, financial, accounting, or statutory reporting requirements for Brazil consists of providing localizations for Microsoft Dynamics that do the following:
+In general, Microsoft's strategy for addressing the tax, financial, accounting, or statutory reporting requirements for Brazil consists of providing localizations for Microsoft Dynamics that do the following tasks:
 
-- They implement the federal tax requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section of this article.
-- They implement, for the following states, the state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section: São Paulo (SP), Rio de Janeiro (RJ), Paraná (PR), Santa Catarina (SC), and Rio Grande do Sul (RS).
-- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this article and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
-- They deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Microsoft Dynamics.
-- They apply National Standards and competitive features that Microsoft, at its sole discretion, determines to be necessary or appropriate, based on business needs in the region.
-- They don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city level.
-- They don't include municipal requirements, except the municipal requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section.
+- Implement the federal tax requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section of this article.
+- Implement, for the following states, the state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section: São Paulo (SP), Rio de Janeiro (RJ), Paraná (PR), Santa Catarina (SC), and Rio Grande do Sul (RS).
+- Deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this article and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
+- Deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Microsoft Dynamics.
+- Apply national standards and competitive features that Microsoft, at its sole discretion, determines to be necessary or appropriate, based on business needs in the region.
+- Don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when laws, statutes, or regulations at the federal, state, or city level require these requirements.
+- Don't include municipal requirements, except the municipal requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section.
 
-For a list of specific laws and requirements that are out of scope for Microsoft Dynamics, see the [Out of scope](#out-of-scope).
+For a list of specific laws and requirements that are out of scope for Microsoft Dynamics, see the [Out of scope](#out-of-scope) section.
 
 The Brazilian localization that Microsoft developed for Microsoft Dynamics is limited to the features and functionality that are described in this article. Therefore, prospective customers or a tax professional, such as an accounting and tax auditor, tax law firm, or tax consulting firms, must analyze Microsoft Dynamics to assess whether the functionality is appropriate to meet the customer's business needs or whether custom solutions are required.
 
@@ -149,10 +149,10 @@ The following sections list the features that are specific to Brazil.
 
 ### Procure
 
-- Purchase requisitions, requests for quotation, and purchase orders localized to support the Brazilian taxes per the Brazilian localization scope
-- Fiscal document texts in purchase orders
-- Cancel inbound issues fiscal documents
-- Reverse received fiscal documents
+- Localized purchase requisitions, requests for quotation, and purchase orders to support Brazilian taxes according to the Brazilian localization scope.
+- Fiscal document texts in purchase orders.
+- Cancel inbound issues fiscal documents.
+- Reverse received fiscal documents.
 
 ### Receive
 
@@ -167,50 +167,60 @@ The following sections list the features that are specific to Brazil.
   - (IPI, ICMS) Tax and price complementary fiscal documents
   - Vendor invoices (not dependent on purchase orders)
 
-- Referenced fiscal documents
-- Fiscal documents with referenced processes
-- Multiple processes referenced by fiscal document texts
-- Tax adjustments during receipt of inbound fiscal documents
-- Electronic fiscal document XML and DANFE received from a POP3 (Post Office Protocol version 3) email account
-- Validation of electronic fiscal document access key in SEFAZ
-- Archiving of electronic fiscal document XML together with the posted received fiscal document
-- Matching the quantity and price unit from the received electronic fiscal document XML with the vendor invoice from the purchase order
+- Referenced fiscal documents.
+- Fiscal documents with referenced processes.
+- Multiple processes referenced by fiscal document texts.
+- Tax adjustments during receipt of inbound fiscal documents.
+- Electronic fiscal document XML and DANFE received from a POP3 (Post Office Protocol version 3) email account.
+- Validation of electronic fiscal document access key in SEFAZ.
+- Archiving of electronic fiscal document XML together with the posted received fiscal document.
+- Matching the quantity and price unit from the received electronic fiscal document XML with the vendor invoice from the purchase order.
 
 ### Purchase return
 
-- Issue fiscal documents for vendor returns
+- Issue fiscal documents for vendor returns.
 
 ### Sell
 
-- Sales quotations, sales orders, free-text invoices, and project invoices localized to support Brazilian taxes per the Brazilian localization scope
-- Input transport information for fiscal documents
-- Fiscal document texts in sales orders and free text invoices
-- Cancel issued fiscal documents
+- Sales quotations, sales orders, free-text invoices, and project invoices localized to support Brazilian taxes per the Brazilian localization scope.
+- Input transport information for fiscal documents.
+- Fiscal document texts in sales orders and free-text invoices.
+- Cancel issued fiscal documents.
 
 ### Invoicing
 
-- Issue fiscal documents for invoicing:
+- Issue fiscal documents for invoicing for:
 
   - Inventory items
   - Services
   - Fixed assets
   - Third-party sales
   - Project invoices
-  - For end users
-  - For customers in SUFRAMA
+  - End users
+  - Customers in SUFRAMA
   - (IPI, ICMS) Tax and price complementary fiscal documents
 
-- Referenced fiscal documents
-- Fiscal documents with referenced processes
-- Multiple processes referenced by fiscal document texts
+- Referenced fiscal documents.
+- Fiscal documents with referenced processes.
+- Multiple processes referenced by fiscal document texts.
 - Withholding tax for IRRF, INSS, and ISS
 - Outbound fiscal document viewer
 - Display approximated taxes
 - Manual maintenance of Ficha Conteúdo de Importação (FCI) by product, fiscal establishment, and period
-- The localization supports issuing fiscal document models 1, 1-A, and 55, and the Services fiscal document for São Paulo city. Partners must customize the requirements or behavior for unsupported fiscal document models.
+- The localization supports issuing fiscal document models 1, 1-A, and 55, and the NFS-e Services fiscal documents for São Paulo city and Federal. Partners must customize the requirements or behavior for unsupported fiscal document models.
 
     > [!NOTE]
     > The localization doesn't support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.
+
+    > [!IMPORTANT]
+    > The Recibo Provisório de Serviços (RPS) text-based integration described in this article reflects a legacy approach that isn't supported under current Brazilian regulations.
+    >
+    > As of January 1, 2026, the Brazilian tax authorities deprecate the RPS text format. Customers and partners should use the NFS-e (Nota Fiscal de Serviço Eletrônica) XML-based formats instead.
+    >
+    > Microsoft Dynamics 365 Finance provides support for NFS-e generation using Electronic Reporting (ER), including the São Paulo municipal format and the Federal standard format. Learn more about the current implementation and required setup in:
+    >
+    > - [NFS-e Service Invoices - formats for São Paulo and Federal](brazil-nfs-e-service-invoices.md)
+    > - [NFS-e service invoices for project-based scenarios](brazil-nfs-e-service-invoices-projects.md)
 
 ### Sales return
 
@@ -229,30 +239,33 @@ The following sections list the features that are specific to Brazil.
 
 ### NF-e (Federal)
 
-- Support for NF-e layout 4.0
+- Support for NF-e layout 4.0.
 - NF-e messages and events:
 
   - Issue
   - Cancel
   - Discard
-  - Electronic correction letter (CC-e)
+  - Electronic correction letter (CC-e).
 
-- Contingency mode: security form (FS or FS-DA)
-- Contingency mode: SCAN
-- Contingency mode: SVC
-- XML viewer for issued and received electronic fiscal documents
-- Automatic sending of electronic fiscal document through email for customers, vendors, and transportation companies
-- **Out of scope**: Overall purpose services in the NF-e
+- Contingency mode: security form (FS or FS-DA).
+- Contingency mode: SCAN.
+- Contingency mode: SVC.
+- XML viewer for issued and received electronic fiscal documents.
+- Automatic sending of electronic fiscal document through email for customers, vendors, and transportation companies.
+- **Out of scope**: Overall purpose services in the NF-e.
 
-### NFS-e Services (São Paulo city)
+### NFS-e Services
 
-- Service electronic fiscal document using .txt files
-- Recibo Provisório de Serviços (RPS) for São Paulo city
+- NFS-e Service Invoices - formats for São Paulo city and Federal.
+- NFS-e service invoices for project-based scenarios.
+- Service electronic fiscal document using .txt files - outdated.
+- Recibo Provisório de Serviços (RPS) for São Paulo city - outdated.
+- **Out of scope**: Submission and digital signature, Import of a returned official NFS-e and Access key, Inbound vendor service invoices.
 
 ### Financial and treasury
 
-- Withholding IRRF, PIS, COFINS, CSLL, ISS, and INSS taxes on payments and receiving
-- Withholding IRRF, PIS, and COFINS tax threshold by legal entity
+- Withhold IRRF, PIS, COFINS, CSLL, ISS, and INSS taxes on payments and receiving
+- Withhold IRRF, PIS, and COFINS tax threshold by legal entity
 - Payment with check per bank
 - Payment with Brazilian Borderô
 - Interest and fines on payments and receiving, applying federal, state, and city holiday calendars
@@ -277,8 +290,8 @@ The following sections list the features that are specific to Brazil.
 
 ### TMS
 
-- Issue outbound fiscal documents and electronic fiscal documents from loads for sales order invoices
-- Issue outbound fiscal documents and electronic fiscal documents from loads from transfer orders and fiscal document slips
+- Issue outbound fiscal documents and electronic fiscal documents from loads for sales order invoices.
+- Issue outbound fiscal documents and electronic fiscal documents from loads for transfer orders and fiscal document slips.
 
 ### Call center
 
@@ -321,8 +334,8 @@ The following sections list the features that are specific to Brazil.
 
 ### SPED Fiscal (ICMS, IPI)
 
-- Generate a text file and support for companies defined as Profile A. <br> Available layout versions include Layout Code 15 and earlier.
-- Support for the following records for companies defined as Profile A:
+- Generates a text file and supports companies defined as Profile A. <br> Available layout versions include Layout Code 15 and earlier.
+- Supports the following records for companies defined as Profile A:
 
   - Block 0: 0000-0001-0002-0005-0015-0100-0150-0190-0200-0210-0220-0300-0305-0400-0450-0460-0500-0600-0990
   - Block C: C001-C100-C101-C110-C111-C113-C114-C120-C130-C140-C141-C160-C170-C172-C180-C185-C190-C191-C195-C400-C405-C410-C420-C460-C470-C490-C500(incoming)-C590 (incoming)-C990
@@ -363,12 +376,12 @@ The following sections list the features that are specific to Brazil.
 
 ### SPED Contributions (PIS and COFINS)
 
-- Generate a text file in accordance with layout 006 and earlier
-- Support for company type Sociedade empresaria em geral
-- Support for booking criteria Regime de Competência – Escrituracao detalhada only
+- Generate a text file in accordance with layout 006 and earlier.
+- Support for company type Sociedade empresaria em geral.
+- Support for booking criteria Regime de Competência – Escrituracao detalhada only.
 - Support for the following records:
 
-  - Block 0: 0000-0001-0100-0110-0111-0140-0150-0190-0200-0400-0450-0500-0900-0990
+  - Block 0: 0000-0001-0100-0110-0110-0140-0150-0190-0200-0400-0450-0500-0900-0990
   - Block A: A001-A010-A100-A110-A111-A120-A170-A990
   - Block C: C001-C010-C100-C110-C111-C120-C170-C175-C180-C181-C185-C188-C190-C191-C195-C198-C199-C380-C381-C385-C400-C405-C481-C485-C490-C491-C495-C500-C501-C505-C509
   - Block D (only for incoming fiscal documents): D001-D010-D100-D101-D105-D111-D500-D501-D505-D509
@@ -378,8 +391,8 @@ The following sections list the features that are specific to Brazil.
 
 ### SPED ECF
 
-- Generate a text file by using Management Reporter
-- Layouts 007 and earlier
+- Generate a text file by using Management Reporter.
+- Layouts 007 and earlier.
 - Support for the following blocks and records:
 
   - Block 0: 0000-0001-0010-0020-0030-0035-0930-0990
@@ -400,7 +413,7 @@ The following sections list the features that are specific to Brazil.
   - New REST services support for REINF v2.1.2
   - Support for the new XML schemas of REINF v2.1.2
 
-- **Out of scope** - R-4010 deductions with reimbursement, health plan and retirement funds and pensions.
+- **Out of scope** - R-4010 deductions with reimbursement, health plan, and retirement funds and pensions.
 
 ### SINTEGRA
 
@@ -474,13 +487,13 @@ The following features and functionality are out of scope for the Brazilian loca
 
 ### Industries
 
-- **In general:** The following industry is out of scope for the Brazilian localization:
+- **In general:** The Brazilian localization doesn't support the following industry:
 
   - Public sector
 
 - **Commerce industry:**
 
-  - **Services:** The following online services are out of scope for the commerce industry for the Brazilian localization:
+  - **Services:** The Brazilian localization doesn't support the following online services for the commerce industry:
 
     - Sites services for Microsoft Dynamics ERP
     - Commerce services for Microsoft Dynamics ERP
@@ -497,13 +510,13 @@ The following features and functionality are out of scope for the Brazilian loca
     - Toll road
     - Parking lot
 
-  - **Fiscal printer features:** The following features and functionality for fiscal printers for businesses in Brazil are out of scope for the Brazilian localization:
+  - **Fiscal printer features:** The Brazilian localization doesn't support the following features and functionality for fiscal printers for businesses in Brazil:
 
     - Fiscal printers that have a different setup of tender types
     - Fiscal printers that have more than one registry for the same tax rate
     - Rounding of values, quantities, and amounts at the point of sale (POS) by using a different rule than the fiscal printer
 
-  - **Tax calculation requirements:** The following tax calculation requirements for businesses in Brazil are out of scope for the Brazilian localization:
+  - **Tax calculation requirements:** The Brazilian localization doesn't support the following tax calculation requirements for businesses in Brazil:
 
     - Tax discounts for sales through Enterprise POS in SUFRAMA or other Free Trade Zone
 
@@ -541,10 +554,10 @@ The [Microsoft Dynamics Localization Portal](/dynamics/s-e/) provides informatio
 | COFINS               | Contribution based on gross revenues from business sales |
 | CFOP                 | Fiscal code operation |
 | CSLL                 | Social contribution tax on net profit |
-| DARF                 | Payment voucher that must be fulfilled for federal tax payment |
+| DARF                 | Payment voucher that you must complete for federal tax payment |
 | DCTF                 | Debit and credit assessment for federal taxes |
 | DIRF                 | Assessment of federal withholding taxes |
-| GNRE                 | Payment voucher that must be fulfilled for state tax payment |
+| GNRE                 | Payment voucher that you must complete for state tax payment |
 | GIA                  | ICMS tax assessment and payment declaration |
 | IPI                  | Tax on manufactured goods |
 | ICMS                 | Tax on transit of goods and services |
