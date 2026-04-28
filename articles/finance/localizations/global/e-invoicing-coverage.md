@@ -2,7 +2,7 @@
 title: Supported electronic invoicing countries and regions
 description: This article describes for which countries and regions electronic invoicing is supported or planned in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 01/06/2026
+ms.date: 04/28/2026
 ms.topic: concept-article
 ms.custom: 
   - bap-template

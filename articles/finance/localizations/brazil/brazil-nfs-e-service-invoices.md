@@ -4,7 +4,7 @@ description: Learn about the steps to set up and generate Brazilian NFS-e Servic
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.date: 04/15/2026
+ms.date: 04/28/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 01/02/2026
@@ -23,13 +23,13 @@ This functionality uses Electronic Reporting.
 ## Prerequisites for generating NFS-e XML in Dynamics 365 Finance
 
 > [!IMPORTANT]
-> The following scope limitations apply to the NFS-e feature — both for São Paulo and Federal:
+> The following scope limitations apply to the NFS-e feature - both for São Paulo and Federal:
 >
->**Submission and digital signature** — The scope doesn't include submission to NFS-e web services, and the XML isn't digitally signed. To submit and sign the NFS-e XML, you must implement your own signature and end-to-end integration, or use an ISV or third-party solution.
+>**Submission and digital signature** - The scope doesn't include submission to NFS-e web services, and the XML isn't digitally signed. To submit and sign the NFS-e XML, you must implement your own signature and end-to-end integration, or use an ISV or third-party solution.
 >
->**Official NFS-e Fiscal document and Access key** — Only the DPS (Documento Preliminar de Serviços) part of the process is supported. The official NFS-e is issued after the municipality or federal authority processes the DPS and returns the access key. There's currently no standard field for the 50-character NFS-e access key, so you must persist this value through an extension (for example, on the fiscal document or invoice) as part of your integration.
+>**Official NFS-e Fiscal document and Access key** - Only the DPS (Documento Preliminar de Serviços) part of the process is supported. The official NFS-e is issued after the municipality or federal authority processes the DPS and returns the access key. There's currently no standard field for the 50-character NFS-e access key, so you must persist this value through an extension (for example, on the fiscal document or invoice) as part of your integration.
 >
->**Inbound vendor service invoices** — Recording NBS codes on vendor service invoices (purchase side) isn't in the current scope. There's no legal requirement for NBS on the purchase side today, but it's on the backlog for future consideration as NBS is gradually incorporated into fiscal standards.
+>**Inbound vendor service invoices** - Recording NBS codes on vendor service invoices (purchase side) isn't in the current scope. There's no legal requirement for NBS on the purchase side today, but it's on the backlog for future consideration as NBS is gradually incorporated into fiscal standards.
 
 Before you can generate an **NFS-e** (Nota Fiscal de Serviço Eletrônica - both for São Paulo and Federal) XML in Microsoft Dynamics 365 Finance, complete the key setup steps outlined in this article. Each of the following sections covers a specific prerequisite, with navigation paths and field names to help you configure the system correctly. These steps apply to both end users and IT admins responsible for the Brazilian service invoice process.
 
@@ -99,7 +99,7 @@ When you use the **Federal standard NFS-e format**, enter three percentage value
 - **Approximate % of municipal taxes** – estimated portion of total tax that's municipal.
 
 **Where to enter**: These fields appear on the **Released product details form** under the **Fiscal information** FastTab in the **NFS-E TAX BURDEN** group - for cities using the national layout.
-**Action**: Enter values in each field so that they do not exceed 100%. For example, if only municipal ISS applies, you might input 0%, 0%, and Z%. If federal PIS/COFINS taxes apply, you might split it (for example, X% federal, 0% state, Z% municipal). Make sure all three fields are filled (use 0% where a level doesn't apply). This information is included in the Federal NFS-e XML to meet the reporting requirements of the federal layout.
+**Action**: Enter values in each field so that they don't exceed 100%. For example, if only municipal ISS applies, you might input 0%, 0%, and 100%. If federal PIS/COFINS taxes apply, you might split it (for example, X% federal, 0% state, Z% municipal). Make sure all three fields are filled (use 0% where a level doesn't apply). This information is included in the Federal NFS-e XML to meet the reporting requirements of the federal layout.
 
 By completing the preceding configurations, your Dynamics 365 Finance environment meets the prerequisites for NFS-e generation. When the environment is correctly set, code tables are populated, fields are filled on products and documents, and required indicators are provided, you can proceed to generate NFS-e XML files that comply with the Brazilian electronic service invoice standards.
 
@@ -120,7 +120,7 @@ After you download the files, import the configuration files into the system.
 
 To import e-invoicing configuration files, follow these steps:
 
-1. Go to **Workspaces** \> **Electronic reporting**.
+1. Go to **Workspaces** > **Electronic reporting**.
 1. Select the **Reporting configurations** tile.
 1. On **Configurations**, select **Exchange**.
 1. Select **Load from XML file**.
@@ -135,10 +135,10 @@ To import e-invoicing configuration files, follow these steps:
 > 1. NFS-e Federal format
 > 1. NFS-e São Paulo format
 
-1. Go to **Organization administration** \> **Setup** \> **Brazilian parameters**.
+1. Go to **Organization administration** > **Setup** > **Brazilian parameters**.
 1. Select the **Electronic reporting** tab.
 1. Select **NfeServices** in the **Type** field, and select **Fiscal documents mapping** in the **Model Mapping** field.
-1. Go to **Organization administration** \> **Organizations** \> **Fiscal establishments** \> **Fiscal document types**.
+1. Go to **Organization administration** > **Organizations** > **Fiscal establishments** > **Fiscal document types**.
 1. Select **NFS-e Federal** or **NFS-e São Paulo** format in the **Export format mapping** field.
 
 ## Generate NFS-e service electronic invoices
