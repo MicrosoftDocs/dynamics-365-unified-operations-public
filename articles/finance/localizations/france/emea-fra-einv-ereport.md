@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.48
 
 # Electronic invoicing for France
 
-This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified service provider acting as an Approved Platform (*Plateforme Agréée* - **PA**).
+This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified service provider acting as an Approved Platform (*Platform Agréée* - **PA**).
 
 :::image type="content" source="emea-fra-einvoices-flow.jpg" alt-text="Screenshot of the e-invoicing and e-reporting flow for France.":::
 
@@ -45,7 +45,7 @@ Before you start, make sure these prerequisites are in place:
   > [!NOTE]
   > You need to configure the service environment only if you previously used the Regulatory Configuration Service (RCS) experience to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty. The system assigns it automatically and makes it read-only. For more information, see [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
 
-- In the **Feature management** workspace, on the **All** tab, enable the following features. If these features don't appear on the page, select **Check for updates**. Select the features consequently, and then select **Enable now** for each of them. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, on the **All** tab, enable the following features. If these features don't appear on the page, select **Check for updates**. Select the features, and then select **Enable now** for each of them. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
   - **E-Invoice Document Status Lifecycle Management**
   - **E-Invoice Document Response Submission**
   - **Export channels for electronic invoicing integration**
@@ -400,7 +400,7 @@ According to French requirements, each individual electronic invoice must contai
 ### Configure mandatory notes for Sales and Free text invoices
 
 To automate the creation of notes, see [Advanced notes management](../italy/emea-ita-exil-structured-notes.md).
-Configure at least three external header-level notes with the mandatory prefixes for the required documents, for all or specifically selected customers. When you configure these notes, the system automatically adds them to the applicable documents upon creation.
+Configure at least three external header-level notes with the mandatory prefixes for the required documents, for all or selected customers. When you configure these notes, the system automatically adds them to the applicable documents upon creation.
 
 :::image type="content" source="emea-fra-advanced-notes.jpg" alt-text="Screenshot of the advance notes configuration.":::
 
@@ -465,7 +465,7 @@ Set up units of measure.
 1. In the **Overview** section, create a line for the selected unit. Enter the sales tax code from step 2 in the **External code** field.
 1. In the **Value** section, enter an external code according to the [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/) in the **Value** field.
 1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
-1. Define exempt codes that you use for non-taxable, zero-rated, or exempted operations.
+1. Define exempt codes that you use for nontaxable, zero-rated, or exempted operations.
 
 > [!NOTE]
 > The exempt codes can have any value that your company uses internally, but the **Description** field must contain the standardized tax exemption code according to the official categorization introduced in France, such as *VATEX-FR-298SEXDECIESA*. The value from the **Description** field is used as **Tax Exemption Reason** when generating the output XML files for electronic invoices.
@@ -484,7 +484,7 @@ After you complete the required configuration steps, generate and submit electro
 
 - **Submission of e-invoices to Edicom** - at this stage, the system generates the XMLs of e-invoices and submits them to Edicom.
 - **Inquiring statuses of submitted e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Failed** if the submitted invoice is **Rejected** by Edicom due to various reasons, or **Pending update actions execution** if the submitted invoice is successfully validated by Edicom and the system is ready for further processing.
-- **Update statuses of submitted e-invoices** - at this stage, D365 and Edicom can intercommunicate exchanging different e-invoices statuses until the concluding status is reached or due to pre-configured timeout.
+- **Update statuses of submitted e-invoices** - at this stage, Dynamics 365 and Edicom can intercommunicate exchanging different e-invoices statuses until the concluding status is reached or due to preconfigured timeout.
 
 :::image type="content" source="e-invoice-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
@@ -514,7 +514,7 @@ To check the initial status of the submitted electronic invoices from Edicom, fo
 1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Run submission process in export channels**.
 1. In the **Channel** field, select the **EdiStatus** export channel or the channel you [created](#ExChannel) for invoices, and then select **OK**.
 
-Check the results at **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log**. The documents can be in either **Failed** status if Edicom rejects them due to syntactical, semantical, or other validation errors, or **Pending update actions execution** if Edicom successfully validates them and they're ready for further processing.
+Check the results at **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log**. The documents can be in either **Failed** status if Edicom rejects them due to syntactical, or other validation errors, or **Pending update actions execution** if Edicom successfully validates them and they're ready for further processing.
 
 > [!NOTE]
 > You can also view submitted electronic invoices in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders, where you can monitor further processing.
@@ -525,14 +525,14 @@ As part of the document lifecycle, some buyer responses for successfully submitt
 
 1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log**.
 1. Select any document and run **Functions** > **Execute update actions** from the menu.
-1. The procedure runs for all documents in the **Pending update actions execution** submission status. If required, define additional filtering, and then select **OK**.
+1. The procedure runs for all documents in the **Pending update actions execution** submission status. If necessary, define additional filtering, and then select **OK**.
 
 > [!NOTE]
 > You can also configure periodic running of this procedure in the background to avoid manual intervention.
 
 You can run the procedure multiple times to retrieve various lifecycle document statuses from Edicom until it reaches a **termination** status code or a predefined **timeout**.
 
-If the procedure reaches any termination document status code, it updates the related document's submission status to **Completed** - this status concludes the lifecycle of the document. All other, non-termination, document statuses are for information only and keep the **Pending update actions execution** submission status intact.
+If the procedure reaches any termination document status code, it updates the related document's submission status to **Completed** - this status concludes the lifecycle of the document. All other, nontermination, document statuses are for information only and keep the **Pending update actions execution** submission status intact.
 
 :::image type="content" source="e-invoice-fra-update-status.jpg" alt-text="Screenshot of submission log statuses.":::
 
@@ -579,7 +579,7 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
 
 ## Send electronic invoices responses
 
-Some business scenarios assume sending responses for either incoming or outgoing electronic invoices. The responses result in assigning mandatory document statuses which conclude electronic invoices lifecycle.
+Some business scenarios assume sending responses for either incoming or outgoing electronic invoices. The responses result in assigning mandatory document statuses that conclude electronic invoices lifecycle.
 
 ### Send responses for Customer and Project invoices
 
@@ -593,7 +593,7 @@ Current implementation allows sending only *payment reception confirmation* resp
 1. In the **Record to include** section, make sure that the required **Customer invoice response** records are selected.
 1. Select **OK** to start the responses submission process.
    > [!NOTE]
-   > At this stage, the **French electronic invoice status (FR)** globalization feature, **Send AR respsone** feature setup is being run for responses processing.
+   > At this stage, the **French electronic invoice status (FR)** globalization feature, **Send AR response** feature setup is being run for responses processing.
 1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Run submission process in export channels**.
 1. In the **Channel** field, select the **InvStatus** export channel or the channel you [created](#ExChannel) for responses, and then select **OK**.
 1. Check the responses submission results at **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log**, select **Customer invoice response** document type.  
@@ -620,14 +620,14 @@ The current implementation only supports sending *refusal* responses to your sel
 
 ### <a id="StatusCodes"></a>List of lifecycle status codes
 
-The list of mandatory status codes supported in electronic invoicing for Microsoft D365 Finance.
+The list of mandatory status codes supported in electronic invoicing for Microsoft Dynamics 365 Finance.
 
 | Code | Status | Requirement | Description |
 |------------|------------------|-----------------------------------|---------------------------------|
 | 200 | Deposited | **Mandatory** | An e-invoice is transmitted to the PA, which certifies that the invoice is validated and compliant. |
 | 210 | Refused | **Mandatory** | The recipient refuses the invoice. |
 | 212 | Payment received | **Mandatory** | The invoice is fully paid by the recipient. |
-| 213 | Rejected | **Mandatory** | The invoice is technically rejected by either issuer's or receiver's PA. |
+| 213 | Rejected | **Mandatory** | The invoice is rejected by either issuer's or receiver's PA. |
 
 > [!NOTE]
 > The electronic invoicing functionality in Microsoft Dynamics 365 Finance isn't limited to the statuses listed in the preceding table. The system can receive any valid status from your buyers' PAs through Edicom. At the same time, the current implementation supports sending only refusal responses to your sellers and payment reception confirmation responses to your buyers.
@@ -663,7 +663,7 @@ The list of mandatory status codes supported in electronic invoicing for Microso
   - Edicom Response Invoice Status (FR)
   - Edicom Response Processing (FR)
   - Edicom response error log import
-  - Edicom Response message status fromat
+  - Edicom Response message status format
 
 ## More information
 
