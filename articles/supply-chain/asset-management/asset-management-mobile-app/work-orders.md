@@ -15,6 +15,9 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
+> [!IMPORTANT]
+> The Asset Management mobile app is deprecated as of April 30, 2026. Critical maintenance continues and the app remains available through the Power Platform admin center until October 30, 2026. After that date the app is removed and no further updates are issued. For the full deprecation timeline, transition guidance, and source-code availability, see [Asset Management mobile app deprecation](deprecation.md).
+
 Maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders. The app supports maintenance workers through the following main capabilities:
 
 - It lists maintenance jobs and work orders that are assigned to a worker, including all information that the worker needs to process each job.

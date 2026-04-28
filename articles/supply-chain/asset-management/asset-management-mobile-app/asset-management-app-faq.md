@@ -15,6 +15,9 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
+> [!IMPORTANT]
+> The Asset Management mobile app is deprecated as of April 30, 2026. Critical maintenance continues and the app remains available through the Power Platform admin center until October 30, 2026. After that date the app is removed and no further updates are issued. For the full deprecation timeline, transition guidance, and source-code availability, see [Asset Management mobile app deprecation](deprecation.md).
+
 This article provides answers to several frequently asked questions (FAQs) about the Asset Management mobile app. It also describes a few known issues that affect the app and how to work around them.
 
 ## What platforms and mobile devices are supported?

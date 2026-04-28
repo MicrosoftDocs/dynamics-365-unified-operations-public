@@ -1,6 +1,6 @@
 ---
-title: Asset Management mobile app overview
-description: Learn about the Asset Management mobile app, including outlines on managing work orders, creating maintenance requests, and creating work orders.
+title: Asset Management mobile app overview (deprecated)
+description: The Asset Management mobile app for Microsoft Dynamics 365 Supply Chain Management is deprecated. Learn about the app's capabilities and where to find deprecation guidance.
 author: jodahlMSFT
 ms.author: jodahl
 ms.reviewer: kamaybac
@@ -11,9 +11,12 @@ ms.custom:
   - bap-template
 ---
 
-# Asset Management mobile app overview
+# Asset Management mobile app overview (deprecated)
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> The Asset Management mobile app is deprecated as of April 30, 2026. Critical maintenance continues and the app remains available through the Power Platform admin center until October 30, 2026. After that date the app is removed and no further updates are issued. For the full deprecation timeline, transition guidance, and source-code availability, see [Asset Management mobile app deprecation](deprecation.md).
 
 The Asset Management mobile app provides the following capabilities for workers and organizations that use Asset Management for Microsoft Dynamics 365 Supply Chain Management:
 
@@ -34,10 +37,9 @@ The following illustration shows an example of a list of jobs for a work order i
 > [!NOTE]
 > Use of the Asset Management mobile app is covered by the *Dynamics 365 Supply Chain Management* user licenses. Using the app for maintenance requests requires a *Dynamics 365 Team Members* license. Using the app for processing work orders requires a *Dynamics 365 Operations – Activity* license. Licensing terms are subject to change without notice. For complete and up-to-date licensing information, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-The Asset Management mobile app replaces the now-deprecated [Asset management mobile workspace](../asset-management-mobile-workspace.md).
-
 ## Next steps
 
+- [Asset Management mobile app deprecation](deprecation.md)
 - [Onboard the Asset Management mobile app](onboard-app.md)
 - [Manage work orders using the Asset Management mobile app](work-orders.md)
 - [File maintenance requests using the Asset Management mobile app](maintenance-requests.md)
