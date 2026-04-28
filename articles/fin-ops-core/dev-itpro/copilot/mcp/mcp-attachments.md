@@ -11,7 +11,7 @@ ms.date: 4/28/2026
 
 ---
 
-# Files with Dynamics 365 ERP MCP
+# Files with Dynamics 365 ERP MCP (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
