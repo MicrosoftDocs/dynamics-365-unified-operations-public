@@ -27,7 +27,7 @@ The target for the deep link navigation depends on the number of records retriev
 | ------ | ----------- | -------- |
 | In which customer group is customer account US-001? | The MCP server uses the `data_find_entities_sql` tool to query the CustomersV3 entity for the given customer. | The MCP response includes: <ul><li>The customer group for the customer.</li><li>A deep link URL to the `CustTable` details form for the customer</li></ul> |
 | Show me all customers whose name begins with "Contoso". | The MCP server uses the `data_find_entities_sql` tool to query the CustomersV3 entity to find all customers where the name is like 'Contoso%'. | The MCP response includes: <ul><li>The list of all customers whose name starts with "Contoso".</li><li>A deep link URL to the `CustTable` list page, with a filter applied to the **Name** column for only values that begin with "Contoso".</li></ul> |
-| Confirm sales order 000811. | The MCP server uses form tools to open select the **Confirm now** action on the `SalesTableDetails` page for order number 000811. | The MCP response includes: <ul><li>Detail about the confirmed sales order.</li><li>A deep link URL to the `SalesTable` list page, with a filter applied limiting the list to the single record for order number 000811.</li></ul>
+| Confirm sales order 000811. | The MCP server uses form tools to select the **Confirm now** action on the `SalesTableDetails` page for order number 000811. | The MCP response includes: <ul><li>Detail about the confirmed sales order.</li><li>A deep link URL to the `SalesTable` list page, with a filter applied limiting the list to the single record for order number 000811.</li></ul>
 
 The MCP deep link feature returns the deep link URL in the MCP response, but this feature doesn't necessarily mean that the agent orchestrator automatically formats and displays the deep link to the user in the agent response. Each agent client might have different formats and surfaces for displaying deep links and citations. You might need to add guidance in your agent instructions on how to format and display the deep link in the agent response. For example, in an agent in Copilot Studio, you can add instructions similar to the following:
 
@@ -100,9 +100,9 @@ Optionally, add the `crossCompany=true` parameter to the URL to display data fro
 ## Known limitations
 
 - The system doesn't generate deep links for aggregate data entities (AxAggregateDataEntity) because it can't resolve them to base tables.
-- Complex SQL queries that include joins, subqueries, conditional logic, or arithmetic expressions in the WHERE clause fall back to per-record deep links.
+- Complex SQL queries that include joins, subqueries, conditional logic, or arithmetic expressions in the WHERE clause fallback to per-record deep links.
 - SQL aggregation queries, such as those that use GROUP BY, SUM, or COUNT, don't generate deep links.
-- The McpDeepLinkBrowser currently provides view-only navigation and doesn't support click-through to detail forms.
+- The McpDeepLinkBrowser currently provides view-only navigation and doesn't support click-through to detail pages.
 - The entity resolver can't currently resolve the PurchaseRequisitionNumber field on PurchReqTable.
 - Large filter sets might exceed browser URL length limits, which is approximately 2,000 characters.
 - MCP requests that perform delete operations on data don't return deep links.
