@@ -4,7 +4,7 @@ description: Learn how to print a Ledger Posting report for Latin America, inclu
 author: MatiasPizmeny01
 ms.author: v-mpizmeny
 ms.topic: how-to
-ms.date: 01/05/2026
+ms.date: 04/28/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -19,17 +19,17 @@ This article explains how to print a **Ledger Posting** report for Latin America
 
 ## Prerequisites
 
-Before you can print a **Ledger Posting** report, the following prerequisites must be met:
+Before you can print a **Ledger Posting** report, ensure the following prerequisites are met:
 
-- The legal entity must have an address in a country/region that's within the LATAM localization.
-- You must enable the country/region-specific LATAM feature and the general feature.
-- Download the specific report configurations from the Dataverse configuration repository.
+- The legal entity has an address in a country or region that's within the LATAM localization.
+- You enable the country or region-specific LATAM feature and the general feature.
+- You download the specific report configurations from the Dataverse configuration repository.
 
-| Element |                    Format name                    | Country |
+| Element |                    Format name                    | Country or Region |
 |:-------:|:-------------------------------------------------:|:---------------------------------------:|
-| Model   | :::no-loc text="Ledger accounting reports":::    | All LATAM countries |
-| Model   | :::no-loc text="Ledger Accounting LATAM":::      | All LATAM countries |
-| Format  | :::no-loc text="Ledger Posting LATAM":::         | All LATAM countries excluding Bolivia |
+| Model   | :::no-loc text="Ledger accounting reports":::    | All LATAM countries/regions |
+| Model   | :::no-loc text="Ledger Accounting LATAM":::      | All LATAM countries/regions |
+| Format  | :::no-loc text="Ledger Posting LATAM":::         | All LATAM countries/regions excluding Bolivia |
 | Format  | :::no-loc text="Ledger Posting Bolivia":::         | Bolivia |
 
 Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
@@ -37,20 +37,20 @@ Learn more in [Import electronic reporting (ER) configurations from Dataverse](.
 
 ## Configure SSRS Reports / Services references
 
-- You must create a new SSRS Reports/Services references record and configure it in the following way:
+- Create a new SSRS Reports/Services references record and configure it as follows:
 
   - In the **Report/Service Id** field, enter **LedgerPosting**.
   - In the **Report/Service name** field, enter a descriptive name.
   - In the **Report/Service type** field, select an ER configuration.
   - In the **Model mapping name** field, select **:::no-loc text="Ledger accounting LTM":::**.
   - In the **Data model definition** field, select **:::no-loc text="Ledger Posting":::**.
-  - In the **Format mapping** field, select **:::no-loc text="Ledger Posting LATAM":::** (**:::no-loc text="Ledger Posting Bolivia":::** for Bolivia)
+  - In the **Format mapping** field, select **:::no-loc text="Ledger Posting LATAM":::** (**:::no-loc text="Ledger Posting Bolivia":::** for Bolivia).
   - In the list of report/service types, enable **Ledger Posting**.
 
 ## Print the Ledger Posting report for Latin America
 
-1. Go to **General Ledger** \> **Inquiries and Reports** \> **LATAM** \> **Ledger Posting Report**.
-1. In the **Report ID** field, select the corresponding report/service ID.
+1. Go to **General Ledger** > **Inquiries and Reports** > **LATAM** > **Ledger Posting Report**.
+1. In the **Report ID** field, select the corresponding report or service ID.
 1. In the **From date** and **To date** fields, select the date range of the transactions that you want to print.
 1. In the **Ledger account** field, select the account number if you want to print the transactions for a specific account.
 1. Set the **Start page number** field.
