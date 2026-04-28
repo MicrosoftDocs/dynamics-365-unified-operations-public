@@ -15,12 +15,12 @@ ms.date: 4/28/2026
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-File support in the Dynamics 365 ERP MCP server enables powerful process automation and agentic experiences for document-centric business processes in Dynamics 365 finance and operations apps. The MCP server lets an AI agent exchange files with application in two directions: it can return large query results, exported reports, and existing attachments as embedded resources to the language model client, and it can accept file content from the client and attach it to a record in the application.
+File support in the Dynamics 365 ERP MCP server enables powerful process automation and agentic experiences for document-centric business processes in Dynamics 365 finance and operations apps. The MCP server lets an AI agent exchange files with the application in two directions: it can return large query results, exported reports, and existing attachments as embedded resources to the language model client, and it can accept file content from the client and attach it to a record in the application.
 
 The MCP server supports two categories of file and attachment operations:
 
 - **Output scenarios** - the server returns file content or large result sets to the LLM client as an MCP embedded resource.
-- **Input scenarios** - the server accepts file content from the client and attaches it to an finance and operations business record through Dataverse custom APIs.
+- **Input scenarios** - the server accepts file content from the client and attaches it to a finance and operations business record through Dataverse custom APIs.
 
 Together, these operations let an agent read reports, download exported files, and programmatically attach documents to finance and operations records without manual user interaction.
 
@@ -60,7 +60,7 @@ The MCP response with the file resource comes in the following shape:
 
 - Inline responses are capped at 160,000 characters (~160 KB). Exceeding this limit returns a ResponseTooLarge error.
 - Resource responses are limited to 5 MB.
-- When a query errors, the response is always returned inline regardless of returnAsResource.
+- When a query returns an error, the response is always returned inline regardless of returnAsResource.
 
 #### Typical flow
 
@@ -75,7 +75,7 @@ The `api_invoke_action` tool also accepts `returnAsResource`. When you set this 
 
 ### Form tools with SSRS reports and output menu items
 
-When using form tools in the MCP server, the agent has the ability to click a button that prints a report as an output menu item. The MCP server can run these actions, receiving the output file, appending it to the tool response as an embedded resource alongside the updated form state.
+When using form tools in the MCP server, the agent has the ability to select a button that prints a report as an output menu item. The MCP server can run these actions, receiving the output file, appending it to the tool response as an embedded resource alongside the updated form state.
 
 When the agent opens a form with `FormStyle` = "Report" for SSRS reports, the MCP server detects the `McpReportForm` pattern and injects guidance instructing the agent to use the report's export buttons. Clicking an export button triggers the download path described in the previous section.
 
