@@ -163,16 +163,16 @@ For this example, install demo data, and use the **USMF** demo data company.
         - To create work, the system uses work templates but not location directives. All the standard settings that are defined for work templates, such as a maximum number of pick lines or a specific unit of measure, are applied to determine when new work should be created. However, the rules that are associated with location directives for identifying pick locations aren't considered, because the order-committed reservation already specifies all the inventory dimensions. Those inventory dimensions include the dimensions at the warehouse storage level. Therefore, the work inherits those dimensions without having to consult location directives.
     - The batch number doesn't appear on the pick line (as is the case for the work line that is created for an item that has an associated *Batch-above\[location\]* reservation hierarchy). Instead, the **from** batch number and all other storage dimensions appear on the work line's work inventory transaction that is referenced from the associated inventory transactions.
 
-        :::image type="content" source="media/Work-inventory-transactions-for-order-committed-reservation.png" alt-text="Screenshot of warehouse inventory transactions for work originating from order-committed reservation.":::
+    :::image type="content" source="media/Work-inventory-transactions-for-order-committed-reservation.png" alt-text="Screenshot of warehouse inventory transactions for work originating from order-committed reservation.":::
 
     - After work is created, the item's inventory transaction where the **Reference** field is set to **Order-committed reservation** is removed. The inventory transaction where the **Reference** field is set to **Work** now holds the physical reservation on all the quantity's inventory dimensions.
 
-        Warehouse operations can proceed to handle execution of the work in the usual manner. However, the instructions on the mobile device instruct the worker to pick a specific batch number. In warehouse environments where locations are license plate–controlled, after a worker reaches a location that stores the same batch on multiple license plates, they can pick from any license plate that isn't already reserved (for example, by another order-committed reservation or work that originates from a reservation of that type).
+    Warehouse operations can proceed to handle execution of the work in the usual manner. However, the instructions on the mobile device instruct the worker to pick a specific batch number. In warehouse environments where locations are license plate–controlled, after a worker reaches a location that stores the same batch on multiple license plates, they can pick from any license plate that isn't already reserved (for example, by another order-committed reservation or work that originates from a reservation of that type).
 
-        If it turns out to be impractical to pick from the location that is specified on the work line, the warehouse operators can use one of the following actions to redirect picking of the specific batch from a more convenient location:
+    If it turns out to be impractical to pick from the location that is specified on the work line, the warehouse operators can use one of the following actions to redirect picking of the specific batch from a more convenient location:
 
-        - The standard **Override location** action on a mobile device (provided that the warehouse worker's **Allow pick location override** setting is enabled)
-        - The **Change location** action on the **Work list details** page.
+    - The standard **Override location** action on a mobile device (provided that the warehouse worker's **Allow pick location override** setting is enabled)
+    - The **Change location** action on the **Work list details** page.
 
 1. On the mobile device, finish picking and putting the work.
 
@@ -330,7 +330,7 @@ This scenario refers to values and records that are included in the standard dem
 
 1. On the **Sales order lines** FastTab, on the **Warehouse** menu, select **Work details**.
 
-        When you reserve a specific batch, the system doesn't use location directives when it creates the work for the sales order that uses license plate reservation. Because the order-committed reservation specifies all the inventory dimensions, including the location, you don't need to use location directives, because those inventory dimensions are entered in the work. They appear in the **From inventory dimensions** section on the **Work inventory transactions** page.
+    When you reserve a specific batch, the system doesn't use location directives when it creates the work for the sales order that uses license plate reservation. Because the order-committed reservation specifies all the inventory dimensions, including the location, you don't need to use location directives, because those inventory dimensions are entered in the work. They appear in the **From inventory dimensions** section on the **Work inventory transactions** page.
 
     > [!NOTE]
     > After the work is created, the item's inventory transaction where the **Reference** field is set to *Order-committed reservation* is removed. The inventory transaction where the **Reference** field is set to *Work* now holds the physical reservation for all the quantity's inventory dimensions.
@@ -340,7 +340,7 @@ This scenario refers to values and records that are included in the standard dem
     > [!NOTE]
     > The **Handle by license plate** functionality helps you process the whole license plate. If you must process part of the license plate, you can't use this functionality.
     >
-        > Generate separate work for each license plate. To perform this task, use the **Work header breaks** feature on the **Work template** page.
+    > Generate separate work for each license plate. To perform this task, use the **Work header breaks** feature on the **Work template** page.
 
     License plate *LP02* is now picked for sales order lines and put to the *Baydoor* location. At this point, it's ready to be loaded and dispatched to the customer.
 
