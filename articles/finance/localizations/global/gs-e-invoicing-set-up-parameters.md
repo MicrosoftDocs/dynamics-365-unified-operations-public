@@ -4,7 +4,7 @@ description: Learn how to set up the Electronic invoicing parameters in Globaliz
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 04/27/2026
+ms.date: 04/28/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
