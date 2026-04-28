@@ -443,7 +443,7 @@ To enter the Invoices mandatory notes, follow these steps.
 1. In the **Value** column, enter the required note text for each of the mandatory notes.
 
 > [!NOTE]
-> Invoice-level notes have higher priority than Customer-level notes and Legal Entity-level notes. Use them if you need to enter specific notes for a particular invoice.  Customer-level notes have higher priority than Legal Entity-level notes. Use them when you need to have similar notes for all invoices issued to a specific customer. Use Legal Entity-level notes for the same notes for all invoices issued from the Legal Entity for all customers.
+> Invoice-level notes have higher priority than Customer-level notes and Legal Entity-level notes. Use them if you need to enter specific notes for a particular invoice. Customer-level notes have higher priority than Legal Entity-level notes. Use them when you need to have similar notes for all invoices issued to a specific customer. Use Legal Entity-level notes for the same notes for all invoices issued from the Legal Entity for all customers.
 
 ## Set up units of measure
 
