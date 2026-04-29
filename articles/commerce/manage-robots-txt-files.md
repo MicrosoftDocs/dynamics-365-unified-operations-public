@@ -1,6 +1,6 @@
 ---
 title: Manage robots.txt files
-description: Learn how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
+description: Learn how to manage robots.txt files in Microsoft Dynamics 365 E-Commerce.
 author: BrianShook
 ms.date: 02/03/2026
 ms.topic: how-to
@@ -16,7 +16,7 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
+This article describes how to manage robots.txt files in Microsoft Dynamics 365 E-Commerce.
 
 > [!NOTE]
 > Starting with the Commerce version 10.0.48 preview release, all HTTP responses served from internal Commerce-generated domains (`.dynamics365commerce.ms`) include an `X-Robots-Tag: noindex,nofollow` response header. This header instructs search engines not to index pages on internal domains and replaces the earlier deny-all robots.txt approach. This change is applied automatically to all tenants and doesn't require any version upgrade. For more information, see [X-Robots-Tag response header for internal domains](#x-robots-tag-response-header-for-internal-domains).
