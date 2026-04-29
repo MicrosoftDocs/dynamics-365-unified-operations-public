@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/05/2026
+ms.date: 04/29/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
@@ -194,11 +194,11 @@ To set up the VAT reporting format for preview amounts in Excel, follow these st
 
 ## Set up electronic messages
 
-### Download and import the data package that has example settings for electronic messages
+### Download and import the data package with example settings for electronic messages
 
-The data package contains electronic message settings that are used to generate the VAT declaration in XML format and preview it in Excel. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../../general-ledger/electronic-messaging.md).
+The data package contains electronic message settings that you use to generate the VAT declaration in XML format and preview it in Excel. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
-To download and import the data package that has example settings for electronic messages, follow these steps:
+To download and import the data package with example settings for electronic messages, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **ES VAT declaration EM package**. The downloaded file is named **ES VAT declaration EM package.zip**.
 1. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
@@ -225,7 +225,7 @@ To configure electronic messages, follow these steps:
 To preview the VAT declaration in Excel from the report sales tax for settlement period periodic task, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
-1. Set values for the following fields.
+1. Enter values for the following fields.
 
     | Field                                 | Description       |
     |---------------------------------------|--------------------------|
@@ -247,7 +247,7 @@ To preview the VAT declaration in Excel from the report sales tax for settlement
 To settle and post sales tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
-1. Set values for the following fields.
+1. Enter values for the following fields.
 
     | Field                     | Description                                    |
     |---------------------------|------------------------------------------------|
@@ -263,7 +263,7 @@ To preview the VAT declaration in Excel from a sales tax payment, follow these s
 
 1. In Dynamics 365 Finance, go to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**, and select a sales tax payment line.
 1. Select **Print report**, and then select **OK**.
-1. Review the Excel file that is generated for the selected sales tax payment line.
+1. Review the Excel file that's generated for the selected sales tax payment line.
 
     > [!NOTE]
     > The report is generated only for the selected line of the sales tax payment. If you need to generate, for example, a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the **Report sales tax for settlement period** periodic task.
