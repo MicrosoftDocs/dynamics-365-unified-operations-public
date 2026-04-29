@@ -485,6 +485,7 @@ After you complete the required configuration steps, generate and submit electro
 - **Inquiring statuses of submitted e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Failed** if the submitted invoice is **Rejected** by Edicom due to various reasons, or **Pending update actions execution** if the submitted invoice is successfully validated by Edicom and the system is ready for further processing.
 - **Update statuses of submitted e-invoices** - at this stage, Dynamics 365 and Edicom can intercommunicate exchanging different e-invoices statuses until the concluding status is reached or due to preconfigured timeout.
 
+:::image type="content" source="e-invoice-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
 ### Submission of e-invoices to Edicom
 
