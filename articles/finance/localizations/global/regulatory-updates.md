@@ -33,6 +33,7 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| Malaysia  | April 2026 | 10.0.48, also available in prior versions | Updated [SST-02 declaration for Malaysia](../apac/apac-mys-sst-declaration.md) - Sections 13d, 18c (points 1, 2, 3) and subsequent sections (18d, 18e). |
 | Brazil | April 2026 | 10.0.47, also available in prior versions | Regulatory update to extend [NFS-e support](../brazil/brazil-nfs-e-service-invoices-projects.md) for project-based invoicing scenarios, enabling compliant XML generation for São Paulo and Federal NFS-e formats. Includes NBS field, service location attributes, tax estimation percentages, and updates to ER configurations for fiscal document mapping. |
 | Italy | March 2026 | 10.0.48, also available in prior versions | Updated [Unique certification](../italy/emea-ita-exil-unique-certification.md) (Certificazione Unica) form aligned with the provision of January 15, 2026 (Prot. n. 9454/2026) for tax year 2025. |
 | Lithuania | March 2026 | 10.0.48, also available in prior versions | New VMI VAT codes PVM58, PVM59, and PVM60 for [i.SAF reporting](../lithuania/emea-ltu-isaf.md), effective from January 1, 2026, aligned with the updated 12% VAT rate classification. |
