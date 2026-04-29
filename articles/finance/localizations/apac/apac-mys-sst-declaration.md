@@ -3,7 +3,7 @@ title: SST-02 declaration for Malaysia
 description: This article explains how to configure and generate the SST-02 return form for Malaysia.
 author: liza-golub
 ms.author: egolub
-ms.date: 03/02/2026
+ms.date: 04/29/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -29,32 +29,20 @@ The SST-02 return form report in Microsoft Dynamics 365 Finance includes the fol
 
 ## Prerequisites
 
-The primary address of the legal entity must be in Malaysia.
-
-## Turn on the feature
-
-In the **Feature management** workspace, turn on the feature that is named **(Malaysia) Category hierarchy for Sales and purchase tax report**.
+In the **Feature management** workspace, turn on the feature that is named **Category hierarchy for Sales and purchase tax report**.
 
 For more information about how to turn on features, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Download electronic reporting configurations
 
-The implementation of the SST-02 return form for Malaysia is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+To generate the SST-02 return form and the related reports in a Malaysian legal entity in Microsoft Dynamics 365 Finance, import the following ER configurations from Dataverse. 
+Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
-For production and user acceptance testing (UAT) environments, follow the instructions in [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+1. Tax declaration model
+1. Tax declaration model mapping
+1. SST-02 Declaration Excel (MY)
 
-To generate the SST-02 return form and the related reports in a Malaysian legal entity, you must upload the following ER configurations:
-
-1. Tax declaration model.version.67.xml
-1. Tax declaration model mapping.version.67.93.xml
-1. SST-02 Declaration Excel (MY).version.67.3.xml or a later version
-
-After you finish downloading the ER configurations from Microsoft Dynamics Lifecycle Services (LCS) or the Global repository, follow these steps:
-
-1. In Finance, in the **Electronic reporting** workspace, select the **Reporting configurations** tile.
-1. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**, and upload all the files in the order in which they are listed earlier in this section.
-
-After you upload all the ER configurations, the configuration tree appears in Finance.
+Import the most recent versions of the configurations. The version description usually includes the number of the Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
 ### Set up application-specific parameters
 
@@ -75,7 +63,7 @@ The **Application-specific parameters** option lets you define the criteria that
 
     The following table provides an example of a configuration. However, you can use a different combination of a tax code and a name, depending on your Finance implementation.
 
-    | Form (section)           | Lookup result (ReportFieldLookup)                     |        Description                                                                                              |    Line      |   Tax code           |     Name                     |
+    | Form (section)  | Lookup result (ReportFieldLookup)     |        Description                                                                                   |   Line   |   Tax code   |     Name                 |
     |-----------------|---------------------------------------|------------------------------------------------------------------------------------------------------|----------|--------------|--------------------------|
     | PART B2-11a     | TaxableGoods5                         | Taxable goods at 5% Rate                                                                             | 1        | SST5         | Sales                    |
     | PART B2-11a     | TaxableGoods5                         | Taxable goods at 5% Rate                                                                             | 2        | SST5\_O      | Sales                    |
@@ -89,25 +77,37 @@ The **Application-specific parameters** option lets you define the criteria that
     | PART B2-13      | TaxableCredit                         | Amount of Tax\_Deducted from Credit Note                                                             | 10       | SST10\_O     | SalesCreditNote          |
     | PART B2-13      | TaxableCredit                         | Amount of Tax\_Deducted from Credit Note                                                             | 11       | SST6         | SalesCreditNote          |
     | PART B2-13      | TaxableCredit                         | Amount of Tax\_Deducted from Credit Note                                                             | 12       | SSTH         | SalesCreditNote          |
-    | PART B2-18a     | Exempted\_Export                      | Exempted Export, Special Area and Designated Area                                                    | 13       | SSTE         | SalesExempt              |
-    | PART B2-18a     | Exempted\_Export                      | Exempted Export, Special Area and Designated Area                                                    | 14       | SSTE         | SalesExemptCreditNote    |
-    | PART B2-18b1    | Exempted\_ClassOfPerson               | Schedule A (Class of Person)                                                                         | 15       | SSTE\_A      | SalesExempt              |
-    | PART B2-18b1    | Exempted\_ClassOfPerson               | Schedule A (Class of Person)                                                                         | 16       | SSTE\_A      | SalesExemptCreditNote    |
-    | PART B2-18b2    | Exempted\_Manufacturer                | Schedule B (Manufacturer of specific nontaxable goods)                                               | 17       | SSTE\_B      | SalesExempt              |
-    | PART B2-18b2    | Exempted\_Manufacturer                | Schedule B (Manufacturer of specific nontaxable goods)                                               | 18       | SSTE\_B      | SalesExemptCreditNote    |
-    | PART B2-18b3i   | Exempted\_CRawMaterials               | Purchase or Importation of Raw Material Exempted From Sales Tax                                      | 19       | SSTE\_C1     | SalesExempt              |
-    | PART B2-18b3i   | Exempted\_CRawMaterials               | Purchase or Importation of Raw Material Exempted From Sales Tax                                      | 20       | SSTE\_C1     | SalesExemptCreditNote    |
-    | PART B2-18b3ii  | Exempted\_CManufacturer               | Purchase or Importation of Raw Material on behalf of Registered Manufacturer Exempted From Sales Tax | 21       | SSTE\_C2     | SalesExempt              |
-    | PART B2-18b3ii  | Exempted\_CManufacturer               | Purchase or Importation of Raw Material on behalf of Registered Manufacturer Exempted From Sales Tax | 22       | SSTE\_C2     | SalesExemptCreditNote    |
-    | PART B2-18b3iii | Exempted\_CValueofWork                | Value of Work Performed Exempted from Sales Tax                                                      | 23       | SSTE\_C3     | SalesExempt              |
-    | PART B2-18b3iii | Exempted\_CValueofWork                | Value of Work Performed Exempted from Sales Tax                                                      | 24       | SSTE\_C3     | SalesExemptCreditNote    |
-    | PART B2-19      | PurchaseImportRawMaterial             | Purchase or Importation of Raw materials exempted from sales tax                                     | 25       | SSTP\_1      | PurchaseExempt           |
-    | PART B2-19      | PurchaseImportRawMaterial             | Purchase or Importation of Raw materials exempted from sales tax                                     | 26       | SSTP\_1      | PurchaseExemptCreditNote |
-    | PART B2-20      | PurchaseImportRawMaterialManufacturer | Purchase or Importation of Raw material on behalf of Registered Manufacturer exempted from sales tax | 27       | SSTP\_2      | PurchaseExempt           |
-    | PART B2-20      | PurchaseImportRawMaterialManufacturer | Purchase or Importation of Raw material on behalf of Registered Manufacturer exempted from sales tax | 28       | SSTP\_2      | PurchaseExemptCreditNote |
-    | PART B2-21      | PurchaseOtherExempted                 | Value of work performed exempted from sales tax                                                      | 29       | SSTP\_3      | PurchaseExempt           |
-    | PART B2-21      | PurchaseOtherExempted                 | Value of work performed exempted from sales tax                                                      | 30       | SSTP\_3      | PurchaseExemptCreditNote |
-    | Not applicable  | Other                                 | Other                                                                                                | 31       | Not blank    | Not blank                |
+    | PART B2-13d     | BadDebtRelief                         | Total tax value of bad debt relief                                                                   | 13       | SSTBD        | SalesCreditNote          |
+    | PART B2-18a     | Exempted\_Export                      | Exempted Export, Special Area and Designated Area                                                    | 14       | SSTE         | Not blank                |
+    | PART B2-18a     | Exempted\_Export                      | Exempted Export, Special Area and Designated Area                                                    | 15       | SSTE         | SalesExemptCreditNote    |
+    | PART B2-18b1    | Exempted\_ClassOfPerson               | Schedule A (Class of Person)                                                                         | 16       | SSTE\_A      | SalesExempt              |
+    | PART B2-18b1    | Exempted\_ClassOfPerson               | Schedule A (Class of Person)                                                                         | 17       | SSTE\_A      | SalesExemptCreditNote    |
+    | PART B2-18b2    | Exempted\_Manufacturer                | Schedule B (Manufacturer of specific nontaxable goods)                                               | 18       | SSTE\_B      | SalesExempt              |
+    | PART B2-18b2    | Exempted\_Manufacturer                | Schedule B (Manufacturer of specific nontaxable goods)                                               | 19       | SSTE\_B      | SalesExemptCreditNote    |
+    | PART B2-18b3i   | Exempted\_CRawMaterials               | Purchase or Importation of Raw Material Exempted From Sales Tax                                      | 20       | SSTE\_C1     | SalesExempt              |
+    | PART B2-18b3i   | Exempted\_CRawMaterials               | Purchase or Importation of Raw Material Exempted From Sales Tax                                      | 21       | SSTE\_C1     | SalesExemptCreditNote    |
+    | PART B2-18b3ii  | Exempted\_CManufacturer               | Purchase or Importation of Raw Material on behalf of Registered Manufacturer Exempted From Sales Tax | 22       | SSTE\_C2     | SalesExempt              |
+    | PART B2-18b3ii  | Exempted\_CManufacturer               | Purchase or Importation of Raw Material on behalf of Registered Manufacturer Exempted From Sales Tax | 23       | SSTE\_C2     | SalesExemptCreditNote    |
+    | PART B2-18b3iii | Exempted\_CValueofWork                | Value of Work Performed Exempted from Sales Tax                                                      | 24       | SSTE\_C3     | SalesExempt              |
+    | PART B2-18b3iii | Exempted\_CValueofWork                | Value of Work Performed Exempted from Sales Tax                                                      | 25       | SSTE\_C3     | SalesExemptCreditNote    |
+    | PART B2-18c1    | Exempted\_B2BExemption                | B2B exemption (registered to registered person)                                                      | 26       | SSTE\_C31    | SalesExempt              |
+    | PART B2-18c1    | Exempted\_B2BExemption                | B2B exemption (registered to registered person)                                                      | 27       | SSTE\_C31    | SalesExemptCreditNote    |
+    | PART B2-18c2    | Exempted\_GroupRelief                 | Group relief                                                                                         | 28       | SSTE\_C32    | SalesExempt              |
+    | PART B2-18c2    | Exempted\_GroupRelief                 | Group relief                                                                                         | 29       | SSTE\_C32    | SalesExemptCreditNote    |
+    | PART B2-18c3    | Exempted\_OtherExemptions             | Other exemptions                                                                                     | 30       | SSTE\_C33    | SalesExempt              |
+    | PART B2-18c3    | Exempted\_OtherExemptions             | Other exemptions                                                                                     | 31       | SSTE\_C33    | SalesExempt              |
+    | PART B2-18c     | Exempted\_CValueofWork                | (Deprecated) Value of Work Performed Exempted from Sales Tax                                         | -        | -            | -                        |
+    | PART B2-18d     | Exempted\_CValueofWork                | Nontaxable services                                                                                  | 32       | SSTE\_D      | SalesExempt              |
+    | PART B2-18d     | Exempted\_CValueofWork                | Nontaxable services                                                                                  | 32       | SSTE\_D      | SalesExemptCreditNote    |
+    | PART B2-18e     | Exempted\_CValueofWork                | Sales exempted under Sales Tax Act 2018 s.35(3) and/or s.61A                                         | 33       | SSTE\_E      | SalesExempt              |
+    | PART B2-18e     | Exempted\_CValueofWork                | Sales exempted under Sales Tax Act 2018 s.35(3) and/or s.61A                                         | 33       | SSTE\_E      | SalesExemptCreditNote    |
+    | PART B2-19      | PurchaseImportRawMaterial             | Purchase or Importation of Raw materials exempted from sales tax                                     | 34       | SSTP\_1      | PurchaseExempt           |
+    | PART B2-19      | PurchaseImportRawMaterial             | Purchase or Importation of Raw materials exempted from sales tax                                     | 35       | SSTP\_1      | PurchaseExemptCreditNote |
+    | PART B2-20      | PurchaseImportRawMaterialManufacturer | Purchase or Importation of Raw material on behalf of Registered Manufacturer exempted from sales tax | 36       | SSTP\_2      | PurchaseExempt           |
+    | PART B2-20      | PurchaseImportRawMaterialManufacturer | Purchase or Importation of Raw material on behalf of Registered Manufacturer exempted from sales tax | 37       | SSTP\_2      | PurchaseExemptCreditNote |
+    | PART B2-21      | PurchaseOtherExempted                 | Value of work performed exempted from sales tax                                                      | 38       | SSTP\_3      | PurchaseExempt           |
+    | PART B2-21      | PurchaseOtherExempted                 | Value of work performed exempted from sales tax                                                      | 39       | SSTP\_3      | PurchaseExemptCreditNote |
+    | Not applicable  | Other                                 | Other                                                                                                | 40       | Not blank    | Not blank                |
 
 1. Repeat the previous steps for the **ReportFieldDetailed** lookup. The following table provides an example of a configuration. However, you can use a different combination of a tax code and a name, depending on your Finance implementation.
 
