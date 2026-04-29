@@ -3,7 +3,7 @@ title: SST-02 declaration for Malaysia
 description: This article explains how to configure and generate the SST-02 return form for Malaysia.
 author: liza-golub
 ms.author: egolub
-ms.date: 03/02/2026
+ms.date: 04/29/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
