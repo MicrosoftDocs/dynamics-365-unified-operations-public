@@ -98,9 +98,9 @@ Follow these steps to set up an external service definition.
 
     You can use the following substitution placeholders in the header values, the form data values, or the request body:
 
-    - `$auth.secret     – This placeholder is replaced by the authentication secret configured on the external service instance. Use it to store a shared key, token, or password that's required to authenticate with the external service instance.
-    - `$label.printer     – This placeholder is replaced by the name of the printer that you configure later. Use it to signal to the external service where the label should be printed.
-    - `$label.body or `$label.body:base64     – This placeholder is replaced by the label generated from a label layout or document routing layout. Use the base64 formatting version (`$label.body:base64) if the externals service expects a base64-encoded Zebra Programming Language (ZPL) script.
+    - `$auth.secret` – This placeholder is replaced by the authentication secret configured on the external service instance. Use it to store a shared key, token, or password that's required to authenticate with the external service instance.
+    - `$label.printer` – This placeholder is replaced by the name of the printer that you configure later. Use it to signal to the external service where the label should be printed.
+    - `$label.body` or `$label.body:base64` – This placeholder is replaced by the label generated from a label layout or document routing layout. Use the base64 formatting version (`$label.body:base64`) if the externals service expects a base64-encoded Zebra Programming Language (ZPL) script.
 
 1. If you require additional service operations (for example, one for ZPL-based layouts and one for variable-based layouts), repeat the previous step to add them.
 1. On the Action Pane, select **Save**. Then select the **Close** button to return to the **External service definitions** page.
