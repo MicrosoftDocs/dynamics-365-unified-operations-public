@@ -127,12 +127,12 @@ To update the "Sign up and sign in" policy with custom page information, follow 
 1. Select the **Unified sign up or sign in page** layout.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter `www.<my domain>.com/sign-in?preloadscripts=true`.
-1. In the **Page Layout Version** field, select version **2.1.0** or later (requires module library for Commerce version 10.0.15 or higher).
+1. In the **Page Layout Version** field, select version **2.1.7** (requires module library for Commerce version 10.0.15 or higher).
 1. Select **Save**.
 1. Select the **Local account sign up page** layout.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full sign-up URL. Include the **?preloadscripts=true** suffix. For example, enter `www.<my domain>.com/sign-up?preloadscripts=true`.
-1. In the **Page Layout Version** field, select version **2.1.0** or later (requires module library for Commerce version 10.0.15 or higher).
+1. In the **Page Layout Version** field, select version **2.1.7** (requires module library for Commerce version 10.0.15 or higher).
 1. In the **User attributes** section, follow these steps:
     1. For the **Given Name** and **Surname** attributes, select **No** in the **Requires Verification** column.
     1. For **Email Address** attribute, leave the default value **Yes** selected in the **Requires Verification** column. This option ensures that users signing up with a given email address verify that they own the email address.
@@ -147,7 +147,7 @@ To update the "Profile editing" policy with custom page information, follow thes
 1. Select the **Profile edit page** layout. You might need to scroll down past other layout options, depending on your screen.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full profile edit URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/profile-edit?preloadscripts=true``.
-1. For **Page Layout Version**, select version **2.1.0** or higher. This version requires the module library for Commerce version 10.0.15 or higher.
+1. For **Page Layout Version**, select version **2.1.7**. This version requires the module library for Commerce version 10.0.15 or higher.
 1. In the **User attributes** section, follow these steps:
     1. For the **Given Name** and **Surname** attributes, select **No** in the **Optional** column.
     1. For the **Given Name** and **Surname** attributes, select **No** in the **Requires verification** column.
@@ -161,12 +161,12 @@ To update the "Password reset" policy with custom page information, follow these
 1. Select the **Forgot password page** layout.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full password reset verification URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/password-reset-verification?preloadscripts=true``.
-1. In the **Page Layout Version** field, select version **2.1.0** or higher. This version requires the module library for Commerce version 10.0.15 or higher.
+1. In the **Page Layout Version** field, select version **2.1.7**. This version requires the module library for Commerce version 10.0.15 or higher.
 1. Select **Save**.
 1. Select the **Change password page** layout.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full password reset URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/password-reset?preloadscripts=true``.
-1. In the **Page Layout Version** field, select version **2.1.0** or higher. This version requires the module library for Commerce version 10.0.15 or higher.
+1. In the **Page Layout Version** field, select version **2.1.7**. This version requires the module library for Commerce version 10.0.15 or higher.
 1. Select **Save**.
 
 ## Customize default text strings for labels and descriptions
