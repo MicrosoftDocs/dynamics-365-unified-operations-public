@@ -46,6 +46,20 @@ The receipt designer includes a **Logo** variable. Use this variable to specify 
 
     `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
+## Print barcodes
+
+To print barcodes on receipts, the **BC C39 2 to 1 Narrow** font (file: **C39N2.TTF**) must be installed on the AOS server and the SSRS server. This font is not included with Windows by default, but it is installed as part of the Dynamics 365 Finance and Operations client installation.
+
+To install the font on the required servers, follow these steps:
+
+1. On a machine where the Dynamics 365 Finance and Operations client is installed, locate **C39N2.TTF** in the `Windows\Fonts` folder.
+1. Copy the font file to the `Windows\Fonts` folder on the **AOS server**.
+1. Copy the font file to the `Windows\Fonts` folder on the **SSRS server**.
+1. Restart the **AOS service** and the **SSRS service** on each respective server.
+
+> [!NOTE]
+> If barcodes still don't render after completing these steps, uninstall the font, reboot the SSRS server, reinstall the font, and reboot again if needed.
+
 ## Design a receipt format
 
 Use the form layout designer to graphically create the layout of the form document. The **Receipt format designer** page has three sections: **Header**, **Lines**, and **Footer**. Some types of form layouts use elements from all three sections, whereas other types use elements from only one or two sections. To view the elements that are available for each section, select the appropriate button in the navigation pane on the left side of the page.
