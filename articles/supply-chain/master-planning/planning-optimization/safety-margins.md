@@ -244,6 +244,8 @@ If delays occur and the system doesn't update the requirement dates, several oth
 3. BOM/route selection
 4. Trade agreements
 
+Make sure to test this feature thoroughly to ensure that your intended use of soft issue margins is not affected by the known limitations.
+
 ## Related information
 
 - [Calendars and master planning](../supply-chain-calendars-master-planning.md)
