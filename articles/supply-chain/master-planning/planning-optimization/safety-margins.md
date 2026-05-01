@@ -206,6 +206,22 @@ For example, consider a supply chain where a sales order at warehouse WH11 is fu
 
 This greedy allocation means that downstream operations (closer to the customer) are prioritized for margin, while upstream operations absorb the reduction.
 
+#### Known limitations of soft issue margin
+
+Greedy application of soft issue margin can lead to situations where the requirement dates set by the engine are too optimistic. This happens because the engine will apply the maximum soft issue margin possible when generating supply. At this point, the engine doesn't yet know about potential delays that could occur further up the supply chain. Once such delays are factored in, we will not adjust the requirement dates of any planned supply.
+
+This can lead to situations where the requirement date of a planned supply is set too early, after accounting for delays, FnO will show delay days even though the supply is not actually delayed as the soft issue margin got compressed.
+
+##### Example of known limitation
+
+![GIF showing the known limitation of soft issue margin](media/soft-issue-margin-video-generation.gif)
+
+In this example, we start planning on May 18. A sales order for item P1 has a requirement date of May 22. A soft issue margin of 2 days is configured on P1. The system greedily applies the full issue margin and schedules a production order with a requirement date of May 20. The production order requires raw material R1, which also has a 2-day issue margin and is scheduled with a requirement date of May 18.
+
+However, the purchase order for R1 has a purchase lead time of 3 days. This causes a 3-day delay on the purchase order, which adjusts the planned date to May 21. The delay propagates up to the production order, which also adjusts to May 21. Because soft issue margin is enabled, the issue margin at the production level is compressed and doesn't add further delay. The delay also propagates to the sales order level, but again the soft issue margin is compressed (from two days to one day), so the sales order isn't delayed beyond May 22.
+
+After delays are resolved, a discrepancy exists between the requirement dates and the planned dates. The requirement dates that were set before the delays were known are now too optimistic. The system doesn't retroactively adjust these requirement dates, which can result in delay days being shown even though the supply isn't actually delayed. This is by design and a known limitation of the soft issue margin feature.
+
 ## Related information
 
 - [Calendars and master planning](../supply-chain-calendars-master-planning.md)
