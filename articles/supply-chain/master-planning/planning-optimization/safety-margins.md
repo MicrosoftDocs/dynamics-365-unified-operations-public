@@ -19,7 +19,7 @@ This article describes how safety margins work during master planning.
 
 ## Safety margins overview
 
-Safety margins provide buffer time beyond the normal lead time. For example, when material must be unpacked or inspected after it arrives from the vendor, you can't just add the extra time to the purchase lead time, because this approach gives the additional buffer time to the supplier. This example uses the receipt margin to ensure that the supplier delivers earlier. This approach provides buffer time so that the goods can be handled internally.
+Safety margins provide buffer time beyond the normal lead time. For example, material might need to be unpacked or inspected after it arrives from the vendor. You can't just add the extra time to the purchase lead time, because that approach gives extra buffer time to the supplier. Instead, you use the receipt margin to ensure that the supplier delivers earlier. The receipt margin provides buffer time so that the goods can be handled internally.
 
 There are three types of safety margins:
 
@@ -35,7 +35,7 @@ All margins are defined in days. The default value, *0* (zero), indicates that n
 
 ### Receipt margin
 
-The receipt margin is probably the most used of the three safety margins. It's applied to the *delivery date* and goes backward from the *requirement date*. In other words, you should receive the products the specified number of receipt margin days before you need them.
+The receipt margin is probably the most commonly used of the three safety margins. The system applies it to the *delivery date* and calculates backward from the *requirement date*. In other words, you should receive the products the specified number of receipt margin days before you need them.
 
 The following illustration highlights the receipt margin.
 
@@ -43,7 +43,7 @@ The following illustration highlights the receipt margin.
 
 The receipt margin typically acts as a buffer to ensure time for warehouse registration or other time-consuming processes that the system doesn't capture as part of the general lead time. For purchases, one benefit is that the *delivery date* of the purchase order moves forward accordingly. If you increase the lead time instead of using a safety margin, the vendor still needs to deliver at the last minute.
 
-The receipt margin doesn't change the *requirement date* of the supply. Therefore, you don't directly see the receipt margin when you compare requirement dates for demand and supply (for example, on the **Net requirements** page). For example, if the receipt margin is set to four days, and a purchase order line is planned for receipt on the fifteenth of the month, master planning calculates the adjusted receipt date as the nineteenth of the month.
+The receipt margin doesn't change the *requirement date* of the supply. Therefore, you don't directly see the receipt margin when you compare requirement dates for demand and supply (for example, on the **Net requirements** page). For example, say the receipt margin is four days and a purchase order line is planned for receipt on the 15th of the month. Master planning calculates the adjusted receipt date as the 19th of the month.
 
 A receipt margin isn't applied when on-hand inventory is used as the supply. All on-hand inventory is assumed to be available immediately, regardless of when you actually received it.
 
@@ -106,7 +106,7 @@ You can set all safety margins so that they're calculated based on either calend
 
 For example, a calendar is open from Monday through Friday and closed from Saturday through Sunday. If there's a receipt margin of one day, a requirement date on a Monday produces a delivery date on the previous Friday, because Saturday and Sunday aren't working days.
 
-The calendar that determines the working days depends on the setup and the supply type. It can be controlled by the calendars of the coverage group, the warehouse, and the vendor.
+The calendar that determines the working days depends on the setup and the supply type. The calendars of the coverage group, the warehouse, and the vendor control which days count as working days.
 
 > [!NOTE]
 > If *warehouse* isn't part of the coverage dimension (in other words, planning is based only on *site*), the warehouse calendar isn't used.
@@ -118,19 +118,19 @@ The system can handle a setup where one or more calendars are defined. The follo
 The defined calendars control the actual total lead time in calendar days, from the supply order date to the demand requirement date. The system uses the following calendar prioritization:
 
 - **Purchase lead time** – Only the coverage group calendar is considered.
-- **Receipt margin** – The system uses the coverage group calendar, if it's defined. Otherwise, it uses the warehouse calendar.
-- **Issue margin** – The system uses the coverage group calendar, if it's defined. Otherwise, it uses the warehouse calendar.
+- **Receipt margin** – If a coverage group calendar is defined, the system uses it. Otherwise, the system uses the warehouse calendar.
+- **Issue margin** – If a coverage group calendar is defined, the system uses it. Otherwise, the system uses the warehouse calendar.
 - **Order margin** – Only the coverage group calendar is considered.
 
 #### Calendar that is used for the final date
 
 The following rules determine whether the planning engine can use a given date for a given date type:
 
-- **Purchase receipt date** – The system uses the vendor calendar, if it's defined. Otherwise, it uses the coverage group calendar, if it's defined. If neither of those calendars is defined, the system uses the warehouse calendar.
-- **Transfer receipt date** – The system uses the coverage group calendar, if it's defined. Otherwise, it uses the warehouse calendar.
-- **Production receipt date** – The system uses the coverage group calendar, if it's defined. Otherwise, it uses the warehouse calendar.
-- **Demand issue open day** – The system uses the warehouse calendar, if it's defined. Otherwise, it uses the coverage group calendar.
-- **Order open day** – The system uses a combination (intersection) of the coverage group calendar and the vendor calendar. Both calendars must be open to use the date. If only one of the calendars is defined, the system uses that calendar alone.
+- **Purchase receipt date** – If a vendor calendar is defined, the system uses it. Otherwise, if a coverage group calendar is defined, the system uses that calendar. If neither calendar is defined, the system uses the warehouse calendar.
+- **Transfer receipt date** – If a coverage group calendar is defined, the system uses it. Otherwise, the system uses the warehouse calendar.
+- **Production receipt date** – If a coverage group calendar is defined, the system uses it. Otherwise, the system uses the warehouse calendar.
+- **Demand issue open day** – If a warehouse calendar is defined, the system uses it. Otherwise, the system uses the coverage group calendar.
+- **Order open day** – The system uses a combination (intersection) of the coverage group calendar and the vendor calendar. Both calendars must be open to use the date. If only one calendar is defined, the system uses that calendar alone.
 
 #### Calendar setup overview matrix
 
@@ -154,7 +154,7 @@ For example, an item has a lead time of one day and a receipt margin of three da
 
 Sometimes, the system doesn't apply the issue margin to an order when on-hand supply exists for an item. The reason for this behavior is that the on-hand supply doesn't have a date, so the system can't apply the issue margin.
 
-This situation usually occurs when you sell an item with an issue margin from a warehouse (for example WH11) that is replenished by a transfer order from another warehouse (for example WH13). In this case, one of the following situations could apply:
+This situation usually occurs when you sell an item that has an issue margin from a warehouse such as WH11. A transfer order from another warehouse such as WH13 replenishes the selling warehouse. In this case, one of the following situations could apply:
 
 - **If on-hand supply exists in WH13** – On WH11, the system applies the margin between the sales order date and the transfer order receipt date. However, on WH13, the date of the transfer order shipment is the same as the receipt date because there's on-hand supply, so the system doesn't apply any issue margin.
 
@@ -162,7 +162,7 @@ This situation usually occurs when you sell an item with an issue margin from a 
 
 ### Soft issue margin
 
-Without soft issue margin, the system applies the full issue margin, even when doing so causes a demand to be delayed (that is, the planned requirement date is pushed past the demand requirement date). In some scenarios, this behavior is undesirable because it introduces delays to orders that could otherwise be fulfilled on time or closer to the original requirement date if the issue margin would be dynamically reduced.
+Without soft issue margin, the system applies the full issue margin, even when doing so delays a demand order. In that case, the system pushes the planned requirement date past the demand requirement date. In some scenarios, this behavior is undesirable. It can introduce delays to orders that the system could fulfill on time or closer to the original requirement date by dynamically reducing the issue margin.
 
 *Soft issue margin* provides an alternative behavior. When enabled, the system treats the issue margin as a preferred buffer rather than a hard requirement. Instead of always applying the full issue margin, the system reduces it as needed to avoid pushing the requirement date into the future. The soft issue margin works as follows:
 
@@ -202,15 +202,15 @@ With soft issue margin enabled, the system ignores the issue margin entirely at 
 
 The soft issue margin is applied *greedily* along the supply chain, starting from the demand side. The first level in the chain (closest to the original demand) consumes as much of the available issue margin as possible. Subsequent levels (further from the demand, closer to the supply source) receive whatever margin remains.
 
-For example, consider a supply chain where a sales order at warehouse WH11 is fulfilled by a transfer from warehouse WH12, which in turn is replenished by a purchase order. If the soft issue margin is configured for the item at both warehouses, the system first allocates as much issue margin as possible to the issue from WH11 (the warehouse closest to the customer demand). The issue from WH12 (which is further upstream in the supply chain) then receives whatever margin is still available without causing a delay.
+For example, consider a supply chain where warehouse WH12 fulfills a sales order at warehouse WH11 through a transfer, and a purchase order replenishes WH12. If you configure the soft issue margin for the item at both warehouses, the system first allocates as much issue margin as possible to the issue from WH11, the warehouse closest to the customer demand. The issue from WH12, which is further upstream in the supply chain, then receives whatever margin is still available without causing a delay.
 
 Greedy allocation means that downstream operations (closer to the customer) are prioritized for margin, while upstream operations absorb the reduction.
 
 #### Known limitations of soft issue margin
 
-The greedy application of soft issue margins can lead to situations where the requirement dates set by the engine are too optimistic. When applying the soft issue margin date, the engine doesn't yet know about potential delays that could occur further up the supply chain. Once delays upstream are encountered and factored into the plan, requirement dates are not updated to account for delays compressing the soft issue margin.
+The greedy application of soft issue margins can lead to situations where the requirement dates set by the engine are too optimistic. When the engine applies the soft issue margin date, it doesn't yet know about potential delays that could occur further up the supply chain. Once the system encounters upstream delays and factors them into the plan, requirement dates aren't updated to account for delays compressing the soft issue margin.
 
-Greedy application of soft issue margins can lead to situations where the requirement date of a planned supply is set too early. After accounting for delays, FnO will show delay days even though only the soft issue margin got compressed instead of delaying the demand.
+Greedy application of soft issue margins can lead to situations where the requirement date of a planned supply is set too early. After the system accounts for delays, it shows delay days even though only the soft issue margin was compressed instead of delaying the demand.
 
 ##### Example of known limitation
 
@@ -225,13 +225,13 @@ Example setup:
 
 A sales order for item P1 has a requirement date of May 22. A soft issue margin of two days is configured on P1. The system greedily applies the full issue margin and schedules a production order with a requirement date of May 20. The production order requires raw material R1, which also has a two-day issue margin and is scheduled with a requirement date of May 18.
 
-However, the purchase order for R1 has a purchase lead time of three days. This causes a three-day delay on the purchase order, which adjusts the planned date to May 21. The delay propagates up to the production order, which also adjusts to May 21. Because soft issue margin is enabled, the issue margin at the production level is compressed and doesn't add further delay. The delay also propagates to the sales order level, but again the soft issue margin is compressed from two days to one day, so the sales order isn't delayed beyond May 22.
+However, the purchase order for R1 has a purchase lead time of three days. This lead time causes a three-day delay on the purchase order, which adjusts the planned date to May 21. The delay propagates up to the production order, which also adjusts to May 21. Because soft issue margin is enabled, the issue margin at the production level is compressed and doesn't add further delay. The delay also propagates to the sales order level. However, the system compresses the soft issue margin from two days to one day, so the sales order isn't delayed beyond May 22.
 
-After delays are resolved, a discrepancy exists between the requirement dates and the planned dates. The requirement dates that were set before the delays were known are now too optimistic. The system doesn't retroactively adjust these requirement dates, which can result in delay days being shown even though the supply isn't actually delayed according to the soft issue margin. This is by design and a known limitation of the soft issue margin feature.
+After delays are resolved, a discrepancy exists between the requirement dates and the planned dates. The requirement dates that were set before the delays were known are now too optimistic. The system doesn't retroactively adjust these requirement dates, which can result in delay days being shown even though the supply isn't delayed according to the soft issue margin. This behavior is by design and a known limitation of the soft issue margin feature.
 
 #### Impact of known limitation
 
-Due to not updating the requirement dates in case of delays, several other features that rely on the requirement dates/delays may also be impacted. For example:
+If delays occur and the system doesn't update the requirement dates, several other features that rely on requirement dates and delays might also be affected. For example:
 
 1. Delay days
 2. Actions
