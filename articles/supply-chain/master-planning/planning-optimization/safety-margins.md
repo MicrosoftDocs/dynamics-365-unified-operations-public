@@ -174,7 +174,7 @@ This behavior applies at each level in the supply chain independently. If a bill
 
 #### Enable soft issue margin
 
-1. Enable the feature "Soft issue margins with Planning Optimization".
+1. Enable the feature "Soft issue margins with Planning Optimization."
 
 2. To enable the soft issue margin for a coverage group, go to **Master planning** \> **Setup** \> **Coverage groups**, select the coverage group, and then on the **Other** FastTab, set the **Soft issue margin** option to *Yes*. Soft issue margin can only be enabled on coverage group level.
 
@@ -186,13 +186,13 @@ The following examples illustrate how the soft issue margin works. Both examples
 - Today's date is October 1.
 - The **Add the calculated delay to the requirement date for production orders** option is disabled.
 
-##### Example 1: Issue margin reduced to avoid delay
+##### Example 1: Issue margin is reduced to avoid delay
 
 The demand requirement date is October 7. Without soft issue margin, the system applies the full 10-day issue margin at both the finished good level and the raw material level. Because only six days are available between today's date and the requirement date, the full margin causes a delay at both levels.
 
 With the soft issue margin enabled, the system reduces the issue margin at both levels to the largest values that don't push the planned dates past the requirement date. The orders are planned without delay.
 
-##### Example 2: Order already delayed, issue margin ignored
+##### Example 2: Order already delayed, issue margin is ignored
 
 The demand requirement date is September 24. Without the soft issue margin, the system applies the full 10-day issue margin at both the finished good level and the raw material level, which further increases the delay.
 
@@ -200,17 +200,17 @@ With soft issue margin enabled, the system ignores the issue margin entirely at 
 
 #### Greedy application across multi-level supply chains
 
-The soft issue margin is applied *greedily* along the supply chain, starting from the demand side. This means that the first level in the chain (closest to the original demand) consumes as much of the available issue margin as possible. Subsequent levels (further from the demand, closer to the supply source) receive whatever margin remains.
+The soft issue margin is applied *greedily* along the supply chain, starting from the demand side. The first level in the chain (closest to the original demand) consumes as much of the available issue margin as possible. Subsequent levels (further from the demand, closer to the supply source) receive whatever margin remains.
 
 For example, consider a supply chain where a sales order at warehouse WH11 is fulfilled by a transfer from warehouse WH12, which in turn is replenished by a purchase order. If the soft issue margin is configured for the item at both warehouses, the system first allocates as much issue margin as possible to the issue from WH11 (the warehouse closest to the customer demand). The issue from WH12 (which is further upstream in the supply chain) then receives whatever margin is still available without causing a delay.
 
-This greedy allocation means that downstream operations (closer to the customer) are prioritized for margin, while upstream operations absorb the reduction.
+Greedy allocation means that downstream operations (closer to the customer) are prioritized for margin, while upstream operations absorb the reduction.
 
 #### Known limitations of soft issue margin
 
-The greedy application of soft issue margins can lead to situations where the requirement dates set by the engine are too optimistic. When applying the soft issue margin date, the engine does not yet know about potential delays that could occur further up the supply chain. Once delays upstream are encountered and factored into the plan, requirement dates will not be updated to account for delays compressing the soft issue margin.
+The greedy application of soft issue margins can lead to situations where the requirement dates set by the engine are too optimistic. When applying the soft issue margin date, the engine doesn't yet know about potential delays that could occur further up the supply chain. Once delays upstream are encountered and factored into the plan, requirement dates are not updated to account for delays compressing the soft issue margin.
 
-This can lead to situations where the requirement date of a planned supply is set too early. After accounting for delays, FnO will show delay days even though only the soft issue margin got compressed instead of delaying the demand.
+Greedy application of soft issue margins can lead to situations where the requirement date of a planned supply is set too early. After accounting for delays, FnO will show delay days even though only the soft issue margin got compressed instead of delaying the demand.
 
 ##### Example of known limitation
 
@@ -220,12 +220,12 @@ The following example illustrates the known limitation.
 
 Example setup:
 
-- The issue margin is 2 days on all items.
-- Today's date is May 18th.
+- The issue margin is two days on all items.
+- Today's date is May 18.
 
-A sales order for item P1 has a requirement date of May 22. A soft issue margin of 2 days is configured on P1. The system greedily applies the full issue margin and schedules a production order with a requirement date of May 20. The production order requires raw material R1, which also has a 2-day issue margin and is scheduled with a requirement date of May 18.
+A sales order for item P1 has a requirement date of May 22. A soft issue margin of two days is configured on P1. The system greedily applies the full issue margin and schedules a production order with a requirement date of May 20. The production order requires raw material R1, which also has a two-day issue margin and is scheduled with a requirement date of May 18.
 
-However, the purchase order for R1 has a purchase lead time of 3 days. This causes a 3-day delay on the purchase order, which adjusts the planned date to May 21. The delay propagates up to the production order, which also adjusts to May 21. Because soft issue margin is enabled, the issue margin at the production level is compressed and doesn't add further delay. The delay also propagates to the sales order level, but again the soft issue margin is compressed (from two days to one day), so the sales order isn't delayed beyond May 22.
+However, the purchase order for R1 has a purchase lead time of three days. This causes a three-day delay on the purchase order, which adjusts the planned date to May 21. The delay propagates up to the production order, which also adjusts to May 21. Because soft issue margin is enabled, the issue margin at the production level is compressed and doesn't add further delay. The delay also propagates to the sales order level, but again the soft issue margin is compressed from two days to one day, so the sales order isn't delayed beyond May 22.
 
 After delays are resolved, a discrepancy exists between the requirement dates and the planned dates. The requirement dates that were set before the delays were known are now too optimistic. The system doesn't retroactively adjust these requirement dates, which can result in delay days being shown even though the supply isn't actually delayed according to the soft issue margin. This is by design and a known limitation of the soft issue margin feature.
 
