@@ -172,6 +172,12 @@ Without soft issue margin, the system applies the full issue margin, even when d
 
 This behavior applies at each level in the supply chain independently. If a bill of materials (BOM) structure includes both a finished good and a raw material, the system evaluates and adjusts the issue margin separately for each level.
 
+#### Prerequisites
+
+Before you can use the **Soft issue margin** feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
+
 #### Enable soft issue margin
 
 1. Enable the feature "Soft issue margins with Planning Optimization."
