@@ -1,11 +1,10 @@
 ---
 title: Call Retail Server extension APIs
-description: This article describes how to call Microsoft Dynamics 365 Retail Server extension APIs from data actions or directly from module code.
+description: Learn how to call Microsoft Dynamics 365 Retail Server extension APIs from data actions, or directly from module code.
 author: samjarawan
-ms.date: 08/01/2024
+ms.date: 02/20/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-22
@@ -16,21 +15,21 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to call Microsoft Dynamics 365 Retail Server extension application programming interfaces (APIs) from data actions or directly from module code.
+This article describes how to call Microsoft Dynamics 365 Retail Server extension application programming interfaces (APIs) from data actions, or directly from module code.
 
-Dynamics 365 Retail Server extension APIs can be called from either the point of sale (POS) system or from e-Commerce modules and data actions. To call the APIs from e-Commerce modules and data actions, you must create proxy module TypeScript (.ts) files by using a tool that is provided as part of the Dynamics 365 Retail software development kit (SDK). You can then include these files in your e-Commerce configurations and use them to call the Retail Server extension APIs from e-Commerce modules and data actions.
+You can call Dynamics 365 Retail Server extension APIs from either the point of sale (POS) system or from e-Commerce modules and data actions. To call the APIs from e-Commerce modules and data actions, you must create proxy module TypeScript (.ts) files by using a tool provided as part of the Dynamics 365 Retail software development kit (SDK). You can then include these files in your e-Commerce configurations and use them to call the Retail Server extension APIs from e-Commerce modules and data actions.
 
 > [!NOTE]
 > This article doesn't explain how to create Retail Server extensions. For more information, see [Create a Retail Server extension API](../dev-itpro/retail-server-icontroller-extension.md).
 
-It's assumed that the following prerequisites are in place:
+This article assumes that the following prerequisites are in place:
 
-- A Retail Server extension has already been deployed.
+- A Retail Server extension is already deployed.
 - You have access to the Retail Server extension dynamic-link libraries (DLLs) that are available.
 
 In addition, make sure that the .env file **MSDyn365Commerce\_BASEURL** has a value that points to the environment that has the deployed Retail Server extension, so that you can test against it. If this option isn't available, you can use a mock-up instead.
 
-If you're developing on the local Tier 1 Retail Server virtual machine (VM), you must point **MSDyn365Commerce\_BASEURL** to the local URL (`https://usnconeboxax1ret.cloud.onebox.dynamics.com/`), and make sure that **MSDyn365Commerce\_CHANNELID** and **MSDyn365Commerce\_OUN** are set to the appropriate online channel that you're using. Here is an example of an .env file.
+If you're developing on the local Tier 1 Retail Server virtual machine (VM), you must point **MSDyn365Commerce\_BASEURL** to the local URL (`https://usnconeboxax1ret.cloud.onebox.dynamics.com/`), and make sure that **MSDyn365Commerce\_CHANNELID** and **MSDyn365Commerce\_OUN** are set to the appropriate online channel that you're using. Here's an example of an .env file.
 
 ```text
 …
@@ -51,37 +50,37 @@ You might also have to change the following setting in the Retail Server web.con
 
 ## Create proxy files
 
-You will need the Retail SDK to generate proxy files. If you are using a Tier 1 development VM environment, make sure that you have the latest Retail SDK installed. For more information, see [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md).
+You need the Retail SDK to generate proxy files. If you're using a Tier 1 development VM environment, make sure that you have the latest Retail SDK installed. For more information, see [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md).
 
-For information about how Retail extensions can be called from Retail POS, see [Typescript and C# proxies for Retail point of sale (POS)](../dev-itpro/typescript-proxy-retail-pos.md). That article explains how to create a proxy file by using a command that resembles the following command.
+For information about how Retail extensions can be called from Retail POS, see [TypeScript and C# proxies for Retail point of sale (POS)](../dev-itpro/typescript-proxy-retail-pos.md). That article explains how to create a proxy file by using a command that resembles the following command.
  
 ```Console
 K:\RetailSDK\References\microsoft.dynamics.commerce.tools.coreproxygenerator\10.14.20128.1\tools>CommerceProxyGenerator.exe ..\..\..\microsoft.dynamics.commerce.tools.extensionsproxygenerator\9.22.20167.4\tools\Microsoft.Dynamics.Retail.RetailServerLibrary.dll k:\WarrantySample\Contoso.RetailServer.WarrantySample.dll /application:typescriptextensions
 ```
 
 > [!NOTE]
-> The SDK version that is referenced in the command might differ, depending on the version of Retail Server that you're running.
+> The SDK version that the command references might differ, depending on the version of Retail Server that you're running.
 
-The process for creating proxy files for e-Commerce is similar, but the final **/application:typescriptextensions** option is replaced by **/application:typescriptmoduleextensions**, as shown in the following example.
+The process for creating proxy files for Commerce is similar, but you replace the final **/application:typescriptextensions** option with **/application:typescriptmoduleextensions**, as shown in the following example.
 
 ```Console
 K:\RetailSDK\References\microsoft.dynamics.commerce.tools.coreproxygenerator\10.14.20128.1\tools>CommerceProxyGenerator.exe ..\..\..\microsoft.dynamics.commerce.tools.extensionsproxygenerator\9.22.20167.4\tools\Microsoft.Dynamics.Retail.RetailServerLibrary.dll k:\WarrantySample\Contoso.RetailServer.WarrantySample.dll /application:typescriptmoduleextensions
 ```
 
-After you run the preceding command, two new files are generated: **DataActionExtension.g.ts** and **DataServiceEntities.g.ts**.
+After you run the preceding command, it generates two new files: **DataActionExtension.g.ts** and **DataServiceEntities.g.ts**.
 
 ### Proxy data methods
 
-The proxy is closely linked to the data action framework. For every Retail Server extension API, there are two exposed proxy methods:
+The proxy is closely linked to the data action framework. For every Retail Server extension API, the proxy exposes two methods:
 
-- **createInput** – This method creates an **IActionInput** class that can be used either to run a page load data action, or to do a direct state update or fetch via the **actionContext.update()** or **actionContext.get()** methods. This method is always named **create{COMMERCE_SCALE_UNIT_EXTENSION_API_NAME}Input**.
-- **action** – This method can be invoked on its own as an event-based data action, or it can be added inside another action method to create a data action chain. This method is always named **{RETAIL_SERVER_API_NAME}Async**.
+- **createInput** – This method creates an **IActionInput** class that you can use to run a page load data action, or to do a direct state update or fetch via the **actionContext.update()** or **actionContext.get()** methods. This method is always named **create{COMMERCE_SCALE_UNIT_EXTENSION_API_NAME}Input**.
+- **action** – This method you can invoke on its own as an event-based data action, or you can add it inside another action method to create a data action chain. This method is always named **{RETAIL_SERVER_API_NAME}Async**.
 
-## Call a proxy API with a data action
+## Call a proxy API by using a data action
 
-From the Dynamics 365 Commerce online SDK, include the two new files from the previous section in the **/src/actions/** directory. Then create a new data action .ts file, and paste in code that resembles the following example to call the Retail Server extension APIs from the data action. 
+From the Dynamics 365 Commerce online SDK, add the two new files from the previous section to the **/src/actions/** directory. Then, create a new data action .ts file, and paste in code that resembles the following example to call the Retail Server extension APIs from the data action. 
 
-The following example uses a file that is named **get-warranty-info.ts**. Notice that it imports the **DataActionExtension.g** and **DataServiceEntities.g** files that were generated earlier, and it calls the **createGetWarrantyByProductIdInput** Retail Server extension API as defined in the proxy file.
+The following example uses a file named **get-warranty-info.ts**. It imports the **DataActionExtension.g** and **DataServiceEntities.g** files that were generated earlier. It calls the **createGetWarrantyByProductIdInput** Retail Server extension API as defined in the proxy file.
 
 ```typescript
 import { createObservableDataAction, IAction, ICreateActionContext } from '@msdyn365-commerce/core';
@@ -99,7 +98,7 @@ export default createObservableDataAction({
 });
 ```
 
-You can now call the data action just as you might call any other data action, by declaring it in the **dataActions** node of your module.definition.json file, as shown in the following example. The data action will be called at page load time.
+You can now call the data action just as you might call any other data action. Declare it in the **dataActions** node of your module.definition.json file, as shown in the following example. The data action is called at page load time.
 
 ```json
 {
@@ -188,7 +187,7 @@ export default (props: IWarrantylistsampleViewProps) => {
 
 ## Call proxy APIs directly
 
-The following example shows a Retail Server API being called directly inside of a module's typescript React view code without using a data action.
+The following example shows a Retail Server API being called directly inside of a module's TypeScript React view code without using a data action.
 
 ```
 import * as React from 'react';
@@ -222,6 +221,5 @@ export default (props: IWarrantylistViewProps) => {
 [Event-based data actions](event-based-data-actions.md)
 
 [Core data actions](core-data-actions.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

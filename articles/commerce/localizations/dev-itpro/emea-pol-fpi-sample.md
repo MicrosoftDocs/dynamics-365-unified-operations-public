@@ -2,10 +2,9 @@
 title: Fiscal printer integration sample for Poland
 description: This article provides an overview of the fiscal integration sample for Poland in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 02/26/2026
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-02-01
@@ -24,7 +23,7 @@ Microsoft doesn't release any hardware, software, or documentation from Posnet. 
 
 ## Scenarios
 
-The following scenarios are covered by the fiscal printer integration sample for Poland:
+The fiscal printer integration sample for Poland covers the following scenarios:
 
 - Sales scenarios:
 
@@ -44,7 +43,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Print line discounts.
     - Gift cards:
 
-        - Exclude an issued/re-charged gift card line from a fiscal receipt for a sale.
+        - Exclude an issued or recharged gift card line from a fiscal receipt for a sale.
         - Print a payment that uses a gift card as a regular method of payment.
 
     - Print fiscal receipts for customer order operations:
@@ -59,7 +58,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
 
-    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready, or isn't responding, the printer is out of paper, or there is a paper jam.
+    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready, or isn't responding, the printer is out of paper, or there's a paper jam.
     - Defer fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
     - Check the availability of the fiscal printer before a new sales transaction is opened or a sales transaction is finalized.
@@ -70,7 +69,7 @@ The fiscal printer integration sample implements the following rules that are re
 
 - Exclude sales lines that are related to the *Issue gift card* and *Add to gift card* operations from the fiscal receipt.
 - Don't print a fiscal receipt if it consists only of gift card lines.
-- Deduct the total amount of gift cards that are issued or re-charged in a transaction from payment lines of the fiscal receipt.
+- Deduct the total amount of gift cards that are issued or recharged in a transaction from payment lines of the fiscal receipt.
 - Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
 - Payment by gift card is considered a regular payment.
 
@@ -113,7 +112,7 @@ To enable the registration process, follow these steps to set up Commerce headqu
 1. Download configuration files for the fiscal document provider and the fiscal connector:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Select a correct release branch version according to your SDK/application version.
+    1. Select the correct release branch version according to your SDK or application version.
     1. Open **src \> FiscalIntegration \> Posnet**.
     1. Download the fiscal document provider configuration file at **CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml**.
     1. Download the fiscal connector configuration file at **HardwareStation \> ThermalDeviceSample \> Configuration \> ConnectorPosnetThermalFVEJ.xml**.
@@ -129,25 +128,25 @@ To enable the registration process, follow these steps to set up Commerce headqu
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile. Select the document provider and the connector that you loaded earlier. Update the [data mapping settings](#default-data-mapping) as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the fiscal connector that you loaded earlier. Update the [connector settings](#fiscal-connector-settings) as required.
-6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
-7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process and a fiscal registration process step, and select the fiscal connector group that you created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
-9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
-10. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process and a fiscal registration process step, and select the fiscal connector group that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer connects to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
+1. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
 #### Default data mapping
 
-The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
+The fiscal document provider configuration that the fiscal integration sample provides includes the following default data mapping:
 
-- **Value-added tax (VAT) rates mapping** – The mapping of tax percentage values that are set up for the sales tax codes to fiscal printer–specific VAT rates. Here is the default mapping:
+- **Value-added tax (VAT) rates mapping** – The mapping of tax percentage values that you set up for the sales tax codes to fiscal printer–specific VAT rates. Here's the default mapping:
 
     ```
     0 : 23.00 ; 1 : 8.00 ; 2 : 5.00 ; 3 : 0.00
     ```
 
-    The first component in each pair represents a VAT rate number that is configured in the fiscal printer. The second component represents the corresponding VAT rate. For more information about the fiscal printer VAT rate configuration, see the POSNET driver documentation.
+    The first component in each pair represents a VAT rate number that you configure in the fiscal printer. The second component represents the corresponding VAT rate. For more information about the fiscal printer VAT rate configuration, see the POSNET driver documentation.
 
-- **Tender type mapping** – The mapping of payment methods that are configured for the store to payment forms that are supported by the fiscal printer. Here is the default mapping:
+- **Tender type mapping** – The mapping of payment methods that you configure for the store to payment forms that the fiscal printer supports. Here's the default mapping:
 
     ```
     0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0
@@ -157,11 +156,11 @@ The following default data mapping is included in the fiscal document provider c
 
 #### Fiscal connector settings
 
-The following settings are included in the fiscal connector configuration that is provided as part of the fiscal integration sample:
+The fiscal connector configuration that the fiscal integration sample provides includes the following settings:
 
-- **Connection string** – A string that describes the details of the connection to the device in a format that is supported by the driver. For more information, see the POSNET driver documentation.
-- **Date and time synchronization** – A value that specifies whether the date and time of the printer must be synced with the connected Hardware station.
-- **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the device. For more information, see the POSNET driver documentation.
+- **Connection string** – A string that describes the details of the connection to the device in a format that the driver supports. For more information, see the POSNET driver documentation.
+- **Date and time synchronization** – A value that specifies whether the date and time of the printer syncs with the connected Hardware station.
+- **Device timeout** – The amount of time, in milliseconds, that the driver waits for a response from the device. For more information, see the POSNET driver documentation.
 
 ### Configure channel components
 
@@ -173,7 +172,7 @@ The following settings are included in the fiscal connector configuration that i
 
 To set up a development environment to test and extend the sample, follow these steps:
 
-1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more information, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md).
+1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select the correct release branch version according to your SDK and application version. For more information, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md).
 1. Open the fiscal printer integration solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\Posnet.sln**, and build it.
 1. Install CRT extensions:
 
@@ -218,7 +217,7 @@ The fiscal printer integration sample for Poland is based on the [fiscal integra
 
 ### Commerce runtime extension design
 
-The purpose of the extension that is a fiscal document provider is to generate printer-specific documents and handle responses from the fiscal printer. This extension generates a set of printer-specific commands in JavaScript Object Notation (JSON) format that are defined by POSNET specification 19-3678.
+The purpose of the extension that is a fiscal document provider is to generate printer-specific documents and handle responses from the fiscal printer. This extension generates a set of printer-specific commands in JavaScript Object Notation (JSON) format that the POSNET specification 19-3678 defines.
 
 #### Request handler
 
@@ -228,7 +227,7 @@ The handler is inherited from the **INamedRequestHandler** interface. The **Hand
 
 The connector supports the following requests:
 
-- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a printer-specific document that should be registered in the fiscal printer.
+- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document to generate. It returns a printer-specific document that the fiscal printer registers.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
 
 #### Configuration
@@ -237,13 +236,13 @@ The configuration file for the fiscal document provider is located at **src\\Fis
 
 ### Hardware station extension design
 
-The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer. This extension calls the functions of the POSNET driver to submit commands that the CRT extension generates to the fiscal printer. It also handles device errors.
+The fiscal connector extension communicates with the fiscal printer. This extension calls the functions of the POSNET driver to submit commands that the CRT extension generates to the fiscal printer. It also handles device errors.
 
 #### Request handler
 
 The **FiscalPrinterHandler** request handler is the entry point for handling the request to the fiscal peripheral device.
 
-The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Commerce headquarters.
+The handler inherits from the **INamedRequestHandler** interface. The **HandlerName** method returns the name of the handler. The handler name should match the fiscal connector name that you specify in Commerce headquarters.
 
 The connector supports the following requests:
 

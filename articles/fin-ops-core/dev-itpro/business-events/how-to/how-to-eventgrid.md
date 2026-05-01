@@ -14,6 +14,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 ---
 # Business events and Azure Event Grid
+
 [!include[banner](../../includes/banner.md)]
 
 This article explains how to configure a Microsoft Azure Event Grid endpoint and how to consume a business event from Event Grid.
@@ -42,7 +43,6 @@ The following overview lists the procedures that you must complete:
 1. Select **Add** to create a new Event Grid topic. Set the parameters, and then select **Create**. You can create a new resource group as a container for your lab, or you can use an existing resource group.
 1. After deployment is completed, select the new Event Grid. On the property blade, select **Overview**, and make a note of the **Topic Endpoint** value. You need this value later.
 1. Back on the property blade, select **Access keys**, and copy the **Key 1** value. You need this value when you configure the key vault in the next procedure.
-
 
 ## Procedure 2: Create a key vault
 
@@ -136,6 +136,5 @@ The business scenario involves sending an email message whenever a free text inv
 1. Fill in the message with the required fields.
 1. Save your logic app.
 1. Trigger the business event by posting a customer payment. Then verify that the logic app runs, and that you receive an email that includes customer payment details.
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

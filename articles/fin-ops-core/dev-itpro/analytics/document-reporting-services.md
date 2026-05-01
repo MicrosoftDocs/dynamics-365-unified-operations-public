@@ -4,7 +4,7 @@ description: Learn about the reporting solution that simplifies service administ
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 02/26/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -38,11 +38,11 @@ The following table compares the service administration prerequisites for Micros
 
 | AX 2012 | The current version of the application |
 |---------|----------------------------------------|
-| A report development environment has the following prerequisites:<br>• SSRS must be installed.<br>• SSRS must be configured by using Reporting Services Configuration Manager.<br>• SSRS extensions for the application must be installed. | Reporting services run in the Azure compute emulator, together with the application server. Therefore, there are no SSRS service administration prerequisites. After reports are deployed to the local reporting services, you can access them from the client. |
+| A report development environment has the following prerequisites:<br>• SSRS must be installed.<br>• SSRS must be configured by using Reporting Services Configuration Manager.<br>• SSRS extensions for the application must be installed. | Reporting services run in the Azure compute emulator, together with the application server. Therefore, there are no SSRS service administration prerequisites. After the reports are deployed to the local reporting services, you can access them from the client. |
 
 ## Developing application reports
 
-The process for developing a report in the current version is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio. The following table describes how the application simplifies the basic procedure for adding an automatic design report that's based on a query.
+Developing a report in the current version is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio. The following table describes how the application simplifies the basic procedure for adding an automatic design report that's based on a query.
 
 | AX 2012 | The current version of the application |
 |---------|----------------------------------------|

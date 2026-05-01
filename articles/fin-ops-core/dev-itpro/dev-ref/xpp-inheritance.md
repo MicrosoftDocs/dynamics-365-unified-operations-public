@@ -4,7 +4,7 @@ description: Learn about inheritance in X++, including overviews and examples on
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 06/18/2019
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -19,6 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This article describes inheritance in X++, including how to create a subclass and override a method.
 
 ## Creating a subclass
+
 *Subclasses* are classes that extend or inherit from other classes. A class can extend only one other class. Multiple inheritance isn't supported. If you extend a class, the subclass inherits all the methods and variables in the parent class (the *superclass*). Subclasses let you reuse existing code for a more specific purpose. Therefore, they help save you time during design, development, and testing. To customize the behavior of a superclass, override the methods in a subclass. A superclass is often known as a *base class*, and a subclass is often known as a *derived class*.
 
 ### Subclass example
@@ -67,9 +68,10 @@ public final class Attribute
 ```
 
 ## Overriding a method
-The methods in a class are inherited by any class that extends the class. To change the functionality of an inherited method, you create a method in the subclass, and then give that method the same name and parameters as the method in the superclass. This process is known as *overriding* the method. 
 
-When you instantiate the subclass, you can assign the reference to either a variable of the superclass type or the subclass type. Regardless of the type of the variable, the overridden method is called. 
+The methods in a class are inherited by any class that extends the class. To change the functionality of an inherited method, you create a method in the subclass, and then give that method the same name and parameters as the method in the superclass. This process is known as *overriding* the method.
+
+When you instantiate the subclass, you can assign the reference to either a variable of the superclass type or the subclass type. Regardless of the type of the variable, the overridden method is called.
 
 In the following code example, the subclass overrides the **write** method. Two variables, both of type **Point** are created. One is assigned a **Point** object, the other is assigned a **ThreePoint** object. When the **write** method is called on the **ThreePoint** object, the **ThreePoint** version of the method is called.
 
@@ -124,10 +126,9 @@ point3.write();
 // Output is "(3.0, 4.0, 5.0)".
 ```
 
-
 ### Preventing method overrides
 
-Static methods can't be overridden, because they exist per class. To protect other sensitive methods, or core methods, from being overridden, use the **final** modifier. In the following example, because **methodAtt** is declared as **final**, it can't be overridden in any class that extends **Attribute**. You should not specify **new** or **finalize** methods as **final**. 
+You can't override static methods because they exist per class. To protect other sensitive methods or core methods from being overridden, use the **final** modifier. In the following example, because **methodAtt** is declared as **final**, you can't override it in any class that extends **Attribute**. Don't specify **new** or **finalize** methods as **final**.
 
 The following example shows how to use the **final** keyword.
 
@@ -145,10 +146,8 @@ public class Attribute
 
 ### Overriding vs. overloading
 
-Overriding occurs when the superclass's implementation of a method is changed by the subclass's implementation of that method, but the signatures of both methods are the same. 
+Overriding occurs when a subclass changes the superclass implementation of a method, but both methods have the same signature.
 
 By contrast, *overloading* occurs when more than one method has the same name, but the methods have different signatures (return types, parameter lists, or both). X++ supports overriding, but it doesn't support overloading.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

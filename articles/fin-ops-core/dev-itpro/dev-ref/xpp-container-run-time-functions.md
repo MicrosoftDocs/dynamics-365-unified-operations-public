@@ -4,7 +4,7 @@ description: Learn about the container run-time functions, including a syntax st
 author: pvillads
 ms.author: pvillads
 ms.topic: language-reference
-ms.date: 05/19/2025
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,11 +16,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the container run-time functions.
+This article describes the container runtime functions.
 
 These functions manipulate the contents of containers.
 
 ## conDel
+
 Removes the specified number of elements from a container.
 
 ### Syntax
@@ -30,6 +31,7 @@ container conDel(container container, int start, int number)
 ```
 
 ### Parameters
+
 | Parameter | Description                                                 |
 |-----------|-------------------------------------------------------------|
 | container | The container to remove elements from.                      |
@@ -53,6 +55,7 @@ static void conDelExample(Args _args)
 ```
 
 ## conFind
+
 Locates the first occurrence of an element in a container.
 
 ### Syntax
@@ -62,6 +65,7 @@ int conFind(container container, anytype element)
 ```
 
 ### Parameters
+
 | Parameter | Description                                              |
 |-----------|----------------------------------------------------------|
 | container | The container to search.                                 |
@@ -69,7 +73,7 @@ int conFind(container container, anytype element)
 
 ### Return value
 
-**0** if the item was not found; otherwise, the sequence number of the item.
+**0** if the item wasn't found; otherwise, the sequence number of the item.
 
 ### Example
 
@@ -86,6 +90,7 @@ static void conFindExample(Args _args)
 ```
 
 ## conIns
+
 Inserts one or more elements into a container.
 
 ### Syntax
@@ -141,6 +146,7 @@ static void conInsExample(Args _arg)
 ```
 
 ## conLen
+
 Retrieves the number of elements in a container.
 
 ### Syntax
@@ -174,6 +180,7 @@ static void conLenExample(Args _arg)
 ```
 
 ## conNull
+
 Retrieves an empty container.
 
 ```xpp
@@ -200,6 +207,7 @@ static void conNullExample(Args _arg)
 ```
 
 ## conPeek
+
 Retrieves a specific element from a container and converts it into another data type, if conversion is required.
 
 ### Syntax
@@ -217,7 +225,7 @@ anytype conPeek(container container, int number)
 
 ### Return value
 
-The element in the container at the position that is specified by the *number* parameter. The **conPeek** function automatically converts the peeked item into the expected return type. Strings can automatically be converted into integers and real numbers, and integers and real numbers can be converted into strings.
+The element in the container at the position that the *number* parameter specifies. The **conPeek** function automatically converts the peeked item into the expected return type. Strings can automatically convert into integers and real numbers, and integers and real numbers can convert into strings.
 
 ### Example
 
@@ -259,6 +267,7 @@ container cnJ ...
 ```
 
 ## conPoke
+
 Modifies a container by replacing one or more of the existing elements.
 
 ### Syntax

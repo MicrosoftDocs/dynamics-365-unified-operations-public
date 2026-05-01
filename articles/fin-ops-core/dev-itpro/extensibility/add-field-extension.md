@@ -4,7 +4,7 @@ description: Learn how to use a table extension to add a field to a table by cre
 author: ivanv-microsoft
 ms.author: ivanv
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -14,28 +14,27 @@ ms.dyn365.ops.version: Platform update 4
 
 # Add fields to tables through extension
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-To add a new field to an existing table, you must first create a table extension. For example, to add a field that holds the radius of the released product, you must create an extension for the InventTable table in your model, as shown in the following illustration.
+To add a new field to an existing table, first create a table extension. For example, to add a field that holds the radius of the released product, create an extension for the `InventTable` table in your model, as shown in the following illustration.
 
-![Create an extension.](media/TableNewField01.jpg) 
+:::image type="content" source="media/TableNewField01.jpg" alt-text="Screenshot of creating a table extension for the InventTable table.":::
 
-You can now add the field to the extension, just as you would add a field to a table in your model. You can use two methods:
+Add the field to the extension, just as you would add a field to a table in your model. Use one of the following methods:
 
 + In the designer, right-click the **Fields** node, select **New**, and then select the type of field to add.
 + Drag an existing Extended Data Type or Base Enumeration from your project onto the **Fields** node.
 
-When you've finished, you can modify the properties of the new field. In the following illustration, only the **Label** property was modified.
+When you finish, modify the properties of the new field. In the following illustration, only the **Label** property was modified.
 
-![Modify properties of the new field.](media/TableNewField02.jpg)
+:::image type="content" source="media/TableNewField02.jpg" alt-text="Screenshot of modifying properties of the new field in the designer.":::
 
-You can now optionally add the new field either to one of the existing field groups or to a new field group that you create. In the following illustration, the **Radius** field was added to the **PhysicalDimensions** field group.
+Optionally, add the new field either to one of the existing field groups or to a new field group that you create. In the following illustration, the `Radius` field was added to the `PhysicalDimensions` field group.
 
-![Add the new field to a field group.](media/TableNewField03.jpg)
+:::image type="content" source="media/TableNewField03.jpg" alt-text="Screenshot of adding the new Radius field to the PhysicalDimensions field group.":::
 
 After compilation and synchronization of the database, you can see and edit the new field in the user interface.
 
-![New field in the user interface.](media/TableNewField04.jpg)
-
+:::image type="content" source="media/TableNewField04.jpg" alt-text="Screenshot of the new field displayed in the user interface.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

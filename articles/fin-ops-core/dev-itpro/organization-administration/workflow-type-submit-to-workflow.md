@@ -4,7 +4,7 @@ description: Learn about how to create a SubmitToWorkflow class, including an ou
 author: josaw1
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 06/19/2019
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,20 +17,20 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-A workflow is started when the user selects the **Submit** button on the workflow toolbar. The **Submit** button is bound to an action menu item that calls the **main** method of a class that you create to activate a workflow. This article describes how to create a **SubmitToWorkflow** class and use the name of the workflow type to activate the workflow.
+A workflow starts when the user selects the **Submit** button on the workflow toolbar. The **Submit** button connects to an action menu item that calls the **main** method of a class you create to activate a workflow. This article describes how to create a **SubmitToWorkflow** class and use the name of the workflow type to activate the workflow.
 
 You can also activate a workflow by using the workflow configuration ID or the workflow sequence number. The basic procedure is the same. For more information, see [Activating a workflow](/dynamicsax-2012/developer/activating-a-workflow).
 
 > [!NOTE]
-> If you used the **Workflow** wizard to create the workflow type, the wizard has already created a workflow submission manager class. You just have to add code to it.
+> If you use the **Workflow** wizard to create the workflow type, the wizard already creates a workflow submission manager class. You just need to add code to it.
 
 ## Create a SubmitToWorkflow class
 
 1. In Application Explorer, expand the **Classes** node.
-2. Right-click the **Classes** node, and then select **New Class**. A class group appears under the **Classes** node.
-3. Right-click the new class, and then select **New Method**. A new method node appears under the **Classes** node.
-4. Right-click the new method, and then select **Edit**.
-5. Enter the following code for the **main** method to use the name of the workflow type to activate the workflow.
+1. Right-click the **Classes** node, and then select **New Class**. A class group appears under the **Classes** node.
+1. Right-click the new class, and then select **New Method**. A new method node appears under the **Classes** node.
+1. Right-click the new method, and then select **Edit**.
+1. Enter the following code for the **main** method to use the name of the workflow type to activate the workflow.
 
     > [!NOTE]
     > This example applies to workflow submissions. For an example that also works with Enterprise Portal, see [Adding enterprise portal support for workflow submission](/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission).
@@ -72,10 +72,10 @@ You can also activate a workflow by using the workflow configuration ID or the w
     }
     ```
 
-6. Close the **Editor** window, and select **Yes** to save your changes.
+1. Close the **Editor** window, and select **Yes** to save your changes.
 
     > [!NOTE]
-    > When you save this code, you will receive an "Empty compound statement" warning message in the **Compiler Output** window unless you add valid code in the **catch(exception::Error)** block.
+    > When you save this code, you receive an "Empty compound statement" warning message in the **Compiler Output** window unless you add valid code in the **catch(exception::Error)** block.
 
 ## See also
 

@@ -4,7 +4,7 @@ description: Learn about how the components, or building blocks, of report defin
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 10/27/2022
+ms.date: 03/12/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -39,19 +39,19 @@ Use folders to organize your building blocks in Report Designer. All folders are
 ### Create a folder
 
 1. In Report designer, select the type of building block to organize in the navigation pane. For example, to sort a row definition, click **Row Definitions**.
-2. In the navigation pane, select the existing folder to create the new folder under, and then follow one of these steps:
+1. In the navigation pane, select the existing folder to create the new folder under, and then follow one of these steps:
 
     - Right-click the parent folder, and then click **New folder**.
     - Select the parent folder, click **File**, and then click **New folder**.
 
-3. When the new folder appears, enter the name of the new folder, and then press **Enter**.
+1. When the new folder appears, enter the name of the new folder, and then press **Enter**.
 
 ## Lock a building block
 You can create a password to lock and help protect a building block. In this way you can add a level of security to a report component without securing the whole system. A password can help protect building block information that is important to your month-end reporting process. A user in any role can lock a building block. However, other users always have read-only access to a locked component. Users can open, change, and save the locked component under a new name. A user who has the role of administrator can always access and change a locked building block.
 
 1. In Report designer, open the report component to lock, such as a row definition, column definition, report definition, or reporting tree definition.
-2. On the **Tools** menu, click **Protect/Unprotect**. You can also click **Protect/Unprotect** (the lock icon) on the toolbar.
-3. In the **Protect** dialog box, enter and confirm a password, and then click **OK**. The lock icon on the toolbar is highlighted when an open building block is locked.
+1. On the **Tools** menu, click **Protect/Unprotect**. You can also click **Protect/Unprotect** (the lock icon) on the toolbar.
+1. In the **Protect** dialog box, enter and confirm a password, and then click **OK**. The lock icon on the toolbar is highlighted when an open building block is locked.
 
 To unlock a locked building block, open the building block, and then click **Protect/Unprotect** on the toolbar. Alternatively, on the **Tools** menu, click **Unprotect**.
 
@@ -64,17 +64,17 @@ Building blocks are the row definitions, column definitions, reporting tree defi
 You can view all the building blocks that are assigned to a building block group. You can also export or import a building block group.
 
 1. In Report designer, on the **Company** menu, click **Building block groups**.
-2. In the **Building block groups** dialog box, select the building block to view.
-3. Click **View** to open the **View building block group** dialog box, where you can view the contents of the building block group.
-4. Click **Close** to close the dialog boxes.
+1. In the **Building block groups** dialog box, select the building block to view.
+1. Click **View** to open the **View building block group** dialog box, where you can view the contents of the building block group.
+1. Click **Close** to close the dialog boxes.
 
 ### Export a building block group
 
 You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between installations. Report designer includes the referenced font styles and dimension value sets together with the building block group.
 
 1. In Report Designer, on the **Company** menu, click **Building block groups**.
-2. In the **Building block groups** dialog box, select the building block group to export, and then click **Export**.
-3. In the **Export** dialog box, select the report definitions to export:
+1. In the **Building block groups** dialog box, select the building block group to export, and then click **Export**.
+1. In the **Export** dialog box, select the report definitions to export:
 
     - To export all your report definitions and the associated building blocks, click **Select all**.
     - To export specific reports, rows, columns, trees, or dimension value sets, click the appropriate tab, and then select the items to export. Press and hold the Ctrl key to select multiple items on a tab.
@@ -82,24 +82,24 @@ You can export a building block group or specific report building blocks in a bu
     > [!NOTE]
     > When you select reports to export, the associated rows, columns, trees, and dimension value sets are selected.
 
-4. When you've finished selecting items to export, click **Export**.
-5. In the **Save As** dialog box, select a location to export the building block group to.
-6. In the **File name** field, enter a name for the file. Report designer automatically adds a .tdbx file name extension.
-7. Click **Save**. The building block group is saved to the location that you specified.
+1. When you've finished selecting items to export, click **Export**.
+1. In the **Save As** dialog box, select a location to export the building block group to.
+1. In the **File name** field, enter a name for the file. Report designer automatically adds a .tdbx file name extension.
+1. Click **Save**. The building block group is saved to the location that you specified.
 
 ### Import a building block group
 
 You can import a building block group into an existing building block group. All imported building block groups retain their original font styles and company references, and include the relevant dimension value sets.
 
 1. In Report designer, on the **Company** menu, click **Building block groups**.
-2. In the **Building block groups** dialog box, select the building block to import a building block group into, and then click **Import**.
-3. In the **Open** dialog box, select the building block group to import, and then click **Open**.
-4. In the **Import** dialog box, select the report definitions to import:
+1. In the **Building block groups** dialog box, select the building block to import a building block group into, and then click **Import**.
+1. In the **Open** dialog box, select the building block group to import, and then click **Open**.
+1. In the **Import** dialog box, select the report definitions to import:
 
     - To import all the report definitions and the supporting building blocks, click **Select all**.
     - To import specific reports, rows, columns, trees, or dimension value sets, select the reports, rows, columns, trees, or dimension value sets to import.
 
-5. When you've finished selecting items to import, click **Import**.
+1. When you've finished selecting items to import, click **Import**.
 
 ### Undo a checkout of a building block
 
@@ -109,9 +109,9 @@ When you open a building block, other users have read-only access that building 
 > You must have the role of administrator to check in building blocks by using the **Checked Out Items** dialog box.
 
 1. In Report designer, on the **Tools** menu, click **Checked out items**.
-2. In the **Checked out items** dialog box, select **Show items from all users**. The list is updated to display all building blocks that are checked out and the users who have checked them out.
-3. Select a building block, and then click **Undo checkout**.
-4. Click **Yes** to check in the building block.
+1. In the **Checked out items** dialog box, select **Show items from all users**. The list is updated to display all building blocks that are checked out and the users who have checked them out.
+1. Select a building block, and then click **Undo checkout**.
+1. Click **Yes** to check in the building block.
 
 ## Additional resources
 

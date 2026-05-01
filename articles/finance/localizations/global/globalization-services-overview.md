@@ -1,17 +1,17 @@
 ---
 title: Dynamics 365 globalization services
-description: Access an overview of Microsoft Dynamics 365 globalization services, including outline on the Regulatory Configuration Service and electronic invoicing.
+description: This article provides an overview of Microsoft Dynamics 365 globalization services, including outline on the Regulatory Configuration Service and electronic invoicing.
 author: kfend
 ms.author: filatovm
 ms.topic: overview
-ms.date: 04/12/2021
+ms.date: 03/18/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-02-01
 ms.search.form: RCS, Regulatory Configuration Services, Localization, Electronic invoicing, Tax calculation
-ms.dyn365.ops.version: AX 10.0.9
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 globalization services
@@ -24,7 +24,7 @@ The following globalization services can be configured to extend the capabilitie
 - **Electronic Invoicing** brings together configurable formats for transformations, digital signatures, and configurable integrations for connectivity with external web services, including certification and response handling. For more information, see [Electronic Invoicing](gs-e-invoicing-service-overview.md).
 - **Tax Calculation** provides enhanced flexibility by supporting multiple tax IDs, tax code determination, the tax calculation designer, and a runtime engine to comply with complex tax regulations worldwide. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
-These globalization services provide out-of-box integration with the following Dynamics 365 online services.
+These globalization services provide out-of-the-box integration with the following Dynamics 365 online services.
 
 | Online service | RCS | Electronic Invoicing | Tax Calculation (Preview) |
 |----------------|-----|----------------------|---------------------------|
@@ -34,4 +34,6 @@ These globalization services provide out-of-box integration with the following D
 | Dynamics 365 Commerce | Yes | Not applicable | Not applicable | 
 
 > [!NOTE]
-> Because of differences in the availability of Azure geographic locations (geos) for RCS, configuration of this service might cause customer data to be transferred outside the geo that is selected for the applicable Dynamics 365 online service. For more information, see [Dynamics 365 and Power Platform: Availability, data location, language, and localization](https://aka.ms/rcs/D365Productavailabilityguide).
+> Because of differences in the availability of Azure geographic locations (geos) for RCS, configuring this service might transfer your customer data outside the geo that you select for the applicable Dynamics 365 online service. For more information, see [Dynamics 365 and Power Platform: Availability, data location, language, and localization](https://aka.ms/rcs/D365Productavailabilityguide).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

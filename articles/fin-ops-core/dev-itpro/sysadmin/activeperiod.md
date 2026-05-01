@@ -4,7 +4,7 @@ description: Learn about setting up and working with active batch periods, inclu
 author: hasaid
 ms.author: hasaid
 ms.topic: article
-ms.date: 10/25/2018
+ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -18,30 +18,29 @@ ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 
 [!include [banner](../includes/banner.md)]
 
-With the release of Platform update 21, an additional level of control over when batch jobs execute is now available. Previously, it was only possible to schedule a batch job to execute every hour for a specified number of hours or until a given date. Administrators can now provide information for an additional active period, such as in the following scenarios:
-- Specifying time ranges during which jobs within a batch group can start execution. 
-- Selecting to run batch jobs outside of office hours only. 
-- Setting the recurrence for anytime within the active period. For example, you administrator might select to run the batch jobs every hour, but only between the hours of 6:00 PM and 8:00 AM.
+When Platform update 21 was released, it introduced an extra level of control over when batch jobs run. Before this update, you could only schedule a batch job to run every hour for a set number of hours or until a specific date. Now, administrators can add an active period, which means you can:
 
-> [!NOTE] 
-> This feature is available as of Platform update 21.
+- Set time ranges when jobs in a batch group can start running.
+- Choose to run batch jobs only outside of office hours.
+- Decide how often batch jobs run during the active period. For example, an administrator might choose to run the batch jobs every hour but only between 6:00 PM and 8:00 AM.
 
-## Set up active periods for batch jobs 
+> [!NOTE]
+> This feature is available starting with Platform update 21.
 
-1.	Go to **System administration** > **Setup** > **Active periods for batch jobs**.
-2.	Enter the name of the batch job, and specify start and end dates that the batch job is active. 
-4.	Click **Save**.
+## Set up active periods for batch jobs
 
-![Active Period Form.](./media/active-periods.png)
+1. Go to **System administration** > **Setup** > **Active periods for batch jobs**.
+1. Enter the name of the batch job, and specify the start and end dates for when the batch job is active.
+1. Select **Save**.
+
+:::image type="content" source="./media/active-periods.png" alt-text="Screenshot of the Active Period Form.":::
 
 ## Assign active periods to batch jobs
 
-1.	Go to **System administration** > **Inquiries** > **Batch jobs**.
-2.	Select the batch job that you want to assign a period to, and click **Edit**.
-3.	In the **Active period** field, select the active period that you want to assign, and then click **Save**.
+1. Go to **System administration** > **Inquiries** > **Batch jobs**.
+1. Select the batch job that you want to assign a period to, and select **Edit**.
+1. In the **Active period** field, select the active period that you want to assign, and then select **Save**.
 
-![Assign Active Period.](./media/assign-active-period.png)
- 
-
+:::image type="content" source="./media/assign-active-period.png" alt-text="Screenshot of the Assign Active Period form.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

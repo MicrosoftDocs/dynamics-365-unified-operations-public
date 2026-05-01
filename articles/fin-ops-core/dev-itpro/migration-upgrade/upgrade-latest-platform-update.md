@@ -4,7 +4,7 @@ description: Learn about how to apply the latest platform update to your finance
 author: LaneSwenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 08/16/2019
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -23,29 +23,32 @@ This article explains how to apply the latest platform release to your finance a
 
 In finance and operations, the platform consists of the following components:
 
--   Binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services.
--   The following Application Object Tree (AOT) packages:
-    -   Application Platform
-    -   Application Foundation
-    -   Test Essentials
+- Binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services.
+- The following Application Object Tree (AOT) packages:
+  - Application Platform
+  - Application Foundation
+  - Test Essentials
 
 > [!IMPORTANT]
-> To move to the latest platform, your finance and operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. 
+> To move to the latest platform, your finance and operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform.
 
 ## Overall flow
+
 The following illustration shows the overall process for upgrading the platform to the latest update.
 
-[![Upgrade process for implementations that have no customization of the platform.](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
+:::image type="content" source="./media/flownocustomisations.jpg" alt-text="Screenshot of the upgrade process for implementations that have no customization of the platform.":::
 
 If you are already running on Platform update 4 or later, updating to the latest release is a simple servicing operation. After the platform update package is in your LCS asset library, follow the flow to apply an update from the LCS environment page. Select **Apply updates** under **Maintain**, then select the platform update package.
 
-[![Apply updates.](./media/applyupdates.jpg)](./media/applyupdates.jpg)
+:::image type="content" source="./media/applyupdates.jpg" alt-text="Screenshot of the Apply updates option in LCS."::: 
 
 Learn how to **get the latest platform package and apply it to an environment deployed through LCS** in the next section.
 
 ## Apply the latest platform update package
+
 There are two ways to get the latest platform update package in LCS from your environment page.
-- Click the **Platform binary updates** tile 
+
+- Click the **Platform binary updates** tile
 - Click the **All Binary Updates** tile to see a list of combined package of application and platform binary updates. (As of Platform update 4, binary updates from LCS include an upgrade to the latest platform).
 
 > [!NOTE]
@@ -55,9 +58,9 @@ Get the latest platform update package by clicking on one of the two tiles as me
 
 From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
 
--   To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
+- To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
 
-    [![Apply updates.](./media/applyupdates.jpg)](./media/applyupdates.jpg)
+    :::image type="content" source="./media/applyupdates.jpg" alt-text="Screenshot of the Apply updates option in LCS.":::
 
 For more details, follow the instructions for applying a binary hotfix in [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).
 
@@ -65,38 +68,41 @@ For more details, follow the instructions for applying a binary hotfix in [Apply
 > **Migrate files for Document management**: After upgrading to Platform update 6 or later, an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage. The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage. The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration. To check if the batch process is still running, look for the **Migrate files stored in the database to blob storage** process on the **Batch jobs** page.
 
 ## Apply a platform update to environments that are not connected to LCS
+
 This section describes how to apply a platform update package to a *local development environment* (one that that is not connected to LCS).
 
 ### How to get the platform update package
+
 Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The package name is prefixed with **Dynamics 365 Unified Operations Platform Update**. Use these steps to import the platform update package:
 
-1.  Go to your LCS project's Asset library.
-2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. 
+1. Go to your LCS project's Asset library.
+2. On the **Software deployable package** tab, click **Import** to create a reference to the platform update package.
 
-    [![Import button.](./media/importupgradepackage.png)](./media/importupgradepackage.png)
+    :::image type="content" source="./media/importupgradepackage.png" alt-text="Screenshot of the Import button in the LCS asset library.":::
 
-3.  Select the desired platform update package.
+3. Select the desired platform update package.
 
 > [!NOTE]
 > The package in the Shared Asset library may not correspond to the latest build (with hotfixes) of the desired platform release. To guarrantee the latest build, use the LCS environment page as described earlier in this article.
 
 ### Apply the platform update package to your development environment
+>
 > [!NOTE]
 > These instructions apply only to environments that cannot be updated directly from LCS.
 
 ### Install the deployable package
 
-1.  Download the platform update package (AXPlatformUpdate.zip) to your virtual machine (VM).
-2.  Unzip the contents to a local directory.
-3.  Depending on the type of environment that you're upgrading, open the PlatformUpdatePackages.Config file under \\AOSService\\Scripts, and change the **MetaPackage** value.
-    -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
-    -   If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
+1. Download the platform update package (AXPlatformUpdate.zip) to your virtual machine (VM).
+2. Unzip the contents to a local directory.
+3. Depending on the type of environment that you're upgrading, open the PlatformUpdatePackages.Config file under \\AOSService\\Scripts, and change the **MetaPackage** value.
+    - If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
+    - If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
     > [!NOTE]
     > Step 3 is not applicable when upgrading to Platform update 4 or later.
 
-4.  Follow the instructions for installing a deployable package. See [Install deployable packages from the command line](../deployment/install-deployable-package.md).
-5.  If you're working in a development environment, rebuild your application’s code.
+4. Follow the instructions for installing a deployable package. See [Install deployable packages from the command line](../deployment/install-deployable-package.md).
+5. If you're working in a development environment, rebuild your application’s code.
 
 #### Example
 
@@ -119,9 +125,9 @@ Update the Visual Studio development tools as described in [Update the Visual St
 
 Form adaptor models are required for test automation. Regenerate the platform form adaptor models, based on the newly updated platform models. Use the xppfagen.exe tool to generate the form adaptor models. This tool is located in the package's bin folder (typically, j:\\AosService\\PackagesLocalDirectory\\bin). Here is a list of the platform form adaptor models:
 
--   ApplicationPlatformFormAdaptor
--   ApplicationFoundationFormAdaptor
--   DirectoryFormAdaptor
+- ApplicationPlatformFormAdaptor
+- ApplicationFoundationFormAdaptor
+- DirectoryFormAdaptor
 
 The following examples show how to generate the form adaptor models.
 
@@ -167,8 +173,8 @@ If the build machine has been used for one or more builds, you should restore th
 if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 ```
 
-If a complete metadata backup doesn't exist, the command will create a new backup. This command will also stop the finance and operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. 
-You should see output that resembles the following example. 
+If a complete metadata backup doesn't exist, the command will create a new backup. This command will also stop the finance and operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder.
+You should see output that resembles the following example.
 
 ```powershell
 6:17:52 PM: Preparing build environment...* <em>6:17:53 PM: Updating Dynamics SDK registry key with specified values...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...</em> <em>6:17:53 PM: Stopping finance and operations deployment...</em> <em>6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created</em><em>.</em> <em>6:18:06 PM: **Restoring metadata packages from backup...</em>** <em>6:22:56 PM: **Metadata packages successfully restored from backup</em><em>.</em> <em>6:22:57 PM: Preparing build environment complete.</em> <em>6:22:57 PM: Script completed with exit code: 0</em> 
@@ -183,6 +189,5 @@ After you've prepared your build environment for this update, apply the platform
 ## Additional resources
 
 [Process for moving to the latest update of finance and operations](upgrade-latest-update.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: This article describes how to use Agent feed in Dynamics 365 financ
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 01/27/2026
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak

@@ -4,7 +4,7 @@ description: Learn about add-ins, which can be used to extend the functionality 
 author: ankugo
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 02/11/2022
+ms.date: 03/16/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -17,15 +17,15 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include[banner](../includes/banner.md)]
 
-Add-ins provide a way to extend the functionality of finance and operations apps. All add-ins are installed and managed via the environment details page for sandbox and production environments in Microsoft Dynamics Lifecycle Services (LCS). For more information about the architecture and how to unlock this feature, see [Microsoft Power Platform integration with finance and operations apps](overview.md).
+Add-ins provide a way to extend the functionality of finance and operations apps. You can install and manage all add-ins through the environment details page for sandbox and production environments in Microsoft Dynamics Lifecycle Services (LCS). For more information about the architecture and how to unlock this feature, see [Microsoft Power Platform integration with finance and operations apps](overview.md).
 
-## What add-ins are available?
+## Available add-ins
 
-New add-ins are made available on a regular basis. This section describes the add-ins that are currently available and provides links to more information about each.
+New add-ins become available regularly. This section describes the add-ins that are currently available and provides links to more information about each.
 
 ### Planning Optimization
 
-The Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on the SQL database during master planning runs. Quick planning runs can be done even during office hours. Therefore, planners can immediately react to demand or parameter changes. To learn more, see [Master planning system architecture](../../../supply-chain/master-planning/master-planning-architecture.md)
+The Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on the SQL database during master planning runs. You can run quick planning runs even during office hours. Therefore, planners can immediately react to demand or parameter changes. To learn more, see [Master planning system architecture](../../../supply-chain/master-planning/master-planning-architecture.md).
 
 ### Inventory Visibility
 
@@ -41,7 +41,7 @@ IoT Intelligence is an add-in for Supply Chain Management. It integrates Interne
 
 ### Finance insights
 
-Finance insights provides configurable solutions to help you intelligently predict your company's cash flow, predict when you may receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide, including data from a third-party, such as consumer report information from a bureau. These intelligent capabilities inform decision making and help you take action to respond effectively to current and anticipated business challenges. For more information, see [Finance insights homepage](../../../finance/finance-insights/finance-insights-home-page.md).
+Finance insights provides configurable solutions to help you intelligently predict your company's cash flow, predict when you might receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide, including data from a third party, such as consumer report information from a bureau. These intelligent capabilities inform decision making and help you take action to respond effectively to current and anticipated business challenges. For more information, see [Finance insights homepage](../../../finance/finance-insights/finance-insights-home-page.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

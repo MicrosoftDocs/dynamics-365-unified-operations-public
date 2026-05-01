@@ -4,7 +4,7 @@ description: Learn about Acceptance test library creators, including naming conv
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: article
-ms.date: 03/27/2019
+ms.date: 03/16/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
-Creator classes provide fluent application programming interfaces (APIs) that are used to create test data.
+Creator classes provide fluent application programming interfaces (APIs) that you can use to create test data.
 
 ## Naming convention
 
@@ -25,8 +25,8 @@ Creator classes provide fluent application programming interfaces (APIs) that ar
 
 In this naming convention:
 
-+ `<ModuleName>` is optional and is based on the names of the modules on the main menu. You should use a short version or an abbreviation to support brevity of test code.
-+ `<EntityName>` is optional and is used when the command applies to different types of entities.
++ `<ModuleName>` is optional. Use the names of the modules on the main menu. Use a short version or an abbreviation to keep test code brief.
++ `<EntityName>` is optional. Use it when the command applies to different types of entities.
 
 ## Examples
 
@@ -38,13 +38,13 @@ AtlCreatorCustomer
 
 ## Fluent setter methods
 
-Creator classes should provide fluent setter methods that are used to set the properties of the entity that is being constructed.
+Creator classes should provide fluent setter methods that set the properties of the entity that you're constructing.
 
 ### Naming convention
 
 `set<EntityPropertyName>`
 
-In this naming convention, `<EntityPropertyName>` is the name of the property that is being set for the entity by using the fluent method.
+In this naming convention, `<EntityPropertyName>` is the name of the property that the fluent method sets for the entity.
 
 ### Example
 
@@ -58,9 +58,9 @@ item = new AtlCreatorProductsReleasedVariant()
     .create();
 ```
 
-## When should creators be used instead of entities?
+## When should you use creators instead of entities?
 
-For information that will help you choose between entities and creators, see [Should I implement an entity or a creator class](atl-faq.md#should-i-implement-an-entity-or-a-creator-class).
+For information that helps you choose between entities and creators, see [Should I implement an entity or a creator class](atl-faq.md#should-i-implement-an-entity-or-a-creator-class).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

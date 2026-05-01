@@ -4,7 +4,7 @@ description: Learn about using the Support tool to on Microsoft Dynamics Lifecyc
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -16,6 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Manage support experiences for finance and operations apps
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 
 ## Open a new incident

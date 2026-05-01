@@ -4,7 +4,7 @@ description: Learn how to approve and post a bill of exchange in Microsoft Dynam
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 03/11/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak    
@@ -23,17 +23,15 @@ The following procedure was created using the demo data company FRSI. The functi
 
 To draw up, approve, and post a bill of exchange, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Bill of exchange \> Draw bill of exchange journal**.
-1. In the list, mark the selected row.
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Payments** > **Bill of exchange** > **Draw bill of exchange journal**.
+1. Select the row you want.
 1. Select the highest journal batch number.  
 1. Select **Lines**.
-1. In the list, mark the selected row.
+1. Select the row you want.
 1. Select **Payment status**.
 1. Select **Approved**.
 1. Select **OK**.
 1. Select **Post**.
-1. Go to **Accounts receivable \> Inquiries and reports \> Payments \> Bill of exchange journal**.
-
-
+1. Go to **Accounts receivable** > **Inquiries and reports** > **Payments** > **Bill of exchange journal**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -6,23 +6,21 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/27/2022
+ms.date: 03/19/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
-ms.dyn365.ops.version: 10.0.18
 ---
 
 # Add data fields in the tax integration by using extension
 
 [!include [banner](../../includes/banner.md)]
 
-
-This article explains how to use X++ extensions to add data fields in the tax integration. These fields can be extended to the tax data model of the tax service and used to determine tax codes. For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+This article explains how to use X++ extensions to add data fields in the tax integration. You can extend these fields to the tax data model of the tax service and use them to determine tax codes. For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 
 ## Data model
 
-The data in the data model is carried by objects and implemented by classes.
+Objects carry the data in the data model, and classes implement these objects.
 
 Here is a list of the major objects:
 
@@ -32,7 +30,7 @@ Here is a list of the major objects:
 
 The following illustration shows how these objects are related.
 
-![Data model object relationship.](../media/tax-service-customize-image1.png)]
+:::image type="content" source="../media/tax-service-customize-image1.png" alt-text="Screenshot of data model object relationship.":::
 
 A **Document** object can contain many **Line** objects. Each object contains metadata for the tax service.
 
@@ -44,7 +42,7 @@ A **Document** object can contain many **Line** objects. Each object contains me
 
 ## Integration flow
 
-The data in the flow is manipulated by activities.
+Activities manipulate the data in the flow.
 
 ### Key activities
 
@@ -54,13 +52,13 @@ The data in the flow is manipulated by activities.
 * AxClass/TaxIntegration**DataRetrieval**ActivityOnDocument
 * AxClass/TaxIntegration**SettingRetrieval**ActivityOnDocument
 
-Activities are run in the following order:
+Activities run in the following order:
 
 1. Setting Retrieval
-2. Data Retrieval
-3. Calculation Service
-4. Currency Exchange
-5. Data Persistence
+1. Data Retrieval
+1. Calculation Service
+1. Currency Exchange
+1. Data Persistence
 
 For example, extend **Data Retrieval** before **Calculation Service**.
 
@@ -76,18 +74,18 @@ For example, extend **Data Retrieval** before **Calculation Service**.
 - AxClass/TaxIntegration**SalesTable**DataRetrieval
 - AxClass/TaxIntegration**SalesParm**DataRetrieval
 
-In these **Data Retrieval** activities, data is copied from the database to `TaxIntegrationDocumentObject` and `TaxIntegrationLineObject`. Because all these activities extend the same abstract template class, they have common methods.
+In these **Data Retrieval** activities, you copy data from the database to `TaxIntegrationDocumentObject` and `TaxIntegrationLineObject`. Because all these activities extend the same abstract template class, they have common methods.
 
 #### Calculation Service activities
 
 The **Calculation Service** activity is the link between the tax service and the tax integration. This activity is responsible for the following functions:
 
 1. Construct the request.
-2. Post the request to the tax service.
-3. Get the response from the tax service.
-4. Parse the response.
+1. Post the request to the tax service.
+1. Get the response from the tax service.
+1. Parse the response.
 
-A data field that you add to the request will be posted together with other metadata. 
+A data field that you add to the request is posted together with other metadata. 
 
 ## Extension implementation
 
@@ -95,7 +93,7 @@ This section provides detailed steps that explain how to implement the extension
 
 ### Step 1. Add the data variable in the object class
 
-The object class contains the data variable and getter/setter methods for the data. Add the data field to either `TaxIntegrationDocumentObject` or `TaxIntegrationLineObject`, depending on the level of the field. The following example uses the line level, and the file name is `TaxIntegrationLineObject_Extension.xpp`.
+The object class contains the data variable and getter and setter methods for the data. Add the data field to either `TaxIntegrationDocumentObject` or `TaxIntegrationLineObject`, depending on the level of the field. The following example uses the line level, and the file name is `TaxIntegrationLineObject_Extension.xpp`.
 
 > [!NOTE]
 > If the data field that you're adding is at the document level, change the file name to `TaxIntegrationDocumentObject_Extension.xpp`.
@@ -145,16 +143,16 @@ final class TaxIntegrationLineObject_Extension
 }
 ```
 
-**Cost center** and **Project** are added as private variables. Create getter and setter methods for these data fields to manipulate the data.
+Add **Cost center** and **Project** as private variables. Create getter and setter methods for these data fields to manipulate the data.
 
 ### Step 2. Retrieve data from the database
 
-Specify the transaction, and extend the appropriate adapter classes to retrieve the data. For example, if you use a **Purchase order** transaction, you must extend `TaxIntegrationPurchTableDataRetrieval` and `TaxIntegrationVendInvoiceInfoTableDataRetrieval`. 
+Specify the transaction, and extend the appropriate adapter classes to retrieve the data. For example, if you use a **Purchase order** transaction, extend `TaxIntegrationPurchTableDataRetrieval` and `TaxIntegrationVendInvoiceInfoTableDataRetrieval`. 
 
 > [!NOTE]
-> `TaxIntegrationPurchParmTableDataRetrieval` is inherited from `TaxIntegrationPurchTableDataRetrieval`. It should not be changed unless the logic of the `purchTable` and `purchParmTable` tables differs.
+> `TaxIntegrationPurchParmTableDataRetrieval` inherits from `TaxIntegrationPurchTableDataRetrieval`. Don't change `TaxIntegrationPurchParmTableDataRetrieval` unless the logic of the `purchTable` and `purchParmTable` tables differs.
 
-If the data field should be added for all transactions, extend all `DataRetrieval` classes.
+If you need to add a data field for all transactions, extend all `DataRetrieval` classes.
 
 Because all **Data Retrieval** activities extend the same template class, the class structures, variables, and methods are similar.
 
@@ -216,13 +214,13 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
 }
 ```
 
-When the `CopyToDocument` method is called, the `this.purchTable` buffer already exists. The purpose of this method is to copy all the required data from `this.purchTable` to the `document` object by using the setter method that was created in the `DocumentObject` class.
+When the `CopyToDocument` method is called, the `this.purchTable` buffer already exists. The purpose of this method is to copy all the required data from `this.purchTable` to the `document` object by using the setter method that you created in the `DocumentObject` class.
 
-Likewise, a `this.purchLine` buffer already exists in the `CopyToLine` method. The purpose of this method is to copy all the required data from `this.purchLine` to the `_line` object by using the setter method that was created in the `LineObject` class.
+Likewise, a `this.purchLine` buffer already exists in the `CopyToLine` method. The purpose of this method is to copy all the required data from `this.purchLine` to the `_line` object by using the setter method that you created in the `LineObject` class.
 
-The most straightforward approach is to extend the `CopyToDocument` and `CopyToLine` methods. However, we recommend that you try the `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable` methods first. If they don't work as you require, implement your own method, and call it in `CopyToDocument` and `CopyToLine`. There are three common situations where you might use this approach:
+The most straightforward approach is to extend the `CopyToDocument` and `CopyToLine` methods. However, try the `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable` methods first. If they don't work as you require, implement your own method, and call it in `CopyToDocument` and `CopyToLine`. There are three common situations where you might use this approach:
 
-- The required field is in `PurchTable` or `PurchLine`. In this situation, you can extend `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable`. Here is the sample code.
+- The required field is in `PurchTable` or `PurchLine`. In this situation, extend `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable`. Here's the sample code.
 
     ```X++
     /// <summary>
@@ -263,11 +261,11 @@ The most straightforward approach is to extend the `CopyToDocument` and `CopyToL
     In this example, a `mcrSalesLineDropShipment` buffer is declared, and the query is defined in `getLineQueryObject`. The query uses the relationship `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`. While you're extending in this situation, you can replace `getLineQueryObject` with your own constructed query object. However, note the following points:
 
     * Because the return value of the `getLineQueryObject` method is `SysDaQueryObject`, you must construct this object by using the SysDa approach.
-    * Can't remove existed table.
+    * You can't remove existing tables.
 
 - The required data is related to the transaction table by a complicated join relationship, or the relation isn't one to one (1:1) but one to many (1:N). In this situation, things become a little complicated. This situation applies to the example of financial dimensions. 
 
-    In this situation, you can implement your own method to retrieve the data. Here is the sample code in the `TaxIntegrationPurchTableDataRetrieval_Extension.xpp` file.
+    In this situation, you can implement your own method to retrieve the data. Here's the sample code in the `TaxIntegrationPurchTableDataRetrieval_Extension.xpp` file.
 
     ```X++
     [ExtensionOf(classStr(TaxIntegrationPurchTableDataRetrieval))]
@@ -319,7 +317,7 @@ The most straightforward approach is to extend the `CopyToDocument` and `CopyToL
 
 ### Step 3. Add data to the request
 
-Extend the `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` or `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method to add data to the request. Here is the sample code in the `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp` file.
+Extend the `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` or `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method to add data to the request. The following code shows an example in the `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp` file.
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
@@ -348,17 +346,17 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 }
 ```
 
-In this code, `_destination` is the wrapper object that is used to generate the request, and `_source` is the `TaxIntegrationLineObject` object.
+In this code, `_destination` is the wrapper object that generates the request, and `_source` is the `TaxIntegrationLineObject` object.
 
 > [!NOTE]
-> Define the field name that is used in the request as **private const str**. The string should be exactly the same as the node name (not the label) added in the article [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+> Define the field name used in the request as **private const str**. The string should be exactly the same as the node name (not the label) added in the article [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 > 
 > Set the field in the **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** method by using the **SetField** method. The data type of the second parameter should be **string**. If the data type isn't **string**, convert it to string.
-> If the data type is X++ **enum type**, we recommend you use the **enum2Symbol** method to convert the enum value to a string. The enum value added in the tax configuration should be exactly the same as the enum name. The following is a list of differences between enum value, label, and name.
+> If the data type is X++ **enum type**, use the **enum2Symbol** method to convert the enum value to a string. The enum value added in the tax configuration should be exactly the same as the enum name. The following list describes the differences between enum value, label, and name.
 > 
->   - The name of enum is a symbolic name in code. **enum2Symbol()** can convert the enum value to its name.
+>   - The name of enum is a symbolic name in code. **enum2Symbol()** converts the enum value to its name.
 >   - The value of the enum is integer.
->   - The label of the enum can be different across preferred languages. **enum2Str()** can convert the enum value to its label.
+>   - The label of the enum can be different across preferred languages. **enum2Str()** converts the enum value to its label.
 
 ## Model dependency
 
@@ -367,7 +365,7 @@ To successfully build the project, add the following reference models to the mod
 - ApplicationPlatform
 - ApplicationSuite
 - Tax Engine
-- Dimensions, if financial dimension is used
+- Dimensions, if you use financial dimension
 - Other necessary models referenced in the code
 
 ## Validation
@@ -375,9 +373,9 @@ To successfully build the project, add the following reference models to the mod
 After you complete the previous steps, you can validate your changes.
 
 1. In Finance, go to **Accounts payable** and add **&debug=vs%2CconfirmExit&** to the URL. For example, `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. The final **&** is essential.
-2. Open the **Purchase order** page and select **New** to create a purchase order.
-3. Set the value for the customized field, and then select **Sales tax**. A troubleshooting file with prefix, **TaxServiceTroubleshootingLog** is downloaded automatically. This file contains the transaction information posted to the Tax Calculation Service. 
-4. Check if the customized field added is present in the **Tax service calculation input JSON** section and if its value is correct. If the value isn't correct, double check the steps in this document.
+1. Open the **Purchase order** page and select **New** to create a purchase order.
+1. Set the value for the customized field, and then select **Sales tax**. A troubleshooting file with prefix, **TaxServiceTroubleshootingLog** is downloaded automatically. This file contains the transaction information posted to the Tax Calculation Service. 
+1. Check if the customized field added is present in the **Tax service calculation input JSON** section and if its value is correct. If the value isn't correct, double check the steps in this document.
 
 File example:
 
@@ -540,3 +538,5 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
     }
 }
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn about how to specify how and when you receive service updates
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak 
 audience: Developer, IT Pro
@@ -17,6 +17,7 @@ ms.dyn365.ops.version: Platform update 24
 # Configure service updates through Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 In Microsoft Dynamics Lifecycle Services, you can specify how and when you receive service updates from Microsoft for your environments.
 

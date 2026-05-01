@@ -4,7 +4,7 @@ description: Learn how to place existing certificates and update the references 
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 02/02/2026
+ms.date: 03/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2019-04-30
@@ -106,7 +106,7 @@ You might need to rotate the certificates used by your Dynamics 365 Finance + Op
 
 ## Activate new certificates within Service Fabric cluster
 
-To simplify the certificate rotation process, use certificate common names (subject name) instead of thumbprints for your Service Fabric standalone cluster configuration. If you have an existing cluster and want to migrate from using thumbprints to using certificate common names, follow the steps in [Appendix A](#appendix-a) later in this article.
+To simplify the certificate rotation process, use certificate common names (subject name) instead of thumbprints for your Service Fabric standalone cluster configuration. If you have an existing cluster and want to migrate from using thumbprints to using certificate common names, see [Appendix A](#appendix-a).
 
 ### <a name=""></a>Service Fabric cluster with certificate common names
 
@@ -133,13 +133,13 @@ If you change the certificate common name, you must upgrade your Service Fabric 
 
 #### Service Fabric with certificates that are expired
 
-If the cluster isn't available after 10 minutes from when you finished provisioning the new certificates to all nodes, consider restarting the nodes where the Service Fabric service isn't started.
+If the cluster isn't available 10 minutes after you finish provisioning the new certificates to all nodes, consider restarting the nodes where the Service Fabric service isn't started.
 
 If you change the certificate common name (subject name), the Service Fabric cluster won't start up. If you can't generate new certificates with the previous common name, you need to clean up and recreate the cluster.
 
 #### Service Fabric with restricted certificate issuers
 
-If the following sections are defined for your cluster configuration, the allowed certificate issuers are restricted. 
+If you define the following sections for your cluster configuration, you restrict the allowed certificate issuers. 
 
 ```json
 "ClusterCertificateIssuerStores": [
@@ -194,7 +194,7 @@ If the cluster isn't accessible, continue this process by following the steps in
 
 Reinstall the LocalAgent in the following situations:
 
-- You change the Service Fabric cluster/server certificate.
+- You change the Service Fabric cluster or server certificate.
 - You change the Service Fabric client certificate.
 - You change the LocalAgent certificate.
 
@@ -233,7 +233,7 @@ Reinstall the LocalAgent in the following situations:
 
     - Client certificate thumbprint
     - Server certificate thumbprint
-    - Tenant service principle certificate thumbprint
+    - Tenant service principal certificate thumbprint
 
     > [!IMPORTANT]
     > Do **not** create a new connector in Lifecycle Services. Update the configuration of your existing connector and download the settings file again.
@@ -245,7 +245,7 @@ Reinstall the LocalAgent in the following situations:
 
 Because you updated your certificates, you must manually update the configuration file in your environment. If you don't update the configuration file, the clean-up job might fail. You only need to perform this manual update once.
 
-1. Open the configuration file `config.json` on your agent file share. This file is in a share similar to the following path: `\\fileserver\agent\wp\environmentID\StandaloneSetup-123456`. Run the following SQL statement on the orchestrator database to find the location of this file.
+1. Open the `config.json` configuration file on your agent file share. This file is in a share similar to the following path: `\\fileserver\agent\wp\environmentID\StandaloneSetup-123456`. Run the following SQL statement on the orchestrator database to find the location of this file.
 
     ```sql
     select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
@@ -282,7 +282,7 @@ Because you updated your certificates, you must manually update the configuratio
     },
     ```
 
-1. Save and close the file. Close any programs that are accessing this network location. Otherwise, the cleanup process might fail.
+1. Save and close the file. Close any programs that are accessing this network location. Otherwise, the clean-up process might fail.
 
 ## Rotate Credentials.json
 
@@ -322,19 +322,19 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 1. Select **Maintain** and then select **Update Settings**.
 
-:::image type="content" source="media/addf4f1d0c0a86d840a6a412f774e474.png" alt-text="Screenshot of Apply update settings in Lifecycle Services. ":::
+:::image type="content" source="media/addf4f1d0c0a86d840a6a412f774e474.png" alt-text="Screenshot of Apply update settings in Lifecycle Services.":::
 
 1. Change the thumbprints to the new thumbprints that you previously configured. You can find them in the `ConfigTemplate.xml` file in the `InfrastructureScripts` folder.
 
-:::image type="content" source="media/07da4d7e02f11878ee91c61b4f561a50.png" alt-text="Screenshot of deployment settings thumbprint example 1. ":::
+:::image type="content" source="media/07da4d7e02f11878ee91c61b4f561a50.png" alt-text="Screenshot of deployment settings thumbprint example 1.":::
 
-:::image type="content" source="media/785caaf4ee652d66c0d88cf615a57e26.png" alt-text="Screenshot of deployment settings thumbprint example 2. ":::
+:::image type="content" source="media/785caaf4ee652d66c0d88cf615a57e26.png" alt-text="Screenshot of deployment settings thumbprint example 2.":::
 
 1. Select **Prepare**.
 
 1. After the preparation finishes, the **Update environment** button displays.
 
-:::image type="content" source="media/0a9d43044593450f1a828c0dd7698024.png" alt-text="Screenshot of Update environment button. ":::
+:::image type="content" source="media/0a9d43044593450f1a828c0dd7698024.png" alt-text="Screenshot of Update environment button.":::
 
 1. Select **Update environment** to start updating your environment.
 
@@ -344,9 +344,9 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
     Here's an example of how the name of the same thumbprint might differ.
 
-:::image type="content" source="media/038173714b2fb6cf12acc4bda2a3dde5.png" alt-text="Screenshot of thumbprint name example 1 in Service Fabric Explorer. ":::
+:::image type="content" source="media/038173714b2fb6cf12acc4bda2a3dde5.png" alt-text="Screenshot of thumbprint name example 1 in Service Fabric Explorer.":::
 
-:::image type="content" source="media/642f6434da9cdeac3651b765acca08fa.png" alt-text="Screenshot of thumbprint name example 2. ":::
+:::image type="content" source="media/642f6434da9cdeac3651b765acca08fa.png" alt-text="Screenshot of thumbprint name example 2.":::
 
 ## Update other certificates as needed
 
@@ -374,7 +374,7 @@ Complete this procedure after a successful certificate rotation or before the ne
 
 ### Data encryption certificate
 
-Use this certificate to encrypt data that you store in the database. By default, specific fields are encrypted by using this certificate. You can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, you can use the API to encrypt other fields as you require. 
+Use this certificate to encrypt data that you store in the database. By default, the system encrypts specific fields by using this certificate. You can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, you can use the API to encrypt other fields as needed. 
 
 In Platform update 33 and later, the **Encrypted data rotation system job** batch job uses the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. The job runs for two hours each day until all the data is re-encrypted. To enable the batch job, you must enable a flight and a configuration key. Run the following commands against your business database (for example, AXDB).
 
@@ -397,7 +397,7 @@ After you run the commands, restart your AOS nodes from Service Fabric Explorer.
 
 ## <a name="appendix-a"></a>Appendix A
 
-Using certificate common names instead of thumbprints to describe your Service Fabric cluster configuration eases future certificate rotation operations as the Service Fabric cluster automatically switches to using new certificates once they're available in the machine. Service Fabric doesn't accept any certificate. However, the certificate that you provide must match the subject name that you define in the Service Fabric cluster. Additionally, the issuer of the certificate must match the issuer that you also specify in the configuration. For more information on how Service Fabric uses common names, see [Common name-based certificate validation declarations](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations). For more information on how to secure standalone Service Fabric clusters, see [Secure a standalone cluster on Windows by using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security).
+Using certificate common names instead of thumbprints to describe your Service Fabric cluster configuration eases future certificate rotation operations because the Service Fabric cluster automatically switches to using new certificates once they're available in the machine. Service Fabric doesn't accept any certificate. However, the certificate that you provide must match the subject name that you define in the Service Fabric cluster. Additionally, the issuer of the certificate must match the issuer that you also specify in the configuration. For more information on how Service Fabric uses common names, see [Common name-based certificate validation declarations](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations). For more information about how to secure standalone Service Fabric clusters, see [Secure a standalone cluster on Windows by using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security).
 
 1. Run the following script to generate an updated cluster configuration file.
 
@@ -406,7 +406,7 @@ Using certificate common names instead of thumbprints to describe your Service F
     ```
 
     > [!NOTE]
-    > In some cases, you might choose to not restrict the issuer of the certificates in the Service Fabric cluster configuration. While this choice isn't recommended, you can achieve it by using the following command.
+    > In some cases, you might choose not to restrict the issuer of the certificates in the Service Fabric cluster configuration. While this choice isn't recommended, you can achieve it by using the following command.
     >
     > ```powershell
     > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -DoNotRestrictCertificateIssuers

@@ -4,7 +4,7 @@ description: Learn about the various steps that make up the experience for manag
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -19,6 +19,7 @@ ms.custom:
 # One Version service updates overview
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 The following set of topics provide information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) and later. This is applicable for cloud releases only.
 

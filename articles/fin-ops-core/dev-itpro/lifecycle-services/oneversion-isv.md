@@ -4,7 +4,7 @@ description: Learn about how independent software vendors (ISVs) can use One Ver
 author: FrankDahl
 ms.author: johnmichalak
 ms.topic: concept-article
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -15,6 +15,7 @@ ms.dyn365.ops.version: Platform update 24
 # Delivering ISV solutions using One Version
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Thanks to One Version, new updates are now automatically broadcast, downtime is minimal, and customers enjoy the benefits of staying current with recent features and fixes without having to go through expensive upgrades.
 

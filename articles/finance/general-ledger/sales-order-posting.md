@@ -26,6 +26,9 @@ For a physical transaction (packing slip) to post to the general ledger for a sa
   - Cost of units, delivered
   - Cost of goods sold, delivered
 
+> [!NOTE]
+> When the item is set to standard cost, the system will generate the packing slip voucher regardless of the above configurations.
+
 For a financial transaction (invoice) to post to the general ledger for a sales order, the following conditions must be met:
 
 - On the **Item model group** page for the item selected on the sales order line, the **Post financial inventory in ledger** checkbox must be selected.

@@ -4,7 +4,7 @@ description: Learn how to customize the zero prompt experience for Copilot for f
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 10/07/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak

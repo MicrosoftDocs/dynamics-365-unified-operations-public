@@ -4,7 +4,7 @@ description: Learn about demo data via an overview, including a table that defin
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 10/30/2025
+ms.date: 03/09/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro
@@ -26,7 +26,7 @@ Use demo data as the base data set for implementation support and demonstration 
 - Distribution
 - Service Industries
 - Public Sector
-- Discrete & Process Manufacturing
+- Discrete and Process Manufacturing
 
 The demo data set supports 40 languages across 16 countries or regions. It also supports various implementation scenarios. The following table lists the legal entities that are included in the demo data set.
 
@@ -86,13 +86,13 @@ You can view the Sales and profitability analytics on the **Sales and profitabil
 
 You can view the production performance analytics on the **Production performance** page from the Production control module. To view the analytics, you need to refresh the Production cube aggregate measure on the **Entity Store** page.
 
-For demonstration purposes, you can add production performance demo data by using the **Generate data** page from the Demo data module. This script generates production orders and associated feedback journals to populate the production performance reports with data.
+For demonstration purposes, you can add production performance demo data by using the **Generate data** page from the **Demo data** module. This script generates production orders and associated feedback journals to populate the production performance reports with data.
 
 You can view the warehouse performance analytics on the **Warehouse performance** page from the Warehouse management module. To view the analytics, you need to refresh the Warehouse aggregate measure on the **Entity Store** page.
 
-For demonstration purposes, you can add warehouse performance demo data by using the **Generate data** page from the Demo data module. This script generates sales orders and warehouse work to populate the warehouse performance reports with data.
+For demonstration purposes, you can add warehouse performance demo data by using the **Generate data** page from the **Demo data** module. This script generates sales orders and warehouse work to populate the warehouse performance reports with data.
 
-The demo data module is only available if you deploy the Demo data suite model on the environment.
+The **Demo data** module is only available if you deploy the Demo data suite model on the environment.
 
 ## Vendor collaboration
 
@@ -104,13 +104,13 @@ In the USMF demo company, use two purchase orders for INGA to approve. Sign in a
 
 ## Batch transfer rules for subledger journals
 
-Change the batch transfer rules for subledger journal account entries to **Scheduled batch** to reflect a best practice. Configure the batches to run every 10 minutes. Accounting entries for all source documents don't appear in General ledger until the batch process runs. If you need to see the immediate effect in General ledger, set the **Transfer mode** to **Synchronous** on the **Batch transfer rules** page within **General ledger** parameters. While Synchronous works well for product demos and environments with low transaction volumes, it can cause performance issues in larger transaction volume environments.
+Change the batch transfer rules for subledger journal account entries to **Scheduled batch** to reflect a best practice. Configure the batches to run every 10 minutes. Accounting entries for all source documents don't appear in General ledger until the batch process runs. If you need to see the immediate effect in General ledger, set the **Transfer mode** to **Synchronous** on the **Batch transfer rules** page within **General ledger** parameters. While synchronous works well for product demos and environments with low transaction volumes, it can cause performance problems in larger transaction volume environments.
 
 :::image type="content" source="../../fin-ops/get-started/media/GL-parameters.PNG" alt-text="Screenshot of General ledger parameters.":::
 
 ## Cost accounting
 
-Create three Cost accounting ledgers in demo data. The Cost accounting ledger USP2 provides an E2E demo experience based on data from legal entity USP2. The Cost control unit consists of two Cost object dimensions (Cost centers and Product groups). Actual cost, Budget cost, and Statistical measures are transferred for all 12 fiscal periods of year 2017. Overhead calculation is also performed for all fiscal periods of year 2017.
+Create three Cost accounting ledgers in demo data. The Cost accounting ledger USP2 provides an end-to-end demo experience based on data from legal entity USP2. The Cost control unit consists of two Cost object dimensions (Cost centers and Product groups). Actual cost, Budget cost, and Statistical measures are transferred for all 12 fiscal periods of year 2017. Overhead calculation is also performed for all fiscal periods of year 2017.
 
 Configure but don't enable access level security. Enable this security in the **Cost accounting parameters** page.
 

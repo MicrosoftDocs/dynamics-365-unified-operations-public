@@ -3,10 +3,12 @@ title: Demand-driven planning
 description: Learn how to generate planned orders for items that are set up as decoupling points with an outline on net flow and qualified demand.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 01/14/2026
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: how-to
+ms.date: 03/25/2026
+ms.custom:
+  - bap-template
 ---
 
 # Demand-driven planning
@@ -19,27 +21,27 @@ This article describes how to generate planned orders for items that are set up 
 
 During master planning, the system uses the concept of *net flow* to calculate the effective on-hand quantity. The calculation starts with the actual on-hand inventory, adds inventory that is on order (existing supply orders that aren't yet received), and subtracts what is referred to as *qualified demand* (qualified upcoming sales), as shown in the following illustration. When the system determines which buffer zone an item belongs in and what the ordered quantity should be, it evaluates the net flow, not the actual on-hand inventory.
 
-![Example of a net flow calculation chart.](media/ddmrp-net-flow-example.png "Example of a net flow calculation chart")
+:::image type="content" source="media/ddmrp-net-flow-example.png" alt-text="Diagram of a funnel chart showing DDMRP net flow calculation with maximum, reorder, and minimum quantities, and a color-coded priority scale." lightbox="media/ddmrp-net-flow-example.png":::
 
 When a planned order is triggered during a planning run, the ordered quantity is the maximum level minus the net flow. To assign an order priority, the system uses [priority-based planning](priority-based-planning.md) functionality instead of requirement dates. Demand Driven Material Requirements Planning (DDMRP) assigns the priority of a planned order based on the net flow quantity as a percentage of maximum inventory. In the previous illustration, the net flow quantity is 53 percent of the maximum quantity. Therefore, the order priority for replenishment is 53. (For context, 0 is the highest priority, and 100 is the lowest priority.)
 
 *Qualified demand* is the past-due demand, plus today's demand, plus qualified order spikes in the future. The following illustration shows an example of demand levels for today (June 12) and the next three days. DDMRP lets you set an order spike threshold to identify demand that exceeds normal expectations. If the threshold is set at 25 pieces, two of the future dates that are shown in the illustration qualify as order spikes. You must assign an order spike threshold for each product individually by using its **Item coverage** page, as described in [Set up buffers for a decoupling point item](ddmrp-buffer-profile-and-levels.md#set-up-buffers).
 
-![Example of a qualified demand calculation chart.](media/ddmrp-net-qualified-demand-example.png "Example of a qualified demand calculation chart")
+:::image type="content" source="media/ddmrp-net-qualified-demand-example.png" alt-text="Diagram of a bar chart showing daily demand, order spike threshold line, and qualified demand calculation for DDMRP planning." lightbox="media/ddmrp-net-qualified-demand-example.png":::
 
 If there's no past-due demand, you can add today's demand (18) to the quantities of the two order spikes (29 and 26) to get a qualified demand of 73. Even though there's demand for June 23, notice that it isn't included in the net flow calculation, because DDMRP triggers planned order differently than traditional planning coverage groups.
 
 ## Generating planned orders with DDMRP
 
-During a planning run, the system creates a new planned order if the net flow for an item drops below the reorder point. When you use DDMRP, you usually do a planning run every day. Therefore, you're essentially checking your inventory levels once a day to determine which items must be replenished.
+During a planning run, the system creates a new planned order if the net flow for an item drops below the reorder point. When you use DDMRP, you usually run a planning run every day. Therefore, you check your inventory levels once a day to determine which items you must replenish.
 
-The following illustration shows an example of a situation where you have an order for 18 pieces on June 20, 29 pieces on June 21, 26 pieces on June 22, and 20 pieces on June 23. Because the spike threshold is set at 25 pieces, two of these orders are flagged as spikes. There are 220 pieces of this item on hand.
+The following illustration shows an example of a situation where you have an order for 18 pieces on June 20, 29 pieces on June 21, 26 pieces on June 22, and 20 pieces on June 23. Because the spike threshold is set at 25 pieces, two of these orders are flagged as spikes. You have 220 pieces of this item on hand.
 
-![Planning example 1.](media/ddmrp-planning-example-1.png "Planning example 1")
+:::image type="content" source="media/ddmrp-planning-example-1.png" alt-text="Planning example 1." lightbox="media/ddmrp-planning-example-1.png":::
 
 If you run master planning now, it generates a planned order if the net flow drops below the reorder point (219 pieces in this example).
 
-![Planning example 2.](media/ddmrp-planning-example-2.png "Planning example 2")
+:::image type="content" source="media/ddmrp-planning-example-2.png" alt-text="Planning example 2." lightbox="media/ddmrp-planning-example-2.png":::
 
 This example produces a planned purchase order for a quantity of 130, which equals the maximum level minus the net flow. The planned order gets a priority of 53.07, based on its percentage of the maximum quantity. Because these values were found on June 20, the system creates a planned order that is dated June 20 plus the decoupled lead time for the item (five business days in this example). Therefore, because five business days are one week from today, the planned order is dated June 27.
 

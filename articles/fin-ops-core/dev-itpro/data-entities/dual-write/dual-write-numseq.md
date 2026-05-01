@@ -4,6 +4,8 @@ description: Learn how to configure number sequences in finance and operations a
 author: ramasri
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: Developer

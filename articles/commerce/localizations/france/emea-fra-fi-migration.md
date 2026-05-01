@@ -1,11 +1,10 @@
 ---
 title: Migrate from legacy Commerce functionality for France
-description: This article explains how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for France to the solution that is based on the Commerce fiscal integration framework.
+description: Learn how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for France to the solution based on the Commerce fiscal integration framework.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 02/26/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: France
 ms.author: anupamar
 ms.search.validFrom: 2021-03-01
@@ -19,13 +18,13 @@ ms.custom:
 
 This article explains how to migrate from the [legacy digital signing solution](emea-fra-deployment.md) in the Microsoft Dynamics 365 Commerce localization for France to the solution that is based on the [Commerce fiscal integration framework](emea-fra-fi-deployment.md).
 
-If you're using the [legacy digital signing solution for France](emea-fra-deployment.md), you must migrate to the [current Commerce fiscal integration solution](emea-fra-fi-deployment.md) to uptake the changes and receive timely updates for France-specific features in the future. No major changes are required in the extension logic that you created. However, because this update is a major update, some of your customizations will stop working unless changes are made on your side. Therefore, you should plan, prepare for, and complete the uptake for your environment.
+If you're using the [legacy digital signing solution for France](emea-fra-deployment.md), you must migrate to the [current Commerce fiscal integration solution](emea-fra-fi-deployment.md) to uptake the changes and receive timely updates for France-specific features in the future. You don't need to make major changes to the extension logic that you created. However, because this update is a major update, some of your customizations stop working unless you make changes. Plan, prepare for, and complete the uptake for your environment.
 
 ## Migration process
 
-The migration process from the legacy digital signing solution to the current fiscal integration solution is based on the concept of a gradual update. In other words, all Commerce headquarters and Commerce Scale Unit components should already be updated before you start to update the point of sale (POS).
+The migration process from the legacy digital signing solution to the current fiscal integration solution uses a gradual update. Update all Commerce headquarters and Commerce Scale Unit components before you start to update the point of sale (POS).
 
-To help prevent scenarios where an event or transaction is signed twice (by both the legacy extension and the current extension), or where an event or transaction can't be signed because of incorrect or incomplete configuration, we recommend that you turn off all POS devices that use the legacy solution and then update all of them simultaneously. For example, you can do this simultaneous update on a store-by-store basis, by updating each store's functionality profile.
+To help prevent scenarios where an event or transaction is signed twice (by both the legacy extension and the current extension), or where an event or transaction can't be signed because of incorrect or incomplete configuration, turn off all POS devices that use the legacy solution and then update all of them simultaneously. For example, you can do this simultaneous update on a store-by-store basis, by updating each store's functionality profile.
 
 To complete the migration process, follow these steps:
 
@@ -37,7 +36,7 @@ To complete the migration process, follow these steps:
 1. Update the POS components, and then enable the extensions of the current solution.
 
     > [!NOTE]
-    > - You must enable the Commerce runtime (CRT) and POS extensions only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you must [enable France-specific features](emea-fra-cash-registers.md#enable-features-for-france) instead.
+    > - You must enable the Commerce runtime (CRT) and POS extensions only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all required Commerce channel components for France are enabled automatically. However, you must [enable France-specific features](emea-fra-cash-registers.md#enable-features-for-france) instead.
     > - Depending on the type of environment, you can find more technical details about the migration process in either [Migration in a development environment](#migration-in-a-development-environment) or [Migration in a production environment](#migration-in-a-production-environment).
 
 1. [Adjust receipt formats](#adjust-receipt-formats) so that they use updated custom fields.
@@ -53,7 +52,7 @@ To configure the fiscal integration functionality for France, follow the steps i
 
 ## Adjust receipt formats
 
-You must adjust your receipt formats so that they use updated custom fields. For up-to-date information about custom fields for France, see [Configure custom fields so that they can be used in receipt formats for sales receipts](emea-fra-cash-registers.md#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts).
+You must adjust your receipt formats to use updated custom fields. For up-to-date information about custom fields for France, see [Configure custom fields so that they can be used in receipt formats for sales receipts](emea-fra-cash-registers.md#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts).
 
 ## Enable fiscal integration
 
@@ -62,19 +61,19 @@ When you're ready to enable the fiscal integration functionality in Commerce hea
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 1. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
-1. Select a functionality profile that is linked to the store where the registration process should be activated.
+1. Select a functionality profile that links to the store where you want to activate the registration process.
 1. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
 1. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 1. Open the distribution schedule, and select jobs **1070** and **1090** to transfer data to the channel database.
 
 > [!WARNING]
-> After you complete the preceding steps, your previous customizations of the digital signing functionality will stop working.
+> After you complete the preceding steps, your previous customizations of the digital signing functionality stop working.
 
 ## Migration in a development environment
 
 > [!NOTE]
-> You should implement the steps that are described in this section only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you must [enable France-specific features](emea-fra-cash-registers.md#enable-features-for-france) instead.
+> Implement the steps described in this section only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all required Commerce channel components for France are enabled by default. However, you must [enable France-specific features](emea-fra-cash-registers.md#enable-features-for-france) instead.
 
 ### Update the Commerce runtime (development)
 
@@ -82,11 +81,11 @@ To update the Commerce runtime (CRT), follow these steps:
 
 1. Find the extension configuration file for CRT:
 
-    - **Commerce Scale Unit:** The file is named **CommerceRuntime.ext.config** and can be found in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config** and can be found in the **bin\\ext** folder under the local CRT client broker location.
+    - **Commerce Scale Unit:** The file is named **CommerceRuntime.ext.config**. You can find it in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**. You can find it in the **bin\\ext** folder under the local CRT client broker location.
 
     > [!WARNING]
-    > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+    > Don't edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 1. In the extension configuration file, find and remove the earlier CRT extension, as shown in the following example.
 
@@ -107,7 +106,7 @@ To update the Commerce runtime (CRT), follow these steps:
 
 To update Modern POS, follow these steps:
 
-1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
+1. Open the solution at **RetailSdk\POS\CloudPOS.sln**.
 1. In the **extensions.json** file, add the following lines to enable the current sample POS extension.
 
     ``` json
@@ -126,7 +125,7 @@ To update Modern POS, follow these steps:
 
 To update Cloud POS, follow these steps:
 
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
+1. Open the solution at **RetailSdk\POS\ModernPOS.sln**.
 1. In the **extensions.json** file, add the following lines to enable the current sample POS extension.
 
     ``` json
@@ -143,7 +142,7 @@ To update Cloud POS, follow these steps:
 
 ### Remove obsolete customizations from the development environment after future updates
 
-After a future update, you can remove the obsolete Retail Server and POS customizations from your development environment. The following procedures describe how to remove extensions that can safely be removed.
+After a future update, you can remove the obsolete Retail Server and POS customizations from your development environment. The following procedures describe how to remove extensions that you can safely remove.
 
 #### Remove the earlier CRT extensions (development)
 
@@ -151,11 +150,11 @@ To remove the earlier CRT extensions, follow these steps:
 
 1. Find the extension configuration file for CRT:
 
-    - **Commerce Scale Unit:** The file is named **CommerceRuntime.ext.config** and can be found in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config** and can be found in the **bin\\ext** folder under the local CRT client broker location.
+    - **Commerce Scale Unit:** The file is named **CommerceRuntime.ext.config** and you can find it in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**. You can find it in the **bin\\ext** folder under the local CRT client broker location.
 
     > [!WARNING]
-    > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+    > Don't edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 1. In the extension configuration file, find and remove the earlier CRT extensions, as shown in the following example.
 
@@ -173,7 +172,7 @@ To remove the earlier CRT extensions, follow these steps:
 
 To remove the earlier Retail Server extension, follow these steps:
 
-1. Find the configuration file for Retail Server. The file is named **web.config** and can be found in the root folder under the IIS Retail Server site location.
+1. Find the configuration file for Retail Server. The file is named **web.config** and you can find it in the root folder under the IIS Retail Server site location.
 1. In the configuration file, find the earlier Retail Server extension in the **extensionComposition** section, and remove it, as shown in the following example.
 
     ``` xml
@@ -184,7 +183,7 @@ To remove the earlier Retail Server extension, follow these steps:
 
 To disable the earlier Modern POS extension, follow these steps:
 
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
+1. Open the solution at **RetailSdk\POS\ModernPOS.sln**.
 1. In the **extensions.json** file, remove the following lines to disable the earlier POS extension.
 
     ``` json
@@ -209,8 +208,8 @@ To disable the earlier Modern POS extension, follow these steps:
 
 To disable the earlier Cloud POS extension, follow these steps:
 
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
-2. In the **extensions.json** file, remove the following lines to disable the earlier POS extension.
+1. Open the solution at **RetailSdk\POS\ModernPOS.sln**.
+1. In the **extensions.json** file, remove the following lines to disable the earlier POS extension.
 
     ``` json
     {
@@ -233,19 +232,19 @@ To disable the earlier Cloud POS extension, follow these steps:
 ## Migration in a production environment
 
 > [!NOTE]
-> You should implement the steps that are described in this section only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you must [enable France-specific features](emea-fra-cash-registers.md#enable-features-for-france) instead.
+> Implement the steps described in this section only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all required Commerce channel components for France are enabled by default. However, you must [enable France-specific features](emea-fra-cash-registers.md#enable-features-for-france) instead.
 
 ### Update CRT (production)
 
 To update CRT, follow these steps:
 
-1. In the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, remove the earlier CRT extension, as shown in the following example.
+1. In the **RetailSdk\Assets** folder, open the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files. Remove the earlier CRT extension, as shown in the following example.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
     ```
 
-1. In the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, make the following changes to enable the current sample CRT extensions.
+1. In the same configuration files, make the following changes to enable the current sample CRT extensions.
 
     ``` xml	
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
@@ -258,8 +257,8 @@ To update CRT, follow these steps:
 
 To update Modern POS, follow these steps:
 
-1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
-1. In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, add the following lines to enable the current sample POS extension.
+1. Open the solution at **RetailSdk\POS\CloudPOS.sln**.
+1. In the **extensions.json** file under the **RetailSDK\POS\Extensions** folder, add the following lines to enable the current sample POS extension.
 
     ``` json
     {
@@ -277,8 +276,8 @@ To update Modern POS, follow these steps:
 
 To update Cloud POS, follow these steps:
 
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
-1. In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, add the following lines to enable the current sample POS extension.
+1. Open the solution at **RetailSdk\POS\ModernPOS.sln**.
+1. In the **extensions.json** file under the **RetailSDK\POS\Extensions** folder, add the following lines to enable the current sample POS extension.
 
     ``` json
     {
@@ -303,11 +302,11 @@ For more information, see [Retail SDK packaging](../../dev-itpro/retail-sdk/reta
 
 ### Remove obsolete customizations from the production environment after future updates
 
-After a future update, you can remove the obsolete Retail Server and POS customizations from your production environment. The following procedures describe how to remove extensions that can safely be removed.
+After a future update, you can remove the obsolete Retail Server and POS customizations from your production environment. The following procedures describe how to remove extensions that you can safely remove.
 
 #### Remove the earlier CRT extension (production)
 
-1. In the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, remove the earlier CRT extension.
+1. In the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\Assets** folder, remove the earlier CRT extension.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.CommonFrance" />
@@ -319,7 +318,7 @@ After a future update, you can remove the obsolete Retail Server and POS customi
     <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
     ```
 
-2. In the **Customization.settings** package customization configuration file under the **BuildTools** folder, remove the following lines to exclude the earlier sample CRT extension from the deployable packages.
+1. In the **Customization.settings** package customization configuration file under the **BuildTools** folder, remove the following lines to exclude the earlier sample CRT extension from the deployable packages.
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.CommonFrance.dll" />
@@ -334,13 +333,13 @@ After a future update, you can remove the obsolete Retail Server and POS customi
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DataSignatureKeyVaultSample.dll" />
     ```
 
-3. In the **ItemGroup** section, remove the following lines to exclude the Retail Server extension from the deployable packages.
+1. In the **ItemGroup** section, remove the following lines to exclude the Retail Server extension from the deployable packages.
 
     ``` xml
     <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
     ```
 
-4. Update the Retail Server configuration file. In the **web.config** file under the **RetailSDK\\Packages\\RetailServer\\Code** folder, remove the following lines from the **extensionComposition** section.
+1. Update the Retail Server configuration file. In the **web.config** file under the **RetailSDK\Packages\RetailServer\Code** folder, remove the following lines from the **extensionComposition** section.
 
     ``` xml
     <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
@@ -348,8 +347,8 @@ After a future update, you can remove the obsolete Retail Server and POS customi
 
 #### Disable the earlier Modern POS extension (production)
 
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
-2. Disable the earlier POS extension:
+1. Open the solution at **RetailSdk\POS\ModernPOS.sln**.
+1. Disable the earlier POS extension:
 
     - In the **tsconfig.json** file, add the following folders to the exclude list:
 
@@ -358,7 +357,7 @@ After a future update, you can remove the obsolete Retail Server and POS customi
         - AuditEventSignatureSample
         - SalesTransBuildNumberSample
 
-    - In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, remove the following lines.
+    - In the **extensions.json** file under the **RetailSDK\POS\Extensions** folder, remove the following lines.
 
         ``` json
         {
@@ -380,8 +379,8 @@ After a future update, you can remove the obsolete Retail Server and POS customi
 
 #### Disable the earlier Cloud POS extension (production)
 
-1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
-2. Disable the earlier POS extension:
+1. Open the solution at **RetailSdk\POS\CloudPOS.sln**.
+1. Disable the earlier POS extension:
 
     - In the **tsconfig.json** file, add the following folders to the exclude list:
 
@@ -390,7 +389,7 @@ After a future update, you can remove the obsolete Retail Server and POS customi
         - AuditEventSignatureSample
         - SalesTransBuildNumberSample
 
-    - In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, remove the following lines.
+    - In the **extensions.json** file under the **RetailSDK\POS\Extensions** folder, remove the following lines.
 
         ``` json
         {
@@ -416,3 +415,5 @@ After a future update, you can remove the obsolete Retail Server and POS customi
 1. Apply the packages via LCS or manually.
 
 For more information, see [Retail SDK packaging](../../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

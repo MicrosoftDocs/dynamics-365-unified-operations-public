@@ -6,7 +6,7 @@ ms.author: snamilikonda
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/12/2025
+ms.date: 03/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
@@ -44,6 +44,4 @@ The following table describes the options that are available for this task.
 | Lifecycle Services Description | No | Enter the description to show for the asset in the asset details. |
 | Wait for Validation | No | For asset types that require validation, use this check box to instruct the task to wait until validation of the asset succeeds or fails. |
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

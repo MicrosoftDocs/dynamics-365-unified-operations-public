@@ -1,5 +1,5 @@
 ---
-title: Sample management overview (preview)
+title: Sample management overview
 description: Learn how sample management enables manufacturers to systematically handle, track, and test product samples throughout their lifecycle.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Sample management overview (preview)
+# Sample management overview
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.47 GA -->
 
 Sample management enables manufacturers to systematically handle, track, and test product samples throughout their lifecycle. This functionality supports industries such as pharmaceuticals, food and beverage, chemicals, and life sciences, where quality assurance and regulatory compliance are critical.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Sample management provides tools to:
 

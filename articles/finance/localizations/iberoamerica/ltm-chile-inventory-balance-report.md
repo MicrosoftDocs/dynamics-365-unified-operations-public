@@ -4,7 +4,7 @@ description: Learn how to set up and print the Inventory and balance report for 
 author: Cpicon85
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 10/09/2023 
+ms.date: 04/13/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -34,8 +34,8 @@ Before you can print the **Inventory and balance** report, the following prerequ
 Follow these steps to print the report.
 
 1. Go to **General Ledger** \> **Inquiries and Reports** \> **LATAM** \> **General ledger**.
-2. In the **General ledger** dialog box, in the **Report ID** field, select the ID that corresponds to the **Inventory balance** report.
-3. In the **From date** and **To date** fields, select the date range of transactions that you want to print.
-4. Select **Print**.
+1. In the **General ledger** dialog box, in the **Report ID** field, select the ID that corresponds to the **Inventory balance** report.
+1. In the **From date** and **To date** fields, select the date range of transactions that you want to print.
+1. Select **Print**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

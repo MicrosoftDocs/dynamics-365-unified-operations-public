@@ -2,7 +2,7 @@
 title: Set up tax codes
 description: Learn how to set up tax codes in the Tax Calculation, including overviews on simple setup and calculation origin. 
 author: liza-golub
-ms.date: 07/30/2024
+ms.date: 03/19/2026
 ms.topic: how-to 
 ms.custom: 
   - bap-template
@@ -11,7 +11,6 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: egolub
 ms.search.validFrom: 2021-10-26 
-ms.dyn365.ops.version: Version 10.0.21 
 ---
 
 # Set up tax codes
@@ -25,20 +24,20 @@ This article explains how to set up tax codes in the Tax Calculation feature of 
 
 ## Simple setup
 
-Follow these steps to use a tax code in a simple scenario, such as a scenario where there is only one tax rate.
+Follow these steps to use a tax code in a simple scenario, such as a scenario where there's only one tax rate.
 
 1. Open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
-2. On the **Tax calculation features** page, select the feature and version that you want to set up, and then select **Edit**.
-3. On the **General** tab, select **Configuration version**.
-4. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
-5. Select **Calculation origin**. A calculation origin is a group of methods that are defined in the tax configuration version that you selected. For this simple scenario, select **By net amount**.
-6. Select **Save**. More fields become available, based on the calculation origin that you selected.
-7. On the **Rates** FastTab, select **Add** to add one tax rate for this tax code.
-8. Select **Save**.
+1. On the **Tax calculation features** page, select the feature and version that you want to set up, and then select **Edit**.
+1. On the **General** tab, select **Configuration version**.
+1. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
+1. Select **Calculation origin**. A calculation origin is a group of methods that are defined in the tax configuration version that you selected. For this simple scenario, select **By net amount**.
+1. Select **Save**. More fields become available, based on the calculation origin that you selected.
+1. On the **Rates** FastTab, select **Add** to add one tax rate for this tax code.
+1. Select **Save**.
 
 ## Calculation origin
 
-The calculation origin defines how the tax base amount and the tax amount are calculated. The following values are available in the **Calculation origin** field:
+The calculation origin defines how the system calculates the tax base amount and the tax amount. The **Calculation origin** field offers the following values:
 
 - By net amount
 - By gross amount
@@ -48,9 +47,9 @@ The calculation origin defines how the tax base amount and the tax amount are ca
 
 ### By net amount
 
-If you select **By net amount** in the **Calculation origin** field, the tax amount is calculated as a percentage of the purchase or sales amount, excluding any other tax codes.
+If you select **By net amount** in the **Calculation origin** field, the system calculates the tax amount as a percentage of the purchase or sales amount, excluding any other tax codes.
 
-For example, the tax rate is 25 percent, the invoice line shows a quantity of 10 items at 1.00 each, and the customer is allowed a 10-percent line discount. In this case, amounts are calculated in the following way:
+For example, the tax rate is 25 percent, the invoice line shows a quantity of 10 items at 1.00 each, and the customer is allowed a 10-percent line discount. In this case, the system calculates amounts as follows:
 
 - **Net amount:** (10 × 1.00) – 10 percent = 9.00 
 - **Sales tax:** 9.00 × 25 percent = 2.25 
@@ -58,9 +57,9 @@ For example, the tax rate is 25 percent, the invoice line shows a quantity of 10
 
 ### By gross amount
 
-If you select **By gross amount** in the **Calculation origin** field, the tax amount is calculated as a percentage of the gross sales amount. The gross amount is the line's net amount plus all taxes and fees for the line except the one tax where the **Calculation origin** field is set to **By gross amount**.
+If you select **By gross amount** in the **Calculation origin** field, the system calculates the tax amount as a percentage of the gross sales amount. The gross amount is the line's net amount plus all taxes and fees for the line except the one tax where the **Calculation origin** field is set to **By gross amount**.
 
-For example, the tax authority has imposed special duties on an item. The duty amounts are added to the net amount before tax is calculated. The following tax codes are used:
+For example, the tax authority imposes special duties on an item. The duty amounts are added to the net amount before tax is calculated. The following tax codes are used:
 
 - **Duty 1** – The rate is 10 percent, and the **By net amount** calculation method is used.
 - **Duty 2** – The rate is 20 percent, and the **By net amount** calculation method is used.
@@ -75,15 +74,15 @@ If the net amount is 10.00, the Duty 1 amount is 1.00 (10.00 × 10 percent), and
 
 ### By quantity
 
-If you select **By quantity** in the **Calculation origin** field, the tax amount is calculated as a fixed amount per unit and multiplied by the quantity that is entered on the document line. The amount per unit is specified on the **Rates** FastTab.
+If you select **By quantity** in the **Calculation origin** field, the tax amount is calculated as a fixed amount per unit and multiplied by the quantity that you enter on the document line. You specify the amount per unit on the **Rates** FastTab.
 
-For example, the tax code is set up as 1.20 per unit. On a sales invoice line, 25 units of an item are sold. In this case, the tax amount is calculated as 25 × 1.20 = 30.00.
+For example, you set up the tax code as 1.20 per unit. On a sales invoice line, you sell 25 units of an item. In this case, the tax amount is calculated as 25 × 1.20 = 30.00.
 
 > [!NOTE] 
-> If the transaction is entered in a unit other than the unit that's specified on the tax code, the unit is automatically converted based on the unit conversions that are set up on the **Unit conversions** page. This function is available starting from the 10.0.40 update.
+> If you enter the transaction in a unit other than the unit that's specified on the tax code, the unit is automatically converted based on the unit conversions that are set up on the **Unit conversions** page. This function is available starting from the 10.0.40 update.
 
 #### By quantity, additional option
-You can choose whether a tax amount By quantity is calculated before other tax codes and added to the net amount before other tax codes are calculated where **Calculation origin** = **By Net Amount**.
+You can choose whether to calculate a tax amount By quantity before other tax codes and add it to the net amount before other tax codes are calculated where **Calculation origin** = **By Net Amount**.
 
 ##### Examples
 Assume two tax codes are calculated on a transaction:
@@ -107,7 +106,7 @@ The results of example 3 and example 1 are the same, because there's only one du
 
 ### By margin
 
-If you select **By margin** in the **Calculation origin** field, the tax amount is calculated as a percentage of the sales margin. The sales margin is the sales amount minus the cost amount. This calculation method applies only to sales transactions.
+If you select **By margin** in the **Calculation origin** field, the system calculates the tax amount as a percentage of the sales margin. The sales margin is the sales amount minus the cost amount. This calculation method applies only to sales transactions.
 
 For example, the tax rate is 25 percent, the invoice line shows a quantity of 10 items at 10.00 each, and the cost per item is 6. In this case, amounts are calculated in the following way:
 
@@ -117,9 +116,9 @@ For example, the tax rate is 25 percent, the invoice line shows a quantity of 10
 
 ### Tax on tax
 
-If you select **Tax on tax** in the **Calculation origin** field, the sales tax is calculated as a percentage of all the other tax amounts on the same document line.
+If you select **Tax on tax** in the **Calculation origin** field, the system calculates the sales tax as a percentage of all the other tax amounts on the same document line.
 
-For example, the following tax codes are used:
+For example, use the following tax codes:
 
 - **Duty 1** – The rate is 10 percent, and the **By net amount** calculation method is used.
 - **Duty 2** – The rate is 20 percent, and the **By net amount** calculation method is used.
@@ -140,11 +139,11 @@ This section explains some advanced functionality of the tax code setup for comp
 
 ### Tax exemption
 
-If you set the **Is Exempt** option to **Yes** on the **General** FastTab, the tax amount will always be overridden to 0 (zero), regardless of the actual tax rate.
+If you set the **Is Exempt** option to **Yes** on the **General** FastTab, the tax amount is always 0, regardless of the actual tax rate.
 
-You can set the **Exempt Code** field to specify the reason for the exemption. 
+Set the **Exempt Code** field to specify the reason for the exemption. 
 
-You can enable master data lookup for the **Exempt Code** field. In that way, you can select among the exempt code values that are defined in Finance. For information about how to enable master data lookup, see [Enable master data lookup for tax calculation configuration](tax-service-set-up-environment-master-data-lookup.md).
+You can enable master data lookup for the **Exempt Code** field. By using this feature, you can select among the exempt code values that are defined in Finance. For information about how to enable master data lookup, see [Enable master data lookup for tax calculation configuration](tax-service-set-up-environment-master-data-lookup.md).
 
 For example, the tax rate is 25 percent, and the **Is Exempt** option is set to **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each, and the customer is allowed a 10-percent line discount. In this case, amounts are calculated in the following way:
 
@@ -154,22 +153,22 @@ For example, the tax rate is 25 percent, and the **Is Exempt** option is set to 
 
 ### Use tax
 
-If you set the **Is Use Tax** option to **Yes** on the **General** FastTab, the tax amount will be posted to the **Use tax payable** account instead of the **Vendor summary** account.
+If you set the **Is Use Tax** option to **Yes** on the **General** FastTab, the tax amount posts to the **Use tax payable** account instead of the **Vendor summary** account.
 
-For example, the tax rate is 25 percent, and the **Is Use Tax** option is set to **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each, and the customer is allowed a 10-percent line discount. In this case, amounts are calculated in the following way:
+For example, the tax rate is 25 percent, and you set the **Is Use Tax** option to **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each, and the customer is allowed a 10-percent line discount. In this case, amounts are calculated in the following way:
 
 - **Net amount:** (10 × 1.00) – 10 percent = 9.00 
 - **Use tax:** 9.00 × 25 percent = 2.25
 - **Total invoice amount:** 9.00 + 0.00 = 9.00
 
 > [!IMPORTANT]
-> If both the **Is Exempt** option and the **Is Use Tax** option are set to **Yes** on a tax code, the code will be recognized as tax-exempt for sales transactions and use tax for purchase transactions.
+> If you set both the **Is Exempt** option and the **Is Use Tax** option to **Yes** on a tax code, the code is recognized as tax-exempt for sales transactions and use tax for purchase transactions.
 
 ### Reverse charges
 
-If you set the **Is Reverse Charge** option to **Yes** on the **General** FastTab, the tax rate can be configured as negative. For a reverse charge scenario, we recommend that you set up two tax codes: one that has a positive tax rate and one that has a negative tax rate. Both tax codes should have the same rate value, and the **Is Reverse Charge** option should be set to **Yes** on the tax code that has a negative tax rate. For more information about the reverse charge solution in Finance, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
+If you set the **Is Reverse Charge** option to **Yes** on the **General** FastTab, you can configure the tax rate as negative. For a reverse charge scenario, set up two tax codes: one that has a positive tax rate and one that has a negative tax rate. Both tax codes should have the same rate value, and set the **Is Reverse Charge** option to **Yes** on the tax code that has a negative tax rate. For more information about the reverse charge solution in Finance, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
 
-For example, two tax codes are determined on one invoice line. One tax rate is 25 percent. The other tax rate is -25 percent, and the **Is Reverse Charge** option is set to **Yes** on the second tax code. The invoice line shows a quantity of 10 items at 1.00 each. In this case, the amounts are calculated in the following way:
+For example, you determine two tax codes on one invoice line. One tax rate is 25 percent. The other tax rate is -25 percent, and you set the **Is Reverse Charge** option to **Yes** on the second tax code. The invoice line shows a quantity of 10 items at 1.00 each. In this case, the amounts are calculated in the following way:
 
 - **Net amount:** (10 × 1.00) = 10.00 
 - **Tax code 1:** 10.00 × 25 percent = 2.50
@@ -186,7 +185,7 @@ For more information, see [Calculate tax on prices when Prices include taxes is 
 
 On the **Rate** FastTab, you can define different tax rates for different ranges of tax base amounts. To calculate the tax amount, the Tax Calculation service always uses the rate that matches the tax base amount.
 
-For example, tax rates might be configured as shown in the following table.
+For example, you might configure tax rates as shown in the following table.
 
 | Minimum amount | Maximum amount | Tax rate   |
 | -------------- | -------------- | ---------- |
@@ -195,22 +194,22 @@ For example, tax rates might be configured as shown in the following table.
 | 5,000          | 10,000         | 20 percent |
 | 10,000         | 0              | 30 percent |
 
-In this case, the tax amount is calculated in the following way:
+In this case, calculate the tax amount as follows:
 
 - If the tax base amount is 300.00, the tax rate is 10 percent, and the tax amount is 300.00 × 10 percent = 30.00.
 - If the tax base amount is 3,000.00, the tax rate is 15 percent, and the tax amount is 3,000.00 × 15 percent = 450.00.
-- If the tax base amount is 6,000.00, the tax rate is 20 percent, and the tax amount is 6,000.00 × 10 percent = 1,200.00.
+- If the tax base amount is 6,000.00, the tax rate is 20 percent, and the tax amount is 6,000.00 × 20 percent = 1,200.00.
 - If the tax base amount is 20,000.00, the tax rate is 30 percent, and the tax amount is 20,000.00 × 30 percent = 6,000.00.
 
 > [!NOTE]
-> If the tax base amount can match both the maximum amount on one line and the minimum amount on the other line, the base will use the tax rate that matches the minimum base amount. For example, if the tax base amount is 1000.00, the tax rate is 15 percent, and the tax amount is 1,000.00 × 15 percent = 150.00.
+> If the tax base amount can match both the maximum amount on one line and the minimum amount on the other line, the base uses the tax rate that matches the minimum base amount. For example, if the tax base amount is 1,000.00, the tax rate is 15 percent, and the tax amount is 1,000.00 × 15 percent = 150.00.
 
 ### Limits
 
-On the **Limits** FastTab, you can define tax limits to override the calculated tax amount if the tax amount falls into the minimum/maximum range.
+On the **Limits** FastTab, you can define tax limits to override the calculated tax amount if the tax amount falls outside the minimum or maximum range.
 
-- If the calculated tax amount is more than or equal to the maximum tax amount that is configured on the **Limits** FastTab, the final tax amount equals the maximum tax amount.
-- If the calculated tax amount is less than the minimum tax amount that is configured on the **Limits** FastTab, the final tax amount is 0 (zero).
+- If the calculated tax amount is more than or equal to the maximum tax amount that you configure on the **Limits** FastTab, the final tax amount equals the maximum tax amount.
+- If the calculated tax amount is less than the minimum tax amount that you configure on the **Limits** FastTab, the final tax amount is 0.
 
 For example, the tax limits are configured in the following way:
 
@@ -221,6 +220,6 @@ If the calculated tax amount is 2,000, the final tax amount is 1,000.
 
 If the calculated tax amount is 500, the final tax amount is 500.
 
-If the calculated tax amount is 80, the final tax amount is 0 (zero).
+If the calculated tax amount is 80, the final tax amount is 0.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

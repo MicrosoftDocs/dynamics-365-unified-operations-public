@@ -1,11 +1,10 @@
 ---
 title: Chain data actions
-description: This article describes how to chain data actions.
+description: Learn how to chain data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 02/20/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to chain data actions.
+This article explains how to chain data actions in Microsoft Dynamics 365 Commerce.
 
 To create a maintainable and compact codebase, you often need a suite of composable data actions that can easily use each other to create more complex code flows. The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) lets you seamlessly chain data actions but still provide all the out-of-box benefits of the data action architecture (caching, batching, and deduplicating).
 
@@ -166,7 +165,7 @@ export default createObservableDataAction({
 })
 ```
 
-You can now use the new chain data action wherever you need both the basic product information and the product's current inventory status. In addition, the calls that exist in the chain data action are still run through the cache. They're also batched and deduplicated together with other actions that are run on the same page.
+You can now use the new chain data action wherever you need both the basic product information and the product's current inventory status. In addition, the calls that exist in the chain data action still run through the cache. They're also batched and deduplicated together with other actions that run on the same page.
 
 ## Additional resources
 
@@ -181,6 +180,5 @@ You can now use the new chain data action wherever you need both the basic produ
 [Data action overrides](data-action-overrides.md)
 
 [Data action hooks](data-action-hooks.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

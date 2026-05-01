@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the Microsoft pl
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: faq
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -16,6 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Planned maintenance window FAQ
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 > [!IMPORTANT]
 > This article applies to Infrastructure-as-a-Service (IaaS) environments and will be removed soon. For up-to-date information, see [Planned maintenance in self-service environments FAQ](../deployment/plannedmaintenance-selfservice.md).

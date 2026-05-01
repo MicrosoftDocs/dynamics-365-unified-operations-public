@@ -4,7 +4,7 @@ description: Learn about how to clean up the batch job history, including an ove
 author: snagamalla
 ms.author: yogeshpatil
 ms.topic: how-to
-ms.date: 02/09/2026
+ms.date: 03/13/2026
 ms.reviewer: johnmichalak 
 audience: IT Pro
 ms.search.region: Global
@@ -19,7 +19,7 @@ ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> To resolve storage concerns, Sandbox environments where the Batch History table is approaching or exceeding 500 GB are subject to a one-time cleanup starting **February 23, 2026**. This cleanup removes only historical diagnostic data. Your batch job configurations, schedules, and recurrence settings **aren't** affected. **This action can't be reversed, so ensure that you back up any necessary data in advance. For queries, reach out to your Solution Architects.**
+> To resolve storage concerns, Microsoft starts a one-time cleanup on **February 23, 2026** for sandbox environments where the Batch History table is approaching or exceeding 500 GB. This cleanup removes only historical diagnostic data. It doesn't affect your batch job configurations, schedules, or recurrence settings. This action can't be reversed, so ensure that you back up any necessary data in advance. For queries, reach out to your Solution Architects.
 >
 > Production environments aren't subject to truncation. For production environments, batch history data is cleaned up based on a retention period of 30 to 60 days.
 
@@ -40,7 +40,7 @@ Follow these steps to quickly clean up all history entries that are older than a
 
 ## Batch job history clean-up (custom)
 
-The custom batch job lets you apply other filtering, based on criteria such as status, job description, company, or user. You can also add other filter criteria by selecting the **Filter** button.
+Use the custom batch job to apply filtering based on criteria such as status, job description, company, or user. You can also add other filter criteria by selecting the **Filter** button.
 
 1. On the **Periodic tasks in System administration** module, select **Batch job history clean-up (custom)**.
 1. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
@@ -51,7 +51,7 @@ The custom batch job lets you apply other filtering, based on criteria such as s
 ## Best practice
 
 - Regularly clean up the batch job history, and perform this cleanup outside of business hours.
-- Avoid running multiple Batch History Cleanup Jobs simultaneously. This precaution is necessary because simultaneous runs might lead to database deadlocks, especially considering the typically high volume of data involved.
+- Avoid running multiple batch history cleanup jobs simultaneously. This precaution is necessary because simultaneous runs might lead to database deadlocks, especially considering the typically high volume of data involved.
 - If you need to run multiple tasks within the **Batch job history clean-up (custom)**, each with different criteria, run them one after another in sequence. Running these tasks concurrently could result in deadlocks, as the cleanup processes might overlap, particularly when deleting large amounts of data from History tables.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

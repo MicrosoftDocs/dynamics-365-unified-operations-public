@@ -4,6 +4,8 @@ description: Learn about how data and metadata are stored in Microsoft Azure Dat
 author: MilindaV2
 ms.author: johnmichalak
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.date: 01/16/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -36,7 +38,7 @@ Data files don't contain field headers or any other information. You have to rea
 
 Metadata describes the name, data type, size, and nature of data. In addition to the data files in the data lake, you notice metadata files at a folder level that corresponds to the data files. Metadata in a data lake is written in a machine-readable format that is described by the [Common Data Model (CDM) standard](/common-data-model/sdk/overview). When you install the Export to Data Lake feature and select data to add to the data lake, the system writes metadata files in addition to the data.
 
-Both Microsoft and third parties provide tools that understand the CDM metadata format. These tools make it easy to work with data in the data lake. Azure Synapse Analytics serverless SQL pools let you use the Transact-SQL (T-SQL) language to consume data in the data lake. T-SQL is widely supported by many tools. You can define a Synapse workspace over the data in the data lake, and then use T-SQL, Spark, or Synapse Pipelines as though you're consuming data from a database. To create a Synapse workspace over your data in the data lake, you can use [FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). This solution creates external table definitions in Azure Synapse Analytics serverless SQL pools by using metadata in the data lake.
+Both Microsoft and third parties provide tools that understand the CDM metadata format. These tools make it easy to work with data in the data lake. Azure Synapse Analytics serverless SQL pools let you use the Transact-SQL (T-SQL) language to consume data in the data lake. T-SQL is widely supported by many tools. You can define a Synapse workspace over the data in the data lake, and then use T-SQL, Spark, or Synapse Pipelines as though you're consuming data from a database. To create a Synapse workspace over your data in the data lake, you can use [FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Administration/Analytics/CDMUtilSolution). This solution creates external table definitions in Azure Synapse Analytics serverless SQL pools by using metadata in the data lake.
 
 If you select the **Enhanced metadata** option when you install Export to Data Lake, the system adds even more metadata.
 

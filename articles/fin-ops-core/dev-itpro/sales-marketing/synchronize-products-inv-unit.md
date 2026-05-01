@@ -4,7 +4,7 @@ description: Learn about the templates and underlying task used to synchronize p
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
@@ -19,13 +19,14 @@ ms.search.validFrom: 2018-12-01
 
 This article discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 
-![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/FSProductsOW.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/FSProductsOW.png" alt-text="Screenshot of synchronization of business processes between Supply Chain Management and Field Service.":::
 
 The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template. For more information, see [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md).
 
-This article only describes the differences between the two templates: 
+This article only describes the differences between the two templates:
+
 - **Field Service Products with Inventory unit (Supply Chain Management to Sales)**
-- **Field Service Products (Supply Chain Management to Field Service)** 
+- **Field Service Products (Supply Chain Management to Field Service)**
 
 ## Templates and tasks
 
@@ -49,7 +50,6 @@ The following illustrations show the template mapping in Data integration.
 
 ### Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products
 
-![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSProduct1.png)
-
+:::image type="content" source="../../../supply-chain/sales-marketing/media/FSProduct1.png" alt-text="Screenshot of template mapping in Data integration.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

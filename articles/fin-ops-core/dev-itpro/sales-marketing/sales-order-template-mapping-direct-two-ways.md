@@ -4,7 +4,7 @@ description: Learn about the templates and underlying tasks that are used to run
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
@@ -17,15 +17,13 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-
 The article discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
 
 ## Data flow in Prospect to cash
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png" alt-text="Screenshot of data flow in Prospect to cash.":::
 
 ## Templates and tasks
 
@@ -33,15 +31,15 @@ To access the available templates, open [Power Apps Admin Center](https://previe
 
 The following templates and underlying tasks are used to run synchronization of sales orders directly between Sales and Supply Chain Management.
 
-- **Names of the templates in Data integration:** 
+- **Names of the templates in Data integration:**
 
-    - Sales Orders (Sales to Supply Chain Management) - Direct
-    - Sales Orders (Supply Chain Management to Sales) - Direct
+  - Sales Orders (Sales to Supply Chain Management) - Direct
+  - Sales Orders (Supply Chain Management to Sales) - Direct
 
 - **Names of the tasks in the Data integration project:**
 
-    - OrderHeader
-    - OrderLine
+  - OrderHeader
+  - OrderLine
 
 The following synchronization tasks are required before synchronization of sales invoice headers and lines can occur:
 
@@ -83,7 +81,7 @@ When a sales order line is synchronized from Sales to Supply Chain Management, t
 **Synchronization from Sales to Supply Chain Management**
 
 - **Sales:** Quantity = 3, per-line discount = $10.00
-- **Supply Chain Management:** Quantity = 3, line discount amount = $3.33, sales charge = -$0.01 
+- **Supply Chain Management:** Quantity = 3, line discount amount = $3.33, sales charge = -$0.01
 
 **Synchronization from Supply Chain Management to Sales**
 
@@ -97,18 +95,18 @@ New columns have been added to the **Order** table and appear on the page:
 - **Is Maintained Externally** – Set this option to **Yes** when the order is coming from Supply Chain Management.
 - **Processing status** – This column shows the processing status of the order in Supply Chain Management. The following values are available:
 
-    - **Draft** – The initial status when an order is created in Sales. In Sales, only orders with this processing status can be edited.
-    - **Active** – The status after the order is activated in Sales by using the **Activate** button.
-    - **Confirmed**
-    - **Packing Slip**
-    - **Invoiced**
-    - **Picked**
-    - **Partially Picked**
-    - **Partially Packed**
-    - **Shipped**
-    - **Partially Shipped**
-    - **Partially Invoiced**
-    - **Cancelled**
+  - **Draft** – The initial status when an order is created in Sales. In Sales, only orders with this processing status can be edited.
+  - **Active** – The status after the order is activated in Sales by using the **Activate** button.
+  - **Confirmed**
+  - **Packing Slip**
+  - **Invoiced**
+  - **Picked**
+  - **Partially Picked**
+  - **Partially Packed**
+  - **Shipped**
+  - **Partially Shipped**
+  - **Partially Invoiced**
+  - **Cancelled**
 
 The **Has Externally Maintained Products Only** setting is used during order activation to consistently track whether a sales order consists entirely of externally maintained products. If a sales order consists entirely of externally maintained products, the products are maintained in Supply Chain Management. This setting helps guarantee that you don't activate and try to synchronize sales order lines that have products that are unknown to Supply Chain Management.
 
@@ -129,8 +127,8 @@ Before you synchronize sales orders, it's important that you update the followin
 - To ensure correct calculation of discounts in both Sales and Supply Chain Management **Discount calculation method** must be set to **Line item**.
 - Go to **Settings** &gt; **Administration** &gt; **System settings** &gt; **Sales**, and make sure that the following settings are used:
 
-    - The **Use system prizing calculation system** option is set to **Yes**.
-    - The **Discount calculation method** column is set to **Line item**.
+  - The **Use system prizing calculation system** option is set to **Yes**.
+  - The **Discount calculation method** column is set to **Line item**.
 
 ### Setup in Supply Chain Management
 
@@ -139,12 +137,12 @@ Before you synchronize sales orders, it's important that you update the followin
 If you also use work order integration, you need to set up the sales origin. The sales origin is used to distinguish sales orders in Supply Chain Management that were created from work orders in Field Service. When a sales order has a sales origin of the **Work order integration** type, the **External work order status** field appears on the sales order header. Additionally, the sales origin ensures that sales orders that were created from work orders in Field Service are filtered out during sales order synchronization from Supply Chain Management to Field Service.
 
 1. Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Sales origin**.
-2. Select **New** to create a new sales origin.
-3. In the **Sales origin** column, enter a name for the sales origin, such as **SalesOrder**.
-4. In the **Description** column, enter a description, such as **Sales Order from Sales**.
-5. Select the **Origin type assignment** check box.
-6. Set the **Sales origin type** column to **Sales order integration**.
-7. Select **Save**.
+1. Select **New** to create a new sales origin.
+1. In the **Sales origin** column, enter a name for the sales origin, such as **SalesOrder**.
+1. In the **Description** column, enter a description, such as **Sales Order from Sales**.
+1. Select the **Origin type assignment** check box.
+1. Set the **Sales origin type** column to **Sales order integration**.
+1. Select **Save**.
 
 ### Setup in the Sales Orders (Sales to Supply Chain Management) - Direct Data integration project
 
@@ -179,23 +177,22 @@ The following illustrations show an example of a template mapping in Data integr
 
 ### Sales Orders (Supply Chain Management to Sales) - Direct: OrderHeader
 
-![Template mapping in Data integration, Sales Orders (Supply Chain Management to Sales) - Direct: OrderHeader.](../../../supply-chain/sales-marketing/media/sales-order-direct-template-mapping-data-integrator-1.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/sales-order-direct-template-mapping-data-integrator-1.png" alt-text="Screenshot of template mapping in Data integration, Sales Orders (Supply Chain Management to Sales) - Direct: OrderHeader.":::
 
 ### Sales Orders (Supply Chain Management to Sales) - Direct: OrderLine
 
-![Template mapping in Data integration, Sales Orders (Supply Chain Management to Sales) - Direct: OrderLine.](../../../supply-chain/sales-marketing/media/sales-order-direct-template-mapping-data-integrator-2.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/sales-order-direct-template-mapping-data-integrator-2.png" alt-text="Screenshot of template mapping in Data integration, Sales Orders (Supply Chain Management to Sales) - Direct: OrderLine.":::
 
 ### Sales Orders (Sales to Supply Chain Management) - Direct: OrderHeader
 
-![Template mapping in Data integration, Sales Orders (Sales to Supply Chain Management) - Direct: OrderHeader.](../../../supply-chain/sales-marketing/media/sales-order-direct-template-mapping-data-integrator-3.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/sales-order-direct-template-mapping-data-integrator-3.png" alt-text="Screenshot of template mapping in Data integration, Sales Orders (Sales to Supply Chain Management) - Direct: OrderHeader.":::
 
 ### Sales Orders (Sales to Supply Chain Management) - Direct: OrderLine
 
-![Template mapping in Data integration, Sales Orders (Sales to Supply Chain Management) - Direct: OrderLine.](../../../supply-chain/sales-marketing/media/sales-order-direct-template-mapping-data-integrator-4.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/sales-order-direct-template-mapping-data-integrator-4.png" alt-text="Screenshot of template mapping in Data integration, Sales Orders (Sales to Supply Chain Management) - Direct: OrderLine.":::
 
 ## Related articles
 
 [Prospect to cash](prospect-to-cash.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

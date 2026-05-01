@@ -4,7 +4,7 @@ description: Learn about the requirements and schedule for converting code from 
 author: FrankDahl
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/20/2026
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -21,9 +21,9 @@ Reducing implementation and upgrade effort is a major initiative for the develop
 
 Extension-based customizations have several advantages over the legacy approach of overlayering-based customizations, especially when it comes to reducing implementation and upgrade effort.  
 
-+ Overlayering-based customizations require code upgrade, recompile time, and extensive testing. This requirement limits the ability to seamlessly apply hot fixes. These costs can be an inhibitor for customers to upgrade to newer versions containing innovations from Microsoft and partners.  
-+ Extension-based customizations also improve the development experience. Models containing overlayered customizations must be in the same package as the base objects. This requirement results in longer compile cycles and larger package distributions. Extensions are also much easier to unit test in isolation from the base object.  
-+ Reducing upgrade costs through extension-based customizations reduces the support matrix for partners as fewer release combinations need to be supported.
+- Overlayering-based customizations require code upgrade, recompile time, and extensive testing. This requirement limits the ability to seamlessly apply hot fixes. These costs can be an inhibitor for customers to upgrade to newer versions containing innovations from Microsoft and partners.  
+- Extension-based customizations also improve the development experience. Models containing overlayered customizations must be in the same package as the base objects. This requirement results in longer compile cycles and larger package distributions. Extensions are also much easier to unit test in isolation from the base object.  
+- Reducing upgrade costs through extension-based customizations reduces the support matrix for partners as fewer release combinations need to be supported.
 
 For these reasons, we gradually sealed the product models so they only support extension-based customizations. **AppPlatform** and **AppFoundation** were the first models. We sealed these models for overlayering in Platform update 3 (November 2016). We now provide binary updates to these models on a monthly basis, achieving our goals of reducing upgrade cost and delivering innovation to our customers at a faster cadence.
 

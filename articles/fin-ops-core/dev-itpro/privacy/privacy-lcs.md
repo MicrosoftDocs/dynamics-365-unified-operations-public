@@ -4,7 +4,7 @@ description: Learn about complying with requests for data under the General Data
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 05/18/2018
+ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,20 +16,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-## Overview 
-This article offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [Privacy overview](./privacy-guide.md).
+## Overview
 
-## User management 
+This article provides information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [Privacy overview](./privacy-guide.md).
 
-A tenant administrator can view and manage users on the **Organization users** tile on the home page in LCS. 
- 
+## User management
+
+A tenant administrator can view and manage users on the **Organization users** tile on the home page in LCS.
+
 An administrator can view and manage all organization users on the **Organization user** page in LCS.
 
-To export a user, the administrator can use filtering to find a specific user, select that user, and copy the name and email address of the user. 
+To export a user, the administrator can use filtering to find a specific user, select that user, and copy the name and email address of the user.
 
 ## Additional resources
+
 - [Official GDPR site](https://www.gdpr.org/)
 - [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

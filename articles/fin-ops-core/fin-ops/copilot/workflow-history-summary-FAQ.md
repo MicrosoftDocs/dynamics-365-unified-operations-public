@@ -6,7 +6,7 @@ ms.author: jchrist
 ms.topic: faq
 ms.custom: 
   - bap-template
-ms.date: 1/23/2025
+ms.date: 03/12/2026
 ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot

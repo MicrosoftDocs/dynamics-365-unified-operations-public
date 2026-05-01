@@ -1,80 +1,82 @@
 ---
-title: EU Sales list for Finland
+title: EU sales list for Finland
 description: Learn about the European Union (EU) sales list report for Finland, including outlines on setting up company information and foreign trade parameters.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 03/11/2026
 ms.reviewer: johnmichalak
-ms.search.region:
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2018-02-03
 ---
 
-# EU Sales list for Finland
+# EU sales list for Finland
 
 [!include [banner](../../includes/banner.md)]
 
 This article provides information about the European Union (EU) sales list report for Finland. The Finnish EU sales list report contains information about the sale of goods and services for reporting in text format. The following fields are included on the Finnish EU sales list report:
 
 - **EU sales list header:**
-    - Date and time of the report creation
-    - Information about the software
-    - Company VAT ID without country/region code
-    - Reporting period
-    - Lines number
+  - Date and time of the report creation
+  - Information about the software
+  - Company VAT ID without country/region code
+  - Reporting period
+  - Number of lines
 - **EU sales list lines:**
-    - Customer VAT ID
-    - Sum of all item invoices by customer
-    - Sum of all service invoices by customer
-    - Sum of triangular trade by customer
-    - Line number
+  - Customer VAT ID
+  - Sum of all item invoices by customer
+  - Sum of all service invoices by customer
+  - Sum of triangular trade by customer
+  - Line number
 
 ## Setup
 
 For general setup information, see [EU Sales list reporting](../europe/emea-eu-sales-list.md#prerequisites).
 
-> [!NOTE] 
-> The value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page is used in the .xlsx file for the EU sales list report.
+> [!NOTE]
+> The .xlsx file for the EU sales list report uses the value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page.
 
 ### Set up information about the company
 
 Create a registration type, and assign it to the **VAT ID** registration category for Finland and all the countries or regions that your company does business with, as described in Registration IDs.
 
-1. In Microsoft Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
-2. In the grid, select your company.
-3. On the Action Pane, select **Registration IDs**.
-4. On the **Registration ID** FastTab, select **Add**.
-5. On the **Overview** tab, in the **Registration type** field, select the registration type that you created.
-6. Enter your company's value-added tax (VAT) ID.
-7. Optional: On the **General** tab, in the **General** section, change the period that the VAT ID is used for.
-8. Close the page.
+To set up information about the company, follow these steps:
 
-    > [!NOTE] 
-    > If the **Routing number** field in the **Codes** section of the **Bank account information** FastTab or the **VAT exempt number export** field in the **Intrastat** section of the **Foreign trade and logistics** FastTab is set (that is, it isn't blank), the value (primarily the value of the **Routing number** field) will be used, instead of the VAT ID that you created in step 6, in the .txt file for the EU sales list report.
+1. In Microsoft Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
+1. In the grid, select your company.
+1. On the Action Pane, select **Registration IDs**.
+1. On the **Registration ID** FastTab, select **Add**.
+1. On the **Overview** tab, in the **Registration type** field, select the registration type that you created.
+1. Enter your company's value-added tax (VAT) ID.
+1. (Optional) On the **General** tab, in the **General** section, change the period that the VAT ID is used for.
+1. Close the page.
+
+    > [!NOTE]
+    > If you set the **Routing number** field in the **Codes** section of the **Bank account information** FastTab or the **VAT exempt number export** field in the **Intrastat** section of the **Foreign trade and logistics** FastTab (that is, the field isn't blank), the value (primarily the value of the **Routing number** field) is used instead of the VAT ID that you created in step 6 in the .txt file for the EU sales list report.
 
 ### Import Electronic reporting configurations
 
 - In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
-    - EU Sales list model
-    - EU Sales list by columns report
-    - EU Sales list by rows report
-    - EU Sales list (FI)
+  - EU Sales list model
+  - EU Sales list by columns report
+  - EU Sales list by rows report
+  - EU Sales list (FI)
 
 For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### Set up foreign trade parameters
 
+To set up foreign trade parameters, follow these steps:
+
 1. In Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
-2. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
-3. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (FI)**.
-4. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
-5. On the **Country/region properties** tab, select **New**, and specify the following information:
+1. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
+1. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (FI)**.
+1. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
+1. On the **Country/region properties** tab, select **New**, and specify the following information:
     - In the **Country/region** column, select **FIN**.
     - In the **Country/region type** column, select **Domestic**.
-6. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**.
+1. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list
 
@@ -82,10 +84,12 @@ For general information about the types of transactions that are included in the
 
 ### Generate the EU sales list report
 
+To generate the EU sales list report, follow these steps:
+
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. Transfer transactions.
-3. On the Action Pane, select **Reporting**.
-4. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
+1. Transfer transactions.
+1. On the Action Pane, select **Reporting**.
+1. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
 
     | Field            | Description                                                                         |
     |------------------|-------------------------------------------------------------------------------------|
@@ -96,20 +100,18 @@ For general information about the types of transactions that are included in the
     | Generate report  | Set this option to **Yes** to generate an .xlsx file for your EU sales list report. |
     | Report file name | Enter the name of the .xlsx file.                                                   |
 
-5. Select **OK**, and review the generated reports.
-
-## Example
-
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Finland, see Example for generic EU Sales list. However, for this example, create **FI111222999** as the company's VAT ID.
+1. Select **OK**, and review the generated reports.
 
 ### Create an EU sales list report
 
+To create an EU sales list report, follow these steps:
+
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. On the Action Pane, select **Reporting**.
-3. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
+1. On the Action Pane, select **Reporting**.
+1. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
     - In the **Reporting period** field, select **Monthly**.
     - In the **From date** field, select **8/1/2021** (August 1, 2021).
-4. Select **OK**, and review the report in text format that is generated. The following tables show the values on the example report.
+1. Select **OK**, and review the report in text format that is generated. The following tables show the values on the example report.
 
     **EU sales list header**
 
@@ -126,7 +128,7 @@ For information about how to create a general setup, create postings, and transf
 
     **EU sales list lines**
 
-    | Field | Line 1 value | Lina 2 value | Comment                                              |
+    | Field | Line 1 value | Line 2 value | Comment                                              |
     |-------|--------------|--------------|------------------------------------------------------|
     | 102   | SE           | ES           | The country/region code.                             |
     | 103   | 100200300400 | 12345678     | The customer VAT ID without the country/region code. |
@@ -136,9 +138,8 @@ For information about how to create a general setup, create postings, and transf
     | 009   | 1            | 2            | The line number.                                     |
     | 999   |              | 1            | The end of file identifier.                          |
 
-5. Review the report in Excel format that is generated.
+1. Review the report in Excel format that is generated.
 
-    ![EUSL report for Finland in Excel format.](../media/EUSL-fin.png)
-
+    :::image type="content" source="../media/EUSL-fin.png" alt-text="Screenshot of the EUSL report for Finland in Excel format.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

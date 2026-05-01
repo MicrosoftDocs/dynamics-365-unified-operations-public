@@ -4,7 +4,7 @@ description: Learn about cross-company data sharing, which is a mechanism for sh
 author: pnghub
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/21/2026
+ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
@@ -39,26 +39,26 @@ Cross-company data sharing has the following limitations:
 * It supports replication for up to 100 companies per policy. The limit is increased to 300 companies starting with Platform update for version 10.0.10.
 * Only one level of child relationships is exposed. To protect data consistency, replication doesn't occur if another level is required.
 * You can't share fields that reference financial dimensions across companies. For example, **Ledger** or **Default** dimension.
-  Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
+  Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically affect performance.
 * You can't use it with [dual-write](../data-entities/dual-write/dual-write-home-page.md).
 
 ### Policies
 
-Defined policies that you save in data packages manage data sharing. You can find templates that Microsoft has tested and supports as downloadable data packages on Microsoft Dynamics 365 Lifecycle Services. By using policies, you can control the following aspects of data sharing:
+You manage data sharing by defining policies and saving them in data packages. You can find templates that Microsoft has tested and supports as downloadable data packages on Microsoft Dynamics 365 Lifecycle Services. By using policies, you can control the following aspects of data sharing:
 
 * The fields that are replicated
 * The entities that participate in the replication
 * The companies that participate in the sharing
 
-The same company and table can only be in one policy. You can share the same table in more than one policy. This sharing occurs when the limits of records or companies are reached, or to create policies for tables that need to be shared differently for different countries or regions.
+The same company and table can only be in one policy. You can share the same table in more than one policy. This sharing occurs when you reach the limits of records or companies, or when you create policies for tables that need to be shared differently for different countries or regions.
 
 > [!NOTE]
-> Only required foreign key fields are selected by default. You need to manually select optional foreign keys to include them. Add one or more tables when selecting a foreign key field, unless the table is already added.
+> The system selects only required foreign key fields by default. You need to manually select optional foreign keys to include them. Add one or more tables when selecting a foreign key field, unless the table is already added.
 
 You can find policy templates that Microsoft has tested and supports as downloadable data packages on Lifecycle Services.
 
 > [!IMPORTANT]
-> Although customers can modify the Microsoft data templates that are available from Lifecycle Services, this scenario isn't supported.
+> Although you can modify the Microsoft data templates that are available from Lifecycle Services, this scenario isn't supported.
 
 ### Conflict resolution
 
@@ -66,7 +66,7 @@ Validation rules run when you enable a sharing policy. If the validation rules d
 
 ### Considerations for successful data sharing
 
-Several entities in the Microsoft data packages have references that you must consider when you enable the entities. You can't enable some data sharing policies if references don't match. You can enable other policies, but you should use the Find inconsistency checker tool to verify that your data is consistent. Here are some examples:
+Several entities in the Microsoft data packages have references that you must consider when you enable the entities. You can't enable some data sharing policies if references don't match. You can enable other policies, but you should use the **Find inconsistency checker** tool to verify that your data is consistent. Here are some examples:
 
 * The Production group sharing policy has a reference to a company's chart of accounts. Therefore, all companies that you add to this sharing policy must use the same chart of accounts.
 * If you want to enable entities that use number sequences, the number sequence types must be the same across all companies in a sharing policy for those entities.
@@ -82,7 +82,7 @@ Use cross-company data sharing for the following business scenarios:
 
 Cross-company data sharing isn't supported for the following scenarios:
 
-* Franchising solutions, where thousands of records are shared across thousands of companies.
+* Franchising solutions, where you share thousands of records across thousands of companies.
 * Sharing transactional records for reporting or management purposes, such as consolidations.
 * Sharing across deployments.
 * Complex scenarios, such as replication of subtype or supertype tables or tables that have date effectivity rules.
@@ -90,12 +90,12 @@ Cross-company data sharing isn't supported for the following scenarios:
 
 ## Customer and vendor master data sharing
 
-Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. If you want to be considered for this feature, complete the [Data sharing application](https://aka.ms/MSDYN365FODataSharing) and contact Support.
+Customer and vendor master data sharing enables you to share customer and vendor data across multiple companies. If you want to be considered for this feature, complete the [Data sharing application](https://aka.ms/MSDYN365FODataSharing) and contact Support.
 
-With the release of Platform update for version 10.0.12, you can enable customer and vendor master data sharing by using the **Customer and vendor master data sharing** feature in the **Feature management** module. There's no need to complete a survey first. Consider the limits in the number of records and companies stated earlier.
+By using the release of Platform update for version 10.0.12, you can enable customer and vendor master data sharing by using the **Customer and vendor master data sharing** feature in the **Feature management** module. There's no need to complete a survey first. Consider the limits in the number of records and companies stated earlier.
 
 > [!NOTE]
-> As of version 10.0.43, the **default dimensions** that you set up against a customer or vendor can be shared across companies only if the full set of financial dimensions is defined as global, such as Department or Business unit. For more information, see [Default financial dimension data sharing](cross-company-data-sharing-financial-dimensions.md).
+> As of version 10.0.43, you can share the **default dimensions** that you set up against a customer or vendor across companies only if the full set of financial dimensions is defined as global, such as Department or Business unit. For more information, see [Default financial dimension data sharing](cross-company-data-sharing-financial-dimensions.md).
 >
 > Default dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to take for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
 

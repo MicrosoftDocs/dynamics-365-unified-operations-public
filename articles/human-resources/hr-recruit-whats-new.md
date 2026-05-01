@@ -41,6 +41,10 @@ The January release of the Recruiting solution version 2.2.3306.1 (Career portal
 |Quick view for notes and feedback	|Recruiters and hiring managers can now add comments and view panel member feedback directly in the side panel, without needing to open the applicant's details. |
 |Calendar view for find slot in interview scheduling |	The **Calendar view** feature streamlines the process of finding suitable time slots for interview panel members. This visual interface provides a clear overview of each panel member’s availability, making scheduling more efficient and reducing back-and-forth communication. The inclusion of a legend (Available slot, busy slot, selected slot, confirmed slot, sent for confirmation) ensures that users can quickly interpret the status of each slot, promoting transparency and ease of use throughout the interview scheduling process. |
 
+### Recruiting flows
+Activate the following flow to retrieve panel member slots. For additional information, see [Set up the HR Recruiting app](hr-recruit-setup.md#activate-connections-and-flows-for-the-recruiting-app).
 
-
+|Name | Description |
+|---| ---|
+|Fetch panel members available meeting times slots| Retrieve available outlook calendar time slots for panel members to schedule interviews.|
 

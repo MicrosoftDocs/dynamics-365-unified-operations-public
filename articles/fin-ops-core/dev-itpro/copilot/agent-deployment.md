@@ -4,7 +4,7 @@ description: Learn how IT administrators use the agent deployment wizard in the 
 author: cabeln
 ms.author: cabeln
 ms.topic: concept-article
-ms.date: 07/21/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer: kamaybac
@@ -18,6 +18,7 @@ ms.collection:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The agent deployment wizard in Copilot Hub provides a centralized experience for deploying Dynamics 365 agents to your business applications. It guides administrators through a secure, validated process that deploys Microsoft‑provided agents into environments such as Dataverse, Power Platform, and Microsoft finance and operations apps.
 
@@ -32,7 +33,7 @@ The agent deployment wizard provides a consistent deployment experience across a
 
 The following image shows the Dynamics 365 agent deployment wizard landing page in Power Platform admin center.
 
-:::image type="content" source="media/agent-deployment-wizard.png" alt-text="Dynamics 365 agent deployment wizard landing page." lightbox="media/agent-deployment-wizard.png":::
+:::image type="content" source="media/agent-deployment-wizard.png" alt-text="Screenshot of the Dynamics 365 agent deployment wizard landing page." lightbox="media/agent-deployment-wizard.png":::
 
 ## Purpose of the agent deployment wizard
 
@@ -73,10 +74,9 @@ Use the agent deployment wizard if you are:
 
 To access the agent deployment wizard, follow these steps:
 
-1. Open [Copilot Hub in Power Platform admin center and select Dynamics 365](https://aka.ms/InstallD365Agents).
-1. Select the target environment.
-1. Choose a Dynamics 365 agent.
-1. Select **Add** to launch the agent deployment wizard for the selected agent.
+1. Open [Copilot Hub in Power Platform admin center](https://aka.ms/InstallD365Agents) and select **Dynamics 365**.
+1. Select **Select environment** and choose your target environment.
+1. In the **All agents** section, find the **Supplier Communications Agent** tile and select the **Add** button in that tile to launch the agent deployment wizard.
 
 ## Common deployment steps for Dynamics 365 agents
 

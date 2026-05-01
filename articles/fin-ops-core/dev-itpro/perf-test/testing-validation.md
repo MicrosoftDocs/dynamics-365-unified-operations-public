@@ -4,7 +4,7 @@ description: Learn about how to create and run test cases, including prerequisit
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 04/14/2020
+ms.date: 03/16/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -24,31 +24,33 @@ This tutorial shows you how to create and run test cases.
 You need to deploy Developer Topology with Developer and Build VM.
 
 ## Key concepts
--   Use SysTest Framework to author unit/component test code.
--   Test isolation
--   Test module creation to manage test code and FormAdaptors.
--   Import Task Recorder recordings into Visual Studio to generate test code.
--   Integrate a Test module with a build machine.
 
-[![Integrate a test module.](./media/54.png)](./media/54.png)  
+- Use SysTest Framework to author unit and component test code.
+- Test isolation.
+- Test module creation to manage test code and FormAdaptors.
+- Import Task Recorder recordings into Visual Studio to generate test code.
+- Integrate a test module with a build machine.
+
+:::image type="content" source="./media/54.png" alt-text="Screenshot of integrating a test module.":::  
 
 ## Use SysTest Framework to author unit/component test code
+
 You can create new test cases to test the functionality in an application.
 
-1.  Open Visual Studio as an administrator.
-1.  On the **File** menu, click **Open** &gt; **Project/Solution**, and then select **FleetManagement** **solution** from the desktop folder. If the solution file is not on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](../dev-tools/fleet-management-sample.md).
-1.  In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then click **New Project**.
-1.  Choose **finance and operations** as the project type to create.
-1.  Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:\Users\Public\Desktop\FleetManagement) as the location, and then click **OK**. 
-1.  In **Solution Explorer**, right-click the new project, and then click **Properties**.
-1.  Set the **Model** property to **FleetManagementUnitTests**, and then click **OK**. 
+1. Open Visual Studio as an administrator.
+1. On the **File** menu, select **Open** > **Project/Solution**, and then select the **FleetManagement** solution from the desktop folder. If the solution file isn't on your computer, see [End-to-end scenario for the Fleet Management sample application](../dev-tools/fleet-management-sample.md).
+1. In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then select **New Project**.
+1. Choose **finance and operations** as the project type to create.
+1. Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:\Users\Public\Desktop\FleetManagement) as the location, and then select **OK**.
+1. In **Solution Explorer**, right-click the new project, and then select **Properties**.
+1. Set the **Model** property to **FleetManagementUnitTests**, and then select **OK**.
 
-    [![Model property.](./media/56.png)](./media/56.png)
+   :::image type="content" source="./media/56.png" alt-text="Screenshot of the Model property setting.":::
 
-1.  Right-click the FleetManagementUnitTestSample project, point to **Add**, and then click **New Item**.
-1.  In the **Add New Item** window, select **Class** as the type of element to add. Name the new class FMUnitTestSample, and then click **Add**. 
+1. Right-click the FleetManagementUnitTestSample project, point to **Add**, and then select **New Item**.
+1. In the **Add New Item** window, select **Class** as the type of element to add. Name the new class FMUnitTestSample, and then select **Add**.
 
-    [![Add new item.](./media/57.png)](./media/57.png)
+   :::image type="content" source="./media/57.png" alt-text="Screenshot of the Add New Item window.":::
 
 1. In the first line of the code for the new class, indicate that the class extends the SysTestCase class.
 1. Add the following code to define the methods for the class. These methods define two additional tests.
@@ -106,74 +108,77 @@ You can create new test cases to test the functionality in an application.
     }
     ```
 
-1. Save the new class. After the save is complete, the additional two test cases in **Test Explorer** are displayed. Right-click on the FleetManagementUnitTestSample project in **Solution Explorer**, and then click **Build.**
-1.  On the **View** menu, open **Test Explorer**. 
-1. Click **Run selected test** to execute specific test case.
-1. Test Explorer shows the results of test after it is complete. 
+1. Save the new class. After the save is complete, the two additional test cases appear in **Test Explorer**. Right-click the FleetManagementUnitTestSample project in **Solution Explorer**, and then select **Build**.
+1. On the **View** menu, open **Test Explorer**.
+1. Select **Run selected test** to execute a specific test case.
+1. **Test Explorer** shows the results of the test after it completes.
 
-    [![Completed test.](./media/59-300x290.png)](./media/59.png)
+   :::image type="content" source="./media/59-300x290.png" alt-text="Screenshot of a completed test in Test Explorer.":::
 
 ## Test isolation
-For a test to be of high value it must be reliable. A test will pass or fail consistently, independent of other factors such as other tests. One typical cause of unreliable tests is leaking state, such as data left behind in the data base that influences downstream tests. To prevent this type of issue, you can use the ```SysTestTransaction``` attribute.
+
+For a test to be valuable, it must be reliable. A test passes or fails consistently, independent of other factors such as other tests. One typical cause of unreliable tests is leaking state, such as data left behind in the database that influences downstream tests. To prevent this type of issue, use the ```SysTestTransaction``` attribute.
 
 |  TestTransactionMode | Description  |
 |---|---|
-| AutoRollback | **Default**. Provides the best isolation.<br><br> All transactions are rolled back using SQL save points, and all database statements are routed to the main connection, including user connections. No data is persisted. |
-| LegacyRollback | All insert statements are tracked and deleted during clean-up.<br><br> All insert statements are downgraded to row-by-row. One typical use case is when testing user connections or concurrency scenarios. This isolation level cleans up setup data, and the recommendation is to wrap each test method in a ttsBegin and ttsAbort. |
-| LegacyRollbackWithUpdateTracking | All update, delete, and insert statements are tracked and reverted during cleanup.<br><br> All insert, update, and delete statements are tracked and downgraded to row-by-row. This is the slowest isolation level. |
+| AutoRollback | **Default**. Provides the best isolation.<br><br> All transactions roll back by using SQL save points, and all database statements route to the main connection, including user connections. No data persists. |
+| LegacyRollback | All insert statements are tracked and deleted during clean-up.<br><br> All insert statements downgrade to row-by-row. One typical use case is when testing user connections or concurrency scenarios. This isolation level cleans up setup data. Wrap each test method in a `ttsBegin` and `ttsAbort`. |
+| LegacyRollbackWithUpdateTracking | All update, delete, and insert statements are tracked and reverted during clean-up.<br><br> All insert, update, and delete statements are tracked and downgraded to row-by-row. This isolation level is the slowest. |
 | None | **Only use for debugging**. Provides no isolation.<br><br> This setting can be useful to temporarily debug a test, as it allows you to use the regular user interface to navigate the data that the test created. |
 
 Example:
 
-```xpp    
+```xpp
     [SysTestTransaction(TestTransactionMode::LegacyRollback)]
     class MyTestSample extends SysTestCase
-```    
+```
 
 ## Test module creation to manage test code and FormAdaptors
-Creating a test specific module helps to keep test code together and manageable.
+
+Create a test-specific module to keep test code together and manageable.
 
 1. Open **Visual Studio** and go to **Dynamics 365** > **Model Management** > **Create model**.
 
-2. Enter the model name, select the layer, and then enter any additional details. It's a good idea to include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**. 
-   
-3. Because this model holds forms from the Application Platform/Foundation, add references to models shown below.
+1. Enter the model name, select the layer, and then enter any additional details. Include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**.
 
-    [![Model references.](./media/62-1024x786.png)](./media/62.png)
+1. Because this model holds forms from the Application Platform/Foundation, add references to the following models.
 
-After the base test module is in place, you can import a Task Recorder recording to generate test code. When you import a Task Recorder recording XML, test code is generated using FormAdaptors. Form adaptors are wrapper classes over forms, and provide strongly typed API that can be used to test form functionality. We have included pregenerated FormAdapters for each package for built-in forms. In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.
+   :::image type="content" source="./media/62-1024x786.png" alt-text="Screenshot of model references.":::
+
+After you create the base test module, import a Task Recorder recording to generate test code. When you import a Task Recorder recording XML, you generate test code by using FormAdaptors. Form adaptors are wrapper classes over forms, and they provide a strongly typed API that you can use to test form functionality. The product includes pregenerated FormAdaptors for each package for built-in forms. In the test module, add a reference to the corresponding FormAdaptor for packages and Test Essentials, which has helper methods to execute test code.
 
 ## Import a Task Recorder recording into Visual Studio to generate test code
-You can generate test code from Task Recorder recording to execute headless (non-UI) test.
 
-1. Record a scenario in by using Task Recorder.
+You can generate test code from a Task Recorder recording to execute a headless (non-UI) test.
 
-2. To import a Task Recording, in Visual Studio, click **Dynamics 365** > **Addins** > **Import Task Recording**. 
+1. Record a scenario by using Task Recorder.
 
-3. In the **Import Task Recording** dialog, select the Test Module (ISVTestModule) under which you want to import task recording, and browse to recording xml file. 
+2. To import a Task Recording, in Visual Studio, select **Dynamics 365** > **Addins** > **Import Task Recording**.
 
-    [![Test module.](./media/64-249x300.png)](./media/64.png)
+3. In the **Import Task Recording** dialog, select the test module (ISVTestModule) under which you want to import the task recording, and browse to the recording XML file.
 
-4. The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor, which can be viewed in Visual Studio IDE. We do not expect you to change any test source code that is generated as part of this step.
+   :::image type="content" source="./media/64-249x300.png" alt-text="Screenshot of the Import Task Recording dialog with Test Module selected.":::
+
+4. The task recording import process generates test code that's based on the SysTestAdapter and FormAdaptor. You can view this test code in the Visual Studio IDE. You don't need to change any test source code that's generated as part of this step.
   
 5. After the test code is generated, set up Visual Studio options for test discovery and execution:
    - If you have a 64-bit machine, you can run unit tests and capture code coverage information as a 64-bit process.
-   - To configure this, select **Test** &gt; **Test Settings** &gt; **Default Processor Architecture**, and then select **X64**.
-   - You might run into a situation in which the test execution engine opens and locks an assembly in your test project. When this happens, you can’t for example, save changes to the assembly. To fix this, select **Test** &gt; **Test Settings**, and then select **Keep Test Execution Engine Running**. 
-    - Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.
+   - To configure this option, select **Test** > **Test Settings** > **Default Processor Architecture**, and then select **X64**.
+   - You might run into a situation where the test execution engine opens and locks an assembly in your test project. When this condition happens, you can't, for example, save changes to the assembly. To fix this problem, select **Test** > **Test Settings**, and then select **Keep Test Execution Engine Running**.
+    - Now that you have test code generated in the Visual Studio IDE, it's time to discover the tests and try executing them locally.
 
-6. From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**. After the Test Explorer window is open, it attempts to discover test from test code and list all the available tests as shown below.
+6. From the menu options, select **Test** > **Windows**, and then select **Test Explorer**. After the **Test Explorer** window opens, it attempts to discover tests from the test code and lists all the available tests as shown in the following image.
 
-    [![Test explorer.](./media/67-1024x658.png)](./media/67.png)
+    :::image type="content" source="./media/67-1024x658.png" alt-text="Screenshot of the Test Explorer window with available tests listed.":::
 
-7. Select the test and then click **Run** &gt; **Execute selected**, which executes test against the locally deployed environment. 
+7. Select the test and then select **Run** > **Execute selected**. This action executes the test against the locally deployed environment.
 
-    [![Execute selected.](./media/68-1024x652.png)](./media/68.png)
+   :::image type="content" source="./media/68-1024x652.png" alt-text="Screenshot of executing selected tests in Test Explorer.":::
 
-## Integration of the test module with build process
-After the test module is a part of source control, the build process template will discover all test modules, which contain the word **Test** in the name. The following illustration shows build and test execution as part of Visual Studio Codespace. 
+## Integration of the test module with the build process
 
-[![Build and test execution.](./media/69.png)](./media/69.png)
+When you add the test module to source control, the build process template finds all test modules that have the word **Test** in their names. The following illustration shows build and test execution as part of Visual Studio Codespace.
 
+:::image type="content" source="./media/69.png" alt-text="Screenshot of build and test execution as part of Visual Studio Codespace.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

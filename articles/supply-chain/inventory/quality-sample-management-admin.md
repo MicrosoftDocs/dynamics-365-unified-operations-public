@@ -1,5 +1,5 @@
 ---
-title: Enable and configure sample management (preview)
+title: Enable and configure sample management
 description: Learn how to enable and configure sample management, including how to design sample label layouts, set up parameters and number sequences, define lifecycle states, and configure quality associations.
 author: johanhoffmann
 ms.author: johanho
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Enable and configure sample management (preview)
+# Enable and configure sample management
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.47 GA -->
 
 This article provides step-by-step instructions for enabling and configuring sample management. It covers key aspects such as designing sample label layouts, setting up parameters and number sequences, defining lifecycle states, and configuring quality associations. By following these instructions, manufacturing managers and system administrators can ensure that they manage samples efficiently, accurately, and in compliance with industry standards.
 

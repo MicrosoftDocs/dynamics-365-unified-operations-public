@@ -4,7 +4,7 @@ description: Learn about the language names between the finance and operations c
 author: edupont04
 ms.author: edupont
 ms.topic: article
-ms.date: 07/17/2024
+ms.date: 03/26/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Operations
 
 # Language and locale descriptors in Help
 
-The client that finance and operations apps use supports multiple languages and locales. To add Help content for one or more locales to the in-product **Help** pane, you must make sure that the following conditions are met:
+The client that finance and operations apps use supports multiple languages and locales. To add Help content for one or more locales to the in-product **Help** pane, make sure that the following conditions are met:
 
 - The value of the **ms.locale** property in each HTML file matches the locale of the content.
 

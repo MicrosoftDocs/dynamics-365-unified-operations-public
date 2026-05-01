@@ -4,7 +4,7 @@ description: Learn about the templates and underlying tasks that are used to syn
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.custom: 
 ms.reviewer: kamaybac
 audience: IT Pro
@@ -24,7 +24,7 @@ This article discusses the templates and underlying tasks that are used to synch
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png" alt-text="Screenshot of data flow in Prospect to cash.":::
 
 ## Templates and tasks
 
@@ -35,8 +35,8 @@ The following template and underlying tasks are used to synchronize sales invoic
 - **Name of the template in Data integration:** Sales Invoices (Fin and Ops to Sales) - Direct
 - **Names of the tasks in the Data integration project:**
 
-    - SalesInvoiceHeader
-    - SalesInvoiceLine
+  - SalesInvoiceHeader
+  - SalesInvoiceLine
 
 The following synchronization tasks are required before synchronization of sales invoice headers and lines can occur:
 
@@ -87,7 +87,7 @@ Go to **Settings** > **Administration** > **System settings** > **Sales**, and m
 - A price list is required in order to create invoices in Sales. Update the value map for **pricelevelid.name \[Price list name\]** to the price list that is used in Sales per currency. You can use the default price list for a single currency. Alternatively, if you have price lists in multiple currencies, you can use a value map.
 
     The template value for **pricelevelid.name \[Price list name\]** is a value map that is based on currency with USD = CRM Service USA (sample).  
-    
+
 #### SalesInvoiceLine task
 
 - Make sure that the required mapping exists for **Unit of measure**.
@@ -100,20 +100,18 @@ Go to **Settings** > **Administration** > **System settings** > **Sales**, and m
 > [!NOTE]
 > The **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't included in the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synchronized between.
 
-The following illustrations show an example of a template mapping in Data integration. 
+The following illustrations show an example of a template mapping in Data integration.
 
 > [!NOTE]
 > The mapping shows which field information will be synchronized from Sales to Supply Chain Management.
 
 ### SalesInvoiceHeader
 
-![Template mapping in Data integration for SalesInvoiceHeader.](../../../supply-chain/sales-marketing/media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/sales-invoice-direct-template-mapping-data-integrator-1.png" alt-text="Screenshot of template mapping in Data integration for SalesInvoiceHeader.":::
 
 ### SalesInvoiceLine
 
-![Template mapping in Data integration for SalesInvoiceLine.](../../../supply-chain/sales-marketing/media/sales-invoice-direct-template-mapping-data-integrator-2.png)
-
-
+:::image type="content" source="../../../supply-chain/sales-marketing/media/sales-invoice-direct-template-mapping-data-integrator-2.png" alt-text="Screenshot of template mapping in Data integration for SalesInvoiceLine.":::
 
 ## Related articles
 
@@ -126,6 +124,5 @@ The following illustrations show an example of a template mapping in Data integr
 [Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management](contacts-template-mapping-direct.md)
 
 [Synchronization of sales orders directly between Sales and Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

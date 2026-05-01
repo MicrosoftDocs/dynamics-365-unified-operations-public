@@ -1,5 +1,5 @@
 ---
-title: Initiate an inline sample (preview)
+title: Initiate an inline sample
 description: Learn how to initiate an inline sample, including how to create a sample from a production order or batch order.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,13 @@ ms.custom:
   - bap-template
 ---
 
-# Initiate an inline sample (preview)
+# Initiate an inline sample
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.47 GA -->
 
 ## Prerequisites
 
-To prepare your environment for inline sampling, be sure to set up the following elements as described in [Enable and configure sample management (preview)](quality-sample-management-admin.md)
+To prepare your environment for inline sampling, be sure to set up the following elements as described in [Enable and configure sample management](quality-sample-management-admin.md)
 
 - A number sequence for generating sample IDs.
 - Sample lifecycle states.

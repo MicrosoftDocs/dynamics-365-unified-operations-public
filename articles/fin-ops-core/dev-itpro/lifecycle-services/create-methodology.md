@@ -4,7 +4,7 @@ description: Lifecycle Services provides methodologies that you can use to ensur
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,6 +17,7 @@ ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
 # Create or update methodologies
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Lifecycle Services for Microsoft Dynamics provides methodologies that you can use to ensure a more repeatable and predictable implementation project experience. You can use one of the provided methodologies or create your own. By using a methodology, you can easily track and report on your progress.
 

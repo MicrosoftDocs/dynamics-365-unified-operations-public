@@ -4,10 +4,11 @@ description: Learn about how to archive Dynamics 365 Supply Chain Management Inv
 author: epodkolz
 ms.author: epodkolzina
 ms.topic: how-to
-ms.date: 4/10/2024
+ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: twheeloc
 ---
+
 # Archive Dynamics 365 Supply Chain Management Inventory journal data
 
 This article explains how to archive Dynamics 365 Supply Chain Management Inventory journal data.

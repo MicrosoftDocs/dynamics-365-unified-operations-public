@@ -4,6 +4,8 @@ description: Learn how to upgrade dual-write data to the party and global addres
 author: RamaKrishnamoorthy
 ms.author: twheeloc
 ms.topic: upgrade-and-migration-article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: twheeloc
 audience: IT Pro
@@ -15,13 +17,13 @@ ms.search.validFrom: 2021-03-31
 
 [!include [banner](../../includes/banner.md)]
 
-The [Microsoft Azure Data Factory templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) help you upgrade the following existing data in dual-write to the party and global address book model: data in the **Account**, **Contact**, and **Vendor** tables, and postal and electronic addresses.
+The [Microsoft Azure Data Factory templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Administration/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) help you upgrade the following existing data in dual-write to the party and global address book model: data in the **Account**, **Contact**, and **Vendor** tables, and postal and electronic addresses.
 
 The following three Data Factory templates are provided. They help reconcile the data from both finance and operations apps and customer engagement apps.
 
-- **[Party template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (Upgrade data to dual-write Party-GAB schema/arm_template.json)** – This template helps upgrade **Party** and **Contact** data that is associated with **Account**, **Contact**, and **Vendor** data.
-- **[Party postal address template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (Upgrade data to dual-write Party-GAB schema/Upgrade to Party Postal Address - GAB/arm_template.json)** – This template helps upgrade the postal addresses that are associated with **Account**, **Contact**, and **Vendor** data.
-- **[Party electronic address template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Electronic%20Address%20-%20GAB/arm_template.json) (Upgrade data to dual-write Party-GAB schema/Upgrade to Party Electronic Address - GAB/arm_template.json)** – This template helps upgrade electronic addresses that are associated with **Account**, **Contact**, and **Vendor** data.
+- **[Party template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Administration/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (Upgrade data to dual-write Party-GAB schema/arm_template.json)** – This template helps upgrade **Party** and **Contact** data that is associated with **Account**, **Contact**, and **Vendor** data.
+- **[Party postal address template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Administration/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (Upgrade data to dual-write Party-GAB schema/Upgrade to Party Postal Address - GAB/arm_template.json)** – This template helps upgrade the postal addresses that are associated with **Account**, **Contact**, and **Vendor** data.
+- **[Party electronic address template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Administration/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Electronic%20Address%20-%20GAB/arm_template.json) (Upgrade data to dual-write Party-GAB schema/Upgrade to Party Electronic Address - GAB/arm_template.json)** – This template helps upgrade electronic addresses that are associated with **Account**, **Contact**, and **Vendor** data.
 
 At the end of the process, the following comma-separated values (.csv) files are generated.
 
@@ -43,7 +45,7 @@ This article explains how to use the Data Factory templates and upgrade your dat
 Before you upgrade to the party and global address book model, make sure you meet the following prerequisites:
 
 + You have an [Azure subscription](https://portal.azure.com/).
-+ You have access to [the templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema).
++ You have access to [the templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Administration/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema).
 + You're an existing dual-write customer.
 + If you install the party and global address book solution, you disable the plugin named `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead` of lead. 
 
@@ -60,7 +62,7 @@ Before you start the upgrade, prepare the following items:
 
 ## Deployment
 
-1. Download the templates from [Dynamics-365-FastTrack-Implementation-Assets](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema).
+1. Download the templates from [Dynamics-365-FastTrack-Implementation-Assets](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Administration/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema).
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Create a [resource group](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 1. Create a [storage account](/azure/storage/common/storage-account-create?tabs=azure-portal) in the resource group that you created.

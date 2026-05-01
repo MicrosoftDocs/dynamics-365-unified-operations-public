@@ -4,9 +4,10 @@ description: Learn how to add a new activity in tax integration, including overv
 author: Qiuchen-Ren
 ms.author: qire
 ms.topic: how-to
-ms.date: 04/25/2022
-ms.custom: bap-template
+ms.date: 03/19/2026
 ms.reviewer: johnmichalak
+ms.custom: 
+  - bap-template
 ---
 
 # Add a new activity in tax integration
@@ -19,9 +20,9 @@ This article provides information about how to add a new or customized activity 
 
 ### Document activity or line activity
 
-Before you create the activity class, think about the kinds of activities that should be added.
+Before you create the activity class, think about the kinds of activities that you need.
 
-If all actions are done at the line level, nothing from the document level is required. Therefore, you should consider a line activity. Create a line activity, and extend `TaxIntegrationAbstractActivityOnLine`.
+If all actions are at the line level, you don't need anything from the document level. Therefore, consider a line activity. Create a line activity, and extend `TaxIntegrationAbstractActivityOnLine`.
 
 ```X++
 public class TaxIntegrationTaxCodeCheckActivityOnLine
@@ -30,7 +31,7 @@ public class TaxIntegrationTaxCodeCheckActivityOnLine
 }
 ```
 
-If actions are done at both the document level and the line level, a document object is required. Create a document activity, and extend `TaxIntegrationAbstractActivityOnDocument`.
+If actions are at both the document level and the line level, you need a document object. Create a document activity, and extend `TaxIntegrationAbstractActivityOnDocument`.
 
 ```X++
 public class TaxIntegrationDataPersistenceActivityOnDocument
@@ -62,11 +63,11 @@ internal boolean shouldSkip(TaxIntegrationDocumentObject _document)
 ```
 
 > [!NOTE]
-> In most cases, `super()` should be called, because `shouldSkip()` in `TaxIntegrationAbstractActivity` has some basic checks (for example, if the document has exceptions). For a line activity, `shouldSkip()` also takes a document object as input. Therefore, it will determine whether **all lines (including charges)** in the current document should be skipped. There's no way to determine whether a specific line should be skipped in the framework. If such a determination is required, it can be done in the `actInternal` method of the line activity.
+> In most cases, call `super()`, because `shouldSkip()` in `TaxIntegrationAbstractActivity` has some basic checks (for example, if the document has exceptions). For a line activity, `shouldSkip()` also takes a document object as input. Therefore, it determines whether **all lines (including charges)** in the current document should be skipped. There's no way to determine whether a specific line should be skipped in the framework. If such a determination is required, you can do it in the `actInternal` method of the line activity.
 
 ### Implement actInternal
 
-The real business logic of the activity is written in the `actInternal` method. The `actInternal` method of the document activity and the `actInternal` method of the line activity have different signatures.
+Write the real business logic of the activity in the `actInternal` method. The `actInternal` method of the document activity and the `actInternal` method of the line activity have different signatures.
 
 #### For the line activity
 
@@ -113,7 +114,7 @@ while (lineEnumerator.moveNext())
 
 ## Append an activity to the sequence
 
-The new activity can't take effect until it's added to a `TaxIntegrationSequence` object. Therefore, as for other activities, the final step is to append it to the `TaxIntegrationSequence` object in the `TaxIntegrationFacade::calculate` method.
+The new activity can't take effect until you add it to a `TaxIntegrationSequence` object. Therefore, as for other activities, append it to the `TaxIntegrationSequence` object in the `TaxIntegrationFacade::calculate` method.
 
 ```X++
 TaxIntegrationSequence sequence = TaxIntegrationSequence::construct(LoggerName)
@@ -126,6 +127,6 @@ sequence.act(_document);
 ```
 
 > [!NOTE]
-> If you append the activity by extension, replace the whole method, because the method is replaceable. The order of the activity should be carefully arranged, because the activity usually depends on the activities that are appended in front of it.
+> To append the activity by extension, replace the whole method, because the method is replaceable. Carefully arrange the order of the activities, because the activities usually depend on the activities that you append in front of them.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

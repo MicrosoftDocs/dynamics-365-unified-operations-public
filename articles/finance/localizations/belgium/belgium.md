@@ -47,7 +47,7 @@ You can export ledger transactions for a specific interval, such as a fiscal yea
 <!-- - [Microsoft Dynamics Localization Portal: Belgium report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Belgium.html) (requires CustomerSource account) -->
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-- [Localization and regulatory features](../../../fin-ops-core/fin-ops/lcs/country-region.md?toc=%2ffin-and-ops%2ftoc.json)
+- [Localization and regulatory features](../../../fin-ops-core/fin-ops/lcs/globalization-resources.md?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

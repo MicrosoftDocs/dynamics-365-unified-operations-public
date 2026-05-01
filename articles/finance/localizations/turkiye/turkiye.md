@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: overview
-ms.date: 01/12/2026
+ms.date: 02/24/2026
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2025-02-16
@@ -79,13 +79,29 @@ The system calculates depreciation only for the months in use during the first y
 
 - [Use prorated depreciation on fixed assets](../../localizations/turkiye/emea-turkiye-prorated-depreciation.md)
 
-## Export customer electronic invoices
+## Perform fixed asset revaluation
+
+This section provides guidance and reference information about how to perform fixed asset revaluation for Türkiye.
+
+Learn how to revalue fixed assets by using optional revaluation groups or by specifying revaluation parameters directly on the fixed asset book or in the revaluation journal, how to configure revaluation posting profiles, generate revaluation proposals, and review revaluation results.
+
+- [Perform fixed asset revaluation](../../localizations/turkiye/emea-turkiye-use-revaluation-groups.md)
+
+## Export of customer electronic invoices
 
 This section provides guidance and a reference link on how to configure and generate customer electronic invoices for Türkiye in Microsoft Dynamics 365 Finance.
 
 Learn how to import the required Electronic Reporting (ER) configurations, set up legal entity and customer parameters, define mandatory code lists, and generate UBL-TR–compliant XML invoices.  
 
-- [Export customer electronic invoices](../../localizations/turkiye/emea-turkiye-customer-electronic-invoices.md)
+- [Export of customer electronic invoices](../../localizations/turkiye/emea-turkiye-customer-electronic-invoices.md)
+
+## Export of customer electronic packing slips
+
+This section provides guidance and a reference link on how to configure and generate customer electronic packing slips (e-packing slips) for Türkiye.
+
+Learn how to set up required Electronic Reporting (ER) configurations, configure legal entity and customer data, define transportation details, and generate UBL-TR–compliant DespatchAdvice XML files for electronic packing slips.
+
+- [Export of customer electronic packing slips](../../localizations/turkiye/emea-turkiye-customer-packing-slips.md)
 
 ## Use checks and promissory notes
 

@@ -33,7 +33,7 @@ After employees select their benefit plans by using Employee self service, the b
 
 The **Benefit bulk update** page provides quick filters and grouping that are based on period, plan, plan type, program, bundle, plan validity, and status. These quick filters and groupings help administrators select the desired records for bulk action, validate the selection, and then take bulk action on the selected records. 
 
-The following table describes the options that are available on the **Filter by** drop-down menu. The administrator can use these options to filter the benefit plan records that are shown in the grid.
+The following table describes the options that are available on the **Filter by** drop-down menu. The administrator can use these options to filter the benefit plan records that show in the grid.
 
 | Filter option | Description |
 |---------------|-------------|

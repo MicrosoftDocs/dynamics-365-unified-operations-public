@@ -6,7 +6,7 @@ ms.author: jaredha
 ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/12/2024
+ms.date: 03/05/2026
 audience: Developer
 ms.search.region: Global
 ms.custom: bap-template
@@ -25,8 +25,8 @@ There are many possible use cases for client plugins, and for exposing business 
 Here's an overview of the steps in this tutorial.
 
 1. Create a client-side action in X++ that defines the logic to invoke for the action.
-2. In Copilot Studio, create a topic that's triggered by a Copilot prompt to go to a defined form, and that invokes the client action that you created in step 1.
-3. Create a topic that's triggered by the completed client action and returns a response to the user in the Copilot chat pane.
+1. In Copilot Studio, create a topic that's triggered by a Copilot prompt to go to a defined form, and that invokes the client action that you created in step 1.
+1. Create a topic that's triggered by the completed client action and returns a response to the user in the Copilot chat pane.
 
 ### Prerequisites
 
@@ -41,7 +41,7 @@ This tutorial has the following prerequisites:
 In your unified developer environment, create an X++ class that defines the navigation action. The action includes input and output parameters that pass properties between the client and Copilot.
 
 1. In Visual Studio, in your development project, create a class that's named **SysCopilotChatCustomNavigateAction**.
-2. Add the following code to the new class.
+1. Add the following code to the new class.
 
     ```x++
     /// <summary>
@@ -93,13 +93,13 @@ In your unified developer environment, create an X++ class that defines the navi
     }
     ```
 
-3. In your development project, add an action menu item. Set the following property values for it:
+1. In your development project, add an action menu item. Set the following property values for it:
 
     - **Name:** SysCopilotChatCustomNavigateAction
     - **Object Type:** Class
     - **Object:** SysCopilotChatCustomNavigateAction
 
-4. Save and deploy the code to your environment.
+1. Save and deploy the code to your environment.
 
 ## Step 2: Create a topic to invoke the action
 
@@ -140,7 +140,7 @@ The second topic receives the output parameters that are returned from the X++ c
     - Set the trigger type to **Event received**. For more information, see [Changing the trigger for a topic](/microsoft-copilot-studio/authoring-triggers#changing-the-trigger-for-a-topic).
     - In the **On Event Activity properties** pane, set the **Event name** property to **MS.PA.CopilotExample.ClientNavigate**.
 
-2. In the new topic, create a **Parse value** node to parse the JavaScript Object Notation (JSON) string from the event payload.
+1. In the new topic, create a **Parse value** node to parse the JavaScript Object Notation (JSON) string from the event payload.
 
     - In the **Parse value** field, enter **System.Activity.Text**.
     - In the **Data type** field, specify **From sample data**.
@@ -156,9 +156,9 @@ The second topic receives the output parameters that are returned from the X++ c
 
     - In the **Save as** field, create a `Topic.NavigationResponse` variable as the record type for the parsed response.
 
-3. Create a **Message** node. Set the message value to the `Topic.NavigationResponse` variable.
-4. Save the topic.
-5. Publish the changes to the chatbot.
+1. Create a **Message** node. Set the message value to the `Topic.NavigationResponse` variable.
+1. Save the topic.
+1. Publish the changes to the chatbot.
 
 ## Step 4: Test the plugin
 

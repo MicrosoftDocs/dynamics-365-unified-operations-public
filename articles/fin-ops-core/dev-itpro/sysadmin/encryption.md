@@ -4,7 +4,7 @@ description: Learn about the encryption technology that is used to protect custo
 author: nedb
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 06/15/2020
+ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -36,7 +36,7 @@ Finance and operations apps support only TLS 1.2. Earlier TLS versions 1.0 and 1
 
 ### Supported cipher suites
 
-Finance and operations apps only support the following cipher suites:
+Finance and operations apps support only the following cipher suites:
 
 * TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 * TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256

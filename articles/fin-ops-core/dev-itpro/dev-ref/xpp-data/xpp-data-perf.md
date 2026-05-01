@@ -4,7 +4,7 @@ description: Learn how to speed up SQL operations in the X++ language, including
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 06/16/2020
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Conversion of operations from set-based to record-by-record
 
-You can use the following statements and methods to help improve performance by reducing communication between the application and the database:
+To improve performance and reduce communication between the application and the database, use the following statements and methods:
 
 - [delete_from](xpp-delete.md#delete-from-statement)
 - [update_recordset](xpp-update.md#update-recordset-statement)
@@ -22,9 +22,9 @@ You can use the following statements and methods to help improve performance by 
 - [RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)
 - [RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)
 
-In some situations, these record set–based operations can be converted to slower record-by-record operations. The following table identifies these situations.
+In some situations, converting these record set–based operations to record-by-record operations can slow performance. The following table identifies these situations.
 
-| Situation | delete\_from | update\_recordset | insert\_recordset | RecordSortedList, RecordInsertList | Used to override |
+| Situation | `delete_from` | `update_recordset` | `insert_recordset` | `RecordSortedList`, `RecordInsertList` | Used to override |
 |---|--------------|-------------------|-------------------|--------------------------------------|------------------|
 | Non-SQL tables | Yes | Yes | Yes | Yes | Not applicable |
 | Delete actions | Yes | No | No | No | **skipDeleteActions** |
@@ -33,7 +33,7 @@ In some situations, these record set–based operations can be converted to slow
 | Alerts are set up for the table. | Yes | Yes | Yes | No | **skipEvents** |
 | The **ValidTimeStateFieldType** property on a table is set to a value other than **None**. | Yes | Yes | Yes | Yes | Not applicable |
 
-You can use the **skip\*** settings that are shown in the "Used to override" column to explicitly skip or ignore one or more factors that adversely affect performance. If one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are ignored. In the following example code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
+Use the **skip\*** settings in the "Used to override" column to explicitly skip or ignore one or more factors that adversely affect performance. If the previously mentioned SQL operations downgrade to record-by-record operations, all the **skip\*** settings are ignored. In the following example code, the **insert** method on the `myTable` table runs, even though the code explicitly states that this method should be skipped if a container or memo field is defined for `myTable`.
 
 ```xpp
 public void tutorialRecordInsertList()

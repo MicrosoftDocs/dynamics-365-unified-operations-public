@@ -27,11 +27,11 @@ ms.dyn365.ops.version: Human Resources
 
 Administrators can update life event options, depending on configuration settings. On the **Human resource parameters** page, you can configure parameters that allow administrators to make changes to plan selections. You can also fully restrict administrators from making changes.
 
-On the **Human resources parameters** page, you can set up plan change restrictions for confirmed plans and life event options.
+On the **Human resources parameters** page, set up plan change restrictions for confirmed plans and life event options.
 
-If the **Confirmed plans** option is selected, changes can be made only if an enrollment period is active. (Examples of enrollment periods include open enrollment periods, new hire enrollment periods, and life event enrollment periods.) If this option isn't selected, changes can be made at any time.
+If you select the **Confirmed plans** option, users can make changes only if an enrollment period is active. Examples of enrollment periods include open enrollment periods, new hire enrollment periods, and life event enrollment periods. If you don't select this option, users can make changes at any time.
 
-If the **Life event options** option is selected, plan changes during a life event are restricted by the life event options that are defined on the plan type. If this option isn't selected, plan selections can be changed during a life event.
+If you select the **Life event options** option, plan changes during a life event are restricted by the life event options that are defined on the plan type. If you don't select this option, plan selections can be changed during a life event.
 
 ## Set plan change restrictions
 
@@ -39,5 +39,5 @@ On the **Human resource parameters** page, on the **Benefits management** tab, t
 
 | Field | Description |
 |-------|-------------|
-| Confirmed plans | Select this option if changes to a plan are allowed only if an enrollment period is active. If this option isn't selected, changes can be made at any time. |
-| Life event options | Select this option if plan changes during a life event are restricted by the life event options that are defined on the plan type. If this option isn't selected, plan selections can be changed during a life event. |
+| Confirmed plans | Select this option if changes to a plan are allowed only if an enrollment period is active. If you don't select this option, users can make changes at any time. |
+| Life event options | Select this option if plan changes during a life event are restricted by the life event options that are defined on the plan type. If you don't select this option, plan selections can be changed during a life event. |

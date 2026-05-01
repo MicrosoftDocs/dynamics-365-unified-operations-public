@@ -26,6 +26,7 @@ ms.dyn365.ops.version: Human Resources
 # Human Resources migration go-live readiness review
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 This article describes the steps of the go-live readiness review for Microsoft Dynamics 365 Human Resources migration to the finance and operations infrastructure.
 

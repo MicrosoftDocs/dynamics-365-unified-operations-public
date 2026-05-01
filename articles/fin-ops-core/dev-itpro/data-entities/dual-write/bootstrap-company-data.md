@@ -78,7 +78,7 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
     | Bootstrap Dynamics 365 Linked Service\_properties\_type Properties\_username | The Dynamics 365 admin user's user ID | `<adminservice@contoso.onmicrosoft.com>` |
     | Bootstrap Dynamics 365 Linked Service\_password | The Dynamics 365 admin user's password | _\*\*\*\*\*\*\*\*_ | 
 
-1. Download the [Azure Resource Manager (ARM) template file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/arm_template.json) to your local directory.
+1. Download the [Azure Resource Manager (ARM) template file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Administration/Dual-write/Bootstrapping/arm_template.json) to your local directory.
 1. In the Azure portal, go to [Custom deployment](https://ms.portal.azure.com/#create/Microsoft.Template).
 1. Select **Build your own template in the editor**.
 1. Select **Load file**, and find and select the ARM template file that you downloaded earlier. Then select **Save**.
@@ -96,7 +96,7 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
 
     :::image type="content" source="media/boot-customer-file.png" alt-text="Screenshot of the finance and operations customer export CSV file showing data columns and sample records.":::
 
-1. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
+1. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Administration/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
 
 1. Run **BootstrapAccountsPipeline** from Azure Data Factory.
 

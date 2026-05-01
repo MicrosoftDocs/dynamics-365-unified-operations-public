@@ -3,8 +3,8 @@
 
 title: Benefit employee plan status
 description: This article describes the Benefit employee plan status option set for Dynamics 365 Human Resources.
-author: marcelbf
-ms.date: 07/25/2021
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 # optional metadata
 
@@ -31,7 +31,7 @@ This article describes the Benefit Employee Plan Status option set for Dynamics 
 
 ## Option set: Process type
 
-Physical name: mshr_hrmCompProcessType
+Physical name: mserp_hrmCompProcessType
 
 This enumeration provides the option set for process type in Human Resources virtual entities.
 

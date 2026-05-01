@@ -4,7 +4,7 @@ description: Learn how to add a bank account to a customer record in France and 
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 03/13/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak   
@@ -19,7 +19,7 @@ ms.search.form: CustTable, CustBankAccounts, LogisticsPostalAddress, LogisticsPo
 
 This article explains how to add a bank account to a customer record in France and update the customer method of payment in Microsoft Dynamics 365 Finance. 
 
-The following procedure was created using the demo data company FRSI.
+The following procedure uses the demo data company FRSI.
 
 Before you can complete this procedure, you must first import the following electronic reporting configurations:
 - payments.initial.version.xml
@@ -27,7 +27,7 @@ Before you can complete this procedure, you must first import the following elec
 
 To add a bank account to a customer record and update the customer method of payment, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Customers** > **All customers**.
 1. In the list, find and select the desired record.
 1. Select the link in the selected row.
 1. On the Action Pane, select **Customer**.
@@ -58,7 +58,5 @@ To add a bank account to a customer record and update the customer method of pay
 1. In the list, select the link in the selected row.
 1. In the **Bank account** field, select **1**.  
 1. Select **Save**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

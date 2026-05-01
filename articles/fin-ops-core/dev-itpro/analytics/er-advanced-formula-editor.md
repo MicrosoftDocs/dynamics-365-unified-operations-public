@@ -4,7 +4,7 @@ description: Learn about how the advanced formula editor can be used to configur
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 06/17/2021
+ms.date: 03/12/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,108 +17,108 @@ ms.dyn365.ops.version: AX 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-In addition to the [Electronic reporting](general-electronic-reporting.md) [formula editor](general-electronic-reporting-formula-designer.md), you can use the advanced Electronic reporting formula editor to improve the experience of configuring Electronic reporting (ER) expressions. The advanced editor is browser-based and powered by the [Monaco editor](https://microsoft.github.io/monaco-editor). The most commonly used advanced editor features are described in this article:
+In addition to the [Electronic reporting](general-electronic-reporting.md) [formula editor](general-electronic-reporting-formula-designer.md), you can use the advanced Electronic reporting formula editor to improve the experience of configuring Electronic reporting (ER) expressions. The advanced editor is browser-based and powered by the [Monaco editor](https://microsoft.github.io/monaco-editor). This article describes the most commonly used advanced editor features:
 
-- [Code autoformatting](#Autoformatting)
-- [IntelliSense](#IntelliSense)
-- [Code completion](#CodeCompletion)
-- [Code navigation](#CodeNavigation)
-- [Code structuring](#CodeStructuring)
-- [Find and replace](#FindAndReplace)
-- [Data pasting](#DataPasting)
-- [Syntax colorization](#SyntaxColorization)
+- [Code autoformatting](#code-autoformatting)
+- [IntelliSense](#intellisense)
+- [Code completion](#code-completion)
+- [Code navigation](#code-navigation)
+- [Code structuring](#code-structuring)
+- [Find and replace](#find-and-replace)
+- [Data pasting](#data-sources-and-functions-pasting)
+- [Syntax colorization](#syntax-colorization)
 
-## <a name="ActivateAdvEditor">Activate the advanced formula editor</a>
+## Activate the advanced formula editor
 
 Complete the following steps to start using the advanced formula editor in your instance of Microsoft Dynamics 365 Finance.
 
-1.  Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
-2.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
-3.  In the **User parameters** dialog box, in the **Execution tracing** section, set the **Enable advanced formula editor** parameter to **Yes**.
+1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
+2. On **Configurations**, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
+3. In **User parameters**, in the **Execution tracing** section, set the **Enable advanced formula editor** parameter to **Yes**.
 
-[![User parameters dialog box, Enable advanced formula editor parameter highlighted.](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
-
-> [!NOTE]
-> Be aware that this parameter is user specific and company specific.
-
-Starting in Microsoft Dynamics 365 Finance version 10.0.19, you can control what ER formula editor is offered by default. Complete the following steps to enable the advanced formula editor for all users and companies of the current Finance instance.
-
-1.  Open the **Feature management** workspace.
-2.  Find and select the feature **Set the ER advanced formula editor as the default one for all users** in the list, and then select **Enable now**.
-3.  Go to **Organization administration** > **Electronic reporting** > **Configurations**.
-4.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
-5.  In the **User parameters** dialog box, find the **Disable advanced formula editor** parameter and verify that it is set to **No**.
-
-[![User parameters dialog box, Disable advanced formula editor parameter highlighted.](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
+:::image type="content" source="./media/ER-AdvEditor-Activate.png" alt-text="Screenshot of the User parameters dialog box with the Enable advanced formula editor parameter highlighted.":::
 
 > [!NOTE]
-> The values of the parameters **Enable advanced formula editor** and **Disable advanced formula editor** are kept separate for each user and offered on the **User parameters** dialog box depending on the status of the **Set the ER advanced formula editor as the default one for all users** feature.
+> This parameter is user specific and company specific.
 
-## <a name="Autoformatting">Code autoformatting</a>
+Starting in Microsoft Dynamics 365 Finance version 10.0.19, you can control which ER formula editor is offered by default. Complete the following steps to enable the advanced formula editor for all users and companies of the current Finance instance.
 
-When you write a complex expression that consists of multiple rows of code, the indentation of a new entered line will be automatic based on the indentation of the previous row. You can select lines and change their indentation by typing **Tab** or **Shift+Tab**.
+1. Open the **Feature management** workspace.
+2. Find and select the feature **Set the ER advanced formula editor as the default one for all users** in the list, and then select **Enable now**.
+3. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
+4. On **Configurations**, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
+5. In **User parameters**, find the **Disable advanced formula editor** parameter and verify that it's set to **No**.
 
-[![ER formula editor gif showing selecting lines and changing the indentation.](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
+:::image type="content" source="./media/ER-AdvEditor-Activate2.png" alt-text="Screenshot of the User parameters dialog box with the Disable advanced formula editor parameter highlighted.":::
 
-Autoformatting allows you to keep the entire expression well formatted to make further maintenance easier and to simplify understanding of the configured logic.
+> [!NOTE]
+> The values of the parameters **Enable advanced formula editor** and **Disable advanced formula editor** are kept separate for each user. The **User parameters** dialog box displays these parameters depending on the status of the **Set the ER advanced formula editor as the default one for all users** feature.
 
-## <a name="IntelliSense">IntelliSense</a>
+## Code autoformatting
 
-The editor provides word completion to help you write expression faster and avoid typos. When you start adding new text, the editor automatically offers a list of functions supported in ER functions that contain the characters you have entered. You can also trigger IntelliSense in any place of a configured expression by typing **Ctrl+Space**.
+When you write a complex expression that consists of multiple rows of code, the editor automatically indents a new line based on the indentation of the previous row. You can select lines and change their indentation by typing **Tab** or **Shift+Tab**.
 
-[![ER formula editor gif showing triggering IntelliSense.](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+:::image type="content" source="./media/ER-AdvEditor-Indentation.gif" alt-text="Screenshot of the ER formula editor showing selecting lines and changing the indentation.":::
 
-## <a name="CodeCompletion">Code completion</a>
+Autoformatting helps you keep the entire expression well formatted, which makes further maintenance easier and simplifies understanding of the configured logic.
+
+## IntelliSense
+
+The editor provides word completion to help you write expressions faster and avoid typos. When you start adding new text, the editor automatically offers a list of functions supported in ER functions that contain the characters you entered. You can also trigger IntelliSense in any place of a configured expression by typing **Ctrl+Space**.
+
+:::image type="content" source="./media/ER-AdvEditor-Intelisense.gif" alt-text="Screenshot of the ER formula editor showing triggering IntelliSense.":::
+
+## Code completion
 
 The editor automatically provides code completion by:
 
-- Inserting a closing bracket when an opening  bracket is entered, keeping the cursor inside the brackets.
-- Inserting the second quotation symbol when the first one is entered, keeping the cursor inside the quotations.
-- Inserting the second double quotation symbol when the first one is entered, keeping the cursor inside the quotations.
+- Inserting a closing bracket when you enter an opening bracket, and keeping the cursor inside the brackets.
+- Inserting the second quotation mark when you enter the first one, and keeping the cursor inside the quotations.
+- Inserting the second double quotation mark when you enter the first one, and keeping the cursor inside the quotations.
 
-[![ER formula editor gif showing the editor automatically providing code completion.](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
+:::image type="content" source="./media/ER-AdvEditor-CodeCompletion.gif" alt-text="Screenshot of the ER formula editor showing automatic code completion.":::
 
-When you point to the typed bracket, the second bracket of this pair is automatically highlighted to show the construct that they support.
+When you point to a typed bracket, the editor automatically highlights the second bracket of this pair to show the construct that they support.
 
-## <a name="CodeNavigation">Code navigation</a>
+## Code navigation
 
-You can locate required symbols or lines in your expression by typing the **Go to** command using the command palette or the context menu.
+You can find required symbols or lines in your expression by using the **Go to** command from the command palette or the context menu.
 
-For example, to jump to line **8**, do the following:
+For example, to jump to line **8**, use one of the following methods:
 
 - Press **Ctrl+G**, enter the value **8**, and then press **Enter**.
 
   -or-
 
-- Press **F1**, type **G**, select **Go to line**, enter the value **8**, and the press **Enter**.
+- Press **F1**, type **G**, select **Go to line**, enter the value **8**, and then press **Enter**.
 
-[![ER formula editor gif showing how to locate parts of an expression using the command palette.](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
+:::image type="content" source="./media/ER-AdvEditor-Goto.gif" alt-text="Screenshot of the ER formula editor showing how to locate parts of an expression using the command palette.":::
 
-## <a name="CodeStructuring">Code structuring</a>
+## Code structuring
 
-The code for some functions, such as [IF](er-functions-logical-if.md) or [CASE](er-functions-logical-case.md), is automatically structured. You can expand and collapse any or all of the folding regions of this code to reduce the editable part of an expression in order to focus on only  thepiece of code that requires your attention. The toggle fold/unfold commands can be used for that.
+The code for some functions, such as [IF](er-functions-logical-if.md) or [CASE](er-functions-logical-case.md), is automatically structured. You can expand and collapse any or all of the folding regions of this code to reduce the editable part of an expression so you can focus on only the piece of code that requires your attention. Use the toggle fold and unfold commands for that task.
 
-For example, to fold all regions, do the following:
+For example, to fold all regions, use one of the following methods:
 
 - Press **Ctrl+K**
 
   -or-
 
-- Press **F1**, press **FO**, select **Fold all**, and then press **Enter**
+- Press **F1**, press **FO**, select **Fold all**, and then press **Enter**.
 
-To unfold all regions, do the following:
+To unfold all regions, use one of the following methods:
 
 - Press **Ctrl+J**
 
   -or-
   
-- Press **F1**, type **UN**, select **Unfold all**, and then press **Enter**
+- Press **F1**, type **UN**, select **Unfold all**, and then press **Enter**.
 
-[![ER formula editor gif showing code being unfolded.](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
+:::image type="content" source="./media/ER-AdvEditor-ToggleFold.gif" alt-text="Screenshot of the ER formula editor showing code being unfolded.":::
 
-## <a name="FindAndReplace">Find and replace</a>
+## Find and replace
 
-To find occurrences of certain text, select the text in your expression, and do the following:
+To find occurrences of certain text, select the text in your expression, and do the following steps:
 
 - Press **Ctrl+F** and then press **F3** to find the next occurrence of the selected text, or press **Shift+F3** to find the previous occurrence.
 
@@ -126,7 +126,7 @@ To find occurrences of certain text, select the text in your expression, and do 
   
 - Press **F1**, type **F**, and then select the required option to find the selected text.
 
-To replace occurrences of a certain text, select the text in your expression, and do the following:
+To replace occurrences of certain text, select the text in your expression, and do the following steps:
 
 - Press **Ctrl+H**. Enter the alternative text and select the replacement option to replace either the selected text or all occurrences of this text in the current expression.
 
@@ -134,7 +134,7 @@ To replace occurrences of a certain text, select the text in your expression, an
   
 - Press **F1**, type **R**, and then select the required option to replace the selected text. Enter the alternative text and select the replacement option to replace either the selected text or all occurrences of this text in the current expression.
 
-To change all occurrences of a certain text, select the text in your expression, and do the following:
+To change all occurrences of certain text, select the text in your expression, and do the following steps:
 
 - Press **Ctrl+F2** and then enter the alternative text.
 
@@ -142,25 +142,25 @@ To change all occurrences of a certain text, select the text in your expression,
   
 - Press **F1**, type **C**, and then select the required option to change the selected text. Enter the alternative text.
 
-[![ER formula editor gif showing find and replace.](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
+:::image type="content" source="./media/ER-AdvEditor-Find.gif" alt-text="Screenshot of the ER formula editor showing find and replace functionality.":::
 
-## <a name="DataPasting">Data sources and functions pasting</a>
+## Data sources and functions pasting
 
-You can select **Add data source**, which pastes to the current expression a data source that is currently selected on the **Data source** left panel. Simlilarly, you can select **Add function**, which pastes to the current expression a function that is currently selected on the **Functions** right panel. If you use the ER formula editor, a selected function or a selected data source will always be pasted to the end of the configured expression. When you use the advanced ER formula editor, a selected function or a selected data source can be pasted to any part of the configured expression. You will need to use the cursor to specify where you want to paste the data.
+Select **Add data source** to paste a data source from the **Data source** left panel into the current expression. Select **Add function** to paste a function from the **Functions** right panel into the current expression. If you use the ER formula editor, the selected function or data source is always added to the end of the configured expression. When you use the advanced ER formula editor, you can add the selected function or data source to any part of the configured expression. Use the cursor to specify where you want to paste the data.
 
-[![ER formula editor gif showing adding a data source and pasting a function.](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
+:::image type="content" source="./media/ER-AdvEditor-PasteValue.gif" alt-text="Screenshot of the ER formula editor showing adding a data source and pasting a function.":::
 
-## <a name="SyntaxColorization">Syntax colorization</a>
+## Syntax colorization
 
-Currently, different colors are used to highlight the following parts of expressions:
+Currently, the editor uses different colors to highlight the following parts of expressions:
 
 - The text in double brackets that can represent a label ID of a text constant.
 
-[![ER formula editor.](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
+:::image type="content" source="./media/ER-AdvEditor-SyntaxColorization.png" alt-text="Screenshot of the ER formula editor showing syntax colorization.":::
 
 ## Limitations
 
-The editor is currently supported in the following web browsers:
+The editor currently supports the following web browsers:
 
 - Chrome
 - Edge
@@ -173,6 +173,5 @@ The editor is currently supported in the following web browsers:
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 - [Monaco editor](https://microsoft.github.io/monaco-editor)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

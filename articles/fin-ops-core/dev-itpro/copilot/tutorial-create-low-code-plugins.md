@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Copilot Studio to create low-code plugin
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 09/02/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -51,16 +51,16 @@ In this step, you create a new topic in the **Copilot in Finance and Operation**
 In the new topic, you use variables that are set with the user's page and record context to determine the course ID of the course, and add a question that Copilot asks the user to determine the language the description must be translated into. For more information on user context of finance and operations apps in copilot scenarios, see [Use application context with Copilot](copilot-application-context.md).
 
 1. Below the **Trigger** node, select the plus sign (**+**), and then select **Add a condition**.
-2. On the **Condition** node, set the condition to verify the user is on the Courses page.
+1. On the **Condition** node, set the condition to verify the user is on the Courses page.
    - Select the **Select a variable** field, and select the `Global.PA_Copilot_ServerForm_PageContext.metadataName` variable.
    - Set the condition for the variable to be **is equal to** the value **HRMCourseTable**.
    - On the node, select **New condition**.
    - Set the new condition to verify the `Global.PA_Copilot_ServerForm_PageContext.titleField1Value` variable **is not Blank**.
-3. Under the **Condition** node, create a new **Set variable value** node (Variable management \> Set a variable value).
+1. Under the **Condition** node, create a new **Set variable value** node (Variable management \> Set a variable value).
    - For the **Set variable** value, create a new variable named **CourseID**.
    - For the **To value** value, enter the `Global.PA_Copilot_ServerForm_PageContext.titleField1Value` variable.
 
-5. On the other condition fork, under the **All other conditions** node, select the plus sign (**+**), and select **Ask a question** to create a **Question** node. Set the following values for the new node:
+1. On the other condition fork, under the **All other conditions** node, select the plus sign (**+**), and select **Ask a question** to create a **Question** node. Set the following values for the new node:
 
     - **Enter a message:** Enter **What is the course ID for the course description you want to translate?**
     - **Identify:** Specify **User's entire response**.
@@ -145,36 +145,36 @@ In the topic, create an action that uses a flow to get the course description.
         }
 ```
 
-8. Initialize a variable for the course description that will be the output of the flow.
+1. Initialize a variable for the course description that will be the output of the flow.
 
     1. Below the **Parse JSON** action, select the plus sign (**+**), and then select **Add an action**.
     1. Search for and select the **Initialize variable** action in the **Variable** group of actions.
     1. In the **Name** parameter, enter **CourseDescription**.
     1. In the **Type** parameter, specify **String**.
 
-9. Set the variable to the course description.
+1. Set the variable to the course description.
 
     1. Below the **Initialize variable** action, select the plus sign (**+**), and then select **Add an action**.
     1. Search for and select the **Set variable** action in the **Variable** group of actions.
     1. In the **Name** parameter, enter **CourseDescription**.
     1. In the **Value** parameter, select the `Body mserp_coursedescription` parameter from the **Parse JSON** action.
 
-10. Select the flow output to send back to Copilot Studio.
+1. Select the flow output to send back to Copilot Studio.
 
     1. Select the **Return value(s) to Microsoft Copilot Studio** node.
     1. On the **Parameters** tab, select **Add an output**, and select **Text** as the type of output.
     1. Enter **CourseDescription** as the parameter name.
     1. In the **Enter a value to respond with** parameter, select the **CourseDescription** variable from the **Variables** parameters.
 
-11. Select the flow name, and rename the flow **Get course description demo**.
-12. Save the flow.
+1. Select the flow name, and rename the flow **Get course description demo**.
+1. Save the flow.
 
-    <img alt="Screenshot of an action that uses a flow to get the course description." src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
+    :::image type="content" source="../media/Copilot-extensibillity-get-course-description.png" alt-text="Screenshot of an action that uses a flow to get the course description.":::
 
-13. Back in Copilot Studio, in the **Save and refresh** dialog box, select **Done**.
-14. Below the **Question** node for the language selection, select the plus sign (**+**), and then select **Call an action**.
-15. In the **Select an action** dialog box, select the **Get course description demo** action that you created in the flow.
-16. On the **Course description demo** action node, select the `Topic.CourseID` variable for the **CourseID (String)** input.
+1. Back in Copilot Studio, in the **Save and refresh** dialog box, select **Done**.
+1. Below the **Question** node for the language selection, select the plus sign (**+**), and then select **Call an action**.
+1. In the **Select an action** dialog box, select the **Get course description demo** action that you created in the flow.
+1. On the **Course description demo** action node, select the `Topic.CourseID` variable for the **CourseID (String)** input.
 
 ## Step 4: Create an action that translates the course description
 
@@ -194,8 +194,8 @@ In the topic, create an action that uses AI Builder to translate the course desc
     - **Sample data:** Italian
 
 1. In the **Prompt** field, enter "Translate `Course Description` into language `Language`", using the **Insert** action to select the variables in the prompt.
-2. Select **Test prompt** to test the prompt action.
-3. Select **Save custom prompt** and close the Prompt Builder window.
+1. Select **Test prompt** to test the prompt action.
+1. Select **Save custom prompt** and close the Prompt Builder window.
 1. Back in Copilot Studio, in the **Save and refresh** dialog box, select **Done**.
 1. Below the **Course description demo** action node, select the plus sign (**+**), and then select **Call an action** \> **TranslateText**.
    - On the **TranslateText** action node, select the `Topic.CourseDescription` variable for the **Course Description (String)** input.

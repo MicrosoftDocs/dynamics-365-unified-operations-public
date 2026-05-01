@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Human Resources customer merge FAQ
 
+[!include [LCS freeze](includes/lcs-freeze-banner.md)]
+
 ## What is customer merge?
 
 Customer merge refers to the process that customers use to migrate their Human Resources (HR) environments from the standalone infrastructure to the finance and operations infrastructure as part of an infrastructure merge. Customers who have an existing finance and operations system can choose whether they want to maintain two separate environments or consolidate them into one system.

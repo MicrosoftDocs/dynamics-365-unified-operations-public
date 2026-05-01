@@ -1,5 +1,5 @@
 ---
-title: Enable multilanguage support for Store Commerce self-checkout (preview)
+title: Enable multilanguage support for Store Commerce self-checkout
 description: Learn how to configure and use multilanguage features in Microsoft Dynamics 365 Commerce Store Commerce self-checkout, including localization of button grids and screen layout tabs.
 author: anush6121
 ms.author: anvenkat 
@@ -9,10 +9,9 @@ ms.custom:
   - bap-template
 ms.reviewer: v-griffinc
 ---
-# Enable multilanguage support for Store Commerce self-checkout (preview)
+# Enable multilanguage support for Store Commerce self-checkout
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article explains how to configure and use multilanguage features in Microsoft Dynamics 365 Commerce Store Commerce self-checkout that help you streamline checkout for both customers and store associates.
 

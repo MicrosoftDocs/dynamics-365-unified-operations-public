@@ -6,20 +6,17 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 10/05/2020
+ms.date: 03/13/2026
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Germany
 ms.search.validFrom: 2020-01-01
-ms.search.form:
-ms.dyn365.ops.version: 10.0.16
 ---
 
 # Customer electronic invoices in Germany (DE-00022)
 
 [!include [banner](../../includes/banner.md)]
 
-To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format has been implemented.
+To comply with European Union (EU) Directive 2014/55/EU, Microsoft implemented the Germany-specific **xRechnung** format.
 
 This article explains how to set up and process customer electronic invoices in **xRechnung** format.
 
@@ -35,6 +32,5 @@ For more information about how to set up and use customer electronic invoices in
 
 - [Dynamics 365 Finance](emea-deu-cust-e-invoices.md)
 - [Dynamics AX 2012 R3](https://fix.lcs.dynamics.com/Issue/Details?kb=4494484&bugId=3979521)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

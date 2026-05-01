@@ -4,6 +4,8 @@ description: Learn about configuring the export to Azure Data Lake and configuri
 author: MilindaV2
 ms.author: johnmichalak
 ms.topic: install-set-up-deploy
+ms.custom: 
+  - bap-template
 ms.date: 01/16/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

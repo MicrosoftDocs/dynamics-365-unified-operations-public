@@ -3,10 +3,11 @@ title: Facade, sequence, and activities in tax integration
 description: Learn about the features and functions that must be implemented to integrate a new transaction, including overviews on the facade and sequence classes.
 author: Qiuchen-Ren
 ms.author: qire
-ms.topic: article
-ms.date: 04/25/2022
-ms.custom: bap-template
+ms.topic: how-to
+ms.date: 03/19/2026
 ms.reviewer: johnmichalak
+ms.custom: 
+  - bap-template
 ---
 
 # Facade, sequence, and activities in tax integration
@@ -51,13 +52,13 @@ if (!_document.isOK())
 }
 ```
 
-Inside the method, a sequence (`TaxIntegrationSequence`) is constructed and invoked. All activities are appended to the sequence in order.
+Inside the method, a sequence (`TaxIntegrationSequence`) is constructed and invoked. The method appends all activities to the sequence in order.
 
-As required, an exception is explicitly thrown at the end.
+As required, the method explicitly throws an exception at the end.
 
 ## Sequence
 
-The sequence (`TaxIntegrationSquence`) is a special activity that maintains a sequence of activities. When its `act` method is invoked, all activities are run in the order that they're appended in.
+The sequence (`TaxIntegrationSquence`) is a special activity that maintains a sequence of activities. When you invoke its `act` method, it runs all activities in the order that you append them.
 
 ```X++
 public final class TaxIntegrationSequence
@@ -68,30 +69,30 @@ public final class TaxIntegrationSequence
 }
 ```
 
-The following steps are required to use a sequence (`TaxIntegrationSequence`):
+To use a sequence (`TaxIntegrationSequence`), follow these steps:
 
-1. The `construct` method creates the sequence.
-2. The `appendActivitySequence`, `appendActivityOnDocument`, and `appendActivityOnLine` methods build up the sequence.
-3. The `act` method plays the sequence.
+1. Use the `construct` method to create the sequence.
+2. Use the `appendActivitySequence`, `appendActivityOnDocument`, and `appendActivityOnLine` methods to build up the sequence.
+3. Use the `act` method to play the sequence.
 
-Internally, the sequence maintains an activity list (`List`). It then enumerates that list upon invocation (`act`).
+Internally, the sequence maintains an activity list (`List`). It then enumerates that list when you invoke `act`.
 
-- The sequence calls the `shouldSkip` method of an activity to determine whether the activity should be skipped for the current document.
-- For `TaxIntegrationSequence` and `TaxIntegrationAbstractActivityOnDocument`, if the activity shouldn't be skipped, the `act` method is invoked directly.
-- For `TaxIntegrationAbstractActivityOnLine`, the sequence enumerates all `TaxIntegrationLineObject` objects in the document and invokes its `act` method. Charges are also implemented by the `TaxIntegrationLine` object. The `act` method is first invoked on the charges of the document. It's then invoked on the lines of the document, together with the charges on each line. For example, there are two charges and two lines on a document. At the same time, there are two charges on each line. In this case, the complete sequence will be as follows:
+- The sequence calls the `shouldSkip` method of an activity to determine whether to skip the activity for the current document.
+- For `TaxIntegrationSequence` and `TaxIntegrationAbstractActivityOnDocument`, if the activity isn't skipped, the sequence invokes the `act` method directly.
+- For `TaxIntegrationAbstractActivityOnLine`, the sequence enumerates all `TaxIntegrationLineObject` objects in the document and invokes its `act` method. Charges are also implemented by the `TaxIntegrationLine` object. The sequence first invokes the `act` method on the charges of the document. Then, it invokes the `act` method on the lines of the document, together with the charges on each line. For example, there are two charges and two lines on a document. At the same time, there are two charges on each line. In this case, the complete sequence is as follows:
 
     1. The first charge of the document
-    2. The second charge of the document
-    3. The first line of the document
-    4. The first charge of the first line
-    5. The second charge of the first line
-    6. The second line of the document
-    7. The first charge of the second line
-    8. The second charge of the second line
+    1. The second charge of the document
+    1. The first line of the document
+    1. The first charge of the first line
+    1. The second charge of the first line
+    1. The second line of the document
+    1. The first charge of the second line
+    1. The second charge of the second line
 
-`TaxIntegrationSequence` is intended to be used directly and is implemented as a concrete class that has a public `act` method.
+You can use `TaxIntegrationSequence` directly. It's a concrete class that has a public `act` method.
 
-The following examples shows the `actInternal` method for quick reference.
+The following example shows the `actInternal` method for quick reference.
 
 ```X++
 private void actInternal(TaxIntegrationDocumentObject _document)
@@ -149,17 +150,17 @@ private void actInternal(TaxIntegrationDocumentObject _document)
 
 An activity does the real work in an integration flow. It acts as a segment in the integration flow. The name of an activity describes its purpose.
 
-All activities are inherited from the same class, `TaxIntegrationAbstractActivity`. There are three types of activities:
+All activities inherit from the same class, `TaxIntegrationAbstractActivity`. There are three types of activities:
 
 - `TaxIntegrationSequence`
 - `TaxIntegrationAbstractActivityOnDocument`
 - `TaxIntegrationAbstractActivityOnLine`
 
-Each type of activity contains an `act` method and an `actInternal` method, but they accept different arguments. `TaxIntegrationAbstractActivityOnDocument` and `TaxIntegrationAbstractActivityOnLine` are intended to be extended. They are implemented as abstract classes that have an internal `act` method and an abstract `actInternal` method. Therefore, a new activity should extend one of these two abstract classes. The activity should implement its own `actInternal` method to hold the real logic of the activity. If the activity isn't applicable to all transactions/documents, it should implement its own `shouldSkip` method. `TaxIntegrationSequence` is intended to be used directly. It's implemented as a concrete class that has a public `act` method.
+Each type of activity contains an `act` method and an `actInternal` method, but they accept different arguments. `TaxIntegrationAbstractActivityOnDocument` and `TaxIntegrationAbstractActivityOnLine` are abstract classes that are intended to be extended. They have an internal `act` method and an abstract `actInternal` method. Therefore, a new activity should extend one of these two abstract classes. The activity should implement its own `actInternal` method to hold the real logic of the activity. If the activity isn't applicable to all transactions and documents, it should implement its own `shouldSkip` method. `TaxIntegrationSequence` is a concrete class that's intended to be used directly. It has a public `act` method.
 
 All three types of activities log events during the `act` method as required after `TaxIntegrationLogLevelUtility` is checked. The logging context is inherited from `TaxIntegrationAbstractActivity`. The following illustration shows the hierarchy of activities.
 
-![Activity hierarchy](../media/tax-integration-activity-hierarchy.png)
+:::image type="content" source="../media/tax-integration-activity-hierarchy.png" alt-text="Screenshot of the activity hierarchy.":::
 
 For more information about how to add a new activity, see [Add a new activity in tax integration](tax-integration-how-to-add-activity.md).
 
@@ -195,20 +196,20 @@ public abstract class TaxIntegrationAbstractActivityOnLine
 }
 ```
 
-A new line activity should implement the `actInternal` method to hold the logic of this activity. The `actInternal` method accepts a `TaxIntegrationLineObject` object as input and can manipulate data only on the given line object. However, because charges are also described as a `TaxIntegrationLineObject` object, charges will also be processed by the line activity. If an activity isn't applicable to **all lines** in the document, it should implement its own `shouldSkip` method. The `shouldSkip` method indicates whether the current activity should be skipped for **all lines** (including charges) in the document, because it accepts a `TaxIntegrationDocumentObject` object as input.
+A new line activity should implement the `actInternal` method to hold the logic for this activity. The `actInternal` method accepts a `TaxIntegrationLineObject` object as input and can manipulate data only on the given line object. However, because charges are also described as a `TaxIntegrationLineObject` object, the line activity also processes charges. If an activity isn't applicable to **all lines** in the document, it should implement its own `shouldSkip` method. The `shouldSkip` method accepts a `TaxIntegrationDocumentObject` object as input and indicates whether to skip the current activity for **all lines** (including charges) in the document.
 
 ### Current activities
 
 Here's the list of current activities, in the order of `TaxIntegrationFacade::calculate`:
 
 1. TaxIntegrationSettingRetrievalActivityOnDocument
-2. TaxIntegrationDataRetrievalActivityOnDocument
-3. TaxIntegrationCalculationActivityOnDocument
-4. TaxIntegrationErrorHandlingActivityOnDocument
-5. TaxIntegrationTaxCodeCheckActivityOnLine
-6. TaxIntegrationTaxIdActivityOnDocument
-7. TaxIntegrationListCodeActivityOnDocument
-8. TaxIntegrationCurrencyExchangeActivityOnDocument
-9. TaxIntegrationDataPersistenceActivityOnDocument
+1. TaxIntegrationDataRetrievalActivityOnDocument
+1. TaxIntegrationCalculationActivityOnDocument
+1. TaxIntegrationErrorHandlingActivityOnDocument
+1. TaxIntegrationTaxCodeCheckActivityOnLine
+1. TaxIntegrationTaxIdActivityOnDocument
+1. TaxIntegrationListCodeActivityOnDocument
+1. TaxIntegrationCurrencyExchangeActivityOnDocument
+1. TaxIntegrationDataPersistenceActivityOnDocument
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

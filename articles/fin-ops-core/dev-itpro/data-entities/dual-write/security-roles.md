@@ -4,6 +4,8 @@ description: Learn about the special security roles and permissions that are req
 author: ramasri
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: Developer

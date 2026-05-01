@@ -1,27 +1,28 @@
 ---
 title: Tax integration overview
-description: Access an overview and introduces the flow of Tax integration, including an overview on the TaxIntegrationFacade class, which realizes the flow of tax integration.
+description: This article provides an overview of the flow of Tax integration, including an overview on the TaxIntegrationFacade class, which realizes the flow of tax integration.
 author: Qiuchen-Ren
 ms.author: qire
-ms.topic: concept-article
-ms.date: 04/25/2022
-ms.custom: bap-template
+ms.topic: overview
+ms.date: 03/19/2026
 ms.reviewer: johnmichalak
+ms.custom: 
+  - bap-template
 ---
 
 # Tax integration overview
 
 [!include [banner](../../includes/banner.md)]
 
-Tax integration is a framework that's designed to replace the legacy tax calculation engine and, as required, call the [Tax Calculation service](global-tax-calcuation-service-overview.md). This article introduces the basic flow of Tax integration.
+Tax integration is a framework that replaces the legacy tax calculation engine and, as required, calls the [Tax Calculation service](global-tax-calcuation-service-overview.md). This article introduces the basic flow of tax integration.
 
 ## Entrance to tax integration
 
-The `TaxIntegrationFacade` class contains most of the code and functions of Tax integration. However, some additional code is required to enter the Tax integration flow before `TaxIntegrationFacade`, which is the entrance to Tax integration. This entrance code constructs a document object, `TaxIntegrationDocumentObject`, which is passed to `TaxIntegrationFacade`. The entrance code also prepares some basic information that's used in the following integration actions.
+The `TaxIntegrationFacade` class contains most of the code and functions for tax integration. However, some additional code is required to enter the tax integration flow before `TaxIntegrationFacade`. This code is the entrance to tax integration. The entrance code constructs a document object, `TaxIntegrationDocumentObject`, which it passes to `TaxIntegrationFacade`. The entrance code also prepares some basic information that's used in the following integration actions.
 
 ### TaxIntegrationFacade
 
-The `TaxIntegrationFacade` class realizes and controls the real flow of Tax integration by calling several classes, such as `TaxIntegration***ActivityOnDocument`. A `TaxIntegrationDocumentObject` object is passed from activity to activity. These activities perform their actions on the object in turn.
+The `TaxIntegrationFacade` class implements and controls the real flow of tax integration by calling several classes, such as `TaxIntegration***ActivityOnDocument`. The class passes a `TaxIntegrationDocumentObject` from activity to activity. These activities perform their actions on the object in turn.
 
 The following list shows all document-level activities that have the suffix "OnDocument." There are also line-level activities that work on `TaxIntegrationLineObject`. Those activities have the suffix "OnLine."
 

@@ -6,12 +6,14 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 03/11/2026
 ms.reviewer: johnmichalak
 ms.search.region: France
 ---
 
 # Structure of Dynamics 365 Finance data sources for the FEC
+
+[!include [banner](../../includes/banner.md)]
 
 In Microsoft Dynamics 365 Finance, you can generate the [FEC main](#fec-main) (Fichier des écritures comptables) file and the following annexes:
 
@@ -22,7 +24,7 @@ In Microsoft Dynamics 365 Finance, you can generate the [FEC main](#fec-main) (F
 
 You can also generate an FEC that includes customer and vendor fiscal year opening balances ([FEC Main Extended](#fec-main-extended)). Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.
 
-As explained in [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites.md), to accommodate article 100 of BOI-CF-IOR-60-40-20, the numbering must be continuous, consistent, and sequential. Because of these numbering requirements, we recommend that you set the **Continuous** option to **Yes** for number sequences. In some scenarios, the consistency of the number sequence for general ledger account entries (voucher) can be interrupted in the FEC Main file for the following reasons:
+As explained in [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites.md), to accommodate article 100 of BOI-CF-IOR-60-40-20, the numbering must be continuous, consistent, and sequential. Because of these numbering requirements, set the **Continuous** option to **Yes** for number sequences. In some scenarios, the consistency of the number sequence for general ledger account entries (voucher) is interrupted in the FEC Main file for the following reasons:
 
 - A general ledger account entry is created in accounting but isn't reported in the FEC when the amount is 0.00.
 - A voucher number is used for an inventory transaction that has a zero amount that isn't reflected in the general ledger account entries table.
@@ -162,7 +164,7 @@ The following table shows the **Vendors transactions annex for the period specif
 | 12     | Montant       | Numérique      | Le montant au débit/ au crédit | The debit/credit amount. | \$VendTrans/\$AbsAmount |
 | 13     | Sens          | Numérique      | Le sens: "D" au débit; "C" au crédit | The direction: **D** = debit, **C** = credit | \$VendTrans/\$Direction |
 | 14     | EcritureLet   | Alphanumérique | Le lettrage de l'écriture comptable (à blanc si non utilisé) | The lettering of the accounting entry. This field is blank if it isn't used. | \$VendTrans/LastSettleVoucher |
-| 15     | DateLet       | Date           | La date de lettrage (à blanc si non utilisé) | The lettering date. This field is blank if it isn't used. | \$VendTrans/LastSettleDate |
+| 15     | DateLet       | Date           | La date de lettrage (à blanc si non utilisé) | The lettering date. This field is blank if it's not used. | \$VendTrans/LastSettleDate |
 | 16     | ValidDate     | Date           | La date de validation de l'écriture comptable | The validation date of the accounting entry. | \$VendTrans/createdDateTime |
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$VendTrans/AmountCur |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | \$VendTrans/CurrencyCode |
@@ -194,11 +196,11 @@ The following table shows the **FEC main file including fiscal year opening bala
 
 ## <a id="missing-numbers-justification"></a>Missing numbers justification annex
 
-As of Finance version 10.0.23, the **Missing numbers justification** annex represents data that is collected from Finance for the following scenarios where the consistency of the number sequence for general ledger account entries (voucher) can be interrupted in the FEC Main file:
+Starting with Finance version 10.0.23, the **Missing numbers justification** annex shows data that Finance collects for the following scenarios where the consistency of the number sequence for general ledger account entries (voucher) can be interrupted in the FEC Main file:
 
 - **Scenario 1**: A general ledger account entry is created in accounting but isn't reported in the FEC when the amount is 0.00.
 - **Scenario 2**: A voucher number is used for an inventory transaction that has a zero amount that isn't reflected in the general ledger account entries table.
-- **Scenario 3**: A gap in the number sequence for general ledger account entries occurs because of a technical issue.
+- **Scenario 3**: A gap in the number sequence for general ledger account entries occurs because of a technical problem.
 
 Use the [Missing numbers justification](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the FEC Main file for the preceding reasons.
 
@@ -214,7 +216,7 @@ The following table shows the **FEC main file including fiscal year opening bala
 | 6      | CompteLib     | Alphanumérique | Le libellé de compte, conformément à la nomenclature du plan comptable français | The account name in accordance with the nomenclature of the French chart of accounts. | <p>$VouchersOmissions/$AccountName</p><ul><li>**Scenario 1:** GeneralJournalView_FR.\'getGeneralJournalAccountEntry()\'.getMainAccountName()</li><li>**Scenario 2:** Empty value</li><li>**Scenario 3:** Empty value</li></ul> |
 | 7      | CompAuxNum    | Alphanumérique | Le numéro de compte auxiliaire (à blanc si non utilisé) | The auxiliary account number. This field is blank if it isn't used. | <p>$VouchersOmissions/$CompteAuxNum</p><ul><li>**Scenario 1:** GeneralJournalView_FR.\'getGeneralJournalAccountEntry()\'.\'deCompteAuxNum_FR()\'</li><li>**Scenario 2:** Not applicable</li><li>**Scenario 3:** Not applicable</li></ul> |
 | 8      | CompAuxLib    | Alphanumérique | Le libellé de compte auxiliaire (à blanc si non utilisé) | The auxiliary account description. This field is blank if it isn't used. | <p>$VouchersOmissions/$CompteAuxLib</p><ul><li>**Scenario 1:** GeneralJournalView_FR.\'getGeneralJournalAccountEntry()\'.\'deCompteAuxLib_FR()\'</li><li>**Scenario 2:** Not applicable</li><li>**Scenario 3:** Not applicable</li></ul> |
-| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. If reference of the supporting document cannot be found, this field is populated with EcritureNum. | <p>$VouchersOmissions/$PieceRef</p><ul><li>**Scenario 1:** GeneralJournalView_FR.\'getGeneralJournalEntry()\'.\'dePieceNum_FR()\'</li><li>**Scenario 2:** InventTrans.VoucherPhysical</li><li>**Scenario 3:** Empty value</li></ul> |
+| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. If reference of the supporting document can't be found, this field is populated with EcritureNum. | <p>$VouchersOmissions/$PieceRef</p><ul><li>**Scenario 1:** GeneralJournalView_FR.\'getGeneralJournalEntry()\'.\'dePieceNum_FR()\'</li><li>**Scenario 2:** InventTrans.VoucherPhysical</li><li>**Scenario 3:** Empty value</li></ul> |
 | 10     | PieceDate     | Date           | La date de la pièce justificative | The date of the supporting document. | <p>$VouchersOmissions/$PieceDate</p><ul><li>**Scenario 1:** GeneralJournalView_FR.\'getGeneralJournalEntry()\'.\'dePieceDate_FR()\'</li><li>**Scenario 2:** InventTrans.DatePhysical</li><li>**Scenario 3:** Empty value</li></ul> |
 | 11     | EcritureLib   | Alphanumérique | Le libellé de l'écriture comptable | The wording of the accounting entry. | <p>$VouchersOmissions/$EcritureLib</p><ul><li>**Scenario 1:** GeneralJournalView_FR.\'getGeneralJournalAccountEntry()\'</li><li>**Scenario 2:** \'InventTrans_\' and  InventTrans.RecID</li><li>**Scenario 3:** Empty value</li></ul> |
 | 12     | Montant       | Numérique      | Le montant au débit/ au crédit | The debit/credit amount. | <p>$VouchersOmissions/$AbsAmount</p><ul><li>**Scenario 1:** GeneralJournalView_FR.GeneralJournalAccountEntryAccountingCurrencyAmount</li><li>**Scenario 2:** InventTrans.CostAmountPhysical</li><li>**Scenario 3:** \'0.00\'</li></ul> |
@@ -235,11 +237,11 @@ The value of the `JournalCode` field represents the text part of the prefix that
 
 ### JournalLib – Journal caption of the accounting entry
 
-The value of the `JournalLib` field is collected from several data sources in Finance:
+Finance collects the value of the `JournalLib` field from several data sources:
 
-1. If the transaction originates from a ledger journal transaction, the value is collected from the `Name` field of the `LedgerJournalName` table.
-2. If the transaction doesn't originate from a ledger journal transaction, the value is collected from the label in the French language of the `LedgerTransType` enumeration (enum) from the `JournalCategory` field of the `GeneralJournalEntry` table.
-3. If the `LedgerTransType` enum value isn't defined, Finance returns the description of `TransactionLog` from `TransactionLog.Type` in the French language that is related to `generalJournalEntry.CreatedTransactionId`.
+1. If the transaction originates from a ledger journal transaction, Finance collects the value from the `Name` field of the `LedgerJournalName` table.
+1. If the transaction doesn't originate from a ledger journal transaction, Finance collects the value from the label in the French language of the `LedgerTransType` enumeration (enum) from the `JournalCategory` field of the `GeneralJournalEntry` table.
+1. If the `LedgerTransType` enum value isn't defined, Finance returns the description of `TransactionLog` from `TransactionLog.Type` in the French language that is related to `generalJournalEntry.CreatedTransactionId`.
 
 ### EcritureNum – Number in a continuous sequence for the accounting entry
 
@@ -255,81 +257,83 @@ The `CompteNum` field represents the value of the `MainAccountID` field of the `
 
 ### CompteLib – Account name in accordance with the nomenclature of the French chart of accounts
 
-The `CompteLib` field represents the value in the French language of the `Name` field of the `MainAccount` table that is related to the `MainAccount` field of the `GeneralJournalAccountEntry` table that related to each reporting transaction. The French translation is collected from the `MainAccountTranslation` table record that is related to the record of the `MainAccount` table. If no translation is stored for a `MainAccount` table record, the value of the `Name` field of the `MainAccount` table is reported. In the Finance UI, this field value can be viewed in the **Account name** field of general ledger transactions.
+The `CompteLib` field represents the value in French for the `Name` field of the `MainAccount` table. This account name connects to the `MainAccount` field of the `GeneralJournalAccountEntry` table for each reporting transaction. The French translation comes from the related `MainAccountTranslation` table record. If no translation exists, the report uses the `Name` field value from the `MainAccount` table. In the Finance UI, users see this field value in the **Account name** field of general ledger transactions.
 
 ### CompAuxNum – Auxiliary account number
 
-The value of the `CompAuxNum` field is collected from several data sources in Finance:
+Finance collects the value of the `CompAuxNum` field from several data sources:
 
-1. For reporting transactions of the *Customer balance*, *Customer settlement*, or *Customer reimbursement* posting type, this field represents the `AccountNum` field of the `CustTable` table record that is related by `AccountNum` value to the `CustTrans` table record that is related by the value of the `subledgerVoucher` and `AccountingDate` fields to the record of the `GeneralJournalEntry` table, or related by the value of the `Voucher` and `AccountingDate` fields of `GeneralJournalEntry` table to the record of the `subledgerVoucherGeneralJournalEntry` table, where the `subledgerVoucherGeneralJournalEntry` table record is connected with the `GeneralJournalEntry` table record by `generalJournalEntry.RecId` value. In the Finance UI, this field value can be viewed in the **Account** field of customer master data.
-2. For reporting transactions of the *Vendor balance* or *Vendor settlement* posting type, this field represents the `AccountNum` field of the `VendTable` table record that is related by `AccountNum` value to the `VendTrans` table record that is related by the value of the `subledgerVoucher` and `AccountingDate` fields to the record of the `GeneralJournalEntry` table, or related by the value of the `Voucher` and `AccountingDate` fields of the `GeneralJournalEntry` table to the record of the `subledgerVoucherGeneralJournalEntry` table, where the `subledgerVoucherGeneralJournalEntry` table record is connected with the `GeneralJournalEntry` table record by `generalJournalEntry.RecId` value. In the Finance UI, this field value is shown in **Account** field of vendor master data.
-3. For reporting transactions of other posting types, this field value is blank.
+1. For reporting transactions of the *Customer balance*, *Customer settlement*, or *Customer reimbursement* posting type, this field represents the `AccountNum` field of the `CustTable` table record. The `CustTable` record connects by `AccountNum` value to the `CustTrans` table record. The `CustTrans` record connects by the value of the `subledgerVoucher` and `AccountingDate` fields to the record of the `GeneralJournalEntry` table. The `CustTrans` record can also connect by the value of the `Voucher` and `AccountingDate` fields of `GeneralJournalEntry` table to the record of the `subledgerVoucherGeneralJournalEntry` table. The `subledgerVoucherGeneralJournalEntry` table record connects with the `GeneralJournalEntry` table record by `generalJournalEntry.RecId` value. In the Finance UI, users see this field value in the **Account** field of customer master data.
+1. For reporting transactions of the *Vendor balance* or *Vendor settlement* posting type, this field represents the `AccountNum` field of the `VendTable` table record. The `VendTable` record connects by `AccountNum` value to the `VendTrans` table record. The `VendTrans` record connects by the value of the `subledgerVoucher` and `AccountingDate` fields to the record of the `GeneralJournalEntry` table. The `VendTrans` record can also connect by the value of the `Voucher` and `AccountingDate` fields of the `GeneralJournalEntry` table to the record of the `subledgerVoucherGeneralJournalEntry` table. The `subledgerVoucherGeneralJournalEntry` table record connects with the `GeneralJournalEntry` table record by `generalJournalEntry.RecId` value. In the Finance UI, users see this field value in the **Account** field of vendor master data.
+1. For reporting transactions of other posting types, this field value is blank.
 
 ### CompAuxLib – Auxiliary account description
 
-The `CompAuxLib` field represents the `Name` field of the `dirPartyTable` table record that is related to the value that is defined for the `CompAuxNum` field of the report, where the `dirPartyTable` table is connected to `CustTable` and `VendTable` via the `Party` field. In the Finance UI, this field value can be viewed in the **Name** field of customer or vendor master data.
+The `CompAuxLib` field represents the `Name` field of the `dirPartyTable` table record that relates to the value defined for the `CompAuxNum` field of the report. The `dirPartyTable` table connects to `CustTable` and `VendTable` via the `Party` field. In the Finance UI, users see this field value in the **Name** field of customer or vendor master data.
 
 ### PieceRef – Reference of the supporting document
 
-The value of the `PieceRef` field is collected from several data sources in Finance:
+Finance collects the value of the `PieceRef` field from several data sources:
 
-1. The `Invoice` field value of the `VendorTrans` table that is related to the `GeneralJournalEntry` table record by the `subledgerVoucher` and `AccountingDate` fields of the `GeneralJournalEntry` table. In the Finance UI, this field value can be viewed in the **Invoice** field of the invoice journal in the **Accounts payable** module.
-2. The `Invoice` field value of the `CustTrans` table that is related to the `GeneralJournalEntry` table record by the `subledgerVoucher` and `AccountingDate` fields of the `GeneralJournalEntry` table. In the Finance UI, this field value can be viewed in the **Invoice** field of the invoice journal in the **Accounts receivable** module.
-3. The `DocumentNumber` field or, if the `DocumentNumber` field is blank, the `subledgerVoucher` field of the `GeneralJournalEntry` table. In the Finance UI, this field value can be viewed in the **Document** field or, if the **Document** field is blank, the **Voucher** field of general ledger transactions.
+1. The `Invoice` field value of the `VendorTrans` table that relates to the `GeneralJournalEntry` table record by the `subledgerVoucher` and `AccountingDate` fields of the `GeneralJournalEntry` table. In the Finance UI, users see this field value in the **Invoice** field of the invoice journal in the **Accounts payable** module.
+1. The `Invoice` field value of the `CustTrans` table that relates to the `GeneralJournalEntry` table record by the `subledgerVoucher` and `AccountingDate` fields of the `GeneralJournalEntry` table. In the Finance UI, users see this field value in the **Invoice** field of the invoice journal in the **Accounts receivable** module.
+1. The `DocumentNumber` field or, if the `DocumentNumber` field is blank, the `subledgerVoucher` field of the `GeneralJournalEntry` table. In the Finance UI, users see this field value in the **Document** field or, if the **Document** field is blank, the **Voucher** field of general ledger transactions.
 
 ### PieceDate – Date of the supporting document
 
-The value of `PieceDate` field is collected from the `DocumentDate` or `AccountingDate` field of the `GeneralJournalEntry` table in Finance. In the Finance UI, this field value can be viewed in the **Document date** or **Date** field of general ledger transactions.
+Finance collects the value of the `PieceDate` field from the `DocumentDate` or `AccountingDate` field of the `GeneralJournalEntry` table. In the Finance UI, users see this field value in the **Document date** or **Date** field of general ledger transactions.
 
 ### EcritureLib – Wording of the accounting entry
 
-The value of the `EcritureLib` field is collected from several data sources in Finance:
+Finance collects the value of the `EcritureLib` field from several data sources:
 
 1. The `Text` field of the `GeneralJournalAccountEntry` table record that is related to each reporting transaction.
-2. If the `Text` field of the `GeneralJournalAccountEntry` table is blank, Finance collects the `Text` field value from the `TransactionLogTable` table that is connected by the `createdTransactionId` field of the `GeneralJournalAccountEntry` table.
-3. If both `Text` fields are blank, this field value is "N/A".
+1. If the `Text` field of the `GeneralJournalAccountEntry` table is blank, Finance collects the `Text` field value from the `TransactionLogTable` table. This table connects by the `createdTransactionId` field of the `GeneralJournalAccountEntry` table.
+1. If both `Text` fields are blank, this field value is "N/A".
 
-If char(10) or char(32) is included in the `Text` value in Finance, it's excluded for the value in reporting.
+If char(10) or char(32) is included in the `Text` value in Finance, reporting excludes these characters.
 
-In the Finance UI, this field value can be viewed in the **Description** field of general ledger transactions.
+In the Finance UI, you can view this field value in the **Description** field of general ledger transactions.
 
 ### Montant – Debit or credit amount
 
-The value of the `Montant` field represents the absolute value of the `AccountingCurrencyAmount` field of the `GeneralJournalAccountEntry` table record that is related to each reporting transaction. In the Finance UI, this field value can be viewed in the **Amount** field of general ledger transactions.
+The value of the `Montant` field represents the absolute value of the `AccountingCurrencyAmount` field of the `GeneralJournalAccountEntry` table record that is related to each reporting transaction. In the Finance UI, you can view this field value in the **Amount** field of general ledger transactions.
 
 ### Sens – Direction (D = debit, C = credit)
 
-The value of the `Sens` field is calculated in the following way:
+Finance calculates the value of the `Sens` field in the following way:
 
 1. If `AccountingCurrencyAmount` = **0** in the record that is related to the reporting transaction, this field represents the value of the `IsCredit` field of `GeneralJournalAccountEntry`.
-2. If `AccountingCurrencyAmount` \< 0 and `IsCorrection` = **No**, this field represents "C".
-3. If `AccountingCurrencyAmount` \> 0 and `IsCorrection` = **Yes**, this field represents "C".
-4. In other cases where `IsCredit` = **Yes** and `IsCorrection` = **Yes**, this field represents "D".
-5. In other cases where `IsCredit` = **No** and `IsCorrection` = **No**, this field represents "D".
-6. In all other cases, this field represents "C".
+1. If `AccountingCurrencyAmount` \< 0 and `IsCorrection` = **No**, this field represents "C".
+1. If `AccountingCurrencyAmount` \> 0 and `IsCorrection` = **Yes**, this field represents "C".
+1. In other cases where `IsCredit` = **Yes** and `IsCorrection` = **Yes**, this field represents "D".
+1. In other cases where `IsCredit` = **No** and `IsCorrection` = **No**, this field represents "D".
+1. In all other cases, this field represents "C".
 
 ### EcritureLet – Lettering of the accounting entry
 
-The value of the `EcritureLet` field is reported for general ledger transactions of the *Customer balance* or *Vendor balance* posting type. It's collected from several data sources in Finance:
+Finance reports the value of the `EcritureLet` field for general ledger transactions of the *Customer balance* or *Vendor balance* posting type. It collects this value from several data sources:
 
-1. If the value of the `JournalCategory` field of the `GeneralJournalEntry` table record is **Payment**, the payment voucher is represented in the `EcritureLet` field by the same value that is used in the `EcritureNum` field of the report.
-2. For other values of the `JournalCategory` field of the `GeneralJournalEntry` table record, Finance represents the value of the `OffsetTransVoucher` field of the `VendSettlement` table or `CustSettlement` table that is related by the `RecId`, `AccountNum` and `DataAreaID` fields to the `VendTrans` table or `CustTrans` table if there is a record in the `VendSettlement` table or `CustSettlement` table during the reporting period. In the Finance UI, this field value can be viewed in the **Voucher** field of general ledger transactions that were posted for the latest settled payment during the reporting period. If several vouchers are included in the settlement, they are separated by a comma.
+1. If the `JournalCategory` field of the `GeneralJournalEntry` table record is **Payment**, the `EcritureLet` field represents the payment voucher by using the same value that the report uses in the `EcritureNum` field.
+1. For other values of the `JournalCategory` field of the `GeneralJournalEntry` table record, Finance represents the value of the `OffsetTransVoucher` field of the `VendSettlement` table or `CustSettlement` table that is related by the `RecId`, `AccountNum`, and `DataAreaID` fields to the `VendTrans` table or `CustTrans` table if there's a record in the `VendSettlement` table or `CustSettlement` table during the reporting period. In the Finance UI, you can view this field value in the **Voucher** field of general ledger transactions that were posted for the latest settled payment during the reporting period. If the settlement includes several vouchers, they're separated by a comma.
 
 ### DateLet – Lettering date
 
-The value of the `DateLet` field is reported for general ledger transactions of the *Customer balance* or *Vendor balance* posting type. It's collected from several data sources in Finance:
+Finance reports the value of the `DateLet` field for general ledger transactions of the *Customer balance* or *Vendor balance* posting type. It collects this value from several data sources:
 
-1. If the value of the `JournalCategory` field of the `GeneralJournalEntry` table record is **Payment**, the field represents the same value as the `EcritureDate` field of the report.
-2. For other values of the `JournalCategory` field of the `GeneralJournalEntry` table record, Finance represents the latest value during the reporting period of the `TransDate` field from `CustSettlement.TransDate`, the `VendSettlement.TransDate` field (settlement posting date) from the `VendSettlement` table or `CustSettlement` table that is related to the record of the `VendSettlement` table or `CustSettlement` table that is related by the `RecId`, `AccountNum`, and `DataAreaID` fields to the `VendTrans` table or `CustTrans` table if there is a record in the `VendSettlement` table or `CustSettlement` table during the reporting period. In the Finance UI, this field value can be viewed in the **Date** field of the latest settled payment during the reporting period.
+1. If the `JournalCategory` field of the `GeneralJournalEntry` table record is **Payment**, the field represents the same value as the `EcritureDate` field of the report.
+1. For other values of the `JournalCategory` field of the `GeneralJournalEntry` table record, Finance represents the latest value during the reporting period of the `TransDate` field from `CustSettlement`, the `TransDate` field from `VendSettlement` (settlement posting date), or the `TransDate` field from `CustSettlement`. These tables relate to the record of the `VendSettlement` table or `CustSettlement` table that relates by the `RecId`, `AccountNum`, and `DataAreaID` fields to the `VendTrans` table or `CustTrans` table if there's a record in the `VendSettlement` table or `CustSettlement` table during the reporting period. In the Finance UI, you can view this field value in the **Date** field of the latest settled payment during the reporting period.
 
 ### ValidDate – Validation date of the accounting entry
 
-The `ValidDate` field represents the value of the `CreatedDateTime` field of the `GeneralJournalEntry` table record that is related to each reporting transaction. General ledger transactions are ordered by this date on the report of operating types. In the Finance UI, this field value can be viewed in the **Created date and time** field of general ledger transactions.
+The `ValidDate` field represents the value of the `CreatedDateTime` field of the `GeneralJournalEntry` table record that relates to each reporting transaction. The report of operating types orders general ledger transactions by this date. In the Finance UI, you can view this field value in the **Created date and time** field of general ledger transactions.
 
 ### Montantdevise – Amount in currency
 
-The `Montantdevise` field represents the value of the `TransactionCurrencyAmount` field of the `GeneralJournalAccountEntry` table record that is related to each reporting transaction. In the Finance UI, this field value can be viewed in the **Amount in transaction currency** field of general ledger transactions.
+The `Montantdevise` field represents the value of the `TransactionCurrencyAmount` field of the `GeneralJournalAccountEntry` table record that relates to each reporting transaction. In the Finance UI, you can view this field value in the **Amount in transaction currency** field of general ledger transactions.
 
 ### Idevise – Currency identifier
 
-The `Idevise` field represents the value of the `TransactionCurrencyCode` field of the `GeneralJournalAccountEntry` table record that is related to each reporting transaction. In the Finance UI, this field value can be viewed in the **Currency** field of general ledger transactions.
+The `Idevise` field represents the value of the `TransactionCurrencyCode` field of the `GeneralJournalAccountEntry` table record that relates to each reporting transaction. In the Finance UI, you can view this field value in the **Currency** field of general ledger transactions.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

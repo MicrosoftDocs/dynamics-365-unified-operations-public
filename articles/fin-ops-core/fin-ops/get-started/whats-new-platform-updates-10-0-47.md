@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.47 of finance and operations apps (Janu
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.47 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 01/27/2026
+ms.date: 03/19/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -30,6 +30,7 @@ This section lists the features included in this release when available. The art
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | System administration | Data tools for Dynamics 365 ERP MCP | New data tools are added to the Dynamics 365 ERP MCP server, enabling agents to perform standard data operations to create, read, update, and delete data in the finance and operations apps environment through data entities. Learn more in [Use Model Context Protocol for finance and operations apps](../../dev-itpro/copilot/copilot-mcp.md) | On by default |
+| System administration | Batch history logging options | A configurable option to skip persisting the **INFO** and **PARAMETERS** columns when writing to the batch history table, which provides database storage optimization and improved write performance. Learn more in [Batch history logging options](../../dev-itpro/sysadmin/batch-history-logging-options.md). | Feature flight |
 
 ## Feature enhancements included in this release
 

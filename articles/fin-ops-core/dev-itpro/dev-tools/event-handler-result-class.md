@@ -4,7 +4,7 @@ description: Learn about how to use EventHandlerResult classes with delegate met
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 03/05/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -17,13 +17,13 @@ ms.assetid: 3b2a9b85-f779-4358-b347-7b11a8e7960c
 
 [!include [banner](../includes/banner.md)]
 
-Delegate methods and delegate handler methods can be declared to support a request/response scenario, where the delegate calling logic requests the subscribers to provide a response. To support this scenario the **EventHandlerResult** class is most often passed as a parameter, and the delegate handler methods provide their result using one of the result methods on the class. However, the **EventHandlerResult** class can only contain a single result, so if multiple subscribers provide their individual result, the last respondent wins, and the results from the previous subscribers are overwritten.
+You can declare delegate methods and delegate handler methods to support a request/response scenario where the delegate calling logic requests the subscribers to provide a response. To support this scenario, you typically pass the **EventHandlerResult** class as a parameter, and the delegate handler methods provide their result by using one of the result methods on the class. However, the **EventHandlerResult** class can only contain a single result. If multiple subscribers provide their individual results, the last respondent wins and overwrites the results from the previous subscribers.
 
-Before the functionality described in this article was introduced (platform update 5), there was no mechanism to ensure that, at most, a single subscriber provided a result, and that no results were lost if there were multiple subscribers.
+Before the functionality described in this article was introduced (platform update 5), there was no mechanism to ensure that at most one subscriber provided a result and that no results were lost if there were multiple subscribers.
 
-## Ensuring, at most, one response
+## Ensuring at most one response
 
-In platform update 5, the **EventHandlerResult** class has an additional static constructor which ensures that the logic fails if more than one subscriber provides a result. The new constructor is named **newSingleResponse**. When instantiating an **EventHandlerResult** object using this method, the framework will throw an exception as soon as a second delegate handler method attempts to provide a result.
+In platform update 5, the **EventHandlerResult** class has an additional static constructor that ensures the logic fails if more than one subscriber provides a result. The new constructor is named **newSingleResponse**. When you instantiate an **EventHandlerResult** object by using this method, the framework throws an exception as soon as a second delegate handler method attempts to provide a result.
 
 ```xpp
 EventHandlerResult result = EventHandlerResult::newSingleResponse();
@@ -42,9 +42,9 @@ return EventHandlerResult::newWithResultValidator(EventHandlerSingleResponseVali
 
 ## Accept and reject request/response scenarios
 
-In certain request/response scenarios, the subscriber is only expected to provide their acceptance or rejection. Using the **EventHandlerResult** class to request acceptance/rejection can be confusing, if the subscriber is only expected to respond with a Boolean value. In a validation scenario, for example, should the subscriber only respond with Boolean false, when validation fails, or should the subscriber also respond with Boolean true, if validation succeeds? If the response is gathered using an **EventHandlerResult** object, then the second subscriber that validates and replies with Boolean true, might overwrite the Boolean false from the first subscriber.
+In certain request/response scenarios, the subscriber is only expected to provide their acceptance or rejection. Using the **EventHandlerResult** class to request acceptance/rejection can be confusing if the subscriber is only expected to respond with a Boolean value. In a validation scenario, for example, should the subscriber only respond with Boolean false when validation fails, or should the subscriber also respond with Boolean true if validation succeeds? If the response is gathered by using an **EventHandlerResult** object, the second subscriber that validates and replies with Boolean true might overwrite the Boolean false from the first subscriber.
 
-To mitigate this confusion, two new result type classes have been introduced in Platform update 5: **EventHandlerAcceptResult** and **EventHandlerRejectResult**.
+To mitigate this confusion, two new result type classes were introduced in Platform update 5: **EventHandlerAcceptResult** and **EventHandlerRejectResult**.
 
 When using the **EventHandlerAcceptResult** class, the delegate handler method can only respond by calling the **accept** method. When using the **EventHandlerRejectResult** class, only the **reject** method can be called.
 
@@ -65,7 +65,7 @@ public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(
 }
 ```
 
-The two new classes also contain a **newSingleResponse** static constructor for use in scenarios where, at most, one subscriber is allowed to respond with their rejection or acceptance. Whether any subscriber has responded can still be answered by querying the **hasResult** method, and the acceptance/rejection is queried by calling either the **isAccepted** or **isRejected** methods for the **EventHandlerAcceptResult** and **EventHandlerRejectResult** classes, respectively.
+The two new classes also contain a **newSingleResponse** static constructor for use in scenarios where, at most, one subscriber is allowed to respond with their rejection or acceptance. Whether any subscriber has responded can still be answered by querying the **hasResult** method. The acceptance/rejection is queried by calling either the **isAccepted** or **isRejected** methods for the **EventHandlerAcceptResult** and **EventHandlerRejectResult** classes, respectively.
 
 ```xpp
 boolean ret = false;

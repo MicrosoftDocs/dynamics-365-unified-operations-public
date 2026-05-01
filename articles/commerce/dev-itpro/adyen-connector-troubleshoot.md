@@ -2,7 +2,7 @@
 title: Troubleshoot Dynamics 365 Payment Connector for Adyen
 description: This article provides troubleshooting guidance for common issues related to the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 01/09/2026
+ms.date: 02/11/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -23,7 +23,7 @@ This article provides troubleshooting guidance for common issues related to the 
 
 ### General issues
 
-For all general issues, you should always consult the Store Commerce app or Internet Information Services (IIS) Hardware Station event logs first. You can find these logs found under the following nodes in the Microsoft Windows event log:
+For all general issues, always consult the Store Commerce app or Internet Information Services (IIS) Hardware Station event logs first. You can find these logs under the following nodes in the Microsoft Windows event log:
 
 - **Windows Logs \> Application \> Filter Current Log**</br>
 (On the **Event sources** drop-down list, select **Microsoft Dynamics - Store Commerce**.)
@@ -31,7 +31,7 @@ For all general issues, you should always consult the Store Commerce app or Inte
 
 ### Failing payment transactions
 
-When payment transactions aren't successfully processed through the Adyen payment terminal, the corresponding error messages in the Dynamics 365 POS contain a payment service provider (PSP) reference ID. The PSP reference ID is provided by Adyen to identify each transaction. Provide this reference ID when you contact Adyen support for help with specific transactions.
+When payment transactions aren't successfully processed through the Adyen payment terminal, the corresponding error messages in the Dynamics 365 POS contain a payment service provider (PSP) reference ID. Adyen provides the PSP reference ID to identify each transaction. Provide this reference ID when you contact Adyen support for help with specific transactions.
 
 ### The EFT terminal ID isn't set
 
