@@ -2,7 +2,7 @@
 title: Set up a legal entity and tax information for Venezuela
 description: Learn how to configure a legal entity and its tax information for Venezuela. 
 author: Fhernandez0088
-ms.date: 05/15/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

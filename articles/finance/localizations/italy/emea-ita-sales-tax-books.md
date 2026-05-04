@@ -4,7 +4,7 @@ description: Learn how to configure and generate Italian sales tax books, includ
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 03/04/2024
+ms.date: 05/01/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak

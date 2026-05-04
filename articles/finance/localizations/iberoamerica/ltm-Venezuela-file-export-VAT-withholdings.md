@@ -2,7 +2,7 @@
 title: Configure printing for the VAT Withholding report for Venezuela
 description: Learn how to configure printing for the VAT Withholding report for Venezuela.
 author: Cpicon85
-ms.date: 05/21/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
