@@ -4,7 +4,7 @@ description: Learn how to set up your system to dynamically select a printer whe
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 07/23/2024
+ms.date: 5/4/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLicensePlateLabel, WHSWorkUserdefaultLabelPrinterTable, WHSLocationDefaultLabelPrinter, WHSLabelLayout, WHSDocumentRoutingLayout, WHSPrinterStockType, WHSSysCorpNetPrinters
@@ -14,7 +14,7 @@ ms.search.form: WHSLicensePlateLabel, WHSWorkUserdefaultLabelPrinterTable, WHSLo
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up your system to dynamically select a printer when [license plate labels](print-license-plate-labels-using-label-layouts.md) and [container labels](print-container-labels.md) are printed.
+This article explains how to set up your system to dynamically select a printer when printing [license plate labels](print-license-plate-labels-using-label-layouts.md) and [container labels](print-container-labels.md).
 
 When dynamic printer selection is used, and a worker requests printing, the system selects a printer based on the current work user, warehouse, location, and/or zone. The warehouse manager can set up default printers for each work user, warehouse, location, and/or zone.
 
@@ -34,7 +34,7 @@ Before you can set up dynamic printer selection, you must configure your printer
 
 ### <a name="stock-type"></a>Set up printer stock types
 
-A *printer stock type* typically describes the type of paper (for example, the size) that a specific printer uses. It's also used to specify the type of paper that a specific label layout should be printed to.
+A *printer stock type* typically describes the type of paper, such as the size, that a specific printer uses. Use it to specify the type of paper that a specific label layout should print to.
 
 > [!IMPORTANT]
 > To use dynamic printer selection, you *must* set up a printer stock type for each relevant printer. You must also set up a printer stock type for each label layout that you want to use for dynamic printer selection.
@@ -45,10 +45,10 @@ Follow these steps to set up printer stock types.
 1. Create or select a stock type.
 1. For the new or selected stock type, set the following fields:
 
-    - **Printer stock type** – Enter a name for the printer stock type (for example, *A1*).
+    - **Printer stock type** – Enter a name for the printer stock type, such as *A1*.
     - **Description** – Enter a short description of the printer stock type.
 
-1. Repeat steps 2 and 3 until you've set up all the stock types that you need.
+1. Repeat steps 2 and 3 until you set up all the stock types that you need.
 1. On the Action Pane, select **Save**.
 
 ### Set the printer stock type for a label printer
@@ -57,8 +57,8 @@ Follow these steps to set the printer stock type for a label printer.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label printers**.
 1. Create or select a printer.
-1. For the new or selected printer, set the **Printer stock type** field to the relevant printer stock type. (For example, select one of the stock types that you set up in the previous section.) For information about the other settings that are available for a label printer, see [Set up a printer](../supply-chain-dev/label-printing-using-external-label-service.md#label-printers).
-1. Repeat steps 2 and 3 until you've set up all the stock types that you need.
+1. For the new or selected printer, set the **Printer stock type** field to the relevant printer stock type. For example, select one of the stock types that you set up in the previous section. For information about the other settings that are available for a label printer, see [Set up a printer](../supply-chain-dev/label-printing-using-external-label-service.md#label-printers).
+1. Repeat steps 2 and 3 until you set up all the stock types that you need.
 1. On the Action Pane, select **Save**.
 
 ### Set up a label layout, including the printer stock type
@@ -82,7 +82,7 @@ Follow these steps to configure the license plate label routing.
     - **Label layout ID** – Select the label layout that you set up in the previous section.
 
     > [!NOTE]
-    > If the **Document routing printers** FastTab includes a row where the printer name is specified (that is, the **Name** field isn't blank), dynamic printer selection won't be used. Instead, the specified printer will be used.
+    > If the **Document routing printers** FastTab includes a row where the printer name is specified (that is, the **Name** field isn't blank), dynamic printer selection isn't used. Instead, the specified printer is used.
 
 1. On the Action Pane, select **Save**.
 
@@ -93,7 +93,7 @@ After your printers and label layouts are set up, you can set up default label p
 Follow these steps to set up default label printers for each worker and/or location.
 
 1. Go to **Warehouse management \> Document routing \> Default label printers**.
-1. On the **Locations** tab, the grid shows the default label printers that are assigned to each location. For flows where the system can determine the location of a worker who requests printing, the printers that are set in this grid have priority (provided that the worker hasn't manually overridden the default printer selection). Use the toolbar buttons to add or remove rows as required. For each row, set the following fields:
+1. On the **Locations** tab, the grid shows the default label printers assigned to each location. For flows where the system can determine the location of a worker who requests printing, the printers that you set in this grid have priority (provided that the worker didn't manually override the default printer selection). Use the toolbar buttons to add or remove rows as required. For each row, set the following fields:
 
     - **Printer stock type** – Select the printer stock type that the row applies to.
     - **Warehouse** – Select the warehouse that includes the location.
@@ -101,14 +101,14 @@ Follow these steps to set up default label printers for each worker and/or locat
     - **Location scope** – Depending on the **Location scope type** value, select either the location or the zone that the row applies to.
     - **Printer name** – Select the default printer to use for the location or zone that the row applies to.
 
-1. On the **Users** tab, the grid shows the default label printers that are assigned to each worker in each warehouse. Use the toolbar buttons to add or remove rows as required. For each row, set the following fields:
+1. On the **Users** tab, the grid shows the default label printers that assigned to each worker in each warehouse. Use the toolbar buttons to add or remove rows as required. For each row, set the following fields:
 
     - **Printer stock type** – Select the printer stock type that the row applies to.
     - **User ID** – Select the user ID of the worker that the row applies to.
-    - **Warehouse** – Select the warehouse that the row applies to. You can set up multiple rows for workers who work in more than one warehouse. Leave this field blank to set the default printer that's used for a worker if no other, more specific row applies. When the worker requests printing, the system will select the printer that's most specific to the warehouse where the worker is signed in.
+    - **Warehouse** – Select the warehouse that the row applies to. You can set up multiple rows for workers who work in more than one warehouse. Leave this field blank to set the default printer that's used for a worker if no other, more specific row applies. When the worker requests printing, the system selects the printer that's most specific to the warehouse where the worker is signed in.
     - **Printer name** – Select the default printer to use for the combination of a worker, warehouse, and stock type on the row.
 
-1. On the **Devices** tab, the grid shows the default label printers that are assigned to mobile devices. Use the toolbar buttons to add or remove rows as required. For each row, set the following fields:
+1. On the **Devices** tab, the grid shows the default label printers assigned to mobile devices. Use the toolbar buttons to add or remove rows as required. For each row, set the following fields:
 
     - **Printer stock type** – Select the printer stock type that the row applies to.
     - **Mobile device** – Select the ID or friendly name of the device that the row applies to.
@@ -118,7 +118,7 @@ Follow these steps to set up default label printers for each worker and/or locat
 
 ## Create a menu item that lets workers override their default printer
 
-You can set up the Warehouse Management mobile app to let workers override the default printer that's assigned to them. Workers can then use their mobile device to scan a new printer name.
+Set up the Warehouse Management mobile app to let workers override the default printer that's assigned to them. Workers can use their mobile device to scan a new printer name.
 
 Create a new mobile device menu item, set the **Mode** field to *Indirect*, and set the **Activity code** field to *Override label printer*.
 
@@ -126,26 +126,26 @@ Create a new mobile device menu item, set the **Mode** field to *Indirect*, and 
 
 When a print job is run, the system uses the following sequence to identify which printer to use:
 
-1. If the current worker has manually overridden the printer, and the selected printer uses the printer stock type of the layout that's currently being printed, the system uses that printer (and then skips the remaining steps in this sequence).
+1. If the current worker manually overrides the printer, and the selected printer uses the printer stock type of the layout that's currently being printed, the system uses that printer (and then skips the remaining steps in this sequence).
 1. If no printer override exists, the system checks the default printer setup.
 
     1. If a default label printer that uses the required stock type is set up for the location or zone that's specified in the current flow (for example, when a container label is printed from the packing station), the system uses that printer.
     1. If a default label printer that uses the required stock type is set up for the mobile device the current flow is executing on (for example, forklift mounted mobile device and printer), the system uses that printer.
     1. Otherwise, the system uses the default label printer that uses the required stock type and that's set up for the current user and warehouse.
 
-1. If no printer is found, a fallback printer, if provided, is used. Fallback printers are configured for specific label printing scenarios, such as license plate label printing or container label printing. See [Related information](#related-information) for more information.
+1. If no printer is found, a fallback printer, if provided, is used. Fallback printers are configured for specific label printing scenarios, such as license plate label printing or container label printing. For more information, see [Related information](#related-information).
 1. If no override or default printer is found, no label is printed.
 
 ## Advanced scenarios
 
-You can also use the functionality described in this article for more advanced scenarios, such reprinting a license plate label that was created in one warehouse on a printer located in another warehouse.
+You can also use the functionality described in this article for more advanced scenarios, such as reprinting a license plate label created in one warehouse on a printer located in another warehouse.
 
 ### Reprint a label in a different warehouse
 
 One way to reprint a label in a different warehouse is to use the **Default label printers** page to set up a default label printer for a user, location, or device in another warehouse. For example, for a given **Printer stock type**, **User ID** *25* has **Printer name** set to *Printer25*. This means that when user *25* is reprinting labels that were originally created in warehouse *24*, they will now be sent to printer *Printer25* instead of the printer defined on the **Document routing** page for warehouse *24*.
 
 > [!IMPORTANT]
-> A valid document routing setup must exist based on the field values on the license plate label (for example, *Warehouse*), even when a different printer will be used later. For example, if the label was originally created in warehouse *24*, then there must be a document routing record for warehouse *24* with the same **Layout ID** and **Printer stock type** as the default printer for the other user, location, or device.
+> A valid document routing setup must exist based on the field values on the license plate label (for example, *Warehouse*), even when when a different printer is used later. For example, if the label was originally created in warehouse *24*, then there must be a document routing record for warehouse *24* with the same **Layout ID** and **Printer stock type** as the default printer for the other user, location, or device.
 
 ## Related information
 
