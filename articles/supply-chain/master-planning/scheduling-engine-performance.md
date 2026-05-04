@@ -151,15 +151,15 @@ The system organizes the constraints in levels to handle this main business rule
 
 The main steps of the engine algorithm are:
 
-1. Find sequences (job chains) which can be solved separately.
+1. Find sequences (job chains) that can be solved separately.
 1. Try to find an initial solution for the sequence at the highest constraint level.
     1. Sort the jobs in the sequence based on job goal and priorities, so the system can find a start job.
     1. Loop through the jobs in the following sequence:
         1. Find all constraints that need to be propagated and run propagation.
-        1. If all variables for the job are bound, then a solution for that job was found.
+        1. If all variables for the job are bound, then a solution for that job is found.
         1. If one of the variables can't be bound without violating the constraints, roll back the variable binding, try a different value in the domain (for resource variable), and rerun the constraint propagation.
-1. If no solution was found, remove all constraints on the current constraint level, lower the constraint level (if any lower levels are available), and retry solution search with the new set of constraint.
-1. If a feasible solution was found, start the optimization phase, which tries to find a better solution until the optimization timeout is reached or all resource combinations are exhausted.
+1. If no solution is found, remove all constraints on the current constraint level, lower the constraint level (if any lower levels are available), and retry solution search with the new set of constraint.
+1. If a feasible solution is found, start the optimization phase, which tries to find a better solution until the optimization timeout is reached or all resource combinations are exhausted.
 
 The constraint solver doesn't account for the specifics of the scheduling algorithm. The "magic" happens in the definition and combination of the various constraints.
 
@@ -232,7 +232,6 @@ On the **Resource requirements** tab on the route operation, you can specify the
 The resource group's capacity for a capability is the sum of the capacity for all resources in the resource group that have the capability in question. If a resource in the group has a capability, the engine considers it no matter what level of the capacity is required.
 
 In operations scheduling, the available capacity for a certain capability for a resource group is reduced when it's loaded with an operation that requires the capability in question. If the operation requires more than one capability, the capacity is reduced for all required capabilities.
-
 
 For each date, the required calculation is:
 
