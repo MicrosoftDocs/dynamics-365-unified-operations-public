@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/25/2026
+ms.date: 05/04/2026
 ms.custom:
   - bap-template
 ms.collection:
@@ -40,9 +40,9 @@ To understand how a given setup affects performance, it's important to know how 
 
 The basic process of scheduling an order consists of three main steps:
 
-- **Loading data** - X++ data models transform into the engine's internal data model as jobs and constraints.
-- **Scheduling** - The engine processes the given model and constraints to generate a result. It requests working time information and existing capacity reservations from X++ as needed.
-- **Save data** - X++ code processes the engine result, in the form of job capacity reservation slots, to save capacity reservations and update the start and end times of the jobs, operation, or order.
+- **Loading data** – X++ data models transform into the engine's internal data model as jobs and constraints.
+- **Scheduling** – The engine processes the given model and constraints to generate a result. It requests working time information and existing capacity reservations from X++ as needed.
+- **Save data** – X++ code processes the engine result, in the form of job capacity reservation slots, to save capacity reservations and update the start and end times of the jobs, operation, or order.
 
 ## Load data into the engine
 
@@ -251,10 +251,10 @@ To get specific details of the input and output of the scheduling process, enabl
 
 On this page, select **Enable logging** on the Action Pane and then run the scheduling for the production order. When complete, return to the **Scheduling tracing cockpit** page and select **Disable logging** on the Action Pane. Refresh the page, and a new line appears in the grid. Select the new line, and then select **Download** on the Action Pane. This will give you a .zip compressed folder containing the following files:
 
-- **Log.txt** - This is the log file that describes the steps the engine goes through. It's detailed and can be overwhelming, but when experimenting with the route setup to resolve performance problems, look for the time difference between the first and last line. This shows the exact time the scheduler spent.
-- **XmlModel.xml** - This contains the model that is built in X++ and that the engine operates on. The `JobId` used in the file correlates to the `RecId` from the source table containing the jobs (`ReqRouteJob` or `ProdRouteJob`). In this file, check that the dates in `ConstraintJobStartsAt` and `ConstraintJobEndsAt` are as expected, the `JobGoal` property is set correctly, and the jobs are related through the `JobLink` constraints.
-- **XmlSlots.xml** - This contains all the working times and capacity reservations that the engine has requested. The calendar working times and reservations will only be requested by the engine for the time periods where it tries to place the jobs (and an extra buffer), so if the file contains times very far in the future, it might be an indication of a problem with the setup. The `ResourceProperty` nodes display the resource group and capabilities associated with each resource, along with the relevant time periods.
-- **Result.xml** - This contains the result of the scheduling run.
+- **Log.txt** – This is the log file that describes the steps the engine goes through. It's detailed and can be overwhelming, but when experimenting with the route setup to resolve performance problems, look for the time difference between the first and last line. This shows the exact time the scheduler spent.
+- **XmlModel.xml** – This contains the model that is built in X++ and that the engine operates on. The `JobId` used in the file correlates to the `RecId` from the source table containing the jobs (`ReqRouteJob` or `ProdRouteJob`). In this file, check that the dates in `ConstraintJobStartsAt` and `ConstraintJobEndsAt` are as expected, the `JobGoal` property is set correctly, and the jobs are related through the `JobLink` constraints.
+- **XmlSlots.xml** – This contains all the working times and capacity reservations that the engine has requested. The calendar working times and reservations will only be requested by the engine for the time periods where it tries to place the jobs (and an extra buffer), so if the file contains times very far in the future, it might be an indication of a problem with the setup. The `ResourceProperty` nodes display the resource group and capabilities associated with each resource, along with the relevant time periods.
+- **Result.xml** – This contains the result of the scheduling run.
 
 The tracing functionality adds significant performance overhead, so use it only to investigate scheduling specific orders in a controlled manner. If it's turned on during a master planning run, it will quickly reach its size limit and stop.
 
@@ -325,15 +325,15 @@ The value for **Optimization attempts timeout** controls how many seconds can at
 
 ## Common job scheduling errors
 
-If you encounter errors during job scheduling, the following table lists known issues and links to their resolution guides.
+The following table lists known job scheduling errors with links to information that can help you resolve them.
 
 | Error message | Resolution |
 |---|---|
-| *Planned production order must be scheduled before it can be firmed* | [Learn how to resolve this issue](/troubleshoot/dynamics-365/supply-chain/planning/planned-order-must-be-scheduled) |
-| *Production scheduling doesn't consider the safety margins* | [Learn how to resolve this issue](/troubleshoot/dynamics-365/supply-chain/planning/production-schedule-not-consider-safety-margins) |
-| *Master planning is scheduling more than the available capacity* | [Learn how to resolve this issue](/troubleshoot/dynamics-365/supply-chain/planning/master-planning-not-respect-capacity-limitations) |
-| *Not enough capacity could be found* | [Learn how to resolve this issue](/troubleshoot/dynamics-365/supply-chain/planning/not-enough-capacity-error) and [understand finite capacity scheduling](not-enough-capacity-error-resolution.md) |
-| *The delay value isn't updated when you reschedule a planned order* | [Learn how to resolve this issue](/troubleshoot/dynamics-365/supply-chain/planning/delay-value-not-updated) |
+| *Planned production order must be scheduled before it can be firmed* | [Planned production order must be scheduled before it can be firmed](/troubleshoot/dynamics-365/supply-chain/planning/planned-order-must-be-scheduled) |
+| *Production scheduling doesn't consider the safety margins* | [Production scheduling doesn't consider the safety margins](/troubleshoot/dynamics-365/supply-chain/planning/production-schedule-not-consider-safety-margins) |
+| *Master planning is scheduling more than the available capacity* | [Master planning is scheduling more than the available capacity](/troubleshoot/dynamics-365/supply-chain/planning/master-planning-not-respect-capacity-limitations) |
+| *Not enough capacity could be found* | [Not enough capacity could be found](/troubleshoot/dynamics-365/supply-chain/planning/not-enough-capacity-error)<br><br>[Fix the "Not enough capacity could be found" scheduling engine error](not-enough-capacity-error-resolution.md) |
+| *The delay value isn't updated when you reschedule a planned order* | [The delay value isn't updated when you reschedule a planned order](/troubleshoot/dynamics-365/supply-chain/planning/delay-value-not-updated) |
 
 ## Related information
 
@@ -341,4 +341,3 @@ If you encounter errors during job scheduling, the following table lists known i
 - [Calculate requested ship dates for purchase orders](supplier-requested-confirmed-dates.md)
 - [Date and time parameters used by Planning Optimization](planning-optimization/date-time-used.md)
 - [Safety margins](planning-optimization/safety-margins.md)
-
