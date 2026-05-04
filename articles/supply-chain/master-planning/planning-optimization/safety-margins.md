@@ -181,7 +181,7 @@ This behavior applies independently at each level in the supply chain. If a bill
 To use a soft issue margin, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
-- The feature named *Soft issue margins with Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature named *Soft issue margins with Planning Optimization* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Enable soft issue margin for a coverage group
 
