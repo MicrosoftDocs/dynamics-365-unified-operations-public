@@ -111,9 +111,16 @@ To set up POS, follow these steps:
 
 7. Select **Save**.
 
-    > [!NOTE]
-    > You can also use the **New** button to create multiple payment connectors. In this way, you can take advantage of the solution's support for multiple connectors. You can then have different payment connectors for different payment methods. For example, all credit cards can be processed through one connector, but gift cards can be processed through a different connector.
+### Define the acceptable length for gift card number (Optional)
+Some card providers such as SVS support multiple gift card lengths and to ensure that the payment terminal accepts the desired gift card length you can define the minimum and maximum allowed length for the gift cards. To do so for the **Adyen connector**, add the following properties in the **Custom settings** property of the Adyen connector in the Hardware profile:
 
+~~~
+{"UnifiedPaymentsWorkflow_GiftCardSkipBalanceCheck": true,   "GiftCardMinLength": "13",   "GiftCardMaxLength": "19",   "GiftCardCardMask": "****-****-****-****-***", "EnableExternalGiftCardCustomLength" : true}
+~~~
+> [!Note]
+> Adyen does not support Balance inquiry for gift cards with variable lengths.
+
+    
 ### Select when the balance is made available on the gift cards
 
 By default, the balance on gift cards is added immediately after a cashier performs a relevant gift card operation on the transaction, before the customer completes payment. If the customer changes their mind, the cashier must void the gift card operation, which results in unnecessary API calls to the gift card processor. These unnecessary API calls introduce business risk because it may take several seconds for the balance to be reverted.
