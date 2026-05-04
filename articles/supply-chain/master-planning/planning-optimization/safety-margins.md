@@ -160,6 +160,8 @@ This situation usually occurs when you sell an item that has an issue margin fro
 
 - **If on-hand supply doesn't exist in WH13** – If there's no on-hand supply, and WH13 is to be replenished by other means (such as a purchase order), then the system applies the issue margin between the transfer order receipt date and the purchase order receipt date.
 
+<a name="soft-issue-margin"></a>
+
 ## Soft issue margin (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -185,13 +187,11 @@ To use a soft issue margin, your system must meet the following requirements:
 
 ### Enable soft issue margin for a coverage group
 
-To enable the soft issue margin for a coverage group, follow these steps:
+You enable soft issue margin at the coverage group level. To enable the soft issue margin for a coverage group, follow these steps:
 
 1. Go to **Master planning** \> **Setup** \> **Coverage groups**.
-2. Select the coverage group.
-3. On the **Other** FastTab, set the **Soft issue margin** option to *Yes*.
-
-You can only enable soft issue margin at the coverage group level.
+1. Select the coverage group.
+1. On the **Other** FastTab, set the **Soft issue margin** option to *Yes*.
 
 ### Example 1: Issue margin is reduced to avoid delay
 
@@ -214,7 +214,7 @@ The demand requirement date is September 24. Without the soft issue margin, the 
 
 With soft issue margin enabled, the system ignores the issue margin entirely at both levels because the demand requirement date is already in the past. The delay is surfaced as the difference between the demand requirement date (September 24) and the earliest possible planned order date (October 1). The issue margin doesn't add to the delay.
 
-### Greedy application across multi-level supply chains
+### Greedy application across multilevel supply chains
 
 The soft issue margin is applied *greedily* along the supply chain, starting from the demand side. The first level in the chain (closest to the original demand) consumes as much of the available issue margin as possible. Subsequent levels (further from the demand, closer to the supply source) receive whatever margin remains.
 
@@ -232,7 +232,7 @@ Greedy application of soft issue margins can lead to situations where the requir
 
 The following example illustrates the known limitation.
 
-:::image type="content" source="media/soft-issue-margin-video-generation.gif" alt-text="GIF showing the known limitation of soft issue margin.":::
+:::image type="content" source="media/soft-issue-margin-video-generation.gif" alt-text="GIF showing the known limitation of soft issue margin." lightbox="media/soft-issue-margin-video-generation.gif":::
 
 Example setup:
 

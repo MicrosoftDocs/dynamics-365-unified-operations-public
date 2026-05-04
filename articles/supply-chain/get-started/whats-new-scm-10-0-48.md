@@ -29,6 +29,7 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
+| Master planning | Soft issue margins with Planning Optimization (preview) | [Soft issue margin (preview)](../master-planning/planning-optimization/safety-margins.md#soft-issue-margin) | Feature management:<br>*Soft issue margins with Planning Optimization* |
 | Procurement and sourcing | Manage the downstream impact of PO changes with Procurement Agent impact analysis | *Coming soon* | Feature management:<ul><li>*(Production ready preview) Agent management*</li><li>*(Production-ready preview) Procurement Agent - Impact analysis*</li></ul> |
 | Procurement and sourcing | Try out the *updates from vendors* feature without a complete email setup | [Try out the *updates from vendors* feature without a complete email setup (production ready preview)](../procurement/procurement-agent-supplier-com-try-out.md) |  Enabled by default |
 | Warehouse management | Cluster picking strategy | [Cluster picking strategy](../warehousing/set-up-cluster-picking.md#cluster-picking-strategy) | Enabled by default |
