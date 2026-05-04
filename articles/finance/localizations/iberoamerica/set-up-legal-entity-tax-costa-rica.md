@@ -4,7 +4,7 @@ description: Learn how to set up a legal entity and tax information for a compan
 author: Cpicon85
 ms.author: v-cpicon 
 ms.topic: how-to
-ms.date: 10/12/2023
+ms.date: 04/30/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -20,20 +20,20 @@ Before you begin, open the **Feature management** workspace, and verify that the
 ## Create a legal entity
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, create a legal entity, and set the country for the address to Costa Rica. Some functionality is enabled only for Costa Rica. Examples include specific tax reports or electronic invoices.
-2. In the address setup, set up the Costa Rican territorial organization, and configure **State** as **Provincia**, **County** as **Cantón** and **City** as **Distrito**.
-3. Go to **Organization administration** \> **Setup** \> **LATAM** \> **LATAM parameters**.
-4. On the **Concept and notes** tab, in the **Legal entity** section, set a field to **Activity** to complete that information in the legal entity tax and legal information.
+1. In the address setup, set up the Costa Rican territorial organization, and configure **State** as **Provincia**, **County** as **Cantón**, and **City** as **Distrito**.
+1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **LATAM parameters**.
+1. On the **Concept and notes** tab, in the **Legal entity** section, set the field to **Activity** to complete that information in the legal entity tax and legal information.
 
 ## Set up tax information
 
-1. [Create a document class letter](ltm-core-document-class-letter.md) without a prefix. This document class letter will be used in taxpayer and document class configurations. 
-2. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
-3. Select **New**, and then, in the **Overview** section, in the **Tax ID type** field, enter **CJ** (Cedula Jurídica), which is one of the tax ID types for Costa Rica.
-4. In the **Format** field, enter **XXXXXXXX-X**. For more information, see [Tax ID types for Latin America](ltm-core-tax-id-type.md).
-5. Go to **Organization administration** \> **Global address book** \> **Addresses**, select the country where the company is located, and then select **LATAM** to add the **CJ** tax ID type. For more information, see [Address setup for Latin America](ltm-core-address-setup.md).
-6. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Taxpayer type**, and create a **Persona juridica** record that represents the organization.
-7. Add the tax ID type and the document class letter that you created earlier. For more information, see [Taxpayer types for Latin America](ltm-core-taxpayer-type.md).
-8. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and then, in the **LATAM** section, enter the following entity tax and legal information:
+1. [Create a document class letter](ltm-core-document-class-letter.md) without a prefix. This document class letter is used in taxpayer and document class configurations. 
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Tax ID type**.
+1. Select **New**, and then, in the **Overview** section, in the **Tax ID type** field, enter **CJ** (Cedula Jurídica), which is one of the tax ID types for Costa Rica.
+1. In the **Format** field, enter **XXXXXXXX-X**. For more information, see [Tax ID types for Latin America](ltm-core-tax-id-type.md).
+1. Go to **Organization administration** > **Global address book** > **Addresses**, select the country where the company is located, and then select **LATAM** to add the **CJ** tax ID type. For more information, see [Address setup for Latin America](ltm-core-address-setup.md).
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Taxpayer type**, and create a **Persona juridica** record that represents the organization.
+1. Add the tax ID type and the document class letter that you created earlier. For more information, see [Taxpayer types for Latin America](ltm-core-taxpayer-type.md).
+1. Go to **Organization administration** > **Organizations** > **Legal entities**, and then, in the **LATAM** section, enter the following entity tax and legal information:
 
     - In the **Taxpayer type** field, select **Persona juridica** to represent an organization.
     - In the **Based in country/region** field, select **Costa Rica**.

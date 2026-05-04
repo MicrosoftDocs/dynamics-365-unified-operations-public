@@ -3,8 +3,8 @@ title: New GSTR Offline Tool for ANX-1 and Purchase Register
 description: Learn about how to generate GSTR offline return format ANX-1 and the Purchase Register according to the new prototype that was released by the government.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 03/02/2021
+ms.topic: how-to
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: India
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-In the newly proposed system for Goods and Services Tax Return (GSTR) filing, the taxpayer will have to file Form GST RET-1 (Normal), Form GST RET-2 (Sahaj), or Form GST RET-3 (Sugam) either monthly or quarterly. The Annexure of Supplies (GST ANX-1) and the Annexure of Inward Supplies (GST ANX-2) will be filed as part of these returns.
+In the newly proposed system for Goods and Services Tax Return (GSTR) filing, the taxpayer files Form GST RET-1 (Normal), Form GST RET-2 (Sahaj), or Form GST RET-3 (Sugam) either monthly or quarterly. The Annexure of Supplies (GST ANX-1) and the Annexure of Inward Supplies (GST ANX-2) are filed as part of these returns.
 
 GST ANX-1 contains details about all outward and inward supplies that are liable for tax on the basis of reverse charges. These outward and inward supplies include imports and the inward supply of goods from special economic zones (SEZs). GST ANX-2 contains details about inward supplies only. These details are automatically filled in, mainly from suppliers' GST ANX-1. GST ANX-1 also contains details that are automatically filled in from Form GSTR-5 and Form GSTR-6.
 
@@ -24,9 +24,9 @@ The taxpayer must provide details about the inward supplies that are listed in G
 
 Based on the details that are uploaded in GST ANX-1, and the actions that the taxpayer takes in GST ANX-2, the relevant fields in Form GST RET-1 are automatically updated. The taxpayer can then view and enter details in the relevant columns, save the information, and download a copy of the form in PDF format.
 
-The Goods and Services Tax Network (GSTN) has released a trial version of the New Returns Offline Tool for Form GST ANX-1, Form GST ANX-2 (the Matching Tool is built in), and a template for the Purchase Register. The Purchase Register is used to import Purchase Register data so that it can be matched with GST ANX-2 data.
+The Goods and Services Tax Network (GSTN) released a trial version of the New Returns Offline Tool for Form GST ANX-1, Form GST ANX-2 (the Matching Tool is built in), and a template for the Purchase Register. The Purchase Register is used to import Purchase Register data so that it can be matched with GST ANX-2 data.
 
-This article provides information about how to set up and use Microsoft Dynamics 365 Finance to generate comma-separate values (CSV) files by using the New GSTR Offline Tool. It includes information about how to import the configuration, generate GST ANX-1, and generate the Purchase Register.
+This article provides information about how to set up and use Microsoft Dynamics 365 Finance to generate comma-separated values (CSV) files by using the New GSTR Offline Tool. It includes information about how to import the configuration, generate GST ANX-1, and generate the Purchase Register.
 
 Generated GST ANX-1 and Purchase register reports are supported in the following version:
 
@@ -41,12 +41,12 @@ The solution that supports the reporting capabilities of the New Returns Offline
 Complete the following tasks to prepare Finance to report GST ANX-1:
 
 1. Import and set up ER configurations.
-2. Map the reporting configuration in the tax setup.
-3. Provide report data for report generation.
+1. Map the reporting configuration in the tax setup.
+1. Provide report data for report generation.
 
     - Generate the ANX-1 report which contains 10 CSV files.
 
-4. Provide report data for report generation:
+1. Provide report data for report generation:
 
     - Generate the Purchase Register in a Microsoft Excel file format.
 
@@ -58,7 +58,7 @@ Complete the following tasks to prepare Finance to report GST ANX-1:
 
 ## Import and set up ER configurations
 
-To prepare Finance for GSTR reporting, you must import the following versions of ER configurations, or later versions, in the order that they are listed in.
+To prepare Finance for GSTR reporting, import the following versions of ER configurations, or later versions, in the order that they're listed.
 
 | ER configuration name           | Type               | Format | Version |
 |---------------------------------|--------------------|--------|---------|
@@ -78,10 +78,10 @@ To prepare Finance for GSTR reporting, you must import the following versions of
 | GSTR-1 (new)                    | Format (exporting) | CSV    |   N/A   |
 | GSTR-2 (new)                    | Format (exporting) | CSV    |   N/A   |
 
-Import the latest versions of these configurations. The description of each configuration version usually includes information about the changes that were introduced in that version.
+Import the latest versions of these configurations. The description of each configuration version usually includes information about the changes that the version introduces.
 
 > [!NOTE]
-> After all the ER configurations from the preceding table are imported, you must map the report configuration in the tax setup.
+> After you import all the ER configurations from the preceding table, map the report configuration in the tax setup.
 
 | Name                          | Version | Report controller            | Description (Pl)                                             |
 |-------------------------------|---------|------------------------------|--------------------------------------------------------------|
@@ -119,7 +119,7 @@ Import the latest versions of these configurations. The description of each conf
 Follow these steps to load the report configuration into workspaces.
 
 1. Go to **Workspaces \> Electronic reporting**, and select the **Reporting configurations** tile.
-2. On the **Configurations** page, select **Exchange \> Load from XML file**, and load the following configurations:
+1. On **Configurations**, select **Exchange \> Load from XML file**, and load the following configurations:
 
     - GSTReturnsGovt.version.19
     - GST Returns govt. model mapping.version.19.12
@@ -127,40 +127,40 @@ Follow these steps to load the report configuration into workspaces.
     - GSTR1GovtCSV.version.19.10
     - Purchase Register.version.19.7
 
-3. Import the configuration files in the same order that you loaded them in.
+1. Import the configuration files in the same order that you loaded them.
 
-![Configurations page.](../media/New-Offline-Tool-004.PNG)
+:::image type="content" source="../media/New-Offline-Tool-004.PNG" alt-text="Screenshot of the Configurations page.":::
 
 ### Map the report configuration in the tax setup
 
 Follow these steps to map the report configuration in the tax setup.
 
 1. Go to **Tax \> Setup \> Tax configuration \> Tax setup**, and select **Configurations**.
-2. On the **Configurations** page, on the **Reporting configurations** tab, select the report configuration, and then select the **Select** check box.
+1. On the **Configurations** page, on the **Reporting configurations** tab, select the report configuration, and then select the **Select** check box.
 
-    ![Reporting configurations tab on the Configurations page.](../media/New-Offline-Tool-005.PNG)
+    :::image type="content" source="../media/New-Offline-Tool-005.PNG" alt-text="Screenshot of the Reporting configurations tab on the Configurations page.":::
 
-3. In the **Report data provider** field, select a value.
-4. Select the **Close** button.
+1. In the **Report data provider** field, select a value.
+1. Select the **Close** button.
 
 > [!NOTE]
-> If you don't select a report in the **Report controller** field, the report won't be available for selection under **Sales tax reports \> India** in step 1 of the procedures in the next section.
+> If you don't select a report in the **Report controller** field, the report isn't available for selection under **Sales tax reports \> India** in step 1 of the procedures in the next section.
 
 ## Generate the GST ANX-1 and Purchase Register reports
 
 ### GST ANX-1 Govt. Offline Tool report data
 
-1. Go to **Tax \> Sales tax reports \> India \> GER export to GSTR CSV**.
-2. In the **GER export to GSTR CSV** dialog box, in the **From date** and **To date** fields, define the period that the generated report should include.
-3. In the **Registration number** field, select the GSTIN registration number.
-4. In the **Configuration** field, select **GST ANX-1 Govt. Offline Tool**.
-5. In the **File name** field, enter a name for the file to save the report in CSV format.
+1. Go to **Tax > Sales tax reports > India > GER export to GSTR CSV**.
+1. In the **GER export to GSTR CSV** dialog box, enter the period for the report in the **From date** and **To date** fields.
+1. Select the GSTIN registration number in the **Registration number** field.
+1. Select **GST ANX-1 Govt. Offline Tool** in the **Configuration** field.
+1. Enter a name for the file in the **File name** field to save the report in CSV format.
 
-    ![GER export to GSTR CSV dialog box for the ANX-1 report.](../media/New-Offline-Tool-006.PNG)
+    :::image type="content" source="../media/New-Offline-Tool-006.PNG" alt-text="Screenshot of the GER export to GSTR CSV dialog box for the ANX-1 report.":::
 
-6. Select **OK**.
+1. Select **OK**.
 
-The GST ANX-1 report is generated in CSV format. It will include a total of 10 worksheets:
+The GST ANX-1 report is generated in CSV format. It includes a total of 10 worksheets:
 
 - B2C
 - B2B
@@ -173,23 +173,23 @@ The GST ANX-1 report is generated in CSV format. It will include a total of 10 w
 - IMPGSEZ
 - ECOM
 
-For example, here are some of the columns that the **B2B** worksheet contains: **GSTIN/UIN of Recipient**, **Trade/Legal Name**, **Document Type**, **Document Number**, **Document Date**, **Document Value**, **Place of Supply**, **Differential % of Tax Rate**, **Supply Covered Under Sec 7 of IGST Act**, and **HSN Code**.
+For example, the **B2B** worksheet contains columns like **GSTIN/UIN of Recipient**, **Trade/Legal Name**, **Document Type**, **Document Number**, **Document Date**, **Document Value**, **Place of Supply**, **Differential % of Tax Rate**, **Supply Covered Under Sec 7 of IGST Act**, and **HSN Code**.
 
-![B2B sheet of the GST ANX-1 report.](../media/New-Offline-Tool-007.PNG)
+:::image type="content" source="../media/New-Offline-Tool-007.PNG" alt-text="Screenshot of the B2B sheet of the GST ANX-1 report.":::
 
 ### Purchase Register report data
 
-1. Go to **Tax \> Sales tax reports \> India \> GER export to GSTR CSV**.
-2. In the **GER export to GSTR CSV** dialog box, in the **Financial year** field, select the financial year that you're generating the report for.
-3. In the **Tax period** field, select the tax period.
-4. In the **Registration number** field, select the GSTIN registration number.
-5. In the **Configuration** field, select **Purchase Register**.
-6. In the **File name** field, enter a name for the file to save the report in CSV format.
+1. Go to **Tax > Sales tax reports > India > GER export to GSTR CSV**.
+1. In the **GER export to GSTR CSV** dialog box, in the **Financial year** field, select the financial year that you're generating the report for.
+1. In the **Tax period** field, select the tax period.
+1. Select the GSTIN registration number in the **Registration number** field.
+1. In the **Configuration** field, select **Purchase Register**.
+1. Enter a name for the file in the **File name** field to save the report in CSV format.
 
-    ![GER export to GSTR CSV dialog box for the Purchase Register report.](../media/New-Offline-Tool-008.PNG)
+    :::image type="content" source="../media/New-Offline-Tool-008.PNG" alt-text="Screenshot of the GER export to GSTR CSV dialog box for the Purchase Register report.":::
 
-7. Select **OK**.
+1. Select **OK**.
 
 The Purchase Register report is generated. This report contains the following columns: **GSTIN of supplier**, **Trade/Legal name**, **Type of inward supplies**, **Document type**, **Document number**, **Document date**, **Taxable value**, **Total tax**, **Integrated tax**, **Central tax**, **State/UT tax**, and **Cess**.
 
-![Purchase Register report.](../media/New-Offline-Tool-009.PNG)
+:::image type="content" source="../media/New-Offline-Tool-009.PNG" alt-text="Screenshot of the Purchase Register report.":::

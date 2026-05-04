@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/04/2019
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak 
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
@@ -18,11 +18,11 @@ ms.dyn365.ops.version: 10.0.4
 [!include [banner](../../includes/banner.md)]
 
 1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
-2. Create a purchase order for a taxable item.
-3. On **Purchase order lines** FastTab, select **Financials** \> **Maintain charges**.
-4. Select the charges code, and then, in the **Charges value** field, enter a value.
-5. Select the **Assessable value** check box.
-6. Save and close the record.
+1. Create a purchase order for a taxable item.
+1. On **Purchase order lines** FastTab, select **Financials** \> **Maintain charges**.
+1. Select the charges code, and then, in the **Charges value** field, enter a value.
+1. Select the **Assessable value** check box.
+1. Save and close the record.
 
 > [!NOTE]
 > Freight charges are added to the assessable value.
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.4
 ## Validate the tax details
 
 1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document**.
-2. On the **Tax details** FastTab, review the tax calculation.
+1. On the **Tax details** FastTab, review the tax calculation.
 
     What you see might resemble the following example:
 
@@ -39,19 +39,19 @@ ms.dyn365.ops.version: 10.0.4
     - **SGST:** 10 percent
     - **CESS:** 1 percent
 
-3. Select **Close**.
-4. Select **Confirm**.
+1. Select **Close**.
+1. Select **Confirm**.
 
 ### Post the purchase invoice
 
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
-2. In the **Default quantity for lines** field, select **Ordered quantity**.
-3. Enter the invoice number.
-4. On the Action Pane, select **Post** \> **Post**.
-5. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**. 
-6. On the **Overview** tab, select **Voucher**.
+1. In the **Default quantity for lines** field, select **Ordered quantity**.
+1. Enter the invoice number.
+1. On the Action Pane, select **Post** \> **Post**.
+1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**. 
+1. On the **Overview** tab, select **Voucher**.
 
-![Example.](../media/Annotation-2019-05-16-102702.png)
+:::image type="content" source="../media/Annotation-2019-05-16-102702.png" alt-text="Screenshot of the posted purchase invoice voucher example.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

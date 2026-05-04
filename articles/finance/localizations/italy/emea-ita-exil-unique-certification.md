@@ -3,8 +3,10 @@ title: Unique certification
 description: Learn about the Unique certification for companies in Italy, including prerequisites and an outline on setting up the unique certification.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 03/04/2025
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy
@@ -35,12 +37,12 @@ The following prerequisites must be met before the functionality can be used:
 ### Set up a number sequence
 
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
-2. On the **Number sequences** tab, in the **Unique certification Id** field, define a number sequence.
+1. On the **Number sequences** tab, in the **Unique certification Id** field, define a number sequence.
 
 ### Set up the unique certification values
 
 1. Go to **Tax** \> **Setup** \> **Withholding tax** \> **Set up unique certification values**
-2. Specify the values for the **Unique certification** feature.
+1. Specify the values for the **Unique certification** feature.
 
 The **Set up unique certification values** page allows you to configure the values available for several fields:
 
@@ -66,20 +68,20 @@ You must set up a revenue typology in the **Revenue typology** field in the **In
 ### Set up a format for the Unique certification
 
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
-2. On the **Withholding tax** tab, in the **Unique Certification format mapping** field, define the Electronic reporting (ER) format that should be used to generate the Unique certification.
+1. On the **Withholding tax** tab, in the **Unique Certification format mapping** field, define the Electronic reporting (ER) format that should be used to generate the Unique certification.
 
 ## Generate the Unique certification
 
 1. Go to **Tax** \> **Declarations** \> **Withholding tax** \> **Unique Certification**.
-2. Select **New**.
+1. Select **New**.
 
     > [!NOTE]
     > The year before the year of the current system date is automatically assigned as the reporting year of the declaration.
 
-3. In the **Title-page** section, enter the company information and the information about the person who is in charge of communicating the Unique certification to the revenue agency.
-4. Select **Generate** to create the certifications for each recipient and to automatically fill in the other sections. The **Vendor** section contains the list of recipients (vendors) and the vendor details.
-5. Select **Generate details** to enter the details of vendors transactions in the declaration.
-6. The **Withholding tax** section shows the amounts of each vendor certification. The amounts are calculated and sorted by withholding tax code.
+1. In the **Title-page** section, enter the company information and the information about the person who is in charge of communicating the Unique certification to the revenue agency.
+1. Select **Generate** to create the certifications for each recipient and to automatically fill in the other sections. The **Vendor** section contains the list of recipients (vendors) and the vendor details.
+1. Select **Generate details** to enter the details of vendors transactions in the declaration.
+1. The **Withholding tax** section shows the amounts of each vendor certification. The amounts are calculated and sorted by withholding tax code.
 
 ## Process the Unique certification
 

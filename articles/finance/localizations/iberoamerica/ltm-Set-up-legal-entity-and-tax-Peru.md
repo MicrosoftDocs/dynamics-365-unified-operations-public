@@ -2,7 +2,7 @@
 title: Set up a legal entity and tax information for Peru
 description: Learn how to set up a legal entity and tax information for a company in Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 04/17/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.author: v-federicohe

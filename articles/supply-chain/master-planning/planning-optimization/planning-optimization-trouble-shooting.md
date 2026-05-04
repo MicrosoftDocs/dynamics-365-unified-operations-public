@@ -6,9 +6,11 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: troubleshooting-general
-ms.date: 03/10/2026
+ms.date: 05/04/2026
 ms.custom:
   - bap-template
+ms.collection:
+  - ai-assisted
 ---
 
 # Troubleshoot Planning Optimization
@@ -42,17 +44,31 @@ The Planning Optimization Add-in requires a successfully linked Power Platform e
 
 ### Review the error details
 
-The Planning Optimization Add-in might fail to install due to an error on your Power Platform environment.
+An error in your Power Platform environment might prevent the installation of the Planning Optimization Add-in.
 
-**Fix**: Check the error details and modify your Power Platform organization settings accordingly. It might be a temporary error, so try to install again later. If the issue persists, contact Microsoft Support.
+**Fix**: Check the error details and modify your Power Platform organization settings accordingly. It might be a temporary error, so try to install the add-in again later. If the issue persists, contact Microsoft Support.
 
 ## Planning Optimization job times out
 
 Planning Optimization has a set timeout of 60 minutes. Therefore, if it runs for more than 60 minutes, the planning job stops because of a timeout.
 
+> [!TIP]
+> The following table summarizes the most effective approaches for improving Planning Optimization performance. Try them in order of impact.
+>
+> | Approach | When to use | Impact |
+> |---|---|---|
+> | [Reduce time fences](#review-time-fences) | Time fences are larger than your business requires | High—coverage time fence has the largest effect |
+> | [Plan only needed products](#plan-only-for-the-products-you-need) | Many items are included that don't need planning | High |
+> | [Split large jobs](#split-large-planning-jobs-into-several-smaller-jobs) | A single job plans too many items for the 60-minute window | High |
+> | [Reduce scheduling time](#reduce-scheduling-time) | Finite capacity scheduling is enabled and adds significant time | Medium |
+> | [Reduce resource group size](#consider-reducing-the-size-of-your-resource-groups) | Large resource groups slow down scheduling calculations | Medium |
+> | [Review item coverage](#review-your-item-coverage-settings) | Multiple coverage lines apply the same settings for all warehouses | Low to medium |
+
 If your Planning Optimization jobs frequently time out, consider implementing one or more of the options that are described in the following subsections.
 
-### Review your setup to remove time fences and options that aren't needed
+<a name="review-time-fences"></a>
+
+### Review your setup to remove time fences and options that you don't need
 
 Follow these steps to review your setup and remove time fences and other options that you don't need:
 
@@ -96,7 +112,7 @@ Follow these steps to review your setup and remove time fences and other options
 
 ### Reduce scheduling time
 
-It's always beneficial to review your scheduling configuration to optimize run times. To check whether scheduling is the main reason that Planning Optimization is timing out, try disabling finite capacity in the plan settings and then rerun planning to see if the issue is solved.
+Review your scheduling configuration to optimize run times. To check whether scheduling is the main reason that Planning Optimization is timing out, try disabling finite capacity in the plan settings and then rerun planning to see if the issue is solved.
 
 For more information about how to reduce scheduling times, see [Improve scheduling engine performance](../scheduling-engine-performance.md).
 
@@ -104,7 +120,7 @@ For more information about how to reduce scheduling times, see [Improve scheduli
 
 Review the following settings to make sure that you're planning only for the products that you need:
 
-- Use the **Product lifecycle state** field to indicate products or variants that don't have to be fulfilled by master planning. For each such product, select a product lifecycle state where the **Is active for planning** option is set to *No*. You can use the **Change lifecycle state for obsolete products** page to identify products that haven't been used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
+- Use the **Product lifecycle state** field to indicate products or variants that don't need to be fulfilled by master planning. For each such product, select a product lifecycle state where the **Is active for planning** option is set to *No*. Use the **Change lifecycle state for obsolete products** page to identify products that aren't used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
 - For plans that should only apply for a certain set of items, set up a plan filter to limit the run to just those items. Learn more in [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
 - Set item coverage to manual for each warehouse that doesn't need to be supplied by master planning. For each such warehouse listed on the **Warehouses** page, expand the **Master Planning** FastTab and, in the **Item Coverage** field group, set **Manual** to *Yes*.
 
@@ -114,7 +130,7 @@ If you have a large planning job that frequently times out, you might be able to
 
 #### Option 1: Run the same master plan but only for a subset of products
 
-For example, you have a master plan that's named *PlanA*. It runs nightly as a batch job for 1,000 items that have item numbers ranging from *A0001* through *A1000*. If this job often times out after 60 minutes, you can split it into three jobs, each of which runs for a third of the items. You run *PlanA* for the first third (*A0001* through *A0333*), then for the second third (*A0334* through *A0666*), and then for the last third (*A0667* through *A1000*). In this way, each smaller job has the full 60-minute timeout window. You aren't trying to use the same 60 minutes to plan all 1,000 items.
+For example, you have a master plan named *PlanA*. It runs nightly as a batch job for 1,000 items that have item numbers ranging from *A0001* through *A1000*. If this job often times out after 60 minutes, you can split it into three jobs, each of which runs for a third of the items. You run *PlanA* for the first third (*A0001* through *A0333*), then for the second third (*A0334* through *A0666*), and then for the last third (*A0667* through *A1000*). In this way, each smaller job has the full 60-minute timeout window. You're not trying to use the same 60 minutes to plan all 1,000 items.
 
 To split a large job into several jobs, follow these steps:
 
@@ -143,22 +159,22 @@ To split a large job into several jobs, follow these steps:
 1. Repeat the previous three steps to add a third task and set the filter to find the last third of the items (for example, item numbers in the range *A0667...A1000*).
 1. Select the **Task ID** value for the first task, and copy it to the clipboard (by selecting **Ctrl+C**).
 1. Select the second task. Then, on the **Batch task details** FastTab, on the **Constraints** tab, select **New** on the toolbar to add a row to the grid.
-1. Set the following fields for the new row. These settings will cause the second task to run after the first task has finished running or has encountered an error.
+1. Set the following fields for the new row. These settings cause the second task to run after the first task finishes running or encounters an error.
 
     - **Task ID** – Paste the value that you copied to the clipboard.
     - **Expected status** – Select *Ended or error*.
 
-1. Repeat the previous three steps to set the third task to run after the second task has finished running or has encountered an error.
+1. Repeat the previous three steps to set the third task to run after the second task finishes running or encounters an error.
 1. On the Action Pane, select **Change status**.
 1. In the **Select new status** dialog box, select *Waiting*, and then select **OK**.
 1. On the Action Pane, select **Save**.
 
 > [!TIP]
-> This procedure shows just one way to split a large job into several smaller jobs and set them to run in series. You can split the jog into even more jobs and/or filter on different criteria as needed.
+> This procedure shows just one way to split a large job into several smaller jobs and set them to run in series. You can split the job into even more jobs and filter on different criteria as needed.
 
 #### Option 2: Different master plans, each for a subset of products
 
-If your products have different characteristics that affect planning, you should consider running different master plans, each for a subset of products.
+If your products have different characteristics that affect planning, consider running different master plans, each for a subset of products.
 
 For example, you have a master plan for purchasing items that have a long lead time (such as a year) but that are used to produce manufactured products that have a short manufacturing lead time (such as a week). In this case, you can make one master plan for purchased products (*PlanPurch*) that has a coverage time fence of 365 days. Then make another plan for manufactured items (*PlanManuf*) that has a coverage time fence of 30 days. Because each set of products is in a different master plan, you can run both master plan jobs in parallel. When you run different plans in different batch tasks, each batch task can run in parallel. They don't have to run sequentially.
 
@@ -183,11 +199,11 @@ To implement this strategy, follow these steps:
 1. In the **Select new status** dialog box, select *Waiting*, and then select **OK**.
 1. On the Action Pane, select **Save**.
 
-Because you've set each batch task to run a different master plan, both batch tasks will run in parallel.
+Because you set each batch task to run a different master plan, both batch tasks run in parallel.
 
 ### Review your item coverage settings
 
-- Review your item coverage settings. For items that use multiple item coverage lines to apply the same settings for all warehouses at the same site, replace those lines with a single line for the site (with the **Warehouse** column blank). That setting will then apply to all warehouses at that site.
+- Review your item coverage settings. For items that use multiple item coverage lines to apply the same settings for all warehouses at the same site, replace those lines with a single line for the site (with the **Warehouse** column blank). That setting then applies to all warehouses at that site.
 
 ### Consider reducing the size of your resource groups
 
@@ -197,11 +213,11 @@ Consider whether you can split large resource groups (with many resources) into 
 
 The following message appears if a data export times out for Planning Optimization:
 
-> Master planning job timed out when exporting the data to perform the calculation. This can be a temporary issue - try running the job again later. If you see this message often then please review your setup to limit the amount of data used for planning, as indicated in (this page).
+> Master planning job timed out when exporting the data to perform the calculation. This condition can be temporary—try running the job again later. If you see this message often, review your setup to limit the amount of data used for planning, as indicated in (this page).
 
-If you receive this message, we recommend that you try one or both of the approaches that are described in the following subsections.
+If you receive this message, try one or both of the approaches that are described in the following subsections.
 
-### Review your setup for time fences and options that aren't needed
+### Review your setup for time fences and options that you don't need
 
 Follow these steps to review your setup for time fences and options that you don't need.
 
@@ -226,21 +242,21 @@ Follow these steps to review your setup for time fences and options that you don
     - **Calculated delays**
     - **Approved requisitions time fence (days)**
 
-1. If your plan is timing out because it generates a large number of orders, consider changing your business strategy for replenishing items. Here are some examples:
+1. If your plan times out because it generates a large number of orders, consider changing your business strategy for replenishing items. Here are some examples:
 
-    - If you use coverage groups where the **Coverage code** field is set to *Requirement*, a specific supply is created for it each time that there's a demand. Consider whether a **Coverage code** value of *Period* will work for your business. In this case, the system groups all demand for a selected number of days into a single supply order that covers that period. This approach also makes planned orders easier to manage. Alternatively, consider using a **Coverage code** value of *Min/Max*. In this case, a planned order is created only when the on-hand inventory falls below the minimum value. The on-hand inventory is then replenished to its maximum value.
+    - If you use coverage groups where the **Coverage code** field is set to *Requirement*, the system creates a specific supply for it each time that there's a demand. Consider whether a **Coverage code** value of *Period* works for your business. In this case, the system groups all demand for a selected number of days into a single supply order that covers that period. This approach also makes planned orders easier to manage. Alternatively, consider using a **Coverage code** value of *Min/Max*. In this case, the system creates a planned order only when the on-hand inventory falls below the minimum value. The on-hand inventory is then replenished to its maximum value.
     - Consider whether you can purchase or produce items in larger amounts. If you can, increase the **Max. order quantity** value on **Default order settings** page for each item that you're ordering. The higher the value, the fewer orders you're likely to generate for that item.
 
-### Plan only for the products that are needed
+### Plan only for the products that you need
 
-Your data export might be able to be completed more quickly if you reduce the number of products that are considered for each planning run. Consider using one or both of the following strategies:
+Your data export might complete more quickly if you reduce the number of products that the system considers for each planning run. Consider using one or both of the following strategies:
 
-- Identify product and variants that don't have to be fulfilled by master planning, and set their **Product lifecycle state** value to a state where the **Is active for planning** option is set to *No*. (Learn more in [Exclude products that have specific product lifecycle states](product-lifecycle-state.md)). The **Change lifecycle state for obsolete products** page can help you identify products that haven't been used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
+- Identify products and variants that don't need to be fulfilled by master planning, and set their **Product lifecycle state** value to a state where the **Is active for planning** option is set to *No*. (Learn more in [Exclude products that have specific product lifecycle states](product-lifecycle-state.md)). The **Change lifecycle state for obsolete products** page can help you identify products that haven't been used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
 - Use a [plan filter](plan-filters.md#apply-a-plan-filter) to remove unneeded items from your plan.
 
 ## No planned orders are created
 
-If master planning ran by didn't create any orders, check the following settings:
+If master planning runs but doesn't create any orders, check the following settings:
 
 - Make sure the items you're expecting to generate supply for are set up with a lifecycle state where **Exclude from master planning** is set to *No*.
 - If you're running a filtered plan, make sure that there aren't any typos in your filter values. (Learn more in [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).)
@@ -248,37 +264,69 @@ If master planning ran by didn't create any orders, check the following settings
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
-When you enable Planning Optimization, the deprecated master planning engine is automatically disabled. Master planning batch jobs that were created for the deprecated master planning engine will fail if they're triggered while Planning Optimization is enabled. You might receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
+When you enable Planning Optimization, the deprecated master planning engine is automatically disabled. Master planning batch jobs that were created for the deprecated master planning engine fail if they're triggered while Planning Optimization is enabled. You might receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
 
 **Fix**: Cancel all master planning batch jobs that were created for the deprecated master planning engine.
 
 ## Planning Optimization results are different from earlier results
 
-Planning Optimization differs from the deprecated master planning engine design in some areas. This can also be caused by pending features.
+Planning Optimization differs from the deprecated master planning engine design in some areas. This difference can also be caused by pending features.
 
 **Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. Learn more in [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
 ## Can't disable Planning Optimization
 
-The **Use Planning Optimization** option is set to *Yes* and greyed out, preventing it from being turned off.
+The **Use Planning Optimization** option is set to *Yes* and is grayed out, so you can't turn it off.
 
-This behavior is by design. Planning Optimization is now the only planning engine available for Supply Chain Management, so you can't turn it off. However, in some rare cases, Microsoft Support might make the deprecated planning available for one or more specific companies (learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
+This behavior is by design. Planning Optimization is now the only planning engine available for Supply Chain Management, so you can't turn it off. However, in some rare cases, Microsoft Support might make the deprecated planning available for one or more specific companies. Learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md).
 
 ## Error message is shown during CTP
 
-If you try to run capable to promise (CTP) from a sales order when Planning Optimization is enabled, you'll receive the following error message: *This operation triggered master planning that isn't supported when the Planning Optimization is enabled*.
+If you try to run capable to promise (CTP) from a sales order when Planning Optimization is enabled, you receive the following error message: *This operation triggered master planning that isn't supported when the Planning Optimization is enabled*.
 
-This is related to a pending feature that is planned as part of the support for production orders.
+This error message is related to a pending feature that is planned as part of the support for production orders.
 
 **Fix:** Avoid CTP calculations when Planning Optimization is enabled until CTP support is available.
 
 ## Error message about active planning dimensions not matching
 
-After running a master plan, you might receive the following error:
+After running a master plan, you might receive the following error message:
 
 > Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> does not match the active planning attributes for this product and was ignored.
 
-If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is being tracked by serial number, then the serial number dimension can't be used as a coverage dimension because the system doesn't know which serial numbers should be supplied. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
+If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is tracked by serial number, you can't use the serial number dimension as a coverage dimension because the system doesn't know which serial numbers it should supply. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
+
+## Planning Optimization client request retry count exceeded
+
+After running master planning, you receive one of the following error messages:
+
+> Planning Optimization client request retry count exceeded.
+
+or
+
+> Planning Optimization run failed.
+
+This error can occur for different reasons. Check the following causes and fixes.
+
+### Cause 1: Transient service failure
+
+Planning Optimization is a cloud-based service. Occasionally, transient service failures can occur that are specific to a particular region. These temporary outages can prevent Planning Optimization from completing a run.
+
+**Fix**: Wait a short time and then retry the master planning run. If the issue persists for more than a few hours, contact Microsoft Support because the issue might require action from the service engineering team.
+
+### Cause 2: Connection lost after a database refresh
+
+If you recently performed a database refresh on your environment, the Planning Optimization connection might be broken. The connection status on the **Planning Optimization parameters** page (**Master planning** \> **Setup** \> **Planning Optimization parameters**) might show *Not connected* even though the add-in appears as installed.
+
+A database refresh is environment-specific, and it resets the Planning Optimization service binding. This is a known behavior.
+
+**Fix**: Uninstall and reinstall the Planning Optimization Add-in for your environment from the admin center. After reinstallation, verify that the connection status shows *Connected* on the **Planning Optimization parameters** page. Learn more in [Get started with master planning](get-started.md).
+
+### Cause 3: Temporary connectivity issue
+
+Intermittent network or service connectivity problems between your environment and the Planning Optimization service can cause this error.
+
+**Fix**: Retry the master planning run. If the error occurs repeatedly, check the **Planning Optimization parameters** page to verify the connection status. If the connection status shows *Not connected*, try reinstalling the add-in. If the status shows *Connected* and the error persists, contact Microsoft Support.
 
 ## Related information
 
