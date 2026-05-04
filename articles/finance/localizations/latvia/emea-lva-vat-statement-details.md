@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 05/29/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Latvia
 ms.search.validFrom: 2016-11-30
@@ -76,10 +76,6 @@ To configure the electronic reporting model and format for the report, follow th
 To generate a VAT statement, follow these steps:
 
 1. To generate a VAT XML file, in Dynamics 365 Finance, go to the **Sales tax payments** page.
-2. Select one or more vouchers, and then select **Export VAT XML file**.
-
-
-
-
+1. Select one or more vouchers, and then select **Export VAT XML file**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

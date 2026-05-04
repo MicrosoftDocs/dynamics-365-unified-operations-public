@@ -6,13 +6,13 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/05/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-06-20
 ---
 
-#  VAT declaration for Egypt (EG-00002)
+# VAT declaration for Egypt (EG-00002)
 
 [!include[banner](../../includes/banner.md)]
 
@@ -32,7 +32,7 @@ The primary address of the legal entity must be in Egypt.
 
 In the **Feature management** workspace, enable the following feature:
 
-   - (Egypt) Category hierarchy for Sales and purchase tax report.
+- (Egypt) Category hierarchy for Sales and purchase tax report.
 
 For more information about how to enable features, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -67,7 +67,7 @@ After you download the ER configurations from Lifecycle Services (LCS) or the gl
 
 The application-specific parameters let you establish the criteria of how tax transactions will be classified and calculated in each line when the report is generated. The determination is based on the configuration of the item sales tax group, sales tax group, sales tax code, and other criteria established in the lookup definition.
 
-The sales and purchase book reports for Egypt include a set of columns that correspond to specific transaction classifications as types of operations, products, and documents that are specific for Egypt. Instead of including these new classifications as new entry data when the transactions are posted, the classifications will be determined based on different lookups introduced in **Configurations** \> **Set up application-specific parameters** \> **Setup** to meet the requirements of VAT reports for Egypt. 
+The sales and purchase book reports for Egypt include a set of columns that correspond to specific transaction classifications as types of operations, products, and documents that are specific for Egypt. Instead of including these new classifications as new entry data when the transactions are posted, the classifications will be determined based on different lookups introduced in **Configurations** \> **Set up application-specific parameters** \> **Setup** to meet the requirements of VAT reports for Egypt.
 
 ![Application specific parameters page.](../media/egypt-vat-declaration-setup1.png)
 
@@ -86,18 +86,18 @@ To set up the different lookups used to generate VAT declaration and related boo
 1. In the **Electronic reporting** workspace, select **Configurations** \> **Setup** to set up the rules to identify the tax transaction in the related box of the VAT return form.
 1. Select the current version, and on the **Lookups** FastTab, select the lookup name. For example, **SalesItemTypeLookup**. This lookup identifies the list of classifications in the Sales VAT book that are required by the tax authority.
 1. On the **Conditions** FastTab, select **Add** and in the new line in the **Lookup result** column, select the related line that represents the classification in **Column O**.
-1. In the **Sales tax group** column, select the sales tax group that is used to identify the classification. For example, **Domestic sales invoice**. You can also use item sales tax group, tax code, or the combination of tree attributes if the configuration is defined in another way. 
+1. In the **Sales tax group** column, select the sales tax group that is used to identify the classification. For example, **Domestic sales invoice**. You can also use item sales tax group, tax code, or the combination of tree attributes if the configuration is defined in another way.
 1. In the **Name** column, select the tax transaction classification.
 1. Repeat steps 3-5 for all available lookups.
-1. Select **Add** to include the final record line, and in the **Lookup result** column, select **Not applicable**. 
-1. In the remainder columns, select **Not blank**. 
+1. Select **Add** to include the final record line, and in the **Lookup result** column, select **Not applicable**.
+1. In the remainder columns, select **Not blank**.
 1. In the **State** field, select **Completed**.
 1. Select **Save**, and then close the **Application specific parameters** page.
 
 > [!NOTE]
 > When you add the last record, **Not applicable**, you define the following rule: When the sales tax group, item sales tax group, tax code, and name that's passed as an argument doesn't satisfy any of the previous rules, the transactions aren't included in the sales VAT book. Although this rule isn't used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.
 
-The following tables represent an example of suggested configuration for the described lookup configurations. 
+The following tables represent an example of suggested configuration for the described lookup configurations.
 
 **SalesItemTypeLookup**
 
@@ -189,7 +189,6 @@ The following tables represent an example of suggested configuration for the des
 | SecondTable    | 4    | *Not blank*     |
 | Not applicable | 5    | *Not blank*     |
 
-
 ## Set up general ledger parameters
 
 To generate the VAT return form report in Microsoft Excel format, you must define an ER format on the **General ledger parameters** page.
@@ -211,18 +210,13 @@ To generate a tax declaration report, follow these steps:
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period** or **Settle and post sales tax**.
 1. Select the **Settlement period**.
 1. Select the from date and then select the sales tax payment version.
-1. Select **OK**. 
+1. Select **OK**.
 1. Enter the amount of credit from the previous period, if applicable, or leave the amount as zero.
-1. In the **Reports details** field, select one of the following available options. 
+1. In the **Reports details** field, select one of the following available options.
    - **Purchase VAT book**: Generate the purchase tax transactions details report.
    - **Sales VAT book**: Generate the sales tax transactions details report.
    - **VAT declaration**: Generate only the VAT declaration return form.
 1. Enter the name of person who is registered to assign the form.
 1. Select the language. All reports are translated in **en-us** and **ar-eg**.
 
-
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
-

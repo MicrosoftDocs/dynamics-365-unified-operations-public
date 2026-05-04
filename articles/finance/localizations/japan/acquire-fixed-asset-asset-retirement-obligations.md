@@ -4,7 +4,7 @@ description: Learn how to acquire a fixed asset with an asset retirement obligat
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30

@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 05/29/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Latvia
 ms.search.validFrom: 2016-05-31
@@ -33,10 +33,5 @@ To view the modification history for fields you updated, follow these steps:
 1. Select a fixed asset.
 1. On the **Fixed asset** tab, select **Transfers** \> **Internal transfer history**.
 1. Optionally, select **Print** \> **Internal transfer statement**.
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
