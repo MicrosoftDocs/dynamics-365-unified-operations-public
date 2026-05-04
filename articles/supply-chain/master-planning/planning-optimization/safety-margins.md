@@ -29,7 +29,7 @@ Three types of safety margins exist:
 
 The following illustration shows how these safety margins apply over time.
 
-:::image type="content" source="media/safety-margins-1.png" alt-text="Safety margins." lightbox="media/safety-margins-1.png":::
+:::image type="content" source="media/safety-margins-1.png" alt-text="Safety margins.":::
 
 All margins are defined in days. The default value, *0* (zero), indicates that no margin is applied. If you set up multiple margins, they all add to the total time from the supply *order date* to the demand *requirement date*. For example, a setup has no lead time, and all three margin types are set to one day. In this case, three days exist between the supply order date and the demand requirement date, so if the order date is July 1, the requirement date is July 4.
 
@@ -39,7 +39,7 @@ The receipt margin is probably the most commonly used of the three safety margin
 
 The following illustration highlights the receipt margin.
 
-:::image type="content" source="media/safety-margins-2.png" alt-text="Receipt margin." lightbox="media/safety-margins-2.png":::
+:::image type="content" source="media/safety-margins-2.png" alt-text="Receipt margin.":::
 
 The receipt margin typically acts as a buffer to ensure time for warehouse registration or other time-consuming processes that the system doesn't capture as part of the general lead time. For purchases, one benefit is that the *delivery date* of the purchase order moves forward accordingly. If you increase the lead time instead of using a safety margin, the vendor still needs to deliver at the last minute.
 
@@ -51,7 +51,7 @@ A receipt margin isn't applied when on-hand inventory is used as the supply. All
 
 The following illustration highlights the reorder margin.
 
-:::image type="content" source="media/safety-margins-3.png" alt-text="Reorder margin." lightbox="media/safety-margins-3.png":::
+:::image type="content" source="media/safety-margins-3.png" alt-text="Reorder margin.":::
 
 The reorder margin adds time before the item lead time for all planned orders during master planning. Therefore, it ensures extra time for placing a supply order. This margin typically acts as a buffer to ensure time for approval processes or other internal processes that are required during the creation of supply orders. The reorder margin goes between the supply *order date* and *start date*.
 
@@ -59,7 +59,7 @@ The reorder margin adds time before the item lead time for all planned orders du
 
 The following illustration highlights the issue margin.
 
-:::image type="content" source="media/safety-margins-4.png" alt-text="Issue margin." lightbox="media/safety-margins-4.png":::
+:::image type="content" source="media/safety-margins-4.png" alt-text="Issue margin.":::
 
 During master planning, the system deducts the issue margin from the demand requirement date. This deduction helps ensure that you have time to react to and ship incoming demand orders. This margin acts as a buffer to ensure time for shipment and related outbound warehouse processes.
 
@@ -140,7 +140,7 @@ The following illustration presents a matrix that summarizes which calendars app
 - **Warehouse (WH):** Yellow
 - **Vendor (V):** Blue
 
-:::image type="content" source="media/safety-margins-calendar-matrix.png" alt-text="Calendar setup overview matrix." lightbox="media/safety-margins-calendar-matrix.png":::
+:::image type="content" source="media/safety-margins-calendar-matrix.png" alt-text="Calendar setup overview matrix.":::
 
 ## Calculating delays
 
@@ -148,7 +148,7 @@ The system includes all three types of safety margins when it determines whether
 
 For example, an item has a lead time of one day and a receipt margin of three days. A sales order for this item is set as required today. In this case, the delay is calculated as *lead time* + *receipt margin* = four days. Therefore, if today is August 14, the four days of delay produces a delivery on August 18. The following illustration shows this example.
 
-:::image type="content" source="media/safety-margins-delays.png" alt-text="Delay calculation example." lightbox="media/safety-margins-delays.png":::
+:::image type="content" source="media/safety-margins-delays.png" alt-text="Delay calculation example.":::
 
 ## Issue margin and on-hand
 
@@ -232,7 +232,7 @@ Greedy application of soft issue margins can lead to situations where the requir
 
 The following example illustrates the known limitation.
 
-:::image type="content" source="media/soft-issue-margin-video-generation.gif" alt-text="GIF showing the known limitation of soft issue margin." lightbox="media/soft-issue-margin-video-generation.gif":::
+:::image type="content" source="media/soft-issue-margin-video-generation.gif" alt-text="GIF showing the known limitation of soft issue margin.":::
 
 Example setup:
 

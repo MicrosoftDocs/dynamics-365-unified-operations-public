@@ -62,7 +62,7 @@ The following table lists the features that became turned on by default in versi
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.48 includes platform updates. Learn more in [Platform updates for version 10.0.48 of Finance and Operations apps (June 2026)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-48.md).<!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.48 includes platform updates. Learn more in [Platform updates for version 10.0.48 of Finance and Operations apps (June 2026)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-10-0-48.md).
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.48, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1125352).
 
