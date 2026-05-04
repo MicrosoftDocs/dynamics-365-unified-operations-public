@@ -36,7 +36,7 @@ Go to [Microsoft Entra app registration](https://go.microsoft.com/fwlink/?linkid
 
 ## Step 2. Configure API permissions
 
-In your new app registration, go to the **Manage - API Permissions** tab. Under the **Configure permissions** section, select **Add a Permission**. In the dialog box, select the **APIs my organization uses** tab, and then search for **Dynamics Lifecycle services**. You might see several entries with a name similar to this one, so be sure you use the one with the GUID, **913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0**.  
+In your new app registration, go to the **Manage - API Permissions** tab. Under the **Configure permissions** section, select **Add a Permission**. In the dialog box, select the **APIs my organization uses** tab, and then search for **Dynamics Lifecycle services**. You might see several entries with a name similar to this one, so be sure you use the one with the GUID, **aaaabbbb-0000-cccc-1111-dddd2222eeee**.  
 
 > [!NOTE]
 > These APIs use delegated permissions only. For applications that run with a user context, request delegated permissions by using the **scope** parameter of **user_impersonation**. These permissions delegate the privileges of the signed-in user to your application, so it can act as the user when calling the API endpoints.
