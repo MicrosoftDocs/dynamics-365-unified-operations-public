@@ -191,3 +191,59 @@ When you use [Invoice party applicability rules](../../../fin-ops-core/dev-itpro
 - The system resolves the applicable registration IDs for each invoice.
 - The invoice posting process controls that required registration IDs are defined for each invoice.
 - The system immutably stores all applicable registration IDs on the invoice for audit and reporting purposes after posting.
+
+### Example
+
+This example was created using the demo data company FRSI with French as the country/region of legal entity primary address.
+
+In FRSI legal entity with primary address in France, set up **Invoice party applicability** for FRA SIREN **Registration type** for Legal entity, Customer and Vendor party roles:
+
+:::image type="content" source="../media/emea-fra-reg-id-example-siren.png" alt-text="Screenshot of an example SIREN Registration IDs setup for French establishment.":::
+
+In addition, set up **Invoice party applicability** for FRA VAT ID **Registration type** for Legal entity, Customer and Vendor party roles:
+
+:::image type="content" source="../media/emea-fra-reg-id-example-vatid.png" alt-text="Screenshot of an example VAT ID Registration IDs setup for French establishment.":::
+
+Also set up **Invoice party applicability** for FRA SIRET **Registration type** for Legal entity, Establishment, Customer and Vendor party roles:
+
+:::image type="content" source="../media/emea-fra-reg-id-example-siret.png" alt-text="Screenshot of an example SIRET Registration IDs setup for French establishment.":::
+
+In **Organization administration** > **Organizations** > **Legal entities**, select your legal entity with primary address in France (FRSI) set up SIREN, VAT ID and SIRET Registration IDs. Registration IDs are date-sensitive. Ensure that you specify the **Effective** date on the **General** tab of the **Registration IDs** FastTab.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-legal-entity.png" alt-text="Screenshot of an example legal entity setup for French establishment.":::
+
+In **Organization administration** > **Organizations** > **Organization hierarchies**, create new **Organization hierarchy** of select existing \"Enterprise establishment structure\" for establishments and insert **Operating units** representing establishments of your legal entity in this new hierarchy (\"Operations back‑office site\"). Assign **Enterprise establishment structure** purpose to Enterprise establishment structure **Organization hierarchy**. Ensure that \"Enterprise establishment structure\" **Organization hierarchy** is published.
+
+For \"Operations back‑office site\" **Operating unit** representing establishment of your legal entity add an address in France and assign **Invoice** purpose to this address. Set up **Registration ID** of **SIRET** type for this address. Registration IDs are date-sensitive. Ensure that you specify the **Effective** date on the **General** tab of the **Registration IDs** FastTab.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-establishments.png" alt-text="Screenshot of an example establishments setup for French establishment.":::
+
+In **Accounts receivable** > **Customers** > **All customers** select \"FR_SI_0001\" customer and open **Customers** > **Registration** > **Registration IDs** on the Action pane. 
+Select the address that represents the head company of this customer in France. If this is not the primary address of this customer, assign **Head company** purpose to this address. 
+Set up SIREN, VAT ID and SIRET Registration IDs for this address. 
+Registration IDs are date-sensitive. Ensure that you specify the **Effective** date on the **General** tab of the **Registration IDs** FastTab.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-customers.png" alt-text="Screenshot of an example customer setup for French establishment.":::
+
+Select delivery address in France that represents customer's establishment (\"Bordeaux\") and assign **Invoice** purpose to this address. Set up SIRET Registration IDs for this address.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-customer-establishment.png" alt-text="Screenshot of an example customer's establishment setup for French.":::
+
+Enable **Require establishment on customer invoice** and  **Require Registration IDs on customer invoice** checkboxes on Accounts receivable parameters. 
+
+:::image type="content" source="../media/emea-fra-reg-id-example-ar-parameters.png" alt-text="Screenshot of an example AR parameters setup for French establishment.":::
+
+Go to **Accounts receivable** > **Invoices** > **All free text invoices** and create new invoice. In customer account select \"FR_SI_0001\". In **Establishment** field select \"Operations back‑office site\". In **Delivery address** field select \"Bordeaux\". Add a line to this free text invoice.
+
+Click **Registration IDs** button on the Action pane to preview Registration IDs.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-preview.png" alt-text="Screenshot of an example of preview Registration ID.":::
+
+Close the preview dialog and post the free text invoice.
+
+Go to **Invoice** > **Related information** > **Invoice journal** on the Action pane to navigate to invoice journal.
+
+In **Invoice journal**, select the posted invoice and click **Registration IDs** button on the Action pane to see registration IDs posted for this invoice.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-review.png" alt-text="Screenshot of an example of review Registration ID.":::
+
