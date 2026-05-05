@@ -1,1 +1,41 @@
+---
+title: Enable non-attribute based rebate management deals in Unified pricing management
+description: Allow non-attribute based rebate management deals to be considered in Unified pricing management.
+author: sherry-zheng
+ms.author: chuzheng
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 05/01/2026
+ms.custom:
+- bap-template
+---
+
+# Enable non-attribute based rebate management deals in Unified pricing management
+
+[!include [banner](../includes/banner.md)]
+
+Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, orders, and order lines. It provides the following two components that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
+
+Custom attributes are marked in the `GUPPRICINGATTRIBUTELINK` table using a specific identifier, which indicates that they require special logic in Commerce Scale Unit (CSU) to be supported in Dynamics 365 Commerce Point of Sale (POS). To mark a pricing attribute as custom, the `GUPPRICINGATTRIBUTELINK.TypeName` column must be set to `Customization`.
+
+In CSU logic, if a custom pricing attribute is validated as `GUPPRICINGATTRIBUTELINK.TypeName = 'Customization'`, then the system calls the custom request handler.
+
+## Prerequisites
+
+To use the features described in this article, you must be running version 10.0.48 or later of your Microsoft finance and operations apps.
+
+## First steps
+
+Start by enabling the 
+
+Navigate to Feature management workspace:
+
+1. Enable the feature titled "Unified pricing management".
+2. Enable the feature titled "Enable non-attribute based rebate management deals for Unified pricing scenario".
+
+NOTE: There is a dependency between the listed features. The "Enable non-attribute based rebate management deals for Unified pricing scenario" feature cannot be enabled if the "Unified pricing management" feature is disabled.
+The "Unified pricing management" feature cannot be disabled if the "Enable non-attribute based rebate management deals for Unified pricing scenario" feature is enabled.
+
+## Enable non-attribute based rebate management deals
 
