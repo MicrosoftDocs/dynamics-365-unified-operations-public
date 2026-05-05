@@ -4,7 +4,7 @@ description: Learn how negative on-hand is handled, including a step-by-step pro
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 04/25/2026
+ms.date: 05/05/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.collection:
@@ -16,13 +16,13 @@ ms.search.form: ReqCreatePlanWorkspace
 
 [!include [banner](../../includes/banner.md)]
 
-If the system shows a negative aggregate on-hand quantity, the planning engine treats the quantity as 0 (zero) to help avoid over-supply. Here is how this functionality works:
+If the system shows a negative aggregate on-hand quantity, the planning engine treats the quantity as 0 to help avoid over-supply. Here's how this functionality works:
 
-1. Master planning aggregates on-hand quantities at the lowest level of coverage dimensions. (For example, if *location* isn't a coverage dimension, master planning aggregates on-hand quantities at the *warehouse* level.)
-1. If the aggregate on-hand quantity at the lowest level of coverage dimensions is negative, the system assumes that the on-hand quantity is really 0 (zero).
+1. Master planning aggregates on-hand quantities at the lowest level of coverage dimensions. For example, if *location* isn't a coverage dimension, master planning aggregates on-hand quantities at the *warehouse* level.
+1. If the aggregate on-hand quantity at the lowest level of coverage dimensions is negative, the system assumes that the on-hand quantity is really 0.
 
 > [!IMPORTANT]
-> The planning system can be only as precise as the input data. If the input data is inaccurate, negative on-hand records will indicate that the inventory information in Microsoft Dynamics 365 Supply Chain Management is out of sync with the real world. Therefore, the planning result will be flawed. To get a precise planning result, you should minimize the number of records that show a negative on-hand quantity.
+> The planning system is only as precise as the input data. If the input data is inaccurate, negative on-hand records indicate that the inventory information in Microsoft Dynamics 365 Supply Chain Management is out of sync with the real world. Therefore, the planning result is flawed. To get a precise planning result, minimize the number of records that show a negative on-hand quantity.
 
 ## Example 1
 
@@ -77,23 +77,23 @@ The system is configured in the following way:
 - A sales order exists for a quantity of *10* pcs. of product *FG*.
 - The sales order quantity is physically reserved against existing on-hand inventory.
 
-You then adjust the quantity of product *FG* so that the on-hand inventory becomes 5. Because the on-hand product inventory is 5, the sales order quantity is now reserved against quantity that is not available on-hand (it would be similar if on-hand were 0, in which case the sales order would be reserved against negative inventory). If you run master planning now, a planned order of quantity 5 for *FG* will be created to supply the sales order, because master planning will always use existing supply or create a new planned order to supply the physical reservation.
+You then adjust the quantity of product *FG* so that the on-hand inventory becomes 5. Because the on-hand product inventory is 5, the sales order quantity is now reserved against quantity that isn't available on-hand (it would be similar if on-hand were 0, in which case the sales order would be reserved against negative inventory). If you run master planning now, a planned order of quantity 5 for *FG* is created to supply the sales order, because master planning always uses existing supply or creates a new planned order to supply the physical reservation.
 
 ## Handle negative on-hand with coverage groups
 
-Because Planning Optimization treats negative aggregate on-hand as 0 (zero), you might need to configure your coverage groups to ensure that inventory is replenished to the levels your business requires. To control how the system responds to negative on-hand scenarios, you can define minimum and maximum quantities in item coverage groups.
+Because Planning Optimization treats negative aggregate on-hand as 0, you might need to configure your coverage groups to ensure that inventory is replenished to the levels your business requires. To control how the system responds to negative on-hand scenarios, define minimum and maximum quantities in item coverage groups.
 
 To configure coverage groups for handling negative on-hand, follow these steps:
 
-1. Go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**.
-2. Select or create a coverage group, and then set the **Coverage code** field to *Min/Max*.
-3. Go to **Master planning** > **Master planning** > **Setup** > **Coverage** > **Item coverage** for the relevant items.
-4. Set the **Minimum** field to the lowest inventory level that you want to maintain.
-5. Set the **Maximum** field to the target inventory level for replenishment.
+1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
+1. Select or create a coverage group, and then set the **Coverage code** field to *Min/Max*.
+1. Go to **Master planning** \> **Master planning** \> **Setup** \> **Coverage** \> **Item coverage** for the relevant items.
+1. Set the **Minimum** field to the lowest inventory level that you want to maintain.
+1. Set the **Maximum** field to the target inventory level for replenishment.
 
 When you run master planning, the system creates planned orders to bring inventory back up to the maximum level whenever the projected on-hand falls below the minimum level. This approach helps maintain appropriate inventory levels even when the system encounters negative on-hand quantities.
 
-For more information about coverage codes and how each replenishment method works, see [Coverage settings](../../coverage-settings.md).
+Learn more about coverage codes and how each replenishment method works in [Coverage settings](../../coverage-settings.md).
 
 ## Related information
 
