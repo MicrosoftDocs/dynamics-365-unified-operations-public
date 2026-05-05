@@ -15,11 +15,11 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, orders, and order lines. It provides the following two components that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
+The Rebate management module is used to create contracts, deals, or agreements between a business and its customers or vendors, so that rebates, deductions, and royalties can be calculated. When Unified pricing is enabled, rebates can be determined based on pricing attributes.
 
-Custom attributes are marked in the `GUPPRICINGATTRIBUTELINK` table using a specific identifier, which indicates that they require special logic in Commerce Scale Unit (CSU) to be supported in Dynamics 365 Commerce Point of Sale (POS). To mark a pricing attribute as custom, the `GUPPRICINGATTRIBUTELINK.TypeName` column must be set to `Customization`.
+The feature described in this article enables **non-attribute based rebate management deals** to be included in Unified pricing management scenarios. When enabled, existing rebate agreements are considered during pricing evaluation without requiring changes to their configuration.
 
-In CSU logic, if a custom pricing attribute is validated as `GUPPRICINGATTRIBUTELINK.TypeName = 'Customization'`, then the system calls the custom request handler.
+This capability allows organizations to continue using existing rebate management deals while adopting Unified pricing.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ To use the features described in this article, you must be running version 10.0.
 
 ## First steps
 
-Start by enabling the 
+Start by enabling the following features in your Microsoft finance and operations app.
 
 Navigate to Feature management workspace:
 
@@ -39,3 +39,7 @@ The "Unified pricing management" feature cannot be disabled if the "Enable non-a
 
 ## Enable non-attribute based rebate management deals
 
+1. New module entries
+2. New UI
+3. Global job
+4. Rebate workbench
