@@ -3,8 +3,10 @@ title: Bills of exchange protest import
 description: Learn how to set up Protest information from an electronic Bill of exchange protest file with an outline on importing electronic reporting configurations.
 author: kailiang
 ms.author: kailiang
-ms.topic: article
-ms.date: 04/15/2020
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.search.validFrom: 2020-06-01
@@ -35,8 +37,7 @@ On the **Method of payments – customers** page, enable the **Generic electroni
 ## Import protest information from an electronic file
 
 1. To import the file, create a **Protest bill of exchange** journal, and then select **Journal lines**.
-2. Select **Functions** \> **Import protest**.
-3. In the dialog box, select the method of payment for the protest import, and then attach the file. The journal lines are created based on information in the file.
-
+1. Select **Functions** \> **Import protest**.
+1. In the dialog box, select the method of payment for the protest import, and then attach the file. The journal lines are created based on information in the file.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

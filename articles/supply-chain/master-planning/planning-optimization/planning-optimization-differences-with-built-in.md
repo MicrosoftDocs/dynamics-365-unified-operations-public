@@ -6,23 +6,42 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/26/2026
+ms.date: 05/04/2026
 ms.custom: 
   - bap-template
+ms.collection:
+  - ai-assisted
 ---
 
 # Differences between Planning Optimization and the deprecated master planning engine
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimization results (including planned orders, quantities, and dates) might differ from results from the deprecated master planning engine. Pending features can cause these differences. This article lists differences between Planning Optimization and the deprecated master planning engine that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page.
+When you transition from the deprecated built-in master planning engine to Planning Optimization, you might notice differences in planned orders, quantities, and dates. Use this article and the related resources to identify whether an issue you're experiencing is due to an expected difference, an unsupported feature, or a parameter change.
+
+## Identify the type of issue
+
+Use the following table to find the right resource for your situation:
+
+| Issue | Resource |
+|---|---|
+| Planning Optimization shows different planned order results, dates, quantities, or behavior | [Expected differences](#expected-differences) (this article) |
+| A feature doesn't work or is missing in Planning Optimization | [Planning Optimization fit analysis](planning-optimization-fit-analysis.md) |
+| Date or time calculations produce different results | [Date and time parameters used by Planning Optimization](date-time-used.md) |
+| A master planning parameter seems to have no effect | [Parameters not used by Planning Optimization](not-used-parameters.md) |
+| You have questions about when the deprecated engine will be removed | [Deprecated master planning overview](../deprecated-master-planning-overview.md) |
+| You need guidance on the full migration process | [Migration to Planning Optimization](../new-master-planning-engine.md) |
+
+## Expected differences
+
+The following table lists specific differences between Planning Optimization and the deprecated master planning engine that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page.
 
 | Feature | How Planning Optimization differs from deprecated master planning |
 |---|---|
 | Forecasts for today's date | Planning Optimization doesn't consider forecasts for today's date, though the deprecated master planning engine considered them. |
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters). |
 | Forecast planning | Forecast planning isn't supported. Use master planning where a forecast model is assigned to the master plan. |
-| Number sequences for planned orders | Number sequences for planned orders aren't supported. The service generates planned order numbers. The planned order number normally shows 14 digits, but the sequence is actually built on 20 characters, with 6 digits allocated for the planning run count and 10 for the planned orders count. |
+| Number sequences for planned orders | Number sequences for planned orders aren't supported. Planning Optimization uses its own proprietary number sequence for all generated planned order numbers, and there's no method available for modifying this number sequence. The **Master scheduling planned order number** setting on the **Number sequences** tab of the **Master planning parameters** page has no effect when you use Planning Optimization. The planned order number normally shows 14 digits, but the sequence is actually built on 20 characters, with 6 digits allocated for the planning run count and 10 for the planned orders count. |
 | Plan copy, plan delete, and plan version cleanup | <p>Under **Master planning \> Master planning \> Maintain plans** in the navigation pane, the following items are disabled:</p><ul><li>Plan copy</li><li>Delete plan</li><li>Plan version cleanup</li></ul> Plan version cleanup is automatic with Planning Optimization, so you don't need to do it manually. |
 | Return orders | Planning Optimization doesn't consider return orders. |
 | Scheduling related features | For details, see [Scheduling with infinite capacity](infinite-capacity-planning.md#limitations). |
@@ -52,6 +71,8 @@ Planning Optimization results (including planned orders, quantities, and dates) 
 
 ## Related information
 
+- [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)
+- [Deprecated master planning overview](../deprecated-master-planning-overview.md)
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
 - [Parameters not used by Planning Optimization](not-used-parameters.md)
 - [Date and time parameters used by Planning Optimization](date-time-used.md)

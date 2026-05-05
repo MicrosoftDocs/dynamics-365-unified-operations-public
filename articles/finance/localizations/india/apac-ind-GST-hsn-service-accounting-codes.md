@@ -4,8 +4,9 @@ description: Learn how to define Harmonized System of Nomenclature (HSN) codes a
 author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 06/04/2019
-ms.custom:
+ms.date: 04/30/2026
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak  
 audience: Application User
 ms.search.region: India
@@ -18,7 +19,7 @@ ms.dyn365.ops.version: 10.0.4
 
 [!include [banner](../../includes/banner.md)]
 
-To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 Finance available, you must complete the following master data setup:
+To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 Finance available, complete the following master data setup steps:
 
 - Define a business vertical.
 - Update the state code and union territory.
@@ -31,65 +32,56 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 
 ## Define HSN codes
 
-1. Go to **Tax** \> **Setup** \> **Sales tax** \> **India** \> **HSN code**.
-2. Create a record.
-3. In the **Chapter** field, enter a value.
-4. In the **Heading** field, enter a value.
-5. In the **Subheading** field, enter a value.
-6. In the **Country/region extension** field, enter a value.
-7. In the **Statistical suffix** field, enter a value.
-8. Save the record, and verify that the **HSN code** field is updated.
-9. In the **Description** field, enter a value.
-10. Select **Close**.
-
-
+1. Go to **Tax** > **Setup** > **Sales tax** > **India** > **HSN code**.
+1. Create a record.
+1. In the **Chapter** field, enter a value.
+1. In the **Heading** field, enter a value.
+1. In the **Subheading** field, enter a value.
+1. In the **Country/region extension** field, enter a value.
+1. In the **Statistical suffix** field, enter a value.
+1. Save the record, and verify that the **HSN code** field is updated.
+1. In the **Description** field, enter a value.
+1. Select **Close**.
 
 ## Define SACs
 
-1. Go to **Tax** \> **Setup** \> **Sales tax** \> **India** \> **Service accounting codes**.
-2. Create a record.
-3. In the **SAC** field, enter a value.
-4. In the **Description** field, enter a value.
-5. Save the record, and then select **Close**.
-
-
+1. Go to **Tax** > **Setup** > **Sales tax** > **India** > **Service accounting codes**.
+1. Create a record.
+1. In the **SAC** field, enter a value.
+1. In the **Description** field, enter a value.
+1. Save the record, and then select **Close**.
 
 ## Assign HSN codes and SACs to products
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
-2. Select a product, and then select **Edit**.
-3. On the **General** FastTab, if the product type is **Item**, select a value in the **HSN codes** field. If the product type is **Service**, select a value in the **Service accounting codes** field.
-4. Save the record, and then select **Close**.
+1. Go to **Product information management** > **Products** > **Released products**.
+1. Select a product, and then select **Edit**.
+1. On the **General** FastTab, if the product type is **Item**, select a value in the **HSN codes** field. If the product type is **Service**, select a value in the **Service accounting codes** field.
+1. Save the record, and then select **Close**.
 
-The following setup is required for the calculation of GST:
+For the calculation of GST, you need to complete the following setup:
 
-- An HSN code should be defined for the **Item** product type, or an SAC should be defined for the **Service** product type.
-- The item sales tax group should be removed.
+- Define an HSN code for the **Item** product type, or define an SAC for the **Service** product type.
+- Remove the item sales tax group.
 
-![Assign HSN codes and SACs to products.](../media/Assign-codes-to-product_upd.png)
+:::image type="content" source="../media/Assign-codes-to-product_upd.png" alt-text="Screenshot of assigning HSN codes and SACs to products.":::
 
 ## Assign SACs to miscellaneous charges
 
-1. Go to **Accounts payable** \> **Charges setup** \> **Charges code**.
-2. Select a charges code.
-3. On the **Tax information** FastTab, in the **Service accounting codes** or **HSN codes** field, enter a value.
-4. In the **Service category** or **ITC Category** field, enter a value.
-5. Set the **Exempt** option to **Yes** to exempt these charges from the calculation of GST.
-6. Save the record.
+1. Go to **Accounts payable** > **Charges setup** > **Charges code**.
+1. Select a charges code.
+1. On the **Tax information** FastTab, in the **Service accounting codes** or **HSN codes** field, enter a value.
+1. In the **Service category** or **ITC Category** field, enter a value.
+1. Set the **Exempt** option to **Yes** to exempt these charges from the calculation of GST.
+1. Save the record.
 
-    When this charge code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
+    When you select this charge code for a transaction, the system automatically enters the defined tax information and calculates GST accordingly.
 
-    
+1. Go to **Accounts receivable** > **Charges setup** > **Charges code**.
+1. Select a charges code.
+1. On the **Tax information** FastTab, in the **Service accounting codes** or **HSN codes** field, enter a value.
+1. Set the **Exempt** option to **Yes** to exempt these charges from the calculation of GST.
+1. Save the record.
 
-7. Go to **Accounts receivable** \> **Charges setup** \> **Charges code**.
-8. Select a charges code.
-9. On the **Tax information** FastTab, in the **Service accounting codes** or **HSN codes** field, enter a value.
-10. Set the **Exempt** option to **Yes** to exempt these charges from the calculation of GST.
-11. Save the record.
-
-    When this charge code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
-
-    
-
+    When you select this charge code for a transaction, the system automatically enters the defined tax information and calculates GST accordingly.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

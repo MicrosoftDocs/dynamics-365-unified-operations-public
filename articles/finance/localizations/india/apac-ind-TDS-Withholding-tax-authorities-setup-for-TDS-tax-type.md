@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
@@ -22,15 +22,15 @@ This article explains how to set up Tax Deducted at Source (TDS) authorities.
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax authorities**.
 
-    [![Withholding tax authorities page.](../media/apac-ind-TDS-12.png)]
+    :::image type="content" source="../media/apac-ind-TDS-12.png" alt-text="Screenshot of the Withholding tax authorities page.":::
 
-2. In the **Tax type** field, select **TDS** to set up withholding tax authorities for the TDS tax type.
-3. On the Action Pane, select **New** to create a line.
-4. In the **Withholding tax authority** field, enter a name for the TDS authority.
-5. In the **Description** field, enter a description.
-6. On the **General** FastTab, in the **Vendor account** field, select the vendor account for the TDS authority.
+1. In the **Tax type** field, select **TDS** to set up withholding tax authorities for the TDS tax type.
+1. On the Action Pane, select **New** to create a line.
+1. In the **Withholding tax authority** field, enter a name for the TDS authority.
+1. In the **Description** field, enter a description.
+1. On the **General** FastTab, in the **Vendor account** field, select the vendor account for the TDS authority.
 
     > [!NOTE]
     > You must define the name of the bank where funds that are owed to the TDS authority vendor will be deposited. The bank's name is defined on the **Bank accounts** page (**Accounts payable \> All vendors \> Vendor \> Set up \> Bank accounts**).
 
-7. Close the page.
+1. Close the page.

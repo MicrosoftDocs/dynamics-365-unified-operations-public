@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 02/13/2026
+ms.date: 04/30/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -17,6 +17,51 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management. It lists changes for each version released since the general availability (GA) release of version 4. Notes for older versions are available in [Warehouse Management mobile app release notes archive](warehouse-app-whats-new-archive.md).
+
+Starting with version 4.1.1.0, every V4 and later release is tagged with its publication date. Publication dates determine whether a release is within the rolling 12-month support window that applies to V4 and all later releases. Learn more in [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy).
+
+## Release notes for version 4.1.1.0 (April 30, 2026)
+
+Version 4.1.1.0 focuses on performance, small-screen layouts, scanning reliability, and a broad set of platform-specific bug fixes.
+
+> [!IMPORTANT]
+> Starting on **May 1, 2027**, version 4 (V4) and every later release of the Warehouse Management mobile app follow a rolling 12-month support window. Microsoft accepts support cases only for releases that were published within the previous 12 months. This policy applies to every release from V4 onward, regardless of whether it's a major, minor, or patch version. The app continues to run on out-of-window releases, but support cases require an in-window version. This policy is critical to maintain the quality, security, and platform compatibility of the app. Learn more in [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy).
+
+### Key improvements
+
+- **Performance enhancements** – Faster response times for the calculator, quantity fields, and overall touch interactions.
+- **Small-screen optimization** – Improved layout and rendering for displays around 640 px, optimized for truck-mounted devices.
+- **Brokered authentication (optional)** – Fixed edge-case issues and updated the technical documentation. This feature remains optional.
+
+### Scanning and input improvements
+
+- **New scanning engine** – Hardware scans are now handled by a dedicated global listener for improved reliability. This change also addresses navigation issues on hardware that uses arrow keys.
+- **Dialog support** – Scans work correctly while error, confirmation, or option dialogs are displayed.
+- **Duplicate scan protection** – Prevents double actions on devices that send the same barcode through multiple channels.
+- **GS1 barcode support** – Batch numbers that contain GS1 separators (`0x1D`) are now handled correctly, resolving previous disconnection issues.
+- **Navigation fixes** – Restored arrow-key navigation for processes such as Sales picking, and fixed re-scanning during quantity confirmation.
+
+### Bug fixes
+
+#### Layout and display
+
+- **Pallet building** – The **Done** button is now visible on small or non-maximized windows. The **Correct**, **Cancel**, and **Done** actions are accessible without resizing.
+- **Calculator** – Fixed layout issues when using landscape mode on small screens.
+
+#### Windows
+
+- **Spinner control** – Fixed an issue where the spinner could stop between values. It now snaps correctly.
+- **Authentication** – Resolved a crash during sign-in caused by an unhandled exception.
+- **Clipboard** – Removed the unnecessary *Allow paste* prompt when selecting input fields.
+- **MDM** – Implemented mobile device management (MDM) read of configurations for Windows.
+
+#### iOS
+
+- **Calculator** – Fixed an issue where the calculator opened automatically without user interaction.
+
+#### Localization
+
+- **Spanish (ES)** – Fixed an issue where trailing or embedded zeros were removed from production and work quantities. Behavior now matches en-US formatting.
 
 ## Release notes for version 4.0.39.0
 
