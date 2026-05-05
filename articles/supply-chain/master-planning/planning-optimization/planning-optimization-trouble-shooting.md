@@ -294,7 +294,7 @@ This error message is related to a pending feature that is planned as part of th
 
 After running a master plan, you might receive the following error message:
 
-> Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> does not match the active planning attributes for this product and was ignored.
+> Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> doesn't match the active planning attributes for this product and was ignored.
 
 If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is tracked by serial number, you can't use the serial number dimension as a coverage dimension because the system doesn't know which serial numbers it should supply. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
 
