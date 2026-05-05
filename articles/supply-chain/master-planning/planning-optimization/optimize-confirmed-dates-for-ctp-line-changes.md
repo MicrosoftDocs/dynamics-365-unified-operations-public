@@ -29,7 +29,7 @@ Before you can use the **Optimize confirmed dates for CTP line changes** feature
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
 - You must use Planning Optimization.
 - You must use Capable-to-promise (CTP) delivery date control on the sales order line. You can use either *Near real-time CTP* or *Batch CTP*.
-- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+- The following features must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
   - *(Preview) Optimize confirmed dates for CTP line changes*
 
 ## Example scenario - changing to a faster mode of delivery
