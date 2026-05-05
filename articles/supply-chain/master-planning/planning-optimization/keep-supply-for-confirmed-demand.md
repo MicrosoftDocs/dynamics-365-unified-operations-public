@@ -31,7 +31,7 @@ Before you can use the **Keep supply for confirmed demand** feature, your system
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
 - You must use Planning Optimization.
-- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+- The following features must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
   - *(Preview) Keep supply for confirmed demand in Planning Optimization*
 
 > [!NOTE]
@@ -90,7 +90,7 @@ To set the parameter:
 
 ## Interaction with approved planned orders and the freezing time fence
 
-The **Keep supply for confirmed demand** feature works alongside approved planned orders and the existing [freezing time fence](freezing-time-fence.md) functionality. These features preserve planned orders from being replanned during planning runs, but they use different criteria:
+The **Keep supply for confirmed demand** feature works alongside approved planned orders and the existing freezing time fence functionality. These features preserve planned orders from being replanned during planning runs, but they use different criteria:
 
 | Feature | Criteria for preservation |
 |---|---|
