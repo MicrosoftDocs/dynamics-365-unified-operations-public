@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
@@ -22,10 +22,10 @@ This article explains how to set up payment schedules with Tax Deducted at Sourc
 
 1. Go to **Accounts payable \> Payment setup \> Payment schedules**.
 
-    [![Payment schedules page.](../media/apac-ind-TDS-27.png)]
+    :::image type="content" source="../media/apac-ind-TDS-27.png" alt-text="Screenshot of the Payment schedules page.":::
 
-2. On the Action Pane, select **New** to create a payment schedule, and enter the required details.
-3. In the **Allocation** field, select the method to use to allocate the payment for the payment schedule:
+1. On the Action Pane, select **New** to create a payment schedule, and enter the required details.
+1. In the **Allocation** field, select the method to use to allocate the payment for the payment schedule:
 
     - Total
     - Fixed amount
@@ -37,4 +37,4 @@ This article explains how to set up payment schedules with Tax Deducted at Sourc
     > [!NOTE]
     > If the **Withholding tax allocation** field is set to **Total**, the payment installments are calculated based on the gross amount, which includes the TDS amount. If the **Withholding tax allocation** field is set to **Proportionally**, the payment installments are calculated based on the net invoice amount after the TDS amount is deducted.
 
-4. Enter the other required details, and then close the page.
+1. Enter the other required details, and then close the page.

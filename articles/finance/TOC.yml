@@ -1777,7 +1777,11 @@
                         - name: Egypt
                           href: localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
                         - name: France
-                          href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance                        
+                          items:
+                            - name: Electronic invoicing via EDICOM (preview)
+                              href: localizations/france/emea-fra-einv-ereport.md?context=/dynamics365/context/finance
+                            - name: Electronic invoicing via Chorus Pro
+                              href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Italy
@@ -2882,6 +2886,8 @@
                       href: localizations/france/emea-fra-establishments-for-france.md
                     - name: Registration numbers setup for France
                       href: localizations/france/emea-fra-registration-numbers-setup-for-france.md
+                    - name: Invoice dates in France
+                      herf: accounts-receivable/invoice-date-france.md
                     - name: NAF codes
                       href: localizations/france/fr-00003-naf-codes-siret-numbers.md
                     - name: Penalties for past due customer payments

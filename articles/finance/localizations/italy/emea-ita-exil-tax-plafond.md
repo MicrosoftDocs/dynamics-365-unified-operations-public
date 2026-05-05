@@ -4,7 +4,9 @@ description: Learn how to set up and work with tax plafond, which is a tax exemp
 author: mrolecki
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/16/2025
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy

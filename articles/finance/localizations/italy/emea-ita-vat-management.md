@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.search.validFrom: 2019-07-01
@@ -40,13 +40,13 @@ For more information about the Date of VAT register feature, see [Tax point date
 
 When the Date of VAT register feature is turned on, users in legal entities that have their primary address in Italy will be able to set the **Date of VAT register** option on **General ledger parameters** page to **Yes**.
 
-![General ledger parameters page, Sales tax tab, Date of VAT register field is highlighted.](../media/date-of-vat-gl-parameter.png)
+:::image type="content" source="../media/date-of-vat-gl-parameter.png" alt-text="Screenshot of the General ledger parameters page, Sales tax tab, with the Date of VAT register field highlighted.":::
 
 When this option is set to **Yes**, the **Settle and post sales tax** process and the **Italian sales tax payment** report will consider sales tax transactions based on the date when the VAT was registered instead of the date when the transaction was posted.
 
 > [!NOTE]
-> The system won't allow you to perform these actions: 
-> 
+> The system won't allow you to perform these actions:
+>
 > - Set the **Date of VAT register** option on the **General ledger parameters** page to **Yes** if any tax transactions were posted in an open interval of the sales tax settlement period, but the value of the **Date of VAT register** field is in a closed interval of the sales tax settlement period.
 > - Set the **Date of VAT register** option on the **General ledger parameters** page to **No** if the value of the **Date of VAT register** field for any tax transactions is in a closed interval of the sales tax settlement period, but the transactions were posted in an open interval of the sales tax settlement period.
 > - Turn off the Date of VAT register feature in the **Feature management** workspace if the **Date of VAT register** option on the **General ledger parameters** page is set to **Yes** in at least one legal entity.
@@ -72,30 +72,28 @@ When the **Date of VAT register** option on the **General ledger parameters** pa
 - Pages for the sales tax books sections include a new **Date of VAT point (Date of VAT register)** column (**Momento di effettuazione dell'operazione** in Italian). This column represents the value of the **Date of VAT register** field for the tax transaction.
 - The totals for each sales tax book section are represented in three groups:
 
-    - Operations in the actual period that have a competence date in the actual period
-    - Operations in the actual period that have a competence date in the previous period
-    - Operations in the next period that have a competence date in the actual period
+  - Operations in the actual period that have a competence date in the actual period
+  - Operations in the actual period that have a competence date in the previous period
+  - Operations in the next period that have a competence date in the actual period
 
-- The totals by sales and purchase books are represented on three lines: 
+- The totals by sales and purchase books are represented on three lines:
 
-    - Total operations in the actual period that have a competence date in the actual period
-    - Total operations in the actual period that have a competence date in the previous period
-    - Total operations in the next period that have a competence date in the actual period
+  - Total operations in the actual period that have a competence date in the actual period
+  - Total operations in the actual period that have a competence date in the previous period
+  - Total operations in the next period that have a competence date in the actual period
 
 - A summary section represents the total VAT amounts by sales tax books sections. These amounts are grouped by sales tax book sections. This information is represented separately in three parts:
 
-    - Operations in the actual period that have a competence date in the actual period
-    - Operations in the actual period that have a competence date in the previous period
-    - Operations in the next period that have a competence date in the actual period
+  - Operations in the actual period that have a competence date in the actual period
+  - Operations in the actual period that have a competence date in the previous period
+  - Operations in the next period that have a competence date in the actual period
 
 - The totals in the summary section represent total VAT amounts by sales tax books sections. These amounts are grouped by sales tax book sections. This information is represented separately on three lines:
 
-    - Total operations in the actual period that have a competence date in the actual period
-    - Total operations in the actual period that have a competence date in the previous period
-    - Total operations in the next period that have a competence date in the actual period
+  - Total operations in the actual period that have a competence date in the actual period
+  - Total operations in the actual period that have a competence date in the previous period
+  - Total operations in the next period that have a competence date in the actual period
 
 - The **Total calculated considering competence date** amount is provided on a separate line.
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
