@@ -6,11 +6,9 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: troubleshooting-general
-ms.date: 05/04/2026
+ms.date: 05/05/2026
 ms.custom:
   - bap-template
-ms.collection:
-  - ai-assisted
 ms.collection:
   - ai-assisted
 ---
