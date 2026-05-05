@@ -4,7 +4,7 @@ description: Learn about wave label printing and explains how to set it up, incl
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 06/07/2024
+ms.date: 5/5/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
@@ -15,9 +15,9 @@ ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDo
 
 [!include [banner](../includes/banner.md)]
 
-Wave label printing offers an alternative approach to label printing by introducing a new wave step method that lets you create and print labels directly from the wave template during wave execution. Therefore, the labels will already be available before workers run the work order on a mobile device. Workers can then attach the required labels during picking instead of after picking.
+Wave label printing offers an alternative approach to label printing by introducing a new wave step method that lets you create and print labels directly from the wave template during wave execution. Therefore, the labels are available before workers run the work order on a mobile device. Workers can then attach the required labels during picking instead of after picking.
 
-Wave label printing uses Zebra Programming Language (ZPL) to create label layouts. A label layout is divided into three sections (header, body, and footer) to allow for labels that have repeating structure. Wave label templates tell the system which label layout to use. Users can specify which printer is used. They can also print labels on several printers at the same time, as they require. The **Wave label history** page shows a record of all labels that have been created by using this setup.
+Wave label printing uses Zebra Programming Language (ZPL) to create label layouts. A label layout is divided into three sections (header, body, and footer) to allow for labels that have repeating structure. Wave label templates tell the system which label layout to use. You can specify which printer to use. You can also print labels on several printers at the same time, as you require. The **Wave label history** page shows a record of all labels that are created by using this setup.
 
 You can print and collate labels based on work headers, you can print break labels per work header, and you can print container content labels, case labels, and other similar labels.
 
@@ -26,7 +26,7 @@ You can print and collate labels based on work headers, you can print break labe
 
 Wave label printing offers the following enhancements:
 
-- Print labels according to the number of cartons on a single work line, without using containerization. (A "carton" is a unit that is designated on unit sequence group lines.)
+- Print labels according to the number of cartons on a single work line, without using containerization. (A "carton" is a unit designated on unit sequence group lines.)
 - Print several different label sequences (for example, carton and pallet labels).
 - Include label enumeration (for example, 1/124, 2/124, ... 124/124), and define the range of enumeration (for example, work line, load line, or shipment).
 - Create and print a bill of lading ID on labels before the bill of lading is generated.
@@ -50,11 +50,11 @@ This scenario shows the end-to-end flow.
 
 ### Make demo data available for scenario 1
 
-To follow this scenario, you must have demo data installed, and you must select the **USMF** legal entity.
+To follow this scenario, ensure that you have the demo data installed, and select the **USMF** legal entity.
 
 ### Make sure that the wave label method is available for scenario 1
 
-You might have to regenerate the wave process methods to make the wave label printing method available.
+You might need to regenerate the wave process methods to make the wave label printing method available.
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave process methods**.
 1. Confirm that **waveLabelPrinting** is in the list. If it isn't, select **Regenerate methods** on the Action Pane to add it.
@@ -72,8 +72,8 @@ Wave templates let you link specific instances of wave methods to a correspondin
 
 The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that is sent to the printer.
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Wave label layouts**.
-1. Create a record that has the following settings:
+1. Go to **Warehouse management > Setup > Document routing > Wave label layouts**.
+1. Create a record with the following settings:
 
     - **Label layout ID:** *Carton*
     - **Description:** *Carton (SSCC)*
@@ -83,39 +83,39 @@ The label layout controls what information is printed on the label and how it's 
 
     The **Wave label row settings** page appears. Here, you can configure the dynamic part of the label.
 
-1. Add a row that has the following settings:
+1. Add a row with the following settings:
 
     - **Row Id:** *WaveLabel*
     - **Row table name:** *WHSWaveLabel*
     - **Row start position:** *0*
 
-        This field defines the vertical position where the row will begin on the label.
+        This field defines the vertical position where the row begins on the label.
 
     - **Row height:** *0*
 
-        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there's just one row in this example, you can set the value to *0* (zero).
+        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there's just one row in this example, set the value to *0* (zero).
 
     - **Rows per page:** *1*
 
-        This field defines the number of rows that can be printed on each label.
+        This field defines the number of rows that can print on each label.
 
         > [!NOTE]
-        > This setup will cause a separate ZPL label to be printed for each record in the wave labels table.
+                > This setup prints a separate ZPL label for each record in the wave labels table.
 
 1. Close the page.
 1. On the Action Pane, select **Edit query**.
-1. In the query editor dialog box, on the **Range** tab, add a row that has the following settings:
+1. In the query editor dialog box, on the **Range** tab, add a row with the following settings:
 
     - **Table:** *Work lines*
     - **Derived table:** *Work lines*
     - **Field:** *Work type*
     - **Criteria:** *Pick*
 
-    This query ensures that only pick-type work lines will be printed on the label, not put-type work lines.
+    This query ensures that only pick-type work lines print on the label, not put-type work lines.
 
-1. If you want to be able to print the bill of lading ID, on the **Joins** tab, select the **Work lines** table, and join the **Shipments** table to it.
+1. If you want to print the bill of lading ID, on the **Joins** tab, select the **Work lines** table, and join the **Shipments** table to it.
 1. Close the query editor dialog box.
-1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section** section, in the **Label header** field, enter code for the required header. For example, if you're using Zebra printers, you can use the following code.
+1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section**, in the **Label header** field, enter code for the required header. For example, if you're using Zebra printers, you can use the following code.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -155,7 +155,7 @@ The label layout controls what information is printed on the label and how it's 
     ^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)39021^FS
     ```
 
-1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here's an example.
+1. In **Body section**, in the **Label body** field, enter ZPL code for the required body. Here's an example.
 
     ```plaintext
     <Row name="WaveLabel">
@@ -174,20 +174,20 @@ The label layout controls what information is printed on the label and how it's 
     </Row>
     ```
 
-1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
+1. In **Body section**, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
 
     ```plaintext
     ^PQ1^XZ
     ```
 
     > [!NOTE]
-    > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the pallet), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print four copies of each label, specify **\^PQ4**.
+    > This setup prints one copy of each label. If you require more copies (for example, one copy for each side of the pallet), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print four copies of each label, specify **\^PQ4**.
 
 Your label is now ready to use.
 
 ### Create a wave label type
 
-Wave label types are used to link wave label templates to a unit on unit sequence group lines.
+Use wave label types to link wave label templates to a unit on unit sequence group lines.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Wave label types**.
 1. Add a wave label type that has the following settings:
@@ -226,17 +226,17 @@ Next, create the wave label template for the wave label type.
     - **Run query:** *Yes* (This setting is optional, but it's recommended for optimal performance.)
 
 1. On the Action Pane, select **Save**.
-1. Optional: If you're setting up a customer-specific label design, you must create a query to find the customer's account. On the **Wave label template details** FastTab, select **Edit query**. Then, in the query editor dialog box, on the **Range** tab, add a row that has the following settings:
+1. Optional: If you're setting up a customer-specific label design, create a query to find the customer's account. On the **Wave label template details** FastTab, select **Edit query**. Then, in the query editor dialog box, on the **Range** tab, add a row with the following settings:
 
     - **Table:** *Shipments*
     - **Derived table:** *Shipments*
     - **Field:** *Account number*
     - **Criteria:** Enter the relevant customer account number.
 
-    When you've finished, select **OK** to close the query editor dialog box.
+    When you finish, select **OK** to close the query editor dialog box.
 
 1. On the Action Pane, select **Edit query** to open the query editor dialog box for the whole label template.
-1. In the query editor dialog box, on the **Sorting** tab, add a row that has the following settings:
+1. In the query editor dialog box, on the **Sorting** tab, add a row with the following settings:
 
     - **Table:** *Work lines*
     - **Derived table:** *Work lines*
@@ -249,7 +249,7 @@ Next, create the wave label template for the wave label type.
 1. In the **Wave label template group** dialog box, select the row where the **Reference field name** field is set to *Reference load line id*, and then select the **Label build ID** check box for this row.
 
     > [!NOTE]
-    > This setup will create one label sequence ("Carton 1 of X") per load line throughout the wave, regardless of the work grouping setup. This label sequence can be printed on the label layout.
+        > This setup creates one label sequence ("Carton 1 of X") per load line throughout the wave, regardless of the work grouping setup. You can print this label sequence on the label layout.
 
 ### Configure number sequence extensions for scenario 1
 
@@ -257,13 +257,13 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
 ### Create a sales order and release it to the warehouse for scenario 1
 
-1. Go to **Sales and marketing \> Sales order \> All sales orders**.
-1. Create a sales order that has the following settings:
+1. Go to **Sales and marketing > Sales order > All sales orders**.
+1. Create a sales order with the following settings:
 
     - **Customer account:** *US-001*
     - **Warehouse:** *62*
 
-1. Add two sales order lines that have the following settings:
+1. Add two sales order lines with the following settings:
 
     - Sales order line 1:
 
@@ -278,7 +278,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
         - **Unit:** *ea* (9016 ea = 322 Box = 46 PL)
 
     > [!NOTE]
-    > The items and quantities that are provided here are only examples. They must use the unit sequence group that you defined earlier, appropriate unit conversions from *ea* to *Box* to *PL* must be defined for them, and they must have stock in warehouse *62*. Learn more in [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
+    > The items and quantities that are provided here are only examples. You must use the unit sequence group that you defined earlier, define appropriate unit conversions from *ea* to *Box* to *PL* for them, and ensure they have stock in warehouse *62*. For more information, see [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
 
 1. Select sales order line 1. Then, in the **Sales order line** section, on the **Inventory** menu, select **Reservations**.
 1. On the **Reservation** page, on the Action Pane, select **Reserve lot**, and then close the page.
@@ -287,26 +287,26 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
     The following events occur:
 
-    - The system processes the created shipment by using the template that includes the label printing step. The label layout will be used to define the format of the label, and the result will be a label that is printed on the printer that is selected in the label template.
-    - Wave labels are generated and printed. The number of labels will equal the number of cartons (in this example, 376 Box labels for line 1 and 322 Box labels for line 2).
-    - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs will follow the **SSCC-18** number format.
+        - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the result is a label that is printed on the printer, which is selected in the label template.
+    - Wave labels are generated and printed. The number of labels equals the number of cartons (in this example, 376 Box labels for line 1 and 322 Box labels for line 2).
+    - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs follow the **SSCC-18** number format.
 
 You can view and reprint wave labels from the following pages. On the Action Pane of each page, on the **Shipments** tab, in the **Related information** group, select **Wave labels**.
 
-- All shipments \> Shipment details
-- All loads \> Load details
+- All shipments > Shipment details
+- All loads > Load details
 - All waves
 - Wave labels
 - Wave label history
 
 ## Scenario 2: Wave label printing for containerization (without wave label records)
 
-This scenario lets you print wave labels when you use containerization to automatically split items into cartons and therefore don't require a wave label record. In this case, the container ID acts as a placeholder for the SSCC.
+This scenario shows how to print wave labels when you use containerization to automatically split items into cartons and therefore don't require a wave label record. In this case, the container ID acts as a placeholder for the SSCC.
 
 Here are the main differences between this scenario and scenario 1:
 
-- **Wave label templates:** You won't select a wave label type on the wave label template, and you won't require a label build grouping. Otherwise, you'll configure the wave label template and link to the wave template in the same way that is described in scenario 1. You must leave the wave label type blank to prevent wave labels from being generated.
-- **Wave label layouts:** You'll configure the wave label layout row settings for work lines instead of wave label records. You must configure the row setting for the label layout by using the **WHSWorkLine** table instead of the **WHSWaveLabel** table. The **Rows per page** setting controls the number of rows that the body section will have.
+- **Wave label templates:** You don't select a wave label type on the wave label template, and you don't require a label build grouping. Otherwise, you configure the wave label template and link to the wave template in the same way that is described in scenario 1. You must leave the wave label type blank to prevent wave labels from being generated.
+- **Wave label layouts:** You configure the wave label layout row settings for work lines instead of wave label records. You must configure the row setting for the label layout by using the **WHSWorkLine** table instead of the **WHSWaveLabel** table. The **Rows per page** setting controls the number of rows that the body section has.
 
 This configuration is also suitable for business scenarios where multiple different items are packed into one labeled box or into a pallet, and this packing process can be defined by work creation (for example, work that is grouped by shipment).
 
@@ -314,11 +314,11 @@ This scenario shows the end-to-end flow.
 
 ### Make demo data available for scenario 2
 
-To follow this scenario, you must have demo data installed, and you must select the **USMF** legal entity.
+To follow this scenario, ensure that you have the demo data installed, and select the **USMF** legal entity.
 
 ### Make sure that the wave label method is available for scenario 2
 
-You might have to regenerate the wave process methods to make the wave label printing method available.
+You might need to regenerate the wave process methods to make the wave label printing method available.
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave process methods**.
 1. Confirm that **waveLabelPrinting** is in the list. If it isn't, select **Regenerate methods** on the Action Pane to add it.
@@ -334,8 +334,8 @@ Wave templates let you link specific instances of wave methods to a correspondin
 
 ### Create a wave label layout for scenario 2
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Wave label layouts**.
-1. Create a record that has the following settings:
+1. Go to **Warehouse management > Setup > Document routing > Wave label layouts**.
+1. Create a record with the following settings:
 
     - **Label layout ID:** *Carton*
     - **Description:** *Carton (SSCC)*
@@ -345,13 +345,13 @@ Wave templates let you link specific instances of wave methods to a correspondin
 
     The **Wave label row settings** page appears. Here, you can configure the dynamic part of the label.
 
-1. Add a row that has the following settings:
+1. Add a row with the following settings:
 
     - **Row Id:** *WorkLine*
     - **Row table name:** *WHSWorkLine*
     - **Row start position:** *500*
 
-        This field defines the vertical position where the row will begin on the label.
+        This field defines the vertical position where the row begins on the label.
 
     - **Row height:** *-50*
 
@@ -359,23 +359,23 @@ Wave templates let you link specific instances of wave methods to a correspondin
 
     - **Rows per page:** *5*
 
-        This field defines the number of rows that can be printed on each label.
+        This field defines the number of rows that can print on each label.
 
         > [!NOTE]
-        > This setup will print several ZPL labels per work, where each page can hold up to five work lines. For example, if a label is printed for a container that has 12 lines, three labels will be printed. If you want to print a separate label for each pick line, set this value to *1*.
+        > This setup prints several ZPL labels per work, where each page can hold up to five work lines. For example, if a label is printed for a container that has 12 lines, three labels are printed. If you want to print a separate label for each pick line, set this value to *1*.
 
 1. Close the page.
 1. On the Action Pane, select **Edit query**.
-1. In the query editor dialog box, on the **Range** tab, add a row that has the following settings:
+1. In the query editor dialog box, on the **Range** tab, add a row with the following settings:
 
     - **Table:** *Work lines*
     - **Derived table:** *Work lines*
     - **Field:** *Work type*
     - **Criteria:** *Pick*
 
-1. If you want to be able to print the bill of lading ID, on the **Joins** tab, select the **Work lines** table, and join the **Shipments** table to it.
+1. If you want to print the bill of lading ID, on the **Joins** tab, select the **Work lines** table, and join the **Shipments** table to it.
 1. Close the query editor dialog box.
-1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section** section, in the **Label header** field, enter code for the required header. For example, if you're using Zebra printers, you can use the following code.
+1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section**, in the **Label header** field, enter code for the required header. For example, if you're using Zebra printers, you can use the following code.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -386,7 +386,7 @@ Wave templates let you link specific instances of wave methods to a correspondin
     ^FO0,150 ^AT ^FD$WHSShipmentTable.BillOfLadingId$ ^FS
     ```
 
-1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here's an example.
+1. In **Body section**, in the **Label body** field, enter ZPL code for the required body. Here's an example.
 
     ```plaintext
     <Row name="WorkLine">
@@ -400,14 +400,14 @@ Wave templates let you link specific instances of wave methods to a correspondin
     </Row>
     ```
 
-1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
+1. In **Body section**, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
 
     ```plaintext
     ^PQ1^XZ
     ```
 
     > [!NOTE]
-    > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the pallet), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print four copies of each label, specify **\^PQ4**.
+    > This setup prints one copy of each label. If you require more copies (for example, one copy for each side of the pallet), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print four copies of each label, specify **\^PQ4**.
 
 Your label is now ready to use.
 
@@ -421,21 +421,21 @@ Your label is now ready to use.
     - **Wave step code:** *PrintLabel*
     - **Warehouse:** *63*
 
-1. On the **Wave label template details** FastTab, add a row that has the following settings:
+1. On the **Wave label template details** FastTab, add a row with the following settings:
 
     - **Label layout ID:** *Container*
     - **Printer name:** Select an appropriate ZPL printer.
     - **Run query:** *Yes* (This setting is optional, but it's recommended for optimal performance.)
 
 1. On the Action Pane, select **Save**.
-1. Optional: If you're setting up a customer-specific label design, you must create a query to find the customer's account. On the **Wave label template details** FastTab, select **Edit query**. Then, in the query editor dialog box, on the **Range** tab, add a row that has the following settings:
+1. Optional: If you're setting up a customer-specific label design, create a query to find the customer's account. On the **Wave label template details** FastTab, select **Edit query**. Then, in the query editor dialog box, on the **Range** tab, add a row with the following settings:
 
     - **Table:** *Shipments*
     - **Derived table:** *Shipments*
     - **Field:** *Account number*
     - **Criteria:** Enter the relevant customer account number.
 
-    When you've finished, select **OK** to close the query editor dialog box.
+    When you finish, select **OK** to close the query editor dialog box.
 
 ### Configure number sequence extensions for scenario 2
 
@@ -443,8 +443,8 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
 ### Create a sales order and release it to the warehouse for scenario 2
 
-1. Go to **Sales and marketing \> Sales order \> All sales orders**.
-1. Create a sales order that has the following settings:
+1. Go to **Sales and marketing > Sales order > All sales orders**.
+1. Create a sales order with the following settings:
 
     - **Customer account:** *US-001*
     - **Warehouse:** *63*
@@ -486,26 +486,26 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
     The following events occur:
 
-    - The system processes the created shipment using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label that has five lines and that is printed on the printer that is selected in the label template.
-    - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs will follow the **SSCC-18** number format.
+        - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the end result is a label that has five lines and that is printed on the printer, which is selected in the label template.
+    - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs follow the **SSCC-18** number format.
 
-You can reprint these wave labels by going to **Warehouse management \> Enquiries and reports \> Wave label history**.
+You can reprint these wave labels by going to **Warehouse management > Enquiries and reports > Wave label history**.
 
-## Scenario 3: Wave label printing for multi-tiered labels
+## Scenario 3: Wave label printing for multilevel labels
 
-This scenario shows how to use the wave label printing functionality when the warehousing processes require several tiers of shipping labels. For example, separate labels might have to be printed for cartons and pallets, and a break label might have to be printed for a whole shipment. Break labels are a separate type of label that can be used as a divider between rolls and containers, such as labels for the shipment ID and a bar code, so that the labels can easily be sorted after they're printed.
+This scenario shows how to use the wave label printing functionality when the warehousing processes require several tiers of shipping labels. For example, you might need to print separate labels for cartons and pallets, and you might need to print a break label for a whole shipment. Break labels are a separate type of label that can be used as a divider between rolls and containers, such as labels for the shipment ID and a bar code, so that the labels can easily be sorted after they're printed.
 
 The main difference between the configuration of this scenario and the configuration of scenario 1, besides the fact that break labels are enabled, is that multiple wave label types must be associated with wave label templates and unit sequence group lines. To accomplish this configuration, you set up the following elements for this scenario:
 
-- **Wave processing methods:** You'll mark the wave label method as "repeatable," add it two (or more) times to the wave template, and set different wave step codes.
-- **Wave label templates:** You'll configure the wave label templates and link them to the wave template. Each wave label template has its own wave label type.
-- **Wave label layouts:** You'll create multiple wave label layouts. There will be a separate label layout for each "tier" of labels, and there will also be a break label layout.
+- **Wave processing methods:** Mark the wave label method as repeatable, add it two or more times to the wave template, and set different wave step codes.
+- **Wave label templates:** Configure the wave label templates and link them to the wave template. Each wave label template has its own wave label type.
+- **Wave label layouts:** Create multiple wave label layouts. There is a separate label layout for each tier of labels, and there is also a break label layout.
 
 This scenario shows the end-to-end flow.
 
 ### Make demo data available for scenario 3
 
-To follow this scenario, you must have demo data installed, and you must select the **USMF** legal entity.
+To follow this scenario, ensure that you have the demo data installed, and select the **USMF** legal entity.
 
 ### Set up a wave process method
 
@@ -516,16 +516,16 @@ To follow this scenario, you must have demo data installed, and you must select 
 ### Set up a wave template for scenario 3
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
-2. Select a template, such as **62 Shipping Default**.
-3. On the **Methods** FastTab, move the **Wave label printing** method to the **Selected methods** column.
-4. In the **Selected methods** column, assign a **Wave step code** value, such as *Carton*, to the **Wave label printing** method. For more information about wave step codes, see [Wave step codes](wave-step-codes.md).
-5. Move the **Wave label printing** method to the **Selected methods** column a second time.
-6. In the **Selected methods** column, assign a different **Wave step code** value, such as *Pallet*, to the second **Wave label printing** method. For more information about wave step codes, see [Wave step codes](wave-step-codes.md).
+1. Select a template, such as **62 Shipping Default**.
+1. On the **Methods** FastTab, move the **Wave label printing** method to the **Selected methods** column.
+1. In the **Selected methods** column, assign a **Wave step code** value, such as *Carton*, to the **Wave label printing** method. For more information about wave step codes, see [Wave step codes](wave-step-codes.md).
+1. Move the **Wave label printing** method to the **Selected methods** column a second time.
+1. In the **Selected methods** column, assign a different **Wave step code** value, such as *Pallet*, to the second **Wave label printing** method. For more information about wave step codes, see [Wave step codes](wave-step-codes.md).
 
 ### Create three wave label layouts for scenario 3
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Wave label layouts**.
-1. Create a record that has the following settings:
+1. Go to **Warehouse management > Setup > Document routing > Wave label layouts**.
+1. Create a record with the following settings:
 
     - **Label layout ID:** *Carton*
     - **Description:** *Carton (SSCC)*
@@ -535,39 +535,39 @@ To follow this scenario, you must have demo data installed, and you must select 
 
     The **Wave label row settings** page appears. Here, you can configure the dynamic part of the label.
 
-1. Add a row that has the following settings:
+1. Add a row with the following settings:
 
     - **Row Id:** *WaveLabel*
     - **Row table name:** *WHSWaveLabel*
     - **Row start position:** *0*
 
-        This field defines the vertical position where the row will begin on the label.
+        This field defines the vertical position where the row begins on the label.
 
     - **Row height:** *0*
 
-        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there's just one row in this example, you can set the value to *0* (zero).
+        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there's just one row in this example, set the value to *0* (zero).
 
     - **Rows per page:** *1*
 
-        This field defines the number of rows that can be printed on each label.
+        This field defines the number of rows that can print on each label.
 
         > [!NOTE]
-        > This setup will cause a separate ZPL label to be printed for each record in the wave labels table.
+                > This setup prints a separate ZPL label for each record in the wave labels table.
 
 1. Close the page.
 1. On the Action Pane, select **Edit query**.
-1. In the query editor dialog box, on the **Range** tab, add a row that has the following settings:
+1. In the query editor dialog box, on the **Range** tab, add a row with the following settings:
 
     - **Table:** *Work lines*
     - **Derived table:** *Work lines*
     - **Field:** *Work type*
     - **Criteria:** *Pick*
 
-    This query ensures that only pick-type work lines will be printed on the label, not put-type work lines.
+    This query ensures that only pick-type work lines print on the label, not put-type work lines.
 
-1. If you want to be able to print the bill of lading ID, on the **Joins** tab, select the **Work lines** table, and join the **Shipments** table to it.
+1. If you want to print the bill of lading ID, on the **Joins** tab, select the **Work lines** table, and join the **Shipments** table to it.
 1. Close the query editor dialog box.
-1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section** section, in the **Label header** field, enter code for the required header. For example, if you're using Zebra printers, you can use the following code.
+1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section**, in the **Label header** field, enter code for the required header. For example, if you're using Zebra printers, you can use the following code.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -607,7 +607,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     ^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)39021^FS
     ```
 
-1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here's an example.
+1. In **Body section**, in the **Label body** field, enter ZPL code for the required body. Here's an example.
 
     ```plaintext
     <Row name="WaveLabel">
@@ -626,17 +626,17 @@ To follow this scenario, you must have demo data installed, and you must select 
     </Row>
     ```
 
-1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
+1. In **Body section**, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
 
     ```plaintext
     ^PQ1^XZ
     ```
 
     > [!NOTE]
-    > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the pallet), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print four copies of each label, specify **\^PQ4**.
+    > This setup prints one copy of each label. If you require more copies (for example, one copy for each side of the pallet), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print four copies of each label, specify **\^PQ4**.
 
 1. The first label is now ready to use.
-1. Create a second layout record that has the following settings:
+1. Create a second layout record with the following settings:
 
     - **Label layout ID:** *Pallet*
     - **Description:** *Pallet*
@@ -646,39 +646,39 @@ To follow this scenario, you must have demo data installed, and you must select 
 
     The **Wave label row settings** page appears. Here, you can configure the dynamic part of the label.
 
-1. Add a row that has the following settings:
+1. Add a row with the following settings:
 
     - **Row Id:** *WaveLabel*
     - **Row table name:** *WHSWaveLabel*
     - **Row start position:** *0*
 
-        This field defines the vertical position where the row will begin on the label.
+        This field defines the vertical position where the row begins on the label.
 
     - **Row height:** *0*
 
-        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there's just one row in this example, you can set the value to *0* (zero).
+        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there's just one row in this example, set the value to *0* (zero).
 
     - **Rows per page:** *1*
 
-        This field defines the number of rows that can be printed on each label.
+        This field defines the number of rows that can print on each label.
 
         > [!NOTE]
         > This setup causes a separate ZPL label to be printed for each record in the wave labels table.
 
 1. Close the page.
 1. On the Action Pane, select **Edit query**.
-1. In the query editor dialog box, on the **Range** tab, add a row that has the following settings:
+1. In the query editor dialog box, on the **Range** tab, add a row with the following settings:
 
     - **Table:** *Work lines*
     - **Derived table:** *Work lines*
     - **Field:** *Work type*
     - **Criteria:** *Pick*
 
-    This query ensures that only pick-type work lines will be printed on the label, not put-type work lines.
+    This query ensures that only pick-type work lines print on the label, not put-type work lines.
 
-1. If you want to be able to print the bill of lading ID, on the **Joins** tab, select the **Work lines** table, and join the **Shipments** table to it.
+1. If you want to print the bill of lading ID, on the **Joins** tab, select the **Work lines** table, and join the **Shipments** table to it.
 1. Close the query editor dialog box.
-1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section** section, in the **Label header** field, enter code for the required header. For example, if you're using Zebra printers, you can use the following code.
+1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section**, in the **Label header** field, enter code for the required header. For example, if you're using Zebra printers, you can use the following code.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -689,7 +689,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     ^FO0,150 ^AT ^FD$WHSShipmentTable.BillOfLadingId$ ^FS
     ```
 
-1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here's an example.
+1. In **Body section**, in the **Label body** field, enter ZPL code for the required body. Here's an example.
 
     ```plaintext
     <Row name="WaveLabel">
@@ -700,14 +700,14 @@ To follow this scenario, you must have demo data installed, and you must select 
     </Row>
     ```
 
-1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
+1. In **Body section**, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
 
     ```plaintext
     ^PQ1^XZ
     ```
 
     > [!NOTE]
-    > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the pallet), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print four copies of each label, specify **\^PQ4**.
+    > This setup prints one copy of each label. If you require more copies (for example, one copy for each side of the pallet), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print four copies of each label, specify **\^PQ4**.
 
 1. The second label is now ready to use.
 1. Create a third layout record that has the following settings:
@@ -716,7 +716,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     - **Description:** *Break label*
 
 1. On the Action Pane, select **Save**.
-1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section** section, in the **Label header** field, enter ZPL code for the required header. Here's an example.
+1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section**, in the **Label header** field, enter ZPL code for the required header. Here's an example.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -725,7 +725,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     ^FO0,0 ^AT ^FD$WHSWorkLine.ShipmentId$ ^FS
     ```
 
-1. This time, no body is required. Therefore, just enter the required text in the **Footer section** section. Here's an example.
+1. This time, no body is required. Therefore, just enter the required text in the **Footer section**. Here's an example.
 
     ```plaintext
     ^XZ
@@ -734,12 +734,12 @@ To follow this scenario, you must have demo data installed, and you must select 
     The third label is now ready to use.
 
     > [!NOTE]
-    > This third label is a break label that will be used as a divider between label rolls.
+        > This third label is a break label used as a divider between label rolls.
 
 ### Create two wave label types
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Wave label types**.
-1. Create a record that has the following settings:
+1. Create a record with the following settings:
 
     - **Label type:** *Carton*
     - **Description:** *Carton*
@@ -759,7 +759,7 @@ To follow this scenario, you must have demo data installed, and you must select 
 ### Create wave label templates
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Wave label templates**.
-1. Create a label template that has the following settings:
+1. Create a label template with the following settings:
 
     - **Label template name:** *Carton labels*
     - **Description:** *Carton labels*
@@ -767,31 +767,31 @@ To follow this scenario, you must have demo data installed, and you must select 
     - **Warehouse:** *62*
 
 1. On the **General** FastTab, in the **Wave label type** field, select a value, such as *Carton*.
-1. On the **Wave label template details** FastTab, add a row that has the following settings:
+1. On the **Wave label template details** FastTab, add a row with the following settings:
 
     - **Label layout ID:** *Carton*
     - **Printer name:** Select an appropriate ZPL printer.
     - **Run query:** *Yes* (This setting is optional, but it's recommended for optimal performance.)
 
 1. On the Action Pane, select **Save**.
-1. Optional: If you're setting up a customer-specific label design, you must create a query to find the customer's account. On the **Wave label template details** FastTab, select **Edit query**. Then, in the query editor dialog box, on the **Range** tab, add a row that has the following settings:
+1. Optional: If you're setting up a customer-specific label design, create a query to find the customer's account. On the **Wave label template details** FastTab, select **Edit query**. Then, in the query editor dialog box, on the **Range** tab, add a row with the following settings:
 
     - **Table:** *Shipments*
     - **Derived table:** *Shipments*
     - **Field:** *Account number*
     - **Criteria:** Enter the relevant customer account number.
 
-    When you've finished, select **OK** to close the query editor dialog box.
+    When you finish, select **OK** to close the query editor dialog box.
 
 1. On the Action Pane, select **Edit query** to open the query editor dialog box for the whole label template.
-1. In the query editor dialog box, on the **Sorting** tab, add a row that has the following settings:
+1. In the query editor dialog box, on the **Sorting** tab, add a row with the following settings:
 
     - **Table:** *Work lines*
     - **Derived table:** *Work lines*
     - **Field:** *Reference load line id (Record-ID)*
     - **Search direction:** *Ascending*
 
-1. Add a second row that has the following settings:
+1. Add a second row with the following settings:
 
     - **Table:** *Work lines*
     - **Derived table:** *Work lines*
@@ -805,15 +805,15 @@ To follow this scenario, you must have demo data installed, and you must select 
 
     - **Print break label:** Select this check box.
     - **Label layout ID:** Select a break label. (For example, select the *Break* label layout that you created earlier in this scenario.)
-    - **Printer name:** Select the printer for the break label. (Typically, when splitting label rolls, you would select the same printer that is selected on the **Wave label template details** FastTab. However, other scenarios are possible.)
+    - **Printer name:** Select the printer for the break label. (Typically, when splitting label rolls, you select the same printer that is selected on the **Wave label template details** FastTab. However, other scenarios are possible.)
 
 1. For the row where the **Reference field name** field is set to *Reference load line id*, select the **Label build ID** check box.
 
     > [!NOTE]
-    > This setup will create one label sequence ("Carton 1 of X") per load line throughout the wave, regardless of the work grouping setup. This label sequence can be printed on a label layout. Additionally, labels for different shipments will be separated by the selected break label.
+    > This setup creates one label sequence ("Carton 1 of X") per load line throughout the wave, regardless of the work grouping setup. You can print this label sequence on a label layout. Additionally, labels for different shipments are separated by the selected break label.
 
 1. Select **OK** to close the **Wave label template group** dialog box.
-1. Create a second label template that has the following settings:
+1. Create a second label template with the following settings:
 
     - **Label template name:** *Pallet labels*
     - **Description:** *Pallet labels*
@@ -821,31 +821,31 @@ To follow this scenario, you must have demo data installed, and you must select 
     - **Warehouse:** *62*
 
 1. On the **General** FastTab, in the **Wave label type** field, select a value, such as *Pallet*.
-1. On the **Wave label template details** FastTab, add a row that has the following settings:
+1. On the **Wave label template details** FastTab, add a row with the following settings:
 
     - **Label layout ID:** *Pallet*
     - **Printer name:** Select an appropriate ZPL printer.
     - **Run query:** *Yes* (This setting is optional, but it's recommended for optimal performance.)
 
 1. On the Action Pane, select **Save**.
-1. Optional: If you're setting up a customer-specific label design, you must create a query to find the customer's account. On the **Wave label template details** FastTab, select **Edit query**. Then, in the query editor dialog box, on the **Range** tab, add a row that has the following settings:
+1. Optional: If you're setting up a customer-specific label design, create a query to find the customer's account. On the **Wave label template details** FastTab, select **Edit query**. Then, in the query editor dialog box, on the **Range** tab, add a row with the following settings:
 
     - **Table:** *Shipments*
     - **Derived table:** *Shipments*
     - **Field:** *Account number*
     - **Criteria:** Enter the relevant customer account number.
 
-    When you've finished, select **OK** to close the query editor dialog box.
+    When you finish, select **OK** to close the query editor dialog box.
 
 1. On the Action Pane, select **Edit query** to open the query editor dialog box for the whole label template.
-1. In the query editor dialog box, on the **Sorting** tab, add a row that has the following settings:
+1. In the query editor dialog box, on the **Sorting** tab, add a row with the following settings:
 
     - **Table:** *Work lines*
     - **Derived table:** *Work lines*
     - **Field:** *Reference load line id (Record-ID)*
     - **Search direction:** *Ascending*
 
-1. Add a second row that has the following settings:
+1. Add a second row with the following settings:
 
     - **Table:** *Work lines*
     - **Derived table:** *Work lines*
@@ -859,12 +859,12 @@ To follow this scenario, you must have demo data installed, and you must select 
 
     - **Print break label:** Select this check box.
     - **Label layout ID:** Select a break label. (For example, select the *Break* label layout that you created earlier in this scenario.)
-    - **Printer name:** Select the printer for the break label. (Typically, when splitting label rolls, you would select the same printer that is selected on the **Wave label template details** FastTab. However, other scenarios are possible.)
+    - **Printer name:** Select the printer for the break label. (Typically, when splitting label rolls, you select the same printer that is selected on the **Wave label template details** FastTab. However, other scenarios are possible.)
 
 1. For the row where the **Reference field name** field is set to *Reference load line id*, select the **Label build ID** check box.
 
     > [!NOTE]
-    > This setup will create one label sequence ("Carton 1 of X") per load line throughout the wave, regardless of the work grouping setup. This label sequence can be printed on a label layout. Additionally, labels for different shipments will be separated by the selected break label.
+    > This setup creates one label sequence ("Carton 1 of X") per load line throughout the wave, regardless of the work grouping setup. You can print this label sequence on a label layout. Additionally, labels for different shipments are separated by the selected break label.
 
 ### Configure number sequence extensions for scenario 3
 
@@ -872,8 +872,8 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
 ### Create a sales order and release it to the warehouse for scenario 3
 
-1. Go to **Sales and marketing \> Sales order \> All sales orders**.
-1. Create a sales order that has the following settings:
+1. Go to **Sales and marketing > Sales order > All sales orders**.
+1. Create a sales order with the following settings:
 
     - **Customer account:** *US-001*
     - **Warehouse:** *62*
@@ -893,7 +893,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
         - **Unit:** *ea* (9016 ea = 322 Box = 46 PL)
 
     > [!NOTE]
-    > The items and quantities that are provided here are only examples. They must use the unit sequence group that you defined earlier, appropriate unit conversions from *ea* to *Box* to *PL* must be defined for them, and they must have stock in warehouse *62*. Learn more in [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
+    > The items and quantities that are provided here are only examples. You must use the unit sequence group that you defined earlier, define appropriate unit conversions from *ea* to *Box* to *PL* for them, and ensure they have stock in warehouse *62*. For more information, see [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
 
 1. Select sales order line 1. Then, in the **Sales order line** section, on the **Inventory** menu, select **Reservations**.
 1. On the **Reservation** page, on the Action Pane, select **Reserve lot**, and then close the page.
@@ -902,14 +902,14 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
     The following events occur:
 
-    - The system processes the created shipment by using the template that includes the label printing step. The label layout will be used to define the format of the label, and the result will be a label that is printed on the printer that is selected in the label template.
-    - Wave labels are generated and printed. The number of labels will equal the number of cartons (in this example, 376 Box labels for line 1, 322 Box labels for line 2, 47 PL labels for line 1, 47 PL labels for line 2, and two break labels that have the shipment ID).
-    - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs will follow the **SSCC-18** number format.
+        - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the result is a label that is printed on the printer, which is selected in the label template.
+    - Wave labels are generated and printed. The number of labels equals the number of cartons (in this example, 376 Box labels for line 1, 322 Box labels for line 2, 47 PL labels for line 1, 47 PL labels for line 2, and two break labels that have the shipment ID).
+    - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs follow the **SSCC-18** number format.
 
 You can view and reprint wave labels from the following pages:
 
-- All shipments \> Shipment details
-- All loads \> Load details
+- All shipments > Shipment details
+- All loads > Load details
 - All waves
 - Wave labels
 - Wave label history
