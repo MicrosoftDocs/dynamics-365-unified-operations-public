@@ -128,7 +128,7 @@ When planning runs, it groups the demand for ItemSFG1 from both orders into a si
 
 The following illustration shows how the system identifies confirmed requirements for both customers. The shared (grouped) ItemSFG1 planned production order and its entire sub-tree are marked as confirmed (highlighted in blue).
 
-![Diagram showing confirmed requirements across two customer orders with grouped ItemSFG1 component.](Diagram1.png)
+![Diagram showing confirmed requirements across two customer orders with grouped ItemSFG1 component.](media/keep-supply-for-confirmed-demand-scenario-period-grouping.png)
 
 ### Remove a confirmed sales line
 
@@ -136,7 +136,7 @@ If the sales order for Customer 2 is later canceled, the system removes only the
 
 The grouped ItemSFG1 branch and all its sub-components remain intact. Their quantities are not reduced either, because they remain linked to demand from Customer 1 and are therefore considered confirmed.
 
-![Diagram showing that removing Customer 2 sales line only removes explicitly linked requirements while shared requirements remain.](Diagram2.png)
+![Diagram showing that removing Customer 2 sales line only removes explicitly linked requirements while shared requirements remain.](media/keep-supply-for-confirmed-demand-scenario-period-grouping-delete.png)
 
 ## Example scenario with coverage by requirement
 
@@ -164,7 +164,7 @@ When planning runs, the *Requirement* coverage code causes a separate supply bra
 
 The following illustration shows the two confirmed branches. Both branches and their pegging are marked as confirmed (highlighted in blue).
 
-![Diagram showing two confirmed branches: ItemFG1 for Customer 1 pegged to a planned purchase order for ItemRM1, and ItemFG1 for Customer 2 pegged to a released purchase order for ItemRM1.](Diagram3.png)
+![Diagram showing two confirmed branches: ItemFG1 for Customer 1 pegged to a planned purchase order for ItemRM1, and ItemFG1 for Customer 2 pegged to a released purchase order for ItemRM1.](media/keep-supply-for-confirmed-demand-scenario-by-requirement.png)
 
 ### Remove a confirmed sales line backed by a firmed purchase order
 
@@ -172,7 +172,7 @@ If the sales order for Customer 2 is later canceled, the system removes only the
 
 The pegging from the planned purchase order is also preserved as-is. Planning does not re-peg the released purchase order to other confirmed demand, even though the sales line for Customer 2 is no longer present. The released purchase order remains in the system and can be used by any other demand that is not yet confirmed.
 
-![Diagram showing that removing sales line for Customer 2 removes the planned production order for ItemFG1 but leaves the released purchase order for ItemRM1.](Diagram4.png)
+![Diagram showing that removing sales line for Customer 2 removes the planned production order for ItemFG1 but leaves the released purchase order for ItemRM1.](media/keep-supply-for-confirmed-demand-scenario-by-requirement-delete.png)
 
 ## Performance considerations
 
