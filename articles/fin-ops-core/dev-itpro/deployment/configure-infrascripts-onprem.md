@@ -149,7 +149,7 @@ When the **ProtectTo** field for a certificate is set, common practice is to spe
 </Certificate>
 ```
 
-The certificate of the **ServiceFabric** type is your combined certificate that protects your cluster and is presented by other services that are hosted in the cluster. The **Name** field is mapped to the friendly name of a certificate. The **FileName** field is used to give the certificate a file name when it's exported. The **DNSName** field is mapped to the subject alternative names (SANs) of a certificate. The **Subject** field is mapped to the subject name (also known as the common name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage**, and **CertificateType** fields, because they're hard-coded as required to correctly generate the certificate. If you update those fields, there's no guarantee that the certificate works, or that the scripts themselves support the specified values.
+The certificate of the **ServiceFabric** type is the server certificate that is presented by Service Fabric services in the cluster. If the **Gateway** certificate isn't enabled, this certificate is also used for the Dynamics 365 application endpoints (the AOS DNS endpoint). The **Name** field is mapped to the friendly name of a certificate. The **FileName** field is used to give the certificate a file name when it's exported. The **DNSName** field is mapped to the subject alternative names (SANs) of a certificate. The **Subject** field is mapped to the subject name (also known as the common name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage**, **CertificateTemplate**, or **ValidityInDays** fields, because they're preconfigured as required to correctly generate the certificate. If you update those fields, there's no guarantee that the certificate works, or that the scripts themselves support the specified values.
 
 ```xml
 <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
@@ -159,7 +159,46 @@ The certificate of the **ServiceFabric** type is your combined certificate that 
     <Subject>sf.lab.local</Subject>
     <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
     <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+    <EnhancedKeyUsage>Server Authentication</EnhancedKeyUsage>
+    <CertificateTemplate>D365FinOpsLBDServerTemplate</CertificateTemplate>
+    <ValidityInDays>200</ValidityInDays>
+    <Thumbprint></Thumbprint>
+    <ProtectTo>LAB\D365Admins</ProtectTo>
+</Certificate>
+```
+
+The certificate of the **ServiceFabricCluster** type is the cluster certificate used for node-to-node communication within the Service Fabric cluster. Configure it with a unique subject name that is different from the **ServiceFabric** certificate. This certificate requires both Server Authentication and Client Authentication enhanced key usages. Starting in the summer of 2026, public certificate authorities will no longer issue certificates with this dual EKU combination. Therefore, this certificate must be issued by your own PKI (such as AD&nbsp;CS) or be self-signed. For more information about this requirement, see [Service Fabric Client EKU Removal](https://github.com/microsoft/service-fabric/blob/master/release_notes/Resources/ClientEKURemoval.md).
+
+```xml
+<Certificate type="ServiceFabricCluster" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
+    <Name>cluster.lab.local</Name>
+    <FileName>cluster.lab.local</FileName>
+    <DNSName>cluster.lab.local</DNSName>
+    <Subject>cluster.lab.local</Subject>
+    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+    <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
     <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+    <CertificateTemplate>D365FinOpsLBDCommonTemplate</CertificateTemplate>
+    <ValidityInDays>200</ValidityInDays>
+    <Thumbprint></Thumbprint>
+    <ProtectTo>LAB\D365Admins</ProtectTo>
+</Certificate>
+```
+
+The certificate of the **Gateway** type is an optional certificate for customers who want to use a separate certificate for the Dynamics 365 application endpoints (the AOS DNS endpoint), independent of the Service Fabric certificate. By default, this certificate is disabled, and the **ServiceFabric** certificate covers both purposes. If you enable this certificate, fill in the **Name**, **FileName**, **DNSName**, and **Subject** fields with the appropriate values for your AOS endpoint.
+
+```xml
+<Certificate type="Gateway" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="true">
+    <!-- For customers that want separate Service Fabric and D365FO certificates, enable this certificate. -->
+    <Name>ax.lab.local</Name>
+    <FileName>ax.lab.local</FileName>
+    <DNSName>ax.lab.local</DNSName>
+    <Subject>ax.lab.local</Subject>
+    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+    <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+    <EnhancedKeyUsage>Server Authentication</EnhancedKeyUsage>
+    <CertificateTemplate>D365FinOpsLBDServerTemplate</CertificateTemplate>
+    <ValidityInDays>200</ValidityInDays>
     <Thumbprint></Thumbprint>
     <ProtectTo>LAB\D365Admins</ProtectTo>
 </Certificate>
@@ -203,6 +242,25 @@ The certificate of the **RSAT** type is special. Because of requirements from th
     <ProtectTo>LAB\D365Admins</ProtectTo>
 </Certificate>
 ```
+
+### IssuerStore
+
+The **IssuerStore** section configures the certificate store used to hold the issuer certificates for Service Fabric certificate validation. The **Name** field defines the name of the custom certificate store that is created on each node. The store is created automatically during certificate import if it doesn't already exist.
+
+The **IssuerCAs** section specifies where the issuer CA certificates can be found. You can specify thumbprints, a folder path with .cer files, or a combination of both. The issuer certificate is the direct issuer of your Service Fabric certificates. In a multi-level trust chain, this is the intermediate CA that directly issued the certificates. If there is a single issuer (no intermediates), this is the root CA certificate.
+
+```xml
+<IssuerStore>
+    <Name>ServiceFabric_IssuerTrust</Name>
+    <IssuerCAs export="true">
+        <FolderPath>C:\IssuerCerts</FolderPath>
+        <Thumbprints>a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2</Thumbprints>
+    </IssuerCAs>
+</IssuerStore>
+```
+
+> [!NOTE]
+> The issuer store is used when you upgrade to the issuer store model for Service Fabric certificate validation. For more information, see the deployment guide.
 
 ### DbServer
 
@@ -372,8 +430,20 @@ The **ServiceFabricSettings** section allows for customization of several Servic
             <Parameter name="NodeTaggingEnabled">true</Parameter>
         </Parameters>
     </Setting>
+    <Setting name="Security" disabled="false">
+        <Parameters>
+            <Parameter name="IgnoreCrlOfflineError">false</Parameter>
+            <Parameter name="EnableHttpGatewayExclusiveAuthMode">true</Parameter>
+        </Parameters>
+    </Setting>
 </ServiceFabricSettings>
 ```
+
+The **Security** setting contains parameters that control how the Service Fabric cluster handles certificate validation and TLS security.
+
+The **IgnoreCrlOfflineError** parameter controls whether the cluster should ignore certificate revocation list (CRL) errors when the CRL distribution point is unreachable. By default, this is set to **false**, meaning the cluster enforces CRL checks. If your environment doesn't have internet access or the CRL distribution point isn't reachable from the cluster nodes, you can set this to **true** to prevent certificate validation failures caused by CRL connectivity issues.
+
+The **EnableHttpGatewayExclusiveAuthMode** parameter enables TLS 1.3 exclusive authentication on the Service Fabric HTTP gateway. This parameter is automatically skipped on operating systems earlier than Windows Server 2022, because TLS 1.3 isn't supported on those versions.
 
 If you want to customize your cluster, you can create more settings in the template, so that they're automatically filled in when the cluster configuration is created or updated. For example, if you want to enable server restarts from Service Fabric, you can use the **EnableRestartManagement** parameter.
 
@@ -503,7 +573,7 @@ Contoso is deploying a base package of 10.0.40. The **axserviceuser** account re
 
 Contoso Corporation acquired a certificate for its **ServiceFabric** certificate from a public certificate authority. Because they don't need the scripts to generate the certificate, they set the **generateADCSCert** attribute to **false**. They also fill in the thumbprint of the certificate, so that it can be exported later.
 
-Contoso has an AD&nbsp;CS server and decided to use it to generate all the other certificates.
+Because the **ServiceFabricCluster** certificate requires both Server and Client Authentication EKUs, which public certificate authorities no longer issue, Contoso uses their AD&nbsp;CS server to generate it. They also use AD&nbsp;CS for all other certificates that the scripts generate.
 
 Contoso doesn't want to lose access to the certificate private keys if the current IT administrator leaves. Therefore, they haven't set the **ProtectTo** field to an individual user. Instead, they specified an Active Directory group that all their IT administrators belong to. This approach is a best practice.
 
@@ -515,17 +585,43 @@ Because this isn't its first environment, Contoso already registered the **Onpre
 
 Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* environments. Because they're specifying the configuration for their *production* environment, they left the **disabled** attribute of the **RSAT** certificate set to **true**.
 
+Contoso doesn't need separate Service Fabric and application certificates, so they leave the **Gateway** certificate disabled.
+
+Contoso has configured the issuer store with the thumbprint of their intermediate CA certificate, which is the direct issuer of their Service Fabric certificates.
+
 ```xml
 <Certificates>
-    <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="false">
+    <IssuerStore>
+        <Name>ServiceFabric_IssuerTrust</Name>
+        <IssuerCAs export="true">
+            <FolderPath></FolderPath>
+            <Thumbprints>a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2</Thumbprints>
+        </IssuerCAs>
+    </IssuerStore>
+    <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="false" disabled="false">
         <Name>sf.contoso.com</Name>
         <FileName>sf.contoso.com</FileName>
         <DNSName>ax.contoso.com;sf.contoso.com</DNSName>
         <Subject>sf.contoso.com</Subject>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
         <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
-        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+        <EnhancedKeyUsage>Server Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDServerTemplate</CertificateTemplate>
+        <ValidityInDays>200</ValidityInDays>
         <Thumbprint>55a4ef521a3a00f64c4ac665dbaf3f17408cfe3d</Thumbprint>
+        <ProtectTo>contoso\D365Admins</ProtectTo>
+    </Certificate>
+    <Certificate type="ServiceFabricCluster" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
+        <Name>cluster-prod.contoso.com</Name>
+        <FileName>cluster-prod.contoso.com</FileName>
+        <DNSName>cluster-prod.contoso.com</DNSName>
+        <Subject>cluster-prod.contoso.com</Subject>
+        <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDCommonTemplate</CertificateTemplate>
+        <ValidityInDays>200</ValidityInDays>
+        <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
     <Certificate type="ServiceFabricClient" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
@@ -533,52 +629,92 @@ Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* e
         <Subject>client-prod.contoso.com</Subject>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
         <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
-        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+        <EnhancedKeyUsage>Client Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDClientTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
     <Certificate type="ServiceFabricEncryption" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
         <Name>axdataenciphermentcert-prod</Name>
         <Provider>Microsoft Enhanced Cryptographic Provider v1.0</Provider>
-        <CertificateType>DocumentEncryptionCert</CertificateType>
         <KeyUsage>DataEncipherment</KeyUsage>
         <EnhancedKeyUsage>Document Encryption</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDEnciphermentTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
+        <Thumbprint></Thumbprint>
+        <ProtectTo>contoso\D365Admins</ProtectTo>
+    </Certificate>
+    <Certificate type="Gateway" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="true">
+        <Name>ax.contoso.com</Name>
+        <FileName>ax.contoso.com</FileName>
+        <DNSName>ax.contoso.com</DNSName>
+        <Subject>ax.contoso.com</Subject>
+        <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDServerTemplate</CertificateTemplate>
+        <ValidityInDays>200</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
     <Certificate type="SessionAuthentication" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
         <Name>SessionAuthentication-prod</Name>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDCommonTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="DataEncryption" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
+    </Certificate>
+    <Certificate type="DataEncryption" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
         <Name>DataEncryption-prod</Name>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDCommonTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
     <Certificate type="DataSigning" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
         <Name>DataSigning-prod</Name>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDCommonTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
     <Certificate type="FinancialReporting" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
         <Name>FinancialReporting-prod</Name>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDCommonTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
     <Certificate type="ReportingService" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
         <Name>ReportingService-prod</Name>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDCommonTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
     <Certificate type="Orchestrator" exportable="true" generateSelfSignedCert="false" generateADCSCert="false" disabled="false">
         <Name>OnPremLocalAgent</Name>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDCommonTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
         <Thumbprint>66a4ea345a3a44f6e33ac215dbaf3f34a19cee3d</Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
@@ -588,6 +724,10 @@ Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* e
         <DNSName>LBDEN01SFBI1.contoso.com;LBDEN01SFBI2.contoso.com;LBDEN01SFBI.contoso.com</DNSName>
         <Subject>LBDEN01SFBI.contoso.com</Subject>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDServerTemplate</CertificateTemplate>
+        <ValidityInDays>200</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
@@ -596,6 +736,10 @@ Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* e
         <DNSName></DNSName>
         <Subject></Subject>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication</EnhancedKeyUsage>
+        <CertificateTemplate>D365FinOpsLBDServerTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
@@ -603,7 +747,11 @@ Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* e
         <Name>RSAT</Name>
         <FileName>RSAT</FileName>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+        <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
+        <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
         <Subject>127.0.0.1</Subject>
+        <CertificateTemplate>D365FinOpsLBDCommonTemplate</CertificateTemplate>
+        <ValidityInDays>365</ValidityInDays>
         <Thumbprint></Thumbprint>
         <ProtectTo></ProtectTo>
     </Certificate>
