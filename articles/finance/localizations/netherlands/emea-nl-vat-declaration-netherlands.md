@@ -52,21 +52,20 @@ The VAT declaration format in the Netherlands contains the following information
 | 5d | Tax relief under the small businesses scheme | SmallEntrepreneurProvisionReduction | x / SmallEntrepreneurProvisionReduction |
 | **5g** | **Net VAT amount that you pay to the tax authorities or reclaim** | 5a - 5b + 5d | x / ValueAddedTaxOwedToBePaidBack |
 
-
 ## Set up VAT declaration for Netherlands
 
 ### Import electronic reporting configurations
 
 To import Electronic reporting (ER) configurations, go to **Workspaces** > **Electronic reporting**, and import the following or higher versions of electronic reporting formats:
 
-   - Tax declaration model.version.85
-   - Tax declaration model mapping.version.85.138
-   - VAT Declaration XML (NL).version.85.14
-   - VAT Declaration Excel (NL).version.85.14.17
+- Tax declaration model.version.85
+- Tax declaration model mapping.version.85.138
+- VAT Declaration XML (NL).version.85.14
+- VAT Declaration Excel (NL).version.85.14.17
 
 ### Set up application specific parameters for VAT declaration fields
 
-To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. 
+To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration.
 
 To set up report fields, follow these steps:
 
@@ -77,12 +76,11 @@ To set up report fields, follow these steps:
 
 | **Column** | **Description** |
 |---|---|
-| Lookup result | Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the section, [VAT declaration overview](#vat-declaration) in this article. |
+| Lookup result | Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the section, [VAT declaration overview](#vat-declaration-overview) in this article. |
 | Tax code | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code are collected in the appropriate report field. Separate the sales tax codes so that one sales tax code generates amounts in only one report field. |
 | Transaction classifier | If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one report field, set up a transaction classifier. The following transaction classifiers are available: o&nbsp;&nbsp; **Purchase** o&nbsp;&nbsp; **PurchaseExempt**&nbsp;(tax-exempt purchase) o&nbsp;&nbsp; **PurchaseReverseCharge**&nbsp;(tax receivable from a purchase reverse charge) o&nbsp;&nbsp; **Sales** o&nbsp;&nbsp; **SalesExempt**&nbsp;(tax-exempt sale) o&nbsp;&nbsp; **SalesReverseCharge**&nbsp;(tax payable from a purchase reverse charge or a sales reverse charge) o&nbsp;&nbsp; **Use tax** For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is&nbsp;**PurchaseCreditNote**&nbsp;(purchase credit note). |
 
 :::image type="content" source="../media/App-parameters-VAT-XML-1.png" alt-text="Screenshot of the Application specific parameters setup page showing lookup results and conditions for VAT declaration fields.":::
-
 
 #### Set up XSD schema and namespaces
 
@@ -93,9 +91,8 @@ To set up XSD schema and namespaces, follow these steps:
 
     | **Name**           | **Lookup result**                                                                  |
     |--------------------|------------------------------------------------------------------------------------|
-    | XSDSchema          | http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-ob-aangifte-2021.xsd |
-    | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data.xsd                      |
-
+    | XSDSchema          | <http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-ob-aangifte-2021.xsd> |
+    | SchemaInstanceData | <http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data.xsd>                      |
 
     For information about how to get these values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](emea-nl-eu-sales-list.md#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy).
 
@@ -115,10 +112,10 @@ To set up VAT reporting format, follow these steps:
 1. If you configure VAT declaration for multiple VAT registrations, on the **Sales tax** tab, in the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
 1. In the **Feature management** workspace, enable the **VAT statement format reports** feature.
 1. Go to **General ledger** > **Setup** > **General ledger parameters**.
-1.	On the **Sales tax** tab, in the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (NL)** ER format. This format prints when you run the **Report sales tax for settlement period** report. The format also prints when you select **Print** on the **Sales tax payments** page.
+1. On the **Sales tax** tab, in the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (NL)** ER format. This format prints when you run the **Report sales tax for settlement period** report. The format also prints when you select **Print** on the **Sales tax payments** page.
 If you configure VAT declaration for multiple VAT registrations, on the **Sales tax** tab, in the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
-1.	If you must report the corrections, in the **Special report** section, set **Include corrections** to **Yes**.
-1.	On the **Tax authorities** page, select the tax authority, and in the **Report layout** field, select **Default**.
+1. If you must report the corrections, in the **Special report** section, set **Include corrections** to **Yes**.
+1. On the **Tax authorities** page, select the tax authority, and in the **Report layout** field, select **Default**.
 
 ## Preview VAT declaration in Excel
 
@@ -206,7 +203,7 @@ To upload the electronic messages data package, follow these steps:
 
     :::image type="content" source="../media/electronic-messages-NL.png" alt-text="Screenshot of the Executable class settings page showing action types for NLOBGetStatusFromDidgipoort and NLOBSendToDigipoort.":::
 
-1.  For each line, select **Parameters**, and then select **NLOB Request ID** in the **Request ID** field.
+1. For each line, select **Parameters**, and then select **NLOB Request ID** in the **Request ID** field.
 
 ### Configure electronic messages
 
@@ -256,19 +253,19 @@ The following steps apply to the example electronic message processing that you 
   
    If you selected **Collect data** in step 5, you can disregard this field. The report is generated for the sales tax transactions that are included in the collected sales tax payments.
 
-1. Select **OK**. When the declaration in XML format is generated, the status of the message changes to **Report generated**. 
-    
+1. Select **OK**. When the declaration in XML format is generated, the status of the message changes to **Report generated**.
+
    If an error occurs while the report is being generated, the status of the message changes to **Report generation error**.
 
 1. Select **Attachments**, and then select **Open** to open the file. Review the file, and if it is correct, select **Send report** to send the report to Digipoort. The report is sent to Digipoort and status of the message changes to **Report sent**.
-    
+
    If an error occurred during sending of the report, the status of the message changes to:
 
    - **Report sending error (technical)**: If an error occurs on the Finance side and the file didn't reach Digipoort.
    - **Report sending error (business)**: If an error occurred on the Digipoort side after reaching Digipoort.
 
-1. Select **Import response** to get a response from the Digipoort on the sent message. The response from Digipoort is imported and status of the message changes to **Report acknowledged**. 
-    
+1. Select **Import response** to get a response from the Digipoort on the sent message. The response from Digipoort is imported and status of the message changes to **Report acknowledged**.
+
    If an error occurred during receiving of the status, the status of the message changes to:
 
    - **Report getting status error (business)**: If Digipoort didn't acknowledge the report. In this case, the Infolog shows a list of errors received from Digipoort. To review list of errors later, on the **Action log** FastTab, select a line with **Get report status**, and select **Attachments**. Review the list of errors in the **Notes** field.

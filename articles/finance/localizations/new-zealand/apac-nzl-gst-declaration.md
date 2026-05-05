@@ -128,7 +128,7 @@ To set up general ledger parameters, follow these steps:
 
 ## Generate a GST return report
 
-The process of preparing and submitting a GST return report for a period is based on sales tax payment transactions that the Settle and post sales tax job posts. For more information about sales tax settlement and reporting, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
+The process of preparing and submitting a GST return report for a period is based on sales tax payment transactions that the Settle and post sales tax job posts. For more information about sales tax settlement and reporting, see [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
 To generate a GST return report, follow these steps:
 
