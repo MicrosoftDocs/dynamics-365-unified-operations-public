@@ -290,7 +290,7 @@ This behavior is by design. The **Company information** tab and toggle are only 
 
 If your company received an exception to use the deprecated planning engine and you still see the tab as blank, create a support ticket stating the reason for the exception.
 
-For more information, see [Continue to use deprecated master planning with existing companies](../continue-using-deprecated-planning.md) and [Migration to Planning Optimization for master planning](../new-master-planning-engine.md).
+Learn more in [Continue to use deprecated master planning with existing companies](../continue-using-deprecated-planning.md) and [Migration to Planning Optimization for master planning](../new-master-planning-engine.md).
 
 ## Related information
 
