@@ -100,7 +100,7 @@ The label layout controls what information is printed on the label and how it's 
         This field defines the number of rows that can print on each label.
 
         > [!NOTE]
-                > This setup prints a separate ZPL label for each record in the wave labels table.
+        > This setup prints a separate ZPL label for each record in the wave labels table.
 
 1. Close the page.
 1. On the Action Pane, select **Edit query**.
@@ -249,7 +249,7 @@ Next, create the wave label template for the wave label type.
 1. In the **Wave label template group** dialog box, select the row where the **Reference field name** field is set to *Reference load line id*, and then select the **Label build ID** check box for this row.
 
     > [!NOTE]
-        > This setup creates one label sequence ("Carton 1 of X") per load line throughout the wave, regardless of the work grouping setup. You can print this label sequence on the label layout.
+    > This setup creates one label sequence ("Carton 1 of X") per load line throughout the wave, regardless of the work grouping setup. You can print this label sequence on the label layout.
 
 ### Configure number sequence extensions for scenario 1
 
@@ -287,7 +287,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
     The following events occur:
 
-        - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the result is a label that is printed on the printer, which is selected in the label template.
+    - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the result is a label that is printed on the printer, which is selected in the label template.
     - Wave labels are generated and printed. The number of labels equals the number of cartons (in this example, 376 Box labels for line 1 and 322 Box labels for line 2).
     - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs follow the **SSCC-18** number format.
 
@@ -486,7 +486,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
     The following events occur:
 
-        - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the end result is a label that has five lines and that is printed on the printer, which is selected in the label template.
+    - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the end result is a label that has five lines and that is printed on the printer, which is selected in the label template.
     - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs follow the **SSCC-18** number format.
 
 You can reprint these wave labels by going to **Warehouse management > Enquiries and reports > Wave label history**.
@@ -552,7 +552,7 @@ To follow this scenario, ensure that you have the demo data installed, and selec
         This field defines the number of rows that can print on each label.
 
         > [!NOTE]
-                > This setup prints a separate ZPL label for each record in the wave labels table.
+        > This setup prints a separate ZPL label for each record in the wave labels table.
 
 1. Close the page.
 1. On the Action Pane, select **Edit query**.
@@ -734,7 +734,7 @@ To follow this scenario, ensure that you have the demo data installed, and selec
     The third label is now ready to use.
 
     > [!NOTE]
-        > This third label is a break label used as a divider between label rolls.
+    > This third label is a break label used as a divider between label rolls.
 
 ### Create two wave label types
 
@@ -902,7 +902,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
     The following events occur:
 
-        - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the result is a label that is printed on the printer, which is selected in the label template.
+    - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the result is a label that is printed on the printer, which is selected in the label template.
     - Wave labels are generated and printed. The number of labels equals the number of cartons (in this example, 376 Box labels for line 1, 322 Box labels for line 2, 47 PL labels for line 1, 47 PL labels for line 2, and two break labels that have the shipment ID).
     - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs follow the **SSCC-18** number format.
 

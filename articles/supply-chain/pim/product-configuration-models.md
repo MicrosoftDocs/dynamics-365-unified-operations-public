@@ -19,6 +19,7 @@ ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 This article defines terms and concepts that are relevant to product configuration models. Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
 
 Product configuration models are created to represent a generic product structure. After you set up a product configuration model, you can configure a distinct product variant that has a unique bill of materials (BOM) and a unique route. Product configuration models use both declarative constraints and imperative calculations to handle the relations and limitations between different product variants. You can configure items on sales orders, sales quotations, purchase orders, and production orders. The following table describes the table constraint–based terms and concepts.
+
 | Term | Description |
 |---|---|
 | Components | Components are the main building blocks of a product configuration model. You see components in a tree structure on the **Constraint-based product configuration model details** page. Components can contain the following elements: <ul><li>Attributes</li><li>Constraints</li><li>Calculations</li><li>Subcomponents</li><li>User requirements</li><li>BOM lines</li><li>Route operations</li></ul> |
@@ -30,10 +31,6 @@ Product configuration models are created to represent a generic product structur
 | User requirements | User requirements represent an abstraction between user requirements and specific components and attributes. You can't map a user requirement to an item. For example, a customer is shopping for a home theater system. The sales representative might ask about the size of the room where the customer plans to install the system, to determine how many watts are required. In this example, the room size can be a user requirement that helps determine the appropriate attribute value for a specific component. You can hide user requirements so that they aren't displayed to the user during a configuration session. Attributes, subcomponents, and user requirements that are related to the user requirement are also hidden. You can write a condition to control whether a user requirement can be hidden. You must write the condition by using Optimization Modeling Language (OML) syntax. |
 | BOM lines | BOM lines represent the individual materials of the components in the product configuration model. On the **BOM line details** page, all items are available for selection. A condition can be added to the BOM line, so that the BOM lines that are selected for a distinct product variant can vary, based on the user's selection when the product configuration model is set up. Conditions are expressions that must be met for attributes, BOM lines, and route operations to be included in a product configuration model. On the **BOM line details** page, you can select a distinct value. Alternatively, you can map to an attribute that the value is selected for when the product configuration model is set up. |
 | Route operations | On the **Route operation details** page, you can select a distinct value. Alternatively, you can map to an attribute that the value is selected for when the product configuration model is set up. Conditions are written like expression constraints. Conditions are expressions that must be met for attributes, BOM lines, and route operations to be included in a product configuration model. |
-
-
-
-
 
 
 
