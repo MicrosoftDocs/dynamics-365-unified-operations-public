@@ -4,7 +4,7 @@ description: Learn how to specify how strictly the system should peg safety stoc
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 04/25/2026
+ms.date: 05/05/2026
 ms.custom: bap-template
 ms.collection:
   - ai-assisted
@@ -16,7 +16,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-For most industries, customer demand is prioritized over [safety stock](safety-stock-replenishment.md). Therefore, when you must both replenish safety stock and fulfill a customer order, the system uses existing planned orders to cover the customer demand instead of leaving those planned orders pegged against safety stock.
+Most industries prioritize customer demand over [safety stock](safety-stock-replenishment.md). Therefore, when you must both replenish safety stock and fulfill a customer order, the system uses existing planned orders to cover the customer demand instead of leaving those planned orders pegged against safety stock.
 
 However, some businesses prefer to allow the system to keep existing planned orders pegged against safety stock, even if customer demand can't be fulfilled as a result. This approach is known as *strict safety stock pegging*.
 
@@ -24,7 +24,7 @@ For each coverage group, you can specify how strictly the system should peg safe
 
 ## Prerequisites
 
-Before you can use the features that are described in this article, your system must meet the following requirements:
+Before you can use the features described in this article, ensure your system meets the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
 - The feature that's named *Strict safety stock pegging for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
@@ -41,11 +41,11 @@ Safety stock pegging options are set at the coverage group level. Follow these s
 
 1. On the **General** FastTab, in the **Strict safety stock pegging** field, select one of the following options:
 
-    - *No* – Safety stock isn't considered actual demand, and any actual demand is prioritized over it. Although a planned order can be created to fulfill safety stock, any actual demand that arrives later can claim the planned safety stock quantity. (The actual demand will be pegged against the planned order.) This option lets you provide a higher level of service for your customers.
-    - *Yes* – The system applies strict safety stock pegging. Any planned order that's created to fulfill safety stock remains pegged against safety stock. If this option is selected, whenever the system calculates that a planned order is needed to fulfill safety stock, that safety stock remains prioritized over real demand. This option can provide better visibility in some scenarios, such as when you're using a large number of negative days.
+    - *No* – The system doesn't consider safety stock as actual demand, and it prioritizes any actual demand over safety stock. Although you can create a planned order to fulfill safety stock, any actual demand that arrives later can claim the planned safety stock quantity. (The actual demand is pegged against the planned order.) This option lets you provide a higher level of service for your customers.
+    - *Yes* – The system applies strict safety stock pegging. Any planned order that you create to fulfill safety stock remains pegged against safety stock. If you select this option, whenever the system calculates that a planned order is needed to fulfill safety stock, the system prioritizes that safety stock over real demand. This option can provide better visibility in some scenarios, such as when you're using a large number of negative days.
 
 > [!IMPORTANT]
-> When you enable strict safety stock pegging, the system ignores pegging priority for safety stock planned orders. This behavior can lead to unreliable net requirements pegging and the creation of unwanted planned orders, because the safety stock demand is always prioritized regardless of any pegging priority rules you configured. Before you enable this option, carefully evaluate whether the trade-off between safety stock visibility and potential over-ordering is acceptable for your planning scenario. For more information about how safety stock behavior differs between the deprecated master planning engine and Planning Optimization, see [Safety stock fulfillment with the deprecated master planning engine](safety-stock-replenishment-in-deprecated-engine.md#differences-in-safety-stock-functionality).
+> When you enable strict safety stock pegging, the system ignores pegging priority for safety stock planned orders. This behavior can lead to unreliable net requirements pegging and the creation of unwanted planned orders, because the safety stock demand is always prioritized regardless of any pegging priority rules you configured. Before you enable this option, carefully evaluate whether the trade-off between safety stock visibility and potential over-ordering is acceptable for your planning scenario. Learn more about how safety stock behavior differs between the deprecated master planning engine and Planning Optimization in [Safety stock fulfillment with the deprecated master planning engine](safety-stock-replenishment-in-deprecated-engine.md#differences-in-safety-stock-functionality).
 
 ## Related information
 
