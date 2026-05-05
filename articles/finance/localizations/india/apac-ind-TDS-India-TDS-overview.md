@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -60,25 +60,25 @@ The following sections list the services that TDS is applied on, as specified by
 - Other sums (Under section 195)
 - Income in respect of units of non-residents (Under section 196A)
 
-    - Income from foreign currency bonds or shares of Indian Company (Under section 196C)
-    - Incomes of foreign institutional investors from securities (Under section 196D)
-    - Salary and all other positive incomes under any head on income (Section 192)
-    - Interest on securities (Section 193)
-    - Interest other than interest on securities (Section 194A)
-    - Payments to contractors and sub-contractors (Section 194C)
-    - Winnings from Lottery or crossword puzzles (Section 194B)
-    - Winnings from horse races (Section 194BB)
-    - Insurance Commission covering all payments for procuring Insurance business (Section 194D)
-    - Any interest other than interest on securities payable to non-residents not being a company or to a foreign company (Section 195)
-    - Payment to non-resident sportsman including athlete or sports association or institution. In case of non-resident sportsman, payments in respect of advertisements as well as articles on any game/sports in India in newspapers, magazines, and so. is included (Section 194E)
-    - Payment in respect of deposits under NSS \[National Savings Scheme\] (Section 194EE)
-    - Payment on account of repurchase of Units by Mutual Fund or UTI (Section 194F)
-    - Payment for Commission or brokerage (Section 194H)
-    - Payment of rent (Section 194I)
-    - Payment of fees for professional or technical services (Section 194J)
-    - Commission to Stockiest, distributors, buyers and sellers of Lottery tickets including remuneration or prize on such tickets (Section 194G)
-    - Income from Units purchased in foreign currency or long-term capital gain arising from the transfer of such Units purchased in foreign currency (Section 196B)
-    - Payment of any income to non-residents in respect of interest or dividend on bonds and shares (Section 196C)
+  - Income from foreign currency bonds or shares of Indian Company (Under section 196C)
+  - Incomes of foreign institutional investors from securities (Under section 196D)
+  - Salary and all other positive incomes under any head on income (Section 192)
+  - Interest on securities (Section 193)
+  - Interest other than interest on securities (Section 194A)
+  - Payments to contractors and sub-contractors (Section 194C)
+  - Winnings from Lottery or crossword puzzles (Section 194B)
+  - Winnings from horse races (Section 194BB)
+  - Insurance Commission covering all payments for procuring Insurance business (Section 194D)
+  - Any interest other than interest on securities payable to non-residents not being a company or to a foreign company (Section 195)
+  - Payment to non-resident sportsman including athlete or sports association or institution. In case of non-resident sportsman, payments in respect of advertisements as well as articles on any game/sports in India in newspapers, magazines, and so. is included (Section 194E)
+  - Payment in respect of deposits under NSS \[National Savings Scheme\] (Section 194EE)
+  - Payment on account of repurchase of Units by Mutual Fund or UTI (Section 194F)
+  - Payment for Commission or brokerage (Section 194H)
+  - Payment of rent (Section 194I)
+  - Payment of fees for professional or technical services (Section 194J)
+  - Commission to Stockiest, distributors, buyers and sellers of Lottery tickets including remuneration or prize on such tickets (Section 194G)
+  - Income from Units purchased in foreign currency or long-term capital gain arising from the transfer of such Units purchased in foreign currency (Section 196B)
+  - Payment of any income to non-residents in respect of interest or dividend on bonds and shares (Section 196C)
 
 TDS is calculated on purchases, sales, sales returns, credit notes, fixed asset acquisitions, prepayments, advance payments, promissory notes, works tax, and intercompany transactions.
 
@@ -126,19 +126,19 @@ Here is an overview of the process for setting up and working with TDS:
         - Set up a payment fee type for payments to the TDS authority.
         - Set up information about TDS groups, permanent account numbers (PANs), and TANs for vendors and customers.
 
-2. **Calculation of TDS in transactions:**
+1. **Calculation of TDS in transactions:**
 
     - Invoices and payments
     - Promissory notes
     - Advance payments
     - Prepayments
 
-3. **TDS settlement:**
+1. **TDS settlement:**
 
     - Periodic TDS settlement process
     - Settlement of TDS payments to TDS authority vendors and generation of TDS challan
 
-4. **TDS inquiries, statements, and certificate:**
+1. **TDS inquiries, statements, and certificate:**
 
     - Record and update TDS certificate numbers and dates.
     - Generate a TDS inquiry and a posted TDS inquiry.

@@ -6,13 +6,13 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/10/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Indonesia
 ms.dyn365.ops.version: 10.0.23
 ---
 
-# Tax invoice numbering for Indonesia 
+# Tax invoice numbering for Indonesia
 
 [!include [banner](../../includes/banner.md)]
 
@@ -22,9 +22,9 @@ Microsoft Dynamics 365 Finance includes the following functionality that has bee
 
 - Flexibly set up tax invoice numbers. Here are some examples:
 
-    - Set up tax invoice numbers for user-defined date intervals.
-    - Set up tax invoice numbers for different branches in one legal entity.
-    - Allocate tax invoice numbers for customers.
+  - Set up tax invoice numbers for user-defined date intervals.
+  - Set up tax invoice numbers for different branches in one legal entity.
+  - Allocate tax invoice numbers for customers.
 
 - Create replacement invoices and credit notes that have a tax invoice number, and associate them with the original invoice.
 
@@ -34,10 +34,10 @@ Before you use the invoicing functionality, the following prerequisites must be 
 
 - Enable and configure the following features:
 
-    - (Indonesia) Enable generation of tax invoice numbers for invoices
-    - Chronological numbering
-    - Credit invoicing layout for sales and project invoice reports
-    
+  - (Indonesia) Enable generation of tax invoice numbers for invoices
+  - Chronological numbering
+  - Credit invoicing layout for sales and project invoice reports
+
     For information about how to enable features, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Tax invoice numbering
@@ -48,7 +48,7 @@ Tax invoice numbers are generated according to the structure of the tax serial n
 - **Next digit:** A status code. A code of **0** (zero) indicates a normal invoice, and a code of **1** indicates a replacement invoice.
 - **Next digits:** The Tax Invoice Serial Number (Nomor seri FP), which is a sequence of numbers.
 
-![Structure of tax serial numbers.](../media/apac-idn-structure-of-tax-invoice-number.png)
+:::image type="content" source="../media/apac-idn-structure-of-tax-invoice-number.png" alt-text="Screenshot of the structure of tax serial numbers.":::
 
 ### Set up tax invoice numbers
 
@@ -56,23 +56,23 @@ Follow these steps to create invoice numbers for one period at a time for a comp
 
 1. Go to **Organization administration** \> **Number sequences** \> **Number sequences**, and create a number sequence for the **Tax invoice number** reference. The number sequence should consist of two segments, **Constant** and **Alphanumeric**, and it should be continuous.
 
-    ![Creating a number sequence.](../media/apac-idn-number-sequence.png)
+    :::image type="content" source="../media/apac-idn-number-sequence.png" alt-text="Screenshot of creating a number sequence.":::
 
-2. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**, and create a number sequence group.
-3. Associate the number sequence group with the number sequence that you created in step 1.
-4. Go to **Organization administration** \> **Number sequences** \> **Chronological number sequence groups**, create a chronological number sequence group for the period, and associate it with the **Tax invoice number** field.
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**, and create a number sequence group.
+1. Associate the number sequence group with the number sequence that you created in step 1.
+1. Go to **Organization administration** \> **Number sequences** \> **Chronological number sequence groups**, create a chronological number sequence group for the period, and associate it with the **Tax invoice number** field.
 
-    ![Creating a chronological number sequence group.](../media/apac-idn-chronological-number-sequence-groups.png)
+    :::image type="content" source="../media/apac-idn-chronological-number-sequence-groups.png" alt-text="Screenshot of creating a chronological number sequence group.":::
 
-5. Repeat steps 1 through 4 to create invoice numbers for additional periods.
+1. Repeat steps 1 through 4 to create invoice numbers for additional periods.
 
 If a company has multiple branches, and each branch should have its own numeration of tax invoices, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Tax branch**, and create the required number of branches.
-2. Add tax branches to the ledger account structure. For more information, see [Create account structure](../../general-ledger/tasks/create-account-structures.md).
-3. For each branch, repeat steps 1 through 4 of the previous procedure for setting up one period, and enter the tax branch in the chronological number sequence group.
+1. Add tax branches to the ledger account structure. For more information, see [Create account structure](../../general-ledger/tasks/create-account-structures.md).
+1. For each branch, repeat steps 1 through 4 of the previous procedure for setting up one period, and enter the tax branch in the chronological number sequence group.
 
-    ![Creating a chronological number sequence group for a branch.](../media/apac-idn-chronological-number-sequence-groups-branch.png)
+    :::image type="content" source="../media/apac-idn-chronological-number-sequence-groups-branch.png" alt-text="Screenshot of creating a chronological number sequence group for a branch.":::
 
 ### Allocate a tax invoice number to specific customers
 
@@ -92,10 +92,10 @@ Follow these steps to allocate a tax invoice number to specific customers.
     - From 000-21.00000021 through 000-21.00000029
     - From 000-21.00000041 through 000-21.00000100
 
-2. Create number sequence groups for all the number sequences that you just created, and assign those number sequences to the groups.
-3. Create additional number sequence groups for each customer that the numbers must be allocated to.
-4. Update the customer records with the new number sequence groups. Number sequences aren't required in the customer record.
-5. Create chronological number sequence groups. For the period (Q3 2021 in this example), there are five lines (records): two for customer 1, two for customer 2, and one for the remaining number intervals.
+1. Create number sequence groups for all the number sequences that you just created, and assign those number sequences to the groups.
+1. Create additional number sequence groups for each customer that the numbers must be allocated to.
+1. Update the customer records with the new number sequence groups. Number sequences aren't required in the customer record.
+1. Create chronological number sequence groups. For the period (Q3 2021 in this example), there are five lines (records): two for customer 1, two for customer 2, and one for the remaining number intervals.
 
     | Group         | Description                              | Number sequence |
     |---------------|------------------------------------------|-----------------|
@@ -110,11 +110,11 @@ Follow these steps to allocate a tax invoice number to specific customers.
 
     In the first record for the customer, in the **Original number sequence group** field, enter the number sequence group for the customer 1 record (**ID\_Cust1**). In the second record for the customer, in the **Original number sequence group** field, enter the number sequences as they are entered in the **Number sequence group** field (**ID\_Cust1\_Q3**). The following illustration shows the setup of chronological number sequence groups for customers.
 
-    ![Setup of chronological number sequence groups for customers.](../media/apac-idn-chronological-number-sequence-groups-customer.png)
+    :::image type="content" source="../media/apac-idn-chronological-number-sequence-groups-customer.png" alt-text="Screenshot of setup of chronological number sequence groups for customers.":::
 
-6. In the **Number sequence group** field, specify the number sequence group for the first number sequence (from 000-21.00000001 through 000-21.00000009). Then, in the **Other number sequence** grid, create two lines for the second number sequence (from 000-21.00000021 through 000-21.00000029) and for the third number sequence (from 000-21.00000041 through 000-21.00000100). The following illustration shows the setup of the chronological number sequence group for other intervals.
+1. In the **Number sequence group** field, specify the number sequence group for the first number sequence (from 000-21.00000001 through 000-21.00000009). Then, in the **Other number sequence** grid, create two lines for the second number sequence (from 000-21.00000021 through 000-21.00000029) and for the third number sequence (from 000-21.00000041 through 000-21.00000100). The following illustration shows the setup of the chronological number sequence group for other intervals.
 
-    ![Setup of the chronological number sequence group for customer (intervals).](../media/apac-idn-chronological-number-sequence-groups-customer-intervals.png)
+    :::image type="content" source="../media/apac-idn-chronological-number-sequence-groups-customer-intervals.png" alt-text="Screenshot of setup of the chronological number sequence group for customer intervals.":::
 
 > [!NOTE]
 > To generate tax invoice numbers, the system first uses a group from the **Number sequence group** field, then a group from the first line of the **Other number sequence** grid, and finally a group from the second line.
@@ -133,14 +133,14 @@ Before credit notes are created for cancellation because of an error in a posted
 
 Create at least two records: one that has a **Cancellation** operation and one that has a **Replacement** operation. There can be several records on the **Financial reasons** page. You can configure as many reasons that have a **Blank** operation as you require. These reasons can be used, for example, when a credit note is created for the item return.
 
-![Creating financial reasons for credit invoicing.](../media/apac-idn-resons.png)
+:::image type="content" source="../media/apac-idn-resons.png" alt-text="Screenshot of creating financial reasons for credit invoicing.":::
 
 - To cancel a posted invoice because of an error, create a credit note, and associate it with the original invoice and a financial reason that has a **Cancellation** operation. In this situation, no tax invoice number is generated.
 - To create a credit note for items returns, create a credit note, and associate it with the original invoice and a financial reason that has a **Blank** operation. In this situation, a tax invoice number is generated.
 - To create a replacement invoice, follow these steps:
 
     1. Create a credit note, and associate it with the original invoice and a financial reason that has a **Cancellation** operation. In this situation, no tax invoice number is generated.
-    2. Create a debit note, and associate it with the original invoice and a financial reason that has a **Replacement** operation. The system sets the third digit (the status code) of the tax invoice number to **1**.
+    1. Create a debit note, and associate it with the original invoice and a financial reason that has a **Replacement** operation. The system sets the third digit (the status code) of the tax invoice number to **1**.
 
 When you must create a credit note for cancellation and a debit note for replacement, we recommend that you create a new sales order. When you create a replacement invoice, the original invoice should have a tax invoice number. The credit note that has the **Cancellation** reason and that was created before replacement, and the debit note that has the **Replacement** reason, should be associated with the same invoice.
 

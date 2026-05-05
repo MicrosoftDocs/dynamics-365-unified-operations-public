@@ -3,8 +3,10 @@ title: Modello 770 report
 description: Learn about the Modello 770 report for Italy, including outlines on general settings required for Modello 770 reports and setting up address information.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/16/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy

@@ -53,3 +53,6 @@ To run the **Budget control dimension values provider** scenario, follow these s
 
 > [!NOTE]
 > By default, the **Document status** field is set to **Confirmed**. If there's budget data in a draft state, complete the steps again and select **Draft**.
+
+For more information about troubleshooting budget control issues, see [Common budget control troubleshooting scenarios](/troubleshoot/dynamics-365/finance/budgeting/budget-control-troubleshooting).
+

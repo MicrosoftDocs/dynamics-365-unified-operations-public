@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: v-pedrobusto2025
 ms.author: v-pedrobusto
 ms.topic: overview
-ms.date: 07/30/2025
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: Nicaragua
 ms.search.validFrom: 2023-10-20
@@ -18,6 +18,7 @@ ms.dyn365.ops.version: App 10.0.38
 This article includes information and links to resources that can help you set up legal entities with a primary address in Nicaragua.
 
 ## Table of contents
+
 - [Nicaragua overview](#nicaragua-overview)
 - [Main configurations](#main-configurations)
 - [General Reports](#general-reports)

@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.dyn365.ops.version: 10.0.17 
@@ -16,21 +16,18 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-
-For Italian companies who work with public sector companies, there might be requirements to control the Tender procedure identification and CIPE codes during end-to-end processing from the original invoice to the payment. This required control can be in both the Accounts Receivable and Accounts Payable modules.
+For Italian companies that work with public sector companies, you might need to control the Tender procedure identification and CIPE codes during end-to-end processing from the original invoice to the payment. Both the Accounts Receivable and Accounts Payable modules can require this control.
 
 ## Prerequisites
 
-Before you can use the payment traceability functionality, the following prerequisites must be met:
+Before you can use the payment traceability functionality, make sure the following prerequisites are met:
 
-- The primary address of the legal entity must be in Italy.
-- The feature **(Italy) Base document tracking improvements** must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The primary address of the legal entity is in Italy.
+- The feature **(Italy) Base document tracking improvements** is turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Feature details
 
-With the feature activated, the Tender procedure identification (CIG) and CIPE (CUP) codes are inherited in relation to the particular customer or vendor transaction. This inheritance allows for higher traceability across the system and could be reviewed by using the standard personalization mechanism. To inherit the values from the original invoice transaction during payment proposal, on the **Methods of payment** page, activate the **Base document payment** attribute. 
-To ensure that the mandatory fields correspond to the CIG and CUP codes are populated in the transaction, mark the Customer account, Vendor account, or group as with Public sector parameter.
-
-
+When you activate the feature, the system associates the Tender procedure identification (CIG) and CIPE (CUP) codes with the particular customer or vendor transaction. This association provides higher traceability across the system and you can review it by using the standard personalization mechanism. To inherit the values from the original invoice transaction during payment proposal, on the **Methods of payment** page, activate the **Base document payment** attribute. 
+To ensure that the mandatory fields for the CIG and CUP codes are populated in the transaction, mark the Customer account, Vendor account, or group as with Public sector parameter.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
