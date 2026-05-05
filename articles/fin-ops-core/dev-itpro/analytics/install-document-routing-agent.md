@@ -4,7 +4,7 @@ description: Learn how to install and configure the Document Routing Agent for d
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: install-set-up-deploy
-ms.date: 10/22/2025
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
