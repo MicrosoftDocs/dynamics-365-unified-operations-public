@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: troubleshooting-general
-ms.date: 05/04/2026
+ms.date: 05/05/2026
 ms.custom:
   - bap-template
 ms.collection:
@@ -292,7 +292,7 @@ This error message is related to a pending feature that is planned as part of th
 
 After running a master plan, you might receive the following error message:
 
-> Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> does not match the active planning attributes for this product and was ignored.
+> Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> doesn't match the active planning attributes for this product and was ignored.
 
 If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is tracked by serial number, you can't use the serial number dimension as a coverage dimension because the system doesn't know which serial numbers it should supply. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
 
@@ -328,10 +328,21 @@ Intermittent network or service connectivity problems between your environment a
 
 **Fix**: Retry the master planning run. If the error occurs repeatedly, check the **Planning Optimization parameters** page to verify the connection status. If the connection status shows *Not connected*, try reinstalling the add-in. If the status shows *Connected* and the error persists, contact Microsoft Support.
 
+## Company information tab is blank on the Planning Optimization parameters page
+
+When you open the **Planning Optimization parameters** page and select the **Company information** tab, the tab appears blank. The **Exclude company from running Planning Optimization** toggle might also appear greyed out and disabled.
+
+This behavior is by design. The **Company information** tab and toggle are only relevant for companies that have been granted an exception to continue using the deprecated master planning engine. Starting from Supply Chain Management version 10.0.41, Planning Optimization is the standard master planning engine for all new deployments and legal entities. If your company wasn't enabled to use the deprecated planning engine, the **Company information** tab is intentionally empty and the toggle is disabled because there's no need to configure an exclusion.
+
+If your company received an exception to use the deprecated planning engine and you still see the tab as blank, create a support ticket stating the reason for the exception.
+
+Learn more in [Continue to use deprecated master planning with existing companies](../continue-using-deprecated-planning.md) and [Migration to Planning Optimization for master planning](../new-master-planning-engine.md).
+
 ## Related information
 
 - [Get started with master planning](get-started.md)
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
 - [Differences between Planning Optimization and the deprecated master planning engine](planning-optimization-differences-with-built-in.md)
+- [Continue to use deprecated master planning with existing companies](../continue-using-deprecated-planning.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

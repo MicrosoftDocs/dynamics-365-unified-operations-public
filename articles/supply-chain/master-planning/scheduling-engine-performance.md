@@ -67,7 +67,7 @@ The standard link between two jobs is `FinishStart`, which means the end time of
 For operation 20, where the quantity of resources is set to 3, the process job is split into three distinct jobs where all the jobs must run at the exact same time.
 In this case, the route group is set up to not reserve capacity for queue after times, which is why there's only a single job for the queue after.
 
-The scheduling engine understands only the concepts of jobs and doesn't recognize operations. This limitation means that when you do operation scheduling, the system splits operations into jobs, although these jobs aren't persisted in the database.
+The scheduling engine understands only the concepts of jobs and doesn't recognize operations. This limitation means that during operation scheduling, the system splits operations into jobs, although these jobs aren't persisted in the database.
 
 For each job, you define what the job capacity requirement is (the number of seconds required). Depending on how the resource requirements are defined, you might also send, for each job, a list of all the potential applicable resources that the job could run on and what the capacity requirement is for that specific resource. Although you send the list of applicable resources when building the model, the engine ensures the resource assignment stays valid for the entire job duration.
 
@@ -151,15 +151,15 @@ The system organizes the constraints in levels to handle this main business rule
 
 The main steps of the engine algorithm are:
 
-1. Find sequences (job chains) which can be solved separately.
+1. Find sequences (job chains) that can be solved separately.
 1. Try to find an initial solution for the sequence at the highest constraint level.
     1. Sort the jobs in the sequence based on job goal and priorities, so the system can find a start job.
     1. Loop through the jobs in the following sequence:
         1. Find all constraints that need to be propagated and run propagation.
-        1. If all variables for the job are bound, then a solution for that job was found.
+        1. If all variables for the job are bound, then a solution for that job is found.
         1. If one of the variables can't be bound without violating the constraints, roll back the variable binding, try a different value in the domain (for resource variable), and rerun the constraint propagation.
-1. If no solution was found, remove all constraints on the current constraint level, lower the constraint level (if any lower levels are available), and retry solution search with the new set of constraint.
-1. If a feasible solution was found, start the optimization phase, which tries to find a better solution until the optimization timeout is reached or all resource combinations are exhausted.
+1. If no solution is found, remove all constraints on the current constraint level, lower the constraint level (if any lower levels are available), and retry solution search with the new set of constraint.
+1. If a feasible solution is found, start the optimization phase, which tries to find a better solution until the optimization timeout is reached or all resource combinations are exhausted.
 
 The constraint solver doesn't account for the specifics of the scheduling algorithm. The "magic" happens in the definition and combination of the various constraints.
 
@@ -232,7 +232,6 @@ On the **Resource requirements** tab on the route operation, you can specify the
 The resource group's capacity for a capability is the sum of the capacity for all resources in the resource group that have the capability in question. If a resource in the group has a capability, the engine considers it no matter what level of the capacity is required.
 
 In operations scheduling, the available capacity for a certain capability for a resource group is reduced when it's loaded with an operation that requires the capability in question. If the operation requires more than one capability, the capacity is reduced for all required capabilities.
-
 
 For each date, the required calculation is:
 
@@ -338,6 +337,18 @@ The value for **Optimization attempts timeout** controls how many seconds can at
 
 > [!NOTE]
 > The values you set for the timeouts apply both to scheduling of released production orders and to planned orders as part of MRP. As a result, setting very high values can significantly add to the run time of MRP when running for a plan with many planned production orders.
+
+## Common job scheduling errors
+
+The following table lists known job scheduling errors with links to information that can help you resolve them.
+
+| Error message | Resolution |
+|---|---|
+| *Planned production order must be scheduled before it can be firmed* | [Planned production order must be scheduled before it can be firmed](/troubleshoot/dynamics-365/supply-chain/planning/planned-order-must-be-scheduled) |
+| *Production scheduling doesn't consider the safety margins* | [Production scheduling doesn't consider the safety margins](/troubleshoot/dynamics-365/supply-chain/planning/production-schedule-not-consider-safety-margins) |
+| *Master planning is scheduling more than the available capacity* | [Master planning is scheduling more than the available capacity](/troubleshoot/dynamics-365/supply-chain/planning/master-planning-not-respect-capacity-limitations) |
+| *Not enough capacity could be found* | [Not enough capacity could be found](/troubleshoot/dynamics-365/supply-chain/planning/not-enough-capacity-error)<br><br>[Fix the "Not enough capacity could be found" scheduling engine error](not-enough-capacity-error-resolution.md) |
+| *The delay value isn't updated when you reschedule a planned order* | [The delay value isn't updated when you reschedule a planned order](/troubleshoot/dynamics-365/supply-chain/planning/delay-value-not-updated) |
 
 ## Related information
 
