@@ -97,8 +97,8 @@ To set up a container build template, follow these steps:
     > [!NOTE]
     > The strategy applies only to sales allocation lines and transfer allocation lines.
 
-            - **Pack into all open containers** – The system evaluates whether the allocation line fits in any container that's created during the containerization cycle.
-      - **Pack into current container only** – The system only evaluates whether the allocation line fits in the most recently created container.
+    - **Pack into all open containers** – The system evaluates whether the allocation line fits in any container that's created during the containerization cycle.
+    - **Pack into current container only** – The system only evaluates whether the allocation line fits in the most recently created container.
 
     For more information and examples that show how to work with container packing strategies, see [Container packing strategies](container-packing-strategy-overview.md).
 
