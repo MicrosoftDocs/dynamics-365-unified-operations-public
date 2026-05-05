@@ -4,7 +4,7 @@ description: Learn how to continue using the deprecated master planning engine f
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 05/01/2026
+ms.date: 05/05/2026
 ms.custom: bap-template
 ms.collection:
   - ai-assisted
@@ -57,3 +57,6 @@ Follow these steps to set a company to continue to use the deprecated master pla
     - *No* – Use Planning Optimization for this company.
 1. Select **Save** on the Action Pane.
 1. Repeat this procedure for each company you want to set up.
+
+> [!NOTE]
+> If the **Company information** tab appears blank and the **Exclude company from running Planning Optimization** toggle is greyed out, this behavior is expected. The tab and toggle are only relevant for companies that have been granted an exception to use the deprecated master planning engine. Starting from Supply Chain Management version 10.0.41, Planning Optimization is the standard engine for all new deployments and legal entities. Companies that aren't enabled for the deprecated engine don't need this configuration, so the tab remains empty by design. Learn more in [Migration to Planning Optimization for master planning](new-master-planning-engine.md).
