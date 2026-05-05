@@ -21,9 +21,16 @@ ms.collection:
 
 Warehouse managers often need different work pools, priorities, or bay door assignments depending on the carrier, shipping deadline, or type of items being picked. Without dynamic classification, each combination requires its own work template, which can lead to a large and complex configuration.
 
+[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
+
 Dynamic work classification lets you use Power Fx formulas to determine these work parameters at runtime instead of configuring them statically on each work template. A single work template combined with a classification rule can replace many static templates, making your configuration simpler to maintain and more adaptable to changing business requirements.
 
-[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
+Dynamic work classification provides two main capabilities:
+
+- **Classification at work creation** – When warehouse work is created, the system evaluates a Power Fx formula to override the work pool, work priority, location directive codes, and work classes on the generated work. The formula can look up values from the work header and associated records, including the load, shipment, wave, and transportation appointment.
+- **Reclassification after load changes** – If a load changes after work has been created (for example, the carrier is reassigned), the system can re-evaluate the formula and update the associated work. Work can also be re-evaluated on a schedule if the formula depends on the current date or time.
+
+To start using dynamic work classification, you must configure how loads trigger reclassification, create one or more classification rules that contain your Power Fx formulas, and associate each rule with the work templates that should use it.
 
 ## Prerequisites
 
@@ -32,22 +39,11 @@ To use the feature described in this article, your system must meet the followin
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
 - The feature named *(Production Ready Preview) Dynamic work classification* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## What dynamic work classification does
+## Configure work reclassification on load update
 
-Dynamic work classification provides two main capabilities:
+To allow work reclassification when loads change, configure the **Work classification on load update** option. This setting controls whether the system automatically re-evaluates classification rules when a load is modified. <!-- KFM: Do we *always* run relevant classification rules when loads are *created*? If so, we should briefly mention that here. -->
 
-- **Classification at work creation** – When warehouse work is created, the system evaluates a Power Fx formula to override the work pool, work priority, location directive codes, and work classes on the generated work. The formula can look up values from the work header and associated records, including the load, shipment, wave, and transportation appointment.
-- **Reclassification after load changes** – If a load changes after work has been created (for example, the carrier is reassigned), the system can re-evaluate the formula and update the associated work. Work can also be re-evaluated on a schedule if the formula depends on the current date or time.
-
-## Set up dynamic work classification
-
-To start using dynamic work classification, you must configure how loads trigger reclassification, create one or more classification rules that contain your Power Fx formulas, and associate each rule with the work templates that should use it. The following sections walk through each of these steps.
-
-### Turn on work reclassification on load update
-
-To allow work reclassification when loads change, configure the **Work classification on load update** option. This setting controls whether the system automatically re-evaluates classification rules when a load is modified.
-
-To configure this setting, follow these steps.
+To configure this setting, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
 1. On the **General** tab, open the **Work** FastTab.
@@ -58,11 +54,11 @@ To configure this setting, follow these steps.
 > [!NOTE]
 > When using synchronous reclassification, the user may experience a brief wait during load updates while the system processes all associated work headers.
 
-### Create dynamic work classification rules
+## Create dynamic work classification rules
 
 Classification rules define the Power Fx formulas that determine how work should be classified. Each rule specifies which fields to override and the logic for calculating the new values.
 
-To create a rule, follow these steps.
+To create a rule, follow these steps:
 
 1. Go to **Warehouse management*** \> **Setup** \> **Work** \> **Dynamic work classification rules**.
 1. Select **New** to create a rule.
@@ -78,15 +74,16 @@ To create a rule, follow these steps.
     - **Reclassify work on load update** – <!-- KFM: Description needed -->
 
 1. On the **Power Fx formula** FastTab, enter a formula that returns a record with the fields you want to override. See the next sections for details on writing formulas. <!-- KFM: This is my guess. review/correct/expand this as needed -->
+1. If the **Rule scope** is set to *Work and initial work lines*, the page includes a **Initial work line formula** FastTab. This formula runs as the first pick work line is assigned to a new work and can override the following fields. See the next sections for details on writing formulas. <!-- KFM: This is my guess. review/correct/expand this as needed -->
 
 > [!TIP]
 > Use the **Copy** button on the Action Pane to duplicate an existing rule as a starting point for a new one. Use the **Preview** button to test a rule against an existing work header and see the results without making changes.
 
 <!-- KFM: What about the **Work reclassification schedules** button? -->
 
-### Write the work classification formula
+## Write work classification formulas
 
-On the **Power Fx formula** FastTab of the classification rule, enter a formula that returns a record with one or more of the following fields.
+On the **Power Fx formula** FastTab of each classification rule, enter a formula that returns a record with one or more of the following fields.
 
 The following table describes the fields that a work classification formula can return.
 
@@ -128,9 +125,9 @@ The following table lists the objects that you can reference in a work classific
 | `workTable.Wave` | The wave record associated with the work header. |
 | `workTable.Appointment` | The first transportation management (TMS) appointment associated with the load. |
 
-### Write the initial work line formula
+## Write initial work line formulas
 
-If the rule scope is set to *Work and initial work lines*, you can enter an additional formula on the **Initial work line formula** FastTab. This formula runs as the first pick work line is assigned to a new work and can override the following fields.
+If the **Rule scope** is set to *Work and initial work lines*, you can enter an additional formula on the **Initial work line formula** FastTab. This formula runs as the first pick work line is assigned to a new work and can override the following fields.
 
 | Field | Type | Description |
 |---|---|---|
@@ -150,9 +147,11 @@ The following table lists the objects that you can reference in an initial work 
 | `workLine.LoadLine` | The load line associated with the initial pick line. |
 | `workLine.Shipment` | The shipment record associated with the work line. |
 
-### Associate the rule with a work template
+## Associate rules with work templates
 
-After creating a classification rule, you need to associate it with the work template that should use it. Open the work template and specify the classification rule. During work creation, the system evaluates the rule's formula and applies the returned overrides to the generated work.
+After creating a classification rule, you need to associate it with the work template that should use it. During work creation, the system evaluates the rule's formula and applies the returned overrides to the generated work.
+
+Go to **Warehouse management** \> **Setup** \> **Work** \> **Work templates**, select a template, and set the **Dynamic work classification rule** field to the rule you want to use for that template.
 
 > [!NOTE]
 > When you use dynamic work classification with a work template, make sure the template's grouping settings align with your formula logic. For example, if your formula classifies work based on zone, the work template should group work creation by zone so that each work header contains lines from only one zone.
