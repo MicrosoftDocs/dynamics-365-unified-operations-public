@@ -4079,6 +4079,8 @@
             href: warehousing/spatial-locations-setup.md
         - name: Control work by using work templates and location directives
           href: warehousing/control-warehouse-location-directives.md
+        - name: Dynamic work classification (production ready preview)
+          href: warehousing/dynamic-work-classification.md
         - name: Work with location directives
           href: warehousing/create-location-directive.md
         - name: Test location directives with acceptance tests
