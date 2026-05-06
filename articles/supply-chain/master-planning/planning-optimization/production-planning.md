@@ -4,7 +4,7 @@ description: Learn about planning for production and explains how to modify plan
 author: Henrikan
 ms.author: henrikan
 ms.topic: article
-ms.date: 03/25/2026
+ms.date: 05/06/2026
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ---
@@ -70,6 +70,6 @@ Use the **Explosion** page to analyze the demand that is required for a specific
 
 ## <a name="filters"></a>Filters
 
-Planning Optimization offers advanced filtering options on both plan level, runtime level, or on the two levels combined. To learn more about the various filter options, see [Run planning for a subset of items](plan-filters.md).
+Planning Optimization offers advanced filtering options that can apply at the plan level, runtime level, or both. To learn more about the various filter options, see [Run planning for a subset of items](plan-filters.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
