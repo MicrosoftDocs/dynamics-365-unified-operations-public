@@ -4,7 +4,7 @@ description: Learn about the sales tax system, including a table that defines an
 author: kailiang
 ms.author: kailiang
 ms.topic: overview
-ms.date: 03/28/2024
+ms.date: 05/06/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
