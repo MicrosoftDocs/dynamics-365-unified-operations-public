@@ -40,6 +40,16 @@ A journal name can be used only for a specific segment or for a range for main a
 
 [![Journal control segment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
+## Renaming a journal
+
+You can change the journal name on a general journal only before the journal header is committed. After the journal header is committed, the journal name is locked to preserve data consistency and the control settings tied to the journal name.
+
+If a journal was created under the wrong name and the header is already committed, the journal can't be renamed and audit policies prevent deletion of the batch number. Use one of the following supported patterns instead:
+
+- Update the journal description to indicate the journal shouldn't be used (for example, **DO NOT USE**), remove any lines, and document the reason.
+- For a journal with few lines, delete the lines and recreate the entries on a new journal under the correct name.
+- For a journal with many lines, create a new journal under the correct name and import the lines into it (for example, by using the Excel add-in).
+
 **Automatic reversal** is available in general journals. For example, you have an accrual adjustment where the actual document isn't yet processed, as shown in the following illustration.
 [![General journal reversing.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png)
 
