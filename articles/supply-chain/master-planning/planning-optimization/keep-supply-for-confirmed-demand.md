@@ -121,8 +121,8 @@ A manufacturer produces a finished good, **ItemFG1**, with the following BOM str
 
 ```
 ItemFG1 (finished good, produced)
-└── ItemSFG1 (semi-finished, produced)
-    └── ItemSFG2 (semi-finished, produced, coverage by period)
+└── ItemSFG1 (semi-finished, produced, coverage by period)
+    └── ItemSFG2 (semi-finished, produced)
         └── ItemRM1 (raw material, purchased)
         └── ItemRM2 (raw material, purchased)
         └── ItemRM3 (raw material, purchased)
