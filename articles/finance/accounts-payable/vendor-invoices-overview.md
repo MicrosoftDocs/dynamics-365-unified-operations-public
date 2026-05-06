@@ -4,7 +4,7 @@ description: Learn about vendor invoices, which are requests for payment for pro
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 04/01/2026
+ms.date: 05/06/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
