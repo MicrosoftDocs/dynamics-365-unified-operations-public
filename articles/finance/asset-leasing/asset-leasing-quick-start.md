@@ -4,7 +4,7 @@ description: Learn about the asset leasing capability and walks through the step
 author: moaamer
 ms.author: moaamer
 ms.topic: get-started
-ms.date: 04/01/2026
+ms.date: 05/06/2026
 ms.custom: 
 ms.reviewer: twheeloc
 ms.collection: get-started
