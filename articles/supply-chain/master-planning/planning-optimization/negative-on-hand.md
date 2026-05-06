@@ -92,12 +92,12 @@ To configure coverage groups for handling negative on-hand, follow these steps:
 
 When you run master planning, the system creates planned orders to bring inventory back up to the maximum level whenever the projected on-hand falls below the minimum level. This approach helps maintain appropriate inventory levels even when the system encounters negative on-hand quantities.
 
-Learn more about coverage codes and how each replenishment method works in [Coverage settings](../../coverage-settings.md).
+Learn more about coverage codes and how each replenishment method works in [Coverage settings](../coverage-settings.md).
 
 ## Related information
 
 - [Differences between Planning Optimization and the deprecated master planning engine](planning-optimization-differences-with-built-in.md)
-- [Coverage settings](../../coverage-settings.md)
-- [Safety stock fulfillment for items](../../safety-stock-replenishment.md)
+- [Coverage settings](../coverage-settings.md)
+- [Safety stock fulfillment for items](../safety-stock-replenishment.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
