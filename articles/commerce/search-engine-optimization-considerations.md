@@ -2,7 +2,7 @@
 title: Search engine optimization (SEO) considerations for your site
 description: Learn about search engine optimization (SEO) considerations for your Microsoft Dynamics 365 Commerce site from development to production.
 author: josaw1
-ms.date: 02/03/2026
+ms.date: 05/06/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -37,7 +37,7 @@ When a site is in production, make sure that all site pages are correctly tagged
 To optimize search engine indexing, the rendering framework uses both information from the SEO properties that you configure in Dynamics 365 Commerce and module-specific information. For a site in production, make sure that the robots.txt file allows for indexing of your whole site, and that it contains links to your published site map document. Turn on the site map generation functionality at **Site Settings \> Site maps enabled**.
 
 > [!NOTE]
-> Starting with the Commerce version 10.0.48 preview release, internal Commerce-generated domains (`.dynamics365commerce.ms`) include an `X-Robots-Tag: noindex,nofollow` HTTP response header on all responses. This helps search engines de-index any previously crawled content from internal domains. This change is applied automatically to all tenants and doesn't require any version upgrade. For more information, see [X-Robots-Tag response header for internal domains](manage-robots-txt-files.md#x-robots-tag-response-header-for-internal-domains).
+> Starting with the Commerce version 10.0.48 preview release, internal Commerce-generated domains (`.dynamics365commerce.ms`) include an `X-Robots-Tag: noindex, nofollow` HTTP response header on all responses. This header helps search engines deindex any previously crawled content from internal domains. This change applies automatically to all tenants and doesn't require any version upgrade. For more information, see [X-Robots-Tag response header for internal domains](manage-robots-txt-files.md#x-robots-tag-response-header-for-internal-domains).
 
 ### Page SEO settings for internal preview, limited audiences, and all audiences
 
