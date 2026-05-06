@@ -183,7 +183,7 @@ The following illustration shows the two confirmed branches. Both branches and t
 
 If the sales order for Customer 2 is later canceled, the system removes only the confirmed planned requirements that are explicitly linked to that sales line - in this case, the planned production order for ItemFG1 that was created for Customer 2. The released purchase order for ItemRM1 that was pegged to that planned production order is not removed.
 
-The pegging from the planned purchase order is also preserved as-is. Planning does not re-peg the released purchase order to other confirmed demand, even though the sales line for Customer 2 is no longer present. The released purchase order remains in the system and can be used by any other demand that is not yet confirmed.
+The pegging from the planned purchase order is also preserved as-is. Planning does not re-peg the released purchase order to other confirmed demand, even though the sales line for Customer 2 is no longer present. The released purchase order remains in the system and can be used by any other demand that is not yet confirmed. If the released purchase order remains unpegged, planning assigns it a *Cancel* action, provided that actions are enabled.
 
 ![Diagram showing that removing sales line for Customer 2 removes the planned production order for ItemFG1 but leaves the released purchase order for ItemRM1.](media/keep-supply-for-confirmed-demand-scenario-by-requirement-delete.png)
 
