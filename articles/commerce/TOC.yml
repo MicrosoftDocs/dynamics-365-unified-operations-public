@@ -400,6 +400,8 @@
             href: dev-itpro/store-commerce.md
           - name: Store Commerce app capabilities
             href: dev-itpro/store-commerce-capabilities.md
+          - name: Store Commerce contextual switching
+            href: dev-itpro/store-commerce-contextual-switch.md
           - name: Store Commerce app FAQ
             href: dev-itpro/store-commerce-faq.md
           - name: Choose between Store Commerce app and Store Commerce for web
