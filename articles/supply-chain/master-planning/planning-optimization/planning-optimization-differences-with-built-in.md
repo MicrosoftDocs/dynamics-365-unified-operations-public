@@ -9,8 +9,7 @@ ms.topic: overview
 ms.date: 05/04/2026
 ms.custom: 
   - bap-template
-ms.collection:
-  - ai-assisted
+ai-usage: ai-assisted
 ---
 
 # Differences between Planning Optimization and the deprecated master planning engine
