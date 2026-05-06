@@ -78,6 +78,7 @@ The **Work order scheduling** tab provides the following settings:
 
     - Assuming that no responsible worker and responsible maintenance worker group have been selected on a work order to be scheduled - you add and subtract the rating score values in the examples in the **Preferred maintenance worker**, **Preferred maintenance worker group**, **Asset location**, and **Start date** fields above, you get a total of 3,010.00. This means a high score for the worker who is already selected as preferred maintenance worker and included in the preferred maintenance worker group on the work order, and the worker is also located in the same facility as the asset for which a job needs to be scheduled. This means there's a good chance that the worker in question will be selected to complete the job during work order scheduling.  
     - If the value *0.00* is inserted in one of the eight fields above, that rating score won't be used during work order scheduling.  
+- **Default scheduled start date** controls how the system pre-fills the **Scheduled start** field when you open the **Dispatch** page for one or more work order lines. Select *Expected start date from header* (the system default) to use the earliest expected start date among the work order headers being dispatched. Select *Scheduled start date from lines* to use the earliest scheduled start date that is already set on the work order lines being dispatched.
 
 ## The Document types tab
 
