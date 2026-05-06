@@ -28,7 +28,7 @@ Dynamic work classification lets you use Power Fx formulas to determine these wo
 Dynamic work classification provides two main capabilities:
 
 - **Classification at work creation** – When warehouse work is created, the system evaluates a Power Fx formula to override the work pool, work priority, location directive codes, and work classes on the generated work. The formula can look up values from the work header and associated records, including the load, shipment, wave, and transportation appointment.
-- **Reclassification after load changes** – If a load changes after work has been created (for example, the carrier is reassigned), the system can re-evaluate the formula and update the associated work. Work can also be re-evaluated on a schedule if the formula depends on the current date or time.
+- **Reclassification after load changes** – If a load changes after work has been created (for example, the carrier is reassigned), the system can reevaluate the formula and update the associated work. Work can also be reevaluated on a schedule if the formula depends on the current date or time.
 
 To start using dynamic work classification, you must configure how loads trigger reclassification, create one or more classification rules that contain your Power Fx formulas, and associate each rule with the work templates that should use it.
 
@@ -60,7 +60,7 @@ Classification rules define the Power Fx formulas that determine how work should
 
 To create a rule, follow these steps:
 
-1. Go to **Warehouse management*** \> **Setup** \> **Work** \> **Dynamic work classification rules**.
+1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Dynamic work classification rules**.
 1. Select **New** to create a rule.
 1. Make the following settings in the header of the new rule:
     - **Dynamic work classification rule** – Enter a name for the rule.
@@ -69,17 +69,18 @@ To create a rule, follow these steps:
         - *Work* – The formula runs once, after the work header is created. Use this scope when classification depends only on header-level properties such as the carrier or shipping time.
         - *Work and initial work lines* – The formula runs twice. First, as the initial pick work line is selected, the system evaluates a separate *initial work line formula* and applies overrides to that line. Then, after all initial work lines are collected, the system runs the main formula against the work header. Use this scope when classification depends on item-level properties such as the pick zone.
 
-1. On the **Recalculation** FastTab, make the following settings: <!-- KFM: briefly summarize the purpose of the FastTab -->
-    - **Reclassification schedule ID** – <!-- KFM: Description needed -->
-    - **Reclassify work on load update** – <!-- KFM: Description needed -->
+1. On the **Recalculation** FastTab, make the following settings to control how and when the rule is re-evaluated after the initial work creation:
+    - **Reclassification schedule ID** – This setting is reserved for future use and has no effect in the current release.
+    - **Reclassify work on load update** – Set this option to *Yes* to run the classification again each time a load associated with the work header changes. This ensures that any updates to the load are reflected in the work classification.
 
-1. On the **Power Fx formula** FastTab, enter a formula that returns a record with the fields you want to override. See the next sections for details on writing formulas. <!-- KFM: This is my guess. review/correct/expand this as needed -->
-1. If the **Rule scope** is set to *Work and initial work lines*, the page includes a **Initial work line formula** FastTab. This formula runs as the first pick work line is assigned to a new work and can override the following fields. See the next sections for details on writing formulas. <!-- KFM: This is my guess. review/correct/expand this as needed -->
+1. On the **Power Fx formula** FastTab, enter a formula that returns a record with the fields you want to override. See the next sections for details on writing formulas.
+1. If the **Rule scope** is set to *Work and initial work lines*, the page includes a **Initial work line formula** FastTab. This formula runs when the first work line is assigned to a new work record. See the next sections for details on writing formulas.
 
 > [!TIP]
-> Use the **Copy** button on the Action Pane to duplicate an existing rule as a starting point for a new one. Use the **Preview** button to test a rule against an existing work header and see the results without making changes.
-
-<!-- KFM: What about the **Work reclassification schedules** button? -->
+>
+> - Use the **Copy** button on the Action Pane to duplicate an existing rule as a starting point for a new one.
+> - Use the **Preview** button to test a rule against an existing work header and see the results without making changes.
+> - The **Work reclassification schedules** button is reserved for future use and has no effect in the current release.
 
 ## Write work classification formulas
 
@@ -127,7 +128,7 @@ The following table lists the objects that you can reference in a work classific
 
 ## Write initial work line formulas
 
-If the **Rule scope** is set to *Work and initial work lines*, you can enter an additional formula on the **Initial work line formula** FastTab. This formula runs as the first pick work line is assigned to a new work and can override the following fields.
+If you set the **Rule scope** to *Work and initial work lines*, enter an additional formula on the **Initial work line formula** FastTab. This formula runs as the first pick work line is assigned to a new work record and can override the following fields.
 
 | Field | Type | Description |
 |---|---|---|
@@ -149,7 +150,7 @@ The following table lists the objects that you can reference in an initial work 
 
 ## Associate rules with work templates
 
-After creating a classification rule, you need to associate it with the work template that should use it. During work creation, the system evaluates the rule's formula and applies the returned overrides to the generated work.
+After creating a classification rule, associate it with the work template that should use it. During work creation, the system evaluates the rule's formula and applies the returned overrides to the generated work.
 
 Go to **Warehouse management** \> **Setup** \> **Work** \> **Work templates**, select a template, and set the **Dynamic work classification rule** field to the rule you want to use for that template.
 
@@ -164,9 +165,9 @@ The following examples illustrate common scenarios where dynamic work classifica
 
 A warehouse uses three carriers that pick up shipments at different times during the day. The warehouse manager wants to route each carrier's work to a separate work pool and assign higher priority to the earliest pickup.
 
-Without dynamic classification, this requires three work templates—each filtering on a different carrier code, each with its own work pool and priority settings.
+Without dynamic classification, this setup requires three work templates. Each template filters on a different carrier code, each with its own work pool and priority settings.
 
-With dynamic classification, a single work template and one rule handles all three carriers.
+With dynamic classification, a single work template and one rule handle all three carriers.
 
 ```powerfx
 Switch(workTable.Load.CarrierCode,
@@ -176,11 +177,11 @@ Switch(workTable.Load.CarrierCode,
 )
 ```
 
-If the load is later reassigned to a different carrier, the system can reclassify the work automatically (when reclassification on load update is turned on).
+If you later reassign the load to a different carrier, the system can automatically reclassify the work when reclassification on load update is turned on.
 
 ### Example 2: Direct put-away to carrier-specific bay doors
 
-Building on example 1, the warehouse manager also wants outbound put lines directed to different bay doors depending on the carrier. With static configuration, each work template would need a different location directive code.
+Building on example 1, the warehouse manager also wants outbound put lines directed to different bay doors depending on the carrier. With static configuration, each work template needs a different location directive code.
 
 With dynamic classification, you can add directive code overrides to the same formula.
 
@@ -239,13 +240,13 @@ An alternative approach calculates priority based on the number of minutes remai
 ```
 
 > [!IMPORTANT]
-> The time-remaining approach requires the reclassification batch job to run on a recurring schedule (for example, every hour) to keep priorities current. Depending on the number of open work headers, this can add load to the system. The time-of-day approach (first formula) is more efficient because work only needs reclassification when the load's scheduled shipping time changes.
+> The time-remaining approach requires the reclassification batch job to run on a recurring schedule (for example, every hour) to keep priorities current. Depending on the number of open work headers, this requirement can add load to the system. The time-of-day approach (first formula) is more efficient because work only needs reclassification when the load's scheduled shipping time changes.
 
 ### Example 4: Classify work by pick zone
 
 This example assigns a different work class to the initial pick/put pair based on the zone where items are picked. For example, picks from a freezer zone can be restricted to workers with appropriate cold-weather gear.
 
-To use this approach, set the **Rule scope** to *Work and initial work lines* and configure the work template to group work by zone. This ensures each work header contains lines from only one zone.
+To use this approach, set the **Rule scope** to *Work and initial work lines* and configure the work template to group work by zone. This configuration ensures each work header contains lines from only one zone.
 
 The initial work line formula concatenates a prefix with the zone ID to create a zone-specific work class.
 
