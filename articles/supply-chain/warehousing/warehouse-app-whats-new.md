@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 04/30/2026
+ms.date: 05/06/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -19,6 +19,19 @@ ms.custom:
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management. It lists changes for each version released since the general availability (GA) release of version 4. Notes for older versions are available in [Warehouse Management mobile app release notes archive](warehouse-app-whats-new-archive.md).
 
 Starting with version 4.1.1.0, every V4 and later release is tagged with its publication date. Publication dates determine whether a release is within the rolling 12-month support window that applies to V4 and all later releases. Learn more in [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy).
+
+## Release notes for version 4.1.2.0 (May 6, 2026)
+
+Version 4.1.2.0 is a minor update that includes the following fixes and improvements:
+
+### Bug fixes
+
+- **Components fields** – Fixed an issue that caused `data=1` to appear in some edge case scenarios.
+
+### Improvements
+
+- **Diagnostics** – Added the option to clean up authentication data from the Diagnostics page.
+- **Windows MDM** – Expanded mobile device management (MDM) configuration collection to support a broader range of MDM providers on Windows.
 
 ## Release notes for version 4.1.1.0 (April 30, 2026)
 
