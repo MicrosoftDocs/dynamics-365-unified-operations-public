@@ -4,7 +4,7 @@ description: Learn how to set up, generate, and submit a value-added tax (VAT) d
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 03/05/2026
+ms.date: 04/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 
@@ -175,7 +175,7 @@ Follow these steps to define the VAT registration number that the **DK VAT retur
 1. Select the **DK VAT return** electronic message processing. On the **Message additional fields** FastTab, enter the VAT registration number that should be used to send the VAT return in the **Tax registration number** field.
 1. Save your changes.
 
-If you don't specify the VAT registration number in the **Tax registration number** additional field of the **DK VAT return** electronic message processing, the system retrieves it from the registration ID that you define in the properties of the legal entity that's associated with the **VAT ID** registration category. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
+If you don't specify the VAT registration number in the **Tax registration number** additional field of the **DK VAT return** electronic message processing, the system retrieves it from the registration ID that you define in the properties of the legal entity that's associated with the **VAT ID** registration category. Learn about detailed concepts, setup guidance, and examples in [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 
 ## Generate a VAT declaration from electronic messages and submit it to the Danish Tax Agency
 

@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/04/2019
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak  
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
@@ -18,24 +18,24 @@ ms.dyn365.ops.version: 10.0.4
 [!include [banner](../../includes/banner.md)]
 
 1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
-2. Create a sales order for a taxable item, and save the record.
-3. Select **Tax information**.
+1. Create a sales order for a taxable item, and save the record.
+1. Select **Tax information**.
 
-    ![Tax information dialog box.](../media/Capture.PNG)
+    :::image type="content" source="../media/Capture.PNG" alt-text="Screenshot of the Tax information dialog box.":::
 
-4. Select the **GST** FastTab.
+1. Select the **GST** FastTab.
 
-    ![GST FastTab.](../media/Capture02.PNG)
+    :::image type="content" source="../media/Capture02.PNG" alt-text="Screenshot of the GST FastTab.":::
 
-5. Select the **Customer tax information** FastTab.
+1. Select the **Customer tax information** FastTab.
 
-    ![Customer tax information FastTab.](../media/Capture05.PNG)
+    :::image type="content" source="../media/Capture05.PNG" alt-text="Screenshot of the Customer tax information FastTab.":::
 
     > [!NOTE]
     > The **Tax information** field is blank. Therefore, the dealer is an unregistered dealer.
 
-6. Select **OK**.
-7. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document** to review the calculated taxes.
+1. Select **OK**.
+1. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document** to review the calculated taxes.
 
     What you see might resemble the following example:
 
@@ -43,25 +43,25 @@ ms.dyn365.ops.version: 10.0.4
     - **CGST:** 10 percent
     - **SGST:** 10 percent
 
-    ![Tax document page.](../media/Capture04_upd.png)
+    :::image type="content" source="../media/Capture04_upd.png" alt-text="Screenshot of the Tax document page.":::
 
-8. Select **Close**.
+1. Select **Close**.
 
 ## Post the invoice
 
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
-2. In the **Quantity** field, select **Packing slip**.
-3. Select the **Print invoice** check box, and then select **OK**.
-4. Select **Yes** to acknowledge the warning message that you receive.
+1. In the **Quantity** field, select **Packing slip**.
+1. Select the **Print invoice** check box, and then select **OK**.
+1. Select **Yes** to acknowledge the warning message that you receive.
 
 ## Validate the voucher
 
 1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
-2. Select **Voucher**.
+1. Select **Voucher**.
 
 The following illustration shows the financial entries for both the intrastate transactions and the interstate transactions.
 
-![Financial entries for intrastate and interstate transactions.](../media/Annotation-2019-05-20-100324.png)
+:::image type="content" source="../media/Annotation-2019-05-20-100324.png" alt-text="Screenshot of financial entries for intrastate and interstate transactions.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Manage robots.txt files
-description: Learn how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
+description: Learn how to manage robots.txt files in Microsoft Dynamics 365 e-commerce.
 author: BrianShook
-ms.date: 02/03/2026
+ms.date: 05/06/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -16,10 +16,10 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
+This article describes how to manage robots.txt files in Microsoft Dynamics 365 e-commerce.
 
 > [!NOTE]
-> Starting February 2, 2026, a change is gradually scaling up to all customer environments where internal Commerce-generated domains (`.dynamics365commerce.ms`) return a deny-all response for robots.txt requests instead of the configured robots.txt file. This behavior prevents search engines from indexing test and staging environments. Custom production domains continue to serve the uploaded robots.txt file. To test your robots.txt configuration from an internal domain, use the `?domain=` query parameter as described in [Test robots.txt for a specific domain](#test-robotstxt-for-a-specific-domain).
+> Starting with the Dynamics 365 Commerce version 10.0.48 preview release, all HTTP responses served from internal Commerce-generated domains (`.dynamics365commerce.ms`) include an `X-Robots-Tag: noindex, nofollow` response header. This header instructs search engines not to index pages on internal domains and replaces the earlier deny-all robots.txt approach. This change automatically applies to all tenants and doesn't require any version upgrade. For more information, see [X-Robots-Tag response header for internal domains](#x-robots-tag-response-header-for-internal-domains).
 
 The robots exclusion standard, or robots.txt, is a standard that websites use to communicate with web robots. It instructs web robots about any areas of a website that shouldn't be visited. Robots are often used by search engines to index websites.
 
@@ -39,11 +39,18 @@ When you upload a robots.txt file for a custom domain such as `www.fabrikam.com`
 
 ### Internal Commerce-generated domains
 
-Internal domains that use the `.dynamics365commerce.ms` format don't return uploaded robots.txt files. Instead, these domains return a deny-all response that blocks all search engine indexing. This behavior ensures that test and staging environments aren't indexed by search engines, and that only your production custom domain is crawled and indexed.
+Internal domains that use the `.dynamics365commerce.ms` format serve the uploaded robots.txt file, similar to custom production domains. However, all HTTP responses from these domains include the `X-Robots-Tag: noindex, nofollow` header, which instructs search engines not to index or follow links on these pages. For more information, see [X-Robots-Tag response header for internal domains](#x-robots-tag-response-header-for-internal-domains).
+
+### X-Robots-Tag response header for internal domains
+
+Starting with Commerce version 10.0.48 preview release, all HTTP responses from internal Commerce-generated domains (`.dynamics365commerce.ms`) include an `X-Robots-Tag: noindex, nofollow` response header. This change automatically applies to all tenants and doesn't require any version upgrade. The header instructs search engines not to index the page and not to follow any links on it. It also helps search engine crawlers recrawl pages and discover the `noindex` directive, which removes previously indexed content from search results.
+
+> [!NOTE]
+> The `X-Robots-Tag` header only applies to responses from internal Commerce-generated domains. It doesn't affect custom production domains.
 
 ## Test robots.txt for a specific domain
 
-To preview how your robots.txt file appears for a specific custom domain when accessing from an internal Commerce-generated domain, append the `?domain=` query parameter to the robots.txt URL.
+To preview how your robots.txt file appears for a specific custom domain when accessing from an internal Commerce-generated domain, add the `?domain=` query parameter to the robots.txt URL.
 
 For example, if your internal domain is `https://<e-commerce-tenant-name>.dynamics365commerce.ms` and your custom domain is `<your-custom-domain>`, use the following URL:
 
@@ -53,7 +60,7 @@ This method allows you to verify the robots.txt configuration for any of your su
 
 ## Upload a robots.txt file
 
-After you create and edit your robots.txt file according to the [robots exclusion standard](https://www.robotstxt.org/orig.html), make sure that the file is accessible on the computer where you use the Commerce authoring tools. The file must be named **robots.txt**. For best results, use the format noted in the standard. Each Commerce customer is responsible for validating and maintaining the contents of its robots.txt file. To upload a robots.txt file, sign in to Commerce as a system admin.
+After you create and edit your robots.txt file according to the [robots exclusion standard](https://www.robotstxt.org/orig.html), make sure you can access the file on the computer where you use the Commerce authoring tools. The file must be named **robots.txt**. For best results, use the format noted in the standard. Each Commerce customer is responsible for validating and maintaining the contents of its robots.txt file. To upload a robots.txt file, sign in to Commerce as a system admin.
 
 To upload a robots.txt file in Commerce, follow these steps:
 
@@ -65,8 +72,10 @@ To upload a robots.txt file in Commerce, follow these steps:
 1. In the dialog box, browse to and select the robots.txt file that you want to upload for the associated domain, and then select **Open** to complete the upload.
 
 > [!NOTE]
+>
 > - During upload, Commerce verifies that the file is a text file, but it doesn't validate the file's contents.
-> - Uploaded robots.txt files are served only on custom production domains. Internal Commerce-generated domains (such as `.dynamics365commerce.ms`) return a deny-all robots.txt response to prevent test environments from being indexed. For more information, see [How robots.txt works with different domain types](#how-robotstxt-works-with-different-domain-types).
+>
+> - Uploaded robots.txt files are served on both custom production domains and internal Commerce-generated domains. However, internal domains also include the `X-Robots-Tag: noindex, nofollow` response header on all HTTP responses to prevent search engine indexing. For more information, see [X-Robots-Tag response header for internal domains](#x-robots-tag-response-header-for-internal-domains).
 
 ## Download a robots.txt file
 
@@ -94,29 +103,20 @@ To delete a robots.txt file in Commerce, follow these steps:
 1. In the file browser window, browse to and select the robots.txt file that you want to delete for the domain, and then select **Open**. A warning message box appears.
 1. In the message box, select **Delete** to confirm deletion of the robots.txt file.
 
-> [!NOTE] 
+> [!NOTE]
 > You can use this procedure to delete only robots.txt files that you previously uploaded through the Commerce authoring tools.
 
-## Additional resources
+## More resources
 
-[Configure your domain name](configure-your-domain-name.md)
-
-[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
-
-[Create an e-commerce site](create-ecommerce-site.md)
-
-[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
-
-[Upload URL redirects in bulk](dev-itpro/upload-bulk-redirects.md)
-
-[Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
-
-[Set up custom pages for user logins](custom-pages-user-logins.md)
-
-[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
-
-[Add support for a content delivery network (CDN)](add-cdn-support.md)
-
-[Enable location-based store detection](enable-store-detection.md)
+- [Configure your domain name](configure-your-domain-name.md)
+- [Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
+- [Create an e-commerce site](create-ecommerce-site.md)
+- [Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
+- [Upload URL redirects in bulk](dev-itpro/upload-bulk-redirects.md)
+- [Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
+- [Set up custom pages for user logins](custom-pages-user-logins.md)
+- [Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
+- [Add support for a content delivery network (CDN)](add-cdn-support.md)
+- [Enable location-based store detection](enable-store-detection.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

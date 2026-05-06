@@ -3,8 +3,10 @@ title: Intent letters - Invoicing usual exporters
 description: Learn about how to set up intent letters and how to use them when you issue invoices, including a process for setting up accounts receivable parameters.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/16/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy

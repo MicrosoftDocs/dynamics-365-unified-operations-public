@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 07/30/2019
@@ -31,16 +31,16 @@ A tax type is analogous to a tax regime. Sales tax, value-added tax (VAT), and G
 
 To create a tax type, on the **Tax document** page, select **Lines**, select **Add** \> **Tax document** \> **Tax type**, specify the name, description, and rounding rule, and then select **OK**.
 
-![Creating a tax type.](../media/GTE-Create-TaxType.png)
+:::image type="content" source="../media/GTE-Create-TaxType.png" alt-text="Screenshot of creating a tax type.":::
 
 ## Create a tax component
 
 To create a tax component, select the tax type to create the tax component under, and then select **Add \> Tax document \> Tax component**.
 
 > [!TIP]
-> Try to use the predefined rules if they meet your requirements. In this case, the system will help create tax measures, formulas, and posting profiles.
+> Try to use the predefined rules if they meet your requirements. In this case, the system helps create tax measures, formulas, and posting profiles.
 
-![Creating a tax component.](../media/GTE-Create-TaxComponent.png)
+:::image type="content" source="../media/GTE-Create-TaxComponent.png" alt-text="Screenshot of creating a tax component.":::
 
 The following sections provide information about some of the fields in the **Tax component** dialog box.
 
@@ -63,13 +63,12 @@ For transactions where the price includes tax, the **Tax included in price** opt
 
 ### Reverse charge
 
-If you set the **Reverse charge** option to **Yes**, the component supports reverse charge behavior. The user can then specify the conditions where reverse charge behavior applies, and tax will be calculated and posted accordingly.
+If you set the **Reverse charge** option to **Yes**, the component supports reverse charge behavior. The user can then specify the conditions where reverse charge behavior applies, and tax is calculated and posted accordingly.
 
 ### Non deductible
 
-If you set the **Non deductible** option to **Yes**, the component supports non-deductible behavior. The user can then specify the conditions where non-deductible behavior applies, and tax will be calculated and posted accordingly.
+If you set the **Non deductible** option to **Yes**, the component supports non-deductible behavior. The user can then specify the conditions where non-deductible behavior applies, and tax is calculated and posted accordingly.
 
-After the tax component is created by using predefined rules, you should define the applicability rule for the tax component itself, the rate, reverse charge, and so on. For more information, see [Tax engine applicability](../../dev-itpro/tax-engine-applicability.md). You can always manually edit the tax measures, formulas, posting profiles, and so on.
-
+After you create the tax component by using predefined rules, define the applicability rule for the tax component itself, the rate, reverse charge, and so on. For more information, see [Tax engine applicability](../../dev-itpro/tax-engine-applicability.md). You can always manually edit the tax measures, formulas, posting profiles, and so on.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
