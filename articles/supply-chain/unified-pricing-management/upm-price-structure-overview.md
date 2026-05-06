@@ -4,7 +4,7 @@ description: Get an overview of price structures in Unified pricing management, 
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 10/25/2024
+ms.date: 5/5/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
@@ -18,7 +18,7 @@ When a sales order is placed, you can review the detailed price breakdown, inclu
 
 You can set up your system to use either a single price structure or multiple price structures.
 
-[<img src="media/price-trees-block-diagram.png" alt="Diagram of the price tree elements for a system that uses a single price structure and a system that uses multiple price structures." title="Price tree setup elements" width="720" />](media/price-trees-block-diagram.png#lightbox)
+:::image type="content" source="media/price-trees-block-diagram.png" alt-text="Screenshot of the price tree elements for a system that uses a single price structure and a system that uses multiple price structures." lightbox="media/price-trees-block-diagram.png":::
 
 ## Price component types
 
@@ -36,8 +36,8 @@ The following table summarizes the main types of components that can be included
 
 If your price structure has multiple price rules that apply to the same price component code and/or to multiple price component codes of the same type, the system applies concurrency rules to resolve them.
 
-- If more than one pricing rule applies to the same price component code in a price structure, *within-price-component-code concurrency* rules are applied to determine which rules apply and how they are combined. Learn more in [Resolve concurrency within price component codes](upm-concurrence-within-codes.md).
-- If your price structure includes more than one price component code of the same type, *across-price-component-code concurrency* rules are applied to determine how they are combined. Learn more in [Resolve concurrency across price component codes](upm-concurrence-cross-codes.md).
+- If more than one pricing rule applies to the same price component code in a price structure, *within-price-component-code concurrency* rules are applied to determine which rules apply and how they're combined. For more information, see [Resolve concurrency within price component codes](upm-concurrence-within-codes.md).
+- If your price structure includes more than one price component code of the same type, *across-price-component-code concurrency* rules are applied to determine how they're combined. For more information, see [Resolve concurrency across price component codes](upm-concurrence-cross-codes.md).
 
 ## Next steps
 
