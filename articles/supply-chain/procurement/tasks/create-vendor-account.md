@@ -22,7 +22,7 @@ This procedure shows how to create a vendor account, and add an address and cont
 1. Go to **Procurement and sourcing** > **Vendors** > **All vendors**.
 1. On the Action Pane, select **New**.
 1. In the **Vendor account** field, enter a value that uniquely identifies the vendor.
-        - The value might be populated automatically. If so, you can skip this step.    
+    - The value might be populated automatically. If so, you can skip this step.
     - You can create vendor accounts for a person or organization. This choice affects which fields are available. In this example, create a vendor account for an organization.
 1. In the **Name** field, enter or select a vendor name. If your vendor is already registered in your system, select it in the dropdown list. The new vendor account inherits the address and contact information that's already registered.
 1. In the **Group** field, select a vendor group. Use the vendor group to group vendors that have any of the following parameters in common: terms of payment, settle period, inventory posting ledger accounts - including the sales tax group, default ledger accounts, product filter codes, or supply forecast configuration.

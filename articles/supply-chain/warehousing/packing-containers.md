@@ -48,7 +48,7 @@ You must define a *location type* for the packing locations. Use location types 
 
 Follow these steps to set up a location type.
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Location types**.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Location types**.
 1. On the Action Pane, select **New** to add a location type to the grid.
 1. Set the following fields for the new location type:
 
@@ -61,7 +61,7 @@ After you create a location type, set up your system to recognize it as the loca
 
 Follow these steps to set the location type that is used for packing operations.
 
-1. Go to **Warehouse management \> Setup \> Warehouse management parameters**
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**
 1. On the **General** tab, on the **Location types** FastTab, set the **Packing location type** field to the location type that you use to identify packing stations.
 
 > [!NOTE]
@@ -79,7 +79,7 @@ Each *location profile* establishes information and rules that apply to the asso
 
 Follow these steps to set up a location profile for a packing location.
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Location profiles**.
 1. Either select an existing profile from the list pane or select **New** on the Action Pane to create a new one.
 1. On the header of the new or selected profile, set the following fields:
 
@@ -88,7 +88,7 @@ Follow these steps to set up a location profile for a packing location.
 
 1. On the **General** FastTab, set the following fields:
 
-    - **Location format** – Select the location format to use for the current location. Location formats are a naming system that is used to create unique and consistent names for the different location bin positions that are used in a warehouse. If you don't already have the format that you need, you can create it by going to **Warehouse management \> Setup \> Warehouse \> Location formats**. Learn more in [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md).
+    - **Location format** – Select the location format to use for the current location. Location formats are a naming system that is used to create unique and consistent names for the different location bin positions that are used in a warehouse. If you don't already have the format that you need, you can create it by going to **Warehouse management** \> **Setup** \> **Warehouse** \> **Location formats**. Learn more in [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md).
     - **Location type** – Select the location type that is set up as the packing location type on the **Warehouse management parameters** page, as described earlier in this article.
     - **Use license plate tracking** – For packing locations, set this option to *Yes*. The system must be able to track license plate IDs at packing locations, so that it can control the packing process.
     - **Allow negative inventory** – For packing locations, set this option to *No*.
@@ -102,7 +102,7 @@ You must have at least one *location* where workers put inventory items that mus
 
 Follow these steps to add a packing location.
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Locations**.
 1. On the Action Pane, select **New** to add a location.
 1. Set the following fields for the new location:
 
@@ -120,7 +120,7 @@ Each *container packing policy* defines how to process a container. Each time yo
 
 Follow these steps to set up a container packing policy.
 
-1. Go to **Warehouse management \> Setup \> Containers \> Container packing policies**.
+1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container packing policies**.
 1. Either select an existing policy from the list pane or select **New** on the Action Pane to create a new one.
 1. On the header of the new or selected policy, set the following fields:
 
@@ -176,12 +176,12 @@ Follow these steps to set up a container packing policy.
         - *Manual* – Manifesting is required by the packing workflow. The system doesn't allow a container to be closed or released until manifesting is completed.
         - *Transportation management* – Manifesting will be done through Transportation management (TMS) rate engines. Because this option requires custom development to implement a specific engine for the transportation provider, it doesn't work out of the box in the current version.
 
-        - **Print container contents** – Set this option to *Yes* to automatically print the container contents report when a container is registered as closed. You can also print the report on demand.
+    - **Print container contents** – Set this option to *Yes* to automatically print the container contents report when a container is registered as closed. You can also print the report on demand.
 
 1. On the **Container group manifest** FastTab, in the **Manifest requirements for container group** field, select one of the following options:
 
     - *None* – The container group manifest won't be included as a requirement in the packing workflow.
-        - *Manual* – The packing workflow includes the container group manifest as a requirement. All containers that are included in the group must be closed before the group can be manifested. Select this option if you're required to complete a manifest for every container group that is packed at the packing station. Typically, select this option if containers are packed on a pallet and the whole pallet is manifested.
+    - *Manual* – The packing workflow includes the container group manifest as a requirement. All containers that are included in the group must be closed before the group can be manifested. Select this option if you're required to complete a manifest for every container group that is packed at the packing station. Typically, select this option if containers are packed on a pallet and the whole pallet is manifested.
 
     > [!NOTE]
     > The current version doesn't support manifest reports for container groups, and there's no TMS engine support for container groups.
@@ -191,14 +191,14 @@ Follow these steps to set up a container packing policy.
     - **Manifest requirements for shipment** – Select one of the following options:
 
         - *None* – The shipment manifest won't be included as a requirement in the packing workflow.
-                - *Manual* – The packing workflow includes the shipment manifest as a requirement. No container for a shipment can be released until manifesting is completed.
-                - *Transportation management* – Manifesting is done through TMS rate engines. Because this option requires custom development to implement a specific engine for the transportation provider, it won't work out of the box in the current version.
+        - *Manual* – The packing workflow includes the shipment manifest as a requirement. No container for a shipment can be released until manifesting is completed.
+        - *Transportation management* – Manifesting is done through TMS rate engines. Because this option requires custom development to implement a specific engine for the transportation provider, it won't work out of the box in the current version.
 
         Shipment manifesting should be enabled if you're required to complete a manifest for the whole shipment that is packed at the packing station. It's typically used when one consolidated manifest is required even though the shipment consists of multiple containers or container groups.
 
     - **Print packing slip** – Set this option to *Yes* to automatically print the packing slip as part of the shipment manifest. You can also print the packing slip on demand.
     - **Print packing slip asynchronously** – This option is available only when the **Print packing slip** option is set to *Yes*. Set this option to *Yes* to process sales packing slips asynchronously by using the message processor. In this case, the system queues sales packing slip postings to the message processors by using messages of the *Run packing slip for container* type to the *Warehouse* queue. This setting requires that you also set the **Packing slip posting parameters ID** field. For more information about how to set up and use the message processor, and how to schedule the batch job that's required to process the messages, see [Monitor and control message processor messages](../message-processor/message-processor.md).
-        - **Packing slip posting parameters ID** – This setting applies when the **Print packing slip asynchronously** option is set to *Yes*. You must define at least one set of parameter settings on the **Packing slip posting parameters** page (**Warehouse management \> Setup \> Inventory \> Packing slip posting parameters**) and select the ID for the set of settings that you want to use here. The parameter settings are used when the last container for a shipment is closed. Warehouse workers aren't prompted to confirm the values. If you're using the [*Container closing*](warehouse-app-packing-containers.md) process for the Warehouse Management mobile app, this process is the only one that's supported for automatic posting of packing slips.
+    - **Packing slip posting parameters ID** – This setting applies when the **Print packing slip asynchronously** option is set to *Yes*. You must define at least one set of parameter settings on the **Packing slip posting parameters** page (**Warehouse management** \> **Setup** \> **Inventory** \> **Packing slip posting parameters**) and select the ID for the set of settings that you want to use here. The parameter settings are used when the last container for a shipment is closed. Warehouse workers aren't prompted to confirm the values. If you're using the [*Container closing*](warehouse-app-packing-containers.md) process for the Warehouse Management mobile app, this process is the only one that's supported for automatic posting of packing slips.
 
 ### Set up container types
 
@@ -206,7 +206,7 @@ During the manual packing process, containers must be created before items can b
 
 Follow these steps to create a container type.
 
-1. Go to **Warehouse management \> Setup \> Containers \> Container types**.
+1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container types**.
 1. On the Action Pane, select **New** to add a container type.
 1. Set the following fields for the new container type:
 
@@ -228,15 +228,15 @@ Follow these steps to create a container type.
 
 Follow these steps to set up a packing profile.
 
-1. Go to **Warehouse management \> Setup \> Packing \> Packing profiles**.
+1. Go to **Warehouse management** \> **Setup** \> **Packing** \> **Packing profiles**.
 1. Either select an existing profile from the list pane or select **New** on the Action Pane to create a new one.
 1. Make the following settings for your new or selected profile:
 
     - **Packing profile ID** – Enter a short ID for the profile.
     - **Description** – Enter a description of the packing profile.
     - **Container packing policy** – Select the packing policy that applies to the profile. For more information, see the [Set up container packing policies](#packing-policy) section of this article.
-        - **Container ID mode** – Select whether to automatically generate a container ID on creeating a container, or whether to manually create it.
-        - **Container type** – Select the container type that's used by default when a new container is created.
+    - **Container ID mode** – Select whether to automatically generate a container ID on creating a container, or whether to manually create it.
+    - **Container type** – Select the container type that's used by default when a new container is created.
     - **Autocreate container at container close** – Select this checkbox to automatically create a new container if the previous container is closed, and one or more lines remain in the current shipment.
     - **Print container label at container creation** – Select this checkbox to automatically print a container label when a new container is created. For more information about how to set up your container label layouts, see [Container label layouts and printing](print-container-labels.md).
     - **Prevent editing container ID** – Select this check box to prevent automatically assigned container IDs from being edited.
@@ -248,7 +248,7 @@ Every user or worker who packs containers by using the **Pack** page of the web 
 
 Follow these steps to set up a *worker/person* record for the packing process.
 
-1. Go to **Warehouse management \> Setup \> Worker**.
+1. Go to **Warehouse management** \> **Setup** \> **Worker**.
 1. On the Action Pane, select **New** to add a work user.
 1. Set the **Worker** field to the existing worker record defined in the **Human resources** module for the user who completes the packing process.
 1. On the **Profile** FastTab, set the following fields:
@@ -306,7 +306,7 @@ Follow these steps to create a sales order and complete the work of moving the o
 
 The inventory items are now at the packing area and are ready to be packed into containers. Follow these steps to create a new container in the system and pack it.
 
-1. Go to **Warehouse management \> Packing and containerization \> Pack**.
+1. Go to **Warehouse management** \> **Packing and containerization** \> **Pack**.
 1. In the **Select packing station** dialog box, set the following values:
 
     - **Site:** *6*
@@ -325,7 +325,7 @@ The inventory items are now at the packing area and are ready to be packed into 
     - **Quantity:** *1.00*
     - **Identifier:** *A0001*
 
-        Immediately after you select the **Identifier** value, the page updates the **Open lines** and **All lines** FastTabs to indicate that one item is packed. You should now have packed one of the two pieces of item *A0001*.
+    Immediately after you select the **Identifier** value, the page updates the **Open lines** and **All lines** FastTabs to indicate that one item is packed. You should now have packed one of the two pieces of item *A0001*.
 
 1. On the Action Pane, select **Close container**.
 1. In the **Close container** dialog box, select **Get system weight** to fill in the default **Gross weight** value.
@@ -334,6 +334,6 @@ The inventory items are now at the packing area and are ready to be packed into 
 > [!TIP]
 > You can view containers in various ways based on context. For example, when you pack a shipment, it's often useful to view either containers that are part of the shipment or all containers that are physically at a packing station. The **Packing station** page has buttons that you can use to view all open and closed containers at a packing station. These views aren't restricted to a specific shipment. They can be very helpful in situations where one worker is packing a container, and another worker is manifesting and releasing the container.
 >
-> A consolidated view of all containers is also available. This view is useful mostly for users who work outside the context of a single packing station. To see it, go to **Warehouse management \> Packing and containerization \> Containers**.
+> A consolidated view of all containers is also available. This view is useful mostly for users who work outside the context of a single packing station. To see it, go to **Warehouse management** \> **Packing and containerization** \> **Containers**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

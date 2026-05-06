@@ -40,7 +40,7 @@ Use container types to create descriptions of containers, including maximum valu
 
 To set up a container type, follow these steps:
 
-1. Go to **Warehouse management** > **Setup** > **Containers** > **Container type**.
+1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container type**.
 1. Select **New** to create a new container type.
 1. Enter a unique identifier (ID) and description for the container type.
 1. In the **Tare weight** field, enter the actual or estimated weight of the container.
@@ -58,7 +58,7 @@ Set up logical groups of container types. For each group, specify the sequence i
 
 To set up a container group, follow these steps:
 
-1. Go to **Warehouse management** > **Setup** > **Containers** > **Container groups**.
+1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**.
 1. Select **New** to create a container group.
 1. Enter a unique ID and description for the container group.
 1. On the **Details** FastTab, select **New** to add a container type to the group.
@@ -71,7 +71,7 @@ Set up rules for the containerization process, such as inventory mixing rules an
 
 To set up a container build template, follow these steps:
 
-1. Go to **Warehouse management** > **Setup** > **Containers** > **Container build template**.
+1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container build template**.
 1. Create a new container build template.
 1. In the **Containerization name** and **Sequence number** fields, enter the name of the containerization template and the order that matches allocation lines.
 

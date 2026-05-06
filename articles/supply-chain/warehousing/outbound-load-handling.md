@@ -26,7 +26,7 @@ Each outbound load can be associated with one or more order line quantities for 
 
 To manage the process of shipping your orders, apply an *outbound shipment processing policy* where the desired flow is set up for your shipments.
 
-The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** > **Setup** > **Shipping** > **Outbound shipment processing policies**):
+The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** \> **Setup** \> **Shipping** \> **Outbound shipment processing policies**):
 
 - **Fill entire shipment** – Choose what to do if work creation fails for one or more lines in a shipment (for example, due to location directive failures). This feature only checks for work creation failures and doesn't check whether the full ordered quantity can be fulfilled. Choose one of the following options:
     - *Enabled*: If work creation fails for any line in a shipment, then always exclude that entire shipment from the wave (create no work for that shipment), regardless of the setting for each customer.
@@ -90,7 +90,7 @@ When the *packing slip* from a load is processed, the system updates the related
 
 Although the background posting procedure requires a status of *Queued*, a load packing slip can be manually posted even if the status is *Error*. After successful posting, the status is changed to *None*.
 
-To enable the *Load packing slip posting* task to work in the background, you must configure appropriate settings on the **Packing slip posting parameters** page (**Warehouse management** > **Setup** > **Inventory** > **Packing slip posting parameters**). Because this task is run in the background, within a batch job, you should avoid printing to the screen if printing is included in the process.
+To enable the *Load packing slip posting* task to work in the background, you must configure appropriate settings on the **Packing slip posting parameters** page (**Warehouse management** \> **Setup** \> **Inventory** \> **Packing slip posting parameters**). Because this task is run in the background, within a batch job, you should avoid printing to the screen if printing is included in the process.
 
 > [!TIP]
 > To enable automatic distribution of sales packing slips for each shipment, based on the predetermined values, set the **Packing slip creation policy** value to *Shipment* for the load, and supply **Preallocated packing slip ID** and **Preallocated packing slip document date** values for each associated shipment in the *Packing slip posting parameters* section.

@@ -17,7 +17,7 @@ ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuil
 
 ## Prerequisites
 
-To use warehouse management to process catch weight products, turn on the functionality by using a license configuration key. Go to **System administration** > **Setup** > **License configuration**. Then, on the **Configuration keys** tab, expand **Trade** > **Warehouse and Transportation management**, and select the check box for **Catch weight for warehouse**. Turn on both the **Warehouse and Transportation management** license configuration key and the **Process distribution** > **Catch weight** license configuration keys.
+To use warehouse management to process catch weight products, turn on the functionality by using a license configuration key. Go to **System administration** \> **Setup** \> **License configuration**. Then, on the **Configuration keys** tab, expand **Trade** \> **Warehouse and Transportation management**, and select the check box for **Catch weight for warehouse**. Turn on both the **Warehouse and Transportation management** license configuration key and the **Process distribution** \> **Catch weight** license configuration keys.
 
 After the license configuration key is turned on, when you create a released product, you can select **Catch weight**. You can also associate the released product with a storage dimension group that the **Use warehouse management processes** parameter is selected for.
 
@@ -100,14 +100,14 @@ For the methods for capturing outbound weight, the **Per catch weight unit** opt
 
 Define multiple weight capturing methods on the catch weight item handling policy. Various transactions use each weight capturing method parameter. The following table summarizes which parameters are used by which transactions.
 
-| Method                                     | Transaction                                |
-|--------------------------------------------|--------------------------------------------|
-| Outbound weight capturing method           | Sales picking, Transfer picking            |
+| Method | Transaction |
+|--|--|
+| Outbound weight capturing method | Sales picking, Transfer picking |
 | Production picking weight capturing method | Production picking, Production consumption |
-| Movement weight capturing method           | Movement                                   |
-| When to capture correction of weight       | Adjustments, Counting                      |
-| Counting weight capturing method           | Counting                                   |
-| Warehouse transfer weight capturing method | Warehouse transfer                         |
+| Movement weight capturing method | Movement |
+| When to capture correction of weight | Adjustments, Counting |
+| Counting weight capturing method | Counting |
+| Warehouse transfer weight capturing method | Warehouse transfer |
 
 To prevent the warehouse management picking processes from capturing weights that cause catch weight profit/loss adjustments, you can use the Outbound weight variance method. The Outbound weight variance method applies during the following mobile device processes: sales picking, transfer picking, production picking, movements, counting, and warehouse transfers. You can use the **Restrict weight variance** option if the weight of the catch weight item doesn't fluctuate during warehouse storage, and if catch weight profit/loss adjustments aren't required. You can use the **Allow weight variance** option if the weight can fluctuate, and if catch weight profit/loss adjustments are required when a weight fluctuation is recorded.
 
@@ -198,6 +198,5 @@ In addition to the restrictions that currently apply for catch weight products, 
 
 > [!NOTE]
 > The preceding information about catch weight tags is valid only if the catch weight product has a catch weight tag dimension tracking method that is fully tracked (that is, if the **Catch weight tag dimension tracking method** parameter on the catch weight item handling policy is set to **Product dimensions, tracking dimensions and all storage dimensions**). If the catch weight item is only partially tag-tracked (that is, if the **Catch weight tag dimension tracking method** parameter on the catch weight item handling policy is set to **Product dimensions, tracking dimensions and Inventory Status**), additional restrictions apply. Because visibility is lost between the tag and inventory in this case, some additional scenarios aren't supported.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
