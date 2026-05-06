@@ -182,7 +182,7 @@ This behavior applies independently at each level in the supply chain. If a bill
 
 To use a soft issue margin, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 build 10.39.1837 or later.
 - The feature named *Soft issue margins with Planning Optimization* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Enable soft issue margin for a coverage group
@@ -232,10 +232,10 @@ Greedy application of soft issue margins can lead to situations where the requir
 
 The following conditions apply in this example:
 
-- Today's date is May 18.
-- An item P1 exists that is replenished by production orders.
-- To produce item P1, a raw material R1 is required, which is replenished by purchase orders with a purchase lead time of three days.
-- The soft issue margin is set to two days on P1 and R1.
+- Today's date is *May 18*.
+- An item *P1* exists that is replenished by production orders.
+- To produce item *P1*, a raw material *R1* is required, which is replenished by purchase orders with a purchase lead time of three days.
+- The soft issue margin is set to two days on *P1* and *R1*.
 
 A sales order for item *P1* has a requirement date of *May 22*. A soft issue margin of two days is configured on *P1*. The system greedily applies the full issue margin and schedules a production order with a requirement date of *May 20*. The production order requires raw material *R1*, which also has a two-day issue margin and is scheduled with a requirement date of *May 18*.
 
