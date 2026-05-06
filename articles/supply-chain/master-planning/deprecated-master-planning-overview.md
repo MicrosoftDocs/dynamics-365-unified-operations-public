@@ -9,8 +9,7 @@ ms.topic: overview
 ms.date: 05/01/2026
 ms.custom:
   - bap-template
-ms.collection:
-  - ai-assisted
+ai-usage: ai-assisted
 ---
 
 # Deprecated master planning overview
