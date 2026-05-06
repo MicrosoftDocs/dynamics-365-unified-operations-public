@@ -2,7 +2,7 @@
 title: Configure printing for the Printed General Ledger for Venezuela
 description: Learn about the required configuration for the Printed General Ledger report for Venezuela.
 author: Cpicon85
-ms.date: 05/15/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

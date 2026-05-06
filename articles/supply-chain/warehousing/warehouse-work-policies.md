@@ -4,7 +4,7 @@ description: Learn how to set up work policies, including prerequisites, an outl
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/19/2024
+ms.date: 5/5/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -15,15 +15,15 @@ ms.search.form: WHSWorkPolicy
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up the system and the Warehouse Management mobile app so that they support work policies. You can use this functionality to quickly register inventory without creating putaway work when you receive purchase or transfer orders, or when you complete manufacturing processes. This article provides general information. For detailed information that is related to license plate receiving, see [License plate receiving via the Warehouse Management mobile app](warehousing-mobile-device-app-license-plate-receiving.md).
+This article explains how to set up the system and the Warehouse Management mobile app to support work policies. Use this functionality to quickly register inventory without creating putaway work when you receive purchase or transfer orders, or when you complete manufacturing processes. This article provides general information. For detailed information related to license plate receiving, see [License plate receiving via the Warehouse Management mobile app](warehousing-mobile-device-app-license-plate-receiving.md).
 
-A work policy controls whether warehouse work is created when a manufactured item is reported as finished, or when goods are received by using the Warehouse Management mobile app. You set up each work policy by defining the conditions where it applies: the work order types and processes, the inventory location, and (optionally) the products. For example, a purchase order for product *A0001* must be received in location *RECV* in warehouse *24*. Later, the product is consumed in another process at location *RECV*. In this case, you can set up a work policy to prevent putaway work from being created when a worker reports product *A0001* as received in location *RECV*.
+A work policy controls whether warehouse work is created when a manufactured item is reported as finished, or when goods are received by using the Warehouse Management mobile app. Set up each work policy by defining the conditions where it applies: the work order types and processes, the inventory location, and (optionally) the products. For example, a purchase order for product *A0001* must be received in location *RECV* in warehouse *24*. Later, the product is consumed in another process at location *RECV*. In this case, set up a work policy to prevent putaway work from being created when a worker reports product *A0001* as received in location *RECV*.
 
 > [!NOTE]
 >
 > - For a work policy to be active, you must define at least one location for it on the **Inventory locations** FastTab of the **Work policies** page.
 > - You can't specify the same location for multiple work policies.
-> - The **Print label** option for mobile device menu items won't print a license plate label unless work was created.
+> - The **Print label** option for mobile device menu items doesn't print a license plate label unless work was created.
 
 ## The Work policies page
 
@@ -31,7 +31,7 @@ To set up work policies, go to **Warehouse management \> Setup \> Work \> Work p
 
 ### The Work order types FastTab
 
-On the **Work order types** FastTab, add all the work order types, and the related work processes, that the work policy applies to. The following work order types and related work processes are supported for work policies.
+On the **Work order types** FastTab, add all the work order types and the related work processes that the work policy applies to. The following work order types and related work processes are supported for work policies.
 
 | Work order type | Work process |
 |---|---|
@@ -46,23 +46,23 @@ To set up a work policy so that it applies to several work processes of the same
 
 For each line in the grid, set the **Work creation method** field to one of the following values:
 
-- **Never** – The work policy will prevent warehouse work from being created for the selected work order type and related work process.
-- **Cross docking** – The work policy will create cross-docking work by using the policy that you select in the **Cross docking policy name** field.
+- **Never** – The work policy prevents warehouse work from being created for the selected work order type and related work process.
+- **Cross docking** – The work policy creates cross-docking work by using the policy that you select in the **Cross docking policy name** field.
 
 ### The Inventory locations FastTab
 
-On the **Inventory locations** FastTab, add all the locations where this work policy should be applied. If no location is associated with a work policy, the work policy won't be applied to any process.
+On the **Inventory locations** FastTab, add all the locations where this work policy should be applied. If you don't associate any location with a work policy, the work policy isn't applied to any process.
 
 You can't specify the same location for multiple work policies.
 
-You can use a warehouse location that is assigned to a location profile where the **Use license plate tracking** option is turned off. In this case, workers will directly register the on-hand inventory.
+You can use a warehouse location assigned to a location profile where the **Use license plate tracking** option is turned off. In this case, workers directly register the on-hand inventory.
 
 ### The Products FastTab
 
-On the **Products** tab, set the **Product selection** field to control which products the policy should apply to:
+On the **Products** tab, set the **Product selection** field to control which products the policy applies to:
 
-- **All** – The policy should apply to all products.
-- **Selected** – The policy should apply only to products that are listed in the grid. Use the toolbar on the **Products** FastTab to add products to the grid or remove them from the grid.
+- **All** – The policy applies to all products.
+- **Selected** – The policy applies only to products listed in the grid. Use the toolbar on the **Products** FastTab to add products to the grid or remove them from the grid.
 
 ## Default and custom "to" locations
 
@@ -91,7 +91,7 @@ To set up a mobile device menu item to support receiving at a custom location, f
     - **Hardcoded value:** Enter the location ID for the receiving location that applies to this menu item.
 
 > [!TIP]
-> A work policy can be applied only if all the receiving locations are listed in the relevant work policy setup. This requirement applies regardless of whether you're using the default warehouse receiving location or a custom "to" location.
+> You can apply a work policy only if the relevant work policy setup lists all the receiving locations. This requirement applies regardless of whether you're using the default warehouse receiving location or a custom "to" location.
 
 ## Example scenario: Warehouse receiving
 
@@ -145,13 +145,13 @@ This scenario uses the standard demo data. Therefore, if you want to work throug
 
 ### Receive a purchase order without creating work
 
-The example in this section shows how to receive a purchase order item, but without creating work, at a location that differs from the default receiving location that is set up for the warehouse. This example uses the work policy and mobile device item that you created earlier in this scenario.
+The example in this section shows how to receive a purchase order item, but without creating work, at a location that differs from the default receiving location set up for the warehouse. This example uses the work policy and mobile device item that you created earlier in this scenario.
 
 #### Create a purchase order
 
-1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
+1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
 1. Select **New**.
-1. In the **Create purchase order** dialog box, set the following values:
+1. In **Create purchase order**, set the following values:
 
     - **Vendor account:** *US-101*
     - **Site:** *2*
@@ -177,18 +177,18 @@ The example in this section shows how to receive a purchase order item, but with
 1. In the **Quantity** field, enter *1*.
 1. Select **OK**.
 
-The purchase order is now received, but no work is associated with it. The on-hand inventory has been updated, and a quantity of *1* of item *A0001* is now available at location *FL-001*.
+The purchase order is now received, but no work is associated with it. The on-hand inventory is updated, and a quantity of *1* of item *A0001* is now available at location *FL-001*.
 
 ## Example scenario: Manufacturing
 
-In the following example, there are two production orders, *PRD-001* and *PRD-002*. Production order *PRD-001* has an operation that is named *Assembly*, where product *SC1* is being reported as finished to location *001*. Production order *PRD-002* has an operation that is named *Painting* and consumes product *SC1* from location *001*. Production order *PRD-002* also consumes raw material *RM1* from location *001*. Raw material *RM1* is stored in warehouse location *BULK-001* and will be picked to location *001* by warehouse work for raw material picking. The picking work is generated when production *PRD-002* is released.
+In the following example, there are two production orders, *PRD-001* and *PRD-002*. Production order *PRD-001* has an operation named *Assembly*, where product *SC1* is reported as finished to location *001*. Production order *PRD-002* has an operation named *Painting* and consumes product *SC1* from location *001*. Production order *PRD-002* also consumes raw material *RM1* from location *001*. Raw material *RM1* is stored in warehouse location *BULK-001* and is picked to location *001* by warehouse work for raw material picking. The picking work is generated when production *PRD-002* is released.
 
-[![Warehouse work policies.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+:::image type="content" source="./media/warehouse-work-policies.png" alt-text="Screenshot of warehouse work policies diagram showing production orders and material flow." lightbox="./media/warehouse-work-policies.png":::
 
-When you're planning to configure a warehouse work policy for this scenario, you should consider the following points:
+When you plan to configure a warehouse work policy for this scenario, consider the following points:
 
-- Warehouse work for putaway of finished goods isn't required when you report product *SC1* as finished from production order *PRD-001* to location *001*. The reason is that the *Painting* operation for production order *PRD-002* consumes product *SC1* at the same location.
-- Warehouse work for raw material picking is required to move raw material *RM1* from warehouse location *BULK-001* to location *001*.
+- You don't need warehouse work for putaway of finished goods when you report product *SC1* as finished from production order *PRD-001* to location *001*. The reason is that the *Painting* operation for production order *PRD-002* consumes product *SC1* at the same location.
+- You need warehouse work for raw material picking to move raw material *RM1* from warehouse location *BULK-001* to location *001*.
 
 Here is an example of a work policy that you can set up, based on these considerations:
 
@@ -253,7 +253,7 @@ Warehouse processes don't always include warehouse work. By defining a work poli
 
 ### Create a production order and report it as finished
 
-1. Go to **Production control \> Production orders \> All production orders**.
+1. Go to **Production control > Production orders > All production orders**.
 1. On the Action Pane, select **New production order**.
 1. In the **Create production order** dialog box, set the **Item number** field to *L0101*.
 1. Select **Create** to create the order and close the dialog box.

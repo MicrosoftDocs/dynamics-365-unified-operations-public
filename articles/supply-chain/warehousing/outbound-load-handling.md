@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, WHSOutboundShipmentOrder, WHSPackingSlipPostingParameters, WHSShipPlanningListPage, WHSShipmentDetails, WHSWaveTemplateTable, WHSPostMethod, WHSWorkTemplateTable, WHSLocDirTable, WHSEWManagementSystem, InventLocations 
 ms.topic: article
-ms.date: 07/29/2024
+ms.date: 4/22/2026
 ms.custom: bap-template
 ---
 
@@ -24,7 +24,7 @@ Each outbound load can be associated with one or more order line quantities for 
 
 ## <a name="outbound-shipment-policies"></a>Outbound shipment processing policies
 
-To manage the process of shipping your orders, you must apply an *outbound shipment processing policy* where the desired flow is set up for your shipments.
+To manage the process of shipping your orders, apply an *outbound shipment processing policy* where the desired flow is set up for your shipments.
 
 The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** \> **Setup** \> **Shipping** \> **Outbound shipment processing policies**):
 
@@ -61,9 +61,9 @@ This process begins when [sales orders are created](../sales-marketing/tasks/cre
 
 ### Create a load before the release to a warehouse
 
-A sales order must exist before an outbound load can be generated. Nevertheless, outbound loads can be defined before the [release to warehouse](#release-to-warehouse) procedure is run.
+A sales order must exist before an outbound load can be generated. Nevertheless, you can define outbound loads before running the [release to warehouse](#release-to-warehouse) procedure.
 
-The [Outbound load planning workbench](tasks/use-load-planning-workbench-plan-loads-shipments.md) and [Load building workbench](../transportation/tasks/load-building-workbench.md) processes can be used to select the order lines and quantities that comprise a load.
+Use the [Outbound load planning workbench](tasks/use-load-planning-workbench-plan-loads-shipments.md) and [Load building workbench](../transportation/tasks/load-building-workbench.md) processes to select the order lines and quantities that comprise a load.
 
 ### <a name="release-to-warehouse"></a>Release to warehouse
 
@@ -75,7 +75,7 @@ The system generates picking work through [*wave processing*](wave-processing.md
 
 *Work templates* determine how work is performed for each warehouse process. *Location directives* specify the pick and put locations for inventory movements. Learn more in [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).
 
-Warehouse *work* is used to control any warehouse operation that a warehouse worker or [material handling system](mhax.md) performs. Typically, warehouse work operations consist of at least two consecutive actions: a *pick* and a *put* of inventory.
+Warehouse *work* controls any warehouse operation that a warehouse worker or [material handling system](mhax.md) performs. Typically, warehouse work operations consist of at least two consecutive actions: a *pick* and a *put* of inventory.
 
 ### Outbound load shipment confirmation
 

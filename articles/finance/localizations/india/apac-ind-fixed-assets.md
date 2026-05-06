@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 07/25/2019
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2017-12-31
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../../includes/banner.md)]
 
-Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or corporation. Using fixed assets for India, you can set up and enter acquisition information for fixed asset records, and then manage fixed assets by depreciating them and setting a capitalization threshold to determine depreciation. You can also calculate adjustments to fixed assets, and dispose of them.
+Fixed assets are items of value, such as buildings, vehicles, land, and equipment, that an individual or corporation owns. By using fixed assets for India, you can set up and enter acquisition information for fixed asset records. Then, you can manage fixed assets by depreciating them and setting a capitalization threshold to determine depreciation. You can also calculate adjustments to fixed assets and dispose of them.
 
 The topics in this section provide information about fixed assets for India.
 
@@ -31,9 +31,5 @@ The topics in this section provide information about fixed assets for India.
 - [Reversing fixed asset transactions](apac-ind-reverse-fixed-assets-transactions.md)
 - [Transfer of capital items to the fixed asset](apac-ind-transfer-capital-items.md)
 - [Attach a day-based calendar to a fixed asset book](apac-ind-attach-day-based-calendar.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

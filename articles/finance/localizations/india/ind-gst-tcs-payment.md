@@ -3,8 +3,10 @@ title: GST TCS on payment of goods and services
 description: Learn about how to deduct GST-TCS on payments of goods and services, including an outline on value that GST-TCS must be deducted on.
 author: EricWangChen
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/05/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: India
@@ -25,16 +27,19 @@ All dealers and traders that sell goods and services online must be registered u
 :::image type="content" source="../media/gst-tcs-payment-01.png" alt-text="Flowchart to determine tax liability.":::
 
 ## Value that GST TCS must be deducted on
+
 For the deduction of TCS, the net value of taxable supplies from another supplier is considered when the tax that must be collected is calculated. If the invoice value includes GST, the tax amount can be excluded.
 
 ### Example
+
 Contoso is located in India and sells ready-made clothes online in an e-commerce store. It receives an order for 10,000 rupees (Rs. 10,000), which includes tax in the amount of Rs. 1,525 and a commission in the amount of Rs. 200. Because the e-commerce store charges a commission of Rs. 200, it must deduct 1-percent tax (TCS) on the amount, excluding the money that was paid as tax (Rs. 1,525) and commission (Rs. 200). In other words, the e-commerce store must deduct 1-percent GST TCS on Rs. 8,475 (= 10,000 – 1,525), or Rs. 84.75. Therefore, the e-commerce operator makes a payment of Rs. 8,190.25 to the vendor (= 10,000 – 1525 – 200 – 84.75).
 For the e-commerce business-to-business (B2B) scenario, there are two business models:
 
-  -	E-commerce operators buy items from the supplier.
-  -	E-commerce operators just provide service as a marketplace.
+- E-commerce operators buy items from the supplier.
+- E-commerce operators just provide service as a marketplace.
   
 ## E-commerce operators buy items from the supplier
+
 In this business model, e-commerce operators buy items from the supplier and vendors. They use their warehouse to store and sell their inventory of items.
 
 :::image type="content" source="../media/gst-tcs-payment-02.png" alt-text="Screenshot of the e-commerce business model flowchart.":::
@@ -43,14 +48,14 @@ In this business model, e-commerce operators buy items from the supplier and ven
 
 - E-commerce operators is involved in supplying goods.
 
-   - Goods are supplied at a price of Rs. 600 (intrastate).
-   - The rate of Central GST (CGST) is 5 percent.
-   - The rate of State GST (SGST) is 5 percent.
+  - Goods are supplied at a price of Rs. 600 (intrastate).
+  - The rate of Central GST (CGST) is 5 percent.
+  - The rate of State GST (SGST) is 5 percent.
 
 - The rate of TCS is as follows:
 
-    - 1% CGST
-    - 1% SGST
+  - 1% CGST
+  - 1% SGST
 
 - The commission on sales is Rs. 100.
 - Goods are purchased from suppliers at a price of Rs. 550.
@@ -124,6 +129,7 @@ The amount is received from the e-commerce operator.
 |  E-commerce operator  |   |  660  |
 
 ## E-commerce operators just provide service as a marketplace
+
 In this business model, e-commerce operators provide the e-commerce store as a marketplace, but they don't participate in any purchases from vendors or sales to customers.
 
 :::image type="content" source="../media/gst-tcs-payment-03.png" alt-text="Screenshot of the service as a marketplace business process flowchart.":::
@@ -208,7 +214,7 @@ The e-commerce operator will show the preceding details in the GSTR-8.
 
 ## Set up GST TCS
 
-GST-TCS on vendor payment by an e-commerce operator must be accounted for under the GST-TCS payable account.  GST-TCS on receipt of payment from an e-commerce customer must be accounted for under the GST-TCS recoverable account. Select the respective ledger account under Tax setup as explained in the following steps.   
+GST-TCS on vendor payment by an e-commerce operator must be accounted for under the GST-TCS payable account.  GST-TCS on receipt of payment from an e-commerce customer must be accounted for under the GST-TCS recoverable account. Select the respective ledger account under Tax setup as explained in the following steps.
 
 1. Go to **Tax** > **Tax configuration** > **Setup** > **GST** > **GST TCS Tax component** and set up posting accounts.
 
@@ -222,7 +228,7 @@ GST-TCS on vendor payment by an e-commerce operator must be accounted for under 
 
     :::image type="content" source="../media/gst-tcs-payment-06.png" alt-text="Screenshot of the Tax information slider page.":::
 
-## GST TCS on a payment that is received from an e-commerce operator 
+## GST TCS on a payment that is received from an e-commerce operator
 
 ### Create and post a customer payment journal
 
@@ -239,7 +245,7 @@ GST-TCS on vendor payment by an e-commerce operator must be accounted for under 
 
 1. Select **Tax information**.
 1. Notice that the GST TCS is calculated based on the defined percentage (10.0).
- 
+
     :::image type="content" source="../media/gst-tcs-payment-08.png" alt-text="Screenshot of the GST TCS Calculation.":::
 
 1. In the customer payment, on the **General** tab, notice that GST that was calculated on the invoice amount is excluded from the GST TCS calculation.
@@ -249,11 +255,10 @@ GST-TCS on vendor payment by an e-commerce operator must be accounted for under 
   The following illustration shows the posted journal voucher.
   
    :::image type="content" source="../media/gst-tcs-payment-10.png" alt-text="Screenshot of the list of voucher transactions.":::
-    
 
 The GST TCS on payment that the e-commerce operator makes to the vendor is posted to the GST-TCS payable account. Similarly, the GST TCS is deducted from the customer's payment.
 Ensure that the active configuration has the correct formula and posting conditions by following these steps.
- 
+
 1. Change the formula part.
 
     :::image type="content" source="../media/gst-tcs-payment-11.png" alt-text="Screenshot of the Tax formula line.":::
@@ -261,6 +266,5 @@ Ensure that the active configuration has the correct formula and posting conditi
 1. The current configuration contains posting conditions for GST-TCS that the **Price include sales tax** check box must be marked in the customer/vendor payment journal. While. in the payment journal, there is no segregation of payment amounts such as base amount, GST amount, and GST-TCS amount. Because of this, you should remove the price-inclusive condition from the vendor payment and the customer payment under the configuration.
 
     :::image type="content" source="../media/gst-tcs-payment-11.png" alt-text="Screenshot of the Tax document page, Posting tab, vendor and customer payment configurations and the price-inclusive condition.":::
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

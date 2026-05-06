@@ -3,7 +3,7 @@ title: SSRS Reports/Services references configuration for Latin America
 description: Learn how to configure the SSRS/Services references page, including prerequisites and process for setting up SSRS/Services references.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak

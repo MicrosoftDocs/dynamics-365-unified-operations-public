@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: MCRHoldCodeTable, SalesTableListPage, SalesCreateOrder, SalesTable, MCRHoldCodeTrans, MCRHoldCheckOutOverride, MCRHoldCodeTable, MCRItemListCopying, MCRItemListTable, MCROMHoldList
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 4/30/2026
 ms.custom: 
   - bap-template
 ---
@@ -45,21 +45,21 @@ To place a sales order on hold, follow these steps:
 1. Select **Save**.
 1. Go back to the **All sales orders** list page.
 1. On the grid, find the order you put on hold and note that it now shows a check mark in the **Do not process** column and a pause symbol in the **Hold** column.
-1. On the Action Pane, open the **Pick and pack** tab and note that the buttons for generating picking lists and packing slips are disabled. This is because the order is on hold and can't be processed further until the hold is removed.
+1. On the Action Pane, open the **Pick and pack** tab and note that the buttons for generating picking lists and packing slips are disabled. This restriction is because the order is on hold and can't be processed further until the hold is removed.
 
-## Manage orders that are on hold
+## Manage orders on hold
 
-To manage orders that are on hold, and remove holds, follow these steps:
+To manage orders on hold and remove holds, follow these steps:
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **Open orders** \> **Order holds**. The **Order holds** page functions as a workbench where you can get an overview of all the current and processed holds, and handle them and associated sales orders.
+1. Go to **Sales and marketing** > **Sales orders** > **Open orders** > **Order holds**. The **Order holds** page functions as a workbench where you can get an overview of all the current and processed holds, and handle them and associated sales orders.
 1. Use the **Filter** field and/or the **Show** drop-down list to filter the list by value and/or hold status. Then select the hold you want to change.
-1. It's possible to check out order holds. Other users are prevented from clearing a hold while you have it checked out. To check an order hold in or out, open the **Hold checkout** tab on the Action Pane and choose one of the following actions:
+1. You can check out order holds. While you have a hold checked out, other users can't clear it. To check an order hold in or out, open the **Hold checkout** tab on the Action Pane and choose one of the following actions:
     - **Check out** – Select this option to check out the selected hold. The **Checked out to** column updates to show your user ID for the selected hold.
     - **Clear checkout** – Select this option to check in a hold that you previously checked out. Your user ID is removed from **Checked out to** column for the selected hold.
     - **Override checkout** – Select this option to reassign a checked-out hold to another user (or yourself). The **Checked out to** column updates to show the selected user's ID.
-1. When you're ready to remove the hold and allow the order to proceed to the next fulfillment step, you must clear it. On the Action Pane, open the **Clear hold** tab and select one of the following options:
+1. When you're ready to remove the hold and allow the order to proceed to the next fulfillment step, clear it. On the Action Pane, open the **Clear hold** tab and select one of the following options:
     - **Clear holds** – If the order requires no changes, select this option to clear the holds on it.
-    - **Clear and modify** – If the order requires changes, the select this option to clear the holds on it and then open the order so you can modify it.
+    - **Clear and modify** – If the order requires changes, select this option to clear the holds on it and then open the order so you can modify it.
     - **Clear and submit** – Clear all holds and submit the order for further processing. This action only applies when you're using call center functionality.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
