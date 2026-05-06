@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
@@ -31,7 +31,7 @@ This article provides reference information about the different payment transact
 Follow these steps to calculate TDS on payments and promissory notes.
 
 1. On the journal pages, create journal lines. Select the account type and offset account type.
-2. Select **Functions \> Settlement** to open the **Open transaction editing** page. Then select a specific invoice that must be settled. If TDS has already been calculated at the invoice level, the **Amount origin** field shows the base amount that the TDS was calculated on. The **TDS amount** field shows the TDS amount that was calculated for the transaction. The **Amount** field shows the net payment amount (that is, the payment amount after TDS is deducted).
+1. Select **Functions \> Settlement** to open the **Open transaction editing** page. Then select a specific invoice that must be settled. If TDS has already been calculated at the invoice level, the **Amount origin** field shows the base amount that the TDS was calculated on. The **TDS amount** field shows the TDS amount that was calculated for the transaction. The **Amount** field shows the net payment amount (that is, the payment amount after TDS is deducted).
 
     > [!NOTE]
     > For a payment that was made against an invoice, the following conditions apply:
@@ -40,16 +40,16 @@ Follow these steps to calculate TDS on payments and promissory notes.
     > - If the invoice amount after the TDS amount is deducted is more than the payment amount, TDS isn't calculated.
     > - If the invoice amount after the TDS amount is deducted is less than the payment amount, TDS is calculated on the amount that exceeds the invoice amount.
 
-3. On the **Journal voucher** page, on the **Overview** tab, in the **TDS groups** field, review or change the default TDS group that is defined for the vendor or customer. TDS that is calculated on journal lines is based on the formula that is defined for the TDS tax codes in the TDS group.
+1. On the **Journal voucher** page, on the **Overview** tab, in the **TDS groups** field, review or change the default TDS group that is defined for the vendor or customer. TDS that is calculated on journal lines is based on the formula that is defined for the TDS tax codes in the TDS group.
 
     > [!NOTE]
     > TDS is calculated only if the **Calculate withholding tax** option is set to **Yes** for the vendor on the **Vendors** page.
 
-4. On the **Tax information** tab, in the **Company information** section, in the **Name** field, you can select a company name for alternate addresses that are set up for the company.
+1. On the **Tax information** tab, in the **Company information** section, in the **Name** field, you can select a company name for alternate addresses that are set up for the company.
 
     In the **Withholding tax** section, the **Nature of assessee** field shows the nature of assessee category of the vendor or customer. The **Tax account number (TAN)** field shows the tax account number (TAN) of the selected company.
 
-5. Select **Withholding tax button \> withholding tax** to open the **Temporary withholding tax transactions** page. The upper part of this page has the following fields:
+1. Select **Withholding tax button \> withholding tax** to open the **Temporary withholding tax transactions** page. The upper part of this page has the following fields:
 
     - **Withholding tax amount in total** – The total TDS that was calculated for the transaction for the TDS group.
     - **Value** – The total percentage that was used to calculate TDS for the transaction. The total percentage is based on the formula that is defined for the TDS tax codes and attached to the TDS group.
@@ -58,15 +58,15 @@ Follow these steps to calculate TDS on payments and promissory notes.
 
     The fields on the **Overview**, **General**, and **Adjustment** tabs show the calculated TDS amount and details of the adjusted TDS amount for each TDS tax code that is attached to the TDS group.
 
-6. Select **Threshold** to open the **Threshold** page, where you can review the threshold limit that is defined for the TDS tax component that is attached to a specific TDS tax code.
-7. Select **Formula designer** to open the **Formula designer** page, where you can review the formula that is defined for a specific TDS tax code.
-8. Close the **Formula designer** and **Temporary withholding tax transactions** pages to return to the **Journal voucher** page.
-9. Validate and post the journal. The TDS amount that was calculated is posted to the payable account that is defined for each TDS tax code in the TDS group. The receivable accounts for TDS tax codes are defined on the **Withholding tax codes** page.
-10. Select **Posted withholding tax** to open the **Withholding tax transactions** page. The **Value** field shows the total percentage that was used to calculate TDS for the transaction.
+1. Select **Threshold** to open the **Threshold** page, where you can review the threshold limit that is defined for the TDS tax component that is attached to a specific TDS tax code.
+1. Select **Formula designer** to open the **Formula designer** page, where you can review the formula that is defined for a specific TDS tax code.
+1. Close the **Formula designer** and **Temporary withholding tax transactions** pages to return to the **Journal voucher** page.
+1. Validate and post the journal. The TDS amount that was calculated is posted to the payable account that is defined for each TDS tax code in the TDS group. The receivable accounts for TDS tax codes are defined on the **Withholding tax codes** page.
+1. Select **Posted withholding tax** to open the **Withholding tax transactions** page. The **Value** field shows the total percentage that was used to calculate TDS for the transaction.
 
     The fields on the **Overview**, **General**, and **Amount** tabs show the TDS amounts that were calculated for the TDS group that is attached to the transaction.
 
-11. Review the TDS calculation information for each TDS tax code that is attached to the TDS group.
+1. Review the TDS calculation information for each TDS tax code that is attached to the TDS group.
 
 ## Generate payments
 
@@ -80,5 +80,5 @@ To generate payments, follow these steps:
     - Go to **Accounts receivable \> Payments \> Bill of exchange \> Draw bill of exchange journal**.
     - Go to **Accounts receivable \> Payments \> Bill of exchange \> Redraw bill of exchange journal**.
 
-2. Select **Lines**.
-3. Select **Functions \> Generate payments**.
+1. Select **Lines**.
+1. Select **Functions \> Generate payments**.

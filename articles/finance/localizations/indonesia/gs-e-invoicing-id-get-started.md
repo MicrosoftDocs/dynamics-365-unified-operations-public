@@ -4,7 +4,7 @@ description: Learn how to configure and process electronic invoices for Indonesi
 author: AnupamChansoriya
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 10/22/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Indonesia
 ms.dyn365.ops.version: 10.0.39

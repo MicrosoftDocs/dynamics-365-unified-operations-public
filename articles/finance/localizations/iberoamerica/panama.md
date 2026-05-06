@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: v-pedrobusto2025
 ms.author: v-pedrobusto
 ms.topic: overview
-ms.date: 07/30/2025
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: Panama
 ms.search.validFrom: 2023-10-20
@@ -25,6 +25,7 @@ This article includes information and links to resources that can help you set u
 - [Additional resources](#additional-resources)
 
 ## Main configurations
+
 - [Set up a legal entity and tax information for Panama](ltm-set-up-legal-entity-tax-panama.md)
 - [Create customer and vendor records with an address in Panama](ltm-create-customer-vendor-panama.md)
 - [Configure sales and purchase invoices for Panama](ltm-configure-invoices-panama.md)
@@ -37,6 +38,7 @@ This article includes information and links to resources that can help you set u
 - [printing configuration for invoice layout](ltm-invoice-layout-print.md)
 
 ## Electronic Invoice format
+
 - [Set up electronic invoicing for Panama](ltm-panama-ei-connec-configuration.md)
 - [Configure electronic invoice parameters for Panama](ltm-panama-elect-inv-conf.md)
 

@@ -110,11 +110,11 @@ The value of this field represents the name of the legal entity that is specifie
 
 #### <a name="company-uen"></a>CompanyUEN – UEN of the business user
 
-To report the UEN of the company that is reporting the IAF, the system retrieves the value from the registration ID. The registration ID is defined in the properties of the legal entity that is associated with the **Enterprise ID (COID)** registration category that is valid on the date that is specified for the **To date** parameter of the report. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
+To report the UEN of the company that is reporting the IAF, the system retrieves the value from the registration ID. The registration ID is defined in the properties of the legal entity that is associated with the **Enterprise ID (COID)** registration category that is valid on the date that is specified for the **To date** parameter of the report. Learn about detailed concepts, setup guidance, and examples in [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 
 #### <a name="company-gst"></a>GSTNo - GST Registration Number of the business user
 
-To report the GST Registration Number of the company that is reporting the IAF, the system retrieves the value from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category that is valid on the date that is specified for the **To date** parameter of the report. If there is no such value, the value of the **Tax registration number field** field is used instead. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
+To report the GST Registration Number of the company that is reporting the IAF, the system retrieves the value from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category that is valid on the date that is specified for the **To date** parameter of the report. If there is no such value, the value of the **Tax registration number field** field is used instead. Learn about detailed concepts, setup guidance, and examples in [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 
 ## Generate an IAF for Singapore
 
