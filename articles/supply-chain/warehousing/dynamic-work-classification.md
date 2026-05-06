@@ -71,7 +71,7 @@ To create a rule, follow these steps:
 
 1. On the **Recalculation** FastTab, make the following settings to control how and when the rule is re-evaluated after the initial work creation:
     - **Reclassification schedule ID** – This setting is reserved for future use and has no effect in the current release.
-    - **Reclassify work on load update** – Set this option to *Yes* to run the classification again each time a load associated with the work header changes. This ensures that any updates to the load are reflected in the work classification.
+    - **Reclassify work on load update** – Set this option to *Yes* to run the classification again each time a load associated with the work header changes. This ensures that any updates to the load are reflected in the work classification. <!-- KFM: How does this setting interact with the similar one on the **Parameters** page? -->
 
 1. On the **Power Fx formula** FastTab, enter a formula that returns a record with the fields you want to override. See the next sections for details on writing formulas.
 1. If the **Rule scope** is set to *Work and initial work lines*, the page includes a **Initial work line formula** FastTab. This formula runs when the first work line is assigned to a new work record. See the next sections for details on writing formulas.
