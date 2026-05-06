@@ -9,8 +9,7 @@ ms.topic: how-to
 ms.date: 05/05/2026
 ms.custom:
   - bap-template
-ms.collection:
-  - ai-assisted
+ai-usage: ai-assisted
 ---
 
 # Get started with master planning

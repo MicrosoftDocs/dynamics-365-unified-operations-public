@@ -7,8 +7,7 @@ ms.topic: how-to
 ms.date: 05/05/2026
 ms.custom:
 ms.reviewer: kamaybac
-ms.collection:
-  - ai-assisted
+ai-usage: ai-assisted
 ms.search.form: ReqCreatePlanWorkspace
 ---
 
