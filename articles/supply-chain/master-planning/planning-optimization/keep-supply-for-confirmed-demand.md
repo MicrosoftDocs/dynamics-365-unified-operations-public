@@ -1,3 +1,16 @@
+---
+title: Keep supply for confirmed demand
+description: Keep supply for confirmed demand feature ensures that customer commitments provided by Capable-to-promise (CTP) functionality are strictly preserved between planning runs.
+author: dejangrbec
+ms.author: dejangrbec
+ms.reviewer: kamaybac
+ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOrderSetup
+ms.topic: how-to
+ms.date: 05/05/2026
+ms.custom:
+  - bap-template
+---
+
 # Keep supply for confirmed demand in Planning Optimization
 
 The **Keep supply for confirmed demand** feature ensures that customer commitments provided by Capable-to-promise (CTP) functionality are strictly preserved between planning runs. This functionality is applied across all BOM levels, meaning that all derived requirements originating from a confirmed sales line will be preserved. Such requirements are referred to as **confirmed requirements**.
