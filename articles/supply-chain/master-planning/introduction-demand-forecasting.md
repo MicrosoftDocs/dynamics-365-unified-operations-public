@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ReqDemPlanCreateForecastDialog
 ms.topic: how-to
-ms.date: 04/25/2026
+ms.date: 05/06/2026
 ms.custom: 
   - bap-template
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
-Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders. The enhanced demand forecast reduction rules provide an ideal solution for mass customization.
+Use demand forecasting to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders. The enhanced demand forecast reduction rules provide an ideal solution for mass customization.
 
-To generate the baseline forecast, a summary of historical transactions is passed to Microsoft Azure Machine Learning hosted on Azure. Because this service isn't shared among users, it can easily be customized to meet industry-specific requirements. You can use Supply Chain Management to visualize the forecast, adjust the forecast, and view key performance indicators (KPIs) about forecast accuracy.
+To generate the baseline forecast, a summary of historical transactions is passed to Microsoft Azure Machine Learning hosted on Azure. Because this service isn't shared among users, you can easily customize it to meet industry-specific requirements. Use Supply Chain Management to visualize the forecast, adjust the forecast, and view key performance indicators (KPIs) about forecast accuracy.
 
 > [!NOTE]
-> Microsoft Azure Machine Learning Studio (classic) is required for forecast generation with machine learning. As of December 1, 2021, you won't be able to create new Machine Learning Studio (classic) resources. However, you'll be able to continue to use your existing Machine Learning studio (classic) resources until August 31, 2024. For updated information, see [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio).
+> Microsoft Azure Machine Learning Studio (classic) is required for forecast generation with machine learning. As of December 1, 2021, you can't create new Machine Learning Studio (classic) resources. However, you can continue to use your existing Machine Learning Studio (classic) resources until August 31, 2024. For updated information, see [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio).
 >
 > Dynamics 365 Supply Chain Management version 10.0.23 and later support the new Azure Machine Learning Studio.
 
@@ -31,23 +31,23 @@ To generate the baseline forecast, a summary of historical transactions is passe
 
 Here are some of the main features of demand forecasting:
 
-- Generate a statistical baseline forecast that is based on historical data.
+- Generate a statistical baseline forecast that's based on historical data.
 - Use a dynamic set of forecast dimensions.
 - Visualize demand trends, confidence intervals, and adjustments of the forecast.
-- Authorize the adjusted forecast to be used in planning processes.
+- Authorize the adjusted forecast for use in planning processes.
 - Remove outliers.
 - Create measurements of forecast accuracy.
 
 ## Major themes in demand forecasting
 
-Three major themes are implemented in demand forecasting:
+Demand forecasting implements three major themes:
 
 - **Modularity** – Demand forecasting is modular and easy to configure. You can turn the functionality on and off by changing the configuration key at **Trade \> Inventory forecast \> Demand forecasting**.
 - **Reuse of the Microsoft stack** – Machine Learning lets you quickly and easily create predictive analysis experiments, such as demand estimation experiments, by using algorithms R or Python programming languages and a simple drag-and-drop interface.
-    - You can download the Demand forecasting experiments, change them to meet your business requirements, publish them as a web service on Azure, and use them to generate demand forecasts. The experiments are available for download if you've purchased a Supply Chain Management subscription for a production planner as enterprise-level user.
+    - You can download the Demand forecasting experiments, change them to meet your business requirements, publish them as a web service on Azure, and use them to generate demand forecasts. You can download the experiments if you purchase a Supply Chain Management subscription for a production planner as enterprise-level user.
     - You can create your own experiments in Microsoft Azure Machine Learning studio (classic), publish them as services on Azure, and use them to generate demand forecasts.
-    - If you don't require high performance, or if you don't require that a large amount of data be processed, you can use the Machine Learning free tier. We recommend that you always start from this tier, especially during implementation and testing phases. If you require higher performance and additional storage, you can use the Machine Learning standard tier. This tier requires an Azure subscription and involves additional costs. For details about Machine Learning pricing, see [Machine Learning Studio pricing](https://aka.ms/machine-learning-price-info).
-- **Forecast reduction at any decoupling point** – Demand forecasting in builds on this functionality, which lets you forecast both dependent and independent demand at any decoupling point.
+    - If you don't require high performance, or if you don't require that a large amount of data be processed, you can use the Machine Learning free tier. Always start from this tier, especially during implementation and testing phases. If you require higher performance and additional storage, you can use the Machine Learning standard tier. This tier requires an Azure subscription and involves additional costs. For details about Machine Learning pricing, see [Machine Learning Studio pricing](https://aka.ms/machine-learning-price-info).
+- **Forecast reduction at any decoupling point** – Demand forecasting builds on this functionality, which lets you forecast both dependent and independent demand at any decoupling point.
 
 ## Basic flow in demand forecasting
 
@@ -69,11 +69,11 @@ Demand forecasting is a tool that helps customers in the manufacturing industry 
 
 ### Demand forecast variant conversion limitation
 
-Unit of measure (UOM) per variant conversion isn't fully supported when generating demand forecast if inventory UOM is different than the demand forecast UOM.
+Unit of measure (UOM) per variant conversion isn't fully supported when generating demand forecast if inventory UOM is different from the demand forecast UOM.
 
 Generating forecast (**Inventory UOM \> Demand forecast UOM**) uses product UOM conversion. When loading historical data for the demand forecast generation, the product level UOM conversion is always used when converting from inventory UOM to the demand forecast UOM, even if there are conversions defined on the variant level.
 
-The first part of authorizing forecast (**Demand forecast UOM \> Inventory UOM**) uses product UOM conversion. The second part of authorizing forecast (**Inventory UOM \> Sales UOM**) uses the variant UOM conversion. When the generated demand forecast is authorized, the conversion to inventory UOM from demand forecast UOM will be done using product level UOM conversion. At the same time, conversion between the inventory unit and the sales UOM will respect the variant level defined conversions.
+The first part of authorizing forecast (**Demand forecast UOM \> Inventory UOM**) uses product UOM conversion. The second part of authorizing forecast (**Inventory UOM \> Sales UOM**) uses the variant UOM conversion. When the generated demand forecast is authorized, the conversion to inventory UOM from demand forecast UOM uses product level UOM conversion. At the same time, conversion between the inventory unit and the sales UOM respects the variant level defined conversions.
 
 > [!NOTE]
 > The demand forecast UOM doesn't have to have any specific meaning. It can be defined as *Demand forecast unit*. For each of the products, you can define the conversion to be 1:1 with the inventory UOM.
@@ -87,11 +87,11 @@ If you experience issues with demand forecasting, review the following table for
 | Setup and configuration | Configure demand forecasting parameters, allocation keys, Machine Learning connections, and intercompany planning groups. | [Demand forecasting setup](demand-forecasting-setup.md) |
 | Baseline forecast generation | Generate a statistical baseline forecast from historical transaction data using Azure Machine Learning. | [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md) |
 | Forecast adjustments | Make manual adjustments to a baseline forecast before authorizing it for use in master planning. | [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md) |
-| Forecast authorization | Authorize adjusted demand forecasts so they can be consumed by the master planning process. | [Authorize an adjusted forecast](authorize-adjusted-forecast.md) |
+| Forecast authorization | Authorize adjusted demand forecasts so the master planning process can consume them. | [Authorize an adjusted forecast](authorize-adjusted-forecast.md) |
 | Forecast accuracy | Monitor and measure the accuracy of demand forecasts to improve future predictions. | [Monitor forecast accuracy](monitor-forecast-accuracy.md) |
-| Outlier removal | Identify and remove outliers from historical transaction data to improve forecast quality. | [Remove outliers from historical transaction data](remove-historical-outliers-calculating-demand-forecast.md) |
+| Outlier removal | Identify and remove outliers from historical transaction data to improve forecast quality. | [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md) |
 | Forecast reduction | Understand how demand forecasts are reduced by actual transactions during master planning, including differences between Planning Optimization and the deprecated engine. | [Master planning with demand forecasts](planning-optimization/demand-forecast.md) |
-| Business process guidance | Review the end-to-end business process for demand forecasting within the Forecast to Plan scenario. | [Forecast to Plan: Demand forecasting overview](/dynamics365/guidance/business-processes/forecast-to-plan-demand-forecasting-overview) |
+| Business process guidance | Review the end-to-end business process for demand forecasting within the forecast to plan scenario. | [Predict future demand for products and services with demand forecasting to drive business decisions](/dynamics365/guidance/business-processes/forecast-to-plan-demand-forecasting-overview) |
 
 ## Related information
 
@@ -103,7 +103,7 @@ If you experience issues with demand forecasting, review the following table for
 - [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
 - [Intercompany planning groups for demand forecasting](intercompany-planning-groups-demand-forecasting.md)  
 - [Master planning with demand forecasts](planning-optimization/demand-forecast.md)
-- [Forecast to Plan: Demand forecasting overview](/dynamics365/guidance/business-processes/forecast-to-plan-demand-forecasting-overview)
+- [Predict future demand for products and services with demand forecasting to drive business decisions](/dynamics365/guidance/business-processes/forecast-to-plan-demand-forecasting-overview)
 - [Video: Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 - [Webinar: Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
