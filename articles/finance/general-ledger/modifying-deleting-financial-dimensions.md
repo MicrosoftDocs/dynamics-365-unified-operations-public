@@ -48,12 +48,21 @@ To protect data integrity, the system restricts deletion of both financial dimen
 
 ### When a financial dimension can't be deleted
 
-A financial dimension can't be deleted if any of the following are true:
+A financial dimension can't be deleted once it has ever been used in any of the following, even if the reference is later removed:
 
-- It's used in any active account structure, advanced rule structure, or financial dimension set.
-- It's part of a default financial dimension integration format, or is set up as a default dimension.
-- It's still selected in the Financial Reporting setup.
-- Any dimension value has been created for the dimension — even if the value was never used on a transaction.
+- An account structure, advanced rule structure, financial dimension set, or dimension value combination.
+- A default financial dimension integration format, or as a default dimension (for example, ledger setup, module parameters, or posting profiles).
+- The Financial Reporting setup.
+- Any dimension value created for the dimension — even if the value was never used on a transaction.
+
+The restriction is enforced even when:
+
+- No posted transactions exist.
+- Journals were never posted.
+- Records were created and subsequently removed.
+- The dimension was later removed from the account structure.
+
+This behavior is by design and preserves reporting accuracy and audit integrity for the historical periods in which the dimension participated. To retire a dimension you no longer need, rename or suspend it as described earlier in this article.
 
 > [!NOTE]
 > Starting in Finance version 10.0.27, the system doesn't automatically select financial dimensions for financial reporting setup as they're created.
@@ -67,9 +76,11 @@ A dimension value can't be deleted if it has been used on any posted or unposted
 When you delete a record from a source entity (such as a customer, vendor, project, or bank account) that is used as a financial dimension value, the system's response depends on how the dimension value was referenced:
 
 - **Used in a ledger account** — If the dimension value is part of any ledger account combination, deletion is blocked immediately. Deletion of this dimension value is not possible and is not supported by Microsoft.
-- **Used in a default dimension, posting profile, or other non-ledger-account context** — The system runs a reference scan before allowing the deletion. Allow the scan to run to completion. If no references are found, both the entity record and its dimension value are removed. If references are found, the deletion is blocked and the system displays the transaction types that reference the record. You can remove the references found by the scan and then rerun it to delete the dimension value.
+- **Used in a default dimension, posting profile, or other non-ledger-account context** — The system runs a reference scan before allowing the deletion. While the scan is in progress, you might see a message such as "The \<EntityType> '\<RecordName>' is currently being checked for references before it can be deleted. It cannot be deleted until the process is complete." This is expected — the scan runs as a background job and the deletion is held until it finishes. Allow the scan to run to completion. If no references are found, both the entity record and its dimension value are removed. If references are found, the deletion is blocked and the system displays the transaction types that reference the record. You can remove the references found by the scan and then rerun it to delete the dimension value.
 
 If deletion is blocked, consider renaming or suspending the value instead, as described earlier in this article.
+
+Selecting multiple records on a list page (for example, fixed assets, customers, or vendors) and choosing **Delete** still runs the reference scan one record at a time. For high-volume cleanup, use the entity's standard retire, inactivate, or suspend flow instead of bulk delete. If a deletion-only outcome is required at volume, contact support.
 
 ## Financial dimension value sync
 
