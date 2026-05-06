@@ -133,7 +133,7 @@ The custom protocol framework supports three extension patterns:
 
   Triggers are global and fire for all actions. Use `options.actionName` for filtering and register in `manifest.json` under `components.extend.triggers`.
 
-For the implementation details and working code, refer to the extension samples in [Store Commerce custom protocol extension sample](https://aka.ms/Contextualswitch).
+For the implementation details and working code, refer to the extension samples in [Store Commerce custom protocol extension samples](https://aka.ms/Contextualswitch).
 
 ## Known limitations
 
