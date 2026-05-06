@@ -3,7 +3,7 @@ title: Additional acquisition depreciation
 description: Learn how depreciation is calculated for additional acquisitions in Germany, with an example of an organization acquiring a fixed asset.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User

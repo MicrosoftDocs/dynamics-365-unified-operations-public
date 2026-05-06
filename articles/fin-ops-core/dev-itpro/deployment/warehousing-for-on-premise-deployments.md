@@ -4,7 +4,7 @@ description: Learn about the prerequisites for the warehousing app for on-premis
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 06/19/2024
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2017-12-04
@@ -33,7 +33,7 @@ The Warehouse Management mobile app is available for Microsoft Windows, Google A
 
 To be able to reach your on-premises resources by using the app, you must create Domain Name System (DNS) records for your Application Object Server (AOS) and for Active Directory Federation Services (AD&nbsp;FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-latest.md#setup).
 
-## Certificates 
+## Certificates
 
 Make sure that the devices where the app is installed have the correct certificates to access the resources. If you're using self-signed certificates, you must install them on each device by importing the Dynamics 365 Finance + Operations (on-premises) certificate and the AD&nbsp;FS certificate into the trusted root of the computer account/user account. For more information, see [Create and export a self-signed certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)).
 
@@ -46,9 +46,7 @@ Because the Warehouse Management mobile app has read/write access to some of you
 
 After a device is authenticated with Finance + Operations (on-premises), each worker who uses that device signs in by using their Finance + Operations (on-premises) worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Finance + Operations (on-premises).
 
-
 For details about each authentication method and how to set it up, see the following articles:
-
 
 - **User-based authentication:** [User-based authentication for the Warehouse Management mobile app](warehousing-onprem-userauth.md)
 - **Service-based authentication (deprecated):** [Service-based authentication for the Warehouse Management mobile app](warehousing-onprem-serviceauth.md)
@@ -73,17 +71,17 @@ You must configure the Warehousing app on the device to connect to the server th
 
 You can import connection settings from either a file or a QR code. For both approaches, you must first create a settings file that uses JavaScript Object Notation (JSON) format and syntax. The file must include a connection list that contains the individual connections that have to be added. The following table summarizes the parameters that you must specify in the connection settings file.
 
-| Parameter                  | Description | 
+| Parameter                  | Description |
 |----------------------------|-------------|
 | ConnectionName             | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it's overridden by the settings from the imported file. |
 | ActiveDirectoryClientAppId | Specify the client ID that you made a note of while you were setting up the AD&nbsp;FS application. |
-| ActiveDirectoryResource    | <p>Specify the root URL of Finance + Operation (on-premises).</p><p>**Note:** Be sure to include */namespaces/AXSF*, and don't include a trailing slash.</p> | 
-| ActiveDirectoryTenant      | Specify the Open Authorization (OAuth) 2.0 endpoint of your AD&nbsp;FS server. This value has the form `https://your-adfs-server/adfs/oauth2`. Here's an example: `https://adfs.contoso.com/adfs/oauth2`. | 
-| Company                    | Specify the legal entity in Finance + Operation (on-premises) that you want the application to connect to. | 
+| ActiveDirectoryResource    | <p>Specify the root URL of Finance + Operation (on-premises).</p><p>**Note:** Be sure to include */namespaces/AXSF*, and don't include a trailing slash.</p> |
+| ActiveDirectoryTenant      | Specify the Open Authorization (OAuth) 2.0 endpoint of your AD&nbsp;FS server. This value has the form `https://your-adfs-server/adfs/oauth2`. Here's an example: `https://adfs.contoso.com/adfs/oauth2`. |
+| Company                    | Specify the legal entity in Finance + Operation (on-premises) that you want the application to connect to. |
 | ConnectionType             | (Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are *Certificate*, *ClientSecret*, *DeviceCode*, and *UsernamePassword*. The default value is *DeviceCode*. |
-| IsEditable                 | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are *"true"* and *"false"*. The default value is *"true"*. | 
-| IsDefault                  | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection is automatically preselected when the app is opened. Only one connection can be set as the default connection. Valid values are *"true"* and *"false"*. The default value is *"false"*. | 
-| CertificateThumbprint      | (Deprecated) (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. | 
+| IsEditable                 | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are *"true"* and *"false"*. The default value is *"true"*. |
+| IsDefault                  | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection is automatically preselected when the app is opened. Only one connection can be set as the default connection. Valid values are *"true"* and *"false"*. The default value is *"false"*. |
+| CertificateThumbprint      | (Deprecated) (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
 | UseBroker                  | (Optional) This parameter applies only to the *UsernamePassword* connection type. It determines whether a broker is used for single sign-on (SSO) authentication with Intune Company Portal (Android only) and Microsoft Authenticator (Android and iOS). Set it to *"true"* for broker-based authentication. Set it to *"false"* to require manual input of a user name and password. |
 
 The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named "ConnectionList" in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces ({}) and separated by commas, and the array must be enclosed in brackets ([]).

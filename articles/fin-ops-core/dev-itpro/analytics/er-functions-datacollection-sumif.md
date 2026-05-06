@@ -4,7 +4,7 @@ description: Learn about how the SUMIF Electronic reporting (ER) function is use
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 04/27/2020
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global

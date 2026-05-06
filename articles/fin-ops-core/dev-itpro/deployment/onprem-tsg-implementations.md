@@ -7,6 +7,8 @@ ms.topic: upgrade-and-migration-article
 ms.date: 02/20/2026
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
+ms.custom: 
+  - bap-template
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-11-30
@@ -16,6 +18,7 @@ ms.service: dynamics-365-op
 ---
 
 # Scripts for resolving issues in on-premises environments
+
 [!include [banner](../includes/banner.md)]
 
 This article serves as a central repository for scripts that you can use to fix problems in on-premises environments. Usually, run these scripts as predeployment or post-deployment scripts.
@@ -54,7 +57,7 @@ For more information about how to resolve problems in on-premises environments, 
     #& $agentShare\scripts\TSG_DisableMRDeployment.ps1 -agentShare $agentShare
 
     # The following script (when enabled) configures HTTPS for SSRS, and enables reporting services to run under a gMSA account.
-    # NOTE!!! If you have used an IP address in LCS for your SSRS server, update the IP address to a Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page. Go to Maintain > Update settings.
+    # NOTE!!! If you have used an IP address in Lifecycle Services for your SSRS server, update the IP address to a Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page. Go to Maintain > Update settings.
     #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<ssrshttcertthumbprint>" -principalUserAccountName contoso\svc-reportsvc$
 
     # When enabled, the following script resolves a version mismatch issue with Microsoft.Identity.Client, allowing the Reporting Services app to install successfully.
@@ -473,7 +476,7 @@ Write-Host "Finished Disabling FinancialReporting component."
 Use the following script for older environments to configure SSRS with HTTPS and enable the gMSA account that's used in new configurations.
 
 >[!NOTE]
->If you use an IP address in LCS for your SSRS server, change that address to the Fully Qualified Domain Name (FQDN) for the reporting server. You can change this setting on the **Environment** page. Select **Maintain** > **Update settings**.
+>If you use an IP address in Lifecycle Services for your SSRS server, change that address to the Fully Qualified Domain Name (FQDN) for the reporting server. You can change this setting on the **Environment** page. Select **Maintain** > **Update settings**.
 
 ```powershell
 param (

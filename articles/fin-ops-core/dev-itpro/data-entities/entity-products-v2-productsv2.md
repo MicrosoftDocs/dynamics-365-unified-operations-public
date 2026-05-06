@@ -4,6 +4,8 @@ description: Learn about the Products V2 data entity in finance and operations m
 author: edupont04
 ms.author: katiehav
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 04/28/2023
 ms.collection: FastTrack
 ---

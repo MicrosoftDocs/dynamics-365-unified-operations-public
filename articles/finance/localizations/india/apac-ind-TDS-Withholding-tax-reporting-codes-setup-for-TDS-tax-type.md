@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
@@ -22,14 +22,14 @@ Withholding tax reporting codes are used to generate Form 26Q and Form 27Q state
 
 1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax reporting codes**.
 
-    [![Withholding tax reporting codes page.](../media/apac-ind-TDS-16.png)]
+    :::image type="content" source="../media/apac-ind-TDS-16.png" alt-text="Screenshot of the Withholding tax reporting codes page.":::
 
-2. In the **Tax type** field, select **TDS** to define withholding tax reporting codes for the TDS tax type.
-3. In the **Withholding tax component** field, select the TDS component to that you're defining the withholding tax reporting code for. The **Withholding tax component group** field shows the TDS component group that was defined for the TDS component that you're defining.
+1. In the **Tax type** field, select **TDS** to define withholding tax reporting codes for the TDS tax type.
+1. In the **Withholding tax component** field, select the TDS component to that you're defining the withholding tax reporting code for. The **Withholding tax component group** field shows the TDS component group that was defined for the TDS component that you're defining.
 
     The **Section code** field on the **General** FastTab shows the section code that is attached to the TDS component group.
 
-4. On the **General** FastTab, in the **Reporting code** field, select the TDS reporting code:
+1. On the **General** FastTab, in the **Reporting code** field, select the TDS reporting code:
 
     - TDS
     - TCS
@@ -37,4 +37,4 @@ Withholding tax reporting codes are used to generate Form 26Q and Form 27Q state
     - PE\_Cess
     - SHE\_Cess
 
-5. Close the page.
+1. Close the page.

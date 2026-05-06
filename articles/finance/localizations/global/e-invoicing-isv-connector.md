@@ -3,8 +3,8 @@ title: Electronic Invoicing service ISV last-mile connector
 description: Learn how to configure and use the Electronic Invoicing service ISV connector, including prerequisites and an outline on integration.
 author: ikondratenko
 ms.author: ikondratenko
-ms.topic: article
-ms.date: 10/01/2025
+ms.topic: concept-article
+ms.date: 04/17/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -34,8 +34,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 > [!NOTE]
 > The integration of the Electronic Invoicing service with the ISV last-mile connector is described based on **Danish electronic invoicing** example. For other countries/regions please refer to the respective section in the [Country/region-specific scenarios implemented via Edicom](#Countries/regions) chapter.
 
-You can configure and use the Electronic Invoicing service ISV last-mile connector's integration with the Global e-Invoicing Platform that [Edicom](https://edicomgroup.com/electronic-invoicing) provides. For more information refer to: [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
-
+You can configure and use the Electronic Invoicing service ISV last-mile connector's integration with the Global e-Invoicing Platform that [Edicom](https://edicomgroup.com/electronic-invoicing) provides. For more information refer to: [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
 
 To enable the integration of the Electronic Invoicing service with the ISV last-mile connector, you must obtain the following required credentials from Edicom:
 
@@ -72,7 +71,7 @@ The following pipeline actions are introduced or updated to enable outbound docu
 
     You can leave all remaining parameters blank.
 
-    ![Screenshot that shows the parameters for the Integrate with Edicom action.](../media/isv_connector_actions.jpg)
+    :::image type="content" source="../media/isv_connector_actions.jpg" alt-text="Screenshot that shows the parameters for the Integrate with Edicom action.":::
 
 - **Waiting for response from Edicom** – This new action waits for the response from Edicom. No specific parameters must be configured.
 - **Process response** – For this existing action, two new Electronic reporting (ER) configurations, **Edicom Response Processing** and **Error log import Json**, were created to handle the response that the **Waiting for response from Edicom** action receives from Edicom.
@@ -85,11 +84,11 @@ The following pipeline actions are introduced or updated to enable outbound docu
     | Reporting configuration list | The first new ER configuration. Default value for Edicom: **Edicom Response Processing: Edicom Response Processing**. |
     | Reporting configuration list | The second new ER configuration. Default value for Edicom: **Error log import Json: Error log import Json**. |
 
-    ![Screenshot that shows the parameters for the Process response action.](../media/isv_connector_response.jpg)
+    :::image type="content" source="../media/isv_connector_response.jpg" alt-text="Screenshot that shows the parameters for the Process response action.":::
 
 A new data channel type, **Get status from Edicom**, is implemented for feature setups of the **Export channel and processing pipeline** type. You must create a new feature setup where you select **Get status from Edicom** as the data channel.
 
-![Screenshot that shows a Get status feature setup of the Export channel and processing pipeline type being created.](../media/isv_connector_get_status.jpg)
+:::image type="content" source="../media/isv_connector_get_status.jpg" alt-text="Screenshot that shows a Get status feature setup of the Export channel and processing pipeline type being created.":::
 
 Configure the export channel's parameters as described in the following table.
 
@@ -115,7 +114,7 @@ You can leave all remaining parameters blank.
 
 A new data channel type, **Edicom service**, is implemented for feature setups of the **Import channel** or **Import channel and processing pipeline** type. You must create a new feature setup where you select **Edicom service** as the data channel.
 
-![Screenshot that shows an Import invoices feature setup of the Import channel and processing pipeline type being created.](../media/isv_connector_import_channel_new.jpg)
+:::image type="content" source="../media/isv_connector_import_channel_new.jpg" alt-text="Screenshot that shows an Import invoices feature setup of the Import channel and processing pipeline type being created.":::
 
 Configure the import channel's parameters as described in the following table.
 
@@ -136,12 +135,11 @@ Additionally, you must configure the following feature setup variable to use for
 - **Type:** From client
 - **Data type:** file
 
-![Screenshot that shows the ResponseXml variable for the Edicom import channel.](../media/isv_connector_responseXML.jpg)
+:::image type="content" source="../media/isv_connector_responseXML.jpg" alt-text="Screenshot that shows the ResponseXml variable for the Edicom import channel.":::
 
 The name of this variable must be used as the name of the import source for the import channel on **Integration channels** tab of the **Electronic document parameters** page in Finance.
 
-![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
-
+:::image type="content" source="../media/isv_connector_import_channel.jpg" alt-text="Screenshot that shows the ResponseXml import source on the Electronic document parameters page.":::
 
 ### <a id="Countries/regions"></a>Country/region-specific scenarios implemented via Edicom
 

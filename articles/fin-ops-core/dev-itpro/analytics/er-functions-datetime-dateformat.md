@@ -4,7 +4,7 @@ description: Learn about how the DATEFORMAT Electronic reporting (ER) function i
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 09/08/2021
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
