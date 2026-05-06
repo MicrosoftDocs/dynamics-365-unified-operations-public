@@ -68,7 +68,7 @@ To prevent an invoice from being submitted to a workflow, use the following opti
 
 ## Matching vendor invoices to product receipts
 
-You can enter and save information for vendor invoices, and you can match invoice lines to product receipt lines. You can also match partial quantities for a line.
+Enter and save information for vendor invoices, and match invoice lines to product receipt lines. You can also match partial quantities for a line.
 
 Create a vendor invoice based on the product receipt line items that you received through the current date, even if you didn't receive all the items for a particular purchase order. For example, use this option if a vendor sends one invoice per month to cover all the deliveries that it shipped during that month. Each product receipt represents a partial or complete delivery of the items on the purchase order.
 
@@ -96,9 +96,9 @@ You can work with multiple invoices at the same time and post all of them at the
 
 ## Recovering vendor invoices that are in use
 
-While a user is using a vendor invoice, other users can't edit it. However, the state of an invoice might sometimes indicate that the invoice is in use, even though no user is actively editing it. For example, the application might have stopped responding while the invoice was being edited, or a user might have inadvertently left the invoice open in the application.
+While a user is using a vendor invoice, other users can't edit it. However, the state of an invoice might sometimes indicate that the invoice is in use, even though no user is actively editing it. For example, the application might stop responding while the invoice is being edited, or a user might inadvertently leave the invoice open in the application.
 
-You can use the **Recover vendor invoices** page to recover or release vendor invoices that have been in use for more than four hours, so that they can be edited. You can open this page from the **Periodic task** navigation or a tile on the **Vendor invoice entry** workspace. After an invoice is recovered, it will be available for editing on the **Vendor invoice** page.
+Use the **Recover vendor invoices** page to recover or release vendor invoices that are in use for more than four hours, so that you can edit them. You can open this page from the **Periodic task** navigation or a tile on the **Vendor invoice entry** workspace. After you recover an invoice, it's available for editing on the **Vendor invoice** page.
 
 You can access the **Recover vendor invoices** page only if you're assigned the **Recover vendor invoices in use** security duty and privilege. Additionally, the **Allow vendor invoice recovery** parameter on the **Accounts payable parameters** page must be turned on.
 
@@ -136,7 +136,7 @@ For each transaction, the report includes the following details:
 
 ### Filter the data on the report
 
-When you generate the **Vendor open transactions** report, the following default parameters are available. You can use them to filter the data that will be included on the report.
+When you generate the **Vendor open transactions** report, the following default parameters are available. Use them to filter the data that the report includes.
 
 - **Exclude future settlement** – Select this checkbox to exclude transactions that are settled after the date that you enter in the **Open transactions per** field.
 - **Open transactions per** – Enter a date to include transactions that are open as of that date. If you don't enter a date, this field is set to the maximum date. (The maximum date is the latest date that the system accepts, December 31, 2154.) By default, the next time that you run the report, this field is set to the last date that you entered in it.

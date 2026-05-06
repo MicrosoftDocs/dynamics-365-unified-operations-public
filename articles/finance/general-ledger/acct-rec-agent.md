@@ -44,8 +44,8 @@ To set up the Account Reconciliation Agent, follow these steps:
 
 The Account Reconciliation Agent evaluates exceptions and provides a recommended action for each one. You can view the agent best from the **Account reconciliation** workspace.
 
->[!Note]
-> The Account reconciliation agent recommends actions for Voucher amount mismatch exceptions.
+> [!NOTE]
+> The Account reconciliation agent recommends actions for voucher amount mismatch exceptions.
 
 For example, an exception of the **Voucher amount mismatch** type is raised for a transaction. When the Account Reconciliation Agent evaluates the exception, it recommends the following action: **Create journal entry**. You can either accept that recommendation or select from other available actions:
 
