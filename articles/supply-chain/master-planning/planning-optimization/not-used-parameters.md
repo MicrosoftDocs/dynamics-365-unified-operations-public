@@ -6,9 +6,11 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 ms.topic: concept-article
-ms.date: 11/19/2025
+ms.date: 05/01/2026
 ms.custom:
   - bap-template
+ms.collection:
+  - ai-assisted
 ---
 
 # Parameters not used by Planning Optimization
@@ -44,7 +46,7 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **Number sequences** tab:
 
-    - **Master scheduling planned order number** – Planning Optimization uses its own number sequence, which you can't select, so it doesn't consider this parameter.
+    - **Master scheduling planned order number** – Planning Optimization uses its own proprietary number sequence for all generated planned order numbers, and there's no method available for modifying this number sequence. The system ignores this parameter entirely. Learn more about how Planning Optimization handles number sequences in [Differences between Planning Optimization and the deprecated master planning engine](planning-optimization-differences-with-built-in.md).
 
 ## Coverage groups page
 
@@ -79,8 +81,8 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
     - **Include continuity plan** – Planning Optimization doesn't support this parameter.
     - **Capacity time fence for bottleneck resources** – Planning Optimization doesn't support this parameter because customers didn't use it.
-    - **Planned orders** – Planning Optimization uses fixed number sequences.
-    - **Session** – Planning Optimization uses fixed number sequences.
+    - **Planned orders** – Planning Optimization uses its own proprietary number sequences that you can't modify.
+    - **Session** – Planning Optimization uses its own proprietary number sequences that you can't modify.
     - **Continuity plan** – Planning Optimization doesn't support this parameter.
 
 - **Time fences in days** FastTab:

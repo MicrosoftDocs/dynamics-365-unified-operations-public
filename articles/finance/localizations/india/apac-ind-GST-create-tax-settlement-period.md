@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
@@ -32,15 +32,15 @@ Follow these steps to create a tax settlement period.
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and create a vendor GST authority.
 
-    ![GST authority.](../media/GST-authority.png)
+    :::image type="content" source="../media/GST-authority.png" alt-text="Screenshot of the GST authority setup page.":::
 
-2. Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax authorities**, create a tax authority, and assign the vendor account that you created in the previous step.
+1. Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax authorities**, create a tax authority, and assign the vendor account that you created in the previous step.
 
-    ![Tax authority.](../media/tax-authority.png)
+    :::image type="content" source="../media/tax-authority.png" alt-text="Screenshot of the tax authority setup page.":::
 
-3. Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax settlement periods**, and create a tax period for GST.
+1. Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax settlement periods**, and create a tax period for GST.
 
-    ![Tax settlement period.](../media/tax-settlement-period.png)
+    :::image type="content" source="../media/tax-settlement-period.png" alt-text="Screenshot of the tax settlement period setup page.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

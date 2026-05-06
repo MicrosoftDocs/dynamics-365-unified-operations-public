@@ -2,7 +2,7 @@
 title: Configure printing for the annual ISLR withholding certificate for Venezuela
 description: Learn how to set up and generate the annual income tax (ISLR) withholding certificate for Venezuela.
 author: Cpicon85
-ms.date: 06/05/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -17,10 +17,10 @@ This article explains how to set up and generate the annual income tax (ISLR) wi
 
 ## Prerequisites
 
-Before you can generate the report, the following prerequisites must be met:
+Before you can generate the report, ensure that the following prerequisites are met:
 
-- The legal entity's address must be in Venezuela.
-- You must enable both the general Latin American (LATAM) feature and the country/region-specific LATAM feature for Venezuela.
+- The legal entity's address is in Venezuela.
+- You enable both the general Latin American (LATAM) feature and the country/region-specific LATAM feature for Venezuela.
 - You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
     The following formats constitute the annual ISLR withholding certificate:
@@ -35,7 +35,7 @@ Before you can generate the report, the following prerequisites must be met:
 
 To configure application-specific parameters, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
+1. In Dynamics 365 Finance, go to **Organization administration** > **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
 1. Select the **VEN Annual withholding certificate** format.
 1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **VendorApplicableInvoices**.
@@ -54,12 +54,12 @@ To configure application-specific parameters, follow these steps:
 
 To generate the annual ISLR withholding certificate, follow these steps:
 
-1. In Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
+1. In Finance, go to **Tax** > **Inquiries and reports** > **LATAM** > **Tax reporting**.
 1. In the **Format mapping** field, enter or select **VEN Annual withholding certificate**.
 1. Select **OK**.
 1. In the **From date** and **To date** fields, specify the date range for the report.
 1. Select **OK**.
-1. In the **Account number** field, you can specify the account to show.
+1. In the **Account number** field, specify the account to show.
 1. Select **OK**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

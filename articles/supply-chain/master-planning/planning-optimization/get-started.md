@@ -6,9 +6,11 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.topic: how-to
-ms.date: 03/10/2026
+ms.date: 05/05/2026
 ms.custom:
   - bap-template
+ms.collection:
+  - ai-assisted
 ---
 
 # Get started with master planning
@@ -20,7 +22,7 @@ Master planning in Supply Chain Management is provided by an external service ca
 
 ## Availability
 
-Planning Optimization is currently available in the following Azure geographies: United States, United States government cloud, Canada, Brazil, Europe, France, United Kingdom, Norway, Switzerland, Australia, Asia Pacific, Japan, United Arab Emirates, South Africa, and India. If you try to install the add-in from another geographic region, then Microsoft Dynamics Lifecycle Services shows a message that this geographic isn't supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planning Optimization is currently available in the following Azure geographies: United States, United States government cloud, Canada, Brazil, Europe, France, United Kingdom, Norway, Switzerland, Australia, Asia Pacific, Japan, United Arab Emirates, South Africa, and India. If you try to install the add-in from another geographic region, Microsoft Dynamics Lifecycle Services shows a message that this geographic isn't supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 > [!NOTE]
 > Planning Optimization doesn't support on-premises deployments of Dynamics 365 Supply Chain Management.
@@ -31,13 +33,16 @@ You can run master planning using your current Supply Chain Management licenses.
 
 ## <a name="install-enable-po"></a>Install and enable Planning Optimization
 
-To use Planning Optimization, you must make sure your system has all of the prerequisites in place and then enable its configuration key and install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management.
+To use Planning Optimization, make sure your system has all the prerequisites in place. Then, enable its configuration key and install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management.
 
 ### Prerequisites
 
-Before you install the Planning Optimization Add-in, the following prerequisites must be in place:
+Before you install the Planning Optimization Add-in, make sure the following prerequisites are in place:
 
-- You must be running Supply Chain Management on an Lifecycle Services enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
+- You must be running Supply Chain Management on a Lifecycle Services enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
+
+    > [!IMPORTANT]
+    > Planning Optimization can't be installed on a development (OneBox) environment. It requires a Lifecycle Services–enabled, high-availability environment, tier 2 or higher. If you need to troubleshoot installation issues, see [Troubleshoot Planning Optimization](planning-optimization-trouble-shooting.md).
 
 - Your system must be set up for Power Platform integration. Learn more in [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
@@ -54,7 +59,7 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 
 ### Enable the Planning Optimization configuration key
 
-To use Planning Optimization, you must enable its configuration key. To do so:
+To use Planning Optimization, you must enable its configuration key. follow these steps:
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration** \> **Setup** \> **License configuration**.
@@ -75,13 +80,13 @@ To install the Planning Optimization Add-in:
 1. Follow the installation guide, and agree to the terms and conditions.
 1. Select **Install**.
 1. On the **Environment add-ins** FastTab, you should see that Planning Optimization is installing.
-1. After a few minutes, **Installing** should change to **Installed** (you might need to refresh the page). When installed, you're ready to activate Planning Optimization in Dynamics 365 Supply Chain Management.
+1. After a few minutes, **Installing** changes to **Installed** (you might need to refresh the page). When installed, you're ready to activate Planning Optimization in Dynamics 365 Supply Chain Management.
 
-The main purpose of installing the Planning Optimization add-in is to connect the service and the environment. Therefore, you must install the add-in separately on each environment where you'll use Planning Optimization, regardless of any code moved between the environments.
+The main purpose of installing the Planning Optimization Add-in is to connect the service and the environment. Therefore, you must install the add-in separately on each environment where you use Planning Optimization, regardless of any code moved between the environments.
 
 ## Turn on Planning Optimization for your environment
 
-After you've installed the Planning Optimization Add-in for your environment, you must enable it in Supply Chain Management before you can start using it.
+After you install the Planning Optimization Add-in for your environment, you must enable it in Supply Chain Management before you can start using it.
 
 > [!NOTE]
 > You can continue to use the deprecated master planning engine for one or more previously created companies (until you're ready to migrate them) even while using Planning Optimization for the others. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning with existing companies](../continue-using-deprecated-planning.md).
@@ -91,17 +96,17 @@ To configure your system to use the Planning Optimization Add-in for master plan
 1. Sign in to Supply Chain Management.
 1. Go to **Master planning** \> **Setup** \> **Planning Optimization parameters**.
 1. Open the **General** tab.
-1. Check the **Connection status**. It will show one of the values listed in the following table.
+1. Check the **Connection status**. It shows one of the values listed in the following table.
 
     | Connection status | Description | Can Planning Optimization be used? |
     |---|---|---|
-    | Connected | A connection has been established between the Planning Optimization service and Supply Chain Management. | Yes |
+    | Connected | A connection is established between the Planning Optimization service and Supply Chain Management. | Yes |
     | Enabling connection | A request to turn on the connection to the Planning Optimization service is currently in progress. | No |
-    | Disconnected | There's no connection to the Planning Optimization service. The connection can be turned on from Lifecycle Services, as described earlier in this article. | No |
+    | Disconnected | There's no connection to the Planning Optimization service. You can turn on the connection from Lifecycle Services, as described earlier in this article. | No |
     | Disabling connection | A request to turn off the connection to the Planning Optimization service is currently in progress. | No |
     | Getting status | The system is waiting for status information from the Planning Optimization service. | No |
 
-1. If the **Connection stats** is *Connected*, the **Use Planning Optimization** option is read-only and set to *Yes*. In most cases, Planning Optimization is now the only planning engine available for Supply Chain Management, so you can't turn it off. However, in some rare cases, Microsoft Support might make the deprecated planning available for one or more specific companies (learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
+1. If the **Connection status** is *Connected*, the **Use Planning Optimization** option is read-only and set to *Yes*. In most cases, Planning Optimization is now the only planning engine available for Supply Chain Management, so you can't turn it off. However, in some rare cases, Microsoft Support might make the deprecated planning available for one or more specific companies (learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
 
 > [!IMPORTANT]
 > If existing planning batch jobs that were created for the deprecated master planning engine are triggered while the **Use Planning Optimization** option is set to *Yes*, those jobs will fail.

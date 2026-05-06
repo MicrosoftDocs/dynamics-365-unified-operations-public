@@ -28649,6 +28649,11 @@
       "source_path": "articles/supply-chain/warehousing/whats-new-wma.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-support-info-v3.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-support-info",
+      "redirect_document_id": false
     }
   ]
 
