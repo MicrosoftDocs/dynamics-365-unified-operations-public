@@ -116,6 +116,37 @@ To create a customer order for products that the customer picks up, follow these
 1. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
 1. If the full order total wasn't paid, select whether the customer provides payment later (at pickup), or whether a credit card is tokenized now and used and captured at the time of pickup.
 
+### Leverage Credit management functionality for Commerce orders
+
+Starting in Dynamics 365 Commerce version 10.0.48, customer orders can be configured to honor the full credit management flow. When enabled, orders are evaluated against credit management blocking rules and can be placed on credit hold for your finance team's visibility and control before fulfillment proceeds.
+
+To enable this behavior, both of the following must be active:
+
+- The **Leverage credit management setup for Commerce orders** feature must be enabled in the **Feature management** workspace.
+- The **Credit management** option must be enabled at **Accounts receivable parameters > Credit management**.
+
+> [!NOTE]
+> If either of these is not enabled, Commerce orders fall back to the default behavior: the system directly blocks the order or transaction when a customer's credit limit is exceeded, instead of routing it through the credit hold flow.
+
+#### Simple customer orders (pickup or shipment)
+
+You can now control whether the credit limit is checked at the time of order capture. To allow the cashiers (on POS) or B2B buyers (on e-commerce site) to place the orders even though the credit limit has been exceeded, enable a new configuration named **Skip credit check during order capture** setting in the **Functionality profile** for POS or Online store. Once the order is placed, the customer orders with in-store pickup or a shipment mode of delivery go through the credit management flow. Depending on the blocking rules configured, orders may be placed on credit hold for review.
+
+> [!NOTE]
+> For the **Credit limit used** blocking rule to take effect, you must also enable **Check credit limit on sales order** in **Credit and collections parameters**. This applies to all credit management checkpoints, including order confirmation, picking list generation, and invoicing. Other blocking rules do not require this setting.
+
+#### Hybrid customer orders
+
+For hybrid orders that include a carry-out line (where the customer takes some items immediately), the order does not go through the credit management flow. Carry-out lines are invoiced at the time of the transaction, so the system is unable to apply a credit hold to the order header. The existing behavior is preserved for these orders.
+
+#### Order fulfillment actions in-store
+
+When store associates perform fulfillment actions on an order (such as picking or packing), those actions do not trigger the credit management flow. If the customer's credit limit is exceeded and **Message when exceeding credit limit** is set to **Error**, the system blocks the fulfillment action. Fulfillment actions performed in-store do not change the credit management setting at the order header level. This ensures that order lines fulfilled from a warehouse continue to go through the credit management flow as expected.
+
+#### Cash and carry transactions
+
+For cash and carry transactions, the system blocks the transaction if the customer's credit limit is exceeded and the **Message when exceeding credit limit** setting in **Credit and collections parameters** is set to **Error**. This behavior is unchanged regardless of whether credit management is enabled.
+
 ### Edit an existing customer order
 
 You can recall and edit retail orders created in either the online or store channel through POS as required.
@@ -126,7 +157,7 @@ You can recall and edit retail orders created in either the online or store chan
 > [!NOTE]
 > Microsoft recommends that you don't edit orders and quotations in POS created by a non-call center user in headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine reprices them.
 
-In version 10.0.17 and later, users can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature isn't enabled, or if you're using version 10.0.16 or earlier, users can only edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. You can configure the option to disable this capability for specific stores through the **Functionality profile** under the **General** FastTab.
+Uers can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature isn't enabled, or if you're using version 10.0.16 or earlier, users can only edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. You can configure the option to disable this capability for specific stores through the **Functionality profile** under the **General** FastTab.
 
 1. Select **Recall order**.
 1. Use **Search** to enter filters to find the order, and then select **Apply**.
