@@ -4,7 +4,7 @@ description: Learn about different types of production order posting, including 
 author: rachelprofitt
 ms.author: raprofit
 ms.topic: overview
-ms.date: 05/15/2025
+ms.date: 05/06/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
