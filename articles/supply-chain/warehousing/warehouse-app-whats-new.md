@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 04/30/2026
+ms.date: 05/06/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -19,6 +19,19 @@ ms.custom:
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management. It lists changes for each version released since the general availability (GA) release of version 4. Notes for older versions are available in [Warehouse Management mobile app release notes archive](warehouse-app-whats-new-archive.md).
 
 Starting with version 4.1.1.0, every V4 and later release is tagged with its publication date. Publication dates determine whether a release is within the rolling 12-month support window that applies to V4 and all later releases. Learn more in [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy).
+
+## Release notes for version 4.1.2.0 (May 6, 2026)
+
+Version 4.1.2.0 is a minor update that includes the following fixes and improvements:
+
+### Bug fixes
+
+- **Components fields** – Fixed an issue that caused `data=1` to appear in some edge case scenarios.
+
+### Improvements
+
+- **Diagnostics** – Added the option to clean up authentication data from the **Diagnostics** page.
+- **Windows MDM** – Expanded mobile device management (MDM) configuration collection to support a broader range of MDM providers on Windows.
 
 ## Release notes for version 4.1.1.0 (April 30, 2026)
 
@@ -46,22 +59,22 @@ Version 4.1.1.0 focuses on performance, small-screen layouts, scanning reliabili
 #### Layout and display
 
 - **Pallet building** – The **Done** button is now visible on small or non-maximized windows. The **Correct**, **Cancel**, and **Done** actions are accessible without resizing.
-- **Calculator** – Fixed layout issues when using landscape mode on small screens.
+- **Calculator** – Fixed layout problems when using landscape mode on small screens.
 
 #### Windows
 
-- **Spinner control** – Fixed an issue where the spinner could stop between values. It now snaps correctly.
+- **Spinner control** – Fixed a problem where the spinner could stop between values. It now snaps correctly.
 - **Authentication** – Resolved a crash during sign-in caused by an unhandled exception.
 - **Clipboard** – Removed the unnecessary *Allow paste* prompt when selecting input fields.
 - **MDM** – Implemented mobile device management (MDM) read of configurations for Windows.
 
 #### iOS
 
-- **Calculator** – Fixed an issue where the calculator opened automatically without user interaction.
+- **Calculator** – Fixed a problem where the calculator opened automatically without user interaction.
 
 #### Localization
 
-- **Spanish (ES)** – Fixed an issue where trailing or embedded zeros were removed from production and work quantities. Behavior now matches en-US formatting.
+- **Spanish (ES)** – Fixed a problem where trailing or embedded zeros were removed from production and work quantities. Behavior now matches en-US formatting.
 
 ## Release notes for version 4.0.39.0
 
@@ -92,11 +105,11 @@ This update includes critical fixes for authentication workflows, significant ba
 
 ## Version 4.0.38.0
 
-Version 4.0.38.0 adds the following fixes and improvements:
+Version 4.0.38.0 includes the following fixes and improvements:
 
 - Fixed an issue that caused pages to render incorrectly when users navigated from the **Item inquiry** page to a custom page.
 - Fixed an issue where the **Back** button didn't clear previously selected data when navigating between **Item inquiry** pages.
-- Fixed an issue where some [mobile mass deployment (MDM) solutions](warehouse-app-intune-user-based.md) couldn't push connection settings (such as those specified in the **ConnectionsJson** field in Microsoft Intune) to the app.
+- Fixed an issue where some [mobile mass deployment (MDM) solutions](warehouse-app-intune-user-based.md) couldn't push connection settings, such as those specified in the **ConnectionsJson** field in Microsoft Intune, to the app.
 - Fixed an issue where browser shortcuts appeared when users scanned a value.
 - Improved the diagnostic file collection flow. Users can now share or save the diagnostic file in a local folder, which is useful when using kiosk mode.
 - Fixed an issue where users couldn't scan a license plate on the **Confirm** page when running *Movement* flows. Only the last character of the barcode was shown.
@@ -105,9 +118,9 @@ Version 4.0.38.0 adds the following fixes and improvements:
 
 ## Version 4.0.37.0
 
-Version 4.0.37.0 adds the following fixes and improvements:
+Version 4.0.37.0 includes the following fix:
 
-- Fixed an issue when the domain name is present in the connection configuration, user had to enter complete email address.
+- Fixed an issue where users had to enter a complete email address when the domain name was present in the connection configuration.
 
 ## Version 4.0.36.0
 

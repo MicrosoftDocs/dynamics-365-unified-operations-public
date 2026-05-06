@@ -4,14 +4,14 @@ description: Learn how to set up and print labels by using the Seagull Scientifi
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 05/16/2024
+ms.date: 4/28/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 ---
 
-# Print labels using the Seagull Scientific BarTender® label service solution
+# Print labels by using the Seagull Scientific BarTender® label service solution
 
 [!include [banner](../../finance/includes/banner.md)]
 
@@ -19,23 +19,23 @@ This article describes how to set up and print labels in Microsoft Dynamics 365 
 
 The BarTender labeling solution is available both as on-premises software and as a cloud-based software-as-a-service (SaaS) offering that's named BarTender Cloud™. Currently, only BarTender Cloud can be used together with the external label printing service for Supply Chain Management.
 
-This article describes how to integrate Supply Chain Management with BarTender Cloud. It includes information about how to communicate with BarTender Cloud by exchanging documents in YAML format though the BarTender Cloud REST API. For more information about BarTender Cloud, see [BarTender Cloud](https://www.seagullscientific.com/software/cloud/).
+This article describes how to integrate Supply Chain Management with BarTender Cloud. It includes information about how to communicate with BarTender Cloud by exchanging documents in YAML format through the BarTender Cloud REST API. For more information about BarTender Cloud, see [BarTender Cloud](https://www.seagullscientific.com/software/cloud/).
 
 > [!IMPORTANT]
-> By enabling the external service integration, you affirm that you understand that the data handling, privacy, and compliance standards of the external service might not be the same as the standards that are provided by Dynamics 365 Supply Chain Management. To learn whether the external service meets your organization's security and privacy requirements, including requirements for the handling of personal data and geo-residency, consult the external service's documentation and terms. Your privacy is important to us. To learn more, read the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+> By enabling the external service integration, you affirm that you understand that the data handling, privacy, and compliance standards of the external service might not be the same as the standards that Dynamics 365 Supply Chain Management provides. To learn whether the external service meets your organization's security and privacy requirements, including requirements for the handling of personal data and geo-residency, consult the external service's documentation and terms. Your privacy is important to us. To learn more, read the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 >
-> The information in this article is for general informational purposes only. Although we try to keep the information up to date and correct, Microsoft makes no representation or warranties of any kind, express or implied, about accuracy, reliability, or completeness with respect to the BarTender product. Seagull Scientific might change the functionality of the BarTender product at any time without notice. If you have any additional questions about the BarTender product, contact [Seagull Scientific](https://www.seagullscientific.com/support/microsoft-dynamics-365-scm/).
+> The information in this article is for general informational purposes only. Although Microsoft tries to keep the information up to date and correct, Microsoft makes no representation or warranties of any kind, express or implied, about accuracy, reliability, or completeness with respect to the BarTender product. Seagull Scientific might change the functionality of the BarTender product at any time without notice. If you have any additional questions about the BarTender product, contact [Seagull Scientific](https://www.seagullscientific.com/support/microsoft-dynamics-365-scm/).
 
 ## Prerequisites
 
-To use the features that are described in this article, you must be running Supply Chain Management version 10.0.34 or later.
+To use the features that this article describes, you must be running Supply Chain Management version 10.0.34 or later.
 
 ## <a name="prepare-integration"></a>Get a copy of your personal access token from BarTender Cloud
 
-Before you can access BarTender Cloud through its REST API, you must get a copy of your personal access token from BarTender Cloud. Supply Chain Management will use this token to authenticate with BarTender Cloud. For more information about how to get this token, see [BarTender Cloud REST API](https://support.seagullscientific.com/hc/en-us/articles/9756611024535) in the BarTender help center. Be sure to make a note of the token, because you'll have to enter it later.
+Before you can access BarTender Cloud through its REST API, you must get a copy of your personal access token from BarTender Cloud. Supply Chain Management uses this token to authenticate with BarTender Cloud. For more information about how to get this token, see [BarTender Cloud REST API](https://support.seagullscientific.com/hc/en-us/articles/9756611024535) in the BarTender help center. Be sure to make a note of the token, because you need to enter it later.
 
 > [!NOTE]
-> Personal access tokens expire after a fixed number of days. You'll have to enter a new token before the old one expires. You can manually refresh the token to obtain a new one.
+> Personal access tokens expire after a fixed number of days. You need to enter a new token before the old one expires. You can manually refresh the token to obtain a new one.
 
 ## Configure Supply Chain Management to print to printers managed by BarTender Cloud
 
@@ -49,8 +49,8 @@ Follow these steps to set up an external service definition.
 1. On the Action Pane, select **New** to create an external service definition.
 1. Set the following fields for the new service definition:
 
-    - **External service definition** – Enter a name for the service definition (for example, *BTCloud*).
-    - **Description** – Enter a short description of the service definition (for example, *BarTender Cloud*).
+    - **External service definition** – Enter a name for the service definition, such as *BTCloud*.
+    - **Description** – Enter a short description of the service definition, such as *BarTender Cloud*.
 
 1. On the Action Pane, select **Save**.
 1. On the **External service operations** FastTab, select **Edit operations** on the toolbar.
@@ -58,18 +58,18 @@ Follow these steps to set up an external service definition.
 
     - On the header, set the following fields:
 
-        - **External service operation** – Enter a name for the operation (for example, *Actions*).
-        - **Description** – Enter a short description of the operation (for example, *Actions API*).
+        - **External service operation** – Enter a name for the operation, such as *Actions*.
+        - **Description** – Enter a short description of the operation, such as *Actions API*.
 
     - On the **General** FastTab, set the following fields:
 
         - **HTTP method** – Select *POST*.
-        - **Operation timeout** – Enter a time-out period for the operation, in milliseconds (for example, *500*).
+        - **Operation timeout** – Enter a timeout period for the operation, in milliseconds, such as *500*.
         - **Request body type** – Select *Raw*.
         - **Relative URL** – Enter */api/actions*.
 
         > [!NOTE]
-        > Cloud Print is a synchronous API. Therefore, it will wait until the label has been printed and will then provide immediate feedback about whether printing was successful. However, because this process can take several seconds, the system might provide a bad user experience for mobile device users. Additionally, the result isn't currently used. Therefore, we recommend that you set a time-out period of 500 milliseconds. Even though Supply Chain Management stops waiting after this time-out expires, printing will continue in the background.
+        > Cloud Print is a synchronous API. Therefore, it waits until the label is printed and then provides immediate feedback about whether printing was successful. However, because this process can take several seconds, the system might provide a bad user experience for mobile device users. Additionally, the result isn't currently used. Therefore, set a timeout period of 500 milliseconds. Even though Supply Chain Management stops waiting after this timeout expires, printing continues in the background.
 
     - On the **Request HTTP headers** FastTab, add a row, and set the following fields for it:
 
@@ -97,7 +97,7 @@ Follow these steps to set up an external service definition.
 1. On the **Label print service** FastTab, set the following fields:
 
     - **Print operation** – Leave this field blank.
-    - **Variables print operation** – Select the name of the operation that you created for printing variable-based layouts (for example, *Actions*).
+    - **Variables print operation** – Select the name of the operation that you created for printing variable-based layouts, such as *Actions*.
     - **Variable label layout template** – Enter the content for your variable-based layout template. Here's an example.
 
         ```YAML
@@ -117,7 +117,7 @@ Follow these steps to set up an external service definition.
 
 ### Set up an external service instance for printing through the Actions API
 
-For this procedure, you'll need the personal access token that you previously [obtained from BarTender Cloud](#prepare-integration).
+For this procedure, you need the personal access token that you previously [obtained from BarTender Cloud](#prepare-integration).
 
 Follow these steps to set up an external service instance for printing through the Actions API.
 
@@ -125,9 +125,9 @@ Follow these steps to set up an external service instance for printing through t
 1. On the Action Pane, select **New** to create an external service instance.
 1. Set the following fields for the new service instance:
 
-    - **External service instance** – Enter a name for the instance (for example, *BTCloud*).
-    - **Description** – Enter a short description of the instance (for example, *BTCloud*).
-    - **External service definition** – Select the service definition to use with the instance. The example service definition value that was suggested earlier in this article was *BTCloud*.
+    - **External service instance** – Enter a name for the instance, such as *BTCloud*.
+    - **Description** – Enter a short description of the instance, such as *BTCloud*.
+    - **External service definition** – Select the service definition to use with the instance. The example service definition value that was suggested earlier in this article is *BTCloud*.
 
 1. On the **General** tab, set the following fields:
 
@@ -146,7 +146,7 @@ You can now create label printers and label layouts.
 > [!NOTE]
 >
 > - When you create label printers on the **Label printers** page in Supply Chain Management, in the **Label print service printer name** field, enter the name of the printer as it appears in the **Print** dialog box in BarTender Cloud, or as it's retrieved from the Printer API. Use the following format: *printer:workstation/printer*.
-> - When you create a variable-based label layout on the **Label layout** page of Supply Chain Management, in the **System Variables** grid, include a row where the **Variable name** field is set to *LabelFile* and the **Value** field is set to the full path and file name of the label (including any folders, if the label file is stored in a folder). The BarTender Cloud REST API uses a Librarian path, but the beginning of the full Librarian name has already been coded in the variable label template.
+> - When you create a variable-based label layout on the **Label layout** page of Supply Chain Management, in the **System Variables** grid, include a row where the **Variable name** field is set to *LabelFile* and the **Value** field is set to the full path and file name of the label (including any folders, if the label file is stored in a folder). The BarTender Cloud REST API uses a Librarian path, but the beginning of the full Librarian name is already coded in the variable label template.
 > - When you create a variable-based label layout, **Variable name** in the **Data variables** grid can't be the same as **Variable name** in the **System variables** grid.
 
 ## Related information
