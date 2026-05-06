@@ -4,7 +4,7 @@ description: Learn about the Account Reconciliation Agent in Microsoft Dynamics 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 03/30/2026
+ms.date: 05/06/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
