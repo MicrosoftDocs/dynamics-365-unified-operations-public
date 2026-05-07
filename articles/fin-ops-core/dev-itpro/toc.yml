@@ -2423,7 +2423,7 @@ items:
         href: ../fin-ops/copilot/workflow-history-summary-faq.md
       - name: Responsible AI FAQ for Immersive Home in finance and operations apps  
         href: ../fin-ops/copilot/faq-immersive-home.md
-      - name: Responsible AI FAQ for Agent management in finance and operations apps (production ready preview)
+      - name: Responsible AI FAQ for agent management in finance and operations apps
         href: ../fin-ops/copilot/faq-agent-mgmt.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
