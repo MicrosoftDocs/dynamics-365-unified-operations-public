@@ -6,7 +6,7 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 12/06/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.search.validFrom: 2024-05-09
@@ -152,7 +152,7 @@ To configure a processing pipeline for import, follow these steps:
 1. On the **Import channel** tab, in the **Data channel** section, on the **Parameters** tab, in the **Data channel** field, enter a string value.
 1. On the **Applicability rules** tab, set the fields for the setup. To use the default **Channel** clause, pass the value that you set for the **Data channel** field in the previous step to the **Value** field.
 
-    ![Screenshot that shows the Value field in the setup of applicability rules.](../media/e-invoicing-ita-fatturapa-get-started-apprules-setup.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-apprules-setup.png" alt-text="Screenshot of the Value field in the setup of applicability rules.":::
 
 1. Select **Validate** to ensure that all required fields are set.
 1. Save your changes, and close the page.
@@ -170,7 +170,7 @@ To configure Electronic document parameters, follow these steps:
 1. On the **Features** tab, find and select the **Italian electronic invoice** feature, and then select **Enable**.
 1. On the **Electronic document** tab, make sure that the fields for **Customer invoice journal** and **Project invoice** are set according to the information in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
-    ![Screenshot that shows the setup of Electronic document parameters.](../media/e-invoicing-ita-fatturapa-get-started-fno-setup-1.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-fno-setup-1.png" alt-text="Screenshot of the setup of Electronic document parameters.":::
 
 ### Set up vendor invoice import 
 
@@ -198,7 +198,7 @@ To set up vendor invoice import, follow these steps:
     - **Data entity name:** Vendor invoice header (**Data entity:** VendorInvoiceHeaderEntity)
     - **Model mapping:** Vendor invoice import (IT)
 
-    ![Screenshot that shows the setup of the import channel.](../media/e-invoicing-ita-fatturapa-get-started-fno-setup-2.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-fno-setup-2.png" alt-text="Screenshot of the setup of the import channel.":::
 
 > [!NOTE]
 > If you have import vendor invoices from different sources, you can create several channels and several derived configurations that have different **\$Context Channel** values. For example, you might want to import vendor invoices for different legal entities.
@@ -279,11 +279,11 @@ To create an Azure virtual machine (VM), follow these steps:
     >
     > We also recommend that you use the Windows Server 2019 Datacenter operating system (OS). The proxy application sample might have issues if it runs on another type of OS.
 
-    ![Screenshot that shows the setup on the Basics tab to create an Azure VM.](../media/e-invoicing-ita-fatturapa-get-started-create-vm-1.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-create-vm-1.png" alt-text="Screenshot of the setup on the Basics tab to create an Azure VM.":::
 
 1. On the **Disks** tab, on the **Advanced** FastTab, select the **Use managed disks** checkbox. Leave the **Ephemeral OS disk** checkbox cleared.
 
-    ![Screenshot that shows the setup on the Disks tab to create an Azure VM.](../media/e-invoicing-ita-fatturapa-get-started-create-vm-2.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-create-vm-2.png" alt-text="Screenshot of the setup on the Disks tab to create an Azure VM.":::
 
 1. On the **Networking** tab, under the **Public IP** field, select **Create new**.
 1. In the **Create public IP address** dialog box, in the **SKU** field group, select the **Standard** option. In the **Assignment** field group, select the **Static** option.
@@ -406,12 +406,12 @@ To set up the SDI Proxy service in IIS, follow these steps:
 
 1. Open IIS Manager. In the tree on the left, remain in the root node. On the right, select **Server Certificates**.
 
-    ![Screenshot that shows Service Certificates selected in IIS Manager.](../media/e-invoicing-ita-fatturapa-get-started-proxy-cert-1.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-proxy-cert-1.png" alt-text="Screenshot of Service Certificates selected in IIS Manager.":::
 
 1. Open the menu, and select **Import**.
 1. In the **Import Certificate** dialog box, in the **Certificate file (.pfx)** field, specify the path of the .pfx file for the proxy server certificate. Usually, this file is generated while you register the SDICoop service channel. It's named **sdiproxy.com.pfx**, where **sdiproxy.com** is a DNS that is assigned to the proxy VM.
 
-    ![Screenshot that shows the proxy service certificate file specified in the Import Certificate dialog box.](../media/e-invoicing-ita-fatturapa-get-started-proxy-cert-2.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-proxy-cert-2.png" alt-text="Screenshot of the proxy service certificate file specified in the Import Certificate dialog box.":::
 
     > [!NOTE]
     > The server certificate has an expiration date. Review this date, and arrange to obtain a new certificate when the current one is about to expire. Learn how to establish proper rotation of the certificates that are used for this integration in the [Rotate certificates](#rotate-certificates) section of this article.
@@ -426,11 +426,11 @@ To set up the SDI Proxy service in IIS, follow these steps:
 1. In the **SSL certificate** field, select the proxy server certificate that you imported.
 1. In the **Application pool** field, specify a pool for the site, and make a note of its name (for example, **SdiAppPool**).
 
-    ![Screenshot that shows the setup in the Adding Website dialog box.](../media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-1.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-1.png" alt-text="Screenshot of the setup in the Adding Website dialog box.":::
 
 1. After you finish creating the website, open the menu for **SSL Settings**.
 
-    ![Screenshot that shows the menu for SSL Settings being opened.](../media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-2.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-2.png" alt-text="Screenshot of the menu for SSL Settings being opened.":::
 
 1. Select the **Require SSL** checkbox.
 1. In the **Client certificates** field group, select the **Require** option.
@@ -439,7 +439,7 @@ To set up the SDI Proxy service in IIS, follow these steps:
 1. Modify the **uploadReadAheadSize** and **maxRequestEntityAllowed** values to at least 10 megabits.
 1. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear, or you might receive a server error, such as "403 - Forbidden." This step is required to ensure that **serverDNS** is accessible, and that it isn't hidden by a firewall or something else.
 
-    ![Screenshot that shows the the service being checked in a browser.](../media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png" alt-text="Screenshot of the service being checked in a browser.":::
 
 1. Create the following folders to store logs and files:
 
@@ -453,7 +453,7 @@ To set up the SDI Proxy service in IIS, follow these steps:
     1. Add the users if they aren't listed.
     1. Repeat steps 1 through 3 for the other folder.
 
-    ![Screenshot that shows permissions being added to the service user.](../media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png)
+    :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png" alt-text="Screenshot of permissions being added to the service user.":::
 
 1. <a name="certrenog"></a>Enable client certificate renegotiation:
 
@@ -472,7 +472,7 @@ To set up the SDI Proxy service in IIS, follow these steps:
 
     1. Copy the **Certificate hash** value from the output, and ensure that it equals the server certificate thumbprint.
 
-        ![Screenshot that shows the Certificate hash value in the current binding parameters.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-show.png)
+        :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-show.png" alt-text="Screenshot of the Certificate hash value in the current binding parameters.":::
 
     1. Run the following command to remove the current binding.
 
@@ -486,7 +486,7 @@ To set up the SDI Proxy service in IIS, follow these steps:
         http add sslcert ipport=0.0.0.0:443 certhash=CertificateThumbprint appid={4dc3e181-e14b-4a21-b022-59fc669b0914} certstorename=My verifyclientcertrevocation=Disable VerifyRevocationWithCachedClientCertOnly=Disable clientcertnegotiation=Enable
         ```
 
-        ![Screenshot that shows a new binding added.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-delete-add.png)
+        :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-delete-add.png" alt-text="Screenshot of a new binding added.":::
 
     1. Run the following command to restart IIS.
 
@@ -495,7 +495,7 @@ To set up the SDI Proxy service in IIS, follow these steps:
         iisreset
         ```
 
-        ![Screenshot that shows an IIS reset performed.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-iisreset.png)
+        :::image type="content" source="../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-iisreset.png" alt-text="Screenshot of an IIS reset performed.":::
 
 ## Rotate certificates
 

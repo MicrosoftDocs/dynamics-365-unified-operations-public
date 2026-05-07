@@ -28684,6 +28684,11 @@
       "source_path": "articles/supply-chain/procurement/supplier-com-agent-testing.md",
       "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-testing.md",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-support-info-v3.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-support-info",
+      "redirect_document_id": false
     }
   ]
 

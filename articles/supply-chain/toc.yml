@@ -3981,8 +3981,8 @@
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Migrate the Warehouse Management mobile app from V3 to V4
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
-          - name: Support policy for V3 of the Warehouse Management mobile app
-            href: warehousing/warehouse-app-support-info-v3.md
+          - name: Support policy for the Warehouse Management mobile app
+            href: warehousing/warehouse-app-support-info.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
             href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
@@ -4095,6 +4095,8 @@
             href: warehousing/spatial-locations-setup.md
         - name: Control work by using work templates and location directives
           href: warehousing/control-warehouse-location-directives.md
+        - name: Dynamic work classification (production ready preview)
+          href: warehousing/dynamic-work-classification.md
         - name: Work with location directives
           href: warehousing/create-location-directive.md
         - name: Test location directives with acceptance tests

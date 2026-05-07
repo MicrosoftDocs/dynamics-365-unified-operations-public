@@ -4,7 +4,7 @@ description: Learn how to create and configure a customer advance payment journa
 author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 04/10/2025
+ms.date: 04/30/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -44,7 +44,7 @@ To validate the tax details, follow these steps:
 
 To validate the financial entries, select **Inquiries \> Voucher**. The following example image shows some voucher financial entries.
 
-![Example of financial entries.](../media/Annotation-2019-05-21-132929.png)
+:::image type="content" source="../media/Annotation-2019-05-21-132929.png" alt-text="Screenshot of financial entries example.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
