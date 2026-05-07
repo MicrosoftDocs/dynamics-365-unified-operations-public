@@ -1,5 +1,5 @@
 ---
-title: Enable agent management (production ready preview)
+title: Enable agent management 
 description: This article describes the Agent management feature in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
 ms.author: jkhaira
@@ -13,20 +13,15 @@ ms.collection:
  - bap-ai-copilot
 ---
 
-# Enable agent management (production ready preview)
-
-[!include [preview-banner](../includes/preview-banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Enable agent management
 
 This article describes the agent management feature in Microsoft Dynamics 365 finance and operations apps.
 
 By using the agent management feature in finance and operations apps, you can use autonomous, AI-powered agents to perform predefined tasks in your business ecosystem. Users can discover, configure, and manage agents that automate routine operational tasks.
 
-[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
-
 ## Prerequisites
 
-Before a finance and operations apps administrator can activate the *(Production ready preview) Agent management* feature in the **Feature management** workspace, the administrator must meet the following prerequisites:
+Before a finance and operations apps administrator can activate the *Agent management* feature in the **Feature management** workspace, the administrator must meet the following prerequisites:
 
 - Enable the [*Immersive Home*](../copilot/immersive-home.md) feature in the **Feature management** workspace in your finance and operations environment.
 
@@ -51,7 +46,9 @@ A Power Platform admin center administrator must ensure that the following prere
   1. Create a new billing plan as necessary.
   1. Assign credits to the relevant environment. To learn more, see [AI Builder licensing and credit management](/ai-builder/credit-management).
 
-After all of the other prerequisites are in place, a finance and operations apps administrator must enable the *(Production ready preview) Agent management* feature in the **Feature management** workspace.
+- Add "Finance and Operations basic user" role to user who will work with Agent management
+
+After all of the other prerequisites are in place, a finance and operations apps administrator must enable the *Agent management* feature in the **Feature management** workspace.
 
 ## Navigation options
 
@@ -113,7 +110,7 @@ Administrators can modify the retention period for activity history by adjusting
   - If your organization exhausts its allocated credits, agents might be temporarily deactivated.
   - Contact your organization's administrator to renew credits and restore agent functionality.
 
-- **Limitations in the current preview**
+- **Limitations in the current version**
 
   - The feature doesn't support extensibility.
   - There's no direct UI-based administrative override for individual user actions.
@@ -131,4 +128,4 @@ If you're an administrator, follow these steps to cancel agent actions.
 
 ## Support and feedback
 
-Because this release is a preview release, provide your feedback so the product team can improve the agent management feature. Report any issues or suggestions through the standard Dynamics 365 support channels. You might also be prompted to provide in-product feedback.
+Report any issues or suggestions through the standard Dynamics 365 support channels. You might also be prompted to provide in-product feedback.
