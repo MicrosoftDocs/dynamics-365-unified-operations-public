@@ -35,8 +35,8 @@ Before you use the Account reconciliation agent, make sure your system meets the
 - You're running Dynamics 365 Finance version 10.0.44 or later. To use Dynamics 365 ERP Model Context Protocol capabilities, you're running Dynamics 365 Finance version 10.0.47 or later.
 - You turn on the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). If the features don't appear in your system, select **Check for updates**.
 
-  - (Preview) Immersive Home
-  - (Production ready preview) Agent management
+  - Immersive Home
+  - Agent management
   - (Production ready preview) Account reconciliation agent
   - (Preview) Dynamics 365 ERP Model Context Protocol server (Optional)
 

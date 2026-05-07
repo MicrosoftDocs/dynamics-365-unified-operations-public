@@ -1,6 +1,6 @@
 ---
-title: Enable agent management (production ready preview)
-description: This article describes the Agent management feature in Microsoft Dynamics 365 finance and operations apps.
+title: Enable agent management
+description: This article describes the agent management feature in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
 ms.author: jkhaira
 ms.topic: concept-article
@@ -13,20 +13,17 @@ ms.collection:
  - bap-ai-copilot
 ---
 
-# Enable agent management (production ready preview)
+# Enable agent management
 
 [!include [preview-banner](../includes/preview-banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article describes the agent management feature in Microsoft Dynamics 365 finance and operations apps.
 
 By using the agent management feature in finance and operations apps, you can use autonomous, AI-powered agents to perform predefined tasks in your business ecosystem. Users can discover, configure, and manage agents that automate routine operational tasks.
 
-[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
-
 ## Prerequisites
 
-Before a finance and operations apps administrator can activate the *(Production ready preview) Agent management* feature in the **Feature management** workspace, the administrator must meet the following prerequisites:
+Before a finance and operations apps administrator can activate the *Agent management* feature in the **Feature management** workspace, the administrator must meet the following prerequisites:
 
 - Enable the [*Immersive Home*](../copilot/immersive-home.md) feature in the **Feature management** workspace in your finance and operations environment.
 
@@ -51,7 +48,7 @@ A Power Platform admin center administrator must ensure that the following prere
   1. Create a new billing plan as necessary.
   1. Assign credits to the relevant environment. To learn more, see [AI Builder licensing and credit management](/ai-builder/credit-management).
 
-After all of the other prerequisites are in place, a finance and operations apps administrator must enable the *(Production ready preview) Agent management* feature in the **Feature management** workspace.
+After all of the other prerequisites are in place, a finance and operations apps administrator must enable the *Agent management* feature in the **Feature management** workspace.
 
 ## Navigation options
 
