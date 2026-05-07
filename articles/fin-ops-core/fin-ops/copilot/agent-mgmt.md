@@ -4,7 +4,7 @@ description: This article describes the agent management feature in Microsoft Dy
 author: twheeloc
 ms.author: jkhaira
 ms.topic: concept-article
-ms.date: 03/09/2026
+ms.date: 05/07/2026
 ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer: twheeloc 
@@ -15,7 +15,7 @@ ms.collection:
 
 # Enable agent management
 
-[!include [preview-banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the agent management feature in Microsoft Dynamics 365 finance and operations apps.
 
@@ -43,10 +43,10 @@ A Power Platform admin center administrator must ensure that the following prere
 
 - You must enable billing.
 
-  1. In the Power Platform admin center, go to **Billing** > **Licenses**.
-  1. Select **Copilot Studio**.
-  1. Create a new billing plan as necessary.
-  1. Assign credits to the relevant environment. To learn more, see [AI Builder licensing and credit management](/ai-builder/credit-management).
+    1. In the Power Platform admin center, go to **Billing** > **Licenses**.
+    1. Select **Copilot Studio**.
+    1. Create a new billing plan as necessary.
+    1. Assign credits to the relevant environment. To learn more, see [AI Builder licensing and credit management](/ai-builder/credit-management).
 
 After all of the other prerequisites are in place, a finance and operations apps administrator must enable the *Agent management* feature in the **Feature management** workspace.
 
@@ -110,7 +110,7 @@ Administrators can modify the retention period for activity history by adjusting
   - If your organization exhausts its allocated credits, agents might be temporarily deactivated.
   - Contact your organization's administrator to renew credits and restore agent functionality.
 
-- **Limitations in the current preview**
+- **Limitations in the current version**
 
   - The feature doesn't support extensibility.
   - There's no direct UI-based administrative override for individual user actions.
@@ -125,7 +125,3 @@ If you're an administrator, follow these steps to cancel agent actions.
 1. Go to **Batch jobs**.
 1. Use the **Job description** section to search by agent name or the **Created by** section to search by individual user name.
 1. To cancel agent actions, delete batch jobs that are associated with the agent or user that you found in the previous step.
-
-## Support and feedback
-
-Because this release is a preview release, provide your feedback so the product team can improve the agent management feature. Report any issues or suggestions through the standard Dynamics 365 support channels. You might also be prompted to provide in-product feedback.
