@@ -1,8 +1,8 @@
 ---
 title: Taxpayer types for Latin America 
 description: Learn about the taxpayer type configuration for Latin America, including prerequisites and a process for setting up a taxpayer type.
-author: Fhernandez0088
-ms.author: v-federicohe
+author: SandraYamamoto0602
+ms.author: v-sandraya
 ms.topic: how-to
 ms.date: 01/05/2026
 ms.custom: bap-template
@@ -21,6 +21,8 @@ You can set up the types of tax-responsible entities that the company operates w
 
 The following prerequisites must be met before you can set up taxpayer types for organizations in Latin America:
 
+- The legal entity must have an address in a country or region within the LATAM localization.
+- Both the region-specific LATAM feature and the general feature must be enabled.
 - Tax ID types must be configured.
 - Document class letters must be configured.
 
@@ -45,21 +47,21 @@ The following prerequisites must be met before you can set up taxpayer types for
     | Mandatory country identification number | Set this option to **Yes** to make the **Country identification number** field required in the entity configuration. |
     | Mandatory state identification number   | Set this option to **Yes** to make the **State identification number** field required in the entity configuration. |
 
-1. In the **Document types** grid, add the tax Id types that are associated with the taxpayer type according to the country/regions's legislation.
+1. In the **Document types** section, complete the grid with  **Tax Id types** that are associated with the taxpayer type according to the country/region's legislation.
 
     > [!NOTE]
     > This configuration and the tax ID type configuration in the country/region address book will let you filter or directly assign the tax ID type in the customer or vendor record.
 
-1. In the **Document class letter** grid, select the IDs that the taxpayer type uses in transactions.
+1. In the **Document class letter** section,  complete the grid with **Document class letter IDs** that the taxpayer type uses in transactions.
 1. Select **Save**.
 
 ## Add the fiscal codification provided by the fiscal authorities
 
 You can use the **Tax application** option to add the fiscal codification that's provided by the fiscal authorities.
 
-1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Taxpayer type**.
-1. On the Action Pane, select **Tax application**.
-1. Select **New** to add a line to the grid.
+1.  For each **Taxpayer type** that requires fiscal codification:
+1.  Select the record, then go to **Tax application** in the top menu.
+1. Create a new record.
 1. In the **Tax application Id** field, select a value.
 1. In the **Tax application code** field, enter the code that the fiscal authority uses to identify the taxpayer type.
 1. Select **Save**.
