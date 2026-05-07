@@ -28,7 +28,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 | Feature | Description | Status |
 |---|---|---|
-|Security update |The dual-write integration is updated to use a new app ID for communication between Finance and Operations apps and Dataverse. This new app ID replaces the legacy app ID and aligns dual-write with a more secure and robust platform framework, including improvements to authentication handling and token exchange. For more information, see [Migrate the dual-write app](/power-platform/admin/app-migration-dual-write.md). |General availability|
+|Security update |The dual-write integration is updated to use a new app ID for communication between Finance and Operations apps and Dataverse. This new app ID replaces the legacy app ID and aligns dual-write with a more secure and robust platform framework, including improvements to authentication handling and token exchange. For more information, see [Migrate the dual-write app](/power-platform/admin/app-migration-dual-write). |General availability|
 
 ## January 2025
 
