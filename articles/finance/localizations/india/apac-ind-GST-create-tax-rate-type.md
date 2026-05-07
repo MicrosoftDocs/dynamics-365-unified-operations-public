@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak  
 ms.search.region: India
 ms.search.validFrom: 2019-10-01
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.5
 
 This article explains how to define the tax rate type and assign it to the relevant master data. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
 
-To make the India localization solution GST available in Dynamics 365 Finance, you must complete the following master data setup:
+To make the India localization solution GST available in Dynamics 365 Finance, complete the following master data setup steps:
 
 - Define a business vertical
 - Update the state code and union territory
@@ -33,21 +33,21 @@ To make the India localization solution GST available in Dynamics 365 Finance, y
 
 ## Tax rate type
 
-In most taxation systems, there is the concept of a tax rate type, such as standard tax rate, reduced tax rate and super reduced tax rate. In India GST, there are five types as shown in the following table:
+In most taxation systems, there's the concept of a tax rate type, such as standard tax rate, reduced tax rate, and super reduced tax rate. In India GST, there are five types as shown in the following table:
 
 | Rates | Type      | Products                                                                                                                                                     |
 | ----- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 0%    | Nil       | Basic foods, including fish, meat, dairy, vegetables, bread, and salt. Postal services. Books and newspapers. Accommodation below Rs 999 per night.           |
 | 5%    | Low       | Household necessities, such as consumable oil, sugar, spices, tea, and coffee (except instant). Coal, Mmishti/mithai (Indian sweets), and life-saving drugs. |
 | 12%   | Standard1 | Computers and processed food.                                                                                                                                |
-| 18%   | Standard2 | Hair oil, toothpaste and soaps. Capital goods. Industrial intermediaries.                                                                                    |
+| 18%   | Standard2 | Hair oil, toothpaste, and soaps. Capital goods. Industrial intermediaries.                                                                                    |
 | 28%   | High      | Luxury items, such as small cars, consumer durables like AC and refrigerators, premium cars, cigarettes, carbonated beverages, and high-end motorcycles.     |
 
 ## When to use tax rate type
 
-It's not mandatory to set up the tax rate type. In the standard GST configuration, HSN codes and SACs are used to determine the GST rate. For users who maintain multiple [HSN codes and SACs](apac-ind-GST-hsn-service-accounting-codes.md), it's time consuming to complete the [tax setup](apac-ind-GST-set-up-rate-percentage-tables.md), and it also takes longer for the tax engine to pick up the tax rate.
+You don't need to set up the tax rate type. In the standard GST configuration, HSN codes and SACs determine the GST rate. If you maintain multiple [HSN codes and SACs](apac-ind-GST-hsn-service-accounting-codes.md), completing the [tax setup](apac-ind-GST-set-up-rate-percentage-tables.md) can be time-consuming, and it takes longer for the tax engine to pick up the tax rate.
 
-With the tax rate type, the tax setup for the GST rate can be simplified with just a few records, however, there will be more records if you consider the scenarios such as tax exemptions and reverse charges.
+By using the tax rate type, you can simplify the tax setup for the GST rate with just a few records. However, if you consider scenarios such as tax exemptions and reverse charges, you might need more records.
 
 | Tax rate type | Rate |
 | ------------- | ---- |
@@ -58,26 +58,26 @@ With the tax rate type, the tax setup for the GST rate can be simplified with ju
 | High          | 28%  |
 
 > [!NOTE]
-> When using the tax rate type, HSN and SAC definitions are required for GSTR. 
+> When you use the tax rate type, GSTR requires HSN and SAC definitions. 
 
 ## Define a tax rate type
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
-2. Select and open a released product. 
-3. On the **General** FastTab, find the **Tax rate type** field.
-4. Right-click in the field and select **View details**.
-5. Enter the name and description of the tax rate type you want to add.
+1. Go to **Product information management** > **Products** > **Released products**.
+1. Select and open a released product. 
+1. On the **General** FastTab, find the **Tax rate type** field.
+1. Right-click in the field and select **View details**.
+1. Enter the name and description of the tax rate type you want to add.
 
-    ![Define tax rate type.](../media/IND-define-tax-rate-type.png)
+    :::image type="content" source="../media/IND-define-tax-rate-type.png" alt-text="Screenshot of the Define tax rate type page.":::
 
 You can also import the tax rate type by using its data entity, **Tax rate type**.
 
 ## Assign a tax rate type to relevant taxable master data
 
-You can associate the tax rate type to the following taxable master data where it will be supported by a data entity. With it attached, when you create taxable transactions with the master data, like a sales order or sales invoice, the attached tax rate type will be defaulted in the transaction and be used for the determined rate.
+You can associate the tax rate type with the following taxable master data where a data entity supports it. When you attach the tax rate type, it defaults in the transaction and determines the rate when you create taxable transactions with the master data, such as a sales order or sales invoice.
 
 - Released product
-- Procurement/Sales categories
+- Procurement and sales categories
 - Charge code
 
 

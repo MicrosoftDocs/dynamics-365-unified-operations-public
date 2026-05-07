@@ -2,7 +2,7 @@
 title: Configure sales and purchase invoices for Ecuador
 description: Learn about sales and purchase invoices for Ecuador.
 author: Cpicon85
-ms.date: 01/22/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.author: v-cpicon

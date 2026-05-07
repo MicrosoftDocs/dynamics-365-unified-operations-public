@@ -113,16 +113,14 @@ Before you install Business performance analytics, set up the following configur
     2. Confirm that **SQL row version change tracking (preview)** is enabled. If it isn't, select the checkbox.
     3. Confirm that the following checkboxes and sub-checkboxes are enabled:
 
-        - **General ledger** – Budget, Reversing entries, Sales tax
+        - **Bank** – Negotiable instrument - Bill of exchange
+        - **Electronic banking**
         - **Fixed assets**
-        - **Bank** – Check, Deposit slip, Negotiable instrument - Bill of exchange
-        - **Trade** – Charges, Invoice matching, Return orders, Delivery date control, Warehouse and Transportation management - Material handling equipment interface
-        - **Trade agreements** – Price/discount
+        - **General ledger** – Budget, Sales tax
+        - **Procurement I** – Purchase requisition
         - **Project**
-        - **Procurement 1** – Purchase requisition
         - **Service management**
-
-3. When you finish, disable maintenance mode.
+        - **Trade** – Charges, Invoice matching, Transfer orders, Warehouse and Transportation management
 
 #### Required configurations in Power Platform Admin Center
 
