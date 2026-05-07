@@ -2,7 +2,7 @@
 title: Configure printing for the Electronic Purchase Register (RCE) for purchases not domiciled in Peru
 description: Learn how to configure printing for the Electronic Purchase Register (RCE) for purchases that aren't domiciled in Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 06/03/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -17,7 +17,7 @@ This article explains how to configure printing for the Electronic Purchase Regi
 
 Taxpayers can use the RCE to manage their electronic purchase records. The National Superintendency of Customs and Tax Administration (SUNAT), the fiscal authority in Peru, generates a monthly proposal. This proposal is designed to serve as a comparative tool that taxpayers can use to identify discrepancies in their records.
 
-The RCE for purchases that aren't domiciled in Peru includes annexes 9, 12.8.5, and 13.5.2. 
+The RCE for purchases that aren't domiciled in Peru includes annexes 9, 12.8.5, and 13.5.2.
 
 ## Prerequisites
 
@@ -29,12 +29,12 @@ Before you can generate and print the reports, the following prerequisites must 
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - The RCE for purchases that aren't domiciled in Peru consists of the following formats. You must import all these formats.
 
-    - LTM Tax Report
-    - LTM Tax Report mapping
-    - RCE-ANEXO 9
-    - RCE-ANEXO 12.8.5
-    - RCE-ANEXO 13.5.2
-    - Non-resident Purchase Register
+  - LTM Tax Report
+  - LTM Tax Report mapping
+  - RCE-ANEXO 9
+  - RCE-ANEXO 12.8.5
+  - RCE-ANEXO 13.5.2
+  - Non-resident Purchase Register
 
 ## Additional configuration required for the RCE reports of purchases not domiciled in Peru including the Excel output
 

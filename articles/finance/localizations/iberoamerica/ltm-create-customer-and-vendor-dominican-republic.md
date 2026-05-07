@@ -2,7 +2,7 @@
 title: Create customer and vendor records with an address in the Dominican Republic
 description: Learn how to create customer and vendor records that have an address in the Dominican Republic.
 author: cpicon85
-ms.date: 04/03/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template

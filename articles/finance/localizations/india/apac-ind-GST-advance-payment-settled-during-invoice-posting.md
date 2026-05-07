@@ -3,9 +3,10 @@ title: Advance payments that are settled during invoice posting
 description: Learn about the tax that is posted on a customer advance payment when the payment is settled and the customer invoice is posted.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 06/03/2019
-ms.custom:
+ms.topic: concept-article
+ms.date: 04/30/2026
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak 
 audience: Application User 
 ms.search.region: India
@@ -14,74 +15,16 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.4
 ---
 
-# Advance payments that are settled during invoice posting
+# Advance payments that you settle during invoice posting
 
 [!include [banner](../../includes/banner.md)]
 
-The following tables shows the tax entries that are generated for the invoice when an advance payment is settled in various scenarios.
+The following table shows the tax entries that the system generates for the invoice when you settle an advance payment in various scenarios.
 
-<table>
-<thead>
-<tr>
-<th>Transaction details</th>
-<th>Example</th>
-<th>Tax entries that are generated during settlement</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Invoice = Payment</td>
-<td>
-<p>Invoice amount: 12,000.00</p>
-<p>Payment amount: 12,000.00</p>
-</td>
-<td>
-<ul>
-<li>Tax on the invoice is posted.</li>
-<li>Tax on the payment is reversed to prevent a double entry in the related voucher.</li>
-<li>IGST payable account Cr. 2,000.00.</li>
-</ul>
-<p><strong>Related voucher:</strong></p>
-<p>IGST interim payable account Cr. 2,000.00</p>
-<p>IGST payable account Dr. 2,000.00</p>
-</td>
-</tr>
-<tr>
-<td>Invoice &lt; Payment</td>
-<td>
-<p>Invoice amount: 6,000.00</p>
-<p>Payment amount: 12,000.00</p>
-</td>
-<td>
-<ul>
-<li>Tax on the invoice is posted.</li>
-<li>Tax on the payment is reversed to the extent of the invoice amount in the related voucher.</li>
-<li>IGST payable account Cr. 1,000.00.</li>
-</ul>
-<p><strong>Related voucher:</strong></p>
-<p>IGST interim payable account Cr. 1,000.00</p>
-<p>IGST payable account Dr. 1,000.00</p>
-</td>
-</tr>
-<tr>
-<td>Invoice &gt; Payment</td>
-<td>
-<p>Invoice amount: 24,000.00</p>
-<p>Payment amount: 12,000.00</p>
-</td>
-<td>
-<ul>
-<li>Tax on the invoice is posted.</li>
-<li>Tax on the payment is reversed to the extent of the payment amount in the related voucher.</li>
-<li>IGST payable account Cr. 4,000.00</li>
-</ul>
-<p><strong>Related voucher:</strong></p>
-<p>IGST interim payable account Cr. 2,000.00</p>
-<p>IGST payable account Dr. 2,000.00</p>
-</td>
-</tr>
-</tbody>
-</table>
-
+| Transaction details | Example | Tax entries that the system generates during settlement |
+|---|---|---|
+| Invoice = Payment | Invoice amount: 12,000.00<br>Payment amount: 12,000.00 | The system posts tax on the invoice.<br>The system reverses tax on the payment to prevent a double entry in the related voucher.<br>IGST payable account Cr. 2,000.00.<br><br>**Related voucher:**<br>IGST interim payable account Cr. 2,000.00<br>IGST payable account Dr. 2,000.00 |
+| Invoice < Payment | Invoice amount: 6,000.00<br>Payment amount: 12,000.00 | The system posts tax on the invoice.<br>The system reverses tax on the payment to the extent of the invoice amount in the related voucher.<br>IGST payable account Cr. 1,000.00.<br><br>**Related voucher:**<br>IGST interim payable account Cr. 1,000.00<br>IGST payable account Dr. 1,000.00 |
+| Invoice > Payment | Invoice amount: 24,000.00<br>Payment amount: 12,000.00 | The system posts tax on the invoice.<br>The system reverses tax on the payment to the extent of the payment amount in the related voucher.<br>IGST payable account Cr. 4,000.00<br><br>**Related voucher:**<br>IGST interim payable account Cr. 2,000.00<br>IGST payable account Dr. 2,000.00 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

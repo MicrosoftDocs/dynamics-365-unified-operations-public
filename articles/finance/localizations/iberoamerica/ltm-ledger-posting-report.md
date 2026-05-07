@@ -1,10 +1,10 @@
 ---
 title: Print a Ledger Posting report for LATAM
 description: Learn how to print a Ledger Posting report for Latin America, including prerequisites and a process for printing a ledger posting report.
-author: Fhernandez0088
-ms.author: v-federicohe
+author: MatiasPizmeny01
+ms.author: v-mpizmeny
 ms.topic: how-to
-ms.date: 01/05/2026
+ms.date: 04/28/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -19,35 +19,41 @@ This article explains how to print a **Ledger Posting** report for Latin America
 
 ## Prerequisites
 
-Before you can print a **Ledger Posting** report, the following prerequisites must be met:
+Before you can print a **Ledger Posting** report, ensure the following prerequisites are met:
 
-- The legal entity must have an address in a country/region that's within the LATAM localization.
-- You must enable the country/region-specific LATAM feature and the general feature.
-- The following Electronic reporting (ER) configurations must be imported:
+- The legal entity has an address in a country or region that's within the LATAM localization.
+- You enable the country or region-specific LATAM feature and the general feature.
+- You download the specific report configurations from the Dataverse configuration repository.
 
-  - Ledger accounting reports
-  - Ledger Accounting LATAM
-  - Ledger posting
+| Element |                    Format name                    | Country or Region |
+|:-------:|:-------------------------------------------------:|:---------------------------------------:|
+| Model   | :::no-loc text="Ledger accounting reports":::    | All LATAM countries/regions |
+| Model   | :::no-loc text="Ledger Accounting LATAM":::      | All LATAM countries/regions |
+| Format  | :::no-loc text="Ledger Posting LATAM":::         | All LATAM countries/regions excluding Bolivia |
+| Format  | :::no-loc text="Ledger Posting Bolivia":::         | Bolivia |
 
-    For more information about ER configurations, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
-- You must create a new SSRS Reports/Services reference and configure it in the following way:
+## Configure SSRS Reports / Services references
+
+- Create a new SSRS Reports/Services references record and configure it as follows:
 
   - In the **Report/Service Id** field, enter **LedgerPosting**.
-  - In the **Report/Service name** field, enter **LedgerPost**.
+  - In the **Report/Service name** field, enter a descriptive name.
   - In the **Report/Service type** field, select an ER configuration.
-  - In the **Model mapping name** field, select **Ledger accounting LTM**.
-  - In the **Data model definition** field, select **LedgerPosting**.
-  - In the **Format mapping** field, select **Ledger Posting LATAM**.
+  - In the **Model mapping name** field, select **:::no-loc text="Ledger accounting LTM":::**.
+  - In the **Data model definition** field, select **:::no-loc text="Ledger Posting":::**.
+  - In the **Format mapping** field, select **:::no-loc text="Ledger Posting LATAM":::** (**:::no-loc text="Ledger Posting Bolivia":::** for Bolivia).
   - In the list of report/service types, enable **Ledger Posting**.
 
 ## Print the Ledger Posting report for Latin America
 
-1. Go to **General Ledger** \> **Inquiries and Reports** \> **LATAM** \> **Ledger Posting Report**.
-1. In the **Ledger posting report** dialog box, configure the filters for the report.
-1. In the **Report ID** field, select the corresponding report/service ID.
+1. Go to **General Ledger** > **Inquiries and Reports** > **LATAM** > **Ledger Posting Report**.
+1. In the **Report ID** field, select the corresponding report or service ID.
 1. In the **From date** and **To date** fields, select the date range of the transactions that you want to print.
-1. In the **Account number** field, select the account number if you want to print the transactions for a specific account.
+1. In the **Ledger account** field, select the account number if you want to print the transactions for a specific account.
+1. Set the **Start page number** field.
 1. Select the posting layers to include on the report.
 1. Select **Print**.
 

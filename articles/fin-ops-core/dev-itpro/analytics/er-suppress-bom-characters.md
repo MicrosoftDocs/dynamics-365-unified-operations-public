@@ -4,7 +4,7 @@ description: Learn how to configure an Electronic reporting (ER) format to gener
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -22,37 +22,37 @@ You can design an [Electronic reporting (ER)](general-electronic-reporting.md) [
 > [!NOTE]
 > If the format contains an incorrect encoding name, an error is thrown when you save your changes to the format's settings.
 
-![Adding a root element on the Format designer page.](./media/er-suppress-bom-characters-image1.gif)
+:::image type="content" source="./media/er-suppress-bom-characters-image1.gif" alt-text="Screenshot of adding a root element on the Format designer page.":::
 
 If you specify **UTF-8**, **UTF-16**, or **UTF-32** as the encoding, the **Suppress BOM characters** option becomes available. Set this option to **Yes** to suppress [byte order mark (BOM) characters](/globalization/encoding/byte-order-mark) in outbound files that are generated at runtime when the editable ER format is run.
 
 > [!NOTE]
 > If you leave the **Encoding** field blank, the default **UTF-8** encoding is used.
 
-![Setting the Suppress BOM characters option on the Format designer page.](./media/er-suppress-bom-characters-image2.gif)
+:::image type="content" source="./media/er-suppress-bom-characters-image2.gif" alt-text="Screenshot of setting the Suppress BOM characters option on the Format designer page.":::
 
-To review the functionality at runtime, complete the appropriate procedure. For example, complete the steps in the [Defer the execution of XML elements in ER formats](er-defer-xml-element.md) article. After you've completed the steps in the [Modify the format so that the calculation is based on generated output](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) section of that article, follow these additional steps.
+To review the functionality at runtime, complete the appropriate procedure. For example, complete the steps in the [Defer the execution of XML elements in ER formats](er-defer-xml-element.md) article. After you complete the steps in the [Modify the format so that the calculation is based on generated output](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) section of that article, follow these additional steps.
 
 1. Specify the UTF encoding:
 
     1. Select the **Report** element of the **Common\\File** type.
-    2. In the **Encoding** field, specify the **UTF-8** encoding.
+    1. In the **Encoding** field, specify the **UTF-8** encoding.
 
-2. Generate an XML file that includes a BOM character:
+1. Generate an XML file that includes a BOM character:
 
     1. Set the **Suppress BOM characters** option to **No** to include BOM characters in generated XML files.
-    2. Complete the steps in the [Defer the execution of the summary XML element so that the calculated total is used](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) section of the [Defer the execution of XML elements in ER formats](er-defer-xml-element.md) article, and save the generated file as **SampleXmlReport.xml**.
+    1. Complete the steps in the [Defer the execution of the summary XML element so that the calculated total is used](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) section of the [Defer the execution of XML elements in ER formats](er-defer-xml-element.md) article, and save the generated file as **SampleXmlReport.xml**.
 
-3. Generate an XML file that doesn't include a BOM character:
+1. Generate an XML file that doesn't include a BOM character:
 
     1. Set the **Suppress BOM characters** option to **Yes** to suppress BOM characters in generated XML files.
-    2. Complete the steps in the [Defer the execution of the summary XML element so that the calculated total is used](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) section of the [Defer the execution of XML elements in ER formats](er-defer-xml-element.md) article, and save the generated file as **SampleXmlReport (1).xml**.
+    1. Complete the steps in the [Defer the execution of the summary XML element so that the calculated total is used](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) section of the [Defer the execution of XML elements in ER formats](er-defer-xml-element.md) article, and save the generated file as **SampleXmlReport (1).xml**.
 
-4. In a file comparison utility, compare the generated files.
+1. In a file comparison utility, compare the generated files.
 
-    The first difference that you will notice is in the file header. The SampleXmlReport.xml file contains a BOM character, where the SampleXmlReport (1).xml file doesn't.
+    The first difference that you notice is in the file header. The **SampleXmlReport.xml** file contains a BOM character, where the **SampleXmlReport (1).xml** file doesn't.
 
-    ![Comparing generated files by using a file comparison utility.](./media/er-suppress-bom-characters-image3.png)
+    :::image type="content" source="./media/er-suppress-bom-characters-image3.png" alt-text="Screenshot of comparing generated files by using a file comparison utility.":::
 
 ## See also
 

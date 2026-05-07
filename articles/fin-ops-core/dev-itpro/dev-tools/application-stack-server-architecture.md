@@ -49,15 +49,15 @@ The finance and operations applications use an entry point security model. A for
 
 The cloud architecture includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management. The cloud architecture consists of three main conceptual areas:
 
-- **Lifecycle Services (LCS)** – LCS is a multitenant shared service that enables a wide range of lifecycle-related capabilities. Capabilities that are specific to this release include software development, customer provisioning, service level agreement (SLA) monitoring, and reporting capabilities.
-- **Finance and operations** – You deploy the VM instances through LCS to your Azure subscription. Various topologies are available: demo, development/test, and high-availability production topologies.
+- **Microsoft Dynamics Lifecycle Services** – Lifecycle Services is a multitenant shared service that enables a wide range of lifecycle-related capabilities. Capabilities that are specific to this release include software development, customer provisioning, service level agreement (SLA) monitoring, and reporting capabilities.
+- **Finance and operations** – You deploy the VM instances through Lifecycle Services to your Azure subscription. Various topologies are available: demo, development/test, and high-availability production topologies.
 - **Shared Microsoft services** – A finance and operations application uses several Microsoft services to enable a “One Microsoft” solution where customers can manage a single sign-in, subscription management, and billing relationship with Microsoft across finance and operations applications, Microsoft 365, and other online services.
 
-The architecture uses many features of the Azure platform, such as Microsoft Azure Storage, networking, monitoring, and SQL Azure, to name a few. Shared services put into operation and orchestrate the application lifecycle of the environments for participants. Together, Azure functionality and LCS offer a robust cloud service.
+The architecture uses many features of the Azure platform, such as Microsoft Azure Storage, networking, monitoring, and SQL Azure, to name a few. Shared services put into operation and orchestrate the application lifecycle of the environments for participants. Together, Azure functionality and Lifecycle Services offer a robust cloud service.
 
 ## Development environment
 
-The architecture of the development environment resembles the architecture of the cloud instance. It also includes the software development kit (SDK), which consists of the Visual Studio development tools and other components. Source control through Team Foundation Server or Visual Studio Online enables multiple-developer scenarios, where each developer uses a separate development environment. You can compile and generate deployment packages on a development environment and deploy them to cloud instances by using LCS. The following diagram shows how the key components interact in a development environment.
+The architecture of the development environment resembles the architecture of the cloud instance. It also includes the software development kit (SDK), which consists of the Visual Studio development tools and other components. Source control through Team Foundation Server or Visual Studio Online enables multiple-developer scenarios, where each developer uses a separate development environment. You can compile and generate deployment packages on a development environment and deploy them to cloud instances by using Lifecycle Services. The following diagram shows how the key components interact in a development environment.
 
 :::image type="content" source="./media/dev-environ.png" alt-text="Screenshot of the development architecture showing Visual Studio, local runtime, and cloud deployment.":::
 

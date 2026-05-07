@@ -36,25 +36,25 @@ By using a data source of the **Barcode** type, you can generate bar codes in th
 
 - One-dimensional bar codes:
 
-    - Codabar
-    - Code 39
-    - Code 93
-    - Code 128
-    - EAN-8
-    - EAN-13
-    - ITF-14
-    - Intelligent Mail
-    - MSI
-    - Plessey
-    - PDF417
-    - UPC-A
-    - UPC-E
+  - Codabar
+  - Code 39
+  - Code 93
+  - Code 128
+  - EAN-8
+  - EAN-13
+  - ITF-14
+  - Intelligent Mail
+  - MSI
+  - Plessey
+  - PDF417
+  - UPC-A
+  - UPC-E
 
 - Two-dimensional bar codes:
 
-    - Aztec
-    - Data Matrix
-    - QR Code
+  - Aztec
+  - Data Matrix
+  - QR Code
 
 When you configure a **Barcode** data source, you can define specific rendering parameters that are used to generate an image:
 
@@ -157,6 +157,7 @@ Additionally, download the following Excel file that contains the modified templ
 ### <a name="ExampleReviewGeneratedCheque"></a>Review the generated payment check
 
 - Open the generated check in Excel.
+
 2. Review the generated check.
 
     ![Generated payment check in Excel.](./media/er-barcode-data-source-cheque1.png)
@@ -293,6 +294,5 @@ However, when you use the **Barcode** data source to produce bar codes, the rend
 - [Electronic Reporting destinations](electronic-reporting-destinations.md)
 - [Electronic reporting formula language](er-formula-language.md)
 - [NUMBERFORMAT function](er-functions-text-numberformat.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,0 +1,21 @@
+sequenceDiagram
+    participant App as Your Application
+    participant DV as Dataverse
+    participant Storage as Azure Storage
+
+    Note over DV: Export job created<br/>(manually via UI or by automatic scheduling)
+    Note over DV: Job processes asynchronously
+
+    loop Poll for completion
+        App->>DV: Query job status
+        Note over App,DV: Query msdyn_scpexportdatajobruns
+        DV-->>App: Job status
+    end
+
+    Note over DV: Export completed
+
+    App->>DV: Call msdyn_scpgetexportoutputfileurl
+    DV-->>App: SAS URL (valid 120 min)
+
+    App->>Storage: Download CSV file
+    Storage-->>App: CSV data

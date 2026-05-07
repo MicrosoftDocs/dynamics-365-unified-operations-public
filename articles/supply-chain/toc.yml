@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.48 (June 2026)
+          href: get-started/whats-new-scm-10-0-48.md
         - name: Supply Chain Management 10.0.47 (March 2026)
           href: get-started/whats-new-scm-10-0-47.md
         - name: Supply Chain Management 10.0.46 (December 2025)
           href: get-started/whats-new-scm-10-0-46.md
         - name: Supply Chain Management 10.0.45 (September 2025)
           href: get-started/whats-new-scm-10-0-45.md
-        - name: Supply Chain Management 10.0.44 (June 2025)
-          href: get-started/whats-new-scm-10-0-44.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -2135,6 +2135,8 @@
           href: demand-planning/time-freeze.md
       - name: Export and download data
         href: demand-planning/export-data.md
+      - name: Export data using custom APIs
+        href: demand-planning/demand-planning-export-api.md
     - name: Office integration
       items:
       - name: Office integration overview
@@ -2459,6 +2461,8 @@
         items:
         - name: Supplier Communications Agent overview
           href: procurement/supplier-com-agent-overview.md
+        - name: Try out the updates from vendors feature without a complete email setup
+          href: procurement/procurement-agent-supplier-com-try-out.md
         - name: Set up and configure the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup.md
         - name: Use the agent deployment wizard to set up the Supplier Communications Agent (preview)
@@ -3161,6 +3165,8 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Use establishments on sales order lines
+          href: sales-marketing/establishments-on-sales-order-lines.md
         - name: Use external item identifiers to add products to orders
           href: sales-marketing/external-item-product-search-lookup.md
         - name: Copy lines between sales orders
@@ -3959,8 +3965,8 @@
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Migrate the Warehouse Management mobile app from V3 to V4
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
-          - name: Support policy for V3 of the Warehouse Management mobile app
-            href: warehousing/warehouse-app-support-info-v3.md
+          - name: Support policy for the Warehouse Management mobile app
+            href: warehousing/warehouse-app-support-info.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
             href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
@@ -4065,8 +4071,16 @@
           href: inventory/warehouse-template.md
         - name: Warehouse groups
           href: warehousing/warehouse-groups.md
+        - name: Warehouse spatial locations (preview)
+          items:
+          - name: Warehouse spatial location overview
+            href: warehousing/spatial-location-overview.md
+          - name: Set up warehouse spatial locations
+            href: warehousing/spatial-locations-setup.md
         - name: Control work by using work templates and location directives
           href: warehousing/control-warehouse-location-directives.md
+        - name: Dynamic work classification (production ready preview)
+          href: warehousing/dynamic-work-classification.md
         - name: Work with location directives
           href: warehousing/create-location-directive.md
         - name: Test location directives with acceptance tests

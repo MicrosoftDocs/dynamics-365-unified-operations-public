@@ -4,7 +4,7 @@ description: Learn how to set up and use the Chile 8 Columns report, including p
 author: Cpicon85
 ms.author: v-cpicon 
 ms.topic: how-to
-ms.date: 9/29/2023 
+ms.date: 04/13/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -34,8 +34,8 @@ Before you can print the report, the following prerequisites must be met:
 Follow these steps to generate and run the report. 
 
 1. Go to **General Ledger** \> **Inquiries and Reports** \> **LATAM** \> **8 Columns report**.
-2. In the **8 columns report** dialog box, in the **Report ID** field, select the corresponding ID for the **8 Columns** report.
-3. In the **From date** and **To date** fields, select the date range of the transactions that you want to include on the report.
-4. Select **Print**.
+1. In the **8 columns report** dialog box, in the **Report ID** field, select the corresponding ID for the **8 Columns** report.
+1. In the **From date** and **To date** fields, select the date range of the transactions that you want to include on the report.
+1. Select **Print**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
