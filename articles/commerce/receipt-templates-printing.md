@@ -2,7 +2,7 @@
 title: Set up and design receipt formats
 description: Learn how to set up and design form layouts to control how receipts, invoices, and other documents are printed in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/28/2026
+ms.date: 05/07/2026
 ms.topic: how-to
 ms.search.form: RetailFormLayout
 ms.reviewer: v-griffinc
@@ -21,14 +21,14 @@ ms.custom:
 This article describes how to set up and design form layouts to control how receipts, invoices, and other documents print in Microsoft Dynamics 365 Commerce. Dynamics 365 Commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 
 > [!IMPORTANT]
-> You must set up form layouts and receipt profiles to print receipts and other documents from the Store Commerce app and Store Commerce for web. You can include multiple form layouts in a receipt profile. You can then assign the receipt profile to a printer by modifying a hardware profile.
+> To print receipts and other documents from the Store Commerce app and Store Commerce for web, set up form layouts and receipt profiles. A receipt profile can include multiple form layouts. Assign the receipt profile to a printer by modifying a hardware profile.
 
 ## Set up a receipt format
 
 To set up a receipt format, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce > Channel setup > POS setup > POS > Receipt formats**.
-1. On the **Receipt format** page, select **New** to create a new form layout, or select an existing form layout.
+1. On **Receipt format**, select **New** to create a new form layout, or select an existing form layout.
 1. In the **Receipt format** field, enter an identifier for the form layout, and then select the type of receipt that this layout is used for. You can also enter a description and a short name for the receipt in the **Title** field.
 1. On the **General** FastTab, select an option to define the print behavior:
 
@@ -48,17 +48,17 @@ The receipt designer includes a **Logo** variable. Use this variable to specify 
 
 ## Print barcodes
 
-To print barcodes on receipts, the **BC C39 2 to 1 Narrow** font (file: **C39N2.TTF**) must be installed on the AOS server and the SSRS server. This font is not included with Windows by default, but it is installed as part of the Dynamics 365 Finance and Operations client installation.
+To print barcodes on receipts, you must install the **BC C39 2 to 1 Narrow** font (file: C39N2.TTF) on the Application Object Server (AOS) and SQL Server Reporting Services (SSRS) servers. This font isn't included with Windows by default, but it's installed as part of the Dynamics 365 Finance and Operations client installation.
 
 To install the font on the required servers, follow these steps:
 
-1. On a machine where the Dynamics 365 Finance and Operations client is installed, locate **C39N2.TTF** in the `Windows\Fonts` folder.
-1. Copy the font file to the `Windows\Fonts` folder on the **AOS server**.
-1. Copy the font file to the `Windows\Fonts` folder on the **SSRS server**.
-1. Restart the **AOS service** and the **SSRS service** on each respective server.
+1. On a machine where the Dynamics 365 Finance and Operations client is installed, find the **C39N2.TTF** file in the `Windows\Fonts` folder.
+2. Copy the font file to the `Windows\Fonts` folder on the **AOS server**.
+3. Copy the font file to the `Windows\Fonts` folder on the **SSRS server**.
+4. Restart the **AOS service** and the **SSRS service** on each respective server.
 
 > [!NOTE]
-> If barcodes still don't render after completing these steps, uninstall the font, reboot the SSRS server, reinstall the font, and reboot again if needed.
+> If the barcodes still don't render after completing these steps, uninstall the font, reboot the SSRS server, reinstall the font, and reboot again if needed.
 
 ## Design a receipt format
 
