@@ -2,7 +2,7 @@
 title: Support for external gift cards
 description: Learn how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 11/04/2025
+ms.date: 05/07/2026
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -26,13 +26,13 @@ Similar to support for other card payment types, support for external gift cards
 ## External gift card setup
 
 > [!NOTE]
-> Some setup steps assume that demo data is used. The steps might vary, depending on the dataset that is used. 
+> Some setup steps assume that demo data is used. The steps might vary, depending on the dataset that is used.
 
 ### Configure card types
 
 To configure a card type, follow these steps:
 
-1. In Dynamics 365 Commerce headquarters, search for **Card Types**, or go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**
+1. In Dynamics 365 Commerce headquarters, search for **Card Types**, or go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
 2. Select **New**, add the following values, and then select **Save**.
 
     | Field name     | Value                  |
@@ -48,7 +48,7 @@ To configure card numbers, follow these steps:
 
 1. In headquarters, on the **Card types** page, select the newly created gift card, and then select **Card numbers**.
     ![Card types form with Card numbers selected](../media/card_types.png)
-2. Specify the range of card numbers that should be used for external gift cards, and then select **Save**.
+1. Specify the range of card numbers that you want to use for external gift cards, and then select **Save**.
 
 In the following example, if the first four digits of a card number are **6036**, the card is mapped to the gift card that you set up [Configure card types](#configure-card-types).
 
@@ -63,36 +63,36 @@ In the following example, if the first four digits of a card number are **6036**
 To configure payment methods, follow these steps:
 
 1. In headquarters, search for **Payment methods**, or go to **Retail and Commerce \> Channel setup \> Payment methods \> Payment methods** .
-2. Select **New**, and then follow these steps:
+1. Select **New**, and then follow these steps:
 
     1. In the **Payment method** field, enter any number that isn't yet used (for example, "12").
-    2. In the **Payment method name** field, enter **External Gift Card**.
-    3. In the **Default function** field, select **Card**.
-    4. Select **Save**.
+    1. In the **Payment method name** field, enter **External Gift Card**.
+    1. In the **Default function** field, select **Card**.
+    1. Select **Save**.
 
 ## Store setup
 
 To set up a store, follow these steps:
 
 1. In headquarters, search for **All stores** to open the **All stores** page.
-2. Select the **San Francisco** store in the list.
-3. On the Action Pane, on the **Set up** tab, in the **Set up** group, select **Payment methods**.
-4. Select **New**.
-5. In the **Payment method** field, enter the payment method ID number you created ("12" for our example). The **Payment method name** and **Function** field values are then set automatically.
-6. On the **General** FastTab, set the following fields:
+1. Select the **San Francisco** store in the list.
+1. On the Action Pane, on the **Set up** tab, in the **Set up** group, select **Payment methods**.
+1. Select **New**.
+1. In the **Payment method** field, enter the payment method ID number you created ("12" for our example). The **Payment method name** and **Function** field values are then set automatically.
+1. On the **General** FastTab, set the following fields:
 
     - Set the **Operation name** field to **Pay gift card**.
     - Set the **Connector name** field to **Dynamics 365 Payment Connector for Adyen**.
 
-9. On the **Posting** FastTab, set the **Gift card item number** field value to a number created to represent an external gift card. For testing purposes, if you're using demo data you can set it to **0010**. The **Gift card item number** value selected for external gift cards should be different from the number used to configure internal gift cards (as described in [Set up gift cards](/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1)). The system uses external and internal gift card values to determine the system processing route for the gift cards. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
+1. On the **Posting** FastTab, set the **Gift card item number** field value to a number created to represent an external gift card. For testing purposes, if you're using demo data you can set it to **0010**. The **Gift card item number** value selected for external gift cards should be different from the number used to configure internal gift cards (as described in [Set up gift cards](/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1)). The system uses external and internal gift card values to determine the system processing route for the gift cards. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
 
     ![Setting the Gift card item number field.](./media/05_02.png)
 
-10. Select **Save**.
-11. Select **Electronic payment setup**, and then select **New** to map the gift card payment method to the newly created external gift card payment method for the San Francisco store.
-12. You can choose to allow cashiers to add external gift card numbers either via the personal identification number (PIN) pad or directly on POS. You can specify the entry method using the **Allow manual card numbers** configuration located on the **Electronic payment setup** menu of the external gift card payment method associated with the store.
-    - If the configuration value is set to **Yes**, the cashier can either manually enter or scan a gift card on POS. If the gift card requires a PIN, then the PIN pad gets activated for the customer to add the PIN number.
-    - If the configuration value is set to **No**, the cashier must use the PIN pad to enter the gift card number. While the cashier is using the PIN pad, the default method to add a gift card is by swiping the gift card. However, you can configure the Adyen connector to provide the option of manually keying in the gift card number using the PIN pad. To enable the manual entry on the PIN pad, go to the hardware profile associated with the register and under the **EFT service** FastTab, set the **Terminal gift card entry** property value to **True** for the Adyen payment connector. The following example image shows the gift card PIN pad entry experience.
+1. Select **Save**.
+1. Select **Electronic payment setup**, and then select **New** to map the gift card payment method to the newly created external gift card payment method for the San Francisco store.
+1. You can choose to allow cashiers to add external gift card numbers either via the personal identification number (PIN) pad or directly on POS. You can specify the entry method using the **Allow manual card numbers** configuration located on the **Electronic payment setup** menu of the external gift card payment method associated with the store.
+    - If you set the configuration value to **Yes**, the cashier can either manually enter or scan a gift card on POS. If the gift card requires a PIN, the PIN pad activates for the customer to add the PIN number.
+    - If you set the configuration value to **No**, the cashier must use the PIN pad to enter the gift card number. While the cashier is using the PIN pad, the default method to add a gift card is by swiping the gift card. However, you can configure the Adyen connector to provide the option of manually keying in the gift card number using the PIN pad. To enable the manual entry on the PIN pad, go to the hardware profile associated with the register and under the **EFT service** FastTab, set the **Terminal gift card entry** property value to **True** for the Adyen payment connector. The following example image shows the gift card PIN pad entry experience.
 
 ![Swipe or manually key in gift card on PIN pad](./media/terminal-entry.png)
 
@@ -101,36 +101,38 @@ To set up a store, follow these steps:
 To set up POS, follow these steps:
 
 1. In headquarters, search for **Hardware profiles** to open the **POS hardware profile** page.
-2. In the left pane, select the hardware profile associated with the San Francisco store (for example, **Virtual**).
+1. In the left pane, select the hardware profile associated with the San Francisco store (for example, **Virtual**).
 3. Select **Edit**.
-4. On the **EFT service** FastTab, in the **Connectors** grid, select **Dynamics 365 Payment Connector for Adyen**.
-5. In the **Supported Tender Types** field, enter "GiftCard". If other tender types are present, add a semicolon (";") before "Giftcard" as shown in the following example image.
-6. Set the **Gift card provider** value to **svs** or **givex**, depending on the gift card provider you use.
+1. On the **EFT service** FastTab, in the **Connectors** grid, select **Dynamics 365 Payment Connector for Adyen**.
+1. In the **Supported Tender Types** field, enter `GiftCard`. If other tender types are present, add a semicolon (`;`) before `GiftCard` as shown in the following example image.
+1. Set the **Gift card provider** value to **svs** or **givex**, depending on the gift card provider you use.
 
     ![Add a gift card to the list of supported tender types.](./media/01.png)
 
-7. Select **Save**.
+1. Select **Save**.
 
-### Define the acceptable length for gift card number (Optional)
-Some card providers such as SVS support multiple gift card lengths and to ensure that the payment terminal accepts the desired gift card length you can define the minimum and maximum allowed length for the gift cards. To do so for the **Adyen connector**, add the following properties in the **Custom settings** property of the Adyen connector in the Hardware profile:
+### Define gift card number length
 
-~~~
-{"UnifiedPaymentsWorkflow_GiftCardSkipBalanceCheck": true,   "GiftCardMinLength": "13",   "GiftCardMaxLength": "19",   "GiftCardCardMask": "****-****-****-****-***", "EnableExternalGiftCardCustomLength" : true}
-~~~
-> [!Note]
-> Adyen does not support Balance inquiry for gift cards with variable lengths.
+> [!NOTE]
+> This configuration is optional.
 
-    
-### Select when the balance is made available on the gift cards
+Some card providers, such as SVS, support multiple gift card lengths. To ensure that the payment terminal accepts the desired gift card length, you can define the minimum and maximum allowed length for the gift cards. To set these values for the Adyen connector, add the following properties in the **Custom settings** property of the Adyen connector in the hardware profile:
 
-By default, the balance on gift cards is added immediately after a cashier performs a relevant gift card operation on the transaction, before the customer completes payment. If the customer changes their mind, the cashier must void the gift card operation, which results in unnecessary API calls to the gift card processor. These unnecessary API calls introduce business risk because it may take several seconds for the balance to be reverted.
+`{"UnifiedPaymentsWorkflow_GiftCardSkipBalanceCheck": true, "GiftCardMinLength": "13", "GiftCardMaxLength": "19", "GiftCardCardMask": "****-****-****-****-***", "EnableExternalGiftCardCustomLength": true}`
+
+> [!IMPORTANT]
+> Adyen doesn't support balance inquiry for gift cards with variable lengths.
+
+### Select when to add the balance on the gift cards
+
+By default, the system adds the balance on gift cards immediately after a cashier performs a relevant gift card operation on the transaction, before the customer completes payment. If the customer changes their mind, the cashier must void the gift card operation, which results in unnecessary API calls to the gift card processor. These unnecessary API calls introduce business risk because it might take several seconds to revert the balance.
 
 Starting with Commerce version 10.0.45, you can turn on the **Enable gift card balance post-payment completion** feature to delay the balance addition until after payment is successfully received. Enabling this feature ensures that:
 
 - No API calls are made to issue or void gift cards if the customer cancels before payment.
 - Gift card balances are only updated post-payment, reducing operational risk and improving reliability.
 
-To enable this feature functionality, follow these steps
+To enable this feature, follow these steps:
 
 1. In Commerce headquarters, go to **System administration** \> **Workspaces** \> **Feature management**.
 1. Locate and select the **Enable gift card balance post-payment completion** feature.
@@ -138,22 +140,22 @@ To enable this feature functionality, follow these steps
 1. To apply the changes, run the **1110 - Global configuration** job.
 
 > [!NOTE]
-> If you're using payment terminals with integrated printing capabilities and you want to allow multiple gift card activations in a single transaction, in the **Custom settings** property of the Adyen connector setup, add "BypassPrintBehaviorOnFundingGiftCards:true". Without this property configuration, the payment terminal tries to print a receipt after each gift card operation, which blocks the activation/balance addition process after the first gift card is processed.
+> If you're using payment terminals with integrated printing capabilities and you want to allow multiple gift card activations in a single transaction, in the **Custom settings** property of the Adyen connector setup, add `BypassPrintBehaviorOnFundingGiftCards: true`. Without this property configuration, the payment terminal tries to print a receipt after each gift card operation, which blocks the activation/balance addition process after the first gift card is processed.
 
 > [!IMPORTANT]
 > Microsoft strongly recommends that you enable this feature to streamline gift card operations and minimize risk.
 
 The following steps show the sequence of actions a user experiences when the feature is enabled.
 
-1. User initiates either the Issue gift card action or the Add money to gift card action.
-2. User manually enters the gift card number (optional). If the manual gift card entry option is enabled, the user has the option to manually enter the gift card number. However, entering the gift card number is optional at this point.
+1. User initiates either the **Issue gift card** action or the **Add money to gift card** action.
+1. User manually enters the gift card number (optional). If the manual gift card entry option is enabled, the user can manually enter the gift card number. However, entering the gift card number is optional at this point.
     - If the gift card number is entered manually, then during the gift card activation the customer just has to enter the PIN on the payment terminal.
     - If the gift card number isn't entered manually at this stage, then the user has to swipe the gift card after payment is completed.
-4. User specifies the amount. This action adds a gift card line to the transaction. However, the gift card isn't yet updated with this amount.
-5. User adds more gift cards or regular items, if needed.
-6. User takes payment. As soon as the required payment is captured, the system triggers an automatic checkout, and this action activates the payment terminal for the customer to provide their PIN number or swipe their gift card as needed.
+1. User specifies the amount. This action adds a gift card line to the transaction. However, the system doesn't yet update the gift card with this amount.
+4. User adds more gift cards or regular items, if needed.
+5. User takes payment. As soon as the required payment is captured, the system triggers an automatic checkout, and this action activates the payment terminal for the customer to provide their PIN number or swipe their gift card as needed.
     - If the gift card action is successful, then the transaction is completed.
-    - If the gift card action fails, then the system shows an error message below the failed gift card line stating "The gift card action cannot be completed. Please void this item.". After the cashier receives the message, they can attempt the checkout again. If the error was transient (for example, a network issue), a subsequent gift card action might succeed. But if there's a permanent issue (for example, the gift card is invalid), then the cashier must void the gift card line and try with another gift card.
+    - If the gift card action fails, then the system shows an error message below the failed gift card line stating "The gift card action can't be completed. Please void this item.". After the cashier receives the message, they can attempt the checkout again. If the error was transient (for example, a network issue), a subsequent gift card action might succeed. But if there's a permanent issue (for example, the gift card is invalid), then the cashier must void the gift card line and try with another gift card.
 
 ### Update the button grid
 
@@ -189,7 +191,7 @@ To update the button grid, follow these steps:
 
     > [!NOTE]
     > - If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you must perform an Internet Information Services (IIS) reset to clear the cache. You can perform an IIS reset through the IIS application, or open a Command Prompt window as an administrator and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
-    > - Existing buttons on the version F2S1m button grid (or version F*n*S1M for layout) can be similarly configured for internal gift cards. The existing issue gift card (sometimes depicted with the card and plus symbol button in the existing layout) requires that the button properties have the **Action** property set (for example, to **Issue gift card**) and the **Payment type** property set (for example, to **Gift card** for internal gift cards). Similarly, for the preconfigured **Add to gift card** and **Check gift card balance** buttons, the gift card **Payment type** properties should be set if the buttons are intended to handle internal gift cards.
+    > - You can configure existing buttons on the version F2S1m button grid (or version F*n*S1M for layout) to handle internal gift cards. The existing **Issue gift card** button (sometimes depicted with the card and plus symbol button in the existing layout) requires that the button properties have the **Action** property set (for example, to **Issue gift card**) and the **Payment type** property set (for example, to **Gift card** for internal gift cards). Similarly, for the preconfigured **Add to gift card** and **Check gift card balance** buttons, set the gift card **Payment type** properties if the buttons are intended to handle internal gift cards.
 
 ## Configure and test Store Commerce
 
@@ -207,14 +209,14 @@ To configure and test Store Commerce, follow these steps:
 10. Select **Gift cards**.
 11. Select **Ext Issue gift card**.
 12. Enter a number that starts with **9**, and then provide an amount.
-13. After items are added to the cart, you can pay by using cash or a card.
+13. After you add items to the cart, you can pay by using cash or a card.
 
 ## External gift cards for the call center and storefront
 
 > [!NOTE]
-> External gift card support for call center and storefront is enabled in the **Feature management** workspace. Enable **Omni-channel payments**, then enable **Enable advanced external gift card**. For additional steps required to set up external gift cards in the storefront, see [E-commerce digital gift cards](../digital-gift-cards.md). 
- 
-#### Adyen external gift card setup
+> You can enable external gift card support for call center and storefront in the **Feature management** workspace. Enable **Omni-channel payments**, and then enable **Enable advanced external gift card**. For more steps required to set up external gift cards in the storefront, see [E-commerce digital gift cards](../digital-gift-cards.md).
+
+### Adyen external gift card setup
 
 For an example that shows how to set up payment services, see the [documentation for the Adyen payment connector](adyen-connector.md?tabs=8-1-3).
 
@@ -222,25 +224,26 @@ For the call center and storefront, the Adyen connector supports the following g
 
 | Brand   | Gift card type   | Supported | Activation       |
 |---------|------------------|-----------|------------------|
-| SVS     | Physical         | Yes       | Manually         | 
+| SVS     | Physical         | Yes       | Manually         |
 | SVS     | Email            | Yes       | Programmatically |
 | Givex   | Physical         | Yes       | Manually         |
 
 > [!NOTE]
->  Only gift cards of type "Email" can be issued in an online order at this time. 
->  In the out-of-box Adyen connector, gift cards aren't configured by default. To specify the gift card provider in the merchant properties of the payment connector, follow the instructions in the [documentation for the Adyen payment connector](adyen-connector.md?tabs=8-1-3).
+>
+> - Only gift cards of type "Email" can be issued in an online order at this time.
+> - In the out-of-box Adyen connector, gift cards aren't configured by default. To specify the gift card provider in the merchant properties of the payment connector, follow the instructions in the [documentation for the Adyen payment connector](adyen-connector.md?tabs=8-1-3).
 
 ### Tokenization
 
-The out-of-box implementation and Payments software development kit (SDK) support for external gift cards in the call center and storefront requires tokenization. When external gift cards are processed, tokens are used to refer to the actual gift card number. Tokenization is important for third party implementations because without tokens, external gift card processing may not function correctly. For example, if a gift card payment is captured when added to an order but an issue occurs during order creation, the gift card payment is reversed using references (tokens) to the transaction itself, not using the actual gift card number. 
+The out-of-box implementation and Payments software development kit (SDK) support for external gift cards in the call center and storefront requires tokenization. When external gift cards are processed, tokens are used to refer to the actual gift card number. Tokenization is important for third party implementations because without tokens, external gift card processing might not function correctly. For example, if a gift card payment is captured when added to an order but an issue occurs during order creation, the gift card payment is reversed by using references (tokens) to the transaction itself, not by using the actual gift card number.
 
 ### Purchases and refunds
 
 When an external gift card is used for a purchase, the tender line for the gift card is saved as a prepayment. Therefore, the funds for the purchase are captured when the order is created.
 
-External gift cards aren't eligible for refunds. In part, this limitation is in place to prevent a refund from being given for a gift card discarded by the user. If an unprocessed order includes an external gift card as payment, and the customer wants to cancel the order, you must issue a new gift card or some other form of credit to the customer.
+External gift cards aren't eligible for refunds. In part, this limitation is in place to prevent a refund for a gift card discarded by the user. If an unprocessed order includes an external gift card as payment, and the customer wants to cancel the order, you must issue a new gift card or some other form of credit to the customer.
 
-Gift cards lines that are issued as part of an order can be canceled before fulfillment.
+Gift card lines that are issued as part of an order can be canceled before fulfillment.
 
 ### Issuing gift cards through fulfillment
 
@@ -254,12 +257,12 @@ Virtual gift cards are issued as part of order invoicing. When a gift card line 
 
 In the call center and storefront channels, unlike in POS, a dedication operation isn't used to issue gift cards. Instead, gift cards are issued by adding a line item to a transaction. Specifically, gift card products for e-commerce and the call center can be either mapped to product variants or modeled as standard products.
 
-If product variants are used, the person who creates the gift card order is prompted to select the variant. The relevant mode of delivery is then available for that product variant.
+If you use product variants, the person who creates the gift card order is prompted to select the variant. The relevant mode of delivery is then available for that product variant.
 
 Modes of delivery must support the type of gift card. For example, a gift card product variant of the **Physical** style must be mapped to a mode of delivery that is related to shipping. A gift card product variant of the **Email** style must be mapped to an electronic mode of delivery. The electronic mode of delivery is defined on the **Customer orders** tab of the **Commerce parameters** page.
 
 > [!NOTE]
-> Currently, Commerce only supports digital gift cards. For information about setting up digital gift cards, see [E-commerce digital gift cards](../digital-gift-cards.md). 
+> Currently, Commerce only supports digital gift cards. For information about setting up digital gift cards, see [E-commerce digital gift cards](../digital-gift-cards.md).
 
 ## Setup for the call center and storefront
 
@@ -269,7 +272,7 @@ In the back office, on the **Payment services** page, configure the payment serv
 
 ## Call center setup
 
-To set up call center, follow these steps:
+To set up the call center, follow these steps:
 
 1. Search for **All call centers** to open the call centers page.
 2. Select the **Fashion call center** store in the list.
@@ -280,12 +283,12 @@ To set up call center, follow these steps:
     - In the **Operation name** field, select **Pay gift card**.
     - In the **Connector name** field, select **TestConnector**.  
 
-    > [!NOTE] 
-    > If the **Connector name** field is disabled, save the record, and then on the Action Pane, select **Electronic payment setup**. Select **+New** to add a payment type, configure the payment type, and then select **Save**. The connector field should now be selectable. 
+    > [!NOTE]
+    > If the **Connector name** field is disabled, save the record. Then, on the Action Pane, select **Electronic payment setup**. Select **+New** to add a payment type, configure the payment type, and then select **Save**. You can now select the connector field. 
 
-9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
-10. Select **Save**.
-11. Select **Card setup**, and then select **New** to map the gift card payment method to the newly created external gift card payment method for the **Fashion call center**.
+7. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
+8. Select **Save**.
+9. Select **Card setup**, and then select **New** to map the gift card payment method to the newly created external gift card payment method for the **Fashion call center**.
 
 ## Online store setup
 
@@ -301,21 +304,21 @@ To set up an online store, follow these steps:
     - In the **Operation name** field, select **Pay gift card**.
     - In the **Connector name** field, select **TestConnector**.
 
-9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
-10. Select **Save**.
-11. Select **Card setup**, and then select **New** to map the gift card payment method to the newly created external gift card payment method for the **Fabrikam extended online store**.
+7. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
+8. Select **Save**.
+9. Select **Card setup**, and then select **New** to map the gift card payment method to the newly created external gift card payment method for the **Fabrikam extended online store**.
 
 ## Online store payments setup
 
 To configure the payment accounts for your online store to use Adyen for external gift card processing, see [Configure the Adyen connector for online stores](adyen-connector-setup.md#configure-the-adyen-connector-for-online-stores).
 
-#### Test connector external gift card setup
+### Test connector external gift card setup
 
 To set up external gift cards for the test connector, on the **Payment services** page, select **Dyn Online**, and then, in the **Supported Tender Types** field, add **GiftCard** after **Debit**. Then select **Credit card types**, and assign a payment journal to the gift card payment method.
 
 ### Gift card product setup
 
-The following procedure shows how to set up an external gift card by using product masters. Product masters aren't required for external gift cards. However, they can be helpful when both physical and virtual gift cards are used.
+The following procedure shows how to set up an external gift card by using product masters. You don't need product masters for external gift cards, but they can be helpful when you use both physical and virtual gift cards.
 
 To set up a gift card product, follow these steps:
 
@@ -348,8 +351,9 @@ To set up a gift card product, follow these steps:
 21. Select **OK**.
 
     > [!NOTE]
-    > Gift cards aren't currently supported for Store Commerce customer order creation or for in-store pickup.
-    > Gift cards being issued as part of e-commerce orders may only use **Email** modes of delivery. Those gift cards can't have physical modes of delivery mapped to them. 
+    >
+    > - Gift cards aren't currently supported for Store Commerce customer order creation or for in-store pickup.
+    > - Gift cards being issued as part of e-commerce orders can only use **Email** modes of delivery. Those gift cards can't have physical modes of delivery mapped to them.
 
 22. Search for **Released products by category** to open the **Released product details** page.
 23. Select the external gift card item.
@@ -366,10 +370,10 @@ To set up a gift card product, follow these steps:
 
 25. Select **Save**.
 
-For the storefront, the gift card must also be included in the storefront's assortment. For more information, see [Assortment management](../assortments.md).
+For the storefront, you must also include the gift card in the storefront's assortment. For more information, see [Assortment management](../assortments.md).
 
 > [!NOTE]
-> The gift card product used for external gift card setup in POS shouldn't use product masters with item variants. Gift cards based on item variants may still be used for payments, balance inquiries, and cash out in POS, but gift card products associated with the POS for issuance must be standard products. 
+> The gift card product used for external gift card setup in POS shouldn't use product masters with item variants. Gift cards based on item variants may still be used for payments, balance inquiries, and cash out in POS, but gift card products associated with the POS for issuance must be standard products.
 
 ### Set up notification emails for virtual gift cards
 
@@ -381,7 +385,7 @@ For gift cards that are issued via email, the value of the **Retail email notifi
 
 ### Call center setup
 
-To set up call center, follow these steps:
+To set up the call center, follow these steps:
 
 1. Search for **All call centers** to open the **Call center** page.
 2. In the list, select a call center.
@@ -389,7 +393,7 @@ To set up call center, follow these steps:
 4. Add a user, select **Save**, and then close the **Channel users** page.
 
     > [!IMPORTANT]
-    > Users must be call center users when they access the **Customer service** page and create orders. Otherwise, call center capabilities isn't available.
+    > Users must be call center users when they access the **Customer service** page and create orders. Otherwise, call center capabilities aren't available.
 
 5. Back on the **Call center** page, on the Action Pane, on the **Set up** tab, in the **Set up** group, select **Payment methods**.
 6. Select **New**.
@@ -405,7 +409,7 @@ To set up call center, follow these steps:
 16. On the **Posting** FastTab, assign the gift card item number.
 17. Select **Save**.
 18. Select **Card setup**.
-19. The **Card setup** page for the internal gift card now includes two additional configuration fields: **Check expiration date** and **PIN required**. Set these fields as required by the external gift card provider.
+19. The **Card setup** page for the internal gift card now includes two more configuration fields: **Check expiration date** and **PIN required**. Set these fields as required by the external gift card provider.
 
 ### Issue external gift cards in the call center
 
@@ -432,29 +436,28 @@ To issue external gift cards in the call center, follow these steps:
 11. Select **Complete**, add a payment, and submit the order.
 
 For physical external gift cards, complete the following steps to register the gift card number:
-1. Select **Pick and pack \> Generate picking list**. 
-2. Select **Quantity=All** and then select **OK**. A dialog warning about posting the doc without printing is displayed. Select **OK**.
-3. Select **Pick and pack \> Picking list registration**. Under the **Lines** menu, select **Register gift card number**. Under the **Register gift card number** property menu, enter the number in the **Number** field, and then select **OK**.
+
+1. Select **Pick and pack** > **Generate picking list**.
+1. Select **Quantity=All** and then select **OK**. A dialog warning about posting the doc without printing is displayed. Select **OK**.
+1. Select **Pick and pack** > **Picking list registration**. Under the **Lines** menu, select **Register gift card number**. Under the **Register gift card number** property menu, enter the number in the **Number** field, and then select **OK**.
 
 > [!NOTE]
-> If the error message "Credit card process failed, due to 'Declined'" is displayed, the gift card is already activated. You should select a different card number.
+> If the error message "Credit card process failed, due to 'Declined'" is displayed, the gift card is already activated. Select a different card number.
 
-When the registration process is completed, return to the sales order. The **Gift card number** and **Expiration** fields are displayed with the added information under the **Lines details \> Packaging** section.
+When the registration process is completed, return to the sales order. The **Gift card number** and **Expiration** fields display with the added information under the **Lines details > Packaging** section.
 
-### Pay using external gift cards in the call center
+### Pay by using external gift cards in the call center
 
-To pay using external gift cards in the call center, follow these steps:
+To pay by using external gift cards in the call center, follow these steps:
 
 1. As a call center user, create an order, and select **Complete**.
 2. On the **Payments** FastTab, select **Add**.
-3. Select the external gift card payment method, and enter the number and PIN, if applicable. For the test connector, **61234** can be used as the number, and the PIN isn't validated.
+3. Select the external gift card payment method, and enter the number and PIN, if applicable. For the test connector, use **61234** as the number, and the PIN isn't validated.
 4. Use a percentage amount or a payment amount to define the payment amount.
 
     ![External gift card payment in the call center.](media/PayinCallCenter.png)
 
 5. Select **OK**.
 6. Select **Submit** to complete the order.
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
