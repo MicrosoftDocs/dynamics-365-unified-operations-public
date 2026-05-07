@@ -4,7 +4,7 @@ description: Learn about the release schedule for service updates for unified en
 author: aarsh-msft
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 04/21/2026
+ms.date: 05/04/2026
 ms.custom: bap-template
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -49,12 +49,12 @@ For information about the maintenance windows for each region, see [What are the
 
 | Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
-| Station 1 | April 29 to April 30, 2026 | NA |
-| Station 2 | May 4 to May 5, 2026 | May 16 to May 17, 2026 |
-| Station 3 | May 4 to May 5, 2026 | May 16 to May 17, 2026 |
-| Station 4 | May 11 to May 12, 2026 | May 23 to May 24, 2026 |
-| Station 5 | May 18 to May 19, 2026 | May 30 to May 31, 2026  |
-| Station 6 | May 18 to May 19, 2026 | May 30 to May 31, 2026 |
+| Station 1 | Cancelled | NA |
+| Station 2 | Cancelled | Cancelled |
+| Station 3 | Cancelled | Cancelled |
+| Station 4 | Cancelled | Cancelled |
+| Station 5 | Cancelled | Cancelled |
+| Station 6 | Cancelled | Cancelled |
 
 > [!IMPORTANT]
 > This update applies only to environments that are on version 10.0.45 or earlier. For version 10.0.46 environments and later, the update is skipped.

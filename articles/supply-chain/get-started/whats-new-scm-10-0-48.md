@@ -29,10 +29,12 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
+| Master planning | Soft issue margins with Planning Optimization (preview) | [Soft issue margin (preview)](../master-planning/planning-optimization/safety-margins.md#soft-issue-margin) | Feature management:<br>*Soft issue margins with Planning Optimization* |
 | Procurement and sourcing | Manage the downstream impact of PO changes with Procurement Agent impact analysis | *Coming soon* | Feature management:<ul><li>*(Production ready preview) Agent management*</li><li>*(Production-ready preview) Procurement Agent - Impact analysis*</li></ul> |
 | Procurement and sourcing | Try out the *updates from vendors* feature without a complete email setup | [Try out the *updates from vendors* feature without a complete email setup (production ready preview)](../procurement/procurement-agent-supplier-com-try-out.md) |  Enabled by default |
-| Warehouse management | Cluster picking strategy | [Cluster picking strategy](../warehousing/set-up-cluster-picking.md#cluster-picking-strategy) | Enabled by default |
-| Warehouse management | Warehouse spatial location | [Warehouse spatial location overview (preview)](../warehousing/spatial-location-overview.md) | Feature management:<br>*Warehouse spatial location* |
+| Warehouse management | [Automate dynamic work classification with Power FX](/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/automate-dynamic-work-classification-power-fx) | [Dynamic work classification (production ready preview)](../warehousing/dynamic-work-classification.md) | Feature management:<br>*(Production Ready Preview) Dynamic work classification* |
+| Warehouse management | [Enable precise serial and batch capture in cluster picking](/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/enable-precise-serial-batch-capture-cluster-picking) | [Cluster picking strategy](../warehousing/set-up-cluster-picking.md#cluster-picking-strategy) | Enabled by default |
+| Warehouse management | [Enhance picking speed using spatial location intelligence](/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/enhance-picking-speed-using-spatial-location-intelligence) | [Warehouse spatial location overview (preview)](../warehousing/spatial-location-overview.md) | Feature management:<br>*Warehouse spatial location* |
 
 ## <a name="enhancements"></a>Feature enhancements added in this release
 
@@ -61,7 +63,7 @@ The following table lists the features that became turned on by default in versi
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.48 includes platform updates. Learn more in [Platform updates for version 10.0.48 of Finance and Operations apps (June 2026)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-48.md).<!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.48 includes platform updates. Learn more in [Platform updates for version 10.0.48 of Finance and Operations apps (June 2026)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-10-0-48.md).
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.48, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1125352).
 

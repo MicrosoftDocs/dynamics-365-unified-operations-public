@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: CustTable, VendTable, EcoResProductListPage, InterCompanyTradingRelationSetupCustomer
 ms.topic: how-to
-ms.date: 07/30/2024
+ms.date: 4/23/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,11 +15,11 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-To enable Microsoft Dynamics 365 Supply Chain Management to run intercompany trade, you must set up customers and vendors to run intercompany trade. You must also set up Accounts payable, Accounts receivable, Procurement and sourcing, and Sales and marketing.
+To enable Microsoft Dynamics 365 Supply Chain Management to run intercompany trade, set up customers and vendors to run intercompany trade. You must also set up Accounts payable, Accounts receivable, Procurement and sourcing, and Sales and marketing.
 
 ## Before you set up intercompany trade
 
-Before you set up intercompany trade, you must decide which customers are intercompany customers, and which vendors are intercompany vendors. For each legal entity in Microsoft Dynamics 365 Supply Chain Management, you must decide which trading policy to apply to the intercompany trading relation with the specific intercompany customer or vendor.
+Before you set up intercompany trade, decide which customers are intercompany customers, and which vendors are intercompany vendors. For each legal entity in Microsoft Dynamics 365 Supply Chain Management, decide which trading policy to apply to the intercompany trading relation with the specific intercompany customer or vendor.
 
 In particular, we recommend that you and your organization become familiar with the intercompany parameters.
 
@@ -45,7 +45,7 @@ To set up intercompany trade for customers and vendors, follow these steps:
 
 To enable products for intercompany trade, follow these steps:
 
-1. Go to **Product information management \> Products \> All products and product masters**.
-1. Define the products that are released to the legal entities where you want to do intercompany trade.
+1. Go to **Product information management** \> **Products** \> **All products and product masters**.
+1. Define the products released to the legal entities where you want to do intercompany trade.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn about planning for production and explains how to modify plan
 author: Henrikan
 ms.author: henrikan
 ms.topic: article
-ms.date: 03/25/2026
+ms.date: 05/06/2026
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ---
@@ -61,8 +61,6 @@ If you want to change information on a planned order and see the impact on the r
 1. Approve the planned order.
 1. Run master planning.
 
-When you run master planning, don't use filters if planned production orders are included. Learn more in the [Filters](#filters) section later in this article.
-
 > [!NOTE]
 > If you change the delivery date of the planned order to a later date, the demand might peg against a new planned order. This behavior occurs when the new supply date causes a delay for the pegged demand but, according to the lead time settings, the delay can be avoided.
 
@@ -72,44 +70,6 @@ Use the **Explosion** page to analyze the demand that is required for a specific
 
 ## <a name="filters"></a>Filters
 
-To ensure that master planning has the information it needs to calculate the correct result, include all products that relate to products in the whole BOM structure of the planned order. For planning scenarios that include production, avoid filtered master planning runs.
-
-Although the deprecated master planning engine automatically detects and includes dependent child items in master planning runs, Planning Optimization doesn't currently perform this action.
-
-For example, if a single bolt from the BOM structure of product A is also used to produce product B, include all products in the BOM structure of products A and B in the filter. Because it can be complex to ensure that all products are part of the filter, avoid filtered master planning runs when production orders are involved. Otherwise, master planning provides undesired results.
-
-### Reasons to avoid filtered master planning runs
-
-When you run filtered master planning for a product, Planning Optimization (unlike the deprecated master planning engine) doesn't detect all the subproducts and raw materials in the BOM structure of that product, and therefore doesn't include them in the master planning run. Even though Planning Optimization identifies the first level in the BOM structure of the product, it doesn't load any product settings (such as the default order type or item coverage) from the database.
-
-In Planning Optimization, the system loads data for the run beforehand and applies the filters. This process means that if a subproduct or raw material included in a specific product isn't part of the filter, the run doesn't capture information about it. Additionally, if the subproduct or raw material is also included in another product, then a filtered run that includes only the original product and its components removes existing planned demand that was created for that other product.
-
-This logic might cause filtered master planning runs to produce unexpected results. The following sections provide examples that illustrate the unexpected results that could occur.
-
-### Example 1
-
-Finished good *FG* consists of the following components:
-
-- Raw material *R*
-- Subproduct *S1*, which consists of subproduct *S2*
-
-There's inventory on hand for the raw material *R*, while subproduct *S1* isn't present in the inventory.
-
-When you run a filtered master planning run for finished good *FG*, you get a planned production order for the finished good *FG*, a planned purchase order for the raw material *R*, and a planned purchase order for the subproduct *S1*. This result is undesirable because Planning Optimization ignored existing supply for raw material *R* and subproduct *S1* needs to be produced using *S2* rather than ordered directly. This result happened because Planning Optimization only has the list of components for the finished good *FG* without any related information, such as the existing supply of its components or their default order settings.
-
-### Example 2
-
-Building on the previous example, an additional finished good, *FG2*, also uses subproduct *S1*. A planned order exists for finished good *FG2* and planned demand exists for all of its components, including *S1*.
-
-You decide to overcome the undesired results of the filtered master planning run from the previous example by adding all the subproducts and raw materials from the BOM structure of finished good *FG* to the filter and then running full regeneration.
-
-When you run the full regeneration, the system deletes all existing results for all the included products and then recreates results based on the new calculations. This process means that the system deletes existing planned demand for product *S1* and then recreates it taking into account finished good *FG* requirements only, while finished good *FG2* requirements are disregarded. This situation happens because when you run Planning Optimization, it doesn't include the planned demand of other planned production orders—it only uses the planned demand generated during the run.
-
-> [!NOTE]
-> If the existing planned order for finished good *FG2* is in status *Approved*, then the approved planned demand is included, even when the parent product isn't added to the filter.
-
-Therefore, unless you add all the components of the finished good *FG*, finished good *FG2*, and all other products that these components are part of (together with their components), the filtered master planning run provides undesired results.
-
-Because it can be complex to ensure that all products are part of the filter, avoid filtered master planning runs when production orders are involved.
+Planning Optimization offers advanced filtering options that can apply at the plan level, runtime level, or both. To learn more about the various filter options, see [Run planning for a subset of items](plan-filters.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
