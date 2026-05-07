@@ -66,7 +66,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.46 PQU-8 | August 21, 2026 | August 31, 2026 to October 3, 2026| Not Started |
 | 10.0.47 PQU-1 | April 8, 2026 | April 8, 2026 to May 2, 2026| Completed |
 | 10.0.47 PQU-2 | April 22, 2026 | April 22, 2026 to May 16, 2026| Canceled |
-| 10.0.47 PQU-3 | May 6, 2026 | May 6, 2026 to May 30, 2026| Not Started |
+| 10.0.47 PQU-3 | May 6, 2026 | May 6, 2026 to May 30, 2026| In-Progress |
 | 10.0.47 PQU-4 | May 20, 2026 | May 20, 2026 to June 13, 2026| Not Started |
 | 10.0.47 PQU-5 | June 3, 2026 | June 3, 2026 to June 27, 2026| Not Started |
 | 10.0.47 PQU-6 | June 17, 2026 | June 17, 2026 to July 11, 2026| Not Started |
@@ -154,6 +154,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | May 18 to May 21, 2026 | May 30 to May 31, 2026 |
 | Station 5 | May 25 to May 28, 2026 | June 6 to June 7, 2026 |
 | Station 6 | May 26 to May 29, 2026 | June 6 to June 7, 2026 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-3 train schedule
+
+**App version: 10.0.2527.109**
+
+**Platform version: 7.0.7858.96**
+
+**Unified Environment Provisioning Application Version: 10.0.47.4**
+
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
+|---|---|---|
+| Station 1 | May 6 to May 9, 2026 | NA |
+| Station 2 | May 11 to May 14, 2026 | May 16 to May 17, 2026 |
+| Station 3 | May 11 to May 14, 2026 | May 16 to May 17, 2026 |
+| Station 4 | May 18 to May 21, 2026 | May 23 to May 24, 2026 |
+| Station 5 | May 25 to May 28, 2026 | May 30 to May 31, 2026 |
+| Station 6 | May 25 to May 28, 2026 | May 30 to May 31, 2026 |
 
 > [!IMPORTANT]
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
