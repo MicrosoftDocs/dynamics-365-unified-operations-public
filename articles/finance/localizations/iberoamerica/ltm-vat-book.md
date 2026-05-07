@@ -1,8 +1,8 @@
 ---
 title: VAT book printing configuration
 description: Learn how to set up and use value-added tax (VAT) books, including an outline on configuring application-specific parameters.
-author: Cpicon85
-ms.author: v-cpicon
+author: SandraYamamoto0602
+ms.author: v-sandraya
 ms.topic: how-to
 ms.date: 01/05/2026
 ms.custom: bap-template
@@ -27,6 +27,40 @@ Before you complete the steps in this article to generate and print the report, 
 - The country/region-specific LATAM feature and the general LATAM feature must be enabled.
 - You must download the specific report from the Global repository. For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 - You must configure the Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+
+**Required elements for all countries**
+
+| Element |                    Format name                    |
+|:-------:|:-------------------------------------------------:|
+| Model   | :::no-loc text="LTM Tax Report":::                              |
+| Mapping |  :::no-loc text="LTM Tax Report mapping"::: |
+
+**Downloadable formats by country**
+
+| Country/Region-Specific Format | Description | Format name|
+|---|---|---|
+| Bolivia | Purchase VAT Book | :::no-loc text="BO Purchase Vat Book"::: |
+| Bolivia | Sales VAT Book | :::no-loc text="BO Sales VAT Book"::: |
+| Chile | Purchase VAT Book | :::no-loc text="CL Compras"::: |
+| Chile | Sales VAT Book | :::no-loc text="CL Ventas"::: |
+| Colombia | Purchase VAT Book | :::no-loc text="CO Compras"::: |
+| Colombia | Sales VAT Book | :::no-loc text="CO Ventas"::: |
+| Costa Rica | Purchase VAT Book | :::no-loc text="CR Compras"::: |
+| Costa Rica | Sales VAT Book | :::no-loc text="CR Ventas"::: |
+| Ecuador | Purchase VAT Book Details | :::no-loc text="EC Purchases VAT Book details"::: |
+| Ecuador | Sales VAT Book | :::no-loc text="EC sales vat book"::: |
+| Guatemala | Purchase VAT Book | :::no-loc text="GT Purchases vat Book"::: |
+| Guatemala | Sales VAT Book | :::no-loc text="GT sales vat book"::: |
+| Nicaragua | Purchase VAT Book | :::no-loc text="NI Compras"::: |
+| Nicaragua | Sales VAT Book | :::no-loc text="NI Ventas"::: |
+| Panama | ITBMS Purchases Book | :::no-loc text="PA Compras"::: |
+| Panama | ITBMS Sales Book | :::no-loc text="PA Ventas"::: |
+| Paraguay | Purchase VAT Book | :::no-loc text="PY Compras"::: |
+| Paraguay | Sales VAT Book | :::no-loc text="PY Ventas"::: |
+| Uruguay | Purchase VAT Book | :::no-loc text="UY Compras"::: |
+| Uruguay | Sales VAT Book | :::no-loc text="UY Ventas"::: |
+| Venezuela | Purchase VAT Book Details | :::no-loc text="VE Compras"::: |
+| Venezuela | Sales VAT Book | :::no-loc text="Tax report- declaration Sales VAT Venezuela"::: |
 
 ## Configure application-specific parameters
 
