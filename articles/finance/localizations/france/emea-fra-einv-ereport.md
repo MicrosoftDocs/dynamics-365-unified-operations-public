@@ -396,6 +396,8 @@ According to French requirements, each individual electronic invoice must contai
 - **#PMT#** *the text of the second note*
 - **#AAB#** *the text of the third note*
 
+## ******************** B2G ********************
+
 ### Configure mandatory notes for Sales and Free text invoices
 
 To automate the creation of notes, see [Advanced notes management](../italy/emea-ita-exil-structured-notes.md).
@@ -633,6 +635,8 @@ The list of mandatory status codes supported in electronic invoicing for Microso
 > You can find the full list of statuses in the [Specifications and standards for electronic invoicing](https://www.impots.gouv.fr/specifications-externes-b2b).
 
 ### <a id="ERconfigs"></a>List of Electronic Reporting configurations
+
+## ******************** ADJUST the LIST ********************
 
 - Invoice model
   - Invoice model mapping
