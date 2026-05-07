@@ -4,7 +4,7 @@ description: Learn how to post Tax Deducted at Source (TDS)/Tax Collected at Sou
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 05/01/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Application User

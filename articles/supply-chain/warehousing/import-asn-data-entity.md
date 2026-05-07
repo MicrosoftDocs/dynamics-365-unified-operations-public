@@ -4,7 +4,7 @@ description: Learn how to manage the import of inbound advanced shipping notices
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 06/07/2024
+ms.date: 5/5/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -15,9 +15,9 @@ ms.search.form: WHSInboundASNV3Entity, WHSInboundASNEntity, DMFEntity, WHSInboun
 
 [!include [banner](../../includes/banner.md)]
 
-Advanced shipping notices (ASNs) notify you about vendor deliveries. They help the sender describe the contents of a shipment and additional information about it, such as the items and packaging.
+Advanced shipping notices (ASNs) notify you about vendor deliveries. They help the sender describe the contents of a shipment and provide additional information about it, such as the items and packaging.
 
-ASNs can help warehouse workers learn what is arriving when. Therefore, they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order or [inbound shipment order](wms-only-mode-overview.md) that was previously created.
+ASNs can help warehouse workers learn what is arriving so they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order or [inbound shipment order](wms-only-mode-overview.md) that was previously created.
 
 This article presents a collection of scenarios that show, through examples, how to work with ASN files.
 
@@ -26,7 +26,7 @@ This article presents a collection of scenarios that show, through examples, how
 
 ## Inbound ASN
 
-You import inbound ASNs by using the *Inbound ASN V3* and/or *Inbound ASN V5* composite data entities, which take advantage of the following child entities:
+You import inbound ASNs by using the *Inbound ASN V3* and/or *Inbound ASN V5* composite data entities. These entities use the following child entities:
 
 - Inbound load header
 - Inbound shipment header
@@ -35,7 +35,7 @@ You import inbound ASNs by using the *Inbound ASN V3* and/or *Inbound ASN V5* co
 - Inbound load packing structure case lines
 - Inbound load packing structure lines
 
-The *Inbound ASN* composite data entities are intended for asynchronous integration scenarios where, for example, XML file–based imports can be used.
+The *Inbound ASN* composite data entities are intended for asynchronous integration scenarios where, for example, you can use XML file–based imports.
 
 > [!NOTE]
 > Only the *Inbound ASN V5* data entity supports [inbound shipment orders](wms-only-mode-overview.md). The type of order must be specified as part of the ASN data, which can be either *InboundShipmentOrder* for inbound shipment orders or *Purch* for purchase orders.
@@ -131,10 +131,10 @@ The following example shows an XML file for importing vendor shipments for multi
 
 ## Example of using the Inbound ASN V5 entity
 
-This section provides an example of an ASN XML import file for inbound shipment orders that can be used with the *Inbound ASN V5* entity.
+This section provides an example of an ASN XML import file for inbound shipment orders that you can use with the *Inbound ASN V5* entity.
 
 > [!NOTE]
-> The *Inbound ASN V5* entity supports the `MODULE` attribute for both the `WHSInboundLoadPackingStructureEntity` element and the `WHSInboundLoadPackingStructureLineV5Entity` element. This attribute can be used for both purchase orders (`MODULE="Purch"`) and inbound shipment orders (`MODULE="InboundShipmentOrder"`).
+> The *Inbound ASN V5* entity supports the `MODULE` attribute for both the `WHSInboundLoadPackingStructureEntity` element and the `WHSInboundLoadPackingStructureLineV5Entity` element. Use this attribute for both purchase orders (`MODULE="Purch"`) and inbound shipment orders (`MODULE="InboundShipmentOrder"`).
 
 The following example shows an XML file for importing shipments for an inbound shipment order that doesn't include case details.
 
@@ -152,19 +152,19 @@ The following example shows an XML file for importing shipments for an inbound s
 ```
 
 > [!NOTE]
-> If you are importing an ASN for an [inbound shipment order](wms-only-mode-overview.md) (`MODULE="InboundShipmentOrder"`), the `ORDERNUMBER` value must correspond to an external (source system) order number.
+> If you're importing an ASN for an [inbound shipment order](wms-only-mode-overview.md) (`MODULE="InboundShipmentOrder"`), the `ORDERNUMBER` value must correspond to an external (source system) order number.
 
 ## Inspect the results of importing an ASN file
 
 Follow these steps to inspect the results of importing an ASN file.
 
-1. Go to **Warehouse management \> Loads \> All loads**.
-1. Find and open a load that was created as part of an ASN import.
-1. On the **Load** FastTab, you should see values that are based on the XML file.
-1. On the **Load lines** FastTab, you should see purchase order numbers and item details that are based on the XML file.
+1. Go to **Warehouse management > Loads > All loads**.
+1. Find and open a load that you created as part of an ASN import.
+1. On the **Load** FastTab, you see values that are based on the XML file.
+1. On the **Load lines** FastTab, you see purchase order numbers and item details that are based on the XML file.
 1. On the Action Pane, on the **Ship and receive** tab, in the **Receive** group, select **Packing structure** to review the packing structure of the load.
-1. On the **Pallets** FastTab, you should see license plates that are based on the XML file.
-1. On the **Cases** FastTab, you should see cases that are based on the XML file.
-1. On the **Items** FastTab, you should see items and quantities that are based on the XML file.
+1. On the **Pallets** FastTab, you see license plates that are based on the XML file.
+1. On the **Cases** FastTab, you see cases that are based on the XML file.
+1. On the **Items** FastTab, you see items and quantities that are based on the XML file.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
