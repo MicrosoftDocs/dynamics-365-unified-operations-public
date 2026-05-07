@@ -22,6 +22,14 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## August 2025
+
+### Security update
+
+| Feature | Description | Status |
+|---|---|---|
+|Security update |The dual-write integration is being updated to use a new AppID for communication between Finance and Operations apps and Dataverse. This replaces the legacy AppID and aligns dual-write with a more secure and robust platform framework, including improvements to authentication handling and token exchange. [Learn more about dual-write app migration](https://learn.microsoft.com/en-us/power-platform/admin/app-migration-dual-write) |General availability|
+
 ## January 2025
 
 ### Global address book
