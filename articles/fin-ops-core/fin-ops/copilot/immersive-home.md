@@ -17,6 +17,8 @@ ms.collection:
 
 # Immersive Home overview
 
+[!include [banner](../includes/banner.md)]
+
 This article describes Immersive Home, how it helps you work hand in hand with AI agents and focus on the most important work items assigned to you.
 
 Immersive Home is a modern, AI-first landing page that adapts to your most important work, aids decision making, and reduces the need to navigate elsewhere to complete common tasks. It's a modern option for the [initial page](../get-started/set-users-initial-page.md) in finance and operations apps and links to tools for enabling, monitoring, teaching, and interacting with AI agents.
