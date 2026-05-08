@@ -476,10 +476,8 @@ Set up units of measure.
 > [!IMPORTANT]
 > **Electronic invoicing scope**
 >
->The following types of documents are *excluded* from **E-Invoicing** individual submissions and are *included* in the scope of **E-Reporting**.
->
->- **Non-domestic Business-to-Business (B2B) invoices** - the invoices issued to buyers whose **Delivery** address is outside France.
->- **All Business-to-Consumer (B2C) invoices** - the invoices issued for the customers that don't have the **SIREN** registration number defined.
+> Only the invoices issued for the customers that have the non-empty **SIRET** registration number defined for the French country code (**FRA**) will be *included* into the scope of **E-Invoicing** individual submissions. All other invoices will be *excluded* from **E-Invoicing** and considered for **E-Reporting**.
+
 
 After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. The submission process consists of three major steps.
 
