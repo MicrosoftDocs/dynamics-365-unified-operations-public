@@ -88,20 +88,20 @@ In the *copy a financial tag* rule, you can copy a financial tag rule in two way
 
 ## How financial tag rules apply to transactions
 
-Three categories of rule can populate a financial tag, and each fires at different points in the record lifecycle:
+Two types of rules can populate a financial tag, and each fires at different points in the record lifecycle:
 
-| Rule | Where it's defined | When it fires | Overwrites existing value? |
-|---|---|---|---|
-| **System header → line copy rule** | Built in; enabled with the system rules toggle. Copies the header tag to the line tag (and the **Account tag** to the offset **Account tag** in journals). | **Only once, when the line is created.** It does not re-evaluate when the line is later modified or saved, and a later change to the header is not propagated to existing lines. | No. The line keeps whatever value was copied at create time. |
-| **User-defined header rule** (transaction level = **Header**) | **Financial tag rules** page. | Typically on header **create** and on **save**. For some documents, the rule also re-evaluates when the primary account on the header is modified. | Only if **Overwrite existing value** is set to **Yes** on the rule. |
-| **User-defined line / account rule** (transaction level = **Account** or **Line**) | **Financial tag rules** page. | On line **create**, on **save**, and on **modify** (for example, when the account field changes or another field that the formula references changes). | Only if **Overwrite existing value** is set to **Yes** on the rule. |
+| Rule | Transaction Level | Scope | Where it's defined | When it fires | Overwrites existing value? |
+|---|---|---|---|---|---|
+| **System rule** | **Line**, **Account**, **OffsetAccount** | All Financial tags | Built in; Copies the header tag to the line tag, and the **Account tag** to the **Offset Account tag** in journals. | **Only once, when the line is created.** It does not re-evaluate when the line is later modified or saved, and a later change to the header is not propagated to existing lines. | By default, **No**. The line keeps whatever value was copied at create time. **Overwrite existing value** can be updated from the **Financial tag rules** page if overwrite is desired. |
+| **User-defined rule** | **Header** | Individual Financial tags | **Financial tag rules** page. | Typically on header **create** and on **save**. For some documents, the rule also re-evaluates when the primary account on the header is modified. | Only if **Overwrite existing value** is set to **Yes** on the rule. |
+| **User-defined rule** | **Line**, **Account**, **OffsetAccount** | Individual Financial tags | **Financial tag rules** page. | On line **create**, on **save**, and on **modify** (for example, when the account field changes or another field that the formula references changes). | Only if **Overwrite existing value** is set to **Yes** on the rule. |
 
 > [!IMPORTANT]
-> The system header → line copy rule is the only rule that fires **once on create and never again**. If you change a header tag after lines already exist, the existing lines aren't updated by this rule. To re-flow a header value to existing lines, configure a user-defined line rule with **Overwrite existing value** set to **Yes**, or update the line tags manually.
+> The **System rules** only fire **once on create and never again**. If you change a header tag after lines already exist, the existing lines aren't updated by this rule. Likewise, if you change the Account tag, the offset account won't be updated. To re-flow a header value to existing lines, configure a user-defined line rule with **Overwrite existing value** set to **Yes**, or update the line tags manually.
 
 For journals, when you set the account or offset account field, all user-defined rules for that transaction level run and populate each target. Rules with **Overwrite existing value** set to **Yes** replace whatever value the user or a system rule previously set.
 
-When you save the record, user rules run again to provide a final overwrite of financial tags. This re-evaluation reflects any value the user changed before save (or before moving to a new row, which also triggers a save).
+When you save the record, user rules run again to provide a final overwrite of financial tags. This re-evaluation reflects any value the user changed before saving.
 
 For example, if you set a rule at the **Header** level, you see the financial tags populated as soon as you create a new journal:
 
