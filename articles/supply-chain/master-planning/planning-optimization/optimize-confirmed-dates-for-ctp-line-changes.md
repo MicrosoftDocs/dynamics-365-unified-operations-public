@@ -65,23 +65,19 @@ The following modes of delivery are configured:
 
 The user creates a sales order line with **Mode of delivery** set to *Truck*. CTP returns the following dates:
 
-| Field | Value |
-|---|---|
-| **Requested ship date** | *November 11, 2025* |
-| **Confirmed ship date** | *November 11, 2025* |
-| **Requested receipt date** | *November 10, 2025* |
-| **Confirmed receipt date** | *November 10, 2025* |
+- **Requested ship date** – *November 11, 2025*
+- **Confirmed ship date** – *November 11, 2025*
+- **Requested receipt date** – *November 10, 2025*
+- **Confirmed receipt date** – *November 10, 2025*
 
 ### Change the mode of delivery to air
 
 The user changes **Mode of delivery** to *Air*. The *optimize confirmed dates for CTP line changes* feature automatically adjusts the dates to reflect the shorter transport time. The result is:
 
-| Field | Value |
-|---|---|
-| **Requested ship date** | *November 9, 2025* |
-| **Confirmed ship date** | *November 9, 2025* |
-| **Requested receipt date** | *November 10, 2025* |
-| **Confirmed receipt date** | *November 10, 2025* |
+- **Requested ship date** – *November 9, 2025*
+- **Confirmed ship date** – *November 9, 2025*
+- **Requested receipt date** – *November 10, 2025*
+- **Confirmed receipt date** – *November 10, 2025*
 
 Without this feature, the requested and confirmed ship dates stay *November 1, 2025* even though only one transport day is required.
 
@@ -100,23 +96,19 @@ The following modes of delivery are configured:
 
 You create a sales order line with **Mode of delivery** set to *Air*. CTP returns the following dates:
 
-| Field | Value |
-|---|---|
-| **Requested ship date** | *November 9, 2025* |
-| **Confirmed ship date** | *November 9, 2025* |
-| **Requested receipt date** | *November 10, 2025* |
-| **Confirmed receipt date** | *November 10, 2025* |
+- **Requested ship date** – *November 9, 2025*
+- **Confirmed ship date** – *November 9, 2025*
+- **Requested receipt date** – *November 10, 2025*
+- **Confirmed receipt date** – *November 10, 2025*
 
 ### Change the mode of delivery to truck
 
 You change **Mode of delivery** to *Truck*. The *optimize confirmed dates for CTP line changes* feature automatically adjusts the dates to reflect the longer transport time. Assuming there's no delay and the item can be shipped on *November 1, 2025*, the result is:
 
-| Field | Value |
-|---|---|
-| **Requested ship date** | *November 1, 2025* |
-| **Confirmed ship date** | *November 1, 2025* |
-| **Requested receipt date** | *November 10, 2025* |
-| **Confirmed receipt date** | *November 10, 2025* |
+- **Requested ship date** – *November 1, 2025*
+- **Confirmed ship date** – *November 1, 2025*
+- **Requested receipt date** – *November 10, 2025*
+- **Confirmed receipt date** – *November 10, 2025*
 
 Without this feature, the requested and confirmed receipt dates would shift to *November 19, 2025* because the original ship date of *November 9, 2025* plus 10 transport days would be used, even though the item is available earlier.
 
