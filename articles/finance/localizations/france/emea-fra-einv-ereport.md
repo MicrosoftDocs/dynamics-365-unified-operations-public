@@ -642,15 +642,15 @@ The list of mandatory status codes supported in electronic invoicing for Microso
   - UBL Sales e-credit note (FR)
   - UBL Project e-invoice (FR)
   - UBL Project e-credit note (FR)
-  - Vendor invoice import Edicom (FR) !!!!!!!!!!!!!!!!!!!!!!
-  - Vendor invoice Mapping to destination !!!!!!!!!!!!!!!!!!!
+  - Vendor invoice import Edicom (FR)
+  - Vendor invoice Mapping to destination
   - Invoice status model mapping
   - Edicom invoice status payment confirmation format
   - Edicom invoice status reject format
 - Customer invoice context model
   - Customer invoice context model (FR)
-  - Import invoice context model !!!!!!!!!!!!!!!!!!!!!!!!!!!
-  - Import response context !!!!!!!!!!!!!!!!!!!!!!!!
+  - Import invoice context model
+  - Import response context
   - AP response context
   - AR response context
 - Response message model
