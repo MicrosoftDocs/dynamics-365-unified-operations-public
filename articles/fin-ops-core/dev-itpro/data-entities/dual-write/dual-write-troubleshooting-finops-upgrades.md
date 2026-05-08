@@ -44,7 +44,7 @@ To fix the problem, follow these steps:
 1. Build the project, and confirm that the build is successful.
 1. On the **Dynamics 365** menu, select **Synchronize database**.
 1. Select **Synchronize** to do a full database synchronization.
-1. After the full database synchronization is successful, rerun the database synchronization step in Microsoft Dynamics Lifecycle Services (LCS) and use the manual upgrade scripts as applicable, so that you can proceed with the update.
+1. After the full database synchronization is successful, rerun the database synchronization step in Microsoft Dynamics Lifecycle Services and use the manual upgrade scripts as applicable, so that you can proceed with the update.
 
 ## Missing table columns issue on maps
 

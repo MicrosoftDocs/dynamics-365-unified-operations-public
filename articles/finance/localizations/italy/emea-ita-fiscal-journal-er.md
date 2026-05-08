@@ -3,10 +3,10 @@ title: Fiscal journal report
 description: Learn about the Fiscal journal report in Italy.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
-ms.date: 12/18/2025
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy

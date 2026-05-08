@@ -4,7 +4,7 @@ description: Learn about how the VALUEINLARGE Electronic reporting (ER) function
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 08/17/2020
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -59,12 +59,12 @@ When the `VALUEINLARGE` function expression is executed and more than one tempor
 You define the following data sources in your model mapping:
 
 - The **In** data source of the *Table records* type.
-    - This data source refers to the **Intrastat** table.
-    - The **Cross-company** option is set to **No**.
+  - This data source refers to the **Intrastat** table.
+  - The **Cross-company** option is set to **No**.
 - The **InMemory** data source of the *Calculated field* type.
-    - This data source contains the expression `WHERE (In, In.Port <> "")`.
+  - This data source contains the expression `WHERE (In, In.Port <> "")`.
 - The **InFiltered** data source of the *Calculated field* type.
-    - This data source contains the expression `FILTER (In, VALUEINLARGE(In.RecId, InMemory, InMemory.RecId)`.
+  - This data source contains the expression `FILTER (In, VALUEINLARGE(In.RecId, InMemory, InMemory.RecId)`.
 
 When the data source **InFiltered** is called under the context of the company **DEMF**, a new temporary table is created in the application database, the collected in memory list of record identification codes are inserted to this table, and the following SQL statement is generated to return filtered records of the **Intrastat** table.
 
@@ -79,6 +79,5 @@ EXISTS (SELECT 'x' FROM tempdb."DBO".? T2 WHERE ((T2.PARTITION=?) AND (T1.RecId=
 [Logical functions](er-functions-category-logical.md)
 
 [VALUEIN functions](er-functions-logical-valuein.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

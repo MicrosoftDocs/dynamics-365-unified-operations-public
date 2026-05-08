@@ -4,7 +4,7 @@ description: Learn about how the QRCODE Electronic reporting (ER) function is us
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 12/10/2019
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -40,13 +40,13 @@ The resulting binary stream.
 
 ## Example
 
-You can configure an Electronic reporting (ER) format to generate an outbound document in Microsoft Office format (Excel workbooks or Word documents) by using a predefined template. This template may contain a **Picture** object (Excel workbook) or a **Picture Content Control** (Word document) as a placeholder for a QR code image. You need to add to the configured ER format a **Cell** element that will be used to fill this placeholder in. To specify what information will be stored in a QR code, you need to define a binding for this **Cell** element. For example, you can configure such binding as containing the following expression:
+You can configure an Electronic reporting (ER) format to generate an outbound document in Microsoft Office format (Excel workbooks or Word documents) by using a predefined template. This template might contain a **Picture** object (Excel workbook) or a **Picture Content Control** (Word document) as a placeholder for a QR code image. Add a **Cell** element to the configured ER format that fills this placeholder. To specify what information the QR code stores, define a binding for this **Cell** element. For example, you can configure the binding to contain the following expression:
 
 ```vb
 QRCODE (model.ListOfShelfLabels.LabelText)`
 ```
 
-When you run the configured ER format, the text value of the **LabelText** field of the **model.ListOfShelfLabels** data source will be used to generate a QR code image. This image will replace a QR code image placeholder in the document template using to generate an outbound document. When this image of the generated document is scanned, it returns the text that was taken from the **LabelText** field of the **model.ListOfShelfLabels** data source. For more information, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
+When you run the configured ER format, the text value of the **LabelText** field of the **model.ListOfShelfLabels** data source generates a QR code image. This image replaces a QR code image placeholder in the document template that you use to generate an outbound document. When you scan this image of the generated document, it returns the text that was taken from the **LabelText** field of the **model.ListOfShelfLabels** data source. For more information, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
 
 ## Additional resources
 

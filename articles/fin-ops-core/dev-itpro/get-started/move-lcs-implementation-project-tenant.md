@@ -1,10 +1,10 @@
 ---
 title: Move Lifecycle Services implementation projects to different Microsoft Entra tenants
 description: Learn about how to move your subscriptions and Lifecycle Services Implementation project to a different Microsoft Entra tenant.
-author: twheeloc
+author: thedsk8-microsoft
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 03/26/2026
+ms.date: 04/21/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-You can move your subscriptions and your Microsoft Dynamics Lifecycle Services Implementation project to a different Microsoft Microsoft Entra tenant. Here are some scenarios where this move might be required:
+You can move your subscriptions and your Microsoft Dynamics 365 Lifecycle Services implementation project to a different Microsoft Microsoft Entra tenant. Here are some scenarios where this move might be required:
 
 - You accidentally purchase subscriptions against the wrong Microsoft Entra tenant.
 
@@ -58,7 +58,7 @@ If you licensed through a Microsoft Volume Licensing agreement, call the [Volume
 
 On the new tenant, you get a new Lifecycle Services project that you must initiate and set up.
 
-1. Complete the Project Onboarding wizard. For more information, see [Lifecycle Services project onboarding](../lifecycle-services/project-onboarding.md). When completing the wizard, indicate on the **Project Overview** page that you're **Moving existing Lifecycle Services project from another tenant** and provide the source Lifecycle Services project ID.
+1. Complete the Project Onboarding wizard. For more information, see [Lifecycle Services project onboarding](../lifecycle-services/project-onboarding.md). When completing the wizard, indicate on the **Project overview** page that you're **Moving existing Lifecycle Services project from another tenant** and provide the source Lifecycle Services project ID.
 1. Fully configure Lifecycle Services. As part of this configuration, you must:
 1. Upload and activate a subscription estimator. If you're already live in the source Lifecycle Services project, you need to ensure that the estimates match.
 1. Add your deployable package to the asset library.
@@ -72,6 +72,69 @@ On the new tenant, you get a new Lifecycle Services project that you must initia
 1. Deploy the nonproduction environments in the new Lifecycle Services project.
 1. Apply the required code packages to the environments. Make sure that the target is running the same application version as the source. Use [All-in-one deployable packages](../dev-tools/aio-deployable-packages.md) and include any ISV licenses, if applicable.
 1. Upload data to the environments. You can move the data through data packages or by restoring the database. If you restore the database, you need to remap some properties to the new tenant.
+   1. This script is only required if you are performing a database restore. Before doing the export, update the placeholders with your old and new tenant details and execute the SQL command on the source environment.
+      1. This takes the backup of SYSCONFIG table and updates the value of the tenant with target tenant information.
+      2. Once the export is done, you'll need to recover this table to get back the source tenant information. Use the script below: 
+   ```
+     -- =============================================
+      -- Script: Update AAD Tenant in SYSCONFIG
+      -- Purpose: Updates the AAD tenant domain and tenant ID
+      --          in the SYSCONFIG table after a tenant migration.
+      -- =============================================
+    
+      DECLARE @NewTenantDomain VARCHAR(255)
+      DECLARE @NewTenantId VARCHAR(255)
+      DECLARE @OldTenantDomain VARCHAR(255)
+      DECLARE @OldTenantId VARCHAR(255)
+    
+      SET @NewTenantDomain = '<new-tenant-domain>' -- New AAD tenant domain (e.g., contoso.onmicrosoft.com)
+      SET @NewTenantId = '<new-tenant-id>'         -- New AAD tenant ID (GUID)
+      SET @OldTenantDomain = '<old-tenant-domain>' -- Current AAD tenant domain
+      SET @OldTenantId = '<old-tenant-id>'         -- Current AAD tenant ID (GUID)
+    
+      -- Back up SYSCONFIG before making changes
+      PRINT 'Backing up SYSCONFIG table...'
+      SELECT * INTO SYSCONFIG_BKP FROM SYSCONFIG
+    
+      -- Update tenant domain
+      IF EXISTS (SELECT VALUE FROM SYSCONFIG
+                 WHERE CONFIGTYPE = 0 AND ID = 0 AND VALUE = @OldTenantDomain)
+      BEGIN
+          PRINT 'Updating tenant domain to: ' + @NewTenantDomain
+          UPDATE SYSCONFIG
+          SET VALUE = @NewTenantDomain
+          WHERE CONFIGTYPE = 0
+            AND ID = 0
+            AND VALUE = @OldTenantDomain
+      END
+      ELSE
+      BEGIN
+          PRINT 'No tenant domain update required.'
+      END
+    
+      -- Update tenant ID
+      IF EXISTS (SELECT VALUE FROM SYSCONFIG
+                 WHERE CONFIGTYPE = 1 AND ID = 0 AND VALUE = @OldTenantId)
+      BEGIN
+          PRINT 'Updating tenant ID to: ' + @NewTenantId
+          UPDATE SYSCONFIG
+          SET VALUE = @NewTenantId
+          WHERE CONFIGTYPE = 1
+            AND ID = 0
+            AND VALUE = @OldTenantId
+      END
+      ELSE
+      BEGIN
+          PRINT 'No tenant ID update required.'
+      END
+   ```
+   ```
+     -- Restore SYSCONFIG to original values after export
+      DELETE FROM SYSCONFIG
+      INSERT INTO SYSCONFIG SELECT * FROM SYSCONFIG_BKP
+      DROP TABLE SYSCONFIG_BKP
+   ```
+    
 1. Update your user information.
 1. Remove all user accounts except the admin user.
 1. Fix the admin user record in USERINFO.
@@ -109,7 +172,7 @@ If you don't already have a production environment deployed on the old tenant, y
 > You can only perform tenant migration if the **source and target production environments are in the same region**. If the source environment is in a different region, you need to move the environment to the same region as the target. For more information about moving an environment, see [Finance and operations apps environment migration](/dynamics365/fin-ops-core/dev-itpro/deployment/environment-migration-process).
 
 > [!IMPORTANT]
-> Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed. For more information, see [Securely access customer data by using Customer Lockbox Known Issues](/power-platform/admin/about-lockbox#known-issues).  
+> Tenant-to-tenant migration isn't supported when Customer lockbox is enabled. You must disable Customer lockbox to move an environment to another tenant. You can re-enable Customer lockbox after the migration is completed. For more information, see [Securely access customer data by using Customer Lockbox Known Issues](/power-platform/admin/about-lockbox#known-issues).  
 
 If you already have a production environment deployed on the old tenant, Microsoft moves your database and Azure Blob storage from your old production environment to the new one. As a prerequisite, complete the following steps after you finish moving all the sandbox environments and complete UAT. The process of moving a production environment to a new tenant requires downtime of up to 48 hours.
 
@@ -137,7 +200,7 @@ Before requesting the production environment, ensure that you complete all prere
 
   **Testing**
 
-- Confirm that the smoke testing is completed on the sandbox environment (Tier-2 or higher) in the target Lifecycle Services project.
+Confirm that the smoke testing is completed on the sandbox environment (Tier-2 or higher) in the target Lifecycle Services project.
 
   **Code Management**
 
@@ -158,10 +221,10 @@ Before requesting the production environment, ensure that you complete all prere
 
 - You can't select the same name for the new production environment, as it's in use for your old production environment. Choose a new environment name so that a new URL is generated.
 - Make sure you select the same application version that is used by your current production environment.
-- In the Production configuration wizard, select a generic user account, not a named user, as Environment Administrator.
+- In the **Production configuration** wizard, select a generic user account, not a named user, as Environment administrator.
 
 1. After the production environment is deployed, verify that source and target environments have exactly the same code, otherwise migration fails. If necessary, install deployable packages on the target production environment.
-1. Request to copy database and blob storage from the old production environment to the new production environment. Submit a **support ticket** requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include Lifecycle Services IDs and environment IDs from source and target projects in the support ticket.
+1. Request to copy database and blob storage from the old production environment to the new production environment. Submit a support ticket requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include Lifecycle Services IDs and environment IDs from source and target projects in the support ticket.
   
 - This process requires interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request.
 - After Microsoft completes the tenant migration activity and informs you to continue with the next steps, you need to reimport all users from the new Microsoft Entra tenant.
@@ -170,11 +233,11 @@ Before requesting the production environment, ensure that you complete all prere
 
 ## Tear down the Lifecycle Services project on the old tenant
 
-After the new Lifecycle Services project on the new Microsoft Entra tenant is fully functional, you must stop, deallocate, and delete the environments on the old Lifecycle Services project. When you've finished, the **Configure** button becomes available for each environment. If you already had a production environment on the old tenant, you must file a support ticket to have it deleted.
+After the new Lifecycle Services project on the new Microsoft Entra tenant is fully functional, you must stop, deallocate, and delete the environments on the old Lifecycle Services project. When you've finished, the **Configure** button becomes available for each environment. If you already had a production environment on the old tenant, you must open a support ticket to have it deleted.
 
 You should save any remaining artifacts from the Asset library that you might require later.
 
-After all environments have been deleted and all artifacts saved, an Organization Administrator on the old tenant must delete the Lifecycle Services project.
+After all environments have been deleted and all artifacts saved, an Organization administrator on the old tenant must delete the Lifecycle Services project.
 Microsoft reserves the right to disable the customer's account and delete the customer data after the service has been suspended for an extended period.
 
 ## Suspend subscriptions on the old tenant

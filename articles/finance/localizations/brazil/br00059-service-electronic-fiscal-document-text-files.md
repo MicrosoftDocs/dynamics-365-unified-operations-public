@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/03/2026
+ms.date: 04/28/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -15,6 +15,16 @@ ms.search.validFrom: 2016-06-30
 # Service electronic fiscal document using text files (Brazil)
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> The Recibo Provisório de Serviços (RPS) text-based integration described in this article reflects a legacy approach that isn't supported under current Brazilian regulations.
+>
+> As of January 1, 2026, the Brazilian tax authorities deprecate the RPS text format. Customers and partners should use the NFS-e (Nota Fiscal de Serviço Eletrônica) XML-based formats instead.
+>
+> Microsoft Dynamics 365 Finance provides support for NFS-e generation using Electronic Reporting (ER), including the São Paulo municipal format and the Federal standard format. Learn more about the current implementation and required setup in:
+>
+> - [NFS-e Service Invoices - formats for São Paulo and Federal](brazil-nfs-e-service-invoices.md)
+> - [NFS-e service invoices for project-based scenarios](brazil-nfs-e-service-invoices-projects.md)
 
 This article describes how to generate the Recibo Provisorio de Serviço (RPS) for a service fiscal document posted after a sales invoice for a service is issued in São Paulo city Brazil with Microsoft Dynamics 365 Finance.
 
@@ -32,7 +42,5 @@ To generate the RPS for a service fiscal document after a sales invoice for a se
 1. In the **Fiscal establishment ID** field, enter or select a value.
 1. In the **Fiscal document type** field, enter or select a value.
 1. Select **OK**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

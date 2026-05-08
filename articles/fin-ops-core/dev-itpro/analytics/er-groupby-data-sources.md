@@ -55,7 +55,7 @@ By default, if a **GroupBy** data source is run in memory, the application serve
 
 ## <a name="Alternatives"></a>Alternatives
 
-Similar aggregations can be calculated by using [different](er-data-collection-data-sources.md#if-i-have-to-calculate-running-totals-and-collect-data-what-is-the-difference-between-using-a-data-collection-data-source-and-using-the-built-in-data-collection-functions) types of data sources or ER built-in functions.
+Similar aggregations can be calculated by using [different](er-data-collection-data-sources.md#if-i-need-to-calculate-running-totals-and-collect-data-whats-the-difference-between-using-a-data-collection-data-source-and-using-the-built-in-data-collection-functions) types of data sources or ER built-in functions.
 
 To learn more about this feature, complete the example that follows.
 

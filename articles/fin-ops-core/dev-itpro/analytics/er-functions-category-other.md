@@ -4,7 +4,7 @@ description: Learn about the business domain–specific functions that are suppo
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 03/25/2024
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global

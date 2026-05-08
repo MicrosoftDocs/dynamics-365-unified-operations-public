@@ -32,12 +32,12 @@ By defining access-level security in Cost accounting and combining it with row-l
 
 ## Accessing the Power BI content
 
-You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services. For more information about how to download the content and implement it in your organization, see [Power BI content in Lifecycle Services from Microsoft and your partners](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 
 Be sure to download the **Cost accounting analysis** content that applies to the version of Microsoft Dynamics 365 that you're using.
 
 > [!NOTE]
-> KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB at <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+> KB 4011327 is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB at <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## Metrics included in the Power BI content
 
