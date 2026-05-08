@@ -99,7 +99,7 @@ After you complete all the configuration steps described in the previous chapter
 > If some of the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!IMPORTANT]
-> Make sure that the **Vendor invoice Mapping to destination** and **Response message model mapping to destination (FR)** Electronic Reporting configurations are marked as **Default for model mapping**.
+> Make sure that the **Vendor invoice Mapping to destination** and **Response message model mapping to destination (FR domestic)** Electronic Reporting configurations are marked as **Default for model mapping**.
 
 ## Configure the electronic invoicing features
 
@@ -636,37 +636,32 @@ The list of mandatory status codes supported in electronic invoicing for Microso
 
 ### <a id="ERconfigs"></a>List of Electronic Reporting configurations
 
-## ******************** ADJUST the LIST ********************
-
 - Invoice model
-  - Invoice model mapping
   - Invoice model mapping (FR)
   - UBL Sales e-invoice (FR)
   - UBL Sales e-credit note (FR)
   - UBL Project e-invoice (FR)
   - UBL Project e-credit note (FR)
-  - Vendor invoice import
-  - Vendor invoice import Edicom (FR)
-  - Vendor invoice Mapping to destination
+  - Vendor invoice import !!!!!!!!!!!!!!!!!!!!!!!!1
+  - Vendor invoice import Edicom (FR) !!!!!!!!!!!!!!!!!!!!!!
+  - Vendor invoice Mapping to destination !!!!!!!!!!!!!!!!!!!
   - Invoice status model mapping
-  - Edicom invoice status format
   - Edicom invoice status payment confirmation format
   - Edicom invoice status reject format
 - Customer invoice context model
-  - Import invoice context model
-  - Import invoice context model (FR)
-  - Import response context
+  - Customer invoice context model (FR)
+  - Import invoice context model !!!!!!!!!!!!!!!!!!!!!!!!!!!
+  - Import response context !!!!!!!!!!!!!!!!!!!!!!!!
   - AP response context
   - AR response context
 - Response message model
   - Response message model mapping to destination
-  - Response message model mapping to destination (FR)
+  - Response message model mapping to destination (FR domestic)
   - Edicom life cycle status format (FR)
   - Edicom Response status parsing format(FR)
-  - Edicom Response Invoice Status (FR)
+  - Edicom Response Processing
   - Edicom Response Processing (FR)
   - Edicom response error log import
-  - Edicom Response message status format
 
 ## More information
 
