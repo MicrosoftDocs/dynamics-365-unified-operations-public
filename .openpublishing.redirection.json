@@ -28656,12 +28656,10 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/fin-ops/copilot/faq-copilot-suggested-questions.md",
+      "source_path": "articles/fin-ops-core/fin-ops/copilot/faq-copilot-suggested-questions.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
       "redirect_document_id": false
     }
   ]
 
 }
-
-
