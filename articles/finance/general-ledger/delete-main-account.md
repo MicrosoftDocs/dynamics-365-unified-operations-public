@@ -28,8 +28,6 @@ The system runs a reference check against ledger transactions, dimension value c
 
 > The MainAccount '*account number*' is currently being checked for references before it can be deleted. It cannot be deleted until the process is complete.
 
-To check whether the scan has finished, go to **System administration** > **Periodic tasks** > **Data maintenance**. Select the **Misc** tab, and then select **Include system actions**. Find the **Process pending requests for validation for deleting a value** data maintenance action and review its execution logs for errors. The **Last status** column shows **Completed** when the run finished successfully.
-
 ## When a main account can't be deleted
 
 A main account can't be deleted if any of the following are true:
