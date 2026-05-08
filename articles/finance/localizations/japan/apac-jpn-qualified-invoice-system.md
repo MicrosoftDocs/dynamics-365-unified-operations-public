@@ -3,8 +3,10 @@ title: Qualified Invoice System in Japan
 description: Learn about the Qualified Invoice System, which will be required in Japan as of October 1, 2023, including a process for setting up a QII registration number.
 author: prabhatb
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 01/21/2026
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User 
 ms.search.region: Japan

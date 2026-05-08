@@ -3,8 +3,10 @@ title: Set up reduction entries for fixed assets
 description: Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy and can defer corporate income.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 12/08/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Japan

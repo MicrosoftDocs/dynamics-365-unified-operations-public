@@ -4,7 +4,7 @@ description: Learn how to generate the EU sales list for Netherlands in Microsof
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 06/05/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.custom:
   - bap-template
@@ -21,7 +21,7 @@ You can generate a European Union (EU) sales list for the Netherlands in XML for
 
 You can also preview the EU sales list report in Microsoft Excel format. Two formats are available to select: **EU sales list by rows report** or **EU sales list by columns report**.
 
-As a prerequisite, you should learn about EU sales list reporting and create all the necessary settings described in [EU Sales list reporting](../europe/emea-eu-sales-list.md).
+As a prerequisite, learn about EU sales list reporting and create all the necessary settings described in [EU Sales list reporting](../europe/emea-eu-sales-list.md).
 
 ## Set up EU sales list for Netherlands
 
@@ -29,10 +29,10 @@ As a prerequisite, you should learn about EU sales list reporting and create all
 
 To set up XML namespaces for the EU sales list in XML, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Workspaces** \> **Electronic reporting**, and import version 1.10 or higher of the format, **EU Sales list (NL).** For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-1. Select **Configurations** \> **Application specific parameters setup**.
-1. On the **Lookups** FastTab, select **XMLNamespaces**.
-1. On the **Conditions** FastTab, define the path to the XSD schema and the paths to the schema instances, **SchemaInstanceData** and **SchemaInstanceTuples**.
+1. In Dynamics 365 Finance, go to **Workspaces** > **Electronic reporting**, and import version 1.10 or higher of the format, **EU Sales list (NL).** For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+1. Select **Configurations** > **Application specific parameters setup**.
+1. On the **Lookups** FastTab, select **XMLNamespaces**.
+1. On the **Conditions** FastTab, define the path to the XSD schema and the paths to the schema instances, **SchemaInstanceData** and **SchemaInstanceTuples**.
 
     | **Name**             | **Lookup result**                                                                 |
     |----------------------|-----------------------------------------------------------------------------------|
@@ -48,12 +48,12 @@ To set up and generate the Dutch EU sales list for [Multiple VAT registrations](
 
 To set up EU sales list reporting formats, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
 1. On the **EU sales list** tab, in the **File format mapping** field, select the ER format **EU sales list (NL)** that you imported.
 1. In the **Report format mapping** field, select either **EU Sales list by rows report** or **EU sales list by columns report**.
 1. For legal entities with [Multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), on the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, on the NLD country/region line, select the ER format **EU sales list (NL)** that you imported.
 
-    ![Foreign trade parameters.](../media/Foreign-trade-parameters-pic1.png)
+    :::image type="content" source="../media/Foreign-trade-parameters-pic1.png" alt-text="Screenshot of Foreign trade parameters.":::
 
 ## Set up electronic transmission of tax declarations to Digipoort
 
@@ -76,7 +76,7 @@ To set up Azure Key Vault for certificate storage, follow these steps:
 
 1. On the **Secrets** FastTab, select **Add**, and create lines for Key Vault secrets for the Digipoort server and client certificates.
 
-    ![Key vault parameters.](../media/Key-vault-parameters-pic2.png)
+    :::image type="content" source="../media/Key-vault-parameters-pic2.png" alt-text="Screenshot of Key vault parameters.":::
 
 For more information about how to set up Key Vault parameters, see [Set up the Azure Key Vault client](../global/setting-up-azure-key-vault-client.md).
 
@@ -96,7 +96,7 @@ To set up electronic tax declaration parameters, follow these steps:
     - **Server Certificate**: Select the line that you created for the Key Vault secret for the Digipoort server certificate.
     - **Client Certificate**: Select the line that you created for the Key Vault secret for the Digipoort client certificate.
 
-    ![Electronic tax declaration parameters.](../media/Electronic-tax-declaration-parameters-pic3.png)
+    :::image type="content" source="../media/Electronic-tax-declaration-parameters-pic3.png" alt-text="Screenshot of Electronic tax declaration parameters.":::
 
 ## Set up the Dutch EU sales list transmission to Digipoort
 
@@ -112,7 +112,7 @@ To set up Dutch electronic tax declaration parameters, follow these steps:
 1. Select information in the **Contact ID, Name, Contact initials**, **Contact prefix**, and **Telephone** fields.
 1. Set the **Company part of fiscal group** option to **Yes** if this setting is appropriate, and then, in the **Fiscal group** field, select the tax exempt number of the fiscal group.
 
-    ![Electronic tax declaration parameters 2.](../media/Electronic-tax-declaration-parameters-pic4.png)
+    :::image type="content" source="../media/Electronic-tax-declaration-parameters-pic4.png" alt-text="Screenshot of Electronic tax declaration parameters 2.":::
 
 1. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Electronic ICP declaration ID** and **Error ID** references.
 
@@ -125,7 +125,7 @@ To transfer transactions and preview files, follow these steps:
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**. Transfer the EU sales list transactions for the Netherlands to the EU sales list.
 1. Mark any corrected lines as **Corrected**.
 
-    ![EU sales list.](../media/EU-sales-list-pic5.png)
+    :::image type="content" source="../media/EU-sales-list-pic5.png" alt-text="Screenshot of EU sales list.":::
 
     For more information about how to work with the EU sales list journal, see [EU Sales list reporting](../europe/emea-eu-sales-list.md).
 
@@ -140,35 +140,35 @@ To transfer transactions and preview files, follow these steps:
 
 ### Create ICP declaration and send to Digipoort
 
-To create ICP declaration and send to Digipoort, follow these steps:
+To create an ICP declaration and send it to Digipoort, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Dutch electronic ICP declaration**.
 1. Select **New**, and in the **Create electronic ICP declaration** dialog box, select **Company tax registration number**.
 1. Enter or select a value in the **From date** field, and then select the **Reporting period**.
 
-    ![Create ICP declaration.](../media/b9ba11daf6264e32fe22ebb8bc60fb8d.png)
+    :::image type="content" source="../media/b9ba11daf6264e32fe22ebb8bc60fb8d.png" alt-text="Screenshot of Create ICP declaration.":::
 
-1. Select **OK**. The electronic message is created.
+1. Select **OK**. The system creates the electronic message.
 
-    ![Electronic ICP declaration.](../media/edab2697a0ce7503ff6cddcb13a57587.png)
+    :::image type="content" source="../media/edab2697a0ce7503ff6cddcb13a57587.png" alt-text="Screenshot of Electronic ICP declaration.":::
 
-1. Select **Deliveries** to review the lines of the EU sales list that are transferred to the message from the **EU sales list** page.
-1. Select **Corrections** to review the correction lines of the EU sales list that are transferred to the message from **EU sales list** page.
+1. Select **Deliveries** to review the lines of the EU sales list that the system transfers to the message from the **EU sales list** page.
+1. Select **Corrections** to review the correction lines of the EU sales list that the system transfers to the message from **EU sales list** page.
 1. Select **Reporting** to generate an XML file of the EU sales list and set report generation parameters in the **EU reporting** dialog box.
 1. Set **Send electronically** to **Yes** to send the generated XML file to **Digipoort.**
 
-    ![EU reporting.](../media/1a41fae8750905dac7c2eda04b5facb0.png)
+    :::image type="content" source="../media/1a41fae8750905dac7c2eda04b5facb0.png" alt-text="Screenshot of EU reporting.":::
 
-1. Select **OK** and refresh the page. The message status is changed to **Sent**.
-1. Select **Import XML** to import the response from Digipoort. The message status is changed to **Acknowledgement**.
+1. Select **OK** and refresh the page. The message status changes to **Sent**.
+1. Select **Import XML** to import the response from Digipoort. The message status changes to **Acknowledgement**.
 
 ## Get XSD schema and namespaces for the Dutch taxonomy
 
 Dutch taxonomies change once a year. Check for the availability of a new taxonomy to get the new path to the XSD schema and new namespaces. Update application specific parameters accordingly.
 
-1. Open [Documentatie Nederlandse Taxonomie \| Standard Business Reporting (sbr-nl.nl)](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie)
-1. In the **Organisatie** field, select **Belastingdienst.**
-1. In the **Documenten** field, select for example **Omzetbelasting 2021** to get taxonomy for 2021 year.
+1. Open [Documentatie Nederlandse Taxonomie \| Standard Business Reporting (sbr-nl.nl)](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie).
+1. In the **Organisatie** field, select **Belastingdienst**.
+1. In the **Documenten** field, select, for example, **Omzetbelasting 2021** to get taxonomy for 2021 year.
 1. Select **Filter resultaten**.
 1. Locate the document with description of changes, for example for changes between NT14 and NT15 taxonomies, and download the [NT15_BD_20201209 Versioning_NT14_20191211_to_NT15_20201209](https://www.sbr-nl.nl/sites/default/files/bestanden/taxonomie/NT15_BD_20201209%20Versioning_NT14_20191211_to_NT15_20201209.zip) zip archive. Unzip the file.
 
@@ -176,17 +176,17 @@ Dutch taxonomies change once a year. Check for the availability of a new taxonom
 
 To view the changes in EU sales list, complete the following steps.
 
-1. Open the file, Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-icp-opgaaf-2021.html to view the changes in EU sales list.
-1. In the file, under *Schema referenties*, you can see xsd schema names for taxonomies NT14 and NT11. Take the value for entering to **XSDSchema** lookup result. Find more details about application specific parameters for EU sales list format in the section [Set up XML namespaces for the EU sales list in XML](#set-up-xml-namespaces-for-the-eu-sales-list-in-xml) above
-1. In the file, under the **Namespaces** table, you can see the line: bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data. Take this value for entering to **SchemaInstanceData** lookup result.
-1. In the file, under the **Namespaces** table, you can see the line: bd-t= <http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples.xsd>. Take this value for entering to **SchemaInstanceTuples** lookup result.
+1. Open the file, `Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-icp-opgaaf-2021.html` to view the changes in EU sales list.
+1. In the file, under *Schema referenties*, you can see XSD schema names for taxonomies NT14 and NT11. Take the value for entering to **XSDSchema** lookup result. Find more details about application specific parameters for EU sales list format in the section [Set up XML namespaces for the EU sales list in XML](#set-up-xml-namespaces-for-the-eu-sales-list-in-xml) above.
+1. In the file, under the **Namespaces** table, you can see the line: `bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data`. Take this value for entering to **SchemaInstanceData** lookup result.
+1. In the file, under the **Namespaces** table, you can see the line: `bd-t= <http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples.xsd>`. Take this value for entering to **SchemaInstanceTuples** lookup result.
 
 ### VAT declaration
 
 To view the changes in VAT declaration, follow these steps:
 
-1. Open the file, Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-ob-aangifte-2021.html to see the changes in VAT declaration.
-1. In the file, under **Schema referenties,** you can see xsd schema names for taxonomies NT14 and NT11. Take the name of xsd schema for entering to **XSDSchema** lookup result. Find more details about application specific parameters for VAT declaration format in [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) article in **Set up XSD schema and namespaces** section.
-1. In the file, under the **Namespaces** table, you can see the line: bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data. Take this value for entering to **SchemaInstanceData** lookup result.
+1. Open the file, `Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-ob-aangifte-2021.html` to see the changes in VAT declaration.
+1. In the file, under **Schema referenties,** you can see XSD schema names for taxonomies NT14 and NT11. Take the name of XSD schema for entering to **XSDSchema** lookup result. Find more details about application specific parameters for VAT declaration format in [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) article in **Set up XSD schema and namespaces** section.
+1. In the file, under the **Namespaces** table, you can see the line: `bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data`. Take this value for entering to **SchemaInstanceData** lookup result.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

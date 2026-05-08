@@ -4,7 +4,7 @@ description: Access links to documentation resources for Saudi Arabia, including
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 12/09/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Saudi Arabia
