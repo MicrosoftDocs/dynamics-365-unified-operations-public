@@ -699,7 +699,7 @@ items:
         items: 
         - name: Configure Benefits management parameters per company
           href: hr-benefits-setup-parameters-per-company.md
-        - name: Set Benefits management and Employee self-service parameters for all companies
+        - name: Set Benefits management and Employee self service parameters for all companies
           href: hr-benefits-setup-parameters.md
         - name: Configure administrator rights for life events
           href: admin-life-events.md
