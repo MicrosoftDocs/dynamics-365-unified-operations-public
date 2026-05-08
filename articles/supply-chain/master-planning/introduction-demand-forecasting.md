@@ -9,8 +9,7 @@ ms.topic: how-to
 ms.date: 05/06/2026
 ms.custom: 
   - bap-template
-ms.collection:
-  - ai-assisted
+ai-usage: ai-assisted
 ---
 
 # Demand forecasting overview

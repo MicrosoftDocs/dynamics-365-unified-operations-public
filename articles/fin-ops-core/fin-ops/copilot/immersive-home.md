@@ -1,11 +1,11 @@
 ---
-title: Immersive Home overview (production ready preview)
+title: Immersive Home overview
 description: Learn about Immersive Home, how it helps you work hand-in-hand with AI agents and stay focused on your most important work items.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.topic: overview
-ms.date: 03/12/2026
+ms.date: 05/07/2026
 ms.update-cycle: 180-days
 audience: Application User
 ms.search.region: Global
@@ -15,13 +15,11 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Immersive Home overview (production ready preview)
+# Immersive Home overview
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes Immersive Home, how it helps you work hand in hand with AI agents and focus on the most important work items assigned to you.
-
-[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 Immersive Home is a modern, AI-first landing page that adapts to your most important work, aids decision making, and reduces the need to navigate elsewhere to complete common tasks. It's a modern option for the [initial page](../get-started/set-users-initial-page.md) in finance and operations apps and links to tools for enabling, monitoring, teaching, and interacting with AI agents.
 
@@ -34,7 +32,7 @@ Immersive Home is a modern, AI-first landing page that adapts to your most impor
 To use Immersive Home, your system must meet the following requirements:
 
 - You must be running version 10.0.44 or later of your Microsoft finance and operations apps.
-- The feature that is named *(production ready preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
 
 ### Required user privileges
 
@@ -98,4 +96,4 @@ Workspace tiles highlight information that you pin to the dashboard. To pin info
 
 ## Related information
 
-[Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)](faq-immersive-home.md)
+[Responsible AI FAQ for Immersive Home in finance and operations apps](faq-immersive-home.md)
