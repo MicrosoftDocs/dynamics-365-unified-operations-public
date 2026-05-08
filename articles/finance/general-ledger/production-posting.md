@@ -20,7 +20,7 @@ This article provides information about different types of posting in the produc
 
 Register materials as consumed during production when you post the production picking list journal. This action creates transactions that deduct the on-hand inventory. In the **Production parameters**, you can specify whether to post the value of raw materials that are in progress (called WIP) to the ledger.
 
-The value of raw materials that are in progress (WIP) is posted to the **Estimated cost of materials consumed** and **Estimated cost of materials consumed, WIP** accounts. The picking list process for the production order is a physical update to the inventory transactions related to the production order. When a production order is registered as ended, the physical transactions are reversed and the related inventory transactions are financially updated. When the ending journal is posted, the **Cost of materials consumed** and **Cost of materials consumed, WIP** posting types are used.
+The value of raw materials that are in progress (WIP) posts to the **Estimated cost of materials consumed** and **Estimated cost of materials consumed, WIP** accounts. The picking list process for the production order is a physical update to the inventory transactions related to the production order. When you register a production order as ended, the system reverses the physical transactions and financially updates the related inventory transactions. When you post the ending journal, use the **Cost of materials consumed** and **Cost of materials consumed, WIP** posting types.
 
 The **Production** tab on the **Inventory posting profiles** page controls how production orders post to the general ledger. Set this tab when you set the **Ledger posting** field to either **Item and resource** or **Item and category** on the **Production control parameters** page. 
 
@@ -40,11 +40,11 @@ There are three possible ways to post time consumption depending on the option s
 
 ## Reporting finished goods and error quantities
 
-When a production order is **Reported as finished**, the finished goods that have been completed are updated in inventory through the **Report as finished** journal. If you're using WIP accounting, a ledger journal is posted to reduce the WIP accounts and increase the inventory of the finished goods. The journal uses the standard cost that has been defined for the product. If the **Use estimated cost price** option is selected on the **Production control parameters** page, the estimated cost from the production order will be used.
+When you **report a production order as finished**, the system updates the inventory with the completed finished goods through the **Report as finished** journal. If you're using WIP accounting, the system posts a ledger journal to reduce the WIP accounts and increase the inventory of the finished goods. The journal uses the standard cost that you defined for the product. If you select the **Use estimated cost price** option on the **Production control parameters** page, the system uses the estimated cost from the production order.
 
 The value of raw materials that are in progress (WIP) is posted to the **Estimated manufactured cost** and **Estimated manufactured cost, WIP** accounts. The **Report as finished** process for the production order is a physical update to the inventory transactions related to the production order. When a production order is ended, the physical transactions are reversed and the related inventory transactions are financially updated. When the ending journal is posted, the **Manufactured cost** and **Manufactured cost, WIP** posting types are used.
 
-The **Production** tab on the **Inventory posting profiles** page is used to control how production orders will post to the general ledger. This is used when the **Ledger posting** field is set to either **Item and resource** or **Item and category** on the **Production control parameters** page. The **Ledger-items** FastTab on the **Production groups** page can also be used to control posting for production orders when the field is set to **Production groups**.
+The **Production** tab on the **Inventory posting profiles** page is used to control how production orders post to the general ledger. This is used when the **Ledger posting** field is set to either **Item and resource** or **Item and category** on the **Production control parameters** page. The **Ledger-items** FastTab on the **Production groups** page can also be used to control posting for production orders when the field is set to **Production groups**.
 
 For a **Report as finished** journal to post to the general ledger for a production order, the following conditions must be met:
 -   Select the **Post report as finished in ledger** checkbox in the **Production control parameters** page. You can override this setting for a specific site on the **Production control parameters by site** page.
@@ -85,11 +85,11 @@ You can recognize indirect costs on your time consumption related to **Route car
 
 On the **Production control parameters** page, use the **Ledger posting** field to set the level of ledger posting for production processes. 
 
-The following fields are available:
+The following options are available:
 
 ### Item and resource
 
-When you select the **Item and resource** option in the **Ledger posting** field, the posting accounts come from the resource or resource group on operation in the route. Accounts on the specific resource will be the first posting option. If an account isn't specified, the accounts specified on the resource group will be used. Each operation line in a route can have one resource specified as the **Costing resource**. This resource is used for determining the account to be used. This option is commonly used when an organization assigns operating costs to the resources. Costs are often higher for the resources and are used to help make "make versus buy" decisions. This is the most detailed posting configuration, and allows the most granular control of the postings and detailed analytics of the production process.
+When you select the **Item and resource** option in the **Ledger posting** field, the posting accounts come from the resource or resource group on operation in the route. Accounts on the specific resource are the first posting option. If you don't specify an account, the system uses the accounts specified on the resource group. Each operation line in a route can have one resource specified as the **Costing resource**. This resource determines the account to use. Use this option when an organization assigns operating costs to the resources. Costs are often higher for the resources and are used to help make "make versus buy" decisions. This option is the most detailed posting configuration, and it allows the most granular control of the postings and detailed analytics of the production process.
 
 ### Item and category
 
@@ -104,7 +104,7 @@ When you select the **Production groups** option in the **Ledger posting** field
 
 ### Route groups and ledger posting
 
-Each operation line in a route has a **Route group** specified. The **Setup time**, **Run time**, and **Quantity** fields on the **Route group** in the **Estimation and costing** group are used to control whether the time will be used for costing when posting a **Job card** or **Route card journal** on the production order. If the options are disabled, a voucher won't be created in the general ledger for the time consumption.
+Each operation line in a route has a **Route group** specified. Use the **Setup time**, **Run time**, and **Quantity** fields on the **Route group** in the **Estimation and costing** group to control whether the time is used for costing when posting a **Job card** or **Route card journal** on the production order. If you disable these options, the system doesn't create a voucher in the general ledger for the time consumption.
 
 For a **Route card** or **Job card journal** to post to the general ledger for a production order, the following conditions must be met:
 
@@ -131,7 +131,7 @@ The following table shows examples of the default posting types with sample main
  - The **Follow** column indicates if the main account for a specific posting type is typically the same as another posting type. The value in the column indicates the posting type that's typically followed.
 
 > [!NOTE]
-> The suggested main accounts and main account names are suggestions. We recommend that you work with your accountant to determine the best configuration for your business needs.
+> The suggested main accounts and main account names are suggestions. Work with your accountant to determine the best configuration for your business needs.
 
 
 | Posting type  | Main account example | Main account name example| Account type | Debit/ Credit? | Clearing account | Physical or Financial | Follow | Description |
