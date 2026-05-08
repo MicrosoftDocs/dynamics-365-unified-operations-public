@@ -25,10 +25,10 @@ If you uninstall and then reinstall Business performance analytics, you can save
 If you uninstall and then reinstall Business performance analytics, custom reports can be saved in the following ways:
 
 1. **Custom reports in the default solution** – When Business performance analytics is reinstalled, reports owned by the Business performance analytics app in the default solution are restored.
-2. **Reports protected by the `msdyn_bpaconfig` solution** – As long as the `msdyn_bpaconfig` solution isn't uninstalled, Business performance analytics can recover custom reports from it. This safeguard was introduced to help protect against reports being deleted by an admin or other processes with elevated access.  
-3. **Manually saving custom reports** – You can export and re-import your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
+1. **Reports protected by the `msdyn_bpaconfig` solution** – As long as the `msdyn_bpaconfig` solution isn't uninstalled, Business performance analytics can recover custom reports from it. This safeguard was introduced to help protect against reports being deleted by an admin or other processes with elevated access.  
+1. **Manually saving custom reports** – You can export and reimport your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
 
-## Data cleanup before uninstall
+## Data clean up before uninstall
 
 When you uninstall Business performance analytics, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, remain in your storage. The uninstallation process doesn't automatically delete these residual elements. To help maintain a clean and efficient environment, run the following data cleanup script before uninstalling. This step ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup might include removing folders like `msdyn_BpaConfigs`, backup directories, and other Business performance analytics managed artifacts that aren't needed.
 
@@ -200,22 +200,22 @@ After the cleanup script executes successfully, you can proceed to uninstall Bus
 
 ## Automatic data cleanup (version 2.8 and later)
 
-Starting in version 2.8, data cleanup is automatically performed during uninstallation. When the `msdyn_BpaTablesUserRoles` solution is uninstalled, the following error is thrown:
+Starting in version 2.8, the uninstallation process automatically cleans up data. When you uninstall the `msdyn_BpaTablesUserRoles` solution, the system throws the following error:
 
-> "The option to clean up Business performance analytics transformation output folder has been selected. Clean up has started and the solution cannot be deleted until it has completed."
+> "The option to clean up Business performance analytics transformation output folder is selected. Clean up has started and the solution can't be deleted until it has completed."
 
-The system continues to throw the following error until the **Business performance analytics uninstall datalake cleanup** flow has completed successfully:
+The system continues to throw the following error until the **Business performance analytics uninstall datalake cleanup** flow completes successfully:
 
-> "Clean up the transformation folder is in progress. The solution cannot be deleted until it has completed. This may take a while."
+> "Clean up the transformation folder is in progress. The solution can't be deleted until it has completed. This process might take a while."
 
-Once the flow completes, solution uninstallation is allowed to proceed.
+When the flow finishes, solution uninstallation proceeds.
 
 ### Troubleshooting
 
-If the cleanup in-progress error never goes away:
+If the cleanup in-progress error doesn't go away:
 
 1. Ensure that the **Business performance analytics uninstall datalake cleanup** flow is turned on and has a valid primary owner.
-1. If the flow is on, look for errors in the flow run history and post them on Viva Engage or create a support ticket.
+1. If the flow is on, check for errors in the flow run history and post them on Viva Engage or create a support ticket.
 
 If you need to uninstall Business performance analytics but don't want to wait for the cleanup to finish, set the environment variable `msdyn_bpashouldcleanupdatalake` to `false` by running the following script in the browser developer console:
 
