@@ -1,8 +1,8 @@
 ---
-title: Optimize confirmed dates for CTP line changes
+title: Optimize confirmed dates for CTP line changes (preview)
 description: Optimize confirmed dates for CTP line changes feature ensures that confirmed ship and receipt dates on sales order lines remain accurate when fields that affect transport days are modified.
-author: dejangrbec
-ms.author: dejangrbec
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOrderSetup
 ms.topic: how-to
@@ -11,13 +11,19 @@ ms.custom:
   - bap-template
 ---
 
-# Optimize confirmed dates for CTP line changes
+# Optimize confirmed dates for CTP line changes (preview)
 
-The **Optimize confirmed dates for CTP line changes** feature ensures that confirmed ship and receipt dates on sales order lines remain accurate when fields that affect transport days are modified. When you use Capable-to-promise (CTP) with Planning Optimization, this feature automatically adjusts the confirmed dates to optimize delivery without requiring user action.
+[!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: preview until 10.0.49 -->
 
-### When the feature applies
+The *Optimize confirmed dates for CTP line changes* feature ensures that confirmed ship and receipt dates on sales order lines stay accurate when you modify fields that affect transport days. When you use capable-to-promise (CTP) with Planning Optimization, this feature automatically adjusts the confirmed dates to optimize delivery without requiring user action.
 
-The feature applies when you modify a sales order line in a way that changes the calculated transport days. Transport days can be affected by changes to any of the following fields:
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+## When the feature applies
+
+This feature applies when you modify a sales order line in a way that changes the calculated transport days. Changes to any of the following fields can affect transport days:
 
 - **Mode of delivery**
 - **Warehouse**
@@ -25,9 +31,9 @@ The feature applies when you modify a sales order line in a way that changes the
 
 Transport days can either increase (for example, when the delivery mode adds more days, or when the destination or warehouse changes to a more distant location) or decrease (for example, when the delivery mode is faster).
 
-### How the feature works
+## How the feature works
 
-When you modify a field on a sales order line that impacts transport days, the system automatically recalculates the requested and confirmed dates so that they reflect the new transport days.
+When you modify a field on a sales order line that impacts transport days, the system automatically recalculates the requested and confirmed dates to reflect the new transport days.
 
 The system optimizes the confirmed dates as follows:
 
@@ -41,22 +47,21 @@ Before you can use the **Optimize confirmed dates for CTP line changes** feature
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
 - You must use Planning Optimization.
-- You must use Capable-to-promise (CTP) delivery date control on the sales order line. You can use either *Near real-time CTP* or *Batch CTP*.
-- The following features must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-  - *(Preview) Optimize confirmed dates for CTP line changes*
+- You must use capable-to-promise (CTP) delivery date control on the sales order line. You can use either *Near real-time CTP* or *Batch CTP*.
+- The *(Preview) Optimize confirmed dates for CTP line changes* feature must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## Example scenario - changing to a faster mode of delivery
+## Example scenario 1: changing to a faster mode of delivery
 
-This example shows how the feature adjusts confirmed dates when the user changes the mode of delivery to one with fewer transport days.
+This example shows how the feature adjusts confirmed dates when you change the mode of delivery to one with fewer transport days.
 
-### Setup
+### Example scenario 1 setup
 
 The following modes of delivery are configured:
 
 - **Air** - 1 transport day
 - **Truck** - 10 transport days
 
-### Initial sales order line with Truck
+### Initial sales order line with truck
 
 The user creates a sales order line with **Mode of delivery** set to *Truck*. CTP returns the following dates:
 
@@ -67,9 +72,9 @@ The user creates a sales order line with **Mode of delivery** set to *Truck*. CT
 | Requested receipt date | 10.11.2025 |
 | Confirmed receipt date | 10.11.2025 |
 
-### Change the mode of delivery to Air
+### Change the mode of delivery to air
 
-The user changes **Mode of delivery** to *Air*. With the **Optimize confirmed dates for CTP line changes** feature enabled, the system automatically adjusts the dates to reflect the shorter transport time. The result is:
+The user changes **Mode of delivery** to *Air*. When the **Optimize confirmed dates for CTP line changes** feature is enabled, the system automatically adjusts the dates to reflect the shorter transport time. The result is:
 
 | Field | Value |
 |---|---|
@@ -78,22 +83,22 @@ The user changes **Mode of delivery** to *Air*. With the **Optimize confirmed da
 | Requested receipt date | 10.11.2025 |
 | Confirmed receipt date | 10.11.2025 |
 
-Without this feature, the requested and confirmed ship dates would remain 1.11.2025 even though only 1 transport day is required.
+Without this feature, the requested and confirmed ship dates stay 1.11.2025 even though only one transport day is required.
 
-## Example scenario - changing to a slower mode of delivery
+## Example scenario 2: changing to a slower mode of delivery
 
 This example shows how the feature adjusts confirmed dates when the user changes the mode of delivery to one with more transport days.
 
-### Setup
+### Example scenario 2 setup
 
 The following modes of delivery are configured:
 
 - **Air** - 1 transport day
 - **Truck** - 10 transport days
 
-### Initial sales order line with Air
+### Initial sales order line with air
 
-The user creates a sales order line with **Mode of delivery** set to *Air*. CTP returns the following dates:
+You create a sales order line with **Mode of delivery** set to *Air*. CTP returns the following dates:
 
 | Field | Value |
 |---|---|
@@ -102,9 +107,9 @@ The user creates a sales order line with **Mode of delivery** set to *Air*. CTP 
 | Requested receipt date | 10.11.2025 |
 | Confirmed receipt date | 10.11.2025 |
 
-### Change the mode of delivery to Truck
+### Change the mode of delivery to truck
 
-The user changes **Mode of delivery** to *Truck*. With the **Optimize confirmed dates for CTP line changes** feature enabled, the system automatically adjusts the dates to reflect the longer transport time. Assuming there is no delay and the item can be shipped on 1.11.2025, the result is:
+You change **Mode of delivery** to *Truck*. When you the *Optimize confirmed dates for CTP line changes* feature is enabled, the system automatically adjusts the dates to reflect the longer transport time. Assuming there's no delay and the item can be shipped on 1.11.2025, the result is:
 
 | Field | Value |
 |---|---|
