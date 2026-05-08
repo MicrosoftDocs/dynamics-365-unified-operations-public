@@ -6,7 +6,7 @@ ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
@@ -24,16 +24,16 @@ Follow these steps to record the TDS certificate numbers and dates.
 
 1. Go to **Tax \> Indirect tax \> Withholding tax \> Recoverable certificates**.
 
-    [![Recoverable certificates page.](../media/apac-ind-TDS-49.png)]
+    :::image type="content" source="../media/apac-ind-TDS-49.png" alt-text="Screenshot of the Recoverable certificates page.":::
 
-2. On the **Recoverable certificates** page, in the **Tax type** field, select **TDS**.
-3. Select **New** to create a record.
-4. In the **Certificate number** field, enter the TDS certificate number.
-5. In the **Account type** field, select the type of account that the TDS certificate is received for: **Vendor**, **Customer**, or **Ledger**.
-6. In the **Account** field, select the vendor, customer, or ledger account number, depending on the account type that you selected. The **Name** field shows the name of the vendor, customer, or ledger account.
-7. In the **Certificate amount** field, enter the amount of the TDS certificate.
-8. In the **Date** field, enter the certificate date for the certificate number.
-9. Select **Inquiries** to open the **Certificate transactions** page, where you can view the TDS transactions that the TDS certificate number and date are updated for. This information can be updated on the **Update certificate** page (**Tax \> Declarations \> Withholding tax \> Update certificate**).
+1. On the **Recoverable certificates** page, in the **Tax type** field, select **TDS**.
+1. Select **New** to create a record.
+1. In the **Certificate number** field, enter the TDS certificate number.
+1. In the **Account type** field, select the type of account that the TDS certificate is received for: **Vendor**, **Customer**, or **Ledger**.
+1. In the **Account** field, select the vendor, customer, or ledger account number, depending on the account type that you selected. The **Name** field shows the name of the vendor, customer, or ledger account.
+1. In the **Certificate amount** field, enter the amount of the TDS certificate.
+1. In the **Date** field, enter the certificate date for the certificate number.
+1. Select **Inquiries** to open the **Certificate transactions** page, where you can view the TDS transactions that the TDS certificate number and date are updated for. This information can be updated on the **Update certificate** page (**Tax \> Declarations \> Withholding tax \> Update certificate**).
 
     The **Update certificate** page shows the following information for each TDS transaction:
 
@@ -47,7 +47,7 @@ Follow these steps to record the TDS certificate numbers and dates.
     - **Certificate date** – The TDS certificate date that was updated for the TDS transaction.
     - **Certificate number** – TDS certificate number that was updated for the TDS transaction.
 
-10. On the **Recoverable certificates** page, select the **Closed** check box to close the TDS certificate number after you've finished updating it for TDS transactions on the **Update certificate** page.
+1. On the **Recoverable certificates** page, select the **Closed** check box to close the TDS certificate number after you've finished updating it for TDS transactions on the **Update certificate** page.
 
     To select the **Closed** check box for all records on the page, select **Mark all**.
 

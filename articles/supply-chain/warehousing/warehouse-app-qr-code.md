@@ -4,7 +4,7 @@ description: Learn how to generate and scan QR codes to quickly configure the Wa
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 09/02/2025
+ms.date: 04/08/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -14,7 +14,7 @@ ms.search.form:
 
 The Warehouse Management mobile app supports QR code configuration to simplify the connection setup process. Instead of manually entering connection details, you can scan a QR code that contains all the required configuration information.
 
-QR codes can contain connection configuration data in JavaScript Object Notation (JSON) format. Therefore, the Warehouse Management app can quickly be deployed and set up across multiple devices. This method is useful for IT administrators who must configure multiple devices. It's also useful when configurations must be shared with warehouse workers.
+QR codes can contain connection configuration data in JavaScript Object Notation (JSON) format. Therefore, you can quickly deploy and set up the Warehouse Management app across multiple devices. This method is useful for IT administrators who must configure multiple devices. It's also useful when configurations must be shared with warehouse workers.
 
 Other methods for setting connection information include using a connection settings file and manually entering the details. Learn more about these options in [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
 
@@ -116,12 +116,15 @@ New-QRCodeText $jsonConfig -OutPath "warehouse-config.png"
 
 ## Step 3: Distribute the QR code
 
-After you generate the required QR code, you can distribute it in any of the following ways:
+After you generate the required QR code, distribute it in any of the following ways:
 
 - Print it for physical distribution.
 - Share it digitally via email or collaboration platforms.
 - Display it on-screen for easy scanning.
 - Include it in documentation or setup guides.
+
+> [!IMPORTANT]
+> QR codes contain connection configuration data, which might include tenant IDs and environment URLs. Treat QR codes as sensitive information and distribute them only through secure channels. Avoid posting them in publicly accessible locations.
 
 > [!TIP]
 > Copilot can decode a QR code if you enter a prompt such as "Please decode this QR code" and attach the image. This technique can be useful if you want to verify the contents of a QR code before you distribute it.

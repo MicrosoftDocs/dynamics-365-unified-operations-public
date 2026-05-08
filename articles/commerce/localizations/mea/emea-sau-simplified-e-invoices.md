@@ -3,7 +3,7 @@ title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: Learn about the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: ilikond
 ms.author: ikondratenko
-ms.date: 02/27/2026
+ms.date: 04/10/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Saudi Arabia
@@ -17,7 +17,7 @@ ms.custom:
 [!include[banner](../../../finance/includes/banner.md)]
 
 > [!NOTE]
-> The functionality described in this article supports the Phase 2 requirements of the e-invoicing implementation in the Kingdom of Saudi Arabia. For information about the legacy features that support the Phase 1 requirements of the e-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate QR codes and print them on receipts for Saudi Arabia](emea-sau-qr-code.md). 
+> The functionality described in this article supports the Phase 2 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia. For information about the legacy features that support the Phase 1 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate QR codes and print them on receipts for Saudi Arabia](emea-sau-qr-code.md). 
 
 This article provides an overview of the functionality for simplified electronic invoices (e-invoices) that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
@@ -67,13 +67,19 @@ Specify the following settings for Saudi Arabia. Run appropriate distribution jo
 1. [Configure custom fields](#configure-custom-fields-to-use-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to print QR codes on receipts and comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for Saudi Arabia to enable the generation and digital signing of simplified e-invoices.
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel side.
-1. [Specify the ER configurations](#specify-er-configurations) that should be used to generate simplified e-invoices in POS and submit them from Commerce headquarters.
+1. [Specify the ER configurations](#specify-er-configurations) that Commerce headquarters should use to generate simplified e-invoices in POS and submit them.
 1. [Configure e-invoice submission](#configure-e-invoice-submission) for simplified e-invoices that are generated in POS.
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 
+
+### Mix and match transactions aren't supported in Saudi Arabia
+
+A transaction can't include both sales and return lines together. All lines in a transaction must be of the same type. To enforce this requirement, enable the **Prohibit mixing sales and returns in one receipt** setting in the POS functionality profile. To enable it, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, select the functionality profile that is linked to the store, and on the **Functions** FastTab, select the **Prohibit mixing sales and returns in one receipt** check box.
+
+
 ### Enable features for Saudi Arabia
 
-Enable the following features in the **Feature management** workspace:
+In the **Feature management** workspace, enable the following features:
 
 - KSA Electronic-Invoicing capability for the fiscal integration framework
 - (Saudi Arabia) Electronic invoicing integration
@@ -86,9 +92,9 @@ Specify sales tax groups and enable the **Prices include sales tax** option for 
 
 ### Configure custom fields to use in receipt formats for sales receipts
 
-You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup created for.
+You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where you create the language text setup. Alternatively, create the same language texts in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, on the **POS** tab, add the following records for the labels of the custom fields for receipt layouts. The **Language ID**, **Text ID**, and **Text** values that are shown in the table are examples. You can change them to meet your requirements. However, the **Text ID** values must be unique and be equal to or higher than 900001.
+On the **Language text** page, on the **POS** tab, add the following records for the labels of the custom fields for receipt layouts. The **Language ID**, **Text ID**, and **Text** values that are shown in the table are examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
 
 | Language ID | Text ID | Text    |
 |-------------|---------|---------|
@@ -159,7 +165,7 @@ To configure certificates and certificate profiles that you can use for digital 
 
 After you configure certificate profiles, follow these steps:
 
-1. Go to **Retail and Commerce** \> **Channel setup** \> **Fiscal integration** \> **Connector technical profiles**, and select the connector technical profile that you created earlier. 
+1. Go to **Retail and Commerce** > **Channel setup** > **Fiscal integration** > **Connector technical profiles**, and select the connector technical profile that you created earlier. 
 1. To configure certificate profiles per POS register, select **Override**, and create records for all registers that you must specify CSIDs for. 
 1. In each record, on the **Device** FastTab, in the **Certificate profile** field, specify a corresponding certificate profile. For more information about how to override connector technical profile settings, see [Create connector technical profiles](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles).
 

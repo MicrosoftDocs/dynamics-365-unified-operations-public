@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in dual-write
 description: Access links to the release plans, major announcements, and documentation for dual-write, including a table that provides descriptions and number for various bug types.
-author: jaredha
-ms.author: jaredha
+author: ritesp
+ms.author: ritesp
 ms.topic: whats-new
-ms.date: 01/24/2025
+ms.date: 05/07/2026
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
@@ -22,6 +22,14 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## August 2025
+
+### Security update
+
+| Feature | Description | Status |
+|---|---|---|
+|Security update |The dual-write integration is updated to use a new app ID for communication between Finance and Operations apps and Dataverse. This new app ID replaces the legacy app ID and aligns dual-write with a more secure and robust platform framework, including improvements to authentication handling and token exchange. For more information, see [Migrate the dual-write app](/power-platform/admin/app-migration-dual-write). |General availability|
+
 ## January 2025
 
 ### Global address book
@@ -30,7 +38,7 @@ The January regular release of dual-write GAB solution 3.5.2.131 contains the fo
 
 | Feature | Description | Status |
 |---|---|---|
-| Changed the conditions for contact entity business rules to prevent trigger conflicts | Added validation for the company name when contacts are created, to prevent trigger conflicts. | Bug fix |
+| Changed the conditions for contact entity business rules to prevent trigger conflicts | Added validation for the company name when creating contacts, to prevent trigger conflicts. | Bug fix |
 | Support for offline functionality in **Postal address** entity main page | Updated JavaScript logic to read records in offline mode. | Bug fix |
 | Address swapping fix while changing from **Prospect** to **Customer** | Fixed a race condition in a handler file that caused addresses to be swapped when the type was changed from **Prospect** to **Customer**. | Bug fix |
 | Add **Party menu** option for dual-write GAB | Added party menu options in the Sales hub and Customer service hub to enable navigation to party-related information alongside **Accounts** and **Contacts**. | General availability |
@@ -51,7 +59,7 @@ The January regular release of dual-write GAB solution 3.5.2.131 contains the fo
 
 | Feature | Description | Status |
 |---|---|---|
-|Dual-write asynch | Dual-write async supports asynchronous data movement between finance and operations apps and Dataverse apps. It includes a centralized self-service error management capability.<br><br>The async integration jobs is available in all public clouds across all regions.<br><br>Pre-requisites for async<ul><li>Dynamics 365 Finance and Operation Platform update (PU) 64 (10.0.40 with latest quality updates) and above. Verify the application foundation version greater than 7.0.7425.0.</li><li>Minimum Dual-write Core solution version 1.0.24093.1</li></ul>For more information, see [Dual-write async](../../data-entities/dual-write/dual-write-async.md).|Public Preview|
+|Dual-write asynch | Dual-write async supports asynchronous data movement between finance and operations apps and Dataverse apps. It includes a centralized self-service error management capability.<br><br>The async integration jobs are available in all public clouds across all regions.<br><br>Prerequisites for async<ul><li>Dynamics 365 Finance and Operation Platform update (PU) 64 (10.0.40 with latest quality updates) and later. Verify the application foundation version is greater than 7.0.7425.0.</li><li>Minimum Dual-write Core solution version 1.0.24093.1</li></ul>For more information, see [Dual-write async](../../data-entities/dual-write/dual-write-async.md).|Public Preview|
 
 ## September 2024
 
@@ -59,7 +67,7 @@ The January regular release of dual-write GAB solution 3.5.2.131 contains the fo
 
 | Feature | Description | Status |
 |---|---|---|
-|Security update |Security enhancements affecting service bus, table storage and blobs impacting the Dynamics 365 finance and operations and Dual-write core solutions.<br>The security fixes are mandatory. By November 30, 2024, all customers using Dual-write are required to upgrade. <ul><li>PU63 Minimum platform version 7.0.7198.188 or PU64 Minimum platform version 7.0.7279.121.</li><li>Dual-write core solution version in Dataverse - 1.0.24073.3.</li></ul><br>Why is this required?<br><ul><li>If the minimum required version of the Dual-Write core solution isn't installed, the entire Dual-Write feature won't function.</li><li>If the required Dynamics 365 Finance and Operations version updates are not completed by November 30, 2024, Dual-Write pause, resume, and Auto alerts won't function.</li></ul><br>These features haven't changed in functionality but are more secure.|General availability|
+|Security update |Security enhancements affecting service bus, table storage, and blobs impacting the Dynamics 365 finance and operations and Dual-write core solutions.<br>The security fixes are mandatory. By November 30, 2024, all customers using Dual-write are required to upgrade. <ul><li>PU63 Minimum platform version 7.0.7198.188 or PU64 Minimum platform version 7.0.7279.121.</li><li>Dual-write core solution version in Dataverse - 1.0.24073.3.</li></ul><br>Why is this required?<br><ul><li>If the minimum required version of the Dual-Write core solution isn't installed, the entire Dual-Write feature won't function.</li><li>If the required Dynamics 365 Finance and Operations version updates aren't completed by November 30, 2024, Dual-Write pause, resume, and Auto alerts won't function.</li></ul><br>These features haven't changed in functionality but are more secure.|General availability|
 
 ## June 2024
 
@@ -92,7 +100,7 @@ Release notes for March 2024 releases of [Dual-write core solution](https://mark
 | --- | --- | --- | --- |
 | Bug | 3833504 | Critical bug fix for asynchronous processing with Dual-write. | General availability |
 | Bug | 3801381 | Bug fixes and code enhancements for the data synchronization pipeline between finance and operations apps and Dataverse. | General availability |
-| Bug | 25500975 | <ul><li>Optimizing fetch for non-relational database tables to improve data sync performance between finance and operations apps and Dataverse.</li><li> Correcting column values for msdyn_datasyncexecutionsummary_elastic, sourceType, update count, and error count.</li></ul>  | General availability |
+| Bug | 25500975 | <ul><li>Optimizing fetch for nonrelational database tables to improve data sync performance between finance and operations apps and Dataverse.</li><li> Correcting column values for msdyn_datasyncexecutionsummary_elastic, sourceType, update count, and error count.</li></ul>  | General availability |
 
 ### Global address book
 
@@ -102,7 +110,7 @@ The March regular release of Dual-write GAB solution 3.5.2.52 contains the follo
 |---|---|---|
 | Sales order page enhancements | Restrict the creation of ship-to and bill-to addresses by locking the address fields on the sales order page. Customers are expected to select these addresses from the existing postal address entity by using the **Choose ship/bill to address** lookup fields that are attached to the **Order** page. A new shipping/billing address can be created by using the quick create new postal address page option in the same lookup field. | General availability |
 | **Postal address** tab on accounts and contacts pages | Add the postal address component as a new tab on the **Account and contact** page. The **Customer address** tab is kept as is. The postal address entity that's introduced in Dual-write GAB solutions has no customization restrictions. Customers can create lookups to custom entities. They can also create country/region, county, and state/province entities, implement lookup filtering, and easily validate addresses in Dataverse. Customers who want to continue to use the customer address for address input can hide the existing **Address** tab or the new **Postal address** tab. | General availability |
-| Xmultiple for performance | Optimize the existing logic in Dataverse that creates customer addresses during the initial/live synchronization of customer records from postal addresses. This optimization increases the synchronization record capacity and prevents plugin time-outs, especially when a large number of addresses are associated with customers. | General availability |
+| Performance optimization | Optimize the existing logic in Dataverse that creates customer addresses during the initial and live synchronization of customer records from postal addresses. This optimization increases the synchronization record capacity and prevents plugin timeouts, especially when a large number of addresses are associated with customers. | General availability |
 | Bug fix | Enable postal address records to be created from the **Postal address** main page. Previously, postal addresses could be created only by using the postal address quick create page or the quick view page that's attached to the **Postal address** tab on the party page. | General availability |
 | Enhancement | Restrict customization of Microsoft global address book (GAB) business rules to help prevent data corruption. | General availability |
 | Bug fix | Fix an issue with the creation of a contact via the marketing app page. Because of a depth limitation, only the party was created. The plugin couldn't create the corresponding contact entity record. | General availability |
@@ -124,7 +132,7 @@ The March release of Dual-write GAB solution 3.5.2.35 contains the following bug
 
 | Feature | Description | Status |
 | ---|---|---|
-|Bug fix |Dataverse solutions must be CAB based by August 21st.| General availability|
+|Bug fix |Dataverse solutions must be CAB based by August 21.| General availability|
 |Bug fix |Dual-write Global address book plugin county isn't propagated properly in CE| General availability|
 
 #### GAB solution details
@@ -146,8 +154,8 @@ Release notes for January 2024 releases of [Dual-write core solution](https://ma
 | Type | Number | Description | Status |
 | --- | --- | --- | --- |
 | Feature | 3786097 | Provide more actionable error messages to users in Dataverse in cases of system errors from finance and operations apps during live sync. | General availability |
-| Bug | 3782920 | Optimize asynchronous integration job operations for performance improvements | General availability |
-| Bug | 3771402 | Optimize asynchronous integration job operations for performance improvements | General availability |
+| Bug | 3782920 | Optimize asynchronous integration job operations for performance improvements. | General availability |
+| Bug | 3771402 | Optimize asynchronous integration job operations for performance improvements. | General availability |
 
 #### Release timeline for version 1.0.24014.1
 
@@ -166,7 +174,7 @@ Release notes for January 2024 releases of [Dual-write core solution](https://ma
 | --- | --- | --- | --- |
 | Bug | 1045001 | Allow customized views of `Dual Write Async Execution Summary` and `Dual Write Async Execution Error` tables. | General availability |
 | Bug | 25981168 | Update the SourceKey in `Dual Write Async Execution Error` table with the Dataverse RowVersion for sync from Dataverse to finance and operations apps. | General availability |
-| Bug | 3679902 | Update `Dual Write Async Execution Summary` table with Enqueue Count | General availability |
+| Bug | 3679902 | Update `Dual Write Async Execution Summary` table with Enqueue Count. | General availability |
 | Bug | 3761962 | Fix for issue with queued records for asynchronous integration jobs not displaying correctly in the dual-write configuration interface. | General availability |
 
 ## December 2023
@@ -268,7 +276,7 @@ Release notes for the September 2023 release of [Dual-write core solution](https
 | Type | Number | Description | Status |
 | --- | --- | --- | --- |
 | Feature | 24811690 | When resuming a paused dual-write map it's possible that processing queued records before resuming live synchronization can take longer than expected. There's now the option to skip directly to live synchronization of new records when resuming the map, and either move the queued records to asynchronous processing in the **Catch-up errors** list, or discard the queued records.<br><p><br>For more information, see [Pause dual-write for maintenance](./pause-for-maintenance.md). | General availability |
-| Bug fix | 3548103 | This update fixes an issue in which the dual-write runtime throws the below error message if the description field has data but the length of the data is less than the length in the truncate function.<br><p><br>"Index and length must refer to a location within the string." | General availability |
+| Bug fix | 3548103 | This update fixes an issue in which the dual-write runtime throws the following error message if the description field has data but the length of the data is less than the length in the truncate function.<br><p><br>"Index and length must refer to a location within the string." | General availability |
 
 ## August 2023
 
@@ -315,8 +323,8 @@ The June release of Dual-write Global Address Book solution 3.5.1.91 contains th
 | Feature | Description | Status |
 |---|---|---|
 | Bug fix | CRM workflow performance fix to add another check on update calls. | General availability |
-| Bug fix | Updates to the account entity during creation by the CreateVendorsinVendorsTable workflow are causing performance issues. | General availability |
-|Bug fix | Postal address records not created in few cases as address composite fields are null while creation of address via accounts/contacts. | General availability|
+| Bug fix | Updates to the account entity during creation by the CreateVendorsinVendorsTable workflow are causing performance problems. | General availability |
+|Bug fix | Postal address records aren't created in a few cases as address composite fields are null while creating an address via accounts or contacts. | General availability|
 
 The June 2023 release of the Dual-write Supply Chain solution contains the following changes.
 
@@ -435,7 +443,7 @@ The July release of [Dual-write core solution 1.0.36.0](https://marketplace.micr
 
 | Feature | Description | Status |
 |---|---|---|
-| Feature | Enable a five-minute session time-out window for power platform integrated dual-write environments | General availability |
+| Feature | Enable a five-minute session time out window for power platform integrated dual-write environments | General availability |
 
 The July release of Dual-write Global Address Book solution 3.5.1.6 contains the following bug fixes.
 
@@ -463,7 +471,7 @@ The June release of [Dual-write core solution 1.0.35.0](https://marketplace.micr
 | Bug fix | Fixes a bug where dual-write fails for incorrectly formatted table look-ups that have a missing look-up attribute value in the transform. | General availability |
 | Error handling | Provides an actionable error message for an invalid authentication failure during the setup from Microsoft Dynamics Lifecycle Services or Power Platform admin center. | General availability |
 | Performance | Manages the dual-write plug-ins volume and removes outdated plug-ins from the environment. | General availability |
-| Bug fix | The dual-write plug-in time-out duration is now synchronized with the finance and operations live sync time-out duration. Therefore, the dual-write transaction commit must succeed on both sides within a two-minute window. Otherwise, it fails on both sides. | General availability |
+| Bug fix | The dual-write plug-in timeout duration is now synchronized with the finance and operations live sync timeout duration. Therefore, the dual-write transaction commit must succeed on both sides within a two-minute window. Otherwise, it fails on both sides. | General availability |
 | Compliance | For compliance reasons, when entity maps are paused in dual-write, the data is stored for only 24 hours. Administrators are requested to run the maps within 24 hours. | General availability |
 
 ## April 2022 release
@@ -801,7 +809,7 @@ The September 2020 release contains the features and bug fixes listed in the fol
 
 | Feature | Description | Status |
 |------|---------|-------|
-| Lead qualification process in Sales is now company striped | Dynamics 365 Sales users can create a lead, qualify the lead to an opportunity, convert an opportunity into a quote, activate a quote, and create an order. This process was broken in dual-write due to lack of company striping on the **Lead** entity. We implemented company striping on the **Lead** entity, which cascades the company to the underlying **Account** and **Opportunity** tables. Thus the application behavior is restored to support the process. During the **Lead** qualification process, the **Contact** entity isn't company striped. This design supports the **Party** entity model that is due in October 2020. To learn about the **Party** and **GlobalAddressBook** model for dual-write, join the [Dual-Write](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4MDk0ODM3NzYifQ) community on Microsoft Viva Engage. | General availability |
+| Lead qualification process in Sales is now company striped | Dynamics 365 Sales users can create a lead, qualify the lead to an opportunity, convert an opportunity into a quote, activate a quote, and create an order. This process was broken in dual-write due to lack of company striping on the **Lead** entity. We implemented company striping on the **Lead** entity, which cascades the company to the underlying **Account** and **Opportunity** tables. Thus the application behavior is restored to support the process. During the **Lead** qualification process, the **Contact** entity isn't company striped. This design supports the **Party** entity model that's due in October 2020. To learn about the **Party** and **GlobalAddressBook** model for dual-write, join the [Dual-Write](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4MDk0ODM3NzYifQ) community on Microsoft Viva Engage. | General availability |
 | [Map state transitions from **Order** to **SalesOrder**](sales-status-map.md) | The **Order** form in Dynamics 365 Sales is always set to **Active**. To create state transitions from **Order** in Dynamics 365 Sales to **SalesOrder** in Dynamics 365 Supply Chain Management, we introduced the **ProcessingStatus** column. |   General availability   |  
 | [Money to decimal data type conversion](../../../fin-ops/data-entities/currrency-decimal-places.md) |  Dataverse environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. finance and operations apps support more decimal places than Dataverse. You can now opt in to extend the decimal support in Dataverse to help ensure there's no loss of decimal place data when using dual-write. | General availability |
 | Security role for company and currency exchange | Company and currency exchange tables are global in nature and all dual-write users require read access to these two tables. To simplify the experience, we've added a new security role named **dual-write app user**. Each dual-write user must be added to this security role.   | General availability |
@@ -825,7 +833,7 @@ The June 2020 release of the dual-write orchestration package contains the featu
 
 | Feature | Description | Status |
 |------|---------|-------|
-| Edit legal entity after setup | The company or legal entity list isn't static and is constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Previously, you couldn't add a company or legal entity without system downtime. During this downtime, you would have to unlink and relink your environment. Relinking can be expensive, especially if you have pre-existing data. With this feature, you can add a company in a live environment without having to unlink and relink. | General availability |
+| Edit legal entity after setup | The company or legal entity list isn't static and is constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Previously, you couldn't add a company or legal entity without system downtime. During this downtime, you would have to unlink and relink your environment. Relinking can be expensive, especially if you have preexisting data. With this feature, you can add a company in a live environment without having to unlink and relink. | General availability |
 
 ## May 2020 release
 

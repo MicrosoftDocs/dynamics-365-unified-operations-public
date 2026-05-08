@@ -4,7 +4,7 @@ description: Learn how to update the recoverable certificate numbers and dates t
 author: epodkolzina
 ms.author: epodkolzina
 ms.topic: how-to
-ms.date: 06/27/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
@@ -25,18 +25,18 @@ Follow these steps to update certificate numbers and dates for TDS transactions.
 
 1. Go to **Tax \> Declarations \> Withholding tax \> Update certificate**.
 
-    [![Update certificate page.](../media/apac-ind-TDS-45.png)]
+    :::image type="content" source="../media/apac-ind-TDS-45.png" alt-text="Screenshot of the Update certificate page.":::
 
-2. On the **Update certificate** page, in the **Select** section, in the **Tax type** field, select **TDS**.
-3. In the **Certificate number** field, select the customer's or vendor's TDS certificate number.
+1. On the **Update certificate** page, in the **Select** section, in the **Tax type** field, select **TDS**.
+1. In the **Certificate number** field, select the customer's or vendor's TDS certificate number.
 
     > [!NOTE]
     > The **Certificate number** field lists only TDS certificate numbers that the **Closed** check box is cleared for on the **Recoverable certificates** page.
 
     The **Certificate date** field shows the certificate date. The **Account type** field shows the type of account that the TDS certificate number is received for, and the **Name** field shows the name of the account.
 
-5. In the **From date** and **To date** fields, select the start and end dates of the period to show the TDS transactions for.
-6. Select **Show data** to view the TDS transactions that were posted during the selected period.
+1. In the **From date** and **To date** fields, select the start and end dates of the period to show the TDS transactions for.
+1. Select **Show data** to view the TDS transactions that were posted during the selected period.
 
     On the **Overview** tab, the grid in the upper pane shows the following information about each TDS transaction that was posted for the vendor or customer during the selected period:
 
@@ -45,11 +45,11 @@ Follow these steps to update certificate numbers and dates for TDS transactions.
     - **Amount** – The invoice amount that the TDS was calculated on.
     - **Tax amount** – The TDS tax amount that was calculated for the transaction.
 
-7. To move specific TDS transactions from the upper grid to the lower grid, select the transactions, and then select **Include**. Alternatively, select **Include all** to move all TDS transactions from the upper grid to the lower grid.
+1. To move specific TDS transactions from the upper grid to the lower grid, select the transactions, and then select **Include**. Alternatively, select **Include all** to move all TDS transactions from the upper grid to the lower grid.
 
     To move specific TDS transactions or all TDS transactions from the lower grid to the upper grid, use the **Exclude** or **Exclude all** button.
 
-8. Select **Update** to update the **Certificate number** and **Certificate date** fields for TDS transactions in the lower grid.
-10. Go to **Tax \> Indirect taxes \> Withholding tax \> Recoverable certificate**, and select **Inquiry** to view the updated transaction lines that have the new certificate numbers on the **Certificate transactions** page.
+1. Select **Update** to update the **Certificate number** and **Certificate date** fields for TDS transactions in the lower grid.
+1. Go to **Tax \> Indirect taxes \> Withholding tax \> Recoverable certificate**, and select **Inquiry** to view the updated transaction lines that have the new certificate numbers on the **Certificate transactions** page.
 
-    [![Certificate transactions page.](../media/apac-ind-TDS-46.png)]
+    :::image type="content" source="../media/apac-ind-TDS-46.png" alt-text="Screenshot of the Certificate transactions page.":::

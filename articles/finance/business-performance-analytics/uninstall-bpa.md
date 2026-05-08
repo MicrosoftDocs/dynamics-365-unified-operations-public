@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 1/26/2026
+ms.date: 4/13/2026 
 ---
 
 # Uninstall Business performance analytics
@@ -278,7 +278,6 @@ Deleting all the solutions takes about 20 minutes. If the operation is successfu
 You can manually uninstall Business performance analytics through the Power Platform admin center. You must manually delete the solutions in the following order:
 
 1. Business performance analytics anchor solution
-<<<<<<< yvishwa-bpa-docs
 1. Business performance analytics MCP
 1. Business performance analytics solution
 1. Business performance analytics reports
@@ -297,30 +296,6 @@ You can manually uninstall Business performance analytics through the Power Plat
 1. Business performance analytics pipeline plugins solution
 1. Business performance analytics tables security
 1. Business performance analytics configs
-=======
-1. Business performance analytics solution
-1. Business performance analytics reports
-1. Business performance analytics plugins solution
-1. Business performance analytics permissions
-1. Business performance analytics tables
-1. Business performance analytics controls
-1. Business performance analytics tables anchor solution
-1. Business performance analytics analytical tables workspace
-1. Business performance analytics analytical tables
-1. Business performance analytics tables transformation job flows
-1. Business performance analytics tables data processing configuration
-1. Business performance analytics tables user roles
-1. Business performance analytics tables data lake synchronization workspace
-1. Business performance analytics tables data lake synchronization
-1. Business performance analytics tables standard entities
-1. Business performance analytics tables virtual entities workspace
-1. Business performance analytics tables virtual entities
-1. Business performance analytics tables managed data lake
-1. Business performance analytics pipeline plugins solution
-1. Business performance analytics tables security
-1. Business performance analytics config
-
->>>>>>> main
 
 To delete each of the preceding solutions, follow these steps:
 

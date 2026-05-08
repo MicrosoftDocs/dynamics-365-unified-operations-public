@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2016-06-30
@@ -19,12 +19,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This article explains how to create a day-based fiscal calendar for one fiscal year. Before you complete this task, set **Companies Act depreciation** to **Yes** on the **Fixed assets parameters** page to create a day-based calendar. The demo data company used to create this procedure is **INMF**.
 
+To set up a day-based fiscal calendar (India), follow these steps:
+
 1. Go to **General ledger** > **Ledger setup** > **Fiscal calendars**.
-2. Select **New calendar**.
-3. In the **Calendar** field, enter the name of the calendar.
-4. In the **Description** field, enter a brief description of the calendar.
-5. In the **Calendar type** field, select an option.
-6. Select **Create**.
+1. Select **New calendar**.
+1. In the **Calendar** field, enter the name of the calendar.
+1. In the **Description** field, enter a brief description of the calendar.
+1. In the **Calendar type** field, select an option.
+1. Select **Create**.
 
 
 

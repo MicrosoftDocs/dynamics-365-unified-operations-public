@@ -54,7 +54,7 @@ The following table shows the allowed pauses through the transition based on you
 
 ### What can I expect with the new (autoupdate) cadence?
 
-Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a four-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Autoupdates continue to function as before, with UAT sandbox updates occurring seven days prior to production. Note that if your LCS project has environments on older, noncompliant versions like 10.0.35, 10.0.36, or 10.0.37, pausing the upcoming autoupdate (for example, 10.0.39 May autoupdate) isn't supported. To comply, update all environments to the current version (10.0.39) in the next autoupdate window. You can also self-update to a compliant version (for example, 10.0.38 as of April 22, 2024) to pause an upcoming autoupdate. Microsoft can't make exceptions for projects with environments on noncompliant versions. Upgrade to a supported version to use the pause functionality.
+Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a four-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Autoupdates continue to function as before, with UAT sandbox updates occurring seven days prior to production. Note that if your Lifecycle Services project has environments on older, noncompliant versions like 10.0.35, 10.0.36, or 10.0.37, pausing the upcoming autoupdate (for example, 10.0.39 May autoupdate) isn't supported. To comply, update all environments to the current version (10.0.39) in the next autoupdate window. You can also self-update to a compliant version (for example, 10.0.38 as of April 22, 2024) to pause an upcoming autoupdate. Microsoft can't make exceptions for projects with environments on noncompliant versions. Upgrade to a supported version to use the pause functionality.
 
 ### Does the new release schedule affect when I can schedule autoupdates?
 
@@ -62,7 +62,7 @@ Yes, with version 10.0.39, there are two autoupdate windows to choose from for e
 
 As an example, let's say you have opted for the 10.0.39 ("April") release through autoupdate. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled autoupdates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15. This occurs during the first autoupdate window, starting either on April 5, April 12, depending on your chosen configuration. Alternatively, if you've selected the second autoupdate window, your updates begins on May 3, May 10. Opting for the second window gives you four more weeks between general availability and the final broadcast weekend, extending beyond the standard six-week timeframe.
 
-In the example above, if a customer opts out of both autoupdate windows for the 10.0.39 release, they can only opt out of the first autoupdate window for the next release, 10.0.40 ("July"). This is because skipping a release is no longer possible due to a previous pause under the new pause policy. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+In the example above, if a customer opts out of both autoupdate windows for the 10.0.39 release, they can only opt out of the first autoupdate window for the next release, 10.0.40 ("July"). This is because skipping a release is no longer possible due to a previous pause under the new pause policy. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 > [!IMPORTANT]
 > Customers are explicitly required to pause both autoupdate windows to pause a release if they are eligible to do so, based on the pause policy. Pausing the first autoupdate window will not auto pause the second window.
@@ -94,7 +94,7 @@ At this time Microsoft can't make exceptions for projects that have environments
 
 Yes, customers can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. As of the April 2024 autoupdate, customers can choose to pause one update. Before April 2024, the number of pauses that are available to a customer depends on that customer's release version relative to the latest version. For more information, see **Is the change from the maximum of three pauses to one already in effect** in this FAQ. For more information on the twice autoupdate window we're introducing starting 10.0.39 see **What can I expect with the new (autoupdate) cadence** in this FAQ.
 
-For information about how to pause an update, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+For information about how to pause an update, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ### How does the timing for general availability of a release work?
 
@@ -113,7 +113,7 @@ Customers can always choose to apply the update earlier than the suggested times
 
 | Version | Description |
 |---|---|
-| 10 | All customers are scheduled for automatic service updates. The updates are combined application and platform updates. As of February 2024, you can pause only one update before you're required to take the next update. For information about how to pause an update, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
+| 10 | All customers are scheduled for automatic service updates. The updates are combined application and platform updates. As of February 2024, you can pause only one update before you're required to take the next update. For information about how to pause an update, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
 
 ### What do the service updates contain?
 
@@ -132,7 +132,7 @@ The "What's new or changed" documentation is the primary source for the details 
 
 > [!NOTE]
 > To view the specific fixes included in a major release version, such as Dynamics 365 Finance 10.0.XX:
-> Go to LCS, search for **version 10.0.XX**.
+> Go to Lifecycle Services, search for **version 10.0.XX**.
 > This displays **Version 10.0.XX of Finance and Operations apps**. The fixes included in that release are listed.
 
 ### What's the upcoming schedule of updates?
@@ -268,7 +268,7 @@ Automatic updates for the production environment are canceled, but all additiona
 
 ### What if I find an issue during the sandbox update?
 
-If you find an issue while you're doing validations in a sandbox environment, you can request to skip the update directly through Lifecycle Services, by providing a valid support ticket number and a business justification. For more information, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+If you find an issue while you're doing validations in a sandbox environment, you can request to skip the update directly through Lifecycle Services, by providing a valid support ticket number and a business justification. For more information, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ### What if I find a critical issue during sandbox testing, but I can't pause the production automatic update?
 
@@ -309,7 +309,7 @@ All new features are available on an opt-in basis for a 12-month period. They do
 
 Batch jobs are suspended during the maintenance windows and resume when the maintenance is completed.
 
-For information about how to pause an update, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+For information about how to pause an update, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ## Tools
 

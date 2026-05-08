@@ -3,8 +3,8 @@ title: Canada GST/HST Internet File Transfer (GIFT)
 description: Learn how to configure and use the Canada Goods and Services Tax or Harmonized Sales Tax (GST/HST) Internet File Transfer (GIFT) feature.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 08/20/2019
+ms.topic: how-to
+ms.date: 04/13/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Canada
@@ -33,48 +33,47 @@ Use the following procedures to enter legal entity details, a sales tax code, an
 When you submit a request to the CRA to do an internet file transfer, the CRA provides a software identification code. The first two characters are alphabetical, and the last six characters are numerical. To process your returns, you must enter this code on the **Legal entities** page.
 
 1. Go to **Organization administration** \> **Setup** \> **Organization** \> **Legal entities**.
-2. On the **Statutory reporting** FastTab, in the **Registration number** field, enter the registration number that the CRA provided when you registered for GST/HST.
-3. In the **Software identification code** field, enter **AX030003** to transfer the returns.
-4. Select **Account identifiers** to open the **Account identifiers** page.
-5. On the **Overview** tab, in the **Program identifier** field, select **GST/HST**.
-6. In the **Reference number** field, enter the reference number that the CRA provided.
-7. Close the pages to save your changes.
+1. On the **Statutory reporting** FastTab, in the **Registration number** field, enter the registration number that the CRA provided when you registered for GST/HST.
+1. In the **Software identification code** field, enter **AX030003** to transfer the returns.
+1. Select **Account identifiers** to open the **Account identifiers** page.
+1. On the **Overview** tab, in the **Program identifier** field, select **GST/HST**.
+1. In the **Reference number** field, enter the reference number that the CRA provided.
+1. Close the pages to save your changes.
 
 ## Set up tax codes for GIFT
 
 Use the **Sales tax codes** page to set up tax codes to calculate GST/HST for the GIFT file.
 
 1. Go to **General ledger** \> **Setup** \> **Sales tax** \> **Sales tax codes**.
-2. Press **Ctrl+N** to create a tax code.
-3. In the **Sales tax code** field, enter a code, such as **GST/HST**, and then enter general information about the sales tax code.
-4. On the **Calculation** tab, enter the calculation details that should be used to calculate the GST/HST amount.
-5. Select **Values** to open the **Values** page.
-6. Enter the dates when the tax code is in effect.
-7. In the **Value** field, enter the percentage for the calculation.
-8. Close the pages to save your changes.
+1. Press **Ctrl+N** to create a tax code.
+1. In the **Sales tax code** field, enter a code, such as **GST/HST**, and then enter general information about the sales tax code.
+1. On the **Calculation** tab, enter the calculation details that should be used to calculate the GST/HST amount.
+1. Select **Values** to open the **Values** page.
+1. Enter the dates when the tax code is in effect.
+1. In the **Value** field, enter the percentage for the calculation.
+1. Close the pages to save your changes.
 
 ## Set up tax groups for GIFT
 
 Use the **Sales tax groups** page to set up sales tax groups. You can assign the sales tax groups to companies. Taxes will then be calculated based on the tax codes that were in effect when the transactions occurred.
 
 1. Go to **General ledger** \> **Setup** \> **Sales tax** \> **Sales tax groups**.
-2. Press **Ctrl+N** to create a sales tax group.
-3. In the **Sales tax group** field, enter a name, such as **GST/HST**, and then enter general information about the sales tax group.
-4. On the **Setup** tab, in the **Sales tax code** field, select a sales tax code to add to the sales tax group.
-5. Close the page to save your changes.
+1. Press **Ctrl+N** to create a sales tax group.
+1. In the **Sales tax group** field, enter a name, such as **GST/HST**, and then enter general information about the sales tax group.
+1. On the **Setup** tab, in the **Sales tax code** field, select a sales tax code to add to the sales tax group.
+1. Close the page to save your changes.
 
 ## Generate a GIFT file
 
 To file your GST/HST returns and remit payments, you can generate a GIFT file and upload it to the CRA website.
 
 1. Go to **General ledger** \> **Periodic** \> **GST/HST Internet File Transfer (GIFT)**.
-2. In the **From date** and **To date** fields, select the start and end dates of the reporting period.
-3. In the **File name** field, select the path and enter the name of the GIFT file.
+1. In the **From date** and **To date** fields, select the start and end dates of the reporting period.
+1. In the **File name** field, select the path and enter the name of the GIFT file.
 
     > [!NOTE]
     > For easy identification of the GIFT file, use the format *GSTYYYYMMDD.tax* for the file name. (In other words, enter **GST** followed by the reporting date, and then add the **.tax** file name extension.) For example, if the reporting date is July 28, 2010, enter **GST20100728.tax** as the name of the GIFT file.
 
-4. Select **OK** to export the GIFT file to the specified path.
-
+1. Select **OK** to export the GIFT file to the specified path.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
