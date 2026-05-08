@@ -198,6 +198,54 @@ processDatalakeFolderDeletion = (shouldReset) => {
 
 After the cleanup script executes successfully, you can proceed to uninstall Business performance analytics by using Option 1 or 2.  
 
+## Automatic data cleanup (version 2.8 and later)
+
+Starting in version 2.8, data cleanup is automatically performed during uninstallation. When the `msdyn_BpaTablesUserRoles` solution is uninstalled, the following error is thrown:
+
+> "The option to clean up Business performance analytics transformation output folder has been selected. Clean up has started and the solution cannot be deleted until it has completed."
+
+The system continues to throw the following error until the **Business performance analytics uninstall datalake cleanup** flow has completed successfully:
+
+> "Clean up the transformation folder is in progress. The solution cannot be deleted until it has completed. This may take a while."
+
+Once the flow completes, solution uninstallation is allowed to proceed.
+
+### Troubleshooting
+
+If the cleanup in-progress error never goes away:
+
+1. Ensure that the **Business performance analytics uninstall datalake cleanup** flow is turned on and has a valid primary owner.
+1. If the flow is on, look for errors in the flow run history and post them on Viva Engage or create a support ticket.
+
+If you need to uninstall Business performance analytics but don't want to wait for the cleanup to finish, set the environment variable `msdyn_bpashouldcleanupdatalake` to `false` by running the following script in the browser developer console:
+
+```javascript
+Xrm.WebApi.online.retrieveMultipleRecords('environmentvariabledefinition', `?$top=1&$expand=environmentvariabledefinition_environmentvariablevalue($select=value,environmentvariablevalueid)&$filter=schemaname eq 'msdyn_bpashouldcleanupdatalake'&$select=environmentvariabledefinitionid,defaultvalue,displayname`)
+.then(async (result) => {
+    if (result.entities.length > 0) {
+        const envVarDef = result.entities[0];
+        const definitionId = envVarDef['environmentvariabledefinitionid'];
+        const envVarValue = envVarDef['environmentvariabledefinition_environmentvariablevalue'].length === 1 ? envVarDef['environmentvariabledefinition_environmentvariablevalue'][0].environmentvariablevalueid : undefined;
+
+        if (envVarValue) {
+            // Update existing environment variable value
+            await Xrm.WebApi.online.updateRecord('environmentvariablevalue', envVarValue, {
+                value: 'false'
+            });
+            console.log(`Updated Environment Variable Value ID: ${envVarValue} to false`);
+        } else {
+            // Create new environment variable value
+            const newEnvVarValue = {
+                'EnvironmentVariableDefinitionId@odata.bind': `/environmentvariabledefinitions(${definitionId})`,
+                value: 'false'
+            };
+            await Xrm.WebApi.online.createRecord('environmentvariablevalue', newEnvVarValue);
+            console.log(`Created new Environment Variable Value for Definition ID: ${definitionId} with value false`);
+        }
+    }
+});
+```
+
 ## Option 1: Code-based uninstallation
 
 1. Sign in to the [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/) by using Dataverse admin credentials.
