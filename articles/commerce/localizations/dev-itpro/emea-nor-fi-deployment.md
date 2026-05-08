@@ -2,7 +2,7 @@
 title: Deployment guidelines for cash registers for Norway
 description: Learn how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
-ms.date: 04/06/2026
+ms.date: 05/08/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -75,21 +75,23 @@ Next, on the **Key Vault parameters** page, specify the parameters for accessing
 
 Next, configure a connector for your certificates that are stored in Key Vault or local certificate storage. Use this connector for signing on the channel side.
 
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
-1. On the **Settings** FastTab, specify the following parameters for digital signatures:
+1. Go to **Retail and Commerce** > **Channel setup** > **Fiscal integration** > **Connector technical profiles**.
 
-    - **Secret name** – Select the secret name that you configured earlier on the **Key Vault parameters** page.
-    - **Local certificate thumbprint** – Provide a thumbprint for a certificate that you store locally.
-    - **Hash algorithm** – Specify one of the cryptographic hash algorithms that Microsoft .NET supports, such as **SHA1**.
-    - **Certificate store name** – This field is optional. Use it to specify a default store name that should be used to search local certificates.
-    - **Certificate store location** – This field is optional. Use it to specify a default store location that should be used to search local certificates.
-    - **Try local certificate first** – Select this option to use the certificate from the local store by default for signing data, instead of the certificate from Key Vault.
-    - **Activate health check** – For more information about the health check feature, see [Fiscal registration health check](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+2. On the **Settings** FastTab, specify the following parameters for digital signatures:
+
+    - **Secret name**: Select the secret name that you configured earlier on the **Key Vault parameters** page.
+    - **Local certificate thumbprint**: Provide a thumbprint for a certificate that you store locally.
+    - **Hash algorithm**: Specify one of the cryptographic hash algorithms that Microsoft .NET supports, such as **SHA1**.
+    - **Certificate store name**: This field is optional. Use it to specify a default store name that should be used to search local certificates.
+    - **Certificate store location**: This field is optional. Use it to specify a default store location that should be used to search local certificates.
+    - **Try local certificate first**: Select this option to use the certificate from the local store by default for signing data, instead of the certificate from Key Vault.
+    - **Activate health check**: For more information about the health check feature, see [Fiscal registration health check](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 > [!NOTE]
+>
 > - Only the **SHA1** cryptographic hash algorithm is currently acceptable for Norway.
 > - The default store name and store location simplify the process of searching local certificates in CRT. X509StoreProvider has a list of folders where certificates are stored. If you don't specify the default store name and the default store location, X509StoreProvider tries to find a certificate in all the folders on its list.
-> - If you use a local certificate, install it in the **Local Machine** store location in the **Personal** (My) store folder. The default option in the Windows certificate installation wizard is **Current User** — make sure that you select **Local Machine** instead.
+> - If you use a local certificate, install it in the **Local Machine** store location in the **Personal** (My) store folder. The default option in the Windows certificate installation wizard is **Current User** - make sure you select **Local Machine** instead.
 
 ### Configure channel components
 
