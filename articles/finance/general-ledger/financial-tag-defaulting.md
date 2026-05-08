@@ -97,7 +97,7 @@ Two types of rules can populate a financial tag, and each fires at different poi
 | **User-defined rule** | **Line**, **Account**, **OffsetAccount** | Individual Financial tags | **Financial tag rules** page. | On line **create**, on **save**, and on **modify** (for example, when the account field changes or another field that the formula references changes). | Only if **Overwrite existing value** is set to **Yes** on the rule. |
 
 > [!IMPORTANT]
-> The **System rules** only fire **once on create and never again**. If you change a header tag after lines already exist, the existing lines aren't updated by this rule. Likewise, if you change the Account tag, the offset account won't be updated. To re-flow a header value to existing lines, configure a user-defined line rule with **Overwrite existing value** set to **Yes**, or update the line tags manually.
+> To re-flow a header value to existing lines, configure a user-defined line rule with **Overwrite existing value** set to **Yes**, or update the line tags manually.
 
 For journals, when you set the account or offset account field, all user-defined rules for that transaction level run and populate each target. Rules with **Overwrite existing value** set to **Yes** replace whatever value the user or a system rule previously set.
 
