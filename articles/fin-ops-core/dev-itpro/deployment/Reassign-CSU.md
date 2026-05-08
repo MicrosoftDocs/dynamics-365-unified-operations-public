@@ -4,7 +4,7 @@ description: Learn how to migrate a Microsoft Dynamics 365 Commerce channel to a
 author: josaw
 ms.author: josaw
 ms.topic: upgrade-and-migration-article
-ms.date: 08/05/2026
+ms.date: 05/08/2026
 ms.reviewer: johnmichalak
 ms.custom: 
   - bap-template
