@@ -4,7 +4,7 @@ description: Learn how to migrate a Microsoft Dynamics 365 Commerce channel to a
 author: josaw
 ms.author: josaw
 ms.topic: upgrade-and-migration-article
-ms.date: 04/02/2026
+ms.date: 05/08/2026
 ms.reviewer: johnmichalak
 ms.custom: 
   - bap-template
@@ -18,9 +18,12 @@ ms.dyn365.ops.version: 8
 
 [!include[banner](../includes/banner.md)]
 
-This article explains how to migrate Microsoft Dynamics 365 Commerce store channels from the Commerce Scale Unit (CSU) that they are currently working with to a different CSU. You might want to migrate channels to a different CSU for better load isolation and resource governance between channels, to reduce latency to your stores, or to manage different update/extension deployment schedules for staged roll-out and pilots. Migration to a different CSU involves downtime for the channels.
+This article explains how to migrate Microsoft Dynamics 365 Commerce store channels from the Commerce Scale Unit (CSU) that they're currently working with to a different CSU. You might want to migrate channels to a different CSU for better load isolation and resource governance between channels, to reduce latency to your stores, or to manage different update/extension deployment schedules for staged roll-out and pilots. Migration to a different CSU involves downtime for the channels.
 
-This article describes best practices that will help you minimize business disruption and downtime while you migrate channels. It applies to the migration of channels between cloud-hosted CSUs, between self-hosted CSUs, from cloud-hosted CSUs to self-hosted CSUs, and from self-hosted CSUs to cloud-hosted CSUs.
+This article describes best practices that help you minimize business disruption and downtime while you migrate channels. It applies to the migration of channels between cloud-hosted CSUs, between self-hosted CSUs, from cloud-hosted CSUs to self-hosted CSUs, and from self-hosted CSUs to cloud-hosted CSUs.
+
+> [!IMPORTANT]
+> If your environment uses a Commerce Globalization solution, migrating channels to a different CSU isn't supported. The migration might cause data corruption and regulatory compliance issues. Contact Microsoft Support before you attempt to migrate.
 
 > [!NOTE]
 > If you migrate channels between CSUs, temporary sales data that was used for journal records and point of sale (POS) reports before the migration will no longer be available at the POS after migration. After the migration is completed, journals and channel reports will be started afresh by using new data.
@@ -29,7 +32,7 @@ In the following procedures, the terms *origin* and *destination* are used to di
 
 ## Planning for downtime
 
-When you follow the procedures that are described in this article, all long-running system processes that are involved are run before the actual migration, while the stores are still operational. These processes including synchronization of master data for products, prices, and customers. Then, during the migration, the critical period when you must take planned downtime in your environment involves data synchronization of a very small payload of channel configuration data to the new CSU. In most cases, this synchronization can be completed in under 10 minutes. However, from an operational perspective, you must plan for a longer downtime window to ensure that all prerequisite steps have enough time to be completed. These steps include closing all shifts, syncing transactions to Commerce headquarters, and posting statements. The amount of time that is required will vary by organization.
+When you follow the procedures that are described in this article, all long-running system processes that are involved are run before the actual migration, while the stores are still operational. These processes including synchronization of master data for products, prices, and customers. Then, during the migration, the critical period when you must take planned downtime in your environment involves data synchronization of a small payload of channel configuration data to the new CSU. In most cases, this synchronization can be completed in under 10 minutes. However, from an operational perspective, you must plan for a longer downtime window to ensure that all prerequisite steps have enough time to be completed. These steps include closing all shifts, syncing transactions to Commerce headquarters, and posting statements. The amount of time that is required varies by organization.
 
 ## Prerequisites
 
@@ -46,7 +49,7 @@ The following steps can be completed while the stores are still operational. The
 1. Select **Full data sync**, and specify that job **9999** (**All jobs**) should be used.
 
 > [!NOTE]
-> If your destination CSU is self-hosted, consider creating separate channel database groups to reduce the volume of unnecessary master data synchronization. Regardless of your channel database groups configuration, the steps in this document presume that the groups containing the source CSU and the destination CSU will both have all jobs listed below performed across them. For example, if the source and destination CSUs are in different channel database groups, then both groups must have the distribution schedule jobs run together for all instances of jobs needing to be run.
+> If your destination CSU is self-hosted, consider creating separate channel database groups to reduce the volume of unnecessary master data synchronization. Regardless of your channel database groups configuration, the steps in this document presume that the groups containing the source CSU and the destination CSU both have all the jobs listed in the following sections performed across them. For example, if the source and destination CSUs are in different channel database groups, then both groups must have the distribution schedule jobs run together for all instances of jobs needing to be run.
 
 ### Prepare for migration
 
@@ -72,8 +75,8 @@ To migrate channels to a new CSU, follow these steps:
 You can continue to use the origin CSU to serve other channels.
 
 > [!NOTE]
-> Do not delete the origin CSU. Doing so may make the store unoperable.
+> Don't delete the origin CSU. Doing so may make the store unoperable.
 
-After you've completed all the procedures in a sandbox UAT environment, repeat them in your production environment.
+After you complete all the procedures in a sandbox UAT environment, repeat them in your production environment.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
