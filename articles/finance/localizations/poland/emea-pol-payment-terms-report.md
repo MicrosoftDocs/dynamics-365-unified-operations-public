@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 12/17/2025
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Poland 
 ---
@@ -50,14 +50,14 @@ Report generation covers the following scenarios:
 
 - Customer and vendor transactions that the report filters by posting group and vendor or customer group:
 
-	- Payments
-	- Open transactions
+  - Payments
+  - Open transactions
 
 - Payment days that the report calculates in the following ways:
 
-	- By payment or settlement date
-	- By document or invoice date
-	- Per installment, according to the payment schedule
+  - By payment or settlement date
+  - By document or invoice date
+  - Per installment, according to the payment schedule
 
 - Amounts in the accounting currency
 - Exchange adjustments, or revaluations that the report includes as part of the payment amount
@@ -65,7 +65,7 @@ Report generation covers the following scenarios:
 - Correction notes
 - Compensation between vendor and customer accounts
 - Advance invoices or prepayments
-- General journal (from version 10.0.46 of Finance) 
+- General journal (from version 10.0.46 of Finance)
 
 As of version 10.0.46 of Finance, the **Payment transaction type** parameter is available in the **Calculate statistics** dialog of **Statistics on invoices** process. Use this parameter to select the types of payment transactions to include in the statistics.
 
@@ -98,9 +98,9 @@ To generate a payment terms report, follow these steps:
 1. Select **Payment terms report**, and then select the related ER format.
 1. In the **Details** field, select the detail type for the report. You can select multiple options.
 
-	- AP details
-	- AR details
-	- Resume
+   - AP details
+   - AR details
+   - Resume
 
 1. Select the report language. The current report is translated into US English (**en-us**) and Polish (**pl**).
 1. Select the **From** and **To** dates.

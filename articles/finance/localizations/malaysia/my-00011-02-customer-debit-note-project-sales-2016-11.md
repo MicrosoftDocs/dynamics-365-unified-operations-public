@@ -4,7 +4,7 @@ description: Learn how to create and print a project debit note for GST in Malay
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak   
 ms.search.region: Malaysia
 ms.search.validFrom: 2016-06-30
