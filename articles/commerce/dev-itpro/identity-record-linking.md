@@ -2,7 +2,7 @@
 title: Enable automatic linking of identity records to customer accounts
 description: Learn how to enable automatic linking of identity records to customer accounts in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 02/17/2026
+ms.date: 04/24/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -21,7 +21,7 @@ This article describes how to enable automatic linking of identity records to cu
 Use the Commerce automatic linking feature in business-to-business (B2B) and business-to-consumer (B2C) site flows to allow approved customers to sign up to a Microsoft Entra B2C tenant and be automatically linked to their existing customer record. You can also use the identity record automatic linking feature in B2C site flows to automatically link users who sign up to a Microsoft Entra tenant to their customer account record created earlier in Commerce through point of sale (POS), call center, or Commerce headquarters.
 
 > [!WARNING]
-> Use the identity record automatic linking feature with Microsoft Entra ID B2C as the identity provider. In the **sign up and sign in** user flow, keep the default setting for the local account sign-up page layout, which is the **Email Address** user attribute with the **Requires verification** option set to "Yes." This configuration ensures that the email verification functionality persists for the sign-up flow when using the automatic linking feature.
+> Use the identity record automatic linking feature with Microsoft Entra ID B2C or Microsoft Entra External as the identity provider. In the **sign up and sign in** user flow, keep the default setting for the local account sign-up page layout, which is the **Email Address** user attribute with the **Requires verification** option set to "Yes." This configuration ensures that the email verification functionality persists for the sign-up flow when using the automatic linking feature.
 
 Commerce works with identity provider services such as Microsoft Entra B2C to store a user's authentication credentials such as username and password. A linking table in Commerce references the user's identity provider record to associate the authenticated user to a customer account in Commerce.
 

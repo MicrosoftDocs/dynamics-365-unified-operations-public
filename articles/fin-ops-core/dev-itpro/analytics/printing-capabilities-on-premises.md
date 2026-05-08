@@ -22,7 +22,7 @@ search.app:
 
 This article describes the capabilities for generating, publishing, and printing documents in on-premises deployments of Microsoft Dynamics 365 Finance + Operations (on-premises). The application provides a fully integrated experience for enterprise document generation that's powered by Microsoft SQL Server Reporting Services (SSRS). From any supported device, users can produce standard industry documents that are linked to business processes. These documents include sales invoices, checks, and packing slips. Built-in tools let administrators configure the service so that users can securely connect to network printers.
 
-You can upgrade solutions that are built on the Microsoft Dynamics AX 2012 SQL Reporting Services framework, or you can take advantage of the modern solutions that are available in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com).
+You can upgrade solutions that are built on the Microsoft Dynamics AX 2012 SQL Reporting Services framework, or you can take advantage of the modern solutions that are available in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com).
 
 ## Document publishing services: secure, reliable, and convenient
 

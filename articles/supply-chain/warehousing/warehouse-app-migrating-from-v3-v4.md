@@ -4,7 +4,7 @@ description: Learn how to migrate from Warehouse Management mobile application f
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 01/21/2026
+ms.date: 04/08/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -26,8 +26,7 @@ For V4, Microsoft rewrote the code for the Warehouse Management mobile app to ta
 >
 > - The [Migration information](#migration-information) section provides important advice that can help you avoid unexpected disruptions during the migration process.
 > - The [Rollout](#rollout) section provides the rollout schedule and download details.
-> - Check the [Migrating from V3 and V4 for iOS](#migration-information) section before uptake v4 for iOS device. This section provides important advice that can help you avoid unexpected disruptions during the migration process.
-
+> - If you're migrating iOS devices, read the [Migrating from V3 to V4 for iOS](#migration-information-ios) section before you begin — connection settings are not preserved on iOS and Device Code authentication is no longer supported.
 
 ## <a name="rollout"></a>Rollout
 
@@ -37,7 +36,7 @@ Microsoft has been rolling out V4 globally for several months by progressively i
 
 The general availability release of V4 is available for the following platforms on the following schedule:
 
-- **Google Android** – Available globally starting at the end of January 2026 from [Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement) and [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+- **Google Android** – Available globally starting at the end of January 2026 from [Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement) and [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release).
 - **Microsoft Windows** – Available globally starting in February 2026 from [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release).
 - **Apple iOS** – The official release of WMA iOS v4 began on 23 February 2026. As of January 2026, it's available through [Apple Test Flight](https://testflight.apple.com/).
 
@@ -45,7 +44,7 @@ The general availability release of V4 is available for the following platforms 
 
 ### System requirements
 
-The system requirements for V4 are the same as the [system requirements for V3](install-configure-warehouse-management-app.md), except for Android devices. V3 supports Android 5 and later, but **V4 requires Android 7 or later**. Devices that run older Android versions can continue to use V3 until the May 2026 end-of-support date. However, no new releases or feature updates are available for V3, and all newly reported issues will be resolved only in V4.
+The system requirements for V4 are the same as the [system requirements for V3](install-configure-warehouse-management-app.md), except for Android devices. V3 supports Android 5 and later, but **V4 requires Android 7 or later**. Devices that run older Android versions can continue to use V3 until the May 2026 end-of-support date. However, no new releases or feature updates are available for V3, and all newly reported issues are resolved only in V4.
 
 If you're running a newer version of Android, use V4 because it provides better compatibility than V3 on newer systems.
 
@@ -54,33 +53,36 @@ If you're running a newer version of Android, use V4 because it provides better 
 V4 supports a smooth transition from V3. The following considerations summarize what stays compatible during the migration and what you should plan for when upgrading.
 
 - **Customizations are preserved** – All customizations and configurations from V3 are fully compatible with V4 and remain functional.
-- **Connection settings can be preserved** – When you upgrade the Warehouse Management mobile app from version 3.0.8 or higher to V4, your existing connection settings are automatically migrated to V4. The settings aren't migrated from older versions of V3, so if you're running version 3.0.7 or older, upgrade to version 3.0.8 or later before upgrading to V4. *To preserve connection settings, don't uninstall V3*. Instead, just download the V4 installer to the device and select the **Upgrade** option when running it. If you uninstall V3 and then install V4, you lose your connection settings. Connection settings are only preserved during an upgrade, not during a fresh installation. If manual reconfiguration is required, you can generate and scan QR codes for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
-   As an example, if you're running V3.0.7 or older, first upgrade to 3.0.8 or 3.0.9 to preserve the connection settings. Then upgrade to V4.
-- **MDM Deployment** – If you use mobile device management (MDM) solutions to distribute the app, the connection settings are preserved when you migrate from V3.0.9 to V4, or from V4 to any later version of V4.
+- **On Android and Windows devices, connection settings can be preserved on upgrade** – When you upgrade the Warehouse Management mobile app from version 3.0.8 or higher to V4 on Android or Windows, your existing connection settings are automatically migrated. Connection settings are only preserved during an upgrade, not during a fresh installation. To preserve settings:
+    - Don't uninstall V3. Instead, download the V4 installer and select the **Upgrade** option.
+    - If you're running V3.0.7 or older, first upgrade to V3.0.8 or V3.0.9, then upgrade to V4.
+
+- **On iOS devices, connection settings aren't preserved on upgrade** – You must reconfigure connections manually after installing V4. To simplify this process, prepare QR codes in advance. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+- **MDM Deployment** – If you use a mobile device management (MDM) solution to distribute the app, the connection settings are preserved when you migrate from V3.0.9 to V4, or from V4 to any later version of V4.
 - **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts provided they're installed on separate devices. You can use different authentication methods for each version without conflict. This capability allows for a phased rollout of V4 without disrupting ongoing operations. However, you can't run V3 and V4 on the same device at the same time.
-- **V3 Requests remain active** – Microsoft *does not block** requests coming from V3. You can continue using V3 until you're ready to migrate.
+- **V3 requests remain active** – Microsoft doesn't block requests coming from V3. You can continue using V3 until you're ready to migrate.
 
-> [!TIP]
+> [!IMPORTANT]
+> Microsoft doesn't force-update any device. When a new version of the Warehouse Management mobile app is released, Microsoft publishes it to the app stores (Microsoft Store, Google Play, and Apple App Store). The update is only downloaded to a device if auto-update is enabled in the device's store settings. If auto-update is disabled, the device continues to run its current version until an administrator or user manually triggers the update.
 >
-> - Application stores, including the Microsoft Store, Google Play, and the Apple App Store, prioritize user-driven updates and device state over enterprise-wide synchronization. When auto-updates are enabled on your store configurations, the store services the new version and installs when the device state is available.
-> - To ensure a consistent and predictable migration, we strongly recommend using a Mobile Device Management (MDM) solution, such as Microsoft Intune. Unlike app stores, an MDM provides a dedicated management channel that allows administrators to control over the updates.
+> To ensure a consistent and predictable migration across your device fleet, use a Mobile Device Management (MDM) solution, such as Microsoft Intune. Unlike app stores, an MDM provides a dedicated management channel that gives administrators full control over when and how updates are applied to each device.
 
-### <a name="migration-information-ios"></a> Migrating from V3 and V4 for iOS
+### <a name="migration-information-ios"></a> Migrating from V3 to V4 for iOS
 
-***Release Information***: The official release of WMA iOS v4 began on 23 February 2026.
-The rollout will be phased, starting with a limited percentage of users. The rollout scope gradually increases over time to ensure stability and quality.
-If you don't see WMA iOS v4 available in the App Store, we strongly recommend joining **TestFlight** to access and test the v4 version.
+Microsoft started the official release of WMA iOS V4 on 23 February 2026. The rollout is phased, starting with a limited percentage of users and gradually increasing over time.
 
-To ensure a smooth migration, we recommend that you to check the following points:
+> [!IMPORTANT]
+> iOS migration has two key differences from Android and Windows:
+>
+> - **Connection settings aren't preserved** – When upgrading from V3 to V4 on iOS, you lose existing connection settings. You must manually reconfigure connections after the upgrade. To simplify this process, generate QR codes in advance. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+> - **Device Code authentication isn't supported on iOS V4** – Before upgrading, ensure your environment is configured for username/password authentication.
 
-- **Authentication Changes**: WMA iOS V4 introduces important changes to authentication, Device Code authentication is no longer supported in iOS v4. Before upgrading, ensure that your environment supports user/password authentication to avoid login issues.
-- **Connection Configuration**: When upgrading from V3 to V4, The existing connection settings aren't preserved. Users must manually re-add their connections after upgrading to V4. Manual reconfiguration is required, you can generate and scan QR codes for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
- 
-To ensure a smooth migration, it's recommended that you:
-- Join TestFlight to validate V4 behavior in your environment. You can join through [Apple Test Flight](https://testflight.apple.com/).
-- Confirm that user/password authentication is properly configured.
-- If you want to avoid auto-update, make sure that you disabled the auto update on your app store configurations.
+#### Before you upgrade iOS devices
 
+1. Verify that username/password authentication is properly configured in your environment.
+1. Prepare QR codes or JSON configuration files for all connections that you need to reconfigure.
+1. If you want to validate V4 behavior before the full rollout, join [Apple TestFlight](https://testflight.apple.com/) to test the V4 version.
+1. If you want to prevent automatic updates, disable auto-update in your App Store or MDM configurations.
 
 ### If you need to return to V3
 
@@ -92,17 +94,17 @@ If critical problems arise while you're testing V4, you can return to V3.0.9. Th
     - [Downgrade to V3 for Android](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
     - [Downgrade to V3 for Windows](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
 
-- **How to Install the Microsoft Certificate from an MSIX bundle File** 
-    1. Navigate to the folder that contains the MSIX bundle folder
-    2. Right‑click the  MSIX  and select Properties.
-    3. In the Properties window, open the Digital Signatures tab.
-    4. From the list of signatures, select the Microsoft signature.
-    5. Click Details, then select View Certificate.
-    6. Click Install Certificate.
-    7. Choose the certificate store location.
-    8. Select Local Machine and click Next.
-    9. Select Trusted Root Certification Authorities.
-    10. Click Next, then Finish to complete the certificate installation.
+- **To install the Microsoft Certificate from an MSIX bundle file** – Follow these steps:
+    1. Go to the folder that contains the MSIX bundle folder.
+    1. Right-click the MSIX and select **Properties**.
+    1. In the **Properties** window, open the **Digital Signatures** tab.
+    1. From the list of signatures, select the Microsoft signature.
+    1. Select **Details**, and then select **View Certificate**.
+    1. Select **Install Certificate**.
+    1. Choose the certificate store location.
+    1. Select **Local Machine** and select **Next**.
+    1. Select **Trusted Root Certification Authorities**.
+    1. Select **Next**, and then **Finish** to complete the certificate installation.
   
 ## <a name="authentication"></a>Authentication
 
@@ -167,7 +169,7 @@ V4 provides an enhanced user experience through comprehensive theming options. H
 
 - **Eleven unique themes** – A complete set of professionally designed themes is available.
 - **Dual-mode support** – Each theme is available in both dark mode and light mode.
-- **Unified settings** – Theme preferences are managed through the **Settings** interface.
+- **Unified settings** – Manage theme preferences through the **Settings** interface.
 
 ### Enhanced audio experience
 

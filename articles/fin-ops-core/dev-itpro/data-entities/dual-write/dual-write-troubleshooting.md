@@ -75,10 +75,10 @@ Dual-write errors that originate in Dataverse can appear in the finance and oper
 
 **Required role to view the errors:** System administrator
 
-1. Sign in to Microsoft Dynamics Lifecycle Services (LCS).
-1. Open the LCS project that you chose to do the dual-write testing for.
+1. Sign in to Microsoft Dynamics Lifecycle Services.
+1. Open the Lifecycle Services project that you chose to do the dual-write testing for.
 1. Select the **Cloud-hosted environments** tile.
-1. Use Remote Desktop to sign in to the virtual machine (VM) for the finance and operations app. Use the local account that is shown in LCS.
+1. Use Remote Desktop to sign in to the virtual machine (VM) for the finance and operations app. Use the local account that is shown in Lifecycle Services.
 1. Open Event viewer.
 1. Select **Applications and Services Logs \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operational**.
 1. Review the list of recent errors.

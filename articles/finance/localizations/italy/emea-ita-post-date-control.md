@@ -3,8 +3,10 @@ title: Unified posting date control
 description: Learn how to configure chronology control for invoices posting dates, including prerequisites and an outline on configuring posting date control.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/16/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy
@@ -17,12 +19,12 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure chronology control of invoices posting dates within a specific sales tax book section.
+This article explains how to configure chronology control of invoice posting dates within a specific sales tax book section.
 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- Italian sales tax books and sections are configured in the system. For more information, see [Italian sales tax books](emea-ita-fiscal-books.md).
+- The system is configured with Italian sales tax books and sections. For more information, see [Italian sales tax books](emea-ita-fiscal-books.md).
 - In the Feature management workspace, turn on the **(Italy) Unified posting date control** feature. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure posting date control

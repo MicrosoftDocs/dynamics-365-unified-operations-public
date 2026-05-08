@@ -3,8 +3,8 @@ title: Sales invoices that are split based on delivery addresses
 description: Learn about sales invoices that are split based on delivery addresses, including step-by-step processes for posting packing slips and validating vouchers.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 06/04/2019
+ms.topic: how-to
+ms.date: 05/01/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Application User
@@ -18,19 +18,19 @@ ms.dyn365.ops.version: 10.0.4
 
 [!include [banner](../../includes/banner.md)]
 
-1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
-2. Create a sales order for taxable items.
-3. On the **Lines details** FastTab, select the **Address** tab.
-4. Save the record.
-5. Select order line 1, and then select **Tax information**.
-6. Select the **GST** FastTab.
-7. Select the **Customer tax information** FastTab.
-8. Select **OK**.
-9. Select order line 2, and then select **Tax information**.
-10. Select the **GST** FastTab.
-11. Select the **Customer tax information** FastTab.
-12. Select **OK**.
-13. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document** to review the calculated taxes.
+1. Go to **Accounts receivable** > **Sales orders** > **All sales orders**.
+1. Create a sales order for taxable items.
+1. On the **Lines details** FastTab, select the **Address** tab.
+1. Save the record.
+1. Select order line 1, and then select **Tax information**.
+1. Select the **GST** FastTab.
+1. Select the **Customer tax information** FastTab.
+1. Select **OK**.
+1. Select order line 2, and then select **Tax information**.
+1. Select the **GST** FastTab.
+1. Select the **Customer tax information** FastTab.
+1. Select **OK**.
+1. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document** to review the calculated taxes.
 
     What you see might resemble the following example:
 
@@ -47,36 +47,36 @@ ms.dyn365.ops.version: 10.0.4
     - **IGST:** 20 percent
     - **CESS:** 1 percent
 
-12. Select **Close**.
+1. Select **Close**.
 
 ## Post the packing slip
 
 1. On the Action Pane, on the **Pick and pack** tab, in the **Generate** group, select **Packing slip**.
-2. Select **OK**.
+1. Select **OK**.
 
 ## Post the invoice
 
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
-2. In the **Quantity** field, select **All**.
+1. In the **Quantity** field, select **All**.
 
     > [!NOTE]
     > The invoice is split based on the delivery addresses.
 
-3. Select **OK**, and then select **Yes** to acknowledge the warning message that you receive.
+1. Select **OK**, and then select **Yes** to acknowledge the warning message that you receive.
 
 ## Validate the voucher
 
 1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
-2. Select a record that has an invoice amount of **12,100.00**.
-3. Select **Voucher**.
+1. Select a record that has an invoice amount of **12,100.00**.
+1. Select **Voucher**.
 
-    ![Financial entries for the record that has an invoice amount of 12,100.00.](../media/Annotation-2019-05-20-163117.png)
+    :::image type="content" source="../media/Annotation-2019-05-20-163117.png" alt-text="Screenshot of financial entries for the record that has an invoice amount of 12,100.00.":::
 
-4. Select **Close**.
-5. Select a record that has an invoice amount of **6,050.00**.
-6. Select **Voucher**.
+1. Select **Close**.
+1. Select a record that has an invoice amount of **6,050.00**.
+1. Select **Voucher**.
 
-    ![Financial entries for the record that has an invoice amount of 6,050.00.](../media/Annotation-2019-05-20-163156.png)
+    :::image type="content" source="../media/Annotation-2019-05-20-163156.png" alt-text="Screenshot of financial entries for the record that has an invoice amount of 6,050.00.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

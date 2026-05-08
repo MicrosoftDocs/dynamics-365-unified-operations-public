@@ -41,11 +41,11 @@ We're maintaining the legacy solutions for two primary reasons:
 
 ## Apply the modern designs
 
-The modern report designs are bundled into a model file and posted to Microsoft Dynamics Lifecycle Services (LCS). You can easily access them from your existing subscription. Use the following procedure to obtain the modern report design solutions and install them in your local development environment. You must then apply some customizations to incorporate the modern report designs into the appropriate scenarios.
+The modern report designs are bundled into a model file and posted to Microsoft Dynamics Lifecycle Services. You can easily access them from your existing subscription. Use the following procedure to obtain the modern report design solutions and install them in your local development environment. You must then apply some customizations to incorporate the modern report designs into the appropriate scenarios.
 
 Follow these steps to install the modern report designs for the application suite.
 
-1. Sign in to [LCS](https://lcs.dynamics.com/) to access the deployment dashboard. Then, on the **Shared asset library** page, select the **Model** asset type, and download the **ApplicationSuiteModernDesigns** model file. Save the model file to a location that's accessible from the development environment.
+1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/) to access the deployment dashboard. Then, on the **Shared asset library** page, select the **Model** asset type, and download the **ApplicationSuiteModernDesigns** model file. Save the model file to a location that's accessible from the development environment.
 
     > [!NOTE]
     > Be sure to select the appropriate model file for the version of the application that you're using.
