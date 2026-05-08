@@ -24,7 +24,11 @@ This article describes how to delete a main account, the circumstances under whi
 2. Select the main account that you want to delete.
 3. Select **Delete**, and confirm the action.
 
-The system runs a reference check against ledger transactions, dimension value combinations, and posting profiles before the deletion is committed. While the check is running, you might see a message indicating that the account is currently being checked for references and can't be deleted until the process is complete. Allow the check to finish.
+The system runs a reference check against ledger transactions, dimension value combinations, and posting profiles before the deletion is committed. While the check is running, you might see the following message:
+
+> The MainAccount '*&lt;account number&gt;*' is currently being checked for references before it can be deleted. It cannot be deleted until the process is complete.
+
+To check whether the scan has finished, go to **System administration** > **Periodic tasks** > **Data maintenance**. Select the **Misc** tab, and then select **Include system actions**. Find the **Process pending requests for validation for deleting a value** data maintenance action and review its execution logs for errors. The **Last status** column shows **Completed** when the run finished successfully.
 
 ## When a main account can't be deleted
 
