@@ -4,7 +4,7 @@ description: Learn how to set up, create, and enter default financial tags on tr
 author: ethanrimes
 ms.author: ethankallett
 ms.topic: article
-ms.date: 04/07/2026
+ms.date: 05/07/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -57,7 +57,7 @@ To create a financial tag rule, follow these steps:
 1. Go to **General ledger** > **Chart of accounts** > **Financial tags** > **Financial tag rules**.
 1. Select **New** to create a financial tag rule.
 
-   The dialog box that appears has several fields that you can set, including the following three required fields:
+   The dialog box that appears has several fields you can set, including the following three required fields:
 
     - **Transaction entry point** – Specify the document where you enter the data.
     - **Transaction level** – Specify the location or level where financial tags are located. For example, **Header** refers to the top-level table that has one set of financial tags for all lines that belong to that header. **Account** is a special value for journals, because the general journal has financial tags for both the account entry and the offset account.
@@ -71,13 +71,13 @@ To create a financial tag rule, follow these steps:
 1. Review the **Name**, **Enabled**, and **Overwrite existing value** values.
 1. Select **OK** to save the new rule.
 
-[![Screenshot that shows the definition of a new financial tag rule in the New dialog box.](./media/NewRule.png)](./media/NewRule.png)
+:::image type="content" source="./media/NewRule.png" alt-text="Screenshot of the definition of a new financial tag rule in the New dialog box.":::
 
 ### Simulate a financial tag rule
 
 You can test a rule before it affects live transactions. Select **Simulate** while creating a new rule, or select the **Simulate** button at the top of the **Financial tag rules** page to simulate an existing rule. Choose an existing journal to run the rule against, and the simulation shows what the financial tag value would evaluate to for each line.
 
-[![Simulate form showing rule results against an existing journal.](./media/financial-tag-rule-simulate-form.png)](./media/financial-tag-rule-simulate-form.png)
+:::image type="content" source="./media/financial-tag-rule-simulate-form.png" alt-text="Screenshot of the Simulate form showing rule results against an existing journal.":::
 
 ### Copy a financial tag rule
 
@@ -88,28 +88,28 @@ In the *copy a financial tag* rule, you can copy a financial tag rule in two way
 
 ## How financial tag rules apply to transactions
 
-Two types of rules can populate a financial tag, and each fires at different points in the record lifecycle:
+Two types of rules can populate a financial tag, and each type fires at different points in the record lifecycle:
 
-| Rule | Transaction Level | Scope | Where it's defined | When it fires | Overwrites existing value? |
+| Rule | Transaction level | Scope | Where it's defined | When it fires | Overwrites existing value? |
 |---|---|---|---|---|---|
-| **System rule** | **Line**, **Account**, **OffsetAccount** | All Financial tags | Built in; Copies the header tag to the line tag, and the **Account tag** to the **Offset Account tag** in journals. | **Only once, when the line is created.** It does not re-evaluate when the line is later modified or saved, and a later change to the header is not propagated to existing lines. | By default, **No**. The line keeps whatever value was copied at create time. **Overwrite existing value** can be updated from the **Financial tag rules** page if overwrite is desired. |
-| **User-defined rule** | **Header** | Individual Financial tags | **Financial tag rules** page. | Typically on header **create** and on **save**. For some documents, the rule also re-evaluates when the primary account on the header is modified. | Only if **Overwrite existing value** is set to **Yes** on the rule. |
-| **User-defined rule** | **Line**, **Account**, **OffsetAccount** | Individual Financial tags | **Financial tag rules** page. | On line **create**, on **save**, and on **modify** (for example, when the account field changes or another field that the formula references changes). | Only if **Overwrite existing value** is set to **Yes** on the rule. |
+| **System rule** | **Line**, **Account**, **OffsetAccount** | All Financial tags | Built in; Copies the header tag to the line tag, and the **Account tag** to the **Offset Account tag** in journals. | Only once, when the line is created. It doesn't reevaluate when the line is later modified or saved, and a later change to the header isn't propagated to existing lines. | By default, **No**. The line keeps the value that was copied at create time. **Overwrite existing value** can be updated from the **Financial tag rules** page if overwrite is desired. |
+| **User-defined rule** | **Header** | Individual Financial tags | **Financial tag rules** page. | Typically on header create and on save. For some documents, the rule also reevaluates when the primary account on the header is modified. | Only if **Overwrite existing value** is set to **Yes** on the rule. |
+| **User-defined rule** | **Line**, **Account**, **Offset Account** | Individual Financial tags | **Financial tag rules** page. | On line create, on save, and on modify. For example, when the account field changes or another field that the formula references changes. | Only if **Overwrite existing value** is set to **Yes** on the rule. |
 
 > [!IMPORTANT]
-> To re-flow a header value to existing lines, configure a user-defined line rule with **Overwrite existing value** set to **Yes**, or update the line tags manually.
+> To reflow a header value to existing lines, configure a user-defined line rule with **Overwrite existing value** set to **Yes**, or update the line tags manually.
 
-For journals, when you set the account or offset account field, all user-defined rules for that transaction level run and populate each target. Rules with **Overwrite existing value** set to **Yes** replace whatever value the user or a system rule previously set.
+For journals, when you set the **Account** or **Offset account** field, all user-defined rules for that transaction level run and populate each target. Rules with **Overwrite existing value** set to **Yes** replace whatever value the user or a system rule previously set.
 
-When you save the record, user rules run again to provide a final overwrite of financial tags. This re-evaluation reflects any value the user changed before saving.
+When you save the record, user rules run again to provide a final overwrite of financial tags. This reevaluation reflects any value the user changed before saving.
 
 For example, if you set a rule at the **Header** level, you see the financial tags populated as soon as you create a new journal:
 
-[![Financial tags automatically populated on a journal header by a defaulting rule.](./media/financial-tag-rule-header-defaulting.png)](./media/financial-tag-rule-header-defaulting.png)
+:::image type="content" source="./media/financial-tag-rule-header-defaulting.png" alt-text="Screenshot of financial tags automatically populated on a journal header by a defaulting rule.":::
 
 If you set a rule at the **Account** level, the rule runs when you create a new line, change the account field, or save the record:
 
-[![Financial tags automatically populated on a journal line by a defaulting rule.](./media/financial-tag-rule-line-defaulting.png)](./media/financial-tag-rule-line-defaulting.png)
+:::image type="content" source="./media/financial-tag-rule-line-defaulting.png" alt-text="Screenshot of financial tags automatically populated on a journal line by a defaulting rule.":::
 
 > [!NOTE]
-> Every journal or document is responsible for calling the defaulting engine for its own scenarios. Defaulting behavior might differ between documents based on the document's implementation. The preceding examples show the generally expected behavior, but technically, the defaulting can be slightly different between documents.
+> Every journal or document is responsible for calling the defaulting engine for its own scenarios. Defaulting behavior might differ between documents based on the document's implementation. The preceding examples show the expected behavior, but technically, the defaulting can be slightly different between documents.

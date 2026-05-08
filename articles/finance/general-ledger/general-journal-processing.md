@@ -4,7 +4,7 @@ description: Learn about capabilities in Microsoft Dynamics 365 Finance that hel
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 4/01/2026
+ms.date: 5/11/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -46,9 +46,9 @@ You can change the journal name on a general journal only before the journal hea
 
 If a journal was created under the wrong name and the header is already committed, the journal can't be renamed and audit policies prevent deletion of the batch number. Use one of the following supported patterns instead:
 
-- Update the journal description to indicate the journal shouldn't be used (for example, **DO NOT USE**), remove any lines, and document the reason.
-- For a journal with few lines, delete the lines and recreate the entries on a new journal under the correct name.
-- For a journal with many lines, create a new journal under the correct name and import the lines into it (for example, by using the Excel add-in).
+- Update the journal description to indicate the journal shouldn't be used, remove any lines, and document the reason.
+- For a journal with few lines, delete the lines, and recreate the entries on a new journal under the correct name.
+- For a journal with many lines, create a new journal under the correct name, and import the lines into it. For example, by using the Excel add-in.
 
 **Automatic reversal** is available in general journals. For example, you have an accrual adjustment where the actual document isn't yet processed, as shown in the following illustration.
 [![General journal reversing.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png)
@@ -67,7 +67,7 @@ The following setup isn't specific to general journals, but it helps ensure that
 
 The main account setup provides many options for general journal processing:
 
-- **DC/CR requirement** – Use this option if a main account is limited to debit or credit transactions. The setup is verified when a journal is validated or posted.
+- **DC/CR requirement** – Use this option if a main account is limited to debit or credit transactions. The system verifies the setup when you validate or post a journal.
 - **Default offset account**
 - **Suspended** – Suspend a main account for data entry across all companies or for a specific company/legal entity.
 - **Do not allow manual entry** – Prevent users from manually entering a value for the account in journals.
@@ -99,26 +99,28 @@ For more information, see the following topics:
 
 The **Global general journal** lets you enter a journal into any legal entities that you define in your environment, without having to switch companies before you create the journal. Use the **New journal** button at the top of the **Global general journal** page to select the legal entity for the journal, and then specify the journal that you want to enter data for. Select lines for the created journal to open the same standard journal lines page that you can open from the **General journal** page.
 
-> [!NOTE]
-> In Dynamics 365 Finance release 10.0.34, a new **Enable the Global general journal page to select multiple companies for posting** feature lets you select multiple journals for posting across any legal entities. The posting process creates a single batch job per legal entity to complete the posting.
+The **Enable the Global general journal page to select multiple companies for posting** feature lets you select multiple journals for posting across any legal entities. The posting process creates a single batch job per legal entity to complete the posting.
 
 ### Simulate posting
 
-You can find **Simulate posting** on the **Validate** menu for most journals. When you validate a journal using the **Validate** function, the journal is tested for specific error conditions. If you use the **Simulate posting** function, all the same processes that are run during posting are run without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then open the **Post** menu to post the journal.
+You can find **Simulate posting** on the **Validate** menu for most journals. When you validate a journal using the **Validate** function, the journal is tested for specific error conditions. If you use the **Simulate posting** function, all the same processes that run during posting are run without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then open the **Post** menu to post the journal.
 
 **Simulate posting** isn't available for batch processing. However, code is available to simulate posting in batch, and developers can extend the code to add that functionality.
 
 ### Journal unlock
 
-A button that's available on the journal page unlocks a journal where the "locked by system" status is set to **Yes**. A system administrator can perform this unlock after they analyze any running batch jobs and confirm that the journal is no longer being actively processed by a batch job. The **Journal unlock button** feature on the **Feature management** page enables the button.
+The **Journal unlock button** feature on the **Feature management** page enables a button on the **Journal** page to unlock a journal where the **Locked by system** status is set to **Yes**. A system administrator can perform this unlock after they analyze any running batch jobs and confirm that the journal isn't being actively processed by a batch job.
 
 ### Workflow recall
 
-The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page. This is enabled by the **Resetting the workflow status for journals** feature on the **Feature management** page.
+To recall a journal in a workflow with an **Unrecoverable** status, follow these steps:
+
+1. In **Feature management**, enable the **Resetting the workflow status for journals** feature.
+1. On the **Workflow history** page, select the **Workflow** button on a journal.
 
 ### Delete journal lines
 
-In Dynamics 365 Finance version 10.0.34, a new feature **Delete journal performance using batch** is available. This feature allows the delete process, for unposted journals, to be scheduled. This lets users continue other work instead of waiting for the delete processing to be completed.
+The **Delete journal performance using batch** feature allows you to schedule the delete process for unposted journals. You can continue other work instead of waiting for the delete processing to finish.
 
 To quickly delete all journal lines in a journal, go to **Functions** > **Delete journal lines**. This function affects extensions by using the **Delete** method on the **LedgerJournalTrans** table. The set of lines is removed without calling each line's **Delete** method.
 
@@ -150,7 +152,7 @@ The following example uses the **Load ledger transactions** feature.
 
     [![Vouchers GNJL00164 and GNJL001065 in the original journal batch on the Voucher transactions page.](./media/Orig-Journal.png)](./media/Orig-Journal.png)
 
-1. If the **Load ledger transactions** function was completed by using **New voucher number per voucher**, the new journal batch has vouchers GNJL001067 and GNJL001068.
+1. If the **Load ledger transactions** function is completed by using **New voucher number per voucher**, the new journal batch has vouchers GNJL001067 and GNJL001068.
 
     [![New voucher number per voucher on the Journal voucher page.](./media/New-Voucher-Number-Per-Voucher.png)](./media/New-Voucher-Number-Per-Voucher.png)
 

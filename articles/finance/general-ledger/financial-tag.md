@@ -89,7 +89,7 @@ When you enter journals, you can define tag values on the journal batch header. 
 
 ### Default values for journals
 
-Tag values that you enter in a journal are entered as default values in the following way:
+When you enter tag values in a journal, the system uses them as default values in the following ways:
 
 - Single-line voucher:
 
