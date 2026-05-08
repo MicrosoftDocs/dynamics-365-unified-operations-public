@@ -1,6 +1,6 @@
 ---
 title: Submit service requests to the Dynamics Service Engineering team
-description: Learn about how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn about how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services.
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
@@ -26,9 +26,9 @@ A service request is a ticket that you use to request that the Dynamics Service 
 > [!NOTE]
 > Service requests are only required for environments that are **Microsoft-managed**. Most environments are self-service. For more information about environment types, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
 
-> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this article, submit a support ticket instead. For more information about support tickets, see [Get support for finance and operations apps or Lifecycle Services (LCS)](../../fin-ops/lcs/lcs-support.md).
+> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this article, submit a support ticket instead. For more information about support tickets, see [Get support for finance and operations apps or Lifecycle Services](../../fin-ops/lcs/lcs-support.md).
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
+You can use Microsoft Dynamics Lifecycle Services to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 
 
 ## View service requests
@@ -49,7 +49,7 @@ By default, the **Service requests** tab on the **Work items** page lists all re
 
 After you submit a request, it has a status of **Requested**. Before the DSE team acts on the request, it might ask for clarification by entering a comment in the **Comment** field. For example, you might receive a comment from the DSE team if you request deployment of a production environment, but the data center differs from the data center where your sandbox environments are deployed. Carefully review the comments, and provide any required clarification in your own comment. To view the details of a specific request, or to submit comments for a service request, select the request ID.
 
-If you signed up for LCS notifications, you receive an email when the status of a service request changes or a comment is entered.
+If you signed up for Lifecycle Services notifications, you receive an email when the status of a service request changes or a comment is entered.
 
 If you submit a service request to the DSE team, and the action is outside the team's scope, the service request will be denied. In this case, the reason for the denial and suggestions for further action are provided. For some typical examples of service requests that the DSE team will deny, see the "Denied service requests" section later in this article.
 
@@ -86,7 +86,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
    - **Sandbox point-in-time restore request** – Select this request type to restore a *non-production* database to a specific point in time. For more information, see [Database movement operations home page](../database/dbmovement-operations.md).
 
         > [!NOTE]
-        > If you need to restore a *production* database to a previous point-in-time during the cutover phase, select the **Production point-in-time restore request** type. If you need to restore a production database when you're already live in operations, submit a support ticket through LCS.
+        > If you need to restore a *production* database to a previous point-in-time during the cutover phase, select the **Production point-in-time restore request** type. If you need to restore a production database when you're already live in operations, submit a support ticket through Lifecycle Services.
 
    - **Database refresh request** – Select this request type to refresh a database from a production environment to a sandbox environment, or from one sandbox environment to another. For more information, see [Refresh database](../database/database-refresh.md).  *This request type is being retired on January 31, 2019*.
 
@@ -98,7 +98,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
    - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
-      - Tenant move of a live Production environment. Request the Microsoft Service Engineering team to move the Production database and Azure Blob Storage from the old tenant to the new tenant if you are moving tenant on a live Production environment. Make sure that you only request this service when you are ready with all prerequisites. For more details, see [Move LCS implementation projects to different Microsoft Entra tenants](../../fin-ops/get-started/move-lcs-implementation-project-tenant.md).
+      - Tenant move of a live Production environment. Request the Microsoft Service Engineering team to move the Production database and Azure Blob Storage from the old tenant to the new tenant if you are moving tenant on a live Production environment. Make sure that you only request this service when you are ready with all prerequisites. For more details, see [Move Lifecycle Services implementation projects to different Microsoft Entra tenants](../../fin-ops/get-started/move-lcs-implementation-project-tenant.md).
       - Define explicit Internet Protocol (IP) safe list rules in a production environment.
         
         > [!NOTE]

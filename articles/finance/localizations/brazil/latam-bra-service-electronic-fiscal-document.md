@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 03/04/2026
+ms.date: 04/28/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
@@ -17,6 +17,16 @@ ms.assetid: 46e40a3a-784f-4a1e-b185-c4b8ad63518f
 # Service electronic fiscal document for Brazil
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> The Recibo Provisório de Serviços (RPS) text-based integration described in this article reflects a legacy approach that isn't supported under current Brazilian regulations.
+>
+> As of January 1, 2026, the Brazilian tax authorities deprecate the RPS text format. Customers and partners should use the NFS-e (Nota Fiscal de Serviço Eletrônica) XML-based formats instead.
+>
+> Microsoft Dynamics 365 Finance provides support for NFS-e generation using Electronic Reporting (ER), including the São Paulo municipal format and the Federal standard format. Learn more about the current implementation and required setup in:
+>
+> - [NFS-e Service Invoices - formats for São Paulo and Federal](brazil-nfs-e-service-invoices.md)
+> - [NFS-e service invoices for project-based scenarios](brazil-nfs-e-service-invoices-projects.md)
 
 This article provides an overview of the service electronic fiscal document.
 

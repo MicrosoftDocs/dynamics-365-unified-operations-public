@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
@@ -22,9 +22,9 @@ This article explains how to view the Tax Deducted at Source (TDS) payments and 
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax settlement periods**.
 
-    [![Withholding tax settlement periods page.](../media/apac-ind-TDS-50.png)]
+    :::image type="content" source="../media/apac-ind-TDS-50.png" alt-text="Screenshot of the Withholding tax settlement periods page.":::
 
-2. On the **Withholding tax settlement periods** page, select **Withholding tax payments** to open the **Withholding tax payments** page, where you can view the TDS settlements that were made for a specific TDS settlement period.
+1. On the **Withholding tax settlement periods** page, select **Withholding tax payments** to open the **Withholding tax payments** page, where you can view the TDS settlements that were made for a specific TDS settlement period.
 
     The **Overview** tab shows the following information:
 
@@ -37,7 +37,7 @@ This article explains how to view the Tax Deducted at Source (TDS) payments and 
     - **To date** – The end date of the settlement period.
     - **Withholding tax payment version** – The version of the withholding tax payment: **Original**, **Latest corrections**, or **Total list**.
 
-5. Select **Voucher** to view the voucher entries for the TDS transaction.
-6. Select **Withholding tax transactions** to view the details of the TDS transactions that were settled for a specific period during a settlement period. Select **Voucher** to view the voucher entries for the TDS transaction. Select **Withholding tax components** to view the TDS that was calculated per TDS tax component for a specific TDS tax code.
-7. Close the **Withholding tax payments** page to return to the **Withholding tax settlement periods** page.
-8. Select **Withholding tax transactions** to view the details of the TDS transactions that were settled for the settlement period.
+1. Select **Voucher** to view the voucher entries for the TDS transaction.
+1. Select **Withholding tax transactions** to view the details of the TDS transactions that were settled for a specific period during a settlement period. Select **Voucher** to view the voucher entries for the TDS transaction. Select **Withholding tax components** to view the TDS that was calculated per TDS tax component for a specific TDS tax code.
+1. Close the **Withholding tax payments** page to return to the **Withholding tax settlement periods** page.
+1. Select **Withholding tax transactions** to view the details of the TDS transactions that were settled for the settlement period.

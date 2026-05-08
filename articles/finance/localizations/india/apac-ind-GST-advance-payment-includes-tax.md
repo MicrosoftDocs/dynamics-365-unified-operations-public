@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/03/2019
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
@@ -21,16 +21,16 @@ Complete the following procedures to create a customer advance payment journal, 
 
 ## Create a customer advance payment journal
 
-1. Go to **Accounts receivable \> Payments \> Payment journal**.
-2. Create a record.
-3. In the **Name** field, select a value.
-4. On the **Setup** tab, select the **Amounts include sales tax** check box.
-5. Select **Lines**.
-6. Create a customer advance payment journal.
-7. Save the record.
-8. Select **Tax information**.
-9. On the **GST** tab, in the **HSN code** field, select a value.
-10. Select the **Customer tax information** tab, and then select **OK**.
+1. Go to **Accounts receivable > Payments > Payment journal**.
+1. Create a record.
+1. In the **Name** field, select a value.
+1. On the **Setup** tab, select the **Amounts include sales tax** check box.
+1. Select **Lines**.
+1. Create a customer advance payment journal.
+1. Save the record.
+1. Select **Tax information**.
+1. On the **GST** tab, in the **HSN code** field, select a value.
+1. Select the **Customer tax information** tab, and then select **OK**.
 
 ## Validate the tax details
 
@@ -40,15 +40,14 @@ Complete the following procedures to create a customer advance payment journal, 
 
     **IGST:** 20 percent
 
-2. Select **Close**.
-3. Select **Post \> Post**.
-4. Close the message that you receive.
+1. Select **Close**.
+1. Select **Post \> Post**.
+1. Close the message that you receive.
 
 ## Validate the financial entries
 
-To validate the financial entries, in the journal, select **Inquiries \> Voucher**. Here is an example.
+To validate the financial entries, in the journal, select **Inquiries \> Voucher**. Here's an example.
 
-![Example of financial entries.](../media/Annotation-2019-05-21-131638.png)
-
+:::image type="content" source="../media/Annotation-2019-05-21-131638.png" alt-text="Screenshot of financial entries example.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

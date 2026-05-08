@@ -3,8 +3,8 @@ title: Sales tax settlement and numbering of pages in sales tax books
 description: Learn about sales tax settlement and the numbering of pages in sales tax books for legal entities in Italy, including a description of various fields.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 03/04/2024
+ms.topic: concept-article
+ms.date: 05/02/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -22,7 +22,7 @@ The topic describes the sales tax settlement process for legal entities that hav
 
 As of Microsoft Dynamics 365 Finance version 10.0.39, the Italian sales tax books functionality supports reporting of Italian sales tax books in the [Electronic reporting (ER) tool](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting). It also accommodates reporting for [multiple value-added tax (VAT) registrations](../global/emea-multiple-vat-registration-numbers.md).
 
-The sales tax settlement process can be run independently of the Italian sales tax books functionality. To separate the sales tax settlement process from the generation of the Italian sales tax book in ER, enable the **Separate sales tax payment report generation from sales tax settlement** feature in Feature management. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). When the **Separate sales tax payment report generation from sales tax settlement** feature is disabled, the Italian sales tax book in ER is automatically generated after the settlement is completed. For more information about the sales tax settlement process, see [Create a sales tax payment](/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment).
+The sales tax settlement process can be run independently of the Italian sales tax books functionality. To separate the sales tax settlement process from the generation of the Italian sales tax book in ER, enable the **Separate sales tax payment report generation from sales tax settlement** feature in Feature management. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). When the **Separate sales tax payment report generation from sales tax settlement** feature is disabled, the Italian sales tax book in ER is automatically generated after the settlement is completed. For more information about the sales tax settlement process, see [Create a sales tax payment](../../general-ledger/tasks/create-sales-tax-payment.md).
 
 The sales tax settlement process can be run in batch mode. To enable the sales tax settlement process for the settlement period to be run as a batch job in the background, select the **Use batch processing for sales tax settlement** checkbox for the sales tax settlement period on the **Sales tax settlement periods** page (**Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**). This approach is recommended if there are many tax transactions within a period interval.
 

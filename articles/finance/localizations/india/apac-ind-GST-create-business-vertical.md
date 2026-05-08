@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/04/2019
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
@@ -32,9 +32,9 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 Follow these steps to create a business vertical.
 
 1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Business verticals**.
-2. Select **New** to create a record.
-3. Enter a name, description, and entity code for the new business vertical.
-4. Select **Close**.
+1. Select **New** to create a record.
+1. Enter a name, description, and entity code for the new business vertical.
+1. Select **Close**.
 
 
 

@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 04/09/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -22,7 +22,8 @@ ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a
 This article explains how to set up the basic functionality for Electronic reporting (ER). It also describes the steps that you must complete before you can set up ER.
 
 ## Prerequisites for ER setup
-Before you can set up ER, you must set up the required [document types](../../dev-itpro/organization-administration/configure-document-management.md#configure-document-types) in Document management: 
+
+Before you can set up ER, you must set up the required [document types](../../dev-itpro/organization-administration/configure-document-management.md#configure-document-types) in Document management:
 
 - A document type for Microsoft Office documents that are used as templates for ER reports.
 - A document type that is used to store the output of ER reports in the jobs archive.
@@ -39,10 +40,11 @@ For each document type, the following attribute values can be selected.
 | Location       | **Azure storage** or **SharePoint** |
 
 ## Set up ER
+
 Use the following procedure to set up the basic functionality of ER for all legal entities.
 
 1. Open the **Electronic reporting** workspace page.
-2. Click **Electronic reporting parameters**.
+1. Click **Electronic reporting parameters**.
 
 ## Main parameters
 
@@ -50,13 +52,13 @@ On the **General** tab of the **Electronic reporting parameters** page, set the 
 
 - **Enable design mode**
 
-    - Set this option to **Yes** to enable embedded ER designers, so that users can create their own ER configurations.
-    - Set this option to **No** to require that users access the functionality of ER designers by signing up for [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+  - Set this option to **Yes** to enable embedded ER designers, so that users can create their own ER configurations.
+  - Set this option to **No** to require that users access the functionality of ER designers by signing up for [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 - **Disable tracing of ER performance in data handling**
 
-    - Set this option to **No** to allow Microsoft Telemetry to collect information about the average time that is required to process a single incoming or outgoing record as an ER configuration. This information is tracked as a specific health metric of the environment, and it will help Microsoft quickly identify and address issues that affect customers who use the ER framework.
-    - Set this option to **Yes** to stop collecting telemetry information.
+  - Set this option to **No** to allow Microsoft Telemetry to collect information about the average time that is required to process a single incoming or outgoing record as an ER configuration. This information is tracked as a specific health metric of the environment, and it will help Microsoft quickly identify and address issues that affect customers who use the ER framework.
+  - Set this option to **Yes** to stop collecting telemetry information.
 
 ## <a name="ManageDocumentsParameters">Parameters to manage documents</a>
 
@@ -69,23 +71,24 @@ On the **Attachments** tab of the **Electronic reporting parameters** page, set 
 - **Others** – Select a document type to specify the storage of generated documents that are used for all other purposes. This document type is selected as a company-specific document type. You must make sure that the selected document type is configured for every company that you plan to run ER formats for, and then store the results in the ER jobs archive.
 - **Stop making backup copies of templates**
 
-    - Set this option to **No** to automatically create a backup copy of any ER format configuration template and store the copy in the database storage.
-    - Set this option to **Yes** to stop making backup copies of ER formation configuration templates.
+  - Set this option to **No** to automatically create a backup copy of any ER format configuration template and store the copy in the database storage.
+  - Set this option to **Yes** to stop making backup copies of ER formation configuration templates.
 
     For more information, see [Backup storage of ER templates](er-backup-storage-templates.md).
 
 ## Runtime parameters
 
 On the **Runtime** tab of the **Electronic reporting parameters** page, set the following ER parameters:
- 
- - **Autofit row height** - When selected, this setting ensures that the height of a row configured in an Excel template as an _AutoFit Row Height_ and containing at least one merged cell with wrap text alignment, is automatically adjusted at runtime. This adjustment occurs when the merged cell is filled with large text, allowing all wrapped content to be fully visible without manual resizing.
- - **Query timeout (seconds)** - As of version 10.0.46 of Finance, the ER engine supports manual configuration of query timeouts during runtime. The default value of 0 retains the system’s standard timeout, but users can now define custom duration for queries in ER runtime, improving flexibility and execution control.
+
+- **Autofit row height** - When selected, this setting ensures that the height of a row configured in an Excel template as an _AutoFit Row Height_ and containing at least one merged cell with wrap text alignment, is automatically adjusted at runtime. This adjustment occurs when the merged cell is filled with large text, allowing all wrapped content to be fully visible without manual resizing.
+- **Query timeout (seconds)** - As of version 10.0.46 of Finance, the ER engine supports manual configuration of query timeouts during runtime. The default value of 0 retains the system’s standard timeout, but users can now define custom duration for queries in ER runtime, improving flexibility and execution control.
 
 ## Active ER configurations provider
 
 On the **Configuration provider table** page, create ER provider records. Each provider can be [marked](tasks/er-configuration-provider-mark-it-active-2016-11.md) as **Active**. The active provider's name and internet address are stored in an ER configuration, as attributes of the configuration owner.
 
 ## Optional setup for ER
+
 In addition to the basic functionality, ER has other functionality that you can set up.
 
 - On the **Electronic reporting destination** page, define the ER output destinations for each file output of each ER format configuration. Use the [document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) of the Document management framework that you set up earlier. You can also use this page to set up the optional ER functionality for each legal entity. For more information, see [Electronic reporting (ER) destinations](electronic-reporting-destinations.md).
@@ -110,6 +113,5 @@ In addition to the basic functionality, ER has other functionality that you can 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 - [Configuration service of Regulatory Services](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

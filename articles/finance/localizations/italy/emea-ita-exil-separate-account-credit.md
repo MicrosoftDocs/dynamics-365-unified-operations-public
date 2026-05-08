@@ -3,8 +3,10 @@ title: Separate accounts for credit notes
 description: Learn how to set up and use separate accounts for credit notes, including prerequisites and an outline on setting up posting accounts.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/16/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy

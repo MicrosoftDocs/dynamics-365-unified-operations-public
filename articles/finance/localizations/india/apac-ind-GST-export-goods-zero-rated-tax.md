@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/04/2019
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
@@ -21,38 +21,38 @@ Complete the procedures in this article to export goods that have zero-rated tax
 
 ## Create a sales order
 
-1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
-2. Create an export order for a taxable item, and save the record.
-3. Select **Tax information**.
-4. On the **GST** tab, select the **Customer tax information** tab.
-5. Select **OK**.
-6. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document**.
-7. Select **Close**.
+1. Go to **Accounts receivable** > **Sales orders** > **All sales orders**.
+1. Create an export order for a taxable item, and save the record.
+1. Select **Tax information**.
+1. On the **GST** tab, select the **Customer tax information** tab.
+1. Select **OK**.
+1. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document**.
+1. Select **Close**.
 
 ## Post the invoice
 
 1. On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
-2. In the **Quantity** field, select **All**.
-3. Select **OK**.
-4. You receive a warning message. Select **Yes** to acknowledge it.
+1. In the **Quantity** field, select **All**.
+1. Select **OK**.
+1. You receive a warning message. Select **Yes** to acknowledge it.
 
 ## Validate the sales order voucher
 
 1. On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
-2. Select **Voucher**.
+1. Select **Voucher**.
 
 ## Post the export order
 
-1. Go to **Accounts receivable** \> **Orders** \> **Customs export order**.
-2. Create an export order for the posted sales order.
-3. Select **Shipping bill**.
-4. In the **Shipping bill Number** field, enter a value.
-5. Select **OK**.
+1. Go to **Accounts receivable** > **Orders** > **Customs export order**.
+1. Create an export order for the posted sales order.
+1. Select **Shipping bill**.
+1. In the **Shipping bill Number** field, enter a value.
+1. Select **OK**.
 
 ## Validate the shipping bill voucher
 
-1. Select **Inquiries** \> **Shipping bill**.
-2. Select **Voucher**.
+1. Select **Inquiries** > **Shipping bill**.
+1. Select **Voucher**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

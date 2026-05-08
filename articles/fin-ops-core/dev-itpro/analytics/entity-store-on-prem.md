@@ -103,19 +103,19 @@ Here's an explanation of the preceding code lines:
 
 Entity Store was enabled in Platform update 26.
 
-Creation of the Entity Store database and users is optional. When you configure a deployment in Microsoft Dynamics Lifecycle Services (LCS), you can leave the Entity Store customizations blank.
+Creation of the Entity Store database and users is optional. When you configure a deployment in Microsoft Dynamics Lifecycle Services, you can leave the Entity Store customizations blank.
 
 If you want to enable Entity Store in an environment, complete the following tasks:
 
 - Create an **AXDW** database by using the scripts described in step 14.
 - Create **axdwadmin** and **axdwruntimeuser** users that have appropriate privileges by using the scripts described in step 14. Users are defined in the following files: ConfigTemplate.xml and DatabaseTopologyDefinition.xml.
 - Create a **Credentials.json** file as described in step 15. Define user names and passwords for axdwadmin and axdwruntimeuser as described in step 14, and encrypt them.
-- Fill in the Entity Store SQL Server name and Entity Store database name during deployment in LCS.
+- Fill in the Entity Store SQL Server name and Entity Store database name during deployment in Lifecycle Services.
 
     - The database name is created in step 14 and is defined in the DatabaseTopologyDefinition.xml file. The default name is **AXDW**.
     - The SQL Server name is the fully qualified domain name (FQDN) of the Microsoft SQL Server or Always on listener. An example of this FQDN is **sqlinstance.onprem.contoso.com**. It's the server that the AXDW database is created on.
 
-To enable Entity Store in an environment that you already deployed, use the **Update Settings** action under the **Maintain** button in LCS. This action opens a dialog that allows you to specify the Entity Store configuration. 
+To enable Entity Store in an environment that you already deployed, use the **Update Settings** action under the **Maintain** button in Lifecycle Services. This action opens a dialog that allows you to specify the Entity Store configuration. 
 
 ## Author and distribute reports by using Entity Store on-premises
 
@@ -123,7 +123,7 @@ Entity Store is an operational data warehouse that's included. It lets power use
 
 Note the following additional steps that are specific to on-premises deployments:
 
-- For on-premises environments, you don't have to use LCS to deploy Power BI reports to production or sandbox environments. Because admins can point PowerBI.com datasets to specific Entity Store databases in on-premises environments, you don't have to use the functionality that LCS offers. However, you might have to configure the on-premises gateway to enable PowerBI.com to access data on-premises. For more information about the gateway, see [Power BI gateway documentation](https://powerbi.microsoft.com/gateway/).
+- For on-premises environments, you don't have to use Lifecycle Services to deploy Power BI reports to production or sandbox environments. Because admins can point PowerBI.com datasets to specific Entity Store databases in on-premises environments, you don't have to use the functionality that Lifecycle Services offers. However, you might have to configure the on-premises gateway to enable PowerBI.com to access data on-premises. For more information about the gateway, see [Power BI gateway documentation](https://powerbi.microsoft.com/gateway/).
 - Although cloud-based application environments support only reports that are authored by using the DirectQuery option, on-premises Entity Store supports both DirectQuery reports and Import mode reports.
 - Analytical workspaces aren't yet implemented in on-premises deployments. Instead of viewing reports in analytical workspaces, you can deploy them to PowerBI.com environments. The reports can then be used by users who have access to PowerBI.com. Your users might require appropriate licenses to access reports on PowerBI.com.
 

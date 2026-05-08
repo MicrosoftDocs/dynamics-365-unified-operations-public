@@ -3,8 +3,8 @@ title: Yearly tax communication
 description: Learn about the yearly tax communication report in Italy, including an outline on setting up the Yearly tax communication report.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 03/04/2024
+ms.topic: how-to
+ms.date: 05/01/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -37,7 +37,7 @@ As of Dynamics 365 Finance version 10.0.38, the **Yearly tax communication** fea
 ## Set up the Yearly tax communication report
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Import the following Electronic reporting (ER) configurations.
+1. Import the following Electronic reporting (ER) configurations.
 
     | ER configuration name | Type | Description |
     |-----------------------|------|-------------|
@@ -52,17 +52,17 @@ As of Dynamics 365 Finance version 10.0.38, the **Yearly tax communication** fea
     > [!NOTE]
     > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Yearly VAT communication model mapping** configuration on the **Configurations** page.
 
-3. In Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
-4. On the **Number sequences** tab, select a number sequence for the **Tax communication ID** reference.
-5. On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in the **Format mapping** field, select the **Yearly tax communication (IT)** format that you downloaded earlier.
-6. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
+1. In Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
+1. On the **Number sequences** tab, select a number sequence for the **Tax communication ID** reference.
+1. On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in the **Format mapping** field, select the **Yearly tax communication (IT)** format that you downloaded earlier.
+1. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 
-    ![Yearly tax communication setup page.](../media/1_Yearly_tax_communication_setup.png)
+    :::image type="content" source="../media/1_Yearly_tax_communication_setup.png" alt-text="Screenshot of the Yearly tax communication setup page.":::
 
     > [!NOTE]
     > To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni).
 
-7. On the **Field setup** tab, create lines, and set the following fields on them.
+1. On the **Field setup** tab, create lines, and set the following fields on them.
 
     | Field     | Description                             |
     |-----------|-----------------------------------------|
@@ -78,26 +78,26 @@ As of Dynamics 365 Finance version 10.0.38, the **Yearly tax communication** fea
     > [!NOTE]
     > If any changes are made in the declaration, you must change the field settings.
 
-8. For fields where the **Calculation** field is set to **Tax transactions**, on the **Selected tax codes** tab, select **New** to add a line for each sales tax code that should be available as a field value.
+1. For fields where the **Calculation** field is set to **Tax transactions**, on the **Selected tax codes** tab, select **New** to add a line for each sales tax code that should be available as a field value.
 
-    ![Yearly tax communication setup page, Selected tax codes tab.](../media/2_Yearly_tax_communication_setup.png)
+    :::image type="content" source="../media/2_Yearly_tax_communication_setup.png" alt-text="Screenshot of the Yearly tax communication setup page, Selected tax codes tab.":::
 
-9. Select **Exceptions** to set up main accounts that should be excluded from the query.
+1. Select **Exceptions** to set up main accounts that should be excluded from the query.
 
     Create enough unique sales tax codes so that each is linked to a single field in the yearly declaration. This approach helps simplify the setup of the yearly declaration.
 
     However, if the same sales tax code can be linked to multiple fields, you should set up additional filters for the tax transaction.
 
-10. Select **Query**, and specify additional filtering rules for posted sales tax. For example, you can specify additional filters for the sales tax direction or sales tax book section.
+1. Select **Query**, and specify additional filtering rules for posted sales tax. For example, you can specify additional filters for the sales tax direction or sales tax book section.
 
     You can do the following additional setup for fields where the **Calculation** field is set to **Total**. The system can then automatically calculate values for tags that should represent a result that is calculated by using a formula that consists of the values of other fields (but only fields where the **Calculation** field isn't set to **Total**).
 
-11. Select the line where the **Calculation** field is set to **Total**.
-12. On the **Total amount** tab, select **New** to add lines for all fields that should be totaled.
+1. Select the line where the **Calculation** field is set to **Total**.
+1. On the **Total amount** tab, select **New** to add lines for all fields that should be totaled.
 
-    ![Yearly tax communication setup page, Total amount tab.](../media/3_Yearly_tax_communication_setup.png)
+    :::image type="content" source="../media/3_Yearly_tax_communication_setup.png" alt-text="Screenshot of the Yearly tax communication setup page, Total amount tab.":::
 
-13. Set the following fields.
+1. Set the following fields.
 
     | Field name | Description                                                                                                                 |
     |------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -132,11 +132,11 @@ In the **Format** column, you can specify a field format. In addition to **NU** 
 ## Create a yearly tax declaration
 
 1. Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
-2. Select **Create new** to create header information for the **Yearly tax communication** report for the previous year. The number of lines that are created matches the number of Italian sales tax books.
+1. Select **Create new** to create header information for the **Yearly tax communication** report for the previous year. The number of lines that are created matches the number of Italian sales tax books.
 
-    ![Yearly tax communication page, Overview tab.](../media/4_Yearly_tax_communication_setup.png)
+    :::image type="content" source="../media/4_Yearly_tax_communication_setup.png" alt-text="Screenshot of the Yearly tax communication page, Overview tab.":::
 
-3. On the **General** tab, review the following information.
+1. On the **General** tab, review the following information.
 
     | Field                | Description                                                                                                                                                                                                                                                                                                                |
     |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -147,8 +147,8 @@ In the **Format** column, you can specify a field format. In addition to **NU** 
     | Date of export       | The date when the .ivc file was exported.                                                                                                                                                                                                                                                                                  |
     | Export file name     | The name of the .ivc file that was exported.                                                                                                                                                                                                                                                                               |
 
-4. Select the required line, and then select **Open** to open the **Yearly tax communication** page, which has the information about the selected declaration.
-5. On the **Header** tab, review the following information.
+1. Select the required line, and then select **Open** to open the **Yearly tax communication** page, which has the information about the selected declaration.
+1. On the **Header** tab, review the following information.
 
     <table>
     <thead>
@@ -368,572 +368,93 @@ In the **Format** column, you can specify a field format. In addition to **NU** 
     </tbody>
     </table>
 
-6. On the **Report lines** tab, review or edit the lines and amounts that you previously set up for the **Yearly tax communication** report on the **Yearly tax communication setup** page. For lines where the **Calculation** field is set to **Manual**, manually enter the amounts.
-7. On the **Details** tab, review or edit the details of each line on the **Yearly tax communication** report.
-8. Close the **Yearly tax communication** page that has the information about the selected declaration.
-9. On the **Yearly tax communication** page that has the list of declarations, select **Export**.
-10. In the **Create export file** dialog box, in the **File name** field, enter a value. Then select **OK** to create and export the .ivc file.
-11. Select **Delete export** to delete the .ivc file that has been created and exported.
+1. On the **Report lines** tab, review or edit the lines and amounts that you previously set up for the **Yearly tax communication** report on the **Yearly tax communication setup** page. For lines where the **Calculation** field is set to **Manual**, manually enter the amounts.
+1. On the **Details** tab, review or edit the details of each line on the **Yearly tax communication** report.
+1. Close the **Yearly tax communication** page that has the information about the selected declaration.
+1. On the **Yearly tax communication** page that has the list of declarations, select **Export**.
+1. In the **Create export file** dialog box, in the **File name** field, enter a value. Then select **OK** to create and export the .ivc file.
+1. Select **Delete export** to delete the .ivc file that has been created and exported.
 
 ## Appendix 1. Structure of the yearly VAT declaration
 
 The following table provides an example of the structure of the yearly VAT declaration. This example is based on the 2020 declaration. Sections that aren't included in the setup example are *italicized*.
 
-<table>
-<thead>
-<tr>
-<th>Section (EN)</th>
-<th>Fields</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2">
-<p><em>PART VA</em></p>
-<p><em>INFORMATION AND DATA RELATING TO THE ACTIVITY</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 1 - General analytical data</em></p>
-</td>
-<td>
-<p><em>VA001001-VA005004</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 2 - Data summary relating to all activities carried out</em></p>
-</td>
-<td>
-<p><em>VA010001-VA015001</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VB</em></p>
-<p><em>DATA RELATING TO IDENTIFICATION DETAILS OF FINANCIAL RELATIONS</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VB001001-VB007004</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p>PART VC</p>
-<p>EXPORTERS AND ASSOCIATED OPERATORS</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Purchases and imports without the application of value added tax relating to all activities carried out.</p>
-</td>
-<td>
-<p>VC001001-VC014003</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VD</em></p>
-<p><em>TRANSFER OF VAT CREDIT BY ASSET MANAGEMENT COMPANIES</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 1 - Transferring company - List of transferee companies or body</em></p>
-</td>
-<td>
-<p><em>VD001001-VD021002</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 2 - Company or transferring body - List of ceding companies</em></p>
-</td>
-<td>
-<p><em>VD031001-VD056001</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p>PART VE</p>
-<p>CALCULATION OF BUSINESS TURNOVER AND THE TAX RELATIVE TO TAXABLE OPERATIONS</p>
-<p>(Comment: Sales and output VAT on sales)</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 1 - Conferring of agricultural products and transfers by exempt agriculturalists (in the case of the limit being exceeded by more than a third)</em></p>
-</td>
-<td>
-<p><em>VE001001-VE012002</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 2 - Taxable agricultural operations and taxable commercial or professional operations</p>
-</td>
-<td>
-<p>VE020001-VE023002</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 3 - Total taxable amount and tax</p>
-</td>
-<td>
-<p>VE024001-VE026002</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 4 - Other operations</p>
-</td>
-<td>
-<p>VE030001-VE040001</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 5 - Business turnover</p>
-</td>
-<td>
-<p>VE050001</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p>PART VF</p>
-<p>LIABILITY OPERATIONS AND ADMISSIBLE DEDUCTIBLE VAT</p>
-<p>(Comment: Purchases and input VAT on purchases)</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 1 - Total amount of purchases carried out in the national/regional territory of intracommunity purchases and imports</p>
-</td>
-<td>
-<p>VF001001-VF022001</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 2 - Total purchases and imports, total tax, intra-community purchases, imports, and purchases from San Marino</p>
-</td>
-<td>
-<p>VF023001-VF027004</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 3 - Calculation of admissible deductible VAT</p>
-</td>
-<td>
-<p>VF030001-VF030009</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 3-A - Exempt operations</p>
-</td>
-<td>
-<p><em>VF031001-VF033001</em>, VF034001-VF037001</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 3-B - Agricultural business (art.34)</em></p>
-</td>
-<td>
-<p><em>VF038001-VF055001</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 3-C - Special cases</em></p>
-</td>
-<td>
-<p><em>VF060001-VF062002</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 4 - Admissible deductible VAT</p>
-</td>
-<td>
-<p>VF070001-VF071001</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p>PART VJ</p>
-<p>CALCULATION OF TAX ON CERTAIN TYPES OF OPERATIONS</p>
-<p>(Comment: Output VAT on purchase reverse charge)</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>&nbsp;</p>
-</td>
-<td>
-<p>VJ001001-VJ019002</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VI</em></p>
-<p><em>DECLARATIONS OF INTENT RECEIVED</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VI001001-VI006002</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VH</em></p>
-<p><em>CHANGES OF PERIODIC COMMUNICATIONS</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VH001001-VH017001</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VM</em></p>
-<p><em>PAYMENT FOR EU AUTOMOBILE REGISTRATIONS</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VM001001-VM012001</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VK</em></p>
-<p><em>CONTROLLING AND CONTROLLED COMPANY</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 1 &ndash; General data</em></p>
-</td>
-<td>
-<p><em>VK001001-VK001004</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 2 - Calculation of tax surplus</em></p>
-</td>
-<td>
-<p><em>VK020001-VK028001</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 3 - Termination of control during the year Data relating to the period of control</em></p>
-</td>
-<td>
-<p><em>VK030001-VK036001</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VN</em></p>
-<p><em>SUPPLEMENTAL DECLARATIONS IN FAVOUR</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VN001001-VN004005</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VQ</em></p>
-<p><em>OMITTED PERIODICAL PAYMENTS</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VQ001001-VQ005010</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p>PART VL</p>
-<p>PAYMENT OF ANNUAL TAX</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 1 - Calculation of VAT due or input VAT for the tax period</p>
-</td>
-<td>
-<p>VL001001-VL004001</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 2 - Credit from previous year</p>
-</td>
-<td>
-<p>VL008001-VL012002</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Section 3 - Calculation of output or input VAT relating to all the activities carried out</p>
-</td>
-<td>
-<p>VL020001-VL040001</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VP</em></p>
-<p><em>TAX PAYMENT</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VP001001-VP014002</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VT</em></p>
-<p><em>SEPARATE INDICATION OF OPERATIONS CARRIED OUT REGARDING END CONSUMERS AND HOLDERS OF VAT NUMBERS</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VT001001-VT022002</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VX</em></p>
-<p><em>CALCULATION OF VAT TO BE PAID OR OF TAX CREDIT</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>For persons presenting the return with several forms only fill in form no. 01</em></p>
-</td>
-<td>
-<p><em>VX001001-VX006002</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>RESERVED FOR THE COMPANIES PARTICIPATING IN THE VAT GROUP PAYMENT V</em></p>
-</td>
-<td>
-<p><em>VX007001-VX008001</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VO</em></p>
-<p><em>COMMUNICATION OF OPTIONS AND REVOCATIONS</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 1 - Options, waivers, and revocations for the purpose of VAT</em></p>
-</td>
-<td>
-<p><em>VO001001-VO015002</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 2 - Options, and revocations for the purpose of VAT</em></p>
-</td>
-<td>
-<p><em>VO020001-VO026001</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 3 - Options and revocations for both VAT and income tax purposes</em></p>
-</td>
-<td>
-<p><em>VO030001-VO035001</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 4 - Options and revocation regarding tax on entertainment</em></p>
-</td>
-<td>
-<p><em>VO040001-VO040002</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 5 - Options and revocation regarding IRAP</em></p>
-</td>
-<td>
-<p><em>VO050001-VO050002</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VG</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 1 - Companies participating in VAT compensation</em></p>
-</td>
-<td>
-<p><em>VG001001-VG004007</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 2 - Companies participating in the control chain but not in VAT compensation</em></p>
-</td>
-<td>
-<p><em>VG005001-VG007006</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 3 - Revocation</em></p>
-</td>
-<td>
-<p><em>VG008001</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VS</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 1 - List of companies in the group</em></p>
-</td>
-<td>
-<p><em>VS001001-VS012012</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 2 - Summary data</em></p>
-</td>
-<td>
-<p><em>VS020001-VS022002</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 3 - Guarantees of the controlling company</em></p>
-</td>
-<td>
-<p><em>VS030001</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VV</em></p>
-<p><em>PERIODICAL TAX PAYMENTS OF GROUP</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VV001001-VV017003</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VW</em></p>
-<p><em>PAYMENT OF ANNUAL TAX OF GROUP</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 1 - Calculation of VAT due or input VAT for the tax period</em></p>
-</td>
-<td>
-<p><em>VW001001-VW004001</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>Section 2 - Calculation of output or input VAT</em></p>
-</td>
-<td>
-<p><em>VW020001-VW040001</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VY</em></p>
-<p><em>CALCULATION OF VAT PAYABLE OR GROUP TAX CREDIT</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VY001001-VY006002</em></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><em>PART VZ</em></p>
-<p><em>DEDUCTIBLE GROUP SURPLUSES (PREVIOUS YEARS)</em></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><em>&nbsp;</em></p>
-</td>
-<td>
-<p><em>VZ001001-VZ002001</em></p>
-</td>
-</tr>
-</tbody>
-</table>
+| Section (EN) | Fields |
+|---|---|
+| *PART VA* *INFORMATION AND DATA RELATING TO THE ACTIVITY* | |
+| *Section 1 - General analytical data* | *VA001001-VA005004* |
+| *Section 2 - Data summary relating to all activities carried out* | *VA010001-VA015001* |
+| *PART VB* *DATA RELATING TO IDENTIFICATION DETAILS OF FINANCIAL RELATIONS* | |
+| *&nbsp;* | *VB001001-VB007004* |
+| PART VC EXPORTERS AND ASSOCIATED OPERATORS | |
+| Purchases and imports without the application of value added tax relating to all activities carried out. | VC001001-VC014003 |
+| *PART VD* *TRANSFER OF VAT CREDIT BY ASSET MANAGEMENT COMPANIES* | |
+| *Section 1 - Transferring company - List of transferee companies or body* | *VD001001-VD021002* |
+| *Section 2 - Company or transferring body - List of ceding companies* | *VD031001-VD056001* |
+| PART VE CALCULATION OF BUSINESS TURNOVER AND THE TAX RELATIVE TO TAXABLE OPERATIONS (Comment: Sales and output VAT on sales) | |
+| *Section 1 - Conferring of agricultural products and transfers by exempt agriculturalists (in the case of the limit being exceeded by more than a third)* | *VE001001-VE012002* |
+| Section 2 - Taxable agricultural operations and taxable commercial or professional operations | VE020001-VE023002 |
+| Section 3 - Total taxable amount and tax | VE024001-VE026002 |
+| Section 4 - Other operations | VE030001-VE040001 |
+| Section 5 - Business turnover | VE050001 |
+| PART VF LIABILITY OPERATIONS AND ADMISSIBLE DEDUCTIBLE VAT (Comment: Purchases and input VAT on purchases) | |
+| Section 1 - Total amount of purchases carried out in the national/regional territory of intracommunity purchases and imports | VF001001-VF022001 |
+| Section 2 - Total purchases and imports, total tax, intra-community purchases, imports, and purchases from San Marino | VF023001-VF027004 |
+| Section 3 - Calculation of admissible deductible VAT | VF030001-VF030009 |
+| Section 3-A - Exempt operations | *VF031001-VF033001*, VF034001-VF037001 |
+| *Section 3-B - Agricultural business (art.34)* | *VF038001-VF055001* |
+| *Section 3-C - Special cases* | *VF060001-VF062002* |
+| Section 4 - Admissible deductible VAT | VF070001-VF071001 |
+| PART VJ CALCULATION OF TAX ON CERTAIN TYPES OF OPERATIONS (Comment: Output VAT on purchase reverse charge) | |
+| &nbsp; | VJ001001-VJ019002 |
+| *PART VI* *DECLARATIONS OF INTENT RECEIVED* | |
+| *&nbsp;* | *VI001001-VI006002* |
+| *PART VH* *CHANGES OF PERIODIC COMMUNICATIONS* | |
+| *&nbsp;* | *VH001001-VH017001* |
+| *PART VM* *PAYMENT FOR EU AUTOMOBILE REGISTRATIONS* | |
+| *&nbsp;* | *VM001001-VM012001* |
+| *PART VK* *CONTROLLING AND CONTROLLED COMPANY* | |
+| *Section 1 – General data* | *VK001001-VK001004* |
+| *Section 2 - Calculation of tax surplus* | *VK020001-VK028001* |
+| *Section 3 - Termination of control during the year Data relating to the period of control* | *VK030001-VK036001* |
+| *PART VN* *SUPPLEMENTAL DECLARATIONS IN FAVOUR* | |
+| *&nbsp;* | *VN001001-VN004005* |
+| *PART VQ* *OMITTED PERIODICAL PAYMENTS* | |
+| *&nbsp;* | *VQ001001-VQ005010* |
+| PART VL PAYMENT OF ANNUAL TAX | |
+| Section 1 - Calculation of VAT due or input VAT for the tax period | VL001001-VL004001 |
+| Section 2 - Credit from previous year | VL008001-VL012002 |
+| Section 3 - Calculation of output or input VAT relating to all the activities carried out | VL020001-VL040001 |
+| *PART VP* *TAX PAYMENT* | |
+| *&nbsp;* | *VP001001-VP014002* |
+| *PART VT* *SEPARATE INDICATION OF OPERATIONS CARRIED OUT REGARDING END CONSUMERS AND HOLDERS OF VAT NUMBERS* | |
+| *&nbsp;* | *VT001001-VT022002* |
+| *PART VX* *CALCULATION OF VAT TO BE PAID OR OF TAX CREDIT* | |
+| *For persons presenting the return with several forms only fill in form no. 01* | *VX001001-VX006002* |
+| *RESERVED FOR THE COMPANIES PARTICIPATING IN THE VAT GROUP PAYMENT V* | *VX007001-VX008001* |
+| *PART VO* *COMMUNICATION OF OPTIONS AND REVOCATIONS* | |
+| *Section 1 - Options, waivers, and revocations for the purpose of VAT* | *VO001001-VO015002* |
+| *Section 2 - Options, and revocations for the purpose of VAT* | *VO020001-VO026001* |
+| *Section 3 - Options and revocations for both VAT and income tax purposes* | *VO030001-VO035001* |
+| *Section 4 - Options and revocation regarding tax on entertainment* | *VO040001-VO040002* |
+| *Section 5 - Options and revocation regarding IRAP* | *VO050001-VO050002* |
+| *PART VG* | |
+| *Section 1 - Companies participating in VAT compensation* | *VG001001-VG004007* |
+| *Section 2 - Companies participating in the control chain but not in VAT compensation* | *VG005001-VG007006* |
+| *Section 3 - Revocation* | *VG008001* |
+| *PART VS* | |
+| *Section 1 - List of companies in the group* | *VS001001-VS012012* |
+| *Section 2 - Summary data* | *VS020001-VS022002* |
+| *Section 3 - Guarantees of the controlling company* | *VS030001* |
+| *PART VV* *PERIODICAL TAX PAYMENTS OF GROUP* | |
+| *&nbsp;* | *VV001001-VV017003* |
+| *PART VW* *PAYMENT OF ANNUAL TAX OF GROUP* | |
+| *Section 1 - Calculation of VAT due or input VAT for the tax period* | *VW001001-VW004001* |
+| *Section 2 - Calculation of output or input VAT* | *VW020001-VW040001* |
+| *PART VY* *CALCULATION OF VAT PAYABLE OR GROUP TAX CREDIT* | |
+| *&nbsp;* | *VY001001-VY006002* |
+| *PART VZ* *DEDUCTIBLE GROUP SURPLUSES (PREVIOUS YEARS)* | |
+| *&nbsp;* | *VZ001001-VZ002001* |
 
 ### Example
 
@@ -984,8 +505,8 @@ Here is an example for the **ITCO** legal entity.
     > [!NOTE]
     > To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/infogen-iva-2020).
 
-6. Refresh the page.
-7. Post the following transactions. For example, for customer invoices, go to **Accounts receivable \> Invoices \> All free text invoices**. For vendor invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
+1. Refresh the page.
+1. Post the following transactions. For example, for customer invoices, go to **Accounts receivable \> Invoices \> All free text invoices**. For vendor invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
 
     | Date              | Transaction type | Amount net | VAT amount | Sales tax code | Expected field                                        | Expected sum            |
     |-------------------|------------------|------------|------------|----------------|-------------------------------------------------------|-------------------------|
@@ -995,9 +516,9 @@ Here is an example for the **ITCO** legal entity.
     | February 5, 2019  | Customer invoice | 1500       | 0          | EUS            | VE030003                                              | 1500                    |
     | March 1, 2019     | Customer invoice | 500        | 0          | RC             | VE035007                                              | 500                     |
 
-8. Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
-9. Select **Create new** to create a yearly tax communication record for the previous year (2019).
-10. Select the new line, select **Open**, and review the data that is generated for the declaration.
+1. Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
+1. Select **Create new** to create a yearly tax communication record for the previous year (2019).
+1. Select the new line, select **Open**, and review the data that is generated for the declaration.
 
 Fields with **Total** selected in the **Calculation** field are marked in bold.
 
@@ -1033,18 +554,18 @@ Fields with **Total** selected in the **Calculation** field are marked in bold.
 To download example setup for the 2020 declaration, see [IVA example setup 2020](/dynamics/s-e/ax/ItalianAnnualVATdeclaration_delta). To access the link, you need to have access to CustomerSource.
 
 1. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
-2. Select the **Open in Microsoft Office** button, and then, under **Open in Excel**, select **Yearly tax communication setup (DEMF)**.
+1. Select the **Open in Microsoft Office** button, and then, under **Open in Excel**, select **Yearly tax communication setup (DEMF)**.
 
-    ![Yearly tax communication setup (DEMF) selection.](../media/6_Export_to_Excel.png)
+    :::image type="content" source="../media/6_Export_to_Excel.png" alt-text="Screenshot of the Yearly tax communication setup (DEMF) selection.":::
 
-3. Select **Download**.
-4. Open the downloaded file, and enable editing.
-5. Copy the data from the file downloaded above and paste the data to the file that is opened, and then select **Publish**.
+1. Select **Download**.
+1. Open the downloaded file, and enable editing.
+1. Copy the data from the file downloaded above and paste the data to the file that is opened, and then select **Publish**.
 
-    ![Publish button.](../media/5_Export_to_Excel.png)
+    :::image type="content" source="../media/5_Export_to_Excel.png" alt-text="Screenshot of the Publish button.":::
 
-6. Review settings and make necessary updates. For example, set up sales tax codes that exist in the application.
-7. Consider the following information. Some totals are not configured in the example and should be calculated manually using the formula specified in official guidance. These are the following totals:
+1. Review settings and make necessary updates. For example, set up sales tax codes that exist in the application.
+1. Consider the following information. Some totals are not configured in the example and should be calculated manually using the formula specified in official guidance. These are the following totals:
 
     - VF037001 VAT admissible for deduction (IVA ammessa in detrazione)
     - VF071002 VAT admissible for deduction (IVA ammessa in detrazione)

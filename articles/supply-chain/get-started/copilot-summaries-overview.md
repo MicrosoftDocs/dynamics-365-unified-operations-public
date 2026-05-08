@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 09/11/2025
+ms.date: 05/07/2026
 ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
@@ -15,6 +15,8 @@ ms.collection:
 ---
 
 # AI summaries with Copilot
+
+[!include [banner](../includes/banner.md)]
 
 AI summaries with Microsoft Copilot are available on many of the most-used pages in Dynamics 365 Supply Chain Management. These summaries provide a quick overview of the most important information that's related to the page, personalized for the current user. Summaries can include information such as the number of lines on a purchase order, the number of items in a warehouse, or the number of overdue invoices for a vendor.
 

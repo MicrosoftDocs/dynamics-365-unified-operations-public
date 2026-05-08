@@ -22,9 +22,9 @@ You must manually update build definitions that you created before Platform upda
 
 ## Version numbers
  
-Even though models are compiled into one package, the binary package retains the metadata information of all models. You can review this information from Microsoft Dynamics Lifecycle Services (LCS) or from the client.
+Even though models are compiled into one package, the binary package retains the metadata information of all models. You can review this information from Microsoft Dynamics Lifecycle Services or from the client.
 
-In LCS, follow these steps to find the version numbers of models that are installed in an environment:
+In Lifecycle Services, follow these steps to find the version numbers of models that are installed in an environment:
 
 1. On the **Full details** page for the environment, under **Environment Version Information**, select the **View detailed version information** link. 
 1. On the **Installed updates** page, in the **Machine name** field, select an Application Object Server (AOS) computer. 
