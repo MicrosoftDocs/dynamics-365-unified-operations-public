@@ -1931,6 +1931,10 @@
           href: master-planning/planning-optimization/negative-on-hand.md
         - name: Calculate sales order delivery dates using CTP
           href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
+        - name: Keep supply for confirmed demand (Preview)
+          href: master-planning/planning-optimization/keep-supply-for-confirmed-demand.md
+        - name: Optimize confirmed dates for CTP line changes (Preview)
+          href: master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes.md
       - name: Set up master plans
         items:
         - name: Master plans overview
