@@ -17,53 +17,55 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes how to set up impact analysis as a standalone Procurement Agent capability for use with the vendor collaboration interface and/or manual simulation.
-
-## Prerequisites
-
-To use impact analysis, your system must meet the following requirements:
-
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later, with all available quality updates.  
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
-
-    - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
-    - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
-    - *(Production ready preview) Procurement Agent - Impact analysis*
-        - Once you enable this feature, you can use the [Impact simulation](procurement-agent-impact-analysis-simulation.md) feature without any further configuration. <!-- KFM: What about the triggering flow mentioned in the next section? What about the PPAC and Copilot Studio Agents mentioned later in this list? -->
-
-    > [!TIP]
-    > If you can't enable the *Agent management* features, make sure that all of its [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
-
-- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
-    - First, install *Copilot for finance and operations apps* version 1.0.03048.2<!-- LS: Will updated shortly after public preview date --> or later. If it's already installed, update it to the latest version.
-    - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1<!-- LS: Will updated shortly after public preview date --> or later. If it's already installed, update it to the latest version.
-- Normally, the Microsoft Copilot Studio agent needed for impact analysis to run is published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of this agent. To check if the agents are successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
-    - *Procurement Agent - Impact Analysis*
-
-    If the agent isn't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
+This article describes how to set up impact analysis together with supplier communications or as a standalone Procurement Agent capability for use with the vendor collaboration interface and/or manual simulation.
 
 ## If you're already using supplier communications
 
 If you're already using the supplier communications capabilities of the Procurement Agent (previously known as the Supplier Communications Agent), you don't need to follow all of the steps in this article to add the impact analysis features because you've already completed most of the required steps. Just do the following steps:
 
 - Make sure you're running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
+- Install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03413.1 or later.
+- Make sure that the following Microsoft Copilot Studio agents are published in that environment:*Procurement Agent - Impact Analysis*
 - Turn on the *(Production ready preview) Procurement Agent - Impact analysis* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the feature isn't shown on your system.
-- Activate the triggering Power Automate flow for impact analysis, which is called *(Production ready preview) Setup Procurement Agent - Impact analysis*. <!-- LS: Will updated shortly after public preview date -->
+- Add the following security user role: *Procurement User Role (Preview)*
+- [Activate the triggering Power Automate flows for impact analysis](Activate the triggering Power Automate flows for impact analysis)
 
-<!-- KFM: What about the other items mentioned in the prerequisites? -->
+## If you will use impact analysis without supplier communications
 
-## <a name="set-up-agent-identity"></a>Set up an agent identity
+### Prerequisites
+
+To use impact analysis, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later, with all available quality updates.  
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
+
+    - [*Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
+    - [*Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
+    - *(Production ready preview) Procurement Agent - Impact analysis*
+
+    > [!TIP]
+    > If you can't enable the *Agent management* features, make sure that all of its [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
+
+- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
+    - First, install *Copilot for finance and operations apps* version 1.0.03048.2 or later. If it's already installed, update it to the latest version.
+    - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03413.1 or later. If it's already installed, update it to the latest version.
+- Normally, the Microsoft Copilot Studio agent needed for impact analysis to run is published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of this agent. To check if the agents are successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
+    - *Procurement Agent - Impact Analysis*
+
+    If the agent isn't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
+
+### <a name="set-up-agent-identity"></a>Set up an agent identity
 
 The Procurement Agent impact analysis features interact with Dataverse and Microsoft Copilot Studio. Follow the instructions in the following subsections to create the required connections and set up the *agent identity* that the agent uses for these interactions.
 
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
 
-### Set up agent identity users and assign security roles
+#### Set up agent identity users and assign security roles
 
 Use the user management features for your tenant to create an *agent identity user*. Then assign the licenses and security roles described in the following subsections to that user.
 
-#### License requirements
+##### License requirements
 
 Impact analysis uses premium tier connectors, so the agent identity user must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
@@ -71,19 +73,19 @@ Examples of sufficient licenses include *Power Apps Premium*, *Power Automate Pr
 
 Use the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?referrer=entra#/licenses) to assign the required licenses.
 
-#### Required security roles
+##### Required security roles
 
-Add the agent identity user both to the Dataverse environment and to Supply Chain Management. Assign the agent identity user the security roles shown in the following lists.
+Add the agent identity user both to the Dataverse environment and to Supply Chain Management. Assign the agent identity user the security roles shown in the following lists. Some user roles are common for the Procurement Agent - supplier communications and impact analysis. 
 
 - Required Dataverse user roles:
 
     - *Finance and Operation Basic User*
-    - *Supplier Communications Agent* <!-- LS: Will be changed shortly after public preview date to "Procurement Agent" -->
+    - *Supplier Communications Agent* 
     - *Environment Maker*
 
 - Required Supply Chain Management user roles:
 
-    - *(Preview) Supplier Communications Agent* <!-- LS: Will be changed shortly after public preview date to "Procurement Agent" -->
+    - *Procurement User Role (Preview)*
     - *System user*
     - *System agent*
 
@@ -106,11 +108,11 @@ To create the required connections, follow these steps:
 
     :::image type="content" source="media/sca-connections-setup.png" alt-text="Example connections setup" lightbox="media/sca-connections-setup.png":::
 
-### <a name="trigger-flows"></a>Activate the triggering Power Automate flows
+### <a name="trigger-flows"></a>Activate the triggering Power Automate flows 
 
-<!-- LS: The engineers caught this part too late so we will not be able to have it available by April 24th. This section must be updated to reflect the final version before we publish this topic. -->
+#### For the Procurement Agent
 
-To finish setting up the agent identity, you must activate the triggering Power Automate flows. Follow these steps to use a canvas app and finish the setup.
+To finish setting up the agent identity, you first must activate the triggering common Procurement Agent Power Automate flows, and then triggering impact analysis specific flows.
 
 1. Sign in to the [Power Apps Maker portal](https://make.powerapps.com) as an environment administrator user.
 1. Select your environment from the **Environment** drop-down list in the page header.
@@ -118,19 +120,32 @@ To finish setting up the agent identity, you must activate the triggering Power 
 1. Open the **Managed** tab.
 1. Find and open the solution with a **Display name** of *Copilot in Supply Chain Management solution*.
 1. On the **Objects** pane, select **Apps**.
-1. Select the app with a **Display name** of *(Production ready preview) Setup Procurement Agent - Impact analysis*.
-1. If **Play** is disabled on the command bar, select **Share**, add your name, and select **Share**.
+1. Select the app with a **Display name** of *(Production ready preview) Setup Supplier Communications Agent*. This is a common step for the Procurement Agent - supplier communications and impact analysis.
+1. Click **Play**. If **Play** is disabled on the command bar, select **Share**, add your name, and select **Share**.
 1. Select the *(Production ready preview) Setup Procurement Agent - Impact analysis* app again and then select **Play** on the command bar.
 1. Under **Connections**, select the connections you created in the previous section for both *Microsoft Dataverse* and *Microsoft Copilot Studio*.
 1. Select **Apply** at the bottom-right of the page and wait for all of the flows listed under **Agent trigger flows status** to switch to a state of *Activated*.
 
-## Assign permissions to users working with the agent
+#### For Impact Analysis
+
+Next you must activate the specific impact analysis power automate flow.
+
+1. Sign in to the [Power Apps Maker portal](https://make.powerapps.com) as an environment administrator user.
+1. Select your environment from the **Environment** drop-down list in the page header.
+1. In the left pane, select **Solutions**.
+1. Find the solution a **Display name** of *Copilot in Supply Chain Management solution*.
+1. On the left pane, click **Objects**.
+1. On the objects pane click **Cloud Flows**.
+1. Select the cloud flow with the **Display name** of *Procurement Agent - Impact analysis (Preview)*
+1. Click **Turn on** in the top navigation bar.
+
+### Assign permissions to users working with the agent
 
 All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
 
 Additionally, assign the roles described in the following subsections.
 
-### Permissions for users who manage the agent configuration
+#### Permissions for users who manage the agent configuration
 
 Users who manage the agent configuration must have the following roles:
 
@@ -143,7 +158,7 @@ Users who manage the agent configuration must have the following roles:
     - *System user*
     - *Purchasing manager* and/or *Purchasing agent*
 
-### Permissions for users who review agent results
+#### Permissions for users who review agent results
 
 Users who review the agent results must have the following roles:
 
@@ -154,7 +169,3 @@ Users who review the agent results must have the following roles:
 - Required Supply Chain Management user roles:
     - *System user*
     - *Purchasing agent*
-
-## Refresh data (optional)
-
-After you enable impact analysis in a sandbox environment, it's a good idea to refresh the data. When you test in the sandbox environment, you can use the same data that you have in the production environment. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
