@@ -31,17 +31,17 @@ The system runs a reference check against ledger transactions, dimension value c
 A main account can't be deleted if any of the following are true:
 
 - It's used on any posted ledger transaction, or on an unposted journal line.
-- It's been used in any account combination on the chart of accounts, even if the transaction that originally used it was reversed or deleted.
+- It's been used in any ledger account on the chart of accounts, even if the transaction that originally used it was reversed or deleted.
 - It's set as a default account on a posting profile, the ledger setup, module parameters, or a posting setup such as fixed assets or inventory.
 - It's referenced by an account structure, an advanced rule structure, or the Financial Reporting setup.
 
-If the reference check identifies the blocker, remove the reference — for example, clear the default account assignment — and retry. If the account has ever been used in an account combination, deletion is permanently blocked, even after every transaction that referenced the combination has been removed.
+If the reference check identifies the blocker, remove the reference — for example, clear the posting profile — and retry. If the account has ever been used in an ledger account, deletion is permanently blocked, even after every transaction that referenced the combination has been removed.
 
 ## Auto-created main accounts in a consolidation entity
 
 When you run an online consolidation against an unmapped or partially mapped account, the system automatically creates the missing main account in the consolidation entity's chart of accounts so the transaction can post.
 
-Even if you later reverse or delete the consolidation transactions, the account combinations created during the consolidation remain on file. As a result, the auto-created main account can't be deleted from the consolidation entity. This is by design.
+Even if you later reverse or delete the consolidation transactions, the ledger account created during the consolidation remain on file. As a result, the auto-created main account can't be deleted from the consolidation entity. This is by design.
 
 To avoid this scenario:
 
