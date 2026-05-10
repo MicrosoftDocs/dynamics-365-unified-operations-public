@@ -18,14 +18,13 @@ ms.custom:
 
 This article explains how to initiate returns for cash-and-carry transactions or customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 
-> [!NOTE]
-> In Commerce version 10.0.20 and later, a new feature named **Unified return processing experience in POS** is available. This feature provides a more consistent and unified return process in POS, regardless of the transaction type (cash-and-carry transaction or customer order) or the original channel that the order was created in. Turn on this new feature to help improve the overall reliability of return processing through POS.
->
-> After you turn on the feature, you can't turn it off.
 
 ## Process returns by using the return transaction operation
 
-Add the return transaction operation to your POS [screen layout](pos-screen-layouts.md). In releases before the Commerce version 10.0.20 release, the return transaction operation correctly supports the processing of returns for cash-and-carry transactions only. After you turn on the **Unified return processing experience for POS** feature in the Commerce version 10.0.20 release or later, the return transaction operation also supports the processing of returns that originate from customer orders, such as "pick up" or "ship to home" orders that are already invoiced.
+Add the return transaction operation to your POS [screen layout](pos-screen-layouts.md). In releases before the Commerce version 10.0.20 release, the return transaction operation correctly supports the processing of returns for cash-and-carry transactions only. After you turn on the **Unified return processing experience for POS** feature the return transaction operation also supports the processing of returns that originate from customer orders, such as "pick up" or "ship to home" orders that are already invoiced.
+
+> [!NOTE]
+> The feature **Unified return processing experience in POS** is now enabled automatically and is marked mandatory.  
 
 From the return transaction operation, users can search for a cash-and-carry transaction or a customer order to return against by entering any of the following four search criteria. Users can enter these criteria by using a device keyboard, on-screen keypad, or bar code scanner.
 
@@ -52,9 +51,63 @@ After the return quantity and reason code are set for each item that must be ret
 
 ### User experience enhancements
 
-If there's more than one item to return in a transaction, and the store associate selects multiple items to return, the return grid shows only the last selected row as checked. This behavior can confuse the associate and make them believe that only a single item is selected. To mitigate this issue, as of Commerce version 10.0.36, you can enable the **Improved user experience for POS returns** feature. This feature makes the return products grid a multiselect grid where users can select and clear the selection of returnable products. The multiselect grid automatically opens the return reason dialog box. Therefore, fewer steps are required to open and close the return reason dialog box. This feature also introduces the **Skip sales invoice selection during returns** configuration in the POS functionality profile. If this configuration is enabled, the system combines all returnable products from an order, regardless of the invoice that they were fulfilled from. Therefore, the number of steps that cashiers must complete is reduced, because they don't have to find and select the correct invoice to return an item.
+If there's more than one item to return in a transaction, and the store associate selects multiple items to return, the return grid shows only the last selected row as checked. This behavior can confuse the associate and make them believe that only a single item is selected. To mitigate this issue, admins can enable the **Improved user experience for POS returns** feature. This feature makes the return products grid a multiselect grid where users can select and clear the selection of returnable products. The multiselect grid automatically opens the return reason dialog box. Therefore, fewer steps are required to open and close the return reason dialog box. This feature also introduces the **Skip sales invoice selection during returns** configuration in the POS functionality profile. If this configuration is enabled, the system combines all returnable products from an order, regardless of the invoice that they were fulfilled from. Therefore, the number of steps that cashiers must complete is reduced, because they don't have to find and select the correct invoice to return an item.
 
-The **Improved user experience for POS returns** feature improvements are backported to Commerce versions 10.0.33 through 10.0.35, but for these versions you must enable the improvements by updating config files in your sandbox, development, or test environments, and then contacting Microsoft to enable them in production. For internal environments, modify the `bin\CommerceRuntime.config` file under the Retail Server physical path to add the `"FeatureState.Dynamics.AX.Application.RetailUnifiedReturnUXImprovementFeature" value="true"` and `"FeatureState.Dynamics.AX.Application.RetailSkipInvoiceSelectionDuringReturnFlight" value="true"` settings. If you don't want to skip the invoice selection view, don't add the second setting to the config file. 
+## Block specific items from being returned in POS
+
+Some products, such as consumables, customized goods, or items sold under special terms, should not be eligible for return. The **Controlled return of specific items in POS** feature lets you mark products as non-returnable, hide them from the **Returnable products** view during return transactions, and provide controlled exceptions for authorized staff.
+
+When a non-returnable item is sold at POS, the system automatically adds a line comment to the sale indicating that the item cannot be returned.
+
+### Enable the feature
+
+Before you can use this feature, you must turn it on in the **Feature management** workspace.
+
+1. In Commerce headquarters, go to **System administration \> Workspaces \> Feature management**.
+2. Search for **Controlled return of specific items in POS**.
+3. Select the feature, and then select **Enable**.
+
+### Mark products as non-returnable
+
+You can block an individual product or an entire product category from being returned.
+
+**To block an item for return:**
+
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Released products by category**.
+2. Select the item you want to configure.
+3. On the **Commercec** FastTab, set the **Block item return** option to **Yes**  
+
+
+**To block a category of products:**
+
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Commerce product hierarchy**.
+2. Select the category node you want to configure.
+3. On the **Legal entity specific** FastTab, set the **Block item return** option to **Yes** for the category 
+4. On the action bar, under the **Category** node, select **Update products** and set **Block item return** option to **Yes** to apply the setting to all products in the category.
+5. To verify if the items in the category have been updated, navigate to the Released products by category form and check individual products
+
+### Return behavior in POS
+
+When a store associate initiates a return transaction and searches for an order, the **Returnable products** page shows only items that are eligible for return. Products that are marked as non-returnable are automatically hidden from this view.
+
+### Handle return exceptions for non-returnable items
+
+If a customer has a valid reason to return a non-returnable item, store associates with the **Allow return of non-returnable items** permission can handle the exception.
+
+1. On the **Returnable products** page, select the new button named **Show non-returnable items** on the app bar to load non-returnable items from the transaction.
+2. The non-returnable items appear in the list and can be selected and processed as a return.
+
+> [!NOTE]
+> Only users who have the **Allow return of non-returnable items** POS permission can see and use this button. Assign this permission through the POS permission group settings in Commerce headquarters.
+
+### Toggle return eligibility for individual items
+
+In some cases, a product is generally returnable, but a specific unit may not be returnable; For example, a floor model or a damaged piece. Use the **Toggle return eligibility** operation in POS to change the return status of an individual item in an open transaction.
+
+- To mark a returnable item as non-returnable, select the line and run the **Toggle return eligibility** operation.
+- To mark a non-returnable item as returnable, select the line and run the operation again.
+
+If a product was marked as returnable when it was sold but is later configured as non-returnable in the system, the item will not appear in the **Returnable products** view during a return transaction. Authorized users can still use the exception button on the app bar to process the return.
 
 ## Other return options in POS
 
@@ -96,12 +149,6 @@ When POS is offline and can't connect to the Commerce Scale Unit (CSU), the retu
 > [!NOTE]
 > When the **Unified returns processing experience in POS** feature is turned on, new optional features that support the validation of serialized product returns become available. For more information, see [Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md).
 
-## Version details
-
-The following list provides the minimum version requirements for the various components.
-- Commerce headquarters: Version 10.0.20
-- Commerce Scale Unit (CSU): Version 9.30
-- Point of sale (POS): Version 9.30
 
 ## Enable proper tax calculation for returns with partial quantity
 
