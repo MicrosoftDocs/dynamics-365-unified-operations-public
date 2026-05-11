@@ -131,6 +131,36 @@ The following table lists all Microsoft-provided archive scenarios and their cor
 | | RetailStatementJour | RetailStatementJourHistory | RetailStatementJourBIEntity | mserp\_RetailStatementJourBIEntity |
 | | RetailStatementTrans | RetailStatementTransHistory | RetailStatementTransBIEntity | mserp\_RetailStatementTransBIEntity |
 | | RetailStatementVoucher | RetailStatementVoucherHistory | RetailStatementVoucherBIEntity | mserp\_RetailStatementVoucherBIEntity |
+| Finance Customer Invoice | CUSTINVOICEJOUR | CUSTINVOICEJOURHISTORY | CustinvoicejourBiEntity | mserp\_CustinvoicejourBiEntity |
+| | CUSTINVOICETRANS | CUSTINVOICETRANSHISTORY | CustinvoicetransBiEntity | mserp\_CustinvoicetransBiEntity |
+| | ACCOUNTINGDISTRIBUTION | ACCOUNTINGDISTRIBUTIONHISTORY | AccountingdistributionBiEntity | mserp\_AccountingdistributionBiEntity |
+| | ACCOUNTINGEVENT | ACCOUNTINGEVENTHISTORY | AccountingeventBiEntity | mserp\_AccountingeventBiEntity |
+| | CUSTINVOICEJOUR\_INTRASTAT | CUSTINVOICEJOURHISTORY\_INTRASTAT | CustinvoicejourintrastatBiEntity | mserp\_CustinvoicejourintrastatBiEntity |
+| | CUSTINVOICEJOUR\_W | CUSTINVOICEJOURHISTORY\_W | CustinvoicejourwBiEntity | mserp\_CustinvoicejourwBiEntity |
+| | CUSTINVOICELINE | CUSTINVOICELINEHISTORY | CustinvoicelineBiEntity | mserp\_CustinvoicelineBiEntity |
+| | CUSTINVOICELINEINTERPROJ | CUSTINVOICELINEINTERPROJHISTORY | CustinvoicelineinterprojBiEntity | mserp\_CustinvoicelineinterprojBiEntity |
+| | CUSTINVOICELINE\_W | CUSTINVOICELINEHISTORY\_W | CustinvoicelinewBiEntity | mserp\_CustinvoicelinewBiEntity |
+| | CUSTINVOICETABLE | CUSTINVOICETABLEHISTORY | CustinvoicetableBiEntity | mserp\_CustinvoicetableBiEntity |
+| | CUSTINVOICETABLECALCTOTALS | CUSTINVOICETABLECALCTOTALSHISTORY | CustinvoicetablecalctotalsBiEntity | mserp\_CustinvoicetablecalctotalsBiEntity |
+| | CUSTINVOICETABLE\_W | CUSTINVOICETABLEHISTORY\_W | CustinvoicetablewBiEntity | mserp\_CustinvoicetablewBiEntity |
+| | CUSTINVOICETRANS\_INTRASTAT | CUSTINVOICETRANSHISTORY\_INTRASTAT | CustinvoicetransintrastatBiEntity | mserp\_CustinvoicetransintrastatBiEntity |
+| | CUSTINVOICETRANS\_W | CUSTINVOICETRANSHISTORY\_W | CustinvoicetranswBiEntity | mserp\_CustinvoicetranswBiEntity |
+| | PDSCUSTINVOICETRANSPRICINGCALCULATION | PDSCUSTINVOICETRANSPRICINGCALCULATIONHISTORY | PdscustinvoicetranspricingcalculationBiEntity | mserp\_PdscustinvoicetranspricingcalculationBiEntity |
+| | PDSREBATECUSTINVOICETRANS | PDSREBATECUSTINVOICETRANSHISTORY | PdsrebatecustinvoicetransBiEntity | mserp\_PdsrebatecustinvoicetransBiEntity |
+| | PROJECTACCOUNTINGDISTRIBUTION | PROJECTACCOUNTINGDISTRIBUTIONHISTORY | ProjectaccountingdistributionBiEntity | mserp\_ProjectaccountingdistributionBiEntity |
+| | RETAILCUSTINVOICEJOURTABLE | RETAILCUSTINVOICEJOURTABLEHISTORY | RetailcustinvoicejourtableBiEntity | mserp\_RetailcustinvoicejourtableBiEntity |
+| | SOURCEDOCUMENTHEADER | SOURCEDOCUMENTHEADERHISTORY | SourcedocumentheaderBiEntity | mserp\_SourcedocumentheaderBiEntity |
+| | SOURCEDOCUMENTLINE | SOURCEDOCUMENTLINEHISTORY | SourcedocumentlineBiEntity | mserp\_SourcedocumentlineBiEntity |
+| | SUBLEDGERJOURNALACCOUNTENTRY | SUBLEDGERJOURNALACCOUNTENTRYHISTORY | SubledgerjournalaccountentryBiEntity | mserp\_SubledgerjournalaccountentryBiEntity |
+| | SUBLEDGERJOURNALACCOUNTENTRYDISTRIBUTION | SUBLEDGERJOURNALACCOUNTENTRYDISTRIBUTIONHISTORY | SubledgerjournalaccountentrydistributionBiEntity | mserp\_SubledgerjournalaccountentrydistributionBiEntity |
+| | SUBLEDGERJOURNALENTRY | SUBLEDGERJOURNALENTRYHISTORY | SubledgerjournalentryBiEntity | mserp\_SubledgerjournalentryBiEntity |
+| Supply Chain Management WHS Load | WHSLOADTABLE | WHSLOADTABLEHISTORY | WhsloadtableBiEntity | mserp\_WhsloadtableBiEntity |
+| | WHSLOADLINE | WHSLOADLINEHISTORY | WhsloadlineBiEntity | mserp\_WhsloadlineBiEntity |
+| | WHSSHIPMENTTABLE | WHSSHIPMENTTABLEHISTORY | WhsshipmenttableBiEntity | mserp\_WhsshipmenttableBiEntity |
+| | WHSWORKTABLE | WHSWORKTABLEHISTORY | WhsworktableBiEntity | mserp\_WhsworktableBiEntity |
+| | WHSWORKLINE | WHSWORKLINEHISTORY | WhsworklineBiEntity | mserp\_WhsworklineBiEntity |
+| | WHSWORKINVENTTRANS | WHSWORKINVENTTRANSHISTORY | WhsworkinventtransBiEntity | mserp\_WhsworkinventtransBiEntity |
+| | WHSWORKTRANS | WHSWORKTRANSHISTORY | WhsworktransBiEntity | mserp\_WhsworktransBiEntity |
 
 ## Related content
 

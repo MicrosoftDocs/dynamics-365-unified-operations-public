@@ -310,6 +310,7 @@ These properties are required for archive and LTR:
 | `IsPublic` | Yes | Exposes entity to Dataverse |
 | `PublicEntityName` | Entity name | OData/Virtual Entity name |
 | `PublicCollectionName` | Entity name + 's' | OData collection endpoint |
+| `Is Read Only` | **Yes** | **Archive entities must be read-only** |
 | `Auto Create` | **Yes** | Autocreates virtual entity in Dataverse |
 | `Auto Refresh` | **Yes** | Synchronizes metadata automatically |
 | `Allow Retention` | **Yes** | **Required for LTR** |

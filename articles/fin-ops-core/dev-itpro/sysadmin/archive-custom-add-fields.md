@@ -152,6 +152,7 @@ Microsoft-managed entities already have the following properties set correctly. 
 
 - `IsPublic` = Yes
 - `PublicEntityName` = Entity name
+- `Is Read Only` = Yes
 - `Allow Retention` = Yes
 - `Allow Row Version Change Tracking` = Yes
 - `Auto Create` = Yes (enables automatic Dataverse sync)

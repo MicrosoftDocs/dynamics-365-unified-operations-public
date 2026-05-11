@@ -98,6 +98,7 @@ Entity naming convention - `[TableName]BiEntity`. For example, `SalesTableBiEnti
 | `IsPublic` | Yes | Makes the entity available outside Dynamics 365 finance and operations. |
 | `PublicEntityName` | Entity name | Name exposed to external systems. |
 | `PublicCollectionName` | Entity name + 's' | Collection name for OData endpoints. |
+| `Is Read Only` | Yes | Archive entities are read-only for data consistency. |
 | `Allow Retention` | Yes | Enables long-term retention capability. |
 | `Allow Row Version Change Tracking` | Yes | Enables change tracking for incremental sync. |
 | `Auto Create` | Yes | Automatically creates virtual entity in Dataverse. |
