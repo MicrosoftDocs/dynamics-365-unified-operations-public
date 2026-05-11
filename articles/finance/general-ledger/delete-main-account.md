@@ -2,7 +2,7 @@
 title: Delete a main account
 description: Learn how to delete a main account, when deletion is blocked, and how to retire accounts that can't be deleted.
 author: anaborges02
-ms.author: aolson
+ms.author: anaborges
 ms.topic: article
 ms.date: 05/06/2026
 ms.custom: 
