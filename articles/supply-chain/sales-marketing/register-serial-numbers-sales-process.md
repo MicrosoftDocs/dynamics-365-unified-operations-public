@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable, InventSerial
 ms.topic: how-to
-ms.date: 01/07/2025
+ms.date: 5/11/2026
 ms.custom: 
   - bap-template
 ---
@@ -23,6 +23,18 @@ You must enable serial numbers for the sales process by selecting the **Active i
 
 - On the **Serial numbers** FastTab, the **Serial number control** option is selected. When this option is selected, you must register one serial number for each item on the packing slip or invoice.
 - All selections on the tracking dimension group for serial numbers are cleared, except the **Blank issue allowed** option. You can select the **Blank issue allowed** option to override the serial number control, and allow products to be packed and invoiced without registering serial numbers.
+
+## On-hand tracking when Physical inventory isn't selected for serial numbers
+
+When the **Physical inventory** option for the **Serial number** dimension is cleared — including the automatic clearing that occurs when you select **Active in sales process** — Supply Chain Management ignores the serial number during on-hand inventory operations. As a result:
+
+- On-hand quantity is aggregated at the item level only. It isn't tracked or reconciled per serial number.
+- A serial number that's registered on a purchase receipt isn't matched against the serial number that's registered on a sales packing slip or invoice for the same item. For example, you can receive item *S0001* with serial *s#1* into a location, and later issue item *S0001* with serial *s#2* from the same location. The on-hand quantity for the item still reconciles, even though *s#1* never appears on an issue and *s#2* never appears on a receipt.
+
+This behavior is by design for service-and-warranty scenarios where serial numbers are captured for traceability on shipping documents, but per-serial inventory accuracy isn't required.
+
+> [!IMPORTANT]
+> If your business requires per-serial on-hand tracking — that is, the same serial number must be received, stocked, and issued — don't clear **Physical inventory** for the serial number dimension and don't enable **Active in sales process**. Instead, leave the serial number dimension fully tracked and use [Serial number capturing](../warehousing/serial-number-capturing.md) to control when the serial number value is captured during warehouse processes.
 
 ## When do I register serial numbers during the sales process?
 
