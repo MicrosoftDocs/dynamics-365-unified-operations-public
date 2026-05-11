@@ -4,7 +4,7 @@ description: Learn how to work with Electronic invoicing for France in Microsoft
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 04/24/2026
+ms.date: 05/11/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -15,8 +15,7 @@ ms.dyn365.ops.version: AX 10.0.48
 
 # Electronic invoicing for France
 
-This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified service provider acting as an Approved Platform (*Platform Agréée* - **PA**).
-
+This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance through a certified service provider acting as an Approved Platform (*Platform Agréée* - **PA**).
 
 > [!NOTE]
 > This electronic invoicing approach uses an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
@@ -33,7 +32,7 @@ Before you start, make sure these prerequisites are in place:
 - The company has a signed agreement with the selected Approved Platform and obtained the credentials required for establishing a secure connection to the Approved Platform's infrastructure.
   > [!NOTE]
   > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Approved Platform (PA). For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
-  
+  >
   > Watch the overview of the Edicom credentials configuration in Finance. More details are provided in the [next](#EdCred) chapters.
   > [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
 
@@ -397,7 +396,7 @@ According to French requirements, each individual electronic invoice must contai
 - **#AAB#** *the text of the third note related to payment terms*
 
 > [!NOTE]
-> Optionally, you can add one more note with the predefined **#ADN#** prefix which will be the indication for EDICOM to treat a submitted invoice which contain such a note as representing **B2G** communication. 
+> Optionally, you can add one more note with the predefined **#ADN#** prefix that is the indication for EDICOM to treat a submitted invoice that contains this note as representing **B2G** communication.
 
 ### Configure mandatory notes for Sales and Free text invoices
 
@@ -453,8 +452,8 @@ Set up units of measure.
 
 1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit ID, and then select **External codes**.
-1. On **External codes** page, in **Overview**, enter the unit ID in the **Code** column.
-1. In the **Standard code** column, select the checkbox.
+1. On the **External codes** page, in **Overview**, enter the unit ID in the **Code** column.
+1. Select the checkbox in the **Standard code** column.
 1. In the **Value** section, enter the external code from the [UNECE Recommendation 20 code list](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) in the **Value** field.
 
    > [!NOTE]
@@ -477,8 +476,7 @@ Set up units of measure.
 > [!IMPORTANT]
 > **Electronic invoicing scope**
 >
-> Only the invoices issued for the customers that have a non-empty **SIREN** registration number defined for the French country code (**FRA**) will be *included* into the scope of **E-Invoicing** individual submissions. All other invoices will be *excluded* from **E-Invoicing** and considered for **E-Reporting**.
-
+> Only invoices issued for customers with a nonempty **SIREN** registration number defined for the French country code (**FRA**) are *included* in the scope of **E-Invoicing** individual submissions. All other invoices are *excluded* from **E-Invoicing** and considered for **E-Reporting**.
 
 After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. The submission process consists of three major steps.
 
