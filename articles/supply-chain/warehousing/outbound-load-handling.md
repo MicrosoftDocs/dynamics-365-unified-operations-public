@@ -86,7 +86,7 @@ When all the warehouse tasks for a load are completed, a shipment confirmation p
 
 ### Outbound ASN generation
 
-When a load is shipped, the system can generate an *outbound advanced shipping notice (ASN)* to notify a customer or downstream warehouse about the shipment. By default, the outbound ASN is generated from the *sales order line* and *shipment* structure (the load lines) that was defined when the order was released. This is true even when the warehouse is enabled for [warehouse management processes](warehouse-management-overview.md). Downstream warehouse execution work, such as picking, sorting, or packing into containers, doesn't change the structure of the outbound ASN.
+When a load is shipped, the system can generate an *outbound advanced shipping notice (ASN)* to notify a customer or downstream warehouse about the shipment. By default, the outbound ASN is generated from the load's *shipments* and *load lines*, which reference the originating sales order lines as they were defined when the order was released. This is true even when the warehouse is enabled for [warehouse management processes](warehouse-management-overview.md). Downstream warehouse execution work, such as picking, sorting, or packing into containers, doesn't change the packing structure of the outbound ASN.
 
 > [!NOTE]
 > When a transfer order ships from one warehouse where warehouse management processes are enabled to another, the system uses the outbound shipment data to create a corresponding [inbound ASN](import-asn-data-entity.md) at the destination warehouse. The inbound ASN includes the license plate packing structure to support [license plate receiving](warehousing-mobile-device-app-license-plate-receiving.md) when the goods arrive.
