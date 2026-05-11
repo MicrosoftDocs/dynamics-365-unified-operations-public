@@ -16,6 +16,8 @@ ms.search.region: Global
 # Use Copilot Cowork with Dynamics 365 ERP
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [cowork-preview](../includes/cowork-preview.md)]
 
 This article explains how to use Microsoft 365 Copilot Cowork with the Microsoft Dynamics 365 ERP apps plugin to interact with finance and operations data and orchestrate business workflows.
 
