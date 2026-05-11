@@ -75,7 +75,10 @@ When you make consumption registrations, financial dimensions related to the dif
 
 - *Hour and Expense registrations:* First, financial dimensions from the journal header are added, if any. Next, financial dimensions from the related work order project are added. Finally, financial dimensions from the resource (worker) are added.
 
-- *Item registrations:* First, financial dimensions from the journal header are added, if any. Then, financial dimensions from the related work order project are added. Next, financial dimensions from the site are added. Finally, financial dimensions from the item are added.
+- *Item registrations:* First, financial dimensions from the related work order project are added. Next, financial dimensions from the site are added. Finally, financial dimensions from the item are added.
+
+>[!IMPORTANT]
+>If the **Dimension link** feature is active (**Inventory management** > **Setup** > **Posting** > **Dimension link**) and a financial dimension is linked to the inventory site, the linked-dimension values from the site take precedence on item registrations. They override the values that came from the related work order project for those dimension attributes.
 
 >[!NOTE]
 >For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup with other finance and operations apps.
