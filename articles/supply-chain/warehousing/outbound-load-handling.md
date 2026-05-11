@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, WHSOutboundShipmentOrder, WHSPackingSlipPostingParameters, WHSShipPlanningListPage, WHSShipmentDetails, WHSWaveTemplateTable, WHSPostMethod, WHSWorkTemplateTable, WHSLocDirTable, WHSEWManagementSystem, InventLocations 
 ms.topic: article
-ms.date: 4/22/2026
+ms.date: 5/11/2026
 ms.custom: bap-template
 ---
 
@@ -83,6 +83,13 @@ When all the warehouse tasks for a load are completed, a shipment confirmation p
 
 > [!NOTE]
 > When the [confirm and transfer](confirm-and-transfer.md) capability is used, the system can create a new load for any load lines that weren't fully picked.
+
+### Outbound ASN generation
+
+When a load is shipped, the system can generate an *outbound advanced shipping notice (ASN)* to notify a customer or downstream warehouse about the shipment. The outbound ASN is generated from the *sales order line* and *shipment* structure that was defined when the order was released. This is true even when the warehouse is enabled for [warehouse management processes](warehouse-management-overview.md). Downstream warehouse execution work, such as picking, sorting, or packing, doesn't change the structure of the outbound ASN.
+
+> [!NOTE]
+> When a transfer order ships from one warehouse where warehouse management processes are enabled to another, the system uses the outbound shipment data to create a corresponding [inbound ASN](import-asn-data-entity.md) at the destination warehouse. The inbound ASN includes the license plate packing structure to support [license plate receiving](warehousing-mobile-device-app-license-plate-receiving.md) when the goods arrive.
 
 ### <a name="load-packing-slip-posting"></a>Load packing slip posting
 
