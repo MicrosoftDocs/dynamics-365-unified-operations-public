@@ -2352,7 +2352,7 @@ items:
       - name: Dynamics 365 ERP apps plugin for Copilot Cowork (Frontier)
         items:
         - name: Enable the Dynamics 365 ERP apps plugin for Copilot Cowork
-          href: copilot/enable-copilot-cowork-erp.mfd
+          href: copilot/enable-copilot-cowork-erp.md
         - name: Use Copilot Cowork with Dynamics 365 ERP
           href: ../fin-ops/copilot/use-copilot-cowork-erp.md
       - name: Immersive Home
