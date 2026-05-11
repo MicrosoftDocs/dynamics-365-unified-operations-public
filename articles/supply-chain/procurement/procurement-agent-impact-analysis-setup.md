@@ -28,7 +28,7 @@ If you're already using the supplier communications capabilities of the Procurem
 - Make sure that the following Microsoft Copilot Studio agents are published in that environment:*Procurement Agent - Impact Analysis*
 - Turn on the *(Production ready preview) Procurement Agent - Impact analysis* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the feature isn't shown on your system.
 - Add the following security user role: *Procurement User Role (Preview)*
-- [Activate the triggering Power Automate flows for impact analysis](Activate the triggering Power Automate flows for impact analysis)
+- [Activate the triggering Power Automate flows for impact analysis](procurement-agent-impact-analysis-setup.md/For impact analysis)
 
 ## If you will use impact analysis without supplier communications
 
@@ -75,22 +75,53 @@ Use the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Hom
 
 ##### Required security roles
 
-Add the agent identity user both to the Dataverse environment and to Supply Chain Management. Assign the agent identity user the security roles shown in the following lists. Some user roles are common for the Procurement Agent - supplier communications and impact analysis. 
+Add the agent identity user both to the Dataverse environment and to Supply Chain Management. Assign the agent identity user the security roles shown in the following lists. Some user roles are common for the Procurement Agent - supplier communications and impact analysis.
 
 - Required Dataverse user roles:
 
     - *Finance and Operation Basic User*
-    - *Supplier Communications Agent* 
+    - *Supplier Communications Agent*
     - *Environment Maker*
 
 - Required Supply Chain Management user roles:
 
-    - *Procurement User Role (Preview)*
     - *System user*
     - *System agent*
 
 > [!NOTE]
 > The *System agent* role in Supply Chain Management exempts the agent identity user from license enforcement. This means that you don't need to allocate a user license to the agent.
+
+### Assign permissions to users working with the agent
+
+All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
+
+Additionally, assign the roles described in the following subsections.
+
+#### Permissions for users who manage the agent configuration
+
+Users who manage the agent configuration must have the following roles:
+
+- Required Dataverse user roles:
+    - *Basic User*
+    - *Finance and Operations Agent Configuration Manager*
+    - *Finance and Operations Basic User*
+
+- Required Supply Chain Management user roles:
+    - *System user*
+    - *Purchasing manager* and/or *Purchasing agent*
+
+#### Permissions for users who review agent results
+
+Users who review the agent results must have the following roles:
+
+- Required Dataverse user roles:
+    - *Basic User*
+    - *Finance and Operations Basic User*
+    - *Procurement User Role (Preview)*
+
+- Required Supply Chain Management user roles:
+    - *System user*
+    - *Purchasing agent*
 
 ### Create the required connections
 
@@ -122,11 +153,11 @@ To finish setting up the agent identity, you first must activate the triggering 
 1. On the **Objects** pane, select **Apps**.
 1. Select the app with a **Display name** of *(Production ready preview) Setup Supplier Communications Agent*. This is a common step for the Procurement Agent - supplier communications and impact analysis.
 1. Click **Play**. If **Play** is disabled on the command bar, select **Share**, add your name, and select **Share**.
-1. Select the *(Production ready preview) Setup Procurement Agent - Impact analysis* app again and then select **Play** on the command bar.
+1. Select the *(Production ready preview) Setup Supplier Communications Agent* app again and then select **Play** on the command bar.
 1. Under **Connections**, select the connections you created in the previous section for both *Microsoft Dataverse* and *Microsoft Copilot Studio*.
 1. Select **Apply** at the bottom-right of the page and wait for all of the flows listed under **Agent trigger flows status** to switch to a state of *Activated*.
 
-#### For Impact Analysis
+#### For impact analysis
 
 Next you must activate the specific impact analysis power automate flow.
 
@@ -136,36 +167,5 @@ Next you must activate the specific impact analysis power automate flow.
 1. Find the solution a **Display name** of *Copilot in Supply Chain Management solution*.
 1. On the left pane, click **Objects**.
 1. On the objects pane click **Cloud Flows**.
-1. Select the cloud flow with the **Display name** of *Procurement Agent - Impact analysis (Preview)*
+1. Select the cloud flow with the **Display name** of *Procurement Agent - Impact analysis (Preview)*.
 1. Click **Turn on** in the top navigation bar.
-
-### Assign permissions to users working with the agent
-
-All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
-
-Additionally, assign the roles described in the following subsections.
-
-#### Permissions for users who manage the agent configuration
-
-Users who manage the agent configuration must have the following roles:
-
-- Required Dataverse user roles:
-    - *Basic User*
-    - *Finance and Operations Agent Configuration Manager*
-    - *Finance and Operations Basic User*
-
-- Required Supply Chain Management user roles:
-    - *System user*
-    - *Purchasing manager* and/or *Purchasing agent*
-
-#### Permissions for users who review agent results
-
-Users who review the agent results must have the following roles:
-
-- Required Dataverse user roles:
-    - *Basic User*
-    - *Finance and Operations Basic User*
-
-- Required Supply Chain Management user roles:
-    - *System user*
-    - *Purchasing agent*
