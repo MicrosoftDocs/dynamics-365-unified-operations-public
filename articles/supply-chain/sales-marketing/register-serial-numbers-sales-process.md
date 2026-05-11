@@ -26,9 +26,9 @@ You must enable serial numbers for the sales process by selecting the **Active i
 
 ## On-hand tracking when Physical inventory isn't selected for serial numbers
 
-When the **Physical inventory** option for the **Serial number** dimension is cleared — including the automatic clearing that occurs when you select **Active in sales process** — the system ignores the serial number during on-hand inventory operations. As a result:
+When the **Physical inventory** option for the **Serial number** dimension is cleared, including the automatic clearing that occurs when you select **Active in sales process**, the system ignores the serial number during on-hand inventory operations. As a result:
 
-- On-hand quantity is aggregated at the item level only. It isn't tracked or reconciled per serial number.
+- On-hand quantity isn't tracked or reconciled per serial number. The other inventory dimensions (such as warehouse, location, and batch number) continue to track on-hand inventory as configured.
 - A serial number that's registered on a purchase receipt isn't matched against the serial number that's registered on a sales packing slip or invoice for the same item. For example, you can receive item *S0001* with serial *s#1* into a location, and later issue item *S0001* with serial *s#2* from the same location. The on-hand quantity for the item still reconciles, even though *s#1* never appears on an issue and *s#2* never appears on a receipt.
 
 > [!IMPORTANT]
