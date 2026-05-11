@@ -31,9 +31,6 @@ When the **Physical inventory** option for the **Serial number** dimension is cl
 - On-hand quantity isn't tracked or reconciled per serial number.
 - A serial number that's registered on a purchase receipt isn't matched against the serial number that's registered on a sales packing slip or invoice for the same item. For example, you can receive item *S0001* with serial *s#1* into a location, and later issue item *S0001* with serial *s#2* from the same location. The on-hand quantity for the item still reconciles, even though *s#1* never appears on an issue and *s#2* never appears on a receipt.
 
-> [!IMPORTANT]
-> To track and reconcile on-hand inventory per serial number — so that the same serial number must be received, stocked, and issued — the **Physical inventory** option for the serial number dimension must remain selected.
-
 ## When do I register serial numbers during the sales process?
 
 You can register serial numbers either on the packing slip for a sales order or on the invoice. When you prepare an invoice for a serialized item that was shipped together with a packing slip, you can select which serial numbers on the packing slip to invoice. The number of registered serial numbers must not exceed the quantity of items that were shipped. If you're creating a partial invoice, you can select fewer serialized items than were registered on the packing slip. When you print a packing slip or an invoice, the serial numbers that were registered are included.
