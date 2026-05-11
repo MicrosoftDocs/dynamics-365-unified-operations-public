@@ -17,7 +17,9 @@ ms.search.form:
 
 # Enable the Dynamics 365 ERP apps plugin for Copilot Cowork (Frontier)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [cowork-preview](~/microsoft-365/copilot/cowork/includes/cowork-preview.md)]
 
 This article explains how to enable the Dynamics 365 ERP apps plugin for Microsoft 365 Copilot Cowork. After you enable the plugin, users in your organization can interact with finance and operations data through the Copilot Cowork agent experience.
 
