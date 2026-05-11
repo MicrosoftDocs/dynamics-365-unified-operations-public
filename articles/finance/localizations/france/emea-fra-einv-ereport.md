@@ -392,11 +392,12 @@ If you don't define the electronic addresses, the system uses the following Endp
 
 According to French requirements, each individual electronic invoice must contain three mandatory **Note** elements in the header with the **following** predefined prefixes:
 
-- **#PMD#** *the text of the first note*
-- **#PMT#** *the text of the second note*
-- **#AAB#** *the text of the third note*
+- **#PMD#** *the text of the first note related to payment/settlement information*
+- **#PMT#** *the text of the second note related to payment instructions*
+- **#AAB#** *the text of the third note related to payment terms*
 
-## ******************** B2G ********************
+> [!NOTE]
+> Optionally, you can add one more note with the predefined **#ADN#** prefix which will be the indication for EDICOM to treat a submitted invoice which contain such a note as representing **B2G** communication. 
 
 ### Configure mandatory notes for Sales and Free text invoices
 
