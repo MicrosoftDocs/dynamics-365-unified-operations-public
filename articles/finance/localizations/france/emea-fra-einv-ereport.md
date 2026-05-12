@@ -387,6 +387,8 @@ If you don't define the electronic addresses, the system uses the following Endp
   > The system assumes that the dedicated registration number of the **EAN** registration category is already defined.
 - If the system doesn't find an **EAN** number, it uses the VAT number with the **9957** value as the *schemeID* attribute.
 
+To learn more about the full list of the electronic document properties used during the generation of electronic invoices XML files, refer to the following Appendix chapter [List of electronic document properties](#EDproperties)
+
 ## Configure mandatory notes
 
 According to French requirements, each individual electronic invoice must contain three mandatory **Note** elements in the header with the **following** predefined prefixes:
@@ -658,6 +660,22 @@ The list of mandatory status codes supported in electronic invoicing for Microso
   - Edicom Response Processing
   - Edicom Response Processing (FR)
   - Edicom response error log import
+
+### <a id="EDproperties"></a>List of electronic document properties
+
+The following configurable electronic document properties are used during the generation of electronic invoices XML files.
+
+| Type | Applicability | Description |
+|------------|------------------|----------------------------------|
+| **CompanyEndpointType** | Legal entities |  |
+| **CustomerEndpointType** | Customers |  |
+| **SellerElectronicAddress** | Legal entities |  |
+| **BuyerElectronicAddress** | Customers |  |
+| **#PMD#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment/settlement information.|
+| **#PMT#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment instructions.|
+| **#AAB#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment terms.|
+| **#ADN#** | Customers | Optional note prefix determining buyers for B2G communication.|
+| **ElectronicAddressSuffix** | Legal entities | |
 
 ## More information
 
