@@ -100,7 +100,7 @@ The import script automatically creates the issuer trust store (for example, `Se
 .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -RemoveOldIssuers
 ```
 
-This generates a new cluster configuration file with the old issuer entries removed. Apply the configuration upgrade to your cluster by following the standard [Service Fabric cluster configuration upgrade](/azure/service-fabric/service-fabric-cluster-config-upgrade-windows-server) process.
+This generates a new cluster configuration file with the old issuer entries removed. Apply the configuration upgrade to your cluster by following the [Service Fabric cluster configuration upgrade](onprem-update-sfcluster.md) process.
 
 > [!IMPORTANT]
 > Wait for the cluster configuration upgrade to complete successfully before proceeding to the next step. You can monitor the upgrade status in Service Fabric Explorer.
@@ -111,7 +111,7 @@ This generates a new cluster configuration file with the old issuer entries remo
 .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToIssuerStore
 ```
 
-This command updates the certificate common names in the cluster configuration to match the current `ConfigTemplate.xml` (including the separate **ServiceFabricCluster** certificate), adds the `Security/*IssuerStores` FabricSettings entries that map each certificate's subject name to the issuer trust store, and sets the Security parameters to enable issuer store validation. Apply the generated cluster configuration to your cluster by following the standard configuration upgrade process.
+This command updates the certificate common names in the cluster configuration to match the current `ConfigTemplate.xml` (including the separate **ServiceFabricCluster** certificate), adds the `Security/*IssuerStores` FabricSettings entries that map each certificate's subject name to the issuer trust store, and sets the Security parameters to enable issuer store validation. Apply the generated cluster configuration to your cluster by following the [Service Fabric cluster configuration upgrade](onprem-update-sfcluster.md) process.
 
 7. After the configuration upgrade completes, verify the migration was successful. Open Service Fabric Explorer and confirm the cluster is healthy. On each node, verify that the issuer trust store (for example, `Cert:\LocalMachine\ServiceFabric_IssuerTrust`) contains the expected issuer CA certificate. You can also run the certificate compatibility validation script:
 
