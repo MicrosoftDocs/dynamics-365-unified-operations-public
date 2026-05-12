@@ -68,18 +68,18 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
 1. Select **Create new** to create a report.
 1. In the **Spanish VAT list** dialog, set values for the following fields.
 
-    | Field                                                   | Description            |
-    |---------------------------------------------------------|------------------------------------|
-    | VAT book                                                | Select a VAT book.          |
-    | Description                                             | Enter a description of the VAT book.    |
-    | Settlement period                                     | Select a settlement period.       |
-    | From date                                             | Enter the first date of the sales tax settlement period.    |
-    | Method of numbering                                   | Select a numbering  method:<br>- **Number sequence code**: The number of the VAT report line equals the invoice number.<br>- **Number sequence code**: The number of the VAT report line is taken from the number sequence that is defined in the **Number sequence code** field on the **Spanish VAT books** page.<br>- **340 sequence**: VAT report lines are numbered separately for purchases and sales. In both cases, the line numbers start from 1.  |
-    | Start numbering (in the **Manual numbering** section) | Enter the first line number.     |
-    | Template (in the **Manual numbering** section)        | Enter the template for the line number. For example, enter #####.   |
-    | Replacement   declaration                               | Set this option to **Yes** to replace the previous declaration.   |
-    | Previous   declaration number                          | Enter the 13-digit number of the   previous declaration. This field can be edited only if the **Replacement declaration** option is set to **Yes**. |
-    | Minimum   payment account in cash     | Enter the minimum cash payment   amount that should be reported in the declaration. If you don't need to include cash payments in the report, enter 9999999999 in this field.   | &nbsp;  |
+    | Field | Description |
+    |---|---|
+    | VAT book | Select a VAT book. |
+    | Description | Enter a description of the VAT book. |
+    | Settlement period | Select a settlement period. |
+    | From date | Enter the first date of the sales tax settlement period. |
+    | Method of numbering | Select a numbering method:<br>- **Number sequence code**: The number of the VAT report line equals the invoice number.<br>- **Number sequence code**: The number of the VAT report line is taken from the number sequence that is defined in the **Number sequence code** field on the **Spanish VAT books** page.<br>- **340 sequence**: VAT report lines are numbered separately for purchases and sales. In both cases, the line numbers start from 1. |
+    | Start numbering (in the **Manual numbering** section) | Enter the first line number. |
+    | Template (in the **Manual numbering** section) | Enter the template for the line number. For example, enter #####. |
+    | Replacement declaration | Set this option to **Yes** to replace the previous declaration. |
+    | Previous declaration number | Enter the 13-digit number of the previous declaration. This field can be edited only if the **Replacement declaration** option is set to **Yes**. |
+    | Minimum payment account in cash | Enter the minimum cash payment amount that should be reported in the declaration. If you don't need to include cash payments in the report, enter 9999999999 in this field. |
 
 1. Select **OK** to create a line on the **Spanish VAT reports** page, based on the criteria that you defined in the previous step.
 1. Review the new line you created.
