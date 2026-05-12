@@ -1,7 +1,7 @@
 ---
 title: Build a custom archive scenario
 description: Learn how to build a complete custom archive scenario using only custom tables.
-author: kehoej99 
+author: git-kiran 
 ms.author: Weijiesa 
 ms.topic: how-to
 ms.date: 03/26/2026
@@ -310,10 +310,11 @@ These properties are required for archive and LTR:
 | `IsPublic` | Yes | Exposes entity to Dataverse |
 | `PublicEntityName` | Entity name | OData/Virtual Entity name |
 | `PublicCollectionName` | Entity name + 's' | OData collection endpoint |
+| `Is Read Only` | **Yes** | Archive entities must be read-only |
 | `Auto Create` | **Yes** | Autocreates virtual entity in Dataverse |
 | `Auto Refresh` | **Yes** | Synchronizes metadata automatically |
-| `Allow Retention` | **Yes** | **Required for LTR** |
-| `Allow Row Version Change Tracking` | **Yes** | **Required for change tracking** |
+| `Allow Retention` | **Yes** | Required for LTR |
+| `Allow Row Version Change Tracking` | **Yes** | Required for change tracking |
 | `ChangeTrackingEnabled` | Yes | Enables change detection |
 
 #### Enable rowversion support

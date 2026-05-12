@@ -1,7 +1,7 @@
 ---
 title: Add custom tables to archive scenarios
 description: Learn how to add related custom tables to existing Microsoft archive scenarios.
-author: kehoej99 
+author: git-kiran 
 ms.author: Weijiesa 
 ms.topic: how-to
 ms.date: 03/26/2026
@@ -189,7 +189,7 @@ All other fields must be identical:
 
 ### Configure history table properties
 
-In table properties, select **Don't copy unique indexes** from live table.
+History tables don't require unique indexes from the live table.
 
 ### Add indexes for criteria fields
 
@@ -244,6 +244,7 @@ Set these properties for archive and LTR entities:
 | `IsPublic` | Yes | Makes entity available to Dataverse |
 | `PublicEntityName` | Your entity name | External name for OData/Virtual Entity |
 | `PublicCollectionName` | Entity name + 's' | OData collection endpoint |
+| `Is Read Only` | **Yes** | Archive entities must be read-only |
 | `Auto Create` | **Yes** | Automatically creates virtual entity in Dataverse |
 | `Auto Refresh` | **Yes** | Keeps metadata synchronized |
 | `Allow Retention` | **Yes** | Enables LTR capability |
