@@ -3,7 +3,7 @@ title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: Learn about the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: ilikond
 ms.author: ikondratenko
-ms.date: 04/10/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Saudi Arabia
