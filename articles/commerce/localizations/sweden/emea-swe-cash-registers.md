@@ -2,7 +2,7 @@
 title: Cash register functionality for Sweden
 description: Learn about cash register functionality available for Sweden in Microsoft Dynamics 365 Commerce. 
 author: EvgenyPopovMBS
-ms.date: 02/27/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Sweden
