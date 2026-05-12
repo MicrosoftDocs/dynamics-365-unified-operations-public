@@ -2,7 +2,7 @@
 title: Fiscal registration service integration sample for the Czech Republic
 description: This article provides an overview of the fiscal integration sample for the Czech Republic in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 02/26/2026
+ms.date: 05/12/2026
 ms.topic: overview
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -58,9 +58,9 @@ The fiscal registration service integration sample implements the following rule
 The fiscal registration service integration sample implements the following rules related to customer account deposits and customer order deposits.
 
 - A transaction that is related to a customer account deposit or a customer order deposit is registered in the fiscal registration service as a single line transaction and is marked with a special attribute. The deposit VAT group is specified in this line.
-- When a hybrid customer order is created, that is, a customer order that contains products that can be carried out of the store by the customer, as well as products that will be picked up or shipped later, the transaction registered in the fiscal registration service contains lines for the products that are carried out, as well as a line for the order deposit.
-- A payment from a customer account is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
-- The customer order deposit amount that is applied to a customer order pickup operation is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
+- When a hybrid customer order is created, that is, a customer order that contains products that can be carried out of the store by the customer, and products that will be picked up or shipped later, the transaction registered in the fiscal registration service contains lines for the products that are carried out, and a line for the order deposit.
+- A payment from a customer account is considered as a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
+- The customer order deposit amount that is applied to a customer order pickup operation is considered as a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
 
 ### Offline registration
 
@@ -167,8 +167,8 @@ In the Receipt format designer, add the following custom fields to the appropria
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
     - **ID provozovny/pokladny:** this field prints the identifiers of the business premises and the cash register.
     - **BKP:** this field prints the taxpayer's security code that the fiscal registration service assigns.
-    - **FIK:** this field prints the fiscal identification code of the transaction that the web-service of tax authorities assigns in case of successful online registration.
-    - **PKP:** this field prints the taxpayer's signature code that the fiscal registration service generates in case of offline registration.
+    - **FIK:** this field prints the fiscal identification code of the transaction that the web-service of tax authorities assigns if there's a successful online registration.
+    - **PKP:** this field prints the taxpayer's signature code that the fiscal registration service generates if there's an offline registration.
     - **Info:** this field prints the additional information from the fiscal registration service.
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../../receipt-templates-printing.md).
@@ -247,7 +247,7 @@ The fiscal connector configuration includes the following settings as part of th
 ### Configure channel components
 
 > [!NOTE]
-> Commerce samples that are deployed in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
+> Commerce samples deployed in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
 
 #### Set up the development environment
 
@@ -320,7 +320,7 @@ This handler is inherited from the **INamedRequestHandler** interface. The **Han
 The connector supports the following requests.
 
 - **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
-- **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, customer account deposits and customer order deposits.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, customer account deposits, and customer order deposits.
 - **GetFiscalRegisterResponseToSaveDocumentProviderRequest** – This request returns the response from the fiscal registration service. This response is serialized to form a string so that it's ready to be saved.
 
 #### Configuration
