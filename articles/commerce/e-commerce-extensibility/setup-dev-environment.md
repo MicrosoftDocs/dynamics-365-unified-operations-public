@@ -2,7 +2,7 @@
 title: Set up a development environment
 description: Learn how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/10/2025
+ms.date: 05/14/2026
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -31,12 +31,12 @@ Go to the [Visual Studio Code site](https://code.visualstudio.com), and download
 
 Node.js is a JavaScript runtime that is built on [Chrome's V8 JavaScript Engine](https://v8.dev/).
 
-The supported versions are Node.js 16.x, 18.x, and 22.x. Node.js 16.x is recommended for most development environments. You can find the installer on the [Node.js website](https://nodejs.org).
+Dynamics 365 Commerce currently supports Node.js versions 16.x, 18.x, and 22.x. We recommend Node.js 16.x for most development environments. You can find the installer on the [Node.js website](https://nodejs.org).
 
 If you rely on other versions of Node.js for other projects, Microsoft recommends that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
 
 > [!NOTE]
-> Node.js 22 is now supported. Node.js 16 support will be dropped in release 10.0.49 (July 27, 2026). For more information, see [eCommerce Platform Modernization](ecommerce-platform-modernization.md).
+> Support for Node.js 16 will be discontinued in Commerce release 10.0.49 (July 27, 2026). For more information, see [E-commerce platform modernization](ecommerce-platform-modernization.md).
 
 ## Install Yarn
 
@@ -57,7 +57,7 @@ git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
 > [!NOTE]
 > The entire SDK and module library isn't downloaded and installed until you run the **yarn** command. For more information, see [Download SDK dependencies](#download-sdk-dependencies).
 
-If you cloned the repo, you can remove the .git folder (the hidden directory under the root). Use Yarn to pull down updated dependencies.
+If you cloned the repo, you can remove the `.git` folder (the hidden directory under the root). Use Yarn to pull down updated dependencies.
 
 Microsoft recommends that you use a source code repository to manage your configuration changes. Many options are available, such as [Git](https://git-scm.com/downloads).
 
@@ -128,7 +128,6 @@ To preview a specific module (for example, product-feature) in a local web brows
 
 1. At a command prompt, open your Node app by running the **yarn start** command from the root of your SDK.
 
-
     ```Console
     c:\repos\Msdyn365.Commerce.Online>yarn start
     ```
@@ -138,29 +137,24 @@ To preview a specific module (for example, product-feature) in a local web brows
     * `https://localhost:4000/modules?type=product-feature`
     * `https://localhost:4000/modules?type=content-block`
     * `https://localhost:4000/modules?type=super-content-block`
-    
+
 ## Adding an SSL certificate
 
-The Dynamics 365 online SDK installs a self-signed SSL certificate for developing and testing on a local environment that works against localhost. You can find these files inside the **.ssl** folder under the root SDK folder.  
+The Dynamics 365 online SDK installs a self-signed SSL certificate for developing and testing on a local environment that works against localhost. You can find these files inside the `.ssl` folder under the root SDK folder.
 
 > [!NOTE]
 > The **yarn start** command must be run at least once for these files to be generated.
 
 To install a new certificate on a developer environment, replace the public key (cert.pem) and private key (key.pem) files with your own.
 
-## Additional resources
+## More resources
 
-[Get started with e-commerce online extensibility development](sdk-getting-started.md)
-
-[System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
-
-[eCommerce Platform Modernization](ecommerce-platform-modernization.md)
-
-[Configure a development environment (.env) file](configure-env-file.md)
-
-[Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
+- [Get started with e-commerce online extensibility development](sdk-getting-started.md)
+- [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
+- [E-commerce platform modernization](ecommerce-platform-modernization.md)
+- [Configure a development environment (.env) file](configure-env-file.md)
+- [Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
 
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
