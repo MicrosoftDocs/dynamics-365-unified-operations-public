@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Switzerland
 ms.search.validFrom: 2016-11-30
@@ -157,7 +157,7 @@ To set up turnover lookup, follow these steps:
    > [!NOTE]
    > Associate all sales tax codes with lookup results. If any sales tax codes should not generate values in section I, associate with the **Other** lookup result.
 
-   ![Application specific parameters page for Turnover lookup.](../media/f99d7ff6529a58623732e112cf864230.png)
+   :::image type="content" source="../media/f99d7ff6529a58623732e112cf864230.png" alt-text="Screenshot of the Application specific parameters page for Turnover lookup.":::
 
 #### Set up report field lookup
 
@@ -171,7 +171,7 @@ To set up the report field lookup, follow these steps:
    > [!NOTE]
    > Be sure to associate all sales tax codes with lookup results. If any sales tax codes should not generate values in section II, associate them with the **Other** lookup result.
 
-   ![Application specific parameters page for Report field lookup.](../media/b440aab1d394fb9e98f12aed5d96582d.png)
+   :::image type="content" source="../media/b440aab1d394fb9e98f12aed5d96582d.png" alt-text="Screenshot of the Application specific parameters page for Report field lookup.":::
 
 #### Set up other cash flow lookup
 
@@ -185,7 +185,7 @@ To set up other cash flow lookup, follow these steps:
    > [!NOTE]
    > As the last line in the setup, create a line where you associate the **\*Not blank\*** value of the tax code with the **Other** lookup result. This line indicates that all other sales tax codes that aren't defined in previous rows don't generate amounts in section III.
 
-   ![Application specific parameters page for Other cash flow lookup.](../media/2ddd539a62e69bc03c346fb8c90e6299.png)
+   :::image type="content" source="../media/2ddd539a62e69bc03c346fb8c90e6299.png" alt-text="Screenshot of the Application specific parameters page for Other cash flow lookup.":::
 
 1. In the **State** field, change the value to **Completed**.
 1. On the Action Pane, select **Export** to export the settings of the application-specific parameters.

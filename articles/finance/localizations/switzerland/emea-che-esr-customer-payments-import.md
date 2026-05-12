@@ -6,7 +6,7 @@ ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Switzerland
 ms.search.validFrom: 2016-11-30
@@ -42,15 +42,11 @@ To import a payment file, follow these steps:
 1. In Dynamics 365 Finance, go to the **Payment journal** page.
 1. Select **Lines**.
 1. Select **Functions** \> **Import payments**.
-1. In the dialog, select the method of payment, and then browse to the location of the file to import. 
+1. In the dialog, select the method of payment, and then browse to the location of the file to import.
 
     > [!NOTE]
-    >  Before you can complete this step, you must import the **ESR (CH)** configurations from Lifecycle Services (LCS) and set up the ESR method of payment. Learn more in [File formats for methods of payment](../europe/emea-select-file-formats-for-the-method-of-payments.md).
+    > Before you can complete this step, you must import the **ESR (CH)** configurations from Lifecycle Services (LCS) and set up the ESR method of payment. Learn more in [File formats for methods of payment](../europe/emea-select-file-formats-for-the-method-of-payments.md).
 
 After you import the payment file, payment journal lines are created and marked for settlement with customer invoices based on the payment reference. If there are any fees specified for the bank account that are represented in the file (for example, transactions between the main account and fee account) these fees are added to the journal.
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

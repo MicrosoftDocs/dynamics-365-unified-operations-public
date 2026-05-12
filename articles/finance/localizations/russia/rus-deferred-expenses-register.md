@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2020-09-11
@@ -106,38 +106,38 @@ To walk through the example of how deferrals are automatically created when fixe
 |---------------------|------------------|----------------------|--------------------|---------------------------------|-------------------|
 | Yearly              | TAX              | Linear               | 12                 | Creation date start             | Year end          |
 
-2. On the **Expense and income codes** page (**Tax** \> **Setup** \> **Profit tax** \> **Expense codes**), verify that the following expense codes are created.
+1. On the **Expense and income codes** page (**Tax** \> **Setup** \> **Profit tax** \> **Expense codes**), verify that the following expense codes are created.
 
 | **Expense code** | **Code type** | **Parent code** | **Sales tax code** |
 |------------------|---------------|-----------------|--------------------|
 | 902000000        | Issue         |                 | НП                 |
 | 902030000        | Issue         | 902000000       | НП                 |
 
-3. On the **Depreciation groups** page (**Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**), create the following depreciation group that uses the **TAX** value model.
+1. On the **Depreciation groups** page (**Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**), create the following depreciation group that uses the **TAX** value model.
 
 | **Depreciation group** | **Depreciation method** | **Value model** | **Depreciation start date** |
 |------------------------|-------------------------|-----------------|-----------------------------|
 | FA loss                | Linear                  | TAX             | Next month start            |
 
-4. On the **Deferrals** FastTab, create the following line.
+1. On the **Deferrals** FastTab, create the following line.
 
 | **Model number** | **Deferrals group** | **Expense code** |
 |------------------|---------------------|------------------|
 | TAX              | Yearly              | 902030000        |
 
-5. On the **FA groups** page (**Fixed assets (Russia)** \> **Setup** \> **FA groups),** create the following fixed asset (FA) group.
+1. On the **FA groups** page (**Fixed assets (Russia)** \> **Setup** \> **FA groups),** create the following fixed asset (FA) group.
 
 | **FA group** | **Name**  |
 |--------------|-----------|
 | Inventory    | Inventory |
 
-6. On the **Released products** page (**Product information management** \> **Products** \> **Released products**), create the product. In the **Fixed assets (Russia)** section, in the **FA group** field, select the fixed asset group that you just created.
+1. On the **Released products** page (**Product information management** \> **Products** \> **Released products**), create the product. In the **Fixed assets (Russia)** section, in the **FA group** field, select the fixed asset group that you just created.
 
 | **Product number** | **Product name** | **FA group** |
 |--------------------|------------------|--------------|
 | Inventory01        | Inventory01      | Inventory    |
 
-7. On the **Tax registers** page (**Tax** \> **Setup** \> **Profit tax** \> **Registers**), create the following registers:
+1. On the **Tax registers** page (**Tax** \> **Setup** \> **Profit tax** \> **Registers**), create the following registers:
 
     - FA – information about object
     - FA depreciation
@@ -145,26 +145,26 @@ To walk through the example of how deferrals are automatically created when fixe
 
       For each register, on the **Hide** FastTab, select the fields that should be hidden from the register.
 
-8. On **Fixed assets** page (Fixed assets (Russia)** \> **Common** \> **Fixed assets), create the following fixed asset.
+1. On **Fixed assets** page (Fixed assets (Russia)** \> **Common** \> **Fixed assets), create the following fixed asset.
 
 | **FA group** | **Number** | **Acquisition date** | **Acquisition cost** |
 |--------------|------------|----------------------|----------------------|
 | Inventory    | 4051       | 01/01/2019           | 300,000.00           |
 
-9. Add the **TAX** value model for the fixed asset. On the **General** FastTab, set the following fields.
+1. Add the **TAX** value model for the fixed asset. On the **General** FastTab, set the following fields.
 
 | **Value model** | **Depreciation group** | **Putting into operation amount** |
 |-----------------|------------------------|-----------------------------------|
 | TAX             | FA loss                | 300,000.00                        |
 
-10. Make sure that the **Deferrals** FastTab has the following line.
+1. Make sure that the **Deferrals** FastTab has the following line.
 
 | **Model number** | **Deferrals group** | **Expense code** |
 |------------------|---------------------|------------------|
 | TAX              | Yearly              | 902030000        |
 
-11. Create the fixed asset journal for putting into operation, and do the putting into operation proposal, using January 1, 2019 (1/1/2019) as the transaction date. Then post the journal.
-12. Create the fixed asset journal for depreciation, and do the depreciation proposal, using April 1, 2019 (4/1/2019) as the transaction date. Verify that the following lines have been created.
+1. Create the fixed asset journal for putting into operation, and do the putting into operation proposal, using January 1, 2019 (1/1/2019) as the transaction date. Then post the journal.
+1. Create the fixed asset journal for depreciation, and do the depreciation proposal, using April 1, 2019 (4/1/2019) as the transaction date. Verify that the following lines have been created.
 
 | **Accounting** | **Date** | **Account type** | **Account** | **Description**    | **Credit** |
 |----------------|----------|------------------|-------------|--------------------|------------|
@@ -173,25 +173,25 @@ To walk through the example of how deferrals are automatically created when fixe
 | TAX            | 2/1/2019 | Fixed asset      | 4051        | Depr. by 2/28/2019 | 25,000.00  |
 | TAX            | 3/1/2019 | Fixed asset      | 4051        | Depr. by 3/31/2019 | 25,000.00  |
 
-13. Post the journal.
-14. On **All sales orders** page (**Accounts receivable** \> **Orders** \> **All sales orders**) create a sales order that has the following line:
+1. Post the journal.
+1. On **All sales orders** page (**Accounts receivable** \> **Orders** \> **All sales orders**) create a sales order that has the following line:
 
 | **Item number** | **Quantity** | **Unit price** | **FA inventory number** |
 |-----------------|--------------|----------------|-------------------------|
 | Inventory01     | 1            | 200,000.00     | 4051                    |
 
-15. Switch to the **Header** view, and then, on the **Financial dimensions** FastTab, in the **ExpenseAndIncomeCode** field, select **902030000**. In the **Invoice date** field, select **3/31/2019**.
-16. Post the invoice.
-17. On the **Deferrals** page (**General ledger** \> **Deferrals**), verify that the deferral master record was created.
-18. Make sure that the **Deferrals models** page has the following line.
+1. Switch to the **Header** view, and then, on the **Financial dimensions** FastTab, in the **ExpenseAndIncomeCode** field, select **902030000**. In the **Invoice date** field, select **3/31/2019**.
+1. Post the invoice.
+1. On the **Deferrals** page (**General ledger** \> **Deferrals**), verify that the deferral master record was created.
+1. Make sure that the **Deferrals models** page has the following line.
 
 | **Model number** | **Deferrals group** | **Beginning date of writing off** | **Deferrals sum** |
 |------------------|---------------------|-----------------------------------|-------------------|
 | TAX              | Yearly              | 3/31/2019                         | 50,000.00         |
 
-19. Switch to the **General** view. You should see that the value in the **Writing off time** field equals the remaining lifetime of the fixed asset. Note that **50,000.00** = 300,000.00 – 25,000.00 × 2 – 200,000.00.
-20. Create the tax register journal for one month of the 2019 calendar year, calculate all registers, and then approve the journal. Repeat this step for two months of the 2019 calendar year.
-21. Create the tax register journal for three months of the 2019 calendar year, and calculate all registers. In the **Deferrals** register, you should see the following information.
+1. Switch to the **General** view. You should see that the value in the **Writing off time** field equals the remaining lifetime of the fixed asset. Note that **50,000.00** = 300,000.00 – 25,000.00 × 2 – 200,000.00.
+1. Create the tax register journal for one month of the 2019 calendar year, calculate all registers, and then approve the journal. Repeat this step for two months of the 2019 calendar year.
+1. Create the tax register journal for three months of the 2019 calendar year, and calculate all registers. In the **Deferrals** register, you should see the following information.
 
 | **Column**                   | **Value**                                                                                   |
 |------------------------------|---------------------------------------------------------------------------------------------|
@@ -206,8 +206,8 @@ To walk through the example of how deferrals are automatically created when fixe
 | Amount of months             | 1.00                                                                                        |
 | Writing-off sum              | \-5,000.00                                                                                  |
 
-22. Approve the journal.
-23. Create the tax register journal for four months of the 2019 calendar year, and calculate all the registers. In the **Deferrals** register, you should see the same line that you saw in the **Deferrals** register for three months. However, the **Amount of months** field will be set to **2.00** instead of **1.00**.
+1. Approve the journal.
+1. Create the tax register journal for four months of the 2019 calendar year, and calculate all the registers. In the **Deferrals** register, you should see the same line that you saw in the **Deferrals** register for three months. However, the **Amount of months** field will be set to **2.00** instead of **1.00**.
 
 #### Example: Deferrals are automatically created by using a periodic task
 
@@ -220,22 +220,22 @@ To walk through the example of how deferrals are automatically created by using 
 | RAP              | 1                   | 6                  | Creation date start             |
 | TAX              | Yearly              | 12                 | Creation date start             |
 
-2. On the **Standard expenses sequence** page, create the following sequence.
+1. On the **Standard expenses sequence** page, create the following sequence.
 
 | **Sequence** | **Description**             | **Channel** | **Channel reference** |
 |--------------|-----------------------------|-------------|-----------------------|
 | AutDef       | Automatic deferral creation | Deferral    | 1,Yearly              |
 
-3. On the Action Pane, select **Counters**.
-4. On the **Counter setup** page, create a sequence. In the upper pane, in the **Expense code** field, select **902010100**, and then, on the **Lines** FastTab, create the following lines.
+1. On the Action Pane, select **Counters**.
+1. On the **Counter setup** page, create a sequence. In the upper pane, in the **Expense code** field, select **902010100**, and then, on the **Lines** FastTab, create the following lines.
 
 | **Line number** | **Operator** | **Line type** | **Period types** | **Output**  |
 |-----------------|--------------|---------------|------------------|-------------|
 | 1               |              | Quantity      | No               |             |
 | 2               | \*           | Price         | No               | Data output |
 
-5. Go to **Accounts payable** \> **Invoices** \> **Invoice journal**, and create a journal.
-6. On the Action Pane, select **Lines**, set the following fields, and then post the journal.
+1. Go to **Accounts payable** \> **Invoices** \> **Invoice journal**, and create a journal.
+1. On the Action Pane, select **Lines**, set the following fields, and then post the journal.
 
 | **Column**          | **Value**                                         |
 |---------------------|---------------------------------------------------|
@@ -249,27 +249,27 @@ To walk through the example of how deferrals are automatically created by using 
 | Offset account type | Ledger                                            |
 | Offset account      | 97.120-902010100                                  |
 
-7. On the **Deferrals creating** page, on the Action Pane, select the sequence of calculation that you created, and then select **Calculate marked**.
-8. On the **Parameters** FastTab, set the following fields:
+1. On the **Deferrals creating** page, on the Action Pane, select the sequence of calculation that you created, and then select **Calculate marked**.
+1. On the **Parameters** FastTab, set the following fields:
 
     - In the **Start date** field, select **1/1/2019**.
     - In the **End date** field, select **1/31/2019**.
     - Set the **Preview** option to **Yes**.
 
-9. Select **OK**, and then, on the page that appears, set the **Name** field to **«Расходы перечисление» (ENU: «Expenses transfer»)**.
-10. On the Action Pane, select **Create deferrals**, and then, on the **Deferrals** page, verify that the deferral master record was created.
-11. Make sure that the **Deferrals models** page has the following lines.
+1. Select **OK**, and then, on the page that appears, set the **Name** field to **«Расходы перечисление» (ENU: «Expenses transfer»)**.
+1. On the Action Pane, select **Create deferrals**, and then, on the **Deferrals** page, verify that the deferral master record was created.
+1. Make sure that the **Deferrals models** page has the following lines.
 
 | **Model number** | **Deferrals group** | **Beginning date of write-off** | **Deferrals sum** |
 |------------------|---------------------|---------------------------------|-------------------|
 | RAP              | 1                   | 1/1/2019                        | 10,000.00         |
 | TAX              | Yearly              | 1/1/2019                        | 10,000.00         |
 
-12. On the **Deferrals journal** page, create a new journal, and then, on the Action Pane, select **Lines**.
-13. On the **Journal voucher** page, on the Action Pane, select **Group operations** \> **Writing off**.
-14. On the **Deferrals writing off** page, in the **Transaction date** field, select **3/1/2019**, and then select **OK**.
-15. Verify that two lines were created for the **TAX** value model. For both lines, the operation type should be **Writing off**, and the amount should equal 10,000.00 ÷ 12 = **833.33**. When you've finished, post the journal.
-16. Create the tax register journal for one month of the 2019 calendar year, and then calculate all the registers. In the **Deferrals** register, you should see the following information.
+1. On the **Deferrals journal** page, create a new journal, and then, on the Action Pane, select **Lines**.
+1. On the **Journal voucher** page, on the Action Pane, select **Group operations** \> **Writing off**.
+1. On the **Deferrals writing off** page, in the **Transaction date** field, select **3/1/2019**, and then select **OK**.
+1. Verify that two lines were created for the **TAX** value model. For both lines, the operation type should be **Writing off**, and the amount should equal 10,000.00 ÷ 12 = **833.33**. When you've finished, post the journal.
+1. Create the tax register journal for one month of the 2019 calendar year, and then calculate all the registers. In the **Deferrals** register, you should see the following information.
 
 | **Column**                   | **Value**                                                                                                    |
 |------------------------------|--------------------------------------------------------------------------------------------------------------|
@@ -284,8 +284,8 @@ To walk through the example of how deferrals are automatically created by using 
 | Amount of months             | 1.00                                                                                                         |
 | Write-off sum                | \-833.33                                                                                                     |
 
-17. Approve the journal, and then create the tax register journal for two months of the 2019 calendar year.
-18. Calculate the registers. In the **Deferrals** register, you should see the same line that you saw in the **Deferrals** register for one month. However, the **Amount of months** field will be set to **2.00** instead of **1.00**.
+1. Approve the journal, and then create the tax register journal for two months of the 2019 calendar year.
+1. Calculate the registers. In the **Deferrals** register, you should see the same line that you saw in the **Deferrals** register for one month. However, the **Amount of months** field will be set to **2.00** instead of **1.00**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

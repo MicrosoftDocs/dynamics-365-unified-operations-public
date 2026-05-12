@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/08/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -56,18 +56,18 @@ To configure and generate the turnover sheet with correspondence, follow these s
     > [!NOTE]
     > This option is available only if you set the **Total accounts** option to **Yes**.
 
-    ![Turnover sheet with correspondence page, General tab.](../media/1_Turnover_sheet_with_correspondence.jpg)
+    :::image type="content" source="../media/1_Turnover_sheet_with_correspondence.jpg" alt-text="Screenshot of the Turnover sheet with correspondence page, General tab.":::
 
 1. Select **ОК** to generate the report.
 
-    ![Turnover sheet with correspondence report.](../media/2_Activity_of_account.jpg)
+    :::image type="content" source="../media/2_Activity_of_account.jpg" alt-text="Screenshot of the Turnover sheet with correspondence report.":::
 
     > [!NOTE]
     > - Select **Voucher** to view the ledger transactions that generated the activity.
     > - Select **Select** to change the report generation parameters.
     > - Select **Print** to print the report in Microsoft Excel.
 
-   ![Turnover sheet with correspondence generated report.](../media/3_Activity_of_account.jpg)
+   :::image type="content" source="../media/3_Activity_of_account.jpg" alt-text="Screenshot of the Turnover sheet with correspondence generated report.":::
 
 ## General ledger report
 
@@ -106,11 +106,11 @@ To configure and generate the general ledger report, follow these steps:
 1. Set the **Credit activity** option to **Yes** to print the detailed account turnovers in credit correspondence.
 1. Set the **Use periods** option to **Yes** to print the report by interval, according to the reporting period. Set this option to **No** to print the report by months.
 
-    ![General ledger account activity report page, General tab.](../media/4_General_ledger.jpg)
+    :::image type="content" source="../media/4_General_ledger.jpg" alt-text="Screenshot of the General ledger account activity report page, General tab.":::
 
 1. Select **ОК** to generate the report.
 
-    ![General ledger account activity report.](../media/5_Account_activity.jpg)
+    :::image type="content" source="../media/5_Account_activity.jpg" alt-text="Screenshot of the General ledger account activity report.":::
 
 > [!NOTE]
 >
@@ -119,7 +119,7 @@ To configure and generate the general ledger report, follow these steps:
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in Excel.
 
-   ![Generated General ledger account activity report .](../media/6_Account_activity.jpg)
+   :::image type="content" source="../media/6_Account_activity.jpg" alt-text="Screenshot of the Generated General ledger account activity report.":::
 
 ## Review of account report
 
@@ -155,12 +155,12 @@ To configure and generate the review of account report, follow these steps:
 
 1. Set the **Main accounts only** option to **Yes** to view only main accounts.
 
-    ![Review of account report, General tab.](../media/7_Review_of_account.jpg)
+    :::image type="content" source="../media/7_Review_of_account.jpg" alt-text="Screenshot of the Review of account report, General tab.":::
 
 1. On the **Records to include** tab, you can select **Filter** to specify filter criteria.
 1. Select **ОК** to generate the report.
 
-![Review of account report.](../media/8_Review_of_account.jpg)
+:::image type="content" source="../media/8_Review_of_account.jpg" alt-text="Screenshot of the Review of account report.":::
 
 > [!NOTE]
 >
@@ -168,7 +168,7 @@ To configure and generate the review of account report, follow these steps:
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in Excel.
 
-   ![Generated Review of account report.](../media/9_Review_of_account.jpg)
+   :::image type="content" source="../media/9_Review_of_account.jpg" alt-text="Screenshot of the Generated Review of account report.":::
 
 ## Journal order/account activity report
 
@@ -205,12 +205,12 @@ To configure and generate the journal order/account activity report, follow thes
 1. Set the **Debit activity** option to **Yes** to print the detailed account turnovers in debit correspondence.
 1. Set the **Credit activity** option to **Yes** to print the detailed account turnovers in credit correspondence.
 
-    ![Journal order/account activity report, General tab.](../media/10_Journal_order_account_activity.jpg)
+    :::image type="content" source="../media/10_Journal_order_account_activity.jpg" alt-text="Screenshot of the Journal order/account activity report, General tab.":::
 
 1. On the **Records to include** tab, you can select **Filter** to specifyfilter criteria.
 1. Select **ОК** to generate the report in Excel.
 
-![Generated Journal order/account activity report.](../media/11_Journal_order_and_account_activity.jpg)
+:::image type="content" source="../media/11_Journal_order_and_account_activity.jpg" alt-text="Screenshot of the Generated Journal order/account activity report.":::
 
 > [!NOTE]
 >   

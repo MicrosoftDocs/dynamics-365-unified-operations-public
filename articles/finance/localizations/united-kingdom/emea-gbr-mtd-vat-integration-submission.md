@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/25/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-07
@@ -19,10 +19,12 @@ ms.search.validFrom: 2021-08-07
 This article explains how to submit a value-added tax (VAT) return to the Making Tax Digital (MTD) web service of His Majesty's Revenue and Customs (HMRC) in Microsoft Dynamics 365 Finance.
 
 > [!NOTE]
+>
 > - To meet security requirements, we implemented modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. **These services won't be accessible from on-premises deployments by June 6, 2025**.
 > - As of June 6, 2025, **batch mode for submission** of VAT returns in the **Making Tax Digital** feature isn't supported. You can still generate in batch the report (VAT 100) in Excel and JSON formats.
 
 > [!IMPORTANT]
+>
 > - We recommend enabling the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature to activate the implemented security enhancements and comply with Microsoft security requirements.
 > - Learn about the transition of cloud-based deployments to the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in [Security enhancements in UK MTD VAT integration (cloud-based deployments only)](emea-gbr-mtd-vat-security-enhancements.md).
 > - When you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature, you don't need to manually start the authorization workflow on the **Web application** page for your Microsoft Dynamics 365 Finance environment to interoperate with the HMRC's Making Tax Digital (MTD) web service. The authorization workflow is triggered automatically when required during a VAT obligation request or VAT return submission.
@@ -120,7 +122,7 @@ You're automatically redirected to HMRC's web portal for authorization if your c
 > An **authorization code is valid for only 10 minutes**. You must proceed with the next steps during that time. Otherwise, the authorization code expires. In that case, you can use the same test user credentials to get a new authorization code.
 
 1. In your browser, switch to the Finance page where you're working with electronic messages. You should see a dialog that includes an **Authorization code** parameter. Paste the authorization code that you copied as the value of this parameter. Then select **OK** to continue.
-1. In this step, the authorization is completed, and the VAT obligation request starts. 
+1. In this step, the authorization is completed, and the VAT obligation request starts.
 
 ## Collect data for a VAT return
 
@@ -177,7 +179,7 @@ You can regenerate the **VAT 100** report several times before you generate the 
 
 ## Generate a VAT return in JSON format
 
-HMRC's MTD VAT API accepts VAT returns in JSON format only. 
+HMRC's MTD VAT API accepts VAT returns in JSON format only.
 
 To generate a VAT return in JSON format, follow these steps:
 
@@ -235,17 +237,17 @@ You're automatically redirected to HMRC's web portal for authorization if your c
 > An **authorization code is valid for only 10 minutes**. You must proceed with the next steps during that time. Otherwise, the authorization code expires. In that case, you can use the same test user credentials to get a new authorization code.
 
 1. In your browser, switch to the Finance page where you're working with electronic messages. You should see a dialog that includes an **Authorization code** parameter. Paste the authorization code that you copied as the value of this parameter. Then select **OK** to continue.
-1. In this step, the authorization is completed, and the VAT return submission starts. 
+1. In this step, the authorization is completed, and the VAT return submission starts.
 
 ## Submit VAT returns to HMRC from on-premises deployments of Dynamics 365 Finance
 
-Starting June 6, 2025, support for the UK MTD VAT integration feature in on-premises deployments of Dynamics 365 Finance is discontinued. 
+Starting June 6, 2025, support for the UK MTD VAT integration feature in on-premises deployments of Dynamics 365 Finance is discontinued.
 
-Transitioning to the cloud deployment of Dynamics 365 Finance offers several advantages. These advantages include enhanced security, automatic updates, and compliance with HMRC's MTD requirements. This transition provides seamless integration and access to the latest Dynamics 365 Finance features. 
+Transitioning to the cloud deployment of Dynamics 365 Finance offers several advantages. These advantages include enhanced security, automatic updates, and compliance with HMRC's MTD requirements. This transition provides seamless integration and access to the latest Dynamics 365 Finance features.
 
 Additionally, you can use a cloud-based environment as intermediary software for submitting your VAT return to HMRC from your on-premises deployment. To implement this solution, establish a cloud-based environment configured to interact seamlessly with your existing systems.  
 
-With adjustments to the UK MTD VAT Electronic Messaging, you can efficiently submit your VAT returns to HMRC using Dynamics 365 Finance's cloud-based solution. This approach allows your organization to benefit from cloud capabilities such as more security options, improved data management, and staying updated with regulatory changes. We recommend this option to ensure compliance with HMRC's VAT submission requirements. 
+With adjustments to the UK MTD VAT Electronic Messaging, you can efficiently submit your VAT returns to HMRC using Dynamics 365 Finance's cloud-based solution. This approach allows your organization to benefit from cloud capabilities such as more security options, improved data management, and staying updated with regulatory changes. We recommend this option to ensure compliance with HMRC's VAT submission requirements.
 
 To adopt the UK MTD VAT Electronic Messaging to submit a VAT return in JSON format generated in your on-premises deployments of Dynamics 365 Finance, follow these steps:
 
