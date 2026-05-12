@@ -4,6 +4,8 @@ description: Access various links to information about dual-write, including res
 author: sericks007
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started

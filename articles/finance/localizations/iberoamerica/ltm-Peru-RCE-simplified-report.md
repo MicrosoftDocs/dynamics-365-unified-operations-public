@@ -2,7 +2,7 @@
 title: Configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru
 description: Learn how to configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 06/03/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

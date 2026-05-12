@@ -7,7 +7,7 @@ ms.topic: whats-new
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 07/15/2024
+ms.date: 05/01/2026
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak 
 ms.search.region: India

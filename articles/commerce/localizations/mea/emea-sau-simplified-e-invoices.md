@@ -3,7 +3,7 @@ title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: Learn about the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: ilikond
 ms.author: ikondratenko
-ms.date: 02/27/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Saudi Arabia
@@ -17,7 +17,7 @@ ms.custom:
 [!include[banner](../../../finance/includes/banner.md)]
 
 > [!NOTE]
-> The functionality described in this article supports the Phase 2 requirements of the e-invoicing implementation in the Kingdom of Saudi Arabia. For information about the legacy features that support the Phase 1 requirements of the e-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate QR codes and print them on receipts for Saudi Arabia](emea-sau-qr-code.md). 
+> The functionality described in this article supports the Phase 2 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia.
 
 This article provides an overview of the functionality for simplified electronic invoices (e-invoices) that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
@@ -37,16 +37,16 @@ The high-level, end-to-end process flow in Commerce for Saudi Arabia is as follo
     > [!NOTE]
     > If POS is in offline mode, the local copy of CRT on the POS machine generates and digitally signs the e-invoice.
 
-1. CRT generates a simplified e-invoice in an XML format. [Electronic reporting (ER)](../../../dev-itpro/analytics/general-electronic-reporting.md) is used to implement the XML format of e-invoices for Saudi Arabia. A common format is used for simplified e-invoices in Commerce and regular tax e-invoices in Dynamics 365 Finance.
-1. CRT sends Commerce headquarters a request to provide a digital certificate.
-1. Commerce headquarters extracts the digital certificate from Azure Key Vault and sends it back to CRT. For more information about how Commerce handles digital certificates, see the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section of this article.
+2. CRT generates a simplified e-invoice in an XML format. [Electronic reporting (ER)](../../../dev-itpro/analytics/general-electronic-reporting.md) is used to implement the XML format of e-invoices for Saudi Arabia. A common format is used for simplified e-invoices in Commerce and regular tax e-invoices in Dynamics 365 Finance.
+3. CRT sends Commerce headquarters a request to provide a digital certificate.
+4. Commerce headquarters extracts the digital certificate from Azure Key Vault and sends it back to CRT. For more information about how Commerce handles digital certificates, see the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section of this article.
 
     > [!NOTE]
     > If POS is in offline mode, the local copy of CRT uses a digital certificate that's locally installed on the POS machine.
 
-1. CRT calculates the invoice hash, digitally signs the e-invoice data, and generates a QR code that includes the invoice hash and digital signature data. CRT also updates the XML invoice with the invoice hash and digital signature data. The e-invoice, the invoice hash, the QR code, and other information are saved in the channel database in a fiscal transaction that's linked to the sales transaction.
-1. POS requests a sales receipt from CRT. CRT builds the receipt, including the QR code, and sends it back to POS. POS sends the receipt to the receipt printer.
-1. Commerce headquarters uses Commerce Data Exchange (CDX) to download the sales transaction data together with fiscal transactions from CSU. The data is stored in the headquarters database throughout the life of your production environment.
+5. CRT calculates the invoice hash, digitally signs the e-invoice data, and generates a QR code that includes the invoice hash and digital signature data. CRT also updates the XML invoice with the invoice hash and digital signature data. The e-invoice, the invoice hash, the QR code, and other information are saved in the channel database in a fiscal transaction that's linked to the sales transaction.
+6. POS requests a sales receipt from CRT. CRT builds the receipt, including the QR code, and sends it back to POS. POS sends the receipt to the receipt printer.
+7. Commerce headquarters uses Commerce Data Exchange (CDX) to download the sales transaction data together with fiscal transactions from CSU. The data is stored in the headquarters database throughout the life of your production environment.
 1. Commerce headquarters extracts the simplified e-invoice in the XML format from the fiscal transaction that's linked to the sales transaction. It then submits the e-invoice to ZATCA. The submission is done by integrating with the [Electronic Invoicing service](../../../finance/localizations/mea/gs-e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities that are available to Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../../finance/localizations/mea/emea-sau-e-invoices.md).
 
 ## Set up Commerce for Saudi Arabia
@@ -67,13 +67,19 @@ Specify the following settings for Saudi Arabia. Run appropriate distribution jo
 1. [Configure custom fields](#configure-custom-fields-to-use-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to print QR codes on receipts and comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for Saudi Arabia to enable the generation and digital signing of simplified e-invoices.
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel side.
-1. [Specify the ER configurations](#specify-er-configurations) that should be used to generate simplified e-invoices in POS and submit them from Commerce headquarters.
+1. [Specify the ER configurations](#specify-er-configurations) that Commerce headquarters should use to generate simplified e-invoices in POS and submit them.
 1. [Configure e-invoice submission](#configure-e-invoice-submission) for simplified e-invoices that are generated in POS.
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 
+
+### Mix and match transactions aren't supported in Saudi Arabia
+
+A transaction can't include both sales and return lines together. All lines in a transaction must be of the same type. To enforce this requirement, enable the **Prohibit mixing sales and returns in one receipt** setting in the POS functionality profile. To enable it, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, select the functionality profile that is linked to the store, and on the **Functions** FastTab, select the **Prohibit mixing sales and returns in one receipt** check box.
+
+
 ### Enable features for Saudi Arabia
 
-Enable the following features in the **Feature management** workspace:
+In the **Feature management** workspace, enable the following features:
 
 - KSA Electronic-Invoicing capability for the fiscal integration framework
 - (Saudi Arabia) Electronic invoicing integration
@@ -86,9 +92,9 @@ Specify sales tax groups and enable the **Prices include sales tax** option for 
 
 ### Configure custom fields to use in receipt formats for sales receipts
 
-You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup created for.
+You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where you create the language text setup. Alternatively, create the same language texts in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, on the **POS** tab, add the following records for the labels of the custom fields for receipt layouts. The **Language ID**, **Text ID**, and **Text** values that are shown in the table are examples. You can change them to meet your requirements. However, the **Text ID** values must be unique and be equal to or higher than 900001.
+On the **Language text** page, on the **POS** tab, add the following records for the labels of the custom fields for receipt layouts. The **Language ID**, **Text ID**, and **Text** values that are shown in the table are examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
 
 | Language ID | Text ID | Text    |
 |-------------|---------|---------|
@@ -159,7 +165,7 @@ To configure certificates and certificate profiles that you can use for digital 
 
 After you configure certificate profiles, follow these steps:
 
-1. Go to **Retail and Commerce** \> **Channel setup** \> **Fiscal integration** \> **Connector technical profiles**, and select the connector technical profile that you created earlier. 
+1. Go to **Retail and Commerce** > **Channel setup** > **Fiscal integration** > **Connector technical profiles**, and select the connector technical profile that you created earlier. 
 1. To configure certificate profiles per POS register, select **Override**, and create records for all registers that you must specify CSIDs for. 
 1. In each record, on the **Device** FastTab, in the **Certificate profile** field, specify a corresponding certificate profile. For more information about how to override connector technical profile settings, see [Create connector technical profiles](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles).
 

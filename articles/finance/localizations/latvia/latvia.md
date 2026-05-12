@@ -6,7 +6,7 @@ ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 09/17/2024
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Latvia
 ms.search.validFrom: 2016-02-28
@@ -26,6 +26,5 @@ This article provides links to documentation resources for Latvia.
 - [VAT declaration](emea-lva-vat-declaration-latvia.md)
 - [Latvian Intrastat](emea-lva-intrastat.md)
 - [EU sales list for Latvia](emea-lva-eu-sales-list.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

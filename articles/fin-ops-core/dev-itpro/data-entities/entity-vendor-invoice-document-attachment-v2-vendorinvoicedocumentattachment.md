@@ -4,13 +4,15 @@ description: Learn about the Vendor invoice document attachment V2 data entity i
 author: edupont04
 ms.author: katiehav
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 04/28/2023
 ms.collection: FastTrack
 ---
 
 # Vendor invoice document attachment V2 entity
 
-The **Vendor invoice document attachment V2** entity supports creating and updating documents attached to a vendor invoice header.
+The **Vendor invoice document attachment V2** entity supports creating anmd updating documents attached to a vendor invoice header.
 
 ## When to use this entity
 

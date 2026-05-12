@@ -3,8 +3,10 @@ title: Improved inquiry on debit/credit settlement
 description: Learn how you can view information about invoice and payment settlements in a convenient and simple format, including prerequisites.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/16/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy

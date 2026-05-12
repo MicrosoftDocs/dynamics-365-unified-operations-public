@@ -4,7 +4,7 @@ description: Learn about how the FA_BALANCE Electronic reporting (ER) function i
 author: kfend
 ms.author: filatovm
 ms.topic: reference
-ms.date: 12/17/2019
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global

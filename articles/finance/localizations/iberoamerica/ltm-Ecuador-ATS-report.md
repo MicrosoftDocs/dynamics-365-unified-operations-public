@@ -2,7 +2,7 @@
 title: Configure Simplified transactional appendix (ATS) printing
 description: Learn how to configure the Simplified transactional appendix (ATS) report for printing.
 author: Fhernandez0088
-ms.date: 01/09/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

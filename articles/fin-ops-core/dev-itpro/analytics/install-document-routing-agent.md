@@ -4,7 +4,7 @@ description: Learn how to install and configure the Document Routing Agent for d
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: install-set-up-deploy
-ms.date: 10/22/2025
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -22,7 +22,7 @@ This article describes how to install and configure the Document Routing Agent. 
 
 ## Preparing to install the Document Routing Agent
 
-- Supported on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2, Microsoft Windows Server 2016, Microsoft Windows Server 2019, or Microsoft Windows Server 2022.
+- Supported on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2, Microsoft Windows Server 2016, Microsoft Windows Server 2019, Microsoft Windows Server 2022, or Microsoft Windows Server 2025.
 - Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
 - When installing the Document Routing Agent, make sure you're signed in as the Admin user.
 - The Microsoft Entra ID (Azure AD) account that you use to configure the Document Routing Agent must share the same domain as the Azure tenant.

@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/18/2020
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak 
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
@@ -18,9 +18,9 @@ ms.dyn365.ops.version: 10.0.4
 [!include [banner](../../includes/banner.md)]
 
 1. Expand the **Tax component** node, and select the **Rate** node.
-2. In the **Value** field, enter the tax rate. The remaining fields are used to determine the rate. In the standard GST configuration, there are several pre-defined fields, including **Consumption state**, **HSN code**, and **SAC**. You can select the fields relevant to your business to determine the rate. 
+1. In the **Value** field, enter the tax rate. The remaining fields are used to determine the rate. In the standard GST configuration, there are several pre-defined fields, including **Consumption state**, **HSN code**, and **SAC**. You can select the fields relevant to your business to determine the rate. 
 
-    ![Tax rates.](../media/tax-rate.png)
+    :::image type="content" source="../media/tax-rate.png" alt-text="Screenshot of tax rates.":::
 
     If you leave any input fields empty, then the fields can accept any input values. For example, in the following table, if **HSN** is *998313* and not matter what the value of **Party GST Registration Number** is, then the rate is *12%*. 
 
@@ -31,27 +31,27 @@ ms.dyn365.ops.version: 10.0.4
      > [!NOTE]
      > You can use the [Tax rate type](apac-ind-GST-create-tax-rate-type.md) instead of the HSN and SAC to determine the tax rate. You can also import the [standard GST configurations](apac-ind-gst.md#gst-configurations), which supports tax rate type, or you can extend the earlier configuration by adding tax rate type into the lookup. The tax rate type is supported as of Dynamics 365 Finance version 10.0.5 (October 2019).
 
-3. Select the **Reverse Charge Percentage** node, and in the **Value** field, enter the reverse charge percentage.
+1. Select the **Reverse Charge Percentage** node, and in the **Value** field, enter the reverse charge percentage.
 
-    ![Reverse charge percentage.](../media/reverse-charge.png)
+    :::image type="content" source="../media/reverse-charge.png" alt-text="Screenshot of reverse charge percentage.":::
 
-4. Select the **Load on Inventory Percentage** node, and in the **Value** field, enter the load on inventory percentage.
+1. Select the **Load on Inventory Percentage** node, and in the **Value** field, enter the load on inventory percentage.
 
-    ![Load on inventory percentage.](../media/load-on-invertory.png)
+    :::image type="content" source="../media/load-on-invertory.png" alt-text="Screenshot of load on inventory percentage.":::
 
-5. Select **Save**, and then select **Close**.
-6. On the **Companies** FastTab, select **Parameters**.
-7. Enter the parameter values, and then select **OK**.
+1. Select **Save**, and then select **Close**.
+1. On the **Companies** FastTab, select **Parameters**.
+1. Enter the parameter values, and then select **OK**.
 
-    ![Tax setup parameters dialog box.](../media/tax-parameter_upd.png)
+    :::image type="content" source="../media/tax-parameter_upd.png" alt-text="Screenshot of tax setup parameters dialog box.":::
 
 ## Import/export tax setup
 
 Prepare the tax setup in Microsoft Excel, and then import the data into the tax setup. 
 
 1. In the rate table, select **Export**. 
-2. Open the exported CSV file in Excel, prepare the tax setup, and save the file.
-3. In the rate table, select **Import**, choose the file, and then load the data into the setup.
+1. Open the exported CSV file in Excel, prepare the tax setup, and save the file.
+1. In the rate table, select **Import**, choose the file, and then load the data into the setup.
 
 ## Validate tax setup
 

@@ -4,7 +4,7 @@ description: Learn about order promising, which helps you reliably promise deliv
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 06/07/2024
+ms.date: 04/20/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -28,12 +28,12 @@ Order promising calculates the earliest ship and receipt dates, and is based on 
 > [!NOTE]
 > When a sales order is updated, the order promising information is only updated if the existing order promising date can't be fulfilled, as illustrated in the following examples:
 >
-> - **Example 1**: The current order promising date is July 20, but due to increased quantity, you won't be able to deliver until July 25. Because the current date can no longer be met, order promising is triggered.
+> - **Example 1**: The current order promising date is July 20, but due to increased quantity, you can't deliver until July 25. Because the current date can no longer be met, order promising is triggered.
 > - **Example 2**: The current order promising date is July 20, but due to decreased quantity, it's now possible to deliver on July 15. However, because the current date can still be fulfilled, order promising isn't triggered, and July 20 remains the order promising date.
 
 ## ATP calculations
 
-The ATP quantity is calculated by using the "cumulative ATP with look-ahead" method. The main advantage of this ATP calculation method is that it can handle cases where the sum of issues among receipts is more than the latest receipt (for example, when a quantity from an earlier receipt must be used to meet a requirement). The "cumulative ATP with look-ahead" calculation method includes all issues until the cumulative quantity to receive exceeds the cumulative quantity to issue. Therefore, this ATP calculation method evaluates whether some of the quantity from an earlier period can be used in a later period.
+The ATP quantity is calculated by using the **cumulative ATP with look-ahead** method. The main advantage of this ATP calculation method is that it can handle cases where the sum of issues among receipts is more than the latest receipt. For example, when a quantity from an earlier receipt must be used to meet a requirement. The **cumulative ATP with look-ahead** calculation method includes all issues until the cumulative quantity to receive exceeds the cumulative quantity to issue. Therefore, this ATP calculation method evaluates whether some of the quantity from an earlier period can be used in a later period.
 
 The ATP quantity is the uncommitted inventory balance in the first period. Typically, it's calculated for each period in which a receipt is scheduled. The program calculates the ATP period in days and calculates the current date as the first date for the ATP quantity. In the first period, ATP includes on-hand inventory minus customer orders that are due and overdue.
 
@@ -45,7 +45,9 @@ Notice that the ATP calculation doesn't include information around expiry date a
 
 When there are no more issues or receipts to consider, the ATP quantity for the following dates is the same as the latest calculated ATP quantity.
 
-If not all the dimensions that are used for an item are given when the ATP check is completed, they can still be specified on the issue and receipts. In this case, in the ATP calculation, the receipts and issues must be aggregated to the existing dimensions to reduce the number of receipt and issue lines that are used in the ATP calculation.
+If all the dimensions used for an item aren't given when the ATP check is completed, you can still specify them on the issue and receipts. In this case, in the ATP calculation, the receipts and issues must be aggregated to the existing dimensions to reduce the number of receipt and issue lines that are used in the ATP calculation.
+
+
 
 The ATP quantity that is shown is always greater than or equal to 0 (zero). If the calculation returns a negative ATP quantity (for example, if the quantity that was previously promised exceeds the available quantity), the quantity is automatically set to 0.
 
@@ -53,11 +55,11 @@ The ATP quantity that is shown is always greater than or equal to 0 (zero). If t
 
 The **ATP backward demand time fence** field controls how far back in time to look for delayed demand orders or inventory issues. The **ATP backward supply time fence** field controls how far back in time to look for delayed supply orders or inventory receipts. For example, if orders that are delayed by only seven days should be considered in the ATP calculation, both fields should be set to **7**.
 
-The **ATP delayed demand offset time** and **ATP delayed supply offset time** fields control when the delayed demand or supply will be considered in the ATP calculation. For example, if the delayed supply and demand should be considered in the ATP calculation the day after tomorrow, both fields should be set to **2**. A value of **2** means that the quantity of an item on a delayed purchase order that should be considered in the ATP calculation will be seen as available two days after the current date.
+The **ATP delayed demand offset time** and **ATP delayed supply offset time** fields control when the delayed demand or supply is considered in the ATP calculation. For example, if the delayed supply and demand should be considered in the ATP calculation the day after tomorrow, set both fields to **2**. A value of **2** means that the quantity of an item on a delayed purchase order that should be considered in the ATP calculation is available two days after the current date.
 
 For the following example, **7** is entered in the **ATP backward demand time fence** and **ATP backward supply time fence** fields, and **1** is entered in the **ATP delayed demand offset time** and **ATP delayed supply offset time** fields.
 
-A purchase order for 200 pieces of a product that should have been received three days ago hasn't been received yet. Therefore, a sales order line for 75 pieces of the same product that should have been shipped yesterday hasn't been shipped.
+You haven't received a purchase order for 200 pieces of a product that should have been received three days ago. Therefore, a sales order line for 75 pieces of the same product that should have been shipped yesterday isn't shipped.
 
 A customer calls and wants to order 150 pieces of the same product. When you verify the availability of the product, you find that another purchase order for 100 pieces of the product will be delivered 10 days later.
 

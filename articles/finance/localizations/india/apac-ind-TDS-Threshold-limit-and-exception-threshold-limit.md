@@ -3,10 +3,10 @@ title: Threshold limit and exception threshold limit
 description: Learn about the threshold and exception limits for Tax Deducted at Source (TDS), including an example about threshold limits.
 author: epodkolzina
 ms.author: epodkolzina
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
@@ -24,7 +24,7 @@ TDS is calculated if the amount for a transaction or the cumulative transactions
 
 If an exception threshold limit is specified along with the threshold limit for a TDS component, TDS is calculated when a specific transaction amount exceeds the exception threshold limit even if the cumulative transaction amount does not exceed the specified threshold limit.
 
-### Example
+## Example
 A tax component called TDS is set up and attached to the TDS tax group called Contractor. The threshold has been defined as 50,000 and exception threshold has been defined as 20,000 for TDS tax component. The TDS group contractor is defined as the default TDS group for vendor 1.
 
 A purchase invoice 001 is posted for vendor 1 for 10000. TDS is not calculated for the invoice because the invoice amount has not crossed the threshold limit or exception threshold limit. A purchase invoice 002 is posted for vendor 1 for 25,000. TDS is calculated for the invoice because the invoice amount has crossed the exception threshold limit. A purchase invoice 003 is posted for Vendor 1 for 20,000. TDS is calculated for the invoice because the total invoice amount of the three invoices that are issued for the vendor has crossed the threshold limit. TDS is calculated on all invoices that are issued for the vendor on which the TDS has not been calculated earlier. Therefore, TDS is calculated on 30,000, which is the total invoice amount of invoice 001 and 003.

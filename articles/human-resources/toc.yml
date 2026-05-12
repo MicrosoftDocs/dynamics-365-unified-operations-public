@@ -29,12 +29,12 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.48
+          href: ./get-started/hr-whats-new-10-0-48.md
         - name: Human Resources 10.0.47
           href: ./get-started/hr-whats-new-10-0-47.md
         - name: Human Resources 10.0.46
-          href: ./get-started/hr-whats-new-10-0-46.md
-        - name: Human Resources 10.0.45  
-          href: ./get-started/hr-whats-new-10-0-45.md   
+          href: ./get-started/hr-whats-new-10-0-46.md 
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -207,7 +207,7 @@ items:
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?toc=/dynamics365/human-resources/toc.json
-        - name: Immersive Home (production ready preview)
+        - name: Immersive Home
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?toc=/dynamics365/human-resources/toc.json
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?toc=/dynamics365/human-resources/toc.json

@@ -2,7 +2,7 @@
 title: Post Ecuadorian refund invoice transactions
 description: Learn how to configure and use refund invoices for Ecuador.
 author: Fhernandez0088
-ms.date: 12/30/2024
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template

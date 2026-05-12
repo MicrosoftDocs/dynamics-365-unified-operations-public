@@ -50,7 +50,7 @@ When you create an overview of your code, first consider analyzing each of your 
 
 You can gain practical experience both with ISVs that take each ISV solution in turn and with ISVs that work as VARs and take customer solutions later.
 
-No matter how you piece together the work in solutions, you can use the [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md) to get information about what code is overlayered. You generate this report when you submit your solutions to the Code Migration tool on Microsoft Dynamics Lifecycle Services (LCS). The report is in Microsoft Excel format and includes a list of all the places that have overlayered code. You can use the report to both analyze and categorize all overlayered instances in your solution.
+No matter how you piece together the work in solutions, you can use the [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md) to get information about what code is overlayered. You generate this report when you submit your solutions to the Code Migration tool on Microsoft Dynamics Lifecycle Services. The report is in Microsoft Excel format and includes a list of all the places that have overlayered code. You can use the report to both analyze and categorize all overlayered instances in your solution.
 
 To obtain an overview, you might find it helpful to categorize each overlayered instance. The category that you apply to an overlayered instance should represent the approximate effort that's required to change the customization to extensions. Some customizations are easily changed to extensions. However, for other customizations, the change is more difficult.
 

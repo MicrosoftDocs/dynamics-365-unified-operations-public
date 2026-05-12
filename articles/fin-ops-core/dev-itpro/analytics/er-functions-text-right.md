@@ -4,7 +4,7 @@ description: Learn about how the RIGHT Electronic reporting (ER) function is use
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 12/10/2019
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -34,7 +34,7 @@ A *String* value that represents the original text.
 
 `number`: *Integer*
 
-The number of characters that must be returned from the end of the original text.
+The number of characters that you want to return from the end of the original text.
 
 ## Return values
 
