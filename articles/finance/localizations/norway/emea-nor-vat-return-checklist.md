@@ -4,7 +4,7 @@ description: Access a checklist for setting up Electronic messages functionality
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: checklist
-ms.date: 02/09/2024
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Norway
@@ -12,26 +12,26 @@ ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
 ---
 
-# Checklist for Electronic messages setup for VAT returns with direct submission to Altinn
+# Checklist for electronic messages setup for VAT returns with direct submission to Altinn
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about how the [Electronic messages](../../general-ledger/electronic-messaging.md) functionality is set up to support the processing of value-added tax (VAT) returns with direct submission to Altinn in Norway. You can use the information in this article to determine whether the Electronic messages functionality is correctly set up.
+This article provides information about how to set up the [Electronic messages](../../general-ledger/electronic-messaging.md) functionality to support the processing of value-added tax (VAT) returns with direct submission to Altinn in Norway. Use the information in this article to determine whether the Electronic messages functionality is correctly set up.
 
-Although this article includes the most important information about the setup, it doesn't include information about all the data. We recommend that you use a package of data entities that contains a predefined setup of the functionality, and that includes all the data that is required to set up the processing for interoperation with Altinn.
+Although this article includes the most important information about the setup, it doesn't include information about all the data. Use a package of data entities that contains a predefined setup of the functionality and includes all the data that is required to set up the processing for interoperation with Altinn.
 
-- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and review your setup. The following type of processing is defined to support interoperation with Altinn.
+- Go to **Tax** > **Setup** > **Electronic messages** > **Electronic messages processing**, and review your setup. The following type of processing supports interoperation with Altinn.
 
     | Processing | Name (Norwegian) | Description |
     |---|---|---|
     | NO VAT return | Momsoppgave med direkte innsending | The processing to prepare and submit VAT returns to Altinn. |
 
     > [!IMPORTANT]
-    > To enable access at the record level for business users, you must define security roles for the processing.
+    > To enable access at the record level for business users, define security roles for the processing.
 
 ## Web applications
 
-- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and review your setup. The **NO VAT return** processing uses the following web applications.
+- Go to **Tax** > **Setup** > **Electronic messages** > **Web applications**, and review your setup. The **NO VAT return** processing uses the following web applications.
 
     | Application name | Description |
     |---|---|
@@ -54,11 +54,11 @@ The following table shows the web application parameters that the **NO VAT retur
 > [!IMPORTANT]
 > To enable access to the access token and interoperation with ID-porten and Altinn APIs for business users, you must define security roles for both web applications.
 
-Internet addresses (base URLs, Authorization URL path, and Token URL path) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual internet addresses on the official Altinn and ID-porten website. For actual internet addresses of the sandbox setup of the **NO ID-Porten** web application, go to <https://test.idporten.no/.well-known/openid-configuration>. For the production setup of the **NO ID-Porten** web application, go to <https://idporten.no/.well-known/openid-configuration>.
+Internet addresses (base URLs, Authorization URL path, and Token URL path) can change. Check the official Altinn and ID-porten websites for the current internet addresses. For the actual internet addresses of the sandbox setup of the **NO ID-Porten** web application, go to <https://test.idporten.no/.well-known/openid-configuration>. For the production setup of the **NO ID-Porten** web application, go to <https://idporten.no/.well-known/openid-configuration>.
 
 ## Web service settings
 
-- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**, and review your setup. The **NO VAT return** processing uses the following web services:
+- Go to **Tax** > **Setup** > **Electronic messages** > **Web service settings**, and review your setup. The **NO VAT return** processing uses the following web services:
 
     - NO Altinn GET attachments
     - NO Altinn GET JSON
@@ -224,7 +224,7 @@ For *production* interoperation, use the following internet address: `https://id
 
 ## Additional fields
 
-- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**, and review your setup. The **NO VAT return** processing uses the following additional fields.
+- Go to **Tax** > **Setup** > **Electronic messages** > **Additional fields**, and review your setup. The **NO VAT return** processing uses the following additional fields.
 
     | Field | Description (Norwegian) | User edit | Counter | Hidden |
     |---|---|---|---|---|
@@ -239,15 +239,15 @@ For *production* interoperation, use the following internet address: `https://id
     | NO VAT Payment ID | KundeIdentifikasjonsnummer. Nummer som brukes ved regningsbetaling i Norge for å identifisere kunden og fakturaen, KID-nummer. | Yes | No | No |
 
     > [!NOTE]
-    > The user can't change the setting of any of these fields.
+    > You can't change the setting of any of these fields.
 
 ## Electronic message item types
 
-- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message item types**, and review your setup. The **NO VAT return** processing uses one type of electronic message item: **NO VAT return**.
+- Go to **Tax** > **Setup** > **Electronic messages** > **Message item types**, and review your setup. The **NO VAT return** processing uses one type of electronic message item: **NO VAT return**.
 
 ## Electronic message item statuses
 
-- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**, and review your setup. The **NO VAT return** processing uses the following electronic message item statuses.
+- Go to **Tax** > **Setup** > **Electronic messages** > **Message item statuses**, and review your setup. The **NO VAT return** processing uses the following electronic message item statuses.
 
     | Status | Description | Allow delete |
     |---|---|---|
@@ -257,7 +257,7 @@ For *production* interoperation, use the following internet address: `https://id
 
 ## Electronic message statuses
 
-- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message statuses**, and review your setup. The **NO VAT return** processing uses the following electronic message statuses.
+- Go to **Tax** > **Setup** > **Electronic messages** > **Message statuses**, and review your setup. The **NO VAT return** processing uses the following electronic message statuses.
 
     | Status | Description (Norwegian) | Response type | Allow delete |
     |---|---|---|---|
@@ -303,9 +303,9 @@ For *production* interoperation, use the following internet address: `https://id
     | NO VAT Successful sending create instance request | Sendingen oppretter forespørsel om vellykket sending | Successful | No |
     | NO VAT SUCCESSFUL VAT return submission to the Tax Administr | MVA-meldingen lastet opp til Skatteetaten ble validert | Successful | No |
 
-## Action populate records
+## Action to populate records
 
-- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**, and review your setup. The **NO VAT return** processing uses one **NO VAT Collect sales tax payments** populate records action.
+- Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**, and review your setup. The **NO VAT return** processing uses one **NO VAT Collect sales tax payments** populate records action.
 
 The following table shows the setup of the data source for the **NO VAT Collect sales tax payments** populate records action that the **NO VAT return** processing uses.
 
@@ -325,7 +325,7 @@ The following table shows the setup of the data source for the **NO VAT Collect 
 
 ## Electronic message actions
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, and review your setup. The **NO VAT return** processing uses the following electronic message actions.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**, and review your setup. The **NO VAT return** processing uses the following electronic message actions.
 
     | Order | Action | Description (Norwegian) | Inseparable sequence | Run separately |
     |---|---|---|---|---|
@@ -356,7 +356,7 @@ The following table shows the setup of the data source for the **NO VAT Collect 
     | 25 | NO VAT Exclude from VAT return | Innbetaling av merverdiavgift ekskludert fra mva | Blank | **Yes** |
     | 26 | NO VAT Include to VAT return | Inkluder betaling av omsetningsavgift til mva | Blank | **Yes** |
 
-2. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, and review your setup. The following parameters must be defined for the actions.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Message processing actions**, and review your setup. Define the following parameters for the actions.
 
     | Action | Action type | Parameters |
     |---|---|---|

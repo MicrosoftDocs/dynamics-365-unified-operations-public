@@ -4,7 +4,7 @@ description: Learn how to authorize your Microsoft Dynamics 365 Finance environm
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2022-11-18
@@ -19,11 +19,11 @@ ms.custom:
 
 This article explains how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services in Norway.
 
-Before you start to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services, make sure that you've [registered an integration point in ID-porten](emea-nor-vat-return-integration-point.md). Additionally, make sure that the **Gyldig(e) redirect uri-er** field of your integration point is set to the internet address (URL) of the **Web applications** page in the legal entity that you will interoperate with ID-porten and Altinn web services from.
+Before you start to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services, make sure that you [registered an integration point in ID-porten](emea-nor-vat-return-integration-point.md). Additionally, make sure that the **Gyldig(e) redirect uri-er** field of your integration point is set to the internet address (URL) of the **Web applications** page in the legal entity that you interoperate with ID-porten and Altinn web services from.
 
 To authorize your Finance environment in ID-porten and Altinn web services, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Electronic messages** > **Web applications**.
 1. Select the **NO ID-Porten** web application in the list on the left.
 1. Verify that the **Redirect URL** field is set to the URL of the current page (**Web applications**). This URL should match the URL that you specified in the **Gyldig(e) redirect uri-er** field of your integration point in the ID-porten web portal.
 1. Verify that the **Client ID** field is set to the client ID of your integration point, and the **Client secret** field is set to the client secret.
@@ -31,7 +31,7 @@ To authorize your Finance environment in ID-porten and Altinn web services, foll
 1. In the **Electronic report parameters** dialog box, in the **Requested language in the user interface** field, specify **en** for English. ID-porten also supports the following values: **nb**, **nn**, **en**, and **se**.
 
     > [!NOTE]
-    > The list of supported values for the **Requested language in the user interface** field is subject to change by ID-porten. We recommend that you check the official ID-porten documentation for current information.
+    > The list of supported values for the **Requested language in the user interface** field is subject to change by ID-porten. Check the official ID-porten documentation for current information.
 
 1. In the **Requested security level** lookup field, select a value that reflects your preference for the security level of your authorization in ID-porten. The following values that are available for the **Requested security level** lookup field can be used as the `acr_values` parameter for authorization requests to ID-porten:
 
@@ -45,7 +45,7 @@ To authorize your Finance environment in ID-porten and Altinn web services, foll
 
 1. Select **OK** to proceed with authorization in ID-porten.
 
-    ![Specify parameters in the Electronic report parameters dialog box.](../media/emea-nor-vat-return-no-authorization-params.png)
+    :::image type="content" source="../media/emea-nor-vat-return-no-authorization-params.png" alt-text="Screenshot of the Electronic report parameters dialog box with specified parameters.":::
 
     You're redirected to ID-porten for user authorization. The user who is authorized in ID-porten must have the rights that are required to complete and submit VAT returns.
 
@@ -61,19 +61,19 @@ To authorize your Finance environment in ID-porten and Altinn web services, foll
 
 1. In the **Electronic reporting parameters** dialog box, select **OK**.
 
-    When you've successfully obtained an access token, you receive the following message: "Access token was successfully obtained." Additionally, the values in the **Granted scope** and **Access token will expire in** fields are updated.
+    When you successfully obtain an access token, you receive the following message: "Access token was successfully obtained." Additionally, the values in the **Granted scope** and **Access token will expire in** fields are updated.
 
-    ![Granted scope and Access token will expire in fields updated for the NO ID-Porten web application on the Web applications page.](../media/emea-nor-vat-return-no-authorization-2023.png)
+    :::image type="content" source="../media/emea-nor-vat-return-no-authorization-2023.png" alt-text="Screenshot of the Granted scope and Access token will expire in fields updated for the NO ID-Porten web application on the Web applications page.":::
 
 1. Select the **NO Altinn** web application in the list on the left.
 1. On the Action Pane, select **Obtain access token**.
 1. In the **Electronic report parameters** dialog box, select **OK**.
 
-    When you've successfully obtained an access token, you receive the following message: "Access token was successfully obtained." Additionally, the values in the **Granted scope** and **Access token will expire in** fields are updated.
+    When you successfully obtain an access token, you receive the following message: "Access token was successfully obtained." Additionally, the values in the **Granted scope** and **Access token will expire in** fields are updated.
 
 > [!IMPORTANT]
 > - The authorization of your Finance environment in your integration point in ID-porten is valid for one calendar year. This period is defined by the **Authorization levetid (sekunder)** field of your [integration point](emea-nor-vat-return-integration-point.md). You must reauthorize your Finance environment before the authorization expires.
-> - The authorization of your Finance environment in your integration point in ID-porten is *user-specific*. Because of this, Finance also stores information about which user obtained the authorization code in ID-porten. The submission of VAT return from Finance is allowed for only this user. If another user must submit a VAT return, they must go through the authorization process prior to submitting the VAT return.
+> - The authorization for your Finance environment in your integration point in ID-porten is *user-specific*. Because of this authorization, Finance stores information about which user gets the authorization code in ID-porten. Only this user can submit the VAT return from Finance. If another user needs to submit a VAT return, they must go through the authorization process before submitting the VAT return.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

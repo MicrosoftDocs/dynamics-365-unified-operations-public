@@ -4,7 +4,7 @@ description: This article explains how to get started with electronic invoicing 
 author: achansoriya
 ms.author: achansoriya
 ms.topic: how-to
-ms.date: 05/15/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Egypt
 ms.search.validFrom: 09/19/2024
@@ -47,8 +47,8 @@ Complete the common part of Azure resources configuration as described in [Confi
 - Configure an Azure file share as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
 - Create the following Azure file share directories:
 
-    - The directory that generated electronic invoices for digital signing should be written to.
-    - The directory that digitally signed electronic invoices should be read from.
+  - The directory that generated electronic invoices for digital signing should be written to.
+  - The directory that digitally signed electronic invoices should be read from.
 
     > [!NOTE]
     > We don't recommend that you create a hierarchical structure of subfolders. Instead, create the required folders at the same level, and distinguish them through their names. For example, name the folders **SalesInvoices\_BeforeSigning** and **SalesInvoices\_Signed**.
