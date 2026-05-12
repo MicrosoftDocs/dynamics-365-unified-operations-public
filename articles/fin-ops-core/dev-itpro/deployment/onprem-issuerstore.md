@@ -1,6 +1,6 @@
 ---
-title: Migrate to issuer store certificate validation for Service Fabric
-description: Learn how to migrate your on-premises Service Fabric cluster from the legacy issuer validation model to the issuer store model for certificate validation.
+title: Migrate to issuer store validation and dedicated cluster certificate for Service Fabric
+description: Learn how to migrate your on-premises Service Fabric cluster to the issuer store validation model and a dedicated cluster certificate.
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
@@ -12,13 +12,13 @@ ms.search.region: Global
 ms.service: dynamics-365-op
 ---
 
-# Migrate to issuer store certificate validation for Service Fabric
+# Migrate to issuer store validation and dedicated cluster certificate for Service Fabric
 
-This article explains how to migrate an existing Finance + Operations (on-premises) Service Fabric cluster from the legacy certificate issuer validation model to the issuer store model. The issuer store model provides more reliable certificate validation and simplifies certificate management, especially during certificate rotations.
+This article explains how to migrate an existing Finance + Operations (on-premises) Service Fabric cluster from the pinned certificate issuer validation model to the issuer store model, and how to adopt the new dedicated **ServiceFabricCluster** certificate. Together, these changes provide more reliable certificate validation, simplify certificate rotations (no more hardcoded or pinned issuer), and prepare your cluster for the upcoming public CA restriction on dual EKU certificates.
 
 ## Overview
 
-Service Fabric supports two models for restricting which certificate issuers are trusted:
+Service Fabric supports multiple models for restricting which certificate issuers are trusted:
 
 - **Legacy model (CertificateInformation issuer stores)**: The trusted issuer is specified in the `CertificateInformation` section of the cluster configuration using the `ClusterCertificateIssuerStores`, `ServerCertificateIssuerStores`, and `ClientCertificateIssuerStores` properties. Each entry references the issuer's common name (the CA that issued the certificate) and the X509 store where the issuer certificate is located (typically `Root`).
 
@@ -26,9 +26,17 @@ Service Fabric supports two models for restricting which certificate issuers are
 
 The issuer store model is the recommended approach because:
 
-- It decouples certificate validation from the issuer's common name, which can change when CAs are renewed.
+- It decouples certificate validation from the direct issuer's common name, which can change when CAs are renewed.
 - It makes certificate rotations easier, because you only need to ensure the new issuer CA certificate is in the issuer store.
 - It provides a clear, auditable location for trusted issuer certificates on each node.
+
+### Dedicated cluster certificate
+
+As part of this migration, the cluster also moves to using a dedicated **ServiceFabricCluster** certificate for node-to-node communication, separate from the **ServiceFabric** certificate that is used for server authentication. Previously, both purposes shared the same certificate.
+
+This separation is required because the cluster certificate needs both Server Authentication and Client Authentication enhanced key usages (EKUs). Starting in the summer of 2026, public certificate authorities will stop issuing certificates with this dual EKU combination, as outlined in the [CA/Browser Forum guidelines](https://github.com/microsoft/service-fabric/blob/master/release_notes/Resources/ClientEKURemoval.md). The dedicated **ServiceFabricCluster** certificate must be issued by your own PKI (such as AD&nbsp;CS) or be self-signed.
+
+The **ServiceFabric** certificate now uses only Server Authentication, and the **ServiceFabricClient** certificate uses only Client Authentication. These certificates can continue to be obtained from public certificate authorities.
 
 ## Prerequisites
 
@@ -36,6 +44,7 @@ Before you begin the migration, ensure the following:
 
 - Your infrastructure scripts are updated to version 3.0 or later.
 - Your `ConfigTemplate.xml` has been upgraded to schema version 1.13 or later (run `Update-ConfigTemplate.ps1` if needed).
+- The new **ServiceFabricCluster** certificate has been generated (via AD&nbsp;CS or self-signed) and its details filled in the `ConfigTemplate.xml`. This certificate must have both Server Authentication and Client Authentication EKUs.
 - The `IssuerStore` section in your `ConfigTemplate.xml` is configured with the name of the issuer trust store and the issuer CA certificate information.
 
 ```xml
