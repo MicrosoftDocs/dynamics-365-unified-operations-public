@@ -5,7 +5,7 @@ author: anupams
 ms.author: anupams
 ms.reviewer: johnmichalak
 ms.topic: how-to
-ms.date: 05/07/2026
+ms.date: 05/12/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.collection:
@@ -37,7 +37,7 @@ To connect to your finance and operations environment, follow these steps:
 
 1. Open [Copilot Cowork](https://m365.cloud.microsoft).
 1. Ensure the **Dynamics 365 ERP Apps** plugin is enabled. Learn more about managing plugins in [Use plugins with Copilot Cowork](/microsoft-365/copilot/cowork/cowork-plugins).
-1. If a connection isn't established, when you start a conversation that involves ERP data, Copilot Cowork prompts you to connect to your finance and operations environment. Follow the sign-in or consent flow to authorize access.
+1. If you don't establish a connection, when you start a conversation that involves ERP data, Copilot Cowork prompts you to connect to your finance and operations environment. Follow the sign-in or consent flow to authorize access.
 
 After you connect, Copilot Cowork communicates with the MCP server on your finance and operations environment and makes the available tools accessible.
 
