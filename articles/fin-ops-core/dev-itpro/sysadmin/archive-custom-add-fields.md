@@ -1,10 +1,10 @@
 ---
 title: Add custom fields to archive 
 description: Learn how to extend existing Microsoft archive scenarios by adding custom fields to tables, history tables, and entities.
-author: kehoej99 
+author: git-kiran 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 03/26/2026
+ms.date: 05/12/2026
 ms.custom:
   - bap-template
 ms.reviewer: twheeloc
