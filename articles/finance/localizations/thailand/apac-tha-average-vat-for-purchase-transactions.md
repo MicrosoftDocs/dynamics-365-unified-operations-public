@@ -77,9 +77,58 @@ between the VAT businesses and the non-VAT businesses is 50 percent to 50 percen
 
 The VAT is calculated and posted to different accounts, as shown in the following table.
 
-| VAT calculated and posted when the invoice is posted | VAT calculated and adjusted when the invoice is settled with updated VAT ratio |
-|---|---|
-| The invoice amount is THB 100.00.<br><br>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.<br><br>- **VAT calculated for the VAT businesses:** 45 percent of the 7-percent VAT = THB 3.15<br>- **VAT calculated for the non-VAT businesses:** 55 percent of the 7-percent VAT = THB 3.85<br><br>The following table shows the amounts that are posted to different accounts.<br><br>| Account | Debit (THB) | Credit (THB) |<br>|---|---|---|<br>| Inventory | 103.85 | |<br>| Purchase VAT | 3.15 | |<br>| Accounts payable | | 107.00 | | A payment of THB 100.00 is made to settle the invoice.<br><br>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.<br><br>- **VAT calculated for the VAT businesses:** 50 percent of the 7-percent VAT = THB 3.50<br>- **VAT calculated for the non-VAT businesses:** 50 percent of the 7-percent VAT = THB 3.50<br><br>The following table shows the amounts that are adjusted in different accounts.<br><br>| Account | Debit (THB) | Credit (THB) |<br>|---|---|---|<br>| Inventory | | 0.35 |<br>| Purchase VAT | | 3.15 |<br>| Purchase VAT | 3.50 | |<br>| Accounts payable | 107.00 | |<br>| Bank | | 107.00 | |
+<table>
+<thead>
+<tr>
+<th>VAT calculated and posted when the invoice is posted</th>
+<th>VAT calculated and adjusted when the invoice is settled with updated VAT ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The invoice amount is THB 100.00.</p>
+<p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
+<ul>
+<li><strong>VAT calculated for the VAT businesses:</strong> 45 percent of the 7-percent VAT = THB 3.15</li>
+<li><strong>VAT calculated for the non-VAT businesses:</strong> 55 percent of the 7-percent VAT = THB 3.85</li>
+</ul>
+<p>The following table shows the amounts that are posted to different accounts.</p>
+<table>
+<thead>
+<tr><th>Account</th><th>Debit (THB)</th><th>Credit (THB)</th></tr>
+</thead>
+<tbody>
+<tr><td>Inventory</td><td>103.85</td><td></td></tr>
+<tr><td>Purchase VAT</td><td>3.15</td><td></td></tr>
+<tr><td>Accounts payable</td><td></td><td>107.00</td></tr>
+</tbody>
+</table>
+</td>
+<td>
+<p>A payment of THB 100.00 is made to settle the invoice.</p>
+<p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
+<ul>
+<li><strong>VAT calculated for the VAT businesses:</strong> 50 percent of the 7-percent VAT = THB 3.50</li>
+<li><strong>VAT calculated for the non-VAT businesses:</strong> 50 percent of the 7-percent VAT = THB 3.50</li>
+</ul>
+<p>The following table shows the amounts that are adjusted in different accounts.</p>
+<table>
+<thead>
+<tr><th>Account</th><th>Debit (THB)</th><th>Credit (THB)</th></tr>
+</thead>
+<tbody>
+<tr><td>Inventory</td><td></td><td>0.35</td></tr>
+<tr><td>Purchase VAT</td><td></td><td>3.15</td></tr>
+<tr><td>Purchase VAT</td><td>3.50</td><td></td></tr>
+<tr><td>Accounts payable</td><td>107.00</td><td></td></tr>
+<tr><td>Bank</td><td></td><td>107.00</td></tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Generate the Average VAT report
 
