@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/08/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -22,75 +22,20 @@ Correspondence of accounts is an approach to continuous and interrelated registr
 
 You can enter multidimensional transactions in the ledger journals and other modules. In most cases, transactions that are automatically created from other modules are multidimensional. These transactions should be changed to two-dimensional. This change might involve splitting ledger transactions. In this case, the following correspondence cases are specified.
 
-<table>
-<thead>
-<tr>
-<th>Type of correspondence</th>
-<th>Before correspondence</th>
-<th>After correspondence</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>One-to-one</td>
-<td>
-<p>Account A 200 (debit transaction)</p>
-<p>Account B 200 (credit transaction)</p>
-</td>
-<td>
-<p>Account A – Account B 200</p>
-<p>(Two transactions)</p>
-</td>
-</tr>
-<tr>
-<td>One-to-many</td>
-<td>
-<p>Account A 200 (debit transaction)</p>
-<p>Account B 160 (credit transaction)</p>
-<p>Account C 40 (credit transaction)</p>
-</td>
-<td>
-<p>Account A – Account B 160</p>
-<p>Account A – Account C 40</p>
-<p>(Four transactions)</p>
-</td>
-</tr>
-<tr>
-<td>Many-to-one</td>
-<td>
-<p>Account A 200 (debit transaction)</p>
-<p>Account B 160 (debit transaction)</p>
-<p>Account C 360 (credit transaction)</p>
-</td>
-<td>
-<p>Account A – Account C 200</p>
-<p>Account B – Account C 160</p>
-<p>(Four transactions)</p>
-</td>
-</tr>
-<tr>
-<td>Many-to-many</td>
-<td>
-<p>Account A 200 (debit transaction)</p>
-<p>Account B 160 (debit transaction)</p>
-<p>Account C 260 (credit transaction)</p>
-<p>Account D 100 (credit transaction)</p>
-</td>
-<td>
-<p>Individual processing</p>
-<p>(Multiple transactions)</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Type of correspondence | Before correspondence | After correspondence |
+|---|---|---|
+| One-to-one | Account A 200 (debit transaction)<br>Account B 200 (credit transaction) | Account A – Account B 200<br>(Two transactions) |
+| One-to-many | Account A 200 (debit transaction)<br>Account B 160 (credit transaction)<br>Account C 40 (credit transaction) | Account A – Account B 160<br>Account A – Account C 40<br>(Four transactions) |
+| Many-to-one | Account A 200 (debit transaction)<br>Account B 160 (debit transaction)<br>Account C 360 (credit transaction) | Account A – Account C 200<br>Account B – Account C 160<br>(Four transactions) |
+| Many-to-many | Account A 200 (debit transaction)<br>Account B 160 (debit transaction)<br>Account C 260 (credit transaction)<br>Account D 100 (credit transaction) | Individual processing<br>(Multiple transactions) |
 
 When the transactions correspondence mechanism is turned on, each new accounting transaction that is created consists of a set of two-way corresponding transactions. When the accounting transactions are posted, the corresponding relationship is automatically defined. If the mechanism isn't turned on, no correspondence relationships are created between transactions.
 
 If any non-corresponding accounts exist before the account correspondence mechanism is turned on, they aren't automatically linked. You must manually define relationships for the transactions.
 
-## Turn on the account correspondence mechanism for accounting transactions 
+## Turn on the account correspondence mechanism for accounting transactions
 
-The account correspondence mechanism lets you create correspondence relations between transactions. 
+The account correspondence mechanism lets you create correspondence relations between transactions.
 
 To turn on the account correspondence mechanism for accounting transactions, follow these steps:
 
@@ -122,10 +67,9 @@ To manually define correspondence relations for transactions, follow these steps
     - To automatically correspond all credit and debit transactions for the selected voucher, select the **\<\<-\>\>** button.
     Transactions that have been corresponded are moved to the **Details** grid.
 
-7. On the **Offset** FastTab, select **Save** to save the results or **Restore** to cancel the last change.
-8. On the Action Pane, select **Refresh data** to update the data on the **Manual correspondence** page.
+1. On the **Offset** FastTab, select **Save** to save the results or **Restore** to cancel the last change.
+1. On the Action Pane, select **Refresh data** to update the data on the **Manual correspondence** page.
 
 To remove the correspondence relations for a voucher, select the voucher in the left pane, and then, on the Action Pane, select **Remove ledger bond**. Then select **Refresh data** to update the data on the page.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
