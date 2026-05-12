@@ -2,7 +2,7 @@
 title: Fiscal printer integration sample for Italy
 description: This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 02/26/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -61,7 +61,7 @@ The fiscal printer integration sample for Italy covers the following scenarios:
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
 
-    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready or isn't responding, the printer is out of paper, or there's a paper jam.
+    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready or, isn't responding, the printer is out of paper, or there's a paper jam.
     - Defer fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
     - Check the availability of the fiscal printer before a new sales transaction is opened or a sales transaction is finalized.
@@ -72,9 +72,9 @@ The fiscal printer integration sample implements the following rules that are re
 
 - Exclude sales lines that are related to the *Issue gift card* and *Add to gift card* operations from the fiscal receipt.
 - Don't print a fiscal receipt if it consists of only gift card lines.
-- Deduct the total amount of gift cards that are issued or recharged in a transaction from payment lines of the fiscal receipt.
+- Deduct the total number of gift cards that are issued or recharged in a transaction from payment lines of the fiscal receipt.
 - Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
-- Payment by gift card is considered a regular payment.
+- Payment by gift card is considered as a regular payment.
 
 ### Customer deposits and customer order deposits
 
@@ -172,7 +172,7 @@ The following default data mapping is included in the fiscal document provider c
     You must modify the sample mapping according to the payment methods that are configured in your application.
 
 - **Barcode type for receipt number** – The type of bar code that's used to show a receipt number on a fiscal receipt. The default mapping is **CODE128**.
-- **Print fiscal data in receipt header** – If this parameter is turned on, store information will be printed on the fiscal receipt. This information includes the store's name, address, and tax identification number, and the cashier's name.
+- **Print fiscal data in receipt header** – If this parameter is turned on, store information is printed on the fiscal receipt. This information includes the store's name, address, and tax identification number, and the cashier's name.
 - **Fiscal printer department mapping** – The mapping of departments of the fiscal printer to value-added tax (VAT) rates, VAT exempt natures, and product types. The following example shows the default mapping.
 
     ```JSON
@@ -201,7 +201,7 @@ The following default data mapping is included in the fiscal document provider c
 
 - **VAT exempt nature for gift card** – The VAT exempt nature that should be applied when a gift card is issued or refilled. The value should correspond to some entry in the fiscal printer department mapping. The default mapping is **NS**.
 - **Enable free of charge items** – If this parameter is turned on, the special *omaggio* discount adjustment type for items that have a 100-percent discount is enabled.
-- **Info code for return origin** – The info code that is used to capture the origin of a return transaction if no original sales receipt is provided. This parameter is used together with the **Info code for original sales date** and **Return origin mapping** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists. 
+- **Info code for return origin** – The info code that is used to capture the origin of a return transaction if no original sales receipt is provided. This parameter is used together with the **Info code for original sales date** and **Return origin mapping** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists.
 
     This info code should be configured to enable the user to select or enter one of the possible origins of returns in your stores. For example, it can be configured as a list of subcodes (such as **Return from site** or **Return from kiosk**). The **Return origin mapping** parameter is then used to translate the value of the info code into a command for the fiscal printer.
 
@@ -246,7 +246,7 @@ The following settings are included in the fiscal connector configuration that's
 ### Configure channel components
 
 > [!NOTE]
-> Commerce samples that you deploy in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
+> Commerce samples deployed in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
 
 #### Set up the development environment
 
