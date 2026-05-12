@@ -1,7 +1,7 @@
 ---
 title: Add custom tables to archive scenarios
 description: Learn how to add related custom tables to existing Microsoft archive scenarios.
-author: kehoej99 
+author: git-kiran 
 ms.author: Weijiesa 
 ms.topic: how-to
 ms.date: 03/26/2026
