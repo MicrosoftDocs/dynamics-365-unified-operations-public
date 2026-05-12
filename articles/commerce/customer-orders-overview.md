@@ -2,7 +2,7 @@
 title: Customer orders in point of sale (POS)
 description: Learn how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 01/22/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.search.form: RetailFunctionalityProfile 
 ms.reviewer: v-griffinc
@@ -19,7 +19,7 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS). Use customer orders to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
+This article describes how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS). Use customer orders to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them.
 
 In an omnichannel commerce world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
 
@@ -74,6 +74,7 @@ Before you try to create customer orders in POS, configure the appropriate param
 ### Update transaction screen layouts in POS
 
 Make sure that you configure the POS [screen layout](./pos-screen-layouts.md) to support the creation and management of customer orders. Also, configure all required POS operations. Here are some of the POS operations that are recommended to correctly support customer order creation and management:
+
 - **Ship all products** – Use this operation to specify that all lines in the transaction cart are shipped to a destination.
 - **Ship selected products** – Use this operation to specify that selected lines in the transaction cart are shipped to a destination.
 - **Pick up all products** – Use this operation to specify that all lines in the transaction cart are picked up from a selected store location.
@@ -116,36 +117,36 @@ To create a customer order for products that the customer picks up, follow these
 1. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
 1. If the full order total wasn't paid, select whether the customer provides payment later (at pickup), or whether a credit card is tokenized now and used and captured at the time of pickup.
 
-### Leverage Credit management functionality for Commerce orders
+### Use credit management for Commerce orders
 
-Starting in Dynamics 365 Commerce version 10.0.48, customer orders can be configured to honor the full credit management flow. When enabled, orders are evaluated against credit management blocking rules and can be placed on credit hold for your finance team's visibility and control before fulfillment proceeds.
+Starting in Dynamics 365 Commerce version 10.0.48, you can configure customer orders to follow the full credit management flow. When you enable this feature, the system evaluates orders against credit management blocking rules and can put orders on credit hold for your finance team's visibility and control before fulfillment proceeds.
 
-To enable this behavior, both of the following must be active:
+To enable this behavior, configure the following settings:
 
-- The **Leverage credit management setup for Commerce orders** feature must be enabled in the **Feature management** workspace.
-- The **Credit management** option must be enabled at **Accounts receivable parameters > Credit management**.
+- Enable the **Leverage credit management setup for Commerce orders** feature in the **Feature management** workspace.
+- Enable the **Credit management** option in **Accounts receivable parameters** > **Credit management**.
 
 > [!NOTE]
-> If either of these is not enabled, Commerce orders fall back to the default behavior: the system directly blocks the order or transaction when a customer's credit limit is exceeded, instead of routing it through the credit hold flow.
+> If you don't enable either of these settings, Commerce orders use the default behavior where the system directly blocks the order or transaction when a customer's credit limit is exceeded, instead of routing it through the credit hold flow.
 
 #### Simple customer orders (pickup or shipment)
 
-You can now control whether the credit limit is checked at the time of order capture. To allow the cashiers (on POS) or B2B buyers (on e-commerce site) to place the orders even though the credit limit has been exceeded, enable a new configuration named **Skip credit check during order capture** setting in the **Functionality profile** for POS or Online store. Once the order is placed, the customer orders with in-store pickup or a shipment mode of delivery go through the credit management flow. Depending on the blocking rules configured, orders may be placed on credit hold for review.
+You can control whether the system checks the credit limit at the time of order capture. To let cashiers (on POS) or B2B buyers (on e-commerce site) place orders even after the credit limit is exceeded, enable a new setting named **Skip credit check during order capture** in the **Functionality profile** for POS or online stores. After the order is placed, the customer orders with in-store pickup or a shipment mode of delivery go through the credit management flow. Depending on the configured blocking rules, orders might be placed on credit hold for review.
 
 > [!NOTE]
-> For the **Credit limit used** blocking rule to take effect, you must also enable **Check credit limit on sales order** in **Credit and collections parameters**. This applies to all credit management checkpoints, including order confirmation, picking list generation, and invoicing. Other blocking rules do not require this setting.
+> For the **Credit limit used** blocking rule to take effect, you must also enable **Check credit limit on sales order** in **Credit and collections parameters**. This setting applies to all credit management checkpoints, including order confirmation, picking list generation, and invoicing. Other blocking rules don't require this setting.
 
 #### Hybrid customer orders
 
-For hybrid orders that include a carry-out line (where the customer takes some items immediately), the order does not go through the credit management flow. Carry-out lines are invoiced at the time of the transaction, so the system is unable to apply a credit hold to the order header. The existing behavior is preserved for these orders.
+For hybrid orders that include a carryout line (where the customer takes some items immediately), the order doesn't go through the credit management flow. Carryout lines are invoiced at the time of transaction, so the system can't apply a credit hold to the order header. The existing behavior is preserved for these orders.
 
 #### Order fulfillment actions in-store
 
-When store associates perform fulfillment actions on an order (such as picking or packing), those actions do not trigger the credit management flow. If the customer's credit limit is exceeded and **Message when exceeding credit limit** is set to **Error**, the system blocks the fulfillment action. Fulfillment actions performed in-store do not change the credit management setting at the order header level. This ensures that order lines fulfilled from a warehouse continue to go through the credit management flow as expected.
+When store associates perform fulfillment actions on an order (such as picking or packing), those actions don't trigger the credit management flow. If the customer's credit limit is exceeded and **Message when exceeding credit limit** is set to **Error**, the system blocks the fulfillment action. Fulfillment actions performed in-store don't change the credit management setting at the order header level. This behavior ensures that order lines fulfilled from a warehouse continue to go through the credit management flow as expected.
 
 #### Cash and carry transactions
 
-For cash and carry transactions, the system blocks the transaction if the customer's credit limit is exceeded and the **Message when exceeding credit limit** setting in **Credit and collections parameters** is set to **Error**. This behavior is unchanged regardless of whether credit management is enabled.
+For cash and carry transactions, the system blocks the transaction if the customer's credit limit is exceeded and the **Message when exceeding credit limit** setting in **Credit and collections parameters** is set to **Error**. This behavior remains unchanged regardless of whether credit management is enabled.
 
 ### Edit an existing customer order
 
@@ -157,7 +158,7 @@ You can recall and edit retail orders created in either the online or store chan
 > [!NOTE]
 > Microsoft recommends that you don't edit orders and quotations in POS created by a non-call center user in headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine reprices them.
 
-Uers can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature isn't enabled, or if you're using version 10.0.16 or earlier, users can only edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. You can configure the option to disable this capability for specific stores through the **Functionality profile** under the **General** FastTab.
+Users can edit eligible orders through the POS application even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature isn't enabled, or if you're using version 10.0.16 or earlier, users can only edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. You can also configure the option to disable this capability for specific stores through the **Functionality profile** under the **General** tab.
 
 1. Select **Recall order**.
 1. Use **Search** to enter filters to find the order, and then select **Apply**.
@@ -208,11 +209,11 @@ You can create customer orders in POS in either synchronous mode or asynchronous
 > [!IMPORTANT]
 > Use the asynchronous order creation mode. It's much more performant than synchronous order creation mode and provides a better user experience.
 
-### Enable customer orders to be created in asynchronous mode
+### Enable creating customer orders in asynchronous mode
 
 To enable creating customer orders in asynchronous mode, follow these steps:
 
-1. In headquarters, go to **Retail and Commerce \> Channel setup \> POS profiles \> Functionality profiles**. 
+1. In headquarters, go to **Retail and Commerce** > **Channel setup** > **POS profiles** > **Functionality profiles**.
 1. Select the functionality profile that corresponds to the store that you want to enable asynchronous order creation for.
 1. On the **General** FastTab, select from the following configuration options:
 
@@ -222,35 +223,35 @@ To enable creating customer orders in asynchronous mode, follow these steps:
 > [!NOTE]
 > The **Use realtime service for order creation with async backup** option is available in Commerce version 10.0.33 and later.
 
-The **Create customer order in async mode** option always creates the order in a batch process. POS immediately completes the transaction by using the confirmation number for the order, but it takes a few minutes for the order to be created in headquarters (after the relevant jobs run). The jobs that are required to create the order are the **P-0001 (Channel transactions)** job and the **Synchronize orders** job. You can use the confirmation number to recall the order for fulfillment and editing scenarios. 
+The **Create customer order in async mode** option always creates the order in a batch process. POS immediately completes the transaction by using the confirmation number for the order, but it takes a few minutes for the order to be created in headquarters (after the relevant jobs run). The jobs that are required to create the order are the **P-0001 (Channel transactions)** job and the **Synchronize orders** job. You can use the confirmation number to recall the order for fulfillment and editing scenarios.
 
-The **Use realtime service for order creation with async backup** option can only be enabled if the **Create customer order in async mode** option is already enabled. The **Use realtime service for order creation with async backup** option first tries to create the order by using the Retail Transaction Service (RTS). If that attempt fails, the order is created by using the same batch process described earlier. Most of the time, the order is created as quickly as it would be via synchronous order creation. However, with this configuration, POS uses the confirmation number to immediately complete the order transaction and doesn't wait for the RTS call to be completed. 
+The **Use realtime service for order creation with async backup** option can only be enabled if the **Create customer order in async mode** option is already enabled. The **Use realtime service for order creation with async backup** option first tries to create the order by using the Retail Transaction Service (RTS). If that attempt fails, the order is created by using the same batch process described earlier. Most of the time, the order is created as quickly as it would be via synchronous order creation. However, with this configuration, POS uses the confirmation number to immediately complete the order transaction and doesn't wait for the RTS call to be completed.
 
-Starting with the Commerce version 10.0.35 release, you can cancel asynchronous customer orders even if the corresponding sales order isn't created in headquarters. To enable this capability, turn on the **Enable asynchronous order cancellation** feature in the **Feature management** workspace. 
+Starting with the Commerce version 10.0.35 release, you can cancel asynchronous customer orders even if the corresponding sales order isn't created in headquarters. To enable this capability, turn on the **Enable asynchronous order cancellation** feature in the **Feature management** workspace.
 
 > [!NOTE]
-> The **Enable asynchronous order cancellation** feature is currently marked as a preview feature because it isn't yet validated against localization features. 
+> The **Enable asynchronous order cancellation** feature is currently marked as a preview feature because it isn't yet validated against localization features.
 
-The experience of canceling an asynchronous order is similar to that of canceling an existing customer order. The only difference is that when canceling an asynchronous order, the system can prompt the store associate with the customer's primary contact details to validate them with the customer. If a store associate needs to modify customer details, the associate can open the customer record from the transaction screen and modify the customer data from there. This functionality is helpful because after canceling the order asynchronously (even though the cancellation action is successful on POS and the customer deposit is refunded), the original order is canceled only after it is created in headquarters. If there's an issue canceling the order, the customer can then be reached by using the validated information. Starting with the Commerce 10.0.36 release, to configure the prompt for customer information, enable **Prompt for phone number and email for asynchronous order cancellation** on the POS functionality profile form.
+The experience of canceling an asynchronous order is similar to that of canceling an existing customer order. The only difference is that when canceling an asynchronous order, the system can prompt the store associate with the customer's primary contact details to validate them with the customer. If a store associate needs to modify customer details, the associate can open the customer record from the transaction screen and modify the customer data from there. This functionality is helpful because after canceling the order asynchronously (even though the cancellation action is successful on POS and the customer deposit is refunded), the original order is canceled only after it's created in headquarters. If there's an issue canceling the order, the customer can then be reached by using the validated information. Starting with the Commerce 10.0.36 release, to configure the prompt for customer information, enable **Prompt for phone number and email for asynchronous order cancellation** on the POS functionality profile form.
 
 To ensure that the system automatically cancels the original order after it's created in headquarters, run the following batch jobs at predefined intervals.
 
 To create and schedule the batch jobs that ensure that the **Enable asynchronous order cancellation** feature works correctly, follow these steps:
 
-1. Go to **System administration \> Inquiries \> Batch jobs**.
+1. Go to **System administration** > **Inquiries** > **Batch jobs**.
 1. On the **Batch job** page, create the following two batch jobs:
     1. Configure a job to run the **RetailDocumentOperationMonitorBatch** class.
     1. Configure a job to run the **RetailDocumentOperationProcessingBatch** class.
 1. Schedule the new batch jobs to run on a recurring basis. For example, set the schedule so that the jobs run every five minutes.
 
-If you experience any issues when canceling an order, you can view the issues in the **Incomplete async order cancellations \> Sales order processing and inquiry** workspace. Two types of issues can prevent an original sales order from getting canceled: *permanent* issues, or *transient* issues (also known as retryable issues). Permanent issue scenarios include cases where an order is fulfilled and so can't be canceled, or where an order is partially fulfilled (and partially canceled), but the customer is refunded the full deposit. Transient issues include cases where an original order isn't yet created, so the corresponding cancellation transaction isn't yet processed. The system automatically retries to process lines associated with transient errors, but you must manually handle lines associated with permanent errors. Once you fix an order manually, you can set the troubleshooting status of a transaction to indicate that no further troubleshooting is needed.
+If you experience any issues when canceling an order, you can view the issues in the **Incomplete async order cancellations** > **Sales order processing and inquiry** workspace. Two types of issues can prevent an original sales order from getting canceled: *permanent* issues, or *transient* issues (also known as retryable issues). Permanent issue scenarios include cases where an order is fulfilled and so can't be canceled, or where an order is partially fulfilled (and partially canceled), but the customer is refunded the full deposit. Transient issues include cases where an original order isn't yet created, so the corresponding cancellation transaction isn't yet processed. The system automatically retries to process lines associated with transient errors, but you must manually handle lines associated with permanent errors. Once you fix an order manually, you can set the troubleshooting status of a transaction to indicate that no further troubleshooting is needed.
 
-For scenarios where organizations can't enable asynchronous customer orders and must use synchronous customer orders, if order creation takes too long so that the POS times out, or if the order gets into a bad state, you can use the **Force complete transaction** operation (released in version 10.0.35) to complete the order asynchronously. Since the organization doesn't want the asynchronous customer order, use the asynchronous order cancellation process described earlier to cancel the order, and then try creating a new order. To summarize, the **Force complete transaction** operation provides a way for you to get out from a state where order creation is failing but you can't void the transaction. 
+For scenarios where organizations can't enable asynchronous customer orders and must use synchronous customer orders, if order creation takes too long so that the POS times out, or if the order gets into a bad state, you can use the **Force complete transaction** operation (released in version 10.0.35) to complete the order asynchronously. Since the organization doesn't want the asynchronous customer order, use the asynchronous order cancellation process described earlier to cancel the order, and then try creating a new order. To summarize, the **Force complete transaction** operation provides a way for you to get out from a state where order creation is failing but you can't void the transaction.
 
 > [!NOTE]
-> The **Force complete transaction** operation can only be used if the **Enable asynchronous order cancellation** feature is enabled. 
+> The **Force complete transaction** operation can only be used if the **Enable asynchronous order cancellation** feature is enabled.
 
-## Additional resources
+## More resources
 
 [Hybrid customer orders](hybrid-customer-orders.md)
 
