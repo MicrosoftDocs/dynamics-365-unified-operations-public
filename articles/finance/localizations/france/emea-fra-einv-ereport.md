@@ -4,7 +4,7 @@ description: Learn how to work with Electronic invoicing for France in Microsoft
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 04/24/2026
+ms.date: 05/11/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -15,8 +15,7 @@ ms.dyn365.ops.version: AX 10.0.48
 
 # Electronic invoicing for France
 
-This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified service provider acting as an Approved Platform (*Platform Agréée* - **PA**).
-
+This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance through a certified service provider acting as an Approved Platform (*Platform Agréée* - **PA**).
 
 > [!NOTE]
 > This electronic invoicing approach uses an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
@@ -33,7 +32,7 @@ Before you start, make sure these prerequisites are in place:
 - The company has a signed agreement with the selected Approved Platform and obtained the credentials required for establishing a secure connection to the Approved Platform's infrastructure.
   > [!NOTE]
   > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Approved Platform (PA). For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
-  
+  >
   > Watch the overview of the Edicom credentials configuration in Finance. More details are provided in the [next](#EdCred) chapters.
   > [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
 
@@ -99,7 +98,7 @@ After you complete all the configuration steps described in the previous chapter
 > If some of the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!IMPORTANT]
-> Make sure that the **Vendor invoice Mapping to destination** and **Response message model mapping to destination (FR)** Electronic Reporting configurations are marked as **Default for model mapping**.
+> Make sure that the **Vendor invoice Mapping to destination** and **Response message model mapping to destination (FR domestic)** Electronic Reporting configurations are marked as **Default for model mapping**.
 
 ## Configure the electronic invoicing features
 
@@ -392,9 +391,12 @@ If you don't define the electronic addresses, the system uses the following Endp
 
 According to French requirements, each individual electronic invoice must contain three mandatory **Note** elements in the header with the **following** predefined prefixes:
 
-- **#PMD#** *the text of the first note*
-- **#PMT#** *the text of the second note*
-- **#AAB#** *the text of the third note*
+- **#PMD#** *the text of the first note related to payment/settlement information*
+- **#PMT#** *the text of the second note related to payment instructions*
+- **#AAB#** *the text of the third note related to payment terms*
+
+> [!NOTE]
+> Optionally, you can add one more note with the predefined **#ADN#** prefix that is the indication for EDICOM to treat a submitted invoice that contains this note as representing **B2G** communication.
 
 ### Configure mandatory notes for Sales and Free text invoices
 
@@ -450,8 +452,8 @@ Set up units of measure.
 
 1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit ID, and then select **External codes**.
-1. On **External codes** page, in **Overview**, enter the unit ID in the **Code** column.
-1. In the **Standard code** column, select the checkbox.
+1. On the **External codes** page, in **Overview**, enter the unit ID in the **Code** column.
+1. Select the checkbox in the **Standard code** column.
 1. In the **Value** section, enter the external code from the [UNECE Recommendation 20 code list](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) in the **Value** field.
 
    > [!NOTE]
@@ -474,10 +476,7 @@ Set up units of measure.
 > [!IMPORTANT]
 > **Electronic invoicing scope**
 >
->The following types of documents are *excluded* from **E-Invoicing** individual submissions and are *included* in the scope of **E-Reporting**.
->
->- **Non-domestic Business-to-Business (B2B) invoices** - the invoices issued to buyers whose **Delivery** address is outside France.
->- **All Business-to-Consumer (B2C) invoices** - the invoices issued for the customers that don't have the **SIREN** registration number defined.
+> Only invoices issued for customers with a nonempty **SIREN** registration number defined for the French country code (**FRA**) are *included* in the scope of **E-Invoicing** individual submissions. All other invoices are *excluded* from **E-Invoicing** and considered for **E-Reporting**.
 
 After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. The submission process consists of three major steps.
 
@@ -635,34 +634,30 @@ The list of mandatory status codes supported in electronic invoicing for Microso
 ### <a id="ERconfigs"></a>List of Electronic Reporting configurations
 
 - Invoice model
-  - Invoice model mapping
   - Invoice model mapping (FR)
   - UBL Sales e-invoice (FR)
   - UBL Sales e-credit note (FR)
   - UBL Project e-invoice (FR)
   - UBL Project e-credit note (FR)
-  - Vendor invoice import
   - Vendor invoice import Edicom (FR)
   - Vendor invoice Mapping to destination
   - Invoice status model mapping
-  - Edicom invoice status format
   - Edicom invoice status payment confirmation format
   - Edicom invoice status reject format
 - Customer invoice context model
+  - Customer invoice context model (FR)
   - Import invoice context model
-  - Import invoice context model (FR)
   - Import response context
   - AP response context
   - AR response context
 - Response message model
   - Response message model mapping to destination
-  - Response message model mapping to destination (FR)
+  - Response message model mapping to destination (FR domestic)
   - Edicom life cycle status format (FR)
   - Edicom Response status parsing format(FR)
-  - Edicom Response Invoice Status (FR)
+  - Edicom Response Processing
   - Edicom Response Processing (FR)
   - Edicom response error log import
-  - Edicom Response message status format
 
 ## More information
 
