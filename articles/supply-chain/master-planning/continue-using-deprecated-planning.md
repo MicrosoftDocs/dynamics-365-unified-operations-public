@@ -6,8 +6,7 @@ ms.author: henrikan
 ms.topic: how-to
 ms.date: 05/05/2026
 ms.custom: bap-template
-ms.collection:
-  - ai-assisted
+ai-usage: ai-assisted
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ---
@@ -16,10 +15,13 @@ ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 
 [!include [banner](../../includes/banner.md)]
 
+> [!NOTE]
+> This article applies to **existing deployments** where one or more companies (legal entities) already use the deprecated master planning engine. If you're setting up a new deployment or a new tenant, Planning Optimization is the required engine starting with Supply Chain Management version 10.0.41. For more information, see [Migration to Planning Optimization for master planning](new-master-planning-engine.md).
+
 Starting in Supply Chain Management version 10.0.41, the deprecated master planning engine is blocked for all new legal entities (companies) added to existing deployments. There's no manual way to enable the deprecated master planning engine for these companies. However, existing companies can continue to use the [deprecated master planning engine](deprecated-master-planning-overview.md) until they're ready to migrate.
 
 > [!IMPORTANT]
-> The deprecated master planning engine is only available to existing companies that are already using it.
+> The deprecated master planning engine is only available to existing companies that already use it. Existing companies that use the deprecated engine aren't affected when you upgrade to a new version of Supply Chain Management. However, any new companies added to the deployment must use Planning Optimization.
 
 ## Companies where planning processes are disabled
 
@@ -60,3 +62,13 @@ Follow these steps to set a company to continue to use the deprecated master pla
 
 > [!NOTE]
 > If the **Company information** tab appears blank and the **Exclude company from running Planning Optimization** toggle is greyed out, this behavior is expected. The tab and toggle are only relevant for companies that have been granted an exception to use the deprecated master planning engine. Starting from Supply Chain Management version 10.0.41, Planning Optimization is the standard engine for all new deployments and legal entities. Companies that aren't enabled for the deprecated engine don't need this configuration, so the tab remains empty by design. Learn more in [Migration to Planning Optimization for master planning](new-master-planning-engine.md).
+
+## Unsupported features and exceptions
+
+If your company requires features that aren't yet supported by Planning Optimization, you can continue to use the deprecated engine for the affected companies. Supply Chain Management includes an automated exception process that evaluates your system and shows appropriate instructions for each legal entity. Learn more about the exception process and the features supported by Planning Optimization in [Migration to Planning Optimization for master planning](new-master-planning-engine.md#exception-process-for-version-10032-and-later).
+
+## Next steps
+
+- [Migration to Planning Optimization for master planning](new-master-planning-engine.md)
+- [Planning Optimization fit analysis](planning-optimization/planning-optimization-fit-analysis.md)
+- [Deprecated master planning overview](deprecated-master-planning-overview.md)

@@ -6,7 +6,7 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/30/2024
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Egypt
 ms.search.validFrom: 2021-02-01
@@ -18,101 +18,101 @@ ms.dyn365.ops.version: 10.0.17
 [!include [banner](../../includes/banner.md)]
 
 
-According to Egyptian legal requirements, invoices that are issued for customers must be submitted to the Tax authority in an electronic format. Electronic invoice submission requires the following two-part system configuration:
+According to Egyptian legal requirements, you must submit invoices that you issue to customers to the Tax Authority in an electronic format. Electronic invoice submission requires the following two-part system configuration:
 
 1. **Electronic invoicing add-in** configuration. For more information, see [Electronic invoicing in Egypt](gs-e-invoicing-eg-get-started.md).
-2. **Microsoft Dynamics 365 Finance** configuration, which is covered in this article.
+1. **Microsoft Dynamics 365 Finance** configuration, which is covered in this article.
 
 ## Prerequisites
 
-- Electronic invoicing add-in configuration is completed, and all required parts for Egypt are ready to use.
-- The primary address of the legal entity must be in Egypt.
+- You completed the Electronic invoicing add-in configuration, and all required parts for Egypt are ready to use.
+- The primary address of the legal entity is in Egypt.
 
 ## Configure registration numbers
 
 > [!NOTE]
-> If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
+> If the **Enterprise ID (COID)** registration category already exists and is assigned to a registration type, skip this procedure.
 
-1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
-2. Create a registration type.
-3. In the **Country/region** field, select **EGY - Egypt**.
-4. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
-5. Create a registration category.
-6. In the **Registration types** field, select the registration type that you created in step 2.
-7. In the **Registration categories** field, select **Enterprise ID (COID)**.
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
+1. Create a registration type.
+1. In the **Country/region** field, select **EGY - Egypt**.
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
+1. Create a registration category.
+1. In the **Registration types** field, select the registration type that you created in step 2.
+1. In the **Registration categories** field, select **Enterprise ID (COID)**.
 
 ## Configure electronic document property types
 
-Follow these steps to configure the electronic document property type that is required to define the taxpayer activity code.
+Follow these steps to configure the electronic document property type that defines the taxpayer activity code.
 
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
-2. Create an electronic document property type.
-3. In the **Type** field, enter **taxpayerActivityCode**.
-4. On the Action Pane, select **Applicability**.
-5. In the **Table name** field, select **CompanyInfo**.
-6. Save and close the **Electronic document property type applicability setup** page.
-7. Save and close the **Electronic document property types** page.
+1. Go to **Accounts receivable** > **Setup** > **Electronic document property types**.
+1. Create an electronic document property type.
+1. In the **Type** field, enter **taxpayerActivityCode**.
+1. On the Action Pane, select **Applicability**.
+1. In the **Table name** field, select **CompanyInfo**.
+1. Save and close the **Electronic document property type applicability setup** page.
+1. Save and close the **Electronic document property types** page.
 
 ## Configure legal entity data
 
 ### Enter a legal entity address
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity.
-3. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+1. Select a legal entity.
+1. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
 
 ### Enter a legal entity branch
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity.
-3. On the **Statutory reporting** FastTab, in the **Branch/Subsidiary** field, enter a branch code for the selected legal entity.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+1. Select a legal entity.
+1. On the **Statutory reporting** FastTab, in the **Branch/Subsidiary** field, enter a branch code for the selected legal entity.
 
 ### Enter the legal entity registration number
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the Action Pane, select **Registration IDs**.
-3. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-4. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this article.
-6. In the **Registration number** field, enter a valid legal entity registration number. This number can be obtained from the Tax authority.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+1. Select a legal entity. On the Action Pane, select **Registration IDs**.
+1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
+1. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this article.
+1. In the **Registration number** field, enter a valid legal entity registration number. You can get this number from the tax authority.
 
 ### Enter an activity code for a legal entity
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the Action Pane, select **Electronic document properties**.
-3. Select the line where the **Type** field is set to **taxpayerActivityCode**.
-4. In the **Value** field, enter the taxpayer activity code.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+1. Select a legal entity. On the Action Pane, select **Electronic document properties**.
+1. Select the line where the **Type** field is set to **taxpayerActivityCode**.
+1. In the **Value** field, enter the taxpayer activity code.
 
 ## Configure customer data
 
 ### Enter a customer address
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-2. Select a customer.
-3. On the **Addresses** FastTab, add a valid address for the selected customer.
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
+1. Select a customer.
+1. On the **Addresses** FastTab, add a valid address for the selected customer.
 
 ### Enter the customer registration number
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-2. Select a customer, and then, on the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
-3. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-5. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this article.
-6. In the **Registration number** field, enter a valid customer registration number. This number can be obtained from the Tax authority.
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
+1. Select a customer. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
+1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
+1. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this article.
+1. In the **Registration number** field, enter a valid customer registration number. You can get this number from the Tax authority.
 
 ## Configure sales tax codes
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
-2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
-3. In the **Overview** section, create a line for the selected sales tax code.
-4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the official codification for [tax types](https://sdk.sit.invoicing.eta.gov.eg/codes/tax-types/).
-5. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
-6. Define exempt codes that will be used as tax subtypes in the event of non-taxable operations.
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
+1. Select a sales tax code. On the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
+1. In the **Overview** section, create a line for the selected sales tax code.
+1. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the official codification for [tax types](https://sdk.sit.invoicing.eta.gov.eg/codes/tax-types/).
+1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
+1. Define exempt codes that you use as tax subtypes for non-taxable operations.
 
 ## Configure unit codes
 
-1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
-2. Select a unit, and then, on the Action Pane, select **External codes**.
-3. In the **Overview** section, create a line for the selected unit.
-4. In the **Value** section, in the **Value** field, enter an external code to use for the selected unit, according to the official codification for [unit types](https://sdk.sit.invoicing.eta.gov.eg/codes/unit-types/).
+1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
+1. Select a unit. On the Action Pane, select **External codes**.
+1. In the **Overview** section, create a line for the selected unit.
+1. In the **Value** section, in the **Value** field, enter an external code to use for the selected unit, according to the official codification for [unit types](https://sdk.sit.invoicing.eta.gov.eg/codes/unit-types/).
 
 ## Configure products
 
@@ -120,28 +120,28 @@ According to Egyptian legal requirements, products on electronic invoices must u
 
 ### Enter GTIN codes
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
-2. Select a product, and then, on the Action Pane, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN codes**.
-3. Enter the GTIN code for the selected product.
+1. Go to **Product information management** > **Products** > **Released products**.
+1. Select a product. On the Action Pane, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN codes**.
+1. Enter the GTIN code for the selected product.
 
 ### Configure GPC codes
 
-1. Go to **Product information management** \> **Setup** \> **Categories and attributes** \> **Category hierarchies**.
-2. Create a category hierarchy that is named **GPC**.
-3. Create category nodes to implement the following four-level hierarchy: **Segment** \> **Family** \> **Class** \> **Brick**.
-4. At the **Brick** level, in the **Code** field, enter the code that will be applicable to selected products.
-5. On the **Products** FastTab, select **Add** to add all the products that the brick code will be applicable to.
+1. Go to **Product information management** > **Setup** > **Categories and attributes** > **Category hierarchies**.
+1. Create a category hierarchy named **GPC**.
+1. Create category nodes to implement the following four-level hierarchy: **Segment** > **Family** > **Class** > **Brick**.
+1. At the **Brick** level, in the **Code** field, enter the code that applies to selected products.
+1. On the **Products** FastTab, select **Add** to add all the products that the brick code applies to.
 
-![GPC category hierarchy.](../media/emea-egy-gpc.jpg)
+:::image type="content" source="../media/emea-egy-gpc.jpg" alt-text="Screenshot of the GPC category hierarchy.":::
 
 > [!NOTE]
-> If neither GTIN codes nor GPC codes are defined for products, internal product numbers will be used on electronic invoices. If no products or services are involved in invoicing, for example, free text invoices, or various operations in project invoices, line descriptions will be used.
+> If you don't define GTIN codes or GPC codes for products, the system uses internal product numbers on electronic invoices. If invoicing doesn't involve products or services, such as free text invoices or various operations in project invoices, the system uses line descriptions.
 
 ## Issue electronic invoices
 
-After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** > **Periodic** > **Electronic documents** > **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
-You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+You can check the results of a submission by going to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log** and selecting the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 ## Related topics
 

@@ -4,7 +4,7 @@ description: Learn how to create and enter Registration IDs setup for France for
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 05/04/2026
+ms.date: 05/07/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Application User
@@ -94,7 +94,7 @@ In this case:
 - Assign the **Head company** purpose to these addresses.
 - Add the **Head company** purpose to the VAT ID registration category for the relevant countries in the Legal entity settings.
 - Create [Establishments](../../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments) for each country where your company is registered for VAT.
-- Configure a primary address in the corresponding country or region for each estbishment. This address doesn't require a VAT ID–type registration ID.
+- Configure a primary address in the corresponding country or region for each establishment. This address doesn't require a VAT ID–type registration ID.
 
 For example, if your French legal entity has VAT ID registration in Germany:
 
@@ -104,7 +104,7 @@ With this setup, when you select an establishment in Germany on the invoice, the
 
 ### Example 6
 
-When your legal entity has its primary address outside France (for example, in Germany) and also has one or many establishments in France, complete more setup to ensure correct identification in French invoices:
+When your legal entity has its primary address outside France (for example, in Germany) and also has one or many establishments in France, complete more setups to ensure correct identification in French invoices:
 
 - Assign the **Head company** purpose to the legal entity address in France that represents the head office.
 - For this address, configure the required registration IDs, including **SIREN**, **SIRET**, and **VAT ID**.
@@ -142,7 +142,7 @@ At the same time, configure the **VAT ID** registration settings for Germany bas
 
 Set up registration IDs of the **VAT ID**, **SIREN**, and **SIRET** types, and assign them to the legal entity’s address with the **Head company** purpose or to the **primary address**.
 
-:::image type="content" source="../media/emea-fra-vat-id-setup-le-reg-ids.png" alt-text="Screenshot of an example Registration IDs set up for French legal entity.":::
+:::image type="content" source="../media/emea-fra-vat-id-setup-le-reg-ids.png" alt-text="Screenshot of an example Registration ID set up for French legal entity.":::
 
 > [!NOTE]
 > Registration IDs are date-sensitive. Ensure that you specify the **Effective** date on the **General** tab of the **Registration IDs** FastTab.
@@ -191,3 +191,59 @@ When you use [Invoice party applicability rules](../../../fin-ops-core/dev-itpro
 - The system resolves the applicable registration IDs for each invoice.
 - The invoice posting process controls that required registration IDs are defined for each invoice.
 - The system immutably stores all applicable registration IDs on the invoice for audit and reporting purposes after posting.
+
+### Example
+
+This example uses the demo data company FRSI with France as the country/region of legal entity primary address.
+
+In FRSI legal entity with primary address in France, set up the **Invoice party applicability** for the FRA SIREN **Registration type** for the Legal entity, Customer, and Vendor party roles:
+
+:::image type="content" source="../media/emea-fra-reg-id-example-siren.png" alt-text="Screenshot of an example SIREN Registration IDs setup for French establishment.":::
+
+Set up the **Invoice party applicability** for the FRA VAT ID **Registration type** for the Legal entity, Customer, and Vendor party roles:
+
+:::image type="content" source="../media/emea-fra-reg-id-example-vatid.png" alt-text="Screenshot of an example VAT ID Registration IDs setup for French establishment.":::
+
+Set up the **Invoice party applicability** for the FRA SIRET **Registration type** for the Legal entity, Establishment, Customer, and Vendor party roles:
+
+:::image type="content" source="../media/emea-fra-reg-id-example-siret.png" alt-text="Screenshot of an example SIRET Registration IDs setup for French establishment.":::
+
+In **Organization administration** > **Organizations** > **Legal entities**, select your legal entity with primary address in France (FRSI) set up the SIREN, VAT ID, and SIRET Registration IDs. Registration IDs are date-sensitive. Ensure that you specify the **Effective** date on the **General** tab of the **Registration IDs** FastTab.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-legal-entity.png" alt-text="Screenshot of an example legal entity setup for French establishment.":::
+
+In **Organization administration** > **Organizations** > **Organization hierarchies**, create a new **Organization hierarchy** and select the existing \"Enterprise establishment structure\" for establishments and insert **Operating units** representing establishments of your legal entity in this new hierarchy (\"Operations back‑office site\"). Assign the **Enterprise establishment structure** purpose to Enterprise establishment structure **Organization hierarchy**. Ensure that \"Enterprise establishment structure\" **Organization hierarchy** is published.
+
+For \"Operations back‑office site\" **Operating unit** representing the establishment of your legal entity add an address in France and assign **Invoice** purpose to this address. Set up the **Registration ID** of the **SIRET** type for this address. Registration IDs are date-sensitive. Ensure that you specify the **Effective** date on the **General** tab of the **Registration IDs** FastTab.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-establishments.png" alt-text="Screenshot of an example establishments setup for French establishment.":::
+
+In **Accounts receivable** > **Customers** > **All customers** select the \"FR_SI_0001\" customer and open **Customers** > **Registration** > **Registration IDs** on the Action pane. 
+Select the address that represents the head company of this customer in France. If this address isn't the primary address of this customer, assign the **Head company** purpose to this address. 
+Set up SIREN, VAT ID, and SIRET Registration IDs for this address. 
+Registration IDs are date-sensitive. Ensure that you specify the **Effective** date on the **General** tab of the **Registration IDs** FastTab.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-customers.png" alt-text="Screenshot of an example customer setup for French establishment.":::
+
+Select the delivery address in France that represents customer's establishment (\"Bordeaux\") and assign the **Invoice** purpose to this address. Set up SIRET Registration IDs for this address.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-customer-establishment.png" alt-text="Screenshot of an example customer's establishment setup for French.":::
+
+Enable the **Require establishment on customer invoice** and  **Require Registration IDs on customer invoice** checkboxes on Accounts receivable parameters. 
+
+:::image type="content" source="../media/emea-fra-reg-id-example-ar-parameters.png" alt-text="Screenshot of an example AR parameters setup for French establishment.":::
+
+Go to **Accounts receivable** > **Invoices** > **All free text invoices** and create new invoice. In the customer account, select \"FR_SI_0001\". In the **Establishment** field, select \"Operations back‑office site\". In the **Delivery address** field, select \"Bordeaux\". Add a line to this free text invoice.
+
+Select **Registration IDs** button on the Action pane to preview Registration IDs.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-preview.png" alt-text="Screenshot of an example of preview Registration ID.":::
+
+Close the preview dialog and post the free text invoice.
+
+Go to **Invoice** > **Related information** > **Invoice journal** on the Action pane to navigate to invoice journal.
+
+In **Invoice journal**, select the posted invoice and select the **Registration IDs** button on the Action pane to see registration IDs posted for this invoice.
+
+:::image type="content" source="../media/emea-fra-reg-id-example-review.png" alt-text="Screenshot of an example of review Registration ID.":::
+

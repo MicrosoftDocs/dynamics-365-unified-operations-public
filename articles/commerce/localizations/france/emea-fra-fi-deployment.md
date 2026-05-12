@@ -2,7 +2,7 @@
 title: Deployment guidelines for cash registers for France
 description: This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
-ms.date: 02/26/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: France
@@ -19,9 +19,6 @@ ms.custom:
 > Implement the steps in this article only if you're using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled automatically. If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, follow the steps in [Migrate to Commerce version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
 
 This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally signing sales transactions, and printing X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](emea-fra-cash-registers.md). For more information about how to configure Commerce for France, see [Set up Commerce for France](emea-fra-cash-registers.md#set-up-commerce-for-france).
-
-> [!NOTE]
-> This version of the Commerce cash register functionality for France is based on the [fiscal integration framework](../dev-itpro/fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](emea-fra-deployment.md). For guidelines about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](emea-fra-fi-migration.md).
 
 ## Development environment
 

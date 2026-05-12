@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2025
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
@@ -17,68 +17,63 @@ ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTab
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up fixed asset disposal functionality for users in legal entities in Poland with Microsoft Dynamics 365 Finance. 
+This article explains how to set up fixed asset disposal functionality for users in legal entities in Poland with Microsoft Dynamics 365 Finance.
 
-Fixed assets can be sold using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information about fixed asset disposal, see [Fixed asset disposal posting accounts](../../fixed-assets/fixed-asset-disposal-posting-accounts.md). For users in legal entities in Poland, the fixed assets disposal functionality extension includes:
+You can sell fixed assets by using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information about fixed asset disposal, see [Fixed asset disposal posting accounts](../../fixed-assets/fixed-asset-disposal-posting-accounts.md). For users in legal entities in Poland, the fixed assets disposal functionality extension includes:
 
--   A template for asset disposal on the **Fixed asset posting profiles** page.
--   Two additional parameters on the **Permission to sell fixed asset** page. A **Check whether asset can be sold** check box and a **Permission to sell fixed asset** check box on the **Reference and notes** FastTab of a fixed asset. If the **Check whether asset can be sold** check box is selected, only assets marked as **Permission to sell fixed asset** can be sold.
--   A sales account for fixed assets disposal, which includes an additional parameter on the **Sales** FastTab on the **Fixed assets parameters** page. Use this parameter to set up a default ledger account for posting of fixed asset sales.
--   An additional field on the** Partial disposal** page for users to enter a percentage. This percentage will be used for calculation of a line amount as a selected fixed asset net book value multiplied on the percentage.
+- A template for asset disposal on the **Fixed asset posting profiles** page.
+- Two additional parameters on the **Permission to sell fixed asset** page. A **Check whether asset can be sold** check box and a **Permission to sell fixed asset** check box on the **Reference and notes** FastTab of a fixed asset. If you select the **Check whether asset can be sold** check box, you can only sell assets marked as **Permission to sell fixed asset**.
+- A sales account for fixed assets disposal, which includes an additional parameter on the **Sales** FastTab on the **Fixed assets parameters** page. Use this parameter to set up a default ledger account for posting of fixed asset sales.
+- An additional field on the **Partial disposal** page for users to enter a percentage. This percentage is used for calculation of a line amount as a selected fixed asset net book value multiplied by the percentage.
 
 ## Templates for fixed asset disposal
 
-You can use a template for fixed asset disposal as an option to simplify setting up accounts for asset disposal for posting profiles. 
+Use a template for fixed asset disposal to simplify setting up accounts for asset disposal for posting profiles.
 
 To create or edit a template for fixed asset disposal, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Fixed assets** \> **Setup** \> **Fixed asset posting profiles**.
-2. In the **Disposal** section, select **Create template**, and then select a fixed asset posting profile.
-3. Complete the following fields
+1. In Dynamics 365 Finance, go to **Fixed assets** > **Setup** > **Fixed asset posting profiles**.
+1. In the **Disposal** section, select **Create template**, and then select a fixed asset posting profile.
+1. Complete the following fields:
 
-   |                  Field          |                     Description                                                                                                             |
-   |---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-   |      <strong>Book</strong>      |                           Select the book that you want to set up or update posting accounts for asset disposal.                            |
-   |  <strong>Main account</strong>  |    The selected account will automatically be used as <strong>Main account</strong> in setup or update of accounts for disposal posting.    |
-   | <strong>Offset account</strong> | The selected account will automatically be used as the <strong>Offset account</strong> in setup or update of accounts for disposal posting. |
-   |   <strong>Overwrite</strong>    |                   If selected, the system will replace existing disposal accounts for the selected <strong>Book</strong>.                   |
+   | Field | Description |
+   |---|---|
+   | **Book** | Select the book that you want to set up or update posting accounts for asset disposal. |
+   | **Main account** | The selected account is automatically used as **Main account** in setup or update of accounts for disposal posting. |
+   | **Offset account** | The selected account is automatically used as the **Offset account** in setup or update of accounts for disposal posting. |
+   | **Overwrite** | If selected, the system replaces existing disposal accounts for the selected **Book**. |
 
-
-4. Select **OK**. The system automatically creates or updates posting rules for the selected book for the following fixed asset disposal components (transaction types):
-   -   Depreciation (prior years)
-   -   Depreciation (this year)
-   -   Depreciation adjustment (prior years)
-   -   Depreciation adjustment (this year)
-   -   Extraordinary depreciation (prior years)
-   -   Extraordinary depreciation (this year)
-   -   Accumulated depreciation (last years)
-   -   Accumulated depreciation (this year)
-   -   Revaluation of accumulated depreciation (last years)
-   -   Revaluation of accumulated depreciation (this year)
+1. Select **OK**. The system automatically creates or updates posting rules for the selected book for the following fixed asset disposal components (transaction types):
+   - Depreciation (prior years)
+   - Depreciation (this year)
+   - Depreciation adjustment (prior years)
+   - Depreciation adjustment (this year)
+   - Extraordinary depreciation (prior years)
+   - Extraordinary depreciation (this year)
+   - Accumulated depreciation (last years)
+   - Accumulated depreciation (this year)
+   - Revaluation of accumulated depreciation (last years)
+   - Revaluation of accumulated depreciation (this year)
 
 ## Permission to sell
 
-Permission to sell functionality extends basic disposal by sale functionality for users in legal entities in Poland with two additional parameters:
+The permission to sell functionality extends the basic disposal by sale functionality for users in legal entities in Poland with two additional parameters:
 
--   **Check whether asset can be sold** – Use this check box to activate an additional filter on the lookup field when selecting a fixed asset to be sold in a free text invoice or a journal line. The additional filter affects transactions with type **Disposal - sale** only. To edit the **Check whether asset can be sold** field, open the **Sale** FastTab on the **Fixed assets** \> **Setup** \> **Fixed assets parameters** page.
--   **Permission to sell fixed asset** – Use this check box to select whether an individual parameter for each fixed asset can be sold. To edit this field, open the **Reference and notes** FastTab for the selected fixed asset.
+- **Check whether asset can be sold** – Use this check box to activate an additional filter on the lookup field when selecting a fixed asset to sell in a free text invoice or a journal line. The additional filter affects transactions with type **Disposal - sale** only. To edit the **Check whether asset can be sold** field, open the **Sale** FastTab on the **Fixed assets** \> **Setup** \> **Fixed assets parameters** page.
+- **Permission to sell fixed asset** – Use this check box to select whether an individual parameter for each fixed asset can be sold. To edit this field, open the **Reference and notes** FastTab for the selected fixed asset.
 
 ## Sales account for fixed assets disposal
 
-When a sales disposal transaction is created using a fixed asset journal or general journal in General ledger, a sales account defaults to the journal line from the setup on the **Fixed asset posting profiles** page. When a sales disposal transaction is created using a free text invoice, a user should fill in the **Main account** field with a sales account. Sales account for fixed assets disposal functionality lets users in legal entities in Poland set up a ledger account which will be taken as a sales account for sales disposal transaction created using a Free text invoice, by default. To set up a sales account for fixed assets disposal, open the **Sale** FastTab on the **Fixed assets** \> **Setup** \> **Fixed assets parameters** page.
+When you create a sales disposal transaction by using a fixed asset journal or general journal in General ledger, the system defaults a sales account to the journal line from the setup on the **Fixed asset posting profiles** page. When you create a sales disposal transaction by using a free text invoice, you should fill in the **Main account** field with a sales account. The sales account for fixed assets disposal functionality lets users in legal entities in Poland set up a ledger account as the sales account for sales disposal transaction created by using a free text invoice, by default. To set up a sales account for fixed assets disposal, open the **Sale** FastTab on the **Fixed assets** \> **Setup** \> **Fixed assets parameters** page.
 
 ## Partial sales of fixed assets
 
-A sale or scrap disposal of a fixed asset allows disposal of an entire fixed asset only. Partial sales of fixed assets functionality allows users in legal entities in Poland to dispose partially of a fixed asset through both sale or scrap types of transactions. Partial sale of fixed assets is available through a free text invoice, fixed asset journal or general journal in General ledger. To partially dispose a fixed asset, enter a percentage (an integer between 0 and 100) in the **Partial sales** field in one of the following locations:
+A sale or scrap disposal of a fixed asset transaction type allows disposal of an entire fixed asset only. The partial sales of fixed assets functionality allows users in legal entities in Poland to partially dispose of a fixed asset through both sale or scrap types of transactions. Partial sale of fixed assets is available through a free text invoice, fixed asset journal, or general journal in General ledger. To partially dispose a fixed asset, enter a percentage (an integer between 0 and 100) in the **Partial sales** field in one of the following locations:
 
--   **General** tab on the **Fixed asset journal** line.
--   **Fixed assets** tab on the **General journal** line.
--   **General** tab on the **Free text invoice** line.
+- **General** tab on the **Fixed asset journal** line.
+- **Fixed assets** tab on the **General journal** line.
+- **General** tab on the **Free text invoice** line.
 
-By default, the **Partial sales** field value is **100**. When a user selects the **Disposal scrap** or **Disposal sale** transaction type and an asset in a journal, the net book value will default on the journal line. If the user changes the percentage, the net book value on the journal line is reduced. The user can also manually change the net book value, after which the percentage in the **Partial sales** field will be recalculated. **Example** A fixed asset has been acquired at USD 10.000, depreciation USD 1.000, net book value USD 9.000. First partial sale 50% - net book value calculated for the journal line is 50% of USD 9.000 = USD 4.500. Second partial sale 50% - net book value calculated for the journal line is 50% of the remaining net book value USD 4.500 = USD 2.250. If a user wants to expense the remaining net book value of USD 2.250, they must enter a percentage of 100 on a journal or a free text invoice line.
-
-
-
-
+By default, the **Partial sales** field value is **100**. When a user selects the **Disposal scrap** or **Disposal sale** transaction type and an asset in a journal, the net book value defaults on the journal line. If the user changes the percentage, the net book value on the journal line is reduced. The user can also manually change the net book value, after which the percentage in the **Partial sales** field is recalculated. **Example** A fixed asset is acquired at USD 10,000, depreciation USD 1,000, net book value USD 9,000. First partial sale 50% - net book value calculated for the journal line is 50% of USD 9,000 = USD 4,500. Second partial sale 50% - net book value calculated for the journal line is 50% of the remaining net book value USD 4,500 = USD 2,250. If a user wants to expense the remaining net book value of USD 2,250, they must enter a percentage of 100 on a journal or a free text invoice line.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

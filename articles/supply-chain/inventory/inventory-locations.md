@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: WMSLocation, WMSBlockingCause, WHSLocation
 ms.topic: how-to
-ms.date: 11/19/2024
+ms.date: 5/4/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,13 +15,13 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-Inventory locations determine where items are stored and picked from in warehouses that don't use warehouse management processes (WMS).
+Inventory locations determine where you store and pick items in warehouses that don't use warehouse management processes (WMS).
 
 This article applies to features in the Inventory management module. It doesn't apply to features in the Warehouse management module.
 
 The term location refers to the place that items are stored and drawn from.
 
-For each location, the place where the item is inserted can also be specified. By default, they're the same. Items are usually inserted and drawn from the same side of a location, but not always. For example, items that are stored in live storage racks are inserted from one aisle and drawn from another. The main input is given by a location name, which is usually determined by its coordinates: warehouse, aisle, rack, shelf, and bin. This name or ID can be entered manually or generated from the location coordinates—for example, 01-02-03-4 for aisle 1, rack 2, shelf 3, bin 4 in the Inventory locations page.
+For each location, you can also specify the place the item is inserted. By default, they're the same. Items are usually inserted and drawn from the same side of a location, but not always. For example, items that are stored in live storage racks are inserted from one aisle and drawn from another. The main input is given by a location name, which is usually determined by its coordinates: warehouse, aisle, rack, shelf, and bin. You can enter this name or ID manually or generate it from the location coordinates. For example, `01-02-03-4` represents aisle 1, rack 2, shelf 3, and bin 4 in the Inventory locations page.
 
 ## Location properties
 
@@ -47,7 +47,7 @@ In the Inventory locations page, you can view the warehouse layout in a tree str
 
 ## Maintain inventory locations via the warehouse form
 
-It's possible to copy locations from one warehouse to another and to create locations via a wizard. Before you run the wizard, you should make sure that you have defined the default location names on the Warehouse page.
+You can copy locations from one warehouse to another and create locations through a wizard. Before running the wizard, make sure that you define the default location names on the **Warehouse** page.
 
 ## Related information
 

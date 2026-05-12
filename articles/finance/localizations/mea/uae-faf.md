@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/16/2026
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Arab Emirates (UAE)
 ms.search.validFrom: 2017-06-30
@@ -69,7 +69,7 @@ To select the ER configuration in general ledger parameters, follow these steps:
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
 1. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **FTA Tax Audit File - FAF in TXT (AE)**.
 
-[![FTA Tax Audit File - FAF in TXT (AE) selected on the General ledger parameters page.](../media/uae-faf-gl.png)]
+:::image type="content" source="../media/uae-faf-gl.png" alt-text="Screenshot of FTA Tax Audit File - FAF in TXT (AE) selected on the General ledger parameters page.":::
 
 ### <a name="header-information"></a>Set up company information for the reporting header
 
@@ -103,7 +103,7 @@ To generate a FAF for the UAE, follow these steps:
 1. Use the **Records to include** FastTab to filter the data on the report by one or more main accounts. This filter affects only the **General ledger table** section of the report.
 1. Use the **Run in the background** FastTab to specify the parameters of a batch job and run the report in batch mode. When an electronic report is generated in batch mode, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs** to find related batch information and the generated output file (as an attachment). For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
-[![Example the Electronic report parameters dialog box for a FAF.](../media/uae-faf-ud.png)]
+:::image type="content" source="../media/uae-faf-ud.png" alt-text="Screenshot of the Electronic report parameters dialog box for a FAF.":::
 
 ## Implementation details
 

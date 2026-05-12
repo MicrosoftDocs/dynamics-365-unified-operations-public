@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage, SalesAgreementInvoiceJournal, SalesAgreementInvoicePart
 ms.topic: overview
-ms.date: 07/30/2024
+ms.date: 4/27/2026
 ms.custom: 
   - bap-template
 ---
@@ -28,12 +28,12 @@ You can create a sales order directly from a sales agreement by using the **Rele
 
 ## Commitment types
 
-Each line in a sales agreement expresses a commitment to sell something. In general, there are two categories of commitment:
+Each line in a sales agreement expresses a commitment to sell something. In general, two categories of commitment exist:
 
 - **Value commitment** – The customer agrees to buy products for a specific amount.
 - **Quantity commitment** – The customer agrees to buy a specific quantity of products.
 
-In addition, a contract can commit the customer to buy a specific product or products in a product category. By combining these two factors (value versus quantity, and specific products versus product categories), we get four types of commitment:
+In addition, a contract can commit the customer to buy a specific product or products in a product category. By combining these two factors (value versus quantity, and specific products versus product categories), you get four types of commitment:
 
 - **Product quantity commitment** – The customer agrees to buy a specific quantity of products. Lines that use this commitment type are defined by an item number, and by the quantity and unit that were agreed on. The **Amount** field isn't available.
 - **Product value commitment** – The customer agrees to buy specific products for a specific amount. Lines that use this commitment type are defined by an item number and the amount that was agreed on. The **Quantity** and **Unit** fields aren't available.
@@ -55,9 +55,9 @@ Pricing terms can vary, depending on the type of commitment. On a sales order th
 
 ## Policies for sales agreements
 
-The following policies affect the way that the link between a sales agreement commitment and the corresponding sales order lines works:
+The following policies affect how the link between a sales agreement commitment and the corresponding sales order lines works:
 
-- **Max is enforced** – The total quantity or amount for all order lines can't exceed the quantity or amount that is specified on the related commitment.
+- **Max is enforced** – The total quantity or amount for all order lines can't exceed the quantity or amount specified on the related commitment.
 - **Price and discount is fixed** – The price on an order line and the price on the related commitment can't differ. If the price is changed on the order line, the link to the commitment is broken. If the link is broken, the order line doesn't contribute to fulfillment of the commitment.
 - **Minimum release amount** and **Maximum release amount** – If an amount is specified, a message is displayed if you make any change to an order line that causes the order line to differ from the related commitment.
 
@@ -79,11 +79,11 @@ You can preview or print all revisions of the confirmations. You can then share 
 
 ## Applying sales agreements during the ordering process
 
-If you don't release sales orders directly for a sales agreement, you can still link a sales agreement to an order during the order entry process. When you're creating a new sales order and select a sales agreement, the terms of that agreement, such as the payment terms, delivery terms, and delivery address, are applied to the order header, and the link between the agreement and the order is created. Then, on the order lines, when you can select products and categories that are specified in the sales agreement, the prices and discounts are copied from that agreement. The same sales order can include both lines that aren't related to a sales agreement and lines that have a commitment for a sales agreement.
+If you don't release sales orders directly for a sales agreement, you can still link a sales agreement to an order during the order entry process. When you're creating a new sales order and select a sales agreement, the terms of that agreement, such as the payment terms, delivery terms, and delivery address, are applied to the order header, and the link between the agreement and the order is created. Then, on the order lines, when you select products and categories that are specified in the sales agreement, the prices and discounts are copied from that agreement. The same sales order can include both lines that aren't related to a sales agreement and lines that have a commitment for a sales agreement.
 
 ## Modifying sales orders that are linked to sales agreements
 
-If you've created (released) a sales order against a sales agreement, some fields on that sales order lines can be modified only if you remove the link to the associated sales agreement lines. The following table lists some of these fields.
+If you create (release) a sales order against a sales agreement, you can modify some fields on the sales order lines only if you remove the link to the associated sales agreement lines. The following table lists some of these fields.
 
 | Field | Description |
 |---|---|
@@ -92,14 +92,14 @@ If you've created (released) a sales order against a sales agreement, some field
 | Net amount | If you specify an amount that exceeds the amount that is specified on a sales agreement line where the **Max is enforced** check box is selected, a message box prompts you to save the changed amount. Select **Yes** to remove the link to the sales agreement line and recalculate the price. Select **No** to remove the link to the sales agreement line without recalculating the price. |
 | Quantity | If you specify a quantity that exceeds the quantity that is specified on a sales agreement line where the **Max is enforced** check box is selected, a message box prompts you to save the changed quantity. Select **Yes** to remove the link to the sales agreement line and recalculate the price. Select **No** to remove the link to the sales agreement line without recalculating the price. |
 
-## Returning an item that was ordered from a sales agreement
+## Returning an item ordered from a sales agreement
 
-When a customer returns a product that was ordered from a sales agreement, Supply Chain Management can find and automatically update the related sales agreement commitment to reflect the change in quantity or amount. By creating a return order that is based on the original sales order that is linked to a sales agreement, you establish a relation between the sales agreement commitment, the sales order line, and the return order invoice.  
+When a customer returns a product that they ordered from a sales agreement, Supply Chain Management can find and automatically update the related sales agreement commitment to reflect the change in quantity or amount. By creating a return order that is based on the original sales order that is linked to a sales agreement, you establish a relation between the sales agreement commitment, the sales order line, and the return order invoice.  
 
-If you don't want to deduct the returned item quantity from the sales agreement commitment, you can use the **Remove link** control on the **Return order** page to remove the link between the return order and the sales agreement commitment. If you must reestablish the link later, select **Create link**.  
+If you don't want to deduct the returned item quantity from the sales agreement commitment, use the **Remove link** control on the **Return order** page to remove the link between the return order and the sales agreement commitment. If you must reestablish the link later, select **Create link**.  
 
 > [!NOTE]
-> A return order can be linked to only one sales agreement. If a customer returns multiple products that were ordered from multiple sales agreements, you must create a new return order for each product and create a link to the corresponding sales agreement.
+> A return order can be linked to only one sales agreement. If a customer returns multiple products that they ordered from multiple sales agreements, you must create a new return order for each product and create a link to the corresponding sales agreement.
 
 ## Automatic search for sales agreements
 

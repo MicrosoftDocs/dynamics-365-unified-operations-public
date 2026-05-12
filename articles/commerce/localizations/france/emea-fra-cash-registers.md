@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: Learn about the cash register functionality available for France in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 04/10/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: France
@@ -572,9 +572,6 @@ To enable audit events, you must reinitialize the Commerce extensible enumeratio
 > You should configure channel components only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you're using Commerce version 10.0.28 or earlier, and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](emea-fra-fi-deployment.md).
-
-> [!NOTE]
-> This version of the Commerce functionality for France is based on the [Fiscal integration framework](../dev-itpro/fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](emea-fra-deployment.md). For guidance about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](emea-fra-fi-migration.md).
 
 ### Enable the digital signature in offline mode
 

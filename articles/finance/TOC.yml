@@ -122,7 +122,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/finance
                 - name: Default dashboard
                   href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/finance
-                - name: Immersive Home (production ready preview)
+                - name: Immersive Home
                   href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/finance
                 - name: Set the preferred initial page for each user
                   href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/finance

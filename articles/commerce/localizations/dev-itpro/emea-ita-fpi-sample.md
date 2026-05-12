@@ -2,7 +2,7 @@
 title: Fiscal printer integration sample for Italy
 description: This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 02/26/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -61,7 +61,7 @@ The fiscal printer integration sample for Italy covers the following scenarios:
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
 
-    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready or isn't responding, the printer is out of paper, or there's a paper jam.
+    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready or, isn't responding, the printer is out of paper, or there's a paper jam.
     - Defer fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
     - Check the availability of the fiscal printer before a new sales transaction is opened or a sales transaction is finalized.
@@ -72,9 +72,9 @@ The fiscal printer integration sample implements the following rules that are re
 
 - Exclude sales lines that are related to the *Issue gift card* and *Add to gift card* operations from the fiscal receipt.
 - Don't print a fiscal receipt if it consists of only gift card lines.
-- Deduct the total amount of gift cards that are issued or recharged in a transaction from payment lines of the fiscal receipt.
+- Deduct the total number of gift cards that are issued or recharged in a transaction from payment lines of the fiscal receipt.
 - Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
-- Payment by gift card is considered a regular payment.
+- Payment by gift card is considered as a regular payment.
 
 ### Customer deposits and customer order deposits
 
@@ -96,9 +96,6 @@ The fiscal printer integration sample implements the following rules that are re
 ## Set up fiscal integration for Italy
 
 The fiscal printer integration sample for Italy is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\EpsonFP90IIISample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
-
-> [!NOTE]
-> The fiscal printer integration sample for Italy is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -175,7 +172,7 @@ The following default data mapping is included in the fiscal document provider c
     You must modify the sample mapping according to the payment methods that are configured in your application.
 
 - **Barcode type for receipt number** – The type of bar code that's used to show a receipt number on a fiscal receipt. The default mapping is **CODE128**.
-- **Print fiscal data in receipt header** – If this parameter is turned on, store information will be printed on the fiscal receipt. This information includes the store's name, address, and tax identification number, and the cashier's name.
+- **Print fiscal data in receipt header** – If this parameter is turned on, store information is printed on the fiscal receipt. This information includes the store's name, address, and tax identification number, and the cashier's name.
 - **Fiscal printer department mapping** – The mapping of departments of the fiscal printer to value-added tax (VAT) rates, VAT exempt natures, and product types. The following example shows the default mapping.
 
     ```JSON
@@ -204,7 +201,7 @@ The following default data mapping is included in the fiscal document provider c
 
 - **VAT exempt nature for gift card** – The VAT exempt nature that should be applied when a gift card is issued or refilled. The value should correspond to some entry in the fiscal printer department mapping. The default mapping is **NS**.
 - **Enable free of charge items** – If this parameter is turned on, the special *omaggio* discount adjustment type for items that have a 100-percent discount is enabled.
-- **Info code for return origin** – The info code that is used to capture the origin of a return transaction if no original sales receipt is provided. This parameter is used together with the **Info code for original sales date** and **Return origin mapping** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists. 
+- **Info code for return origin** – The info code that is used to capture the origin of a return transaction if no original sales receipt is provided. This parameter is used together with the **Info code for original sales date** and **Return origin mapping** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists.
 
     This info code should be configured to enable the user to select or enter one of the possible origins of returns in your stores. For example, it can be configured as a list of subcodes (such as **Return from site** or **Return from kiosk**). The **Return origin mapping** parameter is then used to translate the value of the info code into a command for the fiscal printer.
 
@@ -249,8 +246,7 @@ The following settings are included in the fiscal connector configuration that's
 ### Configure channel components
 
 > [!NOTE]
-> - The fiscal printer integration sample for Italy is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
-> - Commerce samples that you deploy in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
+> Commerce samples deployed in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
 
 #### Set up the development environment
 
@@ -295,9 +291,6 @@ Follow the steps in [Set up a build pipeline for a fiscal integration sample](..
 ## Design of extensions
 
 The fiscal printer integration sample for Italy is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\EpsonFP90IIISample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
-
-> [!NOTE]
-> The fiscal printer integration sample for Italy is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
 
 ### Commerce runtime extension design
 

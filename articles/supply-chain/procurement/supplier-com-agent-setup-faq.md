@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 03/10/2026
+ms.date: 05/07/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -46,11 +46,11 @@ In the [Power Platform admin center](https://aka.ms/ppac), you go to **Manage** 
 
 Open your project in [Lifecycle Services](https://lcs.dynamics.com/V2) and then open the **Full details** for your finance and operations apps environment. Under **Power Platform Integration**, check whether any errors are reported (such as "LCS Power Platform Integration provisioning fails with timeout"). Then attempt a retry to complete the deployment.
 
-## I can't enable the *(Production ready preview) Agent management* feature in feature management
+## I can't enable the *Agent management* feature in feature management
 
 ### Symptoms
 
-In the **Feature management** workspace for your finance and operations apps environment, when you try to enable the *(Production Ready Preview) Agent Management* feature, you receive the following error message:
+In the **Feature management** workspace for your finance and operations apps environment, when you try to enable the *Agent management* feature, you receive the following error message:
 
 > You cannot enable this Feature. Environment must be linked to Dataverse for agents to function
 
