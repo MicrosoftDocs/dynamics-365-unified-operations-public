@@ -2,7 +2,7 @@
 title: System requirements for a Dynamics 365 Commerce online extensibility development environment
 description: Learn about the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment.
 author: samjarawan
-ms.date: 02/05/2026
+ms.date: 05/14/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -35,19 +35,13 @@ The online extensibility development environment can preview customizations in a
 * Mozilla Firefox (up to the current version minus 1)
 * Microsoft Edge (up to the current version minus 1)
 
-## Additional resources
+## More resources
 
-[Get started with e-commerce online extensibility development](sdk-getting-started.md)
-
-[Set up a development environment](setup-dev-environment.md)
-
-[eCommerce Platform Modernization](ecommerce-platform-modernization.md)
-
-[Configure a development environment (.env) file](configure-env-file.md)
-
-[Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
-
-[Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
-
+- [Get started with e-commerce online extensibility development](sdk-getting-started.md)
+- [Set up a development environment](setup-dev-environment.md)
+- [E-commerce platform modernization](ecommerce-platform-modernization.md)
+- [Configure a development environment (.env) file](configure-env-file.md)
+- [Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
+- [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
