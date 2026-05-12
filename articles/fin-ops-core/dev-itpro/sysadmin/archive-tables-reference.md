@@ -1,7 +1,7 @@
 ---
 title: Archive table naming reference
 description: Reference documentation showing how Microsoft-provided tables are named across live, history, finance and operations data entity, and Dataverse layers for each archive scenario.
-author: kehoej99 
+author: git-kiran
 ms.author: Weijiesa 
 ms.topic: reference
 ms.date: 03/26/2026
