@@ -8,7 +8,7 @@ ms.date: 03/26/2026
 ms.custom:
   - bap-template
 ms.reviewer: twheeloc
-
+ 
 ---
 
 # Add custom tables to standard archive scenarios
@@ -145,7 +145,7 @@ This index is critical for archive job performance and validation.
 </AxTableIndex>
 ```
 
-### Add reconciliation index for LTR (Required)
+### Add reconciliation index for long-term retention (required)
 
 ```xml
 <AxTableIndex>
@@ -312,7 +312,7 @@ Third parties (ISVs, partners, and customers) use two approaches to configure en
 1. Find your virtual entity (for example, `mserp_customledgertranssettlementbientity`).
 1. Enable change tracking and long-term retention for the entity.
 
-For more information see:
+For more information, see:
 
 - [Enable a table for long-term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
 - [Enable change tracking for entities](../data-entities/entity-change-track.md).

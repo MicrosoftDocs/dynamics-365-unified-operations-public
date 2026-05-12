@@ -4,7 +4,7 @@ description: Reference documentation showing how Microsoft-provided tables are n
 author: git-kiran
 ms.author: Weijiesa 
 ms.topic: reference
-ms.date: 03/26/2026
+ms.date: 05/12/2026
 ms.custom:
   - bap-template
 ms.reviewer: twheeloc
@@ -33,7 +33,7 @@ Use this reference to:
 | Dataverse table | "mserp_" prefix + data entity name | `mserp_SalestableBiEntity` |
 
 > [!NOTE]
-> These finance and operations data entities use the "BiEntity" suffix in their technical names (for example, `SalestableBiEntity`). This naming convention identifies them as data entities specifically designed for archive and Dataverse integration.
+> These finance and operations data entities use the "BiEntity" suffix in their technical names (for example, `SalestableBiEntity`). This naming convention identifies them as data entities designed for archive and Dataverse integration.
 
 ### Supported scenarios
 
