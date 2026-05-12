@@ -59,6 +59,9 @@ Before you begin the migration, ensure the following:
 
 The **IssuerCAs** section specifies where to find the issuer CA certificates. This is the certificate of the CA that directly issued your Service Fabric certificates. In a multi-level trust chain, this is the intermediate CA. If there's only one level (no intermediates), this is the root CA certificate. You can specify thumbprints, a folder path containing .cer files, or a combination of both.
 
+> [!IMPORTANT]
+> The new version of the infrastructure scripts has added the possibility of splitting the certificate used for Finance + Operations and Service Fabric into separate certificates. It is not necessary to split the certificates for this migration. It is not recommended that you use this migration as the vehicle for splitting the certificates.
+
 ## Migration for existing Service Fabric Clusters
 
 1. Infrastructure scripts version 3.0.0 introduces two new ADCS certificate templates (**D365FinOpsLBDServerTemplate** and **D365FinOpsLBDClientTemplate**) in addition to the existing templates. Run the following command on your AD&nbsp;CS server to create the new templates. The script skips any templates that already exist.
@@ -91,6 +94,16 @@ The **IssuerCAs** section specifies where to find the issuer CA certificates. Th
 
 The import script automatically creates the issuer trust store (for example, `ServiceFabric_IssuerTrust`) if it doesn't exist and imports each certificate into its designated store.
 
+1. Validate that the configuration related to your certificates is correctly applied. The script will validate that the necessary intermediate issuing certs are present for the certificates that require it.
+
+```powershell
+# If remoting, only execute
+# .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
+
+.\Test-D365FOConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+```
+
+
 1. Before you can upgrade to the issuer store model, you must remove the legacy issuer store entries from the cluster configuration. Run the following command from one of your Service Fabric nodes:
 
 > [!NOTE]
@@ -111,13 +124,12 @@ This generates a new cluster configuration file with the old issuer entries remo
 .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToIssuerStore
 ```
 
-This command updates the certificate common names in the cluster configuration to match the current `ConfigTemplate.xml` (including the separate **ServiceFabricCluster** certificate), adds the `Security/*IssuerStores` FabricSettings entries that map each certificate's subject name to the issuer trust store, and sets the Security parameters to enable issuer store validation. Apply the generated cluster configuration to your cluster by following the [Service Fabric cluster configuration upgrade](onprem-update-sfcluster.md) process.
+This command updates the certificate common names in the cluster configuration to match the current `ConfigTemplate.xml` (including the separate **ServiceFabricCluster** certificate), adds the `Security/*IssuerStores` FabricSettings entries that map each certificate's subject name to the issuer trust store, and sets the Security parameters to enable issuer store validation. Apply the generated cluster configuration to your cluster by following the [Service Fabric cluster configuration upgrade](onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration) process.
 
-7. After the configuration upgrade completes, verify the migration was successful. Open Service Fabric Explorer and confirm the cluster is healthy. On each node, verify that the issuer trust store (for example, `Cert:\LocalMachine\ServiceFabric_IssuerTrust`) contains the expected issuer CA certificate. You can also run the certificate compatibility validation script:
+> [!NOTE]
+> The Service Fabric cluster will initiate more than one upgrade process as it needs to go through multiple intermidiate steps to reach the desired state. So you may see the cluster finish an upgrade and proceed to start another upgrade almost immediately.
 
-```powershell
-.\Test-CertificateCompatibility.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-```
+1. After the configuration upgrade completes, verify the migration was successful. Open Service Fabric Explorer and confirm the cluster is healthy.
 
 ## Troubleshooting
 

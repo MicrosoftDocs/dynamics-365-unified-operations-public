@@ -69,7 +69,7 @@ You might need to rotate the certificates used by your Dynamics 365 Finance + Op
 
         ```powershell
         # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
-        .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+        .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -D365FOVersion <FOVersion>
         ```
 
     1. Copy the contents of each `infrastructure\VMs<VMName>` folder into the corresponding VM. If you use remoting scripts, they automatically copy the content to the target VMs. Then, run the following script. Perform this step as an administrator.
@@ -122,13 +122,6 @@ If you change the certificate common name, you must upgrade your Service Fabric 
     .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames
     ```
 
-    > [!NOTE]
-    > If the issuers also change, use the following command instead.
-    >
-    > ```powershell
-    > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames -UpdateIssuers
-    > ```
-
 1. Update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
 #### Service Fabric with certificates that are expired
@@ -136,43 +129,6 @@ If you change the certificate common name, you must upgrade your Service Fabric 
 If the cluster isn't available 10 minutes after you finish provisioning the new certificates to all nodes, consider restarting the nodes where the Service Fabric service isn't started.
 
 If you change the certificate common name (subject name), the Service Fabric cluster won't start up. If you can't generate new certificates with the previous common name, you need to clean up and recreate the cluster.
-
-#### Service Fabric with restricted certificate issuers
-
-If you define the following sections for your cluster configuration, you restrict the allowed certificate issuers. 
-
-```json
-"ClusterCertificateIssuerStores": [
-    {
-        "IssuerCommonName": "sample-ca",
-        "X509StoreNames": "Root"
-    }
-],
-"ServerCertificateIssuerStores": [
-    {
-        "IssuerCommonName": "sample-ca",
-        "X509StoreNames": "Root"
-    }
-],
-"ClientCertificateIssuerStores": [
-    {
-        "IssuerCommonName": "sample-ca",
-        "X509StoreNames": "Root"
-    }
-],
-```
-
-If the issuer of your new certificates differs from what is defined in these configurations, you must go through a cluster configuration upgrade to add the new issuers.
-
-If you need to update the list of issuers, make the update while the existing certificates are still valid.
-
-1. Run the following script to generate an updated cluster configuration file.
-
-    ```powershell
-    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateIssuers
-    ```
-
-1. Update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
 ### <a name=""></a>Service Fabric cluster defined with certificate thumbprints
 
