@@ -374,20 +374,14 @@ To enter the Buyer schema codes, follow these steps:
 1. Select a specific customer in the list. On the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
 1. In the **Value** column, enter the required buyer electronic address.
 
+### Configure the buyer electronic address handling
+
+For both Seller and Buyer identification, the system uses the electronic address you define as the **EndpointID** value with the **schemeID** attribute set to **0225** (FRCTC ELECTRONIC ADDRESS) by default, according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/).
+
+Your can change the code of the electronic address scheme to any value that better fits your business processes configuring the **CompanyEndpointType** and **CustomerEndpointType** electronic document properties types for sellers and buyers respectively. The values defined via these electronic document properties have higher priority and overwrite the default **0225** value.
+
 > [!NOTE]
-> For both Seller and Buyer identification, the system uses the electronic address you define as the **EndpointID** value with the **schemeID** attribute set to **0225** (FRCTC ELECTRONIC ADDRESS) by default, according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/).
-
-If you don't define the electronic addresses, the system uses the following Endpoint determination algorithm:
-
-- The system uses the **SIRET** number with the **0009** value as the *schemeID* attribute.
-- If the system doesn't find a **SIRET** number, it uses the **SIREN** number with the **0002** value as the *schemeID* attribute.
-- If the system doesn't find a **SIREN** number, it uses the Global Location Number (GLN), also known as the European article numbering (EAN) number, with the **0088** value as the *schemeID* attribute.
-
-  > [!NOTE]
-  > The system assumes that the dedicated registration number of the **EAN** registration category is already defined.
-- If the system doesn't find an **EAN** number, it uses the VAT number with the **9957** value as the *schemeID* attribute.
-
-To learn more about the full list of the electronic document properties used during the generation of electronic invoices XML files, refer to the following Appendix chapter [List of electronic document properties](#EDproperties)
+> To learn more about the full list of the electronic document properties used during the generation of electronic invoices XML files, refer to the following Appendix chapter [List of electronic document properties](#EDproperties)
 
 ## Configure mandatory notes
 
