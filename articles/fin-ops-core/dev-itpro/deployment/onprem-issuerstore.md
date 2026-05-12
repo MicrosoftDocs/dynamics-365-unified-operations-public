@@ -45,7 +45,6 @@ Before you begin the migration, ensure the following:
 
 - Your infrastructure scripts are updated to version 3.0 or later.
 - Your `ConfigTemplate.xml` has been upgraded to schema version 1.13 or later (run `Update-ConfigTemplate.ps1` if needed).
-- The new **ServiceFabricCluster** certificate has been generated (via AD&nbsp;CS or self-signed) and its details filled in the `ConfigTemplate.xml`. This certificate must have both Server Authentication and Client Authentication EKUs.
 - The `IssuerStore` section in your `ConfigTemplate.xml` is configured with the name of the issuer trust store and the issuer CA certificate information.
 
 ```xml
@@ -60,40 +59,36 @@ Before you begin the migration, ensure the following:
 
 The **IssuerCAs** section specifies where to find the issuer CA certificates. This is the certificate of the CA that directly issued your Service Fabric certificates. In a multi-level trust chain, this is the intermediate CA. If there's only one level (no intermediates), this is the root CA certificate. You can specify thumbprints, a folder path containing .cer files, or a combination of both.
 
-## Step 1: Export and distribute certificates
+## Migration for existing Service Fabric Clusters
 
-Run the export scripts to ensure all certificates (including the issuer CA certificates) are exported and distributed to the correct VM folders.
+1. Infrastructure scripts version 3.0.0 introduces two new ADCS certificate templates (**D365FinOpsLBDServerTemplate** and **D365FinOpsLBDClientTemplate**) in addition to the existing templates. Run the following command on your AD&nbsp;CS server to create the new templates. The script skips any templates that already exist.
+
+```powershell
+.\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -CreateTemplates
+```
+
+2. Generate the new **ServiceFabricCluster** certificate and any other certificates that need to be regenerated. The **ServiceFabricCluster** certificate must be generated via AD&nbsp;CS or self-signed, because it requires both Server Authentication and Client Authentication EKUs. After generation, the thumbprint is automatically written back to the `ConfigTemplate.xml`.
+
+```powershell
+.\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+```
+
+3. Run the export scripts to ensure all certificates (including the issuer CA certificates) are exported and distributed to the correct VM folders.
 
 ```powershell
 .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-.\Export-ImportCertificatesScript.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+.\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 ```
 
-The export scripts automatically:
-
-- Export issuer CA certificates from the specified folder path or thumbprints.
-- Include them in the per-VM certificate packages targeted at the issuer trust store.
-- Generate a CSV file per VM that includes store-specific entries for each certificate.
-
-## Step 2: Import certificates on each node
-
-On each Service Fabric node, run the import script from the VM-specific folder:
+4. On each Service Fabric node, run the import script from the VM-specific folder to import the certificates, including the new **ServiceFabricCluster** certificate and the issuer CA certificates into the issuer trust store:
 
 ```powershell
 .\Import-Certificates.ps1
 ```
 
-The import script automatically:
+The import script automatically creates the issuer trust store (for example, `ServiceFabric_IssuerTrust`) if it doesn't exist, imports each certificate into its designated store, and handles issuer CA certificates that don't have a thumbprint in the CSV.
 
-- Creates the issuer trust store (for example, `ServiceFabric_IssuerTrust`) if it doesn't exist.
-- Imports each certificate into its designated store (PFX into `LocalMachine\My`, CER into `LocalMachine\Root` or the issuer trust store).
-- Handles issuer CA certificates that don't have a thumbprint in the CSV.
-
-## Step 3: Remove old issuer stores from the cluster configuration
-
-Before you can upgrade to the issuer store model, you must remove the legacy issuer store entries from the cluster configuration. These are the `ClusterCertificateIssuerStores`, `ServerCertificateIssuerStores`, and `ClientCertificateIssuerStores` properties in the `CertificateInformation` section.
-
-Run the following command from one of the Orchestrator nodes:
+5. Before you can upgrade to the issuer store model, you must remove the legacy issuer store entries from the cluster configuration. These are the `ClusterCertificateIssuerStores`, `ServerCertificateIssuerStores`, and `ClientCertificateIssuerStores` properties in the `CertificateInformation` section. Run the following command from one of the Orchestrator nodes:
 
 ```powershell
 .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -RemoveOldIssuers
@@ -104,31 +99,15 @@ This generates a new cluster configuration file with the old issuer entries remo
 > [!IMPORTANT]
 > Wait for the cluster configuration upgrade to complete successfully before proceeding to the next step. You can monitor the upgrade status in Service Fabric Explorer.
 
-## Step 4: Upgrade to the issuer store model
-
-After the old issuers have been removed and the configuration upgrade is complete, run the following command to upgrade to the issuer store model:
+6. After the old issuers have been removed and the configuration upgrade is complete, run the following command to upgrade to the issuer store model:
 
 ```powershell
 .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToIssuerStore
 ```
 
-This command:
+This command updates the certificate common names in the cluster configuration to match the current `ConfigTemplate.xml` (including the separate **ServiceFabricCluster** certificate), adds the `Security/*IssuerStores` FabricSettings entries that map each certificate's subject name to the issuer trust store, and sets the Security parameters to enable issuer store validation. Apply the generated cluster configuration to your cluster by following the standard configuration upgrade process.
 
-- Updates the certificate common names in the cluster configuration to match the current `ConfigTemplate.xml` (including the separate **ServiceFabricCluster** certificate if applicable).
-- Adds `Security/ServerCertificateIssuerStores`, `Security/ClusterCertificateIssuerStores`, and `Security/ClientCertificateIssuerStores` FabricSettings entries that map each certificate's subject name to the issuer trust store.
-- Sets the `EnforcePrevalidationOnSecurityChanges` Security parameter to `false` and `EnableExtendedCertificateValidation` to `true`, which enables the issuer store validation model.
-
-Apply the generated cluster configuration to your cluster by following the standard configuration upgrade process.
-
-## Step 5: Verify the upgrade
-
-After the configuration upgrade completes, verify the migration was successful:
-
-1. Open Service Fabric Explorer and confirm the cluster is healthy.
-2. Verify that the `Security/ClusterCertificateIssuerStores`, `Security/ServerCertificateIssuerStores`, and `Security/ClientCertificateIssuerStores` entries are present in the FabricSettings of the cluster configuration.
-3. On each node, verify that the issuer trust store (for example, `Cert:\LocalMachine\ServiceFabric_IssuerTrust`) contains the expected issuer CA certificate.
-
-You can also run the certificate compatibility validation script to verify that all certificates are valid and their issuers are present in the issuer store:
+7. After the configuration upgrade completes, verify the migration was successful. Open Service Fabric Explorer and confirm the cluster is healthy. On each node, verify that the issuer trust store (for example, `Cert:\LocalMachine\ServiceFabric_IssuerTrust`) contains the expected issuer CA certificate. You can also run the certificate compatibility validation script:
 
 ```powershell
 .\Test-CertificateCompatibility.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
