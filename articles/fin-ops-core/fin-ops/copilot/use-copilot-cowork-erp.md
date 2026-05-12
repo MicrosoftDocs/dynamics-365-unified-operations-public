@@ -101,7 +101,7 @@ In this scenario, Copilot Cowork:
 1. On approval, creates the purchase order in Dynamics 365 and drafts an award email in Outlook.
 
 > [!IMPORTANT]
-> Copilot Cowork asks for your approval before performing write operations in Dynamics 365, such as updating bid records, creating purchase orders, or sending emails. You remain in control of every consequential decision.
+> Copilot Cowork can perform write operations in Dynamics 365, such as updating bid records, creating purchase orders, or sending emails, when asked. Review your prompts and the agent's proposed actions carefully before proceeding.
 
 ## Tips for effective prompts
 
@@ -115,12 +115,11 @@ To get the best results from Copilot Cowork with the Dynamics 365 ERP apps plugi
 ## Data security and privacy
 
 - **User-level permissions.** All data access through Copilot Cowork respects the security roles and privileges assigned to the user in the finance and operations environment. Users can't access data through Copilot Cowork that they can't access through the application.
-- **Human in the loop.** Copilot Cowork asks for explicit user approval before performing write operations (creating records, updating data, or taking actions that modify the system state).
-- **Audit trail.** Operations performed through Copilot Cowork are logged in the standard finance and operations audit infrastructure, just like operations performed through the application client.
+- **Review operations carefully.** Copilot Cowork can perform write operations (creating records, updating data, or taking actions that modify the system state) when asked. Review your prompts carefully, as Copilot Cowork executes the requested operations directly.
 
 ## Limitations
 
-- The Dynamics 365 ERP apps plugin requires version 10.0.47 or later of finance and operations apps.
+- The Dynamics 365 ERP apps plugin requires version 10.0.45 or later of finance and operations apps (with all quality updates installed).
 - The MCP server isn't supported on Cloud Hosted Environments (CHE).
 - Some complex form interactions might require multiple tool calls and can take longer than simple data lookups.
 - The plugin is currently available in regions where Copilot Cowork is deployed. Learn more about the latest availability in [Explore Copilot products by geography and languages](https://releaseplans.microsoft.com/availability-reports/?report=copilotproductreport).
