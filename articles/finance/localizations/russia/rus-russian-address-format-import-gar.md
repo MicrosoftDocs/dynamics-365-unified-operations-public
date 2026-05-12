@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/05/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -96,7 +96,7 @@ To import from GAR, follow these steps:
     > [!IMPORTANT]
     > Currently, there is a size limit of 2 gigabyte(GB) for address import. The state can't be imported if it contains an XML file that exceeds the 2-GB size limit.
 
-   ![Parameters FastTab in the Import from GAR dialog.](../media/RUAddressImportGARDialog.png)
+   :::image type="content" source="../media/RUAddressImportGARDialog.png" alt-text="Screenshot of the Parameters FastTab in the Import from GAR dialog.":::
 
     Because of the size limit for address import, you must unzip the downloaded database and create a zip file for the states that are required. You can import one state or several states. If you want to import several states, the zip file should contain folders that have those states. Follow these steps to create a zip file that has the required states.
 
@@ -110,7 +110,7 @@ To import from GAR, follow these steps:
     - AS\_OPERATION\_TYPES\_\*
     - AS\_ROOM\_TYPES\_\*
 
-    ![Address metadata.](../media/RUAddressMetadata.png)
+    :::image type="content" source="../media/RUAddressMetadata.png" alt-text="Screenshot of the address metadata files.":::
 
     > [!NOTE]
     > - Don't change the folder names in the zip file. The names should remain the codes of states.
@@ -118,7 +118,7 @@ To import from GAR, follow these steps:
 
 The urban/rural settlement and locality are imported to the **City** level with the corresponding **Address level** value. The **Parent Urban/Rural settlement** field will be set to the corresponding code of the urban/rural settlement if it exists.
 
-![City level on the Address setup page.](../media/RUAddressSetupCity.png)
+:::image type="content" source="../media/RUAddressSetupCity.png" alt-text="Screenshot of the City level on the Address setup page.":::
 
 > [!NOTE]
 > Filtering by the **Urban/Rural settlement**, **City**, and **Locality** address levels isn't supported. Codes for cities (including urban/rural settlements and localities), districts, and streets are automatically generated during import. The codes are unique in the parent address component level. If the current parent level component has no children, either **001** or **0001** will be assigned, depending on the object type. If there are child records, the new code will be incremented by 1.
@@ -135,13 +135,13 @@ Follow the steps in [Address setup](../../../fin-ops-core/dev-itpro/organization
 
 To comply with the GAR address format, on the **Address setup** page, on the **Address format** tab, add the new **Urban/Rural settlement** and **Locality** address components that are available in the **Address application object** enumeration (enum).
 
-![Urban/Rural settlement and Locality address components added on the Address setup page.](../media/RUAddressFormatSetup.png)
+:::image type="content" source="../media/RUAddressFormatSetup.png" alt-text="Screenshot of Urban/Rural settlement and Locality address components added on the Address setup page.":::
 
 These address components are also available on the **Manage addresses** page, and in the **New Address** and **Edit address** dialoges.
 
-![Urban/Rural settlement and Locality address components on the Manage addresses page.](../media/RUAddressManageAddresses.png)
+:::image type="content" source="../media/RUAddressManageAddresses.png" alt-text="Screenshot of Urban/Rural settlement and Locality address components on the Manage addresses page.":::
 
-![Urban/Rural settlement and Locality address components in the Edit address dialog.](../media/RUAddressEditAddress.png)
+:::image type="content" source="../media/RUAddressEditAddress.png" alt-text="Screenshot of Urban/Rural settlement and Locality address components in the Edit address dialog.":::
 
 
 

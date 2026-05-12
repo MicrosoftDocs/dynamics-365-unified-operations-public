@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/25/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2025-03-25
@@ -28,6 +28,7 @@ For detailed implementation steps, see the official documentation linked in each
 ## 1. I can't enable the new "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, what should I do?
 
 Ensure you have:
+
 - The latest ER configurations.
 - Imported the data package `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY.zip`.
 - Installed the E-Invoicing add-in.
@@ -37,10 +38,12 @@ For more information, see [Security enhancements in UK MTD VAT integration \(clo
 ## 2. I enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with response code 500 during submission. What should I do?
 
 Check that you're using:
+
 - The correct combination of HMRC test user ID and password to generate the authorization code.
 - The correct VAT registration number provided with test is ID.
 
 To confirm the correct test VAT registration number:
+
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing** > **UK MTD VAT testing**)
 1. Expand the **Message additional fields** FastTab
 1. Check the value of the **Tax registration number** other field is the VAT registration number obtained from HMRC test user.
@@ -52,6 +55,7 @@ For more information, see [Obtain test user credentials](emea-gbr-mtd-vat-integr
 This issue can happen if you reimport the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY.zip` package after enabling the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature.
 
 If so, follow these steps to fix the problem:
+
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Executable class settings** and change the **Action type** field to **Web service** for the following executable classes:
    - RequestVATLiabilities
    - RequestVATPayments
@@ -67,7 +71,7 @@ If so, follow these steps to fix the problem:
    - Test retrieves VAT obligations
    - Test submits VAT return
 1. On the same **Tax** > **Setup** > **Electronic messages** > **Message processing actions** page, change the **Executable class** to:
-   
+
 | Action | Executable class |
 |--------|------------------|
 | Retrieve VAT obligations | RetrieveVATObligations |
@@ -77,7 +81,7 @@ If so, follow these steps to fix the problem:
 | Test retrieves VAT obligations | TestRetrieveVATObligations |
 | Test submits VAT return | TestSubmitVATReturn |
 
-These settings are automatically provided to your system when you enable the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature. However, these settings can revert back to the previous state when you reimport the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY.zip` package. 
+These settings are automatically provided to your system when you enable the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature. However, these settings can revert back to the previous state when you reimport the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY.zip` package.
 This issue causes the error 404 during submission of queries to HMRC's APIs when the feature is enabled.
 
 ## 4. I enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I still get a warning to enable the new feature during submission. What should I do?
@@ -106,9 +110,9 @@ To check this issue, follow these steps:
 
 Ensure you complete the fraud prevention headers setup as specified in the documentation: [Set up application-specific parameters for MTD VAT web request headers format](emea-gbr-mtd-vat-integration-setup.md#headers).
 
-## 8. I didn't enable the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I don't see the auth code box when trying to get the access token.
+## 8. I didn't enable the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I don't see the auth code box when trying to get the access token
 
-If you don't enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature but you don't see the dialog on **Web applications** page by **Get authorization code** button on the Action pane, 
+If you don't enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature but you don't see the dialog on **Web applications** page by **Get authorization code** button on the Action pane,
 make sure you're using the following version ER configurations:
 
 - MTD VAT model mapping, version 46.**72**, under the Electronic Messages framework model

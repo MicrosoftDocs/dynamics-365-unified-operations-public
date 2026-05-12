@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: checklist
 ms.custom: 
   - bap-template
-ms.date: 11/25/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-07-31
@@ -22,6 +22,7 @@ This article provides information about how to set up the Electronic messages fu
 Although this article includes the most important information about the setup, it doesn't include information about all the data. We recommend that you use a package of data entities that provides a predefined setup of the functionality and that includes all the data that you need to set up the processing for interoperation with Making Tax Digital for value-added tax (MTD VAT).
 
 > [!NOTE]
+>
 > - To meet security requirements, we implemented modifications to the direct system-to-system integration of Microsoft Dynamics 365 Finance with the HMRC web service that is used to submit value-added tax (VAT) returns for companies that are registered for VAT in the United Kingdom. These changes involve the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials that are essential for software authorization in the HMRC APIs. We recommend enabling the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature to activate the implemented security enhancements and comply with Microsoft security requirements.
 > - Learn about the transition of cloud-based deployments to the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in [Security enhancements in UK MTD VAT integration (cloud-based deployments only)](emea-gbr-mtd-vat-security-enhancements.md).
 > - This article provides information about the **Electronic messages** functionality settings when the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature is enabled as part of the guidance on how to [Prepare your environment to interoperate with HMRC's MTD VAT web service](emea-gbr-mtd-vat-integration-setup.md).
@@ -235,4 +236,3 @@ The **UK MTD VAT returns** processing uses the following electronic processing a
 | Request VAT payments                | Yes | |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

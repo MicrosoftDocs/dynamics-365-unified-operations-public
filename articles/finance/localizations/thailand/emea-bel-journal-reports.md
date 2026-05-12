@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Thailand
 ms.search.validFrom: 2016-11-30
@@ -24,6 +24,7 @@ This article explains how to work with journal reports that are specific to lega
 Periodically, Belgian companies must print a report for each journal. The report provides a chronological list of all the postings to the general ledger accounts for each journal. These reports prove the integrity of the accountancy and are used during financial audits to reconcile VAT settlement with the postings on the corresponding general ledger accounts.
 
 There are five types of reports you can generate.
+
 - **Purchase journal**: Provides an overview of all purchases.
 - **Sales journal**: Provides an overview of all sales.
 - **Financial journal**: Provides an overview of all financial entries.
@@ -33,6 +34,7 @@ There are five types of reports you can generate.
 These reports are only available to legal entities whose primary address is in Belgium.
 
 Each report consists of several sections and summaries including:
+
 - A detailed overview of the postings to the general ledger accounts.
 - A summary of the postings to the general ledger accounts.
 - A detailed overview of tax posting.
@@ -68,6 +70,7 @@ To set up journal reports, follow these steps:
 ## Sales journals report
 
 The sales journals report displays and prints a summary of sales transactions, such as sales invoices and credit memos that are posted to the general ledger. This report summarizes the following:
+
 - The payment transactions per voucher and general ledger account.
 - The overall debits and credits per general ledger account.
 - The tax details per tax code and voucher number, including the tax base amount and tax amount distribution against goods, services, and investments.
@@ -86,6 +89,7 @@ To generate the purchase journals report, go to **General ledger** \> **Inquirie
 ## Financial journal report
 
 The financial journals report displays and prints a summary of financial transactions, such as customer payments and vendor payments, that are posted to the general ledger account. This report summarizes the following:
+
 - The payment transactions per voucher and general ledger account.
 - The overall debits and credits per general ledger account.
 - The tax details per tax code and voucher number, including the tax base amount and tax amount distribution against goods, services, and investments.
@@ -142,7 +146,6 @@ To run through the example, follow these steps:
     | Belgium reporting layout | 81 | Amount of all purchases of goods, raw materials, and consumables, and related acquisition costs, excluding VAT deductible. |
     | Belgium reporting layout | 59 | Amount of deductible VAT. |
 
-
     Learn more in [Set up sales tax reporting codes](../belgium/emea-bel-intervat-tax-declaration.md#set-up-sales-tax-reporting-codes).
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
@@ -173,7 +176,7 @@ To print the sales journal report, follow these steps:
 1. In the **Final print** field, select **Yes**.
 1. Select **OK** to review the report.
 
-![eSales journal report.](../media/emea-bel-journal-reports-sales-journal-report.png)
+:::image type="content" source="../media/emea-bel-journal-reports-sales-journal-report.png" alt-text="Screenshot of the eSales journal report.":::
 
 ### Print the Purchase journal report
 
@@ -198,10 +201,10 @@ To print the purchase journal report, follow these steps:
 1. In the **Final print** field, select **Yes**.
 1. Select **OK** to view the report.
 
-![Purchase journal report page 1.](../media/emea-bel-journal-reports-purchase-journal-report-1.png)
-![Purchase journal report page 2.](../media/emea-bel-journal-reports-purchase-journal-report-2.png)
-![Purchase journal report page 3.](../media/emea-bel-journal-reports-purchase-journal-report-3.png)
-![Purchase journal report page 4.](../media/emea-bel-journal-reports-purchase-journal-report-4.png)
+:::image type="content" source="../media/emea-bel-journal-reports-purchase-journal-report-1.png" alt-text="Screenshot of the purchase journal report page 1.":::
+:::image type="content" source="../media/emea-bel-journal-reports-purchase-journal-report-2.png" alt-text="Screenshot of the purchase journal report page 2.":::
+:::image type="content" source="../media/emea-bel-journal-reports-purchase-journal-report-3.png" alt-text="Screenshot of the purchase journal report page 3.":::
+:::image type="content" source="../media/emea-bel-journal-reports-purchase-journal-report-4.png" alt-text="Screenshot of the purchase journal report page 4.":::
 
 ### Print the Financial journal report
 
@@ -227,9 +230,9 @@ To print the financial journal report, follow these steps:
 1. In the **Final print** field select **Yes**.
 1. Select **OK** to review the report.
 
-![Financial journal report page 1.](../media/emea-bel-journal-reports-financial-journal-report.png)
+:::image type="content" source="../media/emea-bel-journal-reports-financial-journal-report.png" alt-text="Screenshot of the financial journal report page 1.":::
 
-![Financial journal report page 2.](../media/emea-bel-journal-reports-financial-journal-report-2.png)
+:::image type="content" source="../media/emea-bel-journal-reports-financial-journal-report-2.png" alt-text="Screenshot of the financial journal report page 2.":::
 
 ### Print the other journal report
 
@@ -255,8 +258,8 @@ To print the **Other journal** report, follow these steps:
 1. In the **Final print** field, select **Yes**.
 1. Select **OK** and review the report result.
 
-![Other journals report page 1.](../media/emea-bel-journal-reports-other-journal-report-1.png)
-![Other journals report page 2.](../media/emea-bel-journal-reports-other-journal-report-2.png)
+:::image type="content" source="../media/emea-bel-journal-reports-other-journal-report-1.png" alt-text="Screenshot of the other journals report page 1.":::
+:::image type="content" source="../media/emea-bel-journal-reports-other-journal-report-2.png" alt-text="Screenshot of the other journals report page 2.":::
 
 ### Print the overview journal report
 
@@ -267,8 +270,6 @@ To print the overview journal report, follow these steps:
 1. In the **To date** field, select **5/31/2021**.
 1. Select **OK** and review the report result.
 
-![Overview journal report.](../media/emea-bel-journal-reports-overview-journal-report.png)
-
-
+:::image type="content" source="../media/emea-bel-journal-reports-overview-journal-report.png" alt-text="Screenshot of the overview journal report.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

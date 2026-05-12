@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/10/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
@@ -22,7 +22,7 @@ This article explains how to enable and use the intracommunity value-added tax (
 > [!NOTE]
 > For scenarios involving **Intra-community VAT** in Spain, configure and use the [**Reverse charge**](../global/emea-reverse-charge.md) functionality. This approach ensures that reverse charge transactions are reported correctly in the [VAT declaration](emea-esp-vat-declaration-spain.md).  
 
-Information about the intracommunity value-added tax (VAT) can be calculated and posted automatically. When you post a European Union (EU) vendor invoice, two VAT transactions are created. One VAT transaction is created for payable sales tax, and the other VAT transaction is created for receivable sales tax. 
+Information about the intracommunity value-added tax (VAT) can be calculated and posted automatically. When you post a European Union (EU) vendor invoice, two VAT transactions are created. One VAT transaction is created for payable sales tax, and the other VAT transaction is created for receivable sales tax.
 
 Before you can use the intracommunity VAT functionality, you must enable it.
 
@@ -34,20 +34,20 @@ To enable the intracommunity VAT functionality, follow these steps:
 
 ## Calculate intracommunity VAT for purchase transactions
 
-To calculate intracommunity VAT for purchase transactions, you must have two sales tax codes that have the same tax percentage. However, one code must have a positive tax percentage, and the other code must have a negative tax percentage. You must also have a sales tax group that contains both a positive sales tax code and a negative sales tax code. 
+To calculate intracommunity VAT for purchase transactions, you must have two sales tax codes that have the same tax percentage. However, one code must have a positive tax percentage, and the other code must have a negative tax percentage. You must also have a sales tax group that contains both a positive sales tax code and a negative sales tax code.
 
-To calculate intracommunity VAT for purchase transactions, select the **Intra-community VAT** checkbox for the line that has a negative sales tax code. 
+To calculate intracommunity VAT for purchase transactions, select the **Intra-community VAT** checkbox for the line that has a negative sales tax code.
 
 ## Print intracommunity VAT on a purchase invoice
 
-To print the intracommunity VAT on a purchase invoice, follow these steps: 
+To print the intracommunity VAT on a purchase invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Form setup** page (**Accounts payable** \> **Setup** \> **Forms** \> **Form setup**).
 1. On the **Invoice** tab, enable the **Print EU sales tax on Spanish invoices** option.
 
 ## Print invoices that have intracommunity VAT amounts
 
-To print purchase invoices and intracommunity invoices that have intracommunity VAT amounts, follow these steps: 
+To print purchase invoices and intracommunity invoices that have intracommunity VAT amounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to the vendor invoice page.
 1. On the **Process** tab, select **Print setup** \> **Print options**.
@@ -69,7 +69,7 @@ To review posted intracommunity VAT amounts, follow these steps:
 
 The following example procedure shows you how to set up sales tax codes and post and print transactions for Intra-community VAT.
 
-1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**. 
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 1. On the **Ledger and sales tax** tab, on the **Sales tax** FastTab, set the **Intra-community VAT** option to **Yes**.
 
     :::image type="content" source="../media/1_Intra-community_VAT.png" alt-text="Screenshot of the Accounts payable parameters page, Ledger and sales tax tab, showing the Intra-community VAT field.":::
@@ -116,6 +116,5 @@ The following example procedure shows you how to set up sales tax codes and post
     :::image type="content" source="../media/2_Sales_tax.png" alt-text="Screenshot of the Sales tax transaction lines.":::
 
 1. Select **Post** to post the transaction, and then select **OK**.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

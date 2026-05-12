@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-07-23
@@ -70,13 +70,13 @@ To set up a posting group, follow these steps:
     > This Russia-specific field is used when the **Fixed offset posting** option is turned on (see the table earlier in this article for a posting example).
 
 1. Specify the appropriate accounts in the usual way for the following fields:
-- **Sales Tax Receivable**
-- **Deferred tax**
-- **Incoming tax payment**
-- **Use tax expense**
-- **Use tax payable**
-- **Vendor cash discount**
-- **Customer cash discount**
+   - **Sales Tax Receivable**
+   - **Deferred tax**
+   - **Incoming tax payment**
+   - **Use tax expense**
+   - **Use tax payable**
+   - **Vendor cash discount**
+   - **Customer cash discount**
 
 > [!NOTE]
 > Accounts in the **Posting type** field must have a **Tax** value. If the accounts don't have this value, you can add it on the **Posting validation** tab on the **Main accounts** page.
