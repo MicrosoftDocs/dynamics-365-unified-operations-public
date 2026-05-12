@@ -33,7 +33,7 @@ Use this reference to:
 | Dataverse table | "mserp_" prefix + data entity name | `mserp_SalestableBiEntity` |
 
 > [!NOTE]
-> These finance and operations data entities use the "BiEntity" suffix in their technical names (for example, `SalestableBiEntity`). This naming convention identifies them as data entities specifically designed for archive and Dataverse integration.
+> These finance and operations data entities use the "BiEntity" suffix in their technical names (for example, `SalestableBiEntity`). This naming convention identifies them as data entities designed for archive and Dataverse integration.
 
 ### Supported scenarios
 

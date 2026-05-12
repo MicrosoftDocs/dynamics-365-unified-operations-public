@@ -163,7 +163,7 @@ Index design rules:
 - Next fields: Criteria fields used in WHERE conditions, such as status or dates
 - Included columns: `RecId` (if not clustered), `SysRowVersion`, `SysDataStateCode` for performance
 
-### Add reconciliation index for LTR
+### Add reconciliation index for long-term retention
 
 ```xml
 <AxTableIndex>
@@ -727,7 +727,7 @@ To build your solution, follow these steps:
 
 After deployment:
 
-1. Navigate to **Data Management** workspace.
+1. Go to the **Data Management** workspace.
 1. Go to **Framework parameters** > **Entity settings**.
 1. Select **Refresh entity list**.
 1. Verify your finance and operations data entities appear.
