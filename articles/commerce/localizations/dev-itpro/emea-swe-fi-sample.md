@@ -2,7 +2,7 @@
 title: Control unit integration sample for Sweden
 description: This article provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 04/10/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -16,9 +16,6 @@ ms.custom:
 [!include [banner](../../../finance/includes/banner.md)]
 
 This article provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
-
-> [!NOTE]
-> This sample fiscal integration functionality replaces the earlier [sample for POS integration with control units for Sweden](retail-sdk-control-unit-sample.md). The earlier sample doesn't take advantage of the [fiscal integration framework](fiscal-integration-for-retail-channel.md) and will become obsolete in later updates. For information about how to migrate from the earlier sample to the sample that corresponds to Dynamics 365 Commerce version **10.0.22 and earlier**, see [Migrating from the earlier integration sample](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
 
 The Commerce functionality for Sweden includes a sample integration of the point of sale (POS) with Sweden-specific fiscal devices that are known as *control units*. This sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's assumed that a control unit is physically connected to a Hardware station that the POS is paired with. As an example, this sample uses the application programming interface (API) of the [CleanCash Type A](https://www.retailinnovation.se/produkter) control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash API is used.
 
@@ -97,16 +94,16 @@ For more information about how to work with receipt formats, see [Receipt templa
 The control unit integration sample for Sweden is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\CleanCash** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the control unit integration sample for Sweden (legacy)](emea-swe-fi-sample-sdk.md).
+> Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
 >
 > Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
 
 1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Also, make a note of the settings for the fiscal registration process that are [specific to this control unit integration sample](#set-up-the-registration-process).
-1. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Enable manual execution of deferred fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
-1. [Configure channel components](#configure-channel-components).
+2. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+3. [Enable manual execution of deferred fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
+4. [Configure channel components](#configure-channel-components).
 
 ### Set up the registration process
 
@@ -174,7 +171,7 @@ The fiscal connector configuration includes the following settings. This configu
 ### Configure channel components
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the control unit integration sample for Sweden (legacy)](emea-swe-fi-sample-sdk.md).
+> Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS.
 >
 > Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
@@ -221,7 +218,7 @@ To generate and release the Cloud Scale Unit and self-service deployable package
 The control unit integration sample for Sweden is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. You can find the sample in the **src\\FiscalIntegration\\CleanCash** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the control unit integration sample for Sweden (legacy)](emea-swe-fi-sample-sdk.md). Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+> Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 ### CRT extension design
 

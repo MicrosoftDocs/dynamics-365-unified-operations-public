@@ -2,7 +2,7 @@
 title: Fiscal integration overview for Commerce channels
 description: This article provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 02/26/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -171,11 +171,5 @@ The following fiscal integration samples are currently available in the Commerce
 The fiscal integration framework also implements the following fiscal integration functionality. However, this functionality is available out of the box and isn't included in the Commerce SDK:
 
 - [Digital signature for France](../france/emea-fra-cash-registers.md)
-
-The following legacy fiscal integration functionality is available in the Commerce SDK. This functionality doesn't use the fiscal integration framework and will be deprecated in later updates:
-
-- [Control unit integration sample for Sweden (legacy)](retail-sdk-control-unit-sample.md)
-- [Digital signature for France (legacy)](../france/emea-fra-deployment.md)
-- [Digital signature for Norway (legacy)](emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

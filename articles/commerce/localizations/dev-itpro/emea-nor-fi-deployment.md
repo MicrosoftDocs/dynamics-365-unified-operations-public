@@ -2,7 +2,7 @@
 title: Deployment guidelines for cash registers for Norway
 description: Learn how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
-ms.date: 05/08/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -14,9 +14,6 @@ ms.custom:
 # Deployment guidelines for cash registers for Norway
 
 [!include[banner](../../../finance/includes/banner.md)]
-
-> [!IMPORTANT]
-> Implement the steps described in this article only if you're using Microsoft Dynamics 365 Commerce version 10.0.29 or later. In Commerce version 10.0.28 or earlier, use the previous version of the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for cash registers for Norway (legacy)](emea-nor-loc-deployment-guidelines.md). If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, follow the steps in [Migrate from legacy Commerce functionality for Norway](emea-nor-fi-migration.md).
 
 This article provides guidance about how to enable the cash register functionality for the Commerce localization for Norway. The localization consists of several component extensions that let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in point of sale (POS), digitally signing sales transactions, and printing reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](../norway/emea-nor-cash-registers.md). For more information about how to configure Commerce for Norway, see [Set up Commerce for Norway](../norway/emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
