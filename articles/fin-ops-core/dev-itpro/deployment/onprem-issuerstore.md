@@ -16,6 +16,9 @@ ms.service: dynamics-365-op
 
 This article explains how to migrate an existing Finance + Operations (on-premises) Service Fabric cluster from the pinned certificate issuer validation model to the issuer store model, and how to adopt the new dedicated **ServiceFabricCluster** certificate. Together, these changes provide more reliable certificate validation, simplify certificate rotations (no more hardcoded or pinned issuer), and prepare your cluster for the upcoming public CA restriction on dual EKU certificates.
 
+> [!NOTE]
+> This guide applies only to clusters that were deployed with infrastructure scripts earlier than version 3.0.0. Clusters deployed with version 3.0.0 or later already have the issuer store model and the dedicated cluster certificate configured.
+
 ## Overview
 
 Service Fabric supports multiple models for restricting which certificate issuers are trusted:
@@ -35,8 +38,6 @@ The issuer store model is the recommended approach because:
 As part of this migration, the cluster also moves to using a dedicated **ServiceFabricCluster** certificate for node-to-node communication, separate from the **ServiceFabric** certificate that is used for server authentication. Previously, both purposes shared the same certificate.
 
 This separation is required because the cluster certificate needs both Server Authentication and Client Authentication enhanced key usages (EKUs). Starting in the summer of 2026, public certificate authorities will stop issuing certificates with this dual EKU combination, as outlined in the [CA/Browser Forum guidelines](https://github.com/microsoft/service-fabric/blob/master/release_notes/Resources/ClientEKURemoval.md). The dedicated **ServiceFabricCluster** certificate must be issued by your own PKI (such as AD&nbsp;CS) or be self-signed.
-
-The **ServiceFabric** certificate now uses only Server Authentication, and the **ServiceFabricClient** certificate uses only Client Authentication. These certificates can continue to be obtained from public certificate authorities.
 
 ## Prerequisites
 
