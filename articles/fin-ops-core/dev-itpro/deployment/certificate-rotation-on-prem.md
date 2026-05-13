@@ -4,7 +4,7 @@ description: Learn how to place existing certificates and update the references 
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 03/05/2026
+ms.date: 05/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2019-04-30

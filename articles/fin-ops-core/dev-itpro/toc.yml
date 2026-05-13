@@ -551,6 +551,8 @@ items:
             href: deployment/onprem-rsat-configuration.md
           - name: Install network printer devices in on-premises environments
             href: analytics/install-network-printer-onprem.md
+          - name: Migrate to issuer store validation and dedicated cluster certificate for Service Fabric
+            href: deployment/onprem-issuerstore.md
           - name: On-premises diagnostics
             href: deployment/on-premises-diagnostics.md
           - name: On-premises disaster recovery configuration

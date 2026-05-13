@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom:
   - bap-template
-ms.date: 05/12/2026
+ms.date: 05/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.service: dynamics-365-op
@@ -14,7 +14,9 @@ ms.service: dynamics-365-op
 
 # Migrate to issuer store validation and dedicated cluster certificate for Service Fabric
 
-This article explains how to migrate an existing Finance + Operations (on-premises) Service Fabric cluster from the pinned certificate issuer validation model to the issuer store model, and how to adopt the new dedicated **ServiceFabricCluster** certificate. Together, these changes provide more reliable certificate validation, simplify certificate rotations (no more hardcoded or pinned issuer), and prepare your cluster for the upcoming public CA restriction on dual EKU certificates.
+[!include[banner](../includes/banner.md)]
+
+This article explains how to migrate an existing Dynamics 365 Finance + Operations (on-premises) Service Fabric cluster from the pinned certificate issuer validation model to the issuer store model, and how to adopt the new dedicated **ServiceFabricCluster** certificate. Together, these changes provide more reliable certificate validation, simplify certificate rotations (no more hardcoded or pinned issuer), and prepare your cluster for the upcoming public CA restriction on dual EKU certificates.
 
 > [!NOTE]
 > This guide applies only to clusters that were deployed with infrastructure scripts earlier than version 3.0.0. Clusters deployed with version 3.0.0 or later already have the issuer store model and the dedicated cluster certificate configured.
@@ -23,11 +25,11 @@ This article explains how to migrate an existing Finance + Operations (on-premis
 
 Service Fabric supports multiple models for restricting which certificate issuers are trusted:
 
-- **Legacy model (CertificateInformation issuer stores)**: The trusted issuer is specified in the `CertificateInformation` section of the cluster configuration using the `ClusterCertificateIssuerStores`, `ServerCertificateIssuerStores`, and `ClientCertificateIssuerStores` properties. Each entry references the issuer's common name (the CA that issued the certificate) and the X509 store where the issuer certificate is located (typically `Root`).
+- **Legacy model (CertificateInformation issuer stores)**: Specify the trusted issuer in the `CertificateInformation` section of the cluster configuration using the `ClusterCertificateIssuerStores`, `ServerCertificateIssuerStores`, and `ClientCertificateIssuerStores` properties. Each entry references the issuer's common name (the CA that issued the certificate) and the X509 store where the issuer certificate is located (typically `Root`).
 
-- **Issuer store model (FabricSettings issuer stores)**: The trusted issuers are specified as FabricSettings entries under `Security/ClusterCertificateIssuerStores`, `Security/ServerCertificateIssuerStores`, and `Security/ClientCertificateIssuerStores`. Each entry maps a certificate's subject common name to a custom certificate store (for example, `ServiceFabric_IssuerTrust`) that contains the issuer CA certificates. This model allows Service Fabric to validate certificates by checking if the issuing CA certificate is present in the designated store.
+- **Issuer store model (FabricSettings issuer stores)**: Specify the trusted issuers as FabricSettings entries under `Security/ClusterCertificateIssuerStores`, `Security/ServerCertificateIssuerStores`, and `Security/ClientCertificateIssuerStores`. Each entry maps a certificate's subject common name to a custom certificate store (for example, `ServiceFabric_IssuerTrust`) that contains the issuer CA certificates. This model allows Service Fabric to validate certificates by checking if the issuing CA certificate is present in the designated store.
 
-The issuer store model is the recommended approach because:
+Use the issuer store model because:
 
 - It decouples certificate validation from the direct issuer's common name, which can change when CAs are renewed.
 - It makes certificate rotations easier, because you only need to ensure the new issuer CA certificate is in the issuer store.
@@ -37,15 +39,15 @@ The issuer store model is the recommended approach because:
 
 As part of this migration, the cluster also moves to using a dedicated **ServiceFabricCluster** certificate for node-to-node communication, separate from the **ServiceFabric** certificate that is used for server authentication. Previously, both purposes shared the same certificate.
 
-This separation is required because the cluster certificate needs both Server Authentication and Client Authentication enhanced key usages (EKUs). Starting in the summer of 2026, public certificate authorities will stop issuing certificates with this dual EKU combination, as outlined in the [CA/Browser Forum guidelines](https://github.com/microsoft/service-fabric/blob/master/release_notes/Resources/ClientEKURemoval.md). The dedicated **ServiceFabricCluster** certificate must be issued by your own PKI (such as AD&nbsp;CS) or be self-signed.
+This separation is required because the cluster certificate needs both Server Authentication and Client Authentication enhanced key usages (EKUs). Starting in the summer of 2026, public certificate authorities stop issuing certificates with this dual EKU combination, as outlined in the [CA/Browser Forum guidelines](https://github.com/microsoft/service-fabric/blob/master/release_notes/Resources/ClientEKURemoval.md). The dedicated **ServiceFabricCluster** certificate must be issued by your own PKI (such as AD&nbsp;CS) or be self-signed.
 
 ## Prerequisites
 
-Before you begin the migration, ensure the following:
+Before you begin the migration, make sure that you meet the following prerequisites:
 
-- Your infrastructure scripts are updated to version 3.0 or later.
-- Your `ConfigTemplate.xml` has been upgraded to schema version 1.13 or later (run `Update-ConfigTemplate.ps1` if needed).
-- The `IssuerStore` section in your `ConfigTemplate.xml` is configured with the name of the issuer trust store and the issuer CA certificate information.
+- Update your infrastructure scripts to version 3.0 or later.
+- Upgrade your `ConfigTemplate.xml` to schema version 1.13 or later. If needed, run `Update-ConfigTemplate.ps1`.
+- Configure the `IssuerStore` section in your `ConfigTemplate.xml` with the name of the issuer trust store and the issuer CA certificate information.
 
 ```xml
 <IssuerStore>
@@ -57,12 +59,14 @@ Before you begin the migration, ensure the following:
 </IssuerStore>
 ```
 
-The **IssuerCAs** section specifies where to find the issuer CA certificates. This is the certificate of the CA that directly issued your Service Fabric certificates. In a multi-level trust chain, this is the intermediate CA. If there's only one level (no intermediates), this is the root CA certificate. You can specify thumbprints, a folder path containing .cer files, or a combination of both.
+The **IssuerCAs** section specifies where to find the issuer CA certificates. This certificate is the CA that directly issued your Service Fabric certificates. In a multilevel trust chain, this certificate is the intermediate CA. If there's only one level (no intermediates), this certificate is the root CA certificate. You can specify thumbprints, a folder path containing .cer files, or a combination of both.
 
 > [!IMPORTANT]
-> The new version of the infrastructure scripts has added the possibility of splitting the certificate used for Finance + Operations and Service Fabric into separate certificates. It is not necessary to split the certificates for this migration. It is not recommended that you use this migration as the vehicle for splitting the certificates.
+> The new version of the infrastructure scripts adds the option to split the certificate used for Finance + Operations and Service Fabric into separate certificates. You don't need to split the certificates for this migration. Don't use this migration as the vehicle for splitting the certificates.
 
-## Migration for existing Service Fabric Clusters
+## Migration for existing Service Fabric clusters
+
+To migrate existing Service Fabric clusters, follow these steps:
 
 1. Infrastructure scripts version 3.0.0 introduces two new ADCS certificate templates (**D365FinOpsLBDServerTemplate** and **D365FinOpsLBDClientTemplate**) in addition to the existing templates. Run the following command on your AD&nbsp;CS server to create the new templates. The script skips any templates that already exist.
 
@@ -94,7 +98,7 @@ The **IssuerCAs** section specifies where to find the issuer CA certificates. Th
 
 The import script automatically creates the issuer trust store (for example, `ServiceFabric_IssuerTrust`) if it doesn't exist and imports each certificate into its designated store.
 
-1. Validate that the configuration related to your certificates is correctly applied. The script will validate that the necessary intermediate issuing certs are present for the certificates that require it.
+1. Validate that the configuration related to your certificates is correctly applied. The script validates that the necessary intermediate issuing certs are present for the certificates that require it.
 
 ```powershell
 # If remoting, only execute
@@ -107,18 +111,18 @@ The import script automatically creates the issuer trust store (for example, `Se
 1. Before you can upgrade to the issuer store model, you must remove the legacy issuer store entries from the cluster configuration. Run the following command from one of your Service Fabric nodes:
 
 > [!NOTE]
-> If you originally created your cluster with the `-DoNotRestrictCertificateIssuers` flag, your cluster configuration doesn't have legacy issuer store entries. You can skip this step and proceed directly to the next one.
+> If you originally created your cluster by using the `-DoNotRestrictCertificateIssuers` flag, your cluster configuration doesn't have legacy issuer store entries. You can skip this step and proceed directly to the next one.
 
 ```powershell
 .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -RemoveOldIssuers
 ```
 
-This generates a new cluster configuration file with the old issuer entries removed. Apply the configuration upgrade to your cluster by following the [Service Fabric cluster configuration upgrade](onprem-update-sfcluster.md) process.
+This step generates a new cluster configuration file with the old issuer entries removed. Apply the configuration upgrade to your cluster by following the [Service Fabric cluster configuration upgrade](onprem-update-sfcluster.md) process.
 
 > [!IMPORTANT]
 > Wait for the cluster configuration upgrade to complete successfully before proceeding to the next step. You can monitor the upgrade status in Service Fabric Explorer.
 
-1. After the old issuers have been removed and the configuration upgrade is complete, run the following command to upgrade to the issuer store model:
+1. After the old issuers are removed and the configuration upgrade is complete, run the following command to upgrade to the issuer store model:
 
 ```powershell
 .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToIssuerStore
@@ -127,24 +131,26 @@ This generates a new cluster configuration file with the old issuer entries remo
 This command updates the certificate common names in the cluster configuration to match the current `ConfigTemplate.xml` (including the separate **ServiceFabricCluster** certificate), adds the `Security/*IssuerStores` FabricSettings entries that map each certificate's subject name to the issuer trust store, and sets the Security parameters to enable issuer store validation. Apply the generated cluster configuration to your cluster by following the [Service Fabric cluster configuration upgrade](onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration) process.
 
 > [!NOTE]
-> The Service Fabric cluster will initiate more than one upgrade process as it needs to go through multiple intermidiate steps to reach the desired state. So you may see the cluster finish an upgrade and proceed to start another upgrade almost immediately.
+> The Service Fabric cluster initiates more than one upgrade process as it needs to go through multiple intermediate steps to reach the desired state. So you might see the cluster finish an upgrade and proceed to start another upgrade almost immediately.
 
 1. After the configuration upgrade completes, verify the migration was successful. Open Service Fabric Explorer and confirm the cluster is healthy.
 
-## Troubleshooting
+## Problems and resolutions
 
 ### The upgrade script throws an error about old issuer stores
 
-If you see the error "The cluster configuration still has old issuer stores defined in CertificateInformation," you must run `Update-SFClusterConfig.ps1 -RemoveOldIssuers` first and complete the cluster configuration upgrade before you can run `-UpgradeToIssuerStore`.
+If you see the error "The cluster configuration still has old issuer stores defined in CertificateInformation," run `Update-SFClusterConfig.ps1 -RemoveOldIssuers` first and complete the cluster configuration upgrade before you run `-UpgradeToIssuerStore`.
 
 ### The RemoveOldIssuers script warns that there are no issuers to remove
 
-This warning means the legacy issuer store entries have already been removed from the cluster configuration. You can proceed directly to the `-UpgradeToIssuerStore` step.
+This warning means the legacy issuer store entries are already removed from the cluster configuration. You can proceed directly to the `-UpgradeToIssuerStore` step.
 
 ### Certificate validation fails after the upgrade
 
-If certificate validation fails after the upgrade, verify the following:
+If certificate validation fails after the upgrade, verify the following items:
 
 - The issuer CA certificate is present in the issuer trust store on every node. You can check by running `Get-ChildItem Cert:\LocalMachine\ServiceFabric_IssuerTrust` on each node.
-- The issuer CA certificate in the store is the direct issuer of your Service Fabric certificates. In a multi-level chain, this should be the intermediate CA, not the root CA.
+- The issuer CA certificate in the store is the direct issuer of your Service Fabric certificates. In a multilevel chain, this certificate should be the intermediate CA, not the root CA.
 - The certificate subject names in the cluster configuration match the subjects in your `ConfigTemplate.xml`.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
