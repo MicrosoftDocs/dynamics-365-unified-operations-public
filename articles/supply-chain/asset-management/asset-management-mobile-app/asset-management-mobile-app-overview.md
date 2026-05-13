@@ -1,6 +1,6 @@
 ---
-title: Asset Management mobile app overview (deprecated)
-description: The Asset Management mobile app for Microsoft Dynamics 365 Supply Chain Management is deprecated. Learn about the app's capabilities and where to find deprecation guidance.
+title: Asset Management mobile app overview
+description: The Asset Management mobile app for Microsoft Dynamics 365 Supply Chain Management is now available as an open-source sample. Learn about the app's capabilities and where to find the source code.
 author: jodahlMSFT
 ms.author: jodahl
 ms.reviewer: kamaybac
@@ -11,12 +11,12 @@ ms.custom:
   - bap-template
 ---
 
-# Asset Management mobile app overview (deprecated)
+# Asset Management mobile app overview
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> The Asset Management mobile app is deprecated as of April 30, 2026. Critical maintenance continues and the app remains available through the Power Platform admin center until October 30, 2026. After that date the app is removed and no further updates are issued. For the full deprecation timeline, transition guidance, and source-code availability, see [Asset Management mobile app deprecation](deprecation.md).
+> The Asset Management mobile app is now available as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). Same functionality, freely customizable. For the timeline and transition guidance, see [Asset Management mobile app open-source release](open-source-release.md).
 
 The Asset Management mobile app provides the following capabilities for workers and organizations that use Asset Management for Microsoft Dynamics 365 Supply Chain Management:
 
@@ -39,7 +39,7 @@ The following illustration shows an example of a list of jobs for a work order i
 
 ## Next steps
 
-- [Asset Management mobile app deprecation](deprecation.md)
+- [Asset Management mobile app open-source release](open-source-release.md)
 - [Onboard the Asset Management mobile app](onboard-app.md)
 - [Manage work orders using the Asset Management mobile app](work-orders.md)
 - [File maintenance requests using the Asset Management mobile app](maintenance-requests.md)

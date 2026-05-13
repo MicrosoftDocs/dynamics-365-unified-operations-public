@@ -595,12 +595,12 @@
           href: asset-management/controlling-and-reporting/item-where-used.md
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
-      - name: The Asset management mobile app (deprecated)
+      - name: The Asset Management mobile app
         items:
-        - name: Asset Management mobile app overview (deprecated)
+        - name: Asset Management mobile app overview
           href: asset-management/asset-management-mobile-app/asset-management-mobile-app-overview.md
-        - name: Asset Management mobile app deprecation
-          href: asset-management/asset-management-mobile-app/deprecation.md
+        - name: Asset Management mobile app open-source release
+          href: asset-management/asset-management-mobile-app/open-source-release.md
         - name: Onboard the Asset Management mobile app
           href: asset-management/asset-management-mobile-app/onboard-app.md
         - name: Manage work orders using the Asset Management mobile app

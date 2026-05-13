@@ -16,7 +16,7 @@ ms.custom:
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> The Asset Management mobile app is deprecated as of April 30, 2026. Critical maintenance continues and the app remains available through the Power Platform admin center until October 30, 2026. After that date the app is removed and no further updates are issued. For the full deprecation timeline, transition guidance, and source-code availability, see [Asset Management mobile app deprecation](deprecation.md).
+> The Asset Management mobile app is now available as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). Same functionality, freely customizable. For the timeline and transition guidance, see [Asset Management mobile app open-source release](open-source-release.md).
 
 This article describes how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Asset Management mobile app. It also describes how to install the app on your mobile devices.
 
