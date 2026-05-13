@@ -13,7 +13,7 @@ ms.collection:
   - bap-ai-Copilot
 ---
 
-# Responsible AI FAQ for the Procurement Agent (production ready preview)
+# Responsible AI FAQ for the Procurement Agent (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Set up and configure supplier communications features (production ready preview)
+title: Set up and configure supplier communications features (production-ready preview)
 description: Learn how to set up and configure supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
 author: t-benebo
 ms.author: benebotg
@@ -14,7 +14,7 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Set up and configure supplier communications features (production ready preview)
+# Set up and configure supplier communications features (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -41,7 +41,7 @@ Before you can use the supplier communications, your system must meet the follow
     - Optional: If you want the agent to send emails automatically, turn on the feature *(Production ready preview) Procurement Agent – Supplier communications - automatically sending follow-up emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
 
     > [!TIP]
-    > If you can't enable the *Agent management* features, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
+    > If you can't enable the *Agent management* feature, make sure that all of its [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
 
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
     - First, install *Copilot for finance and operations apps* version 1.0.03048.2 or later. If it's already installed, update it to the latest version.

@@ -1,5 +1,5 @@
 ---
-title: Review impact of purchase order changes from vendors (production ready preview)
+title: Review impact of purchase order changes from vendors (production-ready preview)
 description: Purchase order impact analysis helps you review and respond to vendor changes. Learn how to assess and manage supply chain risks.
 author: lisascholz91
 ms.author: lisascholz
@@ -21,7 +21,7 @@ Impact analysis can automatically run based on supplier changes received through
 
 ## Set up sources that automatically trigger impact analysis
 
-To use impact analysis on incoming change requests received through emails or the vendor collaboration interface, first enable the relevant sources. Learn more in [Supplier communications features of the Procurement Agent (production ready preview)](procurement-agent-supplier-com-overview.md) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
+To use impact analysis on incoming change requests received through emails or the vendor collaboration interface, first enable the relevant sources. Learn more in [Supplier communications features of the Procurement Agent (production-ready preview)](procurement-agent-supplier-com-overview.md) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
 To enable impact analysis to run based on change requests coming through one or both sources, follow these steps:
 
@@ -36,27 +36,27 @@ To enable impact analysis to run based on change requests coming through one or 
 
 ## Review changes received via email (supplier communications)
 
-The supplier communications features of the Procurement Agent classify whether emails from vendors are confirmations, change requests, or related to something else (indicated as *Other*). If you enable impact analysis, it runs automatically for all the change requests you receive. If an email that has been classified as a *Change request* in the list pane *Has impact*, this means that either a purchase order header or line change *Has impact*.
+The supplier communications features of the Procurement Agent classify whether emails from vendors are confirmations, change requests, or related to something else (indicated as *Other*). If you enable impact analysis, it runs automatically for all the change requests you receive. If an email that the system classifies as a *Change request* in the list pane is shown as *Has impact*, it means that it includes either a purchase order header or line change that *Has impact*.
 
-Vendors can communicate changes to both purchase order headers and lines. For example, the whole purchase order can be delayed, specific lines can have delays and/or quantity changes, or a combination thereof: a purchase order is delayed, while the quantity of one or more purchase order lines are reduced. For this reason, there is an **Impact** column on both the **Purchase order header** and **Purchase order lines** grids.
+Vendors can communicate changes to both purchase order headers and lines. For example, the whole purchase order can be delayed, specific lines can have delays or quantity changes, or a combination of these changes can occur. For this reason, there's an **Impact** column on both the **Purchase order header** and **Purchase order lines** grids.
 
-The impact analysis is run for purchase order line changes only. If a delay to an entire purchase order is communicated, i.e. to the purchase order header, then the Procurement Agent propagates this delay to all of the lines in that purchase order, and runs an impact analysis on all lines individually. Any line-level changes always take precedence, so if a delay to the purchase order header is communicated, but one line is even more delayed, for example, then the Procurement Agent will run the impact analysis on the line-level delay.
+The system runs the impact analysis for purchase order line changes only. If a delay to an entire purchase order is communicated, that delay applies to the purchase order header, the Procurement Agent propagates this delay to all of the lines in that purchase order, and runs an impact analysis on all lines individually. Any line-level changes always take precedence, so if a delay to the purchase order header is communicated, but one line is even more delayed, the Procurement Agent runs the impact analysis on the line-level delay.
 
-Follow these steps to review if changes have downstream impact:
+To review if changes have downstream impact, follow these steps:
 
 1. Open the **(Preview) Emails from vendors** page by doing one of the following steps:
     - Go to **Procurement and sourcing** \> **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace. Then select the **(Preview) Emails from vendors** tile.
     - Go to **Procurement and sourcing** \> **(Preview) Procurement Agent - Supplier communications** \> **(Preview) Emails from vendors**.
 
-1. Select an email classified as a *Change request* in the list pane, and then look at the grids on the **Summary** FastTab, where changed field values are highlighted in bold. These changes can be on the purchase order header and/or line(s)
-1. Check the **Impact** column on both the **Purchase order header** and **Purchase order line** grids. It shows one of the following values based on the impact analysis results: *Has impact* or *No impact*
-   1. If a change to a **Purchase order header** *Has impact*, this means that a purchase order header delay causes at least one line to have downstream impact. If there has been no header change, but instead line-level changes, then you should check the **Impact** column on the **Purchase order lines** grid.
-   2. Purchase order line changes can show the following results:
+1. Select an email classified as a *Change request* in the list pane, and then look at the grids on the **Summary** FastTab, where changed field values are highlighted in bold. These changes can be on the purchase order header and/or lines.
+1. Check the **Impact** column on both the **Purchase order header** and **Purchase order line** grids. It shows one of the following values based on the impact analysis results: *Has impact* or *No impact*.
+   1. If a change to a **Purchase order header** *Has impact*, this condition means that a purchase order header delay causes at least one line to have downstream impact. If there isn't a header change, but instead line-level changes, check the **Impact** column on the **Purchase order lines** grid.
+   1. Purchase order line changes can show the following results:
       - *Has impact* - Change affects downstream orders and/or inventory levels.
       - *No impact* - Change can be safely accepted.
 
-2. Expand the **Impact of purchase order line** FastTab to see a brief summary of each line change that *Has impact*. <!-- KFM: I only ever see one of these, but it seems like we might have a different one for each line with impact--True? What about header changes with impact? -->
-3. To view the full impact analysis of a change that *Has impact*, select the **View details** button. The **Impact analysis** page opens. Learn more about this page in the [Impact analysis details page](#impact-analysis-dialog) section later in this article. 
+1. Expand the **Impact of purchase order line** FastTab to see a brief summary of each line change that *Has impact*.
+1. To view the full impact analysis of a change that *Has impact*, select the **View details** button. The **Impact analysis** page opens. Learn more about this page in the [Impact analysis details page](#impact-analysis-page) section later in this article.
 
 ## Review changes received via vendor collaboration interface
 
@@ -66,14 +66,14 @@ When vendors respond to purchase orders through the vendor collaboration interfa
 1. On the **Orders** FastTab, open the **In external review requires action** tab.
 1. Find and select a purchase order with a **Vendor response status** of *Accepted with changes*.
 1. To view more details about the impact of the proposed change on the selected purchase order, do one of the following steps: <!-- KFM: I don't have any data here, so I couldn't confirm this step. -->
-    - On the toolbar, select **View impact analysis** to open the **Impact analysis** page, which is described in the next section. <!-- KFM: Confirm whether this is a page or a dialog and what it's name is. -->
-    - On the toolbar, select **View responses to latest sent order** to open the vendor's proposed changes. In the **Purchase order line impact** section, review the impact summary and select **View details** to see the full impact analysis on the **Impact analysis** dialog, which is described in the next section. <!-- KFM: Confirm whether this is a page or a dialog and what it's name is. Is it correct that this is the page described in the next section? -->
+        - On the toolbar, select **View impact analysis** to open the **Impact analysis** page, which is described in the next section.
+    - On the toolbar, select **View responses to latest sent order** to open the vendor's proposed changes. In the **Purchase order line impact** section, review the impact summary and select **View details** to see the full impact analysis on the **Impact analysis** page, which is described in the next section.
 
-<a name="impact-analysis-dialog"></a>
+<a name="impact-analysis-page"></a>
 
 ## Impact analysis details page
 
-The **Impact analysis** page opens when you select **View details** from either the email-based workflow or the vendor collaboration workflow. This dialog shows all the downstream effects of the proposed change in one place. The **Impact analysis** dialog includes a summary of the impact, a detailed list of impacted orders, and a detailed list of inventory impacts, including a graph that shows projected inventory levels over time. The following subsections describe the various parts of the **Impact analysis** dialog.
+The **Impact analysis** page opens when you select **View details** from either the email-based workflow or the vendor collaboration workflow. This page shows all the downstream effects of the proposed change in one place. The **Impact analysis** page includes a summary of the impact, a detailed list of impacted orders, and a detailed list of inventory impacts, including a graph that shows projected inventory levels over time. The following subsections describe the various parts of the **Impact analysis** page.
 
 ### Filter and item information
 
@@ -91,7 +91,7 @@ The **Purchase order line impact** FastTab provides an AI-generated summary of t
 
 ### Impacted orders
 
-The **Impacted orders** FastTab shows a detailed table of all downstream orders affected by the purchase order change. It includes sales orders, production orders, transfer orders, safety stock orders, and forecasts that are impacted by the proposed change. This detailed view helps you understand exactly which orders are affected and how, so you can make informed decisions about accepting the change and communicating with relevant stakeholders.
+The **Impacted orders** FastTab shows a detailed table of all downstream orders affected by the purchase order change. It includes sales orders, production orders, transfer orders, safety stock orders, and forecasts that the proposed change impacts. This detailed view helps you understand exactly which orders are affected and how, so you can make informed decisions about accepting the change and communicating with relevant stakeholders.
 
 Each row in the grid on the **Impacted orders** FastTab provides the following information about the impacted order:
 

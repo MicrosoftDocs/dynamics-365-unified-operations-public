@@ -1,5 +1,5 @@
 ---
-title: Simulate whether purchase order changes have impact (production ready preview)
+title: Simulate whether purchase order changes have impact (production-ready preview)
 description: Simulate purchase order changes and review their impact in real time. Take control of your procurement process and make data-driven decisions with confidence.
 author: lisascholz91
 ms.author: lisascholz
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Simulate whether purchase order changes have impact (production ready preview)
+# Simulate whether purchase order changes have impact (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

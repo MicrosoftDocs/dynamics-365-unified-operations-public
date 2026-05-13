@@ -122,7 +122,7 @@
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/supply-chain
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/supply-chain
-        - name: Immersive Home (production ready preview)
+        - name: Immersive Home (production-ready preview)
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/supply-chain
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/supply-chain
@@ -2125,7 +2125,7 @@
           href: demand-planning/time-series.md
         - name: Copilot grid cursor
           href: demand-planning/copilot-grid-cursor.md
-        - name: Generative insights for Demand planning (production ready preview)
+        - name: Generative insights for Demand planning (production-ready preview)
           href: demand-planning/generative-insights.md
         - name: Analyze demand plans with Copilot
           href: demand-planning/demand-planning-copilot.md
@@ -2457,11 +2457,11 @@
           href: procurement/tasks/create-project-purchase-order.md
         - name: Create a repeat purchase order
           href: procurement/tasks/create-repeat-purchase-order.md
-      - name: Procurement Agent (production ready preview)
+      - name: Procurement Agent (production-ready preview)
         items:
         - name: Procurement Agent overview
           href: procurement/procurement-agent-overview.md
-        - name: Impact analysis (production ready preview)
+        - name: Impact analysis (production-ready preview)
           items:
           - name: Impact analysis overview
             href: procurement/procurement-agent-impact-analysis-overview.md
@@ -2473,7 +2473,7 @@
             href: procurement/procurement-agent-impact-analysis-review-changes.md
           - name: Simulate whether purchase order changes have impact
             href: procurement/procurement-agent-impact-analysis-simulation.md
-        - name: Supplier communications (production ready preview)
+        - name: Supplier communications (production-ready preview)
           items:
           - name: Supplier communications features of the Procurement Agent
             href: procurement/procurement-agent-supplier-com-overview.md
@@ -4095,7 +4095,7 @@
             href: warehousing/spatial-locations-setup.md
         - name: Control work by using work templates and location directives
           href: warehousing/control-warehouse-location-directives.md
-        - name: Dynamic work classification (production ready preview)
+        - name: Dynamic work classification (production-ready preview)
           href: warehousing/dynamic-work-classification.md
         - name: Work with location directives
           href: warehousing/create-location-directive.md
@@ -4295,9 +4295,9 @@
         href: faq-confirmed-po-changes.md
       - name: Responsible AI FAQ for Workload insights with Copilot
         href: faq-wma-copilot.md
-      - name: Responsible AI FAQ for the Procurement Agent (production ready preview)
+      - name: Responsible AI FAQ for the Procurement Agent (production-ready preview)
         href: faq-supplier-communications-agent.md
-      - name: Responsible AI FAQ for Generative insights for Demand planning (production ready preview)
+      - name: Responsible AI FAQ for Generative insights for Demand planning (production-ready preview)
         href: faq-demand-planning-generative-insights.md
   - name: Development and administration for finance and operations apps
     href: ../fin-ops-core/dev-itpro/index.md

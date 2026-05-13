@@ -1,5 +1,5 @@
 ﻿---
-title: Follow up on purchase orders using the Procurement Agent (production ready preview)
+title: Follow up on purchase orders using the Procurement Agent (production-ready preview)
 description: Learn how to use the Procurement Agent to identify unconfirmed or delayed purchase orders and automate follow-up emails tailored to your business needs.
 author: t-benebo
 ms.author: benebotg
@@ -14,7 +14,7 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Follow up on purchase orders by using the Procurement Agent (production ready preview)
+# Follow up on purchase orders by using the Procurement Agent (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

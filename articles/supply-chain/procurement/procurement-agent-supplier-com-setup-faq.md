@@ -1,5 +1,5 @@
 ---
-title: Solve common problems when setting up supplier communications features (production ready preview)
+title: Solve common problems when setting up supplier communications features (production-ready preview)
 description: Identify and solve typical issues when configuring supplier communications features of the Procurement Agent in Dynamics 365 Supply Chain Management to streamline vendor communication.
 author: cabeln
 ms.author: cabeln
@@ -14,7 +14,7 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Solve common problems when setting up supplier communications features (production ready preview)
+# Solve common problems when setting up supplier communications features (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

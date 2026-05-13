@@ -1,5 +1,5 @@
 ---
-title: Impact analysis overview (production ready preview)
+title: Impact analysis overview (production-ready preview)
 description: Impact analysis streamlines how purchasing teams evaluate supplier change requests, ensuring fast decisions and uninterrupted supply chain operations.
 author: lisascholz91
 ms.author: lisascholz
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Impact analysis overview (production ready preview)
+# Impact analysis overview (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

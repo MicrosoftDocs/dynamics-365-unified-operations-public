@@ -1,5 +1,5 @@
 ﻿---
-title: Supplier communications features of the Procurement Agent (production ready preview)
+title: Supplier communications features of the Procurement Agent (production-ready preview)
 description: Learn about the supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management. This agent uses AI to automate communications with vendors, so that purchasers can focus on tasks that add more value.
 author: t-benebo
 ms.author: benebotg
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Supplier communications features of the Procurement Agent (production ready preview)
+# Supplier communications features of the Procurement Agent (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

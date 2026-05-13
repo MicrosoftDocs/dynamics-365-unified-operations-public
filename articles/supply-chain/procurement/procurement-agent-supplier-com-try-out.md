@@ -1,5 +1,5 @@
 ---
-title: Try out the updates from vendors feature without a complete email setup (production ready preview)
+title: Try out the updates from vendors feature without a complete email setup (production-ready preview)
 description: Learn how to try out the updates from vendors (reading vendor emails) functionality of the Procurement Agent without having to do a complete email setup first.
 author: t-benebo
 ms.author: benebotg
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Try out the *updates from vendors* feature without a complete email setup (production ready preview)
+# Try out the *updates from vendors* feature without a complete email setup (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

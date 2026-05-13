@@ -1,5 +1,5 @@
 ---
-title: How impact analysis works (production ready preview)
+title: How impact analysis works (production-ready preview)
 description: Understand how impact analysis works to identify and resolve issues caused by purchase order line changes, ensuring smooth order fulfillment.
 author: lisascholz91
 ms.author: lisascholz
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# How impact analysis works (production ready preview)
+# How impact analysis works (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

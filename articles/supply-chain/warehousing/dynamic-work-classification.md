@@ -1,5 +1,5 @@
 ---
-title: Dynamic work classification (production ready preview)
+title: Dynamic work classification (production-ready preview)
 description: Learn how to use Power Fx formulas to dynamically assign work pools, priorities, location directive codes, and work classes to warehouse work.
 author: Mirzaab
 ms.author: mirzaab
@@ -13,7 +13,7 @@ ms.collection:
   - ai-assisted
 ---
 
-# Dynamic work classification (production ready preview)
+# Dynamic work classification (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 
