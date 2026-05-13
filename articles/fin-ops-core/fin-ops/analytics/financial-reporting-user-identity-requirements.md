@@ -1,7 +1,7 @@
 ---
 title: User identity requirements for Financial Reporting
 description: Learn about user identity requirements and supported access patterns for Financial Reporting in Dynamics 365 Finance and Operations.
-author: JinnieWong  
+author: jinniew  
 ms.author: jiwo
 ms.topic: article
 ms.date: 05/13/2026
