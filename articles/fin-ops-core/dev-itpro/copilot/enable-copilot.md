@@ -124,10 +124,9 @@ As was previously mentioned, most Copilot features in finance and operations app
 | Dynamics 365 Supply Chain Management | [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md) | This feature is installed and enabled by default in Demand planning version 1.0.0.1067 and later. |
 | Dynamics 365 Supply Chain Management | Review and accept changes to confirmed purchase orders | [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md). |
 | Dynamics 365 Supply Chain Management | Workload insights with Copilot in the Warehouse Management mobile app | [Enable Workload insights with Copilot](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md). |
-| Dynamics 365 Supply Chain Management | Procurement Agent | [Set up the Procurement Agent](../../../supply-chain/procurement/procurement-agent-setup.md). |
+| Dynamics 365 Supply Chain Management | Procurement Agent | [Set up and configure supplier communications features](../../../supply-chain/procurement/procurement-agent-supplier-com-setup.md) and/or [Set up impact analysis](../../../supply-chain/procurement/procurement-agent-impact-analysis-setup.md). See also [Procurement Agent overview (production-ready preview)](../../../supply-chain/procurement/procurement-agent-overview.md). |
 | Dynamics 365 Supply Chain Management | Generative insights for Demand planning | Automatically installed and enabled when you [install Demand planning](../../../supply-chain/demand-planning/install-demand-planning.md). |
 
 ## Responsible AI FAQs
 
 For information about the capabilities and limitations of AI-powered Copilot features in finance and operations apps, see [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](../responsible-ai/responsible-ai-overview.md).
-
