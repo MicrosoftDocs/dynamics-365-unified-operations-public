@@ -103,8 +103,8 @@ To enable the performance improvements for Audit File Financial (XAF), follow th
 #### Step 1: Enable the required features in Feature management
 
 1. Go to **Feature management** (**System administration** > **Workspaces** > **Feature management**).
-2. Search for and enable the **[Netherlands] Audit File Financial XAF 4.0 - performance improvement** feature.
-3. Search for and enable the **Performance enhancement for general ledger dimension set balance calculation** feature.
+2. Search for and enable the **Performance enhancement for general ledger dimension set balance calculation** feature.
+3. Search for and enable the **[Netherlands] Audit File Financial XAF 4.0 - performance improvement** feature.
 
 > [!IMPORTANT]
 > The **[Netherlands] Audit File Financial XAF 4.0 - performance improvement** feature is the main switch that activates the optimized XAF 4.0 generation. When this feature is enabled, the system uses the new *Audit file model mapping* configuration and exposes the **Ledger transactions export format** parameter in General ledger parameters.
@@ -118,7 +118,7 @@ When the *[Netherlands] Audit File Financial XAF 4.0 - performance improvement* 
 
 1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
 2. On the **Ledger** tab, locate the **Ledger transactions export format** field.
-3. Select the appropriate ER format for the audit file export.
+3. Select the **Audit File Financial XAF 4.0 in XML (NL)** ER format for the audit file export.
 
 > [!NOTE]
 > This parameter is only visible and available when the *[Netherlands] Audit File Financial XAF 4.0 - performance improvement* feature is enabled.
@@ -126,8 +126,8 @@ When the *[Netherlands] Audit File Financial XAF 4.0 - performance improvement* 
 #### Step 3: Set up financial dimension sets with balance tracking
 
 1. Go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimension sets**.
-2. Ensure that the dimension sets required for your Audit File Financial reporting are defined.
-3. Select each relevant dimension set and select **Enable balances** to start tracking balances for it.
+2. Ensure that the dimension set required for Audit File Financial reporting is defined. The *[Netherlands] Audit File Financial XAF 4.0 - performance improvement* feature uses the main account dimension set.
+3. Select relevant dimension set and select **Enable balances** to start tracking balances for it. 
 4. Verify the balance status using the **Balance status** button. The system uses a background process automation job (*General ledger balance process*) that runs every 5 minutes by default to keep balances up to date.
 
 > [!NOTE]
