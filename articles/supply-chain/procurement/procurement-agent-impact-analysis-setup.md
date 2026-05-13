@@ -75,7 +75,7 @@ Use the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Hom
 
 ##### Required security roles
 
-Add the agent identity user both to the Dataverse environment and to Supply Chain Management. Assign the agent identity user the security roles shown in the following lists. Some user roles are common for the Procurement Agent - supplier communications and impact analysis.
+Add the agent identity user both to the Dataverse environment and to Supply Chain Management. Assign the agent identity user the security roles shown in the following lists. Some user roles are common for the supplier communications and impact analysis features.
 
 - Required Dataverse user roles:
 
