@@ -4,7 +4,7 @@ description: Learn about configuring a file destination for an ER format, includ
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 04/08/2026
+ms.date: 04/07/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -18,11 +18,11 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-You can configure a file destination for each FOLDER or FILE component of an Electronic reporting (ER) format that you configure to generate outbound documents. When you set the destination, the generated document is available for download from the web browser.
+You can configure a file destination for each FOLDER or FILE component of an Electronic reporting (ER) format configured to generate outbound documents. Based on the setting of the destination, the generated document is available for download from the web browser.
 
 On the **Destination settings** page, if you set **Enabled** to **Yes**, an open or save dialog box opens when the configuration finishes running.
 
-:::image type="content" source="./media/ER_Destinations-EnableFileDestination.png" alt-text="Screenshot of the Destination setting page." lightbox="./media/ER_Destinations-EnableFileDestination.png":::
+:::image type="content" source="./media/ER_Destinations-EnableFileDestination.png" alt-text="Screenshot of the Destination setting page showing the Enabled option." lightbox="./media/ER_Destinations-EnableFileDestination.png":::
 
 ## Additional resources
 

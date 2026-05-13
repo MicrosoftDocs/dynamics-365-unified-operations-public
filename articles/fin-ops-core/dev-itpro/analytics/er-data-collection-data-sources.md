@@ -4,7 +4,7 @@ description: Learn about how to use DATA COLLECTION data sources in Electronic r
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -20,9 +20,9 @@ ms.assetid:
 
 Use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure the format component of an ER solution that generates outbound documents in different formats. The hierarchical structure of the configured format component consists of various types of format elements. These format elements fill generated documents with the required information at runtime. By default, when you run an ER format, the format elements run in the same order as they appear in the format hierarchy: one by one, from top to bottom.
 
-When ER runs a format element that contains a binding, it runs the formula of that binding. The format element adds the value to a generated document. For example, the binding can pass the value of a data model field to a format element. You can configure a DATA COLLECTION data source to collect values of data model fields at runtime, sum values, and fill a generated document with the collected values. To use this approach, change the initial binding so that the configured DATA COLLECTION data source passes the value of a data model field to a format element. By passing values through the DATA COLLECTION data source, you can collect required details for further use.
+When ER runs a format element that contains a binding, the formula of that binding is run. The format element adds the value to a generated document. For example, the binding can pass the value of a data model field to a format element. You can configure a DATA COLLECTION data source to collect values of data model fields at runtime, sum values, and fill a generated document with the collected values. To use this approach, change the initial binding so that the configured DATA COLLECTION data source passes the value of a data model field to a format element. By passing values through the DATA COLLECTION data source, you can collect required details for further use.
 
-When you configure a DATA COLLECTION data source, specify a value type that the data source manages. The following [data types](er-formula-supported-data-types-primitive.md) are currently supported for collecting values:
+When you configure a DATA COLLECTION data source, specify a value type that will be managed in the data source. The following [data types](er-formula-supported-data-types-primitive.md) are currently supported for collecting values:
 
 - Boolean
 - Date
@@ -40,7 +40,7 @@ Use the `Result` property of a DATA COLLECTION data source to access the list of
 
 By default, a DATA COLLECTION data source collects only unique values.
 
-To collect all values, set the **Collect all values** field of the configured DATA COLLECTION data source to **Yes**. When you set the **Collect all values** field to **Yes**, the `Sum(Flag)` parameterized property becomes available. You can use this property to get the total amount of all currently collected values. In this property, the `Flag` argument is a [Boolean](er-formula-supported-data-types-primitive.md#boolean) value that indicates whether the total value must be reset.
+To collect all values, set the **Collect all values** field of the configured DATA COLLECTION data source to **Yes**. When the **Collect all values** field is set to **Yes**, the `Sum(Flag)` parameterized property becomes available. You can use this property to get the total amount of all currently collected values. In this property, the `Flag` argument is a [Boolean](er-formula-supported-data-types-primitive.md#boolean) value that is used to indicate whether the total value must be reset.
 
 - When the value **False** is provided, summing continues from the previously collected amount.
 - When the value **True** is provided, a new summing starts.
@@ -73,11 +73,11 @@ You can complete the procedures in this example in the USMF company in Microsoft
 1. In the **Electronic report parameters** dialog box, select **OK**.
 1. Download and review the file that the web browser offers.
 
-    :::image type="content" source="./media/er-data-collection-data-sources-01.png" alt-text="Screenshot of the downloaded file that contains the results of the initial format execution.":::
+    :::image type="content" source="./media/er-data-collection-data-sources-01.png" alt-text="Screenshot of downloaded file that contains the results of the initial format execution.":::
 
 ### Modify the format of the ER solution to calculate the running tax total
 
-If the volume of transactions is much larger than the volume in the current example, the time that summing requires might increase and cause performance problems. By changing the settings of the format, you can help prevent these performance problems. Because you access tax values to include them in the generated report, you can reuse that information to sum tax values.
+If the volume of transactions is much larger than the volume in the current example, the time that summing requires might increase and cause performance issues. By changing the settings of the format, you can help prevent these performance issues. Because you access tax values to include them in the generated report, you can reuse that information to sum tax values.
 
 1. On the **Format designer** page, on the **Mapping** tab, select **Add root**.
 1. In the **Add data source** dialog box, select **Functions** > **Data collection**.
@@ -118,7 +118,7 @@ If the volume of transactions is much larger than the volume in the current exam
 1. In the **Electronic report parameters** dialog box, select **OK**.
 1. Download and review the file that the web browser offers.
 
-    :::image type="content" source="./media/er-data-collection-data-sources-03.png" alt-text="Screenshot of the downloaded file that contains the results of the modified format execution.":::
+    :::image type="content" source="./media/er-data-collection-data-sources-03.png" alt-text="Screenshot of downloaded file that contains the results of the modified format execution.":::
 
 ### Modify the format to evaluate the list of collected tax values
 
@@ -140,18 +140,18 @@ If the volume of transactions is much larger than the volume in the current exam
 1. In the **Electronic report parameters** dialog box, select **OK**.
 1. Download and review the file that the web browser offers.
 
-    :::image type="content" source="./media/er-data-collection-data-sources-04.png" alt-text="Screenshot of the downloaded file that contains results of another modified format execution.":::
+    :::image type="content" source="./media/er-data-collection-data-sources-04.png" alt-text="Screenshot of downloaded file that contains results of another modified format execution.":::
 
 ## Frequently asked questions
 
-### If I have to calculate running totals and collect data, what is the difference between using a DATA COLLECTION data source and using the built-in DATA COLLECTION functions?
+### If I need to calculate running totals and collect data, what's the difference between using a DATA COLLECTION data source and using the built-in DATA COLLECTION functions?
 
-You can use both a DATA COLLECTION data source and the built-in [DATA COLLECTION](er-functions-category-data-collection.md) functions for data collection, summing, and counting, based on information that you pass to a generated outbound document. However, consider the following points when deciding which technique to use.
+You can use both a DATA COLLECTION data source and the built-in [DATA COLLECTION](er-functions-category-data-collection.md) functions for data collection, summing, and counting, based on information that is passed to a generated outbound document. However, consider the following points when deciding which technique to use.
 
 | Data source | Built-in functions |
 |-------------| ------------------ |
-| Only values are collected. | <p>Named values are collected. Therefore, you can compute totals for separate groups of values.</p><p>Additionally, you can extract groups as a list.</p><p>You can also collect text values.</p> |
-| Unique values are automatically collected. | You need to configure settings to extract a list of unique values from the collected values. |
+| Only values are collected. | <p>Named values are collected. Therefore, totals can be computed for separate groups of values.</p><p>Additionally, groups can be extracted as a list.</p><p>Text values can also be collected.</p> |
+| Unique values are automatically collected. | Additional settings are required to extract a list of unique values from the collected values. |
 | Performance depends on the volume of collected values. | In practice, performance doesn't depend on the volume of collected values. |
 | This technique works for all types of outbound documents. | This technique works only for text and XML documents. |
 

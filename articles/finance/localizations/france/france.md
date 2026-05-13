@@ -40,8 +40,9 @@ This article includes information and links to resources that can help you set u
 - [Daily interest calculation for late payment and lump sum in the invoice and collection letter](fr-00018-daily-interest.md)
 - [Derogatory depreciation](emea-fra-derogatory-depreciation.md)
 - [Chronological invoice and voucher numbers](emea-fra-chronological-invoices-vouchers.md)
-- [NAF codes and SIRET numbers](emea-fra-naf-codes-siret-numbers.md)
-- [Set up NAF codes and SIRET numbers](fr-00003-naf-codes-siret-numbers.md)
+- [Establishments in France](emea-fra-establishments-for-france.md)
+- [Registration numbers setup for France](emea-fra-registration-numbers-setup-for-france.md)
+- [NAF codes](fr-00003-naf-codes-siret-numbers.md)
 - [RB/SL depreciation](emea-fra-rbsl-depreciation.md)
 - [VAT declaration](emea-fra-VAT-declaration-preview-France.md)
 - [EU sales list for France (DES)](emea-fra-eu-sales-list.md)
@@ -51,7 +52,7 @@ This article includes information and links to resources that can help you set u
 - [Reporting on payment deadlines for customer and vendor invoices](emea-fra-reporting-on-payment-deadlines.md)
 - Commerce
   - [Cash register functionality](../../../commerce/localizations/france/emea-fra-cash-registers.md)
-  - [Deployment guidelines for cash registers](../../../commerce/localizations/france/emea-fra-deployment.md)
+  - [Deployment guidelines for cash registers](../../../commerce/localizations/france/emea-fra-fi-deployment.md)
 
 ## Additional resources
 

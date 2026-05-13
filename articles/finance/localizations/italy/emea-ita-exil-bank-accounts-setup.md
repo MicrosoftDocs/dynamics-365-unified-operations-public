@@ -3,8 +3,10 @@ title: Bank data usability enhancement
 description: Learn how you can help save time and simplify bank data registration for customers and vendors, including an outline on import bank groups.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/16/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy

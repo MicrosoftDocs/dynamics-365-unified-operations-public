@@ -4,7 +4,7 @@ description: Learn about you can debug the data sources of an executed ER format
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 04/01/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -20,7 +20,7 @@ ms.custom:
 
 [!include[banner](../includes/banner.md)]
 
-When you [configure](tasks/er-format-configuration-2016-11.md) an Electronic reporting (ER) solution to generate outbound documents, you define the methods that get data out of the application and put it in the generated output. To make the life cycle support of the ER solution more efficient, your solution should consist of an ER data model and its mapping components, and also an ER format and its mapping components. The model mapping is application-specific, whereas other components remain application-agnostic. Therefore, several ER components might affect the process of entering data in the generated output.
+When you [configure](tasks/er-format-configuration-2016-11.md) an Electronic reporting (ER) solution to generate outbound documents, you define the methods that get data out of the application and enter it in the generated output. To make the life cycle support of the ER solution more efficient, your solution should consist of an ER data model and its mapping components, and also an ER format and its mapping components. The model mapping is application-specific, whereas other components remain application-agnostic. Therefore, several ER components might affect the process of entering data in the generated output.
 
 Sometimes, the data in the generated output looks different from the same data in the application database. In these cases, you want to determine which ER component is responsible for the data transformation. The ER data source debugger feature significantly reduces the time and cost that are involved in this investigation. You can interrupt the execution of an ER format and open the data source debugger interface. There, you can browse the available data sources and select an individual data source for execution. This manual execution simulates the execution of the data source during the real run of an ER format. The result is presented on a page where you can analyze the data that is received.
 
@@ -43,9 +43,9 @@ The following settings of ER formats aren't currently accessible for data source
 
 - To complete the examples in this article, you must have access to one of the following [roles](../sysadmin/tasks/assign-users-security-roles.md):
 
-  - Electronic reporting developer
-  - Electronic reporting functional consultant
-  - System administrator
+    - Electronic reporting developer
+    - Electronic reporting functional consultant
+    - System administrator
 
 - Set the company to **DEMF**.
 
@@ -62,7 +62,7 @@ The following settings of ER formats aren't currently accessible for data source
 1. Extract the **ISO20022 Credit transfer.xml** payment file from the ZIP file.
 1. Open the extracted payment file by using the XML file viewer.
 
-    In the payment file, the International Bank Account Number (IBAN) code of the vendor bank account contains no spaces. Therefore, it differs from the value that you [entered](#enteredIBANcode) on the **Bank accounts** page.
+    In the payment file, the International Bank Account Number (IBAN) code of the vendor bank account contains no spaces. Therefore, it differs from the value that was [entered](#enteredIBANcode) on the **Bank accounts** page.
 
     :::image type="content" source="./media/er-data-debugger-payment-file.png" alt-text="Screenshot of IBAN code without spaces in the payment file.":::
 
@@ -77,14 +77,14 @@ The following settings of ER formats aren't currently accessible for data source
     > [!NOTE]
     > This parameter is user-specific and company-specific.
 
-    :::image type="content" source="./media/er-data-debugger-user-parameters.png" alt-text="Screenshot of the User parameters dialog box.":::
+    :::image type="content" source="./media/er-data-debugger-user-parameters.png" alt-text="Screenshot of User parameters dialog box with Enable data debugging at format run option.":::
 
 ## Process a vendor payment for debugging
 
 1. Follow the steps in [Appendix 3](#appendix3) of this article to process vendor payments.
 1. In the message box, select **Yes** to confirm that you want to interrupt vendor payment processing and instead start data source debugging on the **Debug Datasources** page.
 
-    :::image type="content" source="./media/er-data-debugger-start-debugging.png" alt-text="Screenshot of the confirmation message box.":::
+    :::image type="content" source="./media/er-data-debugger-start-debugging.png" alt-text="Screenshot of confirmation message box for starting data source debugging.":::
 
 ## Debug data sources that are used in payment processing
 
@@ -93,7 +93,7 @@ The following settings of ER formats aren't currently accessible for data source
 1. On **Debug Datasources**, on the Action Pane, select **Model mapping** to start debugging from this ER component.
 1. In the data source pane on the left, select the **$notSentTransactions** data source, and then select **Read all records**.
 
-    You can select **Read 1 record**, **Read 10 records**, **Read 100 records**, or **Read all records** to force the appropriate number of records to be read from the selected data source. In this way, you can simulate access to the data source from the running ER format.
+    To force the appropriate number of records to be read from the selected data source, select **Read 1 record**, **Read 10 records**, **Read 100 records**, or **Read all records**. By using this approach, you can simulate access to the data source from the running ER format.
 
 1. In the data pane on the right, select **Expand all**.
 
@@ -103,13 +103,13 @@ The following settings of ER formats aren't currently accessible for data source
 1. Expand the **vendBankAccountInTransactionCompany()** method, and select the nested **IBAN** field.
 1. Select **Get value**.
 
-    Select **Get value** to force the value of a selected field of the selected data source to be read. In this way, you can simulate access to this field from the running ER format.
+    Select **Get value** to force the value of a selected field of the selected data source to be read. By using this approach, you can simulate access to this field from the running ER format.
 
 1. Select **Expand all**.
 
     :::image type="content" source="./media/er-data-debugger-debugging-model-mapping.png" alt-text="Screenshot of the value of the IBAN field in the model mapping.":::
 
-    As you see, the model mapping isn't responsible for the truncated spaces, because the IBAN code that it returns for the vendor bank account includes spaces. Therefore, you must continue data source debugging.
+    As you can see, the model mapping isn't responsible for the truncated spaces, because the IBAN code that it returns for the vendor bank account includes spaces. Therefore, you must continue data source debugging.
 
 ### Debug the format mapping
 
@@ -129,9 +129,9 @@ The following settings of ER formats aren't currently accessible for data source
 ### Debug the format
 
 1. On **Debug Datasources**, on the action pane, select **Format** to continue debugging from this ER component.
-1. Expand the format elements to select **ISO20022CTReports** \> **XMLHeader** \> **Document** \> **CstmrCdtTrfInitn** \> **PmtInf**, and then select **Read all records**.
-1. Expand the format elements to select **ISO20022CTReports** \> **XMLHeader** \> **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf**, and then select **Read all records**.
-1. Expand the format elements to select **ISO20022CTReports** \> **XMLHeader** \> **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN**, and then select **Get value**.
+1. Expand the format elements to select **ISO20022CTReports** > **XMLHeader** > **Document** > **CstmrCdtTrfInitn** > **PmtInf**, and then select **Read all records**.
+1. Expand the format elements to select **ISO20022CTReports** > **XMLHeader** > **Document** > **CstmrCdtTrfInitn** > **PmtInf** > **CdtTrfTxInf**, and then select **Read all records**.
+1. Expand the format elements to select **ISO20022CTReports** > **XMLHeader** > **Document** > **CstmrCdtTrfInitn** > **PmtInf** > **CdtTrfTxInf** > **CdtrAcct** > **Id** > **IBAN** > **BankIBAN**, and then select **Get value**.
 1. Select **Expand all**.
 
     :::image type="content" source="./media/er-data-debugger-debugging-format.png" alt-text="Screenshot of the value of the IBAN field in the format.":::
@@ -146,21 +146,21 @@ The following settings of ER formats aren't currently accessible for data source
 1. On **Configurations**, select **Payment model** > **ISO20022 Credit transfer**.
 1. Select **Designer**, and then expand the elements to select **Document** > **CstmrCdtTrfInitn** > **PmtInf** > **CdtTrfTxInf** > **CdtrAcct** > **Id** > **IBAN** > **BankIBAN**.
 
-    :::image type="content" source="./media/er-data-debugger-referred-transformation.png" alt-text="Screenshot of the BankIBAN element on the Format designer page.":::
+    :::image type="content" source="./media/er-data-debugger-referred-transformation.png" alt-text="Screenshot of BankIBAN element on the Format designer page.":::
 
     As you can see, the **BankIBAN** element is configured to use the **remove not alphanumeric** transformation.
 
 1. Select the **Transformations** tab.
 
-    :::image type="content" source="./media/er-data-debugger-transformation.png" alt-text="Screenshot of the Transformations tab for the BankIBAN element.":::
+    :::image type="content" source="./media/er-data-debugger-transformation.png" alt-text="Screenshot of Transformations tab for the BankIBAN element.":::
 
-    As you can see, the **remove not alphanumeric** transformation uses an expression that truncates spaces from the text string that you provide.
+    As you can see, the **remove not alphanumeric** transformation uses an expression that truncates spaces from the provided text string.
 
 ## Start to debug in the Operation designer
 
 When you configure a draft version of the ER format that you can run directly from the Operation designer, you can access the data source debugger by selecting **Start Debugging** on the Action Pane.
 
-:::image type="content" source="./media/er-data-debugger-run-from-designer.png" alt-text="Screenshot of the Start Debugging button on the Format designer page.":::
+:::image type="content" source="./media/er-data-debugger-run-from-designer.png" alt-text="Screenshot of Start Debugging button on the Format designer page.":::
 
 You can debug the format mapping and format components of the ER format that you're editing.
 
@@ -168,7 +168,7 @@ You can debug the format mapping and format components of the ER format that you
 
 When you configure an ER model mapping that you can run from the **Model mapping** page, select **Start Debugging** on the Action Pane to access the data source debugger.
 
-:::image type="content" source="./media/er-data-debugger-run-from-designer-mapping.png" alt-text="Screenshot of the Start Debugging button on the Model mapping designer page.":::
+:::image type="content" source="./media/er-data-debugger-run-from-designer-mapping.png" alt-text="Screenshot of Start Debugging button on the Model mapping designer page.":::
 
 You can debug the model mapping component of the ER mapping that you're editing.
 
@@ -176,7 +176,7 @@ You can debug the model mapping component of the ER mapping that you're editing.
 
 ### Download an ER solution
 
-To use an ER solution to generate an electronic payment file for a vendor payment that you process, [download](download-electronic-reporting-configuration-lcs.md) the **ISO20022 Credit transfer** ER payment format from the Shared asset library in Microsoft Dynamics Lifecycle Services or from the Global repository.
+To use an ER solution to generate an electronic payment file for a processed vendor payment, [download](download-electronic-reporting-configuration-lcs.md) the **ISO20022 Credit transfer** ER payment format from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS) or from the Global repository.
 
 :::image type="content" source="./media/er-data-debugger-import-from-repo.png" alt-text="Screenshot of importing the ER payment format on the Configuration repository page.":::
 
@@ -187,11 +187,11 @@ In addition to the selected ER format, automatically import the following [confi
 - **Payment model mapping 1611** ER model mapping configuration
 - **Payment model mapping to destination ISO20022** ER model mapping configuration
 
-You can find these configurations on the **Configurations** page of the ER framework (**Organization administration** > **Electronic reporting** > **Configurations**).
+You can find these configurations on the **Configurations** page of the ER framework (**Organization administration** \> **Electronic reporting** \> **Configurations**).
 
 :::image type="content" source="./media/er-data-debugger-configurations.png" alt-text="Screenshot of configurations imported on the Configurations page.":::
 
-If any of the previously listed configurations are missing in the configuration tree, manually download them from the Lifecycle Services Shared asset library in the same way that you downloaded the **ISO20022 Credit transfer** ER payment format.
+If any of the previously listed configurations are missing in the configuration tree, manually download them from the LCS Shared asset library in the same way that you downloaded the **ISO20022 Credit transfer** ER payment format.
 
 ### Analyze the downloaded ER solution
 
@@ -205,7 +205,7 @@ If any of the previously listed configurations are missing in the configuration 
 
     Notice that the **Payments** field of the data model is bound to the **$notSentTransactions** data source that returns the list of vendor payment lines that are being processed.
 
-    :::image type="content" source="./media/er-data-debugger-model-mapping.png" alt-text="Screenshot of the Payments field on the Model mapping designer page.":::
+    :::image type="content" source="./media/er-data-debugger-model-mapping.png" alt-text="Screenshot of Payments field on the Model mapping designer page.":::
 
 #### Review the format mapping
 
@@ -216,7 +216,7 @@ If any of the previously listed configurations are missing in the configuration 
 
     Notice that the **Document** > **CstmrCdtTrfInitn** > **PmtInf** element of the **ISO20022CTReports** > **XMLHeader** file is bound to the **$PaymentByDebtor** data source that is configured to group records of the data model's **Payments** field.
 
-    :::image type="content" source="./media/er-data-debugger-format-mapping.png" alt-text="Screenshot of the PmtInf element on the Format designer page.":::
+    :::image type="content" source="./media/er-data-debugger-format-mapping.png" alt-text="Screenshot of PmtInf element on the Format designer page.":::
 
 #### Review the format
 
@@ -226,7 +226,7 @@ If any of the previously listed configurations are missing in the configuration 
 
     Notice that the format element under **Document** > **CstmrCdtTrfInitn** > **PmtInf** > **CdtTrfTxInf** > **CdtrAcct** > **Id** > **IBAN** > **BankIBAN** is configured to enter the IBAN code of the vendor account in the payment file.
 
-    :::image type="content" source="./media/er-data-debugger-format.png" alt-text="Screenshot of the BankIBAN format element on the Format designer page.":::
+    :::image type="content" source="./media/er-data-debugger-format.png" alt-text="Screenshot of BankIBAN format element on the Format designer page.":::
 
 ## <a name="appendix2"></a>Appendix 2: Configure Accounts payable
 
@@ -237,7 +237,7 @@ If any of the previously listed configurations are missing in the configuration 
 1. On the **Identification** FastTab, in the **IBAN** field, <a name="enteredIBANcode"></a>enter **GB33 BUKB 2020 1555 5555 55**.
 1. Select **Save**.
 
-:::image type="content" source="./media/er-data-debugger-iban.png" alt-text="Screenshot of the IBAN field set on the Vendor bank accounts page.":::
+:::image type="content" source="./media/er-data-debugger-iban.png" alt-text="Screenshot of IBAN field set on the Vendor bank accounts page.":::
 
 ### Set up a method of payment
 
@@ -271,5 +271,6 @@ If any of the previously listed configurations are missing in the configuration 
 1. In the **Bank account** field, select **DEMF OPER**.
 1. In the **Generate payments** dialog box, select **OK**.
 1. In the **Electronic report parameters** dialog box, select **OK**.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

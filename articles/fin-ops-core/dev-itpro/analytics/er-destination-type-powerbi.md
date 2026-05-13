@@ -4,7 +4,7 @@ description: Learn about how to configure the Power BI ER destination type for o
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 04/08/2026
+ms.date: 04/07/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -18,11 +18,11 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-You can configure a Microsoft Power BI destination for each folder or file component of an Electronic reporting (ER) format that you configure to generate outbound documents. Based on the setting of the destination, a generated document is stored in a previously configured SharePoint folder.
+You can configure a Microsoft Power BI destination for each folder or file component of an Electronic reporting (ER) format configured to generate outbound documents. Based on the setting of the destination, a generated document is stored in a previously configured SharePoint folder.
 
 Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your Dynamics 365 Finance instance to Microsoft Power BI services. The transferred files are stored on a Microsoft SharePoint Server instance that you must configure for that purpose. For more information, see [Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
-:::image type="content" source="./media/ER_Destinations-EnablePowerBIDestination.png" alt-text="Screenshot of the Destination setting page." lightbox="./media/ER_Destinations-EnablePowerBIDestination.png":::
+:::image type="content" source="./media/ER_Destinations-EnablePowerBIDestination.png" alt-text="Screenshot of the Destination setting page for Power BI configuration." lightbox="./media/ER_Destinations-EnablePowerBIDestination.png":::
 
 ## Additional resources
 

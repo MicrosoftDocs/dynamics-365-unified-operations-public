@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the AI technolog
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: faq
-ms.date: 09/11/2025
+ms.date: 05/07/2026
 ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs

@@ -4,7 +4,7 @@ description: Learn how to set up and work with the i.SAF report for legal entiti
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 02/10/2026
+ms.date: 04/16/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -227,7 +227,7 @@ To limit access to i.SAF processing, follow these steps:
 
 ## Set up the VAT registration number for the company that reports i.SAF
 
-The system retrieves the VAT registration number for the company that reports i.SAF from the registration ID that you define in the properties of the legal entity. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories). You must assign the tax registration type to the **VAT ID** tax registration category. For a more detailed walkthrough of the prerequisites for VAT ID registration, see [Set up VAT ID](../europe/eur-00015-vat-id.md).
+The system retrieves the VAT registration number for the company that reports i.SAF from the registration ID that you define in the properties of the legal entity. Learn about detailed concepts, setup guidance, and examples in [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md). You must assign the tax registration type to the **VAT ID** tax registration category. For a more detailed walkthrough of the prerequisites for VAT ID registration, see [Set up VAT ID](../europe/eur-00015-vat-id.md).
 
 Starting with version 52.26 of **i.SAF model mapping**, you can also set up a registration ID that you assign to the **Enterprise ID (COID)** tax registration category for your legal entity. When you configure the registration number for the **Enterprise ID (COID)** tax registration category for a legal entity, the system reports it in the **RegistrationNumber** field of i.SAF. Otherwise, the system reports the **RegistrationNumber** field of i.SAF with the value you set up for the **VAT ID** tax registration category.
 

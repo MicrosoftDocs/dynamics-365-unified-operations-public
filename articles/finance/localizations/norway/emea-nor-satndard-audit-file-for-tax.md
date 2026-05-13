@@ -4,7 +4,7 @@ description: Learn how to set up and generate the Standard Audit File for Tax (S
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 05/04/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -146,12 +146,12 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. On the **Sales tax code** page, select the **Sales tax code** record, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 
-    ![External codes button on the Action Pane of the Sales tax code page.](../media/nor-saf-standard-tax-codes.jpg)
+    :::image type="content" source="../media/nor-saf-standard-tax-codes.jpg" alt-text="Screenshot of the External codes button on the Action Pane of the Sales tax code page.":::
 
 1. On the **External codes** page, specify the Norwegian standard VAT tax codes that should be used for the selected sales tax code record for the purpose of SAF-T reporting.
 1. In the **Overview** section, in the **Code** field, select the identifier of the external code definition. Then, in the **Value** section, in the **Value** field, enter a standard tax code that corresponds to the selected sales tax code.
 
-    ![Setup Standard tax code for the selected Sales tax code.](../media/not-saf-external-codes-tax.png)
+    :::image type="content" source="../media/not-saf-external-codes-tax.png" alt-text="Screenshot of the setup Standard tax code for the selected Sales tax code.":::
 
 ### <a name="mainaccounts"></a> Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)
 
@@ -196,7 +196,7 @@ To associate the main accounts that are used in Finance with Norwegian standard 
 1. Select the value **NA** as the last condition in the list. It must be set to **\*Not blank\*** in the **Main account** column. Verify the value in the **Line** column to ensure that **NA** is the last condition in the table.
 1. After you finish setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
-    ![Standard account field on the Main accounts page.](../media/nor-saf-standard-main-accounts-appsppar.jpg)
+    :::image type="content" source="../media/nor-saf-standard-main-accounts-appsppar.jpg" alt-text="Screenshot of the Standard account field on the Main accounts page.":::
 
 You can easily export the setup of application-specific parameters from one version of a report and import it into another by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
 

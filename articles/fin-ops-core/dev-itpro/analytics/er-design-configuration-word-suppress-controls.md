@@ -1,10 +1,10 @@
 ---
 title: Suppress Word content controls in generated reports
-description: Learn how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed.
+description: Learn  how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed.
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -19,11 +19,11 @@ ms.dyn365.ops.version: Version 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that you fill in at runtime. To use the Word document that you create as a template for your reports, [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component. You must configure this ER format to use the designed template for report generation.
+To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that's filled in at runtime. To use the created Word document as a template for your reports, [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component. You must configure this ER format to use the designed template for report generation.
 
 In version 10.0.6 and later of Dynamics 365 Finance, you can configure formulas in your ER format to suppress some Word content controls in generated documents.
 
-The following steps explain how a user who is assigned to the System administrator or Electronic reporting functional consultant role can configure an ER format that generates reports as Word files and suppresses some of the content controls in the generated reports that you configured by using a Word template.
+The following steps explain how a user assigned to the System administrator or Electronic reporting functional consultant role can configure an ER format that generates reports as Word files and suppresses some of the content controls in the generated reports that are configured by using a Word template.
 
 You can complete these steps in the GBSI company.
 
@@ -34,7 +34,7 @@ To complete these steps, first complete the steps in the following task guides:
 - [Design a configuration for generating reports in OPENXML format](./tasks/er-design-reports-openxml-2016-11.md)
 - [Re-use ER configurations with Excel templates to generate reports in Word format](./tasks/er-design-configuration-word-2016-11.md)
 
-When you complete the steps in these task guides, you prepare the following items:
+When you complete the steps in these task guides, the following items are prepared:
 
 - A **Sample worksheet report** ER format that is configured to generate a document in Word format
 - A draft version of the **Sample worksheet report** ER format that is marked as **Runnable**
@@ -47,7 +47,7 @@ You must also download and save the following template for the sample report:
 ## <a id="tag-control"></a>Review the downloaded Word template
 
 1. In the Word desktop application, open the **SampleVendPaymDocReportBounded2.docx** template file that you downloaded earlier.
-1. Verify that the template file contains a summary section that shows the total payment amounts for every currency code that you encounter in the processed payments.
+1. Verify that the template file contains a summary section that shows the total payment amounts for every currency code encountered in the processed payments.
 
     - The summary section resides in a separate table of the Word document.
     - The first row of this table holds the table columns headings as the section header.
@@ -58,7 +58,7 @@ You must also download and save the following template for the sample report:
     > [!NOTE]
     > The repeating content control is tagged by the **SummaryLines** key that matches the field of the custom XML part that it maps to.
 
-    :::image type="content" source="./media/er-design-configuration-word-suppress-controls-image1.gif" alt-text="Screenshot of the Word template layout.":::
+    :::image type="content" source="./media/er-design-configuration-word-suppress-controls-image1.gif" alt-text="Screenshot of Word template layout showing summary section with repeating content control.":::
 
 ## Select the existing ER report configuration
 
@@ -71,7 +71,7 @@ For the following steps, reuse the existing ER configuration that you configured
 
 ## Replace the current template with the new template
 
-Currently, the system uses the **SampleVendPaymDocReportBounded.docx** file as a template to generate the output in Word format. In the following steps, you replace this Word template with the new Word template, **SampleVendPaymDocReportBounded2.docx**, that you downloaded earlier.
+Currently, the **SampleVendPaymDocReportBounded.docx** file is used as a template to generate the output in Word format. In the following steps, you replace this Word template with the new Word template, **SampleVendPaymDocReportBounded2.docx**, that you downloaded earlier.
 
 1. On **Format designer**, select **Attachments**.
 1. On **Attachments**, select **Delete** to remove the existing template.
@@ -131,7 +131,7 @@ To suppress the summary section in a generated document, based on the request of
     1. Select **Save**, and close the **Formula designer**.
 
         > [!NOTE]
-        > This formula is applied to a generated document **after all other format elements run**. To apply this formula, the process finds a Word content control that is tagged as a format element that the formula is configured for (**SummaryLines** in this case) in a generated document. The process then completely removes that content control, together with the row in the Word table that holds it. The details row of the summary section is removed from the generated document.
+        > This formula is applied to a generated document **after all other format elements run**. To apply this formula, a Word content control that is tagged as a format element that the formula is configured for (**SummaryLines** in this case) is found in a generated document. The content control is then completely removed, together with the row in the Word table that holds it. The details row of the summary section is removed from the generated document.
         >
         > At design time, you might configure the **Removed** formula for a format element, even though no content control in the Word template that you're using has a tag that matches the name of a format element that the **Removed** property is configured for. When you validate the format at design time, you receive a [warning](er-components-inspections.md#i14) about this inconsistency.
         >
@@ -144,7 +144,7 @@ To suppress the summary section in a generated document, based on the request of
 
 1. Select **Save** to save your changes to the editable format.
 
-    :::image type="content" source="./media/er-design-configuration-word-suppress-controls-image3.gif" alt-text="Screenshot of generated Word output showing vendor payment report table after applying the modified format.":::
+    :::image type="content" source="./media/er-design-configuration-word-suppress-controls-image3.gif" alt-text="Screenshot of the generated output in Word format showing format designer configuration.":::
 
 ## Run the modified format to create Word output
 
@@ -158,7 +158,7 @@ To suppress the summary section in a generated document, based on the request of
 1. In the **Electronic report parameters** dialog box, in the **Suppress summary section** field, select **Yes**.
 1. Select **OK**, and analyze the generated output.
 
-    :::image type="content" source="./media/er-design-configuration-word-suppress-controls-image4.gif" alt-text="Screenshot of the generated output in Word format.":::
+    :::image type="content" source="./media/er-design-configuration-word-suppress-controls-image4.gif" alt-text="Screenshot of generated output in Word format with suppressed summary section.":::
 
     The output doesn't contain the summary section, because it's suppressed.
 

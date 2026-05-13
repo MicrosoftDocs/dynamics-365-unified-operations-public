@@ -2,7 +2,7 @@
 title: Create customer and vendor records with an address in Peru
 description: Learn how to create customer and vendor records that have an address in Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 04/17/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.author: v-federicohe

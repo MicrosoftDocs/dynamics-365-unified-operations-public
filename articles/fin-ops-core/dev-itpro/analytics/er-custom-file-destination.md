@@ -4,7 +4,7 @@ description: Learn about how to extend the list of ER destinations that store do
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -33,7 +33,7 @@ You must also have access to the development environment for this topology.
 
 In the current topology, [create a new ER format](tasks/er-format-configuration-2016-11.md) to generate the documents that you plan to store by using a custom ER destination. Alternatively, you can [import an existing ER format into this topology](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-:::image type="content" source="media/er-custom-file-destination-format-structure.png" alt-text="Screenshot of reviewing the structure of an ER format on the Format designer page.":::
+:::image type="content" source="media/er-custom-file-destination-format-structure.png" alt-text="Screenshot of the structure of an ER format on the Format designer page.":::
 
 > [!IMPORTANT]
 > The ER format that you create or import must contain at least one of the following format elements:

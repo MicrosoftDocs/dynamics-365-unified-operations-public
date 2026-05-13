@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace  
 ms.topic: overview
-ms.date: 12/02/2024
+ms.date: 4/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-[Cost management (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It's the process of defining, managing, and reporting [Inventory accounting](cost-object.md) and [Manufacturing accounting](bom-calculations.md).
+[Cost management (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) helps you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It's the process of defining, managing, and reporting [Inventory accounting](cost-object.md) and [Manufacturing accounting](bom-calculations.md).
 
 You can define cost policies in the following areas:
 
@@ -44,11 +44,11 @@ The [Cost management Power BI content](../../fin-ops-core/dev-itpro/analytics/co
 
 ### What's new and in development
 
-Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features have been released and what new features are in development.
+To see what new features are released and what new features are in development, go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management).
 
 ### White paper
 
-[BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the articles, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
+[BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the articles, it provides concrete scenarios and data that demonstrate the effect of the various settings and configurations.
 
 ### Blogs
 

@@ -4,7 +4,7 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: article
-ms.date: 12/02/2025
+ms.date: 05/08/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -23,6 +23,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Supply Chain Management 10.0.49 release
+
+### Follow-up questions in the Copilot sidecar (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft has decided not to continue development on this preview feature. |
+| **Replaced by another feature?** | No |
+| **Product areas affected** | Microsoft finance and operations applications |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Removed. This preview feature was never made generally available and is now completely removed from all finance and operations applications. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.46 release
 

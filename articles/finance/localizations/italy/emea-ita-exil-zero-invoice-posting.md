@@ -4,7 +4,9 @@ description: Learn how you can post financial transactions for invoices that hav
 author: mrolecki
 ms.author: johnmichalak
 ms.topic: concept-article
-ms.date: 12/16/2025
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy

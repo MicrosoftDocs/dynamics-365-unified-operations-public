@@ -4,7 +4,7 @@ description: Learn how to export financial information for auditors in Sweden in
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 05/12/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -20,12 +20,13 @@ This article explains how to export financial information in Microsoft Dynamics 
 
 > [!NOTE]
 > This topic describes the functionality available in Microsoft Dynamics 365 Finance as of version **10.0.46**, which introduces the **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** feature. This feature enables the system to use the **Standard Import and Export SIE TXT (SE)** Electronic Reporting (ER) format, along with the **Standard Import and Export SIE** model and model mapping under the **Ledger accounting reports** model.
-> 
+>
 > When the **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** feature is disabled, the system continues to use the legacy  **SIE export format (SE)** ER format and the corresponding **SIE export model** model and model mapping under the **Ledger accounting reports** model are used.
 >
 > The scope of support and the algorithms implemented in the legacy ER configurations differ from those in the new configurations enabled by the **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** feature.
 >
 > The legacy ER configurations have been [announced for deprecation](../../get-started/removed-deprecated-features-finance.md#sie-export-format-se-er-format-sie-export-model-for-sweden) and will be removed in a future release:
+>
 > - **SIE export format (SE)** ER format
 > - **SIE export model** model and model mapping under the **Ledger accounting reports** model
 
@@ -35,9 +36,9 @@ As of **version 10.0.46** of Dynamics 365 Finance, you can export financial data
 - **Type 2** - Export of period end balances.
 - **Type 3** - Export of object balances.
 - **Type 4E** - Export of transactions.
-- **Type 4I** - Import of transactions, contains only verification entries. 
+- **Type 4I** - Import of transactions, contains only verification entries.
 
-### <a name="import"></a> Import ER configurations
+## <a name="import"></a> Import ER configurations
 
 In Finance, import the following ER configurations from the Global repository.
 
@@ -53,7 +54,7 @@ Import the most recent versions of the configurations. The version description u
 
 ## Prerequisites
 
-Before you export data, set up a Standardiserad Räkenskaps Utdrag (SRU) code for each general ledger account. 
+Before you export data, set up a Standardiserad Räkenskaps Utdrag (SRU) code for each general ledger account.
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Chart of accounts** \> **Accounts** \> **Main accounts**.
 1. For each main account, specify the SRU code in the **SRU code** field.
@@ -78,7 +79,7 @@ To set up the ER format, follow these steps:
 ## Export financial data in SIE format
 
 To export financial data using the formats specified by the SIE, follow these steps:
-   
+
 1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **SIE export**.
 1. On the **Electronic report parameters** dialog page, specify the report parameters.
 
@@ -94,10 +95,10 @@ To export financial data using the formats specified by the SIE, follow these st
 | Budget model                            | Select the Budget model from the dropdown list to include budget information in SIE export file. |
 | Type of chart of accounts               | Select one of the options from the list of available options. This value is reported in `#KPTYP` field of the export file. |
 
-1. Select **OK** to generate the report. 
+1. Select **OK** to generate the report.
 
-An SIE report for a long time period, such as a quarter or a year, can include a large amount of data and take a long time to be generated. 
-Therefore, we recommend that you use batch jobs. 
+An SIE report for a long time period, such as a quarter or a year, can include a large amount of data and take a long time to be generated.
+Therefore, we recommend that you use batch jobs.
 The dialog for the SIE report includes a **Run in the background** tab where you can set up report generation in batch mode. Set the **Batch processing** option to **Yes**. Learn more about batch processing in [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 To review batch jobs or find a generated file, follow these steps:

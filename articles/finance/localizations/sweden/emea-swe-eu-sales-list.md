@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ---
 
@@ -21,16 +21,16 @@ The Swedish EU sales list report contains information about the sale of goods an
 The following fields are included on the Swedish EU sales list report:
 
 - **EU sales list header**
-    - Company VAT ID
-    - Person responsible for the report
-    - Primary email and telephone number of the person
-    - Reporting period
+  - Company VAT ID
+  - Person responsible for the report
+  - Primary email and telephone number of the person
+  - Reporting period
 
 - **EU sales list lines**
-    - Customer VAT ID
-    - Total amount of items
-    - The total amount of services
-    - Total amount of the triangular trade
+  - Customer VAT ID
+  - Total amount of items
+  - The total amount of services
+  - Total amount of the triangular trade
 
 ## Setup
 
@@ -106,7 +106,7 @@ To generate the EU sales list report, follow these steps:
     | Report file name | Enter the name of the .xlsx file.                                                   |
     | Contact ID       | Select the contact for the person who is responsible for the report.                |
 
-1.  Select **OK**, and review the generated reports.
+1. Select **OK**, and review the generated reports.
 
 ## Example
 
@@ -147,7 +147,7 @@ To create an EU sales list report, follow these steps:
     | Reporting period      | 2108               | The value is the reporting year and the quarter or month number.   |
     | Contact name          | Ekelund Aaren      |                                                                    |
     | Contact phone         | 415 555-5153       |                                                                    |
-    | Contact email address | AarenE@contoso.com |                                                                    |
+    | Contact email address | <AarenE@contoso.com> |                                                                    |
 
     **EU sales list lines**
 
@@ -160,7 +160,6 @@ To create an EU sales list report, follow these steps:
 
 1. Review the report in Excel format.
 
-    ![Table Description automatically generated with medium confidence](../media/EUSL-swe.png)
-
+    :::image type="content" source="../media/EUSL-swe.png" alt-text="Screenshot of the EU sales list report for Sweden in Excel format.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

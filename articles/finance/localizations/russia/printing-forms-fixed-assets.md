@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/08/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-04-01
@@ -74,11 +74,11 @@ For example, to create a Fixed asset inventory card (\#FA-6), follow these steps
 1. In Dynamics 365 Finance, go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the **Fixed assets** tab, and then on the Action Pane, select **Documents** \> **Documents** \> **Inventory card (\#FA6)**.
 
-    ![Selection of FA inventory card.](../media/RUS-Selection-of-FA6-inventory-card.png) 
+    :::image type="content" source="../media/RUS-Selection-of-FA6-inventory-card.png" alt-text="Screenshot of the selection of FA inventory card.":::
 
 1. In the **Inventory card (\#FA-6)** page list, select **New** to create the inventory card for the value model.
 
-    ![FA inventory card.](../media/RUS-FA6-inventory-card.png)
+    :::image type="content" source="../media/RUS-FA6-inventory-card.png" alt-text="Screenshot of the FA inventory card.":::
 
 1. After the record is created, print the unified form from this page list.
 
@@ -122,7 +122,7 @@ To print documents that are created from inquiries, follow these steps:
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Inquiries** \> **Documents**.
 1. Highlight the document to print, and then select **Print**.
 
-![Print unified forms from Inquiries.](../media/RUS-Print-unified-forms.png)
+:::image type="content" source="../media/RUS-Print-unified-forms.png" alt-text="Screenshot of printing unified forms from Inquiries.":::
 
 
 

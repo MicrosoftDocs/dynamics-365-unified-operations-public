@@ -4,7 +4,7 @@ description: Learn about how to defer the execution of a sequence element in an 
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -28,9 +28,9 @@ To learn more about this feature, complete the example in this article.
 
 ## Limitations
 
-The **Deferred execution** option supports only sequence elements that you configure for an ER format that generates **outbound** documents in text format.
+The **Deferred execution** option supports only sequence elements configured for an ER format that generates **outbound** documents in text format.
 
-The **Deferred execution** option isn't applicable to sequences that you configure as trimmed sequences where the maximum length is limited.
+The **Deferred execution** option isn't applicable to sequences configured as trimmed sequences where the maximum length is limited.
 
 ## <a name="Example"></a>Example: Defer the execution of a sequence element in an ER format
 
@@ -52,7 +52,7 @@ If you didn't yet complete the example in the [Defer the execution of XML elemen
 | ER data model configuration    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
 | ER model mapping configuration | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
-Before you begin, you must also download and save the following configuration of the sample ER solution.
+Before you begin, download and save the following configuration of the sample ER solution.
 
 | Content description     |File name |
 |-------------------------|----------|
@@ -85,13 +85,13 @@ Before you begin, you must also download and save the following configuration of
 ### Activate a configurations provider
 
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
-1. On **Localization configurations**, in the **Configuration providers** section, make sure that the [configuration provider](general-electronic-reporting.md#Provider) for the Litware, Inc. (`http://www.litware.com`) sample company is listed and marked as active. If this configuration provider isn't listed or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](./tasks/er-configuration-provider-mark-it-active-2016-11.md) article.
+1. On **Localization configurations**, in the **Configuration providers** section, make sure that the [configuration provider](general-electronic-reporting.md#Provider) for the Litware, Inc. (`http://www.litware.com`) sample company is listed and marked as active. If this configuration provider isn't listed, or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](./tasks/er-configuration-provider-mark-it-active-2016-11.md) article.
 
     :::image type="content" source="./media/ER-DeferredSequence-ElectronicReportingWorkspace.png" alt-text="Screenshot of Litware, Inc. sample company on the Localization configurations page.":::
 
 ### Review the imported model mapping
 
-Review the settings of the ER model mapping component that you configured to access tax transactions and expose accessed data on request.
+Review the settings of the ER model mapping component configured to access tax transactions and expose accessed data on request.
 
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
 1. Select **Reporting configurations**.
@@ -100,7 +100,7 @@ Review the settings of the ER model mapping component that you configured to acc
 1. Select **Designer** to open the list of mappings.
 1. Select **Designer** to review the mapping details.
 1. Select **Show details**.
-1. Review the data sources that are configured to access tax transactions:
+1. Review the data sources configured to access tax transactions:
 
     - The **Transactions** data source of the *Table record* type is configured to access records of the **TaxTrans** application table.
     - The **Vouchers** data source of the *Calculated field* type is configured to return the required voucher codes (**INV-10000349** and **INV-10000350**) as a list of records.
@@ -109,7 +109,7 @@ Review the settings of the ER model mapping component that you configured to acc
     - The **Grouped** data source of the *Group By* type is configured to group filtered tax transactions of the **Filtered** data source.
     - The **TotalSum** aggregation field of the **Grouped** data source is configured to summarize values of the **\$TaxAmount** field of the **Filtered** data source for all filtered tax transactions of that data source.
 
-        :::image type="content" source="./media/ER-DeferredSequence-GroupByParameters.png" alt-text="Screenshot of TotalSum aggregation field on the Edit 'GroupBy' parameters page.":::
+        :::image type="content" source="./media/ER-DeferredSequence-GroupByParameters.png" alt-text="Screenshot of TotalSum aggregation field on the Edit GroupBy parameters page.":::
 
 1. Review how the configured data sources are bound to the data model, and how they expose accessed data to make it available in an ER format:
 
@@ -163,14 +163,14 @@ Review the settings of the ER model mapping component that you configured to acc
 
     :::image type="content" source="./media/ER-DeferredSequence-Run.png" alt-text="Screenshot of downloaded sample report file.":::
 
-Summary line 22 presents the sum of the tax values for the processed transactions. Because the format uses the **model.Data.Summary.Total** binding to return this sum, the sum is calculated by calling the **TotalSum** aggregation of the **Grouped** data source of the *GroupBy* type that uses the model mapping. To calculate this aggregation, model mapping iterates over all transactions that the **Filtered** data source selects. By comparing the execution times of lines 21 and 22, you can see that calculation of the sum took 10 milliseconds (ms). By comparing the execution times of lines 2 and 21, you can see that generation of all transactional lines took 7 ms. Therefore, a total of 17 ms was required.
+Summary line 22 presents the sum of the tax values for the processed transactions. Because the format uses the **model.Data.Summary.Total** binding to return this sum, the sum is calculated by calling the **TotalSum** aggregation of the **Grouped** data source of the *GroupBy* type that uses the model mapping. To calculate this aggregation, model mapping iterates over all transactions selected in the **Filtered** data source. By comparing the execution times of lines 21 and 22, you can determine that calculation of the sum took 10 milliseconds (ms). By comparing the execution times of lines 2 and 21, you can determine that generation of all transactional lines took 7 ms. Therefore, a total of 17 ms was required.
 
 ### Modify the format so that the summing is based on generated output
 
-If the volume of transactions is much larger than the volume in the current example, the summing time might increase and cause performance problems. By changing the setting of the format, you can help prevent these performance problems. Because you access tax values to include them in the generated report, you can reuse this information to sum tax values. For more information, see [Configure format to do counting and summing](./tasks/er-format-counting-summing-1.md).
+If the volume of transactions is much larger than the volume in the current example, the summing time might increase and cause performance issues. By changing the setting of the format, you can help prevent these performance issues. Because you access tax values to include them in the generated report, you can reuse this information to sum tax values. For more information, see [Configure format to do counting and summing](./tasks/er-format-counting-summing-1.md).
 
 1. On the **Format designer** page, on the **Format** tab, select the **Report** file element in the format tree.
-1. Set the **Collect output details** option to **Yes**. You can now configure this format by using the content of an existing report as a data source that the built-in ER functions in the [Data collection](er-functions-category-data-collection.md) category can access.
+1. Set the **Collect output details** option to **Yes**. You can now configure this format by using the content of an existing report as a data source that can be accessed by using the built-in ER functions in the [Data collection](er-functions-category-data-collection.md) category.
 1. On the **Mapping** tab, select the **Report\\Lines** sequence element.
 1. Configure the **Collected data key name** expression as `WsColumn`.
 1. Configure the **Collected data key value** expression as `WsRow`.
@@ -209,7 +209,7 @@ If the volume of transactions is much larger than the volume in the current exam
 
 ### Put values of output-based summing in the report header
 
-If you need to present the sum of tax values in the header of your report, you can modify your format.
+If, for example, you need to present the sum of tax values in the header of your report, you can modify your format.
 
 1. On the **Format designer** page, on the **Format** tab, select the **Report\\Lines\\Summary** sequence element.
 1. Select **Move up**.
@@ -239,5 +239,6 @@ If you need to present the sum of tax values in the header of your report, you c
 - [Configure format to do counting and summing](./tasks/er-format-counting-summing-1.md)
 - [Trace execution of ER format to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md)
 - [Defer the execution of XML elements in ER formats](er-defer-xml-element.md#Example)
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

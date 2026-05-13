@@ -4,8 +4,9 @@ description: Learn how to adjust tax amounts on purchase and sales orders during
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 05/01/2026
 ms.custom: 
+  - bap-template
 audience: Application User 
 ms.reviewer: johnmichalak
 ms.search.region: India

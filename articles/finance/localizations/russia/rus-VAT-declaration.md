@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/08/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-01-04
@@ -163,7 +163,7 @@ You should set up the financial report and financial report cells to calculate t
 
 You should define the following names for financial report cells. In this way, the calculated amounts will be automatically exported to section 3 of VAT declaration version 5.09.
 
-**Tax payable**
+### Tax payable
 
 | Name of cell | Line-column in section 3 | Comment |
 |---|---|--|
@@ -201,7 +201,7 @@ You should define the following names for financial report cells. In this way, t
 | УплДеклар173.6НалБаза | 115-3 | |
 | УплДеклар173.6СумНал | 115-4 | |
 
-**Tax receivable/deductible**
+### Tax receivable/deductible
 
 | Name of cell | Line-column in section 3 |
 |---|---|

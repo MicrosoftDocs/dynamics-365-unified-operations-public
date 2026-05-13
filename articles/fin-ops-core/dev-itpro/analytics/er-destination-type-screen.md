@@ -4,7 +4,7 @@ description: Learn about about how to configure a screen destination for each fo
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 04/08/2026
+ms.date: 04/07/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -18,9 +18,9 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-You can configure a screen destination for each folder or file component of an Electronic reporting (ER) format that you configure to generate outbound documents. Based on the setting of the destination, a generated document opens for preview in a separate browser tab.
+You can configure a screen destination for each folder or file component of an Electronic reporting (ER) format configured to generate outbound documents. Based on the setting of the destination, a generated document opens for preview in a separate browser tab.
 
-If you set **Enabled** to **Yes**, the system creates a preview of the output. You can view some file types, such as XML, TXT, or PDF, directly in a browser window. For other file types, such as Microsoft Excel or Word, the Microsoft Office Online service is used.
+If you set **Enabled** to **Yes**, a preview of the output is created. You can view some file types, such as XML, TXT, or PDF, directly in a browser window. For other file types, such as Microsoft Excel or Word, the Microsoft Office Online service is used.
 
 :::image type="content" source="./media/ER_Destinations-EnableScreenDestination.png" alt-text="Screenshot of the Destination setting page." lightbox="./media/ER_Destinations-EnableScreenDestination.png":::
 

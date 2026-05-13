@@ -4,7 +4,7 @@ description: Learn about how you can use cross-company data sources in Electroni
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 04/09/2026
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 [!include[banner](../includes/banner.md)]
 
-You can design Electronic reporting (ER) formats to generate outgoing documents in various formats. When you generate a document, an ER format calls data sources that you configured in a corresponding ER model mapping. To configure access to application tables for record retrieval, use ER data sources of the **Table records** type. When the accessing table is a shared table (that is, a table where data is saved without a company identifier), this data source returns all records. When the accessing table is a company-dependent table (that is, a table where data is saved per company), this data source returns only the records that the current company saved (that is, the company context that the ER format is running under).
+You can design Electronic reporting (ER) formats to generate outgoing documents in various formats. When you generate a document, an ER format calls data sources that you configured in a corresponding ER model mapping. To configure access to application tables for record retrieval, use ER data sources of the **Table records** type. When the accessing table is a shared table (that is, a table where data is saved without a company identifier), this data source returns all records. When the accessing table is a company-dependent table (that is, a table where data is saved per company), this data source returns only the records saved for the current company (that is, the company context that the ER format is running under).
 
 You can now mark every data source of the **Table records** type in a model mapping as a cross-company data source. Therefore, you can use data sources of the **Table records** type to access cross-company data in application tables.
 
@@ -28,12 +28,12 @@ If you mark a data source as cross-company, the following behavior occurs:
 - For a data source that refers to the CompanyInfo table, even though CompanyInfo is a shared table, the data source returns the records that contain the identifier of a company from the defined scope.
 - For any company-dependent table, the data source returns the records of the referenced table that contain the identifier of a company from the defined scope.
 
-In the system query dialog box, when you turn on the **Ask for query** option for any data source that you marked as cross-company, you can manually select one or more companies to include on the **Company range** tab.
+In the system query dialog box, when the **Ask for query** option is turned on for any data source marked as cross-company, you can manually select one or more companies to include on the **Company range** tab.
 
 > [!IMPORTANT]
 > Like other filters, the company filter is persisted as a last-used value for queries when you run an ER format. The filter isn't automatically changed if you change the cross-company value for a data source. To use a different cross-company value for another data source, delete the corresponding user-specific selection.
 
-For every data source that you mark as cross-company, you can select the records that you want by using the **FILTER** and **WHERE** functions in ER expressions. The **dataAreaID** field can also be used as a company identifier. Currently, the **dataAreaID** field is limited to the following types of conditions when the **FILTER** function is used:
+For every data source that is marked as cross-company, you can select the records that you want by using the **FILTER** and **WHERE** functions in ER expressions. The **dataAreaID** field can also be used as a company identifier. Currently, the **dataAreaID** field is limited to the following types of conditions when the **FILTER** function is used:
 
 - Only conditions that have a single **dataAreaID** field comparison are supported.
 - Only comparisons that have expressions that don't depend on records list items are allowed.
@@ -54,10 +54,11 @@ FILTER (MyTable,
 
 By default, the scope includes all companies of the current application. However, you can restrict it. To restrict the scope of cross-company data access for a single ER format, assign a specific organization hierarchy to the format. When you define a hierarchy for an ER format, only records for legal entities that are presented in the assigned hierarchy are returned, even though the format calls cross-company data sources. When a reference to a hierarchy that no longer exists is defined for an ER format, the default scope is applied, and the format calls cross-company data sources. In this situation, records for all application companies are returned.
 
-> [!NOTE]
-> When you turn off the **Use draft** option for the assigned to a single ER format organization hierarchy, the legal entities from the last published version of this organization hierarchy are used to identify the scope for cross-company data sources. Date effectiveness of organization hierarchies isn't supported yet in the ER framework.
+When you turn on the **Use draft** option for the assigned to a single ER format organization hierarchy, the legal entities from the draft version of this hierarchy are used to identify the scope for cross-company data sources. If the draft version doesn't exist, the legal entities from the last published version of this organization hierarchy are used.
 
-You can assign the hierarchy to a format in a specific page that you can access from the ER workspace or by using the **Organization administration \> Electronic reporting \> Legal entity filter for formats** menu item. To access the page, grant the **Maintain legal entity filters for format** privilege (ERMaintainFormatMappingLegalEntityFilters) to a user. The scope restriction of hierarchy-based legal entities for the format is applied in addition to the restriction that the user can manually specify in the system query dialog box. The intersection of these restrictions is used when the format is run.
+When you turn off the **Use draft** option for the assigned to a single ER format organization hierarchy, the legal entities from the last published version of this organization hierarchy are used to identify the scope for cross-company data sources. Date effectiveness of organization hierarchies isn't supported yet in the ER framework.
+
+Assign the hierarchy to a format in a specific page that you can access from the ER workspace or by using the **Organization administration \> Electronic reporting \> Legal entity filter for formats** menu item. To access the page, grant the **Maintain legal entity filters for format** privilege (ERMaintainFormatMappingLegalEntityFilters) to a user. The scope restriction of hierarchy-based legal entities for the format is applied in addition to the restriction that the user can manually specify in the system query dialog box. The intersection of these restrictions is used when the format is run.
 
 To learn more about this feature, play the task guide, **ER Access records of company dependent tables in cross-company mode**, which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process, and can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). This task guide walks you through the process of configuring an ER model mapping and ER format to access application tables in cross-company mode.
 

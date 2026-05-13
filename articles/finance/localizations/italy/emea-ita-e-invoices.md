@@ -4,11 +4,13 @@ description: Learn about the management of customer electronic invoices for Ital
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: article
-ms.date: 02/28/2024
+ms.custom: 
+  - bap-template
+  - sfi-image-nochange
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy
-ms.custom: sfi-image-nochange
 ---
 
 # Customer electronic invoices
@@ -49,7 +51,7 @@ Before you can begin to work with the electronic invoice functionality, the foll
 
 Select the configurations that are used to create electronic invoice XML files for sales and free text invoices, sales and free text credit notes, project invoices, and project credit notes. You can find these configurations on the **Electronic document** tab of the **Accounts receivable parameters** page (**Accounts receivable** \> **Setup** \> **Accounts receivable parameters**).
 
-![Electronic document tab of the Accounts receivable parameters page.](../media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png)
+:::image type="content" source="../media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png" alt-text="Screenshot of the Electronic document tab of the Accounts receivable parameters page.":::
 
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
@@ -73,10 +75,10 @@ To use this functionality, import the following Electronic reporting (ER) config
 You must set electronic invoice parameters to specify business scenarios and company-specific information.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice parameters**.
-2. On the **General** tab, specify the electronic signature requirement.
-3. On the **Company information** tab, specify the company information and tax representative, as required. This information overrides the information in the legal entity record.
-4. On the **Art. 2250 Civil code registration** tab, provide any required information if the company is registered under the terms of Article 2250 of the Italian Civil Code.
-5. On the **Number sequences** tab, fill in number sequences for the **eInvoice unique file number** and **eInvoice transmission number** references.
+1. On the **General** tab, specify the electronic signature requirement.
+1. On the **Company information** tab, specify the company information and tax representative, as required. This information overrides the information in the legal entity record.
+1. On the **Art. 2250 Civil code registration** tab, provide any required information if the company is registered under the terms of Article 2250 of the Italian Civil Code.
+1. On the **Number sequences** tab, fill in number sequences for the **eInvoice unique file number** and **eInvoice transmission number** references.
 
 ### <a id="edproperties"></a>Electronic document properties
 
@@ -91,7 +93,7 @@ For the functionality to work, the following data must be set up:
 
 - Electronic document property types (**Accounts receivable** \> **Setup** \> **Electronic document property types**) and the table that each document property type is applicable to. For electronic invoice functionality, the **Customers** and **Legal entities** tables are used.
 
-    ![Setting applicability on the Electronic document property types page.](../media/emea-ita-electronic-invocies-electronic-document-property-types.png)
+    :::image type="content" source="../media/emea-ita-electronic-invocies-electronic-document-property-types.png" alt-text="Screenshot of setting applicability on the Electronic document property types page.":::
 
 - Required values in the specified tables at the customer and legal entity levels:
 
@@ -143,7 +145,7 @@ The value of this field is used to define the type of communication (business-to
 
 In both cases, the system enters the value of this field in the **CodiceDestinatario** tag in the XML file.
 
-![Authority office field on the Sales demographics FastTab of a customer record.](../media/emea-ita-electronic-invocies-customer-authority-office.png)
+:::image type="content" source="../media/emea-ita-electronic-invocies-customer-authority-office.png" alt-text="Screenshot of the Authority office field on the Sales demographics FastTab of a customer record.":::
 
 If the **Authority office** field is blank, the system considers the customer a private company or professional (the transmission format equals **FPR12**), and enters **0000000** in the **CodiceDestinatario** tag in the XML file. In this case, a certified email address (PEC) should be set up. For more information, see the table in the [Electronic documents properties](#edproperties) section earlier in this article.
 
@@ -151,7 +153,7 @@ If the **Authority office** field is blank, the system considers the customer a 
 
 Go to **Accounts receivable** \> **Customers** \> **All customers**, and open a customer record in **Edit** mode. Then, on the **Invoice and delivery** FastTab, in the **E-invoice** section, find the **eInvoice register** option. If this option is set to **Yes**, the system automatically creates the record on the **Electronic customer invoices** list page. For more information, see the [Electronic invoice register](#einvoiceregister) section later in this article.
 
-![E-invoice section on the Invoice and delivery FastTab of a customer record.](../media/emea-ita-electronic-invocies-customer-e-invoice.png)
+:::image type="content" source="../media/emea-ita-electronic-invocies-customer-e-invoice.png" alt-text="Screenshot of the E-invoice section on the Invoice and delivery FastTab of a customer record.":::
 
 In the **E-invoice** section, you can also set the **eInvoice attachment** option to **Yes**. In this case, after you print an invoice (either during or after posting), the system automatically attaches the PDF file to the invoice and electronic invoice (see the [Electronic invoice register](#einvoiceregister) section), and the file is included in the XML file (**Allegati** block).
 
@@ -178,14 +180,14 @@ You can manually associate Natura codes with related sales tax codes, or you can
 Follow these steps to define Natura codes and manually associate them with sales tax codes.
 
 1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Nature codes**.
-2. Create a record.
-3. In the **Nature code** field, enter a valid Natura code.
-4. In the **Description** field, enter an explanation of what the code is used for.
-5. Repeat steps 2 through 4 to create as many additional Natura codes as you require to cover all related business operations.
-6. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and select a required sales tax code.
-7. On the **General** FastTab, in the **Nature code** field, select one of the Natura codes that you just created.
+1. Create a record.
+1. In the **Nature code** field, enter a valid Natura code.
+1. In the **Description** field, enter an explanation of what the code is used for.
+1. Repeat steps 2 through 4 to create as many additional Natura codes as you require to cover all related business operations.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and select a required sales tax code.
+1. On the **General** FastTab, in the **Nature code** field, select one of the Natura codes that you just created.
 
-![Setting the Nature code field on the Sales tax codes page.](../media/emea-ita-natura.jpg)
+:::image type="content" source="../media/emea-ita-natura.jpg" alt-text="Screenshot of setting the Nature code field on the Sales tax codes page.":::
 
 ### Reverse charge groups
 
@@ -193,7 +195,7 @@ Reverse charge groups are required when a company uses the reverse charge functi
 
 To define specific reverse charge groups for specific products or categories, go to **Tax** \> **Setup** \> **Reverse charge item groups**.
 
-![Reverse charge item groups page.](../media/emea-ita-FatturaPA-161-RC-groups.png)
+:::image type="content" source="../media/emea-ita-FatturaPA-161-RC-groups.png" alt-text="Screenshot of the Reverse charge item groups page.":::
 
 Additionally, you should set up application-specific parameters that use these reverse charge groups.
 
@@ -248,7 +250,7 @@ For more information, see the "Invoice types configuration" section in [A countr
 
 To electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type, go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates**.
 
-![Electronic signature certificates page.](../media/emea-ita-electronic-invocies-certificate.png)
+:::image type="content" source="../media/emea-ita-electronic-invocies-certificate.png" alt-text="Screenshot of the Electronic signature certificates page.":::
 
 The party that is issuing invoices must use a qualified signature certificate to sign each FatturaPA file that is transmitted to the exchange system (Sistema di Interscambio \[SdI\]). A qualified signature certificate can be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).
 
@@ -259,7 +261,7 @@ Microsoft Dynamics 365 Finance supports the **XAdES-BES** signature format. To e
     > [!NOTE]
     > You can complete the installation and configuration by using standard Windows functionality.
 
-2. Define company-level certificates and user-level certificates, as required.
+1. Define company-level certificates and user-level certificates, as required.
 
 ### <a id="destination"></a>Destination for XML file output
 
@@ -321,7 +323,7 @@ On the **Electronic customer invoices** page, you can perform the following acti
 > [!NOTE]
 > The **Electronic invoices** page (**Project management and accounting** \> **Project invoices** \> **E-invoices** \> **Electronic invoices**) resembles the **Electronic customer invoices** page and has the same functions.
 
-![Electronic customer invoices page.](../media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
+:::image type="content" source="../media/emea-ita-electronic-invocies-electronic-customer-invoices.png" alt-text="Screenshot of the Electronic customer invoices page.":::
 
 ### Move electronic invoices XML files to attachments
 

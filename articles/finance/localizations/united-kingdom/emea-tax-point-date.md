@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/04/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2020-09-06
@@ -26,7 +26,7 @@ The **Date of VAT register** field is shared globally and can be enabled in lega
 
 The **Date of VAT register** feature is enabled in the **Feature management** workspace.
 
-![Feature management workspace.](../media/date-of-vat-activating.png)
+:::image type="content" source="../media/date-of-vat-activating.png" alt-text="Screenshot of the Feature management workspace.":::
 
 After the feature is enabled, you can also define tax point transactions dates by using the **Date of VAT register** field in all of the legal entities in your application.
 
@@ -43,7 +43,7 @@ The **Date of VAT register** field is also included in the following reports:
 
 You can use the functionality in the **Date of VAT register** feature to auto-fill the **Date of VAT register** field. To set this up, set the **Date of VAT register filling** parameter on the **Sales tax groups** page.
 
-![Date of VAT register filling parameter on the Sales tax groups page.](../media/date-of-vat-filling.png)
+:::image type="content" source="../media/date-of-vat-filling.png" alt-text="Screenshot of the Date of VAT register filling parameter on the Sales tax groups page.":::
 
 When you create an invoice, the **Date of VAT register** field is automatically filled in. One of the following methods will be added based on the selection in the **Date of VAT register filling** field:
 
@@ -55,30 +55,30 @@ When you create an invoice, the **Date of VAT register** field is automatically 
 
 ## Setting the Date of VAT register field after the invoice is posted
 
-If for some reason an invoice is posted and the **Date of VAT register** field is empty, it is still possible to enter a value in the field. 
+If for some reason an invoice is posted and the **Date of VAT register** field is empty, it is still possible to enter a value in the field.
 
-To enter a value in the **Date of VAT register** field after posting, follow these steps: 
+To enter a value in the **Date of VAT register** field after posting, follow these steps:
 
-1. In Dynamics 365 Finance, go to the **Tax** \> **Periodic tasks** \> **VAT register transactions** page, which represents sales tax transactions where the **Date of VAT register** field is empty. 
-1. Select one record to update, or select multiple records by using the filter function. 
+1. In Dynamics 365 Finance, go to the **Tax** \> **Periodic tasks** \> **VAT register transactions** page, which represents sales tax transactions where the **Date of VAT register** field is empty.
+1. Select one record to update, or select multiple records by using the filter function.
 1. To define the value for the field, select **Date of VAT register** on the Action Pane, and enter the value in the dialog. The updated records are automatically filtered out from the list of records on the **VAT register transactions** page.
 
 ## Sales tax transactions extension consistency check
 
 The **Date of VAT register** field is stored in a TaxTrans_W table. This table is an extension of the TaxTrans table. When a company enables the **Date of VAT register** feature, data source queries on some pages in the system start to work differently. Those queries now join the TaxTrans_W table. Therefore, users might not be able to see tax transactions that were posted in an earlier period. This issue occurs because the TaxTrans_W table wasn't previously used, and therefore there are no corresponding transactions in the table.
 
-To help avoid this issue, you can run the **Sales tax transactions extension** consistency check. 
+To help avoid this issue, you can run the **Sales tax transactions extension** consistency check.
 
 To run the **Sales tax transactions extension** consistency check, follow these steps:
 
-1. Go to **System administration** \> **Periodical tasks** \> **Database** \> **Consistency check**. 
+1. Go to **System administration** \> **Periodical tasks** \> **Database** \> **Consistency check**.
 1. In the **Consistency check** dialog, expand **Program** \> **General ledger** \> **Sales tax**, and then select the **Sales tax transactions extension** checkbox. You don't have to select the parent checkboxes if you only want to run the **Sales tax transactions extension** consistency check.
 
-    ![Consistency check dialog with Sales tax transactions extension checkbox highlighted.](../media/date-of-vat-consistency-check.png)
+    :::image type="content" source="../media/date-of-vat-consistency-check.png" alt-text="Screenshot of the Consistency check dialog with Sales tax transactions extension checkbox highlighted.":::
 
 1. When you run the **Sales tax transactions extension** consistency check, set the following options:
     - **Check**: Determine whether any transactions are missing in the TaxTrans_W table. The system will notify you about the number of transactions in the TaxTrans table that lack corresponding records in the TaxTrans_W table.
-    - **Fix**: Compensate for missing records in the TaxTrans_W table. The system inserts corresponding records into the TaxTrans_W table. Sales tax transactions that were posted in previous periods are again seen everywhere in the system. 
+    - **Fix**: Compensate for missing records in the TaxTrans_W table. The system inserts corresponding records into the TaxTrans_W table. Sales tax transactions that were posted in previous periods are again seen everywhere in the system.
 1. In the **Consistency check** dialog, in the **From date** field, ensure that you select the correct date. If you want to recover all the tax transactions in the system, leave the **From date** field blank.
 
 The **Sales tax transactions extension** consistency check is available in build version 10.0.234.21 and later for version 10.0.6 of the application, and for version 10.0.7 and later. In these versions, it's available only when the Date of VAT register feature is turned on in the **Feature management** workspace.
@@ -87,14 +87,11 @@ The **Sales tax transactions extension** consistency check is available in build
 
 Starting in the 10.0.25 release, the **Sales tax settlement and reporting by date of VAT register** feature is available. With this feature enabled, you can settle and report sales tax by using the VAT register date. When this feature is enabled, you can set the **Date of VAT register** option to **Yes** on the **General ledger parameters** page on the **Sales tax** tab. The periodic settlement will collect sales tax transaction by the date of VAT register instead of the transaction date.
 
-![Date of VAT register option is ON in General ledger parameters.](../media/GLParameters-DateOfVATRegister.png)
+:::image type="content" source="../media/GLParameters-DateOfVATRegister.png" alt-text="Screenshot of the Date of VAT register option set to ON in General ledger parameters.":::
 
 > [!NOTE]
+>
 > - To enable the **Sales tax settlement and reporting by date of VAT register** feature, the **Date of VAT register** feature should be enabled in the **Feature management** workspace.
 > - To disable the **Sales tax settlement and reporting by date of VAT register** feature, ensure the **Date of VAT register** checkbox on the **General ledger parameters** page is set to **No**. A warning displays if the checkbox is active for some legal entities.
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

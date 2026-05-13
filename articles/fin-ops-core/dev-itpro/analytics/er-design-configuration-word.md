@@ -4,7 +4,7 @@ description: Learn about how users can configure a new Electronic reporting (ER)
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -26,7 +26,7 @@ To generate reports as Microsoft Word documents, design a template for the repor
 To use a Word document as a template for reports in Word format, configure a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). This solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component.
 
 > [!NOTE]
-> When you create a new ER format configuration to generate reports in Word format, select **Word** as the format type in the **Create configuration** dialog box or leave the **Format type** field blank.
+> When you create a new ER format configuration to generate reports in Word format, select **Word** as the format type in the **Create configuration** dropdown list or leave the **Format type** field blank.
 
 :::image type="content" source="./media/er-design-configuration-word-image2.gif" alt-text="Screenshot of creating a format configuration on the Configurations page.":::
 
@@ -37,7 +37,7 @@ The ER format component of the solution must contain the **Excel\\File** format 
 
 :::image type="content" source="./media/er-design-configuration-word-image3.gif" alt-text="Screenshot of attaching a template on the Format designer page.":::
 
-To specify the structure of data that you enter in generated reports at runtime, add **Excel\\Range** and **Excel\\Cell** nested elements for the **Excel\\File** element. Bind those elements to data sources of the editable ER format to specify the actual data that you enter in generated reports at runtime.
+You can add **Excel\\Range** and **Excel\\Cell** nested elements for the **Excel\\File** element to specify the structure of data to enter in generated reports at runtime. You must then bind those elements to data sources of the editable ER format to specify the actual data to enter in generated reports at runtime.
 
 :::image type="content" source="./media/er-design-configuration-word-image4.gif" alt-text="Screenshot of adding nested elements on the Format designer page.":::
 
@@ -45,11 +45,11 @@ When you save your changes to the ER format at design time, the hierarchical for
 
 :::image type="content" source="./media/er-design-configuration-word-image5.gif" alt-text="Screenshot of previewing the sample report template in the Word desktop application.":::
 
-When bindings of **Excel\\Range** and **Excel\\Cell** format elements run at runtime, the data that every binding delivers comes into the generated Word document as an individual field of the **Report** custom XML part. To enter the values from the fields of the custom XML part in a generated document, add the appropriate Word [content controls](/office/client-developer/word/content-controls-in-word) to your Word template to serve as placeholders for data that you fill in at runtime. To specify how content controls are filled in, map every content control to the appropriate field of the **Report** custom XML part.
+When bindings of **Excel\\Range** and **Excel\\Cell** format elements run at runtime, the data that every binding delivers comes into the generated Word document as an individual field of the **Report** custom XML part. To enter the values from the fields of the custom XML part in a generated document, add the appropriate Word [content controls](/office/client-developer/word/content-controls-in-word) to your Word template to serve as placeholders for data that's filled in at runtime. To specify how content controls are filled in, map every content control to the appropriate field of the **Report** custom XML part.
 
 :::image type="content" source="./media/er-design-configuration-word-image6.gif" alt-text="Screenshot of adding and mapping content controls in the Word desktop application.":::
 
-Replace the original Word template of the editable ER format with the modified template that now contains Word content controls that you mapped to the fields of the **Report** custom XML part.
+You must then replace the original Word template of the editable ER format with the modified template that now contains Word content controls that were mapped to the fields of the **Report** custom XML part.
 
 :::image type="content" source="./media/er-design-configuration-word-image7.gif" alt-text="Screenshot of replacing the template on the Format designer page.":::
 

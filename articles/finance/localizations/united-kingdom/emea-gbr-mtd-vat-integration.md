@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/25/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2016-02-28
@@ -62,7 +62,7 @@ The MTD VAT feature in Finance supports filing a VAT return for [Multiple VAT re
 
 ## <a name="privacy-notice"></a>Privacy notice
 
-When you enable Finance to interoperate with HMRC's MTD for VAT API, the system shares both customer content and personal data with HMRC as part of the submission of VAT information to the MTD for VAT report. This information might include location information and other personal identifiers, such as IP addresses. To learn more about the kinds of information that is included in your submission, you can view HMRC's requirements on the [HMRC website](https://go.microsoft.com/fwlink/?linkid=2099326). A system administrator can disable the interoperation with HMRC's web service in Finance by going to **Tax \> Setup \> Electronic Messages**. 
+When you enable Finance to interoperate with HMRC's MTD for VAT API, the system shares both customer content and personal data with HMRC as part of the submission of VAT information to the MTD for VAT report. This information might include location information and other personal identifiers, such as IP addresses. To learn more about the kinds of information that is included in your submission, you can view HMRC's requirements on the [HMRC website](https://go.microsoft.com/fwlink/?linkid=2099326). A system administrator can disable the interoperation with HMRC's web service in Finance by going to **Tax \> Setup \> Electronic Messages**.
 
 Your privacy is important to us. To learn more, read our [Privacy and Cookies notice](https://go.microsoft.com/fwlink/?LinkId=521839).
 

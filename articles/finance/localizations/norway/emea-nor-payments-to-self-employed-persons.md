@@ -4,7 +4,7 @@ description: Learn how to set up and generate payments to self-employed persons 
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 05/04/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
