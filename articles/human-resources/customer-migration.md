@@ -36,15 +36,15 @@ Two categories of Microsoft Dynamics 365 Human Resources customers are affected 
 
 Regardless of the category that they belong to, customers need to move data into a newly created environment on the finance and operations infrastructure and validate that the merge is successful.
 
-Going forward, the Dynamics 365 Human Resources app has its own finance and operations environment that's separate from other operations apps. In this way, customers can take advantage of extensibility options without having to merge their current data. Microsoft provides tooling and a sandbox environment that customers can use to test and validate the data migration before they move to a production environment. 
+Going forward, the Dynamics 365 Human Resources app has its own finance and operations environment that's separate from other operations apps. In this way, customers can take advantage of extensibility options without having to merge their current data. Microsoft provides tooling and a sandbox environment that customers can use to test and validate the data migration before they move to a production environment.
 
-Customers who are using other apps on the finance and operations infrastructure can merge their Human Resources data with an existing environment. 
+Customers who are using other apps on the finance and operations infrastructure can merge their Human Resources data with an existing environment.
 
 ## When will customers be moved to the finance and operations infrastructure?
 
 The transition for each company depends on that company's current configuration and readiness to move to the finance and operations infrastructure. Work with your Microsoft partner to determine the best path forward.
 
-- Organizations that use the **Human Resources** module in Dynamics 365 Finance can enable new capabilities from Dynamics 365 Human Resources as part of the regular One Version update process. 
+- Organizations that use the **Human Resources** module in Dynamics 365 Finance can enable new capabilities from Dynamics 365 Human Resources as part of the regular One Version update process.
 - Organizations that use Dynamics 365 Human Resources have access to tooling that they can use to complete the infrastructure merge. Microsoft works with customers on the transition to help prevent any interruption in service. Customers have 12 months to make the transition, starting from the time when the migration tooling becomes available.
 - Organizations that use both Dynamics 365 Human Resources and the **Human Resources** module can move their stand-alone Human Resources infrastructure onto the finance and operations infrastructure. Another option is to use the merge tooling to bring the environments into a single environment. There's no requirement or timeframe for merging the two environments.
 
@@ -124,7 +124,7 @@ Any export that you currently configure for Azure Data Lake in finance and opera
 If you want to export Human Resources data to the data lake, you can enable this feature after the migration to the finance and operations infrastructure finishes. For more information, see [Data lakes - Azure Architecture Center](/azure/architecture/data-guide/scenarios/data-lake).
 
 You can link multiple finance and operations environments to the same data lake. However, each environment points to a different folder and container. If you plan to merge environments later, carefully plan your approach.
- 
+
 ## What migration is required if I'm currently using the Human Resources module?
 
 Customers who use the **Human Resources** module get the new feature functionality from Dynamics 365 Human Resources applied to their environment through the standard One Version update process. Customers see the new functionality in their environment as it becomes available in each update. Customers can use Feature management to enable the features. Customers should plan to validate these new features by using the processes that they already have in place and use to validate other updates to their environment.
@@ -176,22 +176,28 @@ Microsoft is still defining what tools and resources will be available from Fast
 
 For more information about how licensing is affected, see [Dynamics 365 Human Resources infrastructure merge](hr-infrastructure-merge.md#licensing).
 
-## Who needs to migrate? 
+## Who needs to migrate?
+
 All customers on the standalone Human Resources infrastructure must migrate.
 
-## How long does it take to migrate using automated tooling? 
+## How long does it take to migrate using automated tooling?
+
 The migration using the automated tooling may take approximately three to four hours. However, the preparation, testing, and validation time required for your organization are dependent on your business processes, integrations, and complexity.
 
 ## What is the deadline for migrating?
-All customers must migrate their standalone environments by December 31, 2023. 
 
-## What happens to customers that don't migrate before the deadline? 
+All customers must migrate their standalone environments by December 31, 2023.
+
+## What happens to customers that don't migrate before the deadline?
+
 Microsoft plans to turn off the infrastructure for the standalone application by December 31, 2023. As a result, environments that aren't migrated won't be available.
 
 ## What happens to the Data Import Export Framework (DMF) project during the migration?
+
 The DMF import and export project are migrated to the finance and operations infrastructure. Note that certain data entities have been enhanced in the new infrastructure. It's recommended to confirm the necessary fields are found in the data entity in the new infrastructure. Remove unavailable fields in mapping or readd impacted data entity in the project to mitigate the issue.
 
 ## What steps are needed to configure Power BI after migration to the finance and operations infrastructure?
+
 Yes, follow the steps here: [Dynamics 365 Human Resources customer migration to the finance and operations infrastructure](hr-cust-migration.md#post-migration-considerations).
 
 ## How do I configure integration from Human Resources to Finance?
