@@ -18,19 +18,19 @@ This article describes the warehouse handling process for outbound loads for sal
 
 An *outbound load* is a set of shipments from a warehouse that are destined for various locations, such as customer addresses or other warehouses. Usually, outbound loads are linked to a physical delivery vehicle, such as a shipping container or truck.
 
-An outbound load is a component of the warehouse management outbound procedure, which involves organizing, picking, packaging, and sending goods to complete orders. Outbound loads can be formed either manually or automatically. Their creation depends on predefined outbound operations that influence their dependencies and functional effects.
+An outbound load is a component of the warehouse management outbound procedure, which involves organizing, picking, packaging, and sending goods to complete orders. You can form outbound loads manually or automatically. Their creation depends on predefined outbound operations that influence their dependencies and functional effects.
 
 Each outbound load can be associated with one or more order line quantities for sales orders, transfer orders, and outbound shipment orders. Your system might also contain transportation plans. Learn more about how to create and manage outbound transportation in [Transportation management overview](../transportation/transportation-management-overview.md).
 
 ## <a name="outbound-shipment-policies"></a>Outbound shipment processing policies
 
-To manage the process of shipping your orders, apply an *outbound shipment processing policy* where the desired flow is set up for your shipments.
+To manage the process of shipping your orders, apply an *outbound shipment processing policy* where you set up the desired flow for your shipments.
 
 The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** \> **Setup** \> **Shipping** \> **Outbound shipment processing policies**):
 
 - **Fill entire shipment** – Choose what to do if work creation fails for one or more lines in a shipment (for example, due to location directive failures). This feature only checks for work creation failures and doesn't check whether the full ordered quantity can be fulfilled. Choose one of the following options:
-    - *Enabled*: If work creation fails for any line in a shipment, then always exclude that entire shipment from the wave (create no work for that shipment), regardless of the setting for each customer.
-    - *Disabled*: If work creation fails for one or more lines in a shipment, then always skip those lines but still create work for all of the other lines, regardless of the setting for each customer.
+    - *Enabled*: If work creation fails for any line in a shipment, exclude that entire shipment from the wave (create no work for that shipment), regardless of the setting for each customer.
+    - *Disabled*: If work creation fails for one or more lines in a shipment, skip those lines but still create work for all of the other lines, regardless of the setting for each customer.
     - *Respect customer settings*: Respect the **Fill entire shipment** setting defined for each customer.
 
 - **Enforce shipment to order matching** – Choose whether the policy should permit just one shipment to be related to each outbound order, or whether multiple shipments per order should be allowed. Select one of the following values:
@@ -43,11 +43,11 @@ The following settings are configured on the **Outbound shipment processing poli
 
 ## Define default outbound shipment processing policies
 
-An outbound shipment processing policy can be assigned to each shipment. The default policy can be assigned in any of the following ways:
+Assign an outbound shipment processing policy to each shipment. Assign the default policy in any of the following ways:
 
-- **By order** – Policies that are set up on outbound orders are assigned to all shipments that are created from those orders.
-- **By customer** – A policy that is assigned to a customer is inherited by outbound orders that are created for that customer. It's then propagated to shipments that are created from those orders.
-- **By source system** – This method is related to [Warehouse management only mode](wms-only-mode-overview.md). All shipments that come from a source system inherit the policy that is assigned to that system.
+- **By order** – Assign policies that you set up on outbound orders to all shipments that you create from those orders.
+- **By customer** – Assign a policy to a customer. Outbound orders that you create for that customer inherit the policy. The policy then propagates to shipments that you create from those orders.
+- **By source system** – This method is related to [Warehouse management only mode](wms-only-mode-overview.md). All shipments that come from a source system inherit the policy that you assign to that system.
 
 ## How outbound loads are created, registered, and shipped
 
@@ -79,25 +79,25 @@ Warehouse *work* controls any warehouse operation that a warehouse worker or [ma
 
 ### Outbound load shipment confirmation
 
-When all the warehouse tasks for a load are completed, a shipment confirmation procedure can be run. This procedure updates the **Load status** value to *Shipped*. It also changes the **Load packing slip background posting status** value from *None* to *Queued*. This process can be run as part of an automated [background process](confirm-outbound-shipments-from-batch-jobs.md), depending on the configuration.
+When you complete all the warehouse tasks for a load, run the shipment confirmation procedure. This procedure updates the **Load status** value to *Shipped*. It also changes the **Load packing slip background posting status** value from *None* to *Queued*. Depending on the configuration, you can run this process as part of an automated [background process](confirm-outbound-shipments-from-batch-jobs.md).
 
 > [!NOTE]
-> When the [confirm and transfer](confirm-and-transfer.md) capability is used, the system can create a new load for any load lines that weren't fully picked.
+> When you use the [confirm and transfer](confirm-and-transfer.md) capability, the system can create a new load for any load lines that aren't fully picked.
 
-### Outbound ASN generation
+### Generate an outbound ASN
 
-When a load is shipped, the system can generate an *outbound advanced shipping notice (ASN)* to notify a customer or downstream warehouse about the shipment. By default, the outbound ASN is generated from the load's *shipments* and *load lines*, which reference the originating sales order lines as they were defined when the order was released. This is true even when the warehouse is enabled for [warehouse management processes](warehouse-management-overview.md). Downstream warehouse execution work, such as picking, sorting, or packing into containers, doesn't change the packing structure of the outbound ASN.
+When you ship a load, the system can generate an *outbound advanced shipping notice (ASN)* to notify a customer or downstream warehouse about the shipment. By default, the outbound ASN is generated from the load's *shipments* and *load lines*, which reference the originating sales order lines as they were defined when the order was released. This default generation is true even when the warehouse is enabled for [warehouse management processes](warehouse-management-overview.md) (WMS). Downstream warehouse execution work, such as picking, sorting, or packing into containers, doesn't change the packing structure of the outbound ASN.
 
 > [!NOTE]
-> When a transfer order ships from one warehouse where warehouse management processes are enabled to another, the system uses the outbound shipment data to create a corresponding [inbound ASN](import-asn-data-entity.md) at the destination warehouse. The inbound ASN includes the license plate packing structure to support [license plate receiving](warehousing-mobile-device-app-license-plate-receiving.md) when the goods arrive.
+> When a transfer order ships from one WMS-enabled warehouse to another, the system uses the outbound shipment data to create a corresponding [inbound ASN](import-asn-data-entity.md) at the destination warehouse. The inbound ASN includes the license plate packing structure to support [license plate receiving](warehousing-mobile-device-app-license-plate-receiving.md) when the goods arrive.
 
 ### <a name="load-packing-slip-posting"></a>Load packing slip posting
 
-When the *packing slip* from a load is processed, the system updates the related sales order line transactions to *Deducted*. At that point, the invoicing process can begin. The *Load packing slip posting* scheduled task (**Warehouse management** \> **Periodic** \> **Load packing slip posting**) processes *Shipped* outbound loads where the **Load packing slip background posting status** value is set to *Queued*. After successful posting, the system changes the status to *None*. If any errors occur during posting, the status is changed to *Error* instead. (For more information about failed postings, you can review the details in the information log that is generated for the batch job.)
+When you process the *packing slip* from a load, the system updates the related sales order line transactions to *Deducted*. At that point, the invoicing process can begin. The *Load packing slip posting* scheduled task (**Warehouse management** \> **Periodic** \> **Load packing slip posting**) processes *Shipped* outbound loads where the **Load packing slip background posting status** value is set to *Queued*. After successful posting, the system changes the status to *None*. If any errors occur during posting, the status is changed to *Error* instead. For more information about failed postings, you can review the details in the information log that is generated for the batch job.
 
-Although the background posting procedure requires a status of *Queued*, a load packing slip can be manually posted even if the status is *Error*. After successful posting, the status is changed to *None*.
+Although the background posting procedure requires a status of *Queued*, you can manually post a load packing slip even if the status is *Error*. After successful posting, the status is changed to *None*.
 
-To enable the *Load packing slip posting* task to work in the background, you must configure appropriate settings on the **Packing slip posting parameters** page (**Warehouse management** \> **Setup** \> **Inventory** \> **Packing slip posting parameters**). Because this task is run in the background, within a batch job, you should avoid printing to the screen if printing is included in the process.
+To enable the *Load packing slip posting* task to work in the background, you must configure appropriate settings on the **Packing slip posting parameters** page (**Warehouse management** \> **Setup** \> **Inventory** \> **Packing slip posting parameters**). Because this task runs in the background, within a batch job, avoid printing to the screen if printing is included in the process.
 
 > [!TIP]
 > To enable automatic distribution of sales packing slips for each shipment, based on the predetermined values, set the **Packing slip creation policy** value to *Shipment* for the load, and supply **Preallocated packing slip ID** and **Preallocated packing slip document date** values for each associated shipment in the *Packing slip posting parameters* section.
