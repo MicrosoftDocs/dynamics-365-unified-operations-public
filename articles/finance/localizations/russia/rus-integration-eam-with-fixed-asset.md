@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2022-01-27

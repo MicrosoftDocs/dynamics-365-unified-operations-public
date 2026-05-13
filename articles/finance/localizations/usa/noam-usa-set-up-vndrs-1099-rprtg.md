@@ -4,7 +4,7 @@ description: Learn how to set up vendor records so that a 1099 box is associated
 author: v-kiarnd
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 08/04/2025
+ms.date: 05/12/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -81,7 +81,7 @@ To associate a 1099 default value with a main account, follow these steps:
 
 You can update the 1099 reporting boxes and amounts for all paid invoices for a calendar year, based on the current assignment of main accounts to 1099 boxes.
 
-> [!Note]
+> [!NOTE]
 > This functionality is available only if you're using Public sector.
 
 To update 1099 boxes and amounts, follow these steps:

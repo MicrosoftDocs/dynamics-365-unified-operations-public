@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -14,8 +14,8 @@ ms.dyn365.ops.version: 8.1
 ---
 
 # Inventory profile overview
-[!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/banner.md)]
 
 The inventory profile is intended for the implementation of and accounting for movements and on-hand inventory as they are related to a kind of activity. The kind of activity defines the way that the item was received by the organization and the restrictions that are imposed on the handling of the item. Here are some examples of kinds of activity:
 
@@ -128,7 +128,7 @@ You can specify an inventory profile on the BOM line. The inventory profile will
 The **Inventory profile** field on the BOM journal lines is filled in from one of two places:
 
 - The BOM lines
--  The **Inventory profile** field on the **Bills of materials** tab of the **Inventory and warehouse management parameters** page (if the inventory profile is active for the item and isn't specified on the BOM line)
+- The **Inventory profile** field on the **Bills of materials** tab of the **Inventory and warehouse management parameters** page (if the inventory profile is active for the item and isn't specified on the BOM line)
 
 The **Inventory profile** field on the BOM order lines is filled in from one of two places:
 
@@ -151,6 +151,5 @@ Find more details in the following topics:
 
 - [Set up an inventory profile](rus-set-up-inventory-profile.md)
 - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

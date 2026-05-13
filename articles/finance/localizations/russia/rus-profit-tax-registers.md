@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ---
@@ -122,7 +122,7 @@ To create a tax register, follow these steps:
 
 1. On the **Parameters** FastTab, you can set up additional parameters for the tax register. On the line for each parameter, specify a value in the **Value** field. The parameters are different for every register. For more information about parameters, see the article for each tax register.
 
-    ![Tax registers](../media/rus-profit-tax-1.png)
+    :::image type="content" source="../media/rus-profit-tax-1.png" alt-text="Screenshot of the Tax registers page showing register type, register code, period types, and parameters settings.":::
 
 ### Set up expense and income codes for a tax register
 
@@ -137,7 +137,7 @@ To set up expense and income codes for a tax register, follow these steps:
 1. On the **Setup** FastTab, set the **Type** option and the **Fixed assets type** field. For more information, see [Fixed assets and intangible assets registers](rus-assets-tax-registers.md).
 1.  On the **Exceptions** and **Exception dimension** FastTabs, specify the ledger accounts, dimensions, and entries that should be excluded when the tax register is calculated.
 
-    ![Expense codes set up](../media/rus-profit-tax-2.png)
+    :::image type="content" source="../media/rus-profit-tax-2.png" alt-text="Screenshot of the Expense code setup page showing setup, exceptions, and exception dimension FastTabs.":::
 
 ### View the tax registers tree
 
@@ -174,7 +174,7 @@ To create a tax register journal, follow these steps:
     - Period number
     - Years
 
-    ![New tax register journal](../media/rus-profit-tax-3.png)
+    :::image type="content" source="../media/rus-profit-tax-3.png" alt-text="Screenshot of the New register journal dialog showing the Reporting period section with period types, period number, and years fields.":::
 
 1. On the Action Pane, select **Lines**, and then select **Yes** to approve the creation of the tax register journal lines. The **Register journal lines** page is opened.
 
@@ -191,7 +191,7 @@ To hide a field, follow these steps:
 1. In the **Register field** field, select the field to hide, and then select the **Hide** checkbox. Only the fields that have been selected in the corresponding register settings are available for selection.
 1. Select **Save**.
 
-    ![Change rhe fields](../media/rus-profit-tax-4.png)
+    :::image type="content" source="../media/rus-profit-tax-4.png" alt-text="Screenshot of the Register journal lines page showing the Hide tab with register field and hide checkbox options.":::
 
 To add a field, follow these steps:
 
@@ -231,7 +231,7 @@ To calculate and print tax registers, follow these steps:
 
     The following example image shows a printed tax register.
 
-    ![Excel example](../media/rus-profit-tax-5.png)
+    :::image type="content" source="../media/rus-profit-tax-5.png" alt-text="Screenshot of a printed tax register displayed in Microsoft Excel format.":::
 
 ### Recalculate tax registers
 
@@ -265,7 +265,7 @@ To view and print register lines, follow these steps:
     - **Manual data input**: This option is set to **Yes** if the line was manually created. This option isn't editable.
     - **Corrected**: This option is set to **Yes** if the line has been manually edited. This option isn't editable.
 
-    ![Register lines](../media/rus-profit-tax-6.png)
+    :::image type="content" source="../media/rus-profit-tax-6.png" alt-text="Screenshot of the Register lines page showing the General tab with expense code, line type, line number, description, manual data input, and corrected fields.":::
 
 1. On the Action Pane, select **Source** to go to the primary document that the line was based on when it was created. Depending on the tax register, the primary document can be, for example, a fixed asset card or a posted vendor or customer invoice. The **Source** button isn't available if the register line was created by summing the transactions.
 1. To print the tax register, on the Action Pane, select **Print**. The register is printed in Excel format.

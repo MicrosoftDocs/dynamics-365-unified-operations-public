@@ -1,13 +1,13 @@
 ---
 title: Archive customization
 description: Learn about how the archive feature in Microsoft Dynamics 365 finance and operations apps supports table customizations, including code examples.
-author: kehoej99 
+author: git-kiran 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 03/26/2026
+ms.date: 05/12/2026
 ms.custom:
   - bap-template
-ms.reviewer: twheeloc
+ms.reviewer: twheeloc 
 
 ---
 
@@ -46,7 +46,7 @@ If there are no indexes on criteria fields in history tables, this condition pre
 
 All source (live) tables that participate in archive jobs need two types of indexes for optimal performance and proper framework operation.
 
-- Archive criteria index - Optimizes archive job filtering, data retrieval, and enables efficient identification and processing of records that meet archive criteria.
+- Archive criteria index - Optimizes archive job filtering and data retrieval. It enables efficient identification and processing of records that meet archive criteria.
 
 The structure requirements for root or parent tables:
 
@@ -62,7 +62,7 @@ The structure requirements for child tables:
 
 Without proper criteria indexes, archive jobs perform poorly or fail validation checks during job creation.
 
-Reconciliation index (ArchiveSysVersionIdx) - Required for long-term retention and enables efficient reconciliation during the LTR marking stage when data is prepared for movement to Dataverse.
+Reconciliation index (ArchiveSysVersionIdx) - Required for long-term retention. It enables efficient reconciliation during the long-term retention marking stage when data is prepared for movement to Dataverse.
 
 ### Requirements
 
@@ -98,6 +98,7 @@ Entity naming convention - `[TableName]BiEntity`. For example, `SalesTableBiEnti
 | `IsPublic` | Yes | Makes the entity available outside Dynamics 365 finance and operations. |
 | `PublicEntityName` | Entity name | Name exposed to external systems. |
 | `PublicCollectionName` | Entity name + 's' | Collection name for OData endpoints. |
+| `Is Read Only` | Yes | Archive entities are read-only for data consistency. |
 | `Allow Retention` | Yes | Enables long-term retention capability. |
 | `Allow Row Version Change Tracking` | Yes | Enables change tracking for incremental sync. |
 | `Auto Create` | Yes | Automatically creates virtual entity in Dataverse. |
