@@ -1737,6 +1737,8 @@
           href: sales-marketing/reserve-same-batch-sales-order.md
       - name: Inventory control
         items:
+        - name: Run an on-hand consistency check
+          href: inventory/inventory-onhand-consistency-check-run.md
         - name: Inventory close
           href: cost-management/inventory-close.md
         - name: Running average cost price

@@ -17,6 +17,8 @@ ms.custom:
 
 Microsoft Dynamics 365 Supply Chain Management provides an on-hand consistency check tool that lets you recalculate inventory on-hand list data based on inventory transactions on selected items or all items. The tool analyzes the inventory transactions (`InventTrans`) table and then reconstructs the `InventSum` and `WHSInventReserve` tables.
 
+This article describes only the additional preparation that's required when the *Inventory Visibility integration* batch job is enabled. For general guidance about when and how to run an on-hand consistency check, see [Run an on-hand consistency check](inventory-onhand-consistency-check-run.md).
+
 If you run an on-hand consistency check on *all items* while the *Inventory Visibility integration* batch job is enabled, the following conditions apply:
 
 - The tool usually takes longer to finish running than it does when the *Inventory Visibility integration* batch job isn't enabled.
