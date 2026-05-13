@@ -65,8 +65,8 @@ When vendors respond to purchase orders through the vendor collaboration interfa
 1. Go to **Procurement and sourcing** \> **Workspaces** \> **Purchase order preparation**.
 1. On the **Orders** FastTab, open the **In external review requires action** tab.
 1. Find and select a purchase order with a **Vendor response status** of *Accepted with changes*.
-1. To view more details about the impact of the proposed change on the selected purchase order, do one of the following steps: <!-- KFM: I don't have any data here, so I couldn't confirm this step. -->
-        - On the toolbar, select **View impact analysis** to open the **Impact analysis** page, which is described in the next section.
+1. To view more details about the impact of the proposed change on the selected purchase order, do one of the following steps:
+    - On the toolbar, select **View impact analysis** to open the **Impact analysis** page, which is described in the next section.
     - On the toolbar, select **View responses to latest sent order** to open the vendor's proposed changes. In the **Purchase order line impact** section, review the impact summary and select **View details** to see the full impact analysis on the **Impact analysis** page, which is described in the next section.
 
 <a name="impact-analysis-page"></a>
