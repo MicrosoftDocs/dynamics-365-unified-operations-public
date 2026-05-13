@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -50,7 +50,7 @@ To set up a charges code, follow these steps:
 1. In the **Credit** section, in the **Type** field, select **Customer/Vendor**.
 1. Select **Save**.
 
-![Charges code page.](../media/1-charges-codes.jpg)
+:::image type="content" source="../media/1-charges-codes.jpg" alt-text="Screenshot of the Charges code page.":::
  
 ### Create a released product for a service item
 
@@ -63,7 +63,7 @@ To create a released product for a service item, follow these steps:
 1. In the **Tracking dimension group** field, select a dimension group.
 1. In the **Charges code** field, select the charges code that you created earlier.
 
-![Released products page.](../media/2-released-product-details.jpg)
+:::image type="content" source="../media/2-released-product-details.jpg" alt-text="Screenshot of the Released products page.":::
  
 ### Set up a sales tax group that has exempt tax codes
 
@@ -77,7 +77,7 @@ To set up a sales tax group that has exempt tax codes, follow these steps:
 1. For each sales tax code, select the **Exempt** checkbox to indicate that sales tax isn't calculated.
 1. Select **Save**.
 
-![Sales tax groups with tax exempt codes.](../media/3-sales-tax-groups.jpg)
+:::image type="content" source="../media/3-sales-tax-groups.jpg" alt-text="Screenshot of Sales tax groups with tax exempt codes.":::
  
 ### Define a transit tax group for a sales tax group
 
@@ -91,7 +91,7 @@ To define a transit tax group for a sales tax group, follow these steps:
 1. On the **Setup** FastTab, in the **Sales tax code** field, select the sales tax code.
 1. Select **Save**.
 
-![Sales tax groups with transit tax.](../media/4-sales-tax-groups.jpg)
+:::image type="content" source="../media/4-sales-tax-groups.jpg" alt-text="Screenshot of Sales tax groups with transit tax.":::
   
 ### Set up a transit account
 
@@ -121,7 +121,7 @@ To purchase services (charges) from the invoice journal, follow these steps:
 
 1. In the **Charges** section, in the **Charges code** field, select the charges code that you created in the [Set up a charges code](#set-up-a-charges-code) section.
   
-  ![Vendor invoice journal page.](../media/5-vendor-invoice-journal.jpg)
+  :::image type="content" source="../media/5-vendor-invoice-journal.jpg" alt-text="Screenshot of the Vendor invoice journal page.":::
  
 1. Specify other details, and then post the journal.
 
@@ -139,11 +139,11 @@ To purchase services (charges) through a purchase order, follow these steps:
 1. In the **Charges** section, in the **Charges code** field, verify that the charges code that you created earlier is selected.
 1. In the **Posting** section, in the **Ledger account** field, verify that the debit account that you specified for the charges code that you created earlier is selected.
   
-   ![All purchase orders page, Setup tab.](../media/6-all-purchase-orders.jpg)
+   :::image type="content" source="../media/6-all-purchase-orders.jpg" alt-text="Screenshot of the All purchase orders page, Setup tab.":::
  
 1. On the **Product** tab, in the **Inventory profile** field, select an inventory profile.
 
-   ![All purchase orders page, Product tab.](../media/7-all-purchase-orders.jpg)
+   :::image type="content" source="../media/7-all-purchase-orders.jpg" alt-text="Screenshot of the All purchase orders page, Product tab.":::
 
 1. Specify other purchase order details, and post the invoice.
 
@@ -162,11 +162,11 @@ To allocate miscellaneous charges to the item cost price, follow these steps:
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
 1. Select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** \> **Allocation**.
 
-   ![Invoice journal page, Charges drop-down.](../media/8-invoice-journal.jpg)
+   :::image type="content" source="../media/8-invoice-journal.jpg" alt-text="Screenshot of the Invoice journal page, Charges drop-down.":::
 
 1. On the **Charges allocation** page, select **Edit**.
 
-   ![Edit the Charges allocation page.](../media/9-charges-allocation.jpg)
+   :::image type="content" source="../media/9-charges-allocation.jpg" alt-text="Screenshot of the Charges allocation page in edit mode.":::
 
 1. In the **Charges allocation** field, select one of the following methods for allocating miscellaneous charges:
 
@@ -208,7 +208,7 @@ To allocate miscellaneous charges to redraw debt to third parties, follow these 
 
 1. On the **Invoice journal** page, select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** \> **Allocation**.
 
-   ![Charges allocation page to allocate miscellaneous charges.](../media/10-charges-allocation.jpg)
+   :::image type="content" source="../media/10-charges-allocation.jpg" alt-text="Screenshot of the Charges allocation page to allocate miscellaneous charges.":::
  
 1. In the **Charges allocation** field, select a method for allocating miscellaneous charges.
 1. In the **Posting date** field, select the posting date.
@@ -253,19 +253,19 @@ To walk through the example procedure, follow these steps:
 
 1. Create a sales tax group that's named **VAT18-1** and that has sales tax code **VAT18**.
 
-   ![Sales tax groups page with selected tax group and tax code.](../media/11-sales-tax-groups.png)
+   :::image type="content" source="../media/11-sales-tax-groups.png" alt-text="Screenshot of the Sales tax groups page with selected tax group and tax code.":::
 
 1. Create an exempt sales tax group that has standard sales tax code **VAT18**, and select the **Exempt** checkbox.
 
-   ![Exempts checkbox selected.](../media/12-sales-tax-groups.png)
+   :::image type="content" source="../media/12-sales-tax-groups.png" alt-text="Screenshot of the Sales tax groups page with the Exempt checkbox selected.":::
 
 1. For the sales tax group, in the **Transit tax group** field, specify the exempt sales tax group.
 
-   ![Sales tax groups page, Transit tax group field.](../media/13-sales-tax-groups.png)
+   :::image type="content" source="../media/13-sales-tax-groups.png" alt-text="Screenshot of the Sales tax groups page, Transit tax group field.":::
 
 1. Create an item sales tax group that has sales tax code **VAT18**.
 
-   ![Item sales tax group.](../media/14-item-sales-tax-groups.png)
+   :::image type="content" source="../media/14-item-sales-tax-groups.png" alt-text="Screenshot of the Item sales tax group page.":::
 
 1. Set up transit account **76.511**. For instructions, see the [Set up a transit account](#set-up-a-transit-account) section.
 1. Set up the following two charges codes. For instructions, see the [Set up a charges code](#set-up-a-charges-code) section.
@@ -294,7 +294,7 @@ To walk through the example procedure, follow these steps:
 1. On the **Invoice journal** page, select **Charges** \> **Allocation**.
 1. On the **Charges allocation** page, in the **Posting date** field, specify **10/18/2019**.
 
-    ![Charges allocation page, Posting date field.](../media/15-charges-allocation.png)
+    :::image type="content" source="../media/15-charges-allocation.png" alt-text="Screenshot of the Charges allocation page, Posting date field.":::
 
 1. In the **Allocation mode** field, select **Redraw debt**.
 1. In the **Allocation base** section, manually create the following line.
@@ -326,7 +326,7 @@ To allocate miscellaneous charges to the ledger account, follow these steps:
 
 1. On the **Invoice journal** page, select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** \> **Allocation**.
 
-   ![Charges allocation page to allocate miscellaneous charges to the ledger account.](../media/16-charges-allocation.jpg)
+   :::image type="content" source="../media/16-charges-allocation.jpg" alt-text="Screenshot of the Charges allocation page to allocate miscellaneous charges to the ledger account.":::
 
 1. In the **Charges allocation** field, select a method for allocating miscellaneous charges.
 1. In the **Posting date** field, select the posting date.
@@ -358,14 +358,14 @@ To view the miscellaneous charges that are allocated to the item's cost price, f
       - **Vendor account** – The account of the vendor that the miscellaneous charges were purchased from.
       - **Invoice** – The invoice number of the miscellaneous charges purchase.
   
-      ![Settlements page.](../media/17-settlements.jpg)
+      :::image type="content" source="../media/17-settlements.jpg" alt-text="Screenshot of the Settlements page.":::
   
       > [!NOTE]
       > If the Vendor account and Invoice fields aren't filled in, the cost adjustment operation was done by the standard method for miscellaneous charges allocation.
   
 1. To view more information about the list and the amounts of miscellaneous charges that have been included in the cost price of the posted item, on the **Inventory transactions** page, on the Action Pane, on the **Inventory** tab, in the **Costing** group, select **Cost explorer**.
 
-   ![Cost explorer page.](../media/18-cost-explorer.jpg)
+   :::image type="content" source="../media/18-cost-explorer.jpg" alt-text="Screenshot of the Cost explorer page.":::
  
 ## View the allocation history for miscellaneous charges
 
@@ -377,7 +377,7 @@ To view the allocation history from the invoice journal, follow these steps:
 1. Select **Charges** \> **Misc. charges allocation history** to open the **Charges allocation** page.
 The **Allocation base** section shows the allocation base and allocation result, depending on the value in the **Allocation mode** field. To change the allocation mode, select **Edit**, and then, in the **Allocation mode** field, select a new value.
 
-   ![Charges allocation page, Allocation base section.](../media/19-charges-allocation.jpg)
+   :::image type="content" source="../media/19-charges-allocation.jpg" alt-text="Screenshot of the Charges allocation page, Allocation base section.":::
 
 1. On the header of the **Charges allocation** page, set the **Show cancelled operations** option to **Yes** to show the miscellaneous charges allocation transactions that have been canceled and the transactions that adjust them.
 1. Select **Inquiries** \> **Voucher** to view the transactions that were created because of allocation.
@@ -393,7 +393,7 @@ To view the allocation history, follow these steps:
 
    The **Allocation source** section shows the source lines for all invoices from the period. The **Allocation base** section shows     the allocation base and allocation result.
 
-   ![Charges allocation page, Allocation source section.](../media/20-charges-allocation.jpg)
+   :::image type="content" source="../media/20-charges-allocation.jpg" alt-text="Screenshot of the Charges allocation page, Allocation source section.":::
  
 ## Cancel miscellaneous charges allocation
 
@@ -408,7 +408,7 @@ To cancel miscellaneous charges allocation, follow these steps:
 
 1. In the **Date of cancellation** field, enter the date of cancellation.
 
-   ![Charges allocation page, Date of cancellation field.](../media/21-charges-allocation.jpg)
+   :::image type="content" source="../media/21-charges-allocation.jpg" alt-text="Screenshot of the Charges allocation page, Date of cancellation field.":::
 
 1. Select **Cancel**.
 

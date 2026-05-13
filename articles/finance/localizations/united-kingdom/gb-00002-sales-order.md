@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/04/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2016-06-30
@@ -33,7 +33,7 @@ To create a sales order that includes items subject to reverse charge VAT, follo
 1. Select **New**.
 1. In the **Customer account** field, select the drop-down, and then select **GB_SI_002**.  
 1. In the list, find and select **GB_SI_002**.  
-1. In the list, select **GB_SI_002** in the selected row. 
+1. In the list, select **GB_SI_002** in the selected row.
 1. Select **OK**.
 1. In the list, mark the selected row.
 1. In the **Item number** field, enter "S0020".  
@@ -49,7 +49,5 @@ To create a sales order that includes items subject to reverse charge VAT, follo
 1. Select **Sales tax**.
 1. Ensure that the reverse charge VAT is calculated in the sales tax transactions.  
 1. Select **OK**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

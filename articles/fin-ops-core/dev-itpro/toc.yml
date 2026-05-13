@@ -2347,9 +2347,15 @@ items:
         href: ../fin-ops/copilot/copilot-generative-help.md
       - name: Deploy Dynamics 365 agents by using the agent deployment wizard (preview)
         href: ../dev-itpro/copilot/agent-deployment.md
-      - name: Agent management (production ready preview)
+      - name: Agent management
         href: ../fin-ops/copilot/agent-mgmt.md
-      - name: Immersive Home (production ready preview)
+      - name: Dynamics 365 ERP apps plugin for Copilot Cowork (Frontier)
+        items:
+        - name: Enable the Dynamics 365 ERP apps plugin for Copilot Cowork
+          href: copilot/enable-copilot-cowork-erp.md
+        - name: Use Copilot Cowork with Dynamics 365 ERP
+          href: ../fin-ops/copilot/use-copilot-cowork-erp.md
+      - name: Immersive Home
         href: ../fin-ops/copilot/immersive-home.md
       - name: Agent feed (preview)
         href: copilot/agent-feed-api.md
@@ -2417,13 +2423,11 @@ items:
         href: responsible-ai/responsible-ai-overview.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot
         href: ../fin-ops/copilot/faq-copilot-generative-help.md
-      - name: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
-        href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
       - name: Responsible AI FAQ for Workflow history summary
         href: ../fin-ops/copilot/workflow-history-summary-faq.md
-      - name: Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)      
+      - name: Responsible AI FAQ for Immersive Home in finance and operations apps  
         href: ../fin-ops/copilot/faq-immersive-home.md
-      - name: Responsible AI FAQ for Agent management in finance and operations apps (production ready preview)
+      - name: Responsible AI FAQ for agent management in finance and operations apps
         href: ../fin-ops/copilot/faq-agent-mgmt.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md

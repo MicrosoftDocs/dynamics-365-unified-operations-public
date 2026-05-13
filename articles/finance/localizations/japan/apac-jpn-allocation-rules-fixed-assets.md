@@ -3,8 +3,10 @@ title: Fixed asset allocation rules for Japan
 description: Access answers some frequently asked questions about fixed asset allocation rules for Japan, including questions about dimension rules.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 12/08/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User 
 ms.search.region: Japan

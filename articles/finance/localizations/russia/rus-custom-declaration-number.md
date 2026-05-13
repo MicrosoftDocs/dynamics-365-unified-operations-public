@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-03-01
@@ -39,7 +39,7 @@ To set up customs declaration numbers in tracking dimensions, follow these steps
 1. On the **Tracking dimensions** FastTab, in the row for **GTD number**, select the **Active** checkbox.
 1. Select **Save**.
 
-    ![A screenshot of a cell phone Description automatically generated.](../media/1%20Tracking%20dimension%20groups.jpg)
+    :::image type="content" source="../media/1%20Tracking%20dimension%20groups.jpg" alt-text="Screenshot of the Tracking dimension groups page with GTD number Active checkbox selected.":::
 
 ## Create a customs declaration number
 
@@ -58,7 +58,7 @@ To create a customs declaration number, follow these steps:
 1. In the **Country/region** field, select the country or region.
 1. Select **Save**.
 
-    ![State custom declaration numbers page.](../media/2%20State%20custom%20declaration%20numbers.jpg)
+    :::image type="content" source="../media/2%20State%20custom%20declaration%20numbers.jpg" alt-text="Screenshot of the State custom declaration numbers page.":::
 
 ## Specify the customs declaration number in a purchase order
 
@@ -71,11 +71,11 @@ To specify the customs declaration number in a purchase order, follow these step
 
 1. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimensions** section, in the **GTD number** field, select the customs declaration number that you created earlier.
 
-    ![Purchase orders page Line details FastTab.](../media/3%20All%20purchase%20orders.jpg)
+    :::image type="content" source="../media/3%20All%20purchase%20orders.jpg" alt-text="Screenshot of the Purchase orders page showing the Line details FastTab with GTD number field.":::
 
 1. Set other purchase order parameters, and create a facture in the usual way. Column 11 of the facture shows the information about the customs declaration number.
 
-    ![Invoice facture for a purchase order.](../media/4%20Invoice-facture.jpg)
+    :::image type="content" source="../media/4%20Invoice-facture.jpg" alt-text="Screenshot of the invoice facture for a purchase order showing customs declaration number in column 11.":::
 
 ## View the customs declaration number in the purchase book
 
@@ -84,7 +84,7 @@ To view the customs declaration number in the purchase book, follow these steps:
 1. In Dynamics 365 Finance, after the **Incoming VAT processing** procedure is completed, on the **Purchase books journal** page, on the Action Pane, select **Update** to update the purchase book.
 1. On the Action Pane, select **Lines**, and select the invoice that you just created. On the **General** tab, the **Custom decl. numbers** field shows the information about the facture and the customs declaration number.
 
-    ![Purchase book lines General tab.](../media/5%20Purchase%20book%20lines.jpg)
+    :::image type="content" source="../media/5%20Purchase%20book%20lines.jpg" alt-text="Screenshot of the Purchase book lines page showing the General tab with Custom decl. numbers field.":::
 
 ## Ship goods that have customs declaration numbers
 
@@ -94,11 +94,11 @@ To ship goods that have customs declaration numbers, follow these steps:
 1. On the **Line details** FastTab, on the **Setup** tab, in the **Reservation** field, select **Automatic**, so that the item is automatically reserved from existing receipts when you create a sales order line.
 1. On the **Product** tab, in the **Tracking dimensions** section, in the **GTD number** field, select the customs declaration number that you created earlier.
 
-    ![Sales order page Line details FastTab.](../media/6%20Sales%20order.jpg)
+    :::image type="content" source="../media/6%20Sales%20order.jpg" alt-text="Screenshot of the Sales order page showing the Line details FastTab with GTD number field.":::
 
 1. Set other sales order parameters, and create a facture in the usual way. Column 11 of the facture shows the information about the customs declaration number.
 
-    ![Invoice facture for a sales order.](../media/7%20Invoice-facture.jpg)
+    :::image type="content" source="../media/7%20Invoice-facture.jpg" alt-text="Screenshot of the invoice facture for a sales order showing customs declaration number in column 11.":::
 
 
 

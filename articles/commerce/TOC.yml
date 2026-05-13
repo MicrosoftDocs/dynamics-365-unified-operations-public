@@ -148,7 +148,7 @@
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/commerce
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/commerce
-        - name: Immersive Home (production ready preview)
+        - name: Immersive Home
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/commerce
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/commerce
@@ -1704,8 +1704,6 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/dev-itpro/emea-aut-fi-sample.md
-        - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
-          href: localizations/dev-itpro/emea-aut-fi-sample-sdk.md
       - name: Eastern Europe
         items:
         - name: Common
@@ -1722,16 +1720,12 @@
           items:
           - name: Fiscal registration service integration sample for Czech Republic
             href: localizations/dev-itpro/emea-cze-fi-sample.md
-          - name: Deployment guidelines for fiscal integration sample for Czech Republic (legacy)
-            href: localizations/dev-itpro/emea-cze-fi-sample-sdk.md
         - name: Poland
           items:
           - name: Fiscal printer integration sample for Poland
             href: localizations/dev-itpro/emea-pol-fpi-sample.md
           - name: Customer information management for Poland
             href: localizations/poland/emea-pol-customer-information.md
-          - name: Deployment guidelines for fiscal integration sample for Poland (legacy)
-            href: localizations/dev-itpro/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
         - name: Cash register functionality
@@ -1740,16 +1734,10 @@
           href: localizations/france/emea-fra-fi-deployment.md
         - name: Fiscal archive and data integrity verification
           href: localizations/france/emea-fra-fiscal-archive.md
-        - name: Migrate from legacy functionality for France
-          href: localizations/france/emea-fra-fi-migration.md
-        - name: Deployment guidelines for cash registers (legacy)
-          href: localizations/france/emea-fra-deployment.md
       - name: Germany
         items:
         - name: Fiscal registration service integration sample for Germany
           href: localizations/dev-itpro/emea-deu-fi-sample.md
-        - name: Deployment guidelines for fiscal integration sample for Germany (legacy)
-          href: localizations/dev-itpro/emea-deu-fi-sample-sdk.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers
@@ -1768,8 +1756,6 @@
           href: localizations/dev-itpro/emea-ita-fpi-sample.md
         - name: Customer information management for Italy
           href: localizations/italy/emea-ita-customer-information.md
-        - name: Deployment guidelines for fiscal integration sample for Italy (legacy)
-          href: localizations/dev-itpro/emea-ita-fpi-sample-sdk.md
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
@@ -1782,12 +1768,8 @@
           href: localizations/dev-itpro/emea-nor-fi-deployment.md
         - name: Migrate from legacy functionality for Norway
           href: localizations/dev-itpro/emea-nor-fi-migration.md
-        - name: Deployment guidelines for cash registers (legacy)
-          href: localizations/dev-itpro/emea-nor-loc-deployment-guidelines.md
       - name: Saudi Arabia
         items:
-        - name: Generate QR codes and print them on receipts for Saudi Arabia
-          href: localizations/mea/emea-sau-qr-code.md
         - name: Generate and submit simplified electronic invoices for Saudi Arabia
           href: localizations/mea/emea-sau-simplified-e-invoices.md
       - name: Sweden
@@ -1796,10 +1778,6 @@
           href: localizations/sweden/emea-swe-cash-registers.md
         - name: Control unit integration sample for Sweden
           href: localizations/dev-itpro/emea-swe-fi-sample.md
-        - name: Deployment guidelines for control unit integration sample for Sweden (legacy)
-          href: localizations/dev-itpro/emea-swe-fi-sample-sdk.md
-        - name: Sample for Retail POS integration with control units (legacy)
-          href: localizations/dev-itpro/retail-sdk-control-unit-sample.md
     - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI

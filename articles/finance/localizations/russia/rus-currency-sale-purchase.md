@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -397,8 +397,8 @@ You post the settlement of foreign currency purchase transactions to generate fo
 
 To post the settlement of foreign currency transfer transactions, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Cash and bank management**** \> ****Setup**** \> ****Bank groups**.
-1. Select a bank, and then select **Functions**** \> ****Settle open transactions** to settle foreign currency purchase transactions.
+1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Bank groups**.
+1. Select a bank, and then select **Functions** \> **Settle open transactions** to settle foreign currency purchase transactions.
 1. Mark transactions for settlement.
 
     During settlement, the following information is validated:
@@ -408,7 +408,7 @@ To post the settlement of foreign currency transfer transactions, follow these s
 
 1. Select **Post**. The exchange rate difference transaction is generated. Ledger accounts for the foreign currency exchange difference are taken from the **Realized gain** and **Realized loss** accounts that are specified in the setup of foreign currency parameters.
 1. You can review the transactions that are generated. On the **Bank groups** page, select **Transactions**.
-1. You can also post an unsettlement of transactions. On **Bank groups** page, select **Functions**** \> ****Closed transitions editing**, mark transactions, and then select **Reverse**.
+1. You can also post an unsettlement of transactions. On **Bank groups** page, select **Functions** \> **Closed transitions editing**, mark transactions, and then select **Reverse**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

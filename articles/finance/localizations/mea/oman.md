@@ -4,7 +4,7 @@ description: Learn about functionality specific to Oman, including information a
 author: mrolecki
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 12/16/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Oman

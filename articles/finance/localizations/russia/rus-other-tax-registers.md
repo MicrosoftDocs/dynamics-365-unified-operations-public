@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
@@ -34,21 +34,21 @@ Set up the settlement periods for all taxes except value-added tax (VAT). The se
 To set up taxes that are automatically processed, follow these steps:
 
 1. Create expense codes for taxes. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
-2. Create ledger posting groups for taxes. Learn more in [Set up a posting group](rus-local-specific-posting-sales-vat.md#set-up-a-posting-group).
-3. Create sales tax codes. Learn more in [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
+1. Create ledger posting groups for taxes. Learn more in [Set up a posting group](rus-local-specific-posting-sales-vat.md#set-up-a-posting-group).
+1. Create sales tax codes. Learn more in [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
 
 Set up sales tax relations between the sales tax code and the expense code, as shown in the following example procedure to set up the relations for VAT.
 
 To walk through the example, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Sales tax relations**.
-2. Select **New**.
-3. In the **Module** field, select **Sales tax**.
-4. In the **Type of tax** field, select the type of the tax. For example, select **Standard VAT**.
-5. In the **Code** field, select the sales tax code, based on the value of the **Type of tax** field.
-6. In the **Expense code** field, select an expense code that corresponds to the tax.
+1. Select **New**.
+1. In the **Module** field, select **Sales tax**.
+1. In the **Type of tax** field, select the type of the tax. For example, select **Standard VAT**.
+1. In the **Code** field, select the sales tax code, based on the value of the **Type of tax** field.
+1. In the **Expense code** field, select an expense code that corresponds to the tax.
 
-   ![Example of the relations for VAT on the Sales tax relations page](../media/rus-other-tax-1.png)
+   :::image type="content" source="../media/rus-other-tax-1.png" alt-text="Screenshot of the relations for VAT on the Sales tax relations page.":::
 
 ## Tax registers
 
@@ -58,7 +58,7 @@ Create and set up the tax registers as described in the [Create tax registers an
 
 The **Incomes - current period** register summarizes information about income that is obtained for a specific reporting period. The amounts of income, including non-operating income, are used to fill in the income tax declaration.
 
-   ![Example of the Incomes   current period register](../media/rus-other-tax-2.png)
+   :::image type="content" source="../media/rus-other-tax-2.png" alt-text="Screenshot of the Incomes - current period register.":::
 
 The tax register lines show the following information:
 
@@ -81,7 +81,7 @@ The tax register contains information about all accrued taxes and duties, and pr
 
 Before you calculate the **Outlay - realized tax** register, you must create and close a sales and purchase book for the period that the register is created for. This step is required because the VAT expense is calculated based on closed sales and purchase books. If the sales and purchase books aren't closed for the register period, only expenses for other taxes are calculated in the register.
 
-  ![Example of the Outlay   realized tax register](../media/rus-other-tax-3.png)
+  :::image type="content" source="../media/rus-other-tax-3.png" alt-text="Screenshot of the Outlay - realized tax register.":::
 
 The tax register lines show the following information:
 
@@ -117,7 +117,7 @@ Create and set up the tax registers as described in the [Create tax registers an
 
 The **Outlays - other unrealized** register summarizes the amounts of other unrealized expenses, based on general ledger transactions. This register can also include expenses that are manually entered in the register.
 
-  ![Example of the Outlays   other unrealized register](../media/rus-other-tax-4.png)
+  :::image type="content" source="../media/rus-other-tax-4.png" alt-text="Screenshot of the Outlays - other unrealized register.":::
 
 The tax register lines show the following information:
 

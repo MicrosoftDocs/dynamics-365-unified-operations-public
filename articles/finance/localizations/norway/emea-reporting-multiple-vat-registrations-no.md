@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Norway
@@ -27,7 +27,5 @@ When your legal entity is configured for reporting for multiple VAT registration
 | Report name     | Release | Electronic reporting (ER) format, version                |
 |-----------------|---------|----------------------------------------------------------|
 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md)       | 10.0.21 | VAT Declaration XML (NO), version 112.54<br>VAT Declaration Excel (NO), version 112.54.39      |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,10 @@
 ---
 title: Build a custom archive scenario
 description: Learn how to build a complete custom archive scenario using only custom tables.
-author: kehoej99 
+author: git-kiran 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 03/26/2026
+ms.date: 05/12/2026
 ms.custom:
   - bap-template
 ms.reviewer: twheeloc
@@ -163,7 +163,7 @@ Index design rules:
 - Next fields: Criteria fields used in WHERE conditions, such as status or dates
 - Included columns: `RecId` (if not clustered), `SysRowVersion`, `SysDataStateCode` for performance
 
-### Add reconciliation index for LTR
+### Add reconciliation index for long-term retention
 
 ```xml
 <AxTableIndex>
@@ -310,10 +310,11 @@ These properties are required for archive and LTR:
 | `IsPublic` | Yes | Exposes entity to Dataverse |
 | `PublicEntityName` | Entity name | OData/Virtual Entity name |
 | `PublicCollectionName` | Entity name + 's' | OData collection endpoint |
+| `Is Read Only` | **Yes** | Archive entities must be read-only |
 | `Auto Create` | **Yes** | Autocreates virtual entity in Dataverse |
 | `Auto Refresh` | **Yes** | Synchronizes metadata automatically |
-| `Allow Retention` | **Yes** | **Required for LTR** |
-| `Allow Row Version Change Tracking` | **Yes** | **Required for change tracking** |
+| `Allow Retention` | **Yes** | Required for LTR |
+| `Allow Row Version Change Tracking` | **Yes** | Required for change tracking |
 | `ChangeTrackingEnabled` | Yes | Enables change detection |
 
 #### Enable rowversion support
@@ -726,7 +727,7 @@ To build your solution, follow these steps:
 
 After deployment:
 
-1. Navigate to **Data Management** workspace.
+1. Go to the **Data Management** workspace.
 1. Go to **Framework parameters** > **Entity settings**.
 1. Select **Refresh entity list**.
 1. Verify your finance and operations data entities appear.
