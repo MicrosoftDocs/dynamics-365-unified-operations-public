@@ -24,12 +24,8 @@ You must enable serial numbers for the sales process by selecting the **Active i
 - On the **Serial numbers** FastTab, the **Serial number control** option is selected. When this option is selected, you must register one serial number for each item on the packing slip or invoice.
 - All selections on the tracking dimension group for serial numbers are cleared, except the **Blank issue allowed** option. You can select the **Blank issue allowed** option to override the serial number control, and allow products to be packed and invoiced without registering serial numbers.
 
-## On-hand tracking when Physical inventory isn't selected for serial numbers
-
-When the **Physical inventory** option for the **Serial number** dimension is cleared, including the automatic clearing that occurs when you select **Active in sales process**, the system ignores the serial number during on-hand inventory operations. As a result:
-
-- On-hand quantity isn't tracked or reconciled per serial number.
-- A serial number that's registered on a purchase receipt isn't matched against the serial number that's registered on a sales packing slip or invoice for the same item. For example, you can receive item *S0001* with serial *s#1* into a location, and later issue item *S0001* with serial *s#2* from the same location. The on-hand quantity for the item still reconciles, even though *s#1* never appears on an issue and *s#2* never appears on a receipt.
+> [!NOTE]
+> When the **Physical inventory** option for the **Serial number** dimension is cleared — including the automatic clearing that occurs when you select **Active in sales process** — on-hand inventory isn't tracked per serial number, which can cause discrepancies between received and issued serial numbers for the same item.
 
 ## When do I register serial numbers during the sales process?
 
