@@ -32,7 +32,7 @@ This article describes how to enable the modernized workflows and what's availab
 1. Restart the Store Commerce app.
 
 > [!NOTE]
-> When you enable this feature flag, it automatically replaces the legacy customer add and edit view. The two views can't be active simultaneously. This flag also controls the modernized customer details page. Enabling it activates both experiences simultaneously.
+> When you enable this feature flag, it automatically replaces the legacy customer add/edit view. You can't activate both views at the same time. This flag also controls the modernized customer details page, so enabling it activates both experiences simultaneously.
 
 ## React-based form layout
 
