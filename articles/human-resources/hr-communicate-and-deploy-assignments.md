@@ -14,7 +14,7 @@ ms.search.region: Global
 
 # Communicate with and deploy assignments to workers
 
-Human resources responsibilities include registering times for various workers in bulk. This article discusses how to send messages to display in job registration forms. This process includes ending messages to selected workers and terminals, and assigning workers to temporary groups.
+Human resources responsibilities include registering times for various workers in bulk. This article discusses how to send messages to display in job registration pages. This process includes ending messages to selected workers and terminals, and assigning workers to temporary groups.
 
 ## Send messages to workers during registration
 
