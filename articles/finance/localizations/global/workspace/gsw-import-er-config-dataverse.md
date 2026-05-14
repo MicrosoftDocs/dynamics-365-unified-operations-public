@@ -1,8 +1,8 @@
 ---
 title: Import Electronic reporting (ER) configurations from Dataverse
 description: Learn how to import Electronic reporting (ER) configurations from Microsoft Dataverse, including an overview on importing the Globalization solution.
-author: EvgenyPopovMBS
-ms.author: evgenypopov
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
 ms.date: 03/19/2026
 ms.custom: 
@@ -92,6 +92,52 @@ To import a single configuration, follow these steps:
     > The **Import** button is unavailable for ER configuration versions that are already present in the current Dynamics 365 Finance instance.
 
 :::image type="content" source="media/gsw-config-repo.png" alt-text="Screenshot of the Configuration repository page, where a version of a configuration is selected for import.":::
+
+## Review configuration prerequisites before import
+
+Starting in version 10.0.47 of Dynamics 365 Finance apps, before you import an ER configuration version, you can review its prerequisites and verify that your environment meets all requirements. This helps you identify potential issues, such as missing dependent configurations or an incompatible application version, before you start the import.
+
+### View prerequisites for a configuration version
+
+To view the prerequisites for a specific configuration version, follow these steps:
+
+1. On the **Configuration repository** page, in the configurations tree, select the ER configuration that you want.
+2. On the **Versions** FastTab, select the required version of the selected ER configuration.
+3. On the **Prerequisites** FastTab, review the list of prerequisites for the selected configuration version.
+
+    The **Prerequisites** FastTab shows the following types of requirements:
+
+    - **Configuration** – Other ER configurations that must be present in the current Dynamics 365 Finance instance before the selected version can be imported. Prerequisites might be organized into groups:
+        - **All of** – All configurations in the group must be available.
+        - **One of** – At least one configuration in the group must be available.
+    - **Product** – The minimum Dynamics 365 Finance application version that is required.
+
+:::image type="content" source="media/gsw-config-repo-prerequisites.png" alt-text="Screenshot of the Prerequisites FastTab.":::
+
+### Check prerequisites before import
+
+To proactively validate that your environment meets all prerequisites for a configuration version, follow these steps:
+
+1. On the **Configuration repository** page, in the configurations tree, select the ER configuration that you want.
+2. On the **Versions** FastTab, select the required version of the selected ER configuration.
+3. Select **Check prerequisites**.
+
+    The system validates the following requirements:
+
+    1. The required Dynamics 365 Finance application version is installed.
+    2. All required ER configuration dependencies are available in the current instance.
+
+    If any prerequisite isn't met, the validation results show the specific gaps and provide guidance about how to resolve them.
+
+> [!TIP]
+> By checking prerequisites before you import, you can avoid failed imports and reduce troubleshooting time, especially in environments where configuration updates are applied regularly.
+
+### Error messages for failed imports
+
+If you import a configuration version that has unmet prerequisites, the system provides an error message that explicitly identifies the missing prerequisites. The error message includes:
+
+- The name and version of the missing prerequisite configuration.
+- The required application version or platform build, if applicable.
 
 ## Import filtered configurations
 
