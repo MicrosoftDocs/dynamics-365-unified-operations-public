@@ -663,10 +663,10 @@ The following configurable electronic document properties are used during the ge
 
 | Type | Applicability | Description |
 |------------|------------------|----------------------------------|
-| **CompanyEndpointType** | Legal entities |  |
-| **CustomerEndpointType** | Customers |  |
-| **SellerElectronicAddress** | Legal entities |  |
-| **BuyerElectronicAddress** | Customers |  |
+| **CompanyEndpointType** | Legal entities | Defines the code of the electronic address *scheme* for **sellers**. If defined, the code overwrites the default 0225 value. |
+| **CustomerEndpointType** | Customers | Defines the code of the electronic address *scheme* for **buyers**. If defined, the code overwrites the default 0225 value. |
+| **SellerElectronicAddress** | Legal entities | Defines the electronic address for **sellers**. It has the highest priority and overwrites any other electronic address value. |
+| **BuyerElectronicAddress** | Customers | Defines the electronic address for **buyers**. It has the highest priority and overwrites any other electronic address value. |
 | **#PMD#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment/settlement information.|
 | **#PMT#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment instructions.|
 | **#AAB#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment terms.|
