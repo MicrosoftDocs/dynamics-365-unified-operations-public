@@ -4,7 +4,7 @@ description: Learn how to import Electronic reporting (ER) configurations from M
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 03/19/2026
+ms.date: 05/14/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -84,7 +84,7 @@ To open the Dataverse configuration repository, follow these steps:
 
 To import a single configuration, follow these steps:
 
-1. On the **Configuration repository** page, in the configurations tree, select the ER configuration that you want.
+1. On **Configuration repository**, in the configurations tree, select the ER configuration that you want.
 1. On the **Versions** FastTab, select the required version of the selected ER configuration.
 1. Select **Import** to download the selected version from the Dataverse to the current Dynamics 365 Finance instance.
 
@@ -95,19 +95,19 @@ To import a single configuration, follow these steps:
 
 ## Review configuration prerequisites before import
 
-Starting in version 10.0.47 of Dynamics 365 Finance apps, before you import an ER configuration version, you can review its prerequisites and verify that your environment meets all requirements. This helps you identify potential issues, such as missing dependent configurations or an incompatible application version, before you start the import.
+Starting in version 10.0.47 of Dynamics 365 Finance apps, before you import an ER configuration version, you can review its prerequisites and verify that your environment meets all requirements. This process helps you identify potential issues, such as missing dependent configurations or an incompatible application version, before you start the import.
 
 ### View prerequisites for a configuration version
 
 To view the prerequisites for a specific configuration version, follow these steps:
 
-1. On the **Configuration repository** page, in the configurations tree, select the ER configuration that you want.
-2. On the **Versions** FastTab, select the required version of the selected ER configuration.
-3. On the **Prerequisites** FastTab, review the list of prerequisites for the selected configuration version.
+1. On **Configuration repository**, in the configurations tree, select the ER configuration that you want.
+1. On the **Versions** FastTab, select the required version of the selected ER configuration.
+1. On the **Prerequisites** FastTab, review the list of prerequisites for the selected configuration version.
 
     The **Prerequisites** FastTab shows the following types of requirements:
 
-    - **Configuration** – Other ER configurations that must be present in the current Dynamics 365 Finance instance before the selected version can be imported. Prerequisites might be organized into groups:
+    - **Configuration** – Other ER configurations that must be present in the current Dynamics 365 Finance instance before you can import the selected version. Prerequisites might be organized into groups:
         - **All of** – All configurations in the group must be available.
         - **One of** – At least one configuration in the group must be available.
     - **Product** – The minimum Dynamics 365 Finance application version that is required.
@@ -118,14 +118,14 @@ To view the prerequisites for a specific configuration version, follow these ste
 
 To proactively validate that your environment meets all prerequisites for a configuration version, follow these steps:
 
-1. On the **Configuration repository** page, in the configurations tree, select the ER configuration that you want.
-2. On the **Versions** FastTab, select the required version of the selected ER configuration.
-3. Select **Check prerequisites**.
+1. On **Configuration repository**, in the configurations tree, select the ER configuration that you want.
+1. On the **Versions** FastTab, select the required version of the selected ER configuration.
+1. Select **Check prerequisites**.
 
     The system validates the following requirements:
 
     1. The required Dynamics 365 Finance application version is installed.
-    2. All required ER configuration dependencies are available in the current instance.
+    1. All required ER configuration dependencies are available in the current instance.
 
     If any prerequisite isn't met, the validation results show the specific gaps and provide guidance about how to resolve them.
 
@@ -143,7 +143,7 @@ If you import a configuration version that has unmet prerequisites, the system p
 
 To import filtered configurations, follow these steps:
 
-1. On the **Configuration repository** page, on the **Filter** FastTab, in the **Tags** grid, add any needed tags.
+1. On **Configuration repository**, on the **Filter** FastTab, in the **Tags** grid, add any needed tags.
 1. In the **Country/region applicability** field, select the appropriate country/region codes.
 1. Select **Apply filter**.
 1. The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions. Select **Import** to download the filtered configurations from Dataverse to the current Dynamics 365 Finance instance.
