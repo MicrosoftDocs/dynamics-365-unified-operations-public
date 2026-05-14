@@ -374,11 +374,13 @@ To enter the Buyer schema codes, follow these steps:
 1. Select a specific customer in the list. On the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
 1. In the **Value** column, enter the required buyer electronic address.
 
-### Configure the buyer electronic address handling
+### Configure the electronic address handling
 
 For both Seller and Buyer identification, the system uses the electronic address you define as the **EndpointID** value with the **schemeID** attribute set to **0225** (FRCTC ELECTRONIC ADDRESS) by default, according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/).
 
 Your can change the code of the electronic address scheme to any value that better fits your business processes configuring the **CompanyEndpointType** and **CustomerEndpointType** electronic document properties types for sellers and buyers respectively. The values defined via these electronic document properties have higher priority and overwrite the default **0225** value.
+
+You can also control the interpretation of the Buyer's **Branch ID** value. By default, it is considered as an entire electronic address. Alternatively, you can to configurable the **ElectronicAddressSuffix** electronic document property to force the system to interpret the Branch ID value only as a *SUFFIX* part of the electronic address. The whole electronic address will be generated as the concatenation of the Buyer's **SIREN_**, **SIRET_**, and the **SUFFIX**.
 
 > [!NOTE]
 > To learn more about the full list of the electronic document properties used during the generation of electronic invoices XML files, refer to the following Appendix chapter [List of electronic document properties](#EDproperties)
@@ -669,7 +671,7 @@ The following configurable electronic document properties are used during the ge
 | **#PMT#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment instructions.|
 | **#AAB#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment terms.|
 | **#ADN#** | Customers | Optional note prefix determining buyers for B2G communication.|
-| **ElectronicAddressSuffix** | Legal entities | |
+| **ElectronicAddressSuffix** | Legal entities | If any non-empty value of this parameter is defined, then the Buyer's electronic address will be constructed as **SIREN_SIRET_BranchID**. Otherwise, only the Branch ID will be used as the whole electronic address. |
 
 ## More information
 
