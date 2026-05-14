@@ -380,7 +380,7 @@ For both Seller and Buyer identification, the system uses the electronic address
 
 Your can change the code of the electronic address scheme to any value that better fits your business processes configuring the **CompanyEndpointType** and **CustomerEndpointType** electronic document properties types for sellers and buyers respectively. The values defined via these electronic document properties have higher priority and overwrite the default **0225** value.
 
-You can also control the interpretation of the Buyer's **Branch ID** value. By default, it is considered as an entire electronic address. Alternatively, you can to configurable the **ElectronicAddressSuffix** electronic document property to force the system to interpret the Branch ID value only as a *SUFFIX* part of the electronic address. The whole electronic address will be generated as the concatenation of the Buyer's **SIREN_**, **SIRET_**, and the **SUFFIX**.
+You can also control the interpretation of the Buyer's **Branch ID** value. By default, it is considered as an entire electronic address. Alternatively, you can configure the **ElectronicAddressSuffix** electronic document property to force the system to interpret the Branch ID value only as a *SUFFIX* part of the electronic address. The whole electronic address will be generated as the concatenation of the Buyer's **SIREN_**, **SIRET_**, and the **SUFFIX**.
 
 > [!NOTE]
 > To learn more about the full list of the electronic document properties used during the generation of electronic invoices XML files, refer to the following Appendix chapter [List of electronic document properties](#EDproperties)
