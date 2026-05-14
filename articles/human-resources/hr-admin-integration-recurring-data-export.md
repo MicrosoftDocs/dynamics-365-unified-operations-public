@@ -44,13 +44,13 @@ This tutorial uses the following technologies:
 - **[Dynamics 365 Human Resources](https://www.microsoft.com/dynamics-365/products/human-resources)** – The master data source for workers that you export.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – The technology that provides orchestration and scheduling of the recurring export.
 
-    - **[Connectors](/azure/connectors/apis-list)** – The technology that connects the logic app to the required endpoints.
+  - **[Connectors](/azure/connectors/apis-list)** – The technology that connects the logic app to the required endpoints.
 
-        - [HTTP with Microsoft Entra ID](/connectors/webcontents/) connector
-        - [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) connector
+    - [HTTP with Microsoft Entra ID](/connectors/webcontents/) connector
+    - [OneDrive](/azure/connectors/connectors-create-api-onedriveforbusiness) connector
 
 - **[DMF package REST API](../fin-ops-core/dev-itpro/data-itpro/data-management-api.md)** – The technology that triggers the export and monitors its progress.
-- **[OneDrive for Business](https://onedrive.live.com/about/business/)** – The destination for the exported workers.
+- **[OneDrive](https://onedrive.live.com/about/business/)** – The destination for the exported workers.
 
 ## Prerequisites
 
@@ -131,7 +131,7 @@ Most of this exercise involves creating the logic app.
         :::image type="content" source="media/integration-logic-app-until-loop-step.png" alt-text="Screenshot of the Until loop container.":::
 
         > [!NOTE]
-        > Set the limit count to **15** to wait a maximum of 75 seconds (15 iterations × 5 seconds) for the export to be completed. If your export takes more time, adjust the limit count as appropriate.        
+        > Set the limit count to **15** to wait a maximum of 75 seconds (15 iterations × 5 seconds) for the export to be completed. If your export takes more time, adjust the limit count as appropriate.
 
     1. Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
 
@@ -200,8 +200,5 @@ The following illustration shows what the Logic Apps designer looks like when al
 ## Summary
 
 In this tutorial, you learned how to use a logic app to export data from Human Resources and save the exported data to a OneDrive folder. You can modify the steps of this tutorial as required to suit your business needs.
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
