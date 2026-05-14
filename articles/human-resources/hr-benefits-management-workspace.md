@@ -4,7 +4,7 @@
 title: Benefits management workspace
 description: This article describes the Benefits management workspace in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/03/2024
+ms.date: 05/13/2026
 ms.topic: article
 # optional metadata
 
@@ -82,19 +82,19 @@ To view a different benefits period, select it from the **Period** drop-down lis
 
 :::image type="content" source="./media/hr-benefits-management-workspace-period.png" alt-text="Screenshot of the Period drop-down list to change the benefits period.":::
 
-
 ## Open enrollment tab
 
 You can view action items by selecting either a tile or a tab. If you select a tab, you can view and select workers on the workspace page.
-The **Open enrollment** tab provides key metrics for the open enrollment process. 
+The **Open enrollment** tab provides key metrics for the open enrollment process.
 
 Information regarding open enrollment is displayed 30 days before the **Enrollment start date**. This is defined in the **Periods** setup in **Benefits management** > **Links** > **Periods**, in the **Enrollment start date** field. To change this setting, go to **Human resources shared parameters** > **Benefits management** > **Open enrollment options** and update the **Number of** field.  
 
 The following information is available on the **Open enrollment** tab:
- - Employees that haven't started the open enrollment process
- - Employees that have elections in process
- - Employees that have completed the election process
- - Unconfirmed selections
+
+- Employees that haven't started the open enrollment process
+- Employees that have elections in process
+- Employees that have completed the election process
+- Unconfirmed selections
 
 **Summary tiles**
 
