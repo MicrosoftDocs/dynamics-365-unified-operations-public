@@ -4,7 +4,7 @@
 title: Manage features in Human Resources
 description: This article describes the Feature management feature and how you can use it.
 author: twheeloc
-ms.date: 01/15/2025
+ms.date: 05/14/2026
 ms.topic: how-to
 # optional metadata
 
@@ -27,24 +27,24 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. Use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 For more information about new features in Human Resources, see [What's new in Human Resources](hr-admin-whats-new.md) and [Dynamics 365 and Power Platform Release Plan](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the **Feature management** workspace, you can turn them on. Some features may be on by default.
+All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the **Feature management** workspace, you can turn them on. Some features might be on by default.
 
-Once a feature is generally available, it may be turned on or off in production environments. The **Feature management** workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
+When a feature is generally available, you can turn it on or off in production environments. The **Feature management** workspace indicates when a preview feature becomes mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until a feature becomes mandatory, you can turn it on and off in all environments.
 
 ## Enable or disable preview features
 
 To access preview features, you must first enable them in your environment. Enabling or disabling preview features is environment-specific.
 
 > [!IMPORTANT]
-> Preview features are only available in **Sandbox** environments. When you turn on a preview feature, you enable it for all users in your organization who are in that environment. When you turn off the preview feature, you disable it and make it inaccessible to your users. Preview features have limited support in Human Resources. They might use fewer privacy and security measures, and they aren't included in the Human Resources service level agreement (SLA). You should not use preview features to process personal data (that is, any information that could identify you), or to process other data that is subject to legal or regulatory compliance requirements.
+> Preview features are only available in **Sandbox** environments. When you turn on a preview feature, you enable it for all users in your organization who are in that environment. When you turn off the preview feature, you disable it and make it inaccessible to your users. Preview features have limited support in Human Resources. They might use fewer privacy and security measures, and they aren't included in the Human Resources service level agreement (SLA). You shouldn't use preview features to process personal data (that is, any information that could identify you), or to process other data that's subject to legal or regulatory compliance requirements.
 
 1. In Human Resources, select **System administration**.
-2. Select the **Feature management** tile.
-3. To enable a preview feature, select it from the list, and then select **Enable**. To disable a preview feature, select it from the list, and then select **Disable**.
+1. Select the **Feature management** tile.
+1. To enable a preview feature, select it from the list, and then select **Enable**. To disable a preview feature, select it from the list, and then select **Disable**.
 
 ## Enable or disable Benefits management
 
@@ -73,7 +73,7 @@ You can view the information in these pages in read-only mode. If you want to ed
 To enable Leave and absence, use the same procedure in [Enable or disable preview features](hr-admin-manage-features.md?enable-or-disable-preview-features).
 
 > [!IMPORTANT]
-> You can’t disable the **Multiple leave types** feature in Leave and absence after you enable it. This applies to both **Sandbox** and **Production** environments.
+> You can't disable the **Multiple leave types** feature in Leave and absence after you enable it. This restriction applies to both **Sandbox** and **Production** environments.
 
 For more information about preview features in Leave and absence, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
