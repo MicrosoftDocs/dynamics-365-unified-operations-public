@@ -1,8 +1,8 @@
 ---
 title: Run an on-hand consistency check
 description: Learn when to run an on-hand consistency check, what it does, and how to run it for one or more items in Supply Chain Management.
-author: banluo-ms
-ms.author: banluo
+author: ChihunL
+ms.author: chihunleee
 ms.reviewer: kamaybac
 ms.search.form: SysConsistencyCheck
 ms.topic: how-to
