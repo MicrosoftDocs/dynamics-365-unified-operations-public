@@ -91,7 +91,7 @@ On the **Columns to display for costs** FastTab, the cost accountant decides whi
 On the **Columns to display for budgeted costs** FastTab, the cost accountant decides which columns to show for the selected budget versions. You can make individual selections for the original and revised budget.
 
 > [!NOTE]
-> Because the following fields behave in the same manner for original budget and revised budget, the descriptions apply to both the original budget and the revised budget. 
+> Because the following fields behave in the same manner for original budget and revised budget, the descriptions apply to both the original budget and the revised budget.
 
 | Field                     | Description |
 |---------------------------|-------------|
@@ -115,6 +115,8 @@ A manager can select the fiscal calendar period to view. The session date determ
 The values in the fiscal calendar period are determined by the report name and the fiscal calendar that you select for the cost accounting ledger that is associated with the report name on the **Cost control workspace configurations** page.
 
 In the cost object dimension hierarchy, users can select the aggregation level at which balances should be shown. By enabling access-level security, you control the permissions, so that users can select only the hierarchy levels that they have access to. Therefore, they can see only the aggregated balances that they have access to.
+
+## Use the Cost control workspace
 
 ### Add or remove columns
 
