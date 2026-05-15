@@ -56,7 +56,7 @@ The overhead calculation performs several calculation steps on the source data, 
 
 | Field                  | Description |
 |------------------------|-------------|
-| Fiscal calendar period | Select the fiscal calendar period to assign an overhead calculation ID to.**NOTE:**<br>The fiscal periods that are listed in the field come from the fiscal calendar that is associated with the cost accounting ledger. |
+| Fiscal calendar period | Select the fiscal calendar period to assign an overhead calculation ID to.**NOTE:**  The fiscal periods that are listed in the field come from the fiscal calendar that is associated with the cost accounting ledger. |
 | Actual version         | Select the appropriate overhead calculation ID. |
 | Budget version         | Select the appropriate overhead calculation ID. |
 | Revised budget version | Select the appropriate overhead calculation ID. |
