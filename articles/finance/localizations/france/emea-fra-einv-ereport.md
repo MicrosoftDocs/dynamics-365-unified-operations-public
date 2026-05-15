@@ -315,6 +315,9 @@ To enter the address, follow these steps:
 1. Select a customer.
 1. On the **Addresses** FastTab, add a valid address for the selected customer.
 
+> [!NOTE]
+> Each address is linked to one set of Registration numbers, including the Branch ID (electronic address). If a customer has several electronic addresses the you need to create several location addresses to ensure one-to-one relation.
+
 ### Buyer identification
 
 To enter the registration numbers, follow these steps:
