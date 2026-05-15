@@ -92,6 +92,16 @@ Follow these steps to sign out the Microsoft Entra ID account that's signed in o
 1. Select **Select a connection**.
 1. Select **Sign out**.
 
+## What's the difference between Log off and Sign out in the Warehouse Management mobile app?
+
+The Warehouse Management mobile app exposes two similar-sounding actions that end different sessions. They aren't interchangeable.
+
+- **Log off** is a menu item that you configure in Supply Chain Management on the **Mobile device menu items** page (with **Mode** set to *Activity code* and **Activity code** set to *Log off*). When a worker selects **Log off**, the worker's session is ended on the server side. The worker's stored state (such as the last screen they were viewing) is cleared, and the next worker who signs in starts from the menu that's configured for their work user.
+- **Sign out** is a built-in button in the Warehouse Management mobile app itself. It signs the Microsoft Entra ID account out of the app on the current device, but it doesn't end the work user session in Supply Chain Management. The worker's server-side state is preserved, so the next time the same worker signs in on any device, the app returns to the screen that they last had open.
+
+> [!NOTE]
+> If a worker uses **Sign out** while a screen other than the main menu is open, that screen reappears on the next sign-in, even if **Menu name** is set to *Main* for the work user on the **Work users** page. To always start at the configured main menu, the worker must use the **Log off** menu item before they sign out of the app. This behavior is by design.
+
 ## Can I just use the Microsoft Entra ID as a worker and skip the worker sign-in page?
 
 Yes. You can map Microsoft Entra ID users to worker IDs in Supply Chain Management. Workers can then authenticate the app with Supply Chain Management and sign in as a worker at the same time. For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
