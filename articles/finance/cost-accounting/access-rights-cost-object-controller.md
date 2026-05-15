@@ -19,7 +19,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-The **Cost control** workspace is a central point where managers can view the performance of their cost objects. This workspace lets managers consume Cost accounting data even though they aren't cost accountants. For security reasons, managers should be allowed to see only the Cost accounting data that is related to the specific cost objects that they're responsible for.
+The **Cost control** workspace is a central point where managers can view the performance of their cost objects. This workspace lets managers consume Cost accounting data even though they aren't cost accountants. For security reasons, managers should only see the Cost accounting data that relates to the specific cost objects that they're responsible for.
 
 Cost accounting has four unique roles.
 
@@ -69,7 +69,7 @@ Use the **Users** FastTab in the hierarchy designer to add one or more user IDs 
 > [!NOTE]
 > Assign cost accountants to the top level of the hierarchy, so they can see all entries in Cost accounting.
 
-Before the Access list hierarchy and its security settings can be applied, the **Enable view access for cost object dimension members** option must be set to **Yes** on the **General** tab of the **Cost accounting parameters** page (**Cost accounting** > **Setup** > **Parameters**).
+Before you can apply the Access list hierarchy and its security settings, set the **Enable view access for cost object dimension members** option to **Yes** on the **General** tab of the **Cost accounting parameters** page (**Cost accounting** > **Setup** > **Parameters**).
 
 Use the settings for the Access list hierarchy to control the data that is shown in the following areas:
 
