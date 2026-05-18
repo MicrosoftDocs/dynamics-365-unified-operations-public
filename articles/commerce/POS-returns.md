@@ -174,7 +174,7 @@ Before you can set up return locations, set up the following elements:
 
 To set up return locations, follow these steps:
 
-1. Go to **Retail and Commerce** > **Channel setup** > Warehouses**, and select a warehouse.
+1. Go to **Retail and Commerce** > **Channel setup** > **Warehouses**, and select a warehouse.
 1. On the **Retail** FastTab, in the **Default return location** field, select the inventory location to use for returns where the info codes or reason codes aren't mapped to return locations.
 1. In the **Default return pallet** field, select the pallet to use for returns where the info codes or reason codes aren't mapped to return locations.
 1. Go to **Retail and Commerce** > **Inventory management** > **Return locations**.
