@@ -301,7 +301,7 @@ Follow these steps to set up cycle count thresholds.
 1. In the query editor dialog box, on the **Range** tab, find the row where the **Field** field is set to *Item number*. Set the **Criteria** field for that row to *L0101*.
 1. Select **OK** to close the query editor dialog box.
 
-        You defined a cycle count threshold for item *L0101*.
+   You defined a cycle count threshold for item *L0101*.
 
 The cycle counting work is created for item *L0101* at any location if the on-hand quantity is less than 2, and if the date of the last cycle count for the location isn't today.
 
@@ -342,6 +342,6 @@ Follow these steps to set up a cycle count plan.
 1. Go to **Warehouse management \> Common \> Cycle count scheduling**. The plan begins immediately and creates counting work. Because counting work isn't completed, the **Status** field is set to *In process*. After one minute, the value in the **Total cycle counts** column changes to *1*.
 
     > [!NOTE]
-        > The cycle count work isn't created if the number of days since the last cycle counting is less than the value that you set for the **Days between cycle counting** field for the cycle counting plan. For example, if the **Days between cycle counting** field is set to *5*, the cycle counting work is created every five days. However, if the cycle counting work is processed on day 3, the next cycle counting work is created five days after the last cycle counting was processed, on day 8.
+    > The cycle count work isn't created if the number of days since the last cycle counting is less than the value that you set for the **Days between cycle counting** field for the cycle counting plan. For example, if the **Days between cycle counting** field is set to *5*, the cycle counting work is created every five days. However, if the cycle counting work is processed on day 3, the next cycle counting work is created five days after the last cycle counting was processed, on day 8.
 
 1. On Action Pane, select **Work** to view the counting work that was created.
