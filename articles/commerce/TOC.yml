@@ -1062,6 +1062,8 @@
           href: dom-runs-results.md
         - name: Clean up DOM fulfillment plans and logs
           href: dom-clean-up.md
+        - name: Cross-legal entity fulfillment with DOM
+          href: dom-cross-legal-entity-fulfillment.md
         - name: DOM extensibility
           href: dom-extensibility.md
         - name: DOM limitations

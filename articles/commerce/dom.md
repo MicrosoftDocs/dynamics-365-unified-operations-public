@@ -46,6 +46,8 @@ The following video provides an overview of DOM capabilities in Dynamics 365 Com
 
 [Clean up DOM fulfillment plans and logs](dom-clean-up.md)
 
+[Cross-legal entity fulfillment with DOM](dom-cross-legal-entity-fulfillment.md)
+
 [DOM extensibility](dom-extensibility.md)
 
 [DOM limitations](dom-limitations.md)
