@@ -6,22 +6,22 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 ms.topic: how-to
-ms.date: 12/02/2024
+ms.date: 5/5/2026
 ms.custom: 
   - bap-template
 ---
 
-# BOM calculations groups
+# BOM calculation groups
 
 [!include [banner](../includes/banner.md)]
 
 This article provides information about calculation groups for bills of materials (BOMs) and how to set them up. To run a BOM calculation, you must either set up calculation groups and assign them to individual items, or set a default calculation group. The calculation settings from the calculation group are then used as default values on the BOM calculation page at the time of BOM calculation.
 
-A default calculation group is required on the **Inventory and warehouse management parameters** page, or a product-specific calculation group is required on the **Released product details** page. The system first looks for the calculation group setup on the **Released product details** page. If it doesn't find a calculation group there, it looks on the **Inventory and warehouse management parameters** page. If the system can't find a calculation group, the user receives an error message during calculation. A calculation group contains policies for the cost price model, the sales price model, and the warnings checklist. The calculation settings from the calculation group are used as default values on the **BOM calculation** page at the time of BOM calculation.
+You must set a default calculation group on the **Inventory and warehouse management parameters** page, or set a product-specific calculation group on the **Released product details** page. The system first looks for the calculation group setup on the **Released product details** page. If it doesn't find a calculation group there, it looks on the **Inventory and warehouse management parameters** page. If the system can't find a calculation group, the user receives an error message during calculation. A calculation group contains policies for the cost price model, the sales price model, and the warnings checklist. The calculation settings from the calculation group are used as default values on the **BOM calculation** page at the time of BOM calculation.
 
 ## Purposes of BOM calculation groups
 
-You assign a BOM calculation group to items for several reasons:
+Assign a BOM calculation group to items for several reasons:
 
 - By setting the **Cost price model** field, you indicate the source of a purchased component’s cost contribution data during the calculation of the planned cost of a manufactured item. Some manufacturers calculate planned costs by using the purchase price trade agreements for purchased components or another basis, such as the purchase price records in a costing version.
 - By setting the **Sales price model** field, you indicate how the item’s data is used to calculate a suggested sales price. You can specify either the item sales price or the cost group. Some manufacturers want to calculate a suggested sales price for manufactured items. The calculated sales price can reflect a rolled-price approach that is based on the component’s sales price record. Alternatively, the calculated sales price can reflect a cost-plus-markup approach that is based on the component’s cost and applicable profit percentage, which is associated with the item’s cost group.
@@ -29,7 +29,7 @@ You assign a BOM calculation group to items for several reasons:
 
 ## Calculation groups
 
-You define calculation groups under **Predetermined cost policies setup** in Cost management. Calculation groups that are assigned to items let you specify how the cost or sales price of components, as outlined by the calculation group, is sourced for the calculation. On the **Calculation groups** page, you can define a cost price model, an alternative cost price model, a sales price model, and warnings.
+Define calculation groups under **Predetermined cost policies setup** in Cost management. Calculation groups assigned to items let you specify how the cost or sales price of components, as outlined by the calculation group, is sourced for the calculation. On the **Calculation groups** page, you can define a cost price model, an alternative cost price model, a sales price model, and warnings.
 
 ### Cost price model
 
@@ -37,7 +37,7 @@ There are four options for the **Cost price model** field:
 
 - *Item cost price* – The cost price from the **Released product** table is used, or the combination of item dimensions is used as the cost price.
 - *Item purchase price* – The purchase price from the **Cost price** field on the **Purchase** tab of the **Released product list** page is used.
-- *Trade agreements* – You can configure trade agreements for specific combinations of items and vendors, or for specific sites. Then, when you select the *Trade agreements* option here, the trade agreement that you created for the purchase price together with the item and site will be used.
+- *Trade agreements* – You can configure trade agreements for specific combinations of items and vendors, or for specific sites. Then, when you select the *Trade agreements* option here, the trade agreement that you created for the purchase price together with the item and site is used.
 - *Inventory price* – The current inventory value for the item is used to calculate the unit cost in the BOM calculation. A unit cost price is calculated only if the posted quantity and the physical quantity are more than 0 (zero).
 
 ### Alternative cost price
@@ -46,30 +46,30 @@ The **Alternate cost price** field has the same options as the **Cost price mode
 
 ### Sales price model
 
-There are two options for the calculation of the **Sales prices** field:
+For the **Sales prices** field, choose from two options for calculation:
 
-- **Cost group** – When this option is selected, the sales price is calculated based on the cost price and the profit setting percentage from the cost group.
-- **Item sales price** – When this option is selected, the sales price on the **Sell** FastTab from the Released product table is used.
+- **Cost group** – When you select this option, the sales price is calculated based on the cost price and the profit setting percentage from the cost group.
+- **Item sales price** – When you select this option, the sales price on the **Sell** FastTab from the Released product table is used.
 
 ### Stop explosion
 
-The **Stop explosion** check box is used to indicate when a manufactured item should be treated as a purchase item. Typically, you'll leave the **Stop explosion** check box cleared. By selecting this check box, you indicate that a manufactured item must be treated as a purchase component instead of a manufactured component for the purpose of BOM calculations. Depending on the site, the item's cost can still be calculated by using BOM calculations. Explosion of planned purchase orders and production orders is stopped at the BOM whose components are associated with the calculation group that the **Stop explosion** check box is selected for. Master scheduling generates the planned orders on the BOM itself, not on the items that are included in the BOM. Basically, by selecting this check box, you specify that a cost won't be added into the BOM calculation for items that have this calculation group.
+Use the **Stop explosion** check box to indicate when a manufactured item should be treated as a purchase item. Typically, you leave the **Stop explosion** check box cleared. By selecting this check box, you indicate that a manufactured item must be treated as a purchase component instead of a manufactured component for the purpose of BOM calculations. Depending on the site, the item's cost can still be calculated by using BOM calculations. Explosion of planned purchase orders and production orders stops at the BOM whose components are associated with the calculation group that the **Stop explosion** check box is selected for. Master scheduling generates the planned orders on the BOM itself, not on the items that are included in the BOM. By selecting this check box, you specify that a cost isn't added into the BOM calculation for items that have this calculation group.
 
 ### Warnings
 
-On the **Warnings** FastTab, you select the options for any warning messages that users should receive when they do BOM calculations.
+On the **Warnings** FastTab, select the options for any warning messages that users should receive when they do BOM calculations.
 
 For example, if you select the **No BOM** check box, the user receives a warning if no active BOM version is found for one of the components or the parent item that the BOM calculation is run for. If you select the **No route** check box, the user receives a warning if no active route version is found. If you're using resources on your routes and operations, you can instruct the system to check for those resources. Then, if a resource isn't found on every line in the active route, the user receives a warning.
 
-You can also verify and check for consumption. Consumption is the quantity in a particular route. Typically, it represents the amount of time that is required in order to perform a specific operation for a production process. You can check whether an item has no cost price. If there's no active cost price for an item, no cost is added into the BOM calculation.
+You can also verify and check for consumption. Consumption is the quantity in a particular route. Typically, it represents the amount of time that is required to perform a specific operation for a production process. You can check whether an item has no cost price. If there's no active cost price for an item, no cost is added into the BOM calculation.
 
-You can also check and verify the age of the cost price. For example, enter *60* to indicate that the unit cost price must be reevaluated after 60 days. If this limit is reached, the system generates a warning. For example, a cost price was entered for an item in January of this year. If it's now August, which is more than 60 days after the cost price was entered, the user receives a warning when the BOM calculation is run. You can enter in a percentage in the **Minimum contribution margin** field. This value indicates the point at which the minimum contribution margin isn't being met. If the contribution margin for a particular component isn't met, the user receives a warning. Therefore, this field helps guarantee that you don't undercut the costs and the additional carrying costs that might be required for your items.
+You can also check and verify the age of the cost price. For example, enter *60* to indicate that the unit cost price must be reevaluated after 60 days. If this limit is reached, the system generates a warning. For example, a cost price was entered for an item in January of this year. If it's now August, which is more than 60 days after the cost price was entered, the user receives a warning when the BOM calculation is run. You can enter a percentage in the **Minimum contribution margin** field. This value indicates the point at which the minimum contribution margin isn't being met. If the contribution margin for a particular component isn't met, the user receives a warning. Therefore, this field helps guarantee that you don't undercut the costs and the additional carrying costs that might be required for your items.
 
 ### Default setup in Inventory and warehouse management parameters
 
-Because calculation groups are required in order to run calculations, you must set up a default calculation group in the Inventory management parameters. This setup enables companies to have a standard cost group and profit setting for all items. Then, if a particular item has special calculation requirements, the user can assign a different calculation group to that item. Typically, you can set calculation groups on BOM component items instead of BOM items. However, when warning messages are shown, calculation groups can be applied. A calculation group that is assigned to items overrides the default value that is set up in the Inventory management parameters.
+Because calculation groups are required to run calculations, set up a default calculation group in the Inventory management parameters. This setup enables companies to have a standard cost group and profit setting for all items. If a particular item has special calculation requirements, assign a different calculation group to that item. Typically, you set calculation groups on BOM component items instead of BOM items. However, when warning messages are shown, you can apply calculation groups. A calculation group that you assign to items overrides the default value that you set up in the Inventory management parameters.
 
-You can set up the default parameter at **Cost management** \> **Inventory accounting policies setup** \> **Parameters** \> **Inventory accounting** \> **Calculation group**. By setting up a default configuration group, you can also configure the warning conditions that prompt users during the BOM calculation process, if the selected components might cause calculation errors.
+Set up the default parameter at **Cost management** > **Inventory accounting policies setup** > **Parameters** > **Inventory accounting** > **Calculation group**. By setting up a default configuration group, you can also configure the warning conditions that prompt users during the BOM calculation process, if the selected components might cause calculation errors.
 
 ### View warning messages on the Complete page
 

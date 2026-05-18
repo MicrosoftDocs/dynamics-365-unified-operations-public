@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/04/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2016-06-30
@@ -38,10 +38,10 @@ To set up item sales tax groups for reverse charge VAT, follow these steps:
 1. Expand or collapse the **Purchase** section.
 1. Select **Edit**.
 1. In the **Item sales tax group** field, select **RC-VAT** to open the lookup.
-1. In the list, find and select **RC-VAT**. 
+1. In the list, find and select **RC-VAT**.
 1. Expand or collapse the **Sell** section.
 1. In the **Item sales tax group** field, select **RC-VAT** to open the lookup.
-1. In the list, find and select **RC-VAT**. 
+1. In the list, find and select **RC-VAT**.
 1. Select **Save**.
 1. Close the form
 1. In the list, find and select **S0020**.
@@ -52,10 +52,10 @@ To set up item sales tax groups for reverse charge VAT, follow these steps:
 1. In the list, select **RC-VAT** in the selected row.
 1. Close the page.
 1. Go to **Procurement and sourcing** \> **Procurement categories**. On this form you'll assign the item sales tax group to the categories that are subject to reverse charge.  
-1. In the tree, expand **Expand the category tree and select a category**. 
+1. In the tree, expand **Expand the category tree and select a category**.
 1. Select **Cleaning**.
 1. In the tree, select **Select a category**.
-1. Select **Cleaning**. 
+1. Select **Cleaning**.
 1. Expand or collapse the **Item sales tax groups** section.
 1. In the **Item sales tax group** field, select **RC-VAT** to open the lookup.
 1. In the list, select **RC-VAT** the selected row.  
@@ -67,7 +67,5 @@ To set up item sales tax groups for reverse charge VAT, follow these steps:
 >
 > - **Domestic reverse charge** - For example, the purchase of UK services, gold, computers chips, or mobile phones.
 > - **European service purchase** - For the European goods (items) purchasing, you can activate **Use tax** on the sales tax group.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

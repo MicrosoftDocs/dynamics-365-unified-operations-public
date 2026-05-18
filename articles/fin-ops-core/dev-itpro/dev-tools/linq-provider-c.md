@@ -6,7 +6,7 @@ ms.author: pvillads
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/13/2024
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -20,40 +20,40 @@ ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
 
 This article discusses the LINQ provider.
 
-LINQ (Language Integrated Query) is a set of classes and methods that enable you to access data that is stored in a variety of places and formats. The LINQ framework is the standard for accessing data in managed languages. LINQ presents to programmers a unified and consistent API for data access from heterogeneous data sources, such as:
+LINQ (Language Integrated Query) is a set of classes and methods that you can use to access data stored in a variety of places and formats. The LINQ framework is the standard for accessing data in managed languages. LINQ presents to programmers a unified and consistent API for data access from heterogeneous data sources, such as:
 
 - In-memory object graphs
 - Active Directory entries
 - Flickr pictures and XML
 - SQL Server
 
-The LINQ provider allows the user to access business data by using .NET managed languages.
+By using the LINQ provider, you can access business data by using .NET managed languages.
 
 ## Two syntactical mechanisms for accessing LINQ
 
-There are two syntactical approaches for using LINQ, as described in the following table.
+You can use two syntactical approaches for LINQ, as described in the following table.
 
 | Approach | X++ | C\# and Visual Basic |
 |-------------------------|------------------|---------------------------|
-| LINQ by standard method call syntax. | Impractical. Language support for generics is vital for LINQ and is not supported in X++. | Available, requires lambda syntax. |
-| LINQ by specialized syntax that is understood by the compiler. | Not available.   | Available, easier to use. |
+| LINQ by standard method call syntax. | Impractical. Language support for generics is vital for LINQ and isn't supported in X++. | Available, requires lambda syntax. |
+| LINQ by specialized syntax that the compiler understands. | Not available.   | Available, easier to use. |
 
-There are two syntactic mechanisms for accessing the LINQ provider in C\# (or in Visual Basic):
+C\# and Visual Basic provide two syntactic mechanisms for accessing the LINQ provider:
 
-- By standard, or fluent, method call syntax.
-- By specialized syntax that the C\# compiler has been enhanced to understand as equivalent to the LINQ method calls. (Such syntax is sometimes called “syntactic sugar”.)
+- Standard, or fluent, method call syntax.
+- Specialized syntax that the C\# compiler understands as equivalent to the LINQ method calls. This syntax is sometimes called "syntactic sugar".
 
-This article is going to review each syntactic mechanism for LINQ, starting with the easier specialized syntax.
+This article reviews each syntactic mechanism for LINQ, starting with the easier specialized syntax.
 
 ## LINQ by specialized syntax in C\#
 
-Some .NET languages understand specialized syntax for LINQ as an alternative that is easier for us to write. C\# is one such language.
+Some .NET languages, such as C\#, understand specialized syntax for LINQ as an alternative that's easier to write.
 
-To use LINQ in C\#, you must understand the C\# keyword **var**, which is used to declare variables. The var keyword tells the compiler to figure out the data type of the variable by what is assigned to the variable. This feature is now also available in X++. The type is implicit in the source code, and the type is settled and unvarying after the compilation completes.
+To use LINQ in C\#, you must understand the C\# keyword **var**, which you use to declare variables. The `var` keyword tells the compiler to figure out the data type of the variable by what you assign to the variable. This feature is now also available in X++. The type is implicit in the source code, and the type is settled and unvarying after the compilation completes.
 
 ### Comparing X++ to C\# LINQ
 
-The X++ language supports the useful and easy to use `while select` statement. This lest you compare the X++ `while select` syntax to the specialized C\# LINQ syntax. First, here is the X++ sample.
+The X++ language supports the useful and easy-to-use `while select` statement. This statement lets you compare the X++ `while select` syntax to the specialized C\# LINQ syntax. First, here's the X++ sample.
 
 ```xpp
 CustTable ct;     // X++, traditional while select.
@@ -92,9 +92,9 @@ foreach (var ct in query)
 }
 ```
 
-## LINQ query in C\# by method syntax, using the lambda operator >
+## LINQ query in C# by method syntax, using the lambda operator >
 
-Next is another use of LINQ in C\#, except this time the more standard syntax is used to call the LINQ API. The approach also involves use of the lambda operator `>`. The following C\# query is functionally equivalent to the preceding C\# query.
+Next is another use of LINQ in C#, except this time the more standard syntax is used to call the LINQ API. The approach also involves use of the lambda operator `>`. The following C# query is functionally equivalent to the preceding C# query.
 
 ```csharp
 var query = customers
@@ -107,11 +107,11 @@ var query = customers
     .Select(primaryAndForeign => primaryAndForeign.P);
 ```
 
-There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C\# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C\# compiler doesn't handle the extensions provided by the finance and operations applications.
+There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C# compiler doesn't handle the extensions provided by the finance and operations applications.
 
 ### Limitation of the specialized LINQ syntax
 
-A limitation of the specialized LINQ syntax is that it can't be augmented with extensions to the LINQ provider. In contrast, standard syntax of method calls plus the lambda operator can be extended as needed. For instance, the LINQ framework provides a method for cross-company hints that can't be expressed in the special syntax for LINQ in C\#. Fortunately, due to the ability to compose queries, this limitation need not be a major problem. Calls to esoteric LINQ methods can be appended to the specialized LINQ syntax. The following C\# code shows this being done for the **crosscompany** method.
+A limitation of the specialized LINQ syntax is that it can't be augmented with extensions to the LINQ provider. In contrast, standard syntax of method calls plus the lambda operator can be extended as needed. For instance, the LINQ framework provides a method for cross-company hints that can't be expressed in the special syntax for LINQ in C#. Fortunately, due to the ability to compose queries, this limitation need not be a major problem. Calls to esoteric LINQ methods can be appended to the specialized LINQ syntax. The following C# code shows this being done for the **crosscompany** method.
 
 ```csharp
 // C#, mixing LINQ syntax mechanisms.
@@ -125,11 +125,11 @@ var query = (from ct in customers
 
 ## LINQ query execution
 
-The code generated for a LINQ query builds a tree at run time. When the results of the query are required, this tree is passed to the backend that will interpret it, and will provide the data as expressed in the query. The X++ compiler also builds a tree to express the query, but the X++ compiler has intimate knowledge about the capabilities of the database backend. This has several important implications as described in the following subsections.
+The code generated for a LINQ query builds a tree at run time. When the results of the query are required, this tree is passed to the backend that interprets it and provides the data as expressed in the query. The X++ compiler also builds a tree to express the query, but the X++ compiler has intimate knowledge about the capabilities of the database backend. This difference has several important implications as described in the following subsections.
 
 ### Inability to diagnose problems at LINQ compile-time
 
-The C\# compiler is largely unable to foresee and diagnose errors that will occur at run time due to the inability of the backend to process an incompatible LINQ query. For instance, in the following C\# code block, the specialized LINQ syntax is valid according to the C\# compiler. Yet at run time, an error would occur.
+The C# compiler is largely unable to foresee and diagnose errors that will occur at run time due to the inability of the backend to process an incompatible LINQ query. For instance, in the following C# code block, the specialized LINQ syntax is valid according to the C# compiler. Yet at run time, an error would occur.
 
 ```csharp
 var customerQuery = from c in db.Customers
@@ -138,15 +138,15 @@ var customerQuery = from c in db.Customers
                     select o.CustomerID).Contains(c.CustomerID);
 ```
 
-This query can't be handled by the current data layer, and while no errors are diagnosed at compile time, an error would occur at run time.
+This query can't be handled by the current data layer. While no errors are diagnosed at compile time, an error occurs at run time.
 
 ### Performance penalty with LINQ
 
-There is an overhead penalty paid at run time, when analysis of the tree occurs, and a suitable access language is generated. As we might expect, the performance penalty is incurred when analyzing the LINQ expression tree. The time required at run time to actually fetch the data doesn't vary much between C\# and LINQ versus X++ with `while select`. Our preliminary numbers show that the beginning-to-end performance of the query is about three times longer with C\# LINQ, compared to X++ `while select`, when very few records are fetched. But when many records are fetched, the total times are about the same between C\# and X++. The conclusion is that it takes much longer to fetch a lot of records than it takes to analyze the language tree.
+There's an overhead penalty paid at run time, when analysis of the tree occurs, and a suitable access language is generated. As you might expect, the performance penalty is incurred when analyzing the LINQ expression tree. The time required at run time to actually fetch the data doesn't vary much between C# and LINQ versus X++ with `while select`. Preliminary numbers show that the beginning-to-end performance of the query is about three times longer with C# LINQ, compared to X++ `while select`, when very few records are fetched. But when many records are fetched, the total times are about the same between C# and X++. The conclusion is that it takes much longer to fetch a lot of records than it takes to analyze the language tree.
 
 ### Composing queries with LINQ
 
-The model that's provided by LINQ allows queries to be composed of subqueries. The X++ language can't cleanly provide this feature. To understand this, consider the following C\# LINQ code. A flag is passed to a method to control the ordering of data results.
+The model that LINQ provides supports composing queries from subqueries. The X++ language can't cleanly provide this feature. To understand this limitation, consider the following C\# LINQ code. You pass a flag to a method to control the ordering of data results.
 
 ```csharp
 private IEnumerable RichCustomers(bool orderByName)
@@ -168,9 +168,8 @@ private IEnumerable RichCustomers(bool orderByName)
 }
 ```
 
-### Set based operations with LINQ
+### Set-based operations with LINQ
 
-LINQ queries can be applied for CRUD operations. But the model for updating, deleting, and inserting records isn't useful for the expression of set based operations. We're now working on extensions to add to the LINQ model that will translate into set based operations.
+You can use LINQ queries for CRUD operations. However, the model for updating, deleting, and inserting records isn't useful for expressing set-based operations. The product team is working on extensions to add to the LINQ model that translate into set-based operations.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

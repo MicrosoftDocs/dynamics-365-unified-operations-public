@@ -4,12 +4,15 @@ description: Learn how to set up the sales order status columns for dual-write, 
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
+  - sfi-image-nochange
 ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2020-06-25
-ms.custom: sfi-image-nochange
+
 ---
 
 # Set up the mapping for the sales order status columns

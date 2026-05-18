@@ -4,6 +4,8 @@ description: Learn about data management and integration via a brief overview of
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started

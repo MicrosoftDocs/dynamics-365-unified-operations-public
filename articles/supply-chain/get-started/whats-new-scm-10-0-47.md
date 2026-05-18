@@ -30,6 +30,7 @@ The following table lists the features that are included in this release. We mig
 | Module or feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
 | Production Control | Sensor Data Intelligence - Auto report progress scenario | [Production auto report scenario (preview)](../sensor-data-intelligence/sdi-scenario-production-auto-report.md) |  Feature management:<br>*(Preview) Sensor Data Intelligence - Auto report progress* |
+| Sales and marketing | Calculate prices for external systems through the pricing calculation API | [Calculate prices for external systems through the pricing calculation API](../unified-pricing-management/upm-pricing-calculation-api.md) | Enabled by default |
 | Sales and marketing | [Manage pricing rules using a generic base currency](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/manage-pricing-rules-using-generic-base-currency) | *Coming soon* | Enabled by default |
 | Sales and marketing | [Optimize pricing data import and export workflows](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/optimize-pricing-data-import-export-workflows) | [Pricing data import and export entities](../unified-pricing-management/upm-pricing-data-entities.md) |  Feature management:<br>*Unified pricing management pricing rule performance enhancement* |
 | Sales and marketing | Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen | [Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen (preview)](../sales-marketing/pay-by-link-with-adyen-connector.md) | Feature management:<ul><li>*Enable unified payments experience in POS*</li><li>*Enable Payments Notification feature*</li><li>*Enable Pay By Link Payment feature*</li><li>*Enable asynchronous payments for sales orders*</li></ul> |
@@ -37,7 +38,7 @@ The following table lists the features that are included in this release. We mig
 
 ## <a name="enhancements"></a>Feature enhancements added in this release
 
-The following table lists the feature enhancements that were added in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they're not listed in the [release plan](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements don't conflict with your existing customizations or preferences, each enhancement is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that were added in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they're not listed in the [release plan](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements don't conflict with your existing customizations or preferences, each enhancement is turned off by default (unless otherwise noted).
 
 Some of these features aren't visible on your system until you turn them on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) by using the name listed here for the *Feature management name* (additional configuration might also be needed). Features that don't show a feature management name are visible by default as of this version of Supply Chain Management, but typically add a new configuration option that you need to set to use the new functionality.
 
@@ -65,6 +66,8 @@ The following table lists the features that were introduced as public preview fe
 | Module | Feature name | More information |
 | --- | --- | --- |
 | Inventory and warehouse management | *Sample management* | [Sample management overview](../inventory/quality-sample-management-overview.md)<br><br>[Enable and configure sample management](../inventory/quality-sample-management-admin.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.46 (December 2025)](whats-new-scm-10-0-46.md) |
+| Other | Immersive Home | [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md) |
+| System administration | Agent management | [Enable agent management](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) |
 
 ## Features turned on by default in this release
 
@@ -107,6 +110,10 @@ The Warehouse Management mobile app is updated regularly following a different s
 ### What's new or changed in Demand planning
 
 Demand planning in Dynamics 365 Supply Chain Management is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in Demand planning](../demand-planning/whats-new-demand-planning.md).
+
+### What's new or changed in Planning Optimization
+
+Microsoft updates Planning Optimization monthly. However, based on business requirements, the product team occasionally releases other updates between the scheduled releases. For information about the latest versions and features, go to [Planning Optimization release process and release history](../master-planning/planning-optimization/release-process.md)
 
 ### Dynamics 365: 2025 release wave 2 plan
 

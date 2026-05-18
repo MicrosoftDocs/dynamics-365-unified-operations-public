@@ -4,7 +4,7 @@ description: Learn how to set up and use Microsoft Dynamics 365 Finance to work 
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.custom:
   - bap-template
@@ -74,7 +74,7 @@ To import a package of data entities that includes a predefined EM setup, follow
 1. In the Shared asset library, and select the **Data package** asset type.
 1. In the list of data package files, find and download the latest version of the **ES SII setup** zip archive. For example, it's titled **ES SII setup v13 ID671842** as of November, 2024.
 
-    ![LCS Shared asset library.](../media/emea-esp-sii-data-package-file.png)
+    :::image type="content" source="../media/emea-esp-sii-data-package-file.png" alt-text="Screenshot of the LCS Shared asset library.":::
 
 1. After the file is downloaded, open Finance, and select the company that you will work with the SII system from.
 1. Go to **Workspaces \> Data management**.
@@ -91,7 +91,7 @@ To import a package of data entities that includes a predefined EM setup, follow
 1. Select **Upload and add**, select the **ES SII setup.zip** file on your computer, and upload it.
 1. After the data entities are uploaded, on the Action Pane, select **Import**.
 
-    ![ES SII setup page.](../media/emea-esp-sii-data-entities-upload.png)
+    :::image type="content" source="../media/emea-esp-sii-data-entities-upload.png" alt-text="Screenshot of the ES SII setup page.":::
 
 To view the progress of the data import, look for a notification in **Action center**, or manually refresh the page. When the import is completed, the **Execution summary** page shows the results.
 
@@ -120,6 +120,7 @@ To review the imported electronic message item types, go to **Tax** \> **Setup**
 ## Set up the internet address and certificates for the SII system
 
 To work with the SII system, you must use a security certificate that is provided by AEAT. There are two options for storing this sensitive data:
+
 - Azure Key Vault storage
 - Local storage
 
@@ -146,7 +147,7 @@ To set up the internet address and certificates for the SII system, follow these
 
 1. On the **General** tab, in the **Key vault certificate** field, select the security certificate that you set up for all web services that you will use for interoperation with the SII system: **Cust invoice**, **Vend invoice**, **Intra-community**, **Cust payment**, **Vend payment**, and **CollectionInCash**.
 
-    ![Web services settings page.](../media/emea-esp-sii-setup-key-vault-certificate.png)
+    :::image type="content" source="../media/emea-esp-sii-setup-key-vault-certificate.png" alt-text="Screenshot of the Web services settings page.":::
 
 ## Set up EM parameters for the SII system
 
@@ -213,7 +214,7 @@ To set up the SIIGenerateItems executable class, follow these steps:
 
 1. Select **OK** to initiate the executable class.
 
-    ![Add new Electronic message items pane.](../media/emea-esp-sii-siigenerateitems-executable-class.png)
+    :::image type="content" source="../media/emea-esp-sii-siigenerateitems-executable-class.png" alt-text="Screenshot of the Add new Electronic message items pane.":::
 
 ### Set up the SIIPartyAttributesEvaluation executable class
 
@@ -231,7 +232,7 @@ To set up the SIIPartyAttributesEvaluation executable class, follow these steps:
 
 1. Select **OK** to initiate the executable class.
 
-    ![Add fields evaluation parameters pane.](../media/emea-esp-sii-siipartyattributesevaluation-executable-class.png)
+    :::image type="content" source="../media/emea-esp-sii-siipartyattributesevaluation-executable-class.png" alt-text="Screenshot of the Add fields evaluation parameters pane.":::
 
 ### Set up the MonitorCollectionInCash executable class
 
@@ -248,7 +249,7 @@ To set up the MonitorCollectionInCash executable class, follow these steps:
 
 1. Select **OK** to initiate the executable class.
 
-    ![SII Collections in cash monitoring parameters pane.](../media/emea-esp-sii-monitorcollectionincash-executable-class.png)
+    :::image type="content" source="../media/emea-esp-sii-monitorcollectionincash-executable-class.png" alt-text="Screenshot of the SII Collections in cash monitoring parameters pane.":::
 
 ## Set up additional fields and automatically defined rules
 
@@ -316,19 +317,19 @@ By default, for counterparties outside of Spain, when **Registration ID** is not
 When **Registration ID** is defined on the counterparty's master data, system analyzes the following types of the **Registration ID**:
 
 - For Spanish counteragents:
-    - `TaxRegistrationTypesList::NotCensused`
-    - `TaxRegistrationTypesList::TAXID`
+  - `TaxRegistrationTypesList::NotCensused`
+  - `TaxRegistrationTypesList::TAXID`
 - For EU counteragents:
-    - `TaxRegistrationTypesList::TAXID`
-    - `TaxRegistrationTypesList::OfficialIdDoc`
-    - `TaxRegistrationTypesList::Passport`
-    - `TaxRegistrationTypesList::ResidenceCertificate`
-    - `TaxRegistrationTypesList::OtherIdDoc`
+  - `TaxRegistrationTypesList::TAXID`
+  - `TaxRegistrationTypesList::OfficialIdDoc`
+  - `TaxRegistrationTypesList::Passport`
+  - `TaxRegistrationTypesList::ResidenceCertificate`
+  - `TaxRegistrationTypesList::OtherIdDoc`
 - All other counteragents:
-    - `TaxRegistrationTypesList::OfficialIdDoc`
-    - `TaxRegistrationTypesList::Passport`
-    - `TaxRegistrationTypesList::ResidenceCertificate`
-    - `TaxRegistrationTypesList::OtherIdDoc`
+  - `TaxRegistrationTypesList::OfficialIdDoc`
+  - `TaxRegistrationTypesList::Passport`
+  - `TaxRegistrationTypesList::ResidenceCertificate`
+  - `TaxRegistrationTypesList::OtherIdDoc`
 
 As a result of this analyzes system defines related **IDType**
 
@@ -377,6 +378,7 @@ The following values are available for the **TipoFactura** additional field as p
 | R5              | Factura Rectificativa en facturas simplificadas                                  | Corrective invoice in simplified invoices                                | This value can be manually applied to an invoice.                                                                                      |
 
 There are three ways to define a specific invoice type:
+
 - During invoice registration, before invoice posting, by applying a financial reason to the invoice.
 - By setting up rules for additional field values.
 - During manual invoice review in EM items before they are submitted to the SII system.
@@ -389,6 +391,7 @@ The system defines the value of the **TipoFactura** additional field according t
 1. If the invoice type isn't defined in step 3, set the value to **F1**.
 
 Financial reasons can be specified for invoices that are posted from the following documents:
+
 - Sales order
 - Free text invoice
 - Purchase order
@@ -398,6 +401,7 @@ Financial reasons can be specified for invoices that are posted from the followi
 
 > [!NOTE]
 > When you [report to SII system of Spain from legal entity with primary address out of Spain](#multiple-vat), you can specify financial reasons for invoices that are posted from the following documents only:
+>
 > - Purchase order
 > - Vendor invoice journal (AP)
 > - General ledger (GL) general journal
@@ -428,8 +432,8 @@ To enable the system to define the invoice type based on the setup of additional
 
 Both formats, **Libro de registro de facturas Recibidas** (invoices received) and **Libro de registro de facturas Expedidas** (invoices issued), must include a **TipoRectificativa** tag to report credit notes. This tag reports the type of credit note and can have one of the following values:
 
-   - **I** (INCREMENTAL): Incremental
-   - **S** (SUSTITUTIVA): Substitute
+- **I** (INCREMENTAL): Incremental
+- **S** (SUSTITUTIVA): Substitute
 
 To report a credit note with an **I** value in the **TipoRectificativa** tag, before you post the credit note, when you specify the original invoice by using the **Credit invoicing** function, select **Correction for differences only** in the **Correction method** field in the **Credit invoicing** dialog.
 
@@ -519,7 +523,7 @@ The search by **Sales tax group** and **Item sales tax group** can be divided in
 
 The following illustration shows the algorithm schema for each of these four substages.
 
-![Algorithm schema for substages.](../media/emea-esp-sii-claveregimenespecialotrascendencia-additional-field.png)
+:::image type="content" source="../media/emea-esp-sii-claveregimenespecialotrascendencia-additional-field.png" alt-text="Screenshot of the algorithm schema for substages.":::
 
 ## Set up number sequences for electronic messages
 
@@ -564,10 +568,11 @@ To support the scenario of reporting exempt code types on issued and received in
 Sometimes, companies in Spain set up sales tax codes that allow for negative tax percentages and that should not be reported to the SII system as VAT. To exclude invoices from reporting to the SII system if they have tax transactions where the sales tax code allows for negative tax percentages, in the **Reporting** section on the **Ledger** tab of the **General ledger parameters** page (**General ledger \> Setup \> General ledger parameters**), select the **Negative sales tax percentage** checkbox.
 
 If the **Negative sales tax percentage** checkbox is cleared on the **General ledger parameters** page, the following behavior occurs:
+
 - Invoices that have only tax transactions that have negative sales tax percentages won't be filled in as electronic message items for SII processing.
 - Only sales tax transactions that have sales tax codes where the **Negative sales tax percentage** checkbox is cleared will be included in the XML file that is reported to the SII system.
 
-![General ledger parameters page, Ledger tab.](../media/emea-esp-sii-negative-sales-tax-percentage.png)
+:::image type="content" source="../media/emea-esp-sii-negative-sales-tax-percentage.png" alt-text="Screenshot of the General ledger parameters page, Ledger tab.":::
 
 The **Negative sales tax percentage** checkbox on the **General ledger parameters** page doesn't affect reporting of reverse change transactions.
 
@@ -585,7 +590,7 @@ To correctly report both the preceding scenarios that involve a VAT rate of 0.00
 | ImportePorArticulos7_14_Otros | VAT 0%                |
 | ImporteTAIReglasLocalizacion  | Other                 |
 
-![Sales tax codes page.](../media/emea-esp-sii-zero-percent-vat-rates.png)
+:::image type="content" source="../media/emea-esp-sii-zero-percent-vat-rates.png" alt-text="Screenshot of the Sales tax codes page.":::
 
 > [!IMPORTANT]
 > The **Other** tax type was added specifically for the sales scenarios and is not intended for purchase transactions. For zero-tax vendor invoices lines, use the **VAT 0%** tax type instead.
@@ -626,7 +631,7 @@ To distinguish the acquisition of goods between investments and non-investments 
 
 This set up drives the fulfilling of the Bien 'Inversion' tag in the received invoices files.
 
-### Set up **Reverse charge** when this mechanism applies to the transaction.
+### Set up **Reverse charge** when this mechanism applies to the transaction
 
 In the context of Spain's SII system, the **InversionSujetoPasivo** node in the **SII Invoice Received Format (ES)** indicates the reverse charge mechanism applies to a particular transaction.
 
@@ -657,7 +662,7 @@ EM functionality automatically runs actions that are included in the processing 
 
 The **ES SII setup.zip** package provides the setup for **SII** processing in the EM functionality that supports interoperation with the SII system. The following illustration shows the schema for general **SII** processing. Manual user actions aren't included in this illustration but are explained later in this article.
 
-![Schema for general SII processing.](../media/emea-esp-sii-process.png)
+:::image type="content" source="../media/emea-esp-sii-process.png" alt-text="Screenshot of the schema for general SII processing.":::
 
 ### Actions of SII processing
 
@@ -704,6 +709,7 @@ To report invoices to the SII system, follow these steps:
 1. If you want to run all the possible actions for **SII** processing, clear the **Choose action** checkbox. If you want to run only a specific action, select the **Choose action** checkbox, and then, in the **Action** field, select the action to run.
 
 ### Run SII processing in batch mode for automated processing of interoperation with the SII system
+
 To run SII processing in batch mode for automated processing of interoperation with the SII system, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic message items**.
@@ -758,7 +764,7 @@ Use the EM functionality to generate an XML report of data that is generated on 
 
 The **ES SII setup.zip** package provides the setup for **CollectionInCash** processing in the EM functionality that supports interoperation with the SII system. The following illustration shows the schema for **CollectionInCash** processing.
 
-![Schema for CollectionInCash processing.](../media/emea-esp-sii-collection-in-cash-process.png)
+:::image type="content" source="../media/emea-esp-sii-collection-in-cash-process.png" alt-text="Screenshot of the schema for CollectionInCash processing.":::
 
 ### Actions of CollectionInCash processing
 
@@ -808,9 +814,8 @@ To maintain data integrity between these electronic message items and report lin
 |----------------------------------------------|-------------------------------------------------|
 | A cash amount is updated during **Generation** function | If a related electronic message item was already registered, its status is changed back to **Corregido** (**Item corrected**). Therefore, this register must be resubmitted to SII system.                                                                               |
 | A report line is deleted  during **Generation** function.                    | If a related SII line was already registered, its status is changed back to **Pending cancel**. Therefore, you should delete the related record in the SII system's database and then update the status of the line to **Canceled** by selecting **Status \> Canceled**. |
-| A report line is added during **Generation** function.                      | This will be a new electronic message item. Use the standard process to register it in the SII system.    |                         
+| A report line is added during **Generation** function.                      | This will be a new electronic message item. Use the standard process to register it in the SII system.    |
 
 To maintain data integrity, lines on the **Collections in cash** report can't be manually deleted.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

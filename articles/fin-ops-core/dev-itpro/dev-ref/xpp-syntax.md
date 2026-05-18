@@ -4,7 +4,7 @@ description: Learn about the syntax reference for X++, including a table that ou
 author: pvillads
 ms.author: pvillads
 ms.topic: language-reference
-ms.date: 05/19/2025
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -15,740 +15,159 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article contains the syntax reference for X++. 
+This article provides the syntax reference for X++. 
 
-## X++ Keywords
+## X++ keywords
 
-The X++ keywords shown in the following table are reserved. These keywords can't be used for any other purpose.
+The following table lists reserved X++ keywords. You can't use these keywords for any other purpose.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Reserved word</th>
-<th>Description</th>
-<th>Related information</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>!</strong></td>
-<td>Not.</td>
-<td>Relational Operators</td>
-</tr>
-<tr class="even">
-<td><strong>!=</strong></td>
-<td>Inequality operator (not equal to).</td>
-<td>Relational Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>#</strong></td>
-<td>Prefix on macro names.</td>
-<td>How to: Use #define and #if to Test a Macro</td>
-</tr>
-<tr class="even">
-<td><strong>&amp;</strong></td>
-<td>Binary AND.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>&amp;&amp;</strong></td>
-<td>Logical AND.</td>
-<td>Relational Operators</td>
-</tr>
-<tr class="even">
-<td><strong>(</strong></td>
-<td>Function call operator, which indicates the beginning of the function call.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>)</strong></td>
-<td>Function call operator, which indicates the end of the function call.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>*</strong></td>
-<td>Multiply. The asterisk (<span class="code">*</span>) is also used in X++ SQL. One use is to signify all fields from the tables on a <code>select</code> statement. Another use is as a wildcard with the <code>like</code> operator, to signify 0 to many characters of any kind. The <code>like</code> operator also uses the <span class="code">?</span> character.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>^</strong></td>
-<td>Binary XOR.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="even">
-<td><strong>|</strong></td>
-<td>Binary OR.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>||</strong></td>
-<td>Logical OR.</td>
-<td>Relational Operators</td>
-</tr>
-<tr class="even">
-<td><strong>~</strong></td>
-<td>Not.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>+</strong></td>
-<td>Plus.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="even">
-<td><strong>++</strong></td>
-<td>Increment.</td>
-<td>Assignment Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>+=</strong></td>
-<td>Additive assignment.</td>
-<td>Assignment Operators</td>
-</tr>
-<tr class="even">
-<td><strong>,</strong></td>
-<td>Comma operator. Expressions separated by commas are evaluated sequentially left-to-right.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>-</strong></td>
-<td>Minus.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="even">
-<td><strong>--</strong></td>
-<td>Decrement operator.</td>
-<td>Assignment Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>-=</strong></td>
-<td>Subtractive assignment.</td>
-<td>Assignment Operators</td>
-</tr>
-<tr class="even">
-<td><strong>.</strong></td>
-<td>Class member access operator, for example, <code>formRun.run</code> accesses the <code>run</code> method of an object of the class type <code>FormRun</code>.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>/</strong></td>
-<td>Divide.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="even">
-<td><strong>\</td>
-<td>Escape in strings. Escapes extra quotation marks, and certain letters such as <span class="code">'\t'</span> for tab.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>@</strong></td>
-<td>Escape of keywords. For example, <span class="code">var @str = 1<xref href="abstract" data-throw-if-not-resolved="False" data-raw-source="@abstract"></xref>;</span> fails to compile without the <strong>@</strong> character that causes any string following it to be regarded as an identifier. It also affects literal strings, by negating the effect of the \ escape character, and by enabling the string to span more than one line in the source code. The new line is represented by one character of hexadecimal 0x0A, which is commonly called a line feed. No carriage return character of hexadecimal 0x0D is included, as in 0x0D0A.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>:</strong></td>
-<td>The colon (<span class="code">:</span>) character is used to delimit case values in the <code>switch</code> statement.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>::</strong></td>
-<td>Used to call static (class) methods: <span class="code">ClassName::methodName() and to designate enumeration literals, like NoYes::Yes</span>. </td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>;</strong></td>
-<td>Terminates statements. Used in <code>for</code> loops or as a separator of initializer, update, and value check parts.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>&lt;</strong></td>
-<td>Less than.</td>
-<td>Relational Operators</td>
-</tr>
-<tr class="even">
-<td><strong>&lt;&lt;</strong></td>
-<td>Left shift.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>&lt;=</strong></td>
-<td>Less than or equal.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="even">
-<td><strong>=</strong></td>
-<td>Assignment operator. The argument to the left of &quot;<strong>=</strong>&quot; is set to the value of the argument to the right.</td>
-<td>Assignment Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>==</strong></td>
-<td>Returns true if the expressions are equal.</td>
-<td>Relational Operators</td>
-</tr>
-<tr class="even">
-<td><strong>&gt;</strong></td>
-<td>Greater than.</td>
-<td>Relational Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>&gt;=</strong></td>
-<td>Greater than or equal.</td>
-<td>Relational Operators</td>
-</tr>
-<tr class="even">
-<td><strong>&gt;&gt;</strong></td>
-<td>Bitwise Right Shift. This operator shifts bits in the left hand side by the amount on the right hand side. Each shift effectively divides the number by 2^n, where n is the number of positions shifted.
-</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>?:</strong></td>
-<td>Ternary operator. The question mark (<span class="code">?</span>) character is also used by the <code>like</code> operator to signify exactly one character of any kind. The <code>like</code> operator also uses the <span class="code"><em></span> character.</td>
-<td>Ternary Operator (?)</td>
-</tr>
-<tr class="even">
-<td><strong>[</strong></td>
-<td>Array declarator, open. Must be used with &quot;<strong>]</strong>&quot;.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>]</strong></td>
-<td>Array declarator, close. Must be used with &quot;<strong>[</strong>&quot;.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>{</strong></td>
-<td>Starts a compound statement that may in turn contain zero or more statements. The compound statement ends with the closest matching &quot;<strong>}</strong>&quot;.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>}</strong></td>
-<td>Indicates the end of the compound statement described above. A &quot;<strong>{</strong>&quot; must appear before the first of these statements.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>abstract</strong></td>
-<td>Class and method modifier. An <strong>abstract</strong> class can't be constructed with the <strong>new</strong> keyword - Only the classes derived from it can. An <strong>abstract</strong> method can't be called, only methods that override it can. A table can be modified as abstract by setting its <span class="ui">Abstract</span> property to <span class="ui">Yes</span> in the AOT, or by using the <code>DictTable</code> class. The <span class="ui">Abstract</span> property defaults to <span class="ui">No</span>, and it can't be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than zero in its <span class="ui">InstanceRelationType</span> property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term <span class="term">concrete</span> to describe a class that is non-<strong>abstract</strong>.</td>
-<td>Method Modifiers Table Inheritance Overview</td>
-</tr>
-<tr class="odd">
-<td><strong>anytype</strong></td>
-<td>A type that can contain values of any type.</td>
-<td>Anytype</td>
-</tr>
-<tr class="even">
-<td><strong>as</strong></td>
-<td>Needed when you assign a base class variable to a derived class variable. For example, given a <code>Derived</code> class that <strong>extends</strong> a <code>Base</code> class, the statement <code>myDerived = myBase as Derived;</code> avoids a compiler error by using the <strong>as</strong> keyword. This keyword also applies when you assign a base table variable to a derived table variable. If the value (myBase) isn't of the designated type (Derived) the expression returns null.</td>
-<td>Expression Operators: Is and As for Inheritance</td>
-</tr>
-<tr class="odd">
-<td><strong>asc</strong></td>
-<td>An option on the <code>order</code> <code>by</code> or <code>group</code> <code>by</code> clause in a <code>select</code> statement. The sorting is ascending.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>at</strong></td>
-<td>Specifies the position of a print window as part of a <code>print</code> statement. The print statement shouldn't be used.</td>
-<td>Print Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>avg</strong></td>
-<td>Returns the average of the fields from the rows specified by the <code>group by</code> clause in a <code>select</code> statement.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>break</strong></td>
-<td>Immediate exit from an iterative code block.</td>
-<td>Break Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>breakpoint</strong></td>
-<td>Represents a breakpoint that is set for debugging purposes. To set a breakpoint in your code, write: <code>breakpoint;</code></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>by</strong></td>
-<td>Part of a reserved term, such as group by and order by.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>byref</strong></td>
-<td>Specifies that the parameter being passed to the called method is being passed by reference (address), instead of by value. <strong>Byref</strong> is used in X++ when calling a .NET method that takes a parameter by reference (such as with the C# keywords <strong>out</strong> or <strong>ref</strong>).</td>
-<td>How to: Use the byref Keyword for CLR Interop.</td>
-</tr>
-<tr class="even">
-<td><strong>case</strong></td>
-<td>Selection within a <code>switch</code> statement.</td>
-<td>Switch Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>catch</strong></td>
-<td>Used in exception handling.</td>
-<td>Exception Handling with try, and catch Keywords</td>
-</tr>
-<tr class="even">
-<td><strong>changeCompany</strong></td>
-<td>Changes database settings to another company.</td>
-<td>Change Company Design Pattern</td>
-</tr>
-<tr class="odd">
-<td><strong>class</strong></td>
-<td>Declares a class.</td>
-<td>Classes in X++</td>
-</tr>
-<tr class="even">
-<td><strong>client</strong></td>
-<td>Method modifier. These modifiers aren't used anymore. All methods are executed on the server tier.</td>
-<td>Method Modifiers</td>
-</tr>
-<tr class="odd">
-<td><strong>container</strong></td>
-<td>Designates the <code>container</code> type. Containers contain a sequence of atomic values and other containers.</td>
-<td>Containers</td>
-</tr>
-<tr class="even">
-<td><strong>continue</strong></td>
-<td>Forces the next iteration of a loop.</td>
-<td>Continue Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>count</strong></td>
-<td>Returns the number of records from the rows specified by the <code>group by</code> clause in a <code>select</code> statement.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>crossCompany</strong></td>
-<td>Causes a <code>select</code> statement to return data for all companies that the user is authorized to read from.</td>
-<td>Cross-Company X++ Code Basics</td>
-</tr>
-<tr class="odd">
-<td><strong>date</strong></td>
-<td>Specifies a variable of type <code>date</code>.</td>
-<td>Dates</td>
-</tr>
-<tr class="even">
-<td><strong>default</strong></td>
-<td>Default case within <code>switch</code> statements. The code block in the default part is executed if the switch value does not match any of the <code>case</code> clauses provided in the <code>switch</code> statement.</td>
-<td>Switch Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>delegate</strong></td>
-<td>A class member that is able to store multiple references to methods in other classes, and to call all those methods when prompted to do so. A delegate can store references to various kinds of methods including the following:
-<ul>
-<li>static methods on X++ classes</li>
-<li>instance methods on X++ classes</li>
-<li>methods on .NET Framework classes</li>
-</ul></td>
-<td>Event Terminology and Keywords X++, C# Comparison: Event</td>
-</tr>
-<tr class="even">
-<td><strong>delete_from</strong></td>
-<td>Allows you to delete records from the database.</td>
-<td>delete_from</td>
-</tr>
-<tr class="odd">
-<td><strong>desc</strong></td>
-<td>An option on the <code>order by</code> or <code>group by</code> clause in a <code>select</code> statement. The sorting is descending.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>display</strong></td>
-<td>Method modifier. A <code>display</display> method is used to show calculated values in a form control. Unlike regular fields, these values aren't stored in the database but are computed dynamically.
-</td>
-<td>Method Modifiers</td>
-</tr>
-<tr class="odd">
-<td><strong>div</strong></td>
-<td>Integer division.</td>
-<td>Arithmetic Operators</td>
-</tr>
-<tr class="even">
-<td><strong>do</strong></td>
-<td>Beginning of a <code>do...while</code> loop.</td>
-<td>Do...while Loops</td>
-</tr>
-<tr class="odd">
-<td><strong>edit</strong></td>
-<td>Method modifier. An <code>edit</code> method in X++ allows users to modify values in a form control while executing custom logic. Unlike <code>display</code> methods, which only show calculated values, edit methods enable both viewing and editing.
-</td>
-<td>Method Modifiers</td>
-</tr>
-<tr class="even">
-<td><strong>else</strong></td>
-<td>Conditional execution (<code>if...else</code>). The <code>else</code> part of the <code>if</code> statement is executed if the expression in the if statement is evaluated to <code>false</code></td>
-<td>if and if ... else Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>eventHandler</strong></td>
-<td>Must be used each time you either add or delete a method reference from a delegate by using the <span class="code">+=</span> or <span class="code">-=</span> operator. For example: <span class="code">myDelegate += eventHandler(OtherClass::myStaticMethod);</span></td>
-<td>Event Terminology and Keywords X++, C# Comparison: Event</td>
-</tr>
-<tr class="even">
-<td><strong>exists</strong></td>
-<td>Used with <code>join</code> clauses in <code>select</code> statements.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>extends</strong></td>
-<td>A class or interface declaration clause. If your class doesn't explicitly extend another class, your class is considered to extend the <code>Object</code> class (as if you had written &quot;extends Object&quot;).</td>
-<td>Creating a Subclass</td>
-</tr>
-<tr class="even">
-<td><strong>false</strong></td>
-<td>Boolean literal.</td>
-<td>Booleans</td>
-</tr>
-<tr class="odd">
-<td><strong>final</strong></td>
-<td>Class and method modifier. Specifies that this method can't be overridden.</td>
-<td>Method Modifiers</td>
-</tr>
-<tr class="even">
-<td><strong>firstFast</strong></td>
-<td>Used in <code>select</code> statements to speed up the fetch for the first row.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>firstOnly</strong></td>
-<td>Used in <code>select</code> statements to fetch only the first record. The <code>firstOnly</code> keyword doesn't guarantee that a maximum of one record is retrieved by an X++ SQL <code>select</code> statement. If the AOS can use the <code>EntireTable</code> cache to satisfy the data demands of the <code>select</code> statement, the <code>firstOnly</code> keyword is ignored.</td>
-<td>Select Statement Syntax Set-based Caching</td>
-</tr>
-<tr class="even">
-<td><strong>firstOnly10</strong></td>
-<td>Same as <strong>firstOnly</strong>, except returns 10 rows instead of one.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>firstOnly100</strong></td>
-<td>Same as <strong>firstOnly</strong>, except returns 100 rows instead of one.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>firstOnly1000</strong></td>
-<td>Same as <strong>firstOnly</strong>, except returns 1,000 rows instead of one.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>flush</strong></td>
-<td>Clears the entire table cache. This can be useful when you want to ensure that any changes made to the table are immediately reflected in subsequent operations.</td>
-<td>Set-based Caching</td>
-</tr>
-<tr class="even">
-<td><strong>for</strong></td>
-<td>For loop iteration.</td>
-<td>For Loops</td>
-</tr>
-<tr class="odd">
-<td><strong>forceLiterals</strong></td>
-<td>Used in <code>select</code> statements to reveal actual values that are used in <code>where</code> clauses to the Microsoft SQL Server database at the time of optimization.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>forceNestedLoop</strong></td>
-<td>Forces the SQL Server database to use a nested-loop algorithm to process a particular SQL statement containing a <code>join</code>.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>forcePlaceholders</strong></td>
-<td>Used in <code>select</code> statements to instruct the kernel not to reveal the actual values used in <code>where</code> clauses to the Microsoft SQL Server database at the time of optimization.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>forceSelectOrder</strong></td>
-<td>Forces the SQL Server database to access the tables in a join in the specified order.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>forUpdate</strong></td>
-<td>Selects records exclusively for update. The operation to be performed on the records that are fetched is an update. Depending on the underlying database, the records may be locked for other users.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>from</strong></td>
-<td>Part of a <code>select</code> statement. The <code>from</code> clause specifies the table buffer in which the columns exists.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>group</strong></td>
-<td>Part of the <code>group by</code> clause in a <code>select</code> statement.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>if</strong></td>
-<td>Conditional execution.</td>
-<td>if and if ... else Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>implements</strong></td>
-<td>Implementation of an <code>interface</code>.</td>
-<td>Interfaces Overview</td>
-</tr>
-<tr class="even">
-<td><strong>insert_recordset</strong></td>
-<td>Copies data from one or more tables into one resulting destination table on a single server trip.</td>
-<td>insert_recordset</td>
-</tr>
-<tr class="odd">
-<td><strong>int</strong></td>
-<td>Specifies a variable of type <code>integer</code> (32-bit).</td>
-<td>Integers</td>
-</tr>
-<tr class="even">
-<td><strong>int64</strong></td>
-<td>Specifies a variable of type <code>integer</code> (64-bit).</td>
-<td>Integers</td>
-</tr>
-<tr class="odd">
-<td><strong>interface</strong></td>
-<td>Interface declaration.</td>
-<td>Interfaces Overview</td>
-</tr>
-<tr class="even">
-<td><strong>is</strong></td>
-<td>Asks whether the object referenced by a class variable either inherits from the given class or is of the given class. For example, given a <code>Derived</code> class that <strong>extends</strong> a <code>Base</code> class, the expression <code>(myDerived is Base)</code> returns <strong>true</strong>. This keyword applies to class inheritance and table inheritance.</td>
-<td>Expression Operators: Is and As for Inheritance</td>
-</tr>
-<tr class="odd">
-<td><strong>join</strong></td>
-<td>Tables are joined on columns common to both tables. You can generate a single result set based on multiple tables by using joins.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>like</strong></td>
-<td>Tests for matches by pattern, with wildcard symbols '*' and '?'.</td>
-<td>Relational Operators</td>
-</tr>
-<tr class="odd">
-<td><strong>maxof</strong></td>
-<td>Returns the maximum of the fields from the rows specified by the <code>group by</code> clause.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>minof</strong></td>
-<td>Returns the minimum of the fields from the rows specified by the <code>group by</code> clause.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>mod</strong></td>
-<td>Returns the integer remainder of the left expression1 divided by the right expression2. Informally this is sometimes called the modulo operator. <code>(12 mod 7) == 5</code> is true.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>new</strong></td>
-<td>Operator. Creates an instance of a class or allocates memory for an array.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>next</strong></td>
-<td>Fetches the next record in a table or calls the next method in a chain-of-command sequence.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>noFetch</strong></td>
-<td>Indicates that no records are to be fetched now.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>notExists</strong></td>
-<td>Used with <code>join</code> clauses in <code>select</code> statements.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>null</strong></td>
-<td>Symbolic constant.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>optimisticLock</strong></td>
-<td>Forces a statement to run with optimistic concurrency control, even if a different value is set on the table.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>order</strong></td>
-<td>Part of the <code>order by</code> clause in a <code>select</code> statement.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>outer</strong></td>
-<td><span class="keyword">outer join</span>.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>pause</strong></td>
-<td>Halts the execution of a job. The user is asked to state whether execution should continue. You shouldn't use this statement in production code.</td>
-<td>Select Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>pessimisticLock</strong></td>
-<td>Forces a statement to run with pessimistic concurrency control, even if a different value is set on the table.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="even">
-<td><strong>print</strong></td>
-<td>Allows you to display output on the screen. You shouldn't use this statement in production code.</td>
-<td>Print Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>private</strong></td>
-<td>Method access modifier. The method can only be used within the class that declares the method.</td>
-<td>Method Access Control</td>
-</tr>
-<tr class="even">
-<td><strong>protected</strong></td>
-<td>Method access modifier. The method can be used from methods in the class declaring the methods, and in any derived classes.</td>
-<td>Method Access Control</td>
-</tr>
-<tr class="odd">
-<td><strong>public</strong></td>
-<td>Method access modifier. The method may be called from any class.</td>
-<td>Method Access Control</td>
-</tr>
-<tr class="even">
-<td><strong>real</strong></td>
-<td>Designates the <code>real</code> type, a decimal type without rounding errors.</td>
-<td>Reals</td>
-</tr>
-<tr class="odd">
-<td><strong>repeatableRead</strong></td>
-<td>Specifies that no other transactions can modify data that has been read by logic inside the current transaction, until after the current transaction completes. An explicit transaction completes at either <strong>ttsAbort</strong> or at the outermost <strong>ttsCommit</strong>. For a stand-alone <strong>select</strong> statement, the transaction duration is the duration of the <strong>select</strong> command. However, the database sometimes enforces the equivalent of <strong>repeatableRead</strong> in individual <strong>select</strong> statements even without this keyword appearing in your X++ code (depending on how the database decides to scan the tables).</td>
-<td>For more information, see the documentation for the underlying relational database product.</td>
-</tr>
-<tr class="even">
-<td><strong>retry</strong></td>
-<td>Used in exception handling.</td>
-<td>Exception Handling with try, and catch Keywords</td>
-</tr>
-<tr class="odd">
-<td><strong>return</strong></td>
-<td>Returns from a method.</td>
-<td>Declaration of Methods</td>
-</tr>
-<tr class="even">
-<td><strong>reverse</strong></td>
-<td>Records are returned in reverse order.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>select</strong></td>
-<td>The <code>select</code> clause designates which columns or views are shown in the result set.</td>
-<td>Select Statements</td>
-</tr>
-<tr class="even">
-<td><strong>server</strong></td>
-<td>Method modifier. This modifier is ignored and shouldn't be used, since all methods are executed on the server side.</td>
-<td>Method Modifiers</td>
-</tr>
-<tr class="odd">
-<td><strong>setting</strong></td>
-<td>Used with the <span class="code">update_recordset</span> command.</td>
-<td>update_recordset</td>
-</tr>
-<tr class="even">
-<td><strong>static</strong></td>
-<td>Static methods may not refer to instance variables (only to static variables); may be invoked by using the class name rather than on an instance of the class (&quot;<code>MyClass.aStaticProcedure</code>&quot;).</td>
-<td>Method Modifiers</td>
-</tr>
-<tr class="odd">
-<td><strong>str</strong></td>
-<td>Designates the <code>string</code> type.</td>
-<td>Strings</td>
-</tr>
-<tr class="even">
-<td><strong>sum</strong></td>
-<td>Returns the sum of the fields from the rows specified by the <code>group by</code> clause in a <code>select</code> statement.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>super</strong></td>
-<td>Calls the method that was overridden by the current method.</td>
-<td>Table Methods</td>
-</tr>
-<tr class="even">
-<td><strong>switch</strong></td>
-<td>Switch statement.</td>
-<td>Switch Statements</td>
-</tr>
-<tr class="odd">
-<td><strong>tableLock</strong></td>
-<td>Obsolete; <strong>tableLock</strong> is no longer available.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>this</strong></td>
-<td>A reference to the current instance of the class. Used in X++ code inside an instance method of the class. Used to reference <em>method</em> members of the class.</td>
-</tr>
-<tr class="odd">
-<td><strong>throw</strong></td>
-<td>Used in exception handling.</td>
-<td>Exception Handling with try, and catch Keywords</td>
-</tr>
-<tr class="even">
-<td><strong>true</strong></td>
-<td>Boolean literal.</td>
-<td>Booleans</td>
-</tr>
-<tr class="odd">
-<td><strong>try</strong></td>
-<td>Used in exception handling.</td>
-<td>Exception Handling with try, and catch Keywords</td>
-</tr>
-<tr class="even">
-<td><strong>ttsAbort</strong></td>
-<td>Roll back (i.e. discard) all changes in the current transaction.</td>
-<td>Transaction Integrity</td>
-</tr>
-<tr class="odd">
-<td><strong>ttsBegin</strong></td>
-<td>Marks the beginning of a transaction.</td>
-<td>Transaction Integrity</td>
-</tr>
-<tr class="even">
-<td><strong>ttsCommit</strong></td>
-<td>Marks the end of a transaction, commiting the changes to the tables.</td>
-<td>Transaction Integrity</td>
-</tr>
-<tr class="odd">
-<td><strong>update_recordset</strong></td>
-<td>Allows the manipulation of row sets within one operation.</td>
-<td>update_recordset</td>
-</tr>
-<tr class="even">
-<td><strong>validTimeState</strong></td>
-<td>Filters rows that are retrieved from a valid time state table by an X++ SQL <code>select</code> statement. For example: <span class="code">select validTimeState(myDateEffective) * from xMyTable;</span> ...or...  <span class="code">select validTimeState(myDateFrom, myDateTo) * from xMyTable;</span></td>
-<td>Effects of Valid Time State Tables on Read and Write Operations</td>
-</tr>
-<tr class="odd">
-<td><strong>void</strong></td>
-<td>Identifies a method that doesn't return a value.</td>
-<td>Declaration of Methods</td>
-</tr>
-<tr class="even">
-<td><strong>where</strong></td>
-<td>Part of a <code>select</code> statement. The <code>where</code> clause specifies the conditions to be satisfied; that is, the rows that you want to include in the result.</td>
-<td>Select Statement Syntax</td>
-</tr>
-<tr class="odd">
-<td><strong>while</strong></td>
-<td>Iteration statement. Executes a statement repeatedly as long as the test condition is true.</td>
-<td>While loops while select Statements</td>
-</tr>
-<tr class="even">
-<td><strong>window</strong></td>
-<td>Allows you to alter the size of the output window. Used with <code>print</print> statements that aren't recommended in production code.</td>
-<td>Print Statements</td>
-</tr>
-</tbody>
-</table>
+| Reserved word | Description | Related information |
+|---|---|---|
+| **!** | Not. | Relational Operators |
+| **!=** | Inequality operator (not equal to). | Relational Operators |
+| **#** | Prefix on macro names. | How to: Use #define and #if to Test a Macro |
+| **&** | Binary AND. | Arithmetic Operators |
+| **&&** | Logical AND. | Relational Operators |
+| **(** | Function call operator, which indicates the beginning of the function call. | |
+| **)** | Function call operator, which indicates the end of the function call. | |
+| **\*** | Multiply. The asterisk (`*`) is also used in X++ SQL. One use is to signify all fields from the tables on a `select` statement. Another use is as a wildcard with the `like` operator, to signify 0 to many characters of any kind. The `like` operator also uses the `?` character. | Arithmetic Operators |
+| **^** | Binary XOR. | Arithmetic Operators |
+| **\|** | Binary OR. | Arithmetic Operators |
+| **\|\|** | Logical OR. | Relational Operators |
+| **~** | Not. | Arithmetic Operators |
+| **+** | Plus. | Arithmetic Operators |
+| **++** | Increment. | Assignment Operators |
+| **+=** | Additive assignment. | Assignment Operators |
+| **,** | Comma operator. Expressions separated by commas are evaluated sequentially left-to-right. | |
+| **-** | Minus. | Arithmetic Operators |
+| **--** | Decrement operator. | Assignment Operators |
+| **-=** | Subtractive assignment. | Assignment Operators |
+| **.** | Class member access operator, for example, `formRun.run` accesses the `run` method of an object of the class type `FormRun`. | |
+| **/** | Divide. | Arithmetic Operators |
+| **\\** | Escape in strings. Escapes extra quotation marks, and certain letters such as `'\t'` for tab. | |
+| **@** | Escape of keywords. For example, `var @str = 1@abstract;` fails to compile without the **@** character that causes any string following it to be regarded as an identifier. It also affects literal strings, by negating the effect of the \ escape character, and by enabling the string to span more than one line in the source code. The new line is represented by one character of hexadecimal 0x0A, which is commonly called a line feed. No carriage return character of hexadecimal 0x0D is included, as in 0x0D0A. | |
+| **:** | The colon (`:`) character is used to delimit case values in the `switch` statement. | |
+| **::** | Used to call static (class) methods: `ClassName::methodName() and to designate enumeration literals, like NoYes::Yes`. | |
+| **;** | Terminates statements. Used in `for` loops or as a separator of initializer, update, and value check parts. | |
+| **<** | Less than. | Relational Operators |
+| **<<** | Left shift. | Arithmetic Operators |
+| **<=** | Less than or equal. | Arithmetic Operators |
+| **=** | Assignment operator. The argument to the left of "**=**" is set to the value of the argument to the right. | Assignment Operators |
+| **==** | Returns true if the expressions are equal. | Relational Operators |
+| **>** | Greater than. | Relational Operators |
+| **>=** | Greater than or equal. | Relational Operators |
+| **>>** | Bitwise Right Shift. This operator shifts bits in the left hand side by the amount on the right hand side. Each shift effectively divides the number by 2^n, where n is the number of positions shifted. | Arithmetic Operators |
+| **?:** | Ternary operator. The question mark (`?`) character is also used by the `like` operator to signify exactly one character of any kind. The `like` operator also uses the `*` character. | Ternary Operator (?) |
+| **[** | Array declarator, open. Must be used with "**]**". | |
+| **]** | Array declarator, close. Must be used with "**[**". | |
+| **{** | Starts a compound statement that may in turn contain zero or more statements. The compound statement ends with the closest matching "**}**". | |
+| **}** | Indicates the end of the compound statement described above. A "**{**" must appear before the first of these statements. | |
+| **abstract** | Class and method modifier. An **abstract** class can't be constructed with the **new** keyword - Only the classes derived from it can. An **abstract** method can't be called, only methods that override it can. A table can be modified as abstract by setting its Abstract property to Yes in the AOT, or by using the `DictTable` class. The Abstract property defaults to No, and it can't be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than zero in its InstanceRelationType property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term concrete to describe a class that is non-**abstract**. | Method Modifiers Table Inheritance Overview |
+| **anytype** | A type that can contain values of any type. | Anytype |
+| **as** | Needed when you assign a base class variable to a derived class variable. For example, given a `Derived` class that **extends** a `Base` class, the statement `myDerived = myBase as Derived;` avoids a compiler error by using the **as** keyword. This keyword also applies when you assign a base table variable to a derived table variable. If the value (myBase) isn't of the designated type (Derived) the expression returns null. | Expression Operators: Is and As for Inheritance |
+| **asc** | An option on the `order` `by` or `group` `by` clause in a `select` statement. The sorting is ascending. | Select Statement Syntax |
+| **at** | Specifies the position of a print window as part of a `print` statement. The print statement shouldn't be used. | Print Statements |
+| **avg** | Returns the average of the fields from the rows specified by the `group by` clause in a `select` statement. | Select Statement Syntax |
+| **break** | Immediate exit from an iterative code block. | Break Statements |
+| **breakpoint** | Represents a breakpoint that is set for debugging purposes. To set a breakpoint in your code, write: `breakpoint;` | |
+| **by** | Part of a reserved term, such as group by and order by. | |
+| **byref** | Specifies that the parameter being passed to the called method is passed by reference (address), instead of by value. **Byref** is used in X++ when calling a .NET method that takes a parameter by reference (such as with the C# keywords **out** or **ref**). | How to: Use the byref Keyword for CLR Interop. |
+| **case** | Selection within a `switch` statement. | Switch Statements |
+| **catch** | Used in exception handling. | Exception Handling with try, and catch Keywords |
+| **changeCompany** | Changes database settings to another company. | Change Company Design Pattern |
+| **class** | Declares a class. | Classes in X++ |
+| **client** | Method modifier. These modifiers aren't used anymore. All methods are executed on the server tier. | Method Modifiers |
+| **container** | Designates the `container` type. Containers contain a sequence of atomic values and other containers. | Containers |
+| **continue** | Forces the next iteration of a loop. | Continue Statements |
+| **count** | Returns the number of records from the rows specified by the `group by` clause in a `select` statement. | Select Statement Syntax |
+| **crossCompany** | Causes a `select` statement to return data for all companies that the user is authorized to read from. | Cross-Company X++ Code Basics |
+| **date** | Specifies a variable of type `date`. | Dates |
+| **default** | Default case within `switch` statements. The code block in the default part is executed if the switch value doesn't match any of the `case` clauses provided in the `switch` statement. | Switch Statements |
+| **delegate** | A class member that can store multiple references to methods in other classes, and call all those methods when prompted to do so. A delegate can store references to various kinds of methods, including the following: static methods on X++ classes; instance methods on X++ classes; methods on .NET Framework classes. | Event Terminology and Keywords X++, C# Comparison: Event |
+| **delete_from** | Deletes records from the database. | delete_from |
+| **desc** | An option on the `order by` or `group by` clause in a `select` statement. The sorting is descending. | Select Statement Syntax |
+| **display** | Method modifier. A `display` method shows calculated values in a form control. Unlike regular fields, these values aren't stored in the database but are computed dynamically. | Method Modifiers |
+| **div** | Integer division. | Arithmetic Operators |
+| **do** | Beginning of a `do...while` loop. | Do...while Loops |
+| **edit** | Method modifier. An `edit` method in X++ allows users to modify values in a form control while executing custom logic. Unlike `display` methods, which only show calculated values, `edit` methods enable both viewing and editing. | Method Modifiers |
+| **else** | Conditional execution (`if...else`). The `else` part of the `if` statement is executed if the expression in the if statement evaluates to `false`. | if and if ... else Statements |
+| **eventHandler** | Must be used each time you either add or delete a method reference from a delegate by using the `+=` or `-=` operator. For example: `myDelegate += eventHandler(OtherClass::myStaticMethod);` | Event Terminology and Keywords X++, C# Comparison: Event |
+| **exists** | Used with `join` clauses in `select` statements. | Select Statement Syntax |
+| **extends** | A class or interface declaration clause. If your class doesn't explicitly extend another class, your class is considered to extend the `Object` class (as if you had written "extends Object"). | Creating a Subclass |
+| **false** | Boolean literal. | Booleans |
+| **final** | Class and method modifier. Specifies that this method can't be overridden. | Method Modifiers |
+| **firstFast** | Used in `select` statements to speed up the fetch for the first row. | Select Statement Syntax |
+| **firstOnly** | Used in `select` statements to fetch only the first record. The `firstOnly` keyword doesn't guarantee that a maximum of one record is retrieved by an X++ SQL `select` statement. If the AOS can use the `EntireTable` cache to satisfy the data demands of the `select` statement, the `firstOnly` keyword is ignored. | Select Statement Syntax Set-based Caching |
+| **firstOnly10** | Same as **firstOnly**, except returns 10 rows instead of one. | |
+| **firstOnly100** | Same as **firstOnly**, except returns 100 rows instead of one. | |
+| **firstOnly1000** | Same as **firstOnly**, except returns 1,000 rows instead of one. | |
+| **flush** | Clears the entire table cache. This action can be useful when you want to ensure that any changes made to the table are immediately reflected in subsequent operations. | Set-based Caching |
+| **for** | For loop iteration. | For Loops |
+| **forceLiterals** | Used in `select` statements to reveal actual values that are used in `where` clauses to the Microsoft SQL Server database at the time of optimization. | Select Statement Syntax |
+| **forceNestedLoop** | Forces the SQL Server database to use a nested-loop algorithm to process a particular SQL statement containing a `join`. | Select Statement Syntax |
+| **forcePlaceholders** | Used in `select` statements to instruct the kernel not to reveal the actual values used in `where` clauses to the Microsoft SQL Server database at the time of optimization. | Select Statement Syntax |
+| **forceSelectOrder** | Forces the SQL Server database to access the tables in a join in the specified order. | Select Statement Syntax |
+| **forUpdate** | Selects records exclusively for update. The operation to perform on the records that are fetched is an update. Depending on the underlying database, the records might be locked for other users. | Select Statement Syntax |
+| **from** | Part of a `select` statement. The `from` clause specifies the table buffer in which the columns exist. | Select Statement Syntax |
+| **group** | Part of the `group by` clause in a `select` statement. | Select Statement Syntax |
+| **if** | Conditional execution. | if and if ... else Statements |
+| **implements** | Implementation of an `interface`. | Interfaces Overview |
+| **insert_recordset** | Copies data from one or more tables into one resulting destination table on a single server trip. | insert_recordset |
+| **int** | Specifies a variable of type `integer` (32-bit). | Integers |
+| **int64** | Specifies a variable of type `integer` (64-bit). | Integers |
+| **interface** | Interface declaration. | Interfaces Overview |
+| **is** | Asks whether the object referenced by a class variable either inherits from the given class or is of the given class. For example, given a `Derived` class that **extends** a `Base` class, the expression `(myDerived is Base)` returns **true**. This keyword applies to class inheritance and table inheritance. | Expression Operators: Is and As for Inheritance |
+| **join** | Tables are joined on columns common to both tables. You can generate a single result set based on multiple tables by using joins. | Select Statement Syntax |
+| **like** | Tests for matches by pattern, with wildcard symbols '*' and '?'. | Relational Operators |
+| **maxof** | Returns the maximum of the fields from the rows specified by the `group by` clause. | Select Statement Syntax |
+| **minof** | Returns the minimum of the fields from the rows specified by the `group by` clause. | Select Statement Syntax |
+| **mod** | Returns the integer remainder of the left expression1 divided by the right expression2. Informally this is sometimes called the modulo operator. `(12 mod 7) == 5` is true. | |
+| **new** | Operator. Creates an instance of a class or allocates memory for an array. | |
+| **next** | Fetches the next record in a table or calls the next method in a chain-of-command sequence. | |
+| **noFetch** | Indicates that no records are to be fetched now. | Select Statement Syntax |
+| **notExists** | Used with `join` clauses in `select` statements. | Select Statement Syntax |
+| **null** | Symbolic constant. | |
+| **optimisticLock** | Forces a statement to run with optimistic concurrency control, even if a different value is set on the table. | Select Statement Syntax |
+| **order** | Part of the `order by` clause in a `select` statement. | Select Statement Syntax |
+| **outer** | outer join. | Select Statement Syntax |
+| **pause** | Halts the execution of a job. The user is asked to state whether execution should continue. You shouldn't use this statement in production code. | Select Statements |
+| **pessimisticLock** | Forces a statement to run with pessimistic concurrency control, even if a different value is set on the table. | Select Statement Syntax |
+| **print** | Allows you to display output on the screen. You shouldn't use this statement in production code. | Print Statements |
+| **private** | Method access modifier. The method can only be used within the class that declares the method. | Method Access Control |
+| **protected** | Method access modifier. The method can be used from methods in the class declaring the methods, and in any derived classes. | Method Access Control |
+| **public** | Method access modifier. The method may be called from any class. | Method Access Control |
+| **real** | Designates the `real` type, a decimal type without rounding errors. | Reals |
+| **repeatableRead** | Specifies that no other transactions can modify data that the current transaction reads until the current transaction finishes. An explicit transaction finishes at either **ttsAbort** or at the outermost **ttsCommit**. For a stand-alone **select** statement, the transaction duration is the duration of the **select** command. However, the database sometimes enforces the equivalent of **repeatableRead** in individual **select** statements even without this keyword appearing in your X++ code (depending on how the database decides to scan the tables). | For more information, see the documentation for the underlying relational database product. |
+| **retry** | Used in exception handling. | Exception Handling with try, and catch Keywords |
+| **return** | Returns from a method. | Declaration of Methods |
+| **reverse** | Records are returned in reverse order. | Select Statement Syntax |
+| **select** | The `select` clause designates which columns or views are shown in the result set. | Select Statements |
+| **server** | Method modifier. This modifier is ignored and shouldn't be used, since all methods are executed on the server side. | Method Modifiers |
+| **setting** | Used with the `update_recordset` command. | update_recordset |
+| **static** | Static methods can't refer to instance variables (only to static variables). Invoke static methods by using the class name rather than on an instance of the class ("`MyClass.aStaticProcedure`"). | Method Modifiers |
+| **str** | Designates the `string` type. | Strings |
+| **sum** | Returns the sum of the fields from the rows specified by the `group by` clause in a `select` statement. | Select Statement Syntax |
+| **super** | Calls the method that the current method overrides. | Table Methods |
+| **switch** | Switch statement. | Switch Statements |
+| **tableLock** | Obsolete; **tableLock** is no longer available. | |
+| **this** | A reference to the current instance of the class. Used in X++ code inside an instance method of the class. Used to reference *method* members of the class. | |
+| **throw** | Used in exception handling. | Exception Handling with try, and catch Keywords |
+| **true** | Boolean literal. | Booleans |
+| **try** | Used in exception handling. | Exception Handling with try, and catch Keywords |
+| **ttsAbort** | Rolls back (discards) all changes in the current transaction. | Transaction Integrity |
+| **ttsBegin** | Marks the beginning of a transaction. | Transaction Integrity |
+| **ttsCommit** | Marks the end of a transaction, committing the changes to the tables. | Transaction Integrity |
+| **update_recordset** | Allows the manipulation of row sets within one operation. | update_recordset |
+| **validTimeState** | Filters rows that an X++ SQL `select` statement retrieves from a valid time state table. For example: `select validTimeState(myDateEffective) * from xMyTable;` ...or... `select validTimeState(myDateFrom, myDateTo) * from xMyTable;` | Effects of Valid Time State Tables on Read and Write Operations |
+| **void** | Identifies a method that doesn't return a value. | Declaration of Methods |
+| **where** | Part of a `select` statement. The `where` clause specifies the conditions to be satisfied; that is, the rows that you want to include in the result. | Select Statement Syntax |
+| **while** | Iteration statement. Executes a statement repeatedly as long as the test condition is true. | While loops while select Statements |
+| **window** | Allows you to alter the size of the output window. Used with `print` statements that aren't recommended in production code. | Print Statements |
 
-## Expressions Syntax
-An expression in X++ is used in either a mathematical or logical way. Expressions are built on the data types of the language; that is, an expression always returns a value of some type. This value can be used in calculations, assignments, conditional statements, and so on.
+## Expressions syntax
+Use an expression in X++ for mathematical or logical operations. Build expressions on the data types of the language. An expression always returns a value of some type. Use this value in calculations, assignments, conditional statements, and so on.
 
-### EBNF Description of Expressions in X++
+### EBNF description of expressions in X++
 
 |    Term            | &nbsp; |   Definition                                                |
 |--------------------|---|-------------------------------------------------------------|
@@ -764,7 +183,7 @@ An expression in X++ is used in either a mathematical or logical way. Expression
 |    FunctionCall    | = |                      \[ Expression (.                       |
 |   If-expression    | = |            Expression ? Expression : Expression             |
 
-Semantic restrictions apply on the preceding syntax. You can't call any method using the :: operator. Similarly, you can't use the **this** keyword without an active object; that is, if you aren't within an instance method and so on.
+Semantic restrictions apply to the preceding syntax. You can't call any method by using the `::` operator. Similarly, you can't use the **this** keyword without an active object. That object must be within an instance method and so on.
 
 ### Examples
 
@@ -783,8 +202,8 @@ Semantic restrictions apply on the preceding syntax. You can't call any method u
 | Debtor::Find("1").NameRef                                   | Returns the NameRef field of the found customer record.                                                                                        |
 | Debtor::Find("1").Balance()                                 | A method call to `Balance` in the customer table (Debtor::Find returns a customer). Returns the balance of the customer with account number 1. |
 
-## EBNF Overview
-Extended Backus Naur Form (EBNF) is a metalanguage and is used in this guide to describe the language syntax. An EBNF definition consists of production rules, nonterminals, and terminals. The key terms are shown in the following table.
+## EBNF overview
+Extended Backus Naur Form (EBNF) is a metalanguage. This guide uses it to describe the language syntax. An EBNF definition consists of production rules, nonterminals, and terminals. The following table shows the key terms.
 
 
 |    Key terms     |       Example        |              Description                                                                                                          |

@@ -4,7 +4,7 @@ description: Learn about how developers can extend number sequence scope, includ
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 02/24/2026
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -39,8 +39,5 @@ To create a new scope and have it show up in the client, complete the following 
    1. Create a post handler for the **createScope** method to initialize a **NumberSeqScope** instance when the new scope type is selected.
    1. Create an event handler for the **getShortNameForParameterType** delegate to return the short name for the new scope type.
 1. Add an extension class for the **NumberSequenceTableEntity** and **NumberSequencesReferenceEntity** data entities. Create post handlers for the **GenerateNumberSequenceScopeTypes** and **GenerateNumberSequenceScopeValues** methods to generate the **NumberSequenceScope** for the new scope type.
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

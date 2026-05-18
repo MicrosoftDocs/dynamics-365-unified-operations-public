@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.48 (June 2026)
+          href: get-started/whats-new-scm-10-0-48.md
         - name: Supply Chain Management 10.0.47 (March 2026)
           href: get-started/whats-new-scm-10-0-47.md
         - name: Supply Chain Management 10.0.46 (December 2025)
           href: get-started/whats-new-scm-10-0-46.md
         - name: Supply Chain Management 10.0.45 (September 2025)
           href: get-started/whats-new-scm-10-0-45.md
-        - name: Supply Chain Management 10.0.44 (June 2025)
-          href: get-started/whats-new-scm-10-0-44.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -122,7 +122,7 @@
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/supply-chain
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/supply-chain
-        - name: Immersive Home (production ready preview)
+        - name: Immersive Home
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/supply-chain
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/supply-chain
@@ -1745,6 +1745,8 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: Configure and manage financial dimension links to sites
+          href: cost-management/financial-dimension-links.md
       - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
       - name: Consolidate inventory transactions
@@ -2123,7 +2125,7 @@
           href: demand-planning/time-series.md
         - name: Copilot grid cursor
           href: demand-planning/copilot-grid-cursor.md
-        - name: Generative insights for Demand planning (production ready preview)
+        - name: Generative insights for Demand planning (production-ready preview)
           href: demand-planning/generative-insights.md
         - name: Analyze demand plans with Copilot
           href: demand-planning/demand-planning-copilot.md
@@ -2133,6 +2135,8 @@
           href: demand-planning/time-freeze.md
       - name: Export and download data
         href: demand-planning/export-data.md
+      - name: Export data using custom APIs
+        href: demand-planning/demand-planning-export-api.md
     - name: Office integration
       items:
       - name: Office integration overview
@@ -2371,6 +2375,8 @@
           href: unified-pricing-management/upm-concurrence-cross-codes.md
       - name: Calculate prices and discounts without creating sales orders
         href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
+      - name: Calculate prices for external systems through the pricing calculation API
+        href: unified-pricing-management/upm-pricing-calculation-api.md
       - name: Pricing data import and export entities
         href: unified-pricing-management/upm-pricing-data-entities.md
     - name: Procurement and sourcing
@@ -2451,22 +2457,40 @@
           href: procurement/tasks/create-project-purchase-order.md
         - name: Create a repeat purchase order
           href: procurement/tasks/create-repeat-purchase-order.md
-      - name: Supplier Communications Agent (production ready preview)
+      - name: Procurement Agent (production-ready preview)
         items:
-        - name: Supplier Communications Agent overview
-          href: procurement/supplier-com-agent-overview.md
-        - name: Set up and configure the Supplier Communications Agent
-          href: procurement/supplier-com-agent-setup.md
-        - name: Use the agent deployment wizard to set up the Supplier Communications Agent (preview)
-          href: procurement/supplier-com-agent-setup-wizard.md
-        - name: Solve common problems when setting up the Supplier Communications Agent
-          href: procurement/supplier-com-agent-setup-faq.md
-        - name: Test the Supplier Communications Agent
-          href: procurement/supplier-com-agent-testing.md
-        - name: Follow up on purchase orders using the Supplier Communications Agent
-          href: procurement/supplier-com-agent-follow-up.md
-        - name: Review and apply purchase order changes received in vendor emails
-          href: procurement/supplier-com-agent-apply-email-changes.md
+        - name: Procurement Agent overview
+          href: procurement/procurement-agent-overview.md
+        - name: Impact analysis (production-ready preview)
+          items:
+          - name: Impact analysis overview
+            href: procurement/procurement-agent-impact-analysis-overview.md
+          - name: How impact analysis works
+            href: procurement/procurement-agent-impact-analysis-works.md
+          - name: Set up, configure, and test impact analysis
+            href: procurement/procurement-agent-impact-analysis-setup.md
+          - name: Review impact of purchase order changes from vendors
+            href: procurement/procurement-agent-impact-analysis-review-changes.md
+          - name: Simulate whether purchase order changes have impact
+            href: procurement/procurement-agent-impact-analysis-simulation.md
+        - name: Supplier communications (production-ready preview)
+          items:
+          - name: Supplier communications features of the Procurement Agent
+            href: procurement/procurement-agent-supplier-com-overview.md
+          - name: Try out the updates from vendors feature without a complete email setup
+            href: procurement/procurement-agent-supplier-com-try-out.md
+          - name: Set up and configure supplier communications features
+            href: procurement/procurement-agent-supplier-com-setup.md
+          - name: Use the agent deployment wizard to set up supplier communications features (preview)
+            href: procurement/procurement-agent-supplier-com-setup-wizard.md
+          - name: Solve common problems when setting up supplier communications features
+            href: procurement/procurement-agent-supplier-com-setup-faq.md
+          - name: Test supplier communications features
+            href: procurement/procurement-agent-supplier-com-testing.md
+          - name: Follow up on purchase orders by using the Procurement Agent
+            href: procurement/procurement-agent-supplier-com-follow-up.md
+          - name: Review and apply purchase order changes received in vendor emails
+            href: procurement/procurement-agent-supplier-com-apply-email-changes.md
       - name: Prices, discounts, and rebates
         items:
         - name: Purchase agreements
@@ -3157,6 +3181,8 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Use establishments on sales order lines
+          href: sales-marketing/establishments-on-sales-order-lines.md
         - name: Use external item identifiers to add products to orders
           href: sales-marketing/external-item-product-search-lookup.md
         - name: Copy lines between sales orders
@@ -3955,8 +3981,8 @@
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Migrate the Warehouse Management mobile app from V3 to V4
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
-          - name: Support policy for V3 of the Warehouse Management mobile app
-            href: warehousing/warehouse-app-support-info-v3.md
+          - name: Support policy for the Warehouse Management mobile app
+            href: warehousing/warehouse-app-support-info.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
             href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
@@ -4061,8 +4087,16 @@
           href: inventory/warehouse-template.md
         - name: Warehouse groups
           href: warehousing/warehouse-groups.md
+        - name: Warehouse spatial locations (preview)
+          items:
+          - name: Warehouse spatial location overview
+            href: warehousing/spatial-location-overview.md
+          - name: Set up warehouse spatial locations
+            href: warehousing/spatial-locations-setup.md
         - name: Control work by using work templates and location directives
           href: warehousing/control-warehouse-location-directives.md
+        - name: Dynamic work classification (production-ready preview)
+          href: warehousing/dynamic-work-classification.md
         - name: Work with location directives
           href: warehousing/create-location-directive.md
         - name: Test location directives with acceptance tests
@@ -4261,9 +4295,9 @@
         href: faq-confirmed-po-changes.md
       - name: Responsible AI FAQ for Workload insights with Copilot
         href: faq-wma-copilot.md
-      - name: Responsible AI FAQ for the Supplier Communications Agent (production ready preview)
+      - name: Responsible AI FAQ for the Procurement Agent (production-ready preview)
         href: faq-supplier-communications-agent.md
-      - name: Responsible AI FAQ for Generative insights for Demand planning (production ready preview)
+      - name: Responsible AI FAQ for Generative insights for Demand planning (production-ready preview)
         href: faq-demand-planning-generative-insights.md
   - name: Development and administration for finance and operations apps
     href: ../fin-ops-core/dev-itpro/index.md

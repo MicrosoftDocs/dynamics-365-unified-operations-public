@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2025
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
@@ -26,7 +26,7 @@ Use the following procedures to set up storno accounting. In storno accounting, 
 |Sales revenue      |       |100.00  |
 |Accounts receivable|100.00 |        |
 
-To reverse the transactions and post the reversing transactions as storno transactions, you enter the following information.
+To reverse the transactions and post the reversing transactions as storno transactions, enter the following information.
 
 |Description        | Debit  |Credit   |
 |-------------------|--------|---------|
@@ -43,7 +43,7 @@ You must activate storno accounting in General ledger before you can set up stor
 
 To activate storno accounting, follow these steps:
 
-1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
+1. In Dynamics 365 Finance, go to **General ledger** > **Setup** > **General ledger parameters**.
 1. In the **Ledger** area, on the **Accounting rules** FastTab, in the **Transaction reversal** field group, set the **Correction** option to **Yes**.
 
 ## Set up storno accounting
@@ -78,19 +78,19 @@ To set up storno accounting in Project management and accounting, follow these s
 1. In the **General** area, in the **Adjustment** field group, set the **Adjustment of project transactions – correction** option to  **Yes**. By default, adjustments to project transactions are now posted as storno transactions.
 1. In the **Journals** area, in the **Ledger posting** field group, set the **Negative transactions – correction** option to **Yes**. By default, project journal entries that have a negative cost amount are now posted as storno transactions.
 
-### Create an Invoice storno credit note
+### Create an invoice storno credit note
 
 To create an invoice storno credit note, follow these steps:
 
- 1. For a confirmed purchase order, on the Action Pane, select **Invoice**.  
- 1. Select **Invoice**.  
- 1. On the Action Pane, select **Default from: Product receipt quantity**.  
- 1. In the **Default quantity for lines** field, select an option.  
- 1. Select **OK**.  
- 1. Set the **Credit correction** option to **Yes**.  
- 1. In the **Number** field, enter a value.  
- 1. In the **Invoice date** field, enter a date.  
- 1. Select **Post**.  
+1. For a confirmed purchase order, on the Action Pane, select **Invoice**.  
+1. Select **Invoice**.  
+1. On the Action Pane, select **Default from: Product receipt quantity**.  
+1. In the **Default quantity for lines** field, select an option.  
+1. Select **OK**.  
+1. Set the **Credit correction** option to **Yes**.  
+1. In the **Number** field, enter a value.  
+1. In the **Invoice date** field, enter a date.  
+1. Select **Post**.    
 
 
 

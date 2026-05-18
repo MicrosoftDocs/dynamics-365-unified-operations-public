@@ -4,6 +4,8 @@ description: Learn about customizing dual-write, including various guidance, exa
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: Developer
@@ -15,8 +17,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Customization guidance for dual-write
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Dual-write provides out-of-the-box maps for some business processes. However, you might need extra fields, maps, or transformations. The dual-write platform is extensible. You can create custom maps and extend existing maps with custom fields to sync data between finance and operations apps and Microsoft Dataverse. This article provides guidance and best practices for these customizations.
 
@@ -70,7 +70,7 @@ If the entities don't exist in either environment, create tables in both environ
     :::image type="content" source="media/custom-account-keys.png" alt-text="Screenshot of Dataverse keys for Account table showing accountnumber as the defined key.":::
 
     If you review the **Customers V3** table map, you can see that **accountnumber** is mapped to **CustomerAccount**.
-    
+
     :::image type="content" source="media/custom-table-map.png" alt-text="Screenshot of the table map showing accountnumber mapped to CustomerAccount.":::
 
 ## Best practices for dual-write
@@ -101,10 +101,10 @@ If the entities don't exist in either environment, create tables in both environ
 
 + The following items aren't handled by business events. Therefore, dual-write doesn't handle these items.
 
-    + The **doUpdate** method
-    + The **doInsert** method
-    + Set-based operations (**insert** and **update**)
-    + Records where **skipBusinessEvents(true)** is marked
+  + The **doUpdate** method
+  + The **doInsert** method
+  + Set-based operations (**insert** and **update**)
+  + Records where **skipBusinessEvents(true)** is marked
 
 + Register business events for the data source that you map. Finance and operations apps don't track data sources if you outer-join them and mark them as read-only.
 + Changes trigger only if you modify the mapped fields in the finance and operations app. In customer engagement apps, all field modifications trigger dual-write synchronization.
@@ -153,4 +153,3 @@ https://<Env URL>/api/data/v9.0/<TableName>?$filter=<fieldname> eq <value>
 For more information about filters and more examples, see [Examples and patterns for filtering](dual-write-faq.md#where-can-i-find-examples-and-patterns-for-filtering-dual-write-maps).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

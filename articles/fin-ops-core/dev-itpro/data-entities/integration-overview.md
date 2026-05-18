@@ -4,6 +4,8 @@ description: Learn about integration between finance and operations apps and thi
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.date: 03/09/2026
 ms.reviewer: johnmichalak
 ms.search.region: Globals

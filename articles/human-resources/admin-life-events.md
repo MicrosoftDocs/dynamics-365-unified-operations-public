@@ -3,7 +3,7 @@
 title: Set administrator rights for life events
 description: This article explains how to configure administrator rights for life events in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/01/2022
+ms.date: 05/13/2026
 ms.topic: article
 # optional metadata
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

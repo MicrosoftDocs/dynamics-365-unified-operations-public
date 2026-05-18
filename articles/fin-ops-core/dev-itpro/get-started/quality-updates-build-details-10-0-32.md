@@ -4,7 +4,7 @@ description: Learn about the version 10.0.32 proactive quality update (PQU) rele
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 06/01/2023
+ms.date: 03/26/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -19,22 +19,21 @@ ms.dyn365.ops.version: 10.0.32
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
 | Update ID | LCS Link | Title | Release date | Build version |
 | --- | --- | --- | --- | --- |
-| 805759 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=805759) | Country/Region and state field are changing when updating county in customer address | 5/29/2023 | 10.0.1515.101 |
+| 805759 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=805759) | Country/Region and state field change when updating county in customer address | 5/29/2023 | 10.0.1515.101 |
 | 807281 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=807281) | Information on the delivery tab isn't updated after updating shipping information in POS | 5/18/2023 | 10.0.1515.110 |
-| 812241 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=812241) | Can't edit/change company and customer account on customer payment journal line, related to intercompany transactions | 5/17/2023 | 10.0.1515.111 |
+| 812241 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=812241) | Can't edit or change company and customer account on customer payment journal line, related to intercompany transactions | 5/17/2023 | 10.0.1515.111 |
 | 812644 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=812644) | Performance issue while posting large Project advanced journal using line level voucher functionality and not using the feature where posting in batch we transfer the failed line posting to new journal | 5/17/2023 | 10.0.1515.111 |
 | 812912 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=812912) | Shipping charges are displayed incorrectly in order details page after the sales order is created in HQ. | 5/16/2023 | 10.0.1515.111 |
-| 812301 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=812301) | [BRA-FB] - SPED ECD – block J150 when the previous ECD is recovered, we have rejection Initial balance. | 5/15/2023 | 10.0.1515.111 |
+| 812301 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=812301) | [BRA-FB] - SPED ECD – block J150 when the previous ECD is recovered, rejection Initial balance. | 5/15/2023 | 10.0.1515.111 |
 | 811669 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=811669) | Intercompany project expense report posting fails 'Attempt to divide by zero' | 5/14/2023 | 10.0.1515.111 |
 | 803648 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=803648) | Fix for access violation crash while accessing empty records | 5/13/2023 | 7.0.6801.70 |
 | 806080 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=806080) | Store's main warehouse selected by POS user isn't set on the cart line when "Enable consistent delivery mode handling in channel" feature is on | 5/13/2023 | 10.0.1515.101 |
 | 802000 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802000) | Fixed issue with null change tracking parameter values | 5/11/2023 | 7.0.6801.86 |
 | 811005 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=811005) | Revenue Split template amounts are overwritten when accessing the sales order in CE and using the Price Order option | 5/11/2023 | 10.0.1515.109 |
 | 807044 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=807044) | MEXICO\_DIOT declaration doesn't show data from promissory notes. | 5/11/2023 | 10.0.1515.109 |
-| 790162 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790162) | Custom Payment Processors do not work with the Independent packaging extensibility model (Commerce SDK) | 5/10/2023 | 10.0.1515.57 |
+| 790162 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790162) | Custom Payment Processors don't work with the Independent packaging extensibility model (Commerce SDK) | 5/10/2023 | 10.0.1515.57 |
 | 803357 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=803357) | Fixing Export Parameterization issue with multiple filters | 5/9/2023 | 7.0.6801.66 |
 | 811402 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=811402) | Use rule Active Cost price then Item Price to calculate item price for moving average item when create return order | 5/9/2023 | 10.0.1515.108 |
 | 806172 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=806172) | MEXICO DIOT adds the amount when it is negative | 5/8/2023 | 10.0.1515.103 |
@@ -53,7 +52,7 @@ ms.dyn365.ops.version: 10.0.32
 | 802717 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802717) | Project estimate transactions are posting in accounting currency not in contract currency. | 4/27/2023 | 10.0.1515.90 |
 | 806223 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=806223) | Sales order pick only shows the Pick note if the Display summary of pick screen is set as No | 4/27/2023 | 10.0.1515.101 |
 | 805588 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=805588) | Adyen payment device not working on Store Commerce app for Android | 4/25/2023 | 10.0.1515.98 |
-| 803627 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=803627) | tax amount per unit is added to vendor balance while price included sales tax is enabled. | 4/25/2023 | 10.0.1515.98 |
+| 803627 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=803627) | Tax amount per unit is added to vendor balance while price included sales tax is enabled. | 4/25/2023 | 10.0.1515.98 |
 | 803545 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=803545) | Trying to pay a free text, or project, invoice in POS fails | 4/25/2023 | 10.0.1515.98 |
 | 805121 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=805121) | Float Entry not saving in Safe management in Store commerce -Offline Mode | 4/25/2023 | 10.0.1515.98 |
 | 802920 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802920) | [BRA-FB] – Tax payment ICMS - Error: The amount %1 reported in the payment different from the amount %2 reported in the general ledger. The difference is %3. | 4/25/2023 | 10.0.1515.95 |
@@ -77,15 +76,15 @@ ms.dyn365.ops.version: 10.0.32
 | 802052 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802052) | Exchange rate 1$ = 100,000 LBP gives an error in POS | 4/18/2023 | 10.0.1515.87 |
 | 800933 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800933) | [LBD] Environments that use a domain user account for the AOS services fail to deploy | 4/17/2023 | 7.0.6801.60 |
 | 804224 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=804224) | Excessive time on lookups, potentially related to improper data volumes in an entire table cache table at InventItemGroupForm. | 4/15/2023 | 10.0.1515.91 |
-| 801903 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801903) | Bundle items aren't printed correctly to Localized sales invoices (EE, LT, HU, LV, CZ or PL). | 4/14/2023 | 10.0.1515.90 |
+| 801903 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801903) | Bundle items aren't printed correctly to Localized sales invoices (EE, LT, HU, LV, CZ, or PL). | 4/14/2023 | 10.0.1515.90 |
 | 802262 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802262) | Store Commerce for Android resets after closing app when activated with CPOS URL from HQ | 4/14/2023 | 10.0.1515.90 |
-| 802729 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802729) | When created Purchase order in company which set up intercompany, purchase order in't created unless sales order is clicked. | 4/14/2023 | 10.0.1515.89 |
+| 802729 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802729) | When created Purchase order in company which set up intercompany, purchase order isn't created unless sales order is clicked. | 4/14/2023 | 10.0.1515.89 |
 | 802705 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802705) | CFDI 4.0 doesn't show Exempt IEPS within the cfdi:Traslados node. | 4/11/2023 | 10.0.1515.85 |
 | 802684 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802684) | MEXICO\_Representacion Impresa Description of Currency PDF Invoice | 4/11/2023 | 10.0.1515.85 |
 | 801210 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801210) | Inventory and Production report - conversion from InMemory to TempDB | 4/11/2023 | 10.0.1515.78 |
 | 802859 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802859) | Skip over-settlement for weight average model including physical value in inventory recalculation | 4/10/2023 | 10.0.1515.87 |
 | 801630 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801630) | Fixed Assets for Japan - Incorrect amounts of summarized depreciation posted for multiple years | 4/8/2023 | 10.0.1515.85 |
-| 802497 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802497) | When an electronic reporting destination is added, the electronic reporting job for einvoices in no longer created. | 4/7/2023 | 10.0.1515.85 |
+| 802497 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802497) | When an electronic reporting destination is added, the electronic reporting job for einvoices is no longer created. | 4/7/2023 | 10.0.1515.85 |
 | 800979 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800979) | Can't post depreciation for Fixed Assets with manual depreciation profile | 4/4/2023 | 10.0.1515.80 |
 | 800855 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800855) | Error during CDX package generation when new channel is mapped to an existing CSU | 4/4/2023 | 10.0.1515.78 |
 | 800776 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800776) | Query in SubledgerJournalizer.loadReferenceDistributionInformation is generating bad SQL plan | 4/4/2023 | 10.0.1515.78 |
@@ -96,7 +95,7 @@ ms.dyn365.ops.version: 10.0.32
 | 802048 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802048) | Executing a collection-bound OData action through F&O virtual entity doesn't work | 4/2/2023 | 7.0.6801.61 |
 | 796679 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796679) | Non PO Vendor Invoice Journal posts non-deductible VAT (Sales tax) as Project-Cost instead of WIP. | 4/1/2023 | 10.0.1515.78 |
 | 800501 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800501) | (POL) JPK-V7M: Issue in node for intracommunity invoices with 'Reverse charge' sales tax | 4/1/2023 | 10.0.1515.77 |
-| 799872 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=799872) | Error "You aren't authorized to access table 'Export control license'" will be thrown when user tries to open sales order details with configuration key 'Country of Origin and Dual Use configuration key' off. | 4/1/2023 | 10.0.1515.77 |
+| 799872 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=799872) | Error "You aren't authorized to access table 'Export control license'" is thrown when user tries to open sales order details with configuration key 'Country/region of Origin and Dual Use configuration key' off. | 4/1/2023 | 10.0.1515.77 |
 | 800781 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800781) | Batch task error causing failure of consolidation processing. Deadlock issue. | 4/1/2023 | 10.0.1515.77 |
 | 800825 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800825) | MEXICO\_CFDI 4.0 Prepayment\_The Receptor's name must inherit the name from the Customer's registered RFC name field. | 4/1/2023 | 10.0.1515.77 |
 | 799687 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=799687) | When revoking a reversal for a customer/vendor type of transaction, the incorrect transaction could be found due to the same trace number being used. | 4/1/2023 | 10.0.1515.77 |
@@ -119,8 +118,8 @@ ms.dyn365.ops.version: 10.0.32
 | 798381 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798381) | Delivery date and Accounting date added in POS are saved incorrectly to FnO | 3/24/2023 | 10.0.1515.72 |
 | 798667 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798667) | Wrong fulfillment quantities display on POS Order Fulfillment when the sales line is partially fulfilled | 3/23/2023 | 10.0.1515.70 |
 | 799968 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=799968) | Microsoft Dynamics 365 for Finance and Operations version 10.0.32 | 3/23/2023 | 10.0.1515.69 |
-| 798551 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798551) | The billing schedule reference on the sales order generated from a terminated billing schedule for credit note, doen't exist. | 3/23/2023 | 10.0.1515.69 |
-| 797104 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=797104) | [LBD] The Finance + Operations (on-premises) specific components are not up to date | 3/21/2023 | 7.0.6801.49 |
+| 798551 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798551) | The billing schedule reference on the sales order generated from a terminated billing schedule for credit note, doesn't exist. | 3/23/2023 | 10.0.1515.69 |
+| 797104 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=797104) | [LBD] The Finance + Operations (on-premises) specific components aren't up to date | 3/21/2023 | 7.0.6801.49 |
 | 798955 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798955) | [Regression] Validating product configuration model that uses Z3 throws an error | 3/21/2023 | 10.0.1515.69 |
 | 798464 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798464) | [BRA- FB]: R-2020 event: MS1183 - O valor da retenção {vlrRetencao} informado não pode ser maior que 11% da Base de cálculo da retenção da contribuição previdenciária {vlrBaseRet}.Location: - Campo: vlrRetencao | 3/21/2023 | 10.0.1515.65 |
 | 798251 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798251) | MEXICO\_CFDI 40 TipoDeComprobante should be I when discount is 100 percent | 3/20/2023 | 10.0.1515.65 |
@@ -135,19 +134,19 @@ ms.dyn365.ops.version: 10.0.32
 | 794938 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794938) | JP - After reversed fixed asset reduction entry journal, cannot post it again because reduction entry document status remains "Posted" | 3/17/2023 | 10.0.1515.60 |
 | 795092 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795092) | Enable consistent delivery mode handling in channel becomes mandatory on 10.0.30 causes shipping warehouse on customer order to be incorrect. | 3/17/2023 | 10.0.1515.57 |
 | 797479 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=797479) | The Vendor Account Statement report - System.NullReferenceException when print Open Only transactions | 3/16/2023 | 10.0.1515.64 |
-| 796864 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796864) | Commerce APIs returning 500 due to EntityTranslationL2CacheDataStoreAccessor.TranslationKeyPattern | 3/16/2023 | 10.0.1515.62 |
+| 796864 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796864) | Commerce APIs return 500 error due to EntityTranslationL2CacheDataStoreAccessor.TranslationKeyPattern | 3/16/2023 | 10.0.1515.62 |
 | 792853 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=792853) | Backward compatibility issue introduced in enhancement of extended logon feature | 3/16/2023 | 10.0.1515.50 |
-| 794589 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794589) | System runs slowly or no-response when save/reset tax adjustment. | 3/14/2023 | 10.0.1515.64 |
-| 795349 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795349) | Tax details are missing for transactions which are searched using advance search from show journal | 3/14/2023 | 10.0.1515.58 |
-| 793310 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793310) | Vendor Transaction can be reversed when it is associated with project, and it causes the wrong posted project data in invoice approval | 3/14/2023 | 10.0.1515.55 |
+| 794589 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794589) | System runs slowly or no-response when saving or resetting tax adjustment. | 3/14/2023 | 10.0.1515.64 |
+| 795349 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795349) | Tax details are missing for transactions that you search by using advanced search from show journal | 3/14/2023 | 10.0.1515.58 |
+| 793310 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793310) | You can reverse vendor transaction when it's associated with project, and it causes the wrong posted project data in invoice approval | 3/14/2023 | 10.0.1515.55 |
 | 795044 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795044) | [CZE] Wrong posting for Tax credit memo with bank exchange rate activated and feature activated | 3/13/2023 | 10.0.1515.60 |
 | 796761 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796761) | MEXICO\_CFDI 40 Settlement XML is missing Sales tax information if Sales tax Exempt Exists | 3/13/2023 | 10.0.1515.60 |
 | 796261 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796261) | Issue is with Intercompany Journals when tax calculation service is turned on | 3/13/2023 | 10.0.1515.60 |
 | 795147 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795147) | Price Order no longer works due to changes in CDS Sales order Lines V2 entity map | 3/13/2023 | 10.0.1515.59 |
-| 797380 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=797380) | Change Based Alerts Batch Job taking longer time to execute/finish | 3/12/2023 | 7.0.6801.49 |
-| 796801 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796801) | Vendor invoices whose invoice voucher doesn't match their invoice register voucher aren't transferred to Intrastat when transferring vendor invoices. | 3/11/2023 | 10.0.1515.58 |
+| 797380 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=797380) | Change Based Alerts Batch Job takes longer time to execute or finish | 3/12/2023 | 7.0.6801.49 |
+| 796801 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796801) | Vendor invoices whose invoice voucher don't match their invoice register voucher aren't transferred to Intrastat when transferring vendor invoices. | 3/11/2023 | 10.0.1515.58 |
 | 796541 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796541) | Archive credit card transaction data batch doesn't recalculate the transactions older than date | 3/10/2023 | 10.0.1515.58 |
-| 796621 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796621) | export fails with Timeout error but runtime is less than the sendtimeout value | 3/9/2023 | 7.0.6801.45 |
+| 796621 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796621) | Export fails with Timeout error but runtime is less than the sendtimeout value | 3/9/2023 | 7.0.6801.45 |
 | 796486 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796486) | Maintenance requester role missing privileges to list existing work orders in Asset Management mobile application | 3/9/2023 | 10.0.1515.56 |
 | 796433 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796433) | Remove unnecessary telemetry for inventory transaction archive process | 3/9/2023 | 10.0.1515.56 |
 | 794723 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794723) | Poland/POL/EEU: Fixed financial dimensions are missing in FCR transaction reversal voucher auto generated while unsettling vendor invoices | 3/9/2023 | 10.0.1515.54 |
@@ -170,11 +169,11 @@ ms.dyn365.ops.version: 10.0.32
 | 795126 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795126) | [Belgium] VAT declaration (BE) isn't working as SSRS report when positive and negative lines are on same document. | 3/3/2023 | 10.0.1515.52 |
 | 794114 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794114) | Reduce EDT size of pricing attributes | 3/3/2023 | 10.0.1515.50 |
 | 788179 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=788179) | Philippines Country code PHL (ISO PH) to be presented in Retail Server enum | 3/3/2023 | 10.0.1515.50 |
-| 794338 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794338) | Adyen credit card is form not rendering on Apple devices with Apple Pay payment method enabled | 3/2/2023 | 10.0.1515.51 |
+| 794338 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794338) | Adyen credit card form isn't rendering on Apple devices with Apple Pay payment method enabled | 3/2/2023 | 10.0.1515.51 |
 | 792781 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=792781) | Project cost posting to WIP for Fixed price project - Completed contract method after elimination | 2/28/2023 | 10.0.1515.49 |
 | 793761 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793761) | [BRA-FB] - EFD Contributions – C181 and C185 with CST 49, 98 and 99 must not be generated in the text file. | 2/27/2023 | 10.0.1515.47 |
 | 793982 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793982) | Workflow due date batch job getting stuck in executing state | 2/24/2023 | 7.0.6801.40 |
-| 789502 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=789502) | New address created on Site/Warehouses forms by users without 'person' assigned will be non-Private by default | 2/24/2023 | 10.0.1515.47 |
+| 789502 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=789502) | New address created on Site/Warehouses forms by users without 'person' assigned is non-Private by default | 2/24/2023 | 10.0.1515.47 |
 | 793547 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793547) | Fix for creating a deployable package from Visual Studio for binary only modules. | 2/23/2023 | 7.0.6801.39 |
 | 793318 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793318) | Purchase Agreement Confirmation configurable business document doesn't allow to generate user action (Print) for ER destination setup | 2/23/2023 | 10.0.1515.46 |
 | 790080 | [Issue in Lifecycle Service](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790080) | DMF fails to import on Employee Fixed Compensation Entity | 2/23/2023 | 10.0.1515.46 |

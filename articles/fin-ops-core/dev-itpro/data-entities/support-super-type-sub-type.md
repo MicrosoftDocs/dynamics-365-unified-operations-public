@@ -4,6 +4,8 @@ description: Describes support for inheritance patterns in data entities.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 02/26/2026
 ms.reviewer: twheeloc
 ms.assetid: d59cefc0-be94-42e9-a22e-87493985dbcd

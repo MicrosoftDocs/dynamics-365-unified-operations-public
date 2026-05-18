@@ -4,6 +4,8 @@ description: Learn about how to create a custom service including an outline and
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: Developer

@@ -2,7 +2,7 @@
 title: Send email receipts from Store Commerce
 description: Learn how to send receipt emails from Microsoft Dynamics 365 Commerce Store Commerce when a transaction is tendered at the point of sale (POS).  
 author: ritakimani
-ms.date: 01/14/2026
+ms.date: 05/08/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -20,9 +20,15 @@ ms.search.validFrom: 2016-11-30
 
 This article explains how to send receipt emails from Microsoft Dynamics 365 Commerce Store Commerce when a transaction is tendered at the point of sale (POS).
 
-## Prerequisite
+## Prerequisites
 
-To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP) server.
+To send email receipts, you must configure an email provider in Commerce headquarters. The following email providers are available:
+
+- **Microsoft Graph (recommended)**: Microsoft Graph is the recommended email provider for Microsoft 365 users. It supports modern authentication (OAuth 2.0) and doesn't require SMTP relay configuration. Microsoft Graph is available in Dynamics 365 Finance version 10.0.38 and later. For the setup instructions, see [Send email with Microsoft Graph](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json#send-email-with-microsoft-graph).
+- **SMTP**: You can configure a Simple Mail Transfer Protocol (SMTP) server as the email provider. For the setup instructions, see [Send email by using SMTP](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json#send-email-by-using-smtp).
+
+> [!IMPORTANT]
+> If you use an Office 365 SMTP server (smtp.office365.com), keep in mind that Exchange Online enforces a [sending limit of 30 messages per minute](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). During high-volume periods, such as holidays, this throttling limit can cause delays in receipt email delivery at the point of sale. To avoid this issue, configure Microsoft Graph as the batch email provider on the **Email parameters** page. Microsoft Graph isn't subject to the same per-minute sending limit and has its own built-in throttling mechanism. For more information about email provider configuration, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## Set up email receipts
 
@@ -82,7 +88,7 @@ To enable emailing for individual receipt types within your receipt profile and 
     - In the **Sender name** field, specify the name that appears as the sender of the email. Customers see this name as the **From** name on the email.
     - In the **Sender email** field, specify a valid email address. Customers see this email address as the **From** email address on the email.
 
-1. Under **General**, in the **Default language code** field, select a language. The receipt is sent in this language if templates for multiple languages are configured, and the store's or customer's preferred language doesn't match any of those additional languages. 
+1. Under **General**, in the **Default language code** field, select a language. The receipt is sent in this language if templates for multiple languages are configured, and the store's or customer's preferred language doesn't match any of those other languages.
 1. In the **Email message content** pane, select **New** to create a new template instance. Enter information in the following fields:
 
     - In the **Language** field, specify the language this template is localized in. This language applies only to emailed receipts that contain HTML with static content above and/or below the %message% placeholder.

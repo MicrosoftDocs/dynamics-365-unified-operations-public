@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/05/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-03-01
@@ -46,7 +46,7 @@ To set up a new district, follow these steps:
 1. In the **Description** field, enter the official name of the district.
 1. In the **ZIP/postal code** field, select the postal code.
 
-   ![Address setup page District tab.](../media/1%20Address%20setup.jpg)
+   :::image type="content" source="../media/1%20Address%20setup.jpg" alt-text="Screenshot of the Address setup page District tab.":::
 
 1. Select **Save**.
 
@@ -61,7 +61,7 @@ To set up a street code, follow these steps:
 1. In the **Street** field, enter the official name of the street.
 1. In the **ZIP/postal code** field, select the postal code.
 
-   ![Address setup page Street tab.](../media/2%20Address%20setup.jpg)
+   :::image type="content" source="../media/2%20Address%20setup.jpg" alt-text="Screenshot of the Address setup page Street tab.":::
 
 1. Select **Save**.
 
@@ -76,7 +76,7 @@ To set up a group of houses, follow these steps:
 1. In the **Numbers of buildings** field, enter a comma-separated list of the building numbers of the houses in the group.
 1. In the **ZIP/postal code** field, select the postal code.
 
-   ![Address setup page Group of houses tab.](../media/3%20Address%20setup.jpg)
+   :::image type="content" source="../media/3%20Address%20setup.jpg" alt-text="Screenshot of the Address setup page Group of houses tab.":::
 
 1. Select **Save**.
 
@@ -91,7 +91,7 @@ To set up a group of flats, follow these steps:
 1. In the **Group of flats** field, enter a comma-separate list of the flat numbers of the flats in the group.
 1. In the **ZIP/postal code** field, select the postal code.
 
-   ![Address setup page Group of flats tab.](../media/4%20Address%20setup.jpg)
+   :::image type="content" source="../media/4%20Address%20setup.jpg" alt-text="Screenshot of the Address setup page Group of flats tab.":::
 
 1. Select **Save**.
 
@@ -106,7 +106,7 @@ To set up land plots, follow these steps:
 1. In the **Numbers of land plots** field, enter a comma-separated list of the numbers of the land plots.
 1. In the **ZIP/postal code** field, select the postal code.
 
-   ![Address setup page Land plots tab.](../media/5%20Address%20setup.jpg)
+   :::image type="content" source="../media/5%20Address%20setup.jpg" alt-text="Screenshot of the Address setup page Land plots tab.":::
 
 1. Select **Save**.
 
@@ -117,7 +117,7 @@ To create an address for a customer, follow these steps:
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Open a customer record, and then, on the **Addresses** FastTab, select **More options \> Advanced** to open the **Manage addresses** page.
 
-   ![Addresses FastTab on customer record.](../media/6%20All%20customers.jpg)
+   :::image type="content" source="../media/6%20All%20customers.jpg" alt-text="Screenshot of the Addresses FastTab on customer record.":::
 
 1. On the **Address** FastTab, in the **Country/region** field, select **RUS**.
 1. In the **ZIP/postal code** field, select the postal code. After you select a postal code, the **District** field shows the district code and name.
@@ -128,7 +128,7 @@ To create an address for a customer, follow these steps:
 1. In the **Group of houses** field, select the group of houses code. The corresponding building numbers are shown.
 1. In the **Group of flats** field, select the group of flats code. The corresponding flat numbers are shown.
 
-   ![Manage addresses page Addresses FastTab.](../media/7%20Manage%20addresses.jpg)
+   :::image type="content" source="../media/7%20Manage%20addresses.jpg" alt-text="Screenshot of the Manage addresses page Addresses FastTab.":::
 
 1. Select **Save**.
 
@@ -140,12 +140,12 @@ To import an FIAS metadata package, follow these steps:
 
 1. Go to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/Logon/Index), and in the Shared asset library, on the **Data package** tab, download the **RU FIAS – FiasMetadataPackage**. This package file contains the required data for the import jobs runtime.
 
-   ![Shared asset library in .](../media/8%20Shared%20asset%20library.jpg)
+   :::image type="content" source="../media/8%20Shared%20asset%20library.jpg" alt-text="Screenshot of the Shared asset library.":::
 
 1. In Dynamics 365 Finance, go to **System administration** \> **Workspaces** \> **Data management**.
 1. In the **Import / Export** section, select the **Import** tile to create a new import job.
     
-   ![Data management workspace, Import/export section, Import tile.](../media/9%20Data%20management.jpg)
+   :::image type="content" source="../media/9%20Data%20management.jpg" alt-text="Screenshot of the Data management workspace, Import/export section, Import tile.":::
 
 1. In the **Group name** field, enter **ImportFiasMetadata**.
 1. In the **Description** field, enter a description.
@@ -180,7 +180,7 @@ To set up a template to import FIAS data, follow these steps:
 
 1. Select **Save**.
 
-   ![List of entities just added.](../media/11%20Template.jpg)
+   :::image type="content" source="../media/11%20Template.jpg" alt-text="Screenshot of the list of entities just added.":::
 
 ### Set up a job for a full FIAS import
 
@@ -197,7 +197,7 @@ To set up a job for a full FIAS import, follow these steps:
 1. In the **Source data format** field, select **VerticalBarSeparated-Unicode**.
 1. Select **OK**, and then select **Save**.
 
-    ![Import page, with fias full import job details.](../media/12%20Import.jpg)
+    :::image type="content" source="../media/12%20Import.jpg" alt-text="Screenshot of the Import page with fias full import job details.":::
 
 ### Set up a job to import FIAS delta
 
@@ -215,11 +215,11 @@ To set up a job to import FIAS delta, follow these steps:
 1. In the **Source data format** field, select **XML-Attribute**.
 1. Select **OK**.
 
-    ![Import page wtih fias delta import job details.](../media/13%20Import.jpg)
+    :::image type="content" source="../media/13%20Import.jpg" alt-text="Screenshot of the Import page with fias delta import job details.":::
 
 1. For each entity, select the button in the **View map** column to open the **Map source to staging** page.
 
-    ![Map source to staging page.](../media/14%20Map%20source%20to%20staging.jpg)
+    :::image type="content" source="../media/14%20Map%20source%20to%20staging.jpg" alt-text="Screenshot of the Map source to staging page.":::
 
 1. On the **Transformations** tab, select **New**, and then select **Upload file** to open the **Select a file** dialog.
 1. Select **Browse**, and select the following transformations:
@@ -246,12 +246,12 @@ To do a full FIAS import to an empty database, follow these steps:
 1. If you intend to import houses and steads, set the **Does include houses** option to **Yes**.
 1. If you intend to import rooms, set the **Does include rooms** option to **Yes**.
 
-   ![Import data pane.](../media/15%20Import%20of%20data.jpg)
+   :::image type="content" source="../media/15%20Import%20of%20data.jpg" alt-text="Screenshot of the Import data pane.":::
 
 1. Select **OK** to start the import.
 1. Select **Refresh** in the upper right of the page to view the line together with the results of the full import.
     
-   ![Options tab.](../media/16%20Import%20from%20FIAS.jpg)
+   :::image type="content" source="../media/16%20Import%20from%20FIAS.jpg" alt-text="Screenshot of the Options tab.":::
 
 ### Update addresses from FIAS
 
@@ -274,7 +274,7 @@ To potentially speed up the import process, follow these steps:
     - In the **Import threshold record count** field, enter the threshold record count for import.
     - In the **Import task count** field, enter the count of import tasks.
 
-   ![Entity import execution parameters.](../media/17%20Entity%20import%20execution%20parameters.jpg)
+   :::image type="content" source="../media/17%20Entity%20import%20execution%20parameters.jpg" alt-text="Screenshot of the Entity import execution parameters page.":::
 
 When you run a full import job, provide several regions, but not all regions, at the same time.
 

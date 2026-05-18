@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 09/05/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -127,7 +127,7 @@ To create a corrective or revision facture for a purchase order, follow these st
 1. In the **Facture** field, select the facture that requires correction or revision.
 1. In the **Facture date** field, select the facture date.
  
-   ![Facture date field.](../media/revision-facture-01.png)
+   :::image type="content" source="../media/revision-facture-01.png" alt-text="Screenshot of the Facture date field.":::
  
 1. Select **Update facture** to post the corrective or revision facture.
 
@@ -185,7 +185,7 @@ To walk through the example, follow these steps:
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Create a free text invoice that has three lines. For the first two lines, set the item sales tax group to **VAT18**. For the third, set it to **VAT10**.
 
-   ![Free text invoice lines.](../media/revision-facture-02.png)
+   :::image type="content" source="../media/revision-facture-02.png" alt-text="Screenshot of free text invoice lines.":::
  
 1. Post the invoice and update facture in the usual way.
 1. Go to **General ledger** \> **Journal entries** \> **General journal**.
@@ -194,12 +194,12 @@ To walk through the example, follow these steps:
 1. Create tax transactions in the usual way. On the **List** tab, set the **Account**, **Credit**, and **Offset account** fields.
 1. On the **General** tab, set the **Sales tax code** field.
 
-   ![Journal voucher page.](../media/revision-facture-03.png)
+   :::image type="content" source="../media/revision-facture-03.png" alt-text="Screenshot of the Journal voucher page.":::
  
     > [!NOTE]
     > Depending on the setup of the Ledger posting group account that you selected in the **Sales tax code** field, you must select values in the **Account** and **Offset account** fields.
     >
-    > ![Journal voucher lines.](../media/revision-facture-04.png)
+    > :::image type="content" source="../media/revision-facture-04.png" alt-text="Screenshot of journal voucher lines.":::
  
 1. Select **Post** to post the journal.
 1. Select **Functions** \> **Sales book** to open the **Update facture** page. (For a purchase facture correction based on a tax transaction, select **Functions** \> **Purchase book**.).
@@ -207,13 +207,13 @@ To walk through the example, follow these steps:
 1. In the **Facture** field, select the number of the facture that requires correction or revision. The Facture date field is automatically set.
 1. In the **Distribution** field, select **Automatic**.
 
-   ![Upate facture page.](../media/revision-facture-05.png)
+   :::image type="content" source="../media/revision-facture-05.png" alt-text="Screenshot of the Update facture page.":::
  
 1. In the lower part of the page, use the To facture checkbox to select the journal.
 1. Select **Posting** \> **Update and print** to update and print the facture.
 1. Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**. The upper part of the **Facture journal** page shows the facture that was created. The lower part of the page shows only two lines of the facture, where the item sales tax group equals **VAT18**. Facture lines show the amounts of deviations that are calculated as a result of the distribution.
  
-   ![Facture journal.](../media/revision-facture-06.png)
+   :::image type="content" source="../media/revision-facture-06.png" alt-text="Screenshot of the Facture journal.":::
  
 ## Revise a facture header on the Facture journal page
 
@@ -244,7 +244,7 @@ To review a history of corrective or revision factures in the Facture journal, f
 
 1. Select the **Show correction history** checkbox to view the history of all facture corrections or revisions. The original facture and the associated corrective or revision factures are shown.
  
-   ![Facture journal corrections.](../media/revision-facture-07.png) 
+   :::image type="content" source="../media/revision-facture-07.png" alt-text="Screenshot of Facture journal corrections."::: 
  
     In the upper part of the page, documents are sorted by the **Date of the registration** value, in descending order. The **Facture** and **Revision number** fields on the left side of the grid show information about the current document. The **Facture** and **Revision number** fields on the right side of the grid show information about the original document.
 

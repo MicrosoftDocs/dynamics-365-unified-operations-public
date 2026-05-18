@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -36,27 +36,27 @@ To manually create deferrals, follow these steps:
     - **Standard** – Process the incoming VAT for factures that are related to deferrals by using the standard VAT deduction method.
     - **Proportionate** – Process the incoming VAT for factures that are related to deferrals by using the proportional VAT deduction method.
 
-    ![Deferrals page.](../media/rus-create-generate-deferrals-01.png)
+    :::image type="content" source="../media/rus-create-generate-deferrals-01.png" alt-text="Screenshot of the Deferrals page.":::
 
 1. On the Action Pane, on the **Deferrals** tab, in the **Books** group, select **Deferrals models** to open the **Deferrals models** page.
 1. Define the deferrals model that must be applied for the deferral.
 
-    ![Deferrals models page.](../media/rus-create-generate-deferrals-02.png)
+    :::image type="content" source="../media/rus-create-generate-deferrals-02.png" alt-text="Screenshot of the Deferrals models page.":::
 
 1. On the Action Pane, select **Transactions** to open the **Deferrals transactions** page.
 1. Review the transactions that are related to the selected model for the deferral, and then close the page.
 
-    ![Deferrals transactions page.](../media/rus-create-generate-deferrals-03.png)
+    :::image type="content" source="../media/rus-create-generate-deferrals-03.png" alt-text="Screenshot of the Deferrals transactions page.":::
 
 1. On the **Deferrals models** page, on the Action Pane, select **Balance** to open the **Deferral balances** page.
 1. Review the balances that are related to the selected model for the deferral, and then close the page.
 
-    ![Deferral balances page.](../media/rus-create-generate-deferrals-04.png)
+    :::image type="content" source="../media/rus-create-generate-deferrals-04.png" alt-text="Screenshot of the Deferral balances page.":::
 
 1. On the **Deferrals models** page, on the Action Pane, select **Writing off sum** to open **Deferrals writing off profile** page.
 1. On the Action Pane, select **Calculate** to review calculated writing-off amounts that are related to the selected model for the deferral.
 
-    ![Deferrals writing off profile page.](../media/rus-create-generate-deferrals-05.png)
+    :::image type="content" source="../media/rus-create-generate-deferrals-05.png" alt-text="Screenshot of the Deferrals writing off profile page.":::
 
 ## Generate deferrals by using a periodic task
 
@@ -106,7 +106,7 @@ When you generate deferrals for vendor invoices by using the periodic task, defe
 
 To view manually and automatically created deferrals, in Dynamics 365 Finance, go to **General ledger** \> **Deferrals** \> **Deferrals**.
 
-![Deferrals page, list of deferrals.](../media/6_Deferrals.png)
+:::image type="content" source="../media/6_Deferrals.png" alt-text="Screenshot of the Deferrals page, list of deferrals.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

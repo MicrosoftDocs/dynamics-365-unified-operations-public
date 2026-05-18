@@ -3,7 +3,7 @@ title: ENDSWITH ER function
 description: Learn about how the ENDSWITH Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
 ms.author: filatovm
-ms.date: 02/11/2021
+ms.date: 04/08/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: IT Pro

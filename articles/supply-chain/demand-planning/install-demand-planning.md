@@ -4,7 +4,7 @@ description: Learn how to install, enable, and set up Demand planning in Microso
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 02/24/2024
+ms.date: 4/21/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -29,7 +29,7 @@ To use Demand planning in a production environment, each relevant user must have
 > [!IMPORTANT]
 > **Demand planning no longer supports Supply Chain Management *Cloud hosted* environments.**
 >
-> As of February 28, 2024, Demand planning no longer supports Supply Chain Management environments of the *Cloud hosted* type. After that date, you can no longer import, export, or sync data between Demand planning and Supply Chain Management environments of this type.
+> As of February 28, 2024, Demand planning no longer supports Supply Chain Management environments of the *Cloud hosted* type. After that date, you can't import, export, or sync data between Demand planning and Supply Chain Management environments of this type.
 >
 > If you're running a Supply Chain Management *Cloud hosted* environment and want to continue to use Demand planning, you must either switch to a Supply Chain Management environment of the *Tier-2* type or higher, or set up a [unified development environment](/power-platform/developer/unified-experience/finance-operations-dev-overview). You must then create new import and export profiles in Demand planning and configure them to connect to your new Supply Chain Management environment.
 
@@ -64,7 +64,7 @@ Follow these steps to enable and configure Demand planning in Supply Chain Manag
     - **Quantity of numbers** – Set the value to *500*.
 
 1. On the Action Pane, select **Save**.
-1. You must now refresh the data entity list in Supply Chain Management to ensure that data imports and exports between Supply Chain Management and Demand planning will work correctly. Follow these steps:
+1. You must now refresh the data entity list in Supply Chain Management to ensure that data imports and exports between Supply Chain Management and Demand planning work correctly. Follow these steps:
     1. Go to **System administration \> Workspaces \> Data management**.
     1. Select the **Framework parameters** tile.
     1. Open the **Entity settings** tab.

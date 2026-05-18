@@ -4,7 +4,7 @@ description: Learn about how you can use the SysMailer framework to send email, 
 author: ChrisGarty
 ms.author: cgarty
 ms.topic: how-to
-ms.date: 05/23/2018
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -18,9 +18,9 @@ ms.dyn365.ops.version: Platform update 4
 
 ## Sending emails
 
-The SysMailer framework is a new, extensible way to send email. It replaces all previous application programming interfaces (APIs) for mail, such as CDO.Messaging (SysMailer), MAPI (SysINetMail), and Outlook COM (SmmOutlookEmail). Those older mail APIs won't work correctly in finance and operations applications. By taking advantage of the SysPlugin framework and several .NET technologies, SysMailer provides a configurable experience for users and enables the application consumers to remain agnostic to the email option that users use to send email.
+The SysMailer framework is a new, extensible way to send email. It replaces all previous application programming interfaces (APIs) for mail, such as CDO.Messaging (SysMailer), MAPI (SysINetMail), and Outlook COM (SmmOutlookEmail). Those older mail APIs don't work correctly in finance and operations applications. By taking advantage of the SysPlugin framework and several .NET technologies, SysMailer provides a configurable experience for users and enables the application consumers to remain agnostic to the email option that users use to send email.
 
-The SysMailer framework consists of a factory class that is used to retrieve an email provider, a set of email providers that send messages, a message builder that builds the messages, and the forms that are related to configuring and interacting with the email providers. To consume the SysMailer framework, an application developer primarily uses the **SysMailerFactory** and **SysMailerMessageBuilder** classes. The email provider factory is used to retrieve interactive or non-interactive email providers, so that multiple messages can be sent at the same time, or so that a message can be sent directly. The email providers expect the messages that they send to be encapsulated in .NET **System.Net.Mail.MailMessage** objects. The message builder class is used to build the .NET object that is passed to the email provider.
+The SysMailer framework consists of a factory class that you use to retrieve an email provider, a set of email providers that send messages, a message builder that builds the messages, and the forms that are related to configuring and interacting with the email providers. To consume the SysMailer framework, an application developer primarily uses the **SysMailerFactory** and **SysMailerMessageBuilder** classes. The email provider factory is used to retrieve interactive or non-interactive email providers, so that you can send multiple messages at the same time, or so that you can send a message directly. The email providers expect the messages that they send to be encapsulated in .NET **System.Net.Mail.MailMessage** objects. Use the message builder class to build the .NET object that you pass to the email provider.
 
 ### Scenarios
 
@@ -106,20 +106,20 @@ for (i = 1; i <= conLen(_notifyCon); i++)
 
 ### Important considerations
 
-- A sender address ("from" address) is required when messages are sent to an email provider. A receiver address ("to" address) is required when messages are sent non-interactively. If these conditions aren't met, the framework throws an exception. If **getMessage** is called on the message builder before any call to **setFrom** is made, the builder tries to set the sender address to the current user's email address or network alias.
-- When messages are sent, the way that the sender address ("from" address) is used depends on the provider:
+- When you send messages to an email provider, you need a sender address ("from" address). When you send messages non-interactively, you need a receiver address ("to" address). If you don't meet these conditions, the framework throws an exception. If you call **getMessage** on the message builder before you call **setFrom**, the builder tries to set the sender address to the current user's email address or network alias.
+- When you send messages, how the sender address ("from" address) is used depends on the provider:
 
     - **EML provider:** The sender address is removed from the message before the message is opened in the user's email client. Therefore, the email client can set the sender address to the default account that is configured for sending mail.
-    - **SMTP provider:** The Simple Mail Transfer Protocol (SMTP) server must be configured to allow messages to be sent by using the sender address. In other words, the SMTP server must allow the impersonation of emails that are sent from it. Otherwise, the SMTP server might prevent the messages from being sent, flag them as spam, and so on.
+    - **SMTP provider:** You must configure the Simple Mail Transfer Protocol (SMTP) server to allow messages to be sent by using the sender address. In other words, the SMTP server must allow the impersonation of emails that are sent from it. Otherwise, the SMTP server might prevent the messages from being sent, flag them as spam, and so on.
 
-- When messages are sent, the framework returns a Boolean value that indicates whether the operation to send the message was successful. However, it doesn't report any messages to the Action Center when the operation is successful. You decide whether messages are shown in the Action Center.
-- By default, the body of all messages that are sent is in rich-text (HTML) format. If an application scenario requires that plain text be used to maintain newline spacing, you can pass **false** to the optional **\_isHtml** parameter of the **setBody** method on the message builder.
+- When you send messages, the framework returns a Boolean value that indicates whether the operation to send the message was successful. However, it doesn't report any messages to the Action Center when the operation is successful. You decide whether messages are shown in the Action Center.
+- By default, the body of all messages that you send is in rich-text (HTML) format. If an application scenario requires that plain text be used to maintain newline spacing, you can pass **false** to the optional **\_isHtml** parameter of the **setBody** method on the message builder.
 
 ## Adding a new email provider
 
-You can add email providers by using the pluggable framework. When you use the factory class and interfaces, new email providers immediately become available for use across all relevant application scenarios. Examples of email providers can be found in the existing provider implementations, SysMailerEML and SysMailerSMTP, and also in an existing tutorial implementation, Tutorial\_SysMailerMailTo. The examples that follow are excerpts from the implementation of the SysMailerEML email provider.
+You can add email providers by using the pluggable framework. When you use the factory class and interfaces, new email providers immediately become available for use across all relevant application scenarios. You can find examples of email providers in the existing provider implementations, SysMailerEML and SysMailerSMTP, and also in an existing tutorial implementation, Tutorial\_SysMailerMailTo. The following examples are excerpts from the implementation of the SysMailerEML email provider.
 
-To implement an email provider, you must create an implementation class that has the following properties:
+To implement an email provider, create an implementation class that has the following properties:
 
 - The class must have the appropriate **Export** attributes.
 - The class must implement the base **SysIMailer** methods, **getId** and **getDescription**.
@@ -127,7 +127,7 @@ To implement an email provider, you must create an implementation class that has
 
 ### Specify attributes for the implementation class
 
-The first step is to specify attributes for the implementation class. The class must have two attributes:
+First, specify attributes for the implementation class. The class must have two attributes:
 
 - **ExportAttribute** – The framework uses this attribute to discover the plug-in. The attribute specifies that the plug-in is an implementation of **SysIMailer** and therefore part of the SysMailer framework.
 - **ExportMetadataAttribute** – The framework uses this attribute to find specific instances of a plug-in that have specific metadata. The attribute specifies the ID of the email provider, so that a single provider can be discovered quickly. **No two email providers should ever have the same ID.**
@@ -153,8 +153,8 @@ public class SysMailerEML implements SysIMailerInteractive
 
 The **SysIMailer** interface includes identifiable information about an email provider, regardless of the capabilities of the email provider itself. To implement this interface, you must create two methods:
 
-- **getId** – This method returns the same ID that is specified in the **ExportMetadataAttribute** attribute.
-- **getDescription** – This method returns a non-technical description that indicates how the email will be sent.
+- **getId** – This method returns the same ID that you specify in the **ExportMetadataAttribute** attribute.
+- **getDescription** – This method returns a non-technical description that indicates how the email is sent.
 
 ```xpp
 public SysMailerId getId()
@@ -170,7 +170,7 @@ public SysMailerDescription getDescription()
 
 ### Implement a combination of the SysIMailerInteractive and SysIMailerNonInteractive interfaces
 
-The **SysIMailerInteractive** and **SysIMailerNonInteractive** interfaces are very simple. They implement the **sendInteractive** and **sendNonInteractive** methods, respectively. An email provider might implement one or both methods, depending on its capabilities. Each method that is implemented takes a .NET **System.Net.Mail.MailMessage** object that you use to construct and send the email.
+The **SysIMailerInteractive** and **SysIMailerNonInteractive** interfaces are very simple. They implement the **sendInteractive** and **sendNonInteractive** methods, respectively. An email provider might implement one or both methods, depending on its capabilities. Each method that you implement takes a .NET **System.Net.Mail.MailMessage** object that you use to construct and send the email.
 
 ```xpp
 public boolean sendInteractive(System.Net.Mail.MailMessage _message)
@@ -183,7 +183,7 @@ public boolean sendInteractive(System.Net.Mail.MailMessage _message)
 }
 ```
 
-The **System.Net.Mail.MailMessage** object contains a large amount of advanced functionality that is related to MIME messages. You can build a relatively complex message object and pass it to an email provider. If there is specific functionality that an email provider doesn't support, the email provider is expected to handle the functionality actively (by modifying the message), passively (by making an internal call to another email provider), or not at all (by throwing an error).
+The **System.Net.Mail.MailMessage** object contains a large amount of advanced functionality that's related to MIME messages. You can build a relatively complex message object and pass it to an email provider. If there's specific functionality that an email provider doesn't support, the email provider is expected to handle the functionality actively (by modifying the message), passively (by making an internal call to another email provider), or not at all (by throwing an error).
 
 ## Migration from Microsoft Dynamics AX 2012 to finance and operations applications
 

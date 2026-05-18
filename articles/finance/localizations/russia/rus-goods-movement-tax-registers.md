@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2021-08-01
@@ -77,7 +77,7 @@ The *Warehoused items* tax register contains the following information:
 - Items that are returned to the vendor
 - Item write-offs
 
-  ![Example of the Warehoused items tax register](../media/rus-goods-move-1.png)
+  :::image type="content" source="../media/rus-goods-move-1.png" alt-text="Screenshot of the Warehoused items tax register.":::
 
 The tax register lines show the following information:
 
@@ -104,7 +104,7 @@ The tax register lines show the following information:
 
 The **Warehoused items (totals)** tax register shows the total amount of each type of income or expense, based on the receipts in the **Warehoused items** tax register.
 
- ![Example of the Warehouse items  totals  tax register](../media/rus-goods-move-2.png)
+:::image type="content" source="../media/rus-goods-move-2.png" alt-text="Screenshot of the Warehoused items totals tax register.":::
 
 The tax register lines show the following information:
 
@@ -112,14 +112,14 @@ The tax register lines show the following information:
 - **Receipt value**: The total amount of received items.
 - **Issued value**: The total amount of issued items.
 
->[!NOTE]
->The amounts of these expenses in the tax declaration must be manually reduced by the cost in work in progress and finished goods warehouse.
+> [!NOTE]
+> The amounts of these expenses in the tax declaration must be manually reduced by the cost in work in progress and finished goods warehouse.
 
 ## Nonwarehoused items tax register
 
 The *Nonwarehoused items* tax register shows information about the movement of goods, works, services, and rights that are written off at their actual cost, and that don't move through the warehouse. The assumption is that this property isn't connected with the main activity of the company. Instead, its acquisition is a general economic expense and is accepted for tax accounting in the period when the expense was made.
 
-![Example of the Non warehoused items tax register](../media/rus-goods-move-3.png)
+:::image type="content" source="../media/rus-goods-move-3.png" alt-text="Screenshot of the Non warehoused items tax register.":::
 
 The tax register lines show the following information:
 
@@ -138,7 +138,7 @@ The tax register lines show the following information:
 
 The *Goods issued* tax register summarizes information about the income from the disposal of the taxpayer's property, the sale of works, services, and rights, and the formation of the amounts of corresponding income from sales that are included in the tax base.
 
-![Example of the Goods issued tax register](../media/rus-goods-move-4.png)
+:::image type="content" source="../media/rus-goods-move-4.png" alt-text="Screenshot of the Goods issued tax register.":::
 
 The tax register lines show the following information:
 

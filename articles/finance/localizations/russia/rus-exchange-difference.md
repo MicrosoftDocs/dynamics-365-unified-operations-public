@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -47,7 +47,7 @@ To set up general ledger parameters for exchange adjustment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
 1. In the **Foreign currency revaluation** field group, in the **Calculation method** field, select **Period grand total** as the calculation method for exchange differences.
-1. Set the **Advance revaluation cancelation** option to **Yes** to cancel exchange adjustment during advance settlement.
+1. Set the **Advance revaluation cancellation** option to **Yes** to cancel exchange adjustment during advance settlement.
 
 ## Settle partial payments for customers
 

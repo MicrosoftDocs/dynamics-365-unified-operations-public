@@ -4,6 +4,8 @@ description: Learn about the changes to the web roles for Microsoft Power Apps p
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

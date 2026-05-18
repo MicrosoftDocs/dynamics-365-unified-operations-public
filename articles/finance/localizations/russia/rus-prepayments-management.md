@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -20,7 +20,7 @@ This article explains how to manage paying value-added tax (VAT) when prepayment
 
 Sellers are legally required to pay value-added tax (VAT) from the prepayments that they receive from customers (buyers). They must then issue prepayment factures to the customers. Customers can then deduct the VAT, based on the prepayment facture that they receive from a seller.
 
-![A screenshot of a cell phone description automatically generated.](../media/1%20Scheme%20english.jpg)
+:::image type="content" source="../media/1%20Scheme%20english.jpg" alt-text="Screenshot of the prepayments management scheme.":::
 
 ## Process prepayments from customers
 
@@ -67,8 +67,7 @@ To set up a sales tax payable ledger account, follow these steps:
 > [!NOTE]
 > According to the requirements of the Russian legislation, this ledger account should typically be ledger account **68 [Taxes]**, subaccount **VAT**.
 
-For more information about how to create ledger posting groups, see [Set up Ledger posting groups for sales
-tax](../../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md).
+For more information about how to create ledger posting groups, see [Set up Ledger posting groups for sales tax](../../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md).
 
 ### Set up a number sequence for the facture
 
@@ -132,7 +131,7 @@ To register a prepayment from a customer and print the facture, follow these ste
 1. In the lower part of the **Facture journal** page, on the **General** tab, in the **Note** field, enter the list of goods that the prepayment is registered for.
 1. Select **Fill line details**, and then, in the **Journal of invoices for payment** dialog, select the **Mark** checkbox for every invoices for payment for which the names of goods (works and services) should be included in the description of the prepayment facture. For more information, see [Invoices for payment](rus-invoice-payment.md)
 
-   ![Journal of invoices for payment dialog.](../media/2%20Journal%20of%20invoices%20for%20payment.png)
+   :::image type="content" source="../media/2%20Journal%20of%20invoices%20for%20payment.png" alt-text="Screenshot of the Journal of invoices for payment dialog.":::
 
 1. Select **OK**. The names of goods are added to the **Note** field.
 1. Select the line for the facture, and then, on the Action Pane, select **Print**.

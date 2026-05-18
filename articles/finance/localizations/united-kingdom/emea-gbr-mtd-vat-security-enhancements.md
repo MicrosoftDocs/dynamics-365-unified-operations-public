@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/25/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2025-03-25
@@ -18,6 +18,7 @@ ms.search.validFrom: 2025-03-25
 [!INCLUDE[banner](../../includes/preview-banner.md)]
 
 > [!IMPORTANT]
+>
 > - This feature is a production-ready preview feature.
 > - This feature is subject to supplemental terms of use. By enabling this feature, you confirm that you read and understood the preview feature terms and conditions. [View the preview terms.](https://go.microsoft.com/fwlink/?linkid=2105274)
 
@@ -26,6 +27,7 @@ This article explains how to enable the security enhancements in the UK Making T
 To meet security requirements, Microsoft is updating the direct system-to-system integration of Dynamics 365 Finance with the His Majesty's Revenue and Customs (HMRC) web service that's used to submit VAT returns for companies that are registered for VAT in the United Kingdom. These changes involve the adoption of an electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials that are essential for software authorization in the HMRC application programming interfaces (APIs).
 
 > [!NOTE]
+>
 > - The **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature strengthens the security of integrations with external web services (HMRC's APIs). Plan your transition and adopt this feature in a timely manner. However, although encouraged, the **feature is not mandatory**, and organizations can continue using the existing integration approach, with the feature disabled, when interacting with HMRC's APIs until they're ready to enable it. An announcement will be made when the feature is scheduled to become mandatory.
 > - By June 6, 2025, the direct integration with external endpoints that His Majesty's Revenue and Customs (HMRC) provides for the submission of VAT returns from **on-premises deployments** of Finance won't be accessible. Learn more in [Features removed or deprecated in the Finance 10.0.43 release](../../get-started/removed-deprecated-features-finance.md#making-tax-digital--vat-return-submission-in-the-united-kingdom-for-on-premises-deployments).
 > - By June 6, 2025, Microsoft plans to **end support for batch-mode submission** of VAT returns in the Making Tax Digital feature. However, the **report (VAT 100) in Excel and JavaScript Object Notation (JSON) formats can still be generated in batch** mode. Learn more in [Features removed or deprecated in the Finance 10.0.43 release](../../get-started/removed-deprecated-features-finance.md#batch-submission-of-vat-returns-in-the-uk-via-making-tax-digital-for-vat-in-cloud-deployments).
@@ -63,6 +65,7 @@ For more information about how to import ER configurations, see [Import Electron
 
 > [!IMPORTANT]
 > When you turn off the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your environment, and you submit requests to HMRC—such as retrieving VAT obligations or submitting a VAT return—use the following versions of the ER configurations:
+>
 > - MTD VAT model mapping, version 46.**72**, under the Electronic Messages framework model
 > - MTD VAT authorization format (UK), version 46.**15**, under the Electronic Messages framework model
 > - MTD VAT web request headers format (UK), version 46.**47**, under the Electronic Messages framework model
@@ -87,6 +90,7 @@ To enable the **Security enhancements in UK MTD VAT integration (cloud-based dep
 1. Select **Enable now**.
 
 > [!NOTE]
+>
 > - This feature is for companies that use direct integration of their **cloud-based** Finance instance with MTD VAT APIs of HMRC.
 > - When you enable this feature, your UK MTD VAT TEST and UK MTD VAT return electronic messaging processing automatically updates to enhance the security of your Finance integration for direct submission of VAT returns for your UK VAT registration.
 > - The following actions of the **Web service** type changed to the **Executable class** type: Retrieve VAT obligations, Test retrieve VAT obligations, Submit VAT return, Test submit VAT return, Request VAT liabilities, and Request VAT payments.
@@ -161,7 +165,9 @@ To validate the integration with production MTD endpoints of HMRC from your prod
 1. In this step, the authorization is completed, and the VAT obligation request begins. In the **Fraud prevention headers** dialog, select **Submit** to continue.
 1. On the **Messages** FastTab, you should notice that new electronic messages were created as a result of the successful VAT obligation request to HMRC's production endpoint.
 
-**The authorization lasts 100 days**. After the authorization expires, it's automatically reinitiated when a request to an HMRC endpoint is initiated. You don't have to reauthorize from the **Web application** page.
+### The authorization lasts 100 days
+
+After the authorization expires, it's automatically reinitiated when a request to an HMRC endpoint is initiated. You don't have to reauthorize from the **Web application** page.
 
 ## Further details
 

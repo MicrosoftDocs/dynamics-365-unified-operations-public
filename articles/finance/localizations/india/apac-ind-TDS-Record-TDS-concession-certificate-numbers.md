@@ -4,7 +4,7 @@ description: Learn how to record the Tax Deducted at Source (TDS) concession cer
 author: epodkolzina
 ms.author: epodkolzina
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
@@ -22,24 +22,24 @@ ms.custom:
 This article explains how to record the Tax Deducted at Source (TDS) concession certificate numbers that are issued to vendors.
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax concessions**.
-2. In the **Tax type** field, select **TDS** to record concession certificates for the TDS tax type.
-3. On the **Overview** tab, select **Alt+N** to create a line.
+1. In the **Tax type** field, select **TDS** to record concession certificates for the TDS tax type.
+1. On the **Overview** tab, select **Alt+N** to create a line.
 
-    [![Header of the new line.](../media/apac-ind-TDS-34.png)]
+    :::image type="content" source="../media/apac-ind-TDS-34.png" alt-text="Screenshot of the header of the new line.":::
 
-4. In the **Withholding tax code** field, select the TDS tax code that the vendor concession certificates are issued for. The **Withholding tax code name** field shows the name of the TDS tax code.
-5. In the **From date** and **To date** fields, define the period of validity for the concession certificate that uses the TDS tax code to calculate TDS for the vendor on a concessional basis.
-6. In the **Remarks** field, enter any remarks.
-7. In the **Section** field, enter the legal section code that the TDS concession certificate is availed under.
+1. In the **Withholding tax code** field, select the TDS tax code that the vendor concession certificates are issued for. The **Withholding tax code name** field shows the name of the TDS tax code.
+1. In the **From date** and **To date** fields, define the period of validity for the concession certificate that uses the TDS tax code to calculate TDS for the vendor on a concessional basis.
+1. In the **Remarks** field, enter any remarks.
+1. In the **Section** field, enter the legal section code that the TDS concession certificate is availed under.
 
     If the section code is 197, the value "A" appears in both the "Reason for non-deduction/lower deduction" column in Form 26Q and the "Reason for non-deduction/lower deduction/grossing up (if any)" column in Form 27Q. If the section code is 197A, the value "B" appears in both those places.
 
-8. Select the **Certificate** FastTab to record TDS concession certificate numbers for vendors.
-9. In the **Vendor account** field, select the vendor account that the TDS concession certificate is issued for.
-10. In the **From date** and **To date** fields, define the period of validity for the TDS concession certificate.
+1. Select the **Certificate** FastTab to record TDS concession certificate numbers for vendors.
+1. In the **Vendor account** field, select the vendor account that the TDS concession certificate is issued for.
+1. In the **From date** and **To date** fields, define the period of validity for the TDS concession certificate.
 
     The calculation of TDS on a concessional basis is based on the period when the certificate is created for the vendor.
 
-11. In the **Certificate** field, enter the TDS concession certificate number.
+1. In the **Certificate** field, enter the TDS concession certificate number.
 
-12. Close the page.
+1. Close the page.

@@ -4,6 +4,8 @@ description: Learn about the service endpoints that are available, including a t
 author: pnghub
 ms.author: johnmichalak
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer

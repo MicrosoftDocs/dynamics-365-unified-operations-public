@@ -3,7 +3,7 @@ title: TODAY ER function
 description: Learn about how the TODAY Electronic reporting (ER) function is used, including syntax strings, return values, and examples.
 author: kfend
 ms.author: filatovm
-ms.date: 12/05/2019
+ms.date: 04/08/2026
 ms.topic: article
 ms.reviewer: johnmichalak
 audience: IT Pro

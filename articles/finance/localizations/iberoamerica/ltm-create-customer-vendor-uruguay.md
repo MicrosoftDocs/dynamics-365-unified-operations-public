@@ -4,7 +4,7 @@ description: Learn how to set up records for customers and vendors in Uruguay, i
 author: Cpicon85
 ms.author: v-cpicon
 ms.topic: how-to
-ms.date: 12/08/2023
+ms.date: 04/13/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -29,18 +29,18 @@ Before you create records for customers and vendors who are located in Uruguay, 
 ## Create a record for a customer in Uruguay
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select **New**.
-2. In the **Type** field, select **Organization**.
-3. In the **Customer group** field, select a local group.
-4. In the **Address** section, select **New**, and provide a name for the address.
-5. In the **Country/region** field, select **Uruguay**.
-6. Enter the street and street number.
-7. Select a state, county, and city, and mark the address as primary.
-8. In the **Contact information** section, select **New** to create a record for the company phone number.
-9. In the **Sales demographic** section, set the currency to **UYU** (Uruguayan peso).
-10. Configure the terms of payments and the invoice account.
-11. Set the delivery terms, mode of delivery, and delivery reason.
-12. Select a sales tax group that contains all the tax codes that can have transactions with this customer.
-13. In the **LATAM** section, enter the following information:
+1. In the **Type** field, select **Organization**.
+1. In the **Customer group** field, select a local group.
+1. In the **Address** section, select **New**, and provide a name for the address.
+1. In the **Country/region** field, select **Uruguay**.
+1. Enter the street and street number.
+1. Select a state, county, and city, and mark the address as primary.
+1. In the **Contact information** section, select **New** to create a record for the company phone number.
+1. In the **Sales demographic** section, set the currency to **UYU** (Uruguayan peso).
+1. Configure the terms of payments and the invoice account.
+1. Set the delivery terms, mode of delivery, and delivery reason.
+1. Select a sales tax group that contains all the tax codes that can have transactions with this customer.
+1. In the **LATAM** section, enter the following information:
 
     - In the **Customer set** field, select a set that contains the document classes to use with the customer.
     - In the **Taxpayer type** field, select a taxpayer that represents an organization. For example, select **persona juridica**.
@@ -51,18 +51,18 @@ Before you create records for customers and vendors who are located in Uruguay, 
 ## Create a record for a vendor in Uruguay
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select **New**.
-2. In the **Type** field, select **Organization**.
-3. In the **Vendor group** field, select a local group.
-4. In the **Address** section, select **New**, and provide a name for the address.
-5. In the **Country/region** field, select **Uruguay**.
-6. Enter the street and street number.
-7. Select a state, county, and city, and mark the address as primary.
-8. In the **Contact information** section, select **New** to create a record for the company phone number.
-9. In the **Sales demographic** section, set the currency to **UYU**.
-10. Configure the terms of payments and the invoice account.
-11. Set the delivery terms, mode of delivery, and delivery reason.
-12. Select a sales tax group that contains all the tax codes that can have transactions with this vendor.
-13. In the **LATAM** section, enter the following information:
+1. In the **Type** field, select **Organization**.
+1. In the **Vendor group** field, select a local group.
+1. In the **Address** section, select **New**, and provide a name for the address.
+1. In the **Country/region** field, select **Uruguay**.
+1. Enter the street and street number.
+1. Select a state, county, and city, and mark the address as primary.
+1. In the **Contact information** section, select **New** to create a record for the company phone number.
+1. In the **Sales demographic** section, set the currency to **UYU**.
+1. Configure the terms of payments and the invoice account.
+1. Set the delivery terms, mode of delivery, and delivery reason.
+1. Select a sales tax group that contains all the tax codes that can have transactions with this vendor.
+1. In the **LATAM** section, enter the following information:
 
     - In the **Vendor set** field, select a set that contains the document classes to use with the vendor.
     - In the **Taxpayer type** field, select a taxpayer that represents the organization. For example, select **persona juridica**.

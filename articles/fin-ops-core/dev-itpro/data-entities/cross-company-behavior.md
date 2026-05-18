@@ -4,6 +4,8 @@ description: Learn about how data entities interact with the cross-company conce
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 02/26/2026
 ms.reviewer: twheeloc
 audience: Developer

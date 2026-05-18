@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about subscriptions an
 author: skaue-ms
 ms.author: toskaue
 ms.topic: overview
-ms.date: 08/11/2020
+ms.date: 03/26/2026
 ms.reviewer: joihnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0
 [!include [banner](../../../finance/includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
 
-When customers subscribe through a Microsoft Volume Licensing agreement or a Microsoft Cloud Solution Provider (CSP) agreement, they usually have one Microsoft Microsoft Entra tenant, one Microsoft Dynamics Lifecycle Services Implementation project and any number of sandbox environments that are deployed to one data center of the customer's choice, and one production environment. For more information about these core concepts, see [finance and operations application architecture](../organization-administration/architecture-overview.md). Although this setup works well for most projects, more advanced scenarios are sometimes required, or changes during the implementation lifecycle must be accommodated.
+When customers subscribe through a Microsoft Volume Licensing agreement or a Microsoft Cloud Solution Provider (CSP) agreement, they usually have one Microsoft Microsoft Entra tenant, one Microsoft Dynamics Lifecycle Services Implementation project, and any number of sandbox environments that are deployed to one data center of the customer's choice, and one production environment. For more information about these core concepts, see [finance and operations application architecture](../organization-administration/architecture-overview.md). Although this setup works well for most projects, more advanced scenarios are sometimes required, or changes during the implementation lifecycle must be accommodated.
 
 This article provides answers to frequently asked questions about subscriptions and licenses, Microsoft Entra tenants, and Lifecycle Services Implementation projects.
 
@@ -39,38 +39,40 @@ No. The Lifecycle Services project remains the same.
 
 ## Can I keep the existing Lifecycle Services Implementation project when I move to different Microsoft Entra tenant?
 
-No. A new Lifecycle Services project will be created.
+No. A new Lifecycle Services project is created.
 
 ## How long does it take to move from a CSP agreement to a Volume Licensing agreement?
 
-For a Volume Licensing purchase, it can take a few days for the order to be processed and the subscriptions to be activated. Redeployment of add-on environments has a service level agreement (SLA) of two business days. It takes a few hours to deallocate and delete old add-on environments.
+For a Volume Licensing purchase, it can take a few days for the order to process and the subscriptions to activate. Redeployment of add-on environments has a service level agreement (SLA) of two business days. It takes a few hours to deallocate and delete old add-on environments.
 
 ## What if I forget to delete the existing environments before I suspend the existing subscription?
 
-If you don't deallocate and delete the existing environments before you suspend the subscriptions, the environments will remain in a **Deployed** state. However, if you try to access the full details of these environments, you will receive an error message.
+If you don't deallocate and delete the existing environments before you suspend the subscriptions, the environments stay in a **Deployed** state. However, if you try to access the full details of these environments, you receive an error message.
 
 ## Can I have a CSP agreement and a Volume Licensing agreement in parallel?
 
 Yes. However, you must maintain the minimum required number of licenses under each program.
 
 ## How can I find the Tenant name and Tenant ID within Lifecycle Services?
-1. Go to project home page in Lifecycle Services.
-2. In the **Environments** section, select **Subscriptions available**.
-3. On the **Subscriptions available** page, you will find the **Tenant name** and the **Tenant ID**.
+
+1. Go to the project home page in Lifecycle Services.
+1. In the **Environments** section, select **Subscriptions available**.
+1. On the **Subscriptions available** page, you find the **Tenant name** and the **Tenant ID**.
 
 ## How can I find the subscription status?
+
 1. Go to the project home page in Lifecycle Services.
-2. In the **Environments** section, select **Subscriptions available**.
-3. On the **Subscriptions available** page, you’ll find all **Service plans** available to the tenant.  
-4. The **Assigned date** indicates the date that service plan status was changed. 
+1. In the **Environments** section, select **Subscriptions available**.
+1. On the **Subscriptions available** page, you see all **Service plans** available to the tenant.  
+1. The **Assigned date** indicates the date that service plan status changed.
 
-## How would the subscription status impact the environment?
-Some of the environment's operations may be impacted by the subscription status:
-- **Active** - Your subscription is in an operative state. You should be able to perform all environment operations. 
-- **In Grace Period** - Your subscription has expired, but is within the grace period. You should renew your subscription soon. The subscription status won’t impact your license quantity, ability to deploy a new environment, or to perform environment operations.
-- **Suspended** - Your subscription has expired beyond the grace period. This subscription status may reduce the license quantity, impact your ability to deploy a new environment, or impact your ability to perform environment operations. 
-- **Deleted** - Your subscription has been deleted. This will impact your ability to deploy a new environment or perform environment operations.  
+## How does the subscription status affect the environment?
 
+The subscription status can affect some of the environment operations:
 
+- **Active** - Your subscription is active. You can perform all environment operations.
+- **In Grace Period** - Your subscription expired, but is still within the grace period. Renew your subscription soon. The subscription status doesn't affect your license quantity, ability to deploy a new environment, or ability to perform environment operations.
+- **Suspended** - Your subscription expired and is beyond the grace period. This subscription status might reduce the license quantity, affect your ability to deploy a new environment, or affect your ability to perform environment operations.
+- **Deleted** - Your subscription is deleted. This status affects your ability to deploy a new environment or perform environment operations.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

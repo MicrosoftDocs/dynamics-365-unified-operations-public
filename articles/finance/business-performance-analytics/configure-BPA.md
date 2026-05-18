@@ -1,10 +1,10 @@
 ---
 title: What are the prerequisites to installing Business performance analytics
 description: This article describes how to complete the prerequisites for Business performance analytics, including outlines on availability, and systema and version requirements.
-author: jinniew
-ms.author: jiwo
+author: damienmaspero
+ms.author: damienma
 ms.topic: article
-ms.date: 03/17/2026
+ms.date: 03/31/2026
 
 ms.custom:
 ms.reviewer: twheeloc 
@@ -26,7 +26,7 @@ To preview business performance analytics, you need a tier 2 environment (multib
 
 ### Version requirements
 
-Business performance analytics requires Dynamics 365 Finance version 10.0.38 (application version 10.0.1777.94) or later.
+Business performance analytics requires Dynamics 365 Finance version 10.0.45 (Application version 10.0.2345.96) or later.
 
 ### What are the prerequisites for installing Business performance analytics
 
@@ -113,16 +113,14 @@ Before you install Business performance analytics, set up the following configur
     2. Confirm that **SQL row version change tracking (preview)** is enabled. If it isn't, select the checkbox.
     3. Confirm that the following checkboxes and sub-checkboxes are enabled:
 
-        - **General ledger** – Budget, Reversing entries, Sales tax
+        - **Bank** – Negotiable instrument - Bill of exchange
+        - **Electronic banking**
         - **Fixed assets**
-        - **Bank** – Check, Deposit slip, Negotiable instrument - Bill of exchange
-        - **Trade** – Charges, Invoice matching, Return orders, Delivery date control, Warehouse and Transportation management - Material handling equipment interface
-        - **Trade agreements** – Price/discount
+        - **General ledger** – Budget, Sales tax
+        - **Procurement I** – Purchase requisition
         - **Project**
-        - **Procurement 1** – Purchase requisition
         - **Service management**
-
-3. When you finish, disable maintenance mode.
+        - **Trade** – Charges, Invoice matching, Transfer orders, Warehouse and Transportation management
 
 #### Required configurations in Power Platform Admin Center
 

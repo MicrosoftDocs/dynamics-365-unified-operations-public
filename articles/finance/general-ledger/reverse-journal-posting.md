@@ -4,7 +4,7 @@ description: Learn about capabilities that let you reverse vouchers from the vou
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 02/21/2024
+ms.date: 04/01/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -20,16 +20,16 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 This article describes the capabilities in Microsoft Dynamics 365 Finance for reversing either an entire journal, or one or more vouchers from the voucher transaction list, regardless of their origin.
 
-Before you can use one of the features that are described in this article, it must be turned on. Administrators can use the **Feature management** workspace to check the status of the feature.
+Before you can use one of the features described in this article, turn on the feature. Administrators can use the **Feature management** workspace to check the status of the feature.
 
-The feature is listed in the following way:
+The feature appears in the following way:
 
 - **Module:** General ledger
 - **Feature name:** Mass reversals for multiple documents
 
-We recommend that you turn on the **Automatic split of large financial journals** feature from Feature management. This feature offers performance improvements during journal posting and journal reversal. For more information, see [Automatic split of large financial journals](auto-split-journal.md).
+Turn on the **Automatic split of large financial journals** feature from Feature management. This feature offers performance improvements during journal posting and journal reversal. For more information, see [Automatic split of large financial journals](auto-split-journal.md).
 
-The feature is listed in the following way:
+The feature appears in the following way:
 
 - **Module:** General ledger
 - **Feature name:** Automatic split of large financial journals
@@ -43,7 +43,7 @@ To reverse a journal:
 1. Filter on the posted journals and open the **Lines** view on the journal.
 1. Select the **Reverse entire journal** menu at the top of the page.
 
-    The total number of vouchers and voucher lines is shown, together with the total amount of the lines that are being reversed.
+    The total number of vouchers and voucher lines is shown, together with the total amount of the lines that you're reversing.
 
 1. Select **Yes** to use the existing transaction dates or **No** to enter a new one. In some cases, the period of the original transaction might be closed, and you must enter a new transaction date for the reversal.
 1. If you selected **No**, enter a transaction date for the reversal.
@@ -58,15 +58,15 @@ If the voucher contains 100 lines or fewer, the reversal process runs immediatel
 
 ## Reversing vouchers from the voucher transaction list
 
-You can also reverse vouchers from the voucher transaction list across all subledgers. In addition, you can reverse more than one voucher at a time.
+You can reverse vouchers from the voucher transaction list across all subledgers. You can also reverse more than one voucher at a time.
 
 To reverse one or more vouchers:
 
 1. Select the **Reverse entire journal** dropdown menu at the top of the page.
 
-    The total number of vouchers and voucher lines is shown, together with the total amount of the lines that are being reversed.
+    The total number of vouchers and voucher lines is shown, together with the total amount of the lines that you're reversing.
 
-1. Select **Yes** to use the existing transaction dates or **No** to enter a new one. In some cases, the period of the original transaction might be closed, and you must enter a new transaction date to reverse it.
+1. Select **Yes** to use the existing transaction dates or **No** to enter a new one. In some cases, the period of the original transaction is closed, and you must enter a new transaction date to reverse it.
 1. If you selected **No**, enter a transaction date for the reversal.
 1. Enter a comment to describe the reversal transaction.
 1. Select the **Reverse** button.
@@ -79,7 +79,7 @@ If there are 100 or fewer voucher lines, the reversal process runs immediately. 
 
 Transactions can be reversed only if they meet the business rules for reversing them. Vendor payments can't be reversed by using the capability that's described in this article. To reverse them, you must follow the steps in [Reverse a vendor payment](../accounts-payable/reverse-vendor-payment.md).
 
-### Reverse related journals with journals that were automatically split
+### Reverse related journals with journals that are automatically split
 
 When the **Automatic split of large financial journals** feature is enabled, large journals that contain more than 1,000 lines are automatically split into multiple journals. For more information, see [Automatic split of large financial journals](auto-split-journal.md).
 
@@ -94,14 +94,14 @@ The reversal of split journals is a background process. Users can review the res
 
 ### Example
 
-A large journal that contains 1,050 lines is split into two journals that are related to each other. The first journal contains 1,000 lines, and the other related journal contains 50 lines. Users can initiate the reversal from either of the related journals. However, the user experience varies, depending on the journal that the reversal is initiated from.
+A large journal that contains 1,050 lines is split into two journals that are related to each other. The first journal contains 1,000 lines, and the other related journal contains 50 lines. You can initiate the reversal from either of the related journals. However, the user experience varies, depending on the journal that the reversal is initiated from.
 
 - If the reversal is initiated from the journal that contains 1,000 lines, both journals are reversed in a batch process. Notifications appear, and two batch jobs are created for the reversal process.
 - If the reversal is initiated from the journal that contains 50 lines, the first journal (the journal that contains 50 lines) is reversed from the synchronous process. The other journal (the journal that contains 1,000 lines) is reversed by using the batch process.
 
 ### More considerations
 
-- If the batch process fails, and the reversal process isn't completed, users can find more information in the batch job history log.
+- If the batch process fails, and the reversal process isn't completed, you can find more information in the batch job history log.
 - If the reversal of a journal is in progress, and users try to reverse that journal again, they're prevented from doing so and receive the following message: "Reversal is already in progress."
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

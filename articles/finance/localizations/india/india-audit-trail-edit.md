@@ -3,8 +3,8 @@ title: Audit trail and edit logs for accounting software in India
 description: Learn about the new Indian tax requirements of Rule 3 of the Companies (Accounts) Rules.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 04/08/2025
+ms.topic: concept-article
+ms.date: 05/01/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak 
@@ -48,7 +48,8 @@ Learn about data residency practices and data retention policies in [Data retent
 
 Transactions that are posted in Dynamics 365 Finance remain complete and in the format that they were originally generated in. The solution includes no functionality or process for changing the format or content of a posted transaction in an active company.
 
-However, note that customers can delete a company or leave the Dynamics 365 Finance service in accordance with the Microsoft terms. These actions ultimately result in data deletion. If customers choose to delete their company completely or leave the Dynamics 365 Finance service, data is removed from Microsoft's systems in accordance with our data deletion obligations to customers.
+> [!NOTE]
+> Customers can delete a company or leave the Dynamics 365 Finance service in accordance with the Microsoft terms. These actions ultimately result in data deletion. If customers choose to delete their company completely or leave the Dynamics 365 Finance service, data is removed from Microsoft's systems in accordance with our data deletion obligations to customers.
 
 ### Preservation of branch transaction information
 
@@ -74,11 +75,17 @@ If a region-wide outage occurs, Microsoft provides business continuity and disas
 
 In March 2021, the MCA introduced amendments to Rule 3 of Companies (Accounts) Rules. These amendments concern the maintenance of books of accounts in electronic form. The key modifications are as follows.
 
-**I. Accessibility requirement:** Amended Rule 3 (1) emphasizes that books of accounts and other relevant documents that are maintained in electronic mode must remain accessible in India at all times for later reference.
+#### I. Accessibility requirement
 
-**II. Daily backup requirement:** Amended Rule 3 (5) requires that companies maintain a daily backup of their electronic books of accounts and other relevant documents on servers that are physically located in India, even if backups are also maintained outside the country.
+Amended Rule 3 (1) emphasizes that books of accounts and other relevant documents that are maintained in electronic mode must remain accessible in India at all times for later reference.
 
-**III. Annual intimation requirement:** Rule 3 (6) requires that companies inform the Registrar about details such as the service provider's name, IP address, and location annually, when they file financial statements. If books of accounts are maintained in the cloud, the address that the service provider provided must also be disclosed.
+#### II. Daily backup requirement
+
+Amended Rule 3 (5) requires that companies maintain a daily backup of their electronic books of accounts and other relevant documents on servers that are physically located in India, even if backups are also maintained outside the country.
+
+#### III. Annual intimation requirement
+
+Rule 3 (6) requires that companies inform the Registrar about details such as the service provider's name, IP address, and location annually, when they file financial statements. If books of accounts are maintained in the cloud, the address that the service provider provided must also be disclosed.
 
 #### Supported scope
 

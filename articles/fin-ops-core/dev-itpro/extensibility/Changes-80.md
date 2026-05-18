@@ -4,7 +4,7 @@ description: Access a list of extensibility features that were implemented in Dy
 author: FrankDahl
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/20/2026
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -50,12 +50,13 @@ The following table lists the models that are hard-sealed in this release.
 ## Extensible enumerations
 
 The following changes support extending enumerations:
-- Many enumerations in the standard application are now extensible. Make an enumeration extensible by setting two properties on the enumeration. Set the **IsExtensible** property to **Yes**, and set the **UseEnumValue** property to **No**. 
+
+- Many enumerations in the standard application are now extensible. Make an enumeration extensible by setting two properties on the enumeration. Set the **IsExtensible** property to **Yes**, and set the **UseEnumValue** property to **No**.
 - Some enumerations represent state. Add new façade methods to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add values to enums through extension](add-enum-value.md).
 - Change some application code that uses enumerations to support extensibility. Common changes include:
-    + Remove **throw** exception statements in the default case of a switch to allow post-event subscription.
-    + Add **SysExtension** support for extension.
-    + Add explicit delegates.
+  - Remove **throw** exception statements in the default case of a switch to allow post-event subscription.
+  - Add **SysExtension** support for extension.
+  - Add explicit delegates.
 
 | Enumeration|
 | --------------- |
@@ -468,7 +469,6 @@ The developers refactored these methods to support extensibility through chain o
 |Table smmLeadTable|
 |Table smmOpportunityTable|
 
-
 ## Maps enabled for extensibility
 
 The new patterns for implementing maps enable you to add fields and methods through extensions. For more information, see the documentation on using maps as interfaces and on versioning implementations.
@@ -484,7 +484,7 @@ The following table lists the maps and related tables where you can apply change
 
 ## Inventory dimensions
 
-This release includes minor improvements to the new model for adding inventory dimensions. These improvements support more scenarios through extensions. 
+This release includes minor improvements to the new model for adding inventory dimensions. These improvements support more scenarios through extensions.
 
 | Change |
 | -------------|
@@ -564,6 +564,5 @@ The following table lists additional changes that Microsoft made for extensibili
 |Modify index: table InventTestAssociationTable|
 |Entity UnitOfMeasureEntity switched to public|
 |Entity UnitOfMeasureTranslationEntity switched to public|
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

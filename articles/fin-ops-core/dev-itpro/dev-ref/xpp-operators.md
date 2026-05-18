@@ -4,7 +4,7 @@ description: Learn about the operators supported in X++, including an overview o
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 05/02/2025
+ms.date: 03/31/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: johnmichalak
@@ -22,7 +22,7 @@ This article describes the operators supported in X++.
 
 ## Assignment operators
 
-An assignment changes the value of a variable or field. The following table shows the X++ assignment operators. There is no difference between prefix and postfix operators.
+An assignment operator changes the value of a variable or field. The following table shows the X++ assignment operators. There's no difference between prefix and postfix operators.
 
 | Operator   | Description                                                                                      |
 |------------|--------------------------------------------------------------------------------------------------|
@@ -84,7 +84,8 @@ static void Example5()
 ```
 
 ## Arithmetic operators
-You use arithmetic operators to perform numeric calculations. Most of the operators are binary and take two operands. However, the **not** (`~`) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *ArithmeticOperator* *expression2* Syntax for unary operators: *ArithmeticOperator* *expression1*
+
+Use arithmetic operators to perform numeric calculations. Most of the operators are binary and take two operands. However, the **not** (`~`) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *ArithmeticOperator* *expression2* Syntax for unary operators: *ArithmeticOperator* *expression1*
 
 | Operator   | Description      |
 |------------|------------------|
@@ -121,19 +122,20 @@ int m = (400 > 4) ? 1 : 5;  // If 400>4, 1 is returned. Otherwise, 5 is returned
 ```
 
 ## Expression operators
-The `as` and `is` expression operators control downcast assignments. Downcast assignments involve class or table inheritance. Assignment statements that implicitly downcast can cause errors that are difficult to predict and diagnose. You can use the `as` keyword to make your downcasts explicit. You can use the `is` keyword to test whether a downcast is valid at run time.
+
+The `as` and `is` expression operators control downcast assignments. Downcast assignments involve class or table inheritance. Assignment statements that implicitly downcast can cause errors that are difficult to predict and diagnose. Use the `as` keyword to make your downcasts explicit. Use the `is` keyword to test whether a downcast is valid at run time.
 
 ### The as keyword
 
-Use the `as` keyword for assignments that downcast from a base class variable to a derived class variable. The `as` keyword tells other programmers and the compiler that you believe that the downcast will be valid during run time.
+Use the `as` keyword for assignments that downcast from a base class variable to a derived class variable. The `as` keyword tells other programmers and the compiler that you believe that the downcast is valid during run time.
 
--   The compiler reports an error for downcast assignment statements that lack the `as` keyword.
--   At run time, the `as` keyword causes the downcast assignment statement to assign `null` if the downcast isn't valid.
--   This `is` keyword is often used to safely test whether the `as` keyword will work.
+- The compiler reports an error for downcast assignment statements that lack the `as` keyword.
+- At run time, the `as` keyword causes the downcast assignment statement to assign `null` if the downcast isn't valid.
+- Use the `is` keyword to safely test whether the `as` keyword works.
 
 #### Code example for the as keyword
 
-In the following code example, the **DerivedClass** class extends the **BaseClass** class. The code example contains two valid assignments between its **basec** and **derivedc** variables. The upcast assignment to **basec** doesn't require the `as` keyword, but the downcast assignment to **derivedc** does require the `as` keyword. The following code will compile and run without errors.
+In the following code example, the **DerivedClass** class extends the **BaseClass** class. The code example contains two valid assignments between its **basec** and **derivedc** variables. The upcast assignment to **basec** doesn't require the `as` keyword, but the downcast assignment to **derivedc** does require the `as` keyword. The following code compiles and runs without errors.
 
 ```xpp
 static void AsKeywordExample()
@@ -201,7 +203,7 @@ info(strFmt("%1", (myTreeNode is Form)));
 
 #### Code example for the is and as keywords
 
-The following code example contains a typical use of the `is` keyword. The `as` keyword is used after the `is` keyword verifies that the `as` keyword will succeed. In this example, the `is` and `as` keywords are uppercase to make them more visible.
+The following code example contains a typical use of the `is` keyword. The `as` keyword is used after the `is` keyword verifies that the `as` keyword succeeds. In this example, the `is` and `as` keywords are uppercase to make them more visible.
 
 ```xpp
 static void IsKeywordExample() 
@@ -251,6 +253,7 @@ All tables inherit directly from the Common system table, unless they explicitly
 Each extended data type has an **Extends** property. The style of inheritance that this property controls differs from the style of inheritance that the `is` and `as` keywords are designed for.
 
 ## Relational operators
+
 The following table lists the relational operators that can be used in X++. Most of the operators are binary and take two operands. However, the **not** (`!`) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *relationalOperator* *expression2* Syntax for unary operators: *relationalOperator* *expression1*
 
 | Operator | Description     |
@@ -295,21 +298,20 @@ today() >= 1\1\1980  // Returns true, because today is later than January 1, 198
 ```
 
 ## Operator precedence
-The order that a compound expression is evaluated in can be important. For example, `(x + y / 100)` gives a different result, depending on whether the addition or the division is done first. You can use parentheses (`()`) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify `(x + y) / 100`. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression `x + y / 100`, the compiler evaluates `y / 100` first. In other words, `x + y / 100` is equivalent to `x + (y / 100)`. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.
 
+The order that a compound expression is evaluated in can be important. For example, `(x + y / 100)` gives a different result, depending on whether the addition or the division is done first. You can use parentheses (`()`) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify `(x + y) / 100`. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression `x + y / 100`, the compiler evaluates `y / 100` first. In other words, `x + y / 100` is equivalent to `x + (y / 100)`. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.
 
 | Operator groups, in order of precedence                          |                 Operators    |
 |------------------------------------------------------------------|------------------------------|
 | Unary                                                            | `- ~ !`                      |
-| Multiplicative, shift, bitwise **AND**, bitwise exclusive **OR** | `* / % DIV << >> & ^ `       |
+| Multiplicative, shift, bitwise **AND**, bitwise exclusive **OR** | `* / % DIV << >> & ^`       |
 | Additive, bitwise inclusive **OR**                               | `+ - |`                     |
 | Relational, equality                                             | `< <= == != > >= like as is` |
 | Logical (**AND**, **OR**)                                        | `&&` `||`                    |
 | Conditional                                                      | `? :`                        |
 
-Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, `&&` (logical `AND`) and `||` (logical `OR`) have the same precedence, and are evaluated from left to right. Therefore: 
-+ `0 && 0 || 1` is equal to `1`
-+ `1 || 0 && 0` is equal to `0`.
-
+Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, `&&` (logical `AND`) and `||` (logical `OR`) have the same precedence, and are evaluated from left to right. Therefore:
+- `0 && 0 || 1` is equal to `1`
+- `1 || 0 && 0` is equal to `0`.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

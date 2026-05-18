@@ -4,7 +4,7 @@ description: Learn about how to modify properties on a table by using an extensi
 author: ivanv-microsoft
 ms.author: ivanv
 ms.topic: article
-ms.date: 08/20/2021
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-To modify properties on a table, you must create an extension of that table. In Application Explorer, right-click the table, and then select **Create extension**. A new table extension is created in the selected project, as shown in the following illustration.
+To modify properties on a table, you must create an extension of that table. In Application Explorer, right-click the table, and then select **Create extension**. The following illustration shows a new table extension created in the selected project.
 
-![Create a table extension.](media/ModifyPropertiesOnTable.jpg) 
+:::image type="content" source="media/ModifyPropertiesOnTable.jpg" alt-text="Screenshot of a new table extension created in the selected project.":::
 
 You can now modify the following properties through the property sheet:
 
@@ -33,8 +33,8 @@ You can now modify the following properties through the property sheet:
 + Title Field1
 + Title Field2
 
-By setting the **Created By**, **Created Date Time**, **Modified By**, or **Modified Date Time** property to **Yes**, you help guarantee that a corresponding field is added to the table. Corresponding tracking information about the user is then stored in the table when records are created or updated. You can't set these properties to **No** if they are set to **Yes** on the base table.
+When you set the **Created By**, **Created Date Time**, **Modified By**, or **Modified Date Time** property to **Yes**, you add a corresponding field to the table. The table stores tracking information about the user when it creates or updates records. You can't set these properties to **No** if they're set to **Yes** on the base table.
 
-By adding country or region codes to the list, you help guarantee that the corresponding table is also applicable when the system runs in the context of the specified country or region.
+When you add country or region codes to the list, you make sure that the corresponding table is also applicable when the system runs in the context of the specified country or region.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

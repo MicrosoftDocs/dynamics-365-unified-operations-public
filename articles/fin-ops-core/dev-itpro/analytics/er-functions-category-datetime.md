@@ -4,7 +4,7 @@ description: Learn about the date and time functions that are supported in Elect
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 09/09/2021
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
