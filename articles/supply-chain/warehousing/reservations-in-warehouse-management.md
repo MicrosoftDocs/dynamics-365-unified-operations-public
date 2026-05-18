@@ -240,7 +240,3 @@ Follow these steps to set the policy.
 1. Save your changes.
 
 For information about how to set up batch disposition codes and assign them to batches, see [Use batch disposition codes to mark batches as available or unavailable](../inventory/batch-disposition-codes.md).
-
-### Feature management
-
-The behavior that is controlled by the **Batch reservation policy for non advanced warehouses** field is gated by a feature that is enabled by default. If the feature is turned off, the field has no effect, and the system behaves as if the *Simple* option is selected.
