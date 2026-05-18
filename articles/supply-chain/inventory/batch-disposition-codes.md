@@ -6,7 +6,7 @@ ms.author: banluo
 ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form: PdsDispositionMaster, InventBatch
-ms.date: 07/31/2025
+ms.date: 05/18/2026
 ms.custom:
   - bap-template
 ---
@@ -16,6 +16,9 @@ ms.custom:
 This article describes how to set up and use *batch disposition codes*. Each batch disposition code has a status of either *Available* or *Unavailable*. You assign batch disposition codes to inventory batches to indicate whether each batch is available for master planning, reservation, picking, and/or shipping.
 
 To use batch disposition codes, you must set up the codes and assign them to the batches that you want to manage.
+
+> [!NOTE]
+> For items that are enabled for warehouse management processes (WMS) and that use a reservation hierarchy where the Batch number dimension is *below* the Location dimension, batch disposition codes are enforced during reservation only when the line's warehouse is enabled for advanced warehouse management processes, or when the **Batch reservation policy for non advanced warehouses** parameter is set to *Advanced*. Learn more in [Batch reservation policy for non-advanced warehouses](../warehousing/reservations-in-warehouse-management.md#batch-reservation-policy-for-non-advanced-warehouses).
 
 ## Set up batch disposition codes
 

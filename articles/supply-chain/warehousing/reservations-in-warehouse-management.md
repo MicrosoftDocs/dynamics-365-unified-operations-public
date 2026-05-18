@@ -4,9 +4,9 @@ description: Learn about the functionality for reservations in Warehouse managem
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
-ms.search.form: WHSReservationHierarchy
+ms.search.form: WHSReservationHierarchy, WHSParameters, PdsDispositionMaster
 ms.topic: how-to
-ms.date: 04/08/2025
+ms.date: 05/18/2026
 ms.custom:
   - bap-template
 ---
@@ -202,3 +202,45 @@ The logic that determines how dimensions are synchronized is implemented in the 
 > When products use an inventory reservation hierarchy of the *Batch-below\[location\]* type and are batch tracked for WMS, you should set a *flexible warehouse-level dimension reservation policy*. In this way, you ensure that reservations can be done for those products.
 >
 > Learn more about the flexible warehouse-level dimension reservation policy in [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md).
+
+## Batch reservation policy for non-advanced warehouses
+
+A WMS-enabled item can be stocked in a warehouse that isn't enabled for advanced warehouse management processes. When the item uses a reservation hierarchy where the Batch number dimension is *below* the Location dimension, the system can't use the warehouse work engine to enforce batch-related rules during reservation. By default, this means that the reservation logic doesn't evaluate first expiry, first out (FEFO) rules or batch disposition codes for those items in those warehouses. As a result, the system might reserve a quantity from a batch that is marked as unavailable through its batch disposition code.
+
+To control this behavior, use the **Batch reservation policy for non advanced warehouses** field on the **Warehouse management parameters** page. The field has the following options:
+
+- **Simple** (default) – The existing reservation behavior is preserved. Batch disposition code logic is applied only when the batch is explicitly specified on the order line. FEFO rules are not applied by the reservation engine for non-WMS-enabled warehouses.
+- **Advanced** – Both FEFO rules and batch disposition codes are applied during reservation and during on-hand calculations, even when no batch is specified on the order line. Batches that are assigned a disposition code with the **Batch disposition status** field set to *Unavailable* (with the **Reserve** block status applied for the order type) are excluded from automatic reservation. The user receives the standard "Cannot reserve" feedback when no other on-hand quantity is available.
+
+The policy applies in the following situations:
+
+- Sales orders, including automatic reservation, manual reservation from the **Reservation** page, and release to warehouse.
+- Items that use a reservation hierarchy where the Batch number dimension is below the Location dimension.
+- Lines on warehouses where the **Use warehouse management processes** option is *No*.
+
+The policy does *not* apply in the following situations:
+
+- Retail sales orders.
+- Items that use a reservation hierarchy where the Batch number dimension is above the Location dimension. For those items, batch disposition codes and FEFO are already applied by the standard reservation strategies, regardless of the **Batch reservation policy for non advanced warehouses** setting.
+- Warehouses that are enabled for advanced warehouse management processes. For those warehouses, batch disposition codes are enforced by the warehouse work engine.
+- Order types other than sales orders, such as transfer orders or production orders.
+
+There is a small performance overhead when you use the **Advanced** policy, because more validations are done during reservation and on-hand calculations. There are also scenarios where the advanced criteria can't be applied when on-hand inventory is presented in the user interface.
+
+### Set the batch reservation policy
+
+Follow these steps to set the policy.
+
+1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
+1. On the **Batches** tab, set the **Batch reservation policy for non advanced warehouses** field to one of the following values:
+
+    - *Simple* – Preserve the previous behavior.
+    - *Advanced* – Apply FEFO rules and batch disposition codes during reservation for the affected scenarios.
+
+1. Save your changes.
+
+For information about how to set up batch disposition codes and assign them to batches, see [Use batch disposition codes to mark batches as available or unavailable](../inventory/batch-disposition-codes.md).
+
+### Feature management
+
+The behavior that is controlled by the **Batch reservation policy for non advanced warehouses** field is gated by a feature that is enabled by default. If the feature is turned off, the field has no effect, and the system behaves as if the *Simple* option is selected.
