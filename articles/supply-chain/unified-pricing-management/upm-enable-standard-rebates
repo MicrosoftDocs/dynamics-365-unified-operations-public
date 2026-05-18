@@ -19,7 +19,7 @@ The Rebate management module is used to create contracts, deals, or agreements b
 
 The feature described in this article enables **non-attribute based rebate management deals** to be included in Unified pricing management scenarios. When enabled, existing rebate agreements are considered during pricing evaluation without requiring changes to their configuration.
 
-This capability allows organizations to continue using existing rebate management deals while adopting Unified pricing.
+This capability allows organizations to continue using existing rebate management deals while adopting Unified pricing. Customers are also empowered to create new non-attribute based rebate deals, facilitating the migration to Unified pricing for those customers who rely on the legacy behavior.
 
 ## Prerequisites
 
