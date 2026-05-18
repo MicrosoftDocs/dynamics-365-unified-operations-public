@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 05/06/2026
+ms.date: 05/18/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -19,6 +19,20 @@ ms.custom:
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management. It lists changes for each version released since the general availability (GA) release of version 4. Notes for older versions are available in [Warehouse Management mobile app release notes archive](warehouse-app-whats-new-archive.md).
 
 Starting with version 4.1.1.0, every V4 and later release is tagged with its publication date. Publication dates determine whether a release is within the rolling 12-month support window that applies to V4 and all later releases. Learn more in [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy).
+
+## Release notes for version 4.1.3.0 (May 18, 2026)
+
+Version 4.1.3.0 is a minor update that includes the following new features and fixes:
+
+### New features
+
+- **Right-to-left (RTL) support** – Improved support for right-to-left languages.
+
+### Bug fixes
+
+- **Label encoding** – Fixed an encoding issue that caused incorrect signs to be displayed on labels.
+- **Quantity selector** – Improved performance of the quantity selector and resolved a concurrency issue.
+- **Calculator** – Fixed an issue where typing in the calculator would reopen the calculator instead of continuing input.
 
 ## Release notes for version 4.1.2.0 (May 6, 2026)
 
