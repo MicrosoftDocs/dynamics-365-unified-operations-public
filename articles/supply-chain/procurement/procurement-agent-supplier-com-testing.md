@@ -1,34 +1,34 @@
 ---
-title: Test the Supplier Communications Agent (production ready preview)
-description: Learn how to test the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management for smooth implementation and optimal performance.
+title: Test supplier communications features (production-ready preview)
+description: Learn how to test the supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management for smooth implementation and optimal performance.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 02/12/2026
+ms.date: 04/24/2026
 ms.custom:
   - bap-template
 ---
 
-# Test the Supplier Communications Agent (production ready preview)
+# Test supplier communications features (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Learn how to test the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management.
+Learn how to test the supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management.
 
-The agent has two independent features:
+The agent has two independent supplier communications features:
 
 - *Follow-up with vendors* (writing reminders)
 - *Updates from vendors* (reading vendor emails).
 
-Test the feature you need first. If you plan to use both features, start with *Follow-up with vendors* because it's easier to set up, configure, and test.
+Test the feature you need first. If you plan to use both supplier communications features, start with *Follow-up with vendors* because it's easier to set up, configure, and test.
 
 ## Test the "Follow-up with vendors" (writing reminders) feature
 
-Use the user interface to [set up the feature](supplier-com-agent-follow-up.md) to fit your needs. Then test to make sure that the emails work as expected.
+Use the user interface to [set up the feature](procurement-agent-supplier-com-follow-up.md) to fit your needs. Then test to make sure that the emails work as expected.
 
 ## Test the "Updates from vendors" (reading emails) feature
 
@@ -99,12 +99,13 @@ Now that you have a few emails available on your system, start working with mess
 
 For this phase, you might want to involve one or more of your purchasers.
 
-### Phase 3: Use real email addresses in production
+#### Phase 3: Use real email addresses in production
 
 Now you're ready for the final test: testing in production. Set up the agent in production using real email addresses. Stop the agent from working in your sandbox.
+
 Testing in production is safe. The feature doesn't interfere with standard business processes. At best, the agent does the work automatically. At worst, if the agent doesn't understand something correctly, the purchaser still needs to do it manually.
 
-The Supplier Communications Agent is a production-ready preview feature. It has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is under continuous development. By designating it as a production-ready preview, Microsoft can continue improving it.
+The supplier communications features of the Procurement Agent are production-ready preview features. They have the quality of generally available (GA) features and you can go live with them. The reason They aren't fully GA is that the Procurement Agent is under continuous development. By designating these features as production-ready previews, Microsoft can continue improving them.
 
 For this test, use the following recommendations:
 
@@ -112,6 +113,6 @@ For this test, use the following recommendations:
 - Start with just one or a few purchasers.
 - Optionally filter messages from a few vendors to start small.
 
-### Phase 4: Expand the number of vendors in production
+#### Phase 4: Expand the number of vendors in production
 
 Keep adding more vendors to the configuration so you can gradually increase the value provided by the agent.

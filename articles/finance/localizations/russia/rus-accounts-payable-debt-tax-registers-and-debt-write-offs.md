@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/08/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ---
@@ -18,6 +18,7 @@ ms.search.region: Russia
 This article explains how to work with accounts payable debt tax registers and debt write-offs for Russia in Microsoft Dynamics 365 Finance.
 
 The following sections provide information about accounts payable bad debts, write-offs for them, and the following tax registers:
+
 - Accounts payable inventory act
 - Accounts payable movement
 
@@ -36,7 +37,7 @@ To set up accounts payable parameters, follow these steps:
 1. On the **Ledger and sales tax** tab, on the **Creditor debts** FastTab, in the **Income code** field, specify the income code to assign to transactions for writing off bad accounts payable debt.
 1. In the **Main account** field, specify an account for non-operating income.
 
-    ![Accounts payable parameters, Ledger and sales tax tab.](../media/1-AP_tax.png)
+    :::image type="content" source="../media/1-AP_tax.png" alt-text="Screenshot of the Accounts payable parameters Ledger and sales tax tab.":::
 
 1. On the **Number sequences** tab, in the **Number sequence code** field, select the number sequence code for the **Ledger voucher for debts amortization** reference.
 
@@ -49,7 +50,7 @@ To set up the debt interval for hopeless debts, follow these steps:
 1. In the **By** field, enter the upper limit of the debt interval, in days. For example, enter **0** if there is no upper limit.
 1. In the **Description** field, enter a detailed description of the debt interval.
 
-    ![Creditor debt intervals.](../media/2-AP_tax.png)
+    :::image type="content" source="../media/2-AP_tax.png" alt-text="Screenshot of the Creditor debt intervals page.":::
 
 ## Tax registers
 
@@ -61,7 +62,7 @@ The **Accounts payable inventory act** tax register is based on the inventory of
 
 The register is required to account for non-operating income and expenses for the reporting (tax) period.
 
-   ![Accounts payable inventory act page.](../media/3-AP_tax.png)
+   :::image type="content" source="../media/3-AP_tax.png" alt-text="Screenshot of the Accounts payable inventory act page.":::
 
 The register lines show the following information:
 
@@ -84,7 +85,7 @@ This register doesn't reflect the amounts of the taxpayer's accounts payable to 
 
 For reporting purposes, records on transactions in foreign currency are also made for each fact about the revaluation of debt.
 
-   ![Accounts payable movement page.](../media/4-AP_tax.png)
+   :::image type="content" source="../media/4-AP_tax.png" alt-text="Screenshot of the Accounts payable movement page.":::
 
 The register lines show the following information:
 
@@ -121,17 +122,17 @@ To recognize and write off hopeless debt, follow these steps:
 
     The page shows the debts that have expired as of the indicated reporting date:
 
-    -   The **Customers** tab shows the list of customer prepayments.
-    -   The **Vendors** tab shows the list of vendor invoices.
+    - The **Customers** tab shows the list of customer prepayments.
+    - The **Vendors** tab shows the list of vendor invoices.
 
 1. To review the original customer or vendor transactions, select **Transactions** on the appropriate tab.
 1. Select the debts to write off. The **Total** field in the **Marked** section shows the total amount of the transactions that have been marked for debiting.
 
-    ![Creditors debt cancellation journal page, Total field.](../media/5-AP_tax.png)
+    :::image type="content" source="../media/5-AP_tax.png" alt-text="Screenshot of the Creditors debt cancellation journal page showing the Total field.":::
 
 1. On the Action Pane, select **Update**. The marked transactions are no longer shown. In the **Written off** section, the amounts are increased to the value that appeared in the **Total** field in the **Marked** section before you selected **Update**. Transactions for customers/vendors are created. Additionally, transactions for writing off each debt are created in the general ledger. The date of the write-off operations corresponds to the date that you selected in the **Calculation date** field.
 
-    ![Creditors debt cancellation journal page, Calculation date field.](../media/6-AP_tax.png)
+    :::image type="content" source="../media/6-AP_tax.png" alt-text="Screenshot of the Creditors debt cancellation journal page showing the Calculation date field.":::
 
 ### Cancel the write-off of hopeless debt
 
@@ -148,12 +149,8 @@ To cancel the write-off of hopeless debts, follow these steps:
 1. To review the original customer or vendor transactions, select **Transactions** on the appropriate tab.
 1. Select the written-off debts to cancel. The **Total** field in the **Marked** section shows the total amount of the transactions that have been marked for debiting.
 
-    ![Trade liabilities amortization cancellation journal page.](../media/7-AP_tax.png)
+    :::image type="content" source="../media/7-AP_tax.png" alt-text="Screenshot of the Trade liabilities amortization cancellation journal page.":::
 
 1. On the Action Pane, select **Update**. The marked transactions are no longer shown. In the **Written off** section, the amounts are decreased to the value that appeared in the **Total** field in the **Marked** section before you selected **Update**. Transactions that cancel the write-off of accounts payable are generated.
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

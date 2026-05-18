@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/25/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-06
@@ -19,10 +19,12 @@ ms.search.validFrom: 2021-08-06
 This article explains how to test the interoperation of Microsoft Dynamics 365 Finance with the Making Tax Digital for value-added tax (MTD VAT) application programming interface (API) of His Majesty's Revenue and Customs (HMRC).
 
 > [!NOTE]
+>
 > - To meet security requirements, we implemented modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. **These services won't be accessible from on-premises deployments by June 6, 2025**.
 > - As of June 6, 2025, we no longer support **batch mode for submission** of VAT return in the **Making Tax Digital** feature. You can still generate the report (VAT 100) in Excel and JSON formats in batch.
 
 > [!IMPORTANT]
+>
 > - We recommend enabling the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature to activate the implemented security enhancements and comply with Microsoft security requirements.
 > - Learn about the transition of cloud-based deployments to the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in [Security enhancements in UK MTD VAT integration (cloud-based deployments only)](emea-gbr-mtd-vat-security-enhancements.md).
 

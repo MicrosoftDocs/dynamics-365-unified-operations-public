@@ -1106,6 +1106,8 @@
                       href: general-ledger/tasks/set-up-ledger-account-alias.md
                     - name: Create a main account
                       href: general-ledger/tasks/create-main-account.md
+                    - name: Delete a main account
+                      href: general-ledger/delete-main-account.md
                     - name: Allocation terms
                       href: general-ledger/main-account-allocation-terms.md
                 - name: Financial tags
@@ -1468,6 +1470,8 @@
               href: ../fin-ops-core/fin-ops/analytics/report-designer-interface.md?context=/dynamics365/context/finance
             - name: Keyboard shortcuts for financial reporter
               href: general-ledger/financial-reporting-keyboard-shortcuts.md
+            - name: User identity requirements for Financial Reporting
+              href: ../fin-ops-core/fin-ops/analytics/financial-reporting-user-identity-requirements.md?context=/dynamics365/context/finance
             - name: User preferences in financial report designer
               href: ../fin-ops-core/fin-ops/analytics/user-preferences-financial-report-designer.md?context=/dynamics365/context/finance
             - name: Advanced formatting options

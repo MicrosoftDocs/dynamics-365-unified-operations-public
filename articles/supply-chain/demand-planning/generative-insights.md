@@ -1,5 +1,5 @@
 ---
-title: Generative insights for Demand planning (production ready preview)
+title: Generative insights for Demand planning (production-ready preview)
 description: Learn how to work with Generative insights for Demand planning.
 author: AndersEvenGirke
 ms.author: aevengir
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Generative insights for Demand planning (production ready preview)
+# Generative insights for Demand planning (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -52,4 +52,4 @@ To view generative insights, follow these steps:
 
 ## Related information
 
-- [Responsible AI FAQ for Generative insights for Demand planning (production ready preview)](../faq-demand-planning-generative-insights.md)
+- [Responsible AI FAQ for Generative insights for Demand planning (production-ready preview)](../faq-demand-planning-generative-insights.md)

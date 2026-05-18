@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -30,7 +30,7 @@ To create an inventory profile, follow these steps:
 1. Set the **Don't match** option to **Yes** if the inventory profile doesn't have to participate in the automatic selection of inventory profiles from on-hand inventory when you create sales order lines by selecting **Create lines**.
 1. On the **Matching priority** FastTab, use the **Up** and **Down** buttons to set the order that inventory profiles are automatically selected in when you create sales order lines by selecting **Add lines**.
 
-    ![Inventory profiles page, Matching priority FastTab.](../media/1_Inventory_profiles.png)
+    :::image type="content" source="../media/1_Inventory_profiles.png" alt-text="Screenshot of the Inventory profiles page, Matching priority FastTab.":::
 
 1. Select **Save**.
 
@@ -56,7 +56,7 @@ To set up compatible inventory profiles, follow these steps:
 
 1. Select **Save**.
 
-![Inventory profile page, Compatible inventory profiles FastTab.](../media/2_Inventory_profiles.png)
+:::image type="content" source="../media/2_Inventory_profiles.png" alt-text="Screenshot of the Inventory profile page, Compatible inventory profiles FastTab.":::
 
 ## Set up an inventory profile in tracking dimension groups
 
@@ -72,7 +72,7 @@ To set up an inventory profile in tracking dimension groups, follow these steps:
 
 1. Select **Save**.
 
-![Tracking dimensions page.](../media/3_Tracking_dimension_groups.png)
+:::image type="content" source="../media/3_Tracking_dimension_groups.png" alt-text="Screenshot of the Tracking dimensions page.":::
 
 ## Activate transaction combinations for inventory profiles
 
@@ -88,7 +88,7 @@ To activate transaction combinations for inventory profiles, follow these steps:
 
 1. Select **Save**.
 
-![Transaction combinations page.](../media/4_Transaction_combinations.png)
+:::image type="content" source="../media/4_Transaction_combinations.png" alt-text="Screenshot of the Transaction combinations page.":::
 
 ## Set up inventory posting in the context of an inventory profile
 
@@ -129,110 +129,19 @@ To set up a relation between inventory profiles and customer and vendor posting 
 1. Set the **Vendor posting profile** and **Customer posting profile** fields.
 1. Select **Save**.
 
-![Inventory profile-posting profile page.](../media/5_Inventory_profile_-_posting_profile.png)
+:::image type="content" source="../media/5_Inventory_profile_-_posting_profile.png" alt-text="Screenshot of the Inventory profile-posting profile page.":::
 
 ## Set up a default kind of activity and inventory profile for vendors, customers, agreements, and warehouses
 
 You can specify the default kind of activity and inventory profile in a vendor, customer, agreement, or warehouse master record. On the **All vendors**, **All customers**, **Purchase agreements**, **Sales agreements**, or **Warehouses** page, set the following fields.
 
-<table>
-<thead>
-<tr>
-<td width="123">
-<p><strong>Page</strong></p>
-</td>
-<td width="123">
-<p><strong>FastTab</strong></p>
-</td>
-<td width="104">
-<p><strong>Section</strong></p>
-</td>
-<td width="369">
-<p><strong>Fields</strong></p>
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td width="123">
-<p>All vendors</p>
-</td>
-<td width="123">
-<p>Purchase order defaults</p>
-</td>
-<td width="104">
-<p>Inventory profile</p>
-</td>
-<td width="369">
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Kind of activity</strong> &ndash; Select the kind of activity that should be entered by default in purchase orders from the vendor.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> &ndash; Select the inventory profile that should be entered by default in purchase orders from the vendor.</p>
-</td>
-</tr>
-<tr>
-<td width="123">
-<p>All customers</p>
-</td>
-<td width="123">
-<p>Sales order defaults</p>
-</td>
-<td width="104">
-<p>Inventory profile</p>
-</td>
-<td width="369">
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Kind of activity</strong> &ndash; Select the kind of activity that should be entered by default in sales orders from the customer.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> &ndash; Select the inventory profile that should be entered by default in sales orders from the customer.</p>
-</td>
-</tr>
-<tr>
-<td width="123">
-<p>Purchase agreements</p>
-</td>
-<td width="123">
-<p>Financial (in the <strong>Header</strong> view)</p>
-</td>
-<td width="104">
-<p>Inventory profile</p>
-</td>
-<td width="369">
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Kind of activity</strong> &ndash; Select the kind of activity that should be entered by default in purchase orders from the purchase agreement.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> &ndash; Select the inventory profile that should be entered by default in purchase orders from the purchase agreement.</p>
-<p>When you create a new purchase agreement with a vendor, the <strong>Kind of activity</strong> and <strong>Inventory profile</strong> fields are automatically filled in from the vendor.</p>
-</td>
-</tr>
-<tr>
-<td width="123">
-<p>Sales agreements</p>
-</td>
-<td width="123">
-<p>Financial (in the <strong>Header</strong> view)</p>
-</td>
-<td width="104">
-<p>Inventory profile</p>
-</td>
-<td width="369">
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<strong>Kind of activity</strong> &ndash; Select the kind of activity that should automatically be used in sales orders that use the sales agreement.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> &ndash; Select the inventory profile that should automatically be used in sales orders that use the sales agreement.</p>
-<p>When you create a new sales agreement with a customer, the <strong>Kind of activity</strong> and <strong>Inventory profile</strong> fields are automatically filled in from the customer record.</p>
-</td>
-</tr>
-<tr>
-<td width="123">
-<p>Warehouses</p>
-</td>
-<td width="123">
-<p>General</p>
-</td>
-<td width="104">
-<p>Inventory profile</p>
-</td>
-<td width="369">
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Kind of activity</strong> &ndash; Select the kind of activity that should be entered by default in transfer orders from the warehouse.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> field, select the inventory profile that should be entered by default in transfer orders from the warehouse.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
+| **Page** | **FastTab** | **Section** | **Fields** |
+|---|---|---|---|
+| All vendors | Purchase order defaults | Inventory profile | **Kind of activity** – Select the kind of activity that should be entered by default in purchase orders from the vendor. **Inventory profile** – Select the inventory profile that should be entered by default in purchase orders from the vendor. |
+| All customers | Sales order defaults | Inventory profile | **Kind of activity** – Select the kind of activity that should be entered by default in sales orders from the customer. **Inventory profile** – Select the inventory profile that should be entered by default in sales orders from the customer. |
+| Purchase agreements | Financial (in the **Header** view) | Inventory profile | **Kind of activity** – Select the kind of activity that should be entered by default in purchase orders from the purchase agreement. **Inventory profile** – Select the inventory profile that should be entered by default in purchase orders from the purchase agreement. When you create a new purchase agreement with a vendor, the **Kind of activity** and **Inventory profile** fields are automatically filled in from the vendor. |
+| Sales agreements | Financial (in the **Header** view) | Inventory profile | **Kind of activity** – Select the kind of activity that should automatically be used in sales orders that use the sales agreement. **Inventory profile** – Select the inventory profile that should automatically be used in sales orders that use the sales agreement. When you create a new sales agreement with a customer, the **Kind of activity** and **Inventory profile** fields are automatically filled in from the customer record. |
+| Warehouses | General | Inventory profile | **Kind of activity** – Select the kind of activity that should be entered by default in transfer orders from the warehouse. **Inventory profile** field, select the inventory profile that should be entered by default in transfer orders from the warehouse. |
 
 > [!NOTE]
 > When you select a specific inventory profile, the **Kind of activity** field is automatically set to the corresponding kind of activity.
@@ -261,11 +170,11 @@ To set up a default inventory profile for purchase orders, follow these steps:
 1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
 1. On the **General** tab, on the **Default values and parameters** FastTab, in the **Inventory profile** field, select the inventory profile that should automatically be used in purchase orders.
 
-    ![Procurement and sourcing parameters page, General tab.](../media/6_Procurement_and_sourcing_parameters.png)
+    :::image type="content" source="../media/6_Procurement_and_sourcing_parameters.png" alt-text="Screenshot of the Procurement and sourcing parameters page, General tab.":::
 
 1. Select **Update order lines** to open the **Update order lines** dialog.
 
-    ![Update order lines dialog.](../media/7_Update_order_lines.png)
+    :::image type="content" source="../media/7_Update_order_lines.png" alt-text="Screenshot of the Update order lines dialog.":::
 
 1. In the **Inventory profile** section, in the **Updating Inventory profile** field, select one of the following values to set up the rules that are used to update the **Inventory profile** field on purchase order lines when the corresponding field in the purchase order header is changed:
 
@@ -279,7 +188,7 @@ To set up a default inventory profile for purchase orders, follow these steps:
     - Set the option in the **Posting profile** column to **Yes** if you want to split purchase order product receipts by the vendor posting profiles that are specified on the purchase order lines.
     - Set the option in the **Kind of activity** column to **Yes** if you want to split purchase order packing slips by the kinds of activity that include the inventory profiles that are specified on the purchase order lines.
 
-![Procurement and sourcing parameters page, Summary update tab.](../media/8_Procurement_and_sourcing_parameters.png)
+:::image type="content" source="../media/8_Procurement_and_sourcing_parameters.png" alt-text="Screenshot of the Procurement and sourcing parameters page, Summary update tab.":::
 
 > [!NOTE]
 > The **Invoice** option in both the **Posting profile** column and the **Kind of activity** column is always set to **Yes** and can't be changed. Therefore, purchase order invoices are always split by vendor posting profiles and kinds of activity.
@@ -295,12 +204,12 @@ To set up a default inventory profile for sales orders, follow these steps:
 1. Set the **Use compatible inventory profiles** option to **Yes** if compatible inventory profiles should automatically be used in sales orders.
 1. Set the **Split order lines by inventory profiles** option to **Yes** to automatically split sales order lines by the inventory profiles when **Create lines** is used from the available physical quantity.
 
-    ![Accounts receiveable parameters page, General tab.](../media/9_Accounts_receivable_parameters.png)
+    :::image type="content" source="../media/9_Accounts_receivable_parameters.png" alt-text="Screenshot of the Accounts receivable parameters page, General tab.":::
 
 1. On the **Summary update** tab, on the **Split based on** FastTab, set the **Posting profile** option in the **Packing slip** column to **Yes** to split sales order packing slips by the customer posting profiles that are specified on the sales order lines.
 1. Set the **Kind of activity** option in the **Packing slip** column to **Yes** to split sales order packing slips by the kinds of activity that the inventory profiles that are specified on the sales order lines correspond to.
 
-    ![Accounts receivable parameters page, Summary update tab .](../media/10_Accounts_receivable_parameters.png)
+    :::image type="content" source="../media/10_Accounts_receivable_parameters.png" alt-text="Screenshot of the Accounts receivable parameters page, Summary update tab.":::
 
     > [!NOTE]
     > In the **Invoice** column, the **Posting profile** and **Kind of activity** options are always set to **Yes** and can't be changed. Therefore, sales order invoices are always split by customer posting profiles and kinds of activity.
@@ -312,7 +221,7 @@ To set up a default inventory profile for sales orders, follow these steps:
     - **Always** – The inventory profile on the order lines should always automatically be updated when the inventory profile in the order header is changed.
     - **Prompt** – The system should prompt you to update the inventory profile on the order lines when you change the inventory profile in the order header.
 
-![Update order lines page.](../media/11_Update_order_lines.png)
+:::image type="content" source="../media/11_Update_order_lines.png" alt-text="Screenshot of the Update order lines page.":::
 
 ## Set up a default inventory profile for transfer orders
 
@@ -324,7 +233,7 @@ To set up a default inventory profile for transfer orders, follow these steps:
 1. On the **General** tab, in the **Inventory profile** section, in the **Inventory profile** field, select the inventory profile that should automatically be used in transfer orders.
 1. Set the **Use compatible inventory profiles** option to **Yes** if the **Use compatible inventory profiles** option in transfer orders should be set to **Yes** by default.
 
-    ![Inventory and warehouse management parameters page, General tab.](../media/12_Inventory_and_warehouse_management_parameters.png)
+    :::image type="content" source="../media/12_Inventory_and_warehouse_management_parameters.png" alt-text="Screenshot of the Inventory and warehouse management parameters page, General tab.":::
 
 1. On the **Bills of materials** tab, in the **Inventory profile** field, select the inventory profile that should be used by default when BOMs are created and exploded, and when reporting as finished is processed, if an inventory profile isn't specified on the BOM lines.
 

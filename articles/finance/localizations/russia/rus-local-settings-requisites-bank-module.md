@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -86,7 +86,7 @@ To create and configure a bank account, follow these steps:
 > [!NOTE]
 > Before defining a document template, create the templates as files and attach them to the record. You can determine if a document is attached by using the number indicator on the **Document attachment** icon.
 
-![Bank account.](../media/rus-bank-account.jpg)
+:::image type="content" source="../media/rus-bank-account.jpg" alt-text="Screenshot of the bank account setup page.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

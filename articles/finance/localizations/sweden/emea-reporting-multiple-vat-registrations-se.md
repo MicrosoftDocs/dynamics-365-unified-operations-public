@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Sweden
@@ -29,6 +29,5 @@ When your legal entity is configured for reporting for multiple VAT registration
 | [Intrastat](emea-swe-intrastat.md)       | 10.0.21 | Intrastat (SE), version 16.4      |
 | [EU sales list](emea-swe-eu-sales-list.md)   | 10.0.21 | EU Sales list (SE), version 13.7  |
 | [VAT declaration](emea-swe-VAT-declaration-Sweden.md) | 10.0.21 | VAT Declaration XML (SE), version 95.11<br>VAT Declaration Excel (SE), version 95.11.13 |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

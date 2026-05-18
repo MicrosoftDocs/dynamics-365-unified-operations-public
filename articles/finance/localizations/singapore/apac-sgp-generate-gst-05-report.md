@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Singapore
 ms.search.validFrom: 2016-02-28
@@ -24,9 +24,9 @@ Singaporean companies must file a GST return (GST-05 report) on a regular basis.
 
 - On the **Set up sales tax codes** form, categorize your tax codes into three categories by selecting an appropriate value in the **VAT type** field:
 
-    - Standard
-    - Zero
-    - Exempt
+  - Standard
+  - Zero
+  - Exempt
 
 - On the **Set up sales tax codes** form, specify the dedicated **Singapore report layout** reporting format.
 
@@ -52,16 +52,16 @@ Before you generate the report for the first time, download the following models
 After you've finished downloading the ER configurations from LCS, follow these steps:
 
 1. In Dynamics 365 Finance, select the related Singaporean company.
-2. Go to **Workspaces** \> **Electronic reporting**, and then set the Microsoft provider to **Active**.
-3. Select **Configurations** \> **Exchange**, and load the configuration from the XML file to import the tax declaration model and GST report format file.
-4. In the **Electronic reporting** workspace, select **Configurations** \> **Setup**.
-5. On the **Conditions** tab, select **version 32.1**, and create the configuration allows you to set up mapping between the sales tax codes that are configured in your company and the related boxes of the GST-05 report:
+1. Go to **Workspaces** \> **Electronic reporting**, and then set the Microsoft provider to **Active**.
+1. Select **Configurations** \> **Exchange**, and load the configuration from the XML file to import the tax declaration model and GST report format file.
+1. In the **Electronic reporting** workspace, select **Configurations** \> **Setup**.
+1. On the **Conditions** tab, select **version 32.1**, and create the configuration allows you to set up mapping between the sales tax codes that are configured in your company and the related boxes of the GST-05 report:
 
     1. In the **Lookup result** field, select the related box.
-    2. In the **Tax code (Code)** field, select the sales tax code that is used to calculate the related box.
-    3. In the **Name** field, select the operation where this tax is used.
+    1. In the **Tax code (Code)** field, select the sales tax code that is used to calculate the related box.
+    1. In the **Name** field, select the operation where this tax is used.
 
-6. Set the **Status** parameter to **Completed**.
+1. Set the **Status** parameter to **Completed**.
 
 **Example**
 
@@ -69,7 +69,7 @@ In the GST-05 declaration report, box 1 refers to the value of the supplies that
 
 If the sales code that you created supports the standard rate of the **GST\_7%** sales tax code, you must create entries on the **Conditions** tab.
 
-![Example of line entries on the Conditions tab.](../media/SG_GST_Report_Configuration.png)
+:::image type="content" source="../media/SG_GST_Report_Configuration.png" alt-text="Screenshot of example line entries on the Conditions tab.":::
 
 > [!NOTE]
 > To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line that has **SalesCreditNote** as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code **GST\_7%**, you will encounter issues when the report is generated. We recommend that you use the **Posted sales tax** inquiry to review all sales tax codes that are posted, but that aren't included in this mapping of the configuration.
@@ -79,12 +79,11 @@ If the sales code that you created supports the standard rate of the **GST\_7%**
 To generate the tax declaration report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **GST tax report**.
-2. Select the **GST report** format mapping.
-3. Select the "From" and "To" dates.
-4. Select the settlement period and the tax declaration version.
+1. Select the **GST report** format mapping.
+1. Select the "From" and "To" dates.
+1. Select the settlement period and the tax declaration version.
 
 > [!NOTE]
 > You must run the sales tax settlement process to generate the related tax payment.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
