@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 05/06/2026
+ms.date: 05/18/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -19,6 +19,21 @@ ms.custom:
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management. It lists changes for each version released since the general availability (GA) release of version 4. Notes for older versions are available in [Warehouse Management mobile app release notes archive](warehouse-app-whats-new-archive.md).
 
 Starting with version 4.1.1.0, every V4 and later release is tagged with its publication date. Publication dates determine whether a release is within the rolling 12-month support window that applies to V4 and all later releases. Learn more in [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy).
+
+## Release notes for version 4.1.3.0 (May 18, 2026)
+
+Version 4.1.3.0 is a minor update that includes the following fixes and improvements:
+
+### Bug fixes
+
+- **Label encoding** – Fixed an encoding issue that caused incorrect signs to be displayed on labels.
+- **Quantity selector** – Improved performance of the quantity selector and resolved a concurrency issue.
+- **Calculator** – Fixed an issue where typing in the calculator would reopen the calculator instead of continuing input.
+ 
+### Improvements
+
+- **Right-to-left (RTL) support** – Improved support for right-to-left languages.
+
 
 ## Release notes for version 4.1.2.0 (May 6, 2026)
 
@@ -52,13 +67,13 @@ Version 4.1.1.0 focuses on performance, small-screen layouts, scanning reliabili
 - **Dialog support** – Scans work correctly while error, confirmation, or option dialogs are displayed.
 - **Duplicate scan protection** – Prevents double actions on devices that send the same barcode through multiple channels.
 - **GS1 barcode support** – Batch numbers that contain GS1 separators (`0x1D`) are now handled correctly, resolving previous disconnection issues.
-- **Navigation fixes** – Restored arrow-key navigation for processes such as Sales picking, and fixed re-scanning during quantity confirmation.
+- **Navigation fixes** – Restored arrow-key navigation for processes such as Sales picking, and fixed rescanning during quantity confirmation.
 
 ### Bug fixes
 
 #### Layout and display
 
-- **Pallet building** – The **Done** button is now visible on small or non-maximized windows. The **Correct**, **Cancel**, and **Done** actions are accessible without resizing.
+- **Pallet building** – The **Done** button is now visible on small or nonmaximized windows. The **Correct**, **Cancel**, and **Done** actions are accessible without resizing.
 - **Calculator** – Fixed layout problems when using landscape mode on small screens.
 
 #### Windows
@@ -184,11 +199,11 @@ Version 4.0.30.0 includes the following fixes and improvements:
 - Fixed an authentication problem on on-premises Windows installations.
 - Improved transitions when navigating between pages.
 - Fixed an issue where the work list search field wasn't cleared after refreshing the page.
-- Fixed an issue where step instructions didn't remember the *Do not show again* selection when two menu items had the same name.
+- Fixed an issue where step instructions didn't remember the *Don't show again* selection when two menu items had the same name.
 - Improved Wi-Fi diagnostics through better request handling and clearer error reporting.
-- Fixed a concurrency-related problem that could cause sign-out failures.
+- Fixed a concurrency-related problem that could cause sign out failures.
 - Fixed an issue on custom legacy pages where fields could appear in the wrong order or show incorrect values after edits.
-- Added a loading spinner for long-running sign-out operations.
+- Added a loading spinner for long-running sign out operations.
 
 ## Version 4.0.29.0
 
@@ -210,7 +225,7 @@ Version 4.0.28.0 includes the following fixes and improvements:
 - Improved camera-based barcode scanning by adding camera zoom and augmented-reality assisted barcode focusing.
 - Fixed problems with hardware keyboard detection.
 - Added support for keycode mapping.
-- Fixed an issue that prevented nonnumerical placeholders from appearing in the step banner.
+- Fixed an issue that prevented non-numerical placeholders from appearing in the step banner.
 - Fixed an issue affecting image setup for product and master variants.
 - Corrected case-sensitive redirect URI matching on Android.
 - Fixed an issue where entering a large digit in the calculator caused the delete button to move offscreen.
@@ -230,14 +245,14 @@ Version 4.0.27.0 includes the following fixes and improvements:
 - Added the connection name to the worker sign-in page for better usability.
 - Fixed an iOS issue where the calculator appeared unexpectedly during the sales picking flow.
 - Fixed a crash that occurred when scrolling through a work list with many cards.
-- Fixed an issue where signing out as a default user required re-entering the device code for authentication.
+- Fixed an issue where signing out as a default user required reentering the device code for authentication.
 
 ## Version 4.0.26.0
 
 Version 4.0.26.0 includes the following fixes and improvements:
 
 - Fixed an issue where old values weren't removed after scanning items from a work list.
-- Fixed a bug that caused the page to auto-submit when a worker pressed the physical scan button on a device during a summary step.
+- Fixed a bug that caused the page to autosubmit when a worker pressed the physical scan button on a device during a summary step.
 - Fixed mobile mass deployment (MDM) property retrieval to handle case differences in `connection.json` files.
 - Enhanced Windows security.
 
