@@ -34,6 +34,8 @@ Navigate to Feature management workspace:
 1. Enable the feature titled "Unified pricing management".
 2. Enable the feature titled "Enable non-attribute based rebate management deals for Unified pricing scenario".
 
+[<img src="media/feature-management.png" alt="View of feature management form with relevant pricing features" title="View of feature management form with relevant pricing features" width="720" />](media/feature-management.png#lightbox)
+
 NOTE: There is a dependency between the listed features. The "Enable non-attribute based rebate management deals for Unified pricing scenario" feature cannot be enabled if the "Unified pricing management" feature is disabled.
 The "Unified pricing management" feature cannot be disabled if the "Enable non-attribute based rebate management deals for Unified pricing scenario" feature is enabled.
 
