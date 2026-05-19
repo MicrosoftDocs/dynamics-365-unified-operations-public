@@ -4,7 +4,7 @@ description: Access links to documentation resources for Sweden, including links
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 12/09/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Sweden

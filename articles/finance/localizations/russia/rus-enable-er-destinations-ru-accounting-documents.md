@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 10/02/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2022-01-27
@@ -46,7 +46,7 @@ To configure ER destinations for accounting documents, follow these steps:
 1. In the **Reference** field, select **Format for binary data pipeline**.
 1. In the **File destination** section, create lines for the required destinations for each accounting document that you generate. For more information about ER destinations, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
-    ![Table Description automatically generated.](../media/77abc9530fdb36f13d24502c4f962aa2.png)
+    :::image type="content" source="../media/77abc9530fdb36f13d24502c4f962aa2.png" alt-text="Screenshot of the ER destination configuration table for accounting documents.":::
 
 > [!TIP]
 > - If you don't want to get a zip folder together with the generated document, create a line for the **Zip** component, and leave the **Settings** field blank. If you don't create this line, you will always get a zip folder together with the document, in addition to the configured ER destinations for that document.

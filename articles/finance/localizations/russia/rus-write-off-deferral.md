@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -31,7 +31,7 @@ To write off deferrals, follow these steps:
 1. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog, where you can set up the selection criteria.
 1. Select **OK** to return to the **Journal voucher** page. Details for deferrals write-off vouchers that have a status of **In Process** are shown, based on the filter parameters that you set up in the **Inquiry** dialog.
 
-    ![Journal voucher page.](../media/rus-write-off-deferral-01.png)
+    :::image type="content" source="../media/rus-write-off-deferral-01.png" alt-text="Screenshot of the Journal voucher page.":::
 
 1. On the Action Pane, select **Functions** \> **Edit line** to edit the deferrals journal before you post it.
 1. On the Action Pane, select **Post** \> **Post** to post the deferrals write-off voucher details.
@@ -50,7 +50,7 @@ To create a journal line for a single write-off, follow these steps:
 
     The fields in the **Correction** section of the **Create new line** dialog are used to create a corrective transaction for a closed period.
 
-    ![Create new line dialog.](../media/rus-write-off-deferral-02.png)
+    :::image type="content" source="../media/rus-write-off-deferral-02.png" alt-text="Screenshot of the Create new line dialog.":::
 
 1. Select **OK**. Voucher lines are created for the selected deferral on the **Journal voucher** page.
 1. On the Action Pane, select **Functions** \> **Edit line** to edit the deferrals journal before you post it.

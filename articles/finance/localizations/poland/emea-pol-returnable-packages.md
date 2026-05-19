@@ -4,7 +4,7 @@ description: Learn how to set up and use returnable packaging for Poland in Micr
 author: mrolecki
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/16/2025
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -18,11 +18,11 @@ ms.assetid: decdb3af-9fc3-4aff-add1-bbb9d2eadc27
 
 This article explains how to set up and use returnable packaging for Poland in Microsoft Dynamics 365 Finance.
 
-The functionality for returnable packaging lets you handle the registration of packages that customers can return. Users can define packaging codes and specify the amount of the deposit that a customer pays for returned packaging materials. This functionality is an extension of the standard functionality for packaging materials.
+The returnable packaging functionality helps you register packages that customers can return. Users can define packaging codes and specify the deposit amount that a customer pays for returned packaging materials. This functionality extends the standard functionality for packaging materials.
 
 ## Prerequisites
 
-The following table shows the prerequisites that must be in place before you start.
+The following table shows the prerequisites that you must have before you start.
 
 | Category                | Prerequisite |
 |-------------------------|--------------|
@@ -44,7 +44,7 @@ On the **Return packages** page (**Inventory management** \> **Setup** \> **Pack
 
 ### Attach packaging codes to packing units
 
-Use the **Packaging material allocation** page (**Inventory management** \> **Setup** \> **Packing material** \> **Packaging material allocation**) to attach packaging codes to packing units for all items, for specific items, or for specific packing groups. Only the following field is specific for Poland. It extends the standard functionality of the **Packaging material allocation** page.
+Use the **Packaging material allocation** page (**Inventory management** > **Setup** > **Packing material** > **Packaging material allocation**) to attach packaging codes to packing units for all items, specific items, or specific packing groups. Only the following field is specific for Poland. It extends the standard functionality of the **Packaging material allocation** page.
 
 | Field          | Description                                                     |
 |----------------|-----------------------------------------------------------------|
@@ -54,12 +54,12 @@ Use the **Packaging material allocation** page (**Inventory management** \> **Se
 
 To set up a number sequence for package vouchers, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Packaging material allocation** FastTab, set up a number sequence for the **Package voucher** reference field.
 
 ### Set up a deposit account
 
-When you post the sales invoice, use a special voucher to post the customer's fee for the packaging material. All deposit transactions post to a separate account, which you define in the related customer posting profiles. On the **Customer posting profile** page (**Accounts receivable** \> **Setup** \> **Customer posting profile**), enter a value in the **Deposits** field.
+When you post the sales invoice, use a special voucher to post the customer's fee for the packaging material. All deposit transactions post to a separate account, which you define in the related customer posting profiles. On the **Customer posting profile** page (**Accounts receivable** > **Setup** > **Customer posting profile**), enter a value in the **Deposits** field.
 
 ## Register and verify returnable packages
 
@@ -69,7 +69,7 @@ Users can register packages for sales orders, post and print packing slips that 
 
 To register packages in a sales order, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Common** > **Sales orders** > **All sales orders**.
 1. Create a new sales order or open an existing sales order.
 1. Switch to the **Lines** view, and then create a new sales order line or select an existing sales order line.
 1. On the **Line details** FastTab, on the **Packing** tab, in the **Packing unit** field, select the packing unit that's attached to the packaging code that you previously defined for return packages. The number of packages that the customer can return is automatically calculated and is shown in the **Packing unit quantity** field.
@@ -79,15 +79,15 @@ To register packages in a sales order, follow these steps:
 To verify packages, follow these steps:
 
 1. On the **Sales order lines** FastTab, select a sales order line.
-1. Go to **Financials** \> **Packages** \> **Package issue**. When the page is opened from a sales order line, you can modify or remove the packages that are automatically calculated for that sales order line.
-1. Alternatively, on the Action Pane for the **Sales order** page, on the **General** tab, select **Package issue**. When the **Package issue** page is opened by using this method, you can view the packages that are calculated for all sales order lines. You can also add packages if extra packages are required.
+1. Go to **Financials** > **Packages** > **Package issue**. When you open the page from a sales order line, you can modify or remove the packages that are automatically calculated for that sales order line.
+1. Alternatively, on the Action Pane for the **Sales order** page, on the **General** tab, select **Package issue**. When you open the **Package issue** page by using this method, you can view the packages that are calculated for all sales order lines. You can also add packages if extra packages are required.
 
 ### Print and post packing slips
 
 To print and post packing slips, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Sales order** page.
-1. On the Action Pane, on the **Pick and pack** tab, select **Post packing slip**. After packing slips are posted, you can inquire about package issue transactions for each packing slip.
+1. On the Action Pane, on the **Pick and pack** tab, select **Post packing slip**. After you post packing slips, you can inquire about package issue transactions for each packing slip.
 1. Go to **Inventory management** > **Setup** > **Packing materials** > **Return packages**.
 1. On the **Transactions** tab, select **Transactions** to open the **Return packages transactions** page.
 
@@ -107,7 +107,7 @@ To print and post invoices, follow these steps:
 
 ## Post and print packages returns
 
-To enter information about the packages that customers return, select **Accounts receivable** \> **All customers**. On the **Collect** tab, select **Packages return** to open the **Return packages confirmation** page. Enter values in the following fields. **Return packages section**
+To enter information about the packages that customers return, select **Accounts receivable** \> **All customers**. On the **Collect** tab, select **Packages return** to open the **Return packages confirmation** page. Enter values in the following fields. ### Return packages section
 
 | Field       | Description                                                                                        |
 |-------------|----------------------------------------------------------------------------------------------------|
@@ -115,7 +115,7 @@ To enter information about the packages that customers return, select **Accounts
 | Description | Enter the description of a package return.                                                         |
 | Posted      | A value that indicates whether the package return was posted. This value updates automatically. |
 
-**Return packages transactions section**
+### Return packages transactions section
 
 | Field                         | Description                                                                                                                                                          |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

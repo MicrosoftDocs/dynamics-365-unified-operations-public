@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/08/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-31
@@ -50,7 +50,7 @@ To set up advance adjustment parameters for advance holders, follow these steps:
 
 To calculate the exchange rate adjustment for advance holders, follow these steps:
 
-1. In Dynamics 365 Finance, go to ***Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Foreign currency revaluation**.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Foreign currency revaluation**.
 1. Select **Foreign currency revaluation** to open the **Foreign currency revaluation** dialog.
 1. In the **Method** field, select **Standard**.
 1. In the **Considered date** field, select the date that the general ledger transaction should be made by.

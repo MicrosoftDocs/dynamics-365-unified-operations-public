@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 
 ---
@@ -84,7 +84,7 @@ To create the customs journal header, follow these steps:
 
 1. Select **OK**. The journal ID is automatically created and shown in the **Journal ID** field on the **Customs journal** page.
 
-    ![Customs journal page.](../media/245f651f3e4b3448ed828cdea8810fae.png)
+    :::image type="content" source="../media/245f651f3e4b3448ed828cdea8810fae.png" alt-text="Screenshot of the Customs journal page.":::
 
 1. On the **Header** tab, you can correct the values that you entered in the **Create customs journal** dialog. The following additional fields are also available:
 
@@ -114,7 +114,7 @@ To create the customs journal header, follow these steps:
 
     1. On the **Financial dimensions** FastTab, you can view financial analyses of the customs journal. These analyses are determined by the selection of the customs service provider and can be manually changed.
 
-    ![Header tab of the Customs journal page.](../media/8b181aef7f8b002d2fd7d6503c636bdd.png)
+    :::image type="content" source="../media/8b181aef7f8b002d2fd7d6503c636bdd.png" alt-text="Screenshot of the Header tab of the Customs journal page.":::
 
 ### Create customs journal lines
 
@@ -160,7 +160,7 @@ To create customs journal lines, follow these steps:
 
     1. On the **Setup** tab, there is information about the calculation of customs payments based on the invoice and indicative values, and the amount of the calculated storage fee. The indicative cost is determined based on the settings on the **Indicative prices of TN VED** page.
 
-        ![Setup tab.](../media/57fd8a751e0d1b21380580adb7f6b150.png)
+        :::image type="content" source="../media/57fd8a751e0d1b21380580adb7f6b150.png" alt-text="Screenshot of the Setup tab.":::
 
     1. On the **Financial dimensions** tab, you can view financial information about the line that is defined from the line of the linked purchase order, invoice, sales order, or packing slip line.
 
@@ -191,7 +191,7 @@ To create a new line, follow these steps:
 1. Mark the required lines. Additionally, in the **Selected quantity** field, you can change the quantity to include in the customs journal.
 1. Select **OK**.
 
-    ![Create customs journal lines dialog.](../media/9e93327dc79cc0f3f442cc7c875dc54b.png)
+    :::image type="content" source="../media/9e93327dc79cc0f3f442cc7c875dc54b.png" alt-text="Screenshot of the Create customs journal lines dialog.":::
 
 1. Optional: To recalculate the journal lines, on the Action Pane, select **Manage** \> **Recalculate lines**. For example, if you created journal lines and then changed the indicative prices for those products, you should recalculate the lines so that the actual information in the customs journal is used.
 
@@ -249,11 +249,11 @@ To calculate the customs fee for storage or escort, follow these steps:
     1. Select the **Choose** checkboxes of the lines, based on the weight that the total storage weight should be calculated for. The calculated amount of the storage fee will be distributed to the selected lines.
     1. Select **OK**. The fee is calculated based on the settings of the tax codes.
 
-    ![Customs fee calculation dialog.](../media/dce3e0eac21ffca181f7600f71f12a24.png)
+    :::image type="content" source="../media/dce3e0eac21ffca181f7600f71f12a24.png" alt-text="Screenshot of the Customs fee calculation dialog.":::
 
 1. To view the calculated fees for storage and escort, on the Action Pane, select **Customs journal** \> **Fees**.
 
-    ![Fees of storage and escort page.](../media/f5c60224ccf3d877e8e230e492186770.png)
+    :::image type="content" source="../media/f5c60224ccf3d877e8e230e492186770.png" alt-text="Screenshot of the Fees of storage and escort page.":::
 
 1. From the **Fees of storage and escort** page, you can adjust the value of the storage fee for non-posted customs journal. On the Action Pane, select **Delete lines of storage**. All lines of the storage fees for the journal will be deleted. Then create new fees for storage.
 
@@ -268,7 +268,7 @@ To adjust the amount of duty for the section, follow these steps:
 1. In the **Adjust section amounts** dialog, change the required amounts for the section, based the selected customs clearance method.
 1. Select **OK**. The amounts are changed and recalculated for all lines in the section.
 
-![Adjust section amounts dialog.](../media/08df71ce9cf5956ef1c7f09decf49123.png)
+:::image type="content" source="../media/08df71ce9cf5956ef1c7f09decf49123.png" alt-text="Screenshot of the Adjust section amounts dialog.":::
 
 ### Analyze the totals of the customs journal
 
@@ -278,7 +278,7 @@ To analyze the totals of the customs journal, follow these steps:
 1. On the Action Pane, select **Customs journal** \> **Totals**.
 1. In the **Inquiry** dialog, set a filter on the lines of the customs journal.
 
-    ![Inquiry dialog.](../media/1220cac7d68be6a9eeee2a57f007671f.png)
+    :::image type="content" source="../media/1220cac7d68be6a9eeee2a57f007671f.png" alt-text="Screenshot of the Inquiry dialog.":::
 
 1. In the **Totals** dialog, you can view calculations in the following columns:
 
@@ -289,7 +289,7 @@ To analyze the totals of the customs journal, follow these steps:
     - **KTS** – The value of customs payments by KTS.
     - **Total of payments** – The total result of the calculation of customs payments by GTD and KTS.
 
-    ![Totals dialog.](../media/50153513197023a84db2449d29ab6fc6.png)
+    :::image type="content" source="../media/50153513197023a84db2449d29ab6fc6.png" alt-text="Screenshot of the Totals dialog.":::
 
 1. Fees for escort and storage are calculated regardless of the method that determines the customs value (invoice or indicative). Therefore, only the **GTD** and **Total of payments** columns are filled in for those lines.
 
@@ -346,7 +346,7 @@ To analyze the results of the customs journal section, follow these steps:
     - **Charges value** – The amount of the overhead expense per line.
     - **Currency** – The currency of the overhead expense.
 
-    ![Section overview dialog.](../media/8ff6e0bf711dee565c486651a34489a8.png)
+    :::image type="content" source="../media/8ff6e0bf711dee565c486651a34489a8.png" alt-text="Screenshot of the Section overview dialog.":::
 
 ### Issue a GTD 
 
@@ -366,7 +366,7 @@ Otherwise, to issue a GTD, follow these steps:
 1. The **Warehouse change** option is available only for journals of the **Import** type where the transfer of ownership occurs before the products cross the customs border. Set this option to **Yes** to create a journal that has a status of **Transfer** status, where the products will be transferred, according to the invoice, from the posting warehouse to the customs warehouse that is specified in the **Customs terminal** field. To open the transfer journal, select **Manage** \> **Transfer journal** on the Action Pane.
 1. Select **OK**.
 
-    ![GTD issue dialog.](../media/1fa10d34dec473406640a6414e9a7177.png)
+    :::image type="content" source="../media/1fa10d34dec473406640a6414e9a7177.png" alt-text="Screenshot of the GTD issue dialog.":::
 
     The GTD is issued, and the status of the journal is changed to the **Issued**.
 
@@ -397,7 +397,7 @@ To post a customs journal, follow these steps:
 1. Select **OK**. The status of the journal is changed to **Posted**, and transactions are generated on customs payments and debts to the customs counterparty.
 1. On the Action Pane, select **Manage** \> **Ledger transactions** to view the ledger transactions that were created when the journal was posted.
 
-    ![Voucher transactions page.](../media/a8cd1b793608c7db80a26f48c9d73fbc.png)
+    :::image type="content" source="../media/a8cd1b793608c7db80a26f48c9d73fbc.png" alt-text="Screenshot of the Voucher transactions page.":::
 
 There are multiple algorithms for generating transactions. Here are some examples:
 
@@ -502,7 +502,7 @@ To create a customs value correction (KTS) for import or export transactions tha
 
 1. To adjust the KTS journal lines, on the **KTS lines** FastTab, on the toolbar, select **Create KTS lines**. Then set the fields just as you set them when you created the KTS journal. When you've finished, select **OK**.
 
-    ![Create KTS dialog.](../media/87563cbad3d4b8465656cc25ebbf3e22.png)
+    :::image type="content" source="../media/87563cbad3d4b8465656cc25ebbf3e22.png" alt-text="Screenshot of the Create KTS dialog.":::
 
 1. To remove a selected line from the KTS journal, on the toolbar, select **Remove**.
 1. On the **Line details** FastTab, you can view the values of the **Cost**, **Duty**, **Excise**, **VAT**, and **Total of payments** fields in the following sections:
@@ -511,7 +511,7 @@ To create a customs value correction (KTS) for import or export transactions tha
     - **Adjust** – For adjustment values.
     - **New values** – For the new values of customs payments after the adjustments are made.
 
-    ![Line details FastTab.](../media/48f708f440f0b449ddaefdf67227e20f.png)
+    :::image type="content" source="../media/48f708f440f0b449ddaefdf67227e20f.png" alt-text="Screenshot of the Line details FastTab.":::
 
 1. To view KTS journal totals, on the Action Pane, select **Customs value correction** \> **Totals**.
 1. To go to the customs journal that is corrected by the KTS journal, on the Action Pane, select **Customs value correction** \> **Customs journal**.

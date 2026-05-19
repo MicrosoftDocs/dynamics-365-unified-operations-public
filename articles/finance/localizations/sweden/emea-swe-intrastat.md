@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
@@ -20,19 +20,21 @@ This article explains how to set up Intrastat reporting for Sweden in Microsoft 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The Swedish Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Swedish Intrastat declaration:
-   - Partner country ISO code
-   - Transaction code
-   - Commodity Code
-   - Additional unit
-   - Weight
-   - Invoice amount
+
+- Partner country ISO code
+- Transaction code
+- Commodity Code
+- Additional unit
+- Weight
+- Invoice amount
 
 ## Set up Intrastat
 
 To set up Intrastat, import the latest version of the following electronic reporting (ER) configurations:
-   - Intrastat model
-   - Intrastat report
-   - Intrastat (SE)
+
+- Intrastat model
+- Intrastat report
+- Intrastat (SE)
 
 Learn more in [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -181,11 +183,11 @@ To transfer the transaction to the Intrastat journal and review the result, foll
 1. Select **OK** to close the **Intrastat Filter** dialog.
 1. Select **OK** to close the **Intrastat (Transfer)** dialog, and review the result. The line represents the sales order that you created earlier.
 
-    ![Intrastat journal lines for sales order](../media/swe_intrastat_journal_sales_order.png)
+    :::image type="content" source="../media/swe_intrastat_journal_sales_order.png" alt-text="Screenshot of Intrastat journal lines for sales order.":::
 
 1. Select the transaction line, and then select the **General** tab to view more details.
 
-    ![Intrastat journal line details for sales order](../media/swe_intrastat_journal_sales_order_line_details.png)
+    :::image type="content" source="../media/swe_intrastat_journal_sales_order_line_details.png" alt-text="Screenshot of Intrastat journal line details for sales order.":::
 
 1. On the Action Pane, select **Output** \> **Report**.
 1. In the **Intrastat Report** dialog, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
@@ -200,7 +202,7 @@ To transfer the transaction to the Intrastat journal and review the result, foll
 
 1. Review the report in Excel format that is generated.
 
-    ![Intrastat report](../media/swe_intrastat_report_for_dispatches.png)
+    :::image type="content" source="../media/swe_intrastat_report_for_dispatches.png" alt-text="Screenshot of Intrastat report for dispatches.":::
 
 ### Create a purchase order
 
@@ -227,11 +229,11 @@ To create an Intrastat declaration for arrivals, follow these steps:
 1. In the **Intrastat (Transfer)** dialog, set the **Vendor invoice** option to **Yes**.
 1. Select **OK** to transfer the transactions, and review the Intrastat journal.
 
-    ![Intrastat journal for purchase order](../media/swe_intrastat_journal_purchase_order.png)
+    :::image type="content" source="../media/swe_intrastat_journal_purchase_order.png" alt-text="Screenshot of Intrastat journal for purchase order.":::
 
 1. Review the **General** tab for the purchase order.
 
-    ![Intrastat journal line details for purchase order](../media/swe_intrastat_journal_purchase_order_line_details.png)
+    :::image type="content" source="../media/swe_intrastat_journal_purchase_order_line_details.png" alt-text="Screenshot of Intrastat journal line details for purchase order.":::
 
 1. On the Action Pane, select **Output** \> **Report**.
 1. In the **Intrastat Report** dialog, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
@@ -246,4 +248,4 @@ To create an Intrastat declaration for arrivals, follow these steps:
 
 1. Review the report in Excel format.
 
-    ![Intrastat arrivals report](../media/swe_intrastat_arrivals_report.png)
+    :::image type="content" source="../media/swe_intrastat_arrivals_report.png" alt-text="Screenshot of Intrastat arrivals report.":::

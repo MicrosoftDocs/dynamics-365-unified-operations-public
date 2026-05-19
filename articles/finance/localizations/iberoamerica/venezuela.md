@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: v-pedrobusto2025
 ms.author: v-pedrobusto
 ms.topic: overview
-ms.date: 07/30/2025
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: Venezuela
 ms.search.validFrom: 2025-07-28
@@ -26,6 +26,7 @@ This overview provides a comprehensive guide to setting up legal entities in Ven
 - [Additional resources](#additional-resources)
 
 ## Main configurations
+
 - [Set up legal entity and tax information for Venezuela](ltm-ven-set-up-legal-entity.md)
 - [Create customer and vendor records with an address in Venezuela](ltm-create-customer-and-vendor-venezuela.md)
 - [Configure sales and purchase invoices](ltm-configure-invoices-venezuela.md)
@@ -48,6 +49,7 @@ This overview provides a comprehensive guide to setting up legal entities in Ven
 - [ISLR withholding certificate](ltm-venezuela-islr-withholding-certificate.md)
 
 ## Additional resources
+
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 

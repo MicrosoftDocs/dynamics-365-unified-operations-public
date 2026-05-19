@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/30/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-06
@@ -39,7 +39,7 @@ To retrieve information about VAT payments, follow these steps:
 
 The following illustration shows a simplified representation of the processing for VAT payment information retrieval that is implemented in Electronic messages in the scope of the **UK MTD VAT returns** processing.
 
-![Retrieving information about VAT payments.](../media/uk-mtd-payment-schema.png)
+:::image type="content" source="../media/uk-mtd-payment-schema.png" alt-text="Screenshot of a simplified representation of the processing for VAT payment information retrieval.":::
 
 ## Retrieve information about VAT liabilities
 
@@ -56,7 +56,7 @@ To retrieve information about VAT liabilities, follow these steps:
 
 The following illustration shows a simplified representation of the processing for VAT liability information retrieval that is implemented in Electronic messages in the scope of the **UK MTD VAT returns** processing.
 
-![Retrieving information about VAT liabilities.](../media/uk-mtd-liabilities-schema.png)
+:::image type="content" source="../media/uk-mtd-liabilities-schema.png" alt-text="Screenshot of a simplified representation of the processing for VAT liability information retrieval.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

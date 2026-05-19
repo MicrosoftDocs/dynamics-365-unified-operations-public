@@ -3,10 +3,10 @@ title: Fiscal journal report SSRS-based
 description: Learn about the Fiscal journal report SSRS-based in Italy, including an outline and step-by-step process on fiscal journal page numbering improvements.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
-ms.date: 6/17/2024
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy
@@ -31,7 +31,7 @@ This report includes fields for the following information:
 - Currency
 - Debit or credit amount of the document
 
-![Example of the Italian Fiscal journal report.](../media/ITA-Competence-date-for-transactions-1-fiscal-journal.png)
+:::image type="content" source="../media/ITA-Competence-date-for-transactions-1-fiscal-journal.png" alt-text="Screenshot of the Italian Fiscal journal report.":::
 
 > [!NOTE]
 > The [One voucher](../../general-ledger/one-voucher.md) functionality introduces a limitation on further fiscal journal reporting for some scenarios that are subject to this report. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. We recommend that you set the **Allow multiple transactions within one voucher** option on the **General ledger parameters** page to **No** in your legal entity if you post transactions that are part of the **Fiscal journal** report. For information about One voucher functionality, see [One voucher](../../general-ledger/one-voucher.md).
@@ -47,10 +47,10 @@ This feature also enables an algorithm for grouping lines that have the same col
 If you must calculate the number of documents that are included in the Fiscal journal, follow these steps:
 
 1. Print the report in PDF file format.
-2. Convert the PDF to Microsoft Excel format by using conversion software.
-3. Create a PivotTable. In the **Rows** field, select **Docum. No.**.
+1. Convert the PDF to Microsoft Excel format by using conversion software.
+1. Create a PivotTable. In the **Rows** field, select **Docum. No.**.
 
-    ![Example of an Excel PivotTable where Docum. No. is selected in the Rows field.](../media/ExcelPivotTable.png)
+    :::image type="content" source="../media/ExcelPivotTable.png" alt-text="Screenshot of an Excel PivotTable where Docum. No. is selected in the Rows field.":::
 
 The number of documents equals the number of lines in the PivotTable.
 

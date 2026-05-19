@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -41,7 +41,7 @@ To register a payment by using the vendor payment journal, follow these steps:
 
 The **Document title** field is automatically set to the title of the agreement.
 
-![Vendor payments page.](../media/10_Vendor_payments.png)
+:::image type="content" source="../media/10_Vendor_payments.png" alt-text="Screenshot of the Vendor payments page.":::
 
 The transaction for the counterparty will have a link to the agreement number.
 
@@ -65,7 +65,7 @@ To register accounts receivable by using a free text invoice, follow these steps
 
     The **Document title** field is automatically set to the title of the agreement.
 
-    ![Free text invoice page.](../media/11_Free_text_invoice.png)
+    :::image type="content" source="../media/11_Free_text_invoice.png" alt-text="Screenshot of the Free text invoice page.":::
 
 1. Specify other details, and post the invoice.
 
@@ -79,7 +79,7 @@ To register accounts receivable and accounts payable from general journals, foll
 
     The **Document title** field is automatically set to the title of the agreement.
 
-    ![Journal voucher page.](../media/12_Journal_voucher.png)
+    :::image type="content" source="../media/12_Journal_voucher.png" alt-text="Screenshot of the Journal voucher page.":::
 
 1. Specify other details, and then, on the Action Pane, select **Post** to post the transaction.
 
@@ -94,7 +94,7 @@ To settle factures on a customer in the context of agreements, follow these step
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. On the **Collect** tab, in the **Settle** section, select **Facture and payment settlement**.
 
-    ![Facture and payment settlement page.](../media/13_Facture_and_payment_settlement.png)
+    :::image type="content" source="../media/13_Facture_and_payment_settlement.png" alt-text="Screenshot of the Facture and payment settlement page.":::
 
 1. In the upper and lower panes, set the following options to select transactions:
 

@@ -14,6 +14,8 @@ ms.collection: bap-ai-copilot
 
 # Workflow history summary: Transparency FAQ
 
+[!include [banner](../includes/banner.md)]
+
 This article answers some frequently asked questions about the Workflow history summary feature in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
 ## What is Workflow history summary?

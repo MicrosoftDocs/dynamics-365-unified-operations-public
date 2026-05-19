@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Employee self service leave summary - Transparancy FAQ
+title: Employee self service leave summary - Transparency FAQ
 description: This article answers some frequently asked questions about the Employee self service leave summary feature.
 author: twheeloc
-ms.date: 01/17/2025
+ms.date: 05/14/2026
 ms.update-cycle: 180-days
 ms.topic: overview
 ms.reviewer: twheeloc
@@ -42,7 +42,7 @@ The intended use is for users to access the **Employee self service** page to qu
 
 ## How was Employee self service leave summary evaluated? What metrics are used to measure performance?
 
-The AI-generated summary was evaluated based on the existing transaction data (leave balances, time-off requests, and leave plan configuration). All calculations are done in Dynamics 365 Finance, not through Azure OpenAI. They were verified against the same data during the testing process.
+The AI-generated summary was evaluated based on the existing transaction data (leave balances, time-off requests, and leave plan configuration). All calculations are done in Dynamics 365 Finance, not through Azure OpenAI. The evaluation process verifies the summary against the same data.
 
 ## What are the limitations of Employee self service leave summary? How can users minimize the impact of those limitations when they use the system?
 
@@ -52,6 +52,6 @@ This Copilot feature was validated for [these languages](https://go.microsoft.co
 
 ## What operational factors and settings allow for effective and responsible use of Employee self service leave summary?
 
-System users can't change the processing of employee time off. Dynamics 365 Human Resources performs this processing by using Azure Open AI's large language model.
+System users can't change the processing of employee time off. Dynamics 365 Human Resources performs this processing by using Azure OpenAI's large language model.
 
-The system administrator can turn this feature off or on in **Feature management** using the **Employee self service leave summary** feature.
+The system administrator can turn this feature off or on in **Feature management** by using the **Employee self service leave summary** feature.

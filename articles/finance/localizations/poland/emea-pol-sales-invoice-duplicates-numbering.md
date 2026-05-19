@@ -4,7 +4,7 @@ description: For legal entities in Poland, the Duplicate sales invoice numbering
 author: mrolecki
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 12/16/2025
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Poland

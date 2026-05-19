@@ -2,8 +2,10 @@
 title: Support for multiple VAT registration numbers in reporting for Latvia
 description: This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for Latvia.
 author: liza-golub
-ms.date: 9/16/2024
-ms.topic: article
+ms.date: 05/04/2026
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: 
 ms.search.region: Latvia
@@ -16,12 +18,12 @@ ms.dyn365.ops.version: AX 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about the regulatory reports for Latvia that are available to legal entities that use the functionality for multiple value-added tax (VAT) registration numbers. 
-For more information about this functionality, the prerequisites that must be met before it's used, and the required setup, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
+This article provides information about the regulatory reports for Latvia that legal entities can use with the functionality for multiple value-added tax (VAT) registration numbers. 
+For more information about this functionality, the prerequisites, and the required setup, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 
 For general information about reporting for multiple VAT registrations, see [Reporting for multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md).
 
-When your legal entity is configured for reporting for multiple VAT registrations, the following reports are available for reporting for Latvia.
+When you configure your legal entity for reporting for multiple VAT registrations, the following reports are available for reporting for Latvia.
 
 | Report name | Release | Electronic reporting (ER) format |
 |---|---|---|

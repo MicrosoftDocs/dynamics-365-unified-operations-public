@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/08/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-03-01
@@ -20,20 +20,20 @@ This article explains how to work with fixed assets and intangible assets regist
 
 Fixed assets (FA) and intangible assets (IA) are considered depreciable assets. The following basic provisions of tax accounting for depreciable assets are stated in the Tax code of Russia:
 
--   Fixed assets or intangible assets that have a value that is less than or equal to 10,000 rubles, or a lifetime that is less than 12 months, aren't recognized as depreciable assets.
--   When the lifetime of fixed assets and intangible assets is determined, the allowable limits that are stated in the depreciation groups should be considered.
--   The depreciation of fixed assets and intangible assets in tax accounting can be calculated by using only two methods of depreciation: linear and non-linear.
--   Losses from the sale of a depreciable asset in tax accounting are recognized as deferrals and should be written off evenly, starting in the period after the period of sale and ending by the period that was initially specified as the end of the asset's lifetime.
+- Fixed assets or intangible assets that have a value that is less than or equal to 10,000 rubles, or a lifetime that is less than 12 months, aren't recognized as depreciable assets.
+- When the lifetime of fixed assets and intangible assets is determined, the allowable limits that are stated in the depreciation groups should be considered.
+- The depreciation of fixed assets and intangible assets in tax accounting can be calculated by using only two methods of depreciation: linear and non-linear.
+- Losses from the sale of a depreciable asset in tax accounting are recognized as deferrals and should be written off evenly, starting in the period after the period of sale and ending by the period that was initially specified as the end of the asset's lifetime.
 
 For the tax accounting of fixed assets and intangible assets, create the following registers as described in the article, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register):
 
--   Goods cost calculation
--   FA – information about object
--   IA – object information
--   FA depreciation
--   IA depreciation
--   FA/IA sale
--   Depreciation bonus recovery
+- Goods cost calculation
+- FA – information about object
+- IA – object information
+- FA depreciation
+- IA depreciation
+- FA/IA sale
+- Depreciation bonus recovery
 
 ## Set up registers
 
@@ -45,27 +45,27 @@ For **FA – information about object**, **IA – object information**, **FA dep
 
 To set up register parameters, follow these steps for each of the following registers: **FA – information about object**, **IA – object information**, **FA depreciation**, **IA depreciation**, and **FA/IA sale**.
 
-1.  In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**. On the **Tax registers** page, set up a register.
-1.  On the **Parameters** FastTab, set the following fields that are used to generate registers:
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**. On the **Tax registers** page, set up a register.
+1. On the **Parameters** FastTab, set the following fields that are used to generate registers:
 
-    -   Depreciation groups
-    -   Type of fixed asset
+    - Depreciation groups
+    - Type of fixed asset
 
     In each field, you can specify multiple comma-separated values. If you leave these fields blank, the register will be generated for all fixed assets or intangible assets.
 
-1.  On the Action Pane, select **Specific** to set up the expense codes and income codes for the register.
-1.  On the **Setup** FastTab, in the **Fixed asset type** field, select **Use for production** if you want to attribute fixed assets to production. Otherwise, select **Don't use for production**.
+1. On the Action Pane, select **Specific** to set up the expense codes and income codes for the register.
+1. On the **Setup** FastTab, in the **Fixed asset type** field, select **Use for production** if you want to attribute fixed assets to production. Otherwise, select **Don't use for production**.
 
 #### Set up the IA depreciation register
 
--   In Dynamics 365 Finance, on the **Tax registers** page, on the **Parameters** FastTab, in the **Expense code** field, specify the expense code. You can specify multiple comma-separated values. If you leave this field blank, the register will be generated for all fixed assets or intangible assets. Otherwise, only depreciation transactions that have the selected expense codes will be considered.
+- In Dynamics 365 Finance, on the **Tax registers** page, on the **Parameters** FastTab, in the **Expense code** field, specify the expense code. You can specify multiple comma-separated values. If you leave this field blank, the register will be generated for all fixed assets or intangible assets. Otherwise, only depreciation transactions that have the selected expense codes will be considered.
 
 #### Set up the FA/IA sale register
 
--   In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**. On the **Tax registers** page, on the **Parameters** FastTab, set the following fields to generate a register:
+- In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**. On the **Tax registers** page, on the **Parameters** FastTab, set the following fields to generate a register:
 
-    -   **Expense code** – Specify the expense code. You can specify multiple comma-separated values. If you leave this field blank, the register will be generated for sales transactions for all fixed assets or intangible assets.
-    -   **Do you want to calculate IA?** – Indicate whether lines for intangible assets should be calculated at the same time as the register lines.
+  - **Expense code** – Specify the expense code. You can specify multiple comma-separated values. If you leave this field blank, the register will be generated for sales transactions for all fixed assets or intangible assets.
+  - **Do you want to calculate IA?** – Indicate whether lines for intangible assets should be calculated at the same time as the register lines.
 
 ## Set up Fixed assets (Russia)
 
@@ -75,12 +75,12 @@ All operations except putting into operation are performed independently in all 
 
 Before you can calculate tax registers, you must set up the following prerequisites. For instructions, follow the links.
 
--   [Fixed asset value models](rus-set-up-fixed-assets.md#set-up-fixed-asset-value-models)
--   [Fixed asset posting profiles](rus-set-up-fixed-assets.md#set-up-fixed-asset-posting-profiles)
--   [Fixed asset groups](rus-set-up-fixed-assets.md#set-up-fixed-asset-groups)
--   [Fixed asset parameters](rus-set-up-fixed-assets.md#set-up-fixed-asset-parameters)
--   [Depreciation methods](rus-depreciation-setup.md#set-up-depreciation-methods)
--   [Depreciation groups](rus-depreciation-setup.md#set-up-depreciation-groups)
+- [Fixed asset value models](rus-set-up-fixed-assets.md#set-up-fixed-asset-value-models)
+- [Fixed asset posting profiles](rus-set-up-fixed-assets.md#set-up-fixed-asset-posting-profiles)
+- [Fixed asset groups](rus-set-up-fixed-assets.md#set-up-fixed-asset-groups)
+- [Fixed asset parameters](rus-set-up-fixed-assets.md#set-up-fixed-asset-parameters)
+- [Depreciation methods](rus-depreciation-setup.md#set-up-depreciation-methods)
+- [Depreciation groups](rus-depreciation-setup.md#set-up-depreciation-groups)
 
 ## The Goods cost calculation register
 
@@ -96,10 +96,10 @@ When a fixed asset is assembled from components, the register specifies all comp
 
 On the register lines, you can view the following information:
 
--   **Line number**
--   **Accounting object name** – The name of the accounting object.
--   **Account's object** – The inventory number of the fixed asset, or the product code.
--   **Accounting object acquisition date** – The acquisition date of the fixed asset.
+- **Line number**
+- **Accounting object name** – The name of the accounting object.
+- **Account's object** – The inventory number of the fixed asset, or the product code.
+- **Accounting object acquisition date** – The acquisition date of the fixed asset.
 
 The following fields are also available: **Transaction description**, **Qty**, **Amount**, and **Accounting object cost**.
 
@@ -107,28 +107,28 @@ The following fields are also available: **Transaction description**, **Qty**, *
 
 To walk through a scenario that involves miscellaneous purchase charges, follow these steps:
 
-1.  In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> FA groups**. On the **FA groups** page, create the following fixed asset group.
+1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> FA groups**. On the **FA groups** page, create the following fixed asset group.
 
     | **FA group** | **Name**  |
     |--------------|-----------|
     | Inventory    | Inventory |
 
-1.  Create the following two items. In the **Fixed assets (Russia)** section, in the **FA group** field, select the fixed asset group that you created.
+1. Create the following two items. In the **Fixed assets (Russia)** section, in the **FA group** field, select the fixed asset group that you created.
 
     | **Product number** | **Product name** | **FA group** |
     |--------------------|------------------|--------------|
     | Inventory01        | Inventory01      | Inventory    |
     | Inventory02        | Inventory02      | Inventory    |
 
-1.  Go to **Tax \> Setup \> Profit tax \> Registers**. On the **Tax registers** page, create the **Goods cost calculation** register. On the **Hide** FastTab, select the fields that should be hidden from the register.
-1.  Go to **Tax \> Setup \> Profit tax \> Expense codes**. On the **Expense and income codes** page, create the following two expense codes.
+1. Go to **Tax \> Setup \> Profit tax \> Registers**. On the **Tax registers** page, create the **Goods cost calculation** register. On the **Hide** FastTab, select the fields that should be hidden from the register.
+1. Go to **Tax \> Setup \> Profit tax \> Expense codes**. On the **Expense and income codes** page, create the following two expense codes.
 
     | **Expense code** | **Code type** | **Parent code** | **Sales tax code** |
     |------------------|---------------|-----------------|--------------------|
     | 902000000        | Income        |                 | НП                 |
     | 902030000        | Income        | 902000000       | НП                 |
 
-1.  Go to **Fixed assets (Russia) \> Common \> Fixed assets**. On the **Fixed assets** page, create the following two fixed assets.
+1. Go to **Fixed assets (Russia) \> Common \> Fixed assets**. On the **Fixed assets** page, create the following two fixed assets.
 
     | **FA group** | **Name**    | **Acquisition date** | **Acquisition cost** |
     |--------------|-------------|----------------------|----------------------|
@@ -137,7 +137,7 @@ To walk through a scenario that involves miscellaneous purchase charges, follow 
 
     The **FA inventory number** field is automatically set. In this example, it's set to **RUMF-000003** for the first fixed asset and **RUMF-000004** for the second fixed asset.
 
-1.  On the Action pane, select **Value models**. On the opened **FA value models** page, add the value models for the fixed assets. On the **General** FastTab, set the following fields (the names of the fields are in the first line of the table):
+1. On the Action pane, select **Value models**. On the opened **FA value models** page, add the value models for the fixed assets. On the **General** FastTab, set the following fields (the names of the fields are in the first line of the table):
 
     | **Name**    | **Value model** | **Putting into operation amount** | **ExpenseAndIncomeCode** |
     |-------------|-----------------|-----------------------------------|--------------------------|
@@ -146,15 +146,15 @@ To walk through a scenario that involves miscellaneous purchase charges, follow 
     | Inventory02 | RAP             | 100.00                            | 902030000                |
     | Inventory02 | TAX             | 100.00                            | 902030000                |
 
-1.  Create a purchase order. In the **Vendor account** field, select **RUMF-000002**.
-1.  Create the following two sales order lines.
+1. Create a purchase order. In the **Vendor account** field, select **RUMF-000002**.
+1. Create the following two sales order lines.
 
     | **Item number** | **Quantity** | **Unit price** | **FA inventory number** | **ExpenseAndIncomeCode** |
     |-----------------|--------------|----------------|-------------------------|--------------------------|
     | Inventory01     | 1.00         | 100.00         | RUMF-000003             | 902030000                |
     | Inventory02     | 1.00         | 100.00         | RUMF-000004             | 902030000                |
 
-1.  For the first line, create a miscellaneous charge where the **Charges value** field is set to **20.00**.
+1. For the first line, create a miscellaneous charge where the **Charges value** field is set to **20.00**.
 1. In the **Invoice date** field, specify **1/21/2019**, and then post the invoice.
 1. Go to **Fixed assets (Russia) \> Journals \> FA journal**. Create the FA journal for putting into operation, and put the assets into operation, using February 21, 2019, as the transaction date. Edit the lines as shown the following table.
 
@@ -170,7 +170,7 @@ To walk through a scenario that involves miscellaneous purchase charges, follow 
 1. Create the tax register journal for the second month of the year 201. Calculate all registers.
 1. In the **Goods cost calculation** register, you should see the following information.
 
-    ![A screenshot of a computer Description automatically generated.](../media/1_Goods_cost_calculation.png)
+    :::image type="content" source="../media/1_Goods_cost_calculation.png" alt-text="Screenshot of the Goods cost calculation register.":::
 
 ## <a name="register-information-fixed"></a>The FA – information about object register
 
@@ -180,36 +180,36 @@ The register contains information about all fixed assets that exist in the repor
 
 On the register lines, you can view the following information:
 
--   **Line number**
--   **Inventory number** – The inventory number of the fixed asset.
--   **Object name** – The name of the fixed asset.
--   **Acquisition date** – The acquisition date of the fixed asset.
--   **Initial cost** – The initial cost of the fixed asset.
--   **Original cost adjustment** – The adjustment amount of the original cost, such as the amount of a major repair.
--   **Depreciation group** – The depreciation group of the **TAX** value model of the fixed asset.
--   **Useful life** – The lifetime of the **TAX** value model of the fixed asset.
--   **Depreciation method** – The depreciation method of the **TAX** value model of the fixed asset.
--   **Special factor using** – The factor for the depreciation method of the **TAX** value model of the fixed asset.
--   **Depreciation start date** – The start date of depreciation for the **TAX** value model.
--   **Depreciation sum** – The total amount of depreciation until the end of the current month for the **TAX** value model.
--   **Useful life (months)** – The number of lifetime months that passed until the end of the current month for the **TAX** value model.
+- **Line number**
+- **Inventory number** – The inventory number of the fixed asset.
+- **Object name** – The name of the fixed asset.
+- **Acquisition date** – The acquisition date of the fixed asset.
+- **Initial cost** – The initial cost of the fixed asset.
+- **Original cost adjustment** – The adjustment amount of the original cost, such as the amount of a major repair.
+- **Depreciation group** – The depreciation group of the **TAX** value model of the fixed asset.
+- **Useful life** – The lifetime of the **TAX** value model of the fixed asset.
+- **Depreciation method** – The depreciation method of the **TAX** value model of the fixed asset.
+- **Special factor using** – The factor for the depreciation method of the **TAX** value model of the fixed asset.
+- **Depreciation start date** – The start date of depreciation for the **TAX** value model.
+- **Depreciation sum** – The total amount of depreciation until the end of the current month for the **TAX** value model.
+- **Useful life (months)** – The number of lifetime months that passed until the end of the current month for the **TAX** value model.
 
 The following fields will be set if depreciation for the fixed asset is stopped before the planned end of its depreciation:
 
--   **Depreciation stopping sign** – Here are some examples that show how this field is used:
+- **Depreciation stopping sign** – Here are some examples that show how this field is used:
 
-    -   If the fixed asset is sold before the planned end of its depreciation, this field is set to **Disposal (sale)**.
-    -   If the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to **Temporary closing-down**.
+  - If the fixed asset is sold before the planned end of its depreciation, this field is set to **Disposal (sale)**.
+  - If the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to **Temporary closing-down**.
 
--   **Starting date of depreciation stopping** – Here are some examples that show how this field is used:
+- **Starting date of depreciation stopping** – Here are some examples that show how this field is used:
 
-    -   If the fixed asset is sold before the planned end of its depreciation, this field is set to the sale date.
-    -   If the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to the start date of the temporary closure.
+  - If the fixed asset is sold before the planned end of its depreciation, this field is set to the sale date.
+  - If the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to the start date of the temporary closure.
 
--   **Depreciation interruption (months)** – For example, if the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to the number of months between the start date and end date of the temporary closure.
--   **Depreciation stopping last date** – For example, if the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to the end date of the temporary closure.
--   **Depreciation stopping interruption base** – For example, if the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to **Re-activation**.
--   **Taking out date of accounting** – The date of the taking out accounting of the fixed asset. For example, if the fixed asset is sold before the planned end of its depreciation, this field is set to the sale date.
+- **Depreciation interruption (months)** – For example, if the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to the number of months between the start date and end date of the temporary closure.
+- **Depreciation stopping last date** – For example, if the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to the end date of the temporary closure.
+- **Depreciation stopping interruption base** – For example, if the fixed asset is temporarily closed down before the planned end of its depreciation, this field is set to **Re-activation**.
+- **Taking out date of accounting** – The date of the taking out accounting of the fixed asset. For example, if the fixed asset is sold before the planned end of its depreciation, this field is set to the sale date.
 
 The following fields are also available: **Subgroup**, **Using asset direction observation date**, **Asset group membership using for production**, **Special factor start date**, **Asset original cost**, **Original cost depreciation period**, **Depreciation stopping base**, and **Taking out base**.
 
@@ -233,14 +233,14 @@ The register shows the amount of depreciation for each object. It also shows the
 
 On the register lines, you can view the following information:
 
--   **Line number**
--   **Depreciation month** – The date of the depreciation transaction of the **TAX** value model in the current month.
--   **Inventory number** – The inventory number of the fixed asset.
--   **Object name** – The name of the fixed asset.
--   **Depreciation method** – The depreciation method of the **TAX** value model of the fixed asset.
--   **Special factor using** – The factor for the depreciation method of the **TAX** value model of the fixed asset.
--   **Useful life for depreciation (months)** – The number of months of depreciation for the **TAX** value model of the fixed asset.
--   **Depreciation amount** – The amount of depreciation for the **TAX** value model in the current month.
+- **Line number**
+- **Depreciation month** – The date of the depreciation transaction of the **TAX** value model in the current month.
+- **Inventory number** – The inventory number of the fixed asset.
+- **Object name** – The name of the fixed asset.
+- **Depreciation method** – The depreciation method of the **TAX** value model of the fixed asset.
+- **Special factor using** – The factor for the depreciation method of the **TAX** value model of the fixed asset.
+- **Useful life for depreciation (months)** – The number of months of depreciation for the **TAX** value model of the fixed asset.
+- **Depreciation amount** – The amount of depreciation for the **TAX** value model in the current month.
 
 The following fields are also available: **Total depreciation amount**, **Asset group membership using for production**, **Original (depreciated) cost**, and **Base cost**.
 
@@ -256,27 +256,27 @@ The fields in this register are the same as the fields that were previously desc
 
 The **FA/IA sale** register is used for the following purposes:
 
--   Summarize information about sales of depreciable property.
--   Generate the amount of loss that is caused by the sale of depreciable property and recognized as deferrals for tax purposes.
+- Summarize information about sales of depreciable property.
+- Generate the amount of loss that is caused by the sale of depreciable property and recognized as deferrals for tax purposes.
 
 Register lines are created when sales transactions are generated. They are also created for each object of depreciable property.
 
 Data in the register is based on data from the following registers:
 
--   FA – information about object
--   FA depreciation
--   Goods issued
+- FA – information about object
+- FA depreciation
+- Goods issued
 
 On the register lines, you can view the following information:
 
--   **Line number**
--   **Transaction date** – The sale date of the fixed asset or intangible asset.
--   **Object name** – The inventory number of the fixed asset or intangible asset.
--   **Object selling price** – The selling price of the fixed asset or intangible asset.
--   **Initial value** – The acquisition cost of the fixed asset or intangible asset.
--   **Depreciation charges amount** – The total amount of depreciation until the end of the month of sale for the **TAX** value model.
--   **Total object selling expense** – The amount of expenses during the object sale. The value equals the initial cost minus the total depreciation amount.
--   **Deferrals selling loss** – The amount of deferrals that are created from the sale of fixed assets when there is a loss.
+- **Line number**
+- **Transaction date** – The sale date of the fixed asset or intangible asset.
+- **Object name** – The inventory number of the fixed asset or intangible asset.
+- **Object selling price** – The selling price of the fixed asset or intangible asset.
+- **Initial value** – The acquisition cost of the fixed asset or intangible asset.
+- **Depreciation charges amount** – The total amount of depreciation until the end of the month of sale for the **TAX** value model.
+- **Total object selling expense** – The amount of expenses during the object sale. The value equals the initial cost minus the total depreciation amount.
+- **Deferrals selling loss** – The amount of deferrals that are created from the sale of fixed assets when there is a loss.
 
 ## The Depreciation bonus recovery register
 
@@ -284,19 +284,19 @@ The depreciation bonus for a fixed asset for which **Putting into operation** wa
 
 After calculations are completed, the register shows data about depreciation bonus recovery transactions for fixed assets if the following conditions are met:
 
--   The fixed asset was put into operation after January 1, 2008.
--   The disposal (sale) operation was performed for the fixed asset.
--   Fewer than five years passed between the putting into operation date and the disposal date.
--   The fixed asset was sold to the affiliated customer.
+- The fixed asset was put into operation after January 1, 2008.
+- The disposal (sale) operation was performed for the fixed asset.
+- Fewer than five years passed between the putting into operation date and the disposal date.
+- The fixed asset was sold to the affiliated customer.
 
 On the register lines, you can view the following information:
 
--   **Line number**
--   **Transaction date** – The date of the disposal (sale).
--   **Expense/income type** – The expense code or income code that is specified in the transaction on the depreciation bonus.
--   **The naming of object of the account** – The text description of the transaction.
--   **Income amount** – The total amount of the depreciation bonus that was included in the income during the sale.
--   **CTL amount** – The calculated amount of the permanent tax liability. This amount is calculated by the expense method. As of the year 2020, this field is obsolete.
+- **Line number**
+- **Transaction date** – The date of the disposal (sale).
+- **Expense/income type** – The expense code or income code that is specified in the transaction on the depreciation bonus.
+- **The naming of object of the account** – The text description of the transaction.
+- **Income amount** – The total amount of the depreciation bonus that was included in the income during the sale.
+- **CTL amount** – The calculated amount of the permanent tax liability. This amount is calculated by the expense method. As of the year 2020, this field is obsolete.
 
 Data from the **Depreciation bonus recovery** register is included in the **Incomes – current period** and **Calculation of constant tax differences** registers.
 
@@ -381,16 +381,16 @@ To walk through a scenario that involves a depreciation bonus, follow these step
 1. On the **All customers** page, create customer **RUMF-000001**. On the **Invoice and delivery** FastTab, in the **Affiliated** section, set the **Affiliated** option to **Yes**.
 1. Create a sales order:
 
-    1.  In the **Customer account** field, select **RUMF-000001**.
-    1.  Create the following sales order line.
+    1. In the **Customer account** field, select **RUMF-000001**.
+    1. Create the following sales order line.
 
         | **Item number** | **Quantity** | **Unit price** | **FA inventory number** |
         |-----------------|--------------|----------------|-------------------------|
         | Inventory01     | 1            | 190,000.00     | 4031                    |
 
-    1.  Switch to the **Header** view, and then, on the **Financial dimensions** FastTab, in the **ExpenseAndIncomeCode** field, select **911050000**.
-    1.  In the **Invoice date** field, specify **4/30/2019**.
-    1.  Post the invoice.
+    1. Switch to the **Header** view, and then, on the **Financial dimensions** FastTab, in the **ExpenseAndIncomeCode** field, select **911050000**.
+    1. In the **Invoice date** field, specify **4/30/2019**.
+    1. Post the invoice.
 
 1. Create the tax register journal for first month of the year 2019, calculate all registers, and approve the journal.
 1. Create the tax register journal for second month of the year 2019, and calculate all registers.
@@ -452,6 +452,5 @@ To walk through a scenario that involves a depreciation bonus, follow these step
     | The naming of object of the account | Depreciation bonus recovery for FA \# 4031                                  |
     | Income amount                       | 60,000.00                                                                   |
     | CTL amount                          | 12,000.00                                                                   |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
