@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2026-05-12
 ms.search.form: UserSecGovSysUserLogV2, UserSecGovMain
-ms.dyn365.ops.version: Version 10.0.49
+ms.dyn365.ops.version: Version 10.0.48
 ---
 
 # User log and dormant user report V2 for finance and operations (Preview)
@@ -32,9 +32,9 @@ Before you turn on the feature, you must meet the following prerequisites:
 
 - You're signed in as a **System administrator**.
 - The **User security governance** feature is on. User Log V2 depends on it.
-- Your environment runs **Platform Update 73 (PU73)** or later.
-- Your environment runs **Finance and Operations** version **10.0.49** or later.
-
+- Your environment is on **Platform update 72 (PU72)** with build number **7.0.7996.40 or higher**, or any later
+  platform update.
+- Your environment is on **Finance and operations version 10.0.48** or later.
 ## Enable the user log feature
 
 To enable the user log feature, follow these steps:
