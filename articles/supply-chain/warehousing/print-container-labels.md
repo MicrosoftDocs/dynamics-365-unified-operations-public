@@ -40,7 +40,7 @@ As the system generates a label, it replaces field and method names that you use
 
 Follow these steps to create a container label layout.
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
+1. Go to **Warehouse management > Setup > Document routing > Label layout**.
 1. At the top of the list pane, set the **Label layout type** field to *Container label*.
 1. On the Action Pane, select **New** to create a label.
 1. Set the following values for the new label:
@@ -101,7 +101,7 @@ Follow these steps to create a container label layout.
 
 In the label layout in the preceding example, only the container ID (`$WHSContainerTable.ContainerId$`) is used, and this value is available directly in the container table. If you want to include related information (such as the delivery name that's related to a shipment), and the required layout label data source doesn't already exist, follow these steps to create it and then select it in your label layout.
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Label layout data source**.
+1. Go to **Warehouse management > Setup > Document routing > Label layout data source**.
 1. On the Action Pane, select **New**.
 1. Set the following values for the new label layout data source:
 
@@ -112,7 +112,7 @@ In the label layout in the preceding example, only the container ID (`$WHSContai
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select **Edit query**.
 1. A standard query editor dialog box appears. On the **Joins** tab, add joins to the required tables. (For example, you might make a join to the shipment table if you want your label to show the delivery name that's related to a shipment.)
-1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
+1. Go to **Warehouse management > Setup > Document routing > Label layout**.
 1. Create or select a label layout, and then, in the **Label layout data source ID** field, select the record that you just created.
 1. Add the new field values to the print layout code. Reference the correct *table.field-names* values in the ZPL code. The additional tables include a number as a suffix (*\_\#*).
 
@@ -123,7 +123,7 @@ In the label layout in the preceding example, only the container ID (`$WHSContai
 
 Label templates let you design labels that have more advanced layouts, which can include header, row, and footer elements. Follow these steps to format a label that includes label template elements.
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
+1. Go to **Warehouse management > Setup > Document routing > Label layout**.
 1. At the top of the list pane, set the **Label layout type** field to *Container Label*.
 1. Follow one of these steps:
 
@@ -225,7 +225,7 @@ Label templates let you design labels that have more advanced layouts, which can
 
 To specify the container label layouts that are used and where they're printed, define a **Container label routing** record by following these steps:
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Container label routing**.
+1. Go to **Warehouse management > Setup > Document routing > Container label routing**.
 1. On the Action Pane, select **New** to create a routing record.
 1. On the header of the new routing record, set the following fields:
 
@@ -263,7 +263,7 @@ To specify the container label layouts that are used and where they're printed, 
 
 If you want a container label to be printed automatically each time that a new container is created, configure each packing profile as described in the following procedure.
 
-1. Go to **Warehouse management \> Setup \> Packing \> Packing profiles**.
+1. Go to **Warehouse management > Setup > Packing > Packing profiles**.
 1. On the Action Pane, select **Edit**.
 1. Select the profile that container labels should automatically be printed for. If you're working with sample data, select the row where the **Packing profile ID** field is set to *WHS62*.
 1. Select the **Print container label at container creation** checkbox for the selected row.
@@ -276,7 +276,7 @@ If you want a container label to be printed automatically each time that a new c
 
 If you want a container label to be printed automatically each time a container is closed, configure the container packing policy as described in the following procedure.
 
-1. Go to **Warehouse management \> Setup \> Containers \> Container packing policies**.
+1. Go to **Warehouse management > Setup > Containers > Container packing policies**.
 1. On the Action Pane, select **Edit**.
 1. Select the policy that container labels should automatically be printed for. If you're working with sample data, select the row where the **Packing profile ID** field is set to *WHS62Close*.
 1. Set **Print container labels on container close** to *Always*.
@@ -286,7 +286,7 @@ If you want a container label to be printed automatically each time a container 
 
 To enable workers to print container labels manually, create a new mobile device menu item for the Warehouse Management mobile app.
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. For the new menu item, set the following fields:
 
@@ -301,7 +301,7 @@ To enable workers to print container labels manually, create a new mobile device
 
 After you create the mobile device menu item, add it to the mobile device menu. In this example, add it to the existing **Outbound** mobile device menu.
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**.
 1. On the Action Pane, select **Edit**.
 1. In the list pane, select the **Outbound** menu.
 1. In the **Available menus and menu items** column, select the mobile device menu item that you created (for example, *Print container label*).
@@ -314,7 +314,7 @@ For an example that shows how to print bar codes automatically as part of a cont
 
 To manually print a container label, follow one of these steps:
 
-- In the web client, go to **Warehouse management \> Packing and containerization \> Containers**, and select **Print \> Container label** on the Action Pane.
+- In the web client, go to **Warehouse management > Packing and containerization > Containers**, and select **Print > Container label** on the Action Pane.
 - In the Warehouse Management mobile app, use the **Print container label** mobile device menu item.
 
 To help reduce the number of steps that workers must perform when they print container labels, consider these suggestions for customizing and fine-tuning this scenario:
