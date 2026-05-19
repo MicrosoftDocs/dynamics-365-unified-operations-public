@@ -65,11 +65,7 @@ To confirm that the customer account payment method has been enabled, follow the
 
 When the capabilities for customer account payments are enabled on the B2B site, organizations usually want to show information about credit limits and credit limit balances during the order capture process. The credit limit for a customer is defined by the **Credit limit** property on the **Credit and collections** FastTab of the customer record in Commerce headquarters. However, in B2B scenarios, an order that a customer places should often be invoiced to the account of the organization that the customer belongs to. Therefore, you must set the **Invoice account** property on the **Invoice and delivery** FastTab of the customer record to the customer account ID of the organization. Then, when the customer places an order on the B2B site, the order will be invoiced to the organization. The B2B site will also use the credit limit of the organization instead of the credit limit that is defined on the customer record.
 
-The credit limit calculation and balance that are shown on the B2B website depend on the setting of the **Credit limit type** property in Commerce headquarters. The location of this property varies, depending on whether the **Credit management** feature is enabled in the **Feature management** workspace:
-
-- If the **Credit management** feature is enabled, the property is located on the **Credit limits** FastTab at **Credit and collections \> Setup \> Credit and collections parameters \> Credit**. 
-- If the **Credit management** feature is disabled, the property is located under **Credit rating** at **Accounts receivable \> Setup \> Accounts receivable parameters \> Credit rating**.
-
+The credit limit calculation and balance that are shown on the B2B website depend on the setting of the **Credit limit type** property in Commerce headquarters under **Credit limits** FastTab at **Credit and collections \> Setup \> Credit and collections parameters \> Credit**. 
 The values that the **Credit limit type** property supports are **None**, **Balance**, **Balance + packing slip or product receipt**, and **Balance + All**. For more information about these values, see [Credit limit type values](/dynamics365/supply-chain/sales-marketing/credit-limits-customers).
 
 > [!NOTE]
@@ -77,20 +73,20 @@ The values that the **Credit limit type** property supports are **None**, **Bala
 
 Another property that affects on-account ordering is the **Mandatory credit limit** property, which is located on the **Credit and collections** FastTab of the customer record. By setting this property to **Yes** for specific customers, you can force the system to check their credit limit, even if the **Credit limit type** property has been set to **None** to specify that the credit limit shouldn't be checked for any customer.
 
-Currently, a customer using the on-account payment method can't pay more than the remaining credit balance for an order. For example, if a customer's remaining credit balance is $1,000 but the order value is $1,200, the customer can only pay $1,000 by using the on-account method. The customer must then use some other payment method to pay the balance. In a future release, a Commerce configuration will allow the users to spend beyond their credit limit when placing orders.
+Starting in Dynamics 365 Commerce version **10.0.48**, you can configure customer orders to follow the full credit management flow. When you enable this feature, the system evaluates orders against credit management blocking rules and can put orders on credit hold for your finance team's visibility and control before fulfillment proceeds.
 
-The **Credit and collections** module has new credit management capabilities. To turn on these capabilities, enable the **Credit management** feature in the **Feature management** workspace. One of the new capabilities enables sales orders to be put on hold based on blocking rules. The credit manager persona can then release or reject the orders after further analysis. However, the capability to put sales orders on hold isn't applicable to Commerce orders, because sales orders often have a prepayment, and the **Credit management** feature doesn't completely support prepayment scenarios. 
+To enable this behavior, configure the following settings:
 
-Regardless of whether the **Credit management** feature is enabled, if a customer balance goes over the credit limit during order fulfillment, the sales orders won't go on hold. Instead, Commerce will generate either a warning message or an error message, depending on the value of the **Message when exceeding credit limit** field on the **Credit limits** FastTab.
+- Enable the **Leverage credit management setup for Commerce orders** feature in the **Feature management** workspace.
+- Enable the **Credit management** option in **Accounts receivable parameters** > **Credit management**.
 
-The **Exclude from credit management** property that prevents Commerce sales orders from going on hold is located on the sales order header (**Retail and commerce \> Customers \> All sales orders**). If this property is set to **Yes** (the default value) for Commerce sales orders, the orders will be excluded from the on hold workflow of credit management. Although the property is named **Exclude from credit management**, the defined credit limit will still be used during order fulfillment. The orders just won't go on hold.
+> [!NOTE]
+> If you don't enable either of these settings, Commerce orders use the default behavior where the system directly blocks the order or transaction when a customer's credit limit is exceeded, instead of routing it through the credit hold flow.
 
-The capability to put Commerce sales orders on hold based on blocking rules is planned for future Commerce releases. Until it's supported, if you must force Commerce sales orders to go through the new credit management flows, you can customize the following XML files in your Visual Studio solution. In the files, modify the logic so that the **CredManExcludeSalesOrder** flag is set to **No**. In this way, the **Exclude from credit management** property will be set to **No** by default for Commerce sales orders.
+You can control whether the system checks the credit limit at the time of order capture. To let B2B buyers on e-commerce site place orders even after the credit limit is exceeded, enable a new setting named **Skip credit check during order capture** in the **Functionality profile** for online stores. After the order is placed, the e-commerce orders go through the credit management flow. Depending on the configured blocking rules, orders might be placed on credit hold for review.
 
-- RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
-- RetailCallCenterOrderExtensions_CredMan_Extension.xml
-
-If the **CredManExcludeSalesOrder** flag is set to **No**, and a B2B customer can purchase from stores by using the point of sale (POS) application, the posting of cash and carry transactions might fail. For example, there's a blocking rule on the cash payment type, and the B2B customer bought some items in the store by using cash. In this case, the resulting sales order won't be successfully invoiced because it will go on hold. Therefore, the posting will fail. For this reason, we recommend that you do end-to-end testing after you implement this customization.
+> [!NOTE]
+> For the **Credit limit used** blocking rule to take effect, you must also enable **Check credit limit on sales order** in **Credit and collections parameters**. This setting applies to all credit management checkpoints, including order confirmation, picking list generation, and invoicing. Other blocking rules don't require this setting.
 
 ## Additional resources
 
