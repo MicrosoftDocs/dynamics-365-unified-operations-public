@@ -68,7 +68,7 @@ This version of Demand planning introduces the following fixes and improvements:
 
 ## New feature introduced in version 1.0.0.2999
 
-This version of Demand planning marks the public preview of *Generative insights*, which offers detailed insights calculated using AI models. The production ready preview supports two metrics: *seasonality* and *signal correlation*. The system clusters forecast data based on distinct patterns found for each metric. For each cluster, the system provides insights such as its relative size and confidence level. You can also choose the major contributor across various dimensions in the forecast. Learn more in [Generative insights for Demand planning (production ready preview)](generative-insights.md).
+This version of Demand planning marks the public preview of *Generative insights*, which offers detailed insights calculated using AI models. The production-ready preview supports two metrics: *seasonality* and *signal correlation*. The system clusters forecast data based on distinct patterns found for each metric. For each cluster, the system provides insights such as its relative size and confidence level. You can also choose the major contributor across various dimensions in the forecast. Learn more in [Generative insights for Demand planning (production-ready preview)](generative-insights.md).
 
 ## New fixes and improvements in version 1.0.0.2999
 
@@ -116,9 +116,9 @@ Automatic detection of seasonality patterns was introduced in Demand planning ve
 
 *Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they are easy to maintain. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md).
 
-#### Generative insights into seasonality patterns (production ready preview)
+#### Generative insights into seasonality patterns (production-ready preview)
 
-Generative insights provide AI-generated insights into your data. The initial preview of the feature provides generative insights into your seasonality patterns. Visual displays make it easy for planners to understand seasonality data and make business decisions based on it. Information is clustered (grouped) according to the detected seasonality patterns. For each cluster, generative insights provide a confidence score and describe the seasonality pattern in natural language. The system also indicates the proportion of planning items that follow the pattern. Learn more in [Generative insights for Demand planning (production ready preview)](generative-insights.md).
+Generative insights provide AI-generated insights into your data. The initial preview of the feature provides generative insights into your seasonality patterns. Visual displays make it easy for planners to understand seasonality data and make business decisions based on it. Information is clustered (grouped) according to the detected seasonality patterns. For each cluster, generative insights provide a confidence score and describe the seasonality pattern in natural language. The system also indicates the proportion of planning items that follow the pattern. Learn more in [Generative insights for Demand planning (production-ready preview)](generative-insights.md).
 
 #### Simplified security role dependencies
 

@@ -89,7 +89,7 @@ When you enter journals, you can define tag values on the journal batch header. 
 
 ### Default values for journals
 
-Tag values that you enter in a journal are entered as default values in the following way:
+When you enter tag values in a journal, the system uses them as default values in the following ways:
 
 - Single-line voucher:
 
@@ -147,7 +147,7 @@ After you switch to a fixed type, only values that exist in the defined list are
 
 After you post a transaction, the financial tags are available on the lines of the general ledger account entry. They appear on the **Voucher transactions** and **Transactions for main account** pages. The financial tags appear in separate columns, so that you can more easily sort and filter them.
 
-For reporting, the tags aren't part of the dimension sets. Therefore, you can't get a summarized balance of transactions for a specific tag value. For example, when you're looking at the trial balance, you can't get balances per tag value. However, when you drill down into the balances from the trial balance, the tag values appear on the detailed transactions. You can export the detailed transactions, including the tag values in separate columns, to Excel, where you can summarize them if balances are required.
+Financial tags aren't available in **Financial Reporting**. Therefore, you can't get a summarized balance of transactions for a specific tag value. For example, when you're looking at the trial balance, you can't get balances per tag value. However, when you drill down into the balances from the trial balance, the tag values appear on the detailed transactions. You can export the detailed transactions, including the tag values in separate columns, to **Excel** or **Power BI**, where you can summarize them if balances are required.
 
 If you deactivate a tag, the tag values remain on the posted transactions. By default, deactivated tags aren't shown on inquiry pages. However, you can add the columns by selecting **Show inactive financial tags**.
 

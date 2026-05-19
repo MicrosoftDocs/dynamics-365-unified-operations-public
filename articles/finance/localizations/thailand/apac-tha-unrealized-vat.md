@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Thailand
 ms.search.validFrom: 2016-11-30
@@ -22,77 +22,12 @@ This article explains how to set up and work with unrealized and realized value-
 
 Currently, four types of VAT can be calculated. They are defined by two categorical attributes: **Purchase/Sales VAT** and **Realized/Unrealized VAT**. The following table provides information about each type of VAT.
 
-<table width="100%">
-<tbody>
-<tr>
-<td width="15%">
-<p><strong>Term</strong></p>
-</td>
-<td width="30%">
-<p><strong>Definition</strong></p>
-</td>
-<td width="54%">
-<p><strong>When the VAT is calculated</strong></p>
-</td>
-</tr>
-<tr>
-<td width="15%">
-<p>Unrealized purchase VAT (also known as deferred input VAT)</p>
-</td>
-<td width="30%">
-<p>The calculated VAT amount that isn&rsquo;t due until the invoice is paid. This amount is posted to an unrealized purchase VAT account and can be claimed only after a tax invoice is received.</p>
-</td>
-<td width="54%">
-<p>You create and post a purchase order that has unrealized purchase VAT for items or services before you receive the tax invoice from the vendor.</p>
-</td>
-</tr>
-<tr>
-<td width="15%">
-<p>Realized purchase VAT (also known as input VAT)</p>
-</td>
-<td width="30%">
-<p>The tax on a company&rsquo;s purchases or input supplies. This tax is applicable to the purchase price and is also referred to as the purchase VAT.</p>
-</td>
-<td width="54%">
-<p>You reverse the unrealized purchase VAT to post the realized purchase VAT to the purchase VAT account after you receive the tax invoice from the vendor.</p>
-<p>You can acknowledge that you&rsquo;ve received the tax invoice from the vendor, and realize the VAT, in the following situations:</p>
-<ul>
-<li>You post a purchase order or invoice journal after you receive the tax invoice from the vendor. To record the realized purchase VAT directly, you must enter the tax invoice number, tax invoice date, and tax invoice receipt date.</li>
-<li>You post the payment journal after you receive the tax invoice from the vendor. To reverse the unrealized VAT directly, you must enter the tax invoice number, tax invoice date, and tax invoice receipt date that are applicable to the payment.</li>
-<li>You confirm the reversal journal to reverse the unrealized VAT indirectly. If the tax invoice isn&rsquo;t received at the time of payment, or if the payment is made for multiple tax invoices, you can use the <strong>Reversal journal</strong> page. To reverse the unrealized VAT and post the realized purchase VAT, you must enter the tax invoice number, tax invoice date, and tax invoice receipt date that are applicable for each invoice.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td width="15%">
-<p>Unrealized sales VAT (also known as deferred output VAT)</p>
-</td>
-<td width="30%">
-<p>The calculated VAT amount that isn&rsquo;t due until the invoice is paid. This amount is posted to an unrealized sales VAT account and can be claimed only after a tax invoice or receipt is printed.</p>
-</td>
-<td width="54%">
-<p>You create and post a sales order or free text invoice that has unrealized sales VAT for items or services by generating only an invoice.</p>
-</td>
-</tr>
-<tr>
-<td width="15%">
-<p>Realized sales VAT (also known as output VAT)</p>
-</td>
-<td width="30%">
-<p>The tax on a company&rsquo;s sales. This tax is applicable to the sales price and is also referred to as the sales VAT.</p>
-</td>
-<td width="54%">
-<p>You reverse the unrealized sales VAT to post the realized sales VAT to the sales VAT account after you generate the tax invoice or receipt for the customer.</p>
-<p>You can generate the tax invoice or receipt, and realize the VAT, in the following situations:</p>
-<ul>
-<li>You post a sales order or free text invoice, and generate the tax invoice or receipt, after you receive the payment from the customer. You can record the realized sales VAT directly.</li>
-<li>You reverse the unrealized sales VAT and post the realized sales VAT after you send the tax invoice or receipt to the customer. You can generate the tax invoice or receipt when you settle the payment with the invoice.</li>
-<li>You create and post debit and credit notes from sales orders and free text invoices. When you post the debit or credit notes, only the realized sales VAT is posted.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+| **Term** | **Definition** | **When the VAT is calculated** |
+|---|---|---|
+| Unrealized purchase VAT (also known as deferred input VAT) | The calculated VAT amount that isn't due until the invoice is paid. This amount is posted to an unrealized purchase VAT account and can be claimed only after a tax invoice is received. | You create and post a purchase order that has unrealized purchase VAT for items or services before you receive the tax invoice from the vendor. |
+| Realized purchase VAT (also known as input VAT) | The tax on a company's purchases or input supplies. This tax is applicable to the purchase price and is also referred to as the purchase VAT. | You reverse the unrealized purchase VAT to post the realized purchase VAT to the purchase VAT account after you receive the tax invoice from the vendor. You can acknowledge that you've received the tax invoice from the vendor, and realize the VAT, in the following situations: You post a purchase order or invoice journal after you receive the tax invoice from the vendor. To record the realized purchase VAT directly, you must enter the tax invoice number, tax invoice date, and tax invoice receipt date. You post the payment journal after you receive the tax invoice from the vendor. To reverse the unrealized VAT directly, you must enter the tax invoice number, tax invoice date, and tax invoice receipt date that are applicable to the payment. You confirm the reversal journal to reverse the unrealized VAT indirectly. If the tax invoice isn't received at the time of payment, or if the payment is made for multiple tax invoices, you can use the **Reversal journal** page. To reverse the unrealized VAT and post the realized purchase VAT, you must enter the tax invoice number, tax invoice date, and tax invoice receipt date that are applicable for each invoice. |
+| Unrealized sales VAT (also known as deferred output VAT) | The calculated VAT amount that isn't due until the invoice is paid. This amount is posted to an unrealized sales VAT account and can be claimed only after a tax invoice or receipt is printed. | You create and post a sales order or free text invoice that has unrealized sales VAT for items or services by generating only an invoice. |
+| Realized sales VAT (also known as output VAT) | The tax on a company's sales. This tax is applicable to the sales price and is also referred to as the sales VAT. | You reverse the unrealized sales VAT to post the realized sales VAT to the sales VAT account after you generate the tax invoice or receipt for the customer. You can generate the tax invoice or receipt, and realize the VAT, in the following situations: You post a sales order or free text invoice, and generate the tax invoice or receipt, after you receive the payment from the customer. You can record the realized sales VAT directly. You reverse the unrealized sales VAT and post the realized sales VAT after you send the tax invoice or receipt to the customer. You can generate the tax invoice or receipt when you settle the payment with the invoice. You create and post debit and credit notes from sales orders and free text invoices. When you post the debit or credit notes, only the realized sales VAT is posted. |
 
 
 ## Set up unrealized VAT and realized VAT
@@ -205,7 +140,7 @@ If you receive the tax invoice after you've made the payment and settled the inv
 1. On the **Reversal journal header** FastTab, set the **Tax invoice number**, **Tax invoice date**, and **Tax invoice receipt date** fields.
 1. On the Action Pane, on the **Reversal journal** tab, in the **Maintain** group, select **Post** to post the journal.
 
-![Reversal journal page.](../media/apac_tha_reversal_journal_page.png)
+:::image type="content" source="../media/apac_tha_reversal_journal_page.png" alt-text="Screenshot of the Reversal journal page.":::
 
 After you reverse the unrealized purchase VAT, the following tax transactions are present.
 

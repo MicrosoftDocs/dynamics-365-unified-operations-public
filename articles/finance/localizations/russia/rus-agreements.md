@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -14,6 +14,7 @@ ms.dyn365.ops.version: 8.1
 ---
 
 # Agreements
+
 [!include [banner](../../includes/banner.md)]
 
 In standard Microsoft Dynamics 365 Finance functionality, there are sales agreements and purchase agreements. For more information about these agreement types, see:
@@ -49,6 +50,5 @@ Find more details in the following topics:
 - [Set up and create agreements](rus-set-up-and-create-agreements.md)
 - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
 - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

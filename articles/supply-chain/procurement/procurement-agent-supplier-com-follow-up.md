@@ -1,12 +1,12 @@
 ﻿---
-title: Follow up on purchase orders using the Supplier Communications Agent (production ready preview)
-description: Learn how to use the Supplier Communications Agent to identify unconfirmed or delayed purchase orders and automate follow-up emails tailored to your business needs.
+title: Follow up on purchase orders using the Procurement Agent (production-ready preview)
+description: Learn how to use the Procurement Agent to identify unconfirmed or delayed purchase orders and automate follow-up emails tailored to your business needs.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 12/19/2025
+ms.date: 04/24/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -14,15 +14,15 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Follow up on purchase orders by using the Supplier Communications Agent (production ready preview)
+# Follow up on purchase orders by using the Procurement Agent (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The Supplier Communications Agent helps you identify and follow up on purchase orders that vendors didn't yet confirm or that delivery is late for. For each order that it finds, the agent automatically generates a draft email that is addressed to the relevant vendor.
+The Procurement Agent helps you identify and follow up on purchase orders that vendors didn't yet confirm or that delivery is late for. For each order that it finds, the agent automatically generates a draft email that is addressed to the relevant vendor.
 
-The Supplier Communications Agent helps you perform the following actions:
+The Procurement Agent helps you perform the following actions:
 
 - Create agent tasks to find purchase orders that require follow-up. Each user has unique tasks, so you can create and adjust them to meet your specific business needs. Two default tasks are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete the default tasks as required to meet your business needs.
 - Configure how emails are generated for each task.
@@ -95,7 +95,7 @@ To configure automatic sending of follow-up emails without requiring user review
 
 1. Sign in to Supply Chain Management as an administrator.
 1. Go to **System administration** \> **Workspaces** \> **Feature management**.
-1. Make sure the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md).
+1. Make sure the *(Production ready preview) Procurement Agent – Supplier communications - automatically sending follow-up emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure supplier communications features](procurement-agent-supplier-com-setup.md).
 1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
 1. Open the **Configuration** tab.
 1. On the **General** FastTab, set **Batch email provider** to *Graph*. This setting turns on the batch email provider.
@@ -107,13 +107,13 @@ To configure automatic sending of follow-up emails without requiring user review
 
 When a user reviews and sends an email that the agent drafts, the email comes from that user's email address.
 
-When the system automatically sends an email without user review, the email comes from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address.
+When the system automatically sends an email without user review, the email comes from the [agent identity user](procurement-agent-supplier-com-setup.md#set-up-agent-identity) email address.
 
 To configure the email address of any user (including the agent identity user):
 
 1. Sign in to Supply Chain Management as an administrator.
 1. Go to **System administration** \> **Users**.
-1. Select the user you want to configure (for example, the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity)).
+1. Select the user you want to configure (for example, the [agent identity user](procurement-agent-supplier-com-setup.md#set-up-agent-identity)).
 1. On the Action Pane, select **User options**.
 1. Open the **Account** tab.
 1. On the **Email provider selection** FastTab, make the following settings:
@@ -169,16 +169,16 @@ Edit each message as required, and then select **Send** to send it to the vendor
 
 ## Set up the periodic agent run schedule and batch job options
 
-The Supplier Communications Agent includes a batch job that runs the agent automatically. To change the default configuration of the job, follow these steps:
+The Procurement Agent includes a batch job that runs the agent automatically. To change the default configuration of the job, follow these steps:
 
 1. Go to **System Administration** \> **Inquiries** \> **Batch jobs**.
 1. Find and select the job that has a **Job description** that matches the name of the agent configuration, which is described in [Configure task criteria and email settings](#configure-task-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly by using this text in the **Job description** column header filter. The agent name might be different on your system, so check the name before proceeding.
 
-    :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png":::
+    :::image type="content" source="media/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-agent-batch-job.png":::
 
 1. Select the job, and then select **Recurrence** from the Action Pane.
 1. In the **Define recurrence** dialog, set up the run schedule as desired, and then select **OK**.
 
-    :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png" alt-text="Screenshot showing the settings provided for scheduling a batch job." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png":::
+    :::image type="content" source="media/supplier-agent-batch-job-schedule.png" alt-text="Screenshot showing the settings provided for scheduling a batch job." lightbox="media/supplier-agent-batch-job-schedule.png":::
 
 1. To get more information about the batch job and adjust other settings, return to the **Batch jobs** page and select the link in the **Job ID** column.

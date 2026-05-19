@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -69,49 +69,10 @@ To set up parameters for VAT restoration, follow these steps:
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT restoration** section, set the following fields:
   
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td> Revenue calculation method
-</td>
-<td> Select the method that is used for revenue calculation:
-<ul>
-<li> <strong>All</strong> – All customer invoices are included in the revenue calculation. </li>                            
-<li> <strong>Indirect</strong> – Only customer invoices that don't have a direct relation to the purchase invoice are included in the revenue calculation. </li>
-</ul>
-</td>
-</tr>
-<tr>
-<td> VAT restoring method 
-</td>
-<td> Select the method that is used for VAT restoration: 
-<ul>
-<li> <strong>Mixed</strong> – The VAT restoration amount is calculated differently, depending
-on whether a direct connection with outgoing invoices is determined for
-incoming invoices. 
-    <ul>
-    <li>   For incoming invoices where a direct connection with outgoing invoices is
-    determined, the VAT restoration amount is calculated based on the proportion
-    of the cost of goods that were sold to the cost of goods that VAT was
-    deducted for. </li>
-    <li>   For incoming invoices where a direct connection with the outgoing invoices
-    isn't determined, the VAT restoration amount is calculated based on the
-    export (non-taxable) ratio that is calculated for the current period. </li>
-    </ul>
-</li>
-<li><strong>By factor</strong> – The VAT restoration amount is calculated based on the export
-(non-taxable) ratio that is calculated for the current period.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+| Field | Description |
+|-------|-------------|
+| Revenue calculation method | Select the method that is used for revenue calculation: **All** – All customer invoices are included in the revenue calculation. **Indirect** – Only customer invoices that don't have a direct relation to the purchase invoice are included in the revenue calculation. |
+| VAT restoring method | Select the method that is used for VAT restoration: **Mixed** – The VAT restoration amount is calculated differently, depending on whether a direct connection with outgoing invoices is determined for incoming invoices. For incoming invoices where a direct connection with outgoing invoices is determined, the VAT restoration amount is calculated based on the proportion of the cost of goods that were sold to the cost of goods that VAT was deducted for. For incoming invoices where a direct connection with the outgoing invoices isn't determined, the VAT restoration amount is calculated based on the export (non-taxable) ratio that is calculated for the current period. **By factor** – The VAT restoration amount is calculated based on the export (non-taxable) ratio that is calculated for the current period. |
 
 ### Use fixed assets for export or VAT-free activities
 
@@ -140,7 +101,7 @@ To calculate the VAT amounts that must be restored, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **VAT restoring journal**. The **VAT restoring journal** page shows the data for incoming invoice-factures that VAT amounts must be restored for in the current period.
 
-    ![VAT restoring journal page.](../media/1.%20VAT%20restoring%20journal.jpg)
+    :::image type="content" source="../media/1.%20VAT%20restoring%20journal.jpg" alt-text="Screenshot of the VAT restoring journal page.":::
 
 1. In the **Date in the period** field, select the date in the reporting period to show the VAT details for.
 1. Select **Restore VAT procedure** \> **1. Update inventory links**, and then select **OK**.
@@ -196,11 +157,11 @@ To calculate the VAT amounts that must be restored, follow these steps:
          - **VAT** – The fields in this section show the total VAT amounts that must be restored on export or non-taxable operations, and on fixed assets that aren't fully depreciated and are written off.
           - **Indirect costs**, **Direct costs**, and **Included fixed assets:** – The fields in these sections show the totals for direct and indirect VAT, including amounts for fixed assets that are used in export or non-taxable operations.
 
-          ![VAT restoring journal total amounts.](../media/2%20VAT%20restoring%20journal%20totals.jpg) 
+          :::image type="content" source="../media/2%20VAT%20restoring%20journal%20totals.jpg" alt-text="Screenshot of the VAT restoring journal total amounts dialog.":::
 
      - Select **Revenue calculation** to open the **Revenue calculation** dialog, where you can view the list of customer invoices in the current period.  The list is generated based on the value of the **Revenue calculation method** field on the **General ledger parameters** page.
 
-         ![Revenue calculation.](../media/3%20Revenue%20calculation.jpg)
+         :::image type="content" source="../media/3%20Revenue%20calculation.jpg" alt-text="Screenshot of the Revenue calculation dialog.":::
            
          For each invoice in the **Revenue calculation** dialog, you can perform the following actions:
          
@@ -216,7 +177,7 @@ To calculate the VAT amounts that must be restored, follow these steps:
           - The amounts of VAT that were restored in the current period and distributed to each export invoice
           - The share of export invoice revenue in the total export revenue amount for the period
 
-            ![Incoming VAT for indirect costs.](../media/4%20VAT%20distribution.jpg)
+            :::image type="content" source="../media/4%20VAT%20distribution.jpg" alt-text="Screenshot of the VAT distribution dialog showing export sales invoices.":::
               
             This information is required to define the VAT amount that must be deducted when export is confirmed, or when the deadline for confirmation will expire but export isn't confirmed. This information is also used in the VAT declaration. For more information, see [VAT declaration (Russia)](/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
 

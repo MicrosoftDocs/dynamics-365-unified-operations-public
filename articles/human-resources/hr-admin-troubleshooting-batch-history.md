@@ -4,7 +4,7 @@
 title: Optimize performance with auto cleanup tasks
 description: This article explains how to improve performance in Microsoft Dynamics 365 Human Resources by cleaning up the batch job history.
 author: twheeloc
-ms.date: 08/21/2021
+ms.date: 05/14/2026
 ms.topic: how-to
 # optional metadata
 
@@ -29,42 +29,40 @@ ms.dyn365.ops.version: Platform update 24
 
 **Issue**
 
-Microsoft Dynamics 365 Human Resources can experience performance issues if the batch job history grows too large.
+Microsoft Dynamics 365 Human Resources can experience performance problems if the batch job history grows too large.
 
 **Cause**
 
-Batch jobs that run frequently can lead to unsustainable growth of the batch job history. This can cause performance issues. 
+Batch jobs that run frequently can cause unsustainable growth of the batch job history. This growth can lead to performance problems.
 
 **Resolution**
 
-Schedule an automatic task to clean up your batch job history. We recommend setting up the task to run weekly, but you might need to run the cleanup more or less frequently, depending on your environment. The following procedure contains our recommended settings, but you can change these according to your needs.
+Schedule an automatic task to clean up your batch job history. Set up the task to run weekly, but you might need to run the cleanup more or less frequently, depending on your environment. The following procedure contains the recommended settings, but you can change these settings according to your needs.
 
 1. In Human Resources, select **System administration**.
 
-2. In the **Search** bar, enter **Batch job history clean-up**.
+1. In the **Search** bar, enter **Batch job history clean-up**.
 
-   ![Search for batch job history cleanup.](media/talent-batch-history-cleanup-search-bar.png)
+   :::image type="content" source="media/talent-batch-history-cleanup-search-bar.png" alt-text="Screenshot of searching for batch job history cleanup in the Search bar.":::
 
-3. In **History limit (days)**, enter **30**.
+1. In **History limit (days)**, enter **30**.
 
-   ![Set history limit to 30.](media/talent-batch-history-cleanup-history-limit.png)
+   :::image type="content" source="media/talent-batch-history-cleanup-history-limit.png" alt-text="Screenshot of setting the history limit to 30 days.":::
 
-4. Select **Run in the background** and then select **Recurrence**.
+1. Select **Run in the background** and then select **Recurrence**.
 
-   ![Set recurrence.](media/talent-batch-history-cleanup-recurrence.png)
+   :::image type="content" source="media/talent-batch-history-cleanup-recurrence.png" alt-text="Screenshot of selecting Run in the background and Recurrence options.":::
 
-5. Under **Define recurrence**, set the **Start date** and **Start time** to occur during off-hours or the weekend, and then select **NO END DATE**. 
+1. Under **Define recurrence**, set the **Start date** and **Start time** to occur during off-hours or the weekend, and then select **NO END DATE**.
 
-   ![Define recurrence start date and time.](media/talent-batch-history-cleanup-define-recurrence.png)
+   :::image type="content" source="media/talent-batch-history-cleanup-define-recurrence.png" alt-text="Screenshot of defining the recurrence start date and start time with no end date.":::
 
-6. Under **RECURRENCE PATTERN**, select **Days** and set **REPEAT AFTER SPECIFIED INTERVAL** to **7**.
+1. Under **RECURRENCE PATTERN**, select **Days** and set **REPEAT AFTER SPECIFIED INTERVAL** to **7**.
 
-   ![Set cleanup to repeat weekly.](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   :::image type="content" source="media/talent-batch-history-cleanup-recurrence-pattern.png" alt-text="Screenshot of setting the recurrence pattern to repeat every seven days.":::
 
-7. Select **OK**.
+1. Select **OK**.
 
-8. Change any other parameters under **Run in the background** as necessary, and then select **OK**.
-
-
+1. Change any other parameters under **Run in the background** as necessary, and then select **OK**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
