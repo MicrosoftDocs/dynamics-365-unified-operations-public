@@ -229,7 +229,7 @@ To specify the container label layouts that are used and where they're printed, 
 1. On the Action Pane, select **New** to create a routing record.
 1. On the header of the new routing record, set the following fields:
 
-        - **Sequence number** – Enter an integer to define the order in which to evalute the routing record. Each routing must have a unique sequence number. The system evaluates routings in order of ascending sequence numbers and uses the first routing for which the the criteria are met. If you're using demo data, enter *1*.
+    - **Sequence number** – Enter an integer to define the order in which to evalute the routing record. Each routing must have a unique sequence number. The system evaluates routings in order of ascending sequence numbers and uses the first routing for which the the criteria are met. If you're using demo data, enter *1*.
     - **Name** – Enter a name for the routing record. For example, enter *Container packing*.
 
 1. On the **Overview** FastTab, use the following fields to define the criteria that select the label routing:
@@ -245,7 +245,7 @@ To specify the container label layouts that are used and where they're printed, 
     - **Run query** – To add custom selection criteria to a routing record, set this option to *Yes*, and then select **Edit query** on the Action Pane. A standard query editor dialog box appears, where you can add more selection criteria.
 
     > [!NOTE]
-        > When you print a container label from the Warehouse Management mobile app, the current user's warehouse, location, worker ID, and user ID are passed as possible filter values for selecting the printer and layout. Other values are found based on the selected shipment.
+    > When you print a container label from the Warehouse Management mobile app, the current user's warehouse, location, worker ID, and user ID are passed as possible filter values for selecting the printer and layout. Other values are found based on the selected shipment.
 
     > [!NOTE]
     > When a worker prints a container label from the **Close container** dialog, their worker ID, packing station warehouse, and location are passed as possible filter values for selecting the printer and layout. Other values are found based on the selected shipment.
