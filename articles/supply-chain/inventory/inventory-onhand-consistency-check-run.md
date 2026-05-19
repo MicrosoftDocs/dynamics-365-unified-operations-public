@@ -25,7 +25,7 @@ Run an on-hand consistency check when you observe symptoms such as the following
 - Physical inventory or available quantity that doesn't match the sum of posted inventory transactions.
 - Discrepancies between the on-hand list and the underlying transaction history.
 
-These symptoms typically indicate that the `InventSum` or `WHSInventReserve` tables are out of sync with `InventTrans`. The most common cause is data corruption introduced by a script or external process that updated `InventTrans` directly without recalculating the summary tables. Running the consistency check in *Fix error* mode rebuilds the summary tables from the transactions, which resolves the discrepancy.
+These symptoms typically indicate that the `InventSum` or `WHSInventReserve` tables are out of sync with `InventTrans`. The most common cause is a data inconsistency introduced by a script or external process that updated `InventTrans` directly without recalculating the summary tables. Running the consistency check in *Fix error* mode rebuilds the summary tables from the transactions, which resolves the discrepancy.
 
 > [!NOTE]
 > If Inventory Visibility is enabled, complete the additional preparation steps in [Run on-hand consistency checks while Inventory Visibility is enabled](inventory-onhand-consistency-check.md) before you run the check.
@@ -41,7 +41,7 @@ To rebuild on-hand data for one or more specific items, follow these steps:
     - **Check/Fix:** *Fix error*
 
 1. Expand the **Inventory management** tree, expand **Item**, and then select the **On-hand** checkbox.
-1. Open the **More** menu (three dots) and select **Dialog**.
+1. With the **Item** node still in focus, open the **More** menu (three dots) and select **Dialog**.
 1. In the dialog, filter for the specific item or items that you want to check.
 1. Select **OK** to run the check. To run it asynchronously, use the **Batch** tab to schedule it as a batch job.
 
@@ -59,7 +59,7 @@ To turn on this option, follow these steps:
 1. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters**.
 1. On the **General** tab, in the **On-hand consistency check clean up** section, set **Skip on-hand aggregation and clean up in on-hand consistency check** to *Yes*.
 
-The setting applies the next time you run the consistency check with **Check/Fix** set to *Fix error*. When the option is enabled, the check skips inventory-sum aggregation by financial inventory dimensions and the cleanup of obsolete or closed `InventSum` rows. Leave the option set to *No* if you want the check to also tidy up `InventSum` as part of the run.
+The setting applies the next time you run the consistency check with **Check/Fix** set to *Fix error*. When the option is enabled, the check skips inventory-sum aggregation by financial inventory dimensions and the removal of obsolete or closed `InventSum` rows. Leave the option set to *No* if you want the check to also consolidate and remove obsolete `InventSum` rows as part of the run.
 
 ## Related information
 
