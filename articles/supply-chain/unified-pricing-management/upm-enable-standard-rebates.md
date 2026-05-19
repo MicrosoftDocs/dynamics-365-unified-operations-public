@@ -38,10 +38,10 @@ To enable the features, follow these steps:
 To enable non-attribute based rebate management deals, follow these steps:
 1. Go to **Modules** > select **Rebate management** to see all pages related to rebate management deals.
 Two new pages help you manage non-attribute based rebate deals:
- - **Non-attribute based customer rebate deals**
- - **Non-attribute based customer royalty deals**
+    - **Non-attribute based customer rebate deals**
+    - **Non-attribute based customer royalty deals**
 
-1. Go to the **All rebate management deals** page. On this page, you can view all rebate deals. The **Attribute-based rebate** column shows the status of each rebate deal.
+2. Go to the **All rebate management deals** page. On this page, you can view all rebate deals. The **Attribute-based rebate** column shows the status of each rebate deal.
 From this page, you can manage any existing rebate deals or create new rebate deals. When creating new rebate deals, use the dropdown for **Type of rebate management deal** to select attribute-based or non-attribute based rebate deal types.
 
 The **Customer rebate deals** and **Customer royalty deals** pages allow you to view and manage attribute-based customer rebate deals or royalty deals.
