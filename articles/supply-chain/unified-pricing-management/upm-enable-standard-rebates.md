@@ -1,7 +1,7 @@
 ---
 title: Enable non-attribute based rebate management deals in Unified pricing management
 description: Allow non-attribute based rebate management deals to be considered in Unified pricing management.
-author: sherry-zheng
+author: chelsiemb
 ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
@@ -15,69 +15,71 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-The Rebate management module is used to create contracts, deals, or agreements between a business and its customers or vendors, so that rebates, deductions, and royalties can be calculated. When Unified pricing is enabled, rebates can be determined based on pricing attributes.
+Use the Rebate management module to create contracts, deals, or agreements between a business and its customers or vendors, so that you can calculate rebates, deductions, and royalties. When you enable Unified pricing, you can determine rebates based on pricing attributes.
 
-The feature described in this article enables **non-attribute based rebate management deals** to be included in Unified pricing management scenarios. When enabled, existing rebate agreements are considered during pricing evaluation without requiring changes to their configuration.
+The feature described in this article enables **non-attribute based rebate management deals** to be included in Unified pricing management scenarios. When you enable this feature, the pricing evaluation process considers existing rebate agreements without requiring changes to their configuration.
 
-This capability allows organizations to continue using existing rebate management deals while adopting Unified pricing. Customers are also empowered to create new non-attribute based rebate deals, facilitating the migration to Unified pricing for those customers who rely on the legacy behavior.
+This capability allows organizations to continue using existing rebate management deals while adopting Unified pricing. Customers can also create new non-attribute based rebate deals, facilitating the migration to Unified pricing for those customers who rely on the legacy behavior.
 
 ## Prerequisites
 
-To use the features described in this article, you must be running version 10.0.48 or later of your Microsoft finance and operations apps.
+The features described in this article are available starting in Microsoft Dynamics 365 finance and operations version 10.0.48 or later.
 
 ## First steps
 
-Start by enabling the following features in your Microsoft finance and operations app.
+Start by enabling the following features in your Microsoft Dynamics 365 finance and operations app.
 
-Navigate to Feature management workspace:
+Go to the Feature management workspace:
 
 1. Enable the feature titled "Unified pricing management".
-2. Enable the feature titled "Enable non-attribute based rebate management deals for Unified pricing scenario".
+1. Enable the **Enable non-attribute based rebate management deals for Unified pricing scenario** feature.
 
-[<img src="media/feature-management.png" alt="View of feature management form with relevant pricing features" title="View of feature management form with relevant pricing features" width="720" />](media/feature-management.png#lightbox)
+:::image type="content" source="media/feature-management.png" alt-text="Screenshot of the feature management form with relevant pricing features." lightbox="media/feature-management.png":::
 
-NOTE: There is a dependency between the listed features. The "Enable non-attribute based rebate management deals for Unified pricing scenario" feature cannot be enabled if the "Unified pricing management" feature is disabled.
-The "Unified pricing management" feature cannot be disabled if the "Enable non-attribute based rebate management deals for Unified pricing scenario" feature is enabled.
+> [!NOTE]
+> There's a dependency between the listed features. You can't enable the **Enable non-attribute based rebate management deals for Unified pricing scenario** feature if the **Unified pricing management** feature is disabled.
+> You can't disable the **Unified pricing management** feature if the **Enable non-attribute based rebate management deals for Unified pricing scenario** feature is enabled.
 
 ## Enable non-attribute based rebate management deals
 
-Navigate to the Modules view of your Microsoft finance and operations app. Click on the Rebate management tab and view all forms relevant to Rebate management deals.
-There are two new forms available for the customer to manage non-attribute based rebate deals, "Non-attribute based customer rebate deals" and "Non-attribute based customer royalty deals".
+1. Go to **Modules**.
+1. Select the **Rebate management** tab to see all pages related to rebate management deals.
+Two new pages help you manage non-attribute based rebate deals: **Non-attribute based customer rebate deals** and **Non-attribute based customer royalty deals**.
 
-[<img src="media/module-sidebar.png" alt="Rebate manadement module sidebar view" title="Rebate manadement module sidebar view" width="720" />](media/module-sidebar.png#lightbox)
+:::image type="content" source="media/module-sidebar.png" alt-text="Rebate management module sidebar view." lightbox="media/module-sidebar.png":::
 
-Navigate to the "All rebate management deals form". Within this form, it is possible to view all rebate deals. The status of each rebate deal is indicated by the "Attribute-based rebate" column.
+Go to the **All rebate management deals** page. On this page, you can view all rebate deals. The **Attribute-based rebate** column shows the status of each rebate deal.
 
-[<img src="media/attribute-column.png" alt="New column in Rebate management form to indicate attribute-based status" title="New column in Rebate management form to indicate attribute-based status" width="720" />](media/attribute-column.png#lightbox)
+:::image type="content" source="media/attribute-column.png" alt-text="Screenshot of the new column in the Rebate management form to indicate attribute-based status." lightbox="media/attribute-column.png":::
 
-From this form, you can manage any existing rebate deals or create new rebate deals. When creating new rebate deals, you may toggle for attribute-based or non-attribute based rebate deal types using the dropdown for "Type of rebate management deal".
+From this page, you can manage any existing rebate deals or create new rebate deals. When creating new rebate deals, use the dropdown for **Type of rebate management deal** to select attribute-based or non-attribute based rebate deal types.
 
-[<img src="media/new-attribute-based-form.png" alt="Updated UI for creating new rebate management deals" title="Updated UI for creating new rebate management deals" width="720" />](media/new-attribute-based-form.png#lightbox)
+:::image type="content" source="media/new-attribute-based-form.png" alt-text="Updated UI for creating new rebate management deals." lightbox="media/new-attribute-based-form.png":::
 
-You may view and manage attribute-based customer rebate deals or royalty deals using the "Customer rebate deals" and "Customer royalty deals" forms.
+Use the **Customer rebate deals** and **Customer royalty deals** pages to view and manage attribute-based customer rebate deals or royalty deals.
 
-[<img src="media/attribute-customer-rebate.png" alt="Form for attribute-based customer rebates" title="Form for attribute-based customer rebates" width="720" />](media/attribute-customer-rebate.png‎#lightbox)
+:::image type="content" source="media/attribute-customer-rebate.png" alt-text="Attribute-based customer rebates." lightbox="media/attribute-customer-rebate.png":::
 
-[<img src="media/non-attribute-customer-rebate.png‎‎‎" alt="Form for non-attribute based customer rebates" title="Form for non-attribute based customer rebates" width="720" />](media/non-attribute-customer-rebate.png‎#lightbox)
+:::image type="content" source="media/non-attribute-customer-rebate.png" alt-text="Non-attribute based customer rebates." lightbox="media/non-attribute-customer-rebate.png":::
 
-You may view and manage non-attribute based customer rebate deals or royalty deals using the "Non-attribute based customer rebate deals" and "Non-attribute based customer royalty deals" forms.
+Use the **Non-attribute based customer rebate deals** and **Non-attribute based customer royalty deals** pages to view and manage non-attribute based customer rebate deals or royalty deals.
 
-[<img src="media/attribute-customer-royalty.png‎" alt="Form for attribute-based customer royalties" title="Form for attribute-based customer royalties" width="720" />](media/attribute-customer-royalty.png‎‎#lightbox)
+:::image type="content" source="media/attribute-customer-royalty.png" alt-text="Attribute-based customer royalties." lightbox="media/attribute-customer-royalty.png":::
 
-[<img src="media/non-attribute-customer-royalty.png‎" alt="Form for non-attribute based customer royalties" title="Form for non-attribute based customer royalties" width="720" />](media/non-attribute-customer-royalty.png‎#lightbox)
+:::image type="content" source="media/non-attribute-customer-royalty.png" alt-text="Non-attribute based customer royalties." lightbox="media/non-attribute-customer-royalty.png":::
 
-All vendor rebate deals are non-attribute based and can be accessed using the "Vendor rebate deals" form.
+All vendor rebate deals are non-attribute based. You can access them by using the **Vendor rebate deals** page.
 
-[<img src="media/vendor-deals.png‎‎" alt="Form for vendor rebate deals" title="Form for vendor rebate deals" width="720" />](media/vendor-deals.png‎‎#lightbox)
+:::image type="content" source="media/vendor-deals.png" alt-text="Vendor rebate deals." lightbox="media/vendor-deals.png":::
 
-Navigate to the Modules view of your Microsoft finance and operations app. Click on the Rebate management tab and expand the Periodic tasks header. You may process, post, or cancel multiple rebate management deals using the commands in this sidebar view.
+Go to **Modules**. Select **Rebate management** and expand **Periodic tasks**. You can process, post, or cancel multiple rebate management deals by using the commands in this sidebar view.
 
-[<img src="media/periodic-tasks.png‎‎" alt="View of periodic tasks for rebate management deals" title="View of periodic tasks for rebate management deals" width="720" />](media/periodic-tasks.png‎‎‎#lightbox)
+:::image type="content" source="media/periodic-tasks.png" alt-text="Periodic tasks for rebate management deals." lightbox="media/periodic-tasks.png":::
 
-You may also view and manage all rebate management deals from the "Rebate workbench" form.
+You can also view and manage all rebate management deals from the **Rebate workbench** page.
 
-[<img src="media/rebate-workbench.png‎‎‎" alt="Form for rebate workbench" title="Form for rebate workbench" width="720" />](media/rebate-workbench.png‎‎‎#lightbox)
+:::image type="content" source="media/rebate-workbench.png" alt-text="Rebate workbench." lightbox="media/rebate-workbench.png":::
 
 ## Troubleshooting
 
-To find more information about errors or unexpected behavior, contact Microsoft Support and open a support ticket.
+To get more information about errors or unexpected behavior, contact Microsoft Support and open a support ticket.
