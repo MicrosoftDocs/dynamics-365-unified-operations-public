@@ -23,18 +23,11 @@ This capability allows organizations to continue using existing rebate managemen
 
 ## Prerequisites
 
-The features described in this article are available starting in Microsoft Dynamics 365 finance and operations version 10.0.48 or later.
+The features described in this article are available starting in Microsoft Dynamics 365 Supply Chain version 10.0.48 or later.
 
-## First steps
-
-Start by enabling the following features in your Microsoft Dynamics 365 finance and operations app.
-
-Go to the Feature management workspace:
-
-1. Enable the feature titled "Unified pricing management".
-1. Enable the **Enable non-attribute based rebate management deals for Unified pricing scenario** feature.
-
-:::image type="content" source="media/feature-management.png" alt-text="Screenshot of the feature management form with relevant pricing features." lightbox="media/feature-management.png":::
+To enable the features, follow these steps:
+1. Go to the Feature management workspace.
+2. Enable the **Unified pricing management** and **Enable non-attribute based rebate management deals for Unified pricing scenario** features.
 
 > [!NOTE]
 > There's a dependency between the listed features. You can't enable the **Enable non-attribute based rebate management deals for Unified pricing scenario** feature if the **Unified pricing management** feature is disabled.
@@ -42,39 +35,23 @@ Go to the Feature management workspace:
 
 ## Enable non-attribute based rebate management deals
 
-1. Go to **Modules**.
-1. Select the **Rebate management** tab to see all pages related to rebate management deals.
-Two new pages help you manage non-attribute based rebate deals: **Non-attribute based customer rebate deals** and **Non-attribute based customer royalty deals**.
+To enable non-attribute based rebate management deals, follow these steps:
+1. Go to **Modules** > select **Rebate management** to see all pages related to rebate management deals.
+Two new pages help you manage non-attribute based rebate deals:
+ - **Non-attribute based customer rebate deals**
+ - **Non-attribute based customer royalty deals**
 
-:::image type="content" source="media/module-sidebar.png" alt-text="Rebate management module sidebar view." lightbox="media/module-sidebar.png":::
-
-Go to the **All rebate management deals** page. On this page, you can view all rebate deals. The **Attribute-based rebate** column shows the status of each rebate deal.
-
-:::image type="content" source="media/attribute-column.png" alt-text="Screenshot of the new column in the Rebate management form to indicate attribute-based status." lightbox="media/attribute-column.png":::
-
+1. Go to the **All rebate management deals** page. On this page, you can view all rebate deals. The **Attribute-based rebate** column shows the status of each rebate deal.
 From this page, you can manage any existing rebate deals or create new rebate deals. When creating new rebate deals, use the dropdown for **Type of rebate management deal** to select attribute-based or non-attribute based rebate deal types.
 
-:::image type="content" source="media/new-attribute-based-form.png" alt-text="Updated UI for creating new rebate management deals." lightbox="media/new-attribute-based-form.png":::
-
-Use the **Customer rebate deals** and **Customer royalty deals** pages to view and manage attribute-based customer rebate deals or royalty deals.
-
-:::image type="content" source="media/attribute-customer-rebate.png" alt-text="Attribute-based customer rebates." lightbox="media/attribute-customer-rebate.png":::
-
-:::image type="content" source="media/non-attribute-customer-rebate.png" alt-text="Non-attribute based customer rebates." lightbox="media/non-attribute-customer-rebate.png":::
-
-Use the **Non-attribute based customer rebate deals** and **Non-attribute based customer royalty deals** pages to view and manage non-attribute based customer rebate deals or royalty deals.
-
-:::image type="content" source="media/attribute-customer-royalty.png" alt-text="Attribute-based customer royalties." lightbox="media/attribute-customer-royalty.png":::
-
-:::image type="content" source="media/non-attribute-customer-royalty.png" alt-text="Non-attribute based customer royalties." lightbox="media/non-attribute-customer-royalty.png":::
+The **Customer rebate deals** and **Customer royalty deals** pages allow you to view and manage attribute-based customer rebate deals or royalty deals.
+The **Non-attribute based customer rebate deals** and **Non-attribute based customer royalty deals** pages allow you to view and manage non-attribute based customer rebate deals or royalty deals.
 
 All vendor rebate deals are non-attribute based. You can access them by using the **Vendor rebate deals** page.
 
-:::image type="content" source="media/vendor-deals.png" alt-text="Vendor rebate deals." lightbox="media/vendor-deals.png":::
-
-Go to **Modules**. Select **Rebate management** and expand **Periodic tasks**. You can process, post, or cancel multiple rebate management deals by using the commands in this sidebar view.
-
-:::image type="content" source="media/periodic-tasks.png" alt-text="Periodic tasks for rebate management deals." lightbox="media/periodic-tasks.png":::
+To process, post, or cancel multiple rebate management deals, follow these steps:
+1. Go to **Modules** > **Rebate management**.
+2. Expand **Periodic tasks**. You can process, post, or cancel multiple rebate management deals by using the commands in this sidebar view.
 
 You can also view and manage all rebate management deals from the **Rebate workbench** page.
 
