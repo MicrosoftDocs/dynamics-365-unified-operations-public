@@ -2,7 +2,7 @@
 title: Set up custom pages for user sign-ins
 description: Learn how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Microsoft Entra business-to-consumer (B2C) tenants.
 author: brianshook
-ms.date: 01/21/2026
+ms.date: 05/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -21,9 +21,9 @@ This article describes how to build custom pages in Microsoft Dynamics 365 Comme
 
 To use custom pages that you author in Dynamics 365 Commerce to handle user sign-in flows, set up the Microsoft Entra policies that the Commerce environment references. You can configure the "Sign up and sign in," "Profile editing," and "Password reset" Microsoft Entra B2C policies by using the Microsoft Entra B2C application. You can then reference the Microsoft Entra B2C tenant and policy names during the provisioning process for the Commerce environment by using Microsoft Dynamics Lifecycle Services (LCS).
 
-Build the custom Commerce pages by using the sign in, sign up, account profile edit, password reset, or generic Microsoft Entra modules. Reference the page URLs that you publish for these custom pages in Microsoft Entra B2C policy configurations in the Azure portal.
+Build the custom Commerce pages by using the sign-in, sign-up, account profile edit, password reset, or generic Microsoft Entra modules. Reference the page URLs that you publish for these custom pages in Microsoft Entra B2C policy configurations in the Azure portal.
 
-> Use the module library for Commerce version 10.0.15 or higher with the recommended B2C user flows. You can also use the default user policy pages that Microsoft Entra ID B2C offers. These pages allow for added background image, logo, and background color changes related to company branding. Though more limited in design capabilities, the default user policy pages provide Microsoft Entra B2C policy functionality without creating and configuring dedicated custom pages. 
+Use the module library for Commerce version 10.0.15 or higher with the recommended B2C user flows. You can also use the default user policy pages that Microsoft Entra ID B2C offers. These pages allow for added background image, logo, and background color changes related to company branding. Though more limited in design capabilities, the default user policy pages provide Microsoft Entra B2C policy functionality without creating and configuring dedicated custom pages.
 
 ## Set up B2C policies
 
@@ -33,7 +33,7 @@ After you set up your Microsoft Entra B2C tenant and associate it with your Comm
 
 You can now configure the "Sign up and sign in," "Profile editing," and "Password reset" user authentication flows.
 
-### Configure the "Sign up and sign in" policy
+### Configure the Sign up and sign in policy
 
 To configure the "Sign up and sign in" policy, follow these steps:
 
@@ -119,7 +119,7 @@ When you build the pages, follow these guidelines:
 
 In the Azure portal, return to the **Microsoft Entra B2C** page. On the menu, under **Policies**, select **User flows (policies)**.
 
-### Update the "Sign up and sign in" policy with custom page information
+### Update the Sign up and sign in policy with custom page information
 
 To update the "Sign up and sign in" policy with custom page information, follow these steps:
 
@@ -139,7 +139,7 @@ To update the "Sign up and sign in" policy with custom page information, follow 
     1. For the **Email Address**, **Given Name**, and **Surname** attributes, select **No** in the **Optional** column.
 1. Select **Save**.
 
-### Update the "Profile editing" policy with custom page information
+### Update the Profile editing policy with custom page information
 
 To update the "Profile editing" policy with custom page information, follow these steps:
 
@@ -153,7 +153,7 @@ To update the "Profile editing" policy with custom page information, follow thes
     1. For the **Given Name** and **Surname** attributes, select **No** in the **Requires verification** column.
 1. Select **Save**.
 
-### Update the "Password reset" policy with custom page information
+### Update the Password reset policy with custom page information
 
 To update the "Password reset" policy with custom page information, follow these steps:
 
@@ -177,33 +177,23 @@ For example, the default text for the forgotten password link is **Forgotten pas
 
 :::image type="content" source="./media/B2C_SignUp_ModuleFace.png" alt-text="Screenshot of default text for the forgotten password link on the sign-in page.":::
 
-However, in the `global.json` file for the module library sign-in module, you can edit the text to **Forgot Password?**, as shown in the following illustration.
+However, in the `global.json` file for the module library sign-in module, you can edit the text to **Forgot Password?**, as shown in the following illustration:
 
 :::image type="content" source="./media/B2C_CustomizingStringsForModule.png" alt-text="Screenshot of updated link text in the sign in module's global.json file.":::
 
 After you update the `global.json` file and publish your changes, the new link text appears in the sign-in module in both Commerce and on the live sign-in page.
 
-## Additional resources
+## More resources
 
-[Configure your domain name](configure-your-domain-name.md)
-
-[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
-
-[Create an e-commerce site](create-ecommerce-site.md)
-
-[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
-
-[Manage robots.txt files](manage-robots-txt-files.md)
-
-[Upload URL redirects in bulk](dev-itpro/upload-bulk-redirects.md)
-
-[Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
-
-[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
-
-[Add support for a content delivery network (CDN)](add-cdn-support.md)
-
-[Enable location-based store detection](enable-store-detection.md)
-
+- [Configure your domain name](configure-your-domain-name.md)
+- [Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
+- [Create an e-commerce site](create-ecommerce-site.md)
+- [Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
+- [Manage robots.txt files](manage-robots-txt-files.md)
+- [Upload URL redirects in bulk](dev-itpro/upload-bulk-redirects.md)
+- [Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
+- [Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
+- [Add support for a content delivery network (CDN)](add-cdn-support.md)
+- [Enable location-based store detection](enable-store-detection.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
