@@ -90,7 +90,7 @@ When you review a request for change, search for dependencies. This approach hel
 
 To review affected transactions, block selected transactions, and send related notifications, follow these steps:
 
-1. Go to **Engineering change management \> Common \> Engineering change management \> Engineering change requests**.
+1. Go to **Engineering change management > Common > Engineering change management > Engineering change requests**.
 1. Open an existing change request, or select **New** on the Action Pane to create a new change request.
 1. On the Action Pane, on the **Change request** tab, in the **Business impact** group, select one of the following buttons:
 
@@ -211,7 +211,7 @@ Use the **Maintain/copy change information** button to copy change information b
 
 ## Use electronic signatures to approve and activate BOMs and routes
 
-To use electronic signatures to approve and/or activate bills of material (BOM) and/or route changes, go to **Organization administration > Setup > Electronic signature \> Electronic signature requirements**. Then make sure each of the following items has **Signature required** set to *Yes*:
+To use electronic signatures to approve and/or activate bills of material (BOM) and/or route changes, go to **Organization administration > Setup > Electronic signature > Electronic signature requirements**. Then make sure each of the following items has **Signature required** set to *Yes*:
 
 - Activate engineering change order product bill of materials
 - Activate engineering change order product routes
