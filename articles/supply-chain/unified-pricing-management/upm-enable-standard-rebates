@@ -41,7 +41,25 @@ The "Unified pricing management" feature cannot be disabled if the "Enable non-a
 
 ## Enable non-attribute based rebate management deals
 
-1. New module entries
-2. New UI
+Navigate to the Modules view of your Microsoft finance and operations app. Click on the Rebate management tab and view all forms relevant to Rebate management deals.
+There are two new forms available for the customer to manage non-attribute based rebate deals, "Non-attribute based customer rebate deals" and "Non-attribute based customer royalty deals".
+
+[<img src="media/module-sidebar.png" alt="Rebate manadement module sidebar view" title="Rebate manadement module sidebar view" width="720" />](media/module-sidebar.png#lightbox)
+
+Navigate to the "All rebate management deals form". Within this form, it is possible to view all rebate deals. The status of each rebate deal is indicated by the "Attribute-based rebate" column.
+
+[<img src="media/attribute-column.png" alt="New column in Rebate management form to indicate attribute-based status" title="New column in Rebate management form to indicate attribute-based status" width="720" />](media/attribute-column.png#lightbox)
+
+From this form, you can manage any existing rebate deals or create new rebate deals. When creating new rebate deals, you may toggle for attribute-based or non-attribute based rebate deal types using the dropdown for "Type of rebate management deal".
+
+[<img src="media/new-attribute-based-form.png" alt="Updated UI for creating new rebate management deals" title="Updated UI for creating new rebate management deals" width="720" />](media/new-attribute-based-form.png#lightbox)
+
+You may view and manage attribute-based customer rebate deals or royalty deals using the "Customer rebate deals" and "Customer royalty deals" forms.
+
+You may view and manage non-attribute based customer rebate deals or royalty deals using the "Non-attribute based customer rebate deals" and "Non-attribute based customer royalty deals" forms.
+
+All vendor rebate deals are non-attribute based and can be accessed using the "Vendor rebate deals" form.
+
+
 3. Global job
 4. Rebate workbench
