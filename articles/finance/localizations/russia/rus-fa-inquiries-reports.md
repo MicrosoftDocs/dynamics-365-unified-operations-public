@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2021-07-26
@@ -146,7 +146,7 @@ The sheet of FA and depreciation charges report shows data for the selected fixe
 
 To view the report, in Dynamics 365 Finance go to **Fixed asset (Russia)** \> **Reports** \> **Sheet of FA and depreciation charges**.
 
-![Sheet of FA and depreciation charges](../media/RUS-sheet-of-FA-and-depreciation.png)
+:::image type="content" source="../media/RUS-sheet-of-FA-and-depreciation.png" alt-text="Screenshot of the Sheet of FA and depreciation charges report.":::
 
 ### Insurance
 

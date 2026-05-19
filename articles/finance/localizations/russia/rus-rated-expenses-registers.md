@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/05/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.validFrom: 2018-10-31
 
@@ -46,7 +46,7 @@ To set up rates, follow these steps:
     1. In the **Start date** field, enter the date from which the value of the rate will be used in the sequence of calculation.
     1. In the **Value** field, enter the ratio value that will be used in the sequence of calculation.
 
-    ![Values FastTab, Start date and Value fields.](../media/values-fast-tab.png)
+    :::image type="content" source="../media/values-fast-tab.png" alt-text="Screenshot of the Values FastTab showing the Start date and Value fields.":::
 
 1. If you selected **Interval**, on the **Values** FastTab, do the following:
     1. In the **Start date** field, enter the date from which the value of the rate will be used in the sequence of calculation
@@ -78,7 +78,7 @@ To create a sequence of calculation for rated expenses, follow these steps:
     - **Ratio**: The calculated amount using the ratio for the expense code from the sequences of calculation.
     - **Deferral amount**: The difference between the total amount and normalized amount accounted for in the expenses of the future period.
 
-     ![Values available in the Register field column.](../media/register-field-column.png)
+     :::image type="content" source="../media/register-field-column.png" alt-text="Screenshot of the values available in the Register field column.":::
 
 ### Assign calculation sequences to the register
 
@@ -88,7 +88,7 @@ To assign calculation sequences to the register, follow these steps:
 1. Select the **Standard expenses in current period** tax register from the list.
 1. On the **Parameters** FastTab, in the **Value** column, choose the numbers of the calculation sequences to form the register from the list.
 
-    ![Parameters FastTab, Value column.](../media/parameters-fast-tab.PNG)
+    :::image type="content" source="../media/parameters-fast-tab.PNG" alt-text="Screenshot of the Parameters FastTab showing the Value column.":::
 
 ## Standard expenses in current period register
 
@@ -96,7 +96,7 @@ Calculate the tax register as described in the article, [Create tax registers an
 
 The **Standard expenses in current period** register reflects information about the expenses of the current period, their rated part, and the part that exceeds the standard.
 
-![Standard expenses in current period register.](../media/standard-expenses-current-period.png)
+:::image type="content" source="../media/standard-expenses-current-period.png" alt-text="Screenshot of the Standard expenses in current period register.":::
 
 View the following information on the register lines:
 

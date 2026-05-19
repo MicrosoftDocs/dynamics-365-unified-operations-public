@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-31
@@ -32,32 +32,11 @@ The **Advance holder balance report** displays the balances of the amounts that 
 
 When you generate this report, the following parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. 
 
-<table>
-<colgroup>
-<col>
-<col>
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>FastTab | Field</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Parameters | To date</strong></p></td>
-<td><p>Select the date on which to generate the advance holder amount balance report.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Parameters | Currency distribution</strong></p></td>
-<td><p>Select this check box to display the advance holder amount balance grouped by currency code.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Records to include | Worker ID</strong></p></td>
-<td><p>The identification number of the employee for whom the advance holder amount balance is displayed. If no employee is selected, then the report will include all employees.</p></td>
-</tr>
-</tbody>
-</table>
+| FastTab | Field | Description |
+|---|---|
+| **Parameters | To date** | Select the date on which to generate the advance holder amount balance report. |
+| **Parameters | Currency distribution** | Select this check box to display the advance holder amount balance grouped by currency code. |
+| **Records to include | Worker ID** | The identification number of the employee for whom the advance holder amount balance is displayed. If no employee is selected, then the report will include all employees. |
 
 ## Advance holder transactions report
 
@@ -65,32 +44,11 @@ The **Advance holder transactions report** displays the expense transactions of 
 
 When you generate this report, the following parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. 
 
-<table>
-<colgroup>
-<col>
-<col>
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>FastTab | Field</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Parameters | Main accounts only</strong></p></td>
-<td><p>Select this check box to display only main accounts in the report.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Records to include | Employee</strong></p></td>
-<td><p>The identification number of the employee for whom the transaction report is generated.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Records to include | Advance holder</strong></p></td>
-<td><p>The identification number of the advance holder for whom the transactions are posted.</p></td>
-</tr>
-</tbody>
-</table>
+| FastTab | Field | Description |
+|---|---|
+| **Parameters | Main accounts only** | Select this check box to display only main accounts in the report. |
+| **Records to include | Employee** | The identification number of the employee for whom the transaction report is generated. |
+| **Records to include | Advance holder** | The identification number of the advance holder for whom the transactions are posted. |
 
 ## Transaction settlements report
 
@@ -98,32 +56,11 @@ The **Transaction settlements report** displays cash refunds and advance amounts
 
 When you generate this report, the following parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. 
 
-<table>
-<colgroup>
-<col>
-<col>
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Field</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Worker ID</strong></p></td>
-<td><p>Select the identification number of the employee for whom the transaction settlements report is generated.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>To date</strong></p></td>
-<td><p>Select a date up to which the transactions are included on the report.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Real-time settlement</strong></p></td>
-<td><p>Select this check box to include real-time settlement transactions to the report.</p></td>
-</tr>
-</tbody>
-</table>
+| Field | Description |
+|---|---|
+| **Worker ID** | Select the identification number of the employee for whom the transaction settlements report is generated. |
+| **To date** | Select a date up to which the transactions are included on the report. |
+| **Real-time settlement** | Select this check box to include real-time settlement transactions to the report. |
 
 ## Advance report 
 
@@ -140,64 +77,19 @@ An additional report, **Advance holder turnover register** is available in **Gen
 
 When you generate this report, the following parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. 
 
-<table>
-<colgroup>
-<col>
-<col>
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Field</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Date interval code</strong></p></td>
-<td><p>Select the value of the period from the table of date intervals.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>From date</strong></p></td>
-<td><p>Enter the start date of the period for generating the report. Manually select or insert from the selected code of interval dates.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>To date</strong></p></td>
-<td><p>Enter the end date for the period for generating the report. Manually select or insert from the selected code of interval dates.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Currency type</strong></p></td>
-<td><p>Select the transaction's currency type from the list. These values can be used: Standard currency, Secondary currency, and Stated currency.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Currency</strong></p></td>
-<td><p>Enter the secondary currency of the transaction. This field is available if the currency type is Stated currency.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Main account</strong></p></td>
-<td><p>Enter the accounting record of employee advances for which the report will be generated.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Financial dimensions</strong></p></td>
-<td><p>Provide the dimensions codes if it is necessary to choose transactions with specific codes for the report. If the dimensions are not populated, the system will select transactions for the report having any dimension codes.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Print ranges</strong></p></td>
-<td><p>Set the option to display request conditions when printing the report.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Delete zero line</strong></p></td>
-<td><p>Set the option to not print zero lines or columns.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Total accounts</strong></p></td>
-<td><p>Set the option to print total accounts.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Show transactions</strong></p></td>
-<td><p>Set the option to display the transactions of advance holders.</p></td>
-</tr>
-</tbody>
-</table>
+| Field | Description |
+|---|---|
+| **Date interval code** | Select the value of the period from the table of date intervals. |
+| **From date** | Enter the start date of the period for generating the report. Manually select or insert from the selected code of interval dates. |
+| **To date** | Enter the end date for the period for generating the report. Manually select or insert from the selected code of interval dates. |
+| **Currency type** | Select the transaction's currency type from the list. These values can be used: Standard currency, Secondary currency, and Stated currency. |
+| **Currency** | Enter the secondary currency of the transaction. This field is available if the currency type is Stated currency. |
+| **Main account** | Enter the accounting record of employee advances for which the report will be generated. |
+| **Financial dimensions** | Provide the dimensions codes if it is necessary to choose transactions with specific codes for the report. If the dimensions are not populated, the system will select transactions for the report having any dimension codes. |
+| **Print ranges** | Set the option to display request conditions when printing the report. |
+| **Delete zero line** | Set the option to not print zero lines or columns. |
+| **Total accounts** | Set the option to print total accounts. |
+| **Show transactions** | Set the option to display the transactions of advance holders. |
 
 In the **Details and sorting parameters** section, select the available fields to be included into the report. On the **Records to include** tab, define additional filtering conditions, if needed.
 

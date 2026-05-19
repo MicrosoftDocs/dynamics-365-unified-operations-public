@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-02-28
@@ -45,7 +45,7 @@ The following fields are included on the Spanish EU sales list report:
   - Fiscal year
   - Company tax registration number
   - Customer or vendor VAT ID
-  - Customer or vendor name	
+  - Customer or vendor name 
   - Delivery code
   - The total amount of items
   - The total amount of services
@@ -82,10 +82,10 @@ To set up company information, follow these steps:
 
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
 
-  - EU Sales list model
-  - EU Sales list by columns report
-  - EU Sales list by rows report
-  - EU Sales list (ES)
+- EU Sales list model
+- EU Sales list by columns report
+- EU Sales list by rows report
+- EU Sales list (ES)
 
 Learn more in [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -147,7 +147,7 @@ To generate the EU sales list report, follow these steps:
     | Document number of the declaration    | Enter the number of the declaration. The value consists of **349** followed by the 10 digits of the number.  |
     | Contact ID   | Select a contact for the person who is responsible for the report.  |
     | Presentation type   |  Select **Telematic** or **DVD**. |  
-   
+
 1. Select **OK**, and review the generated reports.
 
 ### Create a corrective EU sales list report
@@ -244,7 +244,7 @@ To create an EU sales list report, follow these steps:
    | Change in periodicity  |  &nbsp; | If the **Change in periodicity** option is set to **Yes**, this field is set to **X**. Otherwise, this field is blank. |
 
    **EU sales list lines**
-   
+
    | Field name | Line 1 | Line 2 | Comment |
    |------------|--------|--------|---------|
    | Record type   |  2  |   2    | &nbsp;  |
@@ -256,10 +256,10 @@ To create an EU sales list report, follow these steps:
    | Operation code      | A      |  S     |  For a triangular trade record, the value is **T**. <br> For a service record, the value is **S** for sales and **I** for purchases. <br> For an item record, the value is **A** for purchases. <br> For sales, the value depends on the delivery code: **E** for the **E - Normal delivery** delivery code, **H** for the **H - Delivery of goods from a tax-exempt importation by an official tax representative** delivery code, or **M** for the **M - Delivery of goods from a tax-exempt importation** delivery code.  |
    | Record amount  |  0000000000120  | 0000000000240  |  The sum of all invoices by customer or vendor.  |
 
-1. Review the report in Excel format that is generated. 
+1. Review the report in Excel format that is generated.
 
-   ![EU sales list for Spain.](../media/eusl-spain-example.png)
-   
+   :::image type="content" source="../media/eusl-spain-example.png" alt-text="Screenshot of the EU sales list for Spain example report in Excel format.":::
+
 ### Create a corrective EU sales list report
 
 To create a corrective EU sales list report, follow these steps:
@@ -267,7 +267,7 @@ To create a corrective EU sales list report, follow these steps:
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. Verify that there are one service line and one item line in the EU sales list page.
 
-    ![EU sales list page.](../media/EUSL_esp_ex.png)
+    :::image type="content" source="../media/EUSL_esp_ex.png" alt-text="Screenshot of the EU sales list page with one service line and one item line.":::
   
 1. Select an item line, and then follow these steps:
     1. Switch to the **Correction** view.
@@ -301,7 +301,7 @@ To create a corrective EU sales list report, follow these steps:
 1. Select **OK**, and review the correction report in text format that is generated. The following tables show the values in the example report.
 
     **EU sales list header**
-    
+
     | Field name | Field value |
     |------------|-------------|
     | Record type |  1         |
@@ -320,9 +320,9 @@ To create a corrective EU sales list report, follow these steps:
     | Total amount of transactions           | 000000000000000            |
     | Number of corrections           | 000000002            |
     | Total amount of rectified base amounts           | 000000000000360            |
-    
+
     **EU sales list lines**
-    
+
     | Field name | Line 1 | Line 2 |
     |------------|--------|--------|
     | Record type  |  2   |  2     |
@@ -335,6 +335,5 @@ To create a corrective EU sales list report, follow these steps:
     | Corrected period   |   2021 07  |  2021 07 |
     | Rectified base amount  | 0000000000213  |  0000000000171   |
     | Declared base amount (Corrected amount)  |  0000000000333  | 0000000000411  |
-  
   
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

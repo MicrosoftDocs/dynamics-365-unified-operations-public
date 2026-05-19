@@ -66,6 +66,8 @@ The following table lists the features that were introduced as public preview fe
 | Module | Feature name | More information |
 | --- | --- | --- |
 | Inventory and warehouse management | *Sample management* | [Sample management overview](../inventory/quality-sample-management-overview.md)<br><br>[Enable and configure sample management](../inventory/quality-sample-management-admin.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.46 (December 2025)](whats-new-scm-10-0-46.md) |
+| Other | Immersive Home | [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md) |
+| System administration | Agent management | [Enable agent management](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) |
 
 ## Features turned on by default in this release
 

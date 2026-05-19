@@ -4,7 +4,7 @@
 title: Gender base enum extensibility
 description: This article provides an overview of extensibility of the Gender base enumeration (enum).
 author: twheeloc
-ms.date: 05/23/2022
+ms.date: 05/14/2026
 ms.topic: overview
 # optional metadata
 
@@ -34,13 +34,13 @@ There are two enums for gender values:
 - **Gender** (Application Platform)
 - **HcmPersonGender** (PersonnelManagement)
 
-The **Gender** enum is used throughout Microsoft Dynamics 365 Finance, whereas **HcmPersonGender** is specific to human capital management (HCM) functionality. If you're using HCM functionality, and you make any changes to the **Gender** enum, you should consider making the same changes to the **HcmPersonGender**. For example, if you add **Transgender** to the **Gender** enum, add **Transgender** to the **HcmPersonGender** enum too.
+The **Gender** enum is used throughout Microsoft Dynamics 365 Finance, whereas **HcmPersonGender** is specific to human capital management (HCM) functionality. If you're using HCM functionality, and you make any changes to the **Gender** enum, consider making the same changes to the **HcmPersonGender** enum. For example, if you add **Transgender** to the **Gender** enum, add **Transgender** to the **HcmPersonGender** enum too.
 
 ## HcmPersonGenderTranformUtil (Class)
 
-A new **HcmPersonGenderTranformUtil** class was created to allow for translation between the two base enumerators. In this class, there are two methods: **convertGenderToHcmPersonGender** and **convertHcmPersonGenderToGender**. You should create an extension by using the **Chain of Command** class or **event handlers**, and extend both methods to map new values that are added to either base enum.
+A new **HcmPersonGenderTranformUtil** class was created to allow for translation between the two base enumerators. In this class, there are two methods: **convertGenderToHcmPersonGender** and **convertHcmPersonGenderToGender**. You should create an extension by using the **Chain of Command** class or **event handlers**, and extend both methods to map new values that you add to either base enum.
 
 ## PayrollStateWageTaxPrepDP (Class)
 
-**PayrollStateWageTaxPrepDP** is the data provider class for the **Payroll State Wage Tax Prep** SQL Server Reporting Services (SSRS) report. For the United States, three values are available: **Male**, **Female**, and **Unspecified**. In the **populatePayrollStateWageTaxPrepTmp** method, there is a switch statement that is used to map the value of the **HcmPersonGender** enum to one of three fields: **IsMale**, **IsFemale**, or **IsUnspecifiedGender**. The default value for the switch statement is **IsUnspecifiedGender**. If you add any values to the **HcmPersonGender** enum to map differently, you must create an extension by using the **Chain of Command** class over the **populatePayrollStateWageTaxPrepTmp** method to change the value as needed.
+**PayrollStateWageTaxPrepDP** is the data provider class for the **Payroll State Wage Tax Prep** SQL Server Reporting Services (SSRS) report. For the United States, three values are available: **Male**, **Female**, and **Unspecified**. In the **populatePayrollStateWageTaxPrepTmp** method, there's a switch statement that maps the value of the **HcmPersonGender** enum to one of three fields: **IsMale**, **IsFemale**, or **IsUnspecifiedGender**. The default value for the switch statement is **IsUnspecifiedGender**. If you add any values to the **HcmPersonGender** enum that map differently, you must create an extension by using the **Chain of Command** class over the **populatePayrollStateWageTaxPrepTmp** method to change the value as needed.
 

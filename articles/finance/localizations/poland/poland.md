@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: liza-golub
 ms.author: egolub
 ms.topic: overview
-ms.date: 05/23/2024
+ms.date: 05/05/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: johnmichalak  
@@ -43,6 +43,5 @@ This article provides links to documentation resources for Poland.
 - [Turnover and balances statement](emea-pol-turnover-balances-statement.md)
 - [Split AP/AR exchange difference](emea-pol-split-ap-ar-exchange-difference.md)
 - [Payment terms in commercial transactions report](emea-pol-payment-terms-report.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

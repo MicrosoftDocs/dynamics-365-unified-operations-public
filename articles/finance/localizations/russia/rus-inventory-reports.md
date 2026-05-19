@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-03-01
@@ -19,6 +19,7 @@ ms.search.validFrom: 2019-03-01
 This article explains how to work with inventory reports available for Russia in Microsoft Dynamics 365 Finance.
 
 There are four local inventory reports available in Russia:
+
 - Inventory balance turnover
 - Pay-sheet of receipts and reports expenditure
 - Adjustments
@@ -47,11 +48,11 @@ To calculate on-hand inventory on inventory closing date, follow these steps:
 1. On the **Calculation on-hand inventory on date** page, on the **Parameters** tab, in the **Date of on-hand calculation** field, specify the inventory closing date for which the inventory calculation must be performed. By default, this is the first date the inventory was closed without an inventory calculation.
 1. Set the **Update calculation** toggle to **Yes** if you want to clear the results of the previous inventory calculation on the specified inventory closing date and perform a full inventory calculation.
 
-    ![Calculation on-hand inventory on date page.](../media/1_Calculation_on-hand_inventory_on_date.png)
+    :::image type="content" source="../media/1_Calculation_on-hand_inventory_on_date.png" alt-text="Screenshot of the Calculation on-hand inventory on date page.":::
 
 1. When the inventory calculation is complete, on the **Closing and adjustment** page, for the corresponding inventory closure line, on the **Session** tab, the **Calculation on-hand inventory on date** option will be set to **Yes**.
 
-    ![Closing and adjustment page.](../media/2_Closing_and_adjustment.png)
+    :::image type="content" source="../media/2_Closing_and_adjustment.png" alt-text="Screenshot of the Closing and adjustment page.":::
 
 If you try to run the inventory calculation again to close an inventory that has the **Calculation on-hand inventory on date** option set to **Yes**, and the **Update calculation** option is set to **No**, an error will occur.
 
@@ -63,7 +64,7 @@ To configure inventory balance turnover, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports (Russia)** \> **Inventory balance turnover**.
 
-    ![Inventory balance turnover page.](../media/3_Inventory_balance_turnover.png)
+    :::image type="content" source="../media/3_Inventory_balance_turnover.png" alt-text="Screenshot of the Inventory balance turnover page.":::
 
 1. On the **Inventory balance turnover** dialog, on the **General** tab, in the **Start date** and **To date** fields, specify the period of report.
 1. Set the **Expand turnovers** option to **Yes** to divide the turnover columns into two groups in the inquiry results:
@@ -86,16 +87,16 @@ To configure inventory balance turnover, follow these steps:
     >
     > For example, for the following inventory transactions, the purchase and credit note for the purchase are listed.
 
-    >  | Document type                | Type of inventory transaction | Credit correction (physical) | Quantity |
+    > | Document type                | Type of inventory transaction | Credit correction (physical) | Quantity |
     >  |------------------------------|-------------------------------|------------------------------|----------|
-    >  | Purchase order               | Receipt                       | No                           | 10       |
-    >  | Credit note for the purchase | Issue                         | Yes                          | \-3      |
+    > | Purchase order               | Receipt                       | No                           | 10       |
+    > | Credit note for the purchase | Issue                         | Yes                          | \-3      |
     >
     > If the **Storno** dimension isn't selected, the report will show the line with the following quantities:
     >
-    >  | Quantity (Receipt) | Quantity (Issue) |
+    > | Quantity (Receipt) | Quantity (Issue) |
     >  |--------------------|------------------|
-    >  | 7                  | 0                |
+    > | 7                  | 0                |
     >
     > If the physical or financial update of inventory transaction wasn’t posted to the general ledger, the value in the **Balance account** dimension for the inventory transactions is empty.
 
@@ -104,21 +105,21 @@ To configure inventory balance turnover, follow these steps:
 1. Set the **Show item name** option to **Yes** to view the product name in addition to the product code.
 1. On the **Dimensions** tab, select dimensions to include in the report.
 
-    ![Inventory balance turnover report, Dimensions tab.](../media/4_Inventory_balance_turnover.png)
+    :::image type="content" source="../media/4_Inventory_balance_turnover.png" alt-text="Screenshot of the Inventory balance turnover report, Dimensions tab.":::
 
     The following dimensions are available:
-    
+
     - **Item number**
     - **Inventory dimensions**
     - **Kind of activity**: The value **Unspecified** is displayed if the inventory movement does not have an **Inventory profile** dimension.
     - **Balance account**
     - **Agreement**
     - **Storno** allows you to separate storno transactions.
-       
-    If the **Storno** dimension is selected, then storno inventory transactions are displayed separately in the report on separate lines. These lines have the value **Yes** in the **Storno** column. The transactions are displayed with different direction and amount sign. Storno of incoming inventory transactions are shown in the **Issue** column with a negative sign, and storno of outgoing inventory transactions are shown in the **Receipt** column with a negative sign.        
+
+    If the **Storno** dimension is selected, then storno inventory transactions are displayed separately in the report on separate lines. These lines have the value **Yes** in the **Storno** column. The transactions are displayed with different direction and amount sign. Storno of incoming inventory transactions are shown in the **Issue** column with a negative sign, and storno of outgoing inventory transactions are shown in the **Receipt** column with a negative sign.
 
     If the **Storno** dimension isn't selected, the storno inventory transactions decrease the value of the initial transaction in the corresponding columns. Storno of incoming inventory transactions have a decreased value in the **Issue** column, where storno of outgoing inventory transactions have a decreased value in the **Receipt** column.
-      
+
     For example, the following inventory transactions show the purchase and credit note for the purchase:
 
      | Document type                | Type of inventory transaction | Credit correction (physical) | Quantity |
@@ -136,7 +137,7 @@ To configure inventory balance turnover, follow these steps:
 1. On the **Records to include** tab, use the filter to define the transactions to include in the report.
 1. Select **OK** to generate a report.
 
-    ![Inventory balance turnover report, Standard view.](../media/5_Inventory_balance_turnover.png)
+    :::image type="content" source="../media/5_Inventory_balance_turnover.png" alt-text="Screenshot of the Inventory balance turnover report, Standard view.":::
 
     > [!NOTE]
     > - In the **Line type** column, you can see the type of the line: **Transactions** or **Totals**.
@@ -167,13 +168,13 @@ To clean up temporary data, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **On-hand inventory calculation on date**.
 
-    ![Clean up on-hand inventory calculation on date page.](../media/6_Cleanup_on-hand_inventory_calculation_on_date.png)
+    :::image type="content" source="../media/6_Cleanup_on-hand_inventory_calculation_on_date.png" alt-text="Screenshot of the Clean up on-hand inventory calculation on date page.":::
 
 1. On the **Parameters** FastTab, in the **Created until** field, specify the date. The temporary data with a creation date before the specified date will be deleted. Specify the date equal to current date minus one (1) day to avoid deleting data currently used by another user.
 1. Select **OK**.
 1. Go to **Organization administration** \> **Periodic** \> **Record references cleanup**.
 
-    ![Record references clean up page.](../media/7_Record_references_cleanup.png)
+    :::image type="content" source="../media/7_Record_references_cleanup.png" alt-text="Screenshot of the Record references clean up page.":::
 
 1. On the **Parameters** FastTab, in the **Created until** field, specify the date. All temporary data with creation date before the specified date is deleted.
 1. Select **OK**.
@@ -186,28 +187,28 @@ To configure the pay-sheet of receipts and expenditure report, follow these step
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Pay-sheet of receipts and reports expenditure**.
 
-    ![Pay-sheet of receipts and reports expediture report.](../media/8_Pay-sheet_of_receipts_and_expenditure.png)
+    :::image type="content" source="../media/8_Pay-sheet_of_receipts_and_expenditure.png" alt-text="Screenshot of the Pay-sheet of receipts and reports expenditure report.":::
 
-1.  On the **Pay-sheet of receipts and expenditure** dialog, on the **Parameters** FastTab, specify the value of **Exclude storno** parameter:
+1. On the **Pay-sheet of receipts and expenditure** dialog, on the **Parameters** FastTab, specify the value of **Exclude storno** parameter:
 
     - If the **Exclude storno** option is set to **Yes**, the system displays the storno turnovers in the total inventory movements without allocating the storno turnovers as a separate line.
     - If the **Exclude storno** option is set to **No**, the system displays a line with initial transactions for each item and a line with storno transactions, if there were any. If the original and storno transactions are in the same reporting period, they do not add turnovers for the item, but if they are in different periods, the transaction that falls within the inquiry period will affect the period's turnovers.
-    
+
 1. On the **Records to include** FastTab, select the **Filter** to apply filters for the report.
 1. Select **OK** to generate a report.
 
-    ![Generated Pay-sheet of receipts and reports expediture report.](../media/9_Pay-sheet_of_receipts_and_expenditure.png)
+    :::image type="content" source="../media/9_Pay-sheet_of_receipts_and_expenditure.png" alt-text="Screenshot of the generated Pay-sheet of receipts and reports expenditure report.":::
 
 ## Adjustments report
 
-The adjustments report report shows all adjustments that were done during the inventory recalculation or closing. 
+The adjustments report report shows all adjustments that were done during the inventory recalculation or closing.
 
 To generate the adjustments report, follow these steps:
 
 1. In Dynamics 365 Finance, go to go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Adjustments**.
 1. Specify the parameters, and then select **OK** to generate the report.
 
-![Generated Adjustments report.](../media/10_Adjustments.png)
+:::image type="content" source="../media/10_Adjustments.png" alt-text="Screenshot of the generated Adjustments report.":::
 
 ## Adjustments in currency report
 
@@ -215,8 +216,7 @@ The adjustments in currency report shows all adjustments completed during the in
 
 To generate the adjustments in currency report, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Adjustment (cur.)**. 
+1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Adjustment (cur.)**.
 1. Specify the parameters, and then select **OK** to generate the report.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

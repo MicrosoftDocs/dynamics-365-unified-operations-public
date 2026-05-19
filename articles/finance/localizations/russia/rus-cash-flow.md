@@ -6,7 +6,7 @@ ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/08/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-04-01
@@ -38,53 +38,12 @@ In this example, Contoso Retail RUS (RURT) is a subsidiary of an industrial hold
 
 The following table shows the stages of payment that a treasurer deals with during payment processing.
 
-<table>
-<thead>
-<tr>
-<th>Business scenario</th>
-<th>Payment cause</th>
-<th>Payment stage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The company requests and confirms delivery of goods (that is, a purchase order that has a delivery schedule that is confirmed). A treasurer includes information about the expected payments (inflow or outflow) in the cash flow forecast by creating payment schedule journal of type "payment plan".
-</td>
-<td>
-<ul>
-<li>Purchase order</li>
-<li>Sales order</li>
-<li>Free text invoice</li>
-</ul>
-</td>
-<td>Planned payment</td>
-</tr>
-<tr>
-<td>The company receives the payment request (prepayment request, invoice, and so on) from a seller. The manager creates a payment request, which should be approved by the manager lead and a treasurer. The treasurer includes information about the expected and approved payments (inflow or outflow) in the cash flow forecast.
-<strong>Important:</strong> The Payment request and the associated functionality are available only if the <strong>Payment request</strong> license configuration key is turned on.
-</td>
-<td>
-<ul>
-<li>Vendor invoice</li>
-<li>Prepayment invoice</li>
-<li>Planned payment for confirmed purchase order</li>
-<li>Customer return invoice</li>
-</ul>
-</td>
-<td>Payment request</td>
-</tr>
-<tr>
-<td>A treasurer generates and confirms the payment schedule journal (payment register). In this way, the company defines the list of payments that should be made by the bank/cash account.</td>
-<td>Payment schedule journal (of the <strong>Payment register</strong> type)</td>
-<td>Payment order</td>
-</tr>
-<tr>
-<td>The company receives the statement from a bank. This statement includes the authorized transactions (completed payments).</td>
-<td>Bank statement</td>
-<td>Completed payment</td>
-</tr>
-</tbody>
-</table>
+| Business scenario | Payment cause | Payment stage |
+|---|---|---|
+| The company requests and confirms delivery of goods (that is, a purchase order that has a delivery schedule that is confirmed). A treasurer includes information about the expected payments (inflow or outflow) in the cash flow forecast by creating payment schedule journal of type "payment plan". | <ul><li>Purchase order</li><li>Sales order</li><li>Free text invoice</li></ul> | Planned payment |
+| The company receives the payment request (prepayment request, invoice, and so on) from a seller. The manager creates a payment request, which should be approved by the manager lead and a treasurer. The treasurer includes information about the expected and approved payments (inflow or outflow) in the cash flow forecast. **Important:** The Payment request and the associated functionality are available only if the **Payment request** license configuration key is turned on. | <ul><li>Vendor invoice</li><li>Prepayment invoice</li><li>Planned payment for confirmed purchase order</li><li>Customer return invoice</li></ul> | Payment request |
+| A treasurer generates and confirms the payment schedule journal (payment register). In this way, the company defines the list of payments that should be made by the bank/cash account. | Payment schedule journal (of the **Payment register** type) | Payment order |
+| The company receives the statement from a bank. This statement includes the authorized transactions (completed payments). | Bank statement | Completed payment |
 
 After you complete the example that is provided in this article, you will be able to perform the following tasks:
 
@@ -104,7 +63,7 @@ To set up the license configuration, follow these steps:
 1. Under **Country/Regional specific features \> Russia**, select the **Cash flow management** checkbox.
 1. If the organization plans to use payment requests, select the **Payment requests** checkbox.
 
-![License configuration](../media/rus-cash-flow-m1.jpg)
+:::image type="content" source="../media/rus-cash-flow-m1.jpg" alt-text="Screenshot of the License configuration page.":::
 
 ### Optional: Set up an organization hierarchy for centralized payments
 
@@ -113,12 +72,12 @@ To set up an organization hierarchy for centralized payments, follow these steps
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Organization hierarchies**.
 1. In the left pane, select **Centralized Payments**.
 
-    ![Organization hierarchy for centralized payments.](../media/rus-cash-flow-m2.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m2.jpg" alt-text="Screenshot of the Organization hierarchy for centralized payments.":::
 
 1. Select **View**.
 1. On the **Hierarchy designer** page, create a hierarchy where **Contoso Entertainment Systems Russia** (**RUMF**) is the legal entity of the payment and **Contoso Retail RUS** (**RURT**) is the operating legal entity.
 
-    ![Organization hierarchy designer.](../media/rus-cash-flow-m3.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m3.jpg" alt-text="Screenshot of the Organization hierarchy designer page.":::
 
 1. Publish the new hierarchy.
 
@@ -130,11 +89,11 @@ To set up a workflow for cash flow management, follow these steps:
 1. Select **New** to create a record.
 1. Select the required workflow type: **Workflow type for payment requests approval** or **Payment schedule journal approval workflow**.
 
-    ![Create workflow page.](../media/rus-cash-flow-m6.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m6.jpg" alt-text="Screenshot of the Create workflow page.":::
 
 1. Set up the new workflow by using the new **Approve the payment request** or **Approve payment schedule journal** workflow element.
 
-    ![Workflow elements.](../media/rus-cash-flow-m7.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m7.jpg" alt-text="Screenshot of the Workflow elements page.":::
 
 1. Activate the new workflow.
 
@@ -144,7 +103,7 @@ To set up a payment priority, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash flow management \> Payment priority**.
 
-    ![Payment priority1.](../media/rus-cash-flow-m4.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m4.jpg" alt-text="Screenshot of the Payment priority page.":::
 
 1. Select **New** to create a record.
 1. On the **Manage priority** FastTab, use the **Up** and **Down** buttons to arrange the priority list.
@@ -152,7 +111,7 @@ To set up a payment priority, follow these steps:
 1. Select the vendor, and then select **Edit**.
 1. In the **Payment priority** field, specify a priority code for the associated party. You can also complete this operation on the **Party** and **Customer** pages.
 
-    ![Payment priority on the vendor page.](../media/rus-cash-flow-m5.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m5.jpg" alt-text="Screenshot of the Payment priority field on the vendor page.":::
 
 ### Set up a payment request type
 
@@ -163,7 +122,7 @@ To set up a payment request type, follow these steps:
     > [!NOTE]
     > The **Payment request type** page is available only if the **Payment request** license configuration key is turned on.
 
-    ![Payment request type page.](../media/rus-cash-flow-m8.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m8.jpg" alt-text="Screenshot of the Payment request type page.":::
 
 1. Select **New** to create a record.
 1. Specify the payment priority.
@@ -190,7 +149,7 @@ To specify cash flow management parameters, follow these steps:
 1. On the **Payments** FastTab, specify the vendor payment journal and customer payment journal that are used to post payments that are generated by the payment register.
 1. On the **Payment request re-approval** FastTab, in the **Amount to pay change** field, specify the system behavior if the amount to pay for a payment request is changed. You can specify that the system should always initialize a payment request reapproval through a workflow, that the system should initialize a payment request reapproval only if the amount to pay has increased, or that reapproval is never required.
 
-    ![Cash and bank management parameters page, Cash flow management tab, PAyment request re-approval FastTab.](../media/rus-cash-flow-m9.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m9.jpg" alt-text="Screenshot of the Cash and bank management parameters page, Cash flow management tab, Payment request re-approval FastTab.":::
 
 1. On the **Number sequences** tab, specify number sequence codes for the following references:
 
@@ -206,7 +165,7 @@ To set up terms of payment, follow these steps:
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Terms of payment**.
 1. Select **Edit**, and specify the payment request types for payments and prepayments, if specific payment request types should be used in these scenarios.
 
-    ![Set up terms of payment.](../media/rus-cash-flow-m10.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m10.jpg" alt-text="Screenshot of the Set up terms of payment page.":::
 
 ### Set up payment schedules
 
@@ -217,7 +176,7 @@ To set up payment schedules, follow these steps:
 1. In the **Allocation** field, set the allocation method to **Specified**.
 1. On the **Payment lines** FastTab, create payment lines. Select the **Prepayment** checkbox for a line if a payment request should be created for prepayment amount.
 
-    ![Set up payment schedules.](../media/rus-cash-flow-m11.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m11.jpg" alt-text="Screenshot of the Set up payment schedules page.":::
 
 ### Set up the remittance en route account
 
@@ -230,7 +189,7 @@ To set up the remittance en route account, follow these steps:
 1. In the **Main account** field, select the ledger account.
 1. Select the **Remittance en route** checkbox.
 
-    ![Set up the remittance en route account.](../media/rus-cash-flow-m12.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m12.jpg" alt-text="Screenshot of the Set up the remittance en route account page.":::
 
 ### Set up the minimum cash balance for bank accounts
 
@@ -242,7 +201,7 @@ To set up the minimum cash balance for bank accounts, follow these steps:
 1. Select a bank account, and then select **Edit**.
 1. Specify the minimum cash balance. If the estimated balance amount of the bank account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
 
-    ![Set up the minimum cash balance for bank accounts.](../media/rus-cash-flow-m13.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m13.jpg" alt-text="Screenshot of the Set up the minimum cash balance for bank accounts page.":::
 
 ### Set up the minimum cash balance for cash accounts
 
@@ -254,7 +213,7 @@ To set up the minimum cash balance for cash accounts, follow these steps:
 1. Select the cash account, and then select **Edit**.
 1. Specify the minimum cash balance. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
 
-    ![Set up the minimum cash balance for cash accounts.](../media/rus-cash-flow-m14.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m14.jpg" alt-text="Screenshot of the Set up the minimum cash balance for cash accounts page.":::
 
 ### Set up default payment order requisites for purchase agreements
 
@@ -268,7 +227,7 @@ To set up default payment order requisites for purchase agreements, follow these
 1. On the Action Pane, on the **Purchase agreement** tab, in the **Setup** group, select **Payment order**.
 1. Select **Edit**, and specify default payment order requisites. Payment order requisites for a payment request or a payment journal line that is associated with this purchase agreement will be initialized from the purchase agreement.
 
-    ![Set up default payment order requisites.](../media/rus-cash-flow-m15.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m15.jpg" alt-text="Screenshot of the Set up default payment order requisites page.":::
 
 ## Planned payment processing
 
@@ -294,7 +253,7 @@ To generate planned payments, follow these steps:
 1. On the Action Pane, on the **Invoice** tab, in the **Bill** group, select **Planned payments**.
 1. Review the planned payments that have been created based on the due dates, financial dimension values, sales tax group, and item sales tax group.
 
-    ![Planned payments on purchase orders.](../media/rus-cash-flow-m16.png)
+    :::image type="content" source="../media/rus-cash-flow-m16.png" alt-text="Screenshot of the Planned payments on purchase orders page.":::
 
 ### Planned payments on sales orders
 
@@ -349,7 +308,7 @@ To set up periodic creation of planned payments, follow these steps:
     | Legal entities         | Select legal entities. A treasury company can include all legal entities that belong to the current centralized payment hierarchy. |
     | Recalculate all        | Set this option to **Yes** if all planned payments should be recalculated. If this option is set to **No**, only new planned payment will be created. |
 
-    ![Calculate planned payments.](../media/rus-cash-flow-m17.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m17.jpg" alt-text="Screenshot of the Calculate planned payments page.":::
 
 ## Payment request processing
 
@@ -366,17 +325,17 @@ To create a manual payment request, follow these steps:
     - The **Payment request priority** value is defined by properties of the payment account type and party.
     - The centralized payment hierarchy defines the treasury company. A payment request company is a company where a payment request is created.
 
-    ![Create Payment request.](../media/rus-cash-flow-m18.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m18.jpg" alt-text="Screenshot of the Create Payment request page.":::
 
 1. Select **OK**.
 1. In the **Header** view, on the **General** FastTab, set the required payment request parameters. You can change the value of the **Payment date**, **Payment currency**, **Payment priority**, and other parameters as you require.
 
-    ![Payment request page.](../media/rus-cash-flow-m19.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m19.jpg" alt-text="Screenshot of the Payment request page.":::
 
 1. On the **Payment** FastTab, set the required payment request parameters. You can change the value of the **Posting profile**, **Payment account type**, **Payment account**, and other parameters as you require.
 1. On the **Payment order** FastTab, specify the required payment order requisites. By default, these requisites are initialized from a purchase agreement or sales agreement. This FastTab is available only if the method of payment is associated with a payment order in RUB.
 
-    ![Payment order.](../media/rus-cash-flow-m20.png)
+    :::image type="content" source="../media/rus-cash-flow-m20.png" alt-text="Screenshot of the Payment order FastTab.":::
     
 1. On the **History** FastTab, review the details about payment request processing. You can change the payment request initiator as you require.
 1. On the **Financial dimensions** FastTab, specify the financial dimensions of the payment request.
@@ -384,20 +343,20 @@ To create a manual payment request, follow these steps:
 1. Select **Add line** to create a record.
 1. Specify the **Sales tax group**, **Item sales tax group**, and **Original amount** dimension values. By default, the **Amount to pay** field is set to **Original amount**.
   
-  ![Payment request-GENERAL Tab.](../media/rus-cash-flow-m21.jpg)
+  :::image type="content" source="../media/rus-cash-flow-m21.jpg" alt-text="Screenshot of the Payment request General tab.":::
 
 1. Repeat steps 11 through 12 to create more lines, as you require.
 1. Save the record.
 1. On the Action Pane, on the **General** tab, in the **Bill** group, select **Cash discount**.
 1. Create a record, and specify the cash discount date and cash discount amount.
 
-  ![Payment request cash discount.](../media/rus-cash-flow-m22.jpg)
+  :::image type="content" source="../media/rus-cash-flow-m22.jpg" alt-text="Screenshot of the Payment request cash discount page.":::
   
 1. Repeat step 16 to create more lines, as you require. Then close the page.
 1. If all the data is filled in, and workflow approval can start, on the Action Pane, on the **Payment request** tab, in the **Generate** group, select **Confirmation**.
 1. Select **Workflow \> Submit**.
 
-    ![Submitting a payment request for workflow approval.](../media/rus-cash-flow-m23.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m23.jpg" alt-text="Screenshot of submitting a payment request for workflow approval.":::
 
 The status of a payment request is automatically updated. The following table describes all the payment request statuses.
 
@@ -420,11 +379,11 @@ To cancel a payment request, follow these steps:
 1. Select a payment request.
 1. On the Action Pane, on the **Payment request** tab, in the **Maintain** group, select **Cancel**.
 
-  ![Payment request cancellation1.](../media/rus-cash-flow-m24.png)
+  :::image type="content" source="../media/rus-cash-flow-m24.png" alt-text="Screenshot of the Payment request cancellation page.":::
 
 1. Select **OK**.
 
-  ![Payment request cancellation2.](../media/rus-cash-flow-m25.png)
+  :::image type="content" source="../media/rus-cash-flow-m25.png" alt-text="Screenshot of the Payment request cancellation confirmation dialog.":::
 
 ### Put a payment request on hold
 
@@ -439,7 +398,7 @@ To put a payment request on hold, follow these steps:
 1. On the Action Pane, on the **Payment request** tab, in the **Maintain** group, select **On hold**.
 1. Set the **On hold** option to **Yes**, and specify a reason code.
 
-  ![Payment request on hold.](../media/rus-cash-flow-m26.jpg)
+  :::image type="content" source="../media/rus-cash-flow-m26.jpg" alt-text="Screenshot of the Payment request on hold dialog.":::
   
 1. Select **OK**.
 
@@ -462,7 +421,7 @@ To split a payment request, follow these steps:
 1. On the Action Pane, on the **Payment request** tab, in the **Generate** group, select **Split request**.
 1. Specify the amount to pay and the payment date for the new payment request.
 
-  ![Split a payment request.](../media/rus-cash-flow-m27.jpg)
+  :::image type="content" source="../media/rus-cash-flow-m27.jpg" alt-text="Screenshot of the Split a payment request dialog.":::
 
 1. Select **OK**.
 
@@ -475,7 +434,7 @@ To copy a payment request, follow these steps:
 1. On the Action Pane, on the **Payment request** tab, in the **New** group, select **Copy**.
 1. Specify the due date for the new payment request.
 
-  ![Copy a payment request.](../media/rus-cash-flow-m28.jpg)
+  :::image type="content" source="../media/rus-cash-flow-m28.jpg" alt-text="Screenshot of the Copy a payment request dialog.":::
   
 1. Select **OK**.
 1. Select the payment request created on step 1. 
@@ -493,12 +452,12 @@ To create a payment request for a vendor invoice, follow these steps:
 1. Generate and post an invoice.
 1. On the Action Pane, on the **Purchase** tab, in the **Generate** group, select **Payment requests**.
 
-  ![Create a payment request for a vendor invoice1.](../media/rus-cash-flow-m29.jpg)
+  :::image type="content" source="../media/rus-cash-flow-m29.jpg" alt-text="Screenshot of creating a payment request for a vendor invoice.":::
 
 1. On the Action Pane, on the **Purchase** tab, in the **Journals** group, select **Payment requests**.
 1. Review the payment requests that have been created.
 
-  ![Create a payment request for a vendor invoice2.](../media/rus-cash-flow-m30.jpg)
+  :::image type="content" source="../media/rus-cash-flow-m30.jpg" alt-text="Screenshot of reviewing payment requests created for a vendor invoice.":::
 
 1. On the **All vendors** page, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Transactions**.
 1. Select the vendor transaction.
@@ -507,7 +466,7 @@ To create a payment request for a vendor invoice, follow these steps:
 1. On the Action Pane, on the **General** tab, in the **Related information** group, select **Request origin**.
 1. Verify that the vendor transaction is a source for the payment request.
 
-  ![Create a payment request for a vendor invoice3.](../media/rus-cash-flow-m31.jpg)
+  :::image type="content" source="../media/rus-cash-flow-m31.jpg" alt-text="Screenshot of the vendor transaction as a source for the payment request.":::
 
   > [!NOTE]
   > You can't change the payment requisites (method of payment, due date, vendor bank account, and so on) on an open vendor transaction if a payment request exists for that transaction. Instead, you should change the payment requisites in the payment request. They will then be automatically synced on the open vendor transaction.
@@ -585,7 +544,7 @@ To set up periodic creation of payment requests, follow these steps:
     | Legal entities          | Select legal entities. A treasury company can include all legal entities that belong to the current centralized payment hierarchy. |
     | Number of batch threads | Enter the number of parallel tasks for payment request creation. |
 
-  ![Periodic creation of payment requests.](../media/rus-cash-flow-m32.png)
+  :::image type="content" source="../media/rus-cash-flow-m32.png" alt-text="Screenshot of the Periodic creation of payment requests page.":::
 
 ### Update a payment request
 
@@ -604,7 +563,7 @@ To update a payment request, follow these steps:
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> All payment requests**.
 1. Select a payment request that the **Outdated** checkbox is selected for.
 
-    ![Outdated checkbox on payment requests.](../media/rus-cash-flow-m33.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m33.jpg" alt-text="Screenshot of the Outdated checkbox on payment requests.":::
 
     The system automatically selects this checkbox if the original source of a payment request has been changed through settlement or unsettlement. A selected checkbox indicates that the amount to pay of the payment request differs from the amount of the open vendor or customer transaction.
 
@@ -626,7 +585,7 @@ To set up a periodic update of payment requests, follow these steps:
     | Request sources         | Specify the sources of the payment request. |
     | Legal entities          | Specify legal entities. A treasury company can include all legal entities that belong to the current centralized payment hierarchy. |
 
-    ![Update payment requests.](../media/rus-cash-flow-m34.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m34.jpg" alt-text="Screenshot of the Update payment requests page.":::
 
 ## Payment schedule journal processing
 
@@ -636,7 +595,7 @@ To set up a payment schedule journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash flow management \> Payment schedule journal names**.
 
-    ![Set up a payment schedule journal.](../media/rus-cash-flow-m35.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m35.jpg" alt-text="Screenshot of the Set up a payment schedule journal page.":::
 
 1. Select **New** to create a record, and specify a name and description for the journal.
 1. Select the journal type:
@@ -653,7 +612,7 @@ To set up a payment schedule journal, follow these steps:
 
 1. The **Dimensions** FastTab defines how the lines of the payment schedule journal are aggregated. The analytic report of the payment schedule journal also uses these dimensions. Use the arrow buttons to move dimensions to or from the **Selected dimensions** list.
 
-    ![Dimensions for payment schedule journals.](../media/rus-cash-flow-m36.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m36.jpg" alt-text="Screenshot of the Dimensions for payment schedule journals FastTab.":::
 
 1. The **Legal entities** FastTab defines the legal entities that are used to generate payment schedule journals. Use the arrow buttons to move legal entities to or from the **Selected sources** list.
 1. On the **Journal data sources** FastTab, select **Add line** to create a record.
@@ -676,13 +635,13 @@ To set up a payment schedule journal, follow these steps:
 1. Repeat steps 7 through 8 to create other lines that have the required journal data sources.
 1. On the **Payment accounts** FastTab, set the **Include transactions with no specified bank account** option to **Yes** if the payment schedule journal should include planned payments and payment requests that a payment account isn't specified for.
 
-    ![Payment schedule journal names page, Payment accounts FastTAb.](../media/rus-cash-flow-m37.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m37.jpg" alt-text="Screenshot of the Payment schedule journal names page, Payment accounts FastTab.":::
 
 1. Select **Add line** to create a record.
 1. Specify the payment account type and account number. The payment schedule journal will include only sources that are associated with the specified payment accounts.
 1. On the **Cash balance control** FastTab, select **Add line**, and then specify the currency and minimum cash balance. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
 
-    ![Payment schedule journal names page, Cash balance control FastTab.](../media/rus-cash-flow-m38.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m38.jpg" alt-text="Screenshot of the Payment schedule journal names page, Cash balance control FastTab.":::
 
 ### Payment plan processing
 
@@ -691,64 +650,64 @@ To set up payment plan processing, follow these steps:
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> Payment schedule journal**.
 1. Create a payment schedule journal. In the **Name** field, select a payment schedule journal of the **Payment plan** type.
 
-    ![Payment plan processing.](../media/rus-cash-flow-m39.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m39.jpg" alt-text="Screenshot of the Payment plan processing page.":::
 
 1. Use the **From date** and **To date** fields to specify an effective date range.
 1. On the **General**, **Dimensions**, **Legal entities**, **Journal data sources**, **Payment accounts**, and **Cash balance control** tabs, change the attributes of the payment schedule journal as you require.
 1. Select **Calculate**.
 1. Select **Lines** to validate the payment schedule journal lines.
 
-    ![Payment plan processing lines.](../media/rus-cash-flow-m40.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m40.jpg" alt-text="Screenshot of the Payment plan processing lines page.":::
 
 1. Select **Edit beginning balance** to change the beginning balance of this journal.
 1. For lines that have **Payment request** as the journal data source, select **Payment request lines** to review the payment request lines that are included on the current journal line.
 1. Close the page.
 1. On the **Payment schedule journal** page, select **Payment schedule** to review the payment schedule sheet. If a cash shortage or surplus is detected and should be prevented, you can make changes.
 
-    ![Payment schedule sheet.](../media/rus-cash-flow-m41.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m41.jpg" alt-text="Screenshot of the Payment schedule sheet.":::
 
 1. Set the **Show totals per payment accounts** option to **Yes** if the payment schedule sheet should be calculated based on payment accounts.
 1. Set the **Show totals per method of payments** option to **Yes** if the payment schedule sheet should be calculated based on methods of payments.
 1. Use the right arrow button (**\>**) to select an aggregation parameter for the payment schedule sheet.
 1. Select **Show results**.
 
-    ![Payment schedule sheet overview1.](../media/rus-cash-flow-m42.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m42.jpg" alt-text="Screenshot of the Payment schedule sheet overview.":::
 
     If the minimum cash balance for a currency or a payment account is exceeded, the payment schedule sheet highlights the **Estimated balance** amounts in yellow.
 
 1. If the **Payment request** license configuration key is turned on, select the amount for a **Payment request** journal data source. If the **Payment request** license configuration key isn't turned on, select an **Accounts payable** or **Accounts receivable** journal data source. Select **Show origin** to open the sources of that amount.
 1. Select the amount for a **Payment request** journal data source, and then select **Change payment sources**.
 
-    ![Change payment sources button on a payment schedule sheet.](../media/rus-cash-flow-m43.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m43.jpg" alt-text="Screenshot of the Change payment sources button on a payment schedule sheet.":::
 
 1. Select payment sources that should be moved to another date, or that should be paid by using another method of payment or payment account.
 
-    ![Payment schedule balancing.](../media/rus-cash-flow-m44.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m44.jpg" alt-text="Screenshot of the Payment schedule balancing page.":::
 
 1. Select **Multiple change**, specify the new payment details in the **Modify payment attributes** dialog, and then select **OK**.
 
-    ![Modify payment attributes.](../media/rus-cash-flow-m45.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m45.jpg" alt-text="Screenshot of the Modify payment attributes dialog.":::
 
     Alternatively, you can specify new payment attributes for a specific line.
 
 1. Select **Update payment schedule**. The system updates the payment schedule sheet and creates uncommitted payment schedule journal lines for payment sources correction.
 
-    ![Update payment schedule.](../media/rus-cash-flow-m46.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m46.jpg" alt-text="Screenshot of the Update payment schedule page.":::
 
 1. Make any other required changes to the payment schedule sheet.
 1. On the **Payment schedule journal** page, select **Functions \> Apply changes** to apply your changes or **Functions \> Revert changes** to reject them.
 1. If changes to the journal setup are required, select **Functions \> Delete journal lines**, and calculate the journal.
 
-    ![Functions for payment schedule.](../media/rus-cash-flow-m47.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m47.jpg" alt-text="Screenshot of the Functions for payment schedule menu.":::
 
 1. Select **Validate** to validate the journal. The system notifies you if canceled, on-hold, or incomplete workflow payment requests are included in this journal.
 1. If all the data is correct, and workflow approval of the payment plan can start, select **Workflow \> Submit**.
 
-    ![Workflow.](../media/rus-cash-flow-m48.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m48.jpg" alt-text="Screenshot of the Workflow submission page.":::
 
     Approvers might see the following actions during the approval workflow: **Approve**, **Reject**, **Request change**, **Delegate**, **Recall**, and **View history**.
 
-    ![Workflow actions.](../media/rus-cash-flow-m49.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m49.jpg" alt-text="Screenshot of the Workflow actions available during approval.":::
 
 1. If the payment plan is approved, select **Confirm**. The status of the payment requests that are included is changed to **Scheduled**.
 1. On the **Payment request** page, on the Action Pane, on the **General** tab, in the **Related information** group, select **Payment schedule journal**.
@@ -780,7 +739,7 @@ To set up payment register processing, follow these steps:
 1. On the **Payment schedule journal** page, select **Functions \> Generate payments**.
 1. Set the parameters for payment journal generation.
 
-    ![Parameters for payment journal generation.](../media/rus-cash-flow-m50.jpg)
+    :::image type="content" source="../media/rus-cash-flow-m50.jpg" alt-text="Screenshot of the Parameters for payment journal generation page.":::
 
 1. Select **OK**.
 1. Select **Accounts payable \> Payments \> Vendor payment journal** to validate and process the vendor payment journal that is created.

@@ -1,12 +1,12 @@
 ---
-title: FAQ and solving typical issues when setting up and configure the Supplier Communications Agent (production ready preview)
-description: Identify and solve typical issues when configuring the Supplier Communications Agent in Dynamics 365 Supply Chain Management to streamline vendor communication.
+title: Solve common problems when setting up supplier communications features (production-ready preview)
+description: Identify and solve typical issues when configuring supplier communications features of the Procurement Agent in Dynamics 365 Supply Chain Management to streamline vendor communication.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 03/10/2026
+ms.date: 05/07/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -14,14 +14,14 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Solve common problems when setting up the Supplier Communications Agent (production ready preview)
+# Solve common problems when setting up supplier communications features (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article helps system administrators to solve typical issues when configuring the Supplier Communications Agent.
+This article helps system administrators to solve typical issues when configuring supplier communications features of the Procurement Agent.
 
 ## The *Dynamics 365 apps* link isn't shown for my environment in the Power Platform admin center
 
@@ -46,11 +46,11 @@ In the [Power Platform admin center](https://aka.ms/ppac), you go to **Manage** 
 
 Open your project in [Lifecycle Services](https://lcs.dynamics.com/V2) and then open the **Full details** for your finance and operations apps environment. Under **Power Platform Integration**, check whether any errors are reported (such as "LCS Power Platform Integration provisioning fails with timeout"). Then attempt a retry to complete the deployment.
 
-## I can't enable the *(Production ready preview) Agent management* feature in feature management
+## I can't enable the *Agent management* feature in feature management
 
 ### Symptoms
 
-In the **Feature management** workspace for your finance and operations apps environment, when you try to enable the *(Production Ready Preview) Agent Management* feature, you receive the following error message:
+In the **Feature management** workspace for your finance and operations apps environment, when you try to enable the *Agent management* feature, you receive the following error message:
 
 > You cannot enable this Feature. Environment must be linked to Dataverse for agents to function
 
@@ -60,11 +60,11 @@ The error appears even though a Dataverse environment was successfully created i
 
 If you're running version 10.0.44 of finance and operations apps, then install the latest quality update for that version. This is required because the initial preview release of version 10.0.44 didn't include important changes to the Copilot message capacity, and these changes are required to enable the agent management feature.
 
-## The Supplier Communications Agent shows error "Exception has been thrown by target of invocation"
+## The Procurement Agent shows error "Exception has been thrown by target of invocation"
 
 ### Symptoms
 
-When you're configuring the Supplier Communications Agent, and specifying the conditions in which the agent should operate, the following error is shown when you press the **Activate** button:
+When you're configuring the supplier communications features of the Procurement Agent, and specifying the conditions in which the agent should operate, the following error is shown when you press the **Activate** button:
 
 > Exception has been thrown by target of invocation
 

@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/22/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -31,11 +31,11 @@ As a result of revaluation of fixed asset cost and depreciation, the following e
 To revaluate fixed asset cost and depreciation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **Periodic journals** \> **FA revaluation** to open the **FA revaluation** page.
-2. Select **New** to create a revaluation journal.
-3. The **Revaluation period** and **State on** fields are automatically set to the current period and date. However, you can update these fields as you require. The **State on** field specifies the date that depreciation revaluation is calculated from.
-4. In the **Fixed asset journal name** field, select a journal name. This journal name is used to create the Fixed asset journal when the revaluation journal is closed.
-5. The **FA journal** field is automatically set, based on the number sequence setting, when the Fixed asset revaluation journal is closed.
-6. Select **Lines**, and then, in the **Revaluation lines creation** dialog, select the **RAP** value model. To set a filter to select fixed assets for revaluation, on the **Records to include** Fast Tab, select **Filter**. Then select **OK**.
+1. Select **New** to create a revaluation journal.
+1. The **Revaluation period** and **State on** fields are automatically set to the current period and date. However, you can update these fields as you require. The **State on** field specifies the date that depreciation revaluation is calculated from.
+1. In the **Fixed asset journal name** field, select a journal name. This journal name is used to create the Fixed asset journal when the revaluation journal is closed.
+1. The **FA journal** field is automatically set, based on the number sequence setting, when the Fixed asset revaluation journal is closed.
+1. Select **Lines**, and then, in the **Revaluation lines creation** dialog, select the **RAP** value model. To set a filter to select fixed assets for revaluation, on the **Records to include** Fast Tab, select **Filter**. Then select **OK**.
 
     On the **FA revaluation lines** page, the system creates lines for fixed assets that have the selected value model.
 
@@ -44,24 +44,24 @@ To revaluate fixed asset cost and depreciation, follow these steps:
     > [!NOTE]
     > You can manually set the **Replacement cost** field. In this case, the system recalculates the factor. Alternatively, you can manually set the **Factor** field. In this case, the system recalculates the replacement cost.
 
-7. You can add and remove lines as you require:
+1. You can add and remove lines as you require:
 
     - To add a line, select **New**. In the **Revaluation lines creation** dialog, select the fixed asset inventory number and value model, and then select **OK**. If you don't specify the value model, the system creates lines for all value models that are set up in the fixed asset.
     - To remove a line, select it, and then select **Delete**
 
-8. Follow one of these steps:
+1. Follow one of these steps:
 
     - To revaluate fixed asset cost and depreciation by using the direct revaluation method, in the **Replacement cost** field, enter the market cost of fixed assets.
     - To revaluate fixed asset cost and depreciation for all fixed assets on the **FA revaluation lines** page by using the indexing method, select **Revaluation**. In the **Group revaluation** dialog, select the value model that the revaluation should be calculated for, and enter the factor. To set a filter to select fixed assets for revaluation, on the **Records to include** Fast Tab, select **Filter**. Then select **OK**. The **Factor** and **Replacement cost** fields are filled in for all lines.
 
-9. Close the **FA revaluation lines** page.
-10. On the **FA revaluation** page, on the Action Pane, select **Close** to confirm the revaluation results.
+1. Close the **FA revaluation lines** page.
+1. On the **FA revaluation** page, on the Action Pane, select **Close** to confirm the revaluation results.
 
     After the Fixed asset revaluation journal is closed and the Fixed asset journal is created, the Fixed asset journal number is filled in, and the **FA journal** button on the Action Pane becomes available.
 
-11. Select **FA journal**, and then, on the **FA journal** page, select **Lines**. The **Voucher transaction** page shows revaluation transactions. You can correct these transactions as you require.
-12. Select **Post** \> **Post** to post the journal.
-13. Validate the balance in the value model (**Fixed asset (Russia)** \> **Fixed assets** \> **Value models** \> **Balance**). The values in the **Cost revaluation** and **Depreciation revaluation** fields are updated.
+1. Select **FA journal**, and then, on the **FA journal** page, select **Lines**. The **Voucher transaction** page shows revaluation transactions. You can correct these transactions as you require.
+1. Select **Post** \> **Post** to post the journal.
+1. Validate the balance in the value model (**Fixed asset (Russia)** \> **Fixed assets** \> **Value models** \> **Balance**). The values in the **Cost revaluation** and **Depreciation revaluation** fields are updated.
 
 ## Reverse fixed asset revaluation transactions
 
@@ -70,10 +70,10 @@ By default, when you reverse transactions, the reversal date is equal to the ori
 To reverse fixed asset revaluation transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Fixed assets**, and on the Action Pane, select **Value models**.
-2. On the **FA value models** page, on the Action Pane, select **Transactions**.
-3. On the **FA transactions** page, select and transaction and on the Action Pane, select **Reverse transaction**.
-4. In the **Reverse transactions** dialog, change the transaction reversal date as needed and then select **OK**. A transaction to reverse the original transaction is created and added to the **FA transactions** page.
-5. Select **Voucher**, and on the **Voucher transactions** page, view the transactions in the ledger.
+1. On the **FA value models** page, on the Action Pane, select **Transactions**.
+1. On the **FA transactions** page, select and transaction and on the Action Pane, select **Reverse transaction**.
+1. In the **Reverse transactions** dialog, change the transaction reversal date as needed and then select **OK**. A transaction to reverse the original transaction is created and added to the **FA transactions** page.
+1. Select **Voucher**, and on the **Voucher transactions** page, view the transactions in the ledger.
 
 
 

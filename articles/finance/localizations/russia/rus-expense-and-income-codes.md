@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-03-01
@@ -31,7 +31,7 @@ To create an expense or income code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Expense codes**.
 
-    ![Expense codes page.](../media/1_Expense_codes.png)
+    :::image type="content" source="../media/1_Expense_codes.png" alt-text="Screenshot of the Expense codes page.":::
 
 1. On the Action Pane, select **Tree view** to view expense and income codes as a tree, and then select **New** to create a code.
 1. In the **Expense code** field, enter the expense or income code. The code should be unique.
@@ -64,7 +64,7 @@ To create an expense or income code, follow these steps:
 
     For example, amounts for ledger transactions **Debit 62.110** and **Credit 90.110**, where the **ExpenseAndIncomeCode** financial dimension is either set to **901010200** or left blank, will be assigned to income code **901010200** (**Revenue from sales of goods**).
 
-    ![Expense code and ledger relation page, Financial dimensions FastTab.](../media/2_Expense_code_and_ledger_relation.png)
+    :::image type="content" source="../media/2_Expense_code_and_ledger_relation.png" alt-text="Screenshot of the Expense code and ledger relation page, Financial dimensions FastTab.":::
 
 1. On the **Expense code and ledger relation** page, in the header, set the following values:
 

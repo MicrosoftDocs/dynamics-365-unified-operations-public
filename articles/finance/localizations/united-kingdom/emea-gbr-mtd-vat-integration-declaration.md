@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/30/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-03
@@ -134,7 +134,7 @@ To set up sales tax codes, follow these steps:
 1. Select **New** to create a record, and specify the parameters of the sales tax code.
 1. In the **Sales tax currency** field, select **GBP**. For more information, see [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
 1. In the **Country/region** field, select the country/region type that the tax code will be used for. For sales tax codes used to post intra-community dispatches of goods from Northern Ireland to EU Member States, in **Country/Region type** field, select **EU**. For other operations, select **Domestic** or **Third** depending on whether the sales tax code will be used for posting domestic operations or operations with counterparties in other countries/regions.
-1. For reverse charge VAT operations, create two sales tax codes, one that has a negative rate and one that has a positive rate. For more information, see [Reverse charge mechanism for VAT/GST scheme](../global/emea-reverse-charge.md). As of January 1, 2021, a “reverse charge” approach can be used for acquisitions that companies in the United Kingdom make from counterparties in the EU, and that can be accounted for as import VAT on a VAT Return. This accounting is also known as *postponed VAT accounting*. 
+1. For reverse charge VAT operations, create two sales tax codes, one that has a negative rate and one that has a positive rate. For more information, see [Reverse charge mechanism for VAT/GST scheme](../global/emea-reverse-charge.md). As of January 1, 2021, a “reverse charge” approach can be used for acquisitions that companies in the United Kingdom make from counterparties in the EU, and that can be accounted for as import VAT on a VAT Return. This accounting is also known as *postponed VAT accounting*.
 1. Distribute the new sales tax codes into sales tax groups and item sales tax groups. Make sure that each sales tax code is added to an item sales tax group and a sales tax group, and that the required fields are set on the **Setup** FastTab of the **Sales tax groups** page. The required fields include:
 
     - **Exempt** and **Exempt code**: For VAT exempt operations.
@@ -142,7 +142,7 @@ To set up sales tax codes, follow these steps:
     - **Use tax**: For intra-community acquisitions of goods made in Northern Ireland from EU Member States. As of January 1, 2021, tax setups that use the **use tax** approach will no longer be applicable to acquisitions that companies in the United Kingdom make from the EU.
 
     The combination of these groups must lead to one sales tax code. There is an exception for the setup of reverse charge VAT operations, which Finance uses for VAT posting. These two groups, together with **Reporting type** defind for **Item sales tax group** and the **Country/region type** of the **Sales tax code**, will lead to reporting in different [boxes of the VAT declaration](#boxes).
- 
+
 > [!NOTE]
 > As of January 1, 2021, dispatch of goods and related costs to customers in the EU must be excluded from box 8 if the dispatches are from the United Kingdom. Therefore, the sales tax code with the **Country/Region type** value set up to **EU** can be used for intra-community dispatches of goods from Northern Ireland to EU Member States only.
 
@@ -150,12 +150,12 @@ To set up sales tax codes, follow these steps:
 
 To set up reverse charge rules, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters**. 
-1. On the **Reverse charge** tab, select the **Enable reverse charge** checkbox. 
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters**.
+1. On the **Reverse charge** tab, select the **Enable reverse charge** checkbox.
 1. In the **Purchase order sales tax group** field, select the sales tax group created and set up for importing/reverse change operations.
 
 For more information, see [Reverse charge mechanism for VAT/GST scheme](../global/emea-reverse-charge.md).
- 
+
 There are several scenarios, such as postponed VAT accounting and VAT reverse charge for building and construction services, where the deemed output VAT will be accounted for on the value of the invoice and added to box 1 of the VAT return. However nothing will be entered in box 6 for the transaction. To exclude the tax base amount from box 6, you must complete the following setup. This steps in this procedure use the example of postponed VAT accounting.
 
 To exclude the tax base amount from box 6, follow these steps:
@@ -192,12 +192,12 @@ To run through the domestic purchase example, follow these steps:
 
 1. Set up a sales tax code, a sales tax group, and an item sales tax group.
 
-    ![Sales tax setup for Domestic purchase.](../media/uk-mtd-setup-vatp20.png)
+    :::image type="content" source="../media/uk-mtd-setup-vatp20.png" alt-text="Screenshot of sales tax setup for Domestic purchase.":::
 
-1. Post a vendor invoice and generate the VAT 100 report. 
+1. Post a vendor invoice and generate the VAT 100 report.
 1. Verify the amounts in box 4 and box 7.
 
-    ![VAT 100 report for Domestic purchase.](../media/uk-mtd-report-vatp20.png)
+    :::image type="content" source="../media/uk-mtd-report-vatp20.png" alt-text="Screenshot of VAT 100 report for Domestic purchase.":::
 
 ### Domestic sale
 
@@ -205,12 +205,12 @@ To run through the domestic sale example, follow these steps:
 
 1. Set up a sales tax code, a sales tax group, and an item sales tax group.
 
-    ![Sales tax setup for Domestic sale.](../media/uk-mtd-setup-vats20.png)
+    :::image type="content" source="../media/uk-mtd-setup-vats20.png" alt-text="Screenshot of sales tax setup for Domestic sale.":::
 
-1. Post a free text invoice and generate the VAT 100 report. 
+1. Post a free text invoice and generate the VAT 100 report.
 1. Verify the amounts in box 1 and box 6.
 
-    ![VAT 100 report for Domestic sale.](../media/uk-mtd-report-vats20.png)
+    :::image type="content" source="../media/uk-mtd-report-vats20.png" alt-text="Screenshot of VAT 100 report for Domestic sale.":::
 
 ### Domestic reverse charge for services
 
@@ -218,12 +218,11 @@ To run through the domestic reverse charge for services example, follow these st
 
 1. Set up a sales tax code, a sales tax group, and an item sales tax group.
 
-    ![Sales tax setup for domestic reverse charge.](../media/uk-mtd-setup-rch.png)
+    :::image type="content" source="../media/uk-mtd-setup-rch.png" alt-text="Screenshot of sales tax setup for domestic reverse charge.":::
 
-1. Post a vendor invoice and generate the VAT 100 report. 
+1. Post a vendor invoice and generate the VAT 100 report.
 1. Verify the amounts in box 1, 4, 6, and box 7.
 
-    ![VAT 100 report for export.](../media/uk-mtd-report-rch.png)
-
+    :::image type="content" source="../media/uk-mtd-report-rch.png" alt-text="Screenshot of VAT 100 report for export.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

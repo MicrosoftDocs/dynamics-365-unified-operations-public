@@ -3,8 +3,10 @@ title: Malaysian Goods and Services Tax (GST)/Sales and Service Tax (SST)
 description: Learn about how to set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company, including an overview on enabling features.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/16/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User 
 ms.search.region: Malaysia

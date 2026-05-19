@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
@@ -23,21 +23,21 @@ Report 340 contains information about all invoices and taxes that are related to
 
 The file format for Report 340 consists of two record types that are based on the file structure.
 
--   **Type 1** – This record type contains header information about the legal entity that generates the report.
--   **Type 2** – This record type contains information about the items and services that are purchased and sold by a legal entity during a specified period.
+- **Type 1** – This record type contains header information about the legal entity that generates the report.
+- **Type 2** – This record type contains information about the items and services that are purchased and sold by a legal entity during a specified period.
 
 ## Entries that are included in Report 340
 
 Report 340 includes the following entries:
 
--   **Sales entries** – Value-added tax (VAT) report lines that correspond to sales invoices and project invoices.
--   **Sales credit memos (corrective invoices)** – VAT report lines that correspond to corrective sales invoices.
--   **Purchase entries** – VAT report lines that correspond to purchase invoices.
--   **Purchase credit memos** – VAT report lines that correspond to corrective purchase invoices.
--   **Auto-invoices and auto-credit memos** – VAT report lines that correspond to invoices and credit memos that are automatically created when goods or services are delivered by a vendor in the European Union (EU).
--   **Invoices that include equivalence charge** – Equivalence charge is a type of Spanish sales tax.
--   **Invoices including different VAT% or equivalence charge percentage (EC%)** – Invoices that have more than one VAT percentage or equivalence charge percentage.
-    
+- **Sales entries** – Value-added tax (VAT) report lines that correspond to sales invoices and project invoices.
+- **Sales credit memos (corrective invoices)** – VAT report lines that correspond to corrective sales invoices.
+- **Purchase entries** – VAT report lines that correspond to purchase invoices.
+- **Purchase credit memos** – VAT report lines that correspond to corrective purchase invoices.
+- **Auto-invoices and auto-credit memos** – VAT report lines that correspond to invoices and credit memos that are automatically created when goods or services are delivered by a vendor in the European Union (EU).
+- **Invoices that include equivalence charge** – Equivalence charge is a type of Spanish sales tax.
+- **Invoices including different VAT% or equivalence charge percentage (EC%)** – Invoices that have more than one VAT percentage or equivalence charge percentage.
+
 ## Generate a Spanish VAT book and export the Report 340 ASCII file
 
 To generate a Spanish VAT book and export the Report 340 ASCII file, follow these steps:
@@ -50,7 +50,7 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> Spanish VAT books**.
 
-    ![Spanish VAT books page.](../media/1_Spanish_VAT_book.png)
+    :::image type="content" source="../media/1_Spanish_VAT_book.png" alt-text="Screenshot of the Spanish VAT books page.":::
 
 1. In the **VAT book** and **Description** fields, enter a name and description for the VAT book.
 1. In **Book type** field select a book type. Options are **Sales tax payable**, **Sales tax receivable**, and **All the books**.
@@ -68,24 +68,23 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
 1. Select **Create new** to create a report.
 1. In the **Spanish VAT list** dialog, set values for the following fields.
 
+    | Field | Description |
+    |---|---|
+    | VAT book | Select a VAT book. |
+    | Description | Enter a description of the VAT book. |
+    | Settlement period | Select a settlement period. |
+    | From date | Enter the first date of the sales tax settlement period. |
+    | Method of numbering | Select a numbering method:<br>- **Number sequence code**: The number of the VAT report line equals the invoice number.<br>- **Number sequence code**: The number of the VAT report line is taken from the number sequence that is defined in the **Number sequence code** field on the **Spanish VAT books** page.<br>- **340 sequence**: VAT report lines are numbered separately for purchases and sales. In both cases, the line numbers start from 1. |
+    | Start numbering (in the **Manual numbering** section) | Enter the first line number. |
+    | Template (in the **Manual numbering** section) | Enter the template for the line number. For example, enter #####. |
+    | Replacement declaration | Set this option to **Yes** to replace the previous declaration. |
+    | Previous declaration number | Enter the 13-digit number of the previous declaration. This field can be edited only if the **Replacement declaration** option is set to **Yes**. |
+    | Minimum payment account in cash | Enter the minimum cash payment amount that should be reported in the declaration. If you don't need to include cash payments in the report, enter 9999999999 in this field. |
 
-    | Field                                                   | Description            |
-    |---------------------------------------------------------|------------------------------------|
-    | VAT book                                                | Select a VAT book.          |
-    | Description                                             | Enter a description of the VAT book.    |
-    | Settlement period                                     | Select a settlement period.       |
-    | From date                                             | Enter the first date of the sales tax settlement period.    |
-    | Method of numbering                                   | Select a numbering  method:<br>- **Number sequence code**: The number of the VAT report line equals the invoice number.<br>- **Number sequence code**: The number of the VAT report line is taken from the number sequence that is defined in the **Number sequence code** field on the **Spanish VAT books** page.<br>- **340 sequence**: VAT report lines are numbered separately for purchases and sales. In both cases, the line numbers start from 1.  |
-    | Start numbering (in the **Manual numbering** section) | Enter the first line number.     |
-    | Template (in the **Manual numbering** section)        | Enter the template for the line number. For example, enter #####.   |
-    | Replacement   declaration                               | Set this option to **Yes** to replace the previous declaration.   |
-    | Previous   declaration number                          | Enter the 13-digit number of the   previous declaration. This field can be edited only if the **Replacement declaration** option is set to **Yes**. |
-    | Minimum   payment account in cash     | Enter the minimum cash payment   amount that should be reported in the declaration. If you don't need to include cash payments in the report, enter 9999999999 in this field.   |
-                                                                                                                                                                         |
 1. Select **OK** to create a line on the **Spanish VAT reports** page, based on the criteria that you defined in the previous step.
 1. Review the new line you created.
 
-    ![Spanish VAT reports page.](../media/2_Spanish_VAT_report.png)
+    :::image type="content" source="../media/2_Spanish_VAT_report.png" alt-text="Screenshot of the Spanish VAT reports page.":::
 
     > [!NOTE]
     > You can't change the values in the **Settlement period**, **Method of numbering**, and **From date** fields on the **Spanish VAT reports** page.
@@ -103,7 +102,7 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
 
 1. Select **VAT report lines** to open the **VAT report lines** page. On this page, you can view the details of the VAT transactions that are transferred to the VAT report. If any of the lines that are automatically transferred don't have to be reported, you can edit or delete them.
 
-    ![VAT report lines page.](../media/3_VAT_report_lines.png)
+    :::image type="content" source="../media/3_VAT_report_lines.png" alt-text="Screenshot of the VAT report lines page.":::
 
 1. Select **Posted sales tax** to open **Posted sales tax** page. On this page, you can review the posted sales tax transactions.
 1. Close the **Posted sales tax** and **VAT report lines** pages.
@@ -155,7 +154,7 @@ To run through an example, follow these steps:
     - EUS
     - VAT 10
 
-    ![Spanish VAT books page, Setup FastTab.](../media/4_Spanish_VAT_book.png)
+    :::image type="content" source="../media/4_Spanish_VAT_book.png" alt-text="Screenshot of the Spanish VAT books page, Setup FastTab.":::
 
 1. Select **Spanish VAT reports**.
 1. Select **Create new**.
@@ -165,13 +164,12 @@ To run through an example, follow these steps:
     - **From date:** 1/1/2020
 1. Select **VAT report lines**, and review the generated data.
 
-    ![Generated data on VAT report lines page.](../media/5_VAT_report_lines.png)
+    :::image type="content" source="../media/5_VAT_report_lines.png" alt-text="Screenshot of generated data on VAT report lines page.":::
 
 1. Select **Output \> Print**.
 1. In **Format mapping** field, select the **VAT register book (ES)** format that you downloaded.
 1. Select **OK**, open the downloaded file, and review the data.
 
-    ![Spanish VAT register book data.](../media/6_Spanish_VAT_register_book.png)
-
+    :::image type="content" source="../media/6_Spanish_VAT_register_book.png" alt-text="Screenshot of Spanish VAT register book data.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

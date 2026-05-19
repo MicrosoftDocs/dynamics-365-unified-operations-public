@@ -62,7 +62,7 @@ Select the **General** tab of the time series details page to view and adjust th
 - **Allow manual edits** – A value that indicates whether the series allows users to manually edit data values by using the data table.
 
 > [!TIP]
-> In addition to the features described in this article, time series also provide *generative insights* and a *Copilot grid cursor*, each of which help you analyze and explore time series data with the help of AI. Learn more in [Generative insights for Demand planning (production ready preview)](generative-insights.md) and [Copilot grid cursor](copilot-grid-cursor.md).
+> In addition to the features described in this article, time series also provide *generative insights* and a *Copilot grid cursor*, each of which help you analyze and explore time series data with the help of AI. Learn more in [Generative insights for Demand planning (production-ready preview)](generative-insights.md) and [Copilot grid cursor](copilot-grid-cursor.md).
 
 ## Customize time series chart and data table layouts
 

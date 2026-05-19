@@ -6,7 +6,7 @@ ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -30,7 +30,7 @@ Before you can generate payment orders, you must complete the following setup st
     1. In the **Bank account number** field, enter the foreign bank account number for the account that receives payments.
     1. In the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payments.
 
-   ![Vendor bank account.](../media/rus-vendor-bank-account-screenshot-5.jpg)
+   :::image type="content" source="../media/rus-vendor-bank-account-screenshot-5.jpg" alt-text="Screenshot of the Vendor bank account page.":::
 
 1. To generate payments to vendors, set up a method of payment at **Accounts payable \> Payment setup \> Methods of payment**. To generate payment returns to customers, set up a method of payment at **Accounts receivable \> Payment setup \> Methods of payment**.
 1. To print payment orders in Russian rubles according to the paper format, follow these steps:
@@ -68,7 +68,7 @@ To create payment order lines, follow these steps:
 1. On the **Payment order** tab, in the **Purpose text** field, enter any text that must be reflected on the payment order. If you select **VAT in payment order**, the text will be entered. This text includes the VAT amount in the **Purpose text** field.
 1. Set the following fields: **Order of payment**, **Number status**, **Budget revenue code**, **Origin payment**, **Payment type**, **UCI**, and the fields in the **Period** section (**Period code**, **Period number**, **Year**, **Period date**). The values will be printed in the corresponding boxes on the payment order for the vendor or tax authority.
 
-   ![Vendor payments.](../media/rus-vendor-payments-screenshot-4.jpg)
+   :::image type="content" source="../media/rus-vendor-payments-screenshot-4.jpg" alt-text="Screenshot of the Vendor payments page.":::
 
 ### Generate a payment order
 
