@@ -205,11 +205,11 @@ The logic that determines how dimensions are synchronized is implemented in the 
 
 ## Batch reservation policy for non-advanced warehouses
 
-A WMS-enabled item can be stocked in a warehouse that isn't enabled for advanced warehouse management processes. When the item uses a reservation hierarchy where the Batch number dimension is *below* the Location dimension, the system can't use the warehouse work engine to enforce batch-related rules during reservation. By default, this means that the reservation logic doesn't evaluate first expiry, first out (FEFO) rules or batch disposition codes for those items in those warehouses. As a result, the system might reserve a quantity from a batch that is marked as unavailable through its batch disposition code.
+A WHS-enabled item can be stocked in a warehouse that isn't enabled for advanced warehouse management processes. When the item uses a reservation hierarchy where the Batch number dimension is *below* the Location dimension, the system can't use the warehouse work engine to enforce batch-related rules during reservation. By default, this means that the reservation logic doesn't evaluate first expiry, first out (FEFO) rules or batch disposition codes for those items in those warehouses. As a result, the system might reserve a quantity from a batch that is marked as unavailable through its batch disposition code.
 
 To control this behavior, use the **Batch reservation policy for non advanced warehouses** field on the **Warehouse management parameters** page. The field has the following options:
 
-- **Simple** (default) – The existing reservation behavior is preserved. Batch disposition code logic is applied only when the batch is explicitly specified on the order line. FEFO rules are not applied by the reservation engine for non-WMS-enabled warehouses.
+- **Simple** (default) – The existing reservation behavior is preserved. Batch disposition code logic is applied only when the batch is explicitly specified on the order line. FEFO rules are not applied by the reservation engine for non-WHS-enabled warehouses.
 - **Advanced** – Both FEFO rules and batch disposition codes are applied during reservation and during on-hand calculations, even when no batch is specified on the order line. Batches that are assigned a disposition code with the **Batch disposition status** field set to *Unavailable* (with the **Reserve** block status applied for the order type) are excluded from automatic reservation. The user receives the standard "Cannot reserve" feedback when no other on-hand quantity is available.
 
 The policy applies in the following situations:
