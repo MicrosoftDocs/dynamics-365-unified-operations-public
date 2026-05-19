@@ -56,7 +56,7 @@ To configure the "Sign up and sign in" policy, follow these steps:
 
 You return to this policy to finish the setup after you build the custom pages. For now, close the policy to return to the **User flows (policies)** page in the Azure portal.
 
-### Configure the "Profile editing" policy
+### Configure the Profile editing policy
 
 To configure the "Profile editing" policy, follow these steps:
 
@@ -71,7 +71,7 @@ To configure the "Profile editing" policy, follow these steps:
 
 You return to this policy to finish the setup after you build the custom pages. For now, close the policy to return to the **User flows (policies)** page in the Azure portal.
 
-### Configure the "Password reset" policy
+### Configure the Password reset policy
 
 To configure the "Password reset" policy, follow these steps:
 
