@@ -173,7 +173,7 @@ As described in [Engineering companies and data ownership rules](engineering-org
 
 - For engineering change orders in an *operational company*, you can change the logistical data of the product. For example, you can enrich the existing BOM with settings for sourcing, add local routes or local BOMs, and even enrich a BOM by adding new BOM lines for local packaging materials, lubrication fluids, or instructions in the local language. Enrichments that users make in the operational company are preserved when new updates are sent from the engineering company. Learn more in [Engineering companies and data ownership rules](engineering-org-data-ownership-rules.md).
 
-       When engineering change orders are processed in the engineering company, the products are created and/or updated only in the engineering company. Therefore, if you need to update the product master data, you must also release the products to operational companies.
+    When engineering change orders are processed in the engineering company, the products are created and/or updated only in the engineering company. Therefore, if you need to update the product master data, you must also release the products to operational companies.
 
 - You can release products directly from engineering change orders. Open the change order, and then, on the Action Pane, on the **Change order** tab, in the **Product releases** group, select **Release product structure**. The process works just as it works when you release products from the **Released products** page. Learn more in [Release product structures](release-product-structure.md).
 - You can have products automatically released from engineering change orders, based on the following factors:
