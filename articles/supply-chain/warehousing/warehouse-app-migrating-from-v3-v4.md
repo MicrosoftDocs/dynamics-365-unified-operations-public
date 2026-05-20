@@ -126,7 +126,7 @@ The following authentication changes apply when you use a cloud environment of S
 If you use an on-premises environment of Supply Chain Management, you don't need a new Entra ID account or infrastructure configuration to support V4. Continue to use your existing configuration as established for V3. However, to support Windows and Android devices, you must add a new redirect URI to your application registration for the Supply Chain Management tenant in AD FS. For V4 of the Warehouse Management mobile app, the redirect URIs are as follows:
 
 - **Windows** – `ms-appx-web://microsoft.aad.brokerplugin/{clientId}` (where *{clientId}* is your Microsoft Entra client ID).
-- **Android** – `msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=`
+- **Android** – `msauth://com.Microsoft.WarehouseManagement/hpavxC1xAIAr5u39m1waWrUbsO8=`
 
 For more information and detailed setup instructions, go to [User-based authentication for the Warehouse Management mobile app in on-premises deployments](../../fin-ops-core/dev-itpro/deployment/warehousing-onprem-userauth.md).
 

@@ -68,7 +68,7 @@ To enable the Warehouse Management mobile app to interact with a specific Dynami
     For V4 of the Warehouse Management mobile app, the redirect URIs are as follows:
 
     - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/{clientId}*
-    - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+    - **Android:** *msauth://com.Microsoft.WarehouseManagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
     - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
 
     > [!NOTE]
@@ -77,7 +77,7 @@ To enable the Warehouse Management mobile app to interact with a specific Dynami
     For V3 of the Warehouse Management mobile app, the redirect URIs are as follows:
 
     - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333*
-    - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+    - **Android:** *msauth://com.Microsoft.WarehouseManagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
     - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
 
     > [!NOTE]
@@ -89,7 +89,7 @@ To enable the Warehouse Management mobile app to interact with a specific Dynami
 
     ```powershell
     $applicationGuid = New-Guid
-    # Example: Add-AdfsNativeClientApplication -ApplicationGroupIdentifier "Microsoft Dynamics 365 for Operations On-premises" -Name "Microsoft Dynamics 365 for Operations On-Premises - WMA DeviceCode - WH1 - D1" -Identifier $applicationGuid -RedirectUri @("msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=","msauth.com.microsoft.WarehouseManagement://auth","ms-appx-web://microsoft.aad.brokerplugin/$applicationGuid")
+    # Example: Add-AdfsNativeClientApplication -ApplicationGroupIdentifier "Microsoft Dynamics 365 for Operations On-premises" -Name "Microsoft Dynamics 365 for Operations On-Premises - WMA DeviceCode - WH1 - D1" -Identifier $applicationGuid -RedirectUri @("msauth://com.Microsoft.WarehouseManagement/hpavxC1xAIAr5u39m1waWrUbsO8=","msauth.com.microsoft.WarehouseManagement://auth","ms-appx-web://microsoft.aad.brokerplugin/$applicationGuid")
     Add-AdfsNativeClientApplication -ApplicationGroupIdentifier <Application group Identifier> -Name <Native client application name> -Identifier $applicationGuid -RedirectUri <Redirect URIs>
     ```
 
