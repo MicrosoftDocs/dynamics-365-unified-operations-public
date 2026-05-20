@@ -30,7 +30,7 @@ Queries are used to identify the shipment consolidation policy that applies, and
 
 You can use the various **Release to warehouse** pages to manually override the applicable consolidation policy in the same way that you can override fulfillment policies.
 
-You can use the **Release \> Release to warehouse** command on the **Outbound load planning workbench** page to build outbound loads that are based on sales, transfer, and outbound shipment order lines before you do the release to the warehouse. These loads use the same consolidation logic that was introduced together with the consolidation of shipment policies.
+You can use the **Release > Release to warehouse** command on the **Outbound load planning workbench** page to build outbound loads that are based on sales, transfer, and outbound shipment order lines before you do the release to the warehouse. These loads use the same consolidation logic that was introduced together with the consolidation of shipment policies.
 
 You can use the **Shipment consolidation workbench** page to consolidate existing shipments that haven't yet been confirmed but have already been released to the warehouse. This functionality supports scenarios where the automated release process, which has its own shipment consolidation, is run multiple times a day, but potential additional consolidations are manually identified before the shipment to carriers is completed during the confirmation process. This functionality lets you consolidate outbound shipments that are created from sales, transfer, or outbound shipment order lines at any time after the shipments are released to the warehouse but before they are confirmed.
 
