@@ -63,6 +63,13 @@ Supplier communications interacts with Dataverse and Microsoft Copilot Studio to
 
 Use the user management features for your tenant to create an *agent identity user*. Then assign the licenses and security roles described in the following subsections to that user.
 
+### Share the Microsoft Copilot Studio bots with the agent identity user
+To provide access to Microsoft Copilot Studio bots to the agent identity user, please follow the following steps:
+1. Navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment
+1. Find the following bots and share it with the agent identity user. _End user access_ should be sufficient.
+   - *Supplier Communications Agent - inbound*
+   - *Supplier Communications Agent - outbound*
+
 #### License requirements
 
 Supplier communications uses premium tier connectors, so the agent identity user must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
