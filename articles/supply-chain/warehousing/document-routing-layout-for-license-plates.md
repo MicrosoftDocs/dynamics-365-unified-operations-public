@@ -4,7 +4,7 @@ description: Learn how to use formatting methods to print values on labels with 
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/19/2024
+ms.date: 5/20/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -37,9 +37,9 @@ You can print highly complex labels, provided that the printing device can inter
 ^PQ1,,,Y^XZ
 ```
 
-As part of the label printing process, the text `$LicensePlateId$` in this example will be replaced with a data value. Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName$` format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
+As part of the label printing process, the text `$LicensePlateId in this example is replaced with a data value. Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
 
-To see the values that will be printed, go to **Warehouse management \> Enquiries and reports \> License plate labels**.
+To see the values that are printed, go to **Warehouse management > Enquiries and reports > License plate labels**.
 
 ## Custom number formats
 
@@ -73,13 +73,13 @@ Here, `#` specifies the number of characters to skip. For example, to print a Se
 
 ## Custom date/time formats
 
-The following example shows how you can control the format that is used to print dates.
+The following example shows how you can control the format used to print dates.
 
 ``` ZPL
 $PrintedDate:dd-MM-yyyy$
 ```
 
-In this example, the date April 30, 2020, will be printed as "30-04-2020."
+In this example, the date April 30, 2020, is printed as "30-04-2020."
 
 For a complete list of the available date/time formats, see [Custom date and time format strings](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
@@ -91,7 +91,7 @@ If a data field contains multiple lines (that is, lines that are separated by li
 $FieldName[#]$
 ```
 
-Here, `#` is the line number that you want to print. (Use 1 for the first line.)
+Here, `#` is the line number that you want to print. Use 1 for the first line.
 
 For example, your system has an `AdditionalAddress` field that stores the following multiline address:
 
