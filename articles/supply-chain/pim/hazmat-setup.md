@@ -39,7 +39,7 @@ This setup data isn't specific to each legal entity (company). Therefore, you ca
 
 For each regulation, you can define a materials list and use it as a template list associated with released items. For each regulation, you can also define a print setup. A print setup lets you define how the shipping text for an item is constructed. The print setup is used to construct the shipping print text for a released item.
 
-To set up hazardous material regulations, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material regulation**. On the **Hazardous material regulation** page, you can create any number of regulations and configure each by using the fields that are described in the following subsections.
+To set up hazardous material regulations, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material regulation**. On the **Hazardous material regulation** page, you can create any number of regulations and configure each by using the fields that are described in the following subsections.
 
 ### Hazardous material regulation header
 
@@ -91,7 +91,7 @@ Material codes establish settings that are related to a specific hazardous compo
 
 To manage your hazardous material definitions, follow these steps:
 
-1. Go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material regulation**.
+1. Go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material regulation**.
 1. Select the regulation to set up a hazardous material definition for.
 1. On the Action Pane, on the **Setup** tab, select **Hazardous materials**.
 1. In the **Material code** field, enter a material code for the hazardous material definition. You select this value when you apply the material code to a released product.
@@ -108,7 +108,7 @@ When you assign the code for a hazardous material classification group to a rele
 
 This setup data isn't specific to each legal entity. Therefore, you can have a common set of hazardous material information that is shared among all your legal entities.
 
-To set up hazardous material classification groups, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material classification group**. On the **Hazardous material classification group** page, you can create any number of groups and configure each by using the fields that are described in the following table.
+To set up hazardous material classification groups, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material classification group**. On the **Hazardous material classification group** page, you can create any number of groups and configure each by using the fields that are described in the following table.
 
 | Field | Description |
 |---|---|
@@ -134,7 +134,7 @@ Hazardous material classes work together with divisions, groups, and compatibili
 - Use hazardous material classes together with [hazardous material classification groups](#classification-groups) to establish a template of codes for setting up items.
 - Use [hazardous material compatibility groups](#compatibility-groups) to establish which hazardous material classes and divisions can be shipped together.
 
-To set up hazardous material classes, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material class**. On the **Hazardous material class** page, you can create any number of classes and configure each by using the fields described in the following table.
+To set up hazardous material classes, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material class**. On the **Hazardous material class** page, you can create any number of classes and configure each by using the fields described in the following table.
 
 | Field | Description |
 |---|---|
@@ -155,7 +155,7 @@ Hazardous material divisions work together with classes, groups, and compatibili
 - You can use hazardous material divisions together with [hazardous material classification groups](#classification-groups) to establish a template of codes for setting up items.
 - Use [hazardous material compatibility groups](#compatibility-groups) to establish which hazardous material classes and divisions can be shipped together.
 
-To set up hazardous material divisions, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material division**. On the **Hazardous material division** page, you can create any number of divisions and configure each by using the fields that are described in the following table.
+To set up hazardous material divisions, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material division**. On the **Hazardous material division** page, you can create any number of divisions and configure each by using the fields that are described in the following table.
 
 | Field | Description |
 |---|---|
@@ -169,7 +169,7 @@ Hazardous material compatibility groups establish which hazardous material class
 
 This setup data isn't specific to each legal entity. Therefore, you can have a common set of hazardous material information shared among all your legal entities.
 
-To set up hazardous material compatibility groups, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material compatibility group**. On the **Hazardous material compatibility group** page, you can create any number of compatibility groups and configure each by using the fields that are described in the following subsections.
+To set up hazardous material compatibility groups, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material compatibility group**. On the **Hazardous material compatibility group** page, you can create any number of compatibility groups and configure each by using the fields that are described in the following subsections.
 
 ### Hazardous material compatibility group header
 
@@ -203,13 +203,13 @@ Use [material codes](#hazmat-codes) to establish common collections of settings 
 
 The *Hazardous material emergency response* specification indicates what to do if something goes wrong while transporting a product that contains a given hazardous material.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material emergency response**. On the **Hazardous material emergency response** page, you can create any number of values and configure each with a classification code and a short description.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material emergency response**. On the **Hazardous material emergency response** page, you can create any number of values and configure each with a classification code and a short description.
 
 ### <a name="identification"></a>Hazardous material identification
 
 The *Hazardous material identification* specification identifies the class or nature of a hazardous material. The value is typically a code that's based on a United Nations (UN) standard. Each class is identified by a code and a description, and it can set limits on transport methods. For example, to identify a flammable item or material, you create a hazardous material class that uses the code *FL* and the description *Flammable*. You also specify that the class must not be transported by air.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material identification**. On the **Hazardous material identification** page, you can create any number of values and configure each by using the fields that are described in the following table.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material identification**. On the **Hazardous material identification** page, you can create any number of values and configure each by using the fields that are described in the following table.
 
 | Field | Description |
 |---|---|
@@ -222,49 +222,49 @@ To set up values for this specification, go to **Product information management 
 
 The *Hazardous material label* specification identifies the dangerous goods label that must be applied to relevant released products. The labels themselves describe how the product should be handled. For example, you have a product that contains a poisonous gas. In this case, you set up a label code that represents the poisonous gas label. You also build your business process so that it looks up this value when you ship products.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material label**. On the **Hazardous material label** page, you can create any number of labels and configure each with an identifying code and a short description.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material label**. On the **Hazardous material label** page, you can create any number of labels and configure each with an identifying code and a short description.
 
 ### <a name="packing-description"></a>Hazardous material packing descriptions
 
 The *Hazardous material packing descriptions* specification indicates how to pack a hazardous item. For example, you might need to pack the item in a specific type of steel drum or use another type of special packaging.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material packing descriptions**. On the **Hazardous material packing descriptions** page, you can create any number of packing descriptions and configure each with an identifying code and a short description.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material packing descriptions**. On the **Hazardous material packing descriptions** page, you can create any number of packing descriptions and configure each with an identifying code and a short description.
 
 ### <a name="packing-group"></a>Hazardous material packing group
 
 The *Hazardous material packing group* specification identifies the packing group for a hazardous item. The packing group lets you define a code and a description to indicate how hazardous material items must be packed during transportation or shipment. The packing group is assigned to the item through the **Item hazardous materials** page.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material packing group**. On the **Hazardous material packing group** page, you can create any number of packing groups and configure each with an identifying code and a short description.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material packing group**. On the **Hazardous material packing group** page, you can create any number of packing groups and configure each with an identifying code and a short description.
 
 ### <a name="packing-instruction"></a>Hazardous material packing instruction
 
 The *Hazardous material packing instruction* specification identifies packing instructions that must be followed when preparing a given hazardous item for transportation by air.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material packing instruction**. On the **Hazardous material packing instruction** page, you can create any number of packing instruction identifiers and configure each with an identifying code and a short description.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material packing instruction**. On the **Hazardous material packing instruction** page, you can create any number of packing instruction identifiers and configure each with an identifying code and a short description.
 
 ### <a name="stowage"></a>Hazardous material stowage
 
 The *Hazardous material stowage* specification indicates how to store a product on a ship when transporting it by sea freight.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material stowage**. On the **Hazardous material stowage** page, you can create any number of stowage identifiers and configure each with an identifying code and a short description.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material stowage**. On the **Hazardous material stowage** page, you can create any number of stowage identifiers and configure each with an identifying code and a short description.
 
 ### <a name="transport-category"></a>Hazardous material transport category
 
 The *Hazardous material transport category* specification typically groups similar hazardous products on reports. For example, transport categories are used on the **Shipment summary** report, which you can print from the warehouse shipment record.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material transport category**. On the **Hazardous material transport category** page, you can create any number of transport categories and configure each with a display name and a short description.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material transport category**. On the **Hazardous material transport category** page, you can create any number of transport categories and configure each with a display name and a short description.
 
 ### <a name="technical-name"></a>Hazardous material technical name
 
 Use the *Hazardous material technical name* specification to provide a commonly used or internal company name that describes each material.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material technical name**. On the **Hazardous material technical name** page, you can create any number of technical names and configure each with a display name and a short description.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material technical name**. On the **Hazardous material technical name** page, you can create any number of technical names and configure each with a display name and a short description.
 
 ### <a name="tunnel"></a>Hazardous material tunnel
 
 The *Hazardous material tunnel* specification limits the types of tunnels that a hazardous material can be transported through by identifying the types of tunnels that must be used. Tunnel categories are established by applicable regulations for hazardous material transport. This specification usually applies only to road transport.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material tunnel**. On the **Hazardous material tunnel** page, you can create any number of tunnel identifiers and configure each with an identifying code and a short description.
+To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material tunnel**. On the **Hazardous material tunnel** page, you can create any number of tunnel identifiers and configure each with an identifying code and a short description.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
