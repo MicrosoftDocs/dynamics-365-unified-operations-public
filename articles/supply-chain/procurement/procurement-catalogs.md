@@ -40,7 +40,7 @@ The following table describes the tasks that must be completed before a purchasi
 
 ## Set up a catalog
 
-After meeting the prerequisites, you can set up catalogs. You can create one catalog for your whole organization or multiple catalogs for different divisions within your organization. If you create one catalog for the entire organization, your purchasing policy rules control access to the catalog.    
+After meeting the prerequisites, you can set up catalogs. You can create one catalog for your whole organization or multiple catalogs for different divisions within your organization. If you create one catalog for the entire organization, your purchasing policy rules control access to the catalog.
 
 The catalog defines which products are available when purchase requisitions are created, but you can use category access policies rules to apply additional restrictions. Because the nodes in a catalog are procurement categories, they can be suppressed by a category access policy rule. In this case, the products in that category aren't available for employees to use on requisitions. You define category access policy rules on the **Purchasing policies** page. The following table describes the tasks that must be completed to set up a catalog.
 
@@ -48,7 +48,7 @@ The catalog defines which products are available when purchase requisitions are 
 |--|--|--|
 | Create a new catalog. | Purchasing agent | When you create a catalog, specify a name and description for the catalog. Also, define whether the catalog is updated manually or automatically, and specify the catalog owner. |
 | Control whether products are available in the catalog. | Purchasing agent | Because the products are inherited from the procurement categories, they all appear in the appropriate catalog nodes. You can control whether all products in a node are hidden or shown when the catalog is used in a purchase requisition. You can also control whether individual products in a node are hidden or shown. |
-| Publish the catalog. | Purchasing agent | Before employees can use a catalog in a requisition, you must define a catalog policy rule for the catalog, set the catalog’s status to **Active**, and publish the catalog. You can deactivate catalogs that you no longer want to be available to your users. |
+| Publish the catalog. | Purchasing agent | Before employees can use a catalog in a requisition, you must define a catalog policy rule for the catalog, set the catalog’s status to *Active*, and publish the catalog. You can deactivate catalogs that you no longer want to be available to your users. |
 
 Updates are published either automatically or manually, depending on the option that you select for the catalog in the **Default update type** field on the **Catalogs** page. The following default update types are available for catalogs:
 

@@ -231,7 +231,7 @@ The grid in the upper part of the **Purchase order request** page might show the
 - **Order request vendor status** – This field can have one of the following values:
 
     - **Waiting** – The document is waiting to be sent.
-        - **Acknowledged** – The vendor acknowledges to have received the document. You can review the detailed XML message returned from the vendor by selecting the **Response XML** tab in the lower part of the page.
+    - **Acknowledged** – The vendor acknowledges to have received the document. You can review the detailed XML message returned from the vendor by selecting the **Response XML** tab in the lower part of the page.
     - **Error** – The document is sent to the vendor, but an error occurs. You can review the error message by selecting the **Response XML** tab in the lower part of the page.
 
 The grid on the **Purchase order request history** tab in the lower part of the **Purchase order request** page might show the following values:
@@ -239,8 +239,8 @@ The grid on the **Purchase order request history** tab in the lower part of the 
 - **Order request type** – This field can have one of the following values:
 
     - **New** – The line is marked as new immediately after the purchase order is confirmed.
-        - **Update** – If a confirmation has is already sent and acknowledged by the vendor, the next confirmation is marked as *Update*. Updates are sent only if the **Send purchase request updates** option is set to *Yes* in the [global cXML parameters](#cxml-parameters).
-        - **Delete** – If a confirmation is already sent and acknowledged by the vendor, but the purchase order is canceled, the confirmation that's waiting is marked as *Delete*. Deletions are sent only if the **Send purchase request delete** option is set to *Yes* in the [global cXML parameters](#cxml-parameters).
+    - **Update** – If a confirmation has is already sent and acknowledged by the vendor, the next confirmation is marked as *Update*. Updates are sent only if the **Send purchase request updates** option is set to *Yes* in the [global cXML parameters](#cxml-parameters).
+    - **Delete** – If a confirmation is already sent and acknowledged by the vendor, but the purchase order is canceled, the confirmation that's waiting is marked as *Delete*. Deletions are sent only if the **Send purchase request delete** option is set to *Yes* in the [global cXML parameters](#cxml-parameters).
 
 - **Request time** – The time of creation of the order confirmation. You can compare the request time with the order status time to determine the time between confirmation and vendor acknowledgment.
 - **Order send status** – This field is the same as the **Order send status** field in the upper part of the page. It's repeated here to make it easier to view the status at the confirmation level. If the **Order request type** field is set to *New*, and the purchase order is reconfirmed before a confirmation is sent, the **Order send status** field is set to *Archive*.

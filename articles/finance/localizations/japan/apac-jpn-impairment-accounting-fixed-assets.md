@@ -3,8 +3,10 @@ title: Impairment accounting for fixed assets for Japan
 description: Learn about impairment accounting for fixed assets in Japan, including answers to questions about identifying impairments.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 12/08/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Japan

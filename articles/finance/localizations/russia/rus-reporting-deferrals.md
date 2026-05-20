@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/05/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -25,7 +25,7 @@ The **Deferrals listing** report shows a list of deferrals together with their c
 To configure the Deferrals listing report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Deferrals** \> **Deferrals listing**.
-2. Use the following default parameters in the **Deferrals listing** dialog to filter the data that appears on the report.
+1. Use the following default parameters in the **Deferrals listing** dialog to filter the data that appears on the report.
 
     | Field                                                 | Description |
     |-------------------------------------------------------|-------------|
@@ -42,7 +42,7 @@ The **Deferrals transaction listing** report shows the deferrals transactions fo
 To configure the Deferrals transaction listing report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquires and reports** \> **Deferrals** \> **Deferrals transaction listing**.
-2. Use the following default parameters in the **Deferrals transaction listing** dialog to filter the data that appears on the report.
+1. Use the following default parameters in the **Deferrals transaction listing** dialog to filter the data that appears on the report.
 
     | Field                                                     | Description |
     |-----------------------------------------------------------|-------------|
@@ -61,7 +61,7 @@ The *Deferrals balances* report shows deferral values such as initial amounts, w
 To configure the Deferrals balances report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquires and reports** \> **Deferrals** \> **Deferrals balances**.
-2. Use the following default parameters in the **Deferrals balances** dialog to filter the data that appears on the report.
+1. Use the following default parameters in the **Deferrals balances** dialog to filter the data that appears on the report.
 
     | Field                                                | Description |
     |------------------------------------------------------|-------------|
@@ -77,7 +77,7 @@ The *Factors for deferrals writing off* report shows a list of deferral factors.
 To configure the Factor for deferrals writing off report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquires and reports** \> **Deferrals** \> **Factors for deferrals writing off**.
-2. Use the following default parameters in the **Factors for deferrals writing off** dialog to filter the data that appears on the report.
+1. Use the following default parameters in the **Factors for deferrals writing off** dialog to filter the data that appears on the report.
 
     | Field                                                    | Description |
     |----------------------------------------------------------|-------------|

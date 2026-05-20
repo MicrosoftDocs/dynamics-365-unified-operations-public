@@ -4,7 +4,9 @@ description: Access answers some of the frequently asked questions about bank pa
 author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User 
 ms.search.region: Japan

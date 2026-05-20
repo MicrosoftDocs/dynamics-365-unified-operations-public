@@ -41,7 +41,7 @@ A *printer stock type* typically describes the type of paper, such as the size, 
 
 Follow these steps to set up printer stock types.
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Printer stock types**.
+1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Printer stock types**.
 1. Create or select a stock type.
 1. For the new or selected stock type, set the following fields:
 
@@ -55,7 +55,7 @@ Follow these steps to set up printer stock types.
 
 Follow these steps to set the printer stock type for a label printer.
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Label printers**.
+1. Go to **Warehouse management*** \> **Setup** \> **Document routing** \> **Label printers**.
 1. Create or select a printer.
 1. For the new or selected printer, set the **Printer stock type** field to the relevant printer stock type. For example, select one of the stock types that you set up in the previous section. For information about the other settings that are available for a label printer, see [Set up a printer](../supply-chain-dev/label-printing-using-external-label-service.md#label-printers).
 1. Repeat steps 2 and 3 until you set up all the stock types that you need.
@@ -65,7 +65,7 @@ Follow these steps to set the printer stock type for a label printer.
 
 Follow these steps to set the printer stock type for a label layout.
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
+1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Label layout**.
 1. At the top of the list pane, set the **Label layout type** field to *License Plate Label*.
 1. Create or select a label layout.
 1. For the new or selected label layout, set the **Printer stock type** field to a printer stock type that you set up earlier in this article. For information about the other settings that are available for a label layout, see [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md).
@@ -92,7 +92,7 @@ After your printers and label layouts are set up, you can set up default label p
 
 Follow these steps to set up default label printers for each worker and/or location.
 
-1. Go to **Warehouse management \> Document routing \> Default label printers**.
+1. Go to **Warehouse management** \> **Document routing** \> **Default label printers**.
 1. On the **Locations** tab, the grid shows the default label printers assigned to each location. For flows where the system can determine the location of a worker who requests printing, the printers that you set in this grid have priority (provided that the worker didn't manually override the default printer selection). Use the toolbar buttons to add or remove rows as required. For each row, set the following fields:
 
     - **Printer stock type** – Select the printer stock type that the row applies to.

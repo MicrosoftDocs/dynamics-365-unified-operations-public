@@ -50,13 +50,13 @@ Use the fields at the top of the **Message processor messages** page to find spe
     - *Source System Products* – This queue holds messages that support [source product master data](../warehousing/wms-only-mode-exchange-data.md).
     - *External warehouse shipment order updates* – This queue holds messages that support [external shared warehouse processing](../warehousing/wms-only-mode-external-shared-warehouse.md).
     - *Dynamics 365 Sales Integration* – This queue holds messages that integrate with Dynamics 365 Sales. For more information about this feature and the messages that it might add to this queue, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md).
-        - *\<Custom queues\>* – If your system is customzied to support additional types of queues, they appear here. For more information about how to add custom queues, see [Implement a new queue](developer/message-processor-develop.md#custom-queue).
+    - *\<Custom queues\>* – If your system is customzied to support additional types of queues, they appear here. For more information about how to add custom queues, see [Implement a new queue](developer/message-processor-develop.md#custom-queue).
 
 - **Message state** – The state of the message. The following states exist:
 
     - *Queued* – The message is ready to be processed by the message processor.
     - *Processed* – The message was successfully processed by the message processor.
-        - *Canceled* – The message is canceled by a user.
+    - *Canceled* – The message is canceled by a user.
     - *Failed* – The message failed to be processed.
 
 - **Message content** – This filter does a full-text search of message content. (The grid doesn't show message content.) The filter treats most special symbols, such as hyphens, as spaces, and it treats all space characters as Boolean OR operators. For example, if you search for a specific `journalid` value that equals *USMF-123456*, the system finds all messages that contain either "USMF" or "123456," and the list is likely to be long. Therefore, it's better to enter just *123456* in this case, because more specific results are returned.

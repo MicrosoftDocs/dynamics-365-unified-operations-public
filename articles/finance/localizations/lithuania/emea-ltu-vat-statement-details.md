@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 05/29/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Lithuania
 ms.search.validFrom: 2016-05-31
@@ -20,15 +20,17 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 This article explains how to set up a VAT statement for legal entities in Lithuania in Microsoft Dynamics 365 Finance.
 
 > [!NOTE]
-> This feature has been replaced with the value-added tax (VAT) declaration functionality. For more information, see [VAT declaration (Lithuania)](emea-ltu-vat-declaration-lithuania.md).
+> The value-added tax (VAT) declaration functionality replaces this feature. For more information, see [VAT declaration (Lithuania)](emea-ltu-vat-declaration-lithuania.md).
 
 This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Lithuania only. Learn more at [VAT reporting for Europe](../europe/emea-vat-reporting.md).
 
 ## Set up sales tax authorities
-To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page, in the **Report layout** field, select **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for sales tax codes.
+
+To generate a VAT declaration in the required format for the appropriate tax authority, set up the report layout for sales tax authorities. On the **Sales tax authorities** page, in the **Report layout** field, select **Default**. Select the same sales tax authority for the sales tax settlement period that you use for sales tax codes.
 
 ## Set up sales tax reporting codes
-Here is an example that show how you can use sales tax reporting codes to generate a VAT statement. The following sales tax reporting codes can be created and used on the **Report setup** FastTab of the **Sales tax codes** page.
+
+The following example shows how to use sales tax reporting codes to generate a VAT statement. Create and use the sales tax reporting codes on the **Report setup** FastTab of the **Sales tax codes** page.
 
 | Sales tax reporting code | Description                                                           | Box name on the report |
 |--------------------------|-----------------------------------------------------------------------|------------------------|
@@ -48,7 +50,7 @@ Here is an example that show how you can use sales tax reporting codes to genera
 | 24                       | Amount of services that are purchased from EU VAT payers.             | E24                    |
 | 25                       | VAT amount of purchased goods and services                            | E25                    |
 | 26                       | Paid import VAT                                                       | E26                    |
-| 27                       | Import VAT that will be deducted under the control of the tax service | E27                    |
+| 27                       | Import VAT that the tax service deducts under control                 | E27                    |
 | 29                       | Tax amount of sales that have a standard tax rate                     | E29                    |
 | 30                       | Tax amount of sales that have a reduced tax rate of 9 percent         | E30                    |
 | 31                       | Tax amount of sales that have a reduced tax rate of 5 percent         | E31                    |
@@ -61,16 +63,12 @@ Here is an example that show how you can use sales tax reporting codes to genera
 
 To configure the electronic reporting model and format for the report, follow these steps:
 
-1. To review or change the VAT statement configuration, on the **Reporting configurations** page, select **VAT declaration model**. 
+1. On **Reporting configurations**, select **VAT declaration model** to review or change the VAT statement configuration.
 1. Select **Designer** to review or change the model.
-1. To review or change the VAT statement format, on the **Reporting configurations** page, select **VAT declaration model**, and then select **Designer**.
+1. On **Reporting configurations**, select **VAT declaration model**, and then select **Designer** to review or change the VAT statement format.
 
 ## Generate a VAT statement
 
-To generate a VAT XML file, on the **Sales tax payments** page, select one or more vouchers, and then select **Export VAT XML file**.
-
-
-
-
+To generate a VAT XML file, on **Sales tax payments**, select one or more vouchers, and then select **Export VAT XML file**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

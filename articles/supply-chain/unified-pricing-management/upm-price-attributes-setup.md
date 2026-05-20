@@ -61,15 +61,15 @@ You can create Unified pricing management pricing rules that consider the attrib
 
 Follow these steps to set up your customer price attributes.
 
-1. Go to **Product information management > Setup > Categories and attributes > Attributes**, and set up all the customer price attributes that you need. For each attribute, make sure that the **Can be used as price attribute** option is set to *Yes*. (Learn more in the [Set up product price attributes](#price-attributes) section of this article.) In the **Default value** field, assign a default attribute value as required.
-1. Go to **Product information management > Setup > Categories and attributes > Attribute groups**, and create a customer price attribute group. Give it an appropriate name, such as *Customer price attributes*, and add each relevant attribute on the **Attributes** FastTab.
-1. Go to **Pricing management > Setup > Pricing management parameters**. On the **Price attribute** tab, set the **Customer attribute group** field to the attribute group that you created to hold your customer price attributes.
+1. Go to **Product information management** \> **Setup** \> **Categories and attributes** \> **Attributes**, and set up all the customer price attributes that you need. For each attribute, make sure that the **Can be used as price attribute** option is set to *Yes*. (Learn more in the [Set up product price attributes](#price-attributes) section of this article.) In the **Default value** field, assign a default attribute value as required.
+1. Go to **Product information management** \> **Setup** \> **Categories and attributes** \> **Attribute groups**, and create a customer price attribute group. Give it an appropriate name, such as *Customer price attributes*, and add each relevant attribute on the **Attributes** FastTab.
+1. Go to **Pricing management** \> **Setup** \> **Pricing management parameters**. On the **Price attribute** tab, set the **Customer attribute group** field to the attribute group that you created to hold your customer price attributes.
 
 ### Assign customer price attribute values to customers
 
 Customer price attributes are initially assigned the default value set up for the attribute. If you need to assign a specific value for a customer, follow these steps:
 
-1. Go to **Sales and marketing > Customers > All customers**.
+1. Go to **Sales and marketing** \> **Customers** \> **All customers**.
 1. Select a customer in the grid.
 1. On the Action Pane, on the **Price** tab, select **Customer attributes**.
 1. Select a customer attribute in the list pane, and then, on the **Value** FastTab, edit the attribute value for the customer as required.
@@ -83,15 +83,15 @@ You can create Unified pricing management pricing rules that consider attribute 
 
 Follow these steps to set up your sales order price attributes.
 
-1. Go to **Product information management > Setup > Categories and attributes > Attributes**, and set up all the sales order price attributes that you need. For each attribute, make sure that the **Can be used as price attribute** option is set to *Yes*. (Learn more in the [Set up product price attributes](#price-attributes) section of this article.) In the **Default value** field, assign a default value as required.
-1. Go to **Product information management > Setup > Categories and attributes > Attribute groups**, and create a sales order price attributes group. Give it an appropriate name, such as *Order price attributes*, and add each relevant attribute on the **Attributes** FastTab.
-1. Go to **Pricing management > Setup > Pricing management parameters**. On the **Price attribute** tab, set the **Sales order attribute group** field to the attribute group that you created to hold your sales order price attributes.
+1. Go to **Product information management** \> **Setup** \> **Categories and attributes** \> **Attributes**, and set up all the sales order price attributes that you need. For each attribute, make sure that the **Can be used as price attribute** option is set to *Yes*. (Learn more in the [Set up product price attributes](#price-attributes) section of this article.) In the **Default value** field, assign a default value as required.
+1. Go to **Product information management** \> **Setup** \> **Categories and attributes** \> **Attribute groups**, and create a sales order price attributes group. Give it an appropriate name, such as *Order price attributes*, and add each relevant attribute on the **Attributes** FastTab.
+1. Go to **Pricing management** \> **Setup** \> **Pricing management parameters**. On the **Price attribute** tab, set the **Sales order attribute group** field to the attribute group that you created to hold your sales order price attributes.
 
 ### Assign sales order price attribute values to sales orders
 
 Sales order price attributes are initially assigned the default value set up for the attribute. If you need to assign a specific value for an order, follow these steps:
 
-1. Go to **Sales and marketing > Orders > All sales orders**.
+1. Go to **Sales and marketing** \> **Orders** \> **All sales orders**.
 1. Select an order in the grid, or create a new one.
 1. On the Action Pane, on the **Price** tab, select **Sales order attributes**.
 1. Select a sales order price attribute in the list pane. On the **Value** FastTab, edit the attribute value for the customer as required.

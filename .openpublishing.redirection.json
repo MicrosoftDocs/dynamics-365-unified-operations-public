@@ -28649,9 +28649,107 @@
       "source_path": "articles/supply-chain/warehousing/whats-new-wma.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-apply-email-changes.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-apply-email-changes.md",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-follow-up.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-follow-up.md",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-overview.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-overview.md",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-setup-faq.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-setup-faq.md",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-setup-wizard.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-setup-wizard.md",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-setup.md",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-testing.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-testing.md",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-support-info-v3.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-support-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/copilot/faq-copilot-suggested-questions.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/dev-itpro/emea-aut-fi-sample-sdk.md",
+      "redirect_url": "/dynamics365/commerce/localizations/dev-itpro/emea-aut-fi-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/dev-itpro/emea-cze-fi-sample-sdk.md",
+      "redirect_url": "/dynamics365/commerce/localizations/dev-itpro/emea-cze-fi-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/dev-itpro/emea-deu-fi-sample-sdk.md",
+      "redirect_url": "/dynamics365/commerce/localizations/dev-itpro/emea-deu-fi-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/dev-itpro/emea-ita-fpi-sample-sdk.md",
+      "redirect_url": "/dynamics365/commerce/localizations/dev-itpro/emea-ita-fpi-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/dev-itpro/emea-nor-loc-deployment-guidelines.md",
+      "redirect_url": "/dynamics365/commerce/localizations/dev-itpro/emea-nor-fi-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/dev-itpro/emea-pol-fpi-sample-sdk.md",
+      "redirect_url": "/dynamics365/commerce/localizations/dev-itpro/emea-pol-fpi-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/dev-itpro/emea-swe-fi-sample-sdk.md",
+      "redirect_url": "/dynamics365/commerce/localizations/dev-itpro/emea-swe-fi-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/dev-itpro/retail-sdk-control-unit-sample.md",
+      "redirect_url": "/dynamics365/commerce/localizations/dev-itpro/emea-swe-fi-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/france/emea-fra-deployment.md",
+      "redirect_url": "/dynamics365/commerce/localizations/france/emea-fra-cash-registers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/france/emea-fra-fi-migration.md",
+      "redirect_url": "/dynamics365/commerce/localizations/france/emea-fra-fi-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/mea/emea-sau-qr-code.md",
+      "redirect_url": "/dynamics365/commerce/localizations/mea/emea-sau-simplified-e-invoices",
+      "redirect_document_id": false
     }
   ]
 
 }
-
-

@@ -2,7 +2,7 @@
 title: VAT declaration for Latvia
 description: Learn how to set up a value-added tax (VAT) declaration for legal entities in Latvia in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 05/29/2025
+ms.date: 05/04/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Latvia
@@ -19,7 +19,7 @@ ms.custom:
 
 This article explains how to set up and generate a value-added tax (VAT) declaration for legal entities in Latvia in Microsoft Dynamics 365 Finance.
 
-As of the 10.0.42 version of Dynamics 365 Finance, the VAT declaration feature for Latvia supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database. For each version of Finance that's listed in the following table, these capabilities are supported as of the specified build number.
+As of version 10.0.42 of Dynamics 365 Finance, the VAT declaration feature for Latvia supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database. For each version of Finance that's listed in the following table, these capabilities are supported as of the specified build number.
 
 | Version | Build | 
 |---------|-------|
@@ -136,9 +136,9 @@ To define which of the available sales tax transaction attributes (sales tax cod
 To set up application-specific parameters for VAT declaration fields, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VAT declaration XML (LV)** configuration, and then, on the Action Pane, select **Configurations** \> **Application specific parameters setup**.
-3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
-4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
+1. Select the **VAT declaration XML (LV)** configuration, and then, on the Action Pane, select **Configurations** \> **Application specific parameters setup**.
+1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
+1. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
 
     | Field | Description |
     |---|---|
@@ -156,24 +156,24 @@ To set up application-specific parameters for VAT declaration fields, follow the
 > [!NOTE]
 > Transactions reversed using the reverse transaction functionality will not be shown in PVN 1 if reverse is posted using the same date as the original document. To include them in the PVN, use the **Include reverse** user input parameter of the report.
 
-5. In the **State** field, change the value to **Completed**.
-6. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
-7. Select the **VAT declaration Excel (LV)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (LV)**.
-8. In the **State** field, select **Completed**.
+1. In the **State** field, change the value to **Completed**.
+1. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
+1. Select the **VAT declaration Excel (LV)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (LV)**.
+1. In the **State** field, select **Completed**.
 
 ### <a name="setup-preview"></a>Set up the VAT reporting format to preview amounts in Excel
 
 To set up the VAT reporting format to preview amounts in Excel, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**, and select the tax authority.
-2. In the **Report layout** field, select **Default**.
-3. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
-4. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (LV)** ER format. This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the Action pane of the **Sales tax payments** page.
+1. In the **Report layout** field, select **Default**.
+1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+1. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (LV)** ER format. This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the Action pane of the **Sales tax payments** page.
 
 If you're configuring the VAT declaration for Latvia in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
-2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **LVA**, select the **VAT Declaration Excel (LV)** ER format.
+1. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **LVA**, select the **VAT Declaration Excel (LV)** ER format.
 
 ### <a name="setup-em"></a>Set up electronic messages
 
@@ -189,13 +189,13 @@ The process of setting up the **Electronic messages** functionality to generate 
 To set up the **Electronic messages** functionality to generate the VAT declaration for Latvia in XML format and preview it, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **LV VAT declaration - PVN - EM setup v.\#**. The downloaded file is named **LV VAT declaration - PVN - EM setup v.\#.zip**. Always download the latest version of the package that's available in Lifecycle Services.
-2. In Finance, in the **Data management** workspace, select **Import**.
-3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
-4. On the **Selected entities** FastTab, select **Add file**.
-5. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
-6. Select **Close**.
-7. After the data entities are uploaded, on the Action Pane, select **Import**.
-8. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and validate the electronic message processing that you imported (**LV VAT declaration**).
+1. In Finance, in the **Data management** workspace, select **Import**.
+1. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
+1. On the **Selected entities** FastTab, select **Add file**.
+1. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
+1. Select **Close**.
+1. After the data entities are uploaded, on the Action Pane, select **Import**.
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and validate the electronic message processing that you imported (**LV VAT declaration**).
 
 For more information about how you can use the data management framework, see [Data management](../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
@@ -204,28 +204,28 @@ For more information about how you can use the data management framework, see [D
 To configure electronic messages, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
-2. Select the line for **LV Populate VAT return records**, and then select **Edit query**.
-3. Use the filter to specify the settlement periods to include on the report.
-4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
+1. Select the line for **LV Populate VAT return records**, and then select **Edit query**.
+1. Use the filter to specify the settlement periods to include on the report.
+1. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
 ### <a id="vat-id"></a>Set up the registration numbers of the company that's reporting PVN
 
 To configure the registration numbers of your organization, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select the legal entity, and then select **Registration IDs**.
-3. Select or create the address in Latvia, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that's dedicated to Latvia and that uses the **VAT ID** registration category.
-5. In the **Registration number** field, enter the tax number. This value is reported in the VAT declaration.
-6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
+1. Select the legal entity, and then select **Registration IDs**.
+1. Select or create the address in Latvia, and then, on the **Registration ID** FastTab, select **Add**.
+1. In the **Registration type** field, select the registration type that's dedicated to Latvia and that uses the **VAT ID** registration category.
+1. In the **Registration number** field, enter the tax number. This value is reported in the VAT declaration.
+1. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
 
 To define the VAT registration number that EM uses during generation of the VAT declaration for Latvia, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **LV VAT declaration** processing.
-2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used in the VAT declaration for Latvia.
-3. Save your changes.
+1. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used in the VAT declaration for Latvia.
+1. Save your changes.
 
 If the VAT registration number isn't specified in the **Tax registration number** additional field of the **LV VAT declaration** processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **VAT ID** registration category.
 
@@ -236,7 +236,7 @@ If the VAT registration number isn't specified in the **Tax registration number*
 To preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Periodic tasks** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
-2. Set the following fields.
+1. Set the following fields.
 
     | Field | Description |
     |---|---|
@@ -244,7 +244,7 @@ To preview the VAT declaration in Excel from the Report sales tax for settlement
     | Settlement period | Select the settlement period. |
     | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul> |
 
-3. Select **OK**, and then, in the next dialog box, set the following fields.
+1. Select **OK**, and then, in the next dialog box, set the following fields.
 
     | Field | Description |
     |---|---|
@@ -258,8 +258,8 @@ To preview the VAT declaration in Excel from the Report sales tax for settlement
 > [!NOTE]
 > The PVN 2 part of the VAT declaration for Latvia is the EU sales list. For more information, see [EU Sales list for Latvia](emea-lva-eu-sales-list.md). Before you generate PVN 2 as part of VAT declaration for Latvia, ensure that you first transfer the data using the **EU sales list** functionality and report it by selecting **Report** on the Action pane of **EU sales list** page.
 
-4. On the **Run in the background** FastTab, specify parameters of the batch processing, and select the **Batch processing** checkbox to run the report in batch mode.
-5. Select **OK**, and review the Excel report. When the report is run in batch mode, you can find the generated file as an attachment of the batch job on the **Electronic reporting jobs** page (**Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**).
+1. On the **Run in the background** FastTab, specify parameters of the batch processing, and select the **Batch processing** checkbox to run the report in batch mode.
+1. Select **OK**, and review the Excel report. When the report is run in batch mode, you can find the generated file as an attachment of the batch job on the **Electronic reporting jobs** page (**Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**).
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
@@ -268,8 +268,8 @@ Sales tax payment transactions are produced by the [Settle and post sales tax](.
 To preview the VAT declaration in Excel from a sales tax payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**, and select a sales tax payment line.
-2. Select **Print report**, specify report parameters as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this article, and then select **OK**.
-3. Review the Excel file that's generated for the selected sales tax payment line.
+1. Select **Print report**, specify report parameters as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this article, and then select **OK**.
+1. Review the Excel file that's generated for the selected sales tax payment line.
 
     > [!NOTE]
     > The report is generated only for the selected line of the sales tax payment. If you must generate, for example, a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the [Report sales tax for settlement period](#report-sales-tax-for-settlement-period) periodic task.
@@ -283,24 +283,24 @@ The following procedure applies to the electronic message processing example tha
 To generate the electronic file for the VAT declaration from electronic messages, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
-2. In the left pane, select **LV VAT declaration**.
-3. On the **Messages** FastTab, select **New**.
-4. In the **Run processing** dialog box, the **LV VAT Create message** action is predefined. Select **OK**.
-5. Select the message line that's created, enter a description, and then specify the start and end dates for the declaration.
-6. On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier because of the [Settle and post sales tax](../../general-ledger/tasks/create-sales-tax-payment.md) job procedure are added to the message.
-7. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
-8. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing.
-9. On the **Messages** FastTab, select **Update status**.
-10. In the **Update status** dialog box, select **LV VAT Ready to generate**, and then select **OK**.
-11. Verify that the message status is changed to **LV VAT Ready to generate VAT return**.
-12. Select **Generate report**.
-13. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **LV VAT Preview report**, and then select **OK**.
-14. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this article, and then select **OK**.
-15. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file.
-16. Review the amounts in the Excel document, and then select **Generate report**.
-17. To generate the VAT declaration in XML format, in the **Run processing** dialog box, select **LV VAT Generate report**, and then select **OK**.
-18. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section, and then select **OK**.
-19. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, download the file, and use it for your submission to the tax authority.
+1. In the left pane, select **LV VAT declaration**.
+1. On the **Messages** FastTab, select **New**.
+1. In the **Run processing** dialog box, the **LV VAT Create message** action is predefined. Select **OK**.
+1. Select the message line that's created, enter a description, and then specify the start and end dates for the declaration.
+1. On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier because of the [Settle and post sales tax](../../general-ledger/tasks/create-sales-tax-payment.md) job procedure are added to the message.
+1. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
+1. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing.
+1. On the **Messages** FastTab, select **Update status**.
+1. In the **Update status** dialog box, select **LV VAT Ready to generate**, and then select **OK**.
+1. Verify that the message status is changed to **LV VAT Ready to generate VAT return**.
+1. Select **Generate report**.
+1. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **LV VAT Preview report**, and then select **OK**.
+1. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this article, and then select **OK**.
+1. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file.
+1. Review the amounts in the Excel document, and then select **Generate report**.
+1. To generate the VAT declaration in XML format, in the **Run processing** dialog box, select **LV VAT Generate report**, and then select **OK**.
+1. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section, and then select **OK**.
+1. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, download the file, and use it for your submission to the tax authority.
 
 ## Run the VAT declaration for multiple legal entities
 
@@ -311,13 +311,13 @@ To use the formats to report the VAT declaration for a group of legal entities, 
 To set up electronic messages to collect data from multiple legal entities, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces** \> **Feature management**.
-2. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
-3. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
-4. On the **Populate records action** page, select the line for **LV Populate VAT return records**.
+1. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
+1. On the **Populate records action** page, select the line for **LV Populate VAT return records**.
 
     In the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
 
-5. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting. For each new line, set the following fields.
+1. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting. For each new line, set the following fields.
 
     | Field | Description |
     |---|---|
@@ -331,6 +331,6 @@ To set up electronic messages to collect data from multiple legal entities, foll
     | Company | Select the ID of the legal entity. |
     | User query | This checkbox is automatically selected when you define criteria by selecting **Edit query**. |
 
-6. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that's specified in the **Company** field on the line.
+1. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that's specified in the **Company** field on the line.
 
     When the setup is completed, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all legal entities that you defined.

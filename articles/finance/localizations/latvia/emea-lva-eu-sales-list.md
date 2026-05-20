@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 05/29/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ---
 
@@ -14,11 +14,12 @@ ms.reviewer: johnmichalak
 
 This article explains how to set up the European Union (EU) sales list report for Latvia in Microsoft Dynamics 365 Finance.
 
-The Latvian EU sales list report contains information about the sale of goods and services for reporting in XML format. 
+The Latvian EU sales list report contains information about the sale of goods and services for reporting in XML format.
 
 The following fields are included on the Latvian EU sales list report.
 
 **EU sales list lines:**
+
 - Customer VAT ID
 - Sum of all item invoices by customer
 - Sum of all service invoices by customer
@@ -28,6 +29,7 @@ The following fields are included on the Latvian EU sales list report.
 The following fields are included on the Latvian EU sales list corrective report.
 
 **EU sales list header:**
+
 - Company routing number
 - Company name
 - Responsible person title
@@ -36,6 +38,7 @@ The following fields are included on the Latvian EU sales list corrective report
 - Name of the responsible person
 
 **EU sales list lines:**
+
 - New transaction year and month
 - Customer country/region code
 - Customer VAT ID without country/region code
@@ -77,10 +80,10 @@ To set up foreign trade parameters, follow these steps
 1. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 1. In the **Corrections file format mapping** field, select **EU Sales list corrections (LV)**.
 1. On the **Country/region properties** tab, select **New**, and specify the following information:
-    
+
     1. In the **Country/region** column, select **LVA**.
     1. In the **Country/region type** column, select **Domestic**.
-    
+
 1. List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list

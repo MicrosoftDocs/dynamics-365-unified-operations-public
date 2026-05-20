@@ -114,7 +114,7 @@ The auto-ARIMA algorithm is like a time machine. It takes you on a journey throu
 
 Auto-ARIMA uses a technique that's known as ARIMA. The name ARIMA is an abbreviation for the three key components that the technique combines:
 
-- *AR* is short for "auto regressive." This component regresses the time series on its own previous values. It captures the influence of past values on the current value. 
+- *AR* is short for "auto regressive." This component regresses the time series on its own previous values. It captures the influence of past values on the current value.
 - *I* is short for "integrated." This component, which is also known as *differencing*, is a step that the model takes to morph a nonstationary time series into stationary data.
 - *MA* is short for "moving average." This component accounts for past forecast errors and improves the model's accuracy by smoothing out the noise.
 
@@ -134,33 +134,33 @@ Auto-ARIMA works especially well with time series data that shows a stable patte
 
 The AR component uses the following equation:
 
-Y(t) = c + ɸ1Y(t−1) + ɸ2Y(t−2) + ... + ɸpY(t−p) + ϵ(t)
+Y(t) = c &plus; ɸ1Y(t&minus;1) &plus; ɸ2Y(t&minus;2) &plus; &hellip; &plus; ɸpY(t&minus;p) &plus; ϵ(t)
 
 Key:
 
 - *Y(t)* – The value at time *t*.
 - *c* – A constant.
-- *ɸ1, ɸ2, ... ɸp* – Coefficients of the model.
+- *ɸ1, ɸ2, &hellip; ɸp* – Coefficients of the model.
 - *ϵ(t)* – The white noise error term.
 
 #### Moving average calculation
 
 The MA component uses the following equation:
 
-Y(t) = c + ϵ(t) + ϴ1ϵ(t−1) + ϴ2ϵ(t−2) + ... + ϴqϵ(t−q)
+Y(t) = c &plus; ϵ(t) &plus; ϴ1ϵ(t&minus;1) &plus; ϴ2ϵ(t&minus;2) &plus; &hellip; &plus; ϴqϵ(t&minus;q)
 
 Key:
 
 - *Y(t)* – The value at time *t*.
 - *c* – A constant.
-- *ϵ(t), ϵ(t−1), ... ϵ(t−q)* – Error terms at time *t*, *t*−1, ... *t*−*q*.
-- *ϴ1, ϴ2, ... ϴq* – Coefficients of the model.
+- *ϵ(t), ϵ(t&minus;1), &hellip; ϵ(t&minus;q)* – Error terms at time *t*, *t*&minus;1, &hellip; *t*&minus;*q*.
+- *ϴ1, ϴ2, &hellip; ϴq* – Coefficients of the model.
 
 #### ARIMA calculation
 
 The auto-ARIMA algorithm combines the AR and MA components by using the following equation:
 
-ARIMA = AR + MA (after differencing the time series)
+ARIMA = AR &plus; MA (after differencing the time series)
 
 ## ETS: The shape-shifter
 
@@ -193,7 +193,7 @@ Here's a step-by-step explanation of the algorithm:
 
 The ETS algorithm uses the following equation:
 
-F(t&plus;1) = αA(t) + \[1&minus;α\]F(t)
+F(t&plus;1) = αA(t) &plus; \[1&minus;α\]F(t)
 
 Key:
 

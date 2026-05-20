@@ -1,25 +1,25 @@
 ---
-title: Try out the updates from vendors feature without a complete email setup (production ready preview)
-description: Learn how to try out the updates from vendors (reading vendor emails) functionality of the Supplier Communications Agent without having to do a complete email setup first.
+title: Try out the updates from vendors feature without a complete email setup (production-ready preview)
+description: Learn how to try out the updates from vendors (reading vendor emails) functionality of the Procurement Agent without having to do a complete email setup first.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 04/24/2026
 ms.custom:
   - bap-template
 ---
 
-# Try out the *updates from vendors* feature without a complete email setup (production ready preview)
+# Try out the *updates from vendors* feature without a complete email setup (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article explains how to try out the *updates from vendors* (reading vendor emails) functionality of the Supplier Communications Agent without having to do a complete email setup first.
+This article explains how to try out the *updates from vendors* (reading vendor emails) functionality of the Procurement Agent without having to do a complete email setup first.
 
-The Supplier Communications Agent has two independent features:
+The Procurement Agent has two independent supplier communication features:
 
 - *Follow-up with vendors* (writing reminders)
 - *Updates from vendors* (reading vendor emails)
@@ -28,7 +28,7 @@ The *follow-up with vendors* feature is straightforward to set up and try out, b
 
 To try out this feature, follow these steps:
 
-1. Enable the *(Production Ready Preview) Supplier Communications Agent* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Enable the *(Production Ready Preview) Procurement Agent - Supplier communications* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Go to **Procurement and sourcing** \> **(Preview) Procurement Agent - Supplier Communications** \> **(Preview) Emails from vendors**.
 1. When the feature is fully configured, the **Emails from vendors** workspace lists the emails that the agent identified as coming from vendors. However, you can also add messages manually to try out the feature without needing to set up email integration. To do that, select **Add vendor messages** from the Action Pane.
 1. Enter the following information into the dialog:

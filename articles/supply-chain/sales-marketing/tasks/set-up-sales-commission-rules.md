@@ -19,19 +19,19 @@ This procedure shows you how to set up and enable sales commission calculation a
 
 ## Set up commission groups and commission rates
 
-1. Go to **Sales and marketing > Commissions > Customer groups for commission**.
+1. Go to **Sales and marketing** \> **Commissions** \> **Customer groups for commission**.
 1. Select **New**.
 1. In the **Group** field, enter a value.
 1. In the **Name** field, type a value.
 1. Select **Save**.
 1. Close the page.
-1. Go to **Sales and marketing > Commissions > Item groups**.
+1. Go to **Sales and marketing** \> **Commissions** \> **Item groups**.
 1. Select **New**.
 1. In the **Group** field, enter a value.
 1. In the **Name** field, type a value.
 1. Select **Save**.
 1. Close the page.
-1. Go to **Sales and marketing > Commissions > Sales groups**.
+1. Go to **Sales and marketing** \> **Commissions** \> **Sales groups**.
     - A Commission sales group specifies the employees in sales representative roles who are eligible to receive a commission when a customer associated with the relevant sales group buys certain items.  
     - In the USMF demo data company, there's a sales group called *Sales reps US*.  
 1. On the Action Pane, select **General**.
@@ -45,7 +45,7 @@ This procedure shows you how to set up and enable sales commission calculation a
 1. Select **Select**.
 1. Set **Commission share** to *50*.
 1. Select **Save**.
-1. Go to **Sales and marketing > Commissions > Commission calculation**. In the **Commission calculation** page, you define the commission rate that the employee receives for a sales transaction when it contains the preset combination of customer and product. As part of the commission rate setup, specify the commission calculation basis and whether it should include or exclude discounts. You can also enter a validity period for when the commission rate is active.  
+1. Go to **Sales and marketing** \> **Commissions** \> **Commission calculation**. In the **Commission calculation** page, you define the commission rate that the employee receives for a sales transaction when it contains the preset combination of customer and product. As part of the commission rate setup, specify the commission calculation basis and whether it should include or exclude discounts. You can also enter a validity period for when the commission rate is active.  
 1. Select **New**.
 1. In the **Item code** field, select *Group*.
 1. In the **Item relation** field, select the drop-down button to open the lookup.
@@ -62,12 +62,12 @@ This procedure shows you how to set up and enable sales commission calculation a
 
 ## Setting up commission posting
 
-1. Go to **Sales and marketing > Commissions > Commission posting**. Employees receive commission fees, so set up this feature to ensure correct financial posting to the appropriate accounts in the **General ledger**. Set up this feature in the **Commission posting** page. Review the setup that's available for the current company. Typically, the commission amounts are posted to a dedicated expense account and are offset to a dedicated payable account. If you don't have the commission posting rules set up, the system will fail to complete invoicing of a sales order that has eligible commissions.   
+1. Go to **Sales and marketing** \> **Commissions** \> **Commission posting**. Employees receive commission fees, so set up this feature to ensure correct financial posting to the appropriate accounts in the **General ledger**. Set up this feature in the **Commission posting** page. Review the setup that's available for the current company. Typically, the commission amounts are posted to a dedicated expense account and are offset to a dedicated payable account. If you don't have the commission posting rules set up, the system will fail to complete invoicing of a sales order that has eligible commissions.
 1. Close the page.
 
 ## Assign a commission group to a customer and a product
 
-1. Go to **Sales and marketing > Customers > All customers**.
+1. Go to **Sales and marketing** \> **Customers** \> **All customers**.
 1. In the list, find and select the desired record.
 1. In the list, select the link in the selected row.
 1. Select **Edit**.
@@ -77,7 +77,7 @@ This procedure shows you how to set up and enable sales commission calculation a
 1. In the **Sales group** field, select the drop-down button to open the lookup.
 1. In the list, find and select the desired record.
 1. Select **Save**.
-1. Go to **Product information management > Products > Released products**.
+1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Use the **Filter** to find records. For example, filter on the Item number field with a value of *T0020*.
 1. In the list, select the link in the selected row.
 1. Select **Edit**.

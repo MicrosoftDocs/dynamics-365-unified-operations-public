@@ -55,7 +55,7 @@ An external service definition specifies how to call a specific service. This co
 
 Follow these steps to set up an external service definition.
 
-1. Go to **Warehouse management \> Setup \> External services \> External service definitions**.
+1. Go to **Warehouse management** \> **Setup** \> **External services** \> **External service definitions**.
 1. On the Action Pane, select **New** to create an external service definition.
 1. Set the following fields for the new service definition:
 
@@ -85,13 +85,13 @@ Follow these steps to set up an external service definition.
 
     - If you want to express a request entirely in a URL, use the **Request query string** FastTab to define query parameters for authenticating requests.
     - Use the **HTTP request headers** FastTab to define the HTTP authorization header, which is the most common method for providing authentication information.
-        - The **Request body (form data)** FastTab appears when the **Request body type** field is set to *Form-data*. Use it to provide the names of the form data fields and their values. Use the toolbar to add or remove rows in the grid as required. For each row, set the following fields:
+    - The **Request body (form data)** FastTab appears when the **Request body type** field is set to *Form-data*. Use it to provide the names of the form data fields and their values. Use the toolbar to add or remove rows in the grid as required. For each row, set the following fields:
 
         - **Key** – Enter the name of the form data field.
         - **Value** – Enter the value of the form data field.
         - **File name** – This field is required only in special cases where the service expects that the value resembles an uploaded file. For example, it's required by Zebra's `SendFileToPrinter` service.
 
-        - The **Request body (raw)** FastTab appears when the **Request body type** field is set to *Raw*. Use it to specify the body content and the content type. Set the following fields:
+    - The **Request body (raw)** FastTab appears when the **Request body type** field is set to *Raw*. Use it to specify the body content and the content type. Set the following fields:
 
         - **Content type** – Specify the MIME content type identification (for example *application/xml*, *application/json*, or *text/plain*).
         - **Request body** – Enter the body content.
@@ -127,15 +127,13 @@ Each external service instance defines a specific instance of an external servic
 1. On the **General** tab, set the following fields:
 
     - **Base URL** – Enter the host name of the external service.
-        - **Authentication secret** – Enter the authentication secret (password or shared key) used to authenticate with the service.
+    - **Authentication secret** – Enter the authentication secret (password or shared key) used to authenticate with the service.
     - **Logging level** – Select the level of log entries to generate:
-
         - *Errors only* – Log only errors.
         - *Successes and errors* – Log both successes and errors (recommended).
         - *None* – Don't generate any log entries.
 
     - **Log request bodies** – Select how much extra detail to include in log entries:
-
         - *Errors only* – Include details about errors.
         - *Successes and errors* – Include details about both successes and errors (recommended).
         - *None* – Don't include any details. Show only log headers.

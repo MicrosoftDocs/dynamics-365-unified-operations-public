@@ -178,7 +178,7 @@ Follow these steps to set up an external service instance for printing through t
 
     - **External service instance** – Enter a name for the instance, such as *NLPrintProd*.
     - **Description** – Enter a short description of the instance, such as *Loftware Cloud Print API Production*.
-        - **External service definition** – Select the service definition to use with the instance. The example service definition value suggested earlier in this article is *NLPrint*.
+    - **External service definition** – Select the service definition to use with the instance. The example service definition value suggested earlier in this article is *NLPrint*.
 
 1. On the **General** tab, set the following fields:
 
@@ -287,7 +287,7 @@ Follow these steps to set up an external service instance for printing through t
 
     - **External service instance** – Enter a name for the instance, such as *NLTriggerProd*.
     - **Description** – Enter a short description of the instance, such as *Loftware Cloud Trigger API Production*.
-        - **External service definition** – Select the service definition to use. The example service definition value suggested earlier in this article is *NLTrigger*.
+    - **External service definition** – Select the service definition to use. The example service definition value suggested earlier in this article is *NLTrigger*.
 
 1. On the **General** tab, set the following fields:
 
