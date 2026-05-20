@@ -64,7 +64,7 @@ The Procurement Agent impact analysis features interact with Dataverse and Micro
 ### Share the Microsoft Copilot Studio bots with the agent identity user
 To provide access to Microsoft Copilot Studio bots to the agent identity user, please follow the following steps:
 1. Navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment
-1. Find the following bots and share it with the agent identity user. _End user access_ permission should be sufficient.
+1. Find the following *Agents* and share it with the agent identity user. _End user access_ permission should be sufficient.
    - *Procurement Agent - Impact Analysis*
 
 #### Set up agent identity users and assign security roles
