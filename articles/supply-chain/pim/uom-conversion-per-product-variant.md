@@ -4,7 +4,7 @@ description: Learn how to set up unit of measure conversions for product variant
 author: sgmsft
 ms.author: shwgarg
 ms.topic: article
-ms.date: 05/11/2020
+ms.date: 5/20/2026
 ms.custom:
 ms.reviewer: kamaybac 
 ms.search.form: UnitOfMeasureConversion
@@ -26,7 +26,7 @@ If you don't already see this feature in your system, go to [Feature management]
 
 ## Set up a product for unit conversion per variant
 
-Product variants can be created only for products that are product masters. Learn more in [Create a product master](tasks/create-product-master.md). The *Unit of measure conversions for product variants* feature isn't available for products that are set up for catch-weight processes.
+You can create product variants only for products that are product masters. For more information, see [Create a product master](tasks/create-product-master.md). The *Unit of measure conversions for product variants* feature isn't available for products that are set up for catch-weight processes.
 
 To configure a product master to support unit conversion per variant, follow these steps:
 
@@ -42,12 +42,12 @@ To configure a product master to support unit conversion per variant, follow the
 1. Select **New** to add a new unit conversion.
 1. Set the **Create conversion for** field to one of the following values:
 
-    - **Product** – If you select this value, you can set up a unit conversion for the product master. That unit conversion will be used as a fallback for all product variants that no unit conversion is defined for.
+    - **Product** – If you select this value, you can set up a unit conversion for the product master. That unit conversion acts as a fallback for all product variants when no unit conversion is defined for them.
     - **Product variant** – If you select this value, you can set up a unit conversion for a specific product variant. Use the **Product variant** field to select the variant.
 
-    ![Adding a new unit conversion.](media/uom-new-conversion.png "Adding a new unit conversion")
+    :::image type="content" source="media/uom-new-conversion.png" alt-text="Screenshot of adding a new unit conversion.":::
 
-1. Use the other fields that are provided to set up your unit conversion.
+1. Use the other provided fields to set up your unit conversion.
 1. Select **OK** to save the new unit conversion.
 
 > [!TIP]
@@ -86,7 +86,7 @@ The company wants to track the different variants in the *Pieces* unit, but it's
 
 ## Using Excel to update the unit conversions
 
-If a product has many product variants that have different unit conversions, it's a good idea to export the unit conversions to a Microsoft Excel workbook, update them, and then publish them back to Dynamics 365 Supply Chain Management.
+If a product has many product variants that have different unit conversions, export the unit conversions to a Microsoft Excel workbook, update them, and then publish them back to Dynamics 365 Supply Chain Management.
 
 To export unit conversions to Excel, on the **Unit conversions** page, on the Action Pane, select **Open in Microsoft Office**.
 
