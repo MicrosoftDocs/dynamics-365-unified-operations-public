@@ -2317,6 +2317,8 @@
           href: unified-pricing-management/upm-price-attributes-setup.md
         - name: Price attribute groups
           href: unified-pricing-management/upm-price-attribute-groups.md
+        - name: Non-attribute based rebate management deals
+          href: unified-pricing-management/upm-enable-standard-rebates.md
         - name: Customer and product price attribute groups
           href: unified-pricing-management/upm-customer-product-attribute-groups.md
         - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
