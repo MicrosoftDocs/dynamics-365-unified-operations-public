@@ -61,6 +61,12 @@ The Procurement Agent impact analysis features interact with Dataverse and Micro
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
 
+### Share the Microsoft Copilot Studio bots with the agent identity user
+To provide access to Microsoft Copilot Studio bots to the agent identity user, please follow the following steps:
+1. Navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment
+1. Find the following bots and share it with the agent identity user. _End user access_ permission should be sufficient.
+   - *Procurement Agent - Impact Analysis*
+
 #### Set up agent identity users and assign security roles
 
 Use the user management features for your tenant to create an *agent identity user*. Then assign the licenses and security roles described in the following subsections to that user.
