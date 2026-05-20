@@ -27,9 +27,7 @@ If needed, a worker can pass a cluster to another worker. This action changes th
 To enable cluster picking, set up the following components:
 
 - **Cluster profiles** – Specify whether to automatically generate cluster IDs, the number of positions to use, when to break clusters, and how to sequence and verify the picking work.
-
 - **Work templates** – Define how to create the picking work for cluster picking.
-
 - **Location directives** – Specify where to pick items from, and where to put them.
 
 - **Mobile device menu items** – Configure a mobile device menu item to use existing work directed by cluster picking. Then, add the menu item to a mobile device menu so that it displays on mobile devices.
@@ -61,6 +59,8 @@ When cluster picking is applied, item confirmation is crucial to verify the item
 
 ### Set up item verification with cluster picking
 
+To enable workers to verify each item they pick during the cluster picking process, you must turn on product confirmation for the relevant mobile device menu item. Follow these steps to set it up:
+
 1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 1. In the list pane, select the menu item you want to set up.
 1. On the Action Pane, select **Work confirmation setup**.
@@ -72,4 +72,14 @@ When cluster picking is applied, item confirmation is crucial to verify the item
 > [!NOTE]
 > If you have multiple work records for an item that has **Material picking in license plate locations** set to *Staging*, the Warehouse Management mobile app might show the error message "Current work is frozen" during the cluster picking process. As a workaround, either make sure that you only pick inventory from locations that aren't license plate tracked for the raw material cluster picking process or set **Material picking in license plate locations** to *Order picking* for these items. For more information, see [Release a production order](../production-control/tasks/release-production-order.md).
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+> [!IMPORTANT]
+> When you save a cluster profile with *Process by position (tracked items)* or *Process by position (all items)* selected, the system automatically deletes any existing sort criteria and creates the following four default sort fields:
+>
+> 1. Location (ascending)
+> 2. Item number (ascending)
+> 3. Work ID (ascending)
+> 4. Line number (ascending)
+>
+> You can manually edit these sort criteria after they're created. However, changing the sort order can lead to a suboptimal picking route. For example, if the sort criteria no longer group work by location first, the system might direct the worker to pick one position at a location, then travel to a different location for another position, and then return to the original location to pick the remaining position there. This change results in unnecessary travel between locations.
+>
+> If you switch back to *Process by location* after previously using a *Process by position* strategy, the auto-created sort criteria remain in place. You can then edit or remove them as needed.

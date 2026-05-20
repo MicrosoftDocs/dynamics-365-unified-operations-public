@@ -3,9 +3,10 @@ title: Quality orders that involve destruction of the sampling item
 description: Learn about quality orders that involve destroyed sample items, including step-by-step processes for validating tax details and posting packing slips.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 06/04/2019
-ms.custom:
+ms.topic: how-to
+ms.date: 04/30/2026
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak  
 audience: Application User
 ms.search.region: India
@@ -21,7 +22,7 @@ ms.dyn365.ops.version: 10.0.4
 ## Purchase order page
 
 1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
-2. Create a purchase order.
+1. Create a purchase order.
 
 ## Validate the tax details
 
@@ -33,39 +34,38 @@ ms.dyn365.ops.version: 10.0.4
     - **CGST:** 10 percent
     - **SGST:** 10 percent
 
-2. Select **Close**.
-3. Select **Confirm**.
+1. Select **Close**.
+1. Select **Confirm**.
 
 ## Post the packing slip
 
 1. On the Action Pane, on the **Receive** tab, in the **Generate** group, select **Product receipt**.
-2. In the **Quantity** field, select **Ordered quantity**.
-3. In the **Product receipt** field, enter a value.
-4. Select **OK**, and then select **Show**.
+1. In the **Quantity** field, select **Ordered quantity**.
+1. In the **Product receipt** field, enter a value.
+1. Select **OK**, and then select **Show**.
 
 ## Quality order form
 
 1. Select **Results**.
-2. Update the **Result quantity** field.
-3. Select **Validate**, and then select **Close**.
-4. Select **Tax document**.
+1. Update the **Result quantity** field.
+1. Select **Validate**, and then select **Close**.
+1. Select **Tax document**.
 
     > [!NOTE]
     > Tax is calculated for the quantity that was used for the quality check and destroyed.
 
-5. Select **Close**, and then select **Validate**.
-6. In the **Validate by** field, select a value.
-7. Select **OK**, and close the **Quality orders** page.
+1. Select **Close**, and then select **Validate**.
+1. In the **Validate by** field, select a value.
+1. Select **OK**, and close the **Quality orders** page.
 
 ## Post the purchase invoice
 
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
-2. Enter the invoice number.
-3. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, select **Post** \> **Post**.
-4. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**. 
-6. On the **Overview** tab, select **Voucher**.
+1. Enter the invoice number.
+1. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, select **Post** \> **Post**.
+1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**. 
+1. On the **Overview** tab, select **Voucher**.
 
-![Example.](../media/Annotation-2019-05-16-113025.png)
-
+:::image type="content" source="../media/Annotation-2019-05-16-113025.png" alt-text="Screenshot of the example annotation.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

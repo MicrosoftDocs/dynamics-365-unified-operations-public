@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -57,7 +57,7 @@ To set up an inventory profile for an agent's transactions, follow these steps:
 1. In the **Kind of inventory** field, specify **Common**.
 1. Select **Save**.
 
-![Inventory profiles page.](../media/1_Inventory_profiles.jpg)
+:::image type="content" source="../media/1_Inventory_profiles.jpg" alt-text="Screenshot of the Inventory profiles page.":::
 
 ### Set up the Inventory profile and Owner tracking dimensions
 
@@ -74,7 +74,7 @@ To set up the Inventory profile and Owner tracking dimensions, follow these step
 
 1. Select **Save**.
 
-![Tracking dimension groups page.](../media/2_Tracking_dimension_groups.jpg)
+:::image type="content" source="../media/2_Tracking_dimension_groups.jpg" alt-text="Screenshot of the Tracking dimension groups page.":::
 
 ### Set up a number sequence for the report for the principal
 

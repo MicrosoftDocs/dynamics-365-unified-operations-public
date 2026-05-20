@@ -196,7 +196,7 @@ Follow these steps to set up the validation period by using the standard validat
 
 Advanced validation rules let you set the validation period by using a discount period record instead of entering simple start and end dates.
 
-Discount period records let you set up detailed date and time limits that can include a start date and time, an end date and time, and specific times of day for each day of the week. Set up discount period records by going to **Retail and Commerce** > **Pricing and discounts** > **Discount periods**.
+Discount period records let you set up detailed date and time limits that can include a start date and time, an end date and time, and specific times of day for each day of the week. Set up discount period records by going to **Retail and Commerce** \> **Pricing and discounts** \> **Discount periods**.
 
 Follow these steps to set up the validation period by using the advanced validation rules.
 

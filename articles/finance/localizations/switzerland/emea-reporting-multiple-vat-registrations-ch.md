@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Switzerland
@@ -27,7 +27,5 @@ When your legal entity is configured for reporting for multiple VAT registration
 | Report name     | Release | Electronic reporting (ER) format, version                |
 |-----------------|---------|----------------------------------------------------------|
 | [VAT declaration](emea-che-vat-declaration-switzerland.md) | 10.0.21 | VAT Declaration XML (CH), version 96.16<br>VAT Declaration Excel (CH), version 96.16.9 |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

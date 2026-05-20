@@ -5,7 +5,8 @@ author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
 ms.date: 06/04/2019
-ms.custom:
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak  
 audience: Application User
 ms.search.region: India
@@ -18,7 +19,7 @@ ms.dyn365.ops.version: 10.0.4
 
 [!include [banner](../../includes/banner.md)]
 
-To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 Finance available, you must complete the following master data setup:
+To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 Finance available, complete the following master data setup steps:
 
 - Define a business vertical.
 - Update the state code and union territory.
@@ -31,13 +32,12 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 
 Follow these steps to update the state code and union territory.
 
-1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
-2. On the **State/province** tab, select a state.
-3. In the **State code** field, enter a value.
-4. Set the **Union territory** option to **Yes** to identify the state as a union territory.
-5. Select **Close**.
+1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
+1. On the **State/province** tab, select a state.
+1. In the **State code** field, enter a value.
+1. Set the **Union territory** option to **Yes** to identify the state as a union territory.
+1. Select **Close**.
 
-![Address setup.](../media/IND-GST-UpdateState.png)
-
+:::image type="content" source="../media/IND-GST-UpdateState.png" alt-text="Screenshot of the Address setup page.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,7 +72,7 @@ Wave templates let you link specific instances of wave methods to a correspondin
 
 The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that is sent to the printer.
 
-1. Go to **Warehouse management > Setup > Document routing > Wave label layouts**.
+1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Wave label layouts**.
 1. Create a record with the following settings:
 
     - **Label layout ID:** *Carton*
@@ -257,7 +257,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
 ### Create a sales order and release it to the warehouse for scenario 1
 
-1. Go to **Sales and marketing > Sales order > All sales orders**.
+1. Go to **Sales and marketing** \> **Sales order** \> **All sales orders**.
 1. Create a sales order with the following settings:
 
     - **Customer account:** *US-001*
@@ -334,7 +334,7 @@ Wave templates let you link specific instances of wave methods to a correspondin
 
 ### Create a wave label layout for scenario 2
 
-1. Go to **Warehouse management > Setup > Document routing > Wave label layouts**.
+1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Wave label layouts**.
 1. Create a record with the following settings:
 
     - **Label layout ID:** *Carton*
@@ -443,7 +443,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
 ### Create a sales order and release it to the warehouse for scenario 2
 
-1. Go to **Sales and marketing > Sales order > All sales orders**.
+1. Go to **Sales and marketing** \> **Sales order** \> **All sales orders**.
 1. Create a sales order with the following settings:
 
     - **Customer account:** *US-001*
@@ -489,7 +489,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
     - The system processes the created shipment by using the template that includes the label printing step. The label layout defines the format of the label, and the end result is a label that has five lines and that is printed on the printer, which is selected in the label template.
     - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs follow the **SSCC-18** number format.
 
-You can reprint these wave labels by going to **Warehouse management > Enquiries and reports > Wave label history**.
+You can reprint these wave labels by going to **Warehouse management** \> **Enquiries and reports** \> **Wave label history**.
 
 ## Scenario 3: Wave label printing for multilevel labels
 
@@ -524,7 +524,7 @@ To follow this scenario, ensure that you have the demo data installed, and selec
 
 ### Create three wave label layouts for scenario 3
 
-1. Go to **Warehouse management > Setup > Document routing > Wave label layouts**.
+1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Wave label layouts**.
 1. Create a record with the following settings:
 
     - **Label layout ID:** *Carton*
@@ -872,7 +872,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
 
 ### Create a sales order and release it to the warehouse for scenario 3
 
-1. Go to **Sales and marketing > Sales order > All sales orders**.
+1. Go to **Sales and marketing** \> **Sales order** \> **All sales orders**.
 1. Create a sales order with the following settings:
 
     - **Customer account:** *US-001*

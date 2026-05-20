@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -33,7 +33,7 @@ To create a receipt transaction for deferrals that were manually created, follow
 1. In the **Model number** field, select the model number for the deferral.
 1. Select **OK**. Voucher lines are created for the selected deferral on the **Journal voucher** page, and a transaction of the **Receipt** type is created for the deferral. This transaction has the specified receipt date.
 
-    ![Journal voucher page.](../media/rus-deferral-transactions-01.png)
+    :::image type="content" source="../media/rus-deferral-transactions-01.png" alt-text="Screenshot of the Journal voucher page.":::
 
 1. On the Action Pane, select **Validate** \> **Validate** and then **Post** \> **Post** to validate and post the journal.
 1. Go to **General ledger** \> **Deferrals** \> **Deferrals** to view the deferrals that are generated. To view the transaction details on the **Deferrals transactions** page, on the Action Pane, select **Deferrals models**, and then select **Transactions**.

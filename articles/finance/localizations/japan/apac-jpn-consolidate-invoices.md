@@ -3,8 +3,10 @@ title: Consolidated invoices for Japan
 description: In Japan, invoices are consolidated each month for payment. Learn about consolidated invoices, and explains how the invoice amount and due date are calculated.
 author: EricWangChen
 ms.author: reetuchopra
-ms.topic: article
-ms.date: 12/08/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User 
 ms.search.region: Japan

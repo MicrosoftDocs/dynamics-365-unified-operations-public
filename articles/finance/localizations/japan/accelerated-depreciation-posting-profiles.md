@@ -4,7 +4,9 @@ description: For Japan, the accelerated depreciation is calculated based on Rate
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Japan

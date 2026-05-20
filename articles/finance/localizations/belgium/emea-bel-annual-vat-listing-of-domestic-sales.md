@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/02/2026
+ms.date: 04/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
 ms.search.validFrom: 2016-02-28
@@ -62,7 +62,7 @@ Create two registration types for company codes: one for the VAT ID and one for 
 1. In the **Country/region** field, select **BEL**.
 1. Select **Create**.
 
-For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation).
+Learn about detailed concepts, setup guidance, and examples in [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 
 ### Match the registration types with registration categories
 
@@ -70,7 +70,7 @@ For more information, see [Registration type](../europe/emea-registration-ids.md
 1. For the registration type for the VAT ID, select the **VAT ID** registration category.
 1. For the registration type for the enterprise number, select the **Enterprise ID (COID)** registration category.
 
-Learn more in [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
+Learn about detailed concepts, setup guidance, and examples in [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 
 ### Set up a VAT ID and enterprise number for your company
 

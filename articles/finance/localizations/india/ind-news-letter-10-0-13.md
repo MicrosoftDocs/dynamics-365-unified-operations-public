@@ -7,7 +7,7 @@ ms.topic: whats-new
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 07/15/2024
+ms.date: 05/01/2026
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak 
 ms.search.region: India
@@ -115,90 +115,89 @@ The Goods and Service Tax Network (GSTN) has released a trial version of the new
 
     **Tax configuration name and version:**
 
-    - Taxable Document. Version.82
-    - Taxable Document (India).version.82.155
-    - Tax (India GST). version.82.155.300
-    
+  - Taxable Document. Version.82
+  - Taxable Document (India).version.82.155
+  - Tax (India GST). version.82.155.300
+
     If you want to de-couple GST posting from inventory posting and add Interim transit for stock transfer transaction posting, download the following configuration file"
 
-    - Tax (India GST).version.82.155.301
+  - Tax (India GST).version.82.155.301
 
-
-#### Dynamics AX 2012 R3 
+#### Dynamics AX 2012 R3
 
 - For information about the update for AX 2012 R3, see the following KB article: [New GSTR Offline Tool (ANX-1 and Purchase Register) for India in Dynamics AX2012R3](https://support.microsoft.com/help/4552119).
 - [Download the package](https://fix.lcs.dynamics.com/Issue/Details?bugId=3981046).
 
 - Import the following tax configuration version:
 
-    - Taxable Document. Version.64
-    - Taxable Document (India). version.64.119
-    - Tax (India GST). version. 64.119.226
-     
+  - Taxable Document. Version.64
+  - Taxable Document (India). version.64.119
+  - Tax (India GST). version. 64.119.226
+
  These configurations provide the following options:
-    
-  - Post export order 
-   
-       - With payment of tax option 
-       - Without payment of tax option 
-    
-  - Post SEZ (Special economic Zone) order 
-        
-       - With payment of tax option 
-       - Without payment of tax option 
-            
-  - Post DE (Deemed Export) Order 
-        
-       - With payment of tax option 
-       - Without payment of tax option 
-    
+
+- Post export order
+
+  - With payment of tax option
+  - Without payment of tax option
+
+- Post SEZ (Special economic Zone) order
+
+  - With payment of tax option
+  - Without payment of tax option
+
+- Post DE (Deemed Export) Order
+
+  - With payment of tax option
+  - Without payment of tax option
+
 ### New GST return format
 
 The GSTR-1 and GSTR-2 return formats have been updated based on the new format that was updated by one of the GST Suvidha Providers (GSPs). The following new information has been added in the existing reports:
 
 - **GSTR-1 return:** The following additional columns have been added:
 
-    - **Sales invoice and bill of supply file:**
+  - **Sales invoice and bill of supply file:**
 
-        - Differential % of tax rate
-        - Supply covered under sec. 7 of IGST Act
-        - Would you claim refund?
-        - Return filing month
-        - Return filing quarter
+    - Differential % of tax rate
+    - Supply covered under sec. 7 of IGST Act
+    - Would you claim refund?
+    - Return filing month
+    - Return filing quarter
 
-    - **Sales credit and debit note file:**
+  - **Sales credit and debit note file:**
 
-        - Applicable % of tax rate
-        - Supply covered under sec. 7 of IGST Act
-        - Would you claim refund?
-        - Type of export
-        - Shipping port code - Export
-        - Shipping bill number - Export
-        - Shipping bill date - Export
-        - Return filing month
-        - Return filing quarter
-        - GSTIN of E-commerce marketplace
-        
+    - Applicable % of tax rate
+    - Supply covered under sec. 7 of IGST Act
+    - Would you claim refund?
+    - Type of export
+    - Shipping port code - Export
+    - Shipping bill number - Export
+    - Shipping bill date - Export
+    - Return filing month
+    - Return filing quarter
+    - GSTIN of E-commerce marketplace
+
 - **GSTR-2 return:** The following additional columns have been added:
 
-    - **Purchase invoice and bill of supply file:**
+  - **Purchase invoice and bill of supply file:**
 
-        - Supply covered under section 7 of IGST Act
-        - Would you claim refund?
-        - Return filing month
-        - Return filing quarter
+    - Supply covered under section 7 of IGST Act
+    - Would you claim refund?
+    - Return filing month
+    - Return filing quarter
 
-    - **Purchase credit and debit note file:**
+  - **Purchase credit and debit note file:**
 
-        - Supply covered under sec. 7 of IGST Act
-        - Would you claim refund?
-        - Type of import
-        - Bill of entry port code
-        - Bill of entry number
-        - Bill of entry date
-        - Bill of entry value
-        - Return filing month
-        - Return filing quarter
+    - Supply covered under sec. 7 of IGST Act
+    - Would you claim refund?
+    - Type of import
+    - Bill of entry port code
+    - Bill of entry number
+    - Bill of entry date
+    - Bill of entry value
+    - Return filing month
+    - Return filing quarter
 
 #### Dynamics 365 Finance
 
@@ -213,9 +212,9 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 
     **Tax configuration name and version:**
 
-    - Taxable Document. Version.82
-    - Taxable Document (India). version.82.155
-    - Tax (India GST). version.82.155.300
+  - Taxable Document. Version.82
+  - Taxable Document (India). version.82.155
+  - Tax (India GST). version.82.155.300
 
 #### Dynamics AX 2012 R3
 
@@ -227,10 +226,10 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 
 - Import the following tax configuration version:
 
-    - Taxable Document. Version.64
-    - Taxable Document (India). version.64.119
-    - Tax (India GST). version.64.119.226
-    - (Calculated the IGST tax when with IGST payment is Yes on SEZ/DE/Export order)
+  - Taxable Document. Version.64
+  - Taxable Document (India). version.64.119
+  - Tax (India GST). version.64.119.226
+  - (Calculated the IGST tax when with IGST payment is Yes on SEZ/DE/Export order)
 
 ## Critical fixes
 
@@ -247,7 +246,7 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 - The **Product receipt** page includes a column for the BOE number, but no BOE number is shown on the page.
 - When a purchase order is placed and the order has a procurement category, the load on inventory tax amount is posted to the purchase expenditure for an expense account instead of the  Cost of project account or Fixed asset account. This issue occurs in project and fixed asset scenarios.
 - The tax amount isn't shown correctly on the **Purchase requisition** page. The **Total** form shows the tax amount of only the first line, not all the lines.
-- When the user is posting a general journal with a debit project account and a (offset) credit vendor account, and the marking tax is **Load on inventory**, 
+- When the user is posting a general journal with a debit project account and a (offset) credit vendor account, and the marking tax is **Load on inventory**,
   after posting checks the project statement, the tax amount isn't included in the project cost value.
 - GSTR: Customer can't select a financial year while they are running the Purchase Register reports.
 - When you post a tax journal that has a combination of a ledger account and a customer account, an error occurs.
@@ -258,6 +257,5 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 - The GST amount isn't shown correctly. The **GST amount** value is shown in a foreign currency, whereas the **Subtotal** and **Total amount** values are shown in Indian rupees (INR). The GST amount should be converted and added to the subtotal, so that the correct total amount is shown.
 - Customer has recently enabled the India localization, India GST feature on their India .Entity 104.
 - After enabling the India localization, the value is not displayed for the billing rule type **Milestone** on the **Project contract** page.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

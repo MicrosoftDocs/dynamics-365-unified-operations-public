@@ -45,7 +45,7 @@ To set up intercompany trade for customers and vendors, follow these steps:
 
 To enable products for intercompany trade, follow these steps:
 
-1. Go to **Product information management > Products > All products and product masters**.
+1. Go to **Product information management** \> **Products** \> **All products and product masters**.
 1. Define the products released to the legal entities where you want to do intercompany trade.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
