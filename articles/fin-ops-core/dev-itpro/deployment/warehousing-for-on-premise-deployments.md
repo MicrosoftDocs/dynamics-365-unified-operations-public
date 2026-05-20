@@ -27,8 +27,8 @@ The Warehouse Management mobile app is available for Microsoft Windows, Google A
 
 | Platform      | Version |
 |---------------|---------|
-| Android       | 4.4 or later |
-| Windows (UWP) | Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later |
+| Android       | 7.0 or later |
+| Windows       | Windows 10 May 2020 update 1904.1 or later |
 | iOS           | 13.0 or later |
 
 To be able to reach your on-premises resources by using the app, you must create Domain Name System (DNS) records for your Application Object Server (AOS) and for Active Directory Federation Services (AD&nbsp;FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-latest.md#setup).
