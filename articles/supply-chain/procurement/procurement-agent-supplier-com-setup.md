@@ -66,7 +66,7 @@ Use the user management features for your tenant to create an *agent identity us
 ### Share the Microsoft Copilot Studio bots with the agent identity user
 To provide access to Microsoft Copilot Studio bots to the agent identity user, please follow the following steps:
 1. Navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment
-1. Find the following bots and share it with the agent identity user. _End user access_ should be sufficient.
+1. Find the following bots and share it with the agent identity user. _End user access_ permission should be sufficient.
    - *Supplier Communications Agent - inbound*
    - *Supplier Communications Agent - outbound*
 
