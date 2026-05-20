@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventAdjInventOnHand
 ms.topic: how-to
-ms.date: 12/02/2024
+ms.date: 5/20/2026
 ms.custom: 
   - bap-template
 ---
@@ -23,7 +23,7 @@ For example, suppose you have the following transactions in February:
 - February 5: An inventory financial receipt for a quantity of 1 at a cost of USD 13.00
 - February 19: An inventory financial issue for a quantity of 1 at a running average cost of USD 11.00
 
-This item was set up with the first in, first out (FIFO) inventory model, and inventory close was performed as of February 28. The financial issue transaction of USD 11.00 will be settled against the financial receipt that is dated February 1, and an adjustment of USD 1.00 will be made. The following inventory receipts will then contain open inventory quantities:
+This item was set up with the first in, first out (FIFO) inventory model, and inventory close was performed as of February 28. The financial issue transaction of USD 11.00 is settled against the financial receipt that is dated February 1, and an adjustment of USD 1.00 is made. The following inventory receipts then contain open inventory quantities:
 
 - February 1: A quantity of 1 at a cost of USD 10.00
 - February 5: A quantity of 1 at a cost of USD 13.00
@@ -31,6 +31,6 @@ This item was set up with the first in, first out (FIFO) inventory model, and in
 To set the cost of these two items to USD 15.00, use the on-hand adjustment option to adjust the open on-hand quantities as of the last inventory close period.
 
 > [!NOTE]
-> The posting date of the on-hand adjustment transaction will be the date of the last inventory close. This date can't be modified.
+> The posting date of the on-hand adjustment transaction is the date of the last inventory close. You can't modify this date.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
