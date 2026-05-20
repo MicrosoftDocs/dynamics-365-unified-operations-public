@@ -30,7 +30,7 @@ You can create product variants only for products that are product masters. For 
 
 To configure a product master to support unit conversion per variant, follow these steps:
 
-1. Go to **Product information management \> Products \> Product masters**.
+1. Go to **Product information management > Products > Product masters**.
 1. Create or open a product master to go to its **Product details** page.
 1. Set the **Enable unit of measure conversions** option to *Yes*.
 1. On the Action Pane, on the **Product** tab, in the **Set up** group, select **Unit conversions**.
