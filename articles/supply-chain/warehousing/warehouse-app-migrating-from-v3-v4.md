@@ -4,7 +4,7 @@ description: Learn how to migrate from Warehouse Management mobile application f
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 05/20/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

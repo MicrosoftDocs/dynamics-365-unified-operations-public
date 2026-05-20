@@ -4,7 +4,7 @@ description: Learn about the prerequisites for the warehousing app for on-premis
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 04/02/2026
+ms.date: 05/20/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2017-12-04
