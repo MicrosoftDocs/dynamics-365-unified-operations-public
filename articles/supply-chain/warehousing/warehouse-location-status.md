@@ -147,6 +147,6 @@ The example scenario requires that you prepare two location profiles.
 1. Notice that the **Location status** field for the location that the sales order work picked from is now set to *Picking*, and the **Last activity date and time** field is updated.
 
 > [!NOTE]
-> Warehouse transactions are the only way to update the location fields. If you move inventory by using a journal or other non-WMS processes, the fields aren't updated.
+> You can update the location fields only through warehouse transactions. If you move inventory by using a journal or other non-WMS processes, the fields aren't updated.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
