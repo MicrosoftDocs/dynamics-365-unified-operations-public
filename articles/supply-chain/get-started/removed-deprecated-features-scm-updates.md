@@ -34,7 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?** | Yes. The app is now available as an open-source sample. |
 | **Product areas affected** | Supply Chain Management – Asset Management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Deprecated as of May 1, 2026. The Asset Management mobile app is now available as an open-source sample under the MIT license at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). The existing app remains available for installation through the Power Platform admin center until October 31, 2026, after which it's removed; existing installations remain functional in customer tenants but receive no further updates. Learn more in [Asset Management mobile app open-source release](../asset-management/asset-management-mobile-app/open-source-release.md). |
+| **Status** | Deprecated as of June 1, 2026. The Asset Management mobile app is now available as an open-source sample under the MIT license at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). The existing app remains available for installation through the Power Platform admin center until November 30, 2026, after which it's removed; existing installations remain functional in customer tenants but receive no further updates. Learn more in [Asset Management mobile app open-source release](../asset-management/asset-management-mobile-app/open-source-release.md). |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.46 release
 

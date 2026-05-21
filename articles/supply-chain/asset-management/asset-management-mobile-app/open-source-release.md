@@ -2,11 +2,11 @@
 title: Asset Management mobile app open-source release
 description: Microsoft is releasing the Asset Management mobile app for Microsoft Dynamics 365 Supply Chain Management as open source so you can customize the app to fit your needs. Learn the timeline, transition guidance, and how to build a custom version from the source.
 author: 
-ms.author: 
+ms.author: cailoaei
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 05/01/2026
+ms.date: 06/01/2026
 ms.custom: 
   - bap-template
 ---
@@ -16,7 +16,7 @@ ms.custom:
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> The Asset Management mobile app is now available as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). Same functionality, freely customizable. The existing app remains available for installation through [Dynamics 365 apps in the Power Platform admin center](/power-platform/admin/manage-apps) until October 31, 2026, with critical fixes from Microsoft during this transition period. After that date, the app is no longer distributed through the admin center; existing installations continue to work in customer tenants.
+> The Asset Management mobile app is now available as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). Same functionality, freely customizable. The existing app remains available for installation through [Dynamics 365 apps in the Power Platform admin center](/power-platform/admin/manage-apps) until November 30, 2026, with critical fixes from Microsoft during this transition period. After that date, the app is no longer distributed through the admin center; existing installations continue to work in customer tenants.
 
 Until now, canvas-app customizations made in Power Apps Studio weren't preserved across official updates. Releasing the source code as open source removes that limitation: you can build from the source, customize it freely, and deploy under your own publisher without your changes being overwritten by Microsoft updates.
 
@@ -24,14 +24,14 @@ Until now, canvas-app customizations made in Power Apps Studio weren't preserved
 
 | Date | Milestone |
 |---|---|
-| May 1, 2026 | Source code released as open source. The app enters a 6-month transition period during which it remains available for installation through the Power Platform admin center, with critical fixes from Microsoft. |
-| October 31, 2026 | End of the transition period. Microsoft maintenance concludes and the app is no longer distributed through the Power Platform admin center. Existing installations continue to function in customer tenants. |
+| June 1, 2026 | Source code released as open source. The app enters a 6-month transition period during which it remains available for installation through the Power Platform admin center, with critical fixes from Microsoft. |
+| November 30, 2026 | End of the transition period. Microsoft maintenance concludes and the app is no longer distributed through the Power Platform admin center. Existing installations continue to function in customer tenants. |
 
 ## Guidance for existing customers
 
 ### Continue using the installed app
 
-Existing installations require no action. Microsoft delivers any critical fixes during the maintenance window through the same Power Platform admin center channel as previous versions. After October 31, 2026, the installed app continues to function in the customer tenant. Customers who plan to evolve the app beyond that date should follow the [Build from the open-source code](#build-from-the-open-source-code) guidance.
+Existing installations require no action. Microsoft delivers any critical fixes during the maintenance window through the same Power Platform admin center channel as previous versions. After November 30, 2026, the installed app continues to function in the customer tenant. Customers who plan to evolve the app beyond that date should follow the [Build from the open-source code](#build-from-the-open-source-code) guidance.
 
 ### Customize the app for in-tenant use
 
@@ -51,8 +51,8 @@ After producing a custom build under your own publisher, transitioning an existi
 
 For Supply Chain Management customers who need field-level work order management, the recommended path is to build a custom solution from the open-source code at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). The MIT-licensed source can be customized freely and deployed under your own publisher to fit your needs. Alternatively, evaluate Microsoft AppSource for partner-built alternatives.
 
-The existing app remains available for installation through the Power Platform admin center until October 31, 2026. For new deployments, build from the open-source code instead.
+The existing app remains available for installation through the Power Platform admin center until November 30, 2026. For new deployments, build from the open-source code instead.
 
 ## Support
 
-For product issues during the maintenance window, customers should use their existing Microsoft support agreements and Dynamics 365 support channels. After October 31, 2026, Microsoft does not provide product support for the app. Issues filed against the open-source repository are not triaged.
+For product issues during the maintenance window, customers should use their existing Microsoft support agreements and Dynamics 365 support channels. After November 30, 2026, Microsoft does not provide product support for the app. Issues filed against the open-source repository are not triaged.
