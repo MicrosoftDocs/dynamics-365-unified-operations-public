@@ -83,7 +83,7 @@ To import data from a text or workbook file exported from an external system, cr
 
     - **Excel** – For information about how to select the target file, connect to Power Query, and work with data, see [Excel](/power-query/connectors/excel) in the Power Query documentation.
     - **CSV** – For information about how to select the target file, connect to Power Query, and work with data, see [Text/CSV](/power-query/connectors/text-csv) in the Power Query documentation.
-        - **Datalake** – For information about how to select the target file, connect to Power Query, and work with data, see [Datalake](/power-query/connectors/dataverse) in the Power Query documentation. A data lake must be set up as described in [Datalake setup](/power-query/connectors/data-lake-storage).
+    - **Datalake** – For information about how to select the target file, connect to Power Query, and work with data, see [Datalake](/power-query/connectors/dataverse) in the Power Query documentation. A data lake must be set up as described in [Datalake setup](/power-query/connectors/data-lake-storage).
 
 1. When you finish transforming and mapping your data by using Power Query, select **Next**.
 1. On **Refresh settings**, select or clear the **Delete all data for the chosen table before import** checkbox to specify what should happen to the data that's currently in the target table in Demand planning:
