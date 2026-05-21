@@ -3,7 +3,7 @@ title: Russia advance holders setup
 description: Learn how to register and set up advance holders for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
-ms.date: 08/08/2025
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template

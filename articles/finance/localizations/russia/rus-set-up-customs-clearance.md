@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/05/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak 
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -39,7 +39,7 @@ To set up the statistical value currency and number sequences, follow these step
 1. On the Action Pane, select **Save**.
 1. On the **Number sequences** tab, set number sequences for customs journals, KTS numbers, and operations for posting GTD and KTS.
 
-    ![Number sequences tab on the Inventory and warehouse management parameters page.](../media/set-up-customs-clearance-01.png)
+    :::image type="content" source="../media/set-up-customs-clearance-01.png" alt-text="Screenshot of the Number sequences tab on the Inventory and warehouse management parameters page.":::
 
 ## Set up an inventory profile and GTD number
 
@@ -54,7 +54,7 @@ To set up an inventory profile and GTD number, follow these steps:
 
 1. On the Action Pane, select **Save**.
 
-    ![Tracking dimensions lines on the Tracking dimension groups page.](../media/set-up-customs-clearance-02.png)
+    :::image type="content" source="../media/set-up-customs-clearance-02.png" alt-text="Screenshot of tracking dimensions lines on the Tracking dimension groups page.":::
 
 ## Set up ledger posting groups
 
@@ -100,7 +100,7 @@ To set up a fixed unit, follow these steps:
 1. In the **Roles** section, set the **System unit** option to **Yes**.
 1. On the Action Pane, select **Save**.
 
-    ![Units page.](../media/set-up-customs-clearance-03.png)
+    :::image type="content" source="../media/set-up-customs-clearance-03.png" alt-text="Screenshot of the Units page.":::
 
 ### Set up sales tax codes
 
@@ -124,7 +124,7 @@ To set up sales tax codes, follow these steps:
     1. Optional: For the **Escort** and **Storage** fee types, on the Action Pane, select **Sales tax code** \> **Limits**, and configure limits for the escort or volume of stored products.
     1. On the Action Pane, select **Save**. Then close the page.
 
-       ![Settings on the General FastTab of the Sales tax codes page for a sales tax code of the Customs fee tax type.](../media/set-up-customs-clearance-04.png)
+       :::image type="content" source="../media/set-up-customs-clearance-04.png" alt-text="Screenshot of settings on the General FastTab of the Sales tax codes page for a sales tax code of the Customs fee tax type.":::
 
     –or–
 
@@ -156,7 +156,7 @@ To set up an inventory profile, follow these steps:
 1. On the **Setup** FastTab, in the **Kind of activity** field, select **Basic**.
 1. On the Action Pane, select **Save**.
 
-    ![Inventory profiles page.](../media/set-up-customs-clearance-05.png)
+    :::image type="content" source="../media/set-up-customs-clearance-05.png" alt-text="Screenshot of the Inventory profiles page.":::
 
 ## Set up the terms of delivery for customs clearance of imported products
 
@@ -187,7 +187,7 @@ To set up the terms of delivery for customs clearance of imported products, foll
 
 1. On the Action Pane, select **Save**.
 
-    ![Terms of delivery page.](../media/set-up-customs-clearance-06.png)
+    :::image type="content" source="../media/set-up-customs-clearance-06.png" alt-text="Screenshot of the Terms of delivery page.":::
 
 ## Set up a charges code for customs payments
 
@@ -214,7 +214,7 @@ To set up a charges code for customs payments, follow these steps:
 
 1. On the Action Pane, select **Save**.
 
-    ![Charges codes page.](../media/set-up-customs-clearance-07.png)
+    :::image type="content" source="../media/set-up-customs-clearance-07.png" alt-text="Screenshot of the Charges codes page.":::
 
 ## Assign a charges code to terms of delivery
 
@@ -296,7 +296,7 @@ The following buttons are available on the Action Pane:
 - **Item relation with TN VED** – Assign a product to a TN VED code.
 - **Customs payments relation with TN VED** – Assign a TN VED code to a customs payment.
 
-    ![TN VED codes page.](../media/set-up-customs-clearance-08.png)
+    :::image type="content" source="../media/set-up-customs-clearance-08.png" alt-text="Screenshot of the TN VED codes page.":::
 
 ## Set up an item relation with a TN VED code
 
@@ -316,7 +316,7 @@ To set up an item relation with a TN VED code, follow these steps:
 
     If the **Customs code** field is set (that is, it isn't blank), the **Customs name** field is automatically set to the name of the counteragent.
 
-    ![Item relation with TN VED page.](../media/set-up-customs-clearance-09.png)
+    :::image type="content" source="../media/set-up-customs-clearance-09.png" alt-text="Screenshot of the Item relation with TN VED page.":::
 
 ## Set up indicative prices
 
@@ -345,7 +345,7 @@ To set up indicative prices, follow these steps:
     1. In the **Change of settings** dialog, you can change the following fields: **From date**, **Price for import**, **Price for export**, **Currency**, **Quantity**, **Unit**.
     1. Select **OK**. The changes that you made are applied to all selected lines.
 
-    ![Indicative prices of TN VED.](../media/set-up-customs-clearance-10.png)
+    :::image type="content" source="../media/set-up-customs-clearance-10.png" alt-text="Screenshot of the Indicative prices of TN VED page.":::
 
 ## Set up a customs payment relation with a TN VED code
 
@@ -366,7 +366,7 @@ To set up a customs payment relation with a TN VED code, follow these steps:
 1. Optional: In the **Country/region** field, enter the code for the payment's country or region of origin.
 1. On the Action Pane, select **Save**.
 
-    ![TN VED code relation with customs payment page.](../media/set-up-customs-clearance-11.png)
+    :::image type="content" source="../media/set-up-customs-clearance-11.png" alt-text="Screenshot of the TN VED code relation with customs payment page.":::
 
 ## Set up a vendor as a foreign counteragent
 
@@ -407,7 +407,7 @@ To automatically move a product from the warehouse for products in transit to a 
 1. On the **General** FastTab, in the **Customs** section, in the **Customs code** field, select the code of the customs counteragent for the customs office that the warehouse is associated with.
 1. On the Action Pane, select **Save**.
 
-    ![General FastTab on the Warehouses page.](../media/set-up-customs-clearance-12.png)
+    :::image type="content" source="../media/set-up-customs-clearance-12.png" alt-text="Screenshot of the General FastTab on the Warehouses page.":::
 
 
 

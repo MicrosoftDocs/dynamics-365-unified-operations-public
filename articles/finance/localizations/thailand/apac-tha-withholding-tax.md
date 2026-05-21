@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Thailand
 ms.search.validFrom: 2016-11-30
@@ -99,7 +99,7 @@ The application-specific parameters option lets users establish the criteria for
 
 The following image provides an example of the suggested setup. 
 
-![Configuration of parameters.](../media/apac-th-wht-pndformats-setup1.png)
+:::image type="content" source="../media/apac-th-wht-pndformats-setup1.png" alt-text="Screenshot of the configuration of parameters.":::
 
 To set up the different lookups used to generate PND files, follow these steps: 
 

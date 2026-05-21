@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ---
 
@@ -28,13 +28,13 @@ To set up average VAT, follow these steps:
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters** \> **Sales tax**, and enable **Manage realized and unrealized VAT**.
 1. In the **Calculation method** field, select **Total**.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up sales tax codes for average realized VAT.
-    1.  In the **Tax type** field, select **Average realized**.
+    1. In the **Tax type** field, select **Average realized**.
     1. In the **Ledger posting group** field, select the ledger posting group for realized VAT.
     1. On the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **Values**.
     1. On the **Sales tax code values** page, in the **Nondeductible %** field, enter the percentage of VAT for the non-VAT businesses.
     1. In the **From date** and **To date** fields, define the date interval for the proportion.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up sales tax codes for average unrealized VAT.
-    1.  In the **Tax type** field, select **Average unrealized**.
+    1. In the **Tax type** field, select **Average unrealized**.
     1. In the **Ledger posting group** field, select the ledger posting group for unrealized VAT.
     1. In the **Payment sales tax code** field, select the code for average realized VAT.
     1. On the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **Values**.
@@ -49,6 +49,7 @@ To set up average VAT, follow these steps:
 ## Work with average VAT
 
 You can create the following transactions that have average unrealized and realized VAT:
+
 - Purchase order for goods
 - Purchase order for services
 - Vendor invoice journal
@@ -77,15 +78,13 @@ between the VAT businesses and the non-VAT businesses is 50 percent to 50 percen
 The VAT is calculated and posted to different accounts, as shown in the following table.
 
 <table>
-<tbody>
+<thead>
 <tr>
-<td>
-<p><strong>VAT calculated and posted when the invoice is posted</strong></p>
-</td>
-<td>
-<p><strong>VAT calculated and adjusted when the invoice is settled with updated VAT ratio</strong></p>
-</td>
+<th>VAT calculated and posted when the invoice is posted</th>
+<th>VAT calculated and adjusted when the invoice is settled with updated VAT ratio</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>
 <p>The invoice amount is THB 100.00.</p>
@@ -96,51 +95,13 @@ The VAT is calculated and posted to different accounts, as shown in the followin
 </ul>
 <p>The following table shows the amounts that are posted to different accounts.</p>
 <table>
+<thead>
+<tr><th>Account</th><th>Debit (THB)</th><th>Credit (THB)</th></tr>
+</thead>
 <tbody>
-<tr>
-<td width="99">
-<p><strong>Account</strong></p>
-</td>
-<td width="99">
-<p><strong>Debit (THB)</strong></p>
-</td>
-<td width="99">
-<p><strong>Credit (THB)</strong></p>
-</td>
-</tr>
-<tr>
-<td width="99">
-<p>Inventory</p>
-</td>
-<td width="99">
-<p>103.85</p>
-</td>
-<td width="99">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="99">
-<p>Purchase VAT</p>
-</td>
-<td width="99">
-<p>3.15</p>
-</td>
-<td width="99">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="99">
-<p>Accounts payable</p>
-</td>
-<td width="99">
-<p>&nbsp;</p>
-</td>
-<td width="99">
-<p>107.00</p>
-</td>
-</tr>
+<tr><td>Inventory</td><td>103.85</td><td></td></tr>
+<tr><td>Purchase VAT</td><td>3.15</td><td></td></tr>
+<tr><td>Accounts payable</td><td></td><td>107.00</td></tr>
 </tbody>
 </table>
 </td>
@@ -153,73 +114,15 @@ The VAT is calculated and posted to different accounts, as shown in the followin
 </ul>
 <p>The following table shows the amounts that are adjusted in different accounts.</p>
 <table>
+<thead>
+<tr><th>Account</th><th>Debit (THB)</th><th>Credit (THB)</th></tr>
+</thead>
 <tbody>
-<tr>
-<td width="99">
-<p><strong>Account</strong></p>
-</td>
-<td width="99">
-<p><strong>Debit (THB)</strong></p>
-</td>
-<td width="99">
-<p><strong>Credit (THB)</strong></p>
-</td>
-</tr>
-<tr>
-<td width="99">
-<p>Inventory</p>
-</td>
-<td width="99">
-<p>&nbsp;</p>
-</td>
-<td width="99">
-<p>0.35</p>
-</td>
-</tr>
-<tr>
-<td width="99">
-<p>Purchase VAT</p>
-</td>
-<td width="99">
-<p>&nbsp;</p>
-</td>
-<td width="99">
-<p>3.15</p>
-</td>
-</tr>
-<tr>
-<td width="99">
-<p>Purchase VAT</p>
-</td>
-<td width="99">
-<p>3.50</p>
-</td>
-<td width="99">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="99">
-<p>Accounts payable</p>
-</td>
-<td width="99">
-<p>107.00</p>
-</td>
-<td width="99">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="99">
-<p>Bank</p>
-</td>
-<td width="99">
-<p>&nbsp;</p>
-</td>
-<td width="99">
-<p>107.00</p>
-</td>
-</tr>
+<tr><td>Inventory</td><td></td><td>0.35</td></tr>
+<tr><td>Purchase VAT</td><td></td><td>3.15</td></tr>
+<tr><td>Purchase VAT</td><td>3.50</td><td></td></tr>
+<tr><td>Accounts payable</td><td>107.00</td><td></td></tr>
+<tr><td>Bank</td><td></td><td>107.00</td></tr>
 </tbody>
 </table>
 </td>
@@ -233,7 +136,7 @@ The *Average VAT* report includes the details of transactions that have average 
 
 To generate the Average VAT report, follow these steps:
 
-1.  In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Average VAT**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Average VAT**.
 1. In the **Tax month** field, select the month for which to generate the report.
 1. In the **Tax invoice number** field, enter the tax invoice number of the invoice that was received from the vendor, if you want the report to include the transactions.
 1. In the **Tax invoice date** field, enter the date when the tax invoice was generated by the vendor.
@@ -247,11 +150,11 @@ To generate the Average VAT report, follow these steps:
 
 The following illustration shows an example of a detailed **Average VAT** report.
 
-![Detailed Average VAT report.](../media/apac-tha-detailed-average-vat-report.png)
+:::image type="content" source="../media/apac-tha-detailed-average-vat-report.png" alt-text="Screenshot of the detailed Average VAT report.":::
 
 The following illustration shows an example of a summarized **Average VAT** report.
 
-![Summarized Average VAT report.](../media/apac-tha-summarized-average-vat-report.png)
+:::image type="content" source="../media/apac-tha-summarized-average-vat-report.png" alt-text="Screenshot of the summarized Average VAT report.":::
 
 The following table explains the information that is shown on the **Average VAT** report.
 
@@ -279,8 +182,8 @@ This example shows how to post a purchase order when there is unrealized VAT at 
 
 To run through the example procedure, follow these steps:
 
-1.  In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes** and set up sales tax codes for average realized VAT.
-    1.  In the **Sales tax code** field, enter **AVAT**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes** and set up sales tax codes for average realized VAT.
+    1. In the **Sales tax code** field, enter **AVAT**.
     1. In the **Name** field, enter **Average realized VAT**.
     1. Set the **Percentage/Amount** field to **7**.
     1. In the **Tax type** field, select **Average realized**.
@@ -294,7 +197,7 @@ To run through the example procedure, follow these steps:
     | AVAT | 1/1/2021 | 12/31/2021 | 0.00 | 0.00 | 7.00 | 45.00 | 55.00 |
 
 1. Set up sales tax codes for average unrealized VAT.
-    1.  In the **Sales tax code** field, enter **AUVAT**.
+    1. In the **Sales tax code** field, enter **AUVAT**.
     1. In the **Name** field, enter **Average unrealized VAT**.
     1. Set the **Percentage/Amount** field to **7**.
     1. In the **Tax type** field, select **Average unrealized**.
@@ -322,7 +225,7 @@ To run through the example procedure, follow these steps:
     - **Nondeductible VAT**: THB 70 × 60 percent = THB 42
     - **Deductible VAT**: THB 70 × 50 percent = THB 28
 
-    ![Voucher transactions.](../media/apac-tha-voucher-transactions.png)
+    :::image type="content" source="../media/apac-tha-voucher-transactions.png" alt-text="Screenshot of voucher transactions.":::
 
 1. Go to **Accounts payable** \> **Payments** \> **Vendor payment journal**, and settle the transaction.
 1. Go to **Accounts payable** \> **Payments** \> **Reversal journal**, and reverse the unrealized VAT. Enter the following information:
@@ -338,10 +241,6 @@ To run through the example procedure, follow these steps:
 
 The difference between the old nondeductible VAT and the new nondeductible VAT amount is THB 10.50.
 
-![Average VAT report.](../media/apac-tha-average-vat-report.png)
-
-
-
-
+:::image type="content" source="../media/apac-tha-average-vat-report.png" alt-text="Screenshot of the Average VAT report.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

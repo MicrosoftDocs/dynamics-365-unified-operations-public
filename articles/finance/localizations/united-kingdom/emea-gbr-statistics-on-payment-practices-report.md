@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 12/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2020-12-02
@@ -25,13 +25,14 @@ The business must publish the report on a web-based service that the government 
 > [!NOTE]
 > Starting in 2025, under the Reporting on Payment Practices and Performance (Amendment) Regulations 2024, which the UK Secretary of State issued under powers in the Small Business, Enterprise and Employment Act 2015, companies in scope are required to report both the total number of payments made in the reporting period and the percentage of payments made late due to disputes.
 > This requirement is supported in the following versions of Dynamics 365 Finance:
-> 
+>
 > - 10.0.46 and higher
 > - 10.0.45 from build 10.0.2345.106
 > - 10.0.44 from build 10.0.2263.170
-> - 10.0.43 from build 	10.0.2177.213
+> - 10.0.43 from build  10.0.2177.213
 >
 > The regulatory update also requires the following or higher versions of ER configurations:
+>
 > - Statistics on invoices – version 67
 > - Statistics on invoices model mapping – version 67.44
 > - Statistics on payment practices (UK) – version 67.18
@@ -80,7 +81,7 @@ You can specify the date when you receive the purchase invoice and then use this
 
 ## Define payments made late due to disputes
 
-To define payments made late due to disputes in Dynamics 365 Finance, use the [Financial tags](../../general-ledger/financial-tag.md). 
+To define payments made late due to disputes in Dynamics 365 Finance, use the [Financial tags](../../general-ledger/financial-tag.md).
 
 Set up **Financial tags segment delimiter** in **General ledger parameters** and create and activate new **Financial tag** that you use to mark transactions related to payments made late due to disputes.
 

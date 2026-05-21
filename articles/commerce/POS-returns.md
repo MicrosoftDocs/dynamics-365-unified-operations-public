@@ -2,7 +2,7 @@
 title: Create returns in POS
 description: Learn how to initiate returns for cash-and-carry transactions or customer orders in Microsoft Dynamics 365 Commerce Point of Sale (POS).
 author: hhainesms
-ms.date: 01/27/2026
+ms.date: 05/18/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -18,14 +18,12 @@ ms.custom:
 
 This article explains how to initiate returns for cash-and-carry transactions or customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 
-> [!NOTE]
-> In Commerce version 10.0.20 and later, a new feature named **Unified return processing experience in POS** is available. This feature provides a more consistent and unified return process in POS, regardless of the transaction type (cash-and-carry transaction or customer order) or the original channel that the order was created in. Turn on this new feature to help improve the overall reliability of return processing through POS.
->
-> After you turn on the feature, you can't turn it off.
-
 ## Process returns by using the return transaction operation
 
-Add the return transaction operation to your POS [screen layout](pos-screen-layouts.md). In releases before the Commerce version 10.0.20 release, the return transaction operation correctly supports the processing of returns for cash-and-carry transactions only. After you turn on the **Unified return processing experience for POS** feature in the Commerce version 10.0.20 release or later, the return transaction operation also supports the processing of returns that originate from customer orders, such as "pick up" or "ship to home" orders that are already invoiced.
+Add the return transaction operation to your POS [screen layout](pos-screen-layouts.md). In releases before the Commerce version 10.0.20 release, the return transaction operation supported the processing of returns for cash-and-carry transactions only. After you turn on the **Unified return processing experience for POS** feature, the return transaction operation also supports the processing of returns that originate from customer orders, such as "pick up" or "ship to home" orders that are already invoiced.
+
+> [!NOTE]
+> The feature **Unified return processing experience in POS** is now enabled automatically and is marked mandatory.  
 
 From the return transaction operation, users can search for a cash-and-carry transaction or a customer order to return against by entering any of the following four search criteria. Users can enter these criteria by using a device keyboard, on-screen keypad, or bar code scanner.
 
@@ -52,18 +50,71 @@ After the return quantity and reason code are set for each item that must be ret
 
 ### User experience enhancements
 
-If there's more than one item to return in a transaction, and the store associate selects multiple items to return, the return grid shows only the last selected row as checked. This behavior can confuse the associate and make them believe that only a single item is selected. To mitigate this issue, as of Commerce version 10.0.36, you can enable the **Improved user experience for POS returns** feature. This feature makes the return products grid a multiselect grid where users can select and clear the selection of returnable products. The multiselect grid automatically opens the return reason dialog box. Therefore, fewer steps are required to open and close the return reason dialog box. This feature also introduces the **Skip sales invoice selection during returns** configuration in the POS functionality profile. If this configuration is enabled, the system combines all returnable products from an order, regardless of the invoice that they were fulfilled from. Therefore, the number of steps that cashiers must complete is reduced, because they don't have to find and select the correct invoice to return an item.
+If a transaction includes more than one item to return and the store associate selects multiple items to return, the return grid shows only the last selected row as checked. This behavior can confuse the associate and make them believe that only a single item is selected. To mitigate this issue, admins can enable the **Improved user experience for POS returns** feature. This feature makes the return products grid a multiselect grid where you can select and clear the selection of returnable products. The multiselect grid automatically opens the return reason dialog box. Therefore, fewer steps are required to open and close the return reason dialog box. This feature also introduces the **Skip sales invoice selection during returns** configuration in the POS functionality profile. When you enable this configuration, the system combines all returnable products from an order, regardless of the invoice that they were fulfilled from. Therefore, the number of steps that cashiers must complete is reduced, because they don't have to find and select the correct invoice to return an item.
 
-The **Improved user experience for POS returns** feature improvements are backported to Commerce versions 10.0.33 through 10.0.35, but for these versions you must enable the improvements by updating config files in your sandbox, development, or test environments, and then contacting Microsoft to enable them in production. For internal environments, modify the `bin\CommerceRuntime.config` file under the Retail Server physical path to add the `"FeatureState.Dynamics.AX.Application.RetailUnifiedReturnUXImprovementFeature" value="true"` and `"FeatureState.Dynamics.AX.Application.RetailSkipInvoiceSelectionDuringReturnFlight" value="true"` settings. If you don't want to skip the invoice selection view, don't add the second setting to the config file. 
+## Block specific items from being returned in POS
+
+Some products, such as consumables, customized goods, or items sold under special terms, shouldn't be eligible for return. The **Controlled return of specific items in POS** feature lets you mark products as nonreturnable, hide them from the **Returnable products** view during return transactions, and provide controlled exceptions for authorized staff.
+
+When a nonreturnable item is sold at POS, the system automatically adds a line comment to the sale indicating that the item can't be returned.
+
+### Enable the feature
+
+Before you can use this feature, you must turn it on in the **Feature management** workspace.
+
+1. In Commerce headquarters, go to **System administration** > **Workspaces** > **Feature management**.
+1. Search for **Controlled return of specific items in POS**.
+1. Select the feature, and then select **Enable**.
+
+### Mark products as nonreturnable
+
+You can block an individual product or an entire product category from being returned.
+
+To block an item for return:
+
+1. In Commerce headquarters, go to **Retail and Commerce** > **Products and categories** > **Released products by category**.
+1. Select the item you want to configure.
+1. On the **Commerce** FastTab, set the **Block item return** option to **Yes**.
+
+To block a category of products:
+
+1. In Commerce headquarters, go to **Retail and Commerce** > **Products and categories** > **Commerce product hierarchy**.
+1. Select the category node you want to configure.
+1. On the **Legal entity specific** FastTab, set the **Block item return** option to **Yes** for the category.
+1. On the action bar, under the **Category** node, select **Update products** and set **Block item return** option to **Yes** to apply the setting to all products in the category.
+1. To verify if the items in the category are updated, go to the **Released products by category** form and check individual products.
+
+### Return behavior in POS
+
+When a store associate initiates a return transaction and searches for an order, the **Returnable products** page shows only items that are eligible for return. The system automatically hides products marked as nonreturnable from this view.
+
+### Handle return exceptions for nonreturnable items
+
+If a customer has a valid reason to return a nonreturnable item, store associates with the **Allow return of non-returnable items** permission can handle the exception.
+
+1. On the **Returnable products** page, select the new button named **Show non-returnable items** on the app bar to load nonreturnable items from the transaction.
+1. The nonreturnable items appear in the list and you can select and process them as a return.
+
+> [!NOTE]
+> Only users who have the **Allow return of non-returnable items** POS permission can see and use this button. Assign this permission through the POS permission group settings in Commerce headquarters.
+
+### Toggle return eligibility for individual items
+
+In some cases, a product is generally returnable, but a specific unit might not be returnable. For example, a floor model or a damaged piece. Use the **Toggle return eligibility** operation in POS to change the return status of an individual item in an open transaction.
+
+- To mark a returnable item as nonreturnable, select the line and run the **Toggle return eligibility** operation.
+- To mark a nonreturnable item as returnable, select the line and run the operation again.
+
+If you mark a product as returnable when you sell it but later configure it as nonreturnable in the system, the item doesn't appear in the **Returnable products** view during a return transaction. Authorized users can still use the exception button on the app bar to process the return.
 
 ## Other return options in POS
 
 Users can add lines to a return transaction if they're creating an exchange order. Users can add more return items to a return transaction by using the **Return product** operation for a selected positive-quantity sales line that the operation already added.
 
 > [!NOTE]
-> The **Return product** operation in POS doesn't provide validation against original transactions, and allows any product to be returned. Microsoft recommends that you only allow authorized users to perform this operation, or enforce that a manager override is required.
+> The **Return product** operation in POS doesn't provide validation against original transactions, and it allows any product to be returned. Microsoft recommends that you only allow authorized users to perform this operation, or enforce that a manager override is required.
 
-When the **Unified return processing experience in POS** feature is turned on, users can also use the **Show journal** operation in POS to initiate a return for a cash-and-carry transaction or a customer order. They can then select a transaction in the journal and then select the **Return** operation on the POS app bar. This operation is available only if there are returnable lines on the order. It initiates the same user experience as the **Return transaction** operation.
+When the **Unified return processing experience in POS** feature is turned on, users can also use the **Show journal** operation in POS to initiate a return for a cash-and-carry transaction or a customer order. They can then select a transaction in the journal and select the **Return** operation on the POS app bar. This operation is available only if there are returnable lines on the order. It initiates the same user experience as the **Return transaction** operation.
 
 Users can also use the **Recall order** operation in POS to search for and recall customer orders. (This operation can't be used for cash-and-carry transactions). In this case, after a customer order is selected, the **Return** operation on the POS app bar can be used to initiate a return for the customer order. This operation is available only if there are returnable lines on the order. It initiates the same user experience as the **Return transaction** or **Show journal** operation.
 
@@ -96,13 +147,6 @@ When POS is offline and can't connect to the Commerce Scale Unit (CSU), the retu
 > [!NOTE]
 > When the **Unified returns processing experience in POS** feature is turned on, new optional features that support the validation of serialized product returns become available. For more information, see [Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md).
 
-## Version details
-
-The following list provides the minimum version requirements for the various components.
-- Commerce headquarters: Version 10.0.20
-- Commerce Scale Unit (CSU): Version 9.30
-- Point of sale (POS): Version 9.30
-
 ## Enable proper tax calculation for returns with partial quantity
 
 This feature ensures that when an order is returned by using multiple invoices, the taxes are equal to the tax amount originally charged.
@@ -116,7 +160,7 @@ Commerce lets you set up return locations that are based on retail info codes an
 
 For example, a customer returns a defective product, and the cashier processes the return transaction. When Retail POS shows the info code for returns, the cashier selects the subcode for defective returns. The returned product is then automatically assigned to a specific return location.
 
-A return location can be a warehouse, a location in a warehouse, or even a specific pallet, depending on the inventory locations that your organization set up. You can map each return location to one or more retail info codes and sales and marketing reason codes.
+A return location can be a warehouse, a location in a warehouse, or even a specific pallet, depending on the inventory locations that your organization sets up. You can map each return location to one or more retail info codes and sales and marketing reason codes.
 
 ### Prerequisites
 
@@ -125,20 +169,20 @@ Before you can set up return locations, set up the following elements:
 - **Retail info codes** – Prompts at the POS register that you set up in the **Retail** module. For more information, see [Setting up info codes](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
 - **Sales and marketing reason codes** – Prompts at the POS register that you set up in the **Sales and marketing** module. For more information, see [Set up return reason codes](../supply-chain/sales-marketing/set-up-return-reason-code.md).
 - **Inventory locations** – The places where inventory is kept. For more information, see [Setting up inventory locations](/dynamicsax-2012/appuser-itpro/about-locations).
-	
+
 ### Set up return locations
 
 To set up return locations, follow these steps:
 
-1. Go to **Retail and Commerce \> Channel setup \> Warehouses**, and select a warehouse.
+1. Go to **Retail and Commerce** > **Channel setup** > **Warehouses**, and select a warehouse.
 1. On the **Retail** FastTab, in the **Default return location** field, select the inventory location to use for returns where the info codes or reason codes aren't mapped to return locations.
 1. In the **Default return pallet** field, select the pallet to use for returns where the info codes or reason codes aren't mapped to return locations.
-1. Go to **Retail and Commerce \> Inventory management \> Return locations**.
+1. Go to **Retail and Commerce** > **Inventory management** > **Return locations**.
 1. Select **New** to create a return location policy.
 1. Enter a unique name and a description for the return location.
 
     > [!NOTE]
-    > If a number sequence is set up for return locations, the name is automatically entered.
+    > If you set up a number sequence for return locations, the name is entered automatically.
 
 1. On the **General** FastTab, set the **Print labels** option to **Yes** to print labels for all the products that are assigned to return locations.
 1. Set the **Block inventory** option to **Yes** to take returned products in the default return location out of inventory and prevent them from being sold.
@@ -160,16 +204,16 @@ To set up return locations, follow these steps:
     1. Select the **Block inventory** checkbox to take returned products out of inventory and prevent them from being sold.
 
     > [!NOTE]
-    > If a return location policy is used for an item, but the return reason that a cashier selects doesn't match any code that you specify on the **Retail info codes** or **Sales and marketing reason codes** FastTab, the item goes to the default return location that you define on the **Warehouse** page. Additionally, the setting of the **Block inventory** checkbox on the **General** FastTab of the **Return locations** page determines whether the returned item should be inventory blocked.
+    > If you use a return location policy for an item but the return reason that a cashier selects doesn't match any code that you specify on the **Retail info codes** or **Sales and marketing reason codes** FastTab, the item goes to the default return location that you define on the **Warehouse** page. Additionally, the setting of the **Block inventory** checkbox on the **General** FastTab of the **Return locations** page determines whether the returned item should be inventory blocked.
 
-1. Go to the **Retail and Commerce \> Commerce product hierarchy**.
+1. Go to the **Retail and Commerce** > **Commerce product hierarchy**.
 1. On the **Manage inventory category properties** FastTab, in the **Return location** field, select a return location. Because you can define multiple return location policies for the same store, the value that you select here determines the return location policy that is used.
 
 ## Known issues
 
 ### When you perform a global return, the return transaction doesn't reflect previously returned quantities
 
-ISSUE: When you perform a global return, the return transaction doesn't reflect previously returned quantities. 
+**Issue:** When you perform a global return, the return transaction doesn't reflect previously returned quantities.
 
 For example, this issue can occur when you execute the following steps.
 
@@ -178,7 +222,7 @@ For example, this issue can occur when you execute the following steps.
 1. Pull the transactions to headquarters.
 1. Try to do a return on the original sale from step 1 in store B. After you enter the receipt number, the POS displays a quantity of five, instead of the expected quantity of three.
 
-CAUSE: This issue arises when multiple CSUs are in use. In this example, store A uses one CSU and store B uses another CSU. Each CSU has its own database, so store A doesn't have information about transactions made in store B, and store B doesn't have information about transactions made in store A.
+**Cause:** This issue arises when multiple CSUs are in use. In this example, store A uses one CSU and store B uses another CSU. Each CSU has its own database, so store A doesn't have information about transactions made in store B, and store B doesn't have information about transactions made in store A.
 
 #### Mitigation steps
 
@@ -188,14 +232,11 @@ To mitigate this issue, follow these steps:
 1. Run the **Update return quantities** job at high frequency.
 1. Run the **Return quantities (1200)** distribution schedule job to update the stores at high frequency.
 
-When you execute these steps, the returned quantities are synced between CSUs and all returns should then reflect returned quantities from other stores. Steps 2 and 3 ensure that information from each CSU is frequently sent to headquarters via Real-time Service (RTS) calls.
+When you execute these steps, the returned quantities sync between CSUs and all returns then reflect returned quantities from other stores. Steps 2 and 3 ensure that information from each CSU is frequently sent to headquarters through Real-time Service (RTS) calls.
 
-## Additional resources
+## More resources
 
-[Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md)
-
-[Linked refunds of previously approved and confirmed transactions](dev-itpro/linked-refunds.md)
-
-[Create and update a returns and refunds policy for a channel](refund_policy_returns.md)
-
-[POS user interface visual configurations](pos-screen-layouts.md)
+- [Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md)
+- [Linked refunds of previously approved and confirmed transactions](dev-itpro/linked-refunds.md)
+- [Create and update a returns and refunds policy for a channel](refund_policy_returns.md)
+- [POS user interface visual configurations](pos-screen-layouts.md)

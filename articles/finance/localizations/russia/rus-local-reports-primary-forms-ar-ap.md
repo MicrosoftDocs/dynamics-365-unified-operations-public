@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
@@ -54,42 +54,10 @@ To set up number sequences for invoices, follow these steps:
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the following references.
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Reporting form</strong></p>
-</td>
-<td>
-<p><strong>Number sequence reference types</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>M-15</p>
-</td>
-<td>
-<ul>
-<li>Invoice (M-15) (system ID)</li>
-<li>Invoice (M-15)</li>
-<li>Corrective invoice (M-15) (system ID)</li>
-<li>Corrective invoice (M-15)</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-<p>TORG-12</p>
-</td>
-<td>
-<ul>
-<li>Customer invoice</li>
-<li>Customer invoice voucher</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+| Reporting form | Number sequence reference types |
+|----------------|----------------------------------|
+| M-15 | Invoice (M-15) (system ID), Invoice (M-15), Corrective invoice (M-15) (system ID), Corrective invoice (M-15) |
+| TORG-12 | Customer invoice, Customer invoice voucher |
 
 ### Generate an M-15 or TORG-12 report for a sales order
 
@@ -106,11 +74,11 @@ To generate an M-15 or TORG-12 report for a sales order, follow these steps:
 
 The following illustration shows an example of an **M-15** report.
 
-  ![M 15 report](../media/ru_primary_forms_in_APAR_1.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_1.png" alt-text="Screenshot of the M-15 report.":::
 
 The following illustration shows an example of a **TORG-12** report.
 
-  ![TORG 12 report](../media/ru_primary_forms_in_APAR_2.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_2.png" alt-text="Screenshot of the TORG-12 report.":::
 
 ## Product receipts
 
@@ -169,23 +137,23 @@ To generate and print the reports for a purchase order, follow these steps:
 
 The following illustration shows an example of an **M-4** report.
 
-  ![M 4 report](../media/ru_primary_forms_in_APAR_3.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_3.png" alt-text="Screenshot of the M-4 report.":::
 
 The following illustration shows an example of an **M-7** report.
 
-  ![M 7 report](../media/ru_primary_forms_in_APAR_4.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_4.png" alt-text="Screenshot of the M-7 report.":::
 
 The following illustration shows an example of a **TORG-1** report.
 
-  ![TORG 1 report](../media/ru_primary_forms_in_APAR_5.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_5.png" alt-text="Screenshot of the TORG-1 report.":::
 
 The following illustration shows an example of a **TORG-2** report.
 
-  ![TORG 2 report](../media/ru_primary_forms_in_APAR_6.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_6.png" alt-text="Screenshot of the TORG-2 report.":::
 
 The following illustration shows an example of a **TORG-3** report.
 
-  ![TORG 3 report](../media/ru_primary_forms_in_APAR_7.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_7.png" alt-text="Screenshot of the TORG-3 report.":::
 
 ### Product receipt corrections
 
@@ -246,7 +214,7 @@ To generate an act of adjustment, follow these steps:
 
     The following illustration shows an example of an act of adjustment for a customer.
 
-  ![Act of adjustment for a customer](../media/ru_primary_forms_in_APAR_8.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_8.png" alt-text="Screenshot of an act of adjustment for a customer.":::
 
 ## 1-T bill of lading reports, transportation invoices, and job tickets
 
@@ -361,15 +329,15 @@ For the sales order, on the Action Pane, select **Preview/Print** \> **Original 
 
 The following illustration shows an example of a transportation invoice.
 
-  ![Transportation invoice](../media/ru_primary_forms_in_APAR_9.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_9.png" alt-text="Screenshot of a transportation invoice.":::
 
 The following illustration shows an example of a job ticket.
 
-  ![Job ticket](../media/ru_primary_forms_in_APAR_10.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_10.png" alt-text="Screenshot of a job ticket.":::
 
 The following illustration shows an example of a **1-T bill of lading** report.
 
-  ![1-T bill of lading report](../media/ru_primary_forms_in_APAR_11.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_11.png" alt-text="Screenshot of a 1-T bill of lading report.":::
 
 ## Customer acceptance reports
 
@@ -392,7 +360,7 @@ To print the **Customer acceptance** report, follow these steps:
 
     The following illustration shows an example of a **Customer acceptance** report.
 
-  ![Customer acceptance report](../media/ru_primary_forms_in_APAR_12.png)
+  :::image type="content" source="../media/ru_primary_forms_in_APAR_12.png" alt-text="Screenshot of a Customer acceptance report.":::
 
 ## Counting act (INV-17) and Certificate (Appendix to INV-17) reports for customers
 

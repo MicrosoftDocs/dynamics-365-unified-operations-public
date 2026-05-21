@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/10/2017
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.search.validFrom: 2016-11-30
@@ -64,14 +64,8 @@ Set up withholding tax groups at **Tax** &gt; **Indirect taxes** &gt; **Withhold
 
 To run the Italy-specific reports about withholding tax, go to **Tax** &gt; **Inquiries and reports** &gt; **Withholding tax reports**:
 
--   **Withholding tax - certification** - This report is used to print an Italian certification report in the withholding tax currency. The report is intended to be sent to the vendor. It includes withholding tax data for the specified period. The report certifies to the vendor that tax amounts were withheld during the report period.
--   **Withholding tax - monthly** - This report is used to print, for each vendor account, details of the withholding tax amounts for all invoices that were paid during a month: the withholding tax reason code, total amount, base excluded amount, not taxable amount by treaty, not taxable amount, taxable base, and withholding tax amount. If the user selects to print details in the dialog box, the report shows amount details by document date and invoice number.
--   **Withholding tax - yearly** - This report is used to print, for each vendor account, the resulting withholding tax amounts. These amounts are grouped by withholding tax code and details are included by invoice. Depending on the **Source** and **May be reported by recipient** settings on the withholding tax code, the report also shows total amounts: total amounts that the recipient can or can't report, and total amounts of source withholding tax or withholding tax in advance.
-
-
-
-
-
-
+- **Withholding tax - certification** - This report is used to print an Italian certification report in the withholding tax currency. The report is intended to be sent to the vendor. It includes withholding tax data for the specified period. The report certifies to the vendor that tax amounts were withheld during the report period.
+- **Withholding tax - monthly** - This report is used to print, for each vendor account, details of the withholding tax amounts for all invoices that were paid during a month: the withholding tax reason code, total amount, base excluded amount, not taxable amount by treaty, not taxable amount, taxable base, and withholding tax amount. If the user selects to print details in the dialog box, the report shows amount details by document date and invoice number.
+- **Withholding tax - yearly** - This report is used to print, for each vendor account, the resulting withholding tax amounts. These amounts are grouped by withholding tax code and details are included by invoice. Depending on the **Source** and **May be reported by recipient** settings on the withholding tax code, the report also shows total amounts: total amounts that the recipient can or can't report, and total amounts of source withholding tax or withholding tax in advance.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

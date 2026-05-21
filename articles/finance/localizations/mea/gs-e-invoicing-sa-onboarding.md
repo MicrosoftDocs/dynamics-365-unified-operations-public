@@ -4,7 +4,7 @@ description: Learn how to onboard taxpayers and their electronic invoicing softw
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 06/05/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2024-01-29

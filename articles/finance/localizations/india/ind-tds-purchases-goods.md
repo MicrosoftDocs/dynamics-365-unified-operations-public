@@ -4,7 +4,7 @@ description: Learn how to post Tax Deducted at Source (TDS) on purchases of good
 author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 06/04/2024
+ms.date: 05/01/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak 
@@ -19,8 +19,8 @@ Section 194Q of the Income Tax Act was recently introduced vide the Finance Act,
 
 The proposed date of applicability for section 194Q is July 1, 2021.
 
-   - Per the charging proviso to this section, the section will apply to any person who is a buyer, and who is responsible for making payments to a resident for the purchase of goods when the value or aggregate of either a purchase from a supplier or a payment (whichever occurs earlier) is 50 rupees lakh (Rs. 50 lakh) during the previous year. (Note that this section doesn't apply to import purchases from a supplier that is outside India, or to the purchase of services.) If a transaction with a supplier causes your aggregate purchase from that supplier, or your aggregate payment for a purchase from that supplier, to exceed Rs. 50 lakh, TDS will have to be deducted from that transaction at a rate of 10 percent of either the purchase transaction or the payment for it (whichever occurs earlier).
-   - This section will also apply to an assessee whose aggregate turnover in the immediately previous year exceeds 10 crore rupees (Rs. 10 crore).
+- Per the charging proviso to this section, the section will apply to any person who is a buyer, and who is responsible for making payments to a resident for the purchase of goods when the value or aggregate of either a purchase from a supplier or a payment (whichever occurs earlier) is 50 rupees lakh (Rs. 50 lakh) during the previous year. (Note that this section doesn't apply to import purchases from a supplier that is outside India, or to the purchase of services.) If a transaction with a supplier causes your aggregate purchase from that supplier, or your aggregate payment for a purchase from that supplier, to exceed Rs. 50 lakh, TDS will have to be deducted from that transaction at a rate of 10 percent of either the purchase transaction or the payment for it (whichever occurs earlier).
+- This section will also apply to an assessee whose aggregate turnover in the immediately previous year exceeds 10 crore rupees (Rs. 10 crore).
 The rate of TDS under section 194Q depends on whether a permanent account number (PAN) has been provided to you, as shown in the following table.
 
 | Condition                     | TDS rate |
@@ -80,156 +80,155 @@ It isn't currently clear whether TDS under section 194Q should be deducted on th
 To define the initial TDS threshold value for transactions that occur between April 1 and June 30, 2021, you must enable the initial TDS threshold option in Feature management.
 
 1. Go to **Workspaces** > **Feature management**.
-2. In the list, find and select the feature that is named **(India) Enable initial TDS threshold under section 194Q**.
-3. Select **Enable now**.
+1. In the list, find and select the feature that is named **(India) Enable initial TDS threshold under section 194Q**.
+1. Select **Enable now**.
 
-    ![Feature management page.](../media/tds-purchase-goods-01.png)
+    :::image type="content" source="../media/tds-purchase-goods-01.png" alt-text="Screenshot of the Feature management page.":::
 
-4. You receive a message that prompts you to refresh your browser window after the feature is enabled. Refresh your browser window to verify that you can open the new page.
+1. You receive a message that prompts you to refresh your browser window after the feature is enabled. Refresh your browser window to verify that you can open the new page.
 
    After the feature is enabled, TDS is automatically reversed at the time of settlement if TDS is deducted on the invoice and the payment. However, you can disable the related feature, **(India) Reversal of vendor TDS at the time of settlement when deducted on both Invoice and payment** at any time in Feature management.
 
-    ![Feature management list with (India) Reversal of vendor TDS at the time of settlement when deducted on both Invoice and payment highlighted.](../media/tds-purchase-goods-02.png)
-    
+    :::image type="content" source="../media/tds-purchase-goods-02.png" alt-text="Screenshot of the Feature management list with (India) Reversal of vendor TDS at the time of settlement when deducted on both Invoice and payment highlighted.":::
+
 ## Define the initial TDS threshold value for each vendor
 
 1. Go to **Tax** > **Setup** > **Withholding tax** > **Initial threshold achieved values**.
-2. On the **Vendor initial threshold achieved turnover** tab, select **Add line**.
-3. Select a vendor account, and then select a withholding tax code.
-4. In the **Initial threshold turnover amount** field, enter the invoice value of transactions that occurred between April 1 and June 30, 2021.
+1. On the **Vendor initial threshold achieved turnover** tab, select **Add line**.
+1. Select a vendor account, and then select a withholding tax code.
+1. In the **Initial threshold turnover amount** field, enter the invoice value of transactions that occurred between April 1 and June 30, 2021.
 
-    ![Initial threshold achieved values page.](../media/tds-purchase-goods-03.png)
-     
+    :::image type="content" source="../media/tds-purchase-goods-03.png" alt-text="Screenshot of the Initial threshold achieved values page.":::
+
 ## Create a withholding tax component group
 
-1.	Go to **Tax** > **Setup** > **Withholding tax** > **Withholding component group**.
-2.	Create a withholding component group that is named, **POG**.
-3.	In the **Description** field, enter **Purchase of Goods**.
-4.	In the **Status** field, select **Resident**.
-5.	In the **Section** field, select **194Q**.
+1. Go to **Tax** > **Setup** > **Withholding tax** > **Withholding component group**.
+1. Create a withholding component group that is named, **POG**.
+1. In the **Description** field, enter **Purchase of Goods**.
+1. In the **Status** field, select **Resident**.
+1. In the **Section** field, select **194Q**.
 
-    ![Withholding tax component group page.](../media/tds-purchase-goods-04.png)
-    
+    :::image type="content" source="../media/tds-purchase-goods-04.png" alt-text="Screenshot of the Withholding tax component group page.":::
 
 ## Create a withholding tax component
 
-1.	Go to **Tax** > **Setup** > **Withholding tax** > **Withholding component**.
-2.	Create a withholding component that is named **POG**.
-3.	In the **Description** field, enter **Purchase of Goods**.
-4.	In the **Withholding tax component group** field, select **POG**.
-5.	In the **Section** field, select **194Q**.
+1. Go to **Tax** > **Setup** > **Withholding tax** > **Withholding component**.
+1. Create a withholding component that is named **POG**.
+1. In the **Description** field, enter **Purchase of Goods**.
+1. In the **Withholding tax component group** field, select **POG**.
+1. In the **Section** field, select **194Q**.
 
-    ![Withholding tax component page.](../media/tds-purchase-goods-05.png)
-    
+    :::image type="content" source="../media/tds-purchase-goods-05.png" alt-text="Screenshot of the Withholding tax component page.":::
+
 ## Set up threshold definitions
 
-1.	Go to **Tax** > **Setup** > **Withholding tax** > **Threshold definitions**.
-2.	Create a record.
-3.	In the **Name** field, enter **POG**. In the **Description** field, enter **POG threshold definition**.
-4.	Select **Threshold designer**, and then select **New**.
-5.	On the **General** FastTab, in the **Effective from** field, select **4/1/2021** (April 1, 2021). In the **Effective to** field, select **3/31/2022** (March 31, 2022).
-6.	In the **Lower limit** field, enter **0** (zero). In the **Upper limit** field, enter **5,000,000**.
-7.	In the **Type** field, select **Cumulative**.
-8.	In the left pane, select **Cumulative: 0 – 50,00,000; 4/1/2021 - 3/31/2022**, and then select **POG**.
-9.	Select **New**.
-10.	On the **General** FastTab, in the **Effective from** field, select **4/1/2021**. In the **Effective to** field, select **3/31/2022**.
-11.	In the **Lower limit** field, enter **5,000,000**. In the **Upper limit** field, enter **0**.
-12.	Set the **Final level** option to **Yes**, and then close the page.
+1. Go to **Tax** > **Setup** > **Withholding tax** > **Threshold definitions**.
+1. Create a record.
+1. In the **Name** field, enter **POG**. In the **Description** field, enter **POG threshold definition**.
+1. Select **Threshold designer**, and then select **New**.
+1. On the **General** FastTab, in the **Effective from** field, select **4/1/2021** (April 1, 2021). In the **Effective to** field, select **3/31/2022** (March 31, 2022).
+1. In the **Lower limit** field, enter **0** (zero). In the **Upper limit** field, enter **5,000,000**.
+1. In the **Type** field, select **Cumulative**.
+1. In the left pane, select **Cumulative: 0 – 50,00,000; 4/1/2021 - 3/31/2022**, and then select **POG**.
+1. Select **New**.
+1. On the **General** FastTab, in the **Effective from** field, select **4/1/2021**. In the **Effective to** field, select **3/31/2022**.
+1. In the **Lower limit** field, enter **5,000,000**. In the **Upper limit** field, enter **0**.
+1. Set the **Final level** option to **Yes**, and then close the page.
 
-    ![Threshold designer page, Final level option set to Yes.](../media/tds-purchase-goods-06.png)
+    :::image type="content" source="../media/tds-purchase-goods-06.png" alt-text="Screenshot of the Threshold designer page, Final level option set to Yes.":::
 
 ## Set up a withholding tax code
 
 1. Go to **Tax** > **Withholding tax** > **Withholding tax code**.
-2. Create a record, and set the following values:
+1. Create a record, and set the following values:
 
-    -	**Withholding tax code**: POG
-    -	**Withholding tax name**: Purchase of Goods Threshold Definition
-    -	**Tax type**: TDS
-    -	**Enable threshold hierarchy**: Yes
-    -	**PAN based accumulation**: Yes
-    -	**Withholding tax component**: POG
-    -	**Main account**: 202122
-    -	**Settlement period**: TDS
-    -	**Receivable account**: 1322611
+    - **Withholding tax code**: POG
+    - **Withholding tax name**: Purchase of Goods Threshold Definition
+    - **Tax type**: TDS
+    - **Enable threshold hierarchy**: Yes
+    - **PAN based accumulation**: Yes
+    - **Withholding tax component**: POG
+    - **Main account**: 202122
+    - **Settlement period**: TDS
+    - **Receivable account**: 1322611
 
-3. Select **Values**, and then set the following values:
+1. Select **Values**, and then set the following values:
 
-    -	**Value**: 0.1
-    -	**PAN non-availability %**: 5
+    - **Value**: 0.1
+    - **PAN non-availability %**: 5
 
-4. Close the **Withholding tax values** page.
+1. Close the **Withholding tax values** page.
 
-    ![Withholding tax codes page.](../media/tds-purchase-goods-07.png)
-    
-5. On the **Withholding tax codes** page, in the left pane, select **POG**.
-6. Mark **Apply threshold**.
-7. Select **Threshold references**.
-8. Create a record, and set the following values:
+    :::image type="content" source="../media/tds-purchase-goods-07.png" alt-text="Screenshot of the Withholding tax codes page.":::
 
-    -	**Account type**: Vendor
-    -	**Account code**: All
-    -	**Account or Group**: Blank
-    -	**Threshold**: POG
+1. On the **Withholding tax codes** page, in the left pane, select **POG**.
+1. Mark **Apply threshold**.
+1. Select **Threshold references**.
+1. Create a record, and set the following values:
 
-9. Select **Threshold designer**, and then select **POG**.
-10.	Select **New cumulative; 0 – 50,00,000; 4/1/2021 - 3/31/2022**, and then select **New**.
-11.	In the **PAN status** field, select **Received**.
-12.	On the **General** FastTab, set the following values:
+    - **Account type**: Vendor
+    - **Account code**: All
+    - **Account or Group**: Blank
+    - **Threshold**: POG
 
-    -	**Value**: 0
-    -	**Reason code**: Y
-    -	**Calculate tax**: No
-    -	**Include in turnover base**: Yes
+1. Select **Threshold designer**, and then select **POG**.
+1. Select **New cumulative; 0 – 50,00,000; 4/1/2021 - 3/31/2022**, and then select **New**.
+1. In the **PAN status** field, select **Received**.
+1. On the **General** FastTab, set the following values:
 
-13.	Unmark **Calculate previously nontaxed transactions**.
-14.	In the left pane, select **POG: 50,00,000 - MAX; 4/1/2021 - 3/31/2022**.
-15.	Select **New**, and set the following values:
+    - **Value**: 0
+    - **Reason code**: Y
+    - **Calculate tax**: No
+    - **Include in turnover base**: Yes
 
-    -	**PAN status**: Received
-    -	**Value**: 0.1
+1. Unmark **Calculate previously nontaxed transactions**.
+1. In the left pane, select **POG: 50,00,000 - MAX; 4/1/2021 - 3/31/2022**.
+1. Select **New**, and set the following values:
 
-16.	On the **General** FastTab, set the following values:
+    - **PAN status**: Received
+    - **Value**: 0.1
 
-    -	**Calculate tax**: Yes
-    -	**Include in turnover base**: Yes
+1. On the **General** FastTab, set the following values:
 
-17.	Unmark **Calculate previously nontaxed transactions**, and then close the page.
+    - **Calculate tax**: Yes
+    - **Include in turnover base**: Yes
 
-    ![Threshold designer page.](../media/tds-purchase-goods-08.png)
+1. Unmark **Calculate previously nontaxed transactions**, and then close the page.
+
+    :::image type="content" source="../media/tds-purchase-goods-08.png" alt-text="Screenshot of the Threshold designer page.":::
 
 ## Create a withholding tax group
 
 1. Go to **Tax** > **Withholding tax** > **Withholding tax group**.
-2. Create a record, and set the following values:
+1. Create a record, and set the following values:
 
-    -	**Withholding tax group**: POG
-    -	**Description**: POG - Threshold Definition
-    -	**Tax type**: TDS
-    -	**Include GST tax component for TDS calculation**: IGST, CGST, SGST
+    - **Withholding tax group**: POG
+    - **Description**: POG - Threshold Definition
+    - **Tax type**: TDS
+    - **Include GST tax component for TDS calculation**: IGST, CGST, SGST
 
-3. On the **Setup** FastTab, select **Add**.
-4. In the **Withholding tax code** field, select **POG**.
-5. Select **Designer**, and then create a record.
-6. In the **Tax code** field, select **POG**.
-7. In the **Taxable basis** field, select **Gross amount**.
-8. Close the page.
+1. On the **Setup** FastTab, select **Add**.
+1. In the **Withholding tax code** field, select **POG**.
+1. Select **Designer**, and then create a record.
+1. In the **Tax code** field, select **POG**.
+1. In the **Taxable basis** field, select **Gross amount**.
+1. Close the page.
 
-    ![New withholding tax group.](../media/tds-purchase-goods-09.png)
+    :::image type="content" source="../media/tds-purchase-goods-09.png" alt-text="Screenshot of the New withholding tax group.":::
 
 ## Attach a withholding tax group to a vendor account
 
-1.	Go to **Accounts payable** > **Vendors**.
-2.	Select vendor **INMF-000001**.
-3.	On the **Invoice and delivery** FastTab, set **Calculate withholding tax** to **Yes**.
-4.	In the **TDS group** field, select **POG**.
+1. Go to **Accounts payable** > **Vendors**.
+1. Select vendor **INMF-000001**.
+1. On the **Invoice and delivery** FastTab, set **Calculate withholding tax** to **Yes**.
+1. In the **TDS group** field, select **POG**.
 
-    ![All vendors page.](../media/tds-purchase-goods-10.png)
+    :::image type="content" source="../media/tds-purchase-goods-10.png" alt-text="Screenshot of the All vendors page.":::
 
 ## Create and post the invoice journal
 
 1. Go to **Accounts payable** > **Invoices** > **Vendor invoice journal**.
-2. Select **New**, and set the following values:
+1. Select **New**, and set the following values:
 
    - **Account type**: Vendor
    - **Account**: INMF-000001
@@ -239,10 +238,10 @@ To define the initial TDS threshold value for transactions that occur between Ap
    - **Offset account**: 600120
    - **Already posted transaction**: 2,000,000
    - **Initial threshold value**: 2,000,000
- 
-     ![Vendor invoice journal page](../media/tds-purchase-goods-11.png)
-   
-3. Select **Withholding tax**.
+
+     :::image type="content" source="../media/tds-purchase-goods-11.png" alt-text="Screenshot of the Vendor invoice journal page.":::
+
+1. Select **Withholding tax**.
 
     Notice that withholding tax is calculated as expected, based on the percentage that you previously set up for this vendor (0.1). The total cumulative transaction value, including the initial threshold, exceeded 50,00,000, as shown here:
 
@@ -252,7 +251,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
    - **TDS**: Total cumulative value (55,00,000) – 50,00,000 = 5,00,000
    - **Threshold value**: 5,00,000 at a rate of 0.1 percent = 500
 
-    ![Withholdign tax transactions page](../media/tds-purchase-goods-12.png)
+    :::image type="content" source="../media/tds-purchase-goods-12.png" alt-text="Screenshot of the Withholding tax transactions page.":::
   
 ## Reversal of TDS on invoice settlement when TDS is deducted separately on the invoice and the payment
 
@@ -291,6 +290,6 @@ Because the invoice is posted first, the payment must be reversed up to the valu
 
 The following illustration shows the related voucher that is posted.
 
-![Related ledger transaction vouchers page](../media/tds-purchase-goods-13.png)
+:::image type="content" source="../media/tds-purchase-goods-13.png" alt-text="Screenshot of the Related ledger transaction vouchers page.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

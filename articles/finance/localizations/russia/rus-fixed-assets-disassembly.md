@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -169,33 +169,10 @@ The fixed asset revaluation transaction doesn't revalue all components in propor
 
 Therefore, for every component that is subject to withdrawal from the fixed asset composition, a table is created that includes all revaluation transactions. Major refurbishments are calculated after the component is acquired. The following table uses item 2 as an example.
 
-<table>
-<thead>
-<tr>
-<th>i</th>
-<th>Revaluation amount, Adj(i)</th>
-<th>Fixed asset balance value before revaluation, S<sub>bal</sub>(i)</th>
-<th>Original component cost, S<sub>src</sub>(i)</th>
-<th>Cost after revaluation, S<sub>dst</sub>(i)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>1,500</td>
-<td>3,000</td>
-<td>2,000</td>
-<td>S<sub>dst</sub>(i) = S<sub>src</sub>(i) × (1 + [Adj(i) ÷ S<sub>bal</sub>(i)]) = 3,000</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2,000</td>
-<td>5,500*</td>
-<td>S<sub>src</sub>(i) = S<sub>dst</sub>(i–1) = 3,000</td>
-<td>S<sub>dst</sub>(i) = S<sub>src</sub>(i) × (1 + [Adj(i) ÷ S<sub>bal</sub>(i)]) = 4,090.91</td>
-</tr>
-</tbody>
-</table>
+| i | Revaluation amount, Adj(i) | Fixed asset balance value before revaluation, S<sub>bal</sub>(i) | Original component cost, S<sub>src</sub>(i) | Cost after revaluation, S<sub>dst</sub>(i) |
+|---|---|---|---|---|
+| 1 | 1,500 | 3,000 | 2,000 | S<sub>dst</sub>(i) = S<sub>src</sub>(i) × (1 + [Adj(i) ÷ S<sub>bal</sub>(i)]) = 3,000 |
+| 2 | 2,000 | 5,500* | S<sub>src</sub>(i) = S<sub>dst</sub>(i–1) = 3,000 | S<sub>dst</sub>(i) = S<sub>src</sub>(i) × (1 + [Adj(i) ÷ S<sub>bal</sub>(i)]) = 4,090.91 |
 
 \* The fixed asset balance value that is calculated includes the fixed asset revaluation amount that is caused by a partial disassembly of the asset.
 
@@ -213,40 +190,11 @@ Calculation of the added component depreciation is similar to the calculation of
 
 A table is created for every component that is withdrawn from the fixed asset composition. The lines of the table include all depreciation accrual and depreciation revaluation transactions that were completed after acquisition, except depreciation revaluation transactions that were triggered by disassembly transactions. See the following table.
 
-<table>
-<thead>
-<tr>
-<th>i</th>
-<th>Depreciation or revaluation amount, Acq(i)</th>
-<th>Fixed asset balance value at the time of depreciation or depreciation revaluation</th>
-<th>Component cost, S<sub>dst</sub>(i)</th>
-<th>Depreciation after revaluation, A(i)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>300 (depreciation)</td>
-<td>4,500</td>
-<td>3,000</td>
-<td>A(i) = A(i–1) + S<sub>dst</sub>(i) × (Acq(i) ÷ S<sub>bal</sub>) = 200</td>
-</tr>
-<tr>
-<td>2</td>
-<td>700 (depreciation)</td>
-<td>7,000</td>
-<td>3,000</td>
-<td>A(i) = A(i–1) + S<sub>dst</sub>(i) × (Acq(i) ÷ S<sub>bal</sub>) = 500</td>
-</tr>
-<tr>
-<td>3</td>
-<td>349.21 (revaluation)</td>
-<td>5,500</td>
-<td>3,000</td>
-<td>A(i) = A(i–1) + S<sub>dst</sub>(i) × (Acq(i) ÷ S<sub>bal</sub>) = 690.48</td>
-</tr>
-</tbody>
-</table>
+| i | Depreciation or revaluation amount, Acq(i) | Fixed asset balance value at the time of depreciation or depreciation revaluation | Component cost, S<sub>dst</sub>(i) | Depreciation after revaluation, A(i) |
+|---|---|---|---|---|
+| 1 | 300 (depreciation) | 4,500 | 3,000 | A(i) = A(i–1) + S<sub>dst</sub>(i) × (Acq(i) ÷ S<sub>bal</sub>) = 200 |
+| 2 | 700 (depreciation) | 7,000 | 3,000 | A(i) = A(i–1) + S<sub>dst</sub>(i) × (Acq(i) ÷ S<sub>bal</sub>) = 500 |
+| 3 | 349.21 (revaluation) | 5,500 | 3,000 | A(i) = A(i–1) + S<sub>dst</sub>(i) × (Acq(i) ÷ S<sub>bal</sub>) = 690.48 |
 
 For the first depreciation line, the value A(i–1) equals 0 (zero).
 

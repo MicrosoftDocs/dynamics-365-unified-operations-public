@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 12/09/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: United Arab Emirates (UAE)
@@ -29,7 +29,7 @@ This article provides links to documentation resources for the United Arab Emira
 
 Country/region specific functionality for the UAE is activated by using the **Localized functionality region** configuration for legal entities. If the company address is used to detect the **Localized functionality region** configuration, make sure that the country/region code of the legal entity's primary address is set to **ARE** on the **Legal entities** page.
 
-[![Country/region code of the primary address set to ARE on the Legal entities page.](../media/uae_vat_01.jpg)]
+:::image type="content" source="../media/uae_vat_01.jpg" alt-text="Screenshot of the country/region code of the primary address set to ARE on the Legal entities page.":::
 
 For more information about the patterns that are used in localized solutions, see the [Localization and regulatory features website](../../../fin-ops-core/fin-ops/lcs/globalization-resources.md).
 

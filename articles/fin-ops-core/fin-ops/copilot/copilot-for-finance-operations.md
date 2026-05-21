@@ -57,8 +57,8 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 - [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md)
 - [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
 - [Workload insights with Copilot in the Warehouse Management mobile app](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md)
-- [Supplier Communications Agent overview (production ready preview)](../../../supply-chain/procurement/supplier-com-agent-overview.md)
-- [Generative insights for Demand planning (production ready preview)](../../../supply-chain/demand-planning/generative-insights.md)
+- [Procurement Agent overview (production-ready preview)](../../../supply-chain/procurement/procurement-agent-overview.md)
+- [Generative insights for Demand planning (production-ready preview)](../../../supply-chain/demand-planning/generative-insights.md)
 
 ## Responsible AI
 
