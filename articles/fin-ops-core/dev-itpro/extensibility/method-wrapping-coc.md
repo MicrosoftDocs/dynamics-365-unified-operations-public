@@ -72,7 +72,7 @@ The following sections give more details about the capabilities of method wrappi
 You can wrap protected or public methods of classes, tables, data entities, or forms by using an extension class. The wrapper method must have the same signature as the base method.
 
 - When you augment form classes, you can only wrap root-level methods. You can't wrap methods that are defined in nested classes.
-- Currently, you can only wrap methods that are defined in regular classes. You can't wrap methods that are defined in extension classes by augmenting the extension classes. This capability is planned for a future update.
+
 
 ### What about default parameters?
 
