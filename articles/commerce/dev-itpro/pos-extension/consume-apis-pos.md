@@ -1,31 +1,31 @@
 ---
 title: Consume custom headless Commerce APIs and entities in POS
-description: This article explains how to use Proxy to consume custom headless Commerce APIs and entities in Point of Sale (POS).
+description: Learn how to use Proxy to consume custom headless Commerce APIs and entities in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 04/13/2021
+ms.date: 02/20/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-13
-ms.dyn365.ops.version: AX 10.0.18
+ms.custom: 
+  - bap-template
 ---
 
 # Consume custom headless Commerce APIs and entities in POS
 
 [!include [banner](../../../includes/banner.md)]
 
-This article explains how to use Proxy to consume custom headless Commerce APIs and entities in Point of Sale (POS). It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article explains how to use Proxy to consume custom headless Commerce APIs and entities in Microsoft Dynamics 365 Commerce point of sale (POS). It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
 1. Make sure that your Commerce runtime (CRT) extension project references the **Microsoft.Dynamics.Commerce.Sdk.Runtime** NuGet package, and that your POS extension project references the **Microsoft.Dynamics.Commerce.Sdk.Pos** NuGet package.
-2. Add a project reference from your POS extension project to the CRT project that defines your APIs.
-3. Build your POS extension project to generate the TypeScript for your headless Commerce extensions. The build generates two TypeScript files in a **DataService** folder in your project root:
+1. Add a project reference from your POS extension project to the CRT project that defines your APIs.
+1. Build your POS extension project to generate the TypeScript for your headless Commerce extensions. The build generates two TypeScript files in a **DataService** folder in your project root:
 
     + **DataServiceEntities.g.ts** – This file contains the TypeScript entities for all the referenced CRT extension projects.
     + **DataServiceRequests.g.ts** – This file contains the TypeScript data service requests for all the referenced CRT extension projects.
 
-4. Import your data service entities and requests into your extension code, as shown in the following example.
+1. Import your data service entities and requests into your extension code, as shown in the following example.
 
     ```Javascript
     import * as Triggers from "PosApi/Extend/Triggers/ProductTriggers";

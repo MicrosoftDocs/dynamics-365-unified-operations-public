@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ---
@@ -72,7 +72,7 @@ To , follow these steps:
     1. Select **OK**.
     1. Review the cells that are created from the names in the Excel template.
 
-        ![Format mapping cells.](../media/rus-format-designer-mapping.jpg)
+        :::image type="content" source="../media/rus-format-designer-mapping.jpg" alt-text="Screenshot of format mapping cells.":::
 
     1. Close the page.
 
@@ -114,7 +114,7 @@ To , follow these steps:
     1. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
     1. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
 
-        ![Format mapping text string.](../media/rus-format-designer-mapping-text-string.jpg)
+        :::image type="content" source="../media/rus-format-designer-mapping-text-string.jpg" alt-text="Screenshot of format mapping text string.":::
 
     1. On the **Mapping** tab, select the **Value** element.
     1. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.

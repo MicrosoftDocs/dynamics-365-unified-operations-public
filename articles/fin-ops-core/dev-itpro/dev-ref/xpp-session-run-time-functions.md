@@ -4,7 +4,7 @@ description: Learn about the session run-time functions, including syntax string
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 06/20/2017
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,11 +16,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the session run-time functions.
+This article describes the session runtime functions.
 
 ## curExt
 
-Retrieves the extension that is used for the current company.
+Retrieves the extension that the current company uses.
 
 ```xpp
 str curExt()
@@ -43,6 +43,7 @@ static void curExtExample(Args _arg)
 ```
 
 ## curUserId
+
 Retrieves the nonnumeric ID that represents the current user.
 
 ```xpp
@@ -65,6 +66,7 @@ static void curUserIdExample(Args _arg)
 ```
 
 ## funcName
+
 Retrieves a string that contains the current function context.
 
 ```xpp
@@ -89,6 +91,7 @@ static void funcNameExample(Args _arg)
 ```
 
 ## getCurrentPartition
+
 Retrieves the short name of the current partition.
 
 ```xpp
@@ -127,6 +130,7 @@ getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany
 ```
 
 ## getCurrentPartitionRecId
+
 Retrieves the **RecId** field of the current partition.
 
 ```xpp
@@ -165,6 +169,7 @@ getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany
 ```
 
 ## getPrefix
+
 Retrieves the current execution prefix after successive calls to the **setPrefix** function.
 
 ```xpp
@@ -191,6 +196,7 @@ static void getPrefixExample(Args _arg)
 ```
 
 ## sessionId
+
 Retrieves the session number of the current session.
 
 ```xpp
@@ -203,7 +209,7 @@ The numeric ID of the current session.
 
 ### Remarks
 
-A session number is assigned when the client is started and connects to Application Object Server (AOS). Every call of this function during the life of the client returns the same integer value. The returned value is compatible with the **SessionID** extended data type. The **contains** methods return information about individual user sessions.
+Assign a session number when you start the client and connect to Application Object Server (AOS). Every call to this function during the life of the client returns the same integer value. The returned value is compatible with the **SessionID** extended data type. The **contains** methods return information about individual user sessions.
 
 ### Example
 
@@ -217,6 +223,7 @@ static void sessionIdExample(Args _arg)
 ```
 
 ## prmIsDefault
+
 Determines whether the specified parameter for the current method has the default value.
 
 ```xpp
@@ -255,6 +262,7 @@ static void prmIsDefaultExample(Args _arg)
 ```
 
 ## runAs
+
 Enables the caller to run an X++ method in the security context of another user. This function is most often used with batch processing.
 
 ```xpp
@@ -284,11 +292,11 @@ container runAs(
 
 ### Return value
 
-A container that holds the return value or values of the method that is called by the **runAs** function, if any values were returned.
+A container that holds the return value or values of the method that the **runAs** function calls, if any values are returned.
 
 ### Remarks
 
-This function makes it possible to run code as another user. This capability presents a security threat. Therefore, this function runs under [Code Access Security](/dynamicsax-2012/developer/code-access-security). Calls to this function on the server require permission from the **RunAsPermission** class. Each use of this application programming interface (API) should be threat-modeled. If a security vulnerability is discovered, validate input to this API. The debugger might ignore breakpoints that are located in a method that is called by using the **runAs** function. X++ code that is executed by the **runAs** function must run as Microsoft .NET Framework Common Intermediate Language (CIL). If CIL hasn't been generated for the target static method, an error message indicates that the method isn't found. The **PartitionKey** system type is the exact type of the *partition* parameter. **PartitionKey** is a string that has a maximum length of eight characters.
+This function makes it possible to run code as another user. This capability presents a security threat. Therefore, this function runs under [Code Access Security](/dynamicsax-2012/developer/code-access-security). Calls to this function on the server require permission from the **RunAsPermission** class. Each use of this application programming interface (API) should be threat-modeled. If a security vulnerability is discovered, validate input to this API. The debugger might ignore breakpoints that are located in a method that the **runAs** function calls. X++ code that the **runAs** function executes must run as Microsoft .NET Framework Common Intermediate Language (CIL). If CIL isn't generated for the target static method, an error message indicates that the method isn't found. The **PartitionKey** system type is the exact type of the *partition* parameter. **PartitionKey** is a string that has a maximum length of eight characters.
 
 ### Example
 
@@ -310,6 +318,7 @@ server static public void Main(Args _args)
 ```
 
 ## setPrefix
+
 Sets the prefix for the current execution scope.
 
 ```xpp
@@ -324,11 +333,11 @@ int setPrefix(str _prefix)
 
 ### Return value
 
-**0** if the prefix was set successfully.
+**0** if the prefix is set successfully.
 
 ### Remarks
 
-The complete prefix for the execution can be fetched by using the **getPrefix** function. When the scope is left, the prefix is automatically reset to the previous level. The prefix mechanism makes it more straightforward to write precise error messages about the transactions that an application performs. For example, the **AA** method calls the **BB** method, and each method calls the **setPrefix** function. Messages that the **BB** method writes to the Infolog appear nested in a hierarchy. When the **BB** method ends, and control returns to the **AA** method, the prefix that was set by the **BB** method isn't attached to subsequent messages.
+Use the **getPrefix** function to get the complete prefix for the execution. When the scope ends, the prefix automatically resets to the previous level. The prefix mechanism makes it easier to write precise error messages about the transactions that an application performs. For example, the **AA** method calls the **BB** method, and each method calls the **setPrefix** function. Messages that the **BB** method writes to the Infolog appear nested in a hierarchy. When the **BB** method ends, and control returns to the **AA** method, the prefix that the **BB** method set isn't attached to subsequent messages.
 
 ### Example
 
@@ -340,8 +349,5 @@ static void setPrefixExample(Args _arg)
     print i;
 }
 ```
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Streamlined employee entry and navigation
-description: Data entry for workers in Dynamics 365 Human Resources provides quick entry for all employees, past, active or future.
+description: Data entry for workers in Dynamics 365 Human Resources provides quick entry for all employees, past, active, or future.
 author: ramagadu
-ms.date: 07/23/2025
+ms.date: 05/15/2026
 ms.topic: article
 # optional metadata
 
@@ -24,16 +24,16 @@ ms.dyn365.ops.version:
 
 # Streamlined employee navigation and entry
 
-Dynamics 365 Human Resources allows efficient entry of employee and employment data. You can quickly update work history information for past, active, and future employees and contractors.
+Dynamics 365 Human Resources enables efficient entry of employee and employment data. You can quickly update work history information for past, active, and future employees and contractors.
 
 > [!NOTE]
-> Starting with the Dynamics 365 finance and operations 10.0.45 release, the **Streamlined employee entry** feature is mandatory. A new **Disable streamlined employee entry** parameter is added to **Human resources shared parameters**. When this parameter is enabled, streamlined employee entry experience is turned off. 
+> Starting with the Dynamics 365 finance and operations 10.0.45 release, the **Streamlined employee entry** feature is mandatory. A new **Disable streamlined employee entry** parameter is added to **Human resources shared parameters**. When you enable this parameter, it turns off the streamlined employee entry experience. 
 
 ## View options
 
-You can use **View options** on the **Worker** page to select any combination of employees and contractors from a single list. These options allow you to view workers across legal entities or for the legal entity you're currently signed into. You can also view active, pending, and exited workers, and you can restrict results based on the type of worker (employee or contractor). If advanced security is enabled, you will only see those employees and contractors in the legal entities you have access to.
+Use **View options** on the **Worker** page to select any combination of employees and contractors from a single list. These options allow you to view workers across legal entities or for the legal entity you're currently signed into. You can also view active, pending, and exited workers, and you can restrict results based on the type of worker (employee or contractor). If advanced security is enabled, you see only those employees and contractors in the legal entities you have access to.
 
-Columns in the list view change based on your selections. For example, when viewing exited employees, the termination date and reason codes display as additional columns in the list. 
+Columns in the list view change based on your selections. For example, when you view exited employees, the termination date and reason codes display as additional columns in the list. 
 
 ## Navigation and banner
 
@@ -60,7 +60,7 @@ The banner for pending employees displays the following columns:
 - **Starting date**
 - **Legal entity**
 
-The action pane of the **Worker** page has been organized to include fewer options. Information is organized in the following categories: 
+The action pane of the **Worker** page includes fewer options. It organizes information into the following categories: 
 
 - Work
 - Person
@@ -74,7 +74,7 @@ In addition, a **Links** tab on the **Worker** page gives users a central locati
 
 ## Work history
 
-The **Work history** tab shows work history across all legal entities and is available for exited, active, and pending employees and contractors. You can view all work history at once for the legal entities you have access to. In addition, you can edit information for each of the work history entries without changing the data context. You can update all information directly on the page. 
+The **Work history** tab shows work history across all legal entities. You can access it for exited, active, and pending employees and contractors. You can view all work history at once for the legal entities you access. You can also edit information for each work history entry without changing the data context. You can update all information directly on the page. 
 
 
 ## Position history

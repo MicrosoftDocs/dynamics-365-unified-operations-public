@@ -4,7 +4,7 @@ description: Learn about how the APIs of the Electronic reporting (ER) framework
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 06/17/2021
+ms.date: 03/12/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,12 +17,11 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
+This article describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework is changed in Microsoft Dynamics 365 Finance version 10.0.19.
 
-This article describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.
+## API to extend the list of ER destinations
 
-## <a name="er-api-extend-destination"></a>API to extend the list of ER destinations
-
-To implement a [custom](electronic-reporting-destinations.md#destination-types) ER [destination](electronic-reporting-destinations.md), you must use the `ERIFormatFileDestinationSettings` public interface.
+To implement a [custom](electronic-reporting-destinations.md#destination-types) ER [destination](electronic-reporting-destinations.md), use the `ERIFormatFileDestinationSettings` public interface.
 
 ```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
@@ -93,7 +92,7 @@ public interface ERIFormatFileDestinationSettings extends SysPackable
 
 This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time. The configured destination can then be used at runtime to store generated outbound documents.
 
-To learn more about this interface, complete the example in [Implement a custom destination for generated documents](er-custom-file-destination.md).
+To learn more about this interface, see the example in [Implement a custom destination for generated documents](er-custom-file-destination.md).
 
 ## Additional resources
 

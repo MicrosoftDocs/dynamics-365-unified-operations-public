@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: United Kingdom
@@ -29,7 +29,5 @@ When your legal entity is configured for reporting for multiple VAT registration
 | [Intrastat - United Kingdom (Northern Ireland)](../czech-republic/emea-cze-intrastat.md)       | 10.0.20 | Intrastat (UK), version 1.2     |
 | [EU sales list - United Kingdom (Northern Ireland)](../czech-republic/emea-cze-eu-sales-list.md)   | 10.0.20 | EU Sales list XML (UK), version 9.6<br>EU Sales list TXT (UK), version 9.7  |
 | [VAT declaration - Making Tax Digital](emea-gbr-mtd-vat-integration.md) | 10.0.21 | VAT Declaration Excel (UK), version 32.30.16<br>VAT Declaration JSON (UK), version 32.31 |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

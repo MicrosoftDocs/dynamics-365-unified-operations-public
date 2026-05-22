@@ -2,12 +2,12 @@
 title: What's new or changed for India GST in 10.0.12 (July 2020)
 description: Learn about new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.12, including outlines on new features.
 author: prabhatb
-ms.author: prabhatb
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 07/15/2024
+ms.date: 01/21/2026
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: India
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include [banner](../../includes/banner.md)]
 
-This article includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.12 for India GST localization. 
+This article summarizes the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.12 for India GST localization. 
 
 ## New features
 
@@ -26,24 +26,24 @@ This article includes a summary of the new features and critical bug fixes relea
 
 The following improvements are included in the stock transfer order functionality: 
 
-- Default **Transfer type** and **Price type** values can be configured in the **Inventory and warehouse management parameters**. 
-- The unit price on a stock transfer order line is recalculated based on the inventory dimensions specified in the line until the first shipment is posted for the line. 
-- Shipment of a stock transfer order line with a unit price of zero (0) isn't possible. 
-- Inventory costs are posted for stock transfer orders if there's partial shipment or receipts or batch-controlled items. 
-- Unrealized profit or loss is no longer posted during the shipment or receipt of a stock transfer line if the unit price differs from the inventory cost price of the item. 
-- Changing the unit of measure on stock a transfer order line is restricted. 
+- You can configure default **Transfer type** and **Price type** values in the **Inventory and warehouse management parameters**. 
+- The system recalculates the unit price on a stock transfer order line based on the inventory dimensions you specify in the line until the first shipment is posted for the line. 
+- You can't ship a stock transfer order line with a unit price of zero (0). 
+- The system posts inventory costs for stock transfer orders if there's partial shipment or receipts or batch-controlled items. 
+- The system no longer posts unrealized profit or loss during the shipment or receipt of a stock transfer line if the unit price differs from the inventory cost price of the item. 
+- You can't change the unit of measure on stock a transfer order line. 
 
-This feature can be enabled through Feature management.
+Enable this feature through Feature management.
 
-![Feature management module and list of available features.](../media/gst-feature-management.png)
+:::image type="content" source="../media/gst-feature-management.png" alt-text="Screenshot of Feature management module and list of available features.":::
 
 ### New parameter under Inventory management
 
-The parameter, **Enable stock transfer for master planning** has been added to the **Inventory management parameters** page (**Inventory & warehouse management** > **Setup** > **Parameters**, **Transfer orders** tab) and the **Transfer type** page (**Master planning** > **Parameters** > **Transfer type**).  
+You can now use the **Enable stock transfer for master planning** parameter in two locations: the **Inventory management parameters** page (**Inventory & warehouse management** > **Setup** > **Parameters**, **Transfer orders** tab) and the **Transfer type** page (**Master planning** > **Parameters** > **Transfer type**).  
 
-![Inventory management parameters page, Transfer orders tab.](../media/gst-inventory-parameters.png)
+:::image type="content" source="../media/gst-inventory-parameters.png" alt-text="Screenshot of Inventory management parameters page showing Transfer orders tab.":::
 
-![Transfer type page.](../media/gst-master-planning-parameters.png)
+:::image type="content" source="../media/gst-master-planning-parameters.png" alt-text="Screenshot of Transfer type page.":::
 
 ## Critical fixes 
 
@@ -56,7 +56,7 @@ The parameter, **Enable stock transfer for master planning** has been added to t
 - Lookup condition is linked to two different component measure owners.
 - Voucher details are not showing in the posted journal during the process of settling the post-dated check. With this fix, the line shows on the grid.  
 - An error occurs when posting an invoice journal that has multiple lines with TDS where the exchange rate changed after creating lines in the invoice journal. 
--  With this fix, the system posts the invoice journal (multiline) transaction successfully including TDS where the exchange rate is changed after all the lines are created in the invoice journal. The system will select the latest defined exchange rate for the whole transaction.  
+- With this fix, the system posts the invoice journal (multiline) transaction successfully including TDS where the exchange rate is changed after all the lines are created in the invoice journal. The system will select the latest defined exchange rate for the whole transaction.  
 - The WHT tax group isn't editable during invoice processing in India Legal Entity when a transaction is posted through the **Pending invoice** page. With this fix, the TDS/TCS group will be editable on the **Purchase order pending invoice** page for the line. You will be able to update the TDS/ TCS-related fields on the **Pending invoice** page during invoicing.  
 - The source details in the **GST** number sequence group were deleted. With this fix, you can't delete the source details in the **GST reference** number sequence group if they are attached to a transaction. If you don't attach the source details to the transaction, you can delete the source details and then add them again.  
 - Charges are not automatically updated in the **Assessable value** field on the sales order line when charges are applied through the **Auto charges** functionality even when the **Assessable value** check box is selected during setup. Charges are not auto-updating on the sales order line to include the charge amount in the assessable value of goods. After this fix, charges will be auto-updated on the sales order line when the **Assessable value** check box in selected and it will be part of the assessable value for tax calculation.  

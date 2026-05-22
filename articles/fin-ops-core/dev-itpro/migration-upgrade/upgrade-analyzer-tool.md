@@ -4,7 +4,7 @@ description: Learn about how to use the Upgrade analysis report to plan your upg
 author: ttreen
 ms.author: ttreen
 ms.topic: upgrade-and-migration-article
-ms.date: 07/18/2023
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -24,7 +24,7 @@ Space saving observations provide cleanup routines in AX 2012 to help reduce the
 
 ## Download the report script
 
-To download the **Upgrade analysis** report script (UpgradeAnalysisReport.SQL), go to [Upgrade Analysis Report](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/AX2012DataUpgrade/UpgradeAnalysisReport.SQL).
+To download the **Upgrade analysis** report script (UpgradeAnalysisReport.SQL), go to [Upgrade Analysis Report](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Administration/AX2012DataUpgrade/UpgradeAnalysisReport.SQL).
 
 ## Run the report script
 

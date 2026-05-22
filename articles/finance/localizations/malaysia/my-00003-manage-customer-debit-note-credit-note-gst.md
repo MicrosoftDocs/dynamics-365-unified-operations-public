@@ -4,7 +4,7 @@ description: Learn how to print a Malaysian goods and services tax (GST) invoice
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 05/04/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak    

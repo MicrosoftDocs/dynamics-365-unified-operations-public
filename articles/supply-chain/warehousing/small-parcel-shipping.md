@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 03/10/2026
 ms.custom: 
   - bap-template
 ---
@@ -14,6 +14,7 @@ ms.custom:
 # Small parcel shipping
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 The small parcel shipping (SPS) feature enables Microsoft Dynamics 365 Supply Chain Management to interact directly with shipping carriers by providing a framework for communication through carrier APIs. This functionality is useful when you're shipping individual sales orders via commercial shipping carriers instead of using container shipping or less-than-truckload (LTL) shipping.
 
@@ -33,7 +34,7 @@ Supply Chain Management doesn't include any rate engines. You must obtain or cre
 
 Follow these steps to download and deploy the demo rate engine.
 
-1. On GitHub, download the [dynamic-link library (DLL) for the demo rate engine](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/SCM/SPS).
+1. On GitHub, download the [dynamic-link library (DLL) for the demo rate engine](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/ERP/SCM/SPS).
 
 1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Model Management \> Create Model**.
 
@@ -51,12 +52,12 @@ Follow these steps to download and deploy the demo rate engine.
 
 1. Go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** and create a deployment package for the new model.
 
-1. In Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to LCS.
+1. In Microsoft Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to Lifecycle Services.
 
 1. After the validation completes, go to **Environments \> {Your Environment ID} \> Maintain \> Apply updates**, select the deployable package, and apply.
 
 > [!NOTE]
-> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, contact your LCS administrator for support.
+> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, contact your Lifecycle Services administrator for support.
 
 #### Create and deploy functional rate engines
 

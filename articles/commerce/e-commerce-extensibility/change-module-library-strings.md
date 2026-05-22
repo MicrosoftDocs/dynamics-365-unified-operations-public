@@ -1,11 +1,10 @@
 ---
 title: Change module library static strings
-description: This article describes how to change module library strings in Microsoft Dynamics 365 Commerce.
+description: Learn how to change module library strings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 01/30/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -18,7 +17,7 @@ ms.custom:
 
 This article describes how to change module library strings in Microsoft Dynamics 365 Commerce.
 
-In some cases, modules expose strings that are shown as configurations in a module that can be configured in Commerce site builder. However, other strings, such as the text that is shown for the sign-in button, might be hardcoded as module resource strings. 
+In some cases, modules expose strings as configurations in a module that you can configure in Commerce site builder. However, other strings, such as the text that appears for the sign-in button, might be hardcoded as module resource strings. 
 
 Some additional strings are stored as part of a theme. For more information, see [Change theme module strings](change-theme-module-strings.md).
 
@@ -57,9 +56,9 @@ Make a note of the resource key for the string that you want to change. For exam
 
 ## Override the module library resource string
 
-The next step to change the module library string is to override the module library resource string.
+To change the module library string, override the module library resource string.
 
-Module library resources are stored in the **global.json** file, which you can find under the **\\Msdyn365.Commerce.Online\\node_modules\\\@msdyn365-commerce-modules\\resources\\src\\resources\\modules** online SDK directory. The localized versions are stored in separate, independent files. To confirm the resource string key that you found in the module source code, open the **global.json** file, and search for the key that you're looking for (**signInLinkText** in this example). For each string, you should see an entry that resembles the following example.
+The **global.json** file stores module library resources. You can find this file under the **\\Msdyn365.Commerce.Online\\node_modules\\\@msdyn365-commerce-modules\\resources\\src\\resources\\modules** directory in the online SDK. Localized versions are stored in separate, independent files. To confirm the resource string key that you found in the module source code, open the **global.json** file, and search for the key that you're looking for (**signInLinkText** in this example). For each string, you should see an entry that resembles the following example.
 
 ```json
     "signInLinkText": {
@@ -70,16 +69,16 @@ Module library resources are stored in the **global.json** file, which you can f
 
 To override the string, create a new directory under the **\\Msdyn365.Commerce.Online\\src** directory, and name it **resources**. Under that directory, create a subdirectory that is named **modules**. Then, add a new, empty **global.json** file to the **modules** directory (for example,  **...\\Msdyn365.Commerce.Online\\src\\resources\\modules\\global.json**).
 
-Next, add a new string entry to the new **global.json** file, and prepend the **@msdyn365-commerce-modules** namespace to the key name, as shown in the following example (where the resource string key is **signInLinkText**, and the new string is "Log in").
+Next, add a new string entry to the new **global.json** file, and prepend the **@msdyn365-commerce-modules** namespace to the key name, as shown in the following example (where the resource string key is **signInLinkText**, and the new string is "Sign in").
 
 ```json
     "@msdyn365-commerce-modules.signInLinkText": { 
-        "comment": "Log-in Link text",
-        "value": "Log in"
+        "comment": "Sign-in link text",
+        "value": "Sign in"
     }
 ```
 
-After the package has been built and deployed, the new string will override the default module library string.
+After you build and deploy the package, the new string overrides the default module library string.
 
 ## Additional resources
 

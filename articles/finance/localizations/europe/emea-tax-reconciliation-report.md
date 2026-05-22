@@ -6,21 +6,19 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Iceland, Norway
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2017-06-30
 ---
 
 # Tax reconciliation report for Iceland and Norway
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.
+This article describes how to generate the tax reconciliation report for Icelandic and Norwegian legal entities.
 
-In Microsoft Dynamics 365 Finance, to generate the tax reconciliation report from a legal entity that has a primary address in Iceland or Norway, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Tax reconciliation report**. Then specify the parameters of the report.
+In Microsoft Dynamics 365 Finance, to generate the tax reconciliation report from a legal entity that has a primary address in Iceland or Norway, go to **Tax** > **Inquiries and reports** > **Sales tax reports** > **Tax reconciliation report**. Then specify the parameters of the report.
 
 | Parameter name | Description |
 |----------------|-------------|
@@ -29,11 +27,13 @@ In Microsoft Dynamics 365 Finance, to generate the tax reconciliation report fro
 | **From date**, **To date** | Define the period for which to reconcile data that's posted in General ledger and Tax. |
 | **Show details** | Select this checkbox to include voucher details on the report. |
 | **Print sales tax codes** | Select this checkbox to include sales tax code details on the report. |
-| **Sort order sales tax codes** | Select this checkbox to sort data by sales tax code. If the checkbox is cleared, the data on the report is sorted by main account. Select the **Print sales tax codes** checkbox together with the **Sort order sales tax codes** checkbox. |
+| **Sort order sales tax codes** | Select this checkbox to sort data by sales tax code. If you clear the checkbox, the data on the report is sorted by main account. Select the **Print sales tax codes** checkbox together with the **Sort order sales tax codes** checkbox. |
 
 Use the **Records to include** FastTab to define additional criteria for filtering data on the report. For example, you can filter by **Sales tax code** value.
 
 Use the **Run in the background** FastTab to define batch-specific parameters and run the report in batch mode.
 
 > [!NOTE]
-> We recommend that you enable the **Performance improvement of the Tax reconciliation report** feature in the **Feature management** workspace. This feature is available in the **Feature management** workspace as of Finance version 10.0.33. You can check for specific build information by using Issue search in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/).
+> Enable the **Performance improvement of the Tax reconciliation report** feature in the **Feature management** workspace. This feature is available in the **Feature management** workspace as of Finance version 10.0.33. You can check for specific build information by using Issue search in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

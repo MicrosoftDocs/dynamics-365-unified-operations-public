@@ -1,17 +1,15 @@
 ---
 title: Add module configuration fields
-description: This article describes how to add module configuration fields in Microsoft Dynamics 365 Commerce.
+description: Learn how to add module configuration fields in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 12/08/2023
+ms.date: 01/30/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Add module configuration fields
 
@@ -19,15 +17,15 @@ ms.assetid:
 
 This article describes how to add module configuration fields in Microsoft Dynamics 365 Commerce.
 
-Configuration fields can be added to a module to expose them to page authors and give them control of various module features. Examples of these features include different views, alignment properties, Boolean switches to turn features on or off, module titles or headings, rich text descriptions, call-to-action links, image URLs, and Commerce product data.
+You add configuration fields to a module to expose them to page authors and give them control of various module features. Examples of these features include different views, alignment properties, Boolean switches to turn features on or off, module titles or headings, rich text descriptions, call-to-action links, image URLs, and Commerce product data.
 
 The following illustration shows how configuration fields for a selected module appear in Commerce site builder.
 
-![Module configuration fields in the authoring tools.](media/module-config-fields.png)
+:::image type="content" source="media/module-config-fields.png" alt-text="Screenshot of module configuration fields in Commerce site builder.":::
 
 ## Add new module configuration fields
 
-To add configuration fields, you add an entry in the **config** section of the module definition file, **MODULE\_NAME.definition.json**.
+To add configuration fields, add an entry in the **config** section of the module definition file, **MODULE\_NAME.definition.json**.
 
 ### Example
 
@@ -94,18 +92,18 @@ In the following example of a module definition file, an **imageAlignment** conf
 
 ## Module configuration schema
 
-The **config** section of the module definition file contains a list of all the module's configuration fields to be exposed in the authoring tools.
+The **config** section of the module definition file contains a list of the module's configuration fields to expose in the authoring tools.
 
-* **configuration name** – The local name that is used to access the configuration values from your React source code. This name is case-insensitive.
-* **"friendlyName"** – The friendly name that is shown as the configuration name in the authoring tools.
-* **"description"** – The description that is shown as the configuration description in the authoring tools.
+* **configuration name** – The local name that you use to access the configuration values from your React source code. This name is case-insensitive.
+* **"friendlyName"** – The friendly name that appears as the configuration name in the authoring tools.
+* **"description"** – The description that appears as the configuration description in the authoring tools.
 * **"type"** – The type of the configuration. The possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"css"**, **"video"**, and **"array"**.
-* **"enum"** – For an enumerator type, the value must be set to **"string"**.
-* **"default"** – The default value that is set if no value is set in the authoring tools.
-* **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"siteOnly"**. If the value is set to **"siteOnly"**, the module configuration doesn't appear on a page and can't be configured there. It can be viewed and configured only at the site level in site builder, at **Site settings \> Extensions**. In this way, the value can be set one time for the entire site. If you don't set this field, the default value is **"module"**.
-* **"group"** – Groups are used to organize the configurations into organized groups in the authoring tools.
-* **"required"** – A Boolean flag that specifies whether a property must be set on the module. If the value is set to **true**, the authoring tools show an error if the required property isn't set, and an error appears when the module is rendered.
-* **"resources"** – This field is used for localization resources.
+* **"enum"** – For an enumerator type, set the value to **"string"**.
+* **"default"** – The default value to set if no value is set in the authoring tools.
+* **"scope"** – Scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"siteOnly"**. If you set the value to **"siteOnly"**, the module configuration doesn't appear on a page and can't be configured there. You can view and configure it only at the site level in site builder, at **Site settings \> Extensions**. Set the value one time for the entire site. If you don't set this field, the default value is **"module"**.
+* **"group"** – Organize the configurations into groups in the authoring tools.
+* **"required"** – A Boolean flag that specifies whether a property must be set on the module. If the value is **true**, the authoring tools show an error if the required property isn't set, and an error appears when the module is rendered.
+* **"resources"** – Use this field for localization resources.
 * **"definitions"** - This field can contain complex config type definitions, which can be referenced in the config sections as extended types.
 
 The following example shows how the various supported data types are used.
@@ -245,15 +243,15 @@ The following example shows how the various supported data types are used.
 
 ### css configuration type
 
-The configuration type of module configuration properties can also be declared as **"type": "css"**. Module configuration properties declared as the **css** type must specify a set of string enums of the classes that can be applied to a module. Only one of the enum options can be selected for a given module configuration property. When an enum option is selected, the selected class is appended to the list of classes that is passed down to the module in the format *propertyName\_\_propertyValue* via the **this.props.config.className** property. Properties declared **css** configuration types can't be accessed directly from the **this.props.config** property, because they're merged into the **this.props.config.className** property. 
+Declare the configuration type of module configuration properties as **"type": "css"**. Module configuration properties declared as the **css** type must specify a set of string enums of the classes that you can apply to a module. Only one of the enum options can be selected for a given module configuration property. When you select an enum option, the selected class is appended to the list of classes that is passed down to the module in the format *propertyName\_\_propertyValue* via the **this.props.config.className** property. You can't access properties declared **css** configuration types directly from the **this.props.config** property, because they're merged into the **this.props.config.className** property. 
 
 ### className property
 
-Every content module includes a built-in **className** configuration field. This configuration field can be accessed inside the module's view via the **this.props.config.className** property, and appears in the site authoring tools. Page authors can add a string of space-separated Cascading Style Sheets (CSS) class names that should be appended to the module root class.
+Every content module includes a built-in **className** configuration field. Access this configuration field inside the module's view via the **this.props.config.className** property. It appears in the site authoring tools. Page authors can add a string of space-separated Cascading Style Sheets (CSS) class names that should be appended to the module root class.
 
 ### \_\_cssClassName\_\_ property
 
-**\_\_cssClassName\_\_** is another special property that is declared inside a module definition file. It provides a way for the module creator to specify a nonauthorable, noneditable, read-only **className** property that is always applied to the module. Its **editable** property must be set to **false**, and a default value must be specified. 
+**\_\_cssClassName\_\_** is a special property that you declare inside a module definition file. It provides a way for the module creator to specify a nonauthorable, noneditable, read-only **className** property that always applies to the module. Set its **editable** property to **false** and specify a default value. 
 
 In the following example, the module creator gives this field a default value of **hero** so that every instance of this module always has the **hero** class as part of the **this.props.config.className** property. 
 
@@ -271,7 +269,7 @@ In the following example, the module creator gives this field a default value of
 
 ### Use mock data in configuration fields for local testing 
 
-The following example shows how to set a mock value for a new configuration field in the **mocks/MODULE\_NAME.json** file. Mock data is useful when a module is rendered in a local development environment.
+The following example shows how to set a mock value for a new configuration field in the **mocks/MODULE\_NAME.json** file. Use mock data when rendering a module in a local development environment.
 
 ```json
 {
@@ -299,7 +297,7 @@ The following example shows how to set a mock value for a new configuration fiel
 
 To access configuration fields in the React component, use the **props.config** application programming interface (API).
 
-The following example creates a **props** property that has configuration values that are sent to the module view file to render the appropriate HTML.
+The following example creates a **props** property that has configuration values that the module view file uses to render the appropriate HTML.
 
 ```typescript
 import * as React from 'react';
@@ -349,7 +347,7 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
 export default ProductFeature;
 ```
 
-The following example shows the corresponding module view file that handles the HTML layout by using the configuration values that are passed in from the preceding React component.
+The following example shows the corresponding module view file that handles the HTML layout by using the configuration values that the preceding React component passes in.
 
 ```typescript
 import * as React from 'react';
@@ -400,23 +398,23 @@ export default (props: IProductFeatureViewProps) => {
 
 ## Additional resources
 
-[Create a new module](create-new-module.md)
+- [Create a new module](create-new-module.md)
 
-[Clone a module library module](clone-starter-module.md)
+- [Clone a module library module](clone-starter-module.md)
 
-[Preview and debug a module](test-module.md)
+- [Preview and debug a module](test-module.md)
 
-[Test modules by using module mocks](test-module-mock.md)
+- [Test modules by using module mocks](test-module-mock.md)
 
-[Test modules by using page mocks](test-page-mock.md)
+- [Test modules by using page mocks](test-page-mock.md)
 
-[Container modules](container-modules.md)
+- [Container modules](container-modules.md)
 
-[Create a layout container module](create-layout-container.md)
+- [Create a layout container module](create-layout-container.md)
 
-[Create a page container module](create-page-containers.md)
+- [Create a page container module](create-page-containers.md)
 
-[Localize a module](localize-module.md)
+- [Localize a module](localize-module.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

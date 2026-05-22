@@ -4,7 +4,7 @@ description: Learn how to set up an exchange rate provider in Microsoft Dynamics
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 09/25/2018
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
@@ -25,6 +25,7 @@ By following the steps that are described in this article, you can create a func
 To request an OANDA test account and receive information about the OANDA exchange rate service, go to <https://developer.oanda.com/exchange-rates-api/>.
 
 ## Terminology
+
 - **Import currency exchange rates** – The process that retrieves exchange rates from exchange rate providers and imports them. This process is a system operation that supports batch processing.
 - **Exchange rate provider** – An X++ or C# class that is responsible for retrieving exchange rates from external sources.
 - **Exchange rate provider registration** – The process of enabling an exchange rate provider so that it can be used. By default, exchange rate providers aren't registered when they are deployed.
@@ -33,9 +34,10 @@ To request an OANDA test account and receive information about the OANDA exchang
 - **The framework** – The import currency exchange rates framework that coordinates the retrieval of exchange rates from providers and appropriate storage of those exchange rates.
 
 ## Conceptual/class model
+
 The following illustration shows the main interfaces and classes that make up the exchange rate provider framework, and the relationships among them. New exchange rate providers should be implemented from the **IExchangeRateProvider** interface. Exchange rate providers are written in X++ or C#. Because X++ is a .NET language, you can easily use the Microsoft .NET Framework. All providers that are written in C# must be wrapped by an X++ class to be recognized as C# providers. For example, the Central Bank of Europe exchange rate provider is a provider that Microsoft wrote in C#. It's wrapped by the **ExchangeRateProviderCBOE** X++ class.
 
-[![Conceptual/class model of the exchange rate provider framework.](./media/exchangerates.png)](./media/exchangerates.png)
+:::image type="content" source="./media/exchangerates.png" alt-text="Screenshot of the conceptual/class model of the exchange rate provider framework.":::
 
 Here are the interfaces and classes that are shown in the illustration:
 
@@ -52,10 +54,11 @@ Here are the interfaces and classes that are shown in the illustration:
 - **ExchangeRateProviderOanda** – This example of an exchange rate provider that is implemented by Microsoft connects to the OANDA service to return exchange rates.
 
 ## Write an exchange rate provider
+
 Follow these steps to create an exchange rate provider. The code examples are taken from the **ExchangeRateProviderOanda** class.
 
 1. Use extensions to add a new value to the **ExchangeRateProvider** extensible enum to represent your new exchange rate provider.
-2. In your development model, create a class that implements the **IExchangeRateProvider** interface.
+1. In your development model, create a class that implements the **IExchangeRateProvider** interface.
 
     ```xpp
     using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
@@ -72,7 +75,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     }
     ```
 
-3. Add the following constants and variable declarations to the class. Provide your own unique globally unique identifier (GUID) for **ProviderId**.
+1. Add the following constants and variable declarations to the class. Provide your own unique globally unique identifier (GUID) for **ProviderId**.
 
     ```xpp
     private const ExchangeRateProviderPropertyKey ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
@@ -98,7 +101,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     IExchangeRateProviderFrameworkFactory factory;
     ```
 
-4. Implement the **get\_Name** method. You should use a label to enable correct translation. When users set up the provider's configuration information, they can change the name that is provided here.
+1. Implement the **get\_Name** method. You should use a label to enable correct translation. When users set up the provider's configuration information, they can change the name that is provided here.
 
     ```xpp
     public ExchangeRateProviderName get_Name()
@@ -107,7 +110,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     }
     ```
 
-5. Implement the **get\_Id** method. This method returns a GUID that uniquely identifies this provider.
+1. Implement the **get\_Id** method. This method returns a GUID that uniquely identifies this provider.
 
     ```xpp
     public ExchangeRateProviderId get_Id()
@@ -116,7 +119,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     }
     ```
 
-6. Implement the **set\_Factory** method. The exchange rate provider framework will invoke this method to set an object that implements the **IExchangeRateProviderFrameworkFactory** interface on your provider. This factory can be used to instantiate new objects that represent some of the interfaces from the previous illustration.
+1. Implement the **set\_Factory** method. The exchange rate provider framework will invoke this method to set an object that implements the **IExchangeRateProviderFrameworkFactory** interface on your provider. This factory can be used to instantiate new objects that represent some of the interfaces from the previous illustration.
 
     ```xpp
     public void set_Factory(IExchangeRateProviderFrameworkFactory _factory)
@@ -125,7 +128,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     }
     ```
 
-7. Implement the **GetSupportedOptions** method. This method indicates whether the exchange rate provider supports some framework features.
+1. Implement the **GetSupportedOptions** method. This method indicates whether the exchange rate provider supports some framework features.
 
    - Set the **doesSupportSpecificCurrencyPairs** property to **true** only if the exchange rate service requires that a source currency and a destination currency be passed to get an exchange rate. Many exchange rate services return rates for a fixed currency or a given set of currency pairs. For these services, this property should be set to **false**. If the prices that a service charges are based on quotas on the number of rates, a value of **true** will cause the **IExchangeRateRequest** interface to contain only those currency pairs that are configured for an exchange rate type on the **Exchange rate** page (**General ledger** &gt; **Currencies** &gt; **Exchange rates**). The provider can then specifically request these rates from the service and therefore lower the cost.
    - Set the **fixedBaseIsoCurrency** property to the three-character International Organization for Standardization (ISO) currency code that represents the fixed base currency of the exchange rates that are returned from the exchange rate service. If the exchange rate service doesn't support a fixed base currency, return an empty string. For example, the euro is often used as a fixed base currency. When you create a new provider, be sure to research the exchange rate service so that you can select the correct value.
@@ -143,7 +146,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
      return options;
      ```
 
-8. Implement the **GetConfigurationDefaults** method. Configuration defaults are name-value pairs that represent the default configuration settings for the exchange rate provider. These settings are automatically loaded when the provider is registered, but users can change them. Take the necessary precautions when you convert these strings into usable values. The value field is stored as an encrypted field in SQL. Therefore, sensitive data such as an application programming interface (API) key will be more secure.
+1. Implement the **GetConfigurationDefaults** method. Configuration defaults are name-value pairs that represent the default configuration settings for the exchange rate provider. These settings are automatically loaded when the provider is registered, but users can change them. Take the necessary precautions when you convert these strings into usable values. The value field is stored as an encrypted field in SQL. Therefore, sensitive data such as an application programming interface (API) key will be more secure.
 
     ```xpp
     public IExchangeRateProviderConfigDefaults GetConfigurationDefaults()
@@ -157,7 +160,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     }
     ```
 
-9. Implement the **ValidateConfigurationDetail** method. This method enables the exchange rate provider to validate the configuration information that the user modifies on the **Configure exchange rate providers** page.
+1. Implement the **ValidateConfigurationDetail** method. This method enables the exchange rate provider to validate the configuration information that the user modifies on the **Configure exchange rate providers** page.
 
     ```xpp
     public boolean ValidateConfigurationDetail(ExchangeRateProviderPropertyKey _key, ExchangeRateProviderPropertyValue _value)
@@ -188,7 +191,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     }
     ```
 
-10. Implement the **EnumNameForLookup** method. This method enables the exchange rate provider to enable a lookup for a specific **ExchangeRateProviderPropertyKey** key. Just return the name of an existing enumerated type for the appropriate key. If this feature isn't required, return an empty string.
+1. Implement the **EnumNameForLookup** method. This method enables the exchange rate provider to enable a lookup for a specific **ExchangeRateProviderPropertyKey** key. Just return the name of an existing enumerated type for the appropriate key. If this feature isn't required, return an empty string.
 
     ```xpp
     public str EnumNameForLookup(ExchangeRateProviderPropertyKey _key)
@@ -201,7 +204,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     }
     ```
 
-11. Implement the **GetExchangeRates** method. This method uses the configuration information and the **IExchangeRateRequest** interface that is provided to call out to the exchange rate service and return the appropriate instance of the **IExchangeRateResponse** class. When you write this method, consider these important points:
+1. Implement the **GetExchangeRates** method. This method uses the configuration information and the **IExchangeRateRequest** interface that is provided to call out to the exchange rate service and return the appropriate instance of the **IExchangeRateResponse** class. When you write this method, consider these important points:
 
     - Any configuration information that is required should be retrieved from the **IExchangeRateProviderConfig** interface. A call to the **GetPropertyValue** method on that interface will provide the string representation of the property value for the property key that is provided. Take the required precautions when you convert this string value to another type.
     - Do any required validation up front. For example, OANDA requires that an API key be supplied on every service call. If this API key isn't set, the service will fail. Verify that if the API key isn't set then, throw the appropriate error message to exit prior to importing rates.
@@ -344,7 +347,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
         return response;
     ```
 
-12. Implement the following helper methods. These methods are specific to this example and aren't required for every provider.
+1. Implement the following helper methods. These methods are specific to this example and aren't required for every provider.
 
     ```xpp
     private str getQuoteTypeParameterForURL(IExchangeRateProviderConfig _config)
@@ -454,7 +457,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     }
     ```
 
-13. Compile the **ExchangeRateProviderOanda** class. The provider will be run as part of a SysOperation. It's helpful to understand the following framework classes and methods when you debug issues:
+1. Compile the **ExchangeRateProviderOanda** class. The provider will be run as part of a SysOperation. It's helpful to understand the following framework classes and methods when you debug issues:
 
     - **ExchangeRateProviderFactory.initialize()** – This method creates instances of the exchange rate providers, and is called when exchange rates are registered or imported. If your provider isn't instantiated, start to debug here.
     - **ExchangeRateProviderRegistration.initialize()** – This method searches for providers, so that they can be registered. If you can't see your provider on the registration page, start to debug here.
@@ -462,12 +465,11 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     - **ExchangeRateProviderConfig** – This class provides access to configuration information for the providers.
 
 ## Ideas to consider
+
 Because there are no limits to the methods that exchange rate providers use to get exchange rates, the framework enables some interesting scenarios. Here are some ideas that you might want to explore:
 
 - **Providers that retrieve exchange rates from other exchange rate types** – If you implement this scenario, it will enable synchronization of exchange rates among various exchange rate types. This functionality can be useful in situations where many exchange rate types exist, because it will help maintain isolation between different ledgers.
 - **Providers that use Extensible Stylesheet Language Transformations (XSLT) to transform any format for an exchange rate service into an instance of the ExchangeRateResponse class** – If you implement this scenario, users can add the XSLT transform that is required for their exchange rate service, and the application will support the service. Provider-specific code isn't required.
 - **Some exchange rate provider services charge for every rate that is consumed** – Consider combining the first idea in this list with a limit on the number of rates that you retrieve from the service. This functionality can be useful for scenarios where you're charged for each rate that is consumed from the service.
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

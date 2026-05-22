@@ -4,7 +4,7 @@ description: Learn about how the APIs of the Electronic reporting (ER) framework
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 03/18/2022
+ms.date: 03/12/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -16,15 +16,15 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.25.
+This article describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework are changed in Microsoft Dynamics 365 Finance version 10.0.25.
 
-## API to enable a model mapping to be run in batch mode
+## API to enable a model mapping to run in batch mode
 
 The [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) API of the ER framework lets you run an ER [model mapping](er-overview-components.md#model-mapping-component) for data import in interactive mode. To specify an ER [format](er-overview-components.md#format-component) for inbound file parsing and an ER model mapping for application data update, this API uses the format name and the integration point.
 
 The new `ERIModelMappingDestinationWithVirtualSourceRun` public interface of the ER framework lets you run an ER model mapping in batch mode for data import of an inbound file. To provide the file, you can either manually select it in the ER user interface (UI) or provide it programmatically.
 
-The code of the `ERModelMappingDestinationRun` class shows how you can use the new API to include the **Run in the background** tab in the dialog box so that data import can be run in batch mode.
+The code of the `ERModelMappingDestinationRun` class shows how you can use the new API to include the **Run in the background** tab in the dialog box so that data import can run in batch mode.
 
 ```xpp
 private ERModelMappingDestinationRunController getControllerInternal()
@@ -57,6 +57,6 @@ private ERModelMappingDestinationRunController getControllerInternal()
     }
 ```
 
-To learn more about this interface, complete the examples in [Import data from manually selected files in batch mode](er-configure-data-import-batch.md).
+To learn more about this interface, see the examples in [Import data from manually selected files in batch mode](er-configure-data-import-batch.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

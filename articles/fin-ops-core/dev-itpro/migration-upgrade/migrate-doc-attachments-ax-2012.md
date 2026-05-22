@@ -4,7 +4,7 @@ description: Learn about how to migrate document attachments from Microsoft Dyna
 author: ttreen
 ms.author: ttreen
 ms.topic: upgrade-and-migration-article
-ms.date: 04/26/2022
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -39,7 +39,7 @@ Attachments that are already set up to be stored in the **DocuValue** table in t
 
 ### Option 2: Migrate attachments from a file share location
 
-Attachments that are stored in a file share in the Dynamics AX 2012 environment must be migrated to the Dynamics AX 2012 database. For more information, see [Move Documents from Shared Location to Database](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/AX2012DataUpgrade/MoveDocumentsToDatabase).
+Attachments that are stored in a file share in the Dynamics AX 2012 environment must be migrated to the Dynamics AX 2012 database. For more information, see [Move Documents from Shared Location to Database](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Administration/AX2012DataUpgrade/MoveDocumentsToDatabase).
 
 ## Post-upgrade steps
 

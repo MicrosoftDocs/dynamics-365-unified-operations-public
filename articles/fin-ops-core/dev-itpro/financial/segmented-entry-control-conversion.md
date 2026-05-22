@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
 ms.search.region: Global
@@ -22,17 +22,18 @@ This tutorial walks you through two migration scenarios for the Segmented Entry 
 
 ## Simple migration scenario – SMAServiceOrderTable form
 
-1.  Search for the **SMAServiceOrderTable** form in Application Explorer.
-2.  Add the form to the current project.
-3.  Open the form in the form design view and the code editor view.
-4.  In the form design view, find the Segmented Entry control (SEC), either by manually walking the control tree or by searching for “SegmentedEntry” in the search bar below the **File** tab.
-5.  Select the SEC, and verify the following information:
-    -   The type for the control, as specified in parenthesis next to the control, is **SegmentedEntryControl**.
-    -   The **Controller class** property is set to **DimensionDynamicAccountController**. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.
+1. Search for the **SMAServiceOrderTable** form in Application Explorer.
+1. Add the form to the current project.
+1. Open the form in the form design view and the code editor view.
+1. In the form design view, find the Segmented Entry control (SEC), either by manually walking the control tree or by searching for “SegmentedEntry” in the search bar below the **File** tab.
+1. Select the SEC, and verify the following information:
 
-6.  Switch to the code editor view, and search for all occurrences of “TODO: (Code Upgrade) \[Segmented entry control\]” in the form source code.
-7.  In the search results, ignore the first result, which points to the controller variable declaration. You must fix this TODO last, after you've removed all references to the controller variable.
-8.  Go through each of the remaining TODO comments, as described in the following subsections.
+   - The type for the control, as specified in parenthesis next to the control, is **SegmentedEntryControl**.
+   - The **Controller class** property is set to **DimensionDynamicAccountController**. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.
+
+1. Switch to the code editor view, and search for all occurrences of “TODO: (Code Upgrade) \[Segmented entry control\]” in the form source code.
+1. In the search results, ignore the first result, which points to the controller variable declaration. You must fix this TODO last, after you've removed all references to the controller variable.
+1. Go through each of the remaining TODO comments, as described in the following subsections.
 
 ### LedgerDimension data field
 
@@ -203,31 +204,28 @@ DimensionDynamicAccountController dimDynamicAccountController;
 The **dimDynamicAccountController** variable is no longer used on the form. Therefore, you can now delete it.
 
 ## Complex migration scenario – LedgerJournalTransDaily form
-1.  Search for the **LedgerJournalTransDaily** form in Application Explorer.
-2.  Add the form to the current project.
-3.  Open the form in the form design view and the code editor view.
-4.  In the form design view, find the SEC, either by manually walking the control tree or by searching for “SegmentedEntry” in the search bar below the **File** tab.
-5.  Select the SEC, and verify the following information:
-    -   The type for the control, as specified in parenthesis next to the control, is **SegmentedEntryControl**.
-    -   The **Controller class** property is set to **DimensionDynamicAccountController**. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.
 
-6.  Switch to the code editor view, and search for all occurrences of “TODO: (Code Upgrade) \[Segmented entry control\]” in the form source code.
-7.  In the search results, the first three results are for the controller variable declarations. Look at the comments that accompany the TODOs, and make a note of the mapping that shows which SEC instance uses which controller instance. You will need this mapping when you replace method calls on the controller with method calls on the control. Here is what the controller-to-control mapping looks like:
-    1.  dimAccountController
-        1.  LedgerJournalTrans\_AccountNum
-        2.  LedgerJournalTrans\_AccountNum1
-        3.  Group4\_AccountNum
-
-    2.  dimOffsetAccountController
-        1.  GridOffsetAccount
-        2.  LedgerJournalTrans\_OffsetAccount1
-        3.  Group4\_OffsetAccount
-
-    3.  dimPaymentFeeAccountController
-        1.  CustPaymJournalFee\_CustAccount
-
-    You will fix these three TODO comments at the end, after you've removed all references to the controller variables.
-8.  Go through each of the remaining TODO comments, as described in the following subsections.
+1. Search for the **LedgerJournalTransDaily** form in Application Explorer.
+1. Add the form to the current project.
+1. Open the form in the form design view and the code editor view.
+1. In the form design view, find the SEC, either by manually walking the control tree or by searching for “SegmentedEntry” in the search bar below the **File** tab.
+1. Select the SEC, and verify the following information:
+   - The type for the control, as specified in parenthesis next to the control, is **SegmentedEntryControl**.
+   - The **Controller class** property is set to **DimensionDynamicAccountController**. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.
+1. Switch to the code editor view, and search for all occurrences of “TODO: (Code Upgrade) \[Segmented entry control\]” in the form source code.
+1. In the search results, the first three results are for the controller variable declarations. Look at the comments that accompany the TODOs, and make a note of the mapping that shows which SEC instance uses which controller instance. You will need this mapping when you replace method calls on the controller with method calls on the control. Here is what the controller-to-control mapping looks like:
+   1. dimAccountController
+      1. LedgerJournalTrans\_AccountNum
+      1. LedgerJournalTrans\_AccountNum1
+      1. Group4\_AccountNum
+   1. dimOffsetAccountController
+      1. GridOffsetAccount
+      1. LedgerJournalTrans\_OffsetAccount1
+      1. Group4\_OffsetAccount
+   1. dimPaymentFeeAccountController
+      1. CustPaymJournalFee\_CustAccount
+      You will fix these three TODO comments at the end, after you've removed all references to the controller variables.
+1. Go through each of the remaining TODO comments, as described in the following subsections.
 
 ### LedgerDimension data field
 
@@ -324,7 +322,7 @@ public void loadSegments()
 
 ##### Dynamics AX for Operations
 
-1.  Update the **initLedger()** method.
+1. Update the **initLedger()** method.
 
     ```xpp
     void initLedger()
@@ -341,7 +339,7 @@ public void loadSegments()
     . . .
     ```
 
-2.  Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
+2. Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
 
     ```xpp
     . . .
@@ -365,7 +363,7 @@ public void loadSegments()
     return ret;
     ```
 
-3.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **CurrencyCode** field.
+3. Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **CurrencyCode** field.
 
     ```xpp
     LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
@@ -373,7 +371,7 @@ public void loadSegments()
     Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
     ```
 
-4.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **Company** field.
+4. Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **Company** field.
 
     ```xpp
     LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
@@ -381,7 +379,7 @@ public void loadSegments()
     Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
     ```
 
-5.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
+5. Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
 
     ```xpp
     LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
@@ -389,7 +387,7 @@ public void loadSegments()
     Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
     ```
 
-6.  Delete the **loadSegments()** method.
+6. Delete the **loadSegments()** method.
 
 #### Step 3
 
@@ -449,7 +447,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
 
 ##### Dynamics AX for Operations
 
-1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
+1. Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
     ```xpp
     /// <summary>
@@ -480,7 +478,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     }
     ```
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2. Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 5
 
@@ -529,7 +527,7 @@ void gotFocus()
 
 ##### Dynamics AX for Operations
 
-1.  Add the following code to the **initLedger()** method, after the code that updates the ledgerJournalTable buffer.
+1. Add the following code to the **initLedger()** method, after the code that updates the ledgerJournalTable buffer.
 
     ```xpp
     . . .
@@ -551,7 +549,7 @@ void gotFocus()
     . . .
     ```
 
-2.  Delete the **gotFocus()** method.
+2. Delete the **gotFocus()** method.
 
 #### Step 2
 
@@ -609,7 +607,7 @@ public void loadSegments()
 
 ##### Dynamics AX for Operations
 
-1.  Update the **initLedger()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
+1. Update the **initLedger()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
 
     ```xpp
     void initLedger()
@@ -640,7 +638,7 @@ public void loadSegments()
     . . .
     ```
 
-2.  Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
+2. Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
 
     ```xpp
     . . .
@@ -670,7 +668,7 @@ public void loadSegments()
     return ret;
     ```
 
-3.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **CurrencyCode** field.
+3. Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **CurrencyCode** field.
 
     ```xpp
     GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
@@ -678,7 +676,7 @@ public void loadSegments()
     Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
     ```
 
-4.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetCompany** field.
+4. Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetCompany** field.
 
     ```xpp
     GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
@@ -686,7 +684,7 @@ public void loadSegments()
     Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
     ```
 
-5.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
+5. Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
 
     ```xpp
     GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
@@ -694,7 +692,7 @@ public void loadSegments()
     Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
     ```
 
-6.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method cause an invalid function call.
+6. Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method cause an invalid function call.
 
     ```xpp
     if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
@@ -713,7 +711,7 @@ public void loadSegments()
     }
     ```
 
-7.  Delete the **loadSegments()** method.
+7. Delete the **loadSegments()** method.
 
 #### Step 4
 
@@ -769,7 +767,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
 
 ##### Dynamics AX for Operations
 
-1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
+1. Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
     ```xpp
     /// <summary>
@@ -784,7 +782,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     }
     ```
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2. Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 6
 
@@ -897,7 +895,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
 
 ##### Dynamics AX for Operations
 
-1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
+1. Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
     ```xpp
     /// <summary>
@@ -912,7 +910,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     }
     ```
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all of those calls. Alternatively, you can add a new method that follows this guidance.
+2. Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all of those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 5
 
@@ -995,7 +993,7 @@ public void loadSegments()
 
 The migration steps for the **GridOffsetAccount.loadSegments()** method already made most of the changes that are required for this method. However, you must still make the following changes.
 
-1.  Add a line of code to the **LedgerJournalTrans** data source’s **active** method.
+1. Add a line of code to the **LedgerJournalTrans** data source’s **active** method.
 
     ```xpp
     if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
@@ -1016,7 +1014,7 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
     }
     ```
 
-2.  Make the same change in the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field.
+2. Make the same change in the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field.
 
     ```xpp
     if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
@@ -1036,7 +1034,7 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
     }
     ```
 
-3.  Make the same change in the **initLedger()** method.
+3. Make the same change in the **initLedger()** method.
 
     ```xpp
     if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
@@ -1056,7 +1054,7 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
     }
     ```
 
-4.  Delete the **loadSegments()** method.
+4. Delete the **loadSegments()** method.
 
 #### Step 3
 
@@ -1113,7 +1111,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
 
 ##### Dynamics AX for Operations
 
-1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
+1. Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
     ```xpp
     /// <summary>
@@ -1128,7 +1126,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     }
     ```
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2. Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 5
 
@@ -1192,7 +1190,7 @@ public void loadSegments()
 
 ##### Dynamics AX for Operations
 
-1.  Update the **initLedger()** method.
+1. Update the **initLedger()** method.
 
     ```xpp
     ledgerJournalTable = element.args().record();
@@ -1202,31 +1200,31 @@ public void loadSegments()
     . . .
     ```
 
-2.  Add the following code to the **CustVendPaymJournalFee** data source’s **active()** method. **Note:** The method doesn't exist, so you must override it.
+2. Add the following code to the **CustVendPaymJournalFee** data source’s **active()** method. **Note:** The method doesn't exist, so you must override it.
 
     ```xpp
     CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
     ```
 
-3.  Add the following code to the **modified()** method of the **CustVendPaymJournalFee** data source’s **FeeCurrency** field. **Note:** The method doesn't exist, so you must override it.
+3. Add the following code to the **modified()** method of the **CustVendPaymJournalFee** data source’s **FeeCurrency** field. **Note:** The method doesn't exist, so you must override it.
 
     ```xpp
     CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
     ```
 
-4.  Add the following code to the **LedgerJournalTrans** data source’s **active()** method.
+4. Add the following code to the **LedgerJournalTrans** data source’s **active()** method.
 
     ```xpp
     CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
     ```
 
-5.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
+5. Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
 
     ```xpp
     CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
     ```
 
-6.  Delete the **loadSegments()** method.
+6. Delete the **loadSegments()** method.
 
 #### Step 3
 
@@ -1305,7 +1303,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
 
 ##### Dynamics AX for Operations
 
-1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
+1. Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
     ```xpp
     /// <summary>
@@ -1320,7 +1318,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     }
     ```
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that can follow this guidance.
+2. Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that can follow this guidance.
 
 #### Step 5
 
@@ -1434,7 +1432,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
 
 ##### Dynamics AX for Operations
 
-1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
+1. Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
     ```xpp
     /// <summary>
@@ -1452,7 +1450,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     }
     ```
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2. Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 5
 
@@ -1501,7 +1499,7 @@ void gotFocus()
 
 ##### Dynamics AX for Operations
 
-1.  Update the code in the **initLedger()** method, after the code that updates the ledgerJournalTable buffer.
+1. Update the code in the **initLedger()** method, after the code that updates the ledgerJournalTable buffer.
 
     ```xpp
     . . .
@@ -1517,7 +1515,7 @@ void gotFocus()
     . . .
     ```
 
-2.  Delete the **gotFocus()** method.
+2. Delete the **gotFocus()** method.
 
 #### Step 2
 
@@ -1577,7 +1575,7 @@ public void loadSegments()
 
 The migration steps for the **GridOffsetAccount.loadSegments()** method already made most of the changes that are required for this method. However, you must still make the following changes.
 
-1.  Update the code in the **LedgerJournalTrans** data source’s **active** method.
+1. Update the code in the **LedgerJournalTrans** data source’s **active** method.
 
     ```xpp
     if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
@@ -1598,7 +1596,7 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
     }
     ```
 
-2.  Make the same change in the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field.
+2. Make the same change in the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field.
 
     ```xpp
     if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
@@ -1618,7 +1616,7 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
     }
     ```
 
-3.  Make the same change in the **initLedger()** method.
+3. Make the same change in the **initLedger()** method.
 
     ```xpp
     if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
@@ -1638,7 +1636,7 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
     }
     ```
 
-4.  Delete the **loadSegments()** method.
+4. Delete the **loadSegments()** method.
 
 #### Step 4
 
@@ -1677,7 +1675,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
 
 ##### Dynamics AX for Operations
 
-1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
+1. Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
     ```xpp
     /// <summary>
@@ -1692,7 +1690,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     }
     ```
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2. Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 6
 
@@ -1724,9 +1722,5 @@ Because this method only calls the **validate()** method on the control and does
 [Parm methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

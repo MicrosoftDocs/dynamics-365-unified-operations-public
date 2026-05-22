@@ -1,12 +1,11 @@
 ---
 title: Analyze sales trends and patterns
-description: You can study sales trends and patterns in real time in Dynamics 365 Commerce.
+description: Learn how to study sales trends and patterns in real time in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 07/30/2024
+ms.date: 01/14/2026
 ms.topic: how-to
 ms.search.form: RetailChannelReport, SysReportViewerForm, RetailStoreManagementWorkspace
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
 ms.author: asharchw
@@ -18,7 +17,7 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-You can study sales trends and patterns in real time in Dynamics 365 Commerce.
+This article explains how to study sales trends and patterns in real time in Microsoft Dynamics 365 Commerce.
 
 As part of Commerce, users can study sales trends and patterns in real time across different levels of the organization hierarchy over a period of years by using the out-of-box **Channel sales by year** report. You can open this report from any of the following locations:
 

@@ -4,7 +4,7 @@ description: Learn about the delete and doDelete methods in the X++ language, in
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 06/16/2020
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,17 +16,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-You can use SQL statements, either interactively or in source code, to delete one or more rows from tables that are stored in the database.
+Use SQL statements, either interactively or in source code, to delete one or more rows from tables that are stored in the database.
 
-+ **[delete method](#delete-method)** – Delete one row at a time.
-+ **[doDelete method](#do-delete-method)** – Delete one row at a time.
-+ **[delete\_from statement](#delete-from-statement)** – Delete multiple rows at the same time. By using the **delete\_from** statement, you reduce communication between the application and the database. Therefore, you help increase performance. In some situations, this set-based operation can fall back to a record-by-record operation. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
+- **[delete method](#delete-method)** – Delete one row at a time.
+- **[doDelete method](#do-delete-method)** – Delete one row at a time.
+- **[delete\_from statement](#delete-from-statement)** – Delete multiple rows at the same time. By using the **delete\_from** statement, you reduce communication between the application and the database. Therefore, you help increase performance. In some situations, this set-based operation can fall back to a record-by-record operation. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
-## <a id="delete-method"></a>delete method
+## <a id="delete-method"></a>Delete method
 
-The **delete** method deletes the current record from the database. To use this method, use a **where** clause to specify the rows to delete. One record at a time is then removed from the specified table.
+The **delete** method deletes the current record from the database. Use a **where** clause to specify the rows to delete. The method removes one record at a time from the specified table.
 
-The **delete** method can be overridden. For example, you might want to add extra validation before records are deleted. If you override the **delete** method, you can run the original (base) version of the **delete** method by calling the **doDelete** method. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
+You can override the **delete** method. For example, you might want to add extra validation before records are deleted. If you override the **delete** method, you can run the original (base) version of the **delete** method by calling the **doDelete** method. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
 
 In the following example, all records in the NameValuePair table that satisfy the **where** clause (that is, all records where the value of the **Name** field equals **Name1**) are deleted from the database. One record is deleted at a time.
 
@@ -70,14 +70,14 @@ ttsCommit;
 
 ## <a id="do-delete-method"></a>doDelete method
 
-Like the **delete** table method, the **doDelete** table method deletes the current record from the database. Use the **doDelete** method if the **delete** table method has been overridden, and you want to run the original (base) version of that method instead of the overridden version. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
+Like the **delete** table method, the **doDelete** table method deletes the current record from the database. Use the **doDelete** method if the **delete** table method is overridden, and you want to run the original (base) version of that method instead of the overridden version. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
 
 > [!WARNING]
-> A call to **doDelete** skips all logic, including database event handlers (for example, **onDeleting** and **onDeleted**), chain-of-command **onDelete()**, and the **delete()** call itself. It's generally considered bad practice to use **doDelete**, and we don't recommend that you use it.
+> A call to **doDelete** skips all logic, including database event handlers (for example, **onDeleting** and **onDeleted**), chain-of-command **onDelete()**, and the **delete()** call itself. It's generally considered bad practice to use **doDelete**, and don't use it.
 
 ## <a id="delete-from-statement"></a>delete\_from statement
 
-The **delete\_from** operator is a record set–based operator that removes multiple records at the same time. This approach can be more efficient and faster than an approach that uses the **delete** method in a loop to delete one record at a time. If you've overridden the **delete** method, the system interprets the **delete\_from** statement into code that calls the **delete** method one time for each row that is deleted.
+The **delete\_from** operator is a record set–based operator that removes multiple records at the same time. This approach can be more efficient and faster than an approach that uses the **delete** method in a loop to delete one record at a time. If you override the **delete** method, the system interprets the **delete\_from** statement into code that calls the **delete** method one time for each row that is deleted.
 
 The following example deletes all records in the NameValuePair table where the value in the **Name** column is **Name1**.
 

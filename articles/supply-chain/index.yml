@@ -63,7 +63,7 @@ additionalContent:
     - title: Set up
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide?context=/dynamics365/context/supply-chain
-        text: Lifecycle Services (LCS) user guide
+        text: Microsoft Dynamics Lifecycle Services user guide
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding?context=/dynamics365/context/supply-chain
         text: Project onboarding
       - url: /dynamics365/supply-chain/warehousing/get-started-with-setting-up-module
@@ -73,7 +73,7 @@ additionalContent:
     - title: Manage environments
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs?context=/dynamics365/context/ops
-        text: Dynamics 365 Lifecycle Services resources
+        text: Microsoft Dynamics Lifecycle Services resources
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page?context=/dynamics365/context/ops
         text: Continuous delivery
       - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page?context=/dynamics365/context/ops

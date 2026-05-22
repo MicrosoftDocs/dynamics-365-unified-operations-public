@@ -4,7 +4,7 @@ description: Learn about loop statements in X++, including outlines and examples
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 06/17/2019
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -19,7 +19,7 @@ ms.devlang: xpp
 
 This article describes loop statements in X++. 
 
-There are three loop statements: **for**, **while**, and **do**...**while**. A loop repeats its statement until the condition that is set for the loop is **false**. Within the loop statements, you can use **break** and **continue** statements.
+There are three loop statements: **for**, **while**, and **do**...**while**. A loop repeats its statement until the condition that you set for the loop is **false**. Within the loop statements, you can use **break** and **continue** statements.
 
 ## for loops
 
@@ -29,7 +29,7 @@ The syntax of a **for** loop is:
 
 The **for** loop repeatedly executes **statement** for as long as the conditional expression *test* is **true**. *statement* can be a block of statements. The body of the **for** loop (*statement*) might be executed zero or more times, depending on the results of *test*. 
 
-A **for** loop differs from other loops because an initial value can be assigned to a control variable, and because there is a statement for incrementing or decrementing the variable. These additions make a **for** loop especially useful for traversing lists, containers, and arrays because they have a fixed number of elements. 
+A **for** loop differs from other loops because you can assign an initial value to a control variable, and because there's a statement for incrementing or decrementing the variable. These additions make a **for** loop especially useful for traversing lists, containers, and arrays because they have a fixed number of elements.
 
 You can also apply a statement to each element and increment your way through the elements, setting the condition to test for the last element.
 
@@ -52,7 +52,7 @@ The syntax of a **while** loop is:
 
 **while (** *expression* **)** *statement*
 
-A **while** loop repeatedly executes *statement* for as long as the conditional *expression* is **true**. *statement* can be replaced by a block of statements. *statement* is executed as many times as the condition is met (zero to many). 
+A **while** loop repeatedly executes *statement* for as long as the conditional *expression* is **true**. You can replace *statement* with a block of statements. The loop executes *statement* as many times as the condition is met (zero to many). 
 
 ### Example of a while loop
 
@@ -104,7 +104,7 @@ The **continue** statement causes execution to move directly to the next iterati
 
 ### Example of a continue statement
 
-In the following code example, if `Iarray[i] <= 0`, the remaining statements in the loop are not executed, and `i` is incremented before the **if** statement is tried again.
+In the following code example, if `Iarray[i] <= 0`, the loop doesn't execute the remaining statements. The loop increments `i` before it tries the **if** statement again.
 
 ```xpp
 int Iarray[100];
@@ -123,11 +123,11 @@ for (int i = 0; i < 100; i++)
 
 ## break statement
 
-The **break** statement within a loop is used to terminate that loop. Execution then moves to the first statement after the loop.
+Use the **break** statement within a loop to terminate that loop. Execution then moves to the first statement after the loop.
 
 ### Example of a break statement
 
-This example uses a **break** statement within a **while** loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for **do... while** and **for** loops as well. 
+This example uses a **break** statement within a **while** loop. When used within a loop, the **break** statement terminates the loop and execution continues from the statement following the loop. This behavior works for **do... while** and **for** loops as well. 
 
 ```xpp
 var mainMenu = SysDictMenu::newMainMenu();

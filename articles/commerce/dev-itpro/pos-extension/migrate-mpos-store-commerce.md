@@ -1,15 +1,15 @@
 ---
 title: Migrate Modern POS to Store Commerce
-description: This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
+description: Learn how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 08/22/2023
-ms.topic: upgrade-and-migration-article
-audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.date: 02/25/2026
+ms.topic: how-to
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-05-24
-
+ms.custom: 
+  - bap-template
 ---
 
 # Migrate Modern POS to Store Commerce
@@ -21,14 +21,14 @@ This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern
 The [Store Commerce app](../store-commerce.md) replaces Modern point of sale (MPOS) as the POS application for Dynamics 365 Commerce. The Store Commerce app shares complete feature parity with MPOS, including integrated hardware support and offline mode. The Store Commerce app also offers improved performance, and better deployment and management options. For more information about the benefits of Store Commerce, see [Store Commerce app](../store-commerce.md). 
 
 > [!IMPORTANT]
-> - Microsoft will deprecate MPOS in October 2023, and recommends that you use the Store Commerce app or Store Commerce for web (CPOS) for all new deployments. Existing customers should plan to migrate from MPOS to Store Commerce before October 2023.
-> - If you are deploying the [Retail hybrid apps](../hybridapp.md) for Android and/or iOS, those apps will also be deprecated in favor of the Store Commerce apps for iOS and Android. For more information, see [Store Commerce app for mobile platforms](../store-commerce-mobile.md).
+> - Microsoft deprecated MPOS in October 2023. Use the Store Commerce app or Store Commerce for web (CPOS) for all new deployments.
+> - If you're deploying the [Retail hybrid apps](../hybridapp.md) for Android and/or iOS, those apps are also deprecated in favor of the Store Commerce apps for iOS and Android. For more information, see [Store Commerce app for mobile platforms](../store-commerce-mobile.md).
 
 ## Setup and configuration differences between MPOS and Store Commerce
 
 | Features | Store Commerce | MPOS |
 | ------ | ------ |------ |
-| System requirements | Windows 11 (Pro, Enterprise, Enterprise LTSC, and IOT Enterprise), Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC) with the latest available updates, Windows Server 2022 (Standard, Essentials) and Windows Server 2019 (Standard, Essentials) with the latest available updates. | Windows 11 (Pro, Enterprise and Enterprise LTSC), Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise) with the latest available updates, or Windows Server 2019. |
+| System requirements | Windows 11 (Pro, Enterprise, Enterprise LTSC, and IOT Enterprise), Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC) with the latest available updates, Windows Server 2022 (Standard, Essentials), and Windows Server 2019 (Standard, Essentials) with the latest available updates. | Windows 11 (Pro, Enterprise and Enterprise LTSC), Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise) with the latest available updates, or Windows Server 2019. |
 | Offline | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. |
 | Local or Dedicated HWS support | Yes | Yes |
 | Device setup in Dynamics 365 Commerce headquarters | On the **Devices** page in Commerce headquarters, use the application as Store Commerce. | On the **Devices** page in Commerce headquarters, use the application as Retail Modern POS. |
@@ -58,3 +58,5 @@ You can perform silent installation and servicing updates for the Store Commerce
 ## Migrate extensions
 
 For information about how to migrate extensions, see [Migrate a POS extension to the independent packaging model](migrate-pos-extension.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

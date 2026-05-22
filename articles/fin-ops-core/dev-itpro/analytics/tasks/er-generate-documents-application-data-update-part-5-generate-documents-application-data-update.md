@@ -1,8 +1,8 @@
 ---
 title: Generate documents that have application data
-description: To complete the steps in this procedure, you must first complete the procedure, ""ER Generate documents with application data update (Part 4 - Modify format)"".
+description: Learn how to generate electronic documents with application data updates using Electronic Reporting (ER) configurations.
 author: kfend
-ms.date: 06/19/2017
+ms.date: 02/25/2026
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -11,62 +11,63 @@ ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Generate documents that have application data
 
 [!include [banner](../../includes/banner.md)]
 
-To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 4: Modify format)".
-
-
+To complete the steps in this procedure, you must first complete the procedure, [Modify formats to generate documents that have application data](er-generate-documents-application-data-update-part-4-modify-format.md).
 
 The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data. In this procedure, you execute the ER format configuration to generate the Intrastat report and update application data for archiving details of the reporting process.
 
-
-
-This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset. Before you begin, make sure that the country/region context for the DEMF company is BEL (Belgium).
+This procedure is created for users with the assigned role of system administrator or electronic reporting developer. You can complete these steps by using the DEMF dataset. Before you begin, make sure that the country/region context for the DEMF company is BEL (Belgium).
 
 
 ## Set up foreign trade parameters
-1. Go to Tax > Setup > Foreign trade > Foreign trade parameters.
-2. Click the Number sequences tab.
 
-    Archiving details of Intrastat reporting process, we need to identify records of each archive we created. A special number sequence must be configured for that.  
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+1. Select the **Number sequences** tab.
 
-3. Select the 'Intrastat archive ID' reference.
-4. In the Number sequence code field, type a value.
+    To archive details of the Intrastat reporting process, you need to identify records of each archive. You must configure a special number sequence for this process.  
 
-    In the 'Number sequence code' field, enter or select the value 'Fore_2'.  
+1. Select the **Intrastat archive ID** reference.
+1. In the **Number sequence code** field, type a value.
 
-5. ResolveChanges the Number sequence code.
-6. Click Save.
-7. Close the page.
+    In the **Number sequence code** field, enter or select the value **Fore_2**.  
+
+1. Resolve changes to the Number sequence code.
+1. Select **Save**.
+1. Close the page.
 
 ## Run modified ER format
-1. Go to Organization administration > Electronic reporting > Configurations.
-2. In the tree, expand 'Intrastat (model)'.
-3. In the tree, select 'Intrastat (model)\Intrastat (format)'.
-4. Click Run.
-5. In the Enter file name field, type 'intrastat2.xml'.
-6. Click OK.
 
-## Review ER format execution's results
+1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
+1. In the tree, expand **Intrastat (model)**.
+1. In the tree, select **Intrastat (model)\Intrastat (format)**.
+1. Select **Run**.
+1. In the **Enter file name** field, type **intrastat2.xml**.
+1. Select **OK**.
+
+## Review ER format execution results
+
 Review the generated XML file.  
+
 1. Close the page.
-2. Go to Tax > Declarations > Foreign trade > Intrastat.
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 
-    Open this form containing Intrastat transactions that have been included to the generated electronic document.  
+    Open this form containing the Intrastat transactions included in the generated electronic document.    
 
-3. Click Intrastat archive.
+1. Select **Intrastat archive**.
 
-    Since the executed ER format contains now settings for application data update, the details of the completed Intrastat reporting have been archived. In this form, you can see the header record of the created archive.  
+    Since the executed ER format now contains settings for application data update, the details of the completed Intrastat reporting are archived. In this form, you can see the header record of the created archive.  
 
-4. Click Details.
+1. Select **Details**.
 
     In this form, you can see the details for the created archive.  
 
-5. Close the page.
-6. Close the page.
-7. Close the page.
+1. Close the page.
+1. Close the page.
+1. Close the page.
 
 
 

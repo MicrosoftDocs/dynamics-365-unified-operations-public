@@ -6,13 +6,15 @@ ms.author: jchrist
 ms.topic: faq
 ms.custom: 
   - bap-template
-ms.date: 1/23/2025
+ms.date: 03/12/2026
 ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 ---
 
 # Workflow history summary: Transparency FAQ
+
+[!include [banner](../includes/banner.md)]
 
 This article answers some frequently asked questions about the Workflow history summary feature in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 

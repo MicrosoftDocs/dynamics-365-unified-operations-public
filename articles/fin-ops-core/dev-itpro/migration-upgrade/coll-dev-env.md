@@ -4,7 +4,7 @@ description: Learn about how to change the database collation for development en
 author: ttreen
 ms.author: ttreen
 ms.topic: how-to
-ms.date: 08/03/2023
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global

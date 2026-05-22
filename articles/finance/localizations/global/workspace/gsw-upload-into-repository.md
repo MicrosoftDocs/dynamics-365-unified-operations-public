@@ -4,7 +4,7 @@ description: Learn how to create a Microsoft Dataverse solution by using the Upl
 author: filatovm
 ms.author: filatovm
 ms.topic: how-to 
-ms.date: 07/02/2024
+ms.date: 03/19/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -14,25 +14,25 @@ ms.reviewer: johnmichalak
 
 [!INCLUDE[banner](../../../includes/banner.md)]
 
-Starting from version 10.0.40, instead of manually creating a Dataverse solution as described in [Upload ER configurations and Globalization features as a Dataverse solution](gsw-upload-er-config.md), you can now use the Upload into repository functionality to upload one or all of your custom Electronic reporting (ER) configurations and Globalization features.
+Starting with version 10.0.40, instead of manually creating a Dataverse solution as described in [Upload ER configurations and Globalization features as a Dataverse solution](gsw-upload-er-config.md), you can use the **Upload into repository** functionality to upload one or all of your custom Electronic reporting (ER) configurations and Globalization features.
 
-To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment and add a security role to access tables in Dataverse by following these steps:
+To use this functionality, you need a Dataverse environment that's connected to your Dynamics 365 Finance environment. You also need to add a security role to access tables in Dataverse by following these steps:
 
 1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
-2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for the **Organization** to the following tables: **Solution, Publisher, Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
-3. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles). 
+1. In that security role, add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for the **Organization** to the following tables: **Solution, Publisher, Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
+1. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles). 
 
-The process of creating a Dataverse solution by using Upload into repository has three phases:
+The process of creating a Dataverse solution by using **Upload into repository** has three phases:
 
 1. Create a Dataverse configuration repository.
-2. Export configurations to Dataverse.
-3. View configurations as a Dataverse solution.
+1. Export configurations to Dataverse.
+1. View configurations as a Dataverse solution.
 
 The following sections describe each phase.
 
 ## Create a Dataverse configuration repository
 
-You should create a Dataverse configuration repository for your active configuration provider.
+Create a Dataverse configuration repository for your active configuration provider.
 
 To create a Dataverse configuration repository, follow these steps:
 
@@ -42,7 +42,7 @@ To create a Dataverse configuration repository, follow these steps:
     - Electronic reporting functional consultant
     - System administrator
 
-1. Go to **Organization administration** \> **Workspaces** \> **Globalization studio**.
+1. Go to **Organization administration** > **Workspaces** > **Globalization studio**.
 1. In the **Configuration providers** section, select the tile that has your provider (for example, Contoso).
 1. On the **Contoso** tile, select **Repositories**.
 1. Select **Add**.
@@ -64,7 +64,7 @@ To export configurations to Dataverse, follow these steps:
 
 ## View configurations as a Dataverse solution
 
-If you set the **Automatically create solution** option to **Yes** when you created a Dataverse repository for your configuration provider, after you upload your configurations, a new solution appears in the Power Apps maker portal.
+If you set the **Automatically create solution** option to **Yes** when you create a Dataverse repository for your configuration provider, after you upload your configurations, a new solution appears in the Power Apps maker portal.
 
 When you upload additional configuration versions, the system adds the new configuration versions to the same solution as the files.
 

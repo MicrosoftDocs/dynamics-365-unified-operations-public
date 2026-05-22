@@ -1,17 +1,16 @@
 ---
 title: Commerce runtime (CRT) extensibility and triggers
-description: This article explains trigger support for the Microsoft Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
+description: Learn about trigger support for the Microsoft Dynamics 365 commerce runtime (CRT).
 author: josaw1
-ms.date: 11/14/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
+ms.date: 02/13/2026
+ms.topic: how-to
 ms.author: josaw
+ms.reviewer: v-griffinc
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: 2d6ec331-b266-4dbc-97c5-db2919b662dc
-ms.search.industry: Retail
+ms.custom: 
+  - bap-template
 ---
 
 # Commerce runtime (CRT) extensibility and triggers
@@ -22,21 +21,21 @@ This article explains trigger support for the Dynamics 365 commerce runtime (CRT
 
 ## CRT trigger overview
 
-Commerce runtime (CRT) triggers give you a way to extend the CRT workflow, and let you add business logic before and after every CRT request is executed. The following two methods are used:
+Commerce runtime (CRT) triggers give you a way to extend the CRT workflow. You can add business logic before and after every CRT request. Use the following two methods:
 
--   **OnExecuting** – This method is invoked before a request has been processed by a corresponding **IRequestHandler** implementation.
--   **OnExecuted** – This method is invoked after the request has been processed by a corresponding **IRequestHandler** implementation.
+-   **OnExecuting** – Invokes this method before a request is processed by a corresponding **IRequestHandler** implementation.
+-   **OnExecuted** – Invokes this method after a request is processed by a corresponding **IRequestHandler** implementation.
 
 > [!NOTE]
-> If you extend a CRT request that is used by a high-volume API (for example, Carts/AddCartLines or Products/GetByIds), and your extension needs to read from the channel database, Microsoft recommends that you enable the cache for the database reading. Otherwise, the extension will consume too much Retail Server and channel database resources, which can cause overall Commerce Scale Unit (CSU) performance issues that impact your business.
+> If you extend a CRT request that's used by a high-volume API (for example, Carts/AddCartLines or Products/GetByIds), and your extension needs to read from the channel database, enable the cache for the database reading. Otherwise, the extension consumes too many Retail Server and channel database resources, which can cause overall Commerce Scale Unit (CSU) performance issues that affect your business.
 
 ## CRT trigger extension
-To implement a trigger, you must complete these tasks, as shown in the code example that follows:
+To implement a trigger, complete these tasks, as shown in the following code example:
 
-1.  Implement **IRequestTriggerAsync**.
-2.  Specify **SupportedRequestTypes** to define the request types that the trigger must be executed for.
-3.  Write a trigger implementation in the **OnExecuting** method if business logic must be run before the request is addressed.
-4.  Write a trigger implementation in the **OnExecuted** method if business logic must be run after the request is addressed.
+1. Implement **IRequestTriggerAsync**.
+1. Specify **SupportedRequestTypes** to define the request types that the trigger must execute for.
+1. Write a trigger implementation in the **OnExecuting** method if business logic must run before the request.
+1. Write a trigger implementation in the **OnExecuted** method if business logic must run after the request.
 
 ### Sample trigger implementation for Get customer data request:
 
@@ -89,17 +88,16 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
 
 ### Register the extension
 
-Copy and paste the extension library to **...\RetailServer\webroot\bin\ext folder** and update the **commerceRuntime.ext.config** file with the custom extension library information under composition section. In this example, **Contoso.Commerce.Runtime.Services** is the  custom extension name.
+Copy and paste the extension library to the **...\RetailServer\webroot\bin\ext folder**. Update the **commerceRuntime.ext.config** file with the custom extension library information under the composition section. In this example, **Contoso.Commerce.Runtime.Services** is the custom extension name.
 
 ```xml
 <add source="assembly" value="Contoso.Commerce.Runtime.Services" />
 ```
 
-For the CRT extension to work in offline mode, update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section. Then copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.
+For the CRT extension to work in offline mode, update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section. Then, copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.
 
 ### Debugging CRT
 
 To debug CRT from POS, attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server. For offline mode, attach the CRT extension project to the dllhost.exe process.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

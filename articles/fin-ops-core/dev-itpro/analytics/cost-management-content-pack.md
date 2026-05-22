@@ -2,11 +2,11 @@
 title: Cost management Power BI content
 description: Learn about what is included in the Cost management Power BI content, including learning about how to report pages that are included in the Power BI content.
 author: prasungoel
-ms.author: prasungoel
+ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 ms.topic: how-to
-ms.date: 03/17/2025
+ms.date: 03/05/2026
 ms.search.region: Global
 ms.custom: 
   - bap-template

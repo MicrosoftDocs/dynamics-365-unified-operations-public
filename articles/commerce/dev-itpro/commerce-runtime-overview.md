@@ -1,48 +1,49 @@
 ---
 title: Commerce runtime (CRT) architecture and configuration
-description: This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce Runtime (CRT).
+description: This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce runtime (CRT).
 author: ShalabhjainMSFT
-ms.date: 05/28/2024
+ms.date: 02/13/2026
 ms.topic: overview
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-02-28
 ms.collection: get-started
 ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
+ms.custom: 
+  - bap-template
 ---
 
 # Commerce runtime (CRT) architecture and configuration
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
+This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
 
-## Commerce Runtime architecture
+## Commerce runtime architecture
 
-The following diagram shows the components of the Microsoft Dynamics 365 Commerce Runtime (CRT). 
+The following diagram shows the components of the Microsoft Dynamics 365 Commerce runtime (CRT). 
 
-[![Commerce Runtime components.](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
+:::image type="content" source="./media/crt-architecture.jpg" alt-text="Diagram of Commerce runtime components architecture." lightbox="./media/crt-architecture.jpg":::
 
 ### Data access
 
-On top of the database is a data access layer. In the data access layer, raw data is translated into objects in memory. For example, an object might be a product. Products have attributes, such as price and color. The data access layer has functions that you can use to manipulate the objects. Stored procedures pass packets of data from the database to data entities that can be used in services and workflows. You can update the packets of data to include new fields that you add in Commerce.
+A data access layer sits on top of the database. In the data access layer, raw data is translated into objects in memory. For example, an object might be a product. Products have attributes, such as price and color. The data access layer has functions that you can use to manipulate the objects. Stored procedures pass packets of data from the database to data entities that services and workflows can use. You can update the packets of data to include new fields that you add in Commerce.
 
 ### Services
 
-On top of the data access layer is a services layer. Services query for real-time data. You can use these services to customize existing functionality, or you can add your own services that include new functionality.
+A services layer sits on top of the data access layer. Services query for real-time data. You can use these services to customize existing functionality, or you can add your own services that include new functionality.
 
 ### Workflows
 
-On top of the services layer is the workflow layer. A workflow is a collection of services and business logic that, together, define business processes. For example, when a customer adds an item to the cart, you can use a workflow to get the price, perform validation, check the inventory quantity, calculate shipping charges, calculate tax, and calculate discounts. You can use the workflows that are included in Commerce, or you can create new workflows. You can even use a workflow to connect to a third-party system as part of your business processes.
+A workflow layer sits on top of the services layer. A workflow is a collection of services and business logic that, together, define business processes. For example, when a customer adds an item to the cart, you can use a workflow to get the price, perform validation, check the inventory quantity, calculate shipping charges, calculate tax, and calculate discounts. You can use the workflows that are included in Commerce, or you can create new workflows. You can even use a workflow to connect to a partner system as part of your business processes.
 
 ### API
 
-On top of the workflow layer is the application programming interface (API) layer. You can use the API for tasks such as getting information about items, calculating prices, calculating shipping charges, and placing orders. You can extend the API to fit your business processes.
+An application programming interface (API) layer sits on top of the workflow layer. You can use the API for tasks such as getting information about items, calculating prices, calculating shipping charges, and placing orders. You can extend the API to fit your business processes.
 
-## Commerce Runtime configuration
+## Commerce runtime configuration
 
-Services are enumerated as types in the CRT configuration file. You can add types in the CRT configuration file to control which services are loaded in the CRT. Services are loaded in the order in which they are listed in the configuration file. All the default services are loaded automatically. However, if you add a new service above one of the default services, the new service replaces the default service.
+The CRT configuration file lists services as types. Add types to the CRT configuration file to control which services the CRT loads. The CRT loads services in the order they appear in the configuration file. The CRT automatically loads all the default services. However, if you add a new service above one of the default services, the new service replaces the default service.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

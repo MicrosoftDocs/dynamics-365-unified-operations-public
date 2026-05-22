@@ -2,7 +2,7 @@
 title: Set up a B2C tenant in Commerce
 description: Learn how to set up your Microsoft Entra business-to-consumer (B2C) tenants for user site authentication in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 12/23/2025
+ms.date: 02/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -19,18 +19,18 @@ ms.custom:
 This article explains how to set up your Microsoft Entra business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 
 > [!NOTE]
-> For Commerce tenants created with the Dynamics 365 Commerce version 10.0.46 general availability (GA) release or later versions, Microsoft Entra ID (formerly Azure AD) business-to-consumer (B2C) integration for Commerce e-commerce site authentication isn't enabled by default. If you need to use Microsoft Entra ID B2C (for example, to continue using an existing Azure AD B2C tenant), submit a Microsoft Support request for explicit enablement.
+> For Commerce tenants created by using the Dynamics 365 Commerce version 10.0.46 general availability (GA) release or later versions, Microsoft Entra ID (formerly Azure AD) business-to-consumer (B2C) integration for Commerce e-commerce site authentication isn't enabled by default. If you need to use Microsoft Entra ID B2C (for example, to continue using an existing Azure AD B2C tenant), submit a Microsoft Support request for explicit enablement.
 
-Dynamics 365 Commerce uses Microsoft Entra B2C to support user credential and authentication flows. A user can sign up, sign in, and reset their password through these flows. Microsoft Entra B2C stores sensitive user authentication information, such as username and password. The user record in the B2C tenant stores either a B2C local account record or a B2C social identity provider record. These B2C records link back to the customer record in the Commerce environment.
+Dynamics 365 Commerce uses Microsoft Entra B2C to support user credential and authentication flows. A user can register, sign in, and reset their password through these flows. Microsoft Entra B2C stores sensitive user authentication information, such as username and password. The user record in the B2C tenant stores either a B2C local account record or a B2C social identity provider record. These B2C records link back to the customer record in the Commerce environment.
 
 > [!WARNING] 
-> Microsoft Entra ID B2C will retire old (legacy) user flows by August 1, 2021. Therefore, you should plan to migrate your user flows to the new recommended version. The new version provides feature parity and new features. The module library for Commerce version 10.0.15 or higher should be used with the recommended B2C user flows. For more information, see [User flows in Microsoft Entra ID B2C](/azure/active-directory-b2c/user-flow-overview).
+> Microsoft Entra ID B2C retires old (legacy) user flows by August 1, 2021. Migrate your user flows to the new recommended version. The new version provides feature parity and new features. Use the module library for Commerce version 10.0.15 or higher with the recommended B2C user flows. For more information, see [User flows in Microsoft Entra ID B2C](/azure/active-directory-b2c/user-flow-overview).
  
  > [!NOTE]
- > Commerce evaluation environments come with a preloaded Microsoft Entra B2C tenant for demonstration purposes. Loading your own Microsoft Entra B2C tenant using the following steps isn't required for evaluation environments.
+ > Commerce evaluation environments include a preloaded Microsoft Entra B2C tenant for demonstration purposes. You don't need to load your own Microsoft Entra B2C tenant by using the following steps for evaluation environments.
 
 > [!TIP]
-> You can further protect your site users and enhance the security of your Microsoft Entra B2C tenants with Microsoft Entra Identity Protection and Conditional Access. To review the capabilities available to Microsoft Entra B2C Premium P1 and Premium P2 tenants, see [Identity Protection and Conditional Access for Microsoft Entra ID B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+> You can further protect your site users and enhance the security of your Microsoft Entra B2C tenants by using Microsoft Entra Identity Protection and Conditional Access. To review the capabilities available to Microsoft Entra B2C Premium P1 and Premium P2 tenants, see [Identity Protection and Conditional Access for Microsoft Entra ID B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
 
 ## Dynamics environment prerequisites
 
@@ -45,12 +45,12 @@ Before you begin, ensure that your Dynamics 365 Commerce environment and e-comme
     1. For the **612** "Customer add" operation, change **AllowAnonymousAccess** to "1."
     1. Run the **1090 (Registers)** job.
 - Set the number sequence customer account **Manual** attribute to **No** in Commerce headquarters:
-    1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Accounts receivable parameters**.
+    1. Go to **Retail and Commerce > Headquarters setup > Parameters > Accounts receivable parameters**.
     1. Select **Number sequences**.
     1. In the **Customer account** row, double-click the **Number Sequence Code** value.
     1. On the **General** FastTab of the number sequence, set **Manual** to **No**.
 
-After deployment of your Dynamics 365 Commerce environment, it also is recommended to [Initialize seed data](../enable-configure-retail-functionality.md) in the environment.
+After deployment of your Dynamics 365 Commerce environment, it's also recommended to [Initialize seed data](../enable-configure-retail-functionality.md) in the environment.
 
 ## Next steps
 
@@ -71,6 +71,5 @@ To continue the process of setting up a B2C tenant in Commerce, proceed to [Crea
 [Configure your B2C tenant in Commerce site builder](config-b2c-tenant-site-builder.md)
 
 [Additional B2C information](additional-b2c-info.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

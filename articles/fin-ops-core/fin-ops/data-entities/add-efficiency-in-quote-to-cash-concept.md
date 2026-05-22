@@ -4,7 +4,7 @@ description: Learn about how the improved quote-to-cash system works and how it 
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 06/10/2024
+ms.date: 03/10/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

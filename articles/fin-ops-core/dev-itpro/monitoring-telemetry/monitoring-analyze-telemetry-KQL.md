@@ -5,7 +5,7 @@ author: kennysaelen
 ms.topic: how-to
 ms.custom: bap-template
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/20/2025
+ms.date: 01/22/2026
 ms.author: kesaelen
 ms.reviewer: johnmichalak
 
@@ -45,7 +45,7 @@ You can use Kusto queries as the data source in many places. Here are some examp
 
 ## Where can I learn more about KQL?
 
-KQL is very well documented. You can learn more about it in [Kusto Query Language (KQL) overview](/kusto/query/?view=microsoft-fabric).
+KQL is very well documented. You can learn more about it in [Kusto Query Language (KQL) overview](/kusto/query/?view=microsoft-fabric&preserve-view=true).
 
 ## Which tools can I use (KQL editors and clients)?
 

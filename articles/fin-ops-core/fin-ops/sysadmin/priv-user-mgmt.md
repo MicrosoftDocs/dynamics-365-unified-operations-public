@@ -4,7 +4,7 @@ description: Learn how you can use privileged user management to control privile
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
-ms.date: 01/25/2025
+ms.date: 03/05/2026
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User

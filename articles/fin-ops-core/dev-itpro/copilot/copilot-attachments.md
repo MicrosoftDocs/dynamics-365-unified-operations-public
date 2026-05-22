@@ -4,7 +4,7 @@ description: Learn how to use file attachments with Copilot for finance and oper
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 10/08/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -25,6 +25,7 @@ The chat experience for Copilot for finance and operations apps lets you attach 
 ## Prerequisites
 
 To use attachments with Copilot for finance and operations apps, make sure these requirements are met:
+
 - Finance and operations apps must be version 10.0.45 or later.
 - Install these solutions in the Microsoft Power Platform environment. If they're not installed, you can learn about installing Dynamics 365 solution packages in Dataverse in [Manage Dynamics 365 apps](/power-platform/admin/manage-apps).
   - The Copilot for finance and operations package includes:

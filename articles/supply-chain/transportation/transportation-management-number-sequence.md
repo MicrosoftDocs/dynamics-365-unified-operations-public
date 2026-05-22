@@ -6,7 +6,7 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: TMSNumberSequence
 ms.topic: how-to
-ms.date: 11/19/2025
+ms.date: 01/26/2026
 ms.custom:
   - bap-template
 ---
@@ -40,5 +40,26 @@ To link a number sequence to a carrier, follow these steps:
 1. Select **Edit**.
 1. On the **Overview** FastTab, select an option in the **Pro number sequence** field.
 1. Close the page.
+
+## Pro number generation mode
+
+The pro number generation mode controls how the system allocates pro numbers.
+
+> [!TIP]
+> If your high-volume processes (such as release to warehouse) run slowly when you're using pro numbers, use the *Performance optimized* pro number generation mode to help improve throughput.
+
+### Prerequisites
+
+You must be running Supply Chain Management version 10.0.47 or higher to use this feature.
+
+### Choose the pro number generation mode
+
+To choose the pro number generation mode, follow these steps:
+
+1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
+1. Open the **General** tab.
+1. On the **Performance settings** FastTab, set **Pro number generation mode** to one of the following values:
+    - *Default* – Generate pro numbers inside the current business transaction (*transaction scoped*). The system keeps the number only if the process finishes successfully. If you cancel, or if an error stops the process, the system puts back the number and reuses it. This option enforces continuous sequencing but can increase locking under high parallel load.
+    - *Performance optimized* – Generate the number on a separate connection (*isolated*). This option reduces locking and improves throughput under high load, but numbers aren't recycled if the business process later fails.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

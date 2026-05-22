@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/05/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -30,7 +30,7 @@ To create sales agreement classifications, follow these steps:
 1. In the **Number sequence code** field, select the code for the number sequence that should be used to number agreements that belong to the agreement classification.
 1. Select **Save**.
 
-![Sales agreement classification page.](../media/1_Sales_agreement_classifications.png)
+:::image type="content" source="../media/1_Sales_agreement_classifications.png" alt-text="Screenshot of the Sales agreement classification page.":::
 
 > [!NOTE]
 > You can't delete an agreement classification that is used for existing agreements.
@@ -42,7 +42,7 @@ To create purchase agreement classifications, follow these steps:
 1. In Dynamics 365 Finance, go to **Procurement and sourcing** \> **Setup** \> **Purchase agreement classification**.
 1. Specify the details as described in the previous section of this article, [Create sales agreement classifications](#create-sales-agreement-classifications).
 
-![Purchase agreement classification page.](../media/2_Purchase_agreement_classifications.png)
+:::image type="content" source="../media/2_Purchase_agreement_classifications.png" alt-text="Screenshot of the Purchase agreement classification page.":::
 
 ## <a name="create-sales-agreement"></a>Create a sales agreement
 
@@ -60,7 +60,7 @@ To create a sales agreement, follow these steps:
 
 1. Select **OK**.
 
-   ![Create sales agreement dialog.](../media/3_Create_sales_agreement.png)
+   :::image type="content" source="../media/3_Create_sales_agreement.png" alt-text="Screenshot of the Create sales agreement dialog.":::
 
 1. On the **Sales agreements** page, on the **Sales agreement header** FastTab, in the **Currency** field, specify the currency for the agreement.
 1. In the **Effective date** field, specify the effective date for the agreement.
@@ -70,14 +70,14 @@ To create a sales agreement, follow these steps:
     > [!NOTE]
     > Transactions can be posted only for agreements that have a status of **Effective**.
 
-    ![Sales agreement header FastTab.](../media/4_Sales_agreements.png)
+    :::image type="content" source="../media/4_Sales_agreements.png" alt-text="Screenshot of the Sales agreement header FastTab.":::
 
 1. Switch to the **Header** view.
 1. On the **General** FastTab, in the **Document** section, in the **Document title** field, specify the title for the agreement.
 1. In the **Date** field, specify the date of the agreement.
 1. In the **Subject of an agreement** section, in the **Subject of an agreement** field, enter a comment or notes about the agreement.
 
-   ![Sales agreement General FastTab.](../media/5_Sales_agreements.png)
+   :::image type="content" source="../media/5_Sales_agreements.png" alt-text="Screenshot of the Sales agreement General FastTab.":::
 
 1. On the **Financial** FastTab, in the **Agreement sum** section, in the **Agreement sum** field, specify the sum of the agreement.
 1. In the **Credit** section, in the **Credit limit** field, specify the credit limit for the agreement. The credit limit is comprehensively checked for all counterparty agreements and for the total counterparty limit.
@@ -93,12 +93,12 @@ To create a sales agreement, follow these steps:
 1. In the **Posting profile** field, if you specify an agreement for transactions, you can select the counterparty posting profile that should be used when transactions are posted.
 1. In the **Posting profile with prepayment journal voucher** field, you can select a separate posting profile that should be used when a prepayment is registered for the agreement. If you don't set this field, a default value is taken from the **Accounts receivable parameters** page.
 
-   ![Sales agreements page.](../media/6_Sales_agreements.png)
+   :::image type="content" source="../media/6_Sales_agreements.png" alt-text="Screenshot of the Sales agreements page.":::
 
 1. On the **Terms** FastTab, in the **Payment** section, set the fields for payment terms. In the **Payment day** field, select a calendar of payment days.
 1. On the **Contact information** FastTab, specify contact information for the agreement.
 
-    ![Sales agreements page Contact Information FastTab.](../media/7_Sales_agreements.png)
+    :::image type="content" source="../media/7_Sales_agreements.png" alt-text="Screenshot of the Sales agreements page Contact Information FastTab.":::
 
 1. On the **Financial dimensions** FastTab, specify financial dimensions. When you specify an agreement in a document, the financial dimensions of the agreement are entered into the document dimension.
 1. Select **Save**.
@@ -111,7 +111,7 @@ To set up a commission, follow these steps:
 1. On the **Sales agreement** tab, in the **Setup** section, select **Commission calculation**.
 1. On the **Commission calculation** page, set up a commission for the selected agreement. Learn more in [Register sales commissions](../../../supply-chain/sales-marketing/tasks/register-sales-commissions.md).
 
-![Commission calculation page.](../media/8_Commission_calculation.png)
+:::image type="content" source="../media/8_Commission_calculation.png" alt-text="Screenshot of the Commission calculation page.":::
 
 ## Create a purchase agreement
 
@@ -129,7 +129,7 @@ To create a purchase agreement, follow these steps:
 
 1. Select **OK**.
 
-    ![Create purchase agreement dialog.](../media/9_Create_purchase_agreement.png)
+    :::image type="content" source="../media/9_Create_purchase_agreement.png" alt-text="Screenshot of the Create purchase agreement dialog.":::
 
 1. On the **Purchase agreements** page, specify the details as described in the [Create a sales agreement](#create-sales-agreement) section earlier in this article.
 

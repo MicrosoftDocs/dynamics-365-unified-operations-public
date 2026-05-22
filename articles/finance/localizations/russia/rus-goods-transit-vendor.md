@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -45,7 +45,7 @@ To set up an inventory profile for a transferable item, follow these steps:
 1. On the **Matching priority** FastTab, select **Up** or **Down** to change the order of the inventory profile.
 1. Select **Save**, and close the page.
 
-  ![Inventory profiles page.](../media/goods-in-transit-vendor-01.png)
+  :::image type="content" source="../media/goods-in-transit-vendor-01.png" alt-text="Screenshot of the Inventory profiles page.":::
  
 ## Set up a number sequence for the Counting act (INV-6) report
 
@@ -71,7 +71,7 @@ To set up an inventory journal name for the Counting act (INV-6) report, follow 
 
 1. Select **Save**, and close the page.
 
-   ![Inventory journal names page.](../media/goods-in-transit-vendor-2.png)
+   :::image type="content" source="../media/goods-in-transit-vendor-2.png" alt-text="Screenshot of the Inventory journal names page.":::
  
 ## Add officials to the Counting act (INV-6) report
 
@@ -89,7 +89,7 @@ To add officials to the Counting act (INV-6) report, follow these steps:
     > [!NOTE]
     > By default, the job title is copied from the selected employee's record.
  
-    ![Officials page.](../media/goods-in-transit-vendor-03.png)
+    :::image type="content" source="../media/goods-in-transit-vendor-03.png" alt-text="Screenshot of the Officials page.":::
  
 1. Select **Save**, and close the page.
 
@@ -107,7 +107,7 @@ To create an inventory tracking dimension group for the Counting act (INV-6) rep
     > [!NOTE]
     > To make the report reflect the details of shipping and payment documents, on the **Batch number** line, select the **Active** and **Physical inventory** checkboxes.
 
-   ![Tracking dimension groups page.](../media/goods-in-transit-vendor-04.png)
+   :::image type="content" source="../media/goods-in-transit-vendor-04.png" alt-text="Screenshot of the Tracking dimension groups page.":::
  
 1. Select **Save**.
 
@@ -125,7 +125,7 @@ To create a purchase agreement, follow these steps:
     - In the **Kind of activity** field, select **Basic**.
     - In the **Inventory profile** field, select the inventory profile that you created earlier.
  
-    ![Purchase agreements page.](../media/goods-in-transit-vendor-05.png)
+    :::image type="content" source="../media/goods-in-transit-vendor-05.png" alt-text="Screenshot of the Purchase agreements page.":::
  
 1. On the Action Pane, on the **Purchase agreement** tab, in the **Generate** group, select **Confirmation** to update the status of the purchase agreement to **Effective**.
 
@@ -140,7 +140,7 @@ To add an inventory owner to the Counting act (INV-6) report, follow these steps
 1. In the **Account** field, select the principal code. The **Name** field is filled in automatically.
 1. In the **Agreement ID** field, select the purchase agreement that you created earlier. In this way, you associate the new owner with the agreement.
 
-    ![Inventory owners page.](../media/goods-in-transit-vendor-06.png)
+    :::image type="content" source="../media/goods-in-transit-vendor-06.png" alt-text="Screenshot of the Inventory owners page.":::
 
 1. Select **Save**.
 
@@ -156,7 +156,7 @@ To register goods and materials that are in transit, follow these steps:
 1. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimension** section, validate that the **Inventory profile** field is set to the inventory profile that you created earlier.
 1. In the **Owner** field, select the record that you created earlier.
 
-    ![Purchase order page page.](../media/goods-in-transit-vendor-07.png)
+    :::image type="content" source="../media/goods-in-transit-vendor-07.png" alt-text="Screenshot of the Purchase order page.":::
 
 1. Post the invoice in the usual way.
 
@@ -175,29 +175,29 @@ To generate a Counting act (INV-6) report, follow these steps:
     > [!NOTE]
     > You can also set the **Batch number** and **Warehouse** options to **Yes**, if those dimensions are applicable.
  
-    ![Dimensions display dialog.](../media/goods-in-transit-vendor-08.png)
+    :::image type="content" source="../media/goods-in-transit-vendor-08.png" alt-text="Screenshot of the Dimensions display dialog.":::
  
 1. Select **OK** to create an inventory counting journal for the items in the transfer.
 1. On the **Counting** page, in the **Journal lines** FastTab, create a line, and select the item number that you created earlier.
 1. On the **Line details** FastTab, on the **Inventory dimensions** tab, in the **Inventory profile** and **Owner** fields, select the records that you created earlier. The **On-hand** field on the journal line is automatically updated.
 1. On the **Journal lines** FastTab, select **Functions** \> **Create counting list** to create a counting list. For each line, the **Counted** field is updated with the value that is specified in the **On-hand** field.
 
-    ![Counting page.](../media/goods-in-transit-vendor-09.png)
+    :::image type="content" source="../media/goods-in-transit-vendor-09.png" alt-text="Screenshot of the Counting page.":::
 
-10.	On the Action Pane, select **Print** \> **Counting act (INV-6)** to open the **Print of counting act (INV-6)** dialog.
-11.	In the **Date of act completion** field, select the date when the counting process is scheduled to be completed.
-12.	In the **Start date** and **End date** fields, select the start and end dates of the inventory counting period.
-13.	In the **Order number** field, enter the order number that you're generating the **Counting act INV-6** report for.
-14.	In the **Resolution date** field, select the transaction date of the order that you're generating the **Counting act INV-6** report for.
+1.	On the Action Pane, select **Print** \> **Counting act (INV-6)** to open the **Print of counting act (INV-6)** dialog.
+1.	In the **Date of act completion** field, select the date when the counting process is scheduled to be completed.
+1.	In the **Start date** and **End date** fields, select the start and end dates of the inventory counting period.
+1.	In the **Order number** field, enter the order number that you're generating the **Counting act INV-6** report for.
+1.	In the **Resolution date** field, select the transaction date of the order that you're generating the **Counting act INV-6** report for.
 
     > [!NOTE]
     > The values in the **Journal**, **Dimension number**, and **Kind of inventory** fields are based on the inventory counting transactions. To change the values of these fields, select **Filter**. For example, you can modify these values to generate the report for a different journal or a different dimension.
 
-    ![Print of counting act (INV-6).](../media/goods-in-transit-vendor-10.png)
+    :::image type="content" source="../media/goods-in-transit-vendor-10.png" alt-text="Screenshot of the Print of counting act (INV-6).":::
  
-15.	Select **OK** to generate the **Counting act (INV-6)** report.
+1.	Select **OK** to generate the **Counting act (INV-6)** report.
 
-    ![Printed Counting act (INV-6) report.](../media/goods-in-transit-vendor-11.png)
+    :::image type="content" source="../media/goods-in-transit-vendor-11.png" alt-text="Screenshot of the printed Counting act (INV-6) report.":::
  
 
 

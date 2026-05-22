@@ -4,7 +4,9 @@ description: Learn how to get information about the standard data entities that 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 09/18/2020
+ms.custom: 
+  - bap-template
+ms.date: 04/03/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -20,19 +22,19 @@ ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
-The application ships with many default data entities. Data entities are frequently updated, so for documentation, we rely on the data entity templates to indicate which order data entities should be imported in, and on reports for a list of data entities that ship with each release.
+The application includes many default data entities. Data entities are frequently updated, so for documentation, rely on the data entity templates to indicate which order data entities should be imported in, and on reports for a list of data entities that ship with each release.
 
 ## Configuration data packages
 
-Configuration data packages on Microsoft Dynamics Lifecycle Services (LCS) contain configuration entity spreadsheets. Configuration entity spreadsheets contain best practice data that you can use to create an initial golden build of an implementation. The data entities in the data packages are also sequenced appropriately using an XML file to help guarantee a successful single-click import of the data. We recommend that you download and review the configuration data packages to understand how we recommend that you order your data imports. For more information, see [Configuration data templates](configuration-data-templates.md) and [Copy configuration data between companies or legal entities overview](copy-configuration.md).
+Configuration data packages on Microsoft Dynamics Lifecycle Services contain configuration entity spreadsheets. Configuration entity spreadsheets contain best practice data that you can use to create an initial golden build of an implementation. An XML file sequences the data entities in the data packages to help guarantee a successful single-click import of the data. Download and review the configuration data packages to understand how to order your data imports. For more information, see [Configuration data templates](configuration-data-templates.md) and [Copy configuration data between companies or legal entities overview](copy-configuration.md).
 
 ## Reports
 
-Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61):
+Microsoft provides the following reports for data entities, which you can download from [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61):
 
 - Aggregate data entities: Lists the aggregate data entities, and the fields that each contains.
 - Aggregate measures: Lists the aggregate measures.
-- Config keys: Lists the configuration keys. 
+- Config keys: Lists the configuration keys.
 - Config key groups: Lists the configuration key groups.
 - Data entities: Lists each data entity. The report indicates the data source of the entity and the fields included in the entity. The report also indicates whether the data entity is public.
 - Data entities fields: Lists each field in a data entity, and the table that it originates from.

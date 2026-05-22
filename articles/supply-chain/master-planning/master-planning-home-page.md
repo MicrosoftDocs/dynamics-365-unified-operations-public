@@ -1,12 +1,12 @@
 ---
 title: Master planning home page
-description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals.
+description: Master planning allows you to determine and balance the future need for raw materials and capacity to meet your goals.
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: overview
-ms.date: 01/31/2025
+ms.date: 03/26/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,41 +15,44 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-At its core, Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. Master planning assesses the following:
+At its core, master planning helps you determine and balance the future need for raw materials and capacity to meet your goals. Master planning assesses the following questions:
 
 - What raw materials and capacities are currently available?
 - What raw materials and capacities are required to complete production? For example, what must be manufactured, purchased, transferred, or set aside as safety stock before you can complete production.
 
-Master planning uses the information to calculate the requirements and generate planned orders.
+Master planning uses this information to calculate the requirements and generate planned orders.
 
 The three main planning processes are:
 
-- **Master planning** - The master plan calculates net requirements. It's based on actual current orders and enables companies to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it's the *Net requirements plan*. Learn more in [Master plans overview](master-plans.md).
+- **Master planning** - The master plan calculates net requirements. It's based on actual current orders and enables you to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it is the *Net requirements plan*. Learn more in [Master plans overview](master-plans.md).
 
-- **Forecast planning** - The forecast schedule calculates gross requirements. It's based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity. Learn more in [Demand forecasting overview](introduction-demand-forecasting.md).
+- **Forecast planning** - The forecast schedule calculates gross requirements. It's based on future projections (or forecasts), and enables you to conduct long-term planning of materials and capacity. Learn more in [Demand forecasting overview](introduction-demand-forecasting.md).
 
 - **Intercompany master planning** - The intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, but also for long-term, planned (not yet firmed) demand and supply. Learn more in [Intercompany planning](planning-optimization/Intercompany-planning.md).
 
-Companies can change the output of the plan. They can run regenerative, net change, or both. Regenerative plans update all requirements, whereas, net change plans only update the plan on items with new requirements that have come in since the last scheduling run.
+You can change the output of the plan.
 
-Master scheduling plans typically involve the short term, which can be anywhere from one week to six months. The Master planning module determines the supply (materials) and capacity (resources) needs that will meet current demand (the net requirements). In most companies, this is extended to include the longest cumulative lead time among the products to be received.
+Master scheduling plans typically involve the short term, which can be anywhere from one week to six months. The Master planning module determines the supply (materials) and capacity (resources) needs that will meet current demand (the net requirements). In most companies, this planning process extends to include the longest cumulative lead time among the products to be received.
+
+> [!NOTE]
+> With Planning Optimization, all plans are regenerative, whereas the deprecated master planning engine had a concept of net change and regenerative planning run. Regenerative plans update all requirements, whereas net change plans only update the plan for items with new requirements that were added since the last scheduling run.
 
 ## Learning map
 
 The following learning map shows the major concepts and tasks that make up the framework of the Master planning module.
 
-[![Learning map for master planning.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
+[:::image type="content" source="./media/master-planning-learning-map.png" alt-text="Learning map for master planning." lightbox="./media/master-planning-learning-map.png":::](./media/master-planning-learning-map.png)
 
 ## Related information
 
 ### Roadmaps
 
-Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features have been released and what new features are in development.
+Go to the [Dynamics 365 and Microsoft Power Platform release planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features are released and what new features are in development.
 
 ### Blogs
 
-You can find opinions, news, and other information about Master planning and other solutions on the
-[Dynamics AX Manufacturing R&D Team blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Find opinions, news, and other information about Master planning and other solutions on the
+[Dynamics AX Manufacturing R&D Team blog](/archive/blogs/axmfg/) and [Microsoft Dynamics 365 Blog](https://www.microsoft.com/en-us/dynamics-365/blog/).
 
 ### Webinars
 

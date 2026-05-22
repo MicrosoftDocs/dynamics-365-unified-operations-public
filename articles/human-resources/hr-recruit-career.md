@@ -61,6 +61,18 @@ Installing the new version of Careers requires deleting the previous version:
   4. Retry installing Dynamics 365 Human Resources careers from Power platform admin center.
 
 
+### Upgrade careers with custom settings
+Upgrading to a new career version overwrites your customizations. To avoid data loss, back up and restore your settings using the following steps.
+1. Back up the careers customization. For more information, see [Power platform pages](/power-platform/developer/cli/reference/pages#pac-pages-download).
+2. Reinstall the current version:
+3. Go to **Power Apps** > **Solutions** > **Managed solutions**.
+4. Search for HCM Recruiting careers (msdyn_HCMRecruitingCareers) and delete it.
+5. Remove any dependencies if present. Deletion of msdyn_HCMRecruitingCareers enables you to reinstall the careers.
+6. Install or update the Dynamics 365 Human Resources careers app from Power platform admin center.
+7. To restore your customization, upload the previously downloaded code from step one. For more information, see  by executing [Power platform pages](/power-platform/developer/cli/reference/pages#pac-pages-upload). This overrides the present code on the environment.
+
+For more information, see [Microsoft Power Platform CLI pages command group](/power-platform/developer/cli/reference/pages). 
+
 ### Enable careers to access Dynamics 365 Human resources virtual entities 
 
 To assign roles to the **Portal anonymous** user in Dynamics 365 Human Resources, follow these steps:

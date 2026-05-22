@@ -4,7 +4,7 @@ description: Learn about the Visual Studio components that are required to run t
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/26/2024
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.validFrom: 2020-04-01
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This article lists the Visual Studio components that are required to run the **Visual Studio** extension for X++.
 
 > [!NOTE]
-> We don't recommend installing Visual Studio manually on the downloadable virtual hard drive (VHD) or virtual machines deployed from Lifecycle Services (LCS). Instead, we strongly recommend that you download or deploy a new virtual machine. Virtual machines deployed with versions 10.0.13 or later all have Visual Studio and its prerequisites installed, and come with other updates outside of Visual Studio to help keep the machines compatible and secure.
+> Don't install Visual Studio manually on the downloadable virtual hard drive (VHD) or virtual machines deployed from Microsoft Dynamics Lifecycle Services. Instead, download or deploy a new virtual machine. Virtual machines deployed with versions 10.0.13 or later all have Visual Studio and its prerequisites installed. They also include other updates outside of Visual Studio to help keep the machines compatible and secure.
 
 ## Visual Studio editions
 
@@ -39,9 +39,9 @@ The following table lists the required Visual Studio components.
 | --- | --- | --- | --- |
 | Workload | .NET desktop development | Yes | |
 | Individual component | Modeling SDK | Yes | |
-| Individual component | DGML editor | No | This component is used for dependency graph features using the Directed Graph Markup Language. |
-| Visual Studio Marketplace | Microsoft Reporting Services Projects | Yes | This component is needed for report development. If the component isn't installed, Visual Studio will prompt you when you try to open report designs. |
-| Visual Studio Marketplace | Microsoft RDLC Report Designer | Yes | This component is needed for report development. If the component isn't installed, Visual Studio will prompt you when you try to open report designs. |
+| Individual component | DGML editor | No | This component is used for dependency graph features by using the Directed Graph Markup Language. |
+| Visual Studio Marketplace | Microsoft Reporting Services Projects | Yes | This component is needed for report development. If you don't install the component, Visual Studio prompts you when you try to open report designs. |
+| Visual Studio Marketplace | Microsoft RDLC Report Designer | Yes | This component is needed for report development. If you don't install the component, Visual Studio prompts you when you try to open report designs. |
 
 ## Dynamics 365 Commerce
 

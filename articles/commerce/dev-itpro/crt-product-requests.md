@@ -1,15 +1,15 @@
 ---
 title: Consume Commerce runtime (CRT) Product service requests
-description: This article describes how to consume Commerce runtime (CRT) Product service requests to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
+description: Learn how to consume Commerce runtime (CRT) Product service requests to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 07/18/2023
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.date: 02/13/2026
+ms.topic: how-to
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2023-07-05
-
+ms.custom:
+  - bap-template
 ---
 
 # Consume Commerce runtime (CRT) Product service requests
@@ -18,16 +18,16 @@ ms.search.validFrom: 2023-07-05
 
 This article describes how to consume Commerce runtime (CRT) Product service requests to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
 
-Based on your business requirements, you might have to build your own CRT extensions and consume CRT Product service requests. When you work with products, CRT Product service requests are required from your extension. For information about how to build CRT extensions, see [Commerce runtime (CRT) extensibility](commerce-runtime-extensibility.md).
+Based on your business requirements, you might need to build your own CRT extensions and consume CRT Product service requests. When you work with products, your extension must use CRT Product service requests. For information about how to build CRT extensions, see [Commerce runtime (CRT) extensibility](commerce-runtime-extensibility.md).
 
-The CRT Product service consists of many requests and responses that are implemented differently. Consumption of the wrong requests can cause performance issues in Commerce Scale Unit (CSU). 
+The CRT Product service consists of many requests and responses that are implemented differently. Consuming the wrong requests can cause performance problems in Commerce Scale Unit (CSU). 
 
 ## Search for products
 
-Typically, you must search for products when you don't have the product identifiers (also known as product record identifiers), or when you don't have item identifiers with product dimensions. You can search for products by using keywords, categories, or product refiners. We recommend that you use the `SearchProductsRequest` request to search for products.
+Typically, you search for products when you don't have the product identifiers (also known as product record identifiers), or when you don't have item identifiers with product dimensions. You can search for products by using keywords, categories, or product refiners. Use the `SearchProductsRequest` request to search for products.
 
 > [!NOTE]
-> The `ProductSearchRequest` and `ProductSearchServiceRequest` requests use different implementations that return more product information. However, they also consume more CSU resources and can therefore cause performance issues. Therefore, we recommend that you use alternative requests to retrieve product information.
+> The `ProductSearchRequest` and `ProductSearchServiceRequest` requests use different implementations that return more product information. However, they also consume more CSU resources and can cause performance problems. Therefore, use alternative requests to retrieve product information.
 
 ### SearchProductsRequest input parameters
 
@@ -36,7 +36,7 @@ The following table lists commonly used input parameters of `SearchProductsReque
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
 | SearchCriteria | ProductSearchCriteria | Required | The product search criteria. |
-| SearchForItemIdViaBarcode | bool | Optional | A value that specifies whether the keyword should be matched with bar codes and converted to an item identifier. If you're using SQL full-text based search instead of [Cloud-powered search](../cloud-powered-search-overview.md), this parameter also enables remote channel search. |
+| SearchForItemIdViaBarcode | bool | Optional | A value that specifies whether the keyword should be matched with bar codes and converted to an item identifier. If you use SQL full-text based search instead of [Cloud-powered search](../cloud-powered-search-overview.md), this parameter also enables remote channel search. |
 
 #### ProductSearchCriteria parameters
 
@@ -55,10 +55,10 @@ The response for a `SearchProductsRequest` request is a list of `ProductSearchRe
 
 ## Retrieve product information
 
-As has been mentioned, you can use keywords, categories, or product refiners to search for products, because you typically don't have the product identifiers or item identifiers with product dimensions in these cases. However, to retrieve detailed product information, you must use the product identifiers or item identifiers with product dimensions. We recommend that you use the `GetProductsServiceRequest` request to retrieve product information.
+You can use keywords, categories, or product refiners to search for products because you typically don't have the product identifiers or item identifiers with product dimensions in these cases. However, to retrieve detailed product information, you must use the product identifiers or item identifiers with product dimensions. Use the `GetProductsServiceRequest` request to retrieve product information.
 
 > [!NOTE]
-> `GetProductServiceRequest` differs from `GetProductsServiceRequest` and uses a different implementation that returns more product information. However, it also consumes more CSU resources and can therefore cause performance issues. Therefore, we recommend that you use alternative requests to retrieve product information.
+> `GetProductServiceRequest` differs from `GetProductsServiceRequest` and uses a different implementation that returns more product information. However, it also consumes more CSU resources and can therefore cause performance problems. To avoid these problems, use alternative requests to retrieve product information.
 
 ### GetProductsServiceRequest input parameters
 
@@ -80,14 +80,14 @@ The response for a `GetProductsServiceResponse` request is a list of `SimpleProd
 
 ## Other requests to get specific product information
 
-In some cases, you can't get all product information for your business requirements by consuming `GetProductsServiceRequest`. Here are a few examples of requests that you should use for alternative scenarios.
+In some cases, consuming `GetProductsServiceRequest` doesn't return all product information for your business requirements. Here are a few examples of requests that you should use for alternative scenarios.
 
 ### Retrieve product attributes
 
-When you must retrieve product attributes, we recommend that you use the `GetProductAttributeValuesServiceRequest` request.
+When you need to retrieve product attributes, use the `GetProductAttributeValuesServiceRequest` request.
 
 > [!NOTE]
-> If your products are configured with a large number of attributes, `GetProductAttributeValuesServiceRequest` can consume more CSU resources. Be careful when you consume this request (especially via high-volume APIs), because it might cause CSU performance issues.
+> If your products are configured with a large number of attributes, `GetProductAttributeValuesServiceRequest` can consume more CSU resources. Be careful when you consume this request (especially via high-volume APIs), because it might cause CSU performance problems.
 
 #### GetProductAttributeValuesServiceRequest input parameters
 
@@ -105,11 +105,11 @@ The response for a `GetProductAttributeValuesServiceRequest` request is a list o
 
 ### Retrieve product variants
 
-When you must retrieve product variants for product masters, we recommend that you use the `GetVariantProductsServiceRequest` request.
+To retrieve product variants for product masters, use the `GetVariantProductsServiceRequest` request.
 
 #### GetVariantProductsServiceRequest input parameters
 
-The following table lists the input parameters of `GetVariantProductsServiceRequest`.
+The following table lists the input parameters for `GetVariantProductsServiceRequest`.
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|

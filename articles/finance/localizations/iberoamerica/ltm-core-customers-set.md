@@ -4,7 +4,7 @@ description: Learn about the customer set configuration for Latin America, inclu
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 11/18/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Customer sets for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 You can define which document classes are allowed in transactions for customers assigned to this customer set. Additionally, you can predefine default document classes for each transaction type.
 
@@ -48,3 +50,5 @@ To set up a customer set, follow these steps:
     | Project return delivery note  | Packing slip from a return sales project                                    |
 
 1. On the Action Pane, select **Save**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

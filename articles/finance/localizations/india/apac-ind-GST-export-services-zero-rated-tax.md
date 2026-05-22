@@ -4,7 +4,7 @@ description: Learn how to export services that have zero-rated tax in Microsoft 
 author: epodkolzina
 ms.author: epodkolzina
 ms.topic: how-to
-ms.date: 04/10/2025
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2019-06-01

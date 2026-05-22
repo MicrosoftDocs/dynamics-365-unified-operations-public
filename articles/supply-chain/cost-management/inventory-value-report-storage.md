@@ -269,7 +269,7 @@ This feature lets you handle extensive datasets while maintaining control over t
 To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Large Volume Historical Inventory Value Report Generation* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature named *Large Volume Historical Inventory Value Report Generation* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Configure the large-volume option
 

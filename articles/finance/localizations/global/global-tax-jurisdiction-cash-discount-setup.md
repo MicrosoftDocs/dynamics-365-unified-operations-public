@@ -3,12 +3,11 @@ title: Tax jurisdiction parameters for cash discount calculation setup
 description: Learn about the setup of cash discount calculation options, including a table that outlines setup for various parameters.
 author: epodkolzina
 ms.author: epodkolzina
-ms.topic: install-set-up-deploy
+ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 03/18/2026
 ms.reviewer: johnmichalak
-ms.dyn365.ops.version: AX 10.0.23
 ---
 
 # Tax jurisdiction parameters for cash discount calculation setup
@@ -17,13 +16,13 @@ ms.dyn365.ops.version: AX 10.0.23
 
 This article provides information about the setup of cash discount calculation options.
 
-When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. If different cash discount calculation options are required for different VAT registrations, set up the options on the **Tax jurisdiction parameters** and **Tax jurisdiction applicability** tabs of the **Tax calculation** page.
+When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. If you need different cash discount calculation options for different VAT registrations, set up the options on the **Tax jurisdiction parameters** and **Tax jurisdiction applicability** tabs of the **Tax calculation** page.
 
 ## Tax jurisdiction parameters setup
 
 Microsoft Dynamics 365 Finance supports the following generic combinations of cash discount calculation options.
 
-| Parameter | Option1 | Option2 |
+| Parameter | Option 1 | Option 2 |
 |---|---|---|
 | Reverse sales tax on cash discount | Yes | No |
 | Deduct cash discount before sales tax calculation | No | Yes |
@@ -31,28 +30,26 @@ Microsoft Dynamics 365 Finance supports the following generic combinations of ca
 
 The following illustration shows the parameter setup for both options.
 
-![Cash discount options on the Tax jurisdiction parameters tab of the Tax calculation page.](../media/TaxJurisdictionCashDisc_01.png)
+:::image type="content" source="../media/TaxJurisdictionCashDisc_01.png" alt-text="Screenshot of cash discount options on the Tax jurisdiction parameters tab of the Tax calculation page.":::
 
 > [!NOTE]
-> The **Deduct Cash Discount Before Tax Calculation** and **Calculate Cash Discount On Amount Including Tax** parameters are mutually exclusive.
->
-> Currently, the tax calculation feaure setup doesn't support cross-measure validation. The validation is done in Finance when the parameters from the Tax calculation service are retrieved.
-> 
-> For a tax jurisdiction code, don't set both the **Deduct Cash Discount Before Tax Calculation** parameter and the **Calculate Cash Discount On Amount Including Tax** parameter to **Yes** on the **Tax calculation** page.
+> - The **Deduct Cash Discount Before Tax Calculation** and **Calculate Cash Discount On Amount Including Tax** parameters are mutually exclusive.
+> - Currently, the tax calculation feature setup doesn't support cross-measure validation. Finance performs the validation when it retrieves the parameters from the Tax calculation service.
+> - For a tax jurisdiction code, don't set both the **Deduct Cash Discount Before Tax Calculation** parameter and the **Calculate Cash Discount On Amount Including Tax** parameter to **Yes** on the **Tax calculation** page.
 
 To set up the cash discount calculation option in the tax calculation feature setup, create a tax jurisdiction code on the **Tax jurisdiction parameters** tab in the **Tax jurisdiction** group.
 
-![Tax jurisdiction parameters tab on the Tax calculation page.](../media/TaxJurisdictionCashDisc_02NewUI.png)
+:::image type="content" source="../media/TaxJurisdictionCashDisc_02NewUI.png" alt-text="Screenshot of the Tax jurisdiction parameters tab on the Tax calculation page.":::
 
 Use the fields on the **Tax jurisdiction applicability** tab in the **Tax jurisdiction** group to define rules that determine when a cash discount calculation option should be applied. You can select header-level fields for the determination.
 
-![Tax jurisdiction applicability tab on the Tax calculation page.](../media/TaxJurisdictionCashDisc_03NewUI.png)
+:::image type="content" source="../media/TaxJurisdictionCashDisc_03NewUI.png" alt-text="Screenshot of the Tax jurisdiction applicability tab on the Tax calculation page.":::
 
 If no matching rule is found on the **Tax jurisdiction applicability** tab, the default parameters on the **General** tab are used.
 
 ### Example: Cash discount parameters setup
 
-To determine a tax jurisdiction code, you can use **Ship To/Ship From Country/Region** or **Invoice To Country/Region**. When you create a sales order for a customer in Germany (DEU), **Option1** is selected. When you create a sales order for a customer in Belgium (BEL), **Option2** is selected.
+To determine a tax jurisdiction code, use **Ship To/Ship From Country/Region** or **Invoice To Country/Region**. When you create a sales order for a customer in Germany (DEU), **Option1** is selected. When you create a sales order for a customer in Belgium (BEL), **Option2** is selected.
 
 The following table shows the results of the cash discount and sales tax calculation for a sales order that has a net amount of 1,000 and a 4-percent cash discount. For tax calculation purposes, the tax rate that is used for **Option1** is 19 percent. For **Option2**, it's 21 percent.
 
@@ -64,5 +61,6 @@ The following table shows the results of the cash discount and sales tax calcula
 | Cash discount amount | 47.60 (= 1,190 × 4%) | 40 (= 1,000 × 4%) |
 
 > [!IMPORTANT]
-> The functionality is supported for sales order, purchase order, vendor invoice, and free text invoice operations.
-> 
+> This functionality supports sales order, purchase order, vendor invoice, and free text invoice operations.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

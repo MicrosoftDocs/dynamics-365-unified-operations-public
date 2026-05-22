@@ -1,11 +1,11 @@
 ---
 title: Create a Store Commerce extension installer package
-description: This article describes how to create a Microsoft Dynamics 365 Commerce Store Commerce extension installer package.
+description: Learn how to create a Microsoft Dynamics 365 Commerce Store Commerce extension installer package.
 author: josaw1
-ms.date: 10/29/2024
+ms.date: 02/20/2026
 ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2022-03-30
@@ -24,7 +24,7 @@ This article describes how to create a Microsoft Dynamics 365 Commerce Store Com
 
 To create the extension installer for Store Commerce extension, follow these steps:
 
-1. In Microsoft Visual Studio 2022, create a new .NET console application project named "StoreCommerce.ExtInstaller". For **Framework**, select **.NET 7.0 (Standard Term Support)**.
+1. In Microsoft Visual Studio 2022, create a new .NET console application project named "StoreCommerce.ExtInstaller." For **Framework**, select **.NET 7.0 (Standard Term Support)**.
 1. In the **.proj** file, change the target framework to the .NET Framework version 4.7.2, as shown in the following XML example.
 
     ```XML
@@ -68,7 +68,7 @@ To create the extension installer for Store Commerce extension, follow these ste
 1. After you finish installing the extension, close Store Commerce if it's running. Then, to load the extension, open Store Commerce by using the Store Commerce shortcut on the desktop.
 
 > [!NOTE]
-> Although code signing isn't a strict requirement for the Store Commerce extension installer like for Modern POS (MPOS), Microsoft recommends using code signing to verify the authenticity of any executable run on POS registers. You can configure your Azure DevOps pipeline to use the [Trusted Signing - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.TrustedSigning) task to digitally sign your files using a Trusted Signing certificate during an Azure Pipelines run.
+> Although code signing isn't a strict requirement for the Store Commerce extension installer like it is for Modern POS (MPOS), Microsoft recommends using code signing to verify the authenticity of any executable that runs on POS registers. You can configure your Azure DevOps pipeline to use the [Trusted Signing - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.TrustedSigning) task to digitally sign your files by using a Trusted Signing certificate during an Azure Pipelines run.
 
 ## Sample code
 
@@ -98,3 +98,5 @@ To create the extension installer for Store Commerce extension, follow these ste
     </ItemGroup>
 </Project>
 ```
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ ms.author: v-omerorhan
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/30/2025
+ms.date: 01/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2020-02-03
@@ -24,7 +24,7 @@ Exchange difference invoices must reflect the difference between the exchange ra
 
 Companies must issue invoices for exchange rate differences. Those invoices must reflect the equivalent amount in Turkish lira, based on the foreign exchange buying rate of the Central Bank of the Republic of Türkiye.
 
-According to the legislation, the tax rate that is applied to the exchange rate difference is crucial. The tax rate that is applied to the invoiced product or service must also be applied to the exchange difference invoice. If the invoice is exempt from tax or subject to withholding tax, the exchange difference invoice should be issued accordingly.
+The tax rate that is applied to the exchange rate difference is crucial. The tax rate that is applied to the invoiced product or service must also be applied to the exchange difference invoice. If the invoice is exempt from tax or subject to withholding tax, the exchange difference invoice should be issued accordingly.
 
 ## Configure exchange difference invoicing
 
@@ -63,6 +63,11 @@ The following table describes the fields on the **Number sequence** tab.
 |-------|-------------|
 | Exchange difference invoice | Define the unique key for exchange difference invoices. |
 | Exchange difference invoice voucher | Define the unique key for vouchers of exchange difference invoices. |
+| Exchange difference pending invoice voucher | Define the unique key for vouchers of exchange difference pending invoices. | 
+| Exchange difference revaluate and close voucher | Define the unique key for vouchers of exchange difference revaluate and close. |
+
+> [!NOTE]
+> To ensure correct document type mapping in e-Ledger, separate number sequences are used for each exchange difference type.
 
 ### Realized gain and realized loss accounts
 

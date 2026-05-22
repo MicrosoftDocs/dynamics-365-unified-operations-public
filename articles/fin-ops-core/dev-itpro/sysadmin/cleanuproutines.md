@@ -4,7 +4,7 @@ description: Learn about cleanup routines in Dynamics 365 Finance and Supply Cha
 author: dvliegen
 ms.author: dvliegen
 ms.topic: article
-ms.date: 03/14/2025
+ms.date: 03/05/2026
 ms.custom: 
 ms.reviewer: johnmichalak 
 audience: IT Pro
@@ -45,7 +45,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 
 | Path | Description |
 |------|-------------|
-| General ledger \> Periodic tasks \> Clean up ledger journals | <p>This cleanup routine deletes General ledger, Accounts receivable, and Accounts payable journals that are posted. When you delete a posted ledger journal, all information that is related to the original transaction is removed.</p><p>**Note:** Delete this information only if you're sure that reversing the ledger journal transactions aren't necessary.</p> |
+| General ledger \> Periodic tasks \> Clean up ledger journals | <p>This cleanup routine deletes General ledger, Accounts receivable, and Accounts payable journals that are posted. When you delete a posted ledger journal, all information that is related to the original transaction is removed.</p><p> Starting in Dynamics 365 Finance version 10.0.47, a new feature in Feature management improves the performance of this clean up routine. Enable the **Delete journals batch process performance improvement** feature to run more efficently in a batch by using a top picking pattern.  </p><p>**Note:** Delete this information only if you're sure that reversing the ledger journal transactions aren't necessary.</p> |
 
 ## Retail and Commerce
 

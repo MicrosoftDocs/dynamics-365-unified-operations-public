@@ -2,12 +2,12 @@
 title: What's new or changed for India GST in 10.0.01 (April 2019)
 description: Learn about new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.01, including an outline on new configurations.
 author: prabhatb
-ms.author: prabhatb
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 07/15/2024
+ms.date: 01/21/2026
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: India
@@ -18,35 +18,38 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../../includes/banner.md)]
 
-This article includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.01 for India GST localization. 
+This article summarizes the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.01 for India GST localization.
 
-## New configuration 
-The following configurations are available from the Shared Asset Library in LCS for use in version 10.0.1:
- 
+## New configuration
+
+The Shared Asset Library in Lifecycle Services provides the following configurations for use in version 10.0.1:
+
 - GSTReturns.version.14.xml
 - GST Returns model mapping.version.14.5.xml
 - GSTR1CSV.version.14.28.xml
 - GSTR2CSV.version.14.32.xml
- 
+
 The following GSTR issues are also resolved:
-- Total item discount amount is not showing in GSTR.
-- Item unit of measurement should show both unit and its description, and for service item, it should be **Nos**.
+
+- Total item discount amount doesn't show in GSTR.
+- Item unit of measurement shows both unit and its description, and for service item, it is **Nos**.
 - No customer billing name for stock transfer in GSTR.
 
 ## Non-GST item
-You can create a non-GST item that is the default for **Tax information** in taxable transactions.
 
-![Non-GST item.](../media/GST-non-gst-item-1-10-0-01.png)
+Create a non-GST item that is the default for **Tax information** in taxable transactions.
 
-## Critical fixes 
+:::image type="content" source="../media/GST-non-gst-item-1-10-0-01.png" alt-text="Screenshot of Non-GST item configuration.":::
+
+## Critical fixes
 
 - Can't post a purchase invoice for a service item with load in inventory.
 - The HSN summary is empty and there are no records in B2CL(Supply to Large customer >INR 2,50,000) in GST offline tool format.
-- Total transaction value in GSTR1/GSTR2 does not equal the invoice amount when a transaction price includes tax.
+- Total transaction value in GSTR1/GSTR2 doesn't equal the invoice amount when a transaction price includes tax.
 - Editing a request for quotation (RFQ) reply results in the following error, "Posting exception has been thrown by
   the target of an invocation”.
 - Amount origin of withholding tax is incorrect.
-- Unable to save a purchase order after changing a financial dimension. The following error occurs, 
+- Can't save a purchase order after changing a financial dimension. The following error occurs,
   "Function MarkupTrans.parmSourceDocLineTypeEnumName has  been incorrectly called".
 - Posting a sales invoice can result in the error, "Voucher xxx is already used as of date”.
 - After changing the tax formula, the condition is updated with the same content as the formula.
@@ -60,18 +63,17 @@ You can create a non-GST item that is the default for **Tax information** in tax
 - Can't open a tax document when the GST configuration is extended with the error, "Object reference not set an instance of an object".
 - After edit formula/condition, the condition of other nodes shows the same value string.
 - Auto-block importing of previous Microsoft Dynamics AX (AX2012) configuration versions to Dynamics 365 Finance.
-- GSTR configuration for two companies cannot be set up.
+- GSTR configuration for two companies can't be set up.
 - Can't add multiple tax measures with the same name.
-- Retail statement posting fails during sales invoice posting when there is price include tax sales order with a service item,
+- Retail statement posting fails during sales invoice posting when there's price include tax sales order with a service item,
   and the tax is different from the tax in the head quarter.
 
-## Upcoming fixes in 10.0.2 
+## Upcoming fixes in 10.0.2
 
-- Fixed exchange rate is not considered in GSTR1.
-- Unable to view the tax information for a timesheet in Indian legal entity.
-- GSTIN of e-commerce operator is always blank in GSTR1.
-- Place of supply is incorrect in GSTR2.
-- Project expense can't be posted when there is a sales tax group and an item sales tax group.
-
+- Fixed issue where GSTR1 didn't consider the exchange rate.
+- Fixed issue where users couldn't view the tax information for a timesheet in Indian legal entity.
+- Fixed issue where GSTIN of e-commerce operator is always blank in GSTR1.
+- Fixed issue where GSTR2 had an incorrect place of supply.
+- Fixed issue where users couldn't post project expenses when there's a sales tax group and an item sales tax group.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

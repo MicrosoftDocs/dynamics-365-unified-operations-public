@@ -4,7 +4,7 @@ description: Learn about real async feature enhancements to SysOperations, inclu
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 11/08/2024
+ms.date: 03/30/2026
 ms.reviewer: twheeloc
 audience: Application user
 ms.search.region: Global
@@ -19,9 +19,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article describes the real async feature enhancements to SysOperations. These enhancements enable operations to be run asynchronously without blocking the client as the regular SysOperations do. Therefore, users can initiate multiple operations simultaneously. In this way, the enhancements help improve overall performance.
+This article describes the real async feature enhancements to SysOperations. These enhancements enable operations to run asynchronously without blocking the client as the regular SysOperations do. Therefore, users can initiate multiple operations simultaneously. In this way, the enhancements help improve overall performance.
 
-The status of async operations can be viewed on the same page.
+You can view the status of async operations on the same page.
 
 To use real async operations, you must extend the `SysOperationServiceController` class.
 
@@ -30,18 +30,18 @@ For more information about the SysOperation framework, see [SysOperation Framewo
 ## Enable the real async feature
 
 1. In the **Feature management** workspace, select **Check for updates**.
-2. Enable **SysRealAsyncOperationsFeature**.
-2. After you've enabled the feature in Feature management, go to **Client performance options**, and select the **Enable real async operations** option.
+1. Enable **SysRealAsyncOperationsFeature**.
+1. After you enable the feature in Feature management, go to **Client performance options**, and select the **Enable real async operations** option.
 
-### Uptake the real async feature
+### Use the real async feature
 
-To use real async operations, you must first extend the `SysOperationServiceController` class, as you normally do to implement SysOperations. Then override the following methods to enable real async operations for your service operation class.
+To use real async operations, first extend the `SysOperationServiceController` class, as you normally do to implement SysOperations. Then override the following methods to enable real async operations for your service operation class.
 
 #### Method 1: canRunAsRealAsync
 
 By default, the `canRunAsRealAsync` method returns *false*.
 
-1. To turn ON/OFF the real async execution of your operation at runtime, introduce a feature for your operation and confirm the feature is enabled inside canRunAsRealAsync method. If the main Real Async feature is enabled in Feature management, the returned value decides if the operation will be ran in real async or not.
+1. To turn on or off the real async execution of your operation at runtime, introduce a feature for your operation and confirm the feature is enabled inside the `canRunAsRealAsync` method. If the main Real Async feature is enabled in Feature management, the returned value decides if the operation runs in real async.
 
 Here's an example.
 
@@ -60,7 +60,7 @@ public boolean canRunAsRealAsync()
 }
 ```
 
-2. Return *true* to run the operation in real async by default.
+1. Return *true* to run the operation in real async by default.
 
 #### Method 2: getSysRealAsyncOperationId
 

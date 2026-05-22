@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: TMSGenericEngine, TMSRateEngine, TMSMileageEngine, TMSEngineParameters
 ms.topic: how-to
-ms.date: 08/29/2025
+ms.date: 03/11/2026
 ms.custom:
   - bap-template
 ---
@@ -14,6 +14,7 @@ ms.custom:
 # Create a new transportation management engine
 
 [!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes how to create a new transportation management engine in Dynamics 365 Supply Chain Management.
 
@@ -39,12 +40,16 @@ This section explains how to create a class library that has a TMS engine implem
 
    :::image type="content" source="../transportation/media/042.png" alt-text="Completing model creation." lightbox="../transportation/media/042.png":::
 
-1. In a new solution, create a new Supply Chain Management project, and name it `TMSThirdParty`. In the project properties, set the project's model to *TMSEngines*.
-1. Add a new C\# class library to your solution, and name it `ThirdPartyTMSEngines`.
-1. In the `ThirdPartyTMSEngines` project, add references to Supply Chain Management–specific assemblies:
-   - Application assemblies that enable X++ types to be referenced. These assemblies can be found in the following locations. \[Packages root\] is the path of the location where all the deployed assemblies are placed, such as C:\\Packages.
+1. In a new solution, create a new Supply Chain Management project, and name it *TMSThirdParty*. The framework must be set to *.NET Framework 4.8* or newer. Double check that the project's file (`TMSThirdParty.rnrproj`) specifies the correct .NET Framework version. If it doesn't, update it directly in the file to `<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>`. In the project properties, set the project's model to *TMSEngines*.
+1. Add a new C\# *Class Library (.NET Framework)* to your solution, and name it *ThirdPartyTMSEngines*. The framework must be set to *.NET Framework 4.8* or newer and must match the settings on the *TMSThirdParty* project.
+1. In the *ThirdPartyTMSEngines* project, add references to Supply Chain Management–specific assemblies specified in the following list.
 
-        ```xpp
+    > [!IMPORTANT]
+    > The **Copy Local** property for all the references in this list must be set to *False*. Otherwise, you risk producing runtime issues where the engine class might not be found or the assembly might not load correctly.
+
+   - Application assemblies that enable X++ types to be referenced. These assemblies can be found in the following locations. \[Packages root\] is the path of the location where all the deployed assemblies are placed, such as `C:\Packages`.
+
+        ```text
         [Packages root]\ApplicationPlatform\bin\Dynamics.AX.ApplicationPlatform.dll
         [Packages root]\ApplicationFoundation\bin\Dynamics.AX.ApplicationFoundation.dll
         [Packages root]\ApplicationSuite\bin\Dynamics.AX.ApplicationSuite.dll
@@ -52,7 +57,7 @@ This section explains how to create a class library that has a TMS engine implem
 
    - Framework assemblies that enable access to data, LINQ, and auxiliary functions. All these assemblies can be found in \[Packages root\]\\bin.
 
-        ```xpp
+        ```text
         Microsoft.Dynamics.ApplicationPlatform.Environment.dll
         Microsoft.Dynamics.AX.Data.Core.dll
         Microsoft.Dynamics.AX.Framework.Linq.Data.AdoNet.dll
@@ -66,15 +71,15 @@ This section explains how to create a class library that has a TMS engine implem
 
    - The core TMS assembly (which contains engines) and the TMS base assembly (which contains helpers, constants, data transfer class definitions, and so on). These assemblies can be found in the following locations.
 
-        ```xpp
+        ```text
         [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.dll
         [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.Base.dll
         ```
 
-1. Rename the C# class that is automatically generated in the `ThirdPartyTMSEngines` project to *SampleRatingEngine*.
+1. Rename the C# class that is automatically generated in the *ThirdPartyTMSEngines* project to `SampleRatingEngine`.
 1. Implement the engine. Because you're creating a rate engine in this example, inherit from the base class for rate engines. The base class implements most of the rate engine interface (`TMSFwkIRateEngine`). You just have to implement the rate method. To keep this example simple, make this method register a hard-coded rate of 100. You can create engines that implement any of the engine interfaces, such as `TMSFwkIAccessorialEngine`. All the engine interfaces are defined in X++.
 
-    ```xpp
+    ```csharp
     namespace ThirdPartyTMSEngines
     {
         using Dynamics.AX.Application;
@@ -84,7 +89,7 @@ This section explains how to create a class library that has a TMS engine implem
         using System.Xml.Linq;
         public class SampleRatingEngine : BaseRateEngine
         {
-            public override RatingDto rate(TmsTransactionFacade transactionFacade, XElement shipment, TMSRateMasterCode rateMasterCode)
+            public override RatingDto rate(TmsTransactionFacade _transactionFacade, XElement _shipment, string _rateMasterCode)
             {
                XElement re = shipment.RetrieveOrCreateRatingEntity(this.RatingDto);
                re.AddRate(TmsRateType.Rate, 100);
@@ -95,7 +100,7 @@ This section explains how to create a class library that has a TMS engine implem
     ```
 
 1. Build the solution.
-1. Add a new reference to the `TMSThirdParty` project. The reference should point to the `ThirdPartyTMSEngines` project. When you finish, your solution should look like this.
+1. Add a new reference to the *TMSThirdParty* project. The reference should point to the *ThirdPartyTMSEngines* project. When you finish, your solution should look like this.
 
     :::image type="content" source="../transportation/media/052.png" alt-text="The solution, which includes a reference to the TMSThirdParty project." lightbox="../transportation/media/052.png":::
 
@@ -103,18 +108,21 @@ This section explains how to create a class library that has a TMS engine implem
 
     :::image type="content" source="../transportation/media/061.png" alt-text="The new library in Application Explorer's References node." lightbox="../transportation/media/061.png":::
 
+> [!NOTE]
+> If you're testing the new engine directly in the development environment, you might also need to build the entire *TMSEngines* model from **Extensions** \> **Dynamics 365** \> **Build models**. This might resolve the issue if the engine assembly couldn't be found.
+
 ## <a name="deploy-engine-as-package"></a>Deploy the TMS engine as a package
 
 One way to deploy third-party TMS engines is through a deployment package. To deploy the engine as a package, follow these steps:
 
 1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** and create a deployment package for the new model you created as described in [Create a new TMS engine](#create-tms-engine).
 
-1. In Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to LCS.
+1. In Microsoft Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to Lifecycle Services.
 
 1. After the validation completes, go to **Environments \> {Your Environment ID} \> Maintain \> Apply updates**, select the deployable package, and apply it.
 
 > [!NOTE]
-> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, contact your LCS administrator for support.
+> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, contact your Lifecycle Services administrator for support.
 
 ## Set up the TMS engine in Supply Chain Management
 
@@ -139,8 +147,8 @@ This section explains how to set up Supply Chain Management to use a TMS engine,
 ## Tips and tricks
 
 - If you're using development tools for Supply Chain Management, it's useful to add a new project to your solution. If you set this project as your startup project and start a debugging session, you can debug both X++ and C\# code in the same debugging session.
-- Every time that you change and recompile your `ThirdPartyTMSEngines` project, you must deploy through a deployment package. Otherwise, you might run using a stale assembly.
-- After you execute TMS-specific operations inSupply Chain Management, the Internet Information Services (IIS) worker process might lock the `ThirdPartyTMSEngines` assembly so that the assembly can't be updated. In this case, restart the w3svc process.
+- Every time that you change and recompile your *ThirdPartyTMSEngines* project, you must deploy through a deployment package. Otherwise, you might run using a stale assembly.
+- After you execute TMS-specific operations in Supply Chain Management, the Internet Information Services (IIS) worker process might lock the *ThirdPartyTMSEngines* assembly so that the assembly can't be updated. In this case, restart the w3svc process.
 
 ### Whitepaper
 

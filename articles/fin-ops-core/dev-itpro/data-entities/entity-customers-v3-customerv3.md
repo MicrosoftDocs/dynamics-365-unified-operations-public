@@ -4,6 +4,8 @@ description: Learn about the Customers V3 data entity in finance and operations 
 author: edupont04
 ms.author: katiehav
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 04/28/2023
 ms.collection: FastTrack
 ---

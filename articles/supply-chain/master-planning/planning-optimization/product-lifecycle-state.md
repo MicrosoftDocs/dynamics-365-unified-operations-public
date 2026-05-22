@@ -21,7 +21,7 @@ Released products and variants where the **Product lifecycle state** field is le
 > [!NOTE]
 > To help avoid unnecessary supply suggestions, we strongly recommend that you associate all obsolete released products and variants with a product lifecycle state where the **Is active for planning** option is set to *No*. This approach is especially important when you work with product configuration variants that aren't reusable, because it will help prevent waste.
 
-## Related resources
+## Related information
 
 To learn more about product lifecycle states, including how to exclude products from master planning and BOM-level calculations, go to [Product lifecycle states](../../pim/product-lifecycle.md).
 

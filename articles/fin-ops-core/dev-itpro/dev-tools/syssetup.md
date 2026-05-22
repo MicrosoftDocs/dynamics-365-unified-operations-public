@@ -4,7 +4,7 @@ description: Learn about the SysSetup interface that's used to identify X++ clas
 author: najaidee
 ms.author: najaidee
 ms.topic: article
-ms.date: 04/24/2023
+ms.date: 03/30/2026
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2021-10-26
@@ -13,14 +13,14 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # SysSetup
 
-SysSetup is an interface that's used to identify the X++ classes that run during database synchronization. The X++ classes that implement the SysSetup interface run during the **PostTableAndViewSyncActions** step of database synchronization.
+Use the SysSetup interface to identify the X++ classes that run during database synchronization. The X++ classes that implement the SysSetup interface run during the **PostTableAndViewSyncActions** step of database synchronization.
 
 ## Onboard to SysSetup
 
-1. In Microsoft Visual Studio, select **View** \> **Application explorer (AOT)**.
-2. Create a new class that implements the **SysSetup** interface.
-3. Add the **loadData()** method in the class. The code in this method is run during database synchronization. (The code can also be a reference to another class or method.)
-4. Add the [**SysSetupConfig**](../../dev-itpro/dev-tools/syssetupconfigattribute.md) and **SysSetupTable** attributes to the class. The **SysSetupTable** attribute takes the related table as the input.
+1. In Microsoft Visual Studio, select **View** > **Application explorer (AOT)**.
+1. Create a new class that implements the **SysSetup** interface.
+1. Add the **loadData()** method in the class. The code in this method runs during database synchronization. (The code can also be a reference to another class or method.)
+1. Add the [**SysSetupConfig**](../../dev-itpro/dev-tools/syssetupconfigattribute.md) and **SysSetupTable** attributes to the class. The **SysSetupTable** attribute takes the related table as the input.
 
 The completed class should resemble the following example.
 
@@ -39,12 +39,12 @@ class DemoSetup implements SysSetup
 ```
 
 > [!NOTE]
-> If you run database synchronization from Visual Studio, the SysSetup classes won't be run. For information about how to run database synchronization from the command line, see the next section.
+> If you run database synchronization from Visual Studio, the SysSetup classes don't run. For information about how to run database synchronization from the command line, see the next section.
 
 ## Validate new classes
 
 1. Open a Command Prompt window.
-2. Run the following command.
+1. Run the following command.
 
     ``` text
     <AOSInstalledDirectory>\AosService\PackagesLocalDirectory\bin\Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "<AOSInstalledDirectory>\AosService\PackagesLocalDirectory" -metadatadir <AOSInstalledDirectory>\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver <sqlservername/localhost> -sqldatabase <axdbname> -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "<anydirectory>\dbsync.log"
@@ -56,7 +56,7 @@ class DemoSetup implements SysSetup
     K:\AosService\PackagesLocalDirectory\bin\Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "K:\AosService\PackagesLocalDirectory" -metadatadir K:\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "K:\temp\dbsync.log"
     ```
 
-3. When the command has finished running, review the log file to confirm that the X++ class was picked up and run during database synchronization. You'll see an entry that resembles the following example.
+1. When the command finishes running, review the log file to confirm that the X++ class was picked up and run during database synchronization. You see an entry that resembles the following example.
 
     ``` text
     04/24/2023 09:10:17: SysSetupInstaller: Running Script: DemoSetup with Timeout 300 seconds.

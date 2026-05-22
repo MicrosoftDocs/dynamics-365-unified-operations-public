@@ -4,7 +4,9 @@ description: Learn about scenarios that are applicable from an implementation pe
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/20/2017
+ms.custom: 
+  - bap-template
+ms.date: 02/26/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.assetid: 86eda511-b1a6-46d2-bd0f-f9991b727f1a
@@ -58,17 +60,17 @@ Isaac, a developer, builds a customer entity that has fields that contain region
 | Scenario                        | Description |
 |---------------------------------|-------------|
 | Design                          | Entities automatically inherit localization properties from underlying fields. |
-| Design                          | Developers can’t override or set localization properties on entity fields. These properties should be inherited only from tables. Only override on unmapped fields. |
-| Read behavior (OData metadata)  | The consumer of an entity from OData will have metadata or annotations to specify which fields are localized. |
+| Design                          | Developers can't override or set localization properties on entity fields. These properties should be inherited only from tables. Only override on unmapped fields. |
+| Read behavior (OData metadata)  | The consumer of an entity from OData has metadata or annotations to specify which fields are localized. |
 | Read behavior (Data management) | In import/export fields, metadata displays country/region values, so that this information is obvious to the end user. |
-| Read behavior                   | During cross-company read operations, data from localized fields is displayed only if the context matches. Note that this should already be implemented through the table/view. |
+| Read behavior                   | During cross-company read operations, data from localized fields is displayed only if the context matches. Note that this behavior should already be implemented through the table or view. |
 | Read behavior (Performance)     | During company-specific read operations, localized fields are dropped from the query when the context doesn't match. |
 | Write                           | During write operations to localized fields, hard errors occur if the fields don't match the context. |
 | (Shared table)                  | If the data source or fields contain a country/region that is a shared (global) table, all operations are ignored, just as if no keys are applied. |
 
 ### Behavior – Data source
 
-The behavior of configuration keys and a country/region that are applied at the data source resembles the behavior of fields. These values are inferred from the data source, just as if they are applied to the field level. Here's an example.
+The behavior of configuration keys and a country/region that you apply at the data source resembles the behavior of fields. These values are inferred from the data source, just as if applied to the field level. Here's an example.
 
 ```Text
 Entity E1

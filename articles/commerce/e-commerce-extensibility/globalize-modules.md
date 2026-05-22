@@ -1,11 +1,10 @@
 ---
 title: Globalize modules by using the CultureInfoFormatter class
-description: This article describes how to globalize modules using the CultureInfoFormatter class in Microsoft Dynamics 365 Commerce.
+description: Learn how to globalize modules using the CultureInfoFormatter class in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,15 +15,15 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to globalize modules using the **CultureInfoFormatter** class in Microsoft Dynamics 365 Commerce.
+This article describes how to globalize modules by using the **CultureInfoFormatter** class in Microsoft Dynamics 365 Commerce.
 
-Globalization of an online site should include not only string localization, but also number, date, and currency formatting for the various languages and regions that your website serves.
+When you globalize an online site, include not only string localization but also number, date, and currency formatting for the various languages and regions that your website serves.
 
-The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) provides a **CultureInfoFormatter** class that helps meet typical globalization requirements for the format of numbers, currencies, dates, and times.
+The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) provides a **CultureInfoFormatter** class that helps you meet typical globalization requirements for the format of numbers, currencies, dates, and times.
 
 ## Access the CultureInfoFormatter class in a module view file
 
-An instance of the **CultureInfoFormatter** class is automatically created and can be accessed in the module view through the **this.props.context** object.  The following example shows how to use the **CultureInfoFormatter** methods to format currency.
+You can access an instance of the **CultureInfoFormatter** class in the module view through the **this.props.context** object. The instance is created automatically. The following example shows how to use the **CultureInfoFormatter** methods to format currency.
 
 ```ts
 public render(): JSX.Element | null {
@@ -41,7 +40,7 @@ public render(): JSX.Element | null {
 
 The constructor of the **CultureInfoFormatter** class takes one argument, **lang-locale**.
 
-The **lang-locale** argument must be a valid [BCP-47](https://tools.ietf.org/html/bcp47) language tag. A default value, **'en-US'**, is used if no language tag is specified. Language tags aren't case-sensitive, but by convention the locale is capitalized.
+The **lang-locale** argument must be a valid [BCP-47](https://tools.ietf.org/html/bcp47) language tag. If you don't specify a language tag, the constructor uses the default value, **'en-US'**. Language tags aren't case-sensitive, but by convention the locale is capitalized.
 
 ### Example
 
@@ -69,7 +68,7 @@ The **CultureInfoFormatter** class provides the following formatting functions:
 
 ### Currency formatting
 
-To format currency according to the conventions for a specific locale, use the **formatCurrency()** method as shown the following example.
+To format currency according to the conventions for a specific locale, use the **formatCurrency()** method as shown in the following example.
 
 ```ts
 /**
@@ -82,7 +81,7 @@ To format currency according to the conventions for a specific locale, use the *
 formatCurrency(price: string | number, currencyCode?: string): string;
 ```
 
-The **currencyCode** argument is optional. If provided, it must be in the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) format. If the **currencyCode** argument isn't provided, the formatter uses the locale to determine the best currency code to use.
+The **currencyCode** argument is optional. If you provide it, use the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) format. If you don't provide the **currencyCode** argument, the formatter uses the locale to determine the best currency code to use.
 
 #### Currency formatting examples
 
@@ -108,7 +107,7 @@ cultureInfoFormatter.formatCurrency(34.12, 'inr');
 
 ### Date formatting
 
-To format a date according to the conventions for a specific locale, use the **formatDate()** method as shown the following examples.
+To format a date according to the conventions for a specific locale, use the **formatDate()** method as shown in the following examples.
 
 #### SDK version 1.27.7 and greater
 ```ts
@@ -163,7 +162,7 @@ cultureInfoFormatter.formatDate(testDate);
 
 ### Time formatting
 
-To format a time according to the conventions for a specific locale, use the **formatTime()** method as shown the following examples.
+To format a time according to the conventions for a specific locale, use the **formatTime()** method as shown in the following examples.
 
 #### SDK version 1.27.7 and greater
 ```ts
@@ -209,7 +208,7 @@ cultureInfoFormatter.formatTime(testDate, options);
 
 ### Number formatting
 
-To format a number according to the conventions for a specific locale, use the **formatNumber()** method as shown the following example.
+To format a number according to the conventions for a specific locale, use the **formatNumber()** method as shown in the following example.
 
 ```ts
 /**
@@ -296,7 +295,7 @@ interface IDateFormatOptions extends ITimeFormatOptions {
 ```
 
 > [!NOTE] 
-> All properties provided in **ITimeFormatOptions** interface can be used in **IDateFormatOptions** interface since the time object is a subcomponent of the date object.
+> You can use all properties from the **ITimeFormatOptions** interface in the **IDateFormatOptions** interface because the time object is a subcomponent of the date object.
 
 #### Property details
 
@@ -328,9 +327,9 @@ export interface INumberFormatOptions {
 
 | Name | Type | Allowed values | Description |
 |------|------|----------------|-------------|
-| localeMatcher | enum | 'best fit' or 'lookup' | Specifies the algorithm to use to match and find the locale. The **'lookup'** matcher follows the lookup algorithm that's specified in [BCP-47](https://tools.ietf.org/html/bcp47). The **'best fit'** matcher lets the runtime provide a locale that's at least as well-suited to the request as the result of the lookup algorithm, although it might be a better fit than that result. |
+| localeMatcher | enum | 'best fit' or 'lookup' | Specifies the algorithm to use to match and find the locale. The **'lookup'** matcher follows the lookup algorithm specified in [BCP-47](https://tools.ietf.org/html/bcp47). The **'best fit'** matcher lets the runtime provide a locale that's at least as well-suited to the request as the result of the lookup algorithm, although it might be a better fit than that result. |
 | style | enum | 'decimal', 'percent', or 'currency' | Specifies the formatting style to use. Use the **'decimal'** value for plain number formatting, the **'currency'** value for currency formatting, and the **'percent'** value for percentage formatting. The default value is **'decimal'**. |
-| currency | string | Three-character [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) currency codes | Specifies the currency to use in currency formatting. There is no default value. If the **style** property is set to **'currency'**, the **currency** property must be provided. |
+| currency | string | Three-character [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) currency codes | Specifies the currency to use in currency formatting. There's no default value. If you set the **style** property to **'currency'**, you must provide the **currency** property. |
 | minimumIntegerDigits | number | Any integer value between 1 and 21 | Specifies the minimum number of integer digits to use. The default value is **1**. |
 | minimumFractionDigits | number | Any integer value between 0 and 20 | Specifies the minimum number of fraction digits to use. The default value for number and percentage formatting is **0** (zero). The default value for currency formatting is provided by the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard. |
 | maximumFractionDigits | number | Any integer value between 0 and 20 | Specifies the maximum number of fraction digits to use. |
@@ -356,6 +355,5 @@ export interface INumberFormatOptions {
 [Configure module properties to be shown based on context](configure-properties-context.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

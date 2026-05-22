@@ -4,7 +4,7 @@
 title: Set up the HR Recruiting app 
 description: This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/15/2025
+ms.date: 01/23/2026
 ms.topic: how-to
 # optional metadata
 
@@ -146,5 +146,5 @@ To activate connections and flows for the Recruiting app, follow these steps:
 |Send meeting invite|	Sends meeting invitations to candidates and interviewers.|
 |Create intermediate table candidate slots	| Monitors the slots that are sent to candidates.|
 |Email lots to candidate and send to plugin|	Send email with options to candidates.|
-
+|Fetch panel members available meeting times slots | Retrieve available outlook calendar time slots for panel members to schedule interviews.|
 

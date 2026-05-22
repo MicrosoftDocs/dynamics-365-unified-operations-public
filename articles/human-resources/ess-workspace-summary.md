@@ -4,7 +4,7 @@
 title: Employee self service leave summary
 description: This article provides an overview of the Employee self service leave summary feature.
 author: twheeloc
-ms.date: 09/03/2025
+ms.date: 05/14/2026
 ms.update-cycle: 180-days
 ms.topic: overview
 ms.reviewer: twheeloc
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Employee self service leave summary
 
-The **Employee self service leave summary** feature provides an AI-generated summary of employee time off. This feature is powered by Microsoft Azure OpenAI Service's large language model and is designed to reduce the time that you spend reviewing the different screens containing time off information and calculating time off that may be subject to forfeiture.
+The **Employee self service leave summary** feature provides an AI-generated summary of employee time off. This feature uses Microsoft Azure OpenAI Service's large language model and is designed to reduce the time you spend reviewing the different screens containing time off information and calculating time off that might be subject to forfeiture.
 This feature has two purposes:
 
 - Increase employees' awareness of their time-off situation, and help them make informed decisions about their time-off plans.

@@ -4,7 +4,7 @@ description: This article provides an overview of functionality specific to Qata
 author: mrolecki
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 12/16/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Qatar

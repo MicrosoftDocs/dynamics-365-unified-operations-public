@@ -4,7 +4,7 @@ description: Learn about Microsoft Dynamics 365 Finance, Supply Chain Management
 author: kfend
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 12/02/2025
+ms.date: 03/10/2026
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Application User

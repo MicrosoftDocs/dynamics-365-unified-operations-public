@@ -1,11 +1,10 @@
 ---
 title: Configure channel-side inventory calculation
-description: This article describes how to configure channel-side inventory calculation in Microsoft Dynamics 365 Commerce.
+description: Learn how to configure channel-side inventory calculation in Microsoft Dynamics 365 Commerce.
 author: hhainesms
-ms.date: 05/30/2024
+ms.date: 01/20/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-02-11
@@ -20,23 +19,23 @@ This article describes how to configure channel-side inventory calculation in Mi
 
 ## Enable the feature
 
-To use channel-side inventory calculation, you must first enable the **Optimized product availability calculation** feature.
+To use channel-side inventory calculation, first enable the **Optimized product availability calculation** feature.
 
 ### Commerce version 10.0.29 and later
 
-In Commerce version 10.0.29 and later, the **Optimized product availability calculation** feature is marked as mandatory. In other words, it's enabled by default and can't be disabled. Therefore, no action is required to enable the feature.
+In Commerce version 10.0.29 and later, the **Optimized product availability calculation** feature is mandatory. In other words, it's enabled by default and can't be disabled. Therefore, no action is required to enable the feature.
 
 ### Commerce versions 10.0.12 through 10.0.28
 
-If you're using Commerce versions 10.0.12 through 10.0.28, follow these steps to enable the **Optimized product availability calculation** feature.
+If you're using Commerce versions 10.0.12 through 10.0.28, follow these steps to enable the **Optimized product availability calculation** feature:
 
 1. In Commerce headquarters, go to **Workspaces \> Feature management**.
 1. Find and enable the **Optimized product availability calculation** feature.
-1. If your online and store channels use the same fulfillment warehouses, you must also enable the **Enhanced e-Commerce channel-side inventory calculation logic** feature. The channel-side calculation logic will then consider unposted transactions that are created in the store channel. Unposted transactions can be cash-and-carry transactions, customer orders, and returns.
+1. If your online and store channels use the same fulfillment warehouses, also enable the **Enhanced e-commerce channel-side inventory calculation logic** feature. The channel-side calculation logic then considers unposted transactions that are created in the store channel. Unposted transactions can be cash-and-carry transactions, customer orders, and returns.
 1. Run the **1070** (**Channel configuration**) job.
 
 > [!NOTE]
-> If your Commerce environment was upgraded from a release that's earlier than Commerce version 10.0.8, after you enable the **Optimized product availability calculation** feature, it won't take effect until you also run the Initialize commerce scheduler at **Retail and Commerce \> Headquarters setup \> Commerce scheduler**.
+> If you upgraded your Commerce environment from a release that's earlier than Commerce version 10.0.8, after you enable the **Optimized product availability calculation** feature, the feature doesn't take effect until you also run the Initialize commerce scheduler at **Retail and Commerce \> Headquarters setup \> Commerce scheduler**.
 
 ### Commerce versions 10.0.8 through 10.0.11
 
@@ -47,9 +46,9 @@ If you're using Commerce versions 10.0.8 through 10.0.11, follow these steps to 
 
 ## Configure the Product availability job
 
-As a prerequisite to using channel-side inventory calculation, a periodic snapshot of inventory data from Commerce headquarters must be sent to the channel databases. This snapshot is created by the **Product availability** job and represents the information that Commerce headquarters has about inventory availability for a specific combination of a product or product variant and a warehouse. The snapshot includes only inventory transactions that had already been processed and posted in Commerce headquarters when the snapshot was taken. It might not be 100-percent accurate in real time because of the constant sales processing that occurs across distributed servers.
+To use channel-side inventory calculation, you need to send a periodic snapshot of inventory data from Commerce headquarters to the channel databases. The **Product availability** job creates this snapshot. It represents the information that Commerce headquarters has about inventory availability for a specific combination of a product or product variant and a warehouse. The snapshot includes only inventory transactions that Commerce headquarters already processed and posted when the snapshot was taken. Because constant sales processing occurs across distributed servers, the snapshot might not be 100-percent accurate in real time.
 
-- If inventory was sold for a product in a store through a cash-and-carry or asynchronous customer order sale in the point of sale (POS) application, Commerce headquarters won't immediately have information about the related inventory issue transaction for the sale. It will have information about the inventory that's sold for these types of store sales only after the P-job uploads the related transaction from the store's channel database into Commerce headquarters, and after the related sales orders are created through statement posting or the trickle-feed posting processes. The process of creating the orders in Commerce headquarters creates the related inventory transactions.
+- If a store sells inventory for a product through a cash-and-carry or asynchronous customer order sale in the point of sale (POS) application, Commerce headquarters doesn't immediately have information about the related inventory issue transaction for the sale. Commerce headquarters has information about the inventory sold for these types of store sales only after the P-job uploads the related transaction from the store's channel database into Commerce headquarters, and after the related sales orders are created through statement posting or the trickle-feed posting processes. The process of creating the orders in Commerce headquarters creates the related inventory transactions.
 - For e-commerce channel orders, Commerce headquarters has information about the inventory transactions only after the transactions are sent to Commerce headquarters via the P-job and the order synchronization process is completed.
 
 To take a snapshot of inventory in Commerce headquarters, follow these steps:
@@ -59,7 +58,7 @@ To take a snapshot of inventory in Commerce headquarters, follow these steps:
 
 ## Configure the Distribution schedule job
 
-After the **Product availability** job has finished running, the data that was captured must be pushed to the channel databases. The latest Commerce headquarters inventory snapshot can then be considered in the channel-side calculation of estimated on-hand inventory.
+After the **Product availability** job finishes running, you need to push the captured data to the channel databases. The channel-side calculation of estimated on-hand inventory can then consider the latest Commerce headquarters inventory snapshot.
 
 To sync snapshot data from Commerce headquarters to your channel databases, follow these steps:
 

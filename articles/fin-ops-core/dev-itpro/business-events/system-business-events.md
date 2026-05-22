@@ -4,7 +4,7 @@ description: Learn about batch business events and how to use them, including a 
 author: matapg007
 ms.author: snagamalla
 ms.topic: how-to
-ms.date: 02/25/2025
+ms.date: 03/05/2026
 # ms.custom: NotInTOC
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -21,27 +21,27 @@ The batch platform emits the following system business events.
 
 | Business event | Description | Module |
 |----------------|-------------|--------|
-| Batch job started | This event is fired when a batch job is marked as running. | Batch |
-| Batch job finished | This event is fired when a batch job is completed. | Batch |
-| Batch job failed | This event is fired when a batch job fails. | Batch |
-| Batch job cancelled | This event is fired when a batch job is canceled. | Batch |
+| Batch job started | This event fires when a batch job is marked as running. | Batch |
+| Batch job finished | This event fires when a batch job completes. | Batch |
+| Batch job failed | This event fires when a batch job fails. | Batch |
+| Batch job cancelled | This event fires when a batch job is canceled. | Batch |
 
 ## Usage
 
 ### Batch job started and batch job finished
 
-The **batch job started** and **batch job finished** events can be used to monitor and identify long-running batch jobs. They can also be used to notify stakeholders if a job takes longer than expected. By default, these events are turned off in the application.
+Use the **batch job started** and **batch job finished** events to monitor and identify long-running batch jobs. Use these events to notify stakeholders if a job takes longer than expected. By default, the application turns off these events.
 
 ### Batch job failed
 
-The **batch job failed** event can be used to monitor specific batch jobs for failure, and to notify stakeholders in real time. By default, this event is turned on in the application.
+Use the **batch job failed** event to monitor specific batch jobs for failure and to notify stakeholders in real time. By default, the application turns on this event.
 
 ## Configure batch business events
 
-1. Go to **System administration \> Inquiries \> Batch jobs**.
-2. On the **Business events** tab, update the settings to raise batch business events.
+1. Go to **System administration** > **Inquiries** > **Batch jobs**.
+1. On the **Business events** tab, update the settings to raise batch business events.
 
-The events have the following payload.
+The events include the following payload.
 
 | Field name | Field label |
 |------------|-------------|
@@ -51,7 +51,7 @@ The events have the following payload.
 | JobOwnerEmailId | Batch job owner email ID |
 | JobExecutedByEmailId | Batch job executed by email ID |
 | AdminEmailId | Admin user email ID |
-| JobEndUtcDateTime | Job end UTC date time |
+| JobEndUtcDateTime | Job end UTC date and time |
 | BusinessEventId | Business event ID |
 | ControlNumber | Business event control number |
 | Event Id | Business event instance ID |
@@ -60,6 +60,6 @@ The events have the following payload.
 | MinorVersion | Minor version |
 
 > [!NOTE]
-> Batch job business events should be activated for all legal entities because a batch job tasks can be configured to run in different legal entities.
+> Activate batch job business events for all legal entities because you can configure batch job tasks to run in different legal entities.
 
-To get the current catalog and schema of business events, go to **System administration \> Setup \> Business events**.
+To get the current catalog and schema of business events, go to **System administration** > **Setup** > **Business events**.

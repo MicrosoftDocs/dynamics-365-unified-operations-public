@@ -1,11 +1,10 @@
 ---
 title: Configure theme settings
-description: This article describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
+description: Learn how to configure theme settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/30/2024
+ms.date: 01/30/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -19,11 +18,11 @@ ms.custom:
 
 This article describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
 
-The Dynamics 365 Commerce e-Commerce online software development kit (SDK) lets theme designers specify various layouts for each module. Theme designers can then control specific layout options for images. The layouts are specified in the **\\src\\themes\\\<THEME\_NAME\>\\\<THEME\_NAME\>.theme.settings.json** file.
+The Dynamics 365 Commerce e-commerce online software development kit (SDK) lets theme designers specify various layouts for each module. Theme designers can then control specific layout options for images. You specify the layouts in the **\\src\\themes\\\<THEME\_NAME\>\\\<THEME\_NAME\>.theme.settings.json** file.
 
 ## Example theme.settings.json file
 
-The following example shows how module layouts that have specific size values for image settings can be added to the theme.settings.json file. Each layout will be exposed in the authoring tool when the module is configured. In the example below, the **content-block** module is configured so that it has three layouts: **full-width**, **left-right**, and **tile**. Each layout specifies height and width image settings for each of the defined viewport sizes.
+The following example shows how to add module layouts that have specific size values for image settings to the theme.settings.json file. Each layout appears in the authoring tool when you configure the module. In the example, the **content-block** module has three layouts: **full-width**, **left-right**, and **tile**. Each layout specifies height and width image settings for each of the defined viewport sizes.
 
 ``` json
 {
@@ -137,7 +136,7 @@ The following example shows how module layouts that have specific size values fo
 }
 ```
 
-Default grid breakpoint settings can also be set in the theme.settings.json file (see **gridSettings** in the preceding example).
+You can also set default grid breakpoint settings in the theme.settings.json file (see **gridSettings** in the preceding example).
 
 ## Additional resources
 

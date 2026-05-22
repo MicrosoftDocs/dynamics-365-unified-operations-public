@@ -77,7 +77,7 @@ Run the **IC Partner Cross-Environment Setup** assisted setup guide in all compa
 
 -->
 
-## Related resources
+## Related information
 
 - [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)  
 - [Master planning with demand forecasts](../master-planning/planning-optimization/demand-forecast.md)  

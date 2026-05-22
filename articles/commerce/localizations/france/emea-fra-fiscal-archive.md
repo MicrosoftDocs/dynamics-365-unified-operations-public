@@ -2,10 +2,9 @@
 title: Fiscal archive for France
 description: This article provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 02/26/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: France
 ms.author: anupamar
 ms.search.validFrom: 2021-02-19
@@ -21,9 +20,9 @@ This article provides information about the fiscal archive and the Fiscal archiv
 
 A fiscal archive is an XML file that contains sales data for a store and a fiscal period. It includes the totals for the closed period, and detailed data about sales transactions and events.
 
-A fiscal archive can be exported from a closed period grand total journal. (For more information about how to work with period grand total journals, see [Period grand total journal](emea-fra-cash-registers.md#period-grand-total-journal).) The exported fiscal archive XML file is digitally signed, and the digital signature is contained in a separate file. Exported fiscal archives must be kept on secured external media for the legal retention period.
+You can export a fiscal archive from a closed period grand total journal. For more information about how to work with period grand total journals, see [Period grand total journal](emea-fra-cash-registers.md#period-grand-total-journal). The exported fiscal archive XML file is digitally signed, and the digital signature is contained in a separate file. You must keep exported fiscal archives on secured external media for the legal retention period.
 
-You can verify the integrity of the fiscal archive and its data by using the [Fiscal archive integrity verification tool](#fiscal-archive-integrity-verification-tool).
+To verify the integrity of the fiscal archive and its data, use the [Fiscal archive integrity verification tool](#fiscal-archive-integrity-verification-tool).
 
 The XML format of the fiscal archive is implemented by using [Electronic reporting (ER)](../../../dev-itpro/analytics/general-electronic-reporting.md). For information about how to import and apply the ER configurations that are required to export fiscal archives, see [Configure the Z report and archive export formats](emea-fra-cash-registers.md#configure-the-z-report-and-archive-export-formats).
 
@@ -50,7 +49,7 @@ A fiscal archive has the following structure.
 
 The **PeriodGrandTotal** node of a fiscal archive contains the following elements.
 
-| Element/Node                     | Comment |
+| Element/Node                     | Description |
 |----------------------------------|---------|
 | SequentialNumber                 | The sequential number of the signed period grand total journal for the store. |
 | FromDate                         | The start date of the period of the journal. |
@@ -75,9 +74,9 @@ The **PeriodGrandTotal** node of a fiscal archive contains the following element
 
 The **Shift** node of a fiscal archive contains the following elements.
 
-| Element/Node                     | Comment |
+| Element/Node                     | Description |
 |----------------------------------|---------|
-| RegisterNumber                   | The identification of the register that the shift was opened on. |
+| RegisterNumber                   | The identification of the register that the shift opened on. |
 | Date                             | The date of the shift. |
 | TotalCashSales                   | The total amount of sales, including tax, for the shift. |
 | TotalCashReturns                 | The absolute value of the total amount of returns, including tax, for the shift. |
@@ -100,30 +99,30 @@ The **Shift** node of a fiscal archive contains the following elements.
 
 The **Receipt** node of a fiscal archive contains the following elements.
 
-| Element/Node            | Comment |
+| Element/Node            | Description |
 |-------------------------|---------|
-| AppVersion              | The identification of the version of the cash register software that was used to issue the receipt. |
+| AppVersion              | The version of the cash register software that you used to issue the receipt. |
 | Date                    | The date and time of the receipt in YYYYMMDDHHMMSS format. |
 | NumberOfCopies          | The number of times that a copy was printed for the receipt. |
 | OperatorCode            | The code of the operator who issued the receipt. |
 | OperatorName            | The name of the operator who issued the receipt. |
-| RegisterNumber          | The identification of the register that the receipt was issued from. |
-| CustomerAccount         | The identification of the customer that the receipt was issued for. |
+| RegisterNumber          | The register that the receipt was issued from. |
+| CustomerAccount         | The customer that the receipt was issued for. |
 | LineCount               | The number of sales lines on the receipt. |
 | Total                   | The total node of the receipt. |
 | ExclTax                 | The total amount of the receipt, excluding tax. |
 | InclTax                 | The total amount of the receipt, including tax. |
 | PaymentLines            | A collection of payment lines of the receipt. |
 | PaymentLine             | A node for a payment. |
-| Type                    | The identification of the payment type, as configured in the cash register. |
+| Type                    | The payment type, as configured in the cash register. |
 | Name                    | The name of the payment type, as configured in the cash register. |
 | Amount                  | The amount of payment in the store's currency. |
 | AmountCur               | The amount of payment in the payment currency. |
-| Currency                | The identification of the payment currency. |
+| Currency                | The payment currency. |
 | CurrencyRate            | The currency rate multiplied by 100 and rounded to a whole number. |
 | ReceiptLines            | A collection of receipt lines. |
 | ReceiptLine             | A node for a receipt line. |
-| Product                 | The identification of the product on the receipt line. |
+| Product                 | The product identification on the receipt line. |
 | Name                    | The name of the product on the receipt line. |
 | TaxRates                | A collection of tax lines that are linked to the receipt line. |
 | LineTaxRate             | A node for a tax line. |
@@ -155,7 +154,7 @@ The **ReceiptCopy** node of a fiscal archive contains the following elements.
 
 | Element/Node                    | Comment |
 |---------------------------------|---------|
-| RegisterNumber                  | The register number that the copy of the receipt was printed from. |
+| RegisterNumber                  | The register number that the copy of the receipt printed from. |
 | CopyNumber                      | The number of the receipt copy for the sales transaction. |
 | SequentialNumber                | The sequential number of the signed receipt copy event for the register. |
 | OriginalReceiptNumber           | The printed receipt number of the original sales transaction.|
@@ -173,12 +172,12 @@ The **ReceiptCopy** node of a fiscal archive contains the following elements.
 
 The **AuditEvent** node of a fiscal archive contains the following elements.
 
-| Element/Node            | Comment |
+| Element/Node            | Description |
 |-------------------------|---------|
 | Code                    | A predefined event code. |
 | EventType               | A predefined event type. |
 | Date                    | The date and time of the audit event in YYYYMMDDHHMMSS format. |
-| RegisterNumber          | The register number that the audit event was registered in. |
+| RegisterNumber          | The register number that the audit event registered in. |
 | OperatorCode            | The code of the operator who registered the audit event. |
 | OperatorName            | The name of the operator who registered the audit event. |
 | SequentialNumber        | The sequential number of the signed audit event for the register. |
@@ -190,32 +189,34 @@ The **AuditEvent** node of a fiscal archive contains the following elements.
 
 ## Fiscal archive integrity verification tool
 
-The Fiscal archive integrity verification tool can be used to verify the integrity of a fiscal archive, and to detect violations of the signature of the archive and of the chains of signed records in the archive. The tool should be applied to a fiscal archive file and the corresponding signature file. When it's run, the tool performs the following actions:
+Use the Fiscal archive integrity verification tool to verify the integrity of a fiscal archive. It detects violations of the signature of the archive and of the chains of signed records in the archive. Apply the tool to a fiscal archive file and the corresponding signature file. When you run the tool, it performs the following actions:
 
-1. Verify the signature of the fiscal archive file.
-1. Verify signatures and signature chains of all fiscal archive records. (These records are the period grand total journal, shift, receipt, receipt copy, and audit event records.) For each record, the tool performs these actions:
+1. Verifies the signature of the fiscal archive file.
+1. Verifies signatures and signature chains of all fiscal archive records. These records are the period grand total journal, shift, receipt, receipt copy, and audit event records. For each record, the tool performs these actions:
 
-    1. Build a text string from data elements of the record, according to the [digital signing rules](emea-fra-cash-registers.md#digital-signing-overview) and the internal version of the format of data that was used to sign the record. These elements include the signature of the previous record of the same type.
-    1. Calculate a hash code of the string by using the hash algorithm that was used to hash the data of the record before signing.
-    1. Decrypt the signature of the record by using the public key of the digital certificate that was used to sign the record.
-    1. Compare the result with the hash code that was calculated earlier.
+    1. Builds a text string from data elements of the record, according to the [digital signing rules](emea-fra-cash-registers.md#digital-signing-overview) and the internal version of the format of data that was used to sign the record. These elements include the signature of the previous record of the same type.
+    1. Calculates a hash code of the string by using the hash algorithm that hashes the data of the record before signing.
+    1. Decrypts the signature of the record by using the public key of the digital certificate that signs the record.
+    1. Compares the result with the hash code that was calculated earlier.
 
-1. Print all integrity violations that are found.
+1. Prints all integrity violations that it finds.
 
-The Fiscal archive integrity verification tool takes the form of a Windows PowerShell script and is published via the Commerce software development kit (SDK).
+The Fiscal archive integrity verification tool is a Windows PowerShell script and is published via the Commerce software development kit (SDK).
 
-To obtain the Fiscal archive integrity verification tool and run it against a fiscal archive, follow these steps:
+To get the Fiscal archive integrity verification tool and run it against a fiscal archive, follow these steps:
 
 1. Download the tool from the Commerce SDK:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Open the last available release branch.
+    1. Open the latest available release branch.
     1. Open **src \> FiscalIntegration \> SequentialSignatureFrance \> FiscalArchiveIntegrityVerificationTool**.
     1. Review the license terms for the tool.
     1. Download the contents of the folder to your local machine.
 
-1. Export public key files for all digital certificates that are used for digital signing of transactions and audit events on the Commerce channel side, or period grand total journals and fiscal archives on the Commerce headquarters side.
+1. Export public key files for all digital certificates that the Commerce channel side uses for digital signing of transactions and audit events. Also export public key files for all digital certificates that the Commerce headquarters side uses for signing period grand total journals and fiscal archives.
 1. Put the fiscal archive file, its signature file, and all public key files into one folder.
 1. Run Windows PowerShell.
 1. Run the **verify.ps1** script of the tool, and specify the name of the fiscal archive file. Include the full path of the file.
 1. Review any integrity violations that are found.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

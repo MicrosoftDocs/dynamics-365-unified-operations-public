@@ -4,7 +4,7 @@ description: Learn about the client-side design APIs and includes recommendation
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/31/2024
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-07-20
@@ -21,9 +21,10 @@ ms.custom:
 This article provides an overview of the application programming interfaces (APIs) for client-side design and includes recommendations for using them.
 
 ## Terminology
+
 The following list includes some frequently used terms that apply to the client-side design APIs.
 
-- **Design** – A property that can optionally be specified on a Page, Action, or other component object to override its default design.
+- **Design** – A property that you can optionally specify on a Page, Action, or other component object to override its default design.
 - **Component** – A component can be one of four types:
 
   - **Block container** (default) – A container that has CSS block behaviors. (In other words, the container is equivalent to an element that has a CSS **display: block** style declaration.)
@@ -42,26 +43,27 @@ The following list includes some frequently used terms that apply to the client-
   - List-specific
   - Generic (non-specific)
 
-    Properties are specified as key-value pairs on the component's JSON object. The properties that are applicable depend on the type of component that the property is applied to.
+    Specify properties as key-value pairs on the component's JSON object. The applicable properties depend on the type of component that the property is applied to.
 
-    For properties that have a predefined list of possible values, the first value that is shown in the documentation is the property's default value. In most cases, if you don't specify a property at all (that is, if you omit the property from the JSON object), the property behaves as if you had set its default value.
+    For properties that have a predefined list of possible values, the first value that is shown in the documentation is the property's default value. In most cases, if you don't specify a property at all (that is, if you omit the property from the JSON object), the property behaves as if you set its default value.
 
-    Generic properties can be applied to all component types.
+    You can apply generic properties to all component types.
 
-	When you specify properties, follow these guidelines:
+ When you specify properties, follow these guidelines:
 
-  - You should not enclose property names in quotation marks.
-  - You must enclose all property values in double quotation marks, unless the documentation specifies otherwise.
+  - Don't enclose property names in quotation marks.
+  - Enclose all property values in double quotation marks, unless the documentation specifies otherwise.
 
-- **Inheritance** – If a color, font size, or font weight is applied to a control, all descendant controls inherit the same property, unless they are reassigned. If padding is applied to a control, it's inherited by the item (non-container) descendants of the control. No other properties are inherited.
+- **Inheritance** – If you apply a color, font size, or font weight to a control, all descendant controls inherit the same property, unless you reassign them. If you apply padding to a control, the item (non-container) descendants of the control inherit it. No other properties are inherited.
 
 ## Using design APIs
-The following code is a modified segment of business logic code from a Reservation Management example. Specifically, this code is from a variable that specifies the design for a reservation details page. Comments are included in the code to highlight a few possibilities.
+
+The following code is a modified segment of business logic code from a Reservation Management example. Specifically, this code is from a variable that specifies the design for a reservation details page. The code includes comments that highlight a few possibilities.
 
 > [!NOTE]
-> Any color, font size, or font weight that is applied to a control is also applied to all children of that control. Padding is inherited by non-container children. No other properties are inherited. Containers include lists, pages, groups, and parts.
+> Any color, font size, or font weight that you apply to a control also applies to all children of that control. Non-container children inherit padding. No other properties are inherited. Containers include lists, pages, groups, and parts.
 
-After a control is created that doesn't have any children or items, the control name just has to be written in quotation marks (see **FMCustomer\_FullName** in the following code). However, if any customization will be applied to that control, the code must be blocked, and the **name** label must be used (see **FMCustomer\_Image** in the following code).
+After you create a control that doesn't have any children or items, just write the control name in quotation marks (see **FMCustomer\_FullName** in the following code). However, if you apply any customization to that control, block the code and use the **name** label (see **FMCustomer\_Image** in the following code).
 
 ```json
 // Page root container
@@ -105,9 +107,8 @@ After a control is created that doesn't have any children or items, the control 
     }
 ```
 
-The following illustration shows the customer image, customer name, font, background color, and so on, that preceding code produces.
+The following illustration shows the customer image, customer name, font, background color, and other details that the preceding code produces.
 
-![Image showing information produced by preceding code.](media/detail-page.png)
-
+:::image type="content" source="media/detail-page.png" alt-text="Screenshot of information produced by preceding code.":::
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

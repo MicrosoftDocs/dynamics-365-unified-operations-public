@@ -4,7 +4,7 @@ description: Learn about how the NUMERALSTOTEXT Electronic reporting (ER) functi
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 12/10/2019
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 [!include [banner](../includes/banner.md)]
 
-The `NUMERALSTOTEXT` function returns the specified number as a *String* value after it has been spelled out (that is, converted to text strings) in the specified language.
+The `NUMERALSTOTEXT` function returns the specified number as a *String* value after it spells out the number in the specified language.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal po
 
 `number`: *Integer* or *Real*
 
-A numeric value that specifies the number that must be spelled out.
+A numeric value that specifies the number to spell out.
 
 `language`: *String*
 
@@ -42,7 +42,7 @@ A *String* value that represents the currency code.
 
 `print currency name flag`: *Boolean*
 
-A *Boolean* value that indicates whether a currency name must be added to the spelled-out text.
+A *Boolean* value that indicates whether to add a currency name to the spelled-out text.
 
 `decimal points`: *Integer*
 
@@ -56,9 +56,9 @@ The resulting text value.
 
 ## Usage notes
 
-The language code is optional. If it's defined as an empty string, the language code for the running context is used. The default language code is **EN-US**. The language code for the running context is defined in a **Folder** or **File** element of the Electronic reporting (ER) format that is running.
+The language code is optional. If you define it as an empty string, the language code for the running context is used. The default language code is **EN-US**. The language code for the running context is defined in a **Folder** or **File** element of the Electronic reporting (ER) format that is running.
 
-The currency code is optional. If it's defined as an empty string, the company currency for the running context is used.
+The currency code is optional. If you define it as an empty string, the company currency for the running context is used.
 
 > [!NOTE] 
 > The `print currency name flag` and `decimal points` arguments are analyzed only for the following language codes: **CS**, **ET**, **HU**, **LT**, **LV**, **PL**, and **RU**. Additionally, the `print currency name flag` argument is analyzed only for companies where the country's or region's context supports declension of currency names.

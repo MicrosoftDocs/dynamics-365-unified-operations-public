@@ -4,7 +4,7 @@ description: Learn about how the APIs of the Electronic reporting (ER) framework
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 10/05/2021
+ms.date: 03/12/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,9 +17,9 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.23.
+This article describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework are changed in Microsoft Dynamics 365 Finance version 10.0.23.
 
-## <a name="er-api-extend-file-source"></a>API to extend the list of ER sources of inbound documents
+## API to extend the list of ER sources of inbound documents
 
 To implement a custom ER [source](er-configure-data-import-sharepoint.md#configure-er-sources-for-the-er-format) of inbound documents, use the following public interfaces:
 
@@ -167,7 +167,7 @@ public interface ERIImportFileSourceSettingsStorage
 
 These interfaces let you offer custom source parameters in the **ER source settings** dialog box, so that they can be set at design time. The configured source can be used to access, in a configured custom source, inbound documents that must be imported at runtime.
 
-To learn more about this interface, complete the example in [Implement a custom source of inbound documents](er-custom-file-source.md).
+To learn more about this interface, see the example in [Implement a custom source of inbound documents](er-custom-file-source.md).
 
 ## Additional resources
 

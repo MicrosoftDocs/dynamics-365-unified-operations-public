@@ -4,7 +4,7 @@ description: Learn about while select statements in the X++ language, including 
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 06/16/2020
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,14 +16,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-A **while select** statement is used to handle data. It's the most widely used form of the **select** statement. The **while select** statement loops over many records that meet specific criteria, and can run a statement on each record. The syntax of a **while select** statement resembles the syntax of a **select** statement, but the statement is preceded by **while select** instead of **select**.
+Use a **while select** statement to handle data. It's the most widely used form of the **select** statement. The **while select** statement loops over many records that meet specific criteria, and can run a statement on each record. The syntax of a **while select** statement resembles the syntax of a **select** statement, but the statement is preceded by **while select** instead of **select**.
 
-+ Typically, when you use the **while select** statement for data manipulation, you use it in a transaction to ensure data integrity.
-+ The results of the **while select** statement are returned in a table buffer variable.
-+ If you use a field list in the **select** statement, only those fields are available in the table variable.
-+ If you use aggregate functions, such as **sum** or **count**, the results are returned in the fields that you perform the **sum** or **count** over. You can count, average, or sum only integer and real fields.
-+ The **select** statement itself is run only one time, immediately before the first iteration of the statements in the loop.
-+ Any Boolean expressions that are added to the **while select** statement (for example, **iCounter &lt; 1**) are tested only one time. This behavior differs from the behavior of the **while** statement in languages such as C++ and C\#. For example, the following loop can have more than one iteration.
+- Typically, when you use the **while select** statement for data manipulation, use it in a transaction to ensure data integrity.
+- The **while select** statement returns results in a table buffer variable.
+- If you use a field list in the **select** statement, only those fields are available in the table variable.
+- If you use aggregate functions, such as **sum** or **count**, the results are returned in the fields that you perform the **sum** or **count** over. You can count, average, or sum only integer and real fields.
+- The **select** statement itself runs only one time, immediately before the first iteration of the statements in the loop.
+- Any Boolean expressions that you add to the **while select** statement (for example, **iCounter &lt; 1**) are tested only one time. This behavior differs from the behavior of the **while** statement in languages such as C++ and C\#. For example, the following loop can have more than one iteration.
 
     ```xpp
     int iCounter = 0;
@@ -49,6 +49,5 @@ while select custTable
     info(strFmt("%1 , %2", custTable.AccountNum, custTable.SalesGroup));
 }
 ```
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

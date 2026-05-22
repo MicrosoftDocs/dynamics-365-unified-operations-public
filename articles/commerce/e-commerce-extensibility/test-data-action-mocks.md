@@ -1,11 +1,10 @@
 ---
 title: Test data actions with mocks
-description: This article describes how to test data actions with mock data.
+description: Learn how to test data actions with mock data in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/31/2024
+ms.date: 02/05/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,9 +15,9 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to test data actions with mock data.
+This article describes how to test data actions with mock data in Microsoft Dynamics 365 Commerce.
 
-By mocking data actions in Microsoft Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. An action mock is useful if you want to test your module without invoking the actual action. You will have to use this approach if you haven't configured your Commerce server (**MSDyn365Commerce_BASEURL** property) in the .env file. For more information about .env files, see [Configure a development environment (.env) file](configure-env-file.md).
+By mocking data actions in Microsoft Dynamics 365 Commerce, you can replace the output of a data action with the data that you specify in the `actionmock.json` file. An action mock is useful if you want to test your module without invoking the actual action. You need to use this approach if you don't configure your Commerce server (**MSDyn365Commerce_BASEURL** property) in the .env file. For more information about .env files, see [Configure a development environment (.env) file](configure-env-file.md).
 
 ## Action mock structure
 
@@ -40,7 +39,7 @@ The following example shows how the **&lt;MODULE\_MOCK\_NAME&gt;.actionmock.json
 }
 ```
 
-If no **CacheKey** value is specified, or if "**&#42;**" is specified, all actions that have the corresponding **CacheObjectType** value will receive the mock output.
+If no **CacheKey** value is specified, or if "**&#42;**" is specified, all actions that have the corresponding **CacheObjectType** value receive the mock output.
 
 ## Example
 
@@ -127,7 +126,7 @@ To use an action mock in your module preview, include the query string parameter
 
 `https://localhost:4000/modules?type=product-feature&actionMock=product-feature:myModuleMock`
 
-Here is the syntax of the query string parameter.
+Here's the syntax of the query string parameter.
 
 `{module-name}:{action-mock-file-name}`
 
@@ -146,6 +145,5 @@ If no action mock file name is specified, the package name is used to search for
 [Core data actions](core-data-actions.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

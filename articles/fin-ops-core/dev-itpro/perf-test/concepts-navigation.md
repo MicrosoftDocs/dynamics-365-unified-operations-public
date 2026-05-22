@@ -4,7 +4,7 @@ description: Learn about how to use navigation to simplify the discoverability o
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: concept-article
-ms.date: 03/27/2019
+ms.date: 03/16/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer
@@ -107,9 +107,8 @@ AtlDataProductsItems
 AtlDataInventChargeGroups
 ```
 
-### Notes
-
-The same entity navigation object can be exposed from multiple modules when this approach makes sense. For example, `AtlDataProductsItems` is exposed from both `data.product()` and `data.invent()`.
+> [!NOTE]
+> The same entity navigation object can be exposed from multiple modules when this approach makes sense. For example, `AtlDataProductsItems` is exposed from both `data.product()` and `data.invent()`.
 
 ## Helper navigation objects
 

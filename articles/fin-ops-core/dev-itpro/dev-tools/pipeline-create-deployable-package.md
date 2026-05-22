@@ -6,7 +6,7 @@ ms.author: snamilikonda
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/12/2025
+ms.date: 03/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-03-05
@@ -20,6 +20,7 @@ If you want to deploy customizations to an environment, a deployable package is 
 This article assumes a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
+>
 > - Before you can add these steps to a pipeline, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps organization. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
 > - This Azure DevOps task requires that the X++ compiler tools be available on the agent. Either run this task on a build virtual machine (VM) agent, or use the Compiler Tools NuGet package. For more information about the NuGet package and how to install it in a pipeline, see [Build automation using Microsoft-hosted agents and Azure Pipelines](hosted-build-automation.md).
 
@@ -74,7 +75,5 @@ The following example assumes the **Location of the X++ binaries to package** pr
 #### In the Create Deployable Package step, what is the workaround for when I get the "There is not enough space on the disk" error?
 
 If the agent running the pipeline runs out of disk space during the **Create Deployable Package** step, the workaround is to introduce a delete files task in the pipeline just before this task to delete the contents of the `$(Build.SourcesDirectory)`. This task then creates space if no other part of the pipeline is using those files. The **Create Deployable Package** step isn't dependent on the model source files because it's dependent on the build output from the build step.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

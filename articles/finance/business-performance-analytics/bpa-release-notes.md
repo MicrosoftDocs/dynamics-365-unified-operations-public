@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in business per
 author: Weijiesa 
 ms.author: jiwo
 ms.topic: article
-ms.date: 10/24/2025
+ms.date: 03/27/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -16,35 +16,68 @@ audience: Application User
 
 This article provides information about what's new or changed in Business performance analytics.  
 
-## October 2025
+## February 2026
 
-The October release of Business performance analytics version 2.5 and contains the following features.
+The February release of Business performance analytics version 2.7 includes the following features.
 
 ### Feature enhancements
 
 | Category | Feature | Description |
 |----------|---------|-------------|
-| Transform changes | Optimize O2C Value Chain - SalesPaymentFact | Improve data transformation performance for SalesPaymentFact. |
-| Transform changes | Optimize O2C Value Chain - BankStatementFact | Improved performance for O2C transformations. |
-| Transform changes | Optimize O2C Value Chain - ReturnAuthorizationFact | Improved performance for O2C transformations. |
-| Transform changes | Enable CDS3 implementation for Business performance analytics | This accelerates the data sync process. |
-| Transform changes | SalesPaymentMatchedNumberKey and SalesPaymentMatchingNumberKey use identical value in the transform | The correct customer transaction is related to its corresponding SalesPaymentMatchingFact record. |
-| Transform changes | 502 status MEF job led to multiple records and broke flow logic | This prevents the V2 flow from not working in an edge case. |
-| Data model additions and changes | Optimize purchase payment fact joins | Optimize purchase payment fact. |
+| Data model additions and changes | Acquire to dispose data model | Release Acquire‑to‑Dispose dimensional model in BPA 2.7, expanding BPA’s value chain coverage across Fix asset acquisition, usage, and disposal. |
+| Transform changes | Add Reporting Tag Transforms | Add Reporting Tag Transforms. |
+| Transform changes | Add O2C-V2 ReturnAuthorizationFactTransform | Add O2C-V2 ReturnAuthorizationFactTransform. |
+| Transform changes | Add O2C-V2 SalesDeferralScheduleFactTransform | Add O2C-V2 SalesDeferralScheduleFactTransform. |
+| Bug fix | Purchase Invoice Fact producing duplicates when joining in purchase_invoice_header_allocated_charge_and_tax_df | Purchase invoice has duplicates and reports are blank. |
+| Bug fix | Excel report creation failed from UI | Addressed issue where Excel report creation fails when creating a report from the UI. |
+| Bug fix | Foreign keys aren't validated when dim transforms are skipped | Address the current behaviour that doesn't enforce foreign key validation when dimensional transforms are skipped. |
+| Other changes | Release Analytics MCP Server to 2.5 | Release Analytics MCP Server 2.5, strengthening platform reliability and performance to support enterprise‑scale analytics. |
+
+## December 2025
+
+The December release of Business performance analytics version 2.6 includes the following features.
+
+### Feature enhancements
+
+| Category | Feature | Description |
+|----------|---------|-------------|
+| Data model additions and changes | Add ReturnAuthorizationLineNumberKey in Sales Order Fact | Add a new column to the sales order fact, which customers can see in data lake and reports. |
+| Bug fix | Fix mis-mapping **Delivery date** field mapping in purchase order and receipt fact transforms | PurchaseOrderFact and ProductReceiptFact use the incorrect delivery data field from the Finance table. |
+| Bug fix | SalesPaymentMatchedNumberKey and SalesPaymentMatchingNumberKey use identical value in the transform | The correct customer transaction relates to its corresponding SalesPaymentMatchingFact record. |
+| Bug fix | 403 error when transform v2 flow runs before initial flow | This error prevents the transform flow from being delayed. |
+| Bug fix | When state machine is created for the first time put in protection for duplicate error | Fix protecting against a record creation race condition during the initial installation or update. |
+| Bug fix | Excel report creation failed from UI | Addressed issue where Excel report creation fails when attempting to create a report from the UI. |
+| Other changes | Handle MaxParallelism errors during refresh | Address issues where Power BI refresh might fail due to concurrency being too high. |
+
+## October 2025
+
+The October release of Business performance analytics version 2.5 contains the following features.
+
+### Feature enhancements
+
+| Category | Feature | Description |
+|----------|---------|-------------|
+| Transform changes | Optimize O2C Value Chain - SalesPaymentFact | Improves data transformation performance for SalesPaymentFact. |
+| Transform changes | Optimize O2C Value Chain - BankStatementFact | Improves performance for O2C transformations. |
+| Transform changes | Optimize O2C Value Chain - ReturnAuthorizationFact | Improves performance for O2C transformations. |
+| Transform changes | Enable CDS3 implementation for Business performance analytics | Accelerates the data sync process. |
+| Transform changes | SalesPaymentMatchedNumberKey and SalesPaymentMatchingNumberKey use identical value in the transform | Relates the correct customer transaction to its corresponding SalesPaymentMatchingFact record. |
+| Transform changes | 502 status MEF job led to multiple records and broke flow logic | Prevents the V2 flow from not working in an edge case. |
+| Data model additions and changes | Optimize purchase payment fact joins | Optimizes purchase payment fact. |
 | Reports changes | Deleted or canceled purchase order lines still appearing in reports | Customers can see if the purchase order line has been deleted or not and can adjust the filter to show or hide them. |
-| Reports changes | Force full refresh when duplicate is detected on PowerBI refresh | Improve PowerBI refresh reliability by adding dataset clear and refresh when duplicates are detected. |
+| Reports changes | Force full refresh when duplicate is detected on PowerBI refresh | Improves Power BI refresh reliability by adding dataset clear and refresh when duplicates are detected. |
 | Other changes | When turning on row level secruity, the field is off by default on the filter and isn't being returned | When the row level security is turned on, the upgrade fails due to a null reference error. |
 | Other changes | Determine if first time setup should be restricted to administrators or remove the restriction | System administrators can now manage users in Business performance analytics without being Business performance analytics administrator. |
 | Other changes | Uninstalling Business performance analytics doesn't cleanup temp/FA Tables data | When uninstalling Business performance analytics, there's an option to remove data. |
 
 ## August 2025
 
-The August release of Business performance analytics version 2.4 and contains the following features.
+The August release of Business performance analytics version 2.4 contains the following features.
 
 ## Feature enhancements
 
-| Category                    | Title                                                        | Description                                                                                                        |
-|-----------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Category           | Title         |      Description                                   |
+|-----------------------------|---------------------|------------------------------------------------|
 | Data model additions and changes | Add SalesInvoiceTaxAmount Lines in Sales invoice fact    | Added SalesInvoiceTaxAmount and SalesInvoiceAllocatedTaxAmount to the SalesInvoiceFact.               |
 | Data model additions and changes | Generate PurchaseInvoiceFact purchaseinvoicesource key from VendInvoiceJour and VendInvoiceTrans | PurchaseInvoiceFact bug fix.                     |
 | Data model additions and changes | Remove duplicate primary key in Purchase invoice fact | Address issue where charges that don't have the same currency as the invoice line can lead to duplicate data.        |
@@ -79,20 +112,19 @@ The June release of Business performance analytics version 2.3 and contains the 
 |Data model additions and changes| Add SellingPartyGroup in the Selling party dimension| Added BuyingPartyGroup to the BuyingPartyDimension to enhance dimensional analysis. |
 |Data model additions and changes| Change BudgetFact partitionId field| Updated BudgetFact to include future dated budget data in incremental refresh. |
 |Data model additions and changes| Update Existing O2C Fact - Sales payment matching|Enhanced O2C fact with updated Sales payment matching logic. |
-|Data model additions and changes| Add LedgerKey into PickingList fact |Added LedgerKey to PickingList fact to support financial traceability.| 
+|Data model additions and changes| Add LedgerKey into PickingList fact |Added LedgerKey to PickingList fact to support financial traceability.|
 |Other changes| Purchase invoice charge and tax isn't pulling in numbers - P2P| Resolved issue with missing charge and tax values in purchase invoice for P2P scenarios. |
 |Other changes| Business performance analytics error messages should be enhanced| Improved Business performance analytics self help logs with Microsoft documentation links for better troubleshooting. |
 |Other changes| Balance sheet page filters not set correctly |Corrected filters on Dim - General ledger account. Type to display all values properly. |
 |Other changes| Provide easy way to download Power BI dataset |Enabled Fabric SQL connection for easier Power BI dataset downloads. |
-|Dimension security changes | Dimension security enhancement to enables security by default| Dimension security is now secure by default. Previously, if fact tables weren't related to a secured dimension, their rows defaulted to visible. The default behavior is updated to hide rows from unrelated Fact tables instead. Users can now select up to eight dimensions.| 
+|Dimension security changes | Dimension security enhancement to enables security by default| Dimension security is now secure by default. Previously, if fact tables weren't related to a secured dimension, their rows defaulted to visible. The default behavior is updated to hide rows from unrelated Fact tables instead. Users can now select up to eight dimensions.|
 |Other changes| Update UI for new RLS implementation| Refreshed user interface to align with updated role-based security implementation. |
 |Report changes| Rename Dim-Ledger attributes| Updated labels for **Accounting currency** and **Reporting currency** fields in 'Dim - Ledger'. |
 |Report changes| Key fields not exposed in Power BI dataset| Exposed key fields in Fact tables to support extension scenarios. |
 |Report changes| Incorrect format for Journal line number in Budget Fact| Changed Journal line number format from currency to whole number. |
 |Report changes| Inconsistent or missing metrics folders |Added missing metrics folders to key Facts in Power BI semantic layer. |
-|Report changes| Replace deprecated measures in Business performance analytics reports| Replaced deprecated measures with updated metrics in Microsoft Business performance analytics reports.| 
+|Report changes| Replace deprecated measures in Business performance analytics reports| Replaced deprecated measures with updated metrics in Microsoft Business performance analytics reports.|
 |Report changes| Balance sheet report missing editable filter| Enabled editable filter for account type in Balance sheet to support custom category names. |
 |Report changes| Fact - General ledger - Company group format issue| Corrected data type of Company group in Fact - General Ledger from currency to whole number. |
 |Report changes| Promote Category filter for profit loss report| Promoted account type filter to page/report level in profit and loss report for customization. |
 | Platform optimization  | Automated cleanup of Dataverse temp files | Implemented automated cleanup of temporary files left by Athena ingestion. Only analytical outputs from transforms are retained, reducing Dataverse storage usage and improving refresh performance. |
-

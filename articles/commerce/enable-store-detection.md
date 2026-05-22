@@ -1,11 +1,10 @@
 ---
 title: Enable location-based store detection
-description: This article describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
+description: Learn how to turn on location-based store detection for your Microsoft Dynamics 365 Commerce site.
 author: brianshook
-ms.date: 08/23/2024
+ms.date: 01/22/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,13 +15,13 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
+This article describes how to turn on location-based store detection for your Microsoft Dynamics 365 Commerce site.
 
-Location-based store detection in Commerce lets you provide relevant site content to customers, based on their location. When location-based store detection is turned on, the Commerce rendering service uses the country/region information from the IP address of the customer's web browser to direct the customer to the best geographical site configuration that is available.
+Location-based store detection in Commerce lets you provide relevant site content to customers, based on their location. When you turn on location-based store detection, the Commerce rendering service uses the country/region information from the IP address of the customer's web browser to direct the customer to the best geographical site configuration that's available.
 
 ## Privacy notice
 
-If you turn on the location-based store detection feature, information from the customer's browser is sent to a Microsoft location service. This information is then used to provide the customer content that is relevant to the customer's location. Both the information that is sent from the customer's browser and the location-based information that is returned to the customer are subject to privacy and cookie compliance policies.
+If you turn on the location-based store detection feature, the customer's browser sends information to a Microsoft location service. This information is then used to provide the customer content that's relevant to the customer's location. Both the information that the customer's browser sends and the location-based information that the service returns to the customer are subject to privacy and cookie compliance policies.
 
 ## Turn on location-based store detection
 

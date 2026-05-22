@@ -4,7 +4,7 @@ description: Learn abouthow to register types from the process automation framew
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Developer

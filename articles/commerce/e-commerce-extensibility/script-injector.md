@@ -1,11 +1,10 @@
 ---
 title: Script injectors
-description: This article covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
+description: Learn about script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 08/01/2024
+ms.date: 02/05/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,32 +15,32 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
+This article covers script injectors that you can use to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 
-The Dynamics 365 Commerce module library provides two prebuilt script injector modules: **external script** and **inline script**. You can add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page as needed. For example, you can add a script for integration with third-party analytics, or other service scripts.
+The Dynamics 365 Commerce module library provides two prebuilt script injector modules: **external script** and **inline script**. Add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page as needed. For example, you can add a script for integration with partner analytics, or other service scripts.
 
 ## External script module
 
-The external script module allows you to add JavaScript from external sources by providing a URL that points to a valid JavaScript file. After the module is added using Commerce site builder, the script URL can be added to the **Script source** property.
+The external script module enables you to add JavaScript from external sources by providing a URL that points to a valid JavaScript file. After you add the module by using Commerce site builder, add the script URL to the **Script source** property.
 
-The external script module includes the **execute script asynchronously** and **defer script execution** configuration properties. The **execute script asynchronously** property specifies whether the script should be executed asynchronously. The **defer script execution** property specifies whether the script should be executed when the page has finished parsing configuration properties.
+The external script module includes the **execute script asynchronously** and **defer script execution** configuration properties. The **execute script asynchronously** property specifies whether the script should be executed asynchronously. The **defer script execution** property specifies whether the script should be executed when the page finishes parsing configuration properties.
 
-The following illustration shows an external script injector module that is being configured on a page template. The **Script source** property box is where you add the URL that points to the script source code that will be injected into the HTML for the rendered page.
+The following illustration shows an external script injector module being configured on a page template. The **Script source** property box is where you add the URL that points to the script source code that the module injects into the HTML for the rendered page.
 
-![External script module properties in site builder.](media/script-injector.png)
+:::image type="content" source="media/script-injector.png" alt-text="Screenshot of external script module properties in site builder.":::
 
 ## Inline script module
 
-The inline script module allows you to add inline JavaScript code directly to a page template or page. After the module is added using Commerce site builder, the script can be pasted into the **Inline script** property box, as highlighted in the following illustration. 
+The inline script module enables you to add inline JavaScript code directly to a page template or page. After you add the module by using Commerce site builder, paste the script into the **Inline script** property box, as highlighted in the following illustration. 
 
-![Inline script module properties in site builder.](media/inline-script-injector.png)
+:::image type="content" source="media/inline-script-injector.png" alt-text="Screenshot of inline script module properties in site builder.":::
 
 > [!NOTE]
-> When adding script to the **Inline script** property box, you do not need to add the outer **\<script\>** tags, just the inline JavaScript code.
+> When adding script to the **Inline script** property box, you don't need to add the outer **\<script\>** tags, just the inline JavaScript code.
 
 ## Custom script injector modules
 
-In some cases, you might have to inject scripts into your site or site pages, but the prebuilt script injector modules from the module library aren't flexible as you require. For example, you might want additional configuration fields to be exposed in the authoring tools. In these cases, you can extend the prebuilt script injector modules into new custom script injector modules. You can put a custom script injector module on a page, in a shared template, or in a master template.
+In some cases, you need to inject scripts into your site or site pages, but the prebuilt script injector modules from the module library aren't as flexible as you require. For example, you might want the authoring tools to expose extra configuration fields. In these cases, extend the prebuilt script injector modules into new custom script injector modules. You can add a custom script injector module to a page, a shared template, or a master template.
 
 ### Create a custom script injector
 
@@ -51,11 +50,11 @@ To create a custom script injector, use the following command to create a new mo
 C:\repos\MySite>yarn msdyn365 add-module my-script-injector
 ```
 
-Next, open the **my-script-injector.definition.json** file and change the **"$type"** property to **"scriptModule"**. After providing a friendly name and description, add the **"Script"** and **"HTML head"** categories, and **"script"** to the **"tags"** property. These categories and tags will allow the script injector to access the applicable page slots already defined inside a page template.
+Next, open the **my-script-injector.definition.json** file and change the **"$type"** property to **"scriptModule"**. After providing a friendly name and description, add the **"Script"** and **"HTML head"** categories, and **"script"** to the **"tags"** property. These categories and tags allow the script injector to access the applicable page slots already defined inside a page template.
 
 Script modules contain a special **"attributes"** section that defines where the module can be placed. The attributes include **"allowInBodyBegin"**, **"allowInBodyEnd"**, and **"allInHead"**, and the attribute values can be **true** or **false**. The default values for all three attributes are **false**, so it's important to specify where the module can be loaded.
 
-Configurations can also be added to allow the script to be added from within Commerce site builder.  
+You can also add configurations to allow the script to be added from within Commerce site builder.  
 
 The following example shows a configured custom script injector definition file.
 
@@ -102,9 +101,9 @@ The following example shows a configured custom script injector definition file.
 
 #### Modify the script injector view file
 
-You can modify the **my-script-injector.tsx** React file and the **my-script-injector.view.tsxAnalytics.tsx** view file, if needed. 
+You can modify the **my-script-injector.tsx** React file and the **my-script-injector.view.tsx** view file, if needed. 
 
-To create a custom script injector you can use **HtmlHeadInclude**, which is a React [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) that allows you to insert elements into the head of the page. It is simple to use, and you can add any elements you want in your view file between the **\<HtmlHeadInclude\>** tags, as shown in the following example.
+To create a custom script injector, use **HtmlHeadInclude**, which is a React [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) that allows you to insert elements into the head of the page. It's simple to use, and you can add any elements you want in your view file between the **\<HtmlHeadInclude\>** tags, as shown in the following example.
 
 ```typescript
 import { HtmlHeadInclude } from '@msdyn365-commerce/core-internal';
@@ -123,11 +122,11 @@ export default (props: IMyScriptInjectorViewProps) => {
 ```
 
 > [!NOTE]
-> Inline script content should be saved as a string and then inserted into the script using the React **dangerouslySetInnerHTML** attribute (to avoid escaping special characters), and the **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed. Possible values include **headStart**, **headEnd**, **bodyStart**, and **bodyEnd**.
+> Inline script content should be saved as a string and then inserted into the script by using the React **dangerouslySetInnerHTML** attribute (to avoid escaping special characters). The **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed. Possible values include **headStart**, **headEnd**, **bodyStart**, and **bodyEnd**.
 
-The **HtmlHeadInclude** component can also be used to insert **\<title\>**, **\<meta\>**, **\<link\>**, and **\<style\>** tags into the head of an HTML document. Unlike scripts, these elements do not need a **data-load-point** attribute as they will always be placed in the head.
+The **HtmlHeadInclude** component can also be used to insert **\<title\>**, **\<meta\>**, **\<link\>**, and **\<style\>** tags into the head of an HTML document. Unlike scripts, these elements don't need a **data-load-point** attribute as they always are placed in the head.
 
-After a custom script injector module is deployed to a Dynamics 365 Commerce environment, it will appear in site builder.
+After you deploy a custom script injector module to a Dynamics 365 Commerce environment, it appears in site builder.
 
 ## Additional resources
 

@@ -1,11 +1,10 @@
 ---
 title: Test modules by using page mocks
-description: This article describes how to test modules by using page mocks.
+description: Learn how to test modules by using page mocks in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/31/2024
+ms.date: 02/06/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,15 +15,15 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to test modules by using page mocks.
+This article describes how to test modules by using page mocks in Microsoft Dynamics 365 Commerce.
 
-Some modules are built to interact with other modules. You can use page mocks to test those modules together in a local development environment.
+Some modules interact with other modules. Use page mocks to test those modules together in a local development environment.
 
-Page mock files are stored under the /src/pageMocks directory. They can be loaded by using the URL `https://localhost:4000/page?mock=PAGE_MOCK`, where **PAGE\_MOCK** is the file name of the mock file, but without the **.json** file name extension.
+Developers store page mock files under the `/src/pageMocks` directory. Load them by using the URL `https://localhost:4000/page?mock=PAGE_MOCK`, where **PAGE\_MOCK** is the file name of the mock file, but without the `.json` file name extension.
 
 ## Create a new page mock
 
-To create a new page mock, create a blank .json file under the /src/pageMocks directory, such as **/src/pageMocks/campaign-page.json**.
+Create a new page mock by creating a blank `.json` file under the `/src/pageMocks` directory, such as `/src/pageMocks/campaign-page.json`.
 
 ## Example
 
@@ -94,19 +93,19 @@ The following example shows a page mock that adds two instances of the same modu
 }
 ```
 
-Every page defines a root (**core-root** in the example above) that controls the page HTML structure with slots for "HTML Head", "Body Begin", "Body" and "Body End". The **body** then must have a page container module. In this example, the **default-page** page container is used.
+Every page defines a root (`core-root` in the preceding example) that controls the page HTML structure with slots for "HTML Head," "Body Begin," "Body," and "Body End." The **body** then must have a page container module. In this example, the `default-page` page container is used.
 
-The **modules** section lists the modules that are included inside the page arranged by named slots. The **default-page** page container has a slot that is named **primary**. This container is responsible for laying out the modules that are included inside it. In this example, the **productFeature** module is rendered two times in a row with the mock data defined in the **config** section for each.
+The **modules** section lists the modules that are included inside the page arranged by named slots. The `default-page` page container has a slot that is named **primary**. This container lays out the modules that are included inside it. In this example, the `productFeature` module renders two times in a row with the mock data defined in the **config** section for each.
 
-The preceding example can be accessed by using the following URL: `https://localhost:4000/page?mock=campaign-page`.
+You can access the preceding example by using the following URL: `https://localhost:4000/page?mock=campaign-page`.
 
 ## Rendering context mocks
 
-The **renderingContext** node provides additional mock data that modules can access via the **this.props.context.request** object. This mock data can include the bootstrap grid breakpoints, the locale, and the user context. For more information, see [Request properties object](request-properties-object.md).
+The **renderingContext** node provides additional mock data that modules can access through the **this.props.context.request** object. This mock data can include the bootstrap grid breakpoints, the locale, and the user context. For more information, see [Request properties object](request-properties-object.md).
 
 ### Simulate the signed-in state
 
-Some modules might have logic that must check the signed-in state of the user before they take the appropriate action. Typically, a module gets the state from the **this.props.context.request.user** object. Because business-to-consumer (B2C) sign-in isn't supported in a development environment, the user object can be mocked by using the **user** node, as shown in the following example.
+Some modules might have logic that checks the signed-in state of the user before they take the appropriate action. Typically, a module gets the state from the **this.props.context.request.user** object. Because business-to-consumer (B2C) sign-in isn't supported in a development environment, you can mock the user object by using the **user** node, as shown in the following example.
 
 ```json
 {
@@ -179,16 +178,16 @@ Some modules might have logic that must check the signed-in state of the user be
 }
 ```
 
-Use the following procedure if you must simulate real data or the token that is returned from Commerce Server.
+Use the following procedure if you must simulate real data or the token that Commerce Server returns.
 
 The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the web browser's developer (F12) tools are open and a user is signed in, you can view the object by opening a console window and entering **\_\_\_initialData\_\_\_.requestContext.user**. 
 
-To simulate real data or the token that is returned from Commerce Server, follow these steps:
+To simulate real data or the token that Commerce Server returns, follow these steps:
 
 1. Load the e-commerce site page that you're working on, and sign in or create a new account.
 1. Open your web browser's debugging tools. For example, if you're using Google Chrome or Microsoft Edge, you can open the developer tools by selecting the **F12** key. 
 1. Open a console window, and enter **\_\_\_initialData\_\_\_.requestContext.user** to view the object. (User information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable.)
-1. Add the module that must be tested to a page mock.
+1. Add the module that you want to test to a page mock.
 1. In the **renderingContext** section of the page mock, add the following **userContext** section.
 
     ```typescript
@@ -211,20 +210,20 @@ To simulate real data or the token that is returned from Commerce Server, follow
 
 1. Update the user information (**token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**) that you obtained from the web browser's debugging tools.
 
-The user information can now be obtained from within the **this.props.context.request.user** object in the React component.
+You can now access the user information from within the **this.props.context.request.user** object in the React component.
 
 ## Create a dynamic page mock from a production e-Commerce page
 
-You can create dynamic page mocks that mimic live e-Commerce site pages and can be used locally to test module interaction. For example, these page mocks can mock the signed-in state and other page contextual properties as required. Therefore, they can be helpful when you locally test pages such as account pages and wishlist pages, or interactions such as order checkout flow.
+You can create dynamic page mocks that mimic live e-Commerce site pages and use them locally to test module interaction. For example, these page mocks can mock the signed-in state and other page contextual properties as required. Therefore, they can be helpful when you locally test pages such as account pages and wishlist pages, or interactions such as order checkout flow.
 
 ### Save a live e-Commerce page's raw JSON structure
 
-The raw JavaScript Object Notation (JSON) structure of any live e-Commerce page can be captured and saved so that it can be used as a page mock. Open the e-Commerce site page that you want to capture, and sign in if the signed-in state is desired. Next, append the query string parameter `?item=nodeserviceproxy:true` to the page URL, and then reload the page to obtain the JSON of the raw page context.
+You can capture and save the raw JavaScript Object Notation (JSON) structure of any live e-Commerce page so you can use it as a page mock. Open the e-Commerce site page that you want to capture, and sign in if you want the signed-in state. Next, append the query string parameter `?item=nodeserviceproxy:true` to the page URL, and then reload the page to get the JSON of the raw page context.
 
 > [!NOTE]
 > For this operation to work, you must have secure Microsoft Entra access to your production site, and you might be prompted to sign in if you aren't already signed. Use the same Microsoft Entra account that you use to sign in to Commerce site builder.
 
-Next, in your development environment, create a new page mock JSON file under the **src/pageMocks** directory. Paste in the JSON file that you obtained from the capture and save operation. 
+Next, in your development environment, create a new page mock JSON file under the **src/pageMocks** directory. Paste the JSON file that you got from the capture and save operation. 
 
 The structure of the JSON file should have sections that resemble the sections in the following example. These sections should include the **pageRoot** section that defines the set of modules for the page and the **renderingContext** section that includes the **user** context for signed-in user information.
 
@@ -248,7 +247,7 @@ The structure of the JSON file should have sections that resemble the sections i
 }
 ```
 
-To test the page mock locally, start your Node server by using **yarn start** command. Access the page mock by using the URL format `https://localhost:4000/page?mock=PAGE_MOCK`, where **PAGE\_MOCK** is the file name of the mock file without the **.json** file name extension.
+To test the page mock locally, start your Node server by using the **yarn start** command. Access the page mock by using the URL format `https://localhost:4000/page?mock=PAGE_MOCK`, where **PAGE\_MOCK** is the file name of the mock file without the **.json** file name extension.
 
 You can now modify the page mock as desired.
 
@@ -271,6 +270,5 @@ You can now modify the page mock as desired.
 [Create a page container module](create-page-containers.md)
 
 [Localize a module](localize-module.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

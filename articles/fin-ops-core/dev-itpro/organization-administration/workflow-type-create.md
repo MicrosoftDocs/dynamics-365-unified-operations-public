@@ -4,7 +4,7 @@ description: Learn about how to create workflow types, including links to articl
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/19/2019
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,13 +17,13 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-To add workflow support for a document, you must create a workflow type. After you create a workflow type, it can be used to create workflow configurations for the document. This article provides links to the procedures for creating a workflow type.
+To add workflow support for a document, you must create a workflow type. After you create a workflow type, you can use it to create workflow configurations for the document. This article provides links to the procedures for creating a workflow type.
 
 You create workflow types to define the following elements:
 
 - The workflow document to assign the workflow to
 - A category that defines the module that the workflow type is available in
-- Tasks, automated tasks, and approvals that are supported for the workflow
+- Tasks, automated tasks, and approvals that the workflow supports
 - The workflow started, completed, configuration data change, and canceled event handlers
 - A **SubmitToWorkflowMenuItem** menu item
 

@@ -4,7 +4,7 @@ description: Learn about how to add new inventory dimensions through extensions,
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: how-to
-ms.date: 02/01/2018
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -21,7 +21,7 @@ This article provides a high-level overview of how to add new inventory dimensio
 
 ## Solution overview
 
-The cornerstone in this solution is that multiple roles participate in the life cycle of adding new inventory dimensions through extensions. The following description simplifies and generalizes this solution, however, in real life there's overlap between the roles, and sometimes it might even be the same person filling several roles.
+This solution involves multiple roles that participate in the life cycle of adding new inventory dimensions through extensions. The following description simplifies and generalizes this solution. However, in real life, there's overlap between the roles, and sometimes it might even be the same person filling several roles.
 
 ### Microsoft's role
 
@@ -33,7 +33,7 @@ In addition to the 15 existing dimensions, Microsoft supports 12 generic dimensi
 - 1 real-based
 - 1 utcdatetime-based
 
-This brings the total number of inventory dimensions in the standard application to 28:
+This support brings the total number of inventory dimensions in the standard application to 28:
 
 - 5 product dimensions: Color, Size, Style, Config, and Version
 - 5 tracking dimensions: Serial, Batch, Owner, Profile (Russia only), and GTD (Russia only)
@@ -44,7 +44,7 @@ Microsoft provides the physical schema.
 
 ### ISV role
 
-The ISV adds new inventory dimensions. The ISV solution provides all the specific functionality for the dimension - it must be strong-typed, maintainable, testable, and performant. In addition, the solution must be agnostic to other ISV's solutions.
+The ISV adds new inventory dimensions. The ISV solution provides all the specific functionality for the dimension - it must be strongly typed, maintainable, testable, and performant. In addition, the solution must be agnostic to other ISVs' solutions.
 The ISV builds a solution that doesn't reference the physical schema directly, but goes through an indirection, which can be done seamlessly. 
 
 The ISV provides the logical implementation.
@@ -57,11 +57,11 @@ The VAR provides the binding between the physical data model and logical impleme
 
 ## Details
 
-The first half of the solution is straight forward. A new class hierarchy is introduced. Each new dimension must be implemented in a new class deriving from either InventProductDimension or InventTrackingDimension. Currently, there's no support for storage dimensions. With this, ISVs can introduce new dimensions without having to change any of the logic on the InventDim table. 
+The first half of the solution is straightforward. You introduce a new class hierarchy. Implement each new dimension in a new class that derives from either `InventProductDimension` or `InventTrackingDimension`. Currently, there's no support for storage dimensions. By using this approach, ISVs can introduce new dimensions without changing any of the logic on the `InventDim` table. 
 
-![InventDimensionClassHierarchy.](media/InventDimensions1.png)
+:::image type="content" source="media/InventDimensions1.png" alt-text="Screenshot of the InventDimension class hierarchy.":::
 
-To reference the new dimension in a strongly typed fashion, the ISV introduces a table extension class to the InventDim table. The extension classes for Style, Color, and Size can be used as templates.
+To reference the new dimension in a strongly typed fashion, the ISV introduces a table extension class to the `InventDim` table. Use the extension classes for Style, Color, and Size as templates.
 
 **Example: InventDimStyle_Extension**
 
@@ -92,7 +92,7 @@ final class InventDimStyle_Extension
 }
 ```
 
-The dimensions can be referenced like this.
+You can reference the dimensions like this.
 
 ```xpp
 //Setting a value
@@ -105,35 +105,35 @@ select inventDim
 
 The ISV can now build logic, including the data model and user interface for maintaining the list of dimension values, for the new inventory dimension.
 
-The second half of the solution is the data model. The standard application contains the following for each new dimension:
+The second half of the solution is the data model. The standard application contains the following components for each new dimension:
 
 - A label file.
 - A configuration key.
-- Two extended data types (EDTs) (for the field on InventDim and for the flag on InventDimParm).
-- One field on InventDim table.
-- One field on InventDimParm table.
-- One field on InventDimFieldMap map and one field on each of the tables (approximately 30) mapped.
+- Two extended data types (EDTs) (for the field on `InventDim` and for the flag on `InventDimParm`).
+- One field on `InventDim` table.
+- One field on `InventDimParm` table.
+- One field on `InventDimFieldMap` map and one field on each of the tables (approximately 30) mapped.
 
-The VAR's job is to wire the ISV solutions to the available dimension fields on InventDim for a given customer. To minimize this work, it currently includes the following:
+The VAR's job is to wire the ISV solutions to the available dimension fields on `InventDim` for a given customer. To minimize this work, it currently includes the following steps:
 
-- Implement the binding mapping. This is accomplished by extending the method InventDimFieldBinding.className2FieldName().
+- Implement the binding mapping. Extend the method `InventDimFieldBinding.className2FieldName()`.
 - Enable the configuration key.
 - Extend the EDT to specify the right string size.
-- Extend the Label file, such as copy the ISV-provided labels into the correct label file.
-- Extend the ProductDimensions or TrackingDimensions field groups on InventDim, and a few other tables, depending on the type of dimension.
-- Extend relations and index as needed on InventDim.
+- Extend the label file, such as copy the ISV-provided labels into the correct label file.
+- Extend the `ProductDimensions` or `TrackingDimensions` field groups on `InventDim`, and a few other tables, depending on the type of dimension.
+- Extend relations and index as needed on `InventDim`.
 
-![InventDimensionISVVARExtensions.](media/InventDimensions4.png)
+:::image type="content" source="media/InventDimensions4.png" alt-text="Screenshot of the InventDimension ISV and VAR extensions.":::
 
 ## Known issues
 
-There are some technical limitations influencing the design of the solution. The most significant is the SQL statements throughout the application that contain where-clauses on InventDim. Most of these are implemented using macros, which doesn't change the fact that SQL statements aren't extensible. Many of the SQL statements could be rewritten to use query objects to make them extensible, however many delete_from and update_recordset would remain. A viable solution can't require changes to these SQL statements when adding new dimensions.
+Technical limitations influence the design of the solution. The most significant limitation is the SQL statements throughout the application that contain where-clauses on `InventDim`. Most of these clauses use macros, but that fact doesn't change the fact that SQL statements aren't extensible. You can rewrite many of the SQL statements to use query objects to make them extensible. However, many `delete_from` and `update_recordset` statements remain. A viable solution can't require changes to these SQL statements when adding new dimensions.
 
-Another technical limitation is the number of inventory dimensions that can be supported. Each adds a small overhead, and the InventDimFixed EDT sets an upper limit at 32. This EDT contains a bit mask for each dimension, and because the EDT is an integer, the limit is 32. The provided solution stays within the limit of 32. If required in the future, InventDimFixed could be changed to be an Int64, a container, or it could be removed.
+Another technical limitation is the number of inventory dimensions that the system can support. Each dimension adds a small overhead, and the `InventDimFixed` EDT sets an upper limit at 32. This EDT contains a bit mask for each dimension, and because the EDT is an integer, the limit is 32. The provided solution stays within the limit of 32. If required in the future, you could change `InventDimFixed` to be an `Int64`, a container, or it could be removed.
 
 ## Sample application
 
-A sample application called "Product flavor dimension sample app" can be found on [GitHub](https://github.com/Microsoft/Product-flavor-dimension-sample-app).
+You can find a sample application called **Product flavor dimension sample app** on [GitHub](https://github.com/Microsoft/Product-flavor-dimension-sample-app).
 
 This sample consists of three models:
 
@@ -141,12 +141,12 @@ This sample consists of three models:
 - ISV test code
 - VAR integration code
 
-Together these models provide a great starting point for implementing new inventory dimensions. The sample application introduces a new product dimension: Flavor.
+Together, these models provide a great starting point for implementing new inventory dimensions. The sample application introduces a new product dimension: Flavor.
 
-The application supports many end-to-end business scenarios, for example creating, buying, and selling items with various flavors.
+The application supports many end-to-end business scenarios, such as creating, buying, and selling items with various flavors.
 
-If needed, please log issues directly in GitHub, and feel free to contribute to the sample application to provide additional coverage.
+If needed, log issues directly in GitHub, and feel free to contribute to the sample application to provide additional coverage.
 
-![InventDimensionFlavorScreenshot.](media/InventDimensions5.jpg)
+:::image type="content" source="media/InventDimensions5.jpg" alt-text="Screenshot of the InventDimension flavor sample application.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

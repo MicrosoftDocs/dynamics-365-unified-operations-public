@@ -1,11 +1,10 @@
 ---
 title: Cookie compliance
-description: This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
+description: Learn about considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/25/2024
+ms.date: 01/20/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -19,7 +18,7 @@ ms.custom:
 
 This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 
-Privacy is an important factor when tracking technologies that affect e-commerce customers. Because of privacy laws and regulations, electronic privacy guidelines must be considered for any site that is active today. Because many e-commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-commerce site.
+Privacy is an important factor when tracking technologies that affect e-commerce customers. Because of privacy laws and regulations, electronic privacy guidelines must be considered for any site that's active today. Because many e-commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-commerce site.
 
 To learn more about the basic principles that Microsoft uses for cookie compliance, visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center). On that site, you can also get more information about areas of compliance and privacy.
 
@@ -27,11 +26,11 @@ The following table shows the current reference list of cookies placed by Dynami
 
 | Cookie name                               | Usage                                                        | Lifetime |
 | ------------------------------------------- | ------------------------------------------------------------ |  ------- |
-| `.AspNet.Cookies`                             | Store Microsoft Microsoft Entra authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). | Session |
-| `_msdyn365___cart_`                           | Store cart ID used to obtain list of products added to cart instance. | Session |
-| `_msdyn365___checkout_cart_`                           | Store checkout cart ID used to obtain list of products added to the checkout cart instance. | Session |
+| `.AspNet.Cookies`                             | Stores Microsoft Microsoft Entra authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). | Session |
+| `_msdyn365___cart_`                           | Stores cart ID used to obtain list of products added to cart instance. | Session |
+| `_msdyn365___checkout_cart_`                           | Stores checkout cart ID used to obtain list of products added to the checkout cart instance. | Session |
 | `_msdyn365___ucc_`                            | Cookie compliance consent tracking.                          | One year |
-| `ai_session`                                  | Detects how many sessions of user activity have included certain pages and features of the app. | 30 minutes |
+| `ai_session`                                  | Detects how many sessions of user activity include certain pages and features of the app. | 30 minutes |
 | `ai_user`                                     | Detects how many people used the app and its features. Users are counted using anonymous IDs. | One year |
 | `b2cru`                                       | Stores redirect URL dynamically.                              | Session |
 | `JSESSIONID`                                  | Used by payment connector Adyen to store user session.       | Session |
@@ -46,27 +45,27 @@ The following table shows the current reference list of cookies placed by Dynami
 | `_msdyn365___muid_`                            | Used if experimentation is activated for the environment; used as a user ID for experimentation purposes. | One year |
 | `_msdyn365___exp_`                             | Used if experimentation is activated for the environment; used to measure performance load balancing.         | One hour |
 | `d365mkt`                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings \> General \> Enable location based store detection**.      | One hour |
-| `_msdyn365___tuid_`                           | Used only if experimentation activated for an environment; generates a GUID to serve as a user identifier. Value will change if a user's sign-in status changes.      | One year |
-| `_msdyn365___aud_0`                          | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
-| `_msdyn365___aud_1`                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
-| `_msdyn365___aud_2`                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
-| `d365gi`                                       | Stores geographical location data when using a third-party geolocation service.      | One day |
+| `_msdyn365___tuid_`                           | Used only if experimentation activated for an environment; generates a GUID to serve as a user identifier. Value changes if a user's sign-in status changes.      | One year |
+| `_msdyn365___aud_0`                          | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a partner segmentation provider.      | Seven days |
+| `_msdyn365___aud_1`                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a partner segmentation provider.      | Seven days |
+| `_msdyn365___aud_2`                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a partner segmentation provider.      | Seven days |
+| `d365gi`                                       | Stores geographical location data when using a partner geolocation service.      | One day |
 | `_msdyn365___can_`                            | Stores customer account number when using on behalf of (OBO) business-to-business (B2B) functionality.      | Session |
 | `_msdyn365___catalogid_`                            | Stores the customer catalog ID selection.      | Session |
 
 
-If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
+If a site user selects any social media links within a site, the cookies in the following table are also tracked on their browser.
 
 
 | Domain                      | Cookie               | Description                                                  | Source                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | `UserMatchHistory`         | LinkedIn Ads ID syncing                                      | LinkedIn Feed and Insight tag                                |
 | .linkedin.com               | `li_sugr`                  | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a designated country/region |
-| .linkedin.com               | `BizographicsOptOut`       | Determines opt-out status for third-party tracking.              | LinkedIn guest controls and industry opt-out pages           |
+| .linkedin.com               | `BizographicsOptOut`       | Determines opt-out status for partner tracking.              | LinkedIn guest controls and industry opt-out pages           |
 | .linkedin.com               | `_guid`                    | Browser identifier for Google Ads.                            | LinkedIn Feed                                                |
 | .linkedin.com               | `li_oatml`                 | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
 | Various first-party domains | `li_fat_id`                | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
-| .adsymptotic.com            | `U`                        | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a Designated Country/region |
+| .adsymptotic.com            | `U`                        | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a designated country/region |
 | .linkedin.com                | `bcookie`                  | Browser ID cookie                                            | Requests to LinkedIn                                         |
 | .linkedin.com                | `bscookie`                 | Secure browser cookie                                        | Requests to LinkedIn                                         |
 | .linkedin.com               | `lang`                     | Sets default locale and language.                                 | Requests to LinkedIn                                         |
@@ -77,7 +76,7 @@ If a site user selects any social media links within a site, the cookies in the 
 | .linkedin.com               | `liap`                     | Google Analytics cookie                                             | Google Analytics                                             |
 | .linkedin.com               | `lissc`                    |                                                              |                                                              |
 | .facebook.com               | `c_user`                   | Cookie contains the user ID of the currently signed-in user.  |   Facebook                                                           |
-| .facebook.com               | `datr`                     | Used to identify the web browser that is used to connect to Facebook independent of the signed-in user. | Facebook                                                             |
+| .facebook.com               | `datr`                     | Used to identify the web browser that connects to Facebook independent of the signed-in user. | Facebook                                                             |
 | .facebook.com               | `wd`                       | Stores the browser window dimensions and is used by Facebook to optimize the rendering of the page. | Facebook                                                             |
 | .facebook.com               | `xs`                       | Two-digit number representing the session number. The second portion of the value is a session secret. |  Facebook                                                            |
 | .facebook.com               | `fr`                       | Contains a unique browser and user ID, used for targeted advertising. |  Facebook                                                            |
@@ -85,7 +84,7 @@ If a site user selects any social media links within a site, the cookies in the 
 | .facebook.com               | `spin`                     |                                                              |  Facebook                                                            |
 | .twitter.com                | `guest_id`                 |                                                              |  Twitter                                                            |
 | .twitter.com                | `kdt`                      |                                                              |  Twitter                                                             |
-| .twitter.com                | `personalization_id`       | Cookie contains the user ID of the currently signed-in in user.  |  Twitter                                                             |
+| .twitter.com                | `personalization_id`       | Cookie contains the user ID of the currently signed-in user.  |  Twitter                                                             |
 | .twitter.com                | `remember_checked_on`      |                                                              | Twitter                                                              |
 | .twitter.com                | `twid`                     |                                                              |  Twitter                                                             |
 | .pinterest.com              | `_auth`                    | Cookie contains the user ID of the currently signed-in user.  |   Pinterest                                                           |
@@ -104,7 +103,7 @@ If a site user selects any social media links within a site, the cookies in the 
 
 ## Site user cookie consent on an e-commerce site 
 
-If an e-commerce site feature or module uses a non-essential cookie, a site user's consent must be obtained before the cookie is tracked. To allow site users to provide cookie consent on the e-commerce site, a site author must add and configure a cookie consent module in the page's header module to ensure the consent is prompted for and received. Site user consent must be given before a feature or module using a non-essential cookie can be rendered on a site page.
+If an e-commerce site feature or module uses a nonessential cookie, you must get the site user's consent before tracking the cookie. To allow site users to provide cookie consent on the e-commerce site, the site author adds and configures a cookie consent module in the page's header module to ensure the consent is prompted for and received. Site users must give consent before a feature or module that uses a non-essential cookie can render on a site page.
 
 ## Additional resources
 

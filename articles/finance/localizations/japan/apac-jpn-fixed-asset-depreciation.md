@@ -4,7 +4,9 @@ description: Access answers some frequently asked questions about fixed asset de
 author: EricWangChen
 ms.author: wangchen
 ms.topic: faq
-ms.date: 12/08/2025
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User 
 ms.search.region: Japan

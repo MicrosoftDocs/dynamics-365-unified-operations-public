@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Poland
@@ -29,7 +29,5 @@ When your legal entity is configured for reporting for multiple VAT registration
 | [Intrastat](emea-pol-intrastat.md)       | 10.0.23 | Intrastat (PL), version 25.5 |
 | [EU sales list](emea-pol-eu-sales-list.md)   | 10.0.24 | EU Sales list (PL), version 14.7  |
 | [VAT declaration](emea-pol-vdek.md) | 10.0.29 | Standard Audit File (SAF-T), version 129<br>Standard Audit File model mapping, version 131.283<br>JPK-V7M XML format (PL), version 129.221<br>JPK-V7M Excel format (PL), version 129.221.70 |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

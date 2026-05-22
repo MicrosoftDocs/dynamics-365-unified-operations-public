@@ -1,29 +1,29 @@
 ---
 title: Create a custom view in POS
-description: This article explains how to create a custom view in Point of Sale (POS).
+description: Learn how to create a custom view in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 04/13/2021
+ms.date: 02/25/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-13
-ms.dyn365.ops.version: AX 10.0.18
+ms.custom: 
+  - bap-template
 ---
 
 # Create a custom view in POS
 
 [!include [banner](../../../includes/banner.md)]
 
-This article explains how to create a custom view in Point of Sale (POS). It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article explains how to create a custom view in Microsoft Dynamics 365 Commerce point of sale (POS). It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
 Custom views in POS are a great way to add new functionality to POS. This approach works best in scenarios where you want to support more scenarios in POS. If you want to extend existing POS workflows, a custom dialog box is a better approach.
 
-All new views in POS are extended from the **CustomViewControllerBase** class in the **PosApi/Create/Views** module, and they must implement the following abstract methods:
+All new views in POS extend the **CustomViewControllerBase** class in the **PosApi/Create/Views** module. They must implement the following abstract methods:
 
-+ **onReady** – The POS framework calls the view's **onReady** method when the page has been added to the Document Object Model (DOM). This method is responsible for rendering the view inside the HTML element that is provided.
-+ **dispose** – The POS framework calls the view's **dispose** method when the view is removed from the DOM and the POS navigation history. This method should release any resources that the view created.
++ **onReady** – The POS framework calls the view's **onReady** method when the page is added to the Document Object Model (DOM). This method renders the view inside the provided HTML element.
++ **dispose** – The POS framework calls the view's **dispose** method when the view is removed from the DOM and the POS navigation history. This method releases any resources that the view created.
 
 In addition to the preceding required abstract methods, a custom view controller can implement the following page lifecycle methods:
 
@@ -32,9 +32,9 @@ In addition to the preceding required abstract methods, a custom view controller
 
 ## Configuring the custom view controller
 
-The **CustomViewControllerBase** class accepts an optional configuration object that enables extension views to control common view functionality, such as the title of the page and the app bar. The page title that is specified in the configuration object is shown on the POS header when the view is visible.
+The **CustomViewControllerBase** class accepts an optional configuration object that enables extension views to control common view functionality, such as the title of the page and the app bar. The page title that you specify in the configuration object appears on the POS header when the view is visible.
 
-The values that are specified in the **ICustomViewControllerConfiguration** object are transferred to the **state** field in the **CustomViewControllerBase** class. Some of the values can be updated throughout the view's lifecycle.
+The **ICustomViewControllerConfiguration** object transfers values to the **state** field in the **CustomViewControllerBase** class. You can update some of the values throughout the view's lifecycle.
 
 The following example shows the configuration of the custom view controller. You can download the example from the [ExampleView.ts file](https://github.com/microsoft/Dynamics365Commerce.InStore/blob/release/9.28/src/PosSample/Pos.Extension/Views/ExampleView.ts) in the GitHub repository (repo).
 
@@ -115,9 +115,9 @@ export default class ExampleView extends Views.CustomViewControllerBase {
 
 ## Using the app bar
 
-The **config** object contains a **commandBar** configuration that is used to add commands to the POS app bar when the custom view is visible. The **commandBar** configuration contains a collection of command definitions that are shown when the view is visible. These command definitions are shown in order: the first command is farthest to the right on the page.
+The **config** object contains a **commandBar** configuration that adds commands to the POS app bar when the custom view is visible. The **commandBar** configuration contains a collection of command definitions that appear when the view is visible. These command definitions appear in order: the first command is farthest to the right on the page.
 
-Each command definition must implement the **ICommandDefinition** interface that is exported from the **PosApi/Create/Views** module. Here is a list of the properties and methods for the command definition.
+Each command definition must implement the **ICommandDefinition** interface exported from the **PosApi/Create/Views** module. Here's a list of the properties and methods for the command definition.
 
 ```TypeScript
 export interface ICommandDefinition extends Commerce.Extensibility.ICommandDefinition {
@@ -133,15 +133,15 @@ export interface ICommandDefinition extends Commerce.Extensibility.ICommandDefin
 | Property | Description |
 |---|---|
 | execute | This field runs when the command is invoked. |
-| icon | This field defines the icon that is used for the command. |
+| icon | This field defines the icon that the command uses. |
 | name | This field defines the command's name. This name must be unique in the view where it's used. |
 | label | This field defines the label that is used for the command on the app bar. This label should be localized. |
-| canExecute | This field specifies whether the command should be enabled when it's first created. |
-| isVisible | This field specifies whether the command should be visible when it's first created. |
+| canExecute | This field specifies whether the command is enabled when it's first created. |
+| isVisible | This field specifies whether the command is visible when it's first created. |
 
 ## Changing a command's visibility, and enabling and disabling commands
 
-After the commands are created in the constructor, their **isProcessing** and **canExecute** fields can be updated in the view. These updates control whether the commands are enabled and visible in the user interface (UI).
+After you create the commands in the constructor, update their **isProcessing** and **canExecute** fields in the view. These updates control whether the commands are enabled and visible in the user interface (UI).
 
 The following example shows how to use the data list's **SelectionChanged** event to enable the **Edit** and **Delete** commands.
 

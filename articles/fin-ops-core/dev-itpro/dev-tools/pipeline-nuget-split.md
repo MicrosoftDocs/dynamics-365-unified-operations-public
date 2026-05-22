@@ -4,7 +4,7 @@ description: Learn about how to update an Azure pipeline to use new NuGet packag
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 03/04/2021
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -17,13 +17,13 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This article applies to pipelines that were set up for versions 10.0.17 or earlier. This does not apply to the legacy build pipeline that uses the build virtual machine.
+> This article applies to pipelines that you set up for versions 10.0.17 or earlier. This article doesn't apply to the legacy build pipeline that uses the build virtual machine.
 
-Platform updates for [version 10.0.18](../get-started/whats-new-platform-updates-10-0-18.md) introduce a new NuGet package. The new package is a result of a package split for the Application Build Reference code. As a result, you have to make changes to pipelines created for 10.0.17 or earlier versions.
+Platform updates for [version 10.0.18](../get-started/whats-new-platform-updates-10-0-18.md) introduce a new NuGet package. The new package results from a package split for the Application Build Reference code. As a result, you need to make changes to pipelines created for 10.0.17 or earlier versions.
 
-## Add the new package to packages.config list
+## Add the new package to the packages.config list
 
-The **packages.config** file used for your build already includes three packages:
+The **packages.config** file you use for your build already includes three packages:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,21 +48,21 @@ You need to add a fourth package to the list, **Microsoft.Dynamics.AX.Applicatio
 
 ## Add a pipeline variable
 
-The pipeline uses variables to simplify and centralize parameters used in the pipeline tasks. There are already variables for each of the NuGet package names. To add a variable for the name of the new NuGet package, do the following:
+The pipeline uses variables to simplify and centralize parameters used in the pipeline tasks. Variables already exist for each of the NuGet package names. To add a variable for the name of the new NuGet package, complete the following steps:
 
 1. On the **Variables** tab of the pipeline, select the **Add** link at the bottom of the list of variables.
-2. In the **Name** column, type `AppSuitePackage`.
-3. In the **Value** column, type `Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp`.
+1. In the **Name** column, type `AppSuitePackage`.
+1. In the **Value** column, type `Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp`.
 
 ## Update the **Build solution** step
 
-In the **Build solution** step in the pipeline, the path and names to all the NuGet packages are supplied as command-line parameters to **MSBuild**. To add the new NuGet package to the semi-colon separated list of **ReferenceFolder** paths, do either of the following:
+In the **Build solution** step in the pipeline, you supply the path and names of all the NuGet packages as command-line parameters to **MSBuild**. To add the new NuGet package to the semicolon-separated list of **ReferenceFolder** paths, use one of the following methods:
 
-- If you used the existing template without modifying it, the new **MSBuild Arguments** will be:
+- If you used the existing template without modifying it, the new **MSBuild Arguments** are:
 
     `/p:BuildTasksDirectory="$(NugetsPath)\$(ToolsPackage)\DevAlm" /p:MetadataDirectory="$(MetadataPath)" /p:FrameworkDirectory="$(NuGetsPath)\$(ToolsPackage)" /p:ReferenceFolder="$(NuGetsPath)\$(PlatPackage)\ref\net40;$(NuGetsPath)\$(AppPackage)\ref\net40;$(MetadataPath);$(Build.BinariesDirectory);$(NuGetsPath)\$(AppSuitePackage)\ref\net40" /p:ReferencePath="$(NuGetsPath)\$(ToolsPackage)" /p:OutputDirectory="$(Build.BinariesDirectory)"`
 
-- If you've modified the arguments list, find the **ReferenceFolder** property argument and add `$(NuGetsPath)\$(AppSuitePackage)\ref\net40` to the semi-colon separated list. Add a semi-colon to separate this new entry from other paths in the list.
+- If you modified the arguments list, find the **ReferenceFolder** property argument and add `$(NuGetsPath)\$(AppSuitePackage)\ref\net40` to the semicolon-separated list. Add a semicolon to separate this new entry from other paths in the list.
 
 ## Use the updated templates on GitHub as an alternative
 

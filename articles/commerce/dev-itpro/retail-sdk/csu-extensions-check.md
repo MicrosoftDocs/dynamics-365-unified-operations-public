@@ -1,11 +1,10 @@
 ---
 title: Commerce Scale Unit extensions health check
-description: This article explains how to use the Commerce Scale Unit extensions health check feature in Microsoft Dynamics 365 Commerce.
+description: Learn how to use the Commerce Scale Unit (CSU) extensions health check feature in Microsoft Dynamics 365 Commerce.
 author: aneesmsft
-ms.date: 08/09/2024
+ms.date: 02/20/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2023-05-01
@@ -19,9 +18,9 @@ ms.custom:
 
 This article explains how to use the Commerce Scale Unit (CSU) extensions health check feature in Microsoft Dynamics 365 Commerce.
 
-Developers who build CSU extensions can use the Commerce health check feature to run tests that are built into the framework and validate that their extensions meet current requirements. Microsoft highly recommends that developers use the health check feature to ensure that their CSU extensions are compliant.
+Developers who build CSU extensions can use the Commerce health check feature to run tests that the framework includes and validate that their extensions meet current requirements. To ensure that their CSU extensions are compliant, developers should use the health check feature.
 
-The CSU extensions health check feature can be accessed by using the following URL format. Replace *CommerceScaleUnitURL* with the URL of your CSU instance.
+Access the CSU extensions health check feature by using the following URL format. Replace *CommerceScaleUnitURL* with the URL of your CSU instance.
 
 `https://<CommerceScaleUnitURL>/healthcheck?testname=extensions`
 
@@ -29,22 +28,22 @@ The CSU extensions health check includes the following tests in two main categor
 
 - **Assembly tests:**
 
-    - Target framework tests
-    - Unsupported dependencies test
+- Target framework tests
+- Unsupported dependencies test
 
 - **Extension export tests:**
 
-    - Extension types tests
-    - Route prefix test
-    - Entity binding test
+- Extension types tests
+- Route prefix test
+- Entity binding test
 
 The rest of this article provides details about these categories and the tests that they include.
 
 ## Assembly tests
 
-Assembly tests validate assemblies in an extension to ensure that they meet current requirements. The top-level assemblies of an extension are validated first. Next, all dependent assemblies are validated recursively, until the whole dependency tree is traversed. Finally, all unused assemblies in the extension folders are validated. Assembly tests don't validate **System** and **Microsoft.Dynamics** assemblies.
+Assembly tests validate assemblies in an extension to ensure that they meet current requirements. The tests first validate the top-level assemblies of an extension. Next, they recursively validate all dependent assemblies, until the whole dependency tree is traversed. Finally, the tests validate all unused assemblies in the extension folders. Assembly tests don't validate **System** and **Microsoft.Dynamics** assemblies.
 
-By default, the tests don't show assembly names in the results, to help preserve security. If you require that tests show assembly names in the results, you can implement the following app setting.
+By default, the tests don't show assembly names in the results, to help preserve security. If you want the tests to show assembly names in the results, you can implement the following app setting.
 
 ``` xml
 <appSettings>
@@ -56,7 +55,7 @@ By default, the tests don't show assembly names in the results, to help preserve
 
 Target framework tests validate the target framework of the assemblies to ensure that it's supported.
 
-The following table summarizes the results that are the output of the target framework tests.
+The following table summarizes the results that the target framework tests output.
 
 | Column | Value |
 |--------|-------|
@@ -68,9 +67,9 @@ The following table summarizes the results that are the output of the target fra
 
 ### Unsupported dependencies test
 
-The unsupported dependencies test validates whether the assemblies in an extension or their dependencies reference Commerce assemblies that aren't part of the Commerce software development kit (SDK).
+The unsupported dependencies test checks whether the assemblies in an extension or their dependencies reference Commerce assemblies that aren't part of the Commerce software development kit (SDK).
 
-The following table summarizes the results that are the output of the unsupported dependencies test. Results are shown only if the test fails.
+The following table summarizes the results that the unsupported dependencies test returns. You see results only if the test fails.
 
 | Column | Value |
 |--------|-------|
@@ -82,18 +81,18 @@ The following table summarizes the results that are the output of the unsupporte
 
 ## Extension export tests
 
-Extension export tests validate types that are exported by extension assemblies.
+Extension export tests validate types that extension assemblies export.
 
 ### Extension types tests
 
 Extension types tests validate exported types to ensure that they don't implement obsolete contracts.
 
-The following table summarizes the results that are the output of the extension types tests. Results always include tests for the four different types of contracts.
+The following table summarizes the results that the extension types tests output. Results always include tests for the four different types of contracts.
 
 | Column | Value |
 |--------|-------|
 | Test Name | <p>**Controllers (IController)** – This test checks for extensions that implement `IController`.</p><p>**Obsolete extensions (ICommerceController)** – This test checks for extensions that implement `ICommerceController`.</p><p>**Obsolete extensions (IRequestHandler)** – This test checks for extensions that implement `IRequestHandler`.</p><p>**Obsolete extensions (IRequestTrigger)** – This test checks for extensions that implement `IRequestTrigger`.</p> |
-| Data | <p>**Count** – The number of exported types that implement the contract that's specified in the test name.</p><p>**Assembly names** – If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is shown.</p> |
+| Data | <p>**Count** – The number of exported types that implement the contract specified in the test name.</p><p>**Assembly names** – If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is shown.</p> |
 | Result Text | Not applicable |
 | Test Status | <p>**Succeeded** – No types implement any of the obsolete contracts. The test for `IController` always succeeds.</p><p>**Failed** – One or more types implement any of the obsolete contracts.</p> |
 | Test Severity | **Normal** |
@@ -102,7 +101,7 @@ The following table summarizes the results that are the output of the extension 
 
 The route prefix test validates whether an extension uses one of the reserved route prefixes via the `RoutePrefix` attribute. Extensions that use a reserved route prefix might cause Retail Server to work incorrectly.
 
-The following table summarizes the results that are the output of the route prefix test. Results are shown only if the test fails.
+The following table summarizes the results that the route prefix test outputs. Results are shown only if the test fails.
 
 | Column | Value |
 |--------|-------|
@@ -114,9 +113,9 @@ The following table summarizes the results that are the output of the route pref
 
 ### Entity binding test
 
-The entity binding test validates whether an extension is bound to a Commerce entity via the `BindEntity` attribute. Extensions that are bound to a Commerce entity might cause Retail Server to work incorrectly.
+The entity binding test checks if an extension is bound to a Commerce entity through the `BindEntity` attribute. If you bind extensions to a Commerce entity, Retail Server might not work correctly.
 
-The following table summarizes the results that are the output of the entity binding test. Results are shown only if the test fails.
+The following table summarizes the results that the entity binding test outputs. You see results only if the test fails.
 
 | Column | Value |
 |--------|-------|

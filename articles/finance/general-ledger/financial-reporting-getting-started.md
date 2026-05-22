@@ -18,6 +18,7 @@ ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 # Get started with financial reporting 
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes where to access financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
@@ -33,7 +34,7 @@ The Financial reporting add-in lets financial and business professionals create,
 3. Agree to the terms, and then select **Install**.
 
 > [!NOTE]
-> Environments managed in Power Platform admin center (PPAC) such as Unified developer experience environments don't have the option to install the Financial reporting add-in. Contace support if you need to set up Financial reporting on a PPAC based environment. 
+> Environments managed in Power Platform admin center (PPAC) such as Unified developer experience environments don't have the option to install the Financial reporting add-in. Contact support if you need to set up Financial reporting on a PPAC based environment. 
 
 ## Uninstall the Financial reporting add-in
 

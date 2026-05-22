@@ -4,7 +4,7 @@
 title: Configure integration with Finance
 description: This article describes the integration between Dynamics 365 Human Resources and Dynamics 365 Finance.
 author: twheeloc  
-ms.date: 09/19/2023
+ms.date: 05/14/2026
 ms.topic: how-to
 # optional metadata
 
@@ -28,37 +28,35 @@ ms.custom: sfi-image-nochange
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+To integrate Dynamics 365 Human Resources with Dynamics 365 Finance, use the Human Resources to Finance template in [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources to Finance template enables data flow for jobs, positions, and workers. The template allows data to flow from Human Resources into Finance, but doesn't allow data to flow from Finance into Human Resources.
 
-
-To integrate Dynamics 365 Human Resources with Dynamics 365 Finance, you can use the Human Resources to Finance template in [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources to Finance template enables data flow for jobs, positions, and workers. The template allows data to flow from Human Resources into Finance, but doesn't allow data to flow from Finance into Human Resources.
-
-![Human Resources to Finance Integration Flow.](./media/hr-admin-integration-finance-flow.png)
+:::image type="content" source="./media/hr-admin-integration-finance-flow.png" alt-text="Screenshot of the Human Resources to Finance integration flow.":::
 
 The Human Resources to Finance solution provides the following types of data synchronization:
 
-- Maintain jobs in Human Resources and sync them from Human Resources to Finance
-- Maintain positions and position assignments in Human Resources and sync them from Human Resources to Finance
-- Maintain employments in Human Resources and sync them from Human Resources to Finance
-- Maintain workers and worker addresses in Human Resources and sync them from Human Resources to Finance
+- Maintain jobs in Human Resources and sync them from Human Resources to Finance.
+- Maintain positions and position assignments in Human Resources and sync them from Human Resources to Finance.
+- Maintain employment in Human Resources and sync them from Human Resources to Finance.
+- Maintain workers and worker addresses in Human Resources and sync them from Human Resources to Finance.
 
 ## System requirements for Human Resources
 
-The integration solution requires the following versions of Human Resources and Finance: 
+The integration solution requires the following versions of Human Resources and Finance:
 
 - Dynamics 365 Human Resources on Dataverse
 - Dynamics 365 Finance version 7.2 and later
 
 ## Template and tasks
 
-To access the Human Resources to Finance template.
+To access the Human Resources to Finance template:
 
-1. Open [Power Apps Admin Center](https://admin.powerapps.com/). 
+1. Open [Power Apps Admin Center](https://admin.powerapps.com/).
 
-2. Select **Projects**, and then select **New project** in the upper-right corner. Create a new project for each legal entity that you want to integrate into in Finance.
+1. Select **Projects**, and then select **New project** in the upper-right corner. Create a new project for each legal entity that you want to integrate into Finance.
 
-3. Select the **Human Resources (Human Resources Dataverse to Finance)** to synchronize records from Human Resources to Finance.
+1. Select the **Human Resources (Human Resources Dataverse to Finance)** template to synchronize records from Human Resources to Finance.
 
-The template uses the following underlying tasks to synchronize records from Human Resources to Finance:
+This template uses the following underlying tasks to synchronize records from Human Resources to Finance:
 
 - **Job Functions to Compensation Job Function**
 - **Departments to Operating Unit**
@@ -171,8 +169,8 @@ In the following template mapping tables, the name of the task contains the enti
 | cdm\_validto (Valid   To)                                                                      | VALIDTO (VALIDTO)                           |
 | HIERARCHYTYPENAME   (HIERARCHYTYPENAME)                                                       | HIERARCHYTYPENAME   (HIERARCHYTYPENAME)     |
 
-
 ### Workers to Worker
+
 | Dataverse table (source)           | Finance entity (destination)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm\_birthdate   (cdm\_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
@@ -245,17 +243,17 @@ In the following template mapping tables, the name of the task contains the enti
 
 ## Integration considerations
 
-The integration from Human Resources to Finance attempts to match records based on the ID. If the records match, the Data Integrator overwrites the data in Finance with the values in Human Resources. However, an issue may occur if logically these are different records and the same ID was generated in either Human Resources or Finance based on the respective number sequence.
+The integration from Human Resources to Finance tries to match records by ID. If the records match, Data Integrator overwrites the data in Finance with the values from Human Resources. However, a problem can occur if these records are logically different but the same ID exists in either Human Resources or Finance based on the respective number sequence.
 
-This issue can occur with **Worker**, which uses **Personnel number** to make the match, and **Positions**. Jobs don't use number sequences. As a result, if the same job ID exists in both Human Resources and Finance, the Human Resources information overwrites the Dynamics 365 Finance information. 
+This problem can occur with **Worker**, which uses **Personnel number** to make the match, and **Positions**. Jobs don't use number sequences. As a result, if the same job ID exists in both Human Resources and Finance, the Human Resources information overwrites the Dynamics 365 Finance information.
 
-To prevent issues with duplicate IDs, you can either add a prefix on the [number sequence](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
+To prevent problems with duplicate IDs, add a prefix on the [number sequence](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json), or set a beginning number on the number sequence that is beyond the range of the other system.
 
-The location ID used for worker address isn't part of a number sequence. When integrating a worker address from Human Resources to Finance, if the worker address already exists in Finance, a duplicate address record may be created. 
+The location ID used for worker address isn't part of a number sequence. When you integrate a worker address from Human Resources to Finance, if the worker address already exists in Finance, you might create a duplicate address record.
 
-The following illustration shows an example of a template mapping in Data Integrator. 
+The following illustration shows an example of a template mapping in Data Integrator.
 
-![Template Mapping.](./media/IntegrationMapping.png)
+:::image type="content" source="./media/IntegrationMapping.png" alt-text="Screenshot of a template mapping in Data Integrator.":::
 
 ## Migration considerations
 

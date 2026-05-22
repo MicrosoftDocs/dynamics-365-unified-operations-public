@@ -4,14 +4,16 @@ description: Learn about the configuration required to use the additional author
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 10/20/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
 
 # Additional authorization code for Latin America
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This article explains how to configure and use the additional authorization code feature in the LATAM extension. 
 

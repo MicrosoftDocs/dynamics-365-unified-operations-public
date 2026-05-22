@@ -1,11 +1,10 @@
 ---
 title: Extend a module definition file
-description: This article describes how to extend a module definition file.
+description: Learn how to extend a module definition file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/31/2024
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,13 +15,13 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to extend a module definition file. For example, you can create an extended module of another module to add new configuration fields.
+This article describes how to extend a module definition file in Microsoft Dynamics 365 Commerce. For example, you can create an extended module of another module to add new configuration fields.
 
-When you extend a property that is an object, you must extend the whole object. For example, to add a configuration property to your extended module, you first copy the existing configuration properties from the parent module to the child module. You then add the desired property.
+When you extend a property that is an object, you must extend the whole object. For example, to add a configuration property to your extended module, first copy the existing configuration properties from the parent module to the child module. Then add the desired property.
 
 ## Examples
 
-The following example of a module definition file shows how a core module can be extended by using a **$ref** command to the core script injector module.
+The following example of a module definition file shows how to extend a core module by using a **$ref** command to the core script injector module.
 
 ```json
 {
@@ -71,6 +70,5 @@ After deployment, both the base module and the extended module appear in Microso
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

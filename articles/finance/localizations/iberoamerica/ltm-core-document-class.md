@@ -4,7 +4,7 @@ description: Learn about the document class configuration for Latin America, inc
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Document classes for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 You can create the different documents that a company uses to register transactions with third parties. Documents can include invoices, credit notes, and debit notes. These documents can also represent payment methods such as checks and wire transfers, and treasury documents such as receipts and payment orders.
 
@@ -29,8 +31,8 @@ The following prerequisites must be met before you set up document classes:
 ## Set up a document class
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**.
-2. On the Action Pane, select **New**.
-3. In the **General** section, specify the following information.
+1. On the Action Pane, select **New**.
+1. In the **General** section, specify the following information.
 
     | Field                         | Description |
     |-------------------------------|-------------|
@@ -55,7 +57,7 @@ The following prerequisites must be met before you set up document classes:
     | Details Taxpayer              | Activate this option to make the tax-related information mandatory when a transaction is posted. |
     | Document with tax             | When this option is activated, no more than one line of the vendor/client type that this document class is assigned to can be created in a journal. In this case, there can't be two or more lines that have foreign currency and different exchange rates. |
 
-4. If the document class type represents a payment method, update the following information in the **Payment method type** section. If the document class type doesn't represent a payment method, skip ahead to step 6.
+1. If the document class type represents a payment method, update the following information in the **Payment method type** section. If the document class type doesn't represent a payment method, skip ahead to step 6.
 
     | Field                    | Description |
     |--------------------------|-------------|
@@ -71,22 +73,21 @@ The following prerequisites must be met before you set up document classes:
     | Currency                 | Select the default currency for the payment method. |
     | Require deferred date    | Require the due date to be later than the emission date. |
 
-5. When you configure a payment method, add at least one bank to the **Bank accounts** grid.
-6. Add at least one journal name to the **Journal names** grid, so that it can be used when a transaction that has the document class is posted.
-7. In the **Additional data** section, specify which fields must be shown in the **LATAM** information section when a transaction is posted.
-8. In the **Document mask** section, enable the sales points that are required, and configure the format mask for them.
-9. In the **Dimensions** section, select the predetermined dimensions that should be applied to the voucher lines when a transaction is posted.
+1. When you configure a payment method, add at least one bank to the **Bank accounts** grid.
+1. Add at least one journal name to the **Journal names** grid, so that it can be used when a transaction that has the document class is posted.
+1. In the **Additional data** section, specify which fields must be shown in the **LATAM** information section when a transaction is posted.
+1. In the **Document mask** section, enable the sales points that are required, and configure the format mask for them.
+1. In the **Dimensions** section, select the predetermined dimensions that should be applied to the voucher lines when a transaction is posted.
 
 ## Add the fiscal codification provided by the fiscal authorities
 
 You can use the **Tax application** option to add this codification.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**.
-2. On the Action Pane, select **Tax application**.
-3. Select **New** to add a line to the grid.
-4. In the **Tax application Id.** field, select a value.
-5. In the **Tax application code field**, enter the code that the fiscal authority uses to identify the document class type.
-6. Select **Save**.
-
+1. On the Action Pane, select **Tax application**.
+1. Select **New** to add a line to the grid.
+1. In the **Tax application Id.** field, select a value.
+1. In the **Tax application code field**, enter the code that the fiscal authority uses to identify the document class type.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

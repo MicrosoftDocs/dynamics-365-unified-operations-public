@@ -1,27 +1,25 @@
 ---
 title: Extend Commerce Store receipts
-description: This article describes how to extend Commerce store receipts.
+description: Learn how to extend Microsoft Dynamics 365 Commerce store receipts.
 author: ritakimani
-ms.date: 07/29/2024
+ms.date: 02/20/2026
 ms.topic: how-to
-ms.custom: 
-  - bap-template
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
-ms.assetid: d24470fd-07ad-4c3f-b23a-3f6c1401edc6
+ms.custom: 
+  - bap-template
 ---
 
 # Extend Commerce Store receipts
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to extend Commerce store receipts. Receipts can have two types of extensions:
+This article describes how to extend Microsoft Dynamics 365 Commerce store receipts. Receipts can have two types of extensions:
 
- - **Custom fields** - Adds new receipt fields to the existing receipts.
- - **Custom receipt types** - Creates new receipts for custom scenarios.
+- **Custom fields** - Adds new receipt fields to the existing receipts.
+- **Custom receipt types** - Creates new receipts for custom scenarios.
 
 ## Custom fields
 
@@ -30,55 +28,55 @@ This article describes how to extend Commerce store receipts. Receipts can have 
 - Print special receipts.
 - Print additional warranty information on sale receipts.
 
-The following steps shows the HQ configuration and CRT code changes for the custom fields.
+The following steps show the Commerce headquarters configuration and CRT code changes for the custom fields.
 
-## Configure Headquarters for custom fields
+## Configure headquarters for custom fields
 
-At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** for the warranty expiration date and **WARRANTYID** for the warranty ID. Add these fields to the receipt format layout.
+In headquarters, you create two custom receipt fields: **EXPIRATIONDATE** for the warranty expiration date and **WARRANTYID** for the warranty ID. You add these fields to the receipt format layout.
 
-1. Sign in to HQ.
-2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Language text**.
-3. On the **POS** tab, select **Add** to add a new POS language text.
+To configure headquarters for custom fields, follow these steps:
 
-    The text that appears in the **Receipt** panel can be localized. Therefore, you can create multiple texts in different languages for the same text ID. Here is an example.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Language text**.
+1. On the **POS** tab, select **Add** to add a new POS language text.
+
+    You can localize the text that appears in the **Receipt** panel. Therefore, you can create multiple texts in different languages for the same text ID. Here's an example.
 
     | Language ID | Text ID | Text   |
     |-------------|---------|--------|
     | en-US       | 1       | WARRANTYID |
     | en-UK       | 1       | WARRANTYID   |
 
-4. On the Action Pane, select **Save** to save your changes.
-5. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Custom fields**.
-6. On the Action Pane, select **New** to add a new custom field, and specify the following information: 
+1. On the Action Pane, select **Save** to save your changes.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Custom fields**.
+1. On the Action Pane, select **New** to add a new custom field, and specify the following information: 
 
     1. In the **Name** field, enter the name of the custom field.
-    2. In the **Type** field, select **Receipt**.
-    3. In the **Caption text ID** field, specify the text ID that you used in step 3.
+    1. In the **Type** field, select **Receipt**.
+    1. In the **Caption text ID** field, specify the text ID that you used in step 3.
 
-    Here is an example.
+    Here's an example.
 
     | Name   | Type        | Caption text ID |
     |--------|-------------|-----------------|
     | WARRANTYID | Receipt | 1               |
 
-
-7. On the Action Pane, select **Save** to save your changes.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Receipt formats**.
-9. Select an existing or create a new receipt format and then select **Designer** on the Action Pane.
-10. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
-11. After the designer is installed, you're asked for Microsoft Entra credentials. Enter the information to start the designer.
-12. In the designer, drag and drop the **Custom** field from the left pane to the receipt designer.
+1. On the Action Pane, select **Save** to save your changes.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Receipt formats**.
+1. Select an existing or create a new receipt format and then select **Designer** on the Action Pane.
+1. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
+1. After the designer is installed, you're asked for Microsoft Entra credentials. Enter the information to start the designer.
+1. In the designer, drag and drop the **Custom** field from the left pane to the receipt designer.
 
 > [!NOTE]
-> The Custom fields are legal-entity specific, which means that the screen layout designer fetches the custom fields that are specific to the legal entity (Company) configured for the user signed in to **System Administration > Users**. If you configured custom fields for the different legal entities, then screen layout designer may not show those values.
+> The Custom fields are legal-entity specific, which means that the screen layout designer fetches the custom fields that are specific to the legal entity (Company) configured for the user signed in to **System Administration > Users**. If you configured custom fields for different legal entities, the screen layout designer might not show those values.
 
-14. Save the changes.
-15. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
-16. Select the **Channel configuration** (**1070**) job, and then select **Run now**.
+1. Save the changes.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+1. Select the **Channel configuration** (**1070**) job, and then select **Run now**.
 
-## Sample code to implement Custom fields
+## Sample code to implement custom fields
 
-To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest** and the business logic for the custom fields in CRT, as shown in the following code. For more information, see [Commerce runtime (CRT) extensibility](../commerce-runtime-extensibility.md).
+To add custom fields to sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest** and the business logic for the custom fields in CRT, as shown in the following code. For more information, see [Commerce runtime (CRT) extensibility](../commerce-runtime-extensibility.md).
 
 ```C#
 public IEnumerable<Type> SupportedRequestTypes
@@ -122,22 +120,23 @@ private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransa
     return new GetCustomReceiptFieldServiceResponse(returnValue);
 }
 ```
+
 ## Custom receipt types
 
-### Custom receipt type configuration in HQ
+### Custom receipt type configuration in headquarters
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Receipt formats**.
-2. Create new Receipt format and then select the **Receipt type** and choose one of the CustomReceiptType(1...20).
-3. Save the changes.
-4. Select **Designer** on the Action Pane.
-5. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
-6. After the designer is installed, you're asked for Microsoft Entra credentials. Enter the information to start the designer.
-7. In the designer, drag and drop the required receipt fields from the left pane to the receipt designer.
-8. Save the changes.
-9. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
-10. Select the **Channel configuration** (**1070**) job, and then select **Run now**.
+1. Create new Receipt format and then select the **Receipt type** and choose one of the CustomReceiptType(1...20).
+1. Save the changes.
+1. Select **Designer** on the Action Pane.
+1. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
+1. After the designer is installed, you're asked for Microsoft Entra credentials. Enter the information to start the designer.
+1. In the designer, drag and drop the required receipt fields from the left pane to the receipt designer.
+1. Save the changes.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+1. Select the **Channel configuration** (**1070**) job, and then select **Run now**.
 
-### Sample code to implement Custom receipt type
+### Sample code to implement custom receipt type
 
 To add logic for the new receipt type, implement **GetCustomReceiptsRequest** in CRT.
 
@@ -170,7 +169,6 @@ The full sample code is available in the RetailSDK\\SampleExtensions\\CommerceRu
 
 ### Best practice
 
-Avoid making database calls for each custom receipt field. Instead, use extension properties that were previously set on entities. Custom receipt types can be called by any logic (per sales line, one time per some condition). See the sample for a more complete scenario.
-
+Avoid making database calls for each custom receipt field. Instead, use extension properties that you previously set on entities. Any logic can call custom receipt types (per sales line, one time per some condition). See the sample for a more complete scenario.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

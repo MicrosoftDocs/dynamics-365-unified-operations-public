@@ -4,7 +4,7 @@ description: You can use the Configuration manager (beta) to copy a configuratio
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,6 +17,7 @@ ms.assetid: 54283db7-6f1a-46e8-b74d-c67d54e6e5fb
 
 [!include [banner](../includes/banner.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Before you begin, set up Configuration manager (beta). For more information, see [Set up Configuration manager](set-up-configuration-manager-lcs.md).
 

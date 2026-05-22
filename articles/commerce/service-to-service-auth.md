@@ -1,11 +1,10 @@
 ---
 title: Configure Service-to-Service authentication
-description: This article describes how to configure Service-to-Service authentication in Microsoft Dynamics 365 Commerce to securely call service APIs for ratings and reviews.
+description: Learn how to configure Service-to-Service authentication in Microsoft Dynamics 365 Commerce to securely call service APIs for ratings and reviews.
 author: gvrmohanreddy
-ms.date: 08/02/2024
+ms.date: 01/29/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-06-20
@@ -20,13 +19,13 @@ ms.custom:
 
 This article describes how to configure Service-to-Service (S2S) authentication in Microsoft Dynamics 365 Commerce to securely call service application programming interfaces (APIs) for ratings and reviews.
 
-Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omni-channel solution. This solution enables access to service APIs from outside Commerce, so that various tasks can be performed. These tasks include importing ratings and reviews from your external system into Commerce, and exporting ratings and reviews from Commerce. To enable Commerce to securely call ratings and reviews service APIs, you must first configure S2S authentication by completing the procedures in this article.
+Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omnichannel solution. This solution enables access to service APIs from outside Commerce, so that you can perform various tasks. These tasks include importing ratings and reviews from your external system into Commerce, and exporting ratings and reviews from Commerce. To enable Commerce to securely call ratings and reviews service APIs, you must first configure S2S authentication by completing the procedures in this article.
 
 ## Add a new app registration
 
-Before you add a new app registration, you must create an application by using the [Azure portal](https://portal.azure.com). To register an app in Microsoft Entra and enable authentication, follow the steps in [Use Microsoft Entra ID with a custom connector in Power Automate](/connectors/custom-connectors/azure-active-directory-authentication).
+Before you add a new app registration, create an application by using the [Azure portal](https://portal.azure.com). To register an app in Microsoft Entra and enable authentication, follow the steps in [Use Microsoft Entra ID with a custom connector in Power Automate](/connectors/custom-connectors/azure-active-directory-authentication).
 
-Collect the following IDs from the Azure portal. You will need these IDs in the steps that follow.
+Collect the following IDs from the Azure portal. You need these IDs in the steps that follow.
 
 - Client application ID
 - Client directory (tenant) ID
@@ -36,18 +35,18 @@ To add a new app registration in Commerce site builder, follow these steps:
 1. Go to **Home \> Reviews \> Settings**.
 1. Under **Service-to-Service (S2S) Authentication**, select **Manage**.
 
-    ![Manage button in the Service-to-Service (S2S) Authentication section in Commerce site builder.](media/Ratings-reviews-settings-service-to-service-authentication.png)
+    :::image type="content" source="media/Ratings-reviews-settings-service-to-service-authentication.png" alt-text="Screenshot of the Manage button in the Service-to-Service (S2S) Authentication section in Commerce site builder.":::
 
-1. In the **S2S App Entries** pane that appears on the right, select **Add a new S2S App Registration**.
+1. In the **S2S App Entries** pane that appears, select **Add a new S2S App Registration**.
 1. In the **Add S2S App Entry** dialog box, enter the following required information. Use the values from your Azure application registration.
 
     - **Name** – Enter the name of your application (for example, **Fabrikam App**).
     - **Client App ID** – Enter the application ID (for example **00000000-0000-0000-0000-000000000000**).
     - **Directory (Tenant) ID** – Enter the directory ID (for example, **00000000-0000-0000-0000-000000000000**).
 
-    ![Add S2S App Entry dialog box in Commerce site builder.](media/Ratings-reviews-settings-S2S-APP-entry.png)
+    :::image type="content" source="media/Ratings-reviews-settings-S2S-APP-entry.png" alt-text="Screenshot of the Add S2S App Entry dialog box in Commerce site builder.":::
 
-1. Select **Submit**. The name of your application should appear in the list in the **S2S App Entries** pane.
+1. Select **Submit**. The name of your application appears in the list in the **S2S App Entries** pane.
 1. Close the **S2S App Entries** pane.
 1. Select **Save**.
 
@@ -58,7 +57,7 @@ To edit an existing app registration in Commerce site builder, follow these step
 1. Go to **Home \> Reviews \> Settings**.
 1. Under **Service-to-Service (S2S) Authentication**, select **Manage**.
 1. In the **S2S App Entries** pane, select the pencil symbol next to the entry that you want to edit.
-1. Update values in the **Name**, **Client App ID**, and **Directory (Tenant) ID** fields as required.
+1. Update values in the **Name**, **Client App ID**, and **Directory (Tenant) ID** fields as needed.
 1. Select **Submit**.
 1. Close the **S2S App Entries** pane.
 1. Select **Save**.

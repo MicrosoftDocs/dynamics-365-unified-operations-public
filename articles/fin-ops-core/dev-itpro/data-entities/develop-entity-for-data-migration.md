@@ -4,6 +4,8 @@ description: Learn how to develop data entities in Microsoft Visual Studio and t
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: Developer
@@ -33,7 +35,7 @@ This tutorial requires that you access the environment by using Remote Desktop. 
 
 Throughout this tutorial, "base URL" refers to the base URL of the instance.
 
-- In the cloud environment, you obtain the base URL from Microsoft Dynamics Lifecycle Services (LCS).
+- In the cloud environment, you obtain the base URL from Microsoft Dynamics Lifecycle Services.
 - On a local virtual machine (VM), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
 
 ## Developing an entity in Visual Studio and enabling it for data export

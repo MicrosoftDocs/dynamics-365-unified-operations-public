@@ -27,6 +27,7 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 # Enable Copilot in Dynamics 365 Finance
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes the features that are available through the **Copilot in Microsoft Dynamics 365 Finance** app. This app is installed by default in the Microsoft Power Platform admin center.
 

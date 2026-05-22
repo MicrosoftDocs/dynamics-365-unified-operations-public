@@ -4,7 +4,7 @@ description: Learn about how you can use Optimization advisor to help ensure opt
 author: kamaybac
 ms.author: kamaybac
 ms.topic: overview
-ms.date: 07/23/2019
+ms.date: 03/10/2026
 ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: global
@@ -21,17 +21,17 @@ This article describes how you can use Optimization advisor to help ensure optim
 
 ## Overview
 
-Incorrect configuration and setup of a module can adversely affect the availability of application features, system performance, and the smooth operation of business processes. The quality of business data (for example, the correctness, completeness, and cleanliness of the data) also affects system performance, and an organization's decision-making capabilities, productivity, and so on.
+Incorrect configuration and setup of a module can adversely affect the availability of application features, system performance, and the smooth operation of business processes. The quality of business data (for example, the correctness, completeness, and cleanliness of the data) also affects system performance, and an organization's decision-making capabilities and productivity.
 
 The **Optimization advisor** workspace is a tool that lets power users, business analysts, functional consultants, and IT support functions identify issues in module configuration and business data. Optimization advisor suggests best practices for module configuration and identifies business data that is obsolete or incorrect.
 
-Optimization advisor periodically runs a set of best practice rules. A default set of rules is available, however users can also create rules that are specific to their customizations, solutions from independent software vendors (ISVs), and business data. For more information about how to create rules, see [Create rules for Optimization advisor](create-rules-optimization-advisor.md).
+Optimization advisor periodically runs a set of best practice rules. A default set of rules is available, but you can also create rules that are specific to your customizations, solutions from independent software vendors (ISVs), and business data. For more information about how to create rules, see [Create rules for Optimization advisor](create-rules-optimization-advisor.md).
 
-When a violation of a rule is detected, an optimization opportunity is generated and appears in the **Optimization advisor** workspace. A user can take appropriate corrective action directly from the **Optimization advisor** workspace.
+When Optimization advisor detects a violation of a rule, it generates an optimization opportunity that appears in the **Optimization advisor** workspace. You can take appropriate corrective action directly from the **Optimization advisor** workspace.
 
-Opportunities can be company-specific or cross-company, depending on the type of setup and data that is being validated. Cross-company opportunities can be viewed from all companies. To view the opportunities for a specific company, you must first select the company.
+Opportunities can be company-specific or cross-company, depending on the type of setup and data that is being validated. You can view cross-company opportunities from all companies. To view the opportunities for a specific company, you must first select the company.
 
-Standard security policies apply to optimization opportunities. For example, the optimization opportunities that are related to configuration of the **Warehouse management** module are visible only to users who have access to Warehouse management and can change its setup.
+Standard security policies apply to optimization opportunities. For example, users can see only the optimization opportunities that are related to configuration of the **Warehouse management** module if they have access to Warehouse management and can change its setup.
 
 When you take action on some optimization opportunities, the system calculates the impact of the opportunity in terms of the reduction in the runtime of business processes. Unfortunately, this feature isn't available for all optimization opportunities.
 
