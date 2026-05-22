@@ -47,11 +47,11 @@ On the **Default order setting** page for a released product, you can specify ea
 
 - **Min. order quantity** – Planned orders aren't less than the specified value.
 
-            For example, if the **Min. order quantity** field is set to *10*, a planned order for a quantity of 10 is created, even if only four are required to fulfill the demand.
+    For example, if the **Min. order quantity** field is set to *10*, a planned order for a quantity of 10 is created, even if only four are required to fulfill the demand.
 
 - **Max. order quantity** – Planned orders don't exceed the specified value. If the demand is more than the **Max. order quantity** value, multiple planned orders are created to cover it.
 
-        For example, if the **Max. order quantity** field is set to *100*, and the demand is 450, four planned orders for a quantity of 100 and one planned order for a quantity of 50 are created.
+    For example, if the **Max. order quantity** field is set to *100*, and the demand is 450, four planned orders for a quantity of 100 and one planned order for a quantity of 50 are created.
 
 ## Examples of replenishment that use the Min./Max. coverage code
 
