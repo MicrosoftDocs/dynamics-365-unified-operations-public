@@ -44,13 +44,13 @@ This example scenario walks through many of the diverse settings that affect how
 1. Expand the **Wave processing** section.
 1. In the **Wave processing batch group** field, enter or select a value.
 1. Set the **Process waves in batch option** to **Yes**.
-1. In the **Wait for lock (ms)** field, enter a number. Enter the time, in milliseconds, that an allocation step waits for a system resource that is locked by another allocation step. When this time is exceeded, the wave isn't processed and an error message is displayed.    
+1. In the **Wait for lock (ms)** field, enter a number. Enter the time, in milliseconds, that an allocation step waits for a system resource that is locked by another allocation step. When this time is exceeded, the wave isn't processed and an error message is displayed.
 1. Select **Save**.
 1. Close the page.
 1. Go to **Production control > Setup > Production control parameters**.
 1. In the **Release to warehouse** field, select an option.
 
-        For sales orders and kanban orders, inventory must be reserved before the order is released to the warehouse. Otherwise, items or allocation lines can't be processed. For production orders, you can also select **Allow partial reservation**. For example, this option is useful if you have the materials that you need to start production, and can wait until the additional materials become available to finish the process. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available.
+   For sales orders and kanban orders, inventory must be reserved before the order is released to the warehouse. Otherwise, items or allocation lines can't be processed. For production orders, you can also select **Allow partial reservation**. For example, this option is useful if you have the materials that you need to start production, and can wait until the additional materials become available to finish the process. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available.
 1. Close the page.
 
 ## Related information
