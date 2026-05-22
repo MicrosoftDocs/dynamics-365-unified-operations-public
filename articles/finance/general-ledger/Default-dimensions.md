@@ -44,6 +44,9 @@ You can optionally define a balancing financial dimension. On the **Ledger** pag
 
 Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This article focuses on default dimensions on the main account by legal entity. You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
 
+> [!NOTE]
+> A related concept is **derived dimensions**. Derived dimensions let the value of one financial dimension automatically set the values of other dimensions, based on rules that you define. By default, derived values are applied only when the target dimensions are blank, but you can enable the **Replace existing dimension values with derived values** option to overwrite values that are already populated. For more information, see [Derived dimensions](derived-dimensions.md).
+
 ## Order in which default dimensions are applied during posting
 
 People often have questions about the order that the various components run in. It's very important that you understand the order that default dimensions are applied in, because this behavior affects the approach that you take to setup.
