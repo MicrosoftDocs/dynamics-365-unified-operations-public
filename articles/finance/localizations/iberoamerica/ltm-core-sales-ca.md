@@ -25,7 +25,7 @@ The Sales CA number can be assigned either manually or automatically.
 
 Before you can manually assign Sales CA numbers to purchase or sales invoices, the following prerequisites must be met:
 
-- The company/region of the legal entity must be in a LATAM-supported country.
+- The company/region of the legal entity must be in a LATAM-supported country/region.
 - Both the general LATAM feature and the country/region-specific LATAM feature must be enabled.
 - In the **document class** configuration, set the **Require CA number** option to **Yes**.
 - In the **document class** configuration, set the entry type of the document mask to **Manual**.
@@ -44,7 +44,7 @@ After you complete the rest of the required information, post the invoice. The S
 
 Before Sales CA numbers can be automatically assigned to purchase or sales invoices, the following prerequisites must be met:
 
-- The company/region of the legal entity must be in a LATAM-supported country.
+- The company/region of the legal entity must be in a LATAM-supported country/region.
 - Both the general LATAM feature and the country/region-specific LATAM feature must be enabled.
 - In the **document class** configuration, set the **Require CA number** option to **Yes**.
 - In the **document class** configuration, set the entry type of the document mask to **Auto**.
