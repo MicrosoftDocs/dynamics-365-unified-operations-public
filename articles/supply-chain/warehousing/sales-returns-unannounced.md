@@ -79,7 +79,7 @@ To prepare your system to receive returns without using an RMA order, you must e
 
 Before you can use blind returns and/or automatic generation of return details during receiving, you must follow these steps to turn on and set up each feature in your system.
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 1. If you plan to use the *Return details* return process, specify the number sequences that support this process:
 
     1. On the **Number Sequences** tab, find the row where the **Reference** field is set to *Return ID*. For this row, set the **Number sequence code** field to the number sequence that you want to use.
@@ -308,7 +308,7 @@ You must have number sequences that generate unique return IDs and load line inv
 
 Follow these steps to enable the features that are required to support unannounced returns.
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 1. On the **Number sequences** tab, set the **Number sequence code** field to *ReturnID*.
 1. Set the **Number sequence code** field to *LLIP*.
 1. On the **General** tab, turn on the **Enable return details creation** option.
