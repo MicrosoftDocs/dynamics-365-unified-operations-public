@@ -128,6 +128,9 @@ For the accounting entries that you create, enter the tag values as default valu
   - Enter the tag values for the summary account, such as Accounts payable or Accounts receivable, by default from either the header or the accounting distributions, depending on the General ledger parameters that are used for summary accounts. (Go to **General ledger** > **Ledger setup** > **General ledger parameters**.) The tag values are entered by default according to the same logic that the system uses for the financial dimension values for the summary account.
   - All other accounts, such as the expense, revenue, tax, and discounts, use the tag values from the accounting distributions by default.
 
+    > [!IMPORTANT]
+    > The **Values used for summary account** parameter on the **General ledger parameters** page controls where summary-account tag values come from on source documents such as the vendor invoice. When you set this parameter to **Source document**, the summary account—for example, Accounts payable, purchase accruals, or vendor balance postings—takes its tag values from the source-document distributions. If those distributions don't contain the expected tag values—for example, on purchase accrual lines that a product receipt or invoice voucher generates, or on charge-code distributions—the summary account tags remain empty. Before you post, open the accounting distributions for the document and verify that the expected tag values appear on every distribution line that contributes to a summary account. For background on this parameter, see [Plan your local chart of accounts](plan-local-chart-of-accounts.md).
+
 If a document has downstream documents, the system uses the tags from the parent document for the child documents. For example, the system uses the tag values from the sales order header and lines for the accounting that it creates for the packing slip and customer invoice, according to the logic that is described earlier.
 
 ### Validation
@@ -185,3 +188,59 @@ Financial tag controls require the **Financial tag essentials** privilege, which
 [![Security configuration showing the Financial tag essentials privilege and its associated duty.](./media/financial-tag-security-configuration.png)](./media/financial-tag-security-configuration.png)
 
 To resolve the error, either assign one of these roles to the affected user, or add the **Financial tag essentials** privilege to a role the user already has. If the error persists after updating security, a service restart might be needed to clear cached security state.
+
+## Troubleshoot missing financial tag fields or values
+
+If financial tag columns or values don't appear where you expect them—for example, the **Financial tag** field appears on a journal header but not on the journal lines, or previously configured tag values disappear from a list view—the cause is usually cached metadata or environment configuration drift rather than a posting bug. Work through the following checks in order.
+
+### Clear the user cache
+
+The financial tag controls cache the active tag configuration per user. When the configuration changes—for example, when you activate a new tag, rename an existing tag, or enable a feature—the cached metadata might not refresh for users who are already signed in.
+
+1. Have the affected user sign out of Dynamics 365 Finance.
+1. In the user's browser, clear the browser cache for the Finance site.
+1. Have the user sign back in, select the **Settings** button (the gear icon) on the navigation bar, and then select **User options**.
+1. On the **User options** page, select **Usage data** on the Action Pane.
+1. Select **Reset**, and then select **Yes** to confirm.
+1. Close the page, and then reopen the page that was missing the tag fields or values.
+
+If the field or values now appear for that user, repeat the steps for any other affected users, or instruct them to reset their own usage data.
+
+### Verify Feature management parity between environments
+
+Several features gate the Financial tags experience and the documents that support tags. If Production and Sandbox (or any two other environments) have different features enabled, the behavior and the available entry experiences differ between them. In each environment, go to **System administration** > **Workspaces** > **Feature management**, and confirm that the following features are in the same state in both environments:
+
+- **Financial tags**
+- **Financial tag defaulting rules**
+- **Enable financial tags for sales order invoicing**
+- **Enable financial tags for purchase order invoicing**. If you use tags on purchase order documents, also confirm that you've requested the **PurchaseOrderFinTagFeature** flight for both environments through a support ticket.
+- **Allow edits to internal data on general ledger vouchers**. This feature is required to correct tag values on posted transactions.
+
+### Verify application version parity between environments
+
+The Financial tags entry experience has evolved across releases. An environment on an older application version might still use the legacy entry experience and not support all the behavior described in the current documentation. In each environment, go to **System administration** > **About**, and confirm that the Dynamics 365 Finance application version matches. If the versions don't match, update the lagging environment before you compare tag behavior between them.
+
+### Confirm the user has the required privilege
+
+If a user sees the **"Part Reference's menu item must point to a Form"** error, or doesn't see any tag controls at all, confirm that the user's roles include the **Financial tag essentials** privilege. For more information, see [Troubleshoot the "Part Reference's menu item must point to a Form" error](#troubleshoot-the-part-references-menu-item-must-point-to-a-form-error).
+
+## Troubleshoot financial tags on imported journals
+
+If you import a journal (for example, through a data management project or the journal import entity) and the tag columns are blank after the import, even though the source file contains values, work through the following checks:
+
+- Confirm that the source data contains the configured tag labels as column names, and that the tag values use the delimiter that's defined on the **General ledger parameters** page. A mismatched delimiter causes the import to ignore the tag values.
+- Confirm that every tag that's referenced in the import is **Active** in the target legal entity. The import skips tag values for inactive tags.
+- After an environment upgrade, confirm Feature management parity, as described in the previous section. An upgrade can change the active feature set, and the journal import behavior follows the feature set that's active at the time of the import.
+- If you can reproduce the issue only after an environment upgrade, and the previous checks don't resolve it, open a Microsoft support ticket. Microsoft might enable a Killswitch flight in a user acceptance testing (UAT) environment to isolate the regression. Don't try to enable Killswitch flights without support guidance.
+
+## Financial tags and ledger settlement
+
+Ledger settlement matches transactions by using the values stored on the posted accounting entries, including financial tag values when you select **Financial tags** as match criteria. For details about how to select financial tags as match criteria, see the [Financial tags](auto-settle.md#financial-tags) section in [Automate ledger settlement](auto-settle.md).
+
+If settled accounts show tag values that look incorrect, random, or missing, the most common causes are the following:
+
+- The debit and credit transactions were posted with different tag values, so they never matched on the tag criteria.
+- One side of the settlement was posted before the tag was active, or before the **Financial tags** feature was enabled. Therefore, it has no tag value.
+- The tag was renamed after some transactions were posted. The posted transactions keep the values that were in place at posting time.
+
+To correct historical tag values without reversing the underlying transactions, use the **Edit internal voucher data** feature, as described in [Correct tag values after posting](#correct-tag-values-after-posting). After you align the tag values across the debit and credit sides, the next ledger settlement run can match them.
