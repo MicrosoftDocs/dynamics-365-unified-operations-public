@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/04/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-06
@@ -40,7 +40,7 @@ To configure the prerequisites, follow these steps:
     > [!NOTE]
     > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Tax declaration model mapping** configuration.
     >
-    > ![Setting the Default for model mapping option to Yes for the Tax declaration model mapping configuration.](../media/emea-gbr-default-for-model-mapping-parameter.png)
+    > :::image type="content" source="../media/emea-gbr-default-for-model-mapping-parameter.png" alt-text="Screenshot of setting the Default for model mapping option to Yes for the Tax declaration model mapping configuration.":::
 
     For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -64,8 +64,5 @@ To generate a paper format of the VAT 100 report, follow these steps:
 1. Select **OK** to generate the **VAT 100** report.
 
 Alternatively, you can generate the VAT statement for specific sales tax payment records by going to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments** and selecting **Print report** on the Action Pane.
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

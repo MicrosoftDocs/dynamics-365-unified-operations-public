@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
@@ -49,10 +49,5 @@ To set up a specific purchase document cycle for a vendor, follow these steps:
 1. In Dynamics 365 Finance, go to the **All vendors** page.
 1. Select a vendor.
 1. Select **Procurement** \> **Set up** \> **Purchase cycle** \> **Edit**.
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

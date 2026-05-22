@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the AI technolog
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: faq
-ms.date: 07/02/2025
+ms.date: 05/07/2026
 ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
@@ -14,6 +14,8 @@ ms.collection:
 ---
 
 # Responsible AI FAQ for Analyze demand plans with Copilot
+
+[!include [banner](../includes/banner.md)]
 
 This FAQ provides answers to frequently asked questions about the AI technology that's used in the *Analyze demand plans with Copilot* feature for Demand planning in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 

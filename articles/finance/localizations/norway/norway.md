@@ -4,7 +4,9 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 10/01/2025
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Norway
@@ -25,10 +27,8 @@ This article provides links to documentation resources for Norway.
 - [VAT return with direct submission to Altinn](emea-nor-vat-return.md)
 - [Standard Audit File for Tax (SAF-T)](emea-nor-satndard-audit-file-for-tax.md)
 - [Cash register functionality](../../../commerce/localizations/norway/emea-nor-cash-registers.md)
-- [Deployment guidelines for cash registers](../../../commerce/localizations/dev-itpro/emea-nor-loc-deployment-guidelines.md)
+- [Deployment guidelines for cash registers](../../../commerce/localizations/norway/emea-nor-cash-registers.md)
 - [Customer electronic invoices export](emea-nor-e-invoices.md)
 - [Payments to self-employed persons - RF-1321](emea-nor-payments-to-self-employed-persons.md)
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

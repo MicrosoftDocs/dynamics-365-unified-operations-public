@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -66,8 +66,8 @@ To create transactions for one fixed asset by using the fixed asset journal, fol
     > You can't change the value of the **Value model** field in this dialog, because **Putting into operation** transactions are created for all value models at the same time.
 
 1. Select **OK**. The lines that have the **Putting into operation** transaction type for the value models, and that are registered in the fixed asset account, are created on the **Journal voucher** page.
-1. On the Action Pane, select **Validate**** \> ****Validate** to validate the transactions.
-1. On the Action Pane, select **Post**** \> ****Post** to post the transactions.
+1. On the Action Pane, select **Validate** \> **Validate** to validate the transactions.
+1. On the Action Pane, select **Post** \> **Post** to post the transactions.
 
     Fixed asset and ledger transactions are created. The fixed asset status is updated to **In operation**.
 

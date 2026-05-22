@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-For legal entities in Poland, the line discount can be calculated from the unit price of an invoice line instead of from a line amount. This article provides information about the Line discount calculation from unit price method and explains how to set it up.
+For legal entities in Poland, you can calculate the line discount from the unit price of an invoice line instead of from a line amount. This article provides information about the **Line discount calculation from unit price** method and explains how to set it up.
 
 For legal entities in Poland, the line discount doesn't have to be calculated from a line amount. Instead, it can be calculated from the unit price of an invoice line. When the Line discount calculation from unit price method is used, the discounted unit price is rounded before the line amount is calculated. The following table shows how the line discount is calculated by both the standard method and the Line discount calculation from unit price method.
 
@@ -29,20 +29,16 @@ For legal entities in Poland, the line discount doesn't have to be calculated fr
 > The 0.95 that is used in the calculations equals 1.00 – 0.05, where 0.05 is the discount amount if the unit price is 1.00.
 
 ## Set up the Calculation of line discount parameter
-The Line discount calculation from unit price method affects both Accounts receivable and Accounts payable, and is set up on the **Accounts receivable parameters** page and the **Procurement and sourcing parameters** page. The **Calculation of line discount** parameter has the following options:
 
--   **From line value** – Use the standard method to calculate the line discount.
--   **From unit price** – Use the Line discount calculation from unit price method to calculate the line discount.
+The **Line discount calculation from unit price** method affects both **Accounts receivable** and **Accounts payable**. Set it up on the **Accounts receivable parameters** page and the **Procurement and sourcing parameters** page. The **Calculation of line discount** parameter has the following options:
+
+- **From line value** – Use the standard method to calculate the line discount.
+- **From unit price** – Use the **Line discount calculation from unit price** method to calculate the line discount.
 
 The **Calculation of line discount** parameter affects the following documents:
 
--   Sales orders
--   Purchase orders
--   Vendor invoices
-
-
-
-
-
+- Sales orders
+- Purchase orders
+- Vendor invoices
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Sweden
 ms.search.validFrom: 2016-11-30
@@ -173,7 +173,7 @@ To run through the example, follow these steps:
 
    > [!NOTE]
    > The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
-   
+
 1. Post the following transactions. For example for Customer invoices go to **Accounts receivable** \> **Invoices** \> **All free text invoices**, for Vendor invoices go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
 
     | **Date**        | **Transaction type**            | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – reporting code** | **Expected tax amount – reporting code** |
@@ -188,7 +188,7 @@ To run through the example, follow these steps:
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog in the **Sales tax payment version** field, select **Original**.
 1. Print the report, and review the data.
 
-    ![Sales tax reporting original list.](../media/1_Sales_tax_reporting.png)
+    :::image type="content" source="../media/1_Sales_tax_reporting.png" alt-text="Screenshot of the sales tax reporting original list.":::
 
 1. Post the new transaction. For example, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 
@@ -199,17 +199,16 @@ To run through the example, follow these steps:
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog in the **Sales tax payment version** field, select **Latest corrections**.
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog in the **Sales tax payment version** field, select **Corrections**. The following illustration shows the result.
 
-    ![Sales tax reporting list of corrections.](../media/2_Sales_tax_reporting.png)
+    :::image type="content" source="../media/2_Sales_tax_reporting.png" alt-text="Screenshot of the sales tax reporting list of corrections.":::
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog in the **Sales tax payment version** field, select **Total list**. The following illustration shows the result.
 
-    ![Sales tax reporting total list.](../media/3_Sales_tax_reporting.png)
+    :::image type="content" source="../media/3_Sales_tax_reporting.png" alt-text="Screenshot of the sales tax reporting total list.":::
 
 ## Report VAT declaration to the Tax authority
 
 After you've generated the Swedish sales tax report, use the data on it to fill in the VAT declaration for the Swedish Tax Agency in the official format. For example, the following illustration shows what the Swedish VAT declaration has looked like since 2016.
 
-![Swedish VAT declaration report.](../media/4_Swedish_VAT_declaration.png)
-
+:::image type="content" source="../media/4_Swedish_VAT_declaration.png" alt-text="Screenshot of the Swedish VAT declaration report.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

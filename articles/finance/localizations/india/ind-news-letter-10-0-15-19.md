@@ -7,7 +7,7 @@ ms.topic: whats-new
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 07/15/2024
+ms.date: 05/01/2026
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: India
@@ -61,8 +61,8 @@ This feature lets you print a dynamic QR code on business-to-consumer (B2C) cust
 - In the **Feature management** workspace, turn on the feature that is named **(India) Dynamic QR Code on the customer invoice**. For more information, see [Feature management overview](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 - Import the following versions or later of these Electronic reporting (ER) configurations:
 
-    -	Invoice model mapping (IN).version.249.11.xml
-    -	Dynamic QR Code (IN).version.249.4.xml
+  - Invoice model mapping (IN).version.249.11.xml
+  - Dynamic QR Code (IN).version.249.4.xml
 
 During tax invoice generation, the dynamic QR code is printed on the invoice layout and can be scanned by the customer. The QR code contains information about the required bank account, company, and invoice details.
 
@@ -85,13 +85,13 @@ This fix supports the changes that are required to register invoices that are re
 - Configure your environment to use electronic invoicing. For more information, see [A country/region-specific hotfix to support Electronic invoice under GST for India in Microsoft Dynamics 365 Finance](https://support.microsoft.com/topic/a-country-specific-hotfix-to-support-electronic-invoice-under-gst-for-india-in-microsoft-dynamics-365-finance-b557920d-93f9-1e6d-3af5-139efc3cb147).
 - Import the following versions or later of these ET configurations:
 
-    - Electronic messages framework model, version 34
-    - E-Invoice model mapping, version.34.22
-    - E-Invoice format (IN), version 34.5
-    - E-Invoice data import format (IN), version 34.12
-    - Invoice model, version 249
-    - Invoice model mapping (IN), version 249.10
-    - GST Invoice format (IN), version 249.11
+  - Electronic messages framework model, version 34
+  - E-Invoice model mapping, version.34.22
+  - E-Invoice format (IN), version 34.5
+  - E-Invoice data import format (IN), version 34.12
+  - Invoice model, version 249
+  - Invoice model mapping (IN), version 249.10
+  - GST Invoice format (IN), version 249.11
 
 - From the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS), import the **Indian IRP integration setup v4** data package. This package includes a predefined electronic messaging setup.
 
@@ -107,7 +107,7 @@ The following new changes were introduced:
 - Automatically enable the feature that is named **Reversal of vendor TDS at the time of settlement when deducted on invoice and payment**.
 
 Per the income tax rule, TDS should be deducted from either the invoice or the payment (whichever occurs earlier). If you accidentally deduct from both transactions, the system reverses the TDS that was deducted from the later transaction, up to the lower transaction value, during invoice settlement.
- 
+
 For more information about the update for Finance, see [TDS on purchase of goods under Section 194Q](https://support.microsoft.com/topic/tds-on-purchase-of-goods-under-section-194q-4641db94-9324-4354-9837-7209e5d5d26b) and [KB article 4619159](https://fix.lcs.dynamics.com/Issue/Details?bugId=587591&dbType=3&qc=88c3bab4c44229ca1e1b4dc48e3c5fafc79ee6a2730b96f6a4290623b60ea1db).
 
 For more information about the update for Dynamics AX 2012 R3, see [KB article 461766](https://fix.lcs.dynamics.com/Issue/Details?bugId=3984343&dbType=0&qc=7b69fc7455089ae54499b4438d52d42c30e02b8b9227a9b6b891e733d30b795f).
@@ -116,14 +116,14 @@ For more information about the update for Dynamics AX 2012 R3, see [KB article 4
 
 - **Section 206AB:** This section is applicable when a person fails to file returns for two years. TDS will be applied at a higher rate, as described here:
 
-    - Twice the rate that is specified in the relevant provision of the Income Tax Act
-    - Twice the rate or rates that are in effect
-    - A rate of 5 percent
+  - Twice the rate that is specified in the relevant provision of the Income Tax Act
+  - Twice the rate or rates that are in effect
+  - A rate of 5 percent
 
 - **Section 206CCA:** TCS will be applied at a higher rate, as described here:
 
-    - Twice the rate that is specified in the relevant provision of the Act
-    - A rate of 5 percent
+  - Twice the rate that is specified in the relevant provision of the Act
+  - A rate of 5 percent
 
 The existing TDS and TCS functionality addresses the new requirements through the following options:
 

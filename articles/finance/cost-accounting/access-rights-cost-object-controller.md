@@ -19,9 +19,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-The **Cost control** workspace is a central point where managers can view the performance of their cost objects. This workspace lets managers consume Cost accounting data even though they aren't cost accountants. For security reasons, managers should be allowed to see only the Cost accounting data that is related to the specific cost objects that they are responsible for.
+The **Cost control** workspace is a central point where managers can view the performance of their cost objects. This workspace lets managers consume Cost accounting data even though they aren't cost accountants. For security reasons, managers should only see the Cost accounting data that relates to the specific cost objects that they're responsible for.
 
-There are four unique roles in Cost accounting.
+Cost accounting has four unique roles.
 
 | Role name               | License      |
 |-------------------------|--------------|
@@ -32,11 +32,11 @@ There are four unique roles in Cost accounting.
 
 This article explains how to assign the **Cost object controller** role to a manager.
 
-When the **Cost object controller** role is assigned to a manager, the manager can perform the following tasks:
+When you assign the **Cost object controller** role to a manager, the manager can perform the following tasks:
 
 - Access the **Cost control** workspace (in the client).
 
-    - Drill through and have view access to the pages that support the drill-through experience.
+  - Drill through and have view access to the pages that support the drill-through experience.
 
 - Access the **Cost control** workspace (in the mobile application).
 
@@ -44,6 +44,7 @@ When the **Cost object controller** role is assigned to a manager, the manager c
 > The **Cost object controller** role doesn't control which cost objects the user can access and view data for. Row-level security is provided via dimension hierarchies and the Access list hierarchy.
 
 ## Grant access rights
+
 The following example shows what a dimension hierarchy can look like.
 
 **Dimension hierarchy details**
@@ -52,7 +53,7 @@ The following example shows what a dimension hierarchy can look like.
 |--------------------------|--------------|------------------------------------|-----------------------|
 | Organization             | Cost centers | Dimension classification hierarchy | **Yes**               |
 
-You can use the **Users** FastTab in the hierarchy designer to insert one or more user IDs on each node.
+Use the **Users** FastTab in the hierarchy designer to add one or more user IDs on each node.
 
 |             Nodes                 | Users            | From dimension member     |   To dimension member   |
 |-----------------------------------|------------------|---------------------------|-------------------------|
@@ -66,27 +67,28 @@ You can use the **Users** FastTab in the hierarchy designer to insert one or mor
 | &nbsp;&nbsp;&nbsp;&nbsp;Assembly  | Chris            | CC006                     | CC006                   |
 
 > [!NOTE]
-> Cost accountants should be assigned to the top level of the hierarchy, so that they can see all entries in Cost accounting.
+> Assign cost accountants to the top level of the hierarchy, so they can see all entries in Cost accounting.
 
-Before the Access list hierarchy and its security settings can be applied, the **Enable view access for cost object dimension members** option must be set to **Yes** on the **General** tab of the **Cost accounting parameters** page (**Cost accounting** > **Setup** > **Parameters**).
+Before you can apply the Access list hierarchy and its security settings, set the **Enable view access for cost object dimension members** option to **Yes** on the **General** tab of the **Cost accounting parameters** page (**Cost accounting** > **Setup** > **Parameters**).
 
-The settings for the Access list hierarchy are used to control the data that is shown in following areas:
+Use the settings for the Access list hierarchy to control the data that is shown in the following areas:
 
 - **Cost control** workspace (in the client):
 
-    - Data on the pages that are used for drill-through
+  - Data on the pages that are used for drill-through
 
 - **Cost control** workspace (in the mobile application):
 
-    - Balances in cards
+  - Balances in cards
 
 - Microsoft Power BI:
 
-    - Data that is shown in Power BI visualizations
-    - Data Power BI visualizations that are embedded in the Dynamics 365 Finance client
+  - Data that is shown in Power BI visualizations
+  - Data in Power BI visualizations that are embedded in the Dynamics 365 Finance client
 
 > [!IMPORTANT]
-> - Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+>
+> - Before the Access list hierarchy can affect data in Power BI, you must pair the Access list hierarchy with row-level security in Power BI. For more information, see [Set up security for Cost accounting content pack](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - This article shows the prerequisites that must be in place before you can use the **Cost control** workspace.
 
 Additional resources
@@ -94,6 +96,5 @@ Additional resources
 - [Cost control workspace](cost-control-workspace.md)
 - [Dimension hierarchy](dimension-hierarchy.md)
 - [Set up security for Cost accounting content pack](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

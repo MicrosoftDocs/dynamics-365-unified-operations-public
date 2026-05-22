@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -52,11 +52,11 @@ To configure and generate the Customer turnover register, follow these steps:
 1. Set the **Itemize balance** option to **Yes** to show a detailed view of the balance columns.
 1. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![Customer turnover register page, General tab.](../media/01_Customer_turnover_register.jpg)
+    :::image type="content" source="../media/01_Customer_turnover_register.jpg" alt-text="Screenshot of the Customer turnover register page, General tab.":::
 
 1.  Select **ОК** to generate the report.
 
-![Customer turnover register page.](../media/02_Customer_turnover_register.jpg)
+:::image type="content" source="../media/02_Customer_turnover_register.jpg" alt-text="Screenshot of the Customer turnover register page.":::
 
 >  [!NOTE]
 >   - Select **Voucher** to view the ledger transactions that generated the activity.
@@ -96,11 +96,11 @@ To configure and generate the Vendor turnover register, follow these steps:
 1. Set the **Itemize balance** option to **Yes** to show a detailed view of the balance columns.
 1. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![Vendor turnover register page, General tab.](../media/04_Vendor_turnover_register.jpg)
+    :::image type="content" source="../media/04_Vendor_turnover_register.jpg" alt-text="Screenshot of the Vendor turnover register page, General tab.":::
 
 1. Select **ОК** to generate the report.
 
-![Vendor turnover register page.](../media/05_Vendor_turnover_register.jpg)
+:::image type="content" source="../media/05_Vendor_turnover_register.jpg" alt-text="Screenshot of the Vendor turnover register page.":::
 
 >  [!NOTE]
 > - Select **Voucher** to view the ledger transactions that generated the activity.
@@ -181,11 +181,11 @@ To configure and generate the general ledger report, follow these steps:
 1. Set the **Show transactions** option to **Yes** to show the accountable person transactions.
 1. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![General ledger turnover balance statement page, General tab.](../media/7_General_ledger_turnover_balance_sheet.jpg)
+    :::image type="content" source="../media/7_General_ledger_turnover_balance_sheet.jpg" alt-text="Screenshot of the General ledger turnover balance statement page, General tab.":::
 
 1. Select **ОК** to generate the report.
 
-![General ledger turnover balance statement page.](../media/8_General_ledger.jpg)
+:::image type="content" source="../media/8_General_ledger.jpg" alt-text="Screenshot of the General ledger turnover balance statement page.":::
 
 > [!NOTE]
 > - Select **Voucher** to view the ledger transactions that generated the activity.
@@ -203,7 +203,7 @@ To create, print, and view a report from the turnover balance statement report a
 1. On the **Turnover and balance statement report archive** page, in the **Report type** field, specify the type of report.
 1. Select the report.
 
-    ![Turnover balance statement report archive page.](../media/10_Turnover_and_balance_statement_report_archive.jpg)
+    :::image type="content" source="../media/10_Turnover_and_balance_statement_report_archive.jpg" alt-text="Screenshot of the Turnover balance statement report archive page.":::
 
 1. Select **New report** to generate a new report that has the same parameters as the selected report.
 1. Select **Report output** to print the report.
@@ -226,7 +226,7 @@ To precalculate transactional data, follow these steps:
     - General ledger
     - Advance holder turnover register
 
-    ![Pre-calculate transactional data dialog.](../media/11_Pre-calculate_transactional_data.jpg)
+    :::image type="content" source="../media/11_Pre-calculate_transactional_data.jpg" alt-text="Screenshot of the Pre-calculate transactional data dialog.":::
 
 1. Select **OK** to pre-calculate transactional data.
 

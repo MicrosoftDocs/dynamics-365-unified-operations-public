@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -129,8 +129,8 @@ To view factures in the purchase facture journal, follow these steps:
 The upper part of the page shows information about the facture information. This information includes the facture number, date of the registration, facture date, amount (including and excluding tax), sales tax amount, currency, and invoice account.
 
 The lower part of the page shows information about the invoice lines on two tabs:
--	**Overview** – This tab shows the item code, product name, price unit quantity, amount in the transaction currency, price, and sales tax amount per line.
--	**Product dimensions** – This tab shows the site, warehouse, and product dimensions.
+- **Overview** – This tab shows the item code, product name, price unit quantity, amount in the transaction currency, price, and sales tax amount per line.
+- **Product dimensions** – This tab shows the site, warehouse, and product dimensions.
 
 ## Process and print invoice-factures for sales orders
 

@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.validFrom: 1900-01-02
 ---
@@ -93,6 +93,5 @@ To assign a tax branch to a site, follow these steps:
 1. In the **Name** field, enter a unique name for the site.
 1. On the **Tax branch** FastTab, in the **Tax branch** field, select the tax branch code.
 1. On the **Addresses** FastTab, select **Add**, and then, in the **New address** dialog, enter the address details.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
