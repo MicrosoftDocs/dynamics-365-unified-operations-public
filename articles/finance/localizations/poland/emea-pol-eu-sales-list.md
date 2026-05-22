@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2025
+ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 ---
 
@@ -18,33 +18,33 @@ This article explains how to set up the European Union (EU) sales list report fo
 
 The following fields are included in the Polish EU sales list report:
 
--  **EU sales list header:**
-    - Reporting period
-    - Company name
-    - Authority ID
-    - Company VAT ID
+- **EU sales list header:**
+  - Reporting period
+  - Company name
+  - Authority ID
+  - Company VAT ID
 - **EU sales list lines:**
-    - Customer VAT ID or Vendor VAT ID
-    - Total amount of items
-    - Total amount of services
-    - Total amount of triangular trade
+  - Customer VAT ID or Vendor VAT ID
+  - Total amount of items
+  - Total amount of services
+  - Total amount of triangular trade
 
 As of version 10.0.44 of Microsoft Dynamics 365 Finance, you can also report corrections to the **EU sales list lines** in XML for Poland - VAT-UEK. This format includes the following fields:
 
--  **EU sales list header:**
-    - Reporting period
-    - Company name
-    - Authority ID
-    - Company VAT ID
+- **EU sales list header:**
+  - Reporting period
+  - Company name
+  - Authority ID
+  - Company VAT ID
 - **EU sales list lines:**
-    - Customer VAT ID or Vendor VAT ID before correction
-    - Total amount of items before correction
-    - Total amount of services before correction
-    - Total amount of triangular trade before correction
-    - Customer VAT ID or Vendor VAT ID after correction
-    - Total amount of items after correction
-    - Total amount of services after correction
-    - Total amount of triangular trade after correction
+  - Customer VAT ID or Vendor VAT ID before correction
+  - Total amount of items before correction
+  - Total amount of services before correction
+  - Total amount of triangular trade before correction
+  - Customer VAT ID or Vendor VAT ID after correction
+  - Total amount of items after correction
+  - Total amount of services after correction
+  - Total amount of triangular trade after correction
 
 You can report corrections to the EU sales list in XML for Poland is supported as of version 28.12 of `EU Sales list (PL)` electronic reporting format. This version of the format can be imported and used in the following or later versions of Finance.
 
@@ -78,7 +78,7 @@ To set up information about the company, follow these steps:
 1. Close the page.
 1. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, in the **VAT exempt number export** field, select the VAT ID that you created in step 6.
 
-    > [!NOTE] 
+    > [!NOTE]
     > The value from the **VAT exempt number export** field is used in the .xml file for the EU sales list report if your legal entity has a single VAT registration. For multiple VAT registrations, the Registration ID of the VAT ID category is used.
 
 ### Import electronic reporting configurations
@@ -193,7 +193,7 @@ To generate an EU sales list report, follow these steps:
     1. Set the **Generate report** option to **Yes**.
     1. In the **Report file name** field, enter "PL-001R".
     1. Set the **I acknowledge that for providing untruths or concealing the truth, there is a risk of liability described in the Fiscal Penal Code** option to **Yes**.
-1.  Select **OK**, and review the report in XML format that is generated. The following tables show the values in the example report.
+1. Select **OK**, and review the report in XML format that is generated. The following tables show the values in the example report.
 
     **EU sales list header**
 
@@ -217,7 +217,6 @@ To generate an EU sales list report, follow these steps:
 
 1. Review the report in Excel format that is generated.
 
-    ![Generated EUSL report in Excel.](../media/EUSL-pol.png)
-
+    :::image type="content" source="../media/EUSL-pol.png" alt-text="Screenshot of the generated EUSL report in Excel.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

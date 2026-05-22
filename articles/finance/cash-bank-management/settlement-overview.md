@@ -4,7 +4,7 @@ description: Learn about the settlement process, including outliens about transa
 author: music727
 ms.author: mibeinar
 ms.topic: overview
-ms.date: 04/18/2025
+ms.date: 05/06/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

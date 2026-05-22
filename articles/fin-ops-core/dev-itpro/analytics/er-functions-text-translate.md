@@ -4,7 +4,7 @@ description: Learn about how the TRANSLATE Electronic reporting (ER) function is
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 04/02/2020
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -34,7 +34,7 @@ The valid path of a data source of the *String* type.
 
 `pattern`: *String*
 
-The text that must be replaced.
+The text that you want to replace.
 
 `replacement`: *String*
 
@@ -48,13 +48,13 @@ The resulting text value.
 
 ## Usage notes
 
-The `TRANSLATE` function replaces one character at a time. The function replaces the first character of the `text` argument with the first character of the `pattern` argument and then the second character and follows the same flow until finished. When a character from the `text` and `pattern` arguments match, it is replaced by a character from the `replacement` argument that is located in the same position as the character from the `pattern` argument. If a character appears multiple times in the `pattern` argument, the `replacement` argument mapping that corresponds to the first occurrence of this character is used.
+The `TRANSLATE` function replaces one character at a time. The function replaces the first character of the `text` argument with the first character of the `pattern` argument and then the second character and follows the same flow until finished. When a character from the `text` and `pattern` arguments match, the function replaces it with a character from the `replacement` argument that is in the same position as the character from the `pattern` argument. If a character appears multiple times in the `pattern` argument, the function uses the `replacement` argument mapping that corresponds to the first occurrence of this character.
 
 ## Example 1
 
-`TRANSLATE ("abcdef", "cd", "GH")` replaces the **"c"** character of the specified  **“abcdef”** text with the **"G"** character of the `replacement` text due to the following:
--	The **"c"** character is presented in the `pattern` text in the first position.
--	The first position of the `replacement` text contains the **"G"** character.
+`TRANSLATE ("abcdef", "cd", "GH")` replaces the **"c"** character of the specified  **“abcdef”** text with the **"G"** character of the `replacement` text due to the following reasons:
+- The **"c"** character is presented in the `pattern` text in the first position.
+- The first position of the `replacement` text contains the **"G"** character.
 
 ## Example 2
 

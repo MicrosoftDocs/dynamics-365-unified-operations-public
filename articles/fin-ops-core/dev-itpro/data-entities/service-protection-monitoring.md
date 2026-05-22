@@ -5,6 +5,8 @@ author: jaredha
 ms.author: johnmichalak
 ms.reviewer: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/14/2026
 audience: Developer
 ms.search.region: Global
@@ -19,7 +21,7 @@ ms.dyn365.ops.version: Platform update 52
 
 This article provides information about the tools that are available to monitor usage of application programming interfaces (APIs). This usage includes queries that display information on API requests that the system throttled when it reached [service protection limits](service-protection-api-limits.md). It also includes general API usage to help administrators understand when integrations might be nearing the API limits.
 
-To successfully onboard with the throttling capability, you must monitor your Open Data Protocol (OData) and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center for finance and operations apps, contains a collection of monitoring and diagnostics tools that can help ensure you have an accurate view of the environments you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
+To successfully onboard with the throttling capability, you must monitor your Open Data Protocol (OData) and custom service integration patterns. Microsoft Dynamics Lifecycle Services, which is the administration center for finance and operations apps, contains a collection of monitoring and diagnostics tools that can help ensure you have an accurate view of the environments you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services](../lifecycle-services/monitoring-diagnostics.md).
 
 These queries enable you to get raw logs with data related to administration of the service. You can then export the logs for more advanced analysis.
 
@@ -29,7 +31,7 @@ Use the predefined **Requests throttled** query to see the list of API requests 
 
 To view throttling activity in the monitoring and diagnostics portal, follow these steps:
 
-1. In LCS, open the appropriate project.
+1. In Lifecycle Services, open the appropriate project.
 1. In the **Environments** section, select the environment to view, and then select **Full details**.
 1. On **Environment details**, select **Environment monitoring** to open the monitoring and diagnostics portal.
 1. On **Environment monitoring**, select the **Activity** tab to view the **Raw logs**.
@@ -47,7 +49,7 @@ The results are summarized in five-minute intervals, similar to the five-minute 
 
 To view the summarized data:
 
-1. In LCS, open the appropriate project.
+1. In Lifecycle Services, open the appropriate project.
 1. In the **Environments** section, select the environment to view, and then select **Full details**.
 1. On **Environment details**, select **Environment monitoring** to open the monitoring and diagnostics portal.
 1. On **Environment monitoring**, select the **Activity** tab to view the **Raw logs**.
@@ -72,7 +74,7 @@ The **API requests by application and user** query shows the list of API request
 
 To view the data for the query:
 
-1. In LCS, open the appropriate project.
+1. In Lifecycle Services, open the appropriate project.
 1. In the **Environments** section, select the environment to view, and then select **Full details**.
 1. On **Environment details**, select **Environment monitoring** to open the monitoring and diagnostics portal.
 1. On **Environment monitoring**, select the **Activity** tab to view the **Raw logs**.

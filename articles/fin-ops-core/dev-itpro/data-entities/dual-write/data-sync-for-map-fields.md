@@ -4,6 +4,8 @@ description: Learn about the dual-write triggering behavior for mapped fields, o
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: Developer

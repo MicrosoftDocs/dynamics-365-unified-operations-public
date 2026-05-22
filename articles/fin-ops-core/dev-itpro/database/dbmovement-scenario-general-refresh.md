@@ -4,7 +4,9 @@ description: Learn about a general-purpose database refresh scenario for Microso
 author: LaneSwenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 01/28/2019
+ms.custom: 
+  - bap-template
+ms.date: 04/03/2026
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.search.region: Global
@@ -17,39 +19,40 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-Database movement operations are a suite of self-service actions that can be used as part of data application lifecycle management (DataALM). This tutorial shows how to use the refresh database operation in a training scenario.
+Database movement operations are a suite of self-service actions that you can use as part of data application lifecycle management (DataALM). This tutorial shows how to use the refresh database operation in a training scenario.
 
-In this tutorial, you will learn how to:
+In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Prepare the target environment.
-> * Run the refresh.
-> * Reconfigure the target environment.
-> * Enable selected users.
+>
+> - Prepare the target environment.
+> - Run the refresh.
+> - Reconfigure the target environment.
+> - Enable selected users.
 
-As an example of this scenario, a customer who has already gone live with the application wants to load a recent copy of production transactions into the user acceptance testing (UAT) environment. In this way, the customer can support training of new employees and evaluate configuration changes without affecting the live environment.
+As an example of this scenario, a customer who already goes live with the application wants to load a recent copy of production transactions into the user acceptance testing (UAT) environment. By using this approach, the customer can support training of new employees and evaluate configuration changes without affecting the live environment.
 
 ## Prerequisites
 
-To do a refresh database operation, your production environment must be deployed, or you must have a minimum of two standard UAT environments.
+To perform a refresh database operation, you must deploy your production environment or have a minimum of two standard UAT environments.
 
 ## Notify users about the pending downtime
 
-Before you start the bulk of the work, notify users of the target environment that the environment will be offline for a period. You can notify users either manually via Microsoft Dynamics Lifecycle Services (LCS) or programmatically by using RESTful application programming interface (API) calls.
+Before you start the bulk of the work, notify users of the target environment that the environment is offline for a period. You can notify users either manually via Microsoft Dynamics Lifecycle Services or programmatically by using RESTful application programming interface (API) calls.
 
 ### Manually send a broadcast message
 
-To notify users manually via LCS, follow these steps:
+To notify users manually through Lifecycle Services, follow these steps:
 
-1. In LCS, open the **Environment details** page for the target environment.
-2. Select **Maintain** \> **Message online users**.
-3. Select **Broadcast a new message for downtime**.
-4. Select the valid from/valid to times in your local time zone.
-5. Select **Post**.
+1. In Lifecycle Services, open the **Environment details** page for the target environment.
+1. Select **Maintain** > **Message online users**.
+1. Select **Broadcast a new message for downtime**.
+1. Select the valid from and valid to times in your local time zone.
+1. Select **Post**.
 
 ### Programmatically send a broadcast message
 
-The following sample code can be used as shown in a console application, or it can be modified to make it work with other services that can be called on demand, such as Microsoft Azure Functions. Before this sample code will work, you must set up your application registration as described in [Service endpoints overview](../data-entities/services-home-page.md).
+Use the following sample code as shown in a console application, or modify it to work with other services that you can call on demand, such as Microsoft Azure Functions. Before this sample code works, set up your application registration as described in [Service endpoints overview](../data-entities/services-home-page.md).
 
 ```csharp
 [Serializable]
@@ -98,35 +101,34 @@ public class Program
     }
 ```
 
-Both approaches, manual via LCS and programmatic via RESTful API calls, will show users that a period of downtime is pending.
+Both approaches, manual via Lifecycle Services and programmatic via RESTful API calls, show users that a period of downtime is pending.
 
-<img src="media/BroadcastMessage.png" width="400px" alt="Broadcast message of downtime" />
+:::image type="content" source="media/BroadcastMessage.png" alt-text="Screenshot of a broadcast message of downtime.":::
 
 ## Begin the refresh
 
-Depending on the size of your source environment, it might make sense to begin the refresh process immediately. The larger the source database, the longer it will take to copy to your target Azure SQL Database instance. While the copy is in progress, the target environment will still be online. The downtime will start after the copy is completed.
+Depending on the size of your source environment, it might make sense to begin the refresh process immediately. The larger the source database, the longer it takes to copy to your target Azure SQL Database instance. While the copy is in progress, the target environment is still online. The downtime starts after the copy is completed.
 
-This process can be done manually via LCS. For the latest steps, see [Refresh database](database-refresh.md). In a future release of LCS, you will also be able to trigger this process via a RESTful API.
+You can perform this process manually through Lifecycle Services. For the latest steps, see [Refresh database](database-refresh.md). In a future release of Lifecycle Services, you can also trigger this process through a RESTful API.
 
 ## Reconfigure environment specific settings
 
-After the refresh is completed, use the **Sign off** button in LCS to close out of the operation. You can then start to configure the environment-specific settings.
+After the refresh finishes, use the **Sign off** button in Lifecycle Services to close out of the operation. You can then start to configure the environment-specific settings.
 
-First, sign in to the environment by using the admin account that can be found on the **Environment details** page in LCS. Here are typical areas of reconfiguration. You might require additional reconfiguration, based on your setup and the independent software vendor (ISV) solutions that are installed.
+First, sign in to the environment by using the admin account that you find on the **Environment details** page in Lifecycle Services. Here are typical areas of reconfiguration. You might require additional reconfiguration, based on your setup and the independent software vendor (ISV) solutions that are installed.
 
-* **System administration** \> **Setup** \> **Batch groups:** Add the various Application Object Server (AOS) instances to the batch server groups that you require.
-* **System administration** \> **Setup** \> **Entity Store:** Refresh the various entities that you require for Microsoft Power BI reporting.
-* **System administration** \> **Setup** \> **System parameters:** Reconnect the environment to the LCS Help configuration for task guides.
-* **System administration** \> **Setup** \> **Email** \> **Email parameters:** Enter the Simple Mail Transfer Protocol (SMTP) settings if you use email in your UAT environment.
-* **System administration** \> **Inquiries** \> **Batch jobs:** Select the jobs that you want to run in your UAT environment, and update the status to **Waiting**.
+- **System administration** \> **Setup** \> **Batch groups:** Add the various Application Object Server (AOS) instances to the batch server groups that you require.
+- **System administration** \> **Setup** \> **Entity Store:** Refresh the various entities that you require for Microsoft Power BI reporting.
+- **System administration** \> **Setup** \> **System parameters:** Reconnect the environment to the Lifecycle Services Help configuration for task guides.
+- **System administration** \> **Setup** \> **Email** \> **Email parameters:** Enter the Simple Mail Transfer Protocol (SMTP) settings if you use email in your UAT environment.
+- **System administration** \> **Inquiries** \> **Batch jobs:** Select the jobs that you want to run in your UAT environment, and update the status to **Waiting**.
 
-To complete this reconfiguration more quickly, we recommend that you build a custom web service endpoint that can be called on demand after the refresh is completed. An example of this type of web service will be added in a future update of this article.
+To complete this reconfiguration more quickly, build a custom web service endpoint that you can call on demand after the refresh finishes. An example of this type of web service will be added in a future update of this article.
 
 ## Open the environment to users
 
-When the system is configured as you require, you can enable selected users to let them access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
+When you configure the system as you require, you can enable selected users to access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
 
 Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the UAT environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../office-integration/use-excel-add-in.md).
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

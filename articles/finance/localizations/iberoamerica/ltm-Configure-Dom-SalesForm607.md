@@ -2,7 +2,7 @@
 title: Configure printing for Goods and Services sales Submission Form 607
 description: Learn about the required configuration for printing Goods and Services sales Submission Form 607 for the Dominican Republic.
 author: Cpicon85
-ms.date: 04/14/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

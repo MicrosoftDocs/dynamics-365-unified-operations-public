@@ -4,7 +4,7 @@
 title: Configure Employee self service
 description: In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level navigation in Employee self service.
 author: twheeloc
-ms.date: 07/02/2024
+ms.date: 05/14/2026
 ms.topic: how-to
 # optional metadata
 
@@ -39,31 +39,30 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
 
    | Field | Description |
    | --- | --- |
-   | **Plan type code** | The plan type that is displayed when this tile is selected in **Benefits self service**. |
+   | **Plan type code** | The plan type that appears when users select this tile in **Benefits self service**. |
    | **Tile ID** | The unique identifier for the tile. |
-   | **Tile label text** | The text that will appear for the tile in **Benefits self service**. |
+   | **Tile label text** | The text that appears for the tile in **Benefits self service**. |
    | **Description** | A description of the tile. |
    | **Tile background image** | The URL of the image to use for the tile (optional). |
-   | **Track open enrollment** | Select this option to track the open enrollment progress for this plan type. For example, you may have plans created where **Plan type = Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, this type of plan will be ignored when tracking enrollment progress or enrollment completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities. |
+   | **Track open enrollment** | Select this option to track the open enrollment progress for this plan type. For example, you might have plans created where **Plan type = Other**. These plans might be optional plans that you don't want to track enrollment progress for. If you don't select this plan type, the system ignores this type of plan when tracking enrollment progress or enrollment completion on the **Open enrollment** tab. This setting applies to the plan type that you select for all periods and legal entities. |
 
 4. Select **Save**.
 
 ## Set up a flex credit plan tile
 
 1. In the **Benefits management** workspace, under **Setup**, select **Employee self service parameters**.
-2. Select the **Flex credit plan tile setup** tab, and then select **New**.
-3. Specify values for the following fields.
+1. Select the **Flex credit plan tile setup** tab, and then select **New**.
+1. Specify values for the following fields.
 
    | Field | Description |
    | --- | --- |
-   | **Benefit credit ID** | The flex credit program plans that will be displayed when this tile is selected in **Benefits self service**. |
+   | **Benefit credit ID** | The flex credit program plans that appear when you select this tile in **Benefits self service**. |
    | **Tile ID** | The unique identifier for the tile. |
-   | **Tile label text** | The text that will appear for the tile in **Benefits self service**. |
+   | **Tile label text** | The text that appears for the tile in **Benefits self service**. |
    | **Description** | A description of the tile. |
    | **Tile background image** | The URL of the image to use for the tile (optional). |
-   | **Track open enrollment** | Select this option to track the open enrollment progress for this plan type. For example, you may have plans created where **Plan type = Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, this type of plan will be ignored when tracking enrollment progress or enrollment completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities. |
+   | **Track open enrollment** | Select this option to track the open enrollment progress for this plan type. For example, you might have plans created where **Plan type = Other**. These plans might be optional plans that you don't want to track enrollment progress for. If you don't select this plan type, the system ignores this type of plan when tracking enrollment progress or enrollment completion on the **Open enrollment** tab. This setting applies to the plan type that you select for all periods and legal entities. |
 
-4. Select **Save**.
-
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

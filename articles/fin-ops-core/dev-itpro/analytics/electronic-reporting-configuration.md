@@ -18,19 +18,17 @@ ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 
 [!include [banner](../includes/banner.md)]
 
-As part of the requirements for Microsoft Dynamics Lifecycle Services (LCS) solutions for localization and translation, localization ISV solution providers must implement features specific to a country/region or solutions by using the Electronic reporting tool. This article provides background information that helps you start using Electronic reporting for creating configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
+As part of the requirements for Microsoft Dynamics Lifecycle Services solutions for localization and translation, localization ISV solution providers must implement features specific to a country/region or solutions by using the Electronic reporting tool. This article provides background information that helps you start using Electronic reporting for creating configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
 
 Electronic reporting (ER) is a configurable tool that helps you create and maintain regulatory electronic reporting and payments, based on the following three concepts:
 
- - Configuration instead of coding
- - One configuration for multiple Dynamics 365 Finance releases
- - Easy or automatic upgrade
+- Configuration instead of coding
+- One configuration for multiple Dynamics 365 Finance releases
+- Easy or automatic upgrade
 
-
-By using LCS, ER provides one common way for Microsoft and partners to distribute electronic document configurations to other partners and customers. ER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements.
+By using Lifecycle Services, ER provides one common way for Microsoft and partners to distribute electronic document configurations to other partners and customers. ER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements.
 
 You can use ER to set up data models that are domain-specific and independent of the database as data sources for document formats. You can configure formats based on these domain-specific data models by using simple visual tools that are similar to Excel. Data models and formats support versioning, and formats can be date-effective.
-
 
 ### Main data flow
 
@@ -64,7 +62,7 @@ One of the principles behind the design of Electronic reporting is that you can 
 - As part of Intrastat transactions details, your XML file must show the statistical procedure code that isn't required anywhere else.
 - You must limit the length of the company name that is presented in the Intrastat returns header block to 200 characters.
 
-To support these requirements and comply with local district authorities, you must implement this localization as a localized configuration. However, you must keep the link with the origin configuration, so that you can adopt any future changes that are introduced at the federal level as new versions of the origin configuration. Therefore, you import the Litware Inc. origin configuration from LCS, derive it as a new localized configuration, introduce the required changes, complete this work by introducing a first version of the localized format, and start to use it internally. Whenever Litware Inc. offers you a new version of the origin configuration, you import it from LCS, rebase your localized configuration to this version, adopt changes to support new federal requirements, complete this work by introducing a next version of the localized format, and continue to use it internally.
+To support these requirements and comply with local district authorities, you must implement this localization as a localized configuration. However, you must keep the link with the origin configuration, so that you can adopt any future changes that are introduced at the federal level as new versions of the origin configuration. Therefore, you import the Litware Inc. origin configuration from Lifecycle Services, derive it as a new localized configuration, introduce the required changes, complete this work by introducing a first version of the localized format, and start to use it internally. Whenever Litware Inc. offers you a new version of the origin configuration, you import it from Lifecycle Services, rebase your localized configuration to this version, adopt changes to support new federal requirements, complete this work by introducing a next version of the localized format, and continue to use it internally.
 
 > [!NOTE]
 > The draft version of any configuration must be "completed" before it can become available locally for further action, such as the following:
@@ -74,35 +72,35 @@ To support these requirements and comply with local district authorities, you mu
 
 ## Electronic reporting domain coverage
 
-You can use several out-of-the-box configurations to meet electronic reporting requirements for specific countries/regions. The following list shows some examples of format configurations that are grouped into business domains. To get a complete, up-to-date list of available and supported configurations, open a configuration repository setup to show the configurations that are available for import from either resources or an LCS Assets library.  
+You can use several out-of-the-box configurations to meet electronic reporting requirements for specific countries/regions. The following list shows some examples of format configurations that are grouped into business domains. To get a complete, up-to-date list of available and supported configurations, open a configuration repository setup to show the configurations that are available for import from either resources or an Lifecycle Services Assets library.  
 
 - Audit file
 
-    - FEC
-    - GDPdU...
+  - FEC
+  - GDPdU...
 
 - Payments (ISO20022)
 
-    - SEPA CT
-    - SEPA DD
-    - JBA
-    - BACS...
+  - SEPA CT
+  - SEPA DD
+  - JBA
+  - BACS...
 
 - Statistical reports
 
-    - EU Intrastat...
+  - EU Intrastat...
 
 - Tax reports
 
-    - CIS
-    - BAS
-    - ELSTER
-    - EU Sales list...
+  - CIS
+  - BAS
+  - ELSTER
+  - EU Sales list...
 
 - Customer e-Invoice
 
-    - OIOUBL...
-    
+  - OIOUBL...
+
 ## Your solution uptake
 
 You can choose how to move your electronic reporting functionality into ER. However, consider the following high-level steps when you plan that move.
@@ -136,6 +134,4 @@ You can choose how to move your electronic reporting functionality into ER. Howe
 
 [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

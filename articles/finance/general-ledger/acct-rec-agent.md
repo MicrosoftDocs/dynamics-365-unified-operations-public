@@ -4,7 +4,7 @@ description: Learn about the Account Reconciliation Agent in Microsoft Dynamics 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 03/30/2026
+ms.date: 05/06/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -44,8 +44,8 @@ To set up the Account Reconciliation Agent, follow these steps:
 
 The Account Reconciliation Agent evaluates exceptions and provides a recommended action for each one. You can view the agent best from the **Account reconciliation** workspace.
 
->[!Note]
-> The Account reconciliation agent recommends actions for Voucher amount mismatch exceptions.
+> [!NOTE]
+> The Account reconciliation agent recommends actions for voucher amount mismatch exceptions.
 
 For example, an exception of the **Voucher amount mismatch** type is raised for a transaction. When the Account Reconciliation Agent evaluates the exception, it recommends the following action: **Create journal entry**. You can either accept that recommendation or select from other available actions:
 

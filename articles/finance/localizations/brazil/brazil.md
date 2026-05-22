@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 12/05/2025
+ms.date: 04/28/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Brazil
@@ -31,7 +31,10 @@ This article includes information and links to resources that can help you set u
   - [Purchase complementary fiscal documents](latam-bra-purchase-complementary-fiscal-documents.md)
   - [Referenced fiscal documents](latam-bra-referenced-fiscal-documents.md)
   - [Sales complementary fiscal documents](latam-bra-sales-complementary-fiscal-documents.md)
-  - [Service electronic fiscal document](latam-bra-service-electronic-fiscal-document.md)
+  - Service electronic fiscal document:
+     - [NFS-e Service Invoices](brazil-nfs-e-service-invoices.md)
+     - [NFS-e service invoices for projects](brazil-nfs-e-service-invoices-projects.md)
+     - [Service electronic fiscal document- RPS text file](latam-bra-service-electronic-fiscal-document.md) - deprecated
   - [Journals generated during the electronic payment return process](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
  - [NF-e process](latam-bra-nf-e-process.md)
    - [Automatic transmission of NF-e fiscal documents](br-00058-automatic-transmission-nf-e-fiscal-documents.md)
@@ -80,7 +83,10 @@ This article includes information and links to resources that can help you set u
   - [Miscellaneous charges on free text invoices](br-00050-miscellaneous-charge-free-text-invoice.md)
   - [Create and post a sales complementary fiscal document](br-00052-1-create-post-sales-complementary-fiscal-documents.md)
   - [Cancel a sales complementary fiscal document](br-00052-2-cancel-sales-complementary-fiscal-document.md)
-  - [Service electronic fiscal document using text files](br00059-service-electronic-fiscal-document-text-files.md)
+  - Service electronic fiscal document:
+     - [NFS-e Service Invoices](brazil-nfs-e-service-invoices.md)
+     - [NFS-e service invoices for projects](brazil-nfs-e-service-invoices-projects.md)
+     - [Service electronic fiscal document using text files](br00059-service-electronic-fiscal-document-text-files.md) - deprecated
   - [Set up interest and fines for vendor payments](br-00065-1-set-up-interest-fines-vendor-payments.md)
   - [Calculate interest and fines on vendor payments](br-00065-2-calculate-interest-fines-vendor-payments.md)
   - [Set up interest and fines on customer payments](br-00066-1-set-up-interest-fines-customer-payments.md)

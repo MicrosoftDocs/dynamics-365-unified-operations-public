@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -50,7 +50,7 @@ To adjust item cost by using the Inventory adjustment wizard, follow these steps
 
 1. On the **Selection result** page, you can view the on-hand items or item transactions that are selected for adjustment. Select the ellipsis button (**…**), and then select **Print** to print the list of lines for adjustment.
     
-    ![Selection result page.](../media/1%20Selection%20result.png)
+    :::image type="content" source="../media/1%20Selection%20result.png" alt-text="Screenshot of the Selection result page.":::
 
 1. Select **Next**.
 1. On the **Functions for calculating adjustment amounts** page, select the method for calculating adjustment amounts:
@@ -61,7 +61,7 @@ To adjust item cost by using the Inventory adjustment wizard, follow these steps
     - **Percent** (For more information, see the [Method for calculating a percentage adjustment](#method-for-calculating-a-percentage-adjustment) section.)
     - **From ledger account** (For more information, see the [Method for calculating adjustment amounts from a ledger account](#method-for-calculating-adjustment-amounts-from-a-ledger-account) section.)
         
-     ![Functions for calculating adjustment amounts page where you can view items on hand or item transactions](../media/2%20Functions%20for%20calculating%20adjustment%20amounts.png)
+     :::image type="content" source="../media/2%20Functions%20for%20calculating%20adjustment%20amounts.png" alt-text="Screenshot of the Functions for calculating adjustment amounts page where you can view items on hand or item transactions.":::
 
 1. Select **Next**.
 1. Set the parameters for the selected method of adjustment. The parameters vary, depending on the method that you selected.
@@ -71,11 +71,11 @@ To adjust item cost by using the Inventory adjustment wizard, follow these steps
         > [!NOTE]
         > Alternatively, select the ellipsis button (**…**), and then select **Functions \> Charges code** to open the **Change Misc. charge code** page. Then, in the **Charges code** field, select the charges code for a line. To apply the charges code that you entered to all lines, set the **Apply to all** option to **Yes**.
         
-        ![Results of allocation page.](../media/3%20Change%20misc.%20charge%20code.png)
+        :::image type="content" source="../media/3%20Change%20misc.%20charge%20code.png" alt-text="Screenshot of the Results of allocation page.":::
 
     1. In the **Amount of allocation** field, you can manually edit allocation amounts, except the amounts that are calculated by using the **From ledger account** method. When you manually edit this field, the allocation amount must be either negative for all lines or positive for all lines.
     
-    ![Results of allocation page, Amount of allocation field.](../media/4%20Results%20of%20allocation.png)
+    :::image type="content" source="../media/4%20Results%20of%20allocation.png" alt-text="Screenshot of the Results of allocation page, Amount of allocation field.":::
 
 1. Select **Next**.
 1. On the **Posting** page, specify the details for posting the adjustment:
@@ -91,7 +91,7 @@ To adjust item cost by using the Inventory adjustment wizard, follow these steps
         - If the miscellaneous charges code isn't entered on the item line, and the **Corr. account profit/loss** option on the **Posting** page is set to **Yes**, the adjustment is assigned in the standard manner to the offset profit or loss account that is set up on the **Inventory** tab of the **Posting** page (**Inventory management \> Setup \> Posting \> Posting**).
         - If the miscellaneous charges code isn't entered on the item line, and the **Corr. account profit/loss** option on the **Posting** page is set to **No**, the adjustment is assigned to the account that is specified in the **Corr. account** field.
                 
-     ![Posting page.](../media/5%20Posting.png)
+     :::image type="content" source="../media/5%20Posting.png" alt-text="Screenshot of the Posting page.":::
 
 1. Select **Next**.
 1. On the **Finish** page, select the **Show ledger voucher list** checkbox to show the list of ledger vouchers that are posted, and then select **Finish** to post the adjustment.
@@ -106,7 +106,7 @@ To calculate an adjustment to a fixed cost price, follow these steps:
 1. On the **Functions for calculating adjustment amounts** page, select **Fixed cost price**, and then select **Next**.
 1. On the **Adjustment to fixed cost price** page, in the **Price** field, enter the fixed cost price, and then select **Next**.
 
-    ![Adjustment to fixed cost price page.](../media/6%20Adjustment%20to%20fixed%20cost%20price.png)
+    :::image type="content" source="../media/6%20Adjustment%20to%20fixed%20cost%20price.png" alt-text="Screenshot of the Adjustment to fixed cost price page.":::
 
 1. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 
@@ -120,7 +120,7 @@ To calculate an adjustment by using an amount, follow these steps:
     1. In the **Amount** field, enter the amount.
     1. In the **Allocation principle** field, select **Value** or **Quantity**.
 
-    ![Functions for calculating adjustment amounts page where you select Amount and then select Next](../media/7%20Adjustment%20with%20amount.png)
+    :::image type="content" source="../media/7%20Adjustment%20with%20amount.png" alt-text="Screenshot of the Functions for calculating adjustment amounts page where you select Amount and then select Next.":::
 
 1. Select **Next**.
 1. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
@@ -135,7 +135,7 @@ To calculate an adjustment to a value, follow these steps:
     1. In the **Value** field, enter the value.
     1. In the **Allocation principle** field, select **Value** or **Quantity**.
 
-    ![Functions for calculating adjustment amounts page where you select Value and then select Next.](../media/8%20Adjustment%20to%20value.png)
+    :::image type="content" source="../media/8%20Adjustment%20to%20value.png" alt-text="Screenshot of the Functions for calculating adjustment amounts page where you select Value and then select Next.":::
 
 1. Select **Next**.
 1. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard(#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
@@ -150,7 +150,7 @@ To calculate a percentage adjustment, follow these steps:
     1. In the **Percent** field, enter the percentage.
     1. In the **Adjust** field, select **Positive on-hand inventory** or **On-hand inventory total**.
 
-    ![Functions for calculating adjustment amounts page where you select Percent and then select Next.](../media/9%20Percentage%20adjustment.png)
+    :::image type="content" source="../media/9%20Percentage%20adjustment.png" alt-text="Screenshot of the Functions for calculating adjustment amounts page where you select Percent and then select Next.":::
 
 1. Select **Next**.
 1. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
@@ -169,13 +169,13 @@ To calculate adjustment amounts from a ledger account, follow these steps:
     1. Select the **Balance account** option to determine the account balance, or select the **Balance from ledger account and dimensions** option to determine an account balance by using specific dimension values.
     1. In the **Dimension set** field, select the set of dimensions to determine the account balance from. This field is available only if the **Balance from ledger account and dimensions** option is selected.
 
-    ![Balance from ledger account or dimensions page.](../media/10%20Balance%20from%20ledger%20account%20or%20dimensions.png)
+    :::image type="content" source="../media/10%20Balance%20from%20ledger%20account%20or%20dimensions.png" alt-text="Screenshot of the Balance from ledger account or dimensions page.":::
 
 1. Select **Next**.
 1. Select the amounts to include in the adjustment. You can use the **Select all** and **Deselect all** links to select and clear all lines.
 1. In the **Allocation principle** field, select **Value** or **Quantity**.
 
-    ![Balance from ledger account or dimensions page, Allocation principle field.](../media/11%20Balance%20from%20ledger%20account%20or%20dimensions.png)
+    :::image type="content" source="../media/11%20Balance%20from%20ledger%20account%20or%20dimensions.png" alt-text="Screenshot of the Balance from ledger account or dimensions page, Allocation principle field.":::
 
 1. Select **Next**.
 1. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.

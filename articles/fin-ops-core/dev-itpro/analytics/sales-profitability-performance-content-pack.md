@@ -3,7 +3,7 @@ title: Sales and profitability performance Power BI content
 description: Learn about what's included in the Sales and profitability performance Power BI content, including a table of metrics that are included in the Power BI content.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.date: 06/10/2024
+ms.date: 04/08/2026
 ms.topic: article
 ms.reviewer: kamaybac
 audience: IT Pro
@@ -38,9 +38,11 @@ Profitability can be analyzed in these ways:
 - Customer profitability (by revenue versus gross margin)
 
 ## Accessing the Power BI content
+
 The **Sales and profitability performance** Power BI content is shown on the **Sales and profitability performance** page (**Sales and marketing** \> **Inquiries and reports** \> **Sales performance analysis** \> **Sales and profitability performance**).
 
 ## Metrics that are included in the Power BI content
+
 The **Sales and profitability performance** Power BI content includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the content.
 
 | Report page            | Charts                                     | Tiles                                                   |
@@ -66,6 +68,7 @@ The **Sales and profitability performance** Power BI content includes a report t
 \* Revenue this and last year, and growth by sales category.
 
 ## Understanding the data model and entities
+
 The following data is used to fill the report in the **Sales and profitability performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 The aggregate measurements in this content are the subset of aggregate measurements that were available in the sales cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube's aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in the [Power BI integration with Entity Store in Dynamics](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) blog post.
@@ -97,6 +100,5 @@ The following key dimensions in the sales cube are used as filters to slice the 
 | Dates            | Dates                                                |
 
 By default, the content shows data for the current calendar year. However, you can change the date filter in the report filters section. You can also change the company filter.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,6 +4,8 @@ description: Learn how to upgrade dual-write data to the party and global addres
 author: RamaKrishnamoorthy
 ms.author: twheeloc
 ms.topic: upgrade-and-migration-article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: twheeloc
 audience: IT Pro

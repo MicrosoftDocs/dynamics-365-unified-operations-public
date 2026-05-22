@@ -5,7 +5,7 @@ description: Learn how to make schema changes for shorter downtime when you depl
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 11/09/2023
+ms.date: 04/02/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -24,8 +24,8 @@ This article describes best practices and guidelines that can help you achieve n
 During any custom package deployment, environments go through the following phases:
 
 1. **Pre-servicing** – The system is accessible to the users, and the environment can be used. Many online table schema changes can be made.
-2. **Servicing** – The downtime starts, and all the online unsupported schema changes are made.
-3. **Post-servicing** – Index-related schema changes are applied with online options. The customer can start to use their environment.
+1. **Servicing** – The downtime starts, and all the online unsupported schema changes are made.
+1. **Post-servicing** – Index-related schema changes are applied with online options. The customer can start to use their environment.
 
 ## Online supported changes
 

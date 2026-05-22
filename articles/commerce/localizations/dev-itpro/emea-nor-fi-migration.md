@@ -2,7 +2,7 @@
 title: Migrate from legacy Commerce functionality for Norway
 description: Learn how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for Norway to the solution based on the Commerce fiscal integration framework.
 author: EvgenyPopovMBS
-ms.date: 02/26/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Norway
@@ -16,9 +16,9 @@ ms.custom:
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article explains how to migrate from the [legacy digital signing solution](emea-nor-loc-deployment-guidelines.md) in the Microsoft Dynamics 365 Commerce localization for Norway to the solution based on the [Commerce fiscal integration framework](emea-nor-fi-deployment.md).
+This article explains how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for Norway to the solution based on the [Commerce fiscal integration framework](emea-nor-fi-deployment.md).
 
-If you're using the [legacy digital signing solution for Norway](emea-nor-loc-deployment-guidelines.md) in Commerce version 10.0.28 or earlier, you must migrate to the [current Commerce fiscal integration solution](emea-nor-fi-deployment.md) in Commerce version 10.0.29 or later to uptake the changes and receive timely updates for future Norway-specific features. You don't need to make major changes to the extension logic that you created. However, because this update is a major update, some of your customizations stop working unless you make changes. Plan, prepare for, and complete the uptake for your environment.
+If you're using the legacy digital signing solution for Norway in Commerce version 10.0.28 or earlier, you must migrate to the [current Commerce fiscal integration solution](emea-nor-fi-deployment.md) in Commerce version 10.0.29 or later to uptake the changes and receive timely updates for future Norway-specific features. You don't need to make major changes to the extension logic that you created. However, because this update is a major update, some of your customizations stop working unless you make changes. Plan, prepare for, and complete the uptake for your environment.
 
 ## Migration process
 

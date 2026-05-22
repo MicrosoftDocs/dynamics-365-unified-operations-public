@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-01-04
@@ -26,9 +26,9 @@ The transport tax declaration should be submitted to the tax authority where the
 
 The tax base for the calculation of transport tax is one of the following criteria:
 
--   Engine power, measured in horsepower
--   Jet thrust, measured in kilograms of the power
--   Gross tonnage, measured in vessel tons
+- Engine power, measured in horsepower
+- Jet thrust, measured in kilograms of the power
+- Gross tonnage, measured in vessel tons
 
 The transport tax calculation includes all fixed assets of the **Vehicle** asset type for which the fixed asset record contains a transport tax code. If the fixed asset is written off or sold during the accounting period, the tax calculation uses data for the month when legal registration and removal from the register occurred.
 
@@ -105,6 +105,7 @@ To set up tax allowances, follow these steps:
     | **Article number**, **Clause**, and **Sub-clause** | Define the article number, clause, and sub-clause of the law in accordance with which the corresponding tax allowance is granted.                                                                        |
 
 > [!NOTE]
+>
 > - **Exemption from tax:** Don't define the allowance value, because exemption from tax is always considered 100 percent, and the tax amount is 0 (zero).
 > - **Reduction of tax rate:** Define the percentage of the tax rate reduction. For example, if the tax rate is 10 percent, and the allowance value is 2 percent, the reduced tax rate is 8 percent.
 > - **Reduction of tax amount:** Define the amount, in the local currency, that is reducing the calculated tax amount for each asset.
@@ -296,23 +297,23 @@ After you've finished the setup, registered the acquisition of the vehicle, and 
 
 - **Vehicle - tax calculation** – This tax register calculates transport tax for each vehicle. It shows the following information:
 
-    - The vehicle type, serial number, model, and registration number.
-    - The dates of vehicle registration and removal from the register.
-    - The tax base and the units of measure for the tax base.
-    - The useful lifetime, in years, after the year of manufacture, and the output year.
-    - The owned share as an indication that the vehicle is partially owned.
-    - **Factor Kp** – The increasing factor for expensive vehicles.
-    - The ownership factor if the vehicle was acquired or sold during the period. This factor is the ratio of the ownership period to the number of calendar months in the period.
-    - **Calculated advance payment / Tax** – If the tax register is calculated for the first quarter, second quarter, or third quarter, the tax advance amount before tax allowances are applied. If the tax register is calculated for the year, the transport tax amount before tax allowances are applied.
-    - **Exemption from tax** – The code for the tax allowance as an exemption from tax.
-    - The amount of the tax allowance as an exemption from tax.
-    - **Grace period** – The number of months when there is no tax exemption allowance.
-    - **Allowance factor** – The ratio of the grace period to the number of calendar months in the tax period.
-    - **Privilege** – The code for the tax allowance as a reduction of the rate or a reduction of tax.
-    - **Tax allowance amount** – The amount of the tax allowance as a reduction of the tax rate or a reduction of the tax amount.
-    - **Deduction** – The code for the tax deduction.
-    - **Tax allowance amount** – The amount of the tax deduction.
-    - The transport tax rate, budget revenue code, separate division ID, and location of the vehicle, and the tax authority that the tax for the vehicle will be reported to.
+  - The vehicle type, serial number, model, and registration number.
+  - The dates of vehicle registration and removal from the register.
+  - The tax base and the units of measure for the tax base.
+  - The useful lifetime, in years, after the year of manufacture, and the output year.
+  - The owned share as an indication that the vehicle is partially owned.
+  - **Factor Kp** – The increasing factor for expensive vehicles.
+  - The ownership factor if the vehicle was acquired or sold during the period. This factor is the ratio of the ownership period to the number of calendar months in the period.
+  - **Calculated advance payment / Tax** – If the tax register is calculated for the first quarter, second quarter, or third quarter, the tax advance amount before tax allowances are applied. If the tax register is calculated for the year, the transport tax amount before tax allowances are applied.
+  - **Exemption from tax** – The code for the tax allowance as an exemption from tax.
+  - The amount of the tax allowance as an exemption from tax.
+  - **Grace period** – The number of months when there is no tax exemption allowance.
+  - **Allowance factor** – The ratio of the grace period to the number of calendar months in the tax period.
+  - **Privilege** – The code for the tax allowance as a reduction of the rate or a reduction of tax.
+  - **Tax allowance amount** – The amount of the tax allowance as a reduction of the tax rate or a reduction of the tax amount.
+  - **Deduction** – The code for the tax deduction.
+  - **Tax allowance amount** – The amount of the tax deduction.
+  - The transport tax rate, budget revenue code, separate division ID, and location of the vehicle, and the tax authority that the tax for the vehicle will be reported to.
 - **Transport tax** – This tax register calculates total transport tax amounts for each sales tax code and OKTMO code.
 
 To calculate and approve transport tax registers, follow these steps:
@@ -365,7 +366,7 @@ For example, to generate the transport tax declaration for the year 2019 reporti
 
 Learn more in [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-You can upload Data management package settings to work with the transport tax declaration. 
+You can upload Data management package settings to work with the transport tax declaration.
 
 To set up the system to generate a transport tax declaration, follow these steps:
 
@@ -440,6 +441,5 @@ To create and post transport tax ledger transactions, follow these steps:
 1. In the **Name** field, select the name of the transport tax journal.
 1. Select **Lines** to view the journal lines that have transport tax accrual transactions that were created based on the tax register data and the settings of Fixed assets parameters.
 1. Validate and post the journal.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

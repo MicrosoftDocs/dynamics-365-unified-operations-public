@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in generative help and guidance with Copilot. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 03/12/2026
+ms.date: 05/08/2026
 ms.update-cycle: 180-days
 ms.collection:
   - bap-ai-copilot
@@ -73,7 +73,6 @@ Additionally, system administrators should monitor usage patterns to ensure the 
 
 - [Generative help and guidance with Copilot](copilot-generative-help.md)
 - [Add knowledge to generative help and guidance with Copilot](../../dev-itpro/copilot/extend-copilot-generative-help.md)
-- [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
 - [Responsible AI FAQ for generative answers in Copilot Studio](/microsoft-copilot-studio/faqs-generative-answers)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to set up and generate the statistics of vendor payment p
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: APAC
 ms.search.validFrom: 2023-09-12
@@ -19,11 +19,13 @@ This article explains how to set up and generate the statistics of vendor paymen
 As of March 1, 2022, a regulation implemented in Sweden mandates that large companies must report their payment terms with subcontractors to the Swedish Companies Registration Office (SCRO) (Bolagsverket). Large companies are defined as those that have 250 or more employees. This regulation is designed to counteract the trend of extending payment terms. Its purpose is to foster growth among smaller Swedish companies by creating the best possible conditions for them to develop and grow.
 
 Here is some of the information that large companies are required to report:
+
 - Average agreed payment term
 - Average actual payment term
 - Percentage of invoices that are paid after the agreed payment term
 
 Payment terms must be reported separately for subcontractors of different sizes:
+
 - Subcontractors that have 0–9 employees
 - Subcontractors that have 10–49 employees
 - Subcontractors that have 50–249 employees
@@ -39,6 +41,7 @@ Before you generate the report, complete the following setup.
 ### Import electronic reporting configurations
 
 In Microsoft Dynamics 365 Finance, import the following components of electronic reporting (ER) configurations from the Global repository. Make sure that you select the most recent version.
+
 - Vendor size category model
 - Vendor size category import format
 - Vendor size category model mapping to destination
@@ -96,7 +99,5 @@ The system calculates all the data that's required for reporting. You can verify
 ## Report statistics to SCRO
 
 Currently, SCRO (Bolagsverket) requires that you file the report by manually entering information in the SCRO e-service. In the e-service, go to the reporting area, and fill in the required statistics in the online forms.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

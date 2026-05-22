@@ -4,7 +4,7 @@
 title: Client disconnects
 description: This article explains what to do if the customer is disconnected from the environment.
 author: twheeloc
-ms.date: 08/19/2021
+ms.date: 05/14/2026
 ms.topic: article
 # optional metadata
 
@@ -34,14 +34,14 @@ This issue can occur in all environments.
  
 **Symptom** 
 
-The customer is disconnected from the environment and doesn't know why. The customer receives one of the following error messages:
+The user is disconnected from the environment and doesn't know why. The user receives one of the following error messages:
 
-- We've lost your connection. Click Close to continue working.
-- It appears you lost network connectivity, click Retry to try again.
+- We've lost your connection. Select **Close** to continue working.
+- It appears you lost network connectivity, select **Retry** to try again.
 
 **Red flag**
 
-This issue often occurs when users are in the implementation stage, are comparing information across production and test environments, and forget that they are moving between sessions. If users are at this stage, they will most likely experience this issue.
+This issue often occurs when users are in the implementation stage, are comparing information across production and test environments, and forget that they're moving between sessions. If users are at this stage, they're most likely to experience this issue.
 
 **Issue** 
 

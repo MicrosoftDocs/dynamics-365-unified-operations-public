@@ -14,12 +14,12 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.48 (June)
+                  href: get-started/whats-new-changed-10-0-48.md
                 - name: Finance 10.0.47 (March)
                   href: get-started/whats-new-changed-10-0-47.md
                 - name: Finance 10.0.46 (December)
-                  href: get-started/whats-new-changed-10-0-46.md
-                - name: Finance 10.0.45 (September)
-                  href: get-started/whats-new-changed-10-0-45.md           
+                  href: get-started/whats-new-changed-10-0-46.md       
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
@@ -122,7 +122,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/finance
                 - name: Default dashboard
                   href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/finance
-                - name: Immersive Home (production ready preview)
+                - name: Immersive Home
                   href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/finance
                 - name: Set the preferred initial page for each user
                   href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/finance
@@ -300,6 +300,8 @@
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
             - name: Set up vendor invoice policies
               href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Vendor ship‑from address support on invoices
+              href: accounts-payable/vendor-ship-from-address.md
             - name: Automate vendor payment proposals
               href: accounts-payable/automate-vendor-payment-proposal.md
             - name: Positive pay overview
@@ -700,6 +702,8 @@
                   href: public-sector/budget-analysis-report.md
                 - name: Budget control statistics vs. Budget analysis report
                   href: budgeting/budget-control-statistics-and-budget-analysis-report.md
+                - name: Budget control data maintenance tool
+                  href: budgeting/budget-control-tool.md
                 - name: Purchase order year-end process
                   href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
@@ -1102,6 +1106,8 @@
                       href: general-ledger/tasks/set-up-ledger-account-alias.md
                     - name: Create a main account
                       href: general-ledger/tasks/create-main-account.md
+                    - name: Delete a main account
+                      href: general-ledger/delete-main-account.md
                     - name: Allocation terms
                       href: general-ledger/main-account-allocation-terms.md
                 - name: Financial tags
@@ -1122,34 +1128,52 @@
                       href: general-ledger/financial-dimensions.md
                     - name: Define financial dimensions
                       href: general-ledger/tasks/define-financial-dimensions.md
-                    - name: Highly variable dimensions
-                      href: cost-accounting/high-var-dimensions.md  
-                    - name: Check for highly variable dimensions
-                      href: cost-accounting/high-var-dimension-tool.md
+                    - name: Modifying and deleting financial dimensions
+                      href: general-ledger/modifying-deleting-financial-dimensions.md
+                    - name: Dimension data validation
+                      href: general-ledger/financial-dimension-data-validation.md
+                    - name: Export financial dimension values to Excel via OData
+                      href: general-ledger/financial-dimension-values-export-excel-odata.md
                     - name: Account and dimension combinations
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-                    - name: Financial dimension sets
-                      href: general-ledger/financial-dimension-sets.md
-                    - name: New finance dimension set feature 
-                      href: general-ledger/financial-dimension-set-new.md
-                    - name: Manage financial dimension sets
-                      href: general-ledger/dimension-set-balance-performance-best-practices.md
-                    - name: Maintain financial dimension default templates
-                      href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
-                    - name: Financial dimensions and posting
-                      href: general-ledger/default-dimensions.md
-                    - name: Configure account structures
-                      href: general-ledger/configure-account-structures.md
-                    - name: Account structure activation performance enhancement
-                      href: general-ledger/account-structure-improvement.md
-                    - name: Create account structures
-                      href: general-ledger/tasks/create-account-structures.md
-                    - name: Create and assign advanced rule structures
-                      href: general-ledger/tasks/create-assign-advanced-rule-structures.md
-                    - name: How do I set up balancing financial dimensions?
-                      href: general-ledger/set-up-balance-dimensions.md
-                    - name: Default financial dimensions on financial journals
-                      href: general-ledger/dimensions-default-values.md
+                    - name: Derived dimensions
+                      href: general-ledger/derived-dimensions.md
+                    - name: Dimension value rules
+                      items:
+                        - name: Default dimensions
+                          href: general-ledger/configure-default-dimensions.md
+                        - name: Create account structures
+                          href: general-ledger/tasks/create-account-structures.md
+                        - name: Configure account structures
+                          href: general-ledger/configure-account-structures.md
+                        - name: Account structure best practices
+                          href: general-ledger/account-structure-best-practices.md
+                        - name: Account structure activation performance enhancement
+                          href: general-ledger/account-structure-improvement.md
+                        - name: Create and assign advanced rule structures
+                          href: general-ledger/tasks/create-assign-advanced-rule-structures.md
+                        - name: Financial dimensions and posting
+                          href: general-ledger/Default-dimensions.md
+                        - name: Maintain financial dimension default templates
+                          href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                        - name: Default financial dimensions on financial journals
+                          href: general-ledger/dimensions-default-values.md
+                        - name: How do I set up balancing financial dimensions?
+                          href: general-ledger/set-up-balance-dimensions.md
+                    - name: Dimension balance sets
+                      items:
+                        - name: Financial dimension sets
+                          href: general-ledger/financial-dimension-sets.md
+                        - name: New finance dimension set feature
+                          href: general-ledger/financial-dimension-set-new.md
+                        - name: Manage financial dimension sets
+                          href: general-ledger/dimension-set-balance-performance-best-practices.md
+                    - name: Highly variable dimensions
+                      href: cost-accounting/high-var-dimensions.md
+                    - name: Check for highly variable dimensions
+                      href: cost-accounting/high-var-dimension-tool.md
+                    - name: Translate dimension names and values
+                      href: general-ledger/translate-dimension-names-values.md
             - name: Setup
               items:
                 - name: Process allocations
@@ -1260,6 +1284,8 @@
                       href: general-ledger/dimensions-default-values.md
                     - name: Journal posting failure due to imbalance
                       href: general-ledger/posting-fail-imbalance.md
+                    - name: Establishments and registration IDs in General journals
+                      href: general-ledger/general-journal-establishments.md                        
                     - name: Reverse journal posting
                       href: general-ledger/reverse-journal-posting.md
                     - name: Why can't I reverse this transaction?
@@ -1388,6 +1414,8 @@
                   href: general-ledger/consolidate-online.md
                 - name: Consolidate online templates
                   href: general-ledger/Consolidation-templates.md
+                - name: Recreate missing consolidation transactions
+                  href: general-ledger/recreate-missing-consolidation-trx.md
                 - name: Import subsidiary data from files
                   href: general-ledger/import-subsidiary-data-from-files.md
                 - name: Export subsidiary data to a file
@@ -1442,6 +1470,8 @@
               href: ../fin-ops-core/fin-ops/analytics/report-designer-interface.md?context=/dynamics365/context/finance
             - name: Keyboard shortcuts for financial reporter
               href: general-ledger/financial-reporting-keyboard-shortcuts.md
+            - name: User identity requirements for Financial Reporting
+              href: ../fin-ops-core/fin-ops/analytics/financial-reporting-user-identity-requirements.md?context=/dynamics365/context/finance
             - name: User preferences in financial report designer
               href: ../fin-ops-core/fin-ops/analytics/user-preferences-financial-report-designer.md?context=/dynamics365/context/finance
             - name: Advanced formatting options
@@ -1751,7 +1781,11 @@
                         - name: Egypt
                           href: localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
                         - name: France
-                          href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance                        
+                          items:
+                            - name: Electronic invoicing via EDICOM (preview)
+                              href: localizations/france/emea-fra-einv-ereport.md?context=/dynamics365/context/finance
+                            - name: Electronic invoicing via Chorus Pro
+                              href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Italy
@@ -1798,6 +1832,8 @@
                           href: localizations/global/tax-service-set-up-environment-master-data-lookup.md?context=/dynamics365/context/finance
                         - name: Sync the tax setup from the Tax Calculation feature to Finance
                           href: localizations/global/global-master-data-sync-tax-calculation-service-finance.md
+                        - name: Automate tax feature creation based on tax master data (Preview)
+                          href: localizations/global/global-automate-tax-feature-creation.md                
                     - name: Determination
                       items:
                         - name: Tax calculation data model
@@ -2149,7 +2185,9 @@
                        - name: Calculation in General journal in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-general-journal.md
                        - name: Work with NFS-e Service Invoices
-                         href: localizations/brazil/brazil-nfs-e-service-invoices.md                         
+                         href: localizations/brazil/brazil-nfs-e-service-invoices.md
+                       - name: Work with NFS-e Service Invoices for Projects
+                         href: localizations/brazil/brazil-nfs-e-service-invoices-projects.md  
                     - name: Fiscal books
                       items:
                         - name: Brazil fiscal books overview
@@ -2848,9 +2886,13 @@
                       href: localizations/france/fr-00004-french-bills-exchange-promissory-notes.md
                     - name: French Intrastat
                       href: localizations/france/emea-fra-intrastat.md
-                    - name: NAF codes and siret numbers
-                      href: localizations/france/emea-fra-naf-codes-siret-numbers.md
-                    - name: Set up NAF codes and Siret numbers
+                    - name: Establishments in France
+                      href: localizations/france/emea-fra-establishments-for-france.md
+                    - name: Registration numbers setup for France
+                      href: localizations/france/emea-fra-registration-numbers-setup-for-france.md
+                    - name: Invoice dates in France
+                      herf: accounts-receivable/invoice-date-france.md
+                    - name: NAF codes
                       href: localizations/france/fr-00003-naf-codes-siret-numbers.md
                     - name: Penalties for past due customer payments
                       href: localizations/france/emea-fra-apply-penalty-customer-payment-past-due.md
@@ -5565,6 +5607,10 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?context=/dynamics365/context/finance
                 - name: Configure address books
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?context=/dynamics365/context/finance
+                - name: Configure Registration IDs
+                  href: ../fin-ops-core/dev-itpro/organization-administration/registration-ids.md?context=/dynamics365/context/finance
+                - name: Define invoice party applicability rules for registration categories
+                  href: ../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md?context=/dynamics365/context/finance
             - name: Workflow system
               items:
                 - name: Workflow system overview

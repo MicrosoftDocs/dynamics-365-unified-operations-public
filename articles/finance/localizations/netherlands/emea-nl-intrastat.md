@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/05/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
@@ -338,11 +338,11 @@ To transfer a transaction to the Intrastat journal and review the result, follow
 1. Select **OK** to close the **Intrastat Filter** dialog.
 1. Select **OK** to close the **Intrastat (Transfer)** dialog, and review the result. The line represents the sales order that you created earlier.
 
-    ![Line that represents the sales order on the Intrastat page.](../media/intrastat_nl_1.png)
+    :::image type="content" source="../media/intrastat_nl_1.png" alt-text="Screenshot of the line that represents the sales order on the Intrastat page.":::
 
 1. Select the transaction line, and then select the **General** tab to view more details.
 
-    ![Sales order details on the General tab of the Intrastat page.](../media/intrastat_nl_2.png)
+    :::image type="content" source="../media/intrastat_nl_2.png" alt-text="Screenshot of sales order details on the General tab of the Intrastat page.":::
 
 1. On the Action Pane, select **Output** \> **Report**.
 1. In the **Intrastat Report** dialog, on the **Parameters** FastTab, in the **Date** section, select the month when the sales order is created.
@@ -381,7 +381,7 @@ To transfer a transaction to the Intrastat journal and review the result, follow
 
 1. Review the report in Excel format that is generated.
 
-    ![Intrastat report on dispatches.](../media/intrastat_nl_3.png)
+    :::image type="content" source="../media/intrastat_nl_3.png" alt-text="Screenshot of the Intrastat report on dispatches.":::
 
 ### Create a purchase order
 
@@ -412,11 +412,11 @@ To create an Intrastat declaration for arrivals, follow these steps:
 1. In the **Intrastat (Transfer)** dialog, set the **Vendor invoice** option to **Yes**.
 1. Select **OK** to transfer the transactions, and then review the Intrastat journal.
 
-    ![Line that represents the purchase order on the Intrastat page.](../media/intrastat_nl_4.png)
+    :::image type="content" source="../media/intrastat_nl_4.png" alt-text="Screenshot of the line that represents the purchase order on the Intrastat page.":::
 
 1. Review the information on the **General** tab for the purchase order.
 
-    ![Purchase order details on the General tab of the Intrastat page.](../media/intrastat_nl_5.png)
+    :::image type="content" source="../media/intrastat_nl_5.png" alt-text="Screenshot of purchase order details on the General tab of the Intrastat page.":::
 
 1. On the Action Pane, select **Output** &gt; **Report**.
 1. In the **Intrastat Report** dialog, on the **Parameters** FastTab, in the **Date** section, select the month when the purchase order is created.
@@ -453,7 +453,7 @@ To create an Intrastat declaration for arrivals, follow these steps:
 
 1. Review the report in Excel format that is generated.
 
-    ![Intrastat report on arrivals.](../media/intrastat_nl_6.png)
+    :::image type="content" source="../media/intrastat_nl_6.png" alt-text="Screenshot of the Intrastat report on arrivals.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

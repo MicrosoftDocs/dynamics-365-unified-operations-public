@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Spain
@@ -27,15 +27,14 @@ When your legal entity is configured for reporting for multiple VAT registration
 | Report name     | Release | Electronic reporting (ER) format, version                |
 |-----------------|---------|-----------------------------------|
 | [Intrastat](emea-esp-intrastat.md)       | 10.0.21 | Intrastat (ES), version 16.7      |
-| [EU sales list](emea-esp-sales-list.md)   | 10.0.21 | 	EU Sales list (ES), version 9.2 |
+| [EU sales list](emea-esp-sales-list.md)   | 10.0.21 |  EU Sales list (ES), version 9.2 |
 | [VAT declaration](emea-esp-vat-declaration-spain.md) | 10.0.23 | VAT Declaration TXT(ES), version 101.28<br>VAT Declaration Excel (ES), version 101.28.17 |
 | [Immediate Supply of Information on VAT (SII)](emea-esp-sii.md)(*) | 10.0.22 | SII Invoice Received Format (ES), version 107.45<br>SII Invoice Issued Format (ES), version 107.51 |
 
 > [!NOTE]
 > (*) As of Finance version 10.0.22, if you're using the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) service, and the [Support multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can [report the following reports to the SII system of Spain from a legal entity that has a primary address outside Spain](emea-esp-sii.md#multiple-vat):
+>
 > - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
 > - 'Libro de registro de facturas Recibidas': **Record book of received invoices**
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
