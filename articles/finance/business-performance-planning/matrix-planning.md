@@ -34,7 +34,7 @@ For more information about prerequisites and installation, see [Install business
 ### Installation
 
 1. Open the Power BI application, and access the workspace or report where you plan to configure the Matrix Planner.
-2. Download the **Matrix planning** visual from AppSource. 
+2. Download the **Matrix planning** visual from Marketplace. 
 3. Drag the **Matrix planning** visual onto the report canvas.
 4. Select the visual on the report canvas, and then select the **Format visual** tab on the report canvas. In the **API Details** window for the visual, add your API base URL and cube name. This information provides the details that business performance planning requires to read data from the cube and write data to it. The API base URL is the URL of the environment where business performance planning is installed. The environment URL must be preceded by **https://** (for example, `https://environment.d365.com`). For more information, see [Find your environment and organization ID and name](/power-platform/admin/determine-org-id-name).
 

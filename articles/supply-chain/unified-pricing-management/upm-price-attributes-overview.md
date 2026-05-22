@@ -4,7 +4,7 @@ description: Learn about the concept of price attributes, including an outline o
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 10/25/2024
+ms.date: 4/28/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -19,16 +19,16 @@ One of the key functions of a price manager is to work together with the product
 - Identify and classify products, customers, and order modes (for example, by region, pack size, brand, or age) to reflect each product's differentiating features, customer segments, and price sensitivity.
 - Set up pricing rules that consider any combination of the customer, product, and order attributes to set up a flexible pricing architecture.
 
-The Unified pricing management module provides *price attributes*. These attributes let price managers and sales promotion managers mark and group price differentiators that are defined for *products*, *customers*, and *sales order information*, and set up the pricing rules. Here are some examples of pricing rules:
+The Unified pricing management module provides *price attributes*. These attributes let price managers and sales promotion managers mark and group price differentiators defined for *products*, *customers*, and *sales order information*, and set up the pricing rules. Here are some examples of pricing rules:
 
 - Sales trade agreement prices
 - Margin component price adjustments
 - Sales discounts
 - Customer rebates on sales
 
-You define these pricing rules by using combinations of price attributes to define the rule criteria.
+Define these pricing rules by using combinations of price attributes to define the rule criteria.
 
-[<img src="media/price-attributes.png" alt="Price attributes." title="Price attributes" width="500" />](media/price-attributes.png#lightbox)
+:::image type="content" source="media/price-attributes.png" alt-text="Screenshot of price attributes diagram showing the relationship between product, customer, and order attributes." lightbox="media/price-attributes.png":::
 
 ## Price attribute sources
 
@@ -40,52 +40,15 @@ Other sales order details (such as the ordering channel, ordering site, ordering
 
 Unified pricing management offers three price attribute sources that can serve as a foundation for the setup of pricing rules and conditions. For each source, it also provides out-of-box price attributes. You can build price attribute groups (header or line scope) and combine them to create price attribute combinations.
 
-<table>
-<thead>
-<tr>
-<th>Attribute group</th>
-<th>Source</th>
-<th>Source table</th>
-<th>Price attributes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td rowspan="4">Header attribute group</td>
-<td rowspan="2">Order (header)</td>
-<td>Order table</td>
-<td>The attributes provide out-of-box fields from the order header. You can extend them to add more fields.</td>
-</tr>
-<tr>
-<td><p>Order attributes</p><p>Attributes of the attribute group that are defined as the order attribute group in parameters</p></td>
-<td>Configurable</td>
-</tr>
-<tr>
-<td rowspan="2">Customer</td>
-<td>Customer master</td>
-<td>The attributes provide out-of-box fields from customer masters. You can extend them to add more fields.</td>
-</tr>
-<tr>
-<td>Attributes of the customer attribute group that are defined as the customer attribute group in parameters</td>
-<td>Configurable</td>
-</tr>
-<tr>
-<td rowspan="3">Line attribute group</td>
-<td rowspan="2">Product</td>
-<td><p>Product master</p><p>Released product master</p></td>
-<td>The attributes provide out-of-box fields from product masters. You can extend them to add more fields.</td>
-</tr>
-<tr>
-<td>Associated product attributes that are defined as price attributes and assigned to a product</td>
-<td>Configurable</td>
-</tr>
-<tr>
-<td>Order (line)</td>
-<td>Order line</td>
-<td>The attributes provide out-of-box fields from the order line. You can extend them to add more fields.</td>
-</tr>
-</tbody>
-</table>
+| Attribute group | Source | Source table | Price attributes |
+|---|---|---|---|
+| Header attribute group | Order (header) | Order table | The attributes provide out-of-box fields from the order header. You can extend them to add more fields. |
+| Header attribute group | Order (header) | Order attributes; Attributes of the attribute group that are defined as the order attribute group in parameters | Configurable |
+| Header attribute group | Customer | Customer master | The attributes provide out-of-box fields from customer masters. You can extend them to add more fields. |
+| Header attribute group | Customer | Attributes of the customer attribute group that are defined as the customer attribute group in parameters | Configurable |
+| Line attribute group | Product | Product master; Released product master | The attributes provide out-of-box fields from product masters. You can extend them to add more fields. |
+| Line attribute group | Product | Associated product attributes that are defined as price attributes and assigned to a product | Configurable |
+| Line attribute group | Order (line) | Order line | The attributes provide out-of-box fields from the order line. You can extend them to add more fields. |
 
 Each pricing rule allows for the combination of one header attribute group and one line attribute group.
 

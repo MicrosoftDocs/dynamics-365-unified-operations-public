@@ -4,7 +4,7 @@ description: Learn about the templates and underlying tasks that are used to syn
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
@@ -28,7 +28,7 @@ This article discusses the templates and underlying tasks that are used to synch
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png" alt-text="Screenshot of data flow in Prospect to cash.":::
 
 ## Templates and tasks
 
@@ -74,7 +74,7 @@ Externally maintained products are automatically added to the first valid price 
 - Before you run the synchronization for the first time, you must fill the Distinct product table for existing products in Supply Chain Management. Existing products won't be synchronized until this job is completed.
 
     1. In Supply Chain Management, use Search to search for **Populate distinct product table**.
-    2. Select **Populate distinct product table** to run the job. This job must be run only one time.
+    1. Select **Populate distinct product table** to run the job. This job must be run only one time.
 
 - Make sure that the required value map for the selling unit of measure (UOM) between Supply Chain Management and Sales exists in the mapping of **SalesUnitSymbol** to **DefaultUnit (Name)**.
 - Update the value map for **Unit group** (**defaultuomscheduleid.name**) so that it matches **Unit groups** in Sales.
@@ -94,7 +94,7 @@ The following illustration shows an example of a template mapping in Data integr
 > [!NOTE]
 > The mapping shows which field information will be synchronized from Sales to Supply Chain Management.
 
-[Template mapping in Data integrator.](../../../supply-chain/sales-marketing/media/products-direct-template-mapping-data-integrator-1.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/products-direct-template-mapping-data-integrator-1.png" alt-text="Screenshot of template mapping in Data integrator.":::
 
 
 ## Related articles

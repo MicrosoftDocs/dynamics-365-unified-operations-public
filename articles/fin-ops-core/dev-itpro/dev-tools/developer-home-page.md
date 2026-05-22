@@ -4,7 +4,7 @@ description: Access links to topics about development, including an overview for
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/05/2024
+ms.date: 03/30/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -83,7 +83,7 @@ The finance and operations apps enable the entire enterprise resource planning (
 - [Download assets by using Azure Pipelines](pipeline-asset-download.md)
 - [Upload assets by using Azure Pipelines](pipeline-asset-upload.md)
 - [Deploy assets by using Azure Pipelines](pipeline-deploy-asset.md)
-- [Create a Lifecycle Services (LCS) connection in Azure Pipelines](pipeline-lcs-connection.md)
+- [Create a Microsoft Dynamics Lifecycle Services connection in Azure Pipelines](pipeline-lcs-connection.md)
 - [Update the hosted Azure Pipeline for new NuGet packages](pipeline-nuget-split.md)
 - [Update a legacy pipeline in Azure Pipelines](pipeline-msbuild-update.md)
 

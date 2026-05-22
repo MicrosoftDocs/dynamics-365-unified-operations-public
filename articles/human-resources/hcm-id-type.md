@@ -4,7 +4,7 @@
 title: HCM identification type entity
 description: This article provides details and an example query for the HCM identification type entity in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 05/22/2024
+ms.date: 03/25/2026
 ms.topic: article
 ms.reviewer: twheeloc
 
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the HCM identification type entity (payintv1hcmidentificationtypeentities) for Dynamics 365 Human Resources.
+This article describes the HCM identification type entity for Dynamics 365 Human Resources.
 
-Physical name: mserp\_payintv1hcmidentificationtypeentities
+Physical name: mshr\_hcmidentificationtypeentities
 
 ## Description
 
@@ -40,32 +40,32 @@ This entity provides information about the identification type details.
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| mserp\_Description | Description | String | Read-only |
-| mserp\_IdentificationTypeId | IdentificationTypeId | String | Read-only |
-| mserp\_CheckDuplicates | CheckDuplicates | Enum | Read-only |
-| mserp\_AllowedValues | AllowedValues | Enum | Read-only |
-| mserp\_IdentificationNumberFormat | IdentificationNumberFormat | String | Read-only |
-| mserp\_FixedLength | FixedLength | Int | Read-only |
+| mshr\_Description | Description | String | Read-only |
+| mshr\_IdentificationTypeId | IdentificationTypeId | String | Read-only |
+| mshr\_CheckDuplicates | CheckDuplicates | Enum | Read-only |
+| mshr\_AllowedValues | AllowedValues | Enum | Read-only |
+| mshr\_IdentificationNumberFormat | IdentificationNumberFormat | String | Read-only |
+| mshr\_FixedLength | FixedLength | Int | Read-only |
 
 ## Example query for the HCM identification type entity
 
-Entity name: mserp\_payintv1hcmidentificationtypeentities
+Entity name: mshr\_hcmidentificationtypeentities
 
 **Request**
 
 ```HTTP
-GET [Organization URI]/api/data/v9.1/payintv1hcmidentificationtypeentities
+GET [Organization URI]/api/data/v9.1/hcmidentificationtypeentities
 ```
 
 **Response**
 
 ```JSON
 {
-    "mserp_description": "Alien/Admission no.",
-    "mserp_identificationtypeid": "Alien/Admission",
-    "mserp_checkduplicates": 200000000,
-    "mserp_allowedvalues": 200000000,
-    "mserp_identificationnumberformat": "",
-    "mserp_fixedlength": 0,
+    "mshr_description": "Alien/Admission no.",
+    "mshr_identificationtypeid": "Alien/Admission",
+    "mshr_checkduplicates": 200000000,
+    "mshr_allowedvalues": 200000000,
+    "mshr_identificationnumberformat": "",
+    "mshr_fixedlength": 0,
 }
 ```

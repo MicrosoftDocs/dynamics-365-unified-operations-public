@@ -1,12 +1,11 @@
 ---
 title: Store report insights by Copilot
-description: This article describes how Microsoft Copilot-generated insights for store reports simplify the process of measuring the performance of your retail channels in Dynamics 365 Commerce.
+description: Learn how Microsoft Copilot-generated insights for store reports simplify the process of measuring the performance of your retail channels in Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 10/29/2024
+ms.date: 01/20/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -18,23 +17,23 @@ ms.collection:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how Microsoft Copilot-generated insights for store reports simplify the process of measuring the performance of your retail channels in Dynamics 365 Commerce.
+This article explains how Microsoft Copilot-generated insights for store reports simplify the process of measuring the performance of your retail channels in Dynamics 365 Commerce.
 
 Store report insights by Copilot is a feature that uses AI to generate natural language summaries of store reports in the Dynamics 365 Commerce Store Commerce app. Copilot helps you quickly understand the key insights and trends from your channel sales and store performance data. Copilot summaries are available for both out-of-box reports and custom store reports that you create in the Store Commerce app.
 
-![Screenshot of Top 10 products report insights using Copilot in the Store Commerce app.](./media/StoreReportInsightsUsingCopilot.png)
+:::image type="content" source="./media/StoreReportInsightsUsingCopilot.png" alt-text="Screenshot of Top 10 products report insights using Copilot in the Store Commerce app.":::
 
 Store report insights by Copilot enhances the efficiency of store associates by providing real-time analysis of your store data. You can access Copilot-generated summaries every time you load a report in the Store Commerce app, without having to spend time on manual data interpretation.
 
 Data access settings control Copilot summaries so you can ensure that only authorized users can view the reports. For example, a store cashier can only analyze or view reports that are related to their own point of sale (POS) activity. However, a store manager has broader permissions and can access reports for the entire store's POS activity.
 
-Copilot can generate narrative summaries for channel reports. In this way, you get a clear and concise overview of key indicators such as sales, revenue, profit, margin, and overall store performance. You can also get real-time analysis, because Copilot updates the summaries as new data comes in.
+Copilot generates narrative summaries for channel reports. In this way, you get a clear and concise overview of key indicators such as sales, revenue, profit, margin, and overall store performance. You can also get real-time analysis, because Copilot updates the summaries as new data comes in.
 
 ## Enable Store report insights by Copilot in the Store Commerce app
 
 To enable Store report insights by Copilot in the Store Commerce app, follow these steps:
 
-1. In Commerce headquarters, go to the **Feature management** workspace (**Systems administration** \> **Workspaces** \> **Feature management**), and enable the temporary **Enable Copilot in Store Commerce** feature flag. In this way, you give your organization's administrators governing control over the rollout of Copilot features in the Store Commerce app. This flag will eventually be retired.
+1. In Commerce headquarters, go to the **Feature management** workspace (**Systems administration** \> **Workspaces** \> **Feature management**), and enable the temporary **Enable Copilot in Store Commerce** feature flag. In this way, you give your organization's administrators governing control over the rollout of Copilot features in the Store Commerce app. There are plans to eventually retire this flag.
 1. Go to the **Commerce shared parameters** page (**Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**), and enable the **Enable Copilot in Store Commerce** flag. In this way, you give your organization's administrators additional governing control over the management of Copilot feature availability in the Store Commerce app. This flag is automatically enabled when you enable the temporary flag in the previous step. It will continue to be available after the temporary flag is retired.
 1. Go to your POS functionality profile (**Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profiles** \> **Functionality profiles**). On the **Copilot** FastTab, enable **Report insights** to get Store insights by Copilot reports in the Store Commerce app.
 1. Run the **1070 (Channel configuration)** job to sync the updated settings to the channel database.

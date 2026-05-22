@@ -2,7 +2,7 @@
 title: Configure printing for Relationship purchases Book reports for Venezuela
 description: Learn how to configure printing for Relationship purchases Book reports for Venezuela. 
 author: Cpicon85
-ms.date: 02/05/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

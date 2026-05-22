@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/04/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.validFrom: 2021-08-06 
 ---
@@ -20,26 +20,26 @@ This article explains how to set up the European Union (EU) sales list report fo
 The UK (Northern Ireland) EU sales list report contains information about the sale of goods and services for reporting in text and XML formats. The following fields are included on the UK (Northern Ireland) EU sales list report:
 
 - **EU sales list header:**
-    - Company's tax registration number (only for the .txt file format)
-    - Branch ID (only for the .txt file format)
-    - The last month of the reporting period (only for the .txt file format)
-    - Contact person
-    - Currency code
-    - Reporting year
-    - Reporting month (only for the .xml file format)
+  - Company's tax registration number (only for the .txt file format)
+  - Branch ID (only for the .txt file format)
+  - The last month of the reporting period (only for the .txt file format)
+  - Contact person
+  - Currency code
+  - Reporting year
+  - Reporting month (only for the .xml file format)
 
 - **EU sales list lines:**
-    - Customer VAT ID
-    - The total amount of items
-    - The total amount of services
-    - Total amount of the triangular trade
-    - Transaction Indicator
+  - Customer VAT ID
+  - The total amount of items
+  - The total amount of services
+  - Total amount of the triangular trade
+  - Transaction Indicator
 
 ## Setup
 
 For general setup information, see [EU Sales list reporting](../europe/emea-eu-sales-list.md#prerequisites).
 
-> [!NOTE] 
+> [!NOTE]
 > The value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page is used in the .txt and .xlsx files for the EU sales list report.
 
 ### Set up information about the company
@@ -49,11 +49,11 @@ Create a registration type, and assign it to the **VAT ID** registration categor
 ### Import electronic reporting configurations
 
 - In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following electronic reporting (ER) configurations for the EU sales list:
-    - EU Sales list model
-    - EU Sales list by columns report
-    - EU Sales list by rows report
-    - EU Sales list TXT (UK)
-    - EU Sales list XML (UK)
+  - EU Sales list model
+  - EU Sales list by columns report
+  - EU Sales list by rows report
+  - EU Sales list TXT (UK)
+  - EU Sales list XML (UK)
 
 Learn more in [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -66,7 +66,7 @@ Learn more in [Download Electronic reporting configurations from Lifecycle Servi
 1. On the **Country/region properties** tab, select **New**, and specify the following information:
     - In the **Country/region** column, select **GBR**.
     - In the **Country/region type** column, select **Domestic**.
-6. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**.
+1. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list
 
@@ -131,9 +131,6 @@ To create an EU sales list report, follow these steps:
 
 1. Review the report in Excel format that is generated.
 
-    ![Table Description automatically generated.](../media/EUSL-uk.png)
-
-
-
+    :::image type="content" source="../media/EUSL-uk.png" alt-text="Screenshot of the EU sales list report for UK Northern Ireland.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ ms.author: snamilikonda
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/12/2025
+ms.date: 03/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
@@ -25,7 +25,7 @@ This article assumes that you have a working knowledge of [Azure Pipelines](/azu
 > [!NOTE]
 > Versions 1.\*  and lower of the task are obsolete. Update the task version to the latest available.
 
-> [!NOTE] 
+> [!NOTE]
 > (Not required for Version 2.\* and later.) Only Version 1.\* of the download task requires availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the download task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
 
 ## Add the task to a pipeline
@@ -43,6 +43,4 @@ The following table describes the options that are available for this task.
 
 After a successful download, an output variable can be used to capture a list of the file paths. If there are multiple files, a semicolon-separated list of file paths is assigned to the output variable. For more information about output variables in Azure DevOps, see [Use output variables from tasks](/azure/devops/pipelines/process/variables#use-output-variables-from-tasks).
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

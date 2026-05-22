@@ -4,6 +4,8 @@ description: Learn about the integration of tax data between finance and operati
 author: josaw
 ms.author: josaw
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 09/06/2019
 ms.reviewer: johnmichalak
 audience: IT Pro

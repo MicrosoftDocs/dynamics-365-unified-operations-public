@@ -4,7 +4,7 @@ description: Learn about which features are supported in Cloud and on-premises, 
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 10/30/2025
+ms.date: 03/09/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -79,7 +79,7 @@ The following tables list the application areas. The tables show cloud and on-pr
 |                                      | Task recorder - Save or load task recordings from the BPM library                         | Yes       | No              |
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
-|                                      | Business events                                                                           | Yes       | Yes (either internet connectivity is required or custom endpoints must be implemented to send/receive business events within intranet)              |
+|                                      | Business events                                                                           | Yes       | Yes (either internet connectivity is required or custom endpoints must be implemented to send or receive business events within intranet)              |
 
 ## Dynamics 365 Supply Chain Management 
 
@@ -159,8 +159,8 @@ This table applies to the Human Resources stand-alone version.
 |------------------|---------------------|-----------|-----------------|
 | All Human Resources areas | All Human Resources features | Yes       | No              |
 
->[!NOTE]
->For the comparison of cloud vs. on-premises of a migrated Human resources environment on the merged infrastructure, see [Dynamics 365 Finance](#dynamics-365-finance). 
+> [!NOTE]
+> For the comparison of cloud vs. on-premises of a migrated Human resources environment on the merged infrastructure, see [Dynamics 365 Finance](#dynamics-365-finance).  
 
 ## Development and administration features
 

@@ -2,15 +2,15 @@
 title: Security best practices for Store Commerce for web in shared environments
 description: This article provides recommendations that can help secure Store Commerce for web in a shared environment.
 author: josaw1
-ms.date: 02/17/2023
+ms.date: 02/20/2026
 ms.topic: best-practice
-audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
+ms.custom: 
+  - bap-template
 ---
 
 # Security best practices for Store Commerce for web in shared environments
@@ -19,18 +19,18 @@ ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
 
 Store Commerce for web is a web application that runs in the context of a browser. This article provides recommendations that can help secure Store Commerce for web in a shared environment.
 
-Store Commerce for web is a web application that runs in the context of a web browser. Therefore, it's vulnerable to attack when a user can run any script in the context of the web application. One requirement for such attacks is that the user must have physical access to the computer, either in person or by using Remote Desktop Connection. Vulnerability to attack is an existing issue in most browsers that provide developer tools, and that enable scripts to be run without sufficient privilege control. Because the web application will have little influence over its hosting environment, one way to mitigate security issues is to add defense-in-depth. The defense-in-depth can be built by taking advantage of the restrictive policies of both the browser and the operating system.
+Store Commerce for web is a web application that runs in the context of a web browser. Therefore, it's vulnerable to attack when a user can run any script in the context of the web application. One requirement for such attacks is that the user must have physical access to the computer, either in person or by using Remote Desktop Connection. Vulnerability to attack is an existing issue in most browsers that provide developer tools and that enable scripts to run without sufficient privilege control. Because the web application has little influence over its hosting environment, you can mitigate security problems by adding defense-in-depth. You can build defense-in-depth by taking advantage of the restrictive policies of both the browser and the operating system.
 
 ## Hardening instructions for a Store Commerce for web computer
 
 >[!NOTE]
->Removing Reply URLs or Service Principals will break operations related to Microsoft Entra in Store Commerce in the browser.
+>Removing Reply URLs or Service Principals breaks operations related to Microsoft Entra in Store Commerce in the browser.
 
-Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Store Commerce for web. The settings should be enabled or set by a high-privileged account for the operating system. Store Commerce for web should be used by a low-privileged account that can't override those settings. We recommend that you enable all the following settings. Otherwise, you could create a security loophole that will be prone to security exploitation.
+Here are some of the defense-in-depth recommendations for the operating system and browser that have an activated instance of Store Commerce for web. A high-privileged account for the operating system should enable or set the settings. A low-privileged account that can't override those settings should use Store Commerce for web. Enable all the following settings. Otherwise, you could create a security loophole that's prone to security exploitation.
 
 - **Required** - Disable script execution in the browser's address bar.
 - **Required** - Disable the browser's developer console.
-- **Required** - Store Commerce for web should be accessed by a low-privileged user.
+- **Required** - Access Store Commerce for web by using a low-privileged user.
 - **Required** - Set up group policies to enable a kiosk session.
 - **Recommended** - Set up a proxy to access only websites included in a safe list.
 
@@ -38,10 +38,10 @@ Here are some of the defense-in-depth recommendations for the operating system a
 
 ### Internet Explorer - disable script execution
 
-There is no option to disable script execution in the address bar in Internet Explorer. One alternative is to hide the address bar itself.
+Internet Explorer doesn't have an option to disable script execution in the address bar. One alternative is to hide the address bar itself.
 
 1. Create a shortcut for the Store Commerce for web URL, and copy it to each store worker's Microsoft Windows desktop.
-2. Run **regedit.exe** to change the registry to disable the Internet Explorer address bar. \[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\ToolBars\\Restrictions\] "NoNavBar"=dword:00000001
+1. Run **regedit.exe** to change the registry to disable the Internet Explorer address bar. \[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\ToolBars\\Restrictions\] "NoNavBar"=dword:00000001
 
 ### Microsoft Edge - disable script execution
 
@@ -57,13 +57,13 @@ Use Group Policy Editor to enable the following group policy to disable the Inte
 
 Run **regedit.exe** to change the registry to disable the developer console. \[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\F12\] "AllowDeveloperTools"=dword:00000000
 
-## Store Commerce for web should be accessed by a low-privileged user
+## Access Store Commerce for web as a low-privileged user
 
-A point of sale (POS) user must be a non-administrative account that doesn't have privileges to change applied policies.
+A point of sale (POS) user must be a nonadministrative account that doesn't have privileges to change applied policies.
 
 ## Set up group policies to enable a kiosk session
 
-We recommend that you apply the following restrictions for Store Commerce for web users:
+Apply the following restrictions for Store Commerce for web users:
 
 - Restrict access to the file system.
 - Restrict access to Control Panel.
@@ -72,7 +72,7 @@ We recommend that you apply the following restrictions for Store Commerce for we
 - Restrict access to the registry.
 - Restrict access to application management.
 
-The following table lists the group policies to enable kiosk mode. The set of policies requires that you start your browser at the sign-in script. These policies can be adjusted to your requirements. You should always assess any security implications or talk to a specialist.
+The following table lists the group policies to enable kiosk mode. The set of policies requires that you start your browser at the sign-in script. Adjust these policies to your requirements. Always assess any security implications or talk to a specialist.
 
 | Setting | State    | Comment | Path |
 |---------|----------|---------|------|
@@ -130,10 +130,10 @@ The following table lists the group policies to enable kiosk mode. The set of po
 | Hide Network Locations icon on desktop | Enabled  | No      | \\Desktop                |
 | Remove Properties from the Computer icon context menu        | Enabled  | No      | \\Desktop                |
 | Remove Properties from the Documents icon context menu       | Enabled  | No      | \\Desktop                |
-| Do not add shares of recently opened documents to Network Locations                                                   | Enabled  | No      | \\Desktop                |
+| Don't add shares of recently opened documents to Network Locations                                                   | Enabled  | No      | \\Desktop                |
 | Remove Recycle Bin icon from desktop | Enabled  | No      | \\Desktop                |
 | Remove Properties from the Recycle Bin context menu          | Enabled  | No      | \\Desktop                |
-| Do not save settings at exit    | Enabled  | No      | \\Desktop                |
+| Don't save settings at exit    | Enabled  | No      | \\Desktop                |
 | Turn off Aero Shake window minimizing mouse gesture          | Enabled  | No      | \\Desktop                |
 | Prevent adding, dragging dropping and closing the Taskbar's toolbars                                                  |          |         | Enabled                  |
 | Prohibit adjusting desktop toolbars  | Enabled  | No      | \\Desktop                |
@@ -154,22 +154,22 @@ The following table lists the group policies to enable kiosk mode. The set of po
 | Remove All Programs list from the Start menu                 | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Network Connections from Start Menu                   | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove pinned programs list from the Start Menu              | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not keep history of recently opened documents             | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't keep history of recently opened documents             | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Recent Items menu from Start Menu                     | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not use the search-based method when resolving shell shortcuts  | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not use the tracking-based method when resolving shell shortcuts                                                   | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't use the search-based method when resolving shell shortcuts  | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't use the tracking-based method when resolving shell shortcuts                                                   | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Run menu from Start Menu | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Default Programs link from the Start menu.            | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Documents icon from Start Menu  | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Music icon from Start Menu    | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Network icon from Start Menu  | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Pictures icon from Start Menu | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not search communications    | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't search communications    | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Search Computer link     | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove See More Results / Search Everywhere link             | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not search for files         | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not search Internet          | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not search programs and Control Panel items               | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't search for files         | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't search Internet          | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't search programs and Control Panel items               | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove programs on Settings menu     | Enabled  | No      | \\Start Menu and Taskbar |
 | Prevent changes to Taskbar and Start Menu Settings           | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Downloads link from Start Menu  | Enabled  | No      | \\Start Menu and Taskbar |
@@ -180,7 +180,7 @@ The following table lists the group policies to enable kiosk mode. The set of po
 | Force classic Start Menu        | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove Clock from the system notification area               | Enabled  | No      | \\Start Menu and Taskbar |
 | Prevent grouping of taskbar items    | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not display any custom toolbars in the taskbar            | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't display any custom toolbars in the taskbar            | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove access to the context menus for the taskbar           | Enabled  | No      | \\Start Menu and Taskbar |
 | Hide the notification area      | Enabled  | No      | \\Start Menu and Taskbar |
 | Prevent users from uninstalling applications from Start      | Enabled  | No      | \\Start Menu and Taskbar |
@@ -195,15 +195,15 @@ The following table lists the group policies to enable kiosk mode. The set of po
 | Remove the battery meter        | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove the volume control icon  | Enabled  | No      | \\Start Menu and Taskbar |
 | Turn off feature advertisement balloon notifications         | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not allow pinning Store app to the Taskbar                | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not allow pinning items in Jump Lists                     | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not allow pinning programs to the Taskbar                 | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not display or track items in Jump Lists from remote locations  | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't allow pinning Store app to the Taskbar                | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't allow pinning items in Jump Lists                     | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't allow pinning programs to the Taskbar                 | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't display or track items in Jump Lists from remote locations  | Enabled  | No      | \\Start Menu and Taskbar |
 | Turn off automatic promotion of notification icons to the taskbar  | Enabled  | No      | \\Start Menu and Taskbar |
 | Lock all taskbar settings       | Enabled  | No      | \\Start Menu and Taskbar |
 | Prevent users from adding or removing toolbars               | Enabled  | No      | \\Start Menu and Taskbar |
 | Prevent users from rearranging toolbars                      | Enabled  | No      | \\Start Menu and Taskbar |
-| Do not allow taskbars on more than one display               | Enabled  | No      | \\Start Menu and Taskbar |
+| Don't allow taskbars on more than one display               | Enabled  | No      | \\Start Menu and Taskbar |
 | Turn off all balloon notifications   | Enabled  | No      | \\Start Menu and Taskbar |
 | Remove pinned programs from the Taskbar                      | Enabled  | No      | \\Start Menu and Taskbar |
 | Prevent users from moving taskbar to another screen dock location  | Enabled  | No      | \\Start Menu and Taskbar |
@@ -233,19 +233,19 @@ The following table lists the group policies to enable kiosk mode. The set of po
 | Search, Share, Start, Devices and Settings don't appear when the mouse is pointing to the upper-right corner of the screen                                               | Enabled  | No      | \\Windows Components\\Edge UI                                               |
 | Disable help tips               | Enabled  | No      | \\Windows Components\\Edge UI                                               |
 | Turn off tracking of app usage  | Enabled  | No      | \\Windows Components\\Edge UI                                               |
-| Do not show recent apps when the mouse is pointing to the upper-left corner of the screen                             | Enabled  | No      | \\Windows Components\\Edge UI                                               |
+| Don't show recent apps when the mouse is pointing to the upper-left corner of the screen                             | Enabled  | No      | \\Windows Components\\Edge UI                                               |
 | Prevent users from replacing the Command Prompt with Windows PowerShell in the menu they see when they right-click the lower-left corner or press the Windows logo key+X | Enabled  | No      | \\Windows Components\\Edge UI                                               |
 | Turn off switching between recent apps | Enabled  | No      | \\Windows Components\\Edge UI                                               |
 | Turn on or off details pane     | Enabled  | No      | \\Windows Components\\File Explorer\\Explorer Frame Pane                    |
 | Turn off Preview Pane           | Enabled  | No      | \\Windows Components\\File Explorer\\Explorer Frame Pane                    |
-| Do not display the Welcome Center at user logon              | Enabled  | No      | \\Windows Components\\File Explorer                                         |
+| Don't display the Welcome Center at user sign in              | Enabled  | No      | \\Windows Components\\File Explorer                                         |
 | Turn on Classic Shell           | Enabled  | No      | \\Windows Components\\File Explorer                                         |
 | Remove CD Burning features      | Enabled  | No      | \\Windows Components\\File Explorer                                         |
 | Remove DFS tab                  | Enabled  | No      | \\Windows Components\\File Explorer                                         |
 | Hide these specified drives in My Computer                   | Enabled  | No      | \\Windows Components\\File Explorer                                         |
 | No Entire Network in Network Locations | Enabled  | No      | \\Windows Components\\File Explorer                                         |
 | Remove File menu from File Explorer  | Enabled  | No      | \\Windows Components\\File Explorer                                         |
-| Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon | Enabled  | No      | \\Windows Components\\File Explorer      |
+| Don't allow Folder Options to be opened from the Options button on the View tab of the ribbon | Enabled  | No      | \\Windows Components\\File Explorer      |
 | Remove Hardware tab             | Enabled  | No      | \\Windows Components\\File Explorer                                         |
 | Hide the Manage item on the File Explorer context menu       | Enabled  | No      | \\Windows Components\\File Explorer                                         |
 | Remove Shared Documents from My Computer                     | Enabled  | No      | \\Windows Components\\File Explorer                                         |
@@ -285,7 +285,7 @@ The following table lists the group policies to enable kiosk mode. The set of po
 | Disable customizing browser toolbars | Enabled  | No      | \\Windows Components\\Internet Explorer\\Toolbars                           |
 | Disable customizing browser toolbar buttons                  | Enabled  | No      | \\Windows Components\\Internet Explorer\\Toolbars                           |
 | Turn off add-on performance notifications                    | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
-| Do not allow users to enable or disable add-ons              | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
+| Don't allow users to enable or disable add-ons              | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
 | Disable changing Advanced page settings                      | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
 | Turn off Favorites bar          | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
 | Prevent per-user installation of ActiveX controls            | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
@@ -316,7 +316,7 @@ The following table lists the group policies to enable kiosk mode. The set of po
 | Disable changing Profile Assistant settings                  | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
 | Prevent changing proxy settings | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
 | Disable changing ratings settings    | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
-| Turn off the auto-complete feature for web addresses         | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
+| Turn off the autocomplete feature for web addresses         | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
 | Turn off suggestions for all user-installed providers        | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
 | Turn off the quick pick menu    | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
 | Search: Disable Find Files via F3 within the browser         | Enabled  | No      | \\Windows Components\\Internet Explorer                                     |
@@ -326,7 +326,7 @@ The following table lists the group policies to enable kiosk mode. The set of po
 | Turn off the Store application  | Enabled  | No      | \\Windows Components\\Store                                                 |
 | Prohibit New Task Creation      | Enabled  | No      | \\Windows Components\\Task Scheduler                                        |
 
-## Set up a proxy to access only websites included in a safe list
+## Set up a proxy to access only websites included in an allow list
 
 You can define a list of websites that a store worker (cashier) requires for normal operations, and set up an administrator-controlled proxy that has access only to these websites. Store Commerce for web requires access to the following websites:
 

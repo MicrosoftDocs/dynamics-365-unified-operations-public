@@ -4,8 +4,9 @@ description: Learn about the installation steps for Commerce channel components 
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
-ms.date: 10/30/2025
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.date: 04/02/2026
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -69,7 +70,7 @@ Before you start the installation of channel components, complete all prior inst
     > [!NOTE]
     > The **-RetailSelfServicePackages** parameter is the full path location that you created in the beginning of this procedure (**C:\\RetailSelfService**).
 
-1. Download the appropriate binary update from Lifecycle Services to get the Commerce installers. For instructions, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+1. Download the appropriate binary update from Lifecycle Services to get the Commerce installers. For instructions, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
 1. Extract the zip file, and copy all self-service installers into the **C:\\RetailSelfService** folder that you defined and created on each AOS machine in step 2. The six self-service installers are as follows:
 
     - AsyncServerConnectorServiceSetup.exe

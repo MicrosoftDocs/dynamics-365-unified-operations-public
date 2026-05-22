@@ -4,7 +4,7 @@ description: Learn about how to work with the improved quote-to-cash features wh
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 09/15/2023
+ms.date: 03/10/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 audience: Application User

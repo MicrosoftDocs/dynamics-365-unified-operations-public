@@ -1,12 +1,11 @@
 ---
 title: Monitor sales and margin performance
-description: You can monitor sales and margin performance in real time using Dynamics 365 Commerce.
+description: Learn how to monitor sales and margin performance in real time using Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 08/01/2024
+ms.date: 01/23/2026
 ms.topic: how-to
 ms.search.form: RetailSales
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: Global
 ms.author: asharchw
@@ -19,7 +18,7 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-You can monitor sales and margin performance in real time using Dynamics 365 Commerce.
+This article explains how to monitor sales and margin performance in real time using Microsoft Dynamics 365 Commerce.
 
 As part of Commerce, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:
 
@@ -32,7 +31,7 @@ As part of Commerce, users can monitor sales and margin performance in real time
 - Customers
 - Operating units
 
-Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default product category hierarchy. Users can also drill-down from the top operating unit to an individual channel in the organization hierarchy that is defined as the default organization hierarchy for reporting. You can open the reports from any of the following locations:
+Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default product category hierarchy. Users can also drill down from the top operating unit to an individual channel in the organization hierarchy that you define as the default organization hierarchy for reporting. You can open the reports from any of the following locations:
 
 - **Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports**
 - **Category and product management** workspace &gt; **Retail and Commerce** &gt; **Product and categories** &gt; **Store management** &gt; **Reports**

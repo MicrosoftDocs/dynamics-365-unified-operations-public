@@ -1,10 +1,10 @@
 ---
 title: Maintain general budget reservations
 description: Learn how to complete typical tasks for general budget reservations, including a step-by-step process on creating and encumbering a general budget reservation.
-author: AlexRenney
-ms.author: twheeloc
+author: music727
+ms.author: mibeinar
 ms.topic: how-to
-ms.date: 04/25/2019
+ms.date: 01/26/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -93,7 +93,25 @@ If the reservation is in a workflow, recall the workflow status to **Draft**, fo
 
     - The general ledger and budget control updates occur, and the transaction is recorded in the transaction log.
     - This procedure doesn't delete the reservation. It just cancels the reservation and generates the accounting and budget entries to reverse the impact of the document that was originally posted.
-    - You can cancel a whole general budget reservation, but you can't cancel individual lines.
+    - You can cancel a whole general budget reservation.
+    - To cancel individual lines, enable the **Allow cancelation of individual lines on General budget reservations** feature is enabled.
+      
+## Cancel a general budget reservation lines
+
+1. In **Feature management**, enable the **Allow cancelation of individual lines on General budget reservations** feature.
+
+    The feature enables users to cancel individual lines within General budget reservations. By introducing line-level cancellations, users can manage budget reservations with more flexibility. If the line has been **Canceled**, it's also considered **Finalized**.
+
+2. Select the General budget reservations for which the line needs to be cancelled.
+
+   >[!NOTE]
+   >Only the lines that have no downstream relieving activity can be cancelled.
+   
+3. On the Lines, select the line and press **Cancel**.
+   - The general ledger and budget control updates occur, and the transaction is recorded in the transaction log.
+   - This procedure doesn't delete the line. It cancels the reservation and generates the accounting and budget entries to reverse the impact of the document that was originally posted.
+   - The cancelled line is automatically **Finalized** and can't be reopened.
+
 
 ## Finalize a general budget reservation
 

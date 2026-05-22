@@ -14,13 +14,13 @@ ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocatio
 ms.dyn365.ops.version: Version 1611
 ---
 
-# Allocation bases 
+# Allocation bases
 
 [!include [banner](../includes/banner.md)]
 
 An allocation base is the basis on which Cost accounting allocates overhead costs. An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied. Allocation bases are mostly used to assign overhead costs to inventory that is produced. For example, an IT department allocates its expenses according to the number of computers that each department uses.
 
-There are three types of allocation bases in Cost accounting:
+Cost accounting has three types of allocation bases:
 
 - Predefined dimension member allocation bases
 - Hierarchy allocation bases
@@ -34,12 +34,13 @@ The predefined dimension member allocation bases are created automatically when 
 - Cost element dimension members
 
 > [!NOTE]
-> The predefined dimension member allocation bases that are based on a cost element dimension member consider the values only from the data source provider, such as the general ledger or budget.
+> The predefined dimension member allocation bases that are based on a cost element dimension member consider only the values from the data source provider, such as the general ledger or budget.
 
 ### Example 1: Use a cost element dimension member as the allocation base
-This example shows how to create a cost allocation rule to allocate cost element 10002 (Employee insurance) to the balance that is recorded on cost element 10001 (Salaries). The allocation rule is defined based on the ratio of each department's salaries to total salaries. (Review needed!)
 
-In the general ledger, the chart of account is defined as follows.
+This example shows how to create a cost allocation rule to allocate cost element 10002 (Employee insurance) to the balance that is recorded on cost element 10001 (Salaries). The allocation rule is based on the ratio of each department's salaries to total salaries.
+
+In the general ledger, the chart of accounts is defined as follows.
 
 | Chart of account | Main account | Description        | Main account type |
 |------------------|--------------|--------------------|-------------------|
@@ -55,17 +56,17 @@ Define a cost element dimension, and configure the data connector. After the dat
 | Cost elements               | 10001        | Salaries           | Primary |
 | Cost elements               | 10002        | Employee insurance | Primary |
 
-**Predefined dimension member allocation bases** 
+**Predefined dimension member allocation bases**
 
 | Name  | Description        | Cost element dimension |
 |-------|--------------------|------------------------|
 | 10001 | Salaries           | Cost elements          |
 | 10002 | Employee insurance | Cost elements          |
 
-In the general ledger, the following entries have been posted:
+In the general ledger, you post the following entries:
 
 - The entries that show the Salaries main account come from the Payroll system and are posted to cost centers.
-- The expense for employee insurance is manually posted to a default cost center.
+- You manually post the expense for employee insurance to a default cost center.
 
 | Accounting date | Cost center |  Description        | Main account |  Description       | Amount in accounting currency |
 |-----------------|-------------|---------------------|--------------|--------------------|-------------------------------|
@@ -74,7 +75,7 @@ In the general ledger, the following entries have been posted:
 | 03-01-2017      | CC003       | IT                  | 10001        | Salaries           | 3,000.00                      |
 | 03-01-2017      | CC099       | Default cost center | 10002        | Employee insurance | 1,000.00                      |
 
-After the general ledger source data is processed, the following entries are created in Cost accounting.
+After the general ledger source data is processed, Cost accounting creates the following entries.
 
 **Cost entries**
 
@@ -85,7 +86,7 @@ After the general ledger source data is processed, the following entries are cre
 | CC003       | IT                  | 10001         | Salaries           | Unclassified    |3,000.00|      03-01-2017        |
 | CC099       | Default cost center | 10002         | Employee insurance | Unclassified    |1,000.00|      03-01-2017       |
 
-In this simplified example, a cost allocation rule is created to allocate cost element 10002 (Employee insurance) relative to the balance that is recorded on cost element 10001 (Salaries).
+In this simplified example, you create a cost allocation rule to allocate cost element 10002 (Employee insurance) relative to the balance that is recorded on cost element 10001 (Salaries).
 
 **Cost distribution rule**
 
@@ -95,7 +96,7 @@ In this simplified example, a cost allocation rule is created to allocate cost e
 
 **Perform overhead calculation**
 
-After cost element 10001 (Salaries) is applied as the allocation base, the result of the overhead calculation is as follows.
+After you apply cost element 10001 (Salaries) as the allocation base, the result of the overhead calculation is as follows.
 
 | Cost object | Description | Magnitude |   Allocation factor         | Amount |
 |-------------|-------------|-----------|-----------------------------|--------|
@@ -126,7 +127,7 @@ After cost element 10001 (Salaries) is applied as the allocation base, the resul
 
 ### Example 2: Use a statistical dimension member as the allocation base
 
-Statistical dimension members can be used as allocation bases to define policies or report non-monetary consumption by cost objects. You can manually create statistical dimension members or import them from a file by using the Data management import/export tool.
+Statistical dimension members can be used as allocation bases to define policies or report nonmonetary consumption by cost objects. You can manually create statistical dimension members or import them from a file by using the Data management import/export tool.
 
 **Statistical dimension members**
 
@@ -173,7 +174,7 @@ To pull statistical measures from the system, a statistical measure provider tem
 |-------|----------|---------------|----------------|----------------|
 | FTE’s | Count    | HcmEmployment | Not applicable | Not applicable |
 
-After the statistical measure source data is processed, the following entries will be created in Cost accounting.
+After the system processes the statistical measure source data, it creates the following entries in Cost accounting.
 
 **Statistical entries**
 
@@ -199,7 +200,7 @@ You can use the Imported statistical measures data entity to import statistical 
 | 31-01-2017      | CC002            | 4,100.00  | Electricity       |
 | 31-01-2017      | CC003            | 15,000.00 | Electricity       |
 
-After the statistical measure source data is processed, the following entries will be created in Cost accounting.
+After the system processes the statistical measure source data, it creates the following entries in Cost accounting.
 
 **Statistical entries**
 
@@ -209,7 +210,7 @@ After the statistical measure source data is processed, the following entries wi
 | CC002       | FI | 31-01-2017      | Electricity                  | Electricity consumption | 4,100.00  |
 | CC003       | IT | 31-01-2017      | Electricity                  | Electricity consumption | 15,000.00 |
 
-Here is an example of a cost distribution rule if the Electricity predefined dimension member allocation basis is assigned as the allocation base in it.
+Here's an example of a cost distribution rule if you assign the **Electricity** predefined dimension member allocation basis as the allocation base.
 
 | Cost object | Description  | Magnitude | Allocation factor          |
 |-------------|------|-----------|----------------------------|
@@ -222,7 +223,8 @@ Here is an example of a cost distribution rule if the Electricity predefined dim
 Cost accountants can manually create the hierarchy allocation bases by applying a cost object dimension hierarchy node to an existing allocation base. In this way, you can limit the range of the original predefined dimension member allocation basis. One predefined dimension member allocation basis can be used to create several hierarchy allocation bases. Ranges can be maintained in the cost object dimension hierarchy that is associated with the hierarchy allocation bases.
 
 ### Example: Hierarchy allocation bases that are based on full-time employees in the organization
-Here is an example of a cost object dimension hierarchy that can be created to describe a simplified organization.
+
+Here's an example of a cost object dimension hierarchy that you can create to describe a simplified organization.
 
 | Hierarchy name | Node level 0 | Node level 1 | Node level 2 | Dimension members |
 |----------------|--------------|--------------|--------------|-------------------|
@@ -248,7 +250,7 @@ A cost must be distributed between cost centers that report to the organization'
 |-----------------------|-----------------|---------------------------------|--------------------------------------|
 | Number of FTEs in CFO | FTE’s           | Organization                    | CFO                                  |
 
-A Preview function lets you validate the hierarchy allocation basis that is created, based on statistical entries in the system.
+A Preview function lets you validate the hierarchy allocation basis that you create, based on statistical entries in the system.
 
 **Allocation base details**
 
@@ -257,7 +259,7 @@ A Preview function lets you validate the hierarchy allocation basis that is crea
 | CC001       | HR   | 1.00       |
 | CC002       | FI   | 2.00       |
 
-Here is an example of a cost distribution rule if the Number of FTEs in CFO hierarchy allocation basis is assigned as the allocation base in it.
+Here's an example of a cost distribution rule if the Number of FTEs in CFO hierarchy allocation basis is assigned as the allocation base in it.
 
 | Cost object | Description  | Magnitude | Allocation factor |
 |-------------|------|-----------|-------------------|
@@ -273,7 +275,7 @@ When you create a formula allocation base, you select which statistical dimensio
 > [!NOTE]
 > Previously defined formula allocation bases can be used to define a new formula allocation base.
 
-In formula allocation base factors, you create an alias, and associate it with either an allocation base or a constant. The aliases are then used to define the formula.
+In formula allocation base factors, you create an alias and associate it with either an allocation base or a constant. Use the aliases to define the formula.
 
 You can use the following operators to define your formula.
 
@@ -286,7 +288,7 @@ You can use the following operators to define your formula.
 | –       | Subtraction    |
 | \*      | Multiplication |
 
-Traditional **IF** statements aren't supported. However, you can create statements and validate whether they are true.
+Traditional **IF** statements aren't supported. However, you can create statements and validate whether they're true.
 
 | Statement | Validation | Result |
 |-----------|------------|--------|
@@ -297,7 +299,7 @@ Traditional **IF** statements aren't supported. However, you can create statemen
 
 Electricity bills often consist of two parts:
 
-- A fixed fee for being connected to grid
+- A fixed fee for being connected to the grid
 - A cost that is associated with consumption per kWh
 
 The Electricity predefined dimension member allocation basis has already been defined and holds these values.
@@ -310,18 +312,18 @@ The Electricity predefined dimension member allocation basis has already been de
 | CC002       | FI   | 31-01-2017      | Electricity                  | Electricity consumption | 4,100.00  |
 | CC003       | IT   | 31-01-2017      | Electricity                  | Electricity consumption | 15,000.00 |
 
-If the fixed fee must now be evenly spread over cost objects that consume electricity, you have two options for allocating the costs:
+If you need to spread the fixed fee evenly over cost objects that consume electricity, you have two options for allocating the costs:
 
 - Create a new predefined allocation base, Electricity fixed, and then apply a statistical measure of 1.00 for each cost object that consumed electricity.
-- Create a formula allocation base, Electricity fixed, that takes advantage of the Electricity predefined allocation base that is already defined in the system. The benefit of this option is that data must be loaded into Cost accounting for only one Electricity statistical dimension member.
+- Create a formula allocation base, Electricity fixed, that takes advantage of the Electricity predefined allocation base that's already defined in the system. The benefit of this option is that you only need to load data into Cost accounting for one Electricity statistical dimension member.
 
-**Formula allocation base** 
+**Formula allocation base**
 
 | Name              | Cost element dimension | Statistical dimension | Formula |
 |-------------------|------------------------|-----------------------|---------|
 | Electricity fixed |                        | Statistical elements  |         |
 
-Before the **Formula** field can be filled, you must specify the alias that should be used in the formula.
+Before you can fill the **Formula** field, you must specify the alias that should be used in the formula.
 
 **Formula allocation base factors**
 
@@ -338,7 +340,7 @@ Note that 0 (zero) isn't supported as a constant.
 |-------------------|------------------------|-----------------------|---------|
 | Electricity fixed |                        | Statistical elements  | a \> b  |
 
-A Preview function lets you validate the formula allocation base that is created, based on statistical entries in the system.
+A Preview function lets you validate the formula allocation base that you created, based on statistical entries in the system.
 
 **Allocation base details**
 
@@ -348,7 +350,7 @@ A Preview function lets you validate the formula allocation base that is created
 | CC002       | FI   | 4,100.00 \> 0.01  | 1.00      |
 | CC003       | IT   | 15,000.00 \> 0.01 | 1.00      |
 
-Here is an example of a cost distribution rule if the Electricity formula allocation base is assigned as the allocation base in it.
+Here's an example of a cost distribution rule if you assign the Electricity formula allocation base as the allocation base in it.
 
 **Cost object magnitude allocation factor**
 
@@ -359,9 +361,10 @@ Here is an example of a cost distribution rule if the Electricity formula alloca
 | CC003       | IT   | 1.00      | (1/3) × Amount     |
 
 ### Example 2: An advanced formula
-For this example, the cost of electricity should not just follow the actual electricity that is consumed in kWh. Management wants to incorporate incentive for lowering electricity usage. 
 
-| Rule              | Rate | 
+For this example, the cost of electricity shouldn't just follow the actual electricity that is consumed in kWh. Management wants to incorporate an incentive for lowering electricity usage.
+
+| Rule              | Rate |
 |-------------------|------|
 | a <= 10000,00 kWh | 0.75 |
 | a > 10000,00 kWh  | 1.15 |
@@ -374,7 +377,7 @@ A new formula allocation base, Electricity usage, is created.
 |-------------------|------------------------|-----------------------|---------|
 | Electricity usage |                        | Statistical elements  |         |
 
-Before the **Formula** field can be filled, you must specify the alias that should be used in the formula.
+Before you can fill the **Formula** field, you must specify the alias that should be used in the formula.
 
 **Formula allocation base factors**
 
@@ -391,7 +394,7 @@ Before the **Formula** field can be filled, you must specify the alias that shou
 |-------------------|------------------------|-----------------------|------------------------------------------------------------|
 | Electricity fixed |                        | Statistical elements  | ((a \> b) × ((b × c) + (a – b) × d)) + ((a \<= b] × a × c) |
 
-A Preview function lets you validate the formula allocation base that is created, based on statistical entries in the system.
+A Preview function lets you validate the formula allocation base that you created, based on statistical entries in the system.
 
 **Allocation base details**
 
@@ -401,23 +404,20 @@ A Preview function lets you validate the formula allocation base that is created
 | CC002       | FI | ((4,100.00 \> 10.000.00) × ((10,000.00 × 0.75) + (4,100.00 – 10,000.00) × 1.15)) + ((4,100.00 \<= 10,000.00) × 4,100.00 × 0.75)     | 3,075.00  |
 | CC003       | IT | ((15,000.00 \> 10.000.00) × ((10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15)) + ((15,000.00 \<= 10,000.00) × 15,000.00 × 0.75) | 1,3250.00 |
 
-Here is a closer look at the formula for CC003 (IT):
+Here's a closer look at the formula for CC003 (IT):
 
 ((15,000.00 \> 10,000.00) × ((10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15)) + ((15,000.00 \<= 10,000.00) × 15,000.00 × 0.75) = 13,250.00
 
-(1 × (7,500.00 + 5,000.00 × 1.15)) + (0 × 15,000.00 × 0.75)            
+(1 × (7,500.00 + 5,000.00 × 1.15)) + (0 × 15,000.00 × 0.75)
 
-1 × 7,500.00 + 5,750.00 + 0 
+1 × 7,500.00 + 5,750.00 + 0
 
-Here is an example of a cost distribution rule if the Electricity fixed formula allocation base is assigned as the allocation base in it.
-
+Here's an example of a cost distribution rule if you assign the **Electricity fixed** formula allocation base as the allocation base.
 
 | Cost object | Description | Magnitude |        Allocation factor         |
 |-------------|-------------|-----------|----------------------------------|
 |    CC001    |     HR      | 1,837.50  | (1,837.50 ÷ 18,162.50) × Amount  |
 |    CC002    |     FI      | 3,075.00  | (3,075.00 ÷ 18,162.50) × Amount  |
 |    CC003    |     IT      | 13,250.00 | (13,250.00 ÷ 18,162.50) × Amount |
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

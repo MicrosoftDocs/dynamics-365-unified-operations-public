@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.validFrom: 1900-01-02
 
@@ -28,7 +28,7 @@ To generate the Purchase unrealized VAT remaining report, follow these steps:
 1. In the **Tax branch code** field, select a tax branch to generate the report only for the selected tax branch. Learn more in [Tax branch page](apac-tha-tax-branch-dimensions.md).
 1. Select **OK**, and review the report that is generated.
 
-    ![Unrealized VAT remaining report.](../media/apac-tha-unrealized-VAT-remaining-report.png)
+    :::image type="content" source="../media/apac-tha-unrealized-VAT-remaining-report.png" alt-text="Screenshot of the Unrealized VAT remaining report.":::
 
     The following table explains the information that is shown on the **Unrealized VAT remaining** report.
 
@@ -60,7 +60,7 @@ To generate the Purchase VAT report for internal use, follow these steps:
 1. In the **Tax invoice date** field, select the date when the vendor generated the tax invoice.
 1. Select **OK**, and review the report that is generated.
 
-    ![Purchase VAT report  for internal use .](../media/apac-tha-purchase-VAT-report-for-internal-use.png)
+    :::image type="content" source="../media/apac-tha-purchase-VAT-report-for-internal-use.png" alt-text="Screenshot of the Purchase VAT report for internal use.":::
 
     The following table explains the information that is shown on the **Purchase VAT** report for internal use.
 
@@ -93,7 +93,7 @@ To generate the Purchase VAT report, follow these steps:
 1. In the **Tax invoice number** field, enter the sales tax code for which the report should include transactions.
 1. Select **OK**, and review the report that is generated.
 
-    ![Purchase VAT report.](../media/apac-tha-purchase-VAT-report.png)
+    :::image type="content" source="../media/apac-tha-purchase-VAT-report.png" alt-text="Screenshot of the Purchase VAT report.":::
 
     The following table explains the information that is shown on the **Purchase VAT** report.
 
@@ -127,7 +127,7 @@ To generate the Sales VAT report for internal use, follow these steps:
 1. In the **Tax invoice number** field, enter the sales tax code for which the report should include transactions.
 1. Select **OK**, and review the report that is generated.
 
-    ![Sales VAT report for internal use .](../media/apac-tha-sales-VAT-report-for-internal-use.png)
+    :::image type="content" source="../media/apac-tha-sales-VAT-report-for-internal-use.png" alt-text="Screenshot of the Sales VAT report for internal use.":::
 
     The following table explains the information that is shown on the **Sales VAT** report for internal use.
 
@@ -159,7 +159,7 @@ To generate the Sales VAT report, follow these steps:
 1. In the **Tax invoice number** field, enter the sales tax code for which the report should include transactions.
 1. Select **OK**, and review the report that is generated.
 
-    ![Sales VAT report.](../media/apac-tha-sales-VAT-report.png)
+    :::image type="content" source="../media/apac-tha-sales-VAT-report.png" alt-text="Screenshot of the Sales VAT report.":::
 
     The following table explains the information that is shown on the **Sales VAT** report.
 
@@ -175,10 +175,5 @@ To generate the Sales VAT report, follow these steps:
     | Goods and services base amount | The base amount of the transaction. |
     | Tax amount | The calculated tax amount. |
     | Total amount | The total amount of goods and services. This amount includes calculated tax. |
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

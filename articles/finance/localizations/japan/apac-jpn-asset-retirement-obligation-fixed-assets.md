@@ -3,8 +3,10 @@ title: Set up asset retirement obligation for fixed assets for Japan
 description: Learn how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired for Japan.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 12/08/2025
+ms.topic: concept-article
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Japan
@@ -32,32 +34,32 @@ Use asset retirement obligation (ARO) to distribute the retirement cost of an as
 > [!NOTE]
 >\* Steps 2 and 3 are repeated multiple times throughout the service life of the fixed asset.
 
-![T-account representation of the ARO transactions.](../media/aro-t-account.png) 
+![T-account representation of the ARO transactions.](../media/aro-t-account.png)
 
 ## Setup information
+
 To use ARO, complete the following setup tasks:
 
--   Set up basic fixed asset parameters, such as a default Book, reason codes, and number sequences on the **Fixed assets parameters** page
--   Define a fixed asset group on the **Fixed asset groups** page
--   Set up a fiscal calendar for depreciation
--   Set up a discount rate schedule (cashflow discount rate) that uses current market discount rates to calculate ARO amounts
--   Specify the type of ARO to use for an asset, and specify how often changes to the ARO amounts are posted
--   Set up an estimated retirement cost plan for ARO, and simulate ARO amounts for each fiscal period of the asset’s service life
--   Set up a posting profile for the **Capitalized asset retirement obligation** and **Asset retirement obligation - accretion** **expense** document types
--   Set up accounts that the transaction amounts are retrieved from when you post a fixed asset that has a transaction type of **ARO for disposal**
+- Set up basic fixed asset parameters, such as a default Book, reason codes, and number sequences on the **Fixed assets parameters** page
+- Define a fixed asset group on the **Fixed asset groups** page
+- Set up a fiscal calendar for depreciation
+- Set up a discount rate schedule (cashflow discount rate) that uses current market discount rates to calculate ARO amounts
+- Specify the type of ARO to use for an asset, and specify how often changes to the ARO amounts are posted
+- Set up an estimated retirement cost plan for ARO, and simulate ARO amounts for each fiscal period of the asset’s service life
+- Set up a posting profile for the **Capitalized asset retirement obligation** and **Asset retirement obligation - accretion** **expense** document types
+- Set up accounts that the transaction amounts are retrieved from when you post a fixed asset that has a transaction type of **ARO for disposal**
 
 ## Set up asset retirement obligation documents and enter ARO amount on a fixed asset
+
 See [Set up asset retirement obligation documents and enter ARO amount on a fixed asset](set-up-asset-retirement-obligation.md).
 
 ## Technical information for system administrators
-If you don't have access to the pages that are used to complete this task, contact your system administrator and provide the information that is shown in the following table.
 
+If you don't have access to the pages that are used to complete this task, contact your system administrator and provide the information that is shown in the following table.
 
 |         Category          |                                                                                                Prerequisite                                                                                                 |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Configuration keys     | Ensure that the Fixed <strong>Assets</strong> configuration key is available under the <strong>Data Dictionary</strong> &gt; <strong>Configuration Keys</strong> node in the Application Object Tree (AOT). |
 | Security roles and duties |                                                  To perform this task, you must be a member of the <strong>-Maintain fixed assets-</strong> security role.                                                  |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

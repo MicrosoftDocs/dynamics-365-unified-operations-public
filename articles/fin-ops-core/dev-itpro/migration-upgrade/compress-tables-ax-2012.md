@@ -3,7 +3,7 @@ title: Compress tables in Dynamics AX 2012 environments
 description: Learn about how to compress tables in Microsoft Dynamics AX 2012 environments, including background information and prerequisites
 author: ttreen
 ms.author: ttreen
-ms.date: 05/23/2022
+ms.date: 03/17/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -22,42 +22,42 @@ This article describes how to compress tables in Microsoft Dynamics AX 2012 envi
 
 When you upgrade to Dynamics 365 in self-service environments, Dynamics AX 2012 environments that have large databases might generate errors that resemble the following example:
 
-> Managed Sync Table Worker encountered an exception, but is continuing because ContinueOnError is true. Table Sync Failed for Table: TaxTrans. Exception: System.InvalidOperationException: Database execution failed: The elastic pool has reached its storage limit. The storage usage for the elastic pool cannot exceed (4194304) MBs.  
-The statement has been terminated.
+> Managed Sync Table Worker encountered an exception, but is continuing because ContinueOnError is true. Table Sync Failed for Table: TaxTrans. Exception: System.InvalidOperationException: Database execution failed: The elastic pool reached its storage limit. The storage usage for the elastic pool can't exceed 4194304 MB.  
+The statement was terminated.
 
 One way to help avoid errors of this type is to reduce the size of the Dynamics AX 2012 source database by compressing table and index data before you upgrade.
 
 In Dynamics 365, you can compress tables and indexes by using page or row data compression.
 
-Although most Dynamics AX 2012 customers don't enable compression out of the box, it can be enabled afterward. When compression is enabled, data that is replicated to Dynamics 365 will also be compressed. This compression should free up enough space in the database to enable the upgrade to be completed.
+Although most Dynamics AX 2012 customers don't enable compression out of the box, you can enable it afterward. When you enable compression, data that's replicated to Dynamics 365 is also compressed. This compression should free up enough space in the database to enable the upgrade to be completed.
 
 ## Prerequisites
 
-The following prerequisites must be in place before you compress the tables.
+Before you compress the tables, make sure the following prerequisites are in place.
 
 > [!NOTE]
-> For the compression status of the tables to be replicated, you must use a version of the AX 2012 Database Upgrade Toolkit for Dynamics 365 that is dated March 30, 2022, or later. Earlier releases don't support compression flags.
+> To replicate the compression status of the tables, use a version of the AX 2012 Database Upgrade Toolkit for Dynamics 365 that's dated March 30, 2022, or later. Earlier releases don't support compression flags.
 
 ### Identify tables for compression
 
 To identify tables for compression, follow these steps:
 
 1. Open SQL Management Studio, and connect to the server that hosts the Dynamics AX 2012 database.
-1. In Object Explorer, select and hold (or right-click) the Dynamics AX 2012 database that you're using, and then select **Reports \> Standard Reports \> Disk Usage by Top Tables** to run the **Disk Usage by Top Tables** report.
-1. Review the report results to determine which tables use the largest amount of storage. By compressing those tables, you should free up enough volume to help the upgrade.
+1. In Object Explorer, select and hold (or right-click) the Dynamics AX 2012 database that you're using. Select **Reports** > **Standard Reports** > **Disk Usage by Top Tables** to run the **Disk Usage by Top Tables** report.
+1. Review the report results to determine which tables use the largest amount of storage. By compressing those tables, you free up enough space to help the upgrade.
 
 ### Configure Dynamics AX 2012 for the upgrade
 
 To configure Dynamics AX 2012 for the upgrade, follow these steps:
 
-1. From the Dynamics AX 2012 Development Workspace, find and open the **SysSqlSetup** form. This form can take several minutes to be opened.
+1. From the Dynamics AX 2012 Development Workspace, find and open the **SysSqlSetup** form. This form can take several minutes to open.
 1. In the **Table** drop-down list, find and select one of the tables that you want to compress (for example, **RetailTtransactionSalesTrans**).
 1. Select the **Enable Compression** checkbox, select **Page** or **Row**, and then select **Save**.
 1. Select **All indexes for selected table**, select the **Enable Compression** checkbox, select **Page** or **Row**, and then select **Save**.
 1. Repeat steps 2 through 4 for each additional table that you want to compress.
 
 > [!TIP]
-> You can use the following SQL query to determine which tables you've set up compression on.
+> Use the following SQL query to determine which tables you set up compression on.
 >
 > ```SQL
 > select t2.name as TABLENAME, t1.*
@@ -69,7 +69,7 @@ To configure Dynamics AX 2012 for the upgrade, follow these steps:
 
 You have two options for compressing the tables:
 
-- **[Option 1: Compress the tables from the SysSqlAdmin form](#option-1-compress-the-tables-from-the-syssqladmin-form)** – One limitation of the **SysSqlAdmin** form is that the table compression isn't selective. In other words, you can't select which tables you want to process. The compression is always processed for all the tables that you've set up compression on. However, the index compression *is* selective. Because you might want to control this process, especially for a live database, option 2 might be a better choice.
+- **[Option 1: Compress the tables from the SysSqlAdmin form](#option-1-compress-the-tables-from-the-syssqladmin-form)** – One limitation of the **SysSqlAdmin** form is that the table compression isn't selective. In other words, you can't select which tables you want to process. The compression always processes all the tables that you set up compression on. However, the index compression *is* selective. Because you might want to control this process, especially for a live database, option 2 might be a better choice.
 - **[Option 2: Run a SQL script](#option-2-run-a-sql-script)** – This option is more granular, and you have more control over it.
 
 ### Option 1: Compress the tables from the SysSqlAdmin form
@@ -77,9 +77,9 @@ You have two options for compressing the tables:
 To compress the tables from the **SysSqlAdmin** form, follow these steps:
 
 1. In the Dynamics AX Application Object Tree (AOT), find the **SysSqlAdmin** form, and open it.
-1. On the drop-down menu, select **Table actions \> Apply compression**.
-1. Find and select each table that you previously enabled, and then, on the drop-down men, select **Index actions \> Reindex**.
-1. Confirm that the compression was enabled by running the following SQL script.
+1. On the drop-down menu, select **Table actions** > **Apply compression**.
+1. Find and select each table that you previously enabled, and then, on the drop-down menu, select **Index actions** > **Reindex**.
+1. Confirm that the compression is enabled by running the following SQL script.
 
     ```SQL
     -- Tables with Compression
@@ -107,7 +107,7 @@ To compress the tables from the **SysSqlAdmin** form, follow these steps:
 
 ### Option 2: Run a SQL script
 
-For this option, you must run the following SQL script against the Dynamics AX 2012 database. First edit the list of tables (as commented in the script) so that it includes the tables that you want to compress. By default, the script will also compress the indexes on the tables. However, you can disable that functionality (as commented in the script).
+For this option, run the following SQL script against the Dynamics AX 2012 database. First, edit the list of tables (as commented in the script) so that it includes the tables that you want to compress. By default, the script compresses the indexes on the tables. However, you can disable that functionality (as commented in the script).
 
 ```SQL
 --

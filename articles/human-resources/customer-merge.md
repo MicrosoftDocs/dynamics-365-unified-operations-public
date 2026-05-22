@@ -4,7 +4,7 @@
 title: Human Resources customer merge FAQ
 description: This article answers frequently asked questions about the merge of Microsoft Dynamics 365 Human Resources to the finance and operations merged infrastructure.
 author: Edison-MS
-ms.date: 05/10/2024
+ms.date: 05/13/2026
 ms.topic: faq
 # optional metadata
 
@@ -25,9 +25,11 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Human Resources customer merge FAQ
 
+[!include [LCS freeze](includes/lcs-freeze-banner.md)]
+
 ## What is customer merge?
 
-Customer merge refers to the process that customers use to migrate their Human Resources (HR) environments from the standalone infrastructure to the finance and operations infrastructure as part of an infrastructure merge. Customers who have an existing finance and operations system can choose whether they want to maintain two separate environments or consolidate them into one system.
+Customer merge is the process that customers use to migrate their Human Resources (HR) environments from the standalone infrastructure to the finance and operations infrastructure as part of an infrastructure merge. Customers who have an existing finance and operations system can choose whether they want to maintain two separate environments or consolidate them into one system.
 
 Customer merge involves the following elements:
 
@@ -42,11 +44,11 @@ Customer merge involves the following elements:
 
 The decision to proceed with customer merge post-migration is discretionary and lies with the customer and business stakeholders. No strict timeline is imposed for this process. Microsoft recommends that customers do a thorough assessment before they make a decision, and that they consider organizational objectives and weigh the pros and cons.
 
-### Is there any cost benefit if we consolidate HR into finance and operations apps and operate them as a unified system?
+### Is there a cost benefit if I consolidate HR into finance and operations apps and operate them as a unified system?
 
-Integration of HR functions into finance and operations apps can lead to streamlined processes and improved efficiency. For example, consider the integration between Microsoft Dynamics 365 Finance and HR systems that some customers currently maintain. After the merge, this integration can be eliminated to simplify management.
+Integrating HR functions into finance and operations apps can streamline processes and improve efficiency. For example, consider the integration between Microsoft Dynamics 365 Finance and HR systems that some customers currently maintain. After the merge, you can remove this integration to simplify management.
 
-Here are some other benefits: 
+Here are some other benefits:
 
 - Easier control over Application Lifecycle Management (ALM)
 - A single Microsoft Dynamics Lifecycle Services project
@@ -54,25 +56,25 @@ Here are some other benefits:
 - Reduced overhead in the management of updates and deployments for two separate systems
 - Seamless data integration across platforms
 
-### We have one sandbox in the HR project and two sandboxes in the Finance project. Will we end up with three sandboxes after customer merge?
+### I have one sandbox in the HR project and two sandboxes in the Finance project. Do I end up with three sandboxes after customer merge?
 
-No. In this scenario, you can have only two sandboxes at the conclusion of the single Lifecycle Services project. The sandbox from the HR environment can't be carried over to the Finance project.
+No. In this scenario, you can have only two sandboxes at the conclusion of the single Lifecycle Services project. You can't carry over the sandbox from the HR environment to the Finance project.
 
 ### How can Microsoft support the customer merge process?
 
-If you encounter any obstacles during customer merge, the best course of action is to initiate a support ticket to request help from Microsoft. Our support engineers will provide professional assistance for your issue.
+If you encounter any obstacles during customer merge, the best course of action is to initiate a support ticket to request help from Microsoft. Support engineers provide professional assistance for your issue.
 
 ### What tools does Microsoft offer for customer merge?
 
 Microsoft offers extra data entities to facilitate customer merge. The Data Management Framework (DMF) serves as the primary standard tool for data migration. To initiate the process, identify and compile a list of applicable data entities. In cases where the out-of-box (OOB) data entities are inadequate, you might have to explore customized data entities.
 
-### Can the application URL be modified after the merge?
+### Can I modify the application URL after the merge?
 
 No. The target environment's name and link remain unchanged unless you redeploy the instance.
 
 ### After the merge, what changes occur in the HR environment? Is it automatically deleted?
 
-After customer merge is completed, you're responsible for deprovisioning both the sandbox and production environments from source environment, and the related Dataverse environment. For information, see [Delete a production finance and operations apps environment](../fin-ops-core/dev-itpro/deployment/delete-production-environment.md). You can proceed with the Lifecycle Services project.
+After customer merge completes, you're responsible for deprovisioning both the sandbox and production environments from the source environment, and the related Dataverse environment. For more information, see [Delete a production finance and operations apps environment](../fin-ops-core/dev-itpro/deployment/delete-production-environment.md). You can proceed with the Lifecycle Services project.
 
 ### Do I have to reinstall the Expense mobile app after the merge to the Finance environment?
 
@@ -104,4 +106,4 @@ Several significant challenges and considerations emerge during the customer mer
 - Integrations
 - Extended solutions
 
-We address and provide recommendations for these key challenges and considerations in [Dynamics 365 Human Resources Infrastructure Customer merge](https://community.dynamics.com/blogs/post/?postid=d9decee4-8b06-ef11-9f89-7c1e5216c747).
+The [Dynamics 365 Human Resources Infrastructure Customer merge](https://community.dynamics.com/blogs/post/?postid=d9decee4-8b06-ef11-9f89-7c1e5216c747) article addresses these key challenges and considerations and provides recommendations.

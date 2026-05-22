@@ -56,7 +56,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.8 includes Platform update 3
 
 ### Bug fixes 
 
-For information about the bug fixes included in each of the updates that are part of 10.0.8, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f).
+For information about the bug fixes included in each of the updates that are part of 10.0.8, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f).
 
 ### Dynamics 365: 2019 release wave 2 plan
 

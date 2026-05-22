@@ -1,11 +1,10 @@
 ---
 title: Module definition file
-description: This article covers the module definition file in Microsoft Dynamics 365 Commerce.
+description: Learn about the module definition file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/30/2024
+ms.date: 02/05/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,11 +15,11 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article covers the module definition file in Microsoft Dynamics 365 Commerce.
+This article describes the module definition file in Microsoft Dynamics 365 Commerce.
 
-A module definition file, MODULE\_NAME.definition.json, is used to register a module and provide metadata to the Dynamics 365 Commerce site builder tool. This metadata includes the module name, description, categories, and configurations.
+You use a module definition file named `MODULE_NAME.definition.json` to register a module and provide metadata to Dynamics 365 Commerce site builder. Include the module name, description, categories, and configurations in the metadata.
 
-Here is an example of a module definition file.
+Here's an example of a module definition file.
 
 ```json
 {
@@ -76,28 +75,28 @@ Here is an example of a module definition file.
 ```
 
 
-A module definition file also exposes configuration fields, so that a page author can configure module settings and resource definitions. In the example above, there is a configuration field for an image alignment setting (where the available values are **left** and **right**). Other examples could include a module title or heading, a rich text description, a "call to action" link, an image URL, or Commerce product data.
+A module definition file also exposes configuration fields, so that a page author can configure module settings and resource definitions. In the preceding example, there's a configuration field for an image alignment setting (where the available values are **left** and **right**). Other examples could include a module title or heading, a rich text description, a "call to action" link, an image URL, or Commerce product data.
 
-The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. Module configurations can be implemented per module instance or globally across all instances of the module.
+The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. You can implement module configurations per module instance or globally across all instances of the module.
 
 ## Module definition schema
 
-* **"$type"** – The type of the module. A module can be either a content module (**contentModule**), a container module (**containerModule**), a page module (**PageModule**), a script injector module (**scriptModule**), or a theme module (**themeModule**). Container and page modules also define "slots" that are used for layout regions. Script injector modules also define an "attributes" section that is used to specify where script can be injected.
-* **"friendlyName"** – The friendly name of the module. This name is shown to page authors. The minimum length is three characters.
-* **"name"** – The name of the module. This name must be unique across the application. It's used as the ID of the module and is referenced by the site builder tool. It should not be changed.
-* **"description"** – The description of the module. The description provides a friendly string that is shown in the site builder tool when modules are added to pages.
-* **"categories"** – The categories that the module can subscribe to. Container modules use the values that are specified here to allow or disallow some modules in specific slots.
-* **"tags"** – The tags that are used to search for the module. All the categories are automatically added as tags.
-* **"dataActions"** – The **dataActions** node is used to register the data actions that should be run for the module. By default, the data actions will run on the server side. However, they can also be configured to run on the client side.
-* **"slots"** – Slots are defined only in container modules. They are exposed in the site builder tool. You can define allow and deny lists for a slot to allow or disallow specific modules from being accepted in that slot.
-* **"attributes"** – Attributes are used to control script injector properties. For more information, see [Script injectors](script-injector.md).
-* **"config"** – The **config** section is used to add module configuration properties. For more information, see [Add module configuration fields](add-module-config-fields.md).
-* **"resources"** – This property is used to localize resources that are used in the module. For more information, see the [Module resource schema](#module-resource-schema) section later in this article.
-* **"dependentSchemas"** – The **dependentSchema** section is used to show or hide configuration properties, based on the contextual values of other configuration properties. For more information, see [Configure module properties to display based on context](configure-properties-context.md).
+* **"$type"** – The type of the module. A module can be either a content module (**contentModule**), a container module (**containerModule**), a page module (**PageModule**), a script injector module (**scriptModule**), or a theme module (**themeModule**). Container and page modules also define "slots" that you use for layout regions. Script injector modules also define an "attributes" section that you use to specify where script can be injected.
+* **"friendlyName"** – The friendly name of the module. The site authors see this name. The minimum length is three characters.
+* **"name"** – The name of the module. This name must be unique across the application. Site builder references this name as the ID of the module. Don't change it.
+* **"description"** – The description of the module. Site builder shows the description as a friendly string when modules are added to pages.
+* **"categories"** – The categories that the module can subscribe to. Container modules use the values that you specify here to allow or disallow some modules in specific slots.
+* **"tags"** – The tags that you use to search for the module. All the categories are automatically added as tags.
+* **"dataActions"** – Use the **dataActions** node to register the data actions that the module runs. By default, the data actions run on the server. However, you can also configure them to run on the client.
+* **"slots"** – Define slots only in container modules. Site builder exposes them. You can define allow and block lists for a slot to allow or disallow specific modules from being accepted in that slot.
+* **"attributes"** – Use attributes to control script injector properties. For more information, see [Script injectors](script-injector.md).
+* **"config"** – Use the **config** section to add module configuration properties. For more information, see [Add module configuration fields](add-module-config-fields.md).
+* **"resources"** – Use this property to localize resources that the module uses. For more information, see the [Module resource schema](#module-resource-schema) section later in this article.
+* **"dependentSchemas"** – Use the **dependentSchema** section to show or hide configuration properties, based on the contextual values of other configuration properties. For more information, see [Configure module properties to display based on context](configure-properties-context.md).
 
 ## Register data actions to a module
 
-If a module depends on data from a data action, the data action must be registered in the **dataActions** section of the module definition file.
+If a module depends on data from a data action, register the data action in the **dataActions** section of the module definition file.
 
 The following example shows a module definition file that includes data action registrations.
 
@@ -123,12 +122,12 @@ The following example shows a module definition file that includes data action r
     ...
 }
 ```
-Each data action is declared with its name and the following properties:
+Declare each data action by using its name and the following properties:
 
-* **"path"** – The path of the data action. The path can be a local path or the path of a core action included in the SDK (for example, **"@msdyn365-commerce-modules/retail-actions/dist/lib/get-selected-variant"**).
-* **"runOn"** – A setting that controls where the data action is run. Valid values are **server** or **client**.  If no value is specified, the default value is **server**.
+* **"path"** – The path of the data action. Use a local path or the path of a core action included in the SDK. For example, **"@msdyn365-commerce-modules/retail-actions/dist/lib/get-selected-variant"**.
+* **"runOn"** – A setting that controls where the data action runs. Use **server** or **client**. If you don't specify a value, the default value is **server**.
 
-In the previous example, after the data action is registered, the module automatically runs it on the server. The module then binds the result to the **testResult** property that should be defined in the module's data.ts file.
+In the previous example, after you register the data action, the module automatically runs it on the server. The module then binds the result to the **testResult** property that you define in the module's data.ts file.
 
 ```typescript
 // test-module.data.ts
@@ -145,10 +144,10 @@ You can then access the results of the data action in your module.
 
 ## Module resource schema
 
-- **"resources"** – This property is used to localize resources. When resources strings are defined, the localized strings are pulled from corresponding JavaScript Object Notation (JSON) files. These files are stored under the **/src/resources/modules/** directory. They include a **global.json** file for default locale values and any localized JSON files that are required, such as **fr-fr.json**.
-- **"resourcekey"** – The name of the resource. Resource keys can then be accessed in code via the **this.props.resources.resourceKey** property.
+- **"resources"** – Use this property to localize resources. When you define resource strings, the localized strings come from corresponding JavaScript Object Notation (JSON) files. Store these files under the **/src/resources/modules/** directory. They include a **global.json** file for default locale values and any localized JSON files that are required, such as **fr-fr.json**.
+- **"resourcekey"** – The name of the resource. Access resource keys in code via the **this.props.resources.resourceKey** property.
 - **"comment"** – A string that identifies the purpose of the string, to help with localization.
-- **"value"** – The resource string data that will be used in the module.
+- **"value"** – The resource string data that the module uses.
 
 ## Additional resources
 

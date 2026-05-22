@@ -44,7 +44,7 @@ If the chart of accounts in the subsidiary legal entity doesn't follow the chart
 
 5. If you're doing an online consolidation, follow these steps to ensure that the transfers occur as you intend:
 
-    1. In the *consolidated legal entity*, go to **General ledger \> Periodic \> Consolidate \> Consolidate \[Export to\]** to open the **Consolidate \[Online\]** page.
+    1. In the *consolidated legal entity*, go to **Consolidations \> Consolidate online** to open the **Consolidate \[Export to\]** page.
     2. On the **Criteria** tab, select the **Use consolidation account** check box.
     3. On the **Financial dimensions** tab, select the appropriate financial dimensions.
     4. For each financial dimension that you select, enter a number in the **Segment order** field to indicate the order that the dimensions should appear in.
@@ -55,7 +55,7 @@ The main accounts in the subsidiary legal entity might have the same account num
 
 Before you start the consolidation, follow these steps:
 
-1. In the *consolidated legal entity*, go to **General ledger \> Periodic \> Consolidate \> Consolidate \[Export to\]** to open the **Consolidate \[Online\]** page.
+1. In the *consolidated legal entity*, go to **Consolidations \> Consolidate online** to open the **Consolidate \[Online\]** page.
 2. Select the **Use consolidation account** check box. During consolidation, transactions and balances will automatically be transferred to the correct account.
 
 > [!NOTE]

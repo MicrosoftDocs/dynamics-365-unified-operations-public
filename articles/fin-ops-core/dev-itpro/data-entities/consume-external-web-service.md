@@ -5,6 +5,8 @@ author: johnmichalak
 ms.author: johnmichalak
 ms.date: 10/29/2025
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746

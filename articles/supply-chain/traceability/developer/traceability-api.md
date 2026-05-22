@@ -20,74 +20,24 @@ This article describes how to integrate the Traceability Add-in for Dynamics 365
 
 ## Authentication
 
-The platform security token is used to call the Traceability public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
+The platform security token is required to call the Traceability public API. The following example uses an Insomnia configuration. Learn more in [Use Insomnia with Dataverse Web API](/power-apps/developer/data-platform/webapi/insomnia).
 
-To obtain an access token, follow these steps:
+Use Insomnia to fetch a Microsoft Entra token by submitting an HTTP request that has the following properties:
 
-1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
-1. Search for or navigate to the **App registrations** page.
-1. Open the [app registration](traceability-install.md) you created for the Traceability app.
-1. From the left navigator, select **Overview**. Copy the value shown for **Application (client) ID** to a temporary text file.
-1. From the toolbar, select **Endpoints**.
-1. The **Endpoints** dialog opens. Copy the value shown for **OAuth 2.0 token endpoint (v2)** to a temporary text file.
-1. Fetch a Microsoft Entra token by submitting an HTTP request that has the following properties:
+| Key | Value |
+|--|--|
+| Grant type | Implicit |
+| Authorization URL | `https://login.microsoftonline.com/common/oauth2/authorize?resource={Traceability URL}`. Where *{Traceability URL}* is the URL for your Traceability installation, which resembles `https://operationsxxx.crm.dynamics.com` |
+| Client ID | The Application ID (client ID) registered in Azure portal. |
+| Response type | Access Token |
 
-    - **URL** – Use the **OAuth 2.0 token endpoint (v2)** value you found earlier in this procedure.
-    - **Method** – GET
-    - **Body content** – Submit the body content listed in the following table as form data.
+The following image shows an example of an Insomnia configuration. You can configure the keys mentioned in the previous table into the **Auth** tag of a specific HTTP request in Insomnia.
 
-        | Key | Value |
-        |--|--|
-        | client\_id | {Application (client) ID in Microsoft Azure} |
-        | client\_secret | {Client secret value} |
-        | grant\_type | client\_credentials |
-        | scope | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default |
+:::image type="content" source="../media/insomnia-configuration-example.png" alt-text="Example of Insomnia configuration" lightbox="../media/insomnia-configuration-example.png":::
 
-    You should have generated and saved your client secret when you created the Microsoft Entra application in Azure for Traceability. Learn more in [Install, update, or uninstall Traceability](traceability-install.md).
+You can create the following JSON file as global environment for an Insomnia project. The `version` and `webapiurl` fields are used to build the path of the specific API.
 
-1. You should receive a Microsoft Entra token in response. It should resemble the following example:
-
-    ```json
-    {
-        "token_type": "Bearer",
-        "expires_in": 3599,
-        "ext_expires_in": 3599,
-        "access_token": "eyJ0eXAiOiJKV1QiLC…OUppUdgPQ"
-    }
-    ```
-
-1. Use the Microsoft Entra token to generate a bearer token by submitting an HTTP request that has the following properties:
-
-    - **URL** – `https://securityservice.operations365.dynamics.com/token`
-    - **Method** – POST
-    - **Body content** – Submit the following body content as JSON content:
-
-        ```json
-        {
-            "grant_type": "client_credentials",
-            "client_assertion_type": "aad_app",
-            "client_assertion": "{Microsoft Entra token}",
-            "scope": "https://traceabilityservice.operations365.dynamics.com/.default",
-            "context": "{environmentId}",
-            "context_type": "finops-env"
-        }
-        ```
-
-        Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
-
-1. You should receive an access token in response. You must use this token as a bearer token to call the Traceability API. Here's an example of a response:
-
-    ```json
-    {
-        "access_token": "{access token}",
-        "token_type": "bearer",
-        "expires_in": 3600
-    }
-    ```
-
-## Find the Traceability API URL
-
-To find the URL for accessing your Traceability API, follow the instructions provided in [API endpoint](traceability-configure.md#api-endpoint).
+:::image type="content" source="../media/insomnia-environment-example.png" alt-text="Example of Insomnia environment" lightbox="../media/insomnia-environment-example.png":::
 
 ## Available APIs
 
@@ -95,238 +45,30 @@ The following table lists the APIs available for Traceability.
 
 | Path | Method | Description |
 |--|--|--|
-| /api/environments/{environmentId}/events/post-batch-events | Post | Create genealogy node and activity |
-| /api/environments/{environmentId}/traces/Query | Post | Query by tracking ID |
-| /api/environments/{environmentId}/events/unlink-components | Post | Unlink genealogy node and insert activity for unlink |
-
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
+| /api/data/v9.0/msdyn_sctquerytrace_v1 | Post | Query by tracking ID |
 
 The remaining sections provide detailed information about each API.
-
-## Post activity events API
-
-This API lets external systems post activity events to the Traceability service. Activity events include production component assembly and goods receipt in business activities.
-
-- **Path** – `/api/environments/{environmentId}/events/post-batch-events`
-- **Method** – `POST`
-
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
-
-### Post activity events request payload
-
-```txt
-[
-    {
-        "eventId": string,
-        "description": string,
-        "activityType": string,   # Refer to predefined "Activity Type"
-        "activityCode": string,   # Refer to configured "Activity Code" linked to "Activity Type"
-        "datetime": YYYY-MM-DDThh:mm:ss.sssz,
-        "operator": string,
-        "companyCode": string,
-        "details": {
-            "<data collection name>": <data collection value>
-            },
-        "consumptionTransactions": [
-            {
-                "transactionId": string,
-                "companyCode": string,
-                "itemId": string,   # Refer to configured "item" for tracing
-                "trackingId": string,
-                "serialId": string,
-                "batchId": string,
-                "assetId": string,
-                "lotId": string,
-                "quantity": decimal,
-                "unitOfMeasure": string
-            }
-        ],
-        "productTransactions": [
-            {
-                "transactionId": string,
-                "companyCode": string,
-                "itemId": string,   # Refer to configured "item"
-                "trackingId": string,
-                "serialId": string,
-                "batchId": string,
-                "assetId": string,
-                "lotId": string,
-                "quantity": decimal，
-                "unitOfMeasure": string
-            }
-        ]
-    }
-]
-```
-
-### Events post header field descriptions
-
-| Field Name | Description |
-|--|--|
-| `eventId` | Unique identifier for the activity (`SerialId`/`BatchId`). Duplicate values aren't allowed. The system generates this value if none is specified. |
-| `description` | Description of the activity event. |
-| `activityType` | Refers to a predefined "Activity Type" (*Purchase*, *Sales*, *Production*, and so on). |
-| `activityCode` | Refers to a configured "Activity Code" (*GoodsReceipt*, *Add*, *Remove*, and so on). |
-| `dateTime` | The date and time the activity event happened. |
-| `operator` | The operator who executed the activity event. The value can be a user ID, employee ID, or similar. |
-| `companyCode` | For Supply Chain Management, this field maps to a legal entity. |
-| *&lt;data collection name&gt;* | These fields are used to collect custom values. |
-
-### Events post productTransactions element field descriptions
-
-| Field Name | Description |
-|--|--|
-| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
-| `companyCode` | The legal entity of product element. |
-| `itemId` | Item number of the top finished good. |
-| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
-| `serialId` | The serial number of the top finished good. |
-| `batchId` | The batch number of the top finished good. |
-| `assetId` | The asset number of parent node. This field can be used as equipment number. |
-| `lotId` | The lot number of parent node. This field can be used as container number. |
-| `quantity` | The operation quantity of the top finished good. |
-| `unitOfMeasure` | The unit of measure of the received quantity. |
-
-### Events post consumptionTransactions element field descriptions
-
-| Field Name | Description |
-|--|--|
-| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
-| `companyCode` | The legal entity of component element. |
-| `itemId` | Item number of component. |
-| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
-| `serialId` | The serial number of the component. |
-| `batchId` | The batch number of the component. |
-| `assetId` | The asset number of child node. This field can be used as equipment number. |
-| `lotId` | The lot number of child node. This field can be used as container number. |
-| `quantity` | The consumption quantity of the component. |
-| `unitOfMeasure` | The unit of measure of the consumption quantity. |
-
-### Events post API response
-
-On success, status code 204 is returned.
-
-### Events post example
-
-Produce finished good **A** with component **B** and **C** by different events.
-
-#### Events post example request payload 1
-
-```json
-[
-    {
-        "EventId": "item B consumption-a8f441b3-2f15-5b92-8d84-230616113700",
-        "CompanyCode": "USMF",
-        "Operator": "Terry Alvarado",
-        "Description": "Consumption for production A",
-        "ActivityType": "Production",
-        "ActivityCode": "Consumption",
-        "Datetime": "2023-06-15T06:14:06.653Z",
-        "Details": {
-            "Operation Step": "OP1",
-            "Resource": "RES1",
-            "Reference Location": "RES-L01"
-        },
-        "ConsumptionTransactions": [
-            {
-                "TransactionId": "a8f441b3-2f15-5b92-8d84-230616113702",
-                "ItemId": "B",
-                "TrackingId": null,
-                "Details": {},
-                "Quantity": 1.0,
-                "UnitOfMeasure": "ea",
-                "BatchId": "B-001",
-                "SerialId": null
-            }
-        ],
-        "ProductTransactions": [
-            {
-                "TransactionId": "a8f441b3-2f15-5b92-8d84-230616113701",
-                "ItemId": "A",
-                "TrackingId": null,
-                "Details": {},
-                "Quantity": 1.0,
-                "UnitOfMeasure": "ea",
-                "TransactionType": 0,
-                "BatchId": null,
-                "SerialId": "A-001"
-            }
-        ]
-    }
-]
-```
-
-#### Events post example request payload 2
-
-```json
-[
-    {
-        "EventId": "item C consumption-a8f441b3-2f15-5b92-8d84-230616113703",
-        "CompanyCode": "USMF",
-        "Operator": "Terry Alvarado",
-        "Description": "Consumption for production A",
-        "ActivityType": "Production",
-        "ActivityCode": "Consumption",
-        "Datetime": "2023-06-15T07:14:06.653Z",
-        "Details": {
-            "Operation Step": "OP2",
-            "Resource": "RES2",
-            "Reference Location": "RES-L02"
-        },
-        "ConsumptionTransactions": [
-            {
-                "TransactionId": "a8f441b3-2f15-5b92-8d84-230616113705",
-                "ItemId": "C",
-                "TrackingId": null,
-                "Details": {},
-                "Quantity": 1.0,
-                "UnitOfMeasure": "ea",
-                "BatchId": "C-001",
-                "SerialId": null
-            }
-        ],
-        "ProductTransactions": [
-            {
-                "TransactionId": "a8f441b3-2f15-5b92-8d84-230616113704",
-                "ItemId": "A",
-                "TrackingId": null,
-                "Details": {},
-                "Quantity": 1.0,
-                "UnitOfMeasure": "ea",
-                "TransactionType": 0,
-                "BatchId": null,
-                "SerialId": "A-001"
-            }
-        ]
-    }
-]
-```
-
-#### Events post example results
-
-If you posted the example events shown previously, the Traceability Add-in would display the results shown in the following screenshot.
-
-:::image type="content" source="../media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability Add-in" lightbox="../media/events-post-api-result-example.png":::
 
 ## Single query API
 
 This API accepts queries for traceability information and returns genealogy, activity, and data collection information.
 
-- **Path** – `/api/environments/{environmentId}/traces/Query`
+- **Path** – Specify the traceability URL. For example: `https://operationsxxx.crm.dynamics.com/api/data/v9.0/msdyn_sctquerytrace_v1`
 - **Method** – `POST`
-
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 ### Single query request payload
 
 ```txt
 {
-    "tracingDirection": Backward/Forward,
-    "trackingId": string,
-    "company": string,
-    "itemNumber": string,
-    "serialNumber": string,
-    "batchNumber": string,
+    "tracingDirection": "Forward/Backward",
+    "eventDetailOption": "EventIdOnly",
+    "traceNodeOption": "BuildNodeDictionary",
+    "shouldGenerateSummary": true/false,
+    "itemNumber": "BIKE-DEMO",
+    "serialNumber": "BIKE-S0001",
+    "batchNumber": "",
+    "company": "USMF",
+    "trackingId": "",
     "shouldIncludeEvents": true/false
 }
 ```
@@ -342,63 +84,9 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | `serialNumber` | The serial number of the top finished good. |
 | `batchNumber` | The batch number of the top finished good. |
 | `ShouldIncludeEvents` | Controls whether event details should be included. Default is *false*. |
-
-### Single query request API response
-
-```json
-{
-    "tracingDirection": "Backward",
-    "root": {
-        "trackingId": string,
-        "next": [
-            {
-                "trackingId": string,
-                "next": [],
-                "events": []
-            }
-        ],
-        "events": [
-            {
-                "eventId": string,
-                "companyCode": string,
-                "operator": string,
-                "description": string,
-                "activityType": string,
-                "activityCode": string,
-                "datetime": YYYY-MM-DDThh:mm:ss.sssz,
-                "details": {
-                    "<data collection name>": <data collection value>
-                    },
-                "consumptionTransactions": [
-                    {
-                        "transactionId": string,
-                        "itemId": string,
-                        "trackingId": string,
-                        "eventId": string,
-                        "quantity": decimal,
-                        "unitOfMeasure": string,
-                        "transactionType": string,
-                        "batchId": string
-                    }
-                ],
-                "productTransactions": [
-                    {
-                        "transactionId": string,
-                        "itemId": string,
-                        "trackingId": string,
-                        "details": {},
-                        "eventId": string,
-                        "quantity": decimal,
-                        "unitOfMeasure": string,
-                        "transactionType": string,
-                        "serialId": string
-                    }
-                ]
-            }            
-        ]
-    }
-}
-```
+| `ShouldGenerateSummary` | Set to *True* to include the copilot summary for where-used search. |
+| `ShouldIncludeEvents` | Specify one of the following values:<ul><li>*EventIdOnly* – Put event ID as a property of the trace node.</li><li>*EventInTrace* – Put event details as a property of the trace node.</li><li>*EventInDictionary* – Put event IDs as a property of the trace node, return a map whose key is an event ID and the value is the event details.</li></ul> |
+| `TraceNodeOption` | Specify one of the following values:<ul><li>*BuildNodeGraph* – Render the result as a tree.</li><li>*BuildNodeDictionary* – Render the result as a tracking node dictionary, where the key is a tracking ID and the value is the node details.</li></ul> |
 
 ### Single query response header field descriptions
 
@@ -451,17 +139,22 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 ### Single query request example
 
-Produce finished good *A* with component *B* and *C* by different events. Query the result of finished good *A*.
+Query the result of finished goods *BIKE-S001*.
 
 #### Single query request example request payload
 
 ```json
 {
-    "tracingDirection": "Backward",
+    "tracingDirection": "Forward",
+    "eventDetailOption": "EventIdOnly",
+    "traceNodeOption": "BuildNodeDictionary",
+    "shouldGenerateSummary": false,
+    "itemNumber": "BIKE-DEMO",
+    "serialNumber": "BIKE-S0001",
+    "batchNumber": "",
     "company": "USMF",
-    "itemNumber": "A",
-    "serialNumber": "A-001",
-    "shouldIncludeEvents": "true"
+    "trackingId": "",
+    "shouldIncludeEvents": false
 }
 ```
 
@@ -469,358 +162,7 @@ Produce finished good *A* with component *B* and *C* by different events. Query 
 
 ```json
 {
-    "tracingDirection": "Backward",
-    "root": {
-        "trackingId": "A~USMF~~A-001~~",
-        "next": [
-            {
-                "trackingId": "B~USMF~B-001~~~",
-                "next": [],
-                "events": [
-                    {
-                        "eventId": "item B consumption-a8f441b3-2f15-5b92-8d84-230616113700",
-                        "companyCode": "USMF",
-                        "operator": "Terry Alvarado",
-                        "description": "Consumption for production A",
-                        "activityType": "Production",
-                        "activityCode": "Consumption",
-                        "datetime": "2023-06-15T06:14:06",
-                        "details": {
-                            "operation Step": "OP1",
-                            "resource": "RES1",
-                            "reference Location": "RES-L01"
-                        },
-                        "consumptionTransactions": [
-                            {
-                                "transactionId": "a8f441b3-2f15-5b92-8d84-230616113702",
-                                "itemId": "B",
-                                "trackingId": "B~USMF~B-001~~~",
-                                "details": {},
-                                "eventId": "item B consumption-a8f441b3-2f15-5b92-8d84-230616113700",
-                                "quantity": 1.0,
-                                "unitOfMeasure": "ea",
-                                "transactionType": "Consumption",
-                                "batchId": "B-001"
-                            }
-                        ],
-                        "productTransactions": [
-                            {
-                                "transactionId": "a8f441b3-2f15-5b92-8d84-230616113701",
-                                "itemId": "A",
-                                "trackingId": "A~USMF~~A-001~~",
-                                "details": {},
-                                "eventId": "item B consumption-a8f441b3-2f15-5b92-8d84-230616113700",
-                                "quantity": 1.0,
-                                "unitOfMeasure": "ea",
-                                "transactionType": "Product",
-                                "serialId": "A-001"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "trackingId": "C~USMF~C-001~~~",
-                "next": [],
-                "events": [
-                    {
-                        "eventId": "item C consumption-a8f441b3-2f15-5b92-8d84-230616113703",
-                        "companyCode": "USMF",
-                        "operator": "Terry Alvarado",
-                        "description": "Consumption for production A",
-                        "activityType": "Production",
-                        "activityCode": "Consumption",
-                        "datetime": "2023-06-15T07:14:06",
-                        "details": {
-                            "operation Step": "OP2",
-                            "resource": "RES2",
-                            "reference Location": "RES-L02"
-                        },
-                        "consumptionTransactions": [
-                            {
-                                "transactionId": "a8f441b3-2f15-5b92-8d84-230616113705",
-                                "itemId": "C",
-                                "trackingId": "C~USMF~C-001~~~",
-                                "details": {},
-                                "eventId": "item C consumption-a8f441b3-2f15-5b92-8d84-230616113703",
-                                "quantity": 1.0,
-                                "unitOfMeasure": "ea",
-                                "transactionType": "Consumption",
-                                "batchId": "C-001"
-                            }
-                        ],
-                        "productTransactions": [
-                            {
-                                "transactionId": "a8f441b3-2f15-5b92-8d84-230616113704",
-                                "itemId": "A",
-                                "trackingId": "A~USMF~~A-001~~",
-                                "details": {},
-                                "eventId": "item C consumption-a8f441b3-2f15-5b92-8d84-230616113703",
-                                "quantity": 1.0,
-                                "unitOfMeasure": "ea",
-                                "transactionType": "Product",
-                                "serialId": "A-001"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "events": [
-            {
-                "eventId": "item B consumption-a8f441b3-2f15-5b92-8d84-230616113700",
-                "companyCode": "USMF",
-                "operator": "Terry Alvarado",
-                "description": "Consumption for production A",
-                "activityType": "Production",
-                "activityCode": "Consumption",
-                "datetime": "2023-06-15T06:14:06",
-                "details": {
-                    "operation Step": "OP1",
-                    "resource": "RES1",
-                    "reference Location": "RES-L01"
-                },
-                "consumptionTransactions": [
-                    {
-                        "transactionId": "a8f441b3-2f15-5b92-8d84-230616113702",
-                        "itemId": "B",
-                        "trackingId": "B~USMF~B-001~~~",
-                        "details": {},
-                        "eventId": "item B consumption-a8f441b3-2f15-5b92-8d84-230616113700",
-                        "quantity": 1.0,
-                        "unitOfMeasure": "ea",
-                        "transactionType": "Consumption",
-                        "batchId": "B-001"
-                    }
-                ],
-                "productTransactions": [
-                    {
-                        "transactionId": "a8f441b3-2f15-5b92-8d84-230616113701",
-                        "itemId": "A",
-                        "trackingId": "A~USMF~~A-001~~",
-                        "details": {},
-                        "eventId": "item B consumption-a8f441b3-2f15-5b92-8d84-230616113700",
-                        "quantity": 1.0,
-                        "unitOfMeasure": "ea",
-                        "transactionType": "Product",
-                        "serialId": "A-001"
-                    }
-                ]
-            },
-            {
-                "eventId": "item C consumption-a8f441b3-2f15-5b92-8d84-230616113703",
-                "companyCode": "USMF",
-                "operator": "Terry Alvarado",
-                "description": "Consumption for production A",
-                "activityType": "Production",
-                "activityCode": "Consumption",
-                "datetime": "2023-06-15T07:14:06",
-                "details": {
-                    "operation Step": "OP2",
-                    "resource": "RES2",
-                    "reference Location": "RES-L02"
-                },
-                "consumptionTransactions": [
-                    {
-                        "transactionId": "a8f441b3-2f15-5b92-8d84-230616113705",
-                        "itemId": "C",
-                        "trackingId": "C~USMF~C-001~~~",
-                        "details": {},
-                        "eventId": "item C consumption-a8f441b3-2f15-5b92-8d84-230616113703",
-                        "quantity": 1.0,
-                        "unitOfMeasure": "ea",
-                        "transactionType": "Consumption",
-                        "batchId": "C-001"
-                    }
-                ],
-                "productTransactions": [
-                    {
-                        "transactionId": "a8f441b3-2f15-5b92-8d84-230616113704",
-                        "itemId": "A",
-                        "trackingId": "A~USMF~~A-001~~",
-                        "details": {},
-                        "eventId": "item C consumption-a8f441b3-2f15-5b92-8d84-230616113703",
-                        "quantity": 1.0,
-                        "unitOfMeasure": "ea",
-                        "transactionType": "Product",
-                        "serialId": "A-001"
-                    }
-                ]
-            }
-        ]
-    }
+    "@odata.context": "https://aurorabapenv2bbcd.crm10.dynamics.com/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.msdyn_sctquerytrace_v1Response",
+    "output": "{\"tracingDirection\":\"Forward\",\"root\":{\"trackingId\":\"BIKE-DEMO~USMF~~BIKE-S0001~~\",\"next\":[],\"nextIds\":[],\"events\":[{\"eventId\":\"2026-01-07-09~1~15~3\"},{\"eventId\":\"2026-01-07-09~1~16~3\"},{\"eventId\":\"2026-01-07-09~1~17~3\"},{\"eventId\":\"2026-01-07-09~1~18~3\"},{\"eventId\":\"2026-01-07-09~1~19~3\"},{\"eventId\":\"2026-01-07-09~1~20~3\"},{\"eventId\":\"2026-01-07-09~1~27~4\"},{\"eventId\":\"2026-01-07-09~1~29~2\"}]},\"traceNodesDictionary\":{\"BIKE-DEMO~USMF~~BIKE-S0001~~\":{\"trackingId\":\"BIKE-DEMO~USMF~~BIKE-S0001~~\",\"next\":[],\"nextIds\":[],\"events\":[{\"eventId\":\"2026-01-07-09~1~15~3\"},{\"eventId\":\"2026-01-07-09~1~16~3\"},{\"eventId\":\"2026-01-07-09~1~17~3\"},{\"eventId\":\"2026-01-07-09~1~18~3\"},{\"eventId\":\"2026-01-07-09~1~19~3\"},{\"eventId\":\"2026-01-07-09~1~20~3\"},{\"eventId\":\"2026-01-07-09~1~27~4\"},{\"eventId\":\"2026-01-07-09~1~29~2\"}]}}}"
 }
 ```
-
-## Unlink events API
-
-This API can unlink a genealogy node by inserting an unlink-component activity event. You can use it in business activities to disassemble production components, uninstall equipment, and unload containers.
-
-- **Path** – `/api/environments/{environmentId}/events/unlink-components`
-- **Method** – `POST`
-
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
-
-### Post unlink events request payload
-
-```txt
-{
-  "requestId": string,
-  "Eventlist":
-  [
-    {
-        "eventId": string,
-        "description": string,
-        "activityType": string,   # Refer to predefined "Activity Type"
-        "activityCode": string,   # Refer to configured "Activity Code" linked to "Activity Type"
-        "datetime": YYYY-MM-DDThh:mm:ss.sssz,
-        "operator": string,
-        "companyCode": string,
-        "details": {
-            "<data collection name>": <data collection value>
-            },
-        "consumptionTransactions": [
-            {
-                "transactionId": string,
-                "companyCode": string,
-                "itemId": string,   # Refer to configured "item" for tracing
-                "trackingId": string,
-                "serialId": string,
-                "batchId": string,
-                "assetId": string,
-                "lotId": string,
-                "quantity": decimal,
-                "unitOfMeasure": string
-            }
-        ],
-        "productTransactions": [
-            {
-                "transactionId": string,
-                "companyCode": string,
-                "itemId": string,   # Refer to configured "item"
-                "trackingId": string,
-                "serialId": string,
-                "batchId": string,
-                "assetId": string,
-                "lotId": string,
-                "quantity": decimal，
-                "unitOfMeasure": string
-            }
-        ]
-    }
-  ]
-}
-```
-
-### Unlink events post header field descriptions
-
-| Field Name | Description |
-|--|--|
-| `RequestId` | Random UUID. |
-| `eventId` | Unique identifier for the activity (`SerialId`/`BatchId`). Duplicate values aren't allowed. The system generates this value if none is specified. |
-| `description` | Description of the activity event. |
-| `activityType` | Refers to a predefined "Activity Type" (such as *Purchase*, *Sales*, or *Production*). |
-| `activityCode` | Refers to a configured "Activity Code" (such as *GoodsReceipt*, *Add*, or *Remove*). |
-| `dateTime` | The date and time the activity event happened. |
-| `operator` | The operator who executed the activity event. The value can be a user ID, employee ID, or similar. |
-| `companyCode` | For Supply Chain Management, this field maps to a legal entity. |
-| *&lt;data collection name&gt;* | These fields are used to collect custom values. |
-
-### Unlink events post productTransactions element field descriptions
-
-| Field Name | Description |
-|--|--|
-| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. This field can be null. |
-| `companyCode` | The legal entity of parent node. |
-| `itemId` | Item number of parent node. |
-| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
-| `serialId` | The serial number of parent node. |
-| `batchId` | The batch number of parent node. |
-| `assetId` | The asset number of parent node. This field can be used as equipment number. |
-| `lotId` | The lot number of parent node. This field can be used as container number. |
-| `quantity` | The operation quantity of parent node. |
-| `unitOfMeasure` | The unit of measure of parent node. |
-
-### Unlink events post consumptionTransactions element field descriptions
-
-| Field Name | Description |
-|--|--|
-| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. This field can be null. |
-| `companyCode` | The legal entity of child node to be removed. |
-| `itemId` | Item number of child node. |
-| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
-| `serialId` | The serial number of child node to be removed. |
-| `batchId` | The batch number of child node to be removed. |
-| `assetId` | The asset number of child node to be removed. This field can be used as equipment number. |
-| `lotId` | The lot number of child node to be removed. This field can be used as container number. |
-| `quantity` | The consumption quantity of child node to be removed. |
-| `unitOfMeasure` | The unit of measure of the removed quantity. |
-
-### Unlink events post API response
-
-On success, status code 204 is returned.
-
-### Unlink events post example
-
-This example shows how to use the unlink events post API to create a new activity with activity code *FullRemove* and activity type *Production*. The app is configured (on the **Settings** \> **Activity** page) to make the *FullRemove* activity code available to all companies. The example removes component *C* from product *A* (continuing from the example provided previously).
-
-#### Unlink events post example request payload
-
-```json
-{
-    "RequestId": "a8fbd235-f56d-4d10-b4de-9b125eb814ea",
-    "EventList": 
-    [
-        {
-            "EventId": "remove c -a8f441b3-2f15-5b92-8d84-20240821112003",
-            "CompanyCode": "USMF",
-            "Operator": "Terry Alvarado",
-            "Description": "Component Full Remove",
-            "ActivityType": "Production",
-            "ActivityCode": "FullRemove",
-            "Datetime": "2023-08-15T06:14:06.653Z",
-            "Details": {
-                "Operation Step": "OP2",
-                "Resource": "RES2",
-                "Reference Location": "RES-L02"
-            },
-            "ConsumptionTransactions": [
-                {
-                    "TransactionId": null,
-                    "ItemId": "C",
-                    "TrackingId": null,
-                    "Details": {},
-                    "Quantity": 1.0,
-                    "UnitOfMeasure": "ea",
-                    "BatchId": "C-001",
-                    "SerialId": null
-                }
-            ],
-            "ProductTransactions": [
-                {
-                    "TransactionId": null,
-                    "ItemId": "A",
-                    "TrackingId": null,
-                    "Details": {},
-                    "Quantity": 1.0,
-                    "UnitOfMeasure": "ea",
-                    "TransactionType": 0,
-                    "BatchId": null,
-                    "SerialId": "A-001"
-                }
-            ]
-        }
-    ]
-    }
-```
-
-#### Unlink events post example results
-
-If you posted the example request shown previously, the Traceability app would display the following events in the **Activities** dialog for product *A*, serial number *A-001*:
-
-- The new activity event is shown as a node identified using the description submitted to the API, which is *Component Full Remove*.
-- The node includes a section that specifies the activity, which is called *Production - FullRemove*. The name combines the activity type and activity code. More details about the activity are provided under the name.
-- The node includes two transactions, one each of *Receipts* and *Consumptions*. These transactions map to the `ConsumptionTransactions` and `ProductTransactions` elements of the request payload, respectively.
-- Each transaction contains information about a specific component affected by the activity. The result of this activity event is that component *C* from batch *C-001* was unlinked from product *A* serial number *A-001*.
-
-:::image type="content" source="../media/unlink-post-api-result-example.png" alt-text="Results of the unlink events post example, shown in the Traceability Add-in" lightbox="../media/unlink-post-api-result-example.png":::

@@ -4,7 +4,7 @@ description: Learn how to add knowledge to agents for finance and operations app
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 10/08/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -29,7 +29,7 @@ Also, enable Microsoft Dataverse virtual entities and make them visible for the 
 
 ## Scenario 1: On-hand inventory
 
-In this scenario, you add virtual entities to an agent that enable the agent to reply to questions about on-hand inventory. 
+In this scenario, you add virtual entities to an agent that enable the agent to reply to questions about on-hand inventory.
 
 - You add a knowledge source to the agent in Copilot Studio.
 - You query the agent in natural language about on-hand inventory, receiving responses based on the provided knowledge.
@@ -48,7 +48,8 @@ The knowledge source is then added to the agent. Once they're ready to use, the 
 
 ### Step 2: Test the new capability in Copilot
 
-You can now test the knowledge source in your agent. 
+You can now test the knowledge source in your agent.
+
 1. In Copilot Studio, go to the **Knowledge** tab and open the **Inventory on hand for AI (mserp)** knowledge source.
 1. Select **Preview** to view some of the data available in the virtual entity.
 1. In the chat experience for your agent, ask questions related to the knowledge source. For example:
@@ -76,6 +77,7 @@ The knowledge source is now added to your agent. When the source is ready to use
 ### Step 2: Test the new capability in Copilot
 
 Query the agent to retrieve customer information in natural language.
+
 1. In Copilot Studio, go to **Knowledge** > **Customers**.
 1. Select **Preview** to view some of the data available in the virtual entity.
 1. In the chat experience for your agent, ask questions related to the knowledge source. For example:

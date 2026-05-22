@@ -30,6 +30,18 @@ Here are some of the key benefits of Business performance analytics:
 - **Security and compliance** – Because it's built on Microsoft's trusted cloud infrastructure, Business performance analytics ensures that your data is protected through advanced security measures. Therefore, it helps you stay compliant with industry standards.
 - **Flexibility for business growth** – Because Business performance analytics is fully customizable and extensible, it adapts to the specific needs of your business and scales as you grow. Therefore, it supports long-term success.
 
+## AI-powered analytics with ERP Analytics MCP (preview)
+
+The [Dynamics 365 ERP Analytics MCP server](erp-analytics-mcp-overview.md) enables AI agents to access and analyze Business performance analytics data through natural language. By connecting AI agents to Business performance analytics's dimensional models through the Model Context Protocol, users can ask analytical questions in plain language and receive data-driven insights without writing queries or navigating complex reporting interfaces.
+
+Key capabilities include:
+- Natural language queries against Business performance analytics data.
+- Dynamic generation of DAX queries by AI agents.
+- Row-level security enforcement based on user roles.
+- Seamless integration with agent platforms like Visual Studio Code and Microsoft Copilot Studio.
+
+Learn more at [Dynamics 365 ERP Analytics MCP for finance and operations apps (preview)](erp-analytics-mcp-overview.md).
+
 ## Business performance analytics as an SaaS solution
 
 By using Business performance analytics as a software as a service (SaaS) solution, Dynamics 365 customers can quickly and efficiently take advantage of advanced analytics. Business performance analytics improves decision-making and operational efficiency, and drives better outcomes. At the same time, it avoids the complexity of deep system integrations.
@@ -73,7 +85,7 @@ Business performance analytics is an innovative reporting tool that is included 
 
 ## Data reporting capacity
 
-Customers who use Business performance analytics are currently entitled to report on up to eight quarters of data. The volume of data is also constrained by the storage capacity of the A3 SKU for Power BI Embedded. Customers that can't fit their data within the constraints of the Power BI A3 SKU should consider waiting for a future release, where additional data reporting capacity will be available. That future release will expand the data limits, so that larger data sets can be reported and analyzed.
+Customers who use Business performance analytics are currently entitled to report on up to eight quarters of data. The volume of data is also constrained by the storage capacity of the A6 SKU for Power BI Embedded. Customers that can't fit their data within the constraints of the Power BI A6 SKU should consider waiting for a future release, where additional data reporting capacity will be available. That future release will expand the data limits, so that larger data sets can be reported and analyzed.
 
 ## Data refresh frequency
 

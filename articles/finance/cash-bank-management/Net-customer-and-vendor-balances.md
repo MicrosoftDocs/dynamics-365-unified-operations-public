@@ -4,7 +4,7 @@ description: Learn about customer and vendor balance netting in Microsoft Dynami
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 02/18/2025
+ms.date: 01/26/2026
 ms.custom:
 ms.search.form: 
 ms.reviewer: twheeloc
@@ -44,10 +44,10 @@ A netting agreement lets you maintain the pairs of customer accounts and vendor 
 
 ## Manual netting
 
-You can manually net customer and vendor balances by selecting the open customer invoices and vendor invoices. The system automatically calculates the minimal amount between the customer invoice balance and the vendor invoice balance as the netting amount. A netting journal that has two journal lines is automatically posted. One journal line automatically settles the selected customer invoices, and the other line automatically settles the selected vendor invoices.
+You can manually net customer and vendor balances by selecting the open customer invoices and vendor invoices. The minimal amount is automatically calculated between the customer invoice balance and the vendor invoice balance as the netting amount. A netting journal that has two journal lines is automatically posted. One journal line automatically settles the selected customer invoices, and the other line automatically settles the selected vendor invoices.
 
 1. Go to **Cash and bank management** \> **Netting** \> **Customer and vendor balances netting**.
-2. The page shows all the pairs of customer accounts and vendor accounts that are available for netting. Select a pair, and then select **Create Netting**.
+2. The page shows all the pairs of customer accounts and vendor accounts that are available for netting. Select a pair, and then select **Create netting**.
 3. Select the open customer invoices and open vendor invoices that you want to net, and then select **Post**.
 
 ## Automatic netting
@@ -78,9 +78,20 @@ There are three ways to run automatic netting.
 - Trigger a one-time automatic netting by selecting **Automatic netting** on the **Netting** menu in the **Cash and bank management** module.
 - Schedule periodic automatic netting by selecting **Process automation** on the **Netting** menu in the **Cash and bank management** module.
 
+> [!NOTE]
+> The manual or automatic netting functionality is designed to run before a payment journal is created. This ensures that customer and vendor balances are finalized prior to initiating payment posting. The expected flow is as follows:
+1. Perform netting to calculate final balances between customers and vendors, leaving only the remaining open amounts for settlement.
+2. Create the payment journal with transactions for the remaining amounts.
+3. Submit and post the payment, updating vendor and customer balances accordingly.
+4. Review balances after posting to confirm accuracy.
+5. Repeat the process before each payment run.
+
+> [!IMPORTANT]
+> Transactions already included in a payment journal aren't part of the current netting functionality. To help users verify which transactions are marked for settlement, users can use **Accounts payable** > **Periodic tasks** > **All marked transaction details** report.
+
 ## Reverse netting
 
-You can reverse posted netting transactions by selecting **Reverse netting** on the **Netting history** page. This function automatically unsettles the selected customer invoices, unsettles the selected vendor invoices, and reverses the posted netting journal.
+You can reverse posted netting transactions by selecting **Reverse netting** on the **Netting history** page. This function automatically unsettles the selected customer and vendor invoices, and reverses the posted netting journal.
 
 1. Go to **Cash and bank management** \> **Netting** \> **Customer and vendor balances netting**.
 2. Select **Netting history**.
@@ -88,7 +99,7 @@ You can reverse posted netting transactions by selecting **Reverse netting** on 
 
 ## View netting history and print netting advice
 
-You can see the cleared netting pairs during manual and automatic netting for selected netting agreement in the **Netting history** page. You can print netting advice for selected customer invoices and vendor invoices. The advice can then be shared with the customer or vendor as a notification for netting.
+You can see the cleared netting pairs during manual and automatic netting for selected **Netting agreement** in the **Netting history** page. You can print netting advice for selected customer invoices and vendor invoices. The advice can then be shared with the customer or vendor as a notification for netting.
 
 1. Go to **Cash and bank management** \> **Netting** \> **Customer and vendor balances netting**.
 2. Select **Netting history**.
@@ -113,7 +124,7 @@ To create an intercompany netting agreement for customers and vendors in differe
 
 In each intercompany netting agreement, every posting generates three vouchers: two in the legal entity that holds the agreement and one in the counterparty legal entity.
 
-Here is an example of the vouchers that are generated. For this example, USMF is the legal entity that holds the agreement, and DEMF is the counterparty legal entity.
+Here's an example of the vouchers that are generated. For this example, USMF is the legal entity that holds the agreement, and DEMF is the counterparty legal entity.
 
 | USMF - Netting000000001 | DR     | CR     |
 |-------------------------|--------|--------|
@@ -132,4 +143,6 @@ Here is an example of the vouchers that are generated. For this example, USMF is
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
 

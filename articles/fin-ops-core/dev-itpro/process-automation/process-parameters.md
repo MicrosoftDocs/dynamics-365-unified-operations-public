@@ -4,7 +4,7 @@ description: Learn about how to implement custom parameters in the process autom
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Developer
@@ -161,7 +161,8 @@ Implement the **ProcessScheduleIDeleteOccurrence** interface to receive an event
 
 This interface is invoked via **SysPlugIn** for a specific type. Use the type name that was created when the type was registered.
 
-Note that a Microsoft Azure SQL Database temp table is passed in so that you can do set-based deletes.
+> [!NOTE]
+> A Microsoft Azure SQL Database temp table is passed in so that you can do set-based deletes.
 
 ```xpp
 using System.ComponentModel.Composition;

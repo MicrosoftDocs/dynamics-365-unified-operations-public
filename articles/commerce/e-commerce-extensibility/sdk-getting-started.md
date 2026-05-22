@@ -1,11 +1,10 @@
 ---
 title: Get started with e-commerce online extensibility development
-description: This article provides an overview to help you get started developing e-commerce customizations using the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+description: This article provides an overview of e-commerce customization development using the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 05/28/2024
-ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.date: 02/05/2026
+ms.topic: overview
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -18,9 +17,9 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview to help you get started developing e-commerce customizations using the Microsoft Dynamics 365 Commerce online software development kit (SDK)..
+This article provides an overview of e-commerce customization development using the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
-You can use the Commerce online SDK to develop and debug e-commerce [modules](modules-overview.md), [data actions](data-actions.md), and [themes](theming.md). It can be installed and used in any Windows 10 environment, and doesn't require a deployed Commerce environment. However, it can also be useful to connect to a live cloud environment (for example, "Dev," "Test," "UAT," or "Prod"). In this way, you can do deeper debugging and test changes against a cloud environment without having to deploy or destabilize the environment.
+Use the Commerce online SDK to develop and debug e-commerce [modules](modules-overview.md), [data actions](data-actions.md), and [themes](theming.md). You can install and use it in any Windows 10 environment, and it doesn't require a deployed Commerce environment. However, it can also be useful to connect to a live cloud environment (for example, "Dev," "Test," "UAT," or "Prod"). By using this approach, you can perform deeper debugging and test changes against a cloud environment without having to deploy or destabilize the environment.
 
 The typical process when you extend the Commerce platform includes the following actions:
 
@@ -35,7 +34,7 @@ The typical process when you extend the Commerce platform includes the following
 
 ## Architectural overview
 
-Before you start Commerce extensibility development, we recommend that you learn about the Commerce architecture. The [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) and [E-commerce architectural overview](architectural-overview.md) articles are great places to start. Additionally, the [E-commerce components](ecommerce-components.md) article provides an overview of the main extensible e-commerce components, such as modules, data actions, and themes.
+Before you start Commerce extensibility development, learn about the Commerce architecture. The [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) and [E-commerce architectural overview](architectural-overview.md) articles are great places to start. Additionally, the [E-commerce components](ecommerce-components.md) article provides an overview of the main extensible e-commerce components, such as modules, data actions, and themes.
 
 ## Set up a local online SDK development environment
 
@@ -45,11 +44,11 @@ Before you set up a development environment, make sure that your environment mee
 
 ### Install development tools and the online SDK
 
-Commerce development uses some free open-source tools, such as Node.js for the JavaScript runtime, Yarn for dependency management, and Visual Studio Code for source editing. For detailed information about how to install each of these tools, see [Set up a development environment](setup-dev-environment.md). That article also explains how to run a Node app to test and preview modules that are under development, and describes the [command-line interface (CLI) tools](cli-command-reference.md) that are used to create and clone a module.
+Commerce development uses some free open-source tools, such as Node.js for the JavaScript runtime, Yarn for dependency management, and Visual Studio Code for source editing. For detailed information about how to install each of these tools, see [Set up a development environment](setup-dev-environment.md). The article also explains how to run a Node app to test and preview modules that are under development, and describes the [command-line interface (CLI) tools](cli-command-reference.md) that are used to create and clone a module.
 
 ## Develop against a cloud-hosted Commerce environment
 
-The online SDK lets you develop and debug modules, data actions, and themes without having to use a deployed Commerce environment. There might be scenarios where you must debug your live e-commerce website or test configuration changes against a live [cloud environment](../../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#environments), such as a "Dev," "Test," "UAT," or "Prod" environment. This section explains how to configure your development environment against a cloud-hosted Commerce environment.
+The online SDK lets you develop and debug modules, data actions, and themes without having to use a deployed Commerce environment. However, you might need to debug your live e-commerce website or test configuration changes against a live [cloud environment](../../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#environments), such as a "Dev," "Test," "UAT," or "Prod" environment. This section explains how to configure your development environment against a cloud-hosted Commerce environment.
 
 ### Configure the SDK environment .env file
 
@@ -57,13 +56,13 @@ The online SDK includes an .env file in the root folder. This file has several e
 
 ### Configure against a cloud environment
 
-For detailed information about how to configure the .env file so that it points to a cloud environment, see [Debug against a tier 1 Commerce development environment](debug-tier-1.md). That article also provides guidance that will help you set the correct URL for each variable in the .env file.
+For detailed information about how to configure the .env file so that it points to a cloud environment, see [Debug against a tier 1 Commerce development environment](debug-tier-1.md). That article also provides guidance that helps you set the correct URL for each variable in the .env file.
 
-There are two main scenarios that you can set up. In the first, you point the .env file to a cloud Retail Server, and in the second, you point it to a cloud e-commerce site.
+You can set up two main scenarios. In the first scenario, you point the .env file to a cloud Retail Server. In the second scenario, you point it to a cloud e-commerce site.
 
 #### Configure against a cloud-hosted Retail Server
 
-By configuring a development environment so that it points to a cloud-hosted Retail Server, you can debug modules and data actions against live data. After the server is configured, all data action calls go directly to it and pass real data back to your development environment. This setup gives you a great way to see how a module will be rendered. Otherwise, you must use mock data to render your modules. For more information, see [Test modules with mock data](test-module-mock.md) and [Test data action with mocks](test-data-action-mocks.md).
+If you configure a development environment to point to a cloud-hosted Retail Server, you can debug modules and data actions against live data. After you configure the server, all data action calls go directly to it and pass real data back to your development environment. This setup gives you a great way to see how a module is rendered. Otherwise, you must use mock data to render your modules. For more information, see [Test modules with mock data](test-module-mock.md) and [Test data action with mocks](test-data-action-mocks.md).
 
 The .env file contains a **MsDyn365Commerce_BASEURL** variable that must point to the URL of a cloud-based Retail Server. Additionally, you must point to a specific channel and channel operating unit number (OUN).
 
@@ -83,9 +82,9 @@ MSDyn365Commerce_OUN=128
 
 #### Configure against a cloud-hosted e-commerce site
 
-You can also configure a development environment so that it points to a cloud-hosted e-commerce site. In this way, e-commerce pages that are created in Commerce site builder can be rendered in the local environment under the local Node.js JavaScript server. This setup is useful because you can test changes to modules, data actions, and themes against live pages without affecting the live site. For example, you can test module view changes that you've made locally for any e-commerce page, without affecting the live e-commerce site or customer views of it.
+You can also configure a development environment so that it points to a cloud-hosted e-commerce site. In this way, e-commerce pages that are created in Commerce site builder can render in the local environment under the local Node.js JavaScript server. This setup is useful because you can test changes to modules, data actions, and themes against live pages without affecting the live site. For example, you can test module view changes that you made locally for any e-commerce page, without affecting the live e-commerce site or customer views of it.
 
-Commerce site pages are stored in the Commerce content management system (CMS) as JavaScript Object Notation (JSON) files that can be saved and used as mock files. The JSON files contain the breakdown of modules and their configuration values. Those configuration values are used to render pages. In this scenario, the local development environment renders the local modules. Therefore, you can quickly test and iterate your changes.
+Commerce site pages are stored in the Commerce content management system (CMS) as JavaScript Object Notation (JSON) files that you can save and use as mock files. The JSON files contain the breakdown of modules and their configuration values. Those configuration values are used to render pages. In this scenario, the local development environment renders the local modules. Therefore, you can quickly test and iterate your changes.
 
 For information about how to use page mocks to test modules, see [Test modules by using page mocks](test-page-mock.md). That article includes information about how to create a page mock from a live page by using the **?item=nodeserviceproxy:true** query string parameter.
 
@@ -104,11 +103,11 @@ For more information about how to set up the **MSDyn365_HOST** variable so that 
 
 ## Change modules, data actions, and themes
 
-After you've set up a Commerce development environment, you're ready to build custom [modules](create-new-module.md), [data actions](data-actions.md), and [themes](create-theme.md).
+After you set up a Commerce development environment, you're ready to build custom [modules](create-new-module.md), [data actions](data-actions.md), and [themes](create-theme.md).
 
 ## Package creation and deployment
 
-After you've completed all your changes, you can build a zip file package and upload it to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/). You can then see all your changes in the cloud-hosted environment that the package was deployed to. For more information and instructions, see [Package configurations and deploy them to an online environment](package-deploy.md).
+After you complete all your changes, you can build a zip file package and upload it to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/). You can then see all your changes in the cloud-hosted environment that the package was deployed to. For more information and instructions, see [Package configurations and deploy them to an online environment](package-deploy.md).
 
 ## Additional resources
 

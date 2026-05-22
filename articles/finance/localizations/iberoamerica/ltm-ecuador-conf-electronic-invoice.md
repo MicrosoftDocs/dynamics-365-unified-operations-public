@@ -2,7 +2,7 @@
 title: Configure electronic invoice parameters for Ecuador
 description: Learn how to configure electronic invoice parameters for Ecuador.
 author: Fhernandez0088
-ms.date: 01/22/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

@@ -4,7 +4,7 @@ description: Learn about how to configure field lists for Latin America, includi
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Field list configuration for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 You can create lists that are used to provide required information that's related to Latin America (LATAM) on transactions. These lists are used in the **LATAM** section of multiple transaction posting pages, including the pages for invoices, packing slips, and journals. For every transaction, you can select an option in each list, based on the configuration of the document class that's used in the transaction.
 
@@ -26,19 +28,19 @@ Before you complete the procedures in this article, enable the **LATAM Globaliza
 This procedure shows how to create a custom field list.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Fields master List**.
-2. Select **New** to create a list. 
-3. In the **General** section, in the **Name** field, enter a descriptive name for the list.
-4. In the **Reference code** section, select **New** to add an item to the list.
-5. In the **Reference code** field, enter or select the code that's provided by the fiscal authority.
-6. In the **Description** field, enter a brief explanation of the item.
+1. Select **New** to create a list. 
+1. In the **General** section, in the **Name** field, enter a descriptive name for the list.
+1. In the **Reference code** section, select **New** to add an item to the list.
+1. In the **Reference code** field, enter or select the code that's provided by the fiscal authority.
+1. In the **Description** field, enter a brief explanation of the item.
 
 ## Add information required by the fiscal authorities
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Fields master List**.
-2. Select a list, and then, on the Action Pane, select **Tax application**.
-3. Select **New**.
-4. On the new line, in the **Tax application Id.** field, select a value.
-5. In the **Tax application code** field, enter the code that the fiscal authority uses to identify the document class type.
-6. Select **Save**.
+1. Select a list, and then, on the Action Pane, select **Tax application**.
+1. Select **New**.
+1. On the new line, in the **Tax application Id.** field, select a value.
+1. In the **Tax application code** field, enter the code that the fiscal authority uses to identify the document class type.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

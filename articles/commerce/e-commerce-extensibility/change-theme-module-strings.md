@@ -1,11 +1,10 @@
 ---
 title: Change theme module strings
-description: This article describes how to change module library strings from within a theme in Microsoft Dynamics 365 Commerce.
+description: Learn how to change module library strings from within a theme in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 01/30/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -18,7 +17,7 @@ ms.custom:
 
 This article describes how to change module library strings from within a theme in Microsoft Dynamics 365 Commerce.
 
-In some cases, modules expose strings that are shown as configurations in a module that can be configured in Commerce site builder. However, other strings, such as the text that is shown for the sign-in button, might be hardcoded as module resource strings.
+In some cases, modules expose strings as configurations in a module that you can configure in Commerce site builder. However, other strings, such as the text that appears for the sign-in button, might be hardcoded as module resource strings.
 
 ## Override resource strings for a theme
 
@@ -56,7 +55,7 @@ For custom or local themes, use **\_\_local\_\_** as the theme namespace. The fo
 ```
 
 > [!NOTE]
-> For [shared themes](extend-theme.md), child themes inherit all the resources string overrides that are linked to the parent theme.
+> For [shared themes](extend-theme.md), child themes inherit all the resource string overrides that are linked to the parent theme.
 
 ## Additional resources
 

@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/24/2025
+ms.date: 03/02/2026
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
 ms.search.validFrom: 2023-04-10
@@ -17,11 +17,11 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about the regulatory reports for Belgium that are available for legal entities that use multiple value-added tax (VAT) registration numbers functionality. For more information about **Multiple VAT registration numbers** functionality, the prerequisites that must be met before it's used, and the required setup, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md)
+This article provides information about the regulatory reports for Belgium that are available for legal entities that use multiple value-added tax (VAT) registration numbers functionality. For more information about **Multiple VAT registration numbers** functionality, the prerequisites that must be met before it's used, and the required setup, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 
 For general information about reporting for multiple VAT registrations, see [Reporting for multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md).
 
-When your legal entity is configured for reporting for multiple VAT registrations, the following reports are available for reporting for Belgium.
+When you configure your legal entity for reporting for multiple VAT registrations, the following reports are available for reporting for Belgium.
 
 | Report name     | Release | Electronic reporting (ER) format, version                |
 |-----------------|---------|-----------------------------------|

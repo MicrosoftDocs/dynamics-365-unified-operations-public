@@ -4,7 +4,7 @@ description: Learn about how to create a series for the process automation frame
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Developer

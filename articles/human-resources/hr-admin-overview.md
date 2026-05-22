@@ -27,6 +27,7 @@ ms.dyn365.ops.version: Human Resources
 # Administration overview
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 

@@ -4,7 +4,7 @@ description: Access instructions for upgrading your finance and operations appli
 author: laneswenka
 ms.author: laswenka
 ms.topic: upgrade-and-migration-article
-ms.date: 11/01/2021
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak 
 audience: Developer
 ms.search.region: Global
@@ -62,15 +62,16 @@ In Tier 2 or higher environments, including Production, you will run through the
 ## Select the correct data upgrade deployable package
 
 To obtain the latest data upgrade deployable package for a target environment that is running the latest update, download it from the Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+
 1. Sign in to [LCS](https://lcs.dynamics.com/).
-2. Select the **Shared asset** library tile.
-3. In the Shared asset library, under **Select asset type**, select **Software deployable package**.
-4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
+1. Select the **Shared asset** library tile.
+1. In the Shared asset library, under **Select asset type**, select **Software deployable package**.
+1. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
 
     - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example, **AX2012DataUpgrade-10-0**.
     - If you're upgrading from a previous release to the latest 10.0.X release, the package name is  **DataUpgrade-10-0**. 
     - If you're upgrading from a previous release to a preview release, the package name contains PREVIEW. For example, **DataUpgrade-10-0-2-PREVIEW**.
-5. Select the package that corresponds to the release that you are upgrading to. 
+1. Select the package that corresponds to the release that you are upgrading to.  
 
 ## Upgrade the database
 
@@ -78,24 +79,24 @@ To obtain the latest data upgrade deployable package for a target environment th
    > [!NOTE] 
    > Skip this step if this is a development environment that is connected to LCS and you are planning to execute the data upgrade process directly from LCS.
 
-2. Import or restore a backup of the source database (the database that you will be upgrading) to the demo or development environment that is already running the latest update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
+1. Import or restore a backup of the source database (the database that you will be upgrading) to the demo or development environment that is already running the latest update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
 
     > [!NOTE]
     > If you are validating the data upgrade of your production database running on the earlier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Export a copy of the standard user acceptance testing (UAT) database](../database/dbmovement-scenario-exportuat.md).   
     > 
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](/azure/storage/common/storage-use-azcopy-v10).
 
-3. Rename the original database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
+1. Rename the original database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
 
     ```sql
     ALTER DATABASE <original Dynamics 365 database> MODIFY NAME = <original Dynamics 365 database>_ORIG
     ALTER DATABASE imported_new MODIFY NAME = <original Dynamics 365 database>
     ```
 
-4. Create a backup of the source database, in case you have to revert to it. This step is important because the following steps will modify the source database.
+1. Create a backup of the source database, in case you have to revert to it. This step is important because the following steps will modify the source database.
 
-5. Execute the data upgrade package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package. For detailed instructions, see [Install deployable packages from the command line](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology). Start at the section titled **Generate a runbook from the topology** then execute the steps in the section 
-**Install a deployable package**. 
+1. Execute the data upgrade package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package. For detailed instructions, see [Install deployable packages from the command line](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology). Start at the section titled **Generate a runbook from the topology** then execute the steps in the section 
+**Install a deployable package**.  
 
 > [!NOTE]
 > If you are upgrading a database on a development environment, you can instead execute the data upgrade package directly from the LCS environment page, using the **Maintain > Apply Updates** servicing functionality. This does not require the user to be a local Administrator on the development VM. This is available as of the [February](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/) release of LCS. 
@@ -353,7 +354,7 @@ This error is caused by a failure in the pre-sync or the post-sync substep of th
     - If the top file is named **dbUpgrade*PreSync*Monitor.error.log**, the pre-sync substep failed.
     - If the top file is named **dbUpgrade*PostSync*Monitor.error.log**, the post-sync substep failed.
 
-2. In Management Studio, run the following **SELECT** statement.
+1. In Management Studio, run the following **SELECT** statement.
 
     ```sql
     SELECT * FROM RELEASEUPDATELOG

@@ -4,7 +4,7 @@ description: Learn how to extend decimal point precision for selected data types
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: concept-article
-ms.date: 09/24/2019
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global

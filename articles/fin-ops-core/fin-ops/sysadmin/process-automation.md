@@ -4,7 +4,7 @@ description: Learn about how process automation allows simple scheduling of proc
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/10/2026
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,28 +18,28 @@ ms.dyn365.ops.version: AX 10.0.11
 
 [!include[banner](../../../finance/includes/banner.md)]
 
-Process automation allows simple scheduling of processes that will be run by the batch server. The updated calendar view of the scheduled work allows end users to view and take action on scheduled and completed work.
+Process automation makes it easy to schedule processes that the batch server runs. The updated calendar view of the scheduled work lets end users view and take action on scheduled and completed work.
 
 ## Administration
 
-The central administration page for all process automations is found in the System Administration module under the **Setup** menu. This page will list all automated processes (series) that are set up in the system. It will also allow you to add new process automations directly from this page. After a series is set up, you can manage each series from this list. You can choose to edit the entire series, delete it, view all occurrences in a list view, or disable the series if you would like to pause the scheduled work for a while.
+You can find the central administration page for all process automations in the System Administration module under the **Setup** menu. This page lists all automated processes (series) that are set up in the system. You can also add new process automations directly from this page. After you set up a series, you can manage each series from this list. You can choose to edit the entire series, delete it, view all occurrences in a list view, or disable the series if you want to pause the scheduled work.
 
-Use the **Background processes** tab on this page to administer any background processes that are running in your environment. Select **Edit** to make schedule changes for any background process. These changes can include a sleep time period that will cause the process to "sleep" or pause running for a specified period each day. Select **View most recent results** to view the execution results for each background process.
+Use the **Background processes** tab on this page to administer any background processes that are running in your environment. Select **Edit** to make schedule changes for any background process. These changes can include a sleep time period that causes the process to pause running for a specified period each day. Select **View most recent results** to view the execution results for each background process.
 
-Any processes that are disabled in feature management won't show when the feature is disabled. Additionally, the process automation scheduling engine won't schedule any occurrences or background processes for a disabled feature. Re-enabling the feature will cause any scheduled occurrences or background processes in the past to run immediately. The process automation scheduling engine relies on the system batch job, **Process automation polling system job** to run. The job shouldn't be altered or tampered with at any time. If this batch job isn't running, or it's in an error state, select **Initialize process automation** to reset the batch job. This reset ensures that any new automations released in a more recent version of the application are initialized.
+When you disable a process in feature management, it doesn't show in the list. Also, the process automation scheduling engine doesn't schedule any occurrences or background processes for a disabled feature. When you re-enable the feature, the process automation scheduling engine runs any scheduled occurrences or background processes that are in the past immediately. The process automation scheduling engine relies on the system batch job, **Process automation polling system job**, to run. Don't alter or tamper with this job. If this batch job isn't running, or it's in an error state, select **Initialize process automation** to reset the batch job. This reset ensures that the system initializes any new automations introduced in a more recent version of the application.
 
 ## Calendar view
 
-One of the key benefits of process automation is the ability to see the scheduled work in a simple calendar view.  This view allows you to see work for a week at a time. You'll see this view on the right side of the **Process automation** page. It will be populated with the scheduled work for the selected series.
+One of the key benefits of process automation is the ability to see the scheduled work in a simple calendar view.  This view allows you to see work for a week at a time. You see this view on the right side of the **Process automation** page. It populates with the scheduled work for the selected series.
 
-[![Process automation calendar.](../../dev-itpro/sysadmin/media/CalendarView2.png)]
+:::image type="content" source="../../dev-itpro/sysadmin/media/CalendarView2.png" alt-text="Screenshot of the process automation calendar view.":::
 
 ## Occurrence changes
 
-Each occurrence can be modified without impacting other occurrences defined by the series that originated them. Occurrences of scheduled work can be edited from the calendar view by selecting the **View/Edit** button and selecting **Occurrence**. This page allows you access to all the settings originally shown in the series setup wizard and provides the ability to make a one-off change for the selected occurrence. An occurrence of scheduled work can also be turned off by selecting the **Disable** button from the calendar view.
+You can modify each occurrence without impacting other occurrences defined by the series that originated them. You can edit occurrences of scheduled work from the calendar view by selecting the **View/Edit** button and selecting **Occurrence**. This page provides access to all the settings originally shown in the series setup wizard and provides the ability to make a one-off change for the selected occurrence. You can also turn off an occurrence of scheduled work by selecting the **Disable** button from the calendar view.
 
 ## Developer documentation
 
-The process automation framework allows developers to extend the process automation framework. The [Process automation framework](../../dev-itpro/process-automation/process-automation-framework.md) documentation provides information about how you can create custom processes that you require to be run by the batch server scheduled with the process automation wizard and appear in the calendar view automatically.
+By using the process automation framework, developers can extend the process automation framework. The [Process automation framework](../../dev-itpro/process-automation/process-automation-framework.md) documentation provides information about how you can create custom processes that you require to be run by the batch server scheduled by using the process automation wizard and appear in the calendar view automatically.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

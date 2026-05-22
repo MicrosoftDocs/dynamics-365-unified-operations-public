@@ -4,7 +4,7 @@ description: Learn about how to configure parallel branches in a workflow, inclu
 author: ChrisGarty
 ms.author: cgarty
 ms.topic: how-to
-ms.date: 06/20/2017
+ms.date: 03/10/2026
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -18,25 +18,25 @@ ms.assetid: dfdae2b8-6a4f-4760-b339-b755c66f3f89
 
 [!include [banner](../includes/banner.md)]
 
-To configure a parallel branch, complete the following procedures in the workflow editor.
+To configure a parallel branch, use the workflow editor.
 
-A parallel branch is essentially a workflow that runs in the context of a parent workflow.
+A parallel branch is a workflow that runs in the context of a parent workflow.
 
 ## Name a branch
 
 Follow these steps to enter a name for a parallel branch.
 
-1. Right-click the parallel branch, and then click **Properties**. The **Properties** form is displayed.
-2. In the left pane, click **Basic Settings**.
-3. In the **Name** field, enter a unique name for the parallel branch.
-4. Click **Close**.
+1. Right-click the parallel branch, and then select **Properties**. The **Properties** form appears.
+1. In the left pane, select **Basic Settings**.
+1. In the **Name** field, enter a unique name for the parallel branch.
+1. Select **Close**.
 
 ## Design and configure the elements of a branch
 
 Follow these steps to design and configure the elements of a parallel branch.
 
 1. Double-click the parallel branch.
-2. Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow. For more information, see [Create workflows overview](create-workflow.md).
+1. Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow. For more information, see [Create workflows overview](create-workflow.md).
 
 ## Additional resources
 

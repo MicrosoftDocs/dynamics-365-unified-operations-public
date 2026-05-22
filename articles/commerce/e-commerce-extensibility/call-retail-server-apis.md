@@ -1,11 +1,10 @@
 ---
 title: Call Commerce Scale Unit APIs
-description: This article explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
+description: Learn how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
 author: samjarawan
-ms.date: 08/02/2024
+ms.date: 02/20/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -18,17 +17,15 @@ ms.custom:
 
 This article explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
 
-To call Commerce Scale Unit APIs, you must use the Retail Server proxy library that the Commerce online software development kit (SDK) provides. This proxy library is also known as TypeScriptProxy or TSProxy. It allows for streamlined communication with the Commerce Scale Unit from JavaScript-based or TypeScript-based environments.
+To call Commerce Scale Unit APIs, use the Retail Server proxy library that the Commerce online software development kit (SDK) provides. This proxy library is also known as TypeScriptProxy or TSProxy. It streamlines communication with the Commerce Scale Unit from JavaScript-based or TypeScript-based environments.
 
 ## Install the Retail Server proxy
 
-
-The Retail Server proxy is available for download via the Dynamics 365 NPM feed and should be added by default. If it isn't there, you can get it by adding a reference in the package.json file.
-
+You can download the Retail Server proxy from the Dynamics 365 Node Package Manager (NPM) feed. It should be added by default. If it isn't, add a reference in the `package.json` file.
 
 To install the proxy in your software development kit (SDK) development environment, follow these steps:
 
-1. Determine your current active version of Retail Server. This version will be the version of the Retail Server NuGet package that you use for back-end extensibility.
+1. Determine your current active version of Retail Server. This version is the version of the Retail Server NuGet package that you use for back-end extensibility.
 1. In the **package.json** file, add the following entry in the **dependencies** section. (This entry might already be present and have up-to-date version information.)
 
     ```json
@@ -37,11 +34,11 @@ To install the proxy in your software development kit (SDK) development environm
 
 1. Run **yarn install**.
 
-You should now have access to the correct Retail Server proxy for your project. You might see that a reference is already included as part of the module library.
+You now have access to the correct Retail Server proxy for your project. You might see that a reference is already included as part of the module library.
 
 ## Retail Server proxy data action managers
 
-The Retail Server proxy contains a set of APIs that communicate internally with Commerce Scale Unit via HTTP. These APIs are all available through a set of data action managers. To import the code for these data action managers, you can use the following import paths.
+The Retail Server proxy includes a set of APIs that communicate internally with Commerce Scale Unit through HTTP. You can access these APIs through data action managers. To import the code for these data action managers, use the following import paths.
 
 ```typescript
 // Generic example
@@ -51,7 +48,7 @@ import {} from '@msdyn365-commerce/retail-proxy/dist/DataActions/{DATA_ACTION_MA
 import { getByIdsAsync } from '@msdyn365-commerce/retail-proxy/dist/DataActions/ProductsDataActions.g';
 ```
 
-The following data action managers are available:
+The available data action managers include:
 
 - CartsDataActions
 - CatalogsDataActions
@@ -77,21 +74,21 @@ For a list of all the available Retail Server APIs in each data action manager, 
 
 ## Retail Server proxy data methods
 
-The Retail Server proxy is closely linked to the [Data Action Framework](data-actions.md). Therefore, for every Commerce Scale Unit API, there are two exposed Retail Server proxy methods:
+The Retail Server proxy is closely linked to the [Data Action Framework](data-actions.md). Therefore, for every Commerce Scale Unit API, two Retail Server proxy methods are available:
 
-- **The createInput method** – This method creates an **IActionInput** class that can be used either to run a [page load data action](page-load-data-action.md), or to do a direct state update or fetch via the **actionContext.update()** or **actionContext.get()** methods. This method is always named **create{RETAIL\_SERVER\_API\_NAME}Input**.
-- **The action method** – This method can be invoked on its own as an [event-based data action](event-based-data-actions.md), or it can be added inside another action method to create a [data action chain](chain-data-actions.md). This method is always named **{RETAIL\_SERVER\_API\_NAME}Async**.
+- **The createInput method** – This method creates an **IActionInput** class that you can use to run either a [page load data action](page-load-data-action.md) or a direct state update or fetch via the **actionContext.update()** or **actionContext.get()** methods. The method is always named **create{RETAIL\_SERVER\_API\_NAME}Input**.
+- **The action method** – You can invoke this method on its own as an [event-based data action](event-based-data-actions.md), or you can add it inside another action method to create a [data action chain](chain-data-actions.md). The method is always named **{RETAIL\_SERVER\_API\_NAME}Async**.
 
 ## Create a page load Retail Server proxy data action
 
-When you want to attach a Retail Server proxy API call to a module so that it will run when a page is loaded, you must create a new data action. The process resembles the process for creating a standard page load data action.
+When you want to attach a Retail Server proxy API call to a module so that it runs when a page loads, create a new data action. The process resembles the process for creating a standard page load data action.
 
-In this example, you will create a module that uses the Retail Server proxy to get all the categories that are available for the configured channel when a page is loaded. To start, you must identify the correct Commerce Scale Unit proxy API to use. For this example, this API is the **GetCategories** API that is provided by the **CategoriesDataActions** data action manager. You can then construct a data action that can be used in a module definition. In general, to complete this task, you must do two things:
+In this example, you create a module that uses the Retail Server proxy to get all the categories that are available for the configured channel when a page loads. To start, identify the correct Commerce Scale Unit proxy API to use. For this example, use the **GetCategories** API that's provided by the **CategoriesDataActions** data action manager. You can then construct a data action that you can use in a module definition. In general, to complete this task, you must do two things:
 
 - Provide a **createInput** method that calls the Retail Server proxy **createInput** method for the desired API and passes it any contextual data that you want (for example, the channel ID).
-- Have the action method of the new data action be the **retailAction** method that is provided by the Retail Server proxy. The **retailAction** method is designed to parse the input that is passed to it and call the corresponding Retail Server proxy API.
+- Make the action method of the new data action be the **retailAction** method that's provided by the Retail Server proxy. The **retailAction** method is designed to parse the input that is passed to it and call the corresponding Retail Server proxy API.
 
-Under the **src\\actions** directory, create a file for a new data action. For this example, the file is named **get-category-list.ts**, and it contains the following code.
+Under the **src\\actions** directory, create a file for a new data action. For this example, name the file **get-category-list.ts**. It contains the following code.
 
 ```typescript
 import { createObservableDataAction, IAction, ICreateActionContext } from '@msdyn365-commerce/core';
@@ -109,11 +106,9 @@ export default createObservableDataAction({
 });
 ```
 
+The **get-category-list.ts** file exports a data action that you can register on a module to get the list of all categories from whatever channel you configure for the project. Because this approach requires much less custom code to make the HTTP call than manual communication with Retail Server, always call Retail Server by using the Retail Server proxy.
 
-The **get-category-list.ts** file exports a data action that can be registered on a module to get the list of all categories from whatever channel has been configured for the project. Because this approach requires much less custom code to make the HTTP call than manual communication with Retail Server, we recommend that you always call Retail Server by using the Retail Server proxy.
-
-The following example shows how the **get-category-list** data action can be registered in the **"module" \> "dataActions"** node in the module definition file.
-
+The following example shows how to register the **get-category-list** data action in the **"module" \> "dataActions"** node in the module definition file.
 
 ```json
 {
@@ -191,7 +186,7 @@ The following example shows how the **get-category-list** data action can be reg
 }
 ```
 
-The module **data.ts** file also requires an entry for the return type of the data action. The following example shows a sample module **data.ts** file. After it's implemented, the property can be accessed from the module's view file by using the **this.props.data.** object.
+The module **data.ts** file also requires an entry for the return type of the data action. The following example shows a sample module **data.ts** file. After you implement it, the property can be accessed from the module's view file by using the **this.props.data.** object.
 
 ```typescript
 
@@ -203,7 +198,6 @@ export interface IProductFeatureData {
 ```
 
 ## Call a Retail Server proxy API directly in module code
-
 
 The following example shows how to call the **getCategories** Commerce API by using the Commerce proxy **getCategoriesAsync** wrapper API. This API call returns a list of all categories, and the sample code logs them to the console.
 
@@ -266,6 +260,5 @@ export default ProductFeature;
 [Event-based data actions](event-based-data-actions.md)
 
 [Core data actions](core-data-actions.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

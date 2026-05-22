@@ -4,7 +4,7 @@ description: The main account types determine how a main account is used in the 
 author: jchrist
 ms.author: jchrist
 ms.topic: article
-ms.date: 05/13/2024
+ms.date: 02/02/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -25,7 +25,7 @@ The main account types determine how a main account is used in the chart of acco
 You must select a main account type when you create a main account in the **Main accounts - chart of accounts** page.
 -   **Profit and loss**, **Revenue**, and **Expense** – These main accounts are used as posting accounts. **Profit and loss** accounts are used to record revenue and expenses. The sum of all profit and loss, revenue, and expense accounts determines the year-end results. **Revenue** and **Expense** main accounts have the same function as **Profit and loss** main accounts.
 -   **Balance sheet**, **Asset**, **Liability**, and **Equity** – These main accounts are used as transaction accounts to record the amounts that a legal entity owns or owes.
--   **Total** – These main accounts are used to add account intervals. Configure the **Total** main account type by using the **Account interval** page, which displays the total of the group balances for all account intervals. Access the **Account interval** page by selecting **Totals** on the **General** tab after a **Total** account type is selected.
+-   **Total** – These main accounts are used to add account intervals. Configure the **Total** main account type by using the **Account interval** page, which displays the total of the group balances for all account intervals. Access the **Account interval** page by selecting **Totals** on the **General** tab after a **Total** account type is selected. **Total** main accounts can't be suspended. However, suspending behavior can be simulated by setting the **Active from** and **Active to** dates.
 -   **Reporting** – These main accounts are used for financial statement reporting for Brazil only.
 
 For more information, see [Set up main account categories](tasks/set-up-main-account-categories.md).

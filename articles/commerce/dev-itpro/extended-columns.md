@@ -1,40 +1,38 @@
 ---
 title: Pre-extended columns in the channel database
-description: This article explains how the pre-extended columns in the channel database are consumed for extensions.
+description: Learn how the pre-extended columns in the channel database are consumed for extensions.
 author: josaw1
-ms.date: 02/22/2024
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
+ms.date: 02/17/2026
+ms.topic: how-to
 ms.author: josaw
+ms.reviewer: v-griffinc
+ms.search.region: Global
 ms.search.validFrom: 2020-02-02
-ms.dyn365.ops.version: 10.0.10
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Pre-extended columns in the channel database
 
 [!include [banner](../../includes/banner.md)]
 
-Some columns in the channel database are *pre-extended*. In other words, the column length in the channel database exceeds the column length in Microsoft Dynamics 365 Commerce Headquarters. For example, the length of the **INVENTSERIALID** field is 20 characters in the Commerce Headquarters database but 50 characters in the channel database.
+Some columns in the channel database are *pre-extended*. In other words, the column length in the channel database exceeds the column length in Microsoft Dynamics 365 Commerce headquarters. For example, the length of the **INVENTSERIALID** field is 20 characters in the headquarters database but 50 characters in the channel database.
 
-Although fields in the channel database are often extended, column lengths for those fields aren't extensible. Therefore, out-of-box column lengths have been increased to support extension scenarios.
+Although you often extend fields in the channel database, you can't extend column lengths for those fields. Therefore, out-of-box column lengths are increased to support extension scenarios.
 
 > [!NOTE]
-> If you must extend a field that isn't already pre-extended, you must file an extension request in Lifecycle Services (LCS). For more information, see [Extensibility requests](../../fin-ops-core/dev-itpro/extensibility/extensibility-requests.md).
+> If you need to extend a field that isn't already pre-extended, you must file an extension request in Lifecycle Services (LCS). For more information, see [Extensibility requests](../../fin-ops-core/dev-itpro/extensibility/extensibility-requests.md).
 
-Although the fields are extended in the channel database, your extension must also extend the field in the Commerce Headquarters database by using the extended data type (EDT) extension model. Additionally, you must extend the corresponding point of sale (POS) or Commerce runtime (CRT) user interface (UI).
+Although the fields are extended in the channel database, your extension must also extend the field in the headquarters database by using the extended data type (EDT) extension model. Additionally, you must extend the corresponding point of sale (POS) or Commerce runtime (CRT) user interface (UI).
 
-If the Commerce Headquarters database isn't extended, either synchronization between the channel database and the Commerce Headquarters database will fail during the P-job or the extra characters will be truncated. Likewise, if the corresponding point of sale (POS) user interface (UI) or the Commerce runtime (CRT) isn't extended, validation will prevent more than the default character length from being entered. The default length is determined by the base column length in the Commerce Headquarters database.
+If you don't extend the headquarters database, either synchronization between the channel database and the headquarters database fails during the P-job or the extra characters are truncated. Likewise, if you don't extend the corresponding point of sale (POS) user interface (UI) or the Commerce runtime (CRT), validation prevents more than the default character length from being entered. The default length is determined by the base column length in the headquarters database.
 
 Here are some examples:
 
-- The length of the **INVENTSERIALID** field in the channel database is 50 characters, but the POS UI accepts serial numbers that are a maximum of only 20 characters long. In this case, you must extend the field in both the POS UI and the Commerce Headquarters database.
-- The length of the **STREET** field in the channel database is extended to 400 characters, but validation in CRT prevents more than the default length in the Commerce Headquarters database from being accepted. In this case, you must extend both the CRT request handler (**ValidateAddressLengthServiceRequest**) and the Commerce Headquarters database, so that 400 characters are accepted for the **STREET** field.
+- The length of the **INVENTSERIALID** field in the channel database is 50 characters, but the POS UI accepts serial numbers that are a maximum of only 20 characters long. In this case, you must extend the field in both the POS UI and the headquarters database.
+- The length of the **STREET** field in the channel database is extended to 400 characters, but validation in CRT prevents more than the default length in the headquarters database from being accepted. In this case, you must extend both the CRT request handler (**ValidateAddressLengthServiceRequest**) and the headquarters database, so that 400 characters are accepted for the **STREET** field.
 
-Extension of the POS UI or CRT handlers isn't required for some fields, because they might be read-only fields in POS. For example, **ECORES** product-related fields are read-only. Because product creation isn't supported in POS, there is no write scenario for products in POS.
+Extension of the POS UI or CRT handlers isn't required for some fields, because they might be read-only fields in POS. For example, **ECORES** product-related fields are read-only. Because product creation isn't supported in POS, there's no write scenario for products in POS.
 
 ## Sample code to override the ValidateAddressLengthServiceRequest handler
 

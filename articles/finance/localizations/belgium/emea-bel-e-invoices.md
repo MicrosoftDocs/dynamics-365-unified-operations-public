@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Belgium in M
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 11/18/2025
+ms.date: 02/24/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -37,7 +37,7 @@ Before you begin the procedures in this article, meet the following prerequisite
 - The company must obtain, from the service provider, the required credentials to enable integration of the Electronic Invoicing service with the [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md).
 
     > [!NOTE]
-    > The current implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) as the Electronic Invoicing ISV last-mile connection service provider. Learn more in [e-Invoicing Integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
+    > The current implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) as the Electronic Invoicing ISV last-mile connection service provider. Learn more in [e-Invoicing Integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft)).
 
 - Become familiar with Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md) and [Electronic invoicing components](../global/gs-e-invoicing-administration-integration-components.md).
 - Complete the common part of Electronic Invoicing service configuration as described in [Electronic invoicing components](../global/gs-e-invoicing-set-up-overview.md).
@@ -199,11 +199,11 @@ The buyer's EndpointID determination uses the following hierarchy of built-in [R
 
 - If you define the Global Location Number (GLN), also known as a European article numbering (EAN), for the customer as an active Registration Number with the **EAN** Registration category, the system uses it as the customer's EndpointID and uses the **0088** constant (EAN Location Code) as the EndpointID **schemeID** attribute's value.
 
-- If you don't define the EAN registration number, the system uses the customer's active Registration Number of the **Enterprise ID** Registration category as the customer's EndpointID and uses the **0208** constant (Numero d'entreprise / ondernemingsnummer / Unternehmensnummer) as the EndpointID **schemeID** attribute's value.
+- If you don't define the EAN registration number, the system uses the customer's active Registration Number of the **Enterprise ID** Registration category as the customer's EndpointID and dynamically determines the EndpointID **schemeID** attribute's value depending on the country/region from the Buyer's address. For example, **0208** for Belgium, **0002** for France, etc.
 
-- If you don't define the EAN and Enterprise ID registration numbers, the system uses the customer's active Registration Number of the **VAT ID** Registration category as the customer's EndpointID and uses the **9925** constant (Belgium VAT number) as the EndpointID **schemeID** attribute's value.
+- If you don't define the EAN and Enterprise ID registration numbers, the system uses the customer's active Registration Number of the **VAT ID** Registration category as the customer's EndpointID and dynamically determines the EndpointID **schemeID** attribute's value depending on the country/region from the Buyer's address. For example, **9925** - Belgium VAT number, **9957** - French VAT number, etc.
 
-- If you don't define the VAT ID registration number, the system uses the **Tax exempt number** defined in customer's master data as the customer's EndpointID and uses the **9925** constant as the EndpointID **schemeID** attribute's value.
+- If you don't define the VAT ID registration number, the system uses the **Tax exempt number** defined in customer's master data.
   
     The resulting Endpoint ID value populates the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and is used as the buyer's identification during the submission process.
 
@@ -320,6 +320,17 @@ You can check the results of the submission by going to **Organization administr
 
 > [!NOTE]
 > Submitted electronic invoices are also available in the Outbound folder and its subfolders in your [Ediwin](https://ediwin.edicomgroup.com/) portal. There, you can monitor further processing of the documents.
+
+The following types of invoices are processed during the submission.
+
+ - Invoices based on Sales orders - electronic invoices of **380** type are generated.
+ - Credit notes based on Sales orders - electronic invoices of **381** type are generated.
+ - Free text invoices - electronic invoices of **380** type are generated.
+ - Free text credit notes - electronic invoices of **381** type are generated.
+ - Project invoices - electronic invoices of **380** type are generated.
+ - Project credit notes - electronic invoices of **381** type are generated.
+ - Customer prepayment invoices created using [Customer prepayment invoices](../../accounts-receivable/customer-prepayment-invoice.md) functionality - electronic invoices of **386** type are generated.
+ - Customer prepayment credit notes that created as reversals of initial prepayment invoices after a final invoice is issued  - electronic invoices of **381** type are generated.
 
 ## Receive incoming electronic invoices
 

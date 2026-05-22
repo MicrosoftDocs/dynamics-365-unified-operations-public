@@ -4,7 +4,7 @@ description: Access an example that shows how a RunBase class can be augmented e
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: article
-ms.date: 02/28/2019
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global

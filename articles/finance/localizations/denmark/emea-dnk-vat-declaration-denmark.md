@@ -6,11 +6,10 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 03/05/2026
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
-ms.search.validFrom: 
+ms.search.validFrom: 2017-06-30
 ---
 
 # VAT declaration of Denmark overview
@@ -19,7 +18,7 @@ ms.search.validFrom:
 
 This article describes how to set up the value-added tax (VAT) declaration for Denmark, preview it in Microsoft Excel, and then submit it to the Danish Tax Agency (Skattestyrelsen).
 
-As of version 10.0.37 of Dynamics 365 Finance, direct submission of VAT returns in XML format to the Danish Tax Agency is supported.
+As of version 10.0.37 of Dynamics 365 Finance, you can directly submit VAT returns in XML format to the Danish Tax Agency.
 
 The **VAT return with direct submission to Danish Tax Agency** feature in Finance supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and [collecting tax data from several legal entities into one VAT declaration](emea-dnk-vat-declaration-submission.md#run-vat-declaration) in the same system database.
 
@@ -27,13 +26,13 @@ For more information about how to prepare a VAT return for direct submission to 
 
 ## Sharing customer data
 
-When you enable Finance to interoperate with the Danish Tax Agency VAT API, both customer content and personal data are shared with the Danish Tax Agency as part of the submission of your VAT declaration. For more information about the types of information that are included in your submission, view the Danish Tax Agency [requirements](https://go.microsoft.com/fwlink/?linkid=2244145). A system administrator can disable the interoperation with the Danish Tax Agency web service in Finance by going to **Tax** \> **Setup** \> **Electronic Messages**.
+When you enable Finance to interoperate with the Danish Tax Agency VAT API, you share both customer content and personal data with the Danish Tax Agency as part of the submission of your VAT declaration. For more information about the types of information that are included in your submission, view the Danish Tax Agency [requirements](https://go.microsoft.com/fwlink/?linkid=2244145). A system administrator can disable the interoperation with the Danish Tax Agency web service in Finance by going to **Tax** > **Setup** > **Electronic Messages**.
 
 Your privacy is important to us. To learn more, read our [Privacy notice](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## VAT declaration 
+## VAT declaration
 
-Data that's reported in a VAT declaration in Excel format has the same structure as data that's reported in a VAT declaration in XML format. The VAT declaration in Excel format is used to preview the amounts that are calculated for reporting to the Danish Tax Agency in XML format. 
+Data that's reported in a VAT declaration in Excel format has the same structure as data that's reported in a VAT declaration in XML format. Use the VAT declaration in Excel format to preview the amounts that are calculated for reporting to the Danish Tax Agency in XML format.
 
 To automatically generate a VAT declaration in Excel or XML format, create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup result for the boxes on the VAT declaration.
 
@@ -72,8 +71,8 @@ The VAT declaration in Denmark contains the following information.
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------------------------------|
 | Box A - acquisition of goods. The value without VAT of intra-Union acquisition of goods.                                                                                                                                                   | Tax base            | **PurchaseGoodsEU PurchaseGoodsEUUseTax**       |
 | Box A - acquisition of services. The value without VAT of intra-Union acquisition of services.                                                                                                                                             | Tax base            | **PurchaseServicesEU PurchaseServicesEUUseTax** |
-| Box B - supply of goods - to be reported to "EU-sales without VAT"/DK VIES. The value without VAT of intra-Union supply of goods                                                                                                           | Tax base            | **SalesGoodsEU**                                |
-| Box B - supplies - not to be reported to "EU-sales without VAT"/DK VIES. The value without VAT of certain intra-Union supplies, for instance of installation, assembly, distance sales, and new means of transport to non-taxable persons. | Tax base            | **SalesInstallationAssemblyEtcEU**              |
+| Box B - supply of goods - to report to "EU-sales without VAT"/DK VIES. The value without VAT of intra-Union supply of goods                                                                                                           | Tax base            | **SalesGoodsEU**                                |
+| Box B - supplies - not to report to "EU-sales without VAT"/DK VIES. The value without VAT of certain intra-Union supplies, for instance of installation, assembly, distance sales, and new means of transport to non-taxable persons. | Tax base            | **SalesInstallationAssemblyEtcEU**              |
 | Box B - supply of services. The value without VAT of intra-Union supply of services for which the purchaser is liable to pay the VAT as reverse charge - must also be reported to "EU-sales without VAT"/DK VIES.                          | Tax base            | **SalesServicesEU**                             |
 | Box C - other supplies. Value of supply of other goods and services that are supplied without VAT in the territory of Denmark, to other EU Member States, and to other countries/regions or territories.                                     | Tax base            | **OtherSuppliesWithoutVAT**                     |
 

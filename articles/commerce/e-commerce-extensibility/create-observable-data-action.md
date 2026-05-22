@@ -1,11 +1,10 @@
 ---
 title: Create an observable data action
-description: This article describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
+description: Learn how to create an observable data action in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -18,7 +17,7 @@ ms.custom:
 
 This article describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 
-Observable data actions are used to track the status of a data action as it's running. This capability is helpful if you must run logic or render a user interface (UI) in response to the current status of a data action. Observable data actions use a special promise-like class that is named **AsyncResult**. This class adds "observer" functionality to a standard promise.
+You can use observable data actions to track the status of a data action as it runs. This capability is helpful if you must run logic or render a user interface (UI) in response to the current status of a data action. Observable data actions use a special promise-like class named **AsyncResult**. This class adds "observer" functionality to a standard promise.
 
 The following example shows how to take advantage of an **AsyncResult** class. This data action waits three seconds before it returns a string.
 
@@ -65,7 +64,7 @@ const createInput = () => {
 };
 ```
 
-In this example, the data action simulates an outgoing application programming interface (API) call. It also includes a flag that can be set to allow a failure simulation. In some scenarios, you might want to create a module that can send updates about the status of a data action. You can't use a regular data action for that purpose.
+In this example, the data action simulates an outgoing application programming interface (API) call. It also includes a flag that you can set to allow a failure simulation. In some scenarios, you might want to create a module that can send updates about the status of a data action. You can't use a regular data action for that purpose.
 
 ## Create the observable data action
 
@@ -78,9 +77,9 @@ export default createObservableDataAction({
 });
 ```
 
-The **createObservableDataAction** method returns an **IObservableAction** interface. The **IObservableAction** interface returns an **AsyncResult** class that provides additional data including the **status** and **error** properties of the data action. 
+The **createObservableDataAction** method returns an **IObservableAction** interface. The **IObservableAction** interface returns an **AsyncResult** class that provides more data including the **status** and **error** properties of the data action.
 
-A mock can be created to test the data action, as shown in the following example.
+You can create a mock to test the data action, as shown in the following example.
 
 ```tsx
 // test-module.tsx
@@ -128,7 +127,7 @@ class AsyncTestModule extends React.PureComponent<IAsyncTestModuleProps<IAsyncTe
 export default AsyncTestModule;
 ```
 
-The following example shows a sample module definition that registers the sample observable data action that was created earlier.
+The following example shows a sample module definition that registers the sample observable data action that you created earlier.
 
 ```json
 // test-module.definition.json
@@ -148,7 +147,7 @@ The following example shows a sample module definition that registers the sample
 }
 ```
 
-When adding a data action inside the module data.ts file, ensure that every data action that returns an **observableDataAction** object is wrapped by an **AsyncResult** class. This will guarantee the correct typings when a module is written.
+When you add a data action inside the module data.ts file, ensure that you wrap every data action that returns an **observableDataAction** object with an **AsyncResult** class. This practice guarantees the correct typings when you write a module.
 
 ```typescript
 // test-module.data.ts
@@ -157,9 +156,10 @@ export interface IAsyncTestModuleData {
     testResult: AsyncResult<string>;
 }
 ```
-When a data action is wrapped in an **AsyncResult** class (as in the above example), the module will now have access to the **status**, **result**, and **error** properties. The **status** property contains the current state of the data action, which can be one of: **'Success'**, **'Loading'** or **'Failed'**.  The **result** property contains the data that is returned by the action if it succeeds. If the data action throws an error, the **result** property won't be filled in. Instead, the **error** property can be used to see the error details.
 
-By taking advantage of the **status**, **result**, and **error** properties that are provided by observable data actions, complicated scenarios can be better handled in a module. Examples include showing a loading screen while a data action call runs and providing contextual error messages in response to a failed data action.
+When you wrap a data action in an **AsyncResult** class (as in the preceding example), the module now has access to the **status**, **result**, and **error** properties. The **status** property contains the current state of the data action, which can be one of: **'Success'**, **'Loading'**, or **'Failed'**. The **result** property contains the data that the action returns if it succeeds. If the data action throws an error, the **result** property isn't filled in. Instead, use the **error** property to see the error details.
+
+By taking advantage of the **status**, **result**, and **error** properties that observable data actions provide, you can better handle complicated scenarios in a module. Examples include showing a loading screen while a data action call runs and providing contextual error messages in response to a failed data action.
 
 ## Additional resources
 
@@ -174,6 +174,5 @@ By taking advantage of the **status**, **result**, and **error** properties that
 [Data action overrides](data-action-overrides.md)
 
 [Data action hooks](data-action-hooks.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/26/2024
+ms.date: 03/10/2026
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -20,7 +20,7 @@ In Microsoft Dynamics 365 apps, the prospect-to-cash process occurs through quot
 
 In the app interfaces, you can access the processing statuses and invoice information in real time. Therefore, you can more easily manage functions such as product stocking, inventory handling, and fulfillment in Supply Chain Management, without having to re-create the quotations and orders.
 
-![Dual-write dataflow in quote-to-cash.](../../dev-itpro/data-entities/dual-write/media/dual-write-prospect-to-cash[1].png)
+:::image type="content" source="../../dev-itpro/data-entities/dual-write/media/dual-write-prospect-to-cash[1].png" alt-text="Screenshot of dual-write dataflow in quote-to-cash.":::
 
 For information about customer and contact integration, see [Integrated customer master](../../dev-itpro/data-entities/dual-write/customer-mapping.md). For information about product integration, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
@@ -70,11 +70,11 @@ If you create a quotation in Sales, it's synced to Supply Chain Management in re
 If you are also using the Field Service solution, make sure to re-enable the **Quote Line Quick Create** parameter. Re-enabling the parameter lets you continue creating quote lines using the quick create function.
 
 1. Navigate to your Dynamics 365 Sales application.
-2. Select the settings icon in the top navigation bar.
-3. Select **Advanced Settings**.
-4. Choose the **Customize the System** option.
-5. Select the **Quote Line** menu item.
-6. Go to the **Data Services** section and select the **Allow quick create** checkbox.
+1. Select the settings icon in the top navigation bar.
+1. Select **Advanced Settings**.
+1. Choose the **Customize the System** option.
+1. Select the **Quote Line** menu item.
+1. Go to the **Data Services** section and select the **Allow quick create** checkbox.
 
 ## Sales orders
 

@@ -6,7 +6,7 @@ ms.author: snamilikonda
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/12/2025
+ms.date: 03/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
@@ -27,7 +27,7 @@ For more information about how to set up a connection, see [Create an Lifecycle 
 
 ## Add the MSAL.PS install task to a pipeline
 
-### [!NOTE] This isn't required anymore with the latest versions of the tasks.
+### This isn't required anymore with the latest versions of the tasks.
 
 To add the MSAL.PS install task to the build of your YML or Classic pipeline, search the task list for **Install MSAL.PS to enable authentication**. There are no options or settings for this task. Make sure that this install task is run on every agent before you run any task that requires authentication with Microsoft Dynamics Lifecycle Services,
 

@@ -4,7 +4,7 @@ description: Learn about the SysTestRow attribute that can be used with SysTest 
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 01/13/2022
+ms.date: 03/16/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -15,8 +15,7 @@ ms.search.validFrom: 2022-01-13
 
 [!include [banner](../includes/banner.md)]
 
-
-Sometimes, tests must test multiple input values for the same feature. To make troubleshooting and reporting easier, you should avoid testing multiple things in the same test method. Instead of creating multiple methods, you can use the **SysTestRow** attribute that the SysTest framework now supports. This attribute works like the **DataRow** attribute in C\#.
+Sometimes, tests must check multiple input values for the same feature. To make troubleshooting and reporting easier, avoid testing multiple things in the same test method. Instead of creating multiple methods, use the **SysTestRow** attribute that the SysTest framework now supports. This attribute works like the **DataRow** attribute in C#.
 
 > [!NOTE]
 > The **SysTestRow** attribute is available in version 10.0.25 and later.
@@ -65,6 +64,6 @@ Microsoft Visual Studio shows each test row as a separate numbered result.
 
 ## SysTestRowInactive
 
-Any **SysTestRow** attribute can be replaced with the **SysTestRowInactive** attribute. In this case, Visual Studio shows the test row as a disabled test.
+You can replace the **SysTestRow** attribute with the **SysTestRowInactive** attribute. When you use this attribute, Visual Studio shows the test row as a disabled test.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

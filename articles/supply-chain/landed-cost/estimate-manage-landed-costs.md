@@ -166,7 +166,7 @@ This feature enables you to include landed costs in the accounting distribution 
 To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.34 or later.
-- The feature that is named *Source document and accounting distribution support for Landed Cost* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
+- The feature named *Source document and accounting distribution support for Landed Cost* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 ### View landed costs in the accounting distribution of product receipts
 

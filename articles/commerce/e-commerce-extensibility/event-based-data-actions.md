@@ -1,11 +1,10 @@
 ---
 title: Use event-based data actions
-description: This article describes how to use event-based data actions.
+description: Learn how to use event-based data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,15 +15,15 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to use event-based data actions.
+This article describes how to use event-based data actions in Microsoft Dynamics 365 Commerce.
 
-In some scenarios, you don't want a data action to run when a page is first loaded. Instead, you want it to run dynamically in response to some event on the client. For example, a product can be added to a customer's cart in response to a button click, search results can be shown in response to a change in the text input, or banner text can be updated in response to a time-based event.
+In some scenarios, you don't want a data action to run when a page first loads. Instead, you want it to run dynamically in response to some event on the client. For example, a product can be added to a customer's cart in response to a button selection, search results can be shown in response to a change in the text input, or banner text can be updated in response to a time-based event.
 
 ## Example
 
-In the following example, a very basic module loads product information when a user clicks a button. 
+For following example, a basic module loads product information when a user selects a button.
 
-The following code shows a **react** component that contains a button that users can click.
+The code shows a **react** component that contains a button that users can select.
 
 ```tsx
 // product-button.tsx
@@ -51,7 +50,7 @@ class ProductButton extends React.Component {
 export default ProductButton;
 ```
 
-Currently, this component just logs a message to the console when the button is clicked. To replace that behavior with the data action, you must do three things:
+Currently, this component logs a message to the console when the button is clicked. To replace that behavior with the data action, you must do three things:
 
 1. Import the data action and its input class.
 1. Create an input for the data action.
@@ -96,7 +95,7 @@ export default ProductButton;
 ```
 
 > [!NOTE]
-> This example uses a hard-coded **productId** value. However, it can be updated so that the **productId** value is read from text input or the module's configuration properties.
+> This example uses a hardcoded **productId** value. However, you can update it so that the **productId** value is read from text input or the module's configuration properties.
 
 ## Additional resources
 

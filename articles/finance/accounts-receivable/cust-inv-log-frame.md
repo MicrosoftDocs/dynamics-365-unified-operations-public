@@ -17,6 +17,7 @@ ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 # Customer invoice logging framework for tracking sales order and free text invoice history in Dynamics 365 Finance
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article explains how to set up and use the customer invoice logging framework to track sales order and free text invoice history in Microsoft Dynamics 365 Finance. 
 

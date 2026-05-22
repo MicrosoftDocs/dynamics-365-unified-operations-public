@@ -4,7 +4,7 @@ description: Learn about how to use the Microsoft Dynamics 365 Commerce pricing 
 author: ShalabhjainMSFT
 ms.author: shajain
 ms.topic: article
-ms.date: 11/19/2020
+ms.date: 03/10/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: global
@@ -24,16 +24,16 @@ When you use [dual-write](../../dev-itpro/data-entities/dual-write/dual-write-ov
 ## Use the Commerce pricing engine in Sales
 
 > [!NOTE]
-> Currently, the Commerce pricing engine can be used only for quotation creation in the Sales. Sales order integration with the Commerce pricing engine isn't yet available.
+> Currently, you can use the Commerce pricing engine only for quotation creation in Sales. Sales order integration with the Commerce pricing engine isn't yet available.
 
-When users initiate a quotation in Sales, the dual-write framework copies the quotation details to Commerce. Any changes to existing quotation lines or any newly added quotation lines in Sales are copied to Commerce. When users want to use the Commerce pricing engine to price the quotation, they can select **Price quote** to update the prices of the quotation, based on the Commerce pricing engine. Prices are then automatically updated in both Sales and Commerce.
+When users initiate a quotation in Sales, the dual-write framework copies the quotation details to Commerce. The framework copies any changes to existing quotation lines or any newly added quotation lines in Sales to Commerce. When users want to use the Commerce pricing engine to price the quotation, they can select **Price quote** to update the prices of the quotation, based on the Commerce pricing engine. Prices are then automatically updated in both Sales and Commerce.
 
 ## Prerequisites
 
 - Before you can use the Commerce pricing engine in Sales, you must follow the steps in [Prospect-to-cash in dual-write](dual-write-prospect-to-cash.md).
 - You must turn off trade agreement evaluation for manual entry by following these steps:
 
-    1. In your Commerce environment, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+    1. In your Commerce environment, go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
     1. On the **Prices** tab, on the **Trade agreement evaluation** FastTab, clear the **Manual entry** check box.
 
 ## Additional resources

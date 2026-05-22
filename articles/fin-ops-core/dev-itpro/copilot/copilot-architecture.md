@@ -4,7 +4,7 @@ description: Learn about the architecture of Copilot in finance and operations a
 author: jaredha
 ms.author: jaredha
 ms.topic: article
-ms.date: 10/08/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -20,7 +20,7 @@ ms.search.region: Global
 
 Copilot in finance and operations apps builds on [Microsoft Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio), which provides the central AI orchestration of the Copilot capabilities. This framework lets you extend the capabilities to create powerful AI-powered experiences in finance and operations apps. 
 
-<img alt="Diagram that shows the architecture of Copilot in finance and operations apps." src="../media/Copilot-architecture.png">
+:::image type="content" source="../media/Copilot-architecture.png" alt-text="Screenshot of the architecture of Copilot in finance and operations apps.":::
 
 ## Copilot interface
 

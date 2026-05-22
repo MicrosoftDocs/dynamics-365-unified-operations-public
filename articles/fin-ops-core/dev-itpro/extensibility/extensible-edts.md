@@ -4,7 +4,7 @@ description: Learn about extended data types (EDTs), including overviews of labe
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: article
-ms.date: 09/09/2018
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -13,38 +13,42 @@ ms.dyn365.ops.version: Platform update 20
 ---
 
 # Extended data types
+
 [!include [banner](../includes/banner.md)]
 
 Extended data types (EDTs) have a rich extension model that lets extenders change specific behaviors.
 
 To provide an extensible solution, keep the following guidelines in mind when you work with EDTs.
 
-## Label/Help text
-Labels and Help text properties can be changed by an extension, but only one value can remain. If multiple solutions change the label of the same EDT, the various labels are, in functional terms, mutually exclusive. Therefore, those labels can't all be installed on the same system.
+## Label and help text
+
+An extension can change the label and help text properties, but only one value can remain. If multiple solutions change the label of the same EDT, the various labels are, in functional terms, mutually exclusive. Therefore, you can't install those labels on the same system.
 
 ## String size
-String size can be defined only on root EDTs. The system will use the largest value that is defined across the EDT and its extensions.
 
-For derived EDTs, string size can't be changed by an extension, because the IS-A relationship between the EDTs will be broken.
+You can define the string size only on root EDTs. The system uses the largest value that is defined across the EDT and its extensions.
 
-Assignments to string EDTs will truncate the string to match the defined string size.
+For derived EDTs, an extension can't change the string size, because that change breaks the IS-A relationship between the EDTs.
+
+Assignments to string EDTs truncate the string to match the defined string size.
 
 ## Extends
-The **extends** property can't be changed by an extension. Any change that is made to this property after release will cause a breaking change. Therefore, you must make sure that the property is set correctly before release.
 
-If you set this property, neither you nor extenders will be able to make changes to the string size later. 
+An extension can't change the **extends** property. Any change that you make to this property after release causes a breaking change. Therefore, make sure that the property is set correctly before release.
+
+If you set this property, neither you nor extenders can make changes to the string size later.
 
 Avoid unnecessary dependencies. For example, don't extend generic EDTs such as Name and Description.
 
 ## Number of decimals
-The **Number of decimals** property can't be changed by an extension.
 
-If you set this property to **True**, extenders can change the number of decimal places. 
+You can't change the **Number of decimals** property by using an extension.
+
+If you set this property to **True**, extenders can change the number of decimal places.
 
 If you set this property to **True**, make sure that the following conditions are met:
 
-+ All truncation logic honors the number of decimal places that is specified on the EDT, so that no implicit or hardcoded rounding will occur.
-+ The value isn't assigned to other incompatible EDTs that don't correctly handle rounding.
-
+- All truncation logic honors the number of decimal places that you specify on the EDT, so no implicit or hardcoded rounding occurs.
+- You don't assign the value to other incompatible EDTs that don't correctly handle rounding.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

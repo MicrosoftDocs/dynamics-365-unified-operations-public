@@ -4,7 +4,7 @@ description: Learn about the end-to-end process for upgrading from Microsoft Dyn
 author: laneswenka
 ms.author: laswenka
 ms.topic: upgrade-and-migration-article
-ms.date: 12/2/2024
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -34,26 +34,26 @@ We strongly recommend running the [Upgrade analyzer](upgrade-analyzer-tool.md) a
 
 ## End-to-end data upgrade process
 
-![Data upgrade process.](media/endToEndDataUpgradeProcess.png)
+:::image type="content" source="media/endToEndDataUpgradeProcess.png" alt-text="Screenshot of the data upgrade process.":::
 
 ### Prerequisites
 
 Ensure that you've completed the preupgrade checklist in AX 2012. For more information, see [Preupgrade checklist for data upgrade](prepare-data-upgrade.md).
 
 > [!IMPORTANT]
-> It's recommended that before you run the upgrade, apply the latest **Quality Update** for the Dynamics 365 finance and operations version you are using.
+> It's recommended that before you run the upgrade, apply the latest **Quality Update** for the Dynamics 365 finance and operations version you're using.
 
 
 ### Back up your AX 2012 database
 
-Back up your AX 2012 database using the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size is smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.
+Back up your AX 2012 database using the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size is smaller, and less time is required in order to upload it to and download it from Microsoft Azure Storage.
 
 > [!NOTE]
 > The collation of the AX 2012 database must be **SQL_Latin1_General_CP1_CI_AS**. If your database is a different collation, follow these steps: [Change the database collation for development environments](coll-dev-env.md). 
 
 ### Upload the backup to Azure Storage
 
-If your developer environment is hosted as a VM locally or in Azure, you need to transfer the 2012 database backup to it. With a local VM, you may be able to transfer the file directly across the network if the virtual network allows. For an Azure hosted VM, we recommend that you upload your backup to Azure Storage using your own secure file transfer service or SFTP. You would need to provide your own Azure storage account for this. There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](https://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then download it in your development environment.
+If your developer environment is hosted as a VM locally or in Azure, you need to transfer the 2012 database backup to it. With a local VM, you might be able to transfer the file directly across the network if the virtual network allows. For an Azure hosted VM, we recommend that you upload your backup to Azure Storage using your own secure file transfer service or SFTP. You would need to provide your own Azure storage account for this. There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](https://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then download it in your development environment.
 
 ### Download and restore the backup to the customer-managed development environment
 
@@ -89,7 +89,7 @@ Finally, rename the newly restored AX 2012 database **AXDB**.
 
 ### Run the data upgrade deployable package 
 
-To get the latest data upgrade deployable package for a target environment that is running the latest update, download the latest binary updates from LCS Shared asset library.
+To get the latest data upgrade deployable package for a target environment that's running the latest update, download the latest binary updates from LCS Shared asset library.
 
 1. Sign in to [LCS](https://lcs.dynamics.com/).
 1. Select the **Shared asset library** tile.
@@ -111,7 +111,7 @@ To get the latest data upgrade deployable package for a target environment that 
     .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook"
     ```
 
-   If you have applied a product quality update (PQU), when executing the package, you may get a **The version of the service on current machine is higher than the one that's in the package, downgrade is not supported** message. To workaround, use **-versioncheck=false** parameter when executing the runbook, see following example:
+   If you have applied a product quality update (PQU), when executing the package, you might get a **The version of the service on current machine is higher than the one that's in the package, downgrade is not supported** message. To work around, use **-versioncheck=false** parameter when executing the runbook, see following example:
 
    ```PowerShell
    .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook" -versioncheck=false

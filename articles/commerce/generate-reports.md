@@ -1,11 +1,10 @@
 ---
 title: Generate online channel reports
-description: This article describes how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.
+description: Learn how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 01/22/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -31,7 +30,7 @@ The **Channel summary** report shows a summary of the following transactions for
 
 To generate a **Channel summary** report, follow these steps:
 
-1. Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Channel summary report**.
+1. Go to **Retail and Commerce > Inquiries and reports > Sales reports > Channel summary report**.
 1. In the **From date** field, enter a date.
 1. In the **To date** field, enter a date.
 1. In the **Channel** field, select the online channel.
@@ -115,14 +114,13 @@ The **Organization sales** report shows the performance of your stores by organi
 
 To generate an **Organization sales** report, follow these steps:
 
-1. Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Organization sales report**.
+1. Go to **Retail and Commerce > Inquiries and reports > Sales reports > Organization sales report**.
 1. In the **From date** field, enter a date.
 1. In the **To date** field, enter a date.
 1. Select **OK**.
 
 ## Additional resources
 
-- [Commerce home page](./welcome.md)
-
+[Commerce home page](./welcome.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to get started with phase two of electronic invoicing for
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 06/05/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -71,7 +71,7 @@ To configure electronic document parameters, follow these steps:
 1. In the **Data entity name** field, select **Sales invoice QR code entity**.
 1. In the **Model mapping** field, select **Zatca response data import**.
 
-    ![Screenshot that shows the response type setup.](../media/emea-sa-einvoice-response.jpg)
+    :::image type="content" source="../media/emea-sa-einvoice-response.jpg" alt-text="Screenshot that shows the response type setup.":::
 
 1. <a id="NumberSequence"></a>On the **Electronic invoicing** tab, on the **Number sequences** FastTab, add a record for the number sequence that should be used to count submitted electronic invoices.
 
@@ -96,7 +96,7 @@ To configure electronic invoicing features, follow these steps:
 
     The following illustration shows an example of a feature parameter setup that includes the URL for ZATCA's production endpoint. Update the values based on the configuration on the **Electronic document parameters** page.
 
-    ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Saudi Arabia.](../media/sa-e-invoice-glob-feature-parameters.jpg)
+    :::image type="content" source="../media/sa-e-invoice-glob-feature-parameters.jpg" alt-text="Screenshot that shows the Feature parameters tab configured for the Globalization feature for Saudi Arabia.":::
 
 1. On the **Setups** menu, select the **Sales invoice** feature setup, and then select **Edit**.
 

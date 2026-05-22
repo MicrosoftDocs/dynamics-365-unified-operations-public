@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/13/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -15,11 +15,11 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 # Delivery slips (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
-This article describes how to post delivery slips for sales orders with multiple sales order lines that have Código Fiscal de Operações e Prestações (CFOP) delivery codes in Brazil with Microsoft Dynamics 365 Finance.
+This article describes how to post delivery slips for sales orders with multiple sales order lines that have Código Fiscal de Operações e Prestações (CFOP) delivery codes in Brazil by using Microsoft Dynamics 365 Finance.
 
-You can post a delivery slip for a sales order that has multiple sales order lines that have a delivery Código Fiscal de Operações e Prestações (CFOP) code. For each sales order line, you must specify the CFOP code that has a delivery CFOP code assigned to it. A delivery slip is used when the customer that you deliver items to differs from the customer that is invoiced. (In other words, the customer account and invoice account differ.) Delivery slips are posted in chronological order. You must attach fiscal references to delivery slips before you post them. 
+You can post a delivery slip for a sales order that has multiple sales order lines with a delivery Código Fiscal de Operações e Prestações (CFOP) code. For each sales order line, you must specify the CFOP code that has a delivery CFOP code assigned to it. Use a delivery slip when the customer that you deliver items to differs from the customer that you invoice. (In other words, the customer account and invoice account differ.) Post delivery slips in chronological order. You must attach fiscal references to delivery slips before you post them. 
 
 The following procedure uses the BRMF demo company.
 
@@ -48,7 +48,7 @@ To post delivery slips for sales orders with multiple sales order lines that hav
 1. Select **Delivery slip**.
 1. Select **Fiscal reference**.
 1. In the **Document model** field, enter or select a value.
-1. In the **Access key** field, enter the access key from the NF-e that was issued by the customer ordering the goods and to whom the sales must be invoiced to.  
+1. In the **Access key** field, enter the access key from the NF-e that the customer ordering the goods and to whom the sales must be invoiced to issued.  
 1. In the **Date** field, enter a date.
 1. In the **Direction** field, select an option.
 1. In the **Account** field, enter or select the customer account that generated the fiscal document.  
@@ -62,4 +62,4 @@ To post delivery slips for sales orders with multiple sales order lines that hav
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../../includes/footer-banner.md)]

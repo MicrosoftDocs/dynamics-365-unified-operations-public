@@ -2,9 +2,9 @@
 title: Extensibility changes in Finance and Operations, Enterprise edition (July 2017)
 description: Access a list of extensibility features that were implemented in July 2017, including a table of soft-sealed application models.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 11/08/2017
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,11 +16,11 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024. For more information about the schedule of changes that support extensibility, see [Application extensibility roadmap](extensibility-roadmap.md).
+This article lists extensibility features that Microsoft implemented in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). Microsoft released this version in July 2017 and assigned it a build number of 7.2.11792.56024. For more information about the schedule of changes that support extensibility, see [Application extensibility roadmap](extensibility-roadmap.md).
 
 ## Soft-sealed application models
 
-The following application middle-tier models were soft-sealed in this release. Overlayered code in these models will generate warnings on compilation.
+The following application middle-tier models are soft-sealed in this release. Overlayered code in these models generates warnings during compilation.
 
 | Category       | Model         |
 | --------------- |-------------|
@@ -57,7 +57,7 @@ The following application middle-tier models were soft-sealed in this release. O
 
 ## Hard-sealed application models
 
-The following application middle-tier models were hard-sealed in this release. Overlayered code in these models will generate errors on compilation.
+This release hard-seals the following application middle-tier models. Overlayered code in these models causes compilation errors.
 
 | Category       | Model         |
 | --------------- |-------------|
@@ -71,14 +71,14 @@ The following application middle-tier models were hard-sealed in this release. O
 
 ## Enumerations that are now extensible
 
-The following changes were made to support extending enumerations:
-- Many enumerations in the standard application have been made extensible. An enumeration is made extensible by setting two properties on the enumeration. The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**. 
-- Some enumerations represent state. New façade methods have been added to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add values to enums through extension](add-enum-value.md).
-- Some application code that uses enumerations was changed to support extensibility. Common changes include:
-    + Removing **throw** exception statements in the default case of a switch to allow post-event subscription.
-    + Adding **SysExtension** support for extension.
-    + Adding explicit delegates.
+To support extending enumerations, make the following changes:
 
+- Make many enumerations in the standard application extensible. Set two properties on the enumeration to make it extensible. Set the **IsExtensible** property to **Yes**, and set the **UseEnumValue** property to **No**.
+- Some enumerations represent state. Add new façade methods to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add values to enums through extension](add-enum-value.md).
+- Change some application code that uses enumerations to support extensibility. Common changes include:
+  - Remove **throw** exception statements in the default case of a switch to allow post-event subscription.
+  - Add **SysExtension** support for extension.
+  - Add explicit delegates.
 
 | Enumeration|
 | --------------- |
@@ -688,9 +688,9 @@ The following changes were made to support extending enumerations:
 |WrkCtrType|
 |WrkCtrTypeFilter|
 
-These enumerations were removed, and not made extensible.
+These enumerations were removed and aren't extensible.
 
-| Enumeration removed |
+| Removed enumeration |
 | --------------- |
 |BackorderLinesListPageMode|
 |BackorderPurchLinesListPageMode |
@@ -698,13 +698,13 @@ These enumerations were removed, and not made extensible.
 |ReturnTableListPageType |
 |SMAAgreementTableListPageType|
 
-Foundation changes were made to improve support for extensible enumerations. The **SysPlugin** framework was enabled for enumerations where **IsExtensible** is set to **Yes**. Views were enabled with new name-based syntax for enumerations.
+Foundation changes improve support for extensible enumerations. The **SysPlugin** framework is enabled for enumerations where **IsExtensible** is set to **Yes**. Views are enabled with new name-based syntax for enumerations.
 
-## Data manipulation methods that do not raise DataEvents or missing insert, update, delete pre- and post-data events
+## Data manipulation methods that don't raise DataEvents or missing insert, update, and delete pre- and post-data events
 
-As a general practice, you use data methods on tables to raise events that can be used for extending the application. The code base has not always followed this practice. For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations did not make a call to **super()** in the data method.
+As a general practice, use data methods on tables to raise events that you can use to extend the application. The code base doesn't always follow this practice. For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations didn't call **super()** in the data method.
 
-The **insert**, **update**, and **delete** methods on the type classes have been refactored. Changes were made so that **super()** is called more consistently in data methods. These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension. The tables where the **insert**, **update**, and **delete** events were enabled for extension are listed in the following table.
+The **insert**, **update**, and **delete** methods on the type classes are refactored. Changes ensure that **super()** is called more consistently in data methods. These changes enable you to add extensions to these methods, so that pre- and post-events are now available for extension. The following table lists the tables where the **insert**, **update**, and **delete** events are enabled for extension.
 
 | Table |
 | -------------|
@@ -734,7 +734,7 @@ The **insert**, **update**, and **delete** methods on the type classes have been
 
 ## Exposing class members
 
-Additional private members are now available for customization as a result of the changes to the access modifier or new parm methods. The chain of command platform feature enables extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-chain-of-command).
+You can customize additional private members by changing the access modifier or adding new parm methods. The chain of command platform feature enables extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-chain-of-command).
 
 | Member |
 | -------------|
@@ -760,7 +760,7 @@ Additional private members are now available for customization as a result of th
 
 ## Construct methods with throw statements
 
-Some **construct** methods were implemented with **throw** statements if there was a missing implementation for a given type. This doesn't work well with extensibility, so to mitigate this, **construct** methods were changed so that they do not throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
+Some **construct** methods use **throw** statements when an implementation is missing for a given type. This approach doesn't work well with extensibility. To mitigate this problem, change **construct** methods so they don't throw exceptions. Make these methods open for extensibility through class augmentation or by post-event subscription.
 
 | Object |
 | -------------|
@@ -783,7 +783,7 @@ Some **construct** methods were implemented with **throw** statements if there w
 
 ## Find methods with throw statements
 
-Some **find** methods were implemented with **throw** statements if there was a missing implementation for a given type. This does not work well with extensibility, so to mitigate this, **find** methods were changed so that they do not throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
+Some **find** methods use **throw** statements when an implementation is missing for a given type. This approach doesn't work well with extensibility. To address this problem, change **find** methods so they don't throw exceptions. Make these methods open for extensibility through class augmentation or by post-event subscription.
 
 | Methods |
 | -------------|
@@ -792,7 +792,7 @@ Some **find** methods were implemented with **throw** statements if there was a 
 
 ## Methods made hookable
 
-Extensibility support has been extended for some methods that were not public and were not hookable. The following methods have been explicitly decorated with hookable behavior.
+Extensibility support is now available for some methods that weren't public and weren't hookable. The following methods are explicitly decorated with hookable behavior.
 
 | Method |
 | -------------|
@@ -847,13 +847,12 @@ Inline delegates are now available. The most common way to use inline delegates 
 
 ## Other changes
 
-The following table lists additional changes that have been made for extensibility.
-
+The following table lists additional changes that improve extensibility.
 
 |                                                           Change                                                           |
 |----------------------------------------------------------------------------------------------------------------------------|
 |                                      Add indirection for existing product dimensions                                       |
-|                                  Class FormLetterParmDataOutputContract is not extensible                                  |
+|                                  Class FormLetterParmDataOutputContract isn't extensible                                  |
 |             Create an instantiation strategy for the SysExtensionFramework that supports one or more arguments             |
 |                      Customization: TableField: Extension Model: Change EDT type of on a table field                       |
 |                          CustVendOpenTransBalances - initAccountNumCurrencies() switch statement                           |
@@ -866,7 +865,7 @@ The following table lists additional changes that have been made for extensibili
 |            Exchange rate provider framework requires custom built providers to be placed in the Currency Model             |
 |                                                      Extending GS-128                                                      |
 |                         Extension model: Allow customizations on the CountryRegionCodes property.                          |
-|                  Form extension - Extension of "extended" form elements with new controls are not working                  |
+|                  Form extension - Extension of "extended" form elements with new controls aren't working                  |
 |                                              InventDim: Condition with throw                                               |
 |                                                  InventDimRenameDimValue                                                   |
 |                Method overlayering - Class VendInvoiceTableToLineUpdate.convertPurchTableFieldToVendInvoice                |
@@ -884,15 +883,13 @@ The following table lists additional changes that have been made for extensibili
 |                           Runbase needs a way for class extensions to pack/unpack their members                            |
 |                                              String EDT size extension issues                                              |
 |                              Support opening Inventory on-hand form based on custom InventDim                              |
-|          SysExtension framework: SysExtensionIInstantiationStrategy and SysExtensionIAttribute are not compatible          |
+|          SysExtension framework: SysExtensionIInstantiationStrategy and SysExtensionIAttribute aren't compatible          |
 | Variations of EventHandlerResult are requested to ensure that delegates used in Request/response scenarios are more robust |
 |                                                WHS Mobile Framework: passes                                                |
 |                                     WhsLocationDirectiveLine To/FromQty not extensible                                     |
 |                                                 WHSMobileApp Extensibility                                                 |
-|         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions          |
-|         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions          |
+|         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() isn't generic enough about Product dimensions          |
+|         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() isn't generic enough about Product dimensions          |
 |            WhsRFControlData.processControl must reference WhsControl.data instead of _data in the switch block             |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

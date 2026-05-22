@@ -1,11 +1,10 @@
 ---
 title: Add custom buttons to the POS header bar
-description: This article explains how to add a new custom button to the POS header bar in Microsoft Dynamics 365 Commerce.
+description: Learn how to add a new custom button to the POS header bar in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 02/18/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2020-09-16
@@ -17,9 +16,9 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to add a new custom button to the header bar in the point of sale (POS). The POS header bar extension is supported by Microsoft Dynamics 365 Commerce version 10.0.14 and later.
+This article explains how to add a new custom button to the header bar in the point of sale (POS).
 
-The custom header button must contain an HTML file that includes Cascading Style Sheets (CSS) code that describes the control user interface (UI), styles, and themes. It must also contain a TypeScript view model file that specifies the logic. The class inside the file view model file must extend the **CustomPackingItem** class, so that it inherits the header button properties and events. The **cartChangedHandler** event is exposed on the header button to provide notification if something changes in the cart. Your extension code can do custom logic that is based on cart events, or it can do custom business logic.
+The custom header button must contain an HTML file that includes Cascading Style Sheets (CSS) code that describes the control user interface (UI), styles, and themes. It must also contain a TypeScript view model file that specifies the logic. The class inside the view model file must extend the **CustomPackingItem** class, so it inherits the header button properties and events. The **cartChangedHandler** event is exposed on the header button to provide notification if something changes in the cart. Your extension code can do custom logic that is based on cart events, or it can do custom business logic.
 
 ## CustomPackingItem class
 
@@ -43,7 +42,7 @@ The custom header button must contain an HTML file that includes Cascading Style
 | dispose(): void | This method disposes of the control and releases its resources. |
 | protected abstract init(state: ICustomPackingItemState): void | This method initializes the control. |
 
-You must add nodes for the header button extension in the **manifest.json** file, as shown in the following example.
+Add nodes for the header button extension in the **manifest.json** file, as shown in the following example.
 
 ```typescript
 "header": {
@@ -60,13 +59,13 @@ You must add nodes for the header button extension in the **manifest.json** file
 
 ## Add a custom button to the POS header bar
 
-Follow these steps to add a custom button to the header bar and show the amount due by reading it from the cart.
+To add a custom button to the header bar, follow these steps:
 
 1. Open Visual Studio 2017.
-2. Open the **ModernPOS/CloudPOS** solution from **\\RetailSDK\\POS**.
-3. In the **POS.Extensions** project, create a folder that is named **HeaderExtensionSample**.
-4. In the **HeaderExtensionSample** folder, create an HTML file that is named **CartAmountDuePackingItem.html**.
-5. Copy the following code, and paste it into the file.
+1. Open the **ModernPOS/CloudPOS** solution from **\\RetailSDK\\POS**.
+1. In the **POS.Extensions** project, create a folder named **HeaderExtensionSample**.
+1. In the **HeaderExtensionSample** folder, create an HTML file named **CartAmountDuePackingItem.html**.
+1. Copy the following code, and paste it into the file.
 
     ```html
     <!DOCTYPE html>
@@ -98,8 +97,8 @@ Follow these steps to add a custom button to the header bar and show the amount 
     </html>
     ```
 
-6. In the **HeaderExtensionSample** folder, create a TypeScript file that is named **CartAmountDuePackingItem.ts**.
-7. Copy the following code, and paste it into the file.
+1. In the **HeaderExtensionSample** folder, create a TypeScript file named **CartAmountDuePackingItem.ts**.
+1. Copy the following code, and paste it into the file.
 
     ```typescript
     import {
@@ -210,8 +209,8 @@ Follow these steps to add a custom button to the header bar and show the amount 
     }
     ```
 
-8. In the **HeaderExtensionSample** folder, create a JavaScript Object Notation (JSON) file that is named **manifest.json**.
-9. Copy the following code, and paste it into the file.
+1. In the **HeaderExtensionSample** folder, create a JavaScript Object Notation (JSON) file named **manifest.json**.
+1. Copy the following code, and paste it into the file.
 
     ```typescript
     {
@@ -237,8 +236,8 @@ Follow these steps to add a custom button to the header bar and show the amount 
     }
     ```
 
-10. In the **POS.Extensions** project, open the **extensions.json** file.
-11. Update the details of the **HeaderExtensionSample** package, so that the POS can include this extension package during the initial load.
+1. In the **POS.Extensions** project, open the **extensions.json** file.
+1. Update the details of the **HeaderExtensionSample** package, so that the POS can include this extension package during the initial load.
 
     ```typescript
     {
@@ -250,16 +249,15 @@ Follow these steps to add a custom button to the header bar and show the amount 
     }
     ```
 
-12. Build the project.
+1. Build the project.
 
 ### Validate the customization
 
-Follow these steps to validate the customization.
+To validate the customization, follow these steps:
 
-1. Sign in to the POS by entering the operator ID and password.
-2. Look at the header bar. The custom button that you added should be visible.
+1. Sign in to the POS by entering the operator ID and password.
+1. Look at the header bar. The custom button that you added should be visible.
 
 You can view the status of the extension package on the [POS settings page](view-pos-extension-package-details.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

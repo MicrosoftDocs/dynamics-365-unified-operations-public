@@ -4,7 +4,9 @@ description: Learn how to configure system parameters to report sales tax books 
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 03/04/2024
+ms.custom: 
+  - bap-template
+ms.date: 05/01/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy
@@ -30,7 +32,7 @@ As of Dynamics 365 Finance version 10.0.39, the ER format of Italian sales tax b
 
 ## <a id="number-sequences"></a>Number sequences and number sequence groups
 
-Set up as many number sequences and number sequence groups as you require to cover all the required types of sales tax transactions. For more information about number sequences in Finance, see [Number sequences overview](/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
+Set up as many number sequences and number sequence groups as you require to cover all the required types of sales tax transactions. For more information about number sequences in Finance, see [Number sequences overview](../../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 
 For continuous numbering of documents in Italian sales tax books, number sequences must be continuous, and they must have the **Company** scope.
 
@@ -41,30 +43,30 @@ In parameters of the **Accounts receivable**, **Accounts payable**, and **Projec
 To set up number sequence groups in Accounts receivable parameters, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
-2. On the **Number sequence** tab, in the **Reference** column, select **Free text invoice**.
-3. Select the **Group** button above the grid.
-4. On the **Number sequence groups** page, define the required number sequence groups. On the **References** FastTab, associate each number sequence that you previously set up with the appropriate area. The **Sales tax book section** column shows the sales tax book section that's associated with the selected number sequence when you set up [sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
-5. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** checkbox when you define the number sequences for those invoices and credit notes. For example, on the **Accounts receivable parameters** page, on the **Number sequences** tab, select the **Reuse numbers** checkbox for **Free text invoice voucher** to synchronize number allocation for free text invoice vouchers and free text invoices.
+1. On the **Number sequence** tab, in the **Reference** column, select **Free text invoice**.
+1. Select the **Group** button above the grid.
+1. On the **Number sequence groups** page, define the required number sequence groups. On the **References** FastTab, associate each number sequence that you previously set up with the appropriate area. The **Sales tax book section** column shows the sales tax book section that's associated with the selected number sequence when you set up [sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
+1. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** checkbox when you define the number sequences for those invoices and credit notes. For example, on the **Accounts receivable parameters** page, on the **Number sequences** tab, select the **Reuse numbers** checkbox for **Free text invoice voucher** to synchronize number allocation for free text invoice vouchers and free text invoices.
 
 ### Accounts payable parameters
 
 To set up number sequence groups in Accounts payable parameters, follow these steps:
 
 1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
-2. On the **Number sequence** tab, in the **Reference** column, select **Internal invoice**.
-3. Select the **Group** button above the grid.
-4. On the **Number sequence groups** page, define the required number sequence groups. On the **References** FastTab, associate each number sequence that you previously set up with the appropriate area. The **Sales tax book section** column shows the sales tax book section that's associated with selected number sequence when you set up [sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
-5. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** checkbox when you define the number sequences for those invoices and credit notes.
+1. On the **Number sequence** tab, in the **Reference** column, select **Internal invoice**.
+1. Select the **Group** button above the grid.
+1. On the **Number sequence groups** page, define the required number sequence groups. On the **References** FastTab, associate each number sequence that you previously set up with the appropriate area. The **Sales tax book section** column shows the sales tax book section that's associated with selected number sequence when you set up [sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
+1. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** checkbox when you define the number sequences for those invoices and credit notes.
 
 ### Project management and accounting parameters
 
 To set up number sequence groups in Project management and accounting parameters, follow these steps:
 
 1. Go to **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.
-2. On the **Number sequence** tab, in the **Reference** column, select **Invoice voucher**.
-3. Select the **Group** button above the grid.
-4. On the **Number sequence groups** page define the required number sequence groups. On the **References** FastTab, associate each number sequence that you previously set up with the appropriate area. The **Sales tax book section** column shows the sales tax book section that's associated with the selected number sequence when you set up [sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
-5. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** checkbox when you define the number sequences for those invoices and credit notes.
+1. On the **Number sequence** tab, in the **Reference** column, select **Invoice voucher**.
+1. Select the **Group** button above the grid.
+1. On the **Number sequence groups** page define the required number sequence groups. On the **References** FastTab, associate each number sequence that you previously set up with the appropriate area. The **Sales tax book section** column shows the sales tax book section that's associated with the selected number sequence when you set up [sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
+1. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** checkbox when you define the number sequences for those invoices and credit notes.
 
 ## Journal names
 
@@ -117,12 +119,12 @@ The Italian localization doesn't support corrections to the Italian sales tax pa
 To set up a sales tax authority, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
-2. Select **New** to create a record, and specify the parameters of the tax authority. For more information, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md).
-3. In the **Report layout** field, select **Default**.
-4. In the **Vendor account** field, select a vendor account that corresponds to the tax authority that has a primary address in Italy.
-5. To print a blank page on the sales tax payment report for periods that have no transactions, select the **Print blank page with no transactions** option.
-6. To use a separate tax book to number summary sections, select the **Separate summary register** checkbox.
-7. In the **Account gain** and **Account loss** fields, specify main accounts. These main accounts are used to automatically post rounding results during the sales tax settlement procedure.
+1. Select **New** to create a record, and specify the parameters of the tax authority. For more information, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md).
+1. In the **Report layout** field, select **Default**.
+1. In the **Vendor account** field, select a vendor account that corresponds to the tax authority that has a primary address in Italy.
+1. To print a blank page on the sales tax payment report for periods that have no transactions, select the **Print blank page with no transactions** option.
+1. To use a separate tax book to number summary sections, select the **Separate summary register** checkbox.
+1. In the **Account gain** and **Account loss** fields, specify main accounts. These main accounts are used to automatically post rounding results during the sales tax settlement procedure.
 
 ## Sales tax settlement periods
 
@@ -131,9 +133,9 @@ According to Italian legislation, rules apply to settlement periods. For example
 To set up sales tax settlement periods, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
-2. Select **New** to create a record, and specify the parameters of the sales tax settlement period. For more information, see [Set up sales tax settlement periods](../../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
-3. To attach the generated Italian sales tax book ER format to the **Sales tax book status** records, select the **Attach report to Sales tax book status** checkbox.
-4. To report amounts in the Italian sales tax book ER format in the tax currency, select the **Report in tax currency** checkbox.
+1. Select **New** to create a record, and specify the parameters of the sales tax settlement period. For more information, see [Set up sales tax settlement periods](../../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
+1. To attach the generated Italian sales tax book ER format to the **Sales tax book status** records, select the **Attach report to Sales tax book status** checkbox.
+1. To report amounts in the Italian sales tax book ER format in the tax currency, select the **Report in tax currency** checkbox.
 
 In legal entities that have an address in Italy, the following columns are added for period intervals on the **Sales tax settlement periods** page.
 

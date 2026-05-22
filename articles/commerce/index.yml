@@ -303,9 +303,6 @@ additionalContent:
   - title: Related products
     items:
         # Card
-        - title: Dynamics 365 Fraud Protection
-          summary: Help protect your revenue and customers with adaptive AI that continuously learns to protect you against payment fraud, bots, account takeover, and returns and discounts fraud.
-          url: /dynamics365/fraud-protection/
         - title: Dynamics 365 Supply Chain Management
           summary: Supply Chain Management allows you to provide the right services and products to your customers, manage relationships, drive targeted campaigns, and provide a great customer experience.
           url: /dynamics365/supply-chain/

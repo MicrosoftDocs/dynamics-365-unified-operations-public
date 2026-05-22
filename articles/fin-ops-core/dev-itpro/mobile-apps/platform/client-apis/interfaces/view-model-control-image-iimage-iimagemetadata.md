@@ -4,7 +4,7 @@ description: Learn about the ImageMetadata type, which includes the BaseUrl, Bou
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/31/2024
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.custom: 

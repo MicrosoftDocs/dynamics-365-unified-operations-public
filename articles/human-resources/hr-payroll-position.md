@@ -3,8 +3,8 @@
 
 title: Payroll position details entity
 description: This article provides details and an example query for the Payroll position details entity in Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 05/10/2024
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 ms.reviewer: twheeloc
 
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Payroll position details entity (payintv1payrollpositiondetailsentities) for Dynamics 365 Human Resources.
+This article describes the Payroll position details entity for Dynamics 365 Human Resources.
 
-Physical name: mserp_payintv1payrollpositiondetailsentities
+Physical name: mshr_payrollpositiondetailsentities
 
 ## Description
 
@@ -40,54 +40,54 @@ This entity provides information about the payroll position details.
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| IsSalaryGenerated | mserp_IsSalaryGenerated | Enum | Read-only |
-| DefaultEarningCode | mserp_DefaultEarningCode | Int64 | Read-only |
-| InsuranceBenefit | mserp_InsuranceBenefit | Int64 | Read-only |
-| AreEarningsGeneratedFromSchedule | mesrp_areEarningsGeneratedFromSchedule | Enum | Read-only |
-| LegalEntity | mserp_LegalEntity | Int64 | Read-only |
-| PayCycle | mserp_PayCycle | Int64 | Read-only |
-| AnnualRegularHours | mserp_AnnualRegularHours | Real | Read-only |
-| PayPeriodOvertimeHours | mserp_PayPeriodOvertimeHours | Real | Read-only |
-|Positions| mserp_Positions | Int64 | Read-only |
-| Schedule| mserp_Schedule | String | Read-only |
-| ScheduleLegalEntity | mserp_ScheduleLegalEntity |String | Read-only |
-| ValidFrom| mserp_ValidFrom |Datetime offset | Read-only |
-| ValidTo| mserp_ValidTo |  Datetime offset | Read-only |
-| BenefitId| mserp_BenefitId | String | Read-only |
-| PaidByLegalEntity| mserp_PaidByLegalEntity | String | Read-only |
-| DefaultEarningCodeId| mserp_DefaultEarningCodeId  | String | Read-only |
-| PayCycleId| mserp_PayCycleId | String | Read-only |
-| PositionId | mserp_PositionId | String | Read-only |
+| IsSalaryGenerated | mshr_IsSalaryGenerated | Enum | Read-only |
+| DefaultEarningCode | mshr_DefaultEarningCode | Int64 | Read-only |
+| InsuranceBenefit | mshr_InsuranceBenefit | Int64 | Read-only |
+| AreEarningsGeneratedFromSchedule | mshr_areEarningsGeneratedFromSchedule | Enum | Read-only |
+| LegalEntity | mshr_LegalEntity | Int64 | Read-only |
+| PayCycle | mshr_PayCycle | Int64 | Read-only |
+| AnnualRegularHours | mshr_AnnualRegularHours | Real | Read-only |
+| PayPeriodOvertimeHours | mshr_PayPeriodOvertimeHours | Real | Read-only |
+|Positions| mshr_Positions | Int64 | Read-only |
+| Schedule| mshr_Schedule | String | Read-only |
+| ScheduleLegalEntity | mshr_ScheduleLegalEntity |String | Read-only |
+| ValidFrom| mshr_ValidFrom |Datetime offset | Read-only |
+| ValidTo| mshr_ValidTo |  Datetime offset | Read-only |
+| BenefitId| mshr_BenefitId | String | Read-only |
+| PaidByLegalEntity| mshr_PaidByLegalEntity | String | Read-only |
+| DefaultEarningCodeId| mshr_DefaultEarningCodeId  | String | Read-only |
+| PayCycleId| mshr_PayCycleId | String | Read-only |
+| PositionId | mshr_PositionId | String | Read-only |
 
 ## Example query for the Payroll position details entity
 
-Entity name: mserp_payintv1payrollpositiondetailsentities
+Entity name: mshr_payrollpositiondetailsentities
 
 **Request**
 
 ```HTTP
-GET [Organization URI]/api/data/v9.1/mserp_payintv1payrollpositiondetailsentities
+GET [Organization URI]/api/data/v9.1/mshr_payrollpositiondetailsentities
 ```
 
 **Response**
 
 ```JSON
 {  
-    "mserp_issalarygenerated": 200000000,  
-    "mserp_areearningsgeneratedfromschedule": 200000001,  
-    "mserp_paycycle": 5637145336,  
-    "mserp_paycycle_bigint": 5637145336,  
-    "mserp_annualregularhours": 2080,  
-    "mserp_payperiodovertimehours": 0,  
-    "mserp_schedule": "Payroll",  
-    "mserp_schedulelegalentity": "USMF",  
-    "mserp_validfrom": "2005-01-01T00:00:00Z",  
-    "mserp_validto": "2154-12-31T00:00:00Z",  
-    "mserp_benefitid": "",  
-    "mserp_paidbylegalentity": "USMF",  
-    "mserp_defaultearningcodeid": "Regular",  
-    "mserp_paycycleid": "w",  
-    "mserp_positionid": "000001",  
-    "mserp_primaryfield": "000001 | 1/1/2005 | 12/31/2154",  
+    "mshr_issalarygenerated": 200000000,  
+    "mshr_areearningsgeneratedfromschedule": 200000001,  
+    "mshr_paycycle": 5637145336,  
+    "mshr_paycycle_bigint": 5637145336,  
+    "mshr_annualregularhours": 2080,  
+    "mshr_payperiodovertimehours": 0,  
+    "mshr_schedule": "Payroll",  
+    "mshr_schedulelegalentity": "USMF",  
+    "mshr_validfrom": "2005-01-01T00:00:00Z",  
+    "mshr_validto": "2154-12-31T00:00:00Z",  
+    "mshr_benefitid": "",  
+    "mshr_paidbylegalentity": "USMF",  
+    "mshr_defaultearningcodeid": "Regular",  
+    "mshr_paycycleid": "w",  
+    "mshr_positionid": "000001",  
+    "mshr_primaryfield": "000001 | 1/1/2005 | 12/31/2154",  
 }
 ```

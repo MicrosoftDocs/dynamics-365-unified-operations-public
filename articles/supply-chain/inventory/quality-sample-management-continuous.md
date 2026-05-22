@@ -1,5 +1,5 @@
 ---
-title: Set up continuous sampling (preview)
+title: Set up continuous sampling
 description: Learn how to set up continuous sampling for specific products.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,13 @@ ms.custom:
   - bap-template
 ---
 
-# Set up continuous sampling (preview)
+# Set up continuous sampling
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 ## Prerequisites
 
-To prepare your environment for inline sampling, set up the following elements as described in [Enable and configure sample management (preview)](quality-sample-management-admin.md):
+To prepare your environment for inline sampling, set up the following elements as described in [Enable and configure sample management](quality-sample-management-admin.md):
 
 - A number sequence for generating sample IDs.
 - Sample lifecycle states.

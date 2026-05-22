@@ -2,7 +2,7 @@
 title: Create customer and vendor records with an address in Bolivia
 description: Learn how to create customer and vendor records that have an address in Bolivia.
 author: Cpicon85
-ms.date: 02/18/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.author: v-cpicon

@@ -3,8 +3,8 @@
 
 title: Process type
 description: This article describes the Process type option set for Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 06/25/2021
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 # optional metadata
 
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article describes the No Yes option set for Dynamics 365 Human Resources.
+This article describes the Process type option set for Dynamics 365 Human Resources.
 
 ## Option set: Process type
 
-Physical name: mshr_hrmCompProcessType
+Physical name: mserp_hrmCompProcessType
 
 This enumeration provides the option set for process type in Human Resources virtual entities.
 

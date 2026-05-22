@@ -1,11 +1,10 @@
 ---
 title: Configure optional features for a Dynamics 365 Commerce sandbox environment
-description: This article explains how to configure optional features for a Microsoft Dynamics 365 Commerce sandbox environment.
+description: Learn how to configure optional features for a Microsoft Dynamics 365 Commerce sandbox environment.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 01/21/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-12-10
@@ -21,10 +20,10 @@ This article explains how to configure optional features for a Microsoft Dynamic
 
 ## Prerequisites
 
-If you want to demo the transactional email features, the following prerequisites must be met:
+To demo the transactional email features, make sure the following prerequisites are met:
 
-- You have an available email server (Simple Mail Transfer Protocol \[SMTP\] server) that can be used from the Microsoft Azure subscription where you provisioned the sandbox environment.
-- You have the server's fully qualified domain name (FQDN)/IP address, SMTP port number, and authentication details available.
+- You have an available email server (Simple Mail Transfer Protocol [SMTP] server) that you can use from the Microsoft Azure subscription where you provisioned the sandbox environment.
+- You have the server's fully qualified domain name (FQDN) or IP address, SMTP port number, and authentication details.
 
 ## Configure the image back end
 
@@ -37,11 +36,11 @@ If you want to demo the transactional email features, the following prerequisite
 1. Open the **Fabrikam**, **Adventure Works**, or **Adventure Works Business** site that you want to work with.
 1. On the menu on the left, select **Media Library**.
 1. Select any single image asset.
-1. In the property inspector on the right, find the **Public URL** property. The value is a URL. Here is an example:
+1. In the property inspector on the right, find the **Public URL** property. The value is a URL. Here's an example:
 
     `https://images-us-sb.cms.commerce.dynamics.com/cms/api/fabrikam/imageFileData/MA1nQC`.
 
-1. Replace the last identifier in the URL (**MA1nQC** in the preceding example) with the string **search?fileName=**. Here is what the example URL looks like after this change is made:
+1. Replace the last identifier in the URL (`MA1nQC` in the preceding example) with the string `search?fileName=`. Here's what the example URL looks like after this change is made:
 
     `https://images-us-sb.cms.commerce.dynamics.com/cms/api/fabrikam/imageFileData/search?fileName=`
 
@@ -50,23 +49,23 @@ If you want to demo the transactional email features, the following prerequisite
 ### Update the media base URL
 
 1. Sign in to Commerce headquarters.
-1. Use the menu on the left to go to **Modules \> Retail and commerce \> Channel setup \> Channel profiles**.
+1. Go to **Modules \> Retail and commerce \> Channel setup \> Channel profiles**.
 1. Select **Edit**.
 1. Under **Profile properties**, replace the value for the **Media Server Base URL** property with the media base URL that you created earlier.
 1. Select the channel that is named **scXXXXXXXXX**.
 1. Under **Profile properties**, select **Add**.
-1. For the property that was added, select **Media Server Base URL** as the property key. As the property value, enter the media base URL that you created earlier.
+1. For the property that you added, select **Media Server Base URL** as the property key. As the property value, enter the media base URL that you created earlier.
 1. Select **Save**.
 
 ## Configure and test the email server
 
 > [!NOTE]
-> The SMTP server or email service that you enter here must be accessible from the Azure subscription that you're using for the environment.
+> You must be able to access the SMTP server or email service that you enter here from the Azure subscription that you're using for the environment.
 
 1. Sign in to Commerce headquarters.
-1. Use the menu on the left to go to **Modules \> Retail and Commerce \> Headquarters setup \> Parameters \> Email parameters**.
+1. Go to **Modules \> Retail and Commerce \> Headquarters setup \> Parameters \> Email parameters**.
 1. On the **SMTP settings** tab, in the **Outgoing mail server** field, enter the FQDN or IP address of your SMTP server or email service.
-1. In the **SMTP port number** field, enter the port number. (If you aren't using Secure Sockets Layer \[SSL\], the default port number is **25**.)
+1. In the **SMTP port number** field, enter the port number. If you aren't using Transport Layer Security/Secure Sockets Layer (TLS/SSL), the default port number is **25**.
 1. If authentication is required, enter values in the **User name** and **Password** fields.
 1. Select **Save**.
 1. Select **Refresh**.
@@ -76,10 +75,10 @@ If you want to demo the transactional email features, the following prerequisite
 
 ## Configure email templates
 
-For each transactional event that you want to send emails for, you must update the email template with a valid sender email address.
+For each transactional event that you want to send emails for, update the email template with a valid sender email address.
 
 1. Sign in to Commerce headquarters.
-1. Use the menu on the left to go to **Modules \> Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates**.
+1. Go to **Modules \> Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates**.
 1. Select **Show list**.
 1. For each template in the list, follow these steps:
 
@@ -102,8 +101,8 @@ You might want to customize the email templates so that they use different image
 
 1. Customize the templates by using a text or HTML editor. See the list of [supported tokens](#supported-tokens-in-the-email-template) later in this article.
 1. Sign in to Commerce.
-1. Use the menu on the left to go to **Modules \> Organization administration \> Setup \> Organization email templates**.
-1. Expand the list on the left to see all the templates.
+1. Go to **Modules \> Organization administration \> Setup \> Organization email templates**.
+1. Expand the list to see all the templates.
 1. For each template that you want to customize, follow these steps:
 
     1. Select the template in the list.
@@ -150,11 +149,11 @@ The following tokens are replaced with values for each product in the order.
 | Description            | %lineproductdescription% |
 | Quantity               | %linequantity% |
 | Line unit price        | %lineprice% (verify) |
-| line item total        | %linenetamount% |
-| line discount          | %linediscount% |
+| Line item total        | %linenetamount% |
+| Line discount          | %linediscount% |
 | Ship date              | %lineshipdate% |
 | Procurement method     | %linedeliverymode% |
-| delivery address       | %linedeliveryaddress% |
+| Delivery address       | %linedeliveryaddress% |
 | Sales unit of the line | %lineunit% |
 
 ## Additional resources

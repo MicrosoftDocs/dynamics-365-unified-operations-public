@@ -3,8 +3,8 @@ title: New GSTR-1 and GSTR-2 return formats
 description: Learn how to generate GSTR-1 and GSTR-2 reports in Microsoft Dynamics 365 according to the new format that was released by Goods and Services Tax (GST).
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 03/16/2021
+ms.topic: how-to
+ms.date: 04/30/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: India
@@ -22,27 +22,27 @@ The following comma-separated values (CSV) files have been made obsolete (deprec
 
 - **GSTR-1:**
 
-    - GSTR1 Adjust multiple Advance receipt for invoice
-    - GSTR1 Advance receipt format
-    - GSTR1 Refund voucher
+  - GSTR1 Adjust multiple Advance receipt for invoice
+  - GSTR1 Advance receipt format
+  - GSTR1 Refund voucher
 
 - **GSTR-2:**
 
-    - GSTR2 Adjust multiple Advance payment for invoice
-    - GSTR2 Advance payment format
-    - GSTR2 Refund voucher
+  - GSTR2 Adjust multiple Advance payment for invoice
+  - GSTR2 Advance payment format
+  - GSTR2 Refund voucher
 
 The following files have been updated:
 
 - **GSTR-1:**
 
-    - GSTR1 Invoice and Bill of Supply
-    - GSTR1 Credit debit note
+  - GSTR1 Invoice and Bill of Supply
+  - GSTR1 Credit debit note
 
 - **GSTR-2:**
 
-    - GSTR2 Invoice and bill of supply
-    - GSTR2 Credit debit note
+  - GSTR2 Invoice and bill of supply
+  - GSTR2 Credit debit note
 
 ## Changes in the new return format
 
@@ -52,24 +52,24 @@ The following columns have been added in these files:
 
 - **Sales Invoice and Bill of supply file:**
 
-    - Differential % of Tax Rate
-    - Supply covered Under Sec.7 of IGST Act
-    - Would you claim Refund?
-    - Return Filing month
-    - Return Filing Quarter
+  - Differential % of Tax Rate
+  - Supply covered Under Sec.7 of IGST Act
+  - Would you claim Refund?
+  - Return Filing month
+  - Return Filing Quarter
 
 - **Sales credit Debit note file:**
 
-    - Applicable % of tax Rate
-    - Supply covered under Sec. 7 of IGST Act
-    - Would you claim Refund?
-    - Type of Export
-    - Shipping Port code - Export
-    - Shipping Bill number - Export
-    - Shipping Bill date - Export
-    - Return Filling Month
-    - Return filing quarter
-    - GSTN of E-commerce market place
+  - Applicable % of tax Rate
+  - Supply covered under Sec. 7 of IGST Act
+  - Would you claim Refund?
+  - Type of Export
+  - Shipping Port code - Export
+  - Shipping Bill number - Export
+  - Shipping Bill date - Export
+  - Return Filling Month
+  - Return filing quarter
+  - GSTN of E-commerce market place
 
 ### GSTR-2
 
@@ -77,34 +77,34 @@ The following columns have been added in these files:
 
 - **Purchase Invoice and Bill of Supply file:**
 
-    - Supply covered under section 7 of IGST Act
-    - Would you claim Refund
-    - Return Filing Month
-    - Return Filing Quarter
+  - Supply covered under section 7 of IGST Act
+  - Would you claim Refund
+  - Return Filing Month
+  - Return Filing Quarter
 
 - **Purchase Credit Debit Note file:**
 
-    - Supply covered under Sec 7 of IGST Act
-    - Would you claim Refund
-    - Type of Import (Goods, Services, SEZ)
-    - Bill of Entry port code
-    - Bill of entry number
-    - Bill of Entry Date
-    - Bill of Entry Value
-    - Return filling Month
-    - Return filling Quarter
+  - Supply covered under Sec 7 of IGST Act
+  - Would you claim Refund
+  - Type of Import (Goods, Services, SEZ)
+  - Bill of Entry port code
+  - Bill of entry number
+  - Bill of Entry Date
+  - Bill of Entry Value
+  - Return filling Month
+  - Return filling Quarter
 
 ### Set up Dynamics 365 Finance to report ANX-1
 
 You must complete the following tasks to prepare Microsoft Dynamics 365 Finance to report ANX-1:
 
 1. Import and set up Electronic reporting (ER) configurations.
-2. Map the reporting configuration in the tax setup.
-3. Provide report data for report generation.
+1. Map the reporting configuration in the tax setup.
+1. Provide report data for report generation.
 
     - Generate a new ANX-1 report: ANX-1 files will generate 10 CSV files.
 
-4. Provide report data for report generation.
+1. Provide report data for report generation.
 
     - Generate the Purchase Register Excel file.
 
@@ -199,19 +199,19 @@ Follow these steps to load the report configuration into workspaces.
 1. Go to **Workspaces \> Electronic reporting**, and select the **Reporting configurations** tile.
 2. On the **Configurations** page, select **Exchange \> Load from XML file**, and import the configuration files in the order that is provided in the first table in the [Import and set up ER configurations](#import-and-set-up-er-configurations) section, earlier in this article.
 
-![Configurations page.](../media/New-GSTR-Format-005.PNG)
+:::image type="content" source="../media/New-GSTR-Format-005.PNG" alt-text="Screenshot of the Configurations page.":::
 
 ### Map the report configuration in the tax setup
 
 1. Go to **Tax \> Setup \> Tax configuration \> Tax setup**, and select **Configurations**.
-2. On the **Configurations** page, on the **Reporting configurations** tab, follow these steps for each file that you imported:
+1. On the **Configurations** page, on the **Reporting configurations** tab, follow these steps for each file that you imported:
 
     1. Select the **Select** check box.
-    2. Select a value in **Report data provider** field.
+    1. Select a value in **Report data provider** field.
 
-    ![Report configuration tab on the Configurations page.](../media/New-GSTR-Format-006.PNG)
+    :::image type="content" source="../media/New-GSTR-Format-006.PNG" alt-text="Screenshot of the Report configuration tab on the Configurations page.":::
 
-3. Select the **Close** button.
+1. Select the **Close** button.
 
 > [!NOTE]
 > If you don't select a report in the **Report controller** field, the report won't be available for selection under **Sales tax reports \> India** in step 1 of the procedures in the next section.
@@ -223,27 +223,27 @@ Follow these steps to load the report configuration into workspaces.
 Follow these steps to generate a GSTR-1 report in the new format.
 
 1. Go to **Tax \> Sales tax reports \> India \> GER export to GSTR CSV**.
-2. In the **GER export to GSTR CSV** dialog box, in the **From date** field, select the start date of the reporting period for the report.
-3. In the **To date** field, select the end date of the reporting period for the report.
-4. In the **Registration number** field, select the registration number.
-5. In the **Configuration** field, select **GSTR-1 for New Return**.
-6. In the **File name** field, enter **GSTR-1 for New Return**.
+1. In the **GER export to GSTR CSV** dialog box, in the **From date** field, select the start date of the reporting period for the report.
+1. In the **To date** field, select the end date of the reporting period for the report.
+1. In the **Registration number** field, select the registration number.
+1. In the **Configuration** field, select **GSTR-1 for New Return**.
+1. In the **File name** field, enter **GSTR-1 for New Return**.
 
-    ![GER export to GSTR CSV dialog box for the GSTR-1 report.](../media/New-GSTR-Format-007.PNG)
+    :::image type="content" source="../media/New-GSTR-Format-007.PNG" alt-text="Screenshot of the GER export to GSTR CSV dialog box for the GSTR-1 report.":::
 
-7. Select **OK** to save the report.
+1. Select **OK** to save the report.
 
 ### GSTR-2 report
 
 Follow these steps to generate a GSTR-2 report in the new format.
 
 1. Go to **Tax \> Sales Tax reports \> India \> GER export to GSTR CSV**.
-2. In the **GER export to GSTR CSV** dialog box, in the **From date** field, select the start date of the reporting period for the report.
-3. In the **To date** field, select the end date of the reporting period for the report.
-4. In the **Registration number** field, select the registration number.
-5. In the **Configuration** field, select **GSTR-2 for New Return**.
-6. In the **File name** field, enter **GSTR-2 for New Return**.
+1. In the **GER export to GSTR CSV** dialog box, in the **From date** field, select the start date of the reporting period for the report.
+1. In the **To date** field, select the end date of the reporting period for the report.
+1. In the **Registration number** field, select the registration number.
+1. In the **Configuration** field, select **GSTR-2 for New Return**.
+1. In the **File name** field, enter **GSTR-2 for New Return**.
 
-    ![GER export to GSTR CSV dialog box for the GSTR-2 report.](../media/New-GSTR-Format-008.PNG)
+    :::image type="content" source="../media/New-GSTR-Format-008.PNG" alt-text="Screenshot of the GER export to GSTR CSV dialog box for the GSTR-2 report.":::
 
-7. Select **OK** to save the report.
+1. Select **OK** to save the report.

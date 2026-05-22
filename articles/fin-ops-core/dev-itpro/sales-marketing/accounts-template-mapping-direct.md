@@ -4,7 +4,7 @@ description: Learn about the templates and underlying tasks that are used to syn
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.custom: 
 ms.reviewer: kamaybac
 audience: IT Pro
@@ -18,8 +18,6 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
@@ -29,7 +27,7 @@ This article discusses the templates and underlying tasks that are used to synch
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales.  The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)](/media/prospect-to-cash-data-flow.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png" alt-text="Screenshot of data flow in Prospect to cash.":::
 
 ## Templates and tasks
 
@@ -90,7 +88,7 @@ The following illustrations show an example of a template mapping in Data integr
 > [!NOTE]
 > The mapping shows which column information will be synchronized from Sales to Supply Chain Management.
 
-![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/accounts-direct-template-mapping-data-integrator-1.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/accounts-direct-template-mapping-data-integrator-1.png" alt-text="Screenshot of template mapping in Data integration.":::
 
 ## Related articles
 

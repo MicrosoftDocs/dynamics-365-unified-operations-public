@@ -2,9 +2,9 @@
 title: Edit the properties of connected Dataverse environments
 description: Learn about how to edit the properties of a Microsoft Dataverse environment when finance and operations apps are integrated with Microsoft Power Platform.
 author: abunduc-ms
-ms.author: abunduc
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 06/19/2024
+ms.date: 01/22/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -12,16 +12,16 @@ ms.reviewer: johnmichalak
 
 # Edit the properties of connected Dataverse environments
 
-When Microsoft Power Platform Integration is enabled, the finance and operations apps environment and the customer engagements apps environment are tightly connected. Administrators should regard these two platforms as one environment that has multiple apps. This article describes how Power Platform Integration affects the process of editing the properties of an environment.
+When you enable Microsoft Power Platform Integration, you tightly connect the finance and operations apps environment and the customer engagements apps environment. Administrators should regard these two platforms as one environment that has multiple apps. This article describes how Power Platform Integration affects the process of editing the properties of an environment.
 
 > [!IMPORTANT]
 > Power Platform Integration isn't affected by the environment lifecycle scenarios that are described in this article.
 
 ## Edit the properties of an environment by using Power Platform admin center
 
-Administrators can edit the properties of an environment in Power Platform admin center when there's no link with a finance and operations app. Although most of the properties can still be edited, there's one exception:
+Administrators can edit the properties of an environment in Power Platform admin center when there's no link with a finance and operations app. Although you can still edit most of the properties, there's one exception:
 
-- **URL** – For Dataverse environments that are linked to finance and operations apps, the URL can no longer be updated. If you try, you receive the following error message:
+- **URL** – For Dataverse environments that you link to finance and operations apps, you can't update the URL. If you try, you receive the following error message:
 
     > The finance and operations environment does not support domain name changes. 
 

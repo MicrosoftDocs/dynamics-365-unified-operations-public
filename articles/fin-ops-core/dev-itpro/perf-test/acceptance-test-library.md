@@ -4,7 +4,7 @@ description: Learn about the Acceptance test library and its benefits, including
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: article
-ms.date: 07/23/2019
+ms.date: 03/16/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer
@@ -17,10 +17,9 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
-
 The Acceptance test library (ATL) is an X++ test library that offers the following benefits:
 
-- It lets you create consistent test data.
+- You can create consistent test data.
 - It increases the readability of test code.
 - It provides improved discoverability of the methods that are used to create test data.
 - It hides the complexity of setting up prerequisites.
@@ -61,8 +60,8 @@ The structure and naming of the classes and methods in ATL are quite rigid. This
 The classes are grouped into the following concepts:
 
 - [Navigation](concepts-navigation.md) – Discover entities and test data methods in a familiar hierarchy.
-- [Test data methods](test-data-methods.md) – These methods are used to set up test data.
-- [Entities](concepts-entities.md) – Entities represent data and associated behavior that is perceived as a single unit.
+- [Test data methods](test-data-methods.md) – Use these methods to set up test data.
+- [Entities](concepts-entities.md) – Entities represent data and associated behavior that you perceive as a single unit.
 - [Creators](concepts-creators.md) – Creators let you create specific test data.
 - [Commands](concepts-commands.md) – Commands run business operations.
 - [Queries](concepts-queries.md) – Queries find entities.
@@ -70,11 +69,11 @@ The classes are grouped into the following concepts:
 
 ## Code generation
 
-Queries and specifications help simplify the process of creating entities. For more information, see [Acceptance test library Code generation wizard](code-generation-wizard.md). The **Code generation** wizard can be used to create scenarios and update them.
+Queries and specifications help simplify the process of creating entities. For more information, see [Acceptance test library Code generation wizard](code-generation-wizard.md). Use the **Code generation** wizard to create scenarios and update them.
 
 ## Further reading
 
-Microsoft has used ATL internally for several years, as the foundation for thousands of tests. For more information see, [Best practices for the Acceptance test library](atl-best-practices.md) and [Acceptance test library FAQ](atl-faq.md).
+Microsoft has used ATL internally for several years as the foundation for thousands of tests. For more information, see [Best practices for the Acceptance test library](atl-best-practices.md) and [Acceptance test library FAQ](atl-faq.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
