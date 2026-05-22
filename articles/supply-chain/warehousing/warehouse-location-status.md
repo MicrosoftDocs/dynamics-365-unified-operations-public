@@ -43,7 +43,7 @@ To work through the example scenario by using the sample records and values that
 
 The example scenario requires that you prepare two location profiles.
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
+1. Go to **Warehouse management > Setup > Warehouse > Location profiles**.
 1. Select **Edit** to put the page into edit mode.
 1. Select the *BULK-06* profile.
 1. On the **General** FastTab, set the following values:
@@ -126,7 +126,7 @@ The example scenario requires that you prepare two location profiles.
 1. On the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
 1. In the **Sales order lines** section, on the **Warehouse** menu, select **Work details**.
 1. Copy the **Work ID** value that was created.
-1. On the mobile device, go to **Outbound \> Sales picking**.
+1. On the mobile device, go to **Outbound > Sales picking**.
 1. Select the **ID** field, enter the work ID that you copied earlier, and confirm.
 1. On the **Sales orders: Pick** page, the **LOC** field suggests the picking location as the putaway location that was created earlier. Make a note of the location.
 1. Select the **LOC** field, enter the location, and confirm.

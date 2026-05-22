@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-Use the **Adjustment of on-hand inventory** page to adjust the cost value of the on-hand inventory quantities after running an inventory close process. To open the **Adjustment of on-hand inventory** page, start on the **Closing and adjustment** page, select the record of a completed inventory close process, and then select **Adjustment** \> **On-hand**.
+Use the **Adjustment of on-hand inventory** page to adjust the cost value of the on-hand inventory quantities after running an inventory close process. To open the **Adjustment of on-hand inventory** page, start on the **Closing and adjustment** page, select the record of a completed inventory close process, and then select **Adjustment** > **On-hand**.
 
 For example, suppose you have the following transactions in February:
 

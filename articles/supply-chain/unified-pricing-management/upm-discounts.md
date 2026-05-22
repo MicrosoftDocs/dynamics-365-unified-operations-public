@@ -69,13 +69,13 @@ Mix-and-match discounts are given to customers when they purchase a specific com
 
 To define the different combinations of item groups and related purchase thresholds that qualify for a discount, set up *line groups* and assign them to lines in your mix-and-match pricing rules. Follow these steps to set up and apply mix-and-match line groups.
 
-1. Go to **Pricing management \> During-sales pricing \> Discounts \> Mix and match line group setup**.
+1. Go to **Pricing management > During-sales pricing > Discounts > Mix and match line group setup**.
 1. Review the existing line groups, and create any that you need. Use the buttons on the Action Pane to add or remove line groups as required. For each row that you add to the grid, set the following fields:
 
     - **Line group** – Enter a unique identifier for the line group.
     - **Number of products needed** – Enter the quantity of a product that a customer must purchase to qualify for the discount. This field defines a default value that is used every time a user selects the line group for a specific discount pricing rule. However, you can override the value for each specific rule as needed.
 
-1. Go to **Pricing management \> During-sales pricing \> Discounts \> Mix and match line groups**.
+1. Go to **Pricing management > During-sales pricing > Discounts > Mix and match line groups**.
 1. Review the line group assignments for any or all existing mix-and-match discount rules, and create any that you need. Use the buttons on the Action Pane to add or remove line groups as required. For each row that you add to the grid, set the following fields:
 
     - **Discount** – Select the existing mix-and-match discount pricing rule to add a line group to.

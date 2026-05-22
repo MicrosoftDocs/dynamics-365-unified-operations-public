@@ -41,7 +41,7 @@ When you turn on engineering change management on your system, the release produ
 
 ## Product acceptance
 
-**Product acceptance** is a key parameter that influences the release process. Set this parameter for each company by going to **Engineering change management \> Setup \> Engineering change management parameters**. For more information, see [Engineering change management parameters](engineering-parameters.md).
+**Product acceptance** is a key parameter that influences the release process. Set this parameter for each company by going to **Engineering change management > Setup > Engineering change management parameters**. For more information, see [Engineering change management parameters](engineering-parameters.md).
 
 ### Automatic product acceptance
 
@@ -71,7 +71,7 @@ During the release process, you can influence the settings.
 
 ## Create and manage product release policies
 
-To work with product release policies, go to **Engineering change management \> Setup \> product release policies**. Then follow one of these steps.
+To work with product release policies, go to **Engineering change management > Setup > product release policies**. Then follow one of these steps.
 
 - To create a new policy, select **New** on the Action Pane, and then set the fields as described in the following subsections.
 - To edit an existing policy, select it in the list pane, select **Edit** on the Action Pane, and then set the fields as described in the following subsections.

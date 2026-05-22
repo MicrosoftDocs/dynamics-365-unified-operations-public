@@ -53,7 +53,7 @@ To create each of the new query options that you add to the first page of the fl
 
 Create the **Look up POs by vendor** menu item by following these steps.
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new menu item:
 
@@ -104,7 +104,7 @@ Create the **Look up POs by vendor** menu item by following these steps.
 
 Create the **Look up POs for today** menu item by following these steps.
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new item:
 
@@ -154,7 +154,7 @@ Create the **Look up POs for today** menu item by following these steps.
 
 Create the **Look up POs by item** menu item by following these steps.
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new item:
 
@@ -204,7 +204,7 @@ Create the **Look up POs by item** menu item by following these steps.
 
 Add your three new mobile device menu items to the mobile device menu. You must complete this task before the menu items can be used as part of a detour process. In this example, you create a new submenu and add the new menu items to it.
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**.
 1. On the Action Pane, select **New**.
 1. Set the following values on the header of the new record:
 
@@ -220,7 +220,7 @@ Add your three new mobile device menu items to the mobile device menu. You must 
 
 To complete the setup, use the detour configuration on the **Mobile device steps** page to add the three new mobile device menu items to the existing purchase order identification step in the *Purchase receive* flow.
 
-1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device steps**.
 1. In the **Filter** field, enter *PONum*. Then select *Step ID: "PONum"* in the drop-down list.
 1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Purchase Receive*. Then select **OK** to close the dialog box.
 1. On the details page for the new step configuration (**Purchase Receive : PONum**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
@@ -255,6 +255,6 @@ Follow these steps to test your new mobile app setup.
     :::image type="content" source="media/wma-purchase-receive-lookup-po-vendor-detours.png" alt-text="Screenshot of purchase receiving using PO lookup by vendor with results displayed.":::
 
 > [!TIP]
-> Instead of running the receiving flow by doing a lookup from the **Purchase receive** menu item, you can start from an inquiry flow (**Main \> Inquire \> Look up POs by vendor**) and invoke a detour to run the desired flow by selecting one of the cards in the list. To use this approach, you can define a detour on the **Mobile device steps** page for the step that has a **Step ID** value of *GenericDataInquiryList*. Provided the [*Multi-level detours for the Warehouse Management mobile app*](warehouse-app-detours.md) feature is turned on for your system, you can also add an additional detour if needed (this feature adds support for up to two levels of detours and can be customized to support additional levels).
+> Instead of running the receiving flow by doing a lookup from the **Purchase receive** menu item, you can start from an inquiry flow (**Main > Inquire > Look up POs by vendor**) and invoke a detour to run the desired flow by selecting one of the cards in the list. To use this approach, you can define a detour on the **Mobile device steps** page for the step that has a **Step ID** value of *GenericDataInquiryList*. Provided the [*Multi-level detours for the Warehouse Management mobile app*](warehouse-app-detours.md) feature is turned on for your system, you can also add an additional detour if needed (this feature adds support for up to two levels of detours and can be customized to support additional levels).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

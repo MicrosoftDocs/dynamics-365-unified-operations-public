@@ -59,7 +59,7 @@ The **Volume** field is automatically calculated based on your **Depth**, **Heig
 
 #### Create a new container type
 
-Go to **Warehouse management \> Setup \> Containers \> Container types** and create a new record with the following settings:
+Go to **Warehouse management > Setup > Containers > Container types** and create a new record with the following settings:
 
 - **Container type code** - *Short Box*
 - **Description** - *Short Box*
@@ -71,7 +71,7 @@ Go to **Warehouse management \> Setup \> Containers \> Container types** and cre
 
 #### Create a container group
 
-Go to **Warehouse management \> Setup \> Containers \> Container groups** and create a new record with the following settings:
+Go to **Warehouse management > Setup > Containers > Container groups** and create a new record with the following settings:
 
 - **Container group ID** - *Short Box*
 - **Description** - *Short Box*
@@ -80,7 +80,7 @@ Add a new line to the **Details** section. Set the **Container type** to *Short 
 
 #### Set up a container build template
 
-Go to **Warehouse management \> Setup \> Containers \> Container build templates** and select **Boxes**. Change the **Container group ID** to *Short Box*.
+Go to **Warehouse management > Setup > Containers > Container build templates** and select **Boxes**. Change the **Container group ID** to *Short Box*.
 
 ### Run the scenario
 

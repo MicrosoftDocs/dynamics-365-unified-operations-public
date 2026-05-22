@@ -42,7 +42,7 @@ Before you can use this feature, you must turn it on in your system. Admins can 
 
 Follow these steps to set up the system to show translated product names and descriptions in the UI.
 
-1. Go to **Product information management \> Setup \> Product information management parameters**.
+1. Go to **Product information management > Setup > Product information management parameters**.
 1. On the **General** tab, in the **Product identification** section, set the **Display product info in user's language** option to one of the following values:
 
     - *Yes* – Show product names and descriptions in each user's preferred language in the UI. For products where the name or description isn't available in the user's preferred language, the system language is used instead.

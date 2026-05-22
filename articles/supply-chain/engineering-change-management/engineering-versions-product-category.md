@@ -64,7 +64,7 @@ For products that are set up so that they have logistical impact, the engineerin
 
 An engineering product category provides a basis for creating a specific engineering product. Each category establishes a set of default values and policies. Therefore, when you create an engineering product, you first select the category to create it from.
 
-A new category hierarchy type (*engineering product hierarchy*) is automatically set up for you. You can manually create the categories by going to **Engineering change management \> Setup \> Engineering product category details**.
+A new category hierarchy type (*engineering product hierarchy*) is automatically set up for you. You can manually create the categories by going to **Engineering change management > Setup > Engineering product category details**.
 
 Each engineering product category establishes the default behavior of the engineering products that you create based on that category. After you create an engineering product, you can't change its engineering product category. However, if you select the incorrect category, you can delete the product and then re-create it.
 
@@ -79,7 +79,7 @@ When an engineering product category is created, you're prevented from changing 
 
 Other settings might inherit default values set up for the engineering product category. However, according to the system rules, you can change those values.
 
-To work with engineering product categories, go to **Engineering change management \> Setup \> Engineering product category details**. Then follow one of these steps:
+To work with engineering product categories, go to **Engineering change management > Setup > Engineering product category details**. Then follow one of these steps:
 
 - To create a new category, select **New** on the Action Pane, and then set the fields as described in the following subsections.
 - To edit an existing category, select it in the list pane, select **Edit** on the Action Pane, and then set the fields as described in the following subsections.

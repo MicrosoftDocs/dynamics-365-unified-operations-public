@@ -27,7 +27,7 @@ Each scenario in this article references values and records included in the stan
 
 Follow these steps to confirm that all the demo data required for the scenarios is available in the USMF company in your system. Create any records or values that are missing.
 
-1. Go to **Warehouse management \> Setup \> Worker**.
+1. Go to **Warehouse management > Setup > Worker**.
 1. In the list pane, select **Julia Funderburk**.
 1. On the **Users** FastTab, select the row that has the following values. If no existing row has these values, create it.
 
@@ -43,13 +43,13 @@ Follow these steps to confirm that all the demo data required for the scenarios 
     - **Maximum quantity limit:** *0*
     - **Maximum value limit:** *0*
 
-1. Go to **Warehouse management \> Setup \> Work \> Work pools**.
+1. Go to **Warehouse management > Setup > Work > Work pools**.
 1. Work pools segregate warehouse work, based on the type of work (in this case, cycle counting work). Make sure that a record exists that has the following settings:
 
     - **Work pool ID:** *CycleCount*
     - **Description:** *Cycle Count*
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. In the list pane, select the record that is named *Cycle Count*. If no existing record has this name, create it. Confirm or set the following values for the record:
 
     - **Menu item name:** *Cycle Count*
@@ -92,28 +92,28 @@ Follow these steps to confirm that all the demo data required for the scenarios 
     - **Work creation process:** *Spot cycle counting* (This value indicates that the worker can count items in a warehouse location at any time, even if no open cycle counting work exists for that location. To initiate spot cycle counting in a location, the worker enters the location ID. If no open cycle counting work exists for that location, the system creates a new work record for spot cycle counting. If open cycle counting work exists for the location, the existing work record is used for spot cycle counting.
 )
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**.
 1. In the list pane, select the record named *Inventory*. If no existing record has this name, create it. Confirm that the following cycle counting menu items appear in the **Menu structure** column:
 
     - Cycle Count
     - Cycle Count Blind
     - Spot counting
 
-1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
+1. Go to **Warehouse management > Setup > Warehouse management parameters**.
 1. On the **Cycle counting** tab, set the following values:
 
     - **Default cycle counting adjustment type:** *Cycle Count* (This field specifies the journal type that is posted when cycle counting is done.)
     - **Default cycle counting work class ID:** *CCount* (This field specifies the work class that is used for cycle counting.)
         - **Default cycle count work priority:** *50* (This field sets the priority that cycle counting work has relative to other types of work in the warehouse. By entering a number that's lower than the number entered for other types of work, you raise the priority of the cycle counting work.)
 
-1. Go to **Warehouse management \> Setup \> Inventory \> Adjustment types**.
+1. Go to **Warehouse management > Setup > Inventory > Adjustment types**.
 1. The **Adjustment types** page lets you create codes for the different in and out adjustments that might occur. Confirm that a record exists that has the following settings:
 
     - **Inventory adjustment type:** *Cycle Count*
     - **Description:** *Cycle Count*
     - **Name:** *ICnt*
 
-1. Go to **Warehouse management \> Setup \> Warehouse setup \> Warehouses**.
+1. Go to **Warehouse management > Setup > Warehouse setup > Warehouses**.
 1. In the list pane, select warehouse *61*. If no existing record has this name, create it.
 1. On the **Warehouse** FastTab, set the following values:
 
@@ -128,7 +128,7 @@ Before the guided cycle counting can occur, you must create some work. This work
 
 Follow these steps to create cycle counting work for item location *01A02R2S2B* (BULK-06) in warehouse *61*.
 
-1. Go to **Warehouse management \> Cycle counting \> Cycle count work by location**.
+1. Go to **Warehouse management > Cycle counting > Cycle count work by location**.
 1. In the **Create cycle count work by location** dialog box, set the **Work pool ID** field to *CycleCount*.
 1. On the **Records to include** FastTab, select **Filter**.
 1. In the query editor dialog box, on the **Range** tab, follow these steps:
@@ -141,7 +141,7 @@ Follow these steps to create cycle counting work for item location *01A02R2S2B* 
 
     When the work creation process finishes, a message appears in the Action center.
 
-1. Go to **Warehouse management \> Work \> Work details**.
+1. Go to **Warehouse management > Work > Work details**.
 1. Find the newly created work by setting a filter on the **Work pool ID** column to find records that have a value of *CycleCount*.
 
 ### Does cycle counting work for scenario 1
@@ -164,7 +164,7 @@ After you create the cycle counting work, you do the work by counting items in a
 Follow these steps to review the cycle counting differences.
 
 1. Return to Supply Chain Management.
-1. Go to **Warehouse management \> Work \> Work details**.
+1. Go to **Warehouse management > Work > Work details**.
 1. Find and select the cycle counting work that you looked at earlier. (For example, set a filter on the **Work pool ID** column to find records that have a value of *CycleCount*.) Notice that the **Work status** field for this work is now set to *Pending review*.
 
     > [!NOTE]
@@ -185,7 +185,7 @@ This scenario requires that scenario 1 already be completed in your system.
 
 Before the blind cycle counting can occur, you must create some work. Follow these steps to create cycle counting work for item location *01A02R2S2B* (BULK-06) in warehouse *61*.
 
-1. Go to **Warehouse management \> Cycle counting \> Cycle count work by item**.
+1. Go to **Warehouse management > Cycle counting > Cycle count work by item**.
 1. In the **Create cycle count work by item** dialog box, set the **Work pool ID** field to *CycleCount*.
 1. On the **Records to include** FastTab, select **Filter**.
 1. In the query editor dialog box, on the **Range** tab, add three rows that have the following settings:
@@ -235,7 +235,7 @@ After you create the cycle counting work, follow these steps to do the work in t
 Follow these steps to review the cycle counting differences.
 
 1. Return to Supply Chain Management.
-1. Go to **Warehouse management \> Common \> Work \> Cycle count work pending review**.
+1. Go to **Warehouse management > Common > Work > Cycle count work pending review**.
 1. On the Action Pane, on the **Work** tab, select **Cycle counting**.
 1. On the Action Pane, select **Reject count**.
 
@@ -270,7 +270,7 @@ Follow these steps to do the cycle counting work in the Warehouse Management mob
 Follow these steps to review the counting results.
 
 1. Return to Supply Chain Management.
-1. Go to **Warehouse management \> Common \> Work details**.
+1. Go to **Warehouse management > Common > Work details**.
 1. Select the **Show closed** checkbox at the top of the grid.
 1. Set the filter for the **Work order type** column to *Inventory movement*.
 
@@ -284,7 +284,7 @@ For example, there are 60 items in a location that has a cycle count threshold o
 
 Follow these steps to set up cycle count thresholds.
 
-1. Go to **Warehouse management \> Setup \> Cycle counting \> Cycle count thresholds**.
+1. Go to **Warehouse management > Setup > Cycle counting > Cycle count thresholds**.
 1. On the Action Pane, select **New** to create a threshold, and set the following values for it:
 
     - **Cycle counting threshold ID:** *L0101*
@@ -311,7 +311,7 @@ Cycle count plans let you automate the creation of cycle counting work. Set up e
 
 Follow these steps to set up a cycle count plan.
 
-1. Go to **Warehouse management \> Setup \> Cycle counting \> Cycle count plans**.
+1. Go to **Warehouse management > Setup > Cycle counting > Cycle count plans**.
 1. On the Action Pane, select **New** to add a row to the grid, and set the following values for it:
 
     - **Cycle counting plan ID:** *BULK06*
@@ -339,7 +339,7 @@ Follow these steps to set up a cycle count plan.
 
     A message informs you that the job was added to the batch queue.
 
-1. Go to **Warehouse management \> Common \> Cycle count scheduling**. The plan begins immediately and creates counting work. Because counting work isn't completed, the **Status** field is set to *In process*. After one minute, the value in the **Total cycle counts** column changes to *1*.
+1. Go to **Warehouse management > Common > Cycle count scheduling**. The plan begins immediately and creates counting work. Because counting work isn't completed, the **Status** field is set to *In process*. After one minute, the value in the **Total cycle counts** column changes to *1*.
 
     > [!NOTE]
     > The cycle count work isn't created if the number of days since the last cycle counting is less than the value that you set for the **Days between cycle counting** field for the cycle counting plan. For example, if the **Days between cycle counting** field is set to *5*, the cycle counting work is created every five days. However, if the cycle counting work is processed on day 3, the next cycle counting work is created five days after the last cycle counting was processed, on day 8.

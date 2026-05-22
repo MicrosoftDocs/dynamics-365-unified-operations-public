@@ -19,8 +19,6 @@ This article provides information about cost categories that apply to manufactur
 
 Cost categories apply to manufacturing environments that use routing. They're assigned to operations resources and routing operations to define hourly costs and to segment cost contributions in a manufactured item’s calculated costs. The cost groups assigned to cost categories classify manufacturing cost contributions based on the operation resources and the type of activity, such as setup time and run time. The specificity of cost group assignments enables manufacturing overhead to be calculated based on routing information.
 
-
-
 > [!NOTE]
 > In manufacturing environments, cost categories are known by several other names, such as labor rate codes or machine rate codes.
 

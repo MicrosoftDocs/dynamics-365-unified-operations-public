@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventJournalTableWorkflowDropDialog
 ms.topic: how-to
-ms.date: 11/19/2024
+ms.date: 5/22/2026
 ms.custom: 
   - bap-template
 ---

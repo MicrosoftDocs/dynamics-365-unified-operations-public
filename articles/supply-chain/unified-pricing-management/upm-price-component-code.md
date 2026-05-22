@@ -40,7 +40,7 @@ Within each price component code, you can define multiple pricing rule records t
 
 Follow these steps to set up your price component codes.
 
-1. Go to **Pricing management \> Setup \> Price component codes \> Price component codes**.
+1. Go to **Pricing management > Setup > Price component codes > Price component codes**.
 
     :::image type="content" source="media/price-component-codes.png" alt-text="Screenshot of the Price component codes page." lightbox="media/price-component-codes.png":::
 
