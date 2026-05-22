@@ -63,6 +63,14 @@ In Dynamics 365 Finance, follow these steps:
 
 You should now be able to copy the data from the Financial reporter Excel report to the **Trial Balance** report, so that you can compare the **Closing Balance** columns.
 
+## Why does my report show "No data is available on this report" when I filter by a financial dimension other than the main account?
+
+If a report returns data when no filter is applied or when you filter by main account, but shows **"No data is available on this report"** as soon as you filter by another dimension—such as Department or Cost center—the cause is usually the filter value, the posted data, or the report definition. Work through the following checks in order:
+
+1. **Confirm that the filter value matches the format of the posted data.** On the Action Pane of the generated report, select **Report options** > **Add a dimension filter**. Select the dimension. Then enter the dimension ID exactly as it's stored on the posted transactions, or select a value from the list. A mistyped value or a value in the wrong format returns no data. For more information, see [View financial reports](view-financial-reports.md#change-report-options).
+2. **Confirm that posted transactions contain a value for the dimension.** Go to **General ledger** > **Inquiries and reports** > **Trial balance**, and select a **Financial dimension set** that includes the dimension. If the trial balance shows blank values for the dimension, no posted transactions have a value to filter on. This situation often occurs when the dimension is optional in the account structure and isn't entered when transactions are posted. To inspect individual postings, go to **General ledger** > **Inquiries and reports** > **Voucher transactions**.
+3. **Confirm that the row or column definition doesn't conflict with the filter.** If the row definition or column definition restricts results to specific accounts or dimension values, and your filter doesn't match data within those restrictions, the report returns no rows. To show a row for each dimension value instead of filtering at runtime, use **Edit** > **Insert rows from dimensions** in the row definition. This command isn't limited to **Main account**. For an example, see [Trial balance financial reports](trial-balance-financial-reports.md#row-definition).
+
 ## When I design a report in Report designer, or when I generate a financial report, I received the following message: "The operation could not be completed due to a problem in the data provider framework." How should I respond?
 
 The message indicates that an issue occurred when the system tried to retrieve financial metadata from the data mart while you were using Financial reporting. There are two ways to respond to this issue:
