@@ -112,7 +112,7 @@ The client secret is also known as an *application password*. It's a string valu
         <add key="aadClientSecret" value="client secret generated during the client app registration in Azure" />
         <add key="aadAuthority" value="https://sts.windows.net/tenant id/" />
         <add key="retailServerUrl" value="https://RetailserverURL/Commerce" /> 
-        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI generated during the Retail Server app registration -->
+        <add key="resource" value="api://aaaabbbb-0000-cccc-1111-dddd2222eeee" /> <!-- //Application ID URI generated during the Retail Server app registration -->
         <add key="operatingUnitNumber" value="OUN value" />
     </appSettings>
     ```
