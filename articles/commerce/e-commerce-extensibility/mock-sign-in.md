@@ -23,7 +23,94 @@ This article describes how to mock a signed-in user in a Microsoft Dynamics 365 
 
 While developing your e-commerce online site, you might need to develop and test scenarios for signed-in users. Instead of publishing these pages and testing against live pages, you can mock the signed-in state when running in developer mode.
 
-## Configure your Microsoft Entra B2C tenant
+## [Configure your Microsoft Entra External ID tenant](#tab/eeid)
+
+To take advantage of this feature, perform a one-time setup in your Microsoft Entra External ID (EEID) tenant to allow you to mock the signed-in user status. To proceed with the following steps, sign in as a user with tenant administrator privileges.
+
+### Create a native application
+
+Next, create a native application that represents the Node application running during local development.
+
+1. In the **Microsoft Entra External ID** tenant, browse to **Entra ID** > **App registrations**, and then select **New registration**.
+1. Enter a name for the application, for example "local_node_app."
+1. For **Supported account types**, select **Single tenant only - < your tenant >**.
+1. For **Redirect URIs**, add a redirect URI by following [Reply URLs](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/set-up-external-entra-id#reply-urls) section.
+1. Select **Register**  to complete the app registration.
+1. Select the newly created application, and then copy and save the value for **Application (client) ID** which will be used as `nativeApplicationId` and **Directory (tenant) ID** which will be used as `ciamTenant` in your credentials.json file.
+1. In the left navigation pane under **Manage**, select **Authentication**.
+1. Under settings, under **Implicit grant and hybrid flows** select the **ID token** and **Access token** checkbox. Also enable public client and native authentication flows.
+1. Select **Save**.
+1. In the left navigation pane under **Manage**, select **API permissions**.
+1. Select **Grant admin consent for < tenant name >**, then select Yes.
+1. Create a new User Flow by navigating to **Manage** > **External Identities** > **User flows**.
+1. Select **New user flow**.
+1. On the Create page, enter a Name for the user flow for example: "local_auth_user_flow".
+1. Under Identity providers, select the **Email Accounts** check box, and then select Email with password option.
+1. Under User attributes, choose the Given Name, Surname and Display Name attributes.
+1. Select Create to create the user flow.
+1. Open the user flow you created and in left navigation pane, select **Applications**.
+1. Select Add application.
+1. From the list select application you created for local auth above. Then click on Select button.
+1. Add your EEID app details in HQ as mentioned in this section: [Update Commerce headquarters with the new Microsoft Entra External ID information](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/set-up-external-entra-id#update-commerce-headquarters-with-the-new-microsoft-entra-external-id-information)
+
+You created a new native application that represents your local Node application.
+
+From the previous examples, you obtained the following information:
+
+| Property name | Example value |
+| ----------- | ----------- |
+| ciamTenant | commerceonboarding |
+| nativeApplicationId | 25f6742d-f8b8-44d9-a6a0-f06d2854ac5f |
+
+### Configure scope and register the native application
+
+1. In the Microsoft Entra External ID settings, go to **App registrations**.
+1. Open the application that is currently being used by the e-commerce rendering application. In the Azure portal, this application is the one whose client ID is used in the Microsoft Entra External ID configuration for your site. If Microsoft Entra External ID is already configured, the application ID used for your e-commerce site is located in Commerce headquarters at **Commerce Shared Parameters \> Identity Providers** in the **ClientId** field under **Relying Parties**. The application ID is also located in Commerce site builder at **Tenant Settings \> Site Authentication Setup** as the **Client GUID** within the EEID application configuration used for your site.
+1. In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one doesn't exist, select **Add a scope** to create one. When prompted for an **Application ID URI**, leave the application ID URI as is and then add "user_impersonation" for the **Scope name**. Then enter friendly values for **Admin consent display name** and **Admin consent description**.
+1. Copy and save the full scope value, as this information is used as the `userImpersonationScopeURL` property value in your credentials.json file.
+1. Return to the native application you created and in the left navigation pane under **Manage**, select **API permissions**.
+1. Select **Add a permission**, and then select the **APIs my organization uses** tab.
+1. Search for the e-commerce rendering application that you created, and then select it and add **user_impersonation** as a permission.
+1. Select **Add permissions**.
+1. Select **Grant admin consent for** (this name contains your domain), and then select **Yes** to apply the consent. You should now see a green checkmark under **Status** for **user_impersonation**.
+
+The Microsoft Entra setup portion is now complete. You should now have your versions of all the following example values.
+
+| Property name | Example value |
+| ----------- | ----------- |
+| ciamTenant | commerceonboarding |
+| nativeApplicationId | 25f6742d-f8b8-44d9-a6a0-f06d2854ac5f |
+| userImpersonationScopeURL | `https://commerceonboarding.onmicrosoft.com/b7ad3e87-d8b0-4c83-b08d-7c34c19f7933/user_impersonation` |
+
+## Configure your Node application
+
+After you complete the steps to configure your Microsoft Entra External ID tenant, create a credentials file in your online software development kit (SDK) Node application.
+
+The credentials file is located in the `secrets/` directory in your Node application. Create a `secrets/` directory in your application if it doesn't already exist, and then create a new file named `credentials.json` that's similar to the following example that uses the data you gathered previously.
+
+```json
+{
+    "ciamTenant": "commerceonboarding",
+    "nativeApplicationId": "25f6742d-f8b8-44d9-a6a0-f06d2854ac5f",
+    "userImpersonationScopeURL": "https://commerceonboarding.onmicrosoft.com/b7ad3e87-d8b0-4c83-b08d-7c34c19f7933/user_impersonation",
+    "defaultUser": {
+        "name": "default",
+        "email": "",
+        "password": "",
+        "customerAccountNumber": ""
+    },
+    "additionalUsers":[ 
+        {
+            "name": "test-user-1",
+            "email": "test-user-1@example.com",
+            "password": "password",
+            "customerAccountNumber": ""
+        }
+    ]
+}
+```
+
+## [Configure your Microsoft Entra B2C tenant](#tab/b2c)
 
 To take advantage of this feature, perform a one-time setup in your Microsoft Entra business-to-consumer (B2C) tenant to allow you to mock the signed-in user status. To proceed with the following steps, sign in as a user with tenant administrator privileges.
 
@@ -141,6 +228,7 @@ The credentials file is located in the `secrets/` directory in your Node applica
     ]
 }
 ```
+---
 
 > [!NOTE]
 > Add everything under the `secrets/` directory to your .gitignore file to help prevent credentials from being leaked online.
