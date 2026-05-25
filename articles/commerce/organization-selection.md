@@ -1,5 +1,5 @@
 ---
-title: Organization selection module
+title: Organization selection module (preview)
 description: Learn about the organization selection module and how to add it to Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce sites.
 author: Jcava-Evenica
 ms.date: 05/25/2026
@@ -13,9 +13,10 @@ ms.custom:
   - bap-template
 ---
 
-# Organization selection module
+# Organization selection module (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/preview-banner.md)]
 
 This article explains what the organization selection module is and how to add it to Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce sites.
 
