@@ -16,13 +16,11 @@ items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
         - name: Platform updates for version 10.0.48 (June 2026)
-          href: ../fin-ops/get-started/whats-new-platform-update-10-0-48.md
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-48.md
         - name: Platform updates for version 10.0.47 (January 2026)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-47.md
         - name: Platform updates for version 10.0.46 (October 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-46.md
-        - name: Platform updates for version 10.0.45 (September 2025)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-45.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1903,6 +1901,8 @@ items:
               href: ../fin-ops/sysadmin/security-gov-device-based-access.md 
             - name: Available reports for security
               href: ../fin-ops/sysadmin/security-reports.md 
+            - name: User log and dormant user report (Preview)
+              href: ../fin-ops/sysadmin/security-gov-user-dormant-report.md
             - name: Security governance faq
               href: ../fin-ops/sysadmin/security-governance-faq.md
         - name: Entra ID security groups

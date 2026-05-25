@@ -4,7 +4,7 @@ description: Learn how to install the Warehouse Management mobile app on each of
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 05/20/2026
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.custom:
@@ -26,10 +26,8 @@ The Warehouse Management mobile app is only for your internal business use. You 
 
 The Warehouse Management mobile app is available for Microsoft Windows, Google Android, and Apple iOS operating systems. To use the app, your mobile devices must have one of the following operating systems installed:
 
-- Windows 10 (Universal Windows Platform \[UWP\]) May 2020 update 1904.1 or later
-- Android:
-    - Warehouse Management mobile app version 3.x requires Android 5.0 or later
-    - Warehouse Management mobile app version 4.x requires Android 7.0 or later
+- Windows 10 May 2020 update 1904.1 or later
+- Android 7.0 or later
 - iOS 13.0 or later
 
 ### External URLs required by the app
@@ -67,15 +65,15 @@ For larger deployments, automate app deployment and configuration. This approach
 
 The easiest way to install the app on a single device is to install it from an app store. The store always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
 
-- **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
+- **Windows:** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
-- **iOS:** Version 3 is available at the [Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310). Version 4 is currently available through [Apple Test Flight](https://testflight.apple.com/) and is expected to be available on the Apple App Store in January 2026.
+- **iOS:** [Warehouse Management on the Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310)
 
 ### Download the app from Microsoft App Center
 
 As an alternative to installing from an app store, you can instead download the app from the Microsoft App Center. The App Center provides installable packages that you can sideload. In addition to the current version, the App Center also lets you download previous versions and might provide preview versions with upcoming features that you can try out. To download current, previous, or preview versions of the Warehouse Management mobile app from Microsoft App Center, use one of the following links:
 
-- **Windows (UWP):** [Warehouse Management (Windows)](https://aka.ms/wma-windows-official-release)
+- **Windows:** [Warehouse Management (Windows)](https://aka.ms/wma-windows-official-release)
 
     For instructions about how to install a downloaded package on a Windows device and then set up the required certificates, see [Install a Build from App Center](/appcenter/distribution/installation).
 
