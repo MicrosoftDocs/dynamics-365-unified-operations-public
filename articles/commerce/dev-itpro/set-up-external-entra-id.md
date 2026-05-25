@@ -20,7 +20,7 @@ This article explains how to set up your Microsoft Entra External ID tenant for 
 
 Starting with version 10.0.45, Dynamics 365 Commerce e-commerce supports Microsoft Entra External ID, Microsoft's next-generation Customer Identity and Access Management (CIAM) solution. This enhancement ensures a modern, secure, and scalable identity experience for business-to-consumer (B2C) and business-to-business (B2B) scenarios.
 
-> [!NOTE]
+> [!IMPORTANT]
 >
 > - After the end of sale for Azure Active Directory B2C (Azure AD B2C), existing Azure AD B2C tenants continue to be supported until May 2030, with no new feature development. New deployments must be provisioned using Microsoft Entra External ID, because Azure AD B2C is no longer available for new tenants.
 >
