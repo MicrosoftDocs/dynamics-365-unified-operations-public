@@ -154,7 +154,7 @@ To set up an authentication profile in Commerce Site Builder, follow these steps
 1. Select **Manage**.
 1. On the right flyout pane, select **Add site authentication profile**.
 1. For **Application Name**, enter a name for the authentication profile.
-1. For **Tenant Name**, enter the domain name of the Microsoft Entra External ID tenant you created in the Azure portal. For example, if your domain is `ContosoCustomers.onmicrosoft.com`, then the domain name is `ContosoCustomers`. The domain name 'ContosoCustomers' is what you need to use on Site Builder.
+1. For **Tenant Name**, enter the domain name of the Microsoft Entra External ID tenant you created in the Azure portal. For example, if your domain is `ContosoCustomers.onmicrosoft.com`, then the domain name is `ContosoCustomers`. Use your domain name value on Site Builder.
 1. For **Client GUID**, enter the GUID of the app registration associated with the sign-in/sign-up user flow.
 
     > [!NOTE]
