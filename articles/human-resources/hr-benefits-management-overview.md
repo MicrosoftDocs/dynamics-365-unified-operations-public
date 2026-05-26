@@ -117,7 +117,7 @@ updating the **Worker assignment**.
 Next, employees must be enrolled in a fixed compensation plan on their start date, or have an **Annual benefits salary** amount. Prior to assigning **Fixed compensation** to an employee, a **Position** must be assigned. 
 
 > [!NOTE] 
-> The **Fixed compensation start date** cannot be before the **Position assignment date**.
+> The **Fixed compensation start date** can't be before the **Position assignment date**.
 
 Alternatively, if you have an employee who receives supplemental compensation like commissions, you can add a **Benefits annual salary** amount from the employee record. Human Resources will use the **Benefits annual salary** amount when determining coverage amounts, instead of the **Fixed compensation annual** amount. The **Benefits annual salary** must be valid as of the employee's start date or the beginning of the benefit period, whichever is latest. However, a position is not required to assign the **Benefits annual salary**. To enable the **Benefits annual salary** feature, go to the **Human resources shared parameters** page, on the **Benefits management** tab. This feature is turned off by default.
 
