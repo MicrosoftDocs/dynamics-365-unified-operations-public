@@ -1,5 +1,5 @@
 ---
-title: Use the agent deployment wizard to set up supplier communications features (preview)
+title: Use the agent deployment wizard to set up supplier communications features
 description: Learn how to use the agent deployment wizard to set up and configure the supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
@@ -11,18 +11,14 @@ ms.custom:
   - bap-template
 ---
 
-# Use the agent deployment wizard to set up supplier communications features (preview)
+# Use the agent deployment wizard to set up supplier communications features
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 This article explains how system administrators can use the [agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub to set up and configure the supplier communications features of the Procurement Agent.
 
 > [!IMPORTANT]
-> The agent deployment wizard (preview) is an alternative to the manual setup process described in [Set up and configure the supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup.md). It provides a guided experience for setting up an agent and automatically configures many of the required settings for you. You don't need to run the wizard if you already set up the supplier communications features manually.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+> The agent deployment wizard is an alternative to the manual setup process described in [Set up and configure the supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup.md). It provides a guided experience for setting up an agent and automatically configures many of the required settings for you. You don't need to run the wizard if you already set up the supplier communications features manually.
 
 ## Run the agent deployment wizard
 
