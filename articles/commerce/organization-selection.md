@@ -20,7 +20,7 @@ ms.custom:
 
 This article explains what the organization selection module is and how to add it to Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce sites.
 
-The organization selection module is a special container for listing all the organizations a signed-in user can access through the B2B multioutlet functionality. Multiple organization selection currently supports only B2B sites with the multioutlet feature enabled. The links to this module in the header of the B2B storefront only appear for users who have multiple organizations linked to their contact.
+The organization selection module is a special container for listing all the organizations a signed-in user can access through the [B2B multioutlet functionality](b2b/b2b-multi-outlet.md). Multiple organization selection currently supports only B2B sites with the multioutlet feature enabled. The links to this module in the header of the B2B storefront only appear for users who have multiple organizations linked to their contact.
 
 The following illustration shows an example of an organization selection module:
 
