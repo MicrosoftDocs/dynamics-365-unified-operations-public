@@ -1,5 +1,5 @@
 ---
-title: Cross-legal entity fulfillment with Distributed Order Management (DOM)
+title: Cross-legal entity fulfillment with Distributed order management (DOM)
 description: Learn how to configure and use cross-legal entity fulfillment optimization with DOM in Dynamics 365 Commerce.
 author: yufei-huang
 ms.date: 06/03/2026
@@ -11,11 +11,11 @@ ms.search.region: Global
 ms.search.validFrom: 2026-04-01
 ---
 
-# Cross-legal entity fulfillment with Distributed Order Management (DOM)
+# Cross-legal entity fulfillment with Distributed order management (DOM)
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to set up and use cross-legal entity fulfillment optimization with Distributed Order Management (DOM) in Microsoft Dynamics 365 Commerce.
+This article describes how to set up and use cross-legal entity fulfillment optimization with Distributed order management (DOM) in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -77,7 +77,7 @@ Before you configure cross-legal entity fulfillment, complete the following prer
 1. On the **Solver** tab, set the **Solver type** to **Production Solver**.
 1. On the **Number sequences** tab, assign number sequences to the required DOM entities.
 
-> [!IMPORTANT]
+> [!NOTE]
 > The **Production Solver** is required for cross-legal entity fulfillment scenarios. The **Simplified Solver** doesn't support intercompany order creation.
 
 ### Step 4: Set up intercompany trading relationships
@@ -135,7 +135,7 @@ Fulfillment groups define the locations (warehouses and stores) that DOM can con
    - **Minimum inventory rule**: Reserve minimum stock at each location.
    - **Partial orders rule**: Allow or restrict order splitting across locations and legal entities.
 
-For more information about DOM rules, see [DOM rules](dom-rules.md).
+For more information, see [DOM rules](dom-rules.md).
 
 ### Step 8: Set up DOM fulfillment profiles
 
@@ -146,7 +146,7 @@ The fulfillment profile is the central configuration that ties legal entities, r
 1. Enter a **Profile** name and **Description**.
 1. Set the **Auto apply result** option as needed.
 1. On the **Legal entities** FastTab, select **Add** and add all legal entities that participate in cross-entity fulfillment.
-1. On the **Rules** FastTab, select **Add** and link the rules you configured in [Step 7: Configure DOM rules](#step-7-configure-dom-rules).
+1. On the **Rules** FastTab, select **Add** and link the DOM rules you configured in [Step 7: Configure DOM rules](#step-7-configure-dom-rules).
 1. Optionally, assign a **Fulfillment group** to restrict which warehouses DOM considers.
 1. On the action pane, on the **Setup** tab, select **Modes of delivery**:
    - Select **New** for each legal entity and mode of delivery combination.
