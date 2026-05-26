@@ -4,7 +4,7 @@ description: Learn about a scenario where multiple partial payments are made, so
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 10/24/2022
+ms.date: 05/26/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -20,9 +20,10 @@ ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 
 This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
 
-Fabrikam purchases goods from vendor 3057. Fabrikam receives a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The settlement parameters are located on the **Accounts payable parameters** page.
+Fabrikam purchases goods from vendor 3057. Fabrikam receives a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. You can find the settlement parameters on the **Accounts payable parameters** page.
 
 ## Invoice on June 25
+
 On June 25, April enters and posts an invoice for 1,000.00 for vendor 3057. April can view this transaction on the **Vendor transactions** page.
 
 | Voucher   | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance   | Currency |
@@ -30,7 +31,8 @@ On June 25, April enters and posts an invoice for 1,000.00 for vendor 3057. Apri
 | Inv-10020 | Invoice          | 6/25/2025 | 10020   |                                      | 1,000.00                              | -1,000.00 | USD      |
 
 ## Partial payment on July 2
-On July 2, April wants to settle 300.00 of this invoice. The payment is eligible for a discount, because Fabrikam takes discounts on partial payments. Therefore, April pays 297.00 and takes a 3.00 discount. April creates a payment journal and enters a line for vendor 3057, and then opens the **Settle transactions** page, to mark the invoice for settlement.
+
+On July 2, April wants to settle $300.00 of this invoice. The payment is eligible for a discount, because Fabrikam takes discounts on partial payments. Therefore, April pays $297.00 and takes a $3.00 discount. April creates a payment journal and enters a line for vendor 3057, and then opens the **Settle transactions** page, to mark the invoice for settlement.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -46,7 +48,7 @@ Discount information appears at the bottom of the **Settle open transactions** p
 | Cash discount taken          | 0.00      |
 | Cash discount amount to take | -3.00     |
 
-April then posts the payment. The invoice now has a balance of 700.00. April can view this transaction on the **Vendor transactions** page.
+April then posts the payment. The invoice now has a balance of $700.00. April can view this transaction on the **Vendor transactions** page.
 
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -55,13 +57,14 @@ April then posts the payment. The invoice now has a balance of 700.00. April can
 | DISC-10020 | Cash discount    | 7/1/2025  |         | 3.00                                 |                                       | 0.00    | USD      |
 
 ## Remaining payment on July 15, Use cash discount = Normal
-April pays the rest of the invoice on July 15, which is after the discount period. On the **Settle open transactions** page, no discount amount is displayed in the **Estimated cash discount** field, and the value in the **Cash discount amount** field is **0.00**. When April pays the remaining 700.00, no additional discount will be taken.
+
+April pays the rest of the invoice on July 15, which is after the discount period. On the **Settle open transactions** page, no discount amount appears in the **Estimated cash discount** field, and the value in the **Cash discount amount** field is **0.00**. When April pays the remaining 700.00, no additional discount applies.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 | Selected | Normal            | Inv-10020 | 3057    | 6/25/2025 | 7/25/2025 | 10020   | -700.00                        | USD      | -700.00          |
 
-Discount information appears at the bottom of the **Settle transactions** page. April can see that a 3.00 discount has already been taken.
+Discount information appears at the bottom of the **Settle transactions** page. April can see that a 3.00 discount is already taken.
 
 | Field                        | Value     |
 |------------------------------|-----------|
@@ -81,6 +84,7 @@ April then posts the payment. On opening the **Vendor transactions** page, April
 | APP-10021  | Payment          | 7/15/2025 |         | 700.00                               |                                       | 0.00    | USD      |
 
 ## Remaining payment on July 15, Use cash discount = Always
+
 If the vendor lets April take a discount even though the payment is made after the discount date, April can change the value in the **Use cash discount** field to **Always**. The **Calculate cash discounts for partial payments** setting is overridden, and the discount is taken. The payment amount is 693.00, and the discount is the remaining 7.00.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Currency | Amount to settle |
@@ -106,11 +110,5 @@ April then posts the payment. On opening the **Vendor transactions** page, April
 | DISC-10020 | Cash discount    | 7/1/2025  |         | 3.00                                 |                                       | 0.00    | USD      |
 | APP-10021  | Payment          | 7/15/2025 |         | 693.00                               |                                       | 0.00    | USD      |
 | DISC-10021 | Cash discount    | 7/15/2025 |         | 7.00                                 |                                       | 0.00    | USD      |
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
