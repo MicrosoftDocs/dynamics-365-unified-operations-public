@@ -1,5 +1,5 @@
 ---
-title: Cross-legal entity fulfillment with Distributed order management (DOM)
+title: Cross-legal entity fulfillment with distributed order management (DOM) (preview)
 description: Learn how to configure and use cross-legal entity fulfillment optimization with DOM in Dynamics 365 Commerce.
 author: yufei-huang
 ms.date: 06/03/2026
@@ -11,11 +11,12 @@ ms.search.region: Global
 ms.search.validFrom: 2026-04-01
 ---
 
-# Cross-legal entity fulfillment with Distributed order management (DOM)
+# Cross-legal entity fulfillment with distributed order management (DOM) (preview)
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/preview-banner.md)]
 
-This article describes how to set up and use cross-legal entity fulfillment optimization with Distributed order management (DOM) in Microsoft Dynamics 365 Commerce.
+This article describes how to set up and use cross-legal entity fulfillment optimization with distributed order management (DOM) in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
