@@ -23,8 +23,8 @@ This article walks you through a scenario where a cash discount is taken for an 
 Vendor 3051 gives Fabrikam a cash discount of 4 percent if an invoice is paid within seven days. On June 29, April enters an invoice for 1,000.00. The vendor lets April take a discount of 60.00 instead of the default discount of 40.00 that's available for the invoice. April records a one-time payment by using the **Accounts payable payment journal** and enters the vendor for the payment. April then opens the **Settle transactions** page, marks the invoice, and changes the value in the **Cash discount amount** field to **60.00**.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
-|----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Selected | Normal            | Inv-10040 | 3051    | 6/29/2025 | 7/29/2025 | 10040   | 1,000.00                       | USD      | 940.00           |
+|----------|-------------------|-----------|---------|-----------|-----------|---------|------------|----------|------------------|
+| Selected | Normal            | Inv-10040 | 3051    | 6/29/2025 | 7/29/2025 | 10040   | 1,000.00   | USD      | 940.00           |
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
