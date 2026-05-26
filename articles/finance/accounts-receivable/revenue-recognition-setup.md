@@ -4,7 +4,7 @@ description: Learn about the setup options for Revenue recognition, and their im
 author: twheeloc
 ms.author: twheeloc
 ms.topic: install-set-up-deploy
-ms.date: 08/16/2023
+ms.date: 05/26/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,14 +18,12 @@ ms.dyn365.ops.version: 8.0.4
 [!include [banner](../includes/banner.md)]
 
 >[!NOTE]
->This functionality will be deprecated January 2024, new users should use subscription billing.
+>This functionality was deprecated in January 2024, new users should use subscription billing.
 
 This article describes the setup options and their implications for the **Revenue recognition** module.
 
-> [!NOTE]
-> The Revenue recognition feature is now enabled by default through Feature management. If your organization doesn't use this feature, you can turn it off in the **Feature management** workspace.
->
-> Revenue recognition, including bundle functionality, isn't supported in Commerce channels (e-commerce, POS, and call center). Items that are configured for revenue recognition should not be added to orders or transactions that were created in Commerce channels.
+The Revenue recognition feature is enabled by default through Feature management. If your organization doesn't use this feature, you can turn it off in the **Feature management** workspace.
+Revenue recognition, including bundle functionality, isn't supported in Commerce channels (e-commerce, POS, and call center). Items that are configured for revenue recognition should not be added to orders or transactions that were created in Commerce channels.
 
 The **Revenue recognition** module has the following setup options:
 
