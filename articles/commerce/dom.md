@@ -4,7 +4,7 @@
 title: Distributed order management (DOM)
 description: This article provides an overview of the distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/22/2026
+ms.date: 06/03/2026
 ms.topic: overview
 ms.reviewer: v-griffinc
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -25,32 +25,22 @@ DOM uses mixed integer programming (MIP) and predictive analysis models to perfo
 
 The following illustration shows the lifecycle of a sales order in a DOM system.
 
-:::image type="content" source="./media/flow.png" alt-text="Screenshot of the sales order lifecycle in the context of DOM.":::
+:::image type="content" source="./media/flow.png" alt-text="Screenshot of the sales order lifecycle in the context of DOM." lightbox="media/flow.png":::
 
-The following video provides an overview of DOM capabilities in Dynamics 365 Commerce.
-
+The following video provides an overview of DOM capabilities in Dynamics 365 Commerce:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=83cec34a-642e-4a0e-a96d-3357f73f41bd]
 
-## Additional resources
+## More resources
 
-[Set up DOM](dom-set-up.md)
-
-[DOM rules](dom-rules.md)
-
-[DOM cost configuration](dom-costs.md)
-
-[DOM processing](dom-processing.md)
-
-[Results of DOM runs](dom-runs-results.md)
-
-[Clean up DOM fulfillment plans and logs](dom-clean-up.md)
-
-[Cross-legal entity fulfillment with DOM](dom-cross-legal-entity-fulfillment.md)
-
-[DOM extensibility](dom-extensibility.md)
-
-[DOM limitations](dom-limitations.md)
-
+- [Set up DOM](dom-set-up.md)
+- [DOM rules](dom-rules.md)
+- [DOM cost configuration](dom-costs.md)
+- [DOM processing](dom-processing.md)
+- [Results of DOM runs](dom-runs-results.md)
+- [Clean up DOM fulfillment plans and logs](dom-clean-up.md)
+- [Cross-legal entity fulfillment with DOM](dom-cross-legal-entity-fulfillment.md)
+- [DOM extensibility](dom-extensibility.md)
+- [DOM limitations](dom-limitations.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
