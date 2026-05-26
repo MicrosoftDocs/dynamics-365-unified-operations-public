@@ -80,7 +80,7 @@ The new entities are:
 
    3. Select an option from the **Accrual award date** dropdown box:
 
-      - **Accrual period end date** - The employee is awarded time off on the last day of the award period. To accrue the correct amount, the accrual process must include the whole period. For example, if the accrual period is January 1, 2020 through January 31, 2020, you must run the accrual for February 1, 2020 to include January.
+      - **Accrual period end date** - The employee is awarded time off on the last day of the award period. To accrue the correct amount, the accrual process must include the whole period. For example, if the accrual period is January 1, 2025 through January 31, 2025, you must run the accrual for February 1, 2025 to include January.
 
       - **Accrual period start date** - The employee is awarded time off on the first day of the award period.
 
@@ -162,30 +162,30 @@ When you select hours worked as the accrual type, you can use two types of hours
 
 | Accrual award date    | Hours worked tier    | Accrual amount        | Hours worked dates   | Hours worked actuals| Award               |
 | --------------------- | -------------------- | --------------------- | -------------------- |-------------------- |-------------------- |
-| 12/31/2018            | 2080                 | 144                   | 1/1/2018-12/31/2018  | 2085                | 144                 |        
-| 12/31/2018            | 2080                 | 144                   | 1/1/2018-12/31/2018  | 2000                | 0                 |
+| 12/31/2025            | 2080                 | 144                   | 1/1/2025-12/31/2025  | 2085                | 144                 |        
+| 12/31/2025            | 2080                 | 144                   | 1/1/2025-12/31/2025  | 2000                | 0                 |
 
 
 ### Monthly accrual frequency
 
 | Accrual award date    | Hours worked tier    | Accrual amount        | Hours worked dates   | Hours worked actuals| Award               |
 | --------------------- | -------------------- | --------------------- | -------------------- |-------------------- |-------------------- |
-| 8/31/2018             | 160                  | 12                    | 8/1/2018-8/31/2018   | 184                 | 12                  |        
-| 8/31/2018             | 160                  | 3                     | 8/1/2018-8/31/2018   | 184                 | 3                   |
+| 8/31/2025             | 160                  | 12                    | 8/1/2025-8/31/2025   | 184                 | 12                  |        
+| 8/31/2025             | 160                  | 3                     | 8/1/2025-8/31/2025   | 184                 | 3                   |
 
 ### Semi-monthly accrual frequency
 
 | Accrual award date    | Hours worked tier    | Accrual amount        | Hours worked dates   | Hours worked actuals| Award               |
 | --------------------- | -------------------- | --------------------- | -------------------- |-------------------- |-------------------- |
-| 8/31/2018             | 80                   | 6                     | 8/16/2018-8/31/2018  | 81                  | 6                  |        
-| 8/31/2018             | 80                   | 6                     | 8/16/2018-8/31/2018  | 75                  | 0                   |
+| 8/31/2025             | 80                   | 6                     | 8/16/2025-8/31/2025  | 81                  | 6                  |        
+| 8/31/2025             | 80                   | 6                     | 8/16/2025-8/31/2025  | 75                  | 0                   |
 
 ### Weekly accrual frequency
 
 | Accrual award date    | Hours worked tier    | Accrual amount        | Hours worked dates   | Hours worked actuals| Award               |
 | --------------------- | -------------------- | --------------------- | -------------------- |-------------------- |-------------------- |
-| 8/31/2018             | 40                   | 3                     | 8/27/2018-8/31/2018  | 42                  | 3                  |        
-| 8/31/2018             | 40                   | 3                     | 8/27/2018-8/31/2018  | 35                  | 0                   |
+| 8/31/2025             | 40                   | 3                     | 8/27/2025-8/31/2025  | 42                  | 3                  |        
+| 8/31/2025             | 40                   | 3                     | 8/27/2025-8/31/2025  | 35                  | 0                   |
 
 ### Employee assigned leave plans
 
@@ -206,18 +206,18 @@ A single date can only have one of each type associated with it.
 
 | Personnel number       | Date worked           | Type                  | Hours                |
 | --------------------- | -------------------- | --------------------- | -------------------- |
-| 000337                | 8/6/2018             | Regular               | 8                    |       
-| 000337                | 8/7/2018             | Regular               | 8                    |
-| 000337                | 8/7/2018             | Overtime              | 3                    |
-| 000337                | 8/8/2018             | Regular               | 8                    |
-| 000337                | 8/7/2018             | Regular               | 8                    |
-| 000337                | 8/9/2018             | Regular               | 8                    |
+| 000337                | 8/6/2025             | Regular               | 8                    |       
+| 000337                | 8/7/2025             | Regular               | 8                    |
+| 000337                | 8/7/2025             | Overtime              | 3                    |
+| 000337                | 8/8/2025             | Regular               | 8                    |
+| 000337                | 8/7/2025             | Regular               | 8                    |
+| 000337                | 8/9/2025             | Regular               | 8                    |
 
 ## Enrollments and balances
 
 ### Enrollment date
 
-The enrollment date determines when an employee can start to accrue time off. For example, an employee enrolled in a vacation plan on June 15, 2018 can't accrue any time off before June 15, 2018.
+The enrollment date determines when an employee can start to accrue time off. For example, an employee enrolled in a vacation plan on June 15, 2025 can't accrue any time off before June 15, 2025.
 
 ### Current balance
 
@@ -231,13 +231,13 @@ The current balance is the amount of leave that is available for time-off reques
 
 | Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|-----------------|-------------------|----------------------|-----------------------|
-| 1/1/2018        | 1/1/2018        | Annual            | Plan start date      | End of accrual period |
+| 1/1/2025        | 1/1/2025        | Annual            | Plan start date      | End of accrual period |
 
 Accruals are processed on January 1, 2019 (1/1/2019) to include the whole period.
 
 **Results**
 
-| Accrual amount | Minimum balance | Maximum carry-forward | Request amount | Current balance (as of 1/1/2019) |
+| Accrual amount | Minimum balance | Maximum carry-forward | Request amount | Current balance (as of 1/1/2026) |
 |----------------|-----------------|-----------------------|----------------|----------------------------------|
 | 200            | 0               | 120                   | 40             | 160                              |
 
@@ -249,13 +249,13 @@ Current balance (160) = Accrual amount (200) – Request amount (40)
 
 | Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|-----------------|-------------------|----------------------|-----------------------|
-| 1/1/2018        | 2/1/2018        | Semimonthly       | Plan start date      | End of accrual period |
+| 1/1/2025        | 2/1/2025        | Semimonthly       | Plan start date      | End of accrual period |
 
-Accruals are processed on May 1, 2018 (5/1/2018) to include the whole period.
+Accruals are processed on May 1, 2025 (5/1/2025) to include the whole period.
 
 **Results**
 
-| Accrual amount | Minimum balance | Maximum carry-forward | Request amount | Current balance (as of 1/1/2019) |
+| Accrual amount | Minimum balance | Maximum carry-forward | Request amount | Current balance (as of 1/1/2026) |
 |----------------|-----------------|-----------------------|----------------|----------------------------------|
 | 5              | 0               | 120                   | 8              | 22                               |
 
@@ -267,13 +267,13 @@ Current balance (22) = Accrual amount (5 × 6) – Request amount (8)
 
 | Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|-----------------|-------------------|----------------------|-----------------------|
-| 1/1/2018        | 2/1/2018        | Semimonthly       | Plan start date      | End of accrual period |
+| 1/1/2025        | 2/1/2025        | Semimonthly       | Plan start date      | End of accrual period |
 
-Accruals are processed on May 1, 2018 (5/1/2018) to include the whole period.
+Accruals are processed on May 1, 2025 (5/1/2025) to include the whole period.
 
 **Results**
 
-| Accrual amount | Minimum balance | Maximum carry-forward | Request amount | Current balance (as of 1/1/2019) |
+| Accrual amount | Minimum balance | Maximum carry-forward | Request amount | Current balance (as of 1/1/2026) |
 |----------------|-----------------|-----------------------|----------------|----------------------------------|
 | 5              | 0               | 120                   | 8              | 7                                |
 
@@ -295,13 +295,13 @@ Monday forecasted balance = Current balance – Requests + Accruals – Carry-fo
 
 | Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|-----------------|-------------------|----------------------|-----------------------|
-| 1/1/2018        | 1/1/2018        | Annual            | Plan start date      | End of accrual period |
+| 1/1/2025        | 1/1/2025        | Annual            | Plan start date      | End of accrual period |
 
-Accruals are processed on February 15, 2019 (2/15/2019) to include the whole period.
+Accruals are processed on February 15, 2025 (2/15/2025) to include the whole period.
 
 **Results**
 
-| Accrual amount | Minimum balance | Maximum carry-forward | Current balance | Forecasted balance (as of 2/15/2019) |
+| Accrual amount | Minimum balance | Maximum carry-forward | Current balance | Forecasted balance (as of 2/15/2026) |
 |----------------|-----------------|-----------------------|-----------------|--------------------------------------|
 | 20             | 0               | 20                    | 40              | 40                                   |
 
@@ -313,13 +313,13 @@ Forecasted balance (40) = Accrual amount (20) + Current balance (40) – Carry-f
 
 | Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|-----------------|-------------------|----------------------|-----------------------|
-| 1/1/2018        | 2/1/2018        | Semimonthly       | Plan start date      | End of accrual period |
+| 1/1/2025        | 2/1/2025        | Semimonthly       | Plan start date      | End of accrual period |
 
-Accruals are processed on February 15, 2019 (2/15/2019) to include the whole period.
+Accruals are processed on February 15, 2025 (2/15/2025) to include the whole period.
 
 **Results**
 
-| Accrual amount | Minimum balance | Maximum carry-forward | Current balance | Forecasted balance (as of 2/15/2019) |
+| Accrual amount | Minimum balance | Maximum carry-forward | Current balance | Forecasted balance (as of 2/15/2026) |
 |----------------|-----------------|-----------------------|-----------------|--------------------------------------|
 | 5              | 0               | 20                    | 40              | 35                                   |
 
@@ -331,13 +331,13 @@ Forecasted balance (35) = Accrual amount (5 × 3) + Current balance (40) – Car
 
 | Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|-----------------|-------------------|----------------------|-----------------------|
-| 1/1/2018        | 2/1/2018        | Semimonthly       | Plan start date      | End of accrual period |
+| 1/1/2025        | 2/1/2025        | Semimonthly       | Plan start date      | End of accrual period |
 
-Accruals are processed on February 15, 2019 (2/15/2019) to include the whole period.
+Accruals are processed on February 15, 2025 (2/15/2025) to include the whole period.
 
 **Results**
 
-| Accrual amount | Minimum balance | Maximum carry-forward | Current balance | Forecasted balance (as of 2/15/2019) |
+| Accrual amount | Minimum balance | Maximum carry-forward | Current balance | Forecasted balance (as of 2/15/2026) |
 |----------------|-----------------|-----------------------|-----------------|--------------------------------------|
 | 10             | 0               | 20                    | 40              | 30                                   |
 
@@ -351,14 +351,14 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 
 | Plan start date | Accrual frequency | Accrual period basis |
 |-----------------|-------------------|----------------------|
-| 1/1/2018        | Monthly           | Plan start date      |
+| 1/1/2025        | Monthly           | Plan start date      |
 
 **Results**
 
 | Employee            | Months of service | Enrollment date | Start date | Accrual amount | Process accrual | Balance |
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
-| Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
-| Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.53    |
+| Jeannette Nicholson | 0.00              | 6/1/2025        | 6/1/2025   | 1.00           | 9/1/2025        | 3.00    |
+| Jay Norman          | 0.00              | 6/15/2025       | 6/15/2025  | 1.00           | 9/1/2025        | 2.53    |
 
 #### Full accrual monthly plan
 
@@ -366,14 +366,14 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 
 | Plan start date | Accrual frequency | Accrual period basis |
 |-----------------|-------------------|----------------------|
-| 1/1/2018        | Monthly           | Plan start date      |
+| 1/1/2025        | Monthly           | Plan start date      |
 
 **Results**
 
 | Employee            | Months of service | Enrollment date | Start date | Accrual amount | Process accrual | Balance |
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
-| Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
-| Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 3.00    |
+| Jeannette Nicholson | 0.00              | 6/1/2025        | 6/1/2025   | 1.00           | 9/1/2025        | 3.00    |
+| Jay Norman          | 0.00              | 6/15/2025       | 6/15/2025  | 1.00           | 9/1/2025        | 3.00    |
 
 #### No accrual monthly plan
 
@@ -381,14 +381,14 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 
 | Plan start date | Accrual frequency | Accrual period basis |
 |-----------------|-------------------|----------------------|
-| 1/1/2018        | Monthly           | Plan start date      |
+| 1/1/2025        | Monthly           | Plan start date      |
 
 **Results**
 
 | Employee            | Months of service | Enrollment date | Start date | Accrual amount | Process accrual | Balance |
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
-| Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
-| Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
+| Jeannette Nicholson | 0.00              | 6/1/2025        | 6/1/2025   | 1.00           | 9/1/2025        | 3.00    |
+| Jay Norman          | 0.00              | 6/15/2025       | 6/15/2025  | 1.00           | 9/1/2025        | 2.00    |
 
 ## See also
 
