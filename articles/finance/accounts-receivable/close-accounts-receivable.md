@@ -4,7 +4,7 @@ description: Learn about the pages that support the close Accounts receivable bu
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: article
-ms.date: 06/13/2023
+ms.date: 05/26/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -25,7 +25,7 @@ The following table lists the pages that support the close Accounts receivable b
 
 **Business process component task**                   
 
-Close periods in the general ledger
+Close periods in the general ledger:
 
 | Page name                            | Usage                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
@@ -41,7 +41,7 @@ Close periods in the general ledger
 
 **Business process component task**   
 
-Create and submit the EU sales list
+Create and submit the EU sales list:
 
 | Page name                            | Usage                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
