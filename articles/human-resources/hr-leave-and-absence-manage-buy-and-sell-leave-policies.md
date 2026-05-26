@@ -32,7 +32,7 @@ You can enable employees to buy and sell leave by creating a buy and sell leave 
 ## Enable employees to buy and sell leave
 
 1. On the **Leave and absence parameters** page, select **Yes** for **Allow employees to buy leave** and **Allow employees to sell leave**.
-2. 
+
 ## Create a buy and sell leave policy
 
 1. On the **Leave and absence** page, select the **Links** tab. 
