@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Cross-legal entity fulfillment with Distributed Order Management (DOM)
 description: Learn how to configure and use cross-legal entity fulfillment optimization with DOM in Dynamics 365 Commerce.
-author: josaw1
-ms.date: 05/17/2026
+author: yufei-huang
+ms.date: 06/03/2026
 ms.topic: how-to
 ms.search.form: DOMParameters, DOMFulfillmentProfiles, DOMIntercompanyVendorMapping, DOMManageRules, RetailStoreLocatorGroup
-ms.reviewer: v-chrgriffin
+ms.author: yufeihuang
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
 ms.search.validFrom: 2026-04-01
-
 ---
 
 # Cross-legal entity fulfillment with Distributed Order Management (DOM)
@@ -28,22 +25,22 @@ Cross-legal entity fulfillment extends the DOM optimization engine to consider i
 
 Cross-legal entity fulfillment with DOM provides the following benefits:
 
-- **Improved fulfillment efficiency** – Orders can be fulfilled from the best location based on cost, proximity, and inventory availability, even if that location belongs to a different legal entity.
-- **Reduced manual intervention** – Automates cross-legal entity order flows, eliminating the need for manual coordination between entities.
-- **Enhanced customer experience** – Enables seamless fulfillment across legal entities, ensuring customers receive what they want faster and more reliably.
-- **Alignment with global retail needs** – Addresses strong demand from European and global retailers for cross-entity fulfillment capabilities in omnichannel scenarios.
+- **Improved fulfillment efficiency**: Orders can be fulfilled from the best location based on cost, proximity, and inventory availability, even if that location belongs to a different legal entity.
+- **Reduced manual intervention**: Automates cross-legal entity order flows, eliminating the need for manual coordination between entities.
+- **Enhanced customer experience**: Enables seamless fulfillment across legal entities, ensuring customers receive what they want faster and more reliably.
+- **Alignment with global retail needs**: Addresses strong demand from European and global retailers for cross-entity fulfillment capabilities in omnichannel scenarios.
 
 > [!TIP]
 > Cross-legal entity fulfillment builds on the cross-company inventory visibility capabilities available in POS. For information about how store associates can view inventory across legal entities, see [Enable cross-company inventory lookup for POS](enable-cross-company-inventory-lookup-pos.md).
 
 ## Prerequisites
 
-Before you configure cross-legal entity fulfillment, the following prerequisites must be in place:
+Before you configure cross-legal entity fulfillment, complete the following prerequisites:
 
-- The DOM configuration key must be enabled.
-- Intercompany trading relationships must be established between participating legal entities.
-- Products must be released and available in all participating legal entities.
-- Warehouses must have valid addresses with latitude and longitude values (or Azure Maps must be configured for address resolution).
+- Enable the DOM configuration key.
+- Establish intercompany trading relationships between participating legal entities.
+- Release products and make them available in all participating legal entities.
+- Ensure warehouses have valid addresses with latitude and longitude values, or configure Azure Maps for address resolution.
 
 ## Configuration steps
 
