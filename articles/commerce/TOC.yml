@@ -1562,6 +1562,8 @@
             href: dev-itpro/chat-module-pva.md
           - name: Commerce chat module proactive chat parameters
             href: dev-itpro/chat-proactive-chat-parameters.md
+        - name: Organization selection module (preview)
+          href: organization-selection.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
@@ -1630,8 +1632,6 @@
         href: b2b/b2b-multi-outlet.md
       - name: B2B multioutlet configuration (preview)
         href: b2b/b2b-multi-outlet-configuration.md
-      - name: Organization selection module (preview)
-        href: organization-selection.md
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
