@@ -29,13 +29,13 @@ April marks the invoice for payment. No cash discount is taken, because the paym
 
 | Mark     | Use cash discount | Voucher   | Account | Cash discount date | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Selected | Always            | Inv-10030 | 3052    | 6/28/2020          | 7/12/2020 | 10030   | -2,000.00                      | USD      | -1,980.00        |
+| Selected | Always            | Inv-10030 | 3052    | 6/28/2025          | 7/12/2025 | 10030   | -2,000.00                      | USD      | -1,980.00        |
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
 | Field                        | Value     |
 |------------------------------|-----------|
-| Cash discount date           | 7/12/2020 |
+| Cash discount date           | 7/12/2025 |
 | Cash discount amount         | -20.00    |
 | Use cash discount            | Always    |
 | Cash discount taken          | 0.00      |
@@ -46,14 +46,14 @@ If both the invoice and the payment have been posted, the cash discount can stil
 
 | Mark          | Use cash discount | Voucher   | Account | Cash discount date | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |--------------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Selected and highlighted | Normal    | Inv-10030 | 3052    | 6/28/2020         | 7/12/2020 | 10030   | -2,000.00                      | USD      | -1,980.00        |
-| Selected                 | Normal    | APP-10030 | 3052    | 7/15/2020          | 7/15/2020 |         | 500.00                         | USD      | 500.00           |
+| Selected and highlighted | Normal    | Inv-10030 | 3052    | 6/28/2025         | 7/12/2025 | 10030   | -2,000.00                      | USD      | -1,980.00        |
+| Selected                 | Normal    | APP-10030 | 3052    | 7/15/2025          | 7/15/2025 |         | 500.00                         | USD      | 500.00           |
 
 Discount information appears at the bottom of the **Settle open transactions** page. The discount amount that is taken is 20.00, because the amount to settle for the invoice is the default amount, 1,980.00.
 
 | Field                        | Value     |
 |------------------------------|-----------|
-| Cash discount date           | 7/12/2020 |
+| Cash discount date           | 7/12/2025 |
 | Cash discount amount         | -20.00    |
 | Use cash discount            | Normal    |
 | Cash discount taken          | 0.00      |
@@ -63,14 +63,14 @@ April updates the value in the **Amount to settle** field to **500.00**. The val
 
 | Mark                     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Selected and highlighted | Normal            | Inv-10030 | 3052    | 6/28/2020 | 7/12/2020 | 10030   | 2,000.00                       | USD      | -500.00          |
-| Selected                 | Normal            | APP-10030 | 3052    | 7/15/2020 | 7/15/2020 |         | 500.00                         | USD      | 500.00           |
+| Selected and highlighted | Normal            | Inv-10030 | 3052    | 6/28/2025 | 7/12/2025 | 10030   | 2,000.00                       | USD      | -500.00          |
+| Selected                 | Normal            | APP-10030 | 3052    | 7/15/2025 | 7/15/2025 |         | 500.00                         | USD      | 500.00           |
 
 Discount information appears at the bottom of the **Settle open transactions** page. The value in the **Cash discount amount to take** field is **5.05**, because the amount to settle for the invoice was changed to the payment amount, 500.00.
 
 | Field                        | Value     |
 |------------------------------|-----------|
-| Cash discount date           | 7/12/2020 |
+| Cash discount date           | 7/12/2025 |
 | Cash discount amount         | -20.00    |
 | Use cash discount            | Normal    |
 | Cash discount taken          | 0.00      |
