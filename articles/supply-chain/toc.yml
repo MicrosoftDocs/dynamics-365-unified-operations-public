@@ -2483,7 +2483,7 @@
             href: procurement/procurement-agent-supplier-com-try-out.md
           - name: Set up and configure supplier communications features
             href: procurement/procurement-agent-supplier-com-setup.md
-          - name: Use the agent deployment wizard to set up supplier communications features
+          - name: Use the agent deployment wizard to set up supplier communications features (preview)
             href: procurement/procurement-agent-supplier-com-setup-wizard.md
           - name: Solve common problems when setting up supplier communications features
             href: procurement/procurement-agent-supplier-com-setup-faq.md

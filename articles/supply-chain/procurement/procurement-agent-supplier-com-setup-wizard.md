@@ -1,5 +1,5 @@
 ---
-title: Use the agent deployment wizard to set up supplier communications features
+title: Use the agent deployment wizard to set up supplier communications features (preview)
 description: Learn how to use the agent deployment wizard to set up and configure the supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
@@ -11,9 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Use the agent deployment wizard to set up supplier communications features
+# Use the agent deployment wizard to set up supplier communications features (preview)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This article explains how system administrators can use the [agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub to set up and configure the supplier communications features of the Procurement Agent.
 
