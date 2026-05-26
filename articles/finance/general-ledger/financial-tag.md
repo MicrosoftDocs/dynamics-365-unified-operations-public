@@ -4,7 +4,7 @@ description: Learn about financial tags, including outlines on setup, the proces
 author: ethanrimes
 ms.author: ethankallett
 ms.topic: article
-ms.date: 04/07/2026
+ms.date: 05/26/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -85,7 +85,7 @@ After you activate a financial tag, enter tags on each transaction that supports
 
 When you enter journals, you can define tag values on the journal batch header. Those values then become the default values for the lines in the journal. As with other default values in the journal, the system automatically enters them on new lines that you add to the journal. However, the system doesn't enter them on lines that already exist when you define the values on the header.
 
-[![Financial tags entered on the journal batch header.](./media/Financial-tag1.png)](./media/Financial-tag1.png)
+:::image type="content" source="./media/Financial-tag1.png" alt-text="Screenshot of financial tags entered on the journal batch header." lightbox="./media/Financial-tag1.png":::
 
 ### Default values for journals
 
@@ -104,7 +104,7 @@ When you enter tag values in a journal, the system uses them as default values i
   - When you add tag values to the journal batch header, the system uses them as default values on the account of each line that's added to the voucher.
   - The tag values that you add to the account on the first line aren't used as default values on the account of the next line of the voucher, and so on.
 
-[![Financial tag values on journal lines.](./media/Tag-line2.png)](./media/Tag-line2.png)
+:::image type="content" source="./media/Tag-line2.png" alt-text="Screenshot of financial tag values on journal lines." lightbox="./media/Tag-line2.png":::
 
 Default tag values don't exist on master data and aren't available as default values. For example, you can't define default tag values on customers or vendors. In addition, properties of a transaction itself aren't automatically entered as default values. For example, you create a tag to track the customer name. If a transaction contains a customer, the customer's name isn't used as the customer tag value by default. You must enter or import the value manually.
 
@@ -154,7 +154,7 @@ Financial tags aren't available in **Financial Reporting**. Therefore, you can't
 
 If you deactivate a tag, the tag values remain on the posted transactions. By default, deactivated tags aren't shown on inquiry pages. However, you can add the columns by selecting **Show inactive financial tags**.
 
-[![Showing deactivated tags.](./media/deactivated-tag3.png)](./media/deactivated-tag3.png)
+:::image type="content" source="./media/deactivated-tag3.png" alt-text="Screenshot of showing deactivated tags." lightbox="./media/deactivated-tag3.png":::
 
 ### Correct tag values after posting
 
@@ -165,7 +165,7 @@ Although financial tags are available for reporting, they aren't part of the led
 1. Use the query to find the transactions that you want to edit.
 1. Select the lines in **Voucher transactions**, and then select **Edit internal voucher data**. You can edit only lines that you select.
 
-[![Editing tag values on voucher transaction lines.](./media/internal-voucher4.png)](./media/internal-voucher4.png)
+:::image type="content" source="./media/internal-voucher4.png" alt-text="Screenshot of editing tag values on voucher transaction lines." lightbox="./media/internal-voucher4.png":::
 
 The page shows the lines that you selected in **Voucher transactions**, including the current financial tags and new financial tags. The current tag values are entered as default values for the new tags. Therefore, you don't have to manually enter everything again but can instead change only what's incorrect. Use the **Bulk update selected records** button to do mass updates. Mass updates are useful if you want to assign tag values to large groups of posted transactions that were incorrect or that no tag values were defined for (for example, because they were posted before the feature was enabled).
 
@@ -173,11 +173,11 @@ The page shows the lines that you selected in **Voucher transactions**, includin
 
 When filtering voucher transactions by using the query form, select **General journal account entry** as the table - not **Financial tags**. The **Financial tags** table displays generic column names (Tag01, Tag02, and so on) instead of your configured tag names, which leads to ambiguous and potentially incorrect results.
 
-[![Incorrect: filtering with the Financial tags table shows generic Tag01–Tag20 column names.](./media/system-query-financial-tags.png)](./media/system-query-financial-tags.png)
+:::image type="content" source="./media/system-query-financial-tags.png" alt-text="Screenshot of incorrect filtering with the Financial tags table showing generic Tag01-Tag20 column names." lightbox="./media/system-query-financial-tags.png":::
 
 Instead, select **General journal account entry** as the table. The financial tag fields appear with their configured names, so you can identify and filter on the correct tag.
 
-[![Correct: filtering with General journal account entry shows configured tag names.](./media/system-query-financial-tags-two.png)](./media/system-query-financial-tags-two.png)
+:::image type="content" source="./media/system-query-financial-tags-two.png" alt-text="Screenshot of correct filtering with General journal account entry showing configured tag names." lightbox="./media/system-query-financial-tags-two.png":::
 
 ## Troubleshoot the "Part Reference's menu item must point to a Form" error
 
@@ -185,7 +185,7 @@ If users receive the error **"Part Reference's menu item must point to a Form"**
 
 Financial tag controls require the **Financial tag essentials** privilege, which grants access to the display menu items used by the financial tag preview. By default, this privilege is included in the **Use basic functionality** duty, which is assigned to the **System user**, **Retail service**, and **Retail store IT** roles.
 
-[![Security configuration showing the Financial tag essentials privilege and its associated duty.](./media/financial-tag-security-configuration.png)](./media/financial-tag-security-configuration.png)
+:::image type="content" source="./media/financial-tag-security-configuration.png" alt-text="Screenshot of security configuration showing the Financial tag essentials privilege and its associated duty." lightbox="./media/financial-tag-security-configuration.png":::
 
 To resolve the error, either assign one of these roles to the affected user, or add the **Financial tag essentials** privilege to a role the user already has. If the error persists after updating security, a service restart might be needed to clear cached security state.
 
@@ -213,12 +213,12 @@ Several features gate the Financial tags experience and the documents that suppo
 - **Financial tags**
 - **Financial tag defaulting rules**
 - **Enable financial tags for sales order invoicing**
-- **Enable financial tags for purchase order invoicing**. If you use tags on purchase order documents, also confirm that you've requested the **PurchaseOrderFinTagFeature** flight for both environments through a support ticket.
+- **Enable financial tags for purchase order invoicing**. If you use tags on purchase order documents, also confirm that you requested the **PurchaseOrderFinTagFeature** flight for both environments through a support ticket.
 - **Allow edits to internal data on general ledger vouchers**. This feature is required to correct tag values on posted transactions.
 
 ### Verify application version parity between environments
 
-The Financial tags entry experience has evolved across releases. An environment on an older application version might still use the legacy entry experience and not support all the behavior described in the current documentation. In each environment, go to **System administration** > **About**, and confirm that the Dynamics 365 Finance application version matches. If the versions don't match, update the lagging environment before you compare tag behavior between them.
+The Financial tags entry experience evolved across releases. An environment on an older application version might still use the legacy entry experience and not support all the behavior described in the current documentation. In each environment, go to **System administration** > **About**, and confirm that the Dynamics 365 Finance application version matches. If the versions don't match, update the lagging environment before you compare tag behavior between them.
 
 ### Confirm the user has the required privilege
 
@@ -239,8 +239,8 @@ Ledger settlement matches transactions by using the values stored on the posted 
 
 If settled accounts show tag values that look incorrect, random, or missing, the most common causes are the following:
 
-- The debit and credit transactions were posted with different tag values, so they never matched on the tag criteria.
-- One side of the settlement was posted before the tag was active, or before the **Financial tags** feature was enabled. Therefore, it has no tag value.
-- The tag was renamed after some transactions were posted. The posted transactions keep the values that were in place at posting time.
+- You posted the debit and credit transactions with different tag values, so they never matched on the tag criteria.
+- You posted one side of the settlement before the tag was active, or before the **Financial tags** feature was enabled. Therefore, it has no tag value.
+- You renamed the tag after some transactions were posted. The posted transactions keep the values that were in place at posting time.
 
 To correct historical tag values without reversing the underlying transactions, use the **Edit internal voucher data** feature, as described in [Correct tag values after posting](#correct-tag-values-after-posting). After you align the tag values across the debit and credit sides, the next ledger settlement run can match them.
