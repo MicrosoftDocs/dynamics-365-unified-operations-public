@@ -143,9 +143,6 @@ After the **Hide leave balance** option is enabled for a leave type, employees o
 
 ### Include weekends and holidays
 
-> [!NOTE]
-> The **Include weekends and holidays** feature is available in the Dynamics 365 Human Resources 10.0.32 release. To use it, you must enable the **Configure leave units per leave type** and **Inclusion of weekends and holidays for leave and absence** features in Feature management. For more information about how to turn on features, see [Manage features](hr-admin-manage-features.md).
-
 Leave types have closed days that are excluded. In other words, weekends and holidays aren't included in calculations of leave request amounts. However, organizations might want to include weekends and holidays for specific leave types. The **Include weekends and holidays** option helps organization distinguish whether calendar days or working days must be considered for specific leave types.
 
 To include weekends and holidays for a leave type, follow these steps:
