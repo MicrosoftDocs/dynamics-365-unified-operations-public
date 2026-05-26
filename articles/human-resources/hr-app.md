@@ -34,7 +34,7 @@ The Human Resources app for leave and absence can be used in Microsoft Teams or 
 Administrators of an organization must install the Human Resources app and share it with Microsoft Teams before organization users can use it.
 
 > [!IMPORTANT]
-> Updates for the Human Resources app will be available. We don't recommend that you customize the app.
+> Updates for the Human Resources app will be available. We recommend that you don't customize the app.
 
 ## Install the Human Resources app
 
