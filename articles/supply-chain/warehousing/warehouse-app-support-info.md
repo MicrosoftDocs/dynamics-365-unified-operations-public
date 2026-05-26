@@ -4,7 +4,7 @@ description: Learn about the support policies that apply to the Warehouse Manage
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/28/2026
 ms.custom:
   - bap-template
