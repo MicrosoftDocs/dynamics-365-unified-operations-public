@@ -18,13 +18,11 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/preview-banner.md)]
 
-In Microsoft Dynamics 365 Finance release 10.0.25, a payment schedule is now supported on the **Vendor invoice journal**.
-
-To use this functionality, you must enable the **Apply payment schedule to invoice journal** feature in Feature management.
+To use a payment schedule on the **Vendor invoice journal**, you must enable the **Apply payment schedule to invoice journal** feature in Feature management.
 
 After the feature is enabled, a new **Payment schedule** field is added to the **Invoice journal** page. When you create an invoice journal line, if payment terms are maintained on the vendor, and the payment terms are selected on the payment schedule, the **Payment schedule** field is updated on the **Invoice journal** page.
 
-You can change the payment schedule that is used, according to your business requirement. During posting of the vendor invoice journal, vendor open transactions will be created according to the payment schedule.
+You can change the payment schedule that is used, according to your business requirement. During posting of the vendor invoice journal, vendor open transactions are created according to the payment schedule.
 
 - To review multiple vendor open transactions that were generated from the payment schedule, go to **Accounts payable \> Invoices \> Open vendor invoices**, and enter the invoice number or the vendor account.
 - To review or configure the payment schedule, go to **Accounts payable \> Payment Setup \> Payment schedule**.
