@@ -29,9 +29,7 @@ The SDK package for Dynamics 365 Commerce release 10.0.49 and later supports **N
 | Node.js 22.x | Supported; required on the SDK package for Dynamics 365 Commerce release 10.0.49 and later |
 
 > [!IMPORTANT]
-> The SDK package for Dynamics 365 Commerce release 10.0.49 and later supports **Node.js 22** only. To upgrade your SDK to the 10.0.49 release or later, move your development environment to Node.js 22.
-
-For the full Commerce release schedule, see [Dynamics 365 Finance, Supply Chain Management, and Commerce public preview releases](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases).
+> The SDK package for Dynamics 365 Commerce release 10.0.49 and later supports **Node.js 22** only.
 
 ### Why upgrade?
 
