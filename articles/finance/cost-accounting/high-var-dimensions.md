@@ -21,14 +21,14 @@ ms.dyn365.ops.version: AX 7.0.0
 A *highly variable dimension* is a financial dimension that has values that aren't reused, either individually or in combination with other values. Financial dimensions are designed for values that persist for years.  
 
 >[!WARNING]
-> Highly variable dimensions can significantly slow performance and increase wait times. Don't store highly variable data as a financial dimension. Use financial tags for highly variable transaction categorizations. For further guidance, see [Recommendations](high-var-dimensions.md#recommendations).
+> Highly variable dimensions can significantly slow performance and increase wait times. Don't store highly variable data as a financial dimension. Use financial tags for highly variable transaction categorizations. For more information, see [Recommendations](high-var-dimensions.md#recommendations).
 
 Values that you use for only days or weeks typically create highly variable dimensions. The generation and overhead of financial dimension combinations is resource-intensive.
 
 Two types of highly variable dimensions produce numerous combinations:
 
 - **Individual highly variable dimensions** – These dimensions typically appear in only one transaction or a few specific transactions.
-- **Combination highly variable dimensions** – These dimensions have limited reusability when they are combined with others. The results are excessive permutations.
+- **Combination highly variable dimensions** – These dimensions have limited reusability when they're combined with others. The results are excessive permutations.
 
 ## Background
 
@@ -43,7 +43,7 @@ The following dimensions lack financial significance and must not be used as fin
 
 These dimensions aren't useful for financial analysis, such as profit and loss statements or trial balances. They must be considered financial tags and not included as financial dimensions.
 
-Examples that lead to highly variable dimensions become problematic if you use the dimensions in combination with others:
+If you use the following dimensions in combination with others, they lead to highly variable dimensions that become problematic:
 
 - Customer ID
 - Vendor ID
@@ -54,7 +54,7 @@ Examples that lead to highly variable dimensions become problematic if you use t
 
 ### Explanation
 
-Even though you include a highly variable dimension in a ledger account, it's ineffective for grouping or reporting because of its highly unique values. Dimensions of this type inflate the number of unique combinations in a dimension set and therefore make it computationally demanding. For example, a highly variable dimension that is based on a unique identifier such as a sales order number doesn't allow for aggregation. Therefore, it leads to slowdowns and high memory usage that affects the size and cost of data storage. If a business uses customers as financial dimensions, regularly adds thousands of new customers, and processes hundreds of thousands of transactions, the results are millions of variable dimensions. Inclusion of a highly variable dimension, such as a unique identifier that has no value reuse, greatly increases combinations and strains system performance.
+Even though you include a highly variable dimension in a ledger account, it's ineffective for grouping or reporting because of its highly unique values. These dimensions inflate the number of unique combinations in a dimension set and make it computationally demanding. For example, a highly variable dimension that is based on a unique identifier such as a sales order number doesn't allow for aggregation. Therefore, it leads to slowdowns and high memory usage that affects the size and cost of data storage. If a business uses customers as financial dimensions, regularly adds thousands of new customers, and processes hundreds of thousands of transactions, the results are millions of variable dimensions. Inclusion of a highly variable dimension, such as a unique identifier that has no value reuse, greatly increases combinations and strains system performance.
 
 ### Impact on financial processes
 
@@ -72,6 +72,6 @@ To optimize financial dimensions, follow these recommendations:
 
 - Align financial dimensions with external reporting and analytics that require aggregation and consistency.
 - Use financial tags for detailed internal tracking instead of overloading the financial dimension framework.
-- Reserve financial dimensions for high-reuse, low-variability data that is relevant to external reporting.
+- Reserve financial dimensions for high-reuse, low-variability data that's relevant to external reporting.
 - Avoid highly variable dimensions such as customer accounts or document numbers, because they create excessive combinations, strain performance, and inflate data storage costs.
 - Before implementation, test potentially volatile dimensions, such as customer ID or vendor ID, to evaluate their impact on performance.

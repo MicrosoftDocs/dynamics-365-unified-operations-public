@@ -3,7 +3,7 @@ title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: Learn about the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: ilikond
 ms.author: ikondratenko
-ms.date: 04/10/2026
+ms.date: 05/12/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Saudi Arabia
@@ -17,7 +17,7 @@ ms.custom:
 [!include[banner](../../../finance/includes/banner.md)]
 
 > [!NOTE]
-> The functionality described in this article supports the Phase 2 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia. For information about the legacy features that support the Phase 1 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate QR codes and print them on receipts for Saudi Arabia](emea-sau-qr-code.md). 
+> The functionality described in this article supports the Phase 2 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia.
 
 This article provides an overview of the functionality for simplified electronic invoices (e-invoices) that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
@@ -37,16 +37,16 @@ The high-level, end-to-end process flow in Commerce for Saudi Arabia is as follo
     > [!NOTE]
     > If POS is in offline mode, the local copy of CRT on the POS machine generates and digitally signs the e-invoice.
 
-1. CRT generates a simplified e-invoice in an XML format. [Electronic reporting (ER)](../../../dev-itpro/analytics/general-electronic-reporting.md) is used to implement the XML format of e-invoices for Saudi Arabia. A common format is used for simplified e-invoices in Commerce and regular tax e-invoices in Dynamics 365 Finance.
-1. CRT sends Commerce headquarters a request to provide a digital certificate.
-1. Commerce headquarters extracts the digital certificate from Azure Key Vault and sends it back to CRT. For more information about how Commerce handles digital certificates, see the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section of this article.
+2. CRT generates a simplified e-invoice in an XML format. [Electronic reporting (ER)](../../../dev-itpro/analytics/general-electronic-reporting.md) is used to implement the XML format of e-invoices for Saudi Arabia. A common format is used for simplified e-invoices in Commerce and regular tax e-invoices in Dynamics 365 Finance.
+3. CRT sends Commerce headquarters a request to provide a digital certificate.
+4. Commerce headquarters extracts the digital certificate from Azure Key Vault and sends it back to CRT. For more information about how Commerce handles digital certificates, see the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section of this article.
 
     > [!NOTE]
     > If POS is in offline mode, the local copy of CRT uses a digital certificate that's locally installed on the POS machine.
 
-1. CRT calculates the invoice hash, digitally signs the e-invoice data, and generates a QR code that includes the invoice hash and digital signature data. CRT also updates the XML invoice with the invoice hash and digital signature data. The e-invoice, the invoice hash, the QR code, and other information are saved in the channel database in a fiscal transaction that's linked to the sales transaction.
-1. POS requests a sales receipt from CRT. CRT builds the receipt, including the QR code, and sends it back to POS. POS sends the receipt to the receipt printer.
-1. Commerce headquarters uses Commerce Data Exchange (CDX) to download the sales transaction data together with fiscal transactions from CSU. The data is stored in the headquarters database throughout the life of your production environment.
+5. CRT calculates the invoice hash, digitally signs the e-invoice data, and generates a QR code that includes the invoice hash and digital signature data. CRT also updates the XML invoice with the invoice hash and digital signature data. The e-invoice, the invoice hash, the QR code, and other information are saved in the channel database in a fiscal transaction that's linked to the sales transaction.
+6. POS requests a sales receipt from CRT. CRT builds the receipt, including the QR code, and sends it back to POS. POS sends the receipt to the receipt printer.
+7. Commerce headquarters uses Commerce Data Exchange (CDX) to download the sales transaction data together with fiscal transactions from CSU. The data is stored in the headquarters database throughout the life of your production environment.
 1. Commerce headquarters extracts the simplified e-invoice in the XML format from the fiscal transaction that's linked to the sales transaction. It then submits the e-invoice to ZATCA. The submission is done by integrating with the [Electronic Invoicing service](../../../finance/localizations/mea/gs-e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities that are available to Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../../finance/localizations/mea/emea-sau-e-invoices.md).
 
 ## Set up Commerce for Saudi Arabia

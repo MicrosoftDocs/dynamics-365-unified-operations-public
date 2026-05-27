@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2022-06-04
@@ -127,7 +127,7 @@ To generate a Traceable goods operation report in electronic format, follow thes
 
 1. Select **OK**.
 1. On the **Action log** FastTab, review all the user actions for the current message.
-12.	To review the report that is generated, select **Attachments** in the upper-right corner of the page, and then select **Open** to open the file.
+1. To review the report that is generated, select **Attachments** in the upper-right corner of the page, and then select **Open** to open the file.
 
 
 

@@ -4,8 +4,9 @@ description: Learn how to import postal codes for Japan, including outlines and 
 author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 12/08/2025
-ms.custom:
+ms.date: 05/04/2026
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak 
 audience: Application User
 ms.search.region: Japan

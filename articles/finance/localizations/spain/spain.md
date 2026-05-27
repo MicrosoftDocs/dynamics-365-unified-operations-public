@@ -4,7 +4,7 @@ description: Access links to documentation resources for Spain, including links 
 author: kfend
 ms.author: evgenypopov
 ms.topic: overview
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak 
 audience: Application User
 ms.search.region: Spain

@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Singapore
 
@@ -27,10 +27,10 @@ The IAF in text format is available in Finance as of version 10.0.26.
 To work with the IAF for Singapore, you must complete the following tasks:
 
 1. [Import Electronic reporting (ER) configurations](#import).
-2. [Associate sales tax codes with Singaporean standard GST codes](#tax-codes).
-3. [Enable features in Feature management](#features).
-4. [Select the ER configuration in General ledger parameters](#gl-param).
-5. [Set up company information for the reporting header](#header-information).
+1. [Associate sales tax codes with Singaporean standard GST codes](#tax-codes).
+1. [Enable features in Feature management](#features).
+1. [Select the ER configuration in General ledger parameters](#gl-param).
+1. [Set up company information for the reporting header](#header-information).
 
 ### <a name="import"></a>Import ER configurations
 
@@ -56,28 +56,28 @@ In the IAF for Singapore, sales tax codes that are used in Finance must be assoc
 If your legal entity's GST codes are set up in accordance with the Singaporean standard GST codes, follow these steps:
 
 1. In the **Electronic reporting** workspace, in the configuration tree, select the **IRAS Audit File - IAF in TXT (SG)** ER format.
-2. Confirm that the company that you're working in is the company for which you'll run the IAF for Singapore.
-3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
-4. On the left side of the **Application specific parameters** page, select the version of the format that you want to use.
-5. Change the value of the **State** field to **Completed**, save your changes, and close the page.
+1. Confirm that the company that you're working in is the company for which you'll run the IAF for Singapore.
+1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. On the left side of the **Application specific parameters** page, select the version of the format that you want to use.
+1. Change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 If your legal entity's GST codes aren't set up in accordance with the Singaporean standard GST codes, follow these steps to associate GST codes that are used in Finance with Singaporean standard GST codes.
 
 1. In the **Electronic reporting** workspace, in the configuration tree, select the **IRAS Audit File - IAF in TXT (SG)** ER format.
-2. Confirm that the company that you're working in is the company for which you'll run the IAF for Singapore.
-3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
-4. On the left side of the **Application specific parameters** page, select the version of the format that you want to use.
-5. On the **Lookup** FastTab, select **StandardTaxCodes\_Lookup**.
-6. On the **Conditions** FastTab, specify criteria by adding lines for each **Result** value that must be used in the selected company. If several GST codes in the selected company must result in the same standard GST code, add a separate line for each GST code, and specify the same standard GST code for each.
-7. Select the **Other** value as the last condition in the list. This condition must be set to **\*Not blank\*** in the **GST code** column. Use the value in the **Line** column to verify that **Other** is the last condition in the table.
-8. When you finish setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
+1. Confirm that the company that you're working in is the company for which you'll run the IAF for Singapore.
+1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. On the left side of the **Application specific parameters** page, select the version of the format that you want to use.
+1. On the **Lookup** FastTab, select **StandardTaxCodes\_Lookup**.
+1. On the **Conditions** FastTab, specify criteria by adding lines for each **Result** value that must be used in the selected company. If several GST codes in the selected company must result in the same standard GST code, add a separate line for each GST code, and specify the same standard GST code for each.
+1. Select the **Other** value as the last condition in the list. This condition must be set to **\*Not blank\*** in the **GST code** column. Use the value in the **Line** column to verify that **Other** is the last condition in the table.
+1. When you finish setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 ### <a name="features"></a>Enable features in Feature management
 
 To enable features in Feature management, follow these steps:
 
 1. Go to the **Feature management** workspace.
-2. On the **All** tab, find and select the following features in the feature list. Note that enabling some of these features is optional.
+1. On the **All** tab, find and select the following features in the feature list. Note that enabling some of these features is optional.
 
     | Feature name | Mandatory or optional |
     |--------------|-----------------------|
@@ -87,14 +87,14 @@ To enable features in Feature management, follow these steps:
     | [Accelerate the ER labels storage](../../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance) | Optional |
     | [Use application specific parameters from previous versions of ER formats](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md#reuse-legal-entitydependent-parameters) | Optional |
 
-3. Select **Enable now**.
+1. Select **Enable now**.
 
 ### <a name="gl-param"></a>Select the ER configuration in General ledger parameters
 
 To select the ER configuration in General ledger parameters, follow these steps:
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
-2. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **IRAS Audit File - IAF in TXT (SG)**.
+1. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **IRAS Audit File - IAF in TXT (SG)**.
 
 ### <a name="header-information"></a>Set up company information for the reporting header
 
@@ -121,7 +121,7 @@ To report the GST Registration Number of the company that is reporting the IAF, 
 To generate an IAF for Singapore, follow these steps:
 
 1. Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
-2. In the report dialog, set the following fields.
+1. In the report dialog, set the following fields.
 
     | Field name | Description |
     | ---------- | ----------- |
@@ -137,8 +137,8 @@ To generate an IAF for Singapore, follow these steps:
     | Settlement period | Select a settlement period to filter sales tax transactions on the report. If you leave this field blank, sales tax transactions from all settlement periods are included on the report. |
     | Include invoices by | Data that is reported in the **Purchase Listing Table (PurchaseLines)** and **Supply Listing Table (SupplyLines)** sections of the report is filtered according to the dates that are specified in the **From date** and **To date** fields. Use the **Include invoices by** parameter to define which field of the data this filter must be applied to. The following options are available: **Invoice Date**, **Tax transaction date**, and **Date of VAT register**. The **Date of VAT register** option is available only when the [Date of VAT register](../united-kingdom/emea-tax-point-date.md) feature is enabled. |
 
-3. You can use the **Records to include** option to filter the data on the report by one or more main accounts. This parameter affects only the **GLDataLines** section of the report.
-4. On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+1. You can use the **Records to include** option to filter the data on the report by one or more main accounts. This parameter affects only the **GLDataLines** section of the report.
+1. On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 ## Implementation details
 

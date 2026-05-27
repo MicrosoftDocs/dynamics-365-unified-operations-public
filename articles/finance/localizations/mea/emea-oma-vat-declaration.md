@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/05/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Oman
 ms.search.validFrom: 2021-06-10
@@ -31,8 +31,8 @@ The VAT return form in Microsoft Dynamics 365 Finance includes the following rep
 - The primary address of the legal entity must be in Oman.
 - In the **Feature management** workspace, the following features must be enabled:
 
-    - **VAT statement format reports**
-    - **Category hierarchy for Sales and purchase tax report** – This feature is optional if you want to use commodity codes as goods and service descriptions in VAT books.
+  - **VAT statement format reports**
+  - **Category hierarchy for Sales and purchase tax report** – This feature is optional if you want to use commodity codes as goods and service descriptions in VAT books.
 
     For more information about how to enable features, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -61,7 +61,7 @@ The **Application-specific parameters** option lets you establish the criteria t
 
 Per the legal definition, the value of box 1a, "Supplies of goods / services taxed at 5%," should be the reported total value of standard rate supplies of goods and services in the Sultanate, including deemed supplies. Report the VAT-exclusive value only.
 
-In Finance, and depending on the tax configuration, you can implement a specific sales tax group code that represents and calculates the operations at a standard sales rate. 
+In Finance, and depending on the tax configuration, you can implement a specific sales tax group code that represents and calculates the operations at a standard sales rate.
 
 To configure box 1a for this example, follow these steps:
 
@@ -84,7 +84,7 @@ To configure box 1a for this example, follow these steps:
     1. In the **Transaction classifier** field, select **\*Not blank\***.
 
     By adding this last record, you define the following rule: If the tax code and name that are passed as an argument don't satisfy any of the previous rules, the transactions won't be included in the VAT return form. Although this rule isn't used when the report is generated, it helps prevent errors during report generation if a rule configuration is missing.
-	
+ 
 1. In the **State** field, select **Completed**, and then select **Save**.
 1. Close the **Application specific parameters** page.
 
@@ -162,7 +162,7 @@ To generate the tax declaration report, follow these steps:
 1. Select the settlement period.
 1. Select the "from" date.
 1. Select the sales tax payment version.
-1. Select **OK**. 
+1. Select **OK**.
 1. Enter the amount of the credit from the previous period, if applicable, or leave the amount as **0** (zero).
 1. In the **Generate details** field, select one or both of the following options. The VAT return form is always generated in this process.
 

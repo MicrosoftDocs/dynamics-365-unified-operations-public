@@ -4,7 +4,9 @@ description: Learn about functionality specific to Japan with links to resources
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 12/08/2025
+ms.custom: 
+  - bap-template
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Japan

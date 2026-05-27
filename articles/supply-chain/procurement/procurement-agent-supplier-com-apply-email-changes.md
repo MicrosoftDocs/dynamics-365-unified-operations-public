@@ -1,5 +1,5 @@
 ---
-title: Review and apply purchase order changes received in vendor emails (production ready preview)
+title: Review and apply purchase order changes received in vendor emails (production-ready preview)
 description: Learn how Copilot automates vendor email analysis, identifies purchase order changes, and helps you apply updates.
 author: t-benebo
 ms.author: benebotg
@@ -14,13 +14,13 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Review and apply purchase order changes received in vendor emails (production ready preview)
+# Review and apply purchase order changes received in vendor emails (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The Supplier Communications Agent helps speed up communications with vendors about purchase orders by enabling Copilot to read emails from some or all vendors.
+The Procurement Agent helps speed up communications with vendors about purchase orders by enabling Copilot to read emails from some or all vendors.
 
 When Copilot analyzes a vendor email, it determines what the message is about. For example, the agent recognizes whether it's a purchase order confirmation or a purchase order change request. It also identifies which purchase order it applies to. Copilot then matches the information that it extracts from the email to fields in the system and indicates whether there are any changes. Therefore, you just need to review the information that Copilot provides, review the proposed changes, and decide whether to accept those changes. Copilot saves you time, because you don't have to manually find, open, and edit the purchase order in the system.
 
@@ -40,16 +40,16 @@ When you review incoming changes that are based on an email, the system shows th
 
 ## Configure the agent to track your email
 
-You need to configure the Supplier Communications Agent to monitor a specific email address for incoming messages from vendors. Follow these steps to complete the configuration.
+You need to configure the Procurement Agent to monitor a specific email address for incoming messages from vendors. Follow these steps to complete the configuration.
 
 > [!IMPORTANT]
-> Before you begin, complete the steps in [Set up and configure the Supplier Communications Agent](./supplier-com-agent-setup.md). If you want to send or forward email communications from your own email address for testing, you must also [set up your email address as a vendor contact](supplier-com-agent-setup.md#own-email).
+> Before you begin, complete the steps in [Set up and configure supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup.md). If you want to send or forward email communications from your own email address for testing, you must also [set up your email address as a vendor contact](procurement-agent-supplier-com-setup.md#own-email).
 
-1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration).
+1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](procurement-agent-supplier-com-setup.md#permissions-for-users-who-manage-the-agent-configuration).
 1. Go to **Agents** \> **Agents (Preview)**.
 1. On the **Library** tab, for **Speed up updates in purchase orders with Supplier communications agent**, select **Select**.
 1. On the **Agent configuration** page, use the dropdown menu to specify which vendors the agent should analyze emails for. Select **Any vendor** to track all vendors or **Specific vendors** to track a list of specific vendors that you provide.
-1. Select the mailbox that the agent should monitor. The dropdown menu shows all mailboxes that the sign-in user has access to. If the mailbox that you're looking for isn't in the list, follow the steps in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
+1. Select the mailbox that the agent should monitor. The dropdown menu shows all mailboxes that the sign-in user has access to. If the mailbox that you're looking for isn't in the list, follow the steps in [Synchronize mailboxes with Dataverse](procurement-agent-supplier-com-setup.md#synchronize-mailboxes-with-dataverse).
 1. Select **Activate**.
 
 ## Review and accept changes suggested by the agent
@@ -66,7 +66,7 @@ The agent detects changes in the following fields:
 To review and accept changes that the agent suggests based on the emails that it reads, follow these steps:
 
 > [!IMPORTANT]
-> Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
+> Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./procurement-agent-supplier-com-setup.md#synchronize-mailboxes-with-dataverse).
 
 1. Open the **Purchase order receipt and follow-up** workspace.
 1. The **(Preview) Emails from vendors** tile indicates the number of emails that require review. Select the tile.
@@ -81,7 +81,7 @@ To review and accept changes that the agent suggests based on the emails that it
 
 ## Teach the agent how to better interpret incoming email content
 
-If a vendor uses acronyms or other language that the system doesn't recognize, the Supplier Communications Agent might not have enough data to interpret it. However, you can teach the agent to better process incoming email content. By teaching the agent, you help improve its accuracy.
+If a vendor uses acronyms or other language that the system doesn't recognize, the Procurement Agent might not have enough data to interpret it. However, you can teach the agent to better process incoming email content. By teaching the agent, you help improve its accuracy.
 
 Two types of teaching are available:
 

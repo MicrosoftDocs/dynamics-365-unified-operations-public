@@ -4,7 +4,7 @@
 title: HCM compensation fixed plan table entity
 description: This article provides details and an example query for the HCM compensation fixed plan table entity in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 05/22/2024
+ms.date: 05/14/2026
 ms.topic: article
 ms.reviewer: twheeloc
 
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Human Resources
 # HCM compensation fixed plan table entity
 
 > [!NOTE]
-> The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
+> The functionality described in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
 This article describes the HCM compensation fixed plan table entity for Dynamics 365 Human Resources.
 
