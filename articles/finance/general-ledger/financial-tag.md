@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.16
 
 After you post transactions, organizations often need visibility into subledger data so they can analyze the accounting entries that come from those transactions. Today, organizations use fields such as the document number, description, or financial dimensions to track subledger data in the general ledger, because it's difficult to navigate the data model to the subledger data. The types of subledger data that organizations often track include sales order or purchase order numbers, vendor or customer names, payment references, invoice numbers, or reference numbers from external transactions that are imported into Microsoft Dynamics 365 Finance. In addition to being used for analytics, the subledger data is used for processes such as ledger settlement.
 
-The **Financial tags** (tags) feature eliminates the need to use document numbers, descriptions, or financial dimensions by letting an organization create and enter up to 20 user-defined fields on transactions. The system stores those fields on the accounting entries that it creates for the transactions. Tag values aren't stored in any subledger tables, the Customer transactions, or Vendor transactions table.
+The **Financial tags** feature eliminates the need to use document numbers, descriptions, or financial dimensions by letting an organization create and enter up to 20 user-defined fields on transactions. The system stores those fields on the accounting entries that it creates for the transactions. Tag values aren't stored in any subledger tables, the Customer transactions, or Vendor transactions table.
 
 In each new release, tags are implemented in additional journals, documents, and processes. The following journals and transactions support tags:
 
@@ -36,18 +36,18 @@ In each new release, tags are implemented in additional journals, documents, and
 - Sales order documents (Sales order, packing slip, and customer invoice)
 
     > [!NOTE]
-    > To make support for tags available on sales order documents, enable the **Enable financial tags for sales order invoicing** feature in Feature management.
+    > To support Financial tags available on sales order documents, enable the **Enable financial tags for sales order invoicing** feature in Feature management.
 
 - Purchase order documents (Purchase order, product receipt, and vendor invoice)
 
     > [!NOTE]
     > Starting in Dynamics 365 Finance version 10.0.41, tags are available on purchase order documents. The **Enable financial tags for purchase order invoicing** feature is available in Feature management. The feature is in private preview controlled by the **PurchaseOrderFinTagFeature** flight. To start using Financial tags on purchase order documents, create a IcM ticket to enable the flight first.
 
-## Setup
+## Set up
 
 To use this functionality, you must enable the **Financial tags** feature in the **Feature management** workspace. You can disable the feature at any time. If you enable the feature but later disable it, the database maintains any values that you entered for financial tags on transactions. However, you can't see these values on any transactions or in inquiries in Dynamics 365 Finance.
 
-The experience of entering tags on transactions resembles the experience of entering a ledger account by using financial dimensions. Tags don't use the same control as a ledger account, but they still require a delimiter between the tag values. You should define the tag delimiter before you define any financial tags. On the **General ledger parameters** page, select **Financial tags**, and specify the delimiter. The delimiter that you specify must not be used in any tag values that you enter on transactions. For example, if you define a hyphen (\-) as the delimiter, the customer name that you enter as the tag value can't contain a hyphen. You can't change the delimiter after you define it.
+The experience of entering tags on transactions resembles the experience of entering a ledger account by using financial dimensions. Tags don't use the same control as a ledger account, but they still require a delimiter between the tag values. You should define the tag delimiter before you define any financial tags. On the **General ledger parameters** page, select **Financial tags**, and specify the delimiter. The delimiter that you specify must not be used in any tag values that you enter on transactions. For example, if you define a hyphen (\-) as the delimiter, the customer name that you enter as the tag value can't contain a hyphen. You can't change the delimiter after it's defined.
 
 After you enable the feature, each legal entity can define up to 20 financial tags. Tags are legal entity–specific. Use the **Financial tag configuration** and **Financial tags custom list value** entities to import the tags for each legal entity. You can quickly and easily define the same initial setup in multiple legal entities.
 
@@ -63,7 +63,7 @@ Before you create financial tags, note the following points:
 
 ### Create a financial tag
 
-Follow these steps to create a financial tag.
+To create a financial tag, follow these steps:
 
 1. Go to **General ledger > Chart of accounts > Financial tags > Financial tags**.
 1. Select **New** to create a financial tag.
@@ -97,7 +97,7 @@ When you enter tag values in a journal, the system uses them as default values i
   - When you add tag values to the account, the system uses them as default values on the offset account.
   - If the offset account already exists when you add tag values to the account, the system doesn't use those tag values as default values on the offset account.
   - If tag values exist on both the account and the offset account, changes to the tag values in one place don't update the values in the other place. For example, if you change the tag values on the account, the tag values on the offset account aren't updated. This behavior helps prevent loss of data if a user manually overrides the default values.
-  - When you add a new line, if you assign a new voucher number (which represents a new transaction), the defaulting behavior starts over. Tag values from the lines of one voucher are never used as default values on the lines of a different voucher.
+  - When you add a new line, if you assign a new voucher number (which represents a new transaction), the defaulting process starts over. Tag values from the lines of one voucher are never used as default values on the lines of a different voucher.
 
 - Multiline voucher:
 
@@ -137,7 +137,7 @@ If a document has downstream documents, the system uses the tags from the parent
 
 When you enter tag values on transactions, the system doesn't validate them during either transaction entry or posting. Even if you define a tag of the **List** or **Custom list** value type, the system doesn't validate tag values to ensure they exist in the list. For example, if you create a tag of the **List** value type and select the purchase order number as the source of the list, the system presents a list of purchase order numbers, but you can enter a purchase order number that doesn't exist in the list.
 
-If you require validation, change the tag's value type to **Fixed list** or **Fixed custom list** (available in version 10.0.44 and later). To switch an existing tag:
+If you require validation, change the tag's value type to **Fixed list** or **Fixed custom list**, available in Dynamics 365 Finance version 10.0.44 and later. To switch an existing tag:
 
 1. Go to **General ledger** > **Chart of accounts** > **Financial tags** > **Financial tags**.
 1. Select the financial tag that you want to enable validation for.
@@ -150,7 +150,7 @@ After you switch to a fixed type, only values that exist in the defined list are
 
 After you post a transaction, the financial tags are available on the lines of the general ledger account entry. They appear on the **Voucher transactions** and **Transactions for main account** pages. The financial tags appear in separate columns, so that you can more easily sort and filter them.
 
-Financial tags aren't available in **Financial Reporting**. Therefore, you can't get a summarized balance of transactions for a specific tag value. For example, when you're looking at the trial balance, you can't get balances per tag value. However, when you drill down into the balances from the trial balance, the tag values appear on the detailed transactions. You can export the detailed transactions, including the tag values in separate columns, to **Excel** or **Power BI**, where you can summarize them if balances are required.
+Financial tags aren't available in **Financial reporting**. Therefore, you can't get a summarized balance of transactions for a specific tag value. For example, when you're looking at the trial balance, you can't get balances per tag value. However, when you drill down into the balances from the trial balance, the tag values appear on the detailed transactions. You can export the detailed transactions, including the tag values in separate columns, to Excel or Power BI, where you can summarize them if balances are required.
 
 If you deactivate a tag, the tag values remain on the posted transactions. By default, deactivated tags aren't shown on inquiry pages. However, you can add the columns by selecting **Show inactive financial tags**.
 
@@ -167,11 +167,11 @@ Although financial tags are available for reporting, they aren't part of the led
 
 :::image type="content" source="./media/internal-voucher4.png" alt-text="Screenshot of editing tag values on voucher transaction lines." lightbox="./media/internal-voucher4.png":::
 
-The page shows the lines that you selected in **Voucher transactions**, including the current financial tags and new financial tags. The current tag values are entered as default values for the new tags. Therefore, you don't have to manually enter everything again but can instead change only what's incorrect. Use the **Bulk update selected records** button to do mass updates. Mass updates are useful if you want to assign tag values to large groups of posted transactions that were incorrect or that no tag values were defined for (for example, because they were posted before the feature was enabled).
+The page shows the lines that you selected in **Voucher transactions**, including the current financial tags and new financial tags. The current tag values are entered as default values for the new tags. Therefore, you don't have to manually enter everything again but can instead change only what's incorrect. Use the **Bulk update selected records** button to do mass updates. Mass updates are useful if you want to assign tag values to large groups of posted transactions that were incorrect or that no tag values were defined for. For example, because they were posted before the feature was enabled.
 
 ## Filter voucher transactions by financial tag
 
-When filtering voucher transactions by using the query form, select **General journal account entry** as the table - not **Financial tags**. The **Financial tags** table displays generic column names (Tag01, Tag02, and so on) instead of your configured tag names, which leads to ambiguous and potentially incorrect results.
+When filtering voucher transactions by using the query page, select **General journal account entry** as the table - not **Financial tags**. The **Financial tags** table displays generic column names (Tag01, Tag02, and so on) instead of your configured tag names, which leads to ambiguous and potentially incorrect results.
 
 :::image type="content" source="./media/system-query-financial-tags.png" alt-text="Screenshot of incorrect filtering with the Financial tags table showing generic Tag01-Tag20 column names." lightbox="./media/system-query-financial-tags.png":::
 
@@ -179,9 +179,9 @@ Instead, select **General journal account entry** as the table. The financial ta
 
 :::image type="content" source="./media/system-query-financial-tags-two.png" alt-text="Screenshot of correct filtering with General journal account entry showing configured tag names." lightbox="./media/system-query-financial-tags-two.png":::
 
-## Troubleshoot the "Part Reference's menu item must point to a Form" error
+## Troubleshoot the "Part Reference's menu item must point to a page" error
 
-If users receive the error **"Part Reference's menu item must point to a Form"** when opening a form that includes financial tags, the cause is typically a missing security configuration.
+If users receive the error **"Part Reference's menu item must point to a page"** when opening a page that includes financial tags, the cause is typically a missing security configuration.
 
 Financial tag controls require the **Financial tag essentials** privilege, which grants access to the display menu items used by the financial tag preview. By default, this privilege is included in the **Use basic functionality** duty, which is assigned to the **System user**, **Retail service**, and **Retail store IT** roles.
 
@@ -191,7 +191,7 @@ To resolve the error, either assign one of these roles to the affected user, or 
 
 ## Troubleshoot missing financial tag fields or values
 
-If financial tag columns or values don't appear where you expect them—for example, the **Financial tag** field appears on a journal header but not on the journal lines, or previously configured tag values disappear from a list view—the cause is usually cached metadata or environment configuration drift rather than a posting bug. Work through the following checks in order.
+If financial tag columns or values don't appear where you expect them. For example, the **Financial tag** field appears on a journal header but not on the journal lines, or previously configured tag values disappear from a list view. The cause is usually cached metadata or environment configuration drift rather than a posting bug. Work through the following checks in order.
 
 ### Clear the user cache
 
@@ -208,7 +208,7 @@ If the field or values now appear for that user, repeat the steps for any other 
 
 ### Verify Feature management parity between environments
 
-Several features gate the Financial tags experience and the documents that support tags. If Production and Sandbox (or any two other environments) have different features enabled, the behavior and the available entry experiences differ between them. In each environment, go to **System administration** > **Workspaces** > **Feature management**, and confirm that the following features are in the same state in both environments:
+Several features gate the financial tags experience and the documents that support tags. If Production and Sandbox (or any two other environments) have different features enabled, the behavior and the available entry experiences differ between them. In each environment, go to **System administration** > **Workspaces** > **Feature management**, and confirm that the following features are in the same state in both environments:
 
 - **Financial tags**
 - **Financial tag defaulting rules**
@@ -218,11 +218,11 @@ Several features gate the Financial tags experience and the documents that suppo
 
 ### Verify application version parity between environments
 
-The Financial tags entry experience evolved across releases. An environment on an older application version might still use the legacy entry experience and not support all the behavior described in the current documentation. In each environment, go to **System administration** > **About**, and confirm that the Dynamics 365 Finance application version matches. If the versions don't match, update the lagging environment before you compare tag behavior between them.
+The financial tags entry experience evolved across releases. An environment on an older application version might still use the legacy entry experience and not support all the behavior described in the current documentation. In each environment, go to **System administration** > **About**, and confirm that the Dynamics 365 Finance application version matches. If the versions don't match, update the lagging environment before you compare tag behavior between them.
 
 ### Confirm the user has the required privilege
 
-If a user sees the **"Part Reference's menu item must point to a Form"** error, or doesn't see any tag controls at all, confirm that the user's roles include the **Financial tag essentials** privilege. For more information, see [Troubleshoot the "Part Reference's menu item must point to a Form" error](#troubleshoot-the-part-references-menu-item-must-point-to-a-form-error).
+If a user sees the **"Part Reference's menu item must point to a page"** error, or doesn't see any tag controls at all, confirm that the user's roles include the **Financial tag essentials** privilege. For more information, see [Troubleshoot the "Part Reference's menu item must point to a page" error](#troubleshoot-the-part-references-menu-item-must-point-to-a-form-error).
 
 ## Troubleshoot financial tags on imported journals
 
