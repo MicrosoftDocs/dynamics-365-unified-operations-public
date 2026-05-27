@@ -35,6 +35,7 @@ If your e-commerce environment was created before February 11, 2026, you must fi
 
 > [!NOTE]
 > When you switch from Azure AD B2C to Microsoft Entra External ID, authentication profiles previously configured for Azure AD B2C no longer appear and are unavailable for use.
+Any previously configured Azure AD B2C authentication profiles will stop working, and users will not be able to sign in resulting in **site authentication downtime** until Microsoft Entra External ID setup is fully completed.
 
 ## Create a Microsoft Entra external tenant on Azure
 
