@@ -35,16 +35,16 @@ Use the **Letter of guarantee** page to complete these tasks:
 
 The following table describes the actions that you can perform on a letter of guarantee.
 
-| Action              | Purpose                                                                                                                   |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Submit to bank      | Submit the letter of guarantee request to the bank.                                                                       |
-| Receive from bank   | After the bank agrees to the submitted request, collect the letter of guarantee from the bank.                            |
-| Give to beneficiary | After you receive the letter of guarantee from the bank, provide the letter of guarantee to the beneficiary.              |
-| Increase value      | If the beneficiary and the principal agree, increase the monetary value.                                                  |
-| Decrease value      | If the beneficiary and the principal agree, decrease the monetary value.                                                  |
-| Extend              | After you provide the letter of guarantee to the beneficiary, extend the period of validity, if an extension is required. |
-| Cancel              | When the purpose that the letter of guarantee was requested for no longer applies, cancel the agreement.                  |
-| Liquidate           | When the beneficiary presents the letter of guarantee to the bank, cash out the letter of guarantee.                      |
+| Action              | Purpose                           |
+|---------------------|--------------------------------------------------------------------|
+| Submit to bank      | Submit the letter of guarantee request to the bank.                                                |
+| Receive from bank   | After the bank agrees to the submitted request, collect the letter of guarantee from the bank.         |
+| Give to beneficiary | After you receive the letter of guarantee from the bank, provide the letter of guarantee to the beneficiary.  |
+| Increase value      | If the beneficiary and the principal agree, increase the monetary value.                            |
+| Decrease value      | If the beneficiary and the principal agree, decrease the monetary value.                           |
+| Extend   | After you provide the letter of guarantee to the beneficiary, extend the period of validity, if an extension is required.|
+| Cancel    | When the purpose that the letter of guarantee was requested for no longer applies, cancel the agreement.               |
+| Liquidate    | When the beneficiary presents the letter of guarantee to the bank, cash out the letter of guarantee.            |
 
 For more information, see the following articles:
 
