@@ -4,7 +4,7 @@ description: Access answers to many of the most frequently asked questions about
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: faq
-ms.date: 04/08/2026
+ms.date: 05/27/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -29,10 +29,10 @@ For more information about user-based authentication, read the following article
 
 User-based authentication offers the following advantages over service-based authentication for the Warehouse Management mobile app:
 
-- User-based authentication is easier to configure and use.
-- User-based authentication is more secure in contexts where the Warehouse Management mobile app is used.
-- User-based authentication provides more robust security and more configuration options in Microsoft Entra ID.
-- User-based authentication enables single sign-on (SSO) authentication across apps on the same device.
+- It's easier to configure and use.
+- It's more secure in contexts where the Warehouse Management mobile app is used.
+- It provides more robust security and more configuration options in Microsoft Entra ID.
+- It enables single sign-on (SSO) authentication across apps on the same device.
 
 ## Is service-based authentication deprecated everywhere?
 
