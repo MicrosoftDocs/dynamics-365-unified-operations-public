@@ -50,7 +50,7 @@ When the system identifies confirmed demand, it preserves the following data acr
 
 Before you can use the *keep supply for confirmed demand* feature, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 build 10.0.2645.33 or later.
 - You must use Planning Optimization.
 - The *(Preview) Keep supply for confirmed demand in Planning Optimization* feature must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
