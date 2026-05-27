@@ -1544,6 +1544,8 @@
             href: country-region-picker-module.md
           - name: Catalog picker module
             href: catalog-picker.md
+          - name: Organization selection module (preview)
+            href: organization-selection.md
         - name: Search modules
           items:
           - name: Search results module
@@ -1629,7 +1631,7 @@
       - name: B2B multioutlet capabilities (preview)
         href: b2b/b2b-multi-outlet.md
       - name: B2B multioutlet configuration (preview)
-        href: b2b/b2b-multi-outlet-configuration.md        
+        href: b2b/b2b-multi-outlet-configuration.md
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
