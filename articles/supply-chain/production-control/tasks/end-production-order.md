@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to end a production order. This procedure is the final procedure out of seven procedures that explain the production order lifecycle.
+This procedure shows how to end a production order. It is the final procedure out of seven procedures that explain the production order lifecycle.
 
 ## End a production order
 
