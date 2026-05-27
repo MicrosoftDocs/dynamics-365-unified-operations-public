@@ -23,7 +23,7 @@ You can configure master planning to use different replenishment methods. Replen
 
 Use the following coverage codes:
 
-- **Period** – The replenishment method combines all the demand for a period into one order for the product. The order is planned for the first day of the period, and its quantity fulfills the net requirements during the established period. The period starts with the first demand of the product and covers the defined length of time. The next period starts with the next requirements of the product. The *Period* coverage code is often used for non-predictable inventory draw, season-influenced products, or high-cost products. The following illustration shows an example.
+- **Period** – The replenishment method combines all the demand for a period into one order for the product. The order is planned for the first day of the period, and its quantity fulfills the net requirements during the established period. The period starts with the first demand of the product and covers the defined length of time. The next period starts with the next requirements of the product. Use the *Period* coverage code for non-predictable inventory draw, season-influenced products, or high-cost products. The following illustration shows an example.
 
     :::image type="content" source="./media/coverage-code-period.png" alt-text="Screenshot of Period coverage code use example showing demand and orders across periods.":::
 
@@ -76,7 +76,7 @@ A product has the following configuration:
 
 The product has 10 pieces of on-hand inventory, and there's no other demand or supply.
 
-When master planning runs, a planned order for 12 pieces is created to replenish inventory to the maximum quantity.
+When master planning runs, it creates a planned order for 12 pieces to replenish inventory to the maximum quantity.
 
 ### Example 2
 
