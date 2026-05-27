@@ -1544,6 +1544,8 @@
             href: country-region-picker-module.md
           - name: Catalog picker module
             href: catalog-picker.md
+          - name: Organization selection module (preview)
+            href: organization-selection.md
         - name: Search modules
           items:
           - name: Search results module
@@ -1562,8 +1564,6 @@
             href: dev-itpro/chat-module-pva.md
           - name: Commerce chat module proactive chat parameters
             href: dev-itpro/chat-proactive-chat-parameters.md
-        - name: Organization selection module (preview)
-          href: organization-selection.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
