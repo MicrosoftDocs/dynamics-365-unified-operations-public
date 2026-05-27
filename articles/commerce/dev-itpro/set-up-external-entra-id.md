@@ -44,7 +44,7 @@ To create a Microsoft Entra External ID tenant in the Azure portal, follow these
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the Azure portal page, under **Azure Services**, select **Create a resource**. Use the subscription and directory that you connect with your Commerce environment.
-1. Go to **Identity** > **Microsoft Entra External ID**.  
+1. Go to **Identity** > **Microsoft Entra External ID**.
 1. On the **Basics** tab, on the **Create a tenant** page, enter the following information.
     1. For **Tenant Name**, enter the tenant name (for example, "Contoso Customers").
         1. For **Domain Name**, enter the domain name (for example, Contosocustomers).
