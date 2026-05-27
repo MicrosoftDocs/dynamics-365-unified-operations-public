@@ -4,7 +4,7 @@ description: Learn about the factor depreciation method, which are the percentag
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/05/2024
+ms.date: 05/27/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -20,21 +20,22 @@ ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 
 [!include [banner](../includes/banner.md)]
 
-This article gives an overview of the factor depreciation method.
+This article provides an overview of the factor depreciation method.
 
-Factors are the percentages that are used to depreciate assets. When you set up a fixed asset depreciation profile and select **Factor** in the **Method** field on the **Depreciation profiles** page, you can set up progressive, digressive, or straight line depreciation.
+Factors are the percentages that you use to depreciate assets. When you set up a fixed asset depreciation profile and select **Factor** in the **Method** field on the **Depreciation profiles** page, you can set up progressive, digressive, or straight line depreciation.
 
--   In progressive depreciation, the amount of depreciation increases each depreciation period.
--   In digressive depreciation, the amount of depreciation per period decreases over time.
--   In straight line depreciation, the depreciation is the same in each period.
+- In progressive depreciation, the amount of depreciation increases each depreciation period.
+- In digressive depreciation, the amount of depreciation per period decreases over time.
+- In straight line depreciation, the depreciation is the same in each period.
 
-The rules and examples that follow indicate how you can set up factors for each type of depreciation. 
+The following rules and examples show how you can set up factors for each type of depreciation.
 
-> [!NOTE] 
-> When you select **Factor** in the **Method** field, the **Factor** field and the **Interval** field are displayed.
+> [!NOTE]
+> When you select **Factor** in the **Method** field, the **Factor** and the **Interval** fields appear.
 
 ## Progressive depreciation
-The value in the **Factor** field is more than **50**.
+
+The value in the **Factor** field is greater than **50**.
 
 ### Example
 
@@ -50,6 +51,7 @@ The acquisition price is 100,000, the factor is 70, the service life is 10 years
 | 6    | December 31 | 10,184.06           | 72,283.38             |
 
 ## Digressive depreciation
+
 The value in the **Factor** field is less than **50**.
 
 ### Example
@@ -66,10 +68,7 @@ The acquisition price is 100,000, the factor is 20, the service life is 10 years
 | 6    | December 31 | 3,937.36            | 12,042.34             |
 
 ## Straight line depreciation
-The value in the **Factor** field is equal to **50**. In this case, the depreciation is the same in each period, and you should consider the implications of the values that you have specified in other fields, as described in [Straight line service life depreciation](straight-line-service-life-depreciation.md).
 
-
-
-
+The value in the **Factor** field is equal to **50**. In this case, the depreciation is the same in each period, and you should consider the implications of the values that you specify in other fields, as described in [Straight line service life depreciation](straight-line-service-life-depreciation.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

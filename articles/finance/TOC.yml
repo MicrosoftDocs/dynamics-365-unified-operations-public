@@ -1004,7 +1004,7 @@
                   href: fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
                 - name: Manual depreciation
                   href: fixed-assets/manual-depreciation.md
-                - name: Reduce balance depreciation
+                - name: Reducing balance depreciation
                   href: fixed-assets/reduce-balance-depreciation.md
                 - name: Round-off amount for depreciation calculations
                   href: fixed-assets/round-off-amount-depreciation-calculations.md
