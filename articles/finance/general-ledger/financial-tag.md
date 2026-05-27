@@ -222,7 +222,7 @@ The financial tags entry experience evolved across releases. An environment on a
 
 ### Confirm the user has the required privilege
 
-If a user sees the **"Part Reference's menu item must point to a page"** error, or doesn't see any tag controls at all, confirm that the user's roles include the **Financial tag essentials** privilege. For more information, see [Troubleshoot the "Part Reference's menu item must point to a page" error](#troubleshoot-the-part-references-menu-item-must-point-to-a-form-error).
+If a user sees the **"Part Reference's menu item must point to a page"** error, or doesn't see any tag controls at all, confirm that the user's roles include the **Financial tag essentials** privilege.
 
 ## Troubleshoot financial tags on imported journals
 
