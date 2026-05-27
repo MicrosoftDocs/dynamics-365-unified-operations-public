@@ -3,18 +3,19 @@ title: Quality management tests
 description: Learn how to create tests that can be used for quality orders in Microsoft Dynamics 365 Supply Chain Management, including test examples.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 03/23/2021
 ms.reviewer: kamaybac
 ms.search.form: InventTestTable
-ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
+ms.topic: how-to
+ms.date: 05/27/2026
+ms.custom:
+  - bap-template
 ---
 
 # Quality management tests
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create tests that can be used for quality orders in Microsoft Dynamics 365 Supply Chain Management.
+This article describes how to create tests that you can use for quality orders in Microsoft Dynamics 365 Supply Chain Management.
 
 You use the **Tests** page to define and view the individual tests that determine whether your products meet quality specifications. You can assign one or more individual tests to a test group. In this case, you also specify test-specific information, such as the acceptable measurement values. Measurement values are used for quantitative tests. For qualitative tests, test variables are used.
 
