@@ -38,14 +38,14 @@ Advanced rules are an optional component when you set up the chart of accounts. 
 
 ### Balancing dimension
 
-You can optionally define a balancing financial dimension. On the **Ledger** page, you can define the financial dimension that should be balanced. Then, whenever transactions are posted to that financial dimension, the system automatically creates and posts entries to make the financial dimension balanced.
+You can optionally define a balancing financial dimension. On the **Ledger** page, you can define the financial dimension that should be balanced. Then, whenever you post transactions to that financial dimension, the system automatically creates and posts entries to make the financial dimension balanced.
 
 ### Default and fixed financial dimensions on the main account
 
 Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This article focuses on default dimensions on the main account by legal entity. You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but you can overwrite that value. This behavior applies to all default values in the system, even default values that come from master records. If you set a financial dimension to a **Fixed** value, the system always applies that value, regardless of whether it came from somewhere as a default value or the user entered it.
 
 > [!NOTE]
-> A related concept is **derived dimensions**. Derived dimensions let the value of one financial dimension automatically set the values of other dimensions, based on rules that you define. By default, derived values are applied only when the target dimensions are blank, but you can enable the **Replace existing dimension values with derived values** option to overwrite values that are already populated. For more information, see [Derived dimensions](derived-dimensions.md).
+> A related concept is derived dimensions. Derived dimensions let the value of one financial dimension automatically set the values of other dimensions, based on rules that you define. By default, derived values are applied only when the target dimensions are blank, but you can enable the **Replace existing dimension values with derived values** option to overwrite values that are already populated. For more information, see [Derived dimensions](derived-dimensions.md).
 
 ## Order in which the system applies default dimensions during posting
 
@@ -56,13 +56,13 @@ You might have questions about the order that the various components run in. It'
 
 ### Example 1
 
-**Account structure**
+Account structure
 
 | Main account            | Business unit           | Department              | Cost center             |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-| All values are allowed. | All values are allowed. | All values are allowed. | All values are allowed. |
+| All values are allowed | All values are allowed | All values are allowed | All values are allowed |
 
-**Main account**
+Main account
 
 | Main account | Name          | Legal entity | Department                                 |
 |--------------|---------------|--------------|--------------------------------------------|
@@ -112,7 +112,7 @@ To achieve what you want in this example, you can change the configuration in se
 
 ## Additional resources
 
-Some of the following resources refer to an earlier version of the software. However, much of the information about the application of default dimensions and many of the concepts are the same in the earlier version, so the references are still valid.
+Some of the following resources refer to an earlier version. However, much of the information about the application of default dimensions and many of the concepts are the same in the earlier version, so the references are still valid.
 
 [Balanced journals for interunit accounting](example-balanced-journals-interunit-accounting.md)
 
