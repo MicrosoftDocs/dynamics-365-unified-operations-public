@@ -4,7 +4,7 @@ description: By mapping different cost element dimension members to a common set
 author: AndersEvenGirke
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 05/27/2026
 ms.reviewer: twheeloc
 audience: Application Users
 ms.search.region: global
@@ -26,7 +26,7 @@ If you're a global company and comply with statutory accounting requirements, yo
 
 The following example shows how you, as a cost controller, can create a new cost element dimension in Cost accounting that maps cost element dimension members from the US chart of accounts structure and the French chart of accounts structure to a common set of cost element dimension members. You can then use the common set of cost element dimension members to analyze cost data from the two legal entities in a cost accounting ledger.
 
-| Source: US chart of accounts          | Source: French chart of accounts           | New common set of cost element dimension members                        |
+| Source: US chart of accounts  | Source: French chart of accounts  | New common set of cost element dimension members      |
 |-----------------------------|--------------------------|--------------------------|
 | Imported cost element dimension members from the US chart of accounts | Imported cost element dimension members from the French chart of accounts | Mapping of US and French cost element dimension members to a common set |
 | 5001: Sales    | 5001: Sales and advertising      | 5000: Sales and advertising        |
