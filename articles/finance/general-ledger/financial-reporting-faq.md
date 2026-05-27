@@ -25,9 +25,9 @@ The following example shows how to restrict access to a report by using tree sec
 The USMF demo company has a **Balance sheet** report that not all Financial reporting users should access. Use tree security to restrict access to a single report so that only specific users can access it.
 
 1. Sign in to Financial reporter report designer.
-1. Go to **File** > **New** > **Tree Definition** to create a new tree definition.
+1. Go to **File** > **New** > **Tree definition** to create a new tree definition.
 1. Double-tap (or double-click) the **Summary** line in the **Unit Security** column.
-1. Select **Users and Groups**.
+1. Select **Users and groups**.
 1. Select the users or groups that require access to the report.
 1. Select **Save**.
 1. In the report definition, add your new tree definition.
@@ -39,7 +39,7 @@ If you have a report that doesn't have matching balances, use the following proc
 
 1. Go to financial reporter report designer.
 1. Create a new row definition.
-1. Select **Edit \> Insert Rows from Dimensions**.
+1. Select **Edit \> Insert rows from dimensions**.
 1. Select **MainAccount**.
 1. Select **OK**.
 1. Save the row definition.
@@ -61,7 +61,7 @@ In Dynamics 365 Finance, follow these steps:
 1. Select **Calculate**.
 1. Export the report to Excel.
 
-You can now copy the data from the Financial reporter Excel report to the **Trial Balance** report, so that you can compare the **Closing Balance** columns.
+You can now copy the data from the Financial reporter Excel report to the **Trial balance** report, so that you can compare the **Closing balance** columns.
 
 ## Why does my report show "No data is available on this report" when I filter by a financial dimension other than the main account?
 
@@ -102,7 +102,7 @@ When you update data that is presented on the reports, there might be a delay be
 
 Likewise, when you generate reports by using currency translation for historical type accounts, there are extra per-transaction calculations. Depending on the number of accounts, report generation time can more than double.
 
-## What should I do if my beginning or opening balances in the multi-company consolidation report don't match the Trial Balance after running year-end close without transferring dimensions?
+## What should I do if my beginning or opening balances in the multi-company consolidation report don't match the Trial balance after running year-end close without transferring dimensions?
 
 This discrepancy occurs because financial reporting doesn't support year-end close without transferring balance sheet dimensions, which is a recommended best practice. If you run year-end close without transferring these dimensions, the beginning balance posts to a different dimension than the previous year’s balances, leading to discrepancies.
 
@@ -116,21 +116,21 @@ Financial reporter uses 16 tasks to copy data from Dynamics 365 Finance to the f
 
 | Name                                                       | Interval | Interval timing |
 |------------------------------------------------------------|----------|-----------------|
-| AX 2012 Account Categories to Account Category            | 41       | Minutes         |
-| AX 2012 Accounts to Account                                | 7        | Minutes         |
-| AX 2012 Companies to Company                               | 300      | Seconds         |
-| AX 2012 Companies to Organization                          | 23       | Minutes         |
-| AX 2012 Dimension Combinations to Dimension Combination    | 1        | Minutes         |
-| AX 2012 Dimension Values to Dimension Value                | 11       | Minutes         |
-| AX 2012 Dimensions to Dimension                            | 31       | Minutes         |
-| AX 2012 Exchange Rates to Exchange Rate                    | 17       | Minutes         |
-| AX 2012 Fiscal Years to Fiscal Year                        | 13       | Minutes         |
-| AX 2012 General Ledger Transactions to Fact                | 1        | Minutes         |
-| AX 2012 Organization Hierarchies to Tree                   | 3,600    | Seconds         |
+| AX 2012 Account categories to Account category            | 41       | Minutes         |
+| AX 2012 Accounts to account                                | 7        | Minutes         |
+| AX 2012 Companies to company                               | 300      | Seconds         |
+| AX 2012 Companies to organization                          | 23       | Minutes         |
+| AX 2012 Dimension combinations to Dimension combination    | 1        | Minutes         |
+| AX 2012 Dimension values to Dimension value                | 11       | Minutes         |
+| AX 2012 Dimensions to dimension                            | 31       | Minutes         |
+| AX 2012 Exchange rates to Exchange rate                    | 17       | Minutes         |
+| AX 2012 Fiscal years to Fiscal year                        | 13       | Minutes         |
+| AX 2012 General ledger transactions to fact                | 1        | Minutes         |
+| AX 2012 Organization hierarchies to tree                   | 3,600    | Seconds         |
 | AX 2012 Scenarios to Scenario                              | 29       | Minutes         |
-| AX 2012 Transaction Type Qualifiers to Fact Type Qualifier | 19       | Minutes         |
-| Maintenance Task                                           | 1        | Minutes         |
-| MR Report Definitions to AX7 Financial Reports             | 45       | Seconds         |
-| MR Report Versions to AX Financial Report Versions         | 45       | Seconds         |
+| AX 2012 Transaction type qualifiers to Fact type qualifier | 19       | Minutes         |
+| maintenance task                                           | 1        | Minutes         |
+| MR report definitions to AX7 Financial reports             | 45       | Seconds         |
+| MR report versions to AX Financial report versions         | 45       | Seconds         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
