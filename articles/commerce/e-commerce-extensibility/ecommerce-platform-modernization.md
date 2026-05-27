@@ -20,32 +20,30 @@ This article describes ongoing platform modernization efforts for the Microsoft 
 
 ## Node.js runtime upgrade
 
-The Dynamics 365 Commerce online SDK is moving to **Node.js 22** as the only supported runtime starting with the SDK package for Dynamics 365 Commerce release 10.0.49 (scheduled for July 27, 2026). Node.js 22 delivers significant security improvements, an updated V8 engine, and long-term support (LTS) coverage through April 2027.
+The SDK package for Dynamics 365 Commerce release 10.0.49 and later supports **Node.js 22** only. Node.js 22 delivers significant security improvements, an updated V8 engine, and long-term support (LTS) coverage through April 2027.
 
-### Supported Node.js versions
+### Supported Node.js version
 
 | Node.js version | Support status |
 | --------------- | -------------- |
-| Node.js 16.x | Supported on SDK packages earlier than the Dynamics 365 Commerce 10.0.49 release |
 | Node.js 22.x | Supported; required on the SDK package for Dynamics 365 Commerce release 10.0.49 and later |
 
 > [!IMPORTANT]
-> The Node.js 22 requirement applies only when you upgrade to the SDK package for Dynamics 365 Commerce release 10.0.49 (scheduled for July 27, 2026) or later. If you remain on an earlier SDK package, you can continue to use Node.js 16. To upgrade your SDK to the 10.0.49 release or later, you must move your development environment to **Node.js 22**.
+> The SDK package for Dynamics 365 Commerce release 10.0.49 and later supports **Node.js 22** only. To upgrade your SDK to the 10.0.49 release or later, move your development environment to Node.js 22.
 
 For the full Commerce release schedule, see [Dynamics 365 Finance, Supply Chain Management, and Commerce public preview releases](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases).
 
 ### Why upgrade?
 
-Node.js 16, 18, and 20 have all reached end of life and no longer receive active security patches from the Node.js project. The SDK package for Dynamics 365 Commerce release 10.0.49 and later supports Node.js 22 only. Upgrading to Node.js 22 provides:
+Upgrading to Node.js 22 provides:
 
 - Active security updates
 - Improved performance through the updated V8 engine
 - Compatibility with the latest SDK dependencies
-- Ability to consume the SDK package for release 10.0.49 and later
 
 ### What you need to do
 
-If you plan to upgrade your SDK to the package for Dynamics 365 Commerce release 10.0.49 or later, complete the following steps to move your development environment to Node.js 22:
+To move your development environment to Node.js 22:
 
 1. **Upgrade Node.js**: Install Node.js 22 in your development environment.
 
