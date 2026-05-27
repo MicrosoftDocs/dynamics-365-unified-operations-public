@@ -43,7 +43,7 @@ To approve or reject a nonconformance, follow these steps:
 
 ## Add operations and other details to nonconformances
 
-After you approve a nonconformance, you can add related operations and specify additional information about them. You can only add related operations only to nonconformances that are approved.
+After you approve a nonconformance, you can add related operations and specify additional information about them. You can only add related operations to nonconformances that are approved.
 
 Besides the basic information, you can add the following details to an operation:
 

@@ -49,7 +49,7 @@ Before warehouse work can be automatically generated to move inventory to qualit
 1. Set up a work template for each work order type:
 
     - Set up a work template that uses the *Quality item sampling* work order type to automatically move registered inventory to a quality control location.
-    - Set up a work template that uses the *quality order* work order type to move inventory from a quality control location after quality control is completed.
+    - Set up a work template that uses the *Quality order* work order type to move inventory from a quality control location after quality control is completed.
 
 1. For each work order type, set up location directives that apply the correct quality control locations that the inventory should be moved to. After quality control is completed, the location directive for the *Quality order* work order type ensures that a new destination location will be selected so that the inventory can be moved out of the quality control location.
 1. Set up the relevant mobile device menu items to support the movement of received inventory to the quality control location, and the movement of inventory that passes or fails quality control from the quality control location to a new location.
