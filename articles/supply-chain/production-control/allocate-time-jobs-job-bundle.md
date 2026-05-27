@@ -3,11 +3,14 @@ title: Allocate time to jobs in a job bundle
 description: In Manufacturing execution, you can bundle jobs. You can then start multiple jobs at the same time on the Job list page.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 06/20/2017
 ms.reviewer: kamaybac
 ms.search.form: JmgBundleSlize, JmgProdParameters, JmgRegistration
-ms.assetid: 358efce7-73c8-4d2a-a7f7-cb99b88ab6ee
+ms.topic: how-to
+ms.date: 05/27/2026
+ms.update-cycle: 1095-days
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Allocate time to jobs in a job bundle
@@ -18,15 +21,16 @@ In Manufacturing execution, you can bundle jobs. You can then start multiple job
 
 If you bundle jobs, you must define how the total registered time for all the jobs should be allocated to each job. You define the allocation by selecting one of the following options in the **Bundle type** field on the **Allocation keys** page:
 
--   **Estimation** – Time is divided among the jobs, based on the estimated time for the jobs.
--   **Jobs** – Time is divided according to total jobs that are bundled and how much time was spent finishing all the jobs.
--   **Net time** – Time is divided equally among the jobs that are in the bundle at any time.
--   **Real time** – Actual job time is allocated. The cost can be calculated based on the actual payroll cost. **Note:** The **Real time** allocation key is available only if your company uses the payroll functionality in Time and attendance.
+- **Estimation** – Time is divided among the jobs, based on the estimated time for the jobs.
+- **Jobs** – Time is divided according to total jobs that are bundled and how much time was spent finishing all the jobs.
+- **Net time** – Time is divided equally among the jobs that are in the bundle at any time.
+- **Real time** – Actual job time is allocated. The cost can be calculated based on the actual payroll cost. **Note:** The **Real time** allocation key is available only if your company uses the payroll functionality in Time and attendance.
 
 The following examples show the results of the various allocation keys.
 
 ## Example scenario
-Three jobs in your job queue must be completed. You start the first job, and then, while that job is in progress, you start the second and third jobs. Therefore, there is a bundle of three jobs. The following table shows the estimated production time for each job.
+
+You need to complete three jobs in your job queue. You start the first job, and while that job is in progress, you start the second and third jobs. Therefore, there's a bundle of three jobs. The following table shows the estimated production time for each job.
 
 | Job   | Production time |
 |-------|-----------------|
@@ -35,7 +39,7 @@ Three jobs in your job queue must be completed. You start the first job, and the
 | Job 3 | 4 hours         |
 | Total | 8 hours         |
 
-The following table shows the actual work hours that are spent on each job.
+The following table shows the actual work hours that you spend on each job.
 
 | Job    | Start time | End time | Bundle time |
 |--------|------------|----------|-------------|
@@ -47,6 +51,7 @@ The following table shows the actual work hours that are spent on each job.
 The following sections describe the results of the calculated time for each allocation key.
 
 ## Estimation allocation key
+
 The following table illustrates the formula for calculating allocated time. Here is the formula: Time per job = Total bundle time × (Estimated job time ÷ Total estimated time)
 
 | Job   | Formula           | Allocated time |
@@ -56,6 +61,7 @@ The following table illustrates the formula for calculating allocated time. Here
 | Job 3 | 6 × (4 ÷ 8) hours | 3.00 hours     |
 
 ## Jobs allocation key
+
 The following table illustrates the formula for calculating allocated time. Here is the formula: Time per job = Total bundle time ÷ Number of jobs
 
 | Job   | Formula | Allocated time |
@@ -65,7 +71,8 @@ The following table illustrates the formula for calculating allocated time. Here
 | Job 3 | 6 ÷ 3   | 2 hours        |
 
 ## Net time allocation key
-The following table illustrates the formula for calculating allocated time. Here is the formula: Calculated time per reporting = Bundle time ÷ Number of jobs
+
+The following table shows the formula for calculating allocated time. The formula is: Calculated time per reporting = Bundle time ÷ Number of jobs
 
 | Example                       | 09:00–10:00 (1 hour) | 10:00–11:00 (1 hour) | 11:00–13:00 (2 hours) | 13:00–15:00 (2 hours) | Allocated time |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
@@ -74,8 +81,9 @@ The following table illustrates the formula for calculating allocated time. Here
 | Job 2                        | Not applicable       | 1 ÷ 3 = 0.33 hour    | 2 ÷ 2 = 1 hour        | Not applicable        | 1.33 hours     |
 | Job 3                        | Not applicable       | 1 ÷ 3 = 0.33 hour    | 2 ÷ 2 = 1 hour        | 2 ÷ 1 = 2 hours       | 3.33 hours     |
 
-## Real time allocation key
-If you want production costs to be calculated based on real costs, you must clear the **Cost category** option on the **Production order defaults** page. The following table illustrates the formula for calculating allocated time. Here is the formula: Actual time per job = Actual time in bundle
+## Real-time allocation key
+
+To calculate production costs based on real costs, clear the **Cost category** option on the **Production order defaults** page. The following table shows the formula for calculating allocated time. The formula is: Actual time per job = Actual time in bundle
 
 | Job   | Actual time |
 |-------|-------------|
@@ -83,7 +91,7 @@ If you want production costs to be calculated based on real costs, you must clea
 | Job 2 | 3 hours     |
 | Job 3 | 5 hours     |
 
-Consider the three jobs that are performed by a worker who has an hourly wage of USD 12.00. No overtime bonus or premium was earned in the time that was spent on the jobs. The worker worked on the three bundled jobs for a total of six hours. Therefore, the salary cost is 6 × USD 12.00 = USD 72.00. When you use real-time allocation, the cost per hour is recalculated by using the factor from the Net time formula. The actual time that was spent on each job is then transferred together with the corrected cost price per hour. In the example, six hours are spent, although 10 hours were allocated. The following table illustrates the formula for calculating cost. Here is the formula: Cost per hour = (Total bundle time per job (Net time) ÷ Actual time per job) × Standard cost price per hour
+Consider the three jobs that a worker performs with an hourly wage of USD 12.00. The worker doesn't earn any overtime bonus or premium for the time spent on the jobs. The worker spends six hours working on the three bundled jobs. Therefore, the salary cost is 6 × USD 12.00 = USD 72.00. When you use real-time allocation, the system recalculates the cost per hour by using the factor from the Net time formula. The system then transfers the actual time that was spent on each job together with the corrected cost price per hour. In the example, six hours are spent, although 10 hours were allocated. The following table shows the formula for calculating cost. The formula is: Cost per hour = (Total bundle time per job (Net time) ÷ Actual time per job) × Standard cost price per hour
 
 | Job   | Calculation of corrected cost per hour | Corrected cost per hour | Allocated time | Total cost of job |
 |-------|----------------------------------------|-------------------------|----------------|-------------------|
@@ -91,10 +99,9 @@ Consider the three jobs that are performed by a worker who has an hourly wage of
 | Job 2 | (1.33 ÷ 3) × USD 12.00                 | USD 5.33                | 3 hours        | USD 16.00         |
 | Job 3 | (3.33 ÷ 5) × USD 12.00                 | USD 8.00                | 5 hours        | USD 40.00         |
 
-The corrected cost per hour and the job time are posted in a production journal. **Note:** If you select the **Cost category** option on the **General** tab on the **Production order defaults** page, the actual time for each job is transferred to a production journal, where the cost is applied to the cost category of the specific job.
+The corrected cost per hour and the job time are posted in a production journal.
 
-
-
-
+> [!NOTE]
+> If you select the **Cost category** option on the **General** tab on the **Production order defaults** page, the system transfers the actual time for each job to a production journal, where the cost is applied to the cost category of the specific job.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
