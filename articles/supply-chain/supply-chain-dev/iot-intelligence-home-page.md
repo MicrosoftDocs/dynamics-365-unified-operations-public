@@ -3,11 +3,14 @@ title: IoT Intelligence now replaced by Sensor Data Intelligence
 description: Learn about how IoT Intelligence has now been replaced by Sensor Data Intelligence, which is currently available as a preview feature for Supply Chain Management.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 09/30/2022
 ms.reviewer: kamaybac
-ms.collection: get-started 
 ms.search.form:
+ms.topic: overview
+ms.date: 05/27/2026
+ms.update-cycle: 1095-days
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # IoT Intelligence now replaced by Sensor Data Intelligence

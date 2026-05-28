@@ -6,26 +6,28 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute, ProdParmReportFinished, ProdRouteOprOverview
 ms.topic: article
-ms.date: 01/06/2025
-ms.custom: 
+ms.date: 05/27/2026
+ms.update-cycle: 1095-days
+ms.custom:
   - bap-template
+  - evergreen
 ---
 
 # Report production orders as finished
 
 [!include [banner](../includes/banner.md)]
 
-Report as finished is a production stage. At this stage, a finished product is reported and moved from the production order to the inventory.
+Reporting as finished is a production stage. At this stage, you report a finished product and move it from the production order to the inventory.
 
-When a quantity of finished goods is reported as finished on a production order, it's updated as on-hand in the inventory. Partial quantities of the originally planned order quantity can be reported as finished. It's also possible to report error quantities with an associated error reason when reporting quantities as finished. When a production order reaches the *Reported as finished* stage, it means that no more quantity is going to be reported for the production order.
+When you report a quantity of finished goods as finished on a production order, you update the inventory as on-hand. You can report partial quantities of the originally planned order quantity as finished. You can also report error quantities with an associated error reason when reporting quantities as finished. When a production order reaches the *Reported as finished* stage, it means that you can't report any more quantity for the production order.
 
-The following characteristics are also associated with the report as finished process:
+The report as finished process has the following characteristics:
 
-- It's possible to set up consumption of raw material and time that are proportional to the reported quantity (back-flushing)
-- Putaway work can be generated for items that are enabled for warehouse processes.
-- The planned or standard cost value of the finished goods can be set up to be reported to ledger accounts.
-- A quality order can be created for the reported quantity based on the setup of a quality association. The quantity is reported to the output location. Warehouse work is then generated to move the quantity from the output location to its final destination defined by the location directive for the putaway work.
-- A quality order can be created when a production order is reported as finished if a quality association has been set up.
+- You can set up consumption of raw material and time that are proportional to the reported quantity (back-flushing).
+- You can generate putaway work for items that are enabled for warehouse processes.
+- You can set up the planned or standard cost value of the finished goods to be reported to ledger accounts.
+- You can create a quality order for the reported quantity based on the setup of a quality association. You report the quantity to the output location. Warehouse work is then generated to move the quantity from the output location to its final destination defined by the location directive for the putaway work.
+- You can create a quality order when a production order is reported as finished if a quality association is set up.
 
 ## Set a production order to Reporting as finished
 

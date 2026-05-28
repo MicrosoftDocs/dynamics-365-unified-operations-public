@@ -1,8 +1,8 @@
 ---
 title: Class extension - Method wrapping and Chain of Command
 description: Learn about how to extend the business logic of public and protected methods by using method wrapping, with code examples for models.
-author: josaw1
-ms.author: josaw
+author: pvillads
+ms.author: pvillads
 ms.topic: how-to
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak
@@ -72,7 +72,7 @@ The following sections give more details about the capabilities of method wrappi
 You can wrap protected or public methods of classes, tables, data entities, or forms by using an extension class. The wrapper method must have the same signature as the base method.
 
 - When you augment form classes, you can only wrap root-level methods. You can't wrap methods that are defined in nested classes.
-- Currently, you can only wrap methods that are defined in regular classes. You can't wrap methods that are defined in extension classes by augmenting the extension classes. This capability is planned for a future update.
+
 
 ### What about default parameters?
 
@@ -104,7 +104,7 @@ In the **APerson_Extension** extension class, the **salute** method doesn't incl
 
 ### Wrapping instance and static methods
 
-You can wrap instance and static methods by using extension classes. If you want to wrap a static method, you must qualify the method in the extension by using the **static** keyword.
+You can wrap instance and static methods by using extension classes. To wrap a static method, you must qualify the method in the extension by using the **static** keyword.
 
 For example, consider the following **A** class.
 

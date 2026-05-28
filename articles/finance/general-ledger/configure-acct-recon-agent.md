@@ -26,7 +26,7 @@ ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 This article explains how system administrators can set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
 
 >[!NOTE]
-> Customers can use Power Platform admin center to set up and configure the Account reconciliation agent. For more information, see [Deploy Dynamics 365 agents by using the agent deployment wizard (preview)](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
+> Customers can use Power Platform admin center to set up and configure the Account reconciliation agent. For more information, see [Deploy Dynamics 365 agents by using the agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
 
 ## Prerequisites
 
@@ -135,7 +135,7 @@ To enable the agent, follow these steps:
 1. Verify that the agent is enabled and available in the target environment.
 1. When you enable the agent, it becomes active and ready for use.
 
-For more information about Agent Deployment wizard, see [Deploy Dynamics 365 agents by using the agent deployment wizard (preview)](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
+For more information about Agent Deployment wizard, see [Deploy Dynamics 365 agents by using the agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
 
 ### Manual deployment of the agent
 

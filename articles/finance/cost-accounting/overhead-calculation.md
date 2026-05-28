@@ -4,7 +4,7 @@ description: Learn about the typical processes for calculating and allocating ov
 author: AndersEvenGirke
 ms.author: twheeloc
 ms.topic: article
-ms.date: 10/04/2018
+ms.date: 05/27/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -31,7 +31,7 @@ Overhead costs are the costs that you incur to run a business but can't directly
 
 ## Overhead calculation overview
 
-Overhead calculation runs the cost accounting policies in the correct order. You can run overhead calculation multiple times for the same fiscal period if cost accounting policies have been changed or specific errors have been detected. Each run of the overhead calculation is stored and receives a unique version ID that lets you compare the calculations in various versions. The cost entries that the overhead calculation generates receive an accounting date. This accounting date matches the end date of the fiscal period that is used in the calculation. The unique version ID consists of the following elements:
+Overhead calculation runs the cost accounting policies in the correct order. You can run overhead calculation multiple times for the same fiscal period if you change cost accounting policies or detect specific errors. Each run of the overhead calculation is stored and receives a unique version ID that lets you compare the calculations in various versions. The cost entries that the overhead calculation generates receive an accounting date. This accounting date matches the end date of the fiscal period that is used in the calculation. The unique version ID consists of the following elements:
 
 - Version type
 - Date and time
@@ -39,7 +39,7 @@ Overhead calculation runs the cost accounting policies in the correct order. You
 - Fiscal year
 - Fiscal period
 
-Overhead calculation is run independently of the version. Therefore, you can calculate the Budget version before the Actual version. Overhead calculation consists of four steps, as shown in the following illustration. In each step, a journal header is created that has journal entries. This journal header keeps the input data for each calculation step. Policies and rules are applied to each journal line, and cost entries are generated as output. Therefore, you always have full traceability.
+You run overhead calculation independently of the version. Therefore, you can calculate the Budget version before the Actual version. Overhead calculation consists of four steps, as shown in the following illustration. In each step, the process creates a journal header that has journal entries. This journal header keeps the input data for each calculation step. The process applies policies and rules to each journal line, and generates cost entries as output. Therefore, you always have full traceability.
 
 [![Overhead calculation.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
@@ -645,7 +645,7 @@ Here's a simple example that explains how you can trace the flow of cost. Cost o
 </tbody>
 </table>
 
-Cost object CC002 Finance contributes to several cost objects. A statistical dimension member that is named Finance services is created to measure the consumed magnitude.
+Cost object CC002 Finance contributes to several cost objects. You create a statistical dimension member named Finance services to measure the consumed magnitude.
 
 <table>
 <thead>
