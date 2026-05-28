@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom:
   - bap-template
-ms.date: 05/20/2026
+ms.date: 05/28/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.service: dynamics-365-op
