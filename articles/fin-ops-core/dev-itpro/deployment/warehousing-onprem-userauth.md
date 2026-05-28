@@ -68,7 +68,9 @@ To enable the Warehouse Management mobile app to interact with a specific Dynami
     For V4 of the Warehouse Management mobile app, the redirect URIs are as follows:
 
     - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/{clientId}*
-    - **Android:** *msauth://com.Microsoft.WarehouseManagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+    - **Android:** 
+        - *msauth://com.Microsoft.WarehouseManagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+        - *msauth://com.Microsoft.WarehouseManagement/Xo8WBi6jzSxKDVR4drqm84yr9iU=*
     - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
 
     > [!NOTE]
