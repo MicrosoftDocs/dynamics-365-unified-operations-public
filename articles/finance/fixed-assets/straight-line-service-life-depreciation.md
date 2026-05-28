@@ -4,7 +4,7 @@ description: Learn about the Straight line service life method of depreciation, 
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/05/2024
+ms.date: 05/27/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -20,37 +20,37 @@ ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 
 [!include [banner](../includes/banner.md)]
 
-This article gives an overview of the Straight line service life method of depreciation.
+This article provides an overview of the straight line service life method of depreciation.
 
 When you set up a fixed asset depreciation profile and select **Straight line service life** in the **Method** field in the **Depreciation profiles** page, the assets that have this depreciation profile assigned to them are depreciated based on the total service life of the asset. This generally is the same depreciation amount in each depreciation period. 
 
-The difference in the depreciation amount that is calculated between straight line service life remaining and straight line service life is when there is an adjustment posted to the asset. 
+When you set up a fixed asset depreciation profile and select **Straight line service life** in the **Method** field on the **Depreciation profiles** page, the assets that you assign to this depreciation profile depreciate based on the total service life of the asset. This method generally uses the same depreciation amount in each depreciation period. 
 
 To set up straight line service life depreciation, you must also select options in the **Depreciation year** and **Period frequency** fields in the **Depreciation profiles** page.
 
 ## Select a depreciation year
-You can select either **Calendar** or **Fiscal** in the **Depreciation year** field in the **Depreciation profiles** page. The selection defines the options that are available in the **Period frequency** field. The default option is **Calendar**.
+You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page. The selection defines the options that are available in the **Period frequency** field. The default option is **Calendar**.
 
 ### Calendar
 
-If you select **Calendar**, a year of January 1 to December 31 is assumed, even if you have defined the fiscal calendar differently. 
+If you select **Calendar**, a year of January 1 to December 31 is assumed, even if you define the fiscal calendar differently. 
 
 The **Calendar** option updates the depreciation base, which is typically the net book value minus the salvage value, on January 1 of each year. In the examples later in this article, the depreciation base is the numerator in the first expression in the calculations column. 
 
-If you select **Calendar**, the following options are available in the **Period frequency** field, which defines the depreciation accrual posting dates and amounts throughout the calendar year:
+If you select **Calendar**, the following options are available in the **Period frequency** field. These options define the depreciation accrual posting dates and amounts throughout the calendar year:
 - **Yearly** posts an amount on December 31.
 - **Monthly** posts a monthly amount at the end of each calendar month.
 - **Quarterly** posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).
 - **Half-yearly** posts a half-yearly amount at the end of each calendar half year (June 30 and December 31).
-- **Daily** posts the depreciation amount for the daily depreciation method using one transaction for each day.
+- **Daily** posts the depreciation amount for the daily depreciation method by using one transaction for each day.
 
-For example, if you select **Yearly**, the yearly depreciation is posted only one time, on December 31 of each year. If you select **Monthly**, the monthly depreciation is posted each month as 1/12 of the yearly depreciation amount.
+For example, if you select **Yearly**, the yearly depreciation posts only one time, on December 31 of each year. If you select **Monthly**, the monthly depreciation posts each month as 1/12 of the yearly depreciation amount.
 
 ### Fiscal
 
-If you select **Fiscal** in the **Depreciation year** field, the straight line service life depreciation is used. It is calculated based on the fiscal year, which is defined by the fiscal calendar that is specified for the book, or by the fiscal calendar that is selected in the **Ledger** page. Fiscal calendars are set up in the **Fiscal calendars** page.
+If you select **Fiscal** in the **Depreciation year** field, the straight line service life depreciation is used. It's calculated based on the fiscal year, which is defined by the fiscal calendar that is specified for the book, or by the fiscal calendar that is selected in the **Ledger** page. Fiscal calendars are set up in the **Fiscal calendars** page.
 
-For example, for fiscal year July 1 through June 30, the depreciation calculation starts on July 1. The fiscal year can be longer or shorter than 12 months. The depreciation automatically is adjusted for each fiscal period. The length of the next fiscal year is based on the fiscal periods that you set up when you create a new fiscal year in the **Fiscal calendars** page. 
+For example, for a fiscal year that runs from July 1 through June 30, the depreciation calculation starts on July 1. A fiscal year can be longer or shorter than 12 months. The system automatically adjusts depreciation for each fiscal period. The length of the next fiscal year depends on the fiscal periods that you set up when you create a new fiscal year in the **Fiscal calendars** page. 
 
 If you select **Fiscal**, the following options are available in the **Period frequency** field:
 - **Yearly** posts the total amount of the depreciation that is calculated for the fiscal year as one amount on the last day of the fiscal year.
@@ -79,7 +79,7 @@ You get the same depreciation amount each year. (Acquisition cost - Salvage valu
 
 ## Example: Straight line depreciation of a modified fixed asset
 
-Suppose that you add an acquisition adjustment of 4,000 in year 2 to the same fixed asset. 
+Suppose that you add an acquisition adjustment of $4,000 in year 2 to the same fixed asset. 
 
 The service life of the acquisition adjustment is the same as that of the fixed asset and starts at the time of its acquisition. A net book value remains at the end of year 5, corresponding to the net book value of the acquisition adjustment. The depreciation by period is calculated as shown in the following table.
 

@@ -21,8 +21,6 @@ items:
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-47.md
         - name: Platform updates for version 10.0.46 (October 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-46.md
-        - name: Platform updates for version 10.0.45 (September 2025)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-45.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -2349,7 +2347,7 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
-      - name: Deploy Dynamics 365 agents by using the agent deployment wizard (preview)
+      - name: Deploy Dynamics 365 agents by using the agent deployment wizard
         href: ../dev-itpro/copilot/agent-deployment.md
       - name: Agent management
         href: ../fin-ops/copilot/agent-mgmt.md

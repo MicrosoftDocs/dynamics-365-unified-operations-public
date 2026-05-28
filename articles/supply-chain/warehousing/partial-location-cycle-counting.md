@@ -4,7 +4,7 @@ description: Cycle count plans guide the actual counting operations. You can req
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 5/28/2026
+ms.date: 05/27/2026
 ms.custom: 
 ms.reviewer: kamaybac
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage

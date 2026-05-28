@@ -4,7 +4,7 @@ description: Learn about the manual depreciation method, including examples with
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/05/2024
+ms.date: 05/27/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -20,9 +20,9 @@ ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 
 [!include [banner](../includes/banner.md)]
 
-This article gives an overview of the manual depreciation method.
+This article provides an overview of the manual depreciation method.
 
-When you set up a fixed asset depreciation profile and select **Manual** in the **Method** field on the **Depreciation profiles** page, the depreciation of fixed assets that are assigned to the depreciation profile is determined by the percentage that you enter for each interval in the calendar year. The intervals that you set up percentages for are posted according to the value that you select in the **Period frequency** field on the **General** FastTab of the **Depreciation profiles** page. Here are the values that you can select:
+When you set up a fixed asset depreciation profile and select **Manual** in the **Method** field on the **Depreciation profiles** page, you determine the depreciation of fixed assets assigned to the depreciation profile by entering a percentage for each interval in the calendar year. The intervals that you set up percentages for are based on the value that you select in the **Period frequency** field on the **General** FastTab of the **Depreciation profiles** page. You can select from the following values:
 
 - Yearly
 - Monthly
@@ -30,9 +30,10 @@ When you set up a fixed asset depreciation profile and select **Manual** in the 
 - Half-Yearly
 - Daily
 
-After you select the period frequency, click **Manual schedules**, and set up percentages for each posting interval. Together, the manual schedules and the posting intervals define the depreciation amount, as shown in the examples later in this article. Manual depreciation is always calculated as a percentage of the acquisition price. For manual depreciation, the percentages that you enter in the intervals of the depreciation don't have to add up to 100 percent. Manual depreciation is a flexible depreciation method that is often used to define an extraordinary depreciation profile on the **Books** page, such as a non-periodic depreciation for special purposes (for example, tax).
+After you select the period frequency, select **Manual schedules**, and set up percentages for each posting interval. Together, the manual schedules and the posting intervals define the depreciation amount, as shown in the examples later in this article. Manual depreciation is always calculated as a percentage of the acquisition price. For manual depreciation, the percentages that you enter in the intervals of the depreciation don't have to add up to 100 percent. Manual depreciation is a flexible depreciation method that you often use to define an extraordinary depreciation profile on the **Books** page, such as a nonperiodic depreciation for special purposes (for example, tax).
 
 ## Examples
+
 Acquisition price: 11,000.00 Expected scrap value: 1,000.00 The following table shows the intervals and percentages that you set up on the **Fixed asset depreciation profile schedules** page.
 
 | Interval number | Percentage |
@@ -64,9 +65,5 @@ If you select <strong>Half-Yearly</strong> in the *<strong><em>Period frequency<
 | December 31 | (11,000 – 1,000) × 50% = 5,000 |
 
 The total of percentages for all intervals doesn't have to be 100. However, you receive a message if the value in the **Cumulative percentage** field on the **Fixed asset depreciation profile schedules** page isn't **100**.
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

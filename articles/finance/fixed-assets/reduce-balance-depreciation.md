@@ -1,10 +1,10 @@
 ---
-title: Reduce balance depreciation
+title: Reducing balance depreciation
 description: Learn about the reducing balance method of depreciation, including an outline on selecting a depreciation year and an example.
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/05/2024
+ms.date: 05/27/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -16,26 +16,27 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 1b86763d-d47c-4a6a-a9a6-d97a736750da
 ---
 
-# Reduce balance depreciation
+# Reducing balance depreciation
 
 [!include [banner](../includes/banner.md)]
 
-This article gives an overview of the Reducing balance method of depreciation.
+This article provides an overview of the reducing balance method of depreciation.
 
-When you set up a fixed asset depreciation profile and select **Reducing balance** in the **Method** field on the **Depreciation profiles** page, the assets that have this depreciation profile assigned to them are depreciated by the same percentage in each depreciation period.
+When you set up a fixed asset depreciation profile and select **Reducing balance** in the **Method** field on the **Depreciation profiles** page, the assets that you assign this depreciation profile to depreciate by the same percentage in each depreciation period.
 
-To set up reducing balance depreciation, you must also make selections on the **General** FastTab on the **Depreciation profiles** page. First, select a year in the **Depreciation year** field. Depending on the selection, different options appear in the **Period frequency** field, as explained in the following sections. 
+To set up reducing balance depreciation, you must also make selections on the **General** FastTab on the **Depreciation profiles** page. First, select a year in the **Depreciation year** field. Depending on the selection, different options appear in the **Period frequency** field, as explained in the following sections.
 
-You must also enter a value in the **Percentage** field for the depreciation profile. If you select the **Full depreciation** option, the remaining depreciation basis is taken in the last depreciation period and could be a large amount. Some countries/regions do not use a switchover to a straight line method. Switchover occurs when the alternative depreciation method amount is greater than or equal to the primary depreciation profile amount, and the depreciation amount taken is the alternative method amount. 
+You must also enter a value in the **Percentage** field for the depreciation profile. If you select the **Full depreciation** option, the remaining depreciation basis is taken in the last depreciation period and could be a large amount. Some countries or regions don't use a switchover to a straight line method. Switchover occurs when the alternative depreciation method amount is greater than or equal to the primary depreciation profile amount, and the depreciation amount taken is the alternative method amount.
 
-Because an asset will never be fully depreciated based on a percentage calculation, you must select the **Full depreciation** option to fully depreciate an asset.
+Because an asset is never fully depreciated based on a percentage calculation, you must select the **Full depreciation** option to fully depreciate an asset.
 
 ## Select a depreciation year
+
 You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page. The selection defines the options that are available in the **Period frequency** field. The default option is **Calendar**.
 
 ### Calendar
 
-The **Calendar option** updates the depreciation base, which is typically the net book value minus the scrap value, on January 1 of each year. In the reducing balance depreciation example later in this article, the depreciation base is the numerator in the first expression in the calculations column. 
+The **Calendar option** updates the depreciation base, which is typically the net book value minus the scrap value, on January 1 of each year. In the reducing balance depreciation example later in this article, the depreciation base is the numerator in the first expression in the calculations column.
 
 If you select **Calendar**, the following options are available in the **Period frequency** field, which defines the depreciation accrual posting dates and amounts throughout the calendar year:
 
@@ -49,8 +50,7 @@ For example, if you select **Yearly**, the yearly depreciation is posted only on
 
 ### Fiscal
 
-If you select **Fiscal** in the **Depreciation year** field, the straight line depreciation method is used. It is calculated based on the fiscal year, which is set up on the **Fiscal calendars** page for the fiscal calendar that is selected on the **Ledger** page. For example, for fiscal year July 1 through June 30, the depreciation calculation starts on July 1. The fiscal year can be longer or shorter than 12 months. The depreciation is adjusted for each fiscal period. The length of the next fiscal year is based on the fiscal periods that you set up when you create a new fiscal year on the **Fiscal calendars** page.
-
+If you select **Fiscal** in the **Depreciation year** field, the straight line depreciation method is used. It's calculated based on the fiscal year, which is set up on the **Fiscal calendars** page for the fiscal calendar that is selected on the **Ledger** page. For example, for fiscal year July 1 through June 30, the depreciation calculation starts on July 1. The fiscal year can be longer or shorter than 12 months. The depreciation is adjusted for each fiscal period. The length of the next fiscal year is based on the fiscal periods that you set up when you create a new fiscal year on the **Fiscal calendars** page.
 
 If you select **Fiscal**, the following options are available in the **Period frequency** field:
 
@@ -59,23 +59,14 @@ If you select **Fiscal**, the following options are available in the **Period fr
 
 ## Example of reducing balance depreciation
 
-Suppose that the fixed asset acquisition price is 11,000, the scrap value is 1,000, and the depreciation percentage factor is 30. 
+Suppose that the fixed asset acquisition price is 11,000, the scrap value is 1,000, and the depreciation percentage factor is 30.
 
-Using the **Reducing balance** method, 30 percent of the depreciation base (net book value minus scrap value) is calculated at the end of the previous depreciation period. Depreciation for the first three years is shown in the following table.
+Using the **Reducing balance** method, you calculate 30 percent of the depreciation base (net book value minus scrap value) at the end of the previous depreciation period. The following table shows depreciation for the first three years.
 
 | Period | Calculation of yearly depreciation amount | Net book value at the end of the year |
 |--------|-------------------------------------------|---------------------------------------|
 | Year 1 | (11,000 - 1,000) \* 30% = 3,000           | (11,000 - 1,000) - 3,000 = 7,000      |
 | Year 2 | (7,000 - 1,000) \* 30% = 1,800            | (7,000 -1,800) = 5,200                |
 | Year 3 | (5,200 - 1,000) \* 30% = 1,260            | (5,200 - 1,260) = 3,940               |
-
-
-
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

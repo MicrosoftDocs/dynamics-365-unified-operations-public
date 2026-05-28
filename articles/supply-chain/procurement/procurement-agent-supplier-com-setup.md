@@ -30,15 +30,15 @@ The remaining sections in this article provide the same instructions in a text-b
 
 ## Prerequisites
 
-Before you can use the supplier communications, your system must meet the following requirements:
+Before you can use the supplier communications features of the Procurement Agent, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later, with all available quality updates.  
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
 
     - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
     - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
-    - *(Production ready preview) Supplier Communications Agent*
-    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
+    - *(Production ready preview) Procurement Agent - Supplier Communications*
+    - Optional: If you want the agent to send emails automatically, turn on the feature *(Production ready preview) Procurement Agent - Supplier Communications - automatically sending follow-up emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
 
     > [!TIP]
     > If you can't enable the *Agent management* feature, make sure that all of its [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.

@@ -20,8 +20,6 @@
           href: get-started/whats-new-scm-10-0-47.md
         - name: Supply Chain Management 10.0.46 (December 2025)
           href: get-started/whats-new-scm-10-0-46.md
-        - name: Supply Chain Management 10.0.45 (September 2025)
-          href: get-started/whats-new-scm-10-0-45.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1931,6 +1929,10 @@
           href: master-planning/planning-optimization/negative-on-hand.md
         - name: Calculate sales order delivery dates using CTP
           href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
+        - name: Keep supply for confirmed demand (Preview)
+          href: master-planning/planning-optimization/keep-supply-for-confirmed-demand.md
+        - name: Optimize confirmed dates for CTP line changes (Preview)
+          href: master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes.md
       - name: Set up master plans
         items:
         - name: Master plans overview
@@ -2317,6 +2319,8 @@
           href: unified-pricing-management/upm-price-attributes-setup.md
         - name: Price attribute groups
           href: unified-pricing-management/upm-price-attribute-groups.md
+        - name: Non-attribute based rebate management deals
+          href: unified-pricing-management/upm-enable-standard-rebates.md
         - name: Customer and product price attribute groups
           href: unified-pricing-management/upm-customer-product-attribute-groups.md
         - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
