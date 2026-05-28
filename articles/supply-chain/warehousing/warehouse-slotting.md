@@ -4,8 +4,8 @@ description: Learn about warehouse slotting, which lets you consolidate demand b
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 11/13/2020
-ms.custom:
+ms.date: 5/28/2026
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 ---
@@ -14,17 +14,17 @@ ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHS
 
 [!include [banner](../includes/banner.md)]
 
-Several warehouse slotting features are available to help warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
+Several warehouse slotting features help warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 
-The *Warehouse slotting* feature lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. Generated demand can then be applied to locations that will be used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan has been established, replenishment work can be created to bring the appropriate amount of inventory to each location.
+The *Warehouse slotting* feature lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. You can apply generated demand to locations used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan is established, you can create replenishment work to bring the appropriate amount of inventory to each location.
 
-The *Warehouse slotting for transfer orders* feature lets warehouse managers replenish picking locations, based on demand from transfer orders that aren't yet released to the warehouse. It ensures that picking locations will include all the items that are required for the transfer orders after they are released to the warehouse.
+The *Warehouse slotting for transfer orders* feature lets warehouse managers replenish picking locations, based on demand from transfer orders that aren't yet released to the warehouse. It ensures that picking locations include all the items that are required for the transfer orders after they're released to the warehouse.
 
-The *Warehouse slotting allocation enhancements* feature adds an option for the template lines that are used by the *Warehouse slotting* feature. The option enables the system to consider existing on-hand inventory at a target location. Therefore, fewer replenishments might be generated for slotting.
+The *Warehouse slotting allocation enhancements* feature adds an option for the template lines that the *Warehouse slotting* feature uses. The option enables the system to consider existing on-hand inventory at a target location. Therefore, the system might generate fewer replenishments for slotting.
 
 ## Set up warehouse slotting
 
-To use warehouse slotting, you must set up the following elements in your system:
+To use warehouse slotting, set up the following elements in your system:
 
 - Slotting unit of measure tiers
 - Directive codes
@@ -33,7 +33,7 @@ To use warehouse slotting, you must set up the following elements in your system
 
 ### <a name="unit-tiers"></a>Create unit-of-measure tiers for slotting
 
-Unit-of-measure tiers enable multiple units of measure to be grouped together for the purposes of slotting. For example, if multiple sizes of boxes are all picked from the same box picking area, one tier can be created for all the sizes. **A line must be created for each unit of measure that should be part of the tier.**
+Unit-of-measure tiers enable you to group multiple units of measure together for slotting. For example, if multiple sizes of boxes are all picked from the same box picking area, you can create one tier for all the sizes. **A line must be created for each unit of measure that you want to include in the tier.**
 
 1. Go to **Warehouse management \> Setup \> Replenishment \> Slotting unit of measure tiers**.
 1. Select **New**.
@@ -47,28 +47,28 @@ Unit-of-measure tiers enable multiple units of measure to be grouped together fo
 1. On the new line, set the following values:
 
     - **Unit:** *Box*
-    - **Description:** Leave this field blank. It will be filled in automatically when you save your changes.
+        - **Description:** Leave this field blank. It's filled in automatically when you save your changes.
     - **Unit class:** *Quantity*
 
 1. Select **New** to add a second line to the grid.
 1. On the new line, set the following values:
 
     - **Unit:** *ea*
-    - **Description:** Leave this field blank. It will be filled in automatically when you save your changes.
+        - **Description:** Leave this field blank. It's filled in automatically when you save your changes.
     - **Unit class:** *Quantity*
 
 1. Select **New** to add a third line to the grid.
 1. On the new line, set the following values:
 
     - **Unit:** *PL*
-    - **Description:** Leave this field blank. It will be filled in automatically when you save your changes.
+        - **Description:** Leave this field blank. It's filled in automatically when you save your changes.
     - **Unit class:** *Quantity*
 
 1. Select **Save** to save the tier.
 
 ### Create a directive code for slotting
 
-You must select the directive code that should be associated with a template.
+Select the directive code to associate with a template.
 
 1. Go to **Warehouse management \> Setup \> Directive codes**.
 1. On the Action Pane, select **New**.
@@ -82,7 +82,7 @@ Each slotting template controls how inventory is assigned to locations for a spe
 1. Go to **Warehouse management \> Setup \> Replenishment \> Slotting templates**.
 1. Select **New** to create a template.
 
-Next, you must set up the template header, slotting specifications, and location directives, as explained in the following subsections. The setup for slotting for transfer orders resembles the setup for slotting for sales orders, but the **Demand type** field is set *Transfer orders* instead of *Sales order*.
+Next, set up the template header, slotting specifications, and location directives, as explained in the following subsections. The setup for slotting for transfer orders resembles the setup for slotting for sales orders, but the **Demand type** field is set to *Transfer orders* instead of *Sales order*.
 
 #### Set up the header for a sales order slotting template
 
@@ -99,19 +99,19 @@ Next, you must set up the template header, slotting specifications, and location
 
         The following values are available in this field:
 
-        - **Ordered** – The full ordered quantity on the sales order should be considered demand.
-        - **Reserved** – Only the sales order line quantities that are reserved (physical and ordered) should be considered demand.
-        - **Released** – The released quantity should be considered demand.
+        - **Ordered** – The full ordered quantity on the sales order is considered demand.
+        - **Reserved** – Only the sales order line quantities that are reserved (physical and ordered) are considered demand.
+        - **Released** – The released quantity is considered demand.
 
     - **Allow wave demand to use unreserved quantities:** *Yes*
 
-1. Use the **Warehouse selection** fast tab to specify the warehouse where the slotting template will apply.
+1. Use the **Warehouse selection** fast tab to specify the warehouse where the slotting template applies.
 
     - **Warehouse selection** – Select one of the following values:
 
         - *All* – Use the slotting template for all warehouses.
-        - *Warehouse group* – Use the slotting template for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
-        - *Warehouse* – Use the slotting template only for the specific warehouse that's selected in the **Warehouse** field.
+                - *Warehouse group* – Use the slotting template for all warehouses in the warehouse group selected in the **Warehouse group** field.
+                - *Warehouse* – Use the slotting template only for the specific warehouse selected in the **Warehouse** field.
 
     - **Warehouse** – If the **Warehouse selection** field is set to *Warehouse*, select the warehouse where the slotting template applies.
     - **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the slotting template applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
@@ -124,7 +124,7 @@ You can also specify a query to narrow the scope of the demand that is evaluated
 
 #### Set up slotting specifications for each template
 
-For each sales order template that you create, follow these steps to add a line for each slotting specification.
+For each sales order template that you create, add a line for each slotting specification.
 
 1. On the **Slotting template details** FastTab, select **New** to create a template line.
 1. On the new line, set the following values:
@@ -151,13 +151,13 @@ For each sales order template that you create, follow these steps to add a line 
 
         The following values are available in this field:
 
-        - **Assume empty** – This system should assume that all locations in the picking area are empty and should not check those locations for inventory.
-        - **Consider qty** – The system should check the locations in the picking area for inventory and should skip any locations that aren't empty.
-        - **Consider on-hand** – The system should check whether any target location contains unreserved quantities for the item on the demand line. If the quantity is large enough to satisfy at least one unit of the demand line, the generated slotting plan record is reduced by the available amount. For example, if the demand is 10 cases, and one case is on hand, the located demand will be nine cases. If the demand is 10 cases, and one each is on hand, the located demand will be 10 cases.
+        - **Assume empty** – The system assumes that all locations in the picking area are empty and doesn't check those locations for inventory.
+        - **Consider qty** – The system checks the locations in the picking area for inventory and skips any locations that aren't empty.
+        - **Consider on-hand** – The system checks whether any target location contains unreserved quantities for the item on the demand line. If the quantity is large enough to satisfy at least one unit of the demand line, the generated slotting plan record is reduced by the available amount. For example, if the demand is 10 cases, and one case is on hand, the located demand is nine cases. If the demand is 10 cases, and one each is on hand, the located demand is 10 cases.
 
     - **Directive code:** *Slotting*
 
-        This field defines the location directive that is used to find the picking location of the replenishment work.
+                This field defines the location directive used to find the picking location of the replenishment work.
 
     - **Overflow location:** Leave this field blank.
 
@@ -165,18 +165,18 @@ For each sales order template that you create, follow these steps to add a line 
 
     - **Allow let up:** *Yes*
 
-        When this option is set to *Yes*, if any demand can't be slotted, movement work will be created to take inventory out of locations where there is inventory, but where nothing was slotted. The template is then run again. This time, it ignores the inventory in the locations. This functionality works best when the **Assign slot criteria** field is set to *Consider qty*.
+                When this option is set to *Yes*, if any demand can't be slotted, movement work is created to take inventory out of locations where there is inventory, but where nothing was slotted. The template is then run again. This time, it ignores the inventory in the locations. This functionality works best when the **Assign slot criteria** field is set to *Consider qty*.
 
     - **Fixed location usage:** *Only fixed locations for the product*
 
         The following values are available in this field:
 
-        - **Fixed and non-fixed locations** – The system should not be limited to using only fixed locations.
-        - **Only fixed locations for the product** – The system should slot only to locations that are fixed locations for the product.
-        - **Only fixed locations for the product variant** – The system should slot only to locations that are fixed locations for the product variant.
+        - **Fixed and non-fixed locations** – The system isn't limited to using only fixed locations.
+        - **Only fixed locations for the product** – The system slots only to locations that are fixed locations for the product.
+        - **Only fixed locations for the product variant** – The system slots only to locations that are fixed locations for the product variant.
 
 > [!NOTE]
-> If the slotting template contains at least one line where the **Assign slot criteria** field is set to *Consider on-hand*, let-ups are no longer allowed for any line in the template.
+> If the slotting template contains at least one line where the **Assign slot criteria** field is set to *Consider on-hand*, the system no longer allows let-ups for any line in the template.
 
 1. Select **Save**.
 1. Select **New** to create a second template line.
@@ -194,7 +194,7 @@ For each sales order template that you create, follow these steps to add a line 
     - **Allow let up:** *Yes*
     - **Use fixed locations:** *Fixed and non-fixed locations*
 
-    In the query for the second line, you will now specify the criteria that are used to determine what locations the demand for that line can be slotted to.
+    In the query for the second line, specify the criteria that determine what locations the demand for that line can be slotted to.
 
 1. Select the line where the **Sequence** field is set to *2*.
 1. Select **Select slot locations** in the FastTab toolbar (this button is labeled **Edit query** in Supply Chain Management version 10.0.43 and earlier).
@@ -210,7 +210,7 @@ For each sales order template that you create, follow these steps to add a line 
 
 #### Set up location directives
 
-At least one location directive must be set up to support slotting picks. Use the procedures in this section to set up a new *replenishment location directive* for slotting picks.
+Set up at least one location directive to support slotting picks. Use the procedures in this section to set up a new *replenishment location directive* for slotting picks.
 
 1. Go to **Warehouse management \> Setup \> Location directives**.
 1. In the left pane, in the **Work order type** field, select *Replenishment*.
@@ -269,7 +269,7 @@ At least one location directive must be set up to support slotting picks. Use th
 
 ### Set up the scenario
 
-For this scenario, use the built-in sample data, and create the records that are described in this section.
+For this scenario, use the built-in sample data, and create the records described in this section.
 
 #### Use the USMF sample data
 
@@ -277,14 +277,14 @@ To work through this scenario by using the sample records and values that are sp
 
 #### Create demand
 
-Follow these steps to create the demand that you will apply slotting to.
+Follow these steps to create the demand that you apply slotting to.
 
-1. Go to **Sales and marketing \> Sales orders \> All sales order**.
+1. Go to **Sales and marketing > Sales orders > All sales order**.
 1. Select **New** to create a sales order.
 1. In the **Create sales order** dialog box, in the **Customer account** field, select *US-007*.
 1. In the **Warehouse** field, select *61*.
 1. Select **OK**.
-1. The new sales order is opened. It includes an empty line on the **Sales order lines** FastTab. On this line, set the following values:
+1. The new sales order opens. It includes an empty line on the **Sales order lines** FastTab. On this line, set the following values:
 
     - **Item:** *L0101*
     - **Quantity:** *20*
@@ -298,7 +298,7 @@ Follow these steps to create the demand that you will apply slotting to.
 1. Select **New** to create a second sales order.
 1. In the **Create sales order** dialog box, in the **Customer account** field, select *US-008*.
 1. In the **Warehouse** field, select *61*.
-1. The new sales order is opened. It includes an empty line on the **Sales order lines** FastTab. On this line, set the following values:
+1. The new sales order opens. It includes an empty line on the **Sales order lines** FastTab. On this line, set the following values:
 
     - **Item:** *T0100*
     - **Quantity:** *1*
@@ -312,7 +312,7 @@ After all the prerequisite elements are in place, as described in the previous s
 #### Generate demand
 
 1. Go to **Warehouse management \> Setup \> Replenishment \> Slotting templates**, and select the slotting template that you created earlier.
-1. On the Action Pane, select **Generate demand**. This command evaluates all demand that is in the system, and that matches the slotting template query. The total demand across all orders is then consolidated onto one line per quantity/unit of measure. An informational message appears when the process is completed.
+1. On the Action Pane, select **Generate demand**. This command evaluates all demand in the system that matches the slotting template query. The total demand across all orders is then consolidated onto one line per quantity/unit of measure. An informational message appears when the process is completed.
 
 #### Slotting demand
 
@@ -321,43 +321,43 @@ The *slotting demand* shows the results of demand generation, based on the setup
 - On the Action Pane, select **Slotting demand** to view the results from the **Generate demand** command. The lines in the slotting demand can be edited. You can delete a line, add a new line, or edit the line details.
 
 > [!NOTE]
-> You can edit demand manually, or you can import it from an external system by using data management. Whatever is in the slotting demand will be used in the next step, regardless of where it came from.
+> You can edit demand manually, or you can import it from an external system by using data management. Whatever is in the slotting demand is used in the next step, regardless of where it came from.
 
 #### Locate demand
 
-After demand has been generated, you must use the **Locate demand** command to generate the *slotting plan*.
+After you generate the demand, use the **Locate demand** command to generate the *slotting plan*.
 
 - On the Action Pane, select **Locate demand**. The slotting process runs. An informational message appears when the process is completed.
 
 #### Slotting plan
 
-The slotting plan shows the location that each item/quantity was assigned to, whether overflow was used, whether let-up work was created, and the template line that was used. *Any demand that could not be slotted is highlighted in red.*
+The slotting plan shows the location that each item/quantity was assigned to, whether overflow was used, whether let-up work was created, and the template line that was used. *Any demand that couldn't be slotted is highlighted in red.*
 
 - On the Action Pane, select **Slotting plan** to view the results.
 
 > [!NOTE]
 >
-> - The **Generate demand**, **Locate demand**, and **Run replenishment** processes are now run in a sandbox. (These processes are available from the Action Pane on the **Slotting templates** page.)
-> - The **Generate demand**, **Locate demand**, and **Run replenishment** processes have a lock to ensure that they can't be triggered at the same time. Otherwise, the data that is used could be deleted.
+> - The **Generate demand**, **Locate demand**, and **Run replenishment** processes now run in a sandbox. (These processes are available from the Action Pane on the **Slotting templates** page.)
+> - The **Generate demand**, **Locate demand**, and **Run replenishment** processes have a lock to ensure that they can't be triggered at the same time. Otherwise, the data use could be deleted.
 > - The **Generate demand** and **Locate demand** processes show a warning if the run didn't generate records, or if the records are missing information.
 > - When you select **Slotting plan**, the page doesn't have **New**, **Edit**, or **Delete** buttons on the Action Pane, because the data source can't be edited.
 > - When you select **Run replenishment**, the system validates the selected slot template and processes.
 
 #### Create replenishment
 
-After the slotting plan has been created, you must create *replenishment work*, based on the plan.
+After the slotting plan is created, you must create *replenishment work*, based on the plan.
 
 - On the Action Pane, select **Run replenishment**. An informational message appears when the process is completed. This message indicates the number of headers that were created for the work build ID.
 
-Location directives that will be used are identified based on the directive code that is specified on each template line.
+Location directives for use are identified based on the directive code specified on each template line.
 
 ## Tips
 
 ### Set up automatic slotting
 
-After all the required elements are in place, you can set up slotting to run automatically by following these steps.
+After all the required elements are in place, set up slotting to run automatically by following these steps.
 
-1. Go to **Warehouse management \> Replenishment \> Run slotting**.
+1. Go to **Warehouse management > Replenishment > Run slotting**.
 1. Specify the slotting steps to run. Select one or more of the following slotting steps:
 
     - Generate demand
@@ -370,6 +370,6 @@ After all the required elements are in place, you can set up slotting to run aut
 1. Specify the slotting template to use.
 1. Set the recurrence to run automatically, if you want.
 
-For the exercises in the scenario, do **not** set up automatic slotting.
+For the exercises in the scenario, don't set up automatic slotting.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
