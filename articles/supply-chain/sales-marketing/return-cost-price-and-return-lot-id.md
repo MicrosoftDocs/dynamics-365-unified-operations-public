@@ -79,7 +79,7 @@ When you use the **Return lot ID** field on a return order line to specify the r
 
 1. In the **Return order - RMA number: %1, %2** form, verify that a return order is generated to return the Test item. The quantity of the return order is set to -5.00.
 
-        The **Return lot ID** field displays a lot ID. This lot ID is from the original sales order of the item that sold to the customer. The **Return cost price** field displays the cost price from the original sales line.
+    The **Return lot ID** field displays a lot ID. This lot ID is from the original sales order of the item that sold to the customer. The **Return cost price** field displays the cost price from the original sales line.
 
 1. Register the receipt of the returned items.
 
@@ -91,6 +91,6 @@ When you use the **Return lot ID** field on a return order line to specify the r
 
 1. In Inventory and warehouse management, use the **Closing and adjustment** form to run the **3. Close** procedure.
 
-        This action adjusts the cost on the original sales line that was priced at -35.00 (5 pieces \* 7.00) to -30.00 (5 pieces \* 6.00). This change happens because the inventory model group uses First in, First out (FIFO), and 6.00 per piece is the FIFO cost from the first purchase order. Additionally, the action adjusts the cost on the return sales line to match the cost per piece on the original sales line. Therefore, the cost of the return line is adjusted from 35.00 to 30.00.
+    This action adjusts the cost on the original sales line that was priced at -35.00 (5 pieces \* 7.00) to -30.00 (5 pieces \* 6.00). This change happens because the inventory model group uses First in, First out (FIFO), and 6.00 per piece is the FIFO cost from the first purchase order. Additionally, the action adjusts the cost on the return sales line to match the cost per piece on the original sales line. Therefore, the cost of the return line is adjusted from 35.00 to 30.00.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

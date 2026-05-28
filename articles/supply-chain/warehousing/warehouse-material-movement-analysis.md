@@ -86,9 +86,9 @@ After you deploy a process, you can configure it at any time by following these 
 
 1. On the **Process parameters** FastTab, review the following fields:
 
-        - **Legal entity** – This read-only field shows the legal entity specified during deployment.
+    - **Legal entity** – This read-only field shows the legal entity specified during deployment.
     - **Number of months to load** – This read-only field shows the number of months to load, as specified during deployment.
-        - **Activity** – This read-only field shows the activity specified during deployment.
+    - **Activity** – This read-only field shows the activity specified during deployment.
 
     The **Processing log** FastTab shows a history of data refresh and cleanup operations. This information can be useful during troubleshooting.
 

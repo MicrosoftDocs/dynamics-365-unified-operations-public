@@ -157,7 +157,7 @@ For each sales order template that you create, add a line for each slotting spec
 
     - **Directive code:** *Slotting*
 
-                This field defines the location directive used to find the picking location of the replenishment work.
+        This field defines the location directive used to find the picking location of the replenishment work.
 
     - **Overflow location:** Leave this field blank.
 
@@ -165,7 +165,7 @@ For each sales order template that you create, add a line for each slotting spec
 
     - **Allow let up:** *Yes*
 
-                When this option is set to *Yes*, if any demand can't be slotted, movement work is created to take inventory out of locations where there is inventory, but where nothing was slotted. The template is then run again. This time, it ignores the inventory in the locations. This functionality works best when the **Assign slot criteria** field is set to *Consider qty*.
+        When this option is set to *Yes*, if any demand can't be slotted, movement work is created to take inventory out of locations where there is inventory, but where nothing was slotted. The template is then run again. This time, it ignores the inventory in the locations. This functionality works best when the **Assign slot criteria** field is set to *Consider qty*.
 
     - **Fixed location usage:** *Only fixed locations for the product*
 

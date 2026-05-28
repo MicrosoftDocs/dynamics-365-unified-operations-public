@@ -34,7 +34,7 @@ To view or set the amount of scrap that an existing route operation produces, fo
 1. On the Action Pane, on the **Route** tab, select **Route details**.
 1. The **Route details** page appears. The top grid lists each operation in the route. For each operation, you can view or set the following values that are related to the amount of raw material consumed as scrap for the operation:
 
-        - **Scrap percentage** – Specify the percentage of the input raw material consumed as scrap during the operation.
+    - **Scrap percentage** – Specify the percentage of the input raw material consumed as scrap during the operation.
     - **Accumulated** – The accumulated scrap percentage for the operation in the route. This value is read-only. The system calculates it in the following way:
 
         *Accumulated* = (*Accumulated percentage for the following operation* × 100) ÷ (100 – *Scrap percentage*)

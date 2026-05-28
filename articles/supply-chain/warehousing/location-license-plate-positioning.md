@@ -41,11 +41,11 @@ The feature must be turned on in the location profile for every location where i
 
     - **Enable license plate position:** *Yes*
 
-                When this option is set to *Yes*, the license plate position is maintained for license plates in the location.
+        When this option is set to *Yes*, the license plate position is maintained for license plates in the location.
 
     - **Display mobile device LP position:** *Yes*
 
-                When this option is set to *Yes*, the license plate position is shown to mobile device users during adjustment and counting. You can change the setting of this option only when the feature is turned on.
+        When this option is set to *Yes*, the license plate position is shown to mobile device users during adjustment and counting. You can change the setting of this option only when the feature is turned on.
 
 1. Select **Save**.
 

@@ -447,7 +447,7 @@ The new mobile device menu items can be added to the mobile device menu. You nee
 1. In the **Available menus and menu items** list, in the **Menus** section, select your new *Inquire* menu. Then select the **Add** button (right arrow) to move that item into the **Menu structure** list.
 
     > [!TIP]
-        > Workers can only access menu items that are included in the menu assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This restriction also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, add the detour items to the relevant menus and then hide the items. To hide an item included in a menu, right-click on it in the **Menu structure** column and select **Hide**. To show an item that is currently hidden, right-click on it and select **Show**.
+    > Workers can only access menu items that are included in the menu assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This restriction also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, add the detour items to the relevant menus and then hide the items. To hide an item included in a menu, right-click on it in the **Menu structure** column and select **Hide**. To show an item that is currently hidden, right-click on it and select **Show**.
 
 ## Configure detours in your mobile device steps
 
