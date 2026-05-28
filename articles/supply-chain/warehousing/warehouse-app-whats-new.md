@@ -25,7 +25,7 @@ Starting with version 4.1.1.0, every V4 and later release is tagged with its pub
 
 ## Release notes for version 4.1.4.0 (May 28, 2026)
 
-Version 4.1.4.0 is a minor update that includes the following fixes and improvements:
+Version 4.1.4.0 is a minor update that includes the following features and fixes:
 
 ### Features
 
@@ -49,11 +49,10 @@ Version 4.1.3.0 is a minor update that includes the following fixes and improvem
 - **Label encoding** – Fixed an encoding issue that caused incorrect signs to be displayed on labels.
 - **Quantity selector** – Improved performance of the quantity selector and resolved a concurrency issue.
 - **Calculator** – Fixed an issue where typing in the calculator would reopen the calculator instead of continuing input.
- 
+
 ### Improvements
 
 - **Right-to-left (RTL) support** – Improved support for right-to-left languages.
-
 
 ## Release notes for version 4.1.2.0 (May 6, 2026)
 
