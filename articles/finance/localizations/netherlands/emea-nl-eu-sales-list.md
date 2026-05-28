@@ -127,9 +127,11 @@ To transfer transactions and preview files, follow these steps:
 
     :::image type="content" source="../media/EU-sales-list-pic5.png" alt-text="Screenshot of EU sales list.":::
 
-    For more information about how to work with the EU sales list journal, see [EU Sales list reporting](../europe/emea-eu-sales-list.md).
-
-    For more information about reporting of legal entities with multiple VAT registrations, see [Reporting for Multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md).
+    For Netherlands EU sales list reporting, the **Quarter** and **Year** fields on EU sales list lines are used only for correction scenarios.
+    - These fields are interpreted only when a line is marked as **Corrected**.
+    - For corrected lines, **Quarter** and **Year** identify the original quarterly reporting period that the correction belongs to.
+    - For non-corrected lines, **Quarter** and **Year** aren't treated as general reporting fields.
+    - Use these to enter **Quarter** and **Year** values on corrected lines.
 
 1. Select **Reporting** to preview the EU sales list files. In the **EU reporting** dialog box, set the following parameters:
 
@@ -137,6 +139,10 @@ To transfer transactions and preview files, follow these steps:
     - In the **From date** field, select the first date of the reporting period.
     - Set **Generate file** to **Yes** to generate an XML file.
     - Set **Generate report** to **Yes** to generate a Microsoft Excel report.
+
+    For more information about how to work with the EU sales list journal, see [EU Sales list reporting](../europe/emea-eu-sales-list.md).
+
+    For more information about reporting of legal entities with multiple VAT registrations, see [Reporting for Multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md).
 
 ### Create ICP declaration and send to Digipoort
 
