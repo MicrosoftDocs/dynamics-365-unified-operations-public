@@ -4,7 +4,7 @@ description: Cycle count plans guide the actual counting operations. You can req
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 09/02/2020
+ms.date: 5/28/2026
 ms.custom: 
 ms.reviewer: kamaybac
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
@@ -24,24 +24,24 @@ When you use the warehouse work process for counting operations, a work header i
 
 You can associate a **work template** with a cycle count plan to define how the cycle count work should be created. The work template for counting operations is directly referenced from the cycle count plan.
 
-When you define the work template details, you can use the **Work line breaks** option to specify whether the counting work lines must be grouped by item number or product variant number. This setup is required if you want to count on-hand inventory only for specific products in a location. The cycle counting work lines that are created will have the level of information that you define here, and the guided counting operation will be handled based on this level.
+When you define the work template details, you can use the **Work line breaks** option to specify whether the counting work lines must be grouped by item number or product variant number. This setup is required if you want to count on-hand inventory only for specific products in a location. The cycle counting work lines that are created have the level of information that you define here, and the guided counting operation is handled based on this level.
 
-If you associate cycle count plans with work templates by using the **Work lines breaks** option, the **Partial cycle count** field is selected for the cycle counting work that is created, and multiple cycle counting work lines will be created based on the definition of the work template.
+If you associate cycle count plans with work templates by using the **Work line breaks** option, the **Partial cycle count** field is selected for the cycle counting work that is created, and multiple cycle counting work lines are created based on the definition of the work template.
 
-Before partial cycle count work can be processed, you must, at a minimum, select **Display item number** for the mobile device menu item as part of the cycle counting setup. The warehouse operator will be asked to record only counting information that is related to the counting lines (item numbers and product dimensions). All other on-hand inventory will be ignored for this counting process.
+Before partial cycle count work can be processed, you must, at a minimum, select **Display item number** for the mobile device menu item as part of the cycle counting setup. The warehouse operator is asked to record only counting information that is related to the counting lines (item numbers and product dimensions). All other on-hand inventory is ignored for this counting process.
 
-For the partial cycle count process, the **Last cycle count** date/time won’t be updated for the location, even though all the items on hand at a given location are counted. The partial cycle count doesn't consider the parameter **Days between cycle counting** on  the **Cycle count plans** page. Partial cycle count doesn't support simultaneous counting of multiple items at the same location. Partial cycle count functionality may result in the same location being counted multiple times for an item when **Process cycle counting plan** is run. To avoid that scenario, specify filters in the **Select locations** field.
+For the partial cycle count process, the **Last cycle count** date/time aren't updated for the location, even though all the items on hand at a given location are counted. The partial cycle count doesn't consider the parameter **Days between cycle counting** on  the **Cycle count plans** page. Partial cycle count doesn't support simultaneous counting of multiple items at the same location. Partial cycle count functionality might result in the same location being counted multiple times for an item when **Process cycle counting plan** is run. To avoid that scenario, specify filters in the **Select locations** field.
 
 > [!NOTE]
 > The Warehouse Management mobile app doesn't provide the **Add LP or item** button when you use the partial cycle count process.
 
 ## Example
 
-For this example, only item number A0001 must be counted in warehouse 61.
+For this example, only item number A0001 is counted in warehouse 61.
 
-1. A new work template for cycle counting is created. The **Work line breaks** option is used to group counting work lines by item number. Therefore, the cycle counting work that is created will have lines per item number. You can also group the lines by product variant number.
+1. A new work template for cycle counting is created. Use the **Work line breaks** option to group counting work lines by item number. Therefore, the cycle counting work has lines per item number. You can also group the lines by product variant number.
 1. A new cycle counting plan is created that references the newly created work template. The cycle counting plan includes all locations in warehouse 61 (**Select locations** query) that hold inventory for item number A0001. The selection of specific products is defined in the **Cycle count product selections** section.
-1. You can select products for cycle counting plans by setting the **Empty locations** field to **Exclude empty**. When the cycle counting plan is processed, partial cycle count work for item number A0001 is created. The actual counting process can be performed by using a mobile device menu item for guided cycle counting.
+1. Select products for cycle counting plans by setting the **Empty locations** field to **Exclude empty**. When the cycle counting plan is processed, the partial cycle count work for item number A0001 is created. You can perform the actual counting process by using a mobile device menu item for guided cycle counting.
 
 ## Related information
 
