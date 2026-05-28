@@ -4,8 +4,8 @@ description: Learn how you can set up warehouses for transfer orders, including 
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 01/18/2019
-ms.custom:
+ms.date: 5/28/2026
+ms.custom: bap-template
 ms.reviewer: kamaybac 
 ms.search.form: InventLocation,CustVendTransportPoint2Point
 ---
@@ -14,32 +14,32 @@ ms.search.form: InventLocation,CustVendTransportPoint2Point
 
 [!include [banner](../includes/banner.md)]
 
-You can use warehouse levels to create a hierarchy that supports transfer orders between warehouses. Based on this setup, master scheduling calculates item requirements at the individual warehouse level and generates planned transfer orders from an assigned source warehouse to fulfill them.
+Use warehouse levels to create a hierarchy that supports transfer orders between warehouses. With this setup, master scheduling calculates item requirements at the individual warehouse level and generates planned transfer orders from an assigned source warehouse to fulfill them.
 
-1.  Click **Inventory management > Setup > Inventory breakdown > Warehouses**.
+1.  Select **Inventory management** > **Setup** > **Inventory breakdown** > **Warehouses**.
 
-2.  Select the warehouse that you want to refill.
+1.  Select the warehouse that you want to refill.
 
-3.  On the **Master planning** FastTab, select the **Refilling** check box.
+1.  On the **Master planning** FastTab, select the **Refilling** check box.
 
-4.  In the **Main warehouse** field, select the warehouse that you want to assign as the refilling warehouse. Master scheduling calculates a transfer requirement for the selected warehouse and generates a planned transfer order from the assigned **Main warehouse**.
+1.  In the **Main warehouse** field, select the warehouse that you want to assign as the refilling warehouse. Master scheduling calculates a transfer requirement for the selected warehouse and generates a planned transfer order from the assigned **Main warehouse**.
    
     > [!NOTE]
-    > <P>If you clear the <STRONG>Refilling</STRONG> check box, the selected warehouse is assigned a warehouse level in regard to the <STRONG>Main warehouse</STRONG>, but the <STRONG>Main warehouse</STRONG> is not set up as a refilling warehouse.</P>
+    > <P>If you clear the <STRONG>Refilling</STRONG> check box, the selected warehouse is assigned a warehouse level in regard to the <STRONG>Main warehouse</STRONG>, but the <STRONG>Main warehouse</STRONG> isn't set up as a refilling warehouse.</P>
 
-5.  Close the page to apply the new setup.
+1.  Close the page to apply the new setup.
 
 
 > [!TIP]
-> <P>If you want to assign a warehouse for refilling, you must first set up the warehouse as a storage dimension on the <STRONG>Storage dimension groups</STRONG> page. On this page, select the <STRONG>Active</STRONG> field and the <STRONG>Coverage plan by dimension</STRONG> field for the warehouse.</P>
+> To assign a warehouse for refilling, first set up the warehouse as a storage dimension on the <STRONG>Storage dimension groups</STRONG> page. On this page, select the <STRONG>Active</STRONG> field and the <STRONG>Coverage plan by dimension</STRONG> field for the warehouse.</P>
 
 ## Set up transport lead time
 
-You must also set up the transport lead time between the warehouses on the **Transport days** page. 
+Set up the transport lead time between the warehouses on the **Transport days** page. 
 1. Go to **Inventory management > Setup > Distribution > Transport days**.
-2. In the **Receiving point** field, select **warehouse**.
-3. Select the **Shipping warehouse**, **Receiving warehouse**, and **Transport days**. 
-4. (Optional) You can also set transport time, depending on the mode of delivery, under the **Transport days per mode of delivery** tab.
+1. In the **Receiving point** field, select **Warehouse**.
+1. Select the **Shipping warehouse**, **Receiving warehouse**, and **Transport days**. 
+1. (Optional) Under the **Transport days per mode of delivery** tab, set the transport time depending on the mode of delivery.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
