@@ -4,7 +4,7 @@ description: The Advanced bank reconciliation feature lets you import electronic
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 01/29/2026
+ms.date: 05/27/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -24,27 +24,27 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 > Some of the functionality that this article describes applies only when the **Modern bank reconciliation** feature is turned off. If you turn on the feature, the process flow is different, and the following extra functionality is available:
 >
 > - Bank statement validation and confirmation.
-> - Improvements to bank reconciliation matching rules. 
+> - Improvements to bank reconciliation matching rules.
 > For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](clear-reverse-comp-trans.md), [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md), and [Set up bank reconciliation matching rules](set-up-bank-reconciliation-matching-rules.md).
 > - Customer and vendor journal posting directly from the bank reconciliation worksheet. For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md).
 > - Generation of general ledger vouchers directly from the bank reconciliation worksheet. For more information, see [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
 
 > [!NOTE]
-> To avoid issues with reconciliation reversal, reconcile all existing bank statements that have new lines before enabling the **Modern bank reconciliation** feature.
+> To avoid problems with reconciliation reversal, reconcile all existing bank statements that have new lines before you enable the **Modern bank reconciliation** feature.
 
 ## Import an electronic bank statement by using Electronic reporting
 
-You import your bank statements by using the **Import statement** action on the **Bank statements** page. On the bank statement, the bank account is identified through a combination of values that you set on the bank account details. These values include the bank name, bank account number, routing number, Society for Worldwide Interbank Financial Telecommunication (SWIFT) code, and International Bank Account Number (IBAN). 
+Import your bank statements by using the **Import statement** action on the **Bank statements** page. On the bank statement, you identify the bank account through a combination of values that you set on the bank account details. These values include the bank name, bank account number, routing number, Society for Worldwide Interbank Financial Telecommunication (SWIFT) code, and International Bank Account Number (IBAN).
 
 You can upload a bank statement that contains information for either a single account or multiple accounts. If there are multiple accounts, the accounts can be in different legal entities.
 
 - To import a single bank statement file for a single account, set the **Import statement for multiple bank accounts in all legal entities** option to **No**, and select the bank account that is associated with the statement. Select **Browse** to select the associated bank statement file, and then select **Upload**.
 - To import a single bank statement file for multiple accounts, set the **Import statement for multiple bank accounts in all legal entities** option to **Yes**. Select **Browse** to select the associated bank statement file, and then select **Upload**.
 
-If any statements in the electronic file can't be associated with a bank account or if they're associated with multiple bank accounts by using the identifying fields, they aren't imported. However, other statements in the file can still be imported. The user then receives a message that states that the import of bank statements was unsuccessful for specific bank accounts. 
+If any statements in the electronic file can't be associated with a bank account or if they're associated with multiple bank accounts by using the identifying fields, they aren't imported. However, other statements in the file can still be imported. You then receive a message that states that the import of bank statements was unsuccessful for specific bank accounts.
 
-> [!NOTE] 
-> The user who imports the bank statement file must have access to a legal entity to import statements for that legal entity's bank accounts. 
+> [!NOTE]
+> The user who imports the bank statement file must have access to a legal entity to import statements for that legal entity's bank accounts.
 
 You can use a zip file to upload multiple statement files to Finance in a single process. To import multiple bank statement files for multiple accounts, combine all the bank statement files into one zip file. In the **Import bank statements** dialog box, set the **Import statement for multiple bank accounts in all legal entities** option to **Yes**. Select **Browse** to select the zip file that contains the bank statement files, and then select **Upload**. The import process recognizes the zip file and uploads each statement that it includes, regardless of the legal entity of the bank account.
 
@@ -70,37 +70,38 @@ Here's the template for importing a bank statement header:
 - CURRENCY
 - OPENINGBALANCE
 - ENDINGBALANCE
-- FROMDATE	
+- FROMDATE 
 - TODATE
 
 Here's the template for importing bank statement lines:
 
-- LINENUMBER	
-- BANKACCOUNT	
-- STATEMENTID	
-- BOOKINGDATE	
-- AMOUNT	
-- BANKSTATEMENTTRANSACTIONCODE	
-- COUNTERAMOUNT	
-- COUNTERCURRENCY	
-- COUNTEREXCHANGERATE	
-- CREDITORREFERENCEINFORMATION	
-- DOCUMENTNUMBER	
-- ENTRYREFERENCE	
-- INSTRUCTEDAMOUNT	
-- INSTRUCTEDCURRENCY	
-- INSTRUCTEDEXCHANGERATE	
-- LINESTATUS	
-- REFERENCENUMBER	
-- RELATEDBANK	
-- RELATEDBANKACCOUNT	
-- REVERSAL	
+- LINENUMBER 
+- BANKACCOUNT 
+- STATEMENTID 
+- BOOKINGDATE 
+- AMOUNT 
+- BANKSTATEMENTTRANSACTIONCODE 
+- COUNTERAMOUNT 
+- COUNTERCURRENCY 
+- COUNTEREXCHANGERATE 
+- CREDITORREFERENCEINFORMATION 
+- DOCUMENTNUMBER 
+- ENTRYREFERENCE 
+- INSTRUCTEDAMOUNT 
+- INSTRUCTEDCURRENCY 
+- INSTRUCTEDEXCHANGERATE 
+- LINESTATUS 
+- REFERENCENUMBER 
+- RELATEDBANK 
+- RELATEDBANKACCOUNT 
+- REVERSAL 
 - TRADINGPARTY
 
 For more information, see [Data entities overview](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 ## Validate the bank statement
-To validate a statement, on the **Bank statements** page, select **Validate**. Bank statements must be validated before they can be reconciled. This step is automatically completed if you set the **Reconcile after import** option to **Yes** at the time of import. 
+
+To validate a statement, on the **Bank statements** page, select **Validate**. Bank statements must be validated before they can be reconciled. This step is automatically completed if you set the **Reconcile after import** option to **Yes** at the time of import.
 
 Bank statement validation verifies the following details:
 
@@ -118,24 +119,24 @@ If the **Modern bank reconciliation** feature is turned on, the **Validate** and
 - **Validate** – Verify the bank statement data.
 - **Confirm** – Update the bank statement status to **Confirmed**.
 
-
 > [!NOTE]
-> To prevent the import of duplicate bank statements, combination of AccountNo, StatementID, FromDate, and ToDate are checked. If these elements match an existing bank statement, it is considered a duplicate and will not be imported. This ensures that each bank statement file is unique and avoids redundancy.
-
+> To prevent the import of duplicate bank statements, the system checks the combination of AccountNo, StatementID, FromDate, and ToDate. If these elements match an existing bank statement, the system considers it a duplicate and doesn't import it. This check ensures that each bank statement file is unique and avoids redundancy.
 
 ## Reconcile the bank statement
-After you import an electronic bank statement and validate the statement on the **Bank statements** page, you can reconcile the bank statement by using the **Bank reconciliation** and **Bank reconciliation worksheet** pages. 
 
-On the **Bank reconciliation** page, select **New** to create a new reconciliation, and then select the bank account of the statement that you imported. A bank account can have only one open bank reconciliation. The cut-off date determines the bank statement transactions and Operations bank transactions that are included on the reconciliation worksheet. By default, the current system date is used as the cut-off date, but you can change the date for the reconciliation. The remaining header information is automatically taken from the statement. 
-This step is automatically completed if you set the **Reconcile after import** option to **Yes** at the time of import. 
+After you import an electronic bank statement and validate the statement on the **Bank statements** page, you can reconcile the bank statement by using the **Bank reconciliation** and **Bank reconciliation worksheet** pages.
 
-On the **Bank reconciliation** page, select **Worksheet** to open the **Bank reconciliation worksheet** page. 
-If you set the **Reconcile after import** option to **Yes**, the Default matching rule set is automatically run for the reconciliation. To manually run matching rules, select **Run matching rules** to select the matching rule sets or matching rules to run against the bank transactions. 
-Complete this step as a batch process if you have a lot of transactions to process. 
+On the **Bank reconciliation** page, select **New** to create a new reconciliation, and then select the bank account of the statement that you imported. A bank account can have only one open bank reconciliation. The cut-off date determines the bank statement transactions and Operations bank transactions that are included on the reconciliation worksheet. By default, the current system date is used as the cut-off date, but you can change the date for the reconciliation. The remaining header information is automatically taken from the statement.
+This step is automatically completed if you set the **Reconcile after import** option to **Yes** at the time of import.
 
-If **Modern bank reconciliation** feature is turned off, the **Bank reconciliation worksheet** page has four grids that contain transactions. The two upper grids show transactions from the bank statement and Operations that aren't yet matched. The two lower grids show matched transactions. The **Bank statement transaction details** tab shows details for the unmatched bank statement transaction that is selected in the upper grid. 
+On the **Bank reconciliation** page, select **Worksheet** to open the **Bank reconciliation worksheet** page.
+If you set the **Reconcile after import** option to **Yes**, the Default matching rule set is automatically run for the reconciliation. To manually run matching rules, select **Run matching rules** to select the matching rule sets or matching rules to run against the bank transactions.
+Complete this step as a batch process if you have a lot of transactions to process.
+
+If **Modern bank reconciliation** feature is turned off, the **Bank reconciliation worksheet** page has four grids that contain transactions. The two upper grids show transactions from the bank statement and Operations that aren't yet matched. The two lower grids show matched transactions. The **Bank statement transaction details** tab shows details for the unmatched bank statement transaction that is selected in the upper grid.
 
 There are three ways to match or reconcile bank statement transactions:
+
 - Match the statement transactions with bank transactions that are posted in Finance.
 - Match the statement transactions with a reversal bank statement transaction.
 - Mark the transactions as **New**, so that they can be posted later as a bank transaction in Finance.
@@ -145,21 +146,21 @@ There are three ways to match or reconcile bank statement transactions:
 
 To manually match transactions, select the transactions in the **Bank statement transactions** grid, select the corresponding transactions in the **Operations bank transactions** grid, and then select **Match**. The selected transactions are moved from the upper grids for unmatched transactions to the lower grids for matched transactions. Additionally, the matched and unmatched total amounts are updated. You can have one-to-one, many-to-one, and many-to-many transaction matches. Matches must follow the rules for allowed date differences and transaction type mapping. Set these rules on the **Cash and bank management parameters** page.
 
-Penny differences might occur in your reconciliation. You can match a single bank statement transaction and a single Operations bank transaction that have penny differences if the penny differences are within the tolerance amount that is defined by the **Allowed penny difference** field on the bank account. The amount is shown in the **Correction amount** field on the matched Operations bank transaction. When the bank reconciliation is marked as reconciled, corrections are automatically posted by using the main account that is defined on the associated bank transaction type. Corrections aren't supported for the **Check** and **Deposit** document types. 
+Penny differences might occur in your reconciliation. You can match a single bank statement transaction and a single Operations bank transaction that have penny differences if the penny differences are within the tolerance amount that is defined by the **Allowed penny difference** field on the bank account. The amount is shown in the **Correction amount** field on the matched Operations bank transaction. When the bank reconciliation is marked as reconciled, corrections are automatically posted by using the main account that is defined on the associated bank transaction type. Corrections aren't supported for the **Check** and **Deposit** document types.
 
 You match bank statement transaction reversals by using the reconciliation worksheet. Two statement lines can be matched if the amounts are opposite, and if one of the transactions is marked as a reversal. You can also set up a matching rule for the **Clear reversal statement lines** action.
 
-You must reconcile reversed Operations bank transactions by using the **Operations bank transactions** page. You can reconcile two Operations bank transactions together if the documents have the same bank account, document type, and payment reference, and if they have opposite amounts. You can also reconcile a single canceled check to prevent those transactions from appearing on the reconciliation worksheet. 
+You must reconcile reversed Operations bank transactions by using the **Operations bank transactions** page. You can reconcile two Operations bank transactions together if the documents have the same bank account, document type, and payment reference, and if they have opposite amounts. You can also reconcile a single canceled check to prevent those transactions from appearing on the reconciliation worksheet.
 
 If there are new bank-initiated transactions, such as interest, fees, and charges, that aren't yet in Finance, you can add them to a journal that's associated with the selected bank statement reconciliation. Select a bank statement transaction in the **Bank statement transactions** grid for unmatched transactions, and then select **Mark as new**. The status of the transaction is set to **New**, and the transaction is moved to the **Bank statement transactions** grid for matched transactions. Later, from the **Bank statement** page, post the transactions that are marked as **New**.
 
-You can unmatch transactions that were incorrectly matched. Select the matched bank statement transaction, and then select **Unmatch**. All associated transactions are moved back to the upper grids for unmatched transactions, and the matched and unmatched total amounts are updated. 
+You can unmatch transactions that were incorrectly matched. Select the matched bank statement transaction, and then select **Unmatch**. All associated transactions are moved back to the upper grids for unmatched transactions, and the matched and unmatched total amounts are updated.
 
 After you complete the reconciliation process, mark the Bank reconciliation worksheet as reconciled. This process automatically posts correction amounts by using the accounts set on the **Bank transaction type** page. You can mark the bank reconciliation for a statement as reconciled at any time, even if there are bank statement lines that aren't matched. The unmatched transactions automatically move to the next reconciliation worksheet as unmatched bank statement transactions to be reconciled. After a bank statement reconciliation is marked as reconciled, it can't be undone. The reconciliation isn't editable, and you don't have the ability to make updates to that reconciliation.
 
 ## Post new transactions that are associated with the reconciliation
 
-Bank statement transactions that you marked as **New** on the reconciliation worksheet are posted on the **Bank statement** page. On the **Bank statement** page, select the statement ID to view the statement details. On the **Accounting** menu, you can use the **View distributions** and **View accounting** options to view details behind the new transactions and the associated ledger entries. Select the **Post** option to post the bank statement lines that are marked as **New** to the general ledger. Posting can be completed only one time per bank statement. To reverse a posted bank statement through a new transaction, turn on the **Reverse posted bank statement with new transactions** feature.
+Bank statement transactions that you mark as **New** on the reconciliation worksheet are posted on the **Bank statement** page. On the **Bank statement** page, select the statement ID to view the statement details. On the **Accounting** menu, use the **View distributions** and **View accounting** options to view details behind the new transactions and the associated ledger entries. Select the **Post** option to post the bank statement lines that are marked as **New** to the general ledger. You can complete posting only one time per bank statement. To reverse a posted bank statement through a new transaction, turn on the **Reverse posted bank statement with new transactions** feature.
 
 To view the voucher of a new transaction on a **Bank statement** page, turn on the **Display vouchers in bank statement** feature.
 
@@ -167,10 +168,10 @@ If the **Modern bank reconciliation** feature is enabled, users can generate gen
 
 ## Post customer and vendor payment journals from bank statements and reconciliation worksheets
 
-If the **Modern bank reconciliation** feature is enabled, the bank statement and reconciliation worksheets are enhanced. Here's some of the extra functionality that is provided:
+If the **Modern bank reconciliation** feature is enabled, the bank statement and reconciliation worksheets are enhanced. Here's some of the extra functionality that's provided:
 
 - You can post customer and vendor payment journals directly from selected bank statement lines.
-- The posted customer and vendor payment journals are automatically matched with the original bank statement lines in the bank reconciliation worksheet.
+- The posted customer and vendor payment journals automatically match with the original bank statement lines in the bank reconciliation worksheet.
 
 To use this functionality, follow these steps:
 
@@ -183,6 +184,6 @@ To use this functionality, follow these steps:
 1. Select **Generate payment journal** to generate and post the payment journal.
 
 > [!NOTE]
-> When customer or vendor payment journals are generated from bank statement lines or reconciliation worksheets, the journal lines are created and posted first. If invoice is selected to be settled with the journal, settlement with open invoices is completed afterward based on the transactions that were marked in the bank reconciliation worksheet. Because a single payment journal line can be settled against multiple invoices, the **Invoice** field on the journal line might not show a specific invoice number (or might show an asterisk). This behavior differs from manually created customer or vendor payment journals. All settlements are correctly recorded, even though individual invoice references aren’t displayed directly on the journal line.
+> When you generate customer or vendor payment journals from bank statement lines or reconciliation worksheets, the system creates and posts the journal lines first. If you select an invoice to settle with the journal, the system completes settlement with open invoices afterward based on the transactions that you marked in the bank reconciliation worksheet. Because a single payment journal line can be settled against multiple invoices, the **Invoice** field on the journal line might not show a specific invoice number (or might show an asterisk). This behavior differs from manually created customer or vendor payment journals. All settlements are correctly recorded, even though individual invoice references aren't displayed directly on the journal line.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

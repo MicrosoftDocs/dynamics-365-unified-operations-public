@@ -4,7 +4,7 @@ description: You can use invoice totals matching to help guarantee that total in
 author: twheeloc
 ms.author: shpandey
 ms.topic: overview
-ms.date: 07/25/2019
+ms.date: 05/26/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -19,11 +19,11 @@ ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
 
 [!include [banner](../includes/banner.md)]
 
-One type of invoice matching validation is invoice totals matching. To specify that the system should perform invoice totals matching, on the **Accounts payable parameters** page, on the **Invoice validation** tab, set the **Match invoice totals** option **Yes**. 
+One type of invoice matching validation is invoice totals matching. To specify that the system should perform invoice totals matching, on the **Accounts payable parameters** page, on the **Invoice validation** tab, set the **Match invoice totals** option to **Yes**. 
 
-You can use invoice totals matching to help guarantee that total invoice amounts don't deviate from expected amounts by more than an acceptable variance. Six totals are compared on the **Invoice totals matching details** page. If any one of the totals deviates from the expected corresponding purchase order total, a matching discrepancy is flagged. 
+Use invoice totals matching to help guarantee that total invoice amounts don't deviate from expected amounts by more than an acceptable variance. The system compares six totals on the **Invoice totals matching details** page. If any one of the totals deviates from the expected corresponding purchase order total, the system flags a matching discrepancy. 
 
-To review the invoice that has the totals matching discrepancies, in the **Vendor invoice entry** workspace, click the **Pending invoices** tile. Then, on the Action Pane, on the **Review** tab, click **Matching details**. If matching discrepancies have been detected, warning icons appear next to the invoice amount. You can view more detail about the totals by viewing the invoice totals matching details. 
+To review the invoice that has the totals matching discrepancies, in the **Vendor invoice entry** workspace, select the **Pending invoices** tile. Then, on the Action Pane, on the **Review** tab, select **Matching details**. If the system detects matching discrepancies, warning icons appear next to the invoice amount. You can view more detail about the totals by viewing the invoice totals matching details. 
 
 After you identify a discrepancy, you might have to contact the vendor if you think that the information on the invoice is incorrect. Depending on the resulting agreement with the vendor, you can then take one of these actions:
 
@@ -31,7 +31,7 @@ After you identify a discrepancy, you might have to contact the vendor if you th
 -   Revise the invoice amount to the expected amount, and post the invoice.
 -   Request a full credit and a new, corrected invoice from the vendor.
 
-For more information, see [Research/Resolve exceptions](tasks/research-resolve-exceptions.md).
+For more information, see [Research or resolve exceptions](tasks/research-resolve-exceptions.md).
 
 
 

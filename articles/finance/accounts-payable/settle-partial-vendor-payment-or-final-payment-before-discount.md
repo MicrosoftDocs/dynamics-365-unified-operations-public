@@ -27,19 +27,19 @@ On June 25, April enters and posts an invoice for 1,000.00 for vendor 3064. Apri
 
 | Voucher   | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance   | Currency |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
-| Inv-10010 | 6/25/2015 | 10010   |                                      | 1,000.00                              | -1,000.00 | USD      |
+| Inv-10010 | 6/25/2025 | 10010   |                                      | 1,000.00                              | -1,000.00 | USD      |
 
 From the **Vendors** page, April opens the **Settle transactions** page. April can use the **Settle transactions** page to view the dates and amounts of cash discounts. The due date is July 25, and a cash discount of -10.00 is available if the invoice is paid by July 9.
 
 | Mark | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-|      | Normal            | Inv-10010 | 3064    | 6/25/2015 | 7/25/2015 | 10010   | 1,000.00                       | USD      | 990.00           |
+|      | Normal            | Inv-10010 | 3064    | 6/25/2025 | 7/25/2025 | 10010   | 1,000.00                       | USD      | 990.00           |
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
 |       &nbsp;                 | &nbsp;    |
 |------------------------------|-----------|
-| Cash discount date           | 7/09/2015 |
+| Cash discount date           | 7/09/2025 |
 | Cash discount amount         | -10.00    |
 | Use cash discount            | Normal    |
 | Cash discount taken          | 0.00      |
@@ -49,21 +49,21 @@ April clicks the **Cash discount** tab to view the discount amount.
 
 | Cash discount date | Cash discount amount | Amount in transaction currency |
 |--------------------|----------------------|--------------------------------|
-| 7/9/2015           | 10.00                | 990.00                         |
-| 7/25/2015          | 0.00                 | 1,000.00                       |
+| 7/9/2025           | 10.00                | 990.00                         |
+| 7/25/2025          | 0.00                 | 1,000.00                       |
 
 ## Partial payment on July 1 by using the Settle transactions page
 April can create a payment journal for this payment by opening the **Payment journal** page in Accounts payable. April creates a new journal and enters a line for vendor 3064. April then opens the **Settle transactions** page to mark the invoice for settlement. April marks the invoice and changes the value in the **Amount to settle** field to **-500.00**. The value in the **Cash discount amount** field is **-10.00** for the full invoice, and that the value in the **Cash discount amount to take** field is **-5.05**. Therefore, April is settling -505.05 of this invoice.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Selected | Normal            | FTI-10010 | 4028    | 6/25/2015 | 7/25/2015 | 10010   | 1,000.00                       | USD      | -500.00          |
+| Selected | Normal            | FTI-10010 | 4028    | 6/25/2025 | 7/25/2025 | 10010   | 1,000.00                       | USD      | -500.00          |
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
 |  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
-| Cash discount date           | 7/09/2015 |
+| Cash discount date           | 7/09/2025 |
 | Cash discount amount         | -10.00    |
 | Use cash discount            | Normal    |
 | Cash discount taken          | 0.00      |
@@ -73,13 +73,13 @@ April wants to settle exactly half the invoice. Therefore, the value in the **Am
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Selected | Normal            | FTI-10010 | 4028    | 6/25/2015 | 7/25/2015 | 10010   | 1,000.00                       | USD      | -495.00          |
+| Selected | Normal            | FTI-10010 | 4028    | 6/25/2025 | 7/25/2025 | 10010   | 1,000.00                       | USD      | -495.00          |
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
 |  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
-| Cash discount date           | 7/09/2015 |
+| Cash discount date           | 7/09/2025 |
 | Cash discount amount         | -10.00    |
 | Use cash discount            | Normal    |
 | Cash discount taken          | 0.00      |
@@ -89,9 +89,9 @@ April closes the **Settle transactions** page. A payment line for 495.00 is crea
 
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| Inv-10010  | Invoice          | 6/25/2015 | 10010   |                                      | 1,000.00                              | -500.00 | USD      |
-| APP-10010  | Payment          | 7/1/2015  |         | 495.00                               |                                       | 0.00    | USD      |
-| DISC-10010 | Cash discount    | 7/1/2015  |         | 5.00                                 |                                       | 0.00    | USD      |
+| Inv-10010  | Invoice          | 6/25/2025 | 10010   |                                      | 1,000.00                              | -500.00 | USD      |
+| APP-10010  | Payment          | 7/1/2025  |         | 495.00                               |                                       | 0.00    | USD      |
+| DISC-10010 | Cash discount    | 7/1/2025  |         | 5.00                                 |                                       | 0.00    | USD      |
 
 ## Remaining amount paid on July 8
 April pays the rest of the invoice for vendor 3064 on July 8, which is in the cash discount period. April creates the payment journal on July 8 and marks the transaction for settlement. April sees that the amount that must be settled is 495.00. The value in the **Estimated cash discount** field is **-5.00**, because the 5.00 discount was previously taken.
@@ -105,13 +105,13 @@ Information about the marked transaction appears in the grid on the **Settle ope
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Selected | Normal            | FTI-10010 | 4028    | 6/25/2015 | 7/25/2015 | 10010   | 1,000.00                       | USD      | 495.00           |
+| Selected | Normal            | FTI-10010 | 4028    | 6/25/2025 | 7/25/2025 | 10010   | 1,000.00                       | USD      | 495.00           |
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
 |  &nbsp;                      | &nbsp;    |
 |------------------------------|-----------|
-| Cash discount date           | 7/09/2015 |
+| Cash discount date           | 7/09/2025 |
 | Cash discount amount         | 10.00     |
 | Use cash discount            | Normal    |
 | Cash discount taken          | 5.00      |
@@ -121,11 +121,11 @@ April posts the payment journal and reviews the vendor transactions on the **Ven
 
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| Inv-10010  | Invoice          | 6/25/2015 | 10010   |                                      | 1,000.00                              | 0.00    | USD      |
-| APP-10010  |  Payment         | 7/1/2015  |         | 495.00                               |                                       | 0.00    | USD      |
-| DISC-10010 | Cash discount    | 7/1/2015  |         | 5.00                                 |                                       | 0.00    | USD      |
-| APP-10011  | Payment          | 7/8/2015  |         | 495.00                               |                                       | 0.00    | USD      |
-| DISC-10011 | Cash discount    | 7/8/2015  |         | 5.00                                 |                                       | 0.00    | USD      |
+| Inv-10010  | Invoice          | 6/25/2025 | 10010   |                                      | 1,000.00                              | 0.00    | USD      |
+| APP-10010  |  Payment         | 7/1/2025  |         | 495.00                               |                                       | 0.00    | USD      |
+| DISC-10010 | Cash discount    | 7/1/2025  |         | 5.00                                 |                                       | 0.00    | USD      |
+| APP-10011  | Payment          | 7/8/2025  |         | 495.00                               |                                       | 0.00    | USD      |
+| DISC-10011 | Cash discount    | 7/8/2025  |         | 5.00                                 |                                       | 0.00    | USD      |
 
 
 

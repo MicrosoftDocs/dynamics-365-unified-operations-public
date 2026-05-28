@@ -4,7 +4,7 @@ description: Learn about the Fixed asset management workspace. This workspace sh
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 01/12/2018
+ms.date: 05/27/2026
 ms.custom:
 ms.reviewer: kfend
 audience: Application User
@@ -18,23 +18,23 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-The **Fixed asset management** workspace shows information that is related to fixed assets that are entered in the system. This workspace includes a summary view and an analytics view. The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company. You can also add analytics to the Power BI analytics section directly in the workspace. The **Analytics – all companies** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.
+The **Fixed asset management** workspace shows information related to fixed assets that you enter in the system. This workspace includes a summary view and an analytics view. The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company. You can also add analytics to the Power BI analytics section directly in the workspace. The **Analytics – all companies** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.
 
 ## My work
 
 ### Summary
 
-The tiles in the **Summary** section give an overview of your fixed assets. The information includes metrics about assets that aren't yet acquired, assets that have been acquired during the current year, and assets that have been disposed of during the current year. The **Summary** section also has quick navigation to the **Fixed asset** list page, batch depreciation proposal, and fixed asset journal.
+The tiles in the **Summary** section give an overview of your fixed assets. The information includes metrics about assets that aren't yet acquired, assets that you acquired during the current year, and assets that you disposed of during the current year. The **Summary** section also has quick navigation to the **Fixed asset** list page, batch depreciation proposal, and fixed asset journal.
 
 ### Find fixed assets
 
-The **Find fixed assets** section lets you quickly search for assets by providing the fixed asset number, group, name, location, or person who is responsible. All assets that match the search criteria will appear in the list.
+The **Find fixed assets** section lets you quickly search for assets by providing the fixed asset number, group, name, location, or person who is responsible. All assets that match the search criteria appear in the list.
 
 From the list, you can view the following pages:
 
- - **Details** page for the fixed asset
- - **Books** page for all books that are associated with the fixed asset
- - **Fixed asset valuations** page
+- **Details** page for the fixed asset
+- **Books** page for all books that are associated with the fixed asset
+- **Fixed asset valuations** page
 
 ### Valuations
 
@@ -63,7 +63,6 @@ The following table shows the visualizations that are available on each report p
 | Valuations maps        | Fixed asset locations |
 | Valuations maps        | Fixed asset details |
 
-To view the analytics with data, you must first refresh the AssetTransactionMeasure aggregate measurement on the **Entity Store** page.
-
+To view the analytics with data, first refresh the AssetTransactionMeasure aggregate measurement on the **Entity Store** page.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

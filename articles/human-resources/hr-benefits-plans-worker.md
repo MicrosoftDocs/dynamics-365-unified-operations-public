@@ -35,7 +35,7 @@ Create worker benefit plans in Microsoft Dynamics 365 Human Resources to select 
 
    | Field | Description |
    | --- | --- |
-   | Period | Specifies a benefits period to use to filter the plans in the **Plans** FastTab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset. For example, select a period you created called 2015 to confirm all the benefit enrollment selections for 2015. |
+   | Period | Specifies a benefits period to use to filter the plans in the **Plans** FastTab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset. For example, select a period you created called 2025 to confirm all the benefit enrollment selections for 2025. |
    | Worker | Specifies a worker to use to filter the plans in the **Plans** FastTab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset. |
    | Legal entity | Specifies a legal entity to use to filter the plans in the **Plans** FastTab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset. |
    | Coverage option | Specifies a coverage option to use to filter the plans in the **Plans** FastTab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset. |
