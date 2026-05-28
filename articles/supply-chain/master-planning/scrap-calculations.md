@@ -4,7 +4,7 @@ description: Learn how to set up your bills of materials (BOMs), formulas, and r
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 12/08/2022
+ms.date: 5/28/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: Route, RouteTable, EcoResProductDetailsExtended, BOMConsistOf, BOMTable
@@ -27,17 +27,17 @@ This article describes how to set up your bills of materials (BOMs), formulas, a
 
 ### Set up scrap for route operations
 
-To view or set the amount of scrap that's produced by an existing route operation, follow these steps:
+To view or set the amount of scrap that an existing route operation produces, follow these steps:
 
 1. Go to **Production control \> All routes**.
 1. In the list pane, select the route that you want to work with.
 1. On the Action Pane, on the **Route** tab, select **Route details**.
-1. The **Route details** page appears. The top grid lists each operation in the route. For each operation, you can view or set the following values that are related to the amount of raw material that was consumed as scrap for the operation:
+1. The **Route details** page appears. The top grid lists each operation in the route. For each operation, you can view or set the following values that are related to the amount of raw material consumed as scrap for the operation:
 
-    - **Scrap percentage** – Specify the percentage of the input raw material that's consumed as scrap during the operation.
+        - **Scrap percentage** – Specify the percentage of the input raw material consumed as scrap during the operation.
     - **Accumulated** – The accumulated scrap percentage for the operation in the route. This value is read-only. The system calculates it in the following way:
 
-        *Accumulated* = (*Accumulated percentage for the following operation* &times; 100) &divide; (100 – *Scrap percentage*)
+        *Accumulated* = (*Accumulated percentage for the following operation* × 100) ÷ (100 – *Scrap percentage*)
 
 ### Calculate scrap for route operations
 
@@ -73,19 +73,19 @@ When you solve for *X*, you get the following result:
 
 ## Scrap for BOMs and formulas
 
-*BOM scrap* and *formula scrap* are types of scrap that are produced in relation to a specific BOM line or formula line (depending on the type of product that you're manufacturing). BOMs and formulas can include both constant and variable scrap.
+*BOM scrap* and *formula scrap* are types of scrap that relate to a specific BOM line or formula line, depending on the type of product you're manufacturing. BOMs and formulas can include both constant and variable scrap.
 
 ### Set up scrap for BOMs and formulas
 
-To view or set the amount of scrap that's produced by the BOM or formula for a released product, follow these steps:
+To view or set the amount of scrap that a BOM or formula produces for a released product, follow these steps:
 
-1. Go to **Product information management \> Products \> Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. In the grid, find and select the product that you want to work with.
 1. On the Action Pane, on the **Engineer** tab, select either **BOM versions** or **Formula versions**, depending on the type of product.
 1. The **BOM versions** or **Formula versions** page appears. In the list pane, select the version that you want to work with.
 1. On the **Bill of materials lines** or **Formula lines** FastTab, select the line that you want to set up scrap for.
 1. On the toolbar of the FastTab, select **Edit**.
-1. The **Edit BOM line** or **Edit Formula line** dialog appears. On the **General** tab, in the **Oper. No.** field, if the current line is consumed only during a specific route operation, enter the operation number of that route operation. The value must be an integer, and it must match the related operation number that's shown on the **Route details** page. If you leave this field blank, the system will assume that the line starts to be consumed during the first operation.
+1. The **Edit BOM line** or **Edit Formula line** dialog appears. On the **General** tab, in the **Oper. No.** field, if the current line is consumed only during a specific route operation, enter the operation number of that route operation. The value must be an integer, and it must match the related operation number that's shown on the **Route details** page. If you leave this field blank, the system assumes that the line starts to be consumed during the first operation.
 1. On the **Consumption calculation** tab, set the following fields as required:
 
     - **Constant scrap** – Enter the quantity of scrap that's always the same for a single production run, regardless of the quantity of finished goods that are manufactured. Specify the scrap in the same unit that's used on the BOM or formula line.
@@ -97,10 +97,10 @@ You can also configure the previously described settings directly on the BOM or 
 
 1. Follow one of these steps:
 
-    - Go to **Product information management \> Bills of materials and formulas \> Bills of materials**.
-    - Go to **Product information management \> Bills of materials and formulas \> Formulas**.
+    - Go to **Product information management** > **Bills of materials and formulas** > **Bills of materials**.
+    - Go to **Product information management** > **Bills of materials and formulas** > **Formulas**.
 
-2. Open a BOM or formula, and then configure settings like those that are described in the previous procedure.
+1. Open a BOM or formula, and then configure settings like those that are described in the previous procedure.
 
 ### Calculate scrap for BOMs and formulas
 
@@ -108,7 +108,7 @@ Based on the configured constant and variable BOM or formula scrap values, the s
 
 *Purchased material* = (*Required raw material* &times; \[1 + *Variable BOM or formula scrap*\]) + *Constant BOM or formula scrap*
 
-For example, you have the following requirements and scrap:
+For example, you have the following requirements and scrap values:
 
 - Constant scrap = 10 liters
 - Variable scrap = 20 percent
@@ -120,8 +120,8 @@ In this case, to meet your material requirements, you must purchase the followin
 
 ## Calculate raw material requirements based on the total scrap
 
-If both route scrap and BOM or formula scrap are set up, the system automatically does the following calculation to determine how much raw material will be required to produce a specific quantity of finished goods:
+If both route scrap and BOM or formula scrap are set up, the system automatically performs the following calculation to determine how much raw material is required to produce a specific quantity of finished goods:
 
 *Purchased raw material* = *Total start quantity according to the route calculation* &times; (1 + *Variable BOM or formula scrap*) &times; *Batch size* + *Constant BOM or formula scrap*
 
-(In this calculation, *Batch size* is the number of pieces of the final good that will be produced.)
+In this calculation, *Batch size* is the number of pieces of the final good that's produced.
