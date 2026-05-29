@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: MaheshPrasadK   
 ms.author: mkarpana
 ms.topic: whats-new
-ms.date: 04/03/2026
+ms.date: 05/29/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: 
@@ -40,7 +40,7 @@ Our next scheduled release is in July 2026.
 
 | Feature  | Description |
 | --- |--- |
-|AI suggestions (Preview) | AI Suggestions is an AI‑assisted derivation capability designed to enable touchless invoice processing within Invoice Capture. It replaces rigid rule‑based derivation with an LLM‑powered, Dataverse‑grounded, instruction‑driven approach. |
+|AI suggestions (Preview) | AI Suggestions is an AI‑assisted derivation capability designed to enable touchless invoice processing within Invoice capture. It replaces rigid rule‑based derivation with an LLM‑powered, Dataverse‑grounded, instruction driven approach. |
 |Bug fix | Added support for Country GG (Guernsey) (Known issue: 6439885) |
 |Bug Fix | Added support for EU locale format for line‑level sales tax rate (Known issue: 6381737) |
 
@@ -57,22 +57,22 @@ The March release of the Invoice capture solution version 2.3.x contains the fol
 
 ## January 2026
 
-The January release of the Invoice capture solution version 2.1.x contains the following feature enhancements and bug fixes.
-Our next scheduled release is in March 2026.
+The January release of the Invoice capture solution version 2.1.x includes the following feature enhancements and bug fixes.
+The next scheduled release is in March 2026.
 
 | Feature  | Description |
 | --- |--- |
 |OCR Async (Preview) | Preview feature to prevent large document processing through asynchronous OCR calls. Previously large documents timed out within 2 minutes. The timeout window is extended to 1 hour for large documents. |
-|Charges (Private preview) | Support automatic detection of charges for standard invoicing models. Ability to select charges that are embedded as line items, and move them to the charges section. This feature doesn't apply to custom models. |
+|Charges (private preview) | Support automatic detection of charges for standard invoicing models. Ability to select charges that are embedded as line items, and move them to the charges section. This feature doesn't apply to custom models. |
 |Bug fix | Support V2 derivation process with improved performance as default. (Known Issue: 6041312) |
 |Bug fix | Improvements to PO link form performance in side by side viewer. (Known Issue: 6041308)|
-|Bug Fix | Support to reprocess invoice derivation failures through captured invoices list page, includes automated reprocessing of failed invoices using power automate flow. (Known issue: 6041312) |
+|Bug Fix | Support to reprocess invoice derivation failures through captured invoices list page, includes automated reprocessing of failed invoices using Power Automate flow. (Known issue: 6041312) |
 
 If you're interested in participating in the private preview of the charges enhancements, contact <mkarpana@microsoft.com> and <achansoriya@microsoft.com> with your Org ID.
 
 ## November 2025
 
-The November release of the Invoice capture solution version 1.9.11.x contains the following feature enhancements and bug fixes.
+The November release of the Invoice capture solution version 1.9.11.x includes the following feature enhancements and bug fixes.
 The next scheduled release is in January 2026.  
 
 | Feature  | Description |
@@ -88,7 +88,7 @@ If you're interested in participating in the private preview of the charges enha
 
 ## September 2025
 
-The September release of the Invoice capture solution version 1.9.9.x contains the following feature enhancements and bug fixes.
+The September release of the Invoice capture solution version 1.9.9.x includes the following feature enhancements and bug fixes.
 
 | Feature  | Description |
 | --- |--- |
@@ -103,7 +103,7 @@ The September release of the Invoice capture solution version 1.9.9.x contains t
 
 ## August 2025
 
-The August release of the Invoice capture solution version 1.9.8.x contains the following feature enhancements and bug fixes.
+The August release of the Invoice capture solution version 1.9.8.x includes the following feature enhancements and bug fixes.
 
 | Feature | Description |
 | --- |--- |
@@ -113,7 +113,7 @@ The August release of the Invoice capture solution version 1.9.8.x contains the 
 
 ## July 2025
 
-The July release of the Invoice capture solution version 1.9.7.x contains the following feature enhancements and bug fixes.
+The July release of the Invoice capture solution version 1.9.7.x includes the following feature enhancements and bug fixes.
 
 ### Bug fixes
 
@@ -179,8 +179,8 @@ The February release of the Invoice capture solution version 1.9.1.X contains th
 | --- |--- |
 | Feature | Added *currency code* as an attribute for optical character recognition (OCR). AI builder now recognizes *currency code* as an attribute from invoices as part of the OCR process. |
 | Bug fix | Fixed formatting problems that occur while a purchase order is being identified. |
-| Bug fix | Fixed an problem where continuous learning fails to identify items if the description contains special characters. |
-| Bug fix | Fixed an problem where the **Configuration group** page keeps loading when the Dynamics 365 finance and operations environment is disabled. |
+| Bug fix | Fixed a problem where continuous learning fails to identify items if the description contains special characters. |
+| Bug fix | Fixed a problem where the **Configuration group** page keeps loading when the Dynamics 365 finance and operations environment is disabled. |
 
 ## December 2024
 
