@@ -2,9 +2,9 @@
 title: Cash application in advanced bank reconciliation
 description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and step-by-step processes.
 author: music727
-ms.author: mibeinar
+ms.author: mukumarm
 ms.topic: how-to
-ms.date: 03/30/2026
+ms.date: 05/30/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -29,6 +29,7 @@ The app might show customer or vendor payments on bank statements. This feature 
 - Import a bank statement.
 - As of version 10.0.42, if you enable the **Enable prepayment and posting profile when generating payment journal in advanced bank reconciliation** feature, a prepayment option and a posting profile option are available when you generate a customer payment journal and a vendor payment journal from the bank reconciliation worksheet. You can also configure those two options in the setup of reconciliation matching rules.
 - As of version 10.0.42, if the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are enabled in advanced bank reconciliation.
+- As of version 10.0.48, when the **Enable cash discounts for settling customer invoice matching rules for bank reconciliation for bank reconciliation** feature is enabled, advanced bank reconciliation applies customer **cash discounts during automatic settlement of customer invoices** through reconciliation matching rules. The process evaluates eligible discounts during execution of the Settle customer invoices reconciliation rules and applies them consistently, aligning with the behavior of manual settlements.
 
 > [!NOTE]
 > When you apply cash in advanced bank reconciliation, only journal names without approval workflow are supported.
@@ -63,7 +64,7 @@ To use matching rules to automatically settle open customer invoices, including 
 1. Go to **Cash and bank management** > **Setup** > **Advanced bank reconciliation setup** > **Reconciliation matching rules**.
 1. Select **New** to create a matching rule.
 1. Set the **Matching rule code** and **Name** fields.
-1. In the **Action** field, select **Settle customer invoice**.
+1. In the **Action** field, select **Settle customer invoice**. 
 1. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step filters the relevant bank statement lines to run against this rule.
 1. On the **Step 2: Match open invoices** FastTab, define the criteria. This step matches bank statement lines with the open customer invoices in the current legal entity. If open customer invoices are successfully matched, a customer payment journal is posted with the customer account that is found on the open customer invoice. The posted customer payment journal is settled with the open customer invoice.
 1. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields per legal entity:
@@ -72,6 +73,7 @@ To use matching rules to automatically settle open customer invoices, including 
     - **Default bank transaction type**
     - **Accounting date**
     - **Financial dimensions**
+    - **Apply cash discount**
 
 1. Select **Save** and then **Activate**.
 1. (Optional) Include the matching rule in matching rule sets.
@@ -82,7 +84,7 @@ To use matching rules to automatically settle open customer invoices, including 
 1. Select **OK** to run the automatic matching.
 
 > [!IMPORTANT]
-> If you enable the **Enable cash discount support for settle customer invoice matching rules** feature, the system supports automatic application of customer cash discounts during bank reconciliation settlement when customer invoices are settled through reconciliation rules. This enhancement ensures that cash discounts are applied consistently, whether invoices are settled manually or automatically through bank reconciliation, eliminating residual open balances caused by unapplied discounts.
+> If you enable the **Enable cash discounts for settling customer invoice matching rules for bank reconciliation for bank reconciliation** feature, the system supports automatic application of customer cash discounts during bank reconciliation settlement when customer invoices are settled through reconciliation rules. This enhancement ensures that cash discounts are applied consistently, whether invoices are settled manually or automatically through bank reconciliation, eliminating residual open balances caused by unapplied discounts.
 > A new parameter is available on the **Settle customer invoice** bank reconciliation rule that defines if invoice cash discounts are applied. When the **Search for invoice cash discount** field is set to **Yes**, the reconciliation process evaluates whether a cash discount applies during settlement.
 > If a grace period is defined on the **Method of payment** selected during invoice posting, it's also taken into consideration when applying cash discount.
 
