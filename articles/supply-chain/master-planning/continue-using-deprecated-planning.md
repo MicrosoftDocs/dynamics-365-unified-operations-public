@@ -4,7 +4,7 @@ description: Learn how to continue using the deprecated master planning engine f
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 05/05/2026
+ms.date: 5/29/2026
 ms.custom: bap-template
 ai-usage: ai-assisted
 ms.reviewer: kamaybac
@@ -52,7 +52,7 @@ Follow these steps to set a company to continue to use the deprecated master pla
 1. Go to **Master planning \> Setup \> Planning Optimization parameters**.
 1. Open the **Company information** tab.
 
-    [<img src="media/exclude-company-from-po.png" alt="Screenshot of the Company information tab." title="Screenshot of the Company information tab" width="350" />](media/exclude-company-from-po.png#lightbox)
+    :::image type="content" source="media/exclude-company-from-po.png" alt-text="Screenshot of the Company information tab." lightbox="media/exclude-company-from-po.png":::
 
 1. Set **Exclude company from running Planning Optimization** to one of the following values
     - *Yes* – Use the deprecated master planning engine for this company.
