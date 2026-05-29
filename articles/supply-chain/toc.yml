@@ -2137,6 +2137,8 @@
           href: demand-planning/time-fences.md
         - name: Limit automatic time series updates with time freezes
           href: demand-planning/time-freeze.md
+        - name: Clean up time series data
+          href: demand-planning/clean-up-time-series-data.md
       - name: Export and download data
         href: demand-planning/export-data.md
       - name: Export data using custom APIs
