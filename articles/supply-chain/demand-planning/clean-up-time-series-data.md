@@ -14,14 +14,14 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-Almost every operation that changes a time series in Demand planning — such as running a transformation, calculation, or forecast — creates a new version. This version history is valuable, but over time, unused versions and entire time series that are no longer needed accumulate and consume storage.
+Almost every operation that changes a time series in Demand planning—such as running a transformation, calculation, or forecast—creates a new version. This version history is valuable, but over time, unused versions and entire time series that are no longer needed accumulate and consume storage.
 
 The *data cleanup* feature lets you review everything that's stored and permanently delete the versions and time series you no longer need. The feature shows you exactly what you're removing, including its size and anything that still references it, so you can make informed decisions before deleting.
 
 > [!IMPORTANT]
 > Deletion is permanent and can't be undone. Always review the details shown in the confirmation dialog before proceeding.
 
-## Prerequisites
+## Required security role
 
 Data cleanup is only available to users who have the *Demand planning manager* role. This restriction ensures that only authorized users can permanently remove data.
 
@@ -42,13 +42,11 @@ The page shows your time series and their versions. The newest versions appear f
 
 ## Understand version statuses
 
-Each version has one of the following statuses.
+Each version listed on the **Data cleanup** page shows one of the following statuses:
 
-| Status | Description |
-|---|---|
-| *Active* | The version exists normally and is available for use. |
-| *Marked for deletion* | You confirmed the deletion of this version. A background cleanup process removes the data shortly afterward. This is a normal intermediate state, not an error. |
-| *Failed deletion* | A cleanup attempt didn't finish, for example because of a temporary issue. The system retries these automatically, so a version may briefly show this status before the retry succeeds. |
+- *Active* – The version exists normally and is available for use.
+- *Marked for deletion* – You confirmed the deletion of this version. A background cleanup process removes the data shortly afterward. This is a normal intermediate state, not an error.
+- *Failed deletion* – A cleanup attempt didn't finish, for example because of a temporary issue. The system retries these automatically, so a version may briefly show this status before the retry succeeds.
 
 ## Understand references
 
@@ -61,8 +59,7 @@ To delete one or more time series versions, follow these steps.
 1. Open the **Data cleanup** page.
 1. In the versions view, select the checkboxes of the versions you want to delete. Selecting a major version automatically selects all of its eligible minor versions, and clearing it clears them again. The *(current)* version and any version that has references can't be selected for deletion.
 1. Select **Delete selected versions**.
-1. A confirmation dialog titled *Permanently delete selected versions?* appears with the message: *This action will permanently remove all selected versions. This process is irreversible. Please confirm to proceed.*
-1. Select **Confirm** to proceed, or **Cancel** to back out.
+1. You're asked to confirm the deletion. Select **Confirm** to proceed, or **Cancel** to back out.
 
 ## Delete an entire time series
 
@@ -71,8 +68,7 @@ To delete one or more complete time series, including all of their versions and 
 1. Open the **Data cleanup** page.
 1. In the time series list, select the time series you want to remove.
 1. Select **Delete selected timeseries**.
-1. A confirmation dialog titled *Permanently delete selected timeseries?* appears with the message: *This action will permanently remove all selected timeseries and their data. This process is irreversible. Please confirm to proceed.*
-1. Select **Confirm** to proceed, or **Cancel** to back out.
+1. You're asked to confirm the deletion. Select **Confirm** to proceed, or **Cancel** to back out.
 
 > [!NOTE]
 > Deleting versions of a time series or entire time series also affects worksheets that include them.
@@ -80,5 +76,7 @@ To delete one or more complete time series, including all of their versions and 
 ## Related information
 
 - [Time series, worksheets, and planning data](time-series.md)
+- [Work with calculation profiles](calculation-profiles.md)
+- [Work with forecast profiles](forecast-profiles.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
