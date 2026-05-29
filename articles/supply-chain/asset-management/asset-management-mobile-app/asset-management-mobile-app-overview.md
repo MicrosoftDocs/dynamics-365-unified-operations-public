@@ -1,12 +1,12 @@
 ---
 title: Asset Management mobile app overview
-description: Learn about the Asset Management mobile app, including outlines on managing work orders, creating maintenance requests, and creating work orders.
+description: The Asset Management mobile app for Microsoft Dynamics 365 Supply Chain Management is now available as an open-source sample. Learn about the app's capabilities and where to find the source code.
 author: jodahlMSFT
 ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 01/06/2025
+ms.date: 05/29/2026
 ms.custom: 
   - bap-template
 ---
@@ -14,6 +14,8 @@ ms.custom:
 # Asset Management mobile app overview
 
 [!include [banner](../../includes/banner.md)]
+
+[!INCLUDE [asset-management-sample-app](../../includes/asset-management-sample-app.md)]
 
 The Asset Management mobile app provides the following capabilities for workers and organizations that use Asset Management for Microsoft Dynamics 365 Supply Chain Management:
 
@@ -34,10 +36,9 @@ The following illustration shows an example of a list of jobs for a work order i
 > [!NOTE]
 > Use of the Asset Management mobile app is covered by the *Dynamics 365 Supply Chain Management* user licenses. Using the app for maintenance requests requires a *Dynamics 365 Team Members* license. Using the app for processing work orders requires a *Dynamics 365 Operations – Activity* license. Licensing terms are subject to change without notice. For complete and up-to-date licensing information, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-The Asset Management mobile app replaces the now-deprecated [Asset management mobile workspace](../asset-management-mobile-workspace.md).
-
 ## Next steps
 
+- [Asset Management mobile app open-source release](open-source-release.md)
 - [Onboard the Asset Management mobile app](onboard-app.md)
 - [Manage work orders using the Asset Management mobile app](work-orders.md)
 - [File maintenance requests using the Asset Management mobile app](maintenance-requests.md)
