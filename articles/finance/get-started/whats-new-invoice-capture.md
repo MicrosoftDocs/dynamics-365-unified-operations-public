@@ -33,6 +33,19 @@ Licensed customers must stay current with updates to the Invoice Capture online 
 - Customers who purchase subscriptions of finance and operations apps experience continuous updates that Microsoft manages. Customers can postpone one consecutive service update.
 - Customers can postpone one consecutive release of Invoice Capture.
 
+  ## May 2026
+
+The May release of the Invoice capture solution version 2.5.x contains the following feature enhancements and bug fixes.
+Our next scheduled release is in July 2026.
+
+| Feature  | Description |
+| --- |--- |
+|AI suggestions (Preview) | AI Suggestions is an AI‑assisted derivation capability designed to enable touchless invoice processing within Invoice Capture. It replaces rigid rule‑based derivation with an LLM‑powered, Dataverse‑grounded, instruction‑driven approach. |
+|Bug fix | Added support for Country GG (Guernsey) (Known issue: 6439885) |
+|Bug Fix | Added support for EU locale format for line‑level sales tax rate (Known issue: 6381737) |
+
+If you're interested in participating in the private preview of the charges enhancements, contact <mkarpana@microsoft.com> and <achansoriya@microsoft.com> with your Org ID.
+
 ## March 2026
 
 The March release of the Invoice capture solution version 2.3.x contains the following feature enhancements and bug fixes.
