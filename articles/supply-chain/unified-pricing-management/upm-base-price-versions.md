@@ -4,7 +4,7 @@ description: Learn how base price versions work in Unified pricing management, i
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: article
-ms.date: 10/25/2024
+ms.date: 5/28/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
@@ -16,7 +16,7 @@ ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
 
 This article describes how base price versions work in Unified pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* for a specific period. The base price is a common price at the level of the stock keeping unit (SKU). Unified pricing management lets you build selling prices by using *cost-plus pricing*. When you use cost-plus pricing, you first build a price structure that starts with the base price.
 
-The following tables shows an example of a [price structure](upm-price-structure-overview.md) that can be used to build final selling prices based on base prices.
+The following table shows an example of a [price structure](upm-price-structure-overview.md) that you can use to build final selling prices based on base prices.
 
 | Pricing sequence | Price component code | Price component type | Description | Price details on the sales order |
 |---|---|---|---|---|
@@ -36,22 +36,22 @@ The cost-plus pricing model works by determining the product cost and then addin
 
 Unified pricing management derives base prices from one of the following two sources:
 
-- The primary source is the item base price that's listed for each product on the **Item base price** page. To open this page, go to **Pricing management \> Pre-sales pricing \> Base price versions** to open the **Base price versions** page, which lists the base price versions that you've created and shows the dates that each version is valid for. Select a version in the list, and then select **Price \> Base price** on the Action Pane to view and edit the prices that apply for that version.
+- The primary source is the item base price that's listed for each product on the **Item base price** page. To open this page, go to **Pricing management \> Pre-sales pricing \> Base price versions** to open the **Base price versions** page, which lists the base price versions that you created and shows the dates that each version is valid for. Select a version in the list, and then select **Price \> Base price** on the Action Pane to view and edit the prices that apply for that version.
 - If an item doesn't have an active item base price, the system determines whether it has an active cost price in a [costing version](../cost-management/costing-versions.md). A costing version can support a standard cost inventory model for items, where the costing version contains a set of standard cost records about the items and their manufacturing processes.
 
 The following table shows the rules for determining the base price.
 
 | Product type | Industries | How base prices are determined |
 |---|---|---|
-| Traded items that you procure and then sell | Retail, distribution | <ul><li>Unified pricing management calculates item base prices based on prices that are found on the **Base price versions** page.</li><li>Item base prices are calculated by using the following formula: *Base price* = *Vendor list price* &plusmn; *Vendor price term agreement*.<li>If several calculated prices apply to the same item, the price engine always selects the *lowest* price as the item base price.</li><li>You can activate a calculated item base price. The price engine will then use that calculated price as the base price.</li></ul> |
-| Manufactured items (with BOMs) that use the standard cost model | Manufacturing | <ul><li>Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management can calculate and activate item cost prices based on [costing versions](../cost-management/costing-versions.md).</li><li>Item base prices don't have to be maintained on the **Base price versions** page.</li><li>The price engine will use the active item cost price as the base price.</li><li>Item selling prices are calculated by using the following formula: *Selling price* = *Active calculated item cost (base price)* &plusmn; *Margin component price adjustments*.</li></ul> |
-| Manufactured items (with BOMs) that don't use the standard cost model | Manufacturing | <ul><li>Item base prices are defined on the **Base price versions** page.</li><li>The price engine will use the active item base price as the base price.</li></ul> |
+| Traded items that you procure and then sell | Retail, distribution | <ul><li>Unified pricing management calculates item base prices based on prices found on the **Base price versions** page.</li><li>IBase prices are calculated by using the following formula: *Base price* = *Vendor list price* &plusmn; *Vendor price term agreement*.<li>If several calculated prices apply to the same item, the price engine always selects the *lowest* price as the item base price.</li><li>You can activate a calculated item base price. The price engine then uses that calculated price as the base price.</li></ul> |
+| Manufactured items (with BOMs) that use the standard cost model | Manufacturing | <ul><li>Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management can calculate and activate item cost prices based on [costing versions](../cost-management/costing-versions.md).</li><li>You don't have to maintain item base prices on the **Base price versions** page.</li><li>The price engine uses the active item cost price as the base price.</li><li>Item selling prices are calculated by using the following formula: *Selling price* = *Active calculated item cost (base price)* &plusmn; *Margin component price adjustments*.</li></ul> |
+| Manufactured items (with BOMs) that don't use the standard cost model | Manufacturing | <ul><li>Item base prices are defined on the **Base price versions** page.</li><li>The price engine uses the active item base price as the base price.</li></ul> |
 
 ## Base price determination exception
 
-As has been mentioned, the base price is a common price at the SKU level. A price differentiation strategy is often applied when a price manager negotiates with a customer to set up a special price for a specific group of products for a specific date range. These prices should be recorded as *sales trade agreement prices*. Sales trade agreement prices take priority over base prices.
+As mentioned earlier, the base price is a common price at the SKU level. A price differentiation strategy is often applied when a price manager negotiates with a customer to set up a special price for a specific group of products for a specific date range. Record these prices as *sales trade agreement prices*. Sales trade agreement prices take priority over base prices.
 
-The following table shows how sales trade agreements are related to selling prices.
+The following table shows how sales trade agreements relate to selling prices.
 
 | Do applicable margin component price adjustments exist? | Sales price calculation |
 |---|----|
@@ -61,7 +61,7 @@ The following table shows how sales trade agreements are related to selling pric
 > [!NOTE]
 > To use sales trade agreement prices, your price structure must include a price component code where the **Price component** field is set to *Sales trade agreement*.
 
-The following tables shows an example of a [price structure](upm-price-structure-overview.md) that includes a sales trade agreement.
+The following table shows an example of a [price structure](upm-price-structure-overview.md) that includes a sales trade agreement.
 
 | Pricing sequence | Price component code | Price component type | Description | Price details on the sales order |
 |---|---|---|---|---|

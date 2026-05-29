@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 5/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -22,7 +22,7 @@ This article explains how to use the Approvals Management mobile app to approve,
 To manage purchasing requests from the Approvals Management mobile app, you must meet the following requirements:
 
 - You must sign in to Microsoft Power Apps by using a domain account, and that domain account must match a user account in Dynamics 365 Supply Chain Management that has the same Microsoft Entra ID user name.
-- Your user account in Supply Chain Management must be assigned the required security roles for the types of approvals that you must manage. Learn more in [Set up user accounts to manage approvals in Supply Chain Management](developer/onboard-approval-app.md#roles-approvals).
+- Your user account in Supply Chain Management must be assigned the required security roles for the types of approvals that you must manage. For more information, see [Set up user accounts to manage approvals in Supply Chain Management](developer/onboard-approval-app.md#roles-approvals).
 
 ## Home page
 

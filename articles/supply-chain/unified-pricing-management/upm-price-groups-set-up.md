@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: GUPPriceGroupApplicability
 ms.topic: how-to
-ms.date: 10/25/2024
+ms.date: 5/27/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,9 +15,9 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-To create and manage the [price groups](upm-price-groups-overview.md) that you can associate with attributes, follow these steps:
+To create and manage [price groups](upm-price-groups-overview.md) that you can associate with attributes, follow these steps:
 
-1. Go to **Pricing management** \> **During-sales pricing** \> **Price groups** \> **All price groups**.
+1. Go to **Pricing management** > **During-sales pricing** > **Price groups** > **All price groups**.
 1. Follow one of these steps:
 
     - To create a new price group, select **New** on the Action Pane.
@@ -36,7 +36,7 @@ To create and manage the [price groups](upm-price-groups-overview.md) that you c
 
     - Set the **Price attribute group** field to the [price attribute group](upm-price-attribute-groups.md) that you want to use with the price group. The grid is then updated to show the attributes that belong to the selected price attribute group.
     - For each attribute in the grid, select an appropriate value in the **Value** field.
-    - Set the **Enable multiple selections** option to *Yes* to allow multiple values to be defined for each row. If more than one value is defined for a row, the values must be separated by commas. The system combines the values by using an *OR* operator.
+    - Set the **Enable multiple selections** option to *Yes* to allow multiple values for each row. If you define more than one value for a row, separate the values with commas. The system combines the values by using an *OR* operator.
 
 1. To view the list of trade agreement lines that the current price group was assigned to, select the **Trade agreement lines** FastTab.
 1. To view and edit the price adjustments that apply to the current price group, select the **Price adjustments** FastTab. Then use the buttons on the toolbar to add or remove price adjustments as you require.

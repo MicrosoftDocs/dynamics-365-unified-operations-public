@@ -42,9 +42,9 @@ For the partial cycle count process, the **Last cycle count** date and time aren
 
 For this example, only item number A0001 is counted in warehouse 61.
 
-1. A new work template for cycle counting is created. The **Work line breaks** option is used to group counting work lines by item number. Therefore, the cycle counting work that is created will have lines per item number. You can also group the lines by product variant number.
+1. A new work template for cycle counting is created. Use the **Work line breaks** option to group counting work lines by item number. Therefore, the cycle counting work has lines per item number. You can also group the lines by product variant number.
 1. A new cycle counting plan is created that references the newly created work template. The cycle counting plan includes all locations in warehouse 61 (**Select locations** query) that hold inventory for item number A0001. The selection of specific products is defined in the **Cycle count product selections** section.
-1. You can select products for cycle counting plans by setting the **Empty locations** field to **Exclude empty**. When the cycle counting plan is processed, partial cycle count work for item number A0001 is created. The actual counting process can be performed by using a mobile device menu item for guided cycle counting.
+1. Select products for cycle counting plans by setting the **Empty locations** field to **Exclude empty**. When the cycle counting plan is processed, the partial cycle count work for item number A0001 is created. You can perform the actual counting process by using a mobile device menu item for guided cycle counting.
 
 ## Related information
 

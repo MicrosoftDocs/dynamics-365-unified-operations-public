@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 10/25/2024
+ms.date: 5/18/2026
 ms.custom: 
   - bap-template
 ---
@@ -16,7 +16,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-A *price group* is a flexible tool that enables businesses to manage and adjust their pricing strategies across a wide range of attributes, including sales channels, customer groups, order types, and delivery methods. The power of a price group lies in its ability to logically bundle these attributes together, so that businesses can consistently apply pricing rules and promotions across multiple entities without having to modify individual trade agreements, discount setups, or pricing components. This flexibility is valuable in both Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management, where pricing must adapt quickly to changing business conditions but also maintain consistency across various settings.
+A *price group* is a flexible tool that enables businesses to manage and adjust their pricing strategies across a wide range of attributes. These attributes include sales channels, customer groups, order types, and delivery methods. The power of a price group lies in its ability to logically bundle these attributes together. Businesses can consistently apply pricing rules and promotions across multiple entities without having to modify individual trade agreements, discount setups, or pricing components. This flexibility is valuable in both Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management, where pricing must adapt quickly to changing business conditions but also maintain consistency across various settings.
 
 In Commerce, price groups offer a crucial level of flexibility for businesses that must run promotions or adjust pricing for specific customer segments or sales channels. For example, a retail company wants to launch a promotion that targets specific stores or e-commerce channels. By creating a price group, the retailer can easily apply the promotion across those stores and channels. In addition, the company can add stores to the promotion, or remove stores from it, without changing the underlying trade agreements or discount configurations. This ease of adjustment ensures that the company can quickly react to market trends or customer behavior, and that it can maintain the efficiency of its pricing strategy without having to do complex reconfiguration.
 
@@ -26,7 +26,7 @@ Because of the flexibility that price groups provide, companies can make quick, 
 
 ## Price groups in Microsoft finance and operations apps
 
-Price groups classify products or services based on their price level. Therefore, they give companies a flexible way to manage and adjust pricing strategies. Retailers, wholesalers, and manufacturers can segment their target markets and define different prices for different customers.
+Price groups classify products or services based on their price level. They give companies a flexible way to manage and adjust pricing strategies. Retailers, wholesalers, and manufacturers can segment their target markets and define different prices for different customers.
 
 Price groups are used to calculate prices in Supply Chain Management and Commerce, and attribute-based pricing management.
 
@@ -48,14 +48,14 @@ Price groups are optional in Unified pricing management.
 In the **Unified pricing management** module, price groups can be used to implement price discrimination strategies. For example, different prices can be charged for the same product, depending on the time of purchase, the location of the customer, or the demand conditions.
 
 > [!NOTE]
-> Price groups are typically used in Commerce because they suit the way that Commerce users are accustomed to working. However, they are completely optional. Depending on the pricing scenarios that you want to implement, you might decide not to use price groups, especially if you use only Supply Chain Management.
+> Price groups are typically used in Commerce because they suit the way that Commerce users are accustomed to working. However, they're completely optional. Depending on the pricing scenarios that you want to implement, you might decide not to use price groups, especially if you use only Supply Chain Management.
 
 Price groups can be defined in the following ways:
 
 - Price groups can be used to define strategies that are associated with attributes.
 - Only price groups that have no attributes associated with them can be used as attributes in header attribute groups.
 
-The following illustration shows how price groups relate price attributes to prices, margin adjustments, and discounts. Notice that the price group is centrally positioned in pricing and discount management. The left side of the illustration shows the attributes and commerce entities that are used to manage differential prices (channels, affiliations, and loyalty programs) and discounts. The right side shows the areas where price groups can be configured in price and discount records.
+The following illustration shows how price groups relate price attributes to prices, margin adjustments, and discounts. The price group is centrally positioned in pricing and discount management. The left side of the illustration shows the attributes and commerce entities that are used to manage differential prices (channels, affiliations, and loyalty programs) and discounts. The right side shows the areas where price groups can be configured in price and discount records.
 
 :::image type="content" source="media/price-groups-diagram.png" alt-text="Diagram that shows how price groups are used." lightbox="media/price-groups-diagram.png":::
 
@@ -67,7 +67,7 @@ In Unified pricing management, price groups provide the following functionality:
 - Establish priorities. After price groups are configured with attribute association, ranks that are assigned to the price groups take priority over ranks that are assigned in other places.
 
 > [!NOTE]
-> Price groups can't currently be used with Commerce catalogs.
+> You can't currently use price groups with Commerce catalogs.
 
 ## Benefits of price groups
 
@@ -75,7 +75,7 @@ In Unified pricing management, price groups provide the following functionality:
 
 - **Flexibility** – Price groups provide a flexible way to manage pricing strategies across various attributes, such as customer segments, channels, order types, and more. Therefore, businesses can quickly adapt without having to modify individual trade agreements or discount setups. Currently, only pricing header attributes are supported. However, we plan to extend support to pricing line attributes.
 - **Unified nature** – Price groups offer significant value for Commerce customers. They enable efficient management of dynamic promotions, channel-specific pricing strategies, affiliations programs, and loyalty programs. In Supply Chain Management, price groups bring similar benefits by simplifying pricing strategies for key attributes, such as customer segments, order types, and delivery methods. Therefore, they provide the flexibility to make adjustments without having to reconfigure underlying pricing structures.
-- **Versatility** – Price attribute groups are linked to specific price components, and their configuration isn't easily changed after they are enabled. By contrast, price groups provide a versatile and flexible way to dynamically adjust prices on top of the established setup. Additionally, price groups aren't mandatory. Therefore, businesses can decide whether to use them, based on their specific needs and complexity.
+- **Versatility** – Price attribute groups are linked to specific price components, and their configuration isn't easily changed after they're enabled. By contrast, price groups provide a versatile and flexible way to dynamically adjust prices on top of the established setup. Additionally, price groups aren't mandatory. Therefore, businesses can decide whether to use them, based on their specific needs and complexity.
 - **Capability to make dynamic adjustments** – As business needs evolve, pricing attributes can be modified to reflect changes in strategy. For example, new channels can be introduced, or loyalty programs can be expanded. Unified pricing management simplifies the implementation of these changes without disrupting the overall pricing strategies.
 - **Consistency across platforms** – The unified approach ensures that pricing strategies are consistently applied across all touch points in both Supply Chain Management and Commerce.
 
