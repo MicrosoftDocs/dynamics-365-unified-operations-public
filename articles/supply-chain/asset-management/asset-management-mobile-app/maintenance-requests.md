@@ -4,7 +4,7 @@ description: Learn how to use the Asset Management mobile app to file maintenanc
 author: jodahlMSFT
 ms.author: jodahl
 ms.topic: how-to
-ms.date: 09/19/2023
+ms.date: 05/29/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -13,6 +13,8 @@ ms.search.form:
 # File maintenance requests using the Asset Management mobile app
 
 [!include [banner](../../includes/banner.md)]
+
+[!INCLUDE [asset-management-sample-app](../../includes/asset-management-sample-app.md)]
 
 You can use the Asset Management mobile app to file maintenance requests.
 
