@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 05/29/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,8 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-> [!IMPORTANT]
-> The Asset Management mobile app is now available as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). Same functionality, freely customizable. For timeline and transition guidance, see [Asset Management mobile app open-source release](open-source-release.md).
+[!INCLUDE [asset-management-sample-app](../../includes/asset-management-sample-app.md)]
 
 Maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders. The app supports maintenance workers through the following main capabilities:
 

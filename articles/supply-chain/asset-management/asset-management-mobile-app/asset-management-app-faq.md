@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: faq
-ms.date: 06/17/2025
+ms.date: 05/29/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,8 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-> [!IMPORTANT]
-> The Asset Management mobile app is now available as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). Same functionality, freely customizable. For timeline and transition guidance, see [Asset Management mobile app open-source release](open-source-release.md).
+[!INCLUDE [asset-management-sample-app](../../includes/asset-management-sample-app.md)]
 
 This article provides answers to several frequently asked questions (FAQs) about the Asset Management mobile app. It also describes a few known issues that affect the app and how to work around them.
 
@@ -34,7 +33,7 @@ The Asset Management mobile app requires Supply Chain Management version 10.0.36
 
 ## <a name="customize"></a>Can I customize and extend the app?
 
-Yes — the source code is now available as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement) and can be customized freely. See [Asset Management mobile app open-source release](open-source-release.md) for guidance.
+Yes — the source code is now available as an open-source sample on GitHub at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement) and can be customized freely. See [Asset Management mobile app open-source release](open-source-release.md) for guidance.
 
 ## Does the app support offline mode?
 
@@ -73,7 +72,7 @@ The update process fails with an error if it detects that the Asset Management m
 Consider cloning the canvas app before removing your customizations, just in case you want to copy the customizations to the updated app.
 
 > [!NOTE]
-> For canvas-app customizations that need to survive updates, use the [open-source release](open-source-release.md) rather than editing in Power Apps Studio.
+> For canvas-app customizations that need to be preserved across official updates, use the [open-source release](open-source-release.md) rather than editing in Power Apps Studio.
 
 ## Are there any known issues affecting the release of the Asset Management mobile app?
 
