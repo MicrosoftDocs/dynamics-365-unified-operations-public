@@ -4,7 +4,7 @@ description: Learn how to continue using the deprecated master planning engine f
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 05/05/2026
+ms.date: 5/29/2026
 ms.custom: bap-template
 ai-usage: ai-assisted
 ms.reviewer: kamaybac
@@ -29,7 +29,7 @@ Starting with release 10.0.32, you must install the Planning Optimization Add-in
 
 When you try to set **Disable all planning processes** to *No* on the **Master planning parameters** page without the Planning Optimization Add-in installed, you receive one of the following error messages:
 
-> To enable all planning processes please first follow these instructions https://go.microsoft.com/fwlink/?linkid=2219798 Then, return to this page and enable the parameter.
+> To enable all planning processes, first follow the instructions provided in [Get started with master planning](planning-optimization/get-started.md). Then return to this page and enable the parameter.
 
 or
 
@@ -52,7 +52,7 @@ Follow these steps to set a company to continue to use the deprecated master pla
 1. Go to **Master planning \> Setup \> Planning Optimization parameters**.
 1. Open the **Company information** tab.
 
-    [<img src="media/exclude-company-from-po.png" alt="Screenshot of the Company information tab." title="Screenshot of the Company information tab" width="350" />](media/exclude-company-from-po.png#lightbox)
+    :::image type="content" source="media/exclude-company-from-po.png" alt-text="Screenshot of the Company information tab." lightbox="media/exclude-company-from-po.png":::
 
 1. Set **Exclude company from running Planning Optimization** to one of the following values
     - *Yes* – Use the deprecated master planning engine for this company.

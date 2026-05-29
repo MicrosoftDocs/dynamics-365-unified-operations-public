@@ -4,7 +4,7 @@ description: Learn how to fix compatibility issues between the Warehouse Managem
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 5/21/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -42,4 +42,4 @@ To configure your mobile device to use this feature, look for the following sett
 
 ## Verify your configuration
 
-After configuring intent output, test the setup by scanning a known bar code on a field in the Warehouse Management mobile app. If the scanned value appears correctly in the field, the configuration is working. If the field remains empty or shows unexpected characters, review the intent settings on your device and ensure that keystroke output is disabled.
+After configuring intent output, test the setup by scanning a known barcode on a field in the Warehouse Management mobile app. If the scanned value appears correctly in the field, the configuration is working. If the field remains empty or shows unexpected characters, review the intent settings on your device and ensure that keystroke output is disabled.

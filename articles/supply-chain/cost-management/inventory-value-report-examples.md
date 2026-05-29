@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 12/02/2024
+ms.date: 5/19/2026
 ms.custom: 
   - bap-template
 ---
@@ -63,7 +63,7 @@ The example system includes an inventory value report configuration that has the
 
 ## Inventory value report example 1
 
-The following table and illustrations show the results when you use the sample data and report configuration that are described earlier in this article.
+The following table and illustrations show the results when you use the sample data and report configuration described earlier in this article.
 
 | Resource type | Resource | Site | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount | Average unit cost |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -84,7 +84,7 @@ The following illustration shows the **Inventory value report storage** report 
 
 ## Inventory value report example 2
 
-The following table and illustrations show the results when you use the sample data that is described earlier in this article, but you change the value of the **Level** field to *Transactions* in the report configuration, and you set the **From date** field to *March 15* when you run the report.
+The following table and illustrations show the results when you use the sample data described earlier in this article, but you change the value of the **Level** field to *Transactions* in the report configuration, and you set the **From date** field to *March 15* when you run the report.
 
 | Resource type | Resource | Site | Date | Number | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -114,7 +114,7 @@ The following illustration shows the **Inventory value report storage** report 
 
 ## Inventory value report example 3
 
-We recommend that you run inventory value reports after recalculation or inventory closing, so that you have the transactions and amounts that are affected by the recalculation or inventory closing.
+Run inventory value reports after recalculation or inventory closing, so that you have the transactions and amounts affected by the recalculation or inventory closing.
 
 The following subsections show the inventory value reports that are generated after you close inventory until May 30.
 
@@ -129,7 +129,7 @@ The following table shows the results when you use the sample data and report co
 
 ### Example 3 when the Transactions level is used
 
-The following table shows the results when you use the sample data that is described earlier in this article, but you change the value of the **Level** field to *Transactions* in the report configuration.
+The following table shows the results when you use the sample data described earlier in this article, but you change the value of the **Level** field to *Transactions* in the report configuration.
 
 | Resource type | Resource | Site | Date | Number | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount |
 |---|---|---|---|---|---|---|---|---|---|---|---|
