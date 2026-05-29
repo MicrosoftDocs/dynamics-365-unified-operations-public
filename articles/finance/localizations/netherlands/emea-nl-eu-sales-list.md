@@ -32,13 +32,15 @@ To set up XML namespaces for the EU sales list in XML, follow these steps:
 1. In Dynamics 365 Finance, go to **Workspaces** > **Electronic reporting**, and import version 1.10 or higher of the format, **EU Sales list (NL).** For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 1. Select **Configurations** > **Application specific parameters setup**.
 1. On the **Lookups** FastTab, select **XMLNamespaces**.
-1. On the **Conditions** FastTab, define the path to the XSD schema and the paths to the schema instances, **SchemaInstanceData** and **SchemaInstanceTuples**.
+1. On the **Conditions** FastTab, define the path to the XSD schema and the paths to the schema instances valid as of NT20.
 
-    | **Name**             | **Lookup result**                                                                 |
-    |----------------------|-----------------------------------------------------------------------------------|
-    | XSDSchema            | http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-icp-opgaaf-2021.xsd |
-    | SchemaInstanceData   | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data.xsd                  |
-    | SchemaInstanceTuples | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples.xsd                 |
+| Lookup result                                                                 | Name                 |
+|-------------------------------------------------------------------------------|---------------------------|
+| http://www.nltaxonomie.nl/nt20/bd/20251210/entrypoints/bd-rpt-icp-opgaaf-2026.xsd | XSDSchema                 |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-axes                  | SchemaInstanceAxes        |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/dictionary/bd-data                | SchemaInstanceData        |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-domains             | SchemaInstanceDomains     |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/dictionary/bd-domain-members      | SchemaInstanceMembers     |
 
 For more information about how to get the values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy).
 
