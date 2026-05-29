@@ -109,7 +109,7 @@ To review affected transactions, block selected transactions, and send related n
     - **Notify preparer** – This button is available only on the **Purchase requisition** tab. Select it to send a change notification to the user who is set as the preparer of the selected purchase requisition. For more information about who can see the notifications and how, see [Review and process change notifications for transactions](#review-notifications).
     - **Notify sales responsible** – This button is available only on the **Quotations** tab. Select it to send a change notification to the user who is set as responsible for the selected quotation. For more information about who can see the notifications and how, see [Review and process change notifications for transactions](#review-notifications).
     - **Scrap** – This button is available only on the **Inventory** tab. Select it to scrap the selected inventory.
-    - **View history** – Opens a history of actions that are taken on the selected transaction by using the **Business impact to open transactions** dialog box. (For example, the history shows whether notifications are sent or transactions are blocked.) 
+    - **View history** – Opens a history of actions that are taken on the selected transaction by using the **Business impact to open transactions** dialog box. (For example, the history shows whether notifications are sent or transactions are blocked.)
     - **View all transactions** – Opens the full list of all transactions, not just the open transactions.
 
 > [!IMPORTANT]

@@ -29,7 +29,7 @@ Starting with release 10.0.32, you must install the Planning Optimization Add-in
 
 When you try to set **Disable all planning processes** to *No* on the **Master planning parameters** page without the Planning Optimization Add-in installed, you receive one of the following error messages:
 
-> To enable all planning processes please first follow these instructions https://go.microsoft.com/fwlink/?linkid=2219798 Then, return to this page and enable the parameter.
+> To enable all planning processes, first follow the instructions provided in [Get started with master planning](planning-optimization/get-started.md). Then return to this page and enable the parameter.
 
 or
 

@@ -74,5 +74,4 @@ A report that shows information about the country/region of origin of each part 
 
 :::image type="content" source="media/country-of-origin-report.png" alt-text="Screenshot of the country of origin report.":::
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

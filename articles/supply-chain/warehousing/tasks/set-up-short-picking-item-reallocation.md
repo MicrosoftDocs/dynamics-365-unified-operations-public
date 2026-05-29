@@ -31,7 +31,7 @@ Define several work exceptions with different item reallocation policies so the 
 This procedure uses the USMF demo data company.
 
 1. Go to **Warehouse management > Setup > Work > Work exceptions**.
-1. Select **New**. 
+1. Select **New**.
 1. In the **Work exception code** field, enter a value. This value is the title of the exception. For example, Short picking manual.
 1. In the **Description** field, enter a value. This value is a short description of the usage of this exception. For example, Short picking - item not available.
 1. In the **Exception** type field, select **Short pick**.
@@ -51,6 +51,5 @@ This procedure uses the USMF demo data company.
 1. In the list, select a **User ID**. For example, 24.
 1. Expand the **Work** FastTab.
 1. Select **Yes** in the **Allow manual item reallocation** field.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

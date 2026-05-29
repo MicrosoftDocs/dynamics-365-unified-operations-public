@@ -98,7 +98,7 @@ Use *counting reason code groups* as part of the *Adjustment in* and *Adjustment
 1. On the Action Pane, select **New** to add a group.
 1. Set the **Counting reason group** and **Group description** fields for the new group.
 1. On the Action Pane, select **Save**.
-1. In the **Details** section, select **New** on the toolbar to add a row to the grid. Then set the **Counting reason code** field for the new row. 
+1. In the **Details** section, select **New** on the toolbar to add a row to the grid. Then set the **Counting reason code** field for the new row.
 1. Repeat the previous step to assign more codes as required. To remove a code from the group, select it, and then select **Delete** on the toolbar.
 
 ### Set up reason codes for mobile device menu items
@@ -155,7 +155,7 @@ To set up a mobile device menu item for adjustment in or adjustment out, follow 
         - *Hide* – Don't show the reason code.
 
     - **Edit counting reason code** – Set this option to *Yes* to allow the worker to edit the reason code when it's shown on the mobile device during counting. Set it to *No* to prevent the worker from editing the code.
-    - **Counting reason code group** – Select a reason code group if you want to limit the list of options that is presented to workers. For information about how to set up reason code groups, see the [Set up counting reason code groups](#reason-groups) section earlier in this article. 
+    - **Counting reason code group** – Select a reason code group if you want to limit the list of options that is presented to workers. For information about how to set up reason code groups, see the [Set up counting reason code groups](#reason-groups) section earlier in this article.
 
 > [!NOTE]
 > When you assign a counting reason code group to *Adjustment in* and *Adjustment out* menu items where the **Use process guide** option is set to *Yes*, you get a limited list of the counting reason codes as part of the processing in the Warehouse Management mobile app.

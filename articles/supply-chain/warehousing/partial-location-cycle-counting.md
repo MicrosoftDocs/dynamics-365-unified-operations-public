@@ -30,7 +30,10 @@ If you associate cycle count plans with work templates by using the **Work line 
 
 Before partial cycle count work can be processed, you must, at a minimum, select **Display item number** for the mobile device menu item as part of the cycle counting setup. The warehouse operator is asked to record only counting information that is related to the counting lines (item numbers and product dimensions). All other on-hand inventory is ignored for this counting process.
 
-For the partial cycle count process, the **Last cycle count** date/time aren't updated for the location, even though all the items on hand at a given location are counted. The partial cycle count doesn't consider the parameter **Days between cycle counting** on  the **Cycle count plans** page. Partial cycle count doesn't support simultaneous counting of multiple items at the same location. Partial cycle count functionality might result in the same location being counted multiple times for an item when **Process cycle counting plan** is run. To avoid that scenario, specify filters in the **Select locations** field.
+> [!NOTE]
+> If your mobile device menu item has **Directed by** set to *System directed*, you must also set up [system-directed work sequencing](system-directed-work-sequencing.md) for that menu item. Without at least one system-directed work sequence query, the mobile device returns *No work available* even when open cycle count work exists. The work classes on the menu item only filter the results returned by the sequence queries—they don't retrieve work on their own.
+
+For the partial cycle count process, the **Last cycle count** date and time aren't updated for the location, even though all the items on hand at a given location are counted. The partial cycle count doesn't consider the parameter **Days between cycle counting** on  the **Cycle count plans** page. Partial cycle count doesn't support simultaneous counting of multiple items at the same location. Partial cycle count functionality might result in the same location being counted multiple times for an item when **Process cycle counting plan** is run. To avoid that scenario, specify filters in the **Select locations** field.
 
 > [!NOTE]
 > The Warehouse Management mobile app doesn't provide the **Add LP or item** button when you use the partial cycle count process.

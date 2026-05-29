@@ -202,7 +202,7 @@ To enable workers to process unannounced returns, create a separate mobile devic
 1. Set the following fields for the new menu item:
 
     - **Menu item name** – Enter an internal name for the menu item, such as *Blind returns*.
-        - **Title** – Enter the name that should appear for the menu item in the mobile app, such as *Blind return item receiving*.
+    - **Title** – Enter the name that should appear for the menu item in the mobile app, such as *Blind return item receiving*.
     - **Mode** – Select *Work*.
     - **Use existing work** – Set this option to *No*.
     - **Work creation process** – Select *Return item receiving*.

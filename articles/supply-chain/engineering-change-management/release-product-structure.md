@@ -127,7 +127,7 @@ For each row shown on the **Option parameters for engineering products** FastTab
 | Template BOM | When a product that has a BOM is released, the lines of the specified template BOM are added. This field is useful for adding local components, such as packaging or instructions in the local language. |
 | Template route | When a product that has a route is released, the lines of the specified template are added. |
 | Copy effectivity | Select whether to copy effectivity dates from the engineering company to the operational company when you release products. |
-| Automatically add to release proposal | Select this check box for products that should automatically be released on the engineering change order. In this way, products that belong to engineering product categories that use this release policy can automatically be released to operational companies where this option is set up. (Learn more in [Manage changes to engineering products](engineering-change-management.md).)
+| Automatically add to release proposal | Select this check box for products that should automatically be released on the engineering change order. In this way, products that belong to engineering product categories that use this release policy can automatically be released to operational companies where this option is set up. (Learn more in [Manage changes to engineering products](engineering-change-management.md).) |
 
 ### Review each product when you release it
 

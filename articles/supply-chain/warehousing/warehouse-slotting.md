@@ -47,21 +47,21 @@ Unit-of-measure tiers enable you to group multiple units of measure together for
 1. On the new line, set the following values:
 
     - **Unit:** *Box*
-        - **Description:** Leave this field blank. It's filled in automatically when you save your changes.
+    - **Description:** Leave this field blank. It's filled in automatically when you save your changes.
     - **Unit class:** *Quantity*
 
 1. Select **New** to add a second line to the grid.
 1. On the new line, set the following values:
 
     - **Unit:** *ea*
-        - **Description:** Leave this field blank. It's filled in automatically when you save your changes.
+    - **Description:** Leave this field blank. It's filled in automatically when you save your changes.
     - **Unit class:** *Quantity*
 
 1. Select **New** to add a third line to the grid.
 1. On the new line, set the following values:
 
     - **Unit:** *PL*
-        - **Description:** Leave this field blank. It's filled in automatically when you save your changes.
+    - **Description:** Leave this field blank. It's filled in automatically when you save your changes.
     - **Unit class:** *Quantity*
 
 1. Select **Save** to save the tier.
@@ -110,8 +110,8 @@ Next, set up the template header, slotting specifications, and location directiv
     - **Warehouse selection** – Select one of the following values:
 
         - *All* – Use the slotting template for all warehouses.
-                - *Warehouse group* – Use the slotting template for all warehouses in the warehouse group selected in the **Warehouse group** field.
-                - *Warehouse* – Use the slotting template only for the specific warehouse selected in the **Warehouse** field.
+        - *Warehouse group* – Use the slotting template for all warehouses in the warehouse group selected in the **Warehouse group** field.
+        - *Warehouse* – Use the slotting template only for the specific warehouse selected in the **Warehouse** field.
 
     - **Warehouse** – If the **Warehouse selection** field is set to *Warehouse*, select the warehouse where the slotting template applies.
     - **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the slotting template applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).

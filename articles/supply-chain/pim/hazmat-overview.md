@@ -49,5 +49,4 @@ For more information about how to set up regulations and values for hazardous ma
 
 When you prepare a shipment in Warehouse management, you can print several new reports that use the information you set up in Product information management. For more information about the available reports and how to use them, see [Hazardous materials inquiries and reports](hazmat-reports.md).
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

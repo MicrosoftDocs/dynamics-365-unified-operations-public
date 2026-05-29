@@ -16,7 +16,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 This article explains the various options that can help you improve the performance of master planning or troubleshoot issues. It includes information about parameters and settings, as well as recommended configurations and actions. Also included is a summary of all the important parameters that you should consider when you have long-running master planning jobs.
 
-This article is intended for system admins or IT users who have the capability to troubleshoot. It's also intended for production or supply planners because it includes information about parameters that are related to business planning requirements. 
+This article is intended for system admins or IT users who have the capability to troubleshoot. It's also intended for production or supply planners because it includes information about parameters that are related to business planning requirements.
 
 ## Parameters related to master planning performance
 
@@ -24,7 +24,7 @@ Various parameters influence the running time of master planning and should be c
 
 ### Number of threads
 
-The **Number of threads** parameter lets you adjust the master scheduling process to help improve performance on the specific data set. This parameter specifies the total number of threads used to run master planning. It causes parallelization of the master planning run, which helps decrease the running time.  
+The **Number of threads** parameter lets you adjust the master scheduling process to help improve performance on the specific data set. This parameter specifies the total number of threads used to run master planning. It causes parallelization of the master planning run, which helps decrease the running time.
 
 Set the **Number of threads** parameter in the **Master planning run** dialog box. To open this dialog box, go to **Master planning \> Master planning \> Run \> Master planning**, or select **Run** in the **Master planning** workspace. To determine the best value for this parameter, use a trial-and-error process. However, you can use the following formulas to calculate an initial value:
 
@@ -44,7 +44,7 @@ Set the **Number of tasks in task bundle** parameter in the **Performance** sect
 
 In general, increase the number of tasks when the number of items is very large (in the hundreds of thousands). Otherwise, decrease the number of tasks. For the following specific industries, consider these recommendations:
 
-- In the retail and distribution industries where there are many independent items, use many helpers because there's no dependency between items. 
+- In the retail and distribution industries where there are many independent items, use many helpers because there's no dependency between items.
 - In the manufacturing industry where there are many bills of materials (BOMs) and shared subcomponents, use fewer helpers because dependencies between items might cause waiting times.
 
 > [!TIP]
@@ -121,18 +121,21 @@ To improve the master planning run time, you can choose to only include items wi
 You can find the **Automatically filter by items with direct demand** field on the **Master planning parameters** page. Use it with both pre-processing and post-processing settings.
 
 ### Pre-processing
+
 The **Pre-processing: Automatically filter by items with direct demand** parameter ensures that the pre-processing phase of master planning only includes items that fulfill at least one of the following conditions:
-  - The item has an expected receipt or issue, such as a purchase order, sales order, quote, transfer order, or production order. 
-  - The item has item coverage with safety stock (minimum on-hand inventory).
-  - Forecast demand after today exists for the item.
-  - Forecast supply after today exists for the item.
-  - The item includes any continuity lines from the call center module yet to be created.
+
+- The item has an expected receipt or issue, such as a purchase order, sales order, quote, transfer order, or production order.
+- The item has item coverage with safety stock (minimum on-hand inventory).
+- Forecast demand after today exists for the item.
+- Forecast supply after today exists for the item.
+- The item includes any continuity lines from the call center module yet to be created.
 
 > [!NOTE]
 > An item that has physically available on-hand inventory doesn't show a requirement transaction because there's no demand for the item.
 
 ### Post-processing
-The **Post-processing: Automatically filter by items with direct demand** option is only relevant if you set **BOM version requirement** in your coverage groups. Otherwise, you don't need to enable the parameter. 
+
+The **Post-processing: Automatically filter by items with direct demand** option is only relevant if you set **BOM version requirement** in your coverage groups. Otherwise, you don't need to enable the parameter.
 
 Before the coverage step starts, there's a pre-coverage step during which items with the coverage setting **BOM version requirement** enabled are reprocessed. This step ensures that items from the required BOM version are planned. Items that are considered to have demand during pre-processing no longer have any demand and therefore should be excluded from the planning run.
 
@@ -147,6 +150,5 @@ Before the coverage step starts, there's a pre-coverage step during which items 
 - **One heavy routine at a time** – Don't run master planning together with any other heavy routine.
 - **Review the session log.**
 - **Filtering of items** – Use the lifecycle state to exclude items from the master planning run. (Don't use the item numbers.)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,7 +69,6 @@ Follow these steps to create a container label layout.
     - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in a label layout are formatted.
     - **Printer stock type** – Select a *printer stock type*. A printer stock type typically describes the type of paper that a specific printer uses. It's also used to specify the type of paper that a specific label layout should be printed to. For information about how to set up printer stock types, see [Set up printer stock types](dynamic-printing-selection.md#stock-type).
 
-
 1. On the **Printer text Layout** FastTab, enter label code in a way that's appropriate for the selected definition type. The following example shows code that you can copy and paste for testing if the **Definition type** field is set to *ZPL*.
 
     ``` ZPL
@@ -132,7 +131,7 @@ Label templates let you design labels that have more advanced layouts, which can
 
 1. In the **Label layout data source ID** field, select a data source. You need a data source to enable label template support. However, if you need only container table data, you can select a very simple data source where no joins are defined.
 1. Set the **Enable label template support** option to *Yes*.
-1. Use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. Because it prints data about items that are packed in a container, you need to use a **Label layout data source ID** value that uses a query that joins to the container lines (container details). The data can be split among multiple pages to ensure that all data is printed if you have many container lines. In this example, a container ID bar code and six container lines are printed on the first page. Ten lines are printed per page. Each line contains information about the item, quantity, and unit. This setup is controlled by the `RowsPerLabelFirst=6` and `RowsPerLabel=10` attributes.    
+1. Use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. Because it prints data about items that are packed in a container, you need to use a **Label layout data source ID** value that uses a query that joins to the container lines (container details). The data can be split among multiple pages to ensure that all data is printed if you have many container lines. In this example, a container ID bar code and six container lines are printed on the first page. Ten lines are printed per page. Each line contains information about the item, quantity, and unit. This setup is controlled by the `RowsPerLabelFirst=6` and `RowsPerLabel=10` attributes.
 
     ``` ZPL
     {{LabelStart
@@ -245,10 +244,10 @@ To specify the container label layouts that are used and where they're printed, 
     - **Run query** – To add custom selection criteria to a routing record, set this option to *Yes*, and then select **Edit query** on the Action Pane. A standard query editor dialog box appears, where you can add more selection criteria.
 
     > [!NOTE]
-    > When you print a container label from the Warehouse Management mobile app, the current user's warehouse, location, worker ID, and user ID are passed as possible filter values for selecting the printer and layout. Other values are found based on the selected shipment.
-
-    > [!NOTE]
-    > When a worker prints a container label from the **Close container** dialog, their worker ID, packing station warehouse, and location are passed as possible filter values for selecting the printer and layout. Other values are found based on the selected shipment.
+    >
+    > - When you print a container label from the Warehouse Management mobile app, the current user's warehouse, location, worker ID, and user ID are passed as possible filter values for selecting the printer and layout. Other values are found based on the selected shipment.
+    >
+    > - When a worker prints a container label from the **Close container** dialog, their worker ID, packing station warehouse, and location are passed as possible filter values for selecting the printer and layout. Other values are found based on the selected shipment.
 
 1. On the **Container label routing printer** FastTab, assign the printer and label layout to use when the criteria for the routing record are met. Select **New** on the toolbar to add a line to the grid. Then set the following fields for the new line:
 

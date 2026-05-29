@@ -32,8 +32,7 @@ These regulations help determine what information shows when you print the shipp
 > [!IMPORTANT]
 > Setting up information codes that are related to hazardous materials doesn't make your company compliant with regulations. It's only a tool that helps you build processes for your company.
 
-Typically, a regulation is available for a specific mode of transport, such as sea freight, road freight, or air freight. Therefore, you can associate each regulation with a mode of delivery. The mode of delivery is used when specific documents are printed in Warehouse management. In Warehouse management, each shipment is linked to a shipping carrier and carrier service set up in the **Transportation** module. 
-The mode of delivery is associated with the shipping carrier and carrier service. When you run a report, the mode of delivery is used to find the shipping print text that is associated with a released item.
+Typically, a regulation is available for a specific mode of transport, such as sea freight, road freight, or air freight. Therefore, you can associate each regulation with a mode of delivery. The mode of delivery is used when specific documents are printed in Warehouse management. In Warehouse management, each shipment is linked to a shipping carrier and carrier service set up in the **Transportation** module. The mode of delivery is associated with the shipping carrier and carrier service. When you run a report, the mode of delivery is used to find the shipping print text that is associated with a released item.
 
 This setup data isn't specific to each legal entity (company). Therefore, you can have a common set of hazardous material information shared among all your legal entities.
 
@@ -193,7 +192,7 @@ Each compatibility group establishes a list of classes and divisions of hazardou
 
 Microsoft Dynamics 365 Supply Chain Management provides several types of hazardous material specifications. For each type, you must establish a centralized set of values for each relevant field. Users can then select among those values when they configure hazardous material definitions or released products. Supply Chain Management provides a collection of pages where you can establish the values. Each page is dedicated to one type of specification. For a description of each available specification and information about how to establish the values that are available for it, see the following subsections.
 
-One example of a hazardous material specification is the _stowage code_, which specifies how a given material can be stored during transport. By using the information in this section, you establish a central collection of stowage codes. This collection is presented to users in a drop-down list when they set the stowage code for a released product.
+One example of a hazardous material specification is the *stowage code*, which specifies how a given material can be stored during transport. By using the information in this section, you establish a central collection of stowage codes. This collection is presented to users in a drop-down list when they set the stowage code for a released product.
 
 These hazardous material specification values aren't specific to each legal entity, Therefore, you can have a set of common values that are shared among all your legal entities.
 
@@ -265,6 +264,5 @@ To set up values for this specification, go to **Product information management 
 The *Hazardous material tunnel* specification limits the types of tunnels that a hazardous material can be transported through by identifying the types of tunnels that must be used. Tunnel categories are established by applicable regulations for hazardous material transport. This specification usually applies only to road transport.
 
 To set up values for this specification, go to **Product information management > Setup > Hazardous material shipping documentation > Hazardous material tunnel**. On the **Hazardous material tunnel** page, you can create any number of tunnel identifiers and configure each with an identifying code and a short description.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

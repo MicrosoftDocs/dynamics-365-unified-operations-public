@@ -19,7 +19,7 @@ This procedure demonstrates how to process customer rebates from claim generatio
 ## Review a customer rebate agreement
 
 1. Go to **Sales and marketing > Customer rebates > Rebate agreements**.
-    - The next few steps look at the conditions of agreement USMF-000001. The conditions makes it easier to understand how the customer credit values are calculated later in the procedure.    
+    - The next few steps look at the conditions of agreement USMF-000001. The conditions makes it easier to understand how the customer credit values are calculated later in the procedure.
     - The agreement is for an individual customer, in this example customer US-009.  
     - Rebates are given to the customer when they purchase a specific product. In this case, the product has item number T0020.
     - The customer's sales performance, against which the rebate amounts are estimated, is to be accumulated on a weekly basis.  

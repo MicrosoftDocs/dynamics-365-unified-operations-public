@@ -28,6 +28,4 @@ This article describes how to classify a product using category hierarchies. Use
 1. In the **Category** field, enter or select a value.
 1. Close the page.
 
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

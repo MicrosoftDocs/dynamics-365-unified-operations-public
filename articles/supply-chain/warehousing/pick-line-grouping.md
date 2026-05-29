@@ -139,16 +139,12 @@ Before you can set up pick line grouping, you must create some eligible outbound
 > [!IMPORTANT]
 >
 > - You can group work lines only if they're in sequence.
+>
 > - The following functionality isn't supported:
->
->   - Catch-weight items
->
->    If there are any catch-weight items on the work, you receive an error message before you start to pick.
->
->   - Piece picking
->   - Work lines that have unfinished replenishment work
->   - Over-picking
->   - Short picking with item reallocation
-
+>     - Catch-weight items (If there are any catch-weight items on the work, you receive an error message before you start to pick.)
+>     - Piece picking
+>     - Work lines that have unfinished replenishment work
+>     - Over-picking
+>     - Short picking with item reallocation
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

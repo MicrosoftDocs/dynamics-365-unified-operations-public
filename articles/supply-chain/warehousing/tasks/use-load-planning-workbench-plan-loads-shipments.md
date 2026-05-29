@@ -35,7 +35,7 @@ This article shows how to use the outbound load planning workbench to create a l
 ## Create a new load
 
 1. Go to **Transportation management** > **Planning** > **Outbound load planning workbench**.
-1. Select the **Sales lines** tab. Now you build the load for the sales order that you just created. Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.    
+1. Select the **Sales lines** tab. Now you build the load for the sales order that you just created. Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.
 1. On the Action Pane, select **Supply and demand**.
 1. Select **To new load**.
 1. In the **Load template ID** field, select the drop-down button to open the lookup. The load template defines maximum measurements for weight and volume of the entire load. For example, the load template might represent the size of a container or truck. Select an item.

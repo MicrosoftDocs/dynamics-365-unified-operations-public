@@ -24,24 +24,22 @@ As part of the setup for each work user, you can also define specific process wo
 
 ## Defining labor standards
 
-The **Labor standards** page lets you define the calculation methods that the system uses to calculate the estimated time that a particular type of work should require. You can set this definition on a generic level or on a specific level. For example, you can define the time that should be required to process a sales order pick per weight for a specific unit definition when a specific picking process is used. At the same time, you can record the time, based on another calculation method, for the put operation of the on-hand inventory that is picked. 
+The **Labor standards** page lets you define the calculation methods that the system uses to calculate the estimated time that a particular type of work should require. You can set this definition on a generic level or on a specific level. For example, you can define the time that should be required to process a sales order pick per weight for a specific unit definition when a specific picking process is used. At the same time, you can record the time, based on another calculation method, for the put operation of the on-hand inventory that is picked.
 
 To enable the labor standards that you defined, select the **Allow labor standards** option for each warehouse where labor standards are used.
 
 ## Monitoring and controlling warehouse work
 
-Use the **All work** page to monitor and maintain all work that is planned, in progress, and completed. From this page, you can update various processes, such as warehouse work user assignments and work priority. You can also drill down into the details that are related to the work header and work lines to gain an understanding of the expected or completed work processes. 
+Use the **All work** page to monitor and maintain all work that is planned, in progress, and completed. From this page, you can update various processes, such as warehouse work user assignments and work priority. You can also drill down into the details that are related to the work header and work lines to gain an understanding of the expected or completed work processes.
 
 If you enable the **Labor standards** option, you can see the calculated estimated time for the work. When the work is processed, the actual time is shown for each work operation. In this way, you can compare the estimated time calculations to the actual time.  
 
-You can use the estimated time in the rules for automatically splitting work during work creation. In this way, you can load balance work, based on the expected time to complete the tasks. 
+You can use the estimated time in the rules for automatically splitting work during work creation. In this way, you can load balance work, based on the expected time to complete the tasks.
 
 Analyzing the time used to process work items can help drive improvements in the warehouse workers’ efficiency. The following reports are available to help with this analysis:
 
--  **Labor by user** – This report shows worker productivity, based on actual times against expected times.
+- **Labor by user** – This report shows worker productivity, based on actual times against expected times.
 
--  **Labor by work transaction type** – You can use this report to investigate inefficiencies in specific warehouse processes. For example, you notice that picks for transfer orders are taking longer this week than in previous weeks. You can then use this information for further investigation.
-
-
+- **Labor by work transaction type** – You can use this report to investigate inefficiencies in specific warehouse processes. For example, you notice that picks for transfer orders are taking longer this week than in previous weeks. You can then use this information for further investigation.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

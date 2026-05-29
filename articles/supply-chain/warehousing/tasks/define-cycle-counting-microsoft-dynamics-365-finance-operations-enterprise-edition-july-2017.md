@@ -10,12 +10,11 @@ ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 ---
 
-# Define cycle counting 
+# Define cycle counting
 
 [!include [banner](../../includes/banner.md)]
 
 Cycle counting is a warehouse process that you can use to audit on-hand inventory items. This task recording shows how to set up the default counting work priority, enable a mobile device menu item to process both picking and counting operations, enable a counting threshold trigger when a location becomes empty, and enable a cycle counting plan for a specific item in a specific warehouse. Typically, a warehouse manager performs these tasks. You can go through this procedure in the USMF demo data company or in your own data.
-
 
 ## Set the priority of counting work
 
@@ -34,7 +33,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 1. In the **Mode** field, select **Work**.
 1. Set the **Use existing work** option to **Yes**. When you set this option to **Yes**, the system looks for existing work when the mobile device menu item is used.  
 1. In the **Directed by** field, select **System directed**. When you select **System directed**, the warehouse worker is directed to open work that is in defined work classes. (You create these work classes next.)  
-1. Expand the **Work classes** FastTab. Next, you create two work classes to use with this mobile device menu item. When the menu item is used, these work classes are queried, and the work with the highest priority is shown to the user.    
+1. Expand the **Work classes** FastTab. Next, you create two work classes to use with this mobile device menu item. When the menu item is used, these work classes are queried, and the work with the highest priority is shown to the user.
 1. Select **New**.
 1. In the **Work class ID** field, select a value.
 1. Select **New**.
@@ -74,7 +73,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 1. In the list, select the row.
 1. In the **Criteria** field, select a value.
 1. Click **OK**.
-1. In the **Days between cycle counting** field, enter a number. For example, if you set the **Days between cycle counting** field to 5, the cycle counting work is created every five days. However, if cycle counting work is processed on day three, the next cycle counting work is created five days after the last cycle counting was processed, on day 8.    
+1. In the **Days between cycle counting** field, enter a number. For example, if you set the **Days between cycle counting** field to 5, the cycle counting work is created every five days. However, if cycle counting work is processed on day three, the next cycle counting work is created five days after the last cycle counting was processed, on day 8.
 1. Select **Save**.
 1. Select **New**.
 1. In the **Sequence number** field, enter a number. The sort is from the smallest number to the largest number. The value must be more than 0 (zero).  
@@ -86,7 +85,5 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 1. In the **Criteria** field, enter or select a value.
 1. Click **OK**.
 1. Close the page.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

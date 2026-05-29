@@ -14,7 +14,6 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-
 In the out-of-box implementation, users can't self-register for websites created by using the Customer portal. To sign in and use a website, users must be invited by the admin. Users are intentionally blocked from self-registering.
 
 Before a user can use a website, a contact record must be created for that user. This record indicates which customer account and legal entity the user belongs to. This information is essential for ensuring that the user can create and view sales orders.
@@ -86,6 +85,5 @@ The following table shows which sales orders the users in each web role can see 
 
 > [!NOTE]
 > Even though both Sam and Jane are contacts who work for customer X, they can see only the orders that they themselves have placed and nothing else. Although May has an order in the system but can't see that order in the Customer portal, because May is an unauthorized user. (Additionally, May must have placed the order through some channel other than the Customer portal.)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

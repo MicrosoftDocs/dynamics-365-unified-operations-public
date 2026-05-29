@@ -171,7 +171,7 @@ Work is now completed.
     - **Warehouse:** *61*
     - **Work status:** *Pending review*
 
-        Two work IDs should exist for these lines. The counts for both these work IDs must be accepted.
+    Two work IDs should exist for these lines. The counts for both these work IDs must be accepted.
 
 1. In the grid, select the first work ID for the *Cycle counting* work order type.
 1. On the Action Pane, on **Work** tab, in the **Work** group, select **Cycle counting**.

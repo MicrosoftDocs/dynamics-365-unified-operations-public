@@ -33,7 +33,7 @@ This article explains how to record receipt of goods directly on a purchase orde
 1. On the Action Pane, select **Receive**.
 1. Select **Product receipt**. The **Quantity** field allows you to select different options for the quantity that you want to receive. For example, if a quantity is previously registered in the warehouse, you can select *Registered quantity*. For this example, use the value *Ordered quantity*.
 1. Expand the **Overview** section.
-1. In the **Product receipt** field, type any value. Enter a reference used as voucher for the product receipt journal.    
+1. In the **Product receipt** field, type any value. Enter a reference used as voucher for the product receipt journal.
 1. Expand the **Lines** section.
 1. Set **Quantity** to *4*. Manually specify the quantity that you're receiving for each line on the order.  
 1. Select **OK**. The goods are now recorded as received on the purchase order, and a product receipt journal is created as document to reflect this. Use the **Product receipt** action to review the journals created with the purchase order, and see what was received, and when.  

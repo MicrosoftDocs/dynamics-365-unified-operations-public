@@ -52,7 +52,7 @@ To configure a product master to support unit conversion per variant, follow the
 
 > [!TIP]
 > You can open the **Unit conversions** page for a product or a product variant from any of the following pages:
-> 
+>
 > - Product details
 > - Released products details
 > - Released product variants
@@ -93,6 +93,5 @@ To export unit conversions to Excel, on the **Unit conversions** page, on the Ac
 ## Related information
 
 [Manage units of measure](tasks/manage-unit-measure.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

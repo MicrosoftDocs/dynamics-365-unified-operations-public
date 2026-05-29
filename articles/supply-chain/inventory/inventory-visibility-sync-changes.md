@@ -209,7 +209,7 @@ To view aggregated inventory transactions, follow these steps:
         - *DoNotSync* – The line isn't synced to Supply Chain Management. This status typically occurs because the inventory change quantity of the aggregated line is 0 (zero). (Because the inventory quantity wasn't changed, there's no need to sync it.)
         - *FnOSyncEnqueued* – Inventory Visibility sent a request to sync the line with Supply Chain Management. This status indicates that the record was synced in Supply Chain Management and is awaiting further processing.
         - *FnOTransCreated* – Supply Chain Management successfully processed the synchronization request and created the inventory journal.
-                - *FnOTransCreateError* – An error occurred during the attempt to create the inventory journal in Supply Chain Management. Use the message ID to check the error. Go to **Supply Chain Management** > **System administration workspace** > **Data Management IT** > **Recurring data jobs**.
+        - *FnOTransCreateError* – An error occurred during the attempt to create the inventory journal in Supply Chain Management. Use the message ID to check the error. Go to **Supply Chain Management** > **System administration workspace** > **Data Management IT** > **Recurring data jobs**.
         - *FnOTransPosted* – The inventory journal was successfully posted.
         - *FnOTransPostError* – Inventory journal posting failed.
 

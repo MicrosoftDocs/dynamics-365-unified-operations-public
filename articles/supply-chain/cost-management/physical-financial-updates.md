@@ -44,7 +44,6 @@ Transactions that increase quantity are posted at the running average cost price
 ## Transactions that decrease quantity
 
 The calculated running average cost price is used when a transaction that decreases quantity is posted, regardless of the inventory model associated with that inventory. The transaction that decreases quantity shouldn't marked to another transaction before it's posted. If the physical on-hand inventory becomes negative, the inventory cost defined for the item on the **Item** page is used.
-Press Ctrl+Enter to confirm, Escape to cancel
 
 > [!NOTE]
 > If multisite functionality is enabled, this cost is the inventory cost defined for a site on the **Default order settings** page.

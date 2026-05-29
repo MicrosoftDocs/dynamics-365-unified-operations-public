@@ -44,7 +44,7 @@ This section describes the pages, commands, and features that are part of the *S
 
 Policies are differentiated by work order type. The **Sales orders** type represents *Sales order* shipments, the **Transfer orders** type represents *Transfer issue* shipments, and the **Outbound shipment order** type represents *Outbound shipment order* shipments.
 
-Every shipment consolidation policy has a query that defines when it's applied and a sequence number that determines the execution order. Consolidation is applied for each unique combination of the selected fields. An additional parameter, which is provided, is used for consolidation with existing (open) shipments. The policies are evaluted and applied every time that a new shipment is created (before wave processing).
+Every shipment consolidation policy has a query that defines when it's applied and a sequence number that determines the execution order. Consolidation is applied for each unique combination of the selected fields. An additional parameter, which is provided, is used for consolidation with existing (open) shipments. The policies are evaluated and applied every time that a new shipment is created (before wave processing).
 
 If a policy is missing any mandatory fields, or if it includes any prohibited fields, the policy is marked as not valid in the **Selected** section. The lists of mandatory and prohibited fields are hard-coded and can be extended.
 

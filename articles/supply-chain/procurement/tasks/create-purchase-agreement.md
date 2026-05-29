@@ -44,7 +44,7 @@ This article shows you how to create a purchase agreement. Typically, a purchasi
 1. In the **Quantity** field, enter a number. This number is the total quantity that you agree to buy from your vendor.  
 1. In the **Unit price** field, enter a number.
 1. Expand the **Line details** section.
-1. Set the **Max is enforced** option to *Yes*. The **Max is enforced** option limits the use of the commitment. You can only purchase up to the quantity specified in the **Quantity** field for the line.    
+1. Set the **Max is enforced** option to *Yes*. The **Max is enforced** option limits the use of the commitment. You can only purchase up to the quantity specified in the **Quantity** field for the line.
 
 ## Add header conditions
 

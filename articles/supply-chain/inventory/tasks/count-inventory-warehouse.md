@@ -33,7 +33,7 @@ This article describes the process of creating and posting an inventory counting
 1. In the **Site** field, select the desired record from the drop-down list. If you're using demo data company USMF, select site *2*.
 1. In the **Warehouse** field, select the desired record from the drop-down list. If you're using demo data company USMF, select warehouse *24*.  
 1. In the **Location** field, select the desired record from the drop-down list. If you're using demo data company USMF, select location *BULK-001*.  
-1. In the **Counted** field, enter a number. If you enter a counted number that's different from the number shown in the **On-hand** field, the **Quantity** field is updated to show the discrepancy.    
+1. In the **Counted** field, enter a number. If you enter a counted number that's different from the number shown in the **On-hand** field, the **Quantity** field is updated to show the discrepancy.
 1. Select **Save**.
 
 ## Post the inventory counting journal

@@ -42,17 +42,17 @@ On the **Warehouse app field priority** page, you can organize field names into 
 
 For example, when a warehouse worker is performing a task on a mobile device, if the metadata that will be displayed in the app consists of the following fields:
 
--   Item
--   Quantity
--   Unit of measure
--   Item description
--   Size and Location
+- Item
+- Quantity
+- Unit of measure
+- Item description
+- Size and Location
 
 Based on the warehouse app field priority set up in the table above, the following three rows of information will be displayed on the task page:
 
--   Row 1: Item, Quantity, Unit of measure
--   Row 2: Item description
--   Row 3: Size
+- Row 1: Item, Quantity, Unit of measure
+- Row 2: Item description
+- Row 3: Size
 
 The remaining metadata, such as Location, doesn't appear on the task page, but it appears on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing Dynamics 365 Supply Chain Management - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 

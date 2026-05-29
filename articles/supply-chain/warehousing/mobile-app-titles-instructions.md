@@ -59,8 +59,8 @@ To customize the title and/or instruction for a step in any number of languages,
 
     - **Menu item name** – Rows where this column is blank use the default step title and instruction that apply to all mobile device menu items that no override is defined for. Rows where this column is set to the name of a menu item have overrides that apply only to the specified menu item.
     - **Step ID** – The unique ID of the step.
-        - **Title for input** – The title that appears when the app requests new information. Typically, the fields on the page are blank (that is, they have no preset values).
-        - **Title for confirmation** – The title that appears when the app requests confirmation of a value that's already stored in the system. Typically, the fields on the page have preset values.
+    - **Title for input** – The title that appears when the app requests new information. Typically, the fields on the page are blank (that is, they have no preset values).
+    - **Title for confirmation** – The title that appears when the app requests confirmation of a value that's already stored in the system. Typically, the fields on the page have preset values.
 
 1. Find the combination of **Step ID** and **Menu item name** values that you want to edit, and select the value in the **Step ID** column. The page that opens lists all the available translations for the title and instruction of the selected step.
 1. Follow one of these steps to customize the text for any language. Both options let you edit texts for existing languages. However, only the first option lets you add texts for new languages, whereas only the second option lets you view and edit texts for all existing menu-specific overrides of the selected language.

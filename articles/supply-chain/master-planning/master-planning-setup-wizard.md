@@ -20,7 +20,6 @@ This article provides a guide for the **Master planning setup wizard**. It expla
 
 The [Master planning setup wizard in Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
-
 ## Specific requirements of your company
 
 The first page of the wizard asks about the specific requirements of your company. Your answers to these questions don't have to be exact, but you should be able to provide a rough approximation of the number of items and planned orders that there exist for the legal entity. Your answers are used to configure parameters that apply to your legal entity, not just to the master plan that you selected. The following sections describe the parameters that are calculated and the formulas that are used.
@@ -147,7 +146,7 @@ In the wizard, the following values are entered for Contoso Manufacturer:
     - **Question:** "Do you want to schedule using the capacity of resources?"
     - **Answer:** "Yes, as defined in this master plan." **10 days** is entered.
 
-        The number of milling and drilling machines is limited. Production planning must take this limitation into account and arrange the jobs in time according to the capacity of the resources. In other words, the scheduled jobs are replanned based on the limitations of the resources. Planning uses the lead time in addition to the period that is defined. (Planned production orders can overlap.) Because the production lead time for the items is seven days, the capacity of the resources for master planning is considered during 10 days.
+    The number of milling and drilling machines is limited. Production planning must take this limitation into account and arrange the jobs in time according to the capacity of the resources. In other words, the scheduled jobs are replanned based on the limitations of the resources. Planning uses the lead time in addition to the period that is defined. (Planned production orders can overlap.) Because the production lead time for the items is seven days, the capacity of the resources for master planning is considered during 10 days.
 
 - **Sequencing:**
 
@@ -161,7 +160,7 @@ In the wizard, the following values are entered for Contoso Manufacturer:
     - **Question:** "Do you want to plan orders for all the elements in a Bill of Materials (plan for the parent and all children items)?"
     - **Answer:** "Yes, as defined in the coverage groups."
 
-        All the items that are used for the production must be planned. Because the items have very different lead times, master planning has better performance when it uses the coverage groups. Again, a margin of one week can be entered, and explosion can be done for the same time as the coverage.
+    All the items that are used for the production must be planned. Because the items have very different lead times, master planning has better performance when it uses the coverage groups. Again, a margin of one week can be entered, and explosion can be done for the same time as the coverage.
 
 ### Example 2: Contoso Retailer
 
@@ -193,6 +192,5 @@ In the wizard, the following values are entered for Contoso Retailer:
     - **Answer:** "Yes, as defined in this master plan." **1 day** is entered.
 
     Contoso uses the approved requisitions from its stores to create planned purchase orders to replenish those stores. Because master planning runs every day, the requisitions from the last day are included in the planning.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -49,7 +49,7 @@ To add, edit, or delete a price attribute group, follow these steps:
 1. On the header of the new or selected group, review the settings of the following fields, and edit them as required:
 
     - **Price attribute group** – If you're creating a new group, enter a unique name for the group. This field becomes read-only after you save the group.
-        - **Validated** – This option indicates whether the group is validated. Only validated groups are active and can be used in pricing rules. You can't edit this option directly. When you create a new group or edit a previously validated group, this option is set to *No*. To validate a new or edited group, select **Validation** on the Action Pane to trigger a validation check. If the check passes, the system sets this option to *Yes*.
+    - **Validated** – This option indicates whether the group is validated. Only validated groups are active and can be used in pricing rules. You can't edit this option directly. When you create a new group or edit a previously validated group, this option is set to *No*. To validate a new or edited group, select **Validation** on the Action Pane to trigger a validation check. If the check passes, the system sets this option to *Yes*.
 
 1. On the **General** FastTab, set the following fields:
 

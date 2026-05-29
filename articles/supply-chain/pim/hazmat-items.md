@@ -57,7 +57,6 @@ The **Item ship text translation** FastTab contains a grid that shows translatio
 
 The following table describes the fields that are available on the **Item ship text translation** FastTab.
 
-
 | Field | Description |
 |---|---|
 | Language | The language code that the row uses. For example, **pt-br** indicates Brazilian Portuguese. |
@@ -208,6 +207,5 @@ To run the compatibility check, follow these steps:
 1. On the Action Pane, on the **Loads** tab, in the **Actions** group, select **Compatibility check**.
 
 You receive a message that informs you of the results of the check.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

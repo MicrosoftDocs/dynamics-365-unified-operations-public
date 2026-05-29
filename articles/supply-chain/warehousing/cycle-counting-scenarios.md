@@ -104,7 +104,7 @@ Follow these steps to confirm that all the demo data required for the scenarios 
 
     - **Default cycle counting adjustment type:** *Cycle Count* (This field specifies the journal type that is posted when cycle counting is done.)
     - **Default cycle counting work class ID:** *CCount* (This field specifies the work class that is used for cycle counting.)
-        - **Default cycle count work priority:** *50* (This field sets the priority that cycle counting work has relative to other types of work in the warehouse. By entering a number that's lower than the number entered for other types of work, you raise the priority of the cycle counting work.)
+    - **Default cycle count work priority:** *50* (This field sets the priority that cycle counting work has relative to other types of work in the warehouse. By entering a number that's lower than the number entered for other types of work, you raise the priority of the cycle counting work.)
 
 1. Go to **Warehouse management > Setup > Inventory > Adjustment types**.
 1. The **Adjustment types** page lets you create codes for the different in and out adjustments that might occur. Confirm that a record exists that has the following settings:

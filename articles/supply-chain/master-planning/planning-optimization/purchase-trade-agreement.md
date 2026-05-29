@@ -68,5 +68,4 @@ The following table provides examples that show how various settings for a relea
 
 - [Purchase agreements](../../procurement/purchase-agreements.md)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

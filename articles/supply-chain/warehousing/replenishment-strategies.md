@@ -97,5 +97,4 @@ The outcomes differ because of the information that is available when you create
 
 Therefore, to get the maximum quantity to the replenished locations, set the **Allow split** option to *Yes* on the location directives for replenishment picking.
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
