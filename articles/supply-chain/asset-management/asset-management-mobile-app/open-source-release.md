@@ -1,8 +1,8 @@
 ---
 title: Asset Management mobile app open-source release
 description: Microsoft is releasing the Asset Management mobile app for Microsoft Dynamics 365 Supply Chain Management as open source so you can customize the app to fit your needs. Learn the timeline, transition guidance, and how to build a custom version from the source.
-author: 
-ms.author: cailoaei
+author: jodahlMSFT
+ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
