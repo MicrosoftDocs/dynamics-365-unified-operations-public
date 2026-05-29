@@ -1,10 +1,10 @@
 ---
-title: Deploy Dynamics 365 agents by using the agent deployment wizard (preview)
+title: Deploy Dynamics 365 agents by using the agent deployment wizard
 description: Learn how IT administrators use the agent deployment wizard in the Power Platform admin center to deploy and set up Microsoft Dynamics 365 agents.
 author: cabeln
 ms.author: cabeln
 ms.topic: concept-article
-ms.date: 03/05/2026
+ms.date: 05/26/2026
 ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer: kamaybac
@@ -14,15 +14,11 @@ ms.collection:
 ---
 
 
-# Deploy Dynamics 365 agents by using the agent deployment wizard (preview)
+# Deploy Dynamics 365 agents by using the agent deployment wizard
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 The agent deployment wizard in Copilot Hub provides a centralized experience for deploying Dynamics 365 agents to your business applications. It guides administrators through a secure, validated process that deploys Microsoft‑provided agents into environments such as Dataverse, Power Platform, and Microsoft finance and operations apps.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The agent deployment wizard provides a consistent deployment experience across all Dynamics 365 agents. Each agent offers its own specific configuration and setup guidance.
 
@@ -149,7 +145,3 @@ Once enabled, the agent is active and ready for use.
 ### Next steps
 
 After completing the common deployment steps, the wizard provides agent‑specific deployment guidance for how to configure business logic and bring the agent into service. You complete these steps by using [agent management](../../fin-ops/copilot/agent-mgmt.md) in your business application.
-
-## Support and feedback
-
-This feature is currently in preview. Microsoft welcomes your feedback and uses it to improve the agent deployment wizard. Report any issues or suggestions by using the standard Dynamics 365 support channels.

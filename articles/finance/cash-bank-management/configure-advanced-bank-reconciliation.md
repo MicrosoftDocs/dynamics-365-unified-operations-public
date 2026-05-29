@@ -18,9 +18,9 @@ ms.assetid: ae071f04-f038-4b17-812d-0a241ed15521
 
 [!include [banner](../includes/banner.md)]
 
-Advanced bank reconciliation enables you to import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains the setup processes for reconciliation.  
+When you use advanced bank reconciliation, you can import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains the setup processes for reconciliation.  
 
-There are a number of pieces that must be set up before using the advanced bank reconciliation functionality. For more information about setting up bank statement import, see [Set up the advanced bank reconciliation import using Electronic reporting](../accounts-payable/import-bai2-er.md). Requirements for set up of the reconciliation process are detailed below.
+Before you use the advanced bank reconciliation functionality, set up several components. For more information about setting up bank statement import, see [Set up the advanced bank reconciliation import using Electronic reporting](../accounts-payable/import-bai2-er.md). The following sections detail the requirements for the reconciliation process.
 
 ## Transaction codes
 
@@ -30,17 +30,17 @@ After you define your bank transaction codes, map them to the transaction codes 
 
 ## Matching rules and matching rule sets
 
-Matching rules allow you to define criteria for automatic reconciliation between Finance bank transactions and bank statement transactions. Setup of matching rules is done on the **Reconciliation matching rules** page. For more information, see [Set up bank reconciliation matching rules](set-up-bank-reconciliation-matching-rules.md).
+Matching rules allow you to define criteria for automatic reconciliation between Finance bank transactions and bank statement transactions. Set up matching rules on the **Reconciliation matching rules** page. For more information, see [Set up bank reconciliation matching rules](set-up-bank-reconciliation-matching-rules.md).
 
-Use matching rule sets to define a group of matching rules that run in sequence during the bank reconciliation process.  Configure matching rule sets on the **Reconciliation matching rule sets** page.
+Use matching rule sets to define a group of matching rules that run in sequence during the bank reconciliation process. Configure matching rule sets on the **Reconciliation matching rule sets** page.
 
 ## Cash and bank management parameters
 
 The **Cash and bank management parameters** page contains parameters specific to the advanced bank reconciliation process. The **Show statement line amount in debit/credit** parameter changes the view of amounts on the **Bank statement** page. If you select this option, the bank statement transaction amounts appear in separate debit and credit columns. If you don't select it, the bank statement transaction amounts appear in a single amount column with the appropriate sign.
 
-The validation options that you set on the **Cash and bank managment parameters** page override the selections set on matching rules. For example, you can't manually or automatically match documents beyond the date difference set on the parameters page. Also, if you select the option to **Validate transaction type mapping**, you must map the transaction types between the Finance bank transaction and bank statement transaction in order to manually or automatically match the transactions.  
+The validation options that you set on the **Cash and bank management parameters** page override the selections set on matching rules. For example, you can't manually or automatically match documents beyond the date difference set on the parameters page. Also, if you select the option to **Validate transaction type mapping**, you must map the transaction types between the Finance bank transaction and bank statement transaction in order to manually or automatically match the transactions.  
 
-You also must configure the necessary number sequences on the **Cash and bank management parameters** page.  On the **Number sequences** tab, set number sequence codes for the Download **ID, Statement ID, Reconcile ID, and Bank reconciliation** references.
+You must also configure the necessary number sequences on the **Cash and bank management parameters** page. On the **Number sequences** tab, set number sequence codes for the Download **ID, Statement ID, Reconcile ID, and Bank reconciliation** references.
 
 ## Bank account reconciliation options
 

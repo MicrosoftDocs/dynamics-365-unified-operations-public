@@ -4,7 +4,7 @@ description: Learn about the setup of the Fixed assets module, including outline
 author: moaamer
 ms.author: saraschi
 ms.topic: article
-ms.date: 08/12/2024
+ms.date: 05/27/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 audience: Application User
@@ -23,21 +23,21 @@ ms.custom: evergreen
 
 This article provides an overview of the setup of the **Fixed assets** module. 
 
-Parameters control the general behavior in Fixed assets. Fixed asset groups let you group your assets and specify default attributes for every asset that is assigned to a group. Books are assigned to fixed asset groups. Books track the financial value of a fixed asset over time by using the depreciation configuration that is defined in the depreciation profile.
+Parameters control the general behavior in Fixed assets. Fixed asset groups let you group your assets and specify default attributes for every asset that you assign to a group. You assign books to fixed asset groups. Books track the financial value of a fixed asset over time by using the depreciation configuration that you define in the depreciation profile.
 
-Fixed assets are assigned to a group when they are created. By default, the books that are assigned to the fixed asset group are then assigned to the fixed asset. Books that are configured to post to the general ledger are associated with a posting profile. Ledger accounts are defined for each book in the posting profile and are used when fixed asset transactions are posted.
+You assign fixed assets to a group when you create them. By default, the books that you assign to the fixed asset group are then assigned to the fixed asset. You associate books that are configured to post to the general ledger with a posting profile. You define ledger accounts for each book in the posting profile, and these accounts are used when fixed asset transactions are posted.
 
-![Fixed asset components.](./media/FAComponents_Updated.png)
+:::image type="content" source="./media/FAComponents_Updated.png" alt-text="Screenshot of fixed asset components.":::
 
 ## Depreciation profiles
 
-You should first set up depreciation profiles. In the depreciation profile, you configure how the value of an asset is depreciated over time. You must define the method of depreciation, the depreciation year (calendar year or fiscal year), and the frequency of depreciation. For more information, see [Set up and create depreciation profiles](tasks/set-up-depreciation-profiles.md).
+First, set up depreciation profiles. In the depreciation profile, configure how the value of an asset is depreciated over time. Define the method of depreciation, the depreciation year (calendar year or fiscal year), and the frequency of depreciation. For more information, see [Set up and create depreciation profiles](tasks/set-up-depreciation-profiles.md).
 
 ## Books
 
-After you set up depreciation profiles, you must create the required books for your assets. Each book tracks an independent financial lifecycle of an asset. Books can be configured to post associated transactions to the general ledger. This configuration is the default setting, because it's typically used for corporate financial reporting. Books that don't post to the general ledger post only to the Fixed asset subledger and are typically used for tax reporting purposes.
+After you set up depreciation profiles, create the required books for your assets. Each book tracks an independent financial lifecycle of an asset. You can configure books to post associated transactions to the general ledger. This configuration is the default setting, because it's typically used for corporate financial reporting. Books that don't post to the general ledger post only to the Fixed asset subledger and are typically used for tax reporting purposes.
 
-A primary depreciation profile is assigned to every book. Books also have an alternative or switchover depreciation profile, if this type of profile is applicable. To automatically include the fixed asset book in depreciation runs, you must enable the **Calculate depreciation** option. If this option isn't enabled for an asset, the depreciation proposal skips the asset.
+You assign a primary depreciation profile to every book. Books can also have an alternative or switchover depreciation profile, if this type of profile is applicable. To automatically include the fixed asset book in depreciation runs, you must enable the **Calculate depreciation** option. If you don't enable this option for an asset, the depreciation proposal skips the asset.
 
 You can also set up derived books. The specified derived transactions are posted against the derived books as an exact copy of the primary transaction. Therefore, derived transactions are typically set up for acquisitions and disposals, not for depreciation transactions. For more information, see [Set up value models](tasks/set-up-value-models.md).
 
@@ -63,23 +63,23 @@ On the **Journal names** page, you must create the journal names that should be 
 
 The last step is to update the fixed asset parameters.
 
-The **Capitalization threshold** field determines the assets that are depreciated. If a purchase line is selected as a fixed asset, but it doesn't meet the specified capitalization threshold, a fixed asset is still created or updated, but the **Calculate depreciation** option is set to **No**. Therefore, the asset won't be automatically depreciated as part of the depreciation proposals.
+The **Capitalization threshold** field determines the assets that are depreciated. If you select a purchase line as a fixed asset but it doesn't meet the specified capitalization threshold, the system still creates or updates a fixed asset, but it sets the **Calculate depreciation** option to **No**. Therefore, the asset isn't automatically depreciated as part of the depreciation proposals.
 
 One important option is named **Automatically create depreciation adjustment amounts with disposal**. When you set this option to **Yes**, the asset depreciation is automatically adjusted, based on the depreciation settings at the time of asset disposal. Another option lets you deduct cash discounts from the acquisition amount when you acquire fixed assets by using a vendor invoice.
 
-The **Lock asset books in a depreciation journal** parameter lets you lock asset books in a depreciation journal. When depreciation transactions are being posted, the system will verify that the same asset book hasn't been added to more than one depreciation journal. If it has, that asset book will be locked and posting will stop. If an asset book ID is in a locked journal, it will be unlocked automatically when posting is complete for the original journal. You can also unlock the journal manually. 
+The **Lock asset books in a depreciation journal** parameter lets you lock asset books in a depreciation journal. When depreciation transactions are being posted, the system verifies that the same asset book hasn't been added to more than one depreciation journal. If it has, that asset book is locked and posting will stop. If an asset book ID is in a locked journal, it is unlocked automatically when posting is complete for the original journal. You can also unlock the journal manually. 
 
-**Post disposal transactions in detail** determines which disposal scrap/sale to consider which detailed disposal posting of acquisition to **Acquisition this year** and **Acquisition prior years**. 
+**Post disposal transactions in detail** determines which disposal scrap or sale to consider which detailed disposal posting of acquisition to **Acquisition this year** and **Acquisition prior years**. 
 
-- If this option is set to **Yes**, the disposal sale/scrap posting process will validate the posting profile to ensure that it has all posting types. 
-- If this option is set to **No**, the disposal scrap/sale posting process will validate the posting profile to ensure that the **Acquisition value** field is defined in it.
+- If you set this option to **Yes**, the disposal sale or scrap posting process validates the posting profile to ensure that it has all posting types. 
+- If you set this option to **No**, the disposal scrap or sale posting process validates the posting profile to ensure that the **Acquisition value** field is defined in it.
 
-In Microsoft Dynamics 365 Finance version 10.0.41, the **Allow depreciation when placed in service and disposal are in the same fiscal year** parameter is available on the **Fixed assets parameters** page. When this parameter is enabled, depreciation is calculated when an asset is both put into service and disposed of within the same fiscal year. This setting becomes the default behavior for any new asset books created that are created afterwards. However, the setting can be modified at the level of the individual asset book as required. Note that changes that are made at the asset book level apply only to new asset books that are created after the modification. They don't retroactively affect asset books that already exist in the system. 
+In Microsoft Dynamics 365 Finance version 10.0.41, the **Allow depreciation when placed in service and disposal are in the same fiscal year** parameter is available on the **Fixed assets parameters** page. When you enable this parameter, depreciation is calculated when an asset is both put into service and disposed of within the same fiscal year. This setting becomes the default behavior for any new asset books that you create afterwards. However, you can modify the setting at the level of the individual asset book as required. Changes that you make at the asset book level apply only to new asset books that you create after the modification. They don't retroactively affect asset books that already exist in the system. 
 
 > [!NOTE]
 > You can't define both the options of posting types **Acquisition value** and **Acquisition this year** or **Acquisition prior year** in the disposal sale/scrap at the same time to ensure accurate disposal posting.
 
-On the **Purchase orders** FastTab, you can configure how assets are created as part of the purchasing process. The first option is named **Allow asset acquisition from Purchasing**. If you set this option to **Yes**, asset acquisition occurs when the invoice is posted. If you set this option to **No**, you can still put a fixed asset on a purchase order (PO) and invoice, but the acquisition won't be posted. Posting must be done as a separate step, from the Fixed assets journal. The **Create asset during product receipt or invoice posting** option lets you create a new asset during posting. Therefore, the asset doesn't have to be set up as a fixed asset before the transaction. The last option, **Check for fixed assets creation during line entry**, applies only to purchase requisitions.
+On the **Purchase orders** FastTab, you can configure how assets are created as part of the purchasing process. The first option is named **Allow asset acquisition from Purchasing**. If you set this option to **Yes**, asset acquisition occurs when you post the invoice. If you set this option to **No**, you can still put a fixed asset on a purchase order (PO) and invoice, but the acquisition isn't posted. You must post as a separate step, from the Fixed assets journal. Use the **Create asset during product receipt or invoice posting** option to create a new asset during posting. Therefore, you don't have to set up the asset as a fixed asset before the transaction. The last option, **Check for fixed assets creation during line entry**, applies only to purchase requisitions.
 
 You can configure reason codes so that they're required for changes to a fixed asset or for specific fixed asset transactions.
 

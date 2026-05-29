@@ -4,7 +4,7 @@ description: Learn about the depreciation conventions and depreciation methods t
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/05/2024
+ms.date: 05/27/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen 
 ms.reviewer: twheeloc
@@ -22,38 +22,34 @@ ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 
 This article provides an overview of the supported depreciation conventions and depreciation methods.
 
-You can select various depreciation methods and conventions. The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods. The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any. 
+You can select various depreciation methods and conventions. The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods. The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any.
 
-If you are using depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more than or less than is expected. The depreciation is adjusted by the number of depreciation periods affected by the modification of the last depreciation run date.
+If you use depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more or less than expected. The system adjusts the depreciation by the number of depreciation periods affected by the modification of the last depreciation run date.
 
-For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over three-and-a-half years. If you change the last depreciation run date during the three-and-a-half years, the last year of depreciation moves out the number of periods affected. If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.
+For example, if you use the half-year depreciation convention over three years, depreciation ordinarily occurs over three-and-a-half years. If you change the last depreciation run date during the three-and-a-half years, the last year of depreciation moves out the number of periods affected. If you move the date by three months, the last year has nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.
 
-You can select from the following depreciation conventions.
+Select from the following depreciation conventions:
 
+- Half year
+- Full month
+- Mid quarter
+- Mid month (1st of month)
+- Mid month (15th of month)
+- Half year (start of year)
+- Half year (next year)
 
--   Half year
--   Full month
--   Mid quarter
--   Mid month (1st of month)
--   Mid month (15th of month)
--   Half year (start of year)
--   Half year (next year)
+Select from the following depreciation methods:
 
-You can select from the following depreciation methods.
--   Straight-line service life
--   Reducing balance
--   Manual
--   Factor
--   Consumption
--   Straight-line life remaining
--   200% reducing balance
--   175% reducing balance
--   150% reducing balance
--   125% reducing balance
-
-
-
-
+- Straight-line service life
+- Reducing balance
+- Manual
+- Factor
+- Consumption
+- Straight-line life remaining
+- 200% reducing balance
+- 175% reducing balance
+- 150% reducing balance
+- 125% reducing balance
 
 ## Additional resources
 
@@ -78,9 +74,5 @@ You can select from the following depreciation methods.
 [175 percent reducing balance depreciation](175-percent-reducing-balance-depreciation.md)
 
 [200 percent reducing balance depreciation](200-percent-reducing-balance-depreciation.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

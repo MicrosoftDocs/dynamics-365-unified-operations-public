@@ -202,3 +202,8 @@ To change an order so that it uses CTP at the line level, follow these steps:
     The **Available ship and receipt dates** dialog box appears, and shows the available ship and receipt dates. This dialog box works the same way for order lines as it does for the order header, as described in the previous section.
 
 1. On the Action Pane, select **Save**.
+
+### Additional resources
+
+- [Keep supply for confirmed demand in Planning Optimization (Preview)](keep-supply-for-confirmed-demand.md)
+- [Optimize confirmed dates for CTP line changes (preview)](optimize-confirmed-dates-for-ctp-line-changes.md)

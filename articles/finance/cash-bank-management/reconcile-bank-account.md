@@ -46,7 +46,7 @@ If all transactions in the list can be cleared, select **Mark all as cleared**.
 
 1. As you mark the transactions on the bank statement as **Cleared**, the amount in the **Unreconciled** field, which is recalculated continuously as you make changes, approaches zero. When it reaches zero, select **Reconcile account** to post the reconciliation, and the transactions and corrections.
 
-    After the reconciliation is posted, the transactions that have been included can't be modified or corrected, and they're not displayed for future account reconciliation.
+    After the reconciliation is posted, the transactions that are included can't be modified or corrected, and they're not displayed for future account reconciliation.
 
 1. To view bank transactions that aren't reconciled, use the **Unreconciled bank transactions** report. To view the bank statement for a bank account, use the **Bank statement** report.
 
@@ -54,7 +54,7 @@ If all transactions in the list can be cleared, select **Mark all as cleared**.
 
 The **Cancel bank statement reconciliation** functionality enables you to cancel bank statement reconciliation. You need to enable the **Allow bank statement edit** parameter. To do this, go to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation**.
 
-Bank statement reconciliations can only be canceled in the chronological order in which they were entered. When a bank statement reconciliation is canceled, new transactions and corrections are reversed and all other transactions are marked as unreconciled.
+You can only cancel bank statement reconciliations in the chronological order in which you entered them. When you cancel a bank statement reconciliation, the system reverses new transactions and corrections, and marks all other transactions as unreconciled.
 
 To cancel bank statement reconciliation, follow these steps:
 
@@ -63,6 +63,6 @@ To cancel bank statement reconciliation, follow these steps:
 1. Select **OK**.
 
 >[!NOTE]
-> The bank statement cancellation date must be on or after the bank statement date. After the bank statement reconciliation has been canceled, the **Cancellation date** field for the bank statement is updated with the **Cancellation date** provided. Select the **Transactions** button to view the transactions for which the reconciliation was canceled.
+> The bank statement cancellation date must be on or after the bank statement date. After you cancel the bank statement reconciliation, the system updates the **Cancellation date** field for the bank statement with the **Cancellation date** you provide. Select the **Transactions** button to view the transactions for which the reconciliation was canceled.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

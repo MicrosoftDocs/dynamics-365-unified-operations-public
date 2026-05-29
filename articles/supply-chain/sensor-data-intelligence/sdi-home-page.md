@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/10/2026
+ms.date: 05/27/2026
 ms.custom: 
   - bap-template
 ---
@@ -31,14 +31,14 @@ Sensor Data Intelligence lets you perform the following tasks:
 
 ## Business scenarios
 
-Sensor Data Intelligence enables several types of functionality, each of which is represented by a specific *scenario* in the system. Each scenario provides a specialized set of configuration options in the system, as detailed in the following table.
+Sensor Data Intelligence enables several types of functionality, each represented by a specific *scenario* in the system. Each scenario provides a specialized set of configuration options, as detailed in the following table.
 
 | Scenario | Description |
 |---|---|
 | [Asset downtime](sdi-scenario-asset-downtime.md) | Accurately track the efficiency of machine assets by using sensor data to track machine downtime. |
-| [Asset maintenance](sdi-scenario-asset-maintenance.md) | Minimize maintenance cost and extend asset life by improving maintenance plans based on sensor readings of critical control points for machine assets. |
+| [Asset maintenance](sdi-scenario-asset-maintenance.md) | Minimize maintenance costs and extend asset life by improving maintenance plans based on sensor readings of critical control points for machine assets. |
 | [Machine status](sdi-scenario-equipment-downtime.md) | Ensure operation efficiency by using sensor readings to notify planners about machine outages and provide options for mitigating potential delays. |
-| [Product quality](sdi-scenario-product-quality.md) | Ensure the quality of product batches by comparing sensor readings for actual properties of each product batch, such as moisture, temperature, or custom-defined quality metrics. The system will notify users when deviations occur. |
+| [Product quality](sdi-scenario-product-quality.md) | Ensure the quality of product batches by comparing sensor readings for actual properties of each product batch, such as moisture, temperature, or custom-defined quality metrics. The system notifies users when deviations occur. |
 | [Production auto report](sdi-scenario-production-auto-report.md) | Automatically report finished quantities when a machine generates enough sensor signals to reach a defined output threshold.  |
 | [Production delays](sdi-scenario-production-delays.md) | Use sensor readings to compare actual cycle time to planned cycle time, and notify supervisors when production isn't on schedule. Supervisors can then intervene as required to ensure maximum operation efficiency. |
 

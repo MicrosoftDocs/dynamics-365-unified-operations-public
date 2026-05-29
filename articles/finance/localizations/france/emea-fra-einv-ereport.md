@@ -4,7 +4,7 @@ description: Learn how to work with Electronic invoicing for France in Microsoft
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 05/11/2026
+ms.date: 05/21/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -315,6 +315,9 @@ To enter the address, follow these steps:
 1. Select a customer.
 1. On the **Addresses** FastTab, add a valid address for the selected customer.
 
+> [!NOTE]
+> Each address links to one set of registration numbers, including the Branch ID (electronic address). If a customer has several electronic addresses, you need to create several location addresses to ensure a one-to-one relation.
+
 ### Buyer identification
 
 To enter the registration numbers, follow these steps:
@@ -374,18 +377,16 @@ To enter the Buyer schema codes, follow these steps:
 1. Select a specific customer in the list. On the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
 1. In the **Value** column, enter the required buyer electronic address.
 
+### Configure the electronic address handling
+
+For both Seller and Buyer identification, the system uses the electronic address you define as the **EndpointID** value with the **schemeID** attribute set to **0225** (FRCTC ELECTRONIC ADDRESS) by default, according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/).
+
+You can change the code of the electronic address scheme to any value that better fits your business processes by configuring the **CompanyEndpointType** and **CustomerEndpointType** electronic document properties types for sellers and buyers respectively. The values defined via these electronic document properties have higher priority and overwrite the default **0225** value.
+
+You can also control the interpretation of the Buyer's **Branch ID** value. By default, the system considers it as an entire electronic address. Alternatively, you can configure the **ElectronicAddressSuffix** electronic document property to force the system to interpret the Branch ID value only as a *SUFFIX* part of the electronic address. The whole electronic address is generated as the concatenation of the Buyer's **SIREN_**, **SIRET_**, and the **SUFFIX**.
+
 > [!NOTE]
-> For both Seller and Buyer identification, the system uses the electronic address you define as the **EndpointID** value with the **schemeID** attribute set to **0225** (FRCTC ELECTRONIC ADDRESS) by default, according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/).
-
-If you don't define the electronic addresses, the system uses the following Endpoint determination algorithm:
-
-- The system uses the **SIRET** number with the **0009** value as the *schemeID* attribute.
-- If the system doesn't find a **SIRET** number, it uses the **SIREN** number with the **0002** value as the *schemeID* attribute.
-- If the system doesn't find a **SIREN** number, it uses the Global Location Number (GLN), also known as the European article numbering (EAN) number, with the **0088** value as the *schemeID* attribute.
-
-  > [!NOTE]
-  > The system assumes that the dedicated registration number of the **EAN** registration category is already defined.
-- If the system doesn't find an **EAN** number, it uses the VAT number with the **9957** value as the *schemeID* attribute.
+> To learn more about the full list of the electronic document properties used during the generation of electronic invoices XML files, refer to the following Appendix chapter [List of electronic document properties](#EDproperties).
 
 ## Configure mandatory notes
 
@@ -476,7 +477,7 @@ Set up units of measure.
 > [!IMPORTANT]
 > **Electronic invoicing scope**
 >
-> Only invoices issued for customers with a nonempty **SIREN** registration number defined for the French country code (**FRA**) are *included* in the scope of **E-Invoicing** individual submissions. All other invoices are *excluded* from **E-Invoicing** and considered for **E-Reporting**.
+> The scope of **E-Invoicing** individual submissions *includes* only invoices issued for customers with a nonempty **SIREN** registration number defined for the French country code (**FRA**). All other invoices are *excluded* from **E-Invoicing** and considered for **E-Reporting**.
 
 After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. The submission process consists of three major steps.
 
@@ -658,6 +659,22 @@ The list of mandatory status codes supported in electronic invoicing for Microso
   - Edicom Response Processing
   - Edicom Response Processing (FR)
   - Edicom response error log import
+
+### <a id="EDproperties"></a>List of electronic document properties
+
+The following configurable electronic document properties are used during the generation of electronic invoices XML files.
+
+| Type | Applicability | Description |
+|------------|------------------|----------------------------------|
+| **CompanyEndpointType** | Legal entities | Defines the code of the electronic address *scheme* for **sellers**. If you set this property, it overwrites the default 0225 value. |
+| **CustomerEndpointType** | Customers | Defines the code of the electronic address *scheme* for **buyers**. If you set this property, it overwrites the default 0225 value. |
+| **SellerElectronicAddress** | Legal entities | Defines the electronic address for **sellers**. It has the highest priority and overwrites any other electronic address value. |
+| **BuyerElectronicAddress** | Customers | Defines the electronic address for **buyers**. It has the highest priority and overwrites any other electronic address value. |
+| **#PMD#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment/settlement information.|
+| **#PMT#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment instructions.|
+| **#AAB#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment terms.|
+| **#ADN#** | Customers | Optional note prefix determining buyers for B2G communication.|
+| **ElectronicAddressSuffix** | Legal entities | If you set any non-empty value for this parameter, the Buyer's electronic address is constructed as **SIREN_SIRET_BranchID**. Otherwise, only the Branch ID is used as the whole electronic address. |
 
 ## More information
 
