@@ -37,10 +37,10 @@ To set up XML namespaces for the EU sales list in XML, follow these steps:
 | Lookup result                                                                 | Name                 |
 |-------------------------------------------------------------------------------|---------------------------|
 | http://www.nltaxonomie.nl/nt20/bd/20251210/entrypoints/bd-rpt-icp-opgaaf-2026.xsd | XSDSchema                 |
-| http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-axes                  | SchemaInstanceAxes        |
-| http://www.nltaxonomie.nl/nt20/bd/20251210/dictionary/bd-data                | SchemaInstanceData        |
-| http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-domains             | SchemaInstanceDomains     |
-| http://www.nltaxonomie.nl/nt20/bd/20251210/dictionary/bd-domain-members      | SchemaInstanceMembers     |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-axes.xsd                  | SchemaInstanceAxes        |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/dictionary/bd-data.xsd                | SchemaInstanceData        |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-domains.xsd             | SchemaInstanceDomains     |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/dictionary/bd-domain-members.xsd      | SchemaInstanceMembers     |
 
 For more information about how to get the values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy).
 
