@@ -95,7 +95,7 @@ Follow these steps to specify filter codes for released products. For example, u
 1. On the Action Pane, select **New** to create a product.
 1. In the **New released product** dialog box, enter the data required to create the base of a new product, and then select **OK**.
 
-        Product filter codes aren't enabled unless the item group attached to the product is configured for filter codes.
+   Product filter codes aren't enabled unless the item group attached to the product is configured for filter codes.
 
 1. On the **Warehouse** FastTab, in the **Product filter codes** section, select filter codes for the **Code 1** through **Code 10** fields, as required, to specify filter codes for the product.
 

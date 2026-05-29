@@ -201,7 +201,8 @@ To view aggregated inventory transactions, follow these steps:
 
     On the **Transaction aggregated** page, a grid lists details for each successful aggregated transaction. Most of the columns are self-explanatory, but here are some important columns to note:
 
-        - **Line record ID** – The GUID that's automatically generated for each aggregated inventory adjustment transaction. Select the link to view more details about the aggregated transaction. After the aggregated lines are successfully created and/or posted in Supply Chain Management, the journal ID and journal line ID that Supply Chain Management returns are included in the aggregated transaction details.
+    - **Line record ID** – The GUID that's automatically generated for each aggregated inventory adjustment transaction. Select the link to view more details about the aggregated transaction. After the aggregated lines are successfully created and/or posted in Supply Chain Management, the journal ID and journal line ID that Supply Chain Management returns are included in the aggregated transaction details.
+
     - **Aggregated line status** – The current status of the aggregated transaction. The following values are used:
 
         - *Created* – The aggregated transaction record was successfully created. This status is the initial status for the aggregated transaction record.

@@ -53,7 +53,7 @@ The putaway cluster profile determines where an item goes, based on the location
 
     - **Putaway cluster per user:** *No*
 
-                This field defines whether each cluster is unique per user when the clusters are automatically assigned. It's available only when the **Cluster assignment rule** field is set to *Automatic*.
+        This field defines whether each cluster is unique per user when the clusters are automatically assigned. It's available only when the **Cluster assignment rule** field is set to *Automatic*.
 
     - **Unit restriction:** Leave this field blank.
 
@@ -65,7 +65,7 @@ The putaway cluster profile determines where an item goes, based on the location
 
     - **Cluster persists as Parent License Plate:** *No*
 
-                If this option is set to *Yes*, when the put step is completed, the cluster ID becomes a parent license plate, and all items on the cluster ID link to that parent license plate.
+        If this option is set to *Yes*, when the put step is completed, the cluster ID becomes a parent license plate, and all items on the cluster ID link to that parent license plate.
 
 1. On the **Cluster sorting** FastTab, you can define putaway sorting criteria. Select **New** on the toolbar to add a line, and then set the following values:
 
