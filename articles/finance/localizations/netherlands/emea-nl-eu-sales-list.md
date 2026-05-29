@@ -17,7 +17,7 @@ ms.custom:
 
 This article explains how to generate the EU sales list for Netherlands in Microsoft Dynamics 365 Finance.
 
-You can generate a European Union (EU) sales list for the Netherlands in XML format that follows [NL SBR taxonomies](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie) description. Taxonomies are updated by the authority each year. For example, in 2021 the taxonomy NT15 is applicable.
+You can generate a European Union (EU) sales list for the Netherlands in XML format that follows [NL SBR taxonomies](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie) description. Taxonomies are updated by the authority each year. For example, in 2026 the taxonomy NT20 is applicable.
 
 You can also preview the EU sales list report in Microsoft Excel format. Two formats are available to select: **EU sales list by rows report** or **EU sales list by columns report**.
 
