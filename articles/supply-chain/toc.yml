@@ -1810,7 +1810,7 @@
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
         - name: Fix on-hand inventory problems with an on-hand consistency check
-          href: inventory/onhand-consistency-check.md
+          href: inventory/on-hand-consistency-check.md
     - name: Sensor Data Intelligence (preview)
       items:
       - name: Sensor Data Intelligence home page
