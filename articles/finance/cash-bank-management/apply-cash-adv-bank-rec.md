@@ -20,7 +20,7 @@ ms.dyn365.ops.version:
 
 This article explains how to complete cash application in advanced bank reconciliation by using the **Modern bank reconciliation** feature.
 
-There might be customer or vendor payments on bank statements in the app. This feature lets users complete cash application in advanced bank reconciliation.
+The app might show customer or vendor payments on bank statements. This feature helps you complete cash application in advanced bank reconciliation.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ There might be customer or vendor payments on bank statements in the app. This f
 - As of version 10.0.42, if the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are enabled in advanced bank reconciliation.
 
 > [!NOTE]
-> When you apply cash in advanced bank reconciliation, only journal names without approval workflow enabled are supported.
+> When you apply cash in advanced bank reconciliation, only journal names without approval workflow are supported.
 
 ## Complete cash application on the reconciliation worksheet
 
@@ -182,4 +182,4 @@ To enter default descriptions for bank reconciliation postings, follow these ste
 > - For automatic bank reconciliation that uses defined matching rules, when you enable the **Enable default descriptions for advanced bank reconciliation** feature, the system uses the default descriptions.
 > - For manual voucher generation, the system uses the bank statement line's **Entry Reference** field for the description.
 
-![Default descriptions](./media/defaultdescriptions.PNG)
+:::image type="content" source="./media/defaultdescriptions.PNG" alt-text="Screenshot of default descriptions setup for bank reconciliation.":::

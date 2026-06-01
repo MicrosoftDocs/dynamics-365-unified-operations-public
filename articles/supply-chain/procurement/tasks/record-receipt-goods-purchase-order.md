@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 ms.topic: how-to
-ms.date: 08/26/2024
+ms.date: 5/21/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to record receipt of goods directly on a purchase order. It's also possible to register product receipt in the warehouse, and then later record it on the purchase order. This task is typically done by a purchasing agent or an accounts payable coordinator. The example shown in this guide uses values from the USMF demo data company and has you prepare an example purchase order to receive against. If you were using the procedure on your own data, you would start at the *Record receipt of goods* section.
+This article explains how to record receipt of goods directly on a purchase order. You can also register product receipt in the warehouse, and then later record it on the purchase order. A purchasing agent or an accounts payable coordinator typically performs this task. The example shown in this guide uses values from the USMF demo data company and has you prepare an example purchase order to receive against. If you use the procedure on your own data, start at the *Record receipt of goods* section.
 
 ## Prepare a new purchase order for receipt of goods
 
@@ -31,11 +31,11 @@ This article explains how to record receipt of goods directly on a purchase orde
 ## Record receipt of goods
 
 1. On the Action Pane, select **Receive**.
-1. Select **Product receipt**. The **Quantity** field allows you to select different options for the quantity that you want to receive. For example, if a quantity has previously been registered in the warehouse, you can select *Registered quantity*. For this example, use the value *Ordered quantity*.
+1. Select **Product receipt**. The **Quantity** field allows you to select different options for the quantity that you want to receive. For example, if a quantity is previously registered in the warehouse, you can select *Registered quantity*. For this example, use the value *Ordered quantity*.
 1. Expand the **Overview** section.
-1. In the **Product receipt** field, type any value. This field is used to enter a reference that will be used as voucher for the product receipt journal.  
+1. In the **Product receipt** field, type any value. Enter a reference used as voucher for the product receipt journal.
 1. Expand the **Lines** section.
-1. Set **Quantity** to *4*. Here you can manually specify the quantity that is being received for each line on the order.  
-1. Select **OK**. The goods have now been recorded as received on the purchase order, and a product receipt journal has been created as document to reflect this. You can use the Product receipt action to review the journals created with the purchase order, and see what was received, and when.  
+1. Set **Quantity** to *4*. Manually specify the quantity that you're receiving for each line on the order.  
+1. Select **OK**. The goods are now recorded as received on the purchase order, and a product receipt journal is created as document to reflect this. Use the **Product receipt** action to review the journals created with the purchase order, and see what was received, and when.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

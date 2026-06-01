@@ -531,7 +531,19 @@
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
         - name: Modern workflows in POS
-          href: POS-UX-modernization.md
+          items:
+          - name: Modernized views in POS
+            href: POS-UX-modernization.md
+          - name: Transaction grid
+            href: pos-modern-transaction-grid.md
+          - name: Search results view
+            href: pos-modern-search-view.md
+          - name: Product details page
+            href: pos-modern-product-details.md
+          - name: Customer details page (preview)
+            href: pos-modern-customer-details.md
+          - name: Customer creation and editing workflows (preview)
+            href: pos-modern-customer-create-edit.md
         - name: Receipts
           items:
           - name: Set up and design receipt formats
@@ -1532,6 +1544,8 @@
             href: country-region-picker-module.md
           - name: Catalog picker module
             href: catalog-picker.md
+          - name: Organization selection module (preview)
+            href: organization-selection.md
         - name: Search modules
           items:
           - name: Search results module
@@ -1617,7 +1631,7 @@
       - name: B2B multioutlet capabilities (preview)
         href: b2b/b2b-multi-outlet.md
       - name: B2B multioutlet configuration (preview)
-        href: b2b/b2b-multi-outlet-configuration.md        
+        href: b2b/b2b-multi-outlet-configuration.md
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
@@ -2936,6 +2950,8 @@
             href: e-commerce-extensibility/sdk-getting-started.md
           - name: System requirements
             href: e-commerce-extensibility/system-requirements.md
+          - name: E-commerce platform modernization
+            href: e-commerce-extensibility/ecommerce-platform-modernization.md
         - name: Environment setup
           items:
           - name: Development environment

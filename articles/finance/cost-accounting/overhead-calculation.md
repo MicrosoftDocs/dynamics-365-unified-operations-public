@@ -4,7 +4,7 @@ description: Learn about the typical processes for calculating and allocating ov
 author: AndersEvenGirke
 ms.author: twheeloc
 ms.topic: article
-ms.date: 10/04/2018
+ms.date: 05/27/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -23,26 +23,28 @@ This article describes the typical processes for calculating and allocating over
 
 ## Term definition
 
-Overhead costs are the costs that are incurred in order to run a business, but that can't be directly attributed to any specific business activity, product, or service. Overhead costs provide critical support for the generation of profit-making activities. Here are some examples of overhead costs:
+Overhead costs are the costs that you incur to run a business but can't directly attribute to any specific business activity, product, or service. Overhead costs provide critical support for the generation of profit-making activities. Here are some examples of overhead costs:
 
--   Rent
--   Electricity
--   Administrative salaries
+- Rent
+- Electricity
+- Administrative salaries
 
 ## Overhead calculation overview
-Overhead calculation runs the cost accounting policies in the correct order. You can run overhead calculation multiple times for the same fiscal period if cost accounting policies have been changed or specific errors have been detected. Each run of the overhead calculation is stored and receives a unique version ID that lets you compare the calculations in various versions. The cost entries that the overhead calculation generates receive an accounting date. This accounting date matches the end date of the fiscal period that is used in the calculation. The unique version ID consists of the following elements:
 
--   Version type
--   Date and time
--   Cost accounting ledger
--   Fiscal year
--   Fiscal period
+Overhead calculation runs the cost accounting policies in the correct order. You can run overhead calculation multiple times for the same fiscal period if you change cost accounting policies or detect specific errors. Each run of the overhead calculation is stored and receives a unique version ID that lets you compare the calculations in various versions. The cost entries that the overhead calculation generates receive an accounting date. This accounting date matches the end date of the fiscal period that is used in the calculation. The unique version ID consists of the following elements:
 
-Overhead calculation is run independently of the version. Therefore, you can calculate the Budget version before the Actual version. Overhead calculation consists of four steps, as shown in the following illustration. In each step, a journal header is created that has journal entries. This journal header keeps the input data for each calculation step. Policies and rules are applied to each journal line, and cost entries are generated as output. Therefore, you always have full traceability. 
+- Version type
+- Date and time
+- Cost accounting ledger
+- Fiscal year
+- Fiscal period
+
+You run overhead calculation independently of the version. Therefore, you can calculate the Budget version before the Actual version. Overhead calculation consists of four steps, as shown in the following illustration. In each step, the process creates a journal header that has journal entries. This journal header keeps the input data for each calculation step. The process applies policies and rules to each journal line, and generates cost entries as output. Therefore, you always have full traceability.
 
 [![Overhead calculation.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
-## Calculate and allocate the Electricity overhead cost
+## Calculate and allocate the electricity overhead cost
+
 In Financial accounting, some costs, such as electricity, are registered as a lump sum. Therefore, detailed managerial insight isn't provided for Cost accounting. In Cost accounting, to provide correct managerial insight across all organizational units and levels, costs must flow through the organizational units. This flow must be based on either an accurate record of the consumption or a fair assessment. In the general ledger, an electricity cost can be posted as shown in the following table.
 
 <table>
@@ -68,15 +70,15 @@ In Financial accounting, some costs, such as electricity, are registered as a lu
 
 ### Step 1: Process the cost behavior calculation
 
-By default, when cost entries are imported from the source data, they receive the **Unclassified** cost behavior classification in Cost accounting. By applying cost behavior policy rules, you can reclassify cost entries as either **Fixed cost** or **Variable cost**.
+By default, when you import cost entries from the source data, they receive the **Unclassified** cost behavior classification in Cost accounting. By applying cost behavior policy rules, you can reclassify cost entries as either **Fixed cost** or **Variable cost**.
 
 #### Define the cost behavior rule
 
-In some cases, part of the cost is a fixed fee, and the remaining cost is based on consumption. Electricity bills often match this definition. After you pay a specific fixed fee, you pay for consumption per kilowatt hour (Kwh). For example, if the fixed cost fee is 1,000.00, here is how the cost behavior rule is defined:
+In some cases, part of the cost is a fixed fee, and the remaining cost is based on consumption. Electricity bills often match this definition. After you pay a specific fixed fee, you pay for consumption per kilowatt hour (Kwh). For example, if the fixed cost fee is 1,000.00, here's how you define the cost behavior rule:
 
--   Fixed amount 1,000.00
-    -   0 &lt;= 1,000.00 = Fixed
-    -   1000,01 &lt; N = Variable
+- Fixed amount 1,000.00
+  - 0 &lt;= 1,000.00 = Fixed
+  - 1000,01 &lt; N = Variable
 
 ##### Journal
 
@@ -179,13 +181,14 @@ In some cases, part of the cost is a fixed fee, and the remaining cost is based 
 </table>
 
 For more information, see [Create and assign a cost behavior policy to a cost control unit](tasks/create-assign-cost-behavior-policy-cost-control-unit.md).
+
 ### Step 2: Process the cost distribution calculation
 
-Cost distribution is used to redistribute cost from one cost object to one or more other cost objects by applying a relevant allocation base. Cost distribution and cost allocation differ in that cost distribution always occurs at the level of the primary cost element of the original cost.
+Use cost distribution to redistribute costs from one cost object to one or more other cost objects by applying a relevant allocation base. Cost distribution and cost allocation differ in that cost distribution always occurs at the level of the primary cost element of the original cost.
 
 #### Define the cost distribution rule
 
-In Financial accounting, electricity costs are often registered as a lump sum. In Cost accounting, this approach isn't detailed enough. The variable cost should be distributed to the individual cost objects on a fair basis. The most logical allocation basis is the consumption of electricity (Kwh). A statistical dimension member that is named Electricity is created, and electricity consumption is recorded. By default, all statistical dimension members become available as allocation bases.
+In financial accounting, register electricity costs as a lump sum. In cost accounting, this approach isn't detailed enough. Distribute the variable cost to the individual cost objects on a fair basis. The most logical allocation basis is the consumption of electricity (Kwh). Create a statistical dimension member named **Electricity**, and record electricity consumption. By default, all statistical dimension members become available as allocation bases.
 
 <table>
 <thead>
@@ -213,7 +216,7 @@ In Financial accounting, electricity costs are often registered as a lump sum. I
 </tbody>
 </table>
 
-The following table shows the result when electricity consumption is applied as an allocation base for variable costs.
+The following table shows the result when you apply electricity consumption as an allocation base for variable costs.
 
 <table>
 <thead>
@@ -249,7 +252,7 @@ The following table shows the result when electricity consumption is applied as 
 </tbody>
 </table>
 
-The fixed cost should be distributed evenly to the individual cost objects that have consumed electricity. You can achieve this result by using the Electricity statistical dimension member in a formula allocation base: (Electricity &gt; 0.00) The following table shows the result when electricity consumption is applied as an allocation base for variable costs.
+Distribute the fixed cost evenly to the individual cost objects that consume electricity. To achieve this result, use the Electricity statistical dimension member in a formula allocation base: (Electricity > 0.00). The following table shows the result when you apply electricity consumption as an allocation base for variable costs.
 
 <table>
 <thead>
@@ -265,7 +268,7 @@ The fixed cost should be distributed evenly to the individual cost objects that 
 <tr>
 <td>CC001</td>
 <td>HR</td>
-<td>(1,000 &gt; 0.00)</td>
+<td>(1,000 > 0.00)</td>
 <td>1</td>
 <td>(1 ÷ 2) × 1,000.00</td>
 <td>500.00</td>
@@ -273,7 +276,7 @@ The fixed cost should be distributed evenly to the individual cost objects that 
 <tr>
 <td>CC002</td>
 <td>Finance</td>
-<td>(6,000 &gt; 0.00)</td>
+<td>(6,000 > 0.00)</td>
 <td>1</td>
 <td>(1 ÷ 2) × 1,000.00</td>
 <td>500.00</td>
@@ -281,7 +284,7 @@ The fixed cost should be distributed evenly to the individual cost objects that 
 <tr>
 <td>CC003</td>
 <td>Assembly</td>
-<td>(0 &gt; 0.00)</td>
+<td>(0 > 0.00)</td>
 <td>0</td>
 <td>(0 ÷ 2) × 1,000.00</td>
 <td>0.00</td>
@@ -416,15 +419,15 @@ The fixed cost should be distributed evenly to the individual cost objects that 
 </tbody>
 </table>
 
-For more information, see [Create and assign a cost distribution policy to a cost control unit](tasks/create-assign-cost-distribution-policy-cost-control-unit.md). 
+For more information, see [Create and assign a cost distribution policy to a cost control unit](tasks/create-assign-cost-distribution-policy-cost-control-unit.md).
 
 ### Step 3: Process the overhead rate calculation
 
-The overhead rate is used to charge one or more specific cost objects. The charge is based on a predetermined cost rate and the magnitude from the assigned allocation base. 
+Use the overhead rate to charge one or more specific cost objects. The charge is based on a predetermined cost rate and the magnitude from the assigned allocation base.
 
 #### Define the overhead rate
 
-Cost object CC001 HR contributes to a set of internal projects. A statistical dimension member that is named HR projects is created to measure the consumed magnitude.
+Cost object CC001 HR contributes to a set of internal projects. Create a statistical dimension member named **HR projects** to measure the consumed magnitude.
 
 <table>
 <thead>
@@ -447,7 +450,7 @@ Cost object CC001 HR contributes to a set of internal projects. A statistical di
 </tbody>
 </table>
 
-A predetermined cost rate for the cost projects contribution has been defined.
+Define a predetermined cost rate for the cost projects contribution.
 
 <table>
 <thead>
@@ -608,13 +611,13 @@ For more information, see [Perform overhead calculation](cost-rollup.md#perform-
 
 ### Step 4: Process the cost allocation calculation
 
-Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit. 
+Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit.
 
-[![Reciprocal method.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Reciprocal method](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### Define the cost allocation
 
-Here is a simple example that explains how you can trace the flow of cost. Cost object CC001 HR contributes to several cost objects. A statistical dimension member that is named HR services is created to measure the consumed magnitude.
+Here's a simple example that explains how you can trace the flow of cost. Cost object CC001 HR contributes to several cost objects. You create a statistical dimension member named HR services to measure the consumed magnitude.
 
 <table>
 <thead>
@@ -642,7 +645,7 @@ Here is a simple example that explains how you can trace the flow of cost. Cost 
 </tbody>
 </table>
 
-Cost object CC002 Finance contributes to several cost objects. A statistical dimension member that is named Finance services is created to measure the consumed magnitude.
+Cost object CC002 Finance contributes to several cost objects. You create a statistical dimension member named Finance services to measure the consumed magnitude.
 
 <table>
 <thead>
@@ -665,7 +668,7 @@ Cost object CC002 Finance contributes to several cost objects. A statistical dim
 </tbody>
 </table>
 
-Cost object CC003 Assembly contributes to several cost objects. A statistical dimension member that is named Assembly services is created to measure the consumed magnitude.
+Cost object CC003 Assembly contributes to several cost objects. You create a statistical dimension member named Assembly services to measure the consumed magnitude.
 
 <table>
 <thead>
@@ -688,7 +691,7 @@ Cost object CC003 Assembly contributes to several cost objects. A statistical di
 </tbody>
 </table>
 
-Cost object CC004 Packaging contributes to several cost objects. A statistical dimension member that is named Packaging services is created to measure the consumed magnitude.
+Cost object CC004 Packaging contributes to several cost objects. You create a statistical dimension member named Packaging services to measure the consumed magnitude.
 
 <table>
 <thead>
@@ -1113,7 +1116,7 @@ The following table shows the result when the Packaging services are applied as 
 <td>10001</td>
 <td>Electricity</td>
 <td>Fixed cost</td>
-<td>50,00</td>
+<td>50.00</td>
 <td>January 31, 2017</td>
 </tr>
 <tr>
@@ -1318,7 +1321,8 @@ The following table shows the result when the Packaging services are applied as 
 </table>
 
 ## Conclusion
-In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dummy cost center ID. Therefore, cost accountants will know that this cost must be allocated. In Cost accounting, the costs flow across organizational units and levels, based on the policies and rules that are applied. Each cost has been associated with an allocation base that provides the best assessment for the allocation of costs.
+
+In financial accounting, you post a cost of 10,000.00 for electricity to a dummy cost center ID. This posting alerts cost accountants that they need to allocate this cost. In cost accounting, costs flow across organizational units and levels based on the policies and rules that you apply. Each cost associates with an allocation base that provides the best assessment for the allocation of costs.
 
 Cost element | Cost object<br>CC099 | Cost object<br>CC001 | Cost object<br>CC002 | Cost object<br>CC003 | Cost object<br>CC004 | Cost object<br>Proj 1 | Cost object<br>Proj 2 | Cost object<br>Prod 1 | Cost object<br>Prod 2 | Total
 ---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
@@ -1328,10 +1332,6 @@ Fixed cost | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |  |  | 776.36 | 223.64 | 1,000.00
 Variable cost | 000 | 0.00 | 0.00 | 0.00 | 0.00 | 30.00 | 10.00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
-> This article shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, this overhead cost is allocated to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more information, see [Cost rollup policy and overhead calculation](cost-rollup.md).
-
-
-
-
+> This article shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, you allocate this overhead cost to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more information, see [Cost rollup policy and overhead calculation](cost-rollup.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

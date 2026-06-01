@@ -4,7 +4,7 @@
 title: Process enrollment eligibility
 description: This article explains how to run the enrollment eligibility process.
 author: ramagadu 
-ms.date: 04/25/2025
+ms.date: 05/15/2026
 ms.topic: how-to
 # optional metadata
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 This article explains how to run the enrollment eligibility process.
 
 1. In the **Benefits management** workspace, under **Processing**, select **Enrollment eligibility processing**.
-2. In the **Run benefit enrollment eligibility process** dialog, specify values for the following fields:
+1. In the **Run benefit enrollment eligibility process** dialog, enter values for the following fields:
 
    | Field | Description |
    | --- | --- |
@@ -41,32 +41,32 @@ This article explains how to run the enrollment eligibility process.
    | **From** | The date from which records are included in the processing. This date is based on the employee's start date. |
    | **To** | The date until which records are included in the processing. This date is based on the employee's start date. |
 
-3. If you want to run the process in the background, select **Run in the background** and do the following tasks:
+1. If you want to run the process in the background, select **Run in the background** and complete the following tasks:
 
    1. Enter information for the process.
-   2. To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.
-   3. To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.
-   4. Select **OK**. The process runs with the parameters you set.
+   1. To set up a recurring job, select **Recurrence**, enter the recurrence information, and then select **OK**.
+   1. To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.
+   1. Select **OK**. The process runs with the parameters you set.
 
-4. Select **OK**.
+1. Select **OK**.
 
-## View Process Results
+## View process results
 
 This article explains how to view eligibility process results.
 
 1. In the **Benefits management** workspace, under **Processing**, select **Process results**.
-2. In the **Process results** page, the following fields are specified:
+1. On **Process results** page, specify the following fields:
 
    | Field | Description |
    | --- | --- |
-   | **Process ID** | The unique ID for the combination of Worker, Legal entity, and process run. |
+   | **Process ID** | The unique ID for the combination of worker, legal entity, and process run. |
    | **Process type** | This field identifies the process that was run. For example: Enrollment. |
-   | **Time stamp** | The time that the eligibility process was run. |
+   | **Time stamp** | The time that the eligibility process ran. |
    | **Legal entity** | The legal entity specified during the enrollment process. |
    | **Worker** | The worker who was processed. |
-   | **Plan** | The Benefit plan that enrollment was attempted for. |
-   | **Eligibility rule** | The eligibility rule that was processed. If an error was encountered before eligibility was run, this field is blank. For example: If compensation wasn't defined for a worker, the eligibility process doesn't run, and this field remains blank. |
-   | **Result status** | The possible values are **Eligible** and **Ineligible**. The result status is **Ineligible** if the worker didn't meet the eligibility rule criteria, if the worker is missing required information such as a pay frequency or fixed compensation, or if there is information missing on the benefit plan that prevents workers from being enrolled. |
+   | **Plan** | The benefit plan that enrollment was attempted for. |
+   | **Eligibility rule** | The eligibility rule that was processed. If an error occurred before eligibility ran, this field is blank. For example: If compensation isn't defined for a worker, the eligibility process doesn't run, and this field remains blank. |
+   | **Result status** | The possible values are **Eligible** and **Ineligible**. The result status is **Ineligible** if the worker didn't meet the eligibility rule criteria, if the worker is missing required information such as a pay frequency or fixed compensation, or if there's information missing on the benefit plan that prevents workers from being enrolled. |
    | **Result message** | Indicates why a worker is ineligible for a benefit plan or if the eligibility rule passed. |
 
 ## Clean up benefits eligibility process results (preview)
@@ -78,19 +78,19 @@ This article explains how to view eligibility process results.
 
 In Dynamics 365 Human Resources, you can now clean up old benefits eligibility process results to help maintain system performance.
 
-Over time, the benefits eligibility process result table can become large and cause database time-outs. HR administrators can use this new feature to delete old records, based on a specified retention period.
+Over time, the benefits eligibility process result table can become large and cause database timeouts. HR administrators can use this new feature to delete old records, based on a specified retention period.
 
 Before you can use this feature, the **Benefits management** feature must be enabled.
 
 You can access the **Clean up benefits eligibility process results** feature from the following places:
 
-- **Human Resources** \> **Benefits management** \> **Processing** \> **Clean up benefits eligibility process results**
-- **Benefits management** \> **Processing** \> **Clean up benefits eligibility process results**
-- **Workspaces** \> **Benefits management** \> **Links** \> **Processing**
+- **Human Resources** > **Benefits management** > **Processing** > **Clean up benefits eligibility process results**
+- **Benefits management** > **Processing** > **Clean up benefits eligibility process results**
+- **Workspaces** > **Benefits management** > **Links** > **Processing**
 
 When you run the cleanup, consider the following information:
 
-- Enter the maximum age (in days). Records that are older than the maximum age are deleted.
+- Enter the maximum age in days. The process deletes records that are older than the maximum age.
 - You can run the cleanup immediately or schedule it as a batch job.
 
 The cleanup is specific to the legal entity.

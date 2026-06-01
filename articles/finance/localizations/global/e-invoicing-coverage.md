@@ -2,7 +2,7 @@
 title: Supported electronic invoicing countries and regions
 description: This article describes for which countries and regions electronic invoicing is supported or planned in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 04/28/2026
+ms.date: 05/21/2026
 ms.topic: concept-article
 ms.custom: 
   - bap-template
@@ -66,13 +66,13 @@ The next section contains detailed information about out-of-box e-invoicing func
 | Netherlands | Generation of electronic invoices for sales and project invoices and credit notes in the **UBL-OHNL** format. | Available |
 | New Zealand | <p>Generation of electronic invoices for sales and project invoices and credit notes in the New Zealand extension of the PEPPOL format.</p><p>Learn more: [Electronic invoicing for New Zealand](../apac/gs-apac-aus-nzl-electronic-invoices.md)</p> | Available |
 | Norway | <p>Generation of electronic invoices for sales and project invoices and credit notes in the **EHF** format.</p><p>Learn more: [Customer electronic invoices in Norway](../norway/emea-nor-e-invoices.md)</p> | Available |
-| Oman | <p>Generation of electronic invoices in the PEPPOL format and submission to the PEPPOL Delivery Network via the "last mile" third party connection.</p> <p>This will be enforced by August 2026 for the 100 largest tax paying companies in the country/region with following adoption for other groups of taxpayers by year 2028.</p>| Planned for 2026 release wave 1 |
+| Oman | <p>Generation of electronic invoices in the PEPPOL format and submission to the PEPPOL Delivery Network via the "last mile" third party connection.</p> <p>This will be enforced by August 2026 for the 100 largest tax paying companies in the country/region with following adoption for other groups of taxpayers by year 2028.</p>| Planned for 2026 release wave 2 or later |
 | Panama | <p>Generation of e-documents for invoices in the country/region-specific format. Submission to the Panamanian Tax Authority (DGI) via a third-party "last mile" connection to Edicom.</p><p>Learn more: [Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md)</p> | Available |
 | Paraguay | <p>Generation of electronic documents and electronic tax documents in the standardized country/region-specific XML format. Submission to the Paraguayan Tax Authority (SET) via a third-party "last mile" connection to Edicom.</p><p>Learn more in [Electronic invoicing for Paraguay](../iberoamerica/ltm-paraguay-electronic-invoice-configuration.md).</p> | Available |
 | Peru | Generation of electronic invoicing documents in the standard XML format based on UBL V2.1 and adopted by SUNAT, also known as CPE (Electronic Payment Vouchers). Submission to the Peruvian Tax Authority (SUNAT) via a third-party "last mile" connection to Edicom. | Planned for 2026 release wave 1 or later |
 | Poland | <p>Generation and direct submission to the governmental KSEF system of electronic invoices for sales, project, and advance invoices and credit notes in a country/region-specific format. Import of vendor electronic invoices.</p><p>Learn more: [Get started with electronic invoicing for Poland](../poland/gs-e-invoicing-pol-get-started.md)</p> | Available |
 | Saudi Arabia | <p>Generation and direct submission to ZATCA of electronic invoices for customer prepayments, sales and project invoices, credit notes, and debit notes in the country/region-specific format.</p><p>Learn more: [Electronic invoicing in Saudi Arabia](../mea/gs-e-invoicing-sa-get-started.md)</p> | Available |
-| Singapore | <p>Generation of electronic invoices in the Peppol International (PINT) format and submission to the "InvoiceNow" network via the "last mile" 3rd-party connection to Edicom.</p> <p>Learn more: [Electronic invoicing for Singapore](../singapore/apac-singapore-electronic-invoices.md)</p> | Available in Public preview. General availability is planned for 2025 release wave 2|
+| Singapore | <p>Generation of electronic invoices in the Peppol International (PINT) format and submission to the "InvoiceNow" network via the "last mile" 3rd-party connection to Edicom.</p> <p>Learn more: [Electronic invoicing for Singapore](../singapore/apac-singapore-electronic-invoices.md)</p> | Available |
 | Spain | Generation of electronic invoices for sales and project invoices and credit notes in the **FacturaE** format. | <ul><li>Available</li><li>B2B mandate is expected in 2027</li></ul> |
 | Spain | <p>Generation and submission to the governmental SII system of required data in the country/region-specific format.</p><p>Learn more: [Immediate Supply of Information on VAT (SII)](../spain/emea-esp-sii.md)</p> | Available |
 | Türkiye | Generation of e-invoices for customer invoices in the format mandated by Turkish Revenue Administration to meet e-invoicing obligations. | Available in Public preview. General availability is planned for 2025 release wave 2 |
