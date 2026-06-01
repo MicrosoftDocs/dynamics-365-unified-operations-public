@@ -47,7 +47,7 @@ The versions view shows a list of all major and minor versions of the selected t
 
 - The newest versions appear first. The version currently in use is named *Current*.
 - Expand or collapse major versions to show or hide their minor versions.  
-- Select the link in the **References** column to open a list of profiles that are using the time series version as input.
+- Select the link in the **References** column to open a list of profiles that use the time series version as input.
 - Select the link in the **View** column to open the version itself.
 
 :::image type="content" source="media/data-cleanup-versions.png" alt-text="Screenshot of the Data cleanup versions view showing major and minor versions with status, creation date, data rows, and references." lightbox="media/data-cleanup-versions.png":::
@@ -71,7 +71,7 @@ Each version listed on the version view of the **Data cleanup** page shows one o
 
 ## Understand references
 
-When you use a time series or time series version as input for a calculation or forecast profile, the system creates a reference between the time series and the profile. To preserve data integrity, the system won't allow you to delete a time series or version that is referenced by a profile. You must remove all references to a time series or version before you can delete it. The **Data cleanup** page shows the number of references for each version and provides tools for viewing and removing them, as described later in this article.
+When you use a time series or time series version as input for a calculation or forecast profile, the system creates a reference between the time series and the profile. To preserve data integrity, the system doesn't allow you to delete a time series or version that is referenced by a profile. You must remove all references to a time series or version before you can delete it. The **Data cleanup** page shows the number of references for each version and provides tools for viewing and removing them, as described later in this article.
 
 ## Delete time series versions
 
@@ -80,16 +80,16 @@ To delete one or more versions of a time series, follow these steps:
 1. On the navigation pane, select **Data management** \> **Data cleanup**.
 1. Find the time series that has the versions you want to delete and select the link in the **Name** column to open the versions view for that time series.
 1. Find a version you want to delete and check the **References** column for that time series version. If it shows that references exist, do the following steps:
-    - Select the link in the **References** column to open a dialog that lists the profiles that are using your target time series version.
+    - Select the link in the **References** column to open a dialog that lists the profiles that use your target time series version.
     - Open each listed profile and either delete it or change its settings to use a different input.
     - When you've removed all references, close the dialog to return to the **Data cleanup** page.
 1. Repeat the previous step as needed for each version you want to delete.
-1. In the versions view, select the checkbox for each version you want to delete. Selecting a major version automatically selects all of its eligible minor versions, and clearing it clears them again. You can't select the *Current* version or any version that has references.
+1. In the versions view, select the check box for each version you want to delete. Selecting a major version automatically selects all of its eligible minor versions, and clearing it clears them. You can't select the *Current* version or any version that has references.
 1. On the toolbar, select **Delete selected versions**.
 1. You're asked to confirm the deletion. Select **Confirm** to proceed, or **Cancel** to back out.
 
 > [!NOTE]
-> Deleting versions of a time series also affects worksheets that include them.
+> Deleting versions of a time series also affects worksheets that include them. If the deleted version is the main version for a worksheet, the system also deletes the worksheet. If a deleted version isn't the main version, then the system just deletes its reference from the worksheet, which means that the worksheet still appears but without the deleted version.
 
 ## Delete an entire time series
 
@@ -98,15 +98,15 @@ To delete one or more complete time series, including all of their versions and 
 1. On the navigation pane, select **Data management** \> **Data cleanup**.
 1. Find the time series you want to delete.
 1. Check the **References** column for your selected time series. If it shows that references exist, do the following steps:
-    - Select the link in the **References** column to open a dialog that lists the profiles that are using your target time series.
+    - Select the link in the **References** column to open a dialog that lists the profiles that use your target time series.
     - Open each listed profile and either delete it or change its settings to use a different input.
     - When you've removed all references, close the dialog to return to the **Data cleanup** page.
-1. For your target time series, mark the checkbox in the left column.
+1. For your target time series, select the checkbox in the left column.
 1. On the toolbar, select **Delete selected timeseries**.
 1. You're asked to confirm the deletion. Select **Confirm** to proceed, or **Cancel** to back out.
 
 > [!NOTE]
-> Deleting time series also affects worksheets that include them.
+> Deleting time series also affects worksheets that include them. If the deleted time series is the main time series for a worksheet, the system also deletes the worksheet. If a deleted time series isn't the main time series, then the system just deletes its reference from the worksheet, which means that the worksheet still appears but without the deleted time series.
 
 ## Related information
 
