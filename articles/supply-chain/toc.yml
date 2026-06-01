@@ -1809,6 +1809,8 @@
           href: inventory/inventory-visibility-diagnostic-tool.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
+        - name: Fix on-hand inventory problems with an on-hand consistency check
+          href: inventory/inventory-onhand-consistency-check.md
     - name: Sensor Data Intelligence (preview)
       items:
       - name: Sensor Data Intelligence home page
