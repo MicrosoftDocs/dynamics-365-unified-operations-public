@@ -6,7 +6,8 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 05/29/2026
+ms.date: 06/01/2026
+ai-usage: ai-assisted
 ms.custom: 
   - bap-template
 ---
@@ -26,24 +27,43 @@ The *data cleanup* feature lets you review everything that's stored and permanen
 
 Only users with the *Demand planning manager* role can access data cleanup. This restriction ensures that only authorized users can permanently remove data.
 
-## Understand time series versions
+## Open the data cleanup page
+
+To review and clean up time series data, open the Demand planning app, go to the navigation pane, and select **Data management** \> **Data cleanup**.
+
+The **Data cleanup** page shows a list of all time series in the system. For each time series, you can see the number of versions, the number of data rows, and whether any references to the time series or its versions still exist.
+
+- Select a time series name to see its versions.
+- Select the link in the **References** column to open a list of profiles that are using the time series as input.
+- Select the link in the **View** column to open the time series itself.
+
+:::image type="content" source="media/data-cleanup.png" alt-text="Screenshot of the Data cleanup page in Demand Planning listing time series with versions, data rows, and references." lightbox="media/data-cleanup.png":::
+
+## View time series versions
+
+To view the versions of a time series, select the link in the **Name** column for that time series on the **Data cleanup** page.
+
+The versions view shows a list of all major and minor versions of the selected time series, along with details such as their status, creation date, number of data rows, and references.
+
+- The newest versions appear first. The version currently in use is named *Current*.
+- Expand or collapse major versions to show or hide their minor versions.  
+- Select the link in the **References** column to open a list of profiles that are using the time series version as input.
+- Select the link in the **View** column to open the version itself.
+
+:::image type="content" source="media/data-cleanup-versions.png" alt-text="Screenshot of the Data cleanup versions view showing major and minor versions with status, creation date, data rows, and references." lightbox="media/data-cleanup-versions.png":::
+
+### Understand time series versions
 
 Versions are organized in two levels:
 
 - **Major versions** – Created by a job or action such as a transformation, calculation, forecast, revert, or copy. They're numbered sequentially (1, 2, 3, and so on).
-- **Minor versions** – Individual data versions within a major version. They're numbered hierarchically (1.1, 1.2, and so on). Users name minor versions and they typically represent saved edits to the major version.
+- **Minor versions** – Individual data versions within a major version. They're numbered hierarchically (1.1, 1.2, and so on). Users name minor versions and they typically represent saved edits of the major version.
 
 Learn more about how versions are created and managed in [Time series, worksheets, and planning data](time-series.md#time-series-versions-version-control-and-change-log).
 
-## Open the data cleanup page
+### Understand version statuses
 
-To review and clean up time series data, in the Demand planning app navigation pane, go to the **Data management** group and select **Data cleanup**.
-
-The page shows your time series and their versions. The newest versions appear first. You can expand or collapse major versions to show or hide their minor versions. The version currently in use is marked *(current)*.
-
-## Understand version statuses
-
-Each version listed on the **Data cleanup** page shows one of the following statuses:
+Each version listed on the version view of the **Data cleanup** page shows one of the following statuses:
 
 - *Active* – The version exists normally and is available for use.
 - *Marked for deletion* – You confirmed the deletion of this version. A background cleanup process removes the data shortly afterward. This is a normal intermediate state, not an error.
@@ -51,28 +71,42 @@ Each version listed on the **Data cleanup** page shows one of the following stat
 
 ## Understand references
 
-When you use a time series or time series version as input for a calculation or forecast profile, the system creates a reference between the time series and the profile. Because of this dependency, you must remove all references to a time series or version before you can delete it. You can't select versions that have references for deletion.
+When you use a time series or time series version as input for a calculation or forecast profile, the system creates a reference between the time series and the profile. Because of this dependency, you must remove all references to a time series or version before you can delete it. You can't select versions that have references for deletion. The **Data cleanup** page shows the number of references for each version, and you can select the link to see and open the profiles that are using it, as described later in this article.
 
 ## Delete time series versions
 
 To delete one or more time series versions, follow these steps:
 
-1. Open the **Data cleanup** page.
-1. In the versions view, select the checkboxes of the versions you want to delete. Selecting a major version automatically selects all of its eligible minor versions, and clearing it clears them again. You can't select the *(current)* version or any version that has references for deletion.
-1. Select **Delete selected versions**.
+1. On the navigation pane, select **Data management** \> **Data cleanup**.
+1. Find the time series that has the versions you want to delete and select the link in the **Name** column to open the versions view for that time series.
+1. Find a version you want to delete and check the **References** column for that time series version. If it shows that references exist, do the following steps:
+    - Select the link in the **References** column to open a dialog that lists the profiles that are using your target time series version.
+    - Open each listed profile and either delete it or change its settings to use a different input.
+    - When you've removed all references, close the dialog to return to the **Data cleanup** page.
+1. Repeat the previous step as needed for each version you want to delete.
+1. In the versions view, select the checkbox for each version you want to delete. Selecting a major version automatically selects all of its eligible minor versions, and clearing it clears them again. You can't select the *Current* version or any version that has references.
+1. On the toolbar, select **Delete selected versions**.
 1. You're asked to confirm the deletion. Select **Confirm** to proceed, or **Cancel** to back out.
+
+> [!NOTE]
+> Deleting versions of a time series also affects worksheets that include them.
 
 ## Delete an entire time series
 
 To delete one or more complete time series, including all of their versions and data, follow these steps.
 
-1. Open the **Data cleanup** page.
-1. In the time series list, select the time series you want to remove.
-1. Select **Delete selected timeseries**.
+1. On the navigation pane, select **Data management** \> **Data cleanup**.
+1. Find the time series you want to delete.
+1. Check the **References** column for your selected time series. If it shows that references exist, do the following steps:
+    - Select the link in the **References** column to open a dialog that lists the profiles that are using your target time series.
+    - Open each listed profile and either delete it or change its settings to use a different input.
+    - When you've removed all references, close the dialog to return to the **Data cleanup** page.
+1. For your target time series, mark the checkbox in the left column.
+1. On the toolbar, select **Delete selected timeseries**.
 1. You're asked to confirm the deletion. Select **Confirm** to proceed, or **Cancel** to back out.
 
 > [!NOTE]
-> Deleting versions of a time series or entire time series also affects worksheets that include them.
+> Deleting time series also affects worksheets that include them.
 
 ## Related information
 
