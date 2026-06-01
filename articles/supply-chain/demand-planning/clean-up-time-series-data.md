@@ -41,7 +41,7 @@ The **Data cleanup** page shows a list of all time series in the system. For eac
 
 ## View time series versions
 
-To view the versions of a time series, select the link in the **Name** column for that time series on the **Data cleanup** page.
+To view the versions of a time series, open the the **Data cleanup** page and select the link in the **Name** column for the target time series.
 
 The versions view shows a list of all major and minor versions of the selected time series, along with details such as their status, creation date, number of data rows, and references.
 
@@ -59,23 +59,23 @@ Versions are organized in two levels:
 - **Major versions** – Created by a job or action such as a transformation, calculation, forecast, revert, or copy. They're numbered sequentially (1, 2, 3, and so on).
 - **Minor versions** – Individual data versions within a major version. They're numbered hierarchically (1.1, 1.2, and so on). Users name minor versions and they typically represent saved edits of the major version.
 
-Learn more about how versions are created and managed in [Time series, worksheets, and planning data](time-series.md#time-series-versions-version-control-and-change-log).
+Learn more about how to create and manage versions in [Time series, worksheets, and planning data](time-series.md#time-series-versions-version-control-and-change-log).
 
 ### Understand version statuses
 
-Each version listed on the version view of the **Data cleanup** page shows one of the following statuses:
+Each version listed on the version view of the **Data cleanup** page shows one of the following status values:
 
 - *Active* – The version exists normally and is available for use.
-- *Marked for deletion* – You confirmed the deletion of this version. A background cleanup process removes the data shortly afterward. This is a normal intermediate state, not an error.
-- *Failed deletion* – A cleanup attempt didn't finish, for example because of a temporary issue. The system retries these automatically, so a version might briefly show this status before the retry succeeds.
+- *Marked for deletion* – You confirmed the deletion of this version. A background cleanup process will soon remove the version. This is a normal intermediate state, not an error.
+- *Failed deletion* – A cleanup attempt didn't finish, typically because of a temporary issue. The system retries these automatically, so a version might briefly show this status before the retry succeeds.
 
 ## Understand references
 
-When you use a time series or time series version as input for a calculation or forecast profile, the system creates a reference between the time series and the profile. Because of this dependency, you must remove all references to a time series or version before you can delete it. You can't select versions that have references for deletion. The **Data cleanup** page shows the number of references for each version, and you can select the link to see and open the profiles that are using it, as described later in this article.
+When you use a time series or time series version as input for a calculation or forecast profile, the system creates a reference between the time series and the profile. To preserve data integrity, the system won't allow you to delete a time series or version that is referenced by a profile. You must remove all references to a time series or version before you can delete it. The **Data cleanup** page shows the number of references for each version and provides tools for viewing and removing them, as described later in this article.
 
 ## Delete time series versions
 
-To delete one or more time series versions, follow these steps:
+To delete one or more versions of a time series, follow these steps:
 
 1. On the navigation pane, select **Data management** \> **Data cleanup**.
 1. Find the time series that has the versions you want to delete and select the link in the **Name** column to open the versions view for that time series.
