@@ -15,6 +15,8 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
+<!-- KFM: I have merged this with the similar article here: [Run an on-hand consistency check](on-hand-consistency-check.md) and am planning to remove this draft. -->
+
 Microsoft Dynamics 365 Supply Chain Management provides an on-hand consistency check that recalculates inventory on-hand data from the inventory transactions (`InventTrans`) table. The check reconstructs the `InventSum` and `WHSInventReserve` tables for the items that you select, so that the on-hand list and physical inventory match the underlying transactions.
 
 ## When to run an on-hand consistency check

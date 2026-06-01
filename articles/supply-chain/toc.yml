@@ -1737,8 +1737,6 @@
           href: sales-marketing/reserve-same-batch-sales-order.md
       - name: Inventory control
         items:
-        - name: Run an on-hand consistency check
-          href: inventory/inventory-onhand-consistency-check-run.md
         - name: Inventory close
           href: cost-management/inventory-close.md
         - name: Running average cost price
@@ -1811,7 +1809,7 @@
           href: inventory/inventory-visibility-diagnostic-tool.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
-      - name: Troubleshoot on-hand inventory problems with the on-hand consistency check
+      - name: Run an on-hand consistency check
         href: inventory/on-hand-consistency-check.md
     - name: Sensor Data Intelligence (preview)
       items:

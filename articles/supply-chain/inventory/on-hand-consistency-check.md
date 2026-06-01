@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot on-hand inventory problems with the on-hand consistency check
+title: Run an on-hand consistency check
 description: Learn how to run the on-hand consistency check in Dynamics 365 Supply Chain Management, the performance impact, and how the Skip on-hand aggregation and clean up parameter interacts with the on-hand database cleanup jobs.
 author: banluo-ms
 ms.author: banluo
@@ -11,19 +11,25 @@ ms.custom:
   - bap-template
 ---
 
-# Troubleshoot on-hand inventory problems with the on-hand consistency check
+# Run an on-hand consistency check
 
 The on-hand consistency check is a corruption-recovery tool that rebuilds the on-hand inventory tables (`InventSum` and, for warehouse management items, `WHSInventReserve`) from the inventory transactions table (`InventTrans`). Use it when you have confirmed on-hand data corruption—not as a periodic maintenance task.
 
 This article explains when to run the check, how to run it safely, the performance characteristics you should plan for, and how the **Skip on-hand aggregation and clean up in on-hand consistency check** parameter interacts with the standard on-hand database cleanup jobs.
 
-## Symptoms that justify running the check
+> [!IMPORTANT]
+> If Inventory Visibility is enabled on your system, complete the additional preparation steps described in [Run on-hand consistency checks while Inventory Visibility is enabled](inventory-onhand-consistency-check.md) before you run the on-hand consistency check as described in this article.
 
-Run the on-hand consistency check only after you confirm one or more of the following conditions:
+## When to run an on-hand consistency check
+
+Run an on-hand consistency check when you observe symptoms such as the following for one or more items:
 
 - The **On-hand list** shows a quantity that doesn't match the sum of the related inventory transactions for the same dimensions.
 - Inventory close or recalculation fails with an error referencing negative on-hand for an item whose item model group doesn't allow negative inventory (for example, *Inventory closing can't proceed because available physical on-hand inventory on item \<Item\> is currently negative*).
-- A user, integration, or a data migration directly modified the `InventSum`, `WHSInventReserve`, or `InventTrans` table outside of standard posting paths.
+- Negative on-hand quantities exist that can't be explained by posted transactions.
+- Physical inventory or available quantity doesn't match the sum of posted inventory transactions.
+
+These symptoms typically indicate that the `InventSum` or `WHSInventReserve` tables are out of sync with `InventTrans`. The most common cause is a data inconsistency introduced by a script, external process, or user action that updated `InventTrans` directly without recalculating the summary tables. Running the consistency check in *Fix error* mode rebuilds the summary tables from the transactions, which resolves the discrepancy.
 
 If none of these conditions apply, don't run the check. The dedicated on-hand entries cleanup jobs are the correct tool for routine maintenance.
 
@@ -32,9 +38,9 @@ If none of these conditions apply, don't run the check. The dedicated on-hand en
 Here are some rules that illustrate when not to run the on-hand consistency check:
 
 - Don't schedule the on-hand consistency check as a recurring batch job. It isn't a maintenance routine.
-- Don't run it across all items during business hours. The check replays the entire `InventTrans` history per item and takes locks on `InventSum` and `WHSInventReserve`.
-- Don't run it with **Check/Fix** set to *Fix error* as your first action. Always run it in *Check* mode first and review the log.
-- Don't run it as a precaution before or after upgrades, cleanup jobs, or routine close. None of those operations corrupt on-hand data.
+- Don't run the check across all items during business hours. The check replays the entire `InventTrans` history per item and takes locks on `InventSum` and `WHSInventReserve`.
+- Don't run the check with **Check/Fix** set to *Fix error* as your first action. Always run it in *Check* mode first and review the log.
+- Don't run the check as a precaution before or after upgrades, cleanup jobs, or routine close. None of those operations corrupt on-hand data.
 
 ## How to run the check safely
 
@@ -46,10 +52,16 @@ To run the on-hand consistency check, follow these steps:
 1. Click on the text in the **Item** row (not the check box) so that the entire row has a blue background.
 1. Open the **More** menu (**...**) and select **Dialog**.
 1. Use the dialog box to filter the run to the specific item or item range that's affected. Running on *all items* is rarely the right choice.
+
+    > [!TIP]
+    > Scope the check to a single item, or to as few items as possible, whenever you can. Running an on-hand consistency check for all items processes the entire `InventTrans` table and can take a long time on large datasets. Limiting the scope through the **Dialog** filter makes the check finish much faster and reduces the risk of timeouts.
+
 1. Select **OK** to close the filter dialog.
 1. In the **Consistency check** dialog, set **Check/Fix** to *Check* and then select **OK** to run the check. Review the log when it completes.
 1. Select **Show messages** (bell icon at the top-right of the page) to open the **Action center** and review the messages for any errors or warnings.
 1. If errors are confirmed, repeat this procedure with **Check/Fix** set to *Fix error*, ideally as a batch job outside business hours.
+
+If the *Fix error* run doesn't resolve the discrepancy, contact Microsoft Support or your partner.
 
 ## Performance considerations
 
@@ -63,11 +75,15 @@ To keep the run predictable:
 
 ## Choose whether to apply on-hand aggregation and clean up
 
-You can choose to either run or skip on-hand cleanup when the on-hand consistency check runs in *Fix error* mode. The **Skip on-hand aggregation and clean up in on-hand consistency check** parameter controls this option. To set this option, follow these steps:
+You can choose to either run or skip on-hand cleanup when the on-hand consistency check runs in *Fix error* mode.
+
+For very large datasets, you can shorten the run time of the consistency check by skipping the aggregation and clean-up steps that the check performs alongside the core recalculation. The recalculation that recreates `InventSum` records still runs; only the non-essential clean up is skipped.
+
+To set this option, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. Open the **General** tab.
-1. In the **On-hand consistency check clean up** field group, set **Skip on-hand aggregation and clean up in on-hand consistency check** to one of the following values: 
+1. In the **On-hand consistency check clean up** field group, set **Skip on-hand aggregation and clean up in on-hand consistency check** to one of the following values:
     - *Yes* – The consistency check skips the on-hand cleanup side effect and focuses solely on rebuilding the on-hand tables. This choice results in a faster run, but zero-quantity rows aren't cleaned up.
     - *No* – The consistency check includes the on-hand cleanup side effect. It also aggregates and deletes zero-quantity rows for the items in scope. This choice results in a longer run time, but it tidies up the on-hand tables. This value is the default setting.
 
@@ -145,5 +161,6 @@ If you suspect on-hand data corruption, use the following workflow to investigat
 
 ## Related articles
 
-- [Warehouse management on-hand entries cleanup job](/dynamics365/supply-chain/warehousing/onhand-cleanup)
-- [Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines?toc=/dynamics365/supply-chain/toc.json)
+- [Warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md)
+- [Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md)
+- [Run on-hand consistency checks while Inventory Visibility is enabled](inventory-onhand-consistency-check.md)
