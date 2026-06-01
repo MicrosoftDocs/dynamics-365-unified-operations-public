@@ -1,5 +1,5 @@
 ---
-title: Fix on-hand inventory problems with an on-hand consistency check
+title: Troubleshoot on-hand inventory problems with the on-hand consistency check
 description: Learn how to run the on-hand consistency check in Dynamics 365 Supply Chain Management, the performance impact, and how the Skip on-hand aggregation and clean up parameter interacts with the on-hand database cleanup jobs.
 author: banluo-ms
 ms.author: banluo
@@ -11,9 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Fix on-hand inventory problems with an on-hand consistency check
+# Troubleshoot on-hand inventory problems with the on-hand consistency check
 
-The on-hand consistency check is a corruption-recovery tool that rebuilds the on-hand inventory tables (`InventSum` and, for warehouse management items, `WHSInventReserve`) from the inventory transactions table (`InventTrans`). Use it when you have confirmed on-hand data corruption — not as a periodic maintenance task.
+The on-hand consistency check is a corruption-recovery tool that rebuilds the on-hand inventory tables (`InventSum` and, for warehouse management items, `WHSInventReserve`) from the inventory transactions table (`InventTrans`). Use it when you have confirmed on-hand data corruption—not as a periodic maintenance task.
 
 This article explains when to run the check, how to run it safely, the performance characteristics you should plan for, and how the **Skip on-hand aggregation and clean up in on-hand consistency check** parameter interacts with the standard on-hand database cleanup jobs.
 
@@ -28,6 +28,8 @@ Run the on-hand consistency check only after you confirm one or more of the foll
 If none of these conditions apply, don't run the check. The dedicated on-hand entries cleanup jobs are the correct tool for routine maintenance.
 
 ## When not to run the check
+
+Here are some rules that illustrate when not to run the on-hand consistency check:
 
 - Don't schedule the on-hand consistency check as a recurring batch job. It isn't a maintenance routine.
 - Don't run it across all items during business hours. The check replays the entire `InventTrans` history per item and takes locks on `InventSum` and `WHSInventReserve`.
@@ -46,7 +48,7 @@ To run the on-hand consistency check, follow these steps:
 1. Use the dialog box to filter the run to the specific item or item range that's affected. Running on *all items* is rarely the right choice.
 1. Select **OK** to close the filter dialog.
 1. In the **Consistency check** dialog, set **Check/Fix** to *Check* and then select **OK** to run the check. Review the log when it completes.
-1. Open the **Action center** (bell icon at the top-right of the page) and review the messages for any errors or warnings.
+1. Select **Show messages** (bell icon at the top-right of the page) to open the **Action center** and review the messages for any errors or warnings.
 1. If errors are confirmed, repeat this procedure with **Check/Fix** set to *Fix error*, ideally as a batch job outside business hours.
 
 ## Performance considerations
@@ -78,7 +80,7 @@ When you run the on-hand consistency check with **Check/Fix** set to *Fix error*
     - **On-hand entries aggregation by financial dimensions** – Aggregates zero-quantity `InventSum` rows up to the financial inventory dimension level. This operation uses the same logic as the standalone *On-hand entries aggregation by financial dimensions* cleanup job, scoped to the item.
     - **On-hand cleanup** – For warehouse management items, runs the same logic as the *Warehouse management on-hand entries cleanup* job to delete zero-quantity rows in `InventSum` and `WHSInventReserve` for the item. For non-warehouse-management items, the system runs the same logic as the *On-hand entries cleanup* job for the item's tracking-dimension rows.
 
-If the aggregation or cleanup step fails for a specific item, the system logs a warning (*On-hand clean up is failed for item \<Item\> in consistency check*) and continues with the next item. The recalculation work for that item is still completed–only the cleanup operation is skipped.
+If the aggregation or cleanup step fails for a specific item, the system logs a warning (*On-hand clean up is failed for item \<Item\> in consistency check*) and continues with the next item. The recalculation work for that item is still completed—only the cleanup operation is skipped.
 
 ### When to skip on-hand aggregation and clean up
 
@@ -122,13 +124,13 @@ Reports that depend on zero-quantity on-hand rows include those listed in the fo
 | *Physical inventory by inventory dimension* | When the **As of date** parameter is set, or when **Closed transactions** is selected, deleted rows no longer appear in the report output. |
 | *On-hand list* (with the **Quantity \<\> 0** filter cleared or **Closed transactions** selected in **Dimensions display**) | Closed or zero-quantity dimensions no longer appear at the level (for example, license plate) where they were deleted. |
 
-### How to mitigate
+### How to mitigate the impact on reports
 
 To mitigate the impact of cleanup on historical and "as of date" reports, use the following approaches:
 
 - **Don't run the consistency check in *Fix error* mode with the default parameter setting if you rely on these reports for the items in scope** – Set **Skip on-hand aggregation and clean up in on-hand consistency check** to *Yes* for that run, so the recalculation doesn't also delete zero-quantity rows.
 - **Run the historical reports before you schedule the cleanup jobs in environments where the reports are business-critical** – Reports that are already generated aren't affected retroactively.
-- **Weigh the trade-off per environment** –The cleanup jobs and the inline cleanup in the consistency check exist for performance reasons. The performance gains are real, and the lost dimension-level visibility is usually acceptable. However, it isn't acceptable in environments where the reports listed earlier are part of statutory or business-critical reporting.
+- **Weigh the trade-off per environment** – The cleanup jobs and the inline cleanup in the consistency check exist for performance reasons. The performance gains are real, and the lost dimension-level visibility is usually acceptable. However, it isn't acceptable in environments where the reports listed earlier are part of statutory or business-critical reporting.
 
 ## Recommended workflow when corruption is suspected
 
