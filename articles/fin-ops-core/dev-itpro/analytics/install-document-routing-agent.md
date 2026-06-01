@@ -56,7 +56,7 @@ Applications use the Document Routing Agent to manage the spooling of documents 
 After you install the application, you can register local printers as network printers for the applications.
 
 > [!NOTE]
-> It's recommended to update the Document Routing Agent to the most current version whenever the application release on the environment has been updated, othgerwise you might experience issues such as:
+> It's recommended to update the Document Routing Agent to the most current version whenever the application release on the environment has been updated, otherwise you might experience issues such as:
 >
 > Observable performance degradation in applications, Document loss that is associated with orphaned print jobs, Inconsistent handling of printed documents that have custom margins
 >
