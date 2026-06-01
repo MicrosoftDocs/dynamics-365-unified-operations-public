@@ -100,6 +100,8 @@ To activate the capability to change ER destinations at runtime, enable the **Al
 
 :::image type="content" source="./media/ERdestinaiotnChangeUI.jpg" alt-text="Screenshot of adjusting ER destinations at runtime.":::
 
+:::image type="content" source="./media/ER-PrintErWhenPostingPackinSlipOrInvoice.png" alt-text="Packing slip or invoice print setup electronic reporting button":::
+
 > [!NOTE]
 > When the **Use print management destination** option is set to **Yes**, the system uses the default ER destinations that are configured for specific ER reports. All manual changes that are made in the dialog box are ignored. Set the **Use print management destination** option to **No** to process documents to the ER destinations that are defined in the dialog box immediately before you run the reports.
 
