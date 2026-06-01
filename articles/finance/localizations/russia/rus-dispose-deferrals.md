@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
@@ -38,7 +38,7 @@ To dispose of deferrals, follow these steps:
 1. On the Action Pane, select **Functions** \> **Edit line** to edit the journal before you post it.
 1. On the Action Pane, select **Post** \> **Post** to post the voucher. Retirement on life time is shown as the **Disposal date** value on the deferrals value model.
 
-    ![Deferrals models page.](../media/rus-dispose-deferrals-01.png)
+    :::image type="content" source="../media/rus-dispose-deferrals-01.png" alt-text="Screenshot of the Deferrals models page.":::
 
     > [!NOTE]
     > A journal line will be posted only if there is no gap between the last posted write-off and the disposal period.

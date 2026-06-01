@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQ for Generative insights for Demand planning (production ready preview)
+title: Responsible AI FAQ for Generative insights for Demand planning (production-ready preview)
 description: Access answers to frequently asked questions about the AI technology that's used in the "Generative insights for Demand planning" feature.
 author: AndersEvenGirke
 ms.author: aevengir
@@ -12,7 +12,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Responsible AI FAQ for Generative insights for Demand planning (production ready preview)
+# Responsible AI FAQ for Generative insights for Demand planning (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

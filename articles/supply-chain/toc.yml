@@ -20,8 +20,6 @@
           href: get-started/whats-new-scm-10-0-47.md
         - name: Supply Chain Management 10.0.46 (December 2025)
           href: get-started/whats-new-scm-10-0-46.md
-        - name: Supply Chain Management 10.0.45 (September 2025)
-          href: get-started/whats-new-scm-10-0-45.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -122,7 +120,7 @@
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/supply-chain
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/supply-chain
-        - name: Immersive Home (production ready preview)
+        - name: Immersive Home
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/supply-chain
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/supply-chain
@@ -595,10 +593,12 @@
           href: asset-management/controlling-and-reporting/item-where-used.md
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
-      - name: The Asset management mobile app
+      - name: The Asset Management mobile app
         items:
         - name: Asset Management mobile app overview
           href: asset-management/asset-management-mobile-app/asset-management-mobile-app-overview.md
+        - name: Asset Management mobile app open-source release
+          href: asset-management/asset-management-mobile-app/open-source-release.md
         - name: Onboard the Asset Management mobile app
           href: asset-management/asset-management-mobile-app/onboard-app.md
         - name: Manage work orders using the Asset Management mobile app
@@ -1931,6 +1931,10 @@
           href: master-planning/planning-optimization/negative-on-hand.md
         - name: Calculate sales order delivery dates using CTP
           href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
+        - name: Keep supply for confirmed demand (Preview)
+          href: master-planning/planning-optimization/keep-supply-for-confirmed-demand.md
+        - name: Optimize confirmed dates for CTP line changes (Preview)
+          href: master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes.md
       - name: Set up master plans
         items:
         - name: Master plans overview
@@ -2125,7 +2129,7 @@
           href: demand-planning/time-series.md
         - name: Copilot grid cursor
           href: demand-planning/copilot-grid-cursor.md
-        - name: Generative insights for Demand planning (production ready preview)
+        - name: Generative insights for Demand planning (production-ready preview)
           href: demand-planning/generative-insights.md
         - name: Analyze demand plans with Copilot
           href: demand-planning/demand-planning-copilot.md
@@ -2317,6 +2321,8 @@
           href: unified-pricing-management/upm-price-attributes-setup.md
         - name: Price attribute groups
           href: unified-pricing-management/upm-price-attribute-groups.md
+        - name: Non-attribute based rebate management deals
+          href: unified-pricing-management/upm-enable-standard-rebates.md
         - name: Customer and product price attribute groups
           href: unified-pricing-management/upm-customer-product-attribute-groups.md
         - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
@@ -2457,24 +2463,40 @@
           href: procurement/tasks/create-project-purchase-order.md
         - name: Create a repeat purchase order
           href: procurement/tasks/create-repeat-purchase-order.md
-      - name: Supplier Communications Agent (production ready preview)
+      - name: Procurement Agent (production-ready preview)
         items:
-        - name: Supplier Communications Agent overview
-          href: procurement/supplier-com-agent-overview.md
-        - name: Try out the updates from vendors feature without a complete email setup
-          href: procurement/procurement-agent-supplier-com-try-out.md
-        - name: Set up and configure the Supplier Communications Agent
-          href: procurement/supplier-com-agent-setup.md
-        - name: Use the agent deployment wizard to set up the Supplier Communications Agent (preview)
-          href: procurement/supplier-com-agent-setup-wizard.md
-        - name: Solve common problems when setting up the Supplier Communications Agent
-          href: procurement/supplier-com-agent-setup-faq.md
-        - name: Test the Supplier Communications Agent
-          href: procurement/supplier-com-agent-testing.md
-        - name: Follow up on purchase orders using the Supplier Communications Agent
-          href: procurement/supplier-com-agent-follow-up.md
-        - name: Review and apply purchase order changes received in vendor emails
-          href: procurement/supplier-com-agent-apply-email-changes.md
+        - name: Procurement Agent overview
+          href: procurement/procurement-agent-overview.md
+        - name: Impact analysis (production-ready preview)
+          items:
+          - name: Impact analysis overview
+            href: procurement/procurement-agent-impact-analysis-overview.md
+          - name: How impact analysis works
+            href: procurement/procurement-agent-impact-analysis-works.md
+          - name: Set up, configure, and test impact analysis
+            href: procurement/procurement-agent-impact-analysis-setup.md
+          - name: Review impact of purchase order changes from vendors
+            href: procurement/procurement-agent-impact-analysis-review-changes.md
+          - name: Simulate whether purchase order changes have impact
+            href: procurement/procurement-agent-impact-analysis-simulation.md
+        - name: Supplier communications (production-ready preview)
+          items:
+          - name: Supplier communications features of the Procurement Agent
+            href: procurement/procurement-agent-supplier-com-overview.md
+          - name: Try out the updates from vendors feature without a complete email setup
+            href: procurement/procurement-agent-supplier-com-try-out.md
+          - name: Set up and configure supplier communications features
+            href: procurement/procurement-agent-supplier-com-setup.md
+          - name: Use the agent deployment wizard to set up supplier communications features (preview)
+            href: procurement/procurement-agent-supplier-com-setup-wizard.md
+          - name: Solve common problems when setting up supplier communications features
+            href: procurement/procurement-agent-supplier-com-setup-faq.md
+          - name: Test supplier communications features
+            href: procurement/procurement-agent-supplier-com-testing.md
+          - name: Follow up on purchase orders by using the Procurement Agent
+            href: procurement/procurement-agent-supplier-com-follow-up.md
+          - name: Review and apply purchase order changes received in vendor emails
+            href: procurement/procurement-agent-supplier-com-apply-email-changes.md
       - name: Prices, discounts, and rebates
         items:
         - name: Purchase agreements
@@ -4079,7 +4101,7 @@
             href: warehousing/spatial-locations-setup.md
         - name: Control work by using work templates and location directives
           href: warehousing/control-warehouse-location-directives.md
-        - name: Dynamic work classification (production ready preview)
+        - name: Dynamic work classification (production-ready preview)
           href: warehousing/dynamic-work-classification.md
         - name: Work with location directives
           href: warehousing/create-location-directive.md
@@ -4279,9 +4301,9 @@
         href: faq-confirmed-po-changes.md
       - name: Responsible AI FAQ for Workload insights with Copilot
         href: faq-wma-copilot.md
-      - name: Responsible AI FAQ for the Supplier Communications Agent (production ready preview)
+      - name: Responsible AI FAQ for the Procurement Agent (production-ready preview)
         href: faq-supplier-communications-agent.md
-      - name: Responsible AI FAQ for Generative insights for Demand planning (production ready preview)
+      - name: Responsible AI FAQ for Generative insights for Demand planning (production-ready preview)
         href: faq-demand-planning-generative-insights.md
   - name: Development and administration for finance and operations apps
     href: ../fin-ops-core/dev-itpro/index.md

@@ -4,7 +4,7 @@ description: Learn about the different types of discounts that you can set up by
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 10/25/2024
+ms.date: 5/18/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: 
@@ -16,11 +16,11 @@ ms.search.form:
 
 This article introduces the different types of discounts that you can set up by using Unified pricing management.
 
-To use discounts, you must complete the following setup:
+To use discounts, complete the following setup steps:
 
 - Create one or more [price component codes](upm-price-component-code.md) to set up the different types of discounts that you can include in your price structures.
-- Create one or more [price structures](upm-price-structure-overview.md) to define how your discounts are combined with other price elements (such as the base price and margin price adjustments) to determine the final unit price.
-- Set up one or more [discount pricing rules](upm-margin-discount-pricing-rules.md) to configure each discount that you need, and define which customers and items they apply to, and how they're calculated. For each rule, you select the type of discount and associate it with a specific price component code. You then define the discount by using a combination of settings that are common to all discounts and settings that are specific to your selected discount type.
+- Create one or more [price structures](upm-price-structure-overview.md) to define how your discounts combine with other price elements (such as the base price and margin price adjustments) to determine the final unit price.
+- Set up one or more [discount pricing rules](upm-margin-discount-pricing-rules.md) to configure each discount that you need, and define which customers and items they apply to, and how they're calculated. For each rule, select the type of discount and associate it with a specific price component code. Then, define the discount by using a combination of settings that are common to all discounts and settings that are specific to your selected discount type.
 
 For information about how to create pricing rules for each type of discount (and for margin price adjustments), see [Pricing rules for discounts and margin price adjustments](upm-margin-discount-pricing-rules.md).
 
@@ -36,7 +36,7 @@ Simple discounts reduce the product price by a percentage or amount. Here are so
 
 ## Quantity discounts
 
-Quantity discounts are given to customers when they purchase a specific quantity of a product. The quantity tier is per order, not per line. Here are some examples:
+Quantity discounts are given to customers when they purchase a specific quantity of a product. The quantity tier applies to each order, not each line. Here are some examples:
 
 - Buy two or more items of brand A, and get 5 percent off.
 - Buy five or more items of brand A, and get 7 percent off.
@@ -45,12 +45,12 @@ Quantity discounts are given to customers when they purchase a specific quantity
 
 ## Threshold discounts
 
-Threshold discounts are given to customers when the total for a transaction reaches one or more specified amounts. The amount threshold is per order, not per line. Here are some examples:
+Threshold discounts are given to customers when the total for a transaction reaches one or more specified amounts. The amount threshold applies to each order, not each line. Here are some examples:
 
 - Buy a total of $1,000 or more of items of brand A, and get $100 off.
 - Buy a total of $2,000 or more of items of brand A, and get 10 percent off.
 
-Threshold discounts are applied after other discount types, because their eligibility is determined by the total order value. We strongly recommend that you create a price component code for threshold discounts, and that you avoid mixing threshold discounts with other types in the same price component code. Make sure that the price component code for threshold discounts is set up after the other discount-related price component codes that have a higher pricing sequence.
+Threshold discounts are applied after other discount types, because the total order value determines their eligibility. Create a price component code for threshold discounts, and avoid mixing threshold discounts with other types in the same price component code. Set up the price component code for threshold discounts after the other discount-related price component codes that have a higher pricing sequence.
 
 ## <a name="mix-match"></a>Mix-and-match discounts
 
@@ -67,31 +67,31 @@ Mix-and-match discounts are given to customers when they purchase a specific com
 
 ### Set up line groups for mix-and-match discounts
 
-To define the different combinations of item groups and related purchase thresholds that are required to qualify for a discount, you set up *line groups* and assign them to lines in your mix-and-match pricing rules. Follow these steps to set up and apply mix-and-match line groups.
+To define the different combinations of item groups and related purchase thresholds that qualify for a discount, set up *line groups* and assign them to lines in your mix-and-match pricing rules. Follow these steps to set up and apply mix-and-match line groups.
 
-1. Go to **Pricing management \> During-sales pricing \> Discounts \> Mix and match line group setup**.
-1. You can review the existing line groups, and create any that you need. Use the buttons on the Action Pane to add or remove line groups as required. For each row that you add to the grid, set the following fields:
+1. Go to **Pricing management > During-sales pricing > Discounts > Mix and match line group setup**.
+1. Review the existing line groups, and create any that you need. Use the buttons on the Action Pane to add or remove line groups as required. For each row that you add to the grid, set the following fields:
 
     - **Line group** – Enter a unique identifier for the line group.
-    - **Number of products needed** – Enter the quantity of a product that a customer must purchase to qualify for the discount. This field defines a default value that will be used every time that a user selects the line group for a specific discount pricing rule. However, you can override the value for each specific rule as you require.
+    - **Number of products needed** – Enter the quantity of a product that a customer must purchase to qualify for the discount. This field defines a default value that is used every time a user selects the line group for a specific discount pricing rule. However, you can override the value for each specific rule as needed.
 
-1. Go to **Pricing management \> During-sales pricing \> Discounts \> Mix and match line groups**.
-1. You can review the line group assignments for any or all existing mix-and-match discount rules, and create any that you need. Use the buttons on the Action Pane to add or remove line groups as required. For each row that you add to the grid, set the following fields:
+1. Go to **Pricing management > During-sales pricing > Discounts > Mix and match line groups**.
+1. Review the line group assignments for any or all existing mix-and-match discount rules, and create any that you need. Use the buttons on the Action Pane to add or remove line groups as required. For each row that you add to the grid, set the following fields:
 
     - **Discount** – Select the existing mix-and-match discount pricing rule to add a line group to.
     - **Line group** – Select the existing line group to add to the selected pricing rule.
     - **Number of products needed** – Enter the quantity of a product that a customer must purchase to qualify the discount. For new rows, this field initially shows the default value that you previously set for the selected line group on the **Mix and match line group setup** page. However, you can override the default value.
-    - **Line color** – Select a color for the line group. This color will be shown as the background color for lines that are assigned to the group on the **Lines** FastTab when you view or edit a mix-and-match discount pricing rule.
+    - **Line color** – Select a color for the line group. This color appears as the background color for lines that are assigned to the group on the **Lines** FastTab when you view or edit a mix-and-match discount pricing rule.
 
 1. To use your line groups in a pricing rule, open the **All discounts** or **Mix and match discounts** page, and select or create your rule. Then follow these steps:
 
     - On the **Price/discount** FastTab, define the terms of the mix-and-match discount.
     - On the **Lines** FastTab, add a line for each item (or collection of items) that's part of the mix-and-match discount. Then use the **Line group** column to assign a line group to each line.
-    - If you must change the selection or configuration of the line groups that are available for the current pricing rule (including the number of products that are required), select **Mix and match line groups** on the Action Pane. The same fields that were available on the **Mix and match line group setup** page are available. However, only the lines for the current pricing rule are shown.
+    - If you need to change the selection or configuration of the line groups that are available for the current pricing rule (including the number of products that are required), select **Mix and match line groups** on the Action Pane. The same fields that were available on the **Mix and match line group setup** page are available. However, only the lines for the current pricing rule are shown.
 
 ### Mix-and-match example 1: Discount for bundle sales
 
-A car dealer offers a bundle where, if a customer purchases any **Interior option** item from package *B*, they can get 10 percent off a dashboard camera (item number *DAC0001*). Therefore, the dealer sets up a mix-and-match discount pricing rule and sets the following value on the **Price/discount** FastTab:
+A car dealer offers a bundle where, if a customer purchases any **Interior option** item from package *B*, they get 10% off a dashboard camera (item number *DAC0001*). The dealer sets up a mix-and-match discount pricing rule and sets the following value on the **Price/discount** FastTab:
 
 - **Calculation type:** *Line spec*
 
@@ -124,7 +124,7 @@ The following table shows the items that are available to customers.
 | EV004 | Package C | $100 |
 | EV005 | Package C | $120 |
 
-Therefore, the customer will get 15 percent off the less expensive item (*EV004*) and will get both items for $205.
+Therefore, the customer gets 15 percent off the less expensive item (*EV004*) and gets both items for $205.
 
 ### Mix-and-match example 3: Mandatory item to trigger the discount
 
@@ -147,13 +147,13 @@ The following table shows the items that are available to customers.
 | EV009 | Package D | $100 |
 | EV007 | Package D | $100 |
 
-If a customer now orders five of item *EV009* and five of item *EV007*, they've ordered 10 items from package *D* and have also purchased the required quantity of item *EV007*. Therefore, the customer will get the 12-percent discount and will pay $880 for the package.
+If a customer now orders five of item *EV009* and five of item *EV007*, they've ordered 10 items from package *D* and have also purchased the required quantity of item *EV007*. Therefore, the customer gets the 12-percent discount and pays $880 for the package.
 
-However, if the customer orders ten of item *EV009*, they've still have ordered 10 items from package *D*, but they haven't purchased the required quantity of item *EV007*. Therefore, the customer won't get the discount and will pay $1,000 for the package.
+However, if the customer orders ten of item *EV009*, they still order 10 items from package *D*, but they didn't purchase the required quantity of item *EV007*. Therefore, the customer doesn't get the discount and pays $1,000 for the package.
 
 ## "Always apply" discounts
 
-*Always apply* isn't a discount type. It's a concurrency mode that's available for all discount types. All discounts that are created by using the *Always apply* mode will be applied to the appropriate items after all the existing discounts have been applied. Learn more in [Resolve concurrency within price component codes](upm-concurrence-within-codes.md).
+*Always apply* isn't a discount type. It's a concurrency mode that's available for all discount types. All discounts created by using the *Always apply* mode are applied to the appropriate items after all the existing discounts are applied. For more information, see [Resolve concurrency within price component codes](upm-concurrence-within-codes.md).
 
 ## Next steps
 

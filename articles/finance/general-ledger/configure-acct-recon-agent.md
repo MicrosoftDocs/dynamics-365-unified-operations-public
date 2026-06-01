@@ -4,7 +4,7 @@ description: Learn how to set up and configure the Account reconciliation agent 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 03/25/2026
+ms.date: 05/07/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -26,7 +26,7 @@ ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 This article explains how system administrators can set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
 
 >[!NOTE]
-> Customers can use Power Platform admin center to set up and configure the Account reconciliation agent. For more information, see [Deploy Dynamics 365 agents by using the agent deployment wizard (preview)](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
+> Customers can use Power Platform admin center to set up and configure the Account reconciliation agent. For more information, see [Deploy Dynamics 365 agents by using the agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
 
 ## Prerequisites
 
@@ -35,8 +35,8 @@ Before you use the Account reconciliation agent, make sure your system meets the
 - You're running Dynamics 365 Finance version 10.0.44 or later. To use Dynamics 365 ERP Model Context Protocol capabilities, you're running Dynamics 365 Finance version 10.0.47 or later.
 - You turn on the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). If the features don't appear in your system, select **Check for updates**.
 
-  - (Preview) Immersive Home
-  - (Production ready preview) Agent management
+  - Immersive Home
+  - Agent management
   - (Production ready preview) Account reconciliation agent
   - (Preview) Dynamics 365 ERP Model Context Protocol server (Optional)
 
@@ -135,7 +135,7 @@ To enable the agent, follow these steps:
 1. Verify that the agent is enabled and available in the target environment.
 1. When you enable the agent, it becomes active and ready for use.
 
-For more information about Agent Deployment wizard, see [Deploy Dynamics 365 agents by using the agent deployment wizard (preview)](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
+For more information about Agent Deployment wizard, see [Deploy Dynamics 365 agents by using the agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
 
 ### Manual deployment of the agent
 

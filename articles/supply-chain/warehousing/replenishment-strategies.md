@@ -4,8 +4,8 @@ description: Learn about replenishment strategies and explains how you can use t
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 10/29/2020
-ms.custom:
+ms.date: 5/29/2026
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
 ---
@@ -14,7 +14,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-The templates that are defined on the **Replenishment templates** page include wave demand replenishment template lines that let you select how replenishment is done. Each line now includes a **Replenishment strategy** field.
+The templates defined on the **Replenishment templates** page include wave demand replenishment template lines that you use to select how replenishment is done. Each line now includes a **Replenishment strategy** field.
 
 The *Wave demand quantity* strategy is the default strategy. It's the replenishment strategy that was used before the introduction of the **Replenishment strategy** field. It uses the replenishment location directives to find locations that can be replenished. It then replenishes those locations until the demand is covered.
 
@@ -29,22 +29,22 @@ Peak season is one example of a situation where the *Maximum location capacity* 
 
 To access the templates, go to **Warehouse management \> Setup \> Replenishment \> Replenishment templates**. In the **Overview** section, select or create a wave demand replenishment template where the **Replenishment type** field is set to *Wave demand*. Then set up the replenishment template lines in the **Replenishment template details** section. For each line, in the **Replenishment strategy** field, select the replenishment strategy that you want to use.
 
-![Replenishment templates page.](media/ReplenTempWaveDmdMaxLocCap.png "Replenishment templates page")
+:::image type="content" source="media/ReplenTempWaveDmdMaxLocCap.png" alt-text="Screenshot of the Replenishment templates page.":::
 
-If the **Replenishment strategy** column doesn't appear in the grid in the **Replenishment template details** section, make sure that the feature has been turned on, and that the selected replenishment template has a replenishment type of *Wave demand*.
+If the **Replenishment strategy** column doesn't appear in the grid in the **Replenishment template details** section, make sure that the feature is turned on, and that the selected replenishment template has a replenishment type of *Wave demand*.
 
 > [!NOTE]
-> The *Wave demand quantity* strategy is the default strategy. Therefore, you just have to update the replenishment template lines where you want to use the *Maximum location capacity* strategy instead.
+> The *Wave demand quantity* strategy is the default strategy. Therefore, you just need to update the replenishment template lines where you want to use the *Maximum location capacity* strategy instead.
 
 ## Example scenarios
 
 ### Example 1
 
-For this example, there is only one replenishment template that has only one replenishment template line.
+For this example, there's only one replenishment template that has only one replenishment template line.
 
-You create a sales order for 130 pieces (pcs) of item A0001. Before you release the order to the warehouse, the warehouse is set up in the following way:
+You create a sales order for 130 pieces (pcs) of item A0001. Before you release the order to the warehouse, ensure to set up the warehouse in the following way:
 
-- There is only one bulk location, and it has 500 pcs of available on-hand inventory.
+- There's only one bulk location, and it has 500 pcs of available on-hand inventory.
 - There are three pick locations, each of which has a stocking limit of 100 pcs. (Remember that stocking limits are required for the *Maximum location capacity* strategy.)
 - The replenishment put locations are the same as the sales pick locations.
 - The replenishment unit is a box (1 box = 20 pcs).
@@ -55,7 +55,7 @@ At the time of the order, the following inventory is on hand at the sales pick l
 - **Pick-002:** 0 pcs
 - **Pick-003:** 0 pcs
 
-Initially, the replenishment strategy is set to *Wave demand quantity*.
+Initially, set the replenishment strategy to *Wave demand quantity*.
 
 After you release the sales order to the warehouse, and wave processing runs for the wave, you get the following replenishment work:
 
@@ -69,7 +69,7 @@ If you set the replenishment strategy to *Maximum location capacity* instead, yo
 - **Replenishment work 1:** Pick 4 boxes from the bulk location, and put them in location pick-001.
 - **Replenishment work 2:** Pick 5 boxes from the bulk location, and put them in location pick-002.
 
-[![Example 1.](media/ReplenTemp_example_1.png "Example 1")](media/ReplenTemp_example_1_large.png)
+:::image type="content" source="media/ReplenTemp_example_1_large.png" alt-text="Screenshot of Example 1 replenishment strategy results." lightbox="media/ReplenTemp_example_1_large.png":::
 
 ### Example 2
 
@@ -93,9 +93,8 @@ Depending on the setting of the **Allow split** option on the location directive
 
 The outcomes differ because of the information that is available when you create the work. When the **Allow split** is set to *Yes* on the location directives for replenishment picking, you know that you managed to find 160 pcs. Therefore, you can create work for that quantity. However, when the **Allow split** option is set to *No*, you don't know about the existence of the 160 pcs. Because the extra quantity that you decided to replenish was 3 boxes, you drop that extra quantity and try the original quantity again.
 
-[![Example 2.](media/ReplenTemp_example_2.png "Example 2")](media/ReplenTemp_example_2_large.png)
+:::image type="content" source="media/ReplenTemp_example_2_large.png" alt-text="Screenshot of Example 2 replenishment strategy results." lightbox="media/ReplenTemp_example_2_large.png":::
 
-Therefore, to get the maximum quantity to the replenished locations, you should set the **Allow split** option to *Yes* on the location directives for replenishment picking.
-
+Therefore, to get the maximum quantity to the replenished locations, set the **Allow split** option to *Yes* on the location directives for replenishment picking.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

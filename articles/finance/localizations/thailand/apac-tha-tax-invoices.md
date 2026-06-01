@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 
 ---
@@ -96,7 +96,7 @@ To print the tax invoice from a free text invoice, follow these steps:
 
 The following illustration shows an example of a printed tax invoice.
 
-![Table Description automatically generated.](../media/apac-tha-tax-invoices-tax-invoice.png)
+:::image type="content" source="../media/apac-tha-tax-invoices-tax-invoice.png" alt-text="Screenshot of a printed tax invoice.":::
 
 If you receive payment from the customer after you post a sales order or a free text invoice, follow these steps:
 
@@ -113,11 +113,11 @@ If you receive payment from the customer after you post a sales order or a free 
 
 The following illustration shows an example of a printed receipt.
 
-![Timeline Description automatically generated with low confidence.](../media/apac-tha-tax-invoices-receipt.png)
+:::image type="content" source="../media/apac-tha-tax-invoices-receipt.png" alt-text="Screenshot of a printed receipt.":::
 
 The following illustration shows an example of a printed receipt/tax invoice.
 
-![A picture containing graphical user interface Description automatically generated.](../media/apac-tha-tax-invoices-receipt-tax-invoice.png)
+:::image type="content" source="../media/apac-tha-tax-invoices-receipt-tax-invoice.png" alt-text="Screenshot of a printed receipt/tax invoice.":::
 
 
 

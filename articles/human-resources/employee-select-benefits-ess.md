@@ -3,7 +3,7 @@
 title: Employees select plans by using Employee self service (optional)
 description: This article describes how employees can select or update their benefits.
 author: ramagadu 
-ms.date: 04/25/2025
+ms.date: 05/14/2026
 ms.topic: article
 # optional metadata
 
@@ -26,14 +26,14 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-When a new employee is hired, or a life event occurs, the employee can use **Employee self service** to select or update their benefits during open enrollment.
+When you hire a new employee or a life event occurs, the employee can use **Employee self service** to select or update their benefits during open enrollment.
 
-To access their benefits for enrollment, the employee goes to **Employee self service**, select **Benefits self-service** on the **Benefits** tile.
+To access their benefits for enrollment, the employee goes to **Employee self service**, selects **Benefits self-service** on the **Benefits** tile.
 
-On the **Benefits self-service** page, benefit plans are grouped by plan type. To view the benefit plans in a plan type, the employee selects a tile on the **Employee benefits** page. The employee sees only the benefits that they are eligible for.
+On the **Benefits self-service** page, benefit plans are grouped by plan type. To view the benefit plans in a plan type, the employee selects a tile on the **Employee benefits** page. The employee sees only the benefits that they're eligible for.
 
 > [!IMPORTANT]
-> Before a plan type can be shown in **Employee self service**, it must be configured. For more information, see [Configure Employee self service](/dynamics365/human-resources/hr-benefits-setup-employee-self-service).
+> Before a plan type can appear in **Employee self service**, you must configure it. For more information, see [Configure Employee self service](/dynamics365/human-resources/hr-benefits-setup-employee-self-service).
 
 Depending on the plan type, one or more benefits can be selected for enrollment. For example, a medical plan type might be configured to limit the employee to one medical plan. A life insurance plan type might allow the employee to select multiple life insurance plans.
 
@@ -41,7 +41,7 @@ After the employee decides which plan to enroll in, they might be required to se
 
 To select a benefit plan, the employee selects either the ellipsis button (**…**) or **Add to cart**. After the employee finishes adding all the benefit selections to the cart, they select **View cart**. The employee is then taken to the **Plans** page, where they can view their selected and waived benefit plans.
 
-The employee must select the **I agree** option before they can select the **Checkout** button. The statement that appears to the right of the **I agree** option can be customized on the **Benefits Management** tab of the **Human Resources Shared Parameters** page.
+The employee must select the **I agree** option before they can select the **Checkout** button. You can customize the statement that appears to the right of the **I agree** option on the **Benefits Management** tab of the **Human Resources Shared Parameters** page.
 
 When the employee confirms their benefit plan selections by using **Employee self service**, those selections are recorded and shown on the **Worker benefit plans** and **Worker benefit plans bulk update** pages.
 
@@ -50,7 +50,7 @@ After the employee selects their plans, the status of the benefits is shown as *
 > [!IMPORTANT]
 > To complete enrollment, the benefits administrator must select **Confirm** for each employee benefit that is selected. Confirmation can be completed on the **Worker benefits plan** or **Worker benefit plans bulk update** page.
 
-Employees aren't required to select benefits by using **Employee self service**. Benefits can be selected on behalf of an employee on the **Worker benefits plan** or **Worker benefit plans bulk update** page. The employee isn't enrolled in those benefits until the benefits administrator confirms them.
+Employees aren't required to select benefits by using **Employee self service**. You can select benefits on behalf of an employee on the **Worker benefits plan** or **Worker benefit plans bulk update** page. The employee isn't enrolled in those benefits until the benefits administrator confirms them.
 
 ## My benefit plans
 

@@ -6,7 +6,7 @@ author: ismailjad
 ms.author: ismailjad
 ms.reviewer: kamaybac
 ms.search.form: InventLocation, WMSLocation
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/24/2026
 ms.custom:
   - bap-template

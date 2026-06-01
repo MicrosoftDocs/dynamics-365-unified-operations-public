@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -48,7 +48,7 @@ To register fixed assets, follow these steps:
     > [!NOTE]
     > You can also create a fixed asset by using the Copy function. Select the fixed asset to copy, and then, on the Action Pane, on the **Fixed asset** tab, in the **New** group, select **Copy**. In this case, the system copies the selected fixed asset together with all its parameters, but the new asset has a different inventory number.
 
-    ![Fixed assets page.](../media/RUS_FA_1%20General%20tab.JPG)
+    :::image type="content" source="../media/RUS_FA_1%20General%20tab.JPG" alt-text="Screenshot of the Fixed assets page General tab.":::
 
 1. On the **General** FastTab, set the following fields:
 
@@ -76,7 +76,7 @@ To register fixed assets, follow these steps:
 
     - **Output/mileage** – Enter the size of the assumed production/travel for the fixed asset if the **Product output/mileage** depreciation profile is selected for the fixed asset in a value model. In this case, you should enter records on the **Product output/mileage** page list.
 
-        ![Product output/mileage page.](../media/RUS_FA_2%20Output_Mileage%20page.JPG)
+        :::image type="content" source="../media/RUS_FA_2%20Output_Mileage%20page.JPG" alt-text="Screenshot of the Product output/mileage page.":::
 
 1. If the fixed asset is included in the composition of another fixed asset, on the **Structure** FastTab, in the **Main fixed asset** field, select the fixed asset code.
 
@@ -109,7 +109,7 @@ To update or create value models for the fixed asset, follow these steps:
     - **Don't lock** – Set this option to **Yes** to create depreciation transactions for the asset. By default, this option is set to **Yes**.
     - **Last depreciation date**, **Disposal date**, and **Disposal cost** – These fields are automatically set when depreciation and writing-off transactions are created.
 
-    ![FA value model.](../media/RUS_FA_3%20value%20models.JPG)
+    :::image type="content" source="../media/RUS_FA_3%20value%20models.JPG" alt-text="Screenshot of the FA value model page.":::
 
 1. On the **Financial dimensions** FastTab, select the default finance dimension codes that register transactions for the asset.
 1. On the **Lease** FastTab, in the **Posting profile** field, select the posting profile to use for fixed asset leasing. If a leasing transaction should be created for a fixed asset, set the **Leased** option to **Yes**.
@@ -149,7 +149,7 @@ To view the balance of an asset, follow these steps:
 
 The amounts on the **Balance by FA** dialog for the fixed asset are shown in the currency of the fixed asset value model. If the value model currency differs from the company's default currency, the default currency is also shown.
 
-![FA value model balance.](../media/RUS_FA_4%20model%20balance.JPG)
+:::image type="content" source="../media/RUS_FA_4%20model%20balance.JPG" alt-text="Screenshot of the FA value model balance dialog.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

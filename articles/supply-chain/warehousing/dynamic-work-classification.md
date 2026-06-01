@@ -1,19 +1,19 @@
 ---
-title: Dynamic work classification (production ready preview)
+title: Dynamic work classification (production-ready preview)
 description: Learn how to use Power Fx formulas to dynamically assign work pools, priorities, location directive codes, and work classes to warehouse work.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSWorkTemplateClassificationRule
 ms.topic: how-to
-ms.date: 05/05/2026
+ms.date: 05/08/2026
 ms.custom:
   - bap-template
 ms.collection:
   - ai-assisted
 ---
 
-# Dynamic work classification (production ready preview)
+# Dynamic work classification (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,7 +41,7 @@ To use the feature described in this article, your system must meet the followin
 
 ## Configure work reclassification on load update
 
-To allow work reclassification when loads change, configure the **Work classification on load update** option. This setting controls whether the system automatically re-evaluates classification rules when a load is modified. <!-- KFM: Do we *always* run relevant classification rules when loads are *created*? If so, we should briefly mention that here. -->
+To control whether dynamic work classification rules can reclassify work when loads change, configure the **Work classification on load update** option. Work is only reclassified by rules that are explicitly set to **Reclassify work on load update**, so you can choose which rules should apply when a load changes. The system always classifies work at creation if a rule is associated with the work template, regardless of this setting.
 
 To configure this setting, follow these steps:
 
@@ -52,7 +52,7 @@ To configure this setting, follow these steps:
     - *Synchronous* – All work associated with an updated load is reclassified immediately after the load is updated.
 
 > [!NOTE]
-> When using synchronous reclassification, the user may experience a brief wait during load updates while the system processes all associated work headers.
+> When using synchronous reclassification, the user might experience a brief wait during load updates while the system processes all associated work headers.
 
 ## Create dynamic work classification rules
 
@@ -69,9 +69,9 @@ To create a rule, follow these steps:
         - *Work* – The formula runs once, after the work header is created. Use this scope when classification depends only on header-level properties such as the carrier or shipping time.
         - *Work and initial work lines* – The formula runs twice. First, as the initial pick work line is selected, the system evaluates a separate *initial work line formula* and applies overrides to that line. Then, after all initial work lines are collected, the system runs the main formula against the work header. Use this scope when classification depends on item-level properties such as the pick zone.
 
-1. On the **Recalculation** FastTab, make the following settings to control how and when the rule is re-evaluated after the initial work creation:
+1. On the **Recalculation** FastTab, make the following settings to control how and when the rule is reevaluated if a load changes after the initial work creation:
     - **Reclassification schedule ID** – This setting is reserved for future use and has no effect in the current release.
-    - **Reclassify work on load update** – Set this option to *Yes* to run the classification again each time a load associated with the work header changes. This ensures that any updates to the load are reflected in the work classification. <!-- KFM: How does this setting interact with the similar one on the **Parameters** page? -->
+    - **Reclassify work on load update** – Set this option to *Yes* to run the classification again each time a load associated with the work header changes. This setting ensures that any updates to the load are reflected in the work classification. This setting only applies if the **Work classification on load update** parameter is set to allow reclassification (see the previous section).
 
 1. On the **Power Fx formula** FastTab, enter a formula that returns a record with the fields you want to override. See the next sections for details on writing formulas.
 1. If the **Rule scope** is set to *Work and initial work lines*, the page includes a **Initial work line formula** FastTab. This formula runs when the first work line is assigned to a new work record. See the next sections for details on writing formulas.

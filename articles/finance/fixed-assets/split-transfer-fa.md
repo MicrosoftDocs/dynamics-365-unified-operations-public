@@ -1,10 +1,10 @@
 ---
 title: Fixed asset intercompany split and transfer (preview) 
-description: Learn how to split and transfer fixed assets between legal entitiies using Dynamics 365 Finance.
+description: Learn how to split and transfer fixed assets between legal entities using Dynamics 365 Finance.
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 02/04/2026
+ms.date: 05/27/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -19,13 +19,13 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article describes how to split and transfer fixed assets between legal entitiies.
+This article describes how to split and transfer fixed assets between legal entities.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-The fixed asset intercompany split and transfer feature allows organizations to efficiently manage the movement of fixed assets between legal entities — whether through full transfers or partial splits — without switching between companies. It automates the mapping of asset groups, books, and key fields between source and destination entities, streamlining intercompany asset operations.
+The fixed asset intercompany split and transfer feature helps organizations efficiently manage the movement of fixed assets between legal entities - whether through full transfers or partial splits - without switching between companies. It automates the mapping of asset groups, books, and key fields between source and destination entities, streamlining intercompany asset operations.
 
-This feature supports transfers based on acquisition and accumulated depreciation, as well as net book value. It also provides flexible options for handling service life and exchange rates. You can choose from the following options to configure the destination asset.
+This feature supports transfers based on acquisition and accumulated depreciation, and net book value. It also provides flexible options for handling service life and exchange rates. You can choose from the following options to configure the destination asset.
 
 -	Inherit the remaining depreciation periods from the source asset.
 -	Use predefined service life settings at the destination.
@@ -37,21 +37,21 @@ The fixed asset intercompany split and transfer feature provides flexible exchan
 -	The exchange rate on the transfer date
 -	The rate that yields the highest asset value
 
-The wizard that's part of this feature offers granular control over financial dimensions and tags. Before journal creation, you can preview key financial data — including acquisition cost, accumulated depreciation, and net book value per asset book — ensuring transparency and accuracy.
+The wizard that's part of this feature offers granular control over financial dimensions and tags. Before journal creation, you can preview key financial data - including acquisition cost, accumulated depreciation, and net book value per asset book - ensuring transparency and accuracy.
 
-Intercompany journals are automatically generated using clearing accounts, which ensures proper balancing and audit compliance. The system maintains a complete transfer history, enabling full traceability of asset movements across legal entities. Whether transferring a single asset or performing bulk transfers with percentage-based splits, the wizard simplifies cross-company asset management while maintaining consistency, control, and auditability.
+The system automatically generates intercompany journals by using clearing accounts, which ensures proper balancing and audit compliance. The system maintains a complete transfer history, enabling full traceability of asset movements across legal entities. Whether transferring a single asset or performing bulk transfers with percentage-based splits, the wizard simplifies cross-company asset management while maintaining consistency, control, and auditability.
 
 ## Enable the feature
 
 ### Prerequisites
 
-Before you begin, enable the following preview features in **Feature management**.
+Before you begin, enable the following preview features in **Feature management**:
 -	Split and transfer fixed assets between legal entities (preview)
 -	Fixed asset history (preview)
 
 ### Set up intercompany transfer mapping
 
-This value defines how assets are transferred between legal entities. It ensures consistency in asset classification and field values across companies.
+This value defines how assets transfer between legal entities. It ensures consistency in asset classification and field values across companies.
 
 1.	Go to **Fixed assets > Setup > Assets intercompany transfer mapping**.
 1.	Define the source and destination legal entities.
@@ -78,7 +78,7 @@ To establish the core numbering rules for intercompany asset transfers, ensuring
 
 ### Configure fixed assets intercompany accounting
 
-For each legal entity pair, do the following.
+For each legal entity pair, complete the following steps.
 
 -	Configure the fixed asset intercompany accounting by specifying the journal names.
 -	Select intercompany accounts for both the source and destination companies.
@@ -102,7 +102,7 @@ The transfer wizard guides you through the transfer process step by step, simpli
 
 ### Select assets
 
-You must choose which assets to transfer and define how to distribute them. This step supports selecting multiple assets or manually adding fixed assets from the source company. You can select assets manually or use filters.
+Choose which assets to transfer and define how to distribute them. This step supports selecting multiple assets or manually adding fixed assets from the source company. You can select assets manually or use filters.
 
 ### Choose destination
 
@@ -119,7 +119,7 @@ Select from the following options how to distribute the fixed assets:
 
 The **Transfer details** section defines how the asset’s value and timing are treated during the transfer. Select the appropriate method to ensure that the destination company reflects the correct financial value, while the source company accurately removes the asset from its books.
 
-- **Transfer value method**: Select how the value of the asset is transferred. You can choose to either use its original acquisition and depreciation values or apply its current net book value. Regardless of the method you select, the transfer process resets the netbook value of the source asset to 0 by removing both the acquisition cost and the accumulated depreciation. That way, financial treatment in the destination company is acurately accounted for. 
+- **Transfer value method**: Select how the value of the asset is transferred. You can choose to either use its original acquisition and depreciation values or apply its current net book value. Regardless of the method you select, the transfer process resets the netbook value of the source asset to 0 by removing both the acquisition cost and the accumulated depreciation. That way, financial treatment in the destination company is accurately accounted for. 
   - **Acquisition and depreciation value**: Records the acquisition of the destination asset by using the source asset’s original acquisition and accumulated depreciation amounts separately.
   - **Net book value**: Records the destination asset acquisition as a single amount equal to the source asset’s net book value.
   - **Transfer date**: This value reflects the posting date for the transaction, the acquisition date for the destination asset, and the date the source asset is removed from the source company’s books.

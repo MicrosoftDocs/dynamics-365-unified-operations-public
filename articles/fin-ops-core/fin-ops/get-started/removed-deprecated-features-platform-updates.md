@@ -4,7 +4,7 @@ description: Learn about features that have been removed, or that are planned fo
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 03/03/2026
+ms.date: 05/08/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -38,6 +38,18 @@ For detailed information about objects in finance and operations apps, see the [
 | **Product areas affected** | Microsoft finance and operations applications |
 | **Deployment option** | Cloud and on-premises |
 | **Status** | Deprecated. The Data Integrator templates for Dynamics 365 Field Service will no longer be available after February 28, 2027. This integration works by synchronizing work orders, agreements, inventory, and projects between Field Service and Supply Chain Management. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
+
+## Features removed effective September 2026
+
+### Follow-up questions in the Copilot sidecar (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft has decided not to continue development on this preview feature. |
+| **Replaced by another feature?** | No |
+| **Product areas affected** | Microsoft finance and operations applications |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Removed. This preview feature was never made generally available and is now completely removed from all finance and operations applications. |
 
 ## Feature deprecation effective February 2026
 

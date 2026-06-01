@@ -6,7 +6,7 @@ ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/12/2025
+ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2016-06-30
@@ -14,6 +14,7 @@ ms.search.form:
   - BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup
   - CustInvoiceJournal
 ---
+
 # NO-00003 Customer and vendor payment formats
 
 [!include [banner](../../includes/banner.md)]

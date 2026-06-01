@@ -4,7 +4,7 @@
 title: Copy an instance
 description: You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment.
 author: twheeloc
-ms.date: 07/22/2020
+ms.date: 05/14/2026
 ms.topic: how-to
 # optional metadata
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 > [!IMPORTANT]
 > You can deploy new environments and use database movements to create copies. For more information about self-service deployments, see [Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). For more information about database movements on the finance and operations infrastructure, see [Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
+Use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
 To copy an instance, keep the following tips in mind:
 
@@ -47,54 +47,54 @@ To copy an instance, keep the following tips in mind:
 
 The following events occur when you copy a Human Resources database:
 
-- The copy process erases the existing database in the target environment. After the copy process is completed, you can't recover the existing database.
-- The target environment will be unavailable until the copy process is completed.
-- All users except the except those with the "System Administrator" security role and other internal service user accounts will be unavailable. The Admin user can delete data before other users are allowed back into the system.
+- The copy process erases the existing database in the target environment. After the copy process finishes, you can't recover the existing database.
+- The target environment is unavailable until the copy process finishes.
+- All users except those with the "System Administrator" security role and other internal service user accounts are unavailable. The Admin user can delete data before other users are allowed back into the system.
 - Any user with the "System Administrator" security role must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 
 ## Copy the Human Resources database
 
-To complete this task, you first copy an instance, and then sign in to the Microsoft Power Platform Admin Center to copy your Power Apps environment.
+To complete this task, first copy an instance, and then sign in to the Microsoft Power Platform Admin Center to copy your Power Apps environment.
 
 > [!WARNING]
 > When you copy an instance, the database is erased in the target instance. The target instance is unavailable during this process.
 
-1. Sign in to LCS, and select the LCS project that contains the instance that you want to copy.
-2. In your LCS project, select the **Human Resources App Management** tile.
-3. Select the instance to copy, and then select **Copy**.
-4. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the **Copy status** field to be updated to **Completed**.
+1. Sign in to LCS, and select the LCS project that contains the instance you want to copy.
+1. In your LCS project, select the **Human Resources App Management** tile.
+1. Select the instance to copy, and then select **Copy**.
+1. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the **Copy status** field to be updated to **Completed**.
 
-   ![[Select instance to overwrite.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   :::image type="content" source="./media/copy-instance-select-target-instance.png" alt-text="Screenshot of selecting the instance to overwrite in the Copy an instance task pane.":::
 
-5. Select **Power Platform**, and sign in to the Microsoft Power Platform Admin Center.
+1. Select **Power Platform**, and sign in to the Microsoft Power Platform Admin Center.
 
-   ![[Select Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   :::image type="content" source="./media/copy-instance-select-power-platform.png" alt-text="Screenshot of selecting Power Platform to sign in to the Microsoft Power Platform Admin Center.":::
 
-6. Select the Power Apps environment to copy, and then select **Copy**.
+1. Select the Power Apps environment to copy, and then select **Copy**.
 
 For more information about copying Power Apps environments, see [Copy an environment](/power-platform/admin/copy-environment#copy-an-environment-1).
 
-7. When the copy process is completed, sign in to the target instance, and enable Dataverse integration. For more information and instructions, see [Configure Dataverse integration](./hr-admin-integration-common-data-service.md).
+1. When the copy process finishes, sign in to the target instance, and enable Dataverse integration. For more information and instructions, see [Configure Dataverse integration](./hr-admin-integration-common-data-service.md).
 
 ## Data elements and statuses
 
-The following data elements aren't copied when you copy a Human Resources instance:
+When you copy a Human Resources instance, the process doesn't copy the following data elements:
 
-- Email addresses in the **LogisticsElectronicAddress** table
+- Email addresses in the **LogisticsElectronicAddress** table.
 
-- The batch job history in the **BatchJobHistory**, **BatchHistory**, and **BatchConstraintHistory** tables
+- The batch job history in the **BatchJobHistory**, **BatchHistory**, and **BatchConstraintHistory** tables.
 
-- The Simple Mail Transfer Protocol (SMTP) password in the **SysEmailSMTPPassword** table
+- The Simple Mail Transfer Protocol (SMTP) password in the **SysEmailSMTPPassword** table.
 
-- The SMTP Relay server in the **SysEmailParameters** table
+- The SMTP Relay server in the **SysEmailParameters** table.
 
-- Print Management settings in the **PrintMgmtSettings** and **PrintMgmtDocInstance** tables
+- Print Management settings in the **PrintMgmtSettings** and **PrintMgmtDocInstance** tables.
 
-- Environment-specific records in the **SysServerConfig**, **SysServerSessions**, **SysCorpNetPrinters**, **SysClientSessions**, **BatchServerConfig**, and **BatchServerGroup** tables
+- Environment-specific records in the **SysServerConfig**, **SysServerSessions**, **SysCorpNetPrinters**, **SysClientSessions**, **BatchServerConfig**, and **BatchServerGroup** tables.
 
-- Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment
+- Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
 
-- The connection string in the **PersonnelIntegrationConfiguration** table
+- The connection string in the **PersonnelIntegrationConfiguration** table.
 
 Some of these elements aren't copied because they're environment-specific. Examples include **BatchServerConfig** and **SysCorpNetPrinters** records. Other elements aren't copied because of the volume of support tickets. For example:
 
@@ -106,29 +106,29 @@ Some of these elements aren't copied because they're environment-specific. Examp
 
 Also, the following statuses change when you copy an instance:
 
-- All users except those with the "System Administrator" security role are set to **Disabled**.
+- All users, except those with the "System Administrator" security role, are set to **Disabled**.
 
 - All batch jobs, except for some system jobs, are set to **Withhold**.
 
 ## Environment admin
 
-All users in the target sandbox environment, including Administrators, are replaced by the users of the source environment. Before you copy an instance, be sure that you're an Administrator in the source environment. If you aren't, you can't sign in to the target sandbox environment after the copy has been completed.
+The copy process replaces all users in the target sandbox environment, including administrators, with the users from the source environment. Before you copy an instance, make sure you're an administrator in the source environment. If you're not, you can't sign in to the target sandbox environment after the copy finishes.
 
-All non-Administrator users in the target sandbox environment are disabled to prevent unwanted sign-ins in the sandbox environment. Administrators can reenable users if needed.
+The copy process disables all nonadministrator users in the target sandbox environment to prevent unwanted sign-ins. Administrators can reenable users if needed.
 
 ## Apply custom fields to Dataverse
 
 If you copy an instance into your sandbox environment and want to integrate your sandbox environment with Dataverse, you must reapply custom fields to Dataverse tables.
 
-For each custom field that's exposed on Dataverse tables, do the following steps:
+For each custom field that's exposed on Dataverse tables, complete the following steps:
 
 1. Go to the custom field and select **Edit**.
-2. Unselect the **Enabled** field for each cdm_* entity that the custom field is enabled on.
-3. Select **Apply Changes**.
-4. Select **Edit** again.
-5. Select the **Enabled** field for each cdm_* entity that the custom field is enabled on.
-6. Select **Apply Changes** again.
-The process of unselecting, applying changes, reselecting, and reapplying changes prompts the schema to update in Dataverse to include the custom fields.
+1. Unselect the **Enabled** field for each cdm_* entity that the custom field is enabled on.
+1. Select **Apply Changes**.
+1. Select **Edit** again.
+1. Select the **Enabled** field for each cdm_* entity that the custom field is enabled on.
+1. Select **Apply Changes** again.
+The process of unselecting, applying changes, reselecting, and reapplying changes prompt the schema to update in Dataverse to include the custom fields.
 
 For more information about custom fields, see [Create and work with custom fields](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).
 

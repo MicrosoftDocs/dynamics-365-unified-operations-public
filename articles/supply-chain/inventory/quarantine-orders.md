@@ -6,9 +6,11 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 ms.topic: how-to
-ms.date: 01/06/2025
-ms.custom: 
+ms.date: 05/27/2026
+ms.update-cycle: 1095-days
+ms.custom:
   - bap-template
+  - evergreen
 ---
 
 # Quarantine orders
@@ -17,10 +19,10 @@ ms.custom:
 
 This article describes how to use quarantine orders to block inventory.
 
-Quarantine orders let you block inventory. For example, you might want to quarantine items for quality control reasons. Inventory that has been quarantined is transferred to a quarantine warehouse.
+Quarantine orders block inventory. For example, you might want to quarantine items for quality control reasons. When you quarantine inventory, it gets transferred to a quarantine warehouse.
 
 > [!NOTE]
-> If you're using warehouse management processes (in the Warehouse management module), quarantine order processing is used only for return sales orders.
+> If you're using warehouse management processes (WMS), quarantine order processing only applies to return sales orders.
 
 ## Quarantine on-hand inventory items
 
@@ -36,7 +38,7 @@ To set up the system to automatically generate quarantine orders, follow these s
 
 When an item that is registered as received at the warehouse belongs to a model group where the **Quarantine management** check box is selected, the system generates a quarantine order for it. The quarantine order instructs workers to move the item to the quarantine warehouse.
 
-When you manually create quarantine orders on the **Quarantine orders** page, the item doesn't have to be set up for quarantine management in the associated item model group. For this process, you must specify the on-hand inventory that should be quarantined and the quarantine warehouse that should be used. You can use the quarantine order statuses to help plan the process.
+When you manually create quarantine orders on the **Quarantine orders** page, the item doesn't need to be set up for quarantine management in the associated item model group. For this process, you must specify the on-hand inventory that you want to quarantine and the quarantine warehouse that you want to use. You can use the quarantine order statuses to help plan the process.
 
 ## Quarantine order statuses
 
@@ -49,7 +51,7 @@ Quarantine orders can have the following statuses:
 
 ### Created
 
-When a quarantine order has been created manually, but the item isn't yet in the quarantine warehouse, the quarantine order has a status of *Created*. Two inventory transactions are generated. One transaction is an issue transaction that can have a status of *On order*, *Reserved physical*, or *Picked*. The other transaction is a receipt transaction that can have a status of *Ordered* or *Registered* at the quarantine warehouse. You can reserve, pick, and register updates to the inventory by using the usual processes.
+When you manually create a quarantine order but don't yet place the item in the quarantine warehouse, the quarantine order has a status of *Created*. This status generates two inventory transactions. One transaction is an issue transaction that can have a status of *On order*, *Reserved physical*, or *Picked*. The other transaction is a receipt transaction that can have a status of *Ordered* or *Registered* at the quarantine warehouse. You can reserve, pick, and register updates to the inventory by using the usual processes.
 
 ### Started
 
@@ -57,11 +59,11 @@ When a quarantine order has a status of *Started*, the inventory is transferred 
 
 ### Reported as finished
 
-To report a started quarantine order as finished, open the order, and select **Report as finished** on the Action Pane. The item is released from quarantine, but it isn't yet moved back to the regular warehouse. The movement back to the regular warehouse can be processed via an item arrival journal that can be initialized during the report as finished process.
+To report a started quarantine order as finished, open the order, and select **Report as finished** on the Action Pane. The item is released from quarantine, but it isn't yet moved back to the regular warehouse. You can process the movement back to the regular warehouse through an item arrival journal that you can initialize during the report as finished process.
 
 ### Ended
 
-When a quarantine order is ended, the item is moved from the quarantine warehouse back to the regular warehouse. The status of the item transaction is set to *Sold* at the quarantine warehouse and *Purchased* at the regular warehouse.
+When you end a quarantine order, move the item from the quarantine warehouse back to the regular warehouse. The status of the item transaction is set to *Sold* at the quarantine warehouse and *Purchased* at the regular warehouse.
 
 ## Quarantine order scrap
 

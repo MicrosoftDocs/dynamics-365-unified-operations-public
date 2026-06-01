@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/05/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
@@ -18,15 +18,15 @@ ms.search.validFrom: 2018-10-28
 
 This article explains how to sell, dispose, and write off assets for Russia in Microsoft Dynamics 365 Finance.
 
-## Fixed asset disposal 
+## Fixed asset disposal
 
 You can dispose of fixed assets for any of the following reasons:
 
-  - An asset is sold to other legal entities or private individuals.
-  - An asset is transferred and used as a deposit in joint activities or as charter capital.
-  - An asset is donated or used as another type of non-compensated transfer.
-  - An asset is liquidated because of an accident or natural disaster.
-  - An asset is exchanged through an exchange agreement.
+- An asset is sold to other legal entities or private individuals.
+- An asset is transferred and used as a deposit in joint activities or as charter capital.
+- An asset is donated or used as another type of non-compensated transfer.
+- An asset is liquidated because of an accident or natural disaster.
+- An asset is exchanged through an exchange agreement.
 
 There are three ways to create a disposal transaction:
 
@@ -65,12 +65,12 @@ To create a sales order for a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders** and create a new sales order.
 1. Enter information about the sales order.
-1. Select the **Lines** tab in the lower pane. 
-1. In the **Item number** field, select the item number, which is related to the fixed asset group. On the **Line detail > Fixed asset** tab, enter the fixed assets (Fixed asset (Russia)). If you select an item with the Service product type in the sales line you can enter several fixed assets. In this case, the quantity of fixed assets should be equal to the quantity that is specified on the sales line. You can also enter a fixed asset on the sales line if you select the item with the Item product type. 
+1. Select the **Lines** tab in the lower pane.
+1. In the **Item number** field, select the item number, which is related to the fixed asset group. On the **Line detail > Fixed asset** tab, enter the fixed assets (Fixed asset (Russia)). If you select an item with the Service product type in the sales line you can enter several fixed assets. In this case, the quantity of fixed assets should be equal to the quantity that is specified on the sales line. You can also enter a fixed asset on the sales line if you select the item with the Item product type.
 
     > [!NOTE]
     > To create a new item, see [Create a released product for a single company](../../../supply-chain/pim/tasks/create-released-product-single-company.md).
-    
+
 1. Select **Inventory management** \> **Setup** \> **Inventory** \> **Item model groups**. If the **Physical negative inventory** checkbox is selected, then you can sell an item that is a fixed asset type without entering an inventory item. If not, you can sell an inventory asset that has a **Purchased** status.
 1. Select **Posting** \> **Facture** to post the sales order.
 1. Select **OK** to post the sales invoice. An invoice, facture, ledger, and fixed asset transactions are created, and the **Status** of the sales invoice changes to **Shipped**. The status of fixed asset changes to **Written off (sale)**. The **Disposal (sale)** and **Gain/Loss** fields are updated on the **FA balances** page. The **Disposal date** and **Disposal cost** fields are updated on the **FA Value models** page.
@@ -107,7 +107,7 @@ To reverse a disposal transaction, create a credit note for the sales order or f
 
 ## Reverse write-off and disposal transactions
 
-By default, when you reverse a trnasaction, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
+By default, when you reverse a trnasaction, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
 
 To reverse write-off and disposal transactions, follow these steps:
 
@@ -116,7 +116,5 @@ To reverse write-off and disposal transactions, follow these steps:
 1. On the **FA transactions** page, select and transaction and on the Action Pane, select **Reverse transaction**.
 1. In the **Reverse transactions** dialog, change the transaction reversal date as needed, and then select **OK**. A transaction to reverse the original transaction is created and added to the **FA transactions** page.
 1. Select **Voucher** and on the **Voucher transactions** page, view the transactions in the ledger.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

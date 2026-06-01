@@ -1,10 +1,10 @@
 ---
-title: Enable agent management 
-description: This article describes the Agent management feature in Microsoft Dynamics 365 finance and operations apps.
+title: Enable agent management
+description: This article describes the agent management feature in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
 ms.author: jkhaira
 ms.topic: concept-article
-ms.date: 03/09/2026
+ms.date: 05/07/2026
 ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer: twheeloc 
@@ -14,6 +14,8 @@ ms.collection:
 ---
 
 # Enable agent management
+
+[!include [banner](../includes/banner.md)]
 
 This article describes the agent management feature in Microsoft Dynamics 365 finance and operations apps.
 
@@ -41,12 +43,10 @@ A Power Platform admin center administrator must ensure that the following prere
 
 - You must enable billing.
 
-  1. In the Power Platform admin center, go to **Billing** > **Licenses**.
-  1. Select **Copilot Studio**.
-  1. Create a new billing plan as necessary.
-  1. Assign credits to the relevant environment. To learn more, see [AI Builder licensing and credit management](/ai-builder/credit-management).
-
-- Add "Finance and Operations basic user" role to user who will work with Agent management
+    1. In the Power Platform admin center, go to **Billing** > **Licenses**.
+    1. Select **Copilot Studio**.
+    1. Create a new billing plan as necessary.
+    1. Assign credits to the relevant environment. To learn more, see [AI Builder licensing and credit management](/ai-builder/credit-management).
 
 After all of the other prerequisites are in place, a finance and operations apps administrator must enable the *Agent management* feature in the **Feature management** workspace.
 

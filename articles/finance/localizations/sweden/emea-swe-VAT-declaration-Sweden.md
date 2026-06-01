@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/21/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Sweden
 ---
@@ -107,13 +107,13 @@ For example, for purchases of goods at a standard rate in Sweden that the buyer 
 
 Alternatively, you configure two sales tax codes:
 
-   - **VAT_S_RC**, which has a tax rate value of -25 percent
-   - **InVAT_S_RC**, which has a tax rate value of 25 percent
+- **VAT_S_RC**, which has a tax rate value of -25 percent
+- **InVAT_S_RC**, which has a tax rate value of 25 percent
 
 You then associate the codes with lookup results in the following way:
 
-   - Associate **VAT_S_RC** with the **PurchaseGoodsDomesticRCStandard** lookup result of **Report field lookup**.
-   - Associate **InVAT_S_RC** with the **InputVAT** lookup result of **Report field lookup**.
+- Associate **VAT_S_RC** with the **PurchaseGoodsDomesticRCStandard** lookup result of **Report field lookup**.
+- Associate **InVAT_S_RC** with the **InputVAT** lookup result of **Report field lookup**.
 
 In this case, amounts that use the **VAT_S_RC** sales tax code are reflected in boxes 23 (tax base) and 30 (tax payable). Amounts that use the **InVAT_S_RC** sales tax code are reflected on line 48.
 
@@ -125,8 +125,8 @@ For more information about how to configure reverse charge VAT, see [Reverse cha
 
 To import ER configurations, in Dynamics 365 Finance, go to the **Electronic reporting** workspace and import the following versions or later version of these ER formats:
 
-   - VAT Declaration XML (SE) version 95.11
-   - VAT Declaration Excel (SE) version 95.11.13
+- VAT Declaration XML (SE) version 95.11
+- VAT Declaration Excel (SE) version 95.11.13
 
 Learn more in [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -141,10 +141,10 @@ To set up application-specific parameters for VAT declaration boxes, follow thes
 1. On the **Conditions** FastTab, associate the sales tax codes and report fields.
 
     > [!NOTE]
-    >  - Be sure to associate all sales tax codes with lookup results. If any sales tax codes should not generate values in VAT declaration, associate them with the **Other** lookup result.
-    >  - If you create enough sales tax codes to generate VAT declaration boxes based on assosiation of sales tax code only, select in the column **Transaction classifier** the value **Not blank**. Alternatively, if you use the same sales tax code for different transaction types, select value in the column **Transaction classifier**. For example, if you use the same sales tax code for sales and purchases, you should have at least four lines for the same sales tax code with **Transaction classifier** values: **Sales**, **SalesCreditNote**, **Purchase**, **PurchaseCreditNote**.
+    > - Be sure to associate all sales tax codes with lookup results. If any sales tax codes should not generate values in VAT declaration, associate them with the **Other** lookup result.
+    > - If you create enough sales tax codes to generate VAT declaration boxes based on assosiation of sales tax code only, select in the column **Transaction classifier** the value **Not blank**. Alternatively, if you use the same sales tax code for different transaction types, select value in the column **Transaction classifier**. For example, if you use the same sales tax code for sales and purchases, you should have at least four lines for the same sales tax code with **Transaction classifier** values: **Sales**, **SalesCreditNote**, **Purchase**, **PurchaseCreditNote**.
 
-      ![Application specific parameters page.](../media/434c381f0f588abf84cd83518b51cf20.png)
+      :::image type="content" source="../media/434c381f0f588abf84cd83518b51cf20.png" alt-text="Screenshot of the Application specific parameters page.":::
 
 1. On the Action Pane, select **Export** to export the settings in an XML file. Then close the page.
 1. Select the **VAT declaration Excel (SE)** configuration, and then select **Configurations** \> **Application specific parameters setup**.
@@ -178,7 +178,7 @@ To activate the capability to add notes to the VAT declaration XML (SE) report, 
 1. Add a line, and then, in the reference grid, select the **Sales tax payments** table.
 1. In the **Always enabled** column, select the checkbox.
 
-    ![Active document table](../media/15676877b8e3f578ca461da460bd7d87.png)
+    :::image type="content" source="../media/15676877b8e3f578ca461da460bd7d87.png" alt-text="Screenshot of the Active document table.":::
 
 ## Settle and post sales tax and preview the VAT declaration in Excel
 
@@ -194,7 +194,7 @@ To preview the VAT declaration in Excel from the Report sales tax for settlement
    | Settlement period | Select the settlement period. |
    | Sales tax payment version | Select one of the following values: <br>- **Original** - Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated. <br>- **Corrections** - Generate a report for sales tax transactions of all the subsequent sales tax payments for the period. <br>- **Total list** - Generate a report for all sales tax transactions for the period, including the original and all corrections.    |
    | From date | Select the first date of the reporting period. |
-   
+
 1. Select **OK**, and review the Excel report.
 
 ### <a name="settle-and-post-sales-tax"></a>Settle and post sales tax
@@ -271,7 +271,7 @@ To generate a VAT declaration from electronic messages, follow these steps:
 1. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog, select **OK**.
 1. Select the message line that is created, enter a description, and then specify the start and end dates for the declaration period.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Steps 5 through 7 are optional.
 
 1. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. Sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this article. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Electronic report parameters** dialog.
@@ -287,16 +287,16 @@ To generate a VAT declaration from electronic messages, follow these steps:
     |-------|-------------|
     | Settlement period | Select the settlement period. <br> If you selected **Collect data** in step 5, you can disregard this field. The report is generated for the sales tax transactions that are included in the collected sales tax payments. |
     | Tax declaration version | Select one of the following values: <br> - **Original** - Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated. <br>- **Corrections** - Generate a report for sales tax transactions of all the subsequent sales tax payments for the period. <br> - **Total list** - Generate a report for all sales tax transactions for the period, including the original and all corrections. <br> If you selected **Collect data** in step 5, you can disregard this field. The report is generated for the sales tax transactions that are included in the collected sales tax payments. |
-       
+
 1. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the Excel file. Review the amounts in the Excel document.
 1. Select **Generate report**.
 1. To generate a report in XML format, in the **Run processing** dialog, select **Generate report**, and then select **OK**.
 1. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and download the electronic file that was generated. You should manually upload this file to the government portal.
-    
+
     > [!NOTE]
-    > You may need to manually add the following line to the generated file before you upload the file to the government portal. It should be the second line in the file: 
+    > You may need to manually add the following line to the generated file before you upload the file to the government portal. It should be the second line in the file:
     >
-    >  ``` text
+    > ``` text
     > &lt;!DOCTYPE eSKDUpload PUBLIC "-//Skatteverket, Sweden//DTD Skatteverket eSKDUpload-DTD Version 6.0//SV" https://www1.skatteverket.se/demoeskd/eSKDUpload_6p0.dtd&gt;
     >  ```
 
@@ -330,6 +330,5 @@ To set up electronic messages to collect data from multiple legal entities, foll
 1. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
 
    When the setup is completed, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all legal entities that you defined.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

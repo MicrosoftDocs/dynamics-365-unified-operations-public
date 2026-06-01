@@ -4,7 +4,7 @@ description: Learn how to create a corrective invoice for Spain in Microsoft Dyn
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/09/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-06-30

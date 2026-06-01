@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 07/11/2025
+ms.date: 05/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
@@ -22,6 +22,7 @@ This article explains how to work with special entries and opening sheets for Sp
 Legal entities in Spain can post special entries as opening entries for the current period, while adapting accounts to changes in accounting rules.
 
 By using opening sheets, you can indicate the following:
+
 - Increase the value of specific financial fixed assets.
 - Change the value of specific raw materials when the value has changed significantly during the year and when the material meets specific criteria.
 
@@ -29,7 +30,7 @@ When you close the entries for the previous fiscal year, you can create several 
 
 ## Create a new opening sheet
 
-To create a new opening sheet, follow these steps: 
+To create a new opening sheet, follow these steps:
 
 1. In Dynamics 365 Finance, go to  on the **Opening sheets** page.
 1. Select **New**.
@@ -51,9 +52,5 @@ To specify the main accounts to include in the opening sheet, follow these steps
 1. In Dynamics 365 Finance, go to the **Opening sheets** page.
 1. Select **Opening accounts** \> **Load balances**.
 1. To post all ledger account balances and adjustments to the opening sheet, select **Post**.
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
