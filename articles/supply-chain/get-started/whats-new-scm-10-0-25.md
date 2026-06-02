@@ -138,7 +138,7 @@ The table also lists features that were previously in public preview, but have c
 | Warehouse management | [Use faster API for containers closing/reopening on packing station](../supply-chain-dev/whats-new-scm-10-0-21.md) | Generally available |
 | Warehouse management | [Validate templates selected for replenishment jobs](../supply-chain-dev/whats-new-scm-10-0-20.md) | Generally available |
 | Warehouse management | Allow replenishment template to use existing immediate replenishment work (across units) | Mandatory |
-| Warehouse management | Automatic assigning of the GUIDs on WHS user creation | Mandatory |
+| Warehouse management | Automatic assigning of the GUIDs on WMS user creation | Mandatory |
 | Warehouse management | Capture product variants and tracking dimensions in the warehousing app during load item receiving | Mandatory |
 | Warehouse management | [Change the inventory status of items controlled by tracking dimensions](../inventory/inventory-statuses.md) | Mandatory |
 | Warehouse management | [Change work pool on work](../warehousing/change-work-pool-on-work.md) | Mandatory |

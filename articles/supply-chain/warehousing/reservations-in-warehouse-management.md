@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSReservationHierarchy, WHSParameters, PdsDispositionMaster
 ms.topic: how-to
-ms.date: 05/18/2026
+ms.date: 06/02/2026
 ms.custom:
   - bap-template
 ---
@@ -15,11 +15,9 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Lightbox tip](~/../shared-content/shared/lightbox-tip.md)]
-
 This article describes the reservation functionality in Warehouse management and provides information about how it's implemented.
 
-The **Warehouse management** module introduces functionality for reserving items and materials. The reservation functionality can be used only for items that are enabled for warehouse management processes (WMS). However, an item that is enabled for WMS can be used in both warehouses that are enabled for WMS and warehouses that aren't enabled for WMS.
+The **Warehouse management** module introduces functionality for reserving items and materials. You can use the reservation functionality only for items that are enabled for warehouse management processes (WMS). However, you can use an item that is enabled for WMS in both warehouses that are enabled for WMS and warehouses that aren't enabled for WMS.
 
 The behavior in reservation scenarios varies, depending on the warehouse setup. Later sections of this article provide more details about the differences.
 
@@ -39,7 +37,7 @@ The following illustration shows an example of a reservation hierarchy on the **
 
 The lower the value in the **Reservation hierarchy level** column of the grid, the less specific the level is. The higher the value, the more details are required to make a reservation on the level. In the previous illustration, the **Site** level has the lowest value (*1*) and is therefore the least specific level. The **License plate** level has the highest value (*5*) and is therefore the most specific level.
 
-Information about on-hand inventory is stored separately for each level in the reservation hierarchy.
+The system stores information about on-hand inventory separately for each level in the reservation hierarchy.
 
 ### Details about the implementation of reservation hierarchies
 
@@ -47,9 +45,9 @@ The following illustration shows the data model for the setup of a reservation h
 
 :::image type="content" source="media/inventory-reservation-hierarchies-setup-of-reservation-hierarchies.png" alt-text="Diagram that shows the data model for the setup of reservation hierarchies." lightbox="media/inventory-reservation-hierarchies-setup-of-reservation-hierarchies.png":::
 
-The definitions of reservation hierarchies are stored in the `WHSReservationHierarchy` and `WHSReservationHierarchyElement` tables. These tables are shared tables. A reservation hierarchy can be associated with one item within a company.
+The `WHSReservationHierarchy` and `WHSReservationHierarchyElement` tables store the definitions of reservation hierarchies. These tables are shared tables. You can associate a reservation hierarchy with one item within a company.
 
-The `WHSReservationHierarchyProvider` class provides a large number of APIs that are useful when you work with and query the reservation hierarchy for an item.
+The `WHSReservationHierarchyProvider` class provides many APIs that are useful when you work with and query the reservation hierarchy for an item.
 
 ### Making reservations on different levels
 
@@ -58,7 +56,7 @@ Based on the reservation hierarchy, you can make reservations on different level
 Here are some examples:
 
 - You make a reservation only on the site level. In this case, inventory blocking can be used to block a quantity of an item on a given site.
-- You make reservations for a sales order that was created on site 4 and warehouse 42, and for the *Available* inventory status. Warehouse 42 is enabled for WMS. In this case, the reservation is made only on the inventory status level.
+- You make reservations for a sales order that you created on site 4 and warehouse 42, and for the *Available* inventory status. Warehouse 42 is enabled for WMS. In this case, the reservation is made only on the inventory status level.
 
 ## Impact of the reservation hierarchy setup
 
@@ -68,13 +66,13 @@ When you set up a reservation hierarchy, the key is to determine which dimension
 
 | Dimension placement | Description |
 |---|---|
-| Dimensions above location | <p>The inventory dimensions above the location level must be determined before the Warehouse management functionality can be used. Typically, workers make this determination during order processing, or they let the reservation system make it.</p><p>If a dimension is above the location level, warehouse workers can't change it, because it's considered a strict picking requirement. For example, if the Batch number dimension is above the location level, a worker can't pick a batch that differs from the one that they were instructed to pick.</p> |
+| Dimensions above location | <p>You must determine the inventory dimensions above the location level before you can use the Warehouse management functionality. Typically, workers make this determination during order processing, or they let the reservation system make it.</p><p>If a dimension is above the location level, warehouse workers can't change it, because it's considered a strict picking requirement. For example, if the Batch number dimension is above the location level, a worker can't pick a batch that differs from the one that they were instructed to pick.</p> |
 | Batch above location | Process industry functionality for batches requires that the Batch number dimension is above the Location dimension in the reservation hierarchy. In this case, all functionality for first expiry, first out (FEFO), same batch reservation, batch disposition codes, and batch attributes is supported. |
-| Dimensions below location | <p>Both the system and warehouse workers can determine the Location dimension and the dimensions below it.</p><p>The Location dimension and any dimensions below it should not be entered on sales and transfer lines if you expect work to be created. For example, if the Batch number dimension is below the Location dimension, it should not be specified on the sales line. Otherwise, WHS can't create work to carry out the pick and pack operations.</p> |
+| Dimensions below location | <p>Both the system and warehouse workers can determine the Location dimension and the dimensions below it.</p><p>You shouldn't enter the Location dimension and any dimensions below it on sales and transfer lines if you expect work to be created. For example, if the Batch number dimension is below the Location dimension, it shouldn't be specified on the sales line. Otherwise, WMS can't create work to carry out the pick and pack operations.</p> |
 
 ## On-hand representation and calculations
 
-To support reservations on different levels, a new method is used to store information about on-hand inventory for WMS-enabled items. Each level in the hierarchy corresponds to a set of physical inventory dimensions. For each level in the reservation hierarchy, the following information is stored:
+To support reservations on different levels, use a new method to store information about on-hand inventory for WMS-enabled items. Each level in the hierarchy corresponds to a set of physical inventory dimensions. The following information is stored for each level in the reservation hierarchy:
 
 - The quantity that is available physical
 - The quantity that is available ordered
@@ -92,9 +90,9 @@ The following table shows how the data might look for an item that has 10 pieces
 | Location | S1 | WH1 | Good | Bulk | | 12 | 12 | 0 | 0 |
 | License plate | S1 | WH1 | Good | Bulk | LP1 | 12 | 12 | 0 | 0 |
 
-As the table shows, reservations are tracked only on the levels that are affected by the reservation.
+As the table shows, reservations are tracked only on the levels that the reservation affects.
 
-Because of the way that information about availability and reservations is stored, the corresponding values from the `InventSum` table can't be used directly for WHS-enabled items.
+Because of the way that the system stores information about availability and reservations, you can't use the corresponding values from the `InventSum` table directly for WMS-enabled items.
 
 ### On-hand calculation algorithm
 
@@ -111,7 +109,7 @@ For example, based on the data in the previous table, the available physical qua
 - **Inventory status:** *Good*
 - **Location:** *Bulk*
 
-In step 1 of the algorithm, the quantity is 12, because that quantity is the one that is available on the location level. However, in step 2, the smallest quantity from the levels above the location level is 10. Therefore, in step 3, the available physical quantity is 10, because that quantity is the smaller of 12 and 10.
+In step 1 of the algorithm, the quantity is 12, because that quantity is available on the location level. However, in step 2, the smallest quantity from the levels above the location level is 10. Therefore, in step 3, the available physical quantity is 10, because that quantity is the smaller of 12 and 10.
 
 Calculations of on-hand quantity for work transactions are done differently. The on-hand quantity is determined only up to the location level, because work affects reservations only on the location level and below. For example, based on the data in the previous table, the available physical quantity is calculated for work on the following dimensions:
 
@@ -124,11 +122,11 @@ In this case, the available physical quantity is 12, because the quantity is det
 
 ### Details about the implementation of on-hand calculations
 
-The on-hand information is stored in a new table that is named `WHSInventReserve`. The `WHSInventReserveDelta` table is used to track changes that the current transaction causes in the on-hand quantity. When the final commit occurs, the `WHSInventReserve` table is updated based on the changes in the `WHSInventReserveDelta` table.
+The on-hand information is stored in a new table named `WHSInventReserve`. The `WHSInventReserveDelta` table tracks changes that the current transaction causes in the on-hand quantity. When the final commit occurs, the system updates the `WHSInventReserve` table based on the changes in the `WHSInventReserveDelta` table.
 
-Because many scenarios involve the calculation of on-hand quantities based on `itemId`, `InventDim`, or `InventSum` records for both WMS-enabled and non-WMS-enabled items, APIs are provided to support the calculations in a seamless way.
+Because many scenarios involve the calculation of on-hand quantities based on `itemId`, `InventDim`, or `InventSum` records for both WMS-enabled and non-WMS-enabled items, the system provides APIs to support the calculations in a seamless way.
 
-The following example shows how to instantiate the class that can be used to calculate availability for both WMS-enabled and non-WMS-enabled items.
+The following example shows how to instantiate the class that you can use to calculate availability for both WMS-enabled and non-WMS-enabled items.
 
 ```xpp
 InventAvailabilitySearch availabilitySearch;
@@ -154,11 +152,11 @@ The following illustration shows the various classes and interfaces that are use
 
 ## Reservation strategies
 
-To control the levels of the reservation hierarchy that reservations are made on, the system uses the concept of *reservation strategies*. A reservation strategy determines the outcome of a reservation, and the dimensions that are used to make the reservation. Reservation strategies are implemented in the code and aren't currently user configurable.
+To control the levels of the reservation hierarchy, the system uses the concept of *reservation strategies*. A reservation strategy determines the outcome of a reservation and the dimensions used to make the reservation. Reservation strategies are hard coded and aren't user configurable.
 
-Each reservation strategy determines the level that the reservation should be made on. If the dimensions that are passed to the reservation system don't cover all the dimensions to the level that is defined by the strategy, the reservation system queries the on-hand availability until the required level. Then, based on the results of this query, it does the reservation so that it covers all the required dimensions.
+Each reservation strategy determines the level for the reservation. If the dimensions that the reservation system receives don't cover all the dimensions to the level that the strategy defines, the reservation system queries the on-hand availability until it reaches the required level. Then, based on the results of this query, it makes the reservation so that it covers all the required dimensions.
 
-The reservation strategies that are chosen for a reservation depend on the following factors, among others:
+The reservation system chooses reservation strategies based on the following factors, among others:
 
 - Warehouse setup
 - Order type
@@ -167,76 +165,69 @@ The following table describes the reservation strategies that the reservation sy
 
 | Reservation strategy | Description |
 |---|---|
-| None | The reservation is made on the dimensions that are passed, if possible. This strategy is used by inventory blocking. It lets you make reservations on, for example, the site or warehouse level. |
-| All | The reservation is made on all the dimensions in the reservation hierarchy. This strategy is used, for example, for transfer journals or non-WMS-enabled warehouses. |
-| Above location | The reservation is made only on the dimensions above the location level. This strategy is used, for example, for sales and transfer orders when reservations are made in a WMS-enabled warehouse. |
-| All not allowed blank | The reservation is made on the first lowest level that doesn't allow for blank issue for the inventory dimensions. This strategy enables automatic reservations on locations that aren't license plate controlled. |
+| None | The reservation system makes the reservation on the dimensions that it receives, if possible. Inventory blocking uses this strategy. It lets you make reservations on, for example, the site or warehouse level. |
+| All | The reservation system makes the reservation on all the dimensions in the reservation hierarchy. This strategy is used, for example, for transfer journals or non-WMS-enabled warehouses. |
+| Above location | The reservation system makes the reservation only on the dimensions above the location level. This strategy is used, for example, for sales and transfer orders when reservations are made in a WMS-enabled warehouse. |
+| All not allowed blank | The reservation system makes the reservation on the first lowest level that doesn't allow for blank issue for the inventory dimensions. This strategy enables automatic reservations on locations that aren't license plate controlled. |
 | Batch level | This strategy is applied for items that the Batch number dimension is selected for, and that are above the Location dimension in the reservation hierarchy. This strategy is used when only reservations that are reserved ordered can be made. In that case, the reservation system attempts a reservation until the batch level. |
 
-The reservation system supports multiple reservation strategies in sequential order when reservations are made. For example, the system uses the All and All not allowed blank strategies to make reservations for transfer journals.
+The reservation system supports multiple reservation strategies in sequential order when it makes reservations. For example, the system uses the All and All not allowed blank strategies to make reservations for transfer journals.
 
 ### Details about the implementation of reservation strategies
 
-The following illustration shows the classes that are used to implement reservation strategies, and the main consumers of those classes. For the sake of simplicity, some details are omitted.
+The following illustration shows the classes that implement reservation strategies and the main consumers of those classes. For simplicity, it omits some details.
 
 :::image type="content" source="media/inventory-reservation-hierarchies-strategy-classes.png" alt-text="Diagram that shows the implementation of reservation strategies." lightbox="media/inventory-reservation-hierarchies-strategy-classes.png":::
 
-The implementation is easy to extend, because the instantiation uses the SysExtension framework.
+You can easily extend the implementation because the instantiation uses the SysExtension framework.
 
 ## Synchronization of dimensions between receipts and issues
 
-When an inventory transaction is marked or reserved ordered, the inventory dimensions are typically synchronized between receipts and issues. For example, when a purchase order that was created based on a sales order is modified or received, the dimensions are transferred to the inventory transactions for the sales line.
+When you mark or reserve order an inventory transaction, the system typically synchronizes the inventory dimensions between receipts and issues. For example, when you modify or receive a purchase order that you created based on a sales order, the system transfers the dimensions to the inventory transactions for the sales line.
 
-For WMS-enabled items, the synchronization differs from the standard behavior. When work must be created, the source line transactions can be reserved only until the level above the location level. If all dimensions are synchronized, work can't be created. Therefore, dimensions above the location level aren't synchronized for all scenarios.
+For WMS-enabled items, the synchronization differs from the standard behavior. When the system creates work, it can reserve the source line transactions only up to the level above the location level. If all dimensions are synchronized, the system can't create work. Therefore, the system doesn't synchronize dimensions above the location level for all scenarios.
 
-If both the item and the warehouse are enabled for WMS, and if the issue type is one that can generate work, such as a sales line, only dimensions above the location level are synchronized. Therefore, if an item uses batch numbers, and the Batch number dimension is below the location level in the reservation hierarchy, the batch number isn't synchronized from receipt to issue transactions.
+If both the item and the warehouse are enabled for WMS, and if the issue type is one that can generate work, such as a sales line, the system only synchronizes dimensions above the location level. Therefore, if an item uses batch numbers, and the Batch number dimension is below the location level in the reservation hierarchy, the system doesn't synchronize the batch number from receipt to issue transactions.
 
 ### Details about the implementation of synchronization between receipts and issues
 
-The logic that determines how dimensions are synchronized is implemented in the following methods on the `inventMovement` class. (However, new methods that are added might also require consideration.)
+The logic that determines how dimensions are synchronized is implemented in the following methods on the `inventMovement` class. (However, new methods that you add might also require consideration.)
 
 - `getInventDimForReservedTransPhysChange`
 - `getInventDimForIssueTransFromReceipt`
 
 > [!NOTE]
-> When products use an inventory reservation hierarchy of the *Batch-below\[location\]* type and are batch tracked for WMS, you should set a *flexible warehouse-level dimension reservation policy*. In this way, you ensure that reservations can be done for those products.
+> When products use an inventory reservation hierarchy of the *Batch-below\[location\]* type and are batch tracked for WMS, set a *flexible warehouse-level dimension reservation policy*. This policy ensures that you can reserve those products.
 >
 > Learn more about the flexible warehouse-level dimension reservation policy in [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md).
 
-## Batch reservation policy for non-advanced warehouses
+## Batch reservation policy for non-WMS warehouses
 
-A WHS-enabled item can be stocked in a warehouse that isn't enabled for advanced warehouse management processes. When the item uses a reservation hierarchy where the Batch number dimension is *below* the Location dimension, the system can't use the warehouse work engine to enforce batch-related rules during reservation. By default, this means that the reservation logic doesn't evaluate first expiry, first out (FEFO) rules or batch disposition codes for those items in those warehouses. As a result, the system might reserve a quantity from a batch that is marked as unavailable through its batch disposition code.
+Items enabled for warehouse management processes (WMS) can be stocked non-WMS-enabled warehouses. However, if you do this, then WMS-enabled items that use a reservation hierarchy where the *Batch number* dimension is below the *Location* dimension prevent the warehouse work engine from enforcing batch-related rules during reservation. By default, this means that the reservation logic doesn't evaluate first expiry, first out (FEFO) rules, or batch disposition codes for those items in those warehouses. As a result, the system might reserve a quantity from a batch that is marked as unavailable through its batch disposition code.
 
-To control this behavior, use the **Batch reservation policy for non advanced warehouses** field on the **Warehouse management parameters** page. The field has the following options:
+To control this behavior, follow these steps:
 
-- **Simple** (default) – The existing reservation behavior is preserved. Batch disposition code logic is applied only when the batch is explicitly specified on the order line. FEFO rules are not applied by the reservation engine for non-WHS-enabled warehouses.
-- **Advanced** – Both FEFO rules and batch disposition codes are applied during reservation and during on-hand calculations, even when no batch is specified on the order line. Batches that are assigned a disposition code with the **Batch disposition status** field set to *Unavailable* (with the **Reserve** block status applied for the order type) are excluded from automatic reservation. The user receives the standard "Cannot reserve" feedback when no other on-hand quantity is available.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Open the **General** tab.
+1. Expand the **Batches** FastTab.
+1. Set **Batch reservation policy for non advanced warehouses** to one of the following values:
+    - *Simple* – The system applies batch disposition code logic only when the batch is explicitly specified on the order line. The reservation engine doesn't apply FEFO rules for non-WMS-enabled warehouses. This behavior matches that of older versions of Supply Chain Management and is the default value for this setting.
+    - *Advanced* – The system applies both FEFO rules and batch disposition codes during reservation and during on-hand calculations, even when no batch is specified on the order line. The system excludes batches that are assigned a disposition code with the **Batch disposition status** field set to *Unavailable* (with the *Reserve* block status applied for the order type) from automatic reservation. The user receives the standard "Cannot reserve" feedback when no other on-hand quantity is available.
+1. On the Action Pane, select **Save**.
 
 The policy applies in the following situations:
 
-- Sales orders, including automatic reservation, manual reservation from the **Reservation** page, and release to warehouse.
-- Items that use a reservation hierarchy where the Batch number dimension is below the Location dimension.
-- Lines on warehouses where the **Use warehouse management processes** option is *No*.
+- Sales orders, including automatic reservation, manual reservations from the **Reservation** page, and release to warehouse operations.
+- Items that use a reservation hierarchy where the *Batch number* dimension is below the *Location* dimension.
+- Lines for warehouses where the **Use warehouse management processes** option is *No*.
 
 The policy does *not* apply in the following situations:
 
 - Retail sales orders.
-- Items that use a reservation hierarchy where the Batch number dimension is above the Location dimension. For those items, batch disposition codes and FEFO are already applied by the standard reservation strategies, regardless of the **Batch reservation policy for non advanced warehouses** setting.
-- Warehouses that are enabled for advanced warehouse management processes. For those warehouses, batch disposition codes are enforced by the warehouse work engine.
+- Items that use a reservation hierarchy where the *Batch number* dimension is above the *Location* dimension. For those items, standard reservation strategies already apply batch disposition codes and FEFO, regardless of the **Batch reservation policy for non advanced warehouses** setting.
+- WMS-enabled warehouses. For those warehouses, the warehouse work engine enforces batch disposition codes.
 - Order types other than sales orders, such as transfer orders or production orders.
 
-There is a small performance overhead when you use the **Advanced** policy, because more validations are done during reservation and on-hand calculations. There are also scenarios where the advanced criteria can't be applied when on-hand inventory is presented in the user interface.
-
-### Set the batch reservation policy
-
-Follow these steps to set the policy.
-
-1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
-1. On the **Batches** tab, set the **Batch reservation policy for non advanced warehouses** field to one of the following values:
-
-    - *Simple* – Preserve the previous behavior.
-    - *Advanced* – Apply FEFO rules and batch disposition codes during reservation for the affected scenarios.
-
-1. Save your changes.
+There's a small performance overhead when you use the *Advanced* policy because the system performs more validations during reservation and on-hand calculations. There are also scenarios where the advanced criteria can't be applied when on-hand inventory is presented in the user interface.
 
 For information about how to set up batch disposition codes and assign them to batches, see [Use batch disposition codes to mark batches as available or unavailable](../inventory/batch-disposition-codes.md).
