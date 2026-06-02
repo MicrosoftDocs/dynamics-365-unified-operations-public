@@ -18,7 +18,7 @@ This article describes how to set up and use *batch disposition codes*. Each bat
 To use batch disposition codes, you must set up the codes and assign them to the batches that you want to manage.
 
 > [!NOTE]
-> For items that are enabled for warehouse management processes (WMS) and that use a reservation hierarchy where the *Batch number* dimension is below the *Location* dimension, the system enforces batch disposition codes during reservation only when the line's warehouse is enabled for WMS, or when the **Batch reservation policy for non advanced warehouses** parameter is set to *Advanced*. Learn more in [Batch reservation policy for non-advanced warehouses](../warehousing/reservations-in-warehouse-management.md#batch-reservation-policy-for-non-advanced-warehouses).
+> For items that are enabled for warehouse management processes (WMS) and that use a reservation hierarchy where the *Batch number* dimension is below the *Location* dimension, the system enforces batch disposition codes during reservation only when the line's warehouse is enabled for WMS, or when the **Batch reservation policy for non advanced warehouses** parameter is set to *Advanced*. Learn more in [Batch reservation policy for non-WMS warehouses](../warehousing/reservations-in-warehouse-management.md#batch-reservation-policy-for-non-wms-warehouses).
 
 ## Set up batch disposition codes
 
