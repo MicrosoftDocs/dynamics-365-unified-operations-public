@@ -60,23 +60,23 @@ The following examples illustrate these aggregation rules.
 
 | ID | Item number | Inventory dimension ID | Financial date | Reference | Receipt | Issue | Quantity |
 |---|---|---|---|---|---|---|---|
-| A1 | WHS item A | Dim_1 | January 10, 2020 | Purchase order | Purchased | | 10 |
-| A2 | WHS item A | Dim_1 | January 15, 2020 | Counting | | Sold | -3 |
-| A3 | WHS item A | Dim_1 | January 20, 2020 | Work | | Sold | -7 |
-| A4 | WHS item A | Dim_2 | January 20, 2020 | Work | Purchased | | 7 |
-| A5 | WHS item A | Dim_2 | January 20, 2020 | Work | | Sold | -7 |
-| A6 | WHS item A | Dim_3 | January 20, 2020 | Work | Purchased | | 7 |
-| A7 | WHS item A | Dim_3 | January 25, 2020 | Sales order | | Sold | -7 |
+| A1 | WMS item A | Dim_1 | January 10, 2020 | Purchase order | Purchased | | 10 |
+| A2 | WMS item A | Dim_1 | January 15, 2020 | Counting | | Sold | -3 |
+| A3 | WMS item A | Dim_1 | January 20, 2020 | Work | | Sold | -7 |
+| A4 | WMS item A | Dim_2 | January 20, 2020 | Work | Purchased | | 7 |
+| A5 | WMS item A | Dim_2 | January 20, 2020 | Work | | Sold | -7 |
+| A6 | WMS item A | Dim_3 | January 20, 2020 | Work | Purchased | | 7 |
+| A7 | WMS item A | Dim_3 | January 25, 2020 | Sales order | | Sold | -7 |
 
 #### After consolidation from January 1, 2020, through January 31, 2020
 
 | ID | Item number | Inventory dimension ID | Financial date | Reference | Receipt | Issue | Quantity |
 |---|---|---|---|---|---|---|---|
-| B1 | WHS item A | Dim_1 | January 31, 2020 | Archived inventory transaction | Purchased | | 7 |
-| A3 | WHS item A | Dim_1 | January 20, 2020 | Work | | Sold | -7 |
-| B3 | WHS item A | Dim_2 | January 31, 2020 | Archived warehouse transaction type that affects only location and below | | Sold | 0 |
-| A6 | WHS item A | Dim_3 | January 20, 2020 | Work | Purchased | | 7 |
-| A7 | WHS item A | Dim_3 | January 25, 2020 | Sales order | | Sold | -7 |
+| B1 | WMS item A | Dim_1 | January 31, 2020 | Archived inventory transaction | Purchased | | 7 |
+| A3 | WMS item A | Dim_1 | January 20, 2020 | Work | | Sold | -7 |
+| B3 | WMS item A | Dim_2 | January 31, 2020 | Archived warehouse transaction type that affects only location and below | | Sold | 0 |
+| A6 | WMS item A | Dim_3 | January 20, 2020 | Work | Purchased | | 7 |
+| A7 | WMS item A | Dim_3 | January 25, 2020 | Sales order | | Sold | -7 |
 
 #### Result summary
 

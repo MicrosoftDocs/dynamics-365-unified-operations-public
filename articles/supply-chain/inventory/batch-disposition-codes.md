@@ -6,20 +6,23 @@ ms.author: banluo
 ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form: PdsDispositionMaster, InventBatch
-ms.date: 07/31/2025
+ms.date: 06/02/2026
 ms.custom:
   - bap-template
 ---
 
 # Use batch disposition codes to mark batches as available or unavailable
 
-This article describes how to set up and use *batch disposition codes*. Each batch disposition code has a status of either *Available* or *Unavailable*. You assign batch disposition codes to inventory batches to indicate whether each batch is available for master planning, reservation, picking, and/or shipping.
+This article describes how to set up and use *batch disposition codes*. Each batch disposition code has a status of either *Available* or *Unavailable*. You assign batch disposition codes to inventory batches to indicate whether each batch is available for master planning, reservation, picking, and shipping.
 
 To use batch disposition codes, you must set up the codes and assign them to the batches that you want to manage.
 
+> [!NOTE]
+> For items that are enabled for warehouse management processes (WMS) and that use a reservation hierarchy where the *Batch number* dimension is below the *Location* dimension, the system enforces batch disposition codes during reservation only when the line's warehouse is enabled for WMS, or when the **Batch reservation policy for non advanced warehouses** parameter is set to *Advanced*. Learn more in [Batch reservation policy for non-WMS warehouses](../warehousing/reservations-in-warehouse-management.md#batch-reservation-policy-for-non-wms-warehouses).
+
 ## Set up batch disposition codes
 
-You must set up each batch disposition code that you want to use in your system. You can create as many codes as you want. (For example, you can create codes to identify the different reasons why a batch might be available or unavailable). However, you will often have just two codes: one for *available* and one for *unavailable*. You can also create custom codes that enable a batch to be used for some operations but not others.
+Set up each batch disposition code that you want to use in your system. You can create as many codes as you want. For example, you can create codes to identify the different reasons why a batch might be available or unavailable. However, you often need just two codes: one for *available* and one for *unavailable*. You can also create custom codes that enable a batch to be used for some operations but not others.
 
 Follow these steps to set up batch disposition codes.
 
@@ -36,7 +39,7 @@ Follow these steps to set up batch disposition codes.
     - **Batch disposition status** – Select the status that applies to batches that the code is assigned to:
 
         - *Unavailable* – The batches can't be used for master planning, reservation, picking, or shipping. When you select this value, all the **Block** options on the **Setup** FastTab are set to *Yes*, and all the **Nettable** options are set to *No*. However, you can change some of these settings to add exceptions.
-        - *Available* – The batches can be used for master planning, reservation, picking, and/or shipping. When you select this value, all the **Block** options on the **Setup** FastTab are set to *No*, and all the **Nettable** options are set to *Yes*. These settings will be read-only while the **Batch disposition status** field is set to *Available*.
+        - *Available* – The batches can be used for master planning, reservation, picking, and/or shipping. When you select this value, all the **Block** options on the **Setup** FastTab are set to *No*, and all the **Nettable** options are set to *Yes*. These settings are read-only while the **Batch disposition status** field is set to *Available*.
 
 1. If you set the **Batch disposition status** field to *Unavailable*, you can customize the block status of each operation (reserve, pick, and ship) for each type of order (sales, transfer, and production). For production orders, you can choose to block or unblock the production picking journal. You can also choose to block or unblock master planning. Use the options on the **Setup** FastTab to block or unblock each operation as you require. Set the **Nettable** option to *Yes* to enable master planning, or set it to *No* to block master planning.
 
@@ -68,7 +71,7 @@ For this example, batch disposition codes are set up in the following way:
     - **Batch disposition status:** *Unavailable*
     - **Nettable:** *No*
 
-There is a product (*Product-1*) that has two batches: *Batch-A* and *Batch-B*. These batches are set up in the following way:
+There's a product (*Product-1*) that has two batches: *Batch-A* and *Batch-B*. These batches are set up in the following way:
 
 - *Batch-A:*
 
@@ -80,7 +83,7 @@ There is a product (*Product-1*) that has two batches: *Batch-A* and *Batch-B*. 
     - **Batch disposition code:** *P-Unavailable*
     - **On-hand quantity:** 1
 
-There is a sales order (*SO1*) for a quantity of 2 of product *Product-1*. The delivery date is three days from today.
+There's a sales order (*SO1*) for a quantity of 2 of product *Product-1*. The delivery date is three days from today.
 
 You run master planning and set the following values that are relevant to this example:
 
