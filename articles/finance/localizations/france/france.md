@@ -45,6 +45,7 @@ This article includes information and links to resources that can help you set u
 - [NAF codes](fr-00003-naf-codes-siret-numbers.md)
 - [RB/SL depreciation](emea-fra-rbsl-depreciation.md)
 - [VAT declaration](emea-fra-VAT-declaration-preview-France.md)
+- [France e-reporting](emea-fra-e-reporting.md)
 - [EU sales list for France (DES)](emea-fra-eu-sales-list.md)
 - [French Intrastat](emea-fra-intrastat.md)
 - [DAS2 report](emea-fra-das2-report.md)
