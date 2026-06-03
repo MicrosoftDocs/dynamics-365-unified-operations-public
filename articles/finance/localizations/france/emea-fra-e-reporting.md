@@ -433,6 +433,10 @@ You can generate different report outputs depending on your reporting needs:
 2. Expand the **Run in the background** FastTab and specify the **Recurrence** settings for the selected action. For example, if you want the system to generate a report once every 10 days, define the recurrence pattern as every 10 days.
 3. Mark the **Batch processing** checkbox to execute the selected action in the background according to defined recurrence settings.
 
+The action log related to the electronic message log information about the user who generated the **FR e-Reporting** and performed other actions with the electronic message.
+
+When you generate an XML file for the FR e-Reporting, you attach it to the electronic message. To view the file, select the electronic message, and select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
+
 #### Regenerate report
 
 Use **FR-eRep Regenerate Report File** if you need to submit a corrected report after you have already submitted the original report.
@@ -441,6 +445,8 @@ Use **FR-eRep Regenerate Report File** if you need to submit a corrected report 
 2. For the **FR e-Reporting** processing, find and select the electronic message that was previously submitted.
 3. Expand the **Additional fields** FastTab and select the **FR-eRep TypeCode** additional field. Select **RE** value (Rectificative) for the **FR-eRep TypeCode** additional field.
 4. Select **Generate report** button on the **Messages** FastTab to regenerate the report.
+
+When you generate an XML file for the FR e-Reporting, you attach it to the electronic message. To view the file, select the electronic message, and select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
 
 #### Finalize reporting
 
