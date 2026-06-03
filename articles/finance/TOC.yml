@@ -2880,12 +2880,8 @@
                       href: localizations/france/fr-00018-daily-interest.md
                     - name: Derogatory depreciation
                       href: localizations/france/emea-fra-derogatory-depreciation.md
-                    - name: EU sales list
-                      href: localizations/france/emea-fra-eu-sales-list.md
                     - name: French bills of exchange and promissory notes
                       href: localizations/france/fr-00004-french-bills-exchange-promissory-notes.md
-                    - name: French Intrastat
-                      href: localizations/france/emea-fra-intrastat.md
                     - name: Establishments in France
                       href: localizations/france/emea-fra-establishments-for-france.md
                     - name: Registration numbers setup for France
@@ -2910,6 +2906,12 @@
                       href: localizations/france/fr-00004-update-method-payment-customer.md
                     - name: VAT declaration
                       href: localizations/france/emea-fra-VAT-declaration-preview-France.md
+                    - name: France e-reporting
+                      href: localizations/france/emea-fra-e-reporting.md
+                    - name: EU sales list
+                      href: localizations/france/emea-fra-eu-sales-list.md
+                    - name: French Intrastat
+                      href: localizations/france/emea-fra-intrastat.md
                     - name: DAS-2 report
                       href: localizations/france/emea-fra-das2-report.md
                     - name: Reporting on payment deadlines for customer and vendor invoices
