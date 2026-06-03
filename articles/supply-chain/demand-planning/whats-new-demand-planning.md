@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: whats-new
-ms.date: 05/29/2026
+ms.date: 06/01/2026
 ms.custom: 
   - bap-template
 ---
@@ -19,7 +19,7 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ### New feature introduced in version 1.2.3384.2
 
-This release improves data consumption management by allowing you to delete obsolete time series versions or entire time series that are no longer needed. The system now provides an overview of dependencies between time series and times series versions, so you can easily see what you need to clean up to allow a time series to be deleted.
+This release improves data consumption management by allowing you to delete obsolete time series versions or entire time series that are no longer needed. The system provides an overview of dependencies between time series, time series versions, and the profiles that use them, so you can easily see what you need to clean up to allow a time series or version to be deleted. Learn more in [Clean up time series data](clean-up-time-series-data.md).
 
 ### New fixes and improvements in version 1.2.3384.2
 
