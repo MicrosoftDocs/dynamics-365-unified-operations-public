@@ -1,10 +1,10 @@
 ---
 title: 150 percent reducing balance depreciation
-description: Learn about the the 150 percent reducing balance method of depreciation, including an outline on the selection of depreciation year and an example.
+description: Learn about the 150 percent reducing balance method of depreciation, including an outline on the selection of depreciation year and an example.
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/05/2024
+ms.date: 05/27/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -20,41 +20,42 @@ ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 
 [!include [banner](../includes/banner.md)]
 
-This article presents an overview of the 150 percent reducing balance method of depreciation.
+This article provides an overview of the 150 percent reducing balance method of depreciation.
 
-When you set up a fixed asset depreciation profile and select **150% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned the depreciation profile are depreciated by the same percentage in each depreciation period. This percentage is calculated based on the service life of the asset. For example, if an asset has a service life of five years, the percentage is calculated as 30 percent (150% ÷ 5). 
+When you set up a fixed asset depreciation profile and select **150% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that you assign to the depreciation profile depreciate by the same percentage in each depreciation period. You calculate this percentage based on the service life of the asset. For example, if an asset has a service life of five years, the percentage is 30 percent (150% ÷ 5).
 
-To set up 150% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.
+To set up 150% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that you select in the **Depreciation year** field.
 
 ## Selection of depreciation year
-You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page. 
+
+Select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page.
 
 The default value is **Calendar**. Your selection determines the options that are available in the **Period frequency** field. This field defines the depreciation accrual posting dates and amounts throughout the calendar year.
 
 ### Calendar
 
-You can keep the default value in the **Depreciation year** field, **Calendar**. 
+You can keep the default value in the **Depreciation year** field, **Calendar**.
 
-The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the scrap value. In the examples later in this article, the depreciation base is the numerator in the first expression in the calculations column. 
+The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the scrap value. In the examples later in this article, the depreciation base is the numerator in the first expression in the calculations column.
 
 If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
 
--   **Yearly** posts an amount on December 31.
--   **Monthly** posts a monthly amount at the end of each calendar month.
--   **Quarterly** posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).
--   **Half-Yearly** posts a half-yearly amount at the calendar half year (June 30 and December 31).
--   **Daily** posts the depreciation amount for the daily depreciation method by using one transaction for each day.
+- **Yearly** posts an amount on December 31.
+- **Monthly** posts a monthly amount at the end of each calendar month.
+- **Quarterly** posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).
+- **Half-Yearly** posts a half-yearly amount at the calendar half year (June 30 and December 31).
+- **Daily** posts the depreciation amount for the daily depreciation method by using one transaction for each day.
 
 ### Fiscal
 
-If you select **Fiscal** in the **Depreciation year** field, 150% reducing balance depreciation is calculated based on the fiscal year for the fiscal calendar that is specified for the book, or for the fiscal calendar that is selected on the **Ledger** page. Fiscal calendars are set up on the **Fiscal calendars** page. 
+If you select **Fiscal** in the **Depreciation year** field, the system calculates 150% reducing balance depreciation based on the fiscal year for the fiscal calendar that you specify for the book or select on the **Ledger** page. Set up fiscal calendars on the **Fiscal calendars** page.
 
-For example, for the fiscal year July 1 through June 30, the depreciation calculation starts on July 1. The fiscal year can be longer or shorter than 12 months. The depreciation is adjusted for each period. The length of the next fiscal year is determined by the setup of periods on the **Fiscal calendars** page. 
+For example, for the fiscal year July 1 through June 30, the depreciation calculation starts on July 1. The fiscal year can be longer or shorter than 12 months. The depreciation is adjusted for each period. The length of the next fiscal year is determined by the setup of periods on the **Fiscal calendars** page.
 
 If you select **Fiscal** as the depreciation year, the following options are available in the **Period frequency** field:
 
--   **Yearly** posts the total amount of the depreciation that is calculated for the fiscal year on the last day of the fiscal year.
--   **Fiscal period** posts the total amount of the depreciation that is calculated for the fiscal year. This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.
+- **Yearly** posts the total amount of the depreciation that the system calculates for the fiscal year on the last day of the fiscal year.
+- **Fiscal period** posts the total amount of the depreciation that the system calculates for the fiscal year. The system accrues this amount into the fiscal periods that you define on the **Fiscal calendars** page.
 
 ## Example of 150% reducing balance depreciation
 
@@ -66,7 +67,7 @@ If you select **Fiscal** as the depreciation year, the following options are ava
 | Service life years             | 5      |
 | Yearly depreciation percentage | 30%    |
 
-The 150% reducing balance method divides 150 percent by the service life years. That percentage will be multiplied by the net book value of the asset to determine the depreciation amount for the year.
+The 150% reducing balance method divides 150 percent by the service life years. That percentage is multiplied by the net book value of the asset to determine the depreciation amount for the year.
 
 | Period | Calculation of the yearly depreciation amount | Book value             | Net book value at the end of the year |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
@@ -75,10 +76,6 @@ The 150% reducing balance method divides 150 percent by the service life years.
 | Year 3 | 4,900 × 30% = 1,470                           | 5,900 – 1,470 = 4,430  | 4,900 – 1,470 = 3,430                 |
 
 > [!NOTE]
-> Typically, when the amount that is calculated by using the 150% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.
-
-
-
-
+> Typically, when the amount that is calculated by using the 150% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there's a conversion to the straight line method for the remaining life.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

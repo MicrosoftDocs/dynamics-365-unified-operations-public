@@ -4,7 +4,7 @@ description: Learn about the Revenue recognition feature, which provides a flexi
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 05/13/2024
+ms.date: 05/26/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global 
@@ -18,11 +18,11 @@ ms.dyn365.ops.version: 8.0.4
 [!include [banner](../includes/banner.md)]
 
 >[!NOTE]
->This functionality will be deprecated January 2024, new users should use subscription billing.
+>This functionality was deprecated in January 2024. New users should use subscription billing.
 
 Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out multi-element orders so that revenue can be recognized based on a set of company-specific and industry-specific guidelines.
 
-Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
+Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Don't add items configured with revenue recognition to orders or transactions created in Commerce channels.
 
 In general, the revenue recognition process can be used to perform these tasks:
 
@@ -31,21 +31,20 @@ In general, the revenue recognition process can be used to perform these tasks:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=36be7c1f-dabe-4dc9-ad1d-c0f4480f4701]
 
-The [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) video (shown earlier) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
-The Revenue recognition feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule.
+The Revenue recognition feature provides a flexible framework that you can use to define company-specific rules for recognizing both the revenue price and the revenue schedule.
 
-Released products are used to support revenue recognition on sales order documents. The released products contain the setup that is required to determine the revenue price and the revenue schedule. The sales order can originate from a Time and materials project.
+Use released products to support revenue recognition on sales order documents. The released products contain the setup that is required to determine the revenue price and the revenue schedule. The sales order can originate from a Time and materials project.
 
-Companies can use the revenue schedule functionality without using the revenue price functionality. Therefore, the price on the sales order lines will be used as either revenue or deferred revenue. If a revenue schedule exists on the sales order line, the price on the sales order line will be deferred. If a revenue schedule doesn't exist on the sales order line, the price on the sales order line will be posted to a revenue account when it's invoiced.
+Companies can use the revenue schedule functionality without using the revenue price functionality. Therefore, the price on the sales order lines is used as either revenue or deferred revenue. If a revenue schedule exists on the sales order line, the price on the sales order line is deferred. If a revenue schedule doesn't exist on the sales order line, the price on the sales order line is posted to a revenue account when it's invoiced.
 
-The revenue price is calculated either when the sales order is confirmed or when the invoice is posted. To preview the revenue price before the invoice is posted, you must confirm the sales order.
+The system calculates the revenue price either when you confirm the sales order or when you post the invoice. To preview the revenue price before you post the invoice, you must confirm the sales order.
 
 When the sales order is confirmed, an expected revenue schedule is also created if any sales order line has a revenue schedule. When the sales order is invoiced, the expected revenue schedule is deleted, and the expected revenue schedule is replaced with the actual revenue recognition schedule.
 
 The details of the revenue recognition schedule are maintained for each sales order line. Therefore, the revenue recognition manager can view the details and can release lines to revenue when the contractual obligation has been completed. At the end of each period, the revenue recognition manager can create a revenue journal to release any schedule lines that are due on or before a date they define. This revenue journal isn't posted immediately. Therefore, the revenue recognition manager can verify that the correct amounts are being released from deferred revenue to actual revenue.
 
 If a contractual change causes a new sales order line to be added either to the existing sales order or a new sales order, a reallocation process can be run to correct the revenue price across all lines on the sales orders.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

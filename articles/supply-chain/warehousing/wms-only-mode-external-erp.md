@@ -4,7 +4,7 @@ description: Learn how to perform day-to-day warehousing tasks when you use Ware
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/27/2024
+ms.date: 5/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSInventoryUpdateLog
@@ -110,7 +110,7 @@ In Supply Chain Management, an on-hand adjustment (counting journal) that's post
 |-------------|-------------|-------------|
 | A0001       | 0 pcs       | 11 pcs      |
 
-The external system is informed about the on-hand adjustment via a business event. As part of this process, the journal posting is changed from 10 pcs to 11 pcs in Supply Chain Management. The external system considers only the updated quantity of 1 pcs. The following table shows the result.
+A business event informs the external system about the on-hand adjustment. As part of this process, the journal posting changes from 10 pcs to 11 pcs in Supply Chain Management. The external system considers only the updated quantity of 1 pcs. The following table shows the result.
 
 | Item number | ERP on-hand | WMS on-hand |
 |-------------|-------------|-------------|
@@ -129,9 +129,9 @@ Supply Chain Management runs a *receiving completed* process that's related to t
 
 ## On-hand inventory reconciliation
 
-Warehouse management only mode can generate data for an on-hand inventory reconciliation process when you generate a **Create source system on-hand inventory** report (**Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Create source system on-hand inventory report**).
+Warehouse management only mode generates data for an on-hand inventory reconciliation process when you generate a **Create source system on-hand inventory** report (**Warehouse management** > **Inquiries and reports** > **Physical inventory reconciliation** > **Create source system on-hand inventory report**).
 
-To create the header and line data, you must specify **Source system** and **As of date** values. You must also select the level of inventory dimensions that the report should be generated for.
+To create the header and line data, specify **Source system** and **As of date** values. You must also select the level of inventory dimensions that the report should be generated for.
 
 When inventory that's related to inbound shipment orders is received, on-hand inventory is physically updated based on the status of the registered inventory transactions. When inventory is shipped via outbound shipment orders, the physical on-hand inventory is reduced based on the *Picked* inventory transactions. This physical inventory on-hand representation of the registered and picked items remains until the related *Shipment receipt* and *Shipment packing slip* journals are posted as part of the [background finalization processes](wms-only-mode-setup.md#background-processes). To include this part of the physical on-hand inventory in the export, be sure to enable the **Include Registered and Picked inventory quantities** parameter.
 
@@ -142,23 +142,23 @@ The external system is informed about the available data via the `WHSSourceSyste
 
 ## <a name="warehouse-inventory-update-logs"></a>Warehouse inventory update logs
 
-For integrations that require very quick on-hand inventory synchronization processes, you can use the Warehouse inventory update log (**Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
+For integrations that require very quick on-hand inventory synchronization processes, use the Warehouse inventory update log (**Warehouse management** > **Inquiries and reports** > **Physical inventory reconciliation** > **Warehouse inventory update log**). This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
 
 To keep the external systems updated about inventory transaction updates that are related to inbound and outbound shipment orders, set the **Enable warehouse inventory update logs** option to *Yes* for the relevant [source systems](wms-only-mode-setup.md#source-systems), for both inbound and outbound shipment orders.
 
-To view the update log, go to **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**.
+To view the update log, go to **Warehouse management** > **Inquiries and reports** > **Physical inventory reconciliation** > **Warehouse inventory update log**.
 
 > [!IMPORTANT]
 > When the **Enable warehouse inventory update logs** option is enabled, be sure to uptake the updates in the external systems in such a way that they don't cause double updates in combination with the data that's used as part of the [*Shipment receipts*](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) and [*Shipment packing slips*](wms-only-mode-shared-and-external-detail-use.md#shipment-packing-slips) messages.
 
-By default, the *Publish warehouse inventory update log updates* background process is set to run every 10 minutes. It creates data that external systems can consume by using the `WarehouseInventoryUpdateLogs` entity. The `WHSInventoryUpdateLogBusinessEvent` business event can be used as part of this process.
+By default, the *Publish warehouse inventory update log updates* background process runs every 10 minutes. It creates data that external systems can consume by using the `WarehouseInventoryUpdateLogs` entity. The `WHSInventoryUpdateLogBusinessEvent` business event can be used as part of this process.
 
 ## <a name="warehouse-inventory-owner"></a>Warehouse inventory owner
 
 Warehouse management processes can use an owner inventory dimension to track the ownership of inventory for items shared across multiple source systems.
 
 To use the owner inventory dimension, products must have a tracking dimension group where the *Owner* dimension is enabled.
-Furthermore, you must create a record on the **Warehouse inventory owner** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Warehouse inventory owner**).
+You must also create a record on the **Warehouse inventory owner** page (**Warehouse management** > **Setup** > **Warehouse management integration** > **Warehouse inventory owner**).
 
 > [!IMPORTANT]
-> The *Warehouse inventory owner* configuration must contain a mapping for every *Owner* value sent from a source system in the order line. If a mapping is missing, the order message will fail to process. This requirement also applies when the source system sends an empty owner value. In such cases, the configuration must map the empty value from the source system to the appropriate value in the *WOM* Supply Chain Management legal entity system.
+> The *Warehouse inventory owner* configuration must contain a mapping for every *Owner* value that a source system sends in the order line. If a mapping is missing, the order message fails to process. This requirement also applies when the source system sends an empty owner value. In such cases, the configuration must map the empty value from the source system to the appropriate value in the *WOM* Supply Chain Management legal entity system.

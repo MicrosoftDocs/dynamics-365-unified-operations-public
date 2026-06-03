@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: whats-new
-ms.date: 09/09/2025
+ms.date: 06/01/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,18 +15,33 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 1.2.3384.2
+
+### New feature introduced in version 1.2.3384.2
+
+This release improves data consumption management by allowing you to delete obsolete time series versions or entire time series that are no longer needed. The system provides an overview of dependencies between time series, time series versions, and the profiles that use them, so you can easily see what you need to clean up to allow a time series or version to be deleted. Learn more in [Clean up time series data](clean-up-time-series-data.md).
+
+### New fixes and improvements in version 1.2.3384.2
+
+This version of Demand planning includes the following fixes and improvements:
+
+- Increased stability.
+- Added a new API that lets you export time series programmatically. Learn more in [Export data using custom APIs](demand-planning-export-api.md).
+- Improved performance when exporting forecasts to Supply Chain Management. This improvement is made possible by a new index introduced in Supply Chain Management version 10.0.48.
+- Improved forecast calculation performance.
+
 ## Version 1.1.0.4
 
 ### New feature introduced in version 1.1.0.4
 
 This version of Demand planning enhances basic forecast calculations by adding two new features:
 
-- The new *Best fit model - version 3 (preview)* forecast algorithm now includes the *Croston's method* forecasting model. Designed specifically for intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands. Learn more in [Croston's method forecasting (preview)](croston-method.md).
-- Forecasting with signals with the *XGBoost* forecast model has been extended to allow up to five signals. Learn more in [Forecast with signals (preview)](forecasts-with-signals.md).
+- The new *Best fit model - version 3 (preview)* forecast algorithm now includes the *Croston's method* forecasting model. It's designed specifically for intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands. Learn more in [Croston's method forecasting (preview)](croston-method.md).
+- Forecasting with signals using the *XGBoost* forecast model is now extended to allow up to five signals. Learn more in [Forecast with signals (preview)](forecasts-with-signals.md).
 
 ### New fixes and improvements in version 1.1.0.4
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - Improved performance when exporting forecast to Supply Chain Management with data aggregation.
@@ -43,7 +58,7 @@ This version of Demand planning enhances basic forecast calculations by adding t
 
 ### New fixes and improvements in version 1.0.0.3424
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - Improvements to Generative insights.
@@ -57,7 +72,7 @@ This version of Demand planning enhances the *Copilot grid cursor* feature so th
 
 ### New fixes and improvements in version 1.0.0.3336
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - Auto-detect seasonality is improved to account for certain data compositions.
@@ -72,7 +87,7 @@ This version of Demand planning marks the public preview of *Generative insights
 
 ## New fixes and improvements in version 1.0.0.2999
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - Improvements in demo data. Features like row level security, time fence, and time freeze now work seamlessly when using demo data.
@@ -89,7 +104,7 @@ The *Copilot grid cursor* offers detailed insights into a selected cell's value,
 
 #### New operator in rules: Select all
 
-To improve efficiency and make queries easier to formulate, Demand planning now provides a *select all* operator. The new operator is available in the following policies: *time fence*, *time freeze*, and *row level access*. Learn more in learn more in [Using the select all operator](time-fences.md#select-all).
+To improve efficiency and make queries easier to formulate, Demand planning now provides a *select all* operator. The new operator is available in the following policies: *time fence*, *time freeze*, and *row level access*. Learn more in [Using the select all operator](time-fences.md#select-all).
 
 #### Multiple rules for time freezes
 
@@ -97,7 +112,7 @@ Demand planning now lets you assign multiple time freeze rules to *Forecast* and
 
 ### New fixes and improvements in version 1.0.0.2794
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability
 - New demo data with seasonal clusters
@@ -114,7 +129,7 @@ Automatic detection of seasonality patterns was introduced in Demand planning ve
 
 #### Time freeze rules
 
-*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they are easy to maintain. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md).
+*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they're easy to maintain. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md).
 
 #### Generative insights into seasonality patterns (production-ready preview)
 
@@ -122,11 +137,11 @@ Generative insights provide AI-generated insights into your data. The initial pr
 
 #### Simplified security role dependencies
 
-The *Basic user* security role no longer has to be applied to all users of Demand planning. Instead, Demand planning now incorporates all privileges from the *App Opener* security role into the *Demand planning contributor* and *Demand planning manager* security roles. Learn more in [Security roles and row-level security in Demand planning](users-access.md).
+The *Basic user* security role no longer needs to be applied to all users of Demand planning. Instead, Demand planning now incorporates all privileges from the *App Opener* security role into the *Demand planning contributor* and *Demand planning manager* security roles. Learn more in [Security roles and row-level security in Demand planning](users-access.md).
 
 ### New fixes and improvements in version 1.0.0.2502
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - New demo data that includes seasonal clusters.
@@ -143,7 +158,7 @@ In previous versions of Demand planning, the input time series used by forecast 
 
 #### Apply input filters in calculation models
 
-You can now filter the input used in calculation models. Filters can be based on dates and/or dimensions (such as products and locations). It was already possible to apply filters in forecast models. Learn more in [Design calculation models](design-calculation-models.md).
+You can now filter the input used in calculation models. Filters can be based on dates and dimensions, such as products and locations. It was already possible to apply filters in forecast models. Learn more in [Design calculation models](design-calculation-models.md).
 
 #### Analyze demand plans with Copilot
 
@@ -159,7 +174,7 @@ Seasonality patterns typically vary for different products and different locatio
 
 ### New fixes and improvements in version 1.0.0.1700
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - Improved forecast error messages.
@@ -173,7 +188,7 @@ This version adds support for *time fences*, which allow demand planning manager
 
 ### New fixes and improvements in version 1.0.0.1281
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - Improved forecast error messages.
@@ -186,7 +201,7 @@ Forecast calculation job-run records now provide an **Explainability** tab, whic
 
 ### New fixes and improvements in version 1.0.0.1232
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - Transformation jobs that include the **Country/Region** column are now processed correctly. Previously, these jobs failed with an error.
@@ -202,22 +217,22 @@ The Microsoft Dynamics 365 Finance and Operations data provider now lets you cho
 
 ### New fixes and improvements in version 1.0.0.1182
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - Improved the ARIMA forecast model. The model now provides better error messages if it fails due to a data error.
 - Improved the best fit forecast model. Calculations now succeed provided at least one of the models provides a result.
-- Each organization instance can now run up to five forecasts in parallel. Newly created forecasts will only run in parallel provided all existing forecast jobs have already started (in the *Executing* state). If one or more existing forecast jobs are still waiting to start (in the *Created* state) when a new forecast is created, then all forecasts will be executed sequentially.
+- Each organization instance can now run up to five forecasts in parallel. Newly created forecasts run in parallel only if all existing forecast jobs already started (in the *Executing* state). If one or more existing forecast jobs are still waiting to start (in the *Created* state) when a new forecast is created, then all forecasts execute sequentially.
 
 ## Version 1.0.0.1132
 
 ### New features introduced in version 1.0.0.1132
 
-This version of Demand planning focuses on quality and stability improvements and has no new features.
+This version of Demand planning focuses on quality and stability improvements and doesn't include any new features.
 
 ### New fixes and improvements in version 1.0.0.1132
 
-This version of Demand planning introduces the following fixes and improvements:
+This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
 - Fixed an issue with data transformations that caused zero values to appear in output.

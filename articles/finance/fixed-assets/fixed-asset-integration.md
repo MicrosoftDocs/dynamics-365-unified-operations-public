@@ -4,7 +4,7 @@ description: Fixed assets can be integrated with General ledger, Inventory manag
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 01/29/2026
+ms.date: 05/27/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -18,13 +18,13 @@ ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 
 [!include [banner](../includes/banner.md)]
 
-Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it's integrated with purchase orders.
+You can integrate fixed assets with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up fixed assets so that it integrates with purchase orders.
 
 ## General ledger
 
-In General ledger, the value of all fixed assets is typically summarized in multiple main accounts that are required for financial reporting. However, on the **Fixed assets** page, you can create many fixed asset records. These records can include information such as the acquisition price, depreciation, and valuation. Each time that you post a transaction for a fixed asset, the appropriate main accounts are updated. The main accounts for fixed assets always show the updated value of the fixed assets.
+In General ledger, you typically summarize the value of all fixed assets in multiple main accounts that are required for financial reporting. However, on the **Fixed assets** page, you can create many fixed asset records. These records can include information such as the acquisition price, depreciation, and valuation. Each time that you post a transaction for a fixed asset, the system updates the appropriate main accounts. The main accounts for fixed assets always show the updated value of the fixed assets.
 
-On the **Fixed asset posting profiles** page, you define the main accounts that fixed asset book transactions post to. You also specify the types of fixed asset transactions that post to each main account. You can create various combinations of main accounts for fixed assets, depending on the level of detail that you want for fixed assets in the general ledger. Main accounts can be based on transaction types, books, and other main accounts.
+On the **Fixed asset posting profiles** page, you define the main accounts that fixed asset book transactions post to. You also specify the types of fixed asset transactions that post to each main account. You can create various combinations of main accounts for fixed assets, depending on the level of detail that you want for fixed assets in the general ledger. You can base main accounts on transaction types, books, and other main accounts.
 
 ## Inventory management
 
@@ -84,15 +84,15 @@ If the book includes a derived book, the derived book transaction is created whe
 
 ## Accounts payable
 
-Typically, fixed assets are acquired from external vendors. You can use the **Fixed assets parameters** page to specify whether asset acquisitions are always posted when you post vendor invoices, or whether asset acquisitions can be posted only from Fixed assets. If you enable asset acquisitions to be posted from Accounts payable, fixed asset accounts are updated whenever a vendor invoice for a fixed asset acquisition is posted.
+Typically, you acquire fixed assets from external vendors. Use the **Fixed assets parameters** page to specify whether asset acquisitions are always posted when you post vendor invoices, or whether asset acquisitions can be posted only from Fixed assets. If you enable asset acquisitions to be posted from Accounts payable, fixed asset accounts are updated whenever a vendor invoice for a fixed asset acquisition is posted.
 
-If the system is set up to post an asset acquisition when an invoice is posted, the transaction is posted according to the posting profiles that are set up in Fixed assets for the various fixed asset transaction types. The posting is controlled by the fixed asset, book, and fixed asset transaction type that are selected on the **Purchase order** page before the vendor invoice is posted.
+If you set up the system to post an asset acquisition when an invoice is posted, the transaction is posted according to the posting profiles that you set up in Fixed assets for the various fixed asset transaction types. The fixed asset, book, and fixed asset transaction type that you select on the **Purchase order** page before the vendor invoice is posted control the posting.
 
 If the book includes a derived book, the derived book transaction is created when you post the vendor invoice.
 
 Activate the integration for each order line on the **Fixed assets** tab on the **Line details** FastTab on the **Purchase order** page. You can send a purchase order for a fixed asset to the vendor. However, you update the fixed assets and main accounts only when you post the vendor invoice after the fixed asset is received. Because purchase orders can contain only inventory items, the effect that the acquisition of fixed assets has on inventory depends on the setup of the legal entity.
 
-Charges added to the purchase order line represent the capitalization of costs incurred during the acquisition of a fixed asset through a purchase order. Any applicable charges are automatically allocated to the fixed asset’s main account and included in the total capitalization cost, ensuring accurate financial reporting and asset valuation. To properly capitalize these charges on the fixed asset, the charge setup should be configured to debit the item.
+Charges that you add to the purchase order line represent the capitalization of costs incurred during the acquisition of a fixed asset through a purchase order. Any applicable charges are automatically allocated to the fixed asset’s main account and included in the total capitalization cost, ensuring accurate financial reporting and asset valuation. To properly capitalize these charges on the fixed asset, configure the charge setup to debit the item.
 
 Beginning in Dynamics 365 Finance 10.0.46, the integration between purchase order and inventory preserves the text entered on a purchase order line for a fixed asset by storing it in the **Information 3** field when the asset is created. If the asset is later acquired through additional purchase orders that include new text, new values are appended to the existing content in **Information 3** rather than overwriting it.
 
@@ -102,7 +102,7 @@ You can associate a project with an asset that the project affects. You can also
 
 Use the **Projects** page to view details about assets that are associated with projects. To view the fixed asset record, on the **Setup** FastTab, select the asset link to open the **Fixed assets** page. Then select **Projects** &gt; **All projects** to view the projects that are associated with the fixed asset.
 
-Typically, you associate fixed assets with projects when the projects are related to work, maintenance, or improvements for the asset. When the project is completed, a write-up adjustment for the asset isn’t created automatically. Therefore, if a write-up adjustment is required, you must create it manually.
+Typically, you associate fixed assets with projects when the projects are related to work, maintenance, or improvements for the asset. When the project is completed, a write-up adjustment for the asset isn't created automatically. Therefore, if a write-up adjustment is required, you must create it manually.
 
 To delete the association between a project and an asset, clear the **Fixed asset number** field on the **Projects** page.
 

@@ -4,7 +4,7 @@ description: Learn about the "Packing" work order type, which manages work for p
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 7/13/2022
+ms.date: 5/21/2026
 ms.reviewer: kamaybac
 ms.search.form: WHSPackingWorkLocationSetup, WHSPack, WHSContainerTable
 ---
@@ -26,7 +26,7 @@ For more information about how to set up and use the container packing process, 
 
 Use the following procedure to set up packing locations. For each location, you can select whether the system automatically creates packing work.
 
-1. Go to **Warehouse management \> Setup \> Packing \> Packing station setup**.
+1. Go to **Warehouse management > Setup > Packing > Packing station setup**.
 1. On the Action Pane, select **New** to add a packing station setup record.
 1. In the new record, set the following fields:
 
@@ -51,7 +51,7 @@ You can also use this scenario as guidance for using the feature on a production
 
 To get started, you must configure the *Packing* work process for a specific warehouse and location.
 
-1. Go to **Warehouse management \> Setup \> Packing \> Packing station setup**.
+1. Go to **Warehouse management > Setup > Packing > Packing station setup**.
 1. On the Action Pane, select **New** to add a setup record.
 1. In the new record, set the following values:
 
@@ -63,9 +63,9 @@ To get started, you must configure the *Packing* work process for a specific war
 
 ### Create a load template that allows partial shipping
 
-To enable a load to be delivered over multiple shipments, you must associate it with a load template that allows for partial shipping. Follow these steps to create the required template.
+To enable a load to be delivered over multiple shipments, associate it with a load template that allows partial shipping. Follow these steps to create the required template.
 
-1. Go to **Warehouse management \> Setup \> Load \> Load templates**.
+1. Go to **Warehouse management > Setup > Load > Load templates**.
 1. On the Action Pane, select **New** to add a setup record.
 1. In the new record, set the following values:
 
@@ -80,8 +80,8 @@ Learn more in [Confirm and transfer](Confirm-and-transfer.md).
 
 Follow these steps to process a sales order and partially ship it.
 
-1. Complete the [example scenario](packing-containers.md#scenario) that is provided in [Pack containers for shipment](packing-containers.md). During that scenario, you'll create a sales order for two pieces of one item. You'll then pack just one of the pieces into a container and close the container. You should make a note of the shipment ID that you create, as instructed in the scenario.
-1. Go to **Warehouse management \> Work \> All work**.
+1. Complete the [example scenario](packing-containers.md#scenario) that is provided in [Pack containers for shipment](packing-containers.md). During that scenario, you create a sales order for two pieces of one item. You then pack just one of the pieces into a container and close the container. Make a note of the shipment ID that you create, as instructed in the scenario.
+1. Go to **Warehouse management > Work > All work**.
 1. In the filter area, select the **Show closed work** checkbox. Then enter the shipment ID in the **Filter** field, and select to filter by **Shipment ID** value. You should now see three work headers. One is for the sales order picking work and has a status of *Closed*. Two are for the packing process: one is related to the closed container and has a status of *Closed*, and the other is related to the unpacked remaining item and has a status of *Open*.
 1. Select the **Load ID** value for any of the work headers to open **Load details** page for the load.
 1. Switch to the **Header** view.
@@ -90,6 +90,6 @@ Follow these steps to process a sales order and partially ship it.
 1. In the **Ship confirm** dialog box, select the **Split quantity to new load** option.
 1. Select **OK**.
 
-You have now shipped one container that is related to the original load, and the system has created a new load for the remaining items that must still be packed into containers.
+You shipped one container that is related to the original load, and the system creates a new load for the remaining items that must still be packed into containers.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

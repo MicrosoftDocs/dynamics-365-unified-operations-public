@@ -20,8 +20,6 @@
           href: get-started/whats-new-scm-10-0-47.md
         - name: Supply Chain Management 10.0.46 (December 2025)
           href: get-started/whats-new-scm-10-0-46.md
-        - name: Supply Chain Management 10.0.45 (September 2025)
-          href: get-started/whats-new-scm-10-0-45.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -595,10 +593,12 @@
           href: asset-management/controlling-and-reporting/item-where-used.md
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
-      - name: The Asset management mobile app
+      - name: The Asset Management mobile app
         items:
         - name: Asset Management mobile app overview
           href: asset-management/asset-management-mobile-app/asset-management-mobile-app-overview.md
+        - name: Asset Management mobile app open-source release
+          href: asset-management/asset-management-mobile-app/open-source-release.md
         - name: Onboard the Asset Management mobile app
           href: asset-management/asset-management-mobile-app/onboard-app.md
         - name: Manage work orders using the Asset Management mobile app
@@ -1809,6 +1809,8 @@
           href: inventory/inventory-visibility-diagnostic-tool.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
+      - name: Troubleshoot on-hand inventory problems with the on-hand consistency check
+        href: inventory/on-hand-consistency-check.md
     - name: Sensor Data Intelligence (preview)
       items:
       - name: Sensor Data Intelligence home page
@@ -1931,6 +1933,10 @@
           href: master-planning/planning-optimization/negative-on-hand.md
         - name: Calculate sales order delivery dates using CTP
           href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
+        - name: Keep supply for confirmed demand (Preview)
+          href: master-planning/planning-optimization/keep-supply-for-confirmed-demand.md
+        - name: Optimize confirmed dates for CTP line changes (Preview)
+          href: master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes.md
       - name: Set up master plans
         items:
         - name: Master plans overview
@@ -2133,6 +2139,8 @@
           href: demand-planning/time-fences.md
         - name: Limit automatic time series updates with time freezes
           href: demand-planning/time-freeze.md
+        - name: Clean up time series data
+          href: demand-planning/clean-up-time-series-data.md
       - name: Export and download data
         href: demand-planning/export-data.md
       - name: Export data using custom APIs
