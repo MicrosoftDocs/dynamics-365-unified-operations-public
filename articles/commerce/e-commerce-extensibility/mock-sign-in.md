@@ -82,7 +82,7 @@ These steps complete the Microsoft Entra setup. You should now have all of the f
 | nativeApplicationId | 25f6742d-f8b8-44d9-a6a0-f06d2854ac5f |
 | userImpersonationScopeURL | `https://commerceonboarding.onmicrosoft.com/b7ad3e87-d8b0-4c83-b08d-7c34c19f7933/user_impersonation` |
 
-## Configure your Node application
+### Configure your Node application
 
 After you finish configuring your Microsoft Entra External ID tenant, create a credentials file in your online software development kit (SDK) Node application.
 
@@ -199,7 +199,7 @@ These steps complete the Microsoft Entra setup. You should now have all of the f
 | nativeApplicationId | 25f6742d-f8b8-44d9-a6a0-f06d2854ac5f |
 | userImpersonationScopeURL | `https://commerceonboardingb2c.onmicrosoft.com/b7ad3e87-d8b0-4c83-b08d-7c34c19f7933/user_impersonation` |
 
-## Configure your Node application
+### Configure your Node application
 
 After you finish configuring your Microsoft Entra B2C tenant, create a credentials file in your online software development kit (SDK) Node application.
 
