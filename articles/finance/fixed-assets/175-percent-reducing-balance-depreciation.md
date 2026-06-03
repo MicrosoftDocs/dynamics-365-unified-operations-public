@@ -4,7 +4,7 @@ description: Learn about the 175 percent reducing balance method of depreciation
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/05/2024
+ms.date: 05/27/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -20,11 +20,11 @@ ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 
 [!include [banner](../includes/banner.md)]
 
-This article presents an overview of the 175 percent reducing balance method of depreciation.
+This article provides an overview of the 175 percent reducing balance method of depreciation.
 
-When you set up a fixed asset depreciation profile and select **175% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned the depreciation profile are depreciated by the same percentage in each depreciation period. 
+When you set up a fixed asset depreciation profile and select **175% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that you assign the depreciation profile to depreciate by the same percentage in each depreciation period. 
 
-To set up 175% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.
+To set up 175% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that you select in the **Depreciation year** field.
 
 ## Select a depreciation year
 You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page. The default value is **Calendar**. 
@@ -53,7 +53,7 @@ For example, for the fiscal year July 1 through June 30, the depreciation calcul
 
 If you select **Fiscal** as the depreciation year, the following options are available in the **Period frequency** field:
 
--   **Yearly** posts the total amount of the depreciation that is calculated for the fiscal year on the last day of the fiscal year.
+-   **Yearly** posts the total amount of the depreciation that the system calculates for the fiscal year on the last day of the fiscal year.
 -   **Fiscal period** calculates the total amount of the depreciation for the fiscal year. This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.
 
 ## Example of 175% reducing balance depreciation
@@ -75,7 +75,7 @@ The 175% reducing balance depreciation method divides 175 percent by the servic
 | Year 3 | 4,225 × 35% = 1,478.75                        | 5,225 – 1,478.75 = 3,746.25 | 4,225 – 1,478.75 = 2,746.25           |
 
 > [!NOTE] 
-> Typically, when the amount that is calculated by using the 175% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.
+> Typically, when the amount that is calculated by using the 175% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there's a conversion to the straight line method for the remaining life.
 
 
 

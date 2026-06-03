@@ -4,7 +4,7 @@ description: Learn about the Cost control workspace, a central point where manag
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/16/2017
+ms.date: 05/27/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -72,7 +72,7 @@ The values in the selected columns multiply by the selected values on the **Fisc
 | Current period       | The balance of the current fiscal period shows.**NOTE:**<br>By default, the session date determines the current period. In the **Cost control** workspace, you can select a specific fiscal period. The selected value then represents the current period. |
 | Previous period      | The balance of the previous fiscal period shows. The following formula is used:<br>Current fiscal period – 1**NOTE:**<br>By default, the session date determines the previous period. In the **Cost control** workspace, you can select a specific fiscal period as the current period. The system recalculates **Previous period** accordingly. |
 | Year to date         | The value for the year to date shows. The following formula is used:<br>YearToDate (Current fiscal period)**NOTE:**<br>By default, the session date determines the current period. In the **Cost control** workspace, you can select a specific fiscal period. The selected value then represents the current period, and the **Year to date** value updates accordingly. |
-| Year to date average | The average for the year to date is shown. The following formula is used:<br>(YearToDate [Current fiscal period]) ÷ (Count [Current fiscal period])<br>**Example**<br>- **Statistical dimension member:** Full time employees<br>- **Current date:** 3-21-2017<br>- **Period:** Fiscal period 1, Fiscal period 2, Fiscal period 3<br>- **Magnitude:** 10, 10, 12<br>In this case, **Year to date average** = (10 + 10 + 12) ÷ 3 = 10.67<br>The **Year to date average** value can be calculated for cost element dimension members and statistical dimension members.<br>**NOTE:**<br>By default, the current period is determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value then represents the current period, and the **Year to date** and **Year to date average** values will be updated accordingly. |
+| Year to date average | The average for the year to date shows. The following formula is used:<br>(YearToDate [Current fiscal period]) ÷ (Count [Current fiscal period])<br>**Example**<br>- **Statistical dimension member:** Full time employees<br>- **Current date:** 3-21-2017<br>- **Period:** Fiscal period 1, Fiscal period 2, Fiscal period 3<br>- **Magnitude:** 10, 10, 12<br>In this case, **Year to date average** = (10 + 10 + 12) ÷ 3 = 10.67<br>The **Year to date average** value can be calculated for cost element dimension members and statistical dimension members.<br>**NOTE:**<br>By default, the session date determines the current period. In the **Cost control** workspace, you can select a specific fiscal period. The selected value then represents the current period, and the **Year to date** and **Year to date average** values update accordingly. |
 
 ### Columns to display for costs
 
@@ -124,7 +124,7 @@ Users can customize the columns on a report to fit their requirements.
 
 ### View details
 
-Users can drill into the details behind the balances that are shown in the workspace. If users select a cost element dimension hierarchy node, and then select **View details**, the **Cost element details** dialog box shows detailed information for the node.
+You can view the details behind the balances that appear in the workspace. If you select a cost element dimension hierarchy node and then select **View details**, the **Cost element details** dialog box shows detailed information for the node.
 
 A grid shows each cost element that is associated with the cost element dimension hierarchy node, and its values. The columns that appear in the grid match the workspace settings.
 

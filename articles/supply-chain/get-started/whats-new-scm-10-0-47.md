@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 01/26/2026
+ms.date: 05/27/2026
 ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
@@ -35,6 +35,7 @@ The following table lists the features that are included in this release. We mig
 | Sales and marketing | [Optimize pricing data import and export workflows](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/optimize-pricing-data-import-export-workflows) | [Pricing data import and export entities](../unified-pricing-management/upm-pricing-data-entities.md) |  Feature management:<br>*Unified pricing management pricing rule performance enhancement* |
 | Sales and marketing | Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen | [Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen (preview)](../sales-marketing/pay-by-link-with-adyen-connector.md) | Feature management:<ul><li>*Enable unified payments experience in POS*</li><li>*Enable Payments Notification feature*</li><li>*Enable Pay By Link Payment feature*</li><li>*Enable asynchronous payments for sales orders*</li></ul> |
 | Sales and marketing | [Simulate prices based on sales order line attributes](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/simulate-prices-based-sales-order-line-attributes) | *Coming soon* | Enabled by default |
+| Warehouse management | [Improve picking efficiency with wrist-mounted scanning devices](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/improve-picking-efficiency-wrist-mounted-scanning-devices) | [Haptic feedback through external wearable devices](../warehousing/warehouse-app-haptic-feedback.md) | Enabled by default |
 
 ## <a name="enhancements"></a>Feature enhancements added in this release
 

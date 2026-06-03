@@ -4,7 +4,7 @@ description: Learn about statistical dimension members and statistical measure p
 author: AndersEvenGirke
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/16/2017
+ms.date: 05/27/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User  
@@ -20,17 +20,17 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-A statistical dimension and its members are used to register and control nonmonetary entries in Cost accounting. Statistical dimension members can be used for two purposes:
+Use a statistical dimension and its members to register and control nonmonetary entries in Cost accounting. Use statistical dimension members for two purposes:
 
 - As an allocation base in policies such as cost distribution or cost allocation
 - For reporting of nonmonetary consumption
 
 ## Statistical dimension
 
-A statistical dimension has a unique name and a set of unique dimension members. The statistical dimension is assigned to a Cost accounting ledger ID. This relationship ties all corresponding statistical dimension members to the Cost accounting ledger. Therefore, all statistical entries are created in the context of the Cost accounting ledger.
+A statistical dimension has a unique name and a set of unique dimension members. Assign the statistical dimension to a Cost accounting ledger ID. This relationship ties all corresponding statistical dimension members to the Cost accounting ledger. Therefore, you create all statistical entries in the context of the Cost accounting ledger.
 
 > [!NOTE]
-> A statistical dimension can be assigned to more than one Cost accounting ledger.
+> You can assign a statistical dimension to more than one Cost accounting ledger.
 
 Here's an example of a statistical dimension.
 
@@ -196,7 +196,7 @@ The statistical measure provider template can be set up as follows.
 
 You can also add ranges to narrow the measures from the source table.
 
-In this example, if you just want the sum of hours that are related to the CC010 Packaging cost center, you can add a range in the **Operation** field. In the **Criteria** field, select **Packaging** to limit the output range.
+In this example, if you want only the sum of hours that relate to the CC010 Packaging cost center, add a range in the **Operation** field. In the **Criteria** field, select **Packaging** to limit the output range.
 
 **Ranges**
 
@@ -225,7 +225,7 @@ The system recognizes that ProdRouteTrans is a table where each record belongs t
 |---------------------------|--------------|
 | Pack CC                   | USMF         |
 
-After the source data for the statistical measure processed, the following statistical entries are created in Cost accounting.
+After the source data for the statistical measure is processed, the following statistical entries are created in Cost accounting.
 
 **Journal**
 
@@ -247,7 +247,7 @@ After the source data for the statistical measure processed, the following stati
 | Orange juice B2B   | 31-01-2017      | Pack CC      | Packaging Cost center | 16.00     |
 | Orange juice Consumer | 31-01-2017  | Pack CC      | Packaging Cost center | 8.00      |
 
-If the Pack CC predefined dimension member allocation basis is assigned as an allocation base in a cost distribution rule, the cost will be distributed by using the following allocation factor.
+If you assign the Pack CC predefined dimension member allocation basis as an allocation base in a cost distribution rule, the system distributes the cost by using the following allocation factor.
 
 | Cost object           | Magnitude | Allocation factor  |
 |-----------------------|-----------|--------------------|
@@ -286,7 +286,7 @@ Before you can get statistical measures into Cost accounting, you must establish
 > [!NOTE]
 > In this example, you create a relation only for the **Actual version**.
 
-Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation. For this scenario, select the **Imported statistical measures** data connector, because data has been imported from a third-party system into Cost accounting via Excel.
+Go to **Cost accounting ledger** > **Actual version** > **Manage** > **Statistical measures** to establish the relation. For this scenario, select the **Imported statistical measures** data connector, because you imported data from a third-party system into Cost accounting via Excel.
 
 **Data source**
 

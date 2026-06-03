@@ -4,7 +4,7 @@ description: Learn about the flow for the advanced bank reconciliation process, 
 author: EricWangChen
 ms.author: wangchen
 ms.topic: overview
-ms.date: 4/01/2026
+ms.date: 05/27/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -19,9 +19,9 @@ ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the flow for the advanced bank reconciliation process. The advanced bank reconciliation feature lets you import bank statements that can be automatically reconciled from within bank transactions.
+This article describes the flow for the advanced bank reconciliation process. The advanced bank reconciliation feature lets you import bank statements that you can automatically reconcile from within bank transactions.
 
-The advanced bank reconciliation feature lets you import bank statements. The imported bank statement can then be automatically reconciled from within bank transactions. Here are the steps in the advanced bank reconciliation flow.
+The advanced bank reconciliation feature lets you import bank statements. You can then automatically reconcile the imported bank statement from within bank transactions. Here are the steps in the advanced bank reconciliation flow.
 
 1. Set up a bank statement import.
 
@@ -40,7 +40,7 @@ The advanced bank reconciliation feature lets you import bank statements. The im
     - Automatically post Finance bank transactions if they appear on a bank statement but don't appear in the Finance app.
     - Generate a reconciliation statement.
 
-The **Modern bank reconciliation** feature enhances the capabilities in advanced bank reconciliation. **Modern bank reconciliation**, the objects and code that this feature introduces, are subject to change. To help provide a better functional experience and address feedback from users, breaking changes might be introduced. The expectation is that the following classes, forms, and tables aren't customized.
+The **Modern bank reconciliation** feature enhances the capabilities in advanced bank reconciliation. **Modern bank reconciliation**, the objects, and code that this feature introduces, are subject to change. To help provide a better functional experience and address feedback from users, breaking changes might be introduced. The expectation is that the following classes, forms, and tables aren't customized.
 >
 > **Classes:**
 >

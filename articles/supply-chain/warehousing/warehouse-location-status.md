@@ -4,7 +4,7 @@ description: Access an overview of the Warehouse location status feature, includ
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 06/07/2024
+ms.date: 5/21/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
@@ -31,19 +31,19 @@ The following four fields on the **Locations** page track information about the 
 
 ## Set up warehouse location status
 
-### Prepare the sample data that is required for the example scenario
+### Prepare the sample data required for the example scenario
 
-Before you start to work through the scenario, you must activate sample data and set up the feature as described in this section. To complete the example scenario, you must use either the Warehouse Management mobile app or the browser-based emulator. The steps that are provided here use the Warehouse Management mobile app. The steps for the browser-based emulator are similar.
+Before you start working through the scenario, activate sample data and set up the feature as described in this section. To complete the example scenario, use either the Warehouse Management mobile app or the browser-based emulator. The steps that are provided here use the Warehouse Management mobile app. The steps for the browser-based emulator are similar.
 
 #### Use the USMF legal entity
 
-To work through the example scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the *USMF* legal entity before you begin.
+To work through the example scenario by using the sample records and values that are specified here, use a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, select the *USMF* legal entity before you begin.
 
 #### Set up location profiles
 
 The example scenario requires that you prepare two location profiles.
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
+1. Go to **Warehouse management > Setup > Warehouse > Location profiles**.
 1. Select **Edit** to put the page into edit mode.
 1. Select the *BULK-06* profile.
 1. On the **General** FastTab, set the following values:
@@ -61,18 +61,18 @@ The example scenario requires that you prepare two location profiles.
 
 ### Scenario
 
-1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
+1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
 1. Select **New**.
-1. In the **Create purchase order** dialog box, on the **Vendor** FastTab, in the **Vendor account** field, select *104*.
+1. In **Create purchase order**, on the **Vendor** FastTab, in the **Vendor account** field, select *104*.
 1. On the **General** FastTab, in the **Warehouse** field, select *61*.
 1. Select **OK**.
-1. Your new purchase order (PO) is opened. It includes an empty line in the **Purchase order lines** grid. On this line, set the following values:
+1. Your new purchase order (PO) opens. It includes an empty line in the **Purchase order lines** grid. On this line, set the following values:
 
     - **Item number:** *A0002*
     - **Quantity:** *5*
 
 1. On the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm** to confirm the purchase order.
-1. On the mobile device, go to **Inbound \> Purchase Receive**.
+1. On the mobile device, go to **Inbound > Purchase Receive**.
 1. Select the **PONUM** field, enter the PO number, and confirm.
 1. Select the **ITEM** field, enter *A0002* as the item number, and confirm.
 1. On the **QTY** page, enter *5* as the quantity, and confirm.
@@ -87,36 +87,36 @@ The example scenario requires that you prepare two location profiles.
 1. On the purchase order page, select **Work details** above the **Purchase order lines** grid.
 1. On the **General** tab, notice the **Work ID** and **Target license plate ID** values that were created.
 1. In the **Lines** section, notice the **Location** values for the *Pick* and *Put* work types.
-1. On the mobile device, go to **Inbound \> Purchase Put-away**.
+1. On the mobile device, go to **Inbound > Purchase Put-away**.
 1. Select the **ID** field, enter the work ID, and confirm.
 1. Confirm once more to complete the *Pick* entry.
 1. Select the Menu button in the upper-right corner, and then select **Done** to complete the *Pick* work.
 1. Make a note of the Putaway location, and confirm. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to exit **Purchase Put-away** and return to the **Inbound** menu.
 1. Select **Back** to return to the main menu.
-1. In Dynamics 365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
-1. Filter on **Location**, and enter the putaway location from the purchase order work. You should see the following results:
+1. In Dynamics 365 Supply Chain Management, go to **Warehouse management > Setup > Warehouse > Locations**.
+1. Filter on **Location**, and enter the putaway location from the purchase order work. You see the following results:
 
     - The **Location status** column shows a value of *Storage*, because the last transaction against this location was a put.
     - The **Item number** column shows a value of *A0002*, because that item was received and put to the location.
     - The **Last activity date and time** column shows the timestamp for the date and time when the work was completed at the location.
 
-1. On the mobile device, go to **Quality \> Movement**.
+1. On the mobile device, go to **Quality > Movement**.
 1. Select the **LOC/LP** field, and enter the location you made note of in the previous steps.
 1. Confirm the information that is shown. Make a note of the license plate number that is generated.
 1. On the **To Information** screen, select the **LOC/LP** field, and enter *06A07R2S1B* as the location to move the item to.
 1. On the **To Information** screen, confirm the **LP** value (the target license plate ID), which is automatically generated. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to exit **Movement** and return to the **Quality Management** menu.
 1. Select **Back** to return to the main menu.
-1. In Dynamics 365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. In Dynamics 365 Supply Chain Management, go to **Warehouse management > Setup > Warehouse > Locations**.
 1. Refresh the **Locations** page, and view the original putaway location again. Notice that the **Location status** field is now set to *Empty*, and the **Item number** column is blank.
-1. View the record for location *06A07R2S1B*, and notice that the **Status** value has changed to *Storage*, and the **Item number** and **Last activity date and time** fields have been updated.
-1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. View the record for location *06A07R2S1B*, and notice that the **Status** value has changed to *Storage*, and the **Item number** and **Last activity date and time** fields are updated.
+1. Go to **Sales and marketing > Sales orders > All sales orders**.
 1. Select **New**.
-1. In the **Create sales order** dialog box, in the **Customer account** field, select *US-002*.
+1. In **Create sales order**, in the **Customer account** field, select *US-002*.
 1. In the **Warehouse** field, select *61*.
 1. Select **OK**.
-1. Your new sales order is opened. It includes an empty line in the **Sales order lines** grid. On this line, set the following values:
+1. Your new sales order opens. It includes an empty line in the **Sales order lines** grid. On this line, set the following values:
 
     - **Item number:** *A0002*
     - **Quantity:** *1*
@@ -126,7 +126,7 @@ The example scenario requires that you prepare two location profiles.
 1. On the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
 1. In the **Sales order lines** section, on the **Warehouse** menu, select **Work details**.
 1. Copy the **Work ID** value that was created.
-1. On the mobile device, go to **Outbound \> Sales picking**.
+1. On the mobile device, go to **Outbound > Sales picking**.
 1. Select the **ID** field, enter the work ID that you copied earlier, and confirm.
 1. On the **Sales orders: Pick** page, the **LOC** field suggests the picking location as the putaway location that was created earlier. Make a note of the location.
 1. Select the **LOC** field, enter the location, and confirm.
@@ -142,11 +142,11 @@ The example scenario requires that you prepare two location profiles.
 1. Select the **TARGET LP** field, enter a user-defined target license plate ID, and confirm.
 1. Confirm once more to complete the picking work. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to complete the picking activity and return to the **Outbound** menu.
-1. In Dynamics 365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. In Dynamics 365 Supply Chain Management, go to **Warehouse management > Setup > Warehouse > Locations**.
 1. Filter on **Location**, and enter the pick location from the sales order work.
-1. Notice that the **Location status** field for the location that the sales order work picked from is now set to *Picking*, and the **Last activity date and time** field has been updated.
+1. Notice that the **Location status** field for the location that the sales order work picked from is now set to *Picking*, and the **Last activity date and time** field is updated.
 
 > [!NOTE]
-> The location fields are updated only by warehouse transactions. If you move inventory by using a journal or other non-WMS processes, the fields won't be updated.
+> You can update the location fields only through warehouse transactions. If you move inventory by using a journal or other non-WMS processes, the fields aren't updated.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to generate the EU sales list for Netherlands in Microsof
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 05/04/2026
+ms.date: 05/29/2026
 ms.reviewer: johnmichalak
 ms.custom:
   - bap-template
@@ -17,7 +17,7 @@ ms.custom:
 
 This article explains how to generate the EU sales list for Netherlands in Microsoft Dynamics 365 Finance.
 
-You can generate a European Union (EU) sales list for the Netherlands in XML format that follows [NL SBR taxonomies](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie) description. Taxonomies are updated by the authority each year. For example, in 2021 the taxonomy NT15 is applicable.
+You can generate a European Union (EU) sales list for the Netherlands in XML format that follows [NL SBR taxonomies](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie) description. Taxonomies are updated by the authority each year. For example, in 2026 the taxonomy NT20 is applicable.
 
 You can also preview the EU sales list report in Microsoft Excel format. Two formats are available to select: **EU sales list by rows report** or **EU sales list by columns report**.
 
@@ -25,20 +25,22 @@ As a prerequisite, learn about EU sales list reporting and create all the necess
 
 ## Set up EU sales list for Netherlands
 
-### Set up XML namespaces for the EU sales list in XML
+### <a id="xml-namespaces"></a>Set up XML namespaces for the EU sales list in XML
 
 To set up XML namespaces for the EU sales list in XML, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces** > **Electronic reporting**, and import version 1.10 or higher of the format, **EU Sales list (NL).** For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 1. Select **Configurations** > **Application specific parameters setup**.
 1. On the **Lookups** FastTab, select **XMLNamespaces**.
-1. On the **Conditions** FastTab, define the path to the XSD schema and the paths to the schema instances, **SchemaInstanceData** and **SchemaInstanceTuples**.
+1. On the **Conditions** FastTab, define the path to the XSD schema and the paths to the schema instances valid as of NT20.
 
-    | **Name**             | **Lookup result**                                                                 |
-    |----------------------|-----------------------------------------------------------------------------------|
-    | XSDSchema            | http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-icp-opgaaf-2021.xsd |
-    | SchemaInstanceData   | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data.xsd                  |
-    | SchemaInstanceTuples | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples.xsd                 |
+| Lookup result                                                                 | Name                 |
+|-------------------------------------------------------------------------------|---------------------------|
+| http://www.nltaxonomie.nl/nt20/bd/20251210/entrypoints/bd-rpt-icp-opgaaf-2026.xsd | XSDSchema                 |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-axes.xsd                  | SchemaInstanceAxes        |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/dictionary/bd-data.xsd                | SchemaInstanceData        |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-domains.xsd             | SchemaInstanceDomains     |
+| http://www.nltaxonomie.nl/nt20/bd/20251210/dictionary/bd-domain-members.xsd      | SchemaInstanceMembers     |
 
 For more information about how to get the values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy).
 
@@ -127,9 +129,11 @@ To transfer transactions and preview files, follow these steps:
 
     :::image type="content" source="../media/EU-sales-list-pic5.png" alt-text="Screenshot of EU sales list.":::
 
-    For more information about how to work with the EU sales list journal, see [EU Sales list reporting](../europe/emea-eu-sales-list.md).
-
-    For more information about reporting of legal entities with multiple VAT registrations, see [Reporting for Multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md).
+    For Netherlands EU sales list reporting, the **Quarter** and **Year** fields on EU sales list lines are used only for correction scenarios.
+    - These fields are interpreted only when a line is marked as **Corrected**.
+    - For corrected lines, **Quarter** and **Year** identify the original quarterly reporting period that the correction belongs to.
+    - For non-corrected lines, **Quarter** and **Year** aren't treated as general reporting fields.
+    - Use these fields to enter **Quarter** and **Year** values on corrected lines.
 
 1. Select **Reporting** to preview the EU sales list files. In the **EU reporting** dialog box, set the following parameters:
 
@@ -137,6 +141,10 @@ To transfer transactions and preview files, follow these steps:
     - In the **From date** field, select the first date of the reporting period.
     - Set **Generate file** to **Yes** to generate an XML file.
     - Set **Generate report** to **Yes** to generate a Microsoft Excel report.
+
+    For more information about how to work with the EU sales list journal, see [EU Sales list reporting](../europe/emea-eu-sales-list.md).
+
+    For more information about reporting of legal entities with multiple VAT registrations, see [Reporting for Multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md).
 
 ### Create ICP declaration and send to Digipoort
 
@@ -164,28 +172,29 @@ To create an ICP declaration and send it to Digipoort, follow these steps:
 
 ## Get XSD schema and namespaces for the Dutch taxonomy
 
-Dutch taxonomies change once a year. Check for the availability of a new taxonomy to get the new path to the XSD schema and new namespaces. Update application specific parameters accordingly.
+Dutch taxonomies change once a year. Check for the availability of a new taxonomy to get the new path to the XSD schema and new namespaces. Update [application specific parameters](#xml-namespaces) accordingly.
 
 1. Open [Documentatie Nederlandse Taxonomie \| Standard Business Reporting (sbr-nl.nl)](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie).
 1. In the **Organisatie** field, select **Belastingdienst**.
-1. In the **Documenten** field, select, for example, **Omzetbelasting 2021** to get taxonomy for 2021 year.
+1. In the **Documenten** field, select, for example, **Omzetbelasting 2021** to get taxonomy for 2026 year.
 1. Select **Filter resultaten**.
-1. Locate the document with description of changes, for example for changes between NT14 and NT15 taxonomies, and download the [NT15_BD_20201209 Versioning_NT14_20191211_to_NT15_20201209](https://www.sbr-nl.nl/sites/default/files/bestanden/taxonomie/NT15_BD_20201209%20Versioning_NT14_20191211_to_NT15_20201209.zip) zip archive. Unzip the file.
+1. Locate the document with description of changes, for example for changes between the most recent and previous version taxonomies, and download the zip archive. Unzip the file and review the changes description related to namespaces.
 
 ### EU sales list
 
 To view the changes in EU sales list, complete the following steps.
 
-1. Open the file, `Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-icp-opgaaf-2021.html` to view the changes in EU sales list.
-1. In the file, under *Schema referenties*, you can see XSD schema names for taxonomies NT14 and NT11. Take the value for entering to **XSDSchema** lookup result. Find more details about application specific parameters for EU sales list format in the section [Set up XML namespaces for the EU sales list in XML](#set-up-xml-namespaces-for-the-eu-sales-list-in-xml) above.
-1. In the file, under the **Namespaces** table, you can see the line: `bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data`. Take this value for entering to **SchemaInstanceData** lookup result.
-1. In the file, under the **Namespaces** table, you can see the line: `bd-t= <http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples.xsd>`. Take this value for entering to **SchemaInstanceTuples** lookup result.
+1. Open the file, for example `Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-icp-opgaaf-2021.html` to view the changes in EU sales list.
+1. In the file, under **Schema referenties**, you can see XSD schema names for taxonomies NT14 and NT11. Take the value for entering to **XSDSchema** lookup result. Find more details about application specific parameters for EU sales list format in the section [Set up XML namespaces for the EU sales list in XML](#xml-namespaces) above.
+1. In the file, under the **Namespaces** table, you can see the line that contains the `bd-dim-dim` prefix. Copy the http address from this line `http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-axes` for entering to **SchemaInstanceAxes** lookup result.
+1. In the file, under the **Namespaces** table, you can see the line that contains the `bd-i` prefix. Copy the http address from this line `http://www.nltaxonomie.nl/nt20/bd/20251210/dictionary/bd-data` for entering to **SchemaInstanceData** lookup result.
+1. In the file, under the **Namespaces** table, you can see the line that contains the `bd-dim-dom` prefix. Copy the http address from this line `http://www.nltaxonomie.nl/nt20/bd/20251210/validation/bd-domains` for entering to **SchemaInstanceDomains** lookup result.
 
 ### VAT declaration
 
 To view the changes in VAT declaration, follow these steps:
 
-1. Open the file, `Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-ob-aangifte-2021.html` to see the changes in VAT declaration.
+1. Open the file, `Versioning_rpt-from_NT20_20251210.b_to_NT20_20251210-bd-rpt-icp-opgaaf-2026.html` to see the changes in VAT declaration.
 1. In the file, under **Schema referenties,** you can see XSD schema names for taxonomies NT14 and NT11. Take the name of XSD schema for entering to **XSDSchema** lookup result. Find more details about application specific parameters for VAT declaration format in [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) article in **Set up XSD schema and namespaces** section.
 1. In the file, under the **Namespaces** table, you can see the line: `bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data`. Take this value for entering to **SchemaInstanceData** lookup result.
 

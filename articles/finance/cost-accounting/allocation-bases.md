@@ -4,7 +4,7 @@ description: Learn about allocation bases. Allocation bases are key components i
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 05/24/2017
+ms.date: 05/27/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -28,7 +28,7 @@ Cost accounting has three types of allocation bases:
 
 ## Predefined dimension member allocation bases
 
-The predefined dimension member allocation bases are created automatically when a dimension member of one the following types is created:
+The system automatically creates predefined dimension member allocation bases when you create a dimension member of one of the following types:
 
 - Statistical dimension members
 - Cost element dimension members
@@ -42,12 +42,12 @@ This example shows how to create a cost allocation rule to allocate cost element
 
 In the general ledger, the chart of accounts is defined as follows.
 
-| Chart of account | Main account | Description        | Main account type |
+| Chart of accounts | Main account | Description        | Main account type |
 |------------------|--------------|--------------------|-------------------|
 | Shared           | 10001        | Salaries           | Expense           |
 | Shared           | 10002        | Employee insurance | Expense           |
 
-Define a cost element dimension, and configure the data connector. After the data is imported, the following entries are created in Cost accounting.
+Define a cost element dimension, and configure the data connector. After you import the data, Cost accounting creates the following entries.
 
 **Cost element dimension members**
 
@@ -127,7 +127,7 @@ After you apply cost element 10001 (Salaries) as the allocation base, the result
 
 ### Example 2: Use a statistical dimension member as the allocation base
 
-Statistical dimension members can be used as allocation bases to define policies or report nonmonetary consumption by cost objects. You can manually create statistical dimension members or import them from a file by using the Data management import/export tool.
+You can use statistical dimension members as allocation bases to define policies or report nonmonetary consumption by cost objects. You can manually create statistical dimension members or import them from a file by using the Data management import/export tool.
 
 **Statistical dimension members**
 
@@ -159,7 +159,7 @@ Statistical measures can come from various sources:
 | Employee F | CC003       | IT | Employee    |
 
 > [!NOTE]
-> All the tables that contain financial dimensions can be used as sources for statistical measures.
+> You can use all the tables that contain financial dimensions as sources for statistical measures.
 
 Cost accounting supports a collection of statistical measures by using the following data connections:
 
@@ -192,7 +192,7 @@ Here is an example of a cost distribution rule if the FTE’s predefined dimensi
 | CC002       | FI   | 2.00      | (2/5) × Amount    |
 | CC003       | IT   | 2.00      | (2/5) × Amount    |
 
-You can use the Imported statistical measures data entity to import statistical measures into Cost accounting. You can also use the Data management import/export tool. In Excel, the consumption of electricity is recorded as follows.
+Use the **Imported statistical measures** data entity to import statistical measures into Cost accounting. You can also use the Data management import/export tool. In Excel, the consumption of electricity is recorded as follows.
 
 | Accounting date | Dimension member | Magnitude | Source identifier |
 |-----------------|------------------|-----------|-------------------|
@@ -220,7 +220,7 @@ Here's an example of a cost distribution rule if you assign the **Electricity** 
 
 ## Hierarchy allocation bases
 
-Cost accountants can manually create the hierarchy allocation bases by applying a cost object dimension hierarchy node to an existing allocation base. In this way, you can limit the range of the original predefined dimension member allocation basis. One predefined dimension member allocation basis can be used to create several hierarchy allocation bases. Ranges can be maintained in the cost object dimension hierarchy that is associated with the hierarchy allocation bases.
+Cost accountants can manually create hierarchy allocation bases by applying a cost object dimension hierarchy node to an existing allocation base. By using this method, you can limit the range of the original predefined dimension member allocation basis. You can use one predefined dimension member allocation basis to create several hierarchy allocation bases. You can maintain ranges in the cost object dimension hierarchy that you associate with the hierarchy allocation bases.
 
 ### Example: Hierarchy allocation bases that are based on full-time employees in the organization
 
@@ -270,14 +270,14 @@ Here's an example of a cost distribution rule if the Number of FTEs in CFO hiera
 
 Formula allocation bases let you define advanced formulas to achieve the correct allocation basis. You can manually create formula allocation bases.
 
-When you create a formula allocation base, you select which statistical dimension and cost element dimension should be the basis for the formula. All allocation bases that come from the previously selected dimensions can be used in a formula allocation base.
+When you create a formula allocation base, you select which statistical dimension and cost element dimension should be the basis for the formula. You can use all allocation bases that come from the previously selected dimensions in a formula allocation base.
 
 > [!NOTE]
-> Previously defined formula allocation bases can be used to define a new formula allocation base.
+> You can use previously defined formula allocation bases to define a new formula allocation base.
 
 In formula allocation base factors, you create an alias and associate it with either an allocation base or a constant. Use the aliases to define the formula.
 
-You can use the following operators to define your formula.
+To define your formula, use the following operators.
 
 | Symbols | Text           |
 |---------|----------------|
@@ -302,7 +302,7 @@ Electricity bills often consist of two parts:
 - A fixed fee for being connected to the grid
 - A cost that is associated with consumption per kWh
 
-The Electricity predefined dimension member allocation basis has already been defined and holds these values.
+The Electricity predefined dimension member allocation basis already defined holds these values.
 
 **Statistical entries**
 
@@ -366,10 +366,10 @@ For this example, the cost of electricity shouldn't just follow the actual elect
 
 | Rule              | Rate |
 |-------------------|------|
-| a <= 10000,00 kWh | 0.75 |
-| a > 10000,00 kWh  | 1.15 |
+| a <= 10,000.00 kWh | 0.75 |
+| a > 10,000.00 kWh  | 1.15 |
 
-A new formula allocation base, Electricity usage, is created.
+Create a new formula allocation base named **Electricity usage**.
 
 **Formula allocation base**
 
