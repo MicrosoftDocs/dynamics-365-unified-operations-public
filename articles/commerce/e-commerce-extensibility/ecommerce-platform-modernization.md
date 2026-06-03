@@ -2,12 +2,12 @@
 title: E-commerce platform modernization
 description: Learn about platform modernization efforts for the Dynamics 365 Commerce online SDK, including Node.js runtime upgrades and TypeScript upgrades.
 author: mithun-microsoft
-ms.date: 05/27/2026
+ms.date: 06/07/2026
 ms.topic: overview
 ms.search.region: Global
 ms.author: mithunbobade
 ms.reviewer: mirao
-ms.search.validFrom: 2026-05-27
+ms.search.validFrom: 2026-05-14
 ms.custom:
   - bap-template
 ---
@@ -20,7 +20,7 @@ This article describes ongoing platform modernization efforts for the Microsoft 
 
 ## Node.js runtime upgrade
 
-The SDK package for Dynamics 365 Commerce release 10.0.49 supports **Node.js 22** only. Node.js 22 delivers significant security improvements, an updated V8 engine, and long-term support (LTS) coverage through April 2027.
+The SDK package for Dynamics 365 Commerce release 10.0.49 only supports **Node.js 22**. Node.js 22 delivers significant security improvements, an updated V8 engine, and long-term support (LTS) coverage through April 2027.
 
 ### Supported Node.js version
 
@@ -29,7 +29,7 @@ The SDK package for Dynamics 365 Commerce release 10.0.49 supports **Node.js 22*
 | Node.js 22.x | Supported; required on the SDK package for Dynamics 365 Commerce release 10.0.49 |
 
 > [!IMPORTANT]
-> The SDK package for Dynamics 365 Commerce release 10.0.49 supports **Node.js 22** only.
+> The SDK package for Dynamics 365 Commerce release 10.0.49 only supports **Node.js 22**.
 
 ### Why upgrade?
 
