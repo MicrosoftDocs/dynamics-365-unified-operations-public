@@ -27,5 +27,6 @@ When you configure your legal entity for reporting for multiple VAT registration
 | [Intrastat](emea-fra-intrastat.md)       | 10.0.20 | Intrastat INTRACOM (FR), version 13.5<br>Intrastat SAISUNIC (FR), version 1.3 |
 | [EU sales list](emea-fra-eu-sales-list.md)   | 10.0.20 | EU Sales list (FR), version 1.2  |
 | [VAT declaration](emea-fra-VAT-declaration-preview-France.md) | 10.0.20 | VAT Declaration Excel (FR), version 85.15 |
+| [France e-reporting](emea-fra-e-reporting.md) | 10.0.49 | e-Reporting XML (FR) |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
