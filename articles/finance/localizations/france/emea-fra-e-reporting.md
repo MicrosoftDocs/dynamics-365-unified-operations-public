@@ -359,60 +359,62 @@ The following actions are available in the France e‑reporting process:
 
 ### Action flow details
 
-To report France e-reporting data, follow these steps:
+To report France e-reporting data, follow these steps.
+
+#### Populate data
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 1. On the Action Pane, select **Run processing**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. Select the **Choose action** checkbox, and then, in the **Action** field, select the **FR-eRep Populate Report Data** action.
 2. Expand the **Run in the background** FastTab and specify the **Recurrence** settings for the **FR-eRep Populate Report Data** action. For example, if you want the system to collect data for e-reporting on a daily basis, define the recurrence pattern as every weekday.
-3. 
+3. Mark the **Batch processing** checkbox to execute the **FR-eRep Populate Report Data** action in the background according to defined recurrence settings.
 
-#### Populate data
+#### Review e-reporting entries
 
-FR-eRep Populate Report Data initializes the process
-Retrieves and prepares data from Finance
-Creates message items for:
+After data is populated, you can control which records will included in the report output:
+- Use **FR-eRep Exclude Transaction Entry** or **FR-eRep Exclude Payment Entry** actions to remove entries from report or postpone their reporting.
+- Use **FR-eRep Reactivate Transaction Entry** or **FR-eRep Reactivate Payment Entry** to include entries again to the report to be generated.
 
-Transactions
-Payments
-
-
-
-
-Review and adjust entries
-After data is populated, you can control which records are included:
-
-Use FR-eRep Exclude Transaction Entry or FR-eRep Exclude Payment Entry to remove entries
-Use FR-eRep Reactivate Transaction Entry or FR-eRep Reactivate Payment Entry to include them again
+1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
+1. On the Action Pane, select **Update status**.
+1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
+2. In the **Action** field, select relevant action.
+3. In the **New status** field, select the status to be applied to the selected message items. 
 
 This step ensures that only relevant data is included in the final report.
 
-Generate report
+#### Generate report
+
 You can generate different report outputs depending on your reporting needs:
+- FR-eRep Generate Transactions Report – transactions only
+- FR-eRep Generate Payments Report – payments only
+- FR-eRep Generate Full Report – combined report
 
-FR-eRep Generate Transactions Report – transactions only
-FR-eRep Generate Payments Report – payments only
-FR-eRep Generate Full Report – combined report
+1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
+1. On the Action Pane, select **Run processing**.
+1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
+1. Select the **Choose action** checkbox, and then, in the **Action** field, select one of the actions: **FR-eRep Generate Full Report**, **FR-eRep Generate Transactions Report** or **FR-eRep Generate Payments Report**.
+2. Expand the **Run in the background** FastTab and specify the **Recurrence** settings for the selected action. For example, if you want the system to generate a report once every 10 days, define the recurrence pattern as every 10 days.
+3. Mark the **Batch processing** checkbox to execute the selected action in the background according to defined recurrence settings.
 
-The generated report is based on:
+#### Regenerate report
 
-Message items
-Configured parameters
-Applied filters
+Use **FR-eRep Regenerate Report File** if you need to submit a corrected report after you have already submitted the original report.
 
+1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
+2. For the **FR e-Reporting** processing, find and select the electronic message that was previously submitted.
+3. Expand the **Additional fields** FastTab and select the **FR-eRep TypeCode** additional field. Select **RE** value (Rectificative) for the **FR-eRep TypeCode** additional field.
+4. Select **Generate report** button on the **Messages** FastTab to regenerate the report.
 
-Regenerate report
+#### Finalize reporting
 
-Use FR-eRep Regenerate Report File after correcting data or parameters
-Ensures the output reflects the latest changes
+Use **FR-eRep Mark Report as Submitted** to complete the process. This action changes the electronic message status to **FR-eRep Report Submitted**, indicating that the report has been successfully submitted to the French tax authorities through an approved intermediary platform.
 
-
-Finalize reporting
-
-Use FR-eRep Mark Report as Submitted to complete the process
-Updates the message status to reflect completion
-
-
+1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message**.
+1. On the Action Pane, select **Update status**.
+1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
+2. In the **Action** field, select the **FR-eRep Mark Report as Submitted** action.
+3. In the **New status** field, select the **FR-eRep Report Submitted** status to be applied to the selected message. 
 
 ## Report to the France e-reporting for multiple VAT registrations
