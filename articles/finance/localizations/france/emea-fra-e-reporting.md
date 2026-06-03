@@ -215,9 +215,110 @@ Proper configuration ensures that the system correctly collects and processes da
 
 Executable class settings define how the system executes processing logic during EM actions.
 
-1. Open the **Executable class settings** page and locate the **FR-eRep PopulateMessageItems** executable class.
+There are two executable classes involved in **FR e-reporting** processing:
 
-These settings control the execution of logic that drives data collection, processing, and output generation.
+| Executable class | Description | Executable class name | Action type | 
+|------------------|-------------|-----------------------|-------------|
+| FR-eRep PopulateMessageItems | Generate message elements for e-reporting | EReportingEMCreateItemsController_FR | Populate records |
+| FR-eRep GenerateReportFile | Generate a message for e-reporting | EReportingEMExportController_FR | Electronic reporting export |
+
+##### Set up **FR-eRep PopulateMessageItems** executable class parameters
+
+The **FR‑eRep PopulateMessageItems** executable class performs the data collection and preparation step of the process. It:
+- Retrieves transaction and payment data from multiple data sources in Dynamics 365 Finance
+- Aggregates and organizes the data according to reporting requirements
+- Creates and populates electronic message items based on the collected data
+- Defines relevant values of addiional fields for created message items.
+
+During execution, the class:
+- Reads data from multiple tables and transaction sources, including:
+  - Customer invoices
+  - Vendor invoices
+  - Payment transactions
+  - Tax transactions
+- Applies selection criteria based on the executable class parameters
+- Calculates and assignes relevant values to the message item additional fields
+- Assignes to electronic message items types:
+  - FR‑eRep Transactions Invoice – Invoice-based transactions subject to reporting
+  - FR‑eRep Transactions B2C – Aggregated B2C transactions
+  - FR‑eRep Payments Invoice – Payments related to invoices
+  - FR‑eRep Payments B2C – Payments related to B2C transactions
+
+Each message item type represents a specific reporting scenario and determines how the data is processed and included in the final report.
+
+Within the **FR e-reporting** processing:
+- The **FR‑eRep PopulateMessageItems** executable class is triggered during the data collection action
+- It produces the message items that serve as the input for report generation
+- The generated message items are later used to produce the structured output
+
+After this class is executed:
+- The electronic message items are created in the **Electronic message items** table according to the **FR‑eRep PopulateMessageItems** executable class parameters
+- Each message item represents a transaction or aggregated data set
+- All the relevant values of message item additional fields are calculated for created message items
+- The system is ready to proceed to the report generation step
+
+To set up **FR-eRep PopulateMessageItems** executable class parameters, click the **Parameters** button on the Action pane.
+
+| Report type              | Parameter name                   | Parameter value                  |
+|--------------------------|----------------------------------|----------------------------------|
+| Transactions report type | Invoice                          | FR-eRep Transactions Invoice     |
+| Transactions report type | Transaction                      | FR-eRep Transactions B2C         |
+| Transactions report type | Status to Created                | FR-eRep Transaction Entry Created|
+| Transactions report type | Additional field for VAT payment | FR-eRep TaxDueDateTypeCode       |
+| Transactions report type | Paid to date value               | 432                              |
+| Payments report type     | Invoice                          | FR-eRep Payments Invoice         |
+| Payments report type     | Transaction                      | FR-eRep Payments B2C             |
+| Payments report type     | Status to Created                | FR-eRep Payment Entry Created    |
+
+During execution of the **FR‑eRep PopulateMessageItems** executable class, filters are used to define which records are selected and included in electronic message items.
+These filters are configured in the **Records to include** sections and control how data is retrieved from source tables.
+
+Filters are available for the four sections of France e-report:
+- Payments report type – Invoice
+- Transactions report type – Transaction
+- Transactions report type – Invoice
+- Payments report type – Transaction
+
+When the process runs, filters are evaluated during data selection and only records that meet all filter conditions are retrieved and assigned to the appropriate message item type.
+
+##### Set up **FR-eRep GenerateReportFile** executable class parameters
+
+The **FR‑eRep GenerateReportFile** executable class is responsible for generating the e‑reporting XML output based on the data collected in electronic message items.
+This class performs the report generation step of the process. It:
+- Reads electronic message items created during the data collection step
+- Organizes the data according to the reporting structure
+- Produces a structured output file that represents the electronic message in XML format.
+
+During execution, the **FR‑eRep GenerateReportFile** class:
+- Retrieves the electronic message items to be processed
+- Applies the reporting structure and mappings
+- Generates a structured XML output file
+
+The generated file represents:
+- One reporting document for the reporting period
+- A collection of transactions and/or payment data
+
+Within the **FR e-reporting** processing:
+- The class is triggered during the generate report action
+- It transforms message items into a consumable report format
+- It prepares the output file for further processing outside the system
+
+After this class is executed:
+- A structured XML output file is generated for the electronic message
+- The file contains all relevant transactions and/or payment data
+
+The settings of this class control the execution of logic that drives data collection, processing, and output generation.
+
+| Report type              | Parameter name                   | Parameter value                  |
+|--------------------------|----------------------------------|----------------------------------|
+| Transactions report type | Invoice                          | FR-eRep Transactions Invoice     |
+| Transactions report type | Transaction                      | FR-eRep Transactions B2C         |
+| Transactions report type | Status to Pending                | FR-eRep Transaction Entry Pending|
+| Transactions report type | Status to Excluded                | FR-eRep Transaction Entry Excluded|
+| Payments report type     | Invoice                          | FR-eRep Payments Invoice         |
+| Payments report type     | Transaction                      | FR-eRep Payments B2C             |
+| Payments report type     | Status to Pending                | FR-eRep Payment Entry Pending  |
+| Payments report type     | Status to Excluded                | FR-eRep Payment Entry Excluded    |
 
 ## Use EM functionality to report to the France e-reporting
 
