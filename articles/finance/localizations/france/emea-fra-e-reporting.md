@@ -37,6 +37,17 @@ This includes:
 
 E-reporting complements e-invoicing by ensuring that the tax authorities receive data for all VAT-relevant transactions.
 
+## Feature availability
+
+France e‑reporting functionality is available starting from Dynamics 365 Finance version **10.0.49**.
+
+The feature is also made available in earlier versions 10.0.47 and 10.0.48 through specific application builds. Availability in these versions depends on the deployed build and update level.
+
+| Finance version | Build |
+|--------------|-------|
+| 10.0.48 | 1135046 |
+| 10.0.47 | 1135046 |
+
 ## Registration IDs and establishments
 
 Accurate identification of legal entities and their establishments is required for compliant reporting.
@@ -54,9 +65,11 @@ For more information, see [Registration IDs set up for France](emea-fra-registra
 To enable France e-reporting, complete the following steps:
 
 - [Import and configure ER configurations](#configurations)
-- [Configure application-specific parameters for the ER format]()
+- [Configure application-specific parameters for the ER format](#configure-asp)
 - [Import a package of data entities that includes a predefined EM setup](#data-entities)
 - [Set up EM parameters for the France e-reporting](#set-up-em-parameters)
+
+Optionaly, you can [set up France e-Reporting to report in multiple VAT registrations legal entity](#set-up-multi-tax) if applicable.
 
 ### <a id="configurations"></a>Import and configure ER configurations
 
@@ -160,7 +173,7 @@ The configuration includes:
 Message additional fields define values that apply to the entire electronic message and are included in the generated output.
 
 1. Open the **Electronic messages processing** setup
-2. Select the **FR e-Reporting** rocessing
+2. Select the **FR e-Reporting** processing
 3. Go to the **Message additional fields** section
 4. Configure the default values for the following additional fields:
 - FR-eRep SenderId: specifies the identifier of the reporting entity
@@ -320,6 +333,25 @@ The settings of this class control the execution of logic that drives data colle
 | Payments report type     | Status to Pending                | FR-eRep Payment Entry Pending  |
 | Payments report type     | Status to Excluded                | FR-eRep Payment Entry Excluded    |
 
+### <a id="set-up-multi-tax"></a>Set up FR e-Reporting to report in multiple VAT registrations legal entity
+
+Multiple VAT registrations legal entity scenario applies to organizations that operate with multiple VAT registration numbers within the same legal entity.
+This scenario is supported if you're using the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) functionality and enabled the [Support multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) parameter in the **Tax calculation parameters** page. 
+
+In such scenarios, transactions must be grouped and reported per VAT registration, rather than for the whole legal entity. When multiple VAT registrations are enabled, each transaction (for example, customer invoice, vendor invoice, or tax transaction) is assigned a tax registration number
+
+As a result:
+- All reporting-relevant records contain the VAT registration context
+- The system can distinguish transactions belonging to different registrations
+
+To report data for a specific VAT registration, configure filters in the **FR‑eRep PopulateMessageItems** executable class parameters.
+For example, apply a filter on fields that contain the VAT registration identifier or use conditions that correspond to your tax registration setup.
+
+Only records that match the filter criteria are:
+- Retrieved from source tables
+- Converted into electronic message items
+- Included in the generated report.
+
 ## Use Electronic messages (EM) functionality to report France e-reporting
 
 The France e‑reporting process is executed through the [Electronic messages](../../general-ledger/electronic-messaging-setup.md) framework. The process consists of a sequence of actions that allow you to:
@@ -341,6 +373,9 @@ The reporting process typically follows these steps:
 3. Generate the report (transactions, payments, or full report)
 4. Optionally regenerate the report if corrections are required
 5. Mark the report as submitted after final validation
+
+> [!NOTE] The France e‑reporting process supports reporting for multiple VAT registrations usesing the same Electronic Messages (EM) processing flow as described in this section.
+> No additional processing actions are required. The difference lies in how data is selected during the execution of the **FR‑eRep PopulateMessageItems** executable class. For more details, see the [Set up FR e-Reporting to report in multiple VAT registrations legal entity](#set-up-multi-tax)
 
 The following actions are available in the France e‑reporting process:
 
@@ -416,5 +451,3 @@ Use **FR-eRep Mark Report as Submitted** to complete the process. This action ch
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 2. In the **Action** field, select the **FR-eRep Mark Report as Submitted** action.
 3. In the **New status** field, select the **FR-eRep Report Submitted** status to be applied to the selected message. 
-
-## Report to the France e-reporting for multiple VAT registrations
