@@ -4,7 +4,7 @@ description: Access answers to many of the most frequently asked questions about
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: faq
-ms.date: 04/08/2026
+ms.date: 05/27/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -29,10 +29,10 @@ For more information about user-based authentication, read the following article
 
 User-based authentication offers the following advantages over service-based authentication for the Warehouse Management mobile app:
 
-- User-based authentication is easier to configure and use.
-- User-based authentication is more secure in contexts where the Warehouse Management mobile app is used.
-- User-based authentication provides more robust security and more configuration options in Microsoft Entra ID.
-- User-based authentication enables single sign-on (SSO) authentication across apps on the same device.
+- It's easier to configure and use.
+- It's more secure in contexts where the Warehouse Management mobile app is used.
+- It provides more robust security and more configuration options in Microsoft Entra ID.
+- It enables single sign-on (SSO) authentication across apps on the same device.
 
 ## Is service-based authentication deprecated everywhere?
 
@@ -91,6 +91,16 @@ Follow these steps to sign out the Microsoft Entra ID account that's signed in o
 1. Open the Warehouse Management mobile app.
 1. Select **Select a connection**.
 1. Select **Sign out**.
+
+## What's the difference between Log off and Sign out in the Warehouse Management mobile app?
+
+The Warehouse Management mobile app exposes two similar-sounding actions that end different sessions. They aren't interchangeable.
+
+- **Log off** is a menu item that you configure in Supply Chain Management on the **Mobile device menu items** page (with **Mode** set to *Activity code* and **Activity code** set to *Log off*). When a worker selects **Log off**, the worker's session is ended on the server side. The worker's stored state (such as the last screen they were viewing) is cleared, and the next worker who signs in starts from the menu that's configured for their work user.
+- **Sign out** is a built-in button in the Warehouse Management mobile app itself. It signs the Microsoft Entra ID account out of the app on the current device, but it doesn't end the work user session in Supply Chain Management. The worker's server-side state is preserved, so the next time the same worker signs in on any device, the app returns to the screen that they last had open.
+
+> [!NOTE]
+> If a worker uses **Sign out** while a screen other than the main menu is open, that screen reappears on the next sign-in, even if **Menu name** is set to *Main* for the work user on the **Work users** page. To always start at the configured main menu, the worker must use the **Log off** menu item before they sign out of the app. This behavior is by design.
 
 ## Can I just use the Microsoft Entra ID as a worker and skip the worker sign-in page?
 

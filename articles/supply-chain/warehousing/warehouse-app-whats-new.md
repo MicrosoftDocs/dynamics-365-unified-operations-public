@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 05/18/2026
+ms.date: 05/28/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -20,6 +20,26 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 Starting with version 4.1.1.0, every V4 and later release is tagged with its publication date. Publication dates determine whether a release is within the rolling 12-month support window that applies to V4 and all later releases. Learn more in [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy).
 
+> [!NOTE]
+> The publication date listed for each version marks the day the release becomes available in AppCenter and the day progressive rollout to the app stores (Microsoft Store, Google Play, and Apple App Store) begins. Because rollout is gradual, the update might not appear on every device on that exact date. Availability in each store can take several additional days to reach all users.
+
+## Release notes for version 4.1.4.0 (May 28, 2026)
+
+Version 4.1.4.0 is a minor update that includes the following features and fixes:
+
+### Features
+
+- **Camera improvements** – Added support for Code 39 Mod 43 barcodes.
+
+### Bug fixes
+
+- **Right-to-left (RTL) support** – Corrected layout and formatting issues for right-to-left languages.
+- **Submit spinner** – Resolved a UI hang and glitch that occurred when submitting forms.
+- **Keyboard focus** – Fixed an issue where the virtual keyboard didn't automatically trigger when typing started.
+- **Encoding** – Resolved character rendering and text corruption issues.
+- **On-premises** – Fixed issues affecting on-premises deployments on Android and iOS.
+- **AppCenter distribution** – Resolved issues experienced by users downloading the `.msixbundle` from AppCenter.
+
 ## Release notes for version 4.1.3.0 (May 18, 2026)
 
 Version 4.1.3.0 is a minor update that includes the following fixes and improvements:
@@ -29,11 +49,10 @@ Version 4.1.3.0 is a minor update that includes the following fixes and improvem
 - **Label encoding** – Fixed an encoding issue that caused incorrect signs to be displayed on labels.
 - **Quantity selector** – Improved performance of the quantity selector and resolved a concurrency issue.
 - **Calculator** – Fixed an issue where typing in the calculator would reopen the calculator instead of continuing input.
- 
+
 ### Improvements
 
 - **Right-to-left (RTL) support** – Improved support for right-to-left languages.
-
 
 ## Release notes for version 4.1.2.0 (May 6, 2026)
 

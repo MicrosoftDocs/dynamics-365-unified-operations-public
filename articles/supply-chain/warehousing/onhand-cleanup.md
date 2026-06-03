@@ -4,7 +4,7 @@ description: Learn about the on-hand entries cleanup job, which helps improve sy
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 04/23/2020
+ms.date: 5/28/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form:  SysOperationTemplateForm
@@ -14,32 +14,32 @@ ms.search.form:  SysOperationTemplateForm
 
 [!include [banner](../includes/banner.md)]
 
-The performance of queries that are used to calculate on-hand inventory is affected by the number of records in the tables that are involved. One way to help improve the performance is to reduce the number of records that the database must consider.
+The performance of queries that calculate on-hand inventory depends on the number of records in the tables. To improve performance, reduce the number of records the database must consider.
 
-This article describes the on-hand entries cleanup job, which deletes unneeded records in the `InventSum` and `WHSInventReserve` tables. These tables store on-hand information for items that are enabled for warehouse management processing. (These items are referred to as WMS items.) Deletion of these records can significantly improve the performance of on-hand calculations.
+This article describes the on-hand entries cleanup job, which deletes unneeded records in the `InventSum` and `WHSInventReserve` tables. These tables store on-hand information for items that are enabled for warehouse management processing. (These items are referred to as WMS items.) Deleting these records can significantly improve the performance of on-hand calculations.
 
 ## What the cleanup job does
 
 The on-hand entries cleanup job deletes any records in the `WHSInventReserve` and `InventSum` tables where all the field values are *0* (zero). These records can be deleted because they don't contribute to the on-hand information. The job deletes only records that are below the **Location** level.
 
-If negative physical inventory is allowed, the cleanup job might not be able to delete all the relevant entries. The reason for this limitation is that the job must allow for a special scenario where a license plate has multiple serial numbers, and one of those serial numbers has become negative. For example, the system will have zero on hand at the license plate level when a license plate has +1 pcs of serial number 1 and –1 pcs of serial number 2. For this special scenario, the job does a breadth-first deletion, where it tries to delete from lower levels first.
+If you allow negative physical inventory, the cleanup job might not be able to delete all the relevant entries. This limitation exists because the job must account for a special scenario where a license plate has multiple serial numbers, and one of those serial numbers becomes negative. For example, the system shows zero on hand at the license plate level when a license plate has +1 pcs of serial number 1 and –1 pcs of serial number 2. For this special scenario, the job performs a breadth-first deletion, where it tries to delete from lower levels first.
 
 ## Schedule and configure the cleanup job
 
-The on-hand entries cleanup job is available at **Inventory management \> Periodic tasks \> Clean up \> Warehouse management on-hand entries cleanup**. Use the standard job settings to control the scope and schedule for running the job. In addition, the following settings are provided:
+You can find the on-hand entries cleanup job at **Inventory management > Periodic tasks > Clean up > Warehouse management on-hand entries cleanup**. Use the standard job settings to control the scope and schedule for running the job. In addition, the following settings are provided:
 
-- **Delete if not updated for this many days** – Enter the minimum number of days that the job should wait before it deletes an on-hand entry that has dropped to zero quantity. Use this setting to help reduce the risk of deleting on-hand entries that are still being used. If you want cleanup to occur as soon as possible, either enter *0* (zero) or leave the field blank.
-- **Maximum execution time (hours)** – Enter the maximum execution time of the cleanup job, in hours. If the job isn't completed before this time passes, it will save the work that it has completed so far and then close itself. This capability is especially relevant for implementations that have high inventory use. In these cases, you should schedule the job to run at times when the system load is as light as possible. If you want the batch job to continue to run until it's completed, either enter *0* (zero) or leave the field blank.
+- **Delete if not updated for this many days** – Enter the minimum number of days that the job should wait before it deletes an on-hand entry that drops to zero quantity. Use this setting to help reduce the risk of deleting on-hand entries that are still in use. If you want cleanup to occur as soon as possible, either enter *0* (zero) or leave the field blank.
+- **Maximum execution time (hours)** – Enter the maximum execution time of the cleanup job, in hours. If the job isn't completed before this time passes, it saves the work that it completed so far and then closes itself. This capability is especially relevant for implementations that have high inventory use. In these cases, schedule the job to run at times when the system load is as light as possible. If you want the batch job to continue to run until it's completed, either enter *0* (zero) or leave the field blank.
 
-Although you can run the job during regular business hours, we recommend that you run it outside working hours. In this way, you help prevent conflicts that can occur if a user is working with a record that is also being cleaned up.
+Although you can run the job during regular business hours, run it outside working hours. In this way, you help prevent conflicts that can occur if a user is working with a record that the job is also cleaning up.
 
-If the job tries to delete a record for an item while that record is being used by another user, a deadlock error occurs for either the cleanup job or the user.
+If the job tries to delete a record for an item while another user is using that record, a deadlock error occurs for either the cleanup job or the user.
 
-When the job runs, it has a commit size of 100. In other words, it will try to commit one time for every 100 deletions. However, because some deletions are set-based, there might be scenarios where more than 100 records can be deleted in the same transaction. Therefore, lock escalations can still sometimes occur.
+When the job runs, it has a commit size of 100. In other words, it tries to commit one time for every 100 deletions. However, because some deletions are set-based, there might be scenarios where more than 100 records can be deleted in the same transaction. Therefore, lock escalations can still sometimes occur.
 
 ## Possible user impact
 
-Users might be affected if the on-hand entries cleanup job deletes all the records for a given level (such as the license plate level). In this case, the functionality for seeing that inventory was previously available on-hand at a license plate might not work as expected because the relevant on-hand entries are no longer available. This can, for example, be experienced in the following situations:
+Users might be affected if the on-hand entries cleanup job deletes all the records for a given level, such as the license plate level. In this case, the functionality for seeing that inventory was previously available on-hand at a license plate might not work as expected because the relevant on-hand entries are no longer available. Users can experience this issue in the following situations:
 
 - On the **On-hand list**, when the user deselects the condition **Quantity \<\> 0** or selects the condition **Closed transactions** in the **Dimensions display** settings.
 - In a **Physical inventory by inventory dimension** report for past periods, when the user sets the **As of date** parameter.

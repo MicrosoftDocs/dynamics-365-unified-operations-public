@@ -125,3 +125,7 @@ If you're an administrator, follow these steps to cancel agent actions.
 1. Go to **Batch jobs**.
 1. Use the **Job description** section to search by agent name or the **Created by** section to search by individual user name.
 1. To cancel agent actions, delete batch jobs that are associated with the agent or user that you found in the previous step.
+
+## Support and feedback
+
+Report any issues or suggestions through the standard Dynamics 365 support channels. You might also be prompted to provide in-product feedback.

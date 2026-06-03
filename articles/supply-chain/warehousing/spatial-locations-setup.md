@@ -25,7 +25,7 @@ Warehouse spatial location sorting optimizes picking routes by assigning X, Y, a
 
 To use warehouse spatial locations, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.49 or later.
 - The feature named *Warehouse spatial location* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Warehouse locations must already be defined for your warehouse.
 

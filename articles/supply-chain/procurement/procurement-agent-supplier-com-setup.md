@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 05/07/2026
+ms.date: 06/02/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -30,15 +30,15 @@ The remaining sections in this article provide the same instructions in a text-b
 
 ## Prerequisites
 
-Before you can use the supplier communications, your system must meet the following requirements:
+Before you can use the supplier communications features of the Procurement Agent, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later, with all available quality updates.  
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
 
     - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
     - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
-    - *(Production ready preview) Supplier Communications Agent*
-    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
+    - *(Production ready preview) Procurement Agent - Supplier Communications*
+    - Optional: If you want the agent to send emails automatically, turn on the feature *(Production ready preview) Procurement Agent - Supplier Communications - automatically sending follow-up emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
 
     > [!TIP]
     > If you can't enable the *Agent management* feature, make sure that all of its [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
@@ -46,7 +46,7 @@ Before you can use the supplier communications, your system must meet the follow
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
     - First, install *Copilot for finance and operations apps* version 1.0.03048.2 or later. If it's already installed, update it to the latest version.
     - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
-- Normally, the Microsoft Copilot Studio agents needed for supplier communications to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
+- Normally, the Microsoft Copilot Studio agents needed for supplier communications to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents are successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
     - *Supplier communications Agent - inbound*
     - *Supplier Communications Agent - outbound*.
 
@@ -58,6 +58,15 @@ Supplier communications interacts with Dataverse and Microsoft Copilot Studio to
 
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
+
+### Share Microsoft Copilot Studio bots with the agent identity user
+
+To give the agent identity user access to the required Copilot Studio bots, follow these steps:
+
+1. Open [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment.
+1. Find the following agents and share them with the agent identity user. (*End user access* permission should be sufficient to perform this action.)
+   - *Supplier Communications Agent - inbound*
+   - *Supplier Communications Agent - outbound*
 
 ### Set up agent identity users and assign security roles
 
@@ -88,7 +97,7 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
     - *System agent*
 
 > [!NOTE]
-> The *System agent* role in Supply Chain Management exempts the agent identity user from license enforcement. This means that you don't need to allocate a user license to the agent.
+> The *System agent* role in Supply Chain Management exempts the agent identity user from license enforcement. This exemption means that you don't need to allocate a user license to the agent.
 
 ### Create the required connections
 
@@ -156,7 +165,7 @@ Additionally, assign the roles described in the following subsections.
 
 ## Synchronize mailboxes with Dataverse
 
-To enable the email analysis and delivery features of supplier communications, you must set up targeted mailboxes so that they're synchronized with Dataverse at the server level.
+To enable the email analysis and delivery features of supplier communications, set up targeted mailboxes so that they're synchronized with Dataverse at the server level.
 
 ### Private mailbox
 
@@ -238,7 +247,7 @@ When you use the [review and apply purchase order changes received in vendor ema
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Create or select a vendor.
-1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send or forward test messages from).
+1. On the **Contact information** FastTab, add a row with your own email address (the one you send or forward test messages from).
 
 ## <a name="sample-script"></a>Activate the triggering Power Automate flows by using a PowerShell script
 
