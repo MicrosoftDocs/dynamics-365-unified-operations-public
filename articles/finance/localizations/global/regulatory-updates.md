@@ -33,6 +33,7 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| France | June 2026 | 10.0.49, also available in prior versions | Released [Electronic reporting of transactions for France (e-Reporting)](../france/emea-fra-e-reporting.md). |
 | Switzerland  | June 2026 | 10.0.49, also available in prior versions | Updated [VAT declaration for Switzerland](../switzerland/emea-che-vat-declaration-switzerland.md) -  Version 2.0.0. |
 | Netherlands  | June 2026 | 10.0.49, also available in prior versions | Updated [EU sales list for Netherlands](../netherlands/emea-nl-eu-sales-list.md) - Taxonomy NT20. |
 | Malaysia  | April 2026 | 10.0.48, also available in prior versions | Updated [SST-02 declaration for Malaysia](../apac/apac-mys-sst-declaration.md) - Sections 13d, 18c (points 1, 2, 3) and subsequent sections (18d, 18e). |
