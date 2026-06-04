@@ -31,7 +31,8 @@ originally published.
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 |Accounts receivable	|(Switzerland) Structured Addresses in QR-Bill|	This feature enables structured addresses (address type “S”) for both biller and debtor, with each address broken into its individual components. |	Feature management|
-| Budgeting | Allow cancelation of individual lines on General budget reservations | The feature enables users to cancel individual lines within a General budget reservation. By introducing line-level cancelation, users have the flexibility to manage budget reservations compliantly. If the line has been **Cancelled**, it's also considered **Finalized**. | Feature management 
+| Budgeting | Allow cancelation of individual lines on General budget reservations | The feature enables users to cancel individual lines within a General budget reservation. By introducing line-level cancelation, users have the flexibility to manage budget reservations compliantly. If the line has been **Cancelled**, it's also considered **Finalized**. | Feature management |
+|Organization administration | Multi-company purpose | Enables a searchable, hierarchical multi-company selector for depreciation and leasing jobs, streamlining setup, reducing errors, and improving speed and compliance.| Default |
 |Subscription billing| Performance improvements for subscription billing unbilled revenue batch (Preview) |	This feature enhances the subscription billing unbilled revenue mass processing in batch. The batch now processes subscription billing data in parallel, allowing each to run complete more efficiently.	|Feature management|
 |Subscription billing|	Transaction date for unbilled revenue recalculation	|The new **Transaction date** field introduces clearer separation between the posting intent and the recalculation date during unbilled revenue processing. This enhances control and mitigates incorrect updates when recalculation is performed outside the billing schedule range.|	Feature management||
 
@@ -73,6 +74,7 @@ The following table lists the features that became turned on by default in versi
 |Credits and collections| Collections process automation track step enhancement.| On by default|
 |Credits and collections | Aging snapshot performance improvement using pre-calculated sales total. (Preview)| Released|
 |Credits and collections|Enable general journals parameter for interest calculation process.| On by default|
+|Organization administration | Multi-company purpose | On by default |
 |Subscription billing |Use journal info from schedule line post-recognition. |Released|
 |Subscription billing |Project subscription billing deferral COGS adjustment.(Preview) |Released|
 |Subscription billing| Subscription billing deferral COGS adjustment. (Preview)| Released|
