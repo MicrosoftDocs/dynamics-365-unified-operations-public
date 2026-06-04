@@ -220,7 +220,41 @@ You don't need to change companies to access data from multiple operating units.
 
 ## Multi company processing for hierarchical legal entity selection
 
-To enable users with access to multiple companies to execute transactions, generate reports, or inquire transactions, assign the “Multi-company processing” purpose to one or more Organization hierarchies. In Dynamics 365 Finance version 10.0.44, go to **Feature Management** and activate **Multi-Company purpose**. This feature activates a hierarchical parent-child control for legal entity selection. The new multi-company control replaces the existing flat multi-selection list in **Fixed asset depreciation proposals**, **Asset leasing batch journal** creation, and Asset leasing reports.
+
+To enable users who have access to multiple companies to execute transactions, generate reports, and perform inquiries across legal entities, assign the **Multi-company processing** purpose to one or more organization hierarchies.
+This capability was introduced in Dynamics 365 Finance version **10.0.44**. Starting with version **10.0.47**, the feature is enabled by default.
+
+To enable the feature manually:
+
+1. Go to **Feature management**
+2. Enable **Multi-company purpose**
+
+The feature introduces a hierarchical parent-child legal entity selection experience, replacing the previous flat multi-selection company picker. This enhancement provides a more scalable and structured approach for cross-company operations and improves usability for organizations managing complex legal entity structures.
+
+### General Ledger Module
+- Currency revaluation
+- Year-end close
+
+### Fixed Assets Module
+- Fixed assets depreciation proposal
+
+### Asset Leasing Module
+- Asset leasing batch journal creation
+
+### Cash and Bank Module
+- Currency revaluation
+
+### Accounts Payable Module
+- Pending vendor invoice
+- Vendor invoice automation
+- Payment workspace (Vendor)
+- Global transaction
+
+### Accounts Receivable Module
+- Payment workspace (Customer)
+- Global transaction
+- Payment workspace
+
 
 ## Best practices for modeling organizations and hierarchies
 
