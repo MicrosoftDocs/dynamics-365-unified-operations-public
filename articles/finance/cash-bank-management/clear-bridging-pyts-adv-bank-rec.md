@@ -1,6 +1,6 @@
 ---
 title: Clear bridging payments using advanced bank reconciliation
-description: Learn how to clear bridge payments in advanced bank reconciliation in Microsoft Dynamics 365 Finance version 10.0.39, including prerequisites and various outlines.
+description: Learn how to clear bridge payments in advanced bank reconciliation in Microsoft Dynamics 365 Finance, including prerequisites and various outlines.
 author: mukumarm
 ms.author: mukumarm
 ms.topic: how-to
@@ -29,8 +29,7 @@ Before you use the **Automatic clear bridged transactions through advanced bank 
 
 ## Prerequisites
 
-- Turn on the **Automatic clear bridged transactions through advanced bank reconciliation** feature in the **Feature management** workspace.
-- Turn on the **Automatic clearing of centralized bridged vendor payments during bank reconciliation** feature in the **Feature management** workspace. This feature enables the clearing of bridged transactions created through centralized vendor payments by using bank reconciliation framework. This feature is available starting in **Dynamics 365 Finance version 10.0.48**.
+- In Feature management, turn on the **Automatic clearing of centralized bridged vendor payments during bank reconciliation** feature. This feature enables the clearing of bridged transactions created through centralized vendor payments by using bank reconciliation framework. This feature is available starting in Dynamics 365 Finance version 10.0.48.
 - Set the **Bridging account by bank account** parameter on the **Methods of payment** page.
 
   - If you turn on this parameter, the system uses the bridging account on the payment bank account as the offset account during payment journal posting.
