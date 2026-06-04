@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/11/2026
+ms.date: 06/08/2026
 ms.reviewer: johnmichalak
 ms.search.region: France
 ms.search.validFrom: 2023-04-10
