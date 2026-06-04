@@ -59,15 +59,6 @@ Supplier communications interacts with Dataverse and Microsoft Copilot Studio to
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
 
-### Share Microsoft Copilot Studio bots with the agent identity user
-
-To give the agent identity user access to the required Copilot Studio bots, follow these steps:
-
-1. Open [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment.
-1. Find the following agents and share them with the agent identity user. (*End user access* permission should be sufficient to perform this action.)
-   - *Supplier Communications Agent - inbound*
-   - *Supplier Communications Agent - outbound*
-
 ### Set up agent identity users and assign security roles
 
 Use the user management features for your tenant to create an *agent identity user*. Then assign the licenses and security roles described in the following subsections to that user.
@@ -98,6 +89,15 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
 
 > [!NOTE]
 > The *System agent* role in Supply Chain Management exempts the agent identity user from license enforcement. This exemption means that you don't need to allocate a user license to the agent.
+
+### Share Microsoft Copilot Studio bots with the agent identity user
+
+To give the agent identity user access to the required Copilot Studio bots, follow these steps:
+
+1. Open [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment.
+1. Find the following agents and share them with the agent identity user.
+   - *Supplier Communications Agent - inbound*
+   - *Supplier Communications Agent - outbound*
 
 ### Create the required connections
 
