@@ -4,7 +4,7 @@ description: When you analyze costs, you use cost element dimensions to determin
 author: AndersEvenGirke
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 05/27/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global

@@ -4,7 +4,7 @@ description: Access an overview of features that are related to handling and doc
 author: sgmsft
 ms.author: shwgarg
 ms.topic: overview
-ms.date: 06/10/2020
+ms.date: 5/21/2026
 ms.reviewer: kamaybac
 ms.search.form:
 ---
@@ -13,19 +13,19 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-To remain compliant with shipping and transport regulations, organizations that ship materials that are classified as dangerous goods must include additional paperwork with their shipments. The hazardous materials feature lets customers store information that is related to released items. This information can then be used to help prepare shipping documentation. An organization that ships dangerous goods must have its own processes and procedures for managing the shipping process. Microsoft Dynamics 365 Supply Chain Management is just a tool that can help generate the required documents.
+To remain compliant with shipping and transport regulations, organizations that ship materials classified as dangerous goods must include additional paperwork with their shipments. The hazardous materials feature lets you store information related to released items. Use this information to help prepare shipping documentation. An organization that ships dangerous goods must have its own processes and procedures for managing the shipping process. Microsoft Dynamics 365 Supply Chain Management is just a tool that can help generate the required documents.
 
 The following diagram illustrates the steps needed to set up and use the hazardous materials feature.
 
 ![Setup and use of the hazardous materials feature.](media/hazmat-overview.png "Setup and use of the hazardous materials feature")
 
-The hazardous materials feature is set up in Product information management and provides documents that can be printed through Warehouse management. Therefore, broadly speaking, those areas are the two main areas where you will review, set up, and use this feature's functionality:
+Set up the hazardous materials feature in Product information management. You can print the documents through Warehouse management. Therefore, broadly speaking, those areas are the two main areas where you review, set up, and use this feature's functionality:
 
-- **Product information management** – Set up the codes that will be applied to a released product.
-- **Warehouse management** – Work with additional shipping documents that will be printed for shipments.
+- **Product information management** – Set up the codes that are applied to a released product.
+- **Warehouse management** – Work with additional shipping documents that are printed for shipments.
 
 > [!IMPORTANT]
-> The hazardous materials features in Supply Chain Management provide a collection of useful product information fields and related functionality that can help you record and reference information that is related to your hazardous products. These features can also help you design and print shipment documents that include some of the same information about any hazardous materials that you're shipping. However, the system won't automatically make you compliant with all applicable regulations in your country or region. Although these tools are intended to help you comply with common regulations, they are neither sufficient in themselves nor guaranteed to be so. Your organization is responsible for being aware of all applicable regulations and for taking all necessary steps to comply with them.
+> The hazardous materials features in Supply Chain Management provide a collection of useful product information fields and related functionality that can help you record and reference information related to your hazardous products. These features can also help you design and print shipment documents that include some of the same information about any hazardous materials that you're shipping. However, the system doesn't automatically make you compliant with all applicable regulations in your country or region. Although these tools are intended to help you comply with common regulations, they're neither sufficient in themselves nor guaranteed to be so. Your organization is responsible for being aware of all applicable regulations and for taking all necessary steps to comply with them.
 
 ## Product information management
 
@@ -33,8 +33,8 @@ Product information management provides a range of setup tables where you can en
 
 The following common regulations were referenced when this functionality was developed:
 
-- **ADR** – Regulations that are related to the international carriage of dangerous goods by road
-- **CFR 49** – Regulations in the United Sates for the carriage of dangerous goods
+- **ADR** – Regulations related to the international carriage of dangerous goods by road
+- **CFR 49** – Regulations in the United States for the carriage of dangerous goods
 - **IMDG** – The International Marine Dangerous Goods (IMDG) code
 - **IATA** – The International Air Transport Association (IATA) dangerous goods regulations
 
@@ -47,7 +47,6 @@ For more information about how to set up regulations and values for hazardous ma
 
 ## Warehouse management
 
-When you prepare a shipment in Warehouse management, you will be able to print several new reports that use the information that you set up in Product information management. For more information about the available reports and how to use them, see [Hazardous materials inquiries and reports](hazmat-reports.md).
-
+When you prepare a shipment in Warehouse management, you can print several new reports that use the information you set up in Product information management. For more information about the available reports and how to use them, see [Hazardous materials inquiries and reports](hazmat-reports.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

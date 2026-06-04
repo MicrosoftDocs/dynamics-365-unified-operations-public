@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> The Asset Management mobile app is now provided on GitHub as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). It provides the same functionality as the original app and is freely customizable. For timeline and transition guidance, see [Asset Management mobile app open-source release](/dynamics365/supply-chain/asset-management/asset-management-mobile-app/open-source-release).

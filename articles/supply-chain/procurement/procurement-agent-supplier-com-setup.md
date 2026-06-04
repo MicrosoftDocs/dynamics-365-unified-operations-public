@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 05/07/2026
+ms.date: 06/02/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -46,7 +46,7 @@ Before you can use the supplier communications features of the Procurement Agent
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
     - First, install *Copilot for finance and operations apps* version 1.0.03048.2 or later. If it's already installed, update it to the latest version.
     - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
-- Normally, the Microsoft Copilot Studio agents needed for supplier communications to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
+- Normally, the Microsoft Copilot Studio agents needed for supplier communications to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents are successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
     - *Supplier communications Agent - inbound*
     - *Supplier Communications Agent - outbound*.
 
@@ -88,7 +88,23 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
     - *System agent*
 
 > [!NOTE]
-> The *System agent* role in Supply Chain Management exempts the agent identity user from license enforcement. This means that you don't need to allocate a user license to the agent.
+> The *System agent* role in Supply Chain Management exempts the agent identity user from license enforcement. This exemption means that you don't need to allocate a user license to the agent.
+
+### Share Microsoft Copilot Studio agents with the agent identity user
+
+The agent identity user needs access to the following Copilot Studio agents:
+
+- *Supplier Communications Agent - inbound*
+- *Supplier Communications Agent - outbound*
+
+To grant the required permissions, follow these steps:
+
+1. Open [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment.
+1. Select **Agents** in the left navigation pane.
+1. Find and open the agent named *Supplier Communications Agent - inbound*.
+1. Select the ellipsis button (**…**) at the top right of the agent details page to open a dropdown menu. Select **Share** from the menu.
+1. Add your agent identity user to the share list and give them *End user access* permission. Learn more in [Share agents with other users](/microsoft-copilot-studio/admin-share-bots).
+1. Repeat steps 2-5 for the agent named *Supplier Communications Agent - outbound*.
 
 ### Create the required connections
 
@@ -156,7 +172,7 @@ Additionally, assign the roles described in the following subsections.
 
 ## Synchronize mailboxes with Dataverse
 
-To enable the email analysis and delivery features of supplier communications, you must set up targeted mailboxes so that they're synchronized with Dataverse at the server level.
+To enable the email analysis and delivery features of supplier communications, set up targeted mailboxes so that they're synchronized with Dataverse at the server level.
 
 ### Private mailbox
 
@@ -238,7 +254,7 @@ When you use the [review and apply purchase order changes received in vendor ema
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Create or select a vendor.
-1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send or forward test messages from).
+1. On the **Contact information** FastTab, add a row with your own email address (the one you send or forward test messages from).
 
 ## <a name="sample-script"></a>Activate the triggering Power Automate flows by using a PowerShell script
 
