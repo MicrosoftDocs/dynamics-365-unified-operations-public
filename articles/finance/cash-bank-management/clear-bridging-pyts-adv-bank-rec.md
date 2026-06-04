@@ -1,10 +1,10 @@
 ---
 title: Clear bridging payments using advanced bank reconciliation
 description: Learn how to clear bridge payaments in advanced bank reconciliation in Microsoft Dynamics 365 Finance version 10.0.39, including prerequisites and various outlines.
-author: EricWangChen
-ms.author: wangchen
+author: mukumarm
+ms.author: mukumarm
 ms.topic: how-to
-ms.date: 05/27/2025
+ms.date: 04/06/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
