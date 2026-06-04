@@ -74,7 +74,6 @@ The following table lists the features that became turned on by default in versi
 |Credits and collections| Collections process automation track step enhancement.| On by default|
 |Credits and collections | Aging snapshot performance improvement using pre-calculated sales total. (Preview)| Released|
 |Credits and collections|Enable general journals parameter for interest calculation process.| On by default|
-|Organization administration | Multi-company purpose | On by default |
 |Subscription billing |Use journal info from schedule line post-recognition. |Released|
 |Subscription billing |Project subscription billing deferral COGS adjustment.(Preview) |Released|
 |Subscription billing| Subscription billing deferral COGS adjustment. (Preview)| Released|
