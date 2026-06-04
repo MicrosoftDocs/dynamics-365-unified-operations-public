@@ -95,7 +95,7 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
 To give the agent identity user access to the required Copilot Studio bots, follow these steps:
 
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment.
-1. Find the following agents and share them with the agent identity user.
+1. Find the following agents and then open each one of them separately. Then, select the three dots (…) on the top right corner, and then select _Share_. Finally, add your agent identity user and provide them _End User Access_ to the agent. Find more details about sharing [here](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-share-bots?tabs=web) 
    - *Supplier Communications Agent - inbound*
    - *Supplier Communications Agent - outbound*
 
