@@ -90,9 +90,9 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
 > [!NOTE]
 > The *System agent* role in Supply Chain Management exempts the agent identity user from license enforcement. This exemption means that you don't need to allocate a user license to the agent.
 
-### Share Microsoft Copilot Studio bots with the agent identity user
+### Share Microsoft Copilot Studio agents with the agent identity user
 
-The agent identity user needs access to the following Copilot Studio bots:
+The agent identity user needs access to the following Copilot Studio agents:
 
 - *Supplier Communications Agent - inbound*
 - *Supplier Communications Agent - outbound*
@@ -101,10 +101,10 @@ To grant the required permissions, follow these steps:
 
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment.
 1. Select **Agents** in the left navigation pane.
-1. In the **My agents** list, find the agent named *Supplier Communications Agent - inbound*.
-1. Hover the mouse cursor over the agent name in the **Name** column and select the ellipsis button (…) at the right side of the column to open a dropdown menu. Select **Share** from the menu.
-1. In the **New users** section of the **Share** dialog, add your agent identity user, and provide them with **End user access** permission. Then select **Share**. Learn more in [Share agents with other users](/microsoft-copilot-studio/admin-share-bots).
-1. Repeat steps 3-5 for the agent named *Supplier Communications Agent - outbound*.
+1. Find and open the agent named *Supplier Communications Agent - inbound*.
+1. Select the ellipsis button (**…**) at the top right of the agent details page to open a dropdown menu. Select **Share** from the menu.
+1. Add your agent identity user to the share list and give them *End user access* permission. Learn more in [Share agents with other users](/microsoft-copilot-studio/admin-share-bots).
+1. Repeat steps 2-5 for the agent named *Supplier Communications Agent - outbound*.
 
 ### Create the required connections
 
