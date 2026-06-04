@@ -40,8 +40,8 @@ In the following table:
 
 | Release version | Preview availability | Preview latest possible update| General availability (self-update) | First autoupdate schedule for production start date | Second autoupdate schedule for production start date |End of service |
 |---|---|---|---|---|---|---|
-|CY27Q2: |10.0.51*|	1/25/2027|	2/15/2027	|3/12/2027|	4/2/2027|	4/30/2027|	11/19/2027|
-|CY27Q1:| 10.0.50	|10/23/2026	|11/17/2026|	12/22/2026|	1/31/2027	|2/28/2027|	8/20/2027|
+|CY27Q2: 10.0.51*|	January 25, 2027|	February 15, 2027	|March 12, 2027|	April 2, 2027|	April 30, 2027|	November 19, 2027|
+|CY27Q1: 10.0.50	|October 23, 2026	|November 17, 2026|	December 22, 2026|	January 31, 2027	| February 28, 2027|	August 20, 2027|
 | CY26Q4: 10.0.49\* | July 27, 2026 | August 17, 2026 | September 11, 2026 | October 2, 2026 |  November 1, 2026 |May 21, 2027 |
 | CY26Q3: 10.0.48 | April 24, 2026 | May 11, 2026 | June 5, 2026 | July 3, 2026 | July 31, 2026 | February 16, 2027 |
 | CY26Q2: 10.0.47\* | January 26, 2026 | February 16, 2026 | March 13, 2026 | April 3, 2026 | May 1, 2026 |November 20, 2026 |
