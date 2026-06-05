@@ -2,9 +2,9 @@
 title: Cash application in advanced bank reconciliation
 description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and step-by-step processes.
 author: music727
-ms.author: mibeinar
+ms.author: mukumarm
 ms.topic: how-to
-ms.date: 03/30/2026
+ms.date: 05/30/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -27,8 +27,9 @@ The app might show customer or vendor payments on bank statements. This feature 
 - Turn on the **Modern bank reconciliation** feature in the **Feature management** workspace.
 - Set up the default customer payment journal name and the default vendor payment journal name for the bank account.
 - Import a bank statement.
-- As of version 10.0.42, if you enable the **Enable prepayment and posting profile when generating payment journal in advanced bank reconciliation** feature, a prepayment option and a posting profile option are available when you generate a customer payment journal and a vendor payment journal from the bank reconciliation worksheet. You can also configure those two options in the setup of reconciliation matching rules.
-- As of version 10.0.42, if the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are enabled in advanced bank reconciliation.
+- Starting in Microsoft Dynamics 365 Finance version 10.0.42, if you enable the **Enable prepayment and posting profile when generating payment journal in advanced bank reconciliation** feature, a prepayment option and a posting profile option are available when you generate a customer payment journal and a vendor payment journal from the bank reconciliation worksheet. You can also configure those two options in the setup of reconciliation matching rules.
+- Starting in Dynamics 365 Finance version 10.0.42, if the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are enabled in advanced bank reconciliation.
+- Starting in Dynamics 365 Finance version 10.0.48, when the **Enable cash discounts for settling customer invoice matching rules for bank reconciliation for bank reconciliation** feature is enabled, advanced bank reconciliation applies customers cash discounts during automatic settlement of customer invoices through reconciliation matching rules. The process evaluates eligible discounts during execution of the Settle customer invoices reconciliation rules and applies them consistently, aligning with the behavior of manual settlements.
 
 > [!NOTE]
 > When you apply cash in advanced bank reconciliation, only journal names without approval workflow are supported.
@@ -72,6 +73,7 @@ To use matching rules to automatically settle open customer invoices, including 
     - **Default bank transaction type**
     - **Accounting date**
     - **Financial dimensions**
+    - **Apply cash discount**
 
 1. Select **Save** and then **Activate**.
 1. (Optional) Include the matching rule in matching rule sets.
@@ -82,7 +84,7 @@ To use matching rules to automatically settle open customer invoices, including 
 1. Select **OK** to run the automatic matching.
 
 > [!IMPORTANT]
-> If you enable the **Enable cash discount support for settle customer invoice matching rules** feature, the system supports automatic application of customer cash discounts during bank reconciliation settlement when customer invoices are settled through reconciliation rules. This enhancement ensures that cash discounts are applied consistently, whether invoices are settled manually or automatically through bank reconciliation, eliminating residual open balances caused by unapplied discounts.
+> If you enable the **Enable cash discounts for settling customer invoice matching rules for bank reconciliation for bank reconciliation** feature, the system supports automatic application of customer cash discounts during bank reconciliation settlement when customer invoices are settled through reconciliation rules. This enhancement ensures that cash discounts are applied consistently, whether invoices are settled manually or automatically through bank reconciliation, eliminating residual open balances caused by unapplied discounts.
 > A new parameter is available on the **Settle customer invoice** bank reconciliation rule that defines if invoice cash discounts are applied. When the **Search for invoice cash discount** field is set to **Yes**, the reconciliation process evaluates whether a cash discount applies during settlement.
 > If a grace period is defined on the **Method of payment** selected during invoice posting, it's also taken into consideration when applying cash discount.
 

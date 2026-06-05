@@ -3,7 +3,7 @@ title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.date: 04/29/2026
+ms.date: 06/04/2026
 ms.topic: article
 ms.custom: 
   - bap-template
@@ -33,6 +33,9 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| France | June 2026 | 10.0.49, also available in prior versions | Released [Electronic reporting of transactions for France (e-Reporting)](../france/emea-fra-e-reporting.md). |
+| Switzerland  | June 2026 | 10.0.49, also available in prior versions | Updated [VAT declaration for Switzerland](../switzerland/emea-che-vat-declaration-switzerland.md) -  Version 2.0.0. |
+| Netherlands  | June 2026 | 10.0.49, also available in prior versions | Updated [EU sales list for Netherlands](../netherlands/emea-nl-eu-sales-list.md) - Taxonomy NT20. |
 | Malaysia  | April 2026 | 10.0.48, also available in prior versions | Updated [SST-02 declaration for Malaysia](../apac/apac-mys-sst-declaration.md) - Sections 13d, 18c (points 1, 2, 3) and subsequent sections (18d, 18e). |
 | Brazil | April 2026 | 10.0.47, also available in prior versions | Regulatory update to extend [NFS-e support](../brazil/brazil-nfs-e-service-invoices-projects.md) for project-based invoicing scenarios, enabling compliant XML generation for São Paulo and Federal NFS-e formats. Includes NBS field, service location attributes, tax estimation percentages, and updates to ER configurations for fiscal document mapping. |
 | Italy | March 2026 | 10.0.48, also available in prior versions | Updated [Unique certification](../italy/emea-ita-exil-unique-certification.md) (Certificazione Unica) form aligned with the provision of January 15, 2026 (Prot. n. 9454/2026) for tax year 2025. |
