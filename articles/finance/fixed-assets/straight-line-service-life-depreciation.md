@@ -43,6 +43,8 @@ If you select **Calendar**, the following options are available in the **Period 
 - **Quarterly** posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).
 - **Half-yearly** posts a half-yearly amount at the end of each calendar half year (June 30 and December 31).
 - **Daily** posts the depreciation amount for the daily depreciation method by using one transaction for each day.
+>[!NOTE]
+> The **Daily** period frequency is only available for specific localizations.
 
 For example, if you select **Yearly**, the yearly depreciation posts only one time, on December 31 of each year. If you select **Monthly**, the monthly depreciation posts each month as 1/12 of the yearly depreciation amount.
 
