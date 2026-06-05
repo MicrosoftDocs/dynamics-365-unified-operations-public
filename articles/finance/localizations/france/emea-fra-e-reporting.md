@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # France e-reporting (electronic reporting of transactions)
 
-## Overview
+[!include [banner](../../includes/banner.md)]
 
 France e-reporting (transmission des données de transaction) is part of the French continuous transaction control (Réforme de la facturation électronique) reform that requires companies to report specific business transactions to the French tax authorities through an approved intermediary platform.
 In Dynamics 365 Finance, the France e-reporting feature enables organizations to:
@@ -39,7 +39,7 @@ E-reporting complements e-invoicing by ensuring that the tax authorities receive
 
 ## Feature availability
 
-France e-reporting functionality is available starting from Dynamics 365 Finance version **10.0.49**.
+France e-reporting functionality is available starting from Finance version **10.0.49**.
 
 The feature is also available in earlier versions 10.0.47 and 10.0.48 through specific application builds. Availability in these versions depends on the deployed build and update level.
 
@@ -73,7 +73,7 @@ Optionally, you can [set up France e-Reporting to report in multiple VAT registr
 
 ### <a id="configurations"></a>Import and configure ER configurations
 
-To prepare Finance to France e-reporting, import the following ER configurations.
+To prepare Finance for France e-reporting, import the following ER configurations.
 
 | ER configuration name | Type | Description|
 |-----------------------|------|-------------|
@@ -81,11 +81,10 @@ To prepare Finance to France e-reporting, import the following ER configurations
 | e-Reporting Model mapping | Model mapping | A generic model mapping that provides model mapping for e-reporting based on Electronic Messaging (EM). |
 | e-Reporting XML (FR) |Format (exporting) | XML format for France e-reporting. |
 
-Import the latest versions of these configurations.
-The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
-Use the number of the KB in the [LCS Issue search portal](https://lcs.dynamics.com/v2) to learn more about the changes introduced.
-If the latest configuration version contains references to the objects that aren't available in your Finance version, the import process locks for that configuration version.
-In this case, import the latest version of the configuration that's available for your Finance version.
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
+
+Use the number of the KB in the [Dynamics 365 Lifecycle Services Issue search portal](https://lcs.dynamics.com/v2) to learn more about the changes introduced.
+If the latest configuration version contains references to the objects that aren't available in your Finance version, the import process locks for that configuration version. In this case, import the latest version of the configuration that's available for your Finance version.
 
 > [!NOTE]
 > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **e-Reporting Model mapping** configuration.
@@ -107,7 +106,7 @@ The following values are supported:
 - TNT1: Transactions – Non-territorial / outside VAT scope
 - TMA1: Transactions – Mixed / aggregated categories
 
-Configure the **TransCategoryCodeLookup**:
+To configure the **TransCategoryCodeLookup**, follow these steps:
 
 1. In the configuration tree, under the **Invoices Communication Model**, select the **e-Reporting XML (FR)** format.
 1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -120,12 +119,11 @@ Configure the **TransCategoryCodeLookup**:
 ### <a id="data-entities"></a>Import a package of data entities that includes a predefined EM setup
 
 Setting up the [Electronic messages](../../general-ledger/electronic-messaging-setup.md) (EM) functionality for France e-reporting involves many steps.
-Because the ER configurations use the names of some predefined entities, use a set of predefined values that are delivered in a package of data entities for the related tables.
-Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations](#configurations) into Finance.
+Because the ER configurations use the names of some predefined entities, use a set of predefined values that are delivered in a package of data entities for the related tables. Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations](#configurations) into Finance.
 
 To import a package of data entities, follow these steps:
 
-1. In [LCS](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. Then find `FR eReporting EM setup v.1 ID1103856.zip` in the list of data package files, and download it to your computer.
+1. In [Lifecycle Services](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. Then find `FR eReporting EM setup v.1 ID1103856.zip` in the list of data package files, and download it to your computer.
 1. After the `FR eReporting EM setup v.1 ID1103856.zip` file is downloaded, in Finance, select the company that you want to work with France e-reporting, and then go to **Workspaces** \> **Data management**.
 1. Before you import setup data from the package of data entities, make sure that the data entities in your application are refreshed and synced. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh is complete. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
 1. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
@@ -146,22 +144,22 @@ In the context of France e-reporting processing, an electronic message represent
 
 Each electronic message:
 
-- Corresponds to one structured XML report
-- Contains a collection of transactions and payment data
-- Is generated based on the selected reporting scope and period
-- Serves as the unit of processing within the **Electronic Messages** framework
+- Corresponds to one structured XML report.
+- Contains a collection of transactions and payment data.
+- Is generated based on the selected reporting scope and period.
+- Serves as the unit of processing within the **Electronic Messages** framework.
 
 Within the system:
 
-- The electronic message acts as a container for reporting data
-- Individual transactions and payment records are represented as message items
-- All message items are aggregated into one output file during report generation
+- The electronic message acts as a container for reporting data.
+- Individual transactions and payment records are represented as message items.
+- All message items are aggregated into one output file during report generation.
 
 This structure allows you to:
 
-- Group transactions into a single report
-- Track processing status at the report level
-- Maintain traceability between source transactions and the generated reporting output
+- Group transactions into a single report.
+- Track processing status at the report level.
+- Maintain traceability between source transactions and the generated reporting output.
 
 ### <a id="set-up-em-parameters"></a>Set up EM parameters for the France e-reporting
 
@@ -178,14 +176,16 @@ The configuration includes:
 
 Message additional fields define values that apply to the entire electronic message and are included in the generated output.
 
+To set up message additional fields, follow these steps:
+
 1. Open the **Electronic messages processing** setup.
 1. Select the **FR e-Reporting** processing.
 1. Go to the **Message additional fields** section.
 1. Set the default values for the following additional fields:
 
-- FR-eRep SenderId: specifies the identifier of the reporting entity
-- FR-eRep SenderName: specifies company name of the issuer of the transmission document
-- FR-eRep TypeCode: specifies the type of report. The following values are available: IN - Initiale (default value), RE - Rectificative.
+   - FR-eRep SenderId: specifies the identifier of the reporting entity.
+   - FR-eRep SenderName: specifies company name of the issuer of the transmission document.
+   - FR-eRep TypeCode: specifies the type of report. The following values are available: IN - Initiale (default value), RE - Rectificative.
 
 Enter the appropriate default values based on your reporting requirements. The system uses these values as header-level information in the generated report.
 
@@ -193,13 +193,15 @@ Enter the appropriate default values based on your reporting requirements. The s
 
 Message item additional fields define values at the transaction level (message item level).
 
+To set up message item additional fields, follow these steps:
+
 1. In the same processing setup, go to the **Message item additional fields** section.
 1. Set fields for each relevant message item type. The default configuration defines the following values:
 
-| Message item type| Field name | Default value |
-|-----|-----|-----|
-| FR-eRep Transactions B2C | FR-eRep TaxDueDateTypeCode | 3 |
-| FR-eRep Transactions Invoice | FR-eRep TaxDueDateTypeCode | 3 |
+   | Message item type| Field name | Default value |
+   | ----- | ----- | ----- |
+   | FR-eRep Transactions B2C | FR-eRep TaxDueDateTypeCode | 3 |
+   | FR-eRep Transactions Invoice | FR-eRep TaxDueDateTypeCode | 3 |
 
 The **FR e-Reporting** processing supports the following values for **FR-eRep TaxDueDateTypeCode**:
 
@@ -212,24 +214,26 @@ These fields populate transaction-level attributes in the generated output.
 
 Electronic Messages uses processing actions that require parameter configuration.
 
+To set up parameters for actions, follow these steps:
+
 1. Open the **Electronic message processing** page and select the **FR e-reporting** processing.
 1. Select **Action parameters** to configure parameters for the following actions:
 
-- FR-eRep Generate Full Report
-- FR-eRep Generate Payments Report
-- FR-eRep Generate Transactions Report
-- FR-eRep Regenerate Report File
+   - FR-eRep Generate Full Report
+   - FR-eRep Generate Payments Report
+   - FR-eRep Generate Transactions Report
+   - FR-eRep Regenerate Report File
 
-| Parameter name                         | Parameter value                 |
-|----------------------------------------|---------------------------------|
+| Parameter name                         | Parameter value                |
+| -------------------------------------- | ------------------------------ |
 | Additional field for Sender ID         | FR-eRep SenderId               |
 | Additional field for Sender name       | FR-eRep SenderName             |
 | Additional field for VAT payment type  | FR-eRep TaxDueDateTypeCode     |
 | Additional field for Type code         | FR-eRep TypeCode               |
-| Message item type for Payments report type - Invoice  | FR-eRep Payments Invoice       |
+| Message item type for Payments report type - Invoice  | FR-eRep Payments Invoice           |
 | Message item type for Payments report type - Transactions | FR-eRep Payments B2C           |
 | Message item type for Transactions report type - Invoice  | FR-eRep Transactions Invoice   |
-| Message item type for Transactions report type - Transactions | FR-eRep Transactions B2C       |
+| Message item type for Transactions report type - Transactions | FR-eRep Transactions B2C   |
 
 Proper configuration ensures that the system correctly collects and processes data during report generation.
 
@@ -248,9 +252,9 @@ Two executable classes are involved in **FR e-reporting** processing:
 
 The **FR‑eRep PopulateMessageItems** executable class performs the data collection and preparation step of the process. It:
 
-- Retrieves transaction and payment data from multiple data sources in Dynamics 365 Finance
-- Aggregates and organizes the data according to reporting requirements
-- Creates and populates electronic message items based on the collected data
+- Retrieves transaction and payment data from multiple data sources in Finance.
+- Aggregates and organizes the data according to reporting requirements.
+- Creates and populates electronic message items based on the collected data.
 - Defines relevant values of additional fields for created message items.
 
 During execution, the class:
@@ -272,16 +276,16 @@ Each message item type represents a specific reporting scenario and determines h
 
 Within the **FR e-reporting** processing:
 
-- The **FR‑eRep PopulateMessageItems** executable class is triggered during the data collection action
-- It produces the message items that serve as the input for report generation
-- The generated message items are later used to produce the structured output
+- The **FR‑eRep PopulateMessageItems** executable class is triggered during the data collection action.
+- It produces the message items that serve as the input for report generation.
+- The generated message items are later used to produce the structured output.
 
 After this class executes:
 
-- The electronic message items are created in the **Electronic message items** table according to the **FR‑eRep PopulateMessageItems** executable class parameters
-- Each message item represents a transaction or aggregated data set
-- All the relevant values of message item additional fields are calculated for created message items
-- The system is ready to proceed to the report generation step
+- The system creates electronic message items in the **Electronic message items** table based on the **FR‑eRep PopulateMessageItems** executable class parameters.
+- Each message item represents a transaction or aggregated data set.
+- The system calculates all relevant values for message item additional fields for the created message items.
+- The system is ready to proceed to the report generation step.
 
 To set up **FR-eRep PopulateMessageItems** executable class parameters, select the **Parameters** button on the Action pane.
 
@@ -313,31 +317,31 @@ When the process runs, it evaluates the filters during data selection and retrie
 The **FR‑eRep GenerateReportFile** executable class generates the e‑reporting XML output based on the data collected in electronic message items.
 This class performs the report generation step of the process. It:
 
-- Reads electronic message items created during the data collection step
-- Organizes the data according to the reporting structure
+- Reads electronic message items created during the data collection step.
+- Organizes the data according to the reporting structure.
 - Produces a structured output file that represents the electronic message in XML format.
 
 During execution, the **FR‑eRep GenerateReportFile** class:
 
-- Retrieves the electronic message items to process
-- Applies the reporting structure and mappings
-- Generates a structured XML output file
+- Retrieves the electronic message items to process.
+- Applies the reporting structure and mappings.
+- Generates a structured XML output file.
 
 The generated file represents:
 
-- One reporting document for the reporting period
-- A collection of transactions and/or payment data
+- One reporting document for the reporting period.
+- A collection of transactions and/or payment data.
 
 Within the **FR e-reporting** processing:
 
-- The generate report action triggers the class
-- It transforms message items into a consumable report format
-- It prepares the output file for further processing outside the system
+- The generate report action triggers the class.
+- It transforms message items into a consumable report format.
+- It prepares the output file for further processing outside the system.
 
 After this class executes:
 
-- A structured XML output file is generated for the electronic message
-- The file contains all relevant transactions and/or payment data
+- A structured XML output file is generated for the electronic message.
+- The file contains all relevant transactions and payment data.
 
 The settings of this class control the execution of logic that drives data collection, processing, and output generation.
 
@@ -346,7 +350,7 @@ The settings of this class control the execution of logic that drives data colle
 | Transactions report type | Invoice                          | FR-eRep Transactions Invoice     |
 | Transactions report type | Transaction                      | FR-eRep Transactions B2C         |
 | Transactions report type | Status to Pending                | FR-eRep Transaction Entry Pending|
-| Transactions report type | Status to Excluded                | FR-eRep Transaction Entry Excluded|
+| Transactions report type | Status to Excluded               | FR-eRep Transaction Entry Excluded|
 | Payments report type     | Invoice                          | FR-eRep Payments Invoice         |
 | Payments report type     | Transaction                      | FR-eRep Payments B2C             |
 | Payments report type     | Status to Pending                | FR-eRep Payment Entry Pending  |
@@ -361,16 +365,16 @@ In this scenario, you must group and report transactions per VAT registration, r
 
 As a result:
 
-- All reporting-relevant records contain the VAT registration context
-- The system can distinguish transactions belonging to different registrations
+- All reporting-relevant records contain the VAT registration context.
+- The system can distinguish transactions belonging to different registrations.
 
 To report data for a specific VAT registration, configure filters in the **FR‑eRep PopulateMessageItems** executable class parameters.
 For example, apply a filter on fields that contain the VAT registration identifier or use conditions that correspond to your tax registration setup.
 
 Only records that match the filter criteria are:
 
-- Retrieved from source tables
-- Converted into electronic message items
+- Retrieved from source tables.
+- Converted into electronic message items.
 - Included in the generated report.
 
 ## Use Electronic messages (EM) functionality to report France e-reporting
@@ -422,7 +426,9 @@ To report France e-reporting data, follow these steps.
 
 #### Populate data
 
-1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
+To populate data, follow these steps:
+
+1. In Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 1. On the Action Pane, select **Run processing**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. Select the **Choose action** checkbox, and then, in the **Action** field, select the **FR-eRep Populate Report Data** action.
@@ -436,7 +442,9 @@ After data is populated, you can control which records are included in the repor
 - Use **FR-eRep Exclude Transaction Entry** or **FR-eRep Exclude Payment Entry** actions to remove entries from the report or postpone their reporting.
 - Use **FR-eRep Reactivate Transaction Entry** or **FR-eRep Reactivate Payment Entry** to include entries again in the report to be generated.
 
-1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
+To review e-reporting entries, follow these steps:
+
+1. In Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 1. On the Action Pane, select **Update status**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. In the **Action** field, select relevant action.
@@ -444,7 +452,7 @@ After data is populated, you can control which records are included in the repor
 
 This step ensures that only relevant data is included in the final report.
 
-#### Generate report
+#### Generate reports
 
 You can generate different report outputs depending on your reporting needs:
 
@@ -452,7 +460,9 @@ You can generate different report outputs depending on your reporting needs:
 - FR-eRep Generate Payments Report – payments only
 - FR-eRep Generate Full Report – combined report
 
-1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
+To generate reports, follow these steps:
+
+1. In Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 1. On the Action Pane, select **Run processing**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. Select the **Choose action** checkbox, and then, in the **Action** field, select one of the actions: **FR-eRep Generate Full Report**, **FR-eRep Generate Transactions Report**, or **FR-eRep Generate Payments Report**.
@@ -463,11 +473,13 @@ The action log related to the electronic message log information about the user 
 
 When you generate an XML file for the FR e-Reporting, you attach it to the electronic message. To view the file, select the electronic message, and select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
 
-#### Regenerate report
+#### Regenerate reports
 
 Use **FR-eRep Regenerate Report File** if you need to submit a corrected report after you already submitted the original report.
 
-1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
+To regenerate reports, follow these steps:
+
+1. In Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
 1. For the **FR e-Reporting** processing, find and select the electronic message that you previously submitted.
 1. Expand the **Additional fields** FastTab and select the **FR-eRep TypeCode** additional field. Select **RE** value (Rectificative) for the **FR-eRep TypeCode** additional field.
 1. Select **Generate report** button on the **Messages** FastTab to regenerate the report.
@@ -478,8 +490,12 @@ When you generate an XML file for the FR e-Reporting, you attach it to the elect
 
 Use **FR-eRep Mark Report as Submitted** to complete the process. This action changes the electronic message status to **FR-eRep Report Submitted**, indicating that the report is successfully submitted to the French tax authorities through an approved intermediary platform.
 
-1. In Dynamics 365 Finance, go to **Tax > Inquiries and reports > Electronic messages > Electronic message**.
+To finalize reporting, follow these steps:
+
+1. In Finance, go to **Tax > Inquiries and reports > Electronic messages > Electronic message**.
 1. On the Action Pane, select **Update status**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. In the **Action** field, select the **FR-eRep Mark Report as Submitted** action.
 1. In the **New status** field, select the **FR-eRep Report Submitted** status to apply to the selected message.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
