@@ -53,14 +53,14 @@
 /articles/fin-and-ops/imp-lifecycle	@johnmichalak
 /articles/fin-and-ops/organization-administration	@johnmichalak
 /articles/human-resources @twheeloc
-/articles/commerce	@johnmichalak
-/articles/commerce/dev-itpro  @johnmichalak
-/articles/commerce/e-commerce-extensibility	@johnmichalak
-/articles/commerce/get-started	@johnmichalak
-/articles/commerce/localizations	@johnmichalak
-/articles/commerce/includes	@johnmichalak
-/articles/commerce/media	@johnmichalak
-/articles/commerce/tasks	@johnmichalak
+/articles/commerce	@johnmichalak @miraoms
+/articles/commerce/dev-itpro  @johnmichalak @miraoms
+/articles/commerce/e-commerce-extensibility	@johnmichalak @miraoms
+/articles/commerce/get-started	@johnmichalak @miraoms
+/articles/commerce/localizations	@johnmichalak @miraoms
+/articles/commerce/includes	@johnmichalak @miraoms
+/articles/commerce/media	@johnmichalak @miraoms
+/articles/commerce/tasks	@johnmichalak @miraoms
 /articles/supply-chain @kamaybac
 /articles/supply-chain/asset-management @kamaybac
 /articles/supply-chain/cost-management  @kamaybac
