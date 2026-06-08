@@ -1,10 +1,10 @@
 ---
 title: Available telemetry
-description: Get an overview of the telemetry that is available in the Monitoring and telemetry feature.
+description: Get an overview of the telemetry that's available in the Monitoring and telemetry feature.
 author: rijoshi1 
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/03/2026
+ms.date: 05/29/2026
 ms.author: rijoshi 
 ms.reviewer: twheeloc
 ms.custom: bap-template
@@ -33,7 +33,7 @@ Use this data to:
 
 ### Resources
 
-- Plug-and-play dashboard: [Forms Telemetry Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Forms)
+- Plug-and-play dashboard: [Forms telemetry Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Forms)
 
 ## X++ exceptions
 
@@ -96,23 +96,19 @@ By using batch telemetry, you can:
 
 - Plug and play dashboard: [Batch Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Batch)
   
-## DMF telemetry (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
+## DMF telemetry
 
 > [!IMPORTANT]
-> This feature is available in Microsoft Dynamics 365 finance and operations versions PU71/10.0.47 (build >= 7.0.7858.68), PU70/10.0.46 (build >= 7.0.7778.87) and PU69/10.0.45 (build >= 7.0.7690.137).
+> This feature is available in Microsoft Dynamics 365 finance and operations versions PU71/10.0.47 (build >= 7.0.7858.68), PU70/10.0.46 (build >= 7.0.7778.87), and PU69/10.0.45 (build >= 7.0.7690.137).
 
 Data Management Framework (DMF) telemetry helps your organization get deeper visibility into Data management executions, such as import and export operations.
 By using this integration, you can:
 
 - Monitor import and export data management functions with start and end times.
-- Monitor Job status from source to staging and staging to target
-- Monitor Failures with error messages at granular level
+- Monitor job status from source to staging and staging to target.
+- Monitor failures with error messages at granular level.
 
-DMF telemetry is controlled by the following 2 flights:
+DMF telemetry is controlled by the following two flights:
 
 - **DMFTelemetryConfigurationFlight**
 - **DMFEnableAppInsightsLogsAndErrors**
@@ -125,13 +121,14 @@ When you enable the flights, new telemetry signals appear under the **Configure*
 - **DMFJob Status** - Logs job status from source to staging tables and staging to target tables.
 
 ### Resources
-For more information, see [DMF Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/releases/tag/DMF-1.0.0.3)
+
+For more information, see [DMF Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/releases/tag/DMF-1.0.0.3).
 
 ## DMF errors
 
 The Data Management Framework (DMF) logs errors to the Custom Events table in Application Insights. Exceptions that bubble up to the X++ layer go to the Exceptions table. Each logged error has an associated error code. For error code details, see [Data management error descriptions and known limitations](../data-entities/dm-error-descriptions.md).
 
-- Identify and fix integration issues
-- Monitor data pipeline health
+- Identify and fix integration problems.
+- Monitor data pipeline health.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
