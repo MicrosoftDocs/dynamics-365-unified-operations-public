@@ -2,7 +2,7 @@
 title: Customer search
 description: Learn about customer search capabilities in Microsoft Dynamics 365 Commerce.
 author: shajain
-ms.date: 01/21/2026
+ms.date: 06/08/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
