@@ -4,7 +4,7 @@ description: Learn how to set up and report electronically transaction in France
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 06/07/2026
+ms.date: 06/08/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Application User
@@ -45,8 +45,8 @@ The feature is also available in earlier versions 10.0.47 and 10.0.48 through sp
 
 | Finance version | Build |
 |--------------|-------|
-| 10.0.48 | 1135046 |
-| 10.0.47 | 1135046 |
+| 10.0.48 | 10.0.2645.**55** |
+| 10.0.47 | 10.0.2527.**135** |
 
 ## Registration IDs and establishments
 
@@ -101,7 +101,7 @@ The **TransCategoryCodeLookup** application-specific parameter enables flexible 
 
 The following values are supported:
 
-- TL: Transactions – Goods (B2C aggregated / sales of goods)
+- TLB1: Transactions – Goods (B2C aggregated / sales of goods)
 - TPS1: Transactions – Services
 - TNT1: Transactions – Non-territorial / outside VAT scope
 - TMA1: Transactions – Mixed / aggregated categories
@@ -170,6 +170,7 @@ The configuration includes:
 - Message additional fields
 - Message item additional fields
 - Action parameters
+- Security roles for the electronic message processing
 - Executable class settings
 
 #### Set up message additional fields
@@ -236,6 +237,19 @@ To set up parameters for actions, follow these steps:
 | Message item type for Transactions report type - Transactions | FR-eRep Transactions B2C   |
 
 Proper configuration ensures that the system correctly collects and processes data during report generation.
+
+#### Security roles for the electronic message processing
+
+Different groups of users might require access to different electronic message processing. You can limit access to each type of processing, based on security groups that you define in the system.
+
+To limit access to the **FR e-reporting** processing, follow these steps:
+
+1. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
+1. Select the **FR e-reporting** processing.
+1. On the **Security roles** FastTab, add the security groups that must work with this processing for testing purposes. If you don't define a security group for the processing, only a system administrator can see the processing on the **Electronic messages** page.
+
+> [!NOTE]
+> If you don't define security roles for electronic message processing, only a system admin can see the electronic message processing by going to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
 
 #### Set up executable class settings
 
