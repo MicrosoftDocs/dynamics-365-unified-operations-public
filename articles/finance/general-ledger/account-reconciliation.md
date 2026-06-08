@@ -4,7 +4,7 @@ description: Learn how to use the Account reconciliation workspace and the Copil
 author: twheeloc
 ms.author: brking
 ms.topic: article
-ms.date: 03/03/2026
+ms.date: 06/04/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.42
 
 # Account reconciliation
 
-The Account reconciliation feature is available starting with Microsoft Dynamics 365 Finance version 10.0.44. Use this feature to reconcile your general ledger with the accounts payable, accounts receivable, tax, and bank subledgers. It replaces the old reactive SQL Server Reporting Service (SSRS) reports.
+The Account reconciliation feature is available in Microsoft Dynamics 365 Finance. Use this feature to reconcile your general ledger with the accounts payable, accounts receivable, tax, and bank subledgers. It replaces the old reactive SQL Server Reporting Service (SSRS) reports.
 
 Users can view reconciled data and automated data analysis on a defined schedule. Therefore, you can set up the processing so that it runs only in the background or during off-hours.
 
@@ -31,32 +31,32 @@ The grid in the lower part of the workspace shows details about each combination
 
 ## Copilot agent for account reconciliation
 
-Learn how to set up and configure the Account Reconciliation Agent in [Set up and configure the Account Reconciliation Agent](acct-rec-agent.md).
+For more information about how to set up and configure the Account Reconciliation Agent, see [Set up and configure the Account Reconciliation Agent](acct-rec-agent.md).
 
 ## Address exceptions
 
-If you need to address exceptions, select **Mitigate exceptions** on the **Open exceptions** tile in the upper part of the workspace. You can view all exceptions for all modules across all legal entities. To open the **Mitigate exceptions** page, select the number of exceptions (in red) for a specific module and legal entity.
+To address exceptions, select **Mitigate exceptions** on the **Open exceptions** tile in the upper part of the workspace. You can view all exceptions for all modules across all legal entities. To open the **Mitigate exceptions** page, select the number of exceptions (in red) for a specific module and legal entity.
 
 On the **Open exceptions** page, you can view the details of each exception and take appropriate action to address it. The available actions vary, depending on the exception.
 
 If the exception is **In Subledger not in ledger**, the following actions are available:
 
 - **Create journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception. You create the journal and post it through a batch process or manually.
-- **Link transactions** – Open the **Link transactions** page, where you can link transactions that are in the subledger but not in ledger and transactions that are in the ledger but not in the subledger. In Dynamics 365 Finance version 10.0.46, an improved linking experience is available.
+- **Match exceptions** – Go to the **Match exceptions** page, where you can match exceptions that are in the subledger but not in the ledger and transactions that are in the ledger but not in the subledger. In Dynamics 365 Finance version 10.0.46, an improved *matching* experience is available.
 - **Accept without change** – Accept the exception as is, and clear it. Use this action when the difference is a small amount or a rounding difference.
 - **View exception history** – View the history of the exception.
 
 If the exception is **In Ledger not in subledger**, the following actions are available:
 
-- **Reverse general ledger voucher** – Create a reversing entry for the ledger voucher. In Dynamics 365 Finance version 10.0.46, you can reverse transactions directly from the workspace without being navigated back to the original transaction page.
-- **Link transactions** – Open the **Link transactions** page, where you can link transactions. In Dynamics 365 Finance version 10.0.46, an improved linking experience is available.
+- **Reverse general ledger voucher** – Create a reversing entry for the ledger voucher. In Finance version 10.0.46, you can reverse transactions directly from the workspace without being navigated back to the original transaction page.
+- **Match exceptions** – Open the **Match exceptions** page, where you can *match exceptions*. In Finance version 10.0.46, an improved *matching* experience is available.
 - **Accept without change** – Accept the exception as is, and clear it. Use this action when the difference is a small amount or a rounding difference.
-- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception. In Dynamics 365 Finance version 10.0.46, you create the journal and post it through a batch process or manually.
+- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception. In Finance version 10.0.46, you create the journal and post it through a batch process or manually.
 
 If the exception is **Amount mismatch**, the following actions are available:
 
 - **Accept without change** – Accept the exception as is, and clear it. Use this action when the difference is a small amount or a rounding difference.
-- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception. In Dynamics 365 Finance version 10.0.46, you create the journal and post it through a batch process or manually.
+- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception. In Finance version 10.0.46, you create the journal and post it through a batch process or manually.
 
 ### Undo an action
 
@@ -66,7 +66,7 @@ To undo an addressed exception, select **Undo**. You're prompted for a reason. E
 
 ## Snapshots
 
-The last column of the grid in the lower part of the workspace shows a snapshot of data for the selected combination of a module and legal entity for the selected period. The snapshot provides a final summary of all data for the period, including automatically reconciled transactions and any exceptions that you addressed. The snapshot is available only for ledger calendar fiscal periods that are marked as on hold or permanently closed, and that are fully reconciled. The snapshot is generated through the same background process and on the same schedule.
+The last column of the grid in the lower part of the workspace shows a snapshot of data for the selected combination of a module and legal entity for the selected period. The snapshot provides a final summary of all data for the period, including automatically reconciled transactions and any exceptions that you addressed. The snapshot is only available for ledger calendar fiscal periods that are marked as on hold or permanently closed, and that are fully reconciled. The snapshot is generated through the same background process and on the same schedule.
 
 ## Configuration
 
@@ -81,19 +81,19 @@ To view the settings and configuration for the account reconciliation feature, u
     > Data last updated 30 minutes ago, next update in 1 hour.
 
 - For testing purposes, you can adjust the frequency and the time of the next processing run in the process automation. Look in the background processes for the **Automatic account reconciliation process** process. For production use, consider the impact of the time and frequency of processing runs, and set an appropriate schedule.
-- On the batch jobs page, confirm that the status of the **Process automation polling system** system batch job is **Waiting**, not **Withhold**.
+- On the **Batch jobs** page, confirm that the status of the **Process automation polling system** system batch job is **Waiting**, not **Withhold**.
 - On the **Account reconciliation configuration** page, confirm the **Reconciliation option** is set to **Yes** for the modules intended to be included in reconciliation.
 
 ### I selected the action to create a journal, but I didn't actually create or post the journal. The voucher now appears on the page for addressed exceptions. What should I do?
 
 Review the addressed exceptions, and select **Undo** to move the exception back to the list of open exceptions. You can then reprocess it.
 
-With the release of Dynamics 365 finance and operations version 10.0.46, Microsoft improved the flow for creating a journal entry. When you select **Create journal entry**, a slider page appears. You can complete the details for the journal entry. A new parameter is added to **General ledger parameters** to specify a journal name as a default.
+With the release of Dynamics 365 Finance version 10.0.46, Microsoft improved the flow for creating a journal entry. When you select **Create journal entry**, a slider page appears. You can complete the details for the journal entry. A new parameter is added to **General ledger parameters** to specify a journal name as a default.
 
 ### Can I adjust how often the process automation for Account reconciliation process runs?
 
 Yes, in the background processes for process automations, you can configure the frequency of the Automatic account reconciliation process. By default, the frequency is set to run every six hours.
-To adjust the frequency of the process automation, select **Edit** and adjust the Execution details.  
+To adjust the frequency of the process automation, select **Edit** and adjust the **Execution** details.  
 
 > [!NOTE]
 > Select **View most recent results** to review execution times for prior process automation runs to gauge the best cadence for the process automation to run. If users interact with the Account reconciliation workspace often throughout the day, more frequent process automation runs are preferred. If users aren't frequently working in the Account reconciliation workspace, then a less frequent cadence of once per day might be preferred.
