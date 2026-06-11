@@ -18,15 +18,16 @@ ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
+This article describes the default report for income statements. It also describes the building blocks that are associated with this report.
 
 ## Default income statement report
 
-| Default report             | What it does                                                                                              |
-|----------------------------|-----------------------------------------------------------------------------------------------------------|
+| Default report             | What it does                                                                              |
+|----------------------------|-------------------------------------------------------------------------------------------|
 | Income Statement – Default | Provides a view of the organization’s profitability for the current period and also for the year to date. |
 
 ## Building blocks
+
 The income statement financial report uses the following building blocks.
 
 | Default report             | Row definition                     | Column definition          |
@@ -37,16 +38,14 @@ The income statement financial report uses the following building blocks.
 
 The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement. The Main Account Category dimension is used to build this row definition. Therefore, anyone can generate the report without having to make any modifications.
 
-### Column Definition
+### Column definition
 
 The column definitions contain different types of columns to provide different levels of detail and financial data.
 
--   **Periodic and YTD – Default column types:**
-    -   **DESC** – The description from the row definition
-    -   **FD** – Financial data for the current period
-    -   **FD** – Financial data for the year to date
-
-
+- **Periodic and YTD – Default column types:**
+  - **DESC** – The description from the row definition
+  - **FD** – Financial data for the current period
+  - **FD** – Financial data for the year to date
 
 ## Additional resources
 
@@ -55,9 +54,5 @@ The column definitions contain different types of columns to provide different l
 [View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reporting Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn about how to set up basic and optional functionality for Acco
 author: twheeloc
 ms.author: shpandey
 ms.topic: overview
-ms.date: 04/12/2024
+ms.date: 06/04/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -110,7 +110,7 @@ The additional setup pages are organized by functionality.
 
 - On the **1099 fields** page, verify and update the minimum amounts that must be reported to the Internal Revenue Service (IRS), based on the latest IRS requirements.
 
-## **Optional setup for other modules**
+## Optional setup for other modules
 
 **Organization administration**
 

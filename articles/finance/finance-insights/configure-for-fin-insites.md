@@ -4,7 +4,7 @@ description: Learn about the configuration steps that enable your system to use 
 author: wei-msft
 ms.author: zhuw
 ms.topic: article
-ms.date: 01/09/2026
+ms.date: 06/01/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-20
@@ -30,11 +30,11 @@ To deploy the environments, follow these steps:
     > [!NOTE]
     > The environment must be a high-availability (HA) environment. (This type of environment is also known as a Tier-2 environment.) Learn more in [Environment planning](../../fin-ops-core/dev-itpro/organization-administration/environment-planning.md).
 
-2. If you're configuring Finance insights in a sandbox environment, you might have to copy production data to that environment before predictions work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn't contain enough historical data to adequately train the prediction model. 
+1. If you're configuring Finance insights in a sandbox environment, you might have to copy production data to that environment before predictions work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn't contain enough historical data to adequately train the prediction model. 
 
 ## Configure your Microsoft Entra tenant
 
-Microsoft Entra must be configured so that it can be used with Dataverse and the Microsoft Power Platform applications. This configuration requires that either the **Project Owner** role or the **Environment Manager** role is assigned to the user in the **Project security role** field in Lifecycle Services.
+You must configure Microsoft Entra to use it with Dataverse and the Microsoft Power Platform applications. This configuration requires that you assign either the **Project Owner** role or the **Environment Manager** role to the user in the **Project security role** field in Lifecycle Services.
 
 Verify that the following setup is completed:
 
@@ -46,7 +46,7 @@ Verify that the following setup is completed:
     |------------------------------------------|--------------------------------------|
     | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-    To verify the application is registered in Microsoft Entra ID, check the **All Applications** list. Learn more in [View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal).
+    To verify the application is registered in Microsoft Entra ID, check the **All Applications** list. For more information, see [View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal).
   
     If the application isn't registered in Microsoft Entra ID, contact support.
   
@@ -56,7 +56,7 @@ To configure Dataverse for Finance insights, follow these steps:
 
 - In Lifecycle Services, open the environment page, and verify that the **Power Platform Integration** section is already set up.
 
-    - If Dataverse has already been set up, the Dataverse environment name that is linked to the Finance environment should be listed.
+    - If Dataverse is already set up, the Dataverse environment name that is linked to the Finance environment appears.
     - If Dataverse hasn't yet been set up, select **Setup**. Setup of the Dataverse environment can take up to an hour. When the setup has been successfully completed, the Dataverse environment name that is linked to in the Finance environment should be listed.
     - If this integration was set up with an existing Microsoft Power Platform environment, contact your administrator to make sure that the linked environment isn't in the disabled state.
 
@@ -66,32 +66,32 @@ To configure Dataverse for Finance insights, follow these steps:
 
 ## Configure the Finance insights add-in
 
-Installation of the Finance insights add-in automatically enables all Finance Insights features in Dynamics 365 Finance.
+When you install the Finance insights add-in, it automatically enables all Finance Insights features in Dynamics 365 Finance.
 If you previously installed the Finance insights add-in, uninstall it before you complete the following procedure.
 
 > [!NOTE]
-> If you previously installed the Export to Data Lake add-in in Lifecycle Services, uninstall it before you install the Finance Insights add-in, because the Export to Data Lake add-in has been deprecated. Learn more in [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md).
+> If you previously installed the Export to Data Lake add-in in Lifecycle Services, uninstall it before you install the Finance Insights add-in. The Export to Data Lake add-in is deprecated. For more information, see [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md).
 
 To install the Finance insights add-in, follow these steps:
 
 1. Go to the Power Platform Admin Center (PPAC). Open the Power Platform Admin Center and sign in with an account that has admin permissions.
-2. Under **Environments**, choose the Dataverse environment that is paired with your Dynamics 365 finance and operations instance.
-3. In the left navigation, select **Resources > Dynamics 365 apps**.
-4. Select **Install app** (or **Add app** depending on UI).
+1. Under **Environments**, choose the Dataverse environment that pairs with your Dynamics 365 finance and operations instance.
+1. In the left navigation, select **Resources > Dynamics 365 apps**.
+1. Select **Install app** (or **Add app** depending on UI).
    - Find **Finance Insights** in the list.
    - Choose **Install**.
-5. Confirm the terms and conditions, and begin installation.
-6. It may take several minutes before the add-in becomes active and available in Dynamics 365 finance and operations.
+1. Confirm the terms and conditions, and begin installation.
+1. It might take several minutes before the add-in becomes active and available in Dynamics 365 finance and operations.
 
 ## One last thing
 
-After the add-in is successfully installed, it might take up to an hour for the Finance insights feature to be enabled in Dynamics 365 Finance. If you don't want to wait that long, you can manually run the **Insights provisioning status check** process. 
+After you install the add-in, it might take up to an hour for the Finance insights feature to be enabled in Dynamics 365 Finance. If you don't want to wait, you can manually run the **Insights provisioning status check** process. 
 
 1. In Dynamics 365 Finance, go to **System administration \> Setup \> Process automation**.
-2. On the **Background processes** tab, find **Insights provisioning status check**, and select **Edit**.
-3. Set the **Next execution** field to 30 minutes before the current time.
+1. On the **Background processes** tab, find **Insights provisioning status check**, and select **Edit**.
+1. Set the **Next execution** field to 30 minutes before the current time.
 
-   This change should force the **Insights provisioning status check** process to run immediately.
+   This change forces the **Insights provisioning status check** process to run immediately.
 
    After the **Insights provisioning status check** process is successfully run, you can view the enabled Finance insights features in the relevant workspaces.
 

@@ -4,7 +4,7 @@ description: Learn about ways to troubleshoot performance issues when you post f
 author: Livbjerg
 ms.author: JLivbjerg
 ms.topic: article
-ms.date: 02/24/2024
+ms.date: 06/04/2026
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../includes/banner.md)]
 
-The article suggests ways to troubleshoot performance issues when you post financial journals. These issues might be caused by the following factors:
+This article suggests ways to troubleshoot performance problems when you post financial journals. These problems might be caused by the following factors:
 
 - The number sequence setup
 - The number of lines per journal
@@ -27,7 +27,7 @@ The article suggests ways to troubleshoot performance issues when you post finan
 
 ## Symptom
 
-Financial journal posting seems slower than you expect.
+Financial journal posting is slower than you expect.
 
 ## Resolution
 
@@ -61,7 +61,7 @@ Use the following buttons and fields on the **Post journals** page to set up jou
     > [!NOTE]
     > Select **Late selection** if you're using a recurring batch job to select the journals to post.
 
-- **Transfer errors** – Select this option to enable valid journals to post and move vouchers that fail to be posted to a new journal. If this option isn't selected, the whole journal will fail to be posted if any of the vouchers contain errors.
+- **Transfer errors** – Select this option to enable valid journals to post and move vouchers that fail to be posted to a new journal. If this option isn't selected, the whole journal fails to be posted if any of the vouchers contain errors.
 
 ### Run journal posting in parallel
 
@@ -80,7 +80,7 @@ For example, a journal has 150,000 lines that must be posted. If you don't confi
 
 If you manually split the journal into 15 journals, each of which has 10,000 lines, the journals can be manually run in parallel by using a batch. It can be tedious work to manually split journals. However, in many cases, Dynamics 365 Finance can automatically split the journal.
 
-For more information, see 
+For more information, see
 
 #### Lines limit
 
@@ -89,7 +89,7 @@ The **Lines limit** value on a journal enables parallel processing when journals
 Splitting a journal works best for vouchers that have a smaller number of lines. A voucher can't be split across journals. The **Original journal No.** field on a journal indicates the journal that it was split from. The **Lines limit** field can be set for a journal name. The value is then used by default for all journals that are created that have that journal name.
 
 > [!NOTE]
-> In Dynamics 365 Finance version 10.0.36, financial journals supports auto-split of large journals with a threshold value of 1,000 lines per journal. Journals with more than 1,000 lines will be posted as part of the batch job and will be split into 1,000 lines per journal. For more information, see [Autosplit of large financial journals](auto-split-journal.md).   
+> In Dynamics 365 Finance, financial journals support autosplit of large journals with a threshold value of 1,000 lines per journal. Journals with more than 1,000 lines will be posted as part of the batch job and will be split into 1,000 lines per journal. For more information, see [Autosplit of large financial journals](auto-split-journal.md).
 
 #### Voucher size
 

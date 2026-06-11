@@ -6,8 +6,8 @@ ms.author: jiwo
 ms.topic: faq
 ms.custom: 
   - bap-template
-ms.date: 03/12/2026
-ms.reviewer: johnmichalak
+ms.date: 06/01/2026
+ms.reviewer: twheeloc
 
 ---
 

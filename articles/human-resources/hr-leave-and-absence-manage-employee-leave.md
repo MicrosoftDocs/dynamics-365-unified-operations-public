@@ -5,7 +5,7 @@
 title: Manage employee leave
 description: Manage employee leave in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 06/24/2024
+ms.date: 06/05/2026
 ms.topic: how-to
 # optional metadata
 
@@ -34,13 +34,13 @@ You can manage an employee's leave by leave type. This includes expiring leave e
 ## Adjust leave balances
 
 1. On the employee's record, select **Leave**.
-2. Select **Leave and absence setup**.
-3. Select **Adjust balance**.
-4. Select the **Leave type**.
-5. Enter an **Adjustment amount**. 
-6. Optionally, you can select a **Date**. 
+1. Select **Leave and absence setup**.
+1. Select **Adjust balance**.
+1. Select the **Leave type**.
+1. Enter an **Adjustment amount**. 
+1. Optionally, select a **Date**. 
 
-You can include a reason code and comment when adjusting an employee's leave balance. 
+You can include a reason code and comment when you adjust an employee's leave balance. 
 
 When you hover over any leave balance, the following information is displayed:
 
