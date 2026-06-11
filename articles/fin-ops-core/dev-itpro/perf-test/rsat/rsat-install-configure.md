@@ -4,7 +4,7 @@ description: Learn about how to install and configure the Regression suite autom
 author: FrankDahl
 ms.author: pvillads
 ms.topic: article
-ms.date: 11/11/2025
+ms.date: 05/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,6 +16,9 @@ ms.custom: sfi-image-nochange
 # Regression Suite Automation Tool installation and configuration
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> The Regression Suite Automation Tool (RSAT) is marked for deprecation and won't be supported after May 15, 2027.
 
 This article explains how to install and configure the Regression suite automation tool (RSAT).
 

@@ -4,7 +4,7 @@ description: The Regression suite automation tool (RSAT) lets you record busines
 author: FrankDahl
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 01/21/2026
+ms.date: 05/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,6 +16,9 @@ ms.custom: sfi-image-nochange
 # Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> The Regression Suite Automation Tool (RSAT) is marked for deprecation and won't be supported after May 15, 2027.
 
 The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) for finance and operations apps. Typically, you need to complete UAT before you take a Microsoft application update or before you apply custom code and configurations to your production environment. RSAT enables functional power users to record business tasks by using Task recorder and then convert the recordings into a suite of automated tests, without needing to write source code. For more information about Task recorder, see [Task recorder resources](../../user-interface/task-recorder.md).
 

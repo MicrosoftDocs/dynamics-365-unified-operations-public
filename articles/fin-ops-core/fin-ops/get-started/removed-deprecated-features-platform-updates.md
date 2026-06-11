@@ -4,7 +4,7 @@ description: Learn about features that have been removed, or that are planned fo
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 05/08/2026
+ms.date: 06/09/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -26,6 +26,18 @@ This article describes removed features, or features that are planned for remova
 Use this list to help you consider these removals and deprecations for your own planning.
 
 For detailed information about objects in finance and operations apps, see the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
+
+## Feature deprecation effective May 2027
+
+### The Regression Suite Automation Tool (RSAT) is marked for deprecation and won't be supported after May 15, 2027.
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | This functionality is no longer supported. |
+| **Replaced by another feature?** | No |
+| **Product areas affected** | Application regression testing |
+| **Deployment option** | On-premises |
+| **Status** | The product is deprecated and supported until 15th of May 2027. |
 
 ## Feature deprecation effective February 2027
 
