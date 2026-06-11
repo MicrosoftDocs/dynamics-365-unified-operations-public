@@ -4,7 +4,7 @@ description: This article provides guidance for updating from Finance insights 1
 author: wei-msft
 ms.author: zhuw
 ms.topic: article
-ms.date: 12/10/2025
+ms.date: 06/01/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-20
@@ -69,7 +69,7 @@ Customers don't need to manually uninstall Export to Data Lake, configure Busine
 
 ### Opting out of update
 
-If you choose not to update, you will lose access to Finance insights features when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x.
+If you choose not to update, you lose access to Finance insights features when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x.
 
 If you want to opt out of the update and discontinue using Finance insights entirely, you must uninstall Finance insights before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
 Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.
@@ -113,7 +113,7 @@ For questions and support on this update, contact Microsoft support and provide:
 - Migration date
 - Specific error messages or issues
 - Screenshots of problems
-- Steps to reproduce the issue
+- Steps to reproduce the problem
 
 #### Additional resources
 

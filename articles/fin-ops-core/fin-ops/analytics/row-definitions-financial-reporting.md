@@ -4,7 +4,7 @@ description: Learn about row definitions in financial report designer, including
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 03/12/2026
+ms.date: 06/01/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -35,7 +35,7 @@ A row definition is a report component that specifies the contents of each row o
 
 A row definition can contain up to 20,000 financial dimension rows and can include the following information:
 
-- Descriptive text that adds meaning to the report by creating section headings, lines, and spaces, such as **Cash** or **Total revenue**
+- Descriptive text that adds meaning to the report by creating section headings, lines, and spaces, such as **Cash** or **Total revenue**.
 - Links to financial data, which can include dimension values in Microsoft Dynamics 365 Finance
 
     > [!NOTE]
@@ -45,9 +45,9 @@ A row definition can contain up to 20,000 financial dimension rows and can inclu
 
 Usually, each row in a row definition contains one of the following types of information:
 
-- References to the financial dimensions system
-- Totals or calculations that are based on the data
-- Formatting
+- References to the financial dimensions system.
+- Totals or calculations that are based on the data.
+- Formatting.
 
 There are two methods for entering information in a row definition:
 
@@ -56,7 +56,7 @@ There are two methods for entering information in a row definition:
 
 ## Add dimensions in a row definition
 
-A dimension is an intersection of data and values. You can group data and values in report designer. You can then classify and analyze transactions in more detail. You can use the **Insert Rows from Dimensions** dialog box to add multiple rows to a row definition at the same time. The dialog box displays one column for each dimension. The following table describes the information that you can specify for each dimension.
+A dimension is an intersection of data and values. You can group data and values in report designer. You can then classify and analyze transactions in more detail. Use the **Insert Rows from Dimensions** dialog box to add multiple rows to a row definition at the same time. The dialog box displays one column for each dimension. The following table describes the information that you can specify for each dimension.
 
 | Option                | Description |
 |-----------------------|-------------|
@@ -80,7 +80,7 @@ To add dimensions to a row definition, follow these steps:
 
 ## Adjust rounding in a row definition
 
-If you have a balance sheet where you round the amounts, the totals might not balance. This problem can happen if you use the rounding option on a balance sheet report and the report definition also specifies rounding. Use the **Rounding adjustment** option in the row definition to balance the amounts in the balance sheets. You can turn rounding off or modify it on the **Settings** tab of the report definition. The following table shows how amounts are rounded. In this table, the totals of rows 100 and 200 differ when rounding is turned on.
+If you have a balance sheet where you round the amounts, the totals might not balance. This problem can happen if you use the rounding option on a balance sheet report and the report definition also specifies rounding. Use the **Rounding adjustment** option in the row definition to balance the amounts in the balance sheets. You can turn off rounding or modify it on the **Settings** tab of the report definition. The following table shows how amounts are rounded. In this table, the totals of rows 100 and 200 differ when rounding is turned on.
 
 | Row code | Amounts without rounding | Amount with rounding to whole thousands |
 |----------|--------------------------|-----------------------------------------|

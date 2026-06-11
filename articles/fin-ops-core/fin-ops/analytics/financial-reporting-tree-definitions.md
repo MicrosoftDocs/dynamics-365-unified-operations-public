@@ -4,8 +4,8 @@ description: Learn about reporting tree definitions. A reporting tree definition
 author: jinniew
 ms.author: jiwo
 ms.topic: how-to
-ms.date: 03/12/2026
-ms.reviewer: johnmichalak
+ms.date: 06/01/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
@@ -47,22 +47,22 @@ A reporting tree definition contains the columns described in the following tabl
 | Reporting tree column | Description |
 |-----------------------|-------------|
 | Company               | The company name for the reporting unit. The **\@ANY** value, which you typically assign only to the summary level, enables the reporting tree to be used for all companies. All child branches have a company assigned to them. |
-| Unit Name             | The code that identifies this reporting unit in the graphical reporting tree. Be sure to establish a unique coding system that is consistent, and that is easy for users to understand. |
-| Unit Description      | The reporting unit title appears in the report header or footer if you enter **UnitDesc** as a code on the **Headers and Footers** tab of the report definition. The title appears in the report row description if you enter **UnitDesc** in the **Description** cell of the row definition. |
+| Unit name             | The code that identifies this reporting unit in the graphical reporting tree. Be sure to establish a unique coding system that's consistent, and that's easy for users to understand. |
+| Unit description      | The reporting unit title appears in the report header or footer if you enter **UnitDesc** as a code on the **Headers and Footers** tab of the report definition. The title appears in the report row description if you enter **UnitDesc** in the **Description** cell of the row definition. |
 | Dimensions            | A reporting unit that draws information directly from the financial data. It defines the logical positioning and lengths for the account and related segments. Every reporting unit row must have a dimension in this column. You can also put a dimension in a summary unit row (for example, for expenses that are directly related to that unit). If you enter a dimension in a summary unit row, don't use accounts in parent units with child units. Otherwise, amounts might be duplicated. |
-| Row Definitions       | The name of the row definition for the reporting unit. Use the same row definition for each unit of the reporting tree. When you generate a report, use this row definition for each reporting unit. The row definition can include multiple financial dimensions links. If you specify a row definition in the reporting tree, select the **Use row definition from reporting tree** check box on the **Report** tab of the report definition. |
-| Financial Dimensions link| The financial dimensions link to use for the reporting unit. Define financial dimensions links for the row definition to identify the financial dimensions to link to. |
-| Page Options          | This column controls whether the report suppresses the details for the reporting unit when you view or print the report. |
-| Rollup %              | The percentage of the reporting unit that you allocate to the parent unit. The percentage that you enter in this column applies to each row of the row definition before the value in the row is added to the parent report. For example, if a child unit must be divided evenly between two departments, the amounts in each row are multiplied by 50 percent before the value is added to the department report. One reporting unit can't have two parent units. To allocate the amounts from a reporting unit to two parent units, create another reporting unit that has the same dimension to roll up the additional 50 percent. Enter whole percentages without a decimal point. For example, **25** represents 25-percent allocation to the parent. If you include a decimal point (**.25**), 0.25 percent is allocated to the parent. To use a percentage that is less than 1 percent, use the **Allow Rollup &lt;1%** option in the report definition. This option is on the **Additional Options** tab in the **Report Settings** dialog box. You access this dialog box from the **Other** button on the **Settings** tab of the report definition. |
-| Unit Security         | Restrictions on the users and groups that can access the information for the reporting unit. |
-| Additional Text       | Text that is included on the report. |
+| Row definitions       | The name of the row definition for the reporting unit. Use the same row definition for each unit of the reporting tree. When you generate a report, use this row definition for each reporting unit. The row definition can include multiple financial dimensions links. If you specify a row definition in the reporting tree, select the **Use row definition from reporting tree** check box on the **Report** tab of the report definition. |
+| Financial dimensions link| The financial dimensions link to use for the reporting unit. Define financial dimensions links for the row definition to identify the financial dimensions to link to. |
+| Page options          | This column controls whether the report suppresses the details for the reporting unit when you view or print the report. |
+| Rollup %              | The percentage of the reporting unit that you allocate to the parent unit. The percentage that you enter in this column applies to each row of the row definition before the value in the row is added to the parent report. For example, if a child unit must be divided evenly between two departments, the amounts in each row are multiplied by 50 percent before the value is added to the department report. One reporting unit can't have two parent units. To allocate the amounts from a reporting unit to two parent units, create another reporting unit that has the same dimension to roll up the additional 50 percent. Enter whole percentages without a decimal point. For example, **25** represents 25-percent allocation to the parent. If you include a decimal point (**.25**), 0.25 percent is allocated to the parent. To use a percentage that's less than 1 percent, use the **Allow Rollup &lt;1%** option in the report definition. This option is on the **Additional Options** tab in the **Report Settings** dialog box. You access this dialog box from the **Other** button on the **Settings** tab of the report definition. |
+| Unit security         | Restrictions on the users and groups that can access the information for the reporting unit. |
+| Additional text       | Text that is included on the report. |
 
 To create a reporting tree definition, follow these steps:
 
 1. Open Report Designer.
-2. Select **File** > **New** > **Reporting Tree Definition**.
-3. Select **Edit** > **Insert Reporting Units from Dimensions**.
-4. In the **Insert Reporting Units from Dimensions** dialog box, select the check box for each dimension to include in the reporting tree. The **Insert Reporting Units from Dimensions** dialog box contains the following sections.
+1. Select **File** > **New** > **Reporting Tree Definition**.
+1. Select **Edit** > **Insert Reporting Units from Dimensions**.
+1. In the **Insert Reporting Units from Dimensions** dialog box, select the check box for each dimension to include in the reporting tree. The **Insert Reporting Units from Dimensions** dialog box contains the following sections.
 
     | Section                          | Description |
     |----------------------------------|-------------|
@@ -72,21 +72,21 @@ To create a reporting tree definition, follow these steps:
 
     For an illustration that shows an example of the **Insert Reporting Units from Dimensions** dialog box, see the "Example of the Insert Reporting Units from Dimensions dialog box" section later in this article.
 
-5. To create additional segments (for example, by splitting one segment into two shorter segments), select the correct location in a **Character position** field, and then select **Split Segments**.
-6. To merge two segments into one segment, select either of the segment boxes to merge, and then select **Combine Segments**.
-7. The hierarchy defines how dimensions report to each other and the range for each dimension. To change the hierarchy of the dimensions, in the **Segment hierarchy and ranges** area, select the dimension to move, and then select **Move Up** or **Move Down**.
-8. To specify a range of dimension values to add to the new reporting tree, in the **Segment hierarchy and ranges** area, follow these steps:
+1. To create additional segments (for example, by splitting one segment into two shorter segments), select the correct location in a **Character position** field, and then select **Split Segments**.
+1. To merge two segments into one segment, select either of the segment boxes to merge, and then select **Combine Segments**.
+1. The hierarchy defines how dimensions report to each other and the range for each dimension. To change the hierarchy of the dimensions, in the **Segment hierarchy and ranges** area, select the dimension to move, and then select **Move Up** or **Move Down**.
+1. To specify a range of dimension values to add to the new reporting tree, in the **Segment hierarchy and ranges** area, follow these steps:
 
     1. In the **From Dimension** field for that dimension, enter the first value in the range.
-    2. In the **To Dimension** field, enter the last value in the range.
+    1. In the **To Dimension** field, enter the last value in the range.
 
-9. Repeat steps 7 through 8 for each dimension in the **Segment hierarchy and ranges** area.
-10. After you finish defining how your reporting units should be brought into the new reporting tree, select **OK**.
-11. Select **File** > **Save** to save the reporting tree. Enter a unique name and description for the reporting tree, and then select **OK**.
+1. Repeat steps 7 through 8 for each dimension in the **Segment hierarchy and ranges** area.
+1. After you finish defining how your reporting units should be brought into the new reporting tree, select **OK**.
+1. Select **File** > **Save** to save the reporting tree. Enter a unique name and description for the reporting tree, and then select **OK**.
 
 ### Open an existing reporting tree definition
 
-1. In Report Designer, click **Reporting Tree Definitions** in the navigation pane.
+1. In Report Designer, select **Reporting Tree Definitions** in the navigation pane.
 1. Double-click a name in the reporting tree list to open it.
 1. To view any building blocks that are associated with the reporting tree, right-click the reporting tree definition, and then select **Associations**.
 
@@ -126,7 +126,7 @@ You can rearrange the organizational structure of a reporting tree definition by
 
 ### Add text about a reporting unit
 
-An additional text entry is a static text string of up to 255 characters that adds information to the reporting tree definition. For example, the additional text can be a short company description. You can create up to ten additional text entries for each reporting unit in a reporting tree definition. The additional text appears on the report for the reporting unit that the text is assigned to. You can add text entries from the **Description** column of the row definition, and from the **Headers and Footers** tab in the report definition.
+An additional text entry is a static text string of up to 255 characters that adds information to the reporting tree definition. For example, the additional text can be a short company description. You can create up to 10 additional text entries for each reporting unit in a reporting tree definition. The additional text appears on the report for the reporting unit that the text is assigned to. You can add text entries from the **Description** column of the row definition, and from the **Headers and Footers** tab in the report definition.
 
 1. In Report Designer, open the reporting tree definition that you want to change.
 1. Double-click the **Additional Text** cell for the reporting unit row.

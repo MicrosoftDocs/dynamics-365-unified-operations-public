@@ -4,7 +4,7 @@ description: Learn about financial reporting, which allows financial and busines
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/12/2026
+ms.date: 06/01/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -21,7 +21,7 @@ ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 
 By using financial reporting for the application, financial and business professionals can create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
 
-Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. You don't need any additional tools or configuration steps.
+Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. You don't need any extra tools or configuration steps.
 
 ## Financial reporting setup
 
@@ -39,7 +39,7 @@ The following components of financial reporting make it easy to create, view, an
 | Component        | Functions | Additional information |
 |------------------|-----------|------------------------|
 | Report Designer  | Create report building blocks that you can combine to define and generate a report. The report wizard guides less experienced users through the design process. Advanced users can create new report building blocks or modify existing building blocks to meet their requirements. | |
-| Report schedules | Schedule a single report or a group of reports so that it is generated on a regular basis. | [Generate financial reports](generate-financial-report.md) |
+| Report schedules | Schedule a single report or a group of reports so that it's generated regularly. | [Generate financial reports](generate-financial-report.md) |
 
 ## Features
 

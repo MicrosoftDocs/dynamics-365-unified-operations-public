@@ -4,7 +4,7 @@
 title: Ready to pay
 description: This article shows how to mark an employee as ready to pay in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/09/2024
+ms.date: 06/05/2026
 ms.topic: how-to
 # optional metadata
 
@@ -30,30 +30,30 @@ ms.custom:
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!NOTE]
-> If you want to mark an employee as ready to pay, you must first enable the **(Preview) payroll integration** functionality in feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).
+> To mark an employee as ready to pay, first enable the **(Preview) payroll integration** functionality in feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).
 
-This feature enables human resources professionals to understand which employees are ready for payroll processing and which require action before being consumed by a third-party payroll provider.
+This feature helps human resources professionals understand which employees are ready for payroll processing and which employees require action before a third-party payroll provider consumes their information.
 
 ## Mark employee as ready to pay
 
-Gathering and validating employee information can be time-consuming and error prone. By providing a way for human resources professionals to review and easily update employee information, Dynamics 365 Human Resources helps to reduce the time spent getting ready to process payroll.
+Gathering and validating employee information can be time-consuming and error prone. By providing a way for human resources professionals to review and easily update employee information, Dynamics 365 Human Resources helps reduce the time spent getting ready to process payroll.
 
 To mark an employee as ready to pay:
 
-1. Open **Compensation management**. There are two tiles in the workspace: 
+1. Open **Compensation management**. The workspace has two tiles:
     - **Employees ready to pay**
     - **Employees not ready to pay**
     ![Compensation management workspace.](./media/hr-ready-to-pay-1-workspace.png)
 
-2. Select the **Employees not ready to pay** tile.
-3. Select the employees to be validated. On the **Payroll tab**, in the **Ready to pay** group, select **Validate**.
+1. Select the **Employees not ready to pay** tile.
+1. Select the employees to validate. On the **Payroll** tab, in the **Ready to pay** group, select **Validate**.
     ![Validate employees.](./media/hr-ready-to-pay-2-validate.png)
 
-4. To review the results, on the **Payroll tab**, in the **Ready to pay** group, select **Results**.
+1. To review the results, on the **Payroll** tab, in the **Ready to pay** group, select **Results**.
 
 ## Validation
 
-Before marking an employee as ready to pay, the employee's profile is validated for completeness.
+Before you mark an employee as ready to pay, validate the employee's profile for completeness.
 
 ![Validate results.](./media/hr-ready-to-pay-3-results.png)
 
@@ -70,7 +70,7 @@ Before marking an employee as ready to pay, the employee's profile is validated 
 
 If one of these validations fails, you can't mark the employee as ready to pay.
 
-If the **Ready to pay** field is **No**, this is an indication that you must perform an action to ensure the worker profile is complete. This won't stop the data to be exposed in any data entity. 
+If the **Ready to pay** field is **No**, this condition indicates that you must perform an action to ensure the worker profile is complete. This condition doesn't stop the data from being exposed in any data entity.
 
 ## Process Automation
 

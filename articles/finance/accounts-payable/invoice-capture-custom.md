@@ -4,7 +4,7 @@ description: Learn about how to use custom fields in the Invoice capture solutio
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 12/07/2023
+ms.date: 06/04/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -31,43 +31,43 @@ Invoice capture has three field groups: **General**, **Tax**, and **Charges**. *
 
 ## Data types
 
-Invoice capture support three data types for custom fields:
+Invoice capture supports three data types for custom fields:
 
 - Single line of text
 - Date and time (date only)
-- Currency 
+- Currency
 
 ## Implementation
 
 To create a new solution and add custom fields, follow these steps:
 
 1. Sign in to the [Power Apps maker portal](https://make.powerapps.com/), and select the target environment.
-2. Select **Solutions**, and then select **New solution**.
-3. Open the solution, and add the following tables:
+1. Select **Solutions**, and then select **New solution**.
+1. Open the solution, and add the following tables:
 
     - Staging invoice header
     - Staging invoice line
     - User-defined field setting
 
-4. Select the **Staging invoice header** or **Staging invoice line** table, and then select **Next**.
-5. Select **Add**.
-6. Select the table, and then select **New** \> **Column**.
-7. Enter the field name, select the data type, and then select **Save**.
-8. Find the column that you just created, and make a note of the logical name.
-9. Select **User defined field setting**, and then select **Edit**.
-10. Select **New row using form**, enter the value for field properties, and then select **Save**.
+1. Select the **Staging invoice header** or **Staging invoice line** table, and then select **Next**.
+1. Select **Add**.
+1. Select the table, and then select **New** \> **Column**.
+1. Enter the field name, select the data type, and then select **Save**.
+1. Find the column that you created, and make a note of the logical name.
+1. Select **User defined field setting**, and then select **Edit**.
+1. Select **New row using form**, enter the value for field properties, and then select **Save**.
 
 To review the details for each field, follow these steps:
 
 1. In Invoice capture, go to **Setup system** \> **Manage configuration group**.
-2. Select the configuration group, and then select **Manage visible fields** to add the fields.
-3. The side-by-side viewer shows the added fields, and you can enter values.
+1. Select the configuration group, and then select **Manage visible fields** to add the fields.
+1. The side-by-side viewer shows the added fields, and you can enter values.
 
 ## Map custom fields
 
-The value of custom fields must be mapped to the corresponding fields in Microsoft Dynamics 365 Finance. You must use a custom extension to do this mapping.
+Map the value of custom fields to the corresponding fields in Microsoft Dynamics 365 Finance. Use a custom extension to create this mapping.
 
-For example, in Invoice capture, there's a field that has the logical name **cus\_udfdate**. This field will be mapped to the **CashDiscountDate** field in the invoice header of Dynamics 365 Finance.
+For example, in Invoice capture, there's a field that has the logical name **cus\_udfdate**. Map this field to the **CashDiscountDate** field in the invoice header of Dynamics 365 Finance.
 
 Here's the sample code.
 
