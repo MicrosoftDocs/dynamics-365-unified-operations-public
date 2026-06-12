@@ -4,7 +4,7 @@ description: Get an overview of the telemetry that's available in the Monitoring
 author: rijoshi1 
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 05/29/2026
+ms.date: 06/12/2026
 ms.author: rijoshi 
 ms.reviewer: twheeloc
 ms.custom: bap-template
@@ -69,7 +69,7 @@ Use the provided Power BI dashboards to visualize the telemetry.
 >
 > - This feature is available in **PU69/10.0.45 (build >= 7.0.7690.21)** and **PU68/10.0.44 (build >= 7.0.7606.126)**.
 
-Three flights control batch telemetry:
+Three flights control batch telemetry and are enabled by default:
 
 1. **BatchTelemetryConfigurationFlight**
 1. **BatchThreadInfoTelemetryFlight**
@@ -108,7 +108,7 @@ By using this integration, you can:
 - Monitor job status from source to staging and staging to target.
 - Monitor failures with error messages at granular level.
 
-DMF telemetry is controlled by the following two flights:
+Two flights control DMF telemetry, and they're enabled by default:
 
 - **DMFTelemetryConfigurationFlight**
 - **DMFEnableAppInsightsLogsAndErrors**
