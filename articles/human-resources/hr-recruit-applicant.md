@@ -4,7 +4,7 @@
 title: Applicants in the HR Recruiting app 
 description: This article describes applicants and activities in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2025
+ms.date: 06/11/2026
 ms.topic: article
 # optional metadata
 
@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Applicants in HR recruiting app
 
-This article describes applicants and activities in the HR Recruiting app in Microsoft Dynamics 365 Human Resources. *Applicants* are candidates who submit applications for job vacancies. Recruiters can view applicants by going to **Job ads** \> **Applicants**.
+This article describes applicants and activities in the HR Recruiting app in Microsoft Dynamics 365 Human Resources. *Applicants* are candidates who submit applications for job vacancies. Recruiters can view applicants by going to **Job ads** > **Applicants**.
 
 ## View the applications for a job
 
@@ -44,7 +44,7 @@ Every application has a status that indicates which phase of the application pro
 - Internal application statuses reflect the internal process that's relevant to the recruiter. These statuses are hidden from the candidate.
 - External application statuses inform the candidate about the status of their application.
 
-The following table describes the statuses that are available.
+The following table describes the available statuses.
 
 | Scenario | Internal status | External status |
 |----------|----------|----------|
@@ -60,7 +60,7 @@ Recruiters can delete one or more applicants at a time.
 
 To delete applicants, follow these steps:
 
-1. Go to **Job ads** \> **Applicants** \> **Applicant**.
+1. Go to **Job ads** > **Applicants** > **Applicant**.
 1. Select **Delete applicant**.
 
 ## Activities

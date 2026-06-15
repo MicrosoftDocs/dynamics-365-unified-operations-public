@@ -4,7 +4,7 @@
 title: Use the careers site in the HR Recruiting app 
 description: This article explains how to use the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2025
+ms.date: 06/11/2026
 ms.topic: how-to
 # optional metadata
 
@@ -23,12 +23,12 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Use the careers site in the HR Recruiting app 
+# Use the careers site in the HR Recruiting app
+
 This article explains how to use the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
 The careers site helps candidates showcase their skills and qualifications, and stay connected with the hiring process. On the careers site, candidates can create and update their personal profile, upload their resume and other documents, apply for jobs, and track the status of their application. They can also view and accept job offers, provide feedback, and communicate with recruiters.
 
- 
 ## Sign in to the careers site
 
 Candidates must have an account to sign in to the careers site.
@@ -36,18 +36,18 @@ Candidates must have an account to sign in to the careers site.
 To sign in to the careers site if you already have an account, follow these steps:
 
 1. On the home page of the careers site, select **Sign in**.
-1. Enter your email address and password. 
+1. Enter your email address and password.
 
 If you don't yet have an account, select **Create one**. After an account is created, you're signed in to the careers site.
 
 > [!NOTE]
 > Before you can sign in or create an account, you must agree to the privacy policy.
 
-An icon that contains the candidate's initials appears in the upper-right corner of the page. This icon indicates that the candidate is signed in. It can also be used to access the candidate's profile and settings. 
+An icon that contains the candidate's initials appears in the upper-right corner of the page. This icon indicates that the candidate is signed in. It can also be used to access the candidate's profile and settings.
 
 > [!NOTE]
-> When a user selects the **Remember me** option while logging into their account, the server stores a cookie for future logins. This allows the user to remain logged in without signing in again, as long as they haven't signed out. If the browser closes unexpectedly, the user remains logged in until they manually log out from the session.
- 
+> When a user selects the **Remember me** option while logging into their account, the server stores a cookie for future logins. This allows the user to remain logged in without signing in again, as long as they haven't signed out. If the browser closes unexpectedly, the user remains logged in until they manually sign out from the session.
+
 ## Create a profile
 
 To create a profile, follow these steps:
@@ -65,19 +65,19 @@ To create a profile, follow these steps:
 1. To upload a resume, select **Choose file**, select the file, and then select **Upload**.
 1. Select **Submit**.
 
-After a candidate submits a profile, they can view and edit it as required. 
+After a candidate submits a profile, they can view and edit it as required.
 
 ## Apply for jobs
 
-The **Job** tab shows a list of available jobs that a candidate can apply for. The candidate can use the controls on the left to search or filter the results by keywords, location, or job type. They can also select a job title to view more information about the job, such as the description, requirements, and benefits. 
- 
+The **Job** tab shows a list of available jobs that a candidate can apply for. The candidate can use the controls on the left to search or filter the results by keywords, location, or job type. They can also select a job title to view more information about the job, such as the description, requirements, and benefits.
+
 To apply for a job, a candidate selects **Apply** and follows the on-screen instructions. A message notifies the candidate that they successfully applied for the job. The candidate also receives email alerts if the admin set up the email template for the application scenario.
 
 ## Action center
 
 The **Action center** tab shows the jobs that a candidate applied for and the progress of each application. The candidate can select any job title to learn more about the job and how to apply for it.
 
-To cancel a job application, the candidate selects **Withdraw** at the bottom of the job details page. 
+To cancel a job application, the candidate selects **Withdraw** at the bottom of the job details page.
 
 ## Candidate profile in the Recruiting add-on
 
