@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 05/12/2026
+ms.date: 06/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-07-30
@@ -21,7 +21,7 @@ This article explains how to set up the Making Tax Digital web service for value
 
 > [!NOTE]
 >
-> - To meet security requirements, we implemented modifications to the direct system-to-system integration of Microsoft Dynamics 365 Finance with the HMRC web service that is used to submit value-added tax (VAT) returns for companies that are registered for VAT in the United Kingdom. These changes involve the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials that are essential for software authorization in the HMRC APIs.
+> - To meet security requirements, Microsoft implemented modifications to the direct system-to-system integration of Microsoft Dynamics 365 Finance with the HMRC web service that is used to submit value-added tax (VAT) returns for companies that are registered for VAT in the United Kingdom. These changes involve the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials that are essential for software authorization in the HMRC APIs.
 > - Learn about the transition of cloud-based deployments to the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in [Security enhancements in UK MTD VAT integration (cloud-based deployments only)](emea-gbr-mtd-vat-security-enhancements.md).
 > - By June 6, 2025, these services are no longer accessible from on-premises deployments. Learn more in [Deprecation of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/12/04/dynamics-365-finance-uk-mtd-vat-integration-deprecation/).
 > - As of June 6, 2025, **batch-mode submission** of VAT returns through the **Making Tax Digital** feature is **no longer supported**. However, the report (**VAT 100**) in Excel and JavaScript Object Notation (JSON) formats can still be generated in batch mode.
@@ -69,7 +69,7 @@ To prepare Finance to interoperate with MTD VAT, import the following ER configu
 Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the number of the KB in the [LCS Issue search portal](https://lcs.dynamics.com/v2) to learn more about the changes introduced. If the latest configuration version contains references to the objects that aren't available in your Finance version, the import process locks for that configuration version. In this case, import the latest version of the configuration that's available for your Finance version.
 
 > [!IMPORTANT]
-> We recommend using the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature. To work with the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature, you must import the following versions or later of Electronic Reporting (ER) configurations into Finance:
+> Use the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature. To work with the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature, import the following versions or later of Electronic Reporting (ER) configurations into Finance:
 >
 > - MTD VAT model mapping, version 46.**75**, under the Electronic Messages framework model
 > - MTD VAT authorization format (UK), version 46.**20**, under the Electronic Messages framework model
@@ -148,9 +148,9 @@ When your setup of **ReportFieldLookup** for the **VAT Declaration JSON (UK)** f
 
 1. In the configuration tree, **Tax declaration model**, select the **VAT Declaration JSON (UK)** format.
 1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you completed the setup of **ReportFieldLookup** for.
-1. On the Action Pane, select **Export** to save your configuration in XML format, then close the **Application specific parameters** page.
+1. On the Action Pane, select **Export** to save your configuration in XML format, and then close the **Application specific parameters** page.
 1. In the configuration tree, under the **VAT Declaration JSON (UK)** format, select the **VAT Declaration Excel (UK)** format.
-1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, then select the version of the format that you want to use.
+1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use.
 1. On the Action Pane, select **Import**, select the file that you saved in step 6, and select **OK** to confirm the import.
 1. Change the value of the **State** field to **Completed**, save your changes, and close the **Application specific parameters** page.
 
@@ -158,14 +158,14 @@ When your setup of **ReportFieldLookup** for the **VAT Declaration JSON (UK)** f
 >
 > - The setup of **ReportFieldLookup** is company specific.
 > - Before you start to set up **ReportFieldLookup**, be sure to select the legal entity in which you want to generate the VAT declaration for the United Kingdom.
-> - If you want to generate the VAT declaration for the United Kingdom from multiple legal entities in Finance, set up **ReportFieldLookup** for each legal entity. To replicate the application-specific parameters from one Legal entity to multiple, use the **Replicate** button on the Action pane of the **Application specific parameters** page.
+> - If you want to generate the VAT declaration for the United Kingdom from multiple legal entities in Finance, set up **ReportFieldLookup** for each legal entity. To replicate the application-specific parameters from one legal entity to multiple, use the **Replicate** button on the Action pane of the **Application specific parameters** page.
 > - The setup of **ReportFieldLookup** is mandatory for all legal entities that report VAT as a VAT group.
 
 ## <a id="headers"></a>Set up application-specific parameters for MTD VAT web request headers format
 
 [By law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/), you must submit header data for the MTD VAT application programming interfaces (APIs) in the United Kingdom. When you use the MTD VAT APIs, MTD-compatible software must submit HTTP fraud prevention headers that include the public IP address of the client and the public IP address of the server.
 
-To enable Finance to collect client and server public IP addresses, you must set up the **ExternalServiceEndpoints\_LOOKUP** application-specific parameter for the **MTD VAT web request headers format (UK)** format under **Electronic Messages framework model** in the **Electronic reporting** workspace.
+To enable Finance to collect client and server public IP addresses, set up the **ExternalServiceEndpoints\_LOOKUP** application-specific parameter for the **MTD VAT web request headers format (UK)** format under **Electronic Messages framework model** in the **Electronic reporting** workspace.
 
 To set up the **ExternalServiceEndpoints\_LOOKUP** application-specific parameter, follow these steps:
 
@@ -191,7 +191,7 @@ To set up the **ExternalServiceEndpoints\_LOOKUP** application-specific paramete
 
     > [!IMPORTANT]
     > - When you finish setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the **Application specific parameters** page.
-    > - You must set up the **ExternalServiceEndpoint** application-specific parameter for the **MTD VAT web request headers format (UK)** format under **Electronic Messages framework model** for the legal entity that you interoperate with HMRC's MTD VAT API from.
+    > - Set up the **ExternalServiceEndpoint** application-specific parameter for the **MTD VAT web request headers format (UK)** format under **Electronic Messages framework model** for the legal entity that you interoperate with HMRC's MTD VAT API from.
 
 ## <a id="entities"></a>Import a package of data entities that includes a predefined EM setup
 
@@ -248,7 +248,7 @@ To generate the **VAT 100** report in Excel format instead of [SQL Server Report
 
 To define an ER format on the **General ledger parameters** page, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **General ledger parameters**.
 1. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (UK)**.
 
 ## <a id="vatgroup"></a>Enable VAT return reporting for companies that report as a VAT group in the same system database
@@ -270,13 +270,13 @@ To enable Finance to report VAT returns from multiple legal entities in the same
 
 ## <a id="settlement"></a>Define a sales tax settlement period
 
-Electronic message processing that you define for MTD VAT in the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY` package is company-agnostic. Therefore, you can implement it in any legal entity in Finance.
+The electronic message processing that you define for MTD VAT in the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY` package isn't specific to any company. Therefore, you can implement it in any legal entity in Finance.
 
 Both the **UK MTD VAT returns** processing for production and the **UK MTD VAT TEST** processing for testing purposes let you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in JSON or Excel format, for either production or testing purposes. The collection of sales tax payment transactions is implemented by using the **Populate VAT return records** action of the **Populate record** type. To correctly collect sales tax payment transactions, you must define a sales tax settlement period for the **Populate VAT return records** action.
 
 To define a sales tax settlement period, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**, and select **Populate VAT return records**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**, and select **Populate VAT return records**.
 1. On the **Datasource setup** FastTab, select the **VAT payment** record, and then select **Edit query**.
 1. For the **Settlement period** field of the **Sales tax payments** table, define the sales tax settlement period that relates to the tax transactions from the selected legal entity that you must report to HMRC.
 
@@ -288,7 +288,7 @@ If your company must report a VAT return as a VAT group, make sure that you meet
 
 To set up the sales tax settlement period, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**. On the **Populate records action** page, the **Datasources setup** grid includes a **Company** field. For existing records that you create during the general setup of the MTD VAT feature, this field shows the identifier of the current legal entity. It's assumed that you set up the settlement period for the current legal entity during the general setup of the MTD VAT feature.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**. On the **Populate records action** page, the **Datasources setup** grid includes a **Company** field. For existing records that you create during the general setup of the MTD VAT feature, this field shows the identifier of the current legal entity. It's assumed that you set up the settlement period for the current legal entity during the general setup of the MTD VAT feature.
 1. In the **Datasources setup** grid, add a line for each subsidiary legal entity that you must include in reporting for the VAT group. Set the following fields.
 
     | Field name             | Value |
@@ -303,7 +303,7 @@ To set up the sales tax settlement period, follow these steps:
     | Company                | Select the ID of the subsidiary legal entity. |
     | User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**. |
 
-1. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
+1. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that you specified in the **Company** field on the line.
 
     :::image type="content" source="../media/uk-mtd-populate-records-datasources.png" alt-text="Screenshot of setup of data sources for a VAT group.":::
 
@@ -315,14 +315,14 @@ To work with the **Electronic Messages** functionality, you must define the rela
 
 To define the related number sequences, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **General ledger parameters**.
 1. On the **Number sequences** tab, set up two number sequences:
     - Message
     - Message item
 
 ## <a id="docmanagement"></a>Set up document management parameters
 
-Before you start to submit a VAT return to HMRC, make sure that the **JSON** and **Excel** file types are defined on the **File types** tab of the **Document management parameters** page (**Organization administration** \> **Document management** \> **Document management parameters**). If the **JSON** file type isn't in the list, add it.
+Before you start to submit a VAT return to HMRC, make sure that the **JSON** and **Excel** file types are defined on the **File types** tab of the **Document management parameters** page (**Organization administration** > **Document management** > **Document management parameters**). If the **JSON** file type isn't in the list, add it.
 
 :::image type="content" source="../media/uk-mtd-json-file-type-setup.png" alt-text="Screenshot of setup of the JSON file type.":::
 
@@ -337,7 +337,7 @@ To limit access to the **UK MTD VAT TEST** processing, follow these steps:
 
 To limit access to the **UK MTD VAT returns** processing, follow these steps:
 
-1. In Dynamics 365 Finance, go to *Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**.
 1. Select the **UK MTD VAT returns** processing, and add the security groups that must work with this processing for real-life interoperation with the production HMRC environment. If you don't define a security group for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
 If you don't define security roles for electronic message processing, only a system admin can see the electronic message processing by going to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
@@ -348,7 +348,7 @@ When you retrieve an access token to each HMRC web application (production and s
 
 To set up security groups that must have access to HMRC's access token for MTD VAT, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Electronic messages** > **Web applications**.
 1. Select the web application that you want to define security groups for, and on the **Security roles** FastTab, add those security groups, which must be able to send requests to HMRC's API.
 
 If you don't define security roles for a web application, only a system admin can use the selected web application for interoperation.
@@ -410,7 +410,7 @@ To work with the **Security enhancements in UK MTD VAT integration (cloud-based 
 Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!NOTE]
-> When you turn off the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your environment, and you submit requests to HMRC—such as retrieving VAT obligations or submitting a VAT return—use the following versions of the ER configurations:
+> When you turn off the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your environment, and you submit requests to HMRC - such as retrieving VAT obligations or submitting a VAT return - use the following versions of the ER configurations:
 >
 > - MTD VAT model mapping, version 46.**72**, under the Electronic Messages framework model
 > - MTD VAT authorization format (UK), version 46.**15**, under the Electronic Messages framework model
@@ -423,9 +423,11 @@ Learn more about how to import ER configurations in [Import Electronic reporting
 To comply with security requirements, enable the **Electronic Invoicing add-in**. This add-in acts as an intermediary, and ensures secure storage and management of credentials that are required for software authorization in the HMRC APIs. Enabling this functionality is a crucial step in maintaining a secure and compliant integration between Finance and the HMRC web service for the submission of VAT returns.
 
 For more information, see [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
-To enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature, make sure the
 
 ### Enable security enhancements in UK MTD VAT integration
+
+> [!IMPORTANT]
+> Before you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, make sure you complete this step for all legal entities that interact with HMRC's APIs: [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup.md#entities) and that the following prerequisites are met: **Electronic Invoicing add-in** is enabled and the required Electronic Reporting (ER) configuration versions (or later) are imported.
 
 To enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps:
 
