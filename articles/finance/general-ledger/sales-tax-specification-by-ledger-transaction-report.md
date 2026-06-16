@@ -4,8 +4,8 @@ description: Learn how to use the Sales tax specification by ledger transaction 
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 08/19/2019
-ms.reviewer: kfend
+ms.date: 06/15/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2019-08-19
@@ -15,6 +15,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Sales tax specification by ledger transaction report
+
 [!include [banner](../includes/banner.md)]
 
 This article explains how to use the **Sales tax specification by ledger transaction** report to view and print information about ledger transactions that sales tax is calculated for.
@@ -28,9 +29,9 @@ The **Sales tax specification by ledger transaction** report shows tax transacti
 
 For tax accounts, the **Origin**, **Sales tax receivable**, and **Sales tax payable** columns on the report show **0** (zero). For non-tax accounts, those columns show amounts.
 
-## Filtering the data on the report
+## Filter the data on the report
 
-When you generate the report, the following default fields are available. You can use these fields to filter the data that is shown on the report.
+When you generate the report, you see the following default fields. Use these fields to filter the data that is shown on the report.
 
 | Field                      | Description |
 |----------------------------|-------------|
@@ -42,11 +43,10 @@ When you generate the report, the following default fields are available. You ca
 | Totals only                | Set this option to **Yes** to show only totals. |
 | Main accounts only         | Set this option to **Yes** to include only main accounts on the report. |
 
-## Showing only non-tax accounts on the report
+## Show only non-tax accounts on the report
 
 To show only non-tax accounts on the report, set up a filter condition, such as an asterisk (\*), as shown in the following illustration.
 
 ![Report showing non-tax accounts.](media/taxspecperledgertrans.png)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

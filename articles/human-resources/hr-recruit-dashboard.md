@@ -4,7 +4,7 @@
 title: Use the dashboard in the HR Recruiting app 
 description: This article describes the dashboard in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2025
+ms.date: 06/11/2026
 ms.topic: article
 # optional metadata
 
@@ -23,7 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Use the dashboard in the HR Recruiting app 
+# Use the dashboard in the HR Recruiting app
 
 This article describes the dashboard in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
@@ -52,4 +52,4 @@ This list view shows the pending approvals for the user who must approve them. I
 
 ### Ready to hire candidates
 
-This line chart shows the number of candidates who are marked as hired in the Recruiting add-on app. It helps users view how many candidates were hired over different years. Users can also drill down into the charts by selecting an attribute.
+This line chart shows the number of candidates that the Recruiting add-on app marks as hired. It helps you see how many candidates were hired over different years. You can also drill down into the charts by selecting an attribute.

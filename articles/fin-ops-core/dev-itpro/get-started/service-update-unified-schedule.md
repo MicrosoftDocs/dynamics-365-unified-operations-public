@@ -39,22 +39,22 @@ For information about the maintenance windows for each region, see [What are the
 
 ## Release schedule
 
-### <a name="schedule"></a> Service update 10.0.47 schedule
+### <a name="schedule"></a> Service update 10.0.48 schedule
 
-**App version:** 10.0.2527.42
+**App version:** 10.0.2645.32
 
-**Platform version:** 7.0.7858.27
+**Platform version:** 7.0.7996.33
 
-**Unified Environment Provisioning Application Version:** 10.0.47.1
+**Unified Environment Provisioning Application Version:** 10.0.48.1
 
 | Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
-| Station 1 | Cancelled | NA |
-| Station 2 | Cancelled | Cancelled |
-| Station 3 | Cancelled | Cancelled |
-| Station 4 | Cancelled | Cancelled |
-| Station 5 | Cancelled | Cancelled |
-| Station 6 | Cancelled | Cancelled |
+| Station 1 | July 1 to July 2, 2026 | NA |
+| Station 2 | July 6 to July 7, 2026 | July 18 to July 19, 2026 |
+| Station 3 | July 6 to July 7, 2026 | July 18 to July 19, 2026 |
+| Station 4 | July 13 to July 14, 2026 | July 25 to July 26, 2026 |
+| Station 5 | July 20 to July 21, 2026 | August 1 to August 2, 2026  |
+| Station 6 | July 20 to July 21, 2026 | August 1 to August 2, 2026 |
 
 > [!IMPORTANT]
-> This update applies only to environments that are on version 10.0.45 or earlier. For version 10.0.46 environments and later, the update is skipped.
+> This update applies only to environments that are on version 10.0.46 or earlier. For version 10.0.47 environments and later, the update is skipped.
