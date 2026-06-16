@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about proactive qualit
 author: najaidee
 ms.author: najaidee
 ms.topic: faq
-ms.date: 03/26/2026
+ms.date: 06/16/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -17,6 +17,9 @@ ms.dyn365.ops.version: 10.0.29
 # Proactive quality updates (PQU) - FAQ
 
 This article provides answers to frequently asked questions about proactive quality updates (PQUs), new biweekly proactive quality updates, and the optional weekday update schedule.
+
+   > [!NOTE]
+   > The weekday update schedule option isn't supported in sovereign cloud environments at this time.
 
 ### What is the biweekly cadence for PQU?
 
