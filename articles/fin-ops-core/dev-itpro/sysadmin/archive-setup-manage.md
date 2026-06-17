@@ -44,7 +44,14 @@ You need the following privileges:
 To prepare your environment to archive data, follow these steps:
 
 1. Refresh your sandbox instance with PROD data to align it with your production instance.
-1. Ensure that your sandbox instance is on the latest version of finance and operations apps version 10.0.39 or later. Apply the latest quality updates for the version.
+1. Ensure that your sandbox instance is on the latest version of finance and operations apps. These are the minimum application build versions:
+
+   > | Release | Availability | 
+   > |---|---|
+   > | 10.0.45/Platform update 69 | 10.0.2345.220 or higher|
+   > | 10.0.46/Platform update 70 | 10.0.2428.162 or higher|
+   > | 10.0.47/Platform update 71 | 10.0.2527.94 or higher|
+
 1. Under license configuration, ensure that **SQL row version change tracking** is enabled. If it's not enabled, follow these steps:
 
     1. In Microsoft Dynamics Lifecycle Services, select the environment, and go to **Maintain** \> **Enable Maintenance Mode**.

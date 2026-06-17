@@ -26,7 +26,9 @@ The archive framework supports three customization scenarios:
 1. Build your own custom archive scenario by using custom tables.
 
 > [!NOTE]  
-> When you build your own custom archive scenario, use only custom tables. Custom scenarios can't reference Microsoft-managed tables, even as join or lookup dependencies.
+> When you build your own custom archive scenario, use only custom tables. Custom scenarios can't reference Microsoft-managed tables, even as join or lookup dependencies. The framework validates this requirement, and archive job creation fails if any Microsoft-managed table dependency is detected.
+>
+> Likewise, the framework validates that Microsoft-owned archival scenarios haven't been improperly modified through extensions—for example, by adding unauthorized Microsoft tables or removing required ones. If such customizations are detected, archive job creation fails.
 
 ## Create archive objects
 
