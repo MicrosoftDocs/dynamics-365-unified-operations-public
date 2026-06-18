@@ -4,7 +4,7 @@ description: Learn how to use the Account reconciliation workspace and the Copil
 author: twheeloc
 ms.author: brking
 ms.topic: article
-ms.date: 06/04/2026
+ms.date: 06/16/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -35,6 +35,12 @@ For more information about how to set up and configure the Account Reconciliatio
 
 ## Address exceptions
 
+Each exception contains AI-generated fields designed to help decision-making. These fields include:
+
+- **Suggested action** - recommends the most appropriate step to resolve the exception.
+- **Analysis** - provides context and insights derived from the underlying data.
+- **Justification** - explains the rationale behind the suggested action.
+
 To address exceptions, select **Mitigate exceptions** on the **Open exceptions** tile in the upper part of the workspace. You can view all exceptions for all modules across all legal entities. To open the **Mitigate exceptions** page, select the number of exceptions (in red) for a specific module and legal entity.
 
 On the **Open exceptions** page, you can view the details of each exception and take appropriate action to address it. The available actions vary, depending on the exception.
@@ -42,7 +48,7 @@ On the **Open exceptions** page, you can view the details of each exception and 
 If the exception is **In Subledger not in ledger**, the following actions are available:
 
 - **Create journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception. You create the journal and post it through a batch process or manually.
-- **Match exceptions** – Go to the **Match exceptions** page, where you can match exceptions that are in the subledger but not in the ledger and transactions that are in the ledger but not in the subledger. In Dynamics 365 Finance version 10.0.46, an improved *matching* experience is available.
+- **Match exceptions** – Go to the **Match exceptions** page, where you can match exceptions that are in the subledger but not in the ledger and transactions that are in the ledger but not in the subledger. In Dynamics 365 Finance version 10.0.46, an improved *matching* experience is available. The **Comment** field is automatically populated with a short AI-generated justification for the match recommendation. This comment is also used as the **Reason comment** when a journal entry is created from the exception.
 - **Accept without change** – Accept the exception as is, and clear it. Use this action when the difference is a small amount or a rounding difference.
 - **View exception history** – View the history of the exception.
 

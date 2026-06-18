@@ -4,7 +4,7 @@ description: Learn about how to onboard a project by using Microsoft Dynamics Li
 author: OlgaPetrovaFT
 ms.author: johnmichalak 
 ms.topic: article
-ms.date: 03/17/2026
+ms.date: 06/12/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: IT Pro
@@ -17,6 +17,8 @@ ms.dyn365.ops.version: July 2017 update
 # Onboard an implementation project
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article describes how to onboard a finance and operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 

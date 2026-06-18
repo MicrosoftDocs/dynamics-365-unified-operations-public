@@ -4,7 +4,7 @@ description: Learn about various aspects that you must consider while you plan f
 author: skaue-ms
 ms.author: toskaue
 ms.topic: article
-ms.date: 03/17/2026
+ms.date: 06/12/2026
 ms.custom: 
 ms.reviewer: johnmichalak  
 audience: IT Pro
@@ -17,6 +17,8 @@ ms.dyn365.ops.version: Finance and operations
 # Environment planning
 
 [!include[banner](../../../finance/includes/banner.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article provides an overview of various aspects that you must consider while you plan for your project's environment. To help guarantee a successful cloud implementation, discuss and plan your environment early in the project.
 
