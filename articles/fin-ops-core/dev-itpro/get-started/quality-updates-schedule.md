@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 05/04/2026
+ms.date: 06/18/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -165,12 +165,12 @@ The following table shows the high-level train schedule. It includes a descripti
 
 | Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
-| Station 1 | July 1 to July 4, 2026 | NA |
-| Station 2 | July 6 to July 9, 2026 | July 11 to July 12, 2026 |
-| Station 3 | July 6 to July 9, 2026 | July 11 to July 12, 2026 |
-| Station 4 | July 13 to July 15, 2026 | July 18 to July 19, 2026 |
-| Station 5 | July 20 to July 21, 2026 | July 25 to July 26, 2026 |
-| Station 6 | July 20 to July 21, 2026 | July 25 to July 26, 2026 |
+| Station 1 | June 17 to June 20, 2026 | NA |
+| Station 2 | June 22 to June 25, 2026 | June 27 to June 28, 2026 |
+| Station 3 | June 22 to June 25, 2026 | June 27 to June 28, 2026 |
+| Station 4 | June 29 to July 2, 2026 | July 4 to July 5, 2026 |
+| Station 5 | July 6 to July 9, 2026 | July 11 to July 12, 2026 |
+| Station 6 | July 6 to July 9, 2026 | July 11 to July 12, 2026 |
 
 > [!IMPORTANT]
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
