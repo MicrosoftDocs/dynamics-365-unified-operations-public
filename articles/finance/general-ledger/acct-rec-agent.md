@@ -4,7 +4,7 @@ description: Learn about the Account Reconciliation Agent in Microsoft Dynamics 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 05/06/2026
+ms.date: 06/16/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -37,12 +37,25 @@ Here are some of the benefits:
 To set up the Account Reconciliation Agent, follow these steps:
 
 1. In the **Feature management** workspace, enable the **(Preview) Account reconciliation agent** feature.
-1. Go to **Modules** \> **Agents**.
+1. Go to **Modules** > **Agents**.
 1. On the **Agents** page, find the **Account reconciliation** template, and enable the agent.
+
+1. Specify the start date for the reconciliation process.
+1. Add the modules that participate in the reconciliation process, and arrange them in order of priority.
+1. Specify the exception limits to apply during processing (daily or monthly).
+1. Set up alert settings (optional). You can configure notifications for the following conditions:
+
+- **Enable balance alert**: If you select this checkbox and specify a threshold value, the system triggers a notification when the balance falls below the defined value.
+- **Enable daily/monthly limit alert**: Based on the selected exception limit type (Daily or Monthly), the system shows the corresponding alert option. If you enable this alert, the system triggers a notification when usage reaches defined thresholds (50%, 75%, or 90%) of the selected limit.
+- **Notify if a run is skipped due to limit**: The system triggers a notification when the agent skips processing due to reaching a configured limit.
+
+1. Review and confirm the agent settings. The agent doesn't run until you confirm the settings.
+
+1. Activate the agent. After activation, you can edit the agent settings as needed.
 
 ## View agent recommendations for mitigating exceptions
 
-The Account Reconciliation Agent evaluates exceptions and provides a recommended action for each one. You can view the agent best from the **Account reconciliation** workspace.
+The Account Reconciliation Agent evaluates exceptions and provides a recommended action for each one. You can view the agent recommendations in the **Account reconciliation** workspace.
 
 > [!NOTE]
 > The Account reconciliation agent recommends actions for voucher amount mismatch exceptions.
