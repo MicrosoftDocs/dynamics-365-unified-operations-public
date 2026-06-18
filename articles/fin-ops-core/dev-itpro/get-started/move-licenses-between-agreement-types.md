@@ -4,7 +4,7 @@ description: Learn about how to move licenses between agreement types, including
 author: markusotte08
 ms.author: maotte
 ms.topic: how-to
-ms.date: 03/26/2026
+ms.date: 06/12/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -16,6 +16,8 @@ ms.dyn365.ops.version: AX 7.0
 # Move licenses between agreement types
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Sometimes, a customer who originally purchased subscriptions through a Microsoft Cloud Service Provider (CSP) agreement decides to change to a Microsoft Volume Licensing agreement with Microsoft after the Microsoft Dynamics Lifecycle Services Implementation project is created. The customer can make this change even after the project goes live in production.
 

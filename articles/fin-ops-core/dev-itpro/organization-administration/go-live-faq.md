@@ -4,7 +4,7 @@ description: Access frequently asked questions about how to go live with an impl
 author: alejandra-cabrales
 ms.author: alcabral
 ms.topic: faq
-ms.date: 03/17/2026
+ms.date: 06/12/2026
 ms.custom:
 ms.reviewer: johnmichalak   
 audience: IT Pro
@@ -17,6 +17,8 @@ ms.dyn365.ops.version: July 2017 update
 # Go-live for implementation projects FAQ
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article lists frequently asked questions about how to go live with an implementation project.
 
