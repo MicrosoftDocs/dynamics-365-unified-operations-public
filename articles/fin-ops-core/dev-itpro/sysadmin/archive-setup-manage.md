@@ -4,7 +4,7 @@ description: Learn about how to set up and manage archive data in finance and op
 author: pnghub
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/13/2026
+ms.date: 06/19/2026
 ms.custom:
 ms.reviewer: johnmichalak
 ---
@@ -44,7 +44,7 @@ You need the following privileges:
 To prepare your environment to archive data, follow these steps:
 
 1. Refresh your sandbox instance with PROD data to align it with your production instance.
-1. Please make sure your sandbox instance is running at least the 10.0.48 release version of finance and operations apps, or meets the minimum application build versions for earlier releases:
+1. Ensure your sandbox instance is running at least Dynamics 365 finance and operations apps version 10.0.48, or meets the minimum application build versions for earlier releases:
 
   > | Release | Availability | 
   > |---|---|
