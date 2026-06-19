@@ -4,7 +4,7 @@ description: Learn about how the archive feature in Microsoft Dynamics 365 finan
 author: git-kiran 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 05/12/2026
+ms.date: 06/19/2026
 ms.custom:
   - bap-template
 ms.reviewer: twheeloc 
@@ -28,7 +28,7 @@ The archive framework supports three customization scenarios:
 > [!NOTE]  
 > When you build your own custom archive scenario, use only custom tables. Custom scenarios can't reference Microsoft-managed tables, even as join or lookup dependencies. The framework validates this requirement, and archive job creation fails if any Microsoft-managed table dependency is detected.
 >
-> Likewise, the framework validates that Microsoft-owned archival scenarios haven't been improperly modified through extensions—for example, by adding unauthorized Microsoft tables or removing required ones. If such customizations are detected, archive job creation fails.
+> The framework also validates that Microsoft-owned archival scenarios haven't been improperly modified through extensions. For example, by adding unauthorized Microsoft tables or removing required ones. If such customizations are detected, the archive job creation fails.
 
 ## Create archive objects
 
