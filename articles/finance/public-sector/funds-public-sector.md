@@ -4,7 +4,7 @@ description: A fund is a self-balancing set of financial books that's used to co
 author: v-kiarnd
 ms.author: twheeloc
 ms.topic: article
-ms.date: 08/07/2017
+ms.date: 06/15/2026
 ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
@@ -21,28 +21,29 @@ ms.assetid: c746c09f-dc9e-4381-ae92-e1af484064b6
 
 A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 
-## What General ledger parameters should be set for funds?
+## What General ledger parameters should I set for funds?
 
-To learn about the General ledger parameters required for funds, see [General ledger in the public sector](general-ledger-public-sector.md).
+For more information about the General ledger parameters required for funds, see [General ledger in the public sector](general-ledger-public-sector.md).
 
 ## What fund classes and fund types do I need to set up?
-The Governmental Accounting Standards Board (GASB) recommends a set of Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting. The GAAP identifies eight fund types that are categorized under the three fund classes:
 
--   Governmental funds
-    -   General fund
-    -   Special revenue funds
-    -   Capital project funds
-    -   Debt service funds
--   Proprietary, or business-type, funds
-    -   Enterprise funds
-    -   Internal service funds
--   Fiduciary funds
-    -   Trust funds
-    -   Agency funds
+The Governmental Accounting Standards Board (GASB) recommends a set of Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting. The GAAP identifies eight fund types that fall under three fund classes:
 
-The three GAAP fund classes, plus a **Memo** class, are predefined options in Dynamics 365 Finance. 
+- Governmental funds
+  - General fund
+  - Special revenue funds
+  - Capital project funds
+  - Debt service funds
+- Proprietary, or business-type, funds
+  - Enterprise funds
+  - Internal service funds
+- Fiduciary funds
+  - Trust funds
+  - Agency funds
 
-Fund types are defined according to the needs of the organization. In most cases, you’ll set up the eight GAAP fund types. The fund types group funds for detailed fiscal tracking and reporting. Many funds can be included in a single high-level report, but each fund remains a separate fiscal and accounting entity with its own general ledger, income statements, and balance sheet reports. 
+The three GAAP fund classes, plus a **Memo** class, are predefined options in Dynamics 365 Finance.
+
+Fund types are defined according to the needs of the organization. In most cases, you set up the eight GAAP fund types. The fund types group funds for detailed fiscal tracking and reporting. Many funds can be included in a single high-level report, but each fund remains a separate fiscal and accounting entity with its own general ledger, income statements, and balance sheet reports.
 
 Each fund must have a unique fund number. Fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund. When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund.
 
@@ -50,17 +51,17 @@ Each fund must have a unique fund number. Fund numbers are used as dimension val
 
 Here’s a list of some of the funds that might be used by a town government:
 
--   General Fund
--   School of Technology
--   Information Technology
--   Farmers Market
--   Utilities Commission
--   Courier Service
--   Worker’s Compensation Fund
--   Comprehensive Major Medical Plan
--   Deferred Compensation
--   Local Sales Tax Collections
--   Clerk of Courts
+- General Fund
+- School of Technology
+- Information Technology
+- Farmers Market
+- Utilities Commission
+- Courier Service
+- Worker’s Compensation Fund
+- Comprehensive Major Medical Plan
+- Deferred Compensation
+- Local Sales Tax Collections
+- Clerk of Courts
 
 The following table shows these funds grouped by fund class and fund type.
 
@@ -79,23 +80,19 @@ The following table shows these funds grouped by fund class and fund type.
 |                |                        | 3914            | Clerk of Courts                  |
 
 ## How are financial dimensions used with funds?
-Each fund must have a unique fund number. Fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund. When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund. 
 
-Public sector organizations usually require balanced entries for financial dimensions related to funds. When a financial dimension or a combination of dimensions is marked to require balanced entries, the system will not post a transaction where debits do not equal credits for the financial dimension.
+Each fund must have a unique fund number. Fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund. When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund.
+
+Public sector organizations usually require balanced entries for financial dimensions related to funds. When a financial dimension or a combination of dimensions is marked to require balanced entries, the system won't post a transaction where debits don't equal credits for the financial dimension.
 
 ## How do I set a fund balance to carry over to the new year?
+
 To learn about year-end processing for funds, see [Year-end processing in the public sector](year-end-processing-public-sector.md).
 
-
-For more information, see the following topics:
+For more information, see the following articles:
 
 [Create a fund type](tasks/create-fund-type-public-sector.md)
 
 [Set up a fund](tasks/set-up-fund-public-sector.md)
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
