@@ -44,6 +44,8 @@
         href: ../fin-ops-core/dev-itpro//deployment/deploy-demo-environment.md?context=/dynamics365/context/commerce
       - name: Deploy a Commerce trial (Preview) environment
         href: dev-itpro/commerce-trial.md
+      - name: Manage Commerce deployments in Power Platform admin center (Public Preview)
+        href: dev-itpro/commerce-power-platform-admin-center.md
       - name: One Version service updates
         items:
         - name: One Version service updates overview
