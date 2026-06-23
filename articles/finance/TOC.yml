@@ -2184,10 +2184,16 @@
                          href: localizations/brazil/brazil-reform-calculation-project-quotation.md                       
                        - name: Calculation in General journal in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-general-journal.md
+                       - name: Fiscal notes for fines and interest in Brazil tax reform
+                         href: localizations/brazil/brazil-reform-fines-interest.md
+                       - name: Fiscal notes for advance payment in Brazil tax reform
+                         href: localizations/brazil/brazil-reform-advance-payment.md  
+                       - name: Fiscal notes for inventory loss in Brazil tax reform
+                         href: localizations/brazil/brazil-reform-inventory-loss.md  
                        - name: Work with NFS-e Service Invoices
                          href: localizations/brazil/brazil-nfs-e-service-invoices.md
                        - name: Work with NFS-e Service Invoices for Projects
-                         href: localizations/brazil/brazil-nfs-e-service-invoices-projects.md  
+                         href: localizations/brazil/brazil-nfs-e-service-invoices-projects.md
                     - name: Fiscal books
                       items:
                         - name: Brazil fiscal books overview
