@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 06/18/2026
+ms.date: 06/23/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -61,7 +61,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.46 PQU-3 | April 1, 2026 | April 6, 2026 to May 9, 2026| Completed |
 | 10.0.46 PQU-4 | April 29, 2026 | May 4, 2026 to June 6, 2026| Completed |
 | 10.0.46 PQU-5 | May 27, 2026 | June 1, 2026 to July 5, 2026| In-Progress |
-| 10.0.46 PQU-6 | June 24, 2026 | June 29, 2026 to August 1, 2026| Not Started |
+| 10.0.46 PQU-6 | June 24, 2026 | June 29, 2026 to August 1, 2026| In-Progress |
 | 10.0.46 PQU-7 | July 22, 2026 | July 27, 2026 to August 29, 2026| Not Started |
 | 10.0.46 PQU-8 | August 21, 2026 | August 31, 2026 to October 3, 2026| Not Started |
 | 10.0.47 PQU-1 | April 8, 2026 | April 8, 2026 to May 2, 2026| Completed |
@@ -121,7 +121,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | June 22 to June 25, 2026 | July 4 to July 5, 2026 |
 | Station 6 | June 23 to June 26, 2026 | July 4 to July 5, 2026 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.46 Release-5 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.46 Release-5 train schedule
 
 **App version: 10.0.2428.188**
 
@@ -137,6 +137,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | June 15 to June 18, 2026 | June 27 to June 28, 2026 |
 | Station 5 | June 22 to June 25, 2026 | July 4 to July 5, 2026 |
 | Station 6 | June 23 to June 26, 2026 | July 4 to July 5, 2026 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.46 Release-6 train schedule
+
+**App version: 10.0.2428.205**
+
+**Platform version: 7.0.7778.137**
+
+**Unified Environment Provisioning Application Version: 10.0.46.8**
+
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
+|---|---|---|
+| Station 1 | June 29 to July 2, 2026 | NA |
+| Station 2 | July 6 to July 9, 2026 | July 18 to July 19, 2026 |
+| Station 3 | July 7 to July 10, 2026 | July 18 to July 19, 2026 |
+| Station 4 | July 13 to July 16, 2026 | July 25 to July 26, 2026 |
+| Station 5 | July 20 to July 23, 2026 | August 1 to August 2, 2026 |
+| Station 6 | July 21 to July 24, 2026 | August 1 to August 2, 2026 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-5 train schedule
 
