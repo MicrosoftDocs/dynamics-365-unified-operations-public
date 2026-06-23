@@ -3172,6 +3172,8 @@
         href: copilot-site-builder.md
       - name: Streamline your merchandising process with Copilot-based insights
         href: copilot-based-merch-insights.md
+      - name: Use the Commerce MCP server (preview) for agentic commerce
+        href: commerce-mcp.md
     - name: Responsible AI FAQs
       items: 
       - name: Overview
