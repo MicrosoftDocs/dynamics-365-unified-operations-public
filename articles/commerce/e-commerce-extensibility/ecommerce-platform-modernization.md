@@ -2,7 +2,7 @@
 title: E-commerce platform modernization
 description: Learn about platform modernization efforts for the Dynamics 365 Commerce online SDK, including Node.js runtime upgrades and TypeScript upgrades.
 author: mithun-microsoft
-ms.date: 06/07/2026
+ms.date: 06/24/2026
 ms.topic: overview
 ms.search.region: Global
 ms.author: mithunbobade
@@ -20,20 +20,21 @@ This article describes ongoing platform modernization efforts for the Microsoft 
 
 ## Node.js runtime upgrade
 
-The SDK package for Dynamics 365 Commerce release 10.0.49 only supports **Node.js 22**. Node.js 22 delivers significant security improvements, an updated V8 engine, and long-term support (LTS) coverage through April 2027.
+The SDK package for Dynamics 365 Commerce release 10.0.49 supports **Node.js 22** and **Node.js 24**. Node.js 24 is the recommended runtime and delivers the latest security improvements, an updated V8 engine, and long-term support (LTS) coverage.
 
-### Supported Node.js version
+### Supported Node.js versions
 
 | Node.js version | Support status |
 | --------------- | -------------- |
-| Node.js 22.x | Supported; required on the SDK package for Dynamics 365 Commerce release 10.0.49 |
+| Node.js 22.x | Supported on the SDK package for Dynamics 365 Commerce release 10.0.49 |
+| Node.js 24.x | Supported on the SDK package for Dynamics 365 Commerce release 10.0.49 (recommended) |
 
 > [!IMPORTANT]
-> The SDK package for Dynamics 365 Commerce release 10.0.49 only supports **Node.js 22**.
+> The SDK package for Dynamics 365 Commerce release 10.0.49 supports **Node.js 22** and **Node.js 24** only. **Node.js 24** is the recommended runtime. Earlier Node.js versions aren't supported.
 
 ### Why upgrade?
 
-Upgrading to Node.js 22 provides:
+Upgrading to Node.js 24 provides:
 
 - Active security updates
 - Improved performance through the updated V8 engine
@@ -41,9 +42,9 @@ Upgrading to Node.js 22 provides:
 
 ### What you need to do
 
-To move your development environment to Node.js 22:
+To move your development environment to Node.js 24:
 
-1. **Upgrade Node.js**: Install Node.js 22 in your development environment.
+1. **Upgrade Node.js**: Install Node.js 24 in your development environment.
 
    For installation steps, see [Set up a development environment](setup-dev-environment.md).
 
@@ -76,7 +77,7 @@ Starting with online SDK package version 9.55 (SDK bootloader version 1.55), the
 > [!NOTE]
 > The SDK's `package.json` resolutions pin the TypeScript version to **4.2.4**. After you upgrade to SDK package version 9.55 or later, running `yarn install` automatically resolves the correct TypeScript version.
 
-### What you need to do
+### How to upgrade
 
 If you're upgrading from an SDK version earlier than 9.55, complete the following steps:
 

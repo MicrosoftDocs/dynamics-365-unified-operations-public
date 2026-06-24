@@ -685,20 +685,6 @@
         href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?context=/dynamics365/context/supply-chain
       - name: Use content pack for Microsoft Power BI reporting
         href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?context=/dynamics365/context/supply-chain
-    - name: Global Inventory Accounting
-      items:
-      - name: Global Inventory Accounting home page
-        href: global-inventory-accounting/global-inventory-accounting-home.md
-      - name: Get started with Global Inventory Accounting
-        href: global-inventory-accounting/get-started-with-gia.md
-      - name: Business documents supported by Global Inventory Accounting
-        href: global-inventory-accounting/business-documents-supported.md
-      - name: Enable Power BI for Global Inventory Accounting
-        href: global-inventory-accounting/enable-power-bi-for-gia.md
-      - name: Conventions
-        href: global-inventory-accounting/conventions.md
-      - name: Global Inventory Accounting ledger
-        href: global-inventory-accounting/global-inventory-accounting-ledger.md
     - name: Cost management
       items:
       - name: Cost management home page
@@ -4247,6 +4233,20 @@
         href: supply-chain-dev/create-new-transportation-management-engine.md?context=/dynamics365/context/supply-chain
       - name: Extend inventory on-hand data entities
         href: inventory/extend-on-hand-entities.md
+    - name: Global Inventory Accounting (deprecated)
+      items:
+      - name: Global Inventory Accounting home page
+        href: global-inventory-accounting/global-inventory-accounting-home.md
+      - name: Get started with Global Inventory Accounting
+        href: global-inventory-accounting/get-started-with-gia.md
+      - name: Business documents supported by Global Inventory Accounting
+        href: global-inventory-accounting/business-documents-supported.md
+      - name: Enable Power BI for Global Inventory Accounting
+        href: global-inventory-accounting/enable-power-bi-for-gia.md
+      - name: Conventions
+        href: global-inventory-accounting/conventions.md
+      - name: Global Inventory Accounting ledger
+        href: global-inventory-accounting/global-inventory-accounting-ledger.md
     - name: Distributed hybrid topology (deprecated)
       items:
       - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
