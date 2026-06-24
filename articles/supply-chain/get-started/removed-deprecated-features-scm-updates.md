@@ -4,7 +4,7 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: article
-ms.date: 05/29/2026
+ms.date: 06/24/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -25,6 +25,16 @@ Use this list to help you consider these removals and deprecations for your own 
 > For detailed information about objects in finance and operations apps, see the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that changed or were removed in each version of finance and operations apps.
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.49 release
+
+### Global Inventory Accounting
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation or removal** | The Global Inventory Accounting (GIA) solution is being retired to bring modernized inventory costing capability with improved architecture. |
+| **Replaced by another feature?** | Yes, a multi-ledger costing solution will serve as GIA's successor, providing comparable capabilities along with significant improvements. Learn more in the blog post [See what's next in financial operations from Microsoft Dynamics 365](https://www.microsoft.com/dynamics-365/blog/business-leader/2025/05/08/see-whats-next-in-financial-operations-from-microsoft-dynamics-365-at-gartner-cfo-finance-executive-conference-2025/). |
+| **Product areas affected** | Dynamics 365 Finance and Dynamics 365 Supply Chain Management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | <p>Deprecated. GIA will reach end of support on July 1, 2027.</p><p>If you're using GIA, review your usage and take the appropriate action based on your scenario:</p><ul><li>If you aren't using GIA in a production environment, no action is required.</li><li>If you only installed or enabled GIA in sandbox or test environments, review whether you're actively using it. If you don't need GIA, disable or remove the feature and avoid new implementations that are based on it.</li><li>If you're actively using GIA, or if dependencies on it exist, on a production environment, assess your current usage and dependencies. Begin planning a transition to supported costing capabilities, and validate changes in a test environment before July 2027. We recommend that you engage with Microsoft or your implementation partner for transition planning support.</li></ul> |
 
 ### Follow-up questions in the Copilot sidecar (preview)
 
