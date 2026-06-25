@@ -4,8 +4,8 @@ description: Learn about how to reverse a posted lease transaction. Any transact
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to
-ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.date: 06/23/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -23,24 +23,24 @@ Any transaction that is created through Asset leasing can be reversed. Transacti
 To create a reversing transaction for a lease, follow these steps:
 
 1. On either the **Asset transactions** page or the **Liability transactions** page, select the transaction, and then select **Reverse transaction**.
-2. In the dialog box that appears, you can edit the date when the reversing entry will be posted. By default, the **Date** field is set to the transaction posting date of the transaction that you selected. The reversing entry can't be posted earlier than the original posting date of the selected transaction.
-3. Select **OK**. A journal entry is posted that reverses the entry that you selected. The reversal is shown on the **Asset transactions** or **Liability transactions** page, and the net total of the current balance that is shown on the page is updated.
+1. In the dialog box that appears, edit the date when the reversing entry is posted. By default, the **Date** field is set to the transaction posting date of the transaction that you selected. You can't post the reversing entry earlier than the original posting date of the selected transaction.
+1. Select **OK**. A journal entry is posted that reverses the entry that you selected. The reversal is shown on the **Asset transactions** or **Liability transactions** page, and the net total of the current balance that is shown on the page is updated.
 
 When you select **Reverse tracing**, a dialog box appears that shows both the original transactions and the reversed transactions, together with a linked number that is known as a *trace number*. To make the reversals easier to understand and to improve visibility, you can also track reversals by using the lease schedules.
 
-The **Latest journal number** field on the **Schedule** page shows the journal numbers of transactions. When a transaction is reversed, this field is updated with the journal number of a reversing transaction. Additionally, the **Reversed** check box is selected to indicate that the transaction is reversed, and the **Posted** field is selected.
+The **Latest journal number** field on the **Schedule** page shows the journal numbers of transactions. When you reverse a transaction, this field is updated with the journal number of a reversing transaction. Additionally, the **Reversed** check box is selected to indicate that the transaction is reversed, and the **Posted** field is selected.
 
 ## Revoke a reversed transaction
 
 To revoke a reversed transaction, follow these steps:
 
 1. On either the **Schedule** page or the **Transactions** page, select the original transaction.
-2. Follow one of these steps:
+1. Follow one of these steps:
 
     - If you selected the transaction on the **Schedule** page, follow the steps for creating a journal in [Create monthly journal entries in a batch](create-monthly-journals-batch.md). You must manually post the journal.
-    - If you selected the transaction on the **Transactions** page, select **Reverse transaction**. You receive a message that states that this revocation is a revocation of an earlier reversal, and that you can edit the posting date for this revocation. However, general business validations affect the dates that can be entered in the **Date** field. 
+    - If you selected the transaction on the **Transactions** page, select **Reverse transaction**. You receive a message that states that this revocation is a revocation of an earlier reversal, and that you can edit the posting date for this revocation. However, general business validations affect the dates that you can enter in the **Date** field. 
 
-3. Select **OK**. A journal entry is posted that reverses the entry that you selected. The reversal is shown on the **Transactions** page, and the net total current balance is restored to what it was before the first reversal. Therefore, the impact that the reversal had on the balances is negated.
+1. Select **OK**. A journal entry is posted that reverses the entry that you selected. The reversal is shown on the **Transactions** page, and the net total current balance is restored to what it was before the first reversal. Therefore, the impact that the reversal had on the balances is negated.
 
 When you select **Reverse tracing**, a dialog box appears that shows both the original transactions and the reversed transactions, together with a linked trace number.
 

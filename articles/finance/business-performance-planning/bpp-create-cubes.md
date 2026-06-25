@@ -4,8 +4,8 @@ description: Learn how to create planning cubes using the new Data model builder
 author: twheeloc
 ms.author: romainpham
 ms.topic: overview
-ms.date: 11/25/2025
-ms.reviewer: theeloc
+ms.date: 06/22/2026
+ms.reviewer: twheeloc
 ms.collection: get-started
 ---
 
@@ -24,12 +24,12 @@ Cubes form the foundation for all planning and forecasting scenarios. After you 
 
 Starting in version **1.14**, the **Data model builder (preview)** feature introduces a new, visual approach to cube creation.  
 It enables model builders to:
+
 - Create cubes faster and more intuitively.  
 - Tag and classify datasets from Excel to identify the fact table and associated dimensions.  
 - Import fully defined cube structures from JSON files, including relationships, facts, and dimensions.  
 - Preview model structure before publishing.  
 - Build draft cubes that you can refine, validate, and extend before committing.
-
 
 ### Key concepts
 
@@ -46,18 +46,19 @@ For more information, see [Business performance planning overview](business-perf
 ### Available cube creation methods
 
 Use the following methods to create cubes:
- - [Existing dimensions](BPP-cub-dim.md) - Build a cube schema from scratch by using existing Business performance planning dimensions already defined in your environment.
- - [Excel](bpp-cube-Excel.md) - Upload one or several Excel files that contain fact and dimension data. Business performance planning automatically detects, classifies, and links datasets to shape the planning model.
- - [JSON](bpp-json.md) - Import a preconfigured cube definition from a JSON file to quickly deploy or migrate models.
 
+- [Existing dimensions](BPP-cub-dim.md) - Build a cube schema from scratch by using existing Business performance planning dimensions already defined in your environment.
+- [Excel](bpp-cube-Excel.md) - Upload one or several Excel files that contain fact and dimension data. Business performance planning automatically detects, classifies, and links datasets to shape the planning model.
+- [JSON](bpp-json.md) - Import a preconfigured cube definition from a JSON file to quickly deploy or migrate models.
 
 #### After you create a cube
 
 After you publish a cube to Dataverse, you can:
+
 - Load fact data by using [dataflows](load-data-dataflows.md) or Excel upload.  
 - Add [custom drivers](custom-drivers.md) or [calculated columns](calculated-columns.md) to extend logic.  
 - Enable [cube audit](cube-audit.md) or the **Non-Clustered Columnstore Index** for performance and traceability.  
-- Export or import cube definitions for re-use across environments.
+- Export or import cube definitions for reuse across environments.
 
 > [!TIP]
 > Use the **Cubes (preview)** workspace to manage both **Draft** and **Published** cubes in one unified view.
@@ -78,9 +79,3 @@ The following limitations apply to the current Cube (preview) experience:
 - [Create a cube from JSON](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
-
-
-
-
-
-

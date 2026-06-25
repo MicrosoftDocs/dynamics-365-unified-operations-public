@@ -4,7 +4,7 @@ description: Learn about the posting accounts that are required for Asset leasin
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to
-ms.date: 04/12/2021
+ms.date: 06/23/2026
 ms.reviewer: kfend
 audience: Application User
 ms.search.region: Global
@@ -24,7 +24,7 @@ To comply with Accounting Standards Codification Topic 842 (ASC 842) and Interna
 
 For information about how to create account structures, see [Create account structures](../general-ledger/tasks/create-account-structures.md). For information about how to create a main account, see [Create a main account](../general-ledger/tasks/create-main-account.md).
 
-The following table shows examples of accounts that you must create for leased asset transactions, if they haven't already been created. Under IFRS 16, the operating lease relationships are still used for low-value and short-term leases.
+The following table shows examples of accounts that you must create for leased asset transactions, if they aren't already created. Under IFRS 16, the operating lease relationships are still used for low-value and short-term leases.
 
 | Ledger account number | Account type  | Account name                                          |
 |-----------------------|---------------|-------------------------------------------------------|
@@ -57,22 +57,21 @@ The following table shows examples of accounts that you must create for leased a
 
 ## Configure posting accounts
 
-To assign accounts to the lease books and groups that have been created, you must configure parameters for Asset leasing.
+To assign accounts to the lease books and groups that you created, configure parameters for Asset leasing.
 
 1. Go to **Asset leasing \> Setup \> Lease posting parameters**.
-2. On the **Accounts** tab, open the **Lease accounts** FastTab. Determine the main accounts for finance and operation leases to corresponding **Posting type**. The preceding table shows the accounts that are related to operating and finance leases.
+1. On the **Accounts** tab, open the **Lease accounts** FastTab. Determine the main accounts for finance and operation leases to corresponding **Posting type**. The preceding table shows the accounts that are related to operating and finance leases.
 
     > [!NOTE]
-    > This step requires that you set up separate accounts for both operating and finance leases for each posting type except **Lease expense offset** and **Lease increase/decrease**. Companies that adhere to the IFRS 16 accounting framework must add a main account for operating lease. But the system will not use this account even though it's a required field because all leases under IFRS 16 are classified as finance leases.
+    > Set up separate accounts for both operating and finance leases for each posting type except **Lease expense offset** and **Lease increase/decrease**. Companies that adhere to the IFRS 16 accounting framework must add a main account for operating lease. But the system doesn't use this account even though it's a required field because all leases under IFRS 16 are classified as finance leases.
     >[!NOTE]
-    > **Lease increase/decrease** will be used as posting type for additional asset considerations, including **Initial direct cost, Lease incentives, Lease prepayments and Dismantling costs**, but post to the Right-of-use asset main account which defaults to **Lease asset**.        
-    
-3. To select a specific lease group corresponding to main account, in the **Account Code** field, select **Group**. Then, in the **Account/Group number** field, select the lease group to assign to the main account.
-4. To assign account codes to the administrative costs that have been set up in the system, on the **Executory costs** FastTab, in the **Expense type** field, select an expense. Then assign the finance and operating accounts to use for each book.
+    > Use **Lease increase/decrease** as the posting type for additional asset considerations, including **Initial direct cost, Lease incentives, Lease prepayments, and Dismantling costs**, but post to the Right-of-use asset main account that defaults to **Lease asset**.
+
+1. To select a specific lease group corresponding to main account, in the **Account Code** field, select **Group**. Then, in the **Account/Group number** field, select the lease group to assign to the main account.
+1. To assign account codes to the administrative costs that you set up in the system, on the **Executory costs** FastTab, in the **Expense type** field, select an expense. Then assign the finance and operating accounts to use for each book.
 
     > [!NOTE]
-    > The selected finance or operating account will be debited when the invoice for the scheduled expense is posted.
-    > **Lease expense offset** will be used as posting type for executory costs transactions but post to defined **Offset account** in the **Execuroty costs payment schedule lines** in lease details or lease book form.   
-
+    > The selected finance or operating account is debited when the invoice for the scheduled expense is posted.
+    > Use **Lease expense offset** as the posting type for executory costs transactions but post to defined **Offset account** in the **Executory costs payment schedule lines** in lease details or lease book form.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Reporting visual
 description: Learn how to use the Reporting visual in the Business performance planning application, including outlines on benefits, prerequisites, and installation.
 author: ShielaSogge
 ms.author: twheeloc
-ms.date: 12/08/2023
+ms.date: 06/22/2026
 ms.topic: concept-article
 ms.reviewer: twheeloc
 audience: Application User
@@ -17,7 +17,7 @@ ms.dyn365.ops.version:
 
 This article describes how to use the **Reporting** visual in the Business performance planning application. To fully use this application, you must install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
-The **Reporting** visual is a powerful tool for seamlessly generating professional-looking financial reports in Power BI. You can use this visual to create comprehensive financial statements that offer advanced row and column formatting capabilities. Examples include cash flow statements, income statements, and balance sheets.
+The **Reporting** visual is a powerful tool for seamlessly generating professional-looking financial reports in Power BI. Use this visual to create comprehensive financial statements that offer advanced row and column formatting capabilities. Examples include cash flow statements, income statements, and balance sheets.
 
 ## Benefits
 
@@ -35,11 +35,11 @@ For more information about prerequisites and installation, see [Install business
 
 ## Use the Reporting visual
 
-You can use the **Reporting** visual to add subtotals and custom calculations to the financial report. The enhanced formatting options let you create a professional and polished presentation of financial data. You can also include variance views on the reports to facilitate deeper understanding and analysis of financial data.
+Use the **Reporting** visual to add subtotals and custom calculations to the financial report. The enhanced formatting options let you create a professional and polished presentation of financial data. You can also include variance views on the reports to facilitate deeper understanding and analysis of financial data.
 
 ### Initial setup
 
-To begin to use the **Reporting** visual, put the **Amount** column from your cube into the **Values** field in the **Visualizations** pane. Then populate your row and column data. For a financial report, the rows are typically populated with an account name, and the columns are populated with a time period, such as month, quarter, or year.
+To begin using the **Reporting** visual, put the **Amount** column from your cube into the **Values** field in the **Visualizations** pane. Then, add your row and column data. For a financial report, typically, you populate the rows with an account name and the columns with a time period, such as month, quarter, or year.
 
 > [!TIP]
 > To find the **Amount** column, expand your cube in the **Data** pane, and look for a field that has a **Sum** symbol next to it. A **Sum** symbol next to numeric fields indicates that they're measures.
@@ -54,7 +54,7 @@ In the **Edit** section, add new rows by selecting and holding (or right-clickin
 
 #### Column calculations
 
-Select and hold (or right-click) the column header where you want to add a calculation, and then select **Before** or **After**. Then select the column header items to use in the calculation. The editor shows a list of all the row and column calculations. To edit the calculations, select the item that you want to work with.
+Select and hold (or right-click) the column header where you want to add a calculation, and then select **Before** or **After**. Then select the column header items to use in the calculation. The editor shows a list of the row and column calculations. To edit the calculations, select the item that you want to work with.
 
 ### Supported operators
 
@@ -138,28 +138,28 @@ For each row and column, you can assign a style that you set in the visual prope
 
 ### Formatting
 
-The following options are available on the **Format** tab of the **Visualizations** pane in Power BI:
+The **Format** tab of the **Visualizations** pane in Power BI offers the following options:
 
-- **Row and column styles** – In the **Row/Column Style** section, you can define row and column styles for any row that this style is assigned to. By assigning these styles to the calculations, you can achieve a format option that applies to all items that use this style. Examples include text formats such as font weight, color, underlines, and overlines. After the style is set, enter edit mode, select the row in the visual, and then select the style on the header of the report.
-- **Conditional formatting** – In the **Conditional formatting** property of the visual, you can set up three flexible rules for conditional formatting. You set up a rule by using the **Val** keyword to refer to the value of the specific measure in the visual. You can use all the mathematical options that are outlined in the [Supported operators](#supported-operators) section. For example, the rule **Val \> 2000** formats all values above 2,000 by using the format for that measure.
+- **Row and column styles** – In the **Row/Column Style** section, define row and column styles for any row that you assign to this style. By assigning these styles to the calculations, you achieve a format option that applies to all items that use this style. Examples include text formats such as font weight, color, underlines, and overlines. After you set the style, enter edit mode, select the row in the visual, and then select the style on the header of the report.
+- **Conditional formatting** – In the **Conditional formatting** property of the visual, set up three flexible rules for conditional formatting. Set up a rule by using the **Val** keyword to refer to the value of the specific measure in the visual. You can use all the mathematical options that are outlined in the [Supported operators](#supported-operators) section. For example, the rule **Val \> 2000** formats all values above 2,000 by using the format for that measure.
 
-#### Row/column spacing
+#### Row and column spacing
 
-You can increase the space between a row/column by selecting and holding (or right-clicking) the column header.
+Increase the space between a row or column by selecting and holding (or right-clicking) the column header.
 
 #### Variance visualization according to IBCS
 
-Use the **Reporting** visual to add a variance visualization according to International Business Communication Standards (IBCS) principles. To add the variance visualization to your reporting, use the **Variance** section in the visual properties. You can flexibly set the value and comparison columns by pointing to the column number. Alternatively, you can set the calculation in the visual by selecting and holding (or right-clicking) the **Variance** column. In this case, you can reference the columns in the nested dimension section, or you can select the **Absolute Indexing** checkbox to use an **Absolute** reference to any column in the visual.
+Use the **Reporting** visual to add a variance visualization according to International Business Communication Standards (IBCS) principles. To add the variance visualization to your reporting, use the **Variance** section in the visual properties. You can flexibly set the value and comparison columns by pointing to the column number. Alternatively, set the calculation in the visual by selecting and holding (or right-clicking) the **Variance** column. In this case, you can reference the columns in the nested dimension section, or you can select the **Absolute Indexing** checkbox to use an **Absolute** reference to any column in the visual.
 
 You can switch between absolute and relative variance displays by selecting the delta symbol (**&Delta;**) or the percentage sign (**%**), as appropriate.
 
 #### Comments
 
-The **Reporting** visual supports the display of cell-based comments that can be formatted in HTML. To activate these comments, turn on **Comments** in the properties. You can also specify the width of the comment box.
+The **Reporting** visual supports the display of cell-based comments that you can format in HTML. To activate these comments, turn on **Comments** in the properties. You can also specify the width of the comment box.
 
 #### Measure header
 
-In the **Measure** header section, in the visual properties, you can set the format for a measure underline to clearly identify a specific scenario type according to the IBCS guide.
+In the **Measure** header section, in the visual properties, set the format for a measure underline to clearly identify a specific scenario type according to the IBCS guide.
 
 #### Data-driven styles
 
@@ -182,7 +182,7 @@ Turn on the **Refresh** option in the **Visualization** section to make the **Re
 
 ### Export data
 
-You can export data in Excel or comma-separate values (CSV) format.
+You can export data in Excel or comma-separated values (CSV) format.
 
 ### Cell setting and autowidth
 
@@ -190,4 +190,4 @@ You can dynamically adjust the column width for every column.
 
 ### Rows header/flatten
 
-You can use the **Flatten** feature to change the layout of the visual.
+Use the **Flatten** feature to change the layout of the visual.

@@ -1,10 +1,10 @@
 ---
 title: Business performance planning overview
-description: Learn about business performance planning in Microsoft Dynamics 365 Finance, including overviews on key concepts, terms, and an example.
+description: Learn about Business performance planning in Microsoft Dynamics 365 Finance, including overviews on key concepts, terms, and an example.
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 08/25/2025
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -21,12 +21,12 @@ To support an efficient and accurate planning process, a solution must provide s
 
 Business performance planning offers financial and operational planning and analytics that create a connected enterprise experience. It uses the familiar productivity tools of Microsoft Power BI and Excel. By using these tools, you can help plan and create what-if scenarios. Through the power of Dataverse, you can use data flows and Microsoft Power Platform to eliminate manual processes and achieve optimal efficiency for your organization.
 
-The business performance planning feature set consists of two main concepts:
+The Business performance planning feature set consists of two main concepts:
 
 - Modeling data that's required for planning
 - Acting on the data that's provided
 
-In the business performance planning app, you can create dimensions and cubes, load fact data into the cubes, and define dimension and cube access. In addition, by using the canvas application, Power BI, and Excel, you can modify the dimension data to create new master data.
+In the Business performance planning app, you can create dimensions and cubes, load fact data into the cubes, and define dimension and cube access. In addition, by using the canvas application, Power BI, and Excel, you can modify the dimension data to create new master data.
 
 You can act on the dimensions and cubes in Power BI by applying planning-specific visuals. Use the visuals to easily copy actuals into a preliminary plan, create multiple versions of plans, use write-back capability from Power BI to Dataverse to ensure that you're looking at the latest data, and provide a collaborative experience by entering comments directly in the plan. Because business performance planning is a native Dataverse solution, Power Automate and other Microsoft Power Platform capabilities can be used for notifications, workflows, custom fields, and much more.
 
@@ -46,22 +46,22 @@ For example, Contoso Company has the following sales data.
 
 | Sales amount | Product      | Order date | Customer          | Sales territory |
 |--------------|--------------|------------|-------------------|-----------------|
-| 1000         | Bike         | 3/1/2022   | Oregon trails     | West            |
-| 1000         | Bike         | 3/1/2022   | Southern rides    | West            |
-| 1000         | Bike         | 3/1/2022   | Longhorn Sales    | West            |
-| 10           | Water bottle | 5/1/2022   | Southern rides    | South           |
-| 10           | Water bottle | 5/1/2022   | Route 66 Bikes    | South           |
-| 1000         | Bike         | 5/2/2022   | Oregon trails     | West            |
-| 10           | Water bottle | 6/1/2022   | Dessert Oasis     | South           |
-| 10           | Water bottle | 6/1/2022   | Dessert Oasis     | South           |
-| 1000         | Bike         | 6/15/2022  | Blue Ox Trails    | North           |
-| 50           | Helmet       | 6/15/2022  | Blue Ox Trails    | North           |
-| 1000         | Bike         | 7/1/2022   | Dakota bikes      | North           |
-| 1000         | Bike         | 7/1/2022   | Oregon trails     | West            |
-| 1000         | Bike         | 7/1/2022   | Joe's bikes       | West            |
-| 50           | Helmet       | 9/1/2022   | Southern rides    | South           |
-| 50           | Helmet       | 9/15/2022  | Palm Street Sales | South           |
-| 1000         | Bike         | 9/15/2022  | Southwest Campers | South           |
+| 1000         | Bike         | 3/1/2025   | Oregon trails     | West            |
+| 1000         | Bike         | 3/1/2025   | Southern rides    | West            |
+| 1000         | Bike         | 3/1/2025   | Longhorn Sales    | West            |
+| 10           | Water bottle | 5/1/2025   | Southern rides    | South           |
+| 10           | Water bottle | 5/1/2025   | Route 66 Bikes    | South           |
+| 1000         | Bike         | 5/2/2025   | Oregon trails     | West            |
+| 10           | Water bottle | 6/1/2025   | Dessert Oasis     | South           |
+| 10           | Water bottle | 6/1/2025   | Dessert Oasis     | South           |
+| 1000         | Bike         | 6/15/2025  | Blue Ox Trails    | North           |
+| 50           | Helmet       | 6/15/2025  | Blue Ox Trails    | North           |
+| 1000         | Bike         | 7/1/2025   | Dakota bikes      | North           |
+| 1000         | Bike         | 7/1/2025   | Oregon trails     | West            |
+| 1000         | Bike         | 7/1/2025   | Joe's bikes       | West            |
+| 50           | Helmet       | 9/1/2025   | Southern rides    | South           |
+| 50           | Helmet       | 9/15/2025  | Palm Street Sales | South           |
+| 1000         | Bike         | 9/15/2025  | Southwest Campers | South           |
 
 A sales director at Contoso might want answers to the following basic questions:
 
@@ -78,24 +78,24 @@ By creating a cube that contains Product, Time, Customer, Territory, and actual 
 | Territory | Sales amount | Product      | Order date | Customer          |
 |-----------|--------------|--------------|------------|-------------------|
 | South     |              |              |            |                   |
-|           | 10           | Water bottle | 05/01/2022 | Southern rides    |
-|           | 10           | Water bottle | 5/01/2022  | Route 66 bikes    |
-|           | 10           | Water bottle | 6/01/2022  | Desert Oasis      |
-|           | 10           | Water bottle | 6/01/2022  | Desert Oasis      |
-|           | 50           | Helmet       | 9/01/22    | Southern rides    |
-|           | 50           | Helmet       | 9/15/2022  | Palm Street Sales |
-|           | 1000         | Bike         | 9/15/2022  | Southwest Campers |
+|           | 10           | Water bottle | 05/01/2025 | Southern rides    |
+|           | 10           | Water bottle | 5/01/2025  | Route 66 bikes    |
+|           | 10           | Water bottle | 6/01/2025  | Desert Oasis      |
+|           | 10           | Water bottle | 6/01/2025  | Desert Oasis      |
+|           | 50           | Helmet       | 9/01/2025    | Southern rides    |
+|           | 50           | Helmet       | 9/15/2025  | Palm Street Sales |
+|           | 1000         | Bike         | 9/15/2025  | Southwest Campers |
 | North     |              |              |            |                   |
-|           | 50           | Helmet       | 6/15/2022  | Blue Ox Trails    |
-|           | 1000         | Bike         | 6/15/2022  | Blue Ox Trails    |
-|           | 1000         | Bike         | 7/1/2022   | Dakota Bikes      |
+|           | 50           | Helmet       | 6/15/2025  | Blue Ox Trails    |
+|           | 1000         | Bike         | 6/15/2025  | Blue Ox Trails    |
+|           | 1000         | Bike         | 7/1/2025   | Dakota Bikes      |
 | West      |              |              |            |                   |
-|           | 1000         | Bike         | 3/1/2022   | Oregon Trails     |
-|           | 1000         | Bike         | 3/1/2022   | Joe's Bikes       |
-|           | 1000         | Bike         | 3/1/2022   | Longhorn Sales    |
-|           | 1000         | Bike         | 5/2/2022   | Oregon Trails     |
-|           | 1000         | Bike         | 7/1/2022   | Oregon trails     |
-|           | 1000         | Bike         | 7/1/2022   | Joe's bikes       |
+|           | 1000         | Bike         | 3/1/2025   | Oregon Trails     |
+|           | 1000         | Bike         | 3/1/2025   | Joe's Bikes       |
+|           | 1000         | Bike         | 3/1/2025   | Longhorn Sales    |
+|           | 1000         | Bike         | 5/2/2025   | Oregon Trails     |
+|           | 1000         | Bike         | 7/1/2025   | Oregon trails     |
+|           | 1000         | Bike         | 7/1/2025   | Joe's bikes       |
 
 The sales director can use the dimensions that were created during planning to slice their data by territory, product, and date in Power BI. In this way, the sales director can understand trends and prepare a plan that takes into account any trends or outliers.
 
@@ -110,9 +110,9 @@ The sales data (fact data) must contain the details for Territory, Product, Time
 
 As part of the planning process, the sales director uses the sales fact data to create a plan for what they think will happen in the upcoming year. During this time, the sales data can be copied into a new scenario that's named **Sales plan**. The organization then has a starting point for creating a sales plan for the upcoming year. For example, by reviewing their actuals, they can plan for a spike in sales during the summer and a decline in sales during the winter. By taking advantage of the ability to filter and group the data by dimension, they can build a plan based on the insights that they gain from the data.
 
-## Configuring and using business performance planning
+## Configuring and using Business performance planning
 
-The process of configuring and using business performance planning involves the following tasks:
+The process of configuring and using Business performance planning involves the following tasks:
 
 1. Create dimensions
 1. Create cubes

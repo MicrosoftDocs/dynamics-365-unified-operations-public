@@ -3,7 +3,7 @@ title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.date: 06/04/2026
+ms.date: 06/25/2026
 ms.topic: article
 ms.custom: 
   - bap-template
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
+This article lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
 
 Regulatory updates are features that support new or changed country/region-specific legislation. For more information about planned and released country/region-specific features, see [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
 
@@ -27,16 +27,17 @@ Regulatory updates are planned for delivery in One Version service updates that 
 
 If there are late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update is shipped as hot fixes for relevant available monthly updates.
 
-Regulatory updates that are released as part of the monthly updates are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the abbreviations HF and Preview, respectively. 
+Regulatory updates that are released as part of the monthly updates are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the abbreviations HF and Preview, respectively.
 
-For the latest regulatory update plans, refer to the following table.   
+For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
-|--------------------|---------------|-------|-------| 
+|--------------------|---------------|-------|-------|
+| Lithuania | June 2026 | 10.0.49, also available in prior versions | Updated [Lithuanian Intrastat](../lithuania/emea-ltu-intrastat.md). |
 | France | June 2026 | 10.0.49, also available in prior versions | Released [Electronic reporting of transactions for France (e-Reporting)](../france/emea-fra-e-reporting.md). |
 | Switzerland  | June 2026 | 10.0.49, also available in prior versions | Updated [VAT declaration for Switzerland](../switzerland/emea-che-vat-declaration-switzerland.md) -  Version 2.0.0. |
 | Netherlands  | June 2026 | 10.0.49, also available in prior versions | Updated [EU sales list for Netherlands](../netherlands/emea-nl-eu-sales-list.md) - Taxonomy NT20. |
-| Malaysia  | April 2026 | 10.0.48, also available in prior versions | Updated [SST-02 declaration for Malaysia](../apac/apac-mys-sst-declaration.md) - Sections 13d, 18c (points 1, 2, 3) and subsequent sections (18d, 18e). |
+| Malaysia  | April 2026 | 10.0.48, also available in prior versions | Updated [SST-02 declaration for Malaysia](../apac/apac-mys-sst-declaration.md) - Sections 13d, 18c (points 1, 2, 3), and subsequent sections (18d, 18e). |
 | Brazil | April 2026 | 10.0.47, also available in prior versions | Regulatory update to extend [NFS-e support](../brazil/brazil-nfs-e-service-invoices-projects.md) for project-based invoicing scenarios, enabling compliant XML generation for São Paulo and Federal NFS-e formats. Includes NBS field, service location attributes, tax estimation percentages, and updates to ER configurations for fiscal document mapping. |
 | Italy | March 2026 | 10.0.48, also available in prior versions | Updated [Unique certification](../italy/emea-ita-exil-unique-certification.md) (Certificazione Unica) form aligned with the provision of January 15, 2026 (Prot. n. 9454/2026) for tax year 2025. |
 | Lithuania | March 2026 | 10.0.48, also available in prior versions | New VMI VAT codes PVM58, PVM59, and PVM60 for [i.SAF reporting](../lithuania/emea-ltu-isaf.md), effective from January 1, 2026, aligned with the updated 12% VAT rate classification. |
@@ -48,13 +49,13 @@ For the latest regulatory update plans, refer to the following table.
 | Poland | December 2025 | 10.0.47, also available in prior versions | Regulatory update to support version (3) of [VAT declaration for Poland, JPK-V7](../poland/emea-pol-vdek.md), effective from February 1, 2026. |
 | United Kingdom | November 2025 | 10.0.47, also available in prior versions | Regulatory update to support [Statistics on payment practices report](../united-kingdom/emea-gbr-statistics-on-payment-practices-report.md) the Reporting on Payment Practices and Performance (Amendment) Regulations 2025. |
 | Germany | November 2025 | 10.0.47, also available in prior versions | EU Sales list for Germany in CSV format. [EU Sales list for Germany](../germany/emea-deu-eu-sales-list.md) |
-| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support generating the e-Bupot file \([Withholding tax report for Indonesia](../indonesia/apac-idn-wht-declaration.md)\) for reporting periods starting from 2025 based on the withholding tax transactions.  |	
-| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support  generating the [SPT Masa PPN \(Pajak Pertambahan Nilai\) VAT declaration](../indonesia/apac-idn-ppn-declaration.md) in Excel format for reporting periods starting from 2025. |	
+| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support generating the e-Bupot file \([Withholding tax report for Indonesia](../indonesia/apac-idn-wht-declaration.md)\) for reporting periods starting from 2025 based on the withholding tax transactions.  | 
+| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support  generating the [SPT Masa PPN \(Pajak Pertambahan Nilai\) VAT declaration](../indonesia/apac-idn-ppn-declaration.md) in Excel format for reporting periods starting from 2025. | 
 | Estonia | July 2025 | 10.0.46, also available in prior versions | Regulatory update to support changes in VAT declaration format for Estonia 2025. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
 | Australia | May 2025| 10.0.45, 10.0.44HF, 10.0.43HF, 10.0.42HF | Regulatory update to support changes in Payment times reporting schema (PTRS) required for Australian legal entities for periods from July 1, 2024. [Payment times reporting schema](../australia/apac-aus-payment-times-report.md) |
 | Czech Republic | May 2025 | 10.0.45, also available in prior versions | Regulatory update to support changes in VAT declaration format for Czech Republic 2025. [VAT declaration - Czech Republic](../czech-republic/emea-cze-vat-declaration-tax-declaration-model.md) |
 | Hungary | April 2025 | 10.0.45, also available in prior versions | Regulatory update to support changes in VAT declaration format for Hungary 2024-2025. [VAT declaration (Hungary)](../hungary/emea-hun-vat-declaration-hungary.md). |
-| Mexico | March 2025 | 10.0.44, 10.0.43HF, 10.0.42HF, 10.0.41HF | DIOT declaration statement regulatory update to support new rules for DIOT 2025. [DIOT declaration statement](../iberoamerica/latam-mex-diot-declaration-statement.md) | 
+| Mexico | March 2025 | 10.0.44, 10.0.43HF, 10.0.42HF, 10.0.41HF | DIOT declaration statement regulatory update to support new rules for DIOT 2025. [DIOT declaration statement](../iberoamerica/latam-mex-diot-declaration-statement.md) |
 | Italy | February 2025 | 10.0.44, 10.0.43HF, 10.0.42HF, 10.0.41HF | [Unique certification](../italy/emea-ita-exil-unique-certification.md) - 2025 |
 | Poland | November 2024 | 10.0.40HF, 10.0.41HF, 10.0.42HF, 10.0.43 | [SAF Accounting Books Income Tax - JPK_KR_PD](../poland/emea-pol-standard-audit-file-saf-pd.md) |
 | Japan | September 2024 | 10.0.39HF, 10.0.40HF, 10.0.41HF, 10.0.42 | Japan consumption Tax return report layout change - 2024 for periods after October 1, 5th year of Reiwa. [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
@@ -86,6 +87,7 @@ For the latest regulatory update plans, refer to the following table.
 |      Saudi Arabia      |   November 2022| 10.0.32 | Retail - Electronic invoicing in Saudi Arabia - Phase 2 |
 
 ## Additional resources
+
 - For more information about all planned and released country or region-specific regulatory updates, see [Search for country/region-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
 - For a list of the supported localizations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
