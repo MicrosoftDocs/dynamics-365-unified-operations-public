@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: Learn about the cash register functionality available for France in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 06/16/2026
+ms.date: 06/26/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: France
@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
   - sfi-image-nochange
 ---
-# Cash register functionality for France (preview)
+# Cash register functionality for France
 
 [!include [banner](../../../finance/includes/banner.md)]
 
@@ -349,11 +349,6 @@ You must also specify the following settings for France. You must run appropriat
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and Commerce headquarters sides.
 1. [Specify Electronic reporting (ER) formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from Commerce headquarters.
 1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to Commerce headquarters.
-1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
-
-    > [!IMPORTANT]
-    > You should configure channel components only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you're using Commerce version 10.0.28 or earlier, and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
-
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 1. [Validate your configuration](#compliance-checklist) to make sure all France-specific features work properly.
 
@@ -571,7 +566,7 @@ After you import the configurations, select ER formats for the Z report and arch
 To enable audit events, you must reinitialize the Commerce extensible enumerations. To enable France-specific data to be transmitted from POS to Commerce headquarters, you must reinitialize the Commerce scheduler.
 
 1. On the **Commerce parameters** page, on the **General** FastTab, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../../enable-configure-retail-functionality.md).
-1. There's an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog, select **OK**.
+1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog, select **OK**.
 
 ### Configure channel components
 
