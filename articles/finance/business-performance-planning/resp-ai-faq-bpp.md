@@ -4,7 +4,7 @@ description: Learn how Microsoft has minimized the potential harm related to AI 
 author: twheeloc
 ms.author: romainpham
 ms.topic: article 
-ms.date: 04/15/2025
+ms.date: 06/23/2026
 ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer: twheeloc 
@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 
 ## What is generative help and guidance?
 
-Generative help and guidance is a Microsoft Copilot feature in Business performance planning. It provides a conversational interface where users can ask Copilot questions about the app. This feature is designed to help new users learn how to navigate the app. In addition, it helps experienced users stay up to date about new features.
+Generative help and guidance is a Microsoft Copilot feature in Business performance planning. It provides a conversational interface where users can ask Copilot questions about the app. This feature helps new users learn how to navigate the app. In addition, it helps experienced users stay up to date about new features.
 
 ## What sources does Copilot use to provide assistance?
 
@@ -30,7 +30,7 @@ Currently, generative help and guidance is available in the United States in the
 
 If the Copilot icon isn't visible, an administrator should review the following settings:
 
-- In the Power Platform admin center, confirm that consent was given to the terms of use for agents and generative AI features.
+- In the Power Platform admin center, confirm that consent is given to the terms of use for agents and generative AI features.
 - In the Power Platform admin center, confirm that the **Move data across regions** checkbox is selected in addition to the **Bing search** checkbox.
 - In the Power Platform admin center, confirm that the **Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps** field is set to either **Default** or **On** for your environment.
 - In the Power Apps maker portal, confirm that the **Copilot control** field is set to either **Default** or **On** for the Business performance app.
@@ -45,7 +45,7 @@ Users can interact with Copilot in several ways:
 
 ## What happens if a prompt is unrelated to Business performance planning?
 
-Prompts that are unrelated to Business performance planning, or that have errors in spelling and grammar, don't receive an answer. Instead, they receive a default, fallback response.
+If a prompt is unrelated to Business performance planning, or if it has errors in spelling and grammar, Copilot doesn't provide an answer. Instead, it provides a default, fallback response.
 
 ## How can users provide feedback about Copilot's responses?
 

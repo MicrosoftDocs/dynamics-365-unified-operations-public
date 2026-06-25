@@ -4,7 +4,7 @@ description: Learn about the default report for income statements. It also descr
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 06/24/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

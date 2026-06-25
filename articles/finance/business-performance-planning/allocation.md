@@ -4,7 +4,7 @@ description: Learn how to use the Allocation method in the Business performance 
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/08/2023
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -23,7 +23,7 @@ An understanding of allocation in the Business performance planning application 
 
 ## Allocation at different data levels in dimensions
 
-In Dataverse, your data can have different levels beneath it. These levels define hierarchical relationships. For example, a "parent" category might be followed by more specific "child" entities. An example is a product category and its different stockkeeping units (SKUs).
+In Dataverse, your data can have different levels beneath it. These levels define hierarchical relationships. For example, a "parent" category might be followed by more specific "child" entities. An example is a product category and its different stock-keeping units (SKUs).
 
 When the Business performance planning application writes values at the parent level, it engages in allocation across all subsidiary child values. The allocation process varies, depending on specific conditions that are described in the following subsections.
 
@@ -47,9 +47,9 @@ To write a value to every cell to the right at the same level, enter the prefix 
 
 Alternatively, select and hold (or right-click), and then select **Fill Right**.
 
-#### Allocation with multi-select
+#### Allocation with multiselect
 
-If multi-select mode is turned on, the **s** prefix in the multi-select field lets you spread an entry to the selected cells and use their current distribution.
+If you turn on multiselect mode, the **s** prefix in the multiselect field lets you spread an entry to the selected cells and use their current distribution.
 
 #### Copy like
 
@@ -57,7 +57,7 @@ This option is available only on the shortcut menu that appears when you select 
 
 ## Accurate business planning
 
-When you use the Business performance planning application for high-level business planning, you can be sure that forecasted or budgeted data accurately mirrors historical actuals. The functionality offers the following benefits:
+When you use the Business performance planning application for high-level business planning, you can be sure that forecasted or budgeted data accurately mirrors historical actuals. This functionality offers the following benefits:
 
 - Confidently plan business strategies at higher levels, and know that the application ensures alignment with historical data.
 - Take advantage of the application's allocation mechanism, which adapts to different levels of granularity to ensure accurate planning even when you work with complex hierarchical data structures.

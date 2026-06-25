@@ -4,7 +4,7 @@ description: Learn about how to use the functionality on the Documents pending a
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 07/19/2023
+ms.date: 06/24/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -22,7 +22,7 @@ This article describes how to use the functionality on the **Documents pending a
 
 The **Enhanced performance for source document accounting framework** feature improves the posting processes for source document–enabled document postings, starting with the posting process for free text invoices.
 
-When this feature is enabled, posting of the subledger document is done separately from the accounting generation or *journalization* process that creates the full accounting detail that is transferred to the general ledger. For example, in the free text invoice posting process, the customer invoice in the **Accounts receivable** module is recorded before the full accounting is generated. This enhanced performance feature enables customer invoices to be recorded more quickly while accounting generation is delayed.
+When you enable this feature, the system posts the subledger document separately from the accounting generation or *journalization* process that creates the full accounting detail that is transferred to the general ledger. For example, in the free text invoice posting process, the customer invoice in the **Accounts receivable** module is recorded before the full accounting is generated. This enhanced performance feature enables customer invoices to be recorded more quickly while accounting generation is delayed.
 
 The following buttons are available on the **Documents pending accounting** page.
 
@@ -30,7 +30,6 @@ The following buttons are available on the **Documents pending accounting** page
 - **View distributions** – View the accounting distributions for a selected document in the list.
 - **View error log** – View any error message details that exist for a document where the accounting state indicates errors. You can view the same error message details by selecting the **Error log** link on the document line.
 
-Accounting generation is done by a process automation background process that is named **Accounting framework processor**. For more information about the setup and configuration of all process automations, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+A process automation background process named **Accounting framework processor** handles accounting generation. For more information about the setup and configuration of all process automations, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

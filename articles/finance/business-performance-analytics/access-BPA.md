@@ -5,7 +5,7 @@ author: jkhaira7
 ms.author: jkhaira
 ms.topic: how-to
 ms.custom:
-ms.date: 08/11/2025
+ms.date: 06/23/2026
 ms.reviewer: twheeloc 
 audience: Application User
 ---
@@ -18,7 +18,7 @@ This article explains how to access Business performance analytics.
 
 ## Access Business performance analytics as an administrator
 
-After Business performance analytics is installed, there are several ways to access the app:
+After you install Business performance analytics, you can access the app in several ways:
 
 - In [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to the environment where you installed the app, and find the environment URL.
 - In the Power Platform maker portal, go to **Apps**, and find and select **Business performance analytics**.
@@ -52,10 +52,11 @@ A shortcut to access Business performance analytics in Dynamics 365 finance and 
 To open Business performance analytics directly from Dynamics 365 finance and operations apps, confirm the following prerequisites are met:
 
 1. Go to <https://admin.powerplatform.microsoft.com/>.
-2. Select **Environments** on the left menu.
-2. Select the environment where business performance analytics is installed.
-3. Go to **Settings** > **Users**.
-4. For Business performance analytics users, confirm that the following security roles are assigned:
+1. Select **Environments** on the left menu.
+1. Select the environment where business performance analytics is installed.
+1. Go to **Settings** > **Users**.
+1. For Business performance analytics users, confirm that the following security roles are assigned:
+
 - **Basic user**
 - **BPA user**
 - **Microsoft Report Viewer**
@@ -70,6 +71,6 @@ After these prerequisites are met, the administrator can use security roles and 
 To share the Business performance analytics app with users, first confirm that those users are set up as Business performance analytics users in the app, and that their security is set up.
 
 1. In Business performance analytics, select **Business performance analytics (preview)**.
-2. The dialog box that appears includes a **Published apps** list. Find **Business performance analytics (preview)** in the list, select the three dots, and then select **Manage roles**.
-3. Expand **App URL suffix**, and enter a name to use in the custom URL that you share with Business performance analytics users.
-4. Copy the URL that's generated, and share it with app users.
+1. The dialog box that appears includes a **Published apps** list. Find **Business performance analytics (preview)** in the list, select the three dots, and then select **Manage roles**.
+1. Expand **App URL suffix**, and enter a name to use in the custom URL that you share with Business performance analytics users.
+1. Copy the URL that's generated, and share it with app users.
