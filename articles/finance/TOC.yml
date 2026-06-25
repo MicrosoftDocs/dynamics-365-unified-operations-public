@@ -3398,6 +3398,8 @@
                       href: localizations/italy/emea-ita-yearly-tax-communication.md
                     - name: Fiscal journal report
                       href: localizations/italy/emea-ita-fiscal-journal-er.md
+                    - name: Fiscal journal report SSRS-based
+                      href: localizations/italy/emea-ita-fiscal-journal.md
                     - name: Competence date for transactions in Italy
                       href: localizations/italy/emea-ita-competence-date.md
                     - name: General ledger simulations (Italy)
@@ -4665,6 +4667,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?context=/dynamics365/context/finance
                 - name: Configure SSRS for on-premises deployments
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?context=/dynamics365/context/finance
+                - name: Reduce long-running transactions in TempDB preprocessing reports
+                  href: ../fin-ops-core/dev-itpro/analytics/skip-report-transaction-tempdb-preprocessing.md
                 - name: Default reporting experiences in IaaS environments
                   href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?context=/dynamics365/context/finance
                 - name: Document reporting preview options

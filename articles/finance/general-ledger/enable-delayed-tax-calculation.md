@@ -1,11 +1,11 @@
 ---
 title: Enable delayed tax calculation on journals
-description: Learn how to turn on the Delayed tax calculation feature to help improve the performance of tax calculations when the number of journal lines is very large.
+description: Learn how to turn on the Delayed tax calculation feature to help improve the performance of tax calculations when the number of journal lines is large.
 author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 09/18/2019
-ms.reviewer: kfend
+ms.date: 06/24/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2019-09-18
@@ -15,12 +15,12 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Enable delayed tax calculation on journals
-[!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/banner.md)]
 
 This article explains how you can delay sales tax calculation on journals. This capability helps improve the performance of tax calculations when there are many journal lines.
 
-By default, sales tax amounts on journal lines are calculated whenever tax-related fields are updated. These fields include the fields for sales tax groups and item sales tax groups. Any update to a journal line causes tax amounts to be recalculated for all journal lines. Although this behavior helps user see tax amounts calculated in real time, it can also affect performance if the number of journal lines is very large.
+By default, sales tax amounts on journal lines are calculated whenever tax-related fields are updated. These fields include the fields for sales tax groups and item sales tax groups. Any update to a journal line causes tax amounts to be recalculated for all journal lines. Although this behavior helps user see tax amounts calculated in real time, it can also affect performance if the number of journal lines is large.
 
 The Delayed tax calculation feature lets you delay tax calculation on journals and therefore helps fix performance issues. When this feature is turned on, tax amounts are calculated only when a user selects **Sales Tax** or posts the journal.
 
@@ -54,6 +54,5 @@ The system gives priority to the setting for the journal header. By default, thi
 4. On the **Setup** tab, set the **Delayed tax calculation** option to **Yes**.
 
 ![General journal page image.](media/delayed-tax-calculation-journal-header.png)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,8 +4,8 @@ description: Learn about how to set up index rates. Index rates are required if 
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to
-ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.date: 06/23/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -23,15 +23,14 @@ If lease payments depend on an index, the index rate types can be added and main
 To add index rate types and index rates, follow these steps:
 
 1. Go to **Asset leasing \> Setup \> Index rate type**.
-2. Select **New**.
-3. In the appropriate fields, enter the rate type and the name of the index rate.
-4. To add a new index rate value, select the index rate type, and then select **Add**.
-5. Select the effective start date of the rate, and select the rate value.
+1. Select **New**.
+1. Enter the rate type and the name of the index rate in the appropriate fields.
+1. To add a new index rate value, select the index rate type, and then select **Add**.
+1. Select the effective start date of the rate, and select the rate value.
 
-You must select either **Index rate value difference** or **Index rate value** as the index rate method.
+Select either **Index rate value difference** or **Index rate value** as the index rate method.
 
-- Select the **Index rate value difference** method to calculate a new lease payment, based on the difference between the index rate on the start date and the most recent index rate. The index rate is defined in the **Index rate (%)** field.
-- Select the **Index rate value** method to calculate the lease payment by using the percentage that is specified in the **Index rate (%)** field.
-
+- Select the **Index rate value difference** method to calculate a new lease payment, based on the difference between the index rate on the start date and the most recent index rate. Define the index rate in the **Index rate (%)** field.
+- Select the **Index rate value** method to calculate the lease payment by using the percentage that you specify in the **Index rate (%)** field.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

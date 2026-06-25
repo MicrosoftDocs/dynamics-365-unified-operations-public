@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 12/09/2025
+ms.date: 06/23/2026
 ---
 
-# Reassign ownership of Business performance analytics flows 
+# Reassign ownership of Business performance analytics flows
 
 This article explains how to reassign ownership of Business performance analytics flows when the original owner leaves the organization or is no longer available.
 
@@ -29,42 +29,45 @@ This article explains how to reassign ownership of Business performance analytic
    ```
 
 For each flow returned:
-  - Go to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
-  - Select the affected environment.
-  - Navigate to **Resources** > **Flows**.
-  - To assign new owners for each affected flow, see [Manage orphan flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow).
+
+- Go to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
+- Select the affected environment.
+- Go to **Resources** > **Flows**.
+- To assign new owners for each affected flow, see [Manage orphan flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow).
 
 After adding new owners, follow these steps:
+
 1. Go to [Power Apps](https://make.powerapps.com/).
-2. Select the correct environment in the upper right corner.
-3. Go to **Flows** in the left menu.
-4. Open the details of each impacted flow.
+1. Select the correct environment in the upper right corner.
+1. Go to **Flows** in the left menu.
+1. Open the details of each impacted flow.
       > [!NOTE]
       > The flow might be in the **Shared with me** tab.
-5. On the right, select **Co-Owners** > **Set primary owner**.
-6. Replace the existing user with yourself.
-7. Select **Save**.
+1. On the right, select **Co-Owners** > **Set primary owner**.
+1. Replace the existing user with yourself.
+1. Select **Save**.
 
 If the query doesn't return any records, follow these steps:
+
 1. Go to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
-2. Select the affected environment.
-3. Navigate to **Resources** > **Flows**.
-4. Find all flows that start with "Business performance analytics", excluding:
+1. Select the affected environment.
+1. Go to **Resources** > **Flows**.
+1. Find all flows that start with "Business performance analytics", excluding:
    - "Business performance analytics transform job"
    - "Business performance analytics initialization job"
-5. To assign yourself as a co-owner for each affected flow, see [Manage orphan flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow).
-
+1. To assign yourself as a co-owner for each affected flow, see [Manage orphan flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow).
 
 After adding yourself as the owner:
+
 1. Go to [Power Apps](https://make.powerapps.com/).
-2. Select the correct environment in the upper right corner.
-3. Go to **Flows** in the left menu.
-4. Find all flows that start with "Business performance analytics", excluding:
+1. Select the correct environment in the upper right corner.
+1. Go to **Flows** in the left menu.
+1. Find all flows that start with "Business performance analytics", excluding:
       - "Business performance analytics transform job"
       - "Business performance analytics initialization job"
             > [!NOTE]
             > The flows might be in the **Shared with me** tab.
-5. Open the details of each impacted flow.
-6. On the right, select **Co-Owners** > **Set primary owner**.
-7. Replace the existing user with yourself.
-8. Select **Save**.
+1. Open the details of each impacted flow.
+1. On the right, select **Co-Owners** > **Set primary owner**.
+1. Replace the existing user with yourself.
+1. Select **Save**.

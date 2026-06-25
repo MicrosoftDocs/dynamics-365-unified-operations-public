@@ -4,7 +4,7 @@ description: Learn how to import and export cubes in Business performance planni
 author: twheeloc
 ms.author: romainpham
 ms.topic: article 
-ms.date: 09/09/2025
+ms.date: 06/22/2026
 ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer: twheeloc 
@@ -12,7 +12,8 @@ audience: Application User
 ms.collection:
 ---
 
-# Import and export cubes and dimensions 
+# Import and export cubes and dimensions
+
 Import and export Business performance planning cubes and dimensions in Dynamics 365 Finance.
 
 ## Overview
@@ -25,7 +26,7 @@ This feature is designed to:
 - Accelerate deployment by reusing prebuilt planning structures.
 - Enable partners to provide baseline cube and dimension frameworks.
 - Provide customers with a flexible starting point for further customization.
-- Support a variety of industry scenarios by making BPP schema transportable and extensible.
+- Support various industry scenarios by making Business performance planning schema transportable and extensible.
 
 ### Availability
 
@@ -40,17 +41,17 @@ To update your environment to the latest version, follow these steps:
 
 ### Prerequisites
 
-Before using the Import/Export functionality, ensure that you:
+Before using the Import/Export functionality, make sure that you:
 
 - Have System administrator or Planning administrator privileges in the source and target environments.
 - Install the Business performance planning solution.
 - Have the required permissions: Only System Admin and Planning Admin users can import and export cubes and dimensions.
 - Review dimension metadata in the target environment to avoid conflicts.
 
-### Key Use Cases
+### Key use cases
 
-- ISVs and partners can create reusable cube and dimension templates for vertical-specific solutions (for example, Retail, Hospitality, Healthcare).
-- Multi-environment customers can migrate specific planning models from development to production without the need for migrating the entire environment.
+- ISVs and partners can create reusable cube and dimension templates for vertical-specific solutions, such as Retail, Hospitality, and Healthcare.
+- Multi-environment customers can migrate specific planning models from development to production without needing to migrate the entire environment.
 - Consultants and integrators can fast-track onboarding for new implementations by using standard planning schema.
 
 ### How the feature works
@@ -93,11 +94,11 @@ Use the import functionality to bring cube and dimension metadata into another e
    If a dimension with the same name already exists in the target environment, the import process skips it and doesn't overwrite it.  
    The process automatically creates new dimensions in the JSON file.
 
-1. Confirm your selections. The schema is validated and the process creates the cubes and any new dimensions.   
+1. Confirm your selections. The schema is validated and the process creates the cubes and any new dimensions.
 
 #### Best practices
 
-Don't import cubes that reference dimensions with the same names but different definitions between environments. This practice leads to metadata conflicts or data inconsistencies that might affect 
+Don't import cubes that reference dimensions with the same names but different definitions between environments. This practice leads to metadata conflicts or data inconsistencies that might affect
 planning logic and data integrity.
 
 Example scenario:
@@ -124,4 +125,3 @@ During the import process:
 
 - Don't change cubes or dimensions.
 - Avoid making schema changes at the same time as other users.
-

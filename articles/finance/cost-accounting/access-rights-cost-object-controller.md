@@ -4,7 +4,7 @@ description: Learn about access rights for cost object controllers, including a 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/24/2017
+ms.date: 06/23/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User

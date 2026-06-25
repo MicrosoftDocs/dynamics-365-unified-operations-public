@@ -4,7 +4,7 @@ description: Learn about the Cost controlling mobile workspace, which lets cost 
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 05/24/2022
+ms.date: 06/23/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -46,7 +46,7 @@ The **Cost controlling** mobile workspace provides the following actions, views,
   - Use **Select cost object** to select the cost centers to filter data on.
 
         > [!NOTE]
-        > The cost centers that appear in the list depend on the access that is granted in the **Cost accounting** module.
+        > The cost centers that appear in the list depend on the access that you grant in the **Cost accounting** module.
 
 - **Views:** Based on the actions that you select and the configuration in the **Cost accounting** module, you can view the following information on the cards:
 
