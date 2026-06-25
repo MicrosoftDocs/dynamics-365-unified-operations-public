@@ -1,8 +1,8 @@
----
+﻿---
 title: Deployment guidelines for cash registers for Norway
 description: Learn how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
-ms.date: 05/12/2026
+ms.date: 06/26/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -52,7 +52,7 @@ Follow these steps to enable the fiscal registration process for Norway in Comme
 
 ### Configure the digital signature parameters
 
-You must configure certificates for digitally signing sales transactions in a store. Use a digital certificate stored in Azure Key Vault for signing. For the offline mode of Modern POS, you can also use a digital certificate stored in the local storage of the machine where Modern POS is installed.
+You must configure certificates for digitally signing sales transactions in a store. Use a digital certificate stored in Azure Key Vault for signing. For the offline mode of Store Commerce, you can also use a digital certificate stored in the local storage of the machine where Store Commerce is installed.
 
 Before you can use a digital certificate stored in Key Vault, complete the following steps:
 
@@ -103,7 +103,7 @@ Follow these steps to set up a development environment so that you can test and 
     1. Find the CRT extension installer:
 
         - **Commerce Scale Unit:** In the **SequentialSignatureNorway\\ScaleUnit\\ScaleUnit.SequentialSignNorway.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.SequentialSignNorway.Installer** installer.
-        - **Local CRT on Modern POS:** In the **SequentialSignatureNorway\\ModernPOS\\ModernPos.SequentialSignNorway.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.SequentialSignNorway.Installer** installer.
+        - **Store Commerce:** In the **SequentialSignatureNorway\\StoreCommerce\\StoreCommerce.SequentialSignNorway.Installer\\bin\\Debug\\net461** folder, find the **StoreCommerce.SequentialSignNorway.Installer** installer.
 
     1. Start the CRT extension installer from the command line:
 
@@ -113,19 +113,19 @@ Follow these steps to set up a development environment so that you can test and 
             ScaleUnit.SequentialSignNorway.Installer.exe install --verbosity 0
             ```
 
-        - **Local CRT on Modern POS:**
+        - **Store Commerce:**
 
             ```Console
-            ModernPOS.SequentialSignNorway.Installer.exe install --verbosity 0
+            StoreCommerce.SequentialSignNorway.Installer.exe install --verbosity 0
             ```
 
 #### Production environment
 
 Follow the steps in [Set up a build pipeline for a fiscal integration sample](../global/fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The **SequentialSignatureNorway build-pipeline.yaml** template YAML file can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
 
-### Enable the digital signature in offline mode for Modern POS
+### Enable the digital signature in offline mode for Store Commerce
 
-To enable the digital signature in offline mode for Modern POS, follow these steps after you activate Modern POS on a new device.
+To enable the digital signature in offline mode for Store Commerce, follow these steps after you activate Store Commerce on a new device.
 
 1. Sign in to POS.
 1. On the **Database connection status** page, make sure that the offline database is fully synced. When the value of the **Pending downloads** field is **0**, the database is fully synced.
@@ -133,6 +133,6 @@ To enable the digital signature in offline mode for Modern POS, follow these ste
 1. Wait for the offline database to be fully synced.
 1. Sign in to POS.
 1. On the **Database connection status** page, make sure that the offline database is fully synced. When the value of the **Pending transactions in offline database** field is **0**, the database is fully synced.
-1. Reopen Modern POS.
+1. Reopen Store Commerce.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
