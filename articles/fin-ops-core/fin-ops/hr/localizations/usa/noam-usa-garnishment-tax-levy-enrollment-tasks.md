@@ -3,7 +3,7 @@ title: Enroll workers in garnishments or tax levies
 description: Learn about the process for enrolling workers in garnishments, tax levies, and any associated administrative fees.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/01/2020
 ms.reviewer: twheeloc
 audience: Application User

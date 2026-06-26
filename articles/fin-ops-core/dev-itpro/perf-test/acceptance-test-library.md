@@ -3,7 +3,7 @@ title: Acceptance test library resources
 description: Learn about the Acceptance test library and its benefits, including an example of a test that is written in ATL, concepts, and further reading.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/16/2026
 ms.custom: 
 ms.reviewer: johnmichalak

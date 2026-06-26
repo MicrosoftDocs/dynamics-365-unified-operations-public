@@ -3,7 +3,7 @@ title: Plan and prepare for compiling code against the latest update
 description: Learn about potential issues that a developer might see when compiling partner code with the latest product updates.
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 11/11/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

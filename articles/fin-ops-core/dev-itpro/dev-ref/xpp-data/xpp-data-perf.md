@@ -3,7 +3,7 @@ title: Conversion of operations from set-based to record-by-record
 description: Learn how to speed up SQL operations in the X++ language, including a table that defines what to delete, update, and override for various situations.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer

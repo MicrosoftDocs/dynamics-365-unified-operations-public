@@ -3,7 +3,7 @@ title: X++ Primitive data types
 description: Learn about primitive data types in X++, which includes anytype, boolean, date, enum, guid, int, int64, real, str. timeOfDay, and utcdatetime.
 author: pvillads
 ms.author: pvillads
-ms.topic: article
+ms.topic: reference
 ms.date: 03/31/2026
 ms.reviewer: twheeloc
 

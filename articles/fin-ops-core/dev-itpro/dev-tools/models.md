@@ -3,7 +3,7 @@ title: Models and packages
 description: Learn about the concept of models and packages, including outlines on how to create new models, update parameters, and visualize dependencies between models.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer

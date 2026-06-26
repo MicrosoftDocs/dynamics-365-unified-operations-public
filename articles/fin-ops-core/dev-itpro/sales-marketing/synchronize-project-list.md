@@ -3,7 +3,7 @@ title: Synchronize project list from Supply Chain Management to Field Service
 description: Learn about the templates and underlying tasks used to synchronize projects from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: integration
 ms.date: 03/13/2026
 ms.reviewer: kamaybac
 audience: IT Pro

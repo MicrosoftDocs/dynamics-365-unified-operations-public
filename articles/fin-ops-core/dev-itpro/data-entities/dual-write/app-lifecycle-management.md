@@ -3,7 +3,7 @@ title: Application lifecycle management
 description: Learn about application lifecycle management and the benefits of making dual-write solutions, including how to install dual-write solutions.
 author: nhelgren
 ms.author: nhelgren
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 01/15/2026

@@ -3,7 +3,7 @@ title: My team mobile workspace
 description: Learn about the My team mobile workspace, which lets managers view their direct reports and extended staff, including prerequisites.
 author: ShielaSogge
 ms.author: shielas
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/21/2025
 ms.custom:
 ms.reviewer: johnmichalak

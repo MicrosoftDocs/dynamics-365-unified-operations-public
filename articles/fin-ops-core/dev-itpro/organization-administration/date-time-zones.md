@@ -3,7 +3,7 @@ title: Date/time data and time zones
 description: Learn about the three types of date and time fields that correspond to different data types in the database and time zones.
 author: pvillads
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

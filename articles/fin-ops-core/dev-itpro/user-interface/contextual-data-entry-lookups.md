@@ -3,7 +3,7 @@ title: Contextual data entry for lookups
 description: Learn about how contextual data entry works, including implementation details and tips for developers who want their lookups to have this behavior.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
   - evergreen

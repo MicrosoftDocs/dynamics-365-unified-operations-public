@@ -3,7 +3,7 @@ title: Security version management
 description: Learn how to maintain multiple versions of security configurations in a company.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/30/2025
 ms.custom: 
   - bap-template

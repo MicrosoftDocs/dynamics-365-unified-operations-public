@@ -3,7 +3,7 @@ title: Data templates with multiple worksheets
 description: Learn about how to import data using Excel data entity templates into finance and operations, including an outline on how to upload a file and map it to all entities.
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/20/2025
 ms.custom:
 ms.reviewer: twheeloc

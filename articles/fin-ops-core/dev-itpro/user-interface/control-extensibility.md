@@ -3,7 +3,7 @@ title: Control extensibility
 description: Learn about control extensibility, an architecture that lets developers extend the user interface and define new interface patterns.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/12/2026
 ms.reviewer: johnmichalak
 audience: Developer

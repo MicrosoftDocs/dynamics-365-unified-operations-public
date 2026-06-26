@@ -3,7 +3,7 @@ title: Hardware sizing requirements for on-premises environments
 description: Learn about the hardware sizing requirements for an on-premises environment, including an overview on factors that affect sizing.
 author: ttreen
 ms.author: ttreen 
-ms.topic: article
+ms.topic: concept-article
 ms.date: 10/30/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

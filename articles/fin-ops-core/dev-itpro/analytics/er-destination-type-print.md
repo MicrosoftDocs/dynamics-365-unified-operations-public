@@ -3,7 +3,7 @@ title: Printer ER destination type
 description: Learn about how to configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

@@ -3,7 +3,7 @@ title: Set up premium earnings
 description: Learn about premium earnings and how to set them up, including prerequisites and outlines and types of premiums.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

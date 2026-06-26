@@ -3,7 +3,7 @@ title: Process automation framework development
 description: Learn about development that uses the process automation framework, including a table that defines various terms.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: twheeloc

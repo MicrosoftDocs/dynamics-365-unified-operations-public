@@ -3,7 +3,7 @@ title: Manage recruiting processes
 description: Learn about manage recruiting, a concept that recruiters can use to track the steps in a recruiting process, including an overview on recruitment projects.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/10/2022
 ms.reviewer: twheeloc
 audience: Application User

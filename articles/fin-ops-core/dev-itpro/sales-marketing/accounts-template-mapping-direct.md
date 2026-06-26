@@ -3,7 +3,7 @@ title: Synchronize accounts directly from Sales to customers in Supply Chain Man
 description: Learn about the templates and underlying tasks that are used to synchronize accounts from Dynamics 365 Sales to Supply Chain Management. 
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: integration
 ms.date: 03/13/2026
 ms.custom: 
 ms.reviewer: kamaybac
@@ -95,7 +95,7 @@ The following illustrations show an example of a template mapping in Data integr
 
 [Prospect to cash](prospect-to-cash.md)
 
-[Synchronize accounts directly from Sales to customers in Supply Chain Management]()
+[Synchronize accounts directly from Sales to customers in Supply Chain Management](accounts-template-mapping-direct.md)
 
 [Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management](contacts-template-mapping-direct.md)
 

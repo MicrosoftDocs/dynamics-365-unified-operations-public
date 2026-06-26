@@ -3,7 +3,7 @@ title: Price and discount extensibility
 description: Learn about how to extend pricing functionality, including overviews of the PriceType and PriceGroupType enums and PriceDisc class.
 author: smithanataraj
 ms.author: smnatara
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer

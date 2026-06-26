@@ -3,7 +3,7 @@ title: Configuration data projects
 description: Learn about configuration data projects and configuration data templates, including a data management workspace overview.
 author: rcarlson
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 10/29/2025

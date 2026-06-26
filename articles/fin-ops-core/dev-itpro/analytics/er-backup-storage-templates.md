@@ -4,7 +4,7 @@ description: This article explains how to use the Electronic reporting (ER) back
 author: kfend
 ms.author: filatovm
 ms.date: 03/19/2026
-ms.topic: article
+ms.topic: concept-article
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

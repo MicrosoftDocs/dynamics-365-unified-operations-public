@@ -3,7 +3,7 @@ title: Reconfigure environments to take a new platform or topology
 description: Learn about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
 author: PeterRFriis
 ms.author: peterfriis
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

@@ -3,7 +3,7 @@ title: Set up payroll for workers
 description: Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/01/2017
 ms.reviewer: twheeloc
 audience: Application User

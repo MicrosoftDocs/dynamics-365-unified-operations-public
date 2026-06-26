@@ -3,7 +3,7 @@ title: Financial reporting
 description: Learn about financial reporting, which allows financial and business professionals to create, maintain, deploy, and view financial statements.
 author: aprilolson
 ms.author: aolson
-ms.topic: article
+ms.topic: overview
 ms.date: 06/01/2026
 ms.reviewer: twheeloc
 ms.collection: get-started

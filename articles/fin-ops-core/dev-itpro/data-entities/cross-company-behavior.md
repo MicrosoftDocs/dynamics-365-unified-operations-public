@@ -3,7 +3,7 @@ title: Cross-company behavior of data entities
 description: Learn about how data entities interact with the cross-company concept, including an overview of limitations of tables and views.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 02/26/2026
