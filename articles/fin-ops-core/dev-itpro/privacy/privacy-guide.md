@@ -3,7 +3,7 @@ title: Privacy overview
 description: Learn about the user log functionality in finance and operations apps, including a table that outlines scenarios and implementations for various roles.
 author: ToddLefor
 ms.author: tlefor
-ms.topic: overview
+ms.topic: concept-article
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started

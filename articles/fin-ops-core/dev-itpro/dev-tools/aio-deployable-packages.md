@@ -3,7 +3,7 @@ title: All-in-one deployable packages
 description: Learn about the all-in-one deployable package concept and its use, including best practices for creating and managing packages.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

@@ -3,7 +3,7 @@ title: Workflow system architecture
 description: Learn about the architecture of the workflow system, including a table that outlines the runtime and activity for each step.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/17/2026
 ms.reviewer: twheeloc 
 audience: Developer, IT Pro

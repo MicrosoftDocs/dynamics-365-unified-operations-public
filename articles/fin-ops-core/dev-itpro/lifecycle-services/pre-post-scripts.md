@@ -3,7 +3,7 @@ title: Local agent pre-deployment and post-deployment scripts
 description: Learn about local agent pre-deployment and post-deployment scripts, including overviews on customizations and logging.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 03/06/2026

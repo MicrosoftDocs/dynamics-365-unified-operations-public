@@ -3,7 +3,7 @@ title: Independent software vendor (ISV) licensing
 description: Learn about the independent software vendor (ISV) licensing feature, including on outline of the feature's capabilities.
 author: pnghub
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer

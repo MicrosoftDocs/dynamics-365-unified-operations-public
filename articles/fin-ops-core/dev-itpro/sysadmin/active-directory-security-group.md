@@ -3,7 +3,7 @@ title: Entra ID security groups
 description: Learn about the Microsoft Entra ID security groups feature, including an overview on known limitations when the Entra ID security groups feature is used.
 author: pnghub
 ms.author: jiwo
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/26/2026
 ms.reviewer: twheeloc
 ms.search.region: Global

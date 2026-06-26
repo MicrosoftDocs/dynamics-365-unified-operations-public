@@ -3,7 +3,7 @@ title: Security entry points under the process hierarchy
 description: Learn about various functionality that is related to entry points under the process hierarchy in user security governance.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/05/2026
 ms.custom: 
 ms.reviewer: twheeloc

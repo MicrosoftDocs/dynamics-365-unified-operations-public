@@ -3,7 +3,7 @@ title: Process incoming electronic documents
 description: Learn about the processing for incoming electronic documents, which can be processed via being imported or preprocessign when passing applications.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global

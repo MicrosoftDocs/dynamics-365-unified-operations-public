@@ -4,7 +4,7 @@ description: This article provides a list of planned and released regulatory upd
 author: liza-golub
 ms.author: egolub
 ms.date: 06/25/2026
-ms.topic: article
+ms.topic: reference
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak

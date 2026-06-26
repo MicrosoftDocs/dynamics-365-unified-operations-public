@@ -3,7 +3,7 @@ title: Log results and messages
 description: Learn about how to log results and messages from process automation, including various outlines on methods with code examples.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: twheeloc

@@ -3,7 +3,7 @@ title: Environment planning
 description: Learn about various aspects that you must consider while you plan for your project's environment, including an overview of environment types.
 author: skaue-ms
 ms.author: toskaue
-ms.topic: article
+ms.topic: concept-article
 ms.date: 06/12/2026
 ms.custom: 
 ms.reviewer: johnmichalak  

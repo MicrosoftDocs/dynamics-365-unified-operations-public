@@ -3,7 +3,7 @@ title: Error management and alert notifications
 description: Learn error logs and alert notifications that can help you troubleshoot issues, including an overview of consolidated error management.
 author: nhelgren
 ms.author: nhelgren
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
   - sfi-image-nochange

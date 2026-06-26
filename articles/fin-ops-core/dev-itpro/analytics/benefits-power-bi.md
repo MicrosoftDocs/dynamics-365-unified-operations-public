@@ -3,8 +3,8 @@ title: Benefits Power BI content
 description: Learn about the Benefits Power BI content including learning how to access Power BI content and how to understand data models and entities.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
-ms.date: 03/11/2026
+ms.topic: concept-article
+ms.date: 06/26/2026
 ms.reviewer: johnmichalak
 ms.search.form: HcmBenefitWorkspace
 audience: IT Pro
@@ -35,7 +35,7 @@ The reports that are included in the **Benefits** Power BI content have both cha
 | Benefit Enrollment Overview | Most and least enrolled plans, enrollment by employee group, and selected benefit plan options |
 | Employee Benefits           | Employee enrollment by selected benefit                                                        |
 
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create dashboards in Power BI](/training/modules/create-dashboards-power-bi).
 
 ## Understanding the data model and entities
 

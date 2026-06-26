@@ -3,7 +3,7 @@ title: Deprecation of methods and metadata elements
 description: Learn about the deprecation of methods and metadata elements that become obsolete as the code base evolves, including an overview on the cleanup of deprecated elements.
 author: josaw
 ms.author: josaw
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global

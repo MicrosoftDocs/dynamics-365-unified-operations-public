@@ -3,7 +3,7 @@ title: Get started with Tax Calculation
 description: Learn how to set up the Tax Calculation feature, including outlines on high-level design, prerequisites, and configuration.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: how-to
+ms.topic: get-started
 ms.date: 03/18/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
