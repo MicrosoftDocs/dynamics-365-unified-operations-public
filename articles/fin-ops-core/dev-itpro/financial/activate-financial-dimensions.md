@@ -3,7 +3,7 @@ title: Financial dimension activation
 description: Learn about the activating financial dimension process, which involves an overview the messages users receive regarding metadata.
 author: ethanrimes  
 ms.author: ethankallett
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/09/2026
 ms.reviewer: twheeloc
 audience: Developer

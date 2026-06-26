@@ -3,7 +3,7 @@ title: Transfer orders (Brazil)
 description: Learn about transfer orders for Brazil, which let you transfer inventory items between warehouses or other fiscal establishments.
 author: ankviklis
 ms.author: ankviklis
-ms.topic: article
+ms.topic: overview
 ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 audience: Application User

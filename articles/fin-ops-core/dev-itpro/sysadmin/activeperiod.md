@@ -3,7 +3,7 @@ title: Active batch periods
 description: Learn about setting up and working with active batch periods, including a step-by-step process on how to set up active periods for batch jobs.
 author: hasaid
 ms.author: hasaid
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

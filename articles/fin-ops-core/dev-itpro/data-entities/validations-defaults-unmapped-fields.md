@@ -3,7 +3,7 @@ title: Validations, default values, and unmapped fields
 description: Learn how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 04/03/2026

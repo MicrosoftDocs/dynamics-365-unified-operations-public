@@ -3,7 +3,7 @@ title: Set up work cycles and work periods
 description: Learn about how to set up work cycles and work periods, including prerequisites and an outline on how to assign work cycles to positions.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

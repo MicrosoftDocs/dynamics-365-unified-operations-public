@@ -3,7 +3,7 @@ title: SysSetup
 description: Learn about the SysSetup interface that's used to identify X++ classes that run during database synchronization, with code examples.
 author: najaidee
 ms.author: najaidee
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/30/2026
 audience: Developer
 ms.search.region: Global

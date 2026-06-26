@@ -3,7 +3,7 @@ title: Get notified about service updates through Lifecycle Services
 description: Learn about the various ways that you can be notified about service updates to your environments the notifications that you receive.
 author: angelmarshall
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/06/2026
 ms.custom:
 ms.reviewer: johnmichalak

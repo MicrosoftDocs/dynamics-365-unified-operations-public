@@ -3,7 +3,7 @@ title: Get support for finance and operations apps or Lifecycle Services
 description: Learn about how to get help with finance and operations apps or Microsoft Dynamics Lifecycle Services, including a table with more information for various tasks.
 author: EricMoos
 ms.author: emoos
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/10/2026
 ms.reviewer: twheeloc
 audience: Application user

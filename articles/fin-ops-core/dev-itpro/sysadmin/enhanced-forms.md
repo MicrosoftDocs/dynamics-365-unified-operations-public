@@ -3,7 +3,7 @@ title: Enhanced batch forms
 description: Learn about enhanced batch forms, including a step-by-step process on switching to the enhanced form on the action pane.
 author: hasaid
 ms.author: hasaid
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

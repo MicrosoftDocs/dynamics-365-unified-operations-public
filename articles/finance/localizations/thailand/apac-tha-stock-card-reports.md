@@ -3,7 +3,7 @@ title: Stock card report for Thailand
 description: Learn about stock card reports for legal entities in Thailand, including an outline and process for setting up the generation of stock card reports.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 05/12/2026

@@ -3,7 +3,7 @@ title: Use cases for business events
 description: Learn about use cases for business events, including a table that outlines use cases and values for various business processes.
 author: Sunil-Garg
 ms.author: sunilg
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/08/2026
 ms.custom: 
 ms.reviewer: johnmichalak

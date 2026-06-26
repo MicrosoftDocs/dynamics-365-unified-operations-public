@@ -3,7 +3,7 @@ title: Automated Entity store refresh
 description: Learn how to enable automated Entity store refresh, including a list that outlines the process of enabling the automated refresh.
 author: MilindaV2
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/14/2026
 ms.reviewer: twheeloc
 ms.search.form: AutomatedEntityStoreRefresh
