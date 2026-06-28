@@ -48,4 +48,33 @@ If the channel database doesn't contain transactional data for any of the wareho
 
 The **Order fulfillment** pages of POS also use channel-side calculation to show on-hand inventory for items when an order fulfillment line is selected and a user views the **Details** pane for on-hand inventory for the selected item.
 
+### Real-world example: Reducing oversell risk from offline sales in a multichannel operation
+
+In retail operations that combine physical and online sales, inventory discrepancies 
+often originate from transactions that occur outside the online channel. A common 
+example is a walk-in or phone-based sale that is processed at the store level but 
+not yet reflected in Commerce headquarters due to the synchronization interval of 
+the 1130 job.
+
+Consider a retailer with 10 units of a product in stock. A walk-in customer 
+purchases 3 units, which are recorded in the local POS database. Until the next 
+headquarters sync runs, the central system still shows 10 units available. During 
+this window, an online customer browsing the e-commerce site also sees 10 units 
+and places an order for 8. The result is an oversell of 1 unit, which leads to 
+a canceled order, a customer refund, and potential damage to marketplace rankings 
+if the sale originated from a platform such as Amazon or eBay.
+
+When channel-side calculation is enabled, the local POS transaction is factored 
+into the inventory count immediately, without waiting for headquarters 
+synchronization. The online channel reads from the local channel database and 
+displays 7 units available. The 8-unit order is blocked before it is placed, 
+preventing the oversell entirely.
+
+This approach is particularly valuable for retailers who process manual or 
+offline orders alongside their online channels. When a manual order is created 
+and confirmed, the stock reduction is reflected in the local channel database 
+right away. Online customers see an updated inventory count before the next 
+headquarters sync runs, which keeps stock levels accurate across all customer 
+touchpoints without requiring real-time service calls to headquarters.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
