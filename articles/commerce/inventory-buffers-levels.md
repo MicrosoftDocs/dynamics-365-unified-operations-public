@@ -130,6 +130,35 @@ To configure the response of the product availability APIs, follow these steps:
 1. In the **Store inventory** section, on the **Inventory** tab, in the **Product availability APIs for e-Commerce** field, select a value.
 1. Run the **1110** (**Global configuration**) distribution schedule job to apply the settings to channels.
 
+### Real-world example: Managing oversell risk in multichannel e-commerce
+
+Consider a retailer selling the same product across three channels at the same time: 
+a Shopify storefront, Amazon, and eBay. Physical stock stands at 100 units. Because 
+inventory availability APIs update asynchronously, all three channels display 
+"Available" simultaneously, regardless of orders being placed in real time.
+
+Without an inventory buffer, the following situation can occur. Amazon receives an 
+unexpected bulk order for 90 units. At the same moment, 15 orders come in through 
+Shopify and another 15 through eBay. The system processes all of them against the 
+same 100 units of stock, resulting in 120 committed units and 20 oversold items. 
+The retailer is left canceling orders and managing customer complaints after the fact.
+
+With an inventory buffer in place, this situation is prevented before it starts. 
+Setting a buffer of 15 units means the system exposes only 85 units as available 
+across all channels. When the 90-unit bulk order arrives on Amazon, the customer 
+cannot complete the purchase because the system does not have enough available 
+quantity to fulfill it. The remaining stock stays protected for other channels.
+
+Combining the buffer with inventory level profiles gives retailers further control 
+over what customers see at each stage:
+
+- **In stock**: 16 or more units remaining after the buffer is applied
+- **Low stock**: 1 to 15 units remaining after the buffer is applied
+- **Out of stock**: 0 or fewer units remaining after the buffer is applied
+
+This setup allows the retailer to catch oversell risk at the point of purchase, 
+rather than discovering the problem after orders are already confirmed.
+
 ## Additional resources
 
 [Manage product categories and products](category-management-product-creation.md)
