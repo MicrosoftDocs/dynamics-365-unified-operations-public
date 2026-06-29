@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
 ms.topic: how-to
-ms.date: 03/24/2026
+ms.date: 06/24/2026
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
@@ -200,35 +200,62 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 
 ### <a name="ml-workspace"></a>Set up machine learning in Azure
 
+> [!IMPORTANT]
+> Azure Machine Learning SDK v1 (`azureml-core`) is being retired. The demand forecasting template has been updated to use Azure Machine Learning SDK v2 (`azure-ai-ml`). Because the Supply Chain Management connector calls the Azure Machine Learning v1 published-pipeline REST contract, which SDK v2 doesn't expose, the updated template adds a small *relay* (an Azure Function) that receives those calls and submits the SDK v2 pipeline job. The `quick_setup.ps1` script provisions and deploys the relay for you. Setups that still use the v1 template continue to work; switch to the updated template when it's convenient. For more information, see the [About the relay](#about-the-relay) section.
+
 To enable Azure to use machine learning to process your forecasts, you must set up an Azure Machine Learning workspace for this purpose. You have two options:
 
 - To set up the workspace by running a script that Microsoft provides, follow the instructions in the [Option 1: Run a script to automatically set up your machine learning workspace](#ml-workspace-script) section, and then skip ahead to the [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters) section.
 - To manually set up your workspace, follow the instructions in the [Option 2: Manually set up your machine learning workspace](#ml-workspace-manual) section, and then skip ahead to the [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters) section. This option takes more time, but it gives you more control.
 
+#### <a name="about-the-relay"></a>About the relay
+
+The Supply Chain Management demand forecasting connector communicates with Azure Machine Learning through the v1 published-pipeline REST contract: it submits a run, polls the run status, cancels a run, and queries active runs. Azure Machine Learning SDK v2 doesn't expose that contract, so the updated template includes a *relay*—a lightweight Azure Function—that accepts those four calls and submits the equivalent SDK v2 pipeline job. Input and output data continue to flow through the *demplan-azureml* blob container, exactly as in the v1 template.
+
+The relay authenticates each caller by validating the service principal's Microsoft Entra token, so that only your Supply Chain Management environment can trigger forecasts. The `quick_setup.ps1` script creates the Function app, assigns it a managed identity that has access to the workspace and storage account, configures it, and deploys the relay code. The **Pipeline endpoint address** that you enter in Supply Chain Management is the relay's URL, which the script prints when it finishes.
+
 #### <a name="ml-workspace-script"></a>Option 1: Run a script to automatically set up your machine learning workspace
 
-This section describes how to set up your machine learning workspace by using an automated script that Microsoft provides. If you prefer, you can manually set up all the resources by following the instructions in the [Option 2: Manually set up your machine learning workspace](#ml-workspace-manual) section. You don't have to complete both options.
+This section describes how to set up your machine learning workspace by using an automated script that Microsoft provides. The script provisions the Azure Machine Learning resources, creates the service principal, and provisions and deploys the [relay](#about-the-relay). If you prefer, you can manually set up all the resources by following the instructions in the [Option 2: Manually set up your machine learning workspace](#ml-workspace-manual) section. You don't have to complete both options.
 
-1. On GitHub, open the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) repository (repo), and download the following files:
+The script requires the [Azure CLI](/cli/azure/install-azure-cli) and the [Azure CLI `ml` extension (v2)](/azure/machine-learning/how-to-configure-cli).
+
+1. On GitHub, open the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Templates-For-Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning) repository (repo). Either clone the repo or download it as a .zip file, so that you have the complete folder structure, including these items:
 
     - `quick_setup.ps1`
     - `sampleInput.csv`
     - `src/parameters.py`
     - `src/api_trigger.py`
     - `src/run.py`
+    - `src/REntryScript/entry.py`
+    - `src/REntryScript/forecast_entry.r`
     - `src/REntryScript/forecast.r`
+    - The `relay` folder
 
-1. Open a PowerShell window and run the `quick_setup.ps1` script that you downloaded in the previous step. Follow the on-screen instructions. The script sets up the required workspace, storage, datastore (named *workspaceblobdemplan*), and compute resources.
-1. Follow these steps to set the *workspaceblobdemplan* datastore (created by the `quick_setup.ps1` script) as a default datastore.
-    1. In Azure Machine Learning studio, select **Datastores** in the navigator.
-    1. Select the *workspaceblobdemplan* datastore (it's of type *Azure Blob Storage* and points to the *demplan-azureml* blob storage container).
-    1. Open the details page for the *workspaceblobdemplan* datastore and select **Set as default datastore**.
-1. In Azure Machine Learning studio, upload the `sampleInput.csv` file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The `quick_setup.ps1` script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
-1. In Azure Machine Learning studio, select **Notebooks** in the navigator.
-1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
-1. Upload the remaining four files that you downloaded in step 1 to the location that you found in the previous step.
-1. Select the `api_trigger.py` file that you just uploaded, and run it. It creates a pipeline that can be triggered through the API. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
-1. Your workspace is now set up. Skip ahead to the [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters) section.
+1. Open a PowerShell window in the root of the repo, and run the `quick_setup.ps1` script. Provide the parameters that are described in the following table. Follow the on-screen instructions, including the Azure sign-in prompt.
+
+    | Parameter | Description |
+    |---|---|
+    | `-subscriptionId` | The Azure subscription to create the resources in. |
+    | `-resourceGroupName` | The resource group to create or reuse. |
+    | `-location` | The Azure region. Select the region that matches your Supply Chain Management deployment. |
+    | `-storageAccountName` | The storage account that is dedicated to demand forecasting. |
+    | `-workspaceName` | The Azure Machine Learning workspace to create or reuse. |
+    | `-AADApplicationName` | The name of the Microsoft Entra application (service principal) to create or reuse. |
+    | `-functionAppName` | The name of the Azure Function app that hosts the relay. |
+    | `-functionStorageAccountName` | The storage account that the Function app uses for its runtime. |
+    | `-d365TenantId` (optional) | The tenant that the connector authenticates from. If you omit this parameter, the script uses the current tenant. |
+    | `-d365AppId` (optional) | The connector's service principal application ID. If you omit this parameter, the script uses the application that it created. |
+
+    The script is idempotent. If you run it again, it reuses existing resources. It does the following work:
+
+    - Creates (or reuses) the workspace, the storage account, the *demplan-azureml* blob container, the *workspaceblobdemplan* datastore, a compute instance, and the *e2ecpucluster* compute cluster.
+    - Creates (or reuses) the Microsoft Entra application and service principal, and assigns it the Contributor role on the workspace and storage account, and the Storage Blob Data Contributor role on the storage account.
+    - Provisions the Function app for the relay, assigns it a managed identity that has the required roles, configures it, and deploys the relay code.
+
+1. In the **Certificates & secrets** section of the Microsoft Entra application that the script created, create a client secret. For instructions, see [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Make a note of the secret value. You enter it in Supply Chain Management later.
+1. When the script finishes, it prints the demand forecasting parameters that you enter in Supply Chain Management, including the **Pipeline endpoint address** (the relay URL). Make a note of these values.
+1. Your workspace and relay are now set up. Skip ahead to the [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters) section.
 
 #### <a name="ml-workspace-manual"></a>Option 2: Manually set up your machine learning workspace
 
@@ -254,7 +281,7 @@ Learn more in [Create the workspace](/azure/machine-learning/quickstart-create-r
 
 Use the following procedure to set up your storage.
 
-1. On GitHub, open the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) repo, and download the `sampleInput.csv` file.
+1. On GitHub, open the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Templates-For-Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning) repo, and download the `sampleInput.csv` file.
 1. Open the storage account that you created in the [Step 1: Create a new workspace](#create-workspace) section.
 1. Follow the instructions in [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) to create a container that is named *demplan-azureml*.
 1. Upload the `sampleInput.csv` file that you downloaded in step 1 to the container that you just created. You need this file to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
@@ -277,26 +304,65 @@ To set up a compute resource in Azure Machine Learning studio to run your foreca
 1. On the **Compute clusters** tab, select **New** to open a wizard that helps you create a new compute cluster. Follow the on-screen instructions. The compute cluster generates demand forecasts. Its settings affect performance and the maximum level of parallelization of the run. Set the following fields, but use the default settings for all other fields:
 
     - **Name** – Enter *e2ecpucluster*.
-    - **Virtual machine size** – Adjust this setting according to the volume of data that you expect to use as input for demand forecasting. The node count shouldn't exceed 11, because one node is required to trigger demand forecast generation and the maximum number of nodes that can then be used to generate a forecast is 10. You'll also set the node count in the `parameters.py` file in the [Step 5: Create pipelines](#create-pipelines) section. On each node, several worker processes run forecasting scripts in parallel. The total number of worker processes in your job is *Number of cores that a node has* × *Node count*. For example, if your compute cluster has a type of *Standard\_D4* (eight cores) and a maximum of 11 nodes, and if the `nodes_count` value is set to *10* in the `parameters.py` file, the effective level of parallelism is 80.
+    - **Virtual machine size** – Adjust this setting according to the volume of data that you expect to use as input for demand forecasting. The node count shouldn't exceed 11, because one node is required to trigger demand forecast generation and the maximum number of nodes that can then be used to generate a forecast is 10. You'll also set the node count in the `parameters.py` file in the [Step 5: Deploy the relay](#deploy-relay) section. On each node, several worker processes run forecasting scripts in parallel. The total number of worker processes in your job is *Number of cores that a node has* × *Node count*. For example, if your compute cluster has a type of *Standard\_D4* (eight cores) and a maximum of 11 nodes, and if the `nodes_count` value is set to *10* in the `parameters.py` file, the effective level of parallelism is 80.
 
-##### <a name="create-pipelines"></a>Step 5: Create pipelines
+##### <a name="deploy-relay"></a>Step 5: Deploy the relay
 
-Pipelines provide a way to start forecasting scripts from Supply Chain Management. To create the required pipelines, follow these steps:
+In SDK v2, the connector reaches Azure Machine Learning through the [relay](#about-the-relay) instead of through a v1 published pipeline. Follow these steps to deploy the relay manually. These steps use the [Azure CLI](/cli/azure/install-azure-cli) and the [Azure CLI `ml` extension (v2)](/azure/machine-learning/how-to-configure-cli).
 
-1. On GitHub, open the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) repo, and download the following files:
+> [!TIP]
+> The `quick_setup.ps1` script in [Option 1](#ml-workspace-script) does all of these steps for you. You can run it with the `-RelayOnly` switch to deploy only the relay against a workspace that you set up manually.
 
-    - `src/parameters.py`
-    - `src/api_trigger.py`
-    - `src/run.py`
-    - `src/REntryScript/forecast.r`
+1. On GitHub, open the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Templates-For-Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning) repo, and clone it or download it as a .zip file, so that you have the `src` and `relay` folders.
+1. Open the `src/parameters.py` file. Make sure that the `nodes_count` value isn't greater than the number of nodes that you configured for the compute cluster in the [Step 4: Configure compute resources](#config-compute-resources) section. If the `nodes_count` value is greater than the number of nodes that are available in the cluster, the run might be queued until more resources become available.
+1. Create a storage account for the Function app's runtime. This account is separate from the demand forecasting storage account.
 
-1. In Azure Machine Learning studio, select **Notebooks** in the navigator.
-1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
-1. Upload the four files that you downloaded in step 1 to the location that you found in the previous step.
-1. In Azure, open and review the `parameters.py` file that you just uploaded. Make sure that the `nodes_count` value is one less than the value that you configured for the compute cluster in the [Step 4: Configure compute resources](#config-compute-resources) section. If the `nodes_count` value is greater than or equal to the number of nodes in the compute cluster, the pipeline run might be able to start. However, it stops responding while it waits for the required resources. For more information about the node count, see the [Step 4: Configure compute resources](#config-compute-resources) section.
-1. Select the `api_trigger.py` file that you just uploaded, and run it. It creates a pipeline that you can trigger through the API.
+    ```azurecli
+    az storage account create --name <functionStorageAccountName> --resource-group <resourceGroupName> --location <location> --sku Standard_LRS
+    ```
+
+1. Create a Linux Function app that runs Python 3.11 on a Consumption plan, and enable the remote build.
+
+    ```azurecli
+    az functionapp create --name <functionAppName> --resource-group <resourceGroupName> --storage-account <functionStorageAccountName> --consumption-plan-location <location> --os-type Linux --runtime python --runtime-version 3.11 --functions-version 4
+    az functionapp config appsettings set --name <functionAppName> --resource-group <resourceGroupName> --settings SCM_DO_BUILD_DURING_DEPLOYMENT=1 ENABLE_ORYX_BUILD=true
+    ```
+
+1. Assign the Function app a system-assigned managed identity.
+
+    ```azurecli
+    az functionapp identity assign --name <functionAppName> --resource-group <resourceGroupName>
+    ```
+
+    Assign the returned principal ID the **Contributor** role on the Azure Machine Learning workspace, and the **Storage Blob Data Contributor** role on the demand forecasting storage account. For instructions, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current).
+
+1. Configure the relay's app settings. Set `RELAY_EXPECTED_TENANT_ID` and `RELAY_EXPECTED_APP_ID` to the tenant ID and the service principal application ID from the [Set up a new Microsoft Entra application](#aad-app) section. The relay rejects any caller that doesn't present a token from this tenant and application.
+
+    ```azurecli
+    az functionapp config appsettings set --name <functionAppName> --resource-group <resourceGroupName> --settings AML_SUBSCRIPTION_ID=<subscriptionId> AML_RESOURCE_GROUP=<resourceGroupName> AML_WORKSPACE_NAME=<workspaceName> RELAY_DATASTORE=workspaceblobdemplan RELAY_EXPECTED_TENANT_ID=<tenantId> RELAY_EXPECTED_APP_ID=<servicePrincipalApplicationId>
+    ```
+
+1. Copy the `src` folder into the `relay` folder (the relay imports the pipeline builders from it), package the relay, and deploy it with a remote build.
+
+    ```powershell
+    Copy-Item .\src .\relay\src -Recurse -Force
+    Compress-Archive -Path .\relay\* -DestinationPath .\relay.zip -Force
+    az functionapp deployment source config-zip --name <functionAppName> --resource-group <resourceGroupName> --src .\relay.zip --build-remote true
+    ```
+
+    > [!IMPORTANT]
+    > The `--build-remote true` option is required. Without it, the packages in `relay/requirements.txt` aren't installed, and the relay fails at runtime.
+
+1. The relay is now deployed. Its pipeline endpoint address has the following form. You enter this URL as the **Pipeline endpoint address** in Supply Chain Management. Only the host is used by the connector; the path segments supply the subscription, resource group, and workspace.
+
+    ```text
+    https://<functionAppName>.azurewebsites.net/pipelines/v1.0/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.MachineLearningServices/workspaces/<workspaceName>/PipelineRuns/PipelineEndpointSubmit/Id/relay
+    ```
 
 ### <a name="aad-app"></a>Set up a new Microsoft Entra application
+
+> [!NOTE]
+> If you set up your workspace by running the script ([Option 1](#ml-workspace-script)), the script already created this Microsoft Entra application and assigned the required roles. In that case, you only have to create a client secret (step 5 in this section). Complete the other steps in this section only if you set up your workspace manually ([Option 2](#ml-workspace-manual)).
 
 To authenticate by using a service principal with the resources dedicated to demand forecasting, you need a Microsoft Entra application. Therefore, the application should have the lowest level of privilege that is required to generate the forecast.
 
@@ -326,7 +392,7 @@ Use the following procedure to connect your Supply Chain Management environment 
     - **Service principal application ID** – Enter the application ID for the application that you created in the [Active Directory Application](#aad-app) section. Supply Chain Management uses this value to authorize API requests to Azure Machine Learning Service.
     - **Service principal secret** – Enter the service principal application secret for the application that you created in the [Active Directory Application](#aad-app) section. Supply Chain Management uses this value to acquire the access token for the security principal that you created to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
     - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard in your Azure workspace. (Learn more in the [Set up machine learning in Azure](#ml-workspace) section.)
-    - **Pipeline endpoint address** – Enter the URL of the pipeline REST endpoint for your Azure Machine Learning Service. You created this pipeline as the last step when you [set up machine learning in Azure](#ml-workspace). To get the pipeline URL, sign in to your Azure portal, select **Pipelines** on the navigation. On the **Pipeline** tab, select the pipeline endpoint that is named **TriggerDemandForecastGeneration**. Then copy the REST endpoint that is shown.
+    - **Pipeline endpoint address** – Enter the URL of the [relay](#about-the-relay) that you deployed when you [set up machine learning in Azure](#ml-workspace). If you used the script ([Option 1](#ml-workspace-script)), this URL is the **Pipeline endpoint address** that the `quick_setup.ps1` script prints when it finishes. If you set up the relay manually ([Option 2](#ml-workspace-manual)), construct the URL as described in the [Step 5: Deploy the relay](#deploy-relay) section.
 
     ![Parameters on the Azure Machine Learning Service tab of the Demand forecasting parameters page.](media/azure-ml-service-parameters.png "Parameters on the Azure Machine Learning Service tab of the Demand forecasting parameters page")
 
