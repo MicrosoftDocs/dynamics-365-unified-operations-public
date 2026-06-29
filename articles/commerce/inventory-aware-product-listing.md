@@ -66,4 +66,34 @@ The category and search results page displays products at the product master lev
 
 You can configure the **Inventory settings for product list pages** setting in Commerce site builder to control how the category and search results page displays out-of-stock products. For more information, see [Apply inventory settings](inventory-settings.md).
 
+### Choosing the right out-of-stock display behavior for your channel
+
+The decision to hide out-of-stock products versus moving them to the bottom of a 
+product listing page depends on how your customers behave and how your catalog is 
+structured.
+
+For retailers selling products with strong brand or model loyalty, hiding 
+out-of-stock items entirely is often the more effective approach. When a 
+best-selling model goes out of stock, customers who are attached to that specific 
+product tend to wait for it to return rather than switching to an alternative. 
+Keeping it visible on the listing page reinforces that attachment and draws 
+attention away from models that are actually available. Removing it from the list 
+redirects that browsing traffic toward in-stock alternatives, which keeps sales 
+moving and prevents the listing page from becoming a source of frustration.
+
+Displaying out-of-stock products also risks a negative customer experience. 
+Shoppers who click through to a product detail page only to find it unavailable 
+often leave the site without purchasing anything. In contrast, a listing page that 
+shows only available products gives customers a cleaner path to purchase.
+
+A practical approach for this scenario is to hide out-of-stock products by 
+setting them to draft status when stock is depleted, then reactivating them once 
+inventory is replenished. This keeps the listing page focused on what customers 
+can actually buy, while ensuring that high-demand products return to full 
+visibility as soon as stock is available again.
+
+For products where customers are more flexible about which variant or model they 
+choose, moving out-of-stock items to the bottom of the list may be sufficient, 
+as it preserves catalog visibility without disrupting the shopping experience.
+   
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
