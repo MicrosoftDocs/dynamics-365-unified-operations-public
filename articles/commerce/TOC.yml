@@ -1830,6 +1830,12 @@
           href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?context=/dynamics365/context/commerce
         - name: Configure SSRS for on-premises deployments
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?context=/dynamics365/context/commerce
+        - name: Reduce long-running transactions in TempDB preprocessing reports
+          href: ../fin-ops-core/dev-itpro/analytics/skip-report-transaction-tempdb-preprocessing.md?context=/dynamics365/context/commerce
+        - name: Default reporting experiences in IaaS environments
+          href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?context=/dynamics365/context/commerce
+        - name: Document reporting preview options
+          href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md?context=/dynamics365/context/commerce
         - name: Printing
           items:
           - name: Document printing overview
