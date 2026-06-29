@@ -1875,6 +1875,8 @@ items:
               href: ../fin-ops/sysadmin/security-gov-overview.md
             - name: License usage summary report
               href: ../fin-ops/sysadmin/security-gov-license-usage-summary.md
+            - name: License usage summary security object license (Preview)
+              href: ../fin-ops/sysadmin/security-gov-security-object-licenses-preview.md
             - name: Set up security categories
               href: ../fin-ops/sysadmin/security-category.md
             - name: Import security categories
