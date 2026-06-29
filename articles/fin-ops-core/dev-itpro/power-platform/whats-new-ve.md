@@ -17,6 +17,17 @@ ms.search.validFrom: 2023-06-1
 
 The [Virtual Entity solution provider for finance and operations apps](https://marketplace.microsoft.com/product/dynamics-365/mscrm.finance_and_operations_virtual_entity) is a Microsoft Marketplace package that provides near-real-time interaction with finance and operations apps data on Microsoft Power Platform.
 
+## Feb 2026 release
+
+The Feb release of Finance and Operations Virtual Entity Solution Changes in Release <> contains the following changes.
+
+### Data archival changes
+
+| Type | Description | Status |
+|---|---|---|
+| Feature | Error messaging has been enhanced for Dataverse Archival scenarios to provide clearer diagnostics for Dynamics 365 Archive, including Dataverse Long Term Retention (LTR) app installation failures and archive job creation failures. | General availability |
+| Feature | BulkRetain API response contract changes. | General availability |
+
 ## July 2023 release
 
 The July release of Finance and Operations Virtual Entity Solution Changes in Release 2.8.8 contains the following changes.
