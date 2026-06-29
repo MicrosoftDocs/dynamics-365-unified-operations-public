@@ -4,7 +4,7 @@ description: Learn how postings are configured in Accounts payable with examples
 author: leizi2015
 ms.author: raynezou
 ms.topic: article
-ms.date: 06/19/2024
+ms.date: 06/24/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -27,15 +27,15 @@ Several posting configurations besides the vendor posting profile are available 
 
 ## Methods of payment posting accounts
 
-Methods of payment define how a payment will be posted to the general ledger. They also control the behavior of the payment output. Typically, one method of payment is created for each type of payment that your organization makes (for example, cash, check, credit card, money order, and wire).
+Methods of payment define how a payment posts to the general ledger. They also control the behavior of the payment output. Typically, you create one method of payment for each type of payment that your organization makes, such as cash, check, credit card, money order, and wire.
 
-The fields in the **Posting** section on the **General** FastTab on the **Methods of payment** page (**Accounts payable > Payment setup > Methods of payment**) control how a payment will be posted to the general ledger. You must first select a value in the **Account type** field. The account type that you select controls the behavior of the **Payment account** field. We recommend that you select **Bank** in the **Account type** field and then select the bank account in the **Payment account** field. The benefit of the approach is that the system will post the payment to the Bank subledger, which supports reconciliation and other cash-related processes. The following table shows an example of the posting profile configuration if you're using the **Cash and bank management** module.
+The fields in the **Posting** section on the **General** FastTab on the **Methods of payment** page (**Accounts payable > Payment setup > Methods of payment**) control how a payment posts to the general ledger. You must first select a value in the **Account type** field. The account type that you select controls the behavior of the **Payment account** field. Select **Bank** in the **Account type** field and then select the bank account in the **Payment account** field. The system posts the payment to the Bank subledger, which supports reconciliation and other cash-related processes. The following table shows an example of the posting profile configuration if you're using the **Cash and bank management** module.
 
 | Posting type | Account type | Payment account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|--------------|------------------------------|--------------|---------------|------------------|-------------|
 | Bank | Bank | Bank of America | Bank account that is linked to an asset | Debit | No | For each method of payment, enter the main account in the **Payment account** field. |
 
-If you aren't planning to use Cash and bank management, you should select **Ledger** in the **Account type** field and then select the main account in the **Payment account** field. The following table shows an example of the posting profile configuration if you are **not** using Cash and bank management.
+If you aren't planning to use Cash and bank management, select **Ledger** in the **Account type** field and then select the main account in the **Payment account** field. The following table shows an example of the posting profile configuration if you are **not** using Cash and bank management.
 
 | Posting type | Account type |Payment account example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|--------------|------------------------|--------------|---------------|------------------|-------------|
@@ -43,7 +43,7 @@ If you aren't planning to use Cash and bank management, you should select **Ledg
 
 ## Bridging accounts
 
-Bridging posting is a two-step process that is used when payments are posted. It's an optional feature that can be used with zero-balance bank accounts, for example. It can help ensure a smoother and more timely bank reconciliation process. In the first step, a payment is posted to a temporary account (the bridging account). In the second step, the posted entry is reversed and posted to the bank account when the payment clears the bank. The following table shows an example of the posting profile configuration for bridging posting.
+Bridging posting is a two-step process that you use when posting payments. It's an optional feature that you can use with zero-balance bank accounts, for example. It can help ensure a smoother and more timely bank reconciliation process. In the first step, you post a payment to a temporary account (the bridging account). In the second step, you reverse the posted entry and post it to the bank account when the payment clears the bank. The following table shows an example of the posting profile configuration for bridging posting.
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
@@ -59,12 +59,12 @@ For more information, see [Cash discounts](../cash-bank-management/cash-discount
 
 ## Payment fee posting accounts
 
-Payment fees let you automatically add a fee to a vendor payment when a set of conditions applies. Payment fees can be paid to the vendor, or they can be posted to your bank account as an expense. Here are some examples:
+Payment fees let you automatically add a fee to a vendor payment when a set of conditions applies. You can pay payment fees to the vendor, or you can post them to your bank account as an expense. Here are some examples:
 
 - A vendor charges you 3 percent of the payment total if you pay by using a credit card.
 - Your bank charges you $1.00 for each wire transfer that you process, and the wire fee is expensed.
 
-When you configure a vendor payment fee, if you set the **Charge** field to **Vendor**, the **Main account** field becomes unavailable, and the system uses the vendor posting profile to post the fee. If you set the **Charge** field to **Ledger**, you must set the **Main account** field to the main account where the payment fee will be posted. Typically, this main account will be an expense account. The following table shows an example of the posting profile configuration for payment fee posting.
+When you configure a vendor payment fee, if you set the **Charge** field to **Vendor**, the **Main account** field becomes unavailable, and the system uses the vendor posting profile to post the fee. If you set the **Charge** field to **Ledger**, you must set the **Main account** field to the main account where the payment fee is posted. Typically, this main account is an expense account. The following table shows an example of the posting profile configuration for payment fee posting.
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|----------------|------------------|-------------|
@@ -74,18 +74,18 @@ For more information, see [Define vendor payment fees](../accounts-payable/tasks
 
 ## Charges code posting accounts
 
-If you must track purchase amounts in addition to line items, you can use charges codes. For example, your supplier might charge freight and handling fees to you, or it might expense some freight and handling fees internally. You can specify whether these amounts are posted to expense accounts or added to the cost of the items.
+If you need to track purchase amounts along with line items, use charges codes. For example, your supplier might charge you for freight and handling fees, or it might expense some freight and handling fees internally. You can specify whether these amounts go to expense accounts or are added to the cost of the items.
 
-You can create charges codes for Accounts receivable and Accounts payable. When you configure a charges code, you must define the posting. The posting controls both the debit account and the credit account. When you create charges codes, you can select the posting type that is used for each charge code. The following table shows examples of typical charge codes for Accounts payable on the **Charges codes** page.
+You can create charges codes for Accounts receivable and Accounts payable. When you configure a charges code, you must define the posting. The posting controls both the debit account and the credit account. When you create charges codes, you can select the posting type that you use for each charge code. The following table shows examples of typical charge codes for Accounts payable on the **Charges codes** page.
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
-| Purchase fee | Leave the field blank. | Not applicable | Item | Debit | No | **Example for a purchase fee for an item:** </p><ul><li>**Debit type** field = **Item**</li><li>  **Credit type** field =  **Customer/Vendor**.</li><li> The item posting uses the main account from the inventory posting profile. |
-| Order, freight | 600120 | Freight In | Revenue | Debit | No | **Example for freight that is paid to a vendor:** </p><ul><li>**Debit type** field = **Ledger account**</li><li> **Credit type** field = **Customer/Vendor** |
-| Rebate\* | 503160 | Vendor Rebate (Contra COGS)| Expense | Credit | No | **Example for a vendor rebate:**</p><ul><li>**Debit type** field = **Customer/Vendor**</li><li>**Credit type** field = **Ledger account** |
+| Purchase fee | Leave the field blank. | Not applicable | Item | Debit | No | **Example for a purchase fee for an item:**<ul><li>**Debit type** field = **Item**</li><li>**Credit type** field = **Customer/Vendor**.</li><li>The item posting uses the main account from the inventory posting profile.</li></ul> |
+| Order, freight | 600120 | Freight In | Revenue | Debit | No | **Example for freight that is paid to a vendor:**<ul><li>**Debit type** field = **Ledger account**</li><li>**Credit type** field = **Customer/Vendor**</li></ul> |
+| Rebate\* | 503160 | Vendor Rebate (Contra COGS)| Expense | Credit | No | **Example for a vendor rebate:**<ul><li>**Debit type** field = **Customer/Vendor**</li><li>**Credit type** field = **Ledger account**</li></ul> |
 
-\* For the rebate example, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality that is available in Microsoft Dynamics 365 Supply Chain Management provides more control and automation of rebates. For more information, see [Vendor rebates](../../supply-chain//procurement/vendor-rebates.md).
+\* For the rebate example, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality that's available in Microsoft Dynamics 365 Supply Chain Management provides more control and automation of rebates. For more information, see [Vendor rebates](../../supply-chain//procurement/vendor-rebates.md).
 
-The preceding table shows three typical examples of posting types that can be used for charges codes. It should be used as a guideline and a selection of samples. It doesn't provide a comprehensive list of all possible combinations or posting types that can be used.
+The preceding table shows three typical examples of posting types that you can use for charges codes. Use it as a guideline and a selection of samples. It doesn't provide a comprehensive list of all possible combinations or posting types that you can use.
 
 For more information, see [Create charges code](../accounts-receivable/create-charges-codes.md).

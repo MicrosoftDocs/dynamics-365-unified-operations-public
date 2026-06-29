@@ -3,7 +3,7 @@ title: Data entities overview
 description: Learn about data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: overview
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 04/03/2026

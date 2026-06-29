@@ -44,6 +44,8 @@
         href: ../fin-ops-core/dev-itpro//deployment/deploy-demo-environment.md?context=/dynamics365/context/commerce
       - name: Deploy a Commerce trial (Preview) environment
         href: dev-itpro/commerce-trial.md
+      - name: Manage Commerce deployments in Power Platform admin center (Public Preview)
+        href: dev-itpro/commerce-power-platform-admin-center.md
       - name: One Version service updates
         items:
         - name: One Version service updates overview
@@ -1730,8 +1732,6 @@
             href: localizations/europe/emea-eeu-petty-cash-for-retail.md
           - name: Customer invoices and return sales orders in Eastern European countries/regions
             href: localizations/europe/emea-eeu-retail-invoices.md
-          - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
-            href: localizations/europe/emea-eeu-deployment.md
         - name: Czech Republic
           items:
           - name: Fiscal registration service integration sample for Czech Republic
@@ -1746,8 +1746,6 @@
         items:
         - name: Cash register functionality
           href: localizations/france/emea-fra-cash-registers.md
-        - name: Deployment guidelines for cash registers
-          href: localizations/france/emea-fra-fi-deployment.md
         - name: Fiscal archive and data integrity verification
           href: localizations/france/emea-fra-fiscal-archive.md
       - name: Germany
@@ -1782,8 +1780,6 @@
           href: localizations/norway/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/dev-itpro/emea-nor-fi-deployment.md
-        - name: Migrate from legacy functionality for Norway
-          href: localizations/dev-itpro/emea-nor-fi-migration.md
       - name: Saudi Arabia
         items:
         - name: Generate and submit simplified electronic invoices for Saudi Arabia
@@ -3170,6 +3166,8 @@
         href: copilot-site-builder.md
       - name: Streamline your merchandising process with Copilot-based insights
         href: copilot-based-merch-insights.md
+      - name: Use the Commerce MCP server (preview) for agentic commerce
+        href: commerce-mcp.md
     - name: Responsible AI FAQs
       items: 
       - name: Overview

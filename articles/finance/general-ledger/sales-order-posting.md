@@ -4,7 +4,7 @@ description: Learn about the Sales order tab of the inventory posting profile pa
 author: rachelprofitt
 ms.author: raprofit
 ms.topic: overview
-ms.date: 04/25/2022
+ms.date: 06/04/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -13,26 +13,26 @@ ms.search.form: InventPosting, InventItemGroup
 
 # Sales order posting
 
-The **Sales order** tab on the **Inventory posting profiles** page is used to control how sales orders will be posted to the general ledger. Two main activities are posted to the general ledger for a sales order: 
+Use the **Sales order** tab on the **Inventory posting profiles** page to control how sales orders post to the general ledger. Two main activities post to the general ledger for a sales order:
 
 - Packing slip
 - Invoice
 
 For a physical transaction (packing slip) to post to the general ledger for a sales order, the following conditions must be met:
 
-- On the **Inventory and warehouse management parameters** page, the **Post packing slip in ledger** checkbox must be selected .
-- On the **Item model group** page for the item selected on the sales order line, the **Post physical inventory in ledger** checkbox must be selected.
-- On the **Inventory posting profile** page, the main accounts must be specified  for the following posting types:
+- On the **Inventory and warehouse management parameters** page, select the **Post packing slip in ledger** checkbox.
+- On the **Item model group** page for the item selected on the sales order line, select the **Post physical inventory in ledger** checkbox.
+- On the **Inventory posting profile** page, specify the main accounts for the following posting types:
   - Cost of units, delivered
   - Cost of goods sold, delivered
 
 > [!NOTE]
-> When the item is set to standard cost, the system will generate the packing slip voucher regardless of the above configurations.
+> When you set the item to standard cost, the system generates the packing slip voucher regardless of the preceding configurations.
 
 For a financial transaction (invoice) to post to the general ledger for a sales order, the following conditions must be met:
 
-- On the **Item model group** page for the item selected on the sales order line, the **Post financial inventory in ledger** checkbox must be selected.
-- The main accounts must be specified on the **Inventory posting profile** page for the following posting types:
+- On the **Item model group** page for the item selected on the sales order line, select the **Post financial inventory in ledger** checkbox.
+- On the **Inventory posting profile** page, specify the main accounts for the following posting types:
   - Cost of units, invoiced
   - Cost of goods sold, invoiced
   - Revenue
@@ -43,33 +43,32 @@ For a financial transaction (invoice) to post to the general ledger for a sales 
 
 To post the deferred (estimated) revenue value to the general ledger when you generate a packing slip for a sales order, the following conditions must be met:
 
-- On the **Item model group** page for the item selected on the sales order line, the **Post physical inventory in ledger** checkbox must be selected.
-- On the **Item model group** page, the **Post to Deferred Revenue Account on Sales Delivery** checkbox must be selected.
-- On the **Inventory and warehouse management parameters** page., the **Post packing slip in ledger** checkbox must be selected.
-- On the **Inventory and warehouse management parameters** page, the **Post physical sales tax** checkbox must be selected.
-- On the **Accounts receivable parameters** page, the **Post packing slip in ledger** checkbox must be selected.
-- On the **Inventory posting profile** page, the main accounts must be specified for the following posting types:
+- On the **Item model group** page for the item selected on the sales order line, select the **Post physical inventory in ledger** checkbox.
+- On the **Item model group** page, select the **Post to Deferred Revenue Account on Sales Delivery** checkbox.
+- On the **Inventory and warehouse management parameters** page, select the **Post packing slip in ledger** checkbox.
+- On the **Inventory and warehouse management parameters** page, select the **Post physical sales tax** checkbox.
+- On the **Accounts receivable parameters** page, select the **Post packing slip in ledger** checkbox.
+- On the **Inventory posting profile** page, specify the main accounts for the following posting types:
   - Deferred revenue on delivery
   - Deferred revenue offset on delivery
   - Deferred sales tax on delivery
 
 > [!NOTE]
-> We generally recommend that you enable the options **Post physical inventory** and **Post packing slip in ledger**. Enabling these options can help to accelerate month-end closing procedures, because no deferrals will need to be manually calculated and posted. Additionally, financial statements will reflect the deferred amounts automatically without manual intervention.
+> We generally recommend that you enable the options **Post physical inventory** and **Post packing slip in ledger**. Enabling these options can help to accelerate month-end closing procedures, because no deferrals need to be manually calculated and posted. Additionally, financial statements reflect the deferred amounts automatically without manual intervention.
 
 > [!IMPORTANT]
-> The **Post to Deferred Revenue Account on Sales Delivery** option isn't used with revenue recognition. For more information about Revenue recognition, go to [Revenue recognition overview](../accounts-receivable/revenue-recognition-overview.md).
+> The **Post to Deferred Revenue Account on Sales Delivery** option isn't used with revenue recognition. For more information about Revenue recognition, see [Revenue recognition overview](../accounts-receivable/revenue-recognition-overview.md).
 
-## Sample posting profile configuration 
+## Sample posting profile configuration
 
 The following table shows examples of the default posting types with sample main accounts and descriptions:
- 
-- The **Clearing account** column indicates that the posting type is a clearing account. The amount posted in this account is automatically reversed when a later transaction is posted. 
-- The **P/F** column indicates **P** for physical posting and **F** for financial posting. 
+
+- The **Clearing account** column indicates that the posting type is a clearing account. The amount posted in this account is automatically reversed when a later transaction is posted.
+- The **P/F** column indicates **P** for physical posting and **F** for financial posting.
 - The **Follow** column indicates whether the main account for a specific posting type is typically the same as another posting type. The value in the column indicates the type of posting that's typically used.
 
 > [!NOTE]
 > These main accounts and main account names are only suggestions. We recommend that you work with your accountant to determine the best configuration for your business needs.
-
 
 | Posting type | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F | Follow | Description |
 |------------|------------------------|-------------------------|--------------|---------|-------------------|------------|------|-------------------------|
@@ -88,25 +87,25 @@ The following table shows examples of the default posting types with sample main
 
 ## Sales category posting
 
-As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by sales categories. For more information about setting up a category hierarchy and assigning categories to products, go to [Create a hierarchy of product classification](../../supply-chain/pim/tasks/create-hierarchy-product-classification.md) and [Classify a product using category hierarchies](../../supply-chain/pim/tasks/classify-product-category-hierarchies.md).
+Instead of setting up inventory posting for all items, a group of items, or a single item, set up categories and control the ledger posting by sales categories. For more information about setting up a category hierarchy and assigning categories to products, see [Create a hierarchy of product classification](../../supply-chain/pim/tasks/create-hierarchy-product-classification.md) and [Classify a product using category hierarchies](../../supply-chain/pim/tasks/classify-product-category-hierarchies.md).
 
-After you create a category hierarchy, you must assign the hierarchy to one or more types. To use a category hierarchy on sales orders, you must assign the category to the Sales category hierarchy type. <!-- outdated link - For more information, go to [About category hierarchies](/dynamicsax-2012/appuser-itpro/about-category-hierarchies.md). -->
+After you create a category hierarchy, assign the hierarchy to one or more types. To use a category hierarchy on sales orders, assign the category to the Sales category hierarchy type. <!-- outdated link - For more information, go to [About category hierarchies](/dynamicsax-2012/appuser-itpro/about-category-hierarchies.md). -->
 
 ## Create revenue posting by sales category
 
 To assign ledger postings for a sales order based on a sales category, follow these steps:
 
 1. Go to **Inventory management** > **Setup** > **Posting** > **Posting**.
-2. Select the **Sales** tab.
-3. Select the radio button for the posting type you want to configure (for example, **Revenue**).
-4. Select **New**.
-5. In the **Item code** field, select **Category**.
-6. Use the **Category relation** field to select the category for the posting profile.
-7. In the **Account code** field, select an option for **Table**, **Group**, or **All**. For example, to apply the posting profile to all customers, select **All**.
+1. Select the **Sales** tab.
+1. Select the radio button for the posting type you want to configure, such as **Revenue**.
+1. Select **New**.
+1. In the **Item code** field, select **Category**.
+1. Use the **Category relation** field to select the category for the posting profile.
+1. In the **Account code** field, select an option for **Table**, **Group**, or **All**. For example, to apply the posting profile to all customers, select **All**.
    - If you selected **Table** in step 6, select the specific **Vendor number** for the posting profile in the **Account relation** field.
    - If you selected **Group** in step 6, select the **Vendor group** for the posting profile in the **Account relation** field.
-   - If you selected **All** in step 6, the **Account relation** field will be left blank.
+   - If you selected **All** in step 6, the **Account relation** field is left blank.
 
-8. To associate a particular tax group that has the selected posting type, select a **Sales tax group**. If you leave this field blank, the posting type applies to all existing tax groups. Posting that's specified for tax groups applies only to transactions that are made for sales and purchases.
+1. To associate a particular tax group that has the selected posting type, select a **Sales tax group**. If you leave this field blank, the posting type applies to all existing tax groups. Posting that you specify for tax groups applies only to transactions that are made for sales and purchases.
 
-9. In the **Main account** field, specify the account number to post the account type to. Select one of the existing account numbers in the chart of accounts.
+1. In the **Main account** field, specify the account number to post the account type to. Select one of the existing account numbers in the chart of accounts.

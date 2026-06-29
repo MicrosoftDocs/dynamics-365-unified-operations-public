@@ -3,7 +3,7 @@ title: Plan your organizational hierarchy
 description: Before you set up organizations and organization hierarchies, make sure that you understand how to best model your business.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: concept-article
 ms.date: 06/04/2026
 ms.reviewer: twheeloc
 audience: Application User

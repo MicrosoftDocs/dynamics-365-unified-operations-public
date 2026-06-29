@@ -57,6 +57,7 @@ You should consider developing your updated interfaces in such a way that they c
     > - The local business data (LBD) migration process is for finance and operations sandbox (UAT) self-service environments only. It can never be run against a production environment. A gold copy refresh is done to move the migrated data into production. 
     > - Make sure that you download the latest version of the Data Migration Toolkit for Dynamics 365 from Lifecycle Services.
     > - Don't deploy or use the linked Power Platform environment for the migration. The Power Platform environment can be deployed and used after the data upgrade is completed.
+    > - Before you begin the migration, if your environment uses Dynamics 365 Commerce components, delete any records in the **RetailTransactionServiceProfile** table in the source database. On-premises environments store the Commerce real-time service URL (**StoreSystemsAosUrl**) in this table, but cloud environments don't use this setting. Migrating it can cause Commerce Scale Unit connectivity issues. Before you proceed, run `DELETE FROM RetailTransactionServiceProfile` against your source database and verify the table is empty.
 
 3. Download the Data Migration Toolkit for Dynamics 365 version 1.0.8 (or later) from Lifecycle Services. In the Shared asset library, select **Model** as the asset type, and then select the model file.
 4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.

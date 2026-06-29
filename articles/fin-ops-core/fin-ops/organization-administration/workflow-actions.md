@@ -3,7 +3,7 @@ title: Actions in workflow approval processes
 description: Learn about the actions that each participant in a workflow approval process can take, including an overview on actions that an originator can perform.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/10/2026
 ms.reviewer: twheeloc
 audience: Application User

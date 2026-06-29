@@ -2,7 +2,7 @@
 title: Prepare for go-live
 description: Learn about how to prepare for the go-live for finance and operations apps, including a table that lists the key steps in the go-live process.
 author: alejandra-cabrales
-ms.date: 04/01/2026
+ms.date: 06/12/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -17,6 +17,8 @@ ms.dyn365.ops.version: July 2017 update
 # Prepare for go-live
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article provides guidance about how to prepare for the go-live for finance and operations apps in Lifecycle Services if you already have a project there.
 

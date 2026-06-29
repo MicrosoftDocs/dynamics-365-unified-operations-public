@@ -3,7 +3,7 @@ title: Purchases of discounted goods
 description: Learn about the purchase of goods where there is a discount, including processes for validating tax details and posting purchase invoices.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/30/2026
 ms.custom:
 ms.reviewer: johnmichalak  

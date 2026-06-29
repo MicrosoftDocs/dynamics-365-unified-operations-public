@@ -1,8 +1,8 @@
----
+﻿---
 title: Customer information management for Italy
 description: Learns how to handle customer information in Microsoft Dynamics 365 Commerce point of sale (POS) for Italy.
 author: EvgenyPopovMBS
-ms.date: 02/27/2026
+ms.date: 06/26/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Italy
@@ -33,8 +33,6 @@ Complete the following configuration to use this functionality:
 - Add a customer search criterion.
 - Configure channel components.
 
-> [!NOTE]
-> For Commerce version 10.0.38 and earlier, enable the **(Italy) Customer information management in Retail POS** feature in the Commerce headquarters **Feature management** workspace.
 
 ### Set up a registration type for the lottery code
 
@@ -87,7 +85,6 @@ On the **Commerce parameters** page, on the **POS search criteria** tab, add a n
 ### Configure channel components
 
 > [!IMPORTANT]
-> Implement the steps in this section only if you're using Microsoft Dynamics 365 Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for Italy are enabled by default. If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-version-10029-or-later).
 
 To make the functionality that's specific to Italy available, you must configure extensions for commerce channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this article.
 
@@ -137,7 +134,6 @@ The following example scenarios show how to work with customer information in PO
 ## Deployment guidelines
 
 > [!IMPORTANT]
-> Implement the steps described in this section only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, the product enables all required Commerce channel components for Italy. If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-version-10029-or-later).
 
 This section provides deployment guidance for enabling customer information management in the localization of Commerce for Italy.
 
@@ -157,7 +153,7 @@ Follow these steps to update a development environment.
 1. Find the extension configuration file for the Commerce runtime (CRT):
 
     - **Commerce Scale Unit:** Find the **CommerceRuntime.Ext.config** file in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
-    - **Local CRT on Modern POS:** Find the **CommerceRuntime.MPOSOffline.Ext.config** file under the local CRT client broker location.
+    - **Store Commerce:** Find the **CommerceRuntime.MPOSOffline.Ext.config** file under the local CRT client broker location.
 
 1. Register the CRT extension in the extension configuration file.
 
@@ -168,7 +164,7 @@ Follow these steps to update a development environment.
     > [!WARNING]
     > Don't edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-#### Modern POS extension components
+#### Store Commerce extension components
 
 Follow these steps to make the TaxRegistrationId.IT extension available.
 
@@ -186,7 +182,7 @@ Follow these steps to make the TaxRegistrationId.IT extension available.
     ```
 
 1. Build the solution.
-1. Open Modern POS, and test the functionality.
+1. Open Store Commerce, and test the functionality.
 
 #### Cloud POS extension components
 
@@ -232,16 +228,5 @@ Follow these steps to create deployable packages that contain Commerce component
 
 1. Run **msbuild** for the whole Retail software development kit (SDK) to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
-## Migrate to version 10.0.29 or later
-
-If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, follow these steps to correctly update your Commerce environment.
-
-1. Update Commerce headquarters.
-1. For Commerce version 10.0.38 and earlier, enable the **(Italy) Customer information management in Retail POS** feature in the Commerce headquarters **Feature management** workspace and distribute the changes to channels.
-1. Update CRT, Cloud POS, and Modern POS, and exclude the following legacy Italy-specific extensions:
-
-    1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files, exclude the **Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly** CRT extension.
-    1. In the **extensions.json** file, exclude the **Microsoft/TaxRegistrationId.IT** POS extension.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

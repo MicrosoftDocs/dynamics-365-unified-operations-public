@@ -4,7 +4,7 @@ description: Learn about how to move your subscriptions and Lifecycle Services I
 author: thedsk8-microsoft
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 04/21/2026
+ms.date: 06/12/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -16,6 +16,8 @@ ms.dyn365.ops.version: AX 7.0
 # Move Lifecycle Services implementation projects to different Microsoft Entra tenants
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 You can move your subscriptions and your Microsoft Dynamics 365 Lifecycle Services implementation project to a different Microsoft Microsoft Entra tenant. Here are some scenarios where this move might be required:
 

@@ -3,7 +3,7 @@ title: View independent software vendor license status
 description: Learn about how to view the status of an independent software vendor in finance and operations apps, including additional resources.
 author: Peakerbl
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

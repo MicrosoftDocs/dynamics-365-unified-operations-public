@@ -4,7 +4,7 @@ description: Learn about how to update the local agent, including a table that o
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 03/06/2026
+ms.date: 06/17/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -23,64 +23,71 @@ ms.assetid:
 This article explains how to update the local agent. The latest version of the local agent is version 3.5.0, which was released in February 2026.
 
 > [!IMPORTANT]
-> Don't update the local agent during a servicing operation, even if the preparation phase is complete. 
+> Don't update the local agent during a servicing operation, even if the preparation phase is complete.
 
 | Local agent version | Capability | Release date | Expiration date |
 |---------------------|------------|--------------|-----------------|
-| 3.5.0               | This version has some bug fixes as well as uptakes new versions of dependent SDKs. | February 2026 | Not applicable |
-| 3.4.0               | This version upgrades the Microsoft Azure Service Fabric SDK and the Azure Storage libraries. | February 2025 | Not applicable |
+| 3.5.0       | This version has some bug fixes as well as uptakes new versions of dependent SDKs. | February 2026 | Not applicable |
+| 3.4.0 |This version upgrades the Microsoft Azure Service Fabric SDK and the Azure Storage libraries.| February 2025 | Not applicable |
 | 3.3.0               | This version adds node tag management capabilities to the local agent. | January 2024 | Not applicable |
-| 3.2.3               | This version fixes a few bugs and removes the need for manually updating the config.json after a certificate rotation.| August 2023 | Not applicable |
-| 3.2.2               | This version fixes a bug with the local agent not able to clean up the workspace directory due to the directory containing files with long paths. | June 2023 | Not applicable |
-| 3.2.1               | This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage. Upgrades the Azure Storage libraries. | June 2023 | Not applicable |
-| 3.2.0               | This version upgrades the Service Fabric SDK, upgrades the Azure Storage libraries, introduces file hash validation. | March 2023 | Not applicable |
-| 3.1.0               | This version upgrades the Service Fabric SDK and adds a new deployment option. | June 2022 | Not applicable |
-| 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. | November 2021 | June 30, 2023 |
+| 3.2.3 | This version fixes a few bugs and removes the need for manually updating the config.json after a certificate rotation.| August 2023 | Not applicable |
+| 3.2.2  | This version fixes a bug with the local agent not able to clean up the workspace directory due to the directory containing files with long paths. | June 2023 | Not applicable |
+| 3.2.1| This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage. Upgrades the Azure Storage libraries. | June 2023 | Not applicable |
+| 3.2.0| This version upgrades the Service Fabric SDK, upgrades the Azure Storage libraries, introduces file hash validation. | March 2023 | Not applicable |
+| 3.1.0      | This version upgrades the Service Fabric SDK and adds a new deployment option. | June 2022 | Not applicable |
+| 3.0.0  | This version includes support for Edge Scale Unit Application Lifecycle Management. | November 2021 | June 30, 2023 |
 | 2.7.2               | This version includes a fix for deploying older application versions. | October 2021 | June 30, 2023 |
-| 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. | October 2021 | June 30, 2023 |
+| 2.7.1 | This version introduces a new deployment option and fixes a bug with a deployment option. | October 2021 | June 30, 2023 |
 | 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. | August 2021 | June 30, 2023 |
 | 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning time-out. | October 2020 | June 30, 2023 |
 | 2.5.0               | This version updates dependencies and fixes a cleanup bug. | May 2020 | June 30, 2023 |
-| 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. | December 2019 | April 30, 2023 |
+| 2.4.0        | This version fixes a deployment issue and upgrades the runtime of the local agent. | December 2019 | April 30, 2023 |
 | 2.3.1               | This version fixes orchestration service crashes that might occur during cleanup on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of predeployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). | September 2019 | April 30, 2023 |
 | 2.3.0               | This version adds support for predeployment and post-deployment scripts. | August 2019 | April 30, 2023 |
 | 2.2.0               | This version fixes locked DLLs during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. | July 2019 | January 31, 2023 |
 | 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This update fixes an issue where files are fully downloaded, but the logic would still consider them missing a few bytes and therefore fail the download. | July 2019 | January 31, 2023 |
 | 2.1.1               | This version fixes an issue that occurs when the download fails and the Microsoft Dynamics Lifecycle Services **Maintain** button isn't available. Other changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2. | February 2019 | January 31, 2023 |
-| 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. | June 2018 | January 31, 2023 |
+| 2.1.0 | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. | June 2018 | January 31, 2023 |
 | 2.0.0               | This version enables servicing flows and deploys Platform update 12. | January 2018 | January 31, 2023 |
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | January 31, 2023 |
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
 
 ## What's new in local agent 3.5.0
+
 - Upgrades the Service Fabric SDK to version 7.1.
 - Upgrades the Azure Storage libraries.
 - Fixes an issue with the local agent hanging if the fileshare is unavailable.
 - Fixes an issue where the installers could hang during a deployment operation.
 
 ## What's new in local agent 3.4.0
+
 - Upgrades the Service Fabric SDK to version 7.0.
 - Upgrades the Azure Storage libraries.
 - Adds better Lifecycle Services error handling in the Bridge service.
 
 ## What's new in local agent 3.3.0
+
 - Adds a new feature to manage Service Fabric dynamic node tags. This feature requires some additional setup that is provided with version 2.20.0 of the infrastructure scripts.
 
 ## What's new in local agent 3.2.3
+
 - Fixes a bug where the topology.xml was cached and not updated from Lifecycle Services.
 - Removes the need to update the config.json after a certificate rotation.
 - Enforces encrypted communication between the local agent and the SQL database.
 
 ## What's new in local agent 3.2.2
+
 - Fixes a bug with the local agent not able to clean up the workspace directory due to the directory containing files with long paths.
 
 ## What's new in local agent 3.2.1
+
 - Fixes bugs with the local agent not being able to download artifacts correctly from Azure Storage.
 - Upgrades the Azure Storage libraries.
 - Adds logging for 7zip operations.
 
 ## What's new in local agent 3.2.0
+
 - Local agent 3.2.0 uses a new Service Fabric Explorer SDK and runtime.
 - This version also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality isn't available anymore, but there's now automated retry functionality that you can customize. The product team might bring back checkpoints if the Azure Storage libraries support it again.
 - Artifact management logic is improved, and the agent doesn't download existing artifacts again.
@@ -95,7 +102,7 @@ This article explains how to update the local agent. The latest version of the l
 ## What's new in local agent 3.1.0
 
 - Local agent 3.1.0 uses a new Service Fabric SDK and runtime.
-- This version introduces a new deployment option to [specify that an environment should be configured to work with the Regression suite automation tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool).
+- This version introduces a new deployment option to specify that an environment should be configured to work with the Regression suite automation tool (RSAT). For more information, see [Deployment optons](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool).
 
 > [!IMPORTANT]
 > This version is only compatible with 8.1+ Service Fabric clusters.
@@ -116,14 +123,14 @@ This article explains how to update the local agent. The latest version of the l
 
 ## What's new in local agent 2.7.0
 
-- Local agent 2.7.0 is a prerequisite to deploy or update to 10.0.21 and later releases. 
+- Local agent 2.7.0 is a prerequisite to deploy or update to 10.0.21 and later releases.
 - This release introduces the possibility of specifying a limited set of deployment options for environment-specific deployment options. Most notably, this release allows you to deploy on environments with Microsoft SQL Server 2019. For all possible configurations, see [Local agent deployment configurations](../../dev-itpro/deployment/onprem-localagent-options.md).
 - Additionally, this release fixes an issue where the gMSA account that the local agent runs under loses permission to the private key for some certificates.
-- The LBDTelemetry-Agent application can start correctly even if the Event Viewer is open. 
+- The LBDTelemetry-Agent application can start correctly even if the Event Viewer is open.
 
 > [!IMPORTANT]
 > You must use this release to deploy or update to 10.0.21 and later releases.
-> This release requires that a new local agent configuration file be downloaded from Lifecycle Services. If you encounter issues, refer to [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md). 
+> This release requires that a new local agent configuration file be downloaded from Lifecycle Services. If you encounter issues, refer to [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md).
 
 ## What's new in local agent 2.6.0
 
@@ -151,12 +158,14 @@ This article explains how to update the local agent. The latest version of the l
 - This release removes the monitoring agent and introduces a new service called LBDTelemetry, that's used to install the ETWManifests.
 
 > [!IMPORTANT]
-> This release requires that a new local agent configuration file be downloaded from Lifecycle Services. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) article if you encounter problems. 
+> This release requires that a new local agent configuration file be downloaded from Lifecycle Services. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) article if you encounter problems.
 
 ## What's new in local agent 2.1.0
+
 - Local agent 2.1.0 enables the two-phased servicing where **Environment preparation** and **Environment update** are two distinct steps and explicit actions. This change reduces the total downtime customers must take when applying updates to their on-premises environments by preparing upfront and allowing users to use the environment during preparation. It then communicates the downtime when the actual update environment action is triggered.
 
 ## What's new in local agent 2.0.0
+
 - Local agent 2.0.0 can deploy Platform update 12.
 - It enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) until the first deployment of platform update 12 succeeds.
 - It disables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) on the first successful deployment of platform update 12. After deployment succeeds, you can use the regular update experience to update the environment.

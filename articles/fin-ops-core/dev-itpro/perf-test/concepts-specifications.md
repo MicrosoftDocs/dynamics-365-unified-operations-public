@@ -3,7 +3,7 @@ title: Specification classes
 description: Learn about specification classes, including overviews of naming conventions, implementations, and code examples.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/16/2026
 ms.custom: 
 ms.reviewer: johnmichalak

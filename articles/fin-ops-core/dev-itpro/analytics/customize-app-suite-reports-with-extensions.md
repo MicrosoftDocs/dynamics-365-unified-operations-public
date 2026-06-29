@@ -3,7 +3,7 @@ title: Customize App Suite reports by using extensions
 description: Learn about how to customize App Suite reports by using extensions through a series of scenarios for customizing App Suite reports.
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 10/22/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

@@ -4,7 +4,7 @@ description: Learn how to use the Copy visual in the Business performance planni
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 12/03/2023
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -21,9 +21,9 @@ The **Copy** visual lets you effortlessly transfer baseline data, including actu
 
 ## Benefits
 
-- **Time-saving functionality** – The **Copy** visual helps expedite the creation of forecasts and budgets. Because users no longer have to manually build each forecast from scratch, the planning process is faster and more efficient.
-- **Consistency and accuracy** – The **Copy** visual ensures consistency between historical data and planned budgets by facilitating the transfer of specific data coordinates. Therefore, it helps ensure an accurate and coherent planning structure.
-- **Scenario analysis simplification** – Users can create diverse forecast scenarios by using a base case. Users can build a foundational forecast and then efficiently generate multiple variations by copying it. Therefore, scenario analysis is simplified and doesn't require that users start from scratch for each permutation.
+- Time-saving functionality – The **Copy** visual helps expedite the creation of forecasts and budgets. Because users no longer have to manually build each forecast from scratch, the planning process is faster and more efficient.
+- Consistency and accuracy – The **Copy** visual ensures consistency between historical data and planned budgets by facilitating the transfer of specific data coordinates. Therefore, it helps ensure an accurate and coherent planning structure.
+- Scenario analysis simplification – Users can create diverse forecast scenarios by using a base case. Users can build a foundational forecast and then efficiently generate multiple variations by copying it. Therefore, scenario analysis is simplified and doesn't require that users start from scratch for each permutation.
 
 ## Prerequisites and installation
 
@@ -43,20 +43,20 @@ Therefore, instead of creating forecasts from scratch, users can use document as
 To define the copy criteria, follow these steps:
 
 1. In the dropdown list at the top of the **Copy** visual, select a cube.
-2. Select **Select**.
-3. In the upper-right corner of the visual, select the plus sign (**+**) to configure fields for the copy criteria. Focus on two dimensions. This example uses Fiscal quarter and Scenario.
-4. Set the following values:
+1. Select **Select**.
+1. In the upper-right corner of the visual, select the plus sign (**+**) to configure fields for the copy criteria. Focus on two dimensions. This example uses Fiscal quarter and Scenario.
+1. Set the following values:
 
     - **Dimension:** Scenario
     - **Column:** Name
     - **From:** Actual
     - **To:** Forecast
 
-5. Configure the fiscal quarter by setting the following values:
+1. Configure the fiscal quarter by setting the following values:
 
     - **Dimension:** MonthYear
     - **Column:** Fiscal quarter
     - **From:** FY2020 Q4
     - **To:** FY2021 Q4
 
-6. After you've completed the configuration, select **Copy** to start the copy process.
+1. After you complete the configuration, select **Copy** to start the copy process.

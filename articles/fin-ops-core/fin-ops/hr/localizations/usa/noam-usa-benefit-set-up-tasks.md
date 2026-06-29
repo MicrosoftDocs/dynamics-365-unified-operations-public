@@ -3,7 +3,7 @@ title: Set up benefits
 description: Learn about how to set up benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/28/2023
 ms.reviewer: twheeloc
 audience: Application User

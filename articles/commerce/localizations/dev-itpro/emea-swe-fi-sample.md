@@ -1,8 +1,8 @@
----
+﻿---
 title: Control unit integration sample for Sweden
 description: This article provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 05/12/2026
+ms.date: 06/26/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -19,12 +19,12 @@ This article provides an overview of the fiscal integration sample for Sweden in
 
 The Commerce functionality for Sweden includes a sample integration of the point of sale (POS) with Sweden-specific fiscal devices that are known as *control units*. This sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's assumed that a control unit is physically connected to a Hardware station that the POS is paired with. As an example, this sample uses the application programming interface (API) of the [CleanCash Type A](https://www.retailinnovation.se/produkter) control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash API is used.
 
-The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
+The sample is provided in the form of source code.
 
-Microsoft doesn't release any hardware, software, or documentation from Retail Innovation HTT AB. This company is no longer operating; see the notice below for more information.
+Microsoft doesn't release any hardware, software, or documentation from Retail Innovation HTT AB. This company is no longer operating; for more information, see the following notice.
 
 > [!IMPORTANT]
-> **Notice regarding Retail Innovation HTT AB:** The CleanCash Type A control unit referenced in this sample integration was manufactured by Retail Innovation HTT AB, which is no longer operating. New procurement of the CleanCash Type A hardware through the original vendor is not available.
+> **Notice regarding Retail Innovation HTT AB:** The CleanCash Type A control unit referenced in this sample integration was manufactured by Retail Innovation HTT AB, which is no longer operating. New procurement of the CleanCash Type A hardware through the original vendor isn't available.
 >
 > Customers who already have existing CleanCash hardware can continue to use this integration. Customers planning a new deployment in Sweden should identify an alternative fiscal control unit that meets Swedish Tax Agency (Skatteverket) requirements. The Microsoft product group is currently evaluating alternate vendor options and will share updates as they become available.
 >
@@ -91,12 +91,7 @@ For more information about how to work with receipt formats, see [Receipt templa
 
 ### Set up fiscal integration for Sweden
 
-The control unit integration sample for Sweden is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\CleanCash** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
-
-> [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
->
-> Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+The control unit integration sample for Sweden is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). The sample is located in the **src\\FiscalIntegration\\CleanCash** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station.
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -112,18 +107,10 @@ To enable the registration process, follow these steps to set up Commerce headqu
 1. Download configuration files for the fiscal document provider and the fiscal connector:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Select the correct release branch version according to your SDK or application version (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Select the correct release branch version according to your SDK or application version.
     1. Open **src \> FiscalIntegration \> CleanCash**.
-    1. Download the fiscal document provider configuration file at **CommerceRuntime \> DocumentProvider.CleanCashSample \> Configuration \> DocumentProviderFiscalCleanCashSample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/CleanCash/CommerceRuntime/DocumentProvider.CleanCashSample/Configuration/DocumentProviderFiscalCleanCashSample.xml)).
-    1. Download the fiscal connector configuration file at **HardwareStation \> Connector.CleanCashSample \> Configuration \> ConnectorCleanCashSample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/CleanCash/HardwareStation/Connector.CleanCashSample/Configuration/ConnectorCleanCashSample.xml)).
-
-    > [!WARNING]
-    > Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
-    >
-    > - **Fiscal document provider configuration file:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml
-    > - **Fiscal connector configuration file:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml
-    >
-    > Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+    1. Download the fiscal document provider configuration file at **CommerceRuntime \> DocumentProvider.CleanCashSample \> Configuration \> DocumentProviderFiscalCleanCashSample.xml**.
+    1. Download the fiscal connector configuration file at **HardwareStation \> Connector.CleanCashSample \> Configuration \> ConnectorCleanCashSample.xml**.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
@@ -170,11 +157,6 @@ The fiscal connector configuration includes the following settings. This configu
 
 ### Configure channel components
 
-> [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS.
->
-> Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
-
 #### Set up the development environment
 
 To set up a development environment to test and extend the sample, follow these steps:
@@ -186,7 +168,7 @@ To set up a development environment to test and extend the sample, follow these 
     1. Find the CRT extension installer:
 
         - **Commerce Scale Unit:** In the **CleanCash\ScaleUnit\ScaleUnit.CleanCash.Installer\bin\Debug\net461** folder, find the **ScaleUnit.CleanCash.Installer** installer.
-        - **Local CRT on Modern POS:** In the **CleanCash\ModernPOS\ModernPOS.CleanCash.Installer\bin\Debug\net461** folder, find the **ModernPOS.CleanCash.Installer** installer.
+        - **Store Commerce:** In the **CleanCash\StoreCommerce\StoreCommerce.CleanCash.Installer\bin\Debug\net461** folder, find the **StoreCommerce.CleanCash.Installer** installer.
 
     1. Start the CRT extension installer from the command line:
 
@@ -195,9 +177,9 @@ To set up a development environment to test and extend the sample, follow these 
             ScaleUnit.CleanCash.Installer.exe install --verbosity 0
             ```
 
-        - **Local CRT on Modern POS:**
+        - **Store Commerce:**
             ```Console
-            ModernPOS.CleanCash.Installer.exe install --verbosity 0
+            StoreCommerce.CleanCash.Installer.exe install --verbosity 0
             ```
 
 1. Install Hardware station extensions:
@@ -215,10 +197,7 @@ To generate and release the Cloud Scale Unit and self-service deployable package
 
 ## Design of the extensions
 
-The control unit integration sample for Sweden is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. You can find the sample in the **src\\FiscalIntegration\\CleanCash** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
-
-> [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can't currently use it for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+The control unit integration sample for Sweden is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). You can find the sample in the **src\\FiscalIntegration\\CleanCash** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station.
 
 ### CRT extension design
 

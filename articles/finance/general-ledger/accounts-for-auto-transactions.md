@@ -4,7 +4,7 @@ description: Learn how accounts for automatic transactions are used for posting 
 author: jchrist
 ms.author: jchrist
 ms.topic: article
-ms.date: 05/13/2024
+ms.date: 06/24/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -17,11 +17,11 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Accounts for automatic transactions
 
-The **Accounts for automatic transactions** page (**General ledger &gt; Posting setup &gt; Accounts for automatic transactions**) is used to define the default main account that is used for each posting type in the system. Although most posting types can be configured on a module-specific or feature-specific page, some posting types can only be configured on the **Accounts for automatic transactions** page.
+Use the **Accounts for automatic transactions** page (**General ledger > Posting setup > Accounts for automatic transactions**) to define the default main account for each posting type in the system. Although you can configure most posting types on a module-specific or feature-specific page, you can only configure some posting types on the **Accounts for automatic transactions** page.
 
-For example, you can specify the main account that is used for the **Customer balance** posting type in the **Summary** field on the **Customer posting profile** page and use a different main account for each customer profile. In this way, you have more granular control over the postings. On the other hand, you can specify the error account only on the **Accounts for automatic transactions** page.
+For example, you can specify the main account for the **Customer balance** posting type in the **Summary** field on the **Customer posting profile** page and use a different main account for each customer profile. You get more granular control over the postings. On the other hand, you can specify the error account only on the **Accounts for automatic transactions** page.
 
-When you open the **Accounts for automatic transactions** page in a new legal entity, the list of accounts will be empty. You can add the most common posting types that should be configured on the page by selecting the **Create default types** button. Then, for each row, you can select the main account in the **Main account** field. If you leave the **Main account** field blank for a posting type, and you haven't configured a main account on a module-specific or feature-specific page, you will receive an error message when you post a transaction that uses the posting type. Typically, the message will be, "The account for \[Posting type\] cannot be found."
+When you open the **Accounts for automatic transactions** page in a new legal entity, the list of accounts is empty. Select **Create default types** to add the most common posting types that you should configure on the page. Then, for each row, select the main account in the **Main account** field. If you leave the **Main account** field blank for a posting type, and you didn't configure a main account on a module-specific or feature-specific page, you receive an error message when you post a transaction that uses the posting type. Typically, the message is, "The account for \[Posting type\] can't be found."
 
 ## Default posting types
 
@@ -31,10 +31,10 @@ The following table shows examples of the default posting types that are created
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
 | Penny difference in reporting currency | 618160 | Miscellaneous Expense | Expense | Both | No | This posting type is used when a penny difference occurs when a transaction amount in a foreign currency is translated to the reporting currency. |
 | Penny difference in accounting currency | 618160 | Miscellaneous Expense | Expense | Both | No | This posting type is used when a penny difference occurs when a transaction amount in a foreign currency is translated to the accounting currency. |
-| Error account | 999999 | Error Account | Expense | Both | No | This posting type is used when an error occurs in the system. The account should be validated every period, and any errors should be resolved. |
+| Error account | 999999 | Error Account | Expense | Both | No | This posting type is used when an error occurs in the system. Validate the account every period, and resolve any errors. |
 | Year-end result | 300160 | Retained Earnings | Equity | Both | No | This posting type is used when the year-end close process is run to move the balance of accounts of the **Profit-and-loss** type into the main account that is selected for the year-end result. |
-| Customer cash discount | Not applicable | Not applicable | Not applicable | Not applicable | No | The posting type that is defined on the **Accounts for automatic transactions** page isn't used. A main account is required when cash discounts are configured in Accounts receivable.|
-| Vendor cash discount | Not applicable | Not applicable | Not applicable | Not applicable | No | The posting type that is defined on the **Accounts for automatic transactions** page isn't used. A main account is required when cash discounts are configured in Accounts payable. |
+| Customer cash discount | Not applicable | Not applicable | Not applicable | Not applicable | No | The posting type that you define on the **Accounts for automatic transactions** page isn't used. A main account is required when cash discounts are configured in Accounts receivable.|
+| Vendor cash discount | Not applicable | Not applicable | Not applicable | Not applicable | No | The posting type that you define on the **Accounts for automatic transactions** page isn't used. A main account is required when cash discounts are configured in Accounts payable. |
 
 ## Additional posting types
 
@@ -42,7 +42,7 @@ The following table shows examples of additional posting types that must be conf
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
-| Balance account for consolidation difference | 801200 | Gain and Loss - Revaluation | Expense | Both | No | This posting type is used when you perform a consolidation that involves a currency revaluation, and penny differences occur during the revaluation. |
-| Profit and loss account for consolidation differences | 801200 | Gain and Loss - Revaluation | Expense | Both | No | This posting type is used when you perform a consolidation that involves a currency revaluation, and penny differences occur during the revaluation. |
-| Interunit – debit | 133500 | Interunit Receivable | Asset | Debit | No | This posting type is used when you select a balancing dimension on the **Ledger** page, and the dimension doesn't balance in a transaction that is posted. |
-| Interunit - credit | 233500 | Interunit Payable | Liability | Credit | No | This posting type is used when you select a balancing dimension on the **Ledger** page, and the dimension doesn't balance in a transaction that is posted. |
+| Balance account for consolidation difference | 801200 | Gain and Loss - Revaluation | Expense | Both | No | Use this posting type when you perform a consolidation that involves a currency revaluation, and penny differences occur during the revaluation. |
+| Profit and loss account for consolidation differences | 801200 | Gain and Loss - Revaluation | Expense | Both | No | Use this posting type when you perform a consolidation that involves a currency revaluation, and penny differences occur during the revaluation. |
+| Interunit – debit | 133500 | Interunit Receivable | Asset | Debit | No | Use this posting type when you select a balancing dimension on the **Ledger** page, and the dimension doesn't balance in a transaction that you post. |
+| Interunit - credit | 233500 | Interunit Payable | Liability | Credit | No | Use this posting type when you select a balancing dimension on the **Ledger** page, and the dimension doesn't balance in a transaction that you post. |

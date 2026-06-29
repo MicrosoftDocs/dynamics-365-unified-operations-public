@@ -53,7 +53,6 @@ This article includes information and links to resources that can help you set u
 - [Reporting on payment deadlines for customer and vendor invoices](emea-fra-reporting-on-payment-deadlines.md)
 - Commerce
   - [Cash register functionality](../../../commerce/localizations/france/emea-fra-cash-registers.md)
-  - [Deployment guidelines for cash registers](../../../commerce/localizations/france/emea-fra-fi-deployment.md)
 
 ## Additional resources
 

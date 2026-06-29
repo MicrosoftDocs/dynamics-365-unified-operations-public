@@ -6,13 +6,16 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 03/10/2026
-ms.custom: 
+ms.date: 06/24/2026
+ms.update-cycle: 1095-days
+ms.custom:
   - bap-template
+  - evergreen
 ---
 
 # Get started with Global Inventory Accounting
 
+[!INCLUDE [global-inventory-accounting-deprecation-banner](../includes/global-inventory-accounting-deprecation-banner.md)]
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 

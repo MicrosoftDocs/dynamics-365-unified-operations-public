@@ -3,7 +3,7 @@ title: Register an integration point in the ID-porten web portal
 description: Learn how to register an integration point in the ID-porten web portal in Norway, including a table outling information on parameter names.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/04/2026
 ms.reviewer: johnmichalak
 audience: Application User

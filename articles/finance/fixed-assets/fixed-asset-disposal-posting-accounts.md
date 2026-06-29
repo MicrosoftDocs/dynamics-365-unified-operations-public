@@ -4,8 +4,8 @@ description: Learn how to set up General ledger posting accounts for disposing o
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 06/20/2017
-ms.reviewer: kfend
+ms.date: 06/24/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -24,14 +24,8 @@ To set up General ledger posting accounts to use when you're disposing of an ass
 
 For both transaction types (disposing of an asset by sale or scrap), the ledger account is credited for the disposal value of the fixed asset. The debit is posted to an offset account, which might be a bank account (as an example). If a fixed asset is sold to a customer, the customer account is used instead of the offset account. For more information, see [Dispose of a fixed asset as scrap](dispose-of-a-fixed-asset-as-scrap.md).
 
-Click **Disposal** and then click **Sale** or **Scrap**, and then set up detailed accounts to reverse the net book value of the fixed asset. You can also enter information in the **Post value** and **Sales value type** fields on the **Disposal parameters** page. 
+Select **Disposal** and then select **Sale** or **Scrap**, and then set up detailed accounts to reverse the net book value of the fixed asset. You can also enter information in the **Post value** and **Sales value type** fields on the **Disposal parameters** page.
 
-The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only. However, when the sale of an asset exceeds the net book value of the low-value pool, the net book value is reduced to zero.
-
-
-
-
-
-
+The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only. However, when the sale of an asset exceeds the net book value of the low-value pool, the net book value is zero.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

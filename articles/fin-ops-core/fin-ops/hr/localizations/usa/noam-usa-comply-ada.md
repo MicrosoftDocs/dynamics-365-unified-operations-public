@@ -3,7 +3,7 @@ title: Comply with the Americans with Disabilities Act (ADA)
 description: Learn about features that can help your organization comply with the Americans with Disabilities Act (ADA) including an overview on recording physical requirements.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/21/2026
 ms.reviewer: twheeloc
 audience: Application User

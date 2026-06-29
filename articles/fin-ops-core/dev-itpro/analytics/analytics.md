@@ -3,7 +3,7 @@ title: Analytics, aggregate measurements, and KPI modeling
 description: Learn about the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 author: MilindaV2
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: Developer

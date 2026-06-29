@@ -3,7 +3,7 @@ title: Element designers
 description: Learn about the element designers and how to use them. Learn how to open element designers and the organization and descriptions for various node properties.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 audience: Developer

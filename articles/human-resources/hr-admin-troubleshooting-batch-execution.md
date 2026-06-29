@@ -4,7 +4,7 @@
 title: Reset stuck batch jobs
 description: This article explains how to resolve issues with batch jobs that are stuck.
 author: twheeloc
-ms.date: 04/07/2025
+ms.date: 06/05/2026
 ms.topic: how-to
 # optional metadata
 
@@ -32,7 +32,7 @@ Microsoft Dynamics 365 Human Resources can experience problems with batch jobs t
 
 ## Resolution
 
-When a batch job is stuck in an **Executing** or **Canceling** state, you can reset the status by forcing the cancellation of the job. After you cancel it, you can reset the batch job by setting it to a **Waiting** status. It will then be picked up again for execution in the next scheduled batch run.
+When a batch job gets stuck in an **Executing** or **Canceling** state, reset the status by forcing the cancellation of the job. After you cancel it, reset the batch job by setting it to a **Waiting** status. The next scheduled batch run picks it up for execution.
 
 1. In the **System administration** workspace, select the **Links** page, and select **Batch jobs**.
 
@@ -53,6 +53,5 @@ When a batch job is stuck in an **Executing** or **Canceling** state, you can re
 
 [Optimize performance by scheduling batch jobs after hours](hr-admin-troubleshooting-batch-jobs.md)<br>
 [Optimize performance with auto cleanup tasks](hr-admin-troubleshooting-batch-history.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

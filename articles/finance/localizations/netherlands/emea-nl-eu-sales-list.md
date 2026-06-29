@@ -4,7 +4,7 @@ description: Learn how to generate the EU sales list for Netherlands in Microsof
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 05/29/2026
+ms.date: 06/22/2026
 ms.reviewer: johnmichalak
 ms.custom:
   - bap-template
@@ -176,7 +176,7 @@ Dutch taxonomies change once a year. Check for the availability of a new taxonom
 
 1. Open [Documentatie Nederlandse Taxonomie \| Standard Business Reporting (sbr-nl.nl)](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie).
 1. In the **Organisatie** field, select **Belastingdienst**.
-1. In the **Documenten** field, select, for example, **Omzetbelasting 2021** to get taxonomy for 2026 year.
+1. In the **Documenten** field, select, for example, **Omzetbelasting 2026** to get taxonomy for 2026 year.
 1. Select **Filter resultaten**.
 1. Locate the document with description of changes, for example for changes between the most recent and previous version taxonomies, and download the zip archive. Unzip the file and review the changes description related to namespaces.
 

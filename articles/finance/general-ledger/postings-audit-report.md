@@ -4,7 +4,7 @@ description: Learn about financial reporting posting audit in Microsoft Dynamics
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 10/31/2024
+ms.date: 06/01/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -21,7 +21,7 @@ ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 
 Accurate entry of transactions is important for proper reporting. Transactions should be posted to the correct accounts and dimensions, and with the correct amounts. This article explains how the **Postings audit** report provides details about posted transactions.
 
-The row definition for the report contains a dimension value set of several accounts that commonly have posting issues. Alternatively, it can resemble the row definition for a trial balance and contain all natural accounts.
+The row definition for the report contains a dimension value set of several accounts that commonly have posting problems. Alternatively, it can resemble the row definition for a trial balance and contain all natural accounts.
 
 The column definition contains the month-to-date amounts and several columns for specific transaction attributes. Those transaction attributes can vary. Here are some examples:
 

@@ -4,7 +4,7 @@
 title: Worker header control
 description: This article provides information about the personalizable header control in Employee self service, in People hub, and on the Worker page in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/06/2022
+ms.date: 06/12/2026
 ms.topic: overview
 # optional metadata
 
@@ -30,9 +30,9 @@ Microsoft Dynamics 365 Human Resources provides a personalizable header control 
 
 ## Personalization
 
-One of the key benefits of the worker header control is the ability to personalize information that appears on the header.
+One of the key benefits of the worker header control is the ability to personalize the information that appears on the header.
 
-In the upper right of the header is a group of three fields that show different data, depending on the status of the employee. This group of fields is referred to as the Spotlight portion of the header. You can personalize the Spotlight portion of the header by removing the current fields or adding fields. The fields that can be added to the Spotlight portion in the header control differ for **Employee self service**, **People** hub, and the **Worker** page.
+In the upper right of the header is a group of three fields that show different data, depending on the status of the employee. This group of fields is referred to as the Spotlight portion of the header. You can personalize the Spotlight portion of the header by removing the current fields or adding fields. The fields that you can add to the Spotlight portion in the header control differ for **Employee self service**, **People** hub, and the **Worker** page.
 
 ## Employee self service
 
@@ -77,14 +77,14 @@ The worker header on the streamlined **Worker** page contains the following info
 - Worker type
 - Legal entity of employment
 
-Depending on the status of the employee, the data on the header might change. For example, if the employee has exited the company, the header control contains an **Exited** badge, the employment end date, and the termination reason.
+Depending on the status of the employee, the data on the header might change. For example, if the employee exits the company, the header control contains an **Exited** badge, the employment end date, and the termination reason.
 
-The table below shows the data that appears on the header for different employee statuses.
+The following table shows the data that appears on the header for different employee statuses.
 
 | Employee status | Data that is shown | Note |
 |-----------------|--------------------|------|
 | Pending | <ul><li>Name</li><li>Personnel number</li><li>Position title</li><li>Department</li><li>Worker type</li><li>Legal entity</li><li>Pending badge</li><li>Start date</li><li>Reports to</li><li>Position type</li></ul> | |
-| Recent hire | <ul><li>Name</li><li>Personnel number</li><li>Position title</li><li>Department</li><li>Worker type</li><li>Legal entity</li><li>Recent hire badge</li><li>Years of service</li><li>Reports to</li><li>Position type</li></ul> | By default, the **Recent hire** badge is shown for employees who have been hired in the last seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Recent hires date range** section, enter a time frame. For example, to view the **Recent hire** badge for employees who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
+| Recent hire | <ul><li>Name</li><li>Personnel number</li><li>Position title</li><li>Department</li><li>Worker type</li><li>Legal entity</li><li>Recent hire badge</li><li>Years of service</li><li>Reports to</li><li>Position type</li></ul> | By default, the **Recent hire** badge is shown for employees who are hired in the last seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Recent hires date range** section, enter a time frame. For example, to view the **Recent hire** badge for employees who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
 | Active employee | <ul><li>Name</li><li>Personnel number</li><li>Position title</li><li>Department</li><li>Worker type</li><li>Legal entity</li><li>Start date</li><li>Reports to</li><li>Position type</li></ul> | |
-| Exiting | <ul><li>Name</li><li>Personnel number</li><li>Position title</li><li>Department</li><li>Worker type</li><li>Legal entity</li><li>Exiting badge</li><li>Years of service</li><li>Reports to</li><li>Position type</li></ul> | By default, the **Exiting** badge is shown for employees who will leave in the next seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Exiting worker date range** section, enter a time frame. For example, to view the **Exiting** badge for employees who are leaving in the next 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
-| Exited | <ul><li>Exited badge</li><li>Personnel number</li><li>Employment end date</li><li>Reason code</li></ul> | By default, **the Exited** badge is shown for employees who have left in the last seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Exited workers date range** section, enter a time frame. For example, to view the **Exited** badge for employees who have left in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
+| Exiting | <ul><li>Name</li><li>Personnel number</li><li>Position title</li><li>Department</li><li>Worker type</li><li>Legal entity</li><li>Exiting badge</li><li>Years of service</li><li>Reports to</li><li>Position type</li></ul> | By default, the **Exiting** badge is shown for employees who leave in the next seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Exiting worker date range** section, enter a time frame. For example, to view the **Exiting** badge for employees who are leaving in the next 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
+| Exited | <ul><li>Exited badge</li><li>Personnel number</li><li>Employment end date</li><li>Reason code</li></ul> | By default, **the Exited** badge is shown for employees who left in the last seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Exited workers date range** section, enter a time frame. For example, to view the **Exited** badge for employees who left in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |

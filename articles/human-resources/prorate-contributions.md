@@ -4,7 +4,7 @@
 title: Prorate employee contribution amounts
 description: This article describes how to prorate employee contribution amounts.
 author: twheeloc
-ms.date: 07/09/2024
+ms.date: 06/12/2026
 ms.topic: how-to
 # optional metadata
 
@@ -29,9 +29,9 @@ The employee contribution amounts for Savings and FSA benefit plans can be prora
 
 To enable proration, follow these steps:
 
-1. Make sure that a start date and end date are specified for the benefit period.
+1. Specify a start date and end date for the benefit period.
 2. In the period configuration, if the previous period is specified, make sure that there's no gap or overlap between the benefit periods.
-3. In the benefit plans configuration, make sure that the **Prorate contribution** option is selected.
+1. In the benefit plans configuration, select the **Prorate contribution** option.
 4. Make sure that pay periods are defined for the payment frequency that's specified in the employee profile. Pay periods are defined on the **Pay cycle dates** tab in the **Payment frequency** configuration under **Setup**.
 
 The maximum annual contribution amount is prorated in the available pay periods for the employee. The maximum amount that's allowed per pay period is the maximum annual amount, minus the amount that has been contributed so far, divided by the remaining pay periods.

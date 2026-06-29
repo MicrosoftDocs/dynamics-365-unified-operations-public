@@ -3,7 +3,7 @@ title: Data maintenance
 description: Learn about how to use simple scheduling processes to find and correct data inconsistencies in your environment.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/09/2026
 ms.custom:
 ms.reviewer: twheeloc 

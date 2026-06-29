@@ -3,7 +3,7 @@ title: Commands for determining how elements are used
 description: Learn about the commands that have been added to the Microsoft Visual Studio Tools to help you determine how elements are used in an application.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 audience: Developer

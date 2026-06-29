@@ -4,7 +4,7 @@
 title: Configuration in the HR Recruiting app 
 description: This article explains how to configure the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2025
+ms.date: 06/11/2026
 ms.topic: article
 # optional metadata
 
@@ -23,10 +23,9 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configuration in the HR Recruiting app 
+# Configuration in the HR Recruiting app
 
 This article explains how to configure the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
-
 
 ## Set up an email account
 
@@ -60,8 +59,8 @@ To enable users and email accounts to receive and send messages, follow these st
 
 To update the settings in the Recruiting add-on, follow these steps:
 
-1. Sign in to Recruiting add-on app as the recruiting administrator.
-1. Go to **Configurations** \> **Email account configurations**.
+1. Sign in to the Recruiting add-on app as the recruiting administrator.
+1. Go to **Configurations** > **Email account configurations**.
 1. Add the user account that the mailbox is enabled for.
 1. Add email accounts for **Category – Application**, **Prospect**, **Rejection**, and **Profile creation**.
 
@@ -75,7 +74,7 @@ To update the settings in the Recruiting add-on, follow these steps:
 1. Select **Email account configuration**.
 1. Under **Schema**, select **Columns**.
 1. Edit the **Category** column, and add the new category.
-1. To configure the new email account category in the Recruiting add-on app, go to **Configurations** \> **Email accounts configurations**.
+1. To configure the new email account category in the Recruiting add-on app, go to **Configurations** > **Email accounts configurations**.
 
 ## Use email templates
 
@@ -93,13 +92,13 @@ For more information about how to create an email template in model-driven apps,
 1. On the **Email templates** command bar, select **New**, and then select **Start with a blank template**.
 1. Enter the following details:
 
-    - **Template name** – Enter a detailed name for the email template, so that you can identify it later.
-    - **Permission level** – To share the email template with other users, select **Organization**.
+    - **Template name** – Enter a detailed name for the email template, so you can identify it later.
+    - **Permission level** – Select **Organization** to share the email template with other users.
     - **Category** – The default value is **User**. Categories determine which dynamic text fields are available in your template.
-    - **Language** – This field shows the installed language packs. The language helps categorize your templates.
-    - **Create** – Open one of two editors where you can build your template.
+    - **Language** – Shows the installed language packs. The language helps categorize your templates.
+    - **Create** – Opens one of two editors where you can build your template.
 
-1. Set up a new flow for the new mail category/template.
+1. Set up a new flow for the new mail category and template.
 
     The **Email notification** flow is responsible for sending emails for the standard scenarios. This flow can be triggered through the following input parameters:
 
@@ -108,11 +107,11 @@ For more information about how to create an email template in model-driven apps,
 
 1. Select the trigger point for the custom scenario.
 1. To use the configured template to send emails, call the **Email notification** flow as a child flow.
-1. Update the **Email notification** flow with the new category/template. Add the new case condition for the new email template and category.
+1. Update the **Email notification** flow with the new category and template. Add the new case condition for the new email template and category.
 
 ## Set up a company logo
 
-Each company can have a logo that appears when the job is posted. The logo is visible to candidates on the careers site.
+Each company can have a logo that appears when the job is posted. Candidates on the careers site can see the logo.
 
 To set up a company logo, follow these steps:
 
@@ -151,22 +150,25 @@ After you save the hiring template, a section for stages and steps becomes avail
 1. Select **Save** and then **Close**.
 
 ### Screening template
-A screening template is a template that recruiters use to store one or more questions. Templates can be used in multiple job ads so new questions don't need to be created for every job ad. 
+
+A screening template is a template that recruiters use to store one or more questions. Templates can be used in multiple job ads so new questions don't need to be created for every job ad.
 
 ### How to create screening template
 
 To create a screening template, follow these steps:
+
 1. Select the screening template from the left-side menu.
-2. To generate a new template, click **+ New**.
-3. Enter a name and description for your template.
-4. After the template is saved, you'll have the option to add questions.
+1. To generate a new template, select **+ New**.
+1. Enter a name and description for your template.
+1. After the template is saved, add questions.
 
 ### Add questions to a screening template
 
-1. Click **+ New** and a sidebar pops up.
-2. Enter your question.
-3. Select the **Answer type**:
- - For **Yes/No**, **Single-select**, or **Numeric answer** types, select the **Qualifying** checkbox to require a preferred answer for the question.
- - **Answer required** is selected by default.
+1. Select **+ New** and a sidebar pops up.
+1. Enter your question.
+1. Select the **Answer type**:
+
+- For **Yes/No**, **Single-select**, or **Numeric answer** types, select the **Qualifying** checkbox to require a preferred answer for the question.
+- **Answer required** is selected by default.
          - If the candidate gives the preferred answer, they pass the screening; if not, they fail.
-         - There can be more than one qualifying question.
+         - You can include more than one qualifying question.

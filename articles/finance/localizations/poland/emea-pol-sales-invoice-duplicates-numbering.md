@@ -3,7 +3,7 @@ title: Duplicate sales invoice numbering for Poland
 description: For legal entities in Poland, the Duplicate sales invoice numbering functionality lets users identify and track duplicate sales invoices.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/05/2026
 ms.reviewer: johnmichalak
 audience: Application User

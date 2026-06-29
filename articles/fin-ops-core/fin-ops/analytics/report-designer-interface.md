@@ -4,7 +4,7 @@ description: Learn about how to navigate through Report designer and how to use 
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/12/2026
+ms.date: 06/01/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -30,19 +30,19 @@ The **File** menu is available to all users and includes the following commands.
 
 | Command                           | Description |
 |-----------------------------------|-------------|
-| New                               | Create a new report definition, row definition, column definition, reporting tree definition, report group definition, or folder. Additional options are available, depending on your user role. |
-| Open                              | Open an existing row definition, column definition, reporting tree definition, or report definition. |
+| New                               | Create a new report definition, row definition, column definition, reporting tree definition, report group definition, or folder. Depending on your user role, you might see more options. |
+| Open             | Open an existing row definition, column definition, reporting tree definition, or report definition. |
 | Close                             | Close the current building block. |
 | Close all                         | Close all building blocks. |
-| Save                              | Save the current row definition, column definition, reporting tree definition, or report definition. |
+| Save                 | Save the current row definition, column definition, reporting tree definition, or report definition. |
 | Save as                           | Save the current row definition, column definition, reporting tree definition, or report definition under a new name. |
 | Properties                        | Open the **Properties** dialog box, where you can change the name and description of a report. |
 | Generate                          | Generate the current report. This command is available from a report definition. |
-| View report                       | Open the most recent version of the generated report. This command is available from a report definition if you've generated at least one report. |
-| Recent report definitions         | Show a list of reports that have recently been created or modified. You can then select a report in the list. |
-| Recent row definitions            | Show a list of row definitions that have recently been created or modified. You can then select a row definition in the list. |
-| Recent column definitions         | Show a list of column definitions that have recently been created or modified. You can then select a column definition in the list. |
-| Recent reporting tree definitions | Show a list of reporting tree definitions that have recently been created or modified. You can then select a reporting tree definition in the list. |
+| View report                       | Open the most recent version of the generated report. This command is available from a report definition if you generated at least one report. |
+| Recent report definitions         | Show a list of reports that you recently created or modified. You can then select a report in the list. |
+| Recent row definitions            | Show a list of row definitions that you recently created or modified. You can then select a row definition in the list. |
+| Recent column definitions         | Show a list of column definitions that you recently created or modified. You can then select a column definition in the list. |
+| Recent reporting tree definitions | Show a list of reporting tree definitions that you recently created or modified. You can then select a reporting tree definition in the list. |
 | Exit                              | Exit Report Designer. |
 
 ### Edit menu
@@ -58,7 +58,7 @@ The **Edit** menu is available to users who have the **Designer** or **Administr
 | Paste                                  | Insert the most recently cut or copied text from the clipboard. |
 | Clear                                  | Delete the contents of the selected building block cell. |
 | Find                                   | Open the **Find and Replace** dialog box, where you can search text in the view pane. |
-| Replace                                | Open the **Find and Replace** dialog box, where you can search and replace text in the view pane. |
+| Replace                      | Open the **Find and Replace** dialog box, where you can search and replace text in the view pane. |
 | Insert rows from dimensions            | Open the **Insert Rows from Dimensions** dialog box, where you can select the dimension values to include in the row definition. This command is available from a row definition. |
 | Renumber rows                          | Renumber all numeric row codes. This command is available from a row definition. |
 | Row links                              | Open the **Row Links** dialog box, where you can specify the sources for data links in row definitions and reporting tree definitions. This command is available from a row definition. |
@@ -66,8 +66,8 @@ The **Edit** menu is available to users who have the **Designer** or **Administr
 | Manage dimension sets                  | Open the **Dimension Sets** dialog box, where you can create and modify dimension sets. This command is available from a row definition or reporting tree definition. |
 | Insert row                             | Insert an empty row into the row definition or an empty header row into the column definition. This command is available from a row definition or column definition. |
 | Delete row                             | Delete the selected row from the row definition or the selected header row from the column definition. This command is available from a row definition or column definition. |
-| Insert column                          | Insert an empty column into the column definition. This command is available from a column definition. |
-| Delete column                          | Delete the selected column from the column definition. This command is available from a column definition. |
+| Insert column              | Insert an empty column into the column definition. This command is available from a column definition. |
+| Delete column          | Delete the selected column from the column definition. This command is available from a column definition. |
 | Insert reporting units from dimensions | Open the **Insert Reporting Units from Dimensions** dialog box, where you can select the dimension values to include in the reporting tree definition. This command is available from a reporting tree definition. |
 | Import dimension set hierarchy         | Open the **Dimension Set Hierarchy** dialog box, where you can import a dimension set hierarchy from the financial data. This command is available from a reporting tree definition for a ..\\financial-dimensions\\dimension-based system. |
 | Insert reporting unit                  | Insert an empty row into the reporting tree definition. This command is available from a reporting tree definition. |
@@ -75,7 +75,7 @@ The **Edit** menu is available to users who have the **Designer** or **Administr
 
 ### View menu
 
-The **View** menu is available to all users and includes the following commands.
+All users can access the **View** menu. It includes the following commands.
 
 | Command         | Description                                                            |
 |-----------------|------------------------------------------------------------------------|
@@ -99,14 +99,14 @@ The **Format** menu is available to users who have the **Designer** or **Adminis
 
 The **Company** menu is available to users who have the **Designer** or **Administrator** role. This menu includes the following commands.
 
-| Command               | Description                                                                                                            |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Companies             | Open the **Companies** dialog box, where you can create and modify companies.                                          |
+| Command               | Description                                                                                   |
+|-----------------------|---------------------------------------------------------------------------------------------|
+| Companies             | Open the **Companies** dialog box, where you can create and modify companies.                    |
 | Building Block Groups | Open the **Building block groups** dialog box, where you can create, modify, import, and export building block groups. |
 
 ### Go menu
 
-The **Go** menu is available to all users and includes the following commands.
+All users can access the **Go** menu. This menu includes the following commands.
 
 > [!NOTE]
 > These commands have no visible effect unless the navigation pane is visible.
@@ -125,10 +125,10 @@ The **Tools** menu is available to all users, but some commands have limited ava
 
 | Command                       | Description |
 |-------------------------------|-------------|
-| Protect                       | Apply a password to the current building block. This command is available to users who have the **Designer** or **Administrator** role. |
+| Protect                       | Apply a password to the current building block. Users with the **Designer** or **Administrator** role can use this command. |
 | Report Queue Status           | Open the **Report Queue Status** dialog box, where you can see all recently generated reports and the details for each report. |
-| Source System Information     | Show the settings for your Microsoft Dynamics ERP system. This command is available to users who have the **Designer** or **Administrator** role. |
-| Checked Out Items             | Show the row definitions, column definitions, reporting tree definitions, and report definitions that are currently open. This command is available to users who have the **Designer** or **Administrator** role. |
+| Source System Information     | Show the settings for your Microsoft Dynamics 365 finance and operations system. Users with the **Designer** or **Administrator** role can use this command. |
+| Checked Out Items             | Show the row definitions, column definitions, reporting tree definitions, and report definitions that are currently open. Users with the **Designer** or **Administrator** role can use this command. |
 | Refresh Cached Financial Data | Update the data in the financial dimensions column. |
 | Options                       | Open the **Options** dialog box, where you can modify user preferences for Report Designer. |
 
@@ -151,7 +151,7 @@ The **Help** menu is available to all users and includes the following commands.
 
 | Command | Description                                                              |
 |---------|--------------------------------------------------------------------------|
-| Help    | Open the help article page for financial reporting. |
+| Help    | Opens the help article page for financial reporting. |
 |         |                                                                          |
 
 ## Report designer toolbar buttons
@@ -177,8 +177,8 @@ The standard toolbar provides quick access to file and edit commands. This toolb
 | :::image type="content" source="../../dev-itpro/analytics/media/insertcolumnc130389.png" alt-text="Screenshot of the Insert column button."::: | Insert an empty column into the column definition. This button is available from a column definition. |
 | :::image type="content" source="../../dev-itpro/analytics/media/lockc130389.png" alt-text="Screenshot of the Lock button."::: | Apply a password to the current building block. This button is available to users who have the **Designer** or **Administrator** role. |
 | :::image type="content" source="../../dev-itpro/analytics/media/rowlinkc130389.png" alt-text="Screenshot of the Row link button."::: | Open the **Row Links** dialog box, where you can specify the sources for data links in row definitions and reporting tree definitions. This button is available from a row definition. |
-| :::image type="content" source="../../dev-itpro/analytics/media/promotec130389.png" alt-text="Screenshot of the Promote button."::: | Promote a unit of the reporting tree definition. When you select a child unit and then click **Promote**, the child unit is moved to the same level as its parent unit. |
-| :::image type="content" source="../../dev-itpro/analytics/media/demotec130389.png" alt-text="Screenshot of the Demote button."::: | Demote a unit of the reporting tree definition. When you select a unit and then click **Demote**, the unit becomes a child of the unit that precedes it. |
+| :::image type="content" source="../../dev-itpro/analytics/media/promotec130389.png" alt-text="Screenshot of the Promote button."::: | Promote a unit of the reporting tree definition. When you select a child unit and then select **Promote**, the child unit is moved to the same level as its parent unit. |
+| :::image type="content" source="../../dev-itpro/analytics/media/demotec130389.png" alt-text="Screenshot of the Demote button."::: | Demote a unit of the reporting tree definition. When you select a unit and then select **Demote**, the unit becomes a child of the unit that precedes it. |
 | :::image type="content" source="../../dev-itpro/analytics/media/expandtreebuttonc130389.png" alt-text="Screenshot of the Expand button."::: | Expand all units of the reporting tree definition at the level of the selected unit. |
 | :::image type="content" source="../../dev-itpro/analytics/media/collapsec130389.png" alt-text="Screenshot of the Collapse button."::: | Collapse the reporting tree. |
 | :::image type="content" source="../../dev-itpro/analytics/media/helpc130389.png" alt-text="Screenshot of the Help button."::: | Open Help. |
@@ -187,8 +187,8 @@ The standard toolbar provides quick access to file and edit commands. This toolb
 
 The formatting toolbar provides easy access to style commands. This toolbar includes the following buttons.
 
-| Button                                                                                                       | Description                                           |
-|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| Button                                      | Description                                           |
+|----------------------------------------------------|--------------------------------------------------|
 | :::image type="content" source="../../dev-itpro/analytics/media/formattingc130389.png" alt-text="Screenshot of the Font style button."::: | Apply the selected font style to the current text.   |
 | :::image type="content" source="../../dev-itpro/analytics/media/fonttype.png" alt-text="Screenshot of the Font button."::: | Set the current text to the selected font.           |
 | :::image type="content" source="../../dev-itpro/analytics/media/fontsize.png" alt-text="Screenshot of the Font size button."::: | Set the current text to selected font size (in  points). |

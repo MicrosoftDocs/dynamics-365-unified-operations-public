@@ -3,7 +3,7 @@ title: Series registration
 description: Learn about how to create a series for the process automation framework, including overviews and code examples for various classes.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: twheeloc

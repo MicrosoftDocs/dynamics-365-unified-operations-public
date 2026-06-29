@@ -4,8 +4,8 @@ description: Learn how to generate the Standard Audit File for Tax (SAF-T) elect
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: article
-ms.date: 06/20/2022
-ms.reviewer: kfend
+ms.date: 06/15/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.validFrom: 2022-06-17
 ---
@@ -23,18 +23,18 @@ If an [Electronic Reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general
 Follow these steps to use the **Standard Audit File for Tax (SAF-T) electronic report** feature.
 
 1. In Finance, open the **Feature management** workspace.
-2. On the **All** tab, find and select the **Standard Audit File for Tax (SAF-T) electronic report** feature in the feature list.
-3. Select **Enable now**.
+1. On the **All** tab, find and select the **Standard Audit File for Tax (SAF-T) electronic report** feature in the feature list.
+1. Select **Enable now**.
 
 After the **Standard Audit File for Tax (SAF-T) electronic report** feature is enabled, follow these steps to set up an ER format configuration.
 
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select the ER format configuration that must be used.
 
-Follow these steps to generate a report by using the ER format configuration that is selected in General ledger parameters.
+3. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
 
-1. Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
-2. In the dialog box for the report, specify the required parameters, and then select **OK**.
+4. Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
+5. In the dialog box for the report, specify the required parameters, and then select **OK**.
 
 ## Country/region-specific regulatory features supported by the Standard Audit File for Tax (SAF-T) electronic report feature
 

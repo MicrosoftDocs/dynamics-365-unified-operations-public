@@ -4,7 +4,7 @@ title: Schema changes for shorter downtime during custom package deployments
 description: Learn how to make schema changes for shorter downtime when you deploy custom packages, including an outline on deployment phases.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: best-practice
 ms.date: 04/02/2026
 ms.reviewer: twheeloc
 audience: Developer

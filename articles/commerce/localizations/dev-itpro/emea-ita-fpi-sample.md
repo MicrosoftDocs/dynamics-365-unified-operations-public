@@ -1,8 +1,8 @@
----
+﻿---
 title: Fiscal printer integration sample for Italy
 description: This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 05/12/2026
+ms.date: 06/26/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -119,11 +119,6 @@ To enable the registration process, follow these steps to set up Commerce headqu
     1. Download the fiscal document provider configuration file at **CommerceRuntime \> DocumentProvider.EpsonFP90IIISample \> Configuration \> DocumentProviderEpsonFP90IIISample.xml**.
     1. Download the fiscal connector configuration file at **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Configuration \> ConnectorEpsonFP90IIISample.xml**.
 
-    > [!NOTE]
-    > For Commerce version 10.0.28 or earlier, use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
-    >
-    > - **Fiscal document provider configuration file:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml
-    > - **Fiscal connector configuration file:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
@@ -245,9 +240,6 @@ The following settings are included in the fiscal connector configuration that's
 
 ### Configure channel components
 
-> [!NOTE]
-> Commerce samples deployed in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
-
 #### Set up the development environment
 
 To set up a development environment to test and extend the sample, follow these steps:
@@ -259,7 +251,7 @@ To set up a development environment to test and extend the sample, follow these 
     1. Find the CRT extension installer:
 
         - **Commerce Scale Unit:** In the **EpsonFP90IIISample\\ScaleUnit\\ScaleUnit.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EpsonFP90III.Installer** installer.
-        - **Local CRT on Modern POS:** In the **EpsonFP90IIISample\\ModernPOS\\ModernPOS.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EpsonFP90III.Installer** installer.
+        - **Store Commerce:** In the **EpsonFP90IIISample\\StoreCommerce\\StoreCommerce.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **StoreCommerce.EpsonFP90III.Installer** installer.
 
     1. Start the CRT extension installer from the command line:
 
@@ -269,10 +261,10 @@ To set up a development environment to test and extend the sample, follow these 
             ScaleUnit.EpsonFP90III.Installer.exe install --verbosity 0
             ```
 
-        - **Local CRT on Modern POS:**
+        - **Store Commerce:**
 
             ```Console
-            ModernPOS.EpsonFP90III.Installer.exe install --verbosity 0
+            StoreCommerce.EpsonFP90III.Installer.exe install --verbosity 0
             ```
 
 1. Install Hardware station extensions:
