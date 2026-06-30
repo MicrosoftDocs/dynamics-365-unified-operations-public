@@ -585,6 +585,24 @@ items:
           items:
           - name: Upload resumes
             href: bulk-resume-upload.md
+    - name: Onboarding agent for HR (preview)
+      items:
+      - name: Onboarding agent
+        items:
+        - name: Overview
+          href: hr-onboarding-agent-overview.md
+        - name: Configure Onboarding agent
+          items:
+          - name: Prerequisites for the Onboarding agent
+            href: hr-onboarding-agent-prerequisites.md
+          - name: Set up the Onboarding agent for HR and new hires
+            href: hr-onboarding-agent-setup.md
+        - name: Onboarding agent for HR
+          href: hr-onboarding-agent-for-hr.md
+        - name: Onboarding agent for new hires
+          href: hr-onboarding-agent-for-new-hires.md
+        - name: Onboarding agent FAQ
+          href: hr-onboarding-agent-faq.md
     - name: Time and attendance
       items:
       - name: Time and attendance information
