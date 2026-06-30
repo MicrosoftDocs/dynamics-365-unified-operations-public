@@ -57,6 +57,50 @@ In Commerce, define inventory settings at **Site Settings \> Extensions \> Inven
 > [!IMPORTANT]
 > These settings are available in the Dynamics 365 Commerce 10.0.12 release. If you're updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
+### Real-world guidance: Choosing the right inventory display and messaging settings
+
+The optimal combination of inventory display and messaging settings depends on 
+the nature of your products and your restocking cycle, not just your current 
+stock levels.
+
+**Choosing between hiding and moving out-of-stock products**
+
+When a product goes out of stock, the right display behavior depends on whether 
+new stock is expected and how soon. If a restock is imminent, moving the product 
+to the end of the list is the more effective approach. Customers who are 
+interested in that specific product can still find it, add it to their cart, 
+and receive a notification when it becomes available. This also opens the door 
+for direct customer inquiries, which can be converted into reservations or 
+pre-orders. For example, a trade customer who needs 400 units of a building 
+material can be handled outside the standard online flow, with stock reserved 
+manually and the system updated accordingly when the order is confirmed.
+
+However, if no restock is planned, keeping the product visible at the bottom 
+of the list creates a false expectation. Customers who notice it may wait for 
+it to return instead of purchasing available alternatives, which reduces 
+overall conversion. In this case, hiding the product entirely keeps the listing 
+page focused on what can actually be purchased and redirects browsing traffic 
+toward in-stock items.
+
+**Choosing the right inventory range messaging**
+
+Low stock messages such as "Only a few left" can drive urgency and push 
+customers toward faster purchase decisions, but their effectiveness depends 
+entirely on the product category.
+
+For unique or handmade products, where customers understand that stock is 
+limited by nature, a low stock message creates genuine urgency and encourages 
+immediate purchases. For commodity or construction products, where customers 
+expect consistent supply and often need to purchase in large quantities, the 
+same message can have the opposite effect. A buyer who needs 50 units and sees 
+"Only a few left" is more likely to look for a more reliable supplier than to 
+place a partial order. In these categories, displaying a low stock message risks 
+losing the customer entirely rather than accelerating the sale.
+
+Configuring inventory range messages to match your product category and customer 
+expectations, rather than applying a single setting across your entire catalog, 
+leads to more effective outcomes for both conversion and customer trust.
+
 ## Modules that use inventory settings
 
 Buy box, wishlist, store selector, cart, and cart icon modules use inventory settings to show the inventory ranges and messages.
