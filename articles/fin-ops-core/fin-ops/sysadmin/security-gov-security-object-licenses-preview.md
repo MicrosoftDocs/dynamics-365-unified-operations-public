@@ -56,17 +56,17 @@ To upgrade to the latest quality update and enable the features, follow these st
 
    :::image type="content" source="media/security-governance-license-object-preview-feature-enabled.png" alt-text="Screenshot of enabling the User security governance and Preview User security governance security object license view feature." lightbox="media/security-governance-license-object-preview-feature-enabled.png":::
 
-   After enabling the features in Feature management, the security governance features are enabled.
+   First enable User security governance license usage summary report, followed by enabling User security governance security object license view.
 
    :::image type="content" source="media/security-governance-license-usage-summary-feature-enabled.png" alt-text="Screenshot of security governance features enabled in the System administration user experience." lightbox="media/security-governance-license-usage-summary-feature-enabled.png":::
 
-1. Go to **System administration > Security > Security governance** to confirm that the **License usage summary** report is available. From there, open the Security object licenses view.
+1. Go to **System administration > Security > Security governance** to confirm that the **License usage summary** report is available. From there, open the **Security object licenses** view.
 
    :::image type="content" source="media/security-governance-security-object-license-license-view-default-preview.png" alt-text="Screenshot of the Security governance Security object licenses view." lightbox="media/security-governance-security-object-license-license-view-default-preview.png":::
 
 ## Understand the Security object licenses view
 
-The **Security object licenses view** displays every securable object across every role, with one row per object. This structure helps you trace permissions and configuration from the security role down to the specific table, form, data entity, or API that the security role is configured to allow permission to.
+The **Security object licenses view** displays every securable object across every role, with one row per object. This structure helps you trace permissions and configuration from the security role down to the specific menu items and data entities that the security role is configured to allow permission to.
 
 The columns move from the security hierarchy, such as role, subrole, duty, and privilege, to the object itself, including securable type and Application Object Tree (AOT) names. The view then shows the individual permission grants: **Read**, **Update**, **Create**, **Delete**, and **Invoke**.
 
