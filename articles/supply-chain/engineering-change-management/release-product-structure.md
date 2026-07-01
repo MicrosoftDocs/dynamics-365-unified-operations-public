@@ -4,7 +4,7 @@ description: Learn how you can release complete product structures in addition t
 author: sgmsft
 ms.author: shwgarg
 ms.topic: article
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote

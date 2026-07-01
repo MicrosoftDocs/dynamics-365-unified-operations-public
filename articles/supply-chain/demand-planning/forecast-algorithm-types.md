@@ -4,7 +4,7 @@ description: Learn how each of the available forecasting algorithms works in Dem
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: concept-article
-ms.date: 4/22/2026
+ms.date: 04/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

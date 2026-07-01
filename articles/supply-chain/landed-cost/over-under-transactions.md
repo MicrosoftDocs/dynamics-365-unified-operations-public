@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ITMOverUnderTrans, ITMOverUnderToleranceTable, ITMOverUnderReasonTable, ITMOverUnderToleranceGroup
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,15 +15,15 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-When the orders in a voyage are processed, the system expects the item quantity that is received in the final destination warehouse for consumption to match the quantity that is specified on the purchase order lines that are associated with the voyage. However, because the exact quantity on the purchase order lines isn't always received in the warehouse, the **Landed cost** module defines a set of rules that are used to handle over-receiving and under-receiving of goods. These rules are especially important because the original purchase order has been invoiced and can no longer be modified.
+When the orders in a voyage are processed, the system expects the item quantity that is received in the final destination warehouse for consumption to match the quantity specified on the purchase order lines associated with the voyage. However, because the exact quantity on the purchase order lines isn't always received in the warehouse, the **Landed cost** module defines a set of rules that handle over-receiving and under-receiving of goods. These rules are especially important because the original purchase order has been invoiced and can no longer be modified.
 
-By setting up the details of over/under transaction policies, you enable the system to determine how it should manage the over-processing and under-processing of goods at the time of receipt. In some cases, an over/under transaction triggers an automatic action. In other cases, resolution requires manual action. You can also manually manage over and under inventory by using the **Over/under transactions** page.
+By setting up the details of over/under transaction policies, you enable the system to determine how to manage the over-processing and under-processing of goods at the time of receipt. In some cases, an over/under transaction triggers an automatic action. In other cases, resolution requires manual action. You can also manually manage over and under inventory by using the **Over/under transactions** page.
 
-We recommend that you use a goods-in-transit order to handle over-deliveries and under-deliveries.
+Use a goods-in-transit order to handle over-deliveries and under-deliveries.
 
 ## Over/under transaction process flow and examples
 
-The following diagram shows a flowchart of the process that the system uses to determine whether over/under transactions should be created.
+The following diagram shows a flowchart of the process the system uses to determine whether over/under transactions should be created.
 
 :::image type="content" source="media/over-under-flowchart-all.svg" alt-text="Flowchart of the over/under transaction process." lightbox="media/over-under-flowchart-all.svg":::
 
@@ -40,7 +40,7 @@ In some cases, a movement journal is automatically created in response to an ove
 
 In other cases, a purchase order is automatically created. For an over-delivery, the new purchase order records the additional quantity that was received. For an under-delivery, the purchase order shows a negative quantity, so that the vendor can pay for the missing goods. This negative quantity works as a vendor return or as credit for a future order.
 
-In case where the system doesn't take any automatic action, the user must decide whether to create a movement journal or a purchase order.
+In cases where the system doesn't take any automatic action, you must decide whether to create a movement journal or a purchase order.
 
 ### Example scenarios
 
@@ -172,8 +172,8 @@ The following items are received and, as a result, the following actions are tak
 To enable over/under transactions for goods-in-transit orders, you must complete the following setup:
 
 - Set up the good-in-transit feature as described in [Goods-in-transit processing and receiving](in-transit-processing.md).
-- Ensure that a movement journal was set up and specified for the over-delivery or under-delivery in the **Over/Under Delivery** field in the **Defaults** section on the **General** tab of the **Landed cost parameters** page (**Landed cost** \> **Setup** \> **Landed cost parameters**). As part of this setup, an offset account must be defined.
-- Set up over/under tolerances, over/under reasons, and tolerance groups, if applicable, on the **Over/under setup** page (**Landed Cost** \> **Setup** \> **Over/under setup**).
+- Ensure that a movement journal is set up and specified for the over-delivery or under-delivery in the **Over/Under Delivery** field in the **Defaults** section on the **General** tab of the **Landed cost parameters** page (**Landed cost** > **Setup** > **Landed cost parameters**). As part of this setup, define an offset account.
+- Set up over/under tolerances, over/under reasons, and tolerance groups, if applicable, on the **Over/under setup** page (**Landed Cost** > **Setup** > **Over/under setup**).
 
 ### Over/under tolerances
 
@@ -181,7 +181,7 @@ Over/under tolerances define when a difference between the actual and purchased 
 
 By setting tolerance levels, businesses can avoid unexpected expenses that might arise when they receive a smaller quantity of goods than they expected. At the same time, if businesses receive a larger quantity of goods than they expected, they can benefit from the savings and adjust the landed cost calculation accordingly.
 
-To configure the tolerances, go to **Landed cost** \> **Over/under setup** \> **Over/under tolerances**. There, you can view, edit, add, and remove tolerance records. The following table describes the fields that are available for each record.
+To configure the tolerances, go to **Landed cost** > **Over/under setup** > **Over/under tolerances**. There, you can view, edit, add, and remove tolerance records. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -193,25 +193,25 @@ To configure the tolerances, go to **Landed cost** \> **Over/under setup** \> **
 | Percentage tolerance | Enter the percentage tolerance that should be applied to an individual purchase order line quantity. This field is optional. |
 
 > [!NOTE]
-> The system will first check whether the total amount of the received purchase order falls within the amount tolerance. If it does, the system will then check the percentage tolerance to manage over/under delivery scenarios.
+> The system first checks whether the total amount of the received purchase order falls within the amount tolerance. If it does, the system then checks the percentage tolerance to manage over/under delivery scenarios.
 
 ### Over/under reasons
 
 When an over or under quantity is associated with a voyage line that is received, you might have to identify the reason for the over or under quantity. In this case, you can select the over-delivery or under-delivery reason on the receiving line when the goods are received.
 
-To set up over-delivery and under-delivery reasons, go to **Landed cost** \> **Over/under setup** \> **Over/under reasons**. There, you can view, edit, add, and remove the available over-delivery and under-delivery reasons. The following table describes the fields that are available for each reason.
+To set up over-delivery and under-delivery reasons, go to **Landed cost** > **Over/under setup** > **Over/under reasons**. There, you can view, edit, add, and remove the available over-delivery and under-delivery reasons. The following table describes the fields that are available for each reason.
 
 | Field | Description |
 |---|---|
 | Over/under reason | Enter a unique name for the reason for the over-receiving or under-receiving transaction. |
 | Description | Enter a description of the over/under reason. |
-| Movement | Select the movement journal that is associated with the over/under reason. This field lists all available journals that a journal type of *Movement* is associated with on the **Inventory journal names** page (**Inventory management** \> **Setup** \> **Journal names** \> **Inventory**). |
+| Movement | Select the movement journal that is associated with the over/under reason. This field lists all available journals that a journal type of *Movement* is associated with on the **Inventory journal names** page (**Inventory management** > **Setup** > **Journal names** > **Inventory**). |
 
 ### Item over/under tolerance groups
 
-Items that have similar tolerances can be grouped together. In this way, you can set the over/under tolerance for all items in that group at the same time.
+Items that have similar tolerances can be grouped together. This setup lets you set the over/under tolerance for all items in that group at the same time.
 
-To set up item over/under tolerance groups, go to **Landed cost** \> **Over/under setup** \> **Item over/under tolerance groups**. There, you can view, edit, add, and remove over/under tolerance group records. The following table describes the fields that are available for each record.
+To set up item over/under tolerance groups, go to **Landed cost** > **Over/under setup** > **Item over/under tolerance groups**. There, you can view, edit, add, and remove over/under tolerance group records. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -225,7 +225,7 @@ To set up item over/under tolerance groups, go to **Landed cost** \> **Over/unde
 
 You can group together vendors that regularly over-deliver or under-deliver. You can then set the over/under tolerance per group.
 
-To set up vendor over/under tolerance groups, go to **Landed cost** \> **Over/under setup** \> **Vendor over/under tolerance groups**. There, you can view, edit, add, and remove over/under tolerance group records. The following table describes the fields that are available for each record.
+To set up vendor over/under tolerance groups, go to **Landed cost** > **Over/under setup** > **Vendor over/under tolerance groups**. There, you can view, edit, add, and remove over/under tolerance group records. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -239,17 +239,17 @@ To set up vendor over/under tolerance groups, go to **Landed cost** \> **Over/un
 
 Over and under transactions are generated when the quantity of goods that is put away doesn't match the initialized quantity. The quantity in the arrival journal should be updated only with the quantity that is put away.
 
-When the receipt of voyage lines is processed, over/under tolerances can be set for a vendor. The items will then be reviewed and validated.
+When the receipt of voyage lines is processed, over/under tolerances can be set for a vendor. The items are then reviewed and validated.
 
-If an item that is received is inside the tolerance, the system will generate a movement journal. This journal can be specified on the voyage parameters page. In addition, an over/under transaction will be created. For example, the order value is $100, the receipt value is $99, and these values satisfy the tolerance rules. In this case, a negative movement journal for the under-received quantity will be created.
+If a received item is inside the tolerance, the system generates a movement journal. This journal can be specified on the voyage parameters page. In addition, an over/under transaction is created. For example, the order value is $100, the receipt value is $99, and these values satisfy the tolerance rules. In this case, a negative movement journal for the under-received quantity is created.
 
-If an item that is received is outside the tolerance, the system will generate an over/under transaction for the difference in quantity.
+If a received item is outside the tolerance, the system generates an over/under transaction for the difference in quantity.
 
-To view and process over/under transactions, go to **Landed cost** \> **Inquiries** \> **Over/under transactions**. There, an over/under transaction will be associated with all the items in a voyage that are over-received or under-received. We recommend that you use the **Over/under transactions** page to resolve all over/under transactions that are associated with voyages.
+To view and process over/under transactions, go to **Landed cost** > **Inquiries** > **Over/under transactions**. There, an over/under transaction is associated with all the items in a voyage that are over-received or under-received. Use the **Over/under transactions** page to resolve all over/under transactions associated with voyages.
 
-We also recommend *against* using movement or counting journals to manually resolve under-delivery warehouse transactions. Instead, you should use the **Over/under transactions** page to manage the under-delivery warehouse quantities.
+Don't use movement or counting journals to manually resolve under-delivery warehouse transactions. Instead, use the **Over/under transactions** page to manage the under-delivery warehouse quantities.
 
-### Upper Overview tab
+### Upper overview tab
 
 To view your over/under transactions, select the **Overview** tab in the upper part of the **Over/under transactions** page. The following table describes the fields that are available in the grid.
 
@@ -271,13 +271,13 @@ To view your over/under transactions, select the **Overview** tab in the upper p
 | Over/under delivery | A value that indicates whether the quantity that was received is an over or an under. |
 | Status | The status of the over/under transaction. Depending on the settings on the **[Landed cost parameters](landed-cost-parameters.md)** page, over-delivery can automatically create a movement journal for the over-delivery amount and post the journal. In this case, the over/under transaction will have a status of *Completed*. If action is required to move the goods out of the under-delivery warehouse, the record will have a status of *In process*. |
 | Over/under reason | The reason that is associated with the over/under transaction. |
-| Other inventory dimensions | You can show columns for additional dimensions in the grid as you require. These dimensions include batch number, inventory status, and warehouse. On the Action Pane, select **Inventory** \> **Display dimensions** to open a dialog where you can select the dimensions to include. |
+| Other inventory dimensions | You can show columns for additional dimensions in the grid as you require. These dimensions include batch number, inventory status, and warehouse. On the Action Pane, select **Inventory** > **Display dimensions** to open a dialog where you can select the dimensions to include. |
 
-### Upper General tab
+### Upper general tab
 
 To view more information about the line that is currently selected on the upper **Overview** tab, select the **General** tab in the upper part of the **Over/under transactions** page. The information on this tab includes the values for all available dimensions. This information is pulled from the originating purchase order.
 
-### Lower Overview tab
+### Lower overview tab
 
 To view the document type for the row that is selected on the upper **Overview** tab, select the **Overview** tab in the lower part of the **Over/under transactions** page. The following table describes the fields that are available.
 
@@ -288,22 +288,22 @@ To view the document type for the row that is selected on the upper **Overview**
 | Over/under reason | The reason that is associated with the selected over/under transaction line. |
 | Quantity | The quantity that you selected for the purchase order or movement journal that is associated with the selected over/under transaction line. |
 
-### Lower General tab
+### Lower general tab
 
 To view the over/under transaction number, lot ID, and dimension number that are associated with the selected over/under transaction line, select the **General** tab in the lower part of the **Over/under transactions** page.
 
 ### Action Pane buttons for processing over/under transactions
 
-The Action Pane on the **Over/under transactions** page provides the following commands for processing the transactions that are selected on the page. Each command lets you choose how to process each transaction.
+The Action Pane on the **Over/under transactions** page provides the following commands for processing the selected transactions. Each command lets you choose how to process each transaction.
 
-- **Create** \> **Movement** – Create and post a movement journal for the selected transaction. For under transactions, a movement journal is automatically created and posted for the difference between the expected and actual received quantity. Select this command for over transactions if you want the vendor to realize the cost difference.
-- **Create** \> **Purchase order** – Create a purchase order for the difference between the expected and actual received quantity of the selected transaction. Select this command for over transactions if your organization will realize the cost difference.
-- **Create** \> **Transfer to destination** – This command applies only to transfer orders. Select it if you want to transfer the over or under quantity to the destination warehouse.
-- **Create** \> **Transfer to origin** – This command applies only to transfer orders. Select it if you want to transfer the over or under quantity to the origin warehouse.
+- **Create** > **Movement** – Create and post a movement journal for the selected transaction. For under transactions, a movement journal is automatically created and posted for the difference between the expected and actual received quantity. Select this command for over transactions if you want the vendor to realize the cost difference.
+- **Create** > **Purchase order** – Create a purchase order for the difference between the expected and actual received quantity of the selected transaction. Select this command for over transactions if your organization will realize the cost difference.
+- **Create** > **Transfer to destination** – This command applies only to transfer orders. Select it if you want to transfer the over or under quantity to the destination warehouse.
+- **Create** > **Transfer to origin** – This command applies only to transfer orders. Select it if you want to transfer the over or under quantity to the origin warehouse.
 
 ## Over-receive or under-receive goods-in-transit orders when quality orders are enabled
 
-When a goods-in-transit order is under-received, if the **Per Updated Quantity** parameter is enabled on the **Item sampling** page (**Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**), a quality order is created for the actual quantity that was received. If the parameter is disabled, a quality order is created based on the order quantity of the goods-in-transit order.
+When a goods-in-transit order is under-received, if the **Per Updated Quantity** parameter is enabled on the **Item sampling** page (**Inventory management** > **Setup** > **Quality control** > **Item sampling**), a quality order is created for the actual quantity that was received. If the parameter is disabled, a quality order is created based on the order quantity of the goods-in-transit order.
 
 When a goods-in-transit order is over-received, the system automatically creates either a purchase order or a movement journal for the quantity that was over-delivered. In this case, a quality order is created based on the original quantity of the goods-in-transit order.
 

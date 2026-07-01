@@ -4,7 +4,7 @@ description: Learn how to create and process transfer orders from the Warehouse 
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 4/30/2026
+ms.date: 04/30/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac

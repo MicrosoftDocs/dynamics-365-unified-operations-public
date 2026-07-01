@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 ms.topic: how-to
-ms.date: 4/22/2026
+ms.date: 04/22/2026
 ms.custom: 
   - bap-template
 ---

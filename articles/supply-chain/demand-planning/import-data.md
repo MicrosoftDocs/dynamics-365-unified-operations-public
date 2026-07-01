@@ -4,7 +4,7 @@ description: Learn how to import data from different sources and file types, and
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

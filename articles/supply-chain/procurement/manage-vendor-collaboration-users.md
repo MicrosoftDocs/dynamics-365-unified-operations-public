@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 ms.topic: how-to
-ms.date: 4/27/2026
+ms.date: 04/27/2026
 ms.custom: 
   - bap-template
 ---

@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 ms.topic: how-to
-ms.date: 4/21/2026
+ms.date: 04/21/2026
 ms.custom: 
   - bap-template
 ---

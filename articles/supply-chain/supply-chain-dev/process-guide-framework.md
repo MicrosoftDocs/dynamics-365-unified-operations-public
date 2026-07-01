@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 06/17/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,66 +15,66 @@ ms.custom:
 
 [!include [banner](../../finance/includes/banner.md)]
 
-This article provides information about the process guide framework for developers who are extending the warehouse mobile processes in X++. The warehouse mobile processes are extensible as a result of the processes being broken into small steps. The business logic and user interface building of each step has been extracted into individual classes, which allows for extensibility.
+This article provides information about the process guide framework for developers who are extending the warehouse mobile processes in X++. The warehouse mobile processes are extensible because the processes are broken into small steps. The business logic and user interface building of each step is extracted into individual classes, which allows for extensibility.
 
 ## Overview of the existing design
 
-The warehouse mobile execution flows are exposed through a single custom service endpoint. The request arrives from the mobile app in the form of an XML string, which contains the metadata of the user interface presented in the mobile app, and the values entered by the user.
+The warehouse mobile execution flows are exposed through a single custom service endpoint. The request arrives from the mobile app in the form of an XML string, which contains the metadata of the user interface presented in the mobile app, and the values that the user enters.
 
-When the request is received, the first step is to deserialize this XML. The `WHSMobileAppServiceXMLTranslator` class converts the XML into a container, which contains both the control information and session information.
+When the request is received, the first step is to deserialize the XML. The `WHSMobileAppServiceXMLTranslator` class converts the XML into a container, which holds both the control information and session information.
 
-Following this, the information in the container is used to deduce which warehouse process the user is working on, or about to start (represented by the `WHSWorkExecuteMode` enumeration), and accordingly instantiate a derived class of `WHSWorkExecuteDisplay`. The `displayform()` method is invoked, which then does the following:
+Next, information in the container is used to determine which warehouse process the user is working on or about to start. This process is represented by the `WHSWorkExecuteMode` enumeration. Based on this information, a derived class of `WHSWorkExecuteDisplay` is instantiated. The `displayform()` method is invoked, which performs the following actions:
 
 - Processes the data from the user (delegated to the `WHSRFControlData` class, but some processes implement specific logic by overriding the `processControl()` method).
 - Executes business logic.
 - Increments the step.
 - Builds the container representing the new user interface (typically in a `build…()` method).
 
-The container is then returned to the translator, which then serializes the XML, and sends it back as a response to the mobile device.
+The container is then returned to the translator, which then serializes the XML and sends it back as a response to the mobile device.
 
 The following sequence diagram shows an overview of the execution flow. The diagram is more of a schematic overview and isn't a 1:1 representation of the actual code.
 
-![Schematic overview of the process.](../warehousing/media/schematic-overview.png) 
+:::image type="content" source="../warehousing/media/schematic-overview.png" alt-text="Screenshot of schematic overview of the process execution flow.":::
 
 ### Reason for the redesign
 
-The design offers a simple framework for building processes used in mobile flows. However, the `displayform()` methods take over multiple responsibilities. It does delegate them to other methods and classes, but in the absence of concrete class responsibilities, it's done in an inconsistent manner across classes. Also, as the number of supported scenarios grows organically, some of those classes can become complex. To make matters more interesting, some of those classes/methods are overridden and reused in multiple modes. The result is long methods with high cyclomatic complexity. These have posed maintenance issues in the past. Fixing bugs in these methods has been risky and regression prone. For example, the `processWorkLine()` method in the `WhsWorkExecuteDisplay` class is referred from multiple processes (basically, anywhere where work execution is performed).
+The design offers a simple framework for building processes used in mobile flows. However, the `displayform()` methods take on multiple responsibilities. They delegate these responsibilities to other methods and classes, but without concrete class responsibilities, this delegation is inconsistent across classes. As the number of supported scenarios grows organically, some of these classes become complex. In addition, some of those classes/methods are overridden and reused in multiple modes. The result is long methods with high cyclomatic complexity. These methods have posed maintenance issues in the past. Fixing bugs in these methods is risky and regression prone. For example, the `processWorkLine()` method in the `WhsWorkExecuteDisplay` class is referred to from multiple processes (basically, anywhere where work execution is performed).
 
-To make these extensible, one of the options would be to split the `displayForm` methods into smaller methods and introduce extensibility points. However, because of the scenario matrix, it would be challenging for partners to write extensions and validate against regressions. Not only that, because of the lack of structured responsibility distribution noted previously, the code would keep growing in unpredictable ways over time, posing challenges in building quality extensions.
+To make these methods extensible, you could split the `displayForm` methods into smaller methods and introduce extensibility points. However, because of the scenario matrix, it would be challenging for partners to write extensions and validate against regressions. Not only that, but because of the lack of structured responsibility distribution noted previously, the code would keep growing in unpredictable ways over time, posing challenges in building quality extensions.
 
-As a result, the redesign is the sustainable option, with a goal to have clearly defined classes having independent responsibilities. A class should have one responsibility, one reason to change, and one reason to be extended.
+As a result, the redesign is the sustainable option, with a goal to have clearly defined classes with independent responsibilities. A class should have one responsibility, one reason to change, and one reason to be extended.
 
 ## Design overview
 
-In the redesigned framework, the core strategy revolves around two principles: divide the execution flow into individual components with well-defined responsibilities and have well-defined extension points in each of the components.
+The redesigned framework uses two core principles: divide the execution flow into individual components with well-defined responsibilities, and include well-defined extension points in each component.
 
-The name for the new framework is `ProcessGuide`. This is because the aim of these classes is to guide a user through a business process (as opposed to the rich client, which is a form-based experience where the user has more flexibility in how they interact with the data or in which order they perform tasks).
+The new framework is named `ProcessGuide`. The aim of these classes is to guide a user through a business process, as opposed to the rich client, which is a form-based experience where the user has more flexibility in how they interact with the data or in which order they perform tasks.
 
 > [!NOTE]
-> One notable detail is the deliberate omission of the `WHS` prefix. While the mobile processes were initially introduced for warehousing, they have since transcended boundaries to support various production and inventory management processes. As a result, the warehouse reference was excluded in the name of the framework.
+> One notable detail is the deliberate omission of the `WHS` prefix. While the mobile processes were initially introduced for warehousing, they now support various production and inventory management processes. As a result, the warehouse reference was excluded in the name of the framework.
 
-To identify the components, the first step is to look at the Production Start process (`WhsWorkExecuteDisplayProdStart` class). Here's a schematic of the process.
+To identify the components, look at the Production Start process (`WhsWorkExecuteDisplayProdStart` class). Here's a schematic of the process.
 
-![Image of schematic process.](../warehousing/media/production-start-process-schematic.png)
+:::image type="content" source="../warehousing/media/production-start-process-schematic.png" alt-text="Screenshot of schematic of the Production Start process.":::
 
-Looking at the control flow, the following are components needed:
+Looking at the control flow, you need the following components:
 
-- A controller to stitch through the entire business process.
+- A controller to manage the entire business process.
 - A step responsible for execution of a step in the process.
 - A data processor for processing the data in a step.
 - A page builder responsible for building the user interface for a step.
 - A navigation agent responsible for step transition.
 - A class responsible for executing the business process.
 
-In the process flow diagram, if you begin at step 1 and start processing the data from the previous step, and then end with building a UI, data would continue to be processed in the next step. This introduces a tight coupling between consecutive steps, as a result, our new high-level schematic would look like the following:
+In the process flow diagram, if you begin at step 1 and start processing the data from the previous step, and then end with building a UI, data continues to be processed in the next step. This approach introduces a tight coupling between consecutive steps. As a result, the new high-level schematic looks like the following:
 
-![Image of high-level schematic process.](../warehousing/media/high-level-schematic.png)
+:::image type="content" source="../warehousing/media/high-level-schematic.png" alt-text="Screenshot of high-level schematic of the redesigned process flow.":::
 
-The following are the key components in the redesigned process:
+The key components in the redesigned process are as follows:
 
 - `ProcessGuideController` - This class orchestrates the overall execution of the business process. It defines the factories that instantiate the step and the navigation agent, which later constitutes the process execution, and the clean-up logic for cancellation or exiting the process.
-- `ProcessGuideStep` - This class represents one single step in the business process. This class contains a definition of the factories that instantiate a page builder, actions, and data processors and is responsible for invoking them in the correct sequence.
-- `ProcessGuideNavigationAgent` - This class is responsible for navigation between the steps. When a step is completed, the navigation agent is responsible for defining the next step and passes any parameters that the previous step might need to communicate to the next one.
+- `ProcessGuideStep` - This class represents one single step in the business process. It contains a definition of the factories that instantiate a page builder, actions, and data processors. It's responsible for invoking them in the correct sequence.
+- `ProcessGuideNavigationAgent` - This class is responsible for navigation between the steps. When a step is completed, the navigation agent defines the next step and passes any parameters that the previous step might need to communicate to the next one.
 - `ProcessGuidePageBuilder` - This class is responsible for instantiating the user interface.
 - `ProcessGuideAction` - This class represents an action, shown as a button to the user.
 - `ProcessGuideDataProcessor` - This class is responsible for processing the user entered data in a field.
@@ -98,7 +98,7 @@ would return with a `ProcessGuidePage` object, which is a virtual representation
 
 The following sequence diagram explains this control flow. This is the most common control flow, simplified for explaining the design.
 
-![Control flow simplified.](../warehousing/media/control-flow.png)
+:::image type="content" source="../warehousing/media/control-flow.png" alt-text="Screenshot of simplified control flow sequence diagram.":::
 
 When the user takes an action on the mobile device by selecting a button (or scanning a value – which typically triggers the default action) – the request arrives at the `createResponse()` method in the `ProcessGuideController` class through the same route. This time, however, the controller knows from the session state information which step the user is in. Accordingly, it instantiates the appropriate `ProcessGuideStep` class and invokes the execute method. The `ProcessGuideStep`, in turn, reads the action name invoked by the user and then instantiates the appropriate `ProcessGuideAction` class and calls
 `execute()`.
@@ -112,7 +112,7 @@ The other exception is the cancellation action, implemented in the `ProcessGuide
 
 After the step is completed, if the status of the step is set to *Completed*, then the controller instantiates the `ProcessGuideNavigationAgent`, which returns the name of the next step. The controller then instantiates this step and invokes the `execute()` method – and the cycle continues. Most commonly, the new step invokes the corresponding `ProcessGuidePageBuilder` to build the user interface for the next screen to be presented to the user, which is then sent back. This flow is depicted in the lower half of the following sequence diagram.
 
-![sequence diagram.](../warehousing/media/sequence-diagram.png)
+:::image type="content" source="../warehousing/media/sequence-diagram.png" alt-text="Screenshot of sequence diagram showing the complete execution flow.":::
 
 ## Building a new process using the ProcessGuide framework
 
@@ -122,15 +122,15 @@ The best way to explain the control flow is by using an example that exists in t
 
 Let’s start by understanding the process flow. In the first step, the user is prompted for production order ID.
 
-![Prompt for production ID.](../warehousing/media/production-id-prompt.png)
+:::image type="content" source="../warehousing/media/production-id-prompt.png" alt-text="Screenshot of prompt for production order ID.":::
 
-When the user enters the production order ID, the order number is validated. Some of the validations that are run are based on whether the order is in the same warehouse as the user is signed in to, and the status of the order. If the validation fails, the user is shown an error message. If the validation succeeds, then the user is shown details of the production order and item.
+When the user enters the production order ID, the order number is validated. Some of the validations that run are based on whether the order is in the same warehouse as the user is signed in to, and the status of the order. If the validation fails, the user sees an error message. If the validation succeeds, the user sees details of the production order and item.
 
 The user can either cancel to go back to the start of the process or select **OK** to confirm. In the latter case, the production order is set to *Started* status, the corresponding journals are posted, the control moves back to the first step, and the *Work Completed* message is shown to the user.
 
 ## Creating the controller
 
-The first step in building the business process is creating the controller class, extending from the `ProcessGuideController` abstract class which implements the default behaviors of a controller. The new class name is `ProdProcessGuideProductionStartController` and decorated with the `WHSWorkExecuteMode` value of `StartProdOrder`. The same `SysExtension` based instantiation that was used in the `WHSWorkExecuteDisplay` classes is used, which helps instantiate the controller when the user executes a menu item
+The first step in building the business process is creating the controller class, extending from the `ProcessGuideController` abstract class which implements the default behaviors of a controller. The new class name is `ProdProcessGuideProductionStartController` and decorated with the `WHSWorkExecuteMode` value of `StartProdOrder`. The same `SysExtension` based instantiation already used in the `WHSWorkExecuteDisplay` classes is used here, which helps instantiate the controller when the user executes a menu item
 for this mode.
 
 ```xpp
@@ -139,13 +139,13 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 ```
 
 > [!NOTE]
-> The naming pattern of the class is `\<FunctionalArea\>ProcessGuide\<Businessprocessname\>Controller`. This is the pattern that is used for the controller classes and to extend to other classes.
+> The naming pattern of the class is `\<FunctionalArea\>ProcessGuide\<Businessprocessname\>Controller`. This is the pattern used for the controller classes and to extend to other classes
 
 ## Building the first step
 
-Next, to define the first step you create the `ProdProcessGuidePromptProductionIdStep` class, extending from `ProcessGuideStep`.
+Next, define the first step by creating the `ProdProcessGuidePromptProductionIdStep` class, which extends `ProcessGuideStep`.
 
-The task of instantiating the class is delegated to a step factory, which is invoked by the `ProcessGuideController` base class. The default implementation of the factory instantiates the step based on name. Therefore, to instantiate `ProdProcessGuidePromptProductionIdStep` as the first step in the controller, you must do two things:
+A step factory instantiates the class. The `ProcessGuideController` base class invokes the factory. The default implementation of the factory instantiates the step based on name. To instantiate `ProdProcessGuidePromptProductionIdStep` as the first step in the controller, complete the following two tasks:
 
 - Decorate the `ProdProcessGuidePromptProductionIdStep` class with a `ProcessGuideStepName` attribute.
 
@@ -163,21 +163,21 @@ The task of instantiating the class is delegated to a step factory, which is inv
     ````
 
 > [!NOTE]
-> The value in the `ProcessGuideStepName` attribute doesn't need to exactly match the class name as shown above. However, implementing this allows for uniformity and type-safety around cross-references when using the class. Using this naming convention is recommended.
+> The value in the `ProcessGuideStepName` attribute doesn't need to exactly match the class name as shown in the preceding code. However, implementing this attribute allows for uniformity and type-safety around cross-references when using the class. Use this naming convention.
 >
-> The `ProcessGuideStepName` based instantiation of the step is implemented in the `ProcessGuideStepDefaultFactory` class. In the rare case that you want a different strategy for instantiating the step, you need to do the following:
+> The `ProcessGuideStepName` based instantiation of the step is implemented in the `ProcessGuideStepDefaultFactory` class. In the rare case that you want a different strategy for instantiating the step, complete the following tasks:
 >
-> - Create a new factory class inheriting from `ProcessGuidStepAbstractFactory`.
-> - Optionally, create a new parameter class implementing the `ProcessGuideIStepCreationParameters` interface, containing the parameters the factory would need.
-> - In your controller class, override the `stepFactory()` and `stepCreationParameters()` methods to return the above factory and parameters.
+> - Create a new factory class that inherits from `ProcessGuidStepAbstractFactory`.
+> - Optionally, create a new parameter class that implements the `ProcessGuideIStepCreationParameters` interface, containing the parameters the factory needs.
+> - In your controller class, override the `stepFactory()` and `stepCreationParameters()` methods to return the preceding factory and parameters.
 
-The next step is to implement the functionality of the `ProdProcessGuidePromptProductionIdStep` class. You need to implement the logic for building the user interface, processing the user-entered data, and determining when the step is complete.
+Next, implement the functionality of the `ProdProcessGuidePromptProductionIdStep` class. Implement the logic for building the user interface, processing the user-entered data, and determining when the step is complete.
 
 ### Building the user interface for the first step
 
-The user interface is built using a class inheriting from the `ProcessGuidePageBuilder` abstract class. For this step, name the class to represent what it does – `ProdProcessGuidePromptProductionIdPageBuilder`.
+Build the user interface by creating a class that inherits from the `ProcessGuidePageBuilder` abstract class. For this step, name the class to represent what it does – `ProdProcessGuidePromptProductionIdPageBuilder`.
 
-The instantiation mechanism of the class is similar to how the step was instantiated from the controller.
+The instantiation mechanism of the class is similar to how the step is instantiated from the controller.
 
 - Decorate the `ProdProcessGuidePromptProductionIdPageBuilder` class with a `ProcessGuidePageBuilderName` attribute.
 
@@ -197,13 +197,13 @@ The instantiation mechanism of the class is similar to how the step was instanti
 > [!TIP]
 > Similar to the step factory, there's also an abstract factory pattern implemented for the page builder factory. So, in the rare case that you want a different strategy for instantiating the page builder, you can do the following:
 >
-> - Create a new factory class inheriting from `ProcessGuidePageBuilderAbstractFactory`.
-> - Optionally, create a new parameter class implementing the `ProcessGuideIPageBuilderCreationParameters` interface, containing the parameters the factory would need.
+> - Create a new factory class that inherits from `ProcessGuidePageBuilderAbstractFactory`.
+> - Optionally, create a new parameter class that implements the `ProcessGuideIPageBuilderCreationParameters` interface, containing the parameters the factory needs.
 > - In your step class, override the `pageBuilderFactory()` and `pageBuilderCreationParameters()` methods to return the factory and parameters.
 
 To implement the user interface, you need a page with one text box to enter the production order ID, plus an **OK** button and a **Cancel** button. The **Cancel** button should exit the process.
 
-To implement this, you need to override two methods in the `ProdProcessGuidePromptProductionIdPageBuilder` class:
+To implement this UI, override two methods in the `ProdProcessGuidePromptProductionIdPageBuilder` class:
 
 - Use the `addDataControls()` method to add the text box.
 
@@ -225,9 +225,9 @@ To implement this, you need to override two methods in the `ProdProcessGuideProm
     }
     ```
 
-This adds the data controls, followed by the buttons. However, if you want to build a screen with interspersed data controls and buttons, you can override the `addControls()` method instead for flexibility.
+This approach adds the data controls, followed by the buttons. However, if you want to build a screen with interspersed data controls and buttons, you can override the `addControls()` method instead for flexibility.
 
-Another scenario to consider is how to rebuild the page if validation failures occur, for example if the user enters an incorrect production order ID. The `ProcessGuidePageBuilder` base class implements the default behavior, which rebuilds the user interface, clears out the scanned value, and adds the error control with the error message. Because this is the default behavior that you want to use, you don't need to add any code for handling errors.
+Another scenario to consider is how to rebuild the page if validation failures occur, such as when the user enters an incorrect production order ID. The `ProcessGuidePageBuilder` base class implements the default behavior, which rebuilds the user interface, clears out the scanned value, and adds the error control with the error message. Because this is the default behavior that you want to use, you don't need to add any code for handling errors.
 
 > [!TIP]
 > If you want to implement custom UI behavior for error situations, you can override one or more of the methods `rebuildFromRequestPage()`, `isErrorState()`, and `reuseRequestPageOnError()`.
@@ -238,7 +238,7 @@ The processing of the data is done in the `ProcessGuideDataProcessorDefault` cla
 
 ### Determine if the first step is complete
 
-When the validation is successful, it's time to mark the step as completed. This is done in the base class, however, you need to implement the condition to determine the step completion. The following overridden method does that.
+When validation is successful, mark the step as completed. The base class handles this action, but you need to implement the condition that determines step completion. The following overridden method implements this condition.
 
 ```xpp
 protected final boolean isComplete()
@@ -251,9 +251,9 @@ protected final boolean isComplete()
 
 ### View order details and confirm
 
-In the second step in the process, the user is shown a screen with details about the order. The user can either select the **OK** button to confirm the start of the production order, or select **Cancel** to go back to the start of the process. For this example, name the step `ProdProcessGuideConfirmProductionOrderStep` and the page builder class `ProdProcessGuideConfirmProductionOrderPageBuilder`.
+In the second step in the process, the user sees a screen with details about the order. The user can either select the **OK** button to confirm the start of the production order, or select **Cancel** to go back to the start of the process. For this example, name the step `ProdProcessGuideConfirmProductionOrderStep` and the page builder class `ProdProcessGuideConfirmProductionOrderPageBuilder`.
 
-The ProdProcessGuideConfirmProductionOrderStep class looks like the following.
+The `ProdProcessGuideConfirmProductionOrderStep` class looks like the following.
 
 ```xpp
 [ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
@@ -268,9 +268,9 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
 Because the user doesn't enter any values here, you don't need to override the `isComplete()` method. The step is complete when the user selects **OK**.
 
-The page builder class overrides the `addDataControls()` method to add three labels. The first label shows the production order ID. The second contains item information (such as item ID, dimensions, or description) and the third contains the quantity and unit of measure.
+The page builder class overrides the `addDataControls()` method to add three labels. The first label shows the production order ID. The second label contains item information, such as item ID, dimensions, or description. The third label contains the quantity and unit of measure.
 
-The `addActionControls()` is then overridden to add 2 buttons – the **OK** button, and the **Cancel** button to cancel the process and go back to the start of the process.
+The `addActionControls()` method is overridden to add two buttons – the **OK** button, and the **Cancel** button to cancel the process and go back to the start of the process.
 
 ```xpp
 /// <summary>
@@ -309,11 +309,11 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 
 ### Start the production order
 
-The third step is where the business logic of starting the production order is executed. This step is different from the previous steps in that this step doesn't have a user interface. This step gets executed silently when the user selects **OK** in the previous step.
+The third step executes the business logic for starting the production order. This step is different from the previous steps because it doesn't have a user interface. This step runs silently when the user selects **OK** in the previous step.
 
-The `ProcessGuideStepWithoutPrompt` abstract class implements the default behavior for such steps. The current step, therefore, should extend the `ProcessGuideStepWithoutPrompt` class and override the `doExecute()` method.
+The `ProcessGuideStepWithoutPrompt` abstract class implements the default behavior for such steps. Therefore, the current step should extend the `ProcessGuideStepWithoutPrompt` class and override the `doExecute()` method.
 
-The following code example shows the class and the `doExecute()` method implementation. The method simply retrieves the order ID and user ID from the session state and invokes the method to start this production order.
+The following code example shows the class and the `doExecute()` method implementation. The method retrieves the order ID and user ID from the session state and invokes the method to start this production order.
 
 ```xpp
 /// <summary>
@@ -338,14 +338,14 @@ public class ProdProcessGuideStartProductionOrderStep extends ProcessGuideStepWi
 }
 ```
 
-If an exception occurs, the framework exception handling logic ensures that the process is rolled back to the previous step.
+If an exception occurs, the framework exception handling logic rolls back the process to the previous step.
 
 > [!NOTE]
-> The invocation of `addProcessCompletionMessage()` adds the *Work completed* message to the navigation parameters. The next step (assuming it has a user interface) will display this message. The base classes handle this logic, and no specific code needs to be added to the process classes to achieve this behavior.
+> The invocation of `addProcessCompletionMessage()` adds the *Work completed* message to the navigation parameters. The next step (assuming it has a user interface) displays this message. The base classes handle this logic, and no specific code needs to be added to the process classes to achieve this behavior.
 
 ### Building the navigation through the steps
 
-The `ProcessGuideController` base class instantiates the `ProcessGuideNavigationAgentDefault` class, which relies on a predefined navigation route, which is a simple map of source and destination steps. For the production start scenario, because there's no conditional branching, this implementation would suffice. Therefore, you only need to override the `initializeNavigationRoute()` method to define the navigation route.
+The `ProcessGuideController` base class instantiates the `ProcessGuideNavigationAgentDefault` class, which relies on a predefined navigation route. This route is a simple map of source and destination steps. For the production start scenario, because there's no conditional branching, this implementation works. Therefore, you only need to override the `initializeNavigationRoute()` method to define the navigation route.
 
 ```xpp
     protected ProcessGuideNavigationRoute initializeNavigationRoute()
@@ -359,7 +359,7 @@ The `ProcessGuideController` base class instantiates the `ProcessGuideNavigation
     }
 ```
 
-There are processes where there will be conditional branching (based on user actions, or any other conditions). Such processes need to do the following:
+Some processes require conditional branching (based on user actions, or any other conditions). Such processes need to do the following tasks:
 
 - Implement specific navigation agents inherited from the `ProcessGuideNavigationAgent` class.
 - Implement the specific navigation agent factory inherited from the `ProcessGuideNavigationAgentAbstractFactory` class, containing logic to instantiate the correct navigation agent based on current step, session state, user action, or other logic.
@@ -388,7 +388,7 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 The class must implement two abstract methods:
 
 - `label()`, which returns the label to be displayed in a button control tied to this action.
-- `doExecute()`, which performs the action. As mentioned earlier, the **OK** button simply performs a callback to the step. However, other actions might have more complex logic here.
+- `doExecute()`, which performs the action. As mentioned earlier, the **OK** button simply performs a callback to the step. However, other actions might have more complex logic.
 
 The actions are instantiated using `SysExtension` framework based on the `ProcessGuideActionName` attribute. Similar to the instantiation of page builders, the step class implements the default action factory, and it's possible to override that. The page builder adds a button control like this.
 
@@ -396,11 +396,11 @@ The actions are instantiated using `SysExtension` framework based on the `Proces
 _page.addButton(step.createAction(#ActionOK), true);
 ```
 
-In doing so, it asks the step to create an action class for the passed name and ties that action to the button.
+When you add the button, it asks the step to create an action class for the passed name and ties that action to the button.
 
 ### Summary
 
-To summarize everything that's been explained in this article, here's a comprehensive summary of the code needed for the process:
+To summarize everything explained in this article, here's a comprehensive summary of the code needed for the process:
 
 1. `ProdProcessGuideProductionStartController`
 
@@ -435,7 +435,7 @@ To summarize everything that's been explained in this article, here's a comprehe
 1. `ProdProcessGuidePromptProductionIdStep`
 
     1. Override `isComplete()` to specify when the step is considered complete.
-    1. Override `pageBuilderName()` to specify the page builder to be used.
+    1. Override `pageBuilderName()` to specify the page builder to use.
 
         ```xpp
         /// <summary>
@@ -491,7 +491,7 @@ To summarize everything that's been explained in this article, here's a comprehe
 
 1. `ProdProcessGuideConfirmProductionOrderStep`
 
-    1. Override `pageBuilderName()` to specify the page builder to be used.
+    1. Override `pageBuilderName()` to specify the page builder to use.
 
         ```xpp
         /// <summary>
@@ -580,11 +580,11 @@ To summarize everything that's been explained in this article, here's a comprehe
         ```
 
 > [!NOTE]
-> Many of the common patterns (regeneration of UI on error, setting process completion message, **OK** and **Cancel** behavior) have been moved to the framework – thus saving the application developer from writing boilerplate code that is both error prone, and has a risk of inconsistent behavior across processes. Where the scenario needs to deviate from the common path, though, the application developer is provided the option of overriding suitable methods – but then that is an intentional deviation that is both explicit and trackable.
+> Many of the common patterns (regeneration of UI on error, setting process completion message, **OK** and **Cancel** behavior) are now part of the framework. This change saves the application developer from writing boilerplate code that is both error prone and has a risk of inconsistent behavior across processes. If the scenario needs to deviate from the common path, the application developer can override suitable methods. This deviation is intentional, explicit, and trackable.
 
 ### Extending a business process
 
-So far, this article has highlighted how to build a new process using the `ProcessGuide` framework. In this final section, you'll find some examples of how this business process can be extended.
+So far, this article highlights how to build a new process by using the `ProcessGuide` framework. In this final section, you find some examples of how you can extend this business process.
 
 ### Add a step in a flow (using ProcessGuideNavigationAgentDefault)
 
@@ -618,7 +618,7 @@ Where to extend:
 
 How to extend:
 
-- Extend the `addDataControls()` method and add the additional control.
+- Extend the `addDataControls()` method and add the extra control.
 
 ### Complete overhaul of the user interface in an existing step
 
@@ -630,7 +630,7 @@ How to extend:
 
 - Create a new child class of `ProdProcessGuidePageBuilder` class, and implement the desired user interface.
 
-- Extend the `pageBuilderName()` method in the step class to return the `ProcessGuidePageBuilderNameAttribute` for the class created above.
+- Extend the `pageBuilderName()` method in the step class to return the `ProcessGuidePageBuilderNameAttribute` for the class created previously.
 
 ### Alter logic when a step is considered complete
 

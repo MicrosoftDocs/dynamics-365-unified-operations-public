@@ -6,12 +6,12 @@ ms.author: shwgarg
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
 
-# Predefined product variants
+# Create predefined product variants
 
 [!include [banner](../../includes/banner.md)]
 
@@ -19,7 +19,7 @@ This article provides an example scenario that shows how to create predefined pr
 
 ## Example scenario: Create predefined product variants
 
-This example scenario shows how to create product variants for a product master using a combination of product dimensions.
+This scenario shows how to create product variants for a product master by using a combination of product dimensions.
 
 ### Make demo data available
 
@@ -29,7 +29,7 @@ To follow this scenario using the values suggested here, you must have demo data
 
 To create a product master:
 
-1. Go to **Product information management** \> **Products** \> **Product masters**.
+1. Go to **Product information management** > **Products** > **Product masters**.
 1. Select **New**.
 1. If the **Product number** field doesn't already show a number, then enter a value. This is only required if no number sequence has been set for this field.
 1. Enter a name in the **Product name** field.
@@ -38,7 +38,7 @@ To create a product master:
 
 ### Step 2: Add product dimensions
 
-This example shows how to manually enter product dimensions. You can also choose to select a size, color, or style group that includes the product dimension values you want to use.
+This example shows how to manually enter product dimensions. You can also select a size, color, or style group that includes the product dimension values you want to use.
 
 To add product dimensions:
 
@@ -74,15 +74,15 @@ The *Apply sales tax group for product variants in sales and procurement* featur
 - If no specific item sales tax group is assigned to a released product variant for sales, the item sales tax group that's assigned to the released product master is used by default when a sales quotation or sales order line is created.
 - In a similar way, for purchase orders, purchase requisitions, and requests for quotation, if a specific item sales tax group is assigned to a released product variant for procurement, that group is used by default. If no specific item sales tax group is assigned to a released product variant, the item sales tax group that's assigned to the product master is used by default.
 
-This functionality allows for a setup where most released product variants use the item sales tax groups of the product master setup, but a few variants instead use an alternative item sales tax group by default. Therefore, this functionality helps eliminate the cost, pain, and risk that can occur when incorrect taxation is applied to an order line for a product variant.
+This functionality supports a setup where most released product variants use the item sales tax groups from the product master setup, but a few variants use an alternative item sales tax group by default. Therefore, this functionality helps eliminate the cost, effort, and risk that can occur when incorrect taxation is applied to an order line for a product variant.
 
 ### Assign an item sales tax group to a released product variant
 
 To assign variant-specific item sales tax groups, follow these steps:
 
-1. Go to **Product information management \> Products \> Released products**.
+1. Go to **Product information management > Products > Released products**.
 1. Open the product that you want to set up variant-specific item sales tax groups for.
-1. On the **Released product details** page, you can view the default item sales tax groups for the master product and edit them as required. These default groups will apply to all variants that you don't assign a variant-specific item sales tax group to for sales and/or procurement.
+1. On the **Released product details** page, you can view the default item sales tax groups for the master product and edit them as required. These default groups apply to all variants that you don't assign a variant-specific item sales tax group to for sales and/or procurement.
 
     - To specify the default item sales tax group that's used when product variants for this master are purchased, set the **Item sales tax group** field on the **Purchase** FastTab.
     - To specify the default item sales tax group that's used when product variants for this master are sold, set the **Item sales tax group** field on the **Sell** FastTab.

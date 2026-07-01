@@ -223,4 +223,3 @@ Before you can use the **Asset management** mobile workspace, your admin must se
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

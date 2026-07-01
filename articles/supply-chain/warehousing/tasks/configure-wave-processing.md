@@ -4,7 +4,7 @@ description: Learn how to set up the criteria that determine what work is genera
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage

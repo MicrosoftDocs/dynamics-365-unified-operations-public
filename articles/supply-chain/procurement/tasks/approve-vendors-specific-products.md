@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable  
 ms.topic: how-to
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.custom: 
   - bap-template
 ---

@@ -4,7 +4,7 @@ description: Learn how to create a new category hierarchy and assign a commodity
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 5/19/2026
+ms.date: 05/19/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, EcoResProductCategory, EcoResCategorySearchList, EcoResCategoryHierarchyFactbox, EcoResCategoryFriendlyName, EcoResCategoryAddProduct

@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 ms.topic: faq
-ms.date: 5/28/2026
+ms.date: 05/28/2026
 ms.custom: 
   - bap-template
 --- 

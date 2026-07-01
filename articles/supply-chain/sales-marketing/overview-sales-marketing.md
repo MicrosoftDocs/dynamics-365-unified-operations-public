@@ -4,7 +4,7 @@ description: Learn how to use sales and marketing to obtain, store, and use vari
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: overview
-ms.date: 4/21/2026
+ms.date: 04/21/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -19,13 +19,13 @@ Use Sales and marketing to obtain, store, and use various types of data in the s
 
 ## Marketing
 
-Use marketing campaigns and activities to find and build relationships with potential customers, so that initial interactions can develop into sales relationships. The following process flow shows the business process for marketing. 
+Use marketing campaigns and activities to find and build relationships with potential customers, so that initial interactions can develop into sales relationships. The following process flow shows the business process for marketing.
 
 :::image type="content" source="./media/marketing01.jpg" alt-text="Screenshot of business process for marketing." lightbox="./media/marketing01.jpg":::
 
 ### Relationships
 
-In sales and marketing, the initial interactions that you have with potential customers can occur in various situations. For example, you might find a prospective customer while you're attending a trade show, or you might have a possible lead with a customer after your organization runs a mass mailing campaign. It's very important that you understand the flow of a party’s entity before that party becomes a customer. The following graphic shows the flow of entity relationships as a potential customer becomes an actual customer. 
+In sales and marketing, the initial interactions that you have with potential customers can occur in various situations. For example, you might find a prospective customer while you're attending a trade show, or you might have a possible lead with a customer after your organization runs a mass mailing campaign. It's very important that you understand the flow of a party’s entity before that party becomes a customer. The following graphic shows the flow of entity relationships as a potential customer becomes an actual customer.
 
 :::image type="content" source="./media/salesandmarketing01.jpg" alt-text="Screenshot of entity relationship flow from potential customer to actual customer." lightbox="./media/salesandmarketing01.jpg":::
 
@@ -35,7 +35,7 @@ A campaign targets the contacts for prospects, leads, opportunities, and custome
 
 ## Sales
 
-Use the sales functionality to create quotations, up-sell and cross-sell to new and existing customers, create sales orders, and create sales invoices for customers. The following process flow shows the business process for sales. 
+Use the sales functionality to create quotations, up-sell and cross-sell to new and existing customers, create sales orders, and create sales invoices for customers. The following process flow shows the business process for sales.
 
 :::image type="content" source="./media/sales01.jpg" alt-text="Screenshot of business process for sales." lightbox="./media/sales01.jpg":::
 
@@ -126,6 +126,5 @@ You can find an overview of a sales process in the post
 The following white papers explore various aspects of sales and marketing in Dynamics 365 Supply Chain Management:
 
 - [Trade agreements](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,12 @@
 ---
 title: Release to warehouse
-description: Learn about the release to warehouse process and the options that you can use to initiate the process.
+description: Learn about the release to warehouse process, options to initiate the process, and how to configure automatic release for sales and transfer orders.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSReleaseToWarehouse, WHSReleaseToWarehouseSalesOrder, WHSReleaseToWarehouseTransferOrder, WHSReleaseToWarehouseOutboundShipmentOrder, WHSLoadPlanningWorkbench, WHSWaveTemplateTable, WHSWorkTemplateTable, WHSLocDirTable, WHSOutboundLoadPlanningWorkbench 
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -31,7 +31,7 @@ When orders are released to the warehouse, the system creates *load lines* and g
 
 The system uses *waves* to create picking work and loads for shipment. A *wave template* must be available for the type of wave that you want to create and for the warehouse of the order line. Wave templates of the *Shipping* type are used to ship items for sales orders and transfer orders.
 
-Each wave template contains *wave methods*. Wave methods perform actions such as creating work for the wave or creating loads. For example, a wave template for shipping waves can contain methods for creating loads, allocating lines to waves, replenishment, and creating picking work for the wave. The wave template establishes settings that define how the wave will be generated and processed, which steps must be done manually, and which steps will be done automatically. Learn more in [Wave templates](wave-templates.md). Therefore, depending on the configuration of your wave template, either a wave is automatically created, processed, and released when you release an order to warehouse, or some or all of those actions are manually performed after the release to warehouse is done.
+Each wave template contains *wave methods*. Wave methods perform actions such as creating work for the wave or creating loads. For example, a wave template for shipping waves can contain methods for creating loads, allocating lines to waves, replenishment, and creating picking work for the wave. The wave template establishes settings that define how the wave is generated and processed, which steps users must do manually, and which steps the system does automatically. Learn more in [Wave templates](wave-templates.md). Therefore, depending on the configuration of your wave template, either a wave is automatically created, processed, and released when you release an order to warehouse, or users manually perform some or all of those actions after release to warehouse is complete.
 
 When a wave is processed, the system creates picking work, based on a suitable *work template* and *location directive*, and makes that work available on mobile devices. The work template determines how the work is performed for each warehouse process, and the location directive specifies the pick and put locations for inventory movement. Learn more in [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).
 
@@ -80,28 +80,28 @@ While you're viewing the list pages, you can select multiple records. In this wa
 
 The system provides pages where you can review lines for multiple orders and release them to the warehouse:
 
-- **Release sales orders to warehouse** (**Warehouse management** \> **Release to warehouse** \> **Release sales orders to warehouse**) – This page lets you work with sales orders only. However, it provides better performance than the **Release to warehouse** page.
-- **Release transfer orders to warehouse** (**Warehouse management** \> **Release to warehouse** \> **Release transfer orders to warehouse**) – This page lets you work with transfer orders only. However, it provides better performance than the **Release to warehouse** page.
-- **Release outbound shipment orders to warehouse** (**Warehouse management** \> **Release  outbound shipment orders to warehouse** \> **Release to warehouse**) – This page lets you work with outbound shipment orders only.
-- **Release to warehouse** (**Warehouse management** \> **Release to warehouse** \> **Release to warehouse**) – This page lets you work with both sales orders and transfer orders. However, it provides slower performance than the pages that handle specific order types. This page will soon be deprecated.
+- **Release sales orders to warehouse** (**Warehouse management** > **Release to warehouse** > **Release sales orders to warehouse**) – This page lets you work with sales orders only. However, it provides better performance than the **Release to warehouse** page.
+- **Release transfer orders to warehouse** (**Warehouse management** > **Release to warehouse** > **Release transfer orders to warehouse**) – This page lets you work with transfer orders only. However, it provides better performance than the **Release to warehouse** page.
+- **Release outbound shipment orders to warehouse** (**Warehouse management** > **Release  outbound shipment orders to warehouse** > **Release to warehouse**) – This page lets you work with outbound shipment orders only.
+- **Release to warehouse** (**Warehouse management** > **Release to warehouse** > **Release to warehouse**) – This page lets you work with both sales orders and transfer orders. However, it provides slower performance than the pages that handle specific order types. This page will soon be deprecated.
 
 All the pages provide similar functionality, as described in the rest of this section. All of them let you select order lines or whole orders, and then release them to the warehouse.
 
-Each of the pages consists of an upper section, where you can select order lines, and a lower section, where you can initiate the release to warehouse process. You can use filters in the upper section to search for the order lines that you want to release. The **Release to warehouse** page provides a separate tab for sales orders and transfer orders in the upper section, whereas each of the specific pages shows just one type of order.
+Each of the pages consists of an upper section, where you can select order lines, and a lower section, where you can initiate the release to warehouse process. Use filters in the upper section to search for the order lines that you want to release. The **Release to warehouse** page provides a separate tab for sales orders and transfer orders in the upper section, whereas each of the specific pages shows just one type of order.
 
-The toolbar in the upper section includes the following buttons that you can use to select order lines to release to the warehouse:
+The toolbar in the upper section includes the following buttons for selecting order lines to release to the warehouse:
 
 - **Add** – Select one or more order lines in the upper section, and then select this button to those lines to the lower section.
 - **Add all** – Add all lines from the upper section to the lower section.
 - **Add order** – Select an order, and then select this button to add all lines from that order to the lower section.
 
-After you've finished adding lines to the lower section, mark each line that you want to release. Then select **Release to warehouse** on the toolbar to release those lines to the warehouse.
+After you finish adding lines to the lower section, mark each line that you want to release. Then select **Release to warehouse** on the toolbar to release those lines to the warehouse.
 
 ## Manual release to the warehouse from the Outbound load planning workbench page
 
 You can also manually release orders to the warehouse by using the **Outbound load planning workbench** page. This page lets you organize order lines into loads and then release those loads to the warehouse.
 
-To open the **Outbound load planning workbench** page, go to **Warehouse management** \> **Loads** \> **Outbound load planning workbench**. You can also open it from the **Sales orders**, **Transfer orders**, and **Outbound shipment orders** pages. In the upper section of the page, you can select to view the following information:
+To open the **Outbound load planning workbench** page, go to **Warehouse management** > **Loads** > **Outbound load planning workbench**. You can also open it from the **Sales orders**, **Transfer orders**, and **Outbound shipment orders** pages. In the upper section of the page, you can select to view the following information:
 
 - Shipments
 - Sales lines
@@ -111,14 +111,14 @@ To open the **Outbound load planning workbench** page, go to **Warehouse managem
 
 On each tab, select lines, and then add them to a new or existing load. You can filter the available lines by opening the **Filters** tab in the Action Pane and then selecting **Load planning filters**. Learn more in [Load planning filters](tasks/use-load-planning-workbench-plan-loads-shipments.md#load-planning-filters).
 
-The **Supply and demand** tab on the Action Pane includes the following buttons that you can use to add order lines in the upper section to a load:
+The **Supply and demand** tab on the Action Pane includes the following buttons for adding order lines in the upper section to a load:
 
 - **To new load** – Select order lines in the upper section, and then select this button to create a new load and add those lines to it.
 - **To existing load** – Select order lines in the upper section, and then select this button to add those lines to an existing load.
 - **Entire order to new load** – Select orders, and then select this button to create a new load and add all lines from those orders to it.
 - **Entire order to existing load** – Select an order, and then select this button to add all lines from that order to an existing load.
 
-In the lower section, you can review the loads that are created. To release loads to the warehouse, select them, and then select **Release** \> **Release to warehouse** on the toolbar. If you're using automatic wave processing, because loads are already assigned to order lines, the system creates shipments and work IDs when the release to warehouse operation is performed.
+In the lower section, you can review the loads that are created. To release loads to the warehouse, select them, and then select **Release** > **Release to warehouse** on the toolbar. If you're using automatic wave processing, because loads are already assigned to order lines, the system creates shipments and work IDs when the release to warehouse operation is performed.
 
 ## Automatic release to the warehouse
 
@@ -126,13 +126,13 @@ To automatically release orders to the warehouse, use the **Automatic release of
 
 To set up the batch job that releases sales orders, follow these steps:
 
-1. Go to **Warehouse management** \> **Release to warehouse** \> **Automatic release of sales orders**.
+1. Go to **Warehouse management** > **Release to warehouse** > **Automatic release of sales orders**.
 1. In the **Automatic release of sales orders** dialog box, on the **Parameters** FastTab, set the following fields:
 
     - **Quantity to release** – Select whether the whole quantity (*All*), only the physically reserved quantity (*Physically reserved*), or only the physically reserved and cross dock quantity (*Reserved physically and cross dock*) should be released to the warehouse.
     - **Allow release of partially released orders** – Specify whether remaining quantities for partially released orders should be released to the warehouse.
     - **Keep reservations on release failure** – Specify whether quantities that were automatically reserved for a sales order should remain reserved if the release to warehouse process fails.
-    - **Group releases by customer** – Specify whether the system should process release to warehouse operations separately for each customer or release all sales orders at the same time. When this option is set to *Yes*, the system will collect all the sales order lines for a selected customer, release those orders to the warehouse, and then process the next customer. When this option is set to *No*, the system will release all available sales order lines in a single release to warehouse operation. By enabling this option, you can help improve the performance and resilience of the release to warehouse process. However, you must be careful when you use this option together with wave templates that are configured to process waves at release to warehouse, because this combination might generate many single-customer waves, each of which has work that has been generated for that customer only. If you want to generate work that combines shipments for multiple customers, you should either turn off the *Group releases by customer* option or configure your wave templates to use postponed processing.
+    - **Group releases by customer** – Specify whether the system processes release to warehouse operations separately for each customer or releases all sales orders at the same time. When this option is set to *Yes*, the system collects all the sales order lines for a selected customer, releases those orders to the warehouse, and then processes the next customer. When this option is set to *No*, the system releases all available sales order lines in a single release to warehouse operation. Enabling this option can help improve the performance and resilience of the release to warehouse process. However, be careful when you use this option together with wave templates that are configured to process waves at release to warehouse, because this combination might generate many single-customer waves, each of which has work generated for that customer only. If you want to generate work that combines shipments for multiple customers, either turn off the *Group releases by customer* option or configure your wave templates to use postponed processing.
     - **Locked order handling** – Select how the system should handle sales orders that are currently locked because they're being edited by other users or processes:
 
         - *Wait for orders to unlock* – The system should wait for the orders to become unlocked before it releases them to the warehouse. In this case, the release to warehouse process might take more time.
@@ -147,7 +147,7 @@ To set up the batch job that releases sales orders, follow these steps:
 
 To set up the batch job that releases transfer orders, follow the steps.
 
-1. Go to **Warehouse management** \> **Release to warehouse** \> **Automatic release of transfer orders**.
+1. Go to **Warehouse management** > **Release to warehouse** > **Automatic release of transfer orders**.
 1. In the **Automatic release of transfer orders** dialog box, on the **Parameters** FastTab, set the following fields:
 
     - **Quantity to release** – Select whether the whole quantity (*All*), only the physically reserved quantity (*Physically reserved*), or only the physically reserved and cross dock quantity (*Reserved physically and cross dock*) should be released to the warehouse.
@@ -156,7 +156,7 @@ To set up the batch job that releases transfer orders, follow the steps.
 
 To set up the batch job that releases outbound shipment orders, follow these steps:
 
-1. Go to **Warehouse management** \> **Release to warehouse** \> **Automatic release of outbound shipment orders**.
+1. Go to **Warehouse management** > **Release to warehouse** > **Automatic release of outbound shipment orders**.
 1. In the **Automatic release of outbound shipment orders** dialog box, on the **Parameters** FastTab, set the following fields:
 
     - **Quantity to release** – elect whether the whole quantity (*All*), only the physically reserved quantity (*Physically reserved*), or only the physically reserved and cross dock quantity (*Reserved physically and cross dock*) should be released to the warehouse.

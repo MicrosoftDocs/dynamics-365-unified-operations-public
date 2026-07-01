@@ -4,7 +4,7 @@ description: Learn how to set up return reason codes, including step-by-step pro
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 05/01/2018
+ms.date: 06/22/2026
 ms.custom: 
 ms.reviewer: kamaybac
 ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
@@ -16,7 +16,7 @@ ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
 
 ## Set up return reason code groups
 
-1. Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason code groups**.
+1. Go to **Sales and marketing** > **Setup** > **Sales orders** > **Returns** > **Return reason code groups**.
 
 1. Select **New** to create a line for a new return reason code group.
 
@@ -26,9 +26,9 @@ ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
 
 ## Set up return reason codes
 
-This procedure helps you set up return reason codes that you can use to indicate why a product was returned by the customer.
+This procedure helps you set up return reason codes to indicate why a customer returned a product.
 
-1. Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason codes**.
+1. Go to **Sales and marketing** > **Setup** > **Sales orders** > **Returns** > **Return reason codes**.
 
 1. Press CTRL + N to create a new return reason code line.
 

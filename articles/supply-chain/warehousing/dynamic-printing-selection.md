@@ -4,7 +4,7 @@ description: Learn how to set up your system to dynamically select a printer whe
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/4/2026
+ms.date: 05/04/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLicensePlateLabel, WHSWorkUserdefaultLabelPrinterTable, WHSLocationDefaultLabelPrinter, WHSLabelLayout, WHSDocumentRoutingLayout, WHSPrinterStockType, WHSSysCorpNetPrinters

@@ -4,7 +4,7 @@ description: Global Trade Item Number (GTIN) codes are assigned by the GS1 organ
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 5/29/2026
+ms.date: 05/29/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac   
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemGTIN, UnitOfMeasureLookup 

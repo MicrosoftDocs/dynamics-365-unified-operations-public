@@ -4,7 +4,7 @@ description: Learn how to configure the location setup for a new WMS-enabled war
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/4/2026
+ms.date: 05/04/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac  
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup, WMSBlockingCause 
@@ -85,7 +85,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 1. Expand the **Location profiles** section.
 1. In the **User location** field, select the dropdown to open the lookup.
 1. In the list, select the link in the selected row.
-5. Expand the **Location types** section.
+1. Expand the **Location types** section.
 1. In the **Staging location type** field, select the dropdown to open the lookup.
 1. In the list, select the link in the selected row.
 1. In the **Final shipping location type** field, select the dropdown to open the lookup.
@@ -106,7 +106,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 1. Select **New**.
 1. In the **Zone ID** field, enter a value.
 1. In the **Zone name** field, enter a value.
-5. In the **Zone group ID** field, select the dropdown to open the lookup.
+1. In the **Zone group ID** field, select the dropdown to open the lookup.
 1. In the list, find and select the desired record.
 1. In the list, select the link in the selected row.
 1. Close the page.
