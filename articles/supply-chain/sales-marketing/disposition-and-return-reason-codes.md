@@ -4,7 +4,7 @@ description: Create and use return reason codes and disposition codes to support
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: overview
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.reviewer: kamaybac
 ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
 ---

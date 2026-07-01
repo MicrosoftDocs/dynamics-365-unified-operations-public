@@ -4,7 +4,7 @@ description: Learn how to set hazardous material properties for released product
 author: sgmsft
 ms.author: shwgarg
 ms.topic: article
-ms.date: 5/28/2026
+ms.date: 05/28/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

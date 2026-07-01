@@ -4,7 +4,7 @@ description: Learn how to set up your bills of materials (BOMs), formulas, and r
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 5/28/2026
+ms.date: 05/28/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: Route, RouteTable, EcoResProductDetailsExtended, BOMConsistOf, BOMTable

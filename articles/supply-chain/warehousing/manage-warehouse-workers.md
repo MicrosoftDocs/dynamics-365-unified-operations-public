@@ -4,7 +4,7 @@ description: Learn how you can use the Warehouse Management mobile app to help c
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 5/28/2026
+ms.date: 05/28/2026
 ms.reviewer: kamaybac
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e

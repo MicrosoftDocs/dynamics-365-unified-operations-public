@@ -4,7 +4,7 @@ description: Learn about the different types of discounts that you can set up by
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 5/18/2026
+ms.date: 05/18/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: 

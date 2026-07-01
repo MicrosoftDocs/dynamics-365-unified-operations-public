@@ -4,7 +4,7 @@ description: Learn about the Customer portal and integration in modern supply ch
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: overview
-ms.date: 4/21/2026
+ms.date: 04/21/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac

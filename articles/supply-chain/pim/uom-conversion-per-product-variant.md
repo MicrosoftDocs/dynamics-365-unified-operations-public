@@ -4,7 +4,7 @@ description: Learn how to set up unit of measure conversions for product variant
 author: sgmsft
 ms.author: shwgarg
 ms.topic: article
-ms.date: 5/20/2026
+ms.date: 05/20/2026
 ms.custom:
 ms.reviewer: kamaybac 
 ms.search.form: UnitOfMeasureConversion

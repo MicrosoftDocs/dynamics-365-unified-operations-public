@@ -4,7 +4,7 @@ description: Learn how to build sales price models with sales prices based on co
 author: sgmsft
 ms.author: shwgarg
 ms.topic: article
-ms.date: 10/2/2020
+ms.date: 10/02/2020
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form:

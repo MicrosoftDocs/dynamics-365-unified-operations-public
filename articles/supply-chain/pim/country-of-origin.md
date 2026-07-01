@@ -4,7 +4,7 @@ description: Learn about the country of origin feature, which lets you link a pr
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 5/27/2026
+ms.date: 05/27/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:  COOVendorCerts

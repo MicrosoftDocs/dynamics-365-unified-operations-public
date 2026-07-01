@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, InterCompanyTradingRelationSetupCustomer
 ms.topic: how-to
-ms.date: 01/07/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-In an intercompany organization, you can set up parameters that determine how you trade between different legal entities. These parameters are determined by the fields that you select. You can select different combinations to reflect different trading scenarios.
+In an intercompany organization, you can set up parameters that determine how you trade between different legal entities. The fields that you select determine these parameters. You can select different combinations to reflect different trading scenarios.
 
 The following two examples describe scenarios for intercompany organizations, one with two levels and one with three levels.
 
@@ -65,7 +65,7 @@ In the **Intercompany sales order prices** field group, select the following fie
 - **Allow price edit**
 - **Allow discount edit**
 
-In the **Intercompany sales order \> Intercompany purchase order** field group, select the following fields:
+In the **Intercompany sales order > Intercompany purchase order** field group, select the following fields:
 
 - **Batch number**
 - **Serial number**
@@ -84,7 +84,7 @@ Pricing on all intercompany sales orders and intercompany purchase orders is con
 
 The order header information is controlled from the original sales order to the external customer. Any change on the intercompany orders isn't synchronized to the original sales order.
 
-The following parameters should be selected:
+Select the following parameters:
 
 In Legal entity A, on the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
 
@@ -113,7 +113,7 @@ In Legal entity B, on the **Intercompany** page for customers, select **Sales or
 - **Sales order numbering** : **Company + original number**
 - **Allow summary update of documents for original customer**
 
-In the **Intercompany sales order \> Intercompany purchase order** field group, select the following fields:
+In the **Intercompany sales order > Intercompany purchase order** field group, select the following fields:
 
 - **Batch number**
 - **Serial number**

@@ -4,7 +4,7 @@ description: Learn about replenishment methods. It also explains how the multipl
 author: Henrikan
 ms.author: henrikan
 ms.topic: article
-ms.date: 5/22/2026
+ms.date: 05/22/2026
 ms.reviewer: kamaybac
 ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup
 ---

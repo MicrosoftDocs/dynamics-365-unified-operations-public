@@ -4,7 +4,7 @@ description: Learn how to set up and print labels by using Loftware label servic
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/5/2026
+ms.date: 05/05/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
@@ -190,6 +190,7 @@ Follow these steps to set up an external service instance for printing through t
 You can now create label printers and label layouts by using either variables or ZPL.
 
 > [!NOTE]
+>
 > - When you create label printers on the **Label printers** page in Supply Chain Management, in the **Label print service printer name** field, enter the name of the printer from the **Cloud printers** tab in Loftware Cloud Control Center.
 > - When you create a variable-based label layout on the **Label layout** page of Supply Chain Management, in the **System Variables** grid, include a row where the **Variable name** field is set to *LabelFile* and the **Value** field is set to the full path and file name of the label. To find the full path and file name, sign in to Loftware Control Center, and then, on the **Documents** tab, select the label file, and copy the full value of the **Path** field (under **File properties**).
 

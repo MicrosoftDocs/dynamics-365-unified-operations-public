@@ -4,7 +4,7 @@ description: Get an overview of price structures in Unified pricing management, 
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 5/5/2026
+ms.date: 05/05/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup

@@ -4,7 +4,7 @@ description: Learn how to set up product bundles, including prerequisites and an
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 5/18/2026
+ms.date: 05/18/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: Customer

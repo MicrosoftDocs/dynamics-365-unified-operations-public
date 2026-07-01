@@ -4,7 +4,7 @@ description: Learn how to set up the material handling equipment interface (MHAX
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 4/22/2026
+ms.date: 04/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WMHEParameters, WMHESubscription, WMHEQueueManagerWorkspace, WMHEInboundQueue, WMHEOutboundQueue

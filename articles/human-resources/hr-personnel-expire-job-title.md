@@ -81,7 +81,6 @@ You can assign an expiration date (today or in the past) to each title. This dat
 To expire a title, follow these steps:
 
 1. Go to **Human Resources > Setup > Titles**.
-1. Go to **Human Resources > Setup > Titles**.
 1. Select the title to expire.
 1. Set the **Expiration date** to **today** or a **past date** or click **Retire** on the action pane.
 1. Save your changes.

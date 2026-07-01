@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: GUPPriceGroupApplicability
 ms.topic: how-to
-ms.date: 5/27/2026
+ms.date: 05/27/2026
 ms.custom: 
   - bap-template
 ---

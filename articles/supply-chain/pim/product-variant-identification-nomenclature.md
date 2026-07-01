@@ -4,7 +4,7 @@ description: Learn how you can set up a product number nomenclature to replace t
 author: sgmsft
 ms.author: shwgarg
 ms.topic: article
-ms.date: 5/18/2026
+ms.date: 05/18/2026
 ms.reviewer: kamaybac
 ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
 ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68

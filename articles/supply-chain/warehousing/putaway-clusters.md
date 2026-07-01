@@ -4,7 +4,7 @@ description: Learn how putaway clusters offer a way to pick multiple license pla
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 5/29/2026
+ms.date: 05/29/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

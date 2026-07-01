@@ -4,7 +4,7 @@ description: Learn about identifying and deploying candidate selection tools, in
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 01/10/2022
+ms.date: 06/29/2026
 ms.custom:
 ms.reviewer: twheeloc  
 audience: Application User 
@@ -19,38 +19,38 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 
-Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills. However, candidates with the skills you need might already be employed in your organization. You can search for a specific skill set among existing employees, or new applicants. This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees. Use this procedure to learn how the skill mapping functionality can help you find the right person for an open position. The **USMF** demo data company was used to create this procedure.
+Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills. However, candidates with the skills you need might already be employed in your organization. You can search for a specific skill set among existing employees or new applicants. This search process allows a recruiter to quickly gather and screen applicants who applied for an open position now or in the past, or to find potential candidates from their existing pool of employees. Use this procedure to learn how the skill mapping functionality can help you find the right person for an open position. This procedure uses the **USMF** demo data company.
 
-1. Go to **Human resources \> Competencies \> Skill analysis \> Skill mapping profiles**.
-2. Select **New**.
-3. In the **Skill mapping** field, enter a name for your skill mapping. For example, enter **Accountant**.
-4. In the **Description** field, enter a description of the skill mapping.
-5. In the **Date** field, enter a date.
-6. Select **Retrieve profile** to pull in the certificate, skill, and education data from a selected person, job, or course, so that you can use it as the basis for your search. You can then add or remove criteria, indicate whether they are optional, and rank their importance.
-7. Select **Job**.
-8. In the **Job** field, enter or select a value.
-9. Select **OK**.
-10. On the **Range** FastTab, add any additional information, such as the department.
-11. On the **Certificates** FastTab, view or edit the certificates.
-12. On the **Skills** FastTab, view or edit the skills.
-13. On the **Education** FastTab, view or edit the education criteria.
-14. Select **Execute**.
-15. Select **OK**.
-16. Select **Result**.
-17. Select **Result**.
-18. Select **Resume**.
-19. Select **Certificates**.
+1. Go to **Human resources > Competencies > Skill analysis > Skill mapping profiles**.
+1. Select **New**.
+1. In the **Skill mapping** field, enter a name for your skill mapping. For example, enter **Accountant**.
+1. In the **Description** field, enter a description of the skill mapping.
+1. In the **Date** field, enter a date.
+1. Select **Retrieve profile** to pull in the certificate, skill, and education data from a selected person, job, or course, so that you can use it as the basis for your search. You can then add or remove criteria, indicate whether they're optional, and rank their importance.
+1. Select **Job**.
+1. In the **Job** field, enter or select a value.
+1. Select **OK**.
+1. On the **Range** FastTab, add any additional information, such as the department.
+1. On the **Certificates** FastTab, view or edit the certificates.
+1. On the **Skills** FastTab, view or edit the skills.
+1. On the **Education** FastTab, view or edit the education criteria.
+1. Select **Execute**.
+1. Select **OK**.
+1. Select **Result**.
+1. Select **Result**.
+1. Select **Resume**.
+1. Select **Certificates**.
 
     You can drill further into each person who is listed, to view details about their education, skills, and professional experience.
 
-20. Close the page.
-21. Close the page.
-22. Select result again.
-23. Select **Report**.
+1. Close the page.
+1. Close the page.
+1. Select result again.
+1. Select **Report**.
 
-    The best matches will be listed at the top of the report. You should see that a gap element is listed. This element represents the difference between the level that was listed on the skill mapping and the level of the skill that is assigned to the person.
+    The best matches are listed at the top of the report. You see that a gap element is listed. This element represents the difference between the level that was listed on the skill mapping and the level of the skill that is assigned to the person.
 
-24. Close the page.
-25. Select **Save**.
+1. Close the page.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to set up multiple price structures in a company, includi
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
-ms.date: 5/28/2026
+ms.date: 05/28/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPParameters

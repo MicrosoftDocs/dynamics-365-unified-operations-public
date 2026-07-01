@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 ms.topic: how-to
-ms.date: 4/30/2026
+ms.date: 04/30/2026
 ms.custom: 
   - bap-template
 ---
