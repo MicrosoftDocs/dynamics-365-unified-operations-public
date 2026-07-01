@@ -4,7 +4,7 @@ description: Learn how to continue using the deprecated master planning engine f
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 5/29/2026
+ms.date: 05/29/2026
 ms.custom: bap-template
 ai-usage: ai-assisted
 ms.reviewer: kamaybac

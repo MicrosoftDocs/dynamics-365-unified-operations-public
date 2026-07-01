@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: JmgProductionFloorExecution
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 06/15/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,15 +15,15 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-The production floor execution interface is optimized for touch interaction. Its design provides visual contrast that meets accessibility requirements for shop floor environments. However, it also enables multiple jobs to be started in parallel from a job list. (This capability is also known as *job bundling*.) Additionally, from a job list, workers can open a guide that was created in Microsoft Dynamics 365 Guide. In this way, they can get visual instructions on a HoloLens.
+The production floor execution interface is optimized for touch interaction. Its design provides visual contrast that meets accessibility requirements for shop floor environments. However, it also enables multiple jobs to be started in parallel from a job list. This capability is also known as *job bundling*. Additionally, from a job list, workers can open a guide that was created in Microsoft Dynamics 365 Guide. In this way, they can get visual instructions on a HoloLens.
 
 ## Sign in to the production floor execution interface as a worker
 
 Before workers can start to use the device, a supervisor or technical staff must prepare it and open the correct page in Dynamics 365 Supply Chain Management. For more information about how to set up the device, see [Set up a device to run the production floor execution interface](production-floor-execution-setup.md).
 
-After the device has been prepared, the sign-in page appears on it. This page shows information about the status of jobs for the local work cell. This information is updated periodically. On the page, workers use their badge IDs, personnel number, and/or password to sign. Although workers don't have to have a user account for Supply Chain Management, they must have a *time registered worker* account that they can use when they sign in. For more information about how to set up sign-in options and worker accounts to use the production floor execution interface, see [Set up worker accounts to use the production floor execution interface](production-floor-execution-worker-accounts.md).
+After the device is prepared, the sign-in page appears on it. This page shows information about the status of jobs for the local work cell. This information is updated periodically. On the page, workers use their badge IDs, personnel number, and/or password to sign in. Although workers don't need a user account for Supply Chain Management, they must have a *time registered worker* account that they can use when they sign in. For more information about how to set up sign-in options and worker accounts to use the production floor execution interface, see [Set up worker accounts to use the production floor execution interface](production-floor-execution-worker-accounts.md).
 
-![Production floor execution interface sign-in page.](media/pfei-sign-in-page.png "Production floor execution interface sign-in page")
+:::image type="content" source="media/pfei-sign-in-page.png" alt-text="Screenshot of the production floor execution interface sign-in page.":::
 
 The remaining sections of this article describe how workers interact with the interface.
 
@@ -31,40 +31,40 @@ The remaining sections of this article describe how workers interact with the in
 
 Individual workers can choose their preferred theme by selecting their worker photo (or icon) and then selecting **Color theme** from the dropdown list.
 
-![Change a color theme by worker.](media/pfe-change-color-theme-menu.png "Change a color theme by worker")
+:::image type="content" source="media/pfe-change-color-theme-menu.png" alt-text="Screenshot of the color theme menu accessed by selecting the worker photo or icon.":::
 
-A dialog opens where the worker can select a new theme and preview the colors (the theme is applied immediately). Once the theme is selected, it is saved in user preferences and will be applied the next time the worker signs in, regardless of the current device's settings.
+A dialog opens where the worker can select a new theme and preview the colors. The theme is applied immediately. When the worker selects the theme, the system saves it in user preferences. The theme is applied the next time the worker signs in, regardless of the current device's settings.
 
 ## All jobs tab
 
-The **All jobs** tab provides a job list that shows all the production jobs that have a status of *Not started*, *Stopped*, or *Started*. (This tab name is customizable and may be different for your system.)
+The **All jobs** tab provides a job list that shows all the production jobs that have a status of *Not started*, *Stopped*, or *Started*. (You can customize this tab name, so it might be different for your system.)
 
-![All jobs tab.](media/pfei-all-jobs-tab.png "All jobs tab")
+:::image type="content" source="media/pfei-all-jobs-tab.png" alt-text="Screenshot of the All jobs tab in the production floor execution interface.":::
 
 The job list has the following columns. The numbers correspond to the numbers in the previous illustration.
 
-1. **Selection column** – The leftmost column uses check marks to indicate jobs that have been selected by the worker. Workers can select multiple jobs in the list at the same time. To select all the jobs in the list, select the check mark in the column header. When a single job is selected, details about that job are shown in the lower part of the page.
+1. **Selection column** – The leftmost column uses check marks to indicate jobs selected by the worker. Workers can select multiple jobs in the list at the same time. To select all the jobs in the list, select the check mark in the column header. When a single job is selected, details about that job appear in the lower part of the page.
 1. **Job status column** – This column uses symbols to indicate the status of each job. Jobs that have no symbol in this column have a status of *Not started*. A green triangle indicates jobs that have a status of *Started*. Two yellow vertical lines indicate jobs that have a status of *Stopped*.
 1. **High priority column** – This column uses exclamation marks to indicate jobs that have high priority.
-1. **Job ID** – This column shows the uniq job ID for a job.
+1. **Job ID** – This column shows the unique job ID for a job.
 1. **Order** – This column shows the production order number for a job.
 1. **Oper. No.** – This column shows the operation number of the operation that a job is part of.
 1. **Description** – This column shows a description of the operation that a job is part of.
-1. **Product** – This column shows the product number of the item that is being produced by a job.
+1. **Product** – This column shows the product number of the item that a job produces.
 1. **Requested** – This column shows the quantity that a job is planned to produce.
-1. **Started** – This column shows the quantity that has already been started for a job.
-1. **Completed** – This column shows the quantity that has already been completed for a job.
-1. **Scrapped** – This column shows the quantity that has already been scrapped for a job.
+1. **Started** – This column shows the quantity that's already started for a job.
+1. **Completed** – This column shows the quantity that's already completed for a job.
+1. **Scrapped** – This column shows the quantity that's already scrapped for a job.
 1. **Remaining** – This column shows the quantity that remains to be completed for a job.
 1. **Unit** – This column shows the unit of measure of quantity for a job.
 
-Additional columns might be shown to support catch weight items if the catch weight configuration key is enabled for your system.
+If the catch weight configuration key is enabled for your system, you might see additional columns to support the catch weight items.
 
 ## Active jobs tab
 
-The **Active jobs** tabs shows a list of all jobs that the signed-in worker has already started. (This tab name is customizable and may be different for your system.)
+The **Active jobs** tab shows a list of all jobs that the signed-in worker already started. (You can customize this tab name, so it might be different for your system.)
 
-![Active jobs tab.](media/pfei-active-jobs-tab.png "Active jobs tab")
+:::image type="content" source="media/pfei-active-jobs-tab.png" alt-text="Screenshot of the Active jobs tab in the production floor execution interface.":::
 
 The **Active jobs** list shows the same columns as the **All jobs** list.
 
@@ -74,11 +74,11 @@ The **My jobs** tab lets workers easily view all unstarted and unfinished jobs t
 
 The scheduling system automatically assigns each production job to a specific resource record, and each resource record has a type (such as machine or human). When you set up an employee as a production worker, you can associate the worker account with a unique human resource record.
 
-The **My jobs** tab lists all unstarted and unfinished jobs that have been assigned to the human resource record of the signed-in worker, if any worker is signed in. It never lists jobs that have been assigned to a machine or other type of resource, even if the signed-in worker has started to work on those jobs.
+The **My jobs** tab lists all unstarted and unfinished jobs assigned to signed-in worker's human resource record, if any worker is signed in. It never lists jobs that are assigned to a machine or other type of resource, even if the signed-in worker started to work on those jobs.
 
-To view all jobs that have been started by the signed-in worker, regardless of the type of resource that each job is assigned to, use the **Active jobs** tab. To view all unfinished jobs that match the configuration of the local job filter, regardless of the worker or start status, use the **All jobs** tab.
+To view all jobs that the signed-in worker started, regardless of the type of resource that each job is assigned to, use the **Active jobs** tab. To view all unfinished jobs that match the configuration of the local job filter, regardless of the worker or start status, use the **All jobs** tab.
 
-![My jobs tab.](media/pfei-my-jobs-tab.png "My jobs tab")
+:::image type="content" source="media/pfei-my-jobs-tab.png" alt-text="Screenshot of the My jobs tab in the production floor execution interface.":::
 
 ## Project tabs
 
@@ -86,30 +86,30 @@ The project tabs **All project jobs**, **Projects**, **Project budget**, and **P
 
 ## My machine tab
 
-The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (This tab name is customizable and may be different for your system.)
+The **My machine** tab lets workers select an asset connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (You can customize this tab name and it might be different for your system.)
 
-![The My machine tab.](media/pfei-my-machine-tab.png "The My machine tab")
+:::image type="content" source="media/pfei-my-machine-tab.png" alt-text="Screenshot of the My machine tab in the production floor execution interface.":::
 
 The **My machine** tab has the following columns. The numbers correspond to the numbers in the previous illustration.
 
 1. **Machine asset** – Select the machine asset that you want to track. Start typing a name to select from a list of matching assets, or select the magnifying-glass icon to select from a list of all assets associated with the resources that are within the filter of the job list.
 
     > [!NOTE]
-    > Supply Chain Management users can assign a resource to each asset as needed using the **All assets** page (on the **Fixed asset** tab, using the **Resource** drop-down list). Learn more in [Create an asset](../asset-management/objects/create-an-object.md).
+    > Supply Chain Management users can assign a resource to each asset as needed by using the **All assets** page (on the **Fixed asset** tab, by using the **Resource** drop-down list). For more information, see [Create an asset](../asset-management/objects/create-an-object.md).
 
-1. **Settings** – Select the gear icon to open a dialog box where you can choose which counters to view for the selected machine asset. Values for these counters are shown at the top of the **Asset management** tab. The **Settings** menu (shown in the following screenshot) lets you enable up to four counters. For each counter that you want to enable, use the lookup field at the top of the tile to select a counter. The lookup field lists all of the counters associated to the asset selected at the top of the **Asset management** page. Set each counter to monitor either the **Aggregated** value or the latest **Actual** value for the counter. For example, if you set a counter that tracks how many hours the machine has been running, then you should set it to **Aggregated**. If you set a counter to measure the latest updated temperature or pressure, then you should set it to **Actual**. Select **OK** to save your settings and close the dialog box.
+1. **Settings** – Select the gear icon to open a dialog box where you can choose which counters to view for the selected machine asset. Values for these counters show at the top of the **Asset management** tab. The **Settings** menu (shown in the following screenshot) lets you enable up to four counters. For each counter that you want to enable, use the lookup field at the top of the tile to select a counter. The lookup field lists all of the counters associated to the asset selected at the top of the **Asset management** page. Set each counter to monitor either the **Aggregated** value or the latest **Actual** value for the counter. For example, if you set a counter that tracks how many hours the machine has been running, set it to **Aggregated**. If you set a counter to measure the latest updated temperature or pressure, set it to **Actual**. Select **OK** to save your settings and close the dialog box.
 
-    ![The My machine tab settings.](media/pfei-my-machine-tab-settings.png "The My machine tab settings")
+    :::image type="content" source="media/pfei-my-machine-tab-settings.png" alt-text="Screenshot of the My machine tab settings dialog for selecting counters.":::
 
-1. **Request maintenance** – Select this button to open a dialog box where you can create a maintenance request. You'll be able to provide description and a note. The request will be brought to the attention of a Supply Chain Management user, who will then be able to convert the maintenance request to a maintenance work order.
-1. **Register downtime** – Select this button to open a dialog box where you can register machine downtime. You'll be able to select a reason code and enter a date/time span for the downtime. The machine downtime registration is used for calculating the efficiency of the machine asset.
+1. **Request maintenance** – Select this button to open a dialog box where you can create a maintenance request. You can provide a description and a note. A Supply Chain Management user sees the request and can convert the maintenance request to a maintenance work order.
+1. **Register downtime** – Select this button to open a dialog box where you can register machine downtime. You can select a reason code and enter a date and time span for the downtime. The machine downtime registration is used for calculating the efficiency of the machine asset.
 1. **View or edit** – Select this button to open a dialog box where you can edit or view existing downtime records.
 
 ## Starting and completing production jobs
 
 Workers start a production job by selecting a job on the **All jobs** tab and then selecting **Start job** to open the **Start job** dialog box.
 
-![Start job dialog box.](media/pfei-start-job-dialog.png "Start job dialog box")
+:::image type="content" source="media/pfei-start-job-dialog.png" alt-text="Screenshot of the Start job dialog box in the production floor execution interface.":::
 
 Workers use the **Start job** dialog box to confirm the production quantity and then start the job. Workers can adjust the quantity by selecting the **Quantity** field and then using the numeric keyboard that appears. Workers then select **Start** to start to work on the job. The **Start job** dialog box is closed, and the job is added to the **Active jobs** tab.
 
@@ -119,15 +119,15 @@ Workers can start a job that is in any status. When a worker starts a job that h
 
 When a worker completes or partially completes a job, they can report good quantities that were produced by selecting a job on the **Active jobs** tab and then selecting **Report progress**. Then, in the **Report progress** dialog box, the worker enters the good quantity by using the numeric keyboard. The quantity is blank by default. After a quantity is entered, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
 
-![Report progress dialog box detail view.](media/pfei-report-progress-dialog.png "Report progress dialog box detail view")
+:::image type="content" source="media/pfei-report-progress-dialog.png" alt-text="Screenshot of the Report progress dialog box detail view.":::
 
 Workers reporting job progress can choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time.
 
-![Report progress dialog box list view.](media/pfei-report-progress-dialog-list-view.png "Report progress dialog box list view")
+:::image type="content" source="media/pfei-report-progress-dialog-list-view.png" alt-text="Screenshot of the Report progress dialog box list view.":::
 
 ## Reporting good quantities on batch orders that have co-products and by-products
 
-Workers can use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products.
+Workers use the production floor execution interface to report progress on batch orders. This reporting includes co-products and by-products.
 
 Some manufacturers, especially in process industries, use batch orders to manage their production processes. Batch orders are created from formulas, and those formulas can be defined so that they have co-products and by-products as output. When feedback about those batch orders is reported, the amount of output must be registered on the formula item, and also on the co-products and by-products.
 
@@ -137,11 +137,11 @@ To report good quantities on the products, a worker selects a job on the **Activ
 
 Then, in the **Report progress** dialog box, the worker can select among the products that are defined as output for the batch order to report on. The worker can select one or many products in the list, and then select **Report progress**. For each product, the quantity is blank by default, and the worker can use the numeric keyboard to enter the quantity. The worker can use the **Previous** and **Next** buttons to move between the selected products. After the quantity is entered for each product, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
 
-![Report co-products and by-products.](media/report-co-by-products.png "Report co-products and by-products")
+:::image type="content" source="media/report-co-by-products.png" alt-text="Screenshot of the dialog for reporting co-products and by-products.":::
 
 ### Reporting on batch orders for planning items
 
-When a worker completes a job on a batch order for a planning item, they will report quantities only on co-products and by-products, because planning items don't contain an item of the *Formula* type.
+When a worker completes a job on a batch order for a planning item, they report quantities only on co-products and by-products, because planning items don't contain an item of the *Formula* type.
 
 ### Reporting co-product variation
 
@@ -155,7 +155,7 @@ Workers can use the production floor execution interface to report progress on b
 
 ## Reporting scrap
 
-When a worker completes or partially completes a job, they can report scrap by selecting a job on the **Active jobs** tab and then selecting **Report scrap**. Then, in the **Report scrap** dialog box, the worker enters the scrap quantity by using the numeric keyboard. The worker also selects a reason (*None*, *Machine*, *Operator*, or *Material*).
+When a worker completes or partially completes a job, they can report scrap by selecting a job on the **Active jobs** tab and then selecting **Report scrap**. In the **Report scrap** dialog box, the worker enters the scrap quantity by using the numeric keyboard. The worker also selects a reason (*None*, *Machine*, *Operator*, or *Material*).
 
 Workers reporting job scrap can choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time.
 
@@ -163,24 +163,24 @@ Workers reporting job scrap can choose to work from a list view that shows sever
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-It's possible to fit production machines with sensors that report completed operations. By integrating these sensors with Supply Chain Management, you can set up scenarios where the system can automatically report finished quantities when a machine generates enough sensor signals to reach a defined output threshold. The scenario requires fitting the machine with a sensor that emits a signal for each production cycle, and mapping that sensor to the corresponding resource and operation in Supply Chain Management. By defining how many signals correspond to one finished unit, the system can automatically determine when progress should be reported and update the production order and inventory accordingly. If your plant is set up to support this scenario, then you can also set up the production floor execution interface to provide real-time visibility into the sensor signals and counters, allowing workers to monitor the production process more effectively and adjust the counters as needed. For more information about how to set up this scenario and view the counters in the production floor execution interface, see [Production auto report scenario (preview)](../sensor-data-intelligence/sdi-scenario-production-auto-report.md).
+You can fit production machines with sensors that report completed operations. By integrating these sensors with Supply Chain Management, you can set up scenarios where the system automatically reports finished quantities when a machine generates enough sensor signals to reach a defined output threshold. The scenario requires fitting the machine with a sensor that emits a signal for each production cycle, and mapping that sensor to the corresponding resource and operation in Supply Chain Management. By defining how many signals correspond to one finished unit, the system can automatically determine when progress should be reported and update the production order and inventory accordingly. If your plant is set up to support this scenario, you can also set up the production floor execution interface to provide real-time visibility into the sensor signals and counters, so workers can monitor the production process more effectively and adjust the counters as needed. For more information about how to set up this scenario and view the counters in the production floor execution interface, see [Production auto report scenario (preview)](../sensor-data-intelligence/sdi-scenario-production-auto-report.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## <a name="tracked-components"></a>Register batch/serial numbers for finished products and their components
 
-Workers can use the production floor execution interface to register batch/serial numbers for tracked components and the finished products that they're producing. For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
+Workers can use the production floor execution interface to register batch or serial numbers for tracked components and the finished products that they're producing. For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
 
 Workers follow these steps to register tracked components.
 
-1. When you start a production job, select **Tracked component** to start to register batch/serial numbers for the product and its components.
+1. When you start a production job, select **Tracked component** to start registering batch or serial numbers for the product and its components.
 
     :::image type="content" source="media/tracked-components-pfe.png" alt-text="Screenshot of the page for registering tracked components in the production floor execution interface." lightbox="media/tracked-components-pfe.png":::
 
-1. When the interface prompts you, scan the batch/serial number of the product that's being manufactured.
+1. When the interface prompts you, scan the batch or serial number of the product that's manufactured.
 1. Select a component to add to the product, and then scan the batch/serial number of that component.
 1. Continue to add and scan components until all of them are registered.
-1. Reviews the on-screen information, and make any required adjustments to the registrations by using the buttons at the bottom of the page.
+1. Review the on-screen information, and make any required adjustments to the registrations by using the buttons at the bottom of the page.
 1. Select **Next**.
 1. Continue to process items on the production order until all products are registered.
 
@@ -192,9 +192,9 @@ Workers follow these steps to register tracked components.
 > [!NOTE]
 > This feature is generally available (GA) for non-WMS items, but is still in preview for WMS-enabled items.
 
-Workers can adjust material consumption for each production job. This functionality is used in scenarios where the actual quantity of materials that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current.
+Workers can adjust material consumption for each production job. Use this functionality when the actual quantity of materials that a production job consumes is different from the planned quantity. Adjust the quantity to keep the inventory levels current.
 
-Workers can also make reservations on the batch/serial numbers of materials. This functionality is used in scenarios where a worker must manually specify which material batch or serial numbers were consumed, to meet material traceability requirements.
+Workers can also make reservations on the batch or serial numbers of materials. Use this functionality when a worker must manually specify which material batch or serial numbers were consumed, to meet material traceability requirements.
 
 Workers can specify the quantity to adjust by selecting **Adjust material**. This button is available in the following locations:
 
@@ -216,43 +216,43 @@ The list in the dialog box shows the following information:
 - **Product name** – The name of the product.
 - **Proposal** – The estimated quantity of material that will be consumed when progress or scrap is reported for the specified quantity for the job.
 - **Consumption** – The actual quantity of material that will be consumed when progress or scrap is reported for the specified quantity for the job.
-- **Reserved** – The quantity of material that has been physical reserved in inventory.
+- **Reserved** – The quantity of material that is physically reserved in inventory.
 - **Unit** – The bill of materials (BOM) unit.
 
-The right side of the dialog box shows following information:
+The right side of the dialog box shows the following information:
 
 - **Product number** – The product master and product variant.
 - **Estimated** – The estimated quantity to consume.
-- **Started** – The quantity that has been started on the production job.
+- **Started** – The quantity that is started on the production job.
 - **Remaining quantity** – Of the estimated quantity, the quantity that remains to be consumed.
-- **Released quantity** – The quantity that has been consumed.
+- **Released quantity** – The quantity that is consumed.
 
 The following actions can be performed:
 
 - The worker can specify the quantity to adjust for a material by selecting **Adjust consumption**. After the quantity is confirmed, the quantity in the **Consumption** column is updated with the adjusted quantity.
 - When the worker selects **Adjust material**, a production picking list journal is created. This journal contains the same items and quantities as the **Adjust material** list.
 - When the worker adjusts a quantity in the **Adjust material** dialog box, the **Proposal** field on the corresponding journal line is updated with the same quantity. If the worker selects **Cancel** in the **Adjust material** dialog box, the picking list is deleted.
-- If the worker selects **OK**, the picking list isn't deleted. It will be posted when the job is reported in the **Report scrap** or **Report progress** dialog box.
+- If the worker selects **OK**, the picking list isn't deleted. It's posted when the job is reported in the **Report scrap** or **Report progress** dialog box.
 - If the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box, the picking list is deleted.
 
 ### Adjust material from the primary or secondary toolbar
 
-The **Adjust material** button can be configured so that it appears on the primary or secondary toolbar. (Learn more in [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
+You can configure the **Adjust material** button to appear on the primary or secondary toolbar. For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md). A worker selects **Adjust material** for a production job that is in progress. The **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box opens, the system creates a production picking list that contains lines for the adjusted quantities for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
 
 ### Adjust material consumption for catch weight items
 
-Workers can adjust material consumption for catch weight items. This functionality is used in scenarios where the actual quantity of a catch weight material that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current. When a worker adjusts consumption of a catch weight item, they can adjust both the catch weight quantity and the inventory quantity. For example, if a production job is planned to consume five boxes that have an estimated weight of 2 kilograms per box, the worker can adjust both the number of boxes to consume and the weight of the boxes. The system will validate that the specified weight of the boxes is within the defined minimum and maximum threshold that defined on the released product.
+Workers can adjust material consumption for catch weight items. This functionality is used in scenarios where the actual quantity of a catch weight material consumed by a production job is more or less than the planned quantity. Adjust the quantity to keep the inventory levels current. When a worker adjusts consumption of a catch weight item, they can adjust both the catch weight quantity and the inventory quantity. For example, if a production job is planned to consume five boxes that have an estimated weight of 2 kilograms per box, the worker can adjust both the number of boxes to consume and the weight of the boxes. The system validates that the specified weight of the boxes is within the defined minimum and maximum threshold that is defined on the released product.
 
 ### Reserve materials
 
 In the **Adjust material** dialog box, a worker can make and adjust material reservations by selecting **Reserve material**. The **Reserve material** dialog box that appears shows the physically available inventory for the item for each storage and tracking dimension.
 
-If the material is enabled for warehouse management processes (WMS), the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch/serial numbers is shown. To specify a quantity to reserve, the worker can select **Reserve material**. To remove an existing reservation, the worker can select **Remove reservation**.
+If the material is enabled for warehouse management processes (WMS), the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch or serial numbers is shown. To specify a quantity to reserve, the worker selects **Reserve material**. To remove an existing reservation, the worker selects **Remove reservation**.
 
 For more information about how to set up the production input location, see the following blog post: [Setting up the production input location](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 
 > [!NOTE]
-> Reservations that a worker makes in the **Reserve material** dialog box will remain when the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box.
+> Reservations that a worker makes in the **Reserve material** dialog box remain when the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box.
 >
 > It isn't possible to adjust reservations for catch weight items.
 
@@ -283,27 +283,27 @@ For example, Shannon, a floor worker at Contoso, wants to attend a company meeti
 - **Shannon is working on one or more active jobs.** Shannon selects **Activity**, identifies the activity (meeting), and confirms the selection. A message that appears informs Shannon about jobs that are in progress. From the message, Shannon can choose to complete or stop the jobs before going to the meeting.
 - **Shannon doesn't have any active jobs.** Shannon selects **Activity**, identifies the activity (meeting), and confirms the selection. Shannon is now registered as being at the meeting.
 
-In both scenarios, after confirming the selection, Shannon goes to either the sign-in page or a page that will wait for the confirmation that Shannon has returned from the indirect activity. The page that appears depends on the configuration of the production floor execution interface. (Learn more in [Configure the production floor execution interface](production-floor-execution-configure.md).)
+In both scenarios, after confirming the selection, Shannon goes to either the sign-in page or a page that waits for the confirmation that Shannon has returned from the indirect activity. The page that appears depends on the configuration of the production floor execution interface. (Learn more in [Configure the production floor execution interface](production-floor-execution-configure.md).)
 
 ## Registering breaks
 
 Workers can register breaks. Breaks can be flexibly defined, as described in [Pay based on registrations](pay-based-on-registrations.md).
 
-A worker registers a break by selecting **Break** and then selecting the card that represents the break type (such as lunch). After the worker confirms the selection, the device shows either the sign-in page or a page that will wait for the worker to confirm that they have returned from the break. The page that appears depends on the configuration of the production floor execution interface. (Learn more in [Configure the production floor execution interface](production-floor-execution-configure.md).)
+A worker registers a break by selecting **Break** and then selecting the card that represents the break type (such as lunch). After the worker confirms the selection, the device shows either the sign-in page or a page that waits for the worker to confirm that they have returned from the break. The page that appears depends on the configuration of the production floor execution interface. (Learn more in [Configure the production floor execution interface](production-floor-execution-configure.md).)
 
 ## View the "My day" dialog
 
 The **My day** dialog provides workers with an overview of their registrations and balances. The dialog is divided into the following three sections:
 
 - The main section lists the registrations that the current worker made on a selected date. It opens showing registrations for the current day, and provides a date picker that lets the worker view other days.
-- The **Last calculated daily balance** section shows the worker's current balances for paid time, paid overtime, absence, and paid absence. These values are based on the registrations that have been calculated during the approval process.
-- The **Balances** section provides an overview of the balances within a defined period for selected categories of registrations (such as vacation, standard time, and overtime). These balances are based on the way statistical balances are set up in the **Time and attendance** module. For more information about how to set this up, see [Show vacation balances in the production floor execution interface](production-floor-execution-payroll-stats.md).
+- The **Last calculated daily balance** section shows the worker's current balances for paid time, paid overtime, absence, and paid absence. These values are based on the registrations that are calculated during the approval process.
+- The **Balances** section provides an overview of the balances within a defined period for selected categories of registrations, such as vacation, standard time, and overtime. These balances are based on the way statistical balances are set up in the **Time and attendance** module. For more information about how to set this up, see [Show vacation balances in the production floor execution interface](production-floor-execution-payroll-stats.md).
 
 Admins can add this feature to the interface by placing the **My day** button on a toolbar for each relevant tab as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 ## Working in teams
 
-When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot must register job status. Time records apply to all team members.
+When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot registers job status. Time records apply to all team members.
 
 ### Prerequisites
 
@@ -311,25 +311,25 @@ To use teams, an admin must enable the **Assistant** action for the primary tool
 
 ### Form a new team that has a pilot and an assistant
 
-A worker can register as an assistant by selecting **Assistant** on the **All jobs** tab. Then, in the **Select an employee to assist** dialog box that appears, the worker can select a pilot in a list of workers who are actively working on a job. After the worker confirms their selection, they become an assistant to the selected worker, who becomes the pilot for the new team.
+A worker registers as an assistant by selecting **Assistant** on the **All jobs** tab. Then, in the **Select an employee to assist** dialog box that appears, the worker selects a pilot in a list of workers who are actively working on a job. After the worker confirms their selection, they become an assistant to the selected worker, who becomes the pilot for the new team.
 
 ### Assign a new pilot to an existing team
 
-When a team wants to select a new pilot, the current pilot must nominate another worker in the team as the new pilot. To nominate a new pilot, the current pilot selects **Assistant** on the **All jobs** tab. Then, in the **Change pilot** dialog box that appears, the pilot can select a new pilot in a list of workers who are already on the team. After the current pilot confirms their selection, they are dropped from the team completely. However, they can rejoin the team as they require.
+When a team wants to select a new pilot, the current pilot nominates another worker in the team as the new pilot. To nominate a new pilot, the current pilot selects **Assistant** on the **All jobs** tab. Then, in the **Change pilot** dialog box that appears, the pilot selects a new pilot in a list of workers who are already on the team. After the current pilot confirms their selection, they are removed from the team. However, they can rejoin the team as they require.
 
 ### Assistant clocks out
 
-When a worker who works as an assistant clocks out, they leave the team. If the **Permanent teams** and **Restart at clock in** options are set to *Yes*, a worker who clocks out will automatically rejoin the team the next time that they clock in. You can find these options on the **General** tab of the **Time and attendance parameters** page.
+When a worker who works as an assistant clocks out, they leave the team. If the **Permanent teams** and **Restart at clock in** options are set to *Yes*, a worker who clocks out automatically rejoins the team the next time that they clock in. You can find these options on the **General** tab of the **Time and attendance parameters** page.
 
 ## Opening instructions
 
-Workers can open a document that is attached to a job by selecting **Instructions**. The **Instructions** button is available only if a document is associated with the job in the master data. For example, a document that is attached to a product on the **Released products** page in Supply Chain Management will be available for workers to open in the shop floor execution interface.
+Workers can open a document attached to a job by selecting **Instructions**. The **Instructions** button appears only if a document is associated with the job in the master data. For example, if a document attached to a product on the **Released products** page in Supply Chain Management is available for workers to open it in the shop floor execution interface.
 
 ## Opening mixed-reality guides for HoloLens
 
-[Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) can help empower workers by providing hands-on learning that uses mixed reality. You can define standardized processes where step-by-step instructions guide workers to the tools and parts that they need and show how to use those tools in real work situations. Here is an overview of the process.
+[Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) empower workers by providing hands-on learning that uses mixed reality. You can define standardized processes where step-by-step instructions guide workers to the tools and parts that they need and show how to use those tools in real work situations. Here's an overview of the process.
 
-1. Every time that a worker opens a job list in the shop floor execution interface, the interface finds all relevant guides for the jobs that are shown.
+1. Every time a worker opens a job list in the shop floor execution interface, the interface finds all relevant guides for the jobs that are shown.
 1. The worker selects **Guides** to view the list of guides.
 1. The worker selects a relevant guide in the list.
 1. The shop floor execution interface shows a QR code for the selected guide.

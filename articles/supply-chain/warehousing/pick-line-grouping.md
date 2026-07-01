@@ -4,7 +4,7 @@ description: Access an overview of pick line grouping, including outlines on tog
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/27/2026
+ms.date: 05/27/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable

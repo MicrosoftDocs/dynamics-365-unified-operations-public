@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -27,7 +27,7 @@ Each data source configuration includes the following components:
 > [!NOTE]
 > If you recently transitioned from UI version 1 to UI version 2, see the [Differences between Inventory Visibility UI version 1 and UI version 2](#differences-between-v1-and-v2) section of this article to learn what has changed.
 >
-> For new installations, we recommend that you use UI version 2 from the start. If you're still using UI version 1, we recommend that you test the new version and then [upgrade to UI version 2](inventory-visibility-ui-version-2.md) as soon as possible.
+> For new installations, use UI version 2 from the start. If you're still using UI version 1, test the new version, and then [upgrade to UI version 2](inventory-visibility-ui-version-2.md) as soon as possible.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ Before you begin, install and set up the Inventory Visibility Add-in as describe
 
 ## <a name="differences-between-v1-and-v2"></a>Differences between Inventory Visibility UI version 1 and UI version 2
 
-The Inventory Visibility app in Microsoft Power Apps supports [two versions of the user interface](inventory-visibility-ui-version-2.md): UI version 1 and UI version 2. Each version uses a different and independent collection of configuration settings. Therefore, you must choose which version you prefer to use.
+The Inventory Visibility app in Microsoft Power Apps supports [two versions of the user interface](inventory-visibility-ui-version-2.md): UI version 1 and UI version 2. Each version uses a different and independent collection of configuration settings. Therefore, you must choose which version to use.
 
 When you're setting up data sources, UI version 2 differs from UI version 1 in the following ways:
 
@@ -47,13 +47,13 @@ When you're setting up data sources, UI version 2 differs from UI version 1 in t
 
 ## <a name="data-source-configuration"></a>Add data sources (data source names)
 
-Each data source represents a system that your data comes from. Example data source names include *fno* (which corresponds to Dynamics 365 Supply Chain Management) and *pos* (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (*fno*) in Inventory Visibility.
+Each data source represents a system that provides your data. Example data source names include *fno* (which corresponds to Dynamics 365 Supply Chain Management) and *pos* (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (*fno*) in Inventory Visibility.
 
 > [!NOTE]
-> The *fno* data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you don't delete configurations that are related to *fno* in the data source.
+> The *fno* data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, don't delete configurations related to *fno* in the data source.
 
 > [!IMPORTANT]
-> When you add a data source, be sure to validate the data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
+> When you add a data source, be sure to validate the data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You can't modify these settings after you select **Update Configuration**.
 
 ### Add a data source in UI version 2
 
@@ -79,17 +79,17 @@ To add a data source in UI version 1, follow these steps:
 1. On the **Data Source** tab, select **New data source** to add a data source. Enter a name for the new data source (for example, *ecommerce* or another meaningful data source ID).
 
 > [!NOTE]
-> When you add a data source, be sure to validate the data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
+> When you add a data source, be sure to validate the data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You can't modify these settings after you select **Update Configuration**.
 
 ## <a name="data-source-configuration-dimension"></a>Dimensions (dimension mapping)
 
-The purpose of the dimension configuration is to standardize the multi-system integration for posting events and queries, based on dimension combinations. Inventory Visibility provides a list of base dimensions that can be mapped from the dimensions of your data source. Thirty-three dimensions are available for mapping.
+Dimension configuration standardizes multi-system integration for posting events and queries based on dimension combinations. Inventory Visibility provides a list of base dimensions that can be mapped from the dimensions of your data source. Thirty-three dimensions are available for mapping.
 
 - If you're using Supply Chain Management as one of your data sources, 13 dimensions are already mapped to the Supply Chain Management standard dimensions by default. The other 12 dimensions (*inventDimension1* through *inventDimension12*) are also mapped to custom dimensions in Supply Chain Management. The remaining eight dimensions (*ExtendedDimension1* through *ExtendedDimension8*) are extended dimensions that you can map to external data sources.
 - If you don't use Supply Chain Management as one of your data sources, you can freely map the dimensions. The following table shows the full list of available dimensions.
 
 > [!NOTE]
-> If you use Supply Chain Management, and you change the default dimension mappings between Supply Chain Management and Inventory Visibility, the changed dimension won't sync data. Therefore, if your dimension isn't on the default dimension list, and you're using an external data source, we recommend that you use *ExtendedDimension1* through *ExtendedDimension8* to do the mapping.
+> If you use Supply Chain Management, and you change the default dimension mappings between Supply Chain Management and Inventory Visibility, the changed dimension doesn't sync data. Therefore, if your dimension isn't on the default dimension list and you're using an external data source, use *ExtendedDimension1* through *ExtendedDimension8* for the mapping.
 
 | Dimension type | Base dimension |
 |---|---|
@@ -125,7 +125,7 @@ External systems can access Inventory Visibility through its RESTful APIs. For t
 | *MyDimension1* | *ExtendedDimension1* |
 | *MyDimension2* | *ExtendedDimension2* |
 
-By configuring a dimension mapping, you can send the external dimensions directly to Inventory Visibility. Inventory Visibility will then automatically convert external dimensions to base dimensions.
+By configuring a dimension mapping, you can send the external dimensions directly to Inventory Visibility. Inventory Visibility then automatically converts external dimensions to base dimensions.
 
 ### Add dimension mappings in UI version 2
 
@@ -166,7 +166,7 @@ To add a dimension mapping in UI version 1, follow these steps:
 
 When a data source posts an inventory change to Inventory Visibility, it posts that change by using *physical measures*. Physical measures modify the quantity and reflect the inventory status. You can define your own physical measures based on your requirements. Queries can be based on the physical measures.
 
-Inventory Visibility provides a list of default physical measures that are mapped to Supply Chain Management (the *fno* data source). These default physical measures are taken from the inventory transaction statuses on the **On-hand list** page in Supply Chain Management (**Inventory Management** \> **Inquiries and Report** \> **On-hand list**). The following table provides an example of physical measures.
+Inventory Visibility provides a list of default physical measures that are mapped to Supply Chain Management (the *fno* data source). These default physical measures are taken from the inventory transaction statuses on the **On-hand list** page in Supply Chain Management (**Inventory Management** > **Inquiries and Report** > **On-hand list**). The following table provides an example of physical measures.
 
 | Physical measure name | Description |
 |---|---|
@@ -224,14 +224,14 @@ To add a physical measure in UI version 1, follow these steps:
 
 If you're using external data sources, you can take advantage of the extensibility that the solution offers by creating [class extensions](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) for the `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` classes.
 
-Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to the "Dimensions" section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
+Synchronize with the database after creating the extensions so that the custom fields are added to the `InventSum` table. You can then refer to the "Dimensions" section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
 
 > [!NOTE]
 > For additional details about creating extensions, see [Extensibility home page](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ## Calculated measures
 
-You can use Inventory Visibility to query on both inventory physical measures and *custom calculated measures*. Calculated measures provide a customized computation formula that consists of a combination of physical measures. This functionality lets you define a set of physical measures that will be added, and/or a set of physical measures that will be subtracted, to form the customized measurement.
+Inventory Visibility lets you query both inventory physical measures and *custom calculated measures*. Calculated measures provide a customized computation formula that consists of a combination of physical measures. This functionality lets you define a set of physical measures that are added, and/or a set of physical measures that are subtracted, to form the customized measurement.
 
 > [!IMPORTANT]
 > A calculated measure is a composition of physical measures. Its formula can include only physical measures without duplicates, not calculated measures.
@@ -287,7 +287,7 @@ To add a calculated measure in UI version 1, follow these steps:
     - **Measure** – Select the name of the measure (from the selected data source) that provides the value for the modifier.
 
 1. Select **Save measure** to save your settings so far.
-1. If you must add another modifier line, select **Add** to add a row, and then set the fields as you did for the first row. When you've finished, select the **Save** link for the row.
+1. If you must add another modifier line, select **Add** to add a row, and then set the fields as you did for the first row. When you finish, select the **Save** link for the row.
 1. Repeat the previous step until you've added all the required modifiers and completed the formula for your calculated measure.
 1. Select **Save**.
 
@@ -331,7 +331,7 @@ Without calculated measures, when you query for product D0002 (Cabinet) under si
 ]
 ```
 
-You then configure a calculated measure that's named `MyCustomAvailableforReservation`, as shown in the following table. This calculated measure will be consumed by the consumption system.
+You then configure a calculated measure that's named `MyCustomAvailableforReservation`, as shown in the following table. This calculated measure is consumed by the consumption system.
 
 | Consumption system | Calculated measure | Data source | Physical measure | Calculation type |
 |---|---|---|---|---|
@@ -345,7 +345,7 @@ You then configure a calculated measure that's named `MyCustomAvailableforReserv
 | `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `issued` | `Subtraction` |
 | `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `reserved` | `Subtraction` |
 
-When this computation formula is used, the new query result will include the customized measurement.
+When you use this computation formula, the new query result includes the customized measurement.
 
 ```json
 [
@@ -384,10 +384,10 @@ The `MyCustomAvailableforReservation` output, based on the calculation setting i
 
 ## <a name="default-configuration-sample"></a>The default data source configuration
 
-This section provides details about the default data source configuration that's set up when you install Inventory Visibility. You can modify this configuration as you require.
+This section provides details about the default data source configuration that's set up when you install Inventory Visibility. You can modify this configuration as needed.
 
 > [!IMPORTANT]
-> The default configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with an outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on an outdated default configuration, it might encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, we recommend thoroughly reviewing and updating your draft and runtime configurations before transitioning your production environment.
+> The default configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with an outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on an outdated default configuration, it might encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, thoroughly review and update your draft and runtime configurations before transitioning your production environment.
 
 ### Data source configuration
 

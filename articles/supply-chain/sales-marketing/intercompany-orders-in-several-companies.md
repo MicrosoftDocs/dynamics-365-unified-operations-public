@@ -4,7 +4,7 @@ description: Learn how to create intercompany purchase orders or sales orders in
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: concept-article
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.reviewer: kamaybac
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ---

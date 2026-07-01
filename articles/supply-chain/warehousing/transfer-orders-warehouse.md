@@ -4,7 +4,7 @@ description: Learn how you can set up warehouses for transfer orders, including 
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/28/2026
+ms.date: 05/28/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac 
 ms.search.form: InventLocation,CustVendTransportPoint2Point

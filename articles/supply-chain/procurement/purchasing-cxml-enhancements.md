@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 ms.topic: how-to
-ms.date: 5/4/2026
+ms.date: 05/04/2026
 ms.custom:
   - bap-template
   - sfi-image-nochange

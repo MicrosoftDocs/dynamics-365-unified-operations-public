@@ -4,7 +4,7 @@ description: Product configuration models let you build a generic product struct
 author: sgmsft
 ms.author: shwgarg
 ms.topic: overview
-ms.date: 5/5/2026
+ms.date: 05/05/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.collection: get-started
@@ -31,7 +31,5 @@ Product configuration models are created to represent a generic product structur
 | User requirements | User requirements represent an abstraction between user requirements and specific components and attributes. You can't map a user requirement to an item. For example, a customer is shopping for a home theater system. The sales representative might ask about the size of the room where the customer plans to install the system, to determine how many watts are required. In this example, the room size can be a user requirement that helps determine the appropriate attribute value for a specific component. You can hide user requirements so that they aren't displayed to the user during a configuration session. Attributes, subcomponents, and user requirements that are related to the user requirement are also hidden. You can write a condition to control whether a user requirement can be hidden. You must write the condition by using Optimization Modeling Language (OML) syntax. |
 | BOM lines | BOM lines represent the individual materials of the components in the product configuration model. On the **BOM line details** page, all items are available for selection. A condition can be added to the BOM line, so that the BOM lines that are selected for a distinct product variant can vary, based on the user's selection when the product configuration model is set up. Conditions are expressions that must be met for attributes, BOM lines, and route operations to be included in a product configuration model. On the **BOM line details** page, you can select a distinct value. Alternatively, you can map to an attribute that the value is selected for when the product configuration model is set up. |
 | Route operations | On the **Route operation details** page, you can select a distinct value. Alternatively, you can map to an attribute that the value is selected for when the product configuration model is set up. Conditions are written like expression constraints. Conditions are expressions that must be met for attributes, BOM lines, and route operations to be included in a product configuration model. |
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

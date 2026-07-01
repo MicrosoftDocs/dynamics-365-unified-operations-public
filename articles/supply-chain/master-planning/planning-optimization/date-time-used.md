@@ -4,7 +4,7 @@ description: Learn about the date and time parameters that Planning Optimization
 author: Henrikan
 ms.author: henrikan
 ms.topic: article
-ms.date: 5/5/2026
+ms.date: 05/05/2026
 ms.reviewer: kamaybac
 ---
 

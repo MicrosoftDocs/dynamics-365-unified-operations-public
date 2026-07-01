@@ -4,7 +4,7 @@ description: Learn how to set up cost rules for various inbound voyage levels. B
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 5/19/2026
+ms.date: 05/19/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac

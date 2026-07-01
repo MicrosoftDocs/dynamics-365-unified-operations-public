@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -21,7 +21,7 @@ The Inventory Visibility app offers two versions of a model-driven user experien
 
 ## Prerequisites
 
-Before you can use UI version 2 to work with the Inventory Visibility app, the following prerequisites must be in place:
+To use UI version 2 with the Inventory Visibility app, complete the following prerequisites:
 
 - [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 - [Turn on Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md). 
@@ -54,7 +54,7 @@ To obtain your service endpoint and runtime configuration, follow these steps:
 
 1. On the [UI version 2](#ui-version) navigation pane, select **Admin settings**.
 1. On the **Show service details** tile, select **Manage**.
-1. In the dialog box, you can find your service endpoint and configuration details.
+1. In the dialog box, find your service endpoint and configuration details.
 
 ## <a name="update-configuration"></a>Update the configuration
 
@@ -74,16 +74,16 @@ Any time that you modify the configuration and save your changes, the system sav
 Inventory Visibility can distribute and store inventory data in either of the following ways:
 
 - *By location* – Choose this option if you always know site and warehouse information when you make on-hand queries, inventory adjustments, inventory reservations or inventory allocations through Inventory Visibility.
-- *By product ID* – Choose this option if you often don't know site or warehouse information when calling Inventory Visibility. For example, when making e-commerce in-basket reservations, the fulfillment warehouse might be unknown when online orders are initially placed. In this case, it's important to be able to call Inventory Visibility to query on-hand inventory and make reservations without providing warehouse information.
+- *By product ID* – Choose this option if you often don't know site or warehouse information when calling Inventory Visibility. For example, when making e-commerce in-basket reservations, the fulfillment warehouse might be unknown when online orders are initially placed. In this case, you need to call Inventory Visibility to query on-hand inventory and make reservations without providing warehouse information.
 
 To change the data partition rule, follow these steps:
 
 1. Open the Inventory Visibility app
 1. Select **Data partition rule** and choose the rule you want to use.
 1. [Clear all inventory data](#delete-data).
-1. [Update the configuration](#update-configuration) to apply your changes. (The update-configuration operation will fail if you don't clear the data first.)
+1. [Update the configuration](#update-configuration) to apply your changes. (The update-configuration operation fails if you don't clear the data first.)
 
-The data partition rule controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. Therefore, we recommend using the *By product ID* option if you often query across different locations. However, we recommend using the *By location* option if you more often query for multiple products at the same location.
+The data partition rule controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. Use the *By product ID* option if you often query across different locations. However, use the *By location* option if you more often query for multiple products at the same location.
 
 When using the *By location* partition rule, the rule in the following table is included in the solution by default and can't be changed (this becomes set 0 of the index hierarchy). When using *By product ID*, the rule has no effect on Inventory Visibility APIs.
 
@@ -194,7 +194,7 @@ By default, all these features are disabled. To turn a feature on or off, and to
 1. On the [UI version 2](#ui-version) navigation pane, select **Feature management**.
 1. Find the tile for the feature that you want to turn on or off, and then select **Manage**.
 1. Turn on and set up the feature as you require. Each feature provides different settings. For more information, see the documentation for the feature that you're setting up.
-1. [Update the configuration](#update-configuration) to commit your changes so that they take effect.
+1. [Update the configuration](#update-configuration) to commit your changes.
 
 ## Delete all configurations
 
@@ -204,9 +204,9 @@ If necessary, you can delete all configurations except those in the *fno* and *@
 1. On the **Delete all configurations** tile, select **Manage**.
 1. You're prompted to confirm the deletion. Select **OK** to continue.
 
-## <a name="delete-data"></a> Delete all inventory data
+## <a name="delete-data"></a>Delete all inventory data
 
-If necessary, you can delete all Inventory Visibility data, except configurations, in both the cache and Dataverse. Deleted data can't be restored, and users are blocked until deletion is completed.
+If necessary, you can delete all Inventory Visibility data, except configurations, in both the cache and Dataverse. Deleted data can't be restored, and users are blocked until deletion completes.
 
 1. On the [UI version 2](#ui-version) navigation pane, select **Admin Settings**.
 1. On the **Delete all inventory data** tile, select **Manage**.
@@ -261,7 +261,7 @@ Use the **Inventory Adjustment** page in the **Operational visibility** group to
 Use the **Soft reserve** page in the **Operational visibility** group to make soft reservations of inventory.
 
 > [!IMPORTANT]
-> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. Learn more in [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
+> Use the capability to make soft reservations through the user interface only to test the feature. Every soft reservation request must be associated with a transaction order line change (create, modify, delete, and so on). Therefore, make only soft reservations that are linked to back-end orders. Learn more in [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
 
 Follow these steps to set up and submit a soft reservation.
 
@@ -282,7 +282,7 @@ Use the **Post on hand change schedule** page in the **Operational visibility** 
 
 1. On the [UI version 2](#ui-version) navigation pane, select **Change schedule**.
 1. In the **Product** section, enter the dimension values of the products that you want to update.
-1. In the **Change schedule measure, quantity and date** section, sect **Add** to specify the date, data source, physical measure, and quantity for the change.
+1. In the **Change schedule measure, quantity and date** section, select **Add** to specify the date, data source, physical measure, and quantity for the change.
 1. Select **Post** on the toolbar to send the request.
 
 ## Search for products in the Inventory Visibility app

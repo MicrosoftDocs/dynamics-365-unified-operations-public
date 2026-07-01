@@ -4,7 +4,7 @@ description: Learn how to run the master planning setup wizard to set up master 
 author: Henrikan
 ms.author: henrikan
 ms.topic: install-set-up-deploy
-ms.date: 5/29/2026
+ms.date: 05/29/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac 
 ms.search.form: ReqCreatePlanWorkspace

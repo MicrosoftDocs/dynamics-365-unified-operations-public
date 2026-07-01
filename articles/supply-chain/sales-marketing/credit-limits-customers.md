@@ -4,7 +4,7 @@ description: Access an overview of how credit limits work in Dynamics 365 Supply
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 4/21/2026
+ms.date: 04/21/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: CustParameters

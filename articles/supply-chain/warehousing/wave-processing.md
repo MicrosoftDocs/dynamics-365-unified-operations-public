@@ -4,7 +4,7 @@ description: Learn how to create, process, and release a wave to create picking 
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 4/27/2026
+ms.date: 04/27/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac

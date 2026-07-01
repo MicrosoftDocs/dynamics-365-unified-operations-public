@@ -4,7 +4,7 @@ description: Learn about the Budget analysis report, which is used to generate a
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 01/03/2025
+ms.date: 06/30/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -19,17 +19,17 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include[banner](../includes/banner.md)]
 
-You can use the **Budget analysis** report to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity during a period that you specify. For each account, the report lists budgeted amounts, actual expenses or revenue, encumbrance amounts from purchase orders, and pre-encumbrance amounts from purchase requisitions. Additionally, the report lists the remaining budget amount for each account and fund.
+Use the **Budget analysis** report to create a summarized report that compares budgeted amounts to actual expenses and revenue activity during a period that you specify. For each account, the report lists budgeted amounts, actual expenses or revenue, encumbrance amounts from purchase orders, and preencumbrance amounts from purchase requisitions. The report also lists the remaining budget amount for each account and fund.
 
 The report can be sorted by fund and then account number. Within each fund, the report shows subtotals, based on the financial dimension set that you selected to group by. When you use the navigation pane to review activity, the grouping determines how activity is shown there.
 
 The report includes all accounts that have activity in the date range for either revenue or expenditure account types. Any account marked as a **Profit and Loss** account type won't be included in the report. The report also doesn't include net totals (net totals are calculated as revenue minus expenses).
 
-To view more information about an account, select the account name or number to open the **Budget analysis inquiry** page. You can view all the transactions that contribute to the amount on the report. To view the transactions, you can show drill-down report links on the report. Select a link to open a drill-down report that has transaction details for revised budget, actual expenses or revenue, encumbrances, or pre-encumbrances. The drill-down reports can optionally include pending transactions.
+To view more information about an account, select the account name or number to open the **Budget analysis inquiry** page. You can view all the transactions that contribute to the amount on the report. To view the transactions, you can show drill-down report links on the report. Select a link to open a drill-down report that has transaction details for revised budget, actual expenses or revenue, encumbrances, or preencumbrances. The drill-down reports can optionally include pending transactions.
 
 ## Filter the data on this report
 
-When you generate the report, the following default parameters are shown. You can use these parameters to filter the data that appears on the report. 
+When you generate the report, you see the following default parameters. Use these parameters to filter the data that appears on the report.
 
 | Field | Description |
 |---|---|
@@ -37,10 +37,10 @@ When you generate the report, the following default parameters are shown. You ca
 | Budget model | Select the budget model to report budget amounts from. |
 | Budget cycle time span | Specify the budget cycle to create the report for. |
 | Account type | Specify whether budget and actual amounts should be reported for expense accounts or revenue accounts. By default, expense accounts are reported on. If you change the account type after you select accounts or enter a selection query, you must select a new group of accounts in the **Main accounts** fields and select **Select** to enter a new query. |
-| Group main accounts by category | Select this check box to group accounts by main account category after they are grouped by financial dimensions in a ledger account. The lowest level of grouping is shown, regardless of the financial dimension that you selected. The main account categories are sorted by their alphanumeric codes. All accounts that aren't assigned to a main account category are grouped at the end. You set up main account categories by using the **Main account categories** page. |
+| Group main accounts by category | Select this check box to group accounts by main account category after they're grouped by financial dimensions in a ledger account. The report shows the lowest level of grouping, regardless of the financial dimension that you selected. The main account categories are sorted by their alphanumeric codes. All accounts that aren't assigned to a main account category are grouped at the end. Set up main account categories by using the **Main account categories** page. |
 | Suppress accounts with zeroes | Select this check box to show only accounts that have non-zero actual and budget amounts. |
-| Show drilldown report links | Select this check box to show links that can be used to open a drill-down report that has transaction details for revised budget, actual expenses or revenue, encumbrances, or pre-encumbrances. |
-| Show pending transactions in drilldown reports | If the **Show drilldown report links** check box is selected, you can select this check box to include pending transaction details on a drill-down report for revised budget, actual expenses or revenue, encumbrances, or pre-encumbrances.<blockquote> **NOTE:**  If you select this check box, the balances that are shown might differ from the amounts that are shown on the **Budget analysis** report. |
+| Show drilldown report links | Select this check box to show links that you can use to open a drill-down report that has transaction details for revised budget, actual expenses or revenue, encumbrances, or preencumbrances. |
+| Show pending transactions in drilldown reports | If the **Show drilldown report links** check box is selected, you can select this check box to include pending transaction details on a drill-down report for revised budget, actual expenses or revenue, encumbrances, or preencumbrances.<blockquote> **NOTE:**  If you select this check box, the balances that are shown might differ from the amounts that are shown on the **Budget analysis** report. |
 | Dates to include | Specify whether amounts should be reported for a whole budget cycle or a range of dates. When you run this report for a previous year, the year-to-date (YTD) columns are suppressed.<br>- If you select **Budget cycle**, select the name of a budget cycle. This option uses the dates that were set up for the selected budget cycle on the **Budget cycle time spans** page.<br>- If you select **Date range**, select the start and end dates for the budget and actual entries that should be included on the report. You can enter different ranges for the budget amounts and actual amounts. For example, if your organization budgets biennially, you can report budget amounts for a two-year date range, but include only the current year of actual expenditure or revenue amounts. **NOTE:**  The date range that you specify must be in one or more of the fiscal years that are included in the fiscal calendar that was selected when the budget cycle time span was set up. For example, a fiscal calendar for a budget cycle includes fiscal years that have dates from January 1, 2010, to December 31, 2014. In this case, the "from" date can't be before January 1, 2010.<br> |
 | Budget | Specify the date range for the budget entries that should be included on the report. |
 | Actuals | Specify the date range for the actual entries that should be included on the report. |
@@ -54,20 +54,20 @@ The report includes the following information:
 
 - Account number
 - Account name
-- Revised budget (= Original budget + Budget adjustments)
+- Revised budget (original budget plus budget adjustments)
 - Current actuals (for either revenue or expenditures, depending on the account type)
 - Current percentage of budget (actuals/revised budget)
-- YTD actuals (Only posted transactions for the current year are considered.)
-- Encumbrances (Only posted transactions for the current year are considered.)
-- Pre-encumbrances (Only posted transactions for the current year are considered.)
-- Budget remaining (= Original budget + Budget adjustments – Actuals – Encumbrances – Pre-encumbrances) (Only posted transactions are considered in this calculation.)
+- YTD actuals (only posted transactions for the current year are considered)
+- Encumbrances (only posted transactions for the current year are considered)
+- Preencumbrances (only posted transactions for the current year are considered)
+- Budget remaining (original budget plus budget adjustments, minus actuals, encumbrances, and preencumbrances; only posted transactions are considered in this calculation)
 - YTD percentage of budget remaining (= Budget remaining ÷ Revised budget) (Only posted transactions for the current year are considered in this calculation.)
 
-The report also includes totals for each fund, department, and main account category, if they are included.
+The report also includes totals for each fund, department, and main account category, if you include them.
 
-The drill-down report includes the following information:
+The drilldown report includes the following information:
 
-- Name of the category for drill-down: revised budget, actual expense or revenue, YTD encumbrances, or YTD pre-encumbrances
+- Name of the category for drilldown: revised budget, actual expense or revenue, YTD encumbrances, or YTD preencumbrances
 - Name of the legal entity
 - Ledger account number
 - Date of the transaction
@@ -76,8 +76,7 @@ The drill-down report includes the following information:
 - Description of the voucher transaction date
 - Voucher details
 - Debit and credit details for the actuals voucher
-- Positive and negative amounts for the budget, encumbrance, and pre-encumbrance voucher
+- Positive and negative amounts for the budget, encumbrance, and preencumbrance voucher
 - Opening, closing, and running balances for the ledger account
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

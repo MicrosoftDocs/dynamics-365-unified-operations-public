@@ -4,7 +4,7 @@ description: Learn how to automate the containerization of loads, which create c
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/5/2026
+ms.date: 05/05/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac

@@ -4,7 +4,7 @@ description: Learn how to configure data inquiry mobile device menu items and us
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 ---

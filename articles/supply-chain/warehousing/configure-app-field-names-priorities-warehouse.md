@@ -4,7 +4,7 @@ description: Learn how to define and configure names and priorities of fields sh
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 5/20/2026
+ms.date: 05/20/2026
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980

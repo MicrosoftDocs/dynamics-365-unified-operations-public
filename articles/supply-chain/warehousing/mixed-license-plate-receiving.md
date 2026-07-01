@@ -4,7 +4,7 @@ description: Learn how to use mixed license plate receiving to register and crea
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/22/2026
+ms.date: 05/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:  WHSMixedLPReceiving, WHSRFAutoConfirm, WHSLicensePlate, WHSRFMenuItem, WHSDeferredReceivingPolicy

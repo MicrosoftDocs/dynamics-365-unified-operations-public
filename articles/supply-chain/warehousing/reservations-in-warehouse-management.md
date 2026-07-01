@@ -1,12 +1,12 @@
 ---
 title: Reservations in Warehouse management
-description: Learn about the functionality for reservations in Warehouse management
+description: Learn about reservations in Warehouse management, including reservation hierarchies, flexible warehouse operations, and how reservations are implemented.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSReservationHierarchy, WHSParameters, PdsDispositionMaster
 ms.topic: how-to
-ms.date: 06/02/2026
+ms.date: 06/22/2026
 ms.custom:
   - bap-template
 ---
@@ -55,7 +55,7 @@ Based on the reservation hierarchy, you can make reservations on different level
 
 Here are some examples:
 
-- You make a reservation only on the site level. In this case, inventory blocking can be used to block a quantity of an item on a given site.
+- You make a reservation only on the site level. In this case, you can use inventory blocking to block a quantity of an item on a given site.
 - You make reservations for a sales order that you created on site 4 and warehouse 42, and for the *Available* inventory status. Warehouse 42 is enabled for WMS. In this case, the reservation is made only on the inventory status level.
 
 ## Impact of the reservation hierarchy setup
@@ -68,7 +68,7 @@ When you set up a reservation hierarchy, the key is to determine which dimension
 |---|---|
 | Dimensions above location | <p>You must determine the inventory dimensions above the location level before you can use the Warehouse management functionality. Typically, workers make this determination during order processing, or they let the reservation system make it.</p><p>If a dimension is above the location level, warehouse workers can't change it, because it's considered a strict picking requirement. For example, if the Batch number dimension is above the location level, a worker can't pick a batch that differs from the one that they were instructed to pick.</p> |
 | Batch above location | Process industry functionality for batches requires that the Batch number dimension is above the Location dimension in the reservation hierarchy. In this case, all functionality for first expiry, first out (FEFO), same batch reservation, batch disposition codes, and batch attributes is supported. |
-| Dimensions below location | <p>Both the system and warehouse workers can determine the Location dimension and the dimensions below it.</p><p>You shouldn't enter the Location dimension and any dimensions below it on sales and transfer lines if you expect work to be created. For example, if the Batch number dimension is below the Location dimension, it shouldn't be specified on the sales line. Otherwise, WMS can't create work to carry out the pick and pack operations.</p> |
+| Dimensions below location | <p>Both the system and warehouse workers can determine the Location dimension and the dimensions below it.</p><p>Don't enter the Location dimension and any dimensions below it on sales and transfer lines if you expect work to be created. For example, if the Batch number dimension is below the Location dimension, don't specify it on the sales line. Otherwise, WMS can't create work to carry out the pick and pack operations.</p> |
 
 ## On-hand representation and calculations
 
@@ -207,7 +207,7 @@ Items enabled for warehouse management processes (WMS) can be stocked non-WMS-en
 
 To control this behavior, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 1. Open the **General** tab.
 1. Expand the **Batches** FastTab.
 1. Set **Batch reservation policy for non advanced warehouses** to one of the following values:

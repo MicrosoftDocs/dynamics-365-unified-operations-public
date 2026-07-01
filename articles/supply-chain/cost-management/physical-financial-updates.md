@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventTrans, InventTransVoucher
 ms.topic: article
-ms.date: 5/28/2026
+ms.date: 05/28/2026
 ms.custom: 
   - bap-template
 ---

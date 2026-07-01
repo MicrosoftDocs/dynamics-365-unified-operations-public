@@ -1,12 +1,12 @@
 ---
 title: Integrate with Icertis for Microsoft Dynamics 365 Supply Chain Management
-description: Learn how to integrate with the Icertis contract lifecycle management (CLM) system.
+description: Learn how to integrate Dynamics 365 Supply Chain Management with the Icertis contract lifecycle management (CLM) system for procurement workflows.
 author: ShriramSivasankaran
 ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/25/2024
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -26,12 +26,12 @@ You can learn more about the solution on the [Icertis for Microsoft Dynamics 365
 
 ## Capabilities
 
-Supply Chain Management provides functionality that organizations can use to streamline and automate their source-to-pay processes. Icertis for Microsoft Dynamics 365 Supply Chain Management enhances this functionality by integrating capabilities for contract authoring, assembly, redlining, and analytics. This integration supports the following workflows:
+Supply Chain Management provides functionality that streamlines and automates source-to-pay processes for organizations. Icertis for Microsoft Dynamics 365 Supply Chain Management enhances this functionality by integrating capabilities for contract authoring, assembly, redlining, and analytics. This integration supports the following workflows:
 
-- **Contract authoring** – Create procurement contracts and non-disclosure agreements (NDAs) by using configured attributes, templates, clauses, master data, and rules. You can use seeded configurations to get started right away, but configurations are always tailored to the needs of your business.
-- **Reviews and negotiations** – Use preapproved legal templates and playbooks to review, redline, and approve contracts. After contract are approved, you can seamlessly send them for digital signature.
-- **Post-execution workflows** – After a contract is executed, an associated purchase agreement is created in Supply Chain Management. The purchase agreement is created in an activated state, so that it can be used for operational purposes such as creating a release order and invoicing.
-- **Update contracts** – You can amend an executed contract by using the same safeguards that are applied when new contracts are drafted. Additionally, contracts can be seamlessly terminated. In this case, the required due processes are followed.
+- **Contract authoring** – Create procurement contracts and non-disclosure agreements (NDAs) by using configured attributes, templates, clauses, master data, and rules. Use seeded configurations to get started right away, but tailor configurations to your business needs.
+- **Reviews and negotiations** – Use preapproved legal templates and playbooks to review, redline, and approve contracts. After contracts are approved, you can seamlessly send them for digital signature.
+- **Post-execution workflows** – After a contract is executed, an associated purchase agreement is created in Supply Chain Management. The purchase agreement is created in an activated state for operational purposes such as creating release orders and invoicing.
+- **Update contracts** – You can amend an executed contract by using the same safeguards that apply when new contracts are drafted. Additionally, contracts can be seamlessly terminated. In this case, the required due processes are followed.
 - **Risk Assessment Copilot** – Risk Assessment Copilot significantly accelerates the contract review process. At the same time, it helps reduce risk by using AI to compare contract terms to a company's predefined risk parameters, based on the contract type.
 - **Pre-seeded information** – Icertis for Microsoft Dynamics 365 Supply Chain Management includes extensive pre-seeded attributes and entities. Therefore, you can benefit from the integration without having to spend lots of time on implementation.
 
@@ -69,7 +69,7 @@ The following illustration shows the contract workflow between the two applicati
 
 Icertis for Microsoft Dynamics 365 Supply Chain Management offers an embedded experience in Supply Chain Management. This integration lets you take advantage of the robust CLM capabilities of Icertis to create and manage NDAs.
 
-After you decide to transact business with a vendor, you can seamlessly initiate the creation of an NDA from Supply Chain Management. The embedded Icertis experience lets you perform the following actions:
+After you decide to transact business with a vendor, you can initiate the creation of an NDA from Supply Chain Management. The embedded Icertis experience lets you perform the following actions:
 
 - Specify effective dates, expiry dates, signature types, signatory details, and other details. The statuses of Icertis procurement contracts and their corresponding Supply Chain Management purchase agreements are regularly synced.
 - Use a system-provided template, review details, and create and publish the contract.
@@ -85,7 +85,7 @@ The following illustration shows the NDA workflow between the two applications.
 
 ### Amend and update agreements
 
-Icertis for Microsoft Dynamics 365 Supply Chain Management offers options that let you update or modify executed contracts. You can add line items, modify expiry dates, or terminate contracts. Updates to contracts can cause one of the following events:
+Icertis for Microsoft Dynamics 365 Supply Chain Management offers options that let you update or modify executed contracts. You can add line items, modify expiry dates, or terminate contracts. Updates to contracts can trigger one of the following events:
 
 - **Synchronize amendments** – The statuses of an Icertis procurement contract and the corresponding Supply Chain Management purchase agreements are regularly synced. Users can create amendments directly in Supply Chain Management. Contract managers can add an amendment to a signed or executed contract in Icertis. Downstream consumption then uses the revised information in Supply Chain Management.
 - **Termination of contract** – If an Icertis procurement contract is terminated in Icertis Contract Intelligence (ICI), the associated purchase agreement in Supply Chain Management system is automatically terminated.
@@ -93,13 +93,13 @@ Icertis for Microsoft Dynamics 365 Supply Chain Management offers options that l
 
 ### Integrate master data
 
-All the previously mentioned workflows are enabled through the integration of master data that stores less frequently changing data and business information. The master data entity is based on attributes and rules. It can be reused for the various organizations that you work with.
+The integration of master data that stores less frequently changing data and business information enables all the previously mentioned workflows. The master data entity is based on attributes and rules. It can be reused for the various organizations that you work with.
 
 ### Comprehensive pre-seeded information for seamless integration
 
 Icertis for Microsoft Dynamics 365 Supply Chain Management includes extensive pre-seeded attributes and entities. This pre-seeded information enables the application and integration to work seamlessly. It also lets users benefit from the integration after only minimal implementation time.
 
-If configuration of the pre-seeded attributes and entities is required, an administrator or an implementation team can do it.
+If the pre-seeded attributes and entities require configuration, an administrator or implementation team can configure them.
 
 The pre-seeded information includes the following elements:
 
@@ -114,7 +114,7 @@ The pre-seeded information includes the following elements:
 
 ### Risk Assessment Copilot
 
-You can enhance the integration by adding Risk Assessment Copilot, which is powered by the Icertis ExploreAI Service. Risk Assessment Copilot significantly accelerates the contract review process. At the same, it helps reduce risk by using AI to compare contract terms to a company's predefined risk parameters, based on the contract type.
+You can enhance the integration by adding Risk Assessment Copilot, which is powered by the Icertis ExploreAI Service. Risk Assessment Copilot significantly accelerates the contract review process. At the same time, it helps reduce risk by using AI to compare contract terms to a company's predefined risk parameters, based on the contract type.
 
 ## Benefits
 

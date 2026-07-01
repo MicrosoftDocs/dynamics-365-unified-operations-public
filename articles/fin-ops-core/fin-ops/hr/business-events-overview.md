@@ -4,7 +4,7 @@ description: Learn about human resources business events, including prerequisite
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 09/03/2025
+ms.date: 06/25/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -19,25 +19,25 @@ ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 
 Business events provide a mechanism that enables external systems to receive notifications from finance and operations apps. In this way, the systems can perform business actions in response to the business events.
 
-Business events occur when a business process is run. During a business process, users perform business actions to complete the tasks that make up that business process.
+Business events occur when a business process runs. During a business process, users perform business actions to complete the tasks that make up that business process.
 
 A business action that a user performs can be either a workflow action or a non-workflow action. Approval of a purchase requisition is an example of a workflow action, whereas confirmation of a purchase order is an example of a non-workflow action. Both types of actions can generate business events that external systems can use in integration and notification scenarios.
 
 ## Prerequisites
 
-Business events can be consumed by using Microsoft Power Automate and Azure messaging services. Therefore, customers must bring their subscriptions to those assets to use business events.
+You can consume business events by using Microsoft Power Automate and Azure messaging services. Therefore, you must bring your subscriptions to those assets to use business events.
 
 For more information about business events, see [Business events overview](../../dev-itpro/business-events/home-page.md).
 
 ## Human resources business event catalog
 
-You can find the business event catalog by going to **System administration \> Set up \> Business events** and filter the category column to Human Resources. The business event catalog lists the business events that are available in the instance that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
+You can find the business event catalog by going to **System administration \> Set up \> Business events** and filtering the category column to Human Resources. The business event catalog lists the business events that are available in the instance that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
 
 The category of a business event identifies its source. Business events that originate from a workflow are assigned to the **Workflow** category. For business events that originate from other modules, the module name is used as the category name.
 
-The business event catalog is built during database synchronization at the time of deployment. Users should see the complete list of business events in the catalog. If an explicit update of the catalog is required, go to **Manage \> Rebuild business events catalog**.
+The business event catalog is built during database synchronization at the time of deployment. Users see the complete list of business events in the catalog. If an explicit update of the catalog is required, go to **Manage \> Rebuild business events catalog**.
 
-For each business event, the business event catalog shows a description. This description helps you better understand the business event and its context in the business process. The catalog also shows the list of data fields that are sent out in the event. 
+For each business event, the business event catalog shows a description. This description helps you better understand the business event and its context in the business process. The catalog also shows the list of data fields that are sent out in the event.
 
 In scenarios where external integration systems require the schema of the payload for a business event during development, select **Download schema** to download the JavaScript Object Notation (JSON) schema.
 
@@ -45,7 +45,7 @@ In summary, the business event catalog helps identify the business events that a
 
 For more information about business events such as activation, performance, and errors, see [Business events overview](../../dev-itpro/business-events/home-page.md#activating-business-events) and [Business event consumption models](../../dev-itpro/business-events/home-page.md#business-event-consumption-models).
 
-### Business events 
+### Business events
 
 - Personnel actions (position change)
 - Hire actions
@@ -53,7 +53,7 @@ For more information about business events such as activation, performance, and 
 - Leave request assigned
 - Leave request complete
 - Leave of absence return
-- Time off cancelled
+- Time off canceled
 - Course assignment
 - Course completion
 - Goal assignment
