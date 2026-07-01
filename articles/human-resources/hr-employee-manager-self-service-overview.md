@@ -4,7 +4,7 @@
 title: Employee self service overview
 description: This article provides an overview of the Employee self service workspace.
 author: twheeloc
-ms.date: 08/25/2025
+ms.date: 06/25/2026
 ms.topic: overview
 # optional metadata
 
@@ -26,23 +26,23 @@ ms.dyn365.ops.version: Human Resources
 
 # Employee self service overview
 
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article provides an overview of the **Employee self service** workspace.
 
-Employee self service is the perfect gateway for employees to view essential company information. The **Employee self service** workspace bridges the gap between employees and HR, allowing employees the freedom to access and manage their data, time-off, benefits, payroll, learning, and much more. Having a one-stop shop for employees saves time for both employees and HR. 
+Employee self service is the perfect gateway for employees to view essential company information. The **Employee self service** workspace bridges the gap between employees and HR, so employees can access and manage their data, time off, benefits, payroll, learning, and much more. Having a one-stop shop for employees saves time for both employees and HR.
 
-My information is separated into three sections: Summary, My career information, Additional information.  
+The **My information** section is separated into three sections: **Summary**, **My career information**, and **Additional information**.    
 
-### Summary 
+### Summary
+
 The **Summary** section is comprised of tiles to show the employee priority items such as work items assigned to me, Questionnaires assigned to me, Company directory, Team absence calendar.  
 
 **Work items assigned to me** displays all approvals and workflow items that are assigned to the employee. You can configure workflow items to send emails to the user.
 
 **Questionnaires assigned to me** displays all scheduled questionnaires assigned directly to the employee or group.
 
-**Company directory** lets employees look up information related to individuals in the organization. Public contact information is available to all employees. The company directory is restricted to the company that the employee has signed into.
+**Company directory** lets employees look up information related to individuals in the organization. All employees can access public contact information. The company directory is restricted to the company that the employee signs into.
 
 **Team calendar** shows your team's calendar information. For more information, see [View team and company calendars](hr-employee-self-service-calendar.md).
 
@@ -56,7 +56,7 @@ The **Tasks** tile displays tasks that are assigned to you and lets you view and
 
 The **Next registered course** tile displays the next course that you're registered for. You can view and register for any open courses. If a course has a status of **Open** and is marked for employee self-registration, employees can easily self-register for it when they drill into **View open courses**.
 
-> [!NOTE] 
+> [!NOTE]
 > If the **Course enhancements** feature is enabled, an employee's view shows a **Courses** card that includes courses that are overdue, courses that are due soon (within 10 days), and courses that are assigned. Employee can drill into assigned, open, and completed courses by selecting **View courses** on the **Courses** tile in **Employee self service**. For virtual courses only, employees can change the status to **Complete**.
 
 Depending on your organization's settings, your course registration might go through an approval process.
@@ -79,9 +79,8 @@ This section provides links to other **Employee self service** areas, similar to
 
 Sign up for benefits through the **Benefits** link. For more information about Benefits management, see [Benefits overview](hr-benefits-management-overview.md).
 
-Under **Performance**, you can select **Performance journal** to create performance journal entries to use on both performance goals and reviews. You can select **Send feedback** to provide feedback for other employees within your organization. Depending on your organization's settings, emails might be sent to the recipient, sender, and managers. You can send feedback to all employees within the organization. Sending feedback isn't restricted by company.
+Under **Performance**, select **Performance journal** to create performance journal entries to use on both performance goals and reviews. Select **Send feedback** to provide feedback for other employees within your organization. Depending on your organization's settings, the system might send emails to the recipient, sender, and managers. You can send feedback to all employees within the organization. Sending feedback isn't restricted by company.
 
 Under **Competencies**, you can make changes to **Courses**, **Education**, **Positions of trust**, and **Professional experience**. Depending on your organization's settings, updates to these competencies might go through an approval process.
 
 You can view job details under **Organization**. Job details include skills, certificates, and areas of responsibility for your primary position. You can also see any loaned equipment checked out to you. Depending on your organization's settings, changes to loaned equipment might go through an approval process.
-
