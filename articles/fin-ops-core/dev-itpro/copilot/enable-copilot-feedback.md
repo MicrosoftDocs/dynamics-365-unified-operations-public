@@ -47,7 +47,7 @@ To turn enhanced user feedback on or off at the tenant level, follow these steps
 1. On the **Tenant settings** page, configure the following settings:
 
     - **Copilot feedback** – This setting is on by default. It controls the ability of users to submit detailed feedback. Select it to open the **Copilot feedback** dialog box, set the option to *On* or *Off*, and then select **Save**.
-    - **Copilot data collection** – This setting is on by default. It controls the ability of users to attach more information (such as a conversation history) to their feedback. Select it to open the **Copilot data collection** dialog box, set the option to *On* or *Off*, and then select **Save**.
+    - **Additional Copilot feedback** – This setting is on by default. It controls the ability of users to attach more information (such as a conversation history) to their feedback. Select it to open the **Additional Copilot feedback** dialog box, set the option to *On* or *Off*, and then select **Save**.
 
 To turn enhanced user feedback on or off at the Dataverse organization level, follow these steps:
 
