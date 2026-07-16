@@ -2,7 +2,7 @@
 title: Customer search
 description: Learn about customer search capabilities in Microsoft Dynamics 365 Commerce.
 author: shajain
-ms.date: 06/08/2026
+ms.date: 07/16/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -40,22 +40,22 @@ To search globally, employees can select the **Filter results** button at the bo
 
 The customer ID isn't shown for customers queried from other legal entities, because those parties don't have a customer ID in the current company. However, if an employee opens the customer details page, the system automatically generates a customer ID for the party and also associates the store's customer address books with the customer. Therefore, the customer is visible in local store searches that are done later.
 
-:::image type="content" source="./media/Globalcustomersearch.png" alt-text="Screenshot of global customer search in POS.":::
+:::image type="content" source="./media/Globalcustomersearch.png" alt-text="Screenshot of global customer search in POS." lightbox="media/Globalcustomersearch.png":::
 
-## Additional local customer search capabilities
+## More local customer search capabilities
 
-When the user searches for a phone number, the system ignores special characters (such as spaces, hyphens, and brackets) that you might add when creating the customer. Therefore, cashiers don't need to worry about the phone number format when they search. For example, if a customer's phone number is entered as **123-456-7890**, a cashier can search for the customer by typing **1234567890**, or by entering the first few numbers of the phone number.
+When you search for a phone number, the system ignores special characters (such as spaces, hyphens, and brackets) that you might add when creating the customer. Therefore, cashiers don't need to worry about the phone number format when they search. For example, if a customer's phone number is entered as **123-456-7890**, a cashier can search for the customer by typing **1234567890**, or by entering the first few numbers of the phone number.
 
 > [!NOTE]
 > A customer can have multiple phone numbers and multiple emails. The customer search algorithm also searches through these secondary emails and phone numbers, but the customer search results page only displays the primary email and phone number. This limitation might cause some confusion, as the returned customer results don't show the searched email or phone number.
 
 The traditional customer search can be time-consuming, because it searches across multiple fields. Instead, cashiers can search in a single customer property, such as name, email address, or phone number. The properties that the customer search algorithm uses are collectively known as the *customer search criteria*. The system admin can easily configure one or more criteria as shortcuts that appear in POS. Because the search is limited to a single criterion, only the relevant search results are shown, and the performance is better than the performance of a standard customer search. The following illustration shows the customer search shortcuts in POS.
 
-:::image type="content" source="./media/SearchShortcutsPOS.png" alt-text="Screenshot of customer search shortcuts in POS.":::
+:::image type="content" source="./media/SearchShortcutsPOS.png" alt-text="Screenshot of customer search shortcuts in POS." lightbox="media/SearchShortcutsPOS.png":::
 
 To set search criteria as shortcuts, the admin must open the **Commerce parameters** page in Commerce, and then, on the **POS search criteria** tab, select all the criteria that should be shown as shortcuts.
 
-:::image type="content" source="./media/ConfigureShortcutsAX.png" alt-text="Screenshot of configuring search shortcuts in Commerce parameters.":::
+:::image type="content" source="./media/ConfigureShortcutsAX.png" alt-text="Screenshot of configuring search shortcuts in Commerce parameters." lightbox="media/ConfigureShortcutsAX.png":::
 
 > [!NOTE]
 > If you add too many shortcuts, the drop-down menu on the search bar in POS becomes cluttered, and the employee's search experience can be affected. Add only as many shortcuts as you require.
@@ -82,13 +82,13 @@ Public preview of the customer search capability using the Azure Cognitive Searc
 
 To enable the cloud-powered search feature in Commerce headquarters, follow these steps:
 
-1. Go to **System administration \> Workspaces \> Feature management**.
+1. Go to **System administration** > **Workspaces** > **Feature management**.
 1. Find and select the **(Preview) Cloud powered customer search** feature, and then select **Enable now**.
 1. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler** and select **OK** to display the new **1010_CustomerSearch** job on the **Distribution schedule** form.
-1. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule**.
+1. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
 1. Run the **1010_CustomerSearch** job. This job publishes the data to the Azure search index. When publishing of the index is completed, the status of the job is set to **Applied**.
 1. After the **1010_CustomerSearch** job status is **Applied**, run the **1110 - Global configuration** job to update the POS channels of the newly enabled feature in **Feature management**.
-1. After initialization completes, a recurring batch job is automatically generated for the **1010_CustomerSearch** job to send customer updates to the search index. We recommend that you start with a recurrence interval of 60 minutes for this job. If the job publishes new sessions faster than they can be processed, a backlog accumulates over time, and customer updates take longer to appear in the search index.
+1. After initialization completes, a recurring batch job automatically generates for the **1010_CustomerSearch** job to send customer updates to the search index. Start with a recurrence interval of 60 minutes for this job. If the job publishes new sessions faster than they can be processed, a backlog accumulates over time, and customer updates take longer to appear in the search index.
 
 > [!NOTE]
 > For the initial index publish, the **1010_CustomerSearch** job might take a few hours to complete as it sends all the customer records to the Azure search index. Subsequent updates typically take around 30 to 60 minutes, depending on your customer data volume (larger datasets take longer). When you enable the cloud-powered search feature but the index publishing isn't yet completed, the customer search from POS defaults to the existing SQL-based search. This default ensures that there are no interruptions to store operations.
@@ -97,18 +97,22 @@ To enable the cloud-powered search feature in Commerce headquarters, follow thes
 
 The following list shows how the cloud-powered customer search functionality differs from the existing search functionality.
 
-- When you run the **1010_CustomerSearch** job, it sends customers created and edited in Commerce headquarters to the Azure search index. These updates typically take around 30 to 60 minutes to reflect in the index, depending on your customer data volume (larger datasets take longer). After the index is updated, POS users can search for the new customers (or search based on updated information). If your business process requires that customers created in Commerce headquarters are immediately searchable in POS, this service might not be the right choice for you.
-- When you create new customers in POS, Commerce Scale Unit sends them to the Azure search index, so they're immediately searchable across any store. However, if you turn on the Async customer creation feature, new customer records aren't published to the Azure search index from the Commerce Scale Unit and aren't searchable from POS until the customer information syncs with Commerce headquarters and customer IDs are generated for Async customers. The **1010_CustomerSearch** job can then send the Async customer records to the Azure search index. The time before newly created Async customers can be searched on POS depends on two factors: how frequently the **1010_CustomerSearch**, **P-job**, and **Synchronize customers and business partners from async mode** jobs are scheduled to run, and how quickly each job can publish and apply its workload. When customer records are created faster than these jobs can publish and apply them, a backlog accumulates and the time to searchability increases accordingly.
+- When you run the **1010_CustomerSearch** job, it sends customers created and edited in Commerce headquarters to the Azure search index. These updates typically take around 30 to 60 minutes to reflect in the index, depending on your customer data volume (larger datasets take longer). After the index is updated, POS users can search for new customers (or search based on updated information). If your business process requires that customers created in Commerce headquarters are immediately searchable in POS, this service might not be the right choice for you.
+- When you create new customers in POS, Commerce Scale Unit sends them to the Azure search index, so they're immediately searchable across any store. However, if you turn on the Async customer creation feature, new customer records aren't published to the Azure search index from the Commerce Scale Unit and aren't searchable from POS until the customer information syncs with Commerce headquarters and customer IDs are generated for Async customers. The **1010_CustomerSearch** job can then send the Async customer records to the Azure search index. The time before newly created Async customers can be searched on POS depends on two factors:
+  - How frequently the **1010_CustomerSearch**, **P-job**, and **Synchronize customers and business partners from async mode** jobs are scheduled to run.
+  - How quickly each job can publish and apply its workload.
+  When customer records are created faster than these jobs can publish and apply them, a backlog accumulates and the time to searchability increases accordingly.
 - Cloud-powered search also searches for the secondary emails and phone numbers of customers, but currently customer search results only display the primary phone number and primary email address of customers. At first glance it might seem that irrelevant search results are returned, but checking the secondary email and phone number of a customer in search results can help verify if the searched-for keyword resulted in a customer match. To avoid such confusion, there are plans to improve the search results page to make it easy for users to understand why a search result was returned.
 - The requirement of searching by using at least four characters in a global search ("Search all stores") doesn't apply to this service.
 - The 1010_CustomerSearch job isn't automatically executed for customer records that you import from an external system. You must run the 1010_CustomerSearch job so that the imported customer records can be searched.
 
 > [!NOTE]
 > The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. The customer search capability isn't available in the following regions:
+>
 > - Brazil
 > - India
 
-## Additional resources
+## More resources
 
 [Product search and customer search in the point of sale (POS)](POS-search-improvements.md)
 
