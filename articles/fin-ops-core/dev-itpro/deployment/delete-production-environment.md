@@ -3,7 +3,7 @@ title: Delete a production finance and operations apps environment
 description: Learn about the process of deleting a production finance and operation apps environment by using a self-service experience.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 04/02/2026

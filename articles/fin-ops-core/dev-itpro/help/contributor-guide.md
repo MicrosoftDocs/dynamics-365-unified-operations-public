@@ -3,7 +3,7 @@ title: Contribute to the Help
 description: Learn about tips and tricks for working with the GitHub repos and Markdown files for finance and operations apps.
 author: edupont04
 ms.author: edupont
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/19/2025
 ms.reviewer: johnmichalak
 audience: IT Pro

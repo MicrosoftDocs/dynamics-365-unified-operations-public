@@ -6,7 +6,7 @@ ms.author: epegors
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/05/2026
+ms.date: 06/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2018-05-30
@@ -17,6 +17,8 @@ ms.dyn365.ops.version: AX 7.0
 # Multiple Lifecycle Services projects and environments on one Microsoft Entra tenant
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 For any new cloud project, you instantiate one Microsoft Dynamics Lifecycle Services implementation project on a Microsoft Entra tenant that provides access to one production instance. In rare cases, to handle the requirements of a specific implementation, you might require multiple production instances that run in parallel. By creating multiple Lifecycle Services projects against the same Microsoft Entra tenant, you can have multiple production instances. Here are the most common scenarios where you might need multiple production instances:
 

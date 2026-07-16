@@ -26,7 +26,7 @@ As a prerequisite, set up your e-commerce site with the Microsoft Entra B2C tena
 
 ## Set up web API settings for authentication
 
-Set up your Microsoft Entra B2C tenant in accordance with the guidance in [Enable authentication in your own web API by using Microsoft Entra B2C](/azure/active-directory-b2c/enable-authentication-web-api). According to that guidance, create an app registration for the Microsoft Entra B2C tenant application that handles web, mobile, or single page apps. This process is also documented in [Create a native application](mock-sign-in.md#create-a-native-application). The native application uses the mobile or standalone application to acquire the authentication token for the Microsoft Entra B2C tenant.
+Set up your Microsoft Entra B2C tenant in accordance with the guidance in [Enable authentication in your own web API by using Microsoft Entra B2C](/azure/active-directory-b2c/enable-authentication-web-api). According to that guidance, create an app registration for the Microsoft Entra B2C tenant application that handles web, mobile, or single page apps. This process is also documented in [Register a native application](mock-sign-in.md?tabs=b2c#register-the-native-application). The native application uses the mobile or standalone application to acquire the authentication token for the Microsoft Entra B2C tenant.
 
 Various methods are available for creating the authentication token by using the Microsoft Entra B2C tenant application. Configurations vary further depending on the developmental approach. Microsoft Entra B2C supports the direct API authentication, resource owner password credentials (ROPC), and the Open ID Connect (OIDC) methods.
 

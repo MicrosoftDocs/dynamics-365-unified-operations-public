@@ -3,7 +3,7 @@ title: Financial tag defaulting rules
 description: Learn about the financial tag defaulting rule engine, the Condition Builder extensible control, and Power Fx formula conversion for developer extensibility.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/26/2026
 ms.reviewer: twheeloc
 audience: Developer

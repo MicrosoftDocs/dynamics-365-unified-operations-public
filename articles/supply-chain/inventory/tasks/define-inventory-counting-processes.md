@@ -4,7 +4,7 @@ description: Learn about the configuration of basic inventory counting processes
 author: banluo-ms
 ms.author: banluo
 ms.topic: how-to
-ms.date: 5/4/2026
+ms.date: 05/04/2026
 ms.custom:
 ms.reviewer: kamaybac 
 ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup

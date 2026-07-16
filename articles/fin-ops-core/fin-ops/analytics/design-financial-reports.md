@@ -4,7 +4,7 @@ description: Learn about various exercises that walk you through viewing and cre
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 03/12/2026
+ms.date: 06/01/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -25,7 +25,7 @@ This article provides exercises that walk you through viewing and creating finan
 In this exercise, you generate and explore an existing default report. This report includes all accounts and also contains account properties (attributes) for the accounts. You drill into transaction detail, apply dimension filters, and change the currency on the report. First, you update the display order of dimensions for financial reporting. By updating this order, you choose how the dimensions display not only while designing but also when viewing financial reports.
 
 1. Go to **Financial dimension configuration for integrating applications** under the **Dimensions of Chart of Accounts** in General ledger.
-2. Move the dimensions to be in the following order:
+1. Move the dimensions to be in the following order:
 
     1. Main Account
     1. Business Unit
@@ -35,13 +35,13 @@ In this exercise, you generate and explore an existing default report. This repo
     > [!NOTE]
     > Keep the other dimensions in their current order.
 
-3. Save the dimension configuration. Next, generate a report and explore the data in the report.
+1. Save the dimension configuration. Next, generate a report and explore the data in the report.
 1. Go to **Financial reports** under **Inquiries and reports** in General ledger.
 1. Select the row for the report named **GL Detail – Default**.
 1. Select **Edit**.
 
     > [!NOTE]
-    > You're prompted to download the click-once report designer and to sign in. Use your credentials to sign in.
+    > You're prompted to download the select-once report designer and to sign in. Use your credentials to sign in.
 
 1. Change the base year to 2021 and select **Generate**. When you generate a report from the report designer, it opens in a new browser tab. You can either explore the report in the new browser tab, or go to your original browser tab and open the report from there by selecting it from the **Financial reports** list.
 1. In the opened report, select one of the amounts to drill into the account detail for the report.
@@ -58,6 +58,7 @@ In this exercise, you generate and explore an existing default report. This repo
 1. Close **Report Designer**.
 
 ## Add extra account properties to a report design
+
 In this exercise, you modify an existing default report. You update the row definition to include all accounts and update the column definition to contain account attributes. When you finish the updates, you generate the new report and explore it. Start from the **Financial reports** list.
 
 1. Go to **Financial reports** under **Inquiries and reports** in General ledger.
@@ -99,6 +100,7 @@ In this exercise, you modify an existing default report. You update the row defi
 1. Close **Report Designer**.
 
 ## Create a multidimensional report using a reporting tree
+
 In this exercise, you modify an existing default report. You create a reporting tree and add it to a report definition to produce a **Cost Center/Divisional Income Statement**. When you finish the updates, you generate the **Cost Center/Divisional Income Statement** and explore the report by using the reporting tree. Start from the **Financial reports** list.
 
 1. Go to **Financial reports** under Inquiries and reports in General ledger.
@@ -135,7 +137,8 @@ In this exercise, you modify an existing default report. You create a reporting 
 1. Close **Report Designer**.
 
 ## Create a consolidated report using an organization hierarchy
-For this exercise, you're modifying an existing default report. You add an organization hierarchy in the report definition to produce a Consolidated Income Statement and Balance Sheet. When you finish the updates, you generate the consolidated report and explore the report using the reporting tree. Start from the Financial reports list.
+
+In this exercise, you modify an existing default report. You add an organization hierarchy in the report definition to produce a Consolidated Income Statement and Balance Sheet. When you finish the updates, you generate the consolidated report and explore the report by using the reporting tree. Start from the Financial reports list.
 
 1. Go to **Financial reports** under **Inquiries and reports** in General ledger.
 1. Select the row for the report named **Balance Sheet and Income Statement Side by Side – Default**.
@@ -154,6 +157,7 @@ For this exercise, you're modifying an existing default report. You add an organ
 1. Close **Report Designer**.
 
 ## Create a side-by-side departmental report
+
 In this exercise, you create a new report. The report is a side-by-side departmental income statement. You use an existing row definition, but create a new report definition and a new column definition that uses dimension filters. Start from the **Financial reports** list.
 
 1. Go to **Financial reports** under **Inquiries and reports** in General ledger.
@@ -182,11 +186,11 @@ In this exercise, you create a new report. The report is a side-by-side departme
 1. **Save** your changes and **generate**. When the report finishes generating and opens, you can explore the report.
 
 ## Additional resources
+
 [Financial reporting](../../../finance/general-ledger/financial-reporting-getting-started.md)
 
 [View financial reports](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

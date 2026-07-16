@@ -6,13 +6,16 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: CostConfigurationConvention
 ms.topic: how-to
-ms.date: 07/21/2025
+ms.date: 06/24/2026
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
+  - evergreen
 ---
 
 # Conventions
 
+[!INCLUDE [global-inventory-accounting-deprecation-banner](../includes/global-inventory-accounting-deprecation-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 A convention is a container for a set of policies that affect system behavior. Based on your business requirements, you must define conventions by using a combination of the various policies that establish how costs should be accounted in Global Inventory Accounting. You can associate each convention with one or more ledgers to ensure consistency in accounting policies that are applied across ledgers.

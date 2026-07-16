@@ -3,7 +3,7 @@ title: Plan for the global address book and other address books
 description: Learn about the considerations and decisions for the global address book and other address books, including outlines on default values.
 author: msftbrking
 ms.author: anisagrawal
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/10/2026
 ms.reviewer: johnmichalak
 audience: Application User

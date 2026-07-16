@@ -3,7 +3,7 @@ title: Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Ma
 description: Learn about cleanup routines in Dynamics 365 Finance and Supply Chain Management, including a table defining system admin paths.
 author: dvliegen
 ms.author: dvliegen
-ms.topic: article
+ms.topic: reference
 ms.date: 03/05/2026
 ms.custom: 
 ms.reviewer: johnmichalak 

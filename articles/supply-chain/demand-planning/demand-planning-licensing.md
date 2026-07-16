@@ -4,7 +4,7 @@ description: Learn about licensing requirements for Demand planning in Microsoft
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: article
-ms.date: 5/4/2026
+ms.date: 05/04/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

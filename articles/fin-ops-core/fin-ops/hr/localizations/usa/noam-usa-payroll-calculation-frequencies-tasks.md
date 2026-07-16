@@ -3,7 +3,7 @@ title: Set up payroll calculation frequencies
 description: Learn about how to set up payroll calculation frequencies, including an outline on how to assign pay periods to payroll calculation frequencies.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

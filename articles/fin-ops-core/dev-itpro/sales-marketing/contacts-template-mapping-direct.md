@@ -3,7 +3,7 @@ title: Synchronize contacts directly from Sales to contacts or customers in Supp
 description: Learn aboutthe templates and underlying tasks that are used to synchronize Contact (Contacts) and Contact (Customers) entities.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: integration
 ms.date: 03/13/2026
 ms.reviewer: kamaybac
 audience: IT Pro

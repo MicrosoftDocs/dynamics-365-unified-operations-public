@@ -4,7 +4,7 @@ description: Learn how to install the business performance planning app in Micro
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: install-set-up-deploy
-ms.date: 11/28/2023
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -22,22 +22,22 @@ This article describes how to install the business performance planning app. To 
 Follow these steps to install the business performance planning app.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and then, on the navigation pane, select **Environments**.
-1. Select the environment where you're installing the app.
-1. Select **Resources** \> **Dynamics 365 apps**.
+1. Select the environment where you want to install the app.
+1. Select **Resources** > **Dynamics 365 apps**.
 1. Select **Install app**, and then, in the list of apps, find and select **Dynamics 365 Finance business performance planning**.
 
     > [!IMPORTANT]
-    > A standard Dynamics 365 Finance license is required to install the business performance planning app. To perform any planning operations, you must have a Finance premium license. For more information about Finance licensing, see [Finance pricing](https://dynamics.microsoft.com/finance/pricing/).
+    > You need a standard Dynamics 365 Finance license to install the business performance planning app. To perform any planning operations, you must have a Finance premium license. For more information about Finance licensing, see [Finance pricing](https://dynamics.microsoft.com/finance/pricing/).
 
 1. On the **Install** page, agree to the terms of service, and then select **Install**.
-1. After installation is completed, select **Environments** on the left navigation pane, and then select the environment where you installed the app. In the **Details** section of the page, find and select the **Environment URL** value for your environment.
-1. The **Apps** page is opened. Select the **Business performance planning** app.
+1. After the installation finishes, select **Environments** on the left navigation pane, and then select the environment where you installed the app. In the **Details** section of the page, find and select the **Environment URL** value for your environment.
+1. The **Apps** page opens. Select the **Business performance planning** app.
 
     > [!IMPORTANT]
-    > Before the app can be used, you must assign users to the **Business performance planning** roles. These roles aren't assigned to anyone by default, not even to the person who installed the planning application. For more information about how to assign security roles or people to a model-driven app, see [Assign security roles or people to a model-driven app](/power-apps/maker/model-driven-apps/share-model-driven-app#assign-security-roles-or-people-to-a-model-driven-app).
+    > Before users can use the app, you must assign them to the **Business performance planning** roles. These roles aren't assigned to anyone by default, not even to the person who installed the planning application. For more information about how to assign security roles or people to a model-driven app, see [Assign security roles or people to a model-driven app](/power-apps/maker/model-driven-apps/share-model-driven-app#assign-security-roles-or-people-to-a-model-driven-app).
 
 1. To assign the **Business performance planning** roles to users, in Power Platform admin center, select **Environments** on the navigation pane, and then select the environment where you installed the application.
-1. On the home page of the environment, select **Security roles** \> **See all**. The following **Business performance planning** roles should be listed:
+1. On the home page of the environment, select **Security roles** > **See all**. The following **Business performance planning** roles are listed:
 
     - Business performance planning administrator
     - Business performance planning contributor
@@ -48,9 +48,9 @@ Follow these steps to install the business performance planning app.
 
 ## Delete the app
 
-If you must delete the business performance planning app, follow these steps:
+To delete the business performance planning app, follow these steps:
 
-1. In the app, delete all the cubes and then all the dimensions.
+1. In the app, delete all the cubes and then delete all the dimensions.
 1. In Microsoft Power Platform, open the maker portal for the environment, and select **Solutions**.
 1. Select to view all solutions.
 1. To delete the whole solution, delete the solutions in the following order:
@@ -63,4 +63,4 @@ If you must delete the business performance planning app, follow these steps:
     1. [Microsoft](https://make.preprod.powerapps.com/environments/072ff55f-8d3a-e292-b124-88c671ed04f1/solutions/b392f266-1d4b-4149-8b57-22d811e1741f) XPnA Anchor
 
 > [!IMPORTANT]
-> If the Finance premium license is terminated, data will be retained until the solution is removed.
+> If you terminate the Finance premium license, data is retained until the solution is removed.

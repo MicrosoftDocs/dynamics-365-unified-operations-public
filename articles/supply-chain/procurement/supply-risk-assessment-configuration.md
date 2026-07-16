@@ -4,7 +4,7 @@ description: Learn how to enable and set up Supply risk assessment, including pr
 author: ShriramSivasankaran
 ms.author: shriramsiv
 ms.topic: how-to 
-ms.date: 5/19/2026 
+ms.date: 05/19/2026 
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: 

@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventModelGroup
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -39,7 +39,7 @@ The following are prerequisites when you use moving average cost as a costing me
 
 ## Convert to the moving average costing method
 
-Products can be converted to use the moving average inventory valuation method. This type of conversion is usually done at the end of the year, after the last month of the current year is closed. It's done by using the product's current costing model. You can change your inventory costing method from a costing method that is based on average cost or standard cost to a method that is based on moving average.
+You can convert products to use the moving average inventory valuation method. You usually do this type of conversion at the end of the year, after the last month of the current year is closed, by using the product's current costing model. You can change your inventory costing method from a costing method that is based on average cost or standard cost to a method that is based on moving average.
 
 If you're changing your costing method from a standard costing method to a moving average method, you have to complete the following tasks:
 
@@ -100,7 +100,7 @@ Moving average supports produced items. If you plan to use moving average in a p
 Backdated transactions are assigned the current moving average cost, and the product's physical quantity is updated, but the product's moving average cost isn't affected. In this moving average example, a backdated transaction for a moving average product is posted.
 
 1. Create an inventory adjustment for the moving average product for a quantity of 1 and a cost of 20.00.
-1. The inventory transaction history for the product would resemble the following:
+1. The inventory transaction history for the product resembles the following:
     - An inventory transaction of 1, a cost of 16.00, a posting date of January 15, and a transaction date of January 15.
     - An inventory adjustment of 1, a cost of 20.00, a posting date of January 1, and a transaction date of January 15.
 1. Post the adjustment.
@@ -126,7 +126,7 @@ If the new on-hand quantity is positive after the transaction, the transaction i
 
 ## Inventory value report
 
-In this moving average example, the inventory value report is printed to support the current moving average calculation for a product. The Inventory value report can print the transactions in chronological order, together with the cost to support the moving average cost calculation of a product. The report displays the moving average cost for the product. In the **Inventory value reports** dialog box, a date interval allows you to select the **Transaction time** or the **Posting date** to sort the report by. The **Posting date** option is how the report is traditionally printed. The **Transaction time** option is the actual date that the transaction is reported and the moving average cost for the product is updated. You can print the Inventory value report by using the **Transaction time sorting** option if you want to see the moving average cost calculation over time. The following table displays the transactions for the product that the report is printed for when the **Transaction time sorting** option is used.
+In this moving average example, the inventory value report is printed to support the current moving average calculation for a product. The Inventory value report can print the transactions in chronological order, together with the cost to support the moving average cost calculation of a product. The report displays the moving average cost for the product. In the **Inventory value reports** dialog box, a date interval allows you to select the **Transaction time** or the **Posting date** to sort the report by. The **Posting date** option is how the report is traditionally printed. The **Transaction time** option is the actual date that the transaction is reported and the moving average cost for the product is updated. You can print the Inventory value report by using the **Transaction time sorting** option if you want to see the moving average cost calculation over time. The following table displays the transactions for the product that the report covers when using the **Transaction time sorting** option.
 
 | Transaction time | Date         | Transaction type           | Quantity | Amount | Average unit cost |
 |------------------|--------------|----------------------------|----------|--------|-------------------|

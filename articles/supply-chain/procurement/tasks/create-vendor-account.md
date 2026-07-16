@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid, WHSFilterGenerallyAvail
 ms.topic: how-to
-ms.date: 5/5/2026
+ms.date: 05/05/2026
 ms.custom: 
   - bap-template
 ---
@@ -17,7 +17,7 @@ ms.custom:
 
 This procedure shows how to create a vendor account, and add an address and contact information. The procedure doesn't show how to populate all fields for purchasing and financial purposes. To learn more about those fields, read the field descriptions. You can use this procedure in demo data company USMF or on your own data. Procurement professionals or accounts receivable personnel typically create vendor accounts.
 
-## Create a vendor account
+## Create a new vendor account
 
 1. Go to **Procurement and sourcing** > **Vendors** > **All vendors**.
 1. On the Action Pane, select **New**.

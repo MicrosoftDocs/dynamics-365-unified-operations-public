@@ -4,7 +4,7 @@ description: Learn how you can use GROUPBY type data sources in Electronic repor
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 01/22/2026
+ms.date: 06/25/2026
 ms.custom: 
   - bap-template 
 ms.reviewer: johnmichalak
@@ -18,52 +18,52 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-When configuring [Electronic reporting (ER)](general-electronic-reporting.md) model mappings or formats, you can [add](#AddMmDataSource2) required data sources of the **GroupBy** type.
+When you configure [Electronic reporting (ER)](general-electronic-reporting.md) model mappings or formats, you can [add](#AddMmDataSource2) required data sources of the **GroupBy** type.
 
-At design time, a **GroupBy** data source is configured to identify the following elements:
+At design time, you configure a **GroupBy** data source to identify the following elements:
 
 - A [base data source](#BaseDataSource) that contains records grouped at runtime.
 - [Grouping fields](#GroupingFields) of the base data source that are used for record grouping at runtime.
-- [Aggregate functions](#AggregateFunctions) that specify the aggregate calculations that are done for each discovered group at runtime
+- [Aggregate functions](#AggregateFunctions) that specify the aggregate calculations that are done for each discovered group at runtime.
 
 At runtime, a configured **GroupBy** data source groups records that have the same values in the grouping fields, and then returns a list of records. Each record represents a single group. For each group, the data source exposes the field values that the initial records were grouped by, the values of the calculated aggregate functions, and the list of records of the base data source that belongs to the group.
 
 ## <a name="AggregateFunctions"></a>Aggregate functions
 
-At runtime, every aggregate calculation is done for each group of records. This calculation is done by using the value of a single field or an expression in the records of a data source that was selected for grouping in the editable data source of the **GroupBy** type. The following aggregate functions are currently supported:
+At runtime, the system performs every aggregate calculation for each group of records. This calculation uses the value of a single field or an expression in the records of a data source that you selected for grouping in the editable data source of the **GroupBy** type. The following aggregate functions are currently supported:
 
-- **Avg** – This function returns the average of the values in a group. It can be used only with numeric fields.
-- **Count** – This function returns the number of items that were found in a group.
+- **Avg** – This function returns the average of the values in a group. You can use it only with numeric fields.
+- **Count** – This function returns the number of items that it found in a group.
 - **Min** – This function returns the minimum value among the values in a group.
 - **Max** – This function returns the maximum value among the values in a group.
-- **Sum** – This function returns the sum of all the values in a group. It can be used only with numeric fields.
-- **Any** - This function returns any value in a group. It can be used for any type of fields including Enum. This function is available as of 10.0.46 version of Finance.
+- **Sum** – This function returns the sum of all the values in a group. You can use it only with numeric fields.
+- **Any** - This function returns any value in a group. You can use it for any type of fields, including Enum. This function is available as of 10.0.46 version of Finance.
 
 ## <a name="ExecutionLocation"></a>Execution location
 
-When you edit a **GroupBy** data source and specify the base data source that contains the records that must be grouped, the system automatically detects the most efficient [location](#ExecutionLocation) for execution of that **GroupBy** data source. If the base data source is
-[queryable](er-functions-list-filter.md#usage-notes) (that is, if it can be run at the database level), the application database is also specified as the execution location of the editable **GroupBy** data source. Otherwise, the application server memory is specified as the execution location.
+When you edit a **GroupBy** data source and specify the base data source that contains the records to group, the system automatically detects the most efficient [location](#ExecutionLocation) for executing that **GroupBy** data source. If the base data source is
+[queryable](er-functions-list-filter.md#usage-notes) (that is, if it can run at the database level), the application database is also the execution location of the editable **GroupBy** data source. Otherwise, the application server memory is the execution location.
 
-You can manually change the automatically detected execution location by selecting the location that is applicable to the configured data source. If the execution location that is selected isn't applicable, a [validation error](er-components-inspections.md#i5) is thrown at design time.
+You can manually change the automatically detected execution location by selecting the location that applies to the configured data source. If you select an execution location that isn't applicable, a [validation error](er-components-inspections.md#i5) is thrown at design time.
 
 > [!TIP]
-> We recommend that you use the database location to group data sources that expose a large number of records.
+> Use the database location to group data sources that expose a large number of records.
 
 ## <a name="MemoryConsumption"></a>Memory consumption
 
-By default, if a **GroupBy** data source is run in memory, the application server memory is used to store records of the base data source that belongs to each discovered group as records of a single group. To help reduce memory consumption, you can suppress record storage for **GroupBy** data sources if they were configured to compute only aggregated functions and their group's records aren't used at runtime. To reduce memory consumption in this way, enable the **Reduce memory usage in ER when records grouping is only used to compute aggregations** feature in the **Feature management** workspace.
+By default, if you run a **GroupBy** data source in memory, the application server memory stores records of the base data source that belong to each discovered group as records of a single group. To help reduce memory consumption, you can suppress record storage for **GroupBy** data sources if they're configured to compute only aggregated functions and their group's records aren't used at runtime. To reduce memory consumption in this way, enable the **Reduce memory usage in ER when records grouping is only used to compute aggregations** feature in the **Feature management** workspace.
 
 ## <a name="Alternatives"></a>Alternatives
 
-Similar aggregations can be calculated by using [different](er-data-collection-data-sources.md#if-i-need-to-calculate-running-totals-and-collect-data-whats-the-difference-between-using-a-data-collection-data-source-and-using-the-built-in-data-collection-functions) types of data sources or ER built-in functions.
+You can calculate similar aggregations by using [different](er-data-collection-data-sources.md#if-i-need-to-calculate-running-totals-and-collect-data-whats-the-difference-between-using-a-data-collection-data-source-and-using-the-built-in-data-collection-functions) types of data sources or ER built-in functions.
 
 To learn more about this feature, complete the example that follows.
 
 ## <a name="Example"></a>Example: Use a GROUPBY data source for aggregate calculations and record grouping
 
-This example shows how a user in the System administrator or Electronic reporting functional consultant role can configure an ER model mapping that has a **GROUPBY** data source that is used to calculate aggregate functions and group records. This model mapping is used to print the control report when the Intrastat declaration is generated. That report lets you review reported Intrastat transactions.
+This example shows how a user in the System administrator or Electronic reporting functional consultant role can configure an ER model mapping that has a **GROUPBY** data source that calculates aggregate functions and groups records. This model mapping prints the control report when the Intrastat declaration is generated. That report lets you review reported Intrastat transactions.
 
-The procedures in this example can be completed in the **DEMF** company in Microsoft Dynamics 365 Finance. 
+You can complete the procedures in this example in the **DEMF** company in Microsoft Dynamics 365 Finance.
 
 ### Prepare sample data
 
@@ -85,12 +85,12 @@ Follow the steps in [Add a custom data model configuration](er-quick-start3-cust
 
 ### Configure a custom data model component
 
-Follow these steps to make the required changes to the derived **Intrastat model (Litware)** data model, so that it can be used to expose transport codes that have the required details.
+Follow these steps to make the required changes to the derived **Intrastat model (Litware)** data model, so that you can use it to expose transport codes that have the required details.
 
-1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
-1. On the **Configurations** page, in the configuration tree, select **Intrastat model (Litware)**.
+1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
+1. On **Configurations**, in the configuration tree, select **Intrastat model (Litware)**.
 1. Select **Designer**.
-1. On the **Data model designer** page, in the model tree, select **Intrastat**.
+1. On **Data model designer**, in the model tree, select **Intrastat**.
 1. Select **New** to add a new nested node for the selected **Intrastat** node. In the drop-down dialog box for adding a data model node, follow these steps:
 
     1. In the **Name** field, enter **Transport**.
@@ -136,8 +136,8 @@ Follow the steps in [Create a new model mapping configuration](er-quick-start1-n
 
 ### Add a new model mapping component
 
-1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
-1. On the **Configurations** page, in the configuration tree, expand the **Intrastat model** configuration.
+1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
+1. On **Configurations**, in the configuration tree, expand the **Intrastat model** configuration.
 1. Select the **Intrastat sample mapping** configuration.
 1. Select **Designer** to open the list of mappings.
 1. Select **Delete** to remove the existing mapping component.
@@ -153,7 +153,7 @@ Follow the steps in [Create a new model mapping configuration](er-quick-start1-n
 Configure a data source to access the application tables that contain the details of Intrastat transactions.
 
 1. On the **Model mapping designer** page, in the **Data source types** pane, select **Dynamics 365 for Operations\\Table records**.
-1. In the **Data sources** pane, select **Add root** to add a new data source that is used to access the **Intrastat** table. Each record in the **Intrastat** table represents a single Intrastat transaction.
+1. In the **Data sources** pane, select **Add root** to add a new data source that accesses the **Intrastat** table. Each record in the **Intrastat** table represents a single Intrastat transaction.
 1. In the **Data source properties** dialog box, in the **Name** field, enter **Transaction**.
 1. In the **Table** field, enter **Intrastat**.
 1. Select **OK** to add the new data source.
@@ -163,16 +163,16 @@ Configure a data source to access the application tables that contain the detail
 Configure a **GroupBy** data source to group Intrastat transactions and compute aggregate functions.
 
 1. On the **Model mapping designer** page, in the **Data source types** pane, select **Functions\\Group by**.
-1. In the **Data sources** pane, select **Add root** to add a new data source that is used to group Intrastat transactions and compute aggregate functions.
+1. In the **Data sources** pane, select **Add root** to add a new data source that groups Intrastat transactions and computes aggregate functions.
 1. In the **Data source properties** dialog box, in the **Name** field, enter **TransportRecord**.
 1. Select **Edit group by** to configure grouping conditions.
 1. On the **Edit 'Group By' parameters** page, in the data sources list in the right pane, select the **Transaction** data source, and expand it.
-1. Select **Add field to \> What to group** to indicate that the **Transaction** data source is selected as the <a name="BaseDataSource">base data source</a> for the configured **GroupBy** data source. The records of the **Transaction** data source are grouped, and the field values of this data source is used for calculations in aggregate functions.
+1. Select **Add field to \> What to group** to indicate that the **Transaction** data source is selected as the <a name="BaseDataSource">base data source</a> for the configured **GroupBy** data source. The records of the **Transaction** data source are grouped, and the field values of this data source are used for calculations in aggregate functions.
 1. Select the **Transaction\Transport** field, and then select **Add field to \> Grouped field** to indicate that the **Transport** field of the base data source is selected as the <a name="GroupingFields">grouping criterion</a> for the configured **GroupBy** data source. In other words, the records of the **Transaction** data source are grouped based on the value of the **Transport** field. Every record of the configured **GroupBy** data source represents a single transport code found in records of the base data source.
 1. Select the **Transaction\AmountMST** field, and then follow these steps:
 
     1. Select **Add field to \> Aggregate fields** to indicate that an <a name="AggregateFunctions">aggregate function</a> is calculated for this field.
-    1. In the **Aggregations** pane, in the record that was added for the selected **Transaction\AmountMST** field, in the **Method** field, select the **Sum** function.
+    1. In the **Aggregations** pane, in the record that you added for the selected **Transaction\AmountMST** field, in the **Method** field, select the **Sum** function.
     1. In the **Name** optional field, enter **TotalInvoicedAmount**.
 
     These settings specify that, for every transport group, the total amount of the **Transaction\AmountMST** field is calculated.
@@ -180,14 +180,14 @@ Configure a **GroupBy** data source to group Intrastat transactions and compute 
 1. Select the **Transaction\RecId** field, and then follow these steps:
 
     1. Select **Add field to \> Aggregate fields** to indicate that an aggregate function is calculated for this field.
-    1. In the **Aggregations** pane, in the record that was added for the selected **Transaction\RecId** field, in the **Method** field, select the **Count** function.
+    1. In the **Aggregations** pane, in the record that you added for the selected **Transaction\RecId** field, in the **Method** field, select the **Count** function.
     1. In the **Name** optional field, enter **NumberOfTransactions**.
 
-    These settings specify that, for every transport group, the number of transactions in the group are calculated.
+    These settings specify that, for every transport group, the number of transactions in the group is calculated.
 
 1. Select **Save**.
-1. Review the <a name="ExecutionLocation">execution</a> parameters of the editable data source. Notice that **Autodetect** was automatically selected in the **Execution location** field, and the **Execution at** field contains the value **SQL**. These settings specify that the selected **Transaction** base data source is currently queryable, and you can run the editable **GroupBy** data source at database level.
-1. Open the lookup for the **Execution location** field to review the list of available values. Notice that you can select **Query** or **In memory** to force this **GroupBy** data source to be run on the database level or in the application server memory.
+1. Review the <a name="ExecutionLocation">execution</a> parameters of the editable data source. Notice that **Autodetect** is automatically selected in the **Execution location** field, and the **Execution at** field contains the value **SQL**. These settings specify that the selected **Transaction** base data source is currently queryable, and you can run the editable **GroupBy** data source at database level.
+1. Open the lookup for the **Execution location** field to review the list of available values. Notice that you can select **Query** or **In memory** to force this **GroupBy** data source to run on the database level or in the application server memory.
 1. Select **Save**, and close the **Edit 'Group By' parameters** page.
 1. Select **OK** to complete the settings of the **GroupBy** data source.
 
@@ -218,7 +218,7 @@ Bind the configured data source to the fields of the data model to specify how t
     1. Select the **TransportRecord.aggregated.TotalInvoicedAmount** aggregated field.
     1. Select **Bind**.
 
-1. Add a binding to expose transaction records that belongs to each discovered transport group:
+1. Add a binding to expose transaction records that belong to each discovered transport group:
 
     1. Select the **Transport.Transaction** data model item.
     1. Select the **TransportRecord.lines** field.
@@ -256,11 +256,38 @@ The following illustration shows the results of the **Totals** data source debug
 
 :::image type="content" source="./media/er-groupby-data-sources-debug-datasource2.png" alt-text="Screenshot of results of the Totals data source debugging on the Debug datasources page.":::
 
+## Best practices for working with GroupBy data sources
+
+### Calling table extension methods in a GroupBy data source
+
+When you design expressions for an in-memory **GroupBy** data source in an ER model mapping, avoid calling application (X++) table extension methods
+that require parameters on grouped table records. In the current implementation, the runtime might not resolve these method calls when applied to grouped records.
+As a result, the expression can return an error or an empty value. This behavior occurs only when all the following conditions are met:
+
+- The table extension method declares one or more parameters, in addition to the table variable (`this`) that it extends.
+- You call the method as an instance method on the table record (for example, `record.myExtensionMethod(parameter)`).
+- The in-memory **GroupBy** data source wraps the table record.
+- You define both the **GroupBy** data source and the underlying table records data source at the model mapping level.
+
+> [!NOTE]
+> This limitation doesn't affect:
+>
+> - Table extension methods that don't require parameters.
+> - Methods called on table records that aren't wrapped by a **GroupBy** data source.
+
+#### Recommendation
+
+To achieve the expected behavior, consider one of the following approaches:
+
+- Refactor the logic into a parameterless method when possible.
+- Evaluate the method on the base data source (before applying **GroupBy**) and expose the result as a calculated field.
+- Move the required calculation logic into ER expressions or computed fields that don't depend on parameterized method calls.
+
 ## Frequently asked questions
 
-### Is there any way to calculate grand totals when the group totals are calculated?
+### Is there a way to calculate grand totals when the group totals are calculated?
 
-Yes. To calculate grand totals, configure another **GroupBy** data source where the **GroupBy** data source that you previously configured is used as the base data source. The following illustration shows the **Totals** data source of the **GroupBy** type that is used to calculate the aggregate **SUM** function, based on the **SUM** aggregation of the **TransportRecord** data source of the **GroupBy** type.
+Yes. To calculate grand totals, configure another **GroupBy** data source where the previously configured **GroupBy** data source is the base data source. The following illustration shows the **Totals** data source of the **GroupBy** type that calculates the aggregate **SUM** function, based on the **SUM** aggregation of the **TransportRecord** data source of the **GroupBy** type.
 
 :::image type="content" source="./media/er-groupby-data-sources-configure-model-mapping2.png" alt-text="Screenshot of Totals data source in the ER model mapping designer.":::
 

@@ -4,7 +4,7 @@ description: Learn how to set up the Warehouse Management mobile app to support 
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 01/29/2024
+ms.date: 06/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
@@ -14,9 +14,9 @@ ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructu
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up the Warehouse Management mobile app so that it supports using a license plate receiving process to receive physical inventory.
+This article explains how to set up the Warehouse Management mobile app to support a license plate receiving process for physical inventory.
 
-You can use this functionality to quickly record the receipt of inbound inventory that is related to an advance ship notice (ASN). The system automatically creates an ASN when warehouse management processes (WMS) are used to ship a transfer order. For the purchase order and inbound shipment order processes, an ASN can be manually recorded, or it can be automatically imported by using an inbound ASN data entity process.
+This functionality lets you quickly record the receipt of inbound inventory related to an advance ship notice (ASN). The system automatically creates an ASN when warehouse management processes (WMS) are used to ship a transfer order. For the purchase order and inbound shipment order processes, an ASN can be recorded manually or imported automatically by using an inbound ASN data entity process.
 
 The ASN data is linked to loads and shipments via the *packing structures*, where pallets (parent license plates) can contain cases (nested license plates).
 
@@ -25,11 +25,11 @@ The ASN data is linked to loads and shipments via the *packing structures*, wher
 
 ## Warehousing mobile device app processing
 
-When a worker scans an incoming license plate ID, the system initializes a license plate receiving process. Based on this information, the content of the license plate (data coming from the ASN) gets physically registered at the inbound dock location. The flows that follow will depend your business process needs.
+When a worker scans an incoming license plate ID, the system initializes a license plate receiving process. Based on this information, the content of the license plate (data coming from the ASN) is physically registered at the inbound dock location. The flows that follow depend on your business process needs.
 
 ## Work policies
 
-As with (for example) the *Report as finished* mobile device menu item process, the license plate receiving process supports several workflows based on the defined setup.
+As with the *Report as finished* mobile device menu item process, the license plate receiving process supports several workflows based on the setup.
 
 ### Work policies with work creation
 
@@ -37,7 +37,7 @@ When you register incoming items using a work policy that creates work, the syst
 
 ### Work policies without work creation
 
-You can use the license plate receiving process without creating work. If you define [work policies](warehouse-work-policies.md) that have a work order type of *Transfer receipt*, *Purchase orders*, and/or *Inbound shipment order*, and you use the process for *License plate receiving (and put away)*, the following two Warehousing mobile app processes won't create work. Instead, they will just register the inbound physical inventory on the license plate at the inbound receiving dock.
+You can use the license plate receiving process without creating work. If you define [work policies](warehouse-work-policies.md) that have a work order type of *Transfer receipt*, *Purchase orders*, and/or *Inbound shipment order*, and you use the process for *License plate receiving (and put away)*, the following two Warehousing mobile app processes don't create work. Instead, they just register the inbound physical inventory on the license plate at the inbound receiving dock.
 
 - *License plate receiving*
 - *License plate receiving and put away*
@@ -45,36 +45,36 @@ You can use the license plate receiving process without creating work. If you de
 > [!NOTE]
 >
 > - You must define at least one location for a work policy in the **Inventory locations** section. You can't specify the same location for multiple work policies.
-> - The **Print label** option for mobile device menu items won't print a license plate label without work creation. However, you can print a license plate label as part of the [deferred receiving process](#deferred-receiving).
+> - The **Print label** option for mobile device menu items doesn't print a license plate label without work creation. However, you can print a license plate label as part of the [deferred receiving process](#deferred-receiving).
 
 ### Receive inventory on a location that doesn't track license plates
 
-It's possible to use a warehouse location that is assigned to a location profile even when **Use license plate tracking** isn't turned on. Therefore, when you receive inventory, you can directly register the on-hand inventory on a location without work creation.
+You can use a warehouse location assigned to a location profile even when **Use license plate tracking** isn't turned on. Therefore, when you receive inventory, you can directly register the on-hand inventory on a location without work creation.
 
 ## Add mobile device menu items for each receiving location in a warehouse
 
-The *License plate receiving enhancements* feature lets you receive at any location in a warehouse by adding location-specific license plate receiving (and put away) menu items to the Warehousing mobile app. Previously, the system supported receiving only at the default location that is defined for each warehouse. However, this features allows mobile device menu items for license plate receiving (and put away) to provide the **Use default data** option, which lets you select a custom "to" location for each menu item.
+The *License plate receiving enhancements* feature lets you receive at any location in a warehouse by adding location-specific license plate receiving (and put away) menu items to the Warehousing mobile app. Previously, the system supported receiving only at the default location defined for each warehouse. However, this feature lets mobile device menu items for license plate receiving (and put away) provide the **Use default data** option, which lets you select a custom "to" location for each menu item.
 
 ## Show or skip the receiving summary page
 
-You can use the *Control whether to display a receiving summary page on mobile devices* feature to take advantage of an additional detailed Warehouse Management mobile app flow as part of the license plate receiving process. With this feature, mobile device menu items for license plate receiving or license plate receiving and put-away will provide a **Display receiving summary page** setting. This setting has the following options:
+You can use the *Control whether to display a receiving summary page on mobile devices* feature to take advantage of an additional detailed Warehouse Management mobile app flow as part of the license plate receiving process. With this feature, mobile device menu items for license plate receiving or license plate receiving and put-away provide a **Display receiving summary page** setting. This setting has the following options:
 
-- **Display a detailed summary** – During license plate receiving, workers will see an extra page that shows the full ASN information.
-- **Skip the summary** – Workers won't see the full ASN information. Warehouse workers also won't be able to set a disposition code or add exceptions during the receiving process.
+- **Display a detailed summary** – During license plate receiving, workers see an extra page that shows the full ASN information.
+- **Skip the summary** – Workers don't see the full ASN information. Warehouse workers also can't set a disposition code or add exceptions during the receiving process.
 
 ## Prevent transfer order–shipped license plates from being used at warehouses other than the destination warehouse
 
 A license plate receiving process can't be used if an ASN contains a license plate ID that already exists and has physical on-hand data at a warehouse location other than the warehouse location where the license plate registration occurs. For transfer order scenarios where the transit warehouse doesn't track license plates (and therefore also doesn't track physical on-hand inventory per license plate), you can use the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature to prevent physical on-hand updates of license plates that are in transit. To manage the functionality provided by this feature, follow these steps:
 
-1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
+1. Go to **Warehouse management > Setup > Warehouse management parameters**.
 1. On the **General** tab, on the **License plates** FastTab, set the **Transit warehouse license plate policy** field to one of the following values:
 
     - **Allow reuse of non-tracked license plate** – Non-tracked license plates can be reused.
-    - **Prevent reuse of non-tracked license plate** – Only on-hand updates that are related to a shipped license plate will be allowed at the destination warehouse until the transfer order has been received.
+    - **Prevent reuse of non-tracked license plate** – Only on-hand updates related to a shipped license plate are allowed at the destination warehouse until the transfer order has been received.
 
 ## <a name="deferred-receiving"></a>Deferred receiving processing
 
-For businesses that use the *License plate receiving* process to inbound receive thousands of lines that are related to the same license plate, the Warehouse Management mobile app receiving process must wait until all the lines and related work have been created as part of the registration process. The exception is when the [deferred receiving option](mixed-license-plate-receiving.md#deferred-receiving-processing) is used. This option postpones the registration processes as part of a background process. Therefore, the warehouse workers can immediately continue to do other work.
+For businesses that use the *License plate receiving* process to inbound receive thousands of lines related to the same license plate, the Warehouse Management mobile app receiving process must wait until all lines and related work are created as part of the registration process. The exception is when the [deferred receiving option](mixed-license-plate-receiving.md#deferred-receiving-processing) is used. This option postpones registration as a background process. Therefore, warehouse workers can immediately continue other work.
 
 ## More information
 

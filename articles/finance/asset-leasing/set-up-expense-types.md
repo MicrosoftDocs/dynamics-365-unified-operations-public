@@ -4,8 +4,8 @@ description: Learn about how to set up expense types in Asset leasing, including
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to
-ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.date: 06/23/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2019-10-28
@@ -23,31 +23,31 @@ This article explains how to set up expense types in Asset leasing. Costs that a
 ## Add an administrative expense type
 
 1. Go to **Asset leasing \> Setup \> Expense types**.
-2. Select **New**.
+1. Select **New**.
 3. In the appropriate fields, enter the new expense type and a description.
 
 ## Assign accounts to administrative costs
 
-Next, you should associate accounts with the expense types. These accounts will be debited when expense schedule entries are posted. The offset account is specified on the **Executory costs payment schedule** lines on each lease.
+Next, you should associate accounts with the expense types. These accounts are debited when expense schedule entries are posted. The offset account is specified on the **Executory costs payment schedule** lines on each lease.
 
 1. Go to **Asset leasing \> Setup \> Asset leasing parameters**.
-2. On the **Accounts** tab, on the **Executory costs** FastTab, in the **Expense type** field, select the expense type.
-3. Select **Add**.
-4. In the **Book type** field, select the book type to link to the administrative costs.
+1. On the **Accounts** tab, on the **Executory costs** FastTab, in the **Expense type** field, select the expense type.
+1. Select **Add**.
+1. In the **Book type** field, select the book type to link to the administrative costs.
 
     > [!NOTE]
     > Multiple book types can be linked to the same expense account.
 
-5. In the **Account code** field, specify which leases the book should be applied to:
+1. In the **Account code** field, specify which leases the book applies to:
 
     - **All** – Apply the book to all leases.
     - **Group** – Apply the book to a specific group of leases.
     - **Table** – Apply the book to specific leases.
 
-6. If you selected **Group** or **Table** in the **Account code** field, select an account number or group number in the **Account/Group number** field.
-7. In the appropriate fields, select the finance lease main account and the operating lease main account.
+1. If you select **Group** or **Table** in the **Account code** field, select an account number or group number in the **Account/Group number** field.
+1. In the appropriate fields, select the finance lease main account and the operating lease main account.
 
-When you've completed these steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease. Alternatively, you can add expenses when you create a new lease.
+When you complete these steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease. Alternatively, you can add expenses when you create a new lease.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

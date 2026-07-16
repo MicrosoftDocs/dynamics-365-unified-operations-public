@@ -3,7 +3,7 @@ title: Pause dual-write for maintenance
 description: Learn how to pause a dual-write table map for maintenance, how to resume syncronization, and skip to live synchronization.
 author: nhelgren
 ms.author: jaredha
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/03/2026
 ms.reviewer: johnmichalak
 audience: Developer

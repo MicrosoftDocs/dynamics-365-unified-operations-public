@@ -4,7 +4,7 @@
 title: Manager self service overview
 description: This article provides an overview of the Manager self service workspace.
 author: twheeloc
-ms.date: 06/24/2024
+ms.date: 06/05/2026
 ms.topic: overview
 # optional metadata
 
@@ -47,38 +47,38 @@ To configure **Employee self service**, go to **Human resources \> Employee self
 
 ## Configure Manager self service
 
-To configure **Manager self service**, go to **Human resources \> Manager self service**. In the **Manager self service** workspace, managers can set up, view, and access the following information:
+To configure **Manager self service**, go to **Human resources > Manager self service**. In the **Manager self service** workspace, managers can set up, view, and access the following information:
 
 - View emergency contacts
 
-    - None (default)
-    - Direct reports only
-    - Extended reports (includes direct reports and extended reports)
+  - None (default)
+  - Direct reports only
+  - Extended reports (includes direct reports and extended reports)
 
 - View expiring records option
 
-    - None
-    - Direct reports only
-    - Extended reports (includes direct reports and extended reports)
+  - None
+  - Direct reports only
+  - Extended reports (includes direct reports and extended reports)
 
 - Open positions
 
-    - Direct reports only
-    - Extended reports
-    - Both
-    - None
+  - Direct reports only
+  - Extended reports
+  - Both
+  - None
 
 - Exiting workers
 
-    - None
-    - Direct reports only
-    - Extended reports
+  - None
+  - Direct reports only
+  - Extended reports
 
 ### Configure personnel actions
 
-To configure personnel actions, go to **Human resources \> Shared parameters**, and then, on the **Human resources shared parameters**, select the **Personnel actions** tab.
+To configure personnel actions, go to **Human resources > Shared parameters**. On **Human resources shared parameters**, select the **Personnel actions** tab.
 
-**Enable worker actions** shows the following options:
+The **Enable worker actions** section shows the following options:
 
 - Request new employee
 - Request new contractor
@@ -86,7 +86,7 @@ To configure personnel actions, go to **Human resources \> Shared parameters**, 
 - Request termination
 - Request compensation change
 
-**Enable position actions** shows the following options:
+The **Enable position actions** section shows the following options:
 
 - Request new position
 - Request change to position details
@@ -95,7 +95,7 @@ The **My team** tab is divided into two sections: **Summary** and **My team info
 
 ### Summary section
 
-Information in the **Summary** section depends on the options that are selected on the **Human resources parameters** page. On the **Manager self service** tab of the **Human resources parameters** page, you can configure options for the display of expiring records and open positions. The configuration of these options determines what managers see in the **Summary** section.
+The information in the **Summary** section depends on the options that you select on the **Human resources parameters** page. On the **Manager self service** tab of the **Human resources parameters** page, you can configure options for the display of expiring records and open positions. The configuration of these options determines what managers see in the **Summary** section.
 
 You can configure the following tiles for managers:
 
@@ -150,7 +150,7 @@ You can view position data for both direct reports and extended reports.
 
 #### Compensation tab
 
-The **Compensation** tab shows the employee's annual salary. A company identifier appears under the salary amount. An employee who has more than one employment and is getting paid from multiple legal entities will have multiple compensation plans. To view all compensation plans across all legal entities without switching companies, you must enable cross-company compensation by setting the **Enable cross company compensation** option on the **Advanced access** tab of the **Human resources shared parameters** page.
+The **Compensation** tab shows the employee's annual salary. A company identifier appears under the salary amount. An employee who has more than one employment and is getting paid from multiple legal entities has multiple compensation plans. To view all compensation plans across all legal entities without switching companies, you must enable cross-company compensation by setting the **Enable cross company compensation** option on the **Advanced access** tab of the **Human resources shared parameters** page.
 
 To view compensation history, select the **Salary amount** value to open the **Details** page. Only current and historical fixed and variable compensation records appear on the **Compensation** page. If an employee has more than one employment, you can switch between companies to view compensation history in each company. Alternatively, you can enable cross-company compensation on the **Human resources shared parameters** page to view all compensation plans.
 
@@ -174,6 +174,6 @@ You can view all reviews for your team through the **Team performance reviews** 
 
 #### Learning tab
 
-The **Learning** tab provides an overview of courses that have been assigned to employees. The courses are categorized as **All assigned courses**, **Overdue**, and **Due soon**. Select the **Course ID** value to drill into all the details of a course.
+The **Learning** tab provides an overview of courses that you assign to employees. The courses are categorized as **All assigned courses**, **Overdue**, and **Due soon**. Select the **Course ID** value to see all the details of a course.
 
-Managers can assign a course to one of their employees by selecting **Assign course**. The manager can either create a new course or assign a previously created course to the employee. This functionality helps managers drive a culture of continuous learning and development that can, in turn, drive employee engagement, retention, and business success.
+By selecting **Assign course**, you can assign a course to one of your employees. You can create a new course or assign a previously created course to the employee. This functionality helps you drive a culture of continuous learning and development that can, in turn, drive employee engagement, retention, and business success.

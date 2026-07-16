@@ -2,9 +2,9 @@
 title: Point of sale (POS) application and user language settings
 description: Learn how to change language settings in the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web.
 author: josaw1
-ms.date: 01/27/2026
+ms.date: 06/08/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
@@ -35,9 +35,11 @@ Regardless of the user's settings, the Store Commerce app and Store Commerce for
 
 The store's language also appears on the main POS sign-in screen, since the user isn't known before signing in. If a translation isn't available for the store's language, the POS reverts to the company's language.
 
+Search (text search and search suggestions) follows the data language rule and resolves in the store language on attended registers. Self-checkout registers can search in the customer-selected language when you enable multilanguage self-checkout. For more information, see [Enable multilanguage support for Store Commerce self-checkout](multi-language-store-commerce-point-of-sale.md#search-language-behavior).
+
 ### Configuring the store's language setting
 
-Set the store's language from **All stores** on the **Store** page under **General &gt; Regional Settings &gt; Language**. Use the drop-down list to choose the language for each store.
+Set the store's language from **All stores** on the **Store** page under **General** > **Regional Settings** > **Language**. Use the drop-down list to select the language for each store.
 
 ## User interface language
 
@@ -45,13 +47,12 @@ The POS user's language setting determines the translations used in the applicat
 
 ### Configuring the user's language setting
 
-Set the POS user's language from **All workers** on the **Worker** page under **Retail and Commerce > Language**. Don't set it on the main **Profile** tab. POS doesn't use the language setting from the Profile tab. If you don't set the user's language or set it to a language without translations, POS uses the store's language.
+Set the POS user's language from **All workers** on the **Worker** page under **Retail and Commerce** > **Language**. Don't set it on the main **Profile** tab. POS doesn't use the language setting from the Profile tab. If you don't set the user's language or set it to a language without translations, POS uses the store's language.
 
-| &nbsp;      | UI language                | Data language (products, receipt formats, line display, etc.) |
-|-------------|----------------------------|---------------------------------------------------------------|
-| **Company** | Default                    | Default                                                       |
-| **Store**   | Overrides company          | Overrides company                                             |
-| **User**    | Overrides store or company | Never                                                         |
-
+| &nbsp; | UI language | Data language (products, receipt formats, line display) |
+| ------ | ----------- | ------------------------------------------------------- |
+| **Company** | Default | Default |
+| **Store** | Overrides company | Overrides company |
+| **User** | Overrides store or company | Never |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

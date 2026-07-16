@@ -4,7 +4,7 @@ description: Learn how to translate product names and descriptions, and how to s
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductParameters, EcoResProductDetailsExtended, SysTranslationDetail, SysUserSetup

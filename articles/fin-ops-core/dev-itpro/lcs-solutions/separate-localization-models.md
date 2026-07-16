@@ -3,7 +3,7 @@ title: Separation of localization models
 description: Learn about how to split the solution into separate models for each feature type for localization ISV solution providers.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer

@@ -3,7 +3,7 @@ title: Data management overview
 description: Learn about data management in finance and operations, including overviews of data entities and data migrations. 
 author: twheeloc
 ms.author: twheeloc
-ms.topic: overview
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 01/14/2026

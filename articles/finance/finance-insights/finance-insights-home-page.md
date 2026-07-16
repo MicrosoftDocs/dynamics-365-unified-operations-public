@@ -4,7 +4,7 @@ description: Finance insights provides configurable and extensible models to hel
 author: wei-msft
 ms.author: zhuw
 ms.topic: article
-ms.date: 12/10/2025
+ms.date: 06/01/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -23,18 +23,18 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 [!include [finance-insights-update-banner](includes/finance-insights-update-banner.md)]
 
-Finance insights provides configurable and extensible solutions to help you intelligently predict your company's cash flow, predict when you may receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide (including data from a third party such as consumer report information from a bureau). These intelligent capabilities inform decision making and helps you take action to respond effectively to current and anticipated business challenges. You're responsible for any data used with, or output from, Finance insights.
+Finance insights provides configurable and extensible solutions to help you intelligently predict your company's cash flow, predict when you might receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide (including data from a third party such as consumer report information from a bureau). These intelligent capabilities inform decision making and help you take action to respond effectively to current and anticipated business challenges. You're responsible for any data used with, or output from, Finance insights.
 
 > [!NOTE]
-> Finance insights is available for deployment in the United States of America, Canada, the United Kingdom, Europe, Asia Pacific, Japan, Australia, and New Zealand.
+> You can deploy Finance insights in the United States, Canada, the United Kingdom, Europe, Asia Pacific, Japan, Australia, and New Zealand.
 
 ## Prerequisites
 
-This section lists the requirements for using Finance insights. Wherever possible, links to sources of additional information are provided.
+This section lists the requirements for using Finance insights. Wherever possible, it provides links to sources of additional information.
 
 ### System requirements
 
-A Tier-2 environment (multi-box) is required to preview Finance insights. For background information about environments, see [Environment planning](../../fin-ops-core/dev-itpro/organization-administration/environment-planning.md).
+You need a Tier-2 environment (multibox) to preview Finance insights. For background information about environments, see [Environment planning](../../fin-ops-core/dev-itpro/organization-administration/environment-planning.md).
 
 ### Version requirements
 
@@ -46,7 +46,7 @@ Finance insights uses AI Builder credits to create financial predictions. All th
 
 ### Historical data requirements
 
-At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the **Customer payment predictions** feature. Three years of historical data are recommended for cash flow forecasts. Three years of historical budget and/or actuals are recommended for intelligent budget proposals.
+You need at least one year of customer invoices to correctly train the machine learning model that the **Customer payment predictions** feature uses. For cash flow forecasts, three years of historical data are recommended. For intelligent budget proposals, three years of historical budget and actuals data are recommended.
 
 ## Configure Finance insights
 
@@ -54,23 +54,25 @@ You must complete configuration steps before you can use Finance insights. For m
 
 ## Create a data integrator project
 
-You'll need to create a data integrator project so that data that the machine learning model generates can flow into Dynamics 365 Finance. For the steps to create that project, see [Create a data integrator project](create-data-integrate-project.md).
+You need to create a data integrator project so that data the machine learning model generates can flow into Dynamics 365 Finance. For the steps to create that project, see [Create a data integrator project](create-data-integrate-project.md).
 
 ## Enable Finance insights capabilities
 
-When you've completed the configuration steps and set up demo data, you must set up each capability that you plan to use: customer payment predictions, cash flow forecasting, and budget proposals.
+When you complete the configuration steps and set up demo data, set up each capability that you plan to use: customer payment predictions, cash flow forecasting, and budget proposals.
 
 ### Enable Customer payment predictions
-If you're using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. 
 
-To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data to generate predictions about when customers are likely to pay outstanding invoices and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
+If you're using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully.
+
+To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data to generate predictions about when customers are likely to pay outstanding invoices and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md).
 
 ### Enable Cash flow forecasting
-To enable Cash flow forecasting, you must complete a set of steps to build a machine learning model that uses your organization's data to generate cash flow forecasts. For more information and the specific steps to complete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md).
+
+To enable Cash flow forecasting, complete a set of steps to build a machine learning model that uses your organization's data to generate cash flow forecasts. For more information and the specific steps to complete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md).
 
 ### Enable budget proposals
 
-The Budget proposals feature uses a machine learning model along with your organization's historical data to generate a budget proposal. The generated proposal can help you begin a budgeting process that is more effective and efficient than a manual process. For the specific steps to enable this feature, see [Enable budget proposals](enable-budget-proposal.md). 
+The Budget proposals feature uses a machine learning model along with your organization's historical data to generate a budget proposal. The generated proposal can help you begin a budgeting process that is more effective and efficient than a manual process. For the specific steps to enable this feature, see [Enable budget proposals](enable-budget-proposal.md).
 
 ## Using Finance insights features
 
@@ -86,12 +88,12 @@ The Budget proposals feature uses a machine learning model along with your organ
 The Cash flow forecast capability can help you more accurately estimate your cash position. The intelligent cash flow forecasting is built on top of the existing cash flow forecasting functionality in Dynamics 365 Finance. To review the existing capability, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
 - To learn about the new capabilities in Cash flow forecasts, see [Cash flow forecast](cash-flow-forecast-intro.md).
-- For information about importing external data to include in your cashflow forecast here, see [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
+- For information about importing external data to include in your cashflow forecast, see [Use external data in cash flow forecasts](external-data-in-cash-flow.md).
 - For information about how to use an AI model to project near term cash flow, see [Cash position](cash-position.md).
 - For information about saving cash flow positions and cash flow forecasts as snapshots, and to compare a snapshot to actuals, see [Snapshots overview](payment-snapshots.md).
 
 ### Using Budget proposal
 
-For information about accelerating the creation of a budget, see [Budget proposals](budget-proposals.md). 
+For information about accelerating the creation of a budget, see [Budget proposals](budget-proposals.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

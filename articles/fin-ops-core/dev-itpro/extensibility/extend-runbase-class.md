@@ -3,7 +3,7 @@ title: Extend the RunBase class
 description: Access an example that shows how a RunBase class can be augmented end to end, which can delete records from the SysUserLog table.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer

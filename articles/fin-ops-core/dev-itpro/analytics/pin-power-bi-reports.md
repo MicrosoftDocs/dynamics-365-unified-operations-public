@@ -4,7 +4,7 @@ description: Learn about how you can pin full-page Power BI reports to workspace
 author: MilindaV2
 ms.author: johnmichalak
 ms.date: 01/15/2026
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global

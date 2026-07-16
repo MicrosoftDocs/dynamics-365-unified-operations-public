@@ -3,7 +3,7 @@ title: Modify existing fields in a table through extension
 description: Learn about how to modify an existing field in a table, including the process of creating an extension for the table.
 author: ivanv-microsoft
 ms.author: ivanv
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer

@@ -4,7 +4,7 @@ description: Learn about cycle counting, which is a warehouse process that you c
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/27/2026
+ms.date: 05/27/2026
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem

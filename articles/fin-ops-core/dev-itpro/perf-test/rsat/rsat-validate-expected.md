@@ -3,7 +3,7 @@ title: Validate expected values
 description: Learn about how to use the Regression suite automation for validation of expected values, including how to validate the state of a control.
 author: FrankDahl
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/21/2026
 ms.reviewer: johnmichalak
 audience: Developer

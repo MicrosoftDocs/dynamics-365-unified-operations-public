@@ -7,7 +7,7 @@ author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
 ms.topic: how-to
-ms.date: 5/25/2023
+ms.date: 6/11/2026
 ms.custom:
 
 ---
@@ -27,12 +27,12 @@ The following templates are available for Microsoft Dynamics 365 Human Resources
 To use Power Automate templates to create business events in Dynamics 365 Human Resources, follow these steps:
 
 1. Open Power Automate.
-2. On the left navigation pane, select **Templates**.
-3. Search for the template name (for example, **Goal due reminder**).
-4. Select the template. The flow connection is shown.
-5. Select **Continue**.
-6. Enter your Dynamics 365 Finance environment.
+1. On the left navigation pane, select **Templates**.
+1. Search for the template name (for example, **Goal due reminder**).
+1. Select the template. The flow connection is shown.
+1. Select **Continue**.
+1. Enter your Dynamics 365 Finance environment.
 
-To change the recurrence of the flow, go to **Recurrence**, and update the **Interval** and **Frequency** fields. If you update the flow interval from every day to every week, the flow will run once a week and send email notifications.
+To change the recurrence of the flow, go to **Recurrence**, and update the **Interval** and **Frequency** fields. If you update the flow interval from every day to every week, the flow runs once a week and sends email notifications.
 
-You can update email notification in the **Conditions** section. When the **Goal due reminder** flow is run, the email notification is sent to all workers where the goal end date is the current date, and the goal isn't completed or canceled. To send notifications to all workers where a goal is due on a specific date, change the condition by using **Is less than and equal to**.
+You can update the email notification in the **Conditions** section. When the **Goal due reminder** flow runs, it sends the email notification to all workers where the goal end date is the current date, and the goal isn't completed or canceled. To send notifications to all workers where a goal is due on a specific date, change the condition by using **Is less than and equal to**.

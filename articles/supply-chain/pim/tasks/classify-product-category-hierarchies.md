@@ -4,7 +4,7 @@ description: Learn how to classify a product using category hierarchies, includi
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 5/20/2026
+ms.date: 05/20/2026
 ms.custom:
 ms.reviewer: kamaybac    
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole

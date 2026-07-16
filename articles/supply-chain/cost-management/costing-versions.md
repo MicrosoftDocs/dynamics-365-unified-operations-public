@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 ms.topic: overview
-ms.date: 01/30/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -52,7 +52,7 @@ Otherwise, the sales price records for items are used only as reference informat
 
 ## Item purchase prices for BOM calculations
 
-The main reason for enabling purchase price data is to define purchase price records for component items, so that these records can be used to calculate the costs of manufactured items. The item purchase price records must be manually entered.
+The main reason for enabling purchase price data is to define purchase price records for component items to calculate the costs of manufactured items. Enter the item purchase price records manually.
 
 To enable purchase price content, you first define a BOM calculation group that contains a cost price model for the item’s purchase price, and assign the BOM calculation group to purchased items. You then use a cost price model for the BOM calculation group when you perform BOM calculations that use planned costs to calculate the sales price of manufactured items.
 

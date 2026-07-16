@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 04/24/2026
+ms.date: 07/01/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -24,7 +24,7 @@ The Procurement Agent helps you identify and follow up on purchase orders that v
 
 The Procurement Agent helps you perform the following actions:
 
-- Create agent tasks to find purchase orders that require follow-up. Each user has unique tasks, so you can create and adjust them to meet your specific business needs. Two default tasks are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete the default tasks as required to meet your business needs.
+- Create agent tasks to find purchase orders that require follow-up. Each user has unique tasks, so you can create and adjust them to meet your specific business needs. Two default tasks are provided. One task follows up on unconfirmed purchase orders, and the other task follows up on late deliveries. You can modify or delete the default tasks as required to meet your business needs.
 - Configure how emails are generated for each task.
 - Review the draft emails that the agent generates. After you review each message, you can modify it, and send it. To generate the emails, the agent uses data from the purchase order lines and related tables.
 
@@ -68,7 +68,7 @@ The following procedure explains how to set up agent tasks to find purchase orde
     > [!IMPORTANT]
     > If your system is set up to send emails automatically, the email footer is mandatory.
 
-1. Select the tone of the emails (*Casual* or *Formal*, *Urgent, or *Non-urgent*).
+1. Select the tone of the emails (*Casual* or *Formal*, *Urgent*, or *Non-urgent*).
 
 ### Examples
 
@@ -88,6 +88,18 @@ Here are some examples of other tasks that you might set up:
     - The **Created date** field is set to a date that's between three days before the current date and current date.
     - The **Orderer (header)** field on the header is set to your user account (the current user).
     - The **Vendor (group)** field is set to *A*.
+
+- You might want to send a second follow-up email if a vendor doesn't reply to the first one you sent. However, agent tasks are designed to generate just one email per purchase order unless the purchase order changes. Therefore, to continue following up when no vendor reply is received, create two agent tasks that use the same core criteria but different date ranges that don't overlap. You can use any suitable date field to define the ranges. For example, you can use the delivery date, as illustrated in the following table:
+
+    | Agent task | Example criteria |
+    |---|---|
+    | *Recent overdue purchase orders* | The delivery date is between seven days ago and the current date. |
+    | *Extended overdue purchase orders* | The delivery date is earlier than eight days ago. |
+
+    This setup lets the first task generate draft emails for recently overdue purchase orders while a second task generate draft emails for purchase orders that are still overdue after that. Even though no purchase order changes are made, a second draft email is generated when the order moves into the second date range.
+
+    > [!IMPORTANT]
+    > Make sure that the date ranges don't overlap. Otherwise, the same purchase order might get evaluated by multiple tasks at the same time.
 
 ## Configure automatic sending of follow-up emails
 

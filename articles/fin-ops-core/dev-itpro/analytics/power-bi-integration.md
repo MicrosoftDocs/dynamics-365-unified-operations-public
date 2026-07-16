@@ -3,7 +3,7 @@ title: Features available through the Power BI integration
 description: Learn about how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your data.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

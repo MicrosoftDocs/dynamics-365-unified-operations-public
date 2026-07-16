@@ -4,7 +4,7 @@ description: Learn how to create and show custom instructions for each step of e
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/20/2026
+ms.date: 05/20/2026
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepListPage
 ---

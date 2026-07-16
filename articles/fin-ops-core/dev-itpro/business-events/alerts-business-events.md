@@ -3,7 +3,7 @@ title: Alerts as business events
 description: Learn about alerts as business events through understanding the two kinds of alerts that can be configured by users.
 author: Sunil-Garg
 ms.author: sunilg
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/08/2026
 ms.custom: 
 ms.reviewer: johnmichalak

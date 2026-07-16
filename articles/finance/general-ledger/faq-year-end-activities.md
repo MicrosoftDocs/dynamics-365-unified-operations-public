@@ -4,7 +4,7 @@ description: Access answers to questions that can arise when closing a year, and
 author: moaamer
 ms.author: moaamer
 ms.topic: faq
-ms.date: 11/14/2024
+ms.date: 06/04/2026
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -14,7 +14,7 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Year-end activities FAQ 
+# Year-end activities FAQ
 
 [!include [banner](../includes/banner.md)]
 
@@ -22,60 +22,61 @@ This article lists questions that can arise when closing a year, and the answers
 
 ## General ledger year-end enhancements
 
-The setup of the year-end closing templates has moved to a new setup page, **Year-end close template setup**. The existing year-end close page becomes like the **General ledger foreign currency revaluation** page, where a list shows each time that the year-end close is run or reversed. An accounting manager can initiate the year-end close from the new page.
+The setup of the year-end closing templates is now on a new setup page, **Year-end close template setup**. The existing year-end close page works like the **General ledger foreign currency revaluation** page, where a list shows each time that the year-end close runs or reverses. An accounting manager can initiate the year-end close from the new page.
 
-To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity, and then select **Reverse year-end close**. The reversal deletes the accounting entries for the previous year-end close and won't automatically rerun the year-end close. If you enable the **General ledger year-end enhancements** feature after you've completed a year-end close, and you want to reverse the historical year-end results, run the historical year-end close again after you enable the **Delete existing year-end close entries when re-closing the year** General ledger parameter.
+To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity, and then select **Reverse year-end close**. The reversal deletes the accounting entries for the previous year-end close and doesn't automatically rerun the year-end close. If you enable the **General ledger year-end enhancements** feature after you complete a year-end close, and you want to reverse the historical year-end results, run the historical year-end close again after you enable the **Delete existing year-end close entries when re-closing the year** General ledger parameter.
 
-You can rerun the year-end close by restarting the process for the fiscal year and legal entity. The process continues to use the General ledger parameter setting to determine whether the year-end close rerun accounts for only the new or changed transactions, or whether the process will be rerun for all transactions and completely reverse the previous close.
+You can rerun the year-end close by restarting the process for the fiscal year and legal entity. The process continues to use the General ledger parameter setting to determine whether the year-end close rerun accounts for only the new or changed transactions, or whether the process reruns for all transactions and completely reverses the previous close.
 
-## General ledger - Why can’t I view my previous year closings in the History section of the Year-end close page?
-Subsequent year-end close process information is maintained. Vouchers from all year-end close processes, can be viewed on the **Voucher transactions** page. 
+## General ledger - Why can't I view my previous year closings in the History section of the Year-end close page?
 
-## General ledger: The year-end close process is failing because of the following error: "The year-end close can't be run because one or more ledger transactions posted into the fiscal year that you are closing were settled to a ledger transaction in a different fiscal year." What does this error mean?
+The system maintains subsequent year-end close process information. You can view vouchers from all year-end close processes on the **Voucher transactions** page.
 
-Only settled ledger transaction from the fiscal year that's being closed are excluded from the opening balance. This behavior causes debits and credit to be out of balance. For more information, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).
+## General ledger: The year-end close process is failing because of the following error: "The year-end close can't be run because one or more ledger transactions posted into the fiscal year that you're closing were settled to a ledger transaction in a different fiscal year." What does this error mean?
 
-## General ledger: Reversal of the year-end close process is failing because of the following error: "The year-end close for 1/1/2022 can't be reversed because beginning balance transaction have been ledger settled in fiscal year 1/1/2023." What does this error mean?
+Only settled ledger transactions from the fiscal year that you're closing are excluded from the opening balance. This behavior causes debits and credits to be out of balance. For more information, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).
 
-Because the **Awareness between ledger settlement and year-end close** feature is enabled, reversals of the year-end processing aren't allowed if the opening transactions have been settled in the new fiscal year. Reverse the ledger settlement in the new 2023 fiscal year before you reverse the year-end close for January 1, 2022. Alternatively, reclose the year for January 1, 2022, but only for new adjusting entries. To reclose the year for adjustments only, disable the **Delete existing year-end entries when re-closing the year** General ledger parameter.
+## General ledger: Reversal of the year-end close process is failing because of the following error: "The year-end close for 1/1/2025 can't be reversed because beginning balance transactions are ledger settled in fiscal year 1/1/2026." What does this error mean?
+
+Because the **Awareness between ledger settlement and year-end close** feature is enabled, reversals of the year-end processing aren't allowed if the opening transactions are settled in the new fiscal year. Reverse the ledger settlement in the new 2026 fiscal year before you reverse the year-end close for January 1, 2025. Alternatively, reclose the year for January 1, 2025, but only for new adjusting entries. To reclose the year for adjustments only, disable the **Delete existing year-end entries when re-closing the year** General ledger parameter.
 
 ## General ledger: Why isn't the ledger settlement automation processing December's ledger settlement transactions?
 
-The **Automate ledger settlements** feature runs the automation for transactions that are dated from the first day of the fiscal year to the current date when the occurrence runs. For fiscal years that end on December 31, you might have to adjust the execution date of your occurrence to ensure that it's run in December. For example, automation is set up to run on the first day of every month. This automation will be run on December 1, 2022, and is scheduled to run on January 1, 2023. We recommend that you change the occurrence for January 1, 2023, so that it runs instead on December 31, 2022. This change will ensure that the transactions that are dated December 2 through 31 will be considered for automatic settlement.
+The **Automate ledger settlements** feature runs the automation for transactions that are dated from the first day of the fiscal year to the current date when the occurrence runs. For fiscal years that end on December 31, you might have to adjust the execution date of your occurrence to ensure that it runs in December. For example, automation is set up to run on the first day of every month. This automation runs on December 1, 2025, and is scheduled to run on January 1, 2026. Change the occurrence for January 1, 2026, so that it runs instead on December 31, 2025. This change ensures that the transactions that are dated December 2 through 31 are considered for automatic settlement.
 
 ## General ledger: What's the difference between the Reverse year-end close action and the Delete existing year-end entries when reclosing parameter for year-end close?
 
-Confusion might exist about the difference between the **Reverse year-end close** action, and the **Delete existing year-end entries when reclosing** parameter in General ledger (**General ledger \> Ledger setup \> General ledger parameters**).
+You might be confused about the difference between the **Reverse year-end close** action and the **Delete existing year-end entries when reclosing** parameter in General ledger (**General ledger \> Ledger setup \> General ledger parameters**).
 
-Select the **Reverse year-end close** action when you're running the year-end close process to delete all closing balance and opening balance entries, as if the year-end close had never been run. In this case, the vouchers are deleted. The year-end close won't run again automatically. To run the year-end close, select **Run year-end close**.
+Select the **Reverse year-end close** action when you're running the year-end close process to delete all closing balance and opening balance entries, as if the year-end close never ran. In this case, the vouchers are deleted. The year-end close process doesn't run again automatically. To run the year-end close process, select **Run year-end close**.
 
-The **Delete existing year-end entries when re-closing the year** parameter in General ledger is used only when you're running (not reversing) the year-end close. If the parameter is set to **Yes**, all closing balance and opening balance entries are deleted, and the year-end close will run again. This option is used when an organization wants all transactions, including adjustments since the last year-end close, to be posted in a single accounting entry for the closing balance and opening balance entries. If the parameter is set to **No**, all closing balance and opening balance entries remain. They aren't deleted. Instead, a new closing balance and opening balance entry will be created only for the delta or new transactions that have been posted since the last year-end close for that fiscal year.
+Use the **Delete existing year-end entries when re-closing the year** parameter in General ledger only when you're running (not reversing) the year-end close. If you set the parameter to **Yes**, all closing balance and opening balance entries are deleted, and the year-end close process runs again. Use this option when an organization wants all transactions, including adjustments since the last year-end close, to be posted in a single accounting entry for the closing balance and opening balance entries. If you set the parameter to **No**, all closing balance and opening balance entries remain. They aren't deleted. Instead, new closing balance and opening balance entries are created only for the delta or new transactions that are posted since the last year-end close for that fiscal year.
 
 > [!NOTE]
-> The closing balance entry is created in the year being closed. This only occurs if the **Create closing transactions during transfer** parameter in General ledger is set to **Yes**. The opening balance entry is always created, because this is the beginning balance for the next year.
+> The closing balance entry is created in the year being closed. This only occurs if the **Create closing transactions during transfer** parameter in General ledger is set to **Yes**. The opening balance entry is always created, because this entry is the beginning balance for the next year.
 
 ## General ledger: What is the difference between “Close all” and “Close single” options on the Transfer profit and loss dimension section of the Year-end close process?
 
-**Close all** maintains the original financial dimension values from posted transactions and uses them to create the opening balances for the retained earnings account. Separate retained earnings beginning balances are created for each unique combination of financial dimension values. If **Close single** is selected, all posted transactions that have that financial dimension will be summarized into a retained earnings beginning balance for the dimension value that is entered in the field that appears after **Close single**. 
+**Close all** maintains the original financial dimension values from posted transactions and uses them to create the opening balances for the retained earnings account. Separate retained earnings beginning balances are created for each unique combination of financial dimension values. If you select **Close single**, all posted transactions that have that financial dimension are summarized into a retained earnings beginning balance for the dimension value that you enter in the field that appears after **Close single**.
 
-For example, all transactions for the fiscal year were posted with the account structure Main account - Department. For the Department financial dimension on the template, **Close single** is selected, and 100 is entered as the dimension value. If the total income of all transactions that are posted to departments 200, 300, and 400 is $100,000, one opening balance is created for Retained earnings - 100. If you select **Close single** but leave the financial dimension value blank, all transactions are posted to retained earnings, and the dimension value is blank.
+For example, all transactions for the fiscal year are posted with the account structure Main account - Department. For the Department financial dimension on the template, you select **Close single**, and enter 100 as the dimension value. If the total income of all transactions that are posted to departments 200, 300, and 400 is $100,000, one opening balance is created for Retained earnings - 100. If you select **Close single** but leave the financial dimension value blank, all transactions are posted to retained earnings, and the dimension value is blank.
 
 ## General ledger: When I select “Close single” option on the Transfer profit and loss dimension section of the Year-end close process, will my detailed transactional information be lost?
 
-The **Close all** and **Close single** options are used to specify which financial dimensions on transactions that are posted to profit and loss accounts are transferred to the retained earnings main account. The historical, detailed posting to the profit and loss accounts is not impacted and will remain detail. The option impacts the level of detail that is transferred to the retained earnings accounts as an opening balance in the new year. 
+Use the **Close all** and **Close single** options to specify which financial dimensions on transactions that are posted to profit and loss accounts are transferred to the retained earnings main account. The historical, detailed posting to the profit and loss accounts isn't impacted and remains detailed. The option impacts the level of detail that is transferred to the retained earnings accounts as an opening balance in the new year.
 
-## General ledger: The year-end close process is failing because the reporting currency for the year does not balance. What does this mean?
+## General ledger: The year-end close process is failing because the reporting currency for the year doesn't balance. What does this mean?
 
-This error can be experienced after enabling the **Awareness between ledger settlement and year end close** feature. When the feature is enabled, ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year when running the general ledger year end close. Excluding ledger transactions that are settled may present a challenge for customers at year-end close if the Ledger is defined with a reporting currency.   
-Ledger settlement is performed for only the accounting currency. When the ledger transactions are settled, validation only ensures the accounting currency debits equal the accounting currency credits. The reporting currency amounts for those ledger transactions aren’t validated and may not have debits = credits. In addition, ledger settlement doesn’t automatically calculate and post a gain/loss in the reporting currency.  Due to these limitations, a gain/loss transaction must exist in the reporting currency when performing ledger settlement. If the gain/loss isn’t included in the ledger settlement, the year-end close will result in an out of balance message. For more information, see [Awareness between ledger settlement feature and reporting currency is out of balance](reporting-currency-yec.md).
+This error can be experienced after enabling the **Awareness between ledger settlement and year end close** feature. When the feature is enabled, ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year when running the general ledger year end close. Excluding ledger transactions that are settled may present a challenge for customers at year-end close if the Ledger is defined with a reporting currency.
+Ledger settlement is performed for only the accounting currency. When the ledger transactions are settled, validation only ensures the accounting currency debits equal the accounting currency credits. The reporting currency amounts for those ledger transactions aren’t validated and may not have debits = credits. In addition, ledger settlement doesn’t automatically calculate and post a gain/loss in the reporting currency.  Due to these limitations, a gain/loss transaction must exist in the reporting currency when performing ledger settlement. If the gain/loss isn’t included in the ledger settlement, the year-end close results in an out of balance message. For more information, see [Awareness between ledger settlement feature and reporting currency is out of balance](reporting-currency-yec.md).
 
-## General ledger: What can be changed to help enhance the performance of year-end processing?
+## General ledger: What can I change to help enhance the performance of year-end processing?
 
 You can make several changes to help improve the performance of the year-end close. We recommend that you evaluate these suggested changes to determine whether they're appropriate for your organization.
 
 ### Optimize year-end close service
 
-The **Optimize year-end close** service empowers Microsoft Dynamics 365 Finance customers to accelerate their year-end close by moving the heavy year-end processing to a microservice. The time that's saved through an efficient year-end close enables each Finance team to react in a timely manner to required adjustments, ending in the generation of the financial reports. By processing the year-end close on a microservice, valuable resources are freed up. The processing elevation minimizes the load on the SQL server and gives customers an opportunity to accelerate the year-end close processing.
+The **Optimize year-end close** service helps Microsoft Dynamics 365 Finance customers speed up their year-end close by moving the heavy year-end processing to a microservice. The time saved through an efficient year-end close enables each Finance team to react promptly to required adjustments, ending in the generation of the financial reports. By processing the year-end close on a microservice, you free up valuable resources. The processing elevation minimizes the load on the SQL server and gives customers an opportunity to accelerate the year-end close processing.
 
 For more information, see [Optimize year-end close](optimize-year-end-close.md).
 
@@ -83,7 +84,7 @@ For more information, see [Optimize year-end close](optimize-year-end-close.md).
 
 When you run the year-end close, each dimension set balance is rebuilt. This behavior has a direct impact on performance. Some organizations create dimension sets unnecessarily, because they were used at one point or might be used at some point. Because these unnecessary dimension sets are rebuilt during the year-end close, time is added to the process. Take the time to evaluate your dimension sets and delete any that are unnecessary.
 
-The unnecessary dimension sets also impact the batch job **BudgetDimensionFocusInitializeBalance** (**General ledger \> Chart of accounts \> Dimensions \> Financial dimension sets**).
+The unnecessary dimension sets also affect the batch job **BudgetDimensionFocusInitializeBalance** (**General ledger \> Chart of accounts \> Dimensions \> Financial dimension sets**).
 
 [![Financial dimension sets.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
@@ -95,19 +96,19 @@ We recommend that you evaluate your organization's requirements and if possible,
 
 ### Highly volatile dimensions
 
-A highly volatile dimension provides little to no reuse by itself and in combination with other dimensions. There are two types of highly volatile dimensions. The first type is a dimension that is individually highly volatile. Typically, this type of highly volatile dimension appears on only a single transaction, or on small sets of transactions. The second type is a dimension that becomes highly volatile in combination with one or more additional dimensions that exhibit the same potential based on the possible permutations that can be generated. A highly volatile dimension can have a significant impact on the performance of the year-end close process. To minimize performance issues, define all highly volatile dimensions as **Close single** in the year-end close setup as described in the preceding section.
+A highly volatile dimension provides little to no reuse by itself and in combination with other dimensions. There are two types of highly volatile dimensions. The first type is a dimension that's individually highly volatile. Typically, this type of highly volatile dimension appears on only a single transaction, or on small sets of transactions. The second type is a dimension that becomes highly volatile in combination with one or more additional dimensions that exhibit the same potential based on the possible permutations that can be generated. A highly volatile dimension can significantly affect the performance of the year-end close process. To minimize performance problems, define all highly volatile dimensions as **Close single** in the year-end close setup as described in the preceding section.
 
-## Accounts payable: What changes have been made to support 1099 year-end reporting for 2022?
+## Accounts payable: What changes support 1099 year-end reporting for 2022?
 
 #### Update to all 1099 forms
 
-The following changes have been made to all 1099 forms for the 2022 tax year:
+The following changes apply to all 1099 forms for the 2022 tax year:
 
-- In 2021, the year was fixed on 1099 forms. Starting in 2022, the year is filled in by the report.
+- In 2021, the year was fixed on 1099 forms. Starting in 2022, the report fills in the year.
 
 #### 1099-MISC
 
-The following updates have been made on Form 1099-MISC for the 2022 tax year:
+The following updates apply to Form 1099-MISC for the 2022 tax year:
 
 - Box 13: Now indicates the Foreign Account Tax Compliance Act (FATCA) filing requirement.
 - Box 14: Now used to report the excess golden parachute payments.
@@ -118,15 +119,15 @@ The following updates have been made on Form 1099-MISC for the 2022 tax year:
 
 ## Accounts payable: 1099 – How do I change the 1099 box and values for a vendor that wasn't tracking 1099 information throughout the year?
 
-Use the **Update 1099** functionality to go through previously paid invoice transactions and reassign the 1099 data in an appropriate manner, according to the settings on the **Tax 1099** tab of the **Vendor** page. To use the **Update 1099** functionality, go to **Accounts payable \> Vendors \> All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, select **Update 1099**.
+Use the **Update 1099** functionality to review previously paid invoice transactions and reassign the 1099 data in an appropriate manner, according to the settings on the **Tax 1099** tab of the **Vendor** page. To use the **Update 1099** functionality, go to **Accounts payable \> Vendors \> All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, select **Update 1099**.
 
 ## Can I run the Update 1099 functionality for all my vendors at once?
 
-You can use the **Update 1099 information for multiple vendors** page to update the 1099 box on a vendor record, and to update transactions with the information from the 1099 box. To open this page, go to **Accounts payable \> Periodic task \> Tax 1099**. To access the page, you must be assigned to the **Update 1099 box and transactions for multiple vendors** security privilege.
+Use the **Update 1099 information for multiple vendors** page to update the 1099 box on a vendor record, and to update transactions with the information from the 1099 box. To open this page, go to **Accounts payable \> Periodic task \> Tax 1099**. To access the page, you must be assigned to the **Update 1099 box and transactions for multiple vendors** security privilege.
 
 ## Accounts payable: 1099 – Recalculate existing 1099 amounts versus Update all in the Update 1099 utility
 
-The **Recalculate existing 1099 amounts** checkbox resets the 1099 amount to the total paid values when it's used together with the **Update all** checkbox.
+The **Recalculate existing 1099 amounts** checkbox resets the 1099 amount to the total paid values when you use it together with the **Update all** checkbox.
 
 [![Tax 1099 transactions: Before running the update routine.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
@@ -134,7 +135,7 @@ The **Recalculate existing 1099 amounts** checkbox comes into play only if there
 
 [![Tax 1099 transactions: Marking both Update all and Recalculate existing 1099 amounts.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
-When this invoice is paid, $500.00 will be the 1099 amount that's paid. If you perform the recalculation routine, the 1099 amount will be changed to $1,000.00, which is the total that was paid.
+When you pay this invoice, $500.00 is the 1099 amount that's paid. If you perform the recalculation routine, the 1099 amount changes to $1,000.00, which is the total that you paid.
 
 [![Tax 1099 transactions: After running the 1099 routine.](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
@@ -142,7 +143,7 @@ When this invoice is paid, $500.00 will be the 1099 amount that's paid. If you p
 
 An organization might need to manually create 1099 transactions that aren't associated with an invoice. You can add manual 1099 transactions by going to **Accounts payable \> Periodic tasks \> Tax 1099 \> Vendor settlement for 1099s**. Select the **Manual 1099 transactions** button.
 
-Manually created 1099 transactions aren't updated with the **Update all** process or the **Recalculate existing 1099 amounts** process in the **Update 1099** utility.
+Manually created 1099 transactions aren't updated by the **Update all** process or the **Recalculate existing 1099 amounts** process in the **Update 1099** utility.
 
 ## Accounts payable: 1099 – Does Dynamics 365 Finance support the 1096 form?
 
@@ -150,7 +151,7 @@ Dynamics 365 Finance doesn't print the 1096 Annual Summary and Transmittal of US
 
 ## Accounts payable: 1099 – Are there any new features that support 1099 reporting for Public sector?
 
-A new Public sector feature, **Update 1099 information by main account**, has been added, which you can enable in the **Feature management** workspace. This feature lets you associate the 1099 values for a vendor by the main account in the accounting distribution, rather than the default account on the vendor record.
+A new Public sector feature, **Update 1099 information by main account**, is available in the **Feature management** workspace. When you enable this feature, you can associate the 1099 values for a vendor by the main account in the accounting distribution, rather than the default account on the vendor record.
 
 For more information, see [Set up vendors for 1099 reporting](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
 

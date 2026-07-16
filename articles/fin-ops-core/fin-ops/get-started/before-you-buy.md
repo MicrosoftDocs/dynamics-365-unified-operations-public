@@ -3,7 +3,7 @@ title: Before you buy
 description: Access step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: get-started
 ms.date: 11/20/2025
 ms.reviewer: johnmichalak
 audience: Application User

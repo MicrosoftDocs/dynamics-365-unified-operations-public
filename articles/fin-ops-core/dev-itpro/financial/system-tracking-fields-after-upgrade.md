@@ -3,7 +3,7 @@ title: System tracking fields on financial tables
 description: Learn about the system tracking fields that are enabled on tables across the application for auditing and data integrity purposes.
 author: anaborges
 ms.author: anaborges
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/03/2026
 ms.reviewer: twheeloc
 audience: Developer

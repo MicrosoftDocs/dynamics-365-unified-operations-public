@@ -2,7 +2,7 @@
 title: Enable Tap to Pay on iPhone to run the Store Commerce app
 description: Learn how to set up and enable Tap to Pay on iPhone to run the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: shajain
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -50,8 +50,8 @@ The Tap to Pay on iPhone feature works on iPhones that run the Store Commerce ap
 
 To enable Tap to Pay in the hardware profile, follow these steps:
 
-1. In Commerce headquarters, go to **Retail and commerce** \> **Channel setup** \> **POS setup**.
-1. On the **Registers** page, open the register that runs the Store Commerce app on iPhone. 
+1. In Commerce headquarters, go to **Retail and commerce** > **Channel setup** > **POS setup**.
+1. On the **Registers** page, open the register that runs the Store Commerce app on iPhone.
 1. Open the associated hardware profile.
 1. Make sure that you configure the Adyen connector to accept the credit cards that you want to accept through Tap to Pay on iPhone, such as Visa, MasterCard, and American Express. If the Adyen connector isn't set up yet, set it up. For more information, see [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md).
 
@@ -72,7 +72,7 @@ The following example image shows the configuration of PIN pad properties for a 
 
 ### Associate a payment method with the store
 
-Tap to Pay on iPhone doesn't require adding a new payment method to the store. Instead, it relies on the existing payment method mapped to the **Pay card** operation. In headquarters, go to **Retail and commerce** \> **Channels** \> **Stores**. On the **All stores** page, confirm that a payment method is associated with the **Pay card** operation. If the store doesn't have a payment method for this operation, create a new payment method to capture credit or debit cards.
+Tap to Pay on iPhone doesn't require adding a new payment method to the store. Instead, it relies on the existing payment method mapped to the **Pay card** operation. In headquarters, go to **Retail and commerce** > **Channels** > **Stores**. On the **All stores** page, confirm that a payment method is associated with the **Pay card** operation. If the store doesn't have a payment method for this operation, create a new payment method to capture credit or debit cards.
 
 ### Enable a Hardware station for the store
 
@@ -89,14 +89,19 @@ To support these additional use cases, pair the iPhone that runs the Store Comme
 
 ### Send the Adyen store information with the authorization calls (Optional)
 
-If you need to share the Adyen store information with the authorization request, provide it by using any one of the following three methods: 
+If you need to share the Adyen store information with the authorization request, provide it by using any one of the following three methods:
 
-- Add a key value pair to the **Custom setting** property of the Adyen connector in the hardware profile. For example, you can add `AdyenStore: AdyenStoreName`, replacing `AdyenStoreName` with your Adyen store name. Use this method if you only share a hardware profile with one Adyen store. If you provide the Adyen store information at the hardware profile level, this setting overrides the Adyen store value that might be set using either of the two following methods.
+- Add a key value pair to the **Custom setting** property of the Adyen connector in the hardware profile. For example, you can add `"AdyenStore": "AdyenStoreName"`, replacing `AdyenStoreName` with your Adyen store name. Use this method if you only share a hardware profile with one Adyen store. If you provide the Adyen store information at the hardware profile level, this setting overrides the Adyen store value that might be set using either of the two following methods.
+  
+  > [!NOTE]
+  > You should pass the key value pair in double quotation marks.
+
 - Add the Adyen store name as a part of register name by including the Adyen store name within opening and closing hash symbols ("#"). For example, if you name your register `HOUSTON-Register 14 #AdyenStoreName#`, then `AdyenStoreName` represents the Adyen store associated with the register. Use this method if you want the flexibility to provide the Adyen store name by register. If you provide the Adyen store information at the register level, this setting overrides the Adyen store value that might be set at the store level.
+
 - Add the Adyen store name as a part of the store name by including it within opening and closing hash symbols ("#"). For example, if you name your Store `HOUSTON #AdyenStoreName#`, then `AdyenStoreName` represents the Adyen store associated with the store. Use this method if you have one Adyen store corresponding to one store.
 
 > [!NOTE]
-> This capability was backported to Commerce versions 10.0.45 and 10.0.46, and is hidden behind a flighting flag. If you need to enable this capability in your environment, contact Microsoft support. 
+> This capability was backported to Commerce versions 10.0.45 and 10.0.46, and is hidden behind a flighting flag. If you need to enable this capability in your environment, contact Microsoft support.
 
 ### Test with test and live environments
 
@@ -113,20 +118,20 @@ For test environments, set the **Gateway environment** property of the Adyen con
 
     1. Paste the value into the field for the **Optional Domain** property of the Adyen connector.
 
-- If you want to pair an external PIN pad terminal with an iPhone, set the **Gateway environment** property of the Adyen connector to **Live**. You must also set the **Custom Settings** property of the Adyen connector in the hardware profile to **iOSCustomGatewayTTP:\<*Prefix*\>**, where **\<*Prefix*\>** is the prefix value in double quotation marks. For example, if the prefix value is "ecc3f8b08d323232-MS", the value of the **Custom Settings** property is `iOSCustomGatewayTTP:"ecc3f8b08d323232-MS"`.
+- If you want to pair an external PIN pad terminal with an iPhone, set the **Gateway environment** property of the Adyen connector to **Live**. You must also set the **Custom Settings** property of the Adyen connector in the hardware profile to **iOSCustomGatewayTTP:\<*Prefix*\>**, where **\<*Prefix*\>** is the prefix value in double quotation marks. For example, if the prefix value is "ecc3f8b08d323232-MS", the value of the **Custom Settings** property is `"iOSCustomGatewayTTP":"ecc3f8b08d323232-MS"`.
 
     > [!NOTE]
-    > The prefix value should be passed in double quotation marks.
+    > You should pass the prefix value in double quotation marks.
 
 The following example image shows the configuration of a hardware profile where the **Gateway environment** property is set to **Live**.
 
 :::image type="content" source="../media/sampleHWP.png" alt-text="Screenshot of a hardware profile that has sample data for a Live setup.":::
 
-After you set the **Gateway environment** property, in headquarters, go to **Retail and Commerce IT** \> **Distribution schedule**, and run the **9999** schedule job to update the channel components with your changes.
+After you set the **Gateway environment** property, in headquarters, go to **Retail and Commerce IT** > **Distribution schedule**, and run the **9999** schedule job to update the channel components with your changes.
 
 ## The Tap to Pay on iPhone user experience
 
-- When the store associate is ready to take a payment for a transaction, they select the subtotal amount of the transaction. A list of supported payment methods then opens.
+- When the store associate is ready to take payment for a transaction, they select the subtotal amount of the transaction. A list of supported payment methods then opens.
 - If the Tap to Pay on iPhone feature is enabled, a **Tap to Pay on iPhone** button appears as the first payment method.
 - If the user selects **Tap to Pay on iPhone**, a page appears where the store associate can specify the amount that should be captured via Tap to Pay on iPhone. This page includes a **Tender payment** button on the bottom toolbar.
 - If you don't configure an optional external PIN pad with the Store Commerce app, selecting **Pay card** can also trigger the Tap to Pay on iPhone experience. However, if you configure an external PIN pad, selecting **Pay card** activates the PIN pad instead of triggering the Tap to Pay on iPhone experience.

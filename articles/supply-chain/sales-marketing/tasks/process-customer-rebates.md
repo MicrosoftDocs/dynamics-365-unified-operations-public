@@ -4,7 +4,7 @@ description: Learn how to process customer rebates from claim generation to the 
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 5/22/2026
+ms.date: 05/22/2026
 ms.custom:
 ms.reviewer: kamaybac 
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup

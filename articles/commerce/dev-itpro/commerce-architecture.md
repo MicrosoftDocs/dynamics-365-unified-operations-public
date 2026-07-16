@@ -2,11 +2,11 @@
 title: Dynamics 365 Commerce architecture overview
 description: This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
-ms.date: 02/12/2026
+ms.date: 06/07/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2020-03-01
 ms.search.form: RetailITWorkspace
 ms.custom: 
@@ -17,23 +17,23 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products. 
+This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 
 The following illustration shows an overview of Dynamics 365 Commerce components.
 
-:::image type="content" source="../media/Commerce_Architecture_Component_Overview.png" alt-text="Diagram of the Dynamics 365 Commerce component overview.":::
+:::image type="content" source="../media/Commerce_Architecture_Component_Overview.png" alt-text="Diagram of the Dynamics 365 Commerce component overview." lightbox="../media/Commerce_Architecture_Component_Overview.png":::
 
 ## Architecture benefits
 
 ### Omni-enabled headless commerce engine
 
-The Commerce Scale Unit hosts the headless commerce engine. It serves as the central integration point for all commerce business logic, and powers a complete omni-channel solution across physical and digital stores. The Commerce Scale Unit is built by using a portable architecture, and allows for flexible hosting options across cloud, edge, and hybrid topologies. 
+The Commerce Scale Unit hosts the headless commerce engine. It serves as the central integration point for all commerce business logic, and powers a complete omnichannel solution across physical and digital stores. The Commerce Scale Unit is built by using a portable architecture, and allows for flexible hosting options across cloud, edge, and hybrid topologies.
 
-The headless commerce engine powers all native Dynamics 365 Commerce channels, including in-store and e-commerce channels. It also serves as the single integration point for partner channel solutions. Therefore, those solutions can take advantage of the power of Dynamics 365 Commerce business logic and integration with other commerce-related services that are provided by Microsoft and independent software vendors (ISVs).
+The headless commerce engine powers all native Dynamics 365 Commerce channels, including in-store and e-commerce channels. It also serves as the single integration point for partner channel solutions. Therefore, those solutions can take advantage of the power of Dynamics 365 Commerce business logic and integration with other commerce-related services that Microsoft and independent software vendors (ISVs) provide.
 
 ### Interconnected business processes
 
-The platform shared among the various Dynamics 365 business applications, such as Dynamics 365 Commerce, Dynamics 365 Supply Chain Management, and Dynamics 365 Finance, provides a set of interconnected business processes that users can immediately benefit from. All back-office capabilities across these applications are built on the same web experience and data stores. Therefore, there's a seamless flow of business processes across various functions in the organization, but custom integrations across applications and services aren't required. The out-of-box integration between the headless commerce engine and the back office further expands the coverage of these interconnected business processes across the back office and commerce channels.
+The platform shared among the various Dynamics 365 business applications, such as Dynamics 365 Commerce, Dynamics 365 Supply Chain Management, and Dynamics 365 Finance, provides a set of interconnected business processes that users can immediately benefit from. All back-office capabilities across these applications are built on the same web experience and data stores. Therefore, there's a seamless flow of business processes across various functions in the organization, but custom integrations aren't required. The out-of-box integration between the headless commerce engine and the back office further expands the coverage of these interconnected business processes across the back office and commerce channels.
 
 ### Unified data
 
@@ -41,11 +41,11 @@ Dynamics 365 Commerce provides a unified data solution through out-of-the-box in
 
 ### Powered by AI and analytics
 
-Because Data Lake Storage provides accessible, persistent, up-to-date, and unified organizational data, the whole organization has a "single source of truth" that analytics, artificial intelligence (AI), and machine learning (ML) can apply on top of. By using this approach, the organization can derive insights and get key performance indicators (KPIs) that optimize and automate business processes across all channels.
+Because Data Lake Storage provides accessible, persistent, up-to-date, and unified organizational data, the whole organization has a single source of truth that analytics, artificial intelligence (AI), and machine learning (ML) can apply on top of. By using this approach, the organization can derive insights and get key performance indicators (KPIs) that optimize and automate business processes across all channels.
 
 #### Business and transactional analytical reports in POS and Commerce headquarters
 
-The prepackaged set of business and transactional analytical reports in Commerce provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding high-charts and SSRS-based reports in Store commerce point of sale (POS) systems and Commerce headquarters. The commerce analytics solution provides a comprehensive set of out-of-the-box business and transactional reports, enabling retailers to take advantage of insights across all channels.
+The prepackaged set of business and transactional analytical reports in Commerce provide retailers with intelligent insights across all points of the Commerce ecosystem by embedding high-charts and SSRS-based reports in Store commerce point of sale (POS) systems and Commerce headquarters. The commerce analytics solution provides a comprehensive set of out-of-the-box business and transactional reports, enabling retailers to take advantage of insights across all channels.
 
 The highcharts-based reports on POS are real-time, enabling store associates to analyze their channel's transactional and other POS activities at the conclusion of a transaction. This feature contrasts with the out-of-the-box reports in Commerce headquarters, which enable retailers to view analytical reports for transactional activity across all channels, once the data syncs. Channel managers use Commerce headquarters reports to focus on sales performance. They predict trends and uncover insights. They drill down in reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more.
 
@@ -55,15 +55,15 @@ The highcharts-based reports on POS are real-time, enabling store associates to 
 
 #### Dynamics 365
 
-Dynamics 365 is a collection of applications that together provide comprehensive and flexible enterprise resource planning (ERP) solutions for medium to large businesses. It provides an extensible framework and ecosystem that partners can tailor to customer-specific requirements. Dynamics 365 applications provide capabilities for their target business segments. They also take advantage of each other, and other Microsoft services and offerings, to provide solutions that help run customers' complex businesses.
+Dynamics 365 is a collection of applications that together provide comprehensive and flexible enterprise resource planning (ERP) solutions for medium to large businesses. It offers an extensible framework and ecosystem that partners can tailor to customer-specific requirements. Dynamics 365 applications provide capabilities for their target business segments. They also take advantage of each other, and other Microsoft services and offerings, to provide solutions that help run customers' complex businesses.
 
 #### POS
 
-POS simplifies the experience for the retailers by providing omnichannel solutions in emerging channels. These channels perform various Commerce business operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
+POS simplifies the experience for retailers by providing omnichannel solutions in emerging channels. These channels perform various Commerce business operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
 #### Store Commerce app
 
-The Store Commerce app is a cross-platform (Windows, iOS, and Android), multiform factor (desktop, tablet, and phone) solution for all in-store frontline workers, such as cashiers, sales associates, stock clerks, and store managers. You can deploy it as an app that has offline capabilities. Alternatively, you can deploy it in the cloud and access it through a web browser. The application is role-based and fully configurable from headquarters. It's also highly customizable, and can be extended or integrated into partner services by using the Retail software development kit (SDK).
+The Store Commerce app is a cross-platform (Windows, iOS, Android, and macOS), multiform factor (desktop, tablet, and phone) solution for all in-store frontline workers, such as cashiers, sales associates, stock clerks, and store managers. You can deploy it as an app that has offline capabilities. Alternatively, you can deploy it in the cloud and access it through a web browser. The application is role-based and fully configurable from headquarters. It's also highly customizable, and can be extended or integrated into partner services by using the Retail software development kit (SDK).
 
 In addition to standard "cash and carry" transaction processing, Store Commerce includes features for assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, cash/shift management, and reporting. For more information, see [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md) and [Choose between Store Commerce app and Store Commerce for web](MPOS-or-CPOS.md).
 
@@ -83,7 +83,7 @@ By using the headless commerce engine that the Commerce Scale Unit exposes, part
 
 #### Dynamics 365 Commerce headquarters
 
-The Dynamics 365 Commerce application, which is often referred to as the Commerce headquarters component, provides back-office capabilities that enable the configuration of products, employees, business processes, and other functionality that the business requires. It's also the application that call center workers use to provide assisted commerce-related workflows.
+The Dynamics 365 Commerce application, which is often referred to as the Commerce headquarters component, provides back-office capabilities that you can use to configure products, employees, business processes, and other functionality that your business requires. It's also the application that call center workers use to provide assisted commerce-related workflows.
 
 #### Dynamics 365 Supply Chain Management
 
@@ -118,7 +118,7 @@ Bringing Commerce Scale Units to edge computing helps accommodate scenarios wher
 
 #### Content management system
 
-A fully featured content management system (CMS) is integrated directly into the e-commerce platform. In addition to rich indexing features, the CMS provides lifecycle management for marketing materials that supplement the product information managed by the headless commerce engine. It includes features for localization and multi-item publishing through releases. The system is built on top of a scalable, resilient Azure infrastructure that includes Microsoft Entra and Azure Cosmos DB.
+The e-commerce platform integrates a full-featured content management system (CMS). Along with rich indexing features, the CMS offers lifecycle management for marketing materials that complement the product information managed by the headless commerce engine. It includes features for localization and mult-item publishing through releases. The system is built on a scalable, resilient Azure infrastructure that includes Microsoft Entra and Azure Cosmos DB.
 
 #### Digital asset management
 
@@ -144,7 +144,6 @@ Use Dynamics 365 Commerce to show product recommendations on the e-commerce webs
 
 Product recommendations let customers easily and quickly find products that they might want to purchase. Use cross-selling and upselling to help customers find more products that they didn't originally intend to buy. When you use recommendations to assist with product discovery, they can help create more conversion opportunities, increase sales revenue, and enhance customer satisfaction and retention. For more information, see [Product recommendations overview](../product-recommendations.md).
 
-
 #### Ratings and reviews
 
 The Commerce ratings and reviews solution lets online retail customers enter product reviews and ratings through the e-commerce storefront. Retailers can then show averaged ratings and review information across their e-commerce websites. Azure Cognitive Services offers automatic moderation of profane words in 40 languages, and because human approval isn't required, moderation costs are reduced. The system also offers moderator tools that can be used to respond to customer concerns, feedback, and take-down requests, and to address data requests from users. For more information, see [Rating and reviews overview](../ratings-reviews-overview.md).
@@ -159,24 +158,16 @@ When you bring your own Azure Data Lake Storage account, you can take advantage 
 
 Dataverse is the unified data store that integrates the data from all your business applications. Dynamics 365 applications such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Commerce use Dataverse to store business data. Therefore, Dataverse enables cross-business application scenarios, and can power new scenarios through Power Apps and Power Automate. For more information, see [What is Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro).
 
-## Additional resources
+## More resources
 
-[Dynamics 365 Commerce authentication flows](arch-auth-flow.md)
-
-[Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction)
-
-[Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/)
-
-[Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
-
-[Dynamics 365 Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/)
-
-[Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/)
-
-[Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/)
-
-[Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview)
-
-[Azure Cognitive Search](/azure/search/search-what-is-azure-search)
+- [Dynamics 365 Commerce authentication flows](arch-auth-flow.md)
+- [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction)
+- [Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/)
+- [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
+- [Dynamics 365 Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/)
+- [Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/)
+- [Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/)
+- [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview)
+- [Azure Cognitive Search](/azure/search/search-what-is-azure-search)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

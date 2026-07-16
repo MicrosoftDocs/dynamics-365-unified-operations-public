@@ -3,7 +3,7 @@ title: Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dyna
 description: Learn about which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises),  Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management non-managed environments.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: reference
 ms.custom: 
   - bap-template
 ms.date: 04/02/2026

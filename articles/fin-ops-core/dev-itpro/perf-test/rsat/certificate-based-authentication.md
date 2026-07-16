@@ -3,7 +3,7 @@ title: Create certificates for the RSAT certificate-based authentication
 description: Learn how to set up and use the certificate that is required for the Regression suite automation tool (RSAT).
 author: pvillads
 ms.author: pvillads
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/09/2026
 ms.reviewer: twheeloc
 audience: Developer

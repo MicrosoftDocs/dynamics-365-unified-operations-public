@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage, SalesAgreementInvoiceJournal, SalesAgreementInvoicePart
 ms.topic: overview
-ms.date: 4/27/2026
+ms.date: 04/27/2026
 ms.custom: 
   - bap-template
 ---

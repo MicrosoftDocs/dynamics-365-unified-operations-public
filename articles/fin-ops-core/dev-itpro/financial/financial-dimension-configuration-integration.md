@@ -3,7 +3,7 @@ title: Financial dimension configuration
 description: Learn about the Financial dimension configuration for integrating applications page, including outlines on financial reporting and data entities.
 author: ethanrimes
 ms.author: ethankallett
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/25/2026
 ms.reviewer: twheeloc
 audience: Developer

@@ -6,13 +6,16 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/17/2025
-ms.custom: 
+ms.date: 06/24/2026
+ms.update-cycle: 1095-days
+ms.custom:
   - bap-template
+  - evergreen
 ---
 
 # Business documents supported by Global Inventory Accounting
 
+[!INCLUDE [global-inventory-accounting-deprecation-banner](../includes/global-inventory-accounting-deprecation-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 After the Global Inventory Accounting Add-in is fully set up, it's ready to process inventory-related documents that are entered in Microsoft Dynamics 365 Supply Chain Management.

@@ -3,7 +3,7 @@ title: Synchronize sales invoice headers and lines directly from Supply Chain Ma
 description: Learn about the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Dynamics 365 Supply Chain Management to Sales. 
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: integration
 ms.date: 03/13/2026
 ms.custom: 
 ms.reviewer: kamaybac

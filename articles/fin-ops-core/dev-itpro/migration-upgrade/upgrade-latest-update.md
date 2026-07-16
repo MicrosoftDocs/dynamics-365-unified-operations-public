@@ -3,7 +3,7 @@ title: Process for moving to the latest update of finance and operations
 description: Learn about the process for moving to the latest update of finance and operations, including definitions and an overview on paths to one version.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

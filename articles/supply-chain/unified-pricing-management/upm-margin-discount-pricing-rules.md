@@ -4,7 +4,7 @@ description: Learn how to configure pricing rules for margin component price adj
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
-ms.date: 4/27/2026
+ms.date: 04/27/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdjustPriceAttributeGroupEdit, GUPDiscountPriceComponentGroupExclusionList, GUPFundList, RetailMixAndMatchLineGroupSetup

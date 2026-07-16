@@ -1,10 +1,10 @@
 ---
 title: Set up advanced bank reconciliation import by using Electronic reporting
 description: Learn about how to use Electronic reporting to set up the advanced bank reconciliation import process, including a step-by-step process.
-author: twheeloc
-ms.author: shpandey
+author: mukumarm
+ms.author: mukumarm
 ms.topic: how-to
-ms.date: 04/01/2026
+ms.date: 07/08/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -18,42 +18,71 @@ ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 
 [!include [banner](../includes/banner.md)]
 
-The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains how to set up the import functionality for your bank statements. The setup for bank statement import varies, depending on the format of your electronic bank statement. Microsoft Dynamics 365 Finance supports three bank statement formats: ISO20022, MT940, and BAI2.
+The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This article explains how to configure the bank statement import process by using Electronic Reporting (ER). The setup varies depending on the format of the bank statement file that your bank provides. Dynamics 365 Finance supports the following bank statement formats for Advanced Bank Reconciliation:
+
+      -  ISO 20022 CAMT.053
+      -  MT940
+      -  BAI2
 
 ## Set up the Electronic reporting configuration
+
+Before you can import and reconcile bank statements, you must import the Electronic Reporting (ER) configuration that corresponds to the bank statement format provided by your bank. The imported ER configuration is used to interpret and process bank statement files during the Advanced Bank Reconciliation import process.
 
 1. Go to **Workspaces** > **Electronic reporting**.
 1. On the tile for the **Microsoft** configuration provider, select **Repositories**.
 1. Select **Dataverse**, and then select **Open**. For more details, see [Import Electronic reporting (ER) configurations from Dataverse](../../finance/localizations/global/workspace/gsw-import-er-config-dataverse.md).
 1. If you need to establish a connection to the repository, select the blue link in the dialog box.
-1. In the configuration list, find **Advanced bank reconciliation statement model > ABR BAI2 format**. MT940 and ISO20022/camt053 formats are also available.
-1. Select the **ABR BAI2 format**.
-1. On the **Versions** FastTab, select the latest version, and then select **Import**.
+1. In the configuration list, locate **Advanced bank reconciliation statement model** and select the format that matches the electronic bank statement received from your bank.
+      - **ABR BAI2 format**
+      - **ABR MT940 format**
+      - **ABR ISO20022/camt053 format**
+1. Select the required format.
+1. On the **Versions** FastTab, select the latest available version, and then select **Import**.
+1. After the import is completed, verify that the configuration appears on the **Configurations** page and that no validation errors are reported.
 
 ## Set up the bank statement format
 
+Before you can import and reconcile electronic bank statements, create a bank statement format and associate it with the appropriate Electronic Reporting (ER) configuration that matches the file format provided by your bank, such as BAI2, MT940, or ISO 20022 CAMT.053. This configuration enables Advanced Bank Reconciliation to correctly interpret and process imported bank statement files.
+
 1. Go to **Cash and bank management** > **Setup** > **Advanced bank reconciliation setup** > **Bank statement format**.
 1. Select **New**.
-1. Set the **Statement format** and **Name** fields.
+1. Set the **Statement format** and **Name** fields. Enter values that identify the bank statement format.
 1. Select the **Generic electronic import format** checkbox.
-1. Set the **Import format configuration** field to the **BAI2** format.
+1. In the **Import format configuration** field, select the Electronic Reporting (ER) configuration that matches the bank statement format that you import:  
+    - **ABR BAI2 format** for BAI2 statement files.
+    - **ABR MT940 format** for MT940 statement files.
+    - **ABR ISO20022/camt053 format** for ISO 20022 CAMT.053 statement files.
+1. Save the record.
 
 ## Set up the bank account
 
-1. Go to **Cash and bank management > Bank accounts > Bank accounts**.
+Before you import bank statements, ensure that Advanced bank reconciliation is enabled for the bank account that you use during the reconciliation process.
+
+1. Go to **Cash and bank management** > **Bank accounts** > **Bank accounts**.
 1. Open the bank account.
 1. On the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**.
-1. Set the **Statement format** field to the **BAI2** format that you created earlier.
+1. In the **Statement format** field, select the Electronic Reporting (ER) format that matches your bank statement file:
+    - **ABR BAI2 format** for BAI2 statement files.
+    - **ABR MT940 format** for MT940 statement files.
+    - **ABR ISO20022/camt053 format** for ISO 20022 CAMT.053 statement files.
+1. Save the bank account.
+
+> [!IMPORTANT]
+> The statement format that you select on the bank account must match the format of the bank statement file that you import. If the selected format doesn't match the file format, statement import can fail.
+
+For more details about the Advanced bank reconciliation setup process, see [Advanced bank reconciliation setup process](../../finance/cash-bank-management/configure-advanced-bank-reconciliation.md).  
 
 ## Import the bank statement
 
-1. Go to **Cash and bank management > Bank statement reconciliation > Bank statements**.
-1. At the top of the **Bank statements** page, select **Import statement**.
-1. Set the **Bank account** field to the bank account in the statement.
-1. Set the **Statement format** field to the **BAI2** format that you created earlier.
-1. Select **Browse**, and select the **BAI** file.
+Import a bank statement file to create a bank statement record that you can match and reconcile against bank transactions in **Dynamics 365 Finance**.
+
+1. Go to **Cash and bank management** > **Bank statement reconciliation** > **Bank statements**.
+1. Select **Import statement**.
+1. In the **Bank account** field, select the bank account that the statement belongs to.
+1. In the **Statement format** field, select the bank statement format that's associated with the appropriate Electronic Reporting (ER) configuration.
+1. Select **Browse**, and then select the bank statement file.
 1. Select **Upload**.
-1. Select **OK** to import the selected file.
+1. Select **OK** to import the statement.
 
 ## Examples of bank statement formats and technical layouts
 

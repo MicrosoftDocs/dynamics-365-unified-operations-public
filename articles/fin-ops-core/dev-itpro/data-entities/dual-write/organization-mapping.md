@@ -3,7 +3,7 @@ title: Organization hierarchy in Dataverse
 description: Learn about the integration of organizational data between finance and operations apps and Dataverse, including learning about the flow of data.
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak

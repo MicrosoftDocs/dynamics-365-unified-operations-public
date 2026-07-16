@@ -3,7 +3,7 @@ title: Cross-company data sharing for financial dimensions
 description: Learn about cross-company data sharing for financial dimensions.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/13/2026
 ms.reviewer: twheeloc
 ms.search.region: Global

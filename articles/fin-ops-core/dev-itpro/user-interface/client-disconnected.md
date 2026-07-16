@@ -3,7 +3,7 @@ title: Client internet connectivity
 description: Learn about client internet connectivity, including an overview of degradations of lack of internet access and client internet connectivity options.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/12/2026
 ms.reviewer: twheeloc
 audience: Developer

@@ -3,7 +3,7 @@ title: Apply country/region context
 description: Learn about how to apply country/region context to meet localization and translation requirements, including a table that defines various elements.
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer

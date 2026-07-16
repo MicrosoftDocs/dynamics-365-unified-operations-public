@@ -4,7 +4,7 @@
 title: Change Employee self service workspace name
 description: This article describes how to change the display name of the Employee self service workspace in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/02/2024
+ms.date: 06/11/2026
 ms.topic: how-to
 # optional metadata
 
@@ -27,22 +27,21 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-If you have volunteers or other non-employees, you might want to change the name of the **Employee self service** workspace. You can change this workspace to **Self service** instead.
+If you have volunteers or other nonemployees, you might want to change the name of the **Employee self service** workspace. You can change this workspace to **Self service** instead.
 
 > [!NOTE]
-> Changing the name of the **Employee self service** workspace also changes the menu item that is used internally by Dynamics 365 Human Resources. If you previously applied security customizations to the **HcmEmployeeSelfServiceWorkspace** menu item, we recommend applying the same changes to **HcmSelfServiceWorkspace** to maintain parity.
+> Changing the name of the **Employee self service** workspace also changes the menu item that Dynamics 365 Human Resources uses internally. If you previously applied security customizations to the **HcmEmployeeSelfServiceWorkspace** menu item, apply the same changes to **HcmSelfServiceWorkspace** to maintain parity.
 
 1. In Human Resources, select **Personnel management**, select **Links**, and then select **Human resources parameters**.
-2. Select the **Employee self service** tab.
-3. Under **Display name**, select **Self service**.
+1. Select the **Employee self service** tab.
+1. Under **Display name**, select **Self service**.
 
    ![Change Employee self service workspace name to Self service.](./media/hr-employee-self-service-workspace-name.png)
 
-4. Select **Save**.
+1. Select **Save**.
 
 ## Additional resources
 
 - [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

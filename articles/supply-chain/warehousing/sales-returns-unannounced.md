@@ -4,7 +4,7 @@ description: Learn how to set up Microsoft Dynamics 365 Supply Chain Management 
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/22/2026
+ms.date: 05/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSParameters, ReturnDispositionCode, WHSDispositionTable, WHSReturnItemPolicy, WHSReturnItemReceivingPolicy, WHSRFMenuItem, WHSSourceSystemDispositionCode, WHSInboundShipmentOrder, WHSSourceSystem

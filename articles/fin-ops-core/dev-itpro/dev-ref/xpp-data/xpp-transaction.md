@@ -3,7 +3,7 @@ title: X++ transactional integrity
 description: Learn about transactional integrity in the X++ language, including examples of code that ar rejected by the forUpdate and ttsBegin checks.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer

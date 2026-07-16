@@ -2,9 +2,9 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: Learn about the system requirements for cloud deployments for the current version of Microsoft Dynamics 365 Commerce.
 author: stuharg 
-ms.date: 09/24/2025
+ms.date: 06/07/2026
 ms.topic: overview
-ms.reviewer: v-chrgriffin
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,26 +16,28 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article lists the system requirements for cloud deployments of the current version of Dynamics 365 Commerce. If this step is appropriate, before you install Commerce, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
+This article lists the system requirements for cloud deployments of the current version of Dynamics 365 Commerce. Before you install Commerce, verify that the system you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
 ## Supported web browsers
 
 The web application can run in any of the following web browsers that run on the specified operating systems:
 
 - Microsoft Edge (latest publicly available version) on Windows 11, Windows 10
-- Google Chrome (latest publicly available version) 
+- Google Chrome (latest publicly available version)
 - Apple Safari (latest publicly available version)
 
 > [!NOTE]
-> - It's possible for the Safari browser to show an error during device activation of a Store Commerce for web device due to a Microsoft Entra token being unattainable. You can resolve this issue by using the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
-> - Internet Explorer is no longer a supported web browser starting with Commmerce release 10.0.17.
+>
+> - The Safari browser might show an error during device activation of a Store Commerce for web device because it can't get a Microsoft Entra token. To resolve this issue, use the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
+> - Internet Explorer isn't supported starting with Commerce release 10.0.17.
 
 To find the latest release for each web browser, go to the software manufacturer's website.
 
 > [!NOTE]
+>
 > - To enable Task Recorder to capture screenshots and include them in generated Microsoft Word documents, you must install a prerelease Chrome extension. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
-> - The Workflow Editor and Report Designer for Financial reporting are started as ClickOnce applications. They require a 64-bit-compatible operating system. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications out of the box. If you're using Chrome, you must install a ClickOnce extension, such as [Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) to use ClickOnce applications. If you use Chrome in incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
-> - To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 11 or Windows 10, or Google Chrome (latest publicly available version) on Windows 11, Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
+> - The Workflow Editor and Report Designer for Financial reporting start as ClickOnce applications. They require a 64-bit-compatible operating system. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications out of the box. If you're using Chrome, you must install a ClickOnce extension, such as [Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) to use ClickOnce applications. If you use Chrome in incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
+> - To preview PDF files, use browsers such as Microsoft Edge (latest publicly available version) on Windows 11 or Windows 10, or Google Chrome (latest publicly available version) on Windows 11, Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
 
 ### Supported web browsers for Store Commerce for web
 
@@ -46,17 +48,17 @@ Cloud point of sale (POS) can run in any of the following web browsers that run 
 
 ## Network requirements
 
-- Commerce is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the Microsoft Azure datacenter that hosts Commerce. We recommend that you test network latency at [AzureSpeed.com](http://www.azurespeed.com).
-- Bandwidth requirements for Commerce depend on your scenario. Most typical scenarios require a bandwidth that's more than 50 kilobytes per second (KBps). However, we recommend more bandwidth for scenarios that have high payload requirements, such as scenarios that involve workspaces or extensive customization.
+- Commerce is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the Microsoft Azure datacenter that hosts Commerce. Test network latency at [AzureSpeed.com](http://www.azurespeed.com).
+- Bandwidth requirements for Commerce depend on your scenario. Most typical scenarios require a bandwidth that's more than 50 kilobytes per second (KBps). However, scenarios that involve workspaces or extensive customization require more bandwidth.
 
 In general, Commerce is optimized for the internet. The number of round trips from a browser client to the Azure datacenter is small, and the whole payload is compressed.
 
 > [!WARNING]
-> Don't calculate bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is difficult to calculate. Customers who are concerned about bandwidth requirements should use a preview version of Commerce.
+> Don't calculate bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is difficult to calculate. Use a preview version of Commerce if you're concerned about bandwidth requirements.
 
 ## .NET Framework requirements
 
-Commerce requires the Microsoft .NET Framework version 4.8 or later for Call ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For Commerce client components (sealed or legacy installers), we recommend that you always use the latest version of the .NET Framework that's available.
+Commerce requires the Microsoft .NET Framework version 4.8 or later for Call ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For Commerce client components (sealed or legacy installers), always use the latest version of the .NET Framework that's available.
 
 ## Supported Microsoft Office applications
 
@@ -67,94 +69,94 @@ The following Microsoft Office applications are supported:
 
 ## System requirements for Commerce client components
 
-It's critical to perform proper performance testing before going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing, both early into implementation and again before final testing, allows for any necessary performance improvements to be made and validates that the base solution meets the expected operation times required.
+Before going live in production, make sure to perform proper performance testing. The following list shows the minimum system requirements for applications to function. To achieve the desired performance, consider factors like data volumes, transactional load per hour, and customization impact. Proper performance testing, both early in implementation and again before final testing, allows you to make any necessary performance improvements and validates that the base solution meets the expected operation times.
 
 If the self-service component uses a SQL database, we highly recommend that you review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses). We recommend that you use a SQL Server version that's currently still within the mainstream support date. You can search for support dates by product in [Search Product and Services Lifecycle Information](/lifecycle/products/). SQL databases for self-service components require SQL Server 2017 or later. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that's available, and install all the latest service packs. By following these recommendations, you can help ensure both compatibility and security. The legacy self-service installers also support SQL Server 2016 with Service Pack 2 or later.
 
 If the self-service component uses a server certificate, it's critical that you manage certificates for expiration. By default, certificates expire after one calendar year (365 days). Self-service components that use a server certificate include Hardware station or Commerce Scale Unit (self-hosted).
 
 > [!NOTE]
+>
 > - The legacy Commerce Scale Unit (self-hosted) self-service component uses Azure Service to Service authentication. It's critical that you manage both the generated Azure web application keys (formerly called *secrets*) and the server certificate for expiration. By default, a certificate and a generated Azure web application key expire after one calendar year (365 days).
-> - The supported versions of the .NET Framework are updated. Self-service client-side components such as Commerce Scale Unit - Self hosted, Store Commerce app, and Hardware Station require that the .NET Framework version 6.0 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, we recommend that you always have the latest version of the .NET Framework installed on the target computer.
+> - The supported versions of the .NET Framework are updated. Self-service client-side components such as Commerce Scale Unit - Self hosted, Store Commerce app, and Hardware Station require that the .NET Framework version 6.0 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, always have the latest version of the .NET Framework installed on the target computer.
 
 ### Supported operating systems
 
 This section lists the supported operating systems for each Commerce self-service installer.
 
 > [!WARNING]
-> The Windows 7 and Windows 8 operating systems aren't supported for anything except security-related fixes. Although Commerce components might work on these operating systems, no bug fix or other technical support is provided.
+> Windows 7 and Windows 8 aren't supported for anything except security-related fixes. Although Commerce components might work on these operating systems, Microsoft doesn't provide bug fixes or other technical support.
 
 #### Store Commerce
 
-- Store Commerce app for Windows is supported on the x64 versions of following operating systems:
+- Store Commerce app for Windows supports the x64 versions of the following operating systems:
 
-    - Windows 11 (Pro, Enterprise, Enterprise Long-Term Servicing Channel [LTSC], and Internet of Things [IoT] Enterprise LTSC editions).
-    - Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC editions) with the latest available updates.
-    - Windows Server 2022 (Standard, Essentials). 
-    - Windows Server 2019 (Standard, Essentials) with the latest available updates.
-
-
+  - Windows 11 (Pro, Enterprise, Enterprise Long-Term Servicing Channel [LTSC], and Internet of Things [IoT] Enterprise LTSC editions).
+  - Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC editions) with the latest available updates.
+  - Windows Server 2022 (Standard, Essentials).
+  - Windows Server 2019 (Standard, Essentials) with the latest available updates.
     > [!NOTE]
     > Windows 10 Pro and Windows 11 Pro aren't recommended, except as part of a domain so that Windows updates can be appropriately scheduled.
 
 - Store Commerce for Android requires Android version 7.10 or later. Devices with x86-based architectures aren't supported due to size limitations imposed by Google Play Store.
 - Store Commerce for iOS requires iOS version 16 or later.
-- Microsoft doesn't recommend that you use the Store Commerce app on the same computer as another self-service component (for example, a shared hardware station or self-hosted Commerce Scale Unit).
+- Store Commerce for macOS requires macOS version 15 or later. You build and deploy the macOS app by using the Store Commerce SDK.
+- Don't use the Store Commerce app on the same computer as another self-service component (for example, a shared hardware station or self-hosted Commerce Scale Unit).
 
 > [!NOTE]
-> If an offline database is used, the computer must meet all system requirements for SQL Server. Additionally, the system must have at least 15 gigabytes (GB) of available disk space. However, we recommend a minimum of 25 GB of available disk space.
+> If you use an offline database, the computer must meet all system requirements for SQL Server. Additionally, the system must have at least 15 gigabytes (GB) of available disk space. However, a minimum of 25 GB of available disk space is recommended.
 
 #### Hardware station and Commerce Scale Unit (self-hosted)
 
-- Windows 11, 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
+- Supported operating systems include Windows 11 and 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates.
 
     > [!NOTE]
     > Windows 10 Pro and Windows 11 Pro aren't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
-- Windows Server 2022 and Windows Server 2019 are supported.
-- Microsoft doesn't recommend that you use a self-service component on the same computer as another self-service component (for example, the Store Commerce app).
+- Supported operating systems include Windows Server 2022 and Windows Server 2019.
+- Don't use a self-service component on the same computer as another self-service component (for example, the Store Commerce app).
 - The legacy self-service installer also supports Windows Server 2016 and Windows 10 Long-Term Servicing Branch (LTSB).
 
 ### System requirements
 
-Remember that performance testing is crucial to the successful use of Commerce self-service components. Across all components, the following bare-minimum system is supported for testing functionality:
+Performance testing is crucial to the successful use of Commerce self-service components. Across all components, the following minimum system is supported for testing functionality:
 
 - Dual-core processor that runs at no less than 2 gigahertz (GHz) per core.
 - 4 GB of RAM.
 - Internet access and enough network throughput to handle the flow of requests and responses. This requirement is at both the computer level and the network level.
 - Component-specific system requirements, such as requirements for SQL Server and Internet Information Services (IIS).
-- At least 10 percent of disk space is available. (We recommend that you have no less than 10 GB of available disk space when SQL Server is used.)
+- At least 10 percent of disk space is available (you need at least 10 GB of available disk space when SQL Server is used).
 
-Additionally, as customizations and performance requirements are generated, each component typically requires a more powerful system to meet user needs.
+As you generate customizations and performance requirements, each component typically requires a more powerful system to meet user needs.
 
 #### Store Commerce app
 
-- The minimum supported effective resolution for POS Full layout mode (PCs and tablets) is 1,024 × 768. (However, we recommend 1366 × 768 or more.)
-- The minimum supported effective resolution for POS Compact layout mode (phones and small tablets) is 320 x 568. (However, we recommend 360 × 640 or more.)
-- Here are the minimum recommendations for a more performant Store Commerce app terminal:
+- The minimum supported effective resolution for POS Full layout mode (PCs and tablets) is 1,024 × 768. (However, 1366 × 768 or more is recommended.)
+- The minimum supported effective resolution for POS Compact layout mode (phones and small tablets) is 320 x 568. (However, 360 × 640 or more is recommended.)
+- The following are the minimum recommendations for a more performant Store Commerce app terminal:
 
-    - A minimum of 128 MB of dedicated graphical memory or 256 MB of shared graphical memory are recommended.
-    - 4 GB or more of RAM are recommended. This recommendation requires additional review of SQL Server requirements for offline database support.
-    - SQL Express is often used for offline databases. In these scenarios, it's necessary to keep track of the offline database size. (The maximum possible size is 10 GB.)
+  - A minimum of 128 MB of dedicated graphical memory or 256 MB of shared graphical memory.
+  - 4 GB or more of RAM. This recommendation requires extra review of SQL Server requirements for offline database support.
+  - SQL Express is often used for offline databases. In these scenarios, you need to keep track of the offline database size. (The maximum possible size is 10 GB.)
 
 #### Hardware station
 
-- The minimum supported system requirements for IIS
-- The minimum supported system requirements for all third-party hardware that's attached and used
+- The minimum supported system requirements for IIS.
+- The minimum supported system requirements for all third-party hardware that's attached and used.
 
 #### Commerce Scale Unit (self-hosted)
 
-The minimum system requirements for Commerce Scale Unit (self-hosted) describe the bare minimum that are required to function, typically in a test scenario. The requirements that are described here aren't representative of a realistic production environment. It's critical that you do appropriate performance testing and validate that the computer hardware to be used meets the demands of Hardware station, Store Commerce app, Store Commerce for web, and any third-party components that access and use the Commerce Scale Unit (self-hosted) component or computer. Furthermore, we highly recommend that you use a standard licensed version of SQL Server or better (for example, Enterprise version) to take advantage of the full capabilities of the processor and RAM.
+The minimum system requirements for Commerce Scale Unit (self-hosted) describe the bare minimum that are required to function, typically in a test scenario. The requirements that are described here aren't representative of a realistic production environment. It's critical that you do appropriate performance testing and validate that the computer hardware you use meets the demands of Hardware station, Store Commerce app, Store Commerce for web, and any third-party components that access and use the Commerce Scale Unit (self-hosted) component or computer. Furthermore, use a standard licensed version of SQL Server or better (for example, Enterprise version) to take advantage of the full capabilities of the processor and RAM.
 
-Here are the additional requirements:
+Here are the extra requirements:
 
-- A minimum of 6 GB of RAM, although 64 GB or more of RAM might be required
-- A 2.4 GHz multi-core CPU, although multiple multi-core CPUs on server-grade hardware might be required (A four-core processor is recommended.)
-- Enough disk space to store the sum total of all Commerce data for all associated stores (channels)
+- A minimum of 6 GB of RAM, although 64 GB or more of RAM might be required.
+- A 2.4 GHz multicore CPU, although multiple multicore CPUs on server-grade hardware might be required. (A four-core processor is recommended.)
+- Enough disk space to store the sum total of all Commerce data for all associated stores (channels).
 
     Disk requirements might be as little as 10 GB to 20 GB, or as much as multiple terabytes.
 
-Additionally, Microsoft recommends that you consider the following aspects of performance when you're determining system requirements for Commerce Scale Unit (self-hosted):
+Additionally, consider the following aspects of performance when you're determining system requirements for Commerce Scale Unit (self-hosted):
 
 - The number of physical network ports (more ports enhance throughput per second).
 - SQL Server log flush size. This factor directly affects SQL Server performance.
@@ -172,12 +174,12 @@ The Connector for Microsoft Dynamics AX 2012 R3 has two separate installers: one
 - Both components are 32-bit applications, but they run on both x86 and x64 architectures.
 - Both components are supported on the following operating systems:
 
-    - Windows 11, Windows 10 Pro, Windows Enterprise, and Windows Enterprise LTSB editions
+  - Windows 11, Windows 10 Pro, Windows Enterprise, and Windows Enterprise LTSB editions
 
-        > [!NOTE]
-        > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
+    > [!NOTE]
+    > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
-    - Windows Server 2016 and Windows Server 2019
+  - Windows Server 2016 and Windows Server 2019
 
 ### Minimum system requirements
 
@@ -189,14 +191,14 @@ As for Commerce Scale Unit (self-hosted), larger, server-grade hardware is often
 
 ## Recommended network exceptions
 
-Often (especially in corporate environments), network-related security requires that specific exceptions be noted. In these security-focused networks, Microsoft recommends that you add, at a minimum, the following exceptions to a network-related allow list:
+Often, especially in corporate environments, network-related security requires specific exceptions. In these security-focused networks, add at least the following exceptions to a network-related allow list:
 
-- \*.static.akamaitechnologies.com
-- \*.azure.com
-- \*.dynamics.com
-- \*.microsoft.com
-- \*.visualstudio.com
-- \*.windows.net
+- `*.static.akamaitechnologies.com`
+- `*.azure.com`
+- `*.dynamics.com`
+- `*.microsoft.com`
+- `*.visualstudio.com`
+- `*.windows.net`
 
 ## Requirements for development on local VMs
 
@@ -204,22 +206,15 @@ For information about the requirements for development on local virtual machines
 
 ## Database collation
 
-The only supported collation for Commerce databases in the cloud is **SQL\_Latin1\_General\_CP1\_CI\_AS**. Ensure that your SQL Server and database collations in development environments use this collation setting, and that any configuration environments published to the sandbox have this same collation.
+The only supported collation for Commerce databases in the cloud is **SQL\_Latin1\_General\_CP1\_CI\_AS**. Ensure that your SQL Server and database collations in development environments use this collation setting. Also ensure that any configuration environments you publish to the sandbox use this same collation.
 
-## Additional resources
+## More resources
 
-[Get an evaluation copy](../../fin-ops-core/dev-itpro/dev-tools/get-evaluation-copy.md)
-
-[Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
-
-[Select an in-store topology](../dev-itpro/retail-in-store-topology.md)
-
-[Device management implementation guidance](../implementation-considerations-devices.md)
-
-[Configure and install Commerce Scale Unit (self-hosted)](../dev-itpro/retail-store-scale-unit-configuration-installation.md)
-
-[Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md)
-
-<!--[Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md)-->
+- [Get an evaluation copy](../../fin-ops-core/dev-itpro/dev-tools/get-evaluation-copy.md)
+- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
+- [Select an in-store topology](../dev-itpro/retail-in-store-topology.md)
+- [Device management implementation guidance](../implementation-considerations-devices.md)
+- [Configure and install Commerce Scale Unit (self-hosted)](../dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

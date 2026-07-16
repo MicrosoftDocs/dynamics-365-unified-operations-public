@@ -4,7 +4,7 @@ description: Learn how to set up default and custom shipment consolidation polic
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/29/2022
+ms.date: 05/29/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSOutboundLoadPlanningWorkbench

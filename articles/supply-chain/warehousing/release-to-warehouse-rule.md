@@ -4,7 +4,7 @@ description: Learn about about the Release to warehouse rule feature, which prov
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/20/2026
+ms.date: 05/20/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac

@@ -3,7 +3,7 @@ title: Daylight saving time support for active batch periods
 description: Learn about daylight saving time support for active batch periods, which lets users associate their active periods with different time zones.
 author: Peakerbl
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: feature-guide
 ms.date: 03/13/2026
 ms.custom: NotInToc
 ms.reviewer: johnmichalak

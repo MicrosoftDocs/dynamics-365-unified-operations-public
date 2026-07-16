@@ -4,7 +4,7 @@ description: Access answers some frequently asked questions about earnings and g
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 06/20/2017
+ms.date: 06/25/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: USA
@@ -20,20 +20,20 @@ ms.assetid: 8eef7aff-5d9a-47aa-b6a2-86958c3694cf
 
 This article answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation.
 
-This article describes functionality that is available only if the **Payroll - USA** configuration key is selected.
+This article describes functionality that's available only if the **Payroll - USA** configuration key is selected.
 
 ## Can I change the distributions for an earning line?
 
-Yes. Select the line, and then click **Distribute earnings** to view and change the distributions. The default main account and dimensions for earning lines are based on the accounting rule for the earning, and on the default dimensions and dimension templates that are defined for the earning code or the position. Distributions for earnings must be changed from the earnings statement line. After the earnings are processed, the distributions can't be changed on the pay statement.
+Yes. Select the line, and then select **Distribute earnings** to view and change the distributions. The default main account and dimensions for earning lines are based on the accounting rule for the earning, and on the default dimensions and dimension templates that are defined for the earning code or the position. You must change distributions for earnings from the earnings statement line. After you process the earnings, you can't change the distributions on the pay statement.
 
 ## What are recurring earnings?
 
-Recurring earnings are earnings that are assigned to workers, and that occur regularly. Some examples include a monthly car allowance or a clothing allowance for uniforms, where the allowance is based on the pay period amount and is earned each pay period. Recurring earnings are generated automatically when earnings are generated. Here are some important notes about recurring earnings:
+Recurring earnings are earnings that you assign to workers, and that occur regularly. Some examples include a monthly car allowance or a clothing allowance for uniforms, where the allowance is based on the pay period amount and is earned each pay period. The system automatically generates recurring earnings when it generates earnings. Here are some important notes about recurring earnings:
 
 - Worker payroll earning codes that have a frequency specified are generated if the frequency is in the pay period that you're generating earnings for. Only earning codes that have **Each** assigned as the unit of measure require a frequency.
 - The fixed compensation plan is determined by the combination of worker, position, and legal entity. The plan provides the fixed compensation rate, which is used in the formula that determines the earning amount. If the earning is a flat amount, fixed compensation plans aren't used.
 - If a recurring earning is generated, the source of the earning line is set to **Recurring** on the **Earnings statement** page.
-- If a recurring earnings statement line is generated that is identical to a line that you entered manually, both lines will exist, but the source will differ. The source for the line that is entered manually line will be **User entry**, and the source for line that the system calculated will be **Recurring** in the earnings statement line details.
+- If a recurring earnings statement line is generated that's identical to a line that you entered manually, both lines exist, but the source will differ. The source for the line that is entered manually line will be **User entry**, and the source for line that the system calculated will be **Recurring** in the earnings statement line details.
 
 ## How are earnings calculated for salaries?
 
@@ -43,11 +43,11 @@ Salary earnings are generated automatically during the generation process that i
 - Recurring earnings and the earnings from schedules are created first, because salary amounts might be affected by other earnings that are automatically generated if those other earnings are considered base salary components.
 
     > [!NOTE]
-    > If you enter earning lines manually after you generate earnings, the earning lines that were previously generated are recalculated so that the worker pay is accurate. If you don't want the earning lines to be recalculated so that the salary amounts are correct, you can click **Calculate Salary** on the earnings statement to keep the line values unchanged. Typically, you use this approach only if you're terminating a worker's employment.
+    > If you enter earning lines manually after you generate earnings, the earning lines that were previously generated are recalculated so that the worker pay is accurate. If you don't want the earning lines to be recalculated so that the salary amounts are correct, you can select **Calculate Salary** on the earnings statement to keep the line values unchanged. Typically, you use this approach only if you're terminating a worker's employment.
 
 ## How do I generate earnings for a salaried worker who is on leave?
 
-To generate earnings for leave, you must assign a schedule to the position that the worker is taking leave from, even if that position is a salaried position. For more information, see [Set up work schedules and leave](noam-usa-work-schedule-leave-tasks.md). If an earning code is assigned to the leave type, the scheduled lines will use the earning code from the leave type instead of the earning code from the schedule. The earning code that is on the leave type can be configured as either paid or unpaid, based on the amount or multiplier, which will be 0 (zero) for unpaid leave. If no earning code is assigned to the leave type, no lines will be created from the schedule or the leave type for the days when the worker is on leave.
+To generate earnings for leave, you must assign a schedule to the position that the worker is taking leave from, even if that position is a salaried position. For more information, see [Set up work schedules and leave](noam-usa-work-schedule-leave-tasks.md). If an earning code is assigned to the leave type, the scheduled lines use the earning code from the leave type instead of the earning code from the schedule. The earning code that is on the leave type can be configured as either paid or unpaid, based on the amount or multiplier, which will be 0 (zero) for unpaid leave. If no earning code is assigned to the leave type, no lines are created from the schedule or the leave type for the days when the worker is on leave.
 
 ## Can a salaried worker receive retroactive earnings?
 
@@ -55,7 +55,7 @@ Yes. However, when you use the process for generating retroactive earnings to ch
 
 ## Why didn't the selection criteria return any results?
 
-When you generate earnings, you might receive the following message: "The selection criteria did not return any results." If you expected earnings to be generated, the following factors might be causing the lack of results:
+When you generate earnings, you might receive the following message: "The selection criteria didn't return any results." If you expected earnings to be generated, the following factors might be causing the lack of results:
 
 - Earnings were already generated for the selection.
 - The pay cycle that you selected doesn't match the pay cycle that is specified on the **Payroll** FastTab of the **Position** page for the worker.
@@ -65,11 +65,10 @@ When you generate earnings, you might receive the following message: "The select
 - The pay period that you selected has the wrong year. For example, you selected January 1, 2013, through January 15, 2013, but you intended to select January 1, 2014, through January 15, 2014.
 
 > [!IMPORTANT]
-> The fields on the **Payroll** FastTab of the **Position** page have their own date-effective settings. To view these settings, click **Changes timeline** &gt; **Manage changes** &gt; **Payroll Tab**.
+> The fields on the **Payroll** FastTab of the **Position** page have their own date-effective settings. To view these settings, select **Changes timeline** > **Manage changes** > **Payroll Tab**.
 
 ## Don't see your question here?
 
-We're working to include as many questions as we can, so that Help will be more useful to people just like you. Tell us what question you would like to add to this article. Send email to <adocs@microsoft.com>. Announcements: To see known issues and recent fixes, use [Issue search](/dynamicsax-2012/appuser-itpro/issue-search-lifecycle-services-lcs) in [Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkID=306505) (LCS).
-
+We're working to include as many questions as we can, so that Help is more useful to people just like you. Tell us what question you would like to add to this article. Send email to <adocs@microsoft.com>. Announcements: To see known issues and recent fixes, use [Issue search](/dynamicsax-2012/appuser-itpro/issue-search-lifecycle-services-lcs) in [Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkID=306505) (LCS).
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

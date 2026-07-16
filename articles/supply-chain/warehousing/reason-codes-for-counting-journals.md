@@ -4,7 +4,7 @@ description: Learn how to set up and apply reason codes for counting tasks, incl
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.reviewer: kamaybac
 ms.search.form: InventCountingReasonCodePolicy, InventCountingReasonCode
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4

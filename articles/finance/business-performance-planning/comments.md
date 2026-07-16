@@ -4,7 +4,7 @@ description: Learn how to use the Comments visual in the Business performance pl
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/08/2023
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -35,12 +35,12 @@ Before you use the **Comments** visual, prepare a sample comment (for example, *
 ## Install the Comments visual
 
 1. In Power BI, go to the workspace or report where you want to configure the Matrix Planner.
-2. Drag the **Matrix Planning** and **Comments** visuals onto the report canvas.
-3. For the **Matrix Planning** visual, drag the **Name** columns from each dimension into the corresponding fields in the **Visualization** pane.
+2. Drag the **Matrix planning** and **Comments** visuals onto the report canvas.
+3. For the **Matrix planning** visual, drag the **Name** columns from each dimension into the corresponding fields in the **Visualization** pane.
 4. For the **Comments** visual, drag the **Comment** field from your cube into the **Comments** parameter.
-5. Apply the same filter context (that is, the same set of slicers) that's used in the Matrix Planner to the **Comments** visual. In this way, you ensure the alignment of data between the two visuals.
-6. In the **API Details** window for the visual, add your API base URL and cube name.
-7. Optional: Add a **Status Dimension Name** value to allow only items in the specified dimension to be selected.
+5. Apply the same filter context (that is, the same set of slicers) that's used in the Matrix planner to the **Comments** visual. In this way, you ensure the alignment of data between the two visuals.
+6. In the **API details** window for the visual, add your API base URL and cube name.
+7. Optional: Add a **Status dimension name** value to allow only items in the specified dimension to be selected.
 
 When you've finished, the **Comments** visual shows comments in tabular format in the data.
 
@@ -55,6 +55,6 @@ When you've finished, the **Comments** visual shows comments in tabular format i
 - **Pivot property** – If you add one of the dimensions to the **Pivot** section of the visual, the values of that dimension appear in the columns instead of the rows.
 - **Filter property** – Power BI slicer values aren't automatically transferred to the visual. Therefore, if you have a slicer somewhere on the page, and you want to pass the filtered values from that slicer to the **Comments** visual, you must explicitly configure this behavior by using the **Filters** section of the visual. For example, if the page includes the **DimOrganization** slicer, you must add this field to the **Filters** section of the **Comments** visual. Only then is the selected value of the filter transferred to the **Comments** visual.
 - **Editing amounts** – Activate this option in the properties to edit the amount that's related to the coordinate in the visual.
-- **Entering comments directly in the Matrix Planning visual** – Enter comments directly in the **Matrix Planning** visual without having to add more **Comments** visuals.
+- **Entering comments directly in the Matrix planning visual** – Enter comments directly in the **Matrix planning** visual without having to add more **Comments** visuals.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

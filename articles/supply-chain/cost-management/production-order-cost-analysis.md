@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 ms.topic: article
-ms.date: 5/5/2026
+ms.date: 05/05/2026
 ms.custom: 
   - bap-template
 ---

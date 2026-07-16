@@ -4,7 +4,7 @@ description: Access an overview of the functionality that provides flexible conf
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: overview
-ms.date: 5/20/2026
+ms.date: 05/20/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate, WHSOutboundLoadPlanningWorkbench

@@ -3,7 +3,7 @@ title: Parse incoming documents
 description: Learn about how to set up Electronic reporting formats that can be used to parse incoming documents in multiple file formats.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: Developer

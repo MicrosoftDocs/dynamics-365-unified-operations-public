@@ -4,7 +4,7 @@
 title: Create a team calendar
 description: View and create team calendars in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/09/2024
+ms.date: 06/11/2026
 ms.topic: how-to
 # optional metadata
 
@@ -36,9 +36,9 @@ You can view team and company calendars in Dynamics 365 Human Resources. Team ca
 ## View your team calendar as a manager
 
 1. In the **Employee self service** workspace, select **My team**.
-2. Select **Leave and absence**, and then select **View manager absence calendar**.
+1. Select **Leave and absence**, and then select **View manager absence calendar**.
 
-Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**. 
+Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**.
 
 ## View your absence manager calendar as the absence manager
 
@@ -48,19 +48,19 @@ Managers can also access the team calendar from **Pending time off requests from
 Users in the Absence manager role can view time-off requests in their calendar. Follow these steps to access the leave calendar.
 
 1. In the **Employee self service** workspace, select **Leave management** and then **Absence manager calendar**.
-2. In the **Date** field, enter the desired dates.
-3. Update the view options as required.
+1. In the **Date** field, enter the desired dates.
+1. Update the view options as required.
 
 The absence manager calendar shows all the records for the employees who report to the absence manager in the Leave hierarchy.
 
 ## View a company calendar
 
-People who are in human resources roles can view company calendars. Company calendars display all employees. By default, the calendar displays today's date plus 28 days, but you can change the date range. You can also filter the calendar by **Name**, **Personnel number**, and **Leave type**.
+People in human resources roles can view company calendars. Company calendars display all employees. By default, the calendar displays today's date plus 28 days, but you can change the date range. You can also filter the calendar by **Name**, **Personnel number**, and **Leave type**.
 
 1. In the **Leave and absence** workspace, select **Links**.
-2. Select **Leave and absence calendar**.
+1. Select **Leave and absence calendar**.
 
-Human resources roles can also access the company calendar from **Leave and absence requests**, **Approved time off**, and **Time off requests**. 
+Human resources roles can also access the company calendar from **Leave and absence requests**, **Approved time off**, and **Time off requests**.
 
 Calendars now contain additional filters and options. All calendars include view options for:
 
@@ -69,17 +69,17 @@ Calendars now contain additional filters and options. All calendars include view
 - Employees with leave requests
 - Employees without leave requests
 - Employee birthdays
-- Time-off requests 
+- Time-off requests
 - Leave of absence requests
 
 Calendar configuration on the **Leave and absence parameters** page determines the available view options.
 
-You can also filter calendars by manager or department. The primary position assignment determines the employees displayed when these filters are set. 
+You can also filter calendars by manager or department. The primary position assignment determines the employees displayed when you set these filters.
 
 > [!IMPORTANT]
-> You can turn on the **Cross company leave view** feature in Feature management. You must then enable the feature on the **Human resources shared parameters** page to show the legal entity filter in calendars. For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).
-> 
-> You can filter the calendar by legal entity. To view all employees, regardless of legal entity, clear the filter field, and then select **Enter**. 
+> In Feature management, turn on the **Cross company leave view** feature. Then, on the **Human resources shared parameters** page, enable the feature to show the legal entity filter in calendars. For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).
+>
+> You can filter the calendar by legal entity. To view all employees, regardless of legal entity, clear the filter field, and then select **Enter**.
 
 For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

@@ -4,7 +4,7 @@ description: Learn about the freeze on new project creation in Microsoft Dynamic
 author: laneswenka
 ms.author: laswenka
 ms.topic: concept-article
-ms.date: 03/06/2026
+ms.date: 07/10/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -40,6 +40,7 @@ The following scenarios aren't affected by this change:
 - **Dynamics 365 Commerce** projects continue to be created in Lifecycle Services.
 - **AX 2012 upgrade** projects are unaffected.
 - **On-premises implementations** can still create Lifecycle Services projects as needed.
+- **Tenant-to-tenant migrations** need a Lifecycle Services project.
 
 ## What to do instead
 

@@ -3,8 +3,8 @@ title: Employee competencies and development Power BI content
 description: Learn about how the Employee competencies and development Power BI content, including how to understand the data model and entities.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
-ms.date: 03/11/2026
+ms.topic: concept-article
+ms.date: 06/26/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -29,7 +29,7 @@ After you connect the content pack to your data, the reports show your organizat
 | Skill Profile                     | Skill profile for the selected employee                |
 | Skill Analysis                    | Skills by type and rating                              |
 
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create dashboards in Power BI](/training/modules/create-dashboards-power-bi).
 
 ## Understanding the data model and entities
 

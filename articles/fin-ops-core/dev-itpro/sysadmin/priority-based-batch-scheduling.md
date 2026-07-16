@@ -3,7 +3,7 @@ title: Priority-based batch scheduling
 description: Learn about the functionality for priority-based batch scheduling, including outlines on batch groups and batch jobs.
 author: matapg007
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/13/2026
 ms.custom: 
   - bap-template

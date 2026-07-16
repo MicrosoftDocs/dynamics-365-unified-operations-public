@@ -4,8 +4,8 @@ description: Learn about setup information for electronic messaging in Microsoft
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: article
-ms.date: 01/04/2022
-ms.reviewer: kfend
+ms.date: 06/24/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2018-10-28
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This article provides overview and the setup information for the **Electronic messages** (EM) functionality.
+This article provides an overview and the setup information for the **Electronic messages** (EM) functionality.
 
-Recently, the governments and legislative authorities of various countries and regions around the world have implemented reporting requirements for companies that are registered in those countries or regions. The purpose of the requirements is to enable data to be obtained from those companies in electronic format, directly from the systems where it was accounted, stored, and processed.
+Recently, governments and legislative authorities in various countries and regions around the world implemented reporting requirements for companies that are registered in those countries or regions. The purpose of the requirements is to enable data to be obtained from those companies in electronic format, directly from the systems where the data is accounted, stored, and processed.
 
 The EM functionality in Microsoft Dynamics 365 Finance supports various processes for electronic interoperation between Finance and the systems that governments and legislative authorities offer for reporting, submitting, and receiving official information.
 
@@ -28,27 +28,27 @@ The EM functionality is integrated with the **Electronic Reporting** (ER) module
 
 The EM functionality is based on the following entities:
 
-- **Electronic message** – A report or declaration that should be reported or transmitted internally, such as a report that is sent to a tax office.
-- **Electronic message items** – Records that should be included in the message that is reported.
-- **Electronic message processing** – A chain of actions that should be run to collect the required data, generate reports, store data in Azure Blob storage, transmit reports outside the system, receive responses from outside the system, and, based on the information that is received, update the database. The actions in the chain can be linked or unlinked.
+- **Electronic message** – A report or declaration that you internally report or transmit, such as a report that you send to a tax office.
+- **Electronic message items** – Records that you include in the message that you report.
+- **Electronic message processing** – A chain of actions that run to collect the required data, generate reports, store data in Azure Blob storage, transmit reports outside the system, receive responses from outside the system, and, based on the information that is received, update the database. The actions in the chain can be linked or unlinked.
 
 The following illustration shows the flow of data for EM.
 
-![Electronic messaging data flow.](media/electronic-messaging-data-flow.png)
+:::image type="content" source="media/electronic-messaging-data-flow.png" alt-text="Screenshot of the electronic messaging data flow.":::
 
 ## Scenarios supported by the EM functionality
 
 The EM functionality supports the following scenarios:
 
 - Manually create messages and generate reports that are based on associated exporting ER formats of various types. These types include Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, text, and Microsoft Word.
-- Automatically create and process messages that are based on information that was requested and received from an authority by using an associated importing ER format.
+- Automatically create and process messages that are based on information that an authority requests and receives by using an associated importing ER format.
 - Collect and process information from a data source as message items. The data source is a Finance table.
-- Store additional information, and evaluate various values by calling specifically defined executable classes in relation to messages or message items.
-- Aggregate information that is collected in message items, split that information by message, and generate reports that are in associated exporting ER formats.
-- Transmit the reports that are generated to a web service by using security information that is stored in the Azure Key Vault.
+- Store extra information, and evaluate various values by calling defined executable classes in relation to messages or message items.
+- Aggregate information that the system collects in message items, split that information by message, and generate reports that are in associated exporting ER formats.
+- Transmit the reports that the system generates to a web service by using security information that is stored in the Azure Key Vault.
 - Receive a response from a web service, interpret the response, and update data in Finance as appropriate.
-- Store and review all the reports that are generated.
-- Store and review all the log information that is related to actions that are run for a message or message item.
+- Store and review all the reports that the system generates.
+- Store and review all the log information that is related to actions that the system runs for a message or message item.
 - Control the processing through various message statuses and message item statuses.
 
 ## Security privileges
@@ -58,14 +58,14 @@ The following security privileges are available for electronic messages.
 | Security privilege           | Access level | Association |
 |------------------------------|--------------|-------------|
 | Maintain electronic messages | This privilege gives full access to the EM functionality. If you have this privilege, you can set up electronic messaging and run all the processing. | This privilege is included in the **Maintain sales tax transactions** security duty. That duty, in turn, is included in the **Accountant** security role. |
-| View electronic messages     | This privilege gives read-only access to the EM functionality. If you have this privilege, you can view the electronic messaging settings and messages. However, you can't set up or run anything. | This privilege is included in the **Inquire into sales tax transaction status** security duty. That duty, in turn, is included in the following security roles:<ul><li>Collections manager</li><li>Accounts receivable clerk</li><li>Accounts receivable manager</li><li>Tax accountant</li><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Sales manager</li><li>Accounts payable clerk</li></ul> |
-| Operate electronic messages  | This privilege gives access only to the **Electronic messages** and **Electronic message items** pages. If you have this privilege, you can run all the processing that is called from those pages. | This privilege is included in the **Operate electronic messages** security duty. That duty, in turn, is included in the **Electronic messages operator** security role. |
+| View electronic messages     | This privilege gives read-only access to the EM functionality. If you have this privilege, you can view the electronic messaging settings and messages. However, you can't set up or run anything. | This privilege is included in the **Inquire into sales tax transaction status** security duty. That duty, in turn, is included in the following security roles: Collections manager, Accounts receivable clerk, Accounts receivable manager, Tax accountant, Accountant, Accounting manager, Accounting supervisor, Sales manager, Accounts payable clerk |
+| Operate electronic messages  | This privilege gives access only to the **Electronic messages** and **Electronic message items** pages. If you have this privilege, you can run all the processing that the system calls from those pages. | This privilege is included in the **Operate electronic messages** security duty. That duty, in turn, is included in the **Electronic messages operator** security role. |
 
 ## Country/region-specific regulatory features supported by the EM functionality
 
 The following table provides information about some country/region-specific regulatory features that are supported by the EM functionality.
 
-| Country/region     | Feature name | Feature demo recording |
+| Country or region     | Feature name | Feature demo recording |
 |-------------|--------------|------------------------|
 | Spain       | [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](../localizations/emea-esp-sii.md) | |
 | Hungary     | [Online invoicing system](../localizations/emea-hun-online-invoicing.md) | |
@@ -90,5 +90,3 @@ The following table provides information about some country/region-specific regu
 | Switzerland | [VAT declaration (Switzerland)](../localizations/emea-che-vat-declaration-switzerland.md) | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
-

@@ -3,7 +3,7 @@ title: Export customer electronic invoices
 description: Learn how to get started with Electronic invoicing for Türkiye in Microsoft Dynamics 365 Finance, including prerequisites and an outline on configure parameters.
 author: v-omerorhan
 ms.author: v-omerorhan
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/27/2025
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye

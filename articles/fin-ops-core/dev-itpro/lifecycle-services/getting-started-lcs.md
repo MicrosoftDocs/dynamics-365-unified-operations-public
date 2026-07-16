@@ -3,7 +3,7 @@ title: Lifecycle Services for finance and operations apps partners
 description: Learn about how partners can get started with Microsoft Dynamics Lifecycle Services, including an outline on projects for customers in Lifecycle Services.
 author: angelmarshall
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started

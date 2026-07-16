@@ -4,7 +4,7 @@ description: Learn how to use the Matrix planning visual in the Business perform
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/07/2023
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -34,25 +34,25 @@ For more information about prerequisites and installation, see [Install business
 ### Installation
 
 1. Open the Power BI application, and access the workspace or report where you plan to configure the Matrix Planner.
-2. Download the **Matrix planning** visual from Marketplace. 
-3. Drag the **Matrix planning** visual onto the report canvas.
-4. Select the visual on the report canvas, and then select the **Format visual** tab on the report canvas. In the **API Details** window for the visual, add your API base URL and cube name. This information provides the details that business performance planning requires to read data from the cube and write data to it. The API base URL is the URL of the environment where business performance planning is installed. The environment URL must be preceded by **https://** (for example, `https://environment.d365.com`). For more information, see [Find your environment and organization ID and name](/power-platform/admin/determine-org-id-name).
+1. Download the **Matrix planning** visual from Marketplace.
+1. Drag the **Matrix planning** visual onto the report canvas.
+1. Select the visual on the report canvas, and then select the **Format visual** tab on the report canvas. In the **API Details** window for the visual, add your API base URL and cube name. This information provides the details that business performance planning requires to read data from the cube and write data to it. The API base URL is the URL of the environment where business performance planning is installed. The environment URL must be preceded by **https://** (for example, `https://environment.d365.com`). For more information, see [Find your environment and organization ID and name](/power-platform/admin/determine-org-id-name).
 
     > [!NOTE]
     > The **Format visual** tab is available only when a visual is selected on the report canvas.
 
-5. Select the visual, and find the visualization pane for it. In the visualization pane, enter names for the rows, columns, and filter fields. These columns provide the structure (x-axis and y-axis) for your matrix. 
-6. Arrange the fields in the rows and columns of the matrix to define its visual structure. Fields that are put in rows and columns define the matrix's axes. Any fields that aren't put in rows and columns are used as filter context and should be added to the **Filters** field in the visualization pane.
-7. Define the shape of the matrix by putting values in the rows and columns. Any dimensions that are intended only as filter context (that is, they aren't part of the x-axis or y-axis) should be added to the **Filters** field in the visualization pane.
-8. Provide dimensions and variables to enable the **Matrix planning** visual to establish the write-back coordinates that are required to effectively build planning and budgeting models.
-9. Assign the **Amount** column from your cube to the values variable in the visualization pane. This step ensures that the **Matrix planning** visual includes specific data values.
-10. Verify the configuration setup in the visualization pane to ensure that all necessary fields, dimensions, and variables are correctly assigned and placed in the row, column, filter, and value sections.
-11. Save the changes that you made to the configuration. Then apply the settings to activate the **Matrix planning** visual on your Power BI dashboard or report.
+1. Select the visual, and find the visualization pane for it. In the visualization pane, enter names for the rows, columns, and filter fields. These columns provide the structure (x-axis and y-axis) for your matrix.
+1. Arrange the fields in the rows and columns of the matrix to define its visual structure. Fields that you put in rows and columns define the matrix's axes. Any fields that you don't put in rows and columns are used as filter context and should be added to the **Filters** field in the visualization pane.
+1. Define the shape of the matrix by putting values in the rows and columns. Any dimensions that are intended only as filter context (that is, they aren't part of the x-axis or y-axis) should be added to the **Filters** field in the visualization pane.
+1. Provide dimensions and variables to enable the **Matrix planning** visual to establish the write-back coordinates that are required to effectively build planning and budgeting models.
+1. Assign the **Amount** column from your cube to the values variable in the visualization pane. This step ensures that the **Matrix planning** visual includes specific data values.
+1. Verify the configuration setup in the visualization pane to ensure that all necessary fields, dimensions, and variables are correctly assigned and placed in the row, column, filter, and value sections.
+1. Save the changes that you made to the configuration. Then apply the settings to activate the **Matrix planning** visual on your Power BI dashboard or report.
 
 > [!NOTE]
 > Add all dimensions to the visual.
 
-An attribute from every dimension of the cube that's specified in the visual settings should be used in the visual (in the row section, the column section, or the filter section). Otherwise, the write-back is applied at the "All" level to all dimensions that aren't used in the visual. As a result, excessive numbers of records are written to the database.
+Use an attribute from every dimension of the cube that you specify in the visual settings (in the row section, the column section, or the filter section). Otherwise, the write-back is applied at the "All" level to all dimensions that aren't used in the visual. As a result, excessive numbers of records are written to the database.
 
 ## Enter data
 
@@ -64,10 +64,10 @@ To enter data in an aggregation cell in the **Matrix planning** visual, go to th
 
 ### Prerequisites for entering or editing data on aggregations
 
-The relevant hierarchy should be collapsed, and the children should not be visible. Multiple allocation options are available. For more information, see [Allocation visual](allocation.md).
+The relevant hierarchy should be collapsed, and the children shouldn't be visible. Multiple allocation options are available. For more information, see [Allocation visual](allocation.md).
 
 > [!IMPORTANT]
-> Values that are entered at a base level and dimension coordinates that don't contain aggregations are saved after you select **Save**. Values that are entered on aggregations are immediately saved.
+> Select **Save** to save values that you enter at a base level and dimension coordinates that don't contain aggregations. Values that you enter on aggregations are saved immediately.
 
 Changes from base-level entries are immediately visible in the matrix. To view the results of allocation or the effects on other elements of the report, refresh the report page. Because of limitations in Power BI Desktop, **Refresh** in the visual doesn't work in Power BI Desktop.
 
@@ -77,18 +77,18 @@ Select **Export to excel** to export a formatted report of the content that's sh
 
 ## Copy and paste
 
-In edit mode, you can paste cells that you've copied to the clipboard into the matrix. Select the place in the matrix where you want to paste the content, select and hold (or right-click), and then select **Paste**.
+In edit mode, you can paste cells that you copied to the clipboard into the matrix. Select the place in the matrix where you want to paste the content, select and hold (or right-click), and then select **Paste**.
 
 ## Enter or edit comments
 
-You can directly enter comments by selecting and holding (or right-clicking) a base-level cell. In read mode, hover over a cell to view comments that have been entered at base levels and underlying levels on an aggregated level.
+You can directly enter comments by selecting and holding (or right-clicking) a base-level cell. In read mode, hover over a cell to view comments that you enter at base levels and underlying levels on an aggregated level.
 
 ### Configuration options
 
 - **Grid properties** – In the **Format** pane in Power BI, set different design parameters, such as the font size, colors, and layout.
-- **Show comment markers** – Comments are stored in the **TEXT\_VAL** value of the cube. You can either use the same cube that contains your values or store them in a separate comments cube. We recommend that you use a separate comments cube if you want to store comments at a different granularity than your cube. For comments in the same cube, you can show comment markers in the **Matrix planning** visual. For this approach, your cube must have a column that returns **1** if there's a comment for the record. Here's an example: **Comment Count = if(VW\_GL\[TEXT\_VAL\]\<\>BLANK(),1,0)**. This calculated column measure for the comment count must be added to the **Comment count** field in the visual. Markers are shown for the coordinates where the comment count is above 0 (zero).
-- **Lock measure or value columns for entry** – The **Measure uneditable** property lets you prevent edits for specific value fields by specifying one or more columns, where the first value starts with **0**. For example, to prevent entry in the second value field you can set the property to **1**. To prevent entry in the second and third value fields, set the property to **1,2**.
-- **Disable entry on empty parents** – The **Allow entry on empty parent** property lets you prevent users from entering data in empty aggregated cells. Data entry in these cells lead to a large number of unintentional write-back transactions.
+- **Show comment markers** – The **TEXT\_VAL** value of the cube stores comments. You can either use the same cube that contains your values or store them in a separate comments cube. Use a separate comments cube if you want to store comments at a different granularity than your cube. For comments in the same cube, you can show comment markers in the **Matrix planning** visual. For this approach, your cube must have a column that returns **1** if there's a comment for the record. Here's an example: **Comment Count = if(VW\_GL\[TEXT\_VAL\]\<\>BLANK(),1,0)**. Add this calculated column measure for the comment count to the **Comment count** field in the visual. Markers are shown for the coordinates where the comment count is above 0 (zero).
+- **Lock measure or value columns for entry** – The **Measure uneditable** property prevents edits for specific value fields by specifying one or more columns, where the first value starts with **0**. For example, to prevent entry in the second value field set the property to **1**. To prevent entry in the second and third value fields, set the property to **1,2**.
+- **Disable entry on empty parents** – The **Allow entry on empty parent** property prevents users from entering data in empty aggregated cells. Data entry in these cells leads to a large number of unintentional write-back transactions.
 
 ### Conditional formatting
 
@@ -110,9 +110,9 @@ Use the **Custom** option in the **Values calculation** section to define the ca
 Here's an example.
 
 1. In Power BI, create a measure that has a calculation and any definition. For this example, use **PY AC % = 1**.
-2. Drag the measure into the value field of the visual.
-3. In the Power BI **Values calculation** section of the **Matrix planning** visual in the **Formatting** pane, select **Custom**.
-4. Define the calculation by using any of the supported operators. Use the references **val1** through **val*n*** to refer to the corresponding value fields in the visual. For this example, the first field (**Amount**) is referred to as **val1**, and the second field (**PY AC**) is referred to as **val2**.
+1. Drag the measure into the value field of the visual.
+1. In the Power BI **Values calculation** section of the **Matrix planning** visual in the **Formatting** pane, select **Custom**.
+1. Define the calculation by using any of the supported operators. Use the references **val1** through **val*n*** to refer to the corresponding value fields in the visual. For this example, the first field (**Amount**) is referred to as **val1**, and the second field (**PY AC**) is referred to as **val2**.
 
 For this example, you add the **Amount** and **PY AC** fields, and define the placeholder calculation **PY AC %** as **val1/val2**. Here, **val1** refers to the **Amount** field, **val2** refers to the **PY AC** field, and the relative percentage is calculated.
 
@@ -163,11 +163,11 @@ For this example, you add the **Amount** and **PY AC** fields, and define the pl
 | \<=      | Smallereq              | x \<= y      | Left to right | 4 \<= 3                 | false               |
 | \>=      | Largereq               | x \>= y      | Left to right | 2 + 4 \>= 6             | true                |
 
-If statements are also supported, the syntax resembles the following example:
+If statements are also supported, and the syntax resembles the following example:
 
 val2 != 0 ? val1 / val2 : null
 
-Here:
+In this example:
 
 - **!=** is the "not equal" operator.
 - **?** is the "if" operator.
@@ -178,8 +178,8 @@ Here:
 In scenarios where you write back on different measures that aren't part of a measure dimension, set the coordinates for the column that should be used when a value is written back in that column.
 
 1. Select **Edit** in the upper right of the visual.
-2. Select the measure to override metadata for. Set the dimension coordinates that should be used when a value is written in that column.
-3. Select **Sync settings** to apply your changes.
+1. Select the measure to override metadata for. Set the dimension coordinates that should be used when a value is written in that column.
+1. Select **Sync settings** to apply your changes.
 
 > [!TIP]
 > It's easier to add a simple DAX measure, **\[Units\]=0**, to apply the measure format and use it as the placeholder for the column override.
@@ -200,7 +200,7 @@ You can have different formats for each level of subtotal rows in the **Matrix p
 
 ### DAX-based subtotal
 
-You can use DAX measures for rollups and subtotals. The subtotal format for the lowest level of the hierarchy can't be changed.
+You can use DAX measures for rollups and subtotals. You can't change the subtotal format for the lowest level of the hierarchy.
 
 ### Grand total conditional formatting
 
@@ -210,16 +210,16 @@ By default, the **Grid UI** option sets the color green for columns. However, yo
 
 - **Amount GT format formula**
 
-    - **Val = Val** – Use this formula to set the new format for all the grand total rows.
-    - **Val \< Val** – Use this formula to set the new format for a specific range of values.
-    - **Val \> Val** – Use this formula to set the new format for a specific range of values.
+  - **Val = Val** – Use this formula to set the new format for all the grand total rows.
+  - **Val \< Val** – Use this formula to set the new format for a specific range of values.
+  - **Val \> Val** – Use this formula to set the new format for a specific range of values.
 
 - **Amount suffix icon** – You can use ASCII or HTML code.
 - **Amount GT format formula priority level** – Amount GT format formula 1 has higher priority than the others.
 
-    - **Same formulas** – In this example, two formulas are the same, but only the first formula is applied.
-    - **Different formulas** – In this example, two different formulas are applied to the amount.
-    - **Three formulas added** – In this example, three formulas are added.
+  - **Same formulas** – In this example, two formulas are the same, but only the first formula is applied.
+  - **Different formulas** – In this example, two different formulas are applied to the amount.
+  - **Three formulas added** – In this example, three formulas are added.
 
 ### Undo
 

@@ -4,7 +4,7 @@ description: Learn how to configure the Cash flow forecasts feature in Finance I
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 10/11/2023
+ms.date: 06/23/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

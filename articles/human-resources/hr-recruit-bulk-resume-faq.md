@@ -1,7 +1,7 @@
 ---
 title: FAQ for Human Resources recruiting with Bulk resume upload
 description: This FAQ provides information about the AI technology used in Human Resources recruiting, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 04/14/2025
+ms.date: 06/11/2026
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq

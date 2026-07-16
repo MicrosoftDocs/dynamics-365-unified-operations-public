@@ -4,8 +4,8 @@ description: Learn about how to set up an approval workflow that will run when a
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to
-ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.date: 06/23/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -18,30 +18,29 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 [!include [banner](../includes/banner.md)]
 
-The article explains how to set up an approval workflow that will run when a new lease is created. For information about how to use the workflow, see [Use lease approval workflows](use-create-lease-wrkflw.md). 
+This article explains how to set up an approval workflow that runs when you create a new lease. For information about how to use the workflow, see [Use lease approval workflows](use-create-lease-wrkflw.md).
 
 1. Go to **Asset leasing \> Setup \> Lease workflow**.
 2. On the **Lease workflow** page, select **New**.
-3. In the dialog box that appears, under **Workflow type**, select the **Lease workflow** link.
+1. In the dialog box, under **Workflow type**, select the **Lease workflow** link.
 
-    The application is opened. After it runs, sign in to Microsoft Entra ID to be redirected to the workflow application.
+    The application opens. After it runs, sign in to Microsoft Entra ID to be redirected to the workflow application.
 
-4. Drag the **Lease workflow approval** element onto the workflow.
-5. Connect one node from **Start** to **Lease workflow approval**. Then connect **Lease workflow approval** to **End**.
-6. Double-click **Lease workflow approval**.
-7. Select **Properties**, and then, under **Basic settings**, enter a name for the workflow.
+1. Drag the **Lease workflow approval** element onto the workflow.
+1. Connect one node from **Start** to **Lease workflow approval**. Then connect **Lease workflow approval** to **End**.
+1. Double-click **Lease workflow approval**.
+1. Select **Properties**, and then, under **Basic settings**, enter a name for the workflow.
 
-    On this page, you can also set more parameters for the workflow. If you've turned on **Automatic actions**, the system will automatically take a specific action. Notifications can be sent if they are specified on the **Notifications** tab. On the **Advanced settings** tab, you can specify a final approver, set a time limit, and designate specific actions that must be completed.
+    On this page, you can also set more parameters for the workflow. If you turn on **Automatic actions**, the system automatically takes a specific action. You can send notifications if you specify them on the **Notifications** tab. On the **Advanced settings** tab, you can specify a final approver, set a time limit, and designate specific actions that must be completed.
 
-8. When you've finished setting the workflow parameters, select **Close**.
-9. Select **Step 1**, and then select **Properties**.
-10. Under **Basic settings**, enter a name for the step, create a subject line for the approval, and specify instructions for the approval.
-11. On the **Assignment** page, select the assignment type.
-12. To assign specific users to the approval, select **User**, select the users who approve leases, and then select **Close**.
-13. Select **Save and close** to create the workflow. Then, when you're prompted, select **OK**.
-14. On the **Create workflow** page, select **Close**.
-14. Select the new workflow, and then select **Versions**. Then select **Make active** to ensure that the workflow is active.
-15. Select **Close**. The new active version appears.
-
+1. When you finish setting the workflow parameters, select **Close**.
+1. Select **Step 1**, and then select **Properties**.
+1. Under **Basic settings**, enter a name for the step, create a subject line for the approval, and specify instructions for the approval.
+1. On the **Assignment** page, select the assignment type.
+1. To assign specific users to the approval, select **User**, select the users who approve leases, and then select **Close**.
+1. Select **Save and close** to create the workflow. Then, when you're prompted, select **OK**.
+1. On the **Create workflow** page, select **Close**.
+1. Select the new workflow, and then select **Versions**. Then select **Make active** to ensure that the workflow is active.
+1. Select **Close**. The new active version appears.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

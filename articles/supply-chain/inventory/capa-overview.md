@@ -1,12 +1,12 @@
-﻿---
+---
 title: Corrective and preventive action (CAPA) management overview
-description: Learn how you can use corrective and preventive action (CAPA) management to create and maintain records of the corrective or preventive actions taken to manage and resolve nonconformities or defects involving products.
+description: Learn how to use corrective and preventive action (CAPA) management to track and resolve nonconformities or product defects.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-Corrective and preventive action (CAPA) management lets you create and maintain records of the actions that are taken to manage and resolve nonconformities or defects. By planning, tracking, and analyzing CAPA cases, you can develop efficient processes that can also help resolve similar issues. CAPA management provides a formal and controlled process for managing various types of issues that arise from manufacturing, engineering, quality, or data quality sources.
+Corrective and preventive action (CAPA) management lets you create and maintain records of the actions taken to manage and resolve nonconformities or defects. By planning, tracking, and analyzing CAPA cases, you can develop efficient processes that can also help resolve similar issues. CAPA management provides a formal and controlled process for managing various types of issues that arise from manufacturing, engineering, quality, or data quality sources.
 
 CAPA management provides the following benefits:
 

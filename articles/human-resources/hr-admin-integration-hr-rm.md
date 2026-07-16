@@ -4,7 +4,7 @@
 title: Human resources to bookable resource integration
 description: This article provides details about the integration of Microsoft Dynamics 365 Human Resources workers to bookable resources.
 author: twheeloc
-ms.date: 12/02/2025
+ms.date: 06/12/2026
 ms.topic: article
 ms.reviewer: twheeloc
 # optional metadata
@@ -27,6 +27,7 @@ ms.custom: sfi-image-nochange
 ---
 
 # Human resources to bookable resource integration
+
 [!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 Human resources to bookable resource integration enables organizations to integrate their worker information. By bringing together worker information, including information about skills and proficiencies, the integration enhances the resource manager's experience and helps them find the best resources for a requirement. This functionality alleviates the pain of double entry and maintenance of workers and characteristics. You no longer have to enter and maintain this data in both Microsoft Dynamics 365 Project operations and other areas that use the Universal Resource Scheduling (URS) solution for resource scheduling.
@@ -68,7 +69,7 @@ Depending on your organization's integration points, you might need some of the 
 - Dual-write core solution (Required)
 - Dual-write Dynamics 365 Human Resources (Required)
 - Dual-write Finance
-- Dual-write Supply Chain 
+- Dual-write Supply Chain
 - Dynamics 365 Human Resources common tables (Required)
 - Finance and operations virtual entity
 - Microsoft Dynamics 365 Project Operations
@@ -76,7 +77,7 @@ Depending on your organization's integration points, you might need some of the 
 > [!NOTE]
 > The dual-write solutions that you need depend on your scenario: whether you're using the integration with Dynamics 365 Field Service, Project Operations, or Scheduling.
 
-## Install the solution from Power Platform admin center 
+## Install the solution from Power Platform admin center
 
 Follow these steps to install the integration from Power Platform admin center:
 
@@ -91,7 +92,7 @@ Follow these steps to install the integration from Power Platform admin center:
 
     While solution installation is in progress, the status is **Installing**. After the solution is installed, the status changes to **Installed**.
 
-![Status is Installing](./media/Status-installing.jpg)   
+![Status is Installing](./media/Status-installing.jpg)
 
 ## Install dual-write packages
 
@@ -105,20 +106,23 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 > Refresh the entity list to ensure it reflects the most updated versions of entities.
 
 ### Apply solution
+
 1. Go to **Data management** > **Dual-write**.
 1. Select **Apply solution**.
-1. Apply the following solutions: 
-  - Dynamics 365 Human resources entity maps
-  - HCM Scheduling 
+1. Apply the following solutions:
+
+- Dynamics 365 Human resources entity maps
+- HCM Scheduling
 
 ![Dual write Apply Solution](./media/DW_ApplySolution.png)
 
-
 ### Run Dual-write table maps
-Before you start dual-write on an entity, run an initial synchronization to handle existing data on both Finance and operations apps and customer engagement apps. For more information, see [Enable table maps for dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md). 
 
-Select appropriate table maps to run the dual-write maps for the worker to bookable resource integration. 
-To enable worker to bookable resource integration, select the following: 
+Before you start dual-write on an entity, run an initial synchronization to handle existing data on both Finance and operations apps and customer engagement apps. For more information, see [Enable table maps for dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md).
+
+Select appropriate table maps to run the dual-write maps for the worker to bookable resource integration.
+To enable worker to bookable resource integration, select the following:
+
 - Worker (cdm_workers)
 - Skills (Dual-write) (characteristics)
 - Certificate type (Dual-write) (characteristics)

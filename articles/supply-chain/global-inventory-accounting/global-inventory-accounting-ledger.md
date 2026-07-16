@@ -6,13 +6,16 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 02/11/2025
-ms.custom: 
+ms.date: 06/24/2026
+ms.update-cycle: 1095-days
+ms.custom:
   - bap-template
+  - evergreen
 ---
 
 # Global Inventory Accounting ledger
 
+[!INCLUDE [global-inventory-accounting-deprecation-banner](../includes/global-inventory-accounting-deprecation-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Global Inventory Accounting has its own set of ledgers. Each time an inventory-related transaction is processed for a relevant legal entity, the system can account for that transaction in any number of Global Inventory Accounting ledgers, as required.

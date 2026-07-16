@@ -3,7 +3,7 @@ title: Set up pay cycles and pay periods
 description: Learn about setup variations in pay cycles, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User
@@ -72,7 +72,7 @@ The following table shows the number of pay periods that you enter to generate p
 
 If you don't want to modify default payment dates at this point, the pay cycles are ready for you to use. You can assign the pay cycles to positions to control when workers in those positions are paid. For more information, see "Assign pay cycles to positions." later in this article.
 
-You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings. For more information, see "Assign pay periods to payroll calculation frequencies" in [Set up pay cycles and pay periods]().
+You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings. For more information, see "Assign pay periods to payroll calculation frequencies" in [Set up pay cycles and pay periods](noam-usa-pay-cycle-pay-period-tasks-sample.md).
 
 ## Optional: Modify the payment dates and statuses of pay periods
 
@@ -81,7 +81,7 @@ When you generate pay periods, the pay period status is **Open**, and a default 
 > [!TIP]
 > You might find it helpful to have a list of weekend and holiday dates before you start this task.
 
-You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or taxes. For more information, see "Assign pay periods to payroll calculation frequencies" in [Set up pay cycles and pay periods]().
+You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or taxes. For more information, see "Assign pay periods to payroll calculation frequencies" in [Set up pay cycles and pay periods](noam-usa-pay-cycle-pay-period-tasks-sample.md).
 
 ## Assign pay cycles to positions
 

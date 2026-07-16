@@ -5,7 +5,7 @@
 title: Avoid text truncation on the position hierarchy and export to Visio
 description: This article explains how to fix the issue of truncated names of individuals and positions in the position hierarchy in Microsoft Dynamics 365 Human Resources. 
 author: twheeloc
-ms.date: 08/19/2021
+ms.date: 06/12/2026
 ms.topic: how-to
 # optional metadata
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 **Issue**
 
-When a customer views the position hierarchy in Microsoft Dynamics 365 Human Resources, the names of individuals and positions are truncated. Therefore, it can be difficult to take a screenshot, or to print and distribute the hierarchy.
+When you view the position hierarchy in Microsoft Dynamics 365 Human Resources, the names of individuals and positions are truncated. Therefore, it's difficult to take a screenshot, or to print and distribute the hierarchy.
 
 ![Position hierarchy.](media/position-h.png)
 
@@ -41,47 +41,47 @@ This behavior is by design.
 
 **Resolution**
 
-Unfortunately, users can't easily change the size of the text. However, you can export the position hierarchy out of Human Resources and then import it into Microsoft Visio. Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Human Resources: [Export a position hierarchy to Microsoft Visio](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+You can't easily change the size of the text. However, you can export the position hierarchy out of Human Resources and then import it into Microsoft Visio. Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Human Resources: [Export a position hierarchy to Microsoft Visio](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Follow these steps to export to Visio.
 
 1. In Human Resources, open the **Positions** list page.
 
-    To include more information in the organization structure diagram, add fields to the **Positions** list, so that they are available when you use the **Organization chart wizard** later in this procedure.
+    To include more information in the organization structure diagram, add fields to the **Positions** list, so that they're available when you use the **Organization chart wizard** later in this procedure.
 
-2. On the Action Pane, select the **Open in Microsoft Office** button, and then, under **Export to Excel**, select **Positions**. Alternatively, press Ctrl+T.
+1. On the Action Pane, select the **Open in Microsoft Office** button, and then, under **Export to Excel**, select **Positions**. Alternatively, press Ctrl+T.
 
     ![Export the Positions list page to Excel.](media/org-admin.png)
 
-3. Save the Excel file that is exported.
+1. Save the exported Excel file.
 
     ![Export to Excel dialog box.](media/export-excel.png)
 
-4. In Visio, select **Visio - Create New**, and select the **Business** template category.
+1. In Visio, select **Visio - Create New**, and select the **Business** template category.
 
     ![New diagram.](media/new.png)
 
-5. Select **Organization Chart Wizard**, and then select **Create**.
+1. Select **Organization Chart Wizard**, and then select **Create**.
 
     ![Organization Chart Wizard dialog box.](media/orgchart-wizard.png)
 
-6. Select **Information that's already stored in a file or database**, and then select **Next**.
+1. Select **Information that's already stored in a file or database**, and then select **Next**.
 
     ![Organization Chart Wizard 1.](media/orgchart-wizard7.png)
 
-7. Choose **A text, Org Plus (\*.txt), or Excel file**, and then select **Next**.
+1. Choose **A text, Org Plus (\*.txt), or Excel file**, and then select **Next**.
 
     ![Organization chart wizard 2.](media/orgchart-wizard3.png)
 
-8. Browse to select the exported Excel file that contains the position hierarchy, and then select **Next**.
+1. Browse to select the exported Excel file that contains the position hierarchy, and then select **Next**.
 
     ![Organization Chart Wizard 3.](media/orgchart-wizard2.png)
 
-9. Set the **Name** field to **Position**, set the **Reports to** field to **Reports to position**, and then select **Next**.
+1. Set the **Name** field to **Position**, set the **Reports to** field to **Reports to position**, and then select **Next**.
 
     ![Organization Chart Wizard 4.](media/orgchart-wizard1.png)
 
-10. Select the fields that should be shown on each node, and then select **Next**.
+1. Select the fields that should be shown on each node, and then select **Next**.
 
     ![Organization Chart Wizard 5.](media/orgchart-wizard5.png)
 
@@ -107,6 +107,5 @@ Based on the fields that you selected to include in the diagram, each node shows
 **Additional option**
 
 In Human Resources, you might also be able to use the **People** workspace to view some hierarchy-related information.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

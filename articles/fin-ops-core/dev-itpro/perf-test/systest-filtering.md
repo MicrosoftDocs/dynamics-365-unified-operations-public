@@ -3,7 +3,7 @@ title: SysTest filtering using class and method attributes
 description: Learn about attributes that can be used with SysTest classes and methods for the purpose of test filtering, including the Category, Priority, and Owner attributes.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/16/2026
 ms.reviewer: johnmichalak
 audience: Developer

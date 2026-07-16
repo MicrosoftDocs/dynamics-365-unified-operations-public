@@ -3,7 +3,7 @@ title: Financial tags developer overview
 description: Learn about the financial tags feature architecture, data model, core tables, and how financial tags differ from financial dimensions.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: overview
+ms.topic: concept-article
 ms.date: 04/06/2026
 ms.reviewer: twheeloc
 audience: Developer

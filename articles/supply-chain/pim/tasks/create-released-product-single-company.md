@@ -4,7 +4,7 @@ description: Learn how to create a single released product in the context of a s
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 5/27/2026
+ms.date: 05/27/2026
 ms.custom: 
 ms.reviewer: kamaybac    
 ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, UnitOfMeasureLookup, DimensionLookup

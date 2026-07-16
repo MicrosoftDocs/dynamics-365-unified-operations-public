@@ -3,7 +3,7 @@ title: Maintenance mode
 description: Learn about maintenance mode, which is a system-wide setting that lets system administrators make system changes that can affect system functionality.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

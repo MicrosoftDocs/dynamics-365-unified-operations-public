@@ -3,7 +3,7 @@ title: Perform fixed asset revaluation
 description: Learn how to perform fixed asset revaluation for Türkiye.
 author: v-omerorhan
 ms.author: v-omerorhan
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/17/2026
 ms.reviewer: johnmichalak
 audience: Application User

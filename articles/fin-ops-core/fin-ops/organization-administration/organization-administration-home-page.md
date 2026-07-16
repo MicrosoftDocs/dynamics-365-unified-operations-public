@@ -3,7 +3,7 @@ title: Organization administration home page
 description: Access the organization administration home page and resources that help you in your organization, including resources for number sequences and organizations.
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: overview
 ms.date: 11/21/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started

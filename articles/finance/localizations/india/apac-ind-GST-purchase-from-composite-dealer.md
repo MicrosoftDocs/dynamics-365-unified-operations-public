@@ -3,7 +3,7 @@ title: Purchases from composite dealers
 description: Learn about purchases that are made from a composite dealer, including an outline on validating a voucher and a step-by-step process for validating tax details.
 author: epodkolzina
 ms.author: epodkolzina
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/30/2026
 ms.reviewer: johnmichalak 
 ms.search.region: India

@@ -4,7 +4,7 @@ description: Learn how to use the Table edit visual in the Business performance 
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 12/07/2023
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version:
 
 This article describes how to use the **Table edit** visual in the Business performance planning application. To fully use this application, you must install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
-The **Table edit** visual in the Business performance planning application is a powerful custom visual that lets you directly edit dimensions. This functionality gives you many possibilities for modifying and managing data directly on your financial planning Power BI reports:
+The **Table edit** visual in the Business performance planning application is a powerful custom visual that you can use to directly edit dimensions. This functionality gives you many possibilities for modifying and managing data directly on your financial planning Power BI reports:
 
 - Create new forecasting scenarios or versions.
 - Easily update static (fixed) values, such as 401(K) match contributions.
@@ -26,24 +26,24 @@ The **Table edit** visual in the Business performance planning application is a 
 ## Use the Table edit visual
 
 The **Table edit** visual provides an interface for direct edits to dimensions in Power BI. This interface lets users add, modify, or delete rows in selected dimensions.
- 
+
 > [!IMPORTANT]
 > Any user who has the **Update dimension data** privilege can edit dimension values. The out-of-box **Administrator**, **Power user**, and **Contributor** roles include this privilege.
 
 ### Example
 
-This example show how the **Table edit** visual facilitates the addition of new scenarios in the scenario dimension.
+This example shows how the **Table edit** visual makes it easy to add new scenarios in the scenario dimension.
 
 To add scenarios in the scenario dimension, follow these steps:
 
 1. In the dropdown list at the top of the **Table edit** visual, select a dimension. For this example, select the **Scenario** dimension.
-2. At the top of the page, select **(+)** to add a row.
-3. In the **Name** field, enter a name for the new scenario.
-4. In the **Description** field, enter a description.
-5. Repeat steps 2 through 4 to add the **Forecast downside** scenario.
-6. Select **Save**.
+1. At the top of the page, select **(+)** to add a row.
+1. In the **Name** field, enter a name for the new scenario.
+1. In the **Description** field, enter a description.
+1. To add the **Forecast downside** scenario, repeat steps 2 through 4.
+1. Select **Save**.
 
-The newly added scenarios can be used for what-if analysis and exploration in Dynamics 365 Finance business performance planning and Power BI.
+You can use the newly added scenarios for what-if analysis and exploration in Dynamics 365 Finance business performance planning and Power BI.
 Here are some examples of possible uses:
 
 - Model sales forecasts based on different economic environments.
@@ -51,13 +51,13 @@ Here are some examples of possible uses:
 
 ### Configuration options
 
-To initiate configuration, select a table on the dropdown menu at the top of the **Table edit** visual.
+To initiate configuration, select a table from the dropdown menu at the top of the **Table edit** visual.
 
 - **Editing modes** – To update the editing mode, select the visual properties button, expand the **Toolbar actions** section, and then update the **Edit mode** value. There are three editing modes:
 
-    - **Grid** – You can immediately edit any record on a page. Save your changes by using the button in the upper right of the visual.
-    - **Row** – You can edit a specific row. Buttons are provided so that you can save your changes or delete the record. In **Row** mode, you must save the new dimension value before you can add a new dimension value.
-    - **Form** – After you select the **Edit** button, records are shown vertically, and more attributes immediately appear.
+  - **Grid** – You can immediately edit any record on a page. Save your changes by using the button in the upper right of the visual.
+  - **Row** – You can edit a specific row. Buttons are provided so that you can save your changes or delete the record. In **Row** mode, you must save the new dimension value before you can add a new dimension value.
+  - **Form** – After you select the **Edit** button, records are shown vertically, and more attributes immediately appear.
 
 - **Add a new record** – In any editing mode, select the plus sign (**+**) to add new records.
 - **Bulk edit** – Select a column, enter a new or updated value, and then select **Batch update**. The values in the selected column are updated for all rows that are shown. To update this setting, select the visual properties button, expand the **Toolbar actions** section, and then update the **Enable batch update** selection.
@@ -79,4 +79,4 @@ To initiate configuration, select a table on the dropdown menu at the top of the
 - **Note column** – Enter the names of the columns that you want to add notes to.
 
 > [!IMPORTANT]
-> When you reference the name of any column in the preceding settings, you must use the technical name of the column (for example, **msdyn\_description**). You can find the technical name in the **Data** column of Power BI.
+> When you reference the name of any column in the preceding settings, use the technical name of the column (for example, **msdyn\_description**). You can find the technical name in the **Data** column of Power BI.

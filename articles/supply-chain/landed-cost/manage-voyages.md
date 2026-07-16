@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ITMTableListPage, ITMTable
 ms.topic: how-to
-ms.date: 02/14/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -22,7 +22,7 @@ A voyage typically represents a vessel. However, depending on your practices and
 
 ## The All voyages page
 
-The **All voyages** page provides voyage details, delivery and costing information, and information about items, purchase orders, and transfer orders. To open the **All voyages** page, go to **Landed cost \> Voyages \> All voyages**. This page shows a list of all current voyages. You can use the buttons on the Action Pane to create, delete, and work with voyages. Select any voyage in the list to view its details.
+The **All voyages** page provides voyage details, delivery and costing information, and information about items, purchase orders, and transfer orders. To open the **All voyages** page, go to **Landed cost > Voyages > All voyages**. This page shows a list of all current voyages. You can use the buttons on the Action Pane to create, delete, and work with voyages. Select any voyage in the list to view its details.
 
 > [!NOTE]
 > Shipping containers and folios are linked to a voyage. Purchase lines are linked to a shipping container. In addition, costs that are entered here are apportioned to all attached purchase lines.
@@ -50,8 +50,8 @@ The following table describes the buttons that are available on the **Voyage** t
 
 | Button | Description |
 |---|---|
-| Shipping container | Open a page that shows all the shipping containers that are associated with the selected voyage. There might be one container or many containers. |
-| Folio | Open a page that shows all the folios that are associated with the selected voyage. There might be one folio or many folios. |
+| Shipping container | Open a page that shows all the shipping containers associated with the selected voyage. There might be one container or many containers. |
+| Folio | Open a page that shows all the folios associated with the selected voyage. There might be one folio or many folios. |
 
 #### Buttons on the Manage tab
 
@@ -59,21 +59,21 @@ The following table describes the actions that are available on the **Manage** t
 
 | Button | Description |
 |---|---|
-| Documents received | Update the voyage so that the **Documents received** option is set to *Yes*. You can use this button to lock the item and/or purchase line so that it can't be updated further. |
-| In transit | Update the **Voyage status** field to the in-transit status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page. There's no further logic on this process. A voyage can also be automatically updated to the in-transit status, based on settings in the [Tracking control center](delivery-information-setup.md). |
-| Ready for costing | Update the **Voyage status** field to the ready for costing status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page. A voyage can be costed when all the invoices have been processed (both stock invoices and voyage cost invoices) and the goods have been received. If the estimated costs that are associated with a voyage haven't been costed, an error occurs when you try to process the costing of a voyage. |
-| Costed | Clean up any costing irregularities after an invoice exists for all purchase orders and voyage costs. When you select this button, the **Voyage update - Costed** dialog box appears. There, you can select to post on the standard financial date or specify a posting date, and then run the action. You can rerun the action as many times as you want. You can also use the **Voyage update - Costed** dialog box to establish a schedule to run the action as a periodic task (batch job). We recommend that you regularly run the action by setting it up as a batch job. |
+| Documents received | Update the voyage to set the **Documents received** option to *Yes*. You can use this button to lock the item and/or purchase line so that it can't be updated further. |
+| In transit | Update the **Voyage status** field to the in-transit status that is set on the **[Landed cost parameters](landed-cost-parameters.md)** page. There's no further logic in this process. A voyage can also be updated automatically to the in-transit status, based on settings in the [Tracking control center](delivery-information-setup.md). |
+| Ready for costing | Update the **Voyage status** field to the ready for costing status that is set on the **[Landed cost parameters](landed-cost-parameters.md)** page. A voyage can be costed when all the invoices have been processed (both stock invoices and voyage cost invoices) and the goods have been received. If the estimated costs associated with a voyage haven't been costed, an error occurs when you try to process the costing of a voyage. |
+| Costed | Clean up any costing irregularities after an invoice exists for all purchase orders and voyage costs. When you select this button, the **Voyage update - Costed** dialog box appears. There, you can select to post on the standard financial date or specify a posting date, and then run the action. You can rerun the action as many times as you want. You can also use the **Voyage update - Costed** dialog box to schedule the action as a periodic task (batch job). Run the action regularly by setting it up as a batch job. |
 | Post receipts list | Post a receipt list for all purchase order lines in the voyage.  |
-| Post product receipt | Post a product receipt for all purchase order lines in the voyage. The product receipt process for the purchase order lines that are associated with a voyage will be used only if the goods will **not** go through goods-in-transit processing. If the goods will go through goods-in-transit processing, you receive an error when you try to post the product receipt for a purchase order line.  |
-| Post invoice | Post an invoice for all purchase order lines in the voyage. If the goods on the voyage will go through goods-in-transit processing, the purchase order lines will be invoiced before the receiving process is done. When the original purchase order is invoiced, the goods-in-transit orders that are associated with the original purchase order lines will be created. Those orders can then be received by the warehouse.  |
-| Ship transfer order | Post a transfer order voyage for all transfer order lines in the voyage. When this button is selected, only transfer orders will be available for update. |
+| Post product receipt | Post a product receipt for all purchase order lines in the voyage. The product receipt process for the purchase order lines associated with a voyage is used only if the goods do **not** go through goods-in-transit processing. If the goods go through goods-in-transit processing, you receive an error when you try to post the product receipt for a purchase order line.  |
+| Post invoice | Post an invoice for all purchase order lines in the voyage. If the goods on the voyage go through goods-in-transit processing, the purchase order lines are invoiced before the receiving process is done. When the original purchase order is invoiced, the goods-in-transit orders associated with the original purchase order lines are created. Those orders can then be received by the warehouse.  |
+| Ship transfer order | Post a transfer order voyage for all transfer order lines in the voyage. When this button is selected, only transfer orders are available for update. |
 | Receive transfer order | Post a transfer order receipt for all transfer order lines in the voyage. |
-| Receive goods in transit | Receive all order lines that are in transit in the voyage. This button is one of three options that are available for receiving goods in transit on a voyage. (The other two options are the **Create arrival journal** button that is described later in this table, and the Warehouse Management mobile app.) This option is the simplest option, and will process the goods in transit out of the goods-in-transit warehouse and into the final destination warehouse. If you want more control over the process, use the arrival journal or a mobile device to process the receipt of goods. |
-| Find auto costs | Find any relevant voyage costs. If these costs have already been found or updated, you receive the following message: "Un-invoiced cost lines exist. Do you want to overwrite them?" Any costs that weren't associated with the voyage at the time of creation will be found. Voyage costs that are attached to a voyage and that have been invoiced won't be overwritten. |
-| Create arrival journal | <p>Open the **Create arrival journal** dialog box, where you can create an arrival journal that specifies a location. The dialog box provides the following options:</p><ul><li>**Create from goods in transit** or **Create from transfer order** – The label for this option changes depending on whether you're using the goods-in-transit process. Set it to *Yes* to open an arrival journal page that lets you process a standard arrival journal for the goods in transit that are associated with the voyage. If the item has already been received in the final destination warehouse, it won't be added to the arrival journal lines.</li><li>**Initialize quantity** – Set this option to *Yes* to initialize the quantity that will be received, based on the quantity of goods that is specified on the voyage line. If the voyage line has been partially received, this quantity will be the remaining quantity. We recommend that you set this option to *Yes*.</li><li>**Create from order lines** – Set this option to *Yes* to take the value from the order lines.</li></ul><p>This button is one of three options that are available for receiving goods on a voyage. (The other options are the **Receive goods in transit** button that was described earlier in this table, and the Warehouse Management mobile app.)</p> |
+| Receive goods in transit | Receive all order lines that are in transit in the voyage. This button is one of three options available for receiving goods in transit on a voyage. (The other two options are the **Create arrival journal** button described later in this table, and the Warehouse Management mobile app.) This option is the simplest option and processes the goods in transit out of the goods-in-transit warehouse and into the final destination warehouse. If you want more control over the process, use the arrival journal or a mobile device to process the receipt of goods. |
+| Find auto costs | Find any relevant voyage costs. If these costs have already been found or updated, you receive the following message: "Un-invoiced cost lines exist. Do you want to overwrite them?" The system finds any costs that weren't associated with the voyage at the time of creation. Voyage costs that are attached to a voyage and that have been invoiced won't be overwritten. |
+| Create arrival journal | <p>Open the **Create arrival journal** dialog box, where you can create an arrival journal that specifies a location. The dialog box provides the following options:</p><ul><li>**Create from goods in transit** or **Create from transfer order** – The label for this option changes depending on whether you're using the goods-in-transit process. Set it to *Yes* to open an arrival journal page that lets you process a standard arrival journal for the goods in transit associated with the voyage. If the item has already been received in the final destination warehouse, it won't be added to the arrival journal lines.</li><li>**Initialize quantity** – Set this option to *Yes* to initialize the quantity received, based on the quantity of goods that is specified on the voyage line. If the voyage line has been partially received, this quantity is the remaining quantity. Set this option to *Yes*.</li><li>**Create from order lines** – Set this option to *Yes* to take the value from the order lines.</li></ul><p>This button is one of three options available for receiving goods on a voyage. (The other options are the **Receive goods in transit** button described earlier in this table, and the Warehouse Management mobile app.)</p> |
 | Accrue costs | You can accrue costs where a cost type has a ledger account specified for the debit. This button is typically used when the stock is in transit, or when goods have been received and invoiced. |
 | Aggregate costs | Move costs from the shipping container level to the voyage level. You might use this button in a shared services/shipping scenario, where multiple entities share a shipping container or carton space. For example, the voyage has a 40-foot shipping container and a 20-foot shipping container, and the apportionment is done by volume. In this case, the goods/entities that share or use the space in the 20-foot shipping container might be penalized. To fairly distribute the costs, some organizations might want to transfer the costs to the voyage and distribute them based on the voyage-level apportionment method. |
-| Change journey template | Open a dialog box where you can change the journey template. After you change the template, the voyage costs will be deleted. Therefore, you might have to select **Find auto costs** (see the description earlier in this table) or manually add costs again. |
+| Change journey template | Open a dialog box where you can change the journey template. After you change the template, the voyage costs are deleted. Therefore, you might have to select **Find auto costs** (see the description earlier in this table) or manually add costs again. |
 
 #### Buttons on the General tab
 
@@ -82,7 +82,7 @@ The following table describes the buttons that are available on the **General** 
 | Button | Description |
 |---|---|
 | Receipts list | Open a list of product receipts for all purchase order lines in the voyage. If no product receipt lists have been processed, this button is unavailable. |
-| Product receipt | Open the product receipt record for the purchase order lines that are associated with the voyage, if that record is used. If no product receipts have been posted, this button is unavailable. The product receipt process won't be used if you're using goods-in-transit processing. |
+| Product receipt | Open the product receipt record for the purchase order lines associated with the voyage, if that record is used. If no product receipts have been posted, this button is unavailable. The product receipt process won't be used if you're using goods-in-transit processing. |
 | Item arrival | Open the item arrival journal, if it's used. |
 | Tracking | Open the **Inbound tracking** page, where you can update the expected arrival date of goods in a shipping container and a voyage, and subsequently update the expected delivery dates of purchase order lines. |
 | Costs inquiry | <p>Open the **Costs inquiry** page, which shows all the costs of a voyage.</p><p>Select **View** on the Action Pane to adjust the view. You can view any of the levels, plus the item and cost type code.</p><p>Only cost type codes that are directly related to inventory transactions appear on the **Costs inquiry** page. By removing cost type codes, you can adjust the page by grouping costs together. This capability can be useful if you're using sizes and colors.</p><p>The **Costs inquiry** page shows only cost type codes where the **Debit** field is set to *Item*.</p> |
@@ -98,11 +98,11 @@ The **Voyage header** FastTab in the **Lines** view of a voyage contains basic i
 
 #### Information on the Voyage lines FastTab
 
-The **Voyage lines** FastTab in the **Lines** view of a voyage is related to the voyage details and costing information that apply at the voyage level. Here, you can review the shipping containers, folios, and items that are attached to the voyage. The price and quantity of the items on the voyage are also shown. You can view any shipping container or folio that is listed by selecting the relevant link.
+The **Voyage lines** FastTab in the **Lines** view of a voyage is related to the voyage details and costing information that apply at the voyage level. Here, you can review the shipping containers, folios, and items attached to the voyage. The price and quantity of the items on the voyage are also shown. You can view any shipping container or folio that is listed by selecting the relevant link.
 
 #### Information on the Line details FastTab
 
-The **Line details** FastTab in the **Lines** view of a voyage provides more information about the line that is currently selected on the **Voyage lines** FastTab. This FastTab includes details about the position that each line occupies in the container, and its declared quantity.
+The **Line details** FastTab in the **Lines** view of a voyage provides more information about the line currently selected on the **Voyage lines** FastTab. This FastTab includes details about the position that each line occupies in the container, and its declared quantity.
 
 ### <a name="header-view"></a>Header view of the voyage details page
 
@@ -123,10 +123,10 @@ The following table describes the fields that are available on the **General** F
 | Rental | Select this check box to indicate that the container is a rental container that must be returned. |
 | Description | Enter a description of the voyage to make it easier to recognize. |
 | Voyage status | The status of the voyage. Values include *Created*, *In transit*, *Documents received*, and *Costed*. This field isn't calculated based on logic. It's updated only via the posting action. The *Costed* value indicates that an invoice for the stock and all voyage costs has been received. Unless an invoice is received, a voyage can't reach a status of *Costed*. |
-| Purchase order status | The highest status that has been reached among all the purchase orders that are associated with the voyage. |
-| Documents received | A value that indicates whether your company has received all the documents that are associated with the voyage. To change the value, select **Documents received** in the **Voyage update** group on the **Manage** tab of the Action Pane. |
-| Shipping company | Select the shipping company for this voyage. This field can be used to determine auto costs. |
-| Name | The name of the company that is selected in the **Shipping company** field. |
+| Purchase order status | The highest status that has been reached among all the purchase orders associated with the voyage. |
+| Documents received | A value that indicates whether your company has received all the documents associated with the voyage. To change the value, select **Documents received** in the **Voyage update** group on the **Manage** tab of the Action Pane. |
+| Shipping company | Select the shipping company for this voyage. This field helps determine auto costs. |
+| Name | The name of the company selected in the **Shipping company** field. |
 | Measurement | This field enables a measurement to be specified in an auto cost. Measurements are often used by organizations that don't know the individual volume or weight of the goods, but that require a more accurate apportionment than the amount or quantity provides. The freight forwarder will provide the weight or cubic measurement, and you can put it at the level of either an item or the purchase order. It can be automatically updated if the parameter is selected, or it can be manually entered. |
 | Measurement unit | The unit of measure that applies to the number in the **Measurement** field. |
 | Number of pallets | Specify the number of pallets on the voyage line. This field is automatically updated if the **Automatically update number of cartons** option is set to *Yes* on the **General** tab of the **Landed cost parameters** page. |
@@ -140,11 +140,11 @@ The following table describes the fields that are available on the **Delivery** 
 | Created date and time | The date and time when the voyage record was created. |
 | Ex-factory date | This field selects the earliest ex-factory date among the purchase orders that are linked to the voyage. The ex-factory date is available on the purchase order header and is updated by using the tracking control feature. |
 | Ship date | The estimated date when the plane or vessel leaves the point of origin. |
-| Departure date | The departure date is usually the date when the plane or vessel actually leaves the overseas port. The ship date and departure date don't have to match. The **Departure date** field is for informational purpose only. It isn't used to estimate the expected delivery date. The tracking control feature is used to estimate the expected delivery date, and this field can be set up so that it's automatically filled in by the tracking control feature. |
+| Departure date | The departure date is usually the date when the plane or vessel actually leaves the overseas port. The ship date and departure date don't have to match. The **Departure date** field is for informational purposes only. It isn't used to estimate the expected delivery date. The tracking control feature is used to estimate the expected delivery date, and this field can be set up to be filled in automatically by the tracking control feature. |
 | In to store date | This field selects the earliest date when the goods from the purchase orders that are linked to the voyage will be available for sale. |
 | Estimated delivery date | The estimated delivery date is usually the date when the goods are due to arrive in the warehouse. This field is for informational purposes only. It isn't used for master planning for goods. The expected delivery date on the purchase order line is used for master planning for goods on a voyage and is updated by using the tracking control feature. This field can be set up so that it's filled in by the tracking control feature. |
 | Actual delivery date | The earliest delivery date, based on the goods that are linked to the voyage. |
-| ETA at shipping port | Enter the date when you expect the voyage to arrive at the shipping port, based on the information that was provided by your shipping agent. |
+| ETA at shipping port | Enter the date when you expect the voyage to arrive at the shipping port, based on the information provided by your shipping agent. |
 | Original documents received | Enter the date when the original documents were received. |
 | Broker advised | Enter the date when the broker was advised. |
 | Original bill of lading sent | Enter the date when the original bill of lading was sent. |
@@ -153,13 +153,13 @@ The following table describes the fields that are available on the **Delivery** 
 | Delivered at warehouse | Enter the date when the goods were delivered to the warehouse. |
 | Verification date | Enter the verification date. |
 | Delivery instructions | Enter the date when the delivery instructions were received. |
-| Mode of delivery | This field provides information about the method that is used to deliver the voyage and the cost selection of auto costs that are associated with that delivery method. |
+| Mode of delivery | This field provides information about the method used to deliver the voyage and the cost selection of auto costs associated with that delivery method. |
 | From port | The shipping port that the voyage departs from. |
-| To port | The shipping port where the voyage arrives. The shipping containers can have different ports, because the ship might stop at multiple ports. By verifying the "to" port at the shipping container level, you provide accurate port details for every shipping container on a voyage. The auto cost that is associated with the freight is determined based on the combination of the shipping container type, the "to" port, and the "from" port. |
+| To port | The shipping port where the voyage arrives. The shipping containers can have different ports, because the ship might stop at multiple ports. By verifying the "to" port at the shipping container level, you provide accurate port details for every shipping container on a voyage. The auto cost for the freight is determined based on the combination of the shipping container type, the "to" port, and the "from" port. |
 | Local forwarder | This field is for informational purposes only. The local forwarder should be selectable from the vendor table. |
 | Local transport date | The date that the local transport is booked for. This field can help the warehouse do its planning. |
 | Local transport time | The time slot that the local transport is booked for. This field can help the warehouse do its planning. |
-| Journey template | The journey template that is specified for the voyage. The journey template is used to enter the "to" port and "from" port of the shipping container and voyage. Those values, in turn, help identify the auto costs that are associated with the voyage. |
+| Journey template | The journey template specified for the voyage. The journey template is used to enter the "to" port and "from" port of the shipping container and voyage. Those values, in turn, help identify the auto costs for the voyage. |
 
 #### Settings on the Other FastTab
 
@@ -169,17 +169,17 @@ The following table describes the fields that are available on the **Other** Fas
 |---|---|
 | Remarks | Enter additional information that is related to the voyage. |
 | Valuation date | Select the earliest ex-factory date for the purchase orders that are linked to the voyage. |
-| Pending voyage | You can use this to indicate whether your shipment or voyage has left yet. It is for informational purposes only.  |
+| Pending voyage | Use this to indicate whether your shipment or voyage has left yet. It is for informational purposes only.  |
 | Renaming shipping containers | For voyages that have more than one container, the number of containers that haven't yet been received. |
 
 ## <a name="voyage-editor"></a>The Voyage editor page
 
 Use the **Voyage editor** page to create voyages, create containers for a voyage, and select the purchase order and/or transfer order lines to include in each container. To open the **Voyage editor** page, follow one of these steps:
 
-- Go to **Landed cost \> Voyages \> All voyages**. To create a new voyage, select **New** on the Action Pane, fill in the **Create voyage** dialog box as needed, and then select **OK**. To edit an existing voyage, select it, and then select **Voyage editor** on the Action Pane. In both cases, the **Voyage editor** page is opened and shows the new or selected voyage.
-- Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order to create a voyage and container for, and then, on the Action Pane, on the **Purchase** tab, in the **Landed cost** group, select **Create new voyage**. Fill in the **Create voyage** dialog box as needed, and then select **OK** to open the **Voyage editor** page.
+- Go to **Landed cost > Voyages > All voyages**. To create a new voyage, select **New** on the Action Pane, fill in the **Create voyage** dialog box as needed, and then select **OK**. To edit an existing voyage, select it, and then select **Voyage editor** on the Action Pane. In both cases, the **Voyage editor** page opens and shows the new or selected voyage.
+- Go to **Procurement and sourcing > Purchase orders > All purchase orders**. Select the purchase order to create a voyage and container for, and then, on the Action Pane, on the **Purchase** tab, in the **Landed cost** group, select **Create new voyage**. Fill in the **Create voyage** dialog box as needed, and then select **OK** to open the **Voyage editor** page.
 
-For information about how to use the **Voyage editor** page to create and populate containers for voyages, see [Manage shipping containers](manage-shipping-containers.md). The following subsections provide an overview of the settings that are available on this page.
+For information about how to use the **Voyage editor** page to create and populate containers for voyages, see [Manage shipping containers](manage-shipping-containers.md). The following subsections provide an overview of the settings available on this page.
 
 ### Action Pane buttons on the Voyage editor page
 
@@ -194,23 +194,23 @@ The following table describes the buttons that are available on the Action Pane 
 
 ### The Filters FastTab
 
-Use the **Filters** FastTab to set criteria that control which purchase and transfer orders are shown on the **Inbound orders** FastTab. The criteria that you enter here are combined with the criteria that are provided in the **Setup** drop-down dialog box on the Action Pane. Each time that you change the **Filters** or **Setup** settings, you must select **Generate data** on the Action Pane to update the **Inbound orders** FastTab.
+Use the **Filters** FastTab to set criteria that control which purchase and transfer orders are shown on the **Inbound orders** FastTab. The criteria that you enter here are combined with the criteria that are provided in the **Setup** drop-down dialog box on the Action Pane. Each time that you change the **Filters** or **Setup** settings, select **Generate data** on the Action Pane to update the **Inbound orders** FastTab.
 
 ### The Inbound orders FastTab
 
-The **Inbound orders** FastTab lists the purchase and transfer orders that meet the criteria that you set on the **Filters** FastTab and in the **Setup** drop-down dialog box. Select an order that's listed here to view the lines that are associated with that order on the **Lines to select** FastTab. Some orders might be listed several times if they include lines that have different delivery dates.
+The **Inbound orders** FastTab lists the purchase and transfer orders that meet the criteria that you set on the **Filters** FastTab and in the **Setup** drop-down dialog box. Select an order that's listed here to view the lines associated with that order on the **Lines to select** FastTab. Some orders might be listed several times if they include lines that have different delivery dates.
 
 ### The Lines to select FastTab
 
-The **Lines to select** FastTab lists the lines that are associated with the order and delivery date that you selected on the **Inbound orders** FastTab. Select the lines that you want to include in a new or existing container for the current voyage, and then select **Add to staging list** on the toolbar to make those lines available for container assignment. Select **View staging list** to open a page where you can actually assign the lines to new or existing containers. For more information about this process, see [Manage shipping containers](manage-shipping-containers.md).
+The **Lines to select** FastTab lists the lines associated with the order and delivery date that you selected on the **Inbound orders** FastTab. Select the lines that you want to include in a new or existing container for the current voyage, and then select **Add to staging list** on the toolbar to make those lines available for container assignment. Select **View staging list** to open a page where you can actually assign the lines to new or existing containers. For more information about this process, see [Manage shipping containers](manage-shipping-containers.md).
 
 ### The Other dates FastTab
 
-The **Other dates** FastTab lists lines that are associated with the order that you selected on the **Inbound orders** FastTab, but that have different delivery dates than the selected row. These lines are for information only and can't be added to the staging list from here. To add these lines to the staging list, select the appropriate order and delivery date on the **Inbound orders** FastTab. Those lines then become available on the **Lines to select** FastTab.
+The **Other dates** FastTab lists lines associated with the order that you selected on the **Inbound orders** FastTab, but that have different delivery dates than the selected row. These lines are for information only and can't be added to the staging list from here. To add these lines to the staging list, select the appropriate order and delivery date on the **Inbound orders** FastTab. Those lines then become available on the **Lines to select** FastTab.
 
 ## Voyage update periodic tasks
 
-The **Landed cost** module includes several voyage-related periodic tasks that can bulk-update several aspects of voyages. To run or schedule these periodic tasks, go to **Landed cost \> Periodic tasks \> Voyage updates**, and then select one of the following task types:
+The **Landed cost** module includes several voyage-related periodic tasks that can bulk-update several aspects of voyages. To run or schedule these periodic tasks, go to **Landed cost > Periodic tasks > Voyage updates**, and then select one of the following task types:
 
 - **Documents received** – This task lets you set the **Documents received** option to *Yes* for several voyages at the same time. Use the **Filter** settings to define the set of voyages that you want to update.
 - **In transit** – This task lets you set the **Voyage status** field to the in-transit status that's established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time. Use the **Filter** settings to define the set of voyages that you want to update.
@@ -219,4 +219,4 @@ The **Landed cost** module includes several voyage-related periodic tasks that c
 
 ## Purchase order clean up periodic task
 
-The *Purchase order clean up* periodic task deletes purchase orders that haven't been added to a voyage. It helps to reduce transaction counts and improve general performance. To run or schedule the task, go to **Landed cost \> Periodic tasks \> Clean up  /> Purchase order clean up**.
+The *Purchase order clean up* periodic task deletes purchase orders that haven't been added to a voyage. It helps to reduce transaction counts and improve general performance. To run or schedule the task, go to **Landed cost > Periodic tasks > Clean up  /> Purchase order clean up**.

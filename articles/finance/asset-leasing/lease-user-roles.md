@@ -4,8 +4,8 @@ description: Learn about the security roles that are used in Asset leasing, incl
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to
-ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.date: 06/23/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -20,7 +20,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 This article describes the security roles that are used in Asset leasing. It also explains how to assign users to those roles.
 
-Three user roles differentiate access in Asset leasing. One role is appropriate for maintaining leases, one is appropriate for viewing leases, and one is appropriate for performing a lease clerk's duties. Each role has specific permissions for all lease pages, and each lets users view, create, edit, or delete leases, according to their job duties.
+Three user roles differentiate access in Asset leasing. One role is appropriate for maintaining leases, one is appropriate for viewing leases, and one is appropriate for performing a lease clerk's duties. Each role has specific permissions for all lease pages, and each role lets users view, create, edit, or delete leases, according to their job duties.
 
 | Role           | Description |
 |----------------|-------------|
@@ -28,11 +28,11 @@ Three user roles differentiate access in Asset leasing. One role is appropriate 
 | View Lease     | Users in this role can only view lease records, schedules, and run reports. They can't create new leases, edit existing leases, or create journal entries against leases. The role is designed for users who just have to view leases, lease schedules, and the transactions that occur against those leases. |
 | Lease Clerk    | Users in this role can only create new leases. They can't edit or delete existing leases, view lease schedules, or post leasing journal entries. This role is designed for users who work in a data entry capacity. |
 
-Follow these steps to assign users to the roles that are used in Asset leasing.
+To assign users to the roles that are used in Asset leasing, follow these steps:
 
 1. Go to **System administration \> Security \> Assign users to roles**.
-2. Select the **Maintain lease**, **Lease clerk**, or **View lease** role, and then select **Manually assign/exclude users**.
-3. Select the user to assign to the role, and then select **Assign to role**.
+1. Select the **Maintain lease**, **Lease clerk**, or **View lease** role, and then select **Manually assign/exclude users**.
+1. Select the user to assign to the role, and then select **Assign to role**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

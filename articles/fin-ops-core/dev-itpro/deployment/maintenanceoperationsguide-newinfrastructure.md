@@ -3,7 +3,7 @@ title: Maintenance operations for deployments
 description: Learn how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 04/02/2026

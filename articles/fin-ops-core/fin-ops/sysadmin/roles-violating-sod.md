@@ -3,7 +3,7 @@ title: Roles violating segregation of duties
 description: Learn how to identify violations of the segregation of duties.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/05/2026
 ms.custom: 
 ms.reviewer: twheeloc

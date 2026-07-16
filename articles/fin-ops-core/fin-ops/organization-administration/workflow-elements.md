@@ -3,7 +3,7 @@ title: Workflow elements
 description: Learn about the various elements that make up a workflow, including outlines on tasks, approval processes, and line-item workflow elements.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/10/2026
 ms.reviewer: twheeloc
 audience: Application User

@@ -3,7 +3,7 @@ title: Uninstall a package
 description: Learn how to remove a deployable package from your environment, including prerequisites and a step-by-step process of uninstalling packages.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.custom:
   - bap-template
 ms.date: 04/02/2026

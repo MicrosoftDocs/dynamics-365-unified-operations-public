@@ -3,7 +3,7 @@ title: Record templates overview
 description: Learn about the concept of record templates and explains how they can be used to create records that share information.
 author: pvillads
 ms.author: pvillads
-ms.topic: overview
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 03/10/2026

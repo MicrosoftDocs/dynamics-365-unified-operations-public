@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 06/22/2026
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -25,7 +25,7 @@ The **Inventory summary** feature isn't compatible with [items enabled for wareh
 >
 > If you change the settings for a calculated measure, data on the **Inventory summary** page isn't automatically updated until the related product data is modified.
 >
-> If the **Inventory summary** page doesn't show all the on-hand information that you expect, open Dynamics 365 Supply Chain Management, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility integration**, disable the batch job, and then reenable it to do the initial push. All data will be synced to the *Inventory OnHand Sum* entity immediately after the initial push. If you want to use the inventory summary feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+> If the **Inventory summary** page doesn't show all the on-hand information that you expect, open Dynamics 365 Supply Chain Management, go to **Inventory Management** > **Periodic tasks** > **Inventory Visibility integration**, disable the batch job, and then reenable it to do the initial push. All data is synced to the *Inventory OnHand Sum* entity immediately after the initial push. If you want to use the inventory summary feature, turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
 ## Turn on the inventory summary feature in UI version 2
 
@@ -59,7 +59,7 @@ To enable the **Inventory summary** page and set the synchronization frequency i
 1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
 1. On the navigation pane, select **Configuration**.
 1. On the **Feature management & settings** tab, turn on the option for the *Inventory summary* feature.
-1. After the feature is enabled, the **Service Configuration** section becomes available. It includes a row that you can use to configure the *OnHandMostSpecificBackgroundService* feature. To set the frequency that inventory summary data is synced at, use the **Up** and **Down** buttons in the **Value** field to change the interval between synchronizations. The minimum interval is five minutes. When you've finished, select **Save**.
+1. After the feature is enabled, the **Service Configuration** section becomes available. It includes a row that you can use to configure the *OnHandMostSpecificBackgroundService* feature. To set the frequency that inventory summary data is synced at, use the **Up** and **Down** buttons in the **Value** field to change the interval between synchronizations. The minimum interval is five minutes. When you finish, select **Save**.
 1. Select **Update configuration** to save and apply your new settings.
 
 ## <a name="additional-tip-for-viewing-data"></a>Filter and browse the inventory summaries

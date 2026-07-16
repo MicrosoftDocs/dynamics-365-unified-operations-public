@@ -4,7 +4,7 @@ description: Learn how postings are configured in Accounts receivable with examp
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/29/2024
+ms.date: 06/24/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -21,7 +21,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 The primary posting profile for the **Accounts receivable** module is the customer posting profile. This posting profile determines the summary account that is used when customer balances are posted to the general ledger. A summary account is a main account. It's also referred to as the Accounts receivable trade account.
 
-The **Customer to ledger reconciliation** report can be used after posting to help reconcile the balances of customer and ledger accounts. The report uses the information that is found in the summary account for the customer posting profile. It doesn't use the summary account from the accounting that is created for the document. If you make changes to the customer posting profile or the customer group that is assigned to the customer after you have posted transactions, the report may display differences between the customer and ledger account balance. To view only the lines that have differences, and any lines for which the customer accounts and ledger account are both zero, select the **Differences only** parameter when printing the report.
+Use the **Customer to ledger reconciliation** report after posting to help reconcile the balances of customer and ledger accounts. The report uses the information that is found in the summary account for the customer posting profile. It doesn't use the summary account from the accounting that is created for the document. If you make changes to the customer posting profile or the customer group that you assigned to the customer after you post transactions, the report might display differences between the customer and ledger account balance. To view only the lines that have differences, and any lines for which the customer accounts and ledger account are both zero, select the **Differences only** parameter when printing the report.
 
 For more information, see [Customer posting profiles](../accounts-receivable/customer-posting-profiles.md).
 
@@ -29,15 +29,15 @@ Several posting configurations beside the customer posting profile are available
 
 ## Posting accounts for methods of payment
 
-Methods of payment define how a payment will be posted to the general ledger. They also control the behavior of the payment output. Typically, one method of payment is created for each type of payment that your organization accepts (for example, cash, check, credit card, money order, and wire transfer).
+Methods of payment define how a payment posts to the general ledger. They also control the behavior of the payment output. Typically, you create one method of payment for each type of payment that your organization accepts, such as cash, check, credit card, money order, and wire transfer.
 
-The fields in the **Posting** section on the **General** FastTab control how a payment will be posted to the general ledger. You must first select a value in the **Account type** field. The account type that you select controls the behavior of the **Payment account** field. We recommend that you select **Bank** in the **Account type** field and then select the bank account in the **Payment account** field. The benefit of this approach is that the system will post the payment to the Bank subledger, which supports reconciliation and other cash-related processes. The following table shows an example of the posting profile configuration if you're using the **Cash and bank management** module.
+The fields in the **Posting** section on the **General** FastTab control how a payment posts to the general ledger. You must first select a value in the **Account type** field. The account type that you select controls the behavior of the **Payment account** field. Select **Bank** in the **Account type** field and then select the bank account in the **Payment account** field. The benefit of this approach is that the system posts the payment to the Bank subledger, which supports reconciliation and other cash-related processes. The following table shows an example of the posting profile configuration if you're using the **Cash and bank management** module.
 
 | Posting type | Account type | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|--------------|---------------------------|--------------|---------------|------------------|-------------|
 | Bank | Bank | Bank of Contoso | Bank account that is linked to an asset | Credit | No | For each method of payment, enter the main account in the **Payment account** field. |
 
-If you don't plan to use Cash and bank management, you should select **Ledger** in the **Account type** field and then select the main account in the **Payment account** field. The following table shows an example of the posting profile configuration if you aren't using Cash and bank management.
+If you don't plan to use Cash and bank management, select **Ledger** in the **Account type** field and then select the main account in the **Payment account** field. The following table shows an example of the posting profile configuration if you aren't using Cash and bank management.
 
 | Posting type | Account type | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|--------------|---------------------------|--------------|---------------|------------------|-------------|
@@ -45,7 +45,7 @@ If you don't plan to use Cash and bank management, you should select **Ledger** 
 
 ## Bridging accounts
 
-Bridging posting is a two-step process that is used when payments are posted. It's an optional feature that can be used with zero-balance bank accounts, for example. It can help ensure a smoother and more timely bank reconciliation process. In the first step, a payment is posted to a temporary account (the bridging account). In the second step, the posted entry is reversed and posted to the bank account when the payment clears the bank. The following table shows an example of the posting profile configuration for bridging posting.
+Bridging posting is a two-step process that you use when posting payments. It's an optional feature that you can use with zero-balance bank accounts, for example. It can help ensure a smoother and more timely bank reconciliation process. In the first step, you post a payment to a temporary account (the bridging account). In the second step, you reverse the posted entry and post it to the bank account when the payment clears the bank. The following table shows an example of the posting profile configuration for bridging posting.
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
@@ -61,16 +61,16 @@ For more information, see [Cash discounts](../cash-bank-management/cash-discount
 
 ## Posting accounts for payment fees
 
-Payment fees let you automatically add a fee to a customer payment when a set of conditions applies. Payment fees can be charged to the customer, or they can be posted to your bank account as an expense. Here are some examples:
+Payment fees let you automatically add a fee to a customer payment when a set of conditions applies. You can charge payment fees to the customer, or you can post them to your bank account as an expense. Here are some examples:
 
 - You charge customers 3 percent of the payment total if they pay by using a credit card.
 - Your bank charges you $1.00 for each wire transfer that you process, and the wire transfer fee is expensed.
 
-When you configure a customer payment fee, if you set the **Charge** field to **Customer**, the **Main account** field becomes unavailable, and the system uses the customer posting profile to post the fee. If you set the **Charge** field to **Ledger**, you must set the **Main account** field to the main account where the payment fee will be posted. Typically, this main account will be an expense account. The following table shows an example of the posting profile configuration for payment fee posting.
+When you configure a customer payment fee, if you set the **Charge** field to **Customer**, the **Main account** field becomes unavailable, and the system uses the customer posting profile to post the fee. If you set the **Charge** field to **Ledger**, you must set the **Main account** field to the main account where the payment fee will be posted. Typically, this main account is an expense account. The following table shows an example of the posting profile configuration for payment fee posting.
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
-| Ledger journal | 618190 | Bank Fee Expense | Expense | Debit | No |  If **Ledger** is selected in the **Charge** field, select this account in the **Main account** field for the payment fee. |
+| Ledger journal | 618190 | Bank Fee Expense | Expense | Debit | No |  If you select **Ledger** in the **Charge** field, select this account in the **Main account** field for the payment fee. |
 
 For more information, see [Establish customer payment fees](../accounts-receivable/tasks/establish-customer-payment-fees.md).
 
@@ -86,9 +86,9 @@ You can create charges codes for Accounts receivable and Accounts payable. When 
 | Order, freight | 403500 | Revenue – Freight | Revenue | Credit | No | **Example for freight that is charged to a customer:** Debit Customer/Vendor and Credit Ledger account |
 | Rebate\* | 403200 | Discount | Revenue | Debit | No | **Example for a customer rebate:** Debit Ledger account and Credit Customer/Vendor |
 
-\* For the rebate example, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality that is available in Microsoft Dynamics 365 Supply Chain Management provides more control and automation of rebates. For more information, see [Customer rebates](../../supply-chain/sales-marketing/tasks/process-customer-rebates.md).
+\* For the rebate example, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality that's available in Microsoft Dynamics 365 Supply Chain Management provides more control and automation of rebates. For more information, see [Customer rebates](../../supply-chain/sales-marketing/tasks/process-customer-rebates.md).
 
-The preceding table shows three typical examples of posting types that can be used for charges codes. It should be used as a guideline and a sample. It doesn't provide a comprehensive list of all possible combinations or posting types that can be used.
+The preceding table shows three typical examples of posting types that you can use for charges codes. Use it as a guideline and a sample. It doesn't provide a comprehensive list of all possible combinations or posting types.
 
 For more information, see [Create charges code](../accounts-receivable/create-charges-codes.md).
 

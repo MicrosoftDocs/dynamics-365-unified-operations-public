@@ -2,9 +2,9 @@
 title: Store Commerce app capabilities
 description: This article provides an overview of the capabilities of the Store Commerce app in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 02/20/2026
+ms.date: 06/07/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-09-30
@@ -18,36 +18,35 @@ ms.custom:
 
 This article provides an overview of the capabilities of the Store Commerce app in Microsoft Dynamics 365 Commerce.
 
-The Store Commerce app is the modern point of sale (POS) experience for Microsoft Dynamics 365 Commerce. It enables businesses to process transactions in-store and manage back-office operations such as inventory and order processing. The app also enables businesses to manage customer relationships with loyalty and clienteling. 
+The Store Commerce app is the modern point of sale (POS) experience for Microsoft Dynamics 365 Commerce. It enables businesses to process transactions in-store and manage back-office operations such as inventory and order processing. The app also enables businesses to manage customer relationships with loyalty and clienteling.
 
 Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete omni-channel solution. For example, a customer can buy a product online and pick it up in a nearby store so they can continue their shopping journey across channels without losing any data.
 
 ## Platform
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
-| Omni-channel | Dynamics 365 Commerce delivers a comprehensive omni-channel solution that unifies back-office, in-store, call center, and digital experiences. | [Overview](../welcome.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=f13594a0-b8ba-48e4-8aac-73b736838809) |
-| Headless Commerce | The Commerce Scale Unit hosts the headless commerce engine. The headless commerce engine serves as the central point for all commerce business logic and powers a complete omni-channel solution. | <p>[Architecture overview](commerce-architecture.md)</p><p>[Headless architecture](retail-server-architecture.md)</p> | [Tech talk](https://community.dynamics.com/blogs/post/?postid=440e7ceb-b166-44ab-ad26-bcd1753bb4b9) |
+| ---------- | ----------- | ------------- | -------------------- |
+| Headless Commerce | The Commerce Scale Unit hosts the headless commerce engine. The headless commerce engine serves as the central point for all commerce business logic and powers a complete omni-channel solution. | [Architecture overview](commerce-architecture.md)</br> [Headless architecture](retail-server-architecture.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=440e7ceb-b166-44ab-ad26-bcd1753bb4b9) |
 | Commerce headquarters | Commerce headquarters provides back-office capabilities that enable the configuration of products, employees, business processes, pricing, and other functionality that is required for the business. | [Architecture overview](commerce-architecture.md) | |
-| Point of sale (POS) | The Store Commerce app is the POS experience for Dynamics 365 Commerce. It delivers feature-rich and comprehensive POS capabilities that help sales associates, cashiers, and managers provide superior customer service. In addition, it provides several deployment options to retailers, helps improve performance, and offers improved application lifecycle management (ALM). | [Store Commerce App](store-commerce.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=fe3ca68a-642e-4b78-8994-bc8814a15dcd)</p><p>[Video](https://youtu.be/7B332XH_zfs)</p><p>[Migration from MPOS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md)</p> |
+| Point of sale (POS) | The Store Commerce app is the POS experience for Dynamics 365 Commerce. It delivers feature-rich and comprehensive POS capabilities that help sales associates, cashiers, and managers provide superior customer service. In addition, it provides several deployment options to retailers, helps improve performance, and offers improved application lifecycle management (ALM). | [Store Commerce App](store-commerce.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=fe3ca68a-642e-4b78-8994-bc8814a15dcd)</br> [Video](https://youtu.be/7B332XH_zfs)</br> [Migration from MPOS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md) |
 | Cloud deployment | You can deploy multiple instances of Commerce Scale Units for load distribution and geo proximity. | [Cloud deployment](../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md) | |
 | On-premises deployment | By using a local business data deployment, Commerce customers can have greater ownership and management of a Dynamics 365 environments. | [On-premises deployment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) | |
 
 ## Device management
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
-| Multiple form factors | The Store Commerce app supports multiple device form factors, such as PCs, tablets, and mobile devices. The responsive user interface (UI) automatically resizes and adjusts the layout to the screen size. | [Visual configurations](../pos-screen-layouts.md) |  |
-| Cross-platform | The Store Commerce app supports web, Windows, iOS, and Android platforms. | [Platforms](hybridapp.md) | |
+| ---------- | ----------- | ------------- | -------------------- |
+| Multiple form factors | The Store Commerce app supports multiple device form factors, such as PCs, tablets, and mobile devices. The responsive user interface (UI) automatically resizes and adjusts the layout to the screen size. | [Visual configurations](../pos-screen-layouts.md) | |
+| Cross-platform | The Store Commerce app supports web, Windows, iOS, Android, and macOS platforms. | [Platforms](hybridapp.md) | |
 | Branding | The screen designer lets you customize screen layouts to meet your business requirements. In addition, you can create themes, layouts, colors, and images based on employee roles, and then share them across users for brand consistency and ease of use. | [Visual configurations](../pos-screen-layouts.md) | [Video](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
-| Topology | Different in-store topologies are supported, based on network availability. | <p>[Topology](retail-modern-pos-architecture.md)</p><p>[Infographic](retail-in-store-topology.md)</p> | |
+| Topology | Different in-store topologies are supported, based on network availability. | [Topology](retail-modern-pos-architecture.md)</br> [Infographic](retail-in-store-topology.md) | |
 | Multi-device management | You can easily manage multiple devices across stores from Commerce headquarters. | [Activation](set-up-activation-accounts-validate-devices-hq.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=cf7c7f33-9f1f-48b4-b866-f4398ece11df) |
 
 ## Employee management
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
-| Sign-in | Each store employee can have a dedicated sign-in. Sign-in types include user name, bar code, magnetic stripe reader (MSR), biometrics, and Microsoft Entra ID. | <p>[Microsoft Entra ID](../aad-pos-logon.md)</p><p>[Extended logon](../extended-logon.md)</p> | |
+| ---------- | ----------- | ------------- | -------------------- |
+| Sign-in | Each store employee can have a dedicated sign-in. Sign-in types include user name, bar code, magnetic stripe reader (MSR), biometrics, and Microsoft Entra ID. | [Microsoft Entra ID](../aad-pos-logon.md)</br> [Extended logon](../extended-logon.md) | |
 | Permissions | Different levels of permissions are supported for employees, such as permission to create orders and permission to edit orders. | [Permissions](../tasks/create-pos-permission-groups.md) | |
 | Time and attendance management | Use the Time Clock function to manage attendance. You can process attendance data into payroll by using the Dynamics 365 Human Resources app. | [Time management](../retail-time-attendance.md) | |
 | Sales commission | Track sales by sales representative to calculate commissions or other incentives. | [Commission](../pos-sales-groups-track-commissions.md) | |
@@ -55,7 +54,7 @@ Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete
 ## Merchandising
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Assortment management | Merchandising managers can assort products so that they're available for sale in a specific channel and during a specific period. | [Assortments](../assortments.md) | |
 | Catalogs | Merchandising managers can manage catalogs to identify the products that you want to offer with catalog-specific pricing. | [Catalogs](/dynamicsax-2012/appuser-itpro/about-retail-product-catalogs) | |
 | Product and category management | In Commerce headquarters, merchandising managers can create products that have variants, attributes, a unit of measure, and so on. They can also define a category hierarchy to organize products. | [Product](../retail-hierarchies.md) | |
@@ -68,18 +67,18 @@ Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete
 ## Assisted selling
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Product browsing | Browse products by category. | [Product hierarchy](../retail-hierarchies.md) | |
 | Product search | Search products by name, and refine searches by using product attributes such as the brand, price, and material. This capability is powered by Azure Cognitive Search. | [Cloud powered search](../cloud-powered-search-overview.md) | |
 | Product details page | Rich product details pages can include images, a description, product attributes, and recommended products. Recommendations are powered by the Recommendations Service. | | |
 | Product compare | Compare multiple products, and help customers choose one and add it to a transaction. | | |
-| Endless aisle | Easily look up inventory in other stores, and create orders. | [Inventory lookup](../pos-inventory-lookup-operation.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</p> <p>[Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a)</p> |
+| Endless aisle | Easily look up inventory in other stores, and create orders. | [Inventory lookup](../pos-inventory-lookup-operation.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</br> [Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a) |
 | Recommendations | Upsell and cross-sell products by using the Recommendations Service. This service uses patented technology to suggest recommendations, based on purchase trends, and characteristics such as newly arrived, similar looks, and bestselling. These recommendations are available on product details pages, the **Customer details** page, and the **Transactions** page. | [Recommendations](../product-recommendations.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=5f809a75-fcb4-4b90-ad7f-a2d9fa640c46) |
 
 ## Customer relationship
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Customer management | Create, edit, and manage customer accounts. Manage customer accounts in async mode to avoid real-time processing. | [Management](../customer-mgmt-stores.md) | |
 | Customer attributes | The Customer attributes framework enables you to capture more customer related data based on business requirements. | [Attributes](customer-attributes.md) | |
 | Customer details page | A rich customer details page provides an omni-channel view of the customer's interactions across all channels. These interactions include purchases, wish lists, and loyalty points. | | |
@@ -90,8 +89,8 @@ Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete
 ## Pricing and discounts
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
-| Trade agreements | Pricing managers use trade agreements to define special prices, based on long-term deals for specific customers. | [Pricing](../price-management.md)| [Video](https://www.youtube.com/watch?v=r2VD8IxHesM) |
+| ---------- | ----------- | ------------- | -------------------- |
+| Trade agreements | Pricing managers use trade agreements to define special prices, based on long-term deals for specific customers. | [Pricing](../price-management.md) | [Video](https://www.youtube.com/watch?v=r2VD8IxHesM) |
 | Sales agreements | Pricing managers use sales agreements to define contract-based prices in business-to-business (B2B) commerce scenarios. | [Pricing](../price-management.md) | |
 | Price adjustments | Pricing managers use the price adjustments capability to create, track, and manage price markdowns for their products over time. | [Price adjustments](../price-adjustments-discounts.md) | |
 | Discounts | Pricing managers set up several types of discounts to run various promotions. These discounts include simple discounts, quantity discounts, threshold discounts, mix and match discounts, tender-based discounts, and shipping discounts. | [Discounts](../retail-discounts-overview.md) | |
@@ -105,49 +104,48 @@ Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete
 ## Electronic payments
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
-| Credit and debit | The Store Commerce app supports major credit and debit card payments through Adyen Payment Gateway and order fulfillment through PayPal. The Payments SDK allows for external gateway connections that are supported by independent software vendor (ISV) integrations. | <p>[Adyen](adyen-connector.md?tabs=10-0-23)</p><p>[PayPal](paypal.md)</p><p>[Payments](../payment-methods.md)</p> | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=3744d4c9-480c-4ab4-aab6-fc0390f0b7b3)</p><p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=6a043aed-b800-4dba-a455-c36c87177e1d)</p> |
+| ---------- | ----------- | ------------- | -------------------- |
+| Credit and debit | The Store Commerce app supports major credit and debit card payments through Adyen Payment Gateway and order fulfillment through PayPal. The Payments SDK allows for external gateway connections that are supported by independent software vendor (ISV) integrations. | [Adyen](adyen-connector.md?tabs=10-0-23)</br> [PayPal](paypal.md)</br> [Payments](../payment-methods.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=3744d4c9-480c-4ab4-aab6-fc0390f0b7b3)</br> [Tech talk](https://community.dynamics.com/blogs/post/?postid=6a043aed-b800-4dba-a455-c36c87177e1d) |
 | Digital wallet support | The Store Commerce app supports payments through digital wallet payment methods that don't use Bank Identification Number (BIN) ranges as traditional credit and debit cards do. Payment methods can be mapped to digital wallet payments such as Adyen. | [Wallet](wallets.md) | |
 | Gift card support | Bank Identification Number Dynamics 365 gift card, Stored Value Solutions (SVS), and Givex gift cards. Gift cards can be purchased and redeemed in an order. | [Gift cards](gift-card.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=29edd444-ed7d-4a60-97dd-2ffcb649721c) |
-
 
 ## Taxes and charges
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Taxes | The Store Commerce app supports many types of indirect taxes, such as sales tax, value-added tax (VAT), goods and services tax (GST), unit-based fees, and withholding tax. | [Taxes](/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json) | |
 | Charges | You can configure charges at the line level, at the header level, as autocharges, by channel, and so on. | [Charges](../omni-auto-charges.md) | |
 
 ## Order processing and fulfillment
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Order creation | Create an order for shipment or for pickup at a nearby store. Provide time slots for pickup. | [Overview](../customer-orders-overview.md) | |
-| Order modification | Modify, return, cancel, and more. | <p>[Cancel](../customer-orders-overview.md#cancel-a-customer-order)</p><p>[Returns](../pos-returns.md)</p> | |
+| Order modification | Modify, return, cancel, and more. | [Cancel](../customer-orders-overview.md#cancel-a-customer-order)</br>[Returns](../pos-returns.md) | |
 | Search | Search for and filter orders by using order-specific information. | [Search](../enhancedorderrecall.md) | |
 | Order attributes | The Order attribute framework enables you to capture more order-related information based on business requirements. | [Attributes](order-attributes.md) | |
 | Direct delivery | Mark items for direct delivery by a vendor to a customer address. Direct delivery is also known as drop shipping. | [Direct delivery](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
 | Quotation | Store employees can create quotations for customers, and can specify a special price, manual discounts, and a quotation validity date. | [Quotation](/dynamics365/supply-chain/sales-marketing/tasks/create-edit-sales-quotations) | |
-| Fulfillment | Stores can pick, pack, and ship orders. A packing slip can be added to the packages that are ready for shipment. | [Fulfillment](../order-fulfillment-overview.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=e72dff7e-3652-4aa5-b2b9-e502f412f89e)</p> <p>[Video](https://learn-video.azurefd.net/vod/player?id=50c67f62-16a0-47e8-af5e-0d3e69f3da71)</p>|
-| Distributed order management | The Store Commerce app supports intelligent order fulfillment optimization where you can configure business strategies based on the nature of the business, the type of customer, the origin of an order, and the delivery method for an order. | [DOM](../dom.md) | [Video](https://learn-video.azurefd.net/vod/player?id=83cec34a-642e-4a0e-a96d-3357f73f41bd)|
+| Fulfillment | Stores can pick, pack, and ship orders. A packing slip can be added to the packages that are ready for shipment. | [Fulfillment](../order-fulfillment-overview.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=e72dff7e-3652-4aa5-b2b9-e502f412f89e)</br> [Video](https://learn-video.azurefd.net/vod/player?id=50c67f62-16a0-47e8-af5e-0d3e69f3da71) |
+| Distributed order management | The Store Commerce app supports intelligent order fulfillment optimization where you can configure business strategies based on the nature of the business, the type of customer, the origin of an order, and the delivery method for an order. | [DOM](../dom.md) | [Video](https://learn-video.azurefd.net/vod/player?id=83cec34a-642e-4a0e-a96d-3357f73f41bd) |
 
 ## Inventory management
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Buyer's push | Streamline the distribution of available inventory from a distribution center to multiple stores or warehouses. | [Buyer's push](../tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9) |
 | Cross-docking | Streamline the distribution of inventory on incoming purchase orders to multiple stores or warehouses. | [Cross docking](../tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9) |
-| Inbound inventory | Receive inventory from a vendor via a purchase order, or from another warehouse via a transfer order. Create an inbound purchase order or transfer order request. | [Inbound](../pos-inbound-inventory-operation.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</p>  <p>[Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a)</p>|
-| Outbound inventory | Ship inventory to another warehouse via a transfer order, and create an outbound transfer order request. | [Outbound](../pos-outbound-inventory-operation.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</p>  <p>[Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a)</p> |
-| Inventory lookup | Check on-hand inventory for products across stores and warehouses, and check available-to-promise (ATP) inventory on future dates. | [Inventory lookup](../pos-inventory-lookup-operation.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</p> <p>[Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a)</p> |
-| Inventory adjustment | Adjust inventory into or out of a store warehouse to meet specific business requirements without using a sale, receipt, or recount. | [Inventory adjustment](../work-with-store-inventory.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</p> <p>[Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a)</p>|
-| Stock counts | Count physical inventory, and adjust the system bookkeeping inventory to match it. | [Counting](../work-with-store-inventory.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</p> <p>[Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a)<p> |
-| Inventory movement | Move inventory between locations in a store. | [Movement](../work-with-store-inventory.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</p> <p>[Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a)</p> |
+| Inbound inventory | Receive inventory from a vendor via a purchase order, or from another warehouse via a transfer order. Create an inbound purchase order or transfer order request. | [Inbound](../pos-inbound-inventory-operation.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</br> [Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a) |
+| Outbound inventory | Ship inventory to another warehouse via a transfer order, and create an outbound transfer order request. | [Outbound](../pos-outbound-inventory-operation.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</br> [Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a) |
+| Inventory lookup | Check on-hand inventory for products across stores and warehouses, and check available-to-promise (ATP) inventory on future dates. | [Inventory lookup](../pos-inventory-lookup-operation.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</br> [Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a) |
+| Inventory adjustment | Adjust inventory into or out of a store warehouse to meet specific business requirements without using a sale, receipt, or recount. | [Inventory adjustment](../work-with-store-inventory.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</br>[Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a) |
+| Stock counts | Count physical inventory, and adjust the system bookkeeping inventory to match it. | [Counting](../work-with-store-inventory.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</br> [Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a) |
+| Inventory movement | Move inventory between locations in a store. | [Movement](../work-with-store-inventory.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=ddeed12b-db08-4f3c-8dd2-85031dfb78a9)</br> [Video](https://learn-video.azurefd.net/vod/player?id=d11787ad-dad9-4c87-9fa6-90d5144f789a) |
 
 ## Financials
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Cash management | The Store Commerce app supports management of cash and other specified tenders in the store. In addition, shift reconciliation in the store can be enabled for advanced cash management capabilities. | [Cash](../cash-mgmt.md) | |
 | Financial statements and reconciliation | Cash and transactional transactions for a store are recorded in Commerce headquarters through the statement posting processes. | [Statements](../retail-statements.md) | |
 | Income and expense transactions | Process petty cash transactions in the store, and record income that doesn't come in the traditional way, such as lost-and-found money, the share of revenue from a coffee shop in your lobby, and carpet cleaning services. | [Statements](../retail-statements.md) | |
@@ -156,22 +154,22 @@ Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete
 ## Employee productivity
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
-| Task management | Create task lists and tasks, and assign them to stores and employees. Track the status of tasks across stores. Seamless integration with Microsoft Teams is provided. | <p>[Task Management](../task-mgmt-overview.md)</p><p>[Microsoft Teams](../commerce-teams-integration.md)</p> | [Video](https://www.youtube.com/watch?v=ES1whB4C2lU) |
+| ---------- | ----------- | ------------- | -------------------- |
+| Task management | Create task lists and tasks, and assign them to stores and employees. Track the status of tasks across stores. Seamless integration with Microsoft Teams is provided. | [Task Management](../task-mgmt-overview.md)</br> [Microsoft Teams](../commerce-teams-integration.md) | [Video](https://www.youtube.com/watch?v=ES1whB4C2lU) |
 
 ## Hardware and peripherals
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
-| Connect peripherals | Connect peripherals such as printers, cash drawers, scanners, and payment devices to a POS terminal. | [Peripherals](../retail-peripherals-overview.md)<br/><br/>[Network peripherals](network-peripherals.md) ||
-| Share peripherals | Receipt printers, cash drawers, and payment devices can be shared among many terminals by connecting them to a shared hardware station. | [Hardware station](../retail-peripherals-overview.md) ||
+| ---------- | ----------- | ------------- | -------------------- |
+| Connect peripherals | Connect peripherals such as printers, cash drawers, scanners, and payment devices to a POS terminal. | [Peripherals](../retail-peripherals-overview.md)</br> [Network peripherals](network-peripherals.md) | |
+| Share peripherals | Receipt printers, cash drawers, and payment devices can be shared among many terminals by connecting them to a shared hardware station. | [Hardware station](../retail-peripherals-overview.md) | |
 | POS and peripheral simulator | The peripheral simulator supports testing of scenarios that usually require physical POS peripheral devices. It also includes a POS simulator that can be used to test the compatibility of physical peripheral devices without requiring deployment of the POS client. | [Peripheral simulator](retail-peripheral-simulator.md) | |
 | POS health check | Point of sale users can test the connectivity and functionality of peripherals such as printers, payment terminals, and bar code scanners. Health check can also test a POS terminal's network performance and its connectivity to Commerce Scale Unit and Retail Server. | [Health check](../pos-healthcheck.md) | [Video: Health check for Dynamics 365 Commerce point of sale](https://www.youtube.com/watch?v=3BaU9ciY-1o&ab_channel=MicrosoftDynamics365Community) |
 
 ## Receipts
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Print receipts | Print receipts of various types, such as sales receipts, credit card receipts, gift receipts, and invoices. By default, the POS prints the receipt, or the cashier can confirm the printing at checkout. Reprint receipts from the journal. | [Printing](../receipt-templates-printing.md) | |
 | Email receipts | Email receipts from the POS after a checkout is completed. | [Email](../email-receipts.md) | |
 | Design receipts | Customize store receipts so that they show data and layouts that are appropriate to the retailer and transaction type. Extend receipts so that they show custom data that is required by the retailer. | [Design](../receipt-templates-printing.md) | |
@@ -179,15 +177,15 @@ Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete
 ## Offline support
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Seamless offline | Seamless offline support lets you continue to transact even when internet connectivity is limited or unavailable. Data exclusion helps you reduce the data size of the offline databases and maximize performance. | [Offline](../pos-operations.md) | |
 | Performance-based switching | Switch to offline when performance degradation is detected. | [Offline](implementation-considerations-offline.md) | [Video](https://youtu.be/sQU-2pgHToI) |
-| Offline dashboard | The **Offline status** dashboard shows the offline status, errors, and details of the data for each device. Therefore, it's easy to manage the status of many devices. | [Offline](implementation-considerations-offline.md) | [Video](https://youtu.be/sQU-2pgHToI)|
+| Offline dashboard | The **Offline status** dashboard shows the offline status, errors, and details of the data for each device. Therefore, it's easy to manage the status of many devices. | [Offline](implementation-considerations-offline.md) | [Video](https://youtu.be/sQU-2pgHToI) |
 
 ## Extensibility
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Commerce headquarters | You can customize Commerce headquarters solutions by adding or modifying business processes. Commerce headquarters supports the use of metadata and a code-driven extension model to add custom functionality. You can easily integrate it into external solutions. | [Overview](extend-customer-cdx-package.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=999bfeff-16b3-44d7-aa10-a5082a01030b) |
 | Headless commerce | Use the Extensible Omnichannel API framework to customize and add business logic. The APIs include request handlers, and pre-trigger and post-trigger extension patterns. | [CSU](retail-server-customer-consumer-api.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=aaaabbbb-0000-cccc-1111-dddd2222eeee) |
 | Commerce SDK | The Commerce SDK includes the code, code samples, templates, and tools that you need to extend or customize Dynamics 365 Commerce functionality. Different repositories (repos) in GitHub publish the SDK, depending on the extension components. | [SDK](retail-sdk/sdk-github.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=aaaabbbb-0000-cccc-1111-dddd2222eeee) |
@@ -196,26 +194,26 @@ Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete
 ## Reporting
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Sales reports | Store managers can access sales reports by staff, register, payment type, returns, product, and other categories. Managers can view these reports, and use them to allocate commission and identify product trends. | | |
 
 ## Diagnostics
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Operational insights | Store-curated service health reliability and performance metrics are available in the customer's Application Insights subscription. Advanced alerting and monitoring capabilities are available. | | |
 | Health check | Running the health check operation verifies the availability of peripherals that are connected to a POS. You can then fix and verify individual peripheral issues. | [Health check](../pos-healthcheck.md) | [Video](https://www.youtube.com/watch?v=RfPDNmnqYvY) |
 
 ## Globalization
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Multi-market support | The solution supports market-specific features such as fiscal integration, GST, advanced invoicing, and prepayments out of the box. This capability covers several markets in Europe, the Americas, Russia, Asia, Saudi Arabia, and other regions. | [Globalization](../localizations/dev-itpro/fiscal-integration-for-retail-channel.md) | |
 
 ## Compliance
 
 | Capability | Description | Documentation | Supplemental content |
-|---|---|---|---|
+| ---------- | ----------- | ------------- | -------------------- |
 | Microsoft standards | The Store Commerce app meets Microsoft standards for security, privacy, and accessibility, as well as various privacy laws and regulations. | | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

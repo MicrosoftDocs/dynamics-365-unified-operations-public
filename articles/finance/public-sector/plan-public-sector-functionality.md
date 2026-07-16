@@ -4,7 +4,7 @@ description: Learn about the first steps to setting up Public sector functionali
 author: TaylorVH
 ms.author: twheeloc
 ms.topic: article
-ms.date: 02/18/2022
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -22,7 +22,7 @@ This article suggests the first steps to setting up Public sector functionality.
 
 ## What should I do first?
 
-Before you set up Public sector and begin adding your data, consider how you'll use this capability. Your consideration should identify the modules that must be set up to use Public sector functionality. Public sector integrates with the following areas in Dynamics 365 Finance. 
+Before you set up Public sector and begin adding your data, consider how you use this capability. Your consideration should identify the modules that you need to set up to use Public sector functionality. Public sector integrates with the following areas in Dynamics 365 Finance.
 
 ### Accounts payable
 
@@ -42,7 +42,7 @@ Cover page for payments report Purchase order line amounts
 - Budget analysis for revised budgets
 - Budget analysis for actual expenditures
 - Budget analysis for encumbrances
-- Budget analysis for pre-encumbrances
+- Budget analysis for preencumbrances
 
 ### French regulatory options
 
@@ -77,9 +77,5 @@ Cover page for payments report Purchase order line amounts
 ## Additional resources
 
 [Public sector home page](public-sector-functionality.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

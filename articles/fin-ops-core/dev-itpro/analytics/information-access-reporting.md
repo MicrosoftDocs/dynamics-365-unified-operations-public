@@ -3,7 +3,7 @@ title: Information access and reporting
 description: Learn about various reporting options, including an overview of the importance of information access and understanding report requirements.
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 10/22/2025
 ms.reviewer: johnmichalak
 audience: IT Pro

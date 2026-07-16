@@ -4,7 +4,7 @@ description: Learn how to turn on the Unified pricing management module for your
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
-ms.date: 5/4/2026
+ms.date: 05/04/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

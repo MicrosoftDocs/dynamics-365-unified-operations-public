@@ -4,7 +4,7 @@
 title: Set up panel members in the HR Recruiting app 
 description: This article explains how to set up panel members in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2025
+ms.date: 06/11/2026
 ms.topic: how-to
 # optional metadata
 
@@ -23,13 +23,13 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up panel members in the HR Recruiting app 
+# Set up panel members in the HR Recruiting app
 
 This article explains how to set up panel members in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
 ## Assign panel members to applicants
 
-Recruiters can assign one or more panel members to each stage and set of steps. 
+Recruiters can assign one or more panel members to each stage and set of steps.
 
 To assign panel members, follow these steps:
 
@@ -42,7 +42,7 @@ To assign panel members, follow these steps:
 
 > [!NOTE]
 > After you set the **Hiring activity status** field to **Scheduled**, interviewers can access the feedback page.
- 
+
 ## Provide feedback
 
 Panel members or interviewers provide feedback when they recommend or don't recommend a candidate. They can save their feedback and return later to edit it. However, after interviewers select **Submit**, they can't change their feedback.
@@ -52,17 +52,17 @@ To provide feedback, follow these steps:
 1. Select **Feedback**.
 1. To provide details, select the feedback.
 1. In the **Recommendation** field, select **Yes** or **No**.
-1. In the **Interview feedback** field, enter feedback about the candidate. 
+1. In the **Interview feedback** field, enter feedback about the candidate.
 
 ## View feedback
 
-Recruiters and the hiring manager can view the feedback that an interviewer provided. However, they can't change it. 
+Recruiters and the hiring manager can view the feedback that an interviewer provided. However, they can't change it.
 
 To view feedback, go to the activity, and select the stage or steps.
 
 ## Reject applicants
 
-Recruiters can reject one or more applicants at a time. Applicants who are rejected receive a notification by email if you set the email template. 
+Recruiters can reject one or more applicants at a time. Applicants who are rejected receive a notification by email if you set the email template.
 
 To reject an applicant, follow these steps:
 
@@ -95,7 +95,7 @@ To set an applicant to **Ready to hire**, follow these steps:
 
 The application status changes to **Ready to hire**.
 
-## Hire candidates 
+## Hire candidates
 
 After you transfer a candidate from the Recruiting add-on to Dynamics 365 Human Resources, the system administrator can view the candidate details in the **Candidates** workspace.
 
@@ -110,11 +110,11 @@ To view the candidate details and create an employee record for the candidate, f
 
 ## Limitations and known issues
 
-- If a level isn't specified in the recruiting request in Dynamics 365 Human Resources, the education details from the recruiting request aren't shown in the job ads.
+- If you don't specify a level in the recruiting request in Dynamics 365 Human Resources, the job ads don't show the education details from the recruiting request.
 - In the email template, the user is the category.
-- There's no limit on the number of times that the same candidate can be set to **Ready to hire**.
+- There's no limit on the number of times that you can set the same candidate to **Ready to hire**.
 - When you move candidate data from the Recruiting Add-on to the Dynamics 365 finance and operations environment, only the name is transferred. Other details, such as the educational background, skills, and positions, aren't transferred.
 - Localization isn't done.
 - When candidates enter personal details in their profile on the careers site, they must select **Save as draft** to enable the **Next** button. They can then select **Next** to provide their educational background and work history, and upload a resume.
 - When candidates create a profile on the careers site and want to upload a resume, they must select **Upload** after they select the file.
-- If the administrator deletes a candidate's profile, the candidate can still access the careers site, but they can't create a profile. To create a profile, the candidate must remove their existing account and then create a new one. 
+- If the administrator deletes a candidate's profile, the candidate can still access the careers site, but they can't create a profile. To create a profile, the candidate must remove their existing account and then create a new one.

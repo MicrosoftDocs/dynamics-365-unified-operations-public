@@ -6,7 +6,7 @@ ms.author: shwgarg
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
 ms.topic: how-to
-ms.date: 01/31/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -19,7 +19,7 @@ This article describes how to define a unit of measure, provide translations for
 
 ## Open the Units page
 
-To create and work with the units of measure that are available in your system, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+To create and work with the units of measure that are available in your system, go to **Organization administration** > **Setup** > **Units** > **Units**.
 
 The remaining sections of this article describe what you can do on the **Units** page.
 
@@ -47,7 +47,7 @@ To create or edit a unit of measure, follow these steps:
     - **System of units** – Select the measurement system that the unit belongs to (*Metric units* or *United States customary units*).
     - **Base unit** – Set this option to *Yes* to use the current unit as the base unit for its unit class. In this case, you only have to specify the conversion factor between the base unit and each additional unit in the unit class. The system can then convert between all units in that unit class. Therefore, it's easier to set up conversions.
 
-        For example, if gallon is the base unit for the *Volume* unit class, you only have to set up conversion factors from quart to gallon and from pint to gallon. The system can then also convert from quart to pint.
+        For example, if gallon is the base unit for the *Volume* unit class, you only have to set up conversion factors from quart to gallon and from pint to gallon. The system can also convert from quart to pint.
 
         You can have only one base unit per unit class.
 
@@ -63,7 +63,7 @@ To define translations for the ID or symbol and the description for a unit of me
 1. Create or select the unit to create translations for.
 1. On the Action Pane, select **Unit texts**.
 
-    The **Unit texts** page appears. You use this page to define translations for the ID or symbol for the selected unit. Those translations can then be used on external documents in customer-specific or vendor-specific languages.
+    The **Unit texts** page appears. You use this page to define translations for the ID or symbol for the selected unit. You can use those translations on external documents in customer-specific or vendor-specific languages.
 
 1. On the Action Pane, select **New**.
 1. In the **Language** field, select the language to translate the unit ID or symbol to.
@@ -104,7 +104,7 @@ To define rules for conversions between units of measure, follow these steps:
 
     - **Product** – Select the specific product that the conversion applies to. This field is available only for intra-class and inter-class conversions.
     - **Formula layout** – Leave this field set to *Simple* to specify a simple conversion that has a single factor. Set it to *Advanced* to set up a more complex equation. The format for advanced equations varies, depending on the unit class.
-    - **From unit** – This field shows the selected unit. Usually, you shouldn't change the value. (If you do change the value, you must open the **Unit conversions** page for the selected unit to view your new conversion after you save it.)
+    - **From unit** – This field shows the selected unit. Usually, don't change the value. (If you do change the value, you must open the **Unit conversions** page for the selected unit to view your new conversion after you save it.)
     - **To unit** – Select the unit to convert to.
     - **Rounding** – Select how fractions should be rounded, based on the **Decimal precision** value of the selected unit (*To nearest*, *Up*, or *Down*).
     - **Conversion formula** – Use the remaining fields at the top of the drop-down dialog box to specify the formula for converting between the two units. The available fields vary, depending on the unit class and formula layout that you've selected.

@@ -4,7 +4,7 @@ description: Learn how to create dimensions and import dimension members, includ
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 09/20/2017
+ms.date: 06/23/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 
 [!include [banner](../includes/banner.md)]
 
-Cost accounting is an independent module that requires data from other modules. This data is categorized into the following:
+Cost accounting is an independent module that requires data from other modules. Categorize this data into the following categories:
 
 - Cost elements
 - Cost objects

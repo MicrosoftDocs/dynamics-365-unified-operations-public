@@ -4,7 +4,7 @@ description: Learn how to perform day-to-day warehousing tasks when you use Ware
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/22/2026
+ms.date: 05/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSInventoryUpdateLog

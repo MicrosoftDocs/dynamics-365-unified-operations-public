@@ -4,7 +4,7 @@ description: Learn about how to organize existing reports, building blocks, and 
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 03/12/2026
+ms.date: 06/01/2026
 ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
@@ -20,7 +20,7 @@ ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 
 After you design building blocks and generate reports, organize these objects so that users can easily locate them. This article explains how to organize existing reports, building blocks, and objects in report designer.
 
-You can rename folders, reports, building blocks, and other objects in Report designer to help organize your files. Depending on the type of object that you rename, you might need to update associations with that object.
+Rename folders, reports, building blocks, and other objects in Report designer to help organize your files. Depending on the type of object that you rename, you might need to update associations with that object.
 
 ## Rename a folder or building block in Report designer
 
@@ -36,7 +36,7 @@ In Report designer, you can rename folders, report definitions, row definitions,
 
 ## Create and manage report groups
 
-You can group report definitions to generate multiple reports at the same time. To create, modify, delete, and generate report groups, you must have the designer or administrator role. Users who have the generator role can generate report groups and can also modify the user report definitions setting for report groups.
+Group report definitions to generate multiple reports at the same time. To create, modify, delete, and generate report groups, you must have the designer or administrator role. Users who have the generator role can generate report groups and can also modify the user report definitions setting for report groups.
 
 ### Create a report group
 
@@ -82,7 +82,7 @@ The following table describes the controls on the **Report group** tab.
 | Include all reporting currencies | Any additional reporting currencies that you configure in your Microsoft Dynamics 365 Finance system are listed here. Select this checkbox to generate additional reports in the currencies that are indicated. To view these reports in the Web Viewer, select the **Currency** button, and then select a currency. |
 | Date information not saved with report definition | Base period, Base year, Period covered. Only default base period settings are saved with the report definition. |
 | Date information saved with report definition | Report date, Default base period |
-| Reports in group | Add, remove, and re-order reports in the report group. To add report definitions to the report group, open the report group by double selecting it, and then select **Add**. Select the reports to include in the report group, and then select **OK**. To remove a report from the report group, select it, and then select **Remove**. To modify the order that the reports are generated in, select a report in the list, and then select **Move up** or **Move down**. |
+| Reports in group | Add, remove, and reorder reports in the report group. To add report definitions to the report group, open the report group by double selecting it, and then select **Add**. Select the reports to include in the report group, and then select **OK**. To remove a report from the report group, select it, and then select **Remove**. To modify the order that the reports are generated in, select a report in the list, and then select **Move up** or **Move down**. |
 
 ## Additional resources
 

@@ -4,7 +4,7 @@ description: License plate location positioning lets you see where a license pla
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/28/2026
+ms.date: 05/28/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac

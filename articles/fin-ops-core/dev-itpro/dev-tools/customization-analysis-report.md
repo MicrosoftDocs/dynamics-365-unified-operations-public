@@ -3,7 +3,7 @@ title: Customization Analysis Report (CAR)
 description: Learn about how to generate a Customization Analysis Report for your model and describes some best practice rules that are included in the report.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/26/2026
 ms.reviewer: johnmichalak
 audience: Developer

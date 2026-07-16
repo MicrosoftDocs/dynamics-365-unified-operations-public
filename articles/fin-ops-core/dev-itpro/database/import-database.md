@@ -4,7 +4,7 @@ description: Learn how to import a database for finance and operations apps, inc
 author: LaneSwenka
 ms.author: laswenka
 ms.date: 04/03/2026
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak

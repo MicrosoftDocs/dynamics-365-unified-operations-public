@@ -4,7 +4,7 @@
 title: Set up prospects in the HR Recruiting app 
 description: This article explains how to set up prospects in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2025
+ms.date: 06/11/2026
 ms.topic: how-to
 # optional metadata
 
@@ -56,11 +56,11 @@ A recruiter can use either of the following methods to add candidates as prospec
  
 ## Turn prospects into applicants
 
-Recruiters can turn prospects directly in applicants. 
+Recruiters can turn prospects directly into applicants. 
 
 To turn prospects into applicants, follow these steps:
 
-1. Go to **Job ad** \> **Prospects**.
+1. Go to **Job ad** > **Prospects**.
 1. Select one or more prospects to turn into applicants.
 1. Select **Move to applicant**.
 
@@ -74,6 +74,6 @@ Recruiters can send an invitation to prospects to notify them about job openings
 
 To delete prospects, follow these steps:
 
-1. Go to **Job ad** \> **Prospects**.
+1. Go to **Job ad** > **Prospects**.
 1. Select the prospects to delete.
 1. Select **Delete prospect**.

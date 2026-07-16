@@ -4,8 +4,8 @@ description: Learn about the posting types that are used for asset leasing trans
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.date: 06/23/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -62,11 +62,11 @@ The account is associated with the expense that is related to the depreciation o
 **Debit:** Depreciation expense XXX<br>
 **Credit:** Accumulated Depreciation XXX
 
-## Gain/loss on lease modification
+## Gain or loss on lease modification
 
-The account is associated with any gains or losses that arise from lease modifications. A gain might arise during a lease modification if the modification decreases the lease liability by an amount that exceeds the carrying value of the ROU asset.
+This account tracks any gains or losses that arise from lease modifications. A gain might arise during a lease modification if the modification decreases the lease liability by an amount that exceeds the carrying value of the ROU asset.
 
-For example, a lease has a current carrying value of the lease liability of $150,000 and a carrying value of the ROU asset of $100,000. The lease is modified, and this modification produces a new present value of the future minimum lease payments (PVFMLP) of $40,000. Therefore, the lease liability will be debited by $110,000 ($150,000 – $40,000). Because the ROU asset is only $100,000, the decrease of $110,000 will decrease the asset past 0 (zero). Therefore, the accounting guidance states that the remainder should be booked to a gain account. In this case, the final journal entry will be a debit to the lease liability for $110,000, a credit to the lease asset for $100,000, and a credit to the gain account for $10,000.
+For example, a lease has a current carrying value of the lease liability of $150,000 and a carrying value of the ROU asset of $100,000. The lease is modified, and this modification produces a new present value of the future minimum lease payments (PVFMLP) of $40,000. Therefore, the lease liability will be debited by $110,000 ($150,000 – $40,000). Because the ROU asset is only $100,000, the decrease of $110,000 will decrease the asset past 0 (zero). Therefore, the accounting guidance states that the remainder should be booked to a gain account. In this case, the final journal entry is a debit to the lease liability for $110,000, a credit to the lease asset for $100,000, and a credit to the gain account for $10,000.
 
 **Example journal entries:** Lease modification<br>
 **Debit:** Lease liability XXX<br>
@@ -75,7 +75,7 @@ For example, a lease has a current carrying value of the lease liability of $150
 
 ## Accumulated depreciation
 
-The account is associated with the contra-asset account of the ROU asset. This account is credited when a depreciation expense is posted.
+This account is associated with the contra-asset account of the ROU asset. You credit this account when you post a depreciation expense.
 
 **Example journal entries:** Depreciation accrual<br>
 **Debit:** Depreciation expense XXX<br>
@@ -133,7 +133,6 @@ The account that is selected for each expense type is debited when a payment for
 **Credit:** Offset account XXX
 
 > [!NOTE]
-> The offset account is selected at the lease level on the lines for the executory cost payment schedule. This offset account can associated with the vendor, or with a ledger account.
-
+> The offset account is selected at the lease level on the lines for the executory cost payment schedule. This offset account can be associated with the vendor, or with a ledger account.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

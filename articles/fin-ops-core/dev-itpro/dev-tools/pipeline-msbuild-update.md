@@ -3,7 +3,7 @@ title: Update a legacy pipeline in Azure Pipelines
 description: Learn about how to update a legacy pipeline in Azure Pipelines to use a newer version of Visual Studio, including a table that outlines property values for task names.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer

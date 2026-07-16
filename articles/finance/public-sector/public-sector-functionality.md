@@ -4,7 +4,7 @@ description: Dynamics 365 Finance supports common public sector business process
 author: velofog
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -19,9 +19,9 @@ ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 
 [!include [banner](../includes/banner.md)]
 
-You can enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
+You can enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks.
 
-Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include: 
+Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include:
 
 - Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger.
 - Preliminary budgets, apportionments, and commitments.
@@ -29,7 +29,7 @@ Use the Public sector functionality to meet the rules, regulations, and reportin
 - General ledger year-end processing, which includes encumbrances and commitments on purchase orders.
 - Electronic payments to vendors, signature pages for payment reports, and invoice payment holds.
 
-  For more information, see the following topics:
+  For more information, see the following articles:
 
 - [Plan for public sector functionality](plan-public-sector-functionality.md)
 - [Accounts payable in the public sector overview](accounts-payable-public-sector.md)
@@ -44,23 +44,20 @@ Use the Public sector functionality to meet the rules, regulations, and reportin
 \* Applicable only if your organization is in France.
 
 ## Why do I need the Public sector configuration key?
-The **Public sector** configuration key enables pages and controls that supplement the core apps . You can enable or disable this key on the **License configuration** page.
+
+The **Public sector** configuration key enables pages and controls that supplement the core apps. You can enable or disable this key on the **License configuration** page.
 
 ## How does the Public sector configuration key relate to other configuration keys?
+
 The following table provides information about how this configuration key relates to other configuration keys.
 
-|   **Detail**         |              **Description**                                                                                                                                                                                        |
-|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parent key | None                                                                                                                                                                                                                |
+|   **Detail**         |              **Description**                                                                    |
+|------------|--------------------------------------------------------------------------------------------------------|
+| Parent key | None                                                                       |
 | Child keys | **Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key |
-
 
 ## Additional resources
 
 [Plan for public sector functionality](plan-public-sector-functionality.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

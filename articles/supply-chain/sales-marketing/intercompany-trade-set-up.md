@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: CustTable, VendTable, EcoResProductListPage, InterCompanyTradingRelationSetupCustomer
 ms.topic: how-to
-ms.date: 4/23/2026
+ms.date: 04/23/2026
 ms.custom: 
   - bap-template
 ---

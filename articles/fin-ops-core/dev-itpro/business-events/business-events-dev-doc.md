@@ -3,7 +3,7 @@ title: Business events developer documentation
 description: Learn about the development process and best practices for implementing business events through understanding intent, fidelity, and adding custom endpoint types.
 author: jaredha
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 01/15/2026

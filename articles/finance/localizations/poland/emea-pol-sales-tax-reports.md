@@ -3,7 +3,7 @@ title: Sales tax reports for Poland
 description: Learn about Polish VAT reporting and the information that is legally required in VAT registers for Poland, including an outline on VAT report date codes.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: reference
 ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User

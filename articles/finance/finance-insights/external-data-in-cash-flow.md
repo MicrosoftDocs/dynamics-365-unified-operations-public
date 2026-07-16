@@ -4,7 +4,7 @@ description: Learn about the setup steps that must be completed so that external
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 02/16/2022
+ms.date: 06/23/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -18,19 +18,19 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 [!include [banner](../includes/banner.md)]
 
-External data can be entered or imported into cash flow forecasts. This article describes the setup steps that are specific to the use of external data and that enable the external data to be included in a cash flow forecast.
+You can enter or import external data into cash flow forecasts. This article describes the setup steps that are specific to the use of external data and that enable the external data to be included in a cash flow forecast.
 
 ## External data setup
 
 Use the **External source** tab on the **Cash flow forecast setup** page (**Cash and bank management \> Cash flow forecasting \> Cash flow forecast setup**) to enter settings that support the use of external data in cash flow forecasts.
 
-External data can be entered or imported into cash flow forecasts. Before external data is entered or imported, external sources must be set up. On the **External source** tab, set up external cash flow categories. A category can be either **Outgoing** or **Incoming**. **Liquidity** should be selected as the posting type. In the **Legal entity settings** grid, select the legal entities and the corresponding main accounts that the external cash flow categories apply to.
+You can enter or import external data into cash flow forecasts. Before you enter or import external data, set up external sources. On the **External source** tab, set up external cash flow categories. A category can be either **Outgoing** or **Incoming**. Select **Liquidity** as the posting type. In the **Legal entity settings** grid, select the legal entities and the corresponding main accounts that the external cash flow categories apply to.
 
 For more information about how to set up cash flow forecasts, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
 ## Enter external data
 
-To enter and modify external data for cash flow forecasts, you can use the **Open in Excel** experience. Select the **External data** button on the **Cash flow forecast** workspace page, and then select either **Add External Data** or **Edit existing external data**. When the Microsoft Excel file is opened, you can enter information in the following fields:
+To enter and modify external data for cash flow forecasts, use the **Open in Excel** experience. Select the **External data** button on the **Cash flow forecast** workspace page, and then select either **Add External Data** or **Edit existing external data**. When the Microsoft Excel file opens, enter information in the following fields:
 
 - **Entry ID** (unique)
 - **Description** (optional)
@@ -44,11 +44,11 @@ To enter and modify external data for cash flow forecasts, you can use the **Ope
 - **Account number** (optional)
 - **Account name** (optional)
 
-## Importing external data by using the Data Management framework
+## Import external data by using the Data Management framework
 
-You can import external data for cash flow forecasts by using the **Data Management** workspace and the entity that is named **Cash flow forecast external source entry**.
+You can import external data for cash flow forecasts by using the **Data Management** workspace and the entity named **Cash flow forecast external source entry**.
 
-Additionally, if you must move setup data from one environment to another, the following entities area available for the setup tables that are required:
+To move setup data from one environment to another, use the following entities for the required setup tables:
 
 - Cash flow forecast external source setup
 - Cash flow forecast external source legal entity setup

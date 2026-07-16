@@ -3,7 +3,7 @@ title: Manage sandbox environments across implementation projects
 description: Learn how to manage multiple sandbox deployments across implementation projects in Microsoft Dynamics Lifecycle Services.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 04/02/2026

@@ -3,7 +3,7 @@ title: Expired subscriptions and data deletion
 description: Learn about data deletion that occurs after a finance and operations apps subscription expires, including cleaning up environments deployed to Azure subscriptions.
 author: LaneSwenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

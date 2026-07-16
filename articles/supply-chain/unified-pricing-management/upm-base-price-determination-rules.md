@@ -4,7 +4,7 @@ description: Learn about the price determination rules for calculating an item's
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: article
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

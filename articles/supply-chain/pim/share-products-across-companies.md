@@ -4,7 +4,7 @@ description: Learn how to share released-product data across companies to reduce
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 02/17/2025
+ms.date: 06/22/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -14,14 +14,14 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and at the same time simplify the task of maintaining product master data.
+Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and simplify product master data maintenance.
 
 ## Prerequisites
 
-To use the features described in this article, your system must meet the following requirements:
+To use the features that this article describes, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Run Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
+- Turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
     - *Master company data sharing*
     - *Cross-company data sharing for products*
 
@@ -35,9 +35,9 @@ Single record sharing and duplicate record sharing work in the following way:
 When you share product information across companies, the sharing works in the following way:
 
 - The released products table (`Inventtable`) must use *single record sharing*.
-- For related tables (which typically hold policies for handing a product, such as the bar code setup and the cost group), you must decide whether you want to use *single record sharing* or *duplicate record sharing*. In most cases, you'll probably decide to use duplicate record sharing for related tables, because single record sharing imposes several restrictions that duplicate record sharing doesn't impose. (Learn more in [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).)
+- For related tables (which typically hold policies for handing a product, such as the bar code setup and the cost group), you must decide whether you want to use *single record sharing* or *duplicate record sharing*. In most cases, duplicate record sharing is the better choice for related tables, because single record sharing imposes several restrictions that duplicate record sharing doesn't impose. (Learn more in [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).)
 
-Before you continue to read this article, we recommend that you read [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) to learn more about how data sharing works in Supply Chain Management.
+Before you continue, read [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) to learn more about how data sharing works in Supply Chain Management.
 
 ## Prepare your system to enable cross-company data sharing for products
 
@@ -46,7 +46,7 @@ Before you enable cross-company data sharing for products, work through the foll
 - **Set up the currency.** Either the currency must be the same across all companies in the data sharing policy, or you must avoid using the base price fields.
 - **Align number sequences.** Number sequences must be aligned across all companies in the data sharing policy.
 - **Enable policies in the correct order.** Duplicate shared policies must be enabled before single record sharing policies.
-- **Specify the default parameters for each company.** You might want to align default parameters across all companies in the data sharing policy.
+- **Specify the default parameters for each company.** Consider aligning default parameters across all companies in the data sharing policy.
 - **Consider whether any of your business processes are affected by the single record sharing functionality.** Read the detailed list of [limitations and notes that apply for shared products](#limitations) later in this article, and prepare your system as required.
 
 ## Set up sharing policies for products and product-related information
@@ -54,20 +54,20 @@ Before you enable cross-company data sharing for products, work through the foll
 To share products and product-related information, you must create and set up your sharing policies on the **Configure cross-company data sharing** page. Each sharing policy establishes a set of tables and fields that are shared.
 
 > [!IMPORTANT]
-> If a field in a table that's being enabled for single record sharing holds a foreign key for a related table, that related table will also be shared by using single record sharing, unless a duplicate record sharing policy for it already exists and is enabled. Therefore, all the duplicate record sharing policies that you require must be enabled before you start to set up your single record sharing policies. For example, if you plan to use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products (and the products must use single record sharing).
+> If a field in a table that's being enabled for single record sharing holds a foreign key for a related table, that related table is also shared by using single record sharing, unless a duplicate record sharing policy for it already exists and is enabled. Therefore, all the duplicate record sharing policies that you require must be enabled before you start to set up your single record sharing policies. For example, if you plan to use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products (and the products must use single record sharing).
 
 ### Set up duplicate record sharing policies
 
-We recommend that you set up duplicate record sharing for tables that handle policies and related information.
+Use duplicate record sharing for tables that handle policies and related information.
 
-To create a duplicate record sharing policy, follow these steps: You can create as many duplicate record sharing policies as you want.
+To create a duplicate record sharing policy, follow these steps. You can create as many duplicate record sharing policies as you want.
 
-1. Go to **System administration \> Setup \> Configure cross-company data sharing**.
+1. Go to **System administration > Setup > Configure cross-company data sharing**.
 1. On the Action Pane, select **New**.
 1. In the **Name** field, enter a name for the policy (for example, *Product policies - duplicate sharing*).
 1. Leave the **Master company data sharing policy** option set to *No*. (This option doesn't apply to *duplicate record sharing* policies.)
 1. On the Action Pane, select **Save**.
-1. In the **Companies which share the records in these tables** section, add each company that will share the tables that you'll add for this policy.
+1. In the **Companies which share the records in these tables** section, add each company that shares the tables that you add for this policy.
 1. In the **Tables and fields to share** section, select **Add** on the toolbar.
 1. In the drop-down dialog box, in the **Table name** field, select a table. For more information about which tables you might select, see the [Product information tables that can be shared](#tables) section later in this article.
 
@@ -75,26 +75,26 @@ To create a duplicate record sharing policy, follow these steps: You can create 
     > Not all tables are enabled for record sharing. If the table that you want to share isn't available for selection in the **Table name** field, send a request to Microsoft Support, and we'll consider adding sharing support for the requested table in the future.
 
 1. Select **Add table**. Your table is added.
-1. Select which fields (and which related tables, if any) should be shared by selecting and clearing the different checkboxes.
+1. Select which fields (and which related tables, if any) to share by selecting and clearing the different checkboxes.
 1. Repeat steps 7 through 10 for each additional table that you want to share by using this policy.
 1. On the Action Pane, select **Save**.
 
 ### Set up single record sharing policies
 
-The *Released product* table (`Inventtable`) must be set up for single record sharing.
+Use single record sharing for the *Released product* table (`Inventtable`).
 
 To create single record sharing policies for the **Released product** table and other tables, follow these steps:
 
-1. Go to **System administration \> Setup \> Configure cross-company data sharing**.
+1. Go to **System administration > Setup > Configure cross-company data sharing**.
 1. On the Action Pane, select **New**.
 1. In the **Name** field, enter a name for the policy (for example, *Products - single record sharing*).
 1. Set the **Master company data sharing policy** option to *Yes*. This setting is required for *single record sharing* policies.
-1. Set the **Master company** field to the company that will be used as the master. This company is the one that the single record is assigned to.
+1. Set the **Master company** field to the company to use as the master. The single record is assigned to this company.
 1. On the Action Pane, select **Save**.
-1. In the **Child companies** section, add each company that will share the tables that you'll add for this policy.
+1. In the **Child companies** section, add each company that shares the tables that you add for this policy.
 1. In the **Tables and fields to share** section, select **Add** on the toolbar.
 1. In the drop-down dialog box, in the **Table name** field, select a table (for example, *Inventtable*). Then select **Add table**.
-1. Expand the newly added table, and review the status of each of its fields. (A check mark indicates enabled fields.) Take special note of the status of fields that reference another table. (These are labeled with the text "foreign key.") Either make sure that you've included the related table as part of a duplicate record sharing policy or be aware that the related tables will now also be shared by using single record sharing.
+1. Expand the newly added table, and review the status of each of its fields. (A check mark indicates enabled fields.) Take special note of the status of fields that reference another table. (These are labeled with the text "foreign key.") Either make sure that you've included the related table as part of a duplicate record sharing policy or be aware that the related tables are now also shared by using single record sharing.
 
 <!-- KFM: We have an issue with the templates, so hide this until we solve it:
 
@@ -152,12 +152,12 @@ You can't apply item templates to child companies, because the `SysRecordTemplat
 
 Base prices (such as the sales price, purchase price, and inventory price) are implicitly expressed in the accounting currency of each company.
 
-The accounting currency for each company is set up in the **Accounting currency** field on the **Ledger** page (**General ledger \> Ledger setup \> Ledger**).
+The accounting currency for each company is set up in the **Accounting currency** field on the **Ledger** page (**General ledger > Ledger setup > Ledger**).
 
 For companies that are part of a cross-company policy, the following cases apply:
 
 - **All companies in the policy use the same accounting currency** – There are no special limitations to consider.
-- **Companies in the policy use different accounting currencies** – The currency isn't explicitly specified. Instead, it's implicit for each company. Therefore, if one amount (such as the base sales price) is shared across companies, each company will assume a different currency. For example, the USMF company uses US dollars (USD), whereas the JPM company uses Japanese yen (JPY). If the base sales price is 20, the USMF company will assume that the amount is 20 USD, but the JPM company will assume that it's 20 JPY. Because 20 USD and 20 JPY don't represent the same monetary value, one of the companies will sell the item at a price that is either too high or too low.
+- **Companies in the policy use different accounting currencies** – The currency isn't explicitly specified. Instead, it's implicit for each company. Therefore, if one amount (such as the base sales price) is shared across companies, each company assumes a different currency. For example, the USMF company uses US dollars (USD), whereas the JPM company uses Japanese yen (JPY). If the base sales price is 20, the USMF company assumes that the amount is 20 USD, but the JPM company assumes that it's 20 JPY. Because 20 USD and 20 JPY don't represent the same monetary value, one of the companies sells the item at a price that is either too high or too low.
 
 Therefore, only one of the following rules applies:
 
@@ -175,7 +175,7 @@ When you create a product, you must specify several different units of measure, 
 To assign the default unit for a company, follow these steps:
 
 1. On the navigation bar, select the company (legal entity) that you want to set defaults for.
-1. Go to **Inventory management \> Setup \> Inventory and warehouse management parameters**.
+1. Go to **Inventory management > Setup > Inventory and warehouse management parameters**.
 1. On the **General** tab, in the **Default values** section, in the **Unit** field, set the default unit for the current company.
 
 > [!IMPORTANT]
@@ -186,13 +186,13 @@ To assign the default unit for a company, follow these steps:
 The **Released products** page shows physical dimensions for each released product. These dimensions include weight and height. However, the unit for the measurements isn't shown on the page and is therefore implicit. The unit that is used for each measurement is the system unit in each unit class. Because these system units are cross-company, there are no specific actions or limitations that you must consider in this area.
 
 > [!NOTE]
-> The system unit for each class is set up on the unit itself, and only one unit in the unit class can be a system unit. If no unit is set up as the system unit, the value of the fields will have no meaning, and processes (such as warehousing) that rely on the existence of a system unit can't be completed. Learn more in [Manage units of measure](tasks/manage-unit-measure.md).
+> The system unit for each class is set up on the unit itself, and only one unit in the unit class can be a system unit. If no unit is set up as the system unit, the value of the fields has no meaning, and processes (such as warehousing) that rely on the existence of a system unit can't be completed. Learn more in [Manage units of measure](tasks/manage-unit-measure.md).
 
 ### Bills of materials, formulas, and routes
 
-We recommend that you manage bills of materials (BOMs), formulas, and routes in each company. Therefore, BOMs, formulas, and routes aren't shared in the provided templates.
+Manage bills of materials (BOMs), formulas, and routes in each company. Therefore, BOMs, formulas, and routes aren't shared in the provided templates.
 
-### Coverage groups – Calendar
+### Coverage groups – calendar
 
 When you share the coverage groups for an item, the calendar on a coverage group isn't shared in the provided templates. If you want to share it, create a new policy for calendar sharing, or add the calendar table to the coverage group policy.
 
@@ -210,7 +210,7 @@ Dual-write isn't currently supported when you use cross-company data sharing for
 
 ### Dynamics 365 Commerce
 
-Dynamics 365 Commerce isn't supported when you use cross-company data sharing for products. You can't use Commerce and cross-company data sharing in the same system, because shared products won't be synced to the point of sale (POS) system.
+Dynamics 365 Commerce isn't supported when you use cross-company data sharing for products. You can't use Commerce and cross-company data sharing in the same system, because shared products aren't synced to the point of sale (POS) system.
 
 ### Financial dimensions
 
@@ -232,14 +232,14 @@ If you're using a [distributed hybrid environment](../cloud-edge/cloud-edge-land
 
 Some functionality that engineering change management provides might conflict with single record sharing of products or, when it's used in specific ways, might be complementary.
 
-The following engineering change management concepts will be affected if you use single record sharing of products:
+The following engineering change management concepts are affected if you use single record sharing of products:
 
 - **Definition of engineering companies** – Engineering change management lets you set up one or more engineering companies. These engineering companies might be organizations that represent one or more existing companies where your engineering department is located. Alternatively, you might set up a dedicated company that doesn't represent an actual engineering department, but that you use to manage master data and control the release of products for your organization. For more information about engineering companies, see [Engineering companies and data ownership rules](../engineering-change-management/engineering-org-data-ownership-rules.md).
 - **Release product structure** – From the engineering company, you can use a controlled process to release a product to other companies. For more information about the release product structure, see [Release product structures](../engineering-change-management/release-product-structure.md).
 
 The tables that are related to engineering versions aren't shared, because they're meant to be contained in engineering and to be shared only with a controlled release. Therefore, if you use engineering change management, you might choose one of the following setups:
 
-- **Your engineering company is part of the single record sharing policy** – In this case, most of the engineering-related functionality isn't applicable, especially the controlled release. As soon as the product is created as a released product in the engineering company, it's shared (that is, made available) to the rest of your companies. Therefore, the engineering company loses its engineering character, because it's longer a space where the engineering team can work on products, and only those products that continue forward are used in the system.
+- **Your engineering company is part of the single record sharing policy** – In this case, most of the engineering-related functionality isn't applicable, especially the controlled release. As soon as the product is created as a released product in the engineering company, it's shared (that is, made available) to the rest of your companies. Therefore, the engineering company loses its engineering character, because it's no longer a space where the engineering team can work on products, and only those products that continue forward are used in the system.
 
     Because the engineering versions aren't shared, the version information is available only in the engineering company. Therefore, this setup has the following implications:
 
@@ -248,26 +248,26 @@ The tables that are related to engineering versions aren't shared, because they'
     - Release control is lost, because the product is shared across all companies.
     - The BOM and route are kept locally. You must manage the BOMs and BOM versions (and also the routes and route versions) at the company level. Therefore, you can still use the release product structure to share the BOM and route.
 
-    We don't recommend this setup, because much of the value of engineering change management is lost.
+    Don't use this setup, because much of the value of engineering change management is lost.
 
 - **Your engineering company isn't part of the single record sharing policy for products** – You can set up your engineering company so that it isn't part of the shared product policy. You can then make a sharing policy that includes all the companies where product introduction is done at the same time. In this case, you can release a product to one company to make it available in all the companies.
 
-    If you require version management, you must still release the version information with the release product structure. Therefore, your organization must have an engineering company where products are designed and managed. Then, when a product is ready, you do a controlled release to the rest of the companies. (This type of controlled release is the main goal of the engineering change management functionality.) In this case, you create the product in the engineering company and then release it to all the companies that are part of the sharing policy. The released product will be released to all the companies at the same time, because they're sharing the same product record.
+    If you require version management, you must still release the version information with the release product structure. Therefore, your organization must have an engineering company where products are designed and managed. Then, when a product is ready, you do a controlled release to the rest of the companies. (This type of controlled release is the main goal of the engineering change management functionality.) In this case, you create the product in the engineering company and then release it to all the companies that are part of the sharing policy. The released product is released to all the companies at the same time, because they're sharing the same product record.
 
     Version-related tables (such as engineering versions) aren't shared. Therefore, you must not rely on version management outside the engineering organization. Alternatively, if you require version management in all companies, you must release version-related information with the release product structure.
 
 ### Sites and warehouses
 
-Sites and warehouses can be shared. To share them, include the `InventLocation` table (for warehouses) and/or the `InventSite` table (for sites) in a sharing policy. If you don't share these tables, all sites and warehouses will be company specific. Therefore, they will have to be created in every company.
+Sites and warehouses can be shared. To share them, include the `InventLocation` table (for warehouses) and/or the `InventSite` table (for sites) in a sharing policy. If you don't share these tables, all sites and warehouses are company specific. Therefore, you must create them in every company.
 
 ## Existing products
 
-When you enable single record sharing for products, it's important that you create and enable the single record sharing policies, and then start to import or create your product portfolio.
+When you enable single record sharing for products, create and enable the single record sharing policies before you start to import or create your product portfolio.
 
 > [!IMPORTANT]
 > A company that already has product records can never be made into a child company for single record sharing. Therefore, in most cases, you can set up product sharing only when you're setting up a new system.
 
-If you already have existing products in the system before you enable the single record sharing policies, they won't be shared.
+If the system already contains products before you enable the single record sharing policies, those products aren't shared.
 
 ## Modifying policies
 

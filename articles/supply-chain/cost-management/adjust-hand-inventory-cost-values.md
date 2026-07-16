@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventAdjInventOnHand
 ms.topic: how-to
-ms.date: 5/20/2026
+ms.date: 05/20/2026
 ms.custom: 
   - bap-template
 ---

@@ -4,7 +4,7 @@ description: Learn how to extend Business performance analytics by bringing exte
 author: yvishwa
 ms.author: yvishwa
 ms.topic: how-to
-ms.date: 10/30/2024
+ms.date: 06/23/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -33,7 +33,7 @@ If the external data provides new descriptive information about an existing enti
 
 This approach has the following advantages:
 
-- **Simplicity** – By extending dimensions, you avoid the need for extra tables. Therefore, the model is easier to maintain. 
+- **Simplicity** – By extending dimensions, you avoid the need for extra tables. Therefore, the model is easier to maintain.
 - **Minimal impact on queries** – Because the fact table relationships aren't modified, existing queries remain intact. However, users gain access to the additional context that the new attributes provide.
 
 This approach also has some disadvantages:
@@ -42,7 +42,7 @@ This approach also has some disadvantages:
 
 ## Add new dimensions
 
-When the external data represents a new entity that doesn't fit into any existing dimension, introduce a new dimension table. The external data can then bring new descriptive information that enriches the analysis of fact tables.
+When external data represents a new entity that doesn't fit into any existing dimension, add a new dimension table. Use the external data to bring new descriptive information that enriches the analysis of fact tables.
 
 ### External data creates a new entity
 
@@ -50,13 +50,13 @@ If the external data introduces a new entity that isn't currently represented in
 
 1. **Create a new dimension table.** Build a new dimension table (for example, `ChannelDim`, `GeoDim`, or `DepartmentDim`) to hold the attributes that are related to the new entity.
 1. **Generate a surrogate key.** Create a surrogate key (for example, `ChannelKey`, `GeoKey`, or `DepartmentKey`) as the primary key of the new dimension table.
-1. **Link to existing fact tables.** Modify the relevant fact tables (for example, `SalesFact` or `MarketingFact`) so that they include a foreign key that references the new dimension. In this way, the new dimension can be used in queries.
+1. **Link to existing fact tables.** Modify the relevant fact tables (for example, `SalesFact` or `MarketingFact`) so that they include a foreign key that references the new dimension. By using this step, you can use the new dimension in queries.
 1. **Ensure conformance.** If the new dimension applies to multiple fact tables, ensure that the foreign key is consistently used across all relevant fact tables and follows conformance rules.
 
 This approach has the following advantages:
 
 - **New context for analysis** – New dimensions add fresh descriptive power to the model. Therefore, they enable additional slicing of fact data.
-- **Conformed dimensions** – If the new dimension is used across multiple fact tables, it enhances analytical capabilities by providing a consistent dimension for drill-across reporting.
+- **Conformed dimensions** – If you use the new dimension across multiple fact tables, it enhances analytical capabilities by providing a consistent dimension for drill-across reporting.
 
 This approach also has some disadvantages:
 

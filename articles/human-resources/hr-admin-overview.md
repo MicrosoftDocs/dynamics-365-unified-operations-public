@@ -2,9 +2,9 @@
 # required metadata
 
 title: Administration overview
-description: This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
+description: This article provides a list of the help articles and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 04/07/2025
+ms.date: 06/05/2026
 ms.topic: overview
 # optional metadata
 
@@ -29,27 +29,27 @@ ms.dyn365.ops.version: Human Resources
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 [!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
-This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
+This article provides a list of the help articles and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 
 ## Configure Power BI workspaces
-1.	If you are using Power BI, configure Power BI with the FinOps entity store. For additional information, see [Power BI integration with the entity store](../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). 
 
-2.	Enable the relevant aggregate measure based on the workspace where you want to enable Power BI. For additional information, see the table below:  
+1. If you're using Power BI, configure Power BI with the FinOps entity store. For more information, see [Power BI integration with the entity store](../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md).
 
-|Workspace name	|Measurement name|
+1. Enable the relevant aggregate measure based on the workspace where you want to enable Power BI. For more information, see the following table:  
+
+|Workspace name |Measurement name|
 |-------------|-----------------|
 |Personnel management|Workforce|
 |Employee development|Workforce|
 |Compensation management|Workforce|
-|Benefits|	Workforce|
-|Leave and Absence	|Leave|
-|Recruiting	|Recruiting|
-|Learning	|Training|
+|Benefits| Workforce|
+|Leave and Absence |Leave|
+|Recruiting |Recruiting|
+|Learning |Training|
 
-3.	Set the frequency on how frequently want the report to be updated for each of the aggregate measure. For more information, see [Automated Entity store refresh](../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md).
+1. Set the frequency for how often you want the report to update for each of the aggregate measures. For more information, see [Automated Entity store refresh](../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md).
 
-
-Additional help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources:
+Additional help articles and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources:
 
 - [System requirements](hr-admin-system-requirements.md)
 
@@ -116,21 +116,19 @@ Additional help topics and other resources to set up, manage, and troubleshoot D
   - [Human Resources doesn't appear in Dynamics 365 apps](hr-admin-troubleshooting-not-in-apps.md)
   - [Reporting options](hr-admin-troubleshooting-reporting.md)
 
-
 ## Additional resources
 
 ### eLearning courses
 
-For online courses and training, check out [Dynamics 365 Human Resources learning paths](/training/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+For online courses and training, see [Dynamics 365 Human Resources learning paths](/training/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### Videos
 
-Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+For how-to videos, see the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ## See also
 
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
 - [Developer Guide](hr-developer-overview.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

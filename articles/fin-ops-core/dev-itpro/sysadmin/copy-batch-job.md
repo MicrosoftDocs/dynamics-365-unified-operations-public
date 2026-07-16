@@ -3,7 +3,7 @@ title: Copy a batch job
 description: Learn about copying a batch job and batch tasks, including step-by-step processes detailing on copying and creating batch jobs.
 author: Peakerbl
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

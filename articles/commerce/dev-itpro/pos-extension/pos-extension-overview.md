@@ -2,9 +2,9 @@
 title: POS extension overview
 description: This article provides an overview of how you can create Microsoft Dynamics 365 Commerce point of sale (POS) extensions by using the independent POS extension model and sealed software development kit (SDK).
 author: josaw1
-ms.date: 02/25/2026
+ms.date: 06/07/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-13
@@ -46,12 +46,13 @@ The different POS apps use the same code base. However, the platform and app typ
 The following table shows the apps that you can create POS extensions for.
 
 | App | Description |
-|---|---|
+| --- | ----------- |
 | Point of sale (POS) | POS lets frontline workers, such as cashiers, sales and inventory associates, stock clerks, and store managers, perform various commerce operations. The Microsoft Dynamics 365 Commerce solution provides different device types, so that these operations can be performed across platforms and form factors. |
 | Modern point of sale (MPOS) | MPOS is a Universal Windows Platform (UWP) app that runs on a Windows device. The MPOS client can communicate with peripheral devices, such as cash drawers, credit card readers, and printers, by using Hardware Station. Modern POS is a legacy app and is replaced by the Store Commerce app. Updates and support for Modern POS end in October 2023. For more information, see [Migrate Modern POS to Store Commerce](migrate-mpos-store-commerce.md). |
 | Store Commerce for web | Store Commerce for web is a hosted version of POS that runs in a browser. The Store Commerce for web app is deployed in the cloud. |
 | Store Commerce | The Store Commerce app in Dynamics 365 Commerce is a Windows app from Microsoft Store that runs on a Windows device. The Chromium engine renders the app. The Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. Store Commerce has full functional parity with MPOS, and replaces MPOS as the default POS app for Dynamics 365 Commerce. For more information, see [Store Commerce app](../store-commerce.md). |
 | Store Commerce for iOS | Store Commerce for iOS is a shell app that runs on an iOS device. The shell hosts Store Commerce for web and supports network connectivity to peripheral devices. |
 | Store Commerce for Android | Store Commerce for Android is a shell app that runs on an Android device. The shell hosts Store Commerce for web while supporting network connectivity to peripheral devices. |
+| Store Commerce for macOS | Store Commerce for macOS is a shell app that runs on a macOS device. The shell hosts Store Commerce for web while supporting network connectivity to peripheral devices. Use the Store Commerce SDK to build and deploy the macOS app. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

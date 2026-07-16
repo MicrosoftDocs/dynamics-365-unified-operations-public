@@ -6,7 +6,7 @@ ms.author: shwgarg
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 ms.topic: how-to
-ms.date: 03/18/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -17,7 +17,7 @@ ms.custom:
 
 There are five product dimensions: color, configuration, size, style, and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 
-Product dimensions are characteristics that serve to identify a product variant. You can use combinations of product dimensions to define product variants. You must define at least one product dimension for a product master in order to create a product variant.
+Product dimensions are characteristics that serve to identify a product variant. Use combinations of product dimensions to define product variants. A product master requires at least one product dimension to create a product variant.
 
 > [!NOTE]
 > You can't use physical dimensions to create product variants. Physical dimensions are specified on the product master and are shared by all its variants. 
@@ -28,23 +28,23 @@ Product variants are also referred to as items. An item is a tangible product, w
 
 ## Set up product dimensions
 
-A product variant can be generated based on the product dimension values.
+A product variant is generated based on the product dimension values.
 
-Product dimension values for the size, color, and style dimensions can be created in the following locations:
+Product dimension values for the size, color, and style dimensions are created in the following locations:
 
-- **Size** page (**Product information management \> Setup \> Dimension and variant groups \> Sizes**)
-- **Color** page (**Product information management \> Setup \> Dimension and variant groups \> Colors**)
-- **Style** page (**Product information management \> Setup \> Dimension and variant groups \> Styles**)
+- **Size** page (**Product information management > Setup > Dimension and variant groups > Sizes**)
+- **Color** page (**Product information management > Setup > Dimension and variant groups > Colors**)
+- **Style** page (**Product information management > Setup > Dimension and variant groups > Styles**)
 
 Product dimension values for the configuration dimension are typically created by using either the Product configurator or the Dimension-based configurator.
 
 Product versions are usually created for specific versions as the product evolves during its lifecycle. Product versions are covered in detail later in this article.
 
-Product dimensions can also be created and maintained on the **Product dimensions** page, which can be accessed from the following locations:
+You can also create and maintain product dimensions on the **Product dimensions** page from the following locations:
 
-- Go to **Product information management \> Products \> Product masters**. On the Action Pane, select **Product dimensions**.
-- Go to **Product information management \> Products \> All products and product masters**. Select a product master. On the Action Pane, select **Product dimensions**.
-- Go to **Product information management \> Released products**. Select a product master. On the Action Pane, on the **Product** tab, in the **Product master** group, select **Product dimensions**.
+- Go to **Product information management > Products > Product masters**. On the Action Pane, select **Product dimensions**.
+- Go to **Product information management > Products > All products and product masters**. Select a product master. On the Action Pane, select **Product dimensions**.
+- Go to **Product information management > Released products**. Select a product master. On the Action Pane, on the **Product** tab, in the **Product master** group, select **Product dimensions**.
 
 The number of variants that you can create for an item is limited by the number of possible product dimension combinations.
 
@@ -71,11 +71,11 @@ A company sells denim jeans. The item, *Jeans*, uses the color and size product 
 
 Version is a product dimension that is intended to help you maintain and track multiple versions of a product throughout the supply chain. Version tracking is essential to the success of manufacturers that operate in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, and increased focus on product safety.
 
-As a standard product dimension, version will behave similarly to the existing product dimensions (size, style, color, and configuration). Therefore, you can use it for other purposes besides tracking product versions.
+As a standard product dimension, version behaves similarly to the existing product dimensions (size, style, color, and configuration). Therefore, you can use it for other purposes besides tracking product versions.
 
 ### <a name="enable-version-dim"></a>Turn on the version dimension
 
-As of Supply Chain Management version 10.0.36, the version dimension is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn on the version dimension for your system, then follow the advice and procedures in this section.
+As of Supply Chain Management version 10.0.36, the version dimension is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn on the version dimension for your system, follow the advice and procedures in this section.
 
 #### Before you turn on the version dimension
 
@@ -83,13 +83,13 @@ When you turn on the version dimension, some functionality could become broken o
 
 When you're testing your solutions for compatibility with the version dimension, look for the following elements:
 
-1. **Functionality:** Most importantly, any customizations that involve the inventory dimensions must be assessed to ensure that they can work with the version dimension.
+1. **Functionality:** Most importantly, any customizations that involve the inventory dimensions must be assessed to ensure that they work with the version dimension.
 1. **References to the inventory dimensions:** Look out for references to the inventory dimensions (that is, places where the dimensions are explicitly referenced). References to `InventDimId` should work out of the box, but look out for references to style or color. For example, be sure to check the following elements:
 
     - API calls in extended classes
     - All references to specific inventory dimensions in extension code (This code must float the version dimension together with the style, color, and size dimensions.)
 
-1. **References to obsolete API calls:** In its introduction of the version dimension, Microsoft has tried to make as few APIs as possible obsolete. The few APIs that have been made obsolete will issue a warning when you turn on the **Product dimension - version** configuration key. Calls to those APIs must be fixed in your extended solutions before you turn on the version dimension in a production system. Here are the version-specific obsolete APIs:
+1. **References to obsolete API calls:** In its introduction of the version dimension, Microsoft has tried to make as few APIs as possible obsolete. The few APIs that are made obsolete issue a warning when you turn on the **Product dimension - version** configuration key. Calls to those APIs must be fixed in your extended solutions before you turn on the version dimension in a production system. Here are the version-specific obsolete APIs:
 
     - `RetailTransactionServiceInventory::getProductRecordId`
     - `EcoResProductNumberIdentifiedProductVariantEntity::find`
@@ -97,14 +97,14 @@ When you're testing your solutions for compatibility with the version dimension,
     - `PCVariantConfiguration::findByProductMasterAndDimensions`
 
 1. **Maps:** If any maps use the inventory dimensions, the corresponding relation mapping to these maps must be updated so that they include the version dimension. In the extended model or table extensions, look out for tables where the fields include inventory dimensions.
-1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the Point of Sale (POS) or e-commerce applications. These Commerce-specific applications don't support users selling/shipping or returning/receiving inventory by version dimension. Inventory availability lookup functions won't discern inventory by version dimension in Commerce apps. This behavior resembles the current behavior of the config dimension throughout Commerce.
+1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension appears throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the Point of Sale (POS) or e-commerce applications. These Commerce-specific applications don't support users selling/shipping or returning/receiving inventory by version dimension. Inventory availability lookup functions don't discern inventory by version dimension in Commerce apps. This behavior resembles the current behavior of the config dimension throughout Commerce.
 
 #### Turn on the version dimension configuration key
 
-Before you can use the version dimension, its configuration key must be turned on for your system. As of Supply Chain Management version 10.0.36, the key is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn the version dimension on or off, follow these steps: This task requires admin permissions.
+Before you can use the version dimension, its configuration key must be turned on for your system. As of Supply Chain Management version 10.0.36, the key is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn the version dimension on or off, follow these steps. This task requires admin permissions.
 
 1. Put your system into [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Go to **System administration \> Setup \> License configuration**.
+1. Go to **System administration > Setup > License configuration**.
 1. On the **Configuration keys** tab, expand **Trade**, and select the check box for **Product dimension - Version**.
 1. Turn off [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
@@ -118,7 +118,7 @@ The following areas don't support the version dimension (you can still use these
 - Vendor catalogs
 - EcoResProductDimensionGroupEntity
 
-In addition, the order creation and order processing features in Commerce (for example, for POS, call center, and e-commerce orders) don't support the version dimension. There's no confirmed timeline as to when Commerce orders will be enhanced to support it.
+In addition, the order creation and order processing features in Commerce (for example, for POS, call center, and e-commerce orders) don't support the version dimension. There's no confirmed timeline for support in Commerce orders.
 
 ### Functional characteristics of the version dimension
 
@@ -130,7 +130,7 @@ The version dimension works like the other product dimensions. However, because 
 
 - **Product variant suggestions work as they currently do.**
 
-    Product variant suggestions will create suggestions for all version dimension values, just as they do for other dimensions. The process of creating and releasing versioned products is the same as it is for products that use other dimensions. When you create a versioned product, the first version (V1) will be created as a product dimension, and the variants will be released. As the product changes and a new version is needed, the new version value (V2) will be added, and the required variants will be released. There's no expectation  that all the versions (V1, V2, and V3) will be created in advance for the product.
+    Product variant suggestions create suggestions for all version dimension values, just as they do for other dimensions. The process of creating and releasing versioned products is the same as it is for products that use other dimensions. When you create a versioned product, the first version (V1) is created as a product dimension, and the variants are released. As the product changes and a new version is needed, the new version value (V2) is added, and the required variants are released. There's no expectation that all the versions (V1, V2, and V3) are created in advance for the product.
 
 > [!IMPORTANT]
 > If you turn on and use the version dimension, some solutions that reference the inventory dimensions might stop working as expected. To confirm and fix these issues, contact the independent software vendor (ISV) for your affected solutions. Learn more in [Enable the version dimension](#enable-version-dim).

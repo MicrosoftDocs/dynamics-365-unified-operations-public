@@ -4,7 +4,7 @@ description: Learn how you can use inventory statuses to categorize and keep tra
 author: banluo-ms
 ms.author: banluo
 ms.topic: how-to
-ms.date: 4/21/2026
+ms.date: 04/21/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac

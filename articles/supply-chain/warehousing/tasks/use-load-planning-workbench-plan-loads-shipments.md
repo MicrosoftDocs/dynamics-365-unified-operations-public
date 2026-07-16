@@ -4,7 +4,7 @@ description: Learn how to use the outbound load planning workbench to create a l
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/18/2026
+ms.date: 05/18/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac

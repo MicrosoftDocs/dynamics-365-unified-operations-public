@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 ms.topic: how-to
-ms.date: 5/20/2026
+ms.date: 05/20/2026
 ms.custom: 
   - bap-template
 ---

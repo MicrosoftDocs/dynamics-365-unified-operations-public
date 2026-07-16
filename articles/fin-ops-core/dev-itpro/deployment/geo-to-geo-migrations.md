@@ -13,6 +13,8 @@ ms.reviewer: johnmichalak
 # Geo to geo migration overview
 
 [!include[banner](../includes/banner.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 To support data residency, Microsoft Dynamics 365 finance and operations apps and Microsoft Dynamics Lifecycle Services are generally available in specific geographies. You can migrate your workload from one geography to another. This article provides an overview of the process and the considerations.
 

@@ -3,7 +3,7 @@ title: Construction Industry Scheme for the United Kingdom
 description: Learn about functionality in Microsoft Dynamics 365 Finance that supports the requirements from these regulations with an outline on CIS deductions.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 05/12/2026

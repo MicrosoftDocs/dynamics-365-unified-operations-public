@@ -3,7 +3,7 @@ title: Fixed assets (Russia)
 description: Learn how to manage fixed assets for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 05/12/2026

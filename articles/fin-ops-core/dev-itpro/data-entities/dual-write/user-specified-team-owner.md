@@ -3,7 +3,7 @@ title: User-specified team owner
 description: Learn how to set a user-specified team owner and how to view the owning team after initial sync instead of using the default team owner.  
 author: nhelgren
 ms.author: nhelgren
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 04/26/2021

@@ -3,7 +3,7 @@ title: Manage errors in dual-write async in finance and operations apps (preview
 description: Learn how to set up error handling and manage errors in dual-write async in Microsoft Dynamics 365 finance and operations apps.
 author: pnghub
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/15/2026
 ms.reviewer: twheeloc
 ms.custom: 

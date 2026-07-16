@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: faq
 ms.custom: 
   - bap-template
-ms.date: 03/18/2026
+ms.date: 06/25/2026
 ms.reviewer: johnmichalak
 ---
 
@@ -25,6 +25,8 @@ You can create and maintain a tax setup in the Tax calculation feature in Global
 ## Do you have any plans to support Russia, Brazil, and India?
 
 Microsoft doesn't currently plan to support Russia, Brazil, or India. For more information about country/region support, see [Release plans on Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/).
+
+Brazil tax reform taxes are supported with Tax calculation, details: [Tax Reform Overview](/dynamics365/finance/localizations/brazil/brazil-reform-overview).
 
 ## What is the recommendation for global implementations that involve countries or regions such as India? Can I use the Goods and Services Tax (GST) engine that Microsoft provides and the Tax Calculation on the same instance of Dynamics 365 Finance or Dynamics 365 Supply Chain Management, or do I have to have separate instances?
 

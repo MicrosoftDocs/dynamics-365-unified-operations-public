@@ -3,7 +3,7 @@ title: Purchases of fixed assets
 description: Learn about purchases of fixed assets, including step-by-step processes for validating tax detials and financial entries.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/30/2026
 ms.custom:
 ms.reviewer: johnmichalak

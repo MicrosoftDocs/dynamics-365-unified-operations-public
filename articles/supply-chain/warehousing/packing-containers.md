@@ -4,7 +4,7 @@ description: Learn about the packing process that lets you validate inventory it
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 4/22/2026
+ms.date: 04/22/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac

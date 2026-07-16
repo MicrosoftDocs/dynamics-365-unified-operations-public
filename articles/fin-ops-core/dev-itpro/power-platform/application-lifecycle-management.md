@@ -3,7 +3,7 @@ title: Application lifecycle management for solutions that use virtual entities
 description: Learn about the application lifecycle for solutions that use virtual entities for finance and operations, including an overview on solution management.
 author: Sunil-Garg
 ms.author: sunilg
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/16/2026
 ms.custom: NotInToc
 ms.reviewer: johnmichalak

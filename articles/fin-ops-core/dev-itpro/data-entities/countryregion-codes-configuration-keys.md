@@ -3,7 +3,7 @@ title: Country/region codes and configuration keys
 description: Learn about scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 02/26/2026

@@ -28749,6 +28749,21 @@
       "source_path": "articles/commerce/localizations/mea/emea-sau-qr-code.md",
       "redirect_url": "/dynamics365/commerce/localizations/mea/emea-sau-simplified-e-invoices",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/dev-itpro/emea-nor-fi-migration.md",
+      "redirect_url": "/dynamics365/commerce/localizations/dev-itpro/emea-nor-fi-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/europe/emea-eeu-deployment.md",
+      "redirect_url": "/dynamics365/commerce/localizations/europe/emea-eeu-advance-invoices-for-retail",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/france/emea-fra-fi-deployment.md",
+      "redirect_url": "/dynamics365/commerce/localizations/france/emea-fra-cash-registers",
+      "redirect_document_id": false
     }
   ]
 

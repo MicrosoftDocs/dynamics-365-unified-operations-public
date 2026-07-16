@@ -4,7 +4,7 @@ description: Learn how organizations in the public sector can use advanced ledge
 author: v-kiarnd
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 06/15/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -26,18 +26,15 @@ This article explains how organizations in the public sector can use advanced le
 Verify that the **Advanced ledger entry** **License configuration** key is selected in the **License configuration** page. Advanced ledger entries require General ledger posting definitions. These posting definitions can be set up to generate multiple, balanced ledger entries based on the ledger account entered in the **Advanced ledger entries** page. For more information about posting definitions for advanced ledger entries, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
 ## Can I use budget control with advanced ledger entries?
+
 Yes. If your organization uses budget control, you can enable budget control for advanced ledger entries on the **Budget control configuration** page.
 
 ## Can I use advanced ledger entries with projects?
-Yes. If you want users to be able to change the financial dimensions for a project on the advanced ledger entry line, you’ll need to select the **Allow the financial dimensions to be edited on the advanced ledger entry form** option on the **General ledger parameters** page. If you don’t select this option, users can change the financial dimensions in the **Ledger account** field only if the financial dimensions are not the default financial dimensions for a project.
+
+Yes. If you want users to change the financial dimensions for a project on the advanced ledger entry line, select the **Allow the financial dimensions to be edited on the advanced ledger entry form** option on the **General ledger parameters** page. If you don't select this option, users can change the financial dimensions in the **Ledger account** field only if the financial dimensions aren't the default financial dimensions for a project.
 
 ## How do I use advanced ledger entries to record year-end accrual entries?
-Create an advanced ledger entry, select the **Reversing entry** option, and enter a reversing date. The reversing advanced ledger entry is created when the advanced ledger entry is posted. The reversing advanced ledger entry will have a new transaction number and a draft status. The reversing date will be used as the accounting date and the debit or credit amount on each line of the original entry will be reversed. The same posting definition will be used. The transaction text for the header and lines will contain the words “Reversing entry from,” the transaction number of the original advanced ledger entry, and the transaction text of the original advanced ledger entry.
 
-
-
-
-
-
+Create an advanced ledger entry, select the **Reversing entry** option, and enter a reversing date. The reversing advanced ledger entry is created when the advanced ledger entry is posted. The reversing advanced ledger entry has a new transaction number and a draft status. The reversing date is used as the accounting date and the debit or credit amount on each line of the original entry will be reversed. The same posting definition is used. The transaction text for the header and lines contain the words “Reversing entry from,” the transaction number of the original advanced ledger entry, and the transaction text of the original advanced ledger entry.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

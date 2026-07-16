@@ -4,7 +4,7 @@ description: Learn how to create a price structure for pricing at the macro leve
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
-ms.date: 5/18/2026
+ms.date: 05/18/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeGroup

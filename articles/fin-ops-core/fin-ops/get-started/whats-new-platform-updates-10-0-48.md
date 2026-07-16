@@ -4,7 +4,7 @@ description: This article lists the features and enhancements that are included 
 author: johnmichalak
 ms.author: johnmichalak
 ms.reviewer: johnmichalak
-ms.date: 04/24/2026
+ms.date: 07/06/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -48,7 +48,7 @@ This section has a table that lists enhancements included in this release when a
 
 ### Bug fixes
 
-To see bug fixes in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=nnnnnn).
+To see bug fixes in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1125352).
 
 ### Dynamics 365: 2026 release wave 1 plan
 

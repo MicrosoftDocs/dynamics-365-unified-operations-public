@@ -4,7 +4,7 @@ description: Learnhow to configure product filters and filter codes to categoriz
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/29/2026
+ms.date: 05/29/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended,WHSFilterGenerallyAvail

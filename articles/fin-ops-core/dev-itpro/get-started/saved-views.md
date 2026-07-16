@@ -3,7 +3,7 @@ title: Saved views
 description: Learn about how to use the saved views features, including overviews on switching between views, changing default views, and creating and modifying views.
 author: jasongre
 ms.author: jasongre
-ms.topic: how-to
+ms.topic: concept-article
 ms.date: 03/26/2026
 ms.reviewer: twheeloc
 ms.search.region: Global

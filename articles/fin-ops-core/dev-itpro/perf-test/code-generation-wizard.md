@@ -3,7 +3,7 @@ title: Acceptance test library Code generation wizard
 description: Learn about the Code generation wizard for the Acceptance test library, including a step-by-step process on how to create the AtIEntity class using the wizard.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/16/2026
 ms.custom: 
 ms.reviewer: johnmichalak

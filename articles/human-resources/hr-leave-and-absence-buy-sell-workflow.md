@@ -4,7 +4,7 @@
 title: Create a buy and sell leave request workflow
 description: Create a buy and sell leave request workflow to manage to buy and sell leave requests consistently in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/09/2024
+ms.date: 06/25/2026
 ms.topic: how-to
 # optional metadata
 
@@ -37,17 +37,17 @@ You can create a workflow in Dynamics 365 Human Resources to consistently manage
 
 1. On the **Leave and absence** page, select the **Links** tab.
 
-2. Under **Setup**, select **Human resource workflows**.
+1. Under **Setup**, select **Human resource workflows**.
 
-3. Select **New**, and then select **Buy and sell leave request**. 
+1. Select **New**, and then select **Buy and sell leave request**.
 
-4. When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.
+1. When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.
 
-5. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=%2fdynamics365%2fcommerce%2ftoc.json.)
+1. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=%2fdynamics365%2fcommerce%2ftoc.json).
 
 ## Leave and absence request workflow data elements
 
-You can use the following data elements to create conditional or automatic approvals in workflows for buy and sell leave requests:
+Use the following data elements to create conditional or automatic approvals in workflows for buy and sell leave requests:
 
 - **Amount**
 - **Buy and sell leave policy**
@@ -60,7 +60,7 @@ You can use the following data elements to create conditional or automatic appro
 - **Modified date and time**
 - **Request ID**
 - **Start date**
-- **Status** 
+- **Status**
 - **Submission date**
 - **Submitted by**
 - **Submitted by Human resources**
@@ -81,7 +81,5 @@ These examples show how you can create different types of workflow conditions by
 [Leave and absence overview](hr-leave-and-absence-overview.md)<br>
 [Manage buy and sell leave policies](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)<br>
 [Buy and sell leave](hr-employee-self-service-buy-sell-leave.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

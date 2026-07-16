@@ -4,7 +4,7 @@ description: Learn how to work with Electronic invoicing for France in Microsoft
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 05/21/2026
+ms.date: 07/10/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -24,17 +24,19 @@ Watch the overview of the French electronic invoicing implementation in Finance.
 
 > [!VIDEO 45223d9e-5e49-42dc-895c-7d9ccb08b17a]
 
-## Prerequisites
+## System configuration
 
-Before you start, make sure these prerequisites are in place:
+> [!NOTE]
+> You can also find all the configuration steps described in the next chapters in the [tutorial video](#Tutorial) in the **Appendix** section.
+
+### Prerequisites
+
+Before you start, make sure you have the following prerequisites:
 
 - The company is a registered taxpayer in France.
 - The company has a signed agreement with the selected Approved Platform and obtained the credentials required for establishing a secure connection to the Approved Platform's infrastructure.
   > [!NOTE]
   > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Approved Platform (PA). For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
-  >
-  > Watch the overview of the Edicom credentials configuration in Finance. More details are provided in the [next](#EdCred) chapters.
-  > [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
 
 - Install the **Electronic invoicing add-in** as described in [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
 - Activate **Electronic invoicing integration** with Finance or Supply Chain Management as described in [Enable Electronic invoicing integration](../global/gs-e-invoicing-set-up-overview.md#enable-electronic-invoicing-integration).
@@ -111,7 +113,7 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 1. On the **Versions** tab, check that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify these required **Edicom** connection and integration parameters:
 
-    - **Domain** – Use the domain number (can be also referred as **Service ID**) from Edicom to identify the company.
+    - **Domain** – Use the domain number (can be also referred to as **Service ID**) from Edicom to identify the company.
     - **Group** – Use the group code for internal routing within the Edicom infrastructure.
     - **Destination** – Construct the destination by appending **_EDIWIN** to the Domain/Service ID number. For example, if the Domain number is **123456**, enter **123456_EDIWIN**.
     - **Token** – Select the name of the [token](#Tok) you created earlier.
@@ -453,7 +455,7 @@ Set up units of measure.
 
 1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit ID, and then select **External codes**.
-1. On the **External codes** page, in **Overview**, enter the unit ID in the **Code** column.
+1. On **External codes**, in **Overview**, enter the unit ID in the **Code** column.
 1. Select the checkbox in the **Standard code** column.
 1. In the **Value** section, enter the external code from the [UNECE Recommendation 20 code list](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) in the **Value** field.
 
@@ -675,6 +677,11 @@ The following configurable electronic document properties are used during the ge
 | **#AAB#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment terms.|
 | **#ADN#** | Customers | Optional note prefix determining buyers for B2G communication.|
 | **ElectronicAddressSuffix** | Legal entities | If you set any non-empty value for this parameter, the Buyer's electronic address is constructed as **SIREN_SIRET_BranchID**. Otherwise, only the Branch ID is used as the whole electronic address. |
+
+### <a id="Tutorial"></a>Configuration tutorial video
+
+Watch the tutorial video about the configuration of Frecn electronic invoicing in Dynamics 365 Finance. 
+> [!VIDEO 848427f7-6557-451b-9e80-0d8cf891aea9]
 
 ## More information
 

@@ -4,7 +4,7 @@ description: Learn how organizations in the public sector can prepare to import 
 author: v-kiarnd
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 06/19/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -18,15 +18,15 @@ ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to prepare to import and create multiple one-time vendors and invoices. 
+This article explains how to prepare to import and create multiple one-time vendors and invoices.
 
 Typically, if you plan to mass-import vendor and invoice information, you first create a data file in spreadsheet format and save it in CSV (comma-separated values) format.
 
--   Because commas are used to separate the fields in a CSV file, don't use commas in the text of an entry. For example, to specify a company name of “Smith, Smith, and Jones,” enter it as **Smith Smith and Jones**.
--   If you don't set values for fields on this page, the newly created vendor accounts use values from the one-time vendor profile that is referenced on the **Accounts payable parameters** page. For example, if the method of payment is set to **Check** for the one-time vendor profile on the **Accounts payable parameters** page, that method of payment will also be set for the one-time vendors that you're adding.
--   The **One-time supplier** Accounts payable number sequence is used to assign the one-time vendor accounts and must not be set to **Continuous** for this service. Invoices are generated in a draft state. Before you create payment proposals for payment, you must post the invoices.
+- Because commas separate the fields in a CSV file, don't use commas in the text of an entry. For example, to specify a company name of "Smith, Smith, and Jones," enter it as **Smith Smith and Jones**.
+- If you don't set values for fields on this page, the newly created vendor accounts use values from the one-time vendor profile that is referenced on the **Accounts payable parameters** page. For example, if the method of payment is set to **Check** for the one-time vendor profile on the **Accounts payable parameters** page, that method of payment is also set for the one-time vendors that you're adding.
+- The **One-time supplier** Accounts payable number sequence assigns the one-time vendor accounts and must not be set to **Continuous** for this service. Invoices are generated in a draft state. Before you create payment proposals for payment, you must post the invoices.
 
-The following table show the fields that the import file must contain. Each field label is equivalent to a column heading in a spreadsheet, and each spreadsheet row contains the data for each applicable column.
+The following table shows the fields that the import file must contain. Each field label is equivalent to a column heading in a spreadsheet, and each spreadsheet row contains the data for each applicable column.
 
 **Vendor section**
 
@@ -44,14 +44,12 @@ The following table show the fields that the import file must contain. Each fiel
 | City                                           |                                                         |
 | City                                           |                                                         |
 |Federal tax ID (Optional)                       | (U.S. only) 1099 number                                 |
-| Tax ID type                                    | (U.S. only) Values can be **Unknown**, **Employer Identification Number**, **Social Security Number**, **Individual Taxpayer Identification Number**, or **Adopted Tax Payer Identification Number**.  **Note:** If no federal tax ID is provided, this field should be set to **Unknown**.                                               |
+| Tax ID type                                    | (U.S. only) Values can be **Unknown**, **Employer Identification Number**, **Social Security Number**, **Individual Taxpayer Identification Number**, or **Adopted Tax Payer Identification Number**.  **Note:** If no federal tax ID is provided, set this field to **Unknown**.                                               |
 | Bank account (Optional)                        | Bank account name                                       |
 | Bank account number                            |                                                         |
 | Routing number (Optional)                      |                                                         |
 | SWIFT code (Optional)                          | Also known as BIC (Bank identifier code)                |
 |IBAN (Optional)                                 | International bank account number, 34-character limit   |
-
-
 
 **Invoice section**
 
@@ -72,29 +70,22 @@ The following table show the fields that the import file must contain. Each fiel
 |Line net amount                                       | Decimal values are allowed.                       |
 | Unit price (Optional)                                | Decimal values are allowed.                       |
 
-
 **Distributions section**
 
 | Field                                                | Details                                  |
 |------------------------------------------------------|------------------------------------------|
 | Number                                               | Accounting distribution line number      |
-| Financial dimensions                                 | If the file you import has financial dimensions, you need to include all of the financial dimensions with the proper naming, otherwise an error message will appear stating that the ledger dimension is invalid. You’ll then need to either correct the financial dimensions or remove the columns from the file.                                         |
+| Financial dimensions                                 | If the file you import has financial dimensions, include all of the financial dimensions with the proper naming. Otherwise, an error message appears stating that the ledger dimension is invalid. You need to either correct the financial dimensions or remove the columns from the file.                                         |
 | Percent                                              | Decimal values are allowed.              |
 
-
-
-
 ## What do I do next?
-After you’ve set up the prerequisites that you require, see [One-time vendors in the public sector](one-time-vendors-public-sector.md).
+
+After you set up the prerequisites that you require, see [One-time vendors in the public sector](one-time-vendors-public-sector.md).
 
 ## Additional resources
 
 [One-time vendors in the public sector](one-time-vendors-public-sector.md)
 
 [Accounts payable in the public sector overview](accounts-payable-public-sector.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

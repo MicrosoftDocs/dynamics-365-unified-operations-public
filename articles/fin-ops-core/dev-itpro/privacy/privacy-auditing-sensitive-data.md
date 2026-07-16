@@ -3,7 +3,7 @@ title: Manage access to sensitive data
 description: Learn about the user log functionality, including overviews on sensitive data, language-specific information, and log retention.
 author: ToddLefor
 ms.author: tlefor
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 audience: Developer

@@ -4,7 +4,7 @@ description: Access an overview of the Supply risk assessment workspace, which h
 author: ShriramSivasankaran
 ms.author: shriramsiv
 ms.topic: overview 
-ms.date: 5/4/2026
+ms.date: 05/04/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: 

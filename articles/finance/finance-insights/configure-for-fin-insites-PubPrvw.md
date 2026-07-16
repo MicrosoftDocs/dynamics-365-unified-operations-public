@@ -1,11 +1,11 @@
 ---
-title: Configuration for Finance insights - version 10.0.20 and later
-description: Learn how to configure your system to use the capabilities that are available in Finance insights in version 10.0.20 and later.
+title: Configuration for Finance insights 
+description: Learn how to configure your system to use the capabilities that are available in Finance insights 
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: article
-ms.date: 06/16/2021
-ms.reviewer: kfend
+ms.date: 06/23/2026
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-06-03
@@ -14,25 +14,20 @@ ms.dyn365.ops.version: AX 10.0.20
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
-# Configuration for Finance insights - version 10.0.20 and later
+# Configuration for Finance insights
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
-
-
-Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This article explains how to configure Dynamics 365 Finance version 10.0.20 so that your system can use the capabilities that are available in Finance insights.
-
-> [!NOTE]
-> The configuration steps that are described in this article apply only to Finance version 10.0.20 and later. 'To set up Finance insights on version 10.0.19 and earlier, see [Configuration for Finance insights - versions up to 10.0.19](configure-for-fin-insites.md).
+Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This article explains how to configure Dynamics 365 Finance so that your system can use the capabilities that are available in Finance insights.
 
 ## Deploy Finance
 
 Follow these steps to deploy the environments.
 
-1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Finance environment. The environment requires app version 10.0.20 or later of finance and operations apps.
-2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](/dynamics365/fin-ops-core/dev-itpro/organization-administration/environment-planning). 
-3. If you are configuring Finance insights in a Sandbox environment, you might need to copy production data to that environment for predictions to work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn’t contain enough historical data to train the prediction model adequately. 
+1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Finance environment.
+1. The environment must be a high-availability (HA) environment in Sandbox. This type of environment is also known as a Tier-2 environment. For more information, see [Environment planning](/dynamics365/fin-ops-core/dev-itpro/organization-administration/environment-planning).
+1. If you're configuring Finance insights in a Sandbox environment, you might need to copy production data to that environment for predictions to work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn't contain enough historical data to train the prediction model adequately.
 
 ## Configure Dataverse
 
@@ -40,14 +35,14 @@ Follow these steps to configure Dataverse for Finance insights.
 
 1. In LCS, open the environment page, and verify that the **Power Platform Integration** section is already set up.
 
-    - If it's already set up, the Dataverse environment name that is linked to the Finance environment should be listed.
+    - If it's already set up, the Dataverse environment name that is linked to the Finance environment appears.
     - If it isn't yet set up, follow these steps:
 
         1. In the **Power Platform Integration** section, select **Setup**. Setup of the environment might take up to an hour.
-        2. If the Dataverse environment is successfully set up, the Dataverse environment name that is linked to the Finance environment should be listed.
+        1. If the Dataverse environment is successfully set up, the Dataverse environment name that is linked to the Finance environment appears.
 
         > [!NOTE]
-        > After you complete the environment setup, do **not** select **Link to CDS for Apps**. This button isn't required for Finance insights. If you select it, you won't be able to configure the required environment add-ins in LCS.
+        > After you complete the environment setup, don't select **Link to CDS for Apps**. This button isn't required for Finance insights. If you select it, you won't be able to configure the required environment add-ins in LCS.
 
 ## Configure Azure
 
@@ -55,7 +50,7 @@ Follow these steps to configure Dataverse for Finance insights.
 
 # [Use a Windows PowerShell script](#tab/use-a-powershell-script)
 
-A Windows PowerShell script has been provided so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). If you prefer to do the setup manually, skip this procedure, and complete the procedure in the [Manual setup](#manual-setup) section instead.
+A Windows PowerShell script is provided so that you can easily set up the Azure resources described in [Configure export to Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-export-data-lake.md). If you prefer to do the setup manually, skip this procedure, and complete the procedure in the [Manual setup](#manual-setup) section instead.
 
 > [!NOTE]
 > Use the following procedure to run the Windows PowerShell script. The setup might not work if you use the **Try it** option in Azure CLI or if you run the script on your computer.
@@ -63,24 +58,24 @@ A Windows PowerShell script has been provided so that you can easily set up the 
 Follow these steps to use the Windows PowerShell script to configure Azure. You must have rights to create an Azure resource group, Azure resources, and a Microsoft Entra application. For information about the required permissions, see [Check Microsoft Entra permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 1. In the [Azure portal](https://portal.azure.com), go to your target Azure subscription.
-2. Select **Cloud Shell** to the right of the **Search** field.
-3. Select **PowerShell**.
-4. Create storage if you're prompted to create it.
-5. On the **Azure CLI** tab, select **Copy**.
-6. In Notepad, open a new file, and paste in the Windows PowerShell script.
-7. Save the file as **ConfigureDataLake.ps1**.
-8. Upload the Windows PowerShell script to the session by using the menu option for upload in Cloud Shell.
-9. Run the **.\ConfigureDataLake.ps1** script.
-10. Follow the prompts to run the script.
-11. Use the information from the script output to install the Export to Data Lake add-in in LCS.
+1. Select **Cloud Shell** to the right of the **Search** field.
+1. Select **PowerShell**.
+1. Create storage if you're prompted to create it.
+1. On the **Azure CLI** tab, select **Copy**.
+1. In Notepad, open a new file, and paste in the Windows PowerShell script.
+1. Save the file as **ConfigureDataLake.ps1**.
+1. Upload the Windows PowerShell script to the session by using the menu option for upload in Cloud Shell.
+1. Run the **.\ConfigureDataLake.ps1** script.
+1. Follow the prompts to run the script.
+1. Use the information from the script output to install the Export to Data Lake add-in in LCS.
 
 ### Manual setup
 
 #### Add applications to the Microsoft Entra tenant
 
 1. In the [Azure portal](https://portal.azure.com), go to **Microsoft Entra ID**.
-2. Select **Manage \> Enterprise applications**.
-3. Search for the following applications by app ID.
+1. Select **Manage** > **Enterprise applications**.
+1. Search for the following applications by app ID.
 
     | Application                              | App ID                               |
     |------------------------------------------|--------------------------------------|
@@ -91,14 +86,14 @@ Follow these steps to use the Windows PowerShell script to configure Azure. You 
 If you can't find any of the preceding applications, try the following steps.
 
 1. On your local computer, on the **Start** menu, search for **powershell**.
-2. Select and hold (or right-click) **Windows PowerShell**, and then select **Run as administrator**.
-3. Run the following command to install the **AzureAD** module.
+1. Select and hold (or right-click) **Windows PowerShell**, and then select **Run as administrator**.
+1. Run the following command to install the **AzureAD** module.
 
     `Install-Module -Name AzureAD`
 
-4. If a NuGet provider is required to continue, select **Y** to install it.
-5. If you receive an "Untrusted repository" message, select **Y** to continue.
-6. For each application that must be added, run the following commands to add the application to Microsoft Entra ID. When you're prompted, sign in as the Microsoft Entra administrator.
+1. If a NuGet provider is required to continue, select **Y** to install it.
+1. If you receive an "Untrusted repository" message, select **Y** to continue.
+1. For each application that you must add, run the following commands to add the application to Microsoft Entra ID. When you're prompted, sign in as the Microsoft Entra administrator.
 
     `Connect-AzureAD`
 
@@ -112,34 +107,34 @@ If you can't find any of the preceding applications, try the following steps.
 1. Create a storage account:
 
     1. In the [Azure portal](https://portal.azure.com), create a storage account.
-    2. In the **Create storage account** dialog box, set the following fields:
+    1. In the **Create storage account** dialog box, set the following fields:
 
         - **Location** – Select the data center where your environment is located.
         - **Performance** – We recommend that you select **Standard**.
         - **Account kind** – You must select **StorageV2**.
 
-    3. In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature. If you don't enable this feature, you can't consume data that finance and operations apps write by using services such as Power BI data flows.
-    4. Select **Review and create**. When the deployment is completed, the new resource is shown in the Azure portal.
-    5. Go to the storage account that you created.
-    6. On the left menu, select **Access keys**.
-    7. Copy and save the name of the storage account. You will have to provide this value later, when you set up key vault secrets.
+    1. In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature. If you don't enable this feature, you can't consume data that finance and operations apps write by using services such as Power BI data flows.
+    1. Select **Review and create**. When the deployment is completed, the new resource is shown in the Azure portal.
+    1. Go to the storage account that you created.
+    1. On the left menu, select **Access keys**.
+    1. Copy and save the name of the storage account. You need this value later when you set up key vault secrets.
 
-2. Create a key vault:
+1. Create a key vault:
 
     1. In the [Azure portal](https://portal.azure.com), create a key vault.
-    2. In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.
-    3. After key vault is created, go to **Key Vault Overview**, and copy and save the DNS name. You will have to provide this value later, when you set up the Data Lake add-in.
+    1. In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.
+    1. After the key vault is created, go to **Key Vault Overview**, and copy and save the DNS name. You need this value later when you set up the Data Lake add-in.
 
-3. Create and register a Microsoft Entra application:
+1. Create and register a Microsoft Entra application:
 
     1. In the [Azure portal](https://portal.azure.com), go to **Microsoft Entra**, and then select **App registrations**.
-    2. Select **New application registration**, and set the following fields:
+    1. Select **New application registration**, and set the following fields:
 
         - **Name** – Enter the name of the app.
         - **Application type** – Select **Web API**.
         - **Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as `https://yourdynamicsinstance.dynamics.com/auth`.
 
-    3. Go to the app that you just created, and copy and save its **Application (client) ID** value. You will have to provide this value later, when you set up key vault secrets.
+    3. Go to the app that you created, and copy and save its **Application (client) ID** value. You need this value later when you set up key vault secrets.
     4. Go to **API permissions**, and follow these steps:
 
         1. Select **Add a permission**.
@@ -152,7 +147,7 @@ If you can't find any of the preceding applications, try the following steps.
         1. Select **New client secret**.
         2. In the **Key Description** field, enter a name.
         3. Select a duration, and then select **Add**. A secret is generated in the **Value** field.
-        4. Copy and save the client secret value. You will have to provide this value later, when you set up key vault secrets.
+        4. Copy and save the client secret value. You need this value later when you set up key vault secrets.
 
 4. Create Key Vault secrets:
 
@@ -180,8 +175,8 @@ If you can't find any of the preceding applications, try the following steps.
         2. In the **Secret permissions** field, select the permissions from the table.
         3. In the **Select principal** field, search for the application display name from the table.
         4. Select **Select**.
-        5. Select **Add**.
-        6. Select **Save**.
+        1. Select **Add**.
+        1. Select **Save**.
 
         | Application                                              | Permissions |
         |----------------------------------------------------------|-------------|
@@ -196,9 +191,9 @@ If you can't find any of the preceding applications, try the following steps.
     4. For each application in the following table, follow these steps:
 
         1. Select the role from the table.
-        2. Leave the **Assign access to** field set to **Microsoft Entra user, group, or service principal**.
-        3. In the **Select** field, enter the application from the table.
-        4. Select **Save**.
+        1. Leave the **Assign access to** field set to **Microsoft Entra user, group, or service principal**.
+        1. In the **Select** field, enter the application from the table.
+        1. Select **Save**.
 
         | Application                                              | Role                        |
         |----------------------------------------------------------|-----------------------------|
@@ -705,28 +700,29 @@ finally {
   Stop-Transcript
 }
 ```
+
 ---
 
 ## Configure the Export to Data Lake add-in
 
 Follow these steps to use LCS to add the Export to Data Lake add-in to the environment.
 
-1. Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.
-2. In the **Environment add-ins** section, select **Install a new add-in**.
-3. Select the **Export to Data Lake** add-in.
-4. Enter the following values.
+1. Sign in to LCS. Under the environment name on the right side of the page, select **Full Details**.
+1. In the **Environment add-ins** section, select **Install a new add-in**.
+1. Select the **Export to Data Lake** add-in.
+1. Enter the following values.
 
     | Value                                                              | Description |
     |--------------------------------------------------------------------|-------------|
-    | Tenant ID of the Azure Subscription where the Key Vault is located | The tenant ID where the storage account, apps, and key vaults are located. To obtain this value, open the [Azure portal](https://portal.azure.com), go to **Microsoft Entra**, and copy the **Tenant ID** value. |
+    | Tenant ID of the Azure Subscription where the Key Vault is located | The tenant ID where the storage account, apps, and key vaults are located. To get this value, open the [Azure portal](https://portal.azure.com), go to **Microsoft Entra**, and copy the **Tenant ID** value. |
     | Provide the DNS name of your Key Vault                             | The DNS name of the key vault, such as `https://customkeyvault.vault.azure.net/`. |
     | Provide the secret that contains the name of the storage account   | **storage-account-name** |
     | Secret Name for App ID to be used for accessing Data Lake          | **app-id** |
     | Secret name for App client secret                                  | **app-secret** |
 
-5. Agree to the terms, and then select **Install**.
+1. Agree to the terms, and then select **Install**.
 
-The add-in will be installed within a few minutes.
+The add-in is installed within a few minutes.
 
 ## Configure the Finance insights add-in
 
@@ -735,10 +731,10 @@ The add-in will be installed within a few minutes.
 
 Follow these steps to install the Finance insights add-in.
 
-1. Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.
-2. In the **Environment add-ins** section, select **Install a new add-in**.
-3. Select the **Finance insights** add-in.
-4. Agree to the terms, and then select **Install**.
+1. Sign in to LCS. Under the environment name on the right side of the page, select **Full Details**.
+1. In the **Environment add-ins** section, select **Install a new add-in**.
+1. Select the **Finance insights** add-in.
+1. Agree to the terms, and then select **Install**.
 
 The add-in might take several minutes to install.
 

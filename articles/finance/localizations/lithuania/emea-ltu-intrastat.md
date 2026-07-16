@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 05/04/2026
+ms.date: 06/25/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
@@ -15,67 +15,82 @@ ms.search.region: Global
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up the Lithuanian Intrastat report in Microsoft Dynamics 365 Finance.
+This article explains how to set up and generate the Lithuanian Intrastat report in Microsoft Dynamics 365 Finance.
 
-Use the **Intrastat** page to generate and report information about trade among European Union (EU) countries and regions. The Lithuanian Intrastat declaration contains information about the trade of goods for reporting.
+Use the **Intrastat** page to generate and report information about trade among European Union (EU) countries and regions. The Lithuanian Intrastat declaration contains information about the trade of goods for reporting. It's generated as an XML file in the IDAIS (Data on the Republic of Lithuania's trade flows with EU countries collection and processing system, *Duomenų apie Lietuvos Respublikos prekybos srautus su Europos Sąjungos šalimis narėmis surinkimo ir apdorojimo sistema*) format that is defined by the `INTRASTATReportSubmission.xsd` schema.
 
-The Lithuanian Intrastat declaration includes the following fields. All the fields except **VAT number of trading partner** are included on both arrivals and dispatches. The **VAT number of trading partner** field is included only on dispatches.
+## Overview 
 
-#### Report header
+The Lithuanian Intrastat declaration is submitted as an XML message that has three logical parts: information about the **submitter** (a value-added tax [VAT] payer or a broker), optional **report preparation** data, and the **Intrastat report** itself with its lines. The following sections describe the fields in each part.
+
+### Submitter and declaration header
 
 | Field name | Description |
-|------------|-------------|
-| Reference period | The period (year and month) that the declaration applies to. |
-| Completion date and time | The date and time when the Intrastat report was created. |
-| Information about the declaration's receiver | The following information about the authorities is presented:<br>- Identification number <br>- Name <br>- Legal address <br>- Email address <br>- Fax number <br>- Web address (URL) |
-| Information about the declaration's sender | The following information about the company is presented:<br>- Value-added tax (VAT) code <br>- Legal address <br>- Phone number <br>- Email address <br>- Fax number <br> - URL |
-| Information about the contact person | The following information about the person who is submitting the declaration is presented: <br>- Name <br>- Phone number <br>- Fax number <br>- Email address |
-| Software used | Information about the software that was used to fill in the declaration. |
-| Declaration identifier | The number that a respondent gave to the Intrastat report. |
-| VAT registration number | The VAT ID of the company that is providing the statistical declaration. |
-| Function code | For an original Intrastat declaration, **O** is printed. <br> For a correction Intrastat declaration, **M** is printed. |
-| Report direction | For arrivals, **A** is printed. <br> For dispatches, **D** is printed. |
-| Currency | The company's accounting currency. |
-| Registration number of previous declaration | In the case of a correction Intrastat declaration, the Intrastat report's 11-symbol registration number at the Customs Department and the correction number. | 
-| Total invoiced amount | The sum of all items. |
+| --- | --- |
+| Submitter type | The type of party that submits the declaration. The value is **VAT_PAYER** when the VAT payer submits the declaration directly, or **BROKER** when an intermediary (a broker) submits it. The value is derived automatically: if an agent is set up on the **Agent** tab of the **Foreign trade parameters** page, the declaration is submitted as **BROKER**. Otherwise, it's submitted as **VAT_PAYER**. |
+| VAT payer – Title | The name of the legal entity, or the first name and last name of the individual, that is the VAT payer. |
+| VAT payer – VAT identifier | The VAT code (VAT registration number) of the company that provides the statistical declaration. If the company's VAT number isn't available, the tax registration number is used instead. |
+| VAT payer – Address | The VAT payer's address. The street, building, city or village, and municipality are reported together with the postal (ZIP) code. |
+| VAT payer – Contact | The VAT payer's email address and phone number. |
+| Broker – Title | The name of the broker's legal entity. This information is reported only when the submitter type is **BROKER**. |
+| Broker – Legal entity identifier (JAR) | The legal entity registration code (*juridinio asmens kodas*) of the broker. This code is the company-register number (for example, **302345678**), not the broker's VAT code (for example, **LT302345678**). This information is reported only when the submitter type is **BROKER**. |
+| Broker – Contact | The broker's email address and phone number. This information is reported only when the submitter type is **BROKER**. |
+| Reporting year | The year that the declaration applies to. |
+| Reporting month | The month that the declaration applies to. The value is a number from 1 through 12. |
+| Trade direction | The direction of trade. For arrivals, **IMPORT** is reported. For dispatches, **EXPORT** is reported. |
+| Zero trade indicator | A Boolean value that indicates that no intracommunity trade occurred in the reference period. When this value is **true**, a null (nil) declaration is submitted, and no report lines are included. |
 
-#### Report lines
+### Report preparation
 
-| Field name | Description | 
-|------------|-------------|
-| Commodity code | The commodity code according to the Combined Nomenclature (CN) classification. Set this code on the product page. |
-| Description of goods | The trade name of the commodity. |
-| Country of consignment (arrivals) / Country of destination (dispatches) | The International Organization for Standardization (ISO) code of the country or region of the counterparty. |
-| Country/region of origin | The ISO code of the country or region where the goods were produced. |
-| Net mass | The quantity of goods in net mass. The last three symbols are the digits after the decimal point. |
-| Quantity of supplementary goods | For some commodities, you must report the supplementary unit. The unit itself (for example, **pairs** or **dozens**) isn't reported. | 
-| Invoice amount | The invoice value. You can view the invoice value in the Invoice amount field in the Intrastat journal. |
-| Statistical amount | The statistical value. You can view the statistical value in the Statistical value field in the Intrastat journal. |
-| VAT number of trading partner | The customer's foreign VAT number in an EU member state. |
-| Nature of transaction | The transaction code. |
-| Mode of transport | The code for the mode of transport. |
-| Delivery terms | The code for the terms of delivery of goods. |
-| Region | The Intrastat code for the company's region. |
+The report preparation block is optional. It provides additional information about who prepared the declaration and how much time the preparation took.
 
-#### Report footer
+| Field name | Description |
+| --- | --- |
+| VAT payer document registration | The registration date and registration number that the VAT payer assigns to the declaration. The registration number is the number that the VAT payer gives to the report (for example, **INTRA-2026-06**), which you enter in the **Declaration identifier** field when you generate the report. It isn't the VAT number. The registration date is set to the current date. This block is reported only when you enter a declaration identifier. |
+| Responsible person – Name | The first name and last name of the responsible person who prepared the declaration. This person is the head of the company or an authorized representative. |
+| Responsible person – Contact | The email address and phone number of the responsible person. |
+| Preparation time (hours) | The number of hours that it took to prepare the declaration. The value is from 0 through 99. According to the authority requirements, this information is mandatory once a year, in September. |
+| Preparation time (minutes) | The number of minutes that it took to prepare the declaration. The value is from 0 through 59. |
 
-| Field name | Description | 
-|------------|-------------|
-| Total number of detailed lines | The total number of detailed lines in the Intrastat declaration. |
+### Report lines
 
-## Set up Intrastat
+Each report line represents a commodity item. The system excludes lines when you set the **Zero trade indicator** field to **true**.
 
-From the Global repository, import the latest version of the following Electronic reporting (ER) configurations:
+| Field name | Description |
+| --- | --- |
+| Report item number | The sequential number of the line in the declaration. |
+| Combined Nomenclature code | The eight-character commodity code according to the Combined Nomenclature (CN) classification. Set this code on the product page. |
+| Partner identifier | The trading partner's VAT identifier in the EU member state. Report this field only for dispatches (EXPORT). Don't report it for arrivals (IMPORT). If the partner isn't VAT-registered, or the VAT number is unknown, report the value **QV999999999999**. |
+| Country of dispatch or destination code | The two-character International Organization for Standardization (ISO) code of the country or region of the counterparty. For arrivals, it's the country of consignment. For dispatches, it's the country of destination. |
+| Country of origin code | The two-character ISO code of the country or region where the goods were produced. |
+| Region code | The one-character county code for the company's region. This code is required for dispatches (EXPORT) only when the country of origin of the goods is Lithuania. Otherwise, it's left empty. |
+| Nature of transaction code | The transaction code. |
+| Delivery terms code | The code for the terms of delivery of goods. |
+| Mode of transport code | The code for the mode of transport. |
+| Net mass | The net mass of the goods in kilograms. The value is a decimal number that has up to three decimal places (for example, **125.500**). |
+| Quantity in supplementary unit of measure | For some commodities, you must report the quantity in a supplementary unit. The value is a decimal number that has up to three decimal places. |
+| Supplementary unit of measure code | The code of the supplementary unit of measure that the quantity is expressed in. |
+| Invoiced amount | The invoice value. You can view the invoice value in the **Invoice amount** field in the Intrastat journal. |
+| Statistical value | The statistical value. You can view the statistical value in the **Statistical value** field in the Intrastat journal. |
+
+## System preparation
+
+### Set up ER configurations for Intrastat
+
+Import the latest version of the following Electronic reporting (ER) configurations from Dataverse:
 
 - Intrastat model
 - Intrastat report
-- INSTAT XML(LT)
+- INSTAT XML (LT)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+> [!NOTE]
+> The **INSTAT XML (LT)** format mapping generates files that conform to the IDAIS `INTRASTATReportSubmission.xsd` schema. Make sure that you import the latest version of the configurations before you generate declarations.
 
-## Set up region code
+For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-The Intrastat declaration requires that you report a region code. 
+### Set up region code
+
+The Intrastat declaration requires that you report a region code.
 
 To set up the region code, follow these steps:
 
@@ -85,7 +100,7 @@ To set up the region code, follow these steps:
 1. In the **State** field, enter the name of the state.
 1. In the **Intrastat code** field, enter the code according to the authority requirements.
 
-## Set up an address for a legal entity
+### Set up an address for a legal entity
 
 To set up an address for a legal entity, follow these steps:
 
@@ -98,7 +113,7 @@ To set up an address for a legal entity, follow these steps:
 1. In the **City** field, select your city.
 1. In the **State** field, select your company's state.
 
-## Set up contact information
+### Set up contact information
 
 Set up your company's telephone number, email address, URL, and fax number.
 
@@ -111,9 +126,38 @@ To set up contact information, follow these steps:
 1. In the **Contact number/address** field, enter your company's contact information.
 1. Select the **Primary** option to print this contact information on the report.
 
-## Set up VAT IDs
+> [!NOTE]
+> The IDAIS XML format reports the VAT payer's email address and phone number. Make sure that the **Email address** and **Phone** contact types are set up and marked as **Primary** for your legal entity.
 
-### Set up the VAT ID for your company
+### Set up the broker (intermediary)
+
+If a broker (an intermediary, *tarpininkas*) submits the Intrastat declaration on behalf of your company, set up the broker as an agent. When you set up an agent, the submitter type in the declaration automatically sets to **BROKER**, and the **Broker** block is included in the XML message. When you don't set up an agent, the submitter type is **VAT_PAYER**, and the **Broker** block isn't included.
+
+To set up the broker, follow these steps:
+
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+1. On the **Agent** tab, enter the following information:
+
+    - In the **Name** field, enter the name of the broker's legal entity. This value is reported in the **Broker – Title** field.
+    - In the **Tax exempt number** field, enter the broker's VAT number (for example, **LT302345678**). When you fill in this field, the submitter type is set to **BROKER**.
+    - In the **Branch/Subsidiary** field, enter the broker's legal entity registration code (JAR). This code is the nine-digit company-register number (for example, **302345678**), not the VAT number. This value is reported in the **Broker – Legal entity identifier (JAR)** field.
+    - Enter the broker's contact information (for example, the phone number). This value is reported in the **Broker – Contact** field.
+
+> [!NOTE]
+> The **Broker – Legal entity identifier (JAR)** field reports the company-register code from the **Branch/Subsidiary** field (for example, **302345678**), without the country prefix. The country-prefixed VAT number in the **Tax exempt number** field is used only to determine that a broker submits the declaration.
+
+### Set up the responsible person
+
+The responsible person is the person who prepares and submits the declaration. The responsible person's name, email address, and phone number are reported in the **Responsible person** fields of the **Report preparation** block.
+
+To set up the responsible person, follow these steps:
+
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+1. On the **Contact** tab, enter the name, telephone number, and email address of the person who is submitting the declaration.
+
+### Set up VAT IDs
+
+#### Set up the VAT ID for your company
 
 To set up the VAT ID for your company, follow these steps:
 
@@ -121,21 +165,23 @@ To set up the VAT ID for your company, follow these steps:
 1. In the grid, select your company.
 1. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the VAT ID for your company.
 
-### Set up the VAT number of a trading partner
+#### Set up the VAT number of a trading partner
 
-#### Create a registration type for the company code
+Report the trading partner's VAT identifier in the **Partner identifier** field of the report line for dispatches (EXPORT).
 
-You must create VAT ID registration types for all the countries or regions that your company does business with.
+##### Create a registration type for the company code
+
+Create VAT ID registration types for all the countries or regions that your company does business with.
 
 To create a registration type for the company code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 1. On the Action Pane, select **New** to create a registration type for the VAT ID.
 1. In the **Enter registration type details** dialog box, in the **Name** field, enter a name for the new registration type. For example, enter **VAT ID**.
-1. In the **Country/region** field, select **the country** or region that your company does business with.
+1. In the **Country/region** field, select the country or region that your company does business with.
 1. Select **Create**.
 
-#### Match the registration type with a registration category
+##### Match the registration type with a registration category
 
 To match the registration type with a registration category, follow these steps:
 
@@ -144,11 +190,11 @@ To match the registration type with a registration category, follow these steps:
 1. For the registration type for the VAT ID, select the **VAT ID** registration category.
 1. Repeat steps 2 and 3 for the other registration types that you created for the countries or regions that your company does business with.
 
-#### Create a customer's VAT registration number
+##### Create a customer's VAT registration number
 
 To create a customer's VAT registration number, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable** > **Customers** > **All customers.**
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Customers** > **All customers**.
 1. In the grid, select a customer.
 1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
@@ -156,31 +202,20 @@ To create a customer's VAT registration number, follow these steps:
 1. In the **Registration number** field, enter the company's VAT number.
 1. On the Action Pane, select **Save**. Then close the page.
 
-   For more information, see [Registration IDs](../europe/emea-registration-ids.md).
+For more information, see [Registration IDs](../europe/emea-registration-ids.md).
 
-Alternatively, you can create a customer's VAT registration number by using the **Tax exempt number** page.
-
-1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Sales tax** > **Tax exempt numbers**.
-1. For each tax-exempt number, create a record that includes the following information:
-    - In the **Country/region** field, select the tax registration of the counterparty.
-    - In the **Tax exempt number** field, enter the tax-exempt number of the counterparty.
-    - In the **Company name** field, enter the name of the counterparty.
-1. Go to **Accounts receivable** \> **Customers** \> **All customers.**
-1. In the grid, select a customer.
-1. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select the registration number that you just created.
-
-## Set up product parameters for the Intrastat declaration
+### Set up product parameters for the Intrastat declaration
 
 To set up product parameters for the Intrastat declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** > **Products** > **Released products**.
 1. In the grid, select a product.
-1. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select the commodity code. The name of the commodity prints in the **Description of goods** field in the Intrastat declaration.
+1. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select the commodity code. The commodity code is reported in the **Combined Nomenclature code** field in the Intrastat declaration.
 1. In the **Statistics procedure** field, select the statistical sign if it's required. The values that you can select depend on the commodity code that you selected.
 1. In the **Origin** section, in the **Country/region** field, select the product's country or region of origin.
 1. On the **Manage inventory** FastTab, in the **Net weight** field, enter the product's weight in kilograms.
 
-## Set up the transport method and delivery terms
+### Set up the transport method and delivery terms
 
 To set up the transport method and delivery terms, follow these steps:
 
@@ -193,7 +228,7 @@ To set up the transport method and delivery terms, follow these steps:
     1. In the grid, select a set of delivery terms.
     1. On the **General** FastTab, in the **Intrastat code** field, enter the unique code.
 
-## Set up the Intrastat authority
+### Set up the Intrastat authority
 
 - In Dynamics 365 Finance, go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**, and enter the following information for the Intrastat authority:
 
@@ -201,9 +236,9 @@ To set up the transport method and delivery terms, follow these steps:
     - Address
     - Contact information
 
-   For more information, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md).
+    For more information, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md).
 
-## Set up foreign trade parameters
+### Set up foreign trade parameters
 
 To set up foreign trade parameters, follow these steps:
 
@@ -214,13 +249,14 @@ To set up foreign trade parameters, follow these steps:
 1. In the **Transaction code** field, select the transaction code for property transfers.
 1. In the **Credit note** field, select the transaction code for the return of goods.
 1. In the **Authority** field, select the authority that receives the Intrastat declaration.
-1. On the **Contact** tab, enter the name, telephone number, fax number, and email address of the person who is submitting the declaration.
+1. On the **Contact** tab, enter the name, telephone number, and email address of the person who is submitting the declaration. This information is reported as the responsible person in the **Report preparation** block.
+1. If a broker submits the declaration on behalf of your company, set up the broker on the **Agent** tab, as described in the [Set up the broker (intermediary)](#set-up-the-broker-intermediary) section.
 1. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For Lithuania, select **Domestic** in the **Country/region type** field.
 
-## Set up compression of Intrastat
+### Set up compression of Intrastat
 
 In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields to compare when summarizing Intrastat information. For Lithuanian Intrastat, select the following fields:
-   
+
 - Commodity
 - Transaction code
 - Country/region of origin
@@ -247,416 +283,11 @@ To generate an Intrastat report, follow these steps:
 1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 1. On the Action Pane, select **Output** > **Report**.
 1. In the **Intrastat Report** dialog box, enter the start date for the report.
-1. Set the **Generate file** option to **Yes** to generate a .xml file.
+1. Set the **Generate file** option to **Yes** to generate an .xml file in the IDAIS format.
 1. Set the **Generate report** option to **Yes** to generate an .xlsx file, and then enter a name for the file.
-1. In the **Direction** field, select **Arrivals** if the report is about intracommunity arrivals or **Dispatches** if the report is about intracommunity dispatches.
-1. In the **File format mapping** section, in the **Declaration identifier** field, enter the Intrastat report number.
-1. If you're submitting a correction Intrastat declaration, in the **Registration number of previous declaration** field, enter the registration number of the previous declaration.
+1. In the **Direction** field, select **Arrivals** if the report is about intracommunity arrivals (IMPORT) or **Dispatches** if the report is about intracommunity dispatches (EXPORT).
+1. If no intracommunity trade occurred in the reference period, set the option for a null (zero) declaration. The generated XML message has the zero trade indicator set to **true** and doesn't include report lines.
 1. Select **OK**, and review the generated reports.
-
-## Example
-
-This example shows how to post arrivals and dispatches for Intrastat by using the **DEMF** legal entity.
-
-### Preliminary setup
-
-To complete the preliminary setup, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Organization administration** > **Organization** > **Legal entities**.
-1. In the list, select the **DEMF** legal entity.
-1. On the **Addresses** FastTab, select **Edit**, and then, in the **Country/region** field, select **LTU (Lithuania)**.
-1. Import the latest version of the following ER configurations:
-    
-    - Intrastat model
-    - Intrastat report
-    - INSTAT XML(LT)
-
-### Set up a company address
-
-To set up a company address, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
-1. On the **State/province** tab, select **New** and enter the following information:
-
-    - In the **Country/region** field, select **LTU**.
-    - In the **State** field, enter **VL**.
-    - In the **Intrastat code** field, enter **LT-VL**.
-
-1. On the **City** tab, select **New** and enter the following information:
-
-     - In the **Country/region** field, select **LTU**.
-     - In the **City** field, enter **Vilnius**.
-     - In the **State** field, select **VL**.
-
-1. On the **ZIP/postal code** tab, select **New** and enter the following information:
- 
-     - In the **Country/region** field, select **LTU**.
-     - In the **State** field, select **VL**.
-     - In the **City** field, select **Vilnius**.
-     - In the **ZIP/postal code** field, enter **LT-00001**.
-
-1. Go to **Organization administration** > **Organization** > **Legal entities.**
-1. In the list, select the **DEMF** legal entity.
-1. On the **Addresses** FastTab, select **Edit** and enter the following information:
-
-    - In the **Country/region** field, select **LTU**.
-    - In the **ZIP/postal code** field, select **LT-00001**.
-    - In the **Street** field, enter **Ukmerges Street 120**.
-    - In the **City** field, select **Vilnius**.
-    - In the **State** field, select **VL**.
-
-1. Select **OK**.
-
-### Set up contact information
-
-To set up contact information, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Organization administration** > **Organization** > **Legal entities**.
-1. In the list, select the **DEMF** legal entity.
-1. On the **Contact information** FastTab, select **Add** to create a contact.
-1. In the **Type** field, select **Phone**.
-1. In the **Contact number/address** field, enter **+49 123 456 789** and then select the **Primary** option.
-1. In the **Type** field, select **Fax**.
-1. In the **Contact number/address** field, enter **425-555-5013** and then select the **Primary** option.
-1. In the **Type** field, select **Email address**.
-1. In the **Contact number/address** field, enter jodi@contoso.com.
-1. Select the **Primary** option.
-1. In the **Type** field, select **URL**.
-1. In the **Contact number/address** field, enter the URL and then select the **Primary** option.
-
-### Set up VAT IDs
-
-#### Set up the VAT ID for your company
-
-To set up the VAT ID for your company, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
-1. In the list, select the **DEMF** legal entity.
-1. On the **Tax registration** FastTab, in the **Tax registration number** field, enter **1234567890**.
-
-#### Create registration types for company codes
-
-To create registration types for company codes, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
-1. On the Action Pane, select **New** to create a registration type for the VAT ID.
-1. In the **Enter registration type details** dialog box, in the **Name** field, enter **VAT ID**.
-1. In the **Country/region** field, select **DEU**.
-1. In the **Restricted to** field, select **Organization**.
-1. Select **Create**.
-
-#### Match the registration type with a registration category
-
-To match the registration type with a registration category, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
-1. On the Action Pane, select **New** to create a link between the registration type and the registration category.
-1. For the **VAT ID** registration type, select the **VAT ID** registration category.
-
-#### Set up the customer's VAT registration number
-
-To set up the customer's VAT registration number, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Accounts receivable** > **Customers** > **All customers**.
-1. In the grid, select **DE-016**.
-1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
-1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-1. In the **Registration type** field, select **VATID**.
-1. In the **Registration number** field, enter **DE0234**.
-1. On the Action Pane, select **Save** and then close the page.
-
-### Set up product information
-
-To set up product information, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Product information management** > **Products** > **Released products**.
-1. In the grid, select **D0001**.
-1. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **100 200 30**.
-1. In the **Origin** section, in the **Country/region** field, select **LTU**.
-1. On the **Manage inventory** FastTab, in the **Weight measurements** section, in the **Net weight** field, enter **2**.
-1. On the Action Pane, select **Save**.
-1. In the grid, select **D0003**.
-1. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **100 200 30**.
-1. In the **Origin** section, in the **Country/region** field, select **DEU**.
-1. On the **Manage inventory** FastTab, in the **Weight measurements** section, in the **Net weight** field, enter **5**.
-1. On the Action Pane, select **Save**.
-
-### Set up a transport method
-
-To set up a transport method, follow these steps:
-
-1. Create a transport method.
-    1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
-    1. On the Action Pane, select **New**.
-    1. In the **Transport** field, enter **3**.
-    1. In the **Description** field, enter **Road transport**.
-1. Assign the new transport method to a mode of delivery. When you assign the transport method to a mode of delivery, you set up the default values that the system uses for the transport method when the corresponding mode of delivery is selected.
-    1. Go to **Procurement and sourcing** > **Setup** > **Distribution** > **Modes of delivery**.
-    1. In the grid, select **10**.
-    1. On the **Foreign trade** FastTab, in the **Transport** field, select **3**.
-1. Select the default mode of delivery for a customer.
-    1. Go to **Accounts receivable** > **Customers** > **All customers**.
-    1. In the grid, select **DE-016**.
-    1. On the **Invoice and delivery** FastTab, in the **Mode of delivery** field, select **10**.
-1. Select the default mode of delivery for a vendor.
-    1. Go to **Accounts payable** > **Vendors** > **All vendors**.
-    1. In the grid, select **DE-001**.
-    1. On the **Invoice and delivery** FastTab, in the **Mode of delivery** field, select **10**.
-
-### Set up codes for terms of delivery
-
-To set up codes for terms of delivery, follow these steps:
-
-1. Set up an Intrastat code for the terms of delivery.
-    1. In Dynamics 365 Finance, go to **Procurement and sourcing** > **Setup** > **Distribution** > **Terms of delivery**.
-    1. In the grid, select **CIF**.
-    1. On the **General** FastTab, in the **Intrastat code** field, enter **L**.
-1. Select the default delivery terms for a customer.
-    1. Go to **Accounts receivable** > **Customers** > **All customers**.
-    1. In the grid, select **DE-016**.
-    1. On the **Invoice and delivery** FastTab, in the **Delivery terms** field, select **CIF**.
-1. Select the default delivery terms for a vendor.
-    1. Go to **Accounts payable** > **Vendors** > **All vendors**.
-    1. In the grid, select **DE-001**.
-    1. On the **Invoice and delivery** FastTab, in the **Delivery terms** field, select **CIF**.
-
-### Set up the authority identification number
-
-To set up the authority identification number, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**.
-1. In the list, select **TA**.
-1. In the **Authority identification** field, enter **123**.
-1. In the **Name** field, enter **Tax authority**.
-1. On the **Addresses** FastTab, select **Edit**.
-1. In the **Country/region** field, select **LTU**.
-1. In the **Street** field, enter Arsenalo gatvė 5.
-1. In the **City** field, select **Vilnius**.
-1. In the **State** field, select **VL** and then select **OK**.
-1. On the **Contact information** FastTab, in the **Telephone** field, enter **425-555-5068.**
-1. In the **Fax** field, enter **425-555-5068.**
-1. In the **Email** field, enter authority@email.com.
-1. In the **Internet address** field, enter the URL.
-
-### Set up foreign trade parameters
-
-To set up foreign trade parameters, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
-1. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
-1. In the **Authority** field, select **TA**.
-1. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **INSTAT XML (LT)**.
-1. In the **Report format mapping** field, select **Intrastat Report**.
-1. On the **Commodity code hierarchy** FastTab, verify that the **Category hierarchy** field is set to **Intrastat**.
-1. On the **Country/region properties** tab, select **New**.
-1. In the **Party country/region** field, select **LTU**. Then, in the **Country/region type** field, select **Domestic**.
-1. In the **Party country/region** field, select **DEU**. Then, in the **Country/region type** field, select **EU**.
-1. On the **Contact** tab, in the **Name** field, enter **Manish Chopra**.
-1. In the **Telephone** field, enter **425-555-5049**.
-1. In the **Fax number** field, enter **425-555-5049**.
-1. In the **Email** field, enter manishc@contoso.com.
-
-### Change the site address
-
-To change the site address, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Warehouse management** > **Setup** > **Warehouse** > **Sites**.
-1. In the grid, select **1**.
-1. On the **Addresses** FastTab, select **Edit**.
-1. In the **Edit address** dialog box, in the **Country/region** field, select **LTU**.
-1. Select **OK**.
-
-### Create a sales order with an EU customer
-
-To create a sales order with an EU customer, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Accounts receivable** > **Orders** > **All sales orders**.
-1. On the Action Pane, select **New**.
-1. In the **Create sales order** dialog box, on the **Customer** FastTab, in the **Customer** section, in the **Customer account** field, select **DE-016**.
-1. On the **General** FastTab, in the **Storage dimensions** section, in the **Site** field, select **1**.
-1. In the **Warehouse** field, select **11**.
-1. On the **Address** tab, verify that the **Address** field is set to **Teichgasse 12, Kiel, 24103, DEU**, because the customer is from Germany.
-1. Select **OK**.
-1. On the **Header** tab, on the **Delivery** FastTab, verify that the **Delivery terms** field is set to **CIF**, and the **Mode of delivery** field is set to **10**.
-1. On the **Lines** tab, on the **Sales order lines** FastTab, in the **Item number** field, select **D0001**. Then, in the **Quantity** field, enter **8**.
-1. On the **Line details** FastTab, on the **Foreign trade** tab, verify that the fields are set to the following values:
-    - **Transaction code:** 11
-    - **Transport:** 3
-    - **Commodity:** 100 200 30
-    - **Country/region of origin:** LTU
-1. On the Action Pane, select **Save**.
-1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
-1. In the **Posting invoice** dialog box, on the **Parameters** FastTab, in the **Parameter** section, in the **Quantity** field, select **All**.
-1. Select **OK** to post the invoice.
-
-### Transfer the transaction to the Intrastat journal and review the result
-
-To transfer the transaction to the Intrastat journal and review the result, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
-1. On the Action Pane, select **Transfer**.
-1. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**.
-1. Select **Filter**.
-1. In the **Intrastat Filter** dialog box, on the **Range** tab, select the first line, and verify that the **Field** field is set to **Date**.
-1. In the **Criteria** field, select the current date.
-1. Select **OK** to close the **Intrastat Filter** dialog box.
-1. Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. The line represents the sales order that you created earlier.
-
-    :::image type="content" source="../media/c9e819e34623a683eb32b1121168688d.png" alt-text="Screenshot of the line that represents the sales order on the Intrastat page.":::
-
-1.  Select the transaction line, and then select the **General** tab to view more details.
-
-    :::image type="content" source="../media/c82dc5af9a072825fb20d9a26aa4e735.png" alt-text="Screenshot of sales order details on the General tab of the Intrastat page.":::
-
-1. On the Action Pane, select **Output** > **Report**.
-1. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
-1. In the **Export** **options** section, set the **Generate file** option to **Yes**.
-1. Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
-1. In the **Direction** field, select **Dispatches**.
-1. In the **File format mapping** section, in the **Declaration identifier** field, enter **123456**.
-1. Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
-
-    | Field                                                                   | Value                                             |
-    |-------------------------------------------------------------------------|---------------------------------------------------|
-    | Reference period                                                        | 2022-02                                           |
-    | Completion date and time                                                | 2022-02-01 03:31:48                               |
-    | The receiver's ID                                                       | 123                                               |
-    | The receiver's name                                                     | Tax authority                                     |
-    | The receiver's address                                                  | Arsenalo gatvė 5 Vilnius VL                       |
-    | The receiver's phone                                                    | 425-555-5068                                      |
-    | The receiver's email                                                    | authority@email.com                               |
-    | The receiver's fax                                                      | 425-555-5068                                      |
-    | The receiver's URL                                                      | URL                           |
-    | Sender's VAT code                                                       | 1234567890                                        |
-    | Sender's address                                                        | Ukmerges Street 120 Vilnius, VL LT-00001 LTU      |
-    | Sender's phone                                                          | +49 123 456 789                                   |
-    | Sender's email                                                          | jodi@contoso.com                                  |
-    | Sender's fax                                                            | 425-555-5013                                      |
-    | Sender's URL                                                            | URL                           |
-    | Contact person's name                                                   | Manish Chopra                                     |
-    | Contact person's phone                                                  | 425-555-5049                                      |
-    | Contact person's fax                                                    | 425-555-5049                                      |
-    | Contact person's email                                                  | manishc@contoso.com                               |
-    | Software used                                                           | Microsoft Dynamics 365 Finance |
-    | Declaration identifier                                                  | 123456                                            |
-    | VAT registration number                                                 | 1234567890                                        |
-    | Function code                                                           | O                                                 |
-    | The report direction                                                    | D                                                 |
-    | Currency                                                                | EUR                                               |
-    | Total Invoiced amount                                                   | 2632                                              |
-    | Commodity code                                                          | 10020030                                          |
-    | Description of goods                                                    | Hardware                                          |
-    | Country of consignment (arrivals) / Country of destination (dispatches) | DE                                                |
-    | Country of origin                                                       | LT                                                |
-    | Net mass                                                                | 16000                                             |
-    | Invoice amount                                                          | 2632                                              |
-    | Statistical amount                                                      | 2632                                              |
-    | VAT number of trading partner                                           | DE0234                                            |
-    | Nature of transaction                                                   | 11                                                |
-    | Mode of transport                                                       | 3                                                 |
-    | Delivery terms                                                          | L                                                 |
-    | Region                                                                  | LT-VL                                             |
-    | Total number of detailed lines                                          | 1                                                 |
-
-1.  Review the report in Excel format that is generated.
-
-   :::image type="content" source="../media/585cb5e53b7ec91b3818d14751f7d812.png" alt-text="Screenshot of the Intrastat report on dispatches.":::
-
-### Create a purchase order
-
-To create a purchase order, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
-1. On the Action Pane, select **New**.
-1. In the **Create purchase order** dialog box, in the **Vendor account** field, select **DE-001**.
-1. In the **Site** field, select **1**.
-1. In the **Warehouse** field, select **11**.
-1. Select **OK**.
-1. On the **Header** tab, on the **Delivery** FastTab, verify that the **Mode of delivery** field is set to **10**, and the **Delivery terms** field is set to **CIF**.
-1. On the **Lines** tab, on the **Purchase order lines** FastTab, in the **Item number** field, select **D0003**. Then, in the **Quantity** field, enter **6**.
-1. On the **Line details** FastTab, on the **Foreign trade** tab, verify that the fields are set to the following values:
-    - **Transaction code:** 11
-    - **Transport:** 3
-    - **Commodity:** 100 200 30
-    - **Country/region of origin:** DEU
-1. On the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm**.
-1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
-1. On the Action Pane, select **Default from**, and then, in the **Default quantity for lines** field, select **Ordered quantity**. Then select **OK**.
-1. On the **Vendor Invoice header** FastTab, in the **Invoice identification** section, in the **Number** field, enter **0010**.
-1. In the **Invoice dates** section, in the **Invoice date** field, select the current date. This date is used for Intrastat transfer.
-1. On the Action Pane, select **Post** to post the invoice.
-
-### Create an Intrastat declaration for arrivals
-
-To create an Intrastat declaration for arrivals, follow these steps:
-
-1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
-1. On the Action Pane, select **Transfer**.
-1. In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
-1. Select **Filter**.
-1. In the **Intrastat Filter** dialog box, on the **Range** tab, select the **Vendor invoice journal** line, and verify that the **Field** field is set to **Date**.
-1. In the **Criteria** field, select the current date.
-1. Select **OK** to close the **Intrastat Filter** dialog box.
-1. Select **OK** to transfer the transactions, and review the Intrastat journal.
-
-    :::image type="content" source="../media/db5a105238b632ceb9e26e3e35adb0fe.png" alt-text="Screenshot of the line that represents the purchase order on the Intrastat page.":::
-
-1. Review the information on the **General** tab for the purchase order.
-
-    :::image type="content" source="../media/7e626e71ad5a302dd78f523f3aa413da.png" alt-text="Screenshot of purchase order details on the General tab of the Intrastat page.":::
-
-1. On the Action Pane, select **Output** > **Report**.
-1. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
-1. In the **Export** **options** section, set the **Generate file** option to **Yes**.
-1. Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
-1. In the **Direction** field, select **Arrivals**.
-1. In the **File format mapping** section, in the **Declaration identifier** field, enter **654321**.
-1. Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
-
-    | Field                                                                   | Value                                             |
-    |-------------------------------------------------------------------------|---------------------------------------------------|
-    | Reference period                                                        | 2022-02                                           |
-    | Completion date and time                                                | 2022-02-01 03:31:48                               |
-    | The receiver's ID                                                       | 123                                               |
-    | The receiver's name                                                     | Tax authority                                     |
-    | The receiver's address                                                  | Arsenalo gatvė 5 Vilnius VL                       |
-    | The receiver's phone                                                    | 425-555-5068                                      |
-    | The receiver's email                                                    | authority@email.com                               |
-    | The receiver's fax                                                      | 425-555-5068                                      |
-    | The receiver's URL                                                      | URL                           |
-    | Sender's VAT code                                                       | 1234567890                                        |
-    | Sender's address                                                        | Ukmerges Street 120 Vilnius, VL LT-00001 LTU      |
-    | Sender's phone                                                          | +49 123 456 789                                   |
-    | Sender's email                                                          | jodi@contoso.com                                  |
-    | Sender's fax                                                            | 425-555-5013                                      |
-    | Sender's URL                                                            | URL                             |
-    | Contact person's name                                                   | Manish Chopra                                     |
-    | Contact person's phone                                                  | 425-555-5049                                      |
-    | Contact person's fax                                                    | 425-555-5049                                      |
-    | Contact person's email                                                  | manishc@contoso.com                               |
-    | Software used                                                           | Microsoft Dynamics 365 Finance |
-    | Declaration identifier                                                  | 654321                                            |
-    | VAT registration number                                                 | 1234567890                                        |
-    | Function code                                                           | O                                                 |
-    | The report direction                                                    | A                                                 |
-    | Currency                                                                | EUR                                               |
-    | Total Invoiced amount                                                   | 965                                               |
-    | Commodity code                                                          | 10020030                                          |
-    | Description of goods                                                    | Hardware                                          |
-    | Country of consignment (arrivals) / Country of destination (dispatches) | DE                                                |
-    | Country of origin                                                       | DE                                                |
-    | Net mass                                                                | 30000                                             |
-    | Invoice amount                                                          | 965                                               |
-    | Statistical amount                                                      | 965                                               |
-    | Nature of transaction                                                   | 11                                                |
-    | Mode of transport                                                       | 3                                                 |
-    | Delivery terms                                                          | L                                                 |
-    | Region                                                                  | LT-VL                                             |
-    | Total number of detailed lines                                          | 1                                                 |
-
-1.  Review the report in Excel format that is generated.
-
-   :::image type="content" source="../media/536b01cd91e70bb8872abbbcc8460150.png" alt-text="Screenshot of the Intrastat report on arrivals.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

@@ -4,7 +4,7 @@ description: Learn how to install, enable, and set up Demand planning in Microso
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 4/21/2026
+ms.date: 04/21/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

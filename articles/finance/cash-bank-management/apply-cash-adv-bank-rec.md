@@ -4,7 +4,7 @@ description: Learn how to complete cash application in advanced bank reconciliat
 author: music727
 ms.author: mukumarm
 ms.topic: how-to
-ms.date: 05/30/2026
+ms.date: 07/08/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -100,10 +100,10 @@ To use matching rules to automatically generate customer payments without settli
 1. On the **Step 2 (Optional): Identify customer account through invoice matching** FastTab, define the criteria. This step matches bank statement lines with the open or closed customer invoices in the current legal entity. If open or closed customer invoices are successfully matched, the rule posts a customer payment journal with the customer account that it finds on the open customer invoice. This rule doesn't settle the customer payment journal with the matched customer invoice.
 1. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields:
 
-    - **Automatic customer account matching**
+   - **Automatic customer account matching**
 
-        - If you turn on this parameter, the rule tries to match International Bank Account Number (IBAN) and bank account number fields in customer master data with the information on bank statement lines. If matching is successful, the rule uses the relevant customer account to post the customer payment journal.
-        - If you turn off this parameter, you must specify a customer account before the customer payment journal can be posted.
+                - When you enable this option in the **Bank reconciliation rule** setup, the matching rule automatically attempts to match the **Related bank account** value from the bank statement line details with the **IBAN** value on the customer's bank account record. If no matching IBAN is found, the system then attempts to match the **Related bank account** value with the customer's bank account number. When a match is found, the associated customer account is automatically identified and used to create and post the customer payment journal.
+        - If you turn this parameter off, you must specify a customer account before the customer payment journal can be posted.
 
     - **Customer account**
     - **Accounting date**

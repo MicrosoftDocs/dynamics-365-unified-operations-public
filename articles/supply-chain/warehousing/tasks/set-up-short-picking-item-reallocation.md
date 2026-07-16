@@ -4,7 +4,7 @@ description: Learn how to enable warehouse workers to quickly find alternative l
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/29/2026
+ms.date: 05/29/2026
 ms.custom: bap-template 
 ms.reviewer: kamaybac   
 ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException  

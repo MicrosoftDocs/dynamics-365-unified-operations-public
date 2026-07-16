@@ -2,10 +2,10 @@
 title: Choose between Store Commerce app and Store Commerce for web
 description: This article provides an overview of the key differences between the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web.
 author: josaw1
-ms.date: 02/18/2026
+ms.date: 06/07/2026
 ms.topic: overview
 ms.author: josaw
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.search.validFrom: 2017-10-12
 ms.custom: 
@@ -46,8 +46,8 @@ Although the Store Commerce app and Store Commerce for web are largely the same,
 
 Store Commerce is a desktop application that you install and service on a device.
 
-- **Windows** – The Store Commerce app for Windows contains the application code, Commerce Runtime (CRT), and Hardware Station (HWS).
-- **iOS/Android** – On these platforms, the application acts as a host for the Store Commerce for web application code. In other words, the application code comes from the Commerce Scale Unit (CSU). For more information, see [Commerce Scale Unit overview](retail-store-system-begin.md).
+- **Windows**: The Store Commerce app for Windows contains the application code, Commerce Runtime (CRT), and Hardware Station (HWS).
+- **iOS/Android/macOS**: On these platforms, the application acts as a host for the Store Commerce for web application code. In other words, the application code comes from the Commerce Scale Unit (CSU). For more information, see [Commerce Scale Unit overview](retail-store-system-begin.md).
 
 #### Store Commerce for web
 
@@ -58,15 +58,18 @@ Because Store Commerce for web runs in a browser, you don't install the applicat
 In addition to a platform and form factor, retailers must also choose a deployment option at the store. The following table shows the configurations that are available for each POS option.
 
 | POS application            | Commerce Scale Unit | Available offline | Local HWS support |
-|----------------------------|---------------------|-------------------|-------------------|
+| -------------------------- | ------------------- | ----------------- | ----------------- |
 | Store Commerce for Windows | Cloud or RSSU       | Yes               | Yes               |
-| Store Commerce for Android | Cloud or RSSU       | No                | Yes               |
-| Store Commerce for iOS     | Cloud or RSSU       | No                | Yes               |
+| Store Commerce for Android | Cloud or RSSU       | Yes*              | Yes               |
+| Store Commerce for iOS     | Cloud or RSSU       | Yes*              | Yes               |
+| Store Commerce for macOS   | Cloud or RSSU       | Yes*              | Yes               |
 | Store Commerce for web     | Cloud or RSSU       | No                | No                |
+
+*Offline mode for Android, iOS, and macOS is available through the Store Commerce SDK on custom apps built on Store Commerce. For more information, see [Offline capabilities in iOS, Android, and macOS](store-commerce-mobile.md#offline-capabilities-in-ios-android-and-macos).
 
 #### Commerce Scale Unit
 
-The Commerce Scale Unit is a component that hosts the CRT. The CRT contains all the business logic that the POS uses, and it provides access to the channel database. While they're online, all POS clients in the store use the Commerce Scale Unit. You can deploy the Commerce Scale Unit either in the cloud or in the store.
+The Commerce Scale Unit is a component that hosts the CRT. The CRT contains the business logic that the POS uses, and it provides access to the channel database. While they're online, POS clients in the store use the Commerce Scale Unit. You can deploy the Commerce Scale Unit either in the cloud or in the store.
 
 #### Offline mode
 
@@ -74,13 +77,14 @@ Store Commerce for Windows supports offline mode. In offline mode, the POS can c
 
 ### POS peripheral and hardware considerations
 
-Retailers must also consider how the POS accesses devices and peripherals such as printers, cash drawers, and payment terminals. Hardware stations can be dedicated to a POS register or shared among the registers in a store.
+Retailers must also consider how the POS accesses devices and peripherals such as printers, cash drawers, and payment terminals. You can dedicate hardware stations to a POS register or share them among the registers in a store.
 
 | POS application            | Local HWS OPOS | Network peripherals | Shared HWS support |
-|----------------------------|----------------|---------------------|--------------------|
+| -------------------------- | -------------- | ------------------- | ------------------ |
 | Store Commerce for Windows | Yes            | Yes                 | Yes                |
 | Store Commerce for Android | No             | Yes                 | Yes                |
 | Store Commerce for iOS     | No             | Yes                 | Yes                |
+| Store Commerce for macOS   | No             | Yes                 | Yes                |
 | Store Commerce for web     | No             | No                  | Yes                |
 
 For more information about hardware stations, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
@@ -89,19 +93,19 @@ For more information about hardware stations, see [Configure and install Retail 
 
 Consider the following information as you plan your POS implementation in your stores:
 
-- **Functional requirements** – The core business processes and capabilities are the same, regardless of the platform, form factor, or deployment topology. Therefore, most retailers don't need to consider functional requirements when they plan their implementation.
-- **Connectivity** – Network availability (wide area network \[WAN\] and local area network \[LAN\]) is a major factor that requires careful consideration. Any benefits that a zero-footprint, cloud-hosted solution brings in terms of cost and simplicity are lost if the system isn't available for business-critical processes.
+- **Functional requirements**: The core business processes and capabilities are the same, regardless of the platform, form factor, or deployment topology. Therefore, most retailers don't need to consider functional requirements when they plan their implementation.
+- **Connectivity**: Network availability (wide area network \[WAN\] and local area network \[LAN\]) is a major factor that requires careful consideration. Any benefits that a zero-footprint, cloud-hosted solution brings in terms of cost and simplicity are lost if the system isn't available for business-critical processes.
 
-    Unless the connectivity for a given device is dependable and resilient, or unless a certain amount of downtime is acceptable to the retailer, use one of the following options:
+  Unless the connectivity for a given device is dependable and resilient, or unless a certain amount of downtime is acceptable to the retailer, use one of the following options:
 
-    - Use Store Commerce in Windows, and enable offline mode.
-    - Deploy an on-premises Commerce Scale Unit.
+  - Use Store Commerce in Windows, and enable offline mode.
+  - Deploy an on-premises Commerce Scale Unit.
 
     These two options aren't mutually exclusive. For the most reliable topology, retailers can deploy a local RSSU to reduce the dependency on internet connectivity or Azure availability, and they can also deploy POS registers where offline mode is enabled if there's an issue with the local server or network.
 
-- **Hardware devices/peripherals** – One important aspect of a Retail POS system is its ability to use POS peripherals such as printers, cash drawers, and payment terminals. Although all the available POS options can use peripheral devices, only Store Commerce for Windows supports them directly. For all other applications, one or more hardware stations are required. Although this approach adds flexibility, you must deploy, configure, and service more components.
-- **System requirements** – The system requirements for the POS application vary. Be sure to check the latest information before you make your choice. For example, because Store Commerce for web runs in a browser, it supports a wider range of operating systems. For more information about system requirements, see [System requirements for cloud deployments](../../fin-ops-core/dev-itpro/get-started/system-requirements.md).
-- **Deployment and servicing** – The complexity of the deployment and servicing requirements can vary, depending on the application and deployment choices. For example, for a cloud-hosted Store Commerce for web deployment, you don't have to install and update on every device. Therefore, this approach greatly reduces complexity and cost. However, if you deploy Store Commerce on every register and enable offline mode, and you also deploy shared hardware stations, you greatly increase the number of endpoints that must be managed.
-- **Web browser considerations** - Popular web browsers have the ability to put idle tabs to sleep to free up system resources. This feature can cause unexpected behavior when using Store Commerce for web. If you're using Store Commerce for web, disable this feature.
+- **Hardware devices/peripherals**: One important aspect of a Retail POS system is its ability to use POS peripherals such as printers, cash drawers, and payment terminals. Although all the available POS options can use peripheral devices, only Store Commerce for Windows supports them directly. For all other applications, one or more hardware stations are required. Although this approach adds flexibility, you must deploy, configure, and service more components.
+- **System requirements**: The system requirements for the POS application vary. Be sure to check the latest information before you make your choice. For example, because Store Commerce for web runs in a browser, it supports a wider range of operating systems. For more information about system requirements, see [System requirements for cloud deployments](../../fin-ops-core/dev-itpro/get-started/system-requirements.md).
+- **Deployment and servicing**: The complexity of the deployment and servicing requirements can vary, depending on the application and deployment choices. For example, for a cloud-hosted Store Commerce for web deployment, you don't have to install and update on every device. Therefore, this approach greatly reduces complexity and cost. However, if you deploy Store Commerce on every register and enable offline mode, and you also deploy shared hardware stations, you greatly increase the number of endpoints that must be managed.
+- **Web browser considerations**: Popular web browsers have the ability to put idle tabs to sleep to free up system resources. This feature can cause unexpected behavior when using Store Commerce for web. If you're using Store Commerce for web, disable this feature.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

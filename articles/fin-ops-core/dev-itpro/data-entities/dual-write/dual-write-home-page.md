@@ -3,7 +3,7 @@ title: Dual-write home page
 description: Access various links to information about dual-write, including resources for dual-write setup and managing dual-write after setup.
 author: sericks007
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: overview
 ms.custom: 
   - bap-template
 ms.date: 01/15/2026

@@ -1,10 +1,10 @@
 ---
 title: Use cash control limits
-description: Learn how to use cash control to define transaction limits when a transaction will cause the cash balance to fall below a predefined amount.
+description: Learn how to use cash control to define transaction limits when a transaction causes the cash balance to fall below a predefined amount.
 author: v-kiarnd
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 09/21/2020
+ms.date: 06/15/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,12 +18,11 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
+This article explains how to use cash control to define transaction limits when there's no cash balance or a transaction causes the cash balance to fall below a predefined amount.
 
-This article explains how to use cash control to define transaction limits when there is no cash balance or a transaction will cause the cash balance to fall below a predefined amount.
+Cash control allows you to define a limit (threshold) to prevent transactions from being posted if no cash balance is available, or if the transaction will cause the balance to fall below the defined limit. The account defined on the consumed posting definition is evaluated when transactions are created, edited, and posted. If there's no generated entry, then the matching account is used. If posting the transaction causes the related cash account's balance to fall below the limit that's defined for the account, an error message is displayed and you must change the account to continue. 
 
-Cash control allows you to define a limit (threshold) to prevent transactions from being posted if no cash balance is available, or if the transaction will cause the balance to fall below the defined limit. The account defined on the consumed posting definition is evaluated when transactions are created, edited, and posted. If there is no generated entry, then the matching account is used. If posting the transaction will cause the related cash account's balance to fall below the limit that's defined for the account, an error message is displayed and you must change the account to continue. .
-
-You can allow specific user groups to override cash control. Then, if the cash account's balance falls below the defined limit, users in the specified user groups receive a warning message, but can continue to post the transaction. Users might override cash control if the expenditure must be posted before the funds that will pay for it are received, or when an approved transfer must occur, but the transfer hasn't been entered or posted yet.
+You can allow specific user groups to override cash control. Then, if the cash account's balance falls below the defined limit, users in the specified user groups receive a warning message, but can continue to post the transaction. Users might override cash control if the expenditure must be posted before the funds that pay for it are received, or when an approved transfer must occur, but the transfer hasn't been entered or posted yet.
 
 The cash control limit is compared to the cash control balance (cash account balance minus all posted, unpaid Accounts payable invoices). When the cash control balance is less than the cash control limit, the limit is exceeded.
 
@@ -40,21 +39,21 @@ Follow these steps to set up cash control and cash control accounts.
 
 We recommend that you add all financial dimension strings for all valid cash accounts. You can then specify which cash accounts are subject to the cash control limit.
 
-7. In the **Cash account** field, enter the cash account financial dimension string. You must enter complete account numbers.
-8. Select the **Participate** check box to indicate that the cash account financial dimension string is subject to cash control. These cash accounts and the corresponding Accounts payable accounts are validated against the cash control configuration rules.
-9. Optional: In the **Accounts payable** account field, enter the Accounts payable account financial dimension string that is used with vendor invoices. You must enter a complete account number.
-10. In the **Threshold** field, enter the amount that must remain in the cash account to pass validation. You can enter a negative number if the cash account can be overdrawn (that is, the transaction amounts can exceed the account balance).
+1. In the **Cash account** field, enter the cash account financial dimension string. You must enter complete account numbers.
+2. Select the **Participate** check box to indicate that the cash account financial dimension string is subject to cash control. These cash accounts and the corresponding Accounts payable accounts are validated against the cash control configuration rules.
+3. Optional: In the **Accounts payable** account field, enter the Accounts payable account financial dimension string that is used with vendor invoices. You must enter a complete account number.
+4. In the **Threshold** field, enter the amount that must remain in the cash account to pass validation. You can enter a negative number if the cash account can be overdrawn (that is, the transaction amounts can exceed the account balance).
 
 ## View accounts in cash control
 
-You can review the current balance of the accounts that you defined on the **Cash control configuration** page. Go to **General ledger** \> **Inquiries** \> **Cash control inquiry**.
+You can review the current balance of the accounts that you defined on the **Cash control configuration** page. Go to **General ledger** > **Inquiries** > **Cash control inquiry**.
 
 The inquiry includes the following information:
 
 - The current cash account balance
 - The balance of all posted, unpaid Accounts payable invoices that are applied to the cash account's corresponding Accounts payable account
 - The cash control balance, or the current cash account balance minus all posted, unpaid Accounts payable invoices
-- The cash control limit, so that you can compare it to the cash control balance and determine whether payment of the Accounts payable invoices will cause the cash account balance to fall below the cash control limit
+- The cash control limit, so that you can compare it to the cash control balance and determine whether payment of the Accounts payable invoices causes the cash account balance to fall below the cash control limit
 
 ## Process transactions by using cash control validation
 
@@ -62,7 +61,7 @@ Cash account balances are validated for Accounts payable invoices and advanced l
 
 [!NOTE] Budget control is separate from cash control and can show unrelated errors.
 
-If the cash control limit will be exceeded, an error message is displayed. The error prevents further processing of the invoice unless a cash control override is allowed.
+If the cash control limit is exceeded, the system displays an error message. The error prevents further processing of the invoice unless a cash control override is allowed.
 
 ## Vendor invoice workflow
 
@@ -70,9 +69,9 @@ If the cash control limit will be exceeded, an error message is displayed. The e
 
 When you use the cash control functionality with the Accounts payable vendor invoice workflow, and the workflow is set up for autoposting, the system validates that the user who is submitting the vendor invoice has privileges to override the cash control limit at the autoposting step.
 
-If the invoice will exceed the cash control limit, and the user has override privileges, the invoice is automatically posted as part of the workflow process. If the user doesn't have override privileges, an error message is displayed in the workflow history for the related vendor invoice. In this case, the invoice can be successfully processed through posting only if one of the following conditions is met:
+If the invoice exceeds the cash control limit, and the user has override privileges, the invoice is automatically posted as part of the workflow process. If the user doesn't have override privileges, an error message is displayed in the workflow history for the related vendor invoice. In this case, the invoice can be successfully processed through posting only if one of the following conditions is met:
 
-- A user who has override privileges resubmits the invoice
+- A user with override privileges resubmits the invoice
 - The invoice is changed so that a different cash account is used
 - The cash control balance is changed
 
@@ -80,11 +79,10 @@ If the invoice will exceed the cash control limit, and the user has override pri
 
 When you use the cash control functionality with the Accounts payable vendor invoice workflow, and the workflow isn't set up for autoposting, a user who has override privileges can submit an invoice to the workflow. The cash control validation is done again when the invoice is posted. This second validation is done because cash balances can change between the time when the invoice is submitted to the workflow and the time when the invoice is posted.
 
-If the invoice will exceed the cash control limit and the user doesn't have override privileges, an error message is displayed, and the invoice can't be submitted to the workflow. In this case, the invoice can be successfully submitted only if one of the following conditions is met:
+If the invoice exceeds the cash control limit and the user doesn't have override privileges, an error message is displayed, and the invoice can't be submitted to the workflow. In this case, the invoice can be successfully submitted only if one of the following conditions is met:
 
-- A user who has override privileges resubmits the invoice
+- A user with override privileges resubmits the invoice
 - The invoice is changed so that a different cash account is used
-- The cash control balance is change
-
+- The cash control balance is changed
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

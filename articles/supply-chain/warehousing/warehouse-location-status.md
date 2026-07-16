@@ -4,7 +4,7 @@ description: Access an overview of the Warehouse location status feature, includ
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac

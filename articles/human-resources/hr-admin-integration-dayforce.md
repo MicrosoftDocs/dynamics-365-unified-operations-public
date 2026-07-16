@@ -4,7 +4,7 @@
 title: Configure integration with Dayforce
 description: This article describes the required configuration steps needed for the integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce.
 author: twheeloc
-ms.date: 09/03/2025
+ms.date: 06/12/2026
 ms.update-cycle: 1095-days
 ms.topic: how-to
 # optional metadata
@@ -27,16 +27,15 @@ ms.dyn365.ops.version: Human Resources
 # Configure integration with Dayforce
 
 > [!NOTE]
-> The functionality noted in this article is only available for existing Ceridian Dayforce customers using 'V1' Dayforce integration with Dynamics 365 Human Resources. All new customers should work with the payroll provider to use API based payroll integration.
+> The functionality described in this article is only available for existing Ceridian Dayforce customers using 'V1' Dayforce integration with Dynamics 365 Human Resources. All new customers should work with the payroll provider to use API based payroll integration.
 
-For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking. 
- 
+For the payroll integration to work for customers using the mshr entities, you must disable row version change tracking. To disable row version change tracking, contact Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight disables row version change tracking.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this article. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.
 
-When you use a service such as Dayforce to complete pay runs, you must enable the integration in Human Resources. The integration requires specific data from Human Resources. Therefore, you must verify that data that is mapped to Dayforce is configured in Human Resources in a manner that supports the integration. The integration uses the following broad categories of data:
+When you use a service such as Dayforce to complete pay runs, you must enable the integration in Human Resources. The integration requires specific data from Human Resources. Therefore, you must verify that data you map to Dayforce is configured in Human Resources in a manner that supports the integration. The integration uses the following broad categories of data:
 
 - Human resources data
 - Compensation data
@@ -47,18 +46,18 @@ This article describes the steps that you must follow to enable the integration 
 
 ## Enable the integration
 
-In Human Resources, you must turn on the integration and enter the configuration information to connect to Dayforce. If you want the general ledger transaction that is produced to be imported into Microsoft Dynamics 365 Finance, you must also set up a Microsoft Azure storage account and enter the Azure Storage connection string in Finance.
+In Human Resources, turn on the integration and enter the configuration information to connect to Dayforce. If you want to import the general ledger transaction that the integration produces into Microsoft Dynamics 365 Finance, set up a Microsoft Azure storage account and enter the Azure Storage connection string in Finance.
 
 To turn on the integration in Human Resources, follow these steps:
 
 1. On the **System administration** page, select **Integration configuration**.
-2. Enter the secure File Transfer Protocol (FTP) endpoint and the secure FTP folder path.
-3. Enter the user name and password of the user who will access the secure FTP endpoint and folder path.
-4. Test the connection, as required, and set the **Enable payroll integration** option to **Yes**.
+1. Enter the secure File Transfer Protocol (FTP) endpoint and the secure FTP folder path.
+1. Enter the user name and password for the user who accesses the secure FTP endpoint and folder path.
+1. Test the connection, as required, and set the **Enable payroll integration** option to **Yes**.
 
-When the integration is turned on, the data export package and files are created, and the frequency is set. You can change this frequency as you require.
+When you turn on the integration, the system creates the data export package and files, and sets the frequency. You can change this frequency as you require.
 
-For more information about Azure storage accounts and Azure Storage connection strings, see the following Azure topics:
+For more information about Azure storage accounts and Azure Storage connection strings, see the following Azure articles:
 
 - [About Azure storage accounts](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
@@ -67,19 +66,19 @@ For more information about Azure storage accounts and Azure Storage connection s
 
 Turning on the payroll integration has two primary effects:
 
-- A data export project named "Payroll integration export" is created. This project contains the entities and fields required for the payroll integration. To examine the project, go to **System administration**, select the **Data management** tile, and then open the data project from the list of projects.
-- This batch job executes the data export project, encrypts the resulting data package, and transfers the data package file to the SFTP endpoint configured on the **Integration configuration** screen.
+- The system creates a data export project named **Payroll integration export**. This project contains the entities and fields required for the payroll integration. To examine the project, go to **System administration**, select the **Data management** tile, and then open the data project from the list of projects.
+- This batch job executes the data export project, encrypts the resulting data package, and transfers the data package file to the SFTP endpoint configured on **Integration configuration**.
 
 > [!NOTE]
-> The data package transferred to the SFTP endpoint is encrypted using a key that is unique to the package. The key is in an Azure Key Vault that is accessible only by Ceridian. It is not possible to decrypt and examine the data package contents. If you need to examine the contents of the data package, you need to export the "Payroll integration export" data project manually, download it, and then open it. Manual export will not apply encryption or transfer the package.
+> The data package transferred to the SFTP endpoint is encrypted by using a key that's unique to the package. The key is in an Azure Key Vault that only Ceridian can access. It's not possible to decrypt and examine the data package contents. If you need to examine the contents of the data package, you need to export the **Payroll integration export** data project manually, download it, and then open it. Manual export doesn't apply encryption or transfer the package.
 
-## Configure your data 
+## Configure your data
 
-To process payroll, you must configure human resource data in Human Resources. You must set up organizational data, such as jobs and positions, together with benefits and compensation information. This information provides the employment, pay, and deduction information that is required in order to generate employee pay.
+To process payroll, you must configure human resource data in Human Resources. Set up organizational data, such as jobs and positions, along with benefits and compensation information. This information provides the employment, pay, and deduction details that are required to generate employee pay.
 
 ### Human resource data
 
-#### Benefits 
+#### Benefits
 
 Human resources provides tools for the setup and maintenance of the benefits, deductions, and worker compensation plans that an organization offers or processes for its workers.
 
@@ -107,20 +106,20 @@ When you create benefits, keep in mind the following data and configurations tha
 - Amount or rate
 - Earning code
 
-##### Supported frequencies 
+##### Supported frequencies
 
 - Weekly
 - Bi-weekly
 - Semi-monthly
 - Monthly
 
-##### Supported bases 
+##### Supported bases
 
 - Fixed amount
 - Percent of earnings
 - Productive hours
 
-Dayforce creates the following deductions, based on the payroll impact that is defined on the benefit plan.
+Dayforce creates the following deductions, based on the payroll impact that you define on the benefit plan.
 
 | Selection in Human Resources        | Result in Dayforce                            |
 |----------------------------|-----------------------------------------------|
@@ -129,20 +128,20 @@ Dayforce creates the following deductions, based on the payroll impact that is d
 | Contribution only          | An employer deduction is created.             |
 | Deduction and contribution | Employee and employer deductions are created. |
 
-For more information about how to define and manage a benefits program, see the following topics:
+For more information about how to define and manage a benefits program, see the following articles:
 
 - [Deliver an employee benefits program](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
 - [Create a new benefit](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
 - [Define benefit eligibility rules and policies](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
 - [Enroll and remove benefits from workers](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
-#### Compensation 
+#### Compensation
 
-Compensation management is used to control the delivery of base pay and awards. An employee's fixed base pay and merit increases are controlled through fixed compensation plans. The payment of incentive pay, such as bonus payments, performance awards, stock options, and grants, and also one-time awards, are controlled through variable compensation plans.
+Use compensation management to control the delivery of base pay and awards. Fixed compensation plans control an employee's fixed base pay and merit increases. Variable compensation plans control the payment of incentive pay, such as bonus payments, performance awards, stock options, and grants, and one-time awards.
 
 Dayforce uses compensation information to calculate an employee's hourly or annual rate. Fixed compensation plans and pay rate conversions are required. Employees must be associated with a fixed compensation plan.
 
-For more information about compensation plans, see the following topics:
+For more information about compensation plans, see the following articles:
 
 - [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
 - [Create variable compensation plans](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
@@ -152,9 +151,9 @@ For more information about compensation plans, see the following topics:
 - [Enroll an employee in a fixed compensation plan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
 - [Enroll an employee in a variable compensation plan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
-#### Jobs 
+#### Jobs
 
-A job is a collection of the tasks and responsibilities that are required of a person who performs a job. For more information, see the following topics:
+A job is a collection of the tasks and responsibilities that are required of a person who performs a job. For more information, see the following articles:
 
 - [Setting up the components of a job](/dynamics365/unified-operations/talent/create-job)
 - [Define new jobs](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
@@ -177,29 +176,29 @@ Keep the following data and configuration in mind when you set up positions:
 - Default financial dimension – Cost center (required)
 - Worker assignment – Worker, assignment start, assignment end, reason code
 
-If multiple positions in the same department are associated with the same job, they are consolidated into a single position in Dayforce.
+If multiple positions in the same department are associated with the same job, they're consolidated into a single position in Dayforce.
 
-For more information, see the following topics:
+For more information, see the following articles:
 
 - [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
 - [Set up positions](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### Departments
 
-A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. You can use departments to report on functional areas. Departments might have profit and loss responsibility.
+A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. Use departments to report on functional areas. Departments might have profit and loss responsibility.
 
-For more information, see the following topics:
+For more information, see the following articles:
 
 - [Create a department and associate it with the department hierarchy](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
 - [Define new departments](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### Pay cycles and pay periods
 
-A pay cycle determines how often payroll is run and the specific days when workers are paid. For example, a pay cycle might be monthly, and employees might be paid on the last day of the month. Alternatively, a pay cycle might be weekly, and employees might be paid on the Tuesday after the end of the pay period. Pay cycles are assigned to positions to control when workers in those positions are paid.
+A pay cycle determines how often payroll runs and the specific days when workers are paid. For example, a pay cycle might be monthly, and employees might be paid on the last day of the month. Alternatively, a pay cycle might be weekly, and employees might be paid on the Tuesday after the end of the pay period. Assign pay cycles to positions to control when workers in those positions are paid.
 
 After you create pay cycles, you can generate pay periods for each cycle. Each pay period includes a default payment date that is based on information that you provide. However, you can modify the default payment date in a pay period to allow for exceptions, such as when the payment date falls on a holiday.
 
-The following information is used in Dayforce:
+Dayforce uses the following information:
 
 - Pay cycle (required)
 - Pay cycle frequency (required)
@@ -212,7 +211,7 @@ This information is integrated with Dayforce as pay groups, and is separated by 
 
 Earning codes uniquely identify every type of earnings that workers receive. The codes have various parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability.
 
-The following information is used in Dayforce:
+Dayforce uses the following information:
 
 - Earning Code (required)
 - Description
@@ -230,7 +229,7 @@ You can maintain the following information for workers:
 - **Leave and absence** – Maintain information about a worker's absences, such as working calendars, absence transactions, and absence setup.
 - **Compensation and payroll** – Maintain information about a worker's compensation plans and payroll information, such as plan enrollment, awards, performance, commission, tax information, retirement, and salary deductions.
 
-When you enter worker information, keep in mind the following data and configurations that are used in Dayforce.
+When you enter worker information, keep in mind the following data and configurations that Dayforce uses.
 
 #### General information
 
@@ -260,7 +259,7 @@ When you enter worker information, keep in mind the following data and configura
 - State (required)
 - County (required)
 
-#### Contact information 
+#### Contact information
 
 - Primary (required)
 - Contact number (required)
@@ -291,7 +290,7 @@ Employees may be assigned specific earnings at a given frequency of payment and 
 - Work Permit Number
 
 > [!NOTE]
-> For the payment method, Mexico supports **Cash**, **Check** (the company's physical check), and **Electronic Payment**. If np payment method is specified, **Check** is used by default.
+> For the payment method, Mexico supports **Cash**, **Check** (the company's physical check), and **Electronic Payment**. If you don't specify a payment method, **Check** is used by default.
 
 #### Employment details
 
@@ -306,11 +305,11 @@ Employment detail history is used as key information to derive an employee's hir
 
 An employee's key dates are derived by using the following information.
 
-| Human Resources                | Dayforce                                                                                             |
+| Human Resources                | Dayforce                                                                               |
 |-----------------------|------------------------------------------------------------------------------------------------------|
-| Most recent hire date | Employment start of current non-terminated employment history record                                 |
-| Termination date      | Termination date of current non-terminated employment history record                                 |
-| Start date            | Adjusted start date, start date, or employment start of current non-active employment history record |
+| Most recent hire date | Employment start of current nonterminated employment history record                                 |
+| Termination date      | Termination date of current nonterminated employment history record                                 |
+| Start date            | Adjusted start date, start date, or employment start of current nonactive employment history record |
 | Original hire date    | Employment start of earliest employment history record                                               |
 
 #### Compensation
@@ -324,13 +323,13 @@ A fixed compensation plan must be associated with every employee's primary posit
 - Annual equivalent (required)
 - Hourly equivalent (required)
 
-If an hourly employee has multiple positions, the fixed compensation of the primary position is imported into Dayforce as the employee-level base rate/salary. For non-primary positions, the hourly rate is saved to the corresponding position in Dayforce.
+If an hourly employee has multiple positions, the fixed compensation of the primary position is imported into Dayforce as the employee-level base rate/salary. For nonprimary positions, the hourly rate is saved to the corresponding position in Dayforce.
 
-If a salaried employee has multiple positions, the cumulative hour rate and annual salary across all active positions are derived and used as the employee-level base rate/salary.
+If a salaried employee has multiple positions, derive the cumulative hour rate and annual salary across all active positions and use them as the employee-level base rate or salary.
 
 #### Identification numbers
 
-##### Social Security identifier 
+##### Social Security identifier
 
 Every employee must have one primary identifier. This identifier must be of **SSN** identification type. In Dayforce, it's automatically derived as the employee's Social Security identifier that is required for hire.
 
@@ -339,25 +338,25 @@ Every employee must have one primary identifier. This identifier must be of **SS
 - Issued Date
 - Expiration Date
 
-Employees can declare multiple identification numbers of the **SSN** identification type. However, only the record that is marked as **Primary** is integrated into Dayforce, regardless of whether the number is active or expired.
+Employees can declare multiple identification numbers of the **SSN** identification type. However, only the record that you mark as **Primary** integrates into Dayforce, regardless of whether the number is active or expired.
 
 #### Bank accounts and disbursements
 
 Valid bank account information must be entered for any employee who chooses to be paid via bank account transfers.
 
-| Human Resources                         | Dayforce                                                                                                    |
-|--------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Bank account number (required) |                                                                                                             |
-| SWIFT code (required)          | **Bank ID** field used when processing payroll in Mexico.                                                             |
-| Branch number (required)       |                                                                                                             |
+| Human Resources             | Dayforce                                                                                  |
+|--------------------------------|----------------------------------------------------------------------------------------|
+| Bank account number (required) |                                                                         |
+| SWIFT code (required)          | **Bank ID** field used when processing payroll in Mexico.                               |
+| Branch number (required)       |                                                                   |
 | Bank account type (required)   | **Account type** field used when processing payroll in Mexico. Supported values include **Checking** and **Payroll**. |
 
 > [!NOTE]
-> Employees who choose to be paid via bank account transfers must provide a link to a remainder account that is under a legal entity that has its primary address in Mexico and associated with a valid bank account from a Mexican bank. All other non-remainder accounts are ignored.
+> Employees who choose to be paid via bank account transfers must provide a link to a remainder account that is under a legal entity that has its primary address in Mexico and associated with a valid bank account from a Mexican bank. All other nonremainder accounts are ignored.
 
 #### Address information
 
-Every employee must have one primary location. In Dayforce, this location is used to determine the employee's primary residence for tax purposes.
+Every employee must have one primary location. In Dayforce, this location determines the employee's primary residence for tax purposes.
 
 - Primary (required)
 - Country/region (required)
@@ -373,10 +372,10 @@ Every employee must have one primary location. In Dayforce, this location is use
 
 If you're generating pay for employees in the United States and Canada, the following elements must be configured:
 
-- Departments are required on positions.
-- Cost centers must be set as financial dimensions and must be the first element in the default financial dimension string.
+- Positions require departments.
+- Set cost centers as financial dimensions and make them the first element in the default financial dimension string.
 
-> [!NOTE] 
+> [!NOTE]
 > You can configure Human Resources to require that Positions specify a Department. To do this, go to **Human Resources Shared Positions > Positions > Require departments on positions**. We recommend that this setting be enforced for the integration.
 
 ### Job types
@@ -390,9 +389,9 @@ The following job types and descriptions are required.
 | Hourly     | Hourly      |
 | Salaried   | Salaried    |
 
-### Position types 
+### Position types
 
-You use position types to describe whether the position is full-time, part-time, or something else. Position types are mapped to Dayforce as pay classes that indicate whether an employee is full-time or part-time.
+Use position types to describe whether the position is full-time, part-time, or something else. Map position types to Dayforce as pay classes that indicate whether an employee is full-time or part-time.
 
 The following position types and descriptions are required.
 
@@ -403,7 +402,7 @@ The following position types and descriptions are required.
 
 ### Reason codes
 
-Reason codes provide information about the status of an employee. Reason codes are mapped to Dayforce as status reasons that indicate the reason for changes to an employee's position or employment status.
+Reason codes provide information about the status of an employee. Map reason codes to Dayforce as status reasons that indicate the reason for changes to an employee's position or employment status.
 
 The following reason codes and descriptions are required.
 
@@ -420,9 +419,9 @@ The following reason codes and descriptions are required.
 
 ### Marital status
 
-Marital status values are mapped to Dayforce and translated, as appropriate, to the accepted values upon integration.
+The integration maps marital status values to Dayforce and translates them, as appropriate, to the accepted values.
 
-The following table shows how marital status values are mapped to Dayforce.
+The following table shows how the integration maps marital status values to Dayforce.
 
 | Human Resources                 | Dayforce             |
 |------------------------|----------------------|
@@ -444,7 +443,7 @@ The following table shows how gender designations are mapped to Dayforce.
 |--------------|-----------------|
 | Male         | Male            |
 | Female       | Female          |
-| Non-specific | *Not supported* |
+| Nonspecific | *Not supported* |
 
 ### Earning codes
 
@@ -484,7 +483,7 @@ Earning codes uniquely identify every type of earnings that workers receive. The
 
 ### Addresses
 
-The identification of specific country or region, state, and county (municipality) codes requires specific formats that Dayforce and in-country/in-region providers can recognize. Although the format for cities is flexible, every city must be associated with a state.
+The identification of specific country or region, state, and county (municipality) codes require specific formats that Dayforce and in-country/in-region providers can recognize. Although the format for cities is flexible, every city must be associated with a state.
 
 | Human Resources          | Dayforce              |
 |-----------------|-----------------------|
@@ -497,19 +496,19 @@ The identification of specific country or region, state, and county (municipalit
 
 ### Tax regions
 
-Tax regions are used to determine the appropriate tax that should be applied during payroll generation. Tax regions are mapped to Dayforce as location addresses. The default tax region must be associated with the worker's active position. 
+Use tax regions to determine the appropriate tax to apply during payroll generation. Map tax regions to Dayforce as location addresses. Associate the default tax region with the worker's active position.
 
 - Tax region (required)
 - Country/Region (required)
 - State (required)
-- County 
+- County
 - City (required)
 
 ## Configure your data to generate payroll in Mexico
 
 If you're generating pay for employees in Mexico, the following elements must be configured:
 
-- Departments are required on positions.
+- Positions require departments.
 - Cost centers must be set as financial dimensions and must be the first element in the Default Financial Dimension string.
 
 ### Job types
@@ -523,9 +522,9 @@ The following job types and descriptions are required.
 | Hourly     | MX Hourly   |
 | Salaried   | MX Salaried |
 
-### Position types 
+### Position types
 
-You use position types to describe whether the position is full-time, part-time, or something else. Position types are mapped to Dayforce as pay classes that indicate whether an employee is full-time or part-time.
+Use position types to describe whether the position is full-time, part-time, or something else. Map position types to Dayforce as pay classes that indicate whether an employee is full-time or part-time.
 
 The following position types and descriptions are required.
 
@@ -536,7 +535,7 @@ The following position types and descriptions are required.
 
 ### Reason codes
 
-Reason codes provide information about the status of an employee. Reason codes are mapped to Dayforce as status reasons that indicate the reason for changes to an employee's position or employment status.
+Reason codes provide information about the status of an employee. Map reason codes to Dayforce as status reasons that indicate the reason for changes to an employee's position or employment status.
 
 The following reason codes and descriptions are required.
 
@@ -559,7 +558,7 @@ The following reason codes and descriptions are required.
 
 Terms of employment are used to create categories of employment terms. The terms are mapped to Dayforce as employment indicator values.
 
-The following terms of employment and descriptions are required.
+Include the following terms of employment and descriptions.
 
 | Terms of employment   | Description |
 |-----------------------|-------------|
@@ -570,9 +569,9 @@ The following terms of employment and descriptions are required.
 
 ### Marital status
 
-Marital status values are mapped to Dayforce and translated, as appropriate, to the accepted values upon integration.
+The integration maps marital status values to Dayforce and translates them, as appropriate, to the accepted values.
 
-The following table shows how marital status values are mapped to Dayforce.
+The following table shows how the integration maps marital status values to Dayforce.
 
 | Human Resources                 | Dayforce                  |
 |------------------------|---------------------------|
@@ -594,7 +593,7 @@ The following table shows how gender designations are mapped to Dayforce.
 |--------------|---------------------------|
 | Male         | Male                      |
 | Female       | Female                    |
-| Non-specific | *Not supported by Mexico* |
+| Nonspecific | *Not supported by Mexico* |
 
 ### Payment method
 
@@ -660,7 +659,7 @@ Earning codes uniquely identify every type of earnings that workers receive. The
 
 ### Addresses
 
-The identification of specific country or region, state, and county (municipality) codes requires specific formats that Dayforce and in-country/in-region providers can recognize. Although the format for cities is flexible, every city must be associated with a state.
+The identification of specific country or region, state, and county (municipality) codes require specific formats that Dayforce and in-country/in-region providers can recognize. Although the format for cities is flexible, every city must be associated with a state.
 
 | Human Resources              | Dayforce              |
 |---------------------|-----------------------|
@@ -682,7 +681,5 @@ Employees can declare passport information. This information is of the **Passpor
 - Expiration Date
 
 Employees can declare multiple identification numbers of the **Passport** identification type. However, only the current active passport entry is integrated into Dayforce. If all passport entries are expired, the passport that was most recently issued is integrated into Dayforce.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

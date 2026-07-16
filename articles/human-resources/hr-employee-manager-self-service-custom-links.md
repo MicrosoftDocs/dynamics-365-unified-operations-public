@@ -4,7 +4,7 @@
 title: Create custom links in Manager self service
 description: This article describes how to create custom links in Manager self service in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/09/2024
+ms.date: 06/11/2026
 ms.topic: how-to
 # optional metadata
 
@@ -26,10 +26,9 @@ ms.custom: sfi-image-nochange
 
 # Create custom links in Manager self service
 
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-You can add custom links on the **My team** tab in **Manager self service**. This feature lets you provide quick access to important information. It's similar to adding custom links in the **My information** tab in **Employee self service**.
+You can add custom links on the **My team** tab in **Manager self service**. This feature provides quick access to important information. It's similar to adding custom links in the **My information** tab in **Employee self service**.
 
 ## Enable the feature
 
@@ -38,17 +37,16 @@ To use this feature, enable **Custom links in Manager self service** in the **Fe
 ## Set up custom links
 
 1. In **Human Resources parameters**, select **Manager self service**.
-2. Under **Set up links for Managers**, you can add, edit, or remove a link. You can also group the links together so they display in a group in **Manager self service**.
+1. Under **Set up links for Managers**, add, edit, or remove a link. You can also group the links together so they display in a group in **Manager self service**.
 
    ![Set up custom links in Manager self-service.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. To see the links, go to the **My team** tab in **Employee self service**.
+1. To see the links, go to the **My team** tab in **Employee self service**.
 
    ![View custom links in Manager self-service.](./media/hr-employee-manager-self-service-custom-links-view.png)
 
 ## See also
 
 [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

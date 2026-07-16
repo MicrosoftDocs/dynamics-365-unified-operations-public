@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: CostingVersion, InventStdCostConv
 ms.topic: overview
-ms.date: 5/20/2026
+ms.date: 05/20/2026
 ms.custom: 
   - bap-template
 ---

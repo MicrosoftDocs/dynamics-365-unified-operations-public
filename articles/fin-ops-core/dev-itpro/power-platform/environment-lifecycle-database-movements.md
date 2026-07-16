@@ -3,7 +3,7 @@ title: Database and environment movements when Power Platform Integration is ena
 description: Learn about how to perform database and environment movements when finance and operations apps are integrated with Microsoft Power Platform.
 author: abunduc-ms
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/22/2026
 ms.custom: 
   - bap-template

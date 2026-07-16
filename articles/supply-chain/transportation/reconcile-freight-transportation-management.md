@@ -6,7 +6,7 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge, TMSCarrierCodeLookup, DefaultDashboard, WHSLoadPlanningWorkbench, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -17,15 +17,15 @@ ms.custom:
 
 This article describes the freight reconciliation process, which is also known as the matching process. During this process, system-generated freight bills that contain estimated freight costs are matched to actual invoices that are received from carriers. Any differences (variances) are reconciled.
 
-Freight reconciliation can be done manually. Alternatively, to help save time and reduce manual errors, it can be set up to occur automatically.
+You can perform freight reconciliation manually. Alternatively, to save time and reduce manual errors, you can set it up to occur automatically.
 
 ## The freight reconciliation process
 
-Freight rates are calculated by the rate engine that is associated with the relevant shipping carrier. When a load is confirmed, a freight bill is generated, and the freight rates are transferred to it. The freight rates are apportioned as miscellaneous charges to the relevant source document (purchase order, sales order, or transfer order), depending on the setup that is used for the regular billing process.
+The relevant shipping carrier's rate engine calculates freight rates. When a load is confirmed, a freight bill is generated, and the freight rates are transferred to it. Depending on the setup used for the regular billing process, the freight rates are apportioned as miscellaneous charges to the relevant source document (purchase order, sales order, or transfer order).
 
-The freight reconciliation process can start as soon as the freight invoice arrives from the shipping carrier. The invoice can be received either electronically or on paper. If it's received on paper, generate an electronic invoice by using the freight bill as a template.
+The freight reconciliation process can start as soon as the freight invoice arrives from the shipping carrier. You can receive the invoice electronically or on paper. If it's received on paper, generate an electronic invoice by using the freight bill as a template.
 
-Freight bills and invoices must then be matched. In other words, the freight bills that correspond to each freight invoice must be found. You can match the invoice lines one by one (manual matching), or you can match all available invoices at once (auto matching). To handle any variances that occur between the freight bill and the invoice, use the reconciliation reason codes that are set up for both manual and automatic reconciliation.
+Freight bills and invoices must then be matched. In other words, find the freight bills that correspond to each freight invoice. You can match the invoice lines one by one (manual matching), or you can match all available invoices at once (auto matching). To handle any variances that occur between the freight bill and the invoice, use the reconciliation reason codes that are set up for both manual and automatic reconciliation.
 
 :::image type="content" source="media/freight-reconcilation-process.jpg" alt-text="Diagram that illustrates the freight reconciliation process." lightbox="media/freight-reconcilation-process.jpg":::
 
@@ -33,14 +33,14 @@ Freight bills and invoices must then be matched. In other words, the freight bil
 
 To use Transportation management (TMS) to reconcile freight, follow these steps:
 
-1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
+1. Go to **Transportation management** > **Setup** > **Transportation management parameters**.
 1. On the **General** tab, on the **Freight reconciliation** FastTab, set the **Enable freight reconciliation** option to *Yes*.
 
 ## Set up reconciliation reasons
 
-Reconciliation reasons (or reason codes) specify accounts that are debited and credited with any variances that occur between the freight bills and invoices as a result of manual or automatic reconciliation. They're set up on the **Reconciliation reasons** page (**Transportation management** \> **Setup** \> **Reconciliation reasons**).
+Reconciliation reasons (or reason codes) specify accounts that are debited and credited with any variances that occur between the freight bills and invoices as a result of manual or automatic reconciliation. They're set up on the **Reconciliation reasons** page (**Transportation management** > **Setup** > **Reconciliation reasons**).
 
-For some reason codes, you might not want to credit a specific account. Instead, you want any credit to be paid to the vendor. In this case, select the **Pay freight vendor** checkbox. Be sure that you also specify a vendor account for the carrier on the **Shipping carriers** page (**Transportation management** \> **Carriers** \> **Shipping carriers**).
+For some reason codes, you might not want to credit a specific account. Instead, you want any credit to be paid to the vendor. In this case, select the **Pay freight vendor** checkbox. Be sure that you also specify a vendor account for the carrier on the **Shipping carriers** page (**Transportation management** > **Carriers** > **Shipping carriers**).
 
 When the ship confirm action occurs, the freight bill is generated, and freight charges are apportioned back to the original source document as miscellaneous charges. Alternatively, you might want to charge the debit and credit accounts that are specified on the **Reconciliation reasons** page. In this case, select the **Override accounts** checkbox.
 
@@ -60,8 +60,8 @@ The following illustration shows how to generate a freight invoice and do freigh
 
 1. Go to one of the following pages, depending on whether you're reconciling an inbound load or an outbound load:
 
-    - **Transportation management** \> **Planning** \> **Inbound load planning workbench**.
-    - **Transportation management** \> **Planning** \> **Outbound load planning workbench**.
+    - **Transportation management** > **Planning** > **Inbound load planning workbench**.
+    - **Transportation management** > **Planning** > **Outbound load planning workbench**.
 
 1. Clear the **Hide shipped and received** checkbox.
 1. In the **Load** grid, select the load that you want to reconcile.
@@ -105,7 +105,7 @@ To use automatic reconciliation, you must specify the schedule for reconciliatio
 
 ### Set up vendor invoice parameters
 
-To enable automatic creation and/or posting of a vendor invoice journal during the automatic reconciliation process, go to **Transportation management** \> **Setup** \> **Transportation management parameters** \> **Vendor invoice**. To enable the system to create an invoice journal to reconcile any differences between the freight bill and freight invoice, turn on the **Write vendor invoice journal** parameter. To enable the system to post the invoice journal after it's approved by the user who is defined in the **Workflow user** field, turn on the **Post journal** parameter.
+To enable automatic creation and/or posting of a vendor invoice journal during the automatic reconciliation process, go to **Transportation management** > **Setup** > **Transportation management parameters** > **Vendor invoice**. To enable the system to create an invoice journal to reconcile any differences between the freight bill and freight invoice, turn on the **Write vendor invoice journal** parameter. To enable the system to post the invoice journal after it's approved by the user who is defined in the **Workflow user** field, turn on the **Post journal** parameter.
 
 To run the automated match and pay batch jobs, turn on the **Automatically match and pay the freight invoice** parameter. If the **Automatically match and pay the freight invoice** parameter is turned off, but the **Enable Freight Reconciliation** parameter is turned on, you can run the manual match and pay process, and still submit vendor invoices for approval.
 
@@ -113,13 +113,13 @@ The **Match interval** parameter defines the schedule for automatic reconciliati
 
 ### Set up billing groups
 
-Billing groups are user-defined categories. They can be set up to reflect the categories of charges that are present on the invoices that you receive from carriers. To set them up, go to **Transportation management** \> **Setup** \> **Freight reconciliation** \> **Billing group**, and specify a billing group ID and name. (Both fields are free-text fields.)
+Billing groups are user-defined categories. Set them up to reflect the categories of charges that are present on the invoices that you receive from carriers. To set them up, go to **Transportation management** > **Setup** > **Freight reconciliation** > **Billing group**, and specify a billing group ID and name. (Both fields are free-text fields.)
 
 ### Set up the freight bill type
 
 Freight bill types define how freight bills and carrier invoices should be matched. They define specific criteria, both mandatory and optional. The auto matching process considers a freight bill and an invoice only if defined mandatory criteria are populated and match on both. If optional criteria are blank on the freight bill or the invoice, the process can still consider them.
 
-1. Go to **Transportation management** \> **Setup** \> **Freight reconciliation** \> **Freight bill type**.
+1. Go to **Transportation management** > **Setup** > **Freight reconciliation** > **Freight bill type**.
 1. Select **New**.
 1. In the **Freight bill type** field, enter a value.
 1. In the **Engine assembly** field, enter *Microsoft.Dynamics.Ax.Tms.dll*. This assembly is the standard TMS matching engine code library.
@@ -138,7 +138,7 @@ Freight bill types define how freight bills and carrier invoices should be match
 
 The freight bill type assignment specifies the freight bill type that is used for a carrier. The system then uses that freight bill type to determine the matching requirements when an invoice is received. If carriers ship from or to multiple sites and warehouses within the same legal entity, leave the **Site** and **Warehouse** fields blank.
 
-1. Go to **Transportation management** \> **Setup** \> **Freight reconciliation** \> **Freight bill type assignments**.
+1. Go to **Transportation management** > **Setup** > **Freight reconciliation** > **Freight bill type assignments**.
 1. Select **New**.
 1. In the **Mode** field, enter or select a value.
 1. In the **Shipping carrier** field, enter or select a value.
@@ -149,7 +149,7 @@ The freight bill type assignment specifies the freight bill type that is used fo
 
 The audit master defines the tolerance limits for automatic freight reconciliation. In other words, it specifies how much the monetary amounts on the freight bill and the carrier invoice can differ. If the difference is outside the defined tolerance limits, reconciliation is prevented from occurring. The audit master also defines how discrepancies are handled.
 
-1. Go to **Transportation management** \> **Setup** \> **Freight reconciliation** \> **Audit master**.
+1. Go to **Transportation management** > **Setup** > **Freight reconciliation** > **Audit master**.
 1. Select **New**.
 1. In the **Audit master ID** field, enter a value.
 1. In the **Shipping carrier** field, select the same shipping carrier that you selected earlier.
@@ -212,6 +212,6 @@ Another way to do manual matching for this example is to proceed in the followin
 1. Match Inv3 with FB. FB has a remaining amount of 1,600, which is the same as subtracting &minus;100 from 1,500. Both FB and Inv3 have a matched quantity of &minus;100.
 1. Match Inv1 and Inv2 with FB, one after the other. FB is fully matched.
 
-As this example shows, matching should always be done manually if freight invoices have negative amounts. This approach ensures the freight invoices that have negative amounts can always be matched to a freight bill that wasn't fully matched, because you can control the matching sequence.
+As this example shows, always match manually if freight invoices have negative amounts. This approach ensures that freight invoices with negative amounts can always be matched to a freight bill that wasn't fully matched, because you can control the matching sequence.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

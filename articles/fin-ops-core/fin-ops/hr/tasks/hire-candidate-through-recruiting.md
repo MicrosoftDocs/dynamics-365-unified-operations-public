@@ -4,7 +4,7 @@ description: Learn about the recruiting procedure that enables a recruiter to hi
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 01/10/2022
+ms.date: 06/29/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -19,26 +19,26 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> The recruiting functionality in this article will be referred to as Recruitment projects and focuses on applicants, applications, and recruitment projects.  
+> This article refers to the recruiting functionality as Recruitment projects. It focuses on applicants, applications, and recruitment projects.  
 
-This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. When you hire an applicant through a recruiting project, a new worker record is created, and the applicant's record has a status of **Employed**. The **USMF** demo data company was used to create this procedure.
+This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. When you hire an applicant through a recruiting project, you create a new worker record, and the applicant's record has a status of **Employed**. This procedure uses the **USMF** demo data company.
 
-1. Go to **Human resources \> Recruitment \> Applications \> Applications**. 
-2. Select an application for an external applicant.
-3. In the list, select the link in the selected row.
-4. Select **Application status**.
-5. Select **Hire new worker**.
-6. In the **Employment start date** field, enter a date and time.
-7. In the **Position** field, select the drop-down arrow to open the lookup.
-8. In the list, select the link in the selected row.
-9. In the **Assignment start** field, enter a date and time.
-10. Select **Hire new worker**.
-11. Expand the **Employment history** FactBox.
-12. Expand the **Current positions** FactBox.
-13. Expand the **Employment history** FactBox.
-14. Expand the **Current positions** FactBox.
-15. Expand or collapse the **Addresses** section.
-16. Expand or collapse the **Contact information** section.
-17. Expand or collapse the **Personal information** section.
+1. Go to **Human resources > Recruitment > Applications > Applications**. 
+1. Select an application for an external applicant.
+1. In the list, select the link in the selected row.
+1. Select **Application status**.
+1. Select **Hire new worker**.
+1. In the **Employment start date** field, enter a date and time.
+1. In the **Position** field, select the drop-down arrow to open the lookup.
+1. In the list, select the link in the selected row.
+1. In the **Assignment start** field, enter a date and time.
+1. Select **Hire new worker**.
+1. Expand the **Employment history** FactBox.
+1. Expand the **Current positions** FactBox.
+1. Expand the **Employment history** FactBox.
+1. Expand the **Current positions** FactBox.
+1. Expand or collapse the **Addresses** section.
+1. Expand or collapse the **Contact information** section.
+1. Expand or collapse the **Personal information** section.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

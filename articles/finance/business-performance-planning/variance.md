@@ -4,7 +4,7 @@ description: Learn how to use the Variance visual in the Business performance pl
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/07/2023
+ms.date: 06/22/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

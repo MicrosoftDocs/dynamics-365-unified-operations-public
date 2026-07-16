@@ -3,7 +3,7 @@ title: Real async feature enhancements
 description: Learn about real async feature enhancements to SysOperations, including an outline on how to enable the real async feature with examples.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/30/2026
 ms.reviewer: twheeloc
 audience: Application user

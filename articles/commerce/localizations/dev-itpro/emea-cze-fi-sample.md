@@ -2,7 +2,7 @@
 title: Fiscal registration service integration sample for the Czech Republic
 description: This article provides an overview of the fiscal integration sample for the Czech Republic in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 05/12/2026
+ms.date: 06/26/2026
 ms.topic: overview
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -175,7 +175,7 @@ For more information about how to work with receipt formats, see [Set up and des
 
 ## Set up fiscal integration for the Czech Republic
 
-The fiscal registration service integration sample for the Czech Republic is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
+The fiscal registration service integration sample for the Czech Republic is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\EfrSample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
 
@@ -192,15 +192,9 @@ To enable the registration process, follow these steps to set up Commerce headqu
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
     1. Select the correct release branch version according to your SDK or application version.
-    1. Open **src \> FiscalIntegration \> Efr**.
+    1. Open **src \> FiscalIntegration \> EfrSample**.
     1. Download the fiscal document provider configuration file at **Configurations \> DocumentProviders \> DocumentProviderFiscalEFRSampleCzech.xml**.
     1. Download the fiscal connector configuration file at **Configurations \> Connectors \> ConnectorEFRSample.xml**.
-
-    > [!NOTE]
-    > In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
-    >
-    > - **Fiscal document provider configuration file:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleCzech.xml
-    > - **Fiscal connector configuration file:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
@@ -254,31 +248,31 @@ The fiscal connector configuration includes the following settings as part of th
 To set up a development environment to test and extend the sample, follow these steps:
 
 1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select the correct release branch version according to your SDK or application version. For more information, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md).
-1. Open the EFR solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln**, and build it.
+1. Open the EFR solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\EfrSample**, and build it.
 1. Install CRT extensions:
 
     1. Find the CRT extension installer:
 
-        - **Commerce Scale Unit:** In the **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EFR.Installer** installer.
-        - **Local CRT on Modern POS:** In the **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EFR.Installer** installer.
+        - **Commerce Scale Unit:** In the **EfrSample\\ScaleUnit.Installer\\bin** folder, find the **Contoso.EFRSample.ScaleUnit.Installer** installer.
+        - **Store Commerce:** In the **EfrSample\\StoreCommerce.Installer\\bin** folder, find the **Contoso.EFRSample.StoreCommerce.Installer** installer.
 
     1. Start the CRT extension installer from the command line:
 
         - **Commerce Scale Unit:**
 
             ```Console
-            ScaleUnit.EFR.Installer.exe install --verbosity 0
+            Contoso.EFRSample.ScaleUnit.Installer.exe install --verbosity 0
             ```
 
-        - **Local CRT on Modern POS:**
+        - **Store Commerce:**
 
             ```Console
-            ModernPOS.EFR.Installer.exe install --verbosity 0
+            Contoso.EFRSample.StoreCommerce.Installer.exe install --verbosity 0
             ```
 
 1. Install fiscal connector extensions:
 
-    You can install fiscal connector extensions on the [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
+    You can install fiscal connector extensions on the [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or the [Store Commerce app](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
     1. Install Hardware station extensions:
 
@@ -289,9 +283,9 @@ To set up a development environment to test and extend the sample, follow these 
             HardwareStation.EFR.Installer.exe install --verbosity 0
             ```
 
-    1. Install POS extensions:
+    1. Install Store Commerce extensions:
 
-        1. Open the POS fiscal connector sample solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln**, and build it.
+        1. Open the Store Commerce fiscal connector sample solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln**, and build it.
         1. In the **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461** folder, find the **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** installer.
         1. Start the extension installer from the command line by running the following command.
 
@@ -305,7 +299,7 @@ Follow the steps in [Set up a build pipeline for a fiscal integration sample](..
 
 ## Design of extensions
 
-The fiscal registration service integration sample for the Czech Republic is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
+The fiscal registration service integration sample for the Czech Republic is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\EfrSample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
 
 ### Commerce runtime extension design
 
@@ -325,7 +319,7 @@ The connector supports the following requests.
 
 #### Configuration
 
-The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleCzech.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal document provider to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration.
+The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\EfrSample\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleCzech.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal document provider to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration.
 
 ### Hardware station extension design
 
@@ -345,7 +339,7 @@ The connector supports the following requests.
 
 #### Configuration
 
-The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Commerce headquarters. The file format aligns with the requirements for fiscal integration configuration.
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\EfrSample\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Commerce headquarters. The file format aligns with the requirements for fiscal integration configuration.
 
 ### POS fiscal connector extension design
 
@@ -365,7 +359,7 @@ The EFR fiscal connector is in the **Pos.Extension\\Connectors\\Efr\\EfrFiscalCo
 
 #### Configuration
 
-The configuration file is in the **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The file enables you to configure settings for the fiscal connector from Commerce headquarters. The file format aligns with the requirements for fiscal integration configuration. Add the following settings:
+The configuration file is in the **src\\FiscalIntegration\\EfrSample\\Configurations\\Connectors** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The file enables you to configure settings for the fiscal connector from Commerce headquarters. The file format aligns with the requirements for fiscal integration configuration. Add the following settings:
 
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds, that the connector waits for a response from the fiscal registration service.

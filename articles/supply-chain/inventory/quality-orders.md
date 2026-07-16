@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: InventQualityOrderTable
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -19,15 +19,15 @@ This article describes how to manually or automatically create quality orders, a
 
 ## Automatically created quality orders
 
-You can configure the system so that it automatically creates quality orders, based on item sampling rules. Learn more in [Quality management item sampling](quality-item-sampling.md).
+Configure the system to automatically create quality orders based on item sampling rules. Learn more in [Quality management item sampling](quality-item-sampling.md).
 
 ## <a name="manual-quality-orders"></a>Manually create quality orders
 
 To manually create a quality order, follow these steps:
 
-1. Go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**.
+1. Go to **Inventory management > Periodic tasks > Quality management > Quality orders**.
 1. Select **New**.
-1. In the **Quality orders** dialog box, in the **Reference type** field, select the inventory reference that your quality order will be related to. For a description of the reference types that are available for selection, see the [Quality order reference types](#ref-types) section later in this article.
+1. In the **Quality orders** dialog box, in the **Reference type** field, select the inventory reference that your quality order is related to. For a description of the reference types that are available for selection, see the [Quality order reference types](#ref-types) section later in this article.
 
     > [!NOTE]
     > Inventory that is related to the selected reference must be available. If no inventory is available for the combination of the reference type, quantity, and inventory dimensions that you select, you'll receive an error message.
@@ -71,17 +71,17 @@ Quality orders are used to track the details about inspections and test results 
 
 ## View and create quality orders from various parts of the system
 
-Quality orders can be manually created. Alternatively, they can be automatically created based on the quality associations that you define. For more information about how to create and manage the automatic creation of quality orders, see [Quality associations](quality-associations.md).
+Quality orders can be created manually. Alternatively, they can be automatically created based on the quality associations that you define. For more information about how to create and manage the automatic creation of quality orders, see [Quality associations](quality-associations.md).
 
-You can use the quality order page to manually create a new quality order or view the status of a quality order that is related to another record. There are several ways to access the quality order page.
+Use the quality order page to manually create a new quality order or view the status of a quality order related to another record. There are several ways to access the quality order page.
 
 ### From the Quality orders page
 
-To manually create quality orders and view all existing quality orders, go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**. The remaining sections of this article provide more information about how to work with the **Quality orders** page.
+To manually create quality orders and view all existing quality orders, go to **Inventory management > Periodic tasks > Quality management > Quality orders**. The remaining sections of this article provide more information about how to work with the **Quality orders** page.
 
 ### From sales orders
 
-To work with quality orders that are related to your sales orders, go to **Sales and marketing \> Sales orders \> All sales orders**, and then follow any of these steps:
+To work with quality orders that are related to your sales orders, go to **Sales and marketing > Sales orders > All sales orders**, and then follow any of these steps:
 
 - Open a sales order, or select it in the grid. Then, on the Action Pane, on the **Pick and pack** tab, in the **Quality management** group, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the sales order.
 - Open a sales order, and then, on the **Header** tab, select the **General** FastTab. The **Quality order status** field shows the overall status of all quality orders that are related to the sales order.
@@ -89,7 +89,7 @@ To work with quality orders that are related to your sales orders, go to **Sales
 
 ### From purchase orders
 
-To work with quality orders that are related to your purchase orders, go to **Procurement and sources \> Purchase orders \> All purchase orders**, and then follow any of these steps:
+To work with quality orders that are related to your purchase orders, go to **Procurement and sources > Purchase orders > All purchase orders**, and then follow any of these steps:
 
 - Open a purchase order, or select it in the grid. Then, on the Action Pane, on the **Receive** tab, in the **Quality management** group, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the purchase order.
 - Open a purchase order, and then, on the **Header** tab, select the **General** FastTab. The **Quality order status** field shows the overall status of all quality orders that are related to the purchase order.
@@ -97,35 +97,35 @@ To work with quality orders that are related to your purchase orders, go to **Pr
 
 ### From production orders
 
-To work with quality orders that are related to your production orders, go to **Production control \> Production orders \> All production orders**, and then follow any of these steps:
+To work with quality orders that are related to your production orders, go to **Production control > Production orders > All production orders**, and then follow any of these steps:
 
 - Open a production order, or select it in the grid. Then, on the Action Pane, on the **View** tab, in the **Manage quality** group, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the production order.
 - Open a production order, or select it in the grid. Then, on the Action Pane, on the **Production order** tab, in the **Production details** group, select **Route** to open the **Production route** page. To view the quality orders that are related to a route operation, follow one of these steps:
 
-    - Select the target route operation in the grid. Then, on the Action Pane, select **Inquiries \> Quality orders**.
+    - Select the target route operation in the grid. Then, on the Action Pane, select **Inquiries > Quality orders**.
     - Select the value in the **Oper. No.** field for the target route operation to open its **Production route** details page. On the **General** FastTab, the **Quality order status** field shows the status for the quality orders that are related to the route operation.
 
 - Open a production order, and select the **General** FastTab. The **Quality order status** field shows the status of the quality orders that are related to the production order.
 
 ### From quarantine orders
 
-To work with quality orders that are related to your quarantine orders, go to **Inventory management \> Periodic tasks \> Quality management \> Quarantine orders**, and then follow any of these steps:
+To work with quality orders that are related to your quarantine orders, go to **Inventory management > Periodic tasks > Quality management > Quarantine orders**, and then follow any of these steps:
 
-- Review the values in the **Quality order status** column. In this way, you can learn the overall status of all quality orders that are related to each quarantine order in grid.
+- Review the values in the **Quality order status** column. This way, you learn the overall status of all quality orders that are related to each quarantine order in the grid.
 - Select a quarantine order in the grid, and then, on the Action Pane, select **Quality orders** to view, create, or update quality orders that are related to the quarantine order.
 
 ### From goods-in-transit orders
 
-If you use the **Landed cost** module, you can set up the system so that quality orders are automatically created when goods-in-transit orders are received. The quality control process can then be initiated for the goods-in-transit orders. This process ensures that products undergo stringent quality checks throughout transit. Therefore, it ensures that high-quality goods are received at the warehouse. During the quality control process, inventory from goods-in-transit orders can be blocked to prevent the shipment of defective products. This function is aligned with regulatory compliance and helps mitigate legal risks.
+If you use the **Landed cost** module, you can set up the system to automatically create quality orders when goods-in-transit orders are received. The quality control process can then be initiated for the goods-in-transit orders. This process ensures that products undergo stringent quality checks throughout transit and that high-quality goods are received at the warehouse. During quality control, inventory from goods-in-transit orders can be blocked to prevent shipment of defective products. This function aligns with regulatory compliance and helps mitigate legal risks.
 
-To automatically create quality orders based on goods-in-transit orders, enable the *Enable Quality Control for Goods In-Transit Order* feature. For more information, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md). In addition, [quality associations](quality-associations.md) must be configured.
+To automatically create quality orders based on goods-in-transit orders, enable the *Enable Quality Control for Goods In-Transit Order* feature. For more information, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md). In addition, configure [quality associations](quality-associations.md).
 
-To create quality orders for the received quantity only, set the **Per updated quantity** option to *Yes* on the **Item sampling** page (**Inventory management \> Setup \> Quality control \> Item sampling**).
+To create quality orders for the received quantity only, set the **Per updated quantity** option to *Yes* on the **Item sampling** page (**Inventory management > Setup > Quality control > Item sampling**).
 
 Users can view, manually create, or update quality orders directly from the **Goods-in-transit order** page. To work with quality orders that are related to your goods-in-transit orders, follow one of these steps:
 
-- Go to **Landed cost \> Periodic tasks \> Goods in transit orders** and select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
-- Go to **Landed cost \> Voyages \> All voyages** and open or select a voyage or select a voyage. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page, where you can view, create, or update quality orders that are related to the selected goods-in-transit order.
+- Go to **Landed cost > Periodic tasks > Goods in transit orders** and select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
+- Go to **Landed cost > Voyages > All voyages** and open or select a voyage or select a voyage. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page, where you can view, create, or update quality orders that are related to the selected goods-in-transit order.
 
 ## Advanced actions for quality orders
 
@@ -137,21 +137,21 @@ By default, you can no longer edit or update a quality order after it has been v
 
 To reopen a quality order, follow these steps:
 
-1. Go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**.
+1. Go to **Inventory management > Periodic tasks > Quality management > Quality orders**.
 1. Open the validated quality order, or select it in the grid.
 1. On the Action Pane, select **Reopen quality order**.
 
 ### Create a certificate of analysis for a quality order
 
-A certificate of analysis (CoA) is a report that is generated by an organization's quality assurance team. It validates that a product meets specific regulations or requirements. Your customers or regulatory establishments in your geopolitical location might require CoA reports. They might also be required based on your industry and the type of products that you handle, purchase, produce, or sell.
+A certificate of analysis (CoA) is a report that an organization's quality assurance team generates. It validates that a product meets specific regulations or requirements. Your customers or regulatory establishments in your geopolitical location might require CoA reports. They might also be required based on your industry and the type of products that you handle, purchase, produce, or sell.
 
-Supply Chain Management lets you generate a CoA from a quality order. The report will include the results of any tests on the quality order where the **Certificate of analysis report** option is set to *Yes*. This option can be set by default, based on the test that you define on the **Tests** page. However, you can override the setting on specific tests for a specific quality order.
+Supply Chain Management lets you generate a CoA from a quality order. The report includes the results of any tests on the quality order where the **Certificate of analysis report** option is set to *Yes*. You can set this option by default based on the test that you define on the **Tests** page. However, you can override the setting on specific tests for a specific quality order.
 
 To generate a CoA for a quality order, follow these steps:
 
-1. Go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**.
+1. Go to **Inventory management > Periodic tasks > Quality management > Quality orders**.
 1. Select the quality order that you want to create a CoA for.
-1. On the Action Pane, select **Inquiries \> Certificate of analysis**.
+1. On the Action Pane, select **Inquiries > Certificate of analysis**.
 1. On the **Certificate of analysis** page, on the Action Pane, select **New**.
 1. Optional: In the **Contact** field, select the contact person that the certificate should be addressed to.
 1. On the Action Pane, select **Print**.
@@ -160,33 +160,33 @@ To generate a CoA for a quality order, follow these steps:
 
 ### Block or unblock inventory for a quality order
 
-When a quality order is automatically generated from a quality association, the item sampling that is assigned to the quality association can be configured to block the full inventory quantity of the reference that is being tested. For more information about item samplings, see [Quality management item sampling](quality-item-sampling.md).
+When a quality order is automatically generated from a quality association, the item sampling assigned to the quality association can block the full inventory quantity of the reference that is being tested. For more information about item samplings, see [Quality management item sampling](quality-item-sampling.md).
 
 If you aren't using full blocking, or if you're manually creating a quality order, the system automatically creates an inventory blocking record for the quantity of the item that is being tested on the quality order. In the record that is created on the **Inventory blocking** page, the **Inventory blocking type** field is set to *Quality order*.
 
-To view and edit the inventory blocking for a quality order that is selected on the **Inventory blocking** page, select **Inquiries \> Inventory blocking** on the Action Pane. Learn more in [Inventory blocking](inventory-blocking.md).
+To view and edit the inventory blocking for a quality order that is selected on the **Inventory blocking** page, select **Inquiries > Inventory blocking** on the Action Pane. Learn more in [Inventory blocking](inventory-blocking.md).
 
 ### Inquire about the details of a quality order
 
 Use the following buttons on the Action Pane of the **Quality orders** page to view more information about or related to a quality order:
 
-- **Inquiries \> Work details** – Open a page where you can view warehouse work that is related to the quality order.
-- **Inquiries \> Non conformances** – Open a page where you can view any nonconformances that are related to the quality order.
-- **Inventory** – The commands on this menu are common across all inventory transactions. You can use them view or update details such as transactions, on-hand inventory, reservations, and marking.
+- **Inquiries > Work details** – Open a page where you can view warehouse work that is related to the quality order.
+- **Inquiries > Non conformances** – Open a page where you can view any nonconformances that are related to the quality order.
+- **Inventory** – The commands on this menu are common across all inventory transactions. Use them to view or update details such as transactions, on-hand inventory, reservations, and marking.
 
 ### Create cases related to quality orders
 
-You can create cases that are related to quality orders. In this way, you can track details about issues and work toward a resolution. You can then use the workflow features of case management to route a case through a predefined business process to obtain additional approvals or get more information about a specific issue. You can also use the knowledge articles feature to create a knowledge base of resolutions for common issues.
+You can create cases that are related to quality orders. This way, you can track details about issues and work toward a resolution. You can use the workflow features of case management to route a case through a predefined business process to obtain additional approvals or get more information about a specific issue. You can also use the knowledge articles feature to create a knowledge base of resolutions for common issues.
 
 ## Case management examples for quality management
 
 ### Example 1
 
-You work for a manufacturing company that must follow strict regulations that are related to the production of regulated products such as food. Quality orders are used to record and track details about the quality of items throughout the production process. If a quality order fails specific tests, there might be a problem with the equipment. Cases are used to follow a business process and escalate the issue to the correct engineers so that the root cause can be determined. To make business processes easier to follow, the company keeps a knowledge base of common issues that are related to quality orders and equipment issues.
+You work for a manufacturing company that must follow strict regulations that are related to the production of regulated products such as food. Quality orders are used to record and track details about the quality of items throughout the production process. If a quality order fails specific tests, there might be a problem with the equipment. Cases are used to follow a business process and escalate the issue to the correct engineers so that they can determine the root cause. To make business processes easier to follow, the company keeps a knowledge base of common issues that are related to quality orders and equipment issues.
 
 ### Example 2
 
-You work for a distribution company that ships products that can be customized for various countries/regions. Some customers have strict specifications that must be followed. Otherwise, fees and returns or chargebacks might be incurred. You use quality orders to track the details about each test and results that match customer requirements. Cases are used to review and approve the details for the CoA before the document is generated and attached together with other shipping paperwork.
+You work for a distribution company that ships products that can be customized for various countries/regions. Some customers have strict specifications that you must follow. Otherwise, you might incur fees, returns, or chargebacks. You use quality orders to track the details about each test and results that match customer requirements. Cases are used to review and approve the details for the CoA before the document is generated and attached with other shipping paperwork.
 
 ## Related information
 

@@ -4,7 +4,7 @@ description: Learn about intercompany orders and return orders, including outlin
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 5/21/2026
+ms.date: 05/21/2026
 ms.reviewer: kamaybac
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ---

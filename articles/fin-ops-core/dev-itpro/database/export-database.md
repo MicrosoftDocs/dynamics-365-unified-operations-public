@@ -3,7 +3,7 @@ title: Export a database
 description: Learn how to export a database for finance and operations, including processes for self-service exporting of databases and known issues.
 author: LaneSwenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 04/03/2026

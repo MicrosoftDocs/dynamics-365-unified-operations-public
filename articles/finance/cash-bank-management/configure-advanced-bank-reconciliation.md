@@ -1,10 +1,10 @@
 ---
 title: Advanced bank reconciliation setup process
 description: Advanced bank reconciliation allows you to import electronic bank statements and automatically reconcile with bank transactions in Microsoft Dynamics 365 Finance.
-author: EricWangChen
-ms.author: wangchen
+author: mukumarm
+ms.author: mukumarm
 ms.topic: install-set-up-deploy
-ms.date: 04/01/2026
+ms.date: 07/02/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -22,11 +22,31 @@ When you use advanced bank reconciliation, you can import electronic bank statem
 
 Before you use the advanced bank reconciliation functionality, set up several components. For more information about setting up bank statement import, see [Set up the advanced bank reconciliation import using Electronic reporting](../accounts-payable/import-bai2-er.md). The following sections detail the requirements for the reconciliation process.
 
-## Transaction codes
+## Transaction types
 
-Use transaction codes as part of the bank reconciliation matching rules. Transaction codes help you match only the same types of transactions between Finance and your bank statement. To use this type of matching, first define transaction types for bank transactions from Finance, and then map those types to statement transaction codes that your bank uses. Define transaction types for bank transactions on the **Bank transaction type** page. This page is also where you define the main account to use for postings associated with that transaction type.
+A bank transaction type is a code you define to identify and classify the kinds of transactions that hit a bank account. For example, deposits, withdrawals, fees, interest, or nonsufficient funds (NSF). These types are later grouped and used in bank reconciliation and reporting.
 
-After you define your bank transaction codes, map them to the transaction codes used in your electronic bank statements. Use the **Transaction code mapping** page for this mapping process. Complete transaction code mapping separately for each bank account.
+To create a bank transaction type, follow these steps:
+
+1. Go to **Cash and bank management** > **Setup** > **Bank transaction types**.
+1. Select **New** to add a line.
+1. In the **Bank transaction type** field, enter a unique code or identifier, such as DEP, NSF, or FEE.
+1. In the **Name** field, enter a description. For example, Deposit or Nonsufficient funds.
+1. Repeat for each transaction type you need.
+1. Select **Save**.
+
+## Transaction code mapping
+
+Use **transaction codes** as part of the **bank reconciliation matching rules**. Transaction codes help match only the same types of transactions between Finance and your bank statement. To use this type of matching, first define transaction types for bank transactions from Finance, and then map those types to statement transaction codes that your bank uses.
+
+After you define your bank transaction codes, map them to the transaction codes used in your electronic bank statements by using the **Transaction code mapping** page. Complete transaction code mapping separately for each bank account.
+
+To create transaction code mapping, follow these steps:
+
+1. Go to **Cash and bank management** > **Setup** > **Transaction code mapping**.
+1. Select **New** to add a transaction code mapping.
+1. In the **Bank account** field, select the bank account.
+1. In the **Mappings** area, select **Add** to create a new mapping between statement mapping code and bank transaction type.
 
 ## Matching rules and matching rule sets
 
@@ -44,12 +64,33 @@ You must also configure the necessary number sequences on the **Cash and bank ma
 
 ## Bank account reconciliation options
 
-You must first enable Advanced bank reconciliation for the bank account. A number of additional options are available on the **Bank account** page once the Advanced bank reconciliation functionality is enabled.
+To enable **Advanced bank reconciliation** for the bank account, follow these steps:
 
-**Use bank statements as confirmation of electronic payment** functionality integrates the bank reconciliation functionality with electronic payment statuses. When this is enabled, a bank document will automatically be created for the electronic payment status is set to **Sent**. In addition, the status of an electronic payment will be updated from **Sent** to **Received** after the payment is matched, reconciled, and posted.
+1. Go to **Cash and bank management** > **Bank accounts** > **Bank accounts**.
+1. Select the bank account, and then set **Advanced bank reconciliation** to **Yes**.
+1. Configure the options described in the following section.
 
-The **Bank account name in statements** field is the name you use for the bank account on your electronic bank statements. This name is used when determining what transactions to import for a bank account from a statement that might contain information for multiple bank accounts.
+### General settings
 
-The option to **Reconcile after import** automatically validates the bank statement, creates a new bank reconciliation and worksheet, and runs the default matching rule set. This functionality automates the process up to the point of the transactions that you must manually match. The setting on the bank account defaults when importing.
+| Field | Description | Effect |
+|---|---|---|
+| **Advanced bank reconciliation** | Enables modern bank reconciliation for this bank account. | Unlocks electronic statement import, automatic matching, and the rest of the fields on this tab. |
+| **Use bank statements as confirmation of electronic payment** | Integrates reconciliation with electronic payment statuses. | Creates a bank document when a payment is set to **Sent**, and updates it from **Sent** to **Received** after it's matched, reconciled, and posted. |
+| **Allowed penny difference** | Sets the maximum amount variance tolerated when matching a statement line to a Finance transaction. | Amounts differing by no more than this value still match. `0.00` = amounts must match exactly. |
+| **Statement format** | Selects the import format or configuration used to bring in this account's electronic statements. | Determines how statement files are parsed. For example, BAI2, MT940, or CAMT.053 (via Electronic reporting), or Excel/CSV (via Data management). |
+| **Bank name in statements** | The identifier your bank uses for this account on its electronic statements. | Used to pick this account's transactions when a single statement file contains multiple bank accounts. |
+| **Time zone preference** | The time zone applied when interpreting transaction date and time stamps on imported statements. | Aligns statement timestamps to the correct local time. **Auto** uses the system or user default. |
+| **Reverse debit credit mark** | Flips the debit or credit sign of imported statement amounts. | Use when the bank reports transactions from its perspective, opposite of your ledger, so debits and credits align during matching. |
+| **Clear bridged transactions during reconciliation** | Controls whether bridged or pending transactions are cleared as part of reconciliation. | When **Yes**, the system clears bridged or pending entries during reconciliation instead of in a separate step. |
+
+### Automation
+
+| Field | Description | Effect |
+|---|---|---|
+| **Reconcile after import** | Automates reconciliation as soon as a statement is imported. | Validates the statement, creates a new reconciliation and worksheet, and runs the default matching rule set - up to the transactions you must match manually. |
+| **Default matching rule set** | The matching rule set automatically applied during reconciliation. | Defines which sequence of matching rules runs (used especially with **Reconcile after import**). |
+| **Customer payment journal** | The default journal for customer (AR) payments generated during reconciliation. | New customer payments created from reconciliation post to this journal. |
+| **Vendor payment journal** | The default journal for vendor (AP) payments generated during reconciliation. | New vendor payments created from reconciliation post to this journal. |
+| **Default report configuration** | The default Electronic reporting configuration used for the reconciliation report. | Determines the format and layout of the generated bank reconciliation report. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

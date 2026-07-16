@@ -4,7 +4,7 @@ description: This article provides troubleshooting information for India GST per
 author: epodkolzina
 ms.author: epodkolzina
 ms.date: 05/01/2026
-ms.topic: troubleshooting
+ms.topic: troubleshooting-general
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak

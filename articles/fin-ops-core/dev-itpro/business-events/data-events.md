@@ -3,7 +3,7 @@ title: Data events
 description: Data events are based on changes to data in finance and operations apps. Learn more about data events in this overview.
 author: jaredha
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/15/2026
 ms.custom: 
   - bap-template

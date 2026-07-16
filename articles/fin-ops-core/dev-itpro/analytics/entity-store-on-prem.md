@@ -3,7 +3,7 @@ title: PowerBI.com integration with on-premises environments
 description: Learn about how to enable Entity Store for on-premises deployments, including the coud and on-premises availability of features and capabilities.
 author: MilindaV
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

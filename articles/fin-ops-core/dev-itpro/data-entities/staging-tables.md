@@ -4,7 +4,7 @@ description: Learn how to clean up staging history, a feature available to users
 author: pnghub
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/14/2026
 ms.custom: 
   - bap-template

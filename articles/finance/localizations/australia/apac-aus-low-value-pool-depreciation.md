@@ -3,7 +3,7 @@ title: Low-value pool depreciation
 description: Low-cost and low-value assets can be allocated to a low-value pool if their cost or opening adjustable value is less than a specified amount.
 author: kfend
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/02/2026
 ms.reviewer: johnmichalak
 audience: Application User

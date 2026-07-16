@@ -3,7 +3,7 @@ title: Making Tax Digital (MTD) – VAT return integration - frequently asked qu
 description: Making Tax Digital (MTD) – VAT return integration - frequently asked questions.
 author: liza-golub
 ms.author: egolub
-ms.topic: how-to
+ms.topic: faq
 ms.custom: 
   - bap-template
 ms.date: 05/12/2026

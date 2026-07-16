@@ -3,7 +3,7 @@ title: Security tasks under the process hierarchy
 description: Learn about security tasks under the process hierarchy.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/05/2026
 ms.custom: 
 ms.reviewer: twheeloc

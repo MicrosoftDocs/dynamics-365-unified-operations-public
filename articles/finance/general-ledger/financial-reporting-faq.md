@@ -4,7 +4,7 @@ description: Access answers to some frequently asked questions about Financial r
 author: jinniew
 ms.author: jiwo
 ms.topic: faq
-ms.date: 05/26/2026
+ms.date: 06/01/2026
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User

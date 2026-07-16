@@ -3,7 +3,7 @@ title: Security architecture
 description: Learn about the security architecture of finance and operations, including overviews on authentication, authorization, data security, and auditing user logins.
 author: pnghub
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/21/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

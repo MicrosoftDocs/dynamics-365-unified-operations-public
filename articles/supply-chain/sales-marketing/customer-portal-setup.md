@@ -4,7 +4,7 @@ description: Learn about licensing details and setup instructions for the Custom
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 4/27/2026
+ms.date: 04/27/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -76,6 +76,5 @@ To effectively manage your sites, you must understand the Power Pages and Micros
 - [Upgrade a Power Pages site](/power-pages/admin/upgrade-site)
 - [Migrate website configuration](/power-pages/admin/migrate-site-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement apps](https://www.microsoft.com/download/details.aspx?id=57777)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

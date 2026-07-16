@@ -4,7 +4,7 @@
 title: Provision Dynamics 365 Human Resources
 description: This article explains how to provision a new production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 12/02/2025
+ms.date: 06/12/2026
 ms.topic: article
 # optional metadata
 
@@ -23,18 +23,18 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Provision Dynamics 365 Human Resources 
-[!include [LCS freeze](includes/lcs-freeze-banner.md)]
+# Provision Dynamics 365 Human Resources
 
+[!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 This article explains how to provision a new production environment for Microsoft Dynamics 365 Human Resources.
 
 ## Prerequisites
 
-Before you start to provision a new environment, the following prerequisites must be in place:
+Before you start to provision a new environment, make sure the following prerequisites are in place:
 
-- You've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
-- Sign into [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) as the designated service account user and created a new finance and operations project.
+- You purchase Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
+- You sign in to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) as the designated service account user and create a new finance and operations project.
 
 ## Provision a Human Resources trial environment
 
@@ -42,23 +42,23 @@ Potential customers who are interested in evaluating the Human Resources capabil
 
 ## Plan Human Resources environments
 
-Before you create your first Human Resources environment, you should carefully plan the environment needs for your project. A base subscription to Human Resources includes two environments: a production environment and a default standard acceptance test (Sandbox) environment. Depending on the complexity of your project, you have the option to purchase additional environments to support project activities.
+Before you create your first Human Resources environment, carefully plan the environment needs for your project. A base subscription to Human Resources includes two environments: a production environment and a default standard acceptance test (Sandbox) environment. Depending on the complexity of your project, you can purchase additional environments to support project activities.
 
-Here are some considerations for additional optional environments:
+Consider the following options for additional environments:
 
-- **Data migration** – Data migration activities enable your sandbox environment to be used for testing purposes throughout the project. When you have an additional environment, data migration activities can continue while testing and configuration activities occur simultaneously in a different environment.
+- **Data migration** – Use your sandbox environment for testing data migration activities throughout the project. When you have an extra environment, you can continue data migration activities while testing and configuration activities occur simultaneously in a different environment.
 - **Integration** – Configure and test integrations, which might include native integrations or custom integrations, such as those for payroll, applicant tracking systems, or benefit systems and providers.
-- **Training** – You might need a separate environment that is configured with a set of training data, so that you can train your employees how to use the new system. 
-- **Multi-phase project** – You might need an additional environment to support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
-- **Development** – In the finance and operations infrastructure, you can now extend the solution and develop your own customizations. Each developer is required to use their own development environment. For more information, see [Deploy and access development environments](../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
-- **GOLD** – For new deployments, a common practice is to use a separate GOLD environment that is kept pristine for configuration and data migration. This environment can be used throughout the implementation to refresh other environments. It will be used to create the new production environment that has the base configuration and data migration. You can't deploy a production environment on the finance and operations infrastructure until you've completed the go-live readiness process. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
+- **Training** – You might need a separate environment that is configured with a set of training data, so that you can train your employees how to use the new system.
+- **Multi-phase project** – You might need an extra environment to support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
+- **Development** – In the finance and operations infrastructure, you can now extend the solution and develop your own customizations. Each developer must use their own development environment. For more information, see [Deploy and access development environments](../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
+- **GOLD** – For new deployments, a common practice is to use a separate GOLD environment that you keep pristine for configuration and data migration. You can use this environment throughout the implementation to refresh other environments. It's used to create the new production environment that has the base configuration and data migration. You can't deploy a production environment on the finance and operations infrastructure until you complete the go-live readiness process. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
 > [!IMPORTANT]
-> As you consider your environments, we recommend the following approach:
+> As you consider your environments, use the following approach:
 >
 > - Use your default standard acceptance test (formerly Sandbox) environment or another environment to do a mock cutover before your go-live.
-> - Keep a detailed cutover checklist that includes each data package that is required to migrate the final data to the production environment during the go-live cutover. This recommendation is especially important if you don't have a separate GOLD environment to store your configurations.
-> - Use your default standard acceptance test (formerly Sandbox) environment or another tier-2 or higher environment as your TEST environment throughout your project. If you need additional environments, your organization can purchase them at an additional cost.
+> - Keep a detailed cutover checklist that includes each data package required to migrate the final data to the production environment during the go-live cutover. This recommendation is especially important if you don't have a separate GOLD environment to store your configurations.
+> - Use your default standard acceptance test (formerly Sandbox) environment or another tier-2 or higher environment as your TEST environment throughout your project. If you need extra environments, your organization can purchase them at an additional cost.
 
 ## Create an LCS project
 
@@ -73,7 +73,7 @@ You must complete the LCS project onboarding process before you can start to dep
 
 ## Deploy Human Resources environments
 
-Deployment of finance and operations apps, including Human Resources, in the cloud requires that you understand the environment and subscription that you're deploying to, who can perform which tasks, and what data and customizations you must manage. We recommend that you use a service account instead of a named user when you deploy new environments.
+Deployment of finance and operations apps, including Human Resources, in the cloud requires that you understand the environment and subscription that you're deploying to, who can perform which tasks, and what data and customizations you must manage. Use a service account instead of a named user when you deploy new environments.
 
 To deploy a production environment for Human Resources, you must complete the go-live readiness process. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). This process includes the subscription estimator in LCS. For more information, see [Subscription estimator](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
@@ -90,7 +90,8 @@ For information about the languages and geographies that are supported for Human
 By default, the designated service account user who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles).
 
 ## Additional resources
-You can learn more about how to use and manage projects in LCS on the finance and operations app infrastructure by using the following resources:
+
+To learn more about how to use and manage projects in LCS on the finance and operations app infrastructure, see the following resources:
 
 - [Lifecycle Services resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
 - [Lifecycle Services (LCS) user guide](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)

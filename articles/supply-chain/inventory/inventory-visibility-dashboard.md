@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 06/22/2026
 ms.custom: 
   - bap-template
 ---
@@ -19,7 +19,7 @@ Microsoft provides a sample Microsoft Power BI dashboard file that you can downl
 
 The dashboard lets you perform the following tasks:
 
-- Filter on inventory dimensions, so that you can focus on the regions and products that you most care about.
+- Filter on inventory dimensions to focus on the regions and products that matter most to you.
 - Identify out-of-stock, understocked, and overstocked products for timely inventory replenishment or reduction.
 - View inventory key performance indicators (KPIs), such as on-hand quantity, supply, and demand, to quickly monitor your inventory status.
 - Tailor the sample dashboard to your organization's business needs.
@@ -43,7 +43,7 @@ Because the dashboard is a standard Power BI file (.pbix file), you must have a 
 
 ## Default KPIs
 
-To use the visuals and KPIs that are provided in the sample dashboard, you must define the following calculated measures in the `pbi` data source. Add the relevant physical measures from your data sources to these calculated measures.
+To use the visuals and KPIs provided in the sample dashboard, define the following calculated measures in the `pbi` data source. Add the relevant physical measures from your data sources to these calculated measures.
 
 - `Totalonhand` – The total physical inventory stock that you have in your warehouses.
 - `Totalavailablephysical` – The total available physical inventory quantities.
@@ -56,7 +56,7 @@ To use the visuals and KPIs that are provided in the sample dashboard, you must 
 - `Othersupply` – Supply quantities from other user-specified sources that aren't included in the previously mentioned measures.
 - `Otherdemand` – Demand quantities from other user-specified sources that aren't included in the previously mentioned measures.
 - `Totalsoftreserved` – The total soft-reserved quantities.
-- `Received` – The total inventory quantity that has been received into your warehouses.
+- `Received` – The total inventory quantity received into your warehouses.
 
 These sample calculated measures are included in the following formulas on the Power BI report:
 
@@ -65,7 +65,7 @@ These sample calculated measures are included in the following formulas on the P
 
 ## Customize the dashboard
 
-You can customize the sample dashboard by directly editing the visuals. You can also edit the query to show different measures from different data sources.
+Customize the sample dashboard by directly editing the visuals. You can also edit the query to show different measures from different data sources.
 
 To add a new data source, follow these steps:
 
@@ -76,7 +76,7 @@ To add a new data source, follow these steps:
 
 To add, modify, or delete a column for an existing data source, follow these steps:
 
-1. Open the dashboard in Power BI desktop, and expand the **Data** pane. Select and hold (or right-click) the **Query Preload Results** table. and then select **Edit query** to open the Power Query editor.
+1. Open the dashboard in Power BI desktop, and expand the **Data** pane. Select and hold (or right-click) the **Query Preload Results** table, and then select **Edit query** to open the Power Query editor.
 1. On the ribbon of the Power Query editor, on the **Home** tab, select **Refresh Preview**.
 1. In the **Query Settings** pane, in the **Applied Steps** section, find the **Expanded is\_quantities.\<data-source\>** step, where **\<data-source\>** is the data source that the new column belongs to.
 1. Select and hold (or right-click) the step, and then select **Edit settings**.
@@ -84,4 +84,4 @@ To add, modify, or delete a column for an existing data source, follow these ste
 
 You can also define new columns, based on the retrieved entity. In the sample report, the columns for total supply and total demand are calculated columns that are defined in Power BI.
 
-If you're familiar with [Power Query](https://powerquery.microsoft.com), you can directly edit the query by using the Power Query language. On the ribbon of the Power Query editor, on the **Home** tab, select **Advanced Editor** to open the advanced editor.
+If you're familiar with [Power Query](https://powerquery.microsoft.com), directly edit the query by using the Power Query language. On the ribbon of the Power Query editor, on the **Home** tab, select **Advanced Editor** to open the advanced editor.

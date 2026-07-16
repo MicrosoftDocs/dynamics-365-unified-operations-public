@@ -1,10 +1,10 @@
 ---
 title: Set up bank reconciliation matching rules
 description: Learn how to set up reconciliation matching rules and reconciliation matching rule sets to help with the bank reconciliation process.
-author: music727 
-ms.author: mibeinar
+author: mukumarm 
+ms.author: mukumarm
 ms.topic: article
-ms.date: 05/27/2026
+ms.date: 07/02/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -29,30 +29,57 @@ On the **Reconciliation matching rules** page, select which actions and selectio
 
 By default, matching rules match to the first bank document (transaction) that meets the matching rule criteria. If multiple bank documents (transactions) meet the rule criteria, turn on the parameter to require manual matching by going to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation > Require manual matching when advanced bank reconciliation matching rules find multiple documents that match on amount**.
 
-If the **Modern bank reconciliation** feature is enabled, the following additional matching types are available:
+To create a bank reconciliation matching rule, follow these steps:
 
-- One to many
-- Many to one
-- Many to many
+1. Go to **Cash and bank management** > **Setup** > **Advanced bank reconciliation setup** > **Reconciliation matching rules**.
+1. Select **New** and enter a name and description.
+1. In the **Actions** field group, choose the action the rule performs.
+1. In the **Matching type** field, choose how records are matched.
+1. Define the selection criteria on the step FastTabs that appear for your chosen action.
+1. Select **Save**.
+1. Select **Activate** to activate the reconciliation matching rule.
 
 > [!NOTE]
-> You can only use the **BankReconciliationMatchingRuleEntity** data entity to import and export reconciliation matching rules if the **Modern bank reconciliation** feature is disabled.
+> **Modern-only actions** require the **Modern bank reconciliation** feature and an imported statement. Payment actions also need default customer or vendor payment journals on the bank account, and **Generate voucher** needs bank transaction types plus the **Bank statement reversal reference** number sequence.
 
-When you select one of these matching types, grouping conditions are available in the reconciliation matching rule setup. Bank statement records and bank transaction records are grouped by the grouping conditions that are defined in this step, and then the remaining matching steps are run.
+## All actions
 
-> [!NOTE]
-> The option that you select determines the fields that appear.
+| Action | Availability | What it does | Setup steps or key fields |
+|---|---|---|---|
+| **Match with bank document** | Base | Matches bank statement lines to Finance bank transactions. | **Step 1 – Define the matching rule** Which statements match to which transactions. **Step 2 (optional) – Filter which statement lines the rule runs against**. |
+| **Mark new transactions** | Base *(not available when Modern is on)* | Flags statement lines with no matching bank document as new transactions. | **Step 1 – Find statement lines**. **Step 2 – Find finance and operations** if none found, the line is marked new. |
+| **Generate customer payment** | Modern | Posts a **Customer payment journal** from a statement line (incoming customer payment). | Worksheet **Generate payment journal**: Payment type = **Customer**, **Customer account**, **Method of payment**, **Accounting date**, **Bank transaction type**, **Dimensions**, **Tags**. **Generate payment** (post only) or **Settle transactions** (also settle invoices). |
+| **Generate vendor payment** | Modern | Posts a **vendor payment journal** from a statement line (outgoing vendor payment). | Same **Generate payment journal** flow with Payment type = **Vendor** and **Vendor account**. |
+| **Settle customer invoice** | Modern | Generates a customer payment journal and settles the matched open customer or project invoice. | **Action = Settle customer invoice.** **Step 1 – Find statement lines to generate customer payment journals**. **Step 2 – Match open invoices**. **Step 3 – Customer payment journal parameters**: **Default method of payment**, **Default bank transaction type**, **Accounting date**, **Financial dimensions**, and **Apply cash discount**. |
+| **Generate voucher** | Modern | Posts nonpayment statement lines (bank **interest, fees**) directly to the general ledger. | **Action = Generate voucher.** **Find statement lines to generate voucher** – posting criteria. **Voucher parameters** – Accounting date, Bank transaction type, **Offset account**, Description, Sales tax group / Item sales tax group (if applicable), Financial dimensions. |
+| **Clear reversal statement lines** | Base *(enhanced in Modern)* | Clears offsetting **reversal bank statement lines** caused by a bank error, without matching to a company transaction. | **Step 1 – Find reversal statement lines** - the **Reversal** line = **Yes**. **Step 2 – Find original statement lines** -  the **Document number** and  **Payment reference** must match. **Step 3 optional – Find bank transactions**. |
+| **Clear reversal company transaction** | Modern | Clears reversed company payment journals that have no matching record at the bank. | **Step 1 – Find reversal company transactions**. **Step 2 – Find original company transactions** - The **Transaction type**, **Payment reference**, **Document type** must match. There's an option to require manual matching. The selected transactions must net to zero. |
 
-| Action | Description   | Selection criteria available when action is selected     |
-|--------|---------------|----------------------------------------------------------|
-| **Match with bank document**       | Create criteria to specify how the bank documents (transactions) and bank statement lines are matched when the matching rule runs from the **Bank reconciliation worksheet** page. The transaction lines are selected according to the additional criteria that you set up on the FastTabs. | <ul><li>**Step 1: Define the matching rule** – Select criteria to specify which bank statements should be matched with Finance bank transactions.</li><li> **Step 2 (optional) : Select the statement lines to run matching rules against:**  Apply a filter on which statement line to run the rules against.</li></ul>                                       |
-| **Clear reversal statement lines** | Create criteria to specify how reversal statement lines should be removed from the **Bank reconciliation worksheet** page when the matching rule runs. Use this option when a bank error causes two bank statement lines to be listed in the imported bank statement, and the lines must be reconciled. |<ul><li> **Step 1**: **Find reversal statement lines** – Add selection criteria to select reversal bank statement lines. For example, to select only checks, select the **Bank transaction code** in the **Field** field, select the plus sign (+) in the **Operator** field, and then enter **Checks** in the **Value** field. </li><li>**Step 2: Find original statement lines** – You can add selection criteria to match bank document (transaction) lines to bank statement lines. </li><li>**Step 3: Find Finance bank transactions** – You can add selection criteria to match Finance bank transactions to bank statement lines.</li></ul>  |
-| **Mark new transactions**          | Create criteria to specify how new transactions should be marked on the **Bank reconciliation worksheet** page when the matching rule runs.                                                                                                                                                                 | <ul><li>**Step 1: Find statement lines** – Add selection fields to specify which bank statement lines should be selected from the **Bank reconciliation worksheet** page.</li><li> **Step 2: Find finance and operations** – You can add selection criteria to search bank document (transaction) lines. If no bank document is found, a statement line is marked as a new transaction. </li></ul>         |
+## Set up bank reconciliation matching rule sets
 
-If the **Modern bank reconciliation** feature is enabled, additional reconciliation rules are available for further automation. For more information, see:
+A matching rule set is a group of reconciliation matching rules that run in sequence during the bank reconciliation process. Instead of running each rule one at a time, bundle them into a set so the whole sequence executes in one pass.
+
+To create a matching rule set, follow these steps:
+
+1. Go to **Cash and bank management** > **Setup** > **Advanced bank reconciliation setup** > **Reconciliation matching rule sets**.
+1. Select **New** and enter a **name** and **description** for the set.
+1. Add the **matching rules** to the **set** in the order they should run - the set executes its rules top to bottom.
+1. Select **Save**.
+
+## Put the rule set to work
+
+You can run a set in three ways:
+
+| How it runs | Where |
+|---|---|
+| **As the account default** | On the **Bank account → Reconciliation** FastTab, set it as the **Default matching rule set**. |
+| **Automatically on import** | With **Reconcile after import = Yes**, the account's **default matching rule set** runs as soon as a statement is imported. |
+| **On demand** | On the **Bank reconciliation worksheet**, select **Run matching rules**, and then choose the rule set (or a single rule). |
+
+For more information about how matching rules are applied during reconciliation, see:
 
 - [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md)
 - [Clear reversal company transactions in advanced bank reconciliation](clear-reverse-comp-trans.md)
 - [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md)
-
+  
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

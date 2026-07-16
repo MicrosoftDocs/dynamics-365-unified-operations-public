@@ -4,7 +4,7 @@
 title: Human Resources home page
 description: Dynamics 365 Human Resources provides the workforce insights you need to build data-driven employee experiences across multiple areas.
 author: twheeloc
-ms.date: 12/02/2025
+ms.date: 07/01/2026
 ms.update-cycle: 1095-days
 ms.topic: article
 ms.custom: evergreen
@@ -37,6 +37,7 @@ Select a feature area to learn more about it.
 - [Personnel management](hr-personnel-departments-jobs-positions.md)
 - [Task management](hr-task-mgmt.md)
 - [Leave and absence](hr-leave-and-absence-overview.md)
+- [Recruiting](hr-recruit-overview.md)
 - [Benefits](hr-benefits-manage-program.md)
 - [Benefits management](hr-benefits-management-overview.md)
 - [Compensation management](hr-compensation-overview.md)
