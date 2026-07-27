@@ -61,9 +61,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.47 PQU-4 | May 20, 2026 | May 20, 2026 to June 13, 2026| Completed |
 | 10.0.47 PQU-5 | June 3, 2026 | June 3, 2026 to June 27, 2026| Completed |
 | 10.0.47 PQU-6 | June 17, 2026 | June 17, 2026 to July 11, 2026| Completed |
-| 10.0.47 PQU-7 | July 1, 2026 | July 1, 2026 to July 25, 2026| In-Progress |
+| 10.0.47 PQU-7 | July 1, 2026 | July 1, 2026 to July 25, 2026| Completed |
 | 10.0.47 PQU-8 | July 15, 2026 | July 15, 2026 to August 8, 2026| In-Progress |
-| 10.0.47 PQU-9 | July 29, 2026 | July 29, 2026 to August 22, 2026| Not Started |
+| 10.0.47 PQU-9 | July 29, 2026 | July 29, 2026 to August 22, 2026| In-Progress |
 | 10.0.47 PQU-10 | August 12, 2026 | August 12, 2026 to September 5, 2026| Not Started |
 | 10.0.47 PQU-11 | August 26, 2026 | August 26, 2026 to September 19, 2026| Not Started |
 | 10.0.47 PQU-12 | September 9, 2026 | September 9, 2026 to October 3, 2026| Not Started |
@@ -129,24 +129,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | August 17 to August 20, 2026 | August 29 to August 30, 2026 |
 | Station 6 | August 18 to August 21, 2026 | August 29 to August 30, 2026 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-7 train schedule
-
-**App version: 10.0.2527.152**
-
-**Platform version: 7.0.7858.132**
-
-**Unified Environment Provisioning Application Version: 10.0.47.8**
-
-| Stations | Upcoming sandbox schedule | Upcoming production schedule |
-|---|---|---|
-| Station 1 | July 1 to July 4, 2026 | NA |
-| Station 2 | July 6 to July 9, 2026 | July 11 to July 12, 2026 |
-| Station 3 | July 6 to July 9, 2026 | July 11 to July 12, 2026 |
-| Station 4 | July 13 to July 16, 2026 | July 18 to July 19, 2026 |
-| Station 5 | July 20 to July 23, 2026 | July 25 to July 26, 2026 |
-| Station 6 | July 20 to July 23, 2026 | July 25 to July 26, 2026 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-8 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-8 train schedule
 
 **App version: 10.0.2527.160**
 
@@ -162,6 +145,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | July 27 to July 30, 2026 | August 1 to August 2, 2026 |
 | Station 5 | August 3 to August 6, 2026 | August 8 to August 9, 2026 |
 | Station 6 | August 3 to August 6, 2026 | August 8 to August 9, 2026 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-9 train schedule
+
+**App version: 10.0.2527.174**
+
+**Platform version: 7.0.7858.145**
+
+**Unified Environment Provisioning Application Version: 10.0.47.10**
+
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
+|---|---|---|
+| Station 1 | July 29 to August 1, 2026 | NA |
+| Station 2 | August 3 to August 6, 2026 | August 8 to August 9, 2026 |
+| Station 3 | August 3 to August 6, 2026 | August 8 to August 9, 2026 |
+| Station 4 | August 10 to August 13, 2026 | August 15 to August 16, 2026 |
+| Station 5 | August 17 to August 20, 2026 | August 22 to August 23, 2026 |
+| Station 6 | August 17 to August 20, 2026 | August 22 to August 23, 2026 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.48 Release-1 train schedule
 
