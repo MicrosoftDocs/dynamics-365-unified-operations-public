@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-This article lists the features in the platform updates for version 10.0.49 of finance and operations apps. This version uses build number 7.0.XXXX and is available on the following schedule:
+This article lists the features in the platform updates for version 10.0.49 of finance and operations apps. This version uses build number 10.0.2790 and is available on the following schedule:
 
 - **Preview of release:** July 2026
 - **General availability of release (self-update):** September 2026
@@ -38,12 +38,13 @@ This section has a table that lists enhancements included in this release when a
 
 | Module or feature area | Feature name | More information | Enabled by |
 | --- | --- | --- | --- |
-| Developer tools | X++ | Starting with PU74, Microsoft no longer supports  Microsoft Visual Studio 2022 for X++ development. Only Visual Studio 2026 is supported. | &nbsp; |
+| Developer tools | X++ | Starting with PU74 , Microsoft no longer supports Microsoft Visual Studio 2022 for X++ development. Only Visual Studio 2026 is supported. | &nbsp; |
+| Batch telemetry to Application Insights | Batch job occurrence telemetry | Microsoft introduced Batch job occurrence telemetry as an enhancement to the existing Microsoft Dynamics 365 Finance and Operations batch telemetry. The additional telemetry provides visibility into the lifecycle of individual batch job executions, enabling administrators to monitor job progress, completion status, and execution outcomes. Previously, telemetry was available only at the batch task level, making it difficult to track end-to-end job execution. Batch job occurrence telemetry addresses this gap by providing execution-level insights. The telemetry is available in **PU74/10.0.50 (build >= 7.0.8219.0)** and is backported to **PU73/10.0.49 (build >= 7.0.8199.5)** and **PU72/10.0.48 (build >= 7.0.7996.85)**. Contact Microsoft support if the required flight (BatchJobOccurrenceTelemetryFlight) isn't enabled in your environments. - [Learn more](../../dev-itpro/monitoring-telemetry/monitoring-available-telemetry.md#batch-telemetry) | System admin |
 
 
 ### Bug fixes
 
-To see bug fixes in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXXX).
+To see bug fixes in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1156136).
 
 ### Dynamics 365: 2026 release wave 1 plan
 
