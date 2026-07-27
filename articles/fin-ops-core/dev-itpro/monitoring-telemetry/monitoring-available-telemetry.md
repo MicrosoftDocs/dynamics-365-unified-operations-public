@@ -4,7 +4,7 @@ description: Get an overview of the telemetry that's available in the Monitoring
 author: rijoshi1 
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 06/12/2026
+ms.date: 07/24/2026
 ms.author: rijoshi 
 ms.reviewer: twheeloc
 ms.custom: bap-template
@@ -67,24 +67,28 @@ Use the provided Power BI dashboards to visualize the telemetry.
 
 > [!IMPORTANT]
 >
-> - This feature is available in **PU69/10.0.45 (build >= 7.0.7690.21)** and **PU68/10.0.44 (build >= 7.0.7606.126)**.
+> - This feature is available in PU69/10.0.45 (build >= 7.0.7690.21) and PU68/10.0.44 (build >= 7.0.7606.126).
+> - The additional Batch job occurrence telemetry is available in **PU74/10.0.50 (build >= 7.0.8219.0)** and is backported to **PU73/10.0.49 (build >= 7.0.8199.5)** and **PU72/10.0.48 (build >= 7.0.7996.85)**.
 
 Three flights control batch telemetry and are enabled by default:
 
 1. **BatchTelemetryConfigurationFlight**
 1. **BatchThreadInfoTelemetryFlight**
 1. **BatchTelemetryCallstackFlight**
+1. **BatchJobOccurrenceTelemetryFlight**
 
 If these flights aren't enabled in your environments, contact Microsoft support.
 
 When you enable the flights, new telemetry signals appear under the **Configure** tab:
 
-- **Batch Start Time** - Logs when a batch job starts.
-- **Batch Stop Time** - Logs when a batch job completes. Supports duration tracking.
-- **Batch Throttling** - Captures throttling events and related system metrics (CPU, memory, SQL DTU).
-- **Batch Failure** - Adds diagnostic details when a batch job or task can't schedule. It complements existing Infolog errors by correlating telemetry with the originating batch job.
-- **Batch Queue** - Shows queue sizes for different queues in the priority-based scheduling framework.
-- **Batch Threads** - Shows active threads to help diagnose thread availability issues.
+- **Batch job occurrence start** - Logs the time when a scheduled batch job occurrence transitions from Waiting to Executing. Identifies the exact time when the batch Job execution began.
+- **Batch job occurrence completed** - Logs the time when a batch job occurrence transitions to a terminal state, such as Ended, Error, or Canceled. Supports duration tracking for the whole batch job occurrence.
+- **Batch start time** - Logs the time when batch task starts.
+- **Batch stop time** - Logs when a batch task completes. Supports duration tracking for a specific task.
+- **Batch throttling** - Captures throttling events and related system metrics (CPU, memory, SQL DTU).
+- **Batch failure** - Adds diagnostic details when a batch job or task can't schedule. It complements existing Infolog errors by correlating telemetry with the originating batch job.
+- **Batch queue** - Shows queue sizes for different queues in the priority-based scheduling framework.
+- **Batch threads** - Shows active threads to help diagnose thread availability issues.
 
 By using batch telemetry, you can:
 
