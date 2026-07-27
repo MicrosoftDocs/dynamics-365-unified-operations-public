@@ -916,6 +916,8 @@
               href: fixed-assets/tasks/propose-fixed-asset-acquisitions.md
             - name: Reclassify fixed assets
               href: fixed-assets/tasks/reclassify-fixed-assets.md
+            - name: Currency revaluation for fixed assets
+              href: fixed-assets/fixed-assets-report-currency.md
             - name: Fixed asset workspace
               href: fixed-assets/fixed-asset-management-workspace.md
             - name: Fixed assets roll forward report
