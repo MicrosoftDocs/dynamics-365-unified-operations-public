@@ -298,6 +298,7 @@ If a device is lost or compromised, remove its access to Supply Chain Management
 
 ## Related information
 
+- [Warehouse Management mobile app release schedule](warehouse-app-control-updates.md)
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
 - [Mobile device user settings](mobile-device-user-settings.md)
