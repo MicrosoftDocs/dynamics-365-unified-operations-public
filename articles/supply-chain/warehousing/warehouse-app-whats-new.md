@@ -23,6 +23,9 @@ Starting with version 4.1.1.0, every V4 and later release is tagged with its pub
 > [!NOTE]
 > The publication date listed for each version marks the day the release becomes available in AppCenter and the day progressive rollout to the app stores (Microsoft Store, Google Play, and Apple App Store) begins. Because rollout is gradual, the update might not appear on every device on that exact date. Availability in each store can take several additional days to reach all users.
 
+> [!TIP]
+> For upcoming release dates, see [Warehouse Management mobile app release schedule](warehouse-app-control-updates.md). That article also describes optional ways to validate a release before it reaches your warehouse floor.
+
 ## Release notes for version 4.1.4.0 (May 28, 2026)
 
 Version 4.1.4.0 is a minor update that includes the following features and fixes:

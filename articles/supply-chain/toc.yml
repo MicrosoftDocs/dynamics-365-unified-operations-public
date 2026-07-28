@@ -3995,6 +3995,8 @@
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
           - name: Support policy for the Warehouse Management mobile app
             href: warehousing/warehouse-app-support-info.md
+          - name: Warehouse Management mobile app release schedule
+            href: warehousing/warehouse-app-control-updates.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
             href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication

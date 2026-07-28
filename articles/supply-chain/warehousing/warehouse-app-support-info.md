@@ -103,9 +103,12 @@ To check which version is installed, open the app. The version appears on the si
 - Track release dates in [What's new or changed in the Warehouse Management mobile app](warehouse-app-whats-new.md). Every V4 and later release, starting with 4.1.1.0, has a publication date.
 - Update devices at least once a year. This practice keeps every device inside the 12-month support window.
 
+If you want to validate each release before it reaches the warehouse floor, see [Warehouse Management mobile app release schedule](warehouse-app-control-updates.md) for upcoming release dates and options that help you pace updates while staying inside the support window.
+
 ## Related information
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md)
 - [What's new or changed in the Warehouse Management mobile app](warehouse-app-whats-new.md)
 - [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md)
+- [Warehouse Management mobile app release schedule](warehouse-app-control-updates.md)
