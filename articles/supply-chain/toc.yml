@@ -2597,6 +2597,8 @@
             href: procurement/contract-lifecycle-management/developer/clm-sync-contracts.md
         - name: Integrate with Icertis for Microsoft Dynamics 365 Supply Chain Management
           href: procurement/contract-lifecycle-management/clm-icertis.md
+      - name: Use financial tags in procurement documents
+        href: procurement/financial-tags-procurement.md
       - name: Procurement FAQ
         href: procurement/procurement-faq.md
     - name: Product information management
