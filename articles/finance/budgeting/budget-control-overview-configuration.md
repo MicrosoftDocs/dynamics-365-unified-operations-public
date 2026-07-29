@@ -73,10 +73,11 @@ If the user belongs to the configured over-budget permission group, the system d
 If the user doesn't belong to the configured over-budget permission group, the system displays an error message and the transaction is blocked and can't be completed.
 If you use **Allow over budget processing**, ensure that you assign appropriate users to the over-budget permission group and that internal audit processes are in place to track overrides.
 
-1. **Prevent processing at over budget threshold**
+2. **Prevent processing at over budget threshold**
 This option allows transactions to exceed the budget up to a defined tolerance level, after which the system blocks processing.
 The system uses the **Budget threshold percentage** configured in **Budget control parameters**. Transactions are allowed to process until the defined threshold is exceeded.
 Example:
+
 | **Budget amount** | **Threshold** | **Spending amount** | **Result** |
 | -------------- | -------------- | -------------- | -------------- |
 | 100,000 USD | 110 % | 105,000 USD | Allowed |
@@ -85,7 +86,7 @@ Example:
 
 Transactions within the threshold show no blocking errors. Once the threshold is exceeded, the system blocks the transaction and displays an error message.
 
-1. **Prevent over budget processing**
+3. **Prevent over budget processing**
 This option enforces strict budget control. The system doesn't allow any transactions once the available budget is exceeded.
 Transactions are allowed only while budget funds are available. As soon as the budget is exceeded, the system blocks the transaction and displays an error message.
 If you select this option, no threshold or tolerance is applied.
@@ -180,7 +181,6 @@ Transactions, including budget register entries, that you posted before budget c
 > When the **Only track amounts in the budget funds available calculation** feature is on, budget control must have specific rule configurations to work correctly. Otherwise, the defined budget control configuration can't be activated. For more information, see [Budget funds available](budget-funds-available.md).
 
 The following table shows the guidelines to follow.
-
 | If you select this option | You must also select this option |
 | -------------------------- | --------------------------------- |
 | **Budget reservations for preencumbrances** | **Budget reservations for encumbrances** *and* **Actual expenditures** |
