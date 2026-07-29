@@ -35,6 +35,10 @@ To run the **Budget control data maintenance** tool, follow these steps:
 1. To process the documents that the tool finds, select **Process documents**.
 1. Complete the remaining dialog boxes.
 
+### Budget control data integrity diagnostics
+
+Starting 10.0.49, if feature **Detect corruption in source document budget control tracking** is enabled, data maintenance includes **Budget control data integrity diagnostics** provider. This functionality detects and surfaces data inconsistencies in source-document budget tracking records, including orphaned references and broken relieving links. Once detected, the functionality to remediate is available and runs existing source document reprocessing explained above. 
+
 ### Budget control dimension values provider
 
 The **Budget control data maintenance** tool includes a **Budget control dimension values provider** scenario that adjusts the dimension values in budget data. Typically, use this scenario when you add a new segment to the ledger account structure. It finds all dimension values that are currently used in budget data and transfers them to match the current account structure.
