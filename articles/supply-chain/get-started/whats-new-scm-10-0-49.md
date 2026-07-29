@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 07/27/2026
+ms.date: 07/29/2026
 ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
@@ -29,6 +29,7 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
+| Accounts payable | Use financial tags in procurement documents | [Use financial tags in procurement documents](../procurement/financial-tags-procurement.md) | Feature management:<br>*Enable financial tags for purchase order invoicing* |
 | Master planning | Closed for pickup policy on the transport calendar | [Calendars and master planning](../master-planning/supply-chain-calendars-master-planning.md) | Feature management:<br>*Consider open for pickup on transport calendar for planned transfer orders with Planning Optimization* |
 | Master planning | Consider sub-BOM and sub-route in supply forecast reduction | [Master planning with supply forecasts](../master-planning/planning-optimization/supply-forecast.md) | Feature management:<br>*Consider BOM and route in supply- and demand forecast reduction with Planning Optimization* |
 | Master planning | Filter derived requirements by coverage time fence with Planning Optimization | [Coverage time fences](../master-planning/planning-optimization/coverage-time-fence.md) | Feature management:<br>*Filter derived requirements by coverage time fence with Planning Optimization* |

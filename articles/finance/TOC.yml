@@ -2928,8 +2928,16 @@
                       href: localizations/france/fr-00004-update-method-payment-customer.md
                     - name: VAT declaration
                       href: localizations/france/emea-fra-VAT-declaration-preview-France.md
-                    - name: France e-reporting
-                      href: localizations/france/emea-fra-e-reporting.md
+                    - name: France e-reporting (electronic reporting of transactions)
+                      items:
+                        - name: France e-reporting overview
+                          href: localizations/france/emea-fra-e-reporting.md
+                        - name: How to prepare your Dynamics 365 Finance for French e-Reporting
+                          href: localizations/france/emea-fra-e-reporting-preparation.md
+                        - name: How to use France e-reporting in Dynamics 365 Finance
+                          href: localizations/france/emea-fra-e-reporting-experience.md
+                        - name: Data collection and classification for the French e-reporting
+                          href: localizations/france/emea-fra-e-reporting-details.md
                     - name: EU sales list
                       href: localizations/france/emea-fra-eu-sales-list.md
                     - name: French Intrastat
