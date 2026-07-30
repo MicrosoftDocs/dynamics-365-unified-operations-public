@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSReleaseToWarehouse, WHSReleaseToWarehouseSalesOrder, WHSReleaseToWarehouseTransferOrder, WHSReleaseToWarehouseOutboundShipmentOrder, WHSLoadPlanningWorkbench, WHSWaveTemplateTable, WHSWorkTemplateTable, WHSLocDirTable, WHSOutboundLoadPlanningWorkbench 
 ms.topic: how-to
-ms.date: 06/22/2026
+ms.date: 07/30/2026
 ms.custom: 
   - bap-template
 ---
@@ -133,6 +133,9 @@ To set up the batch job that releases sales orders, follow these steps:
     - **Allow release of partially released orders** – Specify whether remaining quantities for partially released orders should be released to the warehouse.
     - **Keep reservations on release failure** – Specify whether quantities that were automatically reserved for a sales order should remain reserved if the release to warehouse process fails.
     - **Group releases by customer** – Specify whether the system processes release to warehouse operations separately for each customer or releases all sales orders at the same time. When this option is set to *Yes*, the system collects all the sales order lines for a selected customer, releases those orders to the warehouse, and then processes the next customer. When this option is set to *No*, the system releases all available sales order lines in a single release to warehouse operation. Enabling this option can help improve the performance and resilience of the release to warehouse process. However, be careful when you use this option together with wave templates that are configured to process waves at release to warehouse, because this combination might generate many single-customer waves, each of which has work generated for that customer only. If you want to generate work that combines shipments for multiple customers, either turn off the *Group releases by customer* option or configure your wave templates to use postponed processing.
+
+        > [!NOTE]
+        > The **Group releases by customer** field is shown only when at least one shipment consolidation policy is configured for the current legal entity, because this option affects only how releases are grouped when shipments are consolidated. Because shipment consolidation policies are company-specific, the field is visible only in legal entities where such a policy exists. To make the field visible, configure a shipment consolidation policy on the **Shipment consolidation policy** page (**Warehouse management** > **Setup** > **Shipments** > **Shipment consolidation policy**) in the legal entity where you want to use the option. Learn more in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
     - **Locked order handling** – Select how the system should handle sales orders that are currently locked because they're being edited by other users or processes:
 
         - *Wait for orders to unlock* – The system should wait for the orders to become unlocked before it releases them to the warehouse. In this case, the release to warehouse process might take more time.
