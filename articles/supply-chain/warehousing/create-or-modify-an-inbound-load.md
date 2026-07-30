@@ -49,7 +49,7 @@ To set up your system so that it automatically creates inbound loads for new inb
 
 An inbound load is now automatically created each time that you [import and process an inbound shipment order](wms-only-mode-overview.md) for the relevant source system, order type, and account.
 
-If you use the Warehouse management mobile app to run a receiving process against an inbound shipment order line that isn't associated with an open load, the system automatically creates a load as part of the registration process. The load ID is assigned to the related inventory transaction.
+If you use the Warehouse Management mobile app to run a receiving process against an inbound shipment order line that isn't associated with an open load, the system automatically creates a load as part of the registration process. The load ID is assigned to the related inventory transaction.
 
 ## <a name="create-an-inbound-load-manually"></a>Manually create an inbound load from order lines
 

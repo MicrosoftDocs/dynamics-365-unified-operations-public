@@ -315,7 +315,7 @@ Because of the settings that are established for this example, the system parses
 The receipt is then registered, and the relevant database values are entered after the single scan.
 
 > [!TIP]
-> If GS1 bar codes that contain multiple values don't work as part of a Warehouse management mobile app flow, check the following settings:
+> If GS1 bar codes that contain multiple values don't work as part of a Warehouse Management mobile app flow, check the following settings:
 >
 > - On the **Barcode data generic setup** and **Barcode data application identifiers** pages, make sure that the settings are aligned with the bar codes that you're using and with the bar code data policy that's assigned on the **Mobile device menu item** page.
 > - On the **Barcode data policy** page, select the policy that you're having trouble with, and check the following settings:
