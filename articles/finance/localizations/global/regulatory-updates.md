@@ -3,7 +3,7 @@ title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.date: 06/25/2026
+ms.date: 07/30/2026
 ms.topic: reference
 ms.custom: 
   - bap-template
@@ -33,6 +33,7 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------|
+| Hungary | July 2026 | 10.0.50, also available in prior versions | Regulatory update to support changes in VAT declaration format for Hungary from July 2026. [VAT declaration (Hungary)](../hungary/emea-hun-vat-declaration-hungary.md). |
 | Lithuania | June 2026 | 10.0.49, also available in prior versions | Updated [Lithuanian Intrastat](../lithuania/emea-ltu-intrastat.md). |
 | France | June 2026 | 10.0.49, also available in prior versions | Released [Electronic reporting of transactions for France (e-Reporting)](../france/emea-fra-e-reporting.md). |
 | Switzerland  | June 2026 | 10.0.49, also available in prior versions | Updated [VAT declaration for Switzerland](../switzerland/emea-che-vat-declaration-switzerland.md) -  Version 2.0.0. |
@@ -53,6 +54,7 @@ For the latest regulatory update plans, refer to the following table.
 | Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support  generating the [SPT Masa PPN \(Pajak Pertambahan Nilai\) VAT declaration](../indonesia/apac-idn-ppn-declaration.md) in Excel format for reporting periods starting from 2025. | 
 | Estonia | July 2025 | 10.0.46, also available in prior versions | Regulatory update to support changes in VAT declaration format for Estonia 2025. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
 | Australia | May 2025| 10.0.45, 10.0.44HF, 10.0.43HF, 10.0.42HF | Regulatory update to support changes in Payment times reporting schema (PTRS) required for Australian legal entities for periods from July 1, 2024. [Payment times reporting schema](../australia/apac-aus-payment-times-report.md) |
+| Austria | April 2025| 10.0.45, also available in prior versions | Regulatory update to support changes in EU Sales list for Austria - summary report (ZM). [EU sales list for Austria](../austria/emea-aut-eu-sales-list.md) |
 | Czech Republic | May 2025 | 10.0.45, also available in prior versions | Regulatory update to support changes in VAT declaration format for Czech Republic 2025. [VAT declaration - Czech Republic](../czech-republic/emea-cze-vat-declaration-tax-declaration-model.md) |
 | Hungary | April 2025 | 10.0.45, also available in prior versions | Regulatory update to support changes in VAT declaration format for Hungary 2024-2025. [VAT declaration (Hungary)](../hungary/emea-hun-vat-declaration-hungary.md). |
 | Mexico | March 2025 | 10.0.44, 10.0.43HF, 10.0.42HF, 10.0.41HF | DIOT declaration statement regulatory update to support new rules for DIOT 2025. [DIOT declaration statement](../iberoamerica/latam-mex-diot-declaration-statement.md) |
