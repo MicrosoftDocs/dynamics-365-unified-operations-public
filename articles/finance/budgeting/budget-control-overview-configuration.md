@@ -37,8 +37,8 @@ You can configure budget control according to several factors:
 
 - **Financial dimensions** – What financial dimensions must be used to report budget and actuals, and what financial dimensions are required to control budgets? Are there specific dimension combinations or main accounts that require particular attention? For example, is there a requirement to track budget to actuals by cost center and program? Do travel expenses require special attention?
 - **Time** – What time frame (fiscal period, fiscal period to date, and so on) will be used to evaluate available budget funds?
-- **Source documents** – What source documents must be evaluated for budget control? Should the documents be evaluated per line or per document?
-- **Funds available calculation** – Should documents such as purchase requisitions (preencumbrances) and purchase orders (encumbrances) be considered in the calculation of available funds? Should documents that are in a draft state be considered in the calculation?
+- **Source documents** – What source documents must be evaluated for budget control? Should the system evaluate the documents per line or per document?
+- **Funds available calculation** – Should the calculation of available funds consider documents such as purchase requisitions (preencumbrances) and purchase orders (encumbrances)? Should the calculation consider documents that are in a draft state?
 - **Override permission** – Who has permission to exceed the available budget?
 
 Budget control is fully integrated with the application. Therefore, you can evaluate the available budget for both planned purchases and actual purchases. Budget inquiries and reports are available. Users can evaluate the budget throughout the budget cycle, and can make any adjustments that are required, in the form of budget revisions or transfers. A budget manager can also export the budget and actuals into Microsoft Excel to better analyze and forecast as required.
@@ -77,6 +77,7 @@ If you use **Allow over budget processing**, ensure that you assign appropriate 
 This option allows transactions to exceed the budget up to a defined tolerance level, after which the system blocks processing.
 The system uses the **Budget threshold percentage** configured in **Budget control parameters**. Transactions are allowed to process until the defined threshold is exceeded.
 Example:
+
 | **Budget amount** | **Threshold** | **Spending amount** | **Result** |
 | -------------- | -------------- | -------------- | -------------- |
 | 100,000 USD | 110 % | 105,000 USD | Allowed |
