@@ -2,7 +2,7 @@
 title: E-commerce platform modernization
 description: Learn about platform modernization efforts for the Dynamics 365 Commerce online SDK, including Node.js runtime upgrades and TypeScript upgrades.
 author: mithun-microsoft
-ms.date: 06/24/2026
+ms.date: 07/27/2026
 ms.topic: overview
 ms.search.region: Global
 ms.author: mithunbobade
@@ -63,6 +63,9 @@ To move your development environment to Node.js 24:
    yarn start
    ```
 
+> [!TIP]
+> If `yarn install` or `yarn build` fails during the upgrade, see [Troubleshoot the Node.js 24 upgrade](ecommerce-platform-modernization-troubleshooting.md) for common errors and fixes.
+
 ## TypeScript upgrade
 
 Starting with online SDK package version 9.55 (SDK bootloader version 1.55), the Dynamics 365 Commerce online SDK upgraded its TypeScript compiler from **TypeScript 3.x** to **TypeScript 4.2.4**. This upgrade brings improved type checking, better editor tooling support, and access to modern TypeScript language features.
@@ -100,6 +103,7 @@ For a full list of changes between TypeScript versions 3.x and 4.x, see the [Typ
 ## More resources
 
 - [Set up a development environment](setup-dev-environment.md)
+- [Troubleshoot the Node.js 24 upgrade](ecommerce-platform-modernization-troubleshooting.md)
 - [SDK and module library updates](sdk-updates.md)
 - [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
 - [Dynamics 365 Commerce public preview release schedule](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)
