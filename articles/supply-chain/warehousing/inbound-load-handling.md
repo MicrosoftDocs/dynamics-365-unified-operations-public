@@ -51,13 +51,13 @@ The following high-level illustration shows an example flow for handling inbound
 
 ## <a name="register-item-quantities-arriving"></a>Register item quantities that arrive on an inbound load
 
-Dynamics 365 Supply Chain Management supports several operational approaches to recording the arrival of ordered products via loads. You can configure the system to match your specific business requirements. This section describes how to register incoming item quantities by using the Warehouse management mobile app when an inbound load arrives at the warehouse. First, warehouse workers must register the item quantities that are included in the load shipment. This workflow is available only if the following items are present in the system:
+Dynamics 365 Supply Chain Management supports several operational approaches to recording the arrival of ordered products through loads. You can configure the system to match your specific business requirements. This section describes how to register incoming item quantities by using the Warehouse Management mobile app when an inbound load arrives at the warehouse. First, warehouse workers must register the item quantities that are included in the load shipment. This workflow is available only if the following items are present in the system:
 
 - **An inbound load record that describes the item quantities that are expected in the shipment**
 
 Typically, the vendor confirms the inbound load record before the shipment arrives at the warehouse. Therefore, the load has a status of *Shipped*. However, warehouse workers can also register item quantities for loads that have a status of *Open* or *Received*, depending on the setup option.
 
-- **A Warehouse management mobile app that is configured to support load receiving and all related [warehouse setup enabled](get-started-with-setting-up-module.md)**
+- **A Warehouse Management mobile app that is configured to support load receiving and all related [warehouse setup enabled](get-started-with-setting-up-module.md)**
 
 The [Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) for mobile devices supports the following receiving work creation processes:
 
