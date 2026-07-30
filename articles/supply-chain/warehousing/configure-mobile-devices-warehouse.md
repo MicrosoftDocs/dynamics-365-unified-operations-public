@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure the menu items that warehouse workers use to perform their work in the Warehouse management mobile app.
+This article describes how to configure the menu items that warehouse workers use to perform their work in the Warehouse Management mobile app.
 
 For example, you can use the **Mobile device menu items** page to configure menu items for the following tasks:
 
