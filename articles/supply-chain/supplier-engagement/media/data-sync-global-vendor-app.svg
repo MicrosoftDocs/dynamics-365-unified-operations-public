@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1279.9999"
+   height="486.24533"
+   overflow="hidden"
+   version="1.1"
+   id="svg17"
+   sodipodi:docname="data-sync-global-vendor-app.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.56041667"
+     inkscape:cx="1023.3457"
+     inkscape:cy="320.2974"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="2248"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg17" />
+  <defs
+     id="defs1">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect1" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g17"
+     transform="translate(0,-117.76952)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect2" />
+    <rect
+       x="0.50005299"
+       y="113.5"
+       width="1280"
+       height="493"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect3" />
+    <rect
+       x="180.5"
+       y="126.5"
+       width="705"
+       height="208"
+       stroke="#bfbfbf"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#f2f2f2"
+       id="rect4" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(189.314,153)"
+       id="text4">Supplier Engagement application</text>
+    <rect
+       x="180.5"
+       y="371.5"
+       width="705"
+       height="223"
+       stroke="#bfbfbf"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#f2f2f2"
+       id="rect5" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(189.314,397)"
+       id="text5">Supply Chain Management</text>
+    <rect
+       x="477.5"
+       y="183.5"
+       width="345"
+       height="62"
+       stroke="#41719c"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#5b9bd5"
+       id="rect6" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(547.197,221)"
+       id="text6">msdyn_globalvendor</text>
+    <rect
+       x="477.5"
+       y="473.5"
+       width="372"
+       height="61"
+       stroke="#41719c"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#5b9bd5"
+       id="rect7" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(515.094,511)"
+       id="text7">mserp_vrmglobalvendorentity</text>
+    <path
+       d="m 578.833,247.5 v 218.476 h -2.666 V 247.5 Z m 2.667,217.143 -4,8 -4,-8 z"
+       fill="#ff0000"
+       id="path7" />
+    <path
+       d="M 1.33333,-6.14122e-7 1.33344,221.273 H -1.33323 L -1.33333,6.14122e-7 Z M 4.0001,219.939 l -3.999995013,8 -4.000004987,-8 z"
+       fill="#ff0000"
+       transform="matrix(1,0,0,-1,607.5,473.439)"
+       id="path8" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(479.886,265)"
+       id="text8">Plugin trigger</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="14px"
+       transform="translate(557.886,265)"
+       id="text9">:</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="14px"
+       transform="translate(479.886,282)"
+       id="text10">• Create</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="14px"
+       transform="translate(479.886,299)"
+       id="text11">• Update</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="14px"
+       transform="translate(479.886,316)"
+       id="text12">• Delete</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(947.029,389)"
+       id="text13">Plugin trigger:</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="14px"
+       transform="translate(947.029,406)"
+       id="text14">• OnExternalUpdate</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(616.172,407)"
+       id="text15">Syncs the unique ID of the record created</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(616.172,424)"
+       id="text16">in Supply Chain Management to Dataverse</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(616.172,441)"
+       id="text17">in the field msdyn_verecordguid</text>
+    <path
+       d="m 849.428,502.487 h 90.353 l -1.166,1.167 V 214 l 1.166,1.167 H 828.667 v -2.334 H 940.948 V 504.82 h -91.52 z M 830,218 l -8,-4 8,-4 z"
+       fill="#5b9bd5"
+       id="path17" />
+  </g>
+</svg>
