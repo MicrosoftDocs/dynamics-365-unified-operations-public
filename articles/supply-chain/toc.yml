@@ -2577,6 +2577,102 @@
           href: procurement/tasks/search-vendors.md
         - name: Set up permissions for ordering products on behalf of someone else
           href: procurement/tasks/set-up-permissions-ordering-products.md
+      - name: Supplier Engagement (preview)
+        items:
+        - name: Supplier Engagement overview
+          href: supplier-engagement/supplier-engagement-overview.md
+        - name: How Supplier Engagement compares to the vendor collaboration interface
+          href: supplier-engagement/supplier-engagement-comparison.md
+        - name: Deploy Supplier Engagement
+          items:
+          - name: Supplier Engagement deployment overview, prerequisites, and licensing
+            href: supplier-engagement/deploy-overview.md
+          - name: Install the Supplier Engagement app and supplier portal on Power Platform
+            href: supplier-engagement/deploy-install-power-platform.md
+          - name: Onboard using the onboarding guide
+            href: supplier-engagement/deploy-onboarding-guide.md
+          - name: Configure Supplier Engagement elements in Power Platform
+            href: supplier-engagement/deploy-configure-power-platform.md
+          - name: Configure Supplier Engagement features in Supply Chain Management
+            href: supplier-engagement/deploy-configure-scm.md
+          - name: Post-deployment validation checklist
+            href: supplier-engagement/deploy-validation-checklist.md
+          - name: Deployment FAQs
+            href: supplier-engagement/deploy-questions.md
+        - name: Configure the Supplier Engagement app
+          items:
+          - name: Configure the Supplier Engagement app overview
+            href: supplier-engagement/configure-app-overview.md
+          - name: Configure certificate types and organizations
+            href: supplier-engagement/configure-certificate-types.md
+          - name: Configure capabilities
+            href: supplier-engagement/configure-capabilities.md
+          - name: Configure risk management elements
+            href: supplier-engagement/configure-risk-management.md
+          - name: Configure self-assessment questions
+            href: supplier-engagement/configure-self-assessment.md
+          - name: Configure Supplier Engagement app settings
+            href: supplier-engagement/configure-settings.md
+        - name: Synchronize data between Supplier Engagement and Supply Chain Management
+          href: supplier-engagement/supplier-engagement-data-sync.md
+        - name: Manage users of the Supplier Engagement app and supplier portal
+          items:
+          - name: Manage users overview
+            href: supplier-engagement/supplier-engagement-manage-users.md
+          - name: Manage Supplier Engagement app users
+            href: supplier-engagement/supplier-engagement-app-users.md
+          - name: Manage supplier portal users
+            href: supplier-engagement/supplier-engagement-portal-users.md
+        - name: Personalize the supplier portal
+          items:
+          - name: Personalize the supplier portal overview
+            href: supplier-engagement/personalize-portal-overview.md
+          - name: Update the company logo
+            href: supplier-engagement/personalize-portal-logo.md
+          - name: Update the company name
+            href: supplier-engagement/personalize-portal-company-name.md
+          - name: Update banner texts and images
+            href: supplier-engagement/personalize-portal-banner.md
+          - name: Manage unmanaged customizations
+            href: supplier-engagement/personalize-portal-manage-customizations.md
+        - name: Work with the Supplier Engagement app
+          items:
+          - name: Work with the Supplier Engagement app overview
+            href: supplier-engagement/supplier-engagement-app-overview.md
+          - name: Create and manage global vendors
+            items:
+            - name: Global vendor management overview
+              href: supplier-engagement/supplier-engagement-global-vendors-overview.md
+            - name: Create a global vendor
+              href: supplier-engagement/supplier-engagement-create-global-vendor.md
+            - name: Review and approve incoming vendor registrations
+              href: supplier-engagement/supplier-engagement-review-registrations.md
+            - name: Global vendor onboarding lifecycle
+              href: supplier-engagement/supplier-engagement-global-vendor-lifecycle.md
+            - name: Detect and manage duplicate global vendors
+              href: supplier-engagement/supplier-engagement-duplicate-global-vendors.md
+            - name: Manage global vendor information
+              href: supplier-engagement/supplier-engagement-global-vendor-info.md
+            - name: Global vendor contacts
+              href: supplier-engagement/supplier-engagement-global-vendor-contacts.md
+            - name: Manage global vendor capabilities
+              href: supplier-engagement/supplier-engagement-global-vendor-capabilities.md
+            - name: Manage certificates
+              href: supplier-engagement/supplier-engagement-manage-certificates.md
+            - name: Global vendor feedback
+              href: supplier-engagement/supplier-engagement-global-vendor-feedback.md
+            - name: Risk management and corrective actions
+              href: supplier-engagement/supplier-engagement-risk-corrective-actions.md
+          - name: Manage local vendors
+            href: supplier-engagement/supplier-engagement-manage-local-vendors.md
+          - name: Manage activities
+            href: supplier-engagement/supplier-engagement-activities.md
+          - name: Global and local vendor holds
+            href: supplier-engagement/supplier-engagement-vendor-holds.md
+          - name: Dashboards
+            href: supplier-engagement/supplier-engagement-dashboards.md
+        - name: Work with Supplier Engagement data in Supply Chain Management
+          href: supplier-engagement/supplier-engagement-data-in-scm.md
       - name: Integrate with contract lifecycle management systems
         items:
         - name: Contract lifecycle management integration overview

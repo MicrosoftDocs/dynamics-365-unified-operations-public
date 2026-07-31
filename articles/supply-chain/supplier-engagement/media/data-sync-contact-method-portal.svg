@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1278.2157"
+   height="488.02975"
+   overflow="hidden"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="data-sync-contact-method-portal.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.56041667"
+     inkscape:cx="104.38662"
+     inkscape:cy="33.011152"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="2248"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <defs
+     id="defs1">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect1" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g14"
+     transform="translate(0,-115.98513)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect2" />
+    <rect
+       x="0.50005299"
+       y="113.5"
+       width="1280"
+       height="493"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect3" />
+    <rect
+       x="287.5"
+       y="126.5"
+       width="700"
+       height="208"
+       stroke="#bfbfbf"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#f2f2f2"
+       id="rect4" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(296.886,153)"
+       id="text4">Supplier portal</text>
+    <rect
+       x="287.5"
+       y="371.5"
+       width="706"
+       height="223"
+       stroke="#bfbfbf"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#f2f2f2"
+       id="rect5" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(296.886,398)"
+       id="text5">Supply Chain Management</text>
+    <rect
+       x="512.5"
+       y="183.5"
+       width="445"
+       height="62"
+       stroke="#41719c"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#5b9bd5"
+       id="rect6" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(615.272,221)"
+       id="text6">msdyn_vrmpartycontact</text>
+    <rect
+       x="512.5"
+       y="473.5"
+       width="445"
+       height="61"
+       stroke="#41719c"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#5b9bd5"
+       id="rect7" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(588.596,511)"
+       id="text7">mserp_vrmpartycontactentity</text>
+    <path
+       d="m 703.833,247.5 v 218.476 h -2.666 V 247.5 Z m 2.667,217.143 -4,8 -4,-8 z"
+       fill="#ff0000"
+       id="path7" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(592.171,269)"
+       id="text8">Portal Trigger:</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="14px"
+       transform="translate(592.171,286)"
+       id="text9">• Create</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="14px"
+       transform="translate(592.171,303)"
+       id="text10">• Update</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="14px"
+       transform="translate(592.171,320)"
+       id="text11">• Delete</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(719.558,269)"
+       id="text12">Syncs the unique ID of the record created</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(719.558,286)"
+       id="text13">in Supply Chain Management to Dataverse</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(719.558,303)"
+       id="text14">in the field msdyn_verecordguid</text>
+  </g>
+</svg>
