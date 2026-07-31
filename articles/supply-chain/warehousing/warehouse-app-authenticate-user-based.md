@@ -62,7 +62,7 @@ Microsoft recommends that you combine username/password authentication with [bro
 
 - **Shared device mode** – Lets multiple workers share the same Android or iOS device while each worker's Microsoft Entra ID session is fully signed out and replaced when they sign out, without requiring a separate Microsoft Entra ID account per device. Learn more in [Overview of shared device mode](/entra/identity-platform/msal-shared-devices).
 - **QR code and PIN sign-in** – Lets workers sign in quickly on shared devices by scanning a QR code and entering a PIN, instead of typing a full username and password every time. Learn more in [Set up QR Code and PIN Authentication in Android App](/entra/identity-platform/android-qr-code-pin-authentication) and [Set up QR Code and PIN Authentication in iOS App](/entra/identity-platform/ios-qr-code-pin-authentication).
-- **Windows Web Account Manager (WAM)** – Uses the native Windows broker and primary refresh tokens (PRT) to provide fast, secure sign-in on Windows devices. Learn more in [Microsoft Entra joined shared devices on Windows](/entra/identity/devices/concept-primary-refresh-token).
+- **Windows Web Account Manager (WAM)** – Uses the native Windows broker and primary refresh tokens (PRT) to provide fast, secure sign-in on Windows devices. Learn more in [Operating system brokers on Windows (WAM)](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam) and [Microsoft Entra joined shared devices on Windows](/entra/identity/devices/concept-primary-refresh-token).
 
 These mechanisms reduce the risk of phishing and credential theft, because the worker never has to manually enter or expose a code that a threat actor could intercept and use elsewhere.
 
@@ -79,7 +79,7 @@ If you must use device code authentication, be aware of the following extra requ
 
 - Create a unique Microsoft Entra ID user account for each device or human worker. In addition, *strictly limit these accounts so that they can perform only warehouse mobile device user activities*.
 - While a worker is signing in by using the Warehouse Management mobile app, the app shows a generated device code. This code expires after 15 minutes and is then hidden by the app. If the code expires before sign-in is completed, the worker must generate a new code by selecting **Connect** again in the app.
-- Devices are automatically signed out if they're not used or accessed for 90 days. Signed out devices must be reauthenticated before they can be used again. Learn more in [Refresh tokens in the Microsoft identity platform](/azure/active-directory/develop/refresh-tokens).
+- Devices are automatically signed out if they're not used or accessed for 90 days. Signed out devices must be reauthenticated before they can be used again. Learn more in [Refresh tokens in the Microsoft identity platform](/entra/identity-platform/refresh-tokens).
 - Single sign-on (SSO) isn't supported when you use device code flow authentication together with a mobile mass deployment (MDM) system (such as Intune) to distribute the Warehouse Management mobile app. You can still use an MDM system to deliver the app to each mobile device and deliver a `connections.json` file that sets up connections using device code. The only difference is that workers must manually sign in when they start to use the app. (This step is required only once.)
 
 ## <a name="create-service"></a>Manually create an application registration in Microsoft Entra ID
@@ -161,11 +161,11 @@ The following procedure shows one way to register an application in Microsoft En
 
 For more information about how to register an application in Microsoft Entra ID, see the following resources:
 
-- For instructions that show how to use Windows PowerShell to register an application in Microsoft Entra ID, see [Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- For instructions that show how to use Windows PowerShell to register an application in Microsoft Entra ID, see [Use Azure PowerShell to create a service principal with a certificate](/entra/identity-platform/howto-authenticate-service-principal-powershell).
 
 - For complete details about how to manually register an application in Microsoft Entra ID, see the following articles:
-    - [Register an application in Microsoft Entra ID](/azure/active-directory/develop/quickstart-register-app)
-    - [Register a Microsoft Entra app and create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Register an application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app)
+    - [Register a Microsoft Entra app and create a service principal](/entra/identity-platform/howto-create-service-principal-portal)
 
 ## <a name="user-azure-ad"></a>Set up employee, user, and warehouse worker records in Supply Chain Management
 
@@ -191,8 +191,8 @@ The following table lists the broker apps that must be installed on a device for
 
 | Platform | Required broker app |
 |---|---|
-| **Android** | [Intune Company Portal](/mem/intune/user-help/sign-in-to-the-company-portal) or [Microsoft Authenticator](/mem/intune/user-help/sign-in-to-the-company-portal) |
-| **iOS** | [Microsoft Authenticator](/mem/intune/user-help/sign-in-to-the-company-portal) |
+| **Android** | [Intune Company Portal](/intune/user-help/company-portal) or [Microsoft Authenticator](/entra/identity/authentication/concept-authentication-authenticator-app) |
+| **iOS** | [Microsoft Authenticator](/entra/identity/authentication/concept-authentication-authenticator-app) |
 | **Windows** | The worker must have a work account configured on the device |
 
 > [!IMPORTANT]
