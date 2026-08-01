@@ -326,7 +326,7 @@ Deleting all the solutions takes about 20 minutes. If the operation is successfu
 You can manually uninstall Business performance analytics through the Power Platform admin center. You must manually delete the solutions in the following order:
 
 1. Business performance analytics anchor solution
-1. Business performance analytics MCP
+1. ERP Analytics MCP server solution
 1. Business performance analytics solution
 1. Business performance analytics reports
 1. Business performance analytics plugins solution
