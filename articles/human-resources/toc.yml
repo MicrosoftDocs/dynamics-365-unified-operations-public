@@ -653,6 +653,8 @@ items:
         href: hr-employee-self-service-request-leave-of-absence.md
       - name: Manage leave requests in Teams  
         href: hr-app.md
+      - name: Leave and absence integration with Project operations
+        href: leave-time-integration.md
       - name: Create an open-ended leave of absence  
         href: hr-create-open-leave-absence.md
       - name: Manage employee leave
@@ -662,7 +664,7 @@ items:
       - name: Manage leave and absence requests
         href: hr-employee-self-service-manage-requests.md
       - name: Request time off
-        href: hr-employee-self-service-request-time-off.md
+        href: hr-employee-self-service-request-time-off.md    
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
       - name: Configure absence manager role
@@ -841,10 +843,6 @@ items:
         href: hr-learning-create-closed-ended-question.md
       - name: Create a dependent question
         href: hr-learning-depending-question.md
-    - name: Human Resources app for leave and absence
-      items:
-        - name: Human Resources app for leave and absence
-          href: hr-app.md
     - name: Use the Workflow system
       items:
         - name: Workflow system overview

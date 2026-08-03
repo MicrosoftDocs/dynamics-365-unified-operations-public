@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Dynamics 365 Human Resources app for leave and absence
-description: This article describes the Microsoft Dynamics 365 Human Resources app for leave and absence.
+title: Manage leave requests in Teams
+description: This article describes the Teams app for leave and absence.
 author: twheeloc
 ms.date: 06/12/2026
 ms.topic: overview
@@ -23,22 +23,22 @@ ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 
 ---
-# Dynamics 365 Human Resources app for leave and absence
+# Manage leave requests in Teams 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The Human Resources app for leave and absence integrates with Microsoft Dynamics 365 Human Resources. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. Employees can view leave balances, upcoming leaves, and leave history in one app. Managers can also use the app to view requests, and approve or reject them.
+The Teams app for leave and absence integrates with Microsoft Dynamics 365 Human Resources. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. Employees can view leave balances, upcoming leaves, and leave history in one app. Managers can also use the app to view requests and approve or reject them.
 
-You can use the Human Resources app for leave and absence in Microsoft Teams or in a web browser. You can use it on both mobile devices and desktop devices.
+You can use the Teams app for leave and absence in Microsoft Teams or in a web browser. You can use it on both mobile devices and desktop devices.
 
-Administrators of an organization must install the Human Resources app and share it with Microsoft Teams before organization users can use it.
+Administrators of an organization must install the Teams app and share it with Microsoft Teams before organization users can use it.
 
 > [!IMPORTANT]
-> Updates for the Human Resources app will be available. We recommend that you don't customize the app.
+> Updates for the Teams app will be available. We recommend that you don't customize the app.
 
-## Install the Human Resources app
+## Install the Teams app
 
-Before you install the Human Resources app, make sure the following prerequisites are met:
+Before you install the Teams app, make sure the following prerequisites are met:
 
 - You have a version 10.0.39 or later Dynamics 365 Human Resources environment, and the latest quality update is installed.
 - You have a license to Dynamics 365 Human Resources or a Dynamics 365 Human Resources self service license assigned.
@@ -51,7 +51,7 @@ Before you install the Human Resources app, make sure the following prerequisite
     1. Search for **Microsoft flow approvals**, and select **Install app**.
     1. Select the app, and then select **Next** to install it.
 
-To install the Human Resources app for the first time, follow these steps:
+To install the Teams app for the first time, follow these steps:
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as an admin.
 1. Select **Environments**, search for your environment, and select it.
@@ -61,24 +61,24 @@ To install the Human Resources app for the first time, follow these steps:
     1. Search for **Power Apps component framework for canvas apps**, and enable it if it isn't already enabled.
     1. Select **Save**.
 
-1. Select **Human Resources** to access the Human Resources app for leave and absence on Marketplace, and then select **Get it now**.
+1. Select **Human Resources** to access the Teams app for leave and absence on Marketplace, and then select **Get it now**.
 1. You're redirected to Power Platform admin center.
 1. Sign in to Power Platform admin center, select your environment, and then select **Install**.
 1. To check the status of the installation, in Power Platform admin center, select **Environments**, select your environment, and then, in the **Resources** section, select **Dynamics 365 apps**. If the installation is successful, the **Status** column for Dynamics 365 Human Resources changes to **Installed**. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
 
-## Update the Human Resources app
+## Update the Teams app
 
-Use this procedure if you installed a previous version of the Human Resources app and need to update it to the enhanced version.
+Use this procedure if you installed a previous version of the Teams app and need to update it to the enhanced version.
 
 1. In Power Platform admin center, select **Environments**, select your environment, and then, in the **Resources** section, select **Dynamics 365 apps**.
 1. In the **Status** column for Dynamics 365 Human Resources, if an update is available, select it, and then select **Update**.
 1. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
 
-## Embed the Human Resources app in Microsoft Teams
+## Embed the app in Microsoft Teams
 
-To embed the Human Resources app in Microsoft Teams, see [Embed a model-driven app as a personal app in Teams](/power-apps/teams/embed-model-driven-teams-personal). You can also use the Human Resources app in a web browser.
+To embed the app in Microsoft Teams, see [Embed a model-driven app as a personal app in Teams](/power-apps/teams/embed-model-driven-teams-personal). You can also use the Teams app in a web browser.
 
-## Onboard users to the Human Resources app
+## Onboard users to the Teams app
 
 1. Users of the app need the following roles in Microsoft Power Platform:
 
@@ -88,11 +88,11 @@ To embed the Human Resources app in Microsoft Teams, see [Embed a model-driven a
 
 1. Assign end users an employee role in the Dynamics 365 Human Resources environment.
 
-## Create and manage leave requests by using the Human Resources app
+## Create and manage leave requests by using the Teams app
 
 ### View available balances
 
-1. Expand **Leave details**, and select **Available balances**.
+1. Expand **Leave details** and select **Available balances**.
 1. For each leave plan that you assign to the signed-in user, a tile shows the available balance. You can request leave directly from a tile by selecting the **Request** button.
 1. If the HR administrator hides the leave balance for a leave plan, "- -" appears as the balance value for the leave plan.
 
