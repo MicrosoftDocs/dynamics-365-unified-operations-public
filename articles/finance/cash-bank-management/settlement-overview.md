@@ -67,6 +67,26 @@ Settlements can also generate transactions. For example, the settlement of an in
 
 When you try to settle a transaction, you might notice a symbol that indicates that the transaction is marked in another location. In this case, you can select the transaction on the **Settle transactions** page and then select **Inquiry \> Settlement from the settlement window**. The view for this inquiry shows journals, sales orders, invoices, payment proposals, and customer locations that might be blocking the transaction from settlement. To resolve the issue, you can select the link to go directly from the inquiry to the blocked location. You can then update the document with the adjustments that are required to settle it. You can also use the **Marked** indicator to identify other documents that are included in the same blocking location.
 
+## Large-volume payment settlements
+
+To help prevent performance problems during payment generation, the system displays a warning when the number of open transactions exceeds recommended thresholds. You can review the warning and decide whether to continue processing.
+
+### Payment journal line settlement with more than 2,000 open transactions
+
+When you close the settlement page and the payment journal settles more than 2,000 open transactions, the system displays a warning message:
+
+> The current payment journal line is configured to settle more than 2,000 open transactions. Processing a large number of transactions might affect payment generation performance. Reduce the number of selected transactions before proceeding. Do you want to continue?
+
+You can reduce the number of marked transactions or continue with payment processing.
+
+### Payment proposal processing
+
+When you select **Create payments** on the **Payment proposal** page and the payment proposal contains more than 5,000 open transactions, the system displays a warning: 
+
+> The current payment proposal contains more than 5,000 open transactions. Processing a large number of transactions might affect payment generation performance. Rerun the payment proposal with more restrictive filters or remove open transactions from the current proposal before proceeding. Do you want to continue?
+
+You can rerun the payment proposal with more restrictive filters, remove open transactions from the current proposal, or continue with payment creation.
+
 ## Additional resources
 
 - [Settle remainder](settle-remainder.md)
