@@ -4,7 +4,7 @@ description: Learn about the Vendor aging report that's available in Microsoft D
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 04/29/2024
+ms.date: 07/28/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -21,11 +21,10 @@ The **Vendor aging** report shows the balances that are due to vendors. Balances
 
 ## How to filter the data on this report
 
-When you generate the **Vendor aging** report, the following default fields are shown. You can use them to filter the data that will appear on the report. 
-
+When you generate the **Vendor aging** report, you see the following default fields. Use these fields to filter the data that appears on the report.
 
 | Field | Description |
-|-------|-------------| 
+|-------|-------------|
 | Start date | Enter a date in the first period interval or aging period to include on the report. |
 | Balance as of | Enter the date to view the vendor balances for. |
 | Criteria | <p>Select the type of date to base the report on:</p><ul><li>**Transaction date** – Use the posting date of the transactions (for example, an invoice date that's the basis for the calculation of the due date).</li><li>**Due date** – Use the due date of the transactions, based on the terms of payment.</li><li>**Document date** – Use a user-defined document date that's the basis for the calculation of the due date.</li></ul> |
@@ -38,6 +37,6 @@ When you generate the **Vendor aging** report, the following default fields are 
 | Include amounts in transaction currency | Select this checkbox to include the amounts in the transaction currency. |
 | Negative balance | Select this checkbox to include negative balances. |
 | Exclude zero balance accounts | Select this checkbox to exclude vendors who have a zero balance. |
-| Payment positioning | Select this checkbox to include payments that haven't been settled. These payments are shown in the first column of the report. |
+| Payment positioning | Select this checkbox to include payments that aren't settled. These payments are shown in the first column of the report. |
 | Vendors | The information in this section depends on the query that's created. |
-| Current print destination | The information in this section depends on the printing options. | 
+| Current print destination | The information in this section depends on the printing options. |

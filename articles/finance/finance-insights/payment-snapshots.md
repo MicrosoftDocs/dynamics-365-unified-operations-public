@@ -4,8 +4,8 @@ description: Learn about the snapshots feature, which lets you save a cash flow 
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: overview
-ms.date: 11/03/2021
-ms.reviewer: kfend
+ms.date: 07/30/2026
+ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
 ms.search.region: Global

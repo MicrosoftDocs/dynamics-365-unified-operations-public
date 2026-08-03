@@ -4,7 +4,7 @@ description: Learn about the capability for automatically applying prepayments t
 author: sunfzam
 ms.author: shpandey
 ms.topic: overview
-ms.date: 10/19/2021
+ms.date: 07/30/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -16,11 +16,11 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the capability for automatically applying prepayments to vendor invoices. A prepayment can be created for a purchase order as part of a purchase agreement. After a vendor invoice is received, the prepayment can be used to settle the accounts payable from the vendor invoice. The new feature enables the system to automatically use purchase order numbers on a vendor invoice to look up corresponding prepayments when the vendor invoice is imported.
+This article describes the capability for automatically applying prepayments to vendor invoices. You can create a prepayment for a purchase order as part of a purchase agreement. After you receive a vendor invoice, use the prepayment to settle the accounts payable from the vendor invoice. This new feature enables the system to automatically use purchase order numbers on a vendor invoice to look up corresponding prepayments when the vendor invoice is imported.
 
-If prepayments are found and can be applied, lines are added to the existing invoice lines to apply the prepayments. The prepayment lines are never considered during the invoice matching process.
+If the system finds prepayments and can apply them, it adds lines to the existing invoice lines to apply the prepayments. The prepayment lines are never considered during the invoice matching process.
 
-The following points describe how prepayments are applied when different purchasing processes are followed:
+The following points describe how the system applies prepayments when different purchasing processes are followed:
 
 - **One vendor invoice per purchase order** – The system applies the prepayment on the purchase order to the vendor invoice.
 - **One vendor invoice for multiple purchase orders** – The system applies the prepayments on all purchase orders to the vendor invoice.
@@ -31,7 +31,7 @@ If an attempt to apply a prepayment fails, the setting of the **Block follow-up 
 
 - **Yes** – The error message "Automatic application of prepayment: Failed" is added in the automation history, and the invoice remains in the list of pending vendor invoices. The invoice remains blocked until you manually apply the prepayment.
 
-To manually apply prepayments, go to the pending vendor invoice. On the **Invoice details** page, set the **Include in automated processing** option for the blocked invoice to **No**. You can now manually apply the prepayment. After the prepayment has been applied, set the **Include in automated processing** option back to **Yes** so that the invoice can be automatically processed.
+To manually apply prepayments, go to the pending vendor invoice. On the **Invoice details** page, set the **Include in automated processing** option for the blocked invoice to **No**. You can now manually apply the prepayment. After the prepayment is applied, set the **Include in automated processing** option back to **Yes** so that the invoice can be automatically processed.
 
 You can also bypass automatic application of the prepayment by setting the **Include in automated processing** option to **No** and then setting it back to **Yes**. You receive the following message: "A prepayment already exists for the purchase order. Do you want to ignore it for selected vendor invoice?" Select **Yes**. The message "Application of prepayment bypassed manually" is added in the automation history, and the vendor invoice isn't blocked when the automated process runs again.
 

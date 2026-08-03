@@ -4,7 +4,7 @@ description: Learn about the features that are available for end-to-end automati
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: how-to
-ms.date: 03/24/2021
+ms.date: 07/28/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -20,15 +20,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains the data entities that are available for end-to-end automation of vendor invoices, including invoices with attachments.
 
-Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient. In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider. They then receive machine-readable invoice metadata together with a scanned image of each invoice. To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system. Now this “last mile” automation is enabled out of the box, through an invoice automation solution.
+Organizations that want to streamline their accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient. In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider. They then receive machine-readable invoice metadata together with a scanned image of each invoice. To help with automation, a "last mile" solution is then built to enable consumption of these artifacts in the invoicing system. Now this "last mile" automation is enabled out of the box, through an invoice automation solution.
 
 ## Solution context
 
-The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice. Any external system that can generate artifacts that comply with this interface will be able to send the feed for automatic processing of invoices and attachments.
+The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice. Any external system that can generate artifacts that comply with this interface can send the feed for automatic processing of invoices and attachments.
 
-The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing. Contoso’s vendors send invoices to the service provider by email. Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice. An integration layer then transforms these artifacts so that they can be consumed.
+The following illustration shows a sample integration scenario where Contoso partners with an OCR service provider for vendor invoice processing. Contoso's vendors send invoices to the service provider by email. Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice. An integration layer then transforms these artifacts so that they can be consumed.
 
-![Sample integration scenario.](media/vendor_invoice_automation_01.png)
+:::image type="content" source="media/vendor_invoice_automation_01.png" alt-text="Screenshot of a sample integration scenario where an OCR service provider processes vendor invoices.":::
 
 Several variations of the preceding scenario are possible if invoice integration is required. Data migration is another use case where this interface can be used to create invoices and attachments.
 
@@ -44,15 +44,15 @@ The rest of this article provides detailed descriptions of these solution compon
 
 ## Data entities
 
-A data package is the unit of work that must be sent so that invoice headers, invoice lines, and invoice attachments can be created. The following data entities are used for the artifacts that make up the data package:
+A data package is the unit of work that you send to create invoice headers, invoice lines, and invoice attachments. The following data entities represent the artifacts that make up the data package:
 
 + Vendor invoice header
 + Vendor invoice line
 + Vendor invoice document attachment
 
-Vendor invoice document attachment is a new data entity that is introduced as part of this feature. The Vendor invoice header entity has been modified so that it supports attachments. The Vendor invoice line entity hasn’t been modified for this feature.
+The Vendor invoice document attachment entity is a new data entity introduced as part of this feature. The Vendor invoice header entity is modified to support attachments. The Vendor invoice line entity isn't modified for this feature.
 
-For detailed information about data packages, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). For information about how to create data packages using the data management workspace, see [Process and consume data packages in Dynamics 365 finance and operations apps solution](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+For detailed information about data packages, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). For information about how to create data packages by using the data management workspace, see [Process and consume data packages in Dynamics 365 finance and operations apps solution](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 To quickly generate test data that includes invoices and attachments, follow these steps:
 
@@ -61,7 +61,7 @@ To quickly generate test data that includes invoices and attachments, follow the
 1. Create invoices that have lines and attachments.
 
     > [!NOTE]
-    > The attachments must be header attachments. Currently, the Vendor invoice document attachment entity doesn’t support line attachments.
+    > The attachments must be header attachments. Currently, the Vendor invoice document attachment entity doesn't support line attachments.
 
 1. Open the **Data management** workspace.
 1. Create an export job that includes the Vendor invoice header, Vendor invoice line, and Vendor invoice document attachment entities.
@@ -70,28 +70,28 @@ To quickly generate test data that includes invoices and attachments, follow the
 
 ### Determining the legal entity for an invoice
 
-Invoices that are imported via data packages can be associated with the legal entity that they belong to in two ways:
+When you import invoices through data packages, you can associate each invoice with the correct legal entity in two ways:
 
-+ The import job that processes the invoice imports it into the same company in which the job was scheduled in the **Data management** workspace. In other words, the company of the job determines the company that the invoice belongs to.
-+ When the data package that contains invoices is sent to Finance, the caller (that is, the integration application that runs outside of Finance) can explicitly mention the company ID in the HTTP request. In this case, the company context in which the processing job runs in Finance is overridden, and the invoices are imported into the company that was passed via the HTTP request.
++ The import job that processes the invoice imports it into the same company where you scheduled the job in the **Data management** workspace. In other words, the company of the job determines the company that the invoice belongs to.
++ When you send the data package that contains invoices to Finance, the caller (that is, the integration application that runs outside of Finance) can explicitly include the company ID in the HTTP request. In this case, the company context where the processing job runs in Finance is overridden, and the invoices are imported into the company that the request specifies.
 
 > [!NOTE]
-> This behavior is standard data management behavior. It’s explained here, in the context of invoices, just for the sake of completeness.
+> This behavior is standard data management behavior. It's explained here, in the context of invoices, just for the sake of completeness.
 
 ## Exception processing
 
-In scenarios where vendor invoices come into finance and operations via integration, there must be an easy way for an Accounts payable team member to process exceptions or failed invoices, and to create pending invoices out of failed invoices. This exception processing for vendor invoices is now part of finance and operations.
+When vendor invoices come into finance and operations through integration, the Accounts payable team needs an easy way to handle exceptions or failed invoices. They also need a way to create pending invoices from failed invoices. This exception processing for vendor invoices is now part of finance and operations.
 
 ### Vendor invoices that failed to import list page
 
-The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. Note that you can view the same records from the **Data management** workspace. You can also perform the same actions that are provided in the exception handling feature from the **Data management** workspace. The exception handling feature has been optimized for a functional user, which makes it easier to use.
+You can access the new list page for invoice exceptions at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. You can view the same records from the **Data management** workspace. You can also perform the same actions that the exception handling feature provides from the **Data management** workspace. The exception handling feature is optimized for a functional user, which makes it easier to use.
 
-![Exceptions list page.](media/vendor_invoice_automation_02.png)
+:::image type="content" source="media/vendor_invoice_automation_02.png" alt-text="Screenshot of the Vendor invoices that failed to import list page.":::
 
 This list page includes the following fields that come in via the feed:
 
 + **Company** – The company that the invoice belongs to
-+ **Error message** – The error message that the data management framework issues to explain why the invoice could not be created
++ **Error message** – The error message that the data management framework issues to explain why the invoice couldn't be created
 + **Number** – The invoice number
 + **Invoice account**
 + **Name** – The vendor’s name
@@ -105,36 +105,36 @@ This list page includes the following fields that come in via the feed:
 + **Line reference** – The identifier that comes from the external system
 
     > [!NOTE]
-    > The line reference isn’t the invoice ID.
+    > The line reference isn't the invoice ID.
 
-This list page also has a preview pane that you can used in the following ways:
+This list page also has a preview pane that you can use in the following ways:
 
-+ View the whole error message, so that you don’t have to expand the **Error message** column in the grid.
++ View the whole error message, so that you don't have to expand the **Error message** column in the grid.
 
 The list page supports the following actions:
 
 + **Edit** – Open the exception record in edit mode, so that you can fix the issues.
-+ **Options** – Access the standard options that are available on list pages. You can use the **Add to workspace** option to pin the exceptions list page to your workspace as a list or tile.
++ **Options** – Access the standard options that are available on list pages. Use the **Add to workspace** option to pin the exceptions list page to your workspace as a list or tile.
 
 ### Vendor invoices that failed to import details page
 
-When you start edit mode, the **Vendor invoices that failed to import details** page for the invoice that has issues will open. If there are issues with an invoice that has an attachment, the attachment won't be displayed. The attachment must be re-attached to the invoice.
+When you start edit mode, the **Vendor invoices that failed to import details** page opens for the invoice that has problems. If there are problems with an invoice that has an attachment, the attachment doesn't display. You must reattach the attachment to the invoice.
 
-The **Vendor invoices that failed to import details** page lets you create a pending invoice. After you’ve fixed the issues on an invoice as part of processing an exception, select the **Create pending invoice** button to create the pending invoice. The pending invoice will be created in the background. 
+The **Vendor invoices that failed to import details** page lets you create a pending invoice. After you fix the problems on an invoice as part of processing an exception, select the **Create pending invoice** button to create the pending invoice. The pending invoice is created in the background.
 
 ### Shared service vs. organization-based exception processing
 
-The exceptions list page supports the standard security constructs that the **Data management** workspace supports for the processing of staging records. The invoice import job can be secured in the following ways:
+The exceptions list page supports the standard security constructs that the **Data management** workspace supports for the processing of staging records. You can secure the invoice import job in the following ways:
 
 + By user role
 + By user
 + By legal entity
 
-![Import job that is secured by user role and legal entity.](media/vendor_invoice_automation_04.png)
+:::image type="content" source="media/vendor_invoice_automation_04.png" alt-text="Screenshot of an import job that is secured by user role and legal entity.":::
 
-If security is configured for the invoice import job, the exceptions list page honors those settings. Users will be able to see only the invoice exception records that this setup allows them to see.
+If you configure security for the invoice import job, the exceptions list page honors those settings. Users can see only the invoice exception records that this setup allows them to see.
 
-For example, Contoso has decided to process invoice exceptions by legal entity. Therefore, security is configured on the invoice import job in such a way that a user in legal entity A can see only invoice exceptions in legal entity A, whereas a user in legal entity B can see only invoice exceptions in legal entity B. This setup enables segregation of duties for the management of invoice exceptions.
+For example, Contoso decides to process invoice exceptions by legal entity. Therefore, security is configured on the invoice import job so that a user in legal entity A can see only invoice exceptions in legal entity A, whereas a user in legal entity B can see only invoice exceptions in legal entity B. This setup enables segregation of duties for the management of invoice exceptions.
 
 Contoso could also decide not to enforce any security, so that the same users can process invoice exceptions for all legal entities. This setup enables a shared services scenario for the management of invoice exceptions.
 
@@ -160,21 +160,21 @@ Here is the main functionality that the attachment viewer provides:
   + Fit the image to size.
 
 > [!NOTE]
-> These actions are available only for image files (JPEG, TIFF, PNG, and so on). Any changes that you make to an image by using these actions are saved to the image file. Currently, the attachment viewer doesn’t include versioning or auditing capabilities.
+> These actions are available only for image files (JPEG, TIFF, PNG, and so on). Any changes that you make to an image by using these actions are saved to the image file. Currently, the attachment viewer doesn't include versioning or auditing capabilities.
 
 ### Default attachment
 
 If a vendor invoice has more than one attachment, you can set one of the documents as the default attachment on the **Attachments** page. The **Is default attachment** option is a new option that was added as part of this feature. This option is also exposed in the Vendor invoice document attachment data entity. Therefore, the default attachment can be set through integrations.
 
-Only one document can be set as the default attachment. After you set a document as the default attachment, it’s automatically shown in the attachment viewer when the invoice is opened. If you don’t set any document as the default attachment, the viewer doesn’t automatically show any attachment when the invoice is opened.
+You can set only one document as the default attachment. After you set a document as the default attachment, it automatically appears in the attachment viewer when the invoice opens. If you don't set any document as the default attachment, the viewer doesn't automatically show any attachment when the invoice opens.
 
-### Show/hide invoice attachments
+### Show or hide invoice attachments
 
-A new button that is available on the **Exception processing**, **Pending invoice**, and **Invoice journal** inquiry pages lets you show or hide the attachment viewer.
+A new button on the **Exception processing**, **Pending invoice**, and **Invoice journal** inquiry pages lets you show or hide the attachment viewer.
 
 ## Security
 
-The following actions in the attachment viewer are controlled via role-based security:
+Role-based security controls the following actions in the attachment viewer:
 
 + Highlighting
 + Block
@@ -182,7 +182,7 @@ The following actions in the attachment viewer are controlled via role-based sec
 
 ### Pending vendor invoices page
 
-The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions:
+The following privileges provide read-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions:
 
 + **Maintain vendor invoice image** – This privilege provides read/write access.
 + **View vendor invoice image** – This privilege provides read-only access.
@@ -199,10 +199,10 @@ The following roles provide read-only access or read/write access to the attachm
 
 ### Vendor invoice attachment
 
-The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions.
+The following privileges provide read-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions.
 
 > [!NOTE]
-> Out of the box, the roles that are mentioned in this section provide read-only access to the invoice images in the attachment viewer. If a role must also have write access to the images, you can grant write access to that role by using the privilege and duty that are described here.
+> By default, the roles mentioned in this section provide read-only access to the invoice images in the attachment viewer. If a role needs write access to the images, grant write access to that role by using the privilege and duty described in this section.
 
 + **Maintain vendor invoice header entity image** – This privilege provides read/write access to the invoice images in the attachment viewer.
 + **View vendor invoice header entity image** – This privilege provides read-only view to the invoice image in the attachment viewer.
@@ -215,8 +215,6 @@ The following roles provide read-only access to the attachment viewer for those 
 
 + **Accounts payable clerk** and **Accounts payable manager** – The Maintain vendor invoices duty is assigned to these roles.
 
-By default, if the user role provides edit rights on any page, the user will also have edit rights on the attachments viewer for the highlighting, block, and annotation actions. However, if there are scenarios where a specific role should have edit rights on the page but not on the attachment viewer, the appropriate privileges from the preceding list can be used to satisfy the use case.
-
+By default, if the user role provides edit rights on any page, the user also has edit rights on the attachments viewer for the highlighting, block, and annotation actions. However, if there are scenarios where a specific role should have edit rights on the page but not on the attachment viewer, use the appropriate privileges from the preceding list to satisfy the use case.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

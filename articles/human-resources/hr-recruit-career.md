@@ -181,7 +181,7 @@ To configure external identity providers, follow these steps:
 1. Select your active site, and then select **Edit**.
 1. In the left pane, select **Security**.
 1. Select **Identity providers**.
-1. You can enable or disable any provider. The **Local sign in** and **Azure Active Directory** configurations for the providers contain "dummy" values.
+1. You can enable or disable any provider. The **Local sign in** and **Microsoft Entra ID** configurations for the providers contain "dummy" values.
 
 For more information about how to set up identity providers, see [Set up an OAuth 2.0 provider](/power-pages/security/authentication/oauth2-provider).
 

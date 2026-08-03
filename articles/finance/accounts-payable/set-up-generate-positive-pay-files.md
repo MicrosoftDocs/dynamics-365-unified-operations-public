@@ -4,7 +4,7 @@ description: Learn about how to set up positive pay and generate positive pay fi
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/13/2023
+ms.date: 07/28/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -19,7 +19,7 @@ ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This functionality will be deprecated September 2022, new users should use electronic reporting. For more information, see [Set up positive pay files by using Electronic reporting](set-up-positive-pay-er.md).
+> This functionality was deprecated September 2022. New users should use electronic reporting. For more information, see [Set up positive pay files by using Electronic reporting](set-up-positive-pay-er.md).
 
 This article explains how to set up positive pay and generate positive pay files. 
 

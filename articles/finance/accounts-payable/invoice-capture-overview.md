@@ -2,9 +2,9 @@
 title: Invoice capture solution overview
 description: Learn about the Invoice capture solution, including a table that outlines actions, system, and role names for various roles.
 author: sunfzam
-ms.author: shielas
+ms.author: twheeloc
 ms.topic: overview
-ms.date: 08/25/2025
+ms.date: 07/28/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -26,10 +26,9 @@ The Accounts payable (AP) department manages and processes invoices for goods an
 - To avoid extra effort if adjustments or corrections are required during period close
 - To pay vendor invoices in a timely manner and prevent financial loss because of error or fraud
 
-Optical character recognition (OCR) has become widely used by different industries in past years. It's now common for printed texts to be digitized, so that they can be electronically edited, searched, stored more compactly, and displayed online. The digital text can be used in machine processes such as cognitive computing, machine translation, text-to-speech, key data, and text mining.
+In recent years, different industries have widely adopted optical character recognition (OCR). It's now common for printed texts to be digitized, so that they can be electronically edited, searched, stored more compactly, and displayed online. The digital text can be used in machine processes such as cognitive computing, machine translation, text-to-speech, key data, and text mining.
 
-The evolution of artificial intelligence (AI) technology has enabled modern OCR solutions to read different invoice formats from different vendors without requiring much human intervention. More companies are recognizing that they can save effort and improve accuracy by processing invoices via automation instead of doing manual processing.
-
+The evolution of artificial intelligence (AI) technology has enabled modern OCR solutions to read different invoice formats from different vendors without requiring much human intervention. More companies recognize that they can save effort and improve accuracy by processing invoices through automation instead of doing manual processing.
 
 ## Required roles
 
@@ -42,27 +41,29 @@ The following table shows the roles that are required to set up and use the Invo
 | AP admin | <ul><li>Set up and configure Invoice capture.</li></ul> | <ul><li>Microsoft Power Platform</li><li>Dynamics 365 Finance</li></ul> | <ul><li>Accounts Payable admin role</li><li>InvoiceCaptureOperator</li></ul> |
 | AP clerk | <ul><li>Review and correct captured invoices in Invoice capture.</li></ul> | <ul><li>Invoice capture in Power Platform</li><li>Dynamics 365 Finance</li></ul> | <ul><li>Accounts payable clerk role</li><li>InvoiceCaptureOperator</li></ul> |
 
-The **InvoiceCaptureOperator** role must be included in the role settings to successfully run the derivation and validation logic in Invoice capture, and to transfer the invoice to Dynamics 365 Finance. For a touchless scenario, the role must be added to the corresponding flow user on the finance and operations apps side. 
+The **InvoiceCaptureOperator** role must be included in the role settings to successfully run the derivation and validation logic in Invoice capture, and to transfer the invoice to Dynamics 365 Finance. For a touchless scenario, add the role to the corresponding flow user on the finance and operations apps side.
 
 > [!NOTE]
-> The **Environment maker** role must be assigned to the Accounts payable administrator if they create channels in Invoice capture.
+> Assign the **Environment maker** role to the Accounts payable administrator if they create channels in Invoice capture.
 
 ## License
 
-To use the Invoice capture solution, the following licenses must be considered for Dynamics 365 Finance customers:
+To use the Invoice capture solution, consider the following licenses for Dynamics 365 Finance customers:
 
-- **Power Apps license (per user)** – If users don't have a full Dynamics 365 Finance license and want to access Invoice capture, a Power Apps license is needed with the **InvoiceCaptureOperator** role assigned in Dynamics 365 Finance. 
-- **Azure Data Lake Storage subscription** – Usually, Dynamics 365 Finance customers don't have to subscribe to more Azure Data Lake storage if the 20-gigabyte (GB) Dataverse file license is sufficient to persist the original invoice documents. Different apps share this Dataverse file storage. Extra subscriptions might be needed if the Dataverse file capacity isn't sufficient. The same applies to Dataverse database storage (default capacity: 10 GB).
+- **Power Apps license (per user)** – If users don't have a full Dynamics 365 Finance license and want to access Invoice capture, they need a Power Apps license with the **InvoiceCaptureOperator** role assigned in Dynamics 365 Finance.
+- **Azure Data Lake Storage subscription** – Usually, Dynamics 365 Finance customers don't need to subscribe to more Azure Data Lake storage if the 20-gigabyte (GB) Dataverse file license is sufficient to persist the original invoice documents. Different apps share this Dataverse file storage. You might need extra subscriptions if the Dataverse file capacity isn't sufficient. The same applies to Dataverse database storage (default capacity: 10 GB).
 - **Invoice processing fee based on number of invoices** – Dynamics 365 Finance customers are entitled to 100 invoice capture transactions per tenant per month. If customers need more transactions, they must purchase extra Electronic Invoicing stock keeping units (SKUs) at 300 US dollars (USD) for 1,000 transactions per tenant per month. The transaction capacity is available on a monthly, use-it-or-lose-it basis, and customers must purchase for peak capacity.
 
-### Licensing FAQ 
-How are the number of invoices calculated for the monthly quota? Are received files included?  
- - No, only the captured invoices are going to be considered as valid transactions. In case the file has been filtered by the file filter setting it won't be counted. 
+### Licensing FAQ
 
-Is there a supported list of environment types for invoice capture? 
- - Invoice capture is supported when the integrated Dataverse environment exists. This should include Partner Tier 2 environments. Learn more in [Enable power platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
+How do you calculate the number of invoices for the monthly quota? Are received files included?  
 
-If a role doesn't have the invoice capture license, are they able to view or logging to invoice capture?  
- - The **Invoice capture operator** role is only applied in Dynamics 365 Finance. It doesn't block users to login to Invoice capture. However, the corresponding access to the virtual entities is missed and the user receives an error. 
+- No, only the captured invoices count as valid transactions. If the file filter setting filters out a file, it doesn't count.
 
- 
+Is there a supported list of environment types for invoice capture?
+
+- Invoice capture supports integrated Dataverse environments. This support includes Partner Tier 2 environments. For more information, see [Enable power platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
+
+If a role doesn't have the invoice capture license, can they view or sign in to invoice capture?  
+
+- The **Invoice capture operator** role only applies in Dynamics 365 Finance. It doesn't block users from signing in to Invoice capture. However, the user misses the corresponding access to the virtual entities and receives an error.

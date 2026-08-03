@@ -31,14 +31,14 @@ If these roles aren’t present, the write-back operation fails with a **No perm
 ### Add the export user to Dynamics 365 Finance
 
 The user who installs and runs the export must:
-- Exist as a valid user in Dynamics 365 Finance (same Azure AD identity as in Dataverse).  
+- Exist as a valid user in Dynamics 365 Finance (same Microsoft Entra ID identity as in Dataverse).  
 - Be enabled and active.
 
 To verify or add the user:
 1. In Dynamics 365 Finance, go to **System administration > Users > Users**.  
 2. Verify the user exists and is enabled.  
 3. If missing, select **New**.
-4. Enter the user’s Azure AD email, and assign the required roles below.
+4. Enter the user’s Microsoft Entra ID email, and assign the required roles below.
 
 ### Assign the required roles and duties
 

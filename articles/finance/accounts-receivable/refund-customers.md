@@ -5,7 +5,7 @@ author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
 ms.date: 11/08/2023
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
@@ -17,11 +17,12 @@ ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to provide a refund to clients from the customer payment journal using the ISO20022 credit transfer format. 
+This article explains how to provide a refund to clients from the customer payment journal using the ISO20022 credit transfer format.
 
 If a customer has a credit balance, you can refund the customer for the amount of the balance. This feature allows you to issue customer refunds and generate payment files using the ISO20022 credit transfer format in customer payments journals.
 
 The following scenarios are supported:
+
 - Refund or reimburse with a credit note.
 - Refund a prepayment by using a payment proposal.
 - Refund manually.
@@ -33,7 +34,7 @@ To configure the electronic payment format for customer refunds, follow these st
 1. Go to **Accounts receivable \> Payments setup \> Methods of payment**.
 1. Select **New** to set up the customer’s method of payment for the ISO20022 credit transfer format.
 1. In the **Payment type** field, select **Electronic Payment**.
-1. On the **File formats** FastTab, under **FILE FORMATS**, set the **Generic electronic Export format** and **Export format for refunds** sliders to **Yes**. 
+1. On the **File formats** FastTab, under **FILE FORMATS**, set the **Generic electronic Export format** and **Export format for refunds** sliders to **Yes**.
 
 > [!NOTE]
 > The same format configuration used for vendor payments specified at **FILE FORMATS \> Export format configuration** is also used for returning payments to customers.

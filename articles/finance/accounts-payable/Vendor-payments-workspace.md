@@ -4,7 +4,7 @@ description: Learn about the Vendor payments workspace. The Vendor payments work
 author: twheeloc
 ms.author: shpandey
 ms.topic: article
-ms.date: 10/16/2020
+ms.date: 07/28/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -17,16 +17,17 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-The **Vendor payments** workspace shows information that is related to the processing of vendor payments. This workspace includes a **My work** view and an **Analytics** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to vendor payments.
+The **Vendor payments** workspace shows information related to the processing of vendor payments. This workspace includes a **My work** view and an **Analytics** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to vendor payments.
 
 ## Setup needed to view Power BI content
 
-The following setup needs to be completed for data to display in **Vendor payments** Power BI visuals.
+Complete the following setup steps to display data in **Vendor payments** Power BI visuals.
+
 1. Go to **System administration > Setup > System Parameters** to set **System currency** and **System Exchange Rate**.
-2. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
-3. Go to **General Ledger > Setup > Ledger**  to set **Accounting Currency** and **Exchange Rate Type**. 
-4. Define exchange rates between transaction currencies and accounting currency, and accounting currency and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
-5. Go to **System administration > Setup > Entity Store** to refresh the latest version of **Vendor payment measure** aggregate measurement. For example, **Vendor payment measure V3** as of August 2023.
+1. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
+1. Go to **General Ledger > Setup > Ledger**  to set **Accounting Currency** and **Exchange Rate Type**.
+1. Define exchange rates between transaction currencies and accounting currency, and accounting currency and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
+1. Go to **System administration > Setup > Entity Store** to refresh the latest version of **Vendor payment measure** aggregate measurement. For example, **Vendor payment measure V3** as of August 2023.
 
 ## My work view
 
@@ -54,19 +55,16 @@ The **Analytics** page provides important metrics, such as vendor invoices that 
 
 The following table shows the visualizations that are available on each report page.
 
-
-|            Report page            |                                                                                                                                                                                Visualization                                                                                                                                                                                |
-|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     Vendor payments overview      | <ul><li>Invoices past due</li><li>Invoices due today</li><li>Discounts taken to discounts lost</li><li>Invoices due in future by cash discount date</li><li>Invoices due in future by due date</li><li>Invoices paid late to invoices paid on time</li><li>Payment workflow assignment</li><li>Vendor to customer balance</li><li>Open invoices with payment hold</li></ul> |
-|         Invoices past due         |                                                                                             <ul><li>Invoices past due</li><li>Invoices past due details</li><li>Total open invoices</li><li>Invoices past due per vendor group</li><li>Invoices past due per company</li></ul>                                                                                              |
-|        Invoices due today         |                                                                                                         <ul><li>Invoices due today</li><li>Invoices due today details</li><li>Invoices due today per company</li><li>Invoices due today per vendor group</li></ul>                                                                                                          |
-| Discounts taken to discounts lost |                                                                             <ul><li>Discounts taken to discount lost</li><li>Discounts taken to discount lost details</li><li>Discounts taken to discount lost per company</li><li>Discounts taken to discount lost per vendor group</li></ul>                                                                              |
-|      Invoices due in future       |                                                 <ul><li>Invoices due in future</li><li>Invoices due in future details</li><li>Invoices due in future per company</li><li>Invoices due in future per vendor group</li><li>Invoices due in future by cash discount date</li><li>Invoices due in future by due date</li></ul>                                                  |
-|        Invoices paid late         |                                                         <ul><li>Invoices paid after due date</li><li>Invoices paid after due date details</li><li>Invoices paid after due date per company</li><li>Invoices paid after due date per vendor group</li><li>Invoices paid late versus invoices paid on time</li></ul>                                                          |
-|         Payment workflow          |                                                                                <ul><li>Vendor payment workflow instances</li><li>Vendor payment workflow instances per approver</li><li>Vendor payment workflow instances per company</li><li>Average days in workflow by approver</li></ul>                                                                                |
-|    Vendor to customer balance     |                                                                                                                   <ul><li>Vendor to customer balance</li><li>Vendor to customer balance per company</li><li>Vendor to customer balance details</li></ul>                                                                                                                    |
-|    Invoices with payment hold     |                                                                                         <ul><li>Invoices with payment hold</li><li>Invoices with payment hold details</li><li>Invoices with payment hold per company</li><li>Invoices with payment hold per vendor group</li></ul>                                                                                          |
-
-
+|  Report page       |                                          Visualization          |
+|-----------------------------------|------------------------------------------------------------------------------|
+| Vendor payments overview  | <ul><li>Invoices past due</li><li>Invoices due today</li><li>Discounts taken to discounts lost</li><li>Invoices due in future by cash discount date</li><li>Invoices due in future by due date</li><li>Invoices paid late to invoices paid on time</li><li>Payment workflow assignment</li><li>Vendor to customer balance</li><li>Open invoices with payment hold</li></ul> |
+|  Invoices past due   |    <ul><li>Invoices past due</li><li>Invoices past due details</li><li>Total open invoices</li><li>Invoices past due per vendor group</li><li>Invoices past due per company</li></ul>     |
+| Invoices due today |  <ul><li>Invoices due today</li><li>Invoices due today details</li><li>Invoices due today per company</li><li>Invoices due today per vendor group</li></ul>                               |
+| Discounts taken to discounts lost |  <ul><li>Discounts taken to discount lost</li><li>Discounts taken to discount lost details</li><li>Discounts taken to discount lost per company</li><li>Discounts taken to discount lost per vendor group</li></ul>         |
+| Invoices due in future   |   <ul><li>Invoices due in future</li><li>Invoices due in future details</li><li>Invoices due in future per company</li><li>Invoices due in future per vendor group</li><li>Invoices due in future by cash discount date</li><li>Invoices due in future by due date</li></ul>                 |
+| Invoices paid late | <ul><li>Invoices paid after due date</li><li>Invoices paid after due date details</li><li>Invoices paid after due date per company</li><li>Invoices paid after due date per vendor group</li><li>Invoices paid late versus invoices paid on time</li></ul>  |
+|  Payment workflow | <ul><li>Vendor payment workflow instances</li><li>Vendor payment workflow instances per approver</li><li>Vendor payment workflow instances per company</li><li>Average days in workflow by approver</li></ul>        |
+| Vendor to customer balance  | <ul><li>Vendor to customer balance</li><li>Vendor to customer balance per company</li><li>Vendor to customer balance details</li></ul>                                                       |
+| Invoices with payment hold  | <ul><li>Invoices with payment hold</li><li>Invoices with payment hold details</li><li>Invoices with payment hold per company</li><li>Invoices with payment hold per vendor group</li></ul>               |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

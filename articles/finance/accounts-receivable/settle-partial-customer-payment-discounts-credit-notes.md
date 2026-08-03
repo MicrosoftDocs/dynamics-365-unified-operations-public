@@ -4,7 +4,7 @@ description: Learn about a scenario where a cash discount is taken on a credit n
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: article
-ms.date: 08/22/2017
+ms.date: 07/30/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -25,22 +25,22 @@ Fabrikam allows customers to take cash discounts on partial payments and also on
 ## Invoice and credit note
 Customer 4035 has an invoice for 1,000.00 and a credit note for 100.00. Each document has a 1 percent discount if it's paid in 14 days. Arnie can view this information on the **Customer transactions** page.
 
-| Voucher    | Transaction type | Date      | Invoice  | Amount in transaction currency debit | Amount in transaction currency credit | Balance  | Currency |
-|------------|------------------|-----------|----------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10050  | Invoice          | 6/28/2020 | 10050    | 1,000.00                             |                                       | 1,000.00 | USD      |
-| CCRN-10050 | Credit note      | 6/28/2020 | CR-10050 |                                      | 100.00                                | -100.00  | USD      |
+| Voucher| Transaction type | Date | Invoice| Amount in transaction currency debit | Amount in transaction currency credit | Balance  | Currency |
+|------------|------------------|-----------|----------|--------------|---------------------------|----------|----------|
+| FTI-10050  | Invoice       | 6/28/2025 | 10050    | 1,000.00                  |                      | 1,000.00 | USD      |
+| CCRN-10050 | Credit note      | 6/28/2025 | CR-10050 |                   | 100.00             | -100.00  | USD      |
 
 ## Settle a credit note with an invoice
 From the **Customer transactions** page, Arnie opens the **Settle transactions** page. Arnie can use the **Settle transactions** page to settle the invoice and credit note. As part of the settlement process, Arnie views the cash discount dates and amounts. Arnie marks the two documents and then clicks **Post** to settle the transactions. There is a discount of -1.00 on the credit note, because Fabrikam allows for discounts on credit notes.
 
-| Mark     | Use cash discount | Voucher    | Account | Date      | Due date  | Invoice  | Amount in transaction currency | Currency | Amount to settle |
-|----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
-| Selected | Normal            | FTI-10050  | 4035    | 6/28/2020 | 7/28/2020 | 10050    | 1,000.00                       | USD      | 990.00           |
-| Selected | Normal            | CCRN-10050 | 4035    | 6/28/2020 | 7/28/2020 | CR-10050 | -100.00                        | USD      | -99.00           |
+| Mark| Use cash discount | Voucher | Account | Date | Due date | Invoice| Amount in transaction currency | Currency | Amount to settle |
+|----------|-------|------------|---------|-----------|-----------|----------|--------------|----------|------------------|
+| Selected | Normal     | FTI-10050  | 4035    | 6/28/2025 | 7/28/2025 | 10050    | 1,000.00       | USD      | 990.00           |
+| Selected | Normal   | CCRN-10050 | 4035    | 6/28/2025 | 7/28/2025 | CR-10050 | -100.00        | USD      | -99.00           |
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
-- **Cash discount date**: 7/12/2020 
+- **Cash discount date**: 7/12/2025 
 - **Cash discount amount**: -1.00     
 - **Use cash discount**: Normal    
 - **Cash discount taken**: 0.00      
