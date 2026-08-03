@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/12/2026
+ms.date: 08/04/2026
 ms.update-cycle: 180-days
 audience: Application User
 ms.search.region: Global
@@ -29,36 +29,31 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 - **Embedded**: These Copilot features add intelligent capabilities to the application itself. In this way, they bring AI to the center of the application experience. For example, in the [Confirmed purchase orders with changes workspace](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md), AI capabilities that are built into the page help users understand and react to changes in confirmed purchase orders.
 - **Outside**: External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, go to [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md).
 
-## Available Copilot features in finance and operations apps
+## Available Copilot features in all finance and operations apps
 
 [!INCLUDE[ai-all-finops-apps](../../../../finops-shared/ai-all-fin-ops.md)]
 
 ### Dynamics 365 Commerce
 
-- [Customer insights by Copilot](../../../commerce/copilot-pos-customer-insights.md)
-- [Store report insights by Copilot](../../../commerce/copilot-pos-report-insights.md)
-- [Enable Copilot statement posting summaries](../../../commerce/copilot-statement-summaries.md)
-- [Streamline your merchandising process with Copilot-based insights](../../../commerce/copilot-based-merch-insights.md)
-- [Use Copilot in site builder to enrich product detail pages](../../../commerce/copilot-site-builder.md)
+[!INCLUDE[copilot-commerce](../../../../finops-shared/copilot-commerce.md)]
 
 ### Dynamics 365 Finance
 
-- [Collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md)
-- [Customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md)
+[!INCLUDE[copilot-finance](../../../../finops-shared/copilot-finance.md)]
+
+[!INCLUDE[ai-finance](../../../../finops-shared/ai-finance.md)]
 
 ### Dynamics 365 Project Operations
 
-- [Copilot for project overview](/dynamics365/project-operations/project-management/copilot-features)
-- [Use Copilot in time entry](/dynamics365/project-operations/time/copilot-in-time-entry)
+[!INCLUDE[copilot-project-operations](../../../../finops-shared/copilot-project-operations.md)]
+
+[!INCLUDE[ai-project-operations](../../../../finops-shared/ai-project-operations.md)]
 
 ### Dynamics 365 Supply Chain Management
 
-- [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)
-- [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md)
-- [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
-- [Workload insights with Copilot in the Warehouse Management mobile app](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md)
-- [Procurement Agent overview (production-ready preview)](../../../supply-chain/procurement/procurement-agent-overview.md)
-- [Generative insights for Demand planning (production-ready preview)](../../../supply-chain/demand-planning/generative-insights.md)
+[!INCLUDE[copilot-scm](../../../../finops-shared/copilot-scm.md)]
+
+[!INCLUDE[ai-scm](../../../../finops-shared/ai-scm.md)]
 
 ## Responsible AI
 
