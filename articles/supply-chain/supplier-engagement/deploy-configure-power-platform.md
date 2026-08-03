@@ -24,24 +24,6 @@ After you install the Supplier Engagement components, align the Power Platform e
 
 Before you configure Supplier Engagement elements in Power Platform, complete the prerequisites listed in [Supplier Engagement deployment overview, prerequisites, and licensing](deploy-overview.md).
 
-## Configure supplier portal sign-in and onboarding URLs
-
-To support seamless supplier onboarding and access, you need supplier portal sign-in and onboarding URLs. Configure these addresses in your Power Apps environment variables so they're consistent across environments (Dev, Test, Prod) and properly integrated with Supplier Engagement cloud flows.
-
-1. Sign in to the [Power Apps maker portal](https://make.powerapps.com/) and select your environment.
-1. On the navigation pane, select **Solutions**.
-1. Find and open the solution that has a **Display name** of *Default solution*.
-1. On the navigation pane, select **Objects** > **Environment variables**.
-1. Open the environment variable named *Supplier Portal URL*.
-1. Select **New Value** and enter the full supplier portal URL, such as `https://site-xyz.powerappsportals.com/`.
-1. Select **Save**.
-
-Validate the URL after you save it.
-
-1. Confirm that the address uses HTTPS and doesn't contain trailing spaces.
-1. Browse to the URL and make sure that the supplier portal opens.
-1. Confirm that the URL matches the intended environment, such as Dev, Test, or Prod.
-
 ## Customize supplier invitation and notification emails
 
 You can customize the email template text that Supplier Engagement sends to suppliers, including invitation and notification emails. This setup is useful when you want to align system-generated emails with your organization's tone, branding, and onboarding guidance. If you support multiple languages, you can maintain localized versions of each email template for each language.
