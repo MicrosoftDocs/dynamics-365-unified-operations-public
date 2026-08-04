@@ -27,7 +27,7 @@ Before you configure Supplier Engagement elements in Power Platform, complete th
 
 ## Customize supplier invitation and notification emails
 
-You can customize the email template text that Supplier Engagement sends to suppliers, including invitation and notification emails. This setup is useful when you want to align system-generated emails with your organization's tone, branding, and onboarding guidance. If you support multiple languages, you can maintain localized versions of each email template for each language.
+You can customize the email template text that Supplier Engagement sends to suppliers, including invitation and notification emails. This setup is useful when you want to align system-generated emails with your organization's tone, branding, and onboarding guidance.
 
 > [!IMPORTANT]
 > The Supplier Engagement invitation email template must include a link to your supplier portal. Update that link before you go live.
@@ -50,13 +50,10 @@ To customize supplier invitation and notification emails, follow these steps.
 
 1. Make the following changes to the selected email template:
     - Update the subject and body text as needed.
-    - If the message includes a portal action, verify that the link points to the correct supplier portal URL for your environment. By default, the *Supplier Engagement invitation* email template includes this URL and you must update it before going live with the solution.
+    - If the message includes a portal action, verify that the link points to the correct supplier portal URL for your environment. By default, the *Supplier Engagement invitation* email template includes a placeholder for your supplier portal URL and you must update it before going live with the solution.
 
 1. Select **Save**.
 1. Inspect and update the other templates as needed.
-
-> [!NOTE]
-> If you support multiple languages, review and update the localized versions of each template that you use.
 
 ## Enable a mailbox for cloud flow notifications
 
