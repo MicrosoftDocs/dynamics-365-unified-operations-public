@@ -1,8 +1,8 @@
 ---
 title: Import data from manually selected files in batch mode
 description: Learn about how to import data from manually selected files in batch mode, included learning about prerequisites and configurations.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 03/20/2026
 ms.reviewer: johnmichalak
@@ -169,10 +169,8 @@ After your batch is scheduled but before it runs, you can change the parameters 
 ## Review the data import results on the Vendor settlement for 1099s page
 
 1. Go to **Accounts payable** > **Periodic tasks** > **Tax 1099** > **Vendor settlement for 1099s**.
-1. In the **From date** field, enter **12/31/2017** (December 31, 2017).
+1. In the **From date** field, enter **12/31/2025** (December 31, 2025).
 1. Select **Manual 1099 transactions**.
-
-    :::image type="content" source="./media/er-configure-data-import-batch-imported-data.png" alt-text="Screenshot of imported vendor transactions on the Tax 1099 transactions page.":::
 
 ## Additional resources
 

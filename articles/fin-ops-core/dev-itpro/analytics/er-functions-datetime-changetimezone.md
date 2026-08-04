@@ -1,11 +1,11 @@
 ---
 title: CHANGETIMEZONE ER function
 description: Learn about how the CHANGETIMEZONE Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/08/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-09-01
@@ -109,11 +109,11 @@ If you configure the expression of the **DSY** data source of the **Calculated f
 
 ## Example 4
 
-You might receive a date/time stamp from an external source as text that contains no time zone information. However, you might know the time zone that the source is operated in. For example, you receive the date/time stamp **01/12/2021 12:55:00** from a service that is operated in Spain. To correctly save this date/time value to the database, complete the following conversion:
+You might receive a date and time stamp from an external source as text that contains no time zone information. However, you might know the time zone that the source operates in. For example, you receive the date and time stamp **01/12/2025 12:55:00** from a service that operates in Spain. To correctly save this date and time value to the database, complete the following conversion steps:
 
 - Configure the **DSY** data source of the **Calculated field** type to convert a date/time stamp from text to the Coordinated Universal Time date/time value.
 
-    `DATETIMEVALUE ("01/12/2021 12:55:00", "dd/MM/yyyy HH:mm:ss", "ES")`
+    `DATETIMEVALUE ("01/12/2025 12:55:00", "dd/MM/yyyy HH:mm:ss", "ES")`
 
 - Configure the **DSX** data source of the **Calculated field** type to shift the converted date/time value to Coordinated Universal Time as the date/time value of the time zone of the external source.
 

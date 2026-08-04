@@ -1,11 +1,11 @@
 ---
 title: FORMAT ER function
 description: Learn about how the FORMAT Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 04/08/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -74,13 +74,13 @@ Here's the expression that you can design.
 FORMAT (CONCATENATE (@"SYS70894", ". ", @"SYS18389"), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, "d"))
 ```
 
-If you process a report for the **Litware Retail** customer on December 17, 2015, in the **EN-US** culture and the **EN-US** language, this formula returns the following text, which you can present to the user as an exception message:
+If you process a report for the **Litware Retail** customer on December 17, 2025, in the **EN-US** culture and the **EN-US** language, this formula returns the following text, which you can present to the user as an exception message:
 
-*Nothing to print. Customer Litware Retail is stopped for 12/17/2015.*
+*Nothing to print. Customer Litware Retail is stopped for 12/17/2025.*
 
-If you process the same report for the **Litware Retail** customer on December 17, 2015, in the **DE** culture and the **DE** language, the formula returns the following text, which uses a different date format:
+If you process the same report for the **Litware Retail** customer on December 17, 2025, in the **DE** culture and the **DE** language, the formula returns the following text, which uses a different date format:
 
-*Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.*
+*Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2025 gesperrt.*
 
 >[!NOTE]
 > The following syntax is applied in ER formulas for labels:

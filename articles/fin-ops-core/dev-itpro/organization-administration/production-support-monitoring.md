@@ -101,7 +101,7 @@ LCS has an integrated set of tools that you can use to monitor LCS projects.
 
 ### Service health dashboard
 
-The [Service health dashboard](https://portal.office.com/servicestatus) provides the health status for Office 365 services.
+The [Service health dashboard](https://portal.office.com/servicestatus) provides the health status for Microsoft 365 services.
 
 You can also view the service health through the [Microsoft 365 admin center](https://admin.microsoft.com). Go to **Health** > **Service health**, or select the **Service health** card on the **Home** dashboard.
 

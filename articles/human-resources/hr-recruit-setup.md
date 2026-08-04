@@ -98,7 +98,7 @@ To activate connections and flows for the Recruiting app, follow these steps:
     - Recruiting approvals connection
     - Recruiting dataverse connection
     - Recruiting content conversion connection
-    - Recruiting office 365 outlook connection
+    - Recruiting Microsoft 365 outlook connection
     - Recruiting teams connection
 
 1. Edit each connection reference. Add a new or existing connection, and make sure that it's enabled.

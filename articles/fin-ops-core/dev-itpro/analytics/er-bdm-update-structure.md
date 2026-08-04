@@ -1,12 +1,12 @@
 ---
 title: Update the structure of a business document template
 description: Learn about how to update the structure of a business document template by using the Business document management feature.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 03/19/2026
 ms.custom:
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 ms.search.region: Global
@@ -21,9 +21,9 @@ ms.assetid:
 
 In the **Template structure** pane of the [Business document management](er-business-document-management.md) template editor, you can modify a business document template by [adding new fields](er-bdm-add-field-to-excel-template.md) to a template in Microsoft Excel. The structure of the template is then automatically updated in Dynamics 365 Finance, so that it reflects the changes that you made in the **Template structure** pane.
 
-You can also modify a template by using Office 365 online functionality. For example, you can add a new named item, such as a picture or shape, to the editable worksheet. In this case, the structure of the template isn't automatically updated in Finance, and the item that you added doesn't appear in the **Template structure** pane. To manually update the template structure in Finance, select **Update structure** on the template editor page.
+You can also modify a template by using Microsoft 365 online functionality. For example, you can add a new named item, such as a picture or shape, to the editable worksheet. In this case, the structure of the template isn't automatically updated in Finance, and the item that you added doesn't appear in the **Template structure** pane. To manually update the template structure in Finance, select **Update structure** on the template editor page.
 
-For more information about this feature, complete the following example.
+For more information about this feature, see the following example.
 
 ## Example: Update the structure of a business document template
 
@@ -33,10 +33,10 @@ This example shows how a system administrator can update the structure of a busi
 
 Complete the following procedures in [Business document management overview](er-business-document-management.md).
 
-1. [Configure ER parameters](er-business-document-management.md#configure-er-parameters)
-1. [Import ER solutions](er-business-document-management.md#import-er-solutions)
-1. [Enable Business document management](er-business-document-management.md#enable-business-document-management)
-1. [Configure parameters](er-business-document-management.md#configure-parameters)
+1. [Configure ER parameters](er-business-document-management.md#configure-er-parameters).
+1. [Import ER solutions](er-business-document-management.md#import-er-solutions).
+1. [Enable Business document management](er-business-document-management.md#enable-business-document-management).
+1. [Configure parameters](er-business-document-management.md#configure-parameters).
 
 ### Edit a business document template
 
@@ -47,7 +47,7 @@ Complete the following procedures in [Business document management overview](er-
 1. Select **OK** to create the new template.
 
     > [!NOTE]
-    > If you didn't sign in to Office Online, you're [directed to the Office 365 sign-in page](er-business-document-management.md#frequently-asked-questions). To return to your Finance environment, select the **Back** button in your browser.
+    > If you don't sign in to Office Online, you're [directed to the Microsoft 365 sign-in page](er-business-document-management.md#frequently-asked-questions). To return to your Finance environment, select the **Back** button in your browser.
 
     The new template opens for editing in the Excel Online embedded control on the template editor page.
 
@@ -66,7 +66,7 @@ Complete the following procedures in [Business document management overview](er-
 ### Update the structure of a business document template by deleting a picture
 
 1. In Excel Online, in the editable template, select the **rptHeaderCompLogo** picture.
-1. Follow one of these steps to delete the selected picture from the editable template:
+1. Use one of the following methods to delete the selected picture from the editable template:
 
     - Select the **Delete** key on your keyboard.
     - Select and hold (or right-click) the picture, and then select **Cut**.

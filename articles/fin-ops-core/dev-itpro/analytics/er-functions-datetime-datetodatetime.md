@@ -1,11 +1,11 @@
 ---
 title: DATETODATETIME ER function
 description: Learn about how the DATETODATETIME Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/08/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -40,11 +40,11 @@ The resulting date/time value.
 
 ## Example 1
 
-`DATETODATETIME (CompInfo. 'getCurrentDate()')` returns the date of the current Microsoft Dynamics 365 Finance session, December 24, 2015, as **12/24/2015 12:00:00 AM**. In this example, **CompInfo** is an Electronic reporting (ER) data source of the **finance and operations/Table** type, and it refers to the CompanyInfo table.
+`DATETODATETIME (CompInfo. 'getCurrentDate()')` returns the date of the current Microsoft Dynamics 365 Finance session, December 24, 2025, as **12/24/2025 12:00:00 AM**. In this example, **CompInfo** is an Electronic reporting (ER) data source of the **finance and operations/Table** type, and it refers to the CompanyInfo table.
 
 ## Example 2
 
-`DATETODATETIME (DATEVALUE ("2019-11-12T16:00:00.0000000-07:00", "O"))` returns the date/time value **11/12/2019 12:00:00 AM**.
+`DATETODATETIME (DATEVALUE ("2024-11-12T16:00:00.0000000-07:00", "O"))` returns the date and time value **11/12/2024 12:00:00 AM**.
 
 ## Additional resources
 

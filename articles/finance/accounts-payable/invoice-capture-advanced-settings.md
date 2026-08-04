@@ -4,7 +4,7 @@ description: Learn about advanced settings in the Invoice capture solution, incl
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 07/26/2026
+ms.date: 08/03/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

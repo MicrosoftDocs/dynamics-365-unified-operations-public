@@ -1,11 +1,11 @@
 ---
 title: Customize Electronic reporting configurations to generate an electronic document
 description: Learn how to customize the Microsoft-provided Electronic reporting (ER) configurations that are used to generate a custom electronic document.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 04/08/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -115,17 +115,17 @@ You see that, in addition to the selected **Peppol Sales Invoice** ER format, th
 
 :::image type="content" source="./media/er-quick-start3-imported-solution1a.png" alt-text="Screenshot of the Configurations page.":::
 
-To simulate the state that ER configurations in the current Finance instance  would be in if you imported version **11.2.2** of the **Peppol Sales Invoice** ER format in the past (for example, on August 7, 2019), follow these steps:
+To simulate the state that ER configurations in the current Finance instance  would be in if you imported version **11.2.2** of the **Peppol Sales Invoice** ER format in the past (for example, on August 7, 2025), follow these steps:
 
-- On the Action Pane, select **Delete** to delete all ER configurations that were published after August 7, 2019. The only **Invoice model**, **Invoice model mapping** (initially named **Customer invoice model mapping**), **UBL Sales invoice**, and **Peppol Sales Invoice** configurations remain.
-- For the remaining ER configurations, on the **Versions** FastTab, select **Delete** to delete all versions of ER configurations that were published after August 7, 2019.
+- On the Action Pane, select **Delete** to delete all ER configurations that were published after August 7, 2025. The only **Invoice model**, **Invoice model mapping** (initially named **Customer invoice model mapping**), **UBL Sales invoice**, and **Peppol Sales Invoice** configurations remain.
+- For the remaining ER configurations, on the **Versions** FastTab, select **Delete** to delete all versions of ER configurations that were published after August 7, 2025.
 
 Then verify that the following configurations are available in the configuration tree:
 
 - **Invoice model** ER data model configuration (initially named **Customer invoice model**):
 
     - Version 11 contains version 10 of the data model ER component that represents the data structure of the invoicing business domain. This ER configuration is imported as an ancestor of the **Peppol Sales Invoice** ER format that you selected for import.
-    - Version 50 contains version 31 of the data model ER component. This ER configuration is imported as an ancestor of the August 7, 2019, version of the **Invoice model mapping** ER model mapping configuration.
+    - Version 50 contains version 31 of the data model ER component. This ER configuration is imported as an ancestor of the August 7, 2025, version of the **Invoice model mapping** ER model mapping configuration.
 
     :::image type="content" source="./media/er-quick-start3-imported-solution1b1.png" alt-text="Screenshot of the Invoice model ER data model configuration on the Configurations page.":::
 

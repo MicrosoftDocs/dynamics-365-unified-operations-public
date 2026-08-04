@@ -1,11 +1,11 @@
 ---
 title: DATETIMEFORMAT ER function
 description: Learn about how the DATETIMEFORMAT Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/08/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -63,15 +63,15 @@ When the `DATETIMEFORMAT` function converts a given date/time value, it consider
 
 ## Example 1
 
-`DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` returns the current application server date/time value, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.
+`DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` returns the current application server date/time value, December 24, 2025, as **"24-12-2025"**, based on the specified custom format.
 
 ## Example 2
 
-`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session date/time value, December 24, 2015, as **"24.12.2015"**, based on the selected German culture and the specified format.
+`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session date/time value, December 24, 2025, as **"24.12.2025"**, based on the selected German culture and the specified format.
 
 ## Example 3
 
-`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` returns the string value **2019-11-12T08:00:00.0000000-08:00** when the function is called during a process that was initiated by an application user who has the time zone value **(GMT-08:00) Pacific Time (US & Canada)** in the **Language and country/region preferences** section.
+`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` returns the string value **2024-11-12T08:00:00.0000000-08:00** when the function is called during a process that an application user initiates who has the time zone value **(GMT-08:00) Pacific Time (US & Canada)** in the **Language and country/region preferences** section.
 
 ## Additional resources
 
