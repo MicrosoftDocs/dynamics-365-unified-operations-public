@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Supplier Engagement deployment spans both Power Platform and Supply Chain Management. You install the solution in your Power Platform tenant, enable the related functionality in Supply Chain Management, and then finish the setup tasks that connect both experiences. Planning the prerequisites up front helps you avoid setup delays later in the deployment.
 

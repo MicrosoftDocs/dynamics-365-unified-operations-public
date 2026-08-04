@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Risk configuration helps purchasers identify, assess, and monitor issues that might affect vendors or supply chain operations. When you define risk scenarios and corrective action types ahead of time, teams can evaluate risks consistently and track mitigation work more effectively. Historical analysis and reporting also become easier because the same structures are used across the supplier network.
 

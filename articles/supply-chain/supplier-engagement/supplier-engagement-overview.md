@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The Supplier Engagement solution provides a unified framework for managing interactions between your organization and its suppliers. It covers the full supplier lifecycle—from registration and onboarding to managing requests for quotation (RFQs), purchase orders, invoices, and consignment inventory. Suppliers enter and maintain their own data directly in the system, which reduces manual entry and helps keep information consistent across procurement, finance, and supply chain processes.
 

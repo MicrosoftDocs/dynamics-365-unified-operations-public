@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The Supplier Engagement app includes duplicate detection features that help you identify possible duplicate supplier records before they move too far through onboarding. The validation checks both existing global vendors in Dataverse and vendor party records in Supply Chain Management. Duplicate detection warns you, but doesn't automatically block record creation, so you can review the warning and decide how to proceed.
 

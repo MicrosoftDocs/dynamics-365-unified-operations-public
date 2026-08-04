@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The supplier portal is built on Microsoft Power Pages and serves as the primary interface for external supplier representatives to collaborate with your organization. Through the portal, suppliers register, complete onboarding, respond to requests for quotation, manage purchase orders, submit invoices, and handle consignment inventory.
 

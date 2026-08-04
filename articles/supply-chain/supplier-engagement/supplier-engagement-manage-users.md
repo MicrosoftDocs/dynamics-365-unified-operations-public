@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The Supplier Engagement solution uses a multilayered security framework to control access across the Supplier Engagement app, the supplier portal, and Supply Chain Management. Security roles and web roles define what each user can see and do—from managing global vendor data and processing registrations to inviting portal users and accessing transactional documents.
 

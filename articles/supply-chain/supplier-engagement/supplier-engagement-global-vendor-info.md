@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Global vendor records hold the supplier information that your organization uses for onboarding, qualification, compliance, and reporting across legal entities. The Supplier Engagement app organizes that information into tabs so you can maintain a shared company profile, monitor readiness, and review connected records from one place. A well-maintained global vendor profile also helps keep released vendor data accurate when the supplier is used in Supply Chain Management.
 

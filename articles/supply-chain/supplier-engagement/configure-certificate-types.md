@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Certificates help validate vendor qualifications and compliance requirements. Certificate types standardize the certifications that you track, while certifying organizations identify the recognized bodies that issue them. Configuring both areas first helps ensure accurate reporting and smoother onboarding later.
 

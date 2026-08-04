@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 After you install the Power Platform components, you must configure Supply Chain Management to expose the feature set, support approvals, and keep reporting and workflows running. These tasks connect the operational side of Supplier Engagement to the app and portal experiences. Completing them helps you avoid workflow failures, missing permissions, and incomplete supplier synchronization.
 
@@ -127,7 +128,7 @@ If you want to approve supplier portal user requests automatically, follow these
 
     :::image type="content" source="media/deploy-configure-scm/automatic-action-condition-supplier-portal-request.png" alt-text="Screenshot of the Approve new user request Properties dialog with Automatic actions selected and Enable automatic actions checked." lightbox="media/deploy-configure-scm/automatic-action-condition-supplier-portal-request.png":::
 
-1. Set Automatic action to *Approve*.
+1. Set **Auto complete action** to *Approve* or *Complete* (depending on which kind of step you are editing). Then select **Close**.
 1. Repeat the previous five steps for each of the other three approval steps in the workflow.
 1. Select **Save and close** to save your changes to the workflow as a new version.
 1. In Supply Chain Management, go back to **System administration** \> **Workflow** \> **User workflows** and select the *Vendor user request (new user or modify user)* workflow. On the Action Pane, open the Workflow tab and select **Versions**. Use the **Workflow versions** dialog to set the new version of the workflow as the active version.

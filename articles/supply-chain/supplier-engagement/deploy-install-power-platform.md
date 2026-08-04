@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Installing Supplier Engagement on Power Platform adds the model-driven app, supporting solutions, and supplier-facing portal components to your environment. You also need to reactivate the supplier portal and prepare sign-in settings so that administrators and suppliers can access the right experience. Completing these tasks in order helps you confirm that the environment is ready before you move on to configuration.
 
@@ -63,7 +64,7 @@ Learn more in [Reactivate sites](/power-pages/admin/reactivate-website).
 
 ## Configure identity providers
 
-When you're testing the preview version of Supplier Engagement, we recommend that you use Microsoft Entra ID with the configuration described in this section. For a list of available identity providers, learn more in [Overview of authentication in Power Pages](/power-pages/security/authentication/). To choose Microsoft Entra ID as the identity provider for the supplier portal, follow these steps.
+When you're testing the preview version of Supplier Engagement, we recommend that you use Microsoft Entra ID with the configuration described in this section. For a list of available identity providers, go to [Overview of authentication in Power Pages](/power-pages/security/authentication/). To choose Microsoft Entra ID as the identity provider for the supplier portal, follow these steps: <!-- KFM: Confirm whether this section is needed after GA -->
 
 1. Go to [Power Pages portals](https://make.powerpages.microsoft.com/).
 1. Open the *Microsoft Dynamics 365 Supplier Portal* site.

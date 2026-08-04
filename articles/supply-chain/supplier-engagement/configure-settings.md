@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Portal management setup defines reference data that's used throughout the Supplier Engagement application. Before you onboard vendors, configure the global settings that support consistent classification, compliance alignment, and reporting. These settings include global vendor types, countries and regions, and hold reasons.
 

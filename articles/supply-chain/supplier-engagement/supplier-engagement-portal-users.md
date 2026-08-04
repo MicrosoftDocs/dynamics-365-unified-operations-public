@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The Supplier Engagement solution provides tools for managing external supplier users through the Supplier Engagement app and the supplier portal. You can invite suppliers, add or remove portal users, assign roles, manage access to legal entities, and deactivate portal access when needed. Supplier portal user management ensures that external contacts have the right access to the right data while maintaining centralized control across all legal entities.
 

@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Vendors see self-assessment questions in the supplier portal during onboarding. These questions help you evaluate vendor compliance and capabilities before you make qualification decisions. A well-structured question set also makes assessments more consistent across vendors.
 

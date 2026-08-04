@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Deployment questions often come up after the initial installation, especially when sync records don't appear as expected or when administrators can't find the supplier portal site. This FAQ collects the most common troubleshooting paths so that you can get deployment back on track quickly. Use it together with the [validation checklist](deploy-validation-checklist.md) when you're confirming a new environment.
 

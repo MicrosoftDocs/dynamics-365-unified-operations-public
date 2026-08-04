@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Supplier Engagement configuration establishes the reference data that supports supplier onboarding, vendor management, risk assessment, and collaboration. When these entities are set up correctly, users can work with consistent options and complete related processes without missing required values. Planning this setup early helps the rest of the app work as intended.
 

@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The **Activities** page provides a central place to track interactions, follow-up work, and scheduled events in the Supplier Engagement app. Built-in views help teams monitor open work, recent activities, due dates, and portal-facing timeline items. Users can create tasks, appointments, and other activity types directly from the **Activities** page.
 

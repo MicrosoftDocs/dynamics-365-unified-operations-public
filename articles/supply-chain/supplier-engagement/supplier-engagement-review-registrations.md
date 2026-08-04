@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Prospective suppliers can use the supplier portal to submit a supplier registration request, even without an invitation. Before a prospective supplier can access the supplier portal, authorized internal users must use the Supplier Engagement app to review and approve the supplier's registration request. During review, you can assess the submitted organization details, move requests into review, and decide whether to approve or reject them. Approval starts global vendor creation and onboarding activities.
 
