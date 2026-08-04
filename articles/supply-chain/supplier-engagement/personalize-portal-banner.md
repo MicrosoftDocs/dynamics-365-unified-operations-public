@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The supplier portal home page displays a banner at the top that includes both an image and text. The registration and onboarding pages also include banner text. You can configure these elements to align the portal with your organization's branding guidelines and communication style.
 

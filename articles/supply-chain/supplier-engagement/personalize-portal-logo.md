@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The portal logo is a web file record in Microsoft Dataverse. A content snippet reference renders the logo on the home page. Replace the default placeholder logo with your organization's logo by uploading a new image and ensuring the related content snippet is active.
 

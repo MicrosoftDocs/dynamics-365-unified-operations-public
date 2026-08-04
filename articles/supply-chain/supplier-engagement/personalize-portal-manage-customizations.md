@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 When you modify portal components such as site settings, content snippets, web files, web templates, or pages, you create unmanaged layers on those components in Microsoft Dataverse. Understanding how unmanaged layers work is essential when you plan to delete individual components or remove an entire solution.
 

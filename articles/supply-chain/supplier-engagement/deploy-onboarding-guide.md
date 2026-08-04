@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The onboarding guide gives administrators a single place to track Supplier Engagement setup progress. It brings together the core deployment activities, helps you understand what still needs attention, and makes it easier to return to incomplete tasks later. Use it throughout deployment instead of managing setup with a separate checklist.
 

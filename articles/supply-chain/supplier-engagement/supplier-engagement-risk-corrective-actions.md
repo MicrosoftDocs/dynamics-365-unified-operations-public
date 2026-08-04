@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Supplier risk management helps organizations identify, assess, and mitigate risks that are associated with global vendors. The feature supports proactive monitoring by combining structured risk evaluations with corrective action tracking. It also preserves historical records so teams can review how risks were handled over time.
 

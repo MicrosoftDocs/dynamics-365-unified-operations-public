@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 After you install the Supplier Engagement components, align the Power Platform environment with your portal, communication, and automation requirements. This article covers the configuration tasks to complete before broad onboarding or production validation, including environment variables, email templates, mailbox activation, cloud flows, and duplicate detection rules. These tasks make sure that users receive the right links, cloud flows can run, and duplicate vendor data is detected before it causes problems.
 

@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The Supplier Engagement app defines security roles in Dataverse that control what internal users can do in the app. These roles determine access to features such as configuration management, vendor lifecycle processes, user administration, and feedback. Each Dataverse role maps to a corresponding role in Supply Chain Management to ensure consistent access across both systems.
 

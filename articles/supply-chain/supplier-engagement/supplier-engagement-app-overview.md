@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The Supplier Engagement app is a model-driven app for internal users who manage supplier relationships. It's built on Microsoft Dataverse. It gives teams a single place to review supplier registrations, maintain shared vendor data, and coordinate legal entity–specific setups. Changes that you make in the app sync automatically with Supply Chain Management. The app also works with the supplier portal to support vendor self-service.
 

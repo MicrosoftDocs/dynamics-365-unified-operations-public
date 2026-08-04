@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Global vendor onboarding lifecycle management helps you move suppliers from early prospecting through qualification, approval, and end-of-relationship decisions. Each lifecycle stage reflects the vendor's current readiness, compliance standing, and operational status. The lifecycle also controls when data is synchronized to Supply Chain Management and when portal access is allowed.
 

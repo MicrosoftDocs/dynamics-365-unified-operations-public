@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Global vendor capabilities help organizations capture what a supplier offers at a shared, cross-entity level. These records support vendor profiling rather than transaction processing, so teams can compare suppliers, evaluate fit, and segment vendors based on strategic needs. Capability data is stored in Dataverse and managed in the Supplier Engagement app.
 

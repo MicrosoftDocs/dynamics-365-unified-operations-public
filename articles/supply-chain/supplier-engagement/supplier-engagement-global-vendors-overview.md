@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Global vendors give organizations a centralized way to manage supplier relationships across legal entities in the Supplier Engagement app. Instead of maintaining the same supplier profile separately for each company, you can use one master profile to consolidate shared information and connect it to released vendors in Supply Chain Management. The global vendor record isn't transactional, but it becomes the governing record for supplier identity, contact details, addresses, certifications, agreements, and ownership information.
 

@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Data synchronization keeps supplier-related information consistent between Supply Chain Management and the Supplier Engagement app. It uses event-driven processes and configurable sync logic to support full create, read, update, and delete (CRUD) operations on data that resides in Supply Chain Management while maintaining the data in its original location. These synchronization features are available both during initial installation and day-to-day use of the solution.
 
