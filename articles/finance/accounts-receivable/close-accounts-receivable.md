@@ -27,24 +27,22 @@ The following table lists the pages that support the close Accounts receivable b
 
 Close periods in the general ledger:
 
-| Page name                            | Usage                                                                                      |
-|--------------------------------------|--------------------------------------------------------------------------------------------|
-|**Batch job**                          | View or create batch jobs. Batch jobs might not be completed, and you want to make sure that all posting is completed.     |
-|**Confirm sales order**                   | Update sales orders.                                                                       |
-|**Foreign currency revaluation**    | Generate transactions that update the value of open customer transactions in foreign currencies.                          |
-| **Journal**                              | Post invoices, payments, and promissory notes.                                             |
-| **Journal voucher**                      | **Payment journal** – Generate, process, and post payments.<br>**Draw bill of exchange journal** – Post bills of exchange.<br>**Protest bill of exchange journal** – Post protested bills of exchange.<br>**Redraw bill of exchange journal** – Post redrawn bills of exchange.<br>**Remittance journal** – Post remittances.<br>**Settle bill of exchange journal** – Post settled bills of exchange |
-| **Packing slip posting**                 | Update packing slips for sales orders.                                                     |
-| **Post free text invoice**               | Post free text invoices.                                                                   |
-| **Posting invoice**                      | Post invoices for sales orders.                                                            |
-| **Posting picking list**                 |Update picking lists for sales orders.                                                      |
-
-## Business process component task
+| Page name             | Usage                                                                                      |
+|--------------------------------------|---------------------------------------------------------|
+|**Batch job** | View or create batch jobs. Batch jobs might not be completed, and you want to make sure that all posting is completed.  |
+|**Confirm sales order**         | Update sales orders.                                                                       |
+|**Foreign currency revaluation**|Generate transactions that update the value of open customer transactions in foreign currencies.|
+| **Journal**   | Post invoices, payments, and promissory notes.                                             |
+| **Journal voucher**  | **Payment journal** – Generate, process, and post payments.<br>**Draw bill of exchange journal** – Post bills of exchange.<br>**Protest bill of exchange journal** – Post protested bills of exchange.<br>**Redraw bill of exchange journal** – Post redrawn bills of exchange.<br>**Remittance journal** – Post remittances.<br>**Settle bill of exchange journal** – Post settled bills of exchange |
+| **Packing slip posting**     | Update packing slips for sales orders.                                                     |
+| **Post free text invoice**      | Post free text invoices.                                                                   |
+| **Posting invoice**          | Post invoices for sales orders.                                                            |
+| **Posting picking list**    |Update picking lists for sales orders.                                                      |
 
 Create and submit the EU sales list:
 
-| Page name                            | Usage                                                                                      |
-|--------------------------------------|--------------------------------------------------------------------------------------------|
-|**EU sales list**                        | Report on European Union (EU) sales to the tax authority for value-added tax (VAT) declaration purposes.               |
+| Page name                | Usage                                                                                      |
+|--------------------------------------|----------------------------------------------------------|
+|**EU sales list**|Report on European Union (EU) sales to the tax authority for value-added tax (VAT) declaration purposes.     |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

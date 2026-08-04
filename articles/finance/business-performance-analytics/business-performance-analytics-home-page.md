@@ -4,7 +4,7 @@ description: Learn about Business performance analytics, including an outline of
 author: lizmota
 ms.author: jiwo
 ms.topic: concept-article
-ms.date: 08/25/2025
+ms.date: 07/28/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -13,7 +13,7 @@ ms.search.form: business-performance-analytics
 
 # What is Business performance analytics?
 
-Business performance analytics is a powerful solution that is designed to transform your organization's data into actionable insights. In today's rapidly evolving business environment, the ability to use data for informed decision-making is critical. Business performance analytics enables users to streamline operations, enhance performance, and drive better business outcomes.
+Business performance analytics is a powerful solution that transforms your organization's data into actionable insights. In today's rapidly evolving business environment, the ability to use data for informed decision-making is critical. Business performance analytics enables users to streamline operations, enhance performance, and drive better business outcomes.
 
 Through its seamless integration with the Microsoft Dynamics 365, Dataverse, and Power BI platforms, Business performance analytics offers a scalable and unified solution for analyzing operational and financial data at an unprecedented level of clarity and efficiency.
 
@@ -26,15 +26,16 @@ Business performance analytics delivers a comprehensive approach for maximizing 
 Here are some of the key benefits of Business performance analytics:
 
 - **Data-driven decision-making** – Business performance analytics transforms raw data into actionable insights, so that organizations can make faster, smarter decisions that drive business growth and efficiency.
-- **Comprehensive visibility** – By consolidating financial and operational data across departments, Business performance analytics provides a holistic view of business performance. Therefore, it helps businesses monitor progress and identify areas for improvement.
-- **Security and compliance** – Because it's built on Microsoft's trusted cloud infrastructure, Business performance analytics ensures that your data is protected through advanced security measures. Therefore, it helps you stay compliant with industry standards.
-- **Flexibility for business growth** – Because Business performance analytics is fully customizable and extensible, it adapts to the specific needs of your business and scales as you grow. Therefore, it supports long-term success.
+- **Comprehensive visibility** – By consolidating financial and operational data across departments, Business performance analytics provides a holistic view of business performance. It helps businesses monitor progress and identify areas for improvement.
+- **Security and compliance** – Because it's built on Microsoft's trusted cloud infrastructure, Business performance analytics ensures that your data is protected through advanced security measures. It helps you stay compliant with industry standards.
+- **Flexibility for business growth** – Because Business performance analytics is fully customizable and extensible, it adapts to the specific needs of your business and scales as you grow. It supports long-term success.
 
 ## AI-powered analytics with ERP Analytics MCP (preview)
 
 The [Dynamics 365 ERP Analytics MCP server](erp-analytics-mcp-overview.md) enables AI agents to access and analyze Business performance analytics data through natural language. By connecting AI agents to Business performance analytics's dimensional models through the Model Context Protocol, users can ask analytical questions in plain language and receive data-driven insights without writing queries or navigating complex reporting interfaces.
 
 Key capabilities include:
+
 - Natural language queries against Business performance analytics data.
 - Dynamic generation of DAX queries by AI agents.
 - Row-level security enforcement based on user roles.
@@ -64,7 +65,7 @@ By using Business performance analytics as a software as a service (SaaS) soluti
 
 ## Business performance analytics as a DaaS solution with data warehousing
 
-Business performance analytics can also be used as a data as a service (DaaS) solution. By using Business performance analytics in this way, organizations can integrate its data models with their existing data warehousing infrastructure in Microsoft Fabric. This approach not only maximizes the value of existing data solutions but also positions businesses for future enhancements.
+You can also use business performance analytics as a data as a service (DaaS) solution. By using business performance analytics in this way, organizations can integrate its data models with their existing data warehousing infrastructure in Microsoft Fabric. This approach not only maximizes the value of existing data solutions but also positions businesses for future enhancements.
 
 ### Key DaaS capabilities
 
@@ -81,12 +82,12 @@ Business performance analytics can also be used as a data as a service (DaaS) so
 
 ## Included with Dynamics 365 Finance
 
-Business performance analytics is an innovative reporting tool that is included as part of the Dynamics 365 Finance license. In addition to its comprehensive analytics capabilities, Business performance analytics uses shared Dataverse entitlements, including access to the data lake. Therefore, customers can seamlessly integrate and manage their data.
+Business performance analytics is an innovative reporting tool that's included as part of the Dynamics 365 Finance license. In addition to its comprehensive analytics capabilities, Business performance analytics uses shared Dataverse entitlements, including access to the data lake. Therefore, customers can seamlessly integrate and manage their data.
 
 ## Data reporting capacity
 
-Customers who use Business performance analytics are currently entitled to report on up to eight quarters of data. The volume of data is also constrained by the storage capacity of the A6 SKU for Power BI Embedded. Customers that can't fit their data within the constraints of the Power BI A6 SKU should consider waiting for a future release, where additional data reporting capacity will be available. That future release will expand the data limits, so that larger data sets can be reported and analyzed.
+Customers who use Business performance analytics can currently report on up to eight quarters of data. The volume of data is also constrained by the storage capacity of the A6 SKU for Power BI Embedded. Customers who can't fit their data within the constraints of the Power BI A6 SKU should consider waiting for a future release, where additional data reporting capacity will be available. That future release expands the data limits, so that larger data sets can be reported and analyzed.
 
 ## Data refresh frequency
 
-Business performance analytics allows for two data refreshes per day, at 12:00 AM and 12:00 PM (Coordinated Universal Time). More frequent refreshes will be available in the future, to ensure that customers can work with the most up-to-date information to meet their reporting needs.
+Business performance analytics supports two data refreshes per day, at 12:00 AM and 12:00 PM (Coordinated Universal Time). Future versions will support more frequent refreshes, so you can work with the most up-to-date information to meet your reporting needs.

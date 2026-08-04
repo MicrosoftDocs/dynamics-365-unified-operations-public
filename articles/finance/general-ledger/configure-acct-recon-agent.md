@@ -4,7 +4,7 @@ description: Learn how to set up and configure the Account reconciliation agent 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 06/23/2026
+ms.date: 08/03/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -363,18 +363,6 @@ Enable-TriggerFlow -flowId '570a7d17-ac0a-f011-bae1-6045bd0139fb' -accessToken $
 Enable-TriggerFlow -flowId '75c311f8-1880-ef11-ac21-000d3a5aa6e6' -accessToken $accessToken # Account reconciliation - Determine work to be done
 Enable-TriggerFlow -flowId '13dd7af5-f73b-f111-bec6-0022480882fa' -accessToken $accessToken # Account reconciliation - Generate and log recommended action
 Enable-TriggerFlow -flowId 'd3314698-792b-f111-88b5-00224808ca0b' -accessToken $accessToken # Account reconciliation - Agent execution is triggered
-Enable-TriggerFlow -flowId '2b7f9cf7-0996-ef11-a72c-000d3a327b96' -accessToken $accessToken # Account reconciliation - Evaluate current exception against amount mismatch rules
-Enable-TriggerFlow -flowId '9726ee57-f604-f011-bae1-6045bd0139fb' -accessToken $accessToken # Account reconciliation - Evaluate ledger not in subledger exception record
-Enable-TriggerFlow -flowId 'e645e143-f804-f011-bae1-0022480b9145' -accessToken $accessToken # Account reconciliation - Evaluate subledger not in ledger exception record
-Enable-TriggerFlow -flowId '782ddc43-cd97-ef11-a72d-000d3a36041c' -accessToken $accessToken # Account reconciliation - Get Voucher Summary Record
-Enable-TriggerFlow -flowId '79284164-5a9c-ef11-a72d-000d3a5a293d' -accessToken $accessToken # Account reconciliation - Identify missing accounting
-Enable-TriggerFlow -flowId 'fe418c1d-5b9c-ef11-a72d-000d3a5a293d' -accessToken $accessToken # Account reconciliation - Identify pending transfers
-Enable-TriggerFlow -flowId '64fd40b7-d197-ef11-a72d-000d3a36041c' -accessToken $accessToken # Account reconciliation - Log recommended action
-Enable-TriggerFlow -flowId 'f8a02f0e-d097-ef11-a72d-000d3a36041c' -accessToken $accessToken # Account reconciliation - Mark reconciliation trigger complete
-Enable-TriggerFlow -flowId '96e55129-0798-ef11-a72c-000d3a36041c' -accessToken $accessToken # Account reconciliation - Trigger reconciliation for individual exceptions
-Enable-TriggerFlow -flowId 'e681a39e-1298-ef11-a72c-000d3a36041c' -accessToken $accessToken # Account reconciliation - Trigger subledger/ledger processing
-Enable-TriggerFlow -flowId 'c2ad4a0d-228f-ef11-96d2-002248047a14' -accessToken $accessToken # Account reconciliation - When an individual exception event is added
-
 
 Write-Host
 Write-Host 'Account reconciliation agents are ready for use' -ForegroundColor Green

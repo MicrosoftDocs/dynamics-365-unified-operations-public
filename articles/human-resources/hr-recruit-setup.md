@@ -39,7 +39,7 @@ Before you can install the Recruiting app, make sure the following prerequisites
   - If you don't yet use Microsoft Power Platform and want to expand your finance and operations environments by adding platform capabilities, see [Connect finance and operations apps with a new Microsoft Dataverse instance](../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md).
   - If you already have Dataverse and Microsoft Power Platform environments, and you want to connect them to finance and operations environments, see [Connect finance and operations apps with an existing Microsoft Dataverse instance](../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv.md).
 
-- You have a license and permissions for Power Automate, Power Apps, and Office 365.
+- You have a license and permissions for Power Automate, Power Apps, and Microsoft 365.
 - The **Finance and Operations Virtual Entity** and **Microsoft Flow Approvals** solutions are installed. To install them, follow these steps:
 
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -106,7 +106,7 @@ To activate connections and flows for the Recruiting app, follow these steps:
     - **Recruiting approvals connection:** Add the **Approvals** connector.
     - **Recruiting dataverse connection:** Add the **Microsoft Dataverse** connector.
     - **Recruiting content conversion connection:** Use the Content Conversion (preview) connector.
-    - **Recruiting office 365 outlook connection:** Use the Office 365 outlook connector.
+    - **Recruiting Microsoft 365 outlook connection:** Use the Microsoft 365 outlook connector.
     - **Recruiting teams connection:** Use the Microsoft Teams connector.
 
 1. Go to **Solutions** and select the **Managed** solution.

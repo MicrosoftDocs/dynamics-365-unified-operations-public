@@ -1,10 +1,10 @@
 ---
 title: Maintain vendor bank account information
 description: Learn about how to add and maintain bank information for vendors that you do business with, including an outline on toggling vendor bank account information.
-author: brpotter
-ms.author: brpotter
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.date: 04/23/2021
+ms.date: 07/28/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: USA
@@ -21,9 +21,9 @@ ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
 
 Vendors can use the Vendor collaboration functionality to maintain their bank account information. This article explains how to add and maintain bank information for vendors that you do business with.
 
-After you give access to vendors, they can add information for new bank accounts. You can then review that information and complete the pre-note process, so that the new accounts will be used for payments to those vendors.
+After you give access to vendors, they can add information for new bank accounts. You can then review that information and complete the pre-note process, so that the new accounts are used for payments to those vendors.
 
-You can maintain your vendor account in the **Vendor information** workspace. There, vendors will select **More details** and then **Bank accounts** from the drop-down list. To add a new bank account, select **Add** above the bank account grid. In the **New** dialog box that appears, you can enter the following information:
+You can maintain your vendor account in the **Vendor information** workspace. There, vendors select **More details** and then **Bank accounts** from the drop-down list. To add a new bank account, select **Add** above the bank account grid. In the **New** dialog box that appears, enter the following information:
 
 - Bank account
 - Bank name
@@ -37,16 +37,12 @@ SWIFT and the International Bank Account Number (IBAN) codes are required for al
 
 If there are any documents that are related to the specific certification, you can attach them by selecting **Document**.
 
-Bank information that vendors enter on the page will show **Vendor** as the source. You can also enter bank account information on a vendor's behalf. That information will appear here, and **Customer** will be shown as the source. For more information, see [Create a vendor bank account](../../supply-chain/procurement/tasks/create-vendor-bank-account.md).
+Bank information that vendors enter on the page shows **Vendor** as the source. You can also enter bank account information on a vendor's behalf. That information appears here, and **Customer** is shown as the source. For more information, see [Create a vendor bank account](../../supply-chain/procurement/tasks/create-vendor-bank-account.md).
 
-After an account has been added, vendors can edit their bank's effective and expiration dates as required.
+After an account is added, vendors can edit their bank's effective and expiration dates as required.
 
-## Turn the vendor bank account information feature on or off
+### Vendor collaboration-generated bank changes page
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Maintain vendor bank information using vendor collaboration workspace* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+After vendors update their bank information, you can see that information on the new **Vendor collaboration-generated bank changes** page, available under **Accounts payable \> Inquiries \> Vendor reports**. By default, the page shows all newly entered or modified bank records. The accounts payable clerk can view the changes and run the account information through the pre-note process to validate it. When this process is complete and the primary payment method is manually updated, you can select and mark the bank account as reviewed on the **Vendor collaboration-generated bank changes** page. This action removes the account from the default list.
 
-## Vendor collaboration-generated bank changes page
-
-After vendors update their bank information, that information will be visible on the new **Vendor collaboration-generated bank changes** page that is available under **Accounts payable \> Inquiries \> Vendor reports**. By default, all newly entered or modified bank records are shown. The accounts payable clerk can view the changes and run the account information through the pre-note process to validate it. When this process is completed, and the primary payment method has been manually updated, the bank account that is shown on the **Vendor collaboration-generated bank changes** page can be selected and marked as reviewed. This action removes the account from the default list.
-
-To view all changes that have been made to a vendor's bank information, you can change the filters to view the page by vendor account, effective date range, and whether the changes have been reviewed.
+To view all changes to a vendor's bank information, change the filters to view the page by vendor account, effective date range, and whether the changes are reviewed.
