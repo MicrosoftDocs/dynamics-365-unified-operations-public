@@ -1,11 +1,11 @@
 ---
 title: SESSIONNOW ER function
 description: Learn about how the SESSIONNOW Electronic reporting (ER) function is used, including syntax strings, return values, and examples.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/08/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -34,7 +34,7 @@ The resulting date/time value.
 
 ## Example
 
-`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session date/time value, December 24, 2015, as **"24.12.2015"**, based on the selected German culture and the specified format.
+`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session date/time value, December 24, 2025, as **"24.12.2025"**, based on the selected German culture and the specified format.
 
 ## Additional resources
 

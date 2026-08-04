@@ -84,13 +84,13 @@ Use the following procedure to configure the client application so that it can c
 
     - **Application ID** – The ID that's unique to the application and should be entered automatically.
     - **finance and operations URL** – The base URL of the application.
-    - **Azure AD tenant** – The domain name of the Azure AD.
+    - **Microsoft Entra ID tenant** – The domain name of the Microsoft Entra ID.
 
 1. Select **OK**.
 1. Select **Sign In** to sign in to your account.
 
     > [!NOTE]
-    > The account must share the same domain as the Azure AD that is associated with the application. The Document Routing Agent is now ready to process documents.
+    > The account must share the same domain as the Microsoft Entra ID that's associated with the application. The Document Routing Agent is now ready to process documents.
 
 After you sign in, the **Printers** button becomes available on the toolbar.
 

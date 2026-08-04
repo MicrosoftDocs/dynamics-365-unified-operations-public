@@ -4,7 +4,7 @@ description: Learn how to select the execution mode that is used by the Document
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 08/03/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -48,7 +48,7 @@ When the Document Routing Agent runs as a desktop application, it continues to t
 
 1. Copy the configuration file from step 1, and paste it into the following directory: `C:\ProgramData\Microsoft\Microsoft Dynamics 365 Finance Document Routing`. This step helps guarantee that all your previous configuration settings are used for the new version of the Document Routing Agent application.
 1. Run the Document Routing Agent.
-1. Sign in by using your Microsoft Entra ID (Azure AD) or your credentials for your finance and operations apps.
+1. Sign in by using your Microsoft Entra ID or your credentials for your finance and operations apps.
 1. View and verify your settings and printers by clicking the appropriate menu items.
 
 The next section provides detailed instructions for selecting the Windows service execution mode.
@@ -60,7 +60,7 @@ By default, the Document Routing Agent runs as a desktop application. To run the
 ### Update the execution mode for the Document Routing Agent
 
 1. Start the Document Routing Agent by using the desktop icon.
-1. Select the **Sign In** option, and sign in by using your Azure AD credentials.
+1. Select the **Sign In** option, and sign in by using your Microsoft Entra ID credentials.
 1. On the ribbon, select **Settings**.
 1. Enable the **Run as a Windows Service** option.
 1. Provide a target folder for PDF files that are produced for documents that have custom margins.

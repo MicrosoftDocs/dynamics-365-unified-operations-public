@@ -36,14 +36,14 @@ On the **Email parameters** page, administrators can configure the high-level em
 
 The **Email history** section serves two purposes. First, it provides an entry point to the **Email history** page, where administrators can review all sent emails and also any errors that prevented an email from being sent. Second, it lets you configure how long email history is maintained. By default, the last 30 days of email history are retained. You can adjust this period by changing the value of the **Number of days to retain email history** field to a non-zero number. If you set the value to **0** (zero), the default number and behavior are used.
 
-The **Email throttling** section enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. This feature can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't originally be sent because the per-minute sending limit has been reached, the send attempt for the email will be deferred for up to one minute. After ten deferrals, the system will try to send the email regardless. You can remove the per-minute sending limit from a provider by resetting the **per-minute email sending limit** field to **0**. The sending limits for the Office 365 SMTP email provider is automatically set according to the [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers.
+The **Email throttling** section enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. This feature can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't originally be sent because the per-minute sending limit is reached, the send attempt for the email is deferred for up to one minute. After ten deferrals, the system tries to send the email regardless. You can remove the per-minute sending limit from a provider by resetting the **per-minute email sending limit** field to **0**. The sending limits for the Microsoft 365 SMTP email provider are automatically set according to the [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers.
 
 > [!NOTE]
 > Use of the **Email throttling** feature isn't recommended for the Microsoft Graph and Exchange email providers, because they have their own throttling mechanisms. Therefore, you should ensure that the **per-minute email sending limit** field is set to **0** for both those providers.
 
 ### Send email with Microsoft Graph
 
-For customers who use Office 365, Microsoft Graph is the recommended email provider for Dynamics 365 finance and operations apps. This email provider replaces the deprecated Exchange email provider.
+For customers who use Microsoft 365, Microsoft Graph is the recommended email provider for Dynamics 365 finance and operations apps. This email provider replaces the deprecated Exchange email provider.
 
 You must have the following permissions to set up the Microsoft Graph integration:
 
@@ -137,7 +137,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 | **User name** and **Password** | If authentication is required, specify the appropriate mail account to send email from. All users need to provide the SMTP account **Send As** and **Send On Behalf Of** permissions to enable the ability to send SMTP mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin) at **Users** > **Active users** > **User** > **Edit mailbox permissions** > **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E). |
 
 > [!NOTE]
-> Finance and operations apps don't support multifactor authentication or Modern auth (OAuth 2.0) for SMTP. The Microsoft Graph email provider can be used if a more modern integration is desired. Administrators might have to re-enable Basic authentication to allow for SMTP AUTH. For more information, see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). Note that the [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) only impacts the use of Office 365 SMTP servers. Other SMTP servers that still support basic authentication won't be impacted by this Office 365 deprecation.
+> Finance and operations apps don't support multifactor authentication or Modern auth (OAuth 2.0) for SMTP. If you want a more modern integration, use the Microsoft Graph email provider. Administrators might have to re-enable Basic authentication to allow for SMTP AUTH. For more information, see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). The [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) only impacts the use of Microsoft 365 SMTP servers. Other SMTP servers that still support basic authentication aren't impacted by this Microsoft 365 deprecation.
 
 ## [Administrator] Email distributor batch process
 
@@ -314,15 +314,15 @@ There are some standard processes that can help you troubleshoot the configurati
 
     | &nbsp; | &nbsp; |
     |---|---|
-    | **Explanation** | This issue might indicate an invalid or incorrectly set up mailbox in Office 365. |
-    | **Fix** | To fix this issue, make sure that the specified user exists in Office 365 and has appropriate permissions. To find the affected users, follow these steps: 1. Open the **Email history** page. 1. Add a filter for **Failed** emails to the **Email status** field. 1. Make a note of the value in the **Email sender** field. This field shows the user that Exchange is indicating isn't a valid or correctly permissioned user in Office 365. |
+    | **Explanation** | This issue might indicate an invalid or incorrectly set up mailbox in Microsoft 365. |
+    | **Fix** | To fix this issue, make sure that the specified user exists in Microsoft 365 and has appropriate permissions. To find the affected users, follow these steps: 1. Open the **Email history** page. 1. Add a filter for **Failed** emails to the **Email status** field. 1. Make a note of the value in the **Email sender** field. This field shows the user that Exchange is indicating isn't a valid or correctly permissioned user in Microsoft 365. |
 
 - **<span id="404-not-found">"(404) Not found" error when email is sent via Exchange</span>**
 
     | &nbsp; | &nbsp; |
     |---|---|
     | **Explanation** | This issue indicates that no mailbox exists for the user account in Exchange. |
-    | **Fix** | To fix this issue, make sure that the specified user exists in Office 365 and has appropriate permissions, or use alternate user accounts that have valid Exchange mailboxes. To find the affected users, follow these steps: 1. Open the **Email history** page. 1. Add a filter for **Failed** emails to the **Email status** field. 1. Make a note of the value in the **Email sender** field. This field shows the user that doesn't have a mailbox in Exchange. |
+    | **Fix** | To fix this issue, make sure that the specified user exists in Microsoft 365 and has appropriate permissions, or use alternate user accounts that have valid Exchange mailboxes. To find the affected users, follow these steps: 1. Open the **Email history** page. 1. Add a filter for **Failed** emails to the **Email status** field. 1. Make a note of the value in the **Email sender** field. This field shows the user that doesn't have a mailbox in Exchange. |
 
 ### Specific SMTP email issues
 
@@ -332,14 +332,14 @@ If you continue to experience issues when email is sent via SMTP, you may be run
 
     | &nbsp; | &nbsp; |
     |---|---|
-    | **Explanation** | An email failed to be sent because a recipient is using a single-label domain, but Office 365 doesn't support single-label domains. Single-label domains are Domain Name System (DNS) names that don't contain a suffix such as .com, .corp, .net, or .org. For example, contoso is a single-label domain. However, contoso.com, contoso.net, and contoso.local aren't single-label domains. |
+    | **Explanation** | An email failed to send because a recipient uses a single-label domain, but Microsoft 365 doesn't support single-label domains. Single-label domains are Domain Name System (DNS) names that don't contain a suffix such as .com, .corp, .net, or .org. For example, contoso is a single-label domain. However, contoso.com, contoso.net, and contoso.local aren't single-label domains. |
     | **Fix** | Specify alternate addresses for email recipients that aren't single-label domains. |
 
 - **<span id="mailbox-full-error">SMTP emails fail to be sent with "Mailbox full"</span>**
 
     | &nbsp; | &nbsp; |
     |---|---|
-    | **Explanation** | An email failed to be sent because at least one recipient's mailbox is full. For more information, see [Error (554 5.2.2 mailbox full) when sending email to mail-enabled public folders in Office 365](/exchange/troubleshoot/email-delivery/cannot-send-mail-mepf). |
+    | **Explanation** | An email failed to send because at least one recipient's mailbox is full. For more information, see [Error (554 5.2.2 mailbox full) when sending email to mail-enabled public folders in Microsoft 365](/exchange/troubleshoot/email-delivery/cannot-send-mail-mepf). |
     | **Fix** | Use an alternate address for the recipient, or contact the recipient by using alternate means before you try again. |
 
 - **<span id="authentication-unsuccessful-error">SMTP emails fail to be sent with "Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully"</span>**
@@ -347,14 +347,14 @@ If you continue to experience issues when email is sent via SMTP, you may be run
     | &nbsp; | &nbsp; |
     |---|---|
     | **Explanation** | An email failed to be sent because additional criteria are required to successfully authenticate the SMTP user account. These additional criteria might be required because multifactor authentication (MFA) is configured. However, finance and operations apps don't currently support MFA. |
-    | **Fix** | Adjust the user account configuration as appropriate in Office 365 before you try again. For more information, see [Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365](/exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off#error-authentication-unsuccessful). |
+    | **Fix** | Adjust the user account configuration as appropriate in Microsoft 365 before you try again. For more information, see [Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365](/exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off#error-authentication-unsuccessful). |
 
 - **<span id="smtpclientauthentication-disabled-error">SMTP emails fail to be sent with "Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox"</span>**
 
     | &nbsp; | &nbsp; |
     |---|---|
     | **Explanation** | An email failed to be sent because SMTP client authentication is disabled for the SMTP user account. |
-    | **Fix** | Enable SMTP client authentication for the user account in Office 365 before you try again. For more information, see [Enable or disable authenticated client SMTP submission](https://aka.ms/smtp_auth_disabled). |
+    | **Fix** | Enable SMTP client authentication for the user account in Microsoft 365 before you try again. For more information, see [Enable or disable authenticated client SMTP submission](https://aka.ms/smtp_auth_disabled). |
 
 - **<span id="smtp-emails-fail-to-send-with-if-your-smtp-server-doesnt-support-authentication-please-clear-the-smtp-user-name-and-password">SMTP emails fail to be sent with "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"</span>**
 

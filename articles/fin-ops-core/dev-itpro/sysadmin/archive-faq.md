@@ -50,6 +50,8 @@ No, don't make this change. It causes data loss.
 
 No, currently, a refresh of the finance and operations database doesn't automatically refresh Dataverse. You must refresh Dataverse separately from production.
 
+A database refresh can also affect your archive jobs if you perform it by using Lifecycle Services. An Lifecycle Services database refresh doesn't copy information from Dataverse. As a result, Lifecycle Services doesn't copy any in-flight archive jobs from the source environment to the target environment. This design prevents failures that the lack of corresponding records in Dataverse would otherwise cause. You can restart these jobs after the refresh, and archiving continues as normal.
+
 ## There's no inventory closing for moving average transactions. Does this condition mean that I can't archive these transactions?
 
 No, the inventory transaction archival scenario isn't limited for transactions. You can archive moving average transactions and standard cost transactions if they have closed inventory.

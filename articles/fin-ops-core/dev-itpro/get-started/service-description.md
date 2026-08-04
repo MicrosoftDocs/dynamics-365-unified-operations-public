@@ -355,7 +355,7 @@ A partner that is part of the Microsoft Cloud Solution Provider (CSP) program, a
 
 ### Customer
 
-A business entity that consumes finance and operations apps and is represented by a tenant in Office 365.
+A business entity that consumes finance and operations apps and is represented by a tenant in Microsoft 365.
 
 ### Development environment
 

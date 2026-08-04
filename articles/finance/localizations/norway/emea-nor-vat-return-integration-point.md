@@ -4,7 +4,7 @@ description: Learn how to register an integration point in the ID-porten web por
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 05/04/2026
+ms.date: 08/04/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Norway
@@ -23,7 +23,7 @@ Set the following parameters for your integration point for direct submission of
 | Parameter name (Norwegian) | Parameter name (English) | Parameter description | Parameter value |
 |---|---|---|---|
 | Difi-tjeneste | Difi Service | Select the service to assign correct scopes. | Select **API-klient**. |
-| Scopes | Scopes | The application programming interfaces (APIs)/resources that the integration can access. | <p>Select the following scopes:</p><ul><li>**openid**</li><li>**skatteetaten:mvameldinginnsending**</li><li>**skatteetaten:mvameldingvalidering**</li></ul> |
+| Scopes | Scopes | The application programming interfaces (APIs)/resources that the integration can access. | <p>Select the following scopes:</p><ul><li>**openid**</li><li>**skatteetaten:mvameldinginnsending**</li><li>**altinn:instances.read**</li><li>**altinn:instances.write**</li></ul> |
 | Kundens org.nr. | Customer's organization number | The organization number of the service owner. | You don't have to specify any value in this field. The required value is automatically set when the setup of the integration point is saved. |
 | Integrasjonens identifikator | The integration identifier | The unique identifier of the service. The identifier is automatically generated. | You don't have to specify any value in this field. The required value is automatically set when the setup of the integration point is saved. |
 | Navn på integrasjonen | Name of the integration | The name of the integration as it appears in the sign-in window. | Specify **Microsoft Dynamics 365 Finance**. |
