@@ -1,10 +1,10 @@
 ---
 title: Post detailed payments for vendor and customers
 description: Learn about the feature that posts detailed vendor and customer payments, including a summary on amounts in bank accounts and the setup process.
-author: kweekley
-ms.author: kweekley
+author: mukumarm
+ms.author: mukumarm
 ms.topic: article
-ms.date: 01/12/2023
+ms.date: 08/04/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -17,82 +17,82 @@ ms.dyn365.ops.version: 10.0.16
 
 The **Ability to post detailed vendor and customer payments, but summarize amounts to bank account** feature posts vendor and customer payments as separate vouchers, but summarizes the payments when the bank account balance is updated.
 
-For example, your bank pays three vendors 100 euros (EUR) each on behalf of your organization. When the bank completes the transactions, the bank statement might show the three payments in detail, or it might show a summarized withdrawal of 300 EUR. If your bank summarizes the payments into a single withdrawal, this feature can be used to mimic that functionality. Therefore, it can help streamline the bank reconciliation process.
+For example, your bank pays three vendors 100 euros (EUR) each on behalf of your organization. When the bank completes the transactions, the bank statement might show the three payments in detail, or it might show a summarized withdrawal of 300 EUR. If your bank summarizes the payments into a single withdrawal, use this feature to mimic that functionality. Therefore, it can help streamline the bank reconciliation process.
 
 > [!IMPORTANT]
-> This feature eliminates the need to record multiple vendor or customer payments in a single voucher number. To determine whether the parameters can be defined so that multiple subledger transactions are prohibited in a single voucher, see [One voucher](one-voucher.md).
+> This feature eliminates the need to record multiple vendor or customer payments in a single voucher number. To determine whether you can define the parameters to prohibit multiple subledger transactions in a single voucher, see [One voucher](one-voucher.md).
 
 ## Setup
 
-In the **Feature management** workspace, enable the feature that's named **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**.
+In the **Feature management** workspace, enable the feature named **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**.
 
 ### Journal names
 
-The ability to summarize payments to the bank subledger is supported for the following journal types:
+You can summarize payments to the bank subledger for the following journal types:
 
 - Daily (General journal)
 - Vendor disbursement (Vendor payment journal)
 - Customer payment (Customer payment journal)
 
-On the **Journal names** page, two new fields are available in the **Bank** section: **Summarize amounts in bank account** and **Summarization criteria**.
+On the **Journal names** page, the **Bank** section includes two new fields: **Summarize amounts in bank account** and **Summarization criteria**.
 
-[![Journal names page.](./media/bank-field1.png)](./media/bank-field1.png)
+:::image type="content" source="./media/bank-field1.png" alt-text="Screenshot of the Journal names page showing the Bank section with the Summarize amounts in bank account and Summarization criteria fields.":::
 
-When the **Summarize amounts in bank account** option is set to **No** (the default value), payments in a journal batch group will update the bank account in either detail or summary, depending on whether the payments are entered in a single voucher number. Posting to the bank account works just as does when the new feature is turned off. When the feature is turned on, we recommend that you no longer enter multiple payments in a single voucher number.
+When you set the **Summarize amounts in bank account** option to **No** (the default value), payments in a journal batch group update the bank account in either detail or summary, depending on whether the payments are entered in a single voucher number. Posting to the bank account works just as it does when the new feature is turned off. When you turn on the feature, don't enter multiple payments in a single voucher number.
 
-The **Summarize amounts in bank account** option can be set to **Yes** only if the **New voucher** field for the journal name is set to **In connection with balance**. In this case, the option promotes (but doesn't guarantee) the use of a single voucher per vendor or customer payment. When the new feature is turned on, summarization won't occur if the voucher contains more than one vendor or customer.
+You can set the **Summarize amounts in bank account** option to **Yes** only if the **New voucher** field for the journal name is set to **In connection with balance**. In this case, the option promotes (but doesn't guarantee) the use of a single voucher per vendor or customer payment. When you turn on the new feature, summarization doesn't occur if the voucher contains more than one vendor or customer.
 
 > [!NOTE]
-> If the **New voucher** field is set to a value other than **In connection with balance**, and you try to set the **Summarize amounts in bank account** option to **Yes**, you will receive the following error message: "The Summarize amounts in bank account setting must be No when New voucher is set to Manual or One voucher number only."
+> If you set the **New voucher** field to a value other than **In connection with balance**, and you try to set the **Summarize amounts in bank account** option to **Yes**, you receive the following error message: "The Summarize amounts in bank account setting must be No when New voucher is set to Manual or One voucher number only."
 >
-> If the **Summarize amounts in bank account** option is set to **Yes**, and you try to change the value of the **New voucher** field to something other than **In connection with balance**, you will receive the following error message: "The New voucher setting must be In connection with balance when Summarize amounts in bank account is set to Yes."
+> If you set the **Summarize amounts in bank account** option to **Yes**, and you try to change the value of the **New voucher** field to something other than **In connection with balance**, you receive the following error message: "The New voucher setting must be In connection with balance when Summarize amounts in bank account is set to Yes."
 
 If you set the **Summarize amounts in bank account** option to **Yes**, the **Summarization criteria** field becomes available. This field enables your organization to specify the criteria that are used to summarize payments to the bank account. The following values are available:
 
-- **Do not summarize** – Payments won't be summarized, even if the **Summarize amounts in bank account** option is set to **Yes**.
-- **Default criteria** – Payments that have the same bank account, method of payment, currency code, account type (either customer or vendor), and transaction date will be grouped for summarization.
-- **Default criteria with document number** – Payments that have the same bank account, method of payment, currency code, account type (either customer or vendor), transaction date, and document number will be grouped for summarization. If the document number for more than one payment is blank, the blank value will be treated as a valid document number, and those payments will be summarized together.
-- **Default criteria with payment reference** – Payments that have the same bank account, method of payment, currency code, account type (either customer or vendor), transaction date, and payment reference will be grouped for summarization. If the payment reference for more than one payment is blank, the blank value will be treated as a valid payment reference, and those payments will be summarized together.
+- **Do not summarize** – Payments aren't summarized, even if the **Summarize amounts in bank account** option is set to **Yes**.
+- **Default criteria** – Payments that have the same bank account, method of payment, currency code, account type (either customer or vendor), and transaction date are grouped for summarization.
+- **Default criteria with document number** – Payments that have the same bank account, method of payment, currency code, account type (either customer or vendor), transaction date, and document number are grouped for summarization. If the document number for more than one payment is blank, the blank value is treated as a valid document number, and those payments are summarized together.
+- **Default criteria with payment reference** – Payments that have the same bank account, method of payment, currency code, account type (either customer or vendor), transaction date, and payment reference are grouped for summarization. If the payment reference for more than one payment is blank, the blank value is treated as a valid payment reference, and those payments are summarized together.
 
 ## Parameters
 
-When vendor or customer payments are summarized, a new number is assigned to the single bank account transaction.
+When you summarize vendor or customer payments, the system assigns a new number to the single bank account transaction.
 
 On the **Cash and bank management parameters** page, on the **Number sequences** tab, define a number sequence for the **Bank transaction summarization ID** reference.
 
 ### Entering payments in a journal
 
-When this feature is used, payments can be summarized to the bank account when they're entered from any of the following journals:
+When you use this feature, you can summarize payments to the bank account when you enter them from any of the following journals:
 
 - Accounts payable - Payments – Vendor payment journal
 - Accounts receivable - Payments - Customer payment journal
 - General ledger - Journal entries - General journals
 
-After a journal is created, verify the summarization settings on the **Setup** tab of the journal batch header. Default settings are taken from the journal name, but you can override them for individual journal batch numbers.
+After you create a journal, verify the summarization settings on the **Setup** tab of the journal batch header. The system takes default settings from the journal name, but you can override them for individual journal batch numbers.
 
-After all payments are entered in the journal, the following criteria are used during posting to determine which payments can be considered for summarization. These criteria affect how payments should be entered in the journal.
+After you enter all payments in the journal, the system uses the following criteria during posting to determine which payments can be considered for summarization. These criteria affect how you should enter payments in the journal.
 
-- Only payments that have the following combinations of an account and an offset account are considered for summarization: Vendor/Bank, Bank/Vendor, Customer/Bank, and Bank/Customer. Payments that are posted to a ledger account (*bridged payments*) aren't considered for summarization.
-- Each payment voucher must contain only a single vendor or customer. If a voucher number contains multiple vendors or customers, it won't be considered for summarization.
+- Only payments that have the following combinations of an account and an offset account are considered for summarization: Vendor/Bank, Bank/Vendor, Customer/Bank, and Bank/Customer. The system doesn't consider payments that are posted to a ledger account (*bridged payments*) for summarization.
+- Each payment voucher must contain only a single vendor or customer. If a voucher number contains multiple vendors or customers, the system doesn't consider it for summarization.
 - More than one payment, in separate vouchers, must exist in the journal batch number.
 - Payments in different journal batch numbers aren't considered for summarization.
 
 ### Posting payments in a journal
 
-During posting, the group of payment lines is considered for summarization as described in the previous section. After the group of payment lines is determined, summarization occurs, based on the settings on the journal batch header.
+During posting, the system considers the group of payment lines for summarization as described in the previous section. After the system determines the group of payment lines, it performs summarization based on the settings on the journal batch header.
 
-- Bank transaction summarization won't occur if the **Summarize amounts in bank account** option is set to **No**, or if the **Summarization criteria** field on the journal batch header is set to **Do not summarize**.
+- The system doesn't perform bank transaction summarization if the **Summarize amounts in bank account** option is set to **No**, or if the **Summarization criteria** field on the journal batch header is set to **Do not summarize**.
 
-    If a journal name was defined so that payments are posted to the bank account in summary, but the **Summarization criteria** field on the journal batch header is set to **Do not summarize**, the transactions won't be summarized.
+    If you define a journal name so that payments post to the bank account in summary, but set the **Summarization criteria** field on the journal batch header to **Do not summarize**, the system doesn't summarize the transactions.
 
-- Bank transaction summarization will occur when the **Summarize amounts in bank account** option is set to **Yes**, and the **Summarization criteria** field is set to **Default criteria**, **Default criteria with document number**, or **Default criteria with payment reference**. For more information, see the description of the **Summarization criteria** field in the [Journal names](#journal-names) section.
+- The system performs bank transaction summarization when you set the **Summarize amounts in bank account** option to **Yes**, and set the **Summarization criteria** field to **Default criteria**, **Default criteria with document number**, or **Default criteria with payment reference**. For more information, see the description of the **Summarization criteria** field in the [Journal names](#journal-names) section.
 
-More than one group of summarized payments can be posted to a bank account. For example, if the journal contains a group of vendor payments and a group of customer payments, you can have two or more summarized payments. One or more summarized bank account transactions can be created for the vendor payments, and one or more summarized bank account transactions can be created for the customer payments.
+You can post more than one group of summarized payments to a bank account. For example, if the journal contains a group of vendor payments and a group of customer payments, you can have two or more summarized payments. You can create one or more summarized bank account transactions for the vendor payments, and one or more summarized bank account transactions for the customer payments.
 
-For the next example, the following vendor payments were entered in a journal. The journal batch number was set up so that the **Summarization criteria** field is set to **Default criteria with document number**. During posting, the payments are summarized, or not summarized, as shown here.
+In the next example, you enter the following vendor payments in a journal. You set up the journal batch number so that the **Summarization criteria** field is set to **Default criteria with document number**. During posting, the system summarizes, or doesn't summarize, the payments as shown in the following table.
 
 | Voucher number | Transaction date | Account | Currency | Debit | Credit | Offset account | Method of payment | Document number | What's summarized? |
-|---|---|---|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | August 15 | Vendor A | EUR | 100 | | USMF OPER | Electronic | | Vouchers 1 and 2 summarized |
 | 2 | August 15 | Vendor B | EUR | 200 | | USMF OPER | Electronic | | Vouchers 1 and 2 summarized |
 | 3 | August 17 | Vendor C | CAD | 300 | | USMF OPER | Electronic | | Posted to bank account in detail |
@@ -103,26 +103,29 @@ For the next example, the following vendor payments were entered in a journal. T
 | 8 | August 28 | Vendor B | EUR | 800 | | USMF OPER | Electronic | 2 | Vouchers 7, 8, and 9 summarized |
 | 9 | August 28 | Vendor A | EUR | 900 | | USMF OPER | Electronic | 2 | Vouchers 7, 8, and 9 summarized |
 
-<!--[![Summary posting.](./media/summarized-payments2.png)](./media/summarized-payments2.png)-->
+<!--:::image type="content" source="./media/summarized-payments2.png" alt-text="Screenshot of summary posting results for payments posted to a bank account.":::-->
 
-Five transactions will be posted to the bank account. For two, the original payment details will be maintained. For the other three, payments will be summarized based on the summarization rules.
+You post five transactions to the bank account. For two transactions, the system maintains the original payment details. For the other three transactions, the system summarizes payments based on the summarization rules.
 
-### After payments are posted in a journal
+### After you post payments in a journal
 
-After posting is completed, you can find the summarized (or detailed) payments in the transactions of the bank account. Go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
+After you finish posting, you can find the summarized (or detailed) payments in the transactions of the bank account. Go to **Cash and bank management** > **Bank accounts** > **Bank accounts**.
 
-[![Bank transactions page.](./media/bank-transactions3.png)](./media/bank-transactions3.png)
+:::image type="content" source="./media/bank-transactions3.png" alt-text="Screenshot of the Bank transactions page showing summarized and detailed payments for a bank account.":::
 
-For any summarized payment, an asterisk (\*) will be shown in the **Voucher number** field. Every payment is still posted in detail to the general ledger.
+For any summarized payment, an asterisk (\*) appears in the **Voucher number** field. Every payment is still posted in detail to the general ledger.
 
-All summarized bank account transactions will have a unique summarization ID. If the **Summarization criteria** field was set to **Default criteria with document number**, the document number from the payment lines will be used as the summarization ID. Otherwise, the summarization ID will be generated from the number sequence that was configured on the **Cash and bank management parameters** page. If the summarization ID that will be assigned to a summarized bank transaction is already used by another summarized bank transaction, a new one will be selected from the number sequence. The payment reference isn't used as a summarization ID.
+All summarized bank account transactions have a unique summarization ID. If you set the **Summarization criteria** field to **Default criteria with document number**, the document number from the payment lines is used as the summarization ID. Otherwise, the number sequence that you configure on the **Cash and bank management parameters** page generates the summarization ID. If the summarization ID that you assign to a summarized bank transaction is already used by another summarized bank transaction, the system selects a new one from the number sequence. The payment reference isn't used as a summarization ID.
 
-Users can view the payment details of a summarized bank account transaction by selecting **View summarization details** on the **Payment summarization details** page.
+You can view the payment details of a summarized bank account transaction by selecting **View summarization details** on the **Payment summarization details** page.
 
-[![Payment summarization details page.](./media/payment-summary4.png)](./media/payment-summary4.png)
+:::image type="content" source="./media/payment-summary4.png" alt-text="Screenshot of the Payment summarization details page showing the payment details of a summarized bank account transaction.":::
 
 While you're viewing the summarization details, you can view the general ledger voucher of each payment, return to the bank account summarized transaction, or view the settlement information for the selected payment.
 
-The bank account summarized transactions will also be shown on the bank statement. Therefore, bank reconciliation is easier, regardless of whether the manual account reconciliation or advanced bank reconciliation is used. Both reconciliation processes show the bank summarization ID. If advanced bank reconciliation is enabled for the bank account, a bank document of the **Summarized transaction** type will be generated for the bank account. Users can match and reconcile transactions in the same way for other types of bank documents.
+The bank account summarized transactions also appear on the bank statement. Therefore, bank reconciliation is easier, regardless of whether you use manual account reconciliation or advanced bank reconciliation. Both reconciliation processes show the bank summarization ID. If you enable advanced bank reconciliation for the bank account, a bank document of the **Summarized transaction** type is generated for the bank account. You can match and reconcile transactions in the same way for other types of bank documents.
 
-[![Bank reconcilation worksheet page.](./media/bank-reconcile5.png)](./media/bank-reconcile5.png)
+:::image type="content" source="./media/bank-reconcile5.png" alt-text="Screenshot of the bank reconciliation worksheet page showing a summarized transaction bank document.":::
+
+>[!NOTE]
+>Bank transaction summarization isn't supported for customer or vendor payment transactions that include payment fees. When you apply a payment fee, Finance creates separate bank transactions instead of a summarized bank transaction, even if the journal is configured to summarize amounts in the bank account. As a result, you might need to reconcile additional bank transactions individually during bank reconciliation.
