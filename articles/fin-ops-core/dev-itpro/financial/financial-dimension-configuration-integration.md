@@ -55,8 +55,8 @@ You're importing the following file.
 
 | Date     | Main account and dimensions | Amount   |
 |----------|-----------------------------|----------|
-| 6/1/2016 | 605140-001-02               | $150.00  |
-| 6/1/2016 | 110110-002-04-ABC           | $-150.00 |
+| 6/1/2025 | 605140-001-02               | $150.00  |
+| 6/1/2025 | 110110-002-04-ABC           | $-150.00 |
 
 When you import the file, the system reviews the **Main account and dimensions** column, and maps it to what you set up in the active ledger dimension format. For this example, the active ledger dimension format is as follows: **Main account - Department - Cost Center**
 
@@ -70,8 +70,8 @@ For this example, use the same import file.
 
 | Date     | Main account and dimensions | Amount   |
 |----------|-----------------------------|----------|
-| 6/1/2016 | 605140-001-02               | $150.00  |
-| 6/1/2016 | 110110-002-04-ABC           | $-150.00 |
+| 6/1/2025 | 605140-001-02               | $150.00  |
+| 6/1/2025 | 110110-002-04-ABC           | $-150.00 |
 
 However, use the following active ledger dimension format: **Main account - Department - Cost Center - Customer**.
 

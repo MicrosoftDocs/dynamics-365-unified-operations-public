@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Capabilities define how vendor offerings, specializations, and standards are organized in Supplier Engagement. By using predefined values, teams can classify vendors consistently and support better sourcing, qualification, and supplier management decisions. These settings also support hierarchical structures that make complex vendor profiles easier to manage.
 

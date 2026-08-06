@@ -1,11 +1,11 @@
 ---
 title: TEXT ER function
 description: Learn about how the TEXT Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/08/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -44,7 +44,7 @@ For *Real* type values, the string conversion includes up to two decimal places.
 
 ## Example
 
-If the server locale of the Microsoft Dynamics 365 Finance instance is defined as **EN-US**, `TEXT (NOW ())` returns the current Finance session date, December 17, 2015, as the text string **"12/17/2015 07:59:23 AM"**. `TEXT (1/3)` returns **"0.33"**.
+If the server locale of the Microsoft Dynamics 365 Finance instance is defined as **EN-US**, `TEXT (NOW ())` returns the current Finance session date, December 17, 2025, as the text string **"12/17/2025 07:59:23 AM"**. `TEXT (1/3)` returns **"0.33"**.
 
 ## Additional resources
 

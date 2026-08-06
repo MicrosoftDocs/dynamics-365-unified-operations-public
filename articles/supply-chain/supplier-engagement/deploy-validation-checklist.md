@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 After deployment is complete, validate the environment before you hand it over to business users or suppliers. These checks help you confirm that the expected solutions are available, automation is turned on, and synchronization data was created correctly. Running the checklist early makes troubleshooting much easier if something is missing.
 

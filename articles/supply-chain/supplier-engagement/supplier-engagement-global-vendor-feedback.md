@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Global vendor feedback provides a standardized way to evaluate suppliers and capture performance insights in one place. Ratings are stored centrally and contribute to a dynamic overall score. As you add new feedback, the overall rating updates automatically.
 

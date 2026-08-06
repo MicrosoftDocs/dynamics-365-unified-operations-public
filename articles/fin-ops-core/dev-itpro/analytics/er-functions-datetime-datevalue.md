@@ -1,11 +1,11 @@
 ---
 title: DATEVALUE ER function
 description: Learn about how the DATEVALUE Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
-author: kfend
-ms.author: filatovm
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/08/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -58,13 +58,13 @@ When the culture isn't defined as an argument of the called function, the value 
 
 ## Example 1
 
-`DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")` returns the date value **December 21, 2016**, based on the specified custom format and the default application's **EN-US** culture.
+`DATEVALUE ("21-Dec-2025", "dd-MMM-yyyy")` returns the date value **December 21, 2025**, based on the specified custom format and the default application's **EN-US** culture.
 
 ## Example 2
 
-`DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")` returns the date value **January 21, 2016**, based on the specified custom format and culture.
+`DATEVALUE ("21-Gen-2025", "dd-MMM-yyyy", "IT")` returns the date value **January 21, 2025**, based on the specified custom format and culture.
 
-However, `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` throws an exception to inform the user that the specified string isn't recognized as a valid date for the specified culture.
+However, `DATEVALUE ("21-Gen-2025", "dd-MMM-yyyy", "EN-US")` throws an exception to inform the user that the specified string isn't recognized as a valid date for the specified culture.
 
 ## Additional resources
 

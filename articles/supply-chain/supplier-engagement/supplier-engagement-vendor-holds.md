@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Vendor holds help you control supplier activity when compliance, risk, or operational conditions require temporary restrictions. You can apply holds at the global vendor level to affect all released vendors, or at the local vendor level for a single legal entity. Hold updates sync with Supply Chain Management so that transaction controls stay aligned.
 

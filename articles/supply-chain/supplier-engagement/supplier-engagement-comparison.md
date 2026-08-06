@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The Supplier Engagement solution provides broader capabilities compared to the older vendor collaboration interface. Both solutions support collaboration with suppliers during purchasing processes, but they differ in scope, architecture, and data management. You can use both solutions in parallel.
 

@@ -85,14 +85,14 @@ When you run the year-end close by going to **General ledger** > **Period close*
 
 For example, multiple transactions are posted to main account 130100 in fiscal year 2021.
 
-| Journal number | Voucher  | Date       | Type      | Ledger account | Account name        | Description       | Currency | Amount in transaction currency | Amount  | Amount in reporting currency |
+| Journal number | Voucher  | Date | Type  | Ledger account | Account name | Description  | Currency | Amount in transaction currency | Amount  | Amount in reporting currency |
 |------|-----|-----|--------|----------------|-------|-------------------|----------|-------------|---------|--------------------|
 | 20853  | FTV-3000 | 12/3/2021  | Operating | 130100-001- | Accounts receivable | Service fee | USD| 100 | 100     | 100        |
-| 20855  | FTV-3004 | 12/5/2021  | Operating | 130100-002-  | Accounts receivable | Utilities  | USD   | 175     | 175     | 175     |
-| 20854  | CMV-4000 | 12/16/2021 | Operating | 130100-001-    | Accounts receivable | Refund  | USD | -100        | -100  | -100      |
-| 20851  | ARP-8000 | 12/20/2021 | Operating | 130100-002-  | Accounts receivable |    | USD   | -0.88    | -0.88   | -0.88          |
-| 20853  | ARPM0004 | 12/20/2021 | Operating | 130100-002-    | Accounts receivable |    | EUR   | -127.11   | -174.12 | -174.12     |
-| 20856  | CMV-4010 | 12/21/2021 | Operating | 130100-002-   | Accounts receivable | Credit on account | USD  | -175  | -175  | -175  |
+| 20855  | FTV-3004 | 12/5/2021  | Operating | 130100-002-  | Accounts receivable | Utilities  | USD   | 175  | 175  | 175     |
+| 20854  | CMV-4000 | 12/16/2021 | Operating | 130100-001-    | Accounts receivable | Refund  | USD | -100  | -100  | -100      |
+| 20851  | ARP-8000 | 12/20/2021 | Operating | 130100-002-  | Accounts receivable |  | USD   | -0.88 | -0.88   | -0.88          |
+| 20853  | ARPM0004 | 12/20/2021 | Operating | 130100-002- | Accounts receivable |   | EUR   | -127.11   | -174.12 | -174.12     |
+| 20856  | CMV-4010 | 12/21/2021 | Operating | 130100-002-| Accounts receivable | Credit on account | USD| -175  | -175  | -175  |
 | 20857  | FTV-3011 | 12/28/2021 | Operating | 130100-001- | Accounts receivable | Utilities | USD | 400 | 400 | 400          |
 | 20910  | FTV-3020 | 12/29/2021 | Operating | 130100-002- | Accounts receivable | Service   | USD  | 300  | 300  | 300         |
 
@@ -101,10 +101,10 @@ Of these transactions, three are settled during ledger settlement.
 There's an invoice for 175 US dollars (USD 175). This invoice is paid by a payment in euros (EUR), and a cash discount is taken.
 
 | Journal number | Voucher  | Date       | Type      | Ledger account | Account name        | Description | Currency | Amount in transaction currency | Amount  | Amount in reporting currency |
-|----------|----------|---------|-----------|----------|-----------|-------------|----------|--------------|---------|---------------|
-| 20855 | FTV-3004 | 12/5/2021  | Operating | 130100-002- | Accounts receivable | Utilities   | USD  | 175  | 175  | 175             |
+|----------|----------|---------|-----------|----------|-----------|-------------|----------|----------|---------|-----------|
+| 20855 | FTV-3004 | 12/5/2021  | Operating | 130100-002- | Accounts receivable | Utilities| USD  | 175  | 175  | 175           |
 | 20851 | ARP-8000 | 12/20/2021 | Operating | 130100-002- | Accounts receivable |   | USD  | -0.88 | -0.88   | -0.88            |
-| 20853 | ARPM0004 | 12/20/2021 | Operating | 130100-002- | Accounts receivable |   | EUR  | -127.11 | -174.12 | -174.12          |
+| 20853 | ARPM0004 | 12/20/2021 | Operating | 130100-002- | Accounts receivable |  | EUR  | -127.11 | -174.12 | -174.12          |
 
 The results for main account 130100 depend on whether the **Enable advanced awareness options** parameter is enabled before the year-end close is run. If the **Enable advanced awareness options** parameter is enabled, the result also depends on the setting of the Keep detail during year-end close option.
 
@@ -114,9 +114,9 @@ The year-end close creates three opening balance transactions for main account 1
 
 | Journal number | Voucher  | Date | Type| Ledger account | Account name  | Description | Currency | Amount in transaction currency | Amount  | Amount in reporting currency |
 |---------|----------|----------|---------|----------|----------|-------|----------|-----------------|---------|---------------|
-| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-002- | Accounts receivable |   | USD      | 299.12  | 299.12  | 299.12             |
-| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable |   | USD  | 400 | 400 | 400                          |
-| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-002-  | Accounts receivable |   | EUR  | -127.11   | -174.12 | -174.12             |
+| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-002- | Accounts receivable |   | USD  | 299.12  | 299.12  | 299.12             |
+| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable |   | USD  | 400 | 400 | 400                        |
+| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-002-  | Accounts receivable | | EUR  | -127.11 | -174.12 | -174.12             |
 
 Even though the payment's transaction for EUR -127.11 was ledger settled, the transaction still comes forward as a beginning balance.
 
@@ -124,21 +124,21 @@ Even though the payment's transaction for EUR -127.11 was ledger settled, the tr
 
 The year-end close creates two opening balance transactions for main account 130100 in 2022. The sum of the transactions in the accounting currency is still USD 525, but the ledger-settled transactions are excluded from the opening balance. The total amount for account 130100-002- is USD 125 instead of USD 299.12, and the transaction for EUR 127.11/USD 174.12 is excluded.
 
-| Journal number | Voucher  | Date     | Type    | Ledger account | Account name        | Description | Currency | Amount in transaction currency | Amount | Amount in reporting currency |
-|--------------|----------|----------|---------|---------|--------|-------------|----------|------------------|--------|------------|
-| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-002- | Accounts receivable | | USD  | 125   | 125    | 125                          |
-| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable | | USD  | 400  | 400    | 400                          |
+| Journal number | Voucher  | Date | Type| Ledger account | Account name | Description | Currency | Amount in transaction currency | Amount | Amount in reporting currency |
+|--------------|----------|----------|---------|---------|--------|-------------|----------|--------------|--------|------------|
+| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-002- | Accounts receivable | | USD  | 125   | 125    | 125                     |
+| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable | | USD  | 400  | 400    | 400                 |
 
 ### **Enable advanced awareness options** parameter is enabled and **Keep detail during year-end close** = **Yes**
 
 The year-end close creates five opening balance transactions for main account 130100 in 2022. A separate opening balance transaction is created for each of the five transactions that weren't settled. The sum of the transactions in the accounting currency is still USD 525.
 
 | Journal number | Voucher  | Date| Type | Ledger account | Account name | Description  | Currency | Amount in transaction currency | Amount | Amount in reporting currency |
-|----------|----------|----------|---------|----------------|---------|-----------|----------|--------------|--------|---------------|
-| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable | Service fee | USD | 100 | 100    | 100                 |
-| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable | Refund     | USD  | -100  | -100   | -100               |
-| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-002- | Accounts receivable | Credit on account | USD | -175 | -175   | -175        |
-| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable | Utilities  | USD | 400| 400 | 400                      |
+|----------|----------|----------|---------|-----------|---------|-----------|----------|--------------|--------|---------------|
+| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable | Service fee | USD | 100 | 100  | 100              |
+| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable | Refund     | USD  | -100  | -100   | -100          |
+| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-002- | Accounts receivable | Credit on account | USD | -175 | -175   | -175    |
+| 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-001- | Accounts receivable | Utilities  | USD | 400| 400 | 400                 |
 | 20910 | YEC_2021 | 1/1/2022 | Opening | 130100-002- | Accounts receivable | Service  | USD | 300  | 300    | 300            |
 
 When transaction details are kept, the original detailed transactions aren't affected. They remain posted and unsettled in the fiscal year that's being closed. A copy of those transactions is created for the opening balance. The following values from the original transactions are copied to the opening balance transactions.

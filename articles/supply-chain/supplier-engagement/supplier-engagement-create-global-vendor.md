@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 You can create global vendors through supplier self-registration, direct entry by an internal user, or synchronization from existing vendor data in Supply Chain Management. The creation method determines the initial **Origin** value, but each method creates the same centralized vendor profile that you can qualify, approve, and release to legal entities.
 

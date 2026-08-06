@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Local vendor management in the Supplier Engagement app lets you create, update, and control vendor accounts at the legal entity level. You can release a global vendor to a legal entity, maintain local vendor details, and add supporting records such as contacts and bank accounts. All supported updates sync automatically between the Supplier Engagement app and Supply Chain Management.
 

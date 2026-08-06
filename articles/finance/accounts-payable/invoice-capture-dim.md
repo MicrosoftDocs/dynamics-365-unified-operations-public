@@ -4,7 +4,7 @@ description: Learn about how to use financial dimensions in Invoice capture, inc
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 04/22/2025
+ms.date: 07/28/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -19,13 +19,13 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about financial dimensions in Invoice capture and explains how to use them. It provides guidance for extending the solution to support financial dimensions that are aligned with specific business requirements in Microsoft Dynamics 365 Finance.
+This article provides information about financial dimensions in Invoice capture and explains how to use them. It provides guidance for extending the solution to support financial dimensions that align with specific business requirements in Microsoft Dynamics 365 Finance.
 
-Financial dimensions play a crucial role in optimizing the invoice processing workflow for cost invoices. This optimization ensures that the invoices can be redirected to the appropriate individuals for approval in Dynamics 365 Finance. Financial dimensions can be specified at either the invoice header level or the line level. If financial dimension values aren't provided in Invoice capture, defaulting logic is used to transfer invoices from Invoice capture to Dynamics 365 Finance.
+Financial dimensions play a crucial role in optimizing the invoice processing workflow for cost invoices. This optimization ensures that the invoices go to the appropriate individuals for approval in Dynamics 365 Finance. You can specify financial dimensions at either the invoice header level or the line level. If you don't provide financial dimension values in Invoice capture, defaulting logic transfers invoices from Invoice capture to Dynamics 365 Finance.
 
 ## Standard fields
 
-In Invoice capture, three financial dimension fields on the header are used to determine the correct person for approval:
+In Invoice capture, three financial dimension fields on the header determine the correct person for approval:
 
 - Business unit
 - Department
@@ -36,18 +36,18 @@ To make these fields available on the invoice header in the side-by-side viewer,
 During manual reviews, Accounts payable (AP) clerks can enter the financial dimension values from the lookup lists.
 
 > [!NOTE]
-> When the **Integration of custom prebuilt model** feature is released, values can be automatically captured from the document and assigned to the corresponding field.
+> When the **Integration of custom prebuilt model** feature is released, you can automatically capture values from the document and assign them to the corresponding field.
 
-During the invoice transfer, the default financial dimension fields from Invoice capture are automatically mapped to the relevant fields on the invoice header in Dynamics 365 Finance. The financial dimensions are automatically serialized to accommodate the financial dimension settings in Dynamics 365 fields.
+During the invoice transfer, the default financial dimension fields from Invoice capture automatically map to the relevant fields on the invoice header in Dynamics 365 Finance. The financial dimensions are automatically serialized to accommodate the financial dimension settings in Dynamics 365 fields.
 
-When invoices are created by using a vendor invoice, you can view the transferred financial dimension values by going to **Pending vendor invoice** \> **Invoice header** \> **Financial dimensions**. When invoices are created by using the invoice journal, you can view the transferred financial dimension values in **Invoice journal detailed**.
+When you create invoices by using a vendor invoice, you can view the transferred financial dimension values by going to **Pending vendor invoice** > **Invoice header** > **Financial dimensions**. When you create invoices by using the invoice journal, you can view the transferred financial dimension values in **Invoice journal detailed**.
 
 > [!NOTE]
 > As of Dynamics 365 Finance version 10.0.39, standard financial dimension field mapping and serialization logic is available. Customers who use earlier versions must implement their own logic in their own extension.
 
 ## Extension
 
-In the Financial dimension configuration for integration application, customers can update the financial dimension settings to meet their business needs by incorporating additional fields and adjusting their order. To accommodate the flexible settings of financial dimensions, two extensions are required for a vendor invoice automation solution for cost invoices.
+In the Financial dimension configuration for integration application, you can update the financial dimension settings to meet your business needs by incorporating additional fields and adjusting their order. To accommodate the flexible settings of financial dimensions, you need two extensions for a vendor invoice automation solution for cost invoices.
 
 ### Add financial dimension fields in Invoice capture
 
@@ -55,11 +55,11 @@ The definitions of financial dimension fields don't differ from the invoice head
 
 ### Financial dimension serialization
 
-Before you import the financial dimensions into the corresponding vendor invoice entities, the financial dimensions must be serialized. In Dynamics 365 Finance version 10.0.39, serialization logic is available.
+Before you import the financial dimensions into the corresponding vendor invoice entities, you must serialize the financial dimensions. In Dynamics 365 Finance version 10.0.39, serialization logic is available.
 
 ### Example
 
-For example, a customer wants to transfer three dimension fields from Invoice capture to Dynamics 365 Finance on pending invoice lines. The logical field names of the three dimension fields are **vis\_businessunit**, **vis\_costcenter**, and **vis\_department**. In version 10.0.39, customers can use the `VendInvoiceCapInvDataUpdateHandler` class to make an extension. This class provides four methods for updating the header and lines for the pending invoice and invoice journal.
+For example, you want to transfer three dimension fields from Invoice capture to Dynamics 365 Finance on pending invoice lines. The logical field names of the three dimension fields are **vis\_businessunit**, **vis\_costcenter**, and **vis\_department**. In version 10.0.39, you can use the `VendInvoiceCapInvDataUpdateHandler` class to make an extension. This class provides four methods for updating the header and lines for the pending invoice and invoice journal.
 
 ```
 using Newtonsoft.Json.Linq; 
@@ -80,7 +80,7 @@ public class VendInvoiceCapInvDataUpdateHandler
 }
 ```
 
-Customers must use the chain of command to extend their own logic. The following example code segments show how to extend functionality to update pending invoice lines.
+Use the chain of command to extend your own logic. The following example code segments show how to extend functionality to update pending invoice lines.
 
 ```
 using Newtonsoft.Json.Linq; 

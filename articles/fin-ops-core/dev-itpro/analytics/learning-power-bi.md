@@ -4,7 +4,7 @@ description: Learn about Power BI content, including a table of reports that are
 author: twheeloc
 ms.author: twheeloc
 ms.topic: concept-article
-ms.date: 12/19/2017
+ms.date: 08/03/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -24,19 +24,19 @@ The reports that are included in the **Learning** Power BI content have both cha
 
 | Report                | Contents |
 |-----------------------|----------|
-| Learning Overview     | Summary of other reports |
-| Course Analysis       | Registration by location, attendee by status, courses by type per company, and course attendance by job |
-| Registration Analysis | Registration list |
-| Course Types          | Course types by skill |
-| Instructor Analysis   | Ratio of courses to instructors, number of instructors, courses by instructor, courses per instructor, and course agenda by instructor |
-| Courses Offered       | List of courses |
-| Courses Design        | Course agenda |
+| Learning overview     | Summary of other reports |
+| Course analysis       | Registration by location, attendee by status, courses by type per company, and course attendance by job |
+| Registration analysis | Registration list |
+| Course types          | Course types by skill |
+| Instructor analysis   | Ratio of courses to instructors, number of instructors, courses by instructor, courses per instructor, and course agenda by instructor |
+| Courses offered       | List of courses |
+| Courses design        | Course agenda |
 
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
 
-The following data is used to fill the reports in the **Learning** Power BI content. This table shows the entities that the content was based on.
+The **Learning** Power BI content uses the following data to fill the reports. This table shows the entities that the content is based on.
 
 | Entity           | Contents                                                         | Relationships with other entities |
 |------------------|------------------------------------------------------------------|-----------------------------------|
@@ -53,6 +53,5 @@ The following data is used to fill the reports in the **Learning** Power BI cont
 | Position         | Position, title, and full-time equivalent (FTE)                  | Course Agenda, Course Attendees |
 | Employee Name    | First name, last name, and full name                             | Course Attendees |
 | Employee Title   | Title and seniority date                                         | Course Attendees |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

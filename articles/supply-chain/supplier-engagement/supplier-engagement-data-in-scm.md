@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The Supplier Engagement solution introduces several changes to Supply Chain Management that support the new global vendor model. These changes include a dedicated global vendors form, global vendor certificates, and enhancements to the supply risk assessment report. This article describes how to work with Supplier Engagement data directly in Supply Chain Management.
 

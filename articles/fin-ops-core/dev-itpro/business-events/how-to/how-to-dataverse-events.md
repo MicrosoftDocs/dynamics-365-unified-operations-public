@@ -45,7 +45,7 @@ After you install the Power Platform Tools extension, create a new project.
 1. In the **Configure Microsoft Power Platform Solution** dialog box, under **1. Solution Type to Configure**, select **Start from Dataverse**.
 1. In the **Power Platform Tools** dialog box, under **2. Connect to Dataverse**, follow these steps:
 
-    1. In the **Deployment Type** field group, select the **Office 365** option.
+    1. In the **Deployment Type** field group, select the **Microsoft 365** option.
     1. Select the **Display list of available organizations** checkbox.
     1. Select **Login**, and enter the credentials to sign in to the Dataverse environment that is linked to your finance and operations apps environment.
     1. In the list of organizations, select the Microsoft Power Platform environment that you want to work with. Then select **Login**.

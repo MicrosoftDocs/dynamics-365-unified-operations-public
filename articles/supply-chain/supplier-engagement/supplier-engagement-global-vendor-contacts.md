@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Global vendor contacts help procurement teams manage the people who represent each supplier across onboarding and ongoing collaboration. In the Supplier Engagement app, contacts can be internal records or external users who have portal access. These records stay connected to vendor lifecycle processes, portal access, and synchronization with Supply Chain Management.
 

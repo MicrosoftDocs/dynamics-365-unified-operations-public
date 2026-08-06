@@ -36,7 +36,7 @@ Yes, the process hierarchy works with custom menu items.
 
 Yes. Any role changes that are made for an active user account are captured on the **Security audit trail** report.
 
-## Does the feature work with user groups or user access that is assigned through Microsoft Azure Active Directory (Azure AD)?
+## Does the feature work with user groups or user access that is assigned through Microsoft Entra ID?
 
 No. Security governance uses the user that is created directly in the **Security administration** module in Dynamics 365 finance and operations apps.
 

@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The Supplier Engagement app includes dashboards that provide a role-based view of supplier activity and progress. These dashboards help administrators, managers, and operational users monitor registrations, risks, ongoing work, and portal access from one place. You can switch between dashboards to focus on the metrics and lists that matter for your role.
 

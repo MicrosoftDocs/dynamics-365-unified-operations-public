@@ -17,6 +17,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Global vendor certificate management provides a single place to track supplier certifications across industries and legal entities. Managing certificates at the global vendor level helps you avoid maintaining the same record separately for each local vendor and makes compliance reviews easier. Certificate data synchronizes to related local vendor records in Supply Chain Management.
 
