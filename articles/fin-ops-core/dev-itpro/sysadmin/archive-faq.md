@@ -1,10 +1,10 @@
 ---
 title: Finance and operations apps archive with Microsoft Dataverse long term retention FAQ
 description: Access answers to frequently asked questions about archiving data in finance and operations apps with Microsoft Dataverse.
-author: Weijiesa
-ms.author: Weijiesa
+author: nandadevrmenon
+ms.author: nrajeevmenon
 ms.topic: faq
-ms.date: 07/29/2026
+ms.date: 08/04/2026
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
