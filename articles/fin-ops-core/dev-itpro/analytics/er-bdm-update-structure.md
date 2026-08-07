@@ -4,7 +4,7 @@ description: Learn about how to update the structure of a business document temp
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 03/19/2026
+ms.date: 08/07/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
@@ -31,12 +31,11 @@ This example shows how a system administrator can update the structure of a busi
 
 ### Prepare a business document template for editing
 
-Complete the following procedures in [Business document management overview](er-business-document-management.md).
+Complete the following procedures in [Configure Electronic reporting parameters for business documents](er-business-document-configure-parameters.md).
 
-1. [Configure ER parameters](er-business-document-management.md#configure-er-parameters).
-1. [Import ER solutions](er-business-document-management.md#import-er-solutions).
-1. [Enable Business document management](er-business-document-management.md#enable-business-document-management).
-1. [Configure parameters](er-business-document-management.md#configure-parameters).
+1. [Configure ER parameters](er-business-document-configure-parameters.md).
+1. [Import ER solutions](er-business-document-configure-parameters.md#import-er-solutions).
+1. [Configure parameters](er-business-document-configure-parameters.md#configure-parameters).
 
 ### Edit a business document template
 
@@ -47,7 +46,7 @@ Complete the following procedures in [Business document management overview](er-
 1. Select **OK** to create the new template.
 
     > [!NOTE]
-    > If you don't sign in to Office Online, you're [directed to the Microsoft 365 sign-in page](er-business-document-management.md#frequently-asked-questions). To return to your Finance environment, select the **Back** button in your browser.
+    > If you don't sign in to Office Online, you're directed to the Microsoft 365 sign-in page. To return to your Finance environment, select the **Back** button in your browser.
 
     The new template opens for editing in the Excel Online embedded control on the template editor page.
 
