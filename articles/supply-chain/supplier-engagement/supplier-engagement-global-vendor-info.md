@@ -152,6 +152,5 @@ These areas make the global vendor record the main workspace for centralized sup
 - [Manage global vendor capabilities](supplier-engagement-global-vendor-capabilities.md)
 - [Manage certificates](supplier-engagement-manage-certificates.md)
 - [Global vendor contacts](supplier-engagement-global-vendor-contacts.md)
-- [Global vendor onboarding lifecycle](supplier-engagement-global-vendor-lifecycle.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

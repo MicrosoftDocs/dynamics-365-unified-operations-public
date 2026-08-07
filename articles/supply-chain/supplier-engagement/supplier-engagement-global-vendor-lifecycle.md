@@ -134,4 +134,3 @@ If you disapprove a termination request, **Status reason** remains *Approved*, a
 - [Global vendor feedback](supplier-engagement-global-vendor-feedback.md)
 - [Risk management and corrective actions](supplier-engagement-risk-corrective-actions.md)
 - [Manage local vendors](supplier-engagement-manage-local-vendors.md)
-- [Synchronize data between Supplier Engagement and Supply Chain Management](supplier-engagement-data-sync.md)

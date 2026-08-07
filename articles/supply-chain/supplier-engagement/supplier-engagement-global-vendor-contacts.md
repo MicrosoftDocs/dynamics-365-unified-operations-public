@@ -104,5 +104,4 @@ The contact creation and user management functionality on the **Portal** tab wor
 - [Global vendor onboarding lifecycle](supplier-engagement-global-vendor-lifecycle.md)
 - [Global vendor feedback](supplier-engagement-global-vendor-feedback.md)
 - [Risk management and corrective actions](supplier-engagement-risk-corrective-actions.md)
-- [Manage local vendors](supplier-engagement-manage-local-vendors.md)
 - [Work with the Supplier Engagement app](supplier-engagement-app-overview.md)
