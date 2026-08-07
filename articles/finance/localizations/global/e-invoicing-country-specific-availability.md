@@ -4,7 +4,7 @@ description: Learn about the out-of-box features that are available for each cou
 author: ilikond
 ms.author: ikondratenko
 ms.topic: concept-article
-ms.date: 04/28/2026
+ms.date: 08/06/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -17,7 +17,7 @@ ms.reviewer: johnmichalak
 The availability of Electronic Invoicing Service globalization features depends on the country or region where you're located. Although some features are generally available, others are still in preview.
 
 > [!NOTE]
-> This article is related only to the globalization features introduced in the scope of the Electronic Invoicing Service. This article doesn't cover other approaches for supported e-Invoicing capabilities for some countries/regions designed based on built-in X++ code and the Electronic Messaging framework.
+> This article relates only to the globalization features introduced in the scope of the Electronic Invoicing Service. It doesn't cover other approaches for supported e-Invoicing capabilities for some countries or regions that are designed based on built-in X++ code and the Electronic Messaging framework.
 > For more information, see [Electronic Invoicing](gs-e-invoicing-service-overview.md) and [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
 ## Generally available features
@@ -26,32 +26,35 @@ The following table shows the Electronic invoicing globalization features that a
 
 | Country or region | Globalization feature name | Business documents |
 |-------------------|----------------------------|--------------------|
-| Australia | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
+| Australia | [Electronic invoicing for Australia and New Zealand](../apac/gs-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Austria | Austrian electronic invoices (AT) | Sales invoices and project invoices |
 | Belgium | [Belgian electronic invoice (BE)](../belgium/emea-bel-e-invoices.md) | Sales invoices and project invoices |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chile-elec-invo-conncection.md) | Sales invoices, project invoices, and packing slips |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chl-vend-e-invoice.md) | Import vendor invoices |
 | Colombia | [Colombia Electronic Invoice (CO)](../iberoamerica/ltm-colombia-electronic-invoice-configuration.md) | Sales invoices and project invoices |
 | Costa Rica | [Costa Rica electronic invoice (CRI)](../iberoamerica/ltm-costa-rica-ei-connect-configuration.md) | Sales invoices and project invoices |
-| Denmark | Danish electronic invoice (DK) | Sales invoices and project invoices |
-| Egypt | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
-| Estonia | Estonian electronic invoice (EE) | Sales invoices and project invoices |
-| Europe | PEPPOL electronic invoice | Pan-European Public Procurement Online (PEPPOL) sales invoices and project invoices |
-| Europe | PEPPOL vendor invoice | PEPPOL import vendor invoices |
-| Finland | Finnish electronic invoice (FI) | Sales invoices and project invoices |
+| Denmark | [Danish electronic invoice (DK)](../denmark/gs-e-invoicing-dk-get-started.md) | Sales invoices and project invoices |
+| Egypt | [Egyptian electronic invoice (EG)](../mea/gs-e-invoicing-eg-get-started.md) | Sales invoices and project invoices |
+| Estonia | [Estonian electronic invoice (EE)](https://support.microsoft.com/en-US/servicing/dynamics/d365/hotfix/2020/03/a-country-specific-update-for-estonia-to-support-export-of-customers-electronic-invoices-in-microsof) | Sales invoices and project invoices (format generation only) |
+| Europe | [PEPPOL electronic invoice](https://support.microsoft.com/en-US/servicing/dynamics/d365/update/2019/02/an-update-for-european-union-to-support-export-of-customers-electronic-invoices-in-peppol-bis-3-form) | Pan-European Public Procurement Online (PEPPOL) sales invoices and project invoices (format generation only) |
+| Europe | [PEPPOL vendor invoice import](../europe/emea-peppol-import.md) | PEPPOL import vendor invoices |
+| Finland | [Finnish electronic invoice (FI)](https://support.microsoft.com/en-US/servicing/dynamics/d365/update/2020/07/a-country-specific-update-for-finland-to-support-export-of-customers-electronic-invoices-in-microsof) | Sales invoices and project invoices (format generation only) |
 | France | [French Chorus Pro submission (FR)](../france/e-invoicing-fr-get-started.md) | Sales invoices and project invoices |
 | France | [French Chorus Pro vendor invoice import (FR)](../france/e-invoicing-fr-get-started.md#receive-electronic-invoices) | Import vendor invoices |
-| Germany | German electronic invoice (DE) | Sales invoices and project invoices |
-| Indonesia | Indonesian electronic invoice (ID) | Sales invoices, project invoices, and vendor invoices |
-| Italy | FatturaPA (IT) | Sales invoices and project invoices |
+| France | [French electronic invoice (FR)](../france/emea-fra-einv-ereport.md) | Sales invoices and project invoices via EDICOM |
+| Germany | [German electronic invoice (DE)](../germany/emea-deu-cust-e-invoices.md) | Sales invoices and project invoices (format generation only) |
+| Indonesia | [Indonesian electronic invoice (ID)](../indonesia/gs-e-invoicing-id-get-started.md) | Sales invoices, project invoices, and vendor invoices |
+| Italy | [Italian FatturaPA (IT)](../italy/gs-e-invoicing-ita-fatturapa-get-started.md) | Sales invoices and project invoices, and vendor invoices |
 | Malaysia | [Malaysian electronic invoicing (MY)](../malaysia/apac-mys-e-invoices.md) | Sales invoices, project invoices, and self invoices |
 | Netherlands | Dutch electronic invoice (NL) | Sales invoices and project invoices |
-| New Zealand | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
-| Norway | Norwegian electronic invoice (NO) | Sales invoices and project invoices |
+| New Zealand | [Electronic invoicing for Australia and New Zealand](../apac/gs-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
+| Norway | [Norwegian electronic invoice (NO)](../norway/emea-nor-e-invoices.md) | Sales invoices and project invoices (format generation only) |
 | Panama | [Panama Electronic Invoice (PA)](../iberoamerica/ltm-panama-ei-connec-configuration.md) | Sales invoices and project invoices |
 | Paraguay | [Paraguay Electronic Invoice (PY)](../iberoamerica/ltm-paraguay-electronic-invoice-configuration.md) | Sales invoices, project invoices, and packing slips |
+| Poland | [Polish electronic invoice (PL)](../poland/gs-e-invoicing-pol-get-started.md) | Sales invoices, project invoices, and advance invoices |
 | Saudi Arabia | [Saudi Arabian Zatca submission (SA)](../mea/gs-e-invoicing-sa-get-started.md) | Sales invoices and project invoices |
 | Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
+| Singapore | [Singaporean electronic invoice (SG)](../singapore/apac-singapore-electronic-invoices.md) | Sales invoices and project invoices |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
 | Uruguay | [Uruguay Electronic Invoice (UY)](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) | Sales invoices, project invoices, and packing slips |
 
@@ -77,5 +80,3 @@ The following table shows the Electronic invoicing Service globalization feature
 | Brazil | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
 | Brazil | Brazilian NF-e import from e-mail (BR) | Fiscal document model 55 |
 | Mexico | Mexican CFDI Interfactura (MX) | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
-| Poland | [Polish electronic invoice (PL)](../poland/gs-e-invoicing-pol-get-started.md) | Sales invoices, project invoices, and advance invoices |
-| Singapore | [Singaporean electronic invoice (SG)](../singapore/apac-singapore-electronic-invoices.md) | Sales invoices and project invoices |

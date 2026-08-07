@@ -5521,16 +5521,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?context=/dynamics365/context/finance
                 - name: Business document management (BDM)
                   items:
-                    - name: BDM overview
+                    - name: Business document management overview
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?context=/dynamics365/context/finance
-                    - name: New document user interface in BDM
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?context=/dynamics365/context/finance
-                    - name: Edit business document templates in BDM
-                      items:
-                        - name: Add new fields to a business document template in Microsoft Excel
-                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?context=/dynamics365/context/finance
-                        - name: Update the structure of a business document template
-                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?context=/dynamics365/context/finance
+                    - name: Configure Electronic reporting parameters for business documents
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-configure-parameters.md?context=/dynamics365/context/finance
+                    - name: Manage access permissions to edit templates for configurable business documents
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-configure-access-permissions.md?context=/dynamics365/context/finance
+                    - name: Use Business document management
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-edit.md?context=/dynamics365/context/finance
+                    - name: List of configurable business documents
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-list.md?context=/dynamics365/context/finance
             - name: ER framework API
               items:
                 - name: Extend the list of built-in functions

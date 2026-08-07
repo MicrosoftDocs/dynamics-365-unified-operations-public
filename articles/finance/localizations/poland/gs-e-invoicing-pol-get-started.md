@@ -2,7 +2,7 @@
 title: Electronic invoicing for Poland
 description: Learn how to get started with electronic invoicing for Poland in Microsoft Dynamics 365 Finance.
 author: ikondratenko
-ms.date: 07/22/2026
+ms.date: 08/06/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection:
@@ -142,14 +142,14 @@ To import the electronic invoicing feature, follow these steps:
 ## Configure application-specific parameters
 
 > [!NOTE]
-> The steps described in this article apply only if you use the **Sales e-invoice (PL)** format configuration of **version 316.34** or higher.
+> The steps in this article apply only if you use the **Sales e-invoice (PL)** format configuration of **version 329.40** or higher.
 
-To configure application specific parameters (ASP), follow these steps for the **Sales e-invoice (PL)** Electronic Reporting format configuration.
+To configure application-specific parameters (ASP), follow these steps for the **Sales e-invoice (PL)** Electronic Reporting format configuration.
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the related format configuration.
 1. In the **Configurations** menu, in the **Application specific parameters** section, select **Setup**.
 1. In the left pane, select the format version that you use for generating e-invoice XML files.
-1. In the **Lookups** grid, make sure that the **$ZeroTaxRateLookup** is selected.
+1. In the **Lookups** grid, make sure that the **$ZeroTaxRate** is selected.
 1. In the **Conditions** grid, select **Add** to create a new row.
 1. In the **Lookup result** column, select a value from the enumeration list that contains allowed values for a zero tax rate. This value is used for **P_12** XML element population.
 
@@ -160,6 +160,14 @@ To configure application specific parameters (ASP), follow these steps for the *
 
    > [!NOTE]
    > Instead of selecting specific sales tax codes, you can use ***\*Blank\*** or **\*Not blank\*** placeholder values for the mass matching.
+
+1. In the **Lookups** grid, make sure that the **TaxExemptsLookUp** is selected.
+1. In the **Conditions** grid, select **Add** to create a new row.
+1. In the **Lookup result** column, select a value from the enumeration list that contains allowed values for tax exemptions categories. This value is used for **P_19** XML block and its child elements population.
+1. In the **Code** column, select a related sales tax code value for which the respective **Lookup result** value is used.
+
+   > [!NOTE]
+   > Instead of selecting specific tax exemptions codes, you can use ***\*Blank\*** or **\*Not blank\*** placeholder values for the mass matching.
 
 1. In the **State** field, select the **Completed** value to indicate that the configuration is finished.
 1. Select **Save**, and close the page.
@@ -240,7 +248,7 @@ To configure electronic document parameters, follow these steps:
 1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
 1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
 1. Add the **second** import source line, in the **Name** field, enter the **ReferenceNumber** value.
-1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **KSeF number message import (PL)** configuration. 
+1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **KSeF number message import (PL)** configuration.
 
     :::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters.":::
 
@@ -302,7 +310,7 @@ Configure the following sales tax codes related data that affect the system beha
 1. Tax > Indirect taxes > Sales tax > Sales tax codes > Report setup > **Country/region type**.
 1. Tax > Indirect taxes > Sales tax > Sales tax groups > Setup > **Exempt**.
 1. Tax > Indirect taxes > Sales tax > Sales tax groups > Setup > **Exempt code**.
-1. Tax > Indirect taxes > Sales tax > Sales tax groups > Setup > **Reverse charge**. 
+1. Tax > Indirect taxes > Sales tax > Sales tax groups > Setup > **Reverse charge**.
 1. Tax > Setup > Sales tax > **Sales tax exempt codes**.
 
 > [!NOTE]
@@ -310,7 +318,7 @@ Configure the following sales tax codes related data that affect the system beha
 
 ### Configure extra data
 
-You can add extra data to invoices. This data goes in a special section of electronic invoices headers named *DodatkowyOpis*.
+You can add extra data to invoices. The system uses this data during electronic invoices XML file generation.
 
 #### Configure electronic document properties
 
@@ -319,9 +327,11 @@ To configure electronic document properties, follow these steps:
 1. In Finance, go to **Accounts receivable** > **Setup** > **Electronic document property types**.
 1. Select **New** to add a property type.
 1. In the **Type** field, enter the value to use as an extra data key (`Klucz`) in the resulting XML file of an electronic invoice.
-1. In the **Group description** field, enter the **KSEF** value. 
+1. In the **Group description** field, enter the **KSEF** value.
+
   > [!NOTE]
-  > Only the properties with the **KSEF** value in the **Group description** field are considered during the electronic invoice generation process.
+  > Only the properties with the **KSEF** value in the **Group description** field are considered during the electronic invoice generation process. This data goes in a special section of electronic invoices headers named *DodatkowyOpis*.
+
 1. Select **Applicability** to add an applicable table.
 1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select **Customer invoice journal** and **Project invoice**.
 1. Add as many extra document properties as you need.
@@ -329,13 +339,25 @@ To configure electronic document properties, follow these steps:
 
 :::image type="content" source="e-invoice-poland-properties.jpg" alt-text="Screenshot of the Electronic document property types configuration.":::
 
+1. Select **New** to add a property type.
+1. In the **Type** field, enter **CorrectionType**. Enter the value exactly as shown.
+
+  > [!NOTE]
+  > The electronic invoice generation process considers this property regardless of the value in the **Group description** field. This data is applicable only for corrected invoices and is used as the type of correction populated in the *Faktura/Fa/TypKorekty* XML element.
+
+1. Select **Applicability** to add an applicable table.
+1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select **Customer invoice journal** and **Project invoice**.
+1. Save your changes and return to the **Electronic document property types** page.
+1. Save your changes and close page.
+
 #### Enter extra invoice data
 
 To enter extra invoice data, follow these steps:
 
 1. In Finance, go to **Accounts payable** > **Inquiries and reports** > **Invoice** > **Invoice journal**.
 1. Select an invoice in the list. On the Action Pane, on the **Invoice** tab, in the **Properties** group, select **Electronic document properties**.
-1. Enter a required value. This value is used in the `Wartosc` field in the resulting XML file of an electronic invoice.
+1. For all the properties related to *DodatkowyOpis* block, enter the required values. The system uses these values in the respective `Wartosc` elements in the resulting XML file of an electronic invoice.
+1. For the **CorrectionType** property specifically, enter **1**, **2**, or **3**. If you don't define this property, or leave it empty, or enter any value other than 1, 2, or 3, the default value of the correction type is **1**.
 
 > [!NOTE]
 > You can enter extra data for project invoices in a similar way at **Project management and accounting** > **Project invoices** > **Project invoice**.
