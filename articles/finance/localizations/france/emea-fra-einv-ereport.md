@@ -4,7 +4,7 @@ description: Learn how to work with Electronic invoicing for France in Microsoft
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 07/10/2026
+ms.date: 08/06/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -35,6 +35,7 @@ Before you start, make sure you have the following prerequisites:
 
 - The company is a registered taxpayer in France.
 - The company has a signed agreement with the selected Approved Platform and obtained the credentials required for establishing a secure connection to the Approved Platform's infrastructure.
+
   > [!NOTE]
   > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Approved Platform (PA). For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
 
@@ -283,7 +284,7 @@ To support scenarios when companies have multiple subsidiaries with their own re
 Set up the postal address structure.
 
 1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
-1. Ensure that at least the **Country code** element is configured.
+1. Ensure that at least the **Country/Region code** element is configured.
 
 ## Configure legal entity data
 
@@ -456,7 +457,7 @@ Set up units of measure.
 1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit ID, and then select **External codes**.
 1. On **External codes**, in **Overview**, enter the unit ID in the **Code** column.
-1. Select the checkbox in the **Standard code** column.
+1. Select the check box in the **Standard code** column.
 1. In the **Value** section, enter the external code from the [UNECE Recommendation 20 code list](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) in the **Value** field.
 
    > [!NOTE]
@@ -479,7 +480,7 @@ Set up units of measure.
 > [!IMPORTANT]
 > **Electronic invoicing scope**
 >
-> The scope of **E-Invoicing** individual submissions *includes* only invoices issued for customers with a nonempty **SIREN** registration number defined for the French country code (**FRA**). All other invoices are *excluded* from **E-Invoicing** and considered for **E-Reporting**.
+> The scope of **E-Invoicing** individual submissions *includes* only invoices issued for customers with a nonempty **SIREN** registration number defined for the French country/region code (**FRA**). All other invoices are *excluded* from **E-Invoicing** and considered for **E-Reporting**.
 
 After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. The submission process consists of three major steps.
 
@@ -578,26 +579,32 @@ View receipt logs for processed electronic invoices: go to **Organization admini
 
 View successfully received invoices: go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
 
-## Send electronic invoices responses
+## Send electronic invoice responses
 
-Some business scenarios assume sending responses for either incoming or outgoing electronic invoices. The responses result in assigning mandatory document statuses that conclude electronic invoices lifecycle.
+Some business scenarios assume sending responses for either incoming or outgoing electronic invoices. The responses result in assigning mandatory document statuses that conclude the electronic invoices lifecycle.
 
 ### Send responses for Customer and Project invoices
 
-Current implementation allows sending only *payment reception confirmation* responses to your Buyers. To enter responses, follow these steps.
+The current implementation allows sending only *payment reception confirmation* responses to your Buyers. To enter responses, follow these steps.
 
 1. Go to **Accounts receivable** > **Inquires and reports** > **Invoices** > **Invoice journal** for Sales and Free text invoices or to **Project management and accounting** > **Project invoices** > **Project invoices**.
-1. Select a specific invoice in the list, and then, on the Action Pane, on the **Invoice** / **Project invoice** tab, in the **Document** group, select **Add response**.
+1. Select a specific invoice in the list. On the Action Pane, on the **Invoice** / **Project invoice** tab, in the **Document** group, select **Add response**.
 1. In the **Response code** field, select the required value from the list. The **Amount paid** field is automatically populated based on payments settled against this invoice.
 1. Select **OK**, and then close the page.
-1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Submit electronic documents**.
+
+   > [!NOTE]
+   > You can also use a dedicated procedure in **Organization administration** > **Periodic** > **Electronic documents** > **Generate payment responses** for mass generation of payment responses for eligible invoices. These invoices must be already submitted to EDICOM and fully paid in Dynamics 365 Finance.
+
+1. After you manually enter or automatically generate payment responses, go to **Organization administration** > **Periodic** > **Electronic documents** > **Submit electronic documents**.
 1. In the **Record to include** section, make sure that the required **Customer invoice response** records are selected.
 1. Select **OK** to start the responses submission process.
+
    > [!NOTE]
-   > At this stage, the **French electronic invoice status (FR)** globalization feature, **Send AR response** feature setup is being run for responses processing.
+   > At this stage, the **French electronic invoice status (FR)** globalization feature, **Send AR response** feature setup runs for responses processing.
+
 1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Run submission process in export channels**.
 1. In the **Channel** field, select the **InvStatus** export channel or the channel you [created](#ExChannel) for responses, and then select **OK**.
-1. Check the responses submission results at **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log**, select **Customer invoice response** document type.  
+1. Check the responses submission results at **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log**. Select **Customer invoice response** document type.
 
 ### Send responses for pending vendor invoices
 
@@ -608,11 +615,17 @@ The current implementation only supports sending *refusal* responses to your sel
 1. In the **Response code** field, select the required value from the list.
 1. In the **Reason code** field, select the required value from the list.
 1. Select **OK**, and then close the page.
+
+   > [!NOTE]
+   > You can add refusal responses only to vendor invoices that you receive by using the **Receive electronic documents** procedure and that have related records in the **Electronic document receipt log** in Dynamics 365 Finance.
+
 1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Submit electronic documents**.
 1. In the **Record to include** section, make sure that the required **Pending vendor invoice response** records are selected.
 1. Select **OK** to start the responses submission process.
+
    > [!NOTE]
    > At this stage, the **French electronic invoice status (FR)** globalization feature, **Send AP response** feature setup runs for responses processing.
+
 1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Run submission process in export channels**.
 1. In the **Channel** field, select the **InvStatus** export channel or the channel you [created](#ExChannel) for responses, and then select **OK**.
 1. Check the responses submission results at **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log**. Select **Pending vendor invoice response** document type.  
@@ -624,7 +637,7 @@ The current implementation only supports sending *refusal* responses to your sel
 The list of mandatory status codes supported in electronic invoicing for Microsoft Dynamics 365 Finance.
 
 | Code | Status | Requirement | Description |
-|------------|------------------|-----------------------------------|---------------------------------|
+| ------------ | ------------------ | ----------------------------------- | --------------------------------- |
 | 200 | Deposited | **Mandatory** | An e-invoice is transmitted to the PA, which certifies that the invoice is validated and compliant. |
 | 210 | Refused | **Mandatory** | The recipient refuses the invoice. |
 | 212 | Payment received | **Mandatory** | The invoice is fully paid by the recipient. |
@@ -667,20 +680,20 @@ The list of mandatory status codes supported in electronic invoicing for Microso
 The following configurable electronic document properties are used during the generation of electronic invoices XML files.
 
 | Type | Applicability | Description |
-|------------|------------------|----------------------------------|
+| ------------ | ------------------ | ---------------------------------- |
 | **CompanyEndpointType** | Legal entities | Defines the code of the electronic address *scheme* for **sellers**. If you set this property, it overwrites the default 0225 value. |
 | **CustomerEndpointType** | Customers | Defines the code of the electronic address *scheme* for **buyers**. If you set this property, it overwrites the default 0225 value. |
 | **SellerElectronicAddress** | Legal entities | Defines the electronic address for **sellers**. It has the highest priority and overwrites any other electronic address value. |
 | **BuyerElectronicAddress** | Customers | Defines the electronic address for **buyers**. It has the highest priority and overwrites any other electronic address value. |
-| **#PMD#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment/settlement information.|
-| **#PMT#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment instructions.|
-| **#AAB#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment terms.|
-| **#ADN#** | Customers | Optional note prefix determining buyers for B2G communication.|
+| **#PMD#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment/settlement information. |
+| **#PMT#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment instructions. |
+| **#AAB#** | Legal entities <br> Customers <br> Project invoices | Project invoices mandatory note prefix about payment terms. |
+| **#ADN#** | Customers | Optional note prefix determining buyers for B2G communication. |
 | **ElectronicAddressSuffix** | Legal entities | If you set any non-empty value for this parameter, the Buyer's electronic address is constructed as **SIREN_SIRET_BranchID**. Otherwise, only the Branch ID is used as the whole electronic address. |
 
 ### <a id="Tutorial"></a>Configuration tutorial video
 
-Watch the tutorial video about the configuration of Frecn electronic invoicing in Dynamics 365 Finance. 
+Watch the tutorial video about the configuration of Frecn electronic invoicing in Dynamics 365 Finance.
 > [!VIDEO 848427f7-6557-451b-9e80-0d8cf891aea9]
 
 ## More information
