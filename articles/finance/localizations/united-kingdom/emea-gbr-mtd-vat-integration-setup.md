@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/16/2026
+ms.date: 08/06/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-07-30
@@ -97,11 +97,16 @@ Application-specific parameters let users influence the collection of tax transa
 
 | Result value | Calculation that the result value is used in | Default setup of the classifier value |
 |--------------|----------------------------------------------|---------------------------------------|
-| VATDue       | <ul><li>Tax amount from the **vatDueSales** box.</li><li>Tax base amount from the **totalValueSalesExVAT** box.</li><li>Tax base amount from the **totalValueGoodsSuppliedExVAT** box. In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country or region type of the sales tax code is set to **EU**.</li></ul> | <ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
-| VATDueEC     | <ul><li>Tax amount from the **vatDueAcquisitions** box and tax base amount from the **totalAcquisitionsExVAT** box. In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country/region type of the sales tax code is set to **EU**.</li><li>Tax amount from the **vatReclaimedCurrPeriod** box.</li><li>Tax base amount from the **totalValuePurchasesExVAT** box.</li></ul> | <ul><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
-| ECSupplies   | <ul><li>Tax base amount from the **totalValueSalesExVAT** box.</li><li>Tax base amount from the **totalValueGoodsSuppliedExVAT** box. In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country/region type of the sales tax code is set to **EU**.</li></ul> | <ul><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul> |
-| VATReclaimed | <ul><li>Deductible sales tax amount from the **vatReclaimedCurrPeriod** box.</li><li>Tax base amount from the **totalValuePurchasesExVAT** box.</li><li>Tax amount from the **vatDueAcquisitions** box. In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country/region type of the sales tax code is set to **EU**.</li></ul> | <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li></ul> |
+| VATDue       | <ul><li>Tax amount from the **vatDueSales** box (Box 1).</li><li>Tax base amount from the **totalValueSalesExVAT** box (Box 6).</li><li>Tax base amount from the **totalValueGoodsSuppliedExVAT** box (Box 8). In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country or region type of the sales tax code is set to **EU**.</li></ul> | <ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
+| VATDueEC     | <ul><li>Tax amount from the **vatDueAcquisitions** box (Box 2) and tax base amount from the **totalAcquisitionsExVAT** box (Box 9). In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country/region type of the sales tax code is set to **EU**.</li><li>Tax amount from the **vatReclaimedCurrPeriod** box (Box 4).</li><li>Tax base amount from the **totalValuePurchasesExVAT** box (Box 7).</li></ul> | <ul><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
+| ECSupplies   | <ul><li>Tax base amount from the **totalValueSalesExVAT** box (Box 6).</li><li>Tax base amount from the **totalValueGoodsSuppliedExVAT** box (Box 8). In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country/region type of the sales tax code is set to **EU**.</li></ul> | <ul><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul> |
+| VATReclaimed | <ul><li>Deductible sales tax amount from the **vatReclaimedCurrPeriod** box (Box 4).</li><li>Tax base amount from the **totalValuePurchasesExVAT** box (Box 7).</li><li>Tax amount from the **vatDueAcquisitions** box (Box 2). In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country/region type of the sales tax code is set to **EU**.</li></ul> | <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li></ul> |
+| ReverseCharge</br> *(available in format version version 32.32 or later)* | <ul><li>Tax amount from the **vatDueSales** box (Box 1).</li><li>Tax base amount from the **totalValueSalesExVAT** box (Box 6).</li></ul> | <ul><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
+| PVA </br> *(available in format version version 32.32 or later)* | <ul><li>Tax amount from the **vatDueSales** box (Box 1).</li><li>**Not reported** in the **totalValueSalesExVAT** box (Box 6).</li></ul> | <ul><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
 | Other        | Use the **Not blank** value for this result, and set it up at the end of your list of result values. | Not blank |
+
+>[!NOTE]
+> **ReverseCharge** result value reports in Box 1 and Box 6. **PVA** (Postponed VAT Accounting ) result value reports in Box 1 only, and is deliberately excluded from Box 6. Reverse-charge and PVA transactions are distinguished by the sales tax code that you map to each result value, not by the classifier alone. Map the sales tax codes that you use for the negative reverse-charge leg to ReverseCharge, and the sales tax codes that you use for postponed VAT accounting to PVA.
 
 For each value, users can define a set of sales tax codes together with a classifier that is associated with the direction of the tax transaction and the credit note identifier. The following table provides a definition of this classifier.
 
@@ -161,6 +166,9 @@ When your setup of **ReportFieldLookup** for the **VAT Declaration JSON (UK)** f
 > - If you want to generate the VAT declaration for the United Kingdom from multiple legal entities in Finance, set up **ReportFieldLookup** for each legal entity. To replicate the application-specific parameters from one legal entity to multiple, use the **Replicate** button on the Action pane of the **Application specific parameters** page.
 > - The setup of **ReportFieldLookup** is mandatory for all legal entities that report VAT as a VAT group.
 
+>[!TIP]
+> The conditions of the **ReportFieldLookup** application-specific parameter are evaluated in the order of their line numbers, and the system applies the first condition whose criteria a transaction matches. The result values that are delivered in the sample setup use the *Not blank* value in the tax code column, which matches any tax code. Therefore, when you add the **ReverseCharge** and **PVA** conditions, place them at the top of the list, as line 1, line 2, line 3, and so on, before all the lines that use a *Not blank* tax code. On these top lines, specify the exact tax codes that you use for the reverse charge and PVA tax transactions. If you add the **ReverseCharge** and **PVA** lines below the *Not blank* lines, the *Not blank* conditions match first, and your reverse charge and PVA transactions are never classified by the new result values.
+
 ## <a id="headers"></a>Set up application-specific parameters for MTD VAT web request headers format
 
 [By law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/), you must submit header data for the MTD VAT application programming interfaces (APIs) in the United Kingdom. When you use the MTD VAT APIs, MTD-compatible software must submit HTTP fraud prevention headers that include the public IP address of the client and the public IP address of the server.
@@ -178,7 +186,7 @@ To set up the **ExternalServiceEndpoints\_LOOKUP** application-specific paramete
 1. On the **Conditions** FastTab, select **Add** to add another line.
 1. In the **Lookup result** field, select **Gov-Vendor-Public-IP**. In the **ExternalServiceEndpoint** field, specify the HTTPS address of the external web service that the system calls when a request is initiated to HMRC's MTD VAT API to collect the public IP address of the server. The length of this field's value is limited to 60 characters. Only HTTPS URLs are supported.
 
-    The format for the Simple Traversal of User Datagram Protocol (UDP) through network address translation (NAT) server (STUN server) for Web Real-Time Communication (WebRTC) is just the STUN server address. When the endpoint doesn't start with **https://**, the system uses it as a STUN server.
+    The format for the Simple Traversal of User Datagram Protocol (UDP) through network address translation (NAT) server (STUN server) for Web Real-Time Communication (WebRTC) is just the STUN server address. When the endpoint doesn't start with `https://`, the system uses it as a STUN server.
 
 1. Optional: In the **Regex** field, specify a regular expression that's specific to the external web service that you specified in the **ExternalServiceEndpoint** field, and that enables the IP address in IPv4 or IPv6 format to be extracted from the response of the web service. The length of this field's value is limited to 60 characters.
 
@@ -431,7 +439,7 @@ For more information, see [Install the add-in for Electronic invoicing microserv
 
 To enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps:
 
-1. Go to **Workspaces** \> **Feature management**.
+1. Go to **Workspaces** > **Feature management**.
 1. In the list of features, search for **Security enhancements in UK MTD VAT integration (cloud-based deployments only)**.
 1. Select **Enable now**.
 
@@ -439,7 +447,7 @@ To enable the **Security enhancements in UK MTD VAT integration (cloud-based dep
 >
 > - This feature is for companies that use direct integration of their **cloud-based** Finance instance with MTD VAT APIs of HMRC.
 > - When you enable this feature, your **UK MTD VAT TEST** and **UK MTD VAT return** electronic messaging processing automatically updates to enhance the security of your Finance integration for direct submission of VAT returns for your UK VAT registration.
-> - The following actions of the **Web service** type changed to the **Executable class** type: Retrieve VAT obligations, Test retrieve VAT obligations, Submit VAT return, Test submit VAT return, Request VAT liabilities, and Request VAT payments.
+> - The following actions of the **Web service** type change to the **Executable class** type: Retrieve VAT obligations, Test retrieve VAT obligations, Submit VAT return, Test submit VAT return, Request VAT liabilities, and Request VAT payments.
 > - After you enable this feature, you can't disable it.
 
 If the status of the  feature shows as unavailable (error), you might not meet the prerequisites. If you meet the prerequisites, but the feature is still unavailable, contact customer support.
