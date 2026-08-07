@@ -39,5 +39,4 @@ Because the app is connected to Supply Chain Management and the supplier portal,
 - [Global vendor management overview](supplier-engagement-global-vendors-overview.md)
 - [Manage local vendors](supplier-engagement-manage-local-vendors.md)
 - [Global and local vendor holds](supplier-engagement-vendor-holds.md)
-- [Dashboards](supplier-engagement-dashboards.md)
 - [Supplier Engagement overview](supplier-engagement-overview.md)

@@ -2673,6 +2673,26 @@
             href: supplier-engagement/supplier-engagement-dashboards.md
         - name: Work with Supplier Engagement data in Supply Chain Management
           href: supplier-engagement/supplier-engagement-data-in-scm.md
+        - name: How vendors work with the portal
+          items:
+          - name: Supplier portal overview
+            href: supplier-engagement/supplier-engagement-portal-overview.md
+          - name: Landing page and vendor onboarding
+            href: supplier-engagement/supplier-engagement-portal-landing.md
+          - name: Home page
+            href: supplier-engagement/supplier-engagement-portal-home-page.md
+          - name: Manage vendor details, local vendors, and users
+            href: supplier-engagement/supplier-engagement-portal-vendor-details.md
+          - name: User profile
+            href: supplier-engagement/supplier-engagement-portal-user-profile.md
+          - name: View and respond to RFQs
+            href: supplier-engagement/supplier-engagement-portal-request-quotation.md
+          - name: View and confirm purchase orders
+            href: supplier-engagement/supplier-engagement-portal-purchase-orders.md
+          - name: View and create invoices
+            href: supplier-engagement/supplier-engagement-portal-invoices.md
+          - name: View consignment details
+            href: supplier-engagement/supplier-engagement-portal-consignment.md
       - name: Integrate with contract lifecycle management systems
         items:
         - name: Contract lifecycle management integration overview
