@@ -4,7 +4,7 @@ description: Learn how to migrate from Warehouse Management mobile application f
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 05/20/2026
+ms.date: 08/07/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -159,7 +159,7 @@ The following subsections summarize the key new features and improvements that a
 V4 provides improved camera scanning capabilities. Here are some examples:
 
 - **Faster scanning** – Scan speed and accuracy are dramatically improved.
-- **Expanded bar code support** – The app now supports a wider range of bar code formats. Learn more in [Scan bar codes using a camera in the Warehouse Management mobile app](scan-bar-codes-using-a-camera.md).
+- **Expanded bar code support** – The app now supports a wider range of bar code formats. As of version 4.1.5, camera scanning also reads GS1 DataBar, GS1 DataBar Limited, GS1 DataBar Expanded, Micro QR Code, Micro PDF417, and ITF-14 on both Android and iOS. On iOS, it also reads MSI Plessey. Learn more in [Scan bar codes using a camera in the Warehouse Management mobile app](scan-bar-codes-using-a-camera.md).
 - **Multiple bar code support** – Scan multiple bar codes in a single operation.
 - **Hardware independence** – There's less dependency on physical bar code scanners in environments where camera scanning is viable.
 

@@ -108,14 +108,8 @@ Together, these features support informed supplier decisions throughout the rela
 
 - [Create a global vendor](supplier-engagement-create-global-vendor.md)
 - [Manage global vendor information](supplier-engagement-global-vendor-info.md)
-- [Detect and manage duplicate global vendors](supplier-engagement-duplicate-global-vendors.md)
-- [Manage global vendor capabilities](supplier-engagement-global-vendor-capabilities.md)
-- [Manage certificates](supplier-engagement-manage-certificates.md)
-- [Global vendor contacts](supplier-engagement-global-vendor-contacts.md)
 - [Global vendor onboarding lifecycle](supplier-engagement-global-vendor-lifecycle.md)
-- [Global vendor feedback](supplier-engagement-global-vendor-feedback.md)
 - [Risk management and corrective actions](supplier-engagement-risk-corrective-actions.md)
-- [Manage activities](supplier-engagement-activities.md)
 - [Work with the Supplier Engagement app](supplier-engagement-app-overview.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

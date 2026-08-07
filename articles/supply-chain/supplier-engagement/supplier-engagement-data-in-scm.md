@@ -75,6 +75,5 @@ Learn more in [Risk management and corrective actions](supplier-engagement-risk-
 - [Supplier Engagement overview](supplier-engagement-overview.md)
 - [Work with the Supplier Engagement app](supplier-engagement-app-overview.md)
 - [Global vendor management overview](supplier-engagement-global-vendors-overview.md)
-- [Manage certificates](supplier-engagement-manage-certificates.md)
 - [Risk management and corrective actions](supplier-engagement-risk-corrective-actions.md)
 - [Synchronize data between Supplier Engagement and Supply Chain Management](supplier-engagement-data-sync.md)

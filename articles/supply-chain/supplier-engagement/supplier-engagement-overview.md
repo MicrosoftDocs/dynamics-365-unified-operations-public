@@ -158,13 +158,9 @@ Learn more in [Global vendor onboarding lifecycle](supplier-engagement-global-ve
 ## Related information
 
 - [How Supplier Engagement compares to the vendor collaboration interface](supplier-engagement-comparison.md)
-- [Synchronize data between Supplier Engagement and Supply Chain Management](supplier-engagement-data-sync.md)
 - [Supplier Engagement deployment overview, prerequisites, and licensing](deploy-overview.md)
 - [Configure the Supplier Engagement app overview](configure-app-overview.md)
 - [Manage users of the Supplier Engagement app and supplier portal](supplier-engagement-manage-users.md)
-- [Manage Supplier Engagement app users](supplier-engagement-app-users.md)
-- [Manage supplier portal users](supplier-engagement-portal-users.md)
-- [Personalize the supplier portal](personalize-portal-overview.md)
 - [Work with the Supplier Engagement app](supplier-engagement-app-overview.md)
 - [Work with Supplier Engagement data in Supply Chain Management](supplier-engagement-data-in-scm.md)
 
