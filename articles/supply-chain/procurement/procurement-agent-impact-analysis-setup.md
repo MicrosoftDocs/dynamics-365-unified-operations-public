@@ -4,10 +4,13 @@ description: Learn how to configure features, assign permissions, and activate P
 author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: AppCopilotAgentWorkspace
 ms.topic: how-to
-ms.date: 07/20/2026
-ms.custom:
+ms.date: 08/10/2026
+ms.update-cycle: 180-days
+ms.collection:
+  - bap-ai-copilot
+ms.custom: 
   - bap-template
 ---
 
@@ -19,18 +22,22 @@ ms.custom:
 
 This article describes how to set up impact analysis together with supplier communications or as a standalone Procurement Agent capability for use with the vendor collaboration interface and/or manual simulation.
 
+> [!IMPORTANT]
+> This article describes the manual process for setting up the impact analysis features of the Procurement Agent. A setup wizard is also available as an alternative to the procedure described here. The wizard provides a guided experience for setting up an agent and automatically configures many of the required settings for you. For instructions on how to run the wizard, go to [Use the agent deployment wizard to set up impact analysis features](procurement-agent-impact-analysis-setup-wizard.md). You don't need to follow the instructions provided in this article if you have already run the wizard.
+
 ## If you're already using supplier communications
 
-If you're already using the supplier communications capabilities of the Procurement Agent (previously known as the Supplier Communications Agent), you don't need to follow all of the steps in this article to add the impact analysis features because you've already completed most of the required steps. Just do the following steps:
+If you're already using the supplier communications capabilities of the Procurement Agent (previously known as the Supplier Communications Agent), you don't need to follow all of the steps in this article to add the impact analysis features because you already completed most of the required steps. Just complete the following steps:
 
-- Make sure you're running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 build 10.39.2117 or later (make sure you're running the newest available build).
-- Make sure you have the following installed:
+1. Ensure that you're running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 build 10.39.2117 or later (make sure you're running the newest available build).
+1. Ensure that you have the following installed:
     - *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03413.1 or later
     - *Copilot for finance and operations apps* version 10.0.03473.2 or later
-- Make sure that the following Microsoft Copilot Studio agent is published in that environment: *Procurement Agent - Impact Analysis*.
-- Turn on the *(Production-ready preview) Procurement Agent - Impact analysis* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the feature isn't shown on your system.
-- Add the following security user role: *Procurement User Role (Preview)*.
-- [Activate the triggering Power Automate flows for impact analysis](#impact-analysis-trigger-flows), as described later in this article.
+1. Ensure that the following Microsoft Copilot Studio agent is published in your environment: *Procurement Agent - Impact Analysis*.
+1. Turn on the *(Production-ready preview) Procurement Agent - Impact analysis* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the feature isn't shown on your system.
+1. Add the following security user role: *Procurement User Role (Preview)*.
+1. [Activate the triggering Power Automate flows for impact analysis](#impact-analysis-trigger-flows), as described later in this article.
+1. Create a configuration for impact analysis in Agent Management by selecting the *Show impact of changes in purchase orders - Impact analysis - Procurement Agent* tile in the Library. Then open the **Source** dropdown list and select *Vendor emails*.
 
 ## If you will use impact analysis without supplier communications
 
@@ -175,3 +182,16 @@ Next, activate the specific impact analysis Power Automate flow.
 1. On the objects pane, select **Cloud Flows**.
 1. Select the cloud flow with the **Display name** of *Procurement Agent - Impact analysis (Preview)*.
 1. Select **Turn on** in the top navigation bar.
+
+## Configure the impact analysis to run on changes received through the Vendor Collaboration Module
+
+To enable impact analysis to run based on change requests coming through the vendor collaboration interface ([Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md)), follow these steps:
+
+1. Sign in to the Supply Chain Management environment as a user who has permissions to manage the agent configuration.
+1. Go to **Agents** > **Agents**.
+1. Open the **Library** tab.
+1. Find the *Show impact of changes in purchase orders - Impact analysis - Procurement Agent* tile and select **Select** for that tile.
+1. Open the **Source** dropdown list and select one or both of the following options:
+    - *Vendor emails* – Select this option if you're using supplier communications features of the Procurement Agent to receive and classify emails from vendors.
+    - *Vendor collaboration module* – Select this option if you're using the vendor collaboration interface to receive and manage vendor responses.
+1. Select **Activate**.

@@ -4,10 +4,13 @@ description: Simulate purchase order changes and review their impact in real tim
 author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: PurchTable, PurchCopilotDMAImpactAnalysisDetails
 ms.topic: how-to
-ms.date: 04/24/2026
-ms.custom:
+ms.date: 08/10/2026
+ms.update-cycle: 180-days
+ms.collection:
+  - bap-ai-copilot
+ms.custom: 
   - bap-template
 ---
 
@@ -22,7 +25,7 @@ The impact simulation capability enables purchasers and planners to test the imp
 To run an impact simulation, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All Purchase orders** and select a purchase order.
-2. On the Action Pane, open the **Purchase Order** tab and, from the **Impact simulation** group, select **Simulate purchase order changes**.
+1. On the Action Pane, open the **Purchase Order** tab and, from the **Impact simulation** group, select **Simulate purchase order changes**.
 1. Modify the purchase order details for the simulation by completing any or all of the following steps:
     - In the **Purchase order heading** section, select a new **Confirmed receipt date** to change the date for all purchase order lines.
     - In the **Purchase order lines** section, select a new **Confirmed receipt date** to change the date for one or more specific purchase order lines.

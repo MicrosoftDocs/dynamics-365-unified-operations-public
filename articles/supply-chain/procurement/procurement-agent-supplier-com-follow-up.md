@@ -4,14 +4,14 @@ description: Learn how to use the Procurement Agent to identify unconfirmed or d
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form: PurchCopilotFollowupTaskResults, PurchOrderProcessReceiptsWorkspace, AppCopilotAgentWorkspace, SysEmailParameters, VendTable, LogisticsLocationRole
 ms.topic: how-to
-ms.date: 07/01/2026
-ms.custom:
+ms.date: 08/10/2026
+ms.update-cycle: 180-days
+ms.collection:
+  - bap-ai-copilot
+ms.custom: 
   - bap-template
-  - ai-gen-docs-bap
-  - ai-gen-description
-  - ai-seo-date:04/24/2025
 ---
 
 # Follow up on purchase orders by using the Procurement Agent (production-ready preview)
@@ -50,8 +50,8 @@ The following procedure explains how to set up agent tasks to find purchase orde
 
 1. Open the **(Preview) Follow-up emails** page by following one of these steps:
 
-    - Go to **Procurement and Sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Follow-up emails**.
-    - Open the **Purchase order receipt and follow-up** workspace. A tile named **(Preview) Follow-up emails** indicates the number of emails that require review. Select the tile.
+    - Go to **Procurement and Sourcing** \> **(Preview) Procurement Agent - Supplier communications** \> **(Preview) Follow-up emails**.
+    - Go to **Procurement and sourcing** \> **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace. A tile named **(Preview) Follow-up emails** indicates the number of emails that require review. Select the tile.
 
 1. Follow one of these steps:
 
@@ -141,7 +141,7 @@ To configure the email address of any user (including the agent identity user):
 
 To choose the recipient of the follow-up emails for a vendor, follow these steps:
 
-1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Find and open the target vendor from the list.
 1. The **Contact information** FastTab lists various ways that you can contact the selected vendor and lets you edit the list. Use the settings here to configure the email address the agent should use when sending follow-up emails to this vendor. The agent chooses which contact line to use as follows:
     - If a contact line is set up as the priority email address for purchase order communications, the agent always uses that email address for this vendor, regardless of whether the agent task is set up to send emails per purchase order or grouped per vendor. For details about how to set up this address, see [Set up the priority purchase order communications email address for a vendor](#priority-email).
@@ -175,7 +175,7 @@ As described in the previous section, the agent always uses the contact line tha
 
 ## Review and send drafted emails
 
-To review the emails that were previously created for the various configurations, go to **Procurement and Sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Follow-up emails**. The configurations appear on the left, and the emails for each configuration appear on the right.
+To review the emails that were previously created for the various configurations, go to **Procurement and Sourcing** \> **(Preview) Procurement Agent - Supplier communications** \> **(Preview) Follow-up emails**. The configurations appear on the left, and the emails for each configuration appear on the right.
 
 Edit each message as required, and then select **Send** to send it to the vendor.
 
