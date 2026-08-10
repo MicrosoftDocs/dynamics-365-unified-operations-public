@@ -59,7 +59,9 @@ To create or edit a transformation profile, follow these steps:
     - **Name** – Enter a name for the new profile.
     - **Description** – Enter a short description of the profile.
     - **Owner** – Select the user account that owns the profile.
-    - **Time Bucket** – Specify the time span to sum data by in the time series that this profile generates as output: *Daily*, *Weekly*, or *Monthly*. The shorter the time bucket, the more data points there will be on the x-axis. Select the time bucket that will give the required level of granularity.
+    - **Time Bucket** – Specify the time span to group source records by in the time series that this profile generates as output: *Daily*, *Weekly*, or *Monthly*. The shorter the time bucket, the more data points there are on the x-axis. Select the time bucket that gives the required level of granularity.
+    - **Precision** – Specify the rounding precision for the output values. For example, select *0.01* to keep two decimal places. The default value is *0.01*.
+    - **Aggregation Method** – Select how the profile combines multiple source records that have the same dimension values and belong to the same time bucket. The default method is *Sum*. Learn more about the options available here and how they work in [Aggregation methods](#aggregation-methods).
 
 1. Select **Next**.
 1. On the **Configure transformation** page, select a table, and then map the columns of that table and its related tables to transform the data into a timeline.
@@ -87,3 +89,31 @@ To create or edit a transformation profile, follow these steps:
 1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. The profile is now saved, but it hasn't yet run. If you're ready to create a time series now, select **Run** on the Action Pane.
+
+## Aggregation methods
+
+Each transformation profile has an **Aggregation method** setting that determines how the profile combines multiple source records that have the same dimension values and belong to the same time bucket. It groups the relevant records in each bucket and applies the selected aggregation method to the measure column to produce one output value for the group. The profile applies its **Precision** setting after it calculates the value.
+
+For example, suppose that the following records belong to the same product dimension and monthly time bucket:
+
+| Date | Measure value |
+|---|---|
+| January 1 | 40 |
+| January 10 | 20 |
+| January 20 | 80 |
+| January 28 | 60 |
+
+The following table shows the result of each aggregation method.
+
+| Aggregation method | How the output value is calculated | Result in the example | Common use |
+|---|---|---|---|
+| *Sum* | Adds all measure values in the bucket. | 200 | Additive values, such as units sold or ordered. |
+| *Minimum* | Uses the smallest measure value in the bucket. | 20 | The lowest value recorded during a period. |
+| *Maximum* | Uses the largest measure value in the bucket. | 80 | The highest or peak value recorded during a period. |
+| *Average* | Calculates the arithmetic mean of the measure values in the bucket. | 50 | Rates, prices, or measurements where a total wouldn't be meaningful. |
+| *First* | Uses the measure value from the record with the earliest timestamp in the bucket. | 40 | The opening value or balance for a period. |
+| *Last* | Uses the measure value from the record with the latest timestamp in the bucket. | 60 | The closing value or balance for a period. |
+| *Count* | Counts the source records in the bucket. The measure values aren't used in the calculation. | 4 | The number of transactions, orders, or events. |
+
+> [!NOTE]
+> *Sum* is the default method and preserves the behavior of transformation profiles that were created before other aggregation methods were available. *First* and *Last* are based on the timestamp of each record, not the order in which records were imported or displayed.
