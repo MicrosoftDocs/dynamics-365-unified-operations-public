@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 07/20/2026
+ms.date: 08/10/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -62,9 +62,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.47 PQU-5 | June 3, 2026 | June 3, 2026 to June 27, 2026| Completed |
 | 10.0.47 PQU-6 | June 17, 2026 | June 17, 2026 to July 11, 2026| Completed |
 | 10.0.47 PQU-7 | July 1, 2026 | July 1, 2026 to July 25, 2026| Completed |
-| 10.0.47 PQU-8 | July 15, 2026 | July 15, 2026 to August 8, 2026| In-Progress |
+| 10.0.47 PQU-8 | July 15, 2026 | July 15, 2026 to August 8, 2026| Completed |
 | 10.0.47 PQU-9 | July 29, 2026 | July 29, 2026 to August 22, 2026| In-Progress |
-| 10.0.47 PQU-10 | August 12, 2026 | August 12, 2026 to September 5, 2026| Not Started |
+| 10.0.47 PQU-10 | August 12, 2026 | August 12, 2026 to September 5, 2026| In-Progress |
 | 10.0.47 PQU-11 | August 26, 2026 | August 26, 2026 to September 19, 2026| Not Started |
 | 10.0.47 PQU-12 | September 9, 2026 | September 9, 2026 to October 3, 2026| Not Started |
 | 10.0.47 PQU-13 | September 23, 2026 | September 23, 2026 to October 17, 2026| Not Started |
@@ -89,6 +89,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.48 PQU-15 | January 20, 2027 | January 20, 2027 to February 13, 2027| Not Started |
 | 10.0.48 PQU-16 | February 3, 2027 | February 3, 2027 to February 27, 2027| Not Started |
 | 10.0.48 PQU-17 | February 24, 2027 | February 24, 2027 to March 20, 2027| Not Started |
+| 10.0.49 PQU-1 | October 7, 2026 | October 7, 2026 to October 31, 2026 | Not Started |
+| 10.0.49 PQU-2 | October 21, 2026 | October 21, 2026 to November 14, 2026 | Not Started |
+| 10.0.49 PQU-3 | November 4, 2026 | November 4, 2026 to November 28, 2026 | Not Started |
+| 10.0.49 PQU-4 | November 18, 2026 | November 18, 2026 to December 12, 2026 | Not Started |
+| 10.0.49 PQU-5 | December 2, 2026 | December 2, 2026 to December 26, 2026 | Not Started |
+| 10.0.49 PQU-6 | December 16, 2026 | December 16, 2026 to January 9, 2027 | Not Started |
+| 10.0.49 PQU-7 | December 30, 2026 | December 30, 2026 to January 23, 2027 | Not Started |
+| 10.0.49 PQU-8 | January 13, 2027 | January 13, 2027 to February 6, 2027 | Not Started |
+| 10.0.49 PQU-9 | January 27, 2027 | January 27, 2027 to February 20, 2027 | Not Started |
+| 10.0.49 PQU-10 | February 10, 2027 | February 10, 2027 to March 6, 2027 | Not Started |
+| 10.0.49 PQU-11 | February 24, 2027 | February 24, 2027 to March 20, 2027 | Not Started |
+| 10.0.49 PQU-12 | March 10, 2027 | March 10, 2027 to April 3, 2027 | Not Started |
+| 10.0.49 PQU-13 | March 24, 2027 | March 24, 2027 to April 17, 2027 | Not Started |
+| 10.0.49 PQU-14 | April 7, 2027 | April 7, 2027 to May 1, 2027 | Not Started |
+| 10.0.49 PQU-15 | April 21, 2027 | April 21, 2027 to May 15, 2027 | Not Started |
+| 10.0.49 PQU-16 | May 5, 2027 | May 5, 2027 to May 29, 2027 | Not Started |
+| 10.0.49 PQU-17 | May 26, 2027 | May 26, 2027 to June 19, 2027 | Not Started |
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
@@ -112,24 +129,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | August 17 to August 20, 2026 | August 29 to August 30, 2026 |
 | Station 6 | August 18 to August 21, 2026 | August 29 to August 30, 2026 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-8 train schedule
-
-**App version: 10.0.2527.160**
-
-**Platform version: 7.0.7858.134**
-
-**Unified Environment Provisioning Application Version: 10.0.47.9**
-
-| Stations | Upcoming sandbox schedule | Upcoming production schedule |
-|---|---|---|
-| Station 1 | July 15 to July 18, 2026 | NA |
-| Station 2 | July 20 to July 23, 2026 | July 25 to July 26, 2026 |
-| Station 3 | July 20 to July 23, 2026 | July 25 to July 26, 2026 |
-| Station 4 | July 27 to July 30, 2026 | August 1 to August 2, 2026 |
-| Station 5 | August 3 to August 6, 2026 | August 8 to August 9, 2026 |
-| Station 6 | August 3 to August 6, 2026 | August 8 to August 9, 2026 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-9 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-9 train schedule
 
 **App version: 10.0.2527.174**
 
@@ -145,6 +145,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | August 10 to August 13, 2026 | August 15 to August 16, 2026 |
 | Station 5 | August 17 to August 20, 2026 | August 22 to August 23, 2026 |
 | Station 6 | August 17 to August 20, 2026 | August 22 to August 23, 2026 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-10 train schedule
+
+**App version: 10.0.2527.187**
+
+**Platform version: 7.0.7858.152**
+
+**Unified Environment Provisioning Application Version: 10.0.47.11**
+
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
+|---|---|---|
+| Station 1 | August 12 to August 15, 2026 | NA |
+| Station 2 | August 17 to August 20, 2026 | August 22 to August 23, 2026 |
+| Station 3 | August 17 to August 20, 2026 | August 22 to August 23, 2026 |
+| Station 4 | August 24 to August 27, 2026 | August 29 to August 30, 2026 |
+| Station 5 | August 31 to September 3, 2026 | September 5 to September 6, 2026 |
+| Station 6 | August 31 to September 3, 2026 | September 5 to September 6, 2026 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.48 Release-2 train schedule
 

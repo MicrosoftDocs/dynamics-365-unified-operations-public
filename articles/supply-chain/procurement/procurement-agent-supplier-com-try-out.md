@@ -4,10 +4,13 @@ description: Learn how to try out the updates from vendors (reading vendor email
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: PurchCopilotInboundEmailWorkspace, ScrollableContentGroup
 ms.topic: how-to
-ms.date: 04/24/2026
-ms.custom:
+ms.date: 08/10/2026
+ms.update-cycle: 180-days
+ms.collection:
+  - bap-ai-copilot
+ms.custom: 
   - bap-template
 ---
 

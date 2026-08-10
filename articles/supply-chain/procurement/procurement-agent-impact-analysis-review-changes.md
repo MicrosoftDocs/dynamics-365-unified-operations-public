@@ -4,10 +4,13 @@ description: Purchase order impact analysis helps you review and respond to vend
 author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: PurchOrderProcessReceiptsWorkspace, PurchCopilotInboundEmailWorkspace, PurchOrderMaintainWorkspace
 ms.topic: how-to
-ms.date: 04/24/2026
-ms.custom:
+ms.date: 08/10/2026
+ms.update-cycle: 180-days
+ms.collection:
+  - bap-ai-copilot
+ms.custom: 
   - bap-template
 ---
 
@@ -18,21 +21,6 @@ ms.custom:
 <!-- KFM: Preview until further notice -->
 
 Impact analysis can automatically run based on supplier changes received through emails or the vendor collaboration interface. Whichever options you configure also show the results of the impact analysis for review directly in Dynamics 365 Supply Chain Management, so purchasers can decide how to respond in their existing workflow.
-
-## Set up sources that automatically trigger impact analysis
-
-To use impact analysis on incoming change requests received through emails or the vendor collaboration interface, first enable the relevant sources. Learn more in [Supplier communications features of the Procurement Agent (production-ready preview)](procurement-agent-supplier-com-overview.md) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
-
-To enable impact analysis to run based on change requests coming through one or both sources, follow these steps:
-
-1. Sign in to the Supply Chain Management environment as a user who has permissions to manage the agent configuration.
-1. Go to **Agents** \> **Agents**.
-1. Open the **Library** tab.
-1. Find the *Show impact of changes in purchase orders - Impact analysis - Procurement Agent* tile and select **Select** for that tile.
-1. Open the **Source** dropdown list and select one or both of the following options:
-    - *Vendor emails* – Select this option if you're using supplier communications features of the Procurement Agent to receive and classify emails from vendors.
-    - *Vendor collaboration module* – Select this option if you're using the vendor collaboration interface to receive and manage vendor responses.
-1. Select **Activate**.
 
 ## Review changes received via email (supplier communications)
 
@@ -74,6 +62,8 @@ When vendors respond to purchase orders through the vendor collaboration interfa
 ## Impact analysis details page
 
 The **Impact analysis** page opens when you select **View details** from either the email-based workflow or the vendor collaboration workflow. This page shows all the downstream effects of the proposed change in one place. The **Impact analysis** page includes a summary of the impact, a detailed list of impacted orders, and a detailed list of inventory impacts, including a graph that shows projected inventory levels over time. The following subsections describe the various parts of the **Impact analysis** page.
+
+<!-- KFM: We should add the form code for the **Impact analysis** page to ms.search.form -->
 
 ### Filter and item information
 
