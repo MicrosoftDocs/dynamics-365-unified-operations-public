@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about proactive qualit
 author: najaidee
 ms.author: najaidee
 ms.topic: faq
-ms.date: 06/16/2026
+ms.date: 08/10/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -65,11 +65,10 @@ Follow these steps in the Power Platform Admin Center (PPAC):
 
    :::image type="content" source="../media/maintenance-settings-selection.png" alt-text="Screenshot of the Maintenance Settings option in the updates section.":::
 
-1. Choose your preferred days to receive PQUs.
+1. Choose your preferred days to receive PQUs by updating **Maintenance window days** under **Finance and Operations Maintenance Settings** section.
 
    :::image type="content" source="../media/maintenance-settings-day-selection.png" alt-text="Screenshot of the preferred day selection for receiving PQUs.":::
 
-1. Select Maintenance Cadence as "Every Update".
 1. Select **Save**.
 
    > [!NOTE]
