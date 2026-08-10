@@ -6,8 +6,11 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 04/24/2026
-ms.custom:
+ms.date: 08/10/2026
+ms.update-cycle: 180-days
+ms.collection:
+  - bap-ai-copilot
+ms.custom: 
   - bap-template
 ---
 

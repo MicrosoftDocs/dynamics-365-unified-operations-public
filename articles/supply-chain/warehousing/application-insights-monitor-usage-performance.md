@@ -4,7 +4,7 @@ description: The Supply Chain Management tenant emit telemetry data, which lets 
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 05/04/2026
+ms.date: 08/10/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -34,6 +34,47 @@ In Application Insights, telemetry data from Supply Chain Management tenants and
 
 - For Supply Chain Management tenant telemetry details, see the [WarehouseManagement.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseManagement.kql).
 - For Warehouse Management mobile app telemetry details, see the [WarehouseMobileApp.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseMobileApp.kql).
+
+## Analyze how long work takes in the mobile app (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+Warehouse Management mobile app version 4.1.5.0 and later emits telemetry that describes how long work takes in the app, rather than only how long the server takes to answer. Use this telemetry to find the steps where workers lose the most time, and to tell a slow server apart from a page that's simply hard to complete.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+### Time spent on each page
+
+Every request that the app sends to the server reports how long the worker spent on the page that the request replaces. The app splits this time into two separate measurements:
+
+- **Active time** – Time when the app is in the foreground and the worker can act on the page.
+- **Idle time** – Time when the app is in the background, or the device is locked or asleep.
+
+The app reports these measurements separately because a page that's left open on a locked device during a break otherwise looks the same as a page that a worker struggles to complete. Only the active time indicates that a page is hard to fill in.
+
+A page is new when its structure changes. The structure refers to the page layout and the set of fields and buttons on it. Retyping a value or correcting an entry doesn't start a new measurement because the worker is still completing the same step.
+
+### Completed operations
+
+The app reports a summary for each unit of work that a worker completes, such as a full putaway or a picking run, instead of a single page or request. Each summary covers the whole flow, from the moment the worker starts the operation until the server confirms it. The summary describes the following aspects of the flow:
+
+- How many pages the worker moved through and how many requests the app sent.
+- How many buttons the worker pressed and how often the worker had to open a dialog box to enter or edit a value.
+- How many error messages the server returned during the flow.
+- How the worker entered data, including how much of the flow the worker spent scanning with the camera compared to a dedicated scanner such as a ring scanner.
+- How the elapsed time divided between waiting for the server, filling in pages, and idle time.
+
+The app also reports operations that a worker abandons. These operations indicate how the flow ended, such as whether the worker canceled it or signed out. The app includes abandoned operations so that the data doesn't reflect only the flows that succeeded, which are the flows that are least likely to need attention.
+
+Because each summary covers a complete flow, you can compare the same operation across sites, shifts, and devices. You can see the effect of a configuration change on the time that the operation takes end to end.
+
+### Correlate app telemetry with server telemetry
+
+Mobile app events include the identifier of the server session that the worker signed in to. Because Supply Chain Management also records the identifier, you can join the events that the app emits to the corresponding server-side activity. You can follow a single worker's session across both.
+
+Use this identifier when the app reports a slow step, so you can determine whether the worker spent the time on the device or in Supply Chain Management. Keep the detailed diagnostic information in the server-side telemetry, and use the session identifier to find it, instead of increasing the volume of data that each device sends.
+
+For the field names that carry this data, and the app and Supply Chain Management versions that are required for each field, see the [WarehouseMobileApp.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseMobileApp.kql).
 
 ## View telemetry data in Application Insights
 
