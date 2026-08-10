@@ -78,6 +78,12 @@ This section describes the purpose of each type of forecast step. It also explai
 
 When you add a *Signal* step, the system automatically creates a parallel branch in your model and puts the step at the top of that branch. The initial branch always has an *Input* step at the top of it. Each branch can include any number of steps, but you must eventually combine the branches by using a *Forecast with signals* step.
 
+Learn more in [Forecast with signals (preview)](forecasts-with-signals.md).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+#### Signal step settings
+
 *Signal* steps have the following settings:
 
 - **Step name** – The specific name of the step. This name automatically matches the name of the time series.
@@ -86,8 +92,44 @@ When you add a *Signal* step, the system automatically creates a parallel branch
 - **Time series** – The time series that is added by the step. When you first set up a *Signal* step, the **Configure step** dialog box provides a button that lets you select the time series to add. After you add a time series, the dialog box shows the name of the time series and provides an **Edit** button that lets you change the time series. It also provides a **Filter** button that lets you set up filtering criteria based on fixed dates, relative dates, and/or field values.
 - **Time series version** – If the selected time series includes more than one version, you can select a specific version. By default, the latest (current) version is used.
 - **Fill missing values** – Specify whether the system should fill in placeholder values for time buckets if the input doesn't provide values. In most cases, you should enable this feature, because it helps produce better forecasts. In the current version, all missing values are set to *0* (zero).
+- **Fill missing values strategy** – Select the strategy that the system should use to enter values in empty time buckets. The next section describes the options available here and how they work.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+#### Signal fill strategies
+
+When the forecast is generated, Demand planning prepares each signal so that it has one value for each time bucket through the end of the forecast period. If a signal has no row for a time bucket, the system adds a temporary value according to the **Fill missing values strategy** setting on the *Signal* step.
+
+A missing value in this context means that a row is absent for a specific time bucket and combination of dimensions. For example, if a monthly signal has rows for January and March for the same product and warehouse, but no row for February, then February is a missing time bucket. This feature doesn't replace a blank value in a row that already exists.
+
+The system fills missing values separately for each combination of dimensions. The filled values are used only for the current forecast run. The source signal time series isn't changed.
+
+The following table describes the available strategies for filling missing values, how they work, and when to use them:
+
+| Strategy | How missing time buckets are filled | Example use |
+|---|---|---|
+| *Zeros* | Enter 0 (zero). This strategy is the default. | Use when a missing bucket means that no signal activity occurred, such as no promotion. |
+| *Forward fill* | Repeat the previous known value until a new value is available. | Use when the latest known value remains in effect, such as a price or rate. |
+| *Backward fill* | Use the next known value for earlier missing buckets. If no later value is available, repeat the last known value. | Use when the next observation best represents the preceding gap. |
+| *Linear interpolation* | Calculate evenly spaced values between the previous and next known values. If no later value is available, repeat the last known value. Linear interpolation treats each time bucket as one equal step; for example, each month is one step even though calendar months have different numbers of days. | Use for a continuous signal that normally changes gradually, such as temperature or an economic index. |
+
+> [!NOTE]
+> The available strategies depend on the version of Demand planning you're using. Earlier versions provide only the *Zeros* strategy.
+
+For example, suppose that a monthly signal has a value of 10 in January, no row in February, a value of 30 in March, and no row in April. The forecast period ends in April, and no later signal value is available. Each strategy prepares the signal as follows:
+
+| Strategy | January | February | March | April |
+|---|---|---|---|---|
+| *Zeros* | 10 | 0 | 30 | 0 |
+| *Forward fill* | 10 | 10 | 30 | 30 |
+| *Backward fill* | 10 | 30 | 30 | 30 |
+| *Linear interpolation* | 10 | 20 | 30 | 30 |
+
+The system applies the following rules when it fills a signal:
+
+- Filling starts with the first available value for each combination of dimensions. The system doesn't add values before that point.
+- Filling continues through the end of the forecast period. Therefore, the stored signal doesn't need to contain a row for every time bucket or an explicit row at the end of the forecast horizon.
+- Every combination of shared dimension values in the primary input must appear at least once in each signal. The system can't create an entirely missing combination of signal dimensions, and the forecast fails if a required combination has no signal data.
+- Each signal must contain at least one value on or before the end of the forecast period. If the entire signal starts after the forecast period ends, the forecast fails.
+- *Backward fill* and *Linear interpolation* can use the next known signal value even if that value occurs after the end of the forecast period. The later value helps calculate missing values through the forecast end date, but isn't included beyond the forecast horizon.
 
 ### Handle outliers steps
 
@@ -192,7 +234,9 @@ When you use the STL method to handle outliers, you must also set the **Select s
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
-*Forecast with signals* steps generate a forecast based on multiple input time series. They always use the XGBoost demand forecasting algorithm. Learn about this algorithm in [Demand forecasting algorithms](forecast-algorithm-types.md).
+*Forecast with signals* steps generate a forecast based on multiple input time series. Learn more about forecasting with signals in [Forecast with signals (preview)](forecasts-with-signals.md).
+
+*Forecast with signals* steps always use the XGBoost demand forecasting algorithm. Learn about this algorithm in [Demand forecasting algorithms](forecast-algorithm-types.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

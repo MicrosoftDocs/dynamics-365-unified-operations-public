@@ -28,7 +28,7 @@ Follow these steps to set up a forecast that includes both input and up to five 
 
 1. Create a new forecast profile as described in [Create and manage forecast profiles](forecast-profiles.md#create-profile).
 1. On the **Select a forecasting model preset** page, select *None*.
-1. After you create and save the profile, on the **Forecast model** tab, set up your model in the following way. (Learn more in [Design forecast models](design-forecast-models.md).)
+1. After you create and save the profile, on the **Forecast model** tab, set up your model in the following way. Learn more about how to create forecast models and how to use each type of forecast model step in [Design forecast models](design-forecast-models.md).
 
     1. Use an *Input* step to set up your primary time series.
     1. Add a *Signal* step to set up a signal time series in a parallel branch.
