@@ -4099,6 +4099,8 @@
             href: warehousing/item-consolidation-location-utilization.md
           - name: Work split
             href: warehousing/work-split.md
+          - name: Park warehouse work on cancel (preview)
+            href: warehousing/park-warehouse-work.md
           - name: Material handling equipment interface (MHAX)
             href: warehousing/mhax.md
       - name: The Warehouse Management mobile app
