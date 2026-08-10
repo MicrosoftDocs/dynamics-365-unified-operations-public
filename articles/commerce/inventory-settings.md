@@ -73,6 +73,24 @@ In the example in the following illustration, a cart shows an in-stock ("Availab
 
 :::image type="content" source="./media/cart-instock.png" alt-text="Screenshot of a cart module that has an in-stock message.":::
 
+## Guidance for choosing inventory display and messaging settings
+
+The optimal combination of inventory display and messaging settings depends on the nature of your products and your restocking cycle, not just your current stock levels.
+
+### Choose between hiding and moving out-of-stock products
+
+When a product goes out of stock, the right display behavior depends on whether new stock is expected and how soon. If a restock is imminent, moving the product to the end of the list is the more effective approach. Customers who are interested in that specific product can still find it, add it to their cart, and receive a notification when it becomes available. This approach also opens the door for direct customer inquiries, which can be converted into reservations or preorders. For example, a trade customer who requires 400 units of a building material can be handled outside the standard online flow. In this case, stock is reserved manually, and the system is updated accordingly when the order is confirmed.
+
+However, if no restock is planned, a product that remains visible at the bottom of the list creates a false expectation. Customers who notice it might wait for it to return instead of purchasing available alternatives. In this way, overall conversion is reduced. In this case, hiding the product entirely keeps the listing page focused on what can actually be purchased and redirects browsing traffic toward in-stock items.
+
+### Choose the right inventory range messaging
+
+Low-stock messages such as "Only a few left" can drive urgency and push customers toward faster purchase decisions. However, their effectiveness depends entirely on the product category.
+
+For unique or handmade products, where customers understand that stock is limited by nature, a low-stock message creates genuine urgency and encourages immediate purchases. For commodity or construction products, where customers expect consistent supply and often must purchase in large quantities, the same message can have the opposite effect. A buyer who requires 50 units and sees an "Only a few left" message is more likely to look for a supplier that seems more reliable than to place a partial order. In these categories, a low-stock message risks losing the customer entirely instead of accelerating the sale.
+
+Configure inventory range messages so that they match your product category and customer expectations, instead of applying a single setting across your entire catalog. This approach leads to more effective outcomes for both conversion and customer trust.
+
 ## Additional resources
 
 [Module library overview](starter-kit-overview.md)
