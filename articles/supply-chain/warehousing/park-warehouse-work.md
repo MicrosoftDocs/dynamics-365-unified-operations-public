@@ -1,8 +1,8 @@
 ---
 title: Park warehouse work on cancel (preview)
 description: Learn how to let warehouse workers park an in-progress work at a scanned location so that the next worker is guided back to it.
-author:
-ms.author:
+author: maxsoller
+ms.author: maxsoller
 ms.reviewer: kamaybac
 ms.search.form: InventLocation, WHSParameters, WHSWorkTable
 ms.topic: how-to
@@ -16,23 +16,21 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: preview until further notice -->
 
 Warehouse workers often have to leave a work unfinished because of a break, a shift change, or a change in operational priorities. Without park work, cancelling an in-progress work unlocks it but doesn't record where the worker left the physical handling unit, so the next worker has no way to find it. Park work asks the worker to scan the location where they're leaving the work, stores that location on the work header, and then guides the next worker back to it.
 
 Park work doesn't move on-hand inventory. The park location is an operational hand-off location only. The standard cancel cleanup continues to control the work line and inventory state.
 
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 ## Prerequisites
 
 To use the features described in this article, your system must meet the following requirements:
 
-<!-- TODO: PM input needed - confirm the minimum Supply Chain Management version that includes this feature -->
-
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.XX or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.50 or later.
 - The feature named *(Preview) Park warehouse work on cancel* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This feature is turned off by default.
 - To use guided park locations, the feature named *(Preview) Warehouse aisle* must also be turned on in feature management.
-
-> [!IMPORTANT]
-> Park work applies only to work-execution flows that run through the user-directed work-execution display. Every user-directed and system-directed mobile flow that's routed through that display supports park work. Cluster picking and other work-execution display types keep their existing **Cancel** behavior.
 
 ## Turn on park work for a warehouse
 
@@ -67,7 +65,7 @@ Make sure that the location profile of each park location uses the location type
 
 Workers park a work from the existing **Cancel** action. No extra button is added to the mobile app.
 
-A work can be parked only when it has at least one completed line and at least one open line. A work that's already parked isn't parked again.
+A work can be parked only when it has at least one completed line and at least one open line.
 
 To park a work, follow these steps:
 
@@ -86,8 +84,6 @@ Suggested locations are ordered by location ID. If the scanned aisle has no loca
 
 > [!NOTE]
 > Nothing is saved until you confirm the final park location. If you scan a current location, skip a suggestion, or select **Back**, no park location is written and the work isn't cancelled.
-
-If the scanned location doesn't exist in the work's warehouse, or if the work was cancelled while you were on the park prompt, the app shows an error and the park prompt is shown again.
 
 ## Pick up a parked work
 
@@ -119,9 +115,6 @@ Keep the following limits in mind when you plan to use park work:
 - On-hand inventory isn't moved to the park location. The standard cancel behavior leaves the on-hand inventory with the worker.
 - No inventory is reserved at a suggested park location, and location capacity isn't considered.
 - Suggested locations are limited to the aisle of the scanned current location.
-- Cluster picking flows don't support park work.
-
-<!-- TODO: PM input needed - screenshots of the Warehouses page park work policy field, the Warehouse management parameters park location type field, and the mobile app park and pick-up steps -->
 
 ## Related information
 
