@@ -24,6 +24,7 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Task management
+
 Task management helps you create tasks that must be completed to hire (onboard), terminate (offboard), and transfer (transition) employees. Task management uses the concept of checklists. A checklist is a list of onboarding, offboarding, or transition tasks. Task management uses checklists to group tasks together and assign them to individuals or groups. The checklist functionality for onboarding, offboarding, and transitions is similar.
 
 ## Checklist overview
@@ -55,6 +56,7 @@ The **Offboarding** tab contains a list of employees who are exiting the company
 The **Transitions** tab contains an **All tasks** list that shows all tasks for all employees who are changing positions or who recently changed positions. There's also a list of overdue tasks and a list of tasks that are assigned to the current user.
 
 On all three tabs, HR assistants and managers can complete the following activities:
+
 - Apply a checklist to an employee
 - Update the status of a task
 - Reassign a task
@@ -101,8 +103,8 @@ A task link provides a link to an external webpage or a page in the Dynamics 365
 - **URL** – Select this option and enter the URL of the webpage that you want the person assigned to the task to go to. The specified page can be a page that isn't part of the Dynamics 365 app.
 - **Worker details** – If you select this option, select one of the following options:
 
-    - **Employee self service actions** – This option shows a list of pages that are available in **Employee self service**. Use it if the task that was assigned to the onboarded employee must be completed in **Employee self service**. For example, if you want the employee to enter their personal contact information, select **Employee self service actions**, and then select **Personal Details&gt;Personal Information**.
-    - **Worker management actions** – This option shows a list of pages that are related to the worker's record, but that aren't accessible to the employee. For example, if you want the task owner to enter information that's specific to an onboarded worker, such as compensation information, select **Worker management actions**, and then select **Compensation&gt;Fixed compensation**.
+  - **Employee self service actions** – This option shows a list of pages that are available in **Employee self service**. Use it if the task that was assigned to the onboarded employee must be completed in **Employee self service**. For example, if you want the employee to enter their personal contact information, select **Employee self service actions**, and then select **Personal Details&gt;Personal Information**.
+  - **Worker management actions** – This option shows a list of pages that are related to the worker's record, but that aren't accessible to the employee. For example, if you want the task owner to enter information that's specific to an onboarded worker, such as compensation information, select **Worker management actions**, and then select **Compensation&gt;Fixed compensation**.
 
 ### Assignment types
 
@@ -154,7 +156,7 @@ If the **Assignment type** field for a task is set to **Position**, **Manager**,
 - The **Assignment type** field is set to **Position**, but no employee is assigned to the position at the time when the task is created. For example, the **Setup Laptop** task is assigned to position number 000876 (**Technical Support Specialist**). At the time when an employee is hired, no employee is assigned to position 000876. Therefore, a task is created for the checklist owner.
 - The **Assignment type** field is set to **Group**, but no employee is assigned to the positions in the group at the time when the task is created.
 
-The calendar that is specified for a checklist is used to calculate the due date of tasks that are part of that checklist. Working and nonworking days are defined in the calendar setup. Working days are included when the due date of tasks is calculated, and nonworking days are excluded. Nonworking days include weekends and holidays. 
+The calendar that is specified for a checklist is used to calculate the due date of tasks that are part of that checklist. Working and nonworking days are defined in the calendar setup. Working days are included when the due date of tasks is calculated, and nonworking days are excluded. Nonworking days include weekends and holidays.
 
 After you set up a calendar, associate it with a checklist template. In that way, the due date of every task in the checklist is calculated in the same way. You can set up multiple calendars, but each checklist can be associated with only one calendar.
 
@@ -198,10 +200,11 @@ You can also apply a checklist to an employee by opening their **Worker** page a
 On the **Employee self service** page, an employee can view all the tasks that are assigned to them. For each assigned task, the page shows **Task**, **Description**, **Instructions**, and **Contact person** values. Additionally, for each task, the employee can open the associated external webpage or the associated page in the Dynamics 365 app.
 
 You can also display tasks on the default dashboard. To display tasks on the default dashboard:
-1. Go to **User Options – Preferences – Task Management**. 
+
+1. Go to **User Options – Preferences – Task Management**.
 1. Set the **Display tasks on default dashboard** option to **On**.  
 
->[!Note] 
+>[!Note]
 >The **Task management** feature must be turned on in **Feature management** for the option to display in **User options**.
 
 Tasks can be marked as **In progress**, **Canceled**, or **Completed**. If a task was assigned to a group, it is marked as **Completed** when one person in the group completes it.

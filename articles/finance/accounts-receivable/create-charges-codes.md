@@ -4,7 +4,7 @@ description: Learn how to configure charges codes for both Accounts payable and 
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: how-to
-ms.date: 03/23/2023
+ms.date: 08/05/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -23,17 +23,17 @@ This article explains how to configure charges codes for both Accounts payable a
 
 To create charges codes for Accounts receivable, follow these steps:
 
-1. Go to **Accounts receivable** &gt; **Charges setup** &gt; **Charges code**.
-2. Select **New**.
-3. In the **Charges code** field, enter a code for the charge.
-3. In the **Description** field, enter a description of the charge.
-4. Optional: In the **Item sales tax group** field, select a sales tax group.
-5. On the **Posting** FastTab, specify how the charge should be automatically debited and credited.
-6. If you selected **Ledger account** as the debit type or credit type, specify a posting type in the **Posting** fields, and specify the main account in the **Account** fields.
+1. Go to **Accounts receivable** > **Charges setup** > **Charges code**.
+1. Select **New**.
+1. In the **Charges code** field, enter a code for the charge.
+1. In the **Description** field, enter a description of the charge.
+1. (Optional) In the **Item sales tax group** field, select a sales tax group.
+1. On the **Posting** FastTab, specify how the charge should be automatically debited and credited.
+1. If you select **Ledger account** as the debit type or credit type, specify a posting type in the **Posting** fields, and specify the main account in the **Account** fields.
 
 ### Example
 
-Your customer pays the charge. Therefore, it's added to the sales order totals. You set up the following posting information:
+Your customer pays the charge. Therefore, you add it to the sales order totals. Set up the following posting information:
 
 - In the **Type** field in the **Debit** section, select **Customer/Vendor** to add the invoice charge to the customer's account.
 - In the **Type** field in the **Credit** section, select **Ledger account**. Then, in the **Account** field, select the main account for revenue from invoice charges.
@@ -41,7 +41,7 @@ Your customer pays the charge. Therefore, it's added to the sales order totals. 
 > [!NOTE]
 > If the debit type or credit type for the selected code is either **Ledger account** or **Item**, you can enter a different currency for the charge transaction.
 
-You can print the text for charges in the language that is assigned to the customer. To specify the text for the charges code in other languages, select **Translations**.
+You can print the text for charges in the language that you assign to the customer. To specify the text for the charges code in other languages, select **Translations**.
 
 ## Set up charges codes for Accounts payable
 
@@ -49,27 +49,27 @@ To create charges codes for Accounts payable, follow these steps:
 
 1. Follow one of these steps:
 
-    - Go to **Accounts payable** &gt; **Charges** **setup** &gt; **Charges code**.
-    - Go to **Procurement and sourcing** &gt; **Setup** &gt; **Charges** &gt; **Charges code**.
+    - Go to **Accounts payable** > **Charges setup** > **Charges code**.
+    - Go to **Procurement and sourcing** > **Setup** > **Charges** > **Charges code**.
 
-2. Select **New**.
-3. In the **Charges code** field, enter a code for the charge.
-3. In the **Description** field, enter a description of the charge.
-4. Optional: In the **Item sales tax group** field, select a sales tax group.
-5. Optional: In the **Maximum amount** field, enter the maximum amount that is allowed for the charges code.
+1. Select **New**.
+1. In the **Charges code** field, enter a code for the charge.
+1. In the **Description** field, enter a description of the charge.
+1. (Optional) In the **Item sales tax group** field, select a sales tax group.
+1. (Optional) In the **Maximum amount** field, enter the maximum amount that is allowed for the charges code.
 
     This field is used to validate charges for vendor invoices. To enable the validation of charges, select the **Enable invoice matching validation** checkbox on the **Invoice validation** tab of the **Accounts payable parameters** page.
 
     > [!IMPORTANT]
     > To validate charges for invoices, you must also create an instance of a policy rule type that is based on charges for the specific vendor invoice policy.
 
-6. On the **Posting** FastTab, specify how the charge should be automatically debited and credited.
-7. If you selected **Ledger account** as the debit type or credit type, specify a posting type in the **Debit posting** and **Credit posting** fields, and specify the main account in the **Debit account** and **Credit account** fields.
-8. To enable the comparison of charge values for an invoice that contains the charges from the corresponding purchase order header or lines, select the **Compare purchase order and invoice values** checkbox.
+1. On the **Posting** FastTab, specify how the charge should be automatically debited and credited.
+1. If you selected **Ledger account** as the debit type or credit type, specify a posting type in the **Debit posting** and **Credit posting** fields, and specify the main account in the **Debit account** and **Credit account** fields.
+1. To enable the comparison of charge values for an invoice that contains the charges from the corresponding purchase order header or lines, select the **Compare purchase order and invoice values** checkbox.
 
 ### Example
 
-You can record the charge as an expense, as part of the total for the purchase order or vendor invoice. Follow these steps to set up posting information. 
+You can record the charge as an expense, as part of the total for the purchase order or vendor invoice. Follow these steps to set up posting information.
 
 - In the **Type** field in the **Credit** section, select **Customer/Vendor** to add the invoice charge to the vendor's account.
 - In the **Type** field in the **Debit** section, select **Ledger account**. Then, in the **Account** field, select the main account for expenses from invoice charges.
@@ -82,4 +82,4 @@ Follow these steps to set up posting information so that the unit charge is adde
 > [!NOTE]
 > You might want to use a currency that differs from the currency that is specified on the purchase order or invoice. You can enter a different currency if the debit type or credit type for the selected code is either **Ledger account** or **Item**.
 
-You can print the text for charges in the language that is assigned to the customer. To specify the text for the charges code in other languages, select **Translations**.
+You can print the text for charges in the language that you assign to the customer. To specify the text for the charges code in other languages, select **Translations**.

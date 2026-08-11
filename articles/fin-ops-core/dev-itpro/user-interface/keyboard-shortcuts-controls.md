@@ -4,9 +4,9 @@ description: Learn about the recommended method for implementing keyboard shortc
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/31/2024
+ms.date: 08/04/2026
 ms.update-cycle: 1095-days
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB
@@ -22,9 +22,11 @@ ms.custom:
 Keyboard shortcuts are an important consideration when you create any extensible control. This article provides information that will help you choose keyboard shortcuts for your extensible controls. It also outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 
 ## Overview
+
 For accessibility, it's essential that keyboard-only users be able to use controls. Therefore, keyboard shortcuts are an important consideration when you create any extensible control. This article provides information that will help you choose key combinations to use as keyboard shortcuts. It highlights the shortcuts that are currently used by finance and operations apps and supported browsers, shortcuts that are planned for implementation, and shortcuts that one or more browsers don't allow to be overridden. This article also outlines the recommended way to implement keyboard shortcuts for extensible controls.
 
 ## Choosing a key combination
+
 When you're trying to choose a key combination to use as a keyboard shortcut, it's important that you're aware of other existing shortcuts. In this way, you help guarantee that your shortcut won't overlap an existing shortcut. If you try to collide with an existing shortcut, one of the following outcomes might occur:
 
 - The new keyboard shortcut might not work, because a browser doesn't allow that key combination to be overridden, or a framework-provided shortcut takes precedence over the new shortcut.
@@ -39,6 +41,7 @@ Because of these potential issues, we recommend that you adhere to this guidance
 - **Don't** choose any key combination that involves Ctrl+Alt, because this combination maps to Alt+Gr for some Eastern European languages and will conflict with other shortcuts.
 
 ### Keyboard shortcut links
+
 Here are links to the keyboard shortcuts that are documented for finance and operations apps and supported browsers:
 
 - <a href="../../fin-ops/get-started/shortcut-keys.md">Keyboard shortcuts</a>
@@ -47,170 +50,58 @@ Here are links to the keyboard shortcuts that are documented for finance and ope
 - <a href="https://support.microsoft.com/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>
 - <a href="https://support.apple.com/kb/PH21483">Apple Safari</a>
 
-### Planned keyboard shortcuts 
+### Planned keyboard shortcuts
+
 In addition to the keyboard shortcuts that are currently used, there are several shortcuts that are planned for future implementation. To avoid conflicts with framework-provided shortcuts, you shouldn't choose the following key combinations for extensible controls.
-<table>
-<tbody>
-<tr>
-<th>Shortcut</th>
-<th>Functionality</th>
-</tr>
-<tr>
-<td>F3</td>
-<td>Move to the nearest QuickFilter.</td>
-</tr>
-<tr>
-<td>Alt+F3</td>
-<td>Add a filter that is based on the value of the current control (Filter by value).</td>
-</tr>
-<tr>
-<td>Alt+Shift+F3</td>
-<td>Clear all user-defined filters.</td>
-</tr>
-<tr>
-<td>F6</td>
-<td>Move to the nearest toolbar.</td>
-</tr>
-<tr>
-<td>Shift+F7</td>
-<td>Move to the toast message.</td>
-</tr>
-</tbody>
-</table>
+
+| Shortcut | Functionality |
+| --- | --- |
+| F3 | Move to the nearest QuickFilter. |
+| Alt+F3 | Add a filter that is based on the value of the current control (Filter by value). |
+| Alt+Shift+F3 | Clear all user-defined filters. |
+| F6 | Move to the nearest toolbar. |
+| Shift+F7 | Move to the toast message. |
 
 ### Browser/operating system keyboard shortcuts to avoid
 
 #### Keyboard shortcuts that correspond to important functionality
+
 The following table provides a short, non-exhaustive list of keyboard shortcuts that correspond to important functionality in a browser or operating system. You shouldn't choose the key combinations in this table.
-<table>
-<tbody>
-<tr>
-<th>Shortcut</th>
-<th>Functionality</th>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td>Ctrl+A</td>
-<td>Select all the text in the current field, or select all content on the page.</td>
-</tr>
-<tr>
-<td>Ctrl+C</td>
-<td>Copy.</td>
-</tr>
-<tr>
-<td>Ctrl+V</td>
-<td>Paste.</td>
-</tr>
-<tr>
-<td>Ctrl+X</td>
-<td>Cut.</td>
-</tr>
-<tr>
-<td>F5</td>
-<td>Refresh the page.</td>
-</tr>
-<tr>
-<td>Ctrl+F5</td>
-<td>Refresh the page, and ignore cached content.</td>
-</tr>
-<tr>
-<td>Shift+F10</td>
-<td>Simulate a right-click.</td>
-</tr>
-<tr>
-<td>Tab / Shift+Tab</td>
-<td>Move to the next/previous control.</td>
-</tr>
-<tr>
-<td>Ctrl+Tab / Ctrl+Shift+Tab</td>
-<td>Move to the next/previous browser tab.</td>
-</tr>
-<tr>
-<td>Alt+Tab / Alt+Shift+Tab</td>
-<td>Move to the next/previous application.</td>
-</tr>
-<tr>
-<td>Alt+Right arrow / Alt + Left arrow</td>
-<td>Go to the next/previous page in the browser history.</td>
-</tr>
-</tbody>
-</table>
+
+| Shortcut | Functionality |
+| --- | --- |
+| Ctrl+A | Select all the text in the current field, or select all content on the page. |
+| Ctrl+C | Copy. |
+| Ctrl+V | Paste. |
+| Ctrl+X | Cut. |
+| F5 | Refresh the page. |
+| Ctrl+F5 | Refresh the page, and ignore cached content. |
+| Shift+F10 | Simulate a right-click. |
+| Tab / Shift+Tab | Move to the next/previous control. |
+| Ctrl+Tab / Ctrl+Shift+Tab | Move to the next/previous browser tab. |
+| Alt+Tab / Alt+Shift+Tab | Move to the next/previous application. |
+| Alt+Right arrow / Alt + Left arrow | Go to the next/previous page in the browser history. |
 
 #### Keyboard shortcuts that can't be overridden by some browsers
+
 Some browsers don't allow the following keyboard shortcuts to be overridden. Therefore, you shouldn't choose the following key combinations, because the shortcut won't work in all browsers.
-<table>
-<tbody>
-<tr>
-<td>Alt+A</td>
-<td>Alt+T</td>
-<td>Ctrl+F4</td>
-<td>Alt+Tab</td>
-</tr>
-<tr>
-<td>Alt+C</td>
-<td>Alt+V</td>
-<td>Alt+F5</td>
-<td>Alt+Shift+Tab</td>
-</tr>
-<tr>
-<td>Alt+D</td>
-<td>Ctrl+W</td>
-<td>Alt+F6</td>
-<td>Spacebar</td>
-</tr>
-<tr>
-<td>Alt+Shift+D</td>
-<td>Ctrl+Shift+W</td>
-<td>Alt+Shift+F6</td>
-<td>Alt+Shift+Backspace</td>
-</tr>
-<tr>
-<td>Alt+E</td>
-<td>Alt+X</td>
-<td>F12</td>
-<td>Ctrl+Pause/Break</td>
-</tr>
-<tr>
-<td>Alt+F</td>
-<td>Ctrl+Shift+0</td>
-<td>Ctrl+Esc</td>
-<td>Ctrl+Shift+Pause/Break</td>
-</tr>
-<tr>
-<td>Alt+H</td>
-<td>Ctrl+Shift+7</td>
-<td>Ctrl+Shift+Esc</td>
-<td>Ctrl+Page up</td>
-</tr>
-<tr>
-<td>Ctrl+N</td>
-<td>F1</td>
-<td>Alt+Esc</td>
-<td>Ctrl+Page down</td>
-</tr>
-<tr>
-<td>Ctrl+Shift+N</td>
-<td>Ctrl+F1</td>
-<td>Alt+Shift+Esc</td>
-<td>Ctrl+Plus sign (+)</td>
-</tr>
-<tr>
-<td>Ctrl+Shift+Q</td>
-<td>Ctrl+Shift+F1</td>
-<td>Ctrl+Tab</td>
-<td>Shift+Plus sign (+)</td>
-</tr>
-<tr>
-<td>Ctrl+T</td>
-<td>Shift+F1</td>
-<td>Ctrl+Shift+Tab</td>
-<td>Ctrl+Minus sign (–)</td>
-</tr>
-</tbody>
-</table>
+
+| | | | |
+| --- | --- | --- | --- |
+| Alt+A | Alt+T | Ctrl+F4 | Alt+Tab |
+| Alt+C | Alt+V | Alt+F5 | Alt+Shift+Tab |
+| Alt+D | Ctrl+W | Alt+F6 | Spacebar |
+| Alt+Shift+D | Ctrl+Shift+W | Alt+Shift+F6 | Alt+Shift+Backspace |
+| Alt+E | Alt+X | F12 | Ctrl+Pause/Break |
+| Alt+F | Ctrl+Shift+0 | Ctrl+Esc | Ctrl+Shift+Pause/Break |
+| Alt+H | Ctrl+Shift+7 | Ctrl+Shift+Esc | Ctrl+Page up |
+| Ctrl+N | F1 | Alt+Esc | Ctrl+Page down |
+| Ctrl+Shift+N | Ctrl+F1 | Alt+Shift+Esc | Ctrl+Plus sign (+) |
+| Ctrl+Shift+Q | Ctrl+Shift+F1 | Ctrl+Tab | Shift+Plus sign (+) |
+| Ctrl+T | Shift+F1 | Ctrl+Shift+Tab | Ctrl+Minus sign (–) |
 
 ## Implementing keyboard shortcuts
+
 We recommend that you use the registration mechanism that is described in this section to implement keyboard shortcuts. There are several benefits to registering a control's shortcuts in this manner:
 
 - You specify only the modifier keys that you want. If any other modifiers are pressed, the shortcut won't run. Therefore, a keyboard shortcut that is defined for Ctrl+Down arrow won't be triggered if Ctrl+Shift+Down arrow is pressed.</li>
@@ -245,7 +136,8 @@ We recommend that you use the registration mechanism that is described in this s
     // Note: If any of these keyCodes match then the handler is called. I.E. 
     // The keyCodes in the array are OR'd not AND'd
     ```
-2. Add the keydown handler by using the following code.
+
+1. Add the keydown handler by using the following code.
 
     ```Text
     keydown: function (event) {
@@ -253,7 +145,7 @@ We recommend that you use the registration mechanism that is described in this s
     },
     ```
 
-3. Bind the keyDown handler. The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding. 
+1. Bind the keyDown handler. The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding.
 
     > [!IMPORTANT]
     > "keyDown" is case sensitive.
@@ -263,6 +155,7 @@ We recommend that you use the registration mechanism that is described in this s
     ```
 
 ### Examples
+
 Here's a Form example.
 
 ```Text
@@ -303,8 +196,5 @@ Shortcuts: $dyn.extendPrototype($dyn.controls.Form.prototype.Shortcuts, {
     },
 })
 ```
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

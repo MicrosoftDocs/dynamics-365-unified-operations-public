@@ -4,7 +4,7 @@ description: For vendors who are liable to withholding tax, you can assign the d
 author: kailiang
 ms.author: kailiang
 ms.topic: how-to
-ms.date: 01/12/2021
+ms.date: 08/05/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -16,43 +16,43 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Withholding tax in purchase transactions
 
-For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** on the **All vendors** page.
+For vendors who are liable to withholding tax, assign the default **Withholding tax group** on the **All vendors** page.
 
 1. Go to **Navigation pane > Modules > Accounts payable > Vendors > All vendors**.
 
-2. Click the respective Vendor account, click **Edit**.
+1. Click the respective Vendor account, and then click **Edit**.
 
-3. In **Invoice and delivery** tab, set the **Calculate withholding tax** field to **Yes**.
+1. In the **Invoice and delivery** tab, set the **Calculate withholding tax** field to **Yes**.
 
    > [!NOTE]
-   > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this vendor in the data.
+   > The system doesn't calculate withholding tax if you don't switch on **Calculate withholding tax** for this vendor in the data.
 
-4. Select a withholding tax group in **Withholding tax group**.
+1. Select a withholding tax group in **Withholding tax group**.
 
-5. Click **Save**.
+1. Click **Save**.
 
-For items and services that are liable to withholding tax, you can assign the default **Item withholding tax group** in **Released Products**.
+For items and services that are liable to withholding tax, assign the default **Item withholding tax group** in **Released Products**.
 
 1. Go to **Navigation pane > Modules > Product information management > Products > Released products**.
 
-2. Click the respective Item number, click **Edit**.
+1. Click the respective Item number, and then click **Edit**.
 
-3. In **Purchase** tab, click **Calculate withholding tax**.
+1. In the **Purchase** tab, click **Calculate withholding tax**.
 
    > [!NOTE]
-   > Withholding tax will not be calculated if **Calculate withholding tax** isn't set to **Yes** for this Item in the **Purchase** tab on the **Released product** page.
+   > The system doesn't calculate withholding tax if you don't set **Calculate withholding tax** to **Yes** for this item in the **Purchase** tab on the **Released product** page.
 
-4. Select an item withholding tax group in **Item withholding tax group** list.
+1. Select an item withholding tax group in **Item withholding tax group** list.
 
-5. Click **Save**.
+1. Click **Save**.
 
-Withholding tax groups and Item withholding tax groups can be assigned in pages:
+Assign withholding tax groups and item withholding tax groups in these pages:
 
 - **Purchase order**
 - **Vendor invoice**
 - **Invoice journal**
 
-The default Withholding tax group and Item withholding tax group are carried into the lines when creating **Purchase orders** and/or **Pending Vendor invoices**. For **Vendor invoice journal**, you can switch on **Calculate withholding tax** and select **Item withholding tax group** in the **General** tab in the journal.
+The default withholding tax group and item withholding tax group are carried into the lines when creating **Purchase orders** and **Pending Vendor invoices**. For **Vendor invoice journal**, you can switch on **Calculate withholding tax** and select **Item withholding tax group** in the **General** tab in the journal.
 
 The temporary amount of withholding tax is available in the field **Adjusted withholding tax** of the **Totals** tab on the **Purchase order** page.
 
@@ -61,7 +61,7 @@ The temporary amount of withholding tax is available in the field **Adjusted wit
    > [!NOTE]
    > Starting in version 10.0.33, a new option **Estimate withholding tax amount on invoice** is available on the **Withholding tax** tab of the **General ledger parameters** page. When you enable this option, a **Withholding tax** button is available on purchase orders and vendor invoices to estimate the withholding tax amount.
 
-Withholding tax is calculated on **Vendor payment journal**. You can manually adjust the applicable withholding tax codes and the actual withholding tax amounts in the **Withholding tax** tab on the **Settle transactions** page.
+The system calculates withholding tax on **Vendor payment journal**. You can manually adjust the applicable withholding tax codes and the actual withholding tax amounts in the **Withholding tax** tab on the **Settle transactions** page.
 
 ![Withholding can be manually adjusted on the Settle transactions page.](media/withholding-tax-vendor-payment-tab.png)
 
