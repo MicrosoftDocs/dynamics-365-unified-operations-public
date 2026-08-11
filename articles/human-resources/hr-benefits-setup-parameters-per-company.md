@@ -3,7 +3,7 @@
 title: Configure Benefits management parameters per company
 description: This article describes how to configure parameters for Benefits management per company in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/02/2024
+ms.date: 08/06/2026
 ms.topic: how-to
 # optional metadata
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
@@ -22,13 +22,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Benefits management parameters per company
 
-
 For each organization that offers benefits, you must configure settings for benefits confirmation emails.
 
 ## Configure confirmation email settings
 
 1. In the **Benefits management** workspace, under **Setup**, select **Human Resources Parameters**.
-2. In the **Benefits management** tab, specify values for the following fields: 
+2. In the **Benefits management** tab, specify values for the following fields:
 
    | Field | Description |
    | --- | --- |

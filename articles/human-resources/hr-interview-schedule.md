@@ -4,7 +4,7 @@
 title: Set up the Interview schedule feature in the Dynamics 365 Human Resources Recruiting add-on 
 description: Learn about the Interview schedule feature in the Microsoft Dynamics 365 Human Resources Recruiting add-on.
 author: twheeloc
-ms.date: 01/23/2026
+ms.date: 08/06/2026
 ms.topic: how-to
 # optional metadata
 
@@ -23,13 +23,13 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up the Interview schedule feature in the Dynamics 365 Human Resources Recruiting add-on 
+# Set up the Interview schedule feature in the Dynamics 365 Human Resources Recruiting add-on
 
 This article describes the **Interview schedule** feature in Microsoft Dynamics 365 Human Resources Recruiting add-on.
 
-Currently, customers must manually coordinate interview times among various parties, including candidates, hiring managers, and interviewers. This process is time consuming and prone to errors. Therefore, it can lead to scheduling conflicts, missed opportunities, and delays in the hiring process. Additionally, a poor candidate experience can negatively affect the employer's brand and discourage top talent from pursuing opportunities with the company.
+Currently, you must manually coordinate interview times among various parties, including candidates, hiring managers, and interviewers. This process is time consuming and prone to errors. Therefore, it can lead to scheduling conflicts, missed opportunities, and delays in the hiring process. Additionally, a poor candidate experience can negatively affect the employer's brand and discourage top talent from pursuing opportunities with the company.
 
-To meet these challenges, Microsoft developed an efficient and well-organized interview scheduling system. This system reduces the time that must be spent on manual coordination and communication, and gives candidates a more positive experience. Recruiters can use the system to book time slots on panel members' calendars, share available slots with candidates, send notifications, and issue meeting invites.
+To meet these challenges, Microsoft developed an efficient and well-organized interview scheduling system. This system reduces the time spent on manual coordination and communication, and gives candidates a more positive experience. Recruiters can use the system to book time slots on panel members' calendars, share available slots with candidates, send notifications, and issue meeting invites.
 
 > [!IMPORTANT]
 > Outlook and Microsoft Teams licenses are required.
@@ -38,7 +38,7 @@ To meet these challenges, Microsoft developed an efficient and well-organized in
 
 Recruiters can use this functionality to book time slots for panel members, based on their availability in their Outlook calendar. Recruiters can confirm time slots with panel members before they book them. Alternatively, they can select available time slots for booking without waiting for confirmation from panel members.
 
-New **Calendar** view is available with the Recruiting add-on: 2.2.3306.1 release. This visual interface provides a clear overview of each panel member’s availability, making scheduling more efficient and reducing back-and-forth communication. The inclusion of a legend (Available slot, busy slot, selected slot, confirmed slot, Sent for confirmation) ensures that users can quickly interpret the status of each slot, promoting transparency, and ease of use throughout the interview scheduling process.
+The new **Calendar** view is available with the Recruiting add-on: 2.2.3306.1 release. This visual interface provides a clear overview of each panel member’s availability, making scheduling more efficient and reducing back-and-forth communication. The inclusion of a legend (Available slot, busy slot, selected slot, confirmed slot, Sent for confirmation) ensures that users can quickly interpret the status of each slot, promoting transparency, and ease of use throughout the interview scheduling process.
 
 ### Book a slot with confirmation
 
@@ -46,7 +46,7 @@ New **Calendar** view is available with the Recruiting add-on: 2.2.3306.1 releas
 1. Select **New**.
 1. Select the job ad that the interview must be scheduled for.
 
-    All the hiring members are shown as panel members.
+    All the hiring members appear as panel members.
 
 1. Select one or more panel members.
 1. Select **Find slots**.
@@ -54,18 +54,18 @@ New **Calendar** view is available with the Recruiting add-on: 2.2.3306.1 releas
 1. Select the duration of the interview.
 1. Select **Search time slots**.
 
-    The availability of the selected panel members is shown.
+    You see the availability of the selected panel members.
 
 1. Select time slots.
 1. Select **Ask confirmation**.
 
-    A notification is to the Teams channel for panel members.
+    A notification is sent to the Teams channel for panel members.
 
-1. Panel members select one or more slots in Teams. 
+1. Panel members select one or more slots in Teams.
 
     Based on their selections, time slots are booked for the interviewer.
 
-After the booking is submitted, the slot status is updated to **Confirmed**.
+After the booking is submitted, the slot status updates to **Confirmed**.
 
 ### Book time slot without confirmation
 
@@ -73,7 +73,7 @@ After the booking is submitted, the slot status is updated to **Confirmed**.
 1. Select **New**.
 1. Select the job ad that the interview must be scheduled for.
 
-    All the hiring members are shown as panel members.
+    All the hiring members appear as panel members.
 
 1. Select one or more panel members.
 1. Select **Find slots**.
@@ -81,7 +81,7 @@ After the booking is submitted, the slot status is updated to **Confirmed**.
 1. Select the duration of the interview.
 1. Select **Search time slots**.
 
-    The availability of the selected panel members is shown.
+    You see the availability of the selected panel members.
 
 1. Select time slots.
 1. Select the **Book slots without confirmation** checkbox.
@@ -89,7 +89,7 @@ After the booking is submitted, the slot status is updated to **Confirmed**.
 
     The selected time slots are booked for the interviewer.
 
-After confirmation is received, the slot status is updated to **Confirmed**.
+After confirmation is received, the slot status updates to **Confirmed**.
 
 > [!NOTE]
 > Notifications aren't sent to interviewers.
@@ -119,7 +119,7 @@ The confirmed time slot appears in the meeting invite section of the Dynamics 36
 
 ## Send a meeting invite
 
-After a candidate books a time slot, the recruiter can confirm the slot with them. They can then send a meeting invite by selecting an appropriate template for the content that must be sent to both the candidate and the interviewer.
+After a candidate books a time slot, the recruiter can confirm the slot with them. They can then send a meeting invite by selecting an appropriate template for the content that both the candidate and the interviewer must receive.
 
 To send a meeting invite, follow these steps:
 

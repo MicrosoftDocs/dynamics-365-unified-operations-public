@@ -25,8 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Submit a leave request to workflow
 
-
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In Microsoft Dynamics 365 Human Resources, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to workflow. This API is exposed as an action on the MyLeaveRequests OData entity.
@@ -39,9 +37,9 @@ The leave request must be saved in the database and must be retrievable through 
 
 One of the following permissions is required to call this API. For more information about permissions and how to select them, see [Authentication](hr-developer-api-authentication.md).
 
-| Permission type                    | Permissions (from least privileged to most privileged) |
-|------------------------------------|--------------------------------------------------------|
-| Delegated (work or school account) | user\_impersonation                                    |
+| Permission type   | Permissions (from least privileged to most privileged) |
+|------------------------------------|-----------------------------------|
+| Delegated (work or school account) | user\_impersonation                 |
 
 ## HTTPS request
 
@@ -98,13 +96,13 @@ POST https://aos-rts-sf-550e5c091f6-prod-westus2.hr.talent.dynamics.com/namespac
 
 As part of the call to the submit API, Human Resources performs business logic validation before submission, which ensures the leave request is in a valid state for submission. The possible error messages you may receive in the response if validations fail are:
 
- - The request would put the '{LeaveTypeId}' balance below the allowed minimum balance on {date}.
- - Time off request in **Completed** state can't be submitted.
- - Unable to submit or save request as no changes have been made. Add or update the amount or the leave type and try again.
- - The time off request entered contains one or more days with the same date and leave type as an existing pending request. Recall the existing request to make changes.
- - Reason code '{ReasonCodeId}' doesn't apply to any of the leave types in the request.
- - Leave type '{LeaveTypeId}' requires a reason code. Select the appropriate type and reason code.
- - The time off wasn't submitted successfully. The time off has been saved as a draft request.
+- The request would put the '{LeaveTypeId}' balance below the allowed minimum balance on {date}.
+- Time off request in **Completed** state can't be submitted.
+- Unable to submit or save request as no changes have been made. Add or update the amount or the leave type and try again.
+- The time off request entered contains one or more days with the same date and leave type as an existing pending request. Recall the existing request to make changes.
+- Reason code '{ReasonCodeId}' doesn't apply to any of the leave types in the request.
+- Leave type '{LeaveTypeId}' requires a reason code. Select the appropriate type and reason code.
+- The time off wasn't submitted successfully. The time off has been saved as a draft request.
 
 ## See also
 
