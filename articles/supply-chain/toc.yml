@@ -2431,6 +2431,8 @@
           href: procurement/purchase-order-overview.md
         - name: Approve and confirm purchase orders
           href: procurement/purchase-order-approval-confirmation.md
+        - name: Configure purchase order confirmation batch jobs
+          href: procurement/purchase-order-confirmation.md
         - name: Calculate requested ship dates for purchase orders
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Review and accept changes to confirmed purchase orders
