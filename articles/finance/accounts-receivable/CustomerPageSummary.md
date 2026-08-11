@@ -4,7 +4,7 @@ description: This article describes how the customer page summary feature shows 
 author: EricWang
 ms.author: wangchen
 ms.topic: article
-ms.date: 01/31/2025
+ms.date: 08/05/2026
 ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
@@ -24,8 +24,8 @@ Enable the **Customer page summary** feature to get an AI-generated summary of a
 
 This feature provides the following benefits:
 
-- Provide customer account status and insights.
-- Help you make better decisions about customers.
+- Provides customer account status and insights.
+- Helps you make better decisions about customers.
 
 ## Prerequisites
 
@@ -52,17 +52,17 @@ To view the summary data, a user must have at least one of the following menu it
 
 ## Turn AI summaries with Copilot on or off
 
-Administrators can control if this AI summary feature is available. 
+Administrators can control if this AI summary feature is available.
+
 1. Go to **Feature management**.
-2. Search for **Customer summary – Customer page summary**.
-3. This feature is turned on by default, but it can be turned off.
+1. Search for **Customer summary – Customer page summary**.
+1. This feature is turned on by default, but you can turn it off.
 
-For more informatoin, see [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
+For more information, see [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## View summary text
 
-When a customer is selected in the **All customers** workspace, the AI-generated content appears on the **Summary** FastTab. Azure OpenAI generates the results based on data in Finance and the provided prompts.
+When you select a customer in the **All customers** workspace, the AI-generated content appears on the **Summary** FastTab. Azure OpenAI generates the results based on data in Finance and the provided prompts.
 
 It uses the following transaction data as inputs:
 
@@ -78,7 +78,7 @@ This data comes only from the customer's Finance environment. All calculations a
 
 The results contain a summary of the current customer status and selected insights into the customer account.
 
-For more information, see the following resources:
+For more information, see the following articles:
 
 - [Transparency FAQ](CustomerPageSummaryFAQ.md)
 - [Enable Copilot in Dynamics 365 Finance](https://go.microsoft.com/fwlink/?linkid=2274122)

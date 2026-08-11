@@ -929,648 +929,666 @@
           href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/supply-chain
     - name: Electronic reporting
       items:
-      - name: Electronic reporting overview
-        href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?context=/dynamics365/context/supply-chain
-      - name: Electronic reporting components
-        href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?context=/dynamics365/context/supply-chain
-      - name: Configurations
-        items:
-        - name: Create configurations
-          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?context=/dynamics365/context/supply-chain
-        - name: Define the dependency of ER configurations on other components
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?context=/dynamics365/context/supply-chain
-        - name: Prepare components of the Electronic reporting solution
+        - name: Electronic reporting overview
+          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?context=/dynamics365/context/supply-chain
+        - name: Electronic reporting components
+          href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?context=/dynamics365/context/supply-chain
+        - name: Configurations
           items:
-          - name: Design domain specific data model
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?context=/dynamics365/context/supply-chain
-          - name: Prepare application specific metadata
-            items:
-            - name: Prepare application metadata in ER to be used in RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?context=/dynamics365/context/supply-chain
-            - name: Access application metadata in RCS by using ER configuration
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?context=/dynamics365/context/supply-chain
-            - name: Access application metadata in RCS by using connected applications
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?context=/dynamics365/context/supply-chain
-            - name: Define model mappings and select data sources
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?context=/dynamics365/context/supply-chain
-            - name: Map data model to selected data sources
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?context=/dynamics365/context/supply-chain
-            - name: Create a format configuration
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?context=/dynamics365/context/supply-chain
-            - name: Map components of the created format to data model elements
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?context=/dynamics365/context/supply-chain
-          - name: Test the prepared ER solution in the target application
-            items:
-            - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/supply-chain
-            - name: Generate electronic documents for payments using a format configuration
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/supply-chain
-          - name: Upgrade your format by adopting a new base version of that format
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/supply-chain
-      - name: Formula designers in ER
-        items:
-        - name: Formula designer
-          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?context=/dynamics365/context/supply-chain
-        - name: Advanced formula designer
-          href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?context=/dynamics365/context/supply-chain
-      - name: Formula language and functions
-        items:
-        - name: Formula language
-          href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?context=/dynamics365/context/supply-chain
-        - name: Supported data types for ER formulas
+            - name: Create configurations
+              href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?context=/dynamics365/context/supply-chain
+            - name: Define the dependency of ER configurations on other components
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?context=/dynamics365/context/supply-chain
+            - name: Prepare components of the Electronic reporting solution
+              items:
+                - name: Design domain specific data model
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?context=/dynamics365/context/supply-chain
+                - name: Prepare application specific metadata
+                  items:
+                    - name: Prepare application metadata in ER to be used in RCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?context=/dynamics365/context/supply-chain
+                    - name: Access application metadata in RCS by using ER configuration
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?context=/dynamics365/context/supply-chain
+                    - name: Access application metadata in RCS by using connected applications
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?context=/dynamics365/context/supply-chain
+                    - name: Define model mappings and select data sources
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?context=/dynamics365/context/supply-chain
+                    - name: Map data model to selected data sources
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?context=/dynamics365/context/supply-chain
+                    - name: Create a format configuration
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?context=/dynamics365/context/supply-chain
+                    - name: Map components of the created format to data model elements
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?context=/dynamics365/context/supply-chain
+                - name: Test the prepared ER solution in the target application
+                  items:
+                    - name: Import configurations from RCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/supply-chain
+                    - name: Generate electronic documents for payments using a format configuration
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/supply-chain
+                - name: Upgrade your format by adopting a new base version of that format
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/supply-chain
+        - name: Supported data source types for ER components
+          href: ../fin-ops-core/dev-itpro/analytics/er-data-sources.md
+        - name: Formula designers in ER
           items:
-          - name: Primitive data types
-            href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?context=/dynamics365/context/supply-chain
-          - name: Composite data types
-            href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?context=/dynamics365/context/supply-chain
-        - name: Functions
+            - name: Formula designer
+              href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?context=/dynamics365/context/supply-chain
+            - name: Advanced formula designer
+              href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?context=/dynamics365/context/supply-chain
+        - name: Formula language and functions
           items:
-          - name: Container
-            items:
-            - name: Container functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?context=/dynamics365/context/supply-chain
-            - name: Base64StringToContainer
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/supply-chain
-          - name: Date and time
-            items:
-            - name: Date and time functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?context=/dynamics365/context/supply-chain
-            - name: AddDays
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?context=/dynamics365/context/supply-chain
-            - name: DateFormat
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?context=/dynamics365/context/supply-chain
-            - name: DateTimeFormat
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?context=/dynamics365/context/supply-chain
-            - name: DateTimeValue
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?context=/dynamics365/context/supply-chain
-            - name: DateToDateTime
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?context=/dynamics365/context/supply-chain
-            - name: DateValue
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?context=/dynamics365/context/supply-chain
-            - name: DayOfYear
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?context=/dynamics365/context/supply-chain
-            - name: Days
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?context=/dynamics365/context/supply-chain
-            - name: Now
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?context=/dynamics365/context/supply-chain
-            - name: NullDate
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?context=/dynamics365/context/supply-chain
-            - name: NullDateTime
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?context=/dynamics365/context/supply-chain
-            - name: SessionNow
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?context=/dynamics365/context/supply-chain
-            - name: SessionToday
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?context=/dynamics365/context/supply-chain
-            - name: Today
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?context=/dynamics365/context/supply-chain
-            - name: WeekNum
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?context=/dynamics365/context/supply-chain
-          - name: List
-            items:
-            - name: List functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?context=/dynamics365/context/supply-chain
-            - name: AllItems
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?context=/dynamics365/context/supply-chain
-            - name: AllItemsQuery
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?context=/dynamics365/context/supply-chain
-            - name: Count
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?context=/dynamics365/context/supply-chain
-            - name: EmptyList
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?context=/dynamics365/context/supply-chain
-            - name: Enumerate
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?context=/dynamics365/context/supply-chain
-            - name: Filter
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?context=/dynamics365/context/supply-chain
-            - name: First
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?context=/dynamics365/context/supply-chain
-            - name: FirstOrNull
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?context=/dynamics365/context/supply-chain
-            - name: Index
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?context=/dynamics365/context/supply-chain
-            - name: IsEmpty
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?context=/dynamics365/context/supply-chain
-            - name: List
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?context=/dynamics365/context/supply-chain
-            - name: "ListDistinct"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?context=/dynamics365/context/supply-chain
-            - name: ListJoin
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?context=/dynamics365/context/supply-chain
-            - name: ListOfFields
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?context=/dynamics365/context/supply-chain
-            - name: ListOfFirstItem
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/supply-chain
-            - name: OrderBy
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/supply-chain
-            - name: Repeat
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/supply-chain
-            - name: Reverse
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/supply-chain
-            - name: Split
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/supply-chain
-            - name: SplitList
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/supply-chain
-            - name: SplitListByLimit
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?context=/dynamics365/context/supply-chain
-            - name: StringJoin
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?context=/dynamics365/context/supply-chain
-            - name: Where
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?context=/dynamics365/context/supply-chain
-          - name: Logical
-            items:
-            - name: Logical functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?context=/dynamics365/context/supply-chain
-            - name: And
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?context=/dynamics365/context/supply-chain
-            - name: Case
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?context=/dynamics365/context/supply-chain
-            - name: Contains
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?context=/dynamics365/context/supply-chain
-            - name: EndsWith
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?context=/dynamics365/context/supply-chain
-            - name: If
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?context=/dynamics365/context/supply-chain
-            - name: Not
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?context=/dynamics365/context/supply-chain
-            - name: Or
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?context=/dynamics365/context/supply-chain
-            - name: StartsWith
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?context=/dynamics365/context/supply-chain
-            - name: ValueIn
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?context=/dynamics365/context/supply-chain
-            - name: ValueInLarge
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?context=/dynamics365/context/supply-chain
-          - name: Mathematical
-            items:
-            - name: Mathematical functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?context=/dynamics365/context/supply-chain
-            - name: Abs
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?context=/dynamics365/context/supply-chain
-            - name: Power
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?context=/dynamics365/context/supply-chain
-            - name: Round
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?context=/dynamics365/context/supply-chain
-            - name: RoundDown
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?context=/dynamics365/context/supply-chain
-            - name: RoundUp
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?context=/dynamics365/context/supply-chain
-          - name: Records
-            items:
-            - name: Record functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?context=/dynamics365/context/supply-chain
-            - name: EmptyRecord
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?context=/dynamics365/context/supply-chain
-            - name: NullContainer
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?context=/dynamics365/context/supply-chain
-          - name: Text
-            items:
-            - name: Text functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?context=/dynamics365/context/supply-chain
-            - name: Char
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?context=/dynamics365/context/supply-chain
-            - name: Concatenate
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?context=/dynamics365/context/supply-chain
-            - name: Format
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?context=/dynamics365/context/supply-chain
-            - name: GetEnumValueByName
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?context=/dynamics365/context/supply-chain
-            - name: GuidValue
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?context=/dynamics365/context/supply-chain
-            - name: JsonValue
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?context=/dynamics365/context/supply-chain
-            - name: Left
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?context=/dynamics365/context/supply-chain
-            - name: Len
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?context=/dynamics365/context/supply-chain
-            - name: Lower
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?context=/dynamics365/context/supply-chain
-            - name: Mid
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?context=/dynamics365/context/supply-chain
-            - name: NumberFormat
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?context=/dynamics365/context/supply-chain
-            - name: NumeralsToText
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?context=/dynamics365/context/supply-chain
-            - name: PadLeft
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?context=/dynamics365/context/supply-chain
-            - name: QrCode
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?context=/dynamics365/context/supply-chain
-            - name: Replace
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?context=/dynamics365/context/supply-chain
-            - name: Right
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?context=/dynamics365/context/supply-chain
-            - name: Text
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/supply-chain
-            - name: Translate
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?context=/dynamics365/context/supply-chain
-            - name: Trim
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?context=/dynamics365/context/supply-chain
-            - name: Upper
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?context=/dynamics365/context/supply-chain
-          - name: Data collection
-            items:
-            - name: Data collection functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?context=/dynamics365/context/supply-chain
-            - name: CollectedList
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?context=/dynamics365/context/supply-chain
-            - name: CountIF
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?context=/dynamics365/context/supply-chain
-            - name: CountIFs
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?context=/dynamics365/context/supply-chain
-            - name: FormatElementName
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?context=/dynamics365/context/supply-chain
-            - name: SumIF
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?context=/dynamics365/context/supply-chain
-            - name: SumIFs
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?context=/dynamics365/context/supply-chain
-          - name: Other
-            items:
-            - name: Other (business domain–specific) functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?context=/dynamics365/context/supply-chain
-            - name: CH_Bank_Mod_10
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?context=/dynamics365/context/supply-chain
-            - name: CN_GBT_AdditionalDimensionID
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?context=/dynamics365/context/supply-chain
-            - name: ConvertCurrency
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?context=/dynamics365/context/supply-chain
-            - name: CurCredRef
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?context=/dynamics365/context/supply-chain
-            - name: FA_Balance
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365supply-chain/toc.json
-            - name: FA_Sum
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?context=/dynamics365/context/supply-chain
-            - name: GetCurrentCompany
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?context=/dynamics365/context/supply-chain
-            - name: ISOCredRef
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?context=/dynamics365/context/supply-chain
-            - name: IsValidCharacterISO7064
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?context=/dynamics365/context/supply-chain
-            - name: Mod_97
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?context=/dynamics365/context/supply-chain
-            - name: NumSeqValue
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?context=/dynamics365/context/supply-chain
-            - name: RoundAmount
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?context=/dynamics365/context/supply-chain
-            - name: TableName2ID
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?context=/dynamics365/context/supply-chain
-          - name: Type conversion
-            items:
-            - name: Type conversion functions
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?context=/dynamics365/context/supply-chain
-            - name: "Type: Int64Value"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?context=/dynamics365/context/supply-chain
-            - name: "Type: IntValue"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?context=/dynamics365/context/supply-chain
-            - name: "Type: NumberValue"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?context=/dynamics365/context/supply-chain
-            - name: "Type: Value"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?context=/dynamics365/context/supply-chain
-            - name: "Container: Base64StringToContainer"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/supply-chain
-            - name: "Date and Time: DateTimeValue"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?context=/dynamics365/context/supply-chain
-            - name: "Date and Time: DateToDateTime"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?context=/dynamics365/context/supply-chain
-            - name: "Date and Time: DateValue"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?context=/dynamics365/context/supply-chain
-            - name: "List: List"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?context=/dynamics365/context/supply-chain
-            - name: "List: ListOfFields"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?context=/dynamics365/context/supply-chain
-            - name: "List: Split"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/supply-chain
-            - name: "List: StringJoin"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?context=/dynamics365/context/supply-chain
-            - name: "Text: Char"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?context=/dynamics365/context/supply-chain
-            - name: "Text: GuidValue"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?context=/dynamics365/context/supply-chain
-            - name: "Text: NumberFormat"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?context=/dynamics365/context/supply-chain
-            - name: "Text: QrCode"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?context=/dynamics365/context/supply-chain
-            - name: "Text: Text"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/supply-chain
-      - name: Design ER formats to generate outbound documents in various formats
-        items:
-        - name: Design configurations to generate outgoing documents in Excel format
+            - name: Formula language
+              href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?context=/dynamics365/context/supply-chain
+            - name: Supported data types for ER formulas
+              items:
+                - name: Primitive data types
+                  href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?context=/dynamics365/context/supply-chain
+                - name: Composite data types
+                  href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?context=/dynamics365/context/supply-chain
+            - name: Functions
+              items:
+                - name: Container
+                  items:
+                    - name: Container functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?context=/dynamics365/context/supply-chain
+                    - name: Base64StringToContainer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/supply-chain
+                - name: Date and time
+                  items:
+                    - name: Date and time functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?context=/dynamics365/context/supply-chain
+                    - name: AddDays
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?context=/dynamics365/context/supply-chain
+                    - name: ChangeTimeZone
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?context=/dynamics365/context/supply-chain
+                    - name: DateFormat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?context=/dynamics365/context/supply-chain
+                    - name: DateTimeFormat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?context=/dynamics365/context/supply-chain
+                    - name: DateTimeValue
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?context=/dynamics365/context/supply-chain
+                    - name: DateToDateTime
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?context=/dynamics365/context/supply-chain
+                    - name: DateValue
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?context=/dynamics365/context/supply-chain
+                    - name: DayOfYear
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?context=/dynamics365/context/supply-chain
+                    - name: Days
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?context=/dynamics365/context/supply-chain
+                    - name: Now
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?context=/dynamics365/context/supply-chain
+                    - name: NullDate
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?context=/dynamics365/context/supply-chain
+                    - name: NullDateTime
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?context=/dynamics365/context/supply-chain
+                    - name: SessionNow
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?context=/dynamics365/context/supply-chain
+                    - name: SessionToday
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?context=/dynamics365/context/supply-chain
+                    - name: Today
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?context=/dynamics365/context/supply-chain
+                    - name: WeekNum
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?context=/dynamics365/context/supply-chain
+                - name: List
+                  items:
+                    - name: List functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?context=/dynamics365/context/supply-chain
+                    - name: AllItems
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?context=/dynamics365/context/supply-chain
+                    - name: AllItemsQuery
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?context=/dynamics365/context/supply-chain
+                    - name: Count
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?context=/dynamics365/context/supply-chain
+                    - name: EmptyList
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?context=/dynamics365/context/supply-chain
+                    - name: Enumerate
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?context=/dynamics365/context/supply-chain
+                    - name: Filter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?context=/dynamics365/context/supply-chain
+                    - name: First
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?context=/dynamics365/context/supply-chain
+                    - name: FirstOrNull
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?context=/dynamics365/context/supply-chain
+                    - name: Index
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?context=/dynamics365/context/supply-chain
+                    - name: IsEmpty
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?context=/dynamics365/context/supply-chain
+                    - name: List
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?context=/dynamics365/context/supply-chain
+                    - name: "ListDistinct"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?context=/dynamics365/context/supply-chain
+                    - name: ListJoin
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?context=/dynamics365/context/supply-chain
+                    - name: ListOfFields
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?context=/dynamics365/context/supply-chain
+                    - name: ListOfFirstItem
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/supply-chain
+                    - name: OrderBy
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/supply-chain
+                    - name: Repeat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/supply-chain
+                    - name: Reverse
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/supply-chain
+                    - name: Split
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/supply-chain
+                    - name: SplitList
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/supply-chain
+                    - name: SplitListByLimit
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?context=/dynamics365/context/supply-chain
+                    - name: StringJoin
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?context=/dynamics365/context/supply-chain
+                    - name: Where
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?context=/dynamics365/context/supply-chain
+                - name: Logical
+                  items:
+                    - name: Logical functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?context=/dynamics365/context/supply-chain
+                    - name: And
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?context=/dynamics365/context/supply-chain
+                    - name: Case
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?context=/dynamics365/context/supply-chain
+                    - name: Contains
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?context=/dynamics365/context/supply-chain
+                    - name: EndsWith
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?context=/dynamics365/context/supply-chain
+                    - name: If
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?context=/dynamics365/context/supply-chain
+                    - name: Not
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?context=/dynamics365/context/supply-chain
+                    - name: Or
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?context=/dynamics365/context/supply-chain
+                    - name: StartsWith
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?context=/dynamics365/context/supply-chain
+                    - name: ValueIn
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?context=/dynamics365/context/supply-chain
+                    - name: ValueInLarge
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?context=/dynamics365/context/supply-chain
+                - name: Mathematical
+                  items:
+                    - name: Mathematical functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?context=/dynamics365/context/supply-chain
+                    - name: Abs
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?context=/dynamics365/context/supply-chain
+                    - name: DIV
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-div.md?context=/dynamics365/context/supply-chain
+                    - name: MOD
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-mod.md?context=/dynamics365/context/supply-chain
+                    - name: Power
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?context=/dynamics365/context/supply-chain
+                    - name: Round
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?context=/dynamics365/context/supply-chain
+                    - name: RoundDown
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?context=/dynamics365/context/supply-chain
+                    - name: RoundUp
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?context=/dynamics365/context/supply-chain
+                - name: Records
+                  items:
+                    - name: Record functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?context=/dynamics365/context/supply-chain
+                    - name: EmptyRecord
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?context=/dynamics365/context/supply-chain
+                    - name: NullContainer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?context=/dynamics365/context/supply-chain
+                - name: Text
+                  items:
+                    - name: Text functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?context=/dynamics365/context/supply-chain
+                    - name: Char
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?context=/dynamics365/context/supply-chain
+                    - name: Concatenate
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?context=/dynamics365/context/supply-chain
+                    - name: Format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?context=/dynamics365/context/supply-chain
+                    - name: GetEnumValueByName
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?context=/dynamics365/context/supply-chain
+                    - name: GetLabelText
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md?context=/dynamics365/context/supply-chain
+                    - name: GuidValue
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?context=/dynamics365/context/supply-chain
+                    - name: JsonValue
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?context=/dynamics365/context/supply-chain
+                    - name: Left
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?context=/dynamics365/context/supply-chain
+                    - name: Len
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?context=/dynamics365/context/supply-chain
+                    - name: Lower
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?context=/dynamics365/context/supply-chain
+                    - name: Mid
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?context=/dynamics365/context/supply-chain
+                    - name: NewGUID
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?context=/dynamics365/context/supply-chain
+                    - name: NumberFormat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?context=/dynamics365/context/supply-chain
+                    - name: NumeralsToText
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?context=/dynamics365/context/supply-chain
+                    - name: PadLeft
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?context=/dynamics365/context/supply-chain
+                    - name: QrCode
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?context=/dynamics365/context/supply-chain
+                    - name: Replace
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?context=/dynamics365/context/supply-chain
+                    - name: Right
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?context=/dynamics365/context/supply-chain
+                    - name: Text
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/supply-chain
+                    - name: Translate
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?context=/dynamics365/context/supply-chain
+                    - name: Trim
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?context=/dynamics365/context/supply-chain
+                    - name: Upper
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?context=/dynamics365/context/supply-chain
+                - name: Data collection
+                  items:
+                    - name: Data collection functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?context=/dynamics365/context/supply-chain
+                    - name: CollectedList
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?context=/dynamics365/context/supply-chain
+                    - name: CountIF
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?context=/dynamics365/context/supply-chain
+                    - name: CountIFs
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?context=/dynamics365/context/supply-chain
+                    - name: FormatElementName
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?context=/dynamics365/context/supply-chain
+                    - name: SumIF
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?context=/dynamics365/context/supply-chain
+                    - name: SumIFs
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?context=/dynamics365/context/supply-chain
+                - name: Other
+                  items:
+                    - name: Other (business domain–specific) functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?context=/dynamics365/context/supply-chain
+                    - name: CH_Bank_Mod_10
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?context=/dynamics365/context/supply-chain
+                    - name: CN_GBT_AdditionalDimensionID
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?context=/dynamics365/context/supply-chain
+                    - name: ConvertCurrency
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?context=/dynamics365/context/supply-chain
+                    - name: CurCredRef
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?context=/dynamics365/context/supply-chain
+                    - name: FA_Balance
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?context=/dynamics365/context/supply-chain
+                    - name: FA_Sum
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?context=/dynamics365/context/supply-chain
+                    - name: GetCurrentCompany
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?context=/dynamics365/context/supply-chain
+                    - name: ISOCredRef
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?context=/dynamics365/context/supply-chain
+                    - name: IsValidCharacterISO7064
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?context=/dynamics365/context/supply-chain
+                    - name: Mod_97
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?context=/dynamics365/context/supply-chain
+                    - name: NumSeqValue
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?context=/dynamics365/context/supply-chain
+                    - name: RoundAmount
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?context=/dynamics365/context/supply-chain
+                    - name: TableName2ID
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?context=/dynamics365/context/supply-chain
+                    - name: TaxUnitConversion
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-taxunitconversion.md?context=/dynamics365/context/supply-chain
+                - name: Type conversion
+                  items:
+                    - name: Type conversion functions
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?context=/dynamics365/context/supply-chain
+                    - name: "Type: Int64Value"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?context=/dynamics365/context/supply-chain
+                    - name: "Type: IntValue"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?context=/dynamics365/context/supply-chain
+                    - name: "Type: NumberValue"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?context=/dynamics365/context/supply-chain
+                    - name: "Type: Value"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?context=/dynamics365/context/supply-chain
+                    - name: "Container: Base64StringToContainer"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/supply-chain
+                    - name: "Date and Time: DateTimeValue"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?context=/dynamics365/context/supply-chain
+                    - name: "Date and Time: DateToDateTime"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?context=/dynamics365/context/supply-chain
+                    - name: "Date and Time: DateValue"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?context=/dynamics365/context/supply-chain
+                    - name: "List: List"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?context=/dynamics365/context/supply-chain
+                    - name: "List: ListOfFields"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?context=/dynamics365/context/supply-chain
+                    - name: "List: Split"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/supply-chain
+                    - name: "List: StringJoin"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?context=/dynamics365/context/supply-chain
+                    - name: "Text: Char"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?context=/dynamics365/context/supply-chain
+                    - name: "Text: GuidValue"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?context=/dynamics365/context/supply-chain
+                    - name: "Text: NumberFormat"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?context=/dynamics365/context/supply-chain
+                    - name: "Text: QrCode"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?context=/dynamics365/context/supply-chain
+                    - name: "Text: Text"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/supply-chain
+        - name: Design ER formats to generate outbound documents in various formats
           items:
-          - name: Design a configuration for generating documents in Excel format
-            href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?context=/dynamics365/context/supply-chain
-          - name: Example of generating reports in OPENXML format
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?context=/dynamics365/context/supply-chain
-          - name: Modify ER formats by reapplying Excel templates
-            href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?context=/dynamics365/context/supply-chain
-          - name: Dynamically add columns to Excel reports as horizontally expandable ranges
-            items:
-            - name: Design formats to dynamically add columns to Excel reports
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?context=/dynamics365/context/supply-chain
-            - name: Run formats to dynamically add columns to Excel reports
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?context=/dynamics365/context/supply-chain
-            - name: Design an ER format to paginate generated documents in Excel
-              href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?context=/dynamics365/context/supply-chain
-            - name: Design an ER format to keep rows together on the same Excel page
-              href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?context=/dynamics365/context/supply-chain
-        - name: Design configurations to generate reports in Word format
+            - name: Design a configuration for generating reports in OPENXML format
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?context=/dynamics365/context/supply-chain
+            - name: Design configurations to generate outgoing documents in Excel format
+              items:
+                - name: Design a configuration for generating documents in Excel format
+                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?context=/dynamics365/context/supply-chain
+                - name: Modify ER formats by reapplying Excel templates
+                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?context=/dynamics365/context/supply-chain
+                - name: Dynamically add columns to Excel reports as horizontally expandable ranges
+                  items:
+                    - name: Design formats to dynamically add columns to Excel reports
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?context=/dynamics365/context/supply-chain
+                    - name: Run formats to dynamically add columns to Excel reports
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?context=/dynamics365/context/supply-chain
+                - name: Design an ER format to paginate generated documents in Excel
+                  href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?context=/dynamics365/context/supply-chain
+                - name: Design an ER format to keep rows together on the same Excel page
+                  href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?context=/dynamics365/context/supply-chain
+            - name: Design configurations to generate reports in Word format
+              items:
+                - name: Design a new ER configuration to generate reports in Word format
+                  href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?context=/dynamics365/context/supply-chain
+                - name: Reuse ER configurations with Excel templates to generate reports in Word format
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?context=/dynamics365/context/supply-chain
+                - name: Suppress Word content controls in generated reports
+                  href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?context=/dynamics365/context/supply-chain
+            - name: Design configurations to fill out PDF templates
+              href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?context=/dynamics365/context/supply-chain
+            - name: Embed images and shapes
+              items:
+                - name: Embed images and shapes in documents that you generate
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?context=/dynamics365/context/supply-chain
+                - name: Example of embedding images and shapes
+                  items:
+                    - name: Design configurations to generate reports in Office formats that have embedded images
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?context=/dynamics365/context/supply-chain
+                    - name: Review configurations to generate reports in Office formats that have embedded images
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?context=/dynamics365/context/supply-chain
+                    - name: Generate reports in Office formats that have embedded images
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?context=/dynamics365/context/supply-chain
+                - name: Design an ER format to generate a report in Excel with embedded images in page headers or footers
+                  href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?context=/dynamics365/context/supply-chain
+            - name: Split generated XML files based on file size and content quantity
+              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?context=/dynamics365/context/supply-chain
+            - name: Suppress BOM characters in generated files
+              href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?context=/dynamics365/context/supply-chain
+        - name: Update application data using ER
           items:
-          - name: Design a new ER configuration to generate reports in Word format
-            href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?context=/dynamics365/context/supply-chain
-          - name: Reuse ER configurations with Excel templates to generate reports in Word format
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?context=/dynamics365/context/supply-chain
-          - name: Suppress Word content controls in generated reports
-            href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?context=/dynamics365/context/supply-chain
-        - name: Design configurations to fill out PDF templates
-          href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?context=/dynamics365/context/supply-chain
-        - name: Embed images and shapes
+            - name: Generate electronic documents and update application data
+              href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?context=/dynamics365/context/supply-chain
+            - name: Import configurations to generate documents with application data
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?context=/dynamics365/context/supply-chain
+            - name: Design configurations to generate documents with application data
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?context=/dynamics365/context/supply-chain
+            - name: Modify models and mappings to generate documents with application data
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?context=/dynamics365/context/supply-chain
+            - name: Modify formats to generate documents with application data
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?context=/dynamics365/context/supply-chain
+            - name: Generate documents that have application data
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?context=/dynamics365/context/supply-chain
+        - name: Import data from incoming files by using ER solutions
           items:
-          - name: Embed images and shapes in documents that you generate
-            href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?context=/dynamics365/context/supply-chain
-          - name: Example of embedding images and shapes
-            items:
-            - name: Design configurations to generate reports in Office formats that have embedded images
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?context=/dynamics365/context/supply-chain
-            - name: Review configurations to generate reports in Office formats that have embedded images
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?context=/dynamics365/context/supply-chain
-            - name: Generate reports in Office formats that have embedded images
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?context=/dynamics365/context/supply-chain
-        - name: Split generated XML files based on file size and content quantity
-          href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?context=/dynamics365/context/supply-chain
-        - name: Suppress BOM characters in generated files
-          href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?context=/dynamics365/context/supply-chain
-      - name: Update application data using ER
-        items:
-        - name: Generate electronic documents and update application data
-          href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?context=/dynamics365/context/supply-chain
-        - name: Import configurations to generate documents with application data
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?context=/dynamics365/context/supply-chain
-        - name: Design configurations to generate documents with application data
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?context=/dynamics365/context/supply-chain
-        - name: Modify models and mappings to generate documents with application data
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?context=/dynamics365/context/supply-chain
-        - name: Modify formats to generate documents with application data
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?context=/dynamics365/context/supply-chain
-        - name: Generate documents that have application data
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?context=/dynamics365/context/supply-chain
-      - name: Import data from incoming files by using ER solutions
-        items:
-        - name: Parse incoming documents in different formats
-          href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?context=/dynamics365/context/supply-chain
-        - name: Configure data import from manually selected files
+            - name: Parse incoming documents in different formats
+              href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?context=/dynamics365/context/supply-chain
+            - name: Configure data import from manually selected files
+              items:
+                - name: Create configurations to import data from an external XML file
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?context=/dynamics365/context/supply-chain
+                - name: Import data from manually selected files in batch mode
+                  href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?context=/dynamics365/context/supply-chain
+            - name: Configure data import in batch mode from SharePoint located files
+              href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?context=/dynamics365/context/supply-chain
+            - name: Import files in XML format
+              items:
+                - name: Import files in XML format with optional attributes
+                  href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?context=/dynamics365/context/supply-chain
+                - name: Configure ER formats to import XML format files with optional attributes
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?context=/dynamics365/context/supply-chain
+        - name: Configuration lifecycle
           items:
-          - name: Create configurations to import data from an external XML file
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?context=/dynamics365/context/supply-chain
-          - name: Import data from manually selected files in batch mode
-            href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?context=/dynamics365/context/supply-chain
-        - name: Configure data import in batch mode from SharePoint located files
-          href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?context=/dynamics365/context/supply-chain
-        - name: Import files in XML format
+            - name: Manage configurations lifecycle
+              href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?context=/dynamics365/context/supply-chain
+            - name: Lifecycle Services (LCS)
+              items:
+                - name: Upload configurations into LCS
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?context=/dynamics365/context/supply-chain
+                - name: Import configurations from LCS
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?context=/dynamics365/context/supply-chain
+                - name: Download configurations from LCS
+                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?context=/dynamics365/context/supply-chain
+                - name: Import configurations (LBD)
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?context=/dynamics365/context/supply-chain
+        - name: Quick start guides
           items:
-          - name: Import files in XML format with optional attributes
-            href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?context=/dynamics365/context/supply-chain
-          - name: Configure ER formats to import XML format files with optional attributes
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?context=/dynamics365/context/supply-chain
-      - name: Configuration lifecycle
-        items:
-        - name: Manage configurations lifecycle
-          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?context=/dynamics365/context/supply-chain
-        - name: Lifecycle Services
+            - name: Adjust an ER format to generate a custom electronic document
+              href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?context=/dynamics365/context/supply-chain
+            - name: Design a new ER solution to print a custom report
+              href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?context=/dynamics365/context/supply-chain
+            - name: Adjust an ER solution to generate a custom electronic document
+              href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?context=/dynamics365/context/supply-chain
+        - name: Tutorials
           items:
-          - name: Upload configurations into Lifecycle Services
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?context=/dynamics365/context/supply-chain
-          - name: Import configurations from Lifecycle Services
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?context=/dynamics365/context/supply-chain
-          - name: Download configurations from Lifecycle Services
-            href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?context=/dynamics365/context/supply-chain
-          - name: Import configurations (LBD)
-            href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?context=/dynamics365/context/supply-chain
-        - name: Regulatory configuration service (RCS)
+            - name: Learn how to use data sources
+              items:
+                - name: Use JOIN to get data from multiple tables
+                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?context=/dynamics365/context/supply-chain
+                - name: Use RAW XML to add content
+                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?context=/dynamics365/context/supply-chain
+                - name: Support parameterized calls of CALCULATED FIELD data sources
+                  items:
+                    - name: Improve user experience and usability maintenance
+                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?context=/dynamics365/context/supply-chain
+                    - name: Improve performance of data access
+                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?context=/dynamics365/context/supply-chain
+                - name: Cross-company ER data sources
+                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?context=/dynamics365/context/supply-chain
+                - name: Use FINANCIAL DIMENSIONS DETAILS data sources
+                  items:
+                    - name: Design data models
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?context=/dynamics365/context/supply-chain
+                    - name: Map models to use financial dimensions
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?context=/dynamics365/context/supply-chain
+                    - name: Design reports
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?context=/dynamics365/context/supply-chain
+                    - name: Run reports
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?context=/dynamics365/context/supply-chain
+                - name: Group records and perform counting and summing by using GROUPBY data sources
+                  href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?context=/dynamics365/context/supply-chain
+                - name: Use the generated output as a data source to perform counting and summing
+                  items:
+                    - name: Create formats
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?context=/dynamics365/context/supply-chain
+                    - name: Configure format to perform counting and summing
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?context=/dynamics365/context/supply-chain
+                    - name: Generate the output for counting and summing
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?context=/dynamics365/context/supply-chain
+                    - name: Run formats to perform counting and summing
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?context=/dynamics365/context/supply-chain
+                - name: Use the DOCUMENTS relations to access Document management files
+                  items:
+                    - name: Prepare data models
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?context=/dynamics365/context/supply-chain
+                    - name: Extend data models to use Document management files
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?context=/dynamics365/context/supply-chain
+                    - name: Create formats
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?context=/dynamics365/context/supply-chain
+                    - name: Run formats to use Document management files
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?context=/dynamics365/context/supply-chain
+                    - name: Modify and run formats to use Document management files
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?context=/dynamics365/context/supply-chain
+                - name: Use BARCODE to generate barcode images
+                  href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?context=/dynamics365/context/supply-chain
+                - name: Configure LOOKUP data sources to use ER application-specific parameters
+                  href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?context=/dynamics365/context/supply-chain
+                - name: Use DATA COLLECTION data sources in ER formats
+                  href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?context=/dynamics365/context/supply-chain
+                - name: Use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate
+                  href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?context=/dynamics365/context/supply-chain
+                - name: Debug data sources
+                  href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?context=/dynamics365/context/supply-chain
+            - name: Configure data models
+              items:
+                - name: Support parameterized calls of ER data models
+                  href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/supply-chain
+            - name: Configure model mappings
+              items:
+                - name: Configure country/region context dependent ER model mappings
+                  href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
+                - name: Manage ER model mapping in separate ER configurations
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/supply-chain
+                - name: Manage several derived mappings for a single model root
+                  href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?context=/dynamics365/context/supply-chain
+            - name: Configure formats
+              items:
+                - name: Select model definitions when you create formats
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?context=/dynamics365/context/supply-chain
+                - name: Configure ER formats to use parameters that are specified per legal entity
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?context=/dynamics365/context/supply-chain
+                - name: Set up the parameters of an ER format per legal entity
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?context=/dynamics365/context/supply-chain
+                - name: Defer execution of ER format elements
+                  items:
+                    - name: Defer execution of a sequence element
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?context=/dynamics365/context/supply-chain
+                    - name: Defer execution of an XML element
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?context=/dynamics365/context/supply-chain
+                - name: Design multilingual reports
+                  href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?context=/dynamics365/context/supply-chain
+                - name: Compress large outbound documents
+                  href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?context=/dynamics365/context/supply-chain
+            - name: Inspect configured ER components
+              items:
+                - name: Validate ER format and model mapping to prevent runtime issues 
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?context=/dynamics365/context/supply-chain
+                - name: List of validations 
+                  href: ../fin-ops-core/dev-itpro/analytics/er-list-of-validations.md?context=/dynamics365/context/supply-chain
+                - name: Review validation history 
+                  href: ../fin-ops-core/dev-itpro/analytics/er-review-validation-history.md?context=/dynamics365/context/supply-chain               
+            - name: Relative path in data bindings
+              href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?context=/dynamics365/context/supply-chain
+            - name: Design expressions to call application class methods
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?context=/dynamics365/context/supply-chain
+        - name: Use ER solutions in Supply Chain Management
           items:
-          - name: Regulatory configuration service (RCS) overview
-            href: ../finance/localizations/global/rcs-overview.md?context=/dynamics365/context/supply-chain
-          - name: Download ER configurations to Supply Chain Management
-            items:
-            - name: Download configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/supply-chain
-            - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/supply-chain
-          - name: Global repository (GR)
-            items:
-            - name: Import configurations from GR
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/supply-chain
-            - name: Import updated versions of ER configurations
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/supply-chain
-            - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/supply-chain
-            - name: Upload configurations to GR
-              href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
-            - name: Share configurations in GR
-              href: ../finance/localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/supply-chain
-            - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/supply-chain
-      - name: Quick start guides
-        items:
-        - name: Adjust an ER format to generate a custom electronic document
-          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?context=/dynamics365/context/supply-chain
-        - name: Design a new ER solution to print a custom report
-          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?context=/dynamics365/context/supply-chain
-        - name: Adjust an ER solution to generate a custom electronic document
-          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?context=/dynamics365/context/supply-chain
-      - name: Tutorials
-        items:
-        - name: Learn how to use data sources
+            - name: Configure the framework
+              items:
+                - name: Configure the Electronic reporting framework
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?context=/dynamics365/context/supply-chain
+                - name: Back up and recover ER templates
+                  items:
+                    - name: Backup storage of ER templates
+                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?context=/dynamics365/context/supply-chain
+                    - name: ER migration cleanup
+                      href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?context=/dynamics365/context/supply-chain
+                - name: Create configuration provides and mark them as active
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?context=/dynamics365/context/supply-chain
+            - name: Destinations
+              items:
+                - name: Destinations overview
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?context=/dynamics365/context/supply-chain
+                - name: Destination types
+                  items:
+                    - name: Archive destination
+                      href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?context=/dynamics365/context/supply-chain
+                    - name: Email destination
+                      href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?context=/dynamics365/context/supply-chain
+                    - name: File destination
+                      href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?context=/dynamics365/context/supply-chain
+                    - name: Power BI destination
+                      href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?context=/dynamics365/context/supply-chain
+                    - name: Printer destination
+                      href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?context=/dynamics365/context/supply-chain
+                    - name: Screen destination
+                      href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?context=/dynamics365/context/supply-chain
+                - name: Configure destinations
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?context=/dynamics365/context/supply-chain
+                - name: Configure action-dependent destinations
+                  href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?context=/dynamics365/context/supply-chain
+                - name: Configure print management record-specific destinations
+                  href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?context=/dynamics365/context/supply-chain
+                - name: Output unfolding for Folder component of ER format
+                  href: ../fin-ops-core/dev-itpro/analytics/er-output-unfolding.md?context=/dynamics365/context/supply-chain
+                - name: Change page layout properties of a template in ER destinations
+                  href: ../fin-ops-core/dev-itpro/analytics/er-change-page-layout-properties-of-template.md?context=/dynamics365/context/supply-chain
+                - name: Output conversion to PDF
+                  href: ../fin-ops-core/dev-itpro/analytics/er-output-conversion-to-pdf.md?context=/dynamics365/context/supply-chain
+                - name: Export-import and replicate ER destinations
+                  href: ../fin-ops-core/dev-itpro/analytics/er-export-import-replicate-destinations.md?context=/dynamics365/context/supply-chain
+                - name: Destination failure handling
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-failure-handling.md?context=/dynamics365/context/supply-chain
+                - name: Design a new ER solution to print ZPL labels
+                  href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?context=/dynamics365/context/supply-chain
+            - name: Set up a reference to an ER format
+              href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?context=/dynamics365/context/supply-chain
+            - name: Automatically validate generated reports
+              items:
+                - name: Trace generated report results and compare them with baseline values
+                  href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?context=/dynamics365/context/supply-chain
+                - name: Improve tracing the results of generated ER reports to compare with baseline values
+                  href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?context=/dynamics365/context/supply-chain
+                - name: Automate testing with ER
+                  href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?context=/dynamics365/context/supply-chain
+            - name: Automate business processes by using ER configurations
+              items:
+                - name: Configure ER to pull data into Power BI
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?context=/dynamics365/context/supply-chain
+                - name: Generate printable free text invoice (FTI) forms
+                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?context=/dynamics365/context/supply-chain
+            - name: Design efficient ER solutions
+              items:
+                - name: Trace execution of ER formats to troubleshoot performance issues
+                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?context=/dynamics365/context/supply-chain
+                - name: Performance and memory considerations for Electronic reporting (ER)
+                  href: ../fin-ops-core/dev-itpro/analytics/er-memory-considerations.md?context=/dynamics365/context/supply-chain
+                - name: Troubleshoot performance issues in ER configurations
+                  href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?context=/dynamics365/context/supply-chain
+                - name: Reduce the number of table fields that are fetched at runtime
+                  href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?context=/dynamics365/context/supply-chain
+            - name: Business document management (BDM)
+              items:
+                - name: Business document management overview
+                  href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?context=/dynamics365/context/supply-chain
+                - name: Configure Electronic reporting parameters for business documents
+                  href: ../fin-ops-core/dev-itpro/analytics/er-business-document-configure-parameters.md?context=/dynamics365/context/supply-chain
+                - name: Manage access permissions to edit templates for configurable business documents
+                  href: ../fin-ops-core/dev-itpro/analytics/er-business-document-configure-access-permissions.md?context=/dynamics365/context/supply-chain
+                - name: Use Business document management
+                  href: ../fin-ops-core/dev-itpro/analytics/er-business-document-edit.md?context=/dynamics365/context/supply-chain
+                - name: List of configurable business documents
+                  href: ../fin-ops-core/dev-itpro/analytics/er-business-document-list.md?context=/dynamics365/context/supply-chain
+        - name: ER framework API
           items:
-          - name: Use JOIN to get data from multiple tables
-            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?context=/dynamics365/context/supply-chain
-          - name: Use RAW XML to add content
-            href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?context=/dynamics365/context/supply-chain
-          - name: Support parameterized calls of CALCULATED FIELD data sources
-            items:
-            - name: Improve user experience and usability maintenance
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?context=/dynamics365/context/supply-chain
-            - name: Improve performance of data access
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?context=/dynamics365/context/supply-chain
-          - name: Cross-company ER data sources
-            href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?context=/dynamics365/context/supply-chain
-          - name: Use FINANCIAL DIMENSIONS DETAILS data sources
-            items:
-            - name: Design data models
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?context=/dynamics365/context/supply-chain
-            - name: Map models to use financial dimensions
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?context=/dynamics365/context/supply-chain
-            - name: Design reports
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?context=/dynamics365/context/supply-chain
-            - name: Run reports
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?context=/dynamics365/context/supply-chain
-          - name: Use the generated output as a data source to perform counting and summing
-            items:
-            - name: Create formats
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?context=/dynamics365/context/supply-chain
-            - name: Configure format to perform counting and summing
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?context=/dynamics365/context/supply-chain
-            - name: Generate the output for counting and summing
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?context=/dynamics365/context/supply-chain
-            - name: Run formats to perform counting and summing
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?context=/dynamics365/context/supply-chain
-          - name: Use the DOCUMENTS relations to access Document management files
-            items:
-            - name: Prepare data models
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?context=/dynamics365/context/supply-chain
-            - name: Extend data models to use Document management files
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?context=/dynamics365/context/supply-chain
-            - name: Create formats
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?context=/dynamics365/context/supply-chain
-            - name: Run formats to use Document management files
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?context=/dynamics365/context/supply-chain
-            - name: Modify and run formats to use Document management files
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?context=/dynamics365/context/supply-chain
-          - name: Use BARCODE to generate barcode images
-            href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?context=/dynamics365/context/supply-chain
-          - name: Configure LOOKUP data sources to use ER application-specific parameters
-            href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?context=/dynamics365/context/supply-chain
-          - name: Use DATA COLLECTION data sources in ER formats
-            href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?context=/dynamics365/context/supply-chain
-          - name: Use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate
-            href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?context=/dynamics365/context/supply-chain
-          - name: Debug data sources
-            href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?context=/dynamics365/context/supply-chain
-        - name: Configure data models
-          items:
-          - name: Support parameterized calls of ER data models
-            href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/supply-chain
-        - name: Configure model mappings
-          items:
-          - name: Configure country/region context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
-          - name: Manage ER model mapping in separate ER configurations
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/supply-chain
-          - name: Manage several derived mappings for a single model root
-            href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?context=/dynamics365/context/supply-chain
-        - name: Configure formats
-          items:
-          - name: Select model definitions when you create formats
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?context=/dynamics365/context/supply-chain
-          - name: Configure ER formats to use parameters that are specified per legal entity
-            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?context=/dynamics365/context/supply-chain
-          - name: Set up the parameters of an ER format per legal entity
-            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?context=/dynamics365/context/supply-chain
-          - name: Defer execution of ER format elements
-            items:
-            - name: Defer execution of a sequence element
-              href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?context=/dynamics365/context/supply-chain
-            - name: Defer execution of an XML element
-              href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?context=/dynamics365/context/supply-chain
-          - name: Design multilingual reports
-            href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?context=/dynamics365/context/supply-chain
-          - name: Compress large outbound documents
-            href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?context=/dynamics365/context/supply-chain
-        - name: Inspect configured ER components
-          href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?context=/dynamics365/context/supply-chain
-        - name: Relative path in data bindings
-          href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?context=/dynamics365/context/supply-chain
-      - name: Use ER solutions in Supply Chain Management
-        items:
-        - name: Configure the framework
-          items:
-          - name: Configure the Electronic reporting framework
-            href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?context=/dynamics365/context/supply-chain
-          - name: Back up and recover ER templates
-            items:
-            - name: Backup storage of ER templates
-              href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?context=/dynamics365/context/supply-chain
-            - name: ER migration cleanup
-              href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?context=/dynamics365/context/supply-chain
-          - name: Create configuration provides and mark them as active
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?context=/dynamics365/context/supply-chain
-        - name: Destinations
-          items:
-          - name: Destinations overview
-            href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?context=/dynamics365/context/supply-chain
-          - name: Destination types
-            items:
-            - name: Archive destination
-              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?context=/dynamics365/context/supply-chain
-            - name: Email destination
-              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?context=/dynamics365/context/supply-chain
-            - name: File destination
-              href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?context=/dynamics365/context/supply-chain
-            - name: Power BI destination
-              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?context=/dynamics365/context/supply-chain
-            - name: Printer destination
-              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?context=/dynamics365/context/supply-chain
-            - name: Screen destination
-              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?context=/dynamics365/context/supply-chain
-          - name: Configure destinations
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?context=/dynamics365/context/supply-chain
-          - name: Configure action-dependent destinations
-            href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?context=/dynamics365/context/supply-chain
-          - name: Configure print management record-specific ER destinations
-            href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?context=/dynamics365/context/supply-chain
-        - name: Set up a reference to an ER format
-          href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?context=/dynamics365/context/supply-chain
-        - name: Automatically validate generated reports
-          items:
-          - name: Trace generated report results and compare them with baseline values
-            href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?context=/dynamics365/context/supply-chain
-          - name: Improve tracing the results of generated ER reports to compare with baseline values
-            href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?context=/dynamics365/context/supply-chain
-          - name: Automate testing with ER
-            href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?context=/dynamics365/context/supply-chain
-        - name: Automate business processes by using Electronic reporting configurations
-          items:
-          - name: Configure ER to pull data into Power BI
-            href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?context=/dynamics365/context/supply-chain
-          - name: Generate printable free text invoice (FTI) forms
-            href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?context=/dynamics365/context/supply-chain
-        - name: Design efficient ER solutions
-          items:
-          - name: Trace execution of ER formats to troubleshoot performance issues
-            href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?context=/dynamics365/context/supply-chain
-          - name: Troubleshoot performance issues in ER configurations
-            href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?context=/dynamics365/context/supply-chain
-          - name: Reduce the number of table fields that are fetched at runtime
-            href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?context=/dynamics365/context/supply-chain
-        - name: Business document management (BDM)
-          items:
-          - name: BDM overview
-            href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?context=/dynamics365/context/supply-chain
-          - name: New document user interface in BDM
-            href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?context=/dynamics365/context/supply-chain
-          - name: Edit business document templates in BDM
-            items:
-            - name: Add new fields to a business document template in Microsoft Excel
-              href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?context=/dynamics365/context/supply-chain
-            - name: Update the structure of a business document template
-              href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?context=/dynamics365/context/supply-chain
-      - name: ER framework API
-        items:
-        - name: Extend the list of built-in functions
-          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?context=/dynamics365/context/supply-chain
-        - name: API changes
-          items:
-          - name: Application update 7.3
-            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?context=/dynamics365/context/supply-chain
-          - name: Application update 10.0.11
-            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?context=/dynamics365/context/supply-chain
-          - name: Application update 10.0.17
-            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?context=/dynamics365/context/supply-chain
-          - name: Application update 10.0.19
-            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?context=/dynamics365/context/supply-chain
-          - name: Application update 10.0.21
-            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?context=/dynamics365/context/supply-chain
-          - name: Application update 10.0.23
-            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?context=/dynamics365/context/supply-chain
-          - name: Application update 10.0.25
-            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?context=/dynamics365/context/supply-chain
-        - name: Specify a custom storage location for generated documents
-          items:
-          - name: Subscribe to an event to request a response from subscribing handler
-            href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?context=/dynamics365/context/supply-chain
-          - name: Delegate the creation of an ER destination to a custom destination factory
-            href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?context=/dynamics365/context/supply-chain
-        - name: Implement a custom destination for generated documents
-          href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?context=/dynamics365/context/supply-chain
-        - name: Initiate data source values of the USER INPUT PARAMETER type from source code
-          href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?context=/dynamics365/context/supply-chain
-        - name: Change code to enable users to configure and use named ER destinations
-          href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+            - name: Extend the list of built-in functions
+              href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?context=/dynamics365/context/supply-chain
+            - name: API changes
+              items:
+                - name: Application update 7.3
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?context=/dynamics365/context/supply-chain
+                - name: Application update 10.0.11
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?context=/dynamics365/context/supply-chain
+                - name: Application update 10.0.17
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?context=/dynamics365/context/supply-chain
+                - name: Application update 10.0.19
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?context=/dynamics365/context/supply-chain
+                - name: Application update 10.0.21
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?context=/dynamics365/context/supply-chain
+                - name: Application update 10.0.23
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?context=/dynamics365/context/supply-chain
+                - name: Application update 10.0.25
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?context=/dynamics365/context/supply-chain
+            - name: Specify a custom storage location for generated documents
+              items:
+                - name: Subscribe to an event to request a response from subscribing handler
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?context=/dynamics365/context/supply-chain
+                - name: Delegate the creation of an ER destination to a custom destination factory
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?context=/dynamics365/context/supply-chain
+                - name: Implement a custom destination for generated documents
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?context=/dynamics365/context/supply-chain
+            - name: Initiate data source values of the USER INPUT PARAMETER type from source code
+              href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?context=/dynamics365/context/supply-chain
+            - name: Change code to enable users to configure and use named ER destinations
+              href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?context=/dynamics365/context/supply-chain
+            - name: Implement a custom ER source of inbound documents
+              href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?context=/dynamics365/context/supply-chain
     - name: Inventory management
       items:
       - name: Inventory management overview
@@ -2431,6 +2449,8 @@
           href: procurement/purchase-order-overview.md
         - name: Approve and confirm purchase orders
           href: procurement/purchase-order-approval-confirmation.md
+        - name: Configure purchase order confirmation batch jobs
+          href: procurement/purchase-order-confirmation.md
         - name: Calculate requested ship dates for purchase orders
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Review and accept changes to confirmed purchase orders

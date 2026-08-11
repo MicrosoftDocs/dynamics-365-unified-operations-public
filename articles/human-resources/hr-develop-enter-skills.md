@@ -4,7 +4,7 @@
 title: Enter skills
 description: Works and managers can enter skills in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/23/2024
+ms.date: 08/06/2026
 ms.topic: how-to
 # optional metadata
 
@@ -38,42 +38,42 @@ To enter skills without requiring approval, you must create a workflow to auto-a
 > Skills entered by workers always require manager approval. This workflow only auto-approves skills entered by managers on behalf of their workers.
 
 1. In the **Personnel management** workspace, select **Links**.
-2. Under **Setup**, select **Human resources workflows**.
-3. Select **New**.
-4. In the **Create workflow** pane, select **Worker skills**.
+1. Under **Setup**, select **Human resources workflows**.
+1. Select **New**.
+1. In the **Create workflow** pane, select **Worker skills**.
 
    [![Select Worker skills workflow.](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
-5. In the **Open this file?** dialogue, select **Open**. When prompted, enter your credentials.
-6. In the workflow editor, select the **Approve skills** workflow element and drag it onto the canvas.
+1. In the **Open this file?** dialog, select **Open**. When prompted, enter your credentials.
+1. In the workflow editor, select the **Approve skills** workflow element and drag it onto the canvas.
 
    [![Select Approve skills workflow element.](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
-7. Connect the **Start** element to the **Approve skills 1** element, and then connect the **Approve skills 1** element to the **End** element. You might need to scroll down to see the **End** element. You can drag it closer to the other elements.
+1. Connect the **Start** element to the **Approve skills 1** element, and then connect the **Approve skills 1** element to the **End** element. You might need to scroll down to see the **End** element. You can drag it closer to the other elements.
 
    [![Connect workflow elements.](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
-8. Double-click the **Approve skills 1** workflow element, and then right-click the **Step 1** element. Right-click the **Step 1** element, and then select **Properties**.
-9. In the **Properties** window, select **Condition** on the left-hand nav bar.
-10. Select **Run this step only when the following condition is met**.
-11. Select **Add condition**. After **Where**, select **Employee self service skills**, and then select **Employee self service skills.Person**. After **is**, select **field**, and then select **User to person relationship.Person**.
+1. Double-click the **Approve skills 1** workflow element, and then right-click the **Step 1** element. Right-click the **Step 1** element, and then select **Properties**.
+1. In the **Properties** window, select **Condition** on the left-hand nav bar.
+1. Select **Run this step only when the following condition is met**.
+1. Select **Add condition**. After **Where**, select **Employee self service skills**, and then select **Employee self service skills.Person**. After **is**, select **field**, and then select **User to person relationship.Person**.
 
     [![Specify condition.](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
-12. Select **Assignment** on the left-hand nav bar.
-13. On the **Assignment type** tab, select **Hierarchy**.
-14. On the **Hierarchy selection** tab, in the **Hierarchy type:** field, select **Managerial hierarchy**.
+1. Select **Assignment** on the left-hand nav bar.
+1. On the **Assignment type** tab, select **Hierarchy**.
+1. On the **Hierarchy selection** tab, in the **Hierarchy type:** field, select **Managerial hierarchy**.
 
     [![Specify managerial hierarchy.](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
-15. Select **Close**, select **Workflow** in the canvas breadcrumb, and then select **Save and close**.
+1. Select **Close**, select **Workflow** in the canvas breadcrumb, and then select **Save and close**.
 For more information about creating workflows, see [Workflow system overview](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json).
 
 ## Enter skills for a worker
 
 1. Select a worker.
-2. In the action bar of the **Worker** page, select **Person**, and then select **Skills**.
-3. On the **Skills** page, complete the following fields for each skill:
+1. In the action bar of the **Worker** page, select **Person**, and then select **Skills**.
+1. On the **Skills** page, complete the following fields for each skill:
 
    - **Skill**: Select a skill.
    - **Level type**: Select **Actual** for a skill the worker already has, or select **Target** for a skill the worker is working toward.
@@ -84,7 +84,7 @@ For more information about creating workflows, see [Workflow system overview](..
    - **Verified**: If the skill is verified, check the box.
    - **Verified by**: Enter the name of the verifier.
 
-4. When you're done entering skills, select **Save**.
+1. When you're done entering skills, select **Save**.
 
 ## See also
 

@@ -4,7 +4,7 @@
 title: Configure integration with dataverse tables
 description: This article describes the integration between Microsoft Dynamics 365 Human Resources and Dataverse.
 author: twheeloc  
-ms.date: 01/15/2025
+ms.date: 08/06/2026
 ms.topic: how-to
 # optional metadata
 
@@ -25,32 +25,31 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure integration with Dataverse tables
 
-To integrate Microsoft Dynamics 365 Human Resources with Dataverse, use the [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources–to–Dataverse template enables data for jobs, positions, workers, and others to flow from Human Resources into Dataverse, and from Dataverse into Human Resources, creating a write in both systems.
-
+To integrate Microsoft Dynamics 365 Human Resources with Dataverse, use the [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources–to–Dataverse template enables data for jobs, positions, workers, and other entities to flow from Human Resources into Dataverse, and from Dataverse into Human Resources, creating a write in both systems.
 
 ## Template and tasks
 
 Follow these steps to access the Human Resources–to–Finance template.
 
-1. Open [Power Apps admin center](https://admin.powerapps.com/). 
-2. Under your environment, select **Dynamics 365 Apps**, and then select **App source** on the toolbar.
-3. To install the template, search for "Dual-write Human Resources," or go directly to the following address: <https://marketplace.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite>.
-3. After installation is completed, open Dynamics 365 Human Resources.
-4. Open the **Data Management** workspace. 
-5. Select **Dual Write**. 
-6. Follow the process for linking your environment for at least one company in your organization. 
-7. When you've finished setting up a link to your Dataverse environment, select **Apply Solution**. The solution is applied, and the mappings are installed into the integrator app.
+1. Open [Power Apps admin center](https://admin.powerapps.com/).
+1. Under your environment, select **Dynamics 365 Apps**, and then select **App source** on the toolbar.
+1. To install the template, search for "Dual-write Human Resources," or go directly to the following address: <https://marketplace.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite>.
+1. After installation is completed, open Dynamics 365 Human Resources.
+1. Open the **Data Management** workspace.
+1. Select **Dual Write**.
+1. Follow the process for linking your environment for at least one company in your organization.
+1. When you finish setting up a link to your Dataverse environment, select **Apply Solution**. The solution is applied, and the mappings are installed into the integrator app.
 
 >[!NOTE]
->There are three solution packages needed for Dual-write Human Resources. For more information, see [Separated Dual-write Application Orchestration package](../fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions.md#dual-write-human-resources).
+>Dual-write Human Resources requires three solution packages. For more information, see [Separated Dual-write Application Orchestration package](../fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions.md#dual-write-human-resources).
 
 ## Template mappings
 
-In the following template mapping tables, the name of the task indicates the entities that are used in each application. Finance is on the left, and Dataverse is on the right.
+In the following template mapping tables, the name of the task indicates the entities that each application uses. Finance is on the left, and Dataverse is on the right.
 
 ### Bank account disbursements (Dual-write) to bank account disbursement
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | ACCOUNTIDENTIFICATIONID        | cdm\_bankaccountid.cdm\_accountidentification        |
 | AMOUNT                         | cdm\_amount                                         |
@@ -60,7 +59,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Benefit calculation rate detail (Dual-write) to benefit calculation rate detail
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | CONTRIBUTIONMETHOD             | cdm\_contributionmethod                             |
 | EFFECTIVE                      | cdm\_effective                                      |
@@ -71,7 +70,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Benefit calculation rate header to benefit calculation rate
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | NAME                           | cdm\_name                                           |
@@ -79,7 +78,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Benefit option to benefit option
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | ALLOWBENEFICIARYDESIGNATIONS   | cdm\_allowbeneficiarydesignations                   |
 | ALLOWDEPENDENTCOVERAGE         | cdm\_allowdependentcoverage                         |
@@ -89,7 +88,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Benefit type to benefit type
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | BENEFITTYPEID                  | cdm\_name                                           |
 | CONCURRENTENROLLMENT           | cdm\_concurrentenrollment                           |
@@ -98,7 +97,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Business calendar to business process calendar
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | CALENDARID                     | cdm\_name                                           |
 | NAME                           | cdm\_calendarname                                   |
@@ -114,7 +113,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Business process to business process header
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PROCESSID                      | cdm\_processid                                      |
 | PROCESSTYPE                    | cdm\_processtype                                    |
@@ -133,7 +132,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Business process library task group to business process library task group
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PROCESSTYPE                    | cdm\_processtype                                    |
 | NAME                           | cdm\_name                                           |
@@ -141,7 +140,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Business process stage to business process stage
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PROCESSTYPE                    | cdm\_businessprocesstype                            |
 | NAME                           | cdm\_name                                           |
@@ -150,7 +149,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Business process task to business process task
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | DUEDATE                        | cdm\_duedate                                        |
@@ -170,7 +169,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Business process template to checklist template header
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PROCESSTYPE                    | cdm\_businessprocesstype                            |
 | GENERICSUBTYPE                 | cdm\_genericsubtype                                 |
@@ -182,7 +181,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Business process template task to checklist template task
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | TASKID                         | cdm\_taskid                                         |
 | NAME                           | cdm\_name                                           |
@@ -203,7 +202,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Calculation frequency to benefit calculation frequency
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | FREQUENCY                      | cdm\_name                                           |
@@ -212,7 +211,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Calculation frequency pay period to benefit calculation frequency pay period
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | CALCULATIONFREQUENCYID         | cdm\_benefitcalculationfrequencyid.cdm\_name         |
 | PERIODSTARTDATE                | cdm\_payperiodid.cdm\_periodstartdate                |
@@ -220,7 +219,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Calendar to work calendar
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | CALENDARID                     | cdm\_name                                           |
 | CALENDARNAME                   | cdm\_description                                    |
@@ -228,7 +227,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Compensation fixed action table to fixed compensation event
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | ACTION                         | cdm\_name                                           |
 | ACTIVE                         | cdm\_isactive                                       |
@@ -237,7 +236,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Compensation fixed plan to compensation fixed plan
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PLAN                           | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -255,7 +254,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Compensation grids to compensation grid
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | GRIDID                         | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -267,14 +266,14 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Compensation job function to job function
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | JOBFUNCTIONID                  | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
 
 ### Compensation job type to job type
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | JOBTYPEID                      | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -282,7 +281,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Compensation pay frequency to compensation pay frequency
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PAYRATECONVERSION              | cdm\_name                                           |
 | PERIOD                         | cdm\_period                                         |
@@ -294,14 +293,14 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Compensation regions to compensation region
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | LOCATION                       | cdm\_name                                           |
 
 ### Compensation variable plan V2 to compensation variable plan
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | VARIABLEAWARDBASIS             | cdm\_awardbasis                                     |
 | AWARDBASISCALCULATION          | cdm\_awardbasiscalculation                          |
@@ -331,7 +330,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Compensation variable type to compensation variable plan type
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | TYPE                           | cdm\_awardtype                                      |
@@ -339,7 +338,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Compensation vesting rules to vesting rule
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | NOTE                           | cdm\_notes                                          |
@@ -347,7 +346,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Department V2 to department
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | OPERATINGUNITNUMBER            | cdm\_departmentnumber                               |
 | NAME                           | cdm\_name                                           |
@@ -356,7 +355,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Dual Write tax region to tax region
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | CITY                           | cdm\_city                                           |
 | COUNTRYORREGION                | cdm\_countryorregion                                |
@@ -366,7 +365,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Dual Write worker identification to worker person identification number
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | ENTRYTYPE                      | cdm\_entrytype                                      |
@@ -380,7 +379,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Compensation structure V2 to compensation structure
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | AMOUNT                         | cdm\_amount                                         |
 | GRID                           | cdm\_compensationgridid.cdm\_name                    |
@@ -390,7 +389,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Earning code to payroll earning code
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | EARNINGCODE                    | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -401,7 +400,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Employee fixed compensation to worker fixed compensation
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | COMPENSATIONLEVELID            | cdm\_compensationlevelid.cdm\_name                   |
 | TYPE                           | cdm\_compensationtype                               |
@@ -420,7 +419,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Employment per company to employment
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | EMPLOYMENTENDDATE              | cdm\_employmentenddate                              |
 | PERSONNELNUMBER                | cdm\_workerid.cdm\_workernumber                      |
@@ -442,14 +441,14 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Ethnic origins to ethnic origin
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | ETHNICORIGINID                 | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
 
 ### Group assignment to business process group assignment
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | NAME                           | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -457,7 +456,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Identification type to worker person identification type
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | IDENTIFICATIONTYPEID           | cdm\_name                                           |
@@ -467,7 +466,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Issuing agency to person identification issuing agency
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | EMAIL                          | cdm\_email                                          |
 | EXTENSION                      | cdm\_extension                                      |
@@ -488,9 +487,9 @@ In the following template mapping tables, the name of the task indicates the ent
 | ADDRESSZIPCODE                 | cdm\_postalcode                                     |
 | ADDRESSCOUNTRYREGIONISOCODE    | cdm\_countryregion                                  |
 
-### Job Positions Dual Write to job position
+### Job positions Dual Write to job position
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | POSITIONID                     | cdm\_jobpositionnumber                              |
 | ACTIVATION                     | cdm\_activation                                     |
@@ -509,7 +508,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Jobs Dual-write to job
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | JOBID                          | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -525,14 +524,14 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Language codes to language
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | LANGUAGECODEID                 | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
 
 ### Leave and absence bank transaction V2 to leave bank transaction
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | AMOUNT                         | cdm\_amount                                         |
 | LEAVETYPEID                    | cdm\_leavetypeid.cdm\_type                           |
@@ -544,7 +543,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Leave and absence enrollment V2 to leave enrollment
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | STARTDATE                      | cdm\_startdate                                      |
 | ENDDATE                        | cdm\_enddate                                        |
@@ -558,7 +557,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Leave and absence plan V2 to leave plan
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | ACCRUALFREQUENCY               | cdm\_accrualfrequency                               |
 | NAME                           | cdm\_name                                           |
@@ -568,7 +567,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Leave and absence type to leave type
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | TYPE                           | cdm\_type                                           |
@@ -576,14 +575,14 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Leave and absence type reason code to leave type reason code
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | LEAVETYPE                      | cdm\_typeid.cdm\_type                                |
 | REASONCODEID                   | cdm\_reasoncodeid.cdm\_name                          |
 
 ### Leave time-off request detail to leave request detail
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | AMOUNT                         | cdm\_amount                                         |
 | LEAVEDATE                      | cdm\_leavedate                                      |
@@ -592,7 +591,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Leave time-off request header to leave request
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | REQUESTID                      | cdm\_leaverequestnumber                             |
 | REQUESTDATE                    | cdm\_requestdate                                    |
@@ -602,7 +601,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Levels to compensation level
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | TYPE                           | cdm\_type                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -610,7 +609,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Onboarding process header to onboard process header
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PROCESSID                      | cdm\_processheaderid.cdm\_processid                  |
 | ONBOARDEDEMPLOYEEPERSONNELNUMBER | cdm\_onboardedemployeeid.cdm\_workernumber           |
@@ -620,7 +619,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Pay cycle to pay cycle
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PAYCYCLEID                     | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -628,7 +627,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Pay period to pay period
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | COMMENTS                       | cdm\_description                                    |
 | DEFAULTPAYMENTDATE             | cdm\_defaultpaymentdate                             |
@@ -639,7 +638,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Payroll details for positions to payroll position detail
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PAYCYCLEID                     | cdm\_paycycle.cdm\_name                              |
 | POSITIONID                     | cdm\_position.cdm\_jobpositionnumber                 |
@@ -650,14 +649,14 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Position Default Dimensions Dual Write to job position dimension
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DIMENSIONDISPLAYVALUE          | cdm\_dimensiondisplayvalue                          |
 | POSITIONID                     | cdm\_jobpositionid.cdm\_jobpositionnumber            |
 
 ### Position type to position type
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | POSITIONTYPEID                 | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -665,7 +664,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Position worker assignments V2 to position worker assignment
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PERSONNELNUMBER                | cdm\_workerid.cdm\_workernumber                      |
 | POSITIONID                     | cdm\_jobpositionid.cdm\_jobpositionnumber            |
@@ -675,7 +674,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Reason codes to reason code
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | REASONCODEID                   | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -689,9 +688,9 @@ In the following template mapping tables, the name of the task indicates the ent
 | ISTERMINATIONAPPLICABLE        | cdm\_isterminationapplicable                        |
 | ISTRANSFERAPPLICABLE           | cdm\_istransferapplicable                           |
 
-### Reference Point Setup Line (Dual-write) to compensation reference point setup line
+### Reference point setup line (Dual-write) to compensation reference point setup line
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm\_description                                    |
 | LINENUM                        | cdm\_linenumber                                     |
@@ -700,7 +699,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Reference point setups to compensation reference point setup
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | REFERENCESETUP                 | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -708,20 +707,20 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Skill types to skill type
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | SKILLTYPE                      | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
 
 ### Titles to title
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | TITLEID                        | cdm\_name                                           |
 
 ### Variable compensation level V2 to compensation variable plan level
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | AWARDAMOUNT                    | cdm\_awardamount                                    |
 | AWARDPERCENT                   | cdm\_awardpercent                                   |
@@ -731,7 +730,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Veteran status to veteran status
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | VETERANSTATUSID                | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
@@ -739,7 +738,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Work Calendar Enrollments to work calendar enrollment
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | STARTDATE                      | cdm\_employmentid.cdm\_employmentstartdate           |
 | PERSONNELNUMBER                | cdm\_employmentid.cdm\_workerid.cdm\_workernumber     |
@@ -748,14 +747,14 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Work calendar holiday to work calendar holiday
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | ID                             | cdm\_name                                           |
 | DESCRIPTION                    | cdm\_description                                    |
 
 ### Work calendar holiday line to work calendar holiday line
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | HOLIDAYID                      | cdm\_workcalendarholidayid.cdm\_name                 |
 | NAME                           | cdm\_name                                           |
@@ -763,7 +762,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Worker to worker
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PERSONNELNUMBER                | cdm\_workernumber                                   |
 | FIRSTNAME                      | cdm\_firstname                                      |
@@ -783,7 +782,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Worker bank accounts to worker bank account
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | ACCOUNTIDENTIFICATION          | cdm\_accountidentification                          |
 | ADDRESSCITY                    | cdm\_city                                           |
@@ -819,7 +818,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Worker personal details to worker personal detail
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PERSONNELNUMBER                | cdm\_workerid.cdm\_workernumber                      |
 | BIRTHDATE                      | cdm\_birthdate                                      |
@@ -849,7 +848,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Worker postal addresses dual-write to worker address
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | PERSONNELNUMBER                | cdm\_workerid.cdm\_workernumber                      |
 | ADDRESSLOCATIONID              | cdm\_addressnumber                                  |
@@ -871,7 +870,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Working time to work calendar time interval
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | ENDTIME                        | cdm\_endtime                                        |
 | STARTTIME                      | cdm\_starttime                                      |
@@ -881,7 +880,7 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ### Working times to work calendar day
 
-| Finance entity                 | Dataverse table                                    | 
+| Finance entity                 | Dataverse table                                    |
 |--------------------------------|----------------------------------------------------|
 | CALENDARDATE                   | cdm\_calendardate                                   |
 | WORKCALENDARID                 | cdm\_workcalendarid.cdm\_name                        |
@@ -889,8 +888,8 @@ In the following template mapping tables, the name of the task indicates the ent
 
 ## Integration considerations
 
-- All changes that are made to data in either system will be subject to validation by the other system. If a failure occurs, data won't be written in either system. 
-- All writes are subject to data defaulting (if custom logic occurs in Finance).
+- The other system validates all changes to data in either system. If a failure occurs, neither system writes data.
+- Data defaulting (if custom logic occurs in Finance) subjects all writes.
 - The dual-write integrator app uses integration keys to map between the two systems. Sometimes, it's difficult to choose the correct integration key, especially if multiple integration keys satisfy the requirements. To help with this choice, the following table lists the suggested integration keys for your mappings.
 
 | Dataverse table                          | Integration keys |

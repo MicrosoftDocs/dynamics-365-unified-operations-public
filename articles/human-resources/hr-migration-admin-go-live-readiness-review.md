@@ -5,7 +5,7 @@ title: Human Resources migration go-live readiness review
 description: This article provides guidance about the go-live readiness review for Microsoft Dynamics 365 Human Resources migration to the finance and operations infrastructure.
 author: priyankasinha77
 ms.author: prsinha
-ms.date: 8/22/2023
+ms.date: 8/06/2026
 ms.topic: article
 # optional metadata
 
@@ -69,7 +69,7 @@ This article describes the steps of the go-live readiness review for Microsoft D
 
     **Continuous updates**
 
-    - In stand-alone Human Resources, updates are managed by Microsoft on a defined schedule. However, in the finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm that you understand the continuous update policy for finance and operations apps. For more information, see [One version overview](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
+    - In the finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm that you understand the continuous update policy for finance and operations apps. For more information, see [One version overview](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
 
     **Integrations**
 
