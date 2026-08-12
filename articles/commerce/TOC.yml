@@ -550,6 +550,8 @@
           items:
           - name: Set up and design receipt formats
             href: receipt-templates-printing.md
+          - name: Modern receipt designer
+            href: modern-receipt-designer.md
           - name: Send email receipts from Store Commerce
             href: email-receipts.md
           - name: Configure and manage receipt numbers

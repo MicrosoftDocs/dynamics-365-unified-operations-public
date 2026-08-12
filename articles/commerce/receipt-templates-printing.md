@@ -27,7 +27,7 @@ This article describes how to set up and design form layouts to control how rece
 
 To set up a receipt format, follow these steps:
 
-1. In Commerce headquarters, go to **Retail and Commerce > Channel setup > POS setup > POS > Receipt formats**.
+1. In Commerce headquarters, go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Receipt formats**.
 1. On **Receipt format**, select **New** to create a new form layout, or select an existing form layout.
 1. In the **Receipt format** field, enter an identifier for the form layout, and then select the type of receipt that this layout is used for. You can also enter a description and a short name for the receipt in the **Title** field.
 1. On the **General** FastTab, select an option to define the print behavior:
@@ -66,7 +66,7 @@ Use the form layout designer to graphically create the layout of the form docume
 
 To design a receipt format, follow these steps:
 
-1. In headquarters, go to **Retail and Commerce > Channel setup > POS setup > POS > Receipt formats**.
+1. In headquarters, go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Receipt formats**.
 1. On the **Receipt format** page, select a form layout, and then select **Designer**.
 1. Select **Run** to start the installation of the Commerce designer host.
 1. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Open** to start the installation of the designer. (The notification bar might appear in a different location in other browsers.) The progress indicator shows the progress of the installation process.
@@ -94,10 +94,14 @@ Assign receipt profiles directly to printers through the hardware profile.
 
 To assign receipt profiles, follow these steps:
 
-1. In headquarters, go to **Retail and Commerce > Channel setup > POS setup > POS profiles > Hardware profile** to open the hardware profile.
+1. In headquarters, go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS profiles** > **Hardware profile** to open the hardware profile.
 1. Select the printer. In the **Receipt profile** field, assign the receipt profile to use on the register.
 
 > [!NOTE]
 > If you use two printers, one printer can print standard 40-column thermal receipts. The second printer typically prints full-page receipt types that require more information. These receipt types include customer order receipts and customer invoices.
+
+## Learn more
+
+- [Modern receipt designer in Commerce headquarters](modern-receipt-designer.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
