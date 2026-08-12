@@ -5,7 +5,7 @@ author: jodahlMSFT
 ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/01/2026
 ms.custom: 
   - bap-template
@@ -18,7 +18,7 @@ ms.custom:
 > [!IMPORTANT]
 > The Asset Management mobile app is now available on GitHub as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). It provides the same functionality as the original app and is freely customizable. The existing app remains available for installation through [Dynamics 365 apps in the Power Platform admin center](/power-platform/admin/manage-apps) until November 30, 2026, with critical fixes from Microsoft during this transition period. After that date, the app is no longer distributed through the admin center. Existing installations continue to work in customer tenants.
 
-Until now, canvas-app customizations made in Power Apps Studio weren't preserved across official updates. Releasing the source code as open source removes that limitation: you can build from the source, customize it freely, and deploy under your own publisher without your changes being overwritten by Microsoft updates.
+Until now, canvas-app customizations made in Power Apps Studio weren't preserved across official updates. Releasing the source code as open source removes that limitation: you can build from the source, customize it freely, and deploy under your own publisher without your changes being overwritten by Microsoft updates. This article explains the open-source release timeline and what it means for both existing and new installations. It also outlines your transition options, including how to build, customize, and deploy your own version from the GitHub source.
 
 ## Open-source release timeline
 

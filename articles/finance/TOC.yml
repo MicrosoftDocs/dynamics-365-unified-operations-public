@@ -2938,6 +2938,8 @@
                           href: localizations/france/emea-fra-e-reporting-experience.md
                         - name: Data collection and classification for the French e-reporting
                           href: localizations/france/emea-fra-e-reporting-details.md
+                        - name: Seller and Buyer identification (CompanyId) in French e-reporting
+                          href: localizations/france/emea-fra-e-reporting-companyid.md
                     - name: EU sales list
                       href: localizations/france/emea-fra-eu-sales-list.md
                     - name: French Intrastat

@@ -1,8 +1,8 @@
 ---
 title: Import inbound ASNs as despatch advice messages
 description: Learn how to import inbound advanced shipping notices (ASNs) as despatch advice messages that support processing dependencies and full-document updates.
-author: jususnja
-ms.author: jususnja
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 07/23/2026
 ms.custom: 
