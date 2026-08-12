@@ -4,7 +4,7 @@ description: Learn about application business events, including a table that out
 author: Sunil-Garg
 ms.author: sunilg
 ms.topic: article
-ms.date: 04/08/2026
+ms.date: 08/12/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: IT Pro
@@ -32,6 +32,9 @@ This article lists application business events.
 | Invoice approval journal posted | This event triggers when a user posts an invoice approval journal as part of the Procure to pay process.                      | Accounts payable |
 |Purchase order confirmed |This event triggers when a vendor confirms a purchase order. One of the following actions triggers the event: the user manually confirms a purchase order in the user interface for purchase orders, when the purchase order confirmation is executed in a batch, or when the confirmation is executed programmatically in intercompany scenarios. In scenarios where vendor collaboration is used, and the vendor collaboration policy is set to autoconfirm a purchase order, the trigger occurs when the **Accept** button is clicked on the **Purchase order confirmation**  page in the **Vendor collaboration** portal.|Procurement and sourcing|
 |Purchase order received |This event triggers when goods or services are registered as received against one or more purchase orders. One of the following actions triggers the event: a product receipt is generated for one or more purchase orders manually in the user interface for purchase orders and product receipts, when product receipts are generated in a batch, or when product receipts are generated programmatically in intercompany scenarios.|Procurement and sourcing|
+
+> [!NOTE]
+> The **Purchase order confirmed** event is sent when purchase order confirmation processing changes the source document state to **Completed**. With change management enabled, approval of a purchase order change doesn't always repeat this transition. If the source document is already **Completed**, the event isn't sent. Don't use this event to track every purchase order field change; use a separate supported integration for changes that don't perform a new confirmation transition.
 
 ## Quote to cash
 
