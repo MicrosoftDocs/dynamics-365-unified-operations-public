@@ -546,7 +546,11 @@ items:
       - name: Recruiting requests 
         items:
         - name: Recruit job candidates
-          href: hr-personnel-recruit.md  
+          href: hr-personnel-recruit.md 
+      - name: Integration
+        items:
+        - name: Integration for LinkedIn
+          href: hr-linkedin-recruiter-connect.md    
       - name: Human Resources recruiting app 
         items:
         - name: Configure the Human Resources recruiting app
