@@ -1,6 +1,6 @@
 ---
 title: Park warehouse work on cancel (preview)
-description: Learn how to let warehouse workers park an in-progress work at a scanned location so that the next worker is guided back to it.
+description: Learn how to let warehouse workers park an in-progress work ID at a scanned location so that the next worker is guided back to it.
 author: maxsoller
 ms.author: maxsoller
 ms.reviewer: kamaybac
@@ -18,7 +18,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: preview until further notice -->
 
-Warehouse workers often have to leave a work unfinished because of a break, a shift change, or a change in operational priorities. Without park work, cancelling an in-progress work unlocks it but doesn't record where the worker left the physical handling unit, so the next worker has no way to find it. Park work asks the worker to scan the location where they're leaving the work, stores that location on the work header, and then guides the next worker back to it.
+Warehouse workers often have to leave a work ID unfinished because of a break, a shift change, or a change in operational priorities. Without park work, canceling an in-progress work ID unlocks it but doesn't record where the worker left the physical handling unit, so the next worker has no way to find it. Park work asks the worker to scan the location where they're leaving the work, stores that location on the work header, and then guides the next worker back to it.
 
 Park work doesn't move on-hand inventory. The park location is an operational hand-off location only. The standard cancel cleanup continues to control the work line and inventory state.
 
@@ -29,7 +29,7 @@ Park work doesn't move on-hand inventory. The park location is an operational ha
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.50 or later.
-- The feature named *(Preview) Park warehouse work on cancel* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This feature is turned off by default.
+- The feature named *(Preview) Park warehouse work on cancel* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - To use guided park locations, the feature named *(Preview) Warehouse aisle* must also be turned on in feature management.
 
 ## Turn on park work for a warehouse
@@ -42,7 +42,7 @@ To turn on park work for a warehouse, follow these steps:
 1. In the list, select the warehouse that you want to set up.
 1. Select **Edit**.
 1. On the **Warehouse** FastTab, set the following field:
-    - **(Preview) Park work policy** – Select *Mandatory* to prompt workers for a park location when they cancel an eligible in-progress work. Select *Disabled* to keep the standard cancel behavior for this warehouse.
+    - **(Preview) Park work policy** – Select *Mandatory* to prompt workers for a park location when they cancel an eligible in-progress work ID. Select *Disabled* to keep the standard cancel behavior for this warehouse.
 1. Select **Save**.
 
 ## Set up guided park locations
@@ -61,17 +61,17 @@ Make sure that the location profile of each park location uses the location type
 > [!NOTE]
 > Guided park locations require the *(Preview) Warehouse aisle* feature. If either the park location type is blank or aisle support is turned off, workers scan the park location directly, and no current-location step is shown.
 
-## Park a work from the Warehouse Management mobile app
+## Park a work ID from the Warehouse Management mobile app
 
-Workers park a work from the existing **Cancel** action. No extra button is added to the mobile app.
+Workers park a work ID from the existing **Cancel** action. No extra button is added to the mobile app.
 
-A work can be parked only when it has at least one completed line and at least one open line.
+A work ID can be parked only when it has at least one completed line and at least one open line.
 
-To park a work, follow these steps:
+To park a work ID, follow these steps:
 
-1. In the Warehouse Management mobile app, start a work and complete at least one line.
+1. In the Warehouse Management mobile app, start a work ID and complete at least one line.
 1. Select **Cancel**.
-1. If guided park locations are set up, scan the location where you are now. The app uses this location to find nearby park locations in the same aisle.
+1. If guided park locations are set up, scan your current location. The app uses this location to find nearby park locations in the same aisle.
 1. Review the suggested park location, and then choose one of the following options:
     - **Confirm** – Park the work at the suggested location. The suggested value is read-only.
     - **Skip** – Show the next park location in the aisle. The suggestions repeat from the beginning after the last candidate.
@@ -83,15 +83,15 @@ The work is then parked at the confirmed location, and the standard cancel clean
 Suggested locations are ordered by location ID. If the scanned aisle has no location that matches the park location type, the app shows your current location as a read-only fallback, and **Override** is still available.
 
 > [!NOTE]
-> Nothing is saved until you confirm the final park location. If you scan a current location, skip a suggestion, or select **Back**, no park location is written and the work isn't cancelled.
+> Nothing is saved until you confirm the final park location. If you scan a current location, skip a suggestion, or select **Back**, no park location is written and the work isn't canceled.
 
-## Pick up a parked work
+## Pick up a parked work ID
 
 Because the park location is informational, the app requires physical confirmation before picking resumes. The next worker must scan the work's target license plate to prove that they've taken custody of the handling unit.
 
-To pick up a parked work, follow these steps:
+To pick up a parked work ID, follow these steps:
 
-1. In the Warehouse Management mobile app, start the parked work by scanning or entering the work ID.
+1. In the Warehouse Management mobile app, scan or enter the work ID of the parked work.
 1. Go to the park location that the app shows.
 1. Scan the target license plate that the app shows.
 
