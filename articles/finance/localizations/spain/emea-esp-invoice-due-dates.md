@@ -2,7 +2,7 @@
 title: Calculate due dates and report on the average period of payments (Spain)
 description: Learn how to calculate due dates and report on the average period of payments for Spain in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

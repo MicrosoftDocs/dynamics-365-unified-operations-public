@@ -4,7 +4,7 @@ description: Learn how organizations can configure inventory-aware product listi
 author: boycez
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2022-08-23

@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.date: 09/29/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-ssolveira
+ms.author: johnmichalak
 ---
 
 # Configure electronic invoice parameters for Guatemala

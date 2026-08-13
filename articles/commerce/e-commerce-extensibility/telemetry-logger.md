@@ -4,9 +4,9 @@ description: This article provides an overview of the telemetry logger in Micros
 author: samjarawan
 ms.date: 02/05/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: samjar
+ms.author: mirao
 ms.search.validFrom: 2019-10-31
 ms.custom: 
   - bap-template

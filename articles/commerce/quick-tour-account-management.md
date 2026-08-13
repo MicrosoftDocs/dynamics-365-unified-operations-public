@@ -4,7 +4,7 @@ description: This article provides an overview of account management pages in Mi
 author: anupamar-ms
 ms.date: 01/28/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

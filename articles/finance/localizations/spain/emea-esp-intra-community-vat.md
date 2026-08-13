@@ -2,7 +2,7 @@
 title: Intra-community VAT for Spain
 description: Learn how to enable and use the intracommunity value-added tax (VAT) functionality in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

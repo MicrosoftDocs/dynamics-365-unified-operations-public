@@ -2,7 +2,7 @@
 title: Testing and validations
 description: Learn about how to create and run test cases, including prerequisites, key concepts, and a step-by-step process of using the SysTest framework to author test code.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/29/2026
 ms.reviewer: johnmichalak

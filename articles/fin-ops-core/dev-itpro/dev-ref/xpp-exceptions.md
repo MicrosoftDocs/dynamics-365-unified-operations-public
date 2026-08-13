@@ -2,7 +2,7 @@
 title: X++ exception handling
 description: Learn about exception handling in X++, which are regulated jumps away from sequence of program executions. These include throw statements andg global class methods.
 author: pvillads
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

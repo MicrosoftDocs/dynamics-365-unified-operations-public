@@ -4,7 +4,7 @@ description: This article provides an overview of enhanced strong customer authe
 author: BrianShook
 ms.date: 02/17/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2020-06-20

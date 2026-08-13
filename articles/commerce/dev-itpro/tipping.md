@@ -4,7 +4,7 @@ description: Learn about support for accepting tips on payment terminals in the 
 author: BrianShook
 ms.date: 02/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: shajain

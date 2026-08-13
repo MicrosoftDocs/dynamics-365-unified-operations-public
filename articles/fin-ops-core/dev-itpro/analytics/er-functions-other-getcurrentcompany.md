@@ -2,7 +2,7 @@
 title: GETCURRENTCOMPANY ER function
 description: Learn about how the GETCURRENTCOMPANY Electronic reporting (ER) function is used, including syntax strings, return values, and examples.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

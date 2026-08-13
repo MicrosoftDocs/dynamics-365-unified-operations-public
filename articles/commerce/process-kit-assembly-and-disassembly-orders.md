@@ -4,7 +4,7 @@ description: Learn how to process kit assembly and disassembly orders for retail
 author: rickwyang
 ms.date: 01/28/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2023-10-23

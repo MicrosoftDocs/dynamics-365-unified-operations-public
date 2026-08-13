@@ -4,7 +4,7 @@ description: Learn how to create a new call center channel in Microsoft Dynamics
 author: samjarawan
 ms.date: 01/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2020-01-20

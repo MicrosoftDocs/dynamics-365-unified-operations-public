@@ -2,7 +2,7 @@
 title: Belgium overview
 description: Learn about functionality specific to Belgium, including outlines on CODA bank statements, export ledger transactions, and VAT declarations.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

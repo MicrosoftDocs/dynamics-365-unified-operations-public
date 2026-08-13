@@ -4,9 +4,9 @@ description: Learn how to use triggers to capture events that occur before and a
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2017-01-27
 ms.custom: 
   - bap-template

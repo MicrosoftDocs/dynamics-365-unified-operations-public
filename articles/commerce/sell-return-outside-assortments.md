@@ -4,9 +4,9 @@ description: Learn how to sell and return products that aren't part of a store's
 author: josaw1
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2017-06-30
 ms.search.form: RetailAssortmentDetails
 ms.custom: 

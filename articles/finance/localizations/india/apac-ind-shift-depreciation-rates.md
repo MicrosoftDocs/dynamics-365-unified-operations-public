@@ -2,7 +2,7 @@
 title: Define shift depreciation rates (India)
 description: Learn about defining shift depreciation rates for India, including a step-by-step process using the INMF demo data company.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

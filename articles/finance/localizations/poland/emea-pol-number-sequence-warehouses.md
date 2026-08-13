@@ -2,7 +2,7 @@
 title: Set up number sequences by warehouse
 description: Learn how to set up number sequences for purchase product receipts and sales packing slips by warehouse for Poland in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

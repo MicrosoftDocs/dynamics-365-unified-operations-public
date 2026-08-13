@@ -2,7 +2,7 @@
 title: End-to-end scenario for the Fleet Management sample application
 description: Learn about an end-to-end scenario that the Fleet Management sample application is designed to support, including prerequisites and how to install demo data.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak

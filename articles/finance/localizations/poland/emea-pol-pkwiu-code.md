@@ -2,7 +2,7 @@
 title: Set up and use PKWiU codes for Poland
 description: Learn hot to set up the PKWiU code for Poland in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

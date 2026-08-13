@@ -4,7 +4,7 @@ description: Learn how to assign task lists to stores or employees in Microsoft 
 author: ritakimani
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2020-02-03

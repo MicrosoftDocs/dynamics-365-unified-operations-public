@@ -4,7 +4,7 @@ description: Learn about the types of documents you can use to manage inventory 
 author: BrianShook
 ms.date: 01/30/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
 ms.search.region: Global
 ms.author: yufeihuang

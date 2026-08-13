@@ -2,7 +2,7 @@
 title: Formula designer in Electronic reporting (ER)
 description: Learn about how to use the formula designer in Electronic reporting (ER), including a formula designer overview.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

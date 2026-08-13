@@ -4,9 +4,9 @@ description: This article contains a list of available POS APIs and how to acces
 author: josaw1
 ms.date: 04/30/2025
 ms.topic: how-to
-ms.reviewer: josaw
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2018-10-29
 ms.custom: 
   - bap-template

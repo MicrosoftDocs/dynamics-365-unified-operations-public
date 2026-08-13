@@ -4,7 +4,7 @@ description: Learn how to extend pricing and discount functionality in Microsoft
 author: zhizhen
 ms.date: 01/28/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: zhizhen
 ms.search.validFrom:

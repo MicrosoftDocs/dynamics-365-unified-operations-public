@@ -2,7 +2,7 @@
 title: Customize model elements through extension
 description: Learn about the Fleet Management Extension model. This model contains elements that extend the functionality of the Fleet Management application.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak

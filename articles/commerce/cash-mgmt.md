@@ -6,7 +6,7 @@ description: Learn about the cash management capabilities in Microsoft Dynamics 
 author: ShalabhjainMSFT
 ms.date: 01/20/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: Global
 ms.author: shajain

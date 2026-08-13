@@ -2,7 +2,7 @@
 title: Report statistics of vendor payment periods
 description: Learn how to set up and generate the statistics of vendor payment periods required for Sweden in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/12/2026
 ms.reviewer: johnmichalak

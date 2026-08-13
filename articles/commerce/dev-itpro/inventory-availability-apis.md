@@ -5,7 +5,7 @@ author: rickwyang
 ms.date: 02/18/2026
 ms.topic: how-to
 ms.author: wenxyang
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2022-11-10
 ms.custom: 

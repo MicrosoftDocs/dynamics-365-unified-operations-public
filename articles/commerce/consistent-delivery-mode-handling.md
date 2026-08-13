@@ -4,7 +4,7 @@ description: Learn about the "Enable consistent delivery mode handling in channe
 author: gvrmohanreddy
 ms.date: 01/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2022-02-10

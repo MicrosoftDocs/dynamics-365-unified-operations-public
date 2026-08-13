@@ -4,7 +4,7 @@ description: Learn how to create a default customer to use when creating a chann
 author: samjarawan
 ms.date: 01/21/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20

@@ -4,7 +4,7 @@ description: Learn how to configure batch jobs to optimize channel-side calculat
 author: hhainesms
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2019-02-11

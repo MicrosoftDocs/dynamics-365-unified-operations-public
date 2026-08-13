@@ -5,7 +5,7 @@ author: ShalabhjainMSFT
 ms.date: 02/18/2026
 ms.topic: how-to
 ms.author: shajain
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2019-09-17
 ms.custom: 

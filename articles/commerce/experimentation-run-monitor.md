@@ -4,7 +4,7 @@ description: Learn how to run and monitor an experiment in a partner app and cha
 author: sushma-rao 
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw

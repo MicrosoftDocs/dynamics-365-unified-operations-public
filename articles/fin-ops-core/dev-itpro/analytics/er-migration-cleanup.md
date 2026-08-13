@@ -2,7 +2,7 @@
 title: ER migration cleanup
 description: Learn how you can use the ER migration cleanup function to resolve issues with ER templates, including an outline on applicability.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

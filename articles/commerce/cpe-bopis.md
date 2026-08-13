@@ -4,7 +4,7 @@ description: Learn how to configure buy online, pick up in store (BOPIS) in a Mi
 author: BrianShook
 ms.date: 01/21/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.custom: 

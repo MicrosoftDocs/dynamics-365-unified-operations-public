@@ -2,7 +2,7 @@
 title: Electronic ledger accounting statements
 description: Learn how to set up and generate the general ledger XML files that all companies in Mexico are required to report to the Mexican tax authorities (SAT).
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

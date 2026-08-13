@@ -2,7 +2,7 @@
 title: Backup storage of ER templates
 description: This article explains how to use the Electronic reporting (ER) backup storage for recovery of templates.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.date: 03/19/2026
 ms.topic: concept-article
 ms.reviewer: johnmichalak

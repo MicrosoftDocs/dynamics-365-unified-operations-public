@@ -2,7 +2,7 @@
 title: Extend the list of Electronic reporting (ER) functions
 description: Learn about how to extend the list of electronic reporting functions through an overview of key tasks that you must complete to introduce a new function.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

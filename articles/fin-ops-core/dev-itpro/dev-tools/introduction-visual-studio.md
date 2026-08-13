@@ -2,7 +2,7 @@
 title: Development tools tutorial
 description: This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: tutorial
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak

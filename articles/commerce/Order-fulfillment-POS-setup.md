@@ -5,7 +5,7 @@ author: BrianShook
 ms.date: 01/27/2026
 ms.topic: how-to
 ms.search.form:  RetailStoreTable, RetailTillLayout
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2017-10-30

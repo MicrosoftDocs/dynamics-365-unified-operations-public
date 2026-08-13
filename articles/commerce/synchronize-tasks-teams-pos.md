@@ -4,7 +4,7 @@ description: Learn how to synchronize task management between Microsoft Teams an
 author: ritakimani
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2021-01-15

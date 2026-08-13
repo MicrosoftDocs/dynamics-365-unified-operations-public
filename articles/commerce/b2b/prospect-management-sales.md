@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Dynamics 365 Sales to manage business pa
 author: ShalabhjainMSFT
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2022-01-31

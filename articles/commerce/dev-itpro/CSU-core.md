@@ -4,7 +4,7 @@ description: This article provides an overview of Commerce Scale Unit (CSU) Core
 author: josaw1
 ms.date: 02/13/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2022-03-30

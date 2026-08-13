@@ -2,7 +2,7 @@
 title: Brazilian withholding taxes
 description: This article describes how to set up a withholding tax code, a withholding tax type, and a calculation parameter to calculate withholding taxes for consultancy services in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/03/2026
 ms.reviewer: johnmichalak

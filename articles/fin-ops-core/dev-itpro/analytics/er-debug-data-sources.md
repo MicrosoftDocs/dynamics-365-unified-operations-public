@@ -2,7 +2,7 @@
 title: Debug data sources of an executed ER format to analyze data flow and transformation
 description: Learn about you can debug the data sources of an executed ER format to better understand the configured data flow and transformation.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/01/2026
 ms.reviewer: johnmichalak

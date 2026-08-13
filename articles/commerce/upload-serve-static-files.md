@@ -4,7 +4,7 @@ description: Learn how to upload and serve static files in Microsoft Dynamics 36
 author: bicyclingfool
 ms.date: 01/30/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20

@@ -2,7 +2,7 @@
 title: Deprecated APIs
 description: Access the list of deprecated APIs and migration guidance for some of the deprecated APIs, including the reason for deprecation for various objects.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/17/2026
 ms.reviewer: johnmichalak

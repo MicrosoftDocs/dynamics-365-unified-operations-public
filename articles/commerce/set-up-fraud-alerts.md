@@ -5,10 +5,10 @@ author: josaw1
 ms.date: 01/29/2026
 ms.topic: how-to
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: e342af8d-7498-4d20-8483-ab368429c578
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template

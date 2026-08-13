@@ -4,7 +4,7 @@ description: Learn about the various document states of page elements in Microso
 author: phinneyridge
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

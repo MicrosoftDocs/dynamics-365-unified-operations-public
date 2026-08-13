@@ -4,7 +4,7 @@ description: Learn how to create, edit, and manage audiences and targets in Micr
 author: sushma-rao
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: asharchw
 ms.search.validFrom: 2021-07-31

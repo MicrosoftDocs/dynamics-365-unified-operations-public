@@ -2,7 +2,7 @@
 title: Design a new ER solution to print a custom report
 description: Learn how to design an Electronic reporting (ER) solution to print a custom report, including additional resources.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

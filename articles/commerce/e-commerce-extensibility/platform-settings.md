@@ -4,9 +4,9 @@ description: Learn about various properties you can configure in the Microsoft D
 author: samjarawan
 ms.date: 02/05/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: samjar
+ms.author: mirao
 ms.search.validFrom: 2019-10-31
 ms.custom: 
   - bap-template 

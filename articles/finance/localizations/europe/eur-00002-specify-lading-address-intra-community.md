@@ -2,7 +2,7 @@
 title: EUR-00002 Specify a lading address for an intracommunity transaction
 description: Learn how to specify a lading address for an intracommunity trade transaction with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

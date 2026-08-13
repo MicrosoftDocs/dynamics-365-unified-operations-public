@@ -2,7 +2,7 @@
 title: Set up and run processing to call a simple exporting ER format to generate an Excel report
 description: Access an example that shows how to set up and use electronic messages, including step-by-step processes for creating message statuses and additional fields.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/24/2026
 ms.custom: 

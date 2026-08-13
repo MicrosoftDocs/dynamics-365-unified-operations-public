@@ -2,7 +2,7 @@
 title: MX-00008 - Vendor registration IDs
 description: Learn how to create a vendor for Mexico to support the DIOT declaration and other legal reports in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

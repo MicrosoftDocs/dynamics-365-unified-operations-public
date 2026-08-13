@@ -2,7 +2,7 @@
 title: SPED fiscal files
 description: Learn how to set up and generate SPED fiscal export files for Brazil, including an outline and process on generating the SPED fiscal export file for a month.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

@@ -2,7 +2,7 @@
 title: Development system requirements
 description: Learn about the system requirements for development, which can be hosted locally or in Microsoft Azure. System requirements are provided for both environments.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/03/2026
 ms.reviewer: johnmichalak

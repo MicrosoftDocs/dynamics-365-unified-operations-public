@@ -4,7 +4,7 @@ description: Learn how to configure Microsoft Dynamics 365 Commerce headquarters
 author: jashanno
 ms.date: 02/19/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-09-30

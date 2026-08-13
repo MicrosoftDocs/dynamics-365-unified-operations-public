@@ -5,9 +5,9 @@ author: josaw1
 ms.date: 02/06/2026
 ms.topic: how-to 
 ms.search.form: PriceDiscGroup, RetailStoreTable, RetailChannelPriceGroup, EcoResProductDetailsExtended, PriceDiscAdmTable, PriceDiscAdm   
-ms.reviewer: v-griffinc 
+ms.reviewer: mirao 
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-06-30 
 ms.custom: 
   - bap-template

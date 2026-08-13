@@ -4,7 +4,7 @@ description: Learn how to migrate to the Microsoft Dynamics 365 Commerce softwar
 author: josaw1
 ms.date: 02/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2021-02-11

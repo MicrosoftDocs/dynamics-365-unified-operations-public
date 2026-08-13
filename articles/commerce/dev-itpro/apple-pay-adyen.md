@@ -4,7 +4,7 @@ description: Learn how to set up Apple Pay with Adyen in Microsoft Dynamics 365 
 author: BrianShook
 ms.date: 02/11/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2022-06-20

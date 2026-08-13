@@ -4,7 +4,7 @@ description: Learn how to make product recommendations based on artificial intel
 author: bebeale
 ms.date: 04/09/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31

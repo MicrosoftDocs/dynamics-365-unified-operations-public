@@ -4,7 +4,7 @@ description: This article provides an overview of the price report feature that 
 author: ShalabhjainMSFT
 ms.date: 01/27/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2019-01-18

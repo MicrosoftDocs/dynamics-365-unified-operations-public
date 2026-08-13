@@ -4,7 +4,7 @@ description: Learn how to manage search engine optimization (SEO) metadata in Mi
 author: phinneyridge
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

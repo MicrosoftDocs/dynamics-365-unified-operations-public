@@ -2,7 +2,7 @@
 title: Calculation of tax asset and tax liability registers
 description: Learn how to calculate tax asset and tax liability registers for Russia in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

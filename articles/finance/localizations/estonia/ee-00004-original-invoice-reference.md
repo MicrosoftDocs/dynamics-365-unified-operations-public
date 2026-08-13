@@ -2,7 +2,7 @@
 title: Original invoice reference (Eastern Europe)
 description: This article describes how to create sales orders and corrective lines in a credit note for a sales order in Estonia with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/13/2026
 ms.reviewer: johnmichalak

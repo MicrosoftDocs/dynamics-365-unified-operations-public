@@ -4,9 +4,9 @@ description: Learn about various ways that you can extend the Commerce Runtime (
 author: josaw1
 ms.date: 02/12/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
 ms.custom: 

@@ -4,7 +4,7 @@ description: Learn about payment methods and how to set up them up in Microsoft 
 author: BrianShook
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-02-28

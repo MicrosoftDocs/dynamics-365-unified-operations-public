@@ -4,7 +4,7 @@ description: Learn how to enable shop similar description product recommendation
 author: bebeale
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31

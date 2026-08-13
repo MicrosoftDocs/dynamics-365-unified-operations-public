@@ -2,7 +2,7 @@
 title: X++ static class members
 description: Learn about static classes in X++, including static methods, examples declared by using the static keyword, constructors, and instance methods.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

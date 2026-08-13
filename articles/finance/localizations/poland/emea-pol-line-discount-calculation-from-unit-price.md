@@ -2,7 +2,7 @@
 title: Line discount calculation from the unit price for Poland
 description: Learn about the Line discount calculation from unit price method and explains how to set it up, including an outline the Calculation of line discount parameter.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.custom: 
   - bap-template

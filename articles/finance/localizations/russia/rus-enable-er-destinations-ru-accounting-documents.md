@@ -2,7 +2,7 @@
 title: Enable electronic reporting (ER) destinations to store Russian accounting documents
 description: Learn how to configure electronic reporting (ER) destinations for post-processing Russian accounting documents generated in Microsoft Excel and Word formats in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

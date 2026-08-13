@@ -2,7 +2,7 @@
 title: Change the date for a session
 description: Learn how to change the date for a session, which you can use to back-date journal entries or source documents as needed.
 author: pvillads
-ms.author: pvillads
+ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template

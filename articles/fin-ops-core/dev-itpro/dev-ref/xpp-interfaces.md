@@ -2,7 +2,7 @@
 title: X++ interfaces
 description: Learn about interfaces in X++, which specify sets of public instance methods, define, and enforce similarities between unrelated classes.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

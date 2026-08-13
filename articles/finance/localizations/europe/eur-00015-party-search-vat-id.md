@@ -2,7 +2,7 @@
 title: EUR-00015 Party search using VAT ID
 description: Learn how to perform a party search using a registration ID with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

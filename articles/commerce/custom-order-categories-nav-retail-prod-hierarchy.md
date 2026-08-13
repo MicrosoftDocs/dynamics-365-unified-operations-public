@@ -5,7 +5,7 @@ author: josaw1
 ms.date: 01/21/2026
 ms.topic: how-to
 ms.search.form: Category, Retail product hierarchy, Navigation hierarchy
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30

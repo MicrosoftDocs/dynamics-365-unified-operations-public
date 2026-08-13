@@ -4,9 +4,9 @@ description: This article provides recommendations that can help secure Store Co
 author: josaw1
 ms.date: 02/20/2026
 ms.topic: best-practice
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
 ms.custom: 

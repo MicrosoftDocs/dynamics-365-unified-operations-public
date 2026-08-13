@@ -2,7 +2,7 @@
 title: Tax attributes for Brazil
 description: Learn how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

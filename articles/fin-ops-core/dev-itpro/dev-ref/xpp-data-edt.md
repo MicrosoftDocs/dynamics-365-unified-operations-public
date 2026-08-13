@@ -2,7 +2,7 @@
 title: X++ extended data types
 description: Learn about extended data types in X++, which are user-defined types based on primitive data types and the container composite type.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

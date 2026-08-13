@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: andreash
+ms.author: mirao
 ms.search.validFrom: 2017-12-31
 ms.custom:
   - bap-template

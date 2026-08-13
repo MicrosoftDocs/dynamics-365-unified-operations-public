@@ -4,7 +4,7 @@ description: Learn how to configure business-to-business (B2B) multioutlet capab
 author: Jcava-Evenica
 ms.date: 03/13/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: v-jcavataio
 ms.search.validFrom: 2021-01-31

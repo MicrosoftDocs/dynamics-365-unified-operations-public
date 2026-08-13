@@ -4,8 +4,8 @@ description: Learn how to use customizations to add extension points to packing 
 author: josaw1
 ms.date: 02/17/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2018-03-31
 ms.custom: 

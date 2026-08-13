@@ -2,7 +2,7 @@
 title: Tools add-ins for Visual Studio
 description: Learn about the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak

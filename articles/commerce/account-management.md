@@ -4,7 +4,7 @@ description: Learn about account management pages and modules in Microsoft Dynam
 author: anupamar-ms
 ms.date: 01/14/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

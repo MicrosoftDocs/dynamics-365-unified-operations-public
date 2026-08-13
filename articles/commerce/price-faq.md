@@ -4,7 +4,7 @@ description: This article provides answers to frequently asked questions about p
 author: zhizhen
 ms.date: 01/27/2026
 ms.topic: faq
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: zhizhen
 ms.search.validFrom: 10/20/2022

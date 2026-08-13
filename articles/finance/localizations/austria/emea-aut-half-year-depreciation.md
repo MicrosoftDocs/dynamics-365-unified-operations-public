@@ -2,7 +2,7 @@
 title: Half-year depreciation on additional acquisitions for Austria
 description: Learn about the depreciation of additional acquisitions when the Half year convention is used for fixed asset depreciation.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.custom: 
   - bap-template

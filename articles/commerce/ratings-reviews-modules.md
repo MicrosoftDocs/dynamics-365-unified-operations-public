@@ -4,7 +4,7 @@ description: Learn about ratings and reviews modules used on product details pag
 author: gvrmohanreddy
 ms.date: 01/28/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-10-31

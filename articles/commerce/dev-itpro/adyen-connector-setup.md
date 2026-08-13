@@ -4,7 +4,7 @@ description: Learn how to sign up with Adyen and set up the Microsoft Dynamics 3
 author: Reza-Assadi
 ms.date: 11/24/2025
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01

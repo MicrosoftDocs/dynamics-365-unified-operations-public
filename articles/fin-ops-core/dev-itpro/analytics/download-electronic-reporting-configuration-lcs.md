@@ -2,7 +2,7 @@
 title: Download Electronic reporting configurations from Lifecycle Services
 description: Learn about how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/09/2026
 ms.reviewer: johnmichalak

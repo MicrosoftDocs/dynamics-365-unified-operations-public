@@ -4,9 +4,9 @@ description: Learn how to create a channel navigation hierarchy in Microsoft Dyn
 author: samjarawan
 ms.date: 01/21/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: samjar
+ms.author: mirao
 ms.search.validFrom: 2020-01-20
 ms.custom: 
   - bap-template

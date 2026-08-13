@@ -6,7 +6,7 @@ ms.date: 05/08/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: 4b9f733b-bf28-4b85-94de-4f7adf67a62c
 ms.search.region: global
 ms.author: ritakimani

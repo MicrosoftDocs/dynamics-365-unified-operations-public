@@ -2,7 +2,7 @@
 title: Germany overview
 description: This article provides an overview of Dynamics 365 Finance functionality that is specific to Germany with links to resources about audit files, depreciation, and VAT declarations.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

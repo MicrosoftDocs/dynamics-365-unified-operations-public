@@ -2,7 +2,7 @@
 title: Use USER INPUT PARAMETER data sources to specify parameters for a report
 description: Learn how to use USER INPUT PARAMETER data sources to specify parameters for reports that you generate, including an outline of mandatory and optional properties.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

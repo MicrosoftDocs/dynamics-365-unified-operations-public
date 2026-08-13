@@ -4,7 +4,7 @@ description: Learn about the cash register functionality available for Norway in
 author: EvgenyPopovMBS
 ms.date: 02/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2017-10-31

@@ -5,7 +5,7 @@ description: Learn how to configure and manage receipt numbers in Microsoft Dyna
 author: ShalabhjainMSFT
 ms.date: 01/28/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2020-01-14

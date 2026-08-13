@@ -4,9 +4,9 @@ description: Learn how to edit and audit cash and carry and cash management tran
 author: josaw1
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
 ms.custom: 

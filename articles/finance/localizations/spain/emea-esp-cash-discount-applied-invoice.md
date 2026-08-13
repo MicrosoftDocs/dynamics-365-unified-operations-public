@@ -2,7 +2,7 @@
 title: Cash discount is applied in the invoice parameter
 description: Learn about the Cash discount is applied in the invoice parameter for Spain, including an outline on documents that calculate discounts during invoice updates.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.custom: 
   - bap-template

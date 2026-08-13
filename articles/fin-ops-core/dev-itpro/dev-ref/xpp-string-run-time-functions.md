@@ -2,7 +2,7 @@
 title: X++ string runtime functions
 description: Learn about the string run-time functions, including syntax strings, parameters, return values, and remarks for various functions.
 author: pvillads
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 09/02/2025
 ms.reviewer: johnmichalak

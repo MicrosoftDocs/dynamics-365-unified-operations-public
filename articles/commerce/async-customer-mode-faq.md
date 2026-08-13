@@ -6,7 +6,7 @@ description: This article provides answers to frequently asked questions about a
 author: gvrmohanreddy
 ms.date: 01/15/2026
 ms.topic: faq
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2021-12-17

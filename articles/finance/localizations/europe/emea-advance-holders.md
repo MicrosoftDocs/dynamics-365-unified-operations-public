@@ -2,7 +2,7 @@
 title: Advance holders overview
 description: Learn about advance holder functionality, including a step-by-step process on setting up an advance holder and an outline on employee posting profiles.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

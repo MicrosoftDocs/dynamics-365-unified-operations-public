@@ -4,7 +4,7 @@ description: This article provides an overview on info codes and info code group
 author: josaw1
 ms.date: 01/23/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28

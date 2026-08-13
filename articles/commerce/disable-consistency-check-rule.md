@@ -5,9 +5,9 @@ description: Learn about the functionality for disabling transaction validation 
 author: analpert
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2019-09-30
 ms.custom: 
   - bap-template

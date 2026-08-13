@@ -2,7 +2,7 @@
 title: General ledger simulations (Italy)
 description: Learn about posting ledger transactions as a simulation from the general journal and then review reports that include the simulated transactions.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

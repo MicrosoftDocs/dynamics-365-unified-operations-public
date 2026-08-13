@@ -2,7 +2,7 @@
 title: While select statement
 description: Learn about while select statements in the X++ language, including various examples and outlines of various functions and additional statements.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

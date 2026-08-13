@@ -2,7 +2,7 @@
 title: Miscellaneous charges on free text invoices (Brazil)
 description: This article describes how to configure miscellaneous charges on free text invoices for Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

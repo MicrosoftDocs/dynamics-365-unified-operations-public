@@ -4,7 +4,7 @@ description: This article provides an overview of the discount functionality in 
 author: ShalabhjainMSFT
 ms.date: 01/28/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2018-10-23

@@ -4,7 +4,7 @@ description: Learn how to enable manual publishing of ratings and reviews by a m
 author: gvrmohanreddy
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2021-09-03

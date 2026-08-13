@@ -5,7 +5,7 @@ author: ilikond
 ms.author: ikondratenko
 ms.date: 05/12/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Saudi Arabia
 ms.search.industry: Retail
 ms.search.validFrom: 2022-11-21

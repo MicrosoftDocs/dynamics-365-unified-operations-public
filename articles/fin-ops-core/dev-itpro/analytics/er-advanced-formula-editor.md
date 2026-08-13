@@ -2,7 +2,7 @@
 title: Electronic reporting advanced formula editor
 description: Learn about how the advanced formula editor can be used to configure expressions in Electronic reporting (ER) model mapping and format components.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/12/2026
 ms.reviewer: johnmichalak

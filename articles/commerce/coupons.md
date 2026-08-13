@@ -6,9 +6,9 @@ description: This article provides an overview of coupon-related capabilities in
 author: boycez
 ms.date: 01/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2017-06-30
 
 ---

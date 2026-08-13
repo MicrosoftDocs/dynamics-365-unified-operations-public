@@ -2,7 +2,7 @@
 title: Indonesia overview
 description: Learn about functionality that is specific to Indonesia with links to resources about VAT declarations, invoicing, and withholding tax reports.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

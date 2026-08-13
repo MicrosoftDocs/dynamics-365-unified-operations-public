@@ -2,7 +2,7 @@
 title: X++ loop statements
 description: Learn about loop statements in X++, including outlines and examples for the for, while, and do...while loop statements.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

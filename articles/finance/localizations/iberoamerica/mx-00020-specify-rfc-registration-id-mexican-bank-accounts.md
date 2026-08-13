@@ -2,7 +2,7 @@
 title: MX-00020 - Specify the RFC registration ID for Mexican bank accounts
 description: Learn about creating the Bank account for Mexico and assigning the RFC tax registration ID, including a step-by-step process.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

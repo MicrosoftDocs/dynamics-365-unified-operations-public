@@ -2,7 +2,7 @@
 title: Model split
 description: Learn about the split of the stack into three main models -  the Application Platform, the Application Foundation, and the Application Suite.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.date: 03/05/2026
 ms.reviewer: johnmichalak

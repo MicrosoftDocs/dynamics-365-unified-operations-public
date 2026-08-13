@@ -2,7 +2,7 @@
 title: Manage worker accommodations
 description: Access a procedure that walks through the steps for setting up work environment accommodation types, such as ergonomic chairs or periodic breaks. 
 author: ShielaSogge
-ms.author: shielas
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/04/2025
 ms.custom:

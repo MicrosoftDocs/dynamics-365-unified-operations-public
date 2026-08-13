@@ -5,7 +5,7 @@ author: Reza-Assadi
 ms.date: 02/17/2026
 ms.topic: how-to
 ms.author: rassadi
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2018-02-28
 ms.custom: 

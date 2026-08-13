@@ -2,7 +2,7 @@
 title: Add values to enums through extension
 description: Learn about how to add new values to an enum by extending the enum, including an outline on extending an enum value.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/05/2026
 ms.reviewer: johnmichalak

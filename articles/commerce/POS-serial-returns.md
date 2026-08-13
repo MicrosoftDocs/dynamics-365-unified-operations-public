@@ -4,7 +4,7 @@ description: Learn about the capabilities for validating serialized items as par
 author: hhainesms
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-02-11 

@@ -6,11 +6,10 @@ description: Learn how to configure an exchange on a return in Microsoft Dynamic
 author: josaw1
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc 
+ms.reviewer: mirao 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
-ms.author: josaw
-
+ms.author: mirao
 ---
 # Configure and process an exchange on a return order
 

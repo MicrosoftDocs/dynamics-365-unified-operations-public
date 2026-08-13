@@ -2,7 +2,7 @@
 title: MX-00020 Set up the chart of accounts for a legal entity in Mexico
 description: Learn how to set up specific parameters in the chart of accounts to allow the generation of electronic ledger accounting reports for a Mexican legal entity.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

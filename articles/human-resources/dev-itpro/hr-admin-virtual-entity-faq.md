@@ -7,7 +7,7 @@ author: jaredha
 ms.date: 08/23/2021
 ms.topic: faq
 # optional metadata
-
+ms.reviewer: twheeloc
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
@@ -16,7 +16,7 @@ audience: Developer, IT Pro
 # ms.custom: NotInToc
 ms.search.region: Global
 # ms.search.industry:
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.12
 ---

@@ -2,7 +2,7 @@
 title: LISTJOIN ER function
 description: Learn about how the LISTJOIN Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/01/2020
 ms.reviewer: johnmichalak

@@ -8,7 +8,7 @@ ms.topic: whats-new
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: johnmichalak
+ms.author: mirao
 ms.search.validFrom: 2023-11-01
 ms.custom: 
   - bap-template

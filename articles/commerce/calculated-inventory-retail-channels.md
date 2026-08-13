@@ -4,7 +4,7 @@ description: Learn how a company can use Microsoft Dynamics 365 Commerce to view
 author: hhainesms
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-02-11

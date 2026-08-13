@@ -4,9 +4,9 @@ description: Learn about the concepts you need to know to create a discount for 
 author: josaw1
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b

@@ -2,7 +2,7 @@
 title: Financials development home page
 description: Access links to topics about financials development, including resources about financial dimension framework, segmented entry control, and more.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak

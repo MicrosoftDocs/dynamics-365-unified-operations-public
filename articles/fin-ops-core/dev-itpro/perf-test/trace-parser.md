@@ -2,7 +2,7 @@
 title: Diagnose issues and analyze performance by using Trace parser
 description: Learn about how you can use the Trace parser to consume traces and analyze performance in your deployment, including overviews on capturing events.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/16/2026
 ms.reviewer: johnmichalak

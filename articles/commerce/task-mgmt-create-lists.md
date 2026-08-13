@@ -4,7 +4,7 @@ description: Learn how to create task lists and add tasks to them in Microsoft D
 author: gvrmohanreddy
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2020-02-03

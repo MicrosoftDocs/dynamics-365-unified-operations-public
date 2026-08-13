@@ -2,7 +2,7 @@
 title: List of ER functions in the type conversion category
 description: Learn about the conversion functions that are supported in Electronic reporting (ER), including a table of type conversion functions.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

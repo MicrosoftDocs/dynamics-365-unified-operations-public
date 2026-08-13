@@ -2,7 +2,7 @@
 title: Include CIAP credit from a previous period (Brazil)
 description: This article describes how to use the CIAP fixed asset transactions page to create CIAP credit installments in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

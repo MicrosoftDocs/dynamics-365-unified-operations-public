@@ -2,7 +2,7 @@
 title: Customize field descriptions
 description: Learn about how you can customize existing field descriptions and add your own descriptions, with overviews on adding new descriptions and labeling file names.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/12/2026
 ms.reviewer: johnmichalak

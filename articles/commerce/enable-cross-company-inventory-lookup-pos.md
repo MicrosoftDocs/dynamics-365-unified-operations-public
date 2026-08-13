@@ -4,9 +4,9 @@ description: Learn how to enable and configure the cross-company inventory looku
 author: yufeih
 ms.date: 02/25/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: yufeih
+ms.author: mirao
 ms.search.validFrom: 2026-02-11
 ms.custom: 
   - bap-template

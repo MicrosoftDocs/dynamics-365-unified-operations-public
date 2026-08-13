@@ -2,7 +2,7 @@
 title: Thailand unrealized and realized VAT
 description: Learn how to set up and work with unrealized and realized value-added tax (VAT) for Thailand in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

@@ -4,7 +4,7 @@ description: Learn how to set up barcodes in Microsoft Dynamics 365 Commerce.
 author: ritakimani
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: ritakimani
 ms.search.validFrom: 2016-02-28

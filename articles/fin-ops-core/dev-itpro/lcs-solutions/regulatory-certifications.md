@@ -2,7 +2,7 @@
 title: Regulatory certification information in feature titles
 description: Learn about certifications is used in the title of the feature, including tables providing formats and examples for various feature types.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/06/2026
 ms.reviewer: johnmichalak

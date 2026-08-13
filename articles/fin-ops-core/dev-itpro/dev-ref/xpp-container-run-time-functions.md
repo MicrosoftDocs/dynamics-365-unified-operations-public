@@ -2,7 +2,7 @@
 title: X++ container runtime functions
 description: Learn about the container run-time functions, including a syntax string, a table outlining descriptions for various parameters, and additional values.
 author: pvillads
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

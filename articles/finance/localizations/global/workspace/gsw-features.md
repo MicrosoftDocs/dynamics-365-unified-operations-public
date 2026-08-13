@@ -2,7 +2,7 @@
 title: Globalization Studio workspace features
 description: Learn about the features of the Globalization Studio workspace including overviews of the version, configurations, and setups components.
 author: filatovm
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 03/19/2026
 ms.custom: 

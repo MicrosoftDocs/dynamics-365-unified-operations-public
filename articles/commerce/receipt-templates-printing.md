@@ -5,7 +5,7 @@ author: BrianShook
 ms.date: 05/07/2026
 ms.topic: how-to
 ms.search.form: RetailFormLayout
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: Global
 ms.author: ritakimani

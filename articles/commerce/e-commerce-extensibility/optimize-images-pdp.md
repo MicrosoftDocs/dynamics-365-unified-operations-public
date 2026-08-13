@@ -6,7 +6,7 @@ description: Learn how to optimize images on product details pages in Microsoft 
 author: samjarawan
 ms.date: 02/05/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

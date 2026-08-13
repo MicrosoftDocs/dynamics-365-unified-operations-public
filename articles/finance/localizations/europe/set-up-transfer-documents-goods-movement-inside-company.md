@@ -2,7 +2,7 @@
 title: Set up the transfer documents for goods movement inside a company
 description: Learn how to set up transfer documents for goods movement inside a company in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

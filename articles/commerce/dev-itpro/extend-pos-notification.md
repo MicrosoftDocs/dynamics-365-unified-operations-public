@@ -4,7 +4,7 @@ description: Learn how to add custom notifications in Microsoft Dynamics 365 Com
 author: josaw1
 ms.date: 02/17/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2019-09-2019

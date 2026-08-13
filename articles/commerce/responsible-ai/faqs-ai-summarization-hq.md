@@ -8,7 +8,7 @@ ms.collection:
 ms.topic: faq
 author: shajain
 ms.author: shajain
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.custom:
   - responsible-ai-faqs
   - bap-template

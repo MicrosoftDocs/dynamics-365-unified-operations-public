@@ -2,7 +2,7 @@
 title: Calculate average and daily exchange rates
 description: Learn how to calculate the average currency exchange rate for outgoing bank and cash transactions, including an overview on daily exchange rates.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

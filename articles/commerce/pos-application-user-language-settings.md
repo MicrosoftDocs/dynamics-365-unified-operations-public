@@ -6,7 +6,7 @@ ms.date: 06/08/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.form: HcmWorker, RetailStoreTable

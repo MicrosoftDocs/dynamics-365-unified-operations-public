@@ -2,7 +2,7 @@
 title: Supported composite data types for Electronic reporting formulas
 description: Learn about the composite data types that are supported in Electronic reporting (ER) formulas, including learning about classes, containers, and records.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 07/17/2026
 ms.reviewer: johnmichalak

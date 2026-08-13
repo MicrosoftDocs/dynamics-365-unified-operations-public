@@ -4,9 +4,9 @@ description: Learn how to override a POS request handler in Microsoft Dynamics 3
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 09/07/2018
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.custom: 

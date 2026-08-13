@@ -4,9 +4,9 @@ description: Learn how certain payment types can be restricted for refund if the
 author: josaw1
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2019-02-01
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.form: RetailTenderTypeTable

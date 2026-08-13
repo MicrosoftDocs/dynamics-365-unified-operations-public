@@ -2,7 +2,7 @@
 title: Form I-9 verification
 description: Learn about Form I-9 verification, which must be completed for all new employees who will be working in the United States.
 author: ShielaSogge
-ms.author: shielas
+ms.author: twheeloc
 ms.topic: article
 ms.date: 06/25/2026
 ms.reviewer: twheeloc

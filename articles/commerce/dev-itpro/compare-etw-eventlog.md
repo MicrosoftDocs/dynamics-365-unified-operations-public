@@ -6,7 +6,7 @@ ms.date: 02/13/2026
 ms.topic: overview
 ms.search.region: Global
 ms.author: asharchw
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.validFrom: 2022-12-30
 ms.custom:
   - bap-template

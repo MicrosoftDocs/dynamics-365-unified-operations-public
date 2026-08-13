@@ -4,9 +4,9 @@ description: Learn how the POS inventory lookup operation works with channel-sid
 author: hhainesms
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2020-02-11
 ms.custom: 
   - bap-template
