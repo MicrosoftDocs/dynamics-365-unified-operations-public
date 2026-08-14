@@ -2,7 +2,7 @@
 title: Globalization Studio overview
 description: Learn about the Globalization Studio, including outlines on no-code/low-code globalization tools and services and multi-country localization content.
 author: filatovm
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

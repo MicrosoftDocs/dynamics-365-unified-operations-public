@@ -4,9 +4,9 @@ description: Learn about recommended practices for updating code and environment
 author: andreashofmann1
 ms.date: 02/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: andreash
+ms.author: mirao
 ms.search.validFrom: 2017-12-31
 ms.custom:
   - bap-template

@@ -2,7 +2,7 @@
 title: Import Electronic reporting (ER) configurations
 description: Learn how to import Electronic reporting (ER) configurations from Lifecycle Services to a local business data application.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

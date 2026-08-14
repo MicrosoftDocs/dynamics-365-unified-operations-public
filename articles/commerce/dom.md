@@ -6,10 +6,10 @@ description: This article provides an overview of the distributed order manageme
 author: josaw1
 ms.date: 06/03/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2018-11-15
 
 ---

@@ -2,7 +2,7 @@
 title: Withholding taxes on vendor payments (Brazil)
 description: This article describes how to use the Journal voucher page to enter and post payments you make to a vendor for the purchase of items or services in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

@@ -2,7 +2,7 @@
 title: Suppress Word content controls in generated reports
 description: Learn  how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 07/17/2026
 ms.reviewer: johnmichalak

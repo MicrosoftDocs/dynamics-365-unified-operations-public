@@ -2,7 +2,7 @@
 title: Create deployable packages of models
 description: Learn about the workflow for creating and applying a deployable package, including an overview of deployable package creation process.
 author: josaw
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

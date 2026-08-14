@@ -2,7 +2,7 @@
 title: Respond to privacy data requests resources
 description: Access links to resources that can help you respond to a data rights request, including product-specific considerations.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak

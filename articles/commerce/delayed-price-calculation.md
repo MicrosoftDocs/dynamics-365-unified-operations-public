@@ -1,10 +1,10 @@
 ---
 title: Delay exact price and discount calculation for improved performance
 description: Learn about the delayed price calculation capability that's available in Microsoft Dynamics 365 Commerce point of sale (POS) and call center.
-author: boycezhu
+author: boycez
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2017-06-20

@@ -6,7 +6,7 @@ ms.date: 03/18/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2025-06-15

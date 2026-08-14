@@ -2,7 +2,7 @@
 title: FILTER ER function
 description: Learn about how the FILTER Electronic reporting (ER) function is use, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

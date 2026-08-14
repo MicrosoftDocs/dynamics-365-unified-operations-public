@@ -4,7 +4,7 @@ description: Learn how to use the data action instance cache to reduce the size 
 author: samjarawan
 ms.date: 02/04/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

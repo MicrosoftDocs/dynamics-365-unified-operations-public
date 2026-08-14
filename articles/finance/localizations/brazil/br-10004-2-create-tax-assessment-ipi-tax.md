@@ -2,7 +2,7 @@
 title: Create a tax assessment - IPI tax (Brazil)
 description: This article describes how to create a tax assessment for the IPI tax for a given booking period in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

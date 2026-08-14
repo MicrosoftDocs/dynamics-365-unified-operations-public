@@ -4,9 +4,9 @@ description: Learn how you can use a trigger to block an invoice or credit trans
 author: josaw1
 ms.date: 02/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.assetid: 605f5986-f84f-4b18-b94e-b0912cb367a1
 ms.custom: 

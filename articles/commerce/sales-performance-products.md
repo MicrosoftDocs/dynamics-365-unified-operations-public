@@ -5,7 +5,7 @@ author: ashishmsft
 ms.date: 01/29/2026
 ms.topic: how-to
 ms.search.form: SysOperationsTemplateForm
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: b3ac056f-0e4f-4e16-8479-37366f488793
 ms.search.region: Global
 ms.author: asharchw

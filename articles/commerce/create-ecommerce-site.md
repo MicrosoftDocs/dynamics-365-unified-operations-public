@@ -4,7 +4,7 @@ description: Learn how to create a new e-commerce site in Dynamics 365 Commerce 
 author: bicyclingfool
 ms.date: 01/21/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

@@ -4,7 +4,7 @@ description: This article provides information about the fiscal archive and the 
 author: EvgenyPopovMBS
 ms.date: 02/26/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: France
 ms.author: anupamar
 ms.search.validFrom: 2021-02-19

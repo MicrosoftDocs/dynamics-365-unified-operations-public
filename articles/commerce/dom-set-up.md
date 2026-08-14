@@ -4,7 +4,7 @@ description: Learn how to set up distributed order management (DOM) functionalit
 author: rickwyang
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2023-11-07

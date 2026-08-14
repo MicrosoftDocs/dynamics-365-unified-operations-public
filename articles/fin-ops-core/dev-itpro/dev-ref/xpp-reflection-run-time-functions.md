@@ -2,7 +2,7 @@
 title: X++ reflection runtime functions
 description: Learn about the reflection run-time functions, including syntax strings, parameters, return values, and examples for various functions.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

@@ -4,7 +4,7 @@ description: This article provides an overview of new clienteling capabilities a
 author: bebeale
 ms.date: 02/12/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.collection: get-started
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: Global

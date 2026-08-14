@@ -2,7 +2,7 @@
 title: Use a relative path in data bindings of ER models and formats
 description: Learn about how the Electronic reporting tool lets you define electronic format structures and then describe how those structures should be filled.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

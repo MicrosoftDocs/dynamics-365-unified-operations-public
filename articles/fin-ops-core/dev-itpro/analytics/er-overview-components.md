@@ -2,7 +2,7 @@
 title: Electronic reporting components
 description: Learn about the Electronic reporting (ER) components, including data model, model mapping, and format components.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

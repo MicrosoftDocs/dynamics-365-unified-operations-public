@@ -4,7 +4,7 @@ description: This article provides an overview of how catalogs are published fro
 author: josaw1
 ms.date: 02/19/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28

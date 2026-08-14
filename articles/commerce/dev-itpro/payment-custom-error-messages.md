@@ -4,7 +4,7 @@ description: Learn how to create custom error messages for payment terminal exte
 author: Reza-Assadi
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2018-07-20

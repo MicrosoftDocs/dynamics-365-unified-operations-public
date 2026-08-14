@@ -4,7 +4,7 @@ description: Learn how to add a new custom column to a POS transaction page usin
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2017-01-27

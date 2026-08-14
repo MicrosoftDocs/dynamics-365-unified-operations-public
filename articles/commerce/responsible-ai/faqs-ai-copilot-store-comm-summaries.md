@@ -5,7 +5,7 @@ author: ashishmsft
 ms.date: 02/06/2025
 ms.update-cycle: 180-days
 ms.topic: faq
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

@@ -5,7 +5,7 @@ ms.date: 02/06/2026
 ms.topic: overview
 author: ashishmsft
 ms.author: asharchw
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.custom: 
   - responsible-ai-faqs
   - copilot-learning-hub

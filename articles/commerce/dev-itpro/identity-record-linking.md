@@ -4,7 +4,7 @@ description: Learn how to enable automatic linking of identity records to custom
 author: BrianShook
 ms.date: 04/24/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2021-03-01

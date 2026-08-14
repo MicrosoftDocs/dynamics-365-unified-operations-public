@@ -2,7 +2,7 @@
 title: Extend the scope of number sequences
 description: Learn about how developers can extend number sequence scope, including a step-by-step process to create a new scope and have it appear in the client.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak

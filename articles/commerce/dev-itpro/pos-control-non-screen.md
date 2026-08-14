@@ -4,7 +4,7 @@ description: Learn how to add a custom control to a nonscreen layout designer-ba
 author: josaw1
 ms.date: 02/19/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2017-12-01

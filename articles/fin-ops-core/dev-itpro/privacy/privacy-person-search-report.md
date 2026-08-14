@@ -2,7 +2,7 @@
 title: Person search report
 description: Learn about the Personal data report for finance and operations apps, including an outline on how to download the default template.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/13/2026
 ms.reviewer: johnmichalak

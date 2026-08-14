@@ -4,7 +4,7 @@ description: Learn how to import and export product ratings and reviews in Micro
 author: gvrmohanreddy
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2017-06-20

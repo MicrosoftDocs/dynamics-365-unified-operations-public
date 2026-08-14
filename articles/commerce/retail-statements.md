@@ -5,7 +5,7 @@ author: ashishmsft
 ms.date: 01/29/2026
 ms.topic: how-to
 ms.search.form: RetailParameters
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
 ms.author: asharchw

@@ -4,8 +4,8 @@ description: Learn how to set up a build pipeline for the Microsoft Dynamics 365
 author: josaw1
 ms.date: 02/12/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2020-05-17
 ms.custom: 

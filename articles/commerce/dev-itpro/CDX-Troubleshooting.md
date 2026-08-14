@@ -5,7 +5,7 @@ author: aneesa
 ms.date: 03/20/2026
 ms.topic: troubleshooting-general
 ms.search.form: RetailTerminalTable, RetailDevice
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: aneesa
 ms.search.validFrom: 2020-08-31

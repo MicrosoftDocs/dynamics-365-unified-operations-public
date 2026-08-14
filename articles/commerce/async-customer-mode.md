@@ -4,7 +4,7 @@ description: Learn about the asynchronous customer creation mode in Microsoft Dy
 author: gvrmohanreddy
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: xiaomgao
 ms.search.validFrom: 2021-12-17

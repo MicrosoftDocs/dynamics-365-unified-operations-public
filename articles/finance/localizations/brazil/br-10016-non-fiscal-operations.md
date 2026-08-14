@@ -2,7 +2,7 @@
 title: Non-fiscal operations (Brazil)
 description: This article describes how to create nonfiscal document transactions to include in the SPED EFD text file in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

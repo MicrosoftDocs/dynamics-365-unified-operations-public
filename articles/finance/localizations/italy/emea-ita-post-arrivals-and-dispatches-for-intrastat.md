@@ -2,7 +2,7 @@
 title: Post arrivals and dispatches for Intrastat
 description: Learn how to post arrivals and dispatches for Intrastat, including a detailed process on setting up post arrivals for Intrastat.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

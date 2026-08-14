@@ -4,11 +4,11 @@ description: Learn about cost configuration for distributed order management (DO
 author: josaw1
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2018-12-15
 
 ---

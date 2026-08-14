@@ -4,7 +4,7 @@ description: Learn how to add new custom controls to Microsoft Dynamics 365 Comm
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2017-11-22

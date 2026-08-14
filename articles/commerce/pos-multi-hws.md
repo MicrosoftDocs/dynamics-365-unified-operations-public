@@ -4,7 +4,7 @@ description: Learn about the capability to have a dedicated payment terminal and
 author: BrianShook
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: shajain

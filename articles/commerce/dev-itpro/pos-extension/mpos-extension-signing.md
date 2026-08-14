@@ -4,9 +4,9 @@ description: Learn how to code sign a Modern POS (MSIX) extension package.
 author: josaw1
 ms.date: 02/25/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2020-04-13
 ms.custom: 
   - bap-template

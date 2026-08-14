@@ -4,7 +4,7 @@ description: Learn how to set up Phased Rollout (N-1) components so that your ch
 author: aneesa
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-07-31

@@ -2,7 +2,7 @@
 title: Generate printable FTI forms
 description: Learn how to use the Electronic reporting (ER) framework to generate printable free text invoice (FTI) forms as Microsoft Office documents.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Create a tax assessment - PIS and COFINS tax (Brazil)
 description: This article describes how to create the tax assessment for PIS/COFINS contributions for a given booking period in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

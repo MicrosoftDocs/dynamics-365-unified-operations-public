@@ -4,8 +4,8 @@ description: Learn how you can use configurations to add new fields to the custo
 author: josaw1
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: global
 ms.search.validFrom: 2017-06-30
 ms.custom: 

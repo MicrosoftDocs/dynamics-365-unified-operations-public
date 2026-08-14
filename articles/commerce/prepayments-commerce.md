@@ -4,9 +4,9 @@ description: This article provides an overview of processing for prepayment tran
 author: BrianShook
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2021-06-28
 ms.custom: 
   - bap-template

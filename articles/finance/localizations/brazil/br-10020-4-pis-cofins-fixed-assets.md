@@ -2,7 +2,7 @@
 title: PIS and COFINS fixed assets (Brazil)
 description: This article describes how to configure the fixed asset PIS and COFINS tax credit to be appropriated in installments in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

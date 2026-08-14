@@ -4,8 +4,8 @@ description: Learn how to add custom data to the customer Commerce Data Exchange
 author: josaw1
 ms.date: 02/17/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2022-03-30
 ms.custom: 

@@ -4,9 +4,9 @@ description: Learn how to determine the optimal combination of overlapping disco
 author: josaw1
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-05-31
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 

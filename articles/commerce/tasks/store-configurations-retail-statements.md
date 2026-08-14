@@ -5,7 +5,7 @@ author: jashanno
 ms.date: 08/08/2019
 ms.topic: how-to 
 ms.search.form: RetailStoreTable   
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-06-30 

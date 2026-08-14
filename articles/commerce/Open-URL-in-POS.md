@@ -4,7 +4,7 @@ description: Learn how to configure a button to open a URL in Microsoft Dynamics
 author: ShalabhjainMSFT
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-30

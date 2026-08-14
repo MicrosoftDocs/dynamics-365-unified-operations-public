@@ -4,7 +4,7 @@ description: This article provides an overview of digital asset management in Mi
 author: josaw1
 ms.date: 01/21/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

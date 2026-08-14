@@ -4,8 +4,8 @@ description: Learn how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2022-03-30
 ms.custom: 

@@ -4,7 +4,7 @@ description: Learn how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-06-20

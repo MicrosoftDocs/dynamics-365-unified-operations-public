@@ -4,7 +4,7 @@ description: Learn how to build custom response pages for 4xx and 5xx status cod
 author: brianshook
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

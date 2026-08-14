@@ -4,7 +4,7 @@ description: Learn how to enable Microsoft Dynamics 365 Commerce and Microsoft T
 author: ritakimani
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2021-01-15

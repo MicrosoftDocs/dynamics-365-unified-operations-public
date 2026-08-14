@@ -2,7 +2,7 @@
 title: Set up Electronic messages
 description: Learn about how to set up Electronic messages (EM) functionality, including outlines on number sequences, message item types, and message item statuses.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/24/2026
 ms.reviewer: twheeloc

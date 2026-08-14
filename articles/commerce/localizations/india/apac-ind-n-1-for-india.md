@@ -4,7 +4,7 @@ description: This article provides an overview N-1 support for Microsoft Dynamic
 author: anupamar-ms
 ms.date: 02/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: India
 ms.author: anupamar
 ms.search.validFrom: 2018-10-01

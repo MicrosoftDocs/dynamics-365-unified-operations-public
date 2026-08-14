@@ -2,7 +2,7 @@
 title: Electronic reporting formula language
 description: Learn about how to use the formula language in Electronic reporting (ER), including learning about constants, operators, and functions.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

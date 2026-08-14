@@ -2,7 +2,7 @@
 title: ICMS tax fiscal documents for Brazil
 description: Learn about tax fiscal documents and the requirements for generating them, including outlines on prerequisites and examples.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

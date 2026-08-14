@@ -2,7 +2,7 @@
 title: Set a user's preferred time zone
 description: Learn about how a user in the System Administrator role can set the time zone for a user, including a step-by-step process. 
 author: pvillads
-ms.author: pvillads
+ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template

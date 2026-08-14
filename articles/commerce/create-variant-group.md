@@ -4,7 +4,7 @@ description: Learn how to create a size, style, or color variant group for a pro
 author: samjarawan
 ms.date: 01/21/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20

@@ -2,7 +2,7 @@
 title: Bank statement and payment reconciliation for the EU
 description: Learn about the functionality that you can use to reconcile payment information from banks in formats that are used by European countries/regions.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

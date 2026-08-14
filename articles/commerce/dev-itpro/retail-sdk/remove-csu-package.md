@@ -4,8 +4,8 @@ description: Learn how to remove extensions from the Cloud Scale Unit (CSU).
 author: josaw1
 ms.date: 02/20/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: global
 ms.search.validFrom: 2020-06-29
 ms.custom: 

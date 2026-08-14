@@ -4,9 +4,9 @@ description: This article answers frequently ask questions about payment options
 author: josaw1
 ms.date: 10/24/2025
 ms.topic: faq
-ms.reviewer: josaw
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e

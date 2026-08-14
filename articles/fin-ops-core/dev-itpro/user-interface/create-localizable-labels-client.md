@@ -2,7 +2,7 @@
 title: Create localizable labels
 description: Learn about creating localizable labels, with a step-by-step process detailing creating label files, adding label strings, and requesting label files.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/12/2026
 ms.reviewer: johnmichalak

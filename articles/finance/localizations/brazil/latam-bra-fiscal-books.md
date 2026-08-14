@@ -2,7 +2,7 @@
 title: Brazil fiscal books overview
 description: Learn about fiscal books, one of three projects that make up the Public Digital Bookkeeping System. You can consolidate fiscal books into electronic files.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

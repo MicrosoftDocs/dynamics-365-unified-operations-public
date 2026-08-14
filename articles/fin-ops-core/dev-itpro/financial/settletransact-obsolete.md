@@ -2,7 +2,7 @@
 title: Settle transactions by using CustTrans  settleTransaction
 description: Learn about the new CustTrans  settleTransaction method and explains why CustTrans settleTransact is now obsolete.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/26/2026
 ms.reviewer: johnmichalak

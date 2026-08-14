@@ -4,7 +4,7 @@ description: Learn how to configure a Microsoft Dynamics 365 Commerce sandbox en
 author: josaw1
 ms.date: 01/21/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-12-10

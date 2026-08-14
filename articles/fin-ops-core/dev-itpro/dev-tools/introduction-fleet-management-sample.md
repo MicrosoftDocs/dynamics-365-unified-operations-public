@@ -2,7 +2,7 @@
 title: Fleet Management sample application
 description: Learn about the Fleet Management sample application, which is a Visual Studio solution that showcases development and foundation capabilities.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/05/2026
 ms.reviewer: johnmichalak

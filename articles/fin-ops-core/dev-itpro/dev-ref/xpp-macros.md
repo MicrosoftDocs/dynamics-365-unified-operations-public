@@ -2,7 +2,7 @@
 title: Macros in X++
 description: Learn how to create and use macros in X++, including outlines of define and if directives, including using and testing Macro values.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 11/24/2025
 ms.reviewer: johnmichalak

@@ -4,9 +4,9 @@ description: This article provides guidelines for setting up the fiscal integrat
 author: EvgenyPopovMBS
 ms.date: 02/26/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2017-06-20
 ms.custom: 
   - bap-template

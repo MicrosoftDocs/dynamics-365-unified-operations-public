@@ -5,7 +5,7 @@ author: BrianShook
 ms.date: 01/22/2026
 ms.topic: how-to
 ms.search.form: RetailTerminalTable, RetailDevice
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: Global
 ms.author: ritakimani

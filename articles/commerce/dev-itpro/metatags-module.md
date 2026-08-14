@@ -4,7 +4,7 @@ description: Learn about metatags modules and how to add them to templates in Mi
 author: samjarawan
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

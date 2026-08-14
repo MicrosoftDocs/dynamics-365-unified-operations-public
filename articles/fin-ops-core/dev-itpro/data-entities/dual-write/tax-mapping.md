@@ -2,7 +2,7 @@
 title: Integrated tax
 description: Learn about the integration of tax data between finance and operations and Dataverse, including a table that outlines various templates.
 author: josaw
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.custom: 
   - bap-template

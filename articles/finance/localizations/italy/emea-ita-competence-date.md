@@ -2,7 +2,7 @@
 title: Competence date for transactions in Italy
 description: Learn about the competence date for transactions functionality in Italy, including a step-by-step process for turning on the competence date functionality.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

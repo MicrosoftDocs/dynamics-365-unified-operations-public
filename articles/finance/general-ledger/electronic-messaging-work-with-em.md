@@ -2,7 +2,7 @@
 title: Work with the Electronic messages functionality
 description: Learn about how to work with the Electronic messages (EM) functionality, including outlines on various statuses for electronic messages.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: twheeloc
 ms.topic: article
 ms.date: 06/24/2026
 ms.reviewer: twheeloc

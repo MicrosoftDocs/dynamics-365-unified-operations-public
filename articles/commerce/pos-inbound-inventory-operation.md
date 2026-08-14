@@ -4,9 +4,9 @@ description: Learn about the capabilities of the point of sale (POS) inbound inv
 author: hhainesms
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2017-06-20
 ms.custom: 
   - bap-template

@@ -4,8 +4,8 @@ description: Learn about the cash out gift card feature of the Microsoft Dynamic
 author: josaw1
 ms.date: 02/17/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2019-10-02
 ms.custom: 

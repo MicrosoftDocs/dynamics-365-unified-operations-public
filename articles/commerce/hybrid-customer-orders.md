@@ -4,10 +4,10 @@ description: Learn about hybrid customer orders in Microsoft Dynamics 365 Commer
 author: josaw1
 ms.date: 01/22/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: 9d99a5b9-4662-499a-bece-3ea1d6092934
 ms.search.region: global
-ms.author: johnmichalak
+ms.author: mirao
 ms.search.validFrom: 2016-11-30
 ms.custom: 
   - bap-template

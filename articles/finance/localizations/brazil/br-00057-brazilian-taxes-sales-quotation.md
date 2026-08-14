@@ -2,7 +2,7 @@
 title: Brazilian tax in sales quotations
 description: This article describes how to create a sales quotation that uses Brazilian taxes with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

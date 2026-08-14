@@ -2,7 +2,7 @@
 title: Enter PIS and COFINS tax adjustment transactions (Brazil)
 description: This article describes how to create and post a journal for manual PIS and COFINS tax adjustments by using the adjustment codes defined by the tax authority in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

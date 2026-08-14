@@ -2,7 +2,7 @@
 title: Development tools in Visual Studio
 description: Visual Studio is the exclusive integrated development environment (IDE) for development. Learn about development tools used for Visual Studio.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak

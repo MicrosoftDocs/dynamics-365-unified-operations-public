@@ -2,7 +2,7 @@
 title: Waybill (Carta de Porte) complement
 description: Learn how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement with an outline on transportaiton details.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

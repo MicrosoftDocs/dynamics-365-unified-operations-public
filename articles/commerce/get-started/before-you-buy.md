@@ -4,9 +4,9 @@ description: This article provides guidance to help you evaluate Microsoft Dynam
 author: josaw1
 ms.date: 01/30/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2017-06-30
 ms.custom: 
   - bap-template

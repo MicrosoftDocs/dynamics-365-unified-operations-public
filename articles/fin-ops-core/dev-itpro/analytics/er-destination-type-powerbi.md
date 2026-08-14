@@ -2,7 +2,7 @@
 title: Power BI ER destination type
 description: Learn about how to configure the Power BI ER destination type for outbound documents with additional resources.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/07/2026
 ms.reviewer: johnmichalak

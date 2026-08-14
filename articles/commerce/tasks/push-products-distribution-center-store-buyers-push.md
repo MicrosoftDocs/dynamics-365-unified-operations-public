@@ -5,7 +5,7 @@ author: BrianShook
 ms.date: 02/11/2026
 ms.topic: how-to 
 ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimple, RetailReplenishmentTreeLookup   
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 

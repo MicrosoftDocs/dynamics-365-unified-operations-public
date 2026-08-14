@@ -4,7 +4,7 @@ description: Learn about the screen layouts that are included with the demo data
 author: josaw1
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2017-10-05

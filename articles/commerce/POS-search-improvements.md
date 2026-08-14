@@ -4,7 +4,7 @@ description: Learn about improvements made to product search functionality in Mi
 author: ShalabhjainMSFT
 ms.date: 01/27/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-06-30

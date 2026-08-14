@@ -4,7 +4,7 @@ description: This article provides an overview of the component versioning requi
 author: Reza-Assadi
 ms.date: 02/11/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01

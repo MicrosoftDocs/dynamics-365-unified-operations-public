@@ -4,7 +4,7 @@ description: Learn how to insert QR codes and barcodes that represent order IDs 
 author: bicyclingfool
 ms.date: 01/14/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2021-02-16

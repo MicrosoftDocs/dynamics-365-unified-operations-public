@@ -5,9 +5,9 @@ author: josaw1
 ms.date: 01/15/2026
 ms.topic: how-to
 ms.search.form: RetailOperations
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2021-01-31
 
 ---

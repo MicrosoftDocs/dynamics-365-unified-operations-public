@@ -4,9 +4,9 @@ description: This article answers frequently asked questions about the Microsoft
 author: josaw1
 ms.date: 02/20/2026
 ms.topic: faq
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2022-03-01
 ms.custom: 
   - bap-template

@@ -6,7 +6,7 @@ ms.date: 01/22/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2023-11-07

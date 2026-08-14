@@ -2,7 +2,7 @@
 title: Scope of the Brazilian localization
 description: Learn about the strategy and scope for tax, finance, and accounting laws and regulations in Brazil, including definitions and an outline on localization strategy.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 04/28/2026
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Delivery slips (Brazil)
 description: This article describes how to post delivery slips for sales orders with multiple sales order lines that have CFOP delivery codes in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

@@ -6,7 +6,7 @@ description: Learn how to connect an experiment in Microsoft Dynamics 365 Commer
 author: sushma-rao 
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-09-30

@@ -5,7 +5,7 @@ author: shajain
 ms.date: 10/24/2025
 ms.update-cycle: 1095-days
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-02-28

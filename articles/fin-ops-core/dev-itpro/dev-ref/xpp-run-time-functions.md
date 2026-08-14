@@ -2,7 +2,7 @@
 title: X++ runtime function resources
 description: Learn about the X++ run-time functions, including a table that outlines descriptions for various categories and functions.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

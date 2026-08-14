@@ -4,7 +4,7 @@ description: This article provides an overview of the process flow for setting u
 author: rickwyang
 ms.date: 01/29/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2023-10-23

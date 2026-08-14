@@ -2,7 +2,7 @@
 title: Manage several derived mappings for a single model root
 description: Learn how to manage several derived mappings that were configured for a single model root and how to configure electronic reporting frameworks.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

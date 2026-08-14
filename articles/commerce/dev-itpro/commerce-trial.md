@@ -4,7 +4,7 @@ description: Learn how to subscribe to a partner offer to deploy a Microsoft Dyn
 author: ashishmsft
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.custom: 

@@ -4,9 +4,9 @@ description: Learn how to create, test, and preview a layout container module in
 author: samjarawan
 ms.date: 02/03/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: samjar
+ms.author: mirao
 ms.search.validFrom: 2019-10-31
 ms.custom: 
   - bap-template

@@ -4,7 +4,7 @@ description: Learn how to implement the core payment logic in the payment device
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2017-09-01

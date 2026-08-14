@@ -2,7 +2,7 @@
 title: SPLITLISTBYLIMIT ER function
 description: Learn about how the SPLITLISTBYLIMIT Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 12/12/2019
 ms.reviewer: johnmichalak

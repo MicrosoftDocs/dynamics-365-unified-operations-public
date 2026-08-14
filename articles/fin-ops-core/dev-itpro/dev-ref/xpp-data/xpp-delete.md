@@ -2,7 +2,7 @@
 title: Delete data
 description: Learn about the delete and doDelete methods in the X++ language, including X++ code examples to run various methods.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

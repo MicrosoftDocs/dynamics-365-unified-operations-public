@@ -2,7 +2,7 @@
 title: Conditional sales tax for protested promissory notes or bills of exchange
 description: Learn about promissory notes or bills of exchange for legal entities in Spain, including an outline on conditional sales tax for protested promissory notes.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.custom: 
   - bap-template

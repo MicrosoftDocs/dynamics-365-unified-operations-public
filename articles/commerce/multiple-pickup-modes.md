@@ -4,7 +4,7 @@ description: Learn about functionality that lets you create customer orders for 
 author: hhainesms
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-06-30

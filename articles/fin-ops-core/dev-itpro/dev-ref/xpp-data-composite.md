@@ -3,7 +3,7 @@ title: X++ composite data types
 description: Learn about composite data types in X++, which include arrays, containers, classes, delegates, and tables as data types.
 author: josaw1
 ms.search.region: Global
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 08/27/2021
 ms.reviewer: johnmichalak

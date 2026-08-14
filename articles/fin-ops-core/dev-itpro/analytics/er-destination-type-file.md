@@ -2,7 +2,7 @@
 title: File ER destination type
 description: Learn about configuring a file destination for an ER format, including how to enable destination settings and additional resources.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/07/2026
 ms.reviewer: johnmichalak

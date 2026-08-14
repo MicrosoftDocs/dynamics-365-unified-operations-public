@@ -2,7 +2,7 @@
 title: Spanish bill of exchange options
 description: Learn about specific options and changes in basic bill of exchange process implemented in Microsoft Dynamics 365 Finance for legal entities in Spain.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: feature-guide
 ms.custom: 
   - bap-template

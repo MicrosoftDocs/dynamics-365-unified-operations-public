@@ -4,7 +4,7 @@ description: Learn about the browser requirements for Microsoft Dynamics 365 Com
 author: anupamar-ms
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

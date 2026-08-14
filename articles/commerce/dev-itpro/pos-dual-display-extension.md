@@ -4,9 +4,9 @@ description: Learn how to extend the POS Dual display view so that it shows cust
 author: josaw1
 ms.date: 02/19/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2018-05-31
 ms.custom: 
   - bap-template

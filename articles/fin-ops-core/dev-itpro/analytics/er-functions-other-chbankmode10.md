@@ -2,7 +2,7 @@
 title: CH_BANK_MOD_10 ER function
 description: Learn about how the CH_BANK_MOD_10 Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: reference
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

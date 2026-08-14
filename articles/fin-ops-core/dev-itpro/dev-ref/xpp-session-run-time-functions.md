@@ -2,7 +2,7 @@
 title: X++ session runtime functions
 description: Learn about the session run-time functions, including syntax strings, return values, and examples for various functions.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

@@ -4,9 +4,9 @@ description: Learn about ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 04/09/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2019-10-31
 
 ---

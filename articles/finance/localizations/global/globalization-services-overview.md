@@ -2,7 +2,7 @@
 title: Dynamics 365 globalization services
 description: This article provides an overview of Microsoft Dynamics 365 globalization services, including outline on the Regulatory Configuration Service and electronic invoicing.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 03/18/2026
 ms.reviewer: johnmichalak

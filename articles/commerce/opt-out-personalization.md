@@ -4,9 +4,9 @@ description: Learn how you can let customers opt out of receiving personalized r
 author: bebeale
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: johnmichalak
+ms.author: mirao
 ms.search.validFrom: 2019-10-31
 ---
 

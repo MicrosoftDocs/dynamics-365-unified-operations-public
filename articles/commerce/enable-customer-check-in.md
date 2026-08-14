@@ -4,7 +4,7 @@ description: Learn how to enable customer check-in notifications in Microsoft Dy
 author: bicyclingfool
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: anvenkat
 ms.search.validFrom: 2021-04-01

@@ -4,7 +4,7 @@ description: Learn how and when to set up multiple per-channel Microsoft Entra b
 author: BrianShook
 ms.date: 01/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-02-12

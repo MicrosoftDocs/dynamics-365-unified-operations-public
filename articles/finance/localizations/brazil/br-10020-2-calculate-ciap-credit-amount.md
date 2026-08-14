@@ -2,7 +2,7 @@
 title: Calculate CIAP credit amount (Brazil)
 description: This article describes how to calculate the CIAP credit amount in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

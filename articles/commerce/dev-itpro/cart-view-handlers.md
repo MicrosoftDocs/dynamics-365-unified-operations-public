@@ -4,8 +4,8 @@ description: Learn how extensions can consume the point of sale (POS) view event
 author: josaw1
 ms.date: 02/12/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2020-02-02
 ms.custom: 

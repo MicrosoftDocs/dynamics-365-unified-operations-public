@@ -2,7 +2,7 @@
 title: Exchange rate adjustments
 description: Learn about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

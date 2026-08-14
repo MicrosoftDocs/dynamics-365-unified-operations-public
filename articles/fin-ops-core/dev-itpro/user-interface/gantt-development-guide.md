@@ -2,7 +2,7 @@
 title: Gantt control development guide
 description: Learn about how to create new forms by using the Gantt control, including overviews of working times, color use, and interactions.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/12/2026
 ms.reviewer: johnmichalak

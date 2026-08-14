@@ -5,7 +5,7 @@ author: ShalabhjainMSFT
 ms.date: 01/23/2026
 ms.topic: how-to
 ms.search.form:  RetailOperations, RetailFunctionalityProfile
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.custom: 

@@ -4,7 +4,7 @@ description: Learn how to prevent noncarrier modes of delivery from appearing fo
 author: hhainesms
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-10-31

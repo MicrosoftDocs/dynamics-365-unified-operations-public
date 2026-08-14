@@ -4,7 +4,7 @@ description: Learn how to manage ratings and reviews in Microsoft Dynamics 365 C
 author: gvrmohanreddy
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-01

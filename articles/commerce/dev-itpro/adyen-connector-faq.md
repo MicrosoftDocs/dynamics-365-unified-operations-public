@@ -4,7 +4,7 @@ description: This article provides answers to frequently asked questions regardi
 author: Reza-Assadi
 ms.date: 02/11/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01

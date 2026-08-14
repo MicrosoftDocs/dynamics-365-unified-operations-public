@@ -4,7 +4,7 @@ description: Learn about processes and tools you can use to debug issues related
 author: bebeale
 ms.date: 01/02/2026
 ms.topic: faq
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31

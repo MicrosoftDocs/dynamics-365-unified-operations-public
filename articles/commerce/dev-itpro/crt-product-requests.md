@@ -4,7 +4,7 @@ description: Learn how to consume Commerce runtime (CRT) Product service request
 author: rickwyang
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2023-07-05

@@ -4,9 +4,9 @@ description: Learn about price adjustments and discounts in Microsoft Dynamics 3
 author: josaw1
 ms.date: 01/27/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.form: RetailParameters, RetailPeriodicDiscount

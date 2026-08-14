@@ -4,7 +4,7 @@ description: Learn how to add a new custom button to the POS header bar in Micro
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2020-09-16

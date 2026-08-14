@@ -2,7 +2,7 @@
 title: Generate a transfer document for an internal inventory transfer
 description: Learn how to create transfer documents for goods movement inside a company in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

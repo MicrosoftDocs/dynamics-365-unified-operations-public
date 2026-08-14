@@ -2,7 +2,7 @@
 title: Create a Dataverse solution using Upload into repository
 description: Learn how to create a Microsoft Dataverse solution by using the Upload into repository functionality.
 author: filatovm
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to 
 ms.date: 03/19/2026
 ms.custom: 

@@ -5,7 +5,7 @@ author: ritakimani
 ms.date: 02/11/2026
 ms.topic: how-to
 ms.author: ritakimani
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2017-10-31
 ms.custom: 

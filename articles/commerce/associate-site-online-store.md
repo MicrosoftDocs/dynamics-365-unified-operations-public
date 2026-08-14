@@ -4,7 +4,7 @@ description: Learn how to bind your Microsoft Dynamics 365 Commerce site to one 
 author: bicyclingfool
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.author: asharchw
 ms.search.validFrom: 2019-09-30
 ms.custom: 

@@ -2,7 +2,7 @@
 title: Application business events
 description: Learn about application business events, including a table that outlines Procure to pay business events and their respective modules.
 author: Sunil-Garg
-ms.author: sunilg
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.custom: 

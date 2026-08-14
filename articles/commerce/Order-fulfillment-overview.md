@@ -4,7 +4,7 @@ description: This article provides an overview of store order fulfillment in Mic
 author: BrianShook
 ms.date: 01/23/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2017-10-30 

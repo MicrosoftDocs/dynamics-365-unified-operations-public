@@ -4,7 +4,7 @@ description: Learn about the extensibility impact of the Commerce catalogs for B
 author: ashishmsft
 ms.date: 02/12/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28

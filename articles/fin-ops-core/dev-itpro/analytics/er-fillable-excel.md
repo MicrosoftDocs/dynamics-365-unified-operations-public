@@ -2,7 +2,7 @@
 title: Design a configuration for generating documents in Excel format
 description: Learn about how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 07/17/2026
 ms.reviewer: johnmichalak

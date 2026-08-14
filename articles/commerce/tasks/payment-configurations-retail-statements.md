@@ -5,7 +5,7 @@ author: jashanno
 ms.date: 02/11/2026
 ms.topic: how-to 
 ms.search.form: RetailStoreTable, RetailStoreTenderTypeTable   
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-06-30 

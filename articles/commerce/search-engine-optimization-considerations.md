@@ -4,7 +4,7 @@ description: Learn about search engine optimization (SEO) considerations for you
 author: josaw1
 ms.date: 05/06/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

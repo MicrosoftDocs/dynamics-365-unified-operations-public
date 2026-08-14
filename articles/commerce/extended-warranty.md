@@ -4,9 +4,9 @@ description: Learn about extended warranties and how to create and configure the
 author: josaw1
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2019-10-31
 ms.custom: 
   - bap-template

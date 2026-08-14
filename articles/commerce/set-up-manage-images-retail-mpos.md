@@ -4,9 +4,9 @@ description: Learn how to set up and manage images for Microsoft Dynamics 365 Co
 author: josaw1
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,

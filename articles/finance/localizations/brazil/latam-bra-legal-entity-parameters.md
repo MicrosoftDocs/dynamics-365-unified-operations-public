@@ -2,7 +2,7 @@
 title: Parameters for legal entities in Brazil
 description: Learn how to set for legal entities in Brazil.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

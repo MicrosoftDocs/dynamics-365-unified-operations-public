@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: filatovm
+ms.author: johnmichalak
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099

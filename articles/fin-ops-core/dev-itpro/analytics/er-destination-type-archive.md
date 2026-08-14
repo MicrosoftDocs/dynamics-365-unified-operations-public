@@ -2,7 +2,7 @@
 title: Archive ER destination type
 description: Learn about how to configure an archive destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/02/2026
 ms.reviewer: johnmichalak

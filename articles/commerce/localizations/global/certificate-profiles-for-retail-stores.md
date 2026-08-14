@@ -4,7 +4,7 @@ description: This article provides an overview of the certificate profiles that 
 author: josaw1
 ms.date: 02/26/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-10-09

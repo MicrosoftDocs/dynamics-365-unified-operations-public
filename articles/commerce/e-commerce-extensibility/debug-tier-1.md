@@ -4,7 +4,7 @@ description: Learn how to set up an e-commerce online development environment to
 author: samjarawan
 ms.date: 02/03/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

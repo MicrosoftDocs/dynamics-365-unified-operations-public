@@ -2,7 +2,7 @@
 title: RB/SL depreciation
 description: Learn about the RB/SL depreciation method that's used in France.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

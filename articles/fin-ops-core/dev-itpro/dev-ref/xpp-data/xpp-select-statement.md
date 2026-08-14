@@ -2,7 +2,7 @@
 title: Select statement
 description: Learn about select statements in the X++ language, including examples for select, insert, update, and delete statements, including a syntax table.
 author: pvillads
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/05/2026
 ms.reviewer: johnmichalak

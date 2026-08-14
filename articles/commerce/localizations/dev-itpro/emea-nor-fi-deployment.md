@@ -4,7 +4,7 @@ description: Learn how to enable the cash register functionality for the Microso
 author: EvgenyPopovMBS
 ms.date: 06/26/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-03-01

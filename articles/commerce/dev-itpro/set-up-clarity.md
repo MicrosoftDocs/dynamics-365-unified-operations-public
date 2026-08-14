@@ -4,7 +4,7 @@ description: Learn how to set up Microsoft Clarity in your Microsoft Dynamics 36
 author: BrianShook
 ms.date: 02/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2021-01-25

@@ -2,7 +2,7 @@
 title: Screen ER destination type
 description: Learn about about how to configure a screen destination for each folder or file component of an Electronic reporting (ER) format.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/07/2026
 ms.reviewer: johnmichalak

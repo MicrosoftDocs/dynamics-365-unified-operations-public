@@ -2,7 +2,7 @@
 title: General ledger statement by main account
 description: Learn how to generate general ledger statements by main account in Microsoft Excel format, including a table that defines various column names.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/24/2026
 ms.reviewer: twheeloc
