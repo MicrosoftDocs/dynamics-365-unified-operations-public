@@ -4,7 +4,7 @@ description: Learn how to generate and scan QR codes to quickly configure the Wa
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 08/13/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -20,10 +20,13 @@ Other methods for setting connection information include using a connection sett
 
 ## Supported connection types
 
-The feature for QR code–based connection configuration supports all connection types that the Warehouse Management mobile app supports. Here are some examples:
+The feature for QR code–based connection configuration supports all connection types that the Warehouse Management mobile app supports:
 
-- **DeviceCode** – Interactive authentication flow.
-- **UsernamePassword** – Username/password authentication.
+- **UsernamePassword** (recommended) – Username/password authentication. Combine it with `"UseBroker": true` to enable [brokered authentication](warehouse-app-authenticate-user-based.md#sso) and single sign-on (SSO). The examples in this article use this connection type.
+- **DeviceCode** (not recommended) – Interactive [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) authentication.
+
+> [!IMPORTANT]
+> Although QR codes can still specify `"ConnectionType": "DeviceCode"`, Microsoft no longer recommends device code flow because it's a frequent target of phishing attacks. Microsoft Entra ID security default settings block device code flow by default in *new* tenants, so a QR code that specifies this connection type might not work. It's also not supported on iOS. Use `"UsernamePassword"` (ideally with `"UseBroker": true`) in the QR codes that you generate. Learn more in [Device code flow authentication](warehouse-app-authenticate-user-based.md#deviceCodeFlow).
 
 ## Step 1: Prepare your configuration JSON code
 
@@ -38,7 +41,8 @@ Create a JSON configuration that includes your connection details. Follow the in
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": false,
-            "ConnectionType": "DeviceCode",
+            "ConnectionType": "UsernamePassword",
+            "UseBroker": true,
             "AuthCloud": "AzureGlobal"
         }
     ]
@@ -66,7 +70,8 @@ Follow these steps to ask Copilot to generate a QR code for your JSON configurat
                 "Company": "USMF",
                 "IsEditable": true,
                 "IsDefaultConnection": true,
-                "ConnectionType": "DeviceCode",
+                "ConnectionType": "UsernamePassword",
+                "UseBroker": true,
                 "AuthCloud": "AzureGlobal"
             }
         ]
@@ -103,7 +108,8 @@ $jsonConfig = @"
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": true,
-            "ConnectionType": "DeviceCode",
+            "ConnectionType": "UsernamePassword",
+            "UseBroker": true,
             "AuthCloud": "AzureGlobal"
         }
     ]
