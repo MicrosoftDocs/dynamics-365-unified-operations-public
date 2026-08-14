@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 05/12/2026
+ms.date: 08/14/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-03
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-08-03
 
 This article explains how to set up value-added tax (VAT) for VAT declarations in the United Kingdom (UK) in Microsoft Dynamics 365 Finance.
 
-Information about the administration of VAT in the UK can be found on the official website for the tax authority of the UK, [Her Majesty's Revenue and Customs (HMRC)](https://www.gov.uk/topic/business-tax/vat).
+You can find information about the administration of VAT in the UK on the official website for the tax authority of the UK, [Her Majesty's Revenue and Customs (HMRC)](https://www.gov.uk/topic/business-tax/vat).
 
 After a company registers for VAT, the law of the UK requires that it charge VAT on sales of goods and services. The company is also entitled to reclaim VAT on purchases of goods and services.
 
@@ -50,7 +50,7 @@ In Microsoft Dynamics 365 Finance, you must complete the following setup to ensu
 
 To configure the country/region type, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
 1. On the **Countries/regions properties** FastTab, set the country/region of the current legal entity to **Domestic**.
 1. If your current legal entity is in Northern Ireland, set the country/region of EU countries/regions that participate in EU trade with the current legal entity to **EU**. For each country/region, identify the country/region code for foreign trade purposes.
 1. Set the country/region of all other countries/regions that do business with the current legal entity to **Third country/region**.
@@ -62,7 +62,7 @@ If your company is in Northern Ireland and provides services to counterparties i
 To enable the **Company tax registration in customer invoices** feature, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces** \> **Feature management**.
-1. In the feature list, find and select, **Company tax registration in customer invoices**, and then select **Enable**.
+1. In the feature list, find and select **Company tax registration in customer invoices**, and then select **Enable**.
 
 For more information about feature management and available options, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -92,7 +92,7 @@ To set up sales tax settlement periods, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
 1. Select **New** to create a record, and specify the parameters of the sales tax settlement period. For more information, see [Set up sales tax settlement periods](../../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
-1. Make sure that the sales tax settlement periods that you create correlate with the VAT obligation periods that are specified for your company's account in HMRC.
+1. Ensure that the sales tax settlement periods you create match the VAT obligation periods specified for your company's account in HMRC.
 
 ## Set up ledger posting groups
 
@@ -103,20 +103,20 @@ To set up ledger posting groups, follow these steps:
 
 ## Set up sales tax groups
 
-Create sales tax groups for the different types of business operations that are applicable to your company. These operation types can include, for example, **Accounts payable Domestic**, **Accounts payable Third country/region**, **Accounts receivable Domestic**, **Accounts receivable Third country/region**, **Reverse charge VAT**.
+Create sales tax groups for the different types of business operations that apply to your company. These operation types can include, for example, **Accounts payable Domestic**, **Accounts payable Third country/region**, **Accounts receivable Domestic**, **Accounts receivable Third country/region**, and **Reverse charge VAT**.
 
 To set up sales tax groups, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
+1. In Dynamics 365 Finance, go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
 1. Select **New** to create a record, and specify the parameters of the sales tax group. For more information, see [Set up sales tax groups and item sales tax groups](../../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
 
 ## Set up item sales tax groups
 
 To set up item sales tax groups, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Item sales tax groups**.
+1. In Dynamics 365 Finance, go to **Tax** > **Indirect taxes** > **Sales tax** > **Item sales tax groups**.
 1. Select **New** to create a record, and specify the parameters of the item sales tax group. For more information, see [Set up sales tax groups and item sales tax groups](../../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
-1. Specify the reporting type for the item sales tax group. For the reporting types that are applicable to the business operations of your company, more than three item sales tax groups are required. You can select among the following groups:
+1. Specify the reporting type for the item sales tax group. For the reporting types that apply to the business operations of your company, you need more than three item sales tax groups. You can select from the following groups:
 
     - Full (Reporting type = Item)
     - Full (Reporting type = Service)
@@ -141,7 +141,7 @@ To set up sales tax codes, follow these steps:
     - **Reverse charge**: For sales tax codes that are set up for importing and reverse change operations with a negative rate.
     - **Use tax**: For intra-community acquisitions of goods made in Northern Ireland from EU Member States. As of January 1, 2021, tax setups that use the **use tax** approach will no longer be applicable to acquisitions that companies in the United Kingdom make from the EU.
 
-    The combination of these groups must lead to one sales tax code. There is an exception for the setup of reverse charge VAT operations, which Finance uses for VAT posting. These two groups, together with **Reporting type** defind for **Item sales tax group** and the **Country/region type** of the **Sales tax code**, will lead to reporting in different [boxes of the VAT declaration](#boxes).
+    The combination of these groups must lead to one sales tax code. There is an exception for the setup of reverse charge VAT operations, which Finance uses for VAT posting. These two groups, together with **Reporting type** defind for **Item sales tax group** and the **Country/region type** of the **Sales tax code**, lead to reporting in different [boxes of the VAT declaration](#boxes).
 
 > [!NOTE]
 > As of January 1, 2021, dispatch of goods and related costs to customers in the EU must be excluded from box 8 if the dispatches are from the United Kingdom. Therefore, the sales tax code with the **Country/Region type** value set up to **EU** can be used for intra-community dispatches of goods from Northern Ireland to EU Member States only.
@@ -156,15 +156,25 @@ To set up reverse charge rules, follow these steps:
 
 For more information, see [Reverse charge mechanism for VAT/GST scheme](../global/emea-reverse-charge.md).
 
-There are several scenarios, such as postponed VAT accounting and VAT reverse charge for building and construction services, where the deemed output VAT will be accounted for on the value of the invoice and added to box 1 of the VAT return. However nothing will be entered in box 6 for the transaction. To exclude the tax base amount from box 6, you must complete the following setup. This steps in this procedure use the example of postponed VAT accounting.
+In several scenarios, such as postponed VAT accounting and VAT reverse charge for building and construction services, you account for the deemed output VAT on the value of the invoice and add it to box 1 of the VAT return. However, you don't enter anything in box 6 for the transaction. To exclude the tax base amount from box 6, complete the following setup. This article uses the example of postponed VAT accounting.
 
 To exclude the tax base amount from box 6, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Reverse charge rules**, and select **New**.
-1. In the **Partner country/region type** field, select **Third country/region**. The same partner country/region type must be specified in the master data for related vendors.
+1. In the **Partner country/region type** field, select **Third country/region**. Specify the same partner country/region type in the master data for related vendors.
 1. In the **Reverse charge item group** field select **All**.
 1. In the **Threshold amount** field, enter **0.00**.
 1. Select the **Empty tax base for outgoing tax** checkbox.
+
+> [!NOTE]
+> When you select **Empty tax base for outgoing tax**, the system adds a special marker to each tax transaction that matches the rule, and that marker is what excludes the tax base from Box 6.
+>
+> As an alternative - available with **VAT Declaration JSON (UK) format version 32.32** or later - you can use the **ReverseCharge** and **PVA** result values of the **ReportFieldLookup** application-specific parameter instead (learn more in [Set up application-specific parameters for the VAT Declaration format](emea-gbr-mtd-vat-integration-setup.md#result-values-for-additional-scenarios)). With these result values, the system distinguishes reverse charge from postponed VAT accounting (PVA) by sales tax code alone:
+>
+> - Transactions mapped to **PVA** are excluded from Box 6 at reporting time, so you don't need to set up the Empty tax base for outgoing tax rule for them. The marker isn't required and isn't considered.
+> - Transactions mapped to **ReverseCharge** are reported in Box 6.
+>
+> Use one approach or the other. If you configure the **ReverseCharge** and **PVA** result values, you don't need the **Empty tax base for outgoing tax** rule for those transactions.
 
 ## <a id="boxes"></a>Box calculation for the VAT declaration
 
@@ -174,13 +184,22 @@ The default setup of the VAT declaration that is proposed in the scope of the Ma
 |------------|-------------------|-------------------------|
 | Box 1      | VAT that is due in the period on sales and other outputs. | <p>To calculate the amount in this box, combine the tax amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
 | Box 2      | VAT that is due in the period on intra-community acquisitions of goods in Northern Ireland from EU member states. | <p>To calculate the amount in this box, combine the tax amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** value other than **Service**, a **Country/Region type** value of **EU**, and the following classification values:</p><ul><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
-| Box 3      | The total VAT that is due. | Box 1 + box 1. |
+| Box 3      | The total VAT that is due. | box 1 + box 2 |
 | Box 4      | VAT that is reclaimed in the period on purchases and other inputs, including acquisitions from the EU. | <p>To calculate the amount in this box, combine the tax amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
 | Box 5      | The net VAT to pay to HMRC or to reclaim. | The absolute value of box 3 – box 1. |
-| Box 6      | The total value of sales and all other outputs, excluding any VAT. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul> |
+| Box 6      | The total value of sales and all other outputs, excluding any VAT. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul> <br>The tax base of reverse-charge transactions is included in Box 6. If you configure the PVA result value (learn more in [Set up application-specific parameters for the VAT Declaration format](emea-gbr-mtd-vat-integration-setup.md#result-values-for-additional-scenarios)), postponed VAT accounting transactions that share the same classification are excluded from Box 6 while still reporting output VAT in Box 1. |
 | Box 7      | The total value of purchases and all other inputs, excluding any VAT. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
 | Box 8      | The total value of intra-community dispatches of goods and related costs, excluding VAT, from Northern Ireland to EU member states. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** other than **Service**, a **Country/Region type** value of **EU**, and the following classification values:</p><ul><li>SaleExempt</li><li>SalesExemptCreditNote</li><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
 | Box 9      | The total value of intra-community acquisitions of goods and related costs, excluding VAT, in Northern Ireland from EU member states. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** value other than **Service**, a **Country/Region type** value of **EU**, and the following classification values:</p><ul><li>UseTax</li><li>UseTaxCreditNote</li><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li></ul> |
+
+> [!NOTE]
+> By using **VAT Declaration JSON (UK) version 32.32** or later, you can separate reverse charge from postponed VAT accounting (PVA) by using the **ReverseCharge** and **PVA** result values in the **ReportFieldLookup** application-specific parameter, distinguished by sales tax code:
+
+> - Box 1 (VAT due on sales) — includes the output VAT of both reverse-charge and PVA transactions.
+> - Box 6 (total value of sales, excluding VAT) — includes the net base of ReverseCharge transactions and excludes the net base of PVA transactions.
+> - Boxes 4 and 7 are unaffected.
+>  
+> This feature replaces the need to use the **Empty tax base for outgoing tax** reverse charge rule for these transactions.
 
 ## Examples of correct VAT setup
 
