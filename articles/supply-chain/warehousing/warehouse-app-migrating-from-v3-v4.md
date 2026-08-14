@@ -4,7 +4,7 @@ description: Learn how to migrate from Warehouse Management mobile application f
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -136,9 +136,11 @@ The following table summarizes the supported authentication methods for each pla
 
 | Platform | Cloud environment | On-premises environment |
 | --- | --- | --- |
-| **Windows** | Device code, Username/password, Broker | Device code, Username/password |
-| **Android** | Device code, Username/password | Username/password only |
+| **Windows** | Username/password, Broker, Device code<sup>1</sup> | Username/password, Device code<sup>1</sup> |
+| **Android** | Username/password, Device code<sup>1</sup> | Username/password only |
 | **iOS** | Username/password only | Username/password only |
+
+<sup>1</sup> For backward compatibility, these platforms still support device code flow, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. It's blocked by default in *new* Microsoft Entra ID tenants and doesn't support single sign-on (SSO) or brokered authentication. Use the migration to V4 as an opportunity to move these devices to username/password authentication. Learn more in [Device code flow authentication](warehouse-app-authenticate-user-based.md#deviceCodeFlow).
 
 ## <a name="rollout"></a>Transition period support
 
