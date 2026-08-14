@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/06/2026
+ms.date: 08/14/2026
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-07-30
@@ -89,11 +89,14 @@ Learn more about how to import ER configurations in [Import Electronic reporting
 
 ## <a id="declaration"></a>Set up application-specific parameters for the VAT Declaration format
 
-Nine boxes on the VAT declaration for the United Kingdom must contain values that are calculated based on the tax transactions that are relevant to the VAT settlement period that the company used during the reporting period.
+The nine boxes on the VAT declaration for the United Kingdom must contain values that you calculate based on the tax transactions relevant to the VAT settlement period that the company used during the reporting period.
 
 Tax transactions can have different combinations of criteria, such as the transaction direction, the tax code, the country or region code of the tax code, and the tax type. The combination of criteria depends on the nature of the original business operation that caused tax transaction posting.
 
-Application-specific parameters let users influence the collection of tax transactions that must be considered during the calculation of the reporting value in each box on the VAT declaration. For the VAT declaration for the United Kingdom, there's a **ReportFieldLookup** application-specific parameter. The following table describes the result values that are available for this parameter.
+By using application-specific parameters, you can influence the collection of tax transactions that you must consider during the calculation of the reporting value in each box on the VAT declaration. For the VAT declaration for the United Kingdom, use the **ReportFieldLookup** application-specific parameter. The following table describes the result values that cover the basic, most common VAT reporting scenarios. The **Default setup of the classifier value** column lists the classifiers that the Microsoft-provided sample setup maps to each result value.
+
+> [!NOTE]
+> This table represents the setup for basic scenarios. Some business scenarios aren't covered by this basic setup and require additional result values that you must configure manually - for example, when you need to distinguish reverse-charge transactions from postponed VAT accounting (PVA) transactions for the same country/region. Those result values are described in [Result values for additional scenarios](#result-values-for-additional-scenarios).
 
 | Result value | Calculation that the result value is used in | Default setup of the classifier value |
 |--------------|----------------------------------------------|---------------------------------------|
@@ -101,14 +104,28 @@ Application-specific parameters let users influence the collection of tax transa
 | VATDueEC     | <ul><li>Tax amount from the **vatDueAcquisitions** box (Box 2) and tax base amount from the **totalAcquisitionsExVAT** box (Box 9). In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country/region type of the sales tax code is set to **EU**.</li><li>Tax amount from the **vatReclaimedCurrPeriod** box (Box 4).</li><li>Tax base amount from the **totalValuePurchasesExVAT** box (Box 7).</li></ul> | <ul><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
 | ECSupplies   | <ul><li>Tax base amount from the **totalValueSalesExVAT** box (Box 6).</li><li>Tax base amount from the **totalValueGoodsSuppliedExVAT** box (Box 8). In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country/region type of the sales tax code is set to **EU**.</li></ul> | <ul><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul> |
 | VATReclaimed | <ul><li>Deductible sales tax amount from the **vatReclaimedCurrPeriod** box (Box 4).</li><li>Tax base amount from the **totalValuePurchasesExVAT** box (Box 7).</li><li>Tax amount from the **vatDueAcquisitions** box (Box 2). In addition, the reporting type of the item sales tax group isn't set to **Service**, and the country/region type of the sales tax code is set to **EU**.</li></ul> | <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li></ul> |
-| ReverseCharge</br> *(available in format version version 32.32 or later)* | <ul><li>Tax amount from the **vatDueSales** box (Box 1).</li><li>Tax base amount from the **totalValueSalesExVAT** box (Box 6).</li></ul> | <ul><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
-| PVA </br> *(available in format version version 32.32 or later)* | <ul><li>Tax amount from the **vatDueSales** box (Box 1).</li><li>**Not reported** in the **totalValueSalesExVAT** box (Box 6).</li></ul> | <ul><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
 | Other        | Use the **Not blank** value for this result, and set it up at the end of your list of result values. | Not blank |
 
->[!NOTE]
-> **ReverseCharge** result value reports in Box 1 and Box 6. **PVA** (Postponed VAT Accounting ) result value reports in Box 1 only, and is deliberately excluded from Box 6. Reverse-charge and PVA transactions are distinguished by the sales tax code that you map to each result value, not by the classifier alone. Map the sales tax codes that you use for the negative reverse-charge leg to ReverseCharge, and the sales tax codes that you use for postponed VAT accounting to PVA.
 
-For each value, users can define a set of sales tax codes together with a classifier that is associated with the direction of the tax transaction and the credit note identifier. The following table provides a definition of this classifier.
+### <a id="result-values-for-additional-scenarios"></a> Result values for additional scenarios
+
+The result values in this section aren't part of the basic setup and aren't included in the `UK MTD VAT ReportFieldLookup` sample data package. Configure them manually only if your business has the corresponding scenario. They require **VAT Declaration JSON (UK)** format **version 32.32** or later (and relevant version of the derived **VAT Declaration Excel (UK)** format).
+
+Unlike the basic result values, these values have no default tax-code mapping. You must enter the specific sales tax codes that you used for the relevant transactions on each condition line. The reverse-charge and PVA legs share the same classifier (`SalesReverseCharge` / `SalesReverseChargeCreditNote`), so the sales tax code is the only thing that distinguishes them.
+
+| Result value |	Scenario	| Reporting behavior |	Sales tax code to specify |	Classifier |
+|-------------|---------|----------|-----------|-----------|
+| ReverseCharge |	Reverse charge (for example, services) where the net base must be reported in Box 6. |<ul><li>Tax amount from the **vatDueSales** box (Box 1).</li><li>Tax base amount from the **totalValueSalesExVAT** box (Box 6).</li></ul> |	The sales tax code(s) that you use for the reverse-charge leg. |	<ul><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul>|
+| PVA |	Postponed VAT accounting for imported goods, where the net base must not be reported in Box 6. |	<ul><li>Tax amount from the **vatDueSales** box (Box 1).</li><li>**Not reported** in the **totalValueSalesExVAT** box (Box 6).</li></ul> | The sales tax code(s) that you use for the PVA leg. | <ul><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
+
+**ReverseCharge** result value reports in Box 1 and Box 6. **PVA** (Postponed VAT Accounting ) result value reports in Box 1 only, and is deliberately excluded from Box 6. Reverse-charge and PVA transactions are distinguished by the sales tax code that you map to each result value, not by the classifier alone. Map the sales tax codes that you use for the negative reverse-charge leg to ReverseCharge, and the sales tax codes that you use for postponed VAT accounting to PVA.
+
+> [!IMPORTANT]
+> Conditions are evaluated in the order of their line numbers, and the first matching condition wins. Because the basic result values use a *Not blank* tax code (which matches any tax code), add the **ReverseCharge** and **PVA** conditions at the top of the list (line 1, line 2, and so on), above every *Not blank* line, and enter your specific tax codes on those top lines. If you place them below the *Not blank* lines, they're never reached and the transactions are reported incorrectly.
+
+### Classifier definition
+
+For each **Result value**, you can define a set of sales tax codes along with a classifier that connects to the direction of the tax transaction and the credit note identifier. The following table provides a definition of this classifier.
 
 | Classifier value                | Condition |
 |---------------------------------|-----------|
@@ -129,7 +146,9 @@ For each value, users can define a set of sales tax codes together with a classi
 
 For more information about how boxes on the VAT declaration for the United Kingdom use the result values that are defined for the **ReportFieldLookup** application-specific parameter, see [VAT setup details for VAT declarations in the United Kingdom](emea-gbr-mtd-vat-integration-declaration.md).
 
-Before you use the **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats, set up the **ReportFieldLookup** application-specific parameter. You can download an example of this setup from the [Shared asset library in Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary) that includes the setup for the **Result values** which are provided in the **Default setup of the classifier value** column in the first table of this section.
+### ReportFieldLookup application-specific parameter setup
+
+Before you use the **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats, set up the **ReportFieldLookup** application-specific parameter. You can download an example of this setup from the [Shared asset library in Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/V2/SharedAssetLibrary). The example includes the setup for the **Result values**, which are provided in the **Default setup of the classifier value** column in the first table of this section.
 
 To set up the **ReportFieldLookup** application-specific parameter, follow these steps:
 
@@ -137,9 +156,9 @@ To set up the **ReportFieldLookup** application-specific parameter, follow these
 
     :::image type="content" source="../media/uk-mtd-reportfieldlookup.png" alt-text="Screenshot of downloading the UK MTD VAT ReportFieldLookup data package file from the LCS Shared asset library.":::
 
-1. To set up the **ReportFieldLookup** application-specific parameter in the system, in Finance, open the **Electronic reporting** workspace, and then, in the configuration tree, under **Tax declaration model**, select the **VAT Declaration JSON (UK)** format.
-1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use. Usually, Finance runs the latest configuration version that's available in your system.
-1. To use the example of this setup that you downloaded from the Shared asset library as a preliminary step, select **Import** on the Action Pane, and then select the file that you downloaded.
+1. To set up the **ReportFieldLookup** application-specific parameter in the system, in Finance, open the **Electronic reporting** workspace. In the configuration tree, under **Tax declaration model**, select the **VAT Declaration JSON (UK)** format.
+1. On the **Action** pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use. Usually, Finance runs the latest configuration version that's available in your system.
+1. To use the example of this setup that you downloaded from the Shared asset library as a preliminary step, select **Import** on the **Action** pane, and then select the file that you downloaded.
 1. To manually define conditions, select **ReportFieldLookup** on the **Lookups** FastTab, and then specify criteria on the **Conditions** FastTab. You can also use the example file as a starting point to set up conditions. If you manually specify conditions for **ReportFieldLookup**, set up the **Other** value as the last condition in the list. Although this value isn't used in the **VAT Declaration JSON (UK)** format, it must be set to **Not blank** for both columns of the criteria.
 
     > [!IMPORTANT]
@@ -151,22 +170,22 @@ To set up the **ReportFieldLookup** application-specific parameter, follow these
 
 When your setup of **ReportFieldLookup** for the **VAT Declaration JSON (UK)** format is ready, export it, and then import it into the **VAT Declaration Excel (UK)** format.
 
-1. In the configuration tree, **Tax declaration model**, select the **VAT Declaration JSON (UK)** format.
-1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you completed the setup of **ReportFieldLookup** for.
-1. On the Action Pane, select **Export** to save your configuration in XML format, and then close the **Application specific parameters** page.
+1. In the configuration tree, under **Tax declaration model**, select the **VAT Declaration JSON (UK)** format.
+1. On the **Action** pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you completed the setup of **ReportFieldLookup** for.
+1. On the **Action** pane, select **Export** to save your configuration in XML format, and then close the **Application specific parameters** page.
 1. In the configuration tree, under the **VAT Declaration JSON (UK)** format, select the **VAT Declaration Excel (UK)** format.
 1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use.
-1. On the Action Pane, select **Import**, select the file that you saved in step 6, and select **OK** to confirm the import.
+1. On the **Action** pane, select **Import**, select the file that you saved in step 6, and select **OK** to confirm the import.
 1. Change the value of the **State** field to **Completed**, save your changes, and close the **Application specific parameters** page.
 
 > [!IMPORTANT]
 >
 > - The setup of **ReportFieldLookup** is company specific.
 > - Before you start to set up **ReportFieldLookup**, be sure to select the legal entity in which you want to generate the VAT declaration for the United Kingdom.
-> - If you want to generate the VAT declaration for the United Kingdom from multiple legal entities in Finance, set up **ReportFieldLookup** for each legal entity. To replicate the application-specific parameters from one legal entity to multiple, use the **Replicate** button on the Action pane of the **Application specific parameters** page.
+> - If you want to generate the VAT declaration for the United Kingdom from multiple legal entities in Finance, set up **ReportFieldLookup** for each legal entity. To replicate the application-specific parameters from one legal entity to multiple, use the **Replicate** button on the **Action** pane of the **Application specific parameters** page.
 > - The setup of **ReportFieldLookup** is mandatory for all legal entities that report VAT as a VAT group.
 
->[!TIP]
+> [!TIP]
 > The conditions of the **ReportFieldLookup** application-specific parameter are evaluated in the order of their line numbers, and the system applies the first condition whose criteria a transaction matches. The result values that are delivered in the sample setup use the *Not blank* value in the tax code column, which matches any tax code. Therefore, when you add the **ReverseCharge** and **PVA** conditions, place them at the top of the list, as line 1, line 2, line 3, and so on, before all the lines that use a *Not blank* tax code. On these top lines, specify the exact tax codes that you use for the reverse charge and PVA tax transactions. If you add the **ReverseCharge** and **PVA** lines below the *Not blank* lines, the *Not blank* conditions match first, and your reverse charge and PVA transactions are never classified by the new result values.
 
 ## <a id="headers"></a>Set up application-specific parameters for MTD VAT web request headers format
@@ -232,9 +251,9 @@ The `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY` package also provides a se
 - **Dynamics 365 Finance** – For interoperation with the **production** HMRC web service.
 - **Sandbox HMRC** – For interoperation with the **sandbox** HMRC web service.
 
-When you import the setup of Electronic messages functionality for MTD VAT from the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY` package that Microsoft provides, all the settings that are necessary to integrate with HMRC's APIs including access to credentials for the **Dynamics 365 Finance** web application are imported into your system. These credentials (Client ID and Client secret) are provided by Microsoft and are used for production and sandbox interoperation with HMRC.
+When you import the setup of Electronic messages functionality for MTD VAT from the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY` package that Microsoft provides, you import all the settings that are necessary to integrate with HMRC's APIs including access to credentials for the **Dynamics 365 Finance** web application into your system. Microsoft provides these credentials (Client ID and Client secret), and you use them for production and sandbox interoperation with HMRC.
 
-For more information about the predefined setup that is included in the data entities in the package for MTD VAT, see [Checklist for Electronic messages setup for MTD VAT](emea-gbr-mtd-vat-integration-em-setup-checklist.md).
+For more information about the predefined setup that's included in the data entities in the package for MTD VAT, see [Checklist for Electronic messages setup for MTD VAT](emea-gbr-mtd-vat-integration-em-setup-checklist.md).
 
 ## <a id="vrn"></a>Set up the VAT registration number for the company that reports VAT
 
@@ -257,13 +276,13 @@ To generate the **VAT 100** report in Excel format instead of [SQL Server Report
 To define an ER format on the **General ledger parameters** page, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **General ledger parameters**.
-1. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (UK)**.
+1. On the **Sales tax** tab, in the **Tax options** section, select **VAT Declaration Excel (UK)** in the **VAT statement format mapping** field.
 
 ## <a id="vatgroup"></a>Enable VAT return reporting for companies that report as a VAT group in the same system database
 
 This part of the setup for the MTD VAT feature is mandatory only for companies that report as a VAT group in the same system database.
 
-To prepare Finance to report a VAT return for a VAT group, make sure that your business processes and the system setup meet the following conditions:
+To prepare Finance to report a VAT return for a VAT group, ensure that your business processes and the system setup meet the following conditions:
 
 - Tax information from all the subsidiaries is registered in the same system (in this case, Finance).
 - The system correctly reflects all the tax transactions in accordance with the rules and principles of the United Kingdom.
@@ -292,7 +311,7 @@ To define a sales tax settlement period, follow these steps:
 
     If you don't set the **Settlement period** field, all tax transactions from the selected legal entity are considered for reporting for MTD VAT.
 
-If your company must report a VAT return as a VAT group, make sure that you meet all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup) section of this article. Set up the sales tax settlement period for all the legal entities that are included in the VAT group.
+If your company must report a VAT return as a VAT group, ensure that you meet all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup) section of this article. Set up the sales tax settlement period for all the legal entities that are included in the VAT group.
 
 To set up the sales tax settlement period, follow these steps:
 
@@ -330,7 +349,8 @@ To define the related number sequences, follow these steps:
 
 ## <a id="docmanagement"></a>Set up document management parameters
 
-Before you start to submit a VAT return to HMRC, make sure that the **JSON** and **Excel** file types are defined on the **File types** tab of the **Document management parameters** page (**Organization administration** > **Document management** > **Document management parameters**). If the **JSON** file type isn't in the list, add it.
+Before you start to submit a VAT return to HMRC, ensure that the **JSON** and **Excel** file types are defined on the **File types** tab of the **Document management parameters** page (**Organization administration** > **Document management** > **Document management parameters**). If the **JSON** file type isn't in the list, add it.
+
 
 :::image type="content" source="../media/uk-mtd-json-file-type-setup.png" alt-text="Screenshot of setup of the JSON file type.":::
 
@@ -389,7 +409,7 @@ If you cancel the transmission at this point by selecting **Do not submit**, the
 
 ## <a id="security-enhancements-feature"></a>Enable the Security enhancements in UK MTD VAT integration (cloud-based deployments only) feature
 
-To meet security requirements, Microsoft updated the direct system-to-system integration of Dynamics 365 Finance with the His Majesty's Revenue and Customs (HMRC) web service that's used to submit VAT returns for companies that are registered for VAT in the United Kingdom. These changes involve the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials that are essential for software authorization in the HMRC application programming interfaces (APIs). Use the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature.
+To meet security requirements, Microsoft updated the direct system-to-system integration of Dynamics 365 Finance with the His Majesty's Revenue and Customs (HMRC) web service that you use to submit VAT returns for companies that are registered for VAT in the United Kingdom. These changes involve the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials that are essential for software authorization in the HMRC application programming interfaces (APIs). Use the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature.
 
 > [!IMPORTANT]
 > Before enabling the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature, complete all the previous steps described in this article. Completing these steps in advance is essential for proper configuration and compliance.
@@ -435,7 +455,7 @@ For more information, see [Install the add-in for Electronic invoicing microserv
 ### Enable security enhancements in UK MTD VAT integration
 
 > [!IMPORTANT]
-> Before you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, make sure you complete this step for all legal entities that interact with HMRC's APIs: [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup.md#entities) and that the following prerequisites are met: **Electronic Invoicing add-in** is enabled and the required Electronic Reporting (ER) configuration versions (or later) are imported.
+> Before you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, ensure you complete this step for all legal entities that interact with HMRC's APIs: [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup.md#entities). Also, make sure you meet the following prerequisites: **Electronic Invoicing add-in** is enabled and the required Electronic Reporting (ER) configuration versions (or later) are imported.
 
 To enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps:
 

@@ -4,7 +4,7 @@ description: Learn implementation details of e-reporting in France.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 07/28/2026
+ms.date: 08/14/2026
 ms.custom:
   - bap-template
 ms.reviewer: johnmichalak 
@@ -25,7 +25,7 @@ Two different layers of the implementation enforce the selection and classificat
 - Hard-coded criteria are built into the source views, the union views, and the query initialization methods on the executable class. A functional user can't change these criteria at run time. To modify them, you need a code change or an extension.
 - Configurable criteria are exposed as parameters on the `FR-eRep PopulateMessageItems` executable class that runs the **FR-eRep Populate Report Data** action. You can adjust these criteria per report section without a code change by editing the executable-class parameter values. Examples include the date field that is compared against the requested date range and any additional query filters that a customer or partner configures on the executable class for a specific report section.
 
-In this topic, a gear (⚙) marks configurable criteria. A criterion that doesn't carry the gear is hard-coded. The configurable criteria (marked with ⚙) documented in this section reflect the default values that the [FR eReporting electronic messaging (EM) setup](emea-fra-e-reporting-preparation.md#data-entities) package ships. This behavior is what a user sees immediately after the setup package is imported and applied. If you modify a configurable criterion on the executable class after importing the setup package, the actual behavior for the affected report section deviates from what is documented here, and the company-specific configuration takes precedence.
+In this article, a gear (⚙) marks configurable criteria. A criterion that doesn't carry the gear is hard-coded. The configurable criteria (marked with ⚙) documented in this section reflect the default values that the [FR eReporting electronic messaging (EM) setup](emea-fra-e-reporting-preparation.md#data-entities) package ships. This behavior is what a user sees immediately after the setup package is imported and applied. If you modify a configurable criterion on the executable class after importing the setup package, the actual behavior for the affected report section deviates from what is documented here, and the company-specific configuration takes precedence.
 
 The French e-reporting report contains two top-level report types (`TransactionsReportType`, `PaymentsReportType`), each split into two subsections that group source transactions by the type of counterparty relationship (business-to-business or business-to-consumer):
 
@@ -47,7 +47,7 @@ The column labeled **Date range of reporting period** in the [Data selection mat
 
 ## <a id="data-selection"></a>Data selection and classification rules
 
-The following subsections describe the selection and classification rules for each report type and subsection. Each rule set lists the source journal, the counterparty and address criteria, and the linked tax transaction criteria that must be met for the source transaction to be included in the corresponding report section.
+The following subsections describe the selection and classification rules for each report type and subsection. Each rule set lists the source journal, the counterparty and address criteria, and the linked tax transaction criteria that you must meet for the source transaction to be included in the corresponding report section.
 
 ### `TransactionsReportType` – `Invoice` (B2B)
 
@@ -258,13 +258,90 @@ Legend:
 | 25 | **Tax transactions as conditional tax** | **FR-eRep Payments B2C**         | No       | Trans Date / Date of VAT register\* | NA                 | NA                | NA            | Vendor transaction with no invoice   | NA                                       | Use Tax                                         | NA                                               | Not Tax                                  | Payment                                  | `PaymentsReportType` / `Transaction`     |
 | 26 | **Tax transactions as conditional tax** | **FR-eRep Payments B2C**         | No       | Trans Date / Date of VAT register\* | NA                 | NA                | NA            | Vendor transaction with no invoice   | NA                                       | Sales Tax Payable                               | Yes                                              | Not Tax                                  | Payment                                  | `PaymentsReportType` / `Transaction`     |
 
-\* If **Date of VAT register** is enabled in **General ledger parameters**, the **Date of VAT register** from the tax transaction is used instead of the tax transaction date as the criterion for selecting tax transactions by date when the **FR-eRep Populate Report Data** action is executed.
+\* If you enable **Date of VAT register** in **General ledger parameters**, the **Date of VAT register** from the tax transaction is used instead of the tax transaction date as the criterion for selecting tax transactions by date when you run the **FR-eRep Populate Report Data** action.
 
 ## Additional exclusions
 
-Regardless of the report type or subsection, the **FR-eRep Populate Report Data** action applies the following additional exclusions to avoid double-counting:
+Regardless of the report type or subsection, the **FR-eRep Populate Report Data** action applies the following exclusions to avoid double-counting:
 
 - The action skips prepayment invoices that it reverses to the posted final invoice.
 - The action skips project invoices that a corresponding free text invoice duplicates.
+
+## Field lineage from union view to physical table fields
+
+This section traces every field of the two union views (`EReportingTransactionReportTypeUnionView` and `EReportingPaymentReportTypeUnionView`) back to the physical table fields that supply its value. These views are the two union views that the earlier sections refer to generically as *the union view*:
+
+- `EReportingTransactionReportTypeUnionView` backs both subsections (`Invoice` and `Transaction`) of the `TransactionsReportType`. Its **Date** column is the date field that the date-range filter uses.
+- `EReportingPaymentReportTypeUnionView` backs both subsections (`Invoice` and `Transaction`) of the `PaymentsReportType`. Its **Closed date** column is the date field that the date-range filter uses.
+
+The **Date range of reporting period** column in the [Data selection matrix](#data-selection-matrix) shows which source-table date field each source entity projects into these **Date** and **Closed date** columns.
+
+Each lineage follows the union view through its query (`EReportingTransactionReportTypeUnionQuery` or `EReportingPaymentReportTypeUnionQuery`) and each nested branch view until a physical table field is reached. When several branches project the same physical field, that field is listed once. Field labels are the en-US labels that appear on the report. Use this lineage to reconcile a report value with the exact subledger field it originates from, and to assess the impact of a data model change on the French e-reporting output.
+
+Some union view fields don't map to a physical field: `SourceTableId` and `TransType` are computed from branch-specific literals (`tableNum(...)` and enum values), and several other fields are blank or return a constant in specific branches. The [Computed and constant branches](#computed-and-constant-branches) list after the tables documents these cases.
+
+### `EReportingTransactionReportTypeUnionView`
+
+| View field         | Field label               | Underlying physical table fields                                                                                             |
+|--------------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| `CounterpartyGroup`| Group                     | `CustTable.CustGroup`; `VendTable.VendGroup`                                                                                 |
+| `CounterpartyId`   | Account number            | `CustInvoiceJour.InvoiceAccount`; `ProjInvoiceJour.InvoiceAccount`; `VendInvoiceJour.InvoiceAccount`                         |
+| `CountryRegionId`  | Country/region            | `LogisticsPostalAddress.CountryRegionId`                                                                                     |
+| `InvoiceId`        | Invoice                   | `CustInvoiceJour.InvoiceId`; `ProjInvoiceJour.ProjInvoiceId`; `VendInvoiceJour.InvoiceId`; `TaxTrans.InvoiceId`             |
+| `IsPerson`         | Person                    | `DirPartyTable.InstanceRelationType`                                                                                         |
+| `PartyTaxID`       | Tax registration number   | `CustInvoiceJour.PartyTaxID`; `ProjInvoiceJour.PartyTaxID`; `VendInvoiceJour.PartyTaxID`; `TaxTrans.PartyTaxId`             |
+| `SalesType`        | Order type                | `CustInvoiceJour.SalesType`                                                                                                  |
+| `SourceRecId`      | Record ID                 | `CustInvoiceJour.RecId`; `ProjInvoiceJour.RecId`; `VendInvoiceJour.RecId`; `TaxTrans.RecId`                                 |
+| `TaxCode`          | Sales tax code            | `TaxTrans.TaxCode`                                                                                                           |
+| `TaxGroup`         | Sales tax group           | `CustInvoiceJour.TaxGroup`; `ProjInvoiceJour.TaxGroupId`; `VendInvoiceJour.TaxGroup`; `TaxTrans.TaxGroup`                   |
+| `TaxID`            | Tax registration number   | `CustInvoiceJour.TaxID`; `ProjInvoiceJour.TaxID`; `VendInvoiceJour.TaxID`; `TaxTrans.TaxID`                                 |
+| `TaxItemGroup`     | Item sales tax group      | `CustInvoiceJour.TaxItemGroup`; `TaxTrans.TaxItemGroup`                                                                      |
+| `TransDate`        | Date                      | `CustInvoiceJour.InvoiceDate`; `ProjInvoiceJour.InvoiceDate`; `VendInvoiceJour.InvoiceDate`; `TaxTrans.TransDate`; `TaxTrans_W.VatDueDate_W` |
+| `Voucher`          | Voucher                   | `CustInvoiceJour.LedgerVoucher`; `ProjInvoiceJour.LedgerVoucher`; `VendInvoiceJour.LedgerVoucher`; `TaxTrans.Voucher`       |
+| `SourceTableId`    | Table ID                  | None: computed from branch-specific `tableNum(...)` literals                                                                 |
+| `TransType`        | Transaction type          | None: computed from branch-specific enum literals                                                                           |
+
+### `EReportingPaymentReportTypeUnionView`
+
+| View field         | Field label               | Underlying physical table fields                                                                                             |
+|--------------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| `CounterpartyGroup`| Group                     | `CustTable.CustGroup`; `VendTable.VendGroup`                                                                                 |
+| `CounterpartyId`   | Account number            | `CustInvoiceJour.InvoiceAccount`; `CustTrans.AccountNum`; `ProjInvoiceJour.InvoiceAccount`; `VendTrans.AccountNum`         |
+| `CountryRegionId`  | Country/region            | `LogisticsPostalAddress.CountryRegionId`                                                                                     |
+| `InvoiceId`        | Invoice                   | `CustInvoiceJour.InvoiceId`; `CustTrans.Invoice`; `ProjInvoiceJour.ProjInvoiceId`; `TaxTrans.InvoiceId`; `VendTrans.Invoice` |
+| `IsPerson`         | Person                    | `DirPartyTable.InstanceRelationType`                                                                                         |
+| `PartyTaxID`       | Tax registration number   | `CustInvoiceJour.PartyTaxID`; `ProjInvoiceJour.PartyTaxID`; `TaxTrans.PartyTaxId`                                           |
+| `SalesType`        | Order type                | `CustInvoiceJour.SalesType`                                                                                                  |
+| `SourceRecId`      | Record ID                 | `CustInvoiceJour.RecId`; `ProjInvoiceJour.RecId`; `TaxTrans.RecId`                                                          |
+| `TaxCode`          | Sales tax code            | `TaxTrans.TaxCode`                                                                                                           |
+| `TaxGroup`         | Sales tax group           | `CustInvoiceJour.TaxGroup`; `ProjInvoiceJour.TaxGroupId`; `TaxTrans.TaxGroup`                                              |
+| `TaxID`            | Tax registration number   | `CustInvoiceJour.TaxID`; `ProjInvoiceJour.TaxID`; `TaxTrans.TaxID`                                                         |
+| `TaxItemGroup`     | Item sales tax group      | `CustInvoiceJour.TaxItemGroup`; `TaxTrans.TaxItemGroup`                                                                      |
+| `TransDate`        | Date                      | `CustTrans.Closed`; `TaxTrans.TransDate`; `TaxTrans_W.VatDueDate_W`                                                        |
+| `Voucher`          | Voucher                   | `CustInvoiceJour.LedgerVoucher`; `ProjInvoiceJour.LedgerVoucher`; `TaxTrans.Voucher`                                       |
+| `SourceTableId`    | Table ID                  | None: computed from branch-specific `tableNum(...)` literals                                                                 |
+| `TransType`        | Transaction type          | None: computed from branch-specific enum literals                                                                           |
+
+### Computed and constant branches
+
+Some fields don't read a physical table field in every branch. The following notes list the branches that return a computed value, a constant, or a blank instead.
+
+`EReportingTransactionReportTypeUnionView`:
+
+- `IsPerson` reads `DirPartyTable.InstanceRelationType` in the customer, project, and vendor branches. The tax-transaction branch returns the literal `NoYes::Yes`.
+- `SalesType` reads `CustInvoiceJour.SalesType` in the customer branch. The project, vendor, and tax-transaction branches return `SalesType::Journal`.
+- `TaxCode` is blank in the customer, project, and vendor branches.
+- `TaxItemGroup` is blank in the project and vendor branches.
+- `CounterpartyGroup`, `CounterpartyId`, and `CountryRegionId` are blank in the tax-transaction branch.
+- The tax-transaction `TransDate` branch returns either `TaxTrans.TransDate` or `TaxTrans_W.VatDueDate_W`. `TaxParameters.ReportUseVatDueDate_W` controls the choice but isn't itself a value source for `TransDate`.
+
+`EReportingPaymentReportTypeUnionView`:
+
+- `IsPerson` reads `DirPartyTable.InstanceRelationType` in the two prepayment, customer conditional-tax, vendor conditional-tax, and project conditional-tax branches. The two without-invoice branches return the literal `NoYes::Yes`.
+- `SalesType` reads `CustInvoiceJour.SalesType` in the customer invoice prepayment branch. All other branches return `SalesType::Prepayment`.
+- `CountryRegionId` is blank in the customer and vendor without-invoice branches.
+- `TaxCode` is blank in both invoice prepayment branches.
+- `TaxItemGroup` is blank in the project invoice prepayment branch.
+- The customer and vendor without-invoice `TransDate` branches return either `TaxTrans.TransDate` or `TaxTrans_W.VatDueDate_W`. `TaxParameters.ReportUseVatDueDate_W` controls the choice but isn't itself a value source for `TransDate`.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
