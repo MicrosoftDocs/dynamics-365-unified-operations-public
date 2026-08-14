@@ -4,7 +4,7 @@ description: Learn how to mass deploy the Warehouse Management app with user-bas
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 08/13/2026
 ms.reviewer: kamaybac
 ms.search.form:
 ms.custom:
@@ -37,7 +37,10 @@ To use an MDM solution to deploy the Warehouse Management mobile app and the rel
 After you deploy the app through MDM, the authentication experience depends on whether single sign-on (SSO) is enabled.
 
 - **With SSO (recommended for MDM)** — If a worker is already signed in to another app on the device (such as Microsoft Teams, Intune Company Portal, or Outlook) by using the same Microsoft Entra ID account, the Warehouse Management mobile app reuses that authentication token. No separate sign-in is needed to connect the app. Workers might still need to sign in by using their warehouse app user account depending on your [user account configuration](warehouse-app-authenticate-user-based.md#scenarios).
-- **Without SSO** — Workers must manually authenticate the app on each device after deployment. This requirement applies when using [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) or username/password authentication without brokered authentication. This approach doesn't benefit from the automatic token-sharing that makes MDM most efficient.
+- **Without SSO** — Workers must manually authenticate the app on each device after deployment. This requirement applies when using username/password authentication without brokered authentication, or the legacy [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) (not recommended). This approach doesn't benefit from the automatic token-sharing that makes MDM most efficient.
+
+> [!IMPORTANT]
+> Don't use [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) for MDM deployments. It doesn't support SSO, so every device requires a manual sign-in, and Microsoft no longer recommends it because it's a frequent target of phishing attacks. Configure username/password authentication with a broker instead.
 
 ## Set up the source files for distribution
 

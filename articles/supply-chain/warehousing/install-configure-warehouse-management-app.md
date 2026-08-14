@@ -4,7 +4,7 @@ description: Learn how to install the Warehouse Management mobile app on each of
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 07/30/2026
+ms.date: 08/13/2026
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.custom:
@@ -99,6 +99,9 @@ After a device authenticates with Supply Chain Management, each worker who uses 
 
 For details about each authentication method and how to set it up, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
 
+> [!IMPORTANT]
+> Use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow), preferably combined with [brokered authentication](warehouse-app-authenticate-user-based.md#sso), for all new and existing deployments. [Device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) remains available for backward compatibility, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. It's blocked by default in *new* Microsoft Entra ID tenants, it isn't supported on iOS, and it doesn't support single sign-on (SSO).
+
 If a device is lost or compromised, you can revoke its authentication by following the instructions provided in [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).
 
 > [!NOTE]
@@ -128,12 +131,12 @@ You can import connection settings from either a file or a QR code. (Learn more 
 
 | Parameter | Description |
 |---|---|
-| `"ConnectionName"` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, the settings from the imported file override it. |
+| `"ConnectionName"` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, ensure that it's unique in the list. If a connection that has the same name already exists on the device, the settings from the imported file override it. |
 | `"ActiveDirectoryClientAppId"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"`.</p><p>Specify the client ID that you noted while setting up Microsoft Entra ID. Learn more in [User-based authentication](warehouse-app-authenticate-user-based.md).</p> |
 | `"ActiveDirectoryResource"` | Specify the root URL of Supply Chain Management. |
 | `"ActiveDirectoryTenant"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"`.</p><p>Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).</p> |
 | `"Company"` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
-| `"ConnectionType"` | <p>(Optional) Specify whether the connection setting should use a device code or a username/password to connect to an environment. Valid values are [`"UsernamePassword"`](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) (recommended, optionally combined with `"UseBroker"`) and [`"DeviceCode"`](warehouse-app-authenticate-user-based.md#deviceCodeFlow). The default value is `"UsernamePassword"`.</p><p>**Note:** Microsoft no longer recommends device code flow because it's a common target of phishing attacks. Microsoft Entra ID security defaults now block device code flow by default in *new* tenants, including new tenants created for testing. You can't import client secrets.</p> |
+| `"ConnectionType"` | <p>(Optional) Specify how the connection authenticates with the environment. The default value is `"UsernamePassword"`. Valid values are:</p><ul><li>[`"UsernamePassword"`](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) (recommended) – Use username/password authentication, optionally combined with `"UseBroker": true` for [brokered authentication and SSO](warehouse-app-authenticate-user-based.md#sso).</li><li>[`"DeviceCode"`](warehouse-app-authenticate-user-based.md#deviceCodeFlow) (not recommended) – Use device code flow.</li></ul><p>**Note:** Device code flow is still accepted for backward compatibility, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. Microsoft Entra ID security default settings block device code flow by default in *new* tenants (including new tenants that are created for testing), and it isn't supported on iOS. Specify `"UsernamePassword"` in new connection settings, and update existing settings that use `"DeviceCode"`. You can't import client secrets.</p> |
 | `"IsEditable"` | (Optional) Specify whether the app user can edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
 | `"IsDefaultConnection"` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection is automatically preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
 | `"CertificateThumbprint"` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
@@ -152,7 +155,8 @@ The following example shows a valid connection settings file that contains two c
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": false,
-            "ConnectionType": "DeviceCode",
+            "ConnectionType": "UsernamePassword",
+            "UseBroker": true,
             "AuthCloud": "AzureGlobal"
         },
         {
@@ -186,7 +190,8 @@ The following example shows a valid connection settings file that contains two c
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": false,
-            "ConnectionType": "DeviceCode",
+            "ConnectionType": "UsernamePassword",
+            "UseBroker": false,
             "AuthCloud": "Manual"
         },
         {
@@ -206,6 +211,9 @@ The following example shows a valid connection settings file that contains two c
 ```
 
 You can either save the information as a JSON file or [generate a QR code](warehouse-app-qr-code.md) that has the same content. If you save the information as a file, save it by using the default name, *connections.json*, especially if you'll store it in the default location on each mobile device.
+
+> [!NOTE]
+> None of the preceding examples use `"ConnectionType": "DeviceCode"`. The app still accepts that value for backward compatibility, but Microsoft no longer recommends device code flow. Learn more in [Device code flow authentication](warehouse-app-authenticate-user-based.md#deviceCodeFlow).
 
 ### Save the connection settings file on each device
 
@@ -266,7 +274,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
     - **Authentication method** – Select one of the following values to specify the method that you use to authenticate with Supply Chain Management. The method that you select here must match the setup of the app in Azure.
 
         - *Username and password* (recommended) – Authenticate by using SSO or by asking the user to enter a user name and password. [Username and password](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) supports [brokered authentication](warehouse-app-authenticate-user-based.md#sso) for sophisticated, phishing-resistant sign-in mechanisms such as shared device mode and QR code plus PIN sign-in.
-        - *Device code* – Authenticate by using the [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow). Microsoft no longer recommends this authentication method because it's a common target of phishing attacks. Microsoft Entra ID security defaults now block it by default in *new* tenants, including new tenants that are created for testing.
+        - *Device code* (not recommended) – Authenticate by using the [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow). This option remains available for backward compatibility, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. Microsoft Entra ID security defaults block it by default in *new* tenants (including new tenants that are created for testing), it isn't available on iOS, and it doesn't support SSO or brokered authentication. If a device is still configured this way, reconfigure it to use *Username and password*.
 
     - **Cloud** – Specify the type of Microsoft Entra ID app registration to authenticate with:
 
