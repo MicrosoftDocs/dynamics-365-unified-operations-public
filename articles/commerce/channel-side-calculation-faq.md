@@ -4,7 +4,7 @@ description: This article answers frequently asked questions (FAQ) about the cha
 author: rickwyang
 ms.date: 01/20/2026
 ms.topic: faq
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2022-11-10

@@ -2,7 +2,7 @@
 title: X++ business runtime functions
 description: Learn about X++ business runtime functions, including syntax, parameters, return values, and examples for various formulas.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

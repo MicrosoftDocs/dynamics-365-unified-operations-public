@@ -2,7 +2,7 @@
 title: Receive vendor fiscal documents (fixed assets - ICMS long term recoverable) (Brazil)
 description: This article describes how to post a fiscal document received from the acquisition of fixed assets and then recover the ICMS taxes in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

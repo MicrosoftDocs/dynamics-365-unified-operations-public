@@ -4,8 +4,8 @@ description: Learn how to embed a credit card receipt from a payment processor d
 author: josaw1
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 04-31-2020
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c

@@ -4,9 +4,9 @@ description: Learn how to configure cash denominations for Microsoft Dynamics 36
 author: josaw1
 ms.date: 01/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.industry: Retail

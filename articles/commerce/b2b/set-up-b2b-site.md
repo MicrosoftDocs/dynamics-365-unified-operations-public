@@ -4,7 +4,7 @@ description: Learn how to set up a business-to-business (B2B) e-commerce site in
 author: josaw1
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2021-01-31

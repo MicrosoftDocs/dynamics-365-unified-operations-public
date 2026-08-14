@@ -4,7 +4,7 @@ description: This article provides answers to frequently asked questions about t
 author: gvrmohanreddy
 ms.date: 04/09/2026
 ms.topic: faq
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2021-09-03

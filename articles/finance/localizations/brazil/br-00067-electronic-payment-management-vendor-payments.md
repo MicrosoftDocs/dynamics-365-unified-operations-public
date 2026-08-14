@@ -2,7 +2,7 @@
 title: Electronic payment management for vendor payments (Brazil)
 description: This article describes how to make electronic payments by transferring files between a legal entity and a bank in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

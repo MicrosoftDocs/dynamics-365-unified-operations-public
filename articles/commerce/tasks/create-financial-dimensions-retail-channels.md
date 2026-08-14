@@ -4,7 +4,7 @@ description: Learn how to create and configure financial dimensions for retail c
 author: jashanno
 ms.date: 02/10/2026
 ms.topic: how-to   
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30 

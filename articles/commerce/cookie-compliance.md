@@ -4,7 +4,7 @@ description: Learn about considerations for cookie compliance and the default po
 author: BrianShook
 ms.date: 01/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

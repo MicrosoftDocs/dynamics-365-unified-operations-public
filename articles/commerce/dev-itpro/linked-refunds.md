@@ -4,7 +4,7 @@ description: Learn how to enable and use linked refunds in Microsoft Dynamics 36
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-03-28

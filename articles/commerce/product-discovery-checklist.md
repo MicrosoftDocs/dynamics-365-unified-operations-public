@@ -4,7 +4,7 @@ description: This article provides a product discovery checklist to follow to en
 author: rickwyang
 ms.date: 01/28/2026
 ms.topic: checklist
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2023-11-04

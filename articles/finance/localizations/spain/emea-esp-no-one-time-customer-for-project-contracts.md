@@ -2,7 +2,7 @@
 title: One-time customers
 description: Learn how to manage one-time customers for Spain in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

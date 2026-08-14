@@ -4,7 +4,7 @@ description: Learn about the payment module and how to configure it in Microsoft
 author: anupamar-ms
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31

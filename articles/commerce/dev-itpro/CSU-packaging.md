@@ -4,8 +4,8 @@ description: Learn how to create an extension package for Microsoft Dynamics 365
 author: josaw1
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2022-03-30
 ms.custom: 

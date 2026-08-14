@@ -2,7 +2,7 @@
 title: X++ and C# comparison
 description: X++ and C# syntax and programming are compared between each other, with a highlight on similarities and differences between the syntaxes.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

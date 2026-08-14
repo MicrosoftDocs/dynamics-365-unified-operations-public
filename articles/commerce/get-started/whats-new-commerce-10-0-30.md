@@ -8,9 +8,9 @@ ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
-ms.reviewer: josaw
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2022-09-01
 ---
 

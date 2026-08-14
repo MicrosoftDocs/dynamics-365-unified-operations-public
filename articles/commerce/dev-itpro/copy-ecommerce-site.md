@@ -5,7 +5,7 @@ author: josaw1
 ms.date: 02/13/2026
 ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-06-20

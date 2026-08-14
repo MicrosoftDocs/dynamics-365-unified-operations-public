@@ -2,7 +2,7 @@
 title: Configure data import from SharePoint
 description: Learn about how to import data from Microsoft SharePoint, including learning about prerequisites and configurations.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak

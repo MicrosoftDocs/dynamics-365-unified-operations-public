@@ -4,8 +4,8 @@ description: Learn how to add a new custom field to the Totals panel on the POS 
 author: josaw1
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2018-05-31
 ms.custom: 

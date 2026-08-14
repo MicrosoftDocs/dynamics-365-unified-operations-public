@@ -2,7 +2,7 @@
 title: Inventory journal reports
 description: Learn how to set up a relationship between a specific configurable inventory report and a journal type.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

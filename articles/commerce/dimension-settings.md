@@ -4,7 +4,7 @@ description: Learn about the display settings for product dimensions and how to 
 author: anupamar-ms
 ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

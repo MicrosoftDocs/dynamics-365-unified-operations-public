@@ -4,7 +4,7 @@ description: Learn about order confirmation modules and how to use them in Micro
 author: anupamar-ms
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

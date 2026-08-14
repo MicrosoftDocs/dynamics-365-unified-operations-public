@@ -2,7 +2,7 @@
 title: Turn off model customization and deprecate functionality
 description: Learn about the process of disabling customization of a model. By following this process, you make it ineligible for over-layering.
 author: pvillads
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

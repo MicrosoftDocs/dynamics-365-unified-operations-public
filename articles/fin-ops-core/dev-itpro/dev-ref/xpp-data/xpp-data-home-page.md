@@ -2,7 +2,7 @@
 title: X++ data selection and manipulation overview
 description: Access links to topics about X++ data selection and manipulation, including information about SQL statement timeouts.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

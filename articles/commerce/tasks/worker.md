@@ -4,7 +4,7 @@ description: Learn how to configure a worker as a sales representative who is el
 author: josaw1
 ms.date: 02/11/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2016-06-30

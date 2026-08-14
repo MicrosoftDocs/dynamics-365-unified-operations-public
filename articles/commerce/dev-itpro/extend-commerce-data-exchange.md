@@ -4,8 +4,8 @@ description: Learn how you can extend Commerce Data Exchange - Real-time service
 author: josaw1
 ms.date: 02/17/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2

@@ -4,7 +4,7 @@ description: Learns how to handle customer information in Microsoft Dynamics 365
 author: EvgenyPopovMBS
 ms.date: 06/26/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Italy
 ms.author: anupamar
 ms.search.validFrom: 2019-10-08

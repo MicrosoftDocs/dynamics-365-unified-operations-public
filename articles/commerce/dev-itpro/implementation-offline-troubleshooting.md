@@ -4,8 +4,8 @@ description: This article provides an overview of troubleshooting for offline im
 author: jashanno
 ms.date: 03/20/2026
 ms.topic: overview
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: global
 ms.search.validFrom: 2022-12-29
 ms.custom: 

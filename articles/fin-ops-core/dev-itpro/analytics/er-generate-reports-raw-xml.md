@@ -2,7 +2,7 @@
 title: Generate reports by adding content as raw XML
 description: Learn how you can design Electronic reporting (ER) formats that generate outgoing documents in XML format and understand why you may prefer to add data this way.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

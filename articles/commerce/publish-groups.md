@@ -4,7 +4,7 @@ description: Learn about the publish groups feature in Microsoft Dynamics 365 Co
 author: phinneyridge
 ms.date: 01/28/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-12-12

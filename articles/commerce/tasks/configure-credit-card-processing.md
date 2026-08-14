@@ -4,7 +4,7 @@ description: Learn how to view the list of payment providers and how to configur
 author: jashanno
 ms.date: 02/06/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-06-30 

@@ -2,7 +2,7 @@
 title: Customize application startup by using delegates
 description: Learn about how to customize application startup by using delegates, including overviews of various event types.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak

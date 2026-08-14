@@ -4,7 +4,7 @@ description: Learn how to manage attributes and attribute groups to describe pro
 author: ashishmsft
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw

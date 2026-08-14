@@ -4,8 +4,8 @@ description: Learn how to integrate the point of sale (POS) with a new hardware 
 author: josaw1
 ms.date: 02/17/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2019-08-2019
 ms.custom:

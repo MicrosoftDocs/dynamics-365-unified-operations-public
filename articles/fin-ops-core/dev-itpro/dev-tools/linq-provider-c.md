@@ -2,7 +2,7 @@
 title: Language Integrated Query (LINQ) provider for C#
 description: Learn about the Language Integrated Query (LINQ) provider, including a table that outlines the X++ and C# availability statuses for various approaches.
 author: pvillads
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.custom: 
   - bap-template

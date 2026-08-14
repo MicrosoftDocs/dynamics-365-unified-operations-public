@@ -5,7 +5,7 @@ author: BrianShook
 ms.date: 01/29/2026
 ms.topic: how-to
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: Global
 ms.author: ritakimani

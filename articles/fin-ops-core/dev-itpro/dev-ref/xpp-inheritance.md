@@ -2,7 +2,7 @@
 title: X++ inheritance
 description: Learn about inheritance in X++, including overviews and examples on how to create a subclass and override a method.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

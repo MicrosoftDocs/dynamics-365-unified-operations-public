@@ -2,7 +2,7 @@
 title: Tax interest and free-hand interest for Poland
 description: Learn how to set up and calculate tax interest for Poland in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

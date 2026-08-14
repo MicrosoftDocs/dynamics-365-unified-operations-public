@@ -2,7 +2,7 @@
 title: Customize through extension and overlayering
 description: Learn about the two methods of customizing source code and metadata of model elements, overlayering and extensions.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/27/2026
 ms.reviewer: johnmichalak

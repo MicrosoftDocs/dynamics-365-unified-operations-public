@@ -2,7 +2,7 @@
 title: Implement a custom ER source of inbound documents
 description: Learn about how to extend the list of Electronic reporting (ER) sources to access inbound documents for data import.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

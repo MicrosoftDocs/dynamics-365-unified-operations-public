@@ -2,7 +2,7 @@
 title: Change code to enable users to configure and use named ER destinations
 description: Learn about how the Electronic reporting (ER) API can be used to enable users to configure and use named ER destinations.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/12/2026
 ms.reviewer: johnmichalak

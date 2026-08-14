@@ -16,10 +16,10 @@ ms.custom:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: mirao
 # ms.tgt_pltfrm: 
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2019-02-15 
 ms.dyn365.ops.version: Release 10
 

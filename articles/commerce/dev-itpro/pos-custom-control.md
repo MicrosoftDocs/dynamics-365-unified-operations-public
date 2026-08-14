@@ -4,9 +4,9 @@ description: Learn how you can enhance the information that appears in Microsoft
 author: josaw1
 ms.date: 02/19/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2017-09-15
 ms.custom: 
   - bap-template

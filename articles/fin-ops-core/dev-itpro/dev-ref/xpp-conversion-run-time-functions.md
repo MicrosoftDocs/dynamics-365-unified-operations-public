@@ -2,7 +2,7 @@
 title: X++ conversion runtime functions
 description: Learn about the conversion run-time functions, including parameters, return values, remarks, and examples for various functions.
 author: pvillads
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

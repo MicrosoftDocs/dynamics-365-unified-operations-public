@@ -5,9 +5,9 @@ author: josaw1
 ms.date: 02/20/2026
 ms.topic: how-to
 audience: Developer
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2020-04-13
 ms.custom: 
   - bap-template

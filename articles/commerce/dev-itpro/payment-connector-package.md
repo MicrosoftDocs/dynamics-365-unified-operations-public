@@ -4,9 +4,9 @@ description: Learn how to package a payment connector for finance and operations
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2020-02-02
 ms.custom: 
   - bap-template

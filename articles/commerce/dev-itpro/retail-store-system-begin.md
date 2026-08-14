@@ -4,7 +4,7 @@ description: This article provides an overview of Microsoft Dynamics 365 Commerc
 author: aneesa
 ms.date: 02/19/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-11-30

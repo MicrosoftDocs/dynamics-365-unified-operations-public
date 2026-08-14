@@ -2,7 +2,7 @@
 title: Create Electronic reporting (ER) configurations
 description: Learn about the background information that helps you start using Electronic reporting for creating configurations.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/11/2026
 ms.reviewer: johnmichalak

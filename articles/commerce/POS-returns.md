@@ -4,7 +4,7 @@ description: Learn how to initiate returns for cash-and-carry transactions or cu
 author: hhainesms
 ms.date: 05/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2020-02-20

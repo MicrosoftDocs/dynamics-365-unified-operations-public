@@ -2,7 +2,7 @@
 title: Purchases on commission
 description: Learn how to work with purchases made on a commission in Russia with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

@@ -2,7 +2,7 @@
 title: Independent software vendor (ISV) development home page
 description: Access links to topics about development by independent software vendors (ISVs), including links to ISV licensing.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak

@@ -4,9 +4,9 @@ description: Learn how to define continuity schedules in Microsoft Dynamics 365 
 author: josaw1
 ms.date: 02/10/2026
 ms.topic: how-to 
-ms.author: josaw
+ms.author: mirao
 ms.search.form: MCRContinuitySchedule, EcoResProductDetailsExtended   
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30 
 ms.custom: 

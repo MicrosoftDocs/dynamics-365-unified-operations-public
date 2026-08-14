@@ -2,7 +2,7 @@
 title: Code editor features
 description: Learn about the features of the code editor for Visual Studio, including an overview of the element designer of the code editor.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 02/26/2026
 ms.reviewer: johnmichalak

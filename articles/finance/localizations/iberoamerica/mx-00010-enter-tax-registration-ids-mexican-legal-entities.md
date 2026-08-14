@@ -2,7 +2,7 @@
 title: MX-00010 Enter tax registration IDs for Mexican legal entities
 description: Learn how to enter tax registration IDs for Mexican legal entities in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

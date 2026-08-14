@@ -2,7 +2,7 @@
 title: Power Apps portals with finance and operations
 description: Learn about how Power Apps portals can be used with finance and operations, including an overview on ananymous access from Power Apps portals.
 author: Sunil-Garg
-ms.author: sunilg
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.date: 03/16/2026
 ms.custom: NotInToc

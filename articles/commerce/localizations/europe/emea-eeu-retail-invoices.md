@@ -4,7 +4,7 @@ description: Learn how to set up information for customer invoices and return sa
 author: EvgenyPopovMBS
 ms.date: 02/26/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: anupamar
 ms.search.validFrom: 2018-10-31

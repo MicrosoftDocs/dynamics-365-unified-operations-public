@@ -2,7 +2,7 @@
 title: Build and debug projects
 description: This tutorial uses the Fleet Management app to show you how to set breakpoints, modify code, and build the result.
 author: pvillads
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

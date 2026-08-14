@@ -2,7 +2,7 @@
 title: Create an inventory model group for capital items (India)
 description: Learn about creating an inventory model group for capital items, including a step-by-step process using the INMF demo data company.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

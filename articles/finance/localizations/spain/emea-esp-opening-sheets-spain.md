@@ -2,7 +2,7 @@
 title: Special entries and opening sheets
 description: Learn how to work with special entries and opening sheets for Spain in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

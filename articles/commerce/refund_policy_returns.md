@@ -4,7 +4,7 @@ description: Learn how to set up a returns and refunds policy for a channel in M
 author: ShalabhjainMSFT
 ms.date: 01/28/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2020-01-21

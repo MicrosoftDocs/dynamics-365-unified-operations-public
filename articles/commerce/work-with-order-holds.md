@@ -5,10 +5,10 @@ author: josaw1
 ms.date: 01/30/2026
 ms.topic: how-to
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable 
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template

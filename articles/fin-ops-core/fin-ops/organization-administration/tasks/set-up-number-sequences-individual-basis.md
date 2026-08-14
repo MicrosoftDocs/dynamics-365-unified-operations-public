@@ -2,7 +2,7 @@
 title: Set up number sequences on an individual basis
 description: Learn about how to set up number sequences on an individual basis, including a step-by-step process for using the set up number sequences wizard.  
 author: SunilGarg
-ms.author: sunilg
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/10/2026
 ms.custom:

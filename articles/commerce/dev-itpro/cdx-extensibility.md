@@ -4,7 +4,7 @@ description: Learn how you can extend the Commerce initialization class to suppo
 author: aneesa
 ms.date: 10/24/2025
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2017-09-15

@@ -2,7 +2,7 @@
 title: EU Sales list reporting
 description: Learn about European Union (EU) Sales list reporting, including overviews on EU Sales list reporting, the reporting process, and prerequisites.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/06/2026
 ms.reviewer: johnmichalak

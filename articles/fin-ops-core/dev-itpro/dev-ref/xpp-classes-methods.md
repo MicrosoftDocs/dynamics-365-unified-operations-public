@@ -2,7 +2,7 @@
 title: Classes and methods
 description: Learn how to create and use classes and methods in X++, including overviews on how to declare classes and create instances of objects.
 author: pvillads
-ms.author: pvillads
+ms.author: twheeloc
 ms.topic: article
 ms.date: 03/31/2026
 ms.reviewer: twheeloc

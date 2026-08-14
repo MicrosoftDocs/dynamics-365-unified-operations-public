@@ -2,7 +2,7 @@
 title: Set up legal entity parameters (Brazil)
 description: This article describes how to set up Brazilian legal entity parameters in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/03/2026
 ms.reviewer: johnmichalak

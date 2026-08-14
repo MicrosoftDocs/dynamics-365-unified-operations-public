@@ -4,7 +4,7 @@ description: Learn about price and discount functions in Microsoft Dynamics 365 
 author: boycez
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: chuzheng
 ms.search.validFrom: 2022-07-14

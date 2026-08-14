@@ -2,7 +2,7 @@
 title: Application Explorer
 description: Learn about Application Explorer and the views and filtering methods in it. Additional info on how to work with elements in Application Explorer.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.date: 02/26/2026
 ms.topic: article
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Set up PIS and COFINS tables (Brazil)
 description: This article describes how to set up PIS and COFINS tables in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

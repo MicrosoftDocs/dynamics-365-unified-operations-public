@@ -5,7 +5,7 @@ author: aneesmsft
 ms.date: 02/12/2026
 ms.topic: how-to
 ms.search.form: RetailTerminalTable, RetailDevice
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2020-08-31

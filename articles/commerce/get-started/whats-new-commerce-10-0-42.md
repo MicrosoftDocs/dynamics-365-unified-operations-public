@@ -10,7 +10,7 @@ ms.custom:
   - evergreen
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: johnmichalak
+ms.author: mirao
 ms.search.validFrom: 2023-11-01
 ms.dyn365.ops.version: 10.0.40
 

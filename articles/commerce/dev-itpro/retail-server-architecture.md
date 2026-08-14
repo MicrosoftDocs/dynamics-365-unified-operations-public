@@ -4,7 +4,7 @@ description: This article provides an overview of the architecture of the headle
 author: aneesa
 ms.date: 02/19/2026
 ms.topic: article
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2021-02-28

@@ -4,7 +4,7 @@ description: This article provides a deployment guide for the Microsoft Dynamics
 author: EvgenyPopovMBS
 ms.date: 02/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: India
 ms.author: anupamar
 ms.search.validFrom: 2018-01-31

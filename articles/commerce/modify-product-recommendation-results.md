@@ -6,7 +6,7 @@ description: Learn how to adjust product recommendation results based on artific
 author: bebeale
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: bebeale

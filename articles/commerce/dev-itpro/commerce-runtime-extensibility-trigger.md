@@ -4,8 +4,8 @@ description: Learn about trigger support for the Microsoft Dynamics 365 commerce
 author: josaw1
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.assetid: 2d6ec331-b266-4dbc-97c5-db2919b662dc

@@ -5,7 +5,7 @@ author: ashishmsft
 ms.date: 01/23/2026
 ms.topic: how-to
 ms.search.form: RetailSales
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: Global
 ms.author: asharchw

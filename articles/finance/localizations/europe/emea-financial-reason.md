@@ -2,7 +2,7 @@
 title: Financial reason
 description: Learn about the extension to the Financial reason feature, including a step-by-step process on setting up a predefined list of financial reasons.
 author: liza-golub
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

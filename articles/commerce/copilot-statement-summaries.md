@@ -9,7 +9,7 @@ ms.collection:
   - bap-ai-copilot
 ms.custom: 
   - bap-template
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2021-11-05

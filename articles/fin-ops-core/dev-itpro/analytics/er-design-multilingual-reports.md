@@ -2,7 +2,7 @@
 title: Design multilingual reports in Electronic reporting
 description: Learn about how you can use Electronic reporting (ER) labels to design and generate multilingual reports, including learning about entry and scope.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 10/02/2025
 ms.custom:

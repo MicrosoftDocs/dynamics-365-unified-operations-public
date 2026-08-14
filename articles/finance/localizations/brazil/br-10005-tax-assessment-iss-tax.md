@@ -2,7 +2,7 @@
 title: Tax assessment for ISS tax (Brazil)
 description: This article describes how to make a tax assessment for ISS tax for a given booking period that considers the amount of tax to recover and the amount of tax to pay in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

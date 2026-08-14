@@ -4,7 +4,7 @@ description: Learn how to set up and enable Tap to Pay on iPhone to run the Micr
 author: shajain
 ms.date: 07/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2024-11-30

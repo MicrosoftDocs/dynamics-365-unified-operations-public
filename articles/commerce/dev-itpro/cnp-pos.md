@@ -4,7 +4,7 @@ description: Learn how to configure the Microsoft Dynamics 365 Commerce point of
 author: BrianShook
 ms.date: 02/12/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: shajain

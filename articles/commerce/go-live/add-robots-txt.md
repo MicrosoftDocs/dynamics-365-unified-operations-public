@@ -4,7 +4,7 @@ description: Learn how to create, edit, upload, and validate the robots.txt file
 author: mssle
 ms.date: 02/03/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2021-09-20

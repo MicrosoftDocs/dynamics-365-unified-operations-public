@@ -4,7 +4,7 @@ description: Learn how to set up build and release pipelines for a fiscal integr
 author: josaw1
 ms.date: 02/26/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 10/20/2019

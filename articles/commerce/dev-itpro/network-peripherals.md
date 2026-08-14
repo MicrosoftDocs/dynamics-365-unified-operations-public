@@ -4,7 +4,7 @@ description: This article provides an overview of network peripherals supported 
 author: ritakimani1
 ms.date: 02/18/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: ritakimani

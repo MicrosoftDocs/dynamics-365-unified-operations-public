@@ -4,7 +4,7 @@ description: Learn how to find events from Microsoft Dynamics 365 Commerce compo
 author: ShalabhjainMSFT
 ms.date: 02/19/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2016-02-28

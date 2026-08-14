@@ -4,7 +4,7 @@ description: Learn how container modules help you control the layout when you bu
 author: samjarawan
 ms.date: 01/30/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

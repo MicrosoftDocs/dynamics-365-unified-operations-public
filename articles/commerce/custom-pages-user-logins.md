@@ -4,7 +4,7 @@ description: Learn how to build custom pages in Microsoft Dynamics 365 Commerce 
 author: brianshook
 ms.date: 05/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31

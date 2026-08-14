@@ -2,7 +2,7 @@
 title: Define shift and industry types for books (India)
 description: Learn about defining a shift type and industry for a book and then assigning the book to a fixed asset, including a step-by-step process. 
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

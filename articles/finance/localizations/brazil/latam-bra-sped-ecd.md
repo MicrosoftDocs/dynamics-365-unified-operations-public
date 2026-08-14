@@ -2,7 +2,7 @@
 title: SPED ECD
 description: Learn how to set up and generate SPED ECD text files, including an outline on setting up requirements for the SPED ECD tax statement.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

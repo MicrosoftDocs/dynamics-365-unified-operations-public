@@ -2,7 +2,7 @@
 title: Link X++ modules from ISV packages by using ISV Studio
 description: Learn about linking X++ packages by using ISV Studio, including an outline on finding product IDs in Microsoft Partner Center.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak

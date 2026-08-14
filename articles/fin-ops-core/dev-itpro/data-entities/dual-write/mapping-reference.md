@@ -2,7 +2,7 @@
 title: Dual-write mapping reference
 description: Learn about the column mappings for each dual-write mapping, including a table that defines the map type and customer engagement column for finance and operations fields.
 author: josaw
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: reference
 ms.custom: 
   - bap-template

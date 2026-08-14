@@ -4,7 +4,7 @@ description: Learn about the pickup information module and how to add it to chec
 author: anupamar-ms
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-09021

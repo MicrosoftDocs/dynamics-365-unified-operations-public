@@ -6,7 +6,7 @@ ms.author: anvenkat
 ms.date: 02/19/2026
 ms.topic: how-to
 ms.search.form: RetailHardwareStation
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

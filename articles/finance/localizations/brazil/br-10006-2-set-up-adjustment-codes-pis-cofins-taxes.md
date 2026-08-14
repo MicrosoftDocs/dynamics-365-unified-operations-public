@@ -2,7 +2,7 @@
 title: Set up adjustment codes for PIS and COFINS taxes (Brazil)
 description: This article describes how to make manual adjustment transactions to adjust the credit of reported PIS and COFINS amounts in various records in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

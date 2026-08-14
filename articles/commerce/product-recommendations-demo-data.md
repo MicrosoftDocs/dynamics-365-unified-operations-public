@@ -5,7 +5,7 @@ author: bebeale
 ms.date: 01/28/2026
 ms.topic: how-to
 ms.search.form: RetailStoreTable, RetailTillLayout
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: Global
 ms.author: asharchw

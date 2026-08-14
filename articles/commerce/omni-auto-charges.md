@@ -4,7 +4,7 @@ description: Learn about capabilities for managing other order charges for chann
 author: hhainesms
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: shajain
 ms.custom: 

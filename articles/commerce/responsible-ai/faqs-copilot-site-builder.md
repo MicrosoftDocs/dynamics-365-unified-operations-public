@@ -8,7 +8,7 @@ ms.collection:
 ms.topic: faq
 author: ashishmsft
 ms.author: asharchw
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.custom: 
   - responsible-ai-faqs
 ---

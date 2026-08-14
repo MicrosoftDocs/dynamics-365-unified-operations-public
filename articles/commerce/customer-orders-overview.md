@@ -5,11 +5,11 @@ author: josaw1
 ms.date: 05/12/2026
 ms.topic: how-to
 ms.search.form: RetailFunctionalityProfile 
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.collection: get-started
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
-ms.author: johnmichalak
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template

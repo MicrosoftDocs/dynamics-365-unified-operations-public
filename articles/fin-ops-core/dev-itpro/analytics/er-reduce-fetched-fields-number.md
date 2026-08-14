@@ -2,7 +2,7 @@
 title: Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime
 description: Learn how you can help improve performance by reducing the number of table fields that are fetched at runtime.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/08/2026
 ms.custom: 

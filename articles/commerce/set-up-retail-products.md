@@ -6,7 +6,7 @@ ms.date: 09/03/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails

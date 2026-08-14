@@ -2,7 +2,7 @@
 title: Set up Form I-9 document types
 description: Access a procedure that shows how to view and set up document types that are used for I-9 verification, including a step-by-step process. 
 author: ShielaSogge
-ms.author: shielas
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/04/2025
 ms.custom:

@@ -4,7 +4,7 @@ description: Learn how to configure channel-side inventory calculation in Micros
 author: hhainesms
 ms.date: 01/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-02-11

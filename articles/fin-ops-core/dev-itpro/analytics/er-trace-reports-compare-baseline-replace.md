@@ -2,7 +2,7 @@
 title: Improve tracing the results of generated ER reports to compare with baseline values
 description: Learn about improvements to the ER baseline feature in Microsoft Dynamics 365 Finance version 10.0.3 (June 2019).
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

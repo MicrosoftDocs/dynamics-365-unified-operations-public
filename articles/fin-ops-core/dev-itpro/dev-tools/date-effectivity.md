@@ -2,7 +2,7 @@
 title: Date effectivity
 description: Learn about date-effective data entities and data sources, including a table that outlines the nodes and values for various properties.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak

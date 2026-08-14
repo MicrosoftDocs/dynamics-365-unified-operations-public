@@ -4,7 +4,7 @@ description: Learn how to set or change your site's theme in Microsoft Dynamics 
 author: bicyclingfool
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.custom: 

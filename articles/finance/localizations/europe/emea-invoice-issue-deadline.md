@@ -2,7 +2,7 @@
 title: Invoice issue deadline
 description: Learn how to set up parameters to calculate the due dates for issuing customer invoices and vendor invoices in the European Union (EU).
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

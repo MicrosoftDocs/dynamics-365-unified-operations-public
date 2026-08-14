@@ -2,7 +2,7 @@
 title: MX-00007 Customer registration IDs and other information
 description: Learn how to create a customer with fiscal and other related information used in electronic invoices and legal reports for Mexico in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

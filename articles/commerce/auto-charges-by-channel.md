@@ -4,7 +4,7 @@ description: Learn how to enable and configure auto charges by channel in Micros
 author: gvrmohanreddy
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01

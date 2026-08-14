@@ -5,7 +5,7 @@ author: bebeale
 ms.date: 01/28/2026
 ms.topic: how-to
 ms.search.form: RetailParameters
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: 5dd8db08-cd96-4f7e-9e65-b05ca815d580
 ms.search.region: Global
 ms.author: asharchw

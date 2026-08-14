@@ -5,7 +5,7 @@ author: ashishmsft
 ms.date: 01/29/2026
 ms.topic: how-to
 ms.search.form: RetailChannelReport, RetailChannelManagementWorkspace
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
 ms.search.region: Global
 ms.author: asharchw

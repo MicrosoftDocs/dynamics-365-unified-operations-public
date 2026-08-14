@@ -4,7 +4,7 @@ description: This article provides an overview of the loyalty capabilities in Mi
 author: chun817
 ms.date: 05/21/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: chuzho
 ms.search.validFrom: 2016-02-28

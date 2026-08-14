@@ -4,7 +4,7 @@ description: This article provides an overview of the key differences between th
 author: josaw1
 ms.date: 06/07/2026
 ms.topic: overview
-ms.author: josaw
+ms.author: mirao
 ms.reviewer: mirao
 ms.search.region: global
 ms.search.validFrom: 2017-10-12

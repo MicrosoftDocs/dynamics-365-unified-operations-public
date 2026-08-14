@@ -4,7 +4,7 @@ description: Learn about online and offline point of sale (POS) operations in Mi
 author: josaw1
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: aneesa
 ms.search.validFrom: 2017-09-27

@@ -2,7 +2,7 @@
 title: Manage third-party models and runtime packages by using source control
 description: Learn about a recommended strategy for managing, distributing, and deploying third-party solutions, including models and packages from third parties.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/30/2026
 ms.reviewer: johnmichalak

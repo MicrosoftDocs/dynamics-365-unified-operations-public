@@ -2,7 +2,7 @@
 title: Set up number sequences using a wizard
 description: Learn about how to set up all required number sequences at the same time by using a wizard, including a step-by-step process. 
 author: SunilGarg
-ms.author: sunilg
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/10/2026
 ms.custom:

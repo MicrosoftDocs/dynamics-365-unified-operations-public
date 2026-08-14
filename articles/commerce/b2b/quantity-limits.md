@@ -4,7 +4,7 @@ description: Learn how to set product quantity limits for Microsoft Dynamics 365
 author: josaw1
 ms.date: 01/15/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2021-01-31

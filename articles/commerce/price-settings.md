@@ -4,7 +4,7 @@ description: Learn about the various settings for pricing and discount managemen
 author: boycez
 ms.date: 01/28/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2022-08-11

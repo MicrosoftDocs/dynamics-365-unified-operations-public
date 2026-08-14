@@ -1,10 +1,10 @@
 ---
 title: Work with serialized items in the POS
 description: Learn how to manage serialized items in Microsoft Dynamics 365 Commerce point of sale (POS).
-author: boycezhu
+author: boycez
 ms.date: 01/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: 01/01/21

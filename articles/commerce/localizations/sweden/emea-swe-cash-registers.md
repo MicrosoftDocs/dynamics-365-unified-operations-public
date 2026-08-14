@@ -4,10 +4,10 @@ description: Learn about cash register functionality available for Sweden in Mic
 author: EvgenyPopovMBS
 ms.date: 05/12/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Sweden
 ms.search.industry: retail
-ms.author: josaw
+ms.author: mirao
 ms.custom: 
   - bap-template
 ---

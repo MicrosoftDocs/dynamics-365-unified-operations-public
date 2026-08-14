@@ -4,7 +4,7 @@ description: Learn how to set up Azure Key Vault to provide secure key managemen
 author: samjarawan
 ms.date: 02/05/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31

@@ -2,7 +2,7 @@
 title: FORMATELEMENTNAME ER function
 description: Learn about how the FORMATELEMENTNAME Electronic reporting (ER) function is used, including syntax, return values, usage notes, and examples.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

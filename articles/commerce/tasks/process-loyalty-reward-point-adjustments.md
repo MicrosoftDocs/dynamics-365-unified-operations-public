@@ -4,7 +4,7 @@ description: Learn how to look up loyalty card information and adjust loyalty re
 author: josaw1
 ms.date: 02/11/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30

@@ -4,7 +4,7 @@ description: Learn how to set up and use the Operational Insights feature in Mic
 author: ashishMSFT
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28

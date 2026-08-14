@@ -4,7 +4,7 @@ description: Learn about improvements to the statement posting feature in Micros
 author: analpert
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global 
 ms.author: shajain
 ms.search.validFrom: 2018-04-30

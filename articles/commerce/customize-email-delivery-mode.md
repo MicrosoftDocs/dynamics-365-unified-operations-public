@@ -4,7 +4,7 @@ description: Learn how to set up custom email templates for specific notificatio
 author: bicyclingfool
 ms.date: 01/21/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-10-26

@@ -2,7 +2,7 @@
 title: Design an ER format to generate a report in Excel format with embedded images in page headers or footers
 description: Learn about how to use Electronic reporting (ER) to generate business documents that have images and shapes embedded in page headers or footers.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/07/2026
 ms.custom: 

@@ -8,7 +8,7 @@ ms.search.form: RetailTerminalTable
 ms.reviewer: mirao
 ms.assetid: 20b51874-8912-40cf-9296-864df707315a
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template

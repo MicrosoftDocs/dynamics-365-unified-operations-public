@@ -4,7 +4,7 @@ description: This article provides an overview of the database index compression
 author: aneesmsft
 ms.date: 02/18/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2024-07-01

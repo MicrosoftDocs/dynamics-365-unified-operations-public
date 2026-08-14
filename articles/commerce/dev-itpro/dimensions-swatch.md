@@ -4,7 +4,7 @@ description: Learn how to configure product dimension values as swatches in Micr
 author: anupamar-ms
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-09-20

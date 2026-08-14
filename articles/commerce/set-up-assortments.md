@@ -4,7 +4,7 @@ description: Learn about assortments and how to set them up in Microsoft Dynamic
 author: josaw1
 ms.date: 01/29/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28

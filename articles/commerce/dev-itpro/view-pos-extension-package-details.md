@@ -4,8 +4,8 @@ description: Learn about the Extension packages section of the Settings view in 
 author: josaw1
 ms.date: 02/20/2026
 ms.topic: article
-ms.author: josaw
-ms.reviewer: v-griffinc
+ms.author: mirao
+ms.reviewer: mirao
 ms.search.region: Global
 ms.search.validFrom: 2019-02-25
 ms.custom:

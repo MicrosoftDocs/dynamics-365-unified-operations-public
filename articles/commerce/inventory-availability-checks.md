@@ -4,7 +4,7 @@ description: Learn how to configure inventory availability checks for add to car
 author: rickwyang
 ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: wenxyang
 ms.search.validFrom: 2023-01-01

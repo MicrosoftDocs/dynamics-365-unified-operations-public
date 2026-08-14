@@ -4,7 +4,7 @@ description: Learn how to bulk import and export digital assets by using manifes
 author: psimolin
 ms.date: 02/17/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2023-03-01

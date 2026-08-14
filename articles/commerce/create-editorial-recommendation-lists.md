@@ -4,7 +4,7 @@ description: Learn how merchandisers can manually create and manage product list
 author: bebeale
 ms.date: 01/21/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale

@@ -4,7 +4,7 @@ description: Learn how to extend Microsoft Dynamics 365 Commerce store receipts.
 author: ritakimani
 ms.date: 02/20/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2016-08-30

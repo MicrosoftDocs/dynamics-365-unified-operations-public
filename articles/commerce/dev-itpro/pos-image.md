@@ -4,7 +4,7 @@ description: This article provides an overview of how to manage POS client image
 author: josaw1
 ms.date: 02/18/2026
 ms.topic: overview
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: global
 ms.author: cbittner
 ms.search.validFrom: 2019-09-30

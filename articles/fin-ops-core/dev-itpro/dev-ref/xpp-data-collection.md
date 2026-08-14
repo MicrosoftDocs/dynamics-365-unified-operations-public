@@ -2,7 +2,7 @@
 title: X++ collection classes
 description: Learn about collection classes in X++, which are used to store objects to let you create arrays, lists, sets, maps, and structures.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.date: 03/31/2026
 ms.reviewer: johnmichalak

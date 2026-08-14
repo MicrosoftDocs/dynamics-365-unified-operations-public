@@ -2,7 +2,7 @@
 title: Solve dependencies among models by using delegates during code migration
 description: Learn about how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 author: josaw1
-ms.author: josaw
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/17/2026
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Print checks by using the Spanish layout
 description: Learn about how to print checks that follow the standards that are required in Spain with a process for using the checks' functionality with the Spanish layout.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

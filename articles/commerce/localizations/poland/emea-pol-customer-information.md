@@ -4,7 +4,7 @@ description: Learn how to handle customer information in Retail POS for Poland.
 author: EvgenyPopovMBS
 ms.date: 02/27/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Poland
 ms.author: anupamar
 ms.search.validFrom: 2019-11-11

@@ -2,7 +2,7 @@
 title: Operator precedence
 description: Learn about operator precedence, including an overview of the order of operator precedence with a table that provides syntax for operators in precedence order.
 author: pvillads
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: language-reference
 ms.custom: 
   - bap-template

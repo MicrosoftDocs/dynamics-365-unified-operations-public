@@ -5,7 +5,7 @@ author: ShalabhjainMSFT
 ms.date: 12/13/2022
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2017-06-20

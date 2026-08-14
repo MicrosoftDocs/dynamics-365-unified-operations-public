@@ -2,7 +2,7 @@
 title: MX-00010 Post a free text invoice
 description: Learn how to create and post a customer invoice as an electronic invoice in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

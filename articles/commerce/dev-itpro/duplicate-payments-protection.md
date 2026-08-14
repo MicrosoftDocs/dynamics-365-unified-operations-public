@@ -4,7 +4,7 @@ description: Learn how to enable duplicate payment protection for a given paymen
 author: Reza-Assadi
 ms.date: 02/13/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28

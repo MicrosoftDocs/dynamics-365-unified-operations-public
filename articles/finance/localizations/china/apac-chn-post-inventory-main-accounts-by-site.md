@@ -2,7 +2,7 @@
 title: Post inventory main accounts by site for China
 description: Learn about the posting of inventory main accounts by site for China. You can set up or modify the posting of items to ledger accounts.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.custom: 
   - bap-template

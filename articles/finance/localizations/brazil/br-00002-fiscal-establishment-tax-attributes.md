@@ -2,7 +2,7 @@
 title: Fiscal establishment tax attributes (Brazil)
 description: This article describes how to create one or more fiscal establishments for a legal entity in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-ms.author: atrukawk
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/03/2026
 ms.reviewer: johnmichalak

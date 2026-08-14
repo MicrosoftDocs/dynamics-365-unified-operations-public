@@ -2,7 +2,7 @@
 title: Regression suite automation tool installation and configuration
 description: Learn about how to install and configure the Regression suite automation tool (RSAT), including prerequisites and an overview of the installation process.
 author: FrankDahl
-ms.author: pvillads
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 05/27/2026
 ms.reviewer: johnmichalak

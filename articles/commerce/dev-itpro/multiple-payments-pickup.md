@@ -4,7 +4,7 @@ description: Learn about the capabilities of Microsoft Dynamics 365 Commerce poi
 author: BrianShook
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2021-11-15

@@ -8,12 +8,12 @@ ms.date: 04/12/2024
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: mirao
 ms.custom:
   - bap-template
   - evergreen
 ms.search.region: Global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2020-01-31 
 ms.dyn365.ops.version: 10.0.8
 

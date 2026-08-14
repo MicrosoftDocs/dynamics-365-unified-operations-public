@@ -7,10 +7,10 @@ author: josaw1
 ms.date: 01/30/2026
 ms.topic: how-to
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
-ms.author: josaw
+ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template

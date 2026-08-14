@@ -4,7 +4,7 @@ description: Learn about the basic concepts of the point of sale (POS) extension
 author: josaw1
 ms.date: 02/25/2026
 ms.topic: how-to
-ms.reviewer: v-griffinc
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-04-13

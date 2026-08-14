@@ -2,7 +2,7 @@
 title: Supported primitive data types for Electronic reporting formulas
 description: Learn about the primitive data types that are supported in Electronic reporting (ER) formulas, including a list of various primitive data types.
 author: kfend
-ms.author: filatovm
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/08/2026
 ms.reviewer: johnmichalak

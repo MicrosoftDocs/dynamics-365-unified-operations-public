@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: filatovm
+ms.author: johnmichalak
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---

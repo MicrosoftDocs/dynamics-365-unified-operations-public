@@ -2,7 +2,7 @@
 title: Business events in Microsoft Power Automate
 description: This article provides information about the business events that are available for consumption in Microsoft Power Automate via the application connector.
 author: Sunil-Garg
-ms.author: sunilg
+ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
 ms.date: 04/08/2026
 # ms.custom: [used by loc for topics migrated from the wiki]
