@@ -4,7 +4,7 @@ description: Access answers to many of the most frequently asked questions about
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: faq
-ms.date: 08/13/2026
+ms.date: 08/16/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -40,7 +40,7 @@ No. Service-based authentication is deprecated only for the Warehouse Management
 
 ## Which authentication method should I use?
 
-Use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow), combined with [brokered authentication](warehouse-app-authenticate-user-based.md#sso), for all new and existing deployments. This combination works on all supported platforms, enables single sign-on (SSO) and mass deployment, and supports phishing-resistant sign-in mechanisms such as shared device mode and QR code plus PIN sign-in.
+Use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow), combined with [brokered authentication](warehouse-app-authenticate-user-based.md#sso), for all new and existing deployments. This combination works on all supported platforms, enables single sign-on (SSO) and mass deployment, and supports phishing-resistant sign-in mechanisms such as QR code plus PIN sign-in.
 
 [Device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) is still accepted for backward compatibility, but it's no longer recommended. Learn more in [What is device code flow, and why is it no longer recommended?](#device-code-flow) later in this article.
 
@@ -159,7 +159,7 @@ Device code flow provides a two-step process that authenticates users on devices
 
 Device code flow is a user-based authentication method that lets you enter a Microsoft Entra ID user name and password to sign in from a device. After the app is signed in, individual workers still sign in by entering their Supply Chain Management worker ID.
 
-Microsoft no longer recommends device code flow because it's a common target of phishing attacks. Starting July 1, 2026, Microsoft Entra ID security default settings block device code flow by default in *new* tenants–including new tenants that you create for testing. If you create a new tenant to test the Warehouse Management mobile app, expect device code flow not to work by default. Existing tenants aren't automatically affected unless they already have security defaults enabled. In addition, device code flow isn't available on iOS and can't be combined with SSO or brokered authentication. Use [username/password authentication combined with brokered authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) instead, which supports more sophisticated and phishing-resistant sign-in mechanisms such as shared device mode and QR code plus PIN sign-in.
+Microsoft no longer recommends device code flow because it's a common target of phishing attacks. Starting July 1, 2026, Microsoft Entra ID security default settings block device code flow by default in *new* tenants–including new tenants that you create for testing. If you create a new tenant to test the Warehouse Management mobile app, expect device code flow not to work by default. Existing tenants aren't automatically affected unless they already have security defaults enabled. In addition, device code flow isn't available on iOS and can't be combined with SSO or brokered authentication. Use [username/password authentication combined with brokered authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) instead, which supports more sophisticated and phishing-resistant sign-in mechanisms such as QR code plus PIN sign-in.
 
 
 
