@@ -4,7 +4,7 @@ description: Learn how to configure the Warehouse Management app to connect to y
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 08/13/2026
+ms.date: 08/16/2026
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.custom:
@@ -60,7 +60,6 @@ When you use username/password authentication, each human worker must enter the 
 
 Microsoft recommends that you combine username/password authentication with [brokered authentication](#sso). A broker, such as Microsoft Authenticator, Intune Company Portal, or the Windows Web Account Manager (WAM), lets you take advantage of more sophisticated and phishing-resistant sign-in mechanisms, including:
 
-- **Shared device mode** – Lets multiple workers share the same Android or iOS device while each worker's Microsoft Entra ID session is fully signed out and replaced when they sign out, without requiring a separate Microsoft Entra ID account per device. Learn more in [Overview of shared device mode](/entra/identity-platform/msal-shared-devices).
 - **QR code and PIN sign-in** – Lets workers sign in quickly on shared devices by scanning a QR code and entering a PIN, instead of typing a full username and password every time. Learn more in [Set up QR Code and PIN Authentication in Android App](/entra/identity-platform/android-qr-code-pin-authentication) and [Set up QR Code and PIN Authentication in iOS App](/entra/identity-platform/ios-qr-code-pin-authentication).
 - **Windows Web Account Manager (WAM)** – Uses the native Windows broker and primary refresh tokens (PRT) to provide fast, secure sign-in on Windows devices. Learn more in [Operating system brokers on Windows (WAM)](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam) and [Microsoft Entra joined shared devices on Windows](/entra/identity/devices/concept-primary-refresh-token).
 
@@ -182,7 +181,7 @@ The following table lists the broker apps that must be installed on a device for
 > [!IMPORTANT]
 >
 > - To use mobile mass deployment (MDM), you must enable SSO.
-> - The Warehouse Management mobile app supports [shared device mode](/entra/identity-platform/msal-shared-devices) on Android and iOS. Shared device mode lets multiple workers use the same device while keeping each worker's Microsoft Entra ID session fully isolated and signed out when they sign out. Learn more in [Overview of shared device mode](/entra/identity-platform/msal-shared-devices).
+> - The Warehouse Management mobile app *doesn't* support [shared device mode](/entra/identity-platform/msal-shared-devices). To let multiple workers share a device, use the [one Microsoft Entra ID user account per device](#scenarios) approach instead.
 > - For a faster sign-in experience on shared devices, workers can also use QR code and PIN sign-in instead of typing a full username and password. Learn more in [Set up QR Code and PIN Authentication in Android App](/entra/identity-platform/android-qr-code-pin-authentication) and [Set up QR Code and PIN Authentication in iOS App](/entra/identity-platform/ios-qr-code-pin-authentication).
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
@@ -210,7 +209,7 @@ Device code flow is a two-step sign-in method that was originally designed for d
 - **It's a frequent target of phishing attacks** – A threat actor can ask a victim to sign in with a device code that the attacker generated, and then use the resulting token to access the victim's account from the attacker's own device. Microsoft Entra ID has no reliable way to verify that the person who enters the code is signing in from the device that generated it.
 - **It's blocked by default in new tenants** – Starting July 1, 2026, Microsoft Entra ID security default settings block device code flow on new tenants. This behavior commonly affects new tenants that are created for testing purposes. If you create a new tenant to test the Warehouse Management mobile app, expect device code flow to be blocked by default. Existing tenants aren't automatically affected unless they already have security defaults enabled.
 - **It isn't available everywhere** – Device code flow isn't supported on iOS, and it isn't supported for Android devices that connect to on-premises environments.
-- **It doesn't support SSO** – It can't be combined with [brokered authentication](#sso), shared device mode, or QR code plus PIN sign-in.
+- **It doesn't support SSO** – It can't be combined with [brokered authentication](#sso) or QR code plus PIN sign-in.
 
 If your environment still depends on device code flow (for example, because you're using legacy test scripts or workflows that aren't updated yet), an admin can choose to unblock device code flow for that tenant by disabling security defaults. Disabling this protection lowers the tenant's overall security posture and increases exposure to identity-related attacks. Treat it strictly as a temporary measure while you update your setup, scripts, and workflows to use username/password or brokered authentication. For information about security defaults, see [Microsoft Entra security defaults](/entra/fundamentals/security-defaults).
 

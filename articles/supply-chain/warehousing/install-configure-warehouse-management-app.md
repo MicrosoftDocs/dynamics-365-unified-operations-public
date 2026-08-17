@@ -4,7 +4,7 @@ description: Learn how to install the Warehouse Management mobile app on each of
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 08/13/2026
+ms.date: 08/16/2026
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.custom:
@@ -273,7 +273,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
     - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
     - **Authentication method** – Select one of the following values to specify the method that you use to authenticate with Supply Chain Management. The method that you select here must match the setup of the app in Azure.
 
-        - *Username and password* (recommended) – Authenticate by using SSO or by asking the user to enter a user name and password. [Username and password](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) supports [brokered authentication](warehouse-app-authenticate-user-based.md#sso) for sophisticated, phishing-resistant sign-in mechanisms such as shared device mode and QR code plus PIN sign-in.
+        - *Username and password* (recommended) – Authenticate by using SSO or by asking the user to enter a user name and password. [Username and password](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) supports [brokered authentication](warehouse-app-authenticate-user-based.md#sso) for sophisticated, phishing-resistant sign-in mechanisms such as QR code plus PIN sign-in.
         - *Device code* (not recommended) – Authenticate by using the [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow). This option remains available for backward compatibility, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. Microsoft Entra ID security defaults block it by default in *new* tenants (including new tenants that are created for testing), it isn't available on iOS, and it doesn't support SSO or brokered authentication. If a device is still configured this way, reconfigure it to use *Username and password*.
 
     - **Cloud** – Specify the type of Microsoft Entra ID app registration to authenticate with:
