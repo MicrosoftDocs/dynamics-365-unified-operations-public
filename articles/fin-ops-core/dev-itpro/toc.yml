@@ -347,6 +347,8 @@ items:
             href: sysadmin/archive-purge.md
           - name: Parallel Processing
             href: sysadmin/archive-parallel-process.md
+          - name: Archive Dynamics 365 Project Operations actuals staging data
+            href: sysadmin/archive-project-actuals.md
         - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake

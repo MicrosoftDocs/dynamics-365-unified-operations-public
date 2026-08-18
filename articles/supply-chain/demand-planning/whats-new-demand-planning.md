@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: whats-new
-ms.date: 06/01/2026
+ms.date: 08/18/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,31 +15,49 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
-## Version 1.2.3384.2
+## Version 1.4
 
-### New feature introduced in version 1.2.3384.2
+### New features introduced in version 1.4
 
-This release improves data consumption management by allowing you to delete obsolete time series versions or entire time series that are no longer needed. The system provides an overview of dependencies between time series, time series versions, and the profiles that use them, so you can easily see what you need to clean up to allow a time series or version to be deleted. Learn more in [Clean up time series data](clean-up-time-series-data.md).
+Demand planning version 1.4 introduces the following new features:
 
-### New fixes and improvements in version 1.2.3384.2
+- **Best fit model - version 4** – The *Best fit model - version 4* forecasting algorithm introduces symmetric mean absolute percentage error (SMAPE) as the new metric for selecting between forecast models. This metric improves model selection for products with periods where no historical sales occurred.
+- **Forecast calculation accuracy analysis** – The new calculation accuracy page for forecast time series improves on the explainability display previously available in the forecast profile job run history. For each planning object in the forecast, it shows which demand forecasting algorithm was used and the resulting SMAPE value. New data visualizations include model distribution and an average SMAPE indicator that responds to filters. It improves the overall user experience and provides deeper insights.
+- **Detailed forecast explainability** – The calculation accuracy page also lets you drill down into individual planning objects (such as product and store) for an even more detailed explainability view. Here, you can see historical data alongside each calculated forecast and get a natural-language explanation of the factors driving it.
+- **View forecast with full component breakdown** – View each forecast across the full horizon with a detailed component breakdown. Demand planning splits each forecast into *baseline*, *signals impact*, and *manual adjustments* to provide clearer insight into manual changes and the influence of signals.
+- **Signals and fill missing values** – New **Fill missing value** options make it easier to create continuous data signals based on input originating from external sources, including Supply Chain Management and third parties. New options include *Forward fill*, *Backward fill*, and *Interpolation*. Learn more in [Signal fill strategies](design-forecast-models.md#signal-fill-strategies).
+- **New calculation options for transformations** – Previously, Demand planning provided a single calculation method for data transformations: Summarize. This version adds several new options, including *Average*, *Max*, *Min*, and *Last value*, which can be better suited for signals such as inflation, prices, or weather. Learn more in [Aggregation methods](transform-data.md#aggregation-methods).
+- **Engineering enhancements for upcoming Dataverse storage alignment** – This release includes behind-the-scenes enhancements that prepare the app to support Dataverse storage for timeseries data. As a result of these preparations, both new installations and updates to version 1.4 might require significantly more processing time than previous versions.
+
+### New fixes and improvements in version 1.4
+
+Demand planning no longer resets unsaved edits to their start value when you double-click on other cells.
+
+## Version 1.2
+
+### New features introduced in version 1.2
+
+This release improves data consumption management by allowing you to delete obsolete time series versions or entire time series that you no longer need. The system provides an overview of dependencies between time series, time series versions, and the profiles that use them, so you can easily see what you need to clean up to allow a time series or version to be deleted. Learn more in [Clean up time series data](clean-up-time-series-data.md).
+
+### New fixes and improvements in version 1.2
 
 This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
-- Added a new API that lets you export time series programmatically. Learn more in [Export data using custom APIs](demand-planning-export-api.md).
+- Added a new API that you can use to export time series programmatically. Learn more in [Export data using custom APIs](demand-planning-export-api.md).
 - Improved performance when exporting forecasts to Supply Chain Management. This improvement is made possible by a new index introduced in Supply Chain Management version 10.0.48.
 - Improved forecast calculation performance.
 
-## Version 1.1.0.4
+## Version 1.1
 
-### New feature introduced in version 1.1.0.4
+### New features introduced in version 1.1
 
 This version of Demand planning enhances basic forecast calculations by adding two new features:
 
-- The new *Best fit model - version 3 (preview)* forecast algorithm now includes the *Croston's method* forecasting model. It's designed specifically for intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands. Learn more in [Croston's method forecasting (preview)](croston-method.md).
-- Forecasting with signals using the *XGBoost* forecast model is now extended to allow up to five signals. Learn more in [Forecast with signals (preview)](forecasts-with-signals.md).
+- The new *Best fit model - version 3 (preview)* forecast algorithm now includes the *Croston's method* forecasting model. It's designed specifically for intermittent demand, which is demand data with many zero-demand periods and occasional non-zero demands. Learn more in [Croston's method forecasting (preview)](croston-method.md).
+- Forecasting with signals by using the *XGBoost* forecast model now supports up to five signals. Learn more in [Forecast with signals (preview)](forecasts-with-signals.md).
 
-### New fixes and improvements in version 1.1.0.4
+### New fixes and improvements in version 1.1
 
 This version of Demand planning includes the following fixes and improvements:
 
@@ -154,11 +172,11 @@ This version of Demand planning adds several new features, as described in the f
 
 #### Select input for forecasts and calculations at the model level
 
-In previous versions of Demand planning, the input time series used by forecast and calculation profiles was set at the *profile* level. This setting is now part of the *model* configuration, which improves usability while adding flexibility to your model designs (including the ability to add a signal input). As before, each forecast or calculation model starts with an *Input* step, but now it includes a setting where you choose the time series to use as input for the model. You can also choose a time series version and add filters based on dates and/or dimensions (such as products and locations). As with all steps, you access these settings by opening the **Actions** menu (ellipsis button) on the card. Learn more in [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).
+In previous versions of Demand planning, you set the input time series used by forecast and calculation profiles at the *profile* level. This version makes the setting part of the *model* configuration, which improves usability while adding flexibility to your model designs (including the ability to add a signal input). As before, each forecast or calculation model starts with an *Input* step, but now it includes a setting where you choose the time series to use as input for the model. You can also choose a time series version and add filters based on dates and dimensions, such as products and locations. As with all steps, access these settings by opening the **Actions** menu (ellipsis button) on the card. Learn more in [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).
 
 #### Apply input filters in calculation models
 
-You can now filter the input used in calculation models. Filters can be based on dates and dimensions, such as products and locations. It was already possible to apply filters in forecast models. Learn more in [Design calculation models](design-calculation-models.md).
+You can now filter the input used in calculation models. Create filters based on dates and dimensions, such as products and locations. You could already apply filters in forecast models. Learn more in [Design calculation models](design-calculation-models.md).
 
 #### Analyze demand plans with Copilot
 
@@ -166,7 +184,7 @@ Copilot cursor prompts in Demand planning let you explore specific data points o
 
 #### Forecast with signals (preview)
 
-One way to improve the accuracy of a forecast is to include input signal data beyond just historical sales. This version of Demand planning adds a new *Signal* step, which lets planners include any signal (such as inflation or weather data) as input to their forecast models. The current release supports up to one signal, though support for more signals might be added in a future release. The new *Forecast with signals* step lets you combine the signal input and main input to create the forecast. In the current version, *Forecast with signals* always uses the XGBoost demand forecasting algorithm, but support for other algorithms might be added in a future release. Learn more in [Forecast with signals](forecasts-with-signals.md).
+One way to improve the accuracy of a forecast is to include input signal data beyond just historical sales. This version of Demand planning adds a new *Signal* step, which lets planners include any signal, such as inflation or weather data, as input to their forecast models. The current release supports up to one signal, though support for more signals might be added in a future release. The new *Forecast with signals* step lets you combine the signal input and main input to create the forecast. In the current version, *Forecast with signals* always uses the XGBoost demand forecasting algorithm, but support for other algorithms might be added in a future release. Learn more in [Forecast with signals](forecasts-with-signals.md).
 
 #### Autodetect seasonality patterns (preview)
 
@@ -213,7 +231,7 @@ This version of Demand planning includes the following fixes and improvements:
 
 ### New features introduced in version 1.0.0.1182
 
-The Microsoft Dynamics 365 Finance and Operations data provider now lets you choose which legal entities to import from. This applies to all data entities that contain a data area ID, including custom-built data entities. Learn more in [Import data into Demand planning](import-data.md).
+The Microsoft Dynamics 365 Finance and Operations data provider now lets you choose which legal entities to import from. This feature applies to all data entities that contain a data area ID, including custom-built data entities. Learn more in [Import data into Demand planning](import-data.md).
 
 ### New fixes and improvements in version 1.0.0.1182
 
