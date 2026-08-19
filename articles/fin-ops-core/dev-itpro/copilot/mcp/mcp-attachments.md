@@ -1,5 +1,5 @@
 ---
-title: Files and attachments with Dynamics 365 ERP MCP (preview)
+title: Files and attachments with Dynamics 365 ERP MCP
 description: Learn how to work with files and attachments to Dynamics 365 ERP records with the Dynamics 365 ERP MCP server
 author: jaredha
 ms.author: jaredha
@@ -7,13 +7,11 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 4/28/2026
+ms.date: 8/18/2026
 
 ---
 
-# Files with Dynamics 365 ERP MCP (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Files with Dynamics 365 ERP MCP
 
 File support in the Dynamics 365 ERP MCP server enables powerful process automation and agentic experiences for document-centric business processes in Dynamics 365 finance and operations apps. The MCP server lets an AI agent exchange files with the application in two directions: it can return large query results, exported reports, and existing attachments as embedded resources to the language model client, and it can accept file content from the client and attach it to a record in the application.
 
@@ -28,11 +26,12 @@ This article describes the supported scenarios, the tools and APIs that back the
 
 ## Output scenarios
 
-Output scenarios occur when the MCP server sends binary or large-text content back to the LLM as an MCP embedded resource. 
-There are three triggers: 
- - data query tools
- - an action execution tool
- - form interaction tools
+Output scenarios occur when the MCP server sends binary or large-text content back to the LLM as an MCP embedded resource.
+There are three triggers:
+
+- data query tools
+- an action execution tool
+- form interaction tools
 
 > [!IMPORTANT]
 > Working with files for output scenarios is a preview feature. Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2216214), and are available before an official release so customers can get early access and provide feedback.
@@ -53,7 +52,7 @@ The MCP response with the file resource comes in the following shape:
 
 | Content block | Type | Description |
 | ------------- | ----- | ----------- |
-| `Content[0]` |  `text` | Summary text - record count and any warnings. |
+| `Content[0]` | `text` | Summary text - record count and any warnings. |
 | `Content[1]` | `resource` | EmbeddedResource { Uri, MimeType, Text } containing the result JSON.
 
 #### Constraints

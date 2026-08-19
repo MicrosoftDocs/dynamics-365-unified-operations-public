@@ -4,7 +4,7 @@ description: Learn how to use a Model Context Protocol (MCP) server to create an
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 07/01/2026
+ms.date: 08/18/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -36,7 +36,7 @@ Before you can use the Dynamics 365 ERP MCP server, you must meet the following 
   - 10.0.46 PQU-2
   - 10.0.45 PQU-7
 - Enable the **Dynamics 365 ERP Model Context Protocol server** feature in [Feature Management](../../fin-ops/get-started/feature-management/feature-management-overview.md) if not already enabled. The MCP server is enabled by default.
-- Add the agent platform on which you're building your agent in the **Allowed MCP Clients** page. Learn more in [Allowed MCP clients](copilot-mcp.md#allowed-mcp-clients).
+- Add the agent platform on which you're building your agent in the **Allowed MCP Clients** page. Learn more in [Allowed MCP clients](mcp/mcp-security.md#allowed-mcp-clients).
 - Your environment is Tier 2 or above, or a Unified Developer Environment. The MCP server isn't supported on Cloud Hosted Environments (CHE).
 
 > [!NOTE]
@@ -121,28 +121,11 @@ Similarly, the entities returned in the response to the `data_find_entity_type` 
 
 Limiting the menu items, entities, and APIs by using roles is important for limiting the scope of the agent. It also improves agent orchestration by limiting the context the agent needs to orchestrate over to find the right form, data, or actions.
 
-## Allowed MCP clients
-
-When you enable the Dynamics 365 ERP MCP server in your environment, choose which agent platforms can access the server. By default, only the following two platforms can access the MCP server:
-
-| Platform | Client ID |
-| -------- | --------- |
-| Microsoft Copilot Studio | 7ab7862c-4c57-491e-8a45-d52a7e023983 |
-| Visual Studio Code | aebc6443-996d-45c2-90f0-388ff96faa56 |
-| Microsoft Cowork | 6ab48b67-cd74-4ad4-81af-5932984589be |
-| Finance Agent | 8c1a9936-578e-4d13-9bd9-9afe53ef7de8 |
-| Finance Agent (Sydney) | fb8d773d-7ef8-4ec0-a117-179f88add510 |
-
-Grant access to any other agent platforms that need to access the MCP server. To add new agent platforms, complete the following steps:
-
-1. Register the application in Microsoft Entra ID. For more information, see [Register an application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app).
-1. Add the registered client ID value in the **Allowed MCP clients** form, and set the **Allowed** property to `true`.
-
 ## Licensing
 
 ### Billing rates for standard user licenses
 
-Two types of costs are associated with using the Dynamics 365 ERP MCP server in an agent:
+When you use the Dynamics 365 ERP MCP server in an agent, you incur two types of costs:
 
 1. The agent orchestration cost (LLM cost), and
 1. The MCP server execution cost (tool calls to the server).
@@ -151,7 +134,7 @@ These costs differ when you use the MCP server in Microsoft Copilot Studio versu
 
 For agents built on other agent clients, usage of the Dynamics 365 ERP MCP server incurs a cost of one copilot credit per 10 tool calls to the server (or 0.1 credits per tool call). This cost is an incremental charge by Microsoft for the execution of the MCP server. The cost for the LLM orchestration is a separate charge by the agent client for token consumption, based on the rates of that client.
 
-|  | Microsoft Copilot Studio | Other agent client |
+| | Microsoft Copilot Studio | Other agent client |
 | - | ----------------------- | ------------------ |
 | **Orchestration cost** | Billed as an *Agent Action* on the [Copilot Studio rate card](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) | Billing from the agent client at the client's token consumption rates |
 | **Tool execution cost** | Included in the fixed orchestration rate | Billed at **0.1 Copilot Credits** per tool call |

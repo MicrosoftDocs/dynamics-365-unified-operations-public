@@ -79,7 +79,7 @@ To allow the Cowork client to access your MCP server, follow these steps:
 1. Open the **Allowed MCP Clients** page.
 1. Add the Cowork Client App ID: `6ab48b67-cd74-4ad4-81af-5932984589be`.
 
-Learn more in [Allowed MCP clients](copilot-mcp.md#allowed-mcp-clients).
+Learn more in [Allowed MCP clients](mcp/mcp-security.md#allowed-mcp-clients).
 
 ### Step 3: Enable the Dynamics 365 ERP apps plugin and connect to your environment in Copilot Cowork
 
