@@ -4,7 +4,7 @@ description: Learn about how to use Electronic reporting to set up the advanced 
 author: mukumarm
 ms.author: mukumarm
 ms.topic: how-to
-ms.date: 07/22/2026
+ms.date: 08/18/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -20,9 +20,9 @@ ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 
 The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This article explains how to configure the bank statement import process by using Electronic Reporting (ER). The setup varies depending on the format of the bank statement file that your bank provides. Dynamics 365 Finance supports the following bank statement formats for Advanced Bank Reconciliation:
 
-      -  ISO 20022 CAMT.053
-      -  MT940
-      -  BAI2
+- ISO 20022 CAMT.053
+- MT940
+- BAI2
 
 ## Set up the Electronic reporting configuration
 
@@ -45,14 +45,15 @@ Before you can import and reconcile bank statements, you must import the Electro
 Before you can import and reconcile electronic bank statements, create a bank statement format and associate it with the appropriate Electronic Reporting (ER) configuration that matches the file format provided by your bank, such as BAI2, MT940, or ISO 20022 CAMT.053. This configuration enables Advanced Bank Reconciliation to correctly interpret and process imported bank statement files.
 
 1. Go to **Cash and bank management** > **Setup** > **Advanced bank reconciliation setup** > **Bank statement format**.
-1. Select **New**.
-1. Set the **Statement format** and **Name** fields. Enter values that identify the bank statement format.
-1. Select the **Generic electronic import format** checkbox.
-1. In the **Import format configuration** field, select the Electronic Reporting (ER) configuration that matches the bank statement format that you import:  
+2. Select **New**.
+3. Set the **Statement format** and **Name** fields. Enter values that identify the bank statement format.
+4. Set the **File type**. For ZIP archives containing multiple files, the configured file type must match the file types included in the archive (for example, TXT or XML). If the archive contains multiple file types, specify them in a single bank statement format by separating each file type with a semicolon (;).
+5. Select the **Generic electronic import format** checkbox.
+6. In the **Import format configuration** field, select the Electronic Reporting (ER) configuration that matches the bank statement format that you import:  
     - **ABR BAI2 format** for BAI2 statement files.
     - **ABR MT940 format** for MT940 statement files.
     - **ABR ISO20022/camt053 format** for ISO 20022 CAMT.053 statement files.
-1. Save the record.
+7. Save the record.
 
 ## Set up the bank account
 
