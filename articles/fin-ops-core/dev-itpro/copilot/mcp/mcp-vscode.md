@@ -7,7 +7,7 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 12/17/2025
+ms.date: 08/18/2026
 
 ---
 
@@ -22,7 +22,7 @@ For more information on MCP support in Visual Studio Code, see [Use MCP servers 
 Before building an agent in Visual Studio Code by using the **Dynamics 365 ERP MCP server**, complete the following steps:
 
 1. Enable the **Dynamics 365 ERP MCP server** in your environment. For more information, see [Use Model Context Protocol for finance and operations apps](../copilot-mcp.md).
-1. Add the `VSCode` client ID to the **Allowed MCP clients** list. For more information, see [Allowed MCP clients](../copilot-mcp.md#allowed-mcp-clients).
+1. Add the `VSCode` client ID to the **Allowed MCP clients** list. For more information, see [Allowed MCP clients](mcp-security.md#allowed-mcp-clients).
 1. Install the latest version of [Visual Studio Code](https://code.visualstudio.com/download).
 1. Enable access to [Copilot](https://code.visualstudio.com/docs/copilot/setup).
 
