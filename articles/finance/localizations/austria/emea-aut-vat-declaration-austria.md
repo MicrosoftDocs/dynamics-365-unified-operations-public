@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/02/2026
+ms.date: 08/19/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 
@@ -30,7 +30,7 @@ The VAT declaration in Austria contains the following information.
 
 ### SECTION 4 – CALCULATION OF SALES TAX
 
-**Deliveries, other services, and own consumption**
+#### Deliveries, other services, and own consumption
 
 | Box | XML element | Description                                                                                                                                                             | Lookup          | Lookup result                                                                                                                                                                                                                                         |
 |-----|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ The VAT declaration in Austria contains the following information.
 | 021 | KZ021       | less sales for which the tax liability has passed to the recipient of the service                                                                                       | Turnover lookup | SalesTaxLiabilityPassed (000/021)                                                                                                                                                                                                                     |
 | \-  | \-          | **TOTAL**                                                                                                                                                               | **-**           | **KZ000 + KZ001 – KZ021**                                                                                                                                                                                                                             |
 
-**Tax-free deliveries WITH input tax deduction or zero rate**
+#### Tax-free deliveries WITH input tax deduction or zero rate
 
 | Box | XML element | Description                                                                                                                                                                                           | Lookup          | Lookup result                 |
 |-----|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------|
@@ -49,7 +49,7 @@ The VAT declaration in Austria contains the following information.
 | 017 | KZ017       | Intra-community deliveries without the vehicle deliveries to be listed separately below                                                                                                               | Turnover lookup | EUSales (000/017)             |
 | 018 | KZ018       | Provided deliveries of new vehicles to buyers without a VAT number or by vehicle suppliers in accordance with Art. 2                                                                                  | Turnover lookup | EUSalesNewVehicles (000/018)  |
 
-**Tax-free deliveries WITHOUT input tax deduction**
+#### Tax-free deliveries WITHOUT input tax deduction
 
 | Box | XML element | Description                                                                                                     | Lookup          | Lookup result                                                                       |
 |-----|-------------|-----------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------|
@@ -58,11 +58,12 @@ The VAT declaration in Austria contains the following information.
 | 020 | KZ020       | Other tax-free sales without input tax deduction                                                                | Turnover lookup | OtherSales (000/020)                                                                |
 | \-  | \-          | **Total amount** of taxable supplies, other services and personal consumption (including taxable down payments) | \-              | **[KZ000 + KZ001 – KZ021] – KZ011 – KZ015 – KZ017 – KZ018 – KZ019 – KZ016 – KZ020** |
 
-**Taxable deliveries**
+#### Taxable deliveries
 
 | Box | XML element | Description                                                                                                                                                                                                                     | Tax base/Tax amount | Lookup              | Lookup result                                                               |
 |-----|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|---------------------|-----------------------------------------------------------------------------|
 | 022 | KZ022       | 20% normal tax rate                                                                                                                                                                                                             | Tax base            | Report field lookup | SalesStandardRate (022)                                                     |
+| 124 | KZ124       | 4.9% reduced tax rate                                                                                                                                                                                                             | Tax base            | Report field lookup | SalesSpecialReducedRate (124)                                                     |
 | 029 | KZ029       | 10% reduced tax rate                                                                                                                                                                                                            | Tax base            | Report field lookup | SalesLowerReducedRate (029)                                                 |
 | 006 | KZ006       | 13% reduced tax rate                                                                                                                                                                                                            | Tax base            | Report field lookup | SalesHigherReducedRate (006)                                                |
 | 037 | KZ037       | 19% for Jungholz und Mittelberg                                                                                                                                                                                                 | Tax base            | Report field lookup | SalesSomeTerritories (037)                                                  |
@@ -75,7 +76,7 @@ The VAT declaration in Austria contains the following information.
 | 044 | KZ044       | Security property, conditional property and land in foreclosure proceedings                                                                                                                                                     | Tax amount          | Report field lookup | TaxLiabilitySecurityPropertyEtc (044)</br>UseTaxSecurityPropertyEtc (044/087)   |
 | 032 | KZ032       | Scrap and waste materials, regulation BGBl. II No. 129/2007; video game consoles, laptops, tablet computers, gas and electricity, gas and electricity certificates, metals, investment gold, regulation BGBl. II No. 369 / 2013 | Tax amount          | Report field lookup | TaxLiabilityScrapLaptopGasEtc (032)</br>UseTaxScrapLaptopGasEtc (032/089)       |
 
-**Intra-community acquisitions**
+#### Intra-community acquisitions
 
 | Box | XML element | Description                                                   | Lookup          | Lookup result                                  |
 |-----|-------------|---------------------------------------------------------------|-----------------|------------------------------------------------|
@@ -83,31 +84,32 @@ The VAT declaration in Austria contains the following information.
 | 071 | KZ071       | Tax free and zero rated intra-community acquisitions          | Turnover lookup | EUPurchasesTaxFree (070/071)                   |
 | \-  | \-          | **Total amount of taxable intra-community acquisitions**      | \-              | **KZ070 – KZ071**                              |
 
-**Taxable Intra-community acquisitions**
+#### Taxable Intra-community acquisitions
 
 | Box | XML element | Description                                                                                | Lookup              | Lookup result                                                                                                                                                 |
 |-----|-------------|--------------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 072 | KZ072       | 20% Normal tax rate                                                                        | Report field lookup | TaxLiabilityEUPurchaseStandardRate (072)</br>UseTaxEUPurchaseStandardRate (072/065)</br>TaxLiabilityEUPurchaseNewVehicles (072)</br>UseTaxEUPurchaseNewVehicles (072/064) |
+| 125 | KZ125       | 4.9% reduced tax rate                                                                        | Report field lookup | TaxLiabilityEUPurchaseSpecialReducedRate (125)</br>UseTaxEUPurchaseSpecialReducedRate (125/065) |
 | 073 | KZ073       | 10% reduced tax rate                                                                       | Report field lookup | TaxLiabilityEUPurchaseLowerReducedRate (073)</br>UseTaxEUPurchaseLowerReducedRate (073/065)                                                                       |
 | 008 | KZ008       | 13% reduced tax rate                                                                       | Report field lookup | TaxLiabilityEUPurchaseHigherReducedRate (008)</br> UseTaxEUPurchaseHigherReducedRate (008/065)                                                                     |
 | 088 | KZ088       | 19% for Jungholz and Mittelberg                                                            | Report field lookup | TaxLiabilityEUPurchaseSomeTerritories (088)</br>UseTaxEUPurchaseSomeTerritories (088/065)                                                                         |
 | 010 | KZ010       | 5% for sales in accordance with § 28 Section 52 Z 1 from July 1, 2020, to December 31, 2020 | Report field lookup | TaxLiabilityEUPurchaseSuperReducedRate (010)</br>UseTaxEUPurchaseSuperReducedRate (010/065)                                                                       |
 
-**Non-taxable Intra-community acquisitions**
+#### Non-taxable Intra-community acquisitions
 
 | Box | XML element | Description                                                                                                                                           | Lookup          | Lookup result                     |
 |-----|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-----------------------------------|
 | 076 | KZ076       | Total amount of the tax base for intra-community acquisitions                                                                                         | Turnover lookup | EUPurchasesNonTaxable (076)       |
 | 077 | KZ077       | Acquisitions in accordance with Art. 3 Paragraph 8, second sentence, which are deemed to be taxed domestically in accordance with Art. 25 Paragraph 2 | Turnover lookup | EUPurchaseTaxedDomestically (077) |
 
-### SECTION 5 – CALCULATION OF THE DEDUCTIBLE INPUT TAX
+### Section 5 – Calculation of the deductible input tax
 
 | Box | XML element | Description                                                                                                                                                               | Lookup              | Lookup result                                                                                                                                                                                                                               |
 |-----|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 060 | KZ060       | Total contribution of the input tax (without the following related expenses)                                                                                              | Report field lookup | InputTax (060)</br> UseTaxReverseCharge1116 (056/060)                                                                                                                                                                                            |
 | 061 | KZ061       | Input taxes relating to the import sales tax paid                                                                                                                         | Report field lookup | InputTaxImport (061)                                                                                                                                                                                                                        |
 | 083 | KZ083       | Input taxes relating to the import sales tax owed and booked on the tax account                                                                                           | Report field lookup | InputTaxImportTaxAccount (083)                                                                                                                                                                                                              |
-| 065 | KZ065       | Input taxes from intra-community acquisitions                                                                                                                             | Report field lookup | InputTaxEUPurchase (065)</br>UseTaxEUPurchaseSuperReducedRate (010/065)</br>UseTaxEUPurchaseSomeTerritories (088/065)</br>UseTaxEUPurchaseHigherReducedRate (008/065)</br>UseTaxEUPurchaseLowerReducedRate (073/065)</br>UseTaxEUPurchaseStandardRate (072/065) |
+| 065 | KZ065       | Input taxes from intra-community acquisitions                                                                                                                             | Report field lookup | InputTaxEUPurchase (065)</br>UseTaxEUPurchaseSuperReducedRate (010/065)</br>UseTaxEUPurchaseSomeTerritories (088/065)</br>UseTaxEUPurchaseHigherReducedRate (008/065)</br>UseTaxEUPurchaseLowerReducedRate (073/065)</br>UseTaxEUPurchaseStandardRate (072/065)</br>UseTaxEUPurchaseSpecialReducedRate (125/065) |
 | 066 | KZ066       | Input tax related to the tax liability according to § 19 Section 1 second sentence, § 19 Section 1c, 1e as well as according to Art. 25 Section 5                         | Report field lookup | InputTaxReverseCharge1925 (066)</br>UseTaxReverseCharge1925 (057/066)                                                                                                                                                                           |
 | 082 | KZ082       | Input taxes on construction services                                                                                                                                      | Report field lookup | InputTaxConstructionServices (082)</br>UseTaxConstructionServices (048/082)                                                                                                                                                                     |
 | 087 | KZ087       | Input taxes on security property, conditional property and land in foreclosure proceedings                                                                                | Report field lookup | InputTaxSecurityPropertyEtc (087)</br>UseTaxSecurityPropertyEtc (044/087)                                                                                                                                                                       |
@@ -144,7 +146,7 @@ For more information about how to configure reverse charge VAT, see [Reverse cha
 
 ## Configure system parameters
 
-To generate a VAT declaration, you must configure the VAT number of your organization.
+To generate a VAT declaration, configure your organization's VAT number.
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 1. Select the legal entity, and then select **Registration IDs**.
@@ -153,30 +155,28 @@ To generate a VAT declaration, you must configure the VAT number of your organiz
 1. In the **Registration number** field, enter the VAT number.
 1. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
-For more information about how to set up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
+For more information about setting up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
 
 ## Set up a VAT declaration for Austria
 
 ### Import ER configurations
 
-Open the **Electronic reporting** workspace, and import the following versions or later of these ER formats:
+Open the **Electronic reporting** workspace, and import the following versions or later of these ER formats under the **Tax declaration model**:
 
-- VAT Declaration XML (AT) version 101.23
-- VAT Declaration Excel (AT) version 101.23.17
+- VAT Declaration XML (AT)
+- VAT Declaration Excel (AT)
+
+For more information about importing ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 ### Set up application-specific parameters for VAT declaration fields
 
 To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
 
-> [!NOTE]
-> Enable the feature **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When you enable this feature, parameters that you configured for the earlier version of an ER format automatically apply to the later version of the same format. If you don't enable this feature, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
-
-
 #### Set up Turnover lookup
 
 Follow these steps to define which sales tax codes generate which boxes in the following subsections of section 4, "Calculation of sales tax":
 
-- Deliveries, other services and own consumption
+- Deliveries, other services, and own consumption
 - Tax-free deliveries WITH input tax deduction or zero rate
 - Tax-free deliveries WITHOUT input tax deduction
 - Intra-community acquisitions
@@ -226,7 +226,7 @@ Follow these steps to define which sales tax codes generate which boxes in the f
 
     This format prints when you run the **Report sales tax for settlement period** report. It also prints when you select **Print** on the **Sales tax payments** page.
 
-1. If you must report the corrections, on the **Special report** section, set **Include corrections** to **Yes**.
+1. If you must report the corrections, set **Include corrections** to **Yes** in the **Special report** section.
 1. On the **Tax authorities** page, select the tax authority, and in the **Report layout** field, select **Default**.
 
 If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps:
@@ -278,7 +278,7 @@ The data package contains electronic message settings to generate the VAT declar
 
 ### Settle and post sales tax
 
-1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Settle and post sales tax**.
+1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
 1. Set the following fields.
 
     | Field                     | Description                                    |
@@ -295,7 +295,7 @@ The data package contains electronic message settings to generate the VAT declar
 ### Preview the VAT declaration in Excel from a sales tax payment
 
 1. Go to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**, and select a sales tax payment line.
-1. Select **Print report**. Select **OK** and review the Excel file that is generated for the selected sales tax payment line.
+1. Select **Print report**. Select **OK** and review the Excel file that's generated for the selected sales tax payment line.
 
     > [!NOTE]
     > The report is generated only for the selected line of the sales tax payment. If you need to generate, for example, a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the **Report sales tax for settlement period** periodic task.
@@ -314,8 +314,8 @@ The following procedure applies to the example electronic message processing tha
     > [!NOTE]
     > Steps 5 through 7 are optional.
 
-1. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that the system generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this article. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
-1. Optional: On the **Message items** FastTab, review the sales tax payments that the system transfers for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
+1. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The system adds the sales tax payments that it generated earlier to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this article. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
+1. Optional: On the **Message items** FastTab, review the sales tax payments that the system transfers for processing. By default, the system includes all sales tax payments of the selected period that weren't included in any other message of the same processing.
 1. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
 1. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status changes to **Ready to generate**.
 1. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
