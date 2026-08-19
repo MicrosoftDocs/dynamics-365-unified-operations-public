@@ -3,7 +3,7 @@ title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.date: 07/30/2026
+ms.date: 08/19/2026
 ms.topic: reference
 ms.custom: 
   - bap-template
@@ -33,6 +33,8 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------|
+| Norway | August 2026 | 10.0.50, also available in prior versions | Regulatory update to support change to the authorization scopes used for VAT Return Submission API integrations from September 2026. [Register an integration point in the ID-porten web portal](../norway/emea-nor-vat-return-integration-point.md); [Prepare your environment to interoperate with ID-porten and Altinn web services](../norway/emea-nor-vat-return-setup.md). |
+| Austria | August 2026 | 10.0.50, also available in prior versions | Regulatory update to support changes in VAT declaration format for Austria from July 2026. [VAT declaration (Austria)](../austria/emea-aut-vat-declaration-austria.md). |
 | Hungary | July 2026 | 10.0.50, also available in prior versions | Regulatory update to support changes in VAT declaration format for Hungary from July 2026. [VAT declaration (Hungary)](../hungary/emea-hun-vat-declaration-hungary.md). |
 | Lithuania | June 2026 | 10.0.49, also available in prior versions | Updated [Lithuanian Intrastat](../lithuania/emea-ltu-intrastat.md). |
 | France | June 2026 | 10.0.49, also available in prior versions | Released [Electronic reporting of transactions for France (e-Reporting)](../france/emea-fra-e-reporting.md). |
