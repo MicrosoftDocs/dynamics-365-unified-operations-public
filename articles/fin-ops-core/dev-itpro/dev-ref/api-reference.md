@@ -41,7 +41,7 @@ All application classes are under Application Explorer &gt; Classes. Every appli
 
 ### System API, class, and table documentation in Microsoft Learn
 
-You can find documentation for the classes and functions listed under **System Documentation** in Application Explorer in [Microsoft Learn documentation](https://learn.microsoft.com/docs/).
+You can find documentation for the classes and functions listed under **System Documentation** in Application Explorer.
 
 ## X++ compile-time functions
 
