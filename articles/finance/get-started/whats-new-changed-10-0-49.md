@@ -77,10 +77,6 @@ The following table lists the features that are turned on by default in version 
 | Cash and bank management | Automatic vendor account matching | On by default |
 | Cash and bank management | Bank transactions page performance improvement | On by default |
 | Cash and bank management | Search for customer/vendor account ID when manual payment journal is created during bank reconciliation process | On by default |
-| Tax | Enable adding and synchronizing of tax hierarchy version in batch mode | Mandatory |
-| Tax | (India) Enable to include tax collection at source (TCS) in the "total invoice value" of an invoice. | Mandatory |
-| Tax | Date of VAT register filling: new calculation choice | Mandatory |
-| Tax | Inherit Empty tax base for outgoing tax flag in all sales tax transactions for vendor invoice journal with multiple lines when reverse charge rules are applied | Mandatory |
 | Tax | Tax exempt number validation logic update for the Create customer dialog | On by default |
 
 ## Features that became mandatory in this release
@@ -123,6 +119,10 @@ The following table lists the features that are mandatory in version 10.0.49. Th
 | Cash and bank management | (Brazil) Mandatory bank transaction description |
 | General ledger | Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation |
 | Electronic Reporting | Always take into consideration the 'Run draft' option for ER model mappings |
+| Tax | Enable adding and synchronizing of tax hierarchy version in batch mode |
+| Tax | (India) Enable to include tax collection at source (TCS) in the "total invoice value" of an invoice. |
+| Tax | Date of VAT register filling: new calculation choice | 
+| Tax | Inherit Empty tax base for outgoing tax flag in all sales tax transactions for vendor invoice journal with multiple lines when reverse charge rules are applied | 
 
 ## Features removed from feature management
 
