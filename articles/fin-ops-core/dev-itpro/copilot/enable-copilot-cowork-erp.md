@@ -19,7 +19,7 @@ ms.search.form:
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This article explains how to enable the Dynamics 365 ERP apps plugin for Microsoft 365 Copilot Cowork. After you enable the plugin, users in your organization can interact with finance and operations data through the Copilot Cowork agent experience.
+This article explains how to enable the Dynamics 365 ERP apps plugin for Microsoft Copilot Cowork. After you enable the plugin, users in your organization can interact with finance and operations data through the Copilot Cowork agent experience.
 
 The Dynamics 365 ERP apps plugin connects Copilot Cowork to your finance and operations environment through the [Dynamics 365 ERP MCP server](copilot-mcp.md). After you enable the plugin, users can ask Copilot Cowork to retrieve ERP data, perform operations, and orchestrate business workflows that span ERP systems, email, documents, and other Microsoft 365 services.
 
@@ -37,7 +37,7 @@ The Dynamics 365 ERP apps plugin requires that the Dataverse integration setting
 
 1. Go to the [Microsoft 365 Admin Center](https://admin.microsoft.com).
 1. Navigate to **Copilot** > **Settings**.
-1. Enable **Dataverse data available in Microsoft 365 Copilot**.
+1. Enable **Dataverse data available in Microsoft Copilot**.
 
 Learn more in [Enable Microsoft 365 Admin Center Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings).
 
@@ -104,7 +104,7 @@ The following table describes common issues and their resolutions.
 
 | Symptom | Cause | Resolution |
 |---|---|---|
-| Plugin shows *"Disabled by your organization's administrator"* | The Copilot Dataverse setting is disabled in the Microsoft 365 Admin Center. | Ask your Microsoft 365 tenant administrator to enable the **Dataverse data available in Microsoft 365 Copilot** setting in the [Microsoft 365 Admin Center](https://admin.microsoft.com) under **Copilot** > **Settings**. Learn more in [Enable Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings). After enabling, allow up to one hour for the change to propagate. |
+| Plugin shows *"Disabled by your organization's administrator"* | The Copilot Dataverse setting is disabled in the Microsoft 365 Admin Center. | Ask your Microsoft 365 tenant administrator to enable the **Dataverse data available in Microsoft Copilot** setting in the [Microsoft 365 Admin Center](https://admin.microsoft.com) under **Copilot** > **Settings**. Learn more in [Enable Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings). After enabling, allow up to one hour for the change to propagate. |
 | Plugin isn't visible in the Copilot Cowork catalog | Your tenant isn't enrolled in the Frontier preview program, or the Dynamics 365 ERP apps package isn't enabled for your tenant. | Verify that your tenant is enrolled in the [Frontier preview program](https://adoption.microsoft.com/en-us/copilot/frontier-program/). If the plugin is still not visible, contact Microsoft support. |
 | Plugin is available but no environments are listed | No finance and operations environments were found. | Verify that your finance and operations environment is properly provisioned, that the MCP server feature is enabled, and that you have access to the environment. |
 | Plugin shows *"Unable to connect"* after selecting an environment | The MCP server endpoint is unreachable or the Copilot Cowork client isn't authorized. | Verify that the MCP server is enabled and accessible, that you have appropriate security roles including the **Finance and Operations Basic User** role in Dataverse, and that the Cowork Client App ID (`6ab48b67-cd74-4ad4-81af-5932984589be`) is listed in **Allowed MCP Clients**. |

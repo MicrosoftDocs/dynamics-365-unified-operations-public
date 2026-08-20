@@ -57,7 +57,7 @@ There are several ways to generate a QR code. Use the method that best suits you
 
 Follow these steps to ask Copilot to generate a QR code for your JSON configuration.
 
-1. Open a Copilot chat session. For example, select the **Copilot** button in Microsoft Edge, or open Microsoft 365 Copilot from the Windows taskbar.
+1. Open a Copilot chat session. For example, select the **Copilot** button in Microsoft Edge, or open Microsoft Copilot from the Windows taskbar.
 1. Enter a prompt that resembles the following example, but that includes your specific JSON configuration.
 
     ```text

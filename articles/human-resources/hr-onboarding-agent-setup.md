@@ -83,7 +83,7 @@ To publish the Onboarding agent for HR, follow these steps:
 1. In the maker portal, select the **Agents** tab, and open **Onboarding agent for HR**.
 1. Select **Publish**.
 1. Select the **Channels** tab.
-1. Select **Teams and Microsoft 365 Copilot**, and select **Add channel**.
+1. Select **Teams and Microsoft Copilot**, and select **Add channel**.
 1. Select **Availability options**. In **Availability options**, you can also change the name and other settings.
 1. Select **Submit for admin approval**. The request is submitted to the Teams administrator for approval.
 
@@ -142,7 +142,7 @@ For information about creating and managing Dataverse teams, see [Microsoft Data
 1. In the maker portal, select the **Agents** tab, and then select **Onboarding agent for new hires**.
 1. Select **Publish**.
 1. Select the **Channels** tab.
-1. Select **Teams and Microsoft 365 Copilot**, and then select **Add channel**.
+1. Select **Teams and Microsoft Copilot**, and then select **Add channel**.
 1. Select **Availability options**. In **Availability options**, you can also change the name and other settings.
 1. Select **Submit for admin approval**. The request is submitted to the Teams administrator for approval.
 
