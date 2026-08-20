@@ -4,7 +4,7 @@ description: Learn about what is included in the Practice manager Power BI conte
 author: sericks007
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 12/02/2025
+ms.date: 08/19/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -45,7 +45,7 @@ The following table provides details about the metrics that appear on each repor
 | Hours             | <ul><li>Actual billable utilized hours vs. actual billable burden hours vs. budget hours</li><li>Actual billable utilized hours vs. actual billable burden hours by project</li><li>Actual billable utilized hours vs. actual billable burden hours by resource</li><li>Actual billable hours ratio by project</li><li>Actual billable hours ratio by resource</li></ul> |
 
 You can filter and pin the charts and tiles on all these reports to the dashboard. For more information about how to filter and pin 
-in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the Export underlying data functionality to export the underlying data that a visualization summarizes.
+in Power BI, see [Create dashboards in Power BI](/training/modules/create-dashboards-power-bi/). You can also use the **Export underlying data** functionality to export the underlying data that a visualization summarizes.
 
 ## Understanding the data model and entities
 

@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/02/2026
+ms.date: 08/19/2026
 ms.reviewer: johnmichalak
 
 ---
@@ -27,7 +27,7 @@ The **Cross-border services** report shows a summary of incoming and outgoing cr
     1. On the **Legal entity overrides** FastTab, select **Add**, and select the legal entity.
     1. On the **Legal entity overrides** FastTab select **Sales tax**, and then, in the **Sales tax direction** field, select either **Purchase** or **Sales**, depending on sales tax direction. For more information about how to create main accounts, see [Create a main account](../../general-ledger/tasks/create-main-account.md).
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**, and create a sales tax group for each country or region that a service is delivered to. As part of the setup for each group that you create, on the **General** FastTab, in the **Sales tax description** section, in the **Country/region or state** field, enter the country/region code. For more information about how to create sales tax groups, see [Set up sales tax groups and item sales tax groups](../../tax/set-up-sales-tax-groups.md).
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**, and create a sales tax group for each country or region that a service is delivered to. As part of the setup for each group that you create, on the **General** FastTab, in the **Sales tax description** section, enter the country/region code in the **Country/region or state** field. For more information about how to create sales tax groups, see [Set up sales tax groups and item sales tax groups](../../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
 
 ## Work with the Cross-border services report
 
