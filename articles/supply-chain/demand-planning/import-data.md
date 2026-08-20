@@ -4,7 +4,7 @@ description: Learn how to import data from different sources and file types, and
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 05/21/2026
+ms.date: 08/20/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -33,7 +33,7 @@ To update your data by running an existing data import profile, follow these ste
 
     The details page for the selected profile appears. It contains the following tabs:
 
-    - **Summary** – This tab provides basic information about the profile. You can edit the name and/or description to make the profile easier to identify and work with.
+    - **Summary** – This tab provides basic information about the profile. You can edit the name and description to make the profile easier to identify and work with.
     - **Configure provider** – This tab lets you view and edit the settings that are specific to the data provider that the profile uses. For information about how to work with the settings on this tab, see the [Create and manage data import profiles](#create-and-manage-data-import-profiles) section.
     - **Run schedule** – This tab lets you set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
     - **Jobs** – This tab shows a list of every run of the profile. It includes date information, the job status, the provider that was used, the table that was updated, and the number of records that were imported. Links to more information are provided.
@@ -72,7 +72,7 @@ To import directly from Supply Chain Management (and other finance and operation
 
 ### Create an import profile for importing data through Power Query
 
-To import data from a text or workbook file exported from an external system, create an import profile that uses one of the *Power Query* data providers. The provider you use must match the format of the exported file, but the procedure is the same for all providers.
+To import data from a text or workbook file exported from an external system, create an import profile that uses one of the *Power Query* data providers. Use the provider that matches the format of the exported file. The procedure is the same for all providers.
 
 1. On the navigation pane, select **Data management** > **Import**.
 1. On the Action Pane, select **New**.
@@ -83,16 +83,20 @@ To import data from a text or workbook file exported from an external system, cr
 
     - **Excel** – For information about how to select the target file, connect to Power Query, and work with data, see [Excel](/power-query/connectors/excel) in the Power Query documentation.
     - **CSV** – For information about how to select the target file, connect to Power Query, and work with data, see [Text/CSV](/power-query/connectors/text-csv) in the Power Query documentation.
-    - **Datalake** – For information about how to select the target file, connect to Power Query, and work with data, see [Datalake](/power-query/connectors/dataverse) in the Power Query documentation. A data lake must be set up as described in [Datalake setup](/power-query/connectors/data-lake-storage).
+        - **Datalake** – For information about how to select the target file, connect to Power Query, and work with data, see [Datalake](/power-query/connectors/dataverse) in the Power Query documentation. Set up the data lake as described in [Datalake setup](/power-query/connectors/data-lake-storage).
 
 1. When you finish transforming and mapping your data by using Power Query, select **Next**.
 1. On **Refresh settings**, select or clear the **Delete all data for the chosen table before import** checkbox to specify what should happen to the data that's currently in the target table in Demand planning:
 
-    - *Selected* – Delete all the data that's currently in the target table. You might use this option if, for example, the incoming data includes all the required records that are already in your table, and/or you don't select a key field for the table. This option ensures that you don't have any duplicate records, but it also deletes all the data that's currently in the target table.
-    - *Cleared* – Keep all the data that's currently in the target table. You might use this option if, for example, the incoming data is an incremental export that contains only new records, and/or you selected key fields for the table. Incoming records that have key field values that match existing records update those records, whereas incoming records that have unique key field values create new records. If your key fields aren't configured and mapped correctly, this option might create duplicate records.
+    - *Selected* – Delete all the data that's currently in the target table. Use this option if, for example, the incoming data includes all the required records that are already in your table, and you don't select a key field for the table. This option ensures that you don't have any duplicate records, but it also deletes all the data that's currently in the target table.
+    - *Cleared* – Keep all the data that's currently in the target table. Use this option if, for example, the incoming data is an incremental export that contains only new records, and you selected key fields for the table. Incoming records that have key field values that match existing records update those records, whereas incoming records that have unique key field values create new records. If you don't configure and map your key fields correctly, this option might create duplicate records.
 
 1. Select **Next**.
 1. On **Set run schedule**, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
 1. Select **Next**.
 1. On **Review and finish**, review the summary of settings that you configured, and then select **Review and finish** to create the new profile.
 1. You're returned to the **Active Import Data Profiles** page, which now shows the new profile in the list. The profile is now available, but it didn't yet run. To run it, follow the instructions in the [View and run existing data import profiles](#existing-import-profiles) section.
+
+## Troubleshoot data import issues
+
+To troubleshoot data import issues in Demand planning, see the [Demand Planning Import Profile Troubleshooting Guide](/troubleshoot/dynamics-365/supply-chain/planning/demand-planning/import-landing-page).
