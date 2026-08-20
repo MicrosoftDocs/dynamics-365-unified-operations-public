@@ -1684,145 +1684,147 @@
               href: localizations/global/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: Globalization resources
               href: ../fin-ops-core/fin-ops/lcs/globalization-resources.md?context=/dynamics365/context/finance
-            - name: Globalization services
+            - name: Regulatory updates
               items:
-                - name: Globalization services overview
-                  href: localizations/global/globalization-services-overview.md?context=/dynamics365/context/finance
-                - name: Globalization Studio workspace
+                - name: Regulatory updates overview
+                  href: localizations/global/regulatory-updates.md
+                - name: Search for regulatory updates
+                  href: localizations/global/search-for-regulatory-updates.md
+            - name: Globalization Studio workspace
+              items:
+                - name: Globalization Studio workspace overview
+                  href: localizations/global/workspace/gsw-features.md?context=/dynamics365/context/finance
+                - name: Import Electronic reporting (ER) configurations from Dataverse
+                  href: localizations/global/workspace/gsw-import-er-config-dataverse.md?context=/dynamics365/context/finance
+                - name: Upload ER configurations and Globalization features as a Dataverse solution
+                  href: localizations/global/workspace/gsw-upload-er-config.md?context=/dynamics365/context/finance
+                - name: Create a Dataverse solution using upload into repository
+                  href: localizations/global/workspace/gsw-upload-into-repository.md?context=/dynamics365/context/finance
+            - name: Electronic Invoicing
+              items:
+                - name: Electronic Invoicing overview
+                  href: localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/finance
+                - name: Electronic Invoicing administration and integration components
+                  href: localizations/global/gs-e-invoicing-administration-integration-components.md?context=/dynamics365/context/finance
+                - name: Set up Electronic Invoicing
                   items:
-                    - name: Regulatory Configuration Service merge to Globalization Studio workspace
-                      href: localizations/global/workspace/merge-rcs-to-gsw.md
-                    - name: Globalization Studio workspace features
-                      href: localizations/global/workspace/gsw-features.md
-                    - name: Import Electronic reporting (ER) configurations from Dataverse
-                      href: localizations/global/workspace/gsw-import-er-config-dataverse.md
-                    - name: Upload ER configurations and Globalization features as a Dataverse solution
-                      href: localizations/global/workspace/gsw-upload-er-config.md
-                    - name: Create a Dataverse solution using upload into repository
-                      href: localizations/global/workspace/gsw-upload-into-repository.md
-                - name: Electronic Invoicing
+                    - name: Setting up Electronic Invoicing
+                      href: localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
+                    - name: Set up Electronic Invoicing parameters
+                      href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance
+                    - name: Set up Azure Resources
+                      items:
+                        - name: Set up Azure resources for Electronic invoicing
+                          href: localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/finance
+                        - name: Create an Azure Key Vault in the Azure portal
+                          href: localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
+                        - name: Create an Azure storage account in the Azure portal
+                          href: localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md
+                        - name: Create Azure file share in the Azure portal
+                          href: localizations/global/gs-e-invoicing-create-azure-file-share.md?context=/dynamics365/context/finance
+                        - name: Configure a SharePoint connection
+                          href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
+                        - name: Create Azure resources using Azure PowerShell or ARM templates
+                          href: localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/finance
+                - name: Work with Globalization features
                   items:
-                    - name: Electronic Invoicing overview
-                      href: localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/finance
-                    - name: Electronic Invoicing administration and integration components
-                      href: localizations/global/gs-e-invoicing-administration-integration-components.md?context=/dynamics365/context/finance
-                    - name: Set up Electronic Invoicing
+                    - name: Work with Globalization features overview
+                      href: localizations/global/gs-e-invoicing-working-globalization-features.md?context=/dynamics365/context/finance
+                    - name: Import a feature from the repository
+                      href: localizations/global/gs-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
+                    - name: Create a new Globalization feature
+                      href: localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
+                    - name: Delete Globalization features
+                      href: localizations/global/gs-e-invoicing-delete-new-globalization-feature.md?context=/dynamics365/context/finance
+                    - name: Work with configurations
+                      href: localizations/global/gs-e-invoicing-work-configurations.md?context=/dynamics365/context/finance
+                    - name: Work with feature setups
+                      href: localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/finance
+                    - name: Complete and deploy a Globalization feature
+                      href: localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/finance
+                    - name: Usage management dashboard
+                      href: localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance
+                    - name: Process incoming electronic documents
                       items:
-                        - name: Setting up Electronic Invoicing
-                          href: localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
-                        - name: Set up Electronic Invoicing parameters
-                          href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance
-                        - name: Set up Azure Resources
-                          items:
-                            - name: Set up Azure resources for Electronic invoicing
-                              href: localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/finance
-                            - name: Create an Azure Key Vault in the Azure portal
-                              href: localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
-                            - name: Create an Azure storage account in the Azure portal
-                              href: localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md
-                            - name: Create Azure file share in the Azure portal
-                              href: localizations/global/gs-e-invoicing-create-azure-file-share.md
-                            - name: Configure a SharePoint connection
-                              href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
-                            - name: Create Azure resources using Azure PowerShell or ARM templates
-                              href: localizations/global/gs-e-invoicing-set-up-azure-resources.md
-                    - name: Work with Globalization features
+                        - name: Processing incoming electronic documents
+                          href: localizations/global/e-invoicing-process-incoming-electronic-documents.md?context=/dynamics365/context/finance
+                        - name: Configure an email channel
+                          href: localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/finance
+                        - name: Configure an email channel for Office 365 Exchange Online
+                          href: localizations/global/gs-e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
+                        - name: Configure a SharePoint channel
+                          href: localizations/global/e-invoicing-configure-sharepoint-channel.md
+                        - name: Use the electronic invoicing service to import vendor invoices
+                          href: localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance                              
+                    - name: Electronic Invoicing service ISV last-mile connector
+                      href: localizations/global/e-invoicing-isv-connector.md
+                - name: Work with Electronic invoicing
+                  items:
+                    - name: Submit electronic documents
+                      href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
+                    - name: Work with the Electronic documents submission log
+                      href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
+                    - name: Receive electronic documents
+                      href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
+                - name: Country/region-specific scenarios
+                  items:
+                    - name: Electronic invoicing coverage
+                      href: localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/finance
+                    - name: Availability of Electronic Invoicing features
+                      href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
+                    - name: Australia and New Zealand
+                      href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
+                    - name: Belgium
+                      href: localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/finance
+                    - name: Chile
                       items:
-                        - name: Work with Globalization features overview
-                          href: localizations/global/gs-e-invoicing-working-globalization-features.md?context=/dynamics365/context/finance
-                        - name: Import a feature from the repository
-                          href: localizations/global/gs-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
-                        - name: Create a new Globalization feature
-                          href: localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
-                        - name: Delete Globalization features
-                          href: localizations/global/gs-e-invoicing-delete-new-globalization-feature.md?context=/dynamics365/context/finance
-                        - name: Work with configurations
-                          href: localizations/global/gs-e-invoicing-work-configurations.md
-                        - name: Work with feature setups
-                          href: localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/finance
-                        - name: Complete and deploy a Globalization feature
-                          href: localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/finance
-                        - name: Usage management dashboard
-                          href: localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance
-                        - name: Process incoming electronic documents
-                          items:
-                            - name: Processing incoming electronic documents
-                              href: localizations/global/e-invoicing-process-incoming-electronic-documents.md
-                            - name: Configure an email channel
-                              href: localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/finance
-                            - name: Configure an email channel for Office 365 Exchange Online
-                              href: localizations/global/gs-e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
-                            - name: Configure a SharePoint channel
-                              href: localizations/global/e-invoicing-configure-sharepoint-channel.md
-                            - name: Use the electronic invoicing service to import vendor invoices
-                              href: localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance                              
-                        - name: Electronic Invoicing service ISV last-mile connector
-                          href: localizations/global/e-invoicing-isv-connector.md
-                    - name: Work with Electronic invoicing
+                        - name: Get started with Electronic invoicing for Chile
+                          href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
+                        - name: Vendor electronic invoice import in Chile
+                          href: localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                    - name: Colombia
+                      href: localizations/iberoamerica/ltm-colombia-electronic-invoice-configuration.md?context=/dynamics365/context/finance
+                    - name: Costa Rica
+                      href: localizations/iberoamerica/ltm-costa-rica-ei-connect-configuration.md?context=/dynamics365/context/finance                        
+                    - name: Denmark
+                      href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
+                    - name: Egypt
+                      href: localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
+                    - name: France
                       items:
-                        - name: Submit electronic documents
-                          href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
-                        - name: Work with the Electronic documents submission log
-                          href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
-                        - name: Receive electronic documents
-                          href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
-                    - name: Country/region-specific scenarios
+                        - name: Electronic invoicing via EDICOM
+                          href: localizations/france/emea-fra-einv-ereport.md?context=/dynamics365/context/finance
+                        - name: Electronic invoicing via Chorus Pro
+                          href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
+                    - name: Indonesia
+                      href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
+                    - name: Italy
+                      href: localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
+                    - name: Malaysia
+                      href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
+                    - name: Panama
+                      href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance 
+                    - name: Paraguay
+                      href: localizations//iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance                          
+                    - name: Poland
+                      href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
+                    - name: Saudi Arabia
                       items:
-                        - name: Electronic invoicing coverage
-                          href: localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/finance
-                        - name: Availability of Electronic Invoicing features
-                          href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
-                        - name: Australia and New Zealand
-                          href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
-                        - name: Belgium
-                          href: localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/finance
-                        - name: Chile
-                          items:
-                            - name: Get started with Electronic invoicing for Chile
-                              href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
-                            - name: Vendor electronic invoice import in Chile
-                              href: localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
-                        - name: Colombia
-                          href: localizations/iberoamerica/ltm-colombia-electronic-invoice-configuration.md?context=/dynamics365/context/finance
-                        - name: Costa Rica
-                          href: localizations/iberoamerica/ltm-costa-rica-ei-connect-configuration.md?context=/dynamics365/context/finance                        
-                        - name: Denmark
-                          href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
-                        - name: Egypt
-                          href: localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
-                        - name: France
-                          items:
-                            - name: Electronic invoicing via EDICOM
-                              href: localizations/france/emea-fra-einv-ereport.md?context=/dynamics365/context/finance
-                            - name: Electronic invoicing via Chorus Pro
-                              href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
-                        - name: Indonesia
-                          href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
-                        - name: Italy
-                          href: localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
-                        - name: Malaysia
-                          href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
-                        - name: Panama
-                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance 
-                        - name: Paraguay
-                          href: localizations//iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance                          
-                        - name: Poland
-                          href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-                        - name: Saudi Arabia
-                          items:
-                            - name: Get started with Electronic invoicing for Saudi Arabia
-                              href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
-                            - name: Onboarding for Electronic invoicing in Saudi Arabia
-                              href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
-                            - name: Simplified electronic invoices in Commerce for Saudi Arabia
-                              href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
-                        - name: Singapore
-                          href: localizations/singapore/apac-singapore-electronic-invoices.md?context=/dynamics365/context/finance
-                        - name: Uruguay
-                          href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
-                    - name: Electronic Invoicing FAQ
-                      href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
-                - name: Tax Calculation
+                        - name: Get started with Electronic invoicing for Saudi Arabia
+                          href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                        - name: Onboarding for Electronic invoicing in Saudi Arabia
+                          href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+                        - name: Simplified electronic invoices in Commerce for Saudi Arabia
+                          href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md?context=/dynamics365/context/finance
+                    - name: Singapore
+                      href: localizations/singapore/apac-singapore-electronic-invoices.md?context=/dynamics365/context/finance
+                    - name: Uruguay
+                      href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
+                - name: Electronic Invoicing FAQ
+                  href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
+            - name: Tax
+              items:
+                - name: Advanced Tax Calculation
                   items:
                     - name: Tax Calculation overview
                       href: localizations/global/global-tax-calcuation-service-overview.md?context=/dynamics365/context/finance
@@ -1831,23 +1833,23 @@
                         - name: Get started with Tax Calculation
                           href: localizations/global/global-get-started-with-tax-calculation-service.md?context=/dynamics365/context/finance
                         - name: Set up tax codes
-                          href: localizations/global/set-up-tax-codes.md
+                          href: localizations/global/set-up-tax-codes.md?context=/dynamics365/context/finance
                         - name: Set up tax groups
-                          href: localizations/global/set-up-tax-groups.md
+                          href: localizations/global/set-up-tax-groups.md?context=/dynamics365/context/finance
                         - name: Set up item tax groups
-                          href: localizations/global/set-up-item-tax-groups.md
+                          href: localizations/global/set-up-item-tax-groups.md?context=/dynamics365/context/finance
                         - name: Import and export tax calculations
-                          href: localizations/global/tax-calculation-import-export-feature.md
+                          href: localizations/global/tax-calculation-import-export-feature.md?context=/dynamics365/context/finance
                         - name: Set up an environment for master data lookup
                           href: localizations/global/tax-service-set-up-environment-master-data-lookup.md?context=/dynamics365/context/finance
                         - name: Sync the tax setup from the Tax Calculation feature to Finance
-                          href: localizations/global/global-master-data-sync-tax-calculation-service-finance.md
+                          href: localizations/global/global-master-data-sync-tax-calculation-service-finance.md?context=/dynamics365/context/finance
                         - name: Automate tax feature creation based on tax master data (Preview)
-                          href: localizations/global/global-automate-tax-feature-creation.md                
+                          href: localizations/global/global-automate-tax-feature-creation.md?context=/dynamics365/context/finance                
                     - name: Determination
                       items:
                         - name: Tax calculation data model
-                          href: localizations/global/tax-calculation-data-model-overview.md
+                          href: localizations/global/tax-calculation-data-model-overview.md?context=/dynamics365/context/finance
                         - name: Sales tax applicability and sales tax group determination logic
                           href: localizations/global/global-sales-tax-group-determination.md?context=/dynamics365/context/finance
                         - name: Using tax jurisdiction parameters for cash discount calculation setup
@@ -1857,51 +1859,51 @@
                         - name: Calculate tax on prices when Prices include taxes is enabled
                           href: localizations/global/global-exclude-from-tax-base-amount-calculation.md?context=/dynamics365/context/finance
                         - name: Tax calculation rounding rules
-                          href: localizations/global/tax-calculation-rounding-rules.md
+                          href: localizations/global/tax-calculation-rounding-rules.md?context=/dynamics365/context/finance
                     - name: Multiple VAT registration
                       items:
                         - name: Multiple VAT registration numbers
-                          href: localizations/global/emea-multiple-vat-registration-numbers.md
+                          href: localizations/global/emea-multiple-vat-registration-numbers.md?context=/dynamics365/context/finance
                         - name: Reporting for multiple VAT registrations
-                          href: localizations/global/emea-reporting-for-multiple-vat-registrations.md
+                          href: localizations/global/emea-reporting-for-multiple-vat-registrations.md?context=/dynamics365/context/finance
                         - name: Supported reports for countries/regions
                           items:
                             - name: Austria
-                              href: localizations/austria/emea-reporting-multiple-vat-registrations-at.md
+                              href: localizations/austria/emea-reporting-multiple-vat-registrations-at.md?context=/dynamics365/context/finance
                             - name: Belgium
-                              href: localizations/belgium/emea-reporting-multiple-vat-registrations-be.md
+                              href: localizations/belgium/emea-reporting-multiple-vat-registrations-be.md?context=/dynamics365/context/finance
                             - name: Czechia
-                              href: localizations/czech-republic/emea-reporting-multiple-vat-registrations-cz.md
+                              href: localizations/czech-republic/emea-reporting-multiple-vat-registrations-cz.md?context=/dynamics365/context/finance
                             - name: Denmark
-                              href: localizations/denmark/emea-reporting-multiple-vat-registrations-dk.md
+                              href: localizations/denmark/emea-reporting-multiple-vat-registrations-dk.md?context=/dynamics365/context/finance
                             - name: Estonia
-                              href: localizations/estonia/emea-reporting-multiple-vat-registrations-ee.md
+                              href: localizations/estonia/emea-reporting-multiple-vat-registrations-ee.md?context=/dynamics365/context/finance
                             - name: Finland
-                              href: localizations/finland/emea-reporting-multiple-vat-registrations-fi.md
+                              href: localizations/finland/emea-reporting-multiple-vat-registrations-fi.md?context=/dynamics365/context/finance
                             - name: France
-                              href: localizations/france/emea-reporting-multiple-vat-registrations-fr.md
+                              href: localizations/france/emea-reporting-multiple-vat-registrations-fr.md?context=/dynamics365/context/finance
                             - name: Germany
-                              href: localizations/germany/emea-reporting-multiple-vat-registrations-de.md
+                              href: localizations/germany/emea-reporting-multiple-vat-registrations-de.md?context=/dynamics365/context/finance
                             - name: Italy
-                              href: localizations/italy/emea-reporting-multiple-vat-registrations-it.md
+                              href: localizations/italy/emea-reporting-multiple-vat-registrations-it.md?context=/dynamics365/context/finance
                             - name: Latvia
-                              href: localizations/latvia/emea-reporting-multiple-vat-registrations-lv.md
+                              href: localizations/latvia/emea-reporting-multiple-vat-registrations-lv.md?context=/dynamics365/context/finance
                             - name: Lithuania
-                              href: localizations/lithuania/emea-reporting-multiple-vat-registrations-lt.md
+                              href: localizations/lithuania/emea-reporting-multiple-vat-registrations-lt.md?context=/dynamics365/context/finance
                             - name: Netherlands
-                              href: localizations/netherlands/emea-reporting-multiple-vat-registrations-nl.md
+                              href: localizations/netherlands/emea-reporting-multiple-vat-registrations-nl.md?context=/dynamics365/context/finance
                             - name: Norway
-                              href: localizations/norway/emea-reporting-multiple-vat-registrations-no.md
+                              href: localizations/norway/emea-reporting-multiple-vat-registrations-no.md?context=/dynamics365/context/finance
                             - name: Poland
-                              href: localizations/poland/emea-reporting-multiple-vat-registrations-pl.md
+                              href: localizations/poland/emea-reporting-multiple-vat-registrations-pl.md?context=/dynamics365/context/finance
                             - name: Spain
-                              href: localizations/spain/emea-reporting-multiple-vat-registrations-es.md
+                              href: localizations/spain/emea-reporting-multiple-vat-registrations-es.md?context=/dynamics365/context/finance
                             - name: Sweden
-                              href: localizations/sweden/emea-reporting-multiple-vat-registrations-se.md
+                              href: localizations/sweden/emea-reporting-multiple-vat-registrations-se.md?context=/dynamics365/context/finance
                             - name: Switzerland
-                              href: localizations/switzerland/emea-reporting-multiple-vat-registrations-ch.md
+                              href: localizations/switzerland/emea-reporting-multiple-vat-registrations-ch.md?context=/dynamics365/context/finance
                             - name: United Kingdom
-                              href: localizations/united-kingdom/emea-reporting-multiple-vat-registrations-uk.md
+                              href: localizations/united-kingdom/emea-reporting-multiple-vat-registrations-uk.md?context=/dynamics365/context/finance
                     - name: Enable Tax Calculation for transfer order
                       items:
                         - name: Tax feature support for transfer orders
@@ -1915,53 +1917,49 @@
                         - name: Tax integration design
                           items:
                             - name: Tax integration overview
-                              href: localizations/global/tax-integration-flow.md
+                              href: localizations/global/tax-integration-flow.md?context=/dynamics365/context/finance
                             - name: Facade, sequence, and activities in tax integration
-                              href: localizations/global/tax-integration-facade-sequence-activity.md
+                              href: localizations/global/tax-integration-facade-sequence-activity.md?context=/dynamics365/context/finance
                         - name: Integrate a new transaction
                           items:
                             - name: Entrance code to tax integration
-                              href: localizations/global/tax-integration-entrance-code.md
+                              href: localizations/global/tax-integration-entrance-code.md?context=/dynamics365/context/finance
                             - name: Implement tax integration activities
-                              href: localizations/global/tax-integration-implement-tax-integration-activities.md
+                              href: localizations/global/tax-integration-implement-tax-integration-activities.md?context=/dynamics365/context/finance
                             - name: Uptake features and functions
-                              href: localizations/global/tax-integration-uptake-features.md
+                              href: localizations/global/tax-integration-uptake-features.md?context=/dynamics365/context/finance
                             - name: Modifications on switch functions and the front end
-                              href: localizations/global/tax-integration-modification-swtich-functions-frontend.md
+                              href: localizations/global/tax-integration-modification-swtich-functions-frontend.md?context=/dynamics365/context/finance
                         - name: Add a new activity in tax integration
-                          href: localizations/global/tax-integration-how-to-add-activity.md
+                          href: localizations/global/tax-integration-how-to-add-activity.md?context=/dynamics365/context/finance
                         - name: Add data fields in tax configurations
                           href: localizations/global/tax-service-add-data-fields-tax-configurations.md?context=/dynamics365/context/finance
                         - name: Add data fields in the tax integration by using extensions
                           href: localizations/global/tax-service-add-data-fields-tax-integration-by-extension.md?context=/dynamics365/context/finance
                         - name: Customize tax configurations for master data lookup
-                          href: localizations/global/customize-tax-configurations-master-data-lookup.md
+                          href: localizations/global/customize-tax-configurations-master-data-lookup.md?context=/dynamics365/context/finance
                     - name: Troubleshooting
                       items:
-                        - name: Failed to access tax service
-                          href: localizations/tcs-troubleshooting-failed-access-tax-service.md
                         - name: Empty tax feature list in Tax calculation parameters
-                          href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
+                          href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md?context=/dynamics365/context/finance
                         - name: Tax code can't be determined
-                          href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
+                          href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md?context=/dynamics365/context/finance
                         - name: No matching result could be found
-                          href: localizations/tcs-troubleshooting-no-matching-result.md
+                          href: localizations/tcs-troubleshooting-no-matching-result.md?context=/dynamics365/context/finance
                         - name: Enable debug mode in the Tax Calculation
-                          href: localizations/tcs-troubleshooting-enable-debug-mode.md
+                          href: localizations/tcs-troubleshooting-enable-debug-mode.md?context=/dynamics365/context/finance
                     - name: Tax Calculation FAQ
                       href: localizations/global/global-tax-calcuation-service-faq.md?context=/dynamics365/context/finance
                     - name: Universal tax rate API
                       items:
                         - name: Universal tax rate API overview
-                          href: localizations/global/universal-tax-rate-api-overview.md
+                          href: localizations/global/universal-tax-rate-api-overview.md?context=/dynamics365/context/finance
                         - name: Configure tax solution provider
-                          href: localizations/global/universal-tax-rate-api-configure-tax-solution-provider.md
+                          href: localizations/global/universal-tax-rate-api-configure-tax-solution-provider.md?context=/dynamics365/context/finance
                         - name: How to set up ClientId and ClientSecret
-                          href: localizations/global/universal-tax-rate-api-how-to-setup-clientId-and-clientsecret.md
+                          href: localizations/global/universal-tax-rate-api-how-to-setup-clientId-and-clientsecret.md?context=/dynamics365/context/finance
                         - name: Use tax assessment
-                          href: localizations/global/universal-tax-rate-api-use-tax-assessment.md
-            - name: Tax
-              items:
+                          href: localizations/global/universal-tax-rate-api-use-tax-assessment.md?context=/dynamics365/context/finance
                 - name: Sales tax
                   items:
                     - name: Sales tax overview
@@ -2050,12 +2048,6 @@
                           href: general-ledger/withholding-tax-in-sales-transactions.md
                         - name: Create a withholding tax payment
                           href: general-ledger/create-a-withholding-tax-payment.md
-            - name: Regulatory updates
-              items:
-                - name: Regulatory updates overview
-                  href: localizations/global/regulatory-updates.md
-                - name: Search for regulatory updates
-                  href: localizations/global/search-for-regulatory-updates.md
             - name: Supported countries/regions
               items:
                 - name: Australia

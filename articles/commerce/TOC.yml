@@ -1690,108 +1690,80 @@
         href: localizations/global/fiscal-integration-sample-build-pipeline.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/global/certificate-profiles-for-retail-stores.md
-      - name: Regulatory configuration service (RCS)
+      - name: Supported countries/regions
         items:
-        - name: Regulatory configuration service (RCS) overview
-          href: ../finance/localizations/global/rcs-overview.md?context=/dynamics365/context/commerce
-        - name: (RCS)  Regulatory configuration service (RCS) - Globalization features
-          href: ../finance/localizations/global/rcs-globalization-feature.md?context=/dynamics365/context/commerce
-        - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
-          href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
-        - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
-          href: ../finance/localizations/global/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/commerce
-        - name: Download ER configurations to Commerce
+        - name: Austria
           items:
-          - name: Download configurations from RCS
-            href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/commerce
-          - name: Import configurations from RCS
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/commerce
-          - name: Global repository (GR)
+          - name: Fiscal registration service integration sample for Austria
+            href: localizations/dev-itpro/emea-aut-fi-sample.md
+        - name: Eastern Europe
+          items:
+          - name: Common
             items:
-            - name: Import configurations from GR
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/commerce
-            - name: Import updated versions of ER configurations
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/commerce
-            - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/commerce
-            - name: Upload configurations to GR
-              href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
-            - name: Share configurations in GR
-              href: ../finance/localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/commerce
-            - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
-      - name: Austria
-        items:
-        - name: Fiscal registration service integration sample for Austria
-          href: localizations/dev-itpro/emea-aut-fi-sample.md
-      - name: Eastern Europe
-        items:
-        - name: Common
+            - name: Advance invoices for Commerce for Eastern Europe
+              href: localizations/europe/emea-eeu-advance-invoices-for-retail.md
+            - name: Petty cash management for Commerce for Eastern Europe
+              href: localizations/europe/emea-eeu-petty-cash-for-retail.md
+            - name: Customer invoices and return sales orders in Eastern European countries/regions
+              href: localizations/europe/emea-eeu-retail-invoices.md
+          - name: Czech Republic
+            items:
+            - name: Fiscal registration service integration sample for Czech Republic
+              href: localizations/dev-itpro/emea-cze-fi-sample.md
+          - name: Poland
+            items:
+            - name: Fiscal printer integration sample for Poland
+              href: localizations/dev-itpro/emea-pol-fpi-sample.md
+            - name: Customer information management for Poland
+              href: localizations/poland/emea-pol-customer-information.md
+        - name: France
           items:
-          - name: Advance invoices for Commerce for Eastern Europe
-            href: localizations/europe/emea-eeu-advance-invoices-for-retail.md
-          - name: Petty cash management for Commerce for Eastern Europe
-            href: localizations/europe/emea-eeu-petty-cash-for-retail.md
-          - name: Customer invoices and return sales orders in Eastern European countries/regions
-            href: localizations/europe/emea-eeu-retail-invoices.md
-        - name: Czech Republic
+          - name: Cash register functionality
+            href: localizations/france/emea-fra-cash-registers.md
+          - name: Fiscal archive and data integrity verification
+            href: localizations/france/emea-fra-fiscal-archive.md
+        - name: Germany
           items:
-          - name: Fiscal registration service integration sample for Czech Republic
-            href: localizations/dev-itpro/emea-cze-fi-sample.md
-        - name: Poland
+          - name: Fiscal registration service integration sample for Germany
+            href: localizations/dev-itpro/emea-deu-fi-sample.md
+        - name: India
           items:
-          - name: Fiscal printer integration sample for Poland
-            href: localizations/dev-itpro/emea-pol-fpi-sample.md
-          - name: Customer information management for Poland
-            href: localizations/poland/emea-pol-customer-information.md
-      - name: France
-        items:
-        - name: Cash register functionality
-          href: localizations/france/emea-fra-cash-registers.md
-        - name: Fiscal archive and data integrity verification
-          href: localizations/france/emea-fra-fiscal-archive.md
-      - name: Germany
-        items:
-        - name: Fiscal registration service integration sample for Germany
-          href: localizations/dev-itpro/emea-deu-fi-sample.md
-      - name: India
-        items:
-        - name: Goods and Services Tax (GST) integration for cash registers
-          href: localizations/india/apac-ind-cash-registers.md
-        - name: Deployment guidelines for cash registers
-          href: localizations/india/apac-ind-loc-deployment-guidelines.md
-        - name: Support for upgrade and N-1 for India
-          href: localizations/india/apac-ind-n-1-for-india.md
-        - name: Generate QR codes and print them on receipts for India
-          href: localizations/india/ind-generate-qr-code-print-receipt.md
-        - name: Goods and Services Tax (GST) integration for e-commerce sites
-          href: localizations/india/apac-ind-e-commerce.md
-      - name: Italy
-        items:
-        - name: Fiscal printer integration sample for Italy
-          href: localizations/dev-itpro/emea-ita-fpi-sample.md
-        - name: Customer information management for Italy
-          href: localizations/italy/emea-ita-customer-information.md
-      - name: Mexico
-        items:
-        - name: Global CFDI e-invoices for Mexico
-          href: ../finance/localizations/iberoamerica/latam-mex-global-cfdi-3-3.md?context=/dynamics365/context/commerce
-      - name: Norway
-        items:
-        - name: Cash register functionality
-          href: localizations/norway/emea-nor-cash-registers.md
-        - name: Deployment guidelines for cash registers
-          href: localizations/dev-itpro/emea-nor-fi-deployment.md
-      - name: Saudi Arabia
-        items:
-        - name: Generate and submit simplified electronic invoices for Saudi Arabia
-          href: localizations/mea/emea-sau-simplified-e-invoices.md
-      - name: Sweden
-        items:
-        - name: Cash register functionality
-          href: localizations/sweden/emea-swe-cash-registers.md
-        - name: Control unit integration sample for Sweden
-          href: localizations/dev-itpro/emea-swe-fi-sample.md
+          - name: Goods and Services Tax (GST) integration for cash registers
+            href: localizations/india/apac-ind-cash-registers.md
+          - name: Deployment guidelines for cash registers
+            href: localizations/india/apac-ind-loc-deployment-guidelines.md
+          - name: Support for upgrade and N-1 for India
+            href: localizations/india/apac-ind-n-1-for-india.md
+          - name: Generate QR codes and print them on receipts for India
+            href: localizations/india/ind-generate-qr-code-print-receipt.md
+          - name: Goods and Services Tax (GST) integration for e-commerce sites
+            href: localizations/india/apac-ind-e-commerce.md
+        - name: Italy
+          items:
+          - name: Fiscal printer integration sample for Italy
+            href: localizations/dev-itpro/emea-ita-fpi-sample.md
+          - name: Customer information management for Italy
+            href: localizations/italy/emea-ita-customer-information.md
+        - name: Mexico
+          items:
+          - name: Global CFDI e-invoices for Mexico
+            href: ../finance/localizations/iberoamerica/latam-mex-global-cfdi-3-3.md?context=/dynamics365/context/commerce
+        - name: Norway
+          items:
+          - name: Cash register functionality
+            href: localizations/norway/emea-nor-cash-registers.md
+          - name: Deployment guidelines for cash registers
+            href: localizations/dev-itpro/emea-nor-fi-deployment.md
+        - name: Saudi Arabia
+          items:
+          - name: Generate and submit simplified electronic invoices for Saudi Arabia
+            href: localizations/mea/emea-sau-simplified-e-invoices.md
+        - name: Sweden
+          items:
+          - name: Cash register functionality
+            href: localizations/sweden/emea-swe-cash-registers.md
+          - name: Control unit integration sample for Sweden
+            href: localizations/dev-itpro/emea-swe-fi-sample.md
     - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI
