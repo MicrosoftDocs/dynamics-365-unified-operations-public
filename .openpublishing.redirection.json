@@ -28764,6 +28764,11 @@
       "source_path": "articles/commerce/localizations/france/emea-fra-fi-deployment.md",
       "redirect_url": "/dynamics365/commerce/localizations/france/emea-fra-cash-registers",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/inventory/archive-inventory-transactions.md",
+      "redirect_url": "/dynamics365/supply-chain/inventory/inventory-transaction-consolidation",
+      "redirect_document_id": false
     }
   ]
 
