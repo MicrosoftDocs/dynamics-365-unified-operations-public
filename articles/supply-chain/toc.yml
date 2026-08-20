@@ -1766,7 +1766,7 @@
       - name: Consolidate inventory transactions
         items:
         - name: Consolidate inventory transactions
-          href: inventory/archive-inventory-transactions.md
+          href: inventory/inventory-transaction-consolidation.md
         - name: Consolidate inventory transactions FAQ
           href: inventory/inventory-transactions-consolidation-faq.md
       - name: Inventory Visibility Add-in
