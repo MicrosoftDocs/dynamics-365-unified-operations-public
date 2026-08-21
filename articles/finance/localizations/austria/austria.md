@@ -1,6 +1,6 @@
 ---
 title: Austria overview
-description: Access an overview of Dynamics 365 Finance functionality that is specific to Austria, including overviews on depreciation, material fees, and purchase duties.
+description: Access an overview of Dynamics 365 Finance functionality specific to Austria, including overviews on depreciation, material fees, and purchase duties.
 author: liza-golub
 ms.author: egolub
 ms.topic: overview
@@ -19,11 +19,11 @@ This article includes information and links to resources that can help you set u
 
 ## Depreciation
 
-For companies in Austria, depreciation for additional acquisitions and acquisition adjustments is calculated according to specific rules. Learn more in [Half-year depreciation on additional acquisitions for Austria](emea-aut-half-year-depreciation.md).
+For companies in Austria, you calculate depreciation for additional acquisitions and acquisition adjustments according to specific rules. Learn more in [Half-year depreciation on additional acquisitions for Austria](emea-aut-half-year-depreciation.md).
 
 ## Packing material fees
 
-In Austria, packing materials are divided into various categories, for example, household and commercial. The government provides tax rates for packing materials in each category. The category that packing material belongs to depends on size and the products that the packaging was used for. Packing material fees are calculated and reported, however the fees aren't considered taxes that must be paid to an authority, which means that ledger transactions are not posted automatically. Learn more in [Packing material fee calculation for Austria](emea-aut-packing-material-fee-calculation.md).
+In Austria, you divide packing materials into various categories, such as household and commercial. The government provides tax rates for packing materials in each category. The category that packing material belongs to depends on size and the products that the packaging was used for. You calculate and report packing material fees, but these fees aren't considered taxes that must be paid to an authority, which means that ledger transactions aren't posted automatically. Learn more in [Packing material fee calculation for Austria](emea-aut-packing-material-fee-calculation.md).
 
 ## Purchase duties
 
@@ -31,11 +31,11 @@ A purchase duty is a tax on incoming sales tax that is calculated as a percentag
 
 The calculation of purchase duties is based on sales tax codes. To include a sales tax code in the purchase duty calculation, select the **Purchase duty** check box on the **Saxes tax codes** page. 
 
-You can specify purchase duty settings on the **Tax setup** menu on the **Purchase duty** page. You can set the duty identifier (for example, **KU**), description, tax authority, and accounts that will be used for posting. Duty account is a balance account where the liability for the purchase duty is registered. Cost account is a profit and loss account that the costs are posted to and a settle account where settlement transactions will be generated.
+You can specify purchase duty settings on the **Tax setup** menu on the **Purchase duty** page. You can set the duty identifier (for example, **KU**), description, tax authority, and accounts that will be used for posting. The duty account is a balance account where you register the liability for the purchase duty. The cost account is a profit and loss account where you post the costs and a settle account where you generate settlement transactions.
 
 To specify the value of the purchase duty, click **Purchase duty value** to open the **Purchase duty value** page. You can specify the purchase duty percentage (for example **0,30**) for the required period.
 
-Purchase duties are generated when you settle and post sales taxes. You can generate the **Purchase duty** report from the **Purchase duty reporting** menu.
+You generate purchase duties when you settle and post sales taxes. You can generate the **Purchase duty** report from the **Purchase duty reporting** menu.
 
 ## Reports for Austria
 

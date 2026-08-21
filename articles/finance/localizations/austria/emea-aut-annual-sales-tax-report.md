@@ -1,5 +1,5 @@
 ---
-title: Generate an Annual sales tax report U1
+title: Generate an annual sales tax report U1
 description: Learn how to generate an annual sales tax report U1 for Austria in PDF format.
 author: liza-golub
 ms.author: egolub
@@ -12,11 +12,11 @@ ms.search.region: Global
 
 ---
 
-# Generate an Annual sales tax report U1
+# Generate an annual sales tax report U1
 
 [!include[banner](../../includes/banner.md)]
 
-This article describes how to generate an Annual sales tax report U1 for Austria in PDF format. 
+This article describes how to generate an annual sales tax report U1 for Austria in PDF format. 
 
 The Austrian annual sales tax report, Form U1 (Umsatzsteuererklärung), is mandated under the Austrian Value Added Tax Act 1994 (UStG 1994) and serves as a legally required summary of a business’s VAT-relevant transactions for the fiscal year.
 
@@ -25,7 +25,7 @@ This information is printed on the Umsatzsteuererklärung (U1) .pdf form that is
 
 ## Set up sales tax reporting codes
 
-Use the sales tax reporting codes to generate an Annual sales tax report U1 for Austria. 
+Use the sales tax reporting codes to generate an annual sales tax report U1 for Austria. 
 The four-digit sales tax reporting code syntax is based on the structure of the VAT statement. 
 In the VAT statement, amounts are displayed in the Tax base amounts and Tax amounts columns. 
 Sales tax reporting codes that begin with 10 are included in the tax boxes in the Tax base amounts column. 
@@ -57,8 +57,8 @@ The format follows the standard Austrian Steuernummer pattern: 12-345/6789.
 
 To generate the annual sales tax report U1, follow these steps:
 
-1. Go to **Tax** > **Inquires and reports** > **Sales tax reports** > **Annual sales tax (Austria)**.
-1. In the **Austrian annual sales tax report** dialog box, on the **Parameters** FastTab, set the following fields.
+1. Go to **Tax** > **Inquiries and reports** > **Sales tax reports** > **Annual sales tax (Austria)**.
+1. In the **Austrian annual sales tax report** dialog box, on the **Parameters** FastTab, set the following fields:
 
    |Field|Description|
    |------------|-----------|
@@ -68,5 +68,5 @@ To generate the annual sales tax report U1, follow these steps:
    |PDF file|Select or enter the file path and file name of the U1 form on which the sales tax information is printed.|
 
 1. Select the **OK** button to generate the .xfdf file.
-1. Open the generated .xfdf file using the PDF form from Austrian government website for the Form U1 (Umsatzsteuererklärung) U1.
+1. Open the generated .xfdf file using the PDF form from the Austrian government website for the Form U1 (Umsatzsteuererklärung) U1.
 
