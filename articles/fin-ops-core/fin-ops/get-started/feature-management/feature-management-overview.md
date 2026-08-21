@@ -123,7 +123,7 @@ After a feature is disabled, a message appears below the **Learn more** link in 
 
 ## Features that must be enabled
 
-Sometimes, a critical feature is delivered that must be enabled automatically when you do an update. These features are enabled automatically on the date that is specified in the **Enable date** field. For these features, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates the future date when the feature will be enabled. It appears every time that you select the feature in the feature list.
+Sometimes when you apply an update, a critical feature is added and must be enabled automatically. These features are enabled automatically on the date that is specified in the **Enable date** field. For these features, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates the future date when the feature will be enabled. It appears every time that you select the feature in the feature list.
 
 ## Enable all features
 
@@ -163,7 +163,7 @@ If you turn off the configuration key, the feature isn't removed from the featur
 
 ## Data entities
 
-A data entity that is named **Feature management** lets you export the Feature management settings from one environment and then import them into another environment. This entity updates only existing features. The business logic in the entity also helps guarantee that the same rules that are used on the **Feature management** workspace are applied when the import is done. For example, you can't override a mandatory feature setting by removing the date during import.
+A data entity with the name **Feature management** lets you export the Feature management settings from one environment and then import them into another environment. This entity updates only existing features. The business logic in the entity also helps guarantee that the same rules that are used on the **Feature management** workspace are applied when the import is done. For example, you can't override a mandatory feature setting by removing the date during import.
 
 The following examples describe what occurs when you use the **Feature management** entity to import data.
 
@@ -176,41 +176,44 @@ The following examples describe what occurs when you use the **Feature managemen
 
 ## Feature management and flighting
 
-**Feature management** lets you control the features that are delivered in each release. Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers. **Feature management** doesn't control the flighting of any features.
+**Feature management** lets you control the features that are delivered in each update from Microsoft. Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers. **Feature management** doesn't control the flighting of any features.
 
-## Using Feature management to turn on ISV features or custom features
+## Using Feature management to turn on features from external service providers or custom features
 
-**Feature management** is currently unavailable for features from independent software vendors (ISVs) and custom features. However, Microsoft is adding more functionality to enhance **Feature management**. After those enhancements are completed, Microsoft makes **Feature management** available to all features and provide instructions for updating your features to use it.
+**Feature management** is currently unavailable for features from external software providers and custom features. However, Microsoft adds more functionality to enhance **Feature management**. After those enhancements are completed, Microsoft makes **Feature management** available to all features and provide instructions for updating your features to use it.
 
 ## Frequently asked questions (FAQ)
 
 ### When are features added, removed, or changed? 
-Features are added, removed, and changed through code changes by the owning product teams. Environments must be updated to receive those changes.
+Features are added, removed, and changed through code changes that Microsoft and partners make available in updates. Environments must be updated to receive those changes.
 
 ### Does a feature become mandatory automatically? 
 No, a feature doesn't become mandatory automatically. The owning product team must make a code change.
 
 ### Why isn't there a specific 'mandatory-enabled date'? 
-Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. As a result, specific dates are difficult to determine. 
+Update release timing is variable, environment update timing is variable, and organizations can opt to skip some updates. As a result, specific dates are difficult to determine. 
 
 ### Where's the documentation for features that are mandatory? 
-This documentation comes from each Dynamics 365 application team. Often, these features are mentioned in [Updates to client feature states](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) or [Removed or deprecated features](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+
+Microsoft announces new capabilities in the release plans. Each release plan entry has a field that contains a link to there related documentation on Microsoft Learn. Often, the mandatory features are mentioned in [Updates to client feature states](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) or [Removed or deprecated features](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### Is there an in-product notification or signal that a feature is going to be mandatory-enabled? 
 A notification mechanism related to making a feature mandatory doesn't exist today.
 
-### Do features ever get enabled without the customer knowing about it? 
-Yes, features can be enabled without the customer's knowledge in the following situations:
+### Do features ever get enabled without notifications? 
+Yes, features can be enabled without the organization's knowledge in the following situations:
 - A feature is moved to **On by default**. In this state, the feature can be disabled. 
 - A feature is updated to **Mandatory**. This change only occurs in combination with a major release. Critical features might, by exception, be moved to **Mandatory** at any update.
 
-### What is feature flighting and how does it relate to feature management? 
-Feature flights are real-time on or off switches that Microsoft controls. They're separate from the customer control provided by Feature Management. 
-- Private preview features aren't listed in **Feature management** until they're flighted on. In production, the customer needs to agree to be part of a special program for that to occur.
-- Public preview and released (generally available) features are listed in **Feature management** unless they're flighted off. Flighting a feature off is considered as a last resort option for product teams if a critical issue is found and would usually be a per customer operation.
+### What is feature flighting and how does it relate to feature management?
 
-### Do features ever get flighted off without the customer knowing about it? 
-Yes, if a feature is impacting the functioning of an environment that doesn't have a functional impact then they can be enabled by default.
+Feature flights are real-time on or off switches that Microsoft controls. They're separate from the control that Feature Management provides administrators.  
+
+- Private preview features aren't listed in **Feature management** until they're flighted on. In production environments, the organization must agree to be part of a special program for that to occur.
+- Public preview and released (generally available) features are listed in **Feature management** unless they're flighted off. Flighting a feature off is used rarely by Microsoft and only used if a critical issue is found.  
+
+### Do features ever get flighted off without notifications? 
+Yes, if a feature affects the functioning of an environment that doesn't have a functional impact, then they can be enabled by default.
 
 ### How can feature enablement be checked in code?
 Use the **isFeatureEnabled** method on the **FeatureStateProvider** class, passing it an instance of the feature class. Example:
@@ -231,8 +234,11 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 ```
 
 ### What is the IFeatureLifecycle implemented by some feature classes?
-IFeatureLifecycle is a Microsoft-internal mechanism for indicating the feature lifecycle stage. 
-Features can be:
+
+Microsoft uses IFeatureLifecycle to indicate the lifecycle stage for a feature.
+
+Features can have the following property values:
+
 - `PrivatePreview` - Needs a flight to be visible.
 - `PublicPreview` - Shown by default but with a warning that the feature is in preview.
 - `Released` - Fully released.

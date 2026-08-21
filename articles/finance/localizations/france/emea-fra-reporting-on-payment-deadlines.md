@@ -17,29 +17,27 @@ ms.search.region: France
 
 This article explains how to configure and generate reports on payment deadlines for customer and vendor invoices for legal entities in France using Microsoft Dynamics 365 Finance.
 
-In France, legal entities are required to report on payment practices as part of their annual management report, in accordance with the French Commercial Code. 
-This regulation aims to increase transparency and reduce late payments in commercial transactions. 
-Companies must disclose the number and total value of invoices paid late, both to suppliers and by customers, and provide a breakdown by delay intervals. 
+In France, legal entities must report on payment practices as part of their annual management report, in accordance with the French Commercial Code. This regulation aims to increase transparency and reduce late payments in commercial transactions. Companies must disclose the number and total value of invoices paid late, both to suppliers and by customers, and provide a breakdown by delay intervals. 
 
-In Dynamics 365 Finance users can generate the following reports in Excel format.
+In Dynamics 365 Finance, you can generate the following reports in Excel format:
 
 - Invoices received with late payment during the financial year.
-- Invoices received which have not been paid by the closing date of the financial year in which the term expired.
+- Invoices received that haven't been paid by the closing date of the financial year in which the term expired.
 - Invoices issued with late payment during the financial year.
-- Invoices issued which have not been paid by the closing date of the financial year in which the term expired.
+- Invoices issued that haven't been paid by the closing date of the financial year in which the term expired.
 
-## Prepare your environment to report on payment deadlines for customer and vendor invoices for France
+## Prepare your environment
 
-To use the **Reporting on payment deadlines for customer and vendor invoices** for France in Dynamics 365 Finance, you need to import the following Electronic reporting (ER) configurations.
+To use the **Reporting on payment deadlines for customer and vendor invoices** for France in Dynamics 365 Finance, you need to import the following Electronic reporting (ER) configurations:
 
 | ER configuration name                                       | Configuration type | Description |
 |-------------------------------------------------------------|--------------------|-------------|
 | Statistics on invoices                                      | Model              | Common reporting model designed to provide a view of payment practices, particularly in relation to late payments and outstanding invoices. |
-| Statistics on invoices model mapping                        | Model mapping      | This model mapping defines how data sources within Microsoft Dynamics 365 Finance are connected to the reporting model used for analyzing payment practices.|
+| Statistics on invoices model mapping                        | Model mapping      | This model mapping defines how data sources within Microsoft Dynamics 365 Finance connect to the reporting model used for analyzing payment practices.|
 | AP Invoices delayed in payment | Format (exporting) | Invoices received with late payment during the financial year. |
-| AP Overdue invoices | Format (exporting) | Invoices received which have not been paid by the closing date of the financial year in which the term expired.|
+| AP Overdue invoices | Format (exporting) | Invoices received that haven't been paid by the closing date of the financial year in which the term expired.|
 | AR Invoices delayed in payment | Format (exporting) | Invoices issued with late payment during the financial year.|
-| AR Overdue invoices | Format (exporting) | Invoices issued which have not been paid by the closing date of the financial year in which the term expired. |
+| AR Overdue invoices | Format (exporting) | Invoices issued that haven't been paid by the closing date of the financial year in which the term expired. |
 
 Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 

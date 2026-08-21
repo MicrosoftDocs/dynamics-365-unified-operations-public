@@ -16,17 +16,17 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to redirect category and product pages to canonical URLs by extending modules using the Microsoft Dynamics 365 Commerce online SDK.
+Learn how to redirect category and product pages to canonical URLs by extending modules using the Microsoft Dynamics 365 Commerce online SDK.
 
 ## Importance of canonical URLs 
 
-Dynamics 365 Commerce category and product pages can be accessed through URLs that include unnecessary or random segments. While these URLs are technically valid, they can lead to:
+Category and product pages in Dynamics 365 Commerce can be accessed through URLs that include unnecessary or random segments. While these URLs are technically valid, they can lead to:
 
-- Duplicate content issues.
-- Poor search engine optimization (SEO) performance.
-- Confusing user experiences.
+- Duplicate content issues
+- Poor search engine optimization (SEO) performance
+- Confusing user experiences
 
-Redirecting to canonical URLs helps maintain a consistent structure, improves search engine indexing, and enhances overall site usability.   
+Redirecting to canonical URLs keeps your site structure consistent, improves search engine indexing, and makes the page easier to use.   
 
 ## Prerequisites
 
@@ -43,14 +43,14 @@ A canonical URL redirect works in the following ways:
 
 If a user accesses a product page using a noncanonical URL, the Commerce page module should detect this action and redirect the user to the correct canonical URL. 
 
-In the following URL example, the custom module logic detects the extraneous `<unnecessaryparameter>` segment of the requested URL and issues a redirect to the clean, canonical URL. 
+In the following example, the custom module logic detects the extraneous `<unnecessaryparameter>` segment of the requested URL and issues a redirect to the clean, canonical URL. 
 
 - **Requested URL**: `https://www.fabrikam.com/womens-clothing/<unnecessaryparameter>/45678.p` 
 - **Canonical URL**: `https://www.fabrikam.com/womens-clothing/45678.p` 
 
 ## Implement a custom redirect within a module 
 
-To implement a custom redirect within a module, you add custom redirect logic that throws an instance of the HttpRedirectException class at the appropriate location in the module. This action halts the rendering of subsequent modules and initiates a redirect to the URL specified in the **Location** property of the HttpRedirectException class. 
+To implement a custom redirect within a module, add custom redirect logic that throws an instance of the HttpRedirectException class at the appropriate location in the module. This action halts the rendering of subsequent modules and initiates a redirect to the URL specified in the **Location** property of the HttpRedirectException class. 
 
 ## Example
 
@@ -58,7 +58,9 @@ All e-commerce site pages hosted on the Dynamics 365 Commerce domain include a c
 
 In this example, the category page template uses the category page summary module to generate its canonical URL. The category page summary module references the default page summary module view file. Adding conditional redirect logic to the default page summary module ensures that the redirect occurs wherever category pages are accessed. 
 
-**Step 1 - Customize the default page summary module**: In the default-page-summary-extension.tsx file (src\modules\default-page-summery-extension\default-page-summary-extension.tsx), we customize the default page summary module to implement custom logic that throws the HttpRedirectException error, as shown in the following code sample.
+### Step 1: Customize the default page summary module
+
+In the default-page-summary-extension.tsx file (src\modules\default-page-summery-extension\default-page-summary-extension.tsx), customize the default page summary module to implement custom logic that throws the HttpRedirectException error, as shown in the following code sample.
 
 ```typescript
 import { HttpRedirectException } from '@msdyn365-commerce/core-internal';
@@ -71,7 +73,9 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 });
 ```
 
-**Step 2 - Customize the category page summary module**: In the category-page-summary-extension.definition.json file (src\modules\category-page-summary-extension\category-page-summary-extension.definition.json), we customize the category page summary module and update the module definition to point to the custom view, as shown in the following code sample.
+### Step 2: Customize the category page summary module
+
+In the category-page-summary-extension.definition.json file (src\modules\category-page-summary-extension\category-page-summary-extension.definition.json), we customize the category page summary module and update the module definition to point to the custom view, as shown in the following code sample.
 
 ```json
 "module": {
@@ -79,24 +83,26 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 	}
 ```
 
-**Step 3 - Edit the category page template**:  In the category page template in Dynamics 365 Commerce site builder, we substitute references to the category page summary module with references to the custom category page summary extension module. 
+### Step 3: Edit the category page template
+
+In the category page template in Dynamics 365 Commerce site builder, substitute references to the category page summary module with references to the custom category page summary extension module. 
 
 > [!NOTE]
 > When you implement bulk redirects alongside canonical redirects, take care to avoid creating infinite redirect loops. 
 
 ## Additional resources
 
-[Module library overview](../starter-kit-overview.md)
+- [Module library overview](../starter-kit-overview.md)
 
-[Page summary module](../dev-itpro/page-summary-module.md)
+- [Page summary module](../dev-itpro/page-summary-module.md)
 
-[Meta tags module](../dev-itpro/metatags-module.md)
+- [Meta tags module](../dev-itpro/metatags-module.md)
 
-[Default page module](../dev-itpro/default-page-module.md)
+- [Default page module](../dev-itpro/default-page-module.md)
 
-[Extend module definition](extend-module-definition.md)
+- [Extend module definition](extend-module-definition.md)
 
-[Create new module](create-new-module.md)
+- [Create new module](create-new-module.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

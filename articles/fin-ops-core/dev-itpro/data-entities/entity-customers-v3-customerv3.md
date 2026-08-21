@@ -12,7 +12,7 @@ ms.collection: FastTrack
 
 # Customers V3 entity
 
-The **Customers V3** entity supports creating and updating customers; and includes all the fields for a typical customer. It also includes about 80 fields that the other customer entities support.
+The **Customers V3** entity supports creating and updating customers; and includes all the fields for a typical customer. It also includes about 80 fields that the other customer entities don't support.
 
 ## When to use this entity
 
@@ -43,7 +43,7 @@ Use the **Customers V3** entity when the scenario includes approximately 80 fiel
 | CUSTOMERGROUPID | Specifies a foreign key to the **Customer groups** entity. This field is required. |
 | DEFAULTDIMENSIONDISPLAYVALUE | Updating this field requires configuring the **Default dimension format** using the **Financial dimension configuration for integrating applications** menu item**.** |
 | INVOICEACCOUNT | Specifies a foreign key that is a self-relation to another customer. The customer referenced by **INVOICEACCOUNT** has to exist before this field can be updated. |
-| NAME | Specifies the customer's name if **PARTYTYPE** is **Organization.** It's ignored if **PARTYTYPE** is **Person**. This field is required. |
+| ORGANIZATIONNAME | Specifies the customer's name if **PARTYTYPE** is **Organization.** It's ignored if **PARTYTYPE** is **Person**. This field is required. The corresponding field for the **Customer definitions** entity is **NAME**. |
 | PARTYTYPE | Specifies the type of the customer. The allowed values are **Organization** and **Person**. If this field isn't specified, the default value is **Organization**. |
 | PAYMENTMETHOD | Specifies a foreign key to the **Customer payment method** entity. |
 | PAYMENTTERMS | Specifies a foreign key to the **Terms of payment** entity. |

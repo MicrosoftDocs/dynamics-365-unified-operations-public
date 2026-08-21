@@ -28,7 +28,7 @@ Before you can use the functionality for commission settlement on payments, the 
 - The primary address of the legal entity must be in Italy.
 - The **Commission settlement on payments** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## <a name="default-commission-settlement-period">Set up the default commission settlement method
+## <a name="default-commission-settlement-period"></a>Set up the default commission settlement method
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Accounts receivable parameters** page, on the **Settlement** tab, on the **Other** FastTab, in the **Commission settlement** field, select the default commission settlement method that is used when you create a sales order:
