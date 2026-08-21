@@ -30,7 +30,7 @@ class BusinessLogic1
 }
 ```
 
-You can now augment the functionality of the **doSomething** method inside an extension class by reusing the same method name. An extension class must belong to a package that references the model where the augmented class is defined.
+You can now augment the functionality of the **doSomething** method inside an extension class by reusing the same method name. The augmented class must be visible to the extension class, typically as the extension class belongs to a package that references the model where the augmented class is defined.
 
 ```xpp
 [ExtensionOf(classStr(BusinessLogic1))]
