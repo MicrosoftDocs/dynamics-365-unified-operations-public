@@ -1,6 +1,6 @@
 ---
 title: Inventory costing FAQ
-description: Access answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
+description: Access answers to some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
 author: AndersEvenGirke
 ms.author: aevengir
 ms.reviewer: kamaybac
@@ -23,92 +23,98 @@ This article answers some frequently asked questions about inventory costing in 
 
 ### Why is inventory closing required?
 
-The inventory close process matches and settles inventory issue transactions (resulting from sales, production order issue, transfer journals, and other transactions) to their receipt transactions (such as purchase, counting journals, production receipts, and other transactions). The process uses the inventory valuation method that you define in the item's *item model group* and considers the item's active financial *product*, *storage*, and *tracking* dimensions.
+The inventory close process matches and settles inventory issue transactions (resulting from sales, production order issues, transfer journals, and other transactions) with their receipt transactions (such as purchase receipts, counting journals, production receipts, and other transactions). The process uses the inventory valuation method that you define in the item's *item model group* and considers the item's active financial *product*, *storage*, and *tracking* dimensions.
 
-You perform inventory closing for periodic inventory valuation methods (FIFO, LIFO, weighted average, and other methods). It ensures that the financial statements (income statement, balance sheet, trial balance, and other statements) reflect appropriate inventory values and cost of goods sold (COGS) based on all receipts and issues up to the period end.
+You perform inventory closing for periodic inventory valuation methods (FIFO, LIFO, weighted average, and other methods). It ensures that financial statements (income statement, balance sheet, trial balance, and other statements) reflect appropriate inventory values and cost of goods sold (COGS) based on all receipts and issues up to the end of the period.
 
-You should run inventory closing regularly for a specific period. Once you close the inventory for that period, you can't post any transactions in that period.  
+You should run inventory closing regularly for a specific period. After you close inventory for a period, you can't post any transactions in that period.  
 
-The frequency of inventory close runs varies by company. However, transaction volume should determine how often you decide to run inventory close. In general, most companies run inventory closing as part of their month-end closing and reconciliation procedures, and before any audit activities.
+The frequency of inventory close runs varies by company. Transaction volume should determine how often you run inventory closing. In general, most companies run inventory closing as part of their month-end closing and reconciliation procedures, and before audit activities.
 
-To balance out the transactional load, run inventory closing regularly, once inventory transactions are finalized for a period, typically at a monthly frequency.  
+To balance transactional load, run inventory closing regularly, after inventory transactions are finalized for a period, typically on a monthly basis.  
 
-You must run inventory closing if you plan to change the valuation model in *item model group* of an item from periodic to perpetual, or if you plan to archive old inventory transactions.
+You must run inventory closing if you plan to change the valuation model in the *item model group* of an item from periodic to perpetual, or if you plan to archive old inventory transactions.
 
 ### Why is inventory recalculation required?
 
-If you need to adjust inventory and the general ledger during a month or other inventory period, run inventory recalculation instead of inventory close. Inventory recalculation adjusts the inventory transactions according to the applicable valuation method but doesn't settle inventory transactions. Like inventory closing, you can only run inventory recalculation for periodic inventory valuation methods.
+If you need to adjust inventory and the general ledger during a month or another inventory period, run inventory recalculation instead of inventory close. Inventory recalculation adjusts inventory transactions according to the applicable valuation method but doesn't settle inventory transactions. It is inventory recalculation is available only for periodic inventory valuation methods.
 
-During inventory recalculation, the system adjusts on-hand and inventory transactions. These tasks affect any ledger account that's linked to the original inventory transaction.
+During inventory recalculation, the system adjusts on-hand inventory and inventory transactions. These adjustments affect any ledger account that's linked to the original inventory transaction.
 
-Inventory recalculation doesn't close any period, unlike inventory closing. You can still post transactions in the period for which you already ran inventory recalculation.
+Inventory recalculation doesn't close a period, unlike inventory closing. You can still post transactions in a period for which you already ran inventory recalculation.
 
-The frequency of inventory recalculation runs depends on your business requirements. You can run recalculations daily, weekly, or monthly to adjust the on-hand and inventory transactions and reflect the accurate cost of the items based on their valuation method. However, running inventory recalculation is an optional procedure and not a prerequisite to inventory closing. Run inventory closing monthly. Once you run closing, the system automatically cancels all the recalculations you ran for dates after the closing date. Running many recalculations or running scheduled recalculations has a performance impact.  
+The frequency of inventory recalculation runs depends on your business requirements. You can run recalculations daily, weekly, or monthly to adjust on-hand inventory and inventory transactions and reflect accurate item costs based on the valuation method. However, inventory recalculation is optional and isn't a prerequisite for inventory closing. Run inventory closing monthly. After you run closing, the system automatically cancels all recalculations for dates after the closing date. Running frequent or scheduled recalculations can affect system performance.  
 
 ### What are the differences between inventory closing and inventory recalculation?
 
-These are the key differences between inventory closing and inventory recalculation:
+The key differences between inventory closing and inventory recalculation are as follows:
 
 - Inventory closing matches and settles transactions, whereas inventory recalculation adjusts transactions.  
 - Inventory closing closes the period for which you run it, so you can't post any further transactions in that period. Inventory recalculation doesn't restrict inventory postings for any period.
-- You must run inventory closing before making any modifications in an item's *item model group* and before archiving old transactions. Besides, you should regularly run inventory closing at periodic intervals to reduce the system load for high transactional volume. Inventory recalculation isn't a mandatory process.
+- You must run inventory closing before making any modifications in an item's *item model group* or archiving old transactions. You should also run inventory closing regularly to reduce system load in environments with high transaction volumes. Inventory recalculation isn't a mandatory process.
 
 ### Is it mandatory to run inventory closing or recalculation?
 
-You must run inventory closing before making any modifications in an item's *item model group* and before archiving old inventory transactions. Besides, you should regularly run inventory closing at periodic intervals to reduce the system load for high transactional volume. Inventory closing closes the settled inventory transactions, thereby excluding the closed transactions from further inventory processes. Inventory recalculation isn't a mandatory process. You can run it according to your business requirements—either daily, weekly, or monthly—to adjust the inventory transactions for reporting the accurate cost of the items based on the valuation method. Run inventory closing monthly for best performance.
+You must run inventory closing before making any modifications in an item's *item model group* or archiving old inventory transactions. You should also run inventory closing regularly to reduce system load in environments with high transaction volumes. Inventory closing settles inventory transactions and excludes them from further inventory processes. 
+
+Inventory recalculation isn't a mandatory process. You can run it according to your business requirements—either daily, weekly, or monthly—to adjust the inventory transactions for reporting the accurate cost of the items based on the valuation method. Run inventory closing monthly for best performance.
 
 ### What is inventory pre-closing?
 
-Pre-closing replaces the *activate closing of non-financial transfer* functionality that was available in older versions of Supply Chain Management. Pre-closing finalizes non-financial transfers; this finalization allows the inventory closing process to safely ignore them, since closing and recalculation only affect financial transactions. *Non-financial transfers* are inventory transactions that have no effect on inventory costing, like inventory movement journal between two warehouses in the same site if warehouse isn't a financial dimension. You can explicitly run pre-closing if required as per the business requirements. Moreover, the closing and recalculation procedure always implicitly runs pre-closing for the non-financial transfers (among the transfer orders) against which markings are present.
+Pre-closing replaces the *Activate closing of non-financial transfer* functionality that was available in earlier versions of Supply Chain Management. Pre-closing finalizes non-financial transfers so that the inventory closing process can safely ignore them, because closing and recalculation affect only financial transactions. 
+
+*Non-financial transfers* are inventory transactions that don't affect inventory costing, such as inventory movement journals between two warehouses in the same site when the warehouse isn't a financial dimension. 
+
+You can explicitly run pre-closing based on business requirements. In addition, the closing and recalculation processes always implicitly run pre-closing for non-financial transfers (among transfer orders) that have markings.
 
 ### What is inventory reversal? How is it different from canceling a closing?
 
-If you need to revert the settlements or adjustments made by a closing or recalculation voucher, select the respective voucher and then select **Reverse**. This action posts equal but opposite settlements or adjustments in the ledger, balancing the changes made by the respective closing or recalculation voucher.  
+If you need to revert the settlements or adjustments made by a closing or recalculation voucher, select the voucher and then select **Reverse**. This action posts equal but opposite settlements or adjustments in the ledger, balancing the changes made by the respective closing or recalculation voucher.  
 
-Use inventory reversal when you need to post any transaction in an already closed inventory period. In that case, the closing voucher is reversed, which opens the period and allows you to post transactions.
+Use inventory reversal when you need to post transactions in a closed inventory period. Reversing the closing voucher reopens the period and allows you to post transactions.
 
 Inventory reversal and cancellation refer to the same operation and can be used interchangeably.  
 
 ### What is inventory revaluation?
 
-For perpetual valuation models like moving average or standard cost, use inventory revaluation to revalue the on-hand inventory. Inventory revaluation works similarly to inventory recalculation. Use inventory revaluation to adjust the recorded value of inventory items to reflect changes in cost, market conditions, accounting corrections, or policy updates. This adjustment can either increase (appreciate) or decrease (depreciate) the value of inventory on hand in the system and general ledger.
+For perpetual valuation models such as moving average or standard cost, use inventory revaluation to revalue the on-hand inventory. Inventory revaluation works similarly to inventory recalculation. Use it to adjust the recorded value of inventory items to reflect changes in cost, market conditions, accounting corrections, or policy updates. This adjustment can increase (appreciate) or decrease (depreciate) the value of on hand inventory in both the system and the general ledger.
 
-### What is the typical duration required to complete the inventory closing and recalculation process, and what factors impact the run time?
+### What is the typical duration required to complete the inventory closing and recalculation process, and what factors affect the run time?
 
-The duration required to complete the inventory closing and recalculation process can vary widely depending on several factors. It can range from a few minutes to several hours for most environments. Overall run time depends on:
+The time required to complete the inventory closing and recalculation process varies widely. For most environments, it can range from a few minutes to several hours. Overall run time depends on the following factors:
 
 - Volume of inventory transactions (issues versus receipts)
-- Type of inventory transactions (source documents)
+- Types of inventory transactions (source documents)
 - Length of the period
 - Number of items and inventory dimensions (site, warehouse, location, and so on)
 - Real-time resource utilization and availability
-- Parallel processes being run at the same time, number of active sessions, and so on
+- Parallel processes and the number of active sessions
 
-Because the closing process can run from few minutes to several hours, schedule the process during off-peak hours to avoid any business disruptions.
+Because the process can run from few minutes to several hours, schedule inventory closing during off-peak hours to avoid any business disruptions.
 
 ### Why does my inventory closing or recalculation take so long? Can I speed it up?
 
 As discussed previously, there's no fixed duration for inventory closing or recalculation. The overall run depends on the count of open or unsettled transactions, the nature of source documents, resource availability, parallel processing, parallel user sessions, and other factors. The following recommendations help you analyze the closing process:
 
-- **Track progress of the run** – You can always track the progress of the closing or recalculation voucher from the **Closing and adjustment** page. Select the specific voucher and go to *Progress details*. You can find the bundles that have completed running and the ones that are still pending.
+- **Track progress of the run**: You can always track the progress of the closing or recalculation voucher from the **Closing and adjustment** page. Select the specific voucher and go to *Progress details*. You can find the bundles that completed running and the ones that are still pending.
 
-- **Run inventory closing regularly** – If you have a high volume of transactions and don't run inventory closing regularly at periodic intervals, you might experience performance issues as the count of open or unsettled transactions gradually increases in the system. Hence, run inventory closing regularly (preferably at monthly intervals) for customers with a high volume of transactions for better performance. You can check the time stamp for the most recent closing run. You can view this information from the **Closing and adjustment** page by filtering the **Type** as *Closing*. If you didn't run closing recently and have items that use any periodic valuation methods in your inventory, proceed with closing the inventory for the period nearest to your recalculation period.
+- **Run inventory closing regularly**: If you have a high volume of transactions and don't run inventory closing regularly at periodic intervals, you might experience performance issues as the count of open or unsettled transactions gradually increases in the system. Hence, run inventory closing regularly (preferably at monthly intervals) for customers with a high volume of transactions for better performance. You can check the time stamp for the most recent closing run. You can view this information from the **Closing and adjustment** page by filtering the **Type** as *Closing*. If you didn't run closing recently and have items that use any periodic valuation methods in your inventory, proceed with closing the inventory for the period nearest to your recalculation period.
 
-- **Count of issue and receipt transactions** – During the adjustment process, issue transactions are adjusted with the receipt transactions. A large difference in the count of issue transactions and receipt transactions can impact the overall performance because the system might not find the required number of receipts to settle the large quantity of issues.
+- **Count of issue and receipt transactions**: During the adjustment process, issue transactions are adjusted with the receipt transactions. A large difference in the count of issue transactions and receipt transactions can impact the overall performance because the system might not find the required number of receipts to settle the large quantity of issues.
 
-- **Circularity in inventory transactions** – Overall run time largely depends on your inventory transactions and the nature of your source documents. BOM journals are one of the source documents that consume a considerable amount of time in calculating the cost of the final product when the BOM structure is quite complicated, with lots of depth, consumption of scrap products, circular links in production and consumption, and other factors. If you have inventory transactions that pertain to any BOM journal, you can perform a basic BOM circularity check and eliminate any circular link. BOM circularity doesn't throw errors in the closing or recalculation process because the process has a specific design to handle such scenarios. However, BOM circularity increases the overall run time to a large extent. The same situation applies to transfer order circularity. Consider the scenario when there's a transfer from site 1 to site 2 and then again from site 2 to site 1. To improve performance, reduce and eliminate the possibility of any such circularity in BOM journals or transfer orders. For more information about BOM circularity check strategies, refer to the other FAQs in this article.
+- **Circularity in inventory transactions**: Overall run time largely depends on your inventory transactions and the nature of your source documents. BOM journals are one of the source documents used to calculate the cost of the final product. They can take a considerable amount of time to process when the BOM structure is complex. Factors such as deep BOM hierarchies, scrap consumption, circular production and consumption links, and other dependencies contribute to this complexity. If you have inventory transactions that pertain to any BOM journal, you can perform a basic BOM circularity check and eliminate any circular link. BOM circularity doesn't throw errors in the closing or recalculation process because the process has a specific design to handle such scenarios. However, BOM circularity increases the overall run time to a large extent. The same situation applies to transfer order circularity. Consider the scenario when there's a transfer from site 1 to site 2 and then again from site 2 to site 1. To improve performance, reduce and eliminate the possibility of any such circularity in BOM journals or transfer orders. For more information about BOM circularity check strategies, refer to the other FAQs in this article.
 
-- **Review inventory performance parameters** – You can configure a few parameters to control the performance of closing and recalculation. Here's how to optimize these parameters:
+- **Review inventory performance parameters**: You can configure a few parameters to control the performance of closing and recalculation. Here's how to optimize these parameters:
 
     Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. In the **Closing** section, make the following settings:
 
-    - **Extra Batch Helpers** – Set the number of extra threads to spawn based on thread pool availability to aid the running of the respective batch job. The default value for this parameter is *8*. You can increase this value based on the availability of your system resources. Learn more in [batch capacity](../../fin-ops-core/dev-itpro/sysadmin/batch-capacity.md).
-    - **Number of items per bundle** – Set the maximum number of items to keep in a bundle. The default value is *40*. An item is always present in a single bundle, and a single thread or task always processes a bundle. If your transactions have many items and a relatively comparable number of transactions per item, keep this value at *40*. If your inventory transactions don't have many items or instead have a large number of transactions for only a few items, set this value to *10*. Modify these values before starting the closing or recalculation process, not during the run.
+    - **Extra Batch Helpers**: Set the number of extra threads to spawn based on thread pool availability to aid the running of the respective batch job. The default value for this parameter is *8*. You can increase this value based on the availability of your system resources. Learn more in [batch capacity](../../fin-ops-core/dev-itpro/sysadmin/batch-capacity.md).
+    - **Number of items per bundle**: Set the maximum number of items to keep in a bundle. The default value is *40*. An item is always present in a single bundle, and a single thread or task always processes a bundle. If your transactions have many items and a relatively comparable number of transactions per item, keep this value at *40*. If your inventory transactions don't have many items or instead have a large number of transactions for only a few items, set this value to *10*. Modify these values before starting the closing or recalculation process, not during the run.
 
     In the **Closing** or **Recalculation** dialog, make the following settings:
 
-    - **Maximum number of iterations allowed per item** – Pertains to cost calculations for circular links and is a trade-off between performance and accuracy. It determines the number of iterations for which the closing or recalculation process runs. Every iteration adjusts the cost of the item involved in the circular BOM. Hence, the more iterations, the better the cost accuracy for those items in the circular BOM. But you can't practically run this process infinitely, so the default iteration value is *100*. If your business transactions don't have many circular inventory transactions, or if you're fine with some approximate cost adjustments, consider reducing this value to reduce the overall run time.
-    - **Minimum amount allowed to be expensed** – Determines the minimum adjustment amount to be expensed while processing inventory transactions in every iteration. This parameter is again a tradeoff, like the previous one, but instead, performance is reversely proportional to the value. A lower value contributes to poorer performance but more accurate results. The default value is *1.00* in the accounting currency. Most companies don't modify this value, but it's up to your business requirements to determine an optimized value.
+    - **Maximum number of iterations allowed per item**: Pertains to cost calculations for circular links and is a trade-off between performance and accuracy. It determines the number of iterations for which the closing or recalculation process runs. Every iteration adjusts the cost of the item involved in the circular BOM. Hence, the more iterations, the better the cost accuracy for those items in the circular BOM. But you can't practically run this process infinitely, so the default iteration value is *100*. If your business transactions don't have many circular inventory transactions, or if you're fine with some approximate cost adjustments, consider reducing this value to reduce the overall run time.
+    - **Minimum amount allowed to be expensed**: Determines the minimum adjustment amount to be expensed while processing inventory transactions in every iteration. This parameter is again a tradeoff, like the previous one, but instead, performance is reversely proportional to the value. A lower value contributes to poorer performance but more accurate results. The default value is *1.00* in the accounting currency. Most companies don't modify this value, but it's up to your business requirements to determine an optimized value.
 
     To improve the closing or recalculation performance, eliminate any circular links from your inventory transactions.
 
@@ -116,20 +122,20 @@ If you feel that the operation is running for an unusual amount of time, contact
 
 ### How do I check circularity in BOM journals?
 
-To check circularity in BOM journals, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** \> **Bill of materials**. Enter the required values in **Level of circularity** and **Circularity check strategy**. The **Circularity check strategy** option works in conjunction with the **Level of circularity** option, so start by looking at the **Level of circularity** setting.
+To check circularity in BOM journals, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** \> **Bill of materials**. Enter the required values in **Level of circularity** and **Circularity check strategy**. The **Circularity check strategy** option works with the **Level of circularity** option, so start by looking at the **Level of circularity** setting.
 
 The **Level of circularity** setting determines when the system checks for circularity in BOM structures. A circular BOM exists when an item is defined as a component of itself within a BOM structure. A BOM is considered circular regardless of whether it's a first-level component or a lower-level component in the BOM structure that is referenced. Set it to one of the following values:
 
-- *Line* – The circularity check occurs when you save the BOM line. This setting prevents you from adding a BOM line when the component item causes BOM circularity.
-- *Never* – The system doesn't check for circularity. You can manually check for circularity errors by using the **Check** function on the **BOM line** page. If circularity exists, the error is also reported when you perform cost rollup and planning calculations.
-- *BOM* – The circularity check occurs when you do any of the following activities: close the **Bills of materials** page, use the **Check** function on the **Bills of materials** page, or associate a BOM with a BOM version.
+- *Line*: The circularity check occurs when you save the BOM line. This setting prevents you from adding a BOM line when the component item causes BOM circularity.
+- *Never*: The system doesn't check for circularity. You can manually check for circularity errors by using the **Check** function on the **BOM line** page. If circularity exists, the error is also reported when you perform cost rollup and planning calculations.
+- *BOM*: The circularity check occurs when you do any of the following activities: Close the **Bills of materials** page, use the **Check** function on the **Bills of materials** page, or associate a BOM with a BOM version.
 
 The controls that prevent a circular BOM don't apply to a production BOM or a production order. You can manually add a component or consume a component that creates BOM circularity. When the component consumption reflects BOM circularity, the inventory closing process might not calculate a sensible cost for a manufactured item that has an inventory valuation method using actual cost. In such an occurrence, the use of a manufacturing indirect cost of the surcharge type can also cause problems in inventory closing, because the calculated cost can grow exponentially.
 
 For the **Circularity check** field, choose one of the following values:
 
-- *Optimize for low complexity* – Requests data from storage as it's needed for the circularity check. For single-level or simple BOM structures, performance is better when you select this option.
-- *Optimize for high complexity* – The system caches the BOM structure and all its dependencies before processing the circularity check. When processing a BOM with many lines, it might take a moment for the processing to start since it's loading the information into cache. However, the *Optimize for high complexity* option can significantly improve overall performance of the circularity check. This improvement is especially true if you're running a task that performs a circularity check on multiple BOMs or if you're doing a consistency check on the bill of materials.
+- *Optimize for low complexity*: Requests data from storage as needed for the circularity check. For single-level or simple BOM structures, performance is better when you select this option.
+- *Optimize for high complexity*: The system caches the BOM structure and all its dependencies before processing the circularity check. When processing a BOM with many lines, it might take a moment for the processing to start since it's loading the information into cache. However, the *Optimize for high complexity* option can significantly improve overall performance of the circularity check. This improvement is especially true if you're running a task that performs a circularity check on multiple BOMs or if you're doing a consistency check on the bill of materials.
 
 You can use the following SQL query to fetch the items with circular links directly from the database. You could also convert this query to an X++ script and run it.
 
@@ -155,7 +161,7 @@ Here are some best practices for running inventory closings and recalculations:
 
 ### How can I analyze the issue and receipt transactions as part of the inventory closing and recalculation process?
 
-Inventory closings and recalculations settle and adjust issue transactions to receipt transactions. If there aren't enough receipt transactions, the process temporarily stores many issue transactions in memory during the adjustment process. Run inventory closings or recalculations when the number of issue and receipt transactions is comparable. The inventory value report can provide a summarized view of issue versus receipt transactions.  
+Inventory closing and recalculation settle and adjust issue transactions against receipt transactions. If there aren't enough receipt transactions, the process temporarily stores many issue transactions in memory during the adjustment process. Run inventory closings or recalculations when the number of issue and receipt transactions is comparable. The inventory value report can provide a summarized view of issue versus receipt transactions.  
 
 You can also get this information directly from the database by running the following SQL query, which you could also convert to an X++ script.
 
@@ -174,27 +180,27 @@ order by ITEMID, STATUSISSUE, countOfOpenTrans desc;
 
 ### What are the best practices for running inventory reversals?
 
-Here are some best practices for running inventory reversals:
-
-- Run inventory reversals during off-peak business hours to make better use of system resources.  
-- Always run inventory reversals one at a time. Running multiple reversals at the same time might lead to errors (such as *duplicate reverse is not allowed*) or even ledger data corruption.
-- If your reversal run is very slow, check the number of batch helpers you're using. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. The **Extra batch helpers** field in the **Closing** section decides the number of parallel threads to use for the reversal task, based on thread pool availability. The recommended and default number of extra batch helpers is *8*. If your reversal run is very slow, consider increasing this value based on the real-time system resources availability.
+- To make better use of system resources, run inventory reversals during off-peak business hours.  
+- Run inventory reversals one at a time to avoid errors such as *duplicate reverse is not allowed* or even ledger data corruption.
+- If your reversal run is slow, check the number of batch helpers you're using. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. The **Extra batch helpers** field in the **Closing** section decides the number of parallel threads to use for the reversal task, based on thread pool availability. The recommended and default number of extra batch helpers is *8*. If your reversal run is very slow, consider increasing this value based on the real-time system resources availability.
 
 ### Why did my inventory closing or recalculation end in an error? What should I do?
 
-Several issues can cause inventory closings, recalculations, or reversals to end in an error. To find the exact error message, check the **Batch jobs** page for the related batch job and the **Closing and adjustment** page after you select the specific voucher, then view *log* details. If you can't fix these issues, contact Microsoft Support or your partner.
+Inventory closing, recalculation, or reversal can fail due to several reasons. To find the exact error message, check the **Batch jobs** page for the related batch job and the **Closing and adjustment** page after you select the specific voucher, then view *log* details. 
 
-Possible reasons for errors include:  
+Common causes include:  
 
-- **Over utilization of system resources** – Because these operations consume a considerable amount of resources, try running these operations during off-peak business hours and minimizing other parallel and background processes and user sessions. Also check whether the closing parameters match your business requirements and resource availability. For more information, see the other sections of this article.
+- **Over utilization of system resources**: Because these operations consume a considerable amount of resources, try running these operations during off-peak business hours and minimizing other parallel and background processes and user sessions. Also check whether the closing parameters match your business requirements and resource availability. For more information, see the other sections of this article.
 
-- **SQL deadlock or availability issues** – Most of the SQL issues are transient. Retry the operation after selecting the specific voucher and selecting **Resume Calculation**. If the issue persists, check for the exact error from the **Batch jobs** or **Closing and adjustment** page and share them with your partner.
+- **SQL deadlock or availability issues**: Most of the SQL issues are transient. Retry the operation after selecting the specific voucher and selecting **Resume Calculation**. If the issue persists, check for the exact error from the **Batch jobs** or **Closing and adjustment** page and share them with your partner.
 
-- **Business data corruption and inconsistencies such as rounding or currency issues** – Run a consistency check for the relevant item. Go to **System administration** \> **Periodic tasks** \> **Database** \> **Consistency check**. In the **Consistency check** dialog, set **Module** to *Inventory management*, and set **Check/Fix** to *Check* or *Fix error* (depending or your business requirements). Then expand the **Item** tree and select the checkboxes for **Inventory transactions** and **On-hand**. Then open the **More** menu (three dots) and select *Dialog*. Use the dialog to filter for the exact item you want to check. If required, you can run the check as a batch process in the background. You can view the final check/fix logs from the batch job logs or in the notification panel. If the consistency check doesn't highlight or fix any issues, use the **Potential conflicts - inventory and general ledger** and **Inventory value report storage** reports to drill down further into the discrepancies and inventory postings respectively.
+- **Business data corruption and inconsistencies such as rounding or currency issues**: Run a consistency check for the relevant item. Go to **System administration** \> **Periodic tasks** \> **Database** \> **Consistency check**. In the **Consistency check** dialog, set **Module** to *Inventory management*, and set **Check/Fix** to *Check* or *Fix error* (depending or your business requirements). Then expand the **Item** tree and select the checkboxes for **Inventory transactions** and **On-hand**. Then open the **More** menu (three dots) and select *Dialog*. Use the dialog to filter for the exact item you want to check. If required, you can run the check as a batch process in the background. You can view the final check/fix logs from the batch job logs or in the notification panel. If the consistency check doesn't highlight or fix any issues, use the **Potential conflicts - inventory and general ledger** and **Inventory value report storage** reports to drill down further into the discrepancies and inventory postings respectively.
 
 - **Incorrect business practices**
 
-- **Configuration issues like ledger, account, project, or warehouse setup**
+- **Configuration issues such as ledger, account, project, or warehouse setup**
+
+If you can't fix these issues, contact Microsoft Support or your partner.
 
 ### When should I use the on-hand inventory adjustment on the Closing and adjustments page?
 
@@ -234,7 +240,7 @@ Learn more in [Running average cost price](running-average-cost-price.md)
 
 ### Why is item cost inflated?
 
-The running average cost can be inflated when you price several inventory issue transactions that don't have enough receipt transactions. This issue can occur when you enable both **Include physical value** and **Physical negative inventory** for the item model group. If you disable **Include physical value** but still see this issue, make sure that you have also disabled **Physical negative inventory** for the item model group.
+The running average cost can be inflated when you price several inventory issue transactions that don't have enough receipt transactions. This issue can occur when you enable both **Include physical value** and **Physical negative inventory** for the item model group. If you disable **Include physical value** but still see this issue, disable **Physical negative inventory** for the item model group.
 
 Learn more in [Avoiding pricing amplification](running-average-cost-price.md#avoid-pricing-amp).
 
@@ -315,11 +321,11 @@ No, you can't enable the **Financial inventory** option for the **Location** dim
 
 ### Should I enable the Use warehouse management processes option for the storage dimension group?
 
-If you think that you might want to use the warehouse management processes (WMS) features in the future, you should enable the **Use warehouse management processes** option. After you save a storage dimension group, you can no longer change the setting of the **Use warehouse management processes** option for it. If you decide to use warehouse management processes later, you'll have to create a new warehouse where the option is enabled. There's no automated process that you can use to move all the inventory from one warehouse to another warehouse, or to copy related configurations to a new warehouse.
+If you think that you might want to use the warehouse management processes (WMS) features in the future, you should enable the **Use warehouse management processes** option. After you save a storage dimension group, you can no longer change the setting of the **Use warehouse management processes** option for it. If you decide to use warehouse management processes later, you have to create a new warehouse where the option is enabled. There’s no automated way to move all inventory from one warehouse to another or to copy related configurations to a new warehouse.
 
 ### Can I enable the Use warehouse management processes for the storage dimension group even if I'm not planning to use warehouse management processes (WMS)?
 
-Yes, even if you don't plan to use the warehouse management processes (WMS) features, you can enable the **Use warehouse management processes** option for the storage dimension group. To create and process transactions, you need to complete the minimum configuration, such as reservation hierarchies and unit sequence groups. However, the settings for WMS are generally ignored when you manually process picking lists, packing slips, and product receipts (for example, on the sales order and purchase order pages).
+Yes, even if you don't plan to use the warehouse management processes (WMS) features, you can enable the **Use warehouse management processes** option for the storage dimension group. To create and process transactions, you need to complete the minimum configuration, such as reservation hierarchies and unit sequence groups. However, the settings for WMS are ignored when you manually process picking lists, packing slips, and product receipts (for example, on the sales order and purchase order pages).
 
 ### When should I enable the Physical inventory option for a storage or tracking dimension group?
 
@@ -349,7 +355,7 @@ Typically, you enable the **Post physical inventory** option when you also enabl
 
 ### When should I enable the post Financial inventory option?
 
-Typically, you enable the **Post financial inventory** option when you also enable the **Stocked product** option. Use this option in coordination with parameters in Accounts payable, Accounts receivable, and Production control that specify that the financial update should create a voucher. You typically enable this option when you want the ledger to be updated whenever you financially update the inventory (for example, by invoicing sales orders and purchase orders, or ending a production order). If Supply Chain Management isn't your system of record for financials, you might want to disable this option.
+Typically, you enable the **Post financial inventory** option when you also enable the **Stocked product** option. Use this option in coordination with parameters in Accounts payable, Accounts receivable, and Production control that specify that the financial update should create a voucher. You typically enable this option to update the ledger. The ledger updates when you financially update inventory, such as when you invoice sales orders or purchase orders, or end a production order. If Supply Chain Management isn't your system of record for financials, you might want to disable this option.
 
 ### When should I enable the Post to Deferred Revenue Account on Sales Delivery option?
 
@@ -357,7 +363,7 @@ Use the **Post to Deferred Revenue Account on Sales Delivery** option to indicat
 
 ### When should I enable the Accrue liability on product receipt option?
 
-In most organizations, enable the **Accrue liability on product receipt** option for all item model groups, regardless of whether you have a stocked product or a not-stocked product. Use this option to post an accrual to the general ledger, based on product receipt price. Because there's typically a delay between posting of the product receipt for a purchase order and posting of the invoice, most organizations must recognize the liability on the balance sheet to comply with local regulations such as Generally Accepted Accounting Practices (GAAP). If Supply Chain Management isn't your system of record for financials, you might want to disable this option. If your organization uses procurement categories on purchase orders, you can control the accrual requirement by enabling the **Accrue purchase expense on receipt** option for the category policy rule on the **Purchasing policies** page.
+In most organizations, enable the **Accrue liability on product receipt** option for all item model groups, regardless of whether you have a stocked product or a not-stocked product. Use this option to post an accrual to the general ledger, based on product receipt price. There’s typically a delay between posting a product receipt for a purchase order and posting the invoice. Because of this delay, most organizations must recognize the liability on the balance sheet to comply with local regulations, such as Generally Accepted Accounting Practices (GAAP). If Supply Chain Management isn't your system of record for financials, you might want to disable this option. If your organization uses procurement categories on purchase orders, you can control the accrual requirement by enabling the **Accrue purchase expense on receipt** option for the category policy rule on the **Purchasing policies** page.
 
 ### How can I prevent a user from posting a purchase order product receipt if a receipt registration isn't yet posted?
 
@@ -377,7 +383,7 @@ You can prevent a user from posting a sales order invoice if a sales order packi
 
 ### Can I prevent items that are registered from being sold?
 
-When you register an item in your inventory in Supply Chain Management, the quantity is physically available to be issued in the system. If items that you registered but didn't yet receive shouldn't be available to be issued to sales orders or production orders, for example, consider using the inventory status, inventory blocking, quality orders, quarantine orders, or reservations features to manage the business process.
+When you register an item in your inventory in Supply Chain Management, the quantity is physically available to be issued in the system. f items that you’ve registered but not yet received shouldn’t be available for sales orders or production orders, consider using inventory status, inventory blocking, quality orders, quarantine orders, or reservations to manage the business process.
 
 ## Production costing
 
@@ -400,7 +406,7 @@ Select the best option based on your reporting, reconciliation, and operational 
 
 ### Can I capture resource details in the BOM or formula?
 
-You can capture resource details only in a route operation. Although you can create a service item to represent a resource and assign a cost to increase the cost calculation for a finished good, we don't typically recommend this approach. Instead, create a simple route that has one line to track the resource costs, and configure the operation so that it's automatically consumed at either the start or the end of the production order.
+You can capture resource details only in a route operation. Although you can create a service item to represent a resource and assign a cost to increase the cost calculation for a finished good, we don't typically recommend this approach. Instead, create a route that has one line to track the resource costs, and configure the operation so that it's automatically consumed at either the start or the end of the production order.
 
 ### Can I view the calculation details if I manually enter the cost?
 
@@ -408,7 +414,7 @@ No. If you manually enter the price on the **Item price** page, the **View calcu
 
 ### Does the system calculate variances on a production order when I manually enter the cost?
 
-Yes, the system calculates variances when you manually enter a standard cost. However, when you manually enter a standard cost instead of calculating it, all material, route, and indirect cost consumptions in the production order are considered a substitution variance. If there are additional variances, such as consumption of extra materials or labor, the system also records them as variances from the production BOM. Therefore, always run a calculation for items that have a BOM, route, or indirect costs.
+Yes, the system calculates variances when you manually enter a standard cost. However, when you manually enter a standard cost instead of calculating it, all material, route, and indirect cost consumptions in the production order are considered as a substitution variance. If there are additional variances, such as consumption of extra materials or labor, the system also records them as variances from the production BOM. Therefore, always run a calculation for items that have a BOM, route, or indirect costs.
 
 ### How can I carry the variances from a subproduction order to the parent production order?
 
@@ -432,7 +438,7 @@ Add charges to a transfer order to add costs. The charges code defines the debit
 
 ### Can I treat variances differently, based on the site or warehouse?
 
-There's no option to configure variance accounts by site. When you use standard costing for a released product, you can select the main account that is used for standard cost variance postings on the **Posting** page. You can select to configure the accounts for one item, a group of items, or all items. You can also configure one cost group, a group of cost groups, or all cost groups.
+You can’t configure variance accounts by site. When you use standard costing for a released product, you can select the main account that is used for standard cost variance postings on the **Posting** page. You can select to configure the accounts for one item, a group of items, or all items. You can also configure one cost group, a group of cost groups, or all cost groups.
 
 ### Can I separate variances that are the result of currency exchange rates from other types of variances?
 
@@ -510,7 +516,7 @@ If you use a periodic costing model such as FIFO, LIFO, or weighted average, and
 
 ### What happens during the inventory close when I use marking?
 
-When you mark receipts and issues, the inventory close settles the marked transactions together. When marking is used to create the settlement, the **Principle** field on the **Settlement** page is set to *Marking*. If you mark a transaction before physically or financially updating it, the issue uses the marked receipt's cost instead of the running average cost. If you mark the transactions after the financial update, the inventory close and adjustment process adjusts the issue cost so that it matches the receipt cost.
+When you mark receipts and issues, the inventory close settles the marked transactions together. When marking is used to create the settlement, the **Principle** field on the **Settlement** page is set to *Marking*. If you mark a transaction before physically or financially updating it, the issue uses the marked receipt's cost instead of the running average cost. If you mark the transactions after the financial update, the inventory close and adjustment process adjust the issue cost so that it matches the receipt cost.
 
 ### Can I manually mark transactions when I use standard costing or moving average?
 
@@ -518,15 +524,15 @@ No, you can't manually mark receipts or issues when you use standard costing or 
 
 ### How does marking affect the profit and loss statement?
 
-When you mark an issue transaction against a receipt, the cost for the issue matches the selected receipt. When you physically and financially post the issue, the posting affects the **Cost of goods sold, delivered** and **Cost of goods sold, invoiced** accounts that you specify in the inventory posting profile. If you mark a transaction after the physical or financial update, the *Inventory close and adjustment* process creates an adjustment that has a matching voucher that adjusts the **Cost of goods sold, invoiced** account and offsets to the account that you specify for **Cost of units, invoiced** (inventory).
+When you mark an issue transaction against a receipt, the cost for the issue matches the selected receipt. When you physically and financially post the issue, the posting affects the **Cost of goods sold, delivered** and **Cost of goods sold, invoiced** accounts that you specify in the inventory posting profile. If you mark a transaction after the physical or financial update, the *Inventory close and adjustment* process create an adjustment that has a matching voucher that adjusts the **Cost of goods sold, invoiced** account and offsets to the account that you specify for **Cost of units, invoiced** (inventory).
 
 ### How does marking affect master planning?
 
 The **Standard update** tab on the **Master planning parameters** page includes a field named **Update marking**. The option that you select is used when you firm a planned order that master planning generates. The following options are available:
 
-- *No* – The system doesn't perform any marking.
-- *Standard* – The system marks receipts against issues according to the pegging. A requirement order is marked against a fulfillment order. If some quantity remains on the fulfillment, the fulfillment order isn't marked.
-- *Extended* – The system marks both the requirement orders and fulfillment orders, regardless of whether any quantity remains open on the fulfillment order.
+- *No*: The system doesn't perform any marking.
+- *Standard*: The system marks receipts against issues according to the pegging. A requirement order is marked against a fulfillment order. If some quantity remains on the fulfillment, the fulfillment order isn't marked.
+- *Extended*: The system marks both the requirement orders and fulfillment orders, regardless of whether any quantity remains open on the fulfillment order.
 
 ## <a name="negative-inventory"></a>Negative inventory
 
@@ -574,7 +580,7 @@ When you generate a packing slip for a sales order that includes items in an ite
 
 ### Should I use a not-stocked product or a category (sales category or procurement category)?
 
-The choice between a not-stocked product and a category depends on your specific business requirements. Not-stocked products generally offer more control over default values, such as quantities and prices on purchase orders and sales orders. Therefore, use not-stocked products in scenarios where you purchase or sell the same product or service more than once. Categories are useful in scenarios where the price, items, descriptions, and so on are inconsistent from transaction to transaction. You can also use categories on any product to help classify the type of product that you're selling or purchasing.
+The choice between a not-stocked product and a category depends on your specific business requirements. Not-stocked products generally offer more control over default values, such as quantities and prices on purchase orders and sales orders. Therefore, use not-stocked products in scenarios where you purchase or sell the same product or service more than once. Categories are useful in scenarios where the price, items, descriptions, and so on, are inconsistent from transaction to transaction. You can also use categories on any product to help classify the type of product that you're selling or purchasing.
 
 ## Service items
 
@@ -674,11 +680,11 @@ You can use calculation groups with any item, regardless of the item model group
 
 ### When should I use a planned costing version?
 
-Costing versions can have a type of *Standard cost* or *Planned cost*. Use the *Standard cost* type for costs that are active in the system and that you post in transactions. Use the *Planned cost* type for running simulations on costs. This type doesn't affect the cost of transactions.
+Costing versions can be of *Standard cost* or *Planned cost* type. Use the *Standard cost* type for costs that are active in the system and that you post in transactions. Use the *Planned cost* type to run cost simulations. Planned costs don't affect the cost of transactions.
 
 ### Can I transfer the total cost from one entity to another entity as the selling cost?
 
-There's no automated way to copy costs from one company to another. Additionally, there's no automated way to copy costs from a purchase price to a sales price. If your organization must complete one of these tasks, consider whether you can use the Data Management Framework to export the data out of your costing version and upload it into a different company, either as a sales price in the costing version or as a trade agreement. You might need to manually manipulate the files.
+There's no automated way to copy costs from one company to another. Additionally, there's no automated way to copy costs from a purchase price to a sales price. If this process is required, consider whether you can use the Data Management Framework to export data out of your costing version and upload it into a different company, either as a sales price in the costing version or as a trade agreement. You might need to manually modify the files.
 
 ### What's the best way to copy planned costs to a standard costing version?
 
