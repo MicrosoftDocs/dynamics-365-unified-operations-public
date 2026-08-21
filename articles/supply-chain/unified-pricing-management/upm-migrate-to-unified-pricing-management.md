@@ -32,7 +32,7 @@ The following table describes whether various rules are supported for pricing fe
 | Shipping discount | Not supported  | Not supported | Supported |
 | Tender discount | Not supported | Not supported | Not supported |
 | Charges | Supported | No migration (migrating existing charges rules is planned) | Supported |
-| Rebate management | Not supported | Not supported yet | Supported |
+| Rebate management | Supported | Supported | Supported |
 | Trade agreement discount | Supported | No migration | Not supported |
 | Price group | Migrate to attributes | Not supported | Supported |
 | Price adjustments | Migration isn't supported. | Not supported | Supported |
