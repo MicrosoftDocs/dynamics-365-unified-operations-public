@@ -1,6 +1,6 @@
 ---
 title: Use Copilot Cowork with Dynamics 365 ERP
-description: Learn about how to use Microsoft 365 Copilot Cowork with the Microsoft Dynamics 365 ERP apps plugin to orchestrate business workflows across ERP, email, and collaboration tools.
+description: Learn about how to use Microsoft Copilot Cowork with the Microsoft Dynamics 365 ERP apps plugin to orchestrate business workflows across ERP, email, and collaboration tools.
 author: anupams
 ms.author: anupams
 ms.reviewer: johnmichalak
@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to use Microsoft 365 Copilot Cowork with the Microsoft Dynamics 365 ERP apps plugin to interact with finance and operations data and orchestrate business workflows.
+This article explains how to use Microsoft Copilot Cowork with the Microsoft Dynamics 365 ERP apps plugin to interact with finance and operations data and orchestrate business workflows.
 
 Copilot Cowork is an agentic orchestrator that helps you accomplish complex business tasks by combining multiple data sources. When you use the Dynamics 365 ERP apps plugin, Copilot Cowork connects to your finance and operations environment through the [Dynamics 365 ERP MCP server](../../dev-itpro/copilot/copilot-mcp.md). You can work with ERP data alongside email, documents, and other Microsoft 365 services in a single conversational experience.
 

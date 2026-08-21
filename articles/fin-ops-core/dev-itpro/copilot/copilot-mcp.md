@@ -151,7 +151,7 @@ The following premium licenses are exempt from the tool execution billing *for a
 - Dynamics 365 Finance Premium
 - Dynamics 365 Supply Chain Management Premium
 
-For Copilot Studio agents, agent usage is included in the Microsoft 365 Copilot license. Business to Employee usage of Copilot Studio agents is included in the Microsoft 365 Copilot USL when the user of that agent is licensed with Microsoft 365 Copilot and the agent operates by using the authenticated Microsoft 365 Copilot USL user's identity. In these cases, the tool calls to the Dynamics 365 ERP MCP server don't incur additional credit consumption.
+For Copilot Studio agents, agent usage is included in the Microsoft Copilot license. Business to Employee usage of Copilot Studio agents is included in the Copilot USL when the user of that agent is licensed with Copilot and the agent operates by using the authenticated Copilot USL user's identity. In these cases, the tool calls to the Dynamics 365 ERP MCP server don't incur additional credit consumption.
 
 ### Agent licenses
 
