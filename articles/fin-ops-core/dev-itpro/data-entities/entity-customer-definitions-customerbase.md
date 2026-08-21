@@ -43,7 +43,7 @@ Use the **Customer definitions** entity as the default entity for importing cust
 | CUSTOMERGROUPID | Specifies a foreign key to the **Customer groups** entity. This field is required. |
 | DEFAULTDIMENSIONDISPLAYVALUE | This field isn't supported. Use the **Customer details V2** entity instead. |
 | INVOICEACCOUNT | This field isn't supported. Use the **Customer details V2** entity instead. |
-| NAME | Specifies the customer's name if **PARTYTYPE** is **Organization.** It's ignored if **PARTYTYPE** is **Person**. This field is required, even when the **PARTYTYPE** is **Person**. |
+| NAME | Specifies the customer's name if **PARTYTYPE** is **Organization.** It's ignored if **PARTYTYPE** is **Person**. This field is required, even when the **PARTYTYPE** is **Person**. The corresponding field for the **Customers V3** entity is **ORGANIZATIONNAME**. |
 | PARTYTYPE | Specifies the type of the customer. The allowed values are **Organization** and **Person**. If this field isn't specified, the default value is **Organization**. |
 | PAYMENTMETHOD | Specifies a foreign key to the **Customer payment method** entity. |
 | PAYMENTTERMS | Specifies a foreign key to the **Terms of payment** entity. |
