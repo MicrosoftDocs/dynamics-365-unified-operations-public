@@ -27,6 +27,7 @@ The benefit of using an X++ script to correct minor data inconsistences is that 
 > - Schema changes
 > - Data migration or other long-running processes
 > - Correction of data that can be corrected through other means, such as regular business processes, data consistency tools, or other self-service tools
+> - Correction of more than approximately ten records
 >
 > The feature lets authorized users change entities and their records directly, without having to run the business logic that is associated with those entities. These changes can cause data integrity issues. Therefore, your organization might require that you obtain approval and sign-off from internal and external auditors (or other equivalent stakeholders) before and/or after you run a script. For compliance reasons, changes that affect some characteristics might also have to be disclosed in external reports (such as financial statements) or reported to government authorities. Your organization is solely responsible for any changes that are made to its data via this feature, any approval and sign-off or disclosure of those changes, and compliance with applicable laws. You bear all the risks of using this feature.
 
@@ -108,6 +109,7 @@ The following list describes some best practices for successfully writing, imple
 - **Do** assert that the number of affected records matches your expectations. This approach will reveal whether data unexpectedly shifted in the system while the script was being prepared.
 - **Do** use unique model names for each script (for example, by including a reference to a work item in the name). This approach will prevent name clash issues when you upload the script. If a new iteration of a script is required, be sure to create a new model.
 - **Do** test each script in a non-production environment first. Test for the intended impact and for unintentional side-effects on related data. Ensure that all business processes that might be affected can be successfully and fully completed afterwards.
+- **Do** limit the number of records that are created, updated, or deleted by the script to approximately ten.
 
 ## Upload and run a deployable package
 
