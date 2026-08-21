@@ -2,7 +2,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 08/06/2026
+ms.date: 08/21/2026
 ms.topic: overview
 ms.reviewer: mirao
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -92,7 +92,7 @@ The following list describes the minimum and maximum Adyen firmware versions tha
 | adyen_v1_120                   | adyen_v1_130                   |
 
 > [!IMPORTANT]
-> The `adyen_v1_120` version remains the minimum Adyen firmware version until 10.0.50. After that release, the minimum Adyen firmware version might move to a higher Adyen Long Term Supported (LTS) version.
+> To align with Adyen's published [PCI 6 migration timeline for PCI 5-certified payment terminals](https://help.adyen.com/guides/the-complete-guide-to-pci-6/what-are-the-key-timelines-and-milestones), starting April 30, 2027, support for PCI 5 devices (using firmware V1_120) will be limited to selective, high-severity bug fixes that are reproducible only on PCI 5 devices.
 
 ---
 
@@ -153,7 +153,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 | Union Pay\* | Standard | ✔ | | |
 | Interac Debit\* | Standard | ✔ | | |
 
-\*Interac and Union Pay recurring card tokens aren't provided by Adyen, so they can't be supported for card not present transactions.
+\*Adyen doesn't provide recurring card tokens for Interac and UnionPay, so they can't support card-not-present transactions.
 
 #### Supported gift cards
 
@@ -194,9 +194,9 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 
 #### Supported card present countries/regions
 
-The following countries/regions have Commerce components available and card present support from Adyen. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
+The following countries or regions have Commerce components available and card present support from Adyen. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
 
-| Country/region | Supported |
+| Country or region | Supported |
 | -------------- | :-------: |
 | Australia | ✔ |
 | Austria | ✔ |
@@ -232,11 +232,11 @@ The following countries/regions have Commerce components available and card pres
 | United States | ✔ |
 | Brazil | ✔ |
 
-#### Supported card not present countries/regions
+#### Supported card-not-present countries or regions
 
-Adyen supports the following countries/regions for card not present transactions. For details about support for a specific country/region, [contact Adyen](https://www.adyen.com/contact/sales). For information on the current international availability of Commerce, see [International availability page](/dynamics365/get-started/availability).
+Adyen supports the following countries or regions for card-not-present transactions. For details about support for a specific country or region, [contact Adyen](https://www.adyen.com/contact/sales). For information on the current international availability of Commerce, see [International availability page](/dynamics365/get-started/availability).
 
-| Country/region |
+| Country or region |
 | -------------- |
 | Argentina |
 | Armenia |
