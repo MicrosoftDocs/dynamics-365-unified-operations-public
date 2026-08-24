@@ -26,7 +26,7 @@ A content snippet in Microsoft Dataverse controls the company name displayed on 
 To update the company name shown on the portal, follow these steps:
 
 1. Open the [Power Pages Management app](/power-pages/configure/portal-management-app).
-1. Go to **Content** \> **Content Snippets**.
+1. Go to **Content** > **Content Snippets**.
 1. Locate and open the snippet named *Home/CompanyName*.
 1. In the **Value** field, enter your company's name.
 

@@ -22,7 +22,7 @@ Typically, a manager or system administrator creates the initial collection of r
 
 To generate a new forecast by running an existing forecast profile, follow these steps:
 
-1. On the navigation pane, select **Operations** \> **Forecast profiles**.
+1. On the navigation pane, select **Operations** > **Forecast profiles**.
 1. Find the profile for the type of forecast that you want to run, and select the link for it in the **Name** column.
 
     The details page for the selected profile appears. It contains the following tabs:
@@ -46,7 +46,7 @@ To generate a new forecast by running an existing forecast profile, follow these
 
 Each time you run a forecast profile, the system creates a record of the job run. To review the details of a job run, follow these steps:
 
-1. On the navigation pane, select **Operations** \> **Forecast profiles**.
+1. On the navigation pane, select **Operations** > **Forecast profiles**.
 1. Select the forecast profile that you want to inspect.
 1. Open the **Jobs** tab, which shows a grid with a row for each time the profile ran.
 1. Find the job run that you want to inspect and select the link in the **Job run name** column for that run.
@@ -66,7 +66,7 @@ Each time that your organization requires a new type of forecast, a manager or a
 
 To create or edit a forecast profile, follow these steps:
 
-1. On the navigation pane, select **Operations** \> **Forecast profiles**.
+1. On the navigation pane, select **Operations** > **Forecast profiles**.
 1. On the Action Pane, select **New**.
 1. A setup wizard is opened. On the **Get started** page, set the following fields:
 

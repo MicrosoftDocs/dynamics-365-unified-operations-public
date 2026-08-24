@@ -1,5 +1,5 @@
 ---
-title: Use the agent deployment wizard to set up impact analysis features (preview)
+title: Use the agent deployment wizard to set up impact analysis features (production-ready preview)
 description: Learn how to use the agent deployment wizard to set up impact analysis features for the Procurement Agent. Follow this guided setup to configure agents quickly.
 author: lisascholz91
 ms.author: lisascholz
@@ -10,11 +10,11 @@ ms.date: 08/10/2026
 ms.update-cycle: 180-days
 ms.collection:
   - bap-ai-copilot
-ms.custom: 
+ms.custom:
   - bap-template
 ---
 
-# Use the agent deployment wizard to set up impact analysis features (preview)
+# Use the agent deployment wizard to set up impact analysis features (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -23,11 +23,6 @@ ms.custom:
 This article explains how system administrators can use the [agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub to set up and configure the impact analysis features of the Procurement Agent, regardless of whether you're also using the supplier communications features of the agent.
 
 If you're already using supplier communications, you can choose to keep the same Entra ID and connections you created in the supplier communications set-up, or you can create new ones.
-
-> [!IMPORTANT]
-> The agent deployment wizard (preview) is an alternative to the manual setup process described in [Set up and configure the impact analysis features of the Procurement Agent](procurement-agent-impact-analysis-setup.md). The wizard provides a guided experience for setting up an agent and automatically configures many of the required settings for you. You don't need to run the wizard if you already set up the impact analysis features manually.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Run the agent deployment wizard
 
@@ -92,3 +87,5 @@ To enable impact analysis to run based on change requests coming through one or 
     - *Vendor emails* – Select this option if you're using supplier communications features of the Procurement Agent to receive and classify emails from vendors.
     - *Vendor collaboration module* – Select this option if you're using the vendor collaboration interface to receive and manage vendor responses.
 1. Select **Activate**.
+
+If you're using impact analysis with supplier communications, impact analysis only runs on configurations set for the *Updates from vendors (reading vendor emails)* feature (see [Configure the agent to track your email](procurement-agent-supplier-com-apply-email-changes.md)). If you set up a configuration for the Procurement Agent to read and review emails from all vendors, impact analysis runs on all change requests received from all vendors. If you set up a configuration for the Procurement Agent to read and review only emails from certain vendors, impact analysis only runs on change requests received from those specific vendors. If your organization sets up multiple configurations, for example to accommodate different purchasers responsible for their own vendors, the impact analysis configuration applies to all of them. Impact analysis runs for all change requests received from all specified vendors in all configurations.

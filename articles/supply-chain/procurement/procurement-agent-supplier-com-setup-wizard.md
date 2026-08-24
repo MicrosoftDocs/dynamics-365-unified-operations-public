@@ -135,7 +135,7 @@ After you enable the supplier communications features of the Procurement Agent i
 
 When you use the [review and apply purchase order changes received in vendor emails](procurement-agent-supplier-com-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This limitation means that when you're testing the system and want to send or forward vendor emails from your own email account, you must add your email address as a vendor contact. To add your email address, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
+1. Go to **Procurement and sourcing** > **Vendors** > **All vendors**.
 1. Create or select a vendor.
 1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send or forward test messages from).
 

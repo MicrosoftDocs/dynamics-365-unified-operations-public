@@ -21,7 +21,7 @@ An asset is automatically updated with related information. For example, this re
 
 ## All assets
 
-Select **Asset management** \> **Assets** \> **All assets**. The **All assets** list page shows all assets and some of the information that is related to them. To view only active assets, select **Active assets**. To view only assets that are installed on the functional locations that you're related to as a maintenance worker, select **My active assets**. (This relation is set up on the **Workers** page. Learn more in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
+Select **Asset management** > **Assets** > **All assets**. The **All assets** list page shows all assets and some of the information that is related to them. To view only active assets, select **Active assets**. To view only assets that are installed on the functional locations that you're related to as a maintenance worker, select **My active assets**. (This relation is set up on the **Workers** page. Learn more in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
 
 In the **All assets** grid view, select a link in the **Asset** column to view the details of the selected record. To edit the record, select the **Edit** button. The details view shows detailed information that is related to the asset. A **Related information** pane on the right contains additional asset-related information. Expand the pane to show the related information for the selected asset.
 
@@ -47,7 +47,7 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Maintenance schedule | Open the **Open maintenance schedule** list page, where you can view maintenance plans, maintenance requests, and maintenance rounds that are associated with the asset, and that have a status of **Created**. |
 | Update asset state | Update the asset lifecycle state. You can select multiple assets on the **All assets** list page and then update the asset lifecycle state for all of them at the same time.<br><br>You can add remarks, which are visible in the lifecycle state log. Remarks require Supply Chain Management version 10.0.46 or higher with *Remarks can be associated with each change in lifecycle states* enabled in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (As of Supply Chain Management version 10.0.49, this feature is turned on by default). |
 | Lifecycle state log | Open a log that shows the lifecycle states of the selected asset.<br><br>The log includes any remarks that were added by users during manual lifecycle changes. Remarks require Supply Chain Management version 10.0.46 or higher with *Remarks can be associated with each change in lifecycle states* enabled in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (As of Supply Chain Management version 10.0.49, this feature is turned on by default). |
-| Asset documents | View a list of the documents that are attached to an asset. These documents are set up at **Asset management** \> **Setup** \> **Asset documents**. |
+| Asset documents | View a list of the documents that are attached to an asset. These documents are set up at **Asset management** > **Setup** > **Asset documents**. |
 | Attributes | Create or view asset attributes. |
 | Image | Select an image for the asset. |
 | Parent assets | View parent asset history for the selected asset. |

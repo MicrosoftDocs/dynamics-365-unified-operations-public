@@ -19,7 +19,7 @@ This procedure shows how to start a production order on the shop floor. Time and
 
 ## Start a production order
 
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 1. Select a production order that has the *Released* status.
 1. On the Action Pane, select **Production order**.
 1. Select **Start**. On this page, you can confirm the start of the production order.  

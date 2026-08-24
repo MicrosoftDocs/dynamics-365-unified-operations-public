@@ -61,9 +61,9 @@ You then create the following subscriptions.
 
 Now you create subscription fees for both subscriptions in the subscription group Sub1:
 
-1. Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+1. Go to **Service management** > **Setup** > **Service subscriptions** > **Subscription groups**.
 
-2. On the **Subscription groups** page, select **Function** \> **Create subscription fee**.
+2. On the **Subscription groups** page, select **Function** > **Create subscription fee**.
 
 3. On the **Create subscription fee** page, enter the appropriate information. Learn more in [Create subscription fee transactions](create-subscription-fee-transactions.md).
 

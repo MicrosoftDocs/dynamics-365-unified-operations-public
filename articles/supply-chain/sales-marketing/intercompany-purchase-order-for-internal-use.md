@@ -23,7 +23,7 @@ You can create an intercompany purchase order for an intercompany vendor. This a
 
 Do these steps in legal entity AAA, as shown in the illustration.
 
-1. Select **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. Select **Accounts payable** > **Purchase orders** > **All purchase orders**.
 1. On the **All purchase orders** list page, create a purchase order for an intercompany vendor. The field values are copied from the vendor account to the purchase order.
 
     Because you're working with an intercompany vendor, an intercompany sales order is created in the legal entity that corresponds to the vendor. The number of the intercompany sales order can be the same as the number of the intercompany purchase order, and it can include the ID of the legal entity. The number structure that is used depends on the selection in the **Sales order numbering** field in the **Intercompany** page. For example, if you create purchase order 00029\_064 in legal entity AAA, the sales order number in legal entity BBB is AAA00029\_64.

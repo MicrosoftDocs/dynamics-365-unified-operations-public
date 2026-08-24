@@ -23,7 +23,7 @@ In some cases, you can add or delete forecast lines on a work order. The setup o
 > [!NOTE]
 > You can set up automatic posting of journals on a work order lifecycle state. Learn more in [Work order lifecycle states](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-1. Select **Asset management** \> **Work orders** \> **All Work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
 1. Select the work order, and select **Journals**.
 1. Select **Copy from forecast** to transfer any forecast lines that might be connected to the work order. You can select which consumption types you want to transfer.
 1. If necessary, add more consumption lines on the relevant FastTab by selecting **Add line** and filling out data on the line.
@@ -41,7 +41,7 @@ The following screenshot shows an example of hour and item registrations on a wo
 
 If a work order contains several work order jobs, use the **Split hours** functionality to register work hours. You can distribute one hour registration line evenly across each work order job.
 
-1. Select **Asset management** \> **Work orders** \> **All Work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
 1. Select the work order and select **Journals**.
 1. Select the hour registration line you want to split, and select **Split hours**.
 1. In the **Split hours on work order maintenance jobs** dialog, the name of the worker who is signed in automatically appears in the **Worker** field. If required, select another worker.
@@ -64,7 +64,7 @@ When you make consumption registrations, the system adds financial dimensions re
 - *Item registrations:* First, the system adds financial dimensions from the related work order project. Next, it adds financial dimensions from the site. Finally, it adds financial dimensions from the item.
 
 > [!IMPORTANT]
-> If the [dimension link](../../cost-management/financial-dimension-links.md) feature is active (on **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**) and a financial dimension is linked to the inventory site, the linked dimension values from the site take precedence on item registrations. In this case, the values from the dimension attributes override the values that came from the related work order project.
+> If the [dimension link](../../cost-management/financial-dimension-links.md) feature is active (on **Inventory management** > **Setup** > **Posting** > **Dimension link**) and a financial dimension is linked to the inventory site, the linked dimension values from the site take precedence on item registrations. In this case, the values from the dimension attributes override the values that came from the related work order project.
 
 >[!NOTE]
 >For all three registration types, the system validates the financial dimension combination and blanks invalid combinations.

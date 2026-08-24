@@ -70,12 +70,12 @@ You can import the required master data into Supply Chain Management by using [d
 
 In Warehouse management only mode, you can view, update, and create product messages. This capability lets you quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update field values and assign the updated message back into the message queue. The original message is versioned and non-editable. To view and maintain the messages, go to one of the following pages:
 
-- **Warehouse management** \> **Source system products** \> **Source system product messages**
-- **Warehouse management** \> **Source system products** \> **Source system product variant messages**
-- **Warehouse management** \> **Source system products** \> **Source system product barcode messages**
-- **Warehouse management** \> **Source system products** \> **Source system product document attachment messages**
-- **Warehouse management** \> **Source system products** \> **Source system product global trade item number messages**
-- **Warehouse management** \> **Source system products** \> **Source system product specific unit of measure conversion messages**
+- **Warehouse management** > **Source system products** > **Source system product messages**
+- **Warehouse management** > **Source system products** > **Source system product variant messages**
+- **Warehouse management** > **Source system products** > **Source system product barcode messages**
+- **Warehouse management** > **Source system products** > **Source system product document attachment messages**
+- **Warehouse management** > **Source system products** > **Source system product global trade item number messages**
+- **Warehouse management** > **Source system products** > **Source system product specific unit of measure conversion messages**
 
 The **Warehouse integration monitoring** workspace lets you track the number of source system product messages that are *Queued* and *Failed*.
 
@@ -155,7 +155,7 @@ The following example shows the end-to-end flow:
 
 To make it easier to set up your warehouse operation, create and use data for *consigners* and *consignees* and their related group definitions. For example, use this approach for a process that's related to setting up a [quality order creation process](../inventory/quality-associations.md) for a specific consigner or consigner group.
 
-Neither the *Inbound shipment order policies* (which are part of the **Source systems** setup) nor inbound shipment order message processing requires that the fields for the **Consigner's account number** value exist in the entity for the **Consigners** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Consigners**). The same "free text" concept exists for the outbound shipment order process that's related to the **Consigner's account number** value.
+Neither the *Inbound shipment order policies* (which are part of the **Source systems** setup) nor inbound shipment order message processing requires that the fields for the **Consigner's account number** value exist in the entity for the **Consigners** page (**Warehouse management** > **Setup** > **Warehouse management integration** > **Consigners**). The same "free text" concept exists for the outbound shipment order process that's related to the **Consigner's account number** value.
 
 ### Country/region
 

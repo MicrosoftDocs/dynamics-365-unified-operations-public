@@ -87,7 +87,7 @@ When you use the **Return lot ID** field on a return order line to specify the r
 
 1. Post an invoice for the return order. On the **All sales orders** list page, select a sales order for which **Returned order** is the order type.
 
-1. Open the **Inventory transactions** form. Verify that the return is costed at 7.00 per piece by using the value in the **Return cost price** field, for a total of 35.00 in the **Cost amount** field. You can open the **Inventory transactions** form from the **Return order - RMA number: %1, %2** form. In the **Lines** grid, select **Inventory** \> **Transactions**.
+1. Open the **Inventory transactions** form. Verify that the return is costed at 7.00 per piece by using the value in the **Return cost price** field, for a total of 35.00 in the **Cost amount** field. You can open the **Inventory transactions** form from the **Return order - RMA number: %1, %2** form. In the **Lines** grid, select **Inventory** > **Transactions**.
 
 1. In Inventory and warehouse management, use the **Closing and adjustment** form to run the **3. Close** procedure.
 

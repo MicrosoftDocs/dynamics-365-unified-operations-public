@@ -32,7 +32,7 @@ The example scenarios in this article assume the following setup in Microsoft Dy
 
 The USMF sample data includes these tax codes and groups, but it uses a different tax rate for the sales tax code. To adjust the tax rate to 50 percent, follow these steps:
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
 1. In the list pane, select sales tax code *AV\_CAST* to open it.
 1. On the Action Pane, on the **Sales tax code** tab, select **Values**.
 1. For the row where the **Sales tax code** field is set to *AV_CAST*, set the **Value** field to *50*.
@@ -41,7 +41,7 @@ The USMF sample data includes these tax codes and groups, but it uses a differen
 
 Follow these steps to see how sales totals are calculated when prices exclude sales tax.
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Create a sales order for customer account *US-001*.
 1. Add a sales order line, and set the following values for it:
 
@@ -76,7 +76,7 @@ Follow these steps to see how sales totals are calculated when prices exclude sa
 
 Follow these steps to see how sales totals are calculated when prices include sales tax.
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Create a sales order for customer account *US-001*.
 1. On the **Header** tab of the new sales order, on the **Setup** FastTab, set the **Prices include sales tax** option to *Yes*.
 1. On the **Lines** tab, add a sales order line, and set the following values for it:

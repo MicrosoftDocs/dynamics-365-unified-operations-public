@@ -30,7 +30,7 @@ If you have specified that a reason code is required, you must enter a reason co
 
 ## Set up reason codes
 
-1. Go to **Service management** \> **Setup** \> **Service orders** \> **Stage reason codes**.
+1. Go to **Service management** > **Setup** > **Service orders** > **Stage reason codes**.
 
 2. On the **Stage reason codes** page, select **New** to create a new reason code.
 
@@ -42,13 +42,13 @@ If you have specified that a reason code is required, you must enter a reason co
 
 ## Require reason codes when a service level agreement is canceled
 
-1. Go to **Service management** \> **Setup** \> **Service management parameters**.
+1. Go to **Service management** > **Setup** > **Service management parameters**.
 
 2. On the **Service management parameters** page, select the **General** link, and then select the **Reason code on canceling** check box.
 
 ## Require reason codes when a service order exceeds the time limit that is set by the service level agreement
 
-1. Go to **Service management** \> **Setup** \> **Service management parameters**.
+1. Go to **Service management** > **Setup** > **Service management parameters**.
 
 2. On the **Service management parameters** page, select the **General** link, and then select the **Reason code on exceeding time** check box.
 

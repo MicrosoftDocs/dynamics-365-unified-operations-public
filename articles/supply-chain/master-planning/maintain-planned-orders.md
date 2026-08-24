@@ -37,7 +37,7 @@ You can select two firming options from the **Planned orders** page:
 - **Firm all** – Firms all planned orders in the filter. Using **Firm all** you don’t have to select the planned order, all planned orders within the filter ar firmed. This option can be useful if you're firming a high number of planned orders.
 
 > [!NOTE]
-> You can track a planned order that was firmed from **Firming history** under **Planned orders form** \> **View** \> **Firming history**.
+> You can track a planned order that was firmed from **Firming history** under **Planned orders form** > **View** > **Firming history**.
 
 ## Parallelize firming
 

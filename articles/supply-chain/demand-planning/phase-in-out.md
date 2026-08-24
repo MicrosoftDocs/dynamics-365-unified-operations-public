@@ -13,6 +13,8 @@ ms.search.form:
 
 # Use phase in/out functionality to simulate planned changes
 
+[!include [banner](../includes/banner.md)]
+
 Phase in/out functionality lets you set up forecasts and calculations that simulate changes that you plan to make. Here are some examples:
 
 - Phase out a product that's no longer popular or that's leaving the market.
@@ -54,7 +56,7 @@ The following table shows an example of forecasted sales after the phase in and 
 
 Use phase in/out rule groups to define the phase in/out calculations that are applied in your forecast and calculation models. To create, view, or edit a rule group, follow these steps:
 
-1. On the navigation pane, select **Configuration** \> **Phase in/out**.
+1. On the navigation pane, select **Configuration** > **Phase in/out**.
 1. Follow one of these steps:
 
     - To create a new rule group, select **New** on the Action Pane. A wizard guides you through the steps for creating the group.

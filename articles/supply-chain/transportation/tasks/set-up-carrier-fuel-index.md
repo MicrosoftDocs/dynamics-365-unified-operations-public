@@ -21,7 +21,7 @@ This guide shows how to create a fuel index region, a fuel index, and a carrier 
 
 First, you need to create the different regions where you operate and calculate different fuel surcharges by following these steps:
 
-1. Go to **Transportation management** \> **Setup** \> **Fuel indexes** \> **Fuel index regions**.
+1. Go to **Transportation management** > **Setup** > **Fuel indexes** > **Fuel index regions**.
 1. Select **New**.
 1. In the **Region** field, type a value.
 1. In the **Name** field, type a value.
@@ -31,7 +31,7 @@ First, you need to create the different regions where you operate and calculate 
 
 For the regions you set up, enter the current prices for the fuel by following these steps:
 
-1. Go to **Transportation management** \> **Setup** \> **Fuel indexes** \> **Fuel indexes**.
+1. Go to **Transportation management** > **Setup** > **Fuel indexes** > **Fuel indexes**.
 1. Select **New**.
 1. In the **Region** field, select the region.
 1. In the **Price per gallon** field, enter a number.
@@ -40,7 +40,7 @@ For the regions you set up, enter the current prices for the fuel by following t
 
 ## Create a carrier fuel index
 
-1. Go to **Transportation management** \> **Setup** \> **Fuel indexes** \> **Carrier fuel indexes**.
+1. Go to **Transportation management** > **Setup** > **Fuel indexes** > **Carrier fuel indexes**.
 1. Select **New**.
 1. In the **Carrier fuel index** field, enter a value.
 1. In the **Description** field, enter a value.

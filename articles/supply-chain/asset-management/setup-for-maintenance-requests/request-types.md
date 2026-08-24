@@ -20,7 +20,7 @@ Maintenance request types are used to categorize maintenance requests. For examp
 
 A maintenance request type defines the affiliation with a maintenance request lifecycle state group (maintenance lifecycle model). Maintenance request lifecycle models define the lifecycle states that can be set for a maintenance request. (Examples of maintenance request lifecycle states include **Created**, **Active**, and **Ended**.)
 
-1. Select **Asset management** \> **Setup** \> **Maintenance requests** \> **Maintenance request types**.
+1. Select **Asset management** > **Setup** > **Maintenance requests** > **Maintenance request types**.
 2. Select **New** to create a maintenance request type.
 3. In the **Maintenance request type** field, enter an ID for the maintenance request type.
 4. In the **Name** field, enter a name.

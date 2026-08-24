@@ -22,7 +22,7 @@ This article describes the process for releasing raw material for bill of materi
 
 You can configure the release of BOM and formula lines so that it occurs as part of the release of a production order or batch order. Alternatively, the release can be controlled by a batch job or done as a manual interaction.
 
-The method that is used to release BOM and formula lines is controlled by the **Production line release** parameter. You can find this parameter at **Production control** \> **Setup** \> **Production parameters**.
+The method that is used to release BOM and formula lines is controlled by the **Production line release** parameter. You can find this parameter at **Production control** > **Setup** > **Production parameters**.
 
 - **Release BOM and formula lines as part of production or batch order release** – In this method, BOM and formula lines for a production or batch order are released as part of the process of releasing the order. Usually, during the release of a production or batch order, production jobs are released to the shop floor workers, and production papers are printed. During this process, the status of the order is also changed to **Released**.
 - **Release BOM and formula lines via a batch job or as a manual interaction** – In this method, BOM and formula lines can be released only through the **Automatic release of BOM and formula lines** batch job or as a manual interaction. To manually release BOM and formula lines, on the production order list page or the production order details page, on the Action Pane, select **Release to warehouse**.
@@ -63,7 +63,7 @@ If you release materials by using the **On production order release** parameter 
 
 To control the operations that material should be released to, use the **Release to warehouse** page.
 
-- Select **Production control** \> **Production orders** \> **All production orders**, select a production order, and then, on the **Warehouse** tab, select **Release to warehouse**. Then use the **From Oper. No.** and **To Oper. No** fields to specify the range of operation numbers.
+- Select **Production control** > **Production orders** > **All production orders**, select a production order, and then, on the **Warehouse** tab, select **Release to warehouse**. Then use the **From Oper. No.** and **To Oper. No** fields to specify the range of operation numbers.
 
 The following illustration shows a production order that has two operations, 10 and 20. In this example, if you limit the release to operation 10, only material M9203 will be released.
 
@@ -76,11 +76,11 @@ For a quick demonstration of how to release material in proportion to the amount
 
 You can release raw material for a partial quantity of finished goods or in a specific unit.
 
-- To release raw material for a partial quantity of finished goods, select **Production control** \> **Production orders** \> **All production orders**, select a production order, and then, on the **Warehouse** tab, select **Release to warehouse**. Then enter a quantity in the **Quantity** field.
+- To release raw material for a partial quantity of finished goods, select **Production control** > **Production orders** > **All production orders**, select a production order, and then, on the **Warehouse** tab, select **Release to warehouse**. Then enter a quantity in the **Quantity** field.
 
     For example, a production order is created and scheduled for 1,000 pieces (pcs.). The shop floor supervisor is planning the production of 100 pcs. for the next shift and wants to release materials only for that shift. In this case, the supervisor can use the **Quantity** field to release materials for the 100 pcs. that are planned for the next shift.
 
-- To release raw material in a specific unit, select **Production control** \> **Production orders** \> **All production orders**, select a production order, and then, on the **Warehouse** tab, select **Release to warehouse**. Then use the **Unit** field to select the unit of the finished good to release material in.
+- To release raw material in a specific unit, select **Production control** > **Production orders** > **All production orders**, select a production order, and then, on the **Warehouse** tab, select **Release to warehouse**. Then use the **Unit** field to select the unit of the finished good to release material in.
 
     The units that are available are defined in the unit sequence group ID of the finished good.
 

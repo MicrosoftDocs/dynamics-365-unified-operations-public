@@ -31,7 +31,7 @@ You can also search for CAPA cases that are related to a specific customer, vend
 
 From the workspace, you can quickly view details, set the status of a listed case or activity, move a case to the next process stage, and more.
 
-To open the workspace, go to **Inventory management** \> **Workspaces** \> **CAPA management**.
+To open the workspace, go to **Inventory management** > **Workspaces** > **CAPA management**.
 
 ## View CAPA cases on list pages
 
@@ -43,13 +43,13 @@ To view all CAPA cases that are related to a selected customer, vendor, sales or
 
 To view and work with all CAPA cases in the system, follow one of these steps.
 
-- Go to **Inventory management** \> **Periodic tasks** \> **CAPA management** \> **All CAPA cases**.
-- Go to **Common** \> **Common** \> **CAPA management** \> **All CAPA cases**.
+- Go to **Inventory management** > **Periodic tasks** > **CAPA management** > **All CAPA cases**.
+- Go to **Common** > **Common** > **CAPA management** > **All CAPA cases**.
 
 To view and work with only the CAPA cases that you're responsible for, follow one of these steps.
 
-- Go to **Inventory management** \> **Periodic tasks** \> **CAPA management** \> **My CAPA cases**.
-- Go to **Common** \> **Common** \> **CAPA management** \> **My CAPA cases**.
+- Go to **Inventory management** > **Periodic tasks** > **CAPA management** > **My CAPA cases**.
+- Go to **Common** > **Common** > **CAPA management** > **My CAPA cases**.
 
 ## FastTabs on the CAPA case details page
 
@@ -73,13 +73,13 @@ You can create CAPA cases from many different pages in the system, including pag
     - **For customers or vendors:** On the Action, on the **General** tab, in the **New** group, select **CAPA case**.
     - **For sales orders, purchase orders, or return orders:** On the Action Pane, on the **General** tab, in the **CAPA** group, select **Create CAPA case**.
     - **For released products:** On the Action Pane, on the **General** tab, in the **Maintain CAPA cases** group, select **Create CAPA case**.
-    - **For nonconformance records:** On the Action Pane, select **Functions** \> **Create CAPA case**.
+    - **For nonconformance records:** On the Action Pane, select **Functions** > **Create CAPA case**.
     - **From the All CAPA cases or My CAPA cases page:**
 
-        - To create a CAPA case that isn't linked to an existing case, on the Action Pane, select **New** \> **CAPA case**.
-        - To create a CAPA case that is linked to an existing case, select the parent case in the grid, and then, on the Action Pane, select **New** \> **Dependent CAPA case**.
+        - To create a CAPA case that isn't linked to an existing case, on the Action Pane, select **New** > **CAPA case**.
+        - To create a CAPA case that is linked to an existing case, select the parent case in the grid, and then, on the Action Pane, select **New** > **Dependent CAPA case**.
 
-    - **From the CAPA management workspace:** On the Action Pane, select **Create new** \> **CAPA case**. Alternatively, on the **CAPA case summary** FastTab, select **New CAPA case**.
+    - **From the CAPA management workspace:** On the Action Pane, select **Create new** > **CAPA case**. Alternatively, on the **CAPA case summary** FastTab, select **New CAPA case**.
 
 1. In the **New CAPA case** dialog, on the **General** tab, set the following fields:
 
@@ -108,7 +108,7 @@ CAPA processes are defined by an administrator or manager. The **CAPA process** 
 The workflow for CAPA processes consists of the following steps.
 
 1. Create a CAPA case, and assign a CAPA process to it. The case initially has a status of *Opened*.
-1. Select or open the case (for example, from the **CAPA management** workspace). Then select **Change status** \> **In process**. (If you're in the **CAPA management** workspace, the button is on the toolbar. If you're on the details page or another page, it's on the **CAPA case** tab of the Action Pane.) This status change indicates that the case is being actively worked on and enables it to move through the various stages of the process.
+1. Select or open the case (for example, from the **CAPA management** workspace). Then select **Change status** > **In process**. (If you're in the **CAPA management** workspace, the button is on the toolbar. If you're on the details page or another page, it's on the **CAPA case** tab of the Action Pane.) This status change indicates that the case is being actively worked on and enables it to move through the various stages of the process.
 1. The process starts with the first stage (for example, *Definition*). The system generates the activities that are configured for the stage. (For example, there might be a single activity that is named *Identify the problem*.)
 1. The system emails the **Employee responsible** contacts for the case, the active stage, and each active activity that belongs to that stage.
 1. Workers can now work on each activity that they are assigned to, enter notes on the details page for the activity, and fill in information as required. Employees can access the details page for an activity in several ways:
@@ -133,7 +133,7 @@ The workflow for CAPA processes consists of the following steps.
 1. The process continues until all the required activities are completed and you're ready to close the case. Often, you begin by opening the CAPA case details and filling in the fields on the **Resolution** FastTab to document the outcome of the case. You then mark the case as closed. There are several ways to close a CAPA case:
 
     - In the **CAPA management** workspace, select the CAPA case on any tab where it appears, and then, on the toolbar, select **Set as complete**.
-    - On a CAPA case list or details page, on the Action Pane, on the **CAPA Case** tab, select **Change status** \> **Closed**.
+    - On a CAPA case list or details page, on the Action Pane, on the **CAPA Case** tab, select **Change status** > **Closed**.
 
 > [!TIP]
 > To get a graphical overview of the process hierarchy for the current CAPA case, follow these steps:
@@ -152,7 +152,7 @@ Statistical charts are provided in the **CAPA management** workspace and on the 
 
 To view statistics in the **CAPA management** workspace, follow these steps:
 
-1. Go to **Inventory management** \> **Workspaces** \> **CAPA management**.
+1. Go to **Inventory management** > **Workspaces** > **CAPA management**.
 1. Select the **Statistics** FastTab. Two charts are shown.
 1. Use the **Number of cases by** dropdown list to select the type of statistics that you want to view in the left chart.
 1. Use the **Trending of cases by** dropdown list to select the period that you want to view in the right chart.
@@ -162,7 +162,7 @@ To view statistics in the **CAPA management** workspace, follow these steps:
 
 To view statistics on the **Trending analysis** page, follow these steps:
 
-1. Go to **Inventory management** \> **Inquiries and reports** \> **CAPA management** \> **Trending analysis**.
+1. Go to **Inventory management** > **Inquiries and reports** > **CAPA management** > **Trending analysis**.
 1. On the **Data** tab, select the date range, and turn on each type of chart that you want to view.
 1. Select the **Analytics by category** tab to view the selected charts.
 1. Use the buttons at the top of each chart to select its graphical style (for example, bar chart, line chart, or pie chart).

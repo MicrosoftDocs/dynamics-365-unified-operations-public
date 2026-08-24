@@ -21,7 +21,7 @@ You can create a template bill of materials (BOM) by using any of the following 
 
 ## Create a template BOM manually
 
-1. Go to **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
+1. Go to **Service management** > **Setup** > **Service objects** > **Template BOMs**.
 1. Select **New** to open the **Create template BOM** page.
 1. Under **Copy BOM lines from reference**, select the **Manual** option.
 1. In the **Item number** field, enter an item of the type **BOM**.
@@ -33,7 +33,7 @@ A new, blank template BOM is created.
 
 ## Create a template BOM based on another template BOM
 
-1. Go to **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
+1. Go to **Service management** > **Setup** > **Service objects** > **Template BOMs**.
 1. Select **New** to open the **Create template BOM** page.
 1. Under **Copy BOM lines from reference**, select the **Template BOM** option.
 1. In the **Reference number** field, select an existing template BOM to copy to your new template BOM.
@@ -45,7 +45,7 @@ A new template BOM is created by using lines that correspond to the lines in the
 
 ## Create a template BOM based on an item BOM
 
-1. Go to **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
+1. Go to **Service management** > **Setup** > **Service objects** > **Template BOMs**.
 1. Select **New** to open the **Create template BOM** page.
 1. Under **Copy BOM lines from reference**, select **BOM**.
 1. In the **Reference number** field, select a BOM version. An item of the type BOM is copied to the **Item number**.
@@ -57,7 +57,7 @@ A new template BOM is created by using lines that correspond to the lines of the
 
 ## Create a template BOM based on a production BOM
 
-1. Go to **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
+1. Go to **Service management** > **Setup** > **Service objects** > **Template BOMs**.
 1. Select **New** to open the **Create template BOM** page.
 1. Under **Copy BOM lines from reference**, select **Production**.
 1. In the **Reference number** field, select a production BOM.

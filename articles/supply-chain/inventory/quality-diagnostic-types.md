@@ -49,7 +49,7 @@ Before you can use diagnostic groups, your system must meet the following requir
 
 ### Manage diagnostic groups
 
-1. Go to **Inventory management** \> **Setup** \> **Quality management** \> **Diagnostic groups**.
+1. Go to **Inventory management** > **Setup** > **Quality management** > **Diagnostic groups**.
 1. Use the buttons on the Action Pane to create a new diagnostic group in the list pane or edit an existing one. (You can also delete existing groups.)
 1. On the heading of the new or selected group, enter a name and description for the group.
 1. On the **Diagnostic** FastTab, use the buttons on the toolbar to add and remove diagnostics that belong to the current group. For each row, select the diagnostic that should be performed and the worker who should perform it.

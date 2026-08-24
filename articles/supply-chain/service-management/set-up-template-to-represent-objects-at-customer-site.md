@@ -19,7 +19,7 @@ ms.custom:
 
 Use this procedure to set up a template that represents objects at a customer site.
 
-1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
+1. Go to **Service management** > **Service agreements** > **Service agreements**.
 
 2. Open a service agreement, or select **Service agreement** to create a new service agreement.
 
@@ -27,7 +27,7 @@ Use this procedure to set up a template that represents objects at a customer si
 
 4. Select **Service objects** to attach a template bill of materials (BOM) to the service agreement.
 
-5. On the **Service objects** page, select a service object, and then select **Functions** \> **Attach template BOM**.
+5. On the **Service objects** page, select a service object, and then select **Functions** > **Attach template BOM**.
 
 6. On the **Select template BOM** page, select a template BOM in the **Template BOM** field, and then select **OK**.
 

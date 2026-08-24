@@ -22,8 +22,8 @@ You can create a new sales order either from the **All sales orders** page or di
 ## Enter sales order header details
 
 1. Open the **Create sales order** dialog by doing one of the following steps:
-    - Go to **Sales and marketing** \> **Sales orders** \> **Create sales order**.
-    - Go to **Sales and marketing** \> **Sales orders** \> **All sales orders** and, on the Action Pane, select **New**.
+    - Go to **Sales and marketing** > **Sales orders** > **Create sales order**.
+    - Go to **Sales and marketing** > **Sales orders** > **All sales orders** and, on the Action Pane, select **New**.
 
 1. In the **Customer account** field, select the customer you want to create a sales order for. If you're working with *USMF* demo data, select customer *US-004*.
 1. Select **OK**.

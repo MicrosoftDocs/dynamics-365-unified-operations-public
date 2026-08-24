@@ -26,7 +26,7 @@ In Asset Management, you can set up documents so that they are automatically rel
 
 ## Create asset document relation
 
-1. Select **Asset management** \> **Setup** \> **Asset documents**.
+1. Select **Asset management** > **Setup** > **Asset documents**.
 2. Select **New** to create an asset document record.
 3. Depending on how specific you want the document relation to be, make relevant selections in one or more of the following fields: **Asset type**, **Manufacturer**, **Model**, **Asset**, **Job type category**, **Job type**, **Job type variant**, and **Job requirement**. The options that are available in the **Job type variant** and **Job requirement** fields depend on your selection in the **Job type** field.
 

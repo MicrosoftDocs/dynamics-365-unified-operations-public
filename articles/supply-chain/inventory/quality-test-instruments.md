@@ -33,7 +33,7 @@ Learn more in [Test instrument calibration](quality-instrument-calibration.md).
 
 ## Create a test instrument
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test instruments**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Test instruments**.
 1. On the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
 
     - **Test instrument** – Enter a unique ID or name for the test instrument.

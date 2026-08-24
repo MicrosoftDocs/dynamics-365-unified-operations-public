@@ -19,7 +19,7 @@ This procedure shows how to set up an accessorial assignment. A transportation c
 
 ## Set up Accessorial assignment
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Accessorial assignments**.
+1. Go to **Transportation management** > **Setup** > **Rating** > **Accessorial assignments**.
 1. Select **New**.
 1. In the **Name** field, type a value.
 1. Expand the **Details** section.

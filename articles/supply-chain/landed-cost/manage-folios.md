@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage folios
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A folio is a subset of a container and is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio are managed in one container. One container can have many folios, but a folio can't be spread across several containers.
 

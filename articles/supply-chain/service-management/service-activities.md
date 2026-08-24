@@ -17,7 +17,7 @@ ms.custom:
 
 Create service activities to define and maintain tasks in a service order. A service order can include one or more service activities to be performed by a worker.
 
-Service activities are defined on the **Activity types** page (go to **Sales and marketing** \> **Setup** \> **Activities** \> **Activity types**). After you set up activities, you can add them to service orders automatically based on the related service agreement, or you can manually add activities when you add lines to a service order.
+Service activities are defined on the **Activity types** page (go to **Sales and marketing** > **Setup** > **Activities** > **Activity types**). After you set up activities, you can add them to service orders automatically based on the related service agreement, or you can manually add activities when you add lines to a service order.
 
 You can view the status of service activities on the **Dispatch board** page. You can also reassign activities from one worker to another worker in that page.
 

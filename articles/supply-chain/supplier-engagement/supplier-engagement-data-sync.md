@@ -179,7 +179,7 @@ When you install the Supplier Engagement app, it creates data for the VRM Sync C
 To add a new sync configuration mapping, follow these steps:
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Configuration** area.
-1. On the navigation pane, select **Data Sync** \> **Sync Config**.
+1. On the navigation pane, select **Data Sync** > **Sync Config**.
 1. On the command bar, select **New**.
 1. In the **Source Table** field, enter the logical name of the source entity in text format.
 1. In the **Destination Table** field, enter the logical name of the destination entity in text format.
@@ -197,7 +197,7 @@ The system creates a JSON file on the backend that the sync configuration manage
 To remove a sync configuration mapping, follow these steps:
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Configuration** area.
-1. On the navigation pane, select **Data Sync** \> **Sync Config**.
+1. On the navigation pane, select **Data Sync** > **Sync Config**.
 1. Open the record from which you want to remove a mapping.
 1. In the **Field Mappings** area, select the mapping that you want to remove.
 1. On the toolbar, select **Delete Sync Config Mapping**.

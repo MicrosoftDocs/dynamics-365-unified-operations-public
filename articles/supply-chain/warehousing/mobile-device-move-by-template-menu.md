@@ -16,7 +16,7 @@ ms.search.form: WHSRFMenuItem
 
 This article explains how to set up a mobile device menu item that lets workers register movements of items in the warehouse. The worker doesn't decide where to move the items, but instead relies on the system to determine the target location based on the work template and/or location directive configured for the menu item.
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 1. On the Action Pane, select **New**.
 1. On the header of the new record, set the following fields:
 
@@ -30,7 +30,7 @@ This article explains how to set up a mobile device menu item that lets workers 
     - **Work creation process** – Select *Movement by template*, because this type of work is what the menu item supports. The page is updated to provide settings that are relevant to this type of work.
     - **Display inventory status** – Select one of the following options:
         - *Yes* – Show inventory status on the device. In this case, if default values are set for the **From inventory status** and/or **To inventory status** fields, then those values are used as defaults. To set these default data field values, select **Default data** on the Action Pane.
-        - *No* – Use the default inventory status specified on **Warehouse management parameters** page or at the warehouse level (available at **Warehouse management** \> **Setup** \> **Warehouse** \> **Warehouses**). The **Default data** settings for inventory status aren't used in this case.
+        - *No* – Use the default inventory status specified on **Warehouse management parameters** page or at the warehouse level (available at **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**). The **Default data** settings for inventory status aren't used in this case.
 
         > [!Note]
         > If the moved items have only one inventory status, that status is the default status. If you only use one inventory status, you typically won't need to show this information on the device.
@@ -52,4 +52,4 @@ This article explains how to set up a mobile device menu item that lets workers 
         - *Automatically move full LP* – The system assumes that all warehouse movements are for entire license plates, regardless of the number items that a license plate contains. The worker is never prompted to scan the items. This option works well when, for example, all warehouse movements are for entire pallets.
 
 1. On the Action Pane, select **Save**.
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**, and add the new mobile device menu item to the appropriate new or existing menu.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu**, and add the new mobile device menu item to the appropriate new or existing menu.

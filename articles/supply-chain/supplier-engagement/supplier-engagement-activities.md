@@ -26,7 +26,7 @@ The **Activities** page provides a central place to track interactions, follow-u
 To open the **Activities** page:
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Menu** area.
-1. On the navigation pane, go to **General** \> **Activities**.
+1. On the navigation pane, go to **General** > **Activities**.
 1. On the **Activities** page, use the drop-down list at the top of the page to choose the types of activities to show. The default view is **My Activities**, which shows activities that are assigned to you. You can also use the search bar to filter activities by keyword, and you can sort the list by selecting the column headers.
 
 ## Add a new activity

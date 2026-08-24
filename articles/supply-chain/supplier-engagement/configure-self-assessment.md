@@ -26,7 +26,7 @@ Vendors see self-assessment questions in the supplier portal during onboarding. 
 Use the following procedure to manage self-assessment questions in the Supplier Engagement app.
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Configuration** area.
-1. On the navigation pane, go to **Self-assessment** \> **Questions**.
+1. On the navigation pane, go to **Self-assessment** > **Questions**.
 1. Either open an existing record to edit it or, on the command bar, select **New** to create a record. You can also select **Delete** to remove a selected record.
 1. Enter the following information for the new or selected record:
     - **Name** – Enter the question exactly as you want potential vendors to see it.

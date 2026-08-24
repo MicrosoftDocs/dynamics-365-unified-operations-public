@@ -33,7 +33,7 @@ To update the company logo on the supplier portal, you must have the following:
 To replace the company logo, follow these steps:
 
 1. Open the [Power Pages Management app](/power-pages/configure/portal-management-app).
-1. Go to **Content** \> **Web Files**.
+1. Go to **Content** > **Web Files**.
 1. Locate and open the web file named *companylogo.png*.
 1. Select the **Choose File** button next to the **File content** field.
 
@@ -49,7 +49,7 @@ To replace the company logo, follow these steps:
 After uploading the logo, verify that the content snippet that references it is active. To check the snippet, follow these steps:
 
 1. Open the [Power Pages Management app](/power-pages/configure/portal-management-app).
-1. Go to **Content** \> **Content Snippets**.
+1. Go to **Content** > **Content Snippets**.
 1. Set the view selector to **Active Content Snippets** and locate the snippet named *Home/CompanyLogo*. If you don't see the snippet, set the view selector to **Inactive Content Snippets** and try again.
 1. Open the *Home/CompanyLogo* snippet. If the snippet is inactive, select **Activate** on the command bar.
 

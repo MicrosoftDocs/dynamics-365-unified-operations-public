@@ -13,6 +13,7 @@ ms.custom:
 
 # Work with the Traceability app (preview)
 
+[!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
@@ -36,7 +37,7 @@ The Traceability app provides in-app learning to help you get started. To access
 To make a backward search, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Trace** \> **Genealogy trace**.
+1. On the left navigation pane, select **Trace** > **Genealogy trace**.
 1. In the search form, enter a unique identifier (such as a serial, batch, asset, or lot number) of a finished good to retrieve its genealogy, activity, and data collection. (If you're exploring the app using sample data, search for *bike-s0001*.)
 1. Traceability shows a genealogy tree for the serial number you entered.
 
@@ -66,7 +67,7 @@ For example, in the electric vehicles industry, manufacturers can use the serial
 To make a forward search, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Trace** \> **Genealogy trace**.
+1. On the left navigation pane, select **Trace** > **Genealogy trace**.
 1. Enter a unique identifier of a raw material or semi-product to see the higher-level assembly related to a selected genealogy tree node.
 
     :::image type="content" source="media/forward-search-example.png" alt-text="Example of forward search results in the graphic view" lightbox="media/forward-search-example.png":::
@@ -86,7 +87,7 @@ The *Find items* report helps you locate serial and batch numbers based on activ
 To make a find-items search, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Trace** \> **Find items**.
+1. On the left navigation pane, select **Trace** > **Find items**.
 1. Enter values for the following search fields as needed:
 
     - **Company** – The company associated with the activity you're looking for.
@@ -107,7 +108,7 @@ Use the *Troubleshooting* report to monitor failed transactions related to the o
 To monitor failed transactions, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Trace** \> **Failed transaction queue**.
+1. On the left navigation pane, select **Trace** > **Failed transaction queue**.
 1. A list of failed transactions opens. Each listed transaction shows the following information:
 
     - **Data** – The content of the failed message.

@@ -19,7 +19,7 @@ This article explains how to create a consignment replenishment order where you 
 
 ## Create a consignment replenishment order
 
-1. Go to **Procurement and sourcing** \> **Consignment** \> **Consignment replenishment orders**.
+1. Go to **Procurement and sourcing** > **Consignment** > **Consignment replenishment orders**.
 2. Select **New**.
 3. In the **Vendor account** field, select vendor **US-104** (you must select a vendor that's registered as an owner on the **Inventory owners** page).
 4. Select **OK**.

@@ -20,7 +20,7 @@ Master planning can replenish approved purchase requisitions. Therefore, to cove
 
 To include requisitions during the coverage calculation for a master plan, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. Create or select a master plan.
 1. On the **General** FastTab, set the **Include requisitions** option to *Yes*.
 1. Repeat steps 2 and 3 for each additional master plan where you want to include requisitions.
@@ -31,7 +31,7 @@ The *approved requisitions time fence* establishes how far back (in days) a mast
 
 ### Set the approved requisitions time fence for a coverage group
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**.
 1. Create or select a coverage group.
 1. On the **Other** FastTab, set the **Approved requisitions time fence (days)** field to the number of days to include in the time fence.
 1. Repeat steps 2 and 3 for each additional coverage group where you want to set an approved requisitions time fence.
@@ -40,7 +40,7 @@ The *approved requisitions time fence* establishes how far back (in days) a mast
 
 When you set an approved requisitions time fence for an individual master plan, the setting overrides the time fence setting for any applicable coverage group.
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. Create or select a master plan.
 1. On the **TIme fences in days** FastTab, set the **Approved requisitions time fence (days)** field to the number of days to include in the time fence.
 1. Repeat steps 2 and 3 for each additional master plan where you want to set an approved requisitions time fence.

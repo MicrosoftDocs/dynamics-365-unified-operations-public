@@ -22,7 +22,7 @@ When you import data from Demand planning into Supply Chain Management, the data
 You can manually clean up the staging data tables at any time by following these steps:
 
 1. Sign in to Supply Chain Management.
-1. Go to **System administration** \> **Periodic tasks** \> **Setup** \> **Demand planning app parameters**.
+1. Go to **System administration** > **Periodic tasks** > **Setup** > **Demand planning app parameters**.
 1. Open the **Periodic tasks** tab.
 1. In the **Delete data from jobs executed before** field, enter the newest date for which you want to keep staging data. All data that is older than this date will be deleted.
 1. Select **Run clean up job**.
@@ -32,6 +32,6 @@ You can manually clean up the staging data tables at any time by following these
 To automatically clean up staging data periodically, you can set up a batch job that runs the cleanup process once a month. To do this, follow these steps:
 
 1. Sign in to Supply Chain Management.
-1. Go to **System administration** \> **Periodic tasks** \> **Setup** \> **Demand planning app parameters**.
+1. Go to **System administration** > **Periodic tasks** > **Setup** > **Demand planning app parameters**.
 1. Open the **General** tab.
 1. Set **Clean up staging data** to *Yes*.

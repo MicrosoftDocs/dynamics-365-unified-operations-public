@@ -17,7 +17,7 @@ ms.custom:
 
 Service agreement groups are useful for sorting and filtering service agreements.
 
-1. Go to **Service management** \> **Setup** \> **Service agreements** \> **Service agreement groups**.
+1. Go to **Service management** > **Setup** > **Service agreements** > **Service agreement groups**.
 1. On the Action Pane, select **New** to create a new service agreement group.
 1. In the **Service agreement group** field, enter an ID for the service agreement group.
 1. In the **Description** field, enter a description for the service agreement group.

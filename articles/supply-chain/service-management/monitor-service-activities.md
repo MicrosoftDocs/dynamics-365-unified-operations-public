@@ -30,7 +30,7 @@ While monitoring the day's service activity, you notice that John, a service tec
 
 ## Open the Dispatch board page
 
-Go to **Service management** \> **Periodic** \> **Dispatch board**.
+Go to **Service management** > **Periodic** > **Dispatch board**.
 
 ## Related information
 

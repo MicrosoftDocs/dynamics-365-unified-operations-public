@@ -60,7 +60,7 @@ Before you can use nonconformance operation groups, your system must meet the fo
 
 ### Manage nonconformance operation groups
 
-1. Go to **Inventory management** \> **Setup** \> **Quality management* \> *Non conformance operation groups**.
+1. Go to **Inventory management** > **Setup** > **Quality management* \> *Non conformance operation groups**.
 1. Use the buttons on the Action Pane to create new nonconformance operation groups in the list pane or edit existing ones. (You can also delete existing groups.)
 1. On the heading of a new or selected group, enter a name and description for the group.
 1. On the **Operations** FastTab, use the buttons on the toolbar to add and remove operations that belong to the current group.

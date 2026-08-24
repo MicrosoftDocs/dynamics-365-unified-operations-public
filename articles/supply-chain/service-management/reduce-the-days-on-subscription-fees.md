@@ -18,7 +18,7 @@ To reduce the number of days of an existing subscription fee, you can create a n
 
 ## Reduce the days on a subscription fee
 
-1. Go to **Service management** \> **Service subscriptions** \> **All service subscriptions**. Select the service subscription, and on the Action Pane, select **Subscription fees**
+1. Go to **Service management** > **Service subscriptions** > **All service subscriptions**. Select the service subscription, and on the Action Pane, select **Subscription fees**
 
 2. In the **Subscription type** field, select **Reduction days**.
 

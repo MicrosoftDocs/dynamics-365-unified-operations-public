@@ -41,7 +41,7 @@ To use intercompany planning, prepare your system in the following way:
 
 Follow these steps to configure your master plan so that it includes planned downstream demand.
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. Select or create a master plan.
 1. On the **Intercompany planning** FastTab, set the following fields:
 
@@ -54,7 +54,7 @@ In multilevel pegging, you can view pegging across companies to see the initial 
 
 To view multilevel pegging information, follow these steps:
 
-1. Go to **Master planning** \> **Master planning** \> **Planned orders**.
+1. Go to **Master planning** > **Master planning** > **Planned orders**.
 1. Select or open a planned order.
 1. On the Action Pane, on the **View** tab, in the **Requirements** group, select **Multilevel pegging**.
 

@@ -52,7 +52,7 @@ To set up your system to manage test instrument calibration with Asset Managemen
 
 Each test instrument tag represents a physical test instrument and also links to the test instrument asset in Asset Management. Follow these steps to create a test instrument tag with an asset assigned:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test instruments** to open the test instruments page.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Test instruments** to open the test instruments page.
 1. Select or create a test instrument type record where an **Asset type** is assigned, as described in [Quality management test instruments](../../inventory/quality-test-instruments.md).
 1. On the Action Pane, select **Test instrument tags**.
 1. On the Action Pane, select **New** to add a new tag. Then make the following settings in the header for the new tag:

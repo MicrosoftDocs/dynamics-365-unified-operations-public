@@ -19,7 +19,7 @@ This article explains how to add price and vendor information to a purchase requ
 
 ## Create a requisition
 
-1. Go to **Procurement and sourcing** \> **Purchase requisitions** \> **Purchase requisitions prepared by me**.
+1. Go to **Procurement and sourcing** > **Purchase requisitions** > **Purchase requisitions prepared by me**.
 2. Select **New**.
 3. In the **Name** field, type a value.
 4. In the **Requested date** field, enter a date.

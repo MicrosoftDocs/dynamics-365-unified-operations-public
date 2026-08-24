@@ -12,6 +12,8 @@ ms.search.form:
 
 # Extend export control sales order functionality
 
+[!include [banner](../includes/banner.md)]
+
 This article provides information that's useful for developers who are extending sales order functionality for implementing export controls.
 
 During confirmation and similar posting steps, the system tracks the history of export control checks. You can view this history from the sales order header by selecting **Result**. The details of the check that was performed are shown. This data is available for reference from reports and other processes in the `COOExportControlSalesTableHistory` table. This table also provides helper methods for accessing common information.

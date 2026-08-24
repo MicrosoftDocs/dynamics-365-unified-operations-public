@@ -37,6 +37,6 @@ When you firm a planned order, the **Firming** dialog box provides an **Update m
 - *Single level standard* – Single-level marking is used. Single-level marking marks only the main item, not its bill of materials (BOM) components. Therefore, you can keep component assignment for production orders flexible after firming. Single-level marking enables the system to optimize for last-minute demand changes. In *standard* single-level marking, requirement orders are marked against their fulfillment orders, but fulfillment orders aren't marked if they have remaining quantity.
 - *Single level extended* – Single-level marking is used. In *extended* single-level marking, requirement orders are marked against their fulfillment orders, and fulfillment orders are always marked, regardless of whether any quantity remains.
 
-To set the default marking option for your system, go to **Master planning** \> **Setup** \> **Master planning parameters**. Then, on the **Standard update** tab, set the **Update marking** field to your preferred option.
+To set the default marking option for your system, go to **Master planning** > **Setup** > **Master planning parameters**. Then, on the **Standard update** tab, set the **Update marking** field to your preferred option.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

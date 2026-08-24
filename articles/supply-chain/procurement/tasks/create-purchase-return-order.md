@@ -27,7 +27,7 @@ This article explains how to create a return PO by using the **Credit note** act
 
 ## Create a new return PO
 
-1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**. The first step is to create a new purchase order to use as the return PO.  
+1. Go to **Procurement and sourcing** > **Purchase orders** > **All purchase orders**. The first step is to create a new purchase order to use as the return PO.  
 1. Select **New**.
 1. In the **Vendor account** field, specify the vendor you're returning to.
 1. Select **OK**.
@@ -55,7 +55,7 @@ This article explains how to create a return PO by using the **Credit note** act
 
 ## Confirm and record the shipment of goods
 
-1. Select **Actions** \> **Confirm**.
+1. Select **Actions** > **Confirm**.
 1. On the Action Pane, select **Receive**.
 1. Select **Product receipt**.
     - Use this page to record product receipt for purchase orders and to process the return of goods back to the vendor. Order lines with a negative quantity mean that goods are to be returned to the vendor, and the document that you can generate from this page can be used as packing slip for this use.

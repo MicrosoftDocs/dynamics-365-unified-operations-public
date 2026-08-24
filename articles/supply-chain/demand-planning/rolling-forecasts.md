@@ -45,11 +45,11 @@ To schedule a process, follow these steps:
 
 1. Go to one of the following pages, depending on the type of process that you want to schedule:
 
-    - **Data management** \> **Import**
-    - **Data management** \> **Export**
-    - **Operations** \> **Forecast profile**
-    - **Operations** \> **Calculations**
-    - **Operations** \> **Transformations**
+    - **Data management** > **Import**
+    - **Data management** > **Export**
+    - **Operations** > **Forecast profile**
+    - **Operations** > **Calculations**
+    - **Operations** > **Transformations**
 
 1. Select the profile that you want to schedule, or create a new profile.
 

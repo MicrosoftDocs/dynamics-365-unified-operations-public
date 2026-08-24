@@ -13,6 +13,8 @@ ms.custom:
 
 # Inventory Visibility adjustment offset
 
+[!include [banner](../includes/banner.md)]
+
 This article describes how to offset inventory adjustments that were updated through Inventory Visibility and then also updated in Microsoft Dynamics 365 Supply Chain Management. To prevent inventory quantities from being updated twice, you must offset the previously adjusted inventory from Supply Chain Management to Inventory Visibility.
 
 For example, you have an external sales system, such as a point of sale (POS) or e-commerce system, that makes external sales transactions. You have a data source that's named *POS* in Inventory Visibility. You also have a physical measure, *Sold*, that captures externally sold quantities. Your external system registers a sale of 10 units of item ID A0001, including all relevant dimensions. When you re-create the transaction in Supply Chain Management, if the re-created transaction is a sales order, you must set up sales order offset mappings. If you use an inventory adjustment journal to post inventory changes that are registered through your POS systems, you must set up inventory adjustment journal offset mappings.
@@ -35,7 +37,7 @@ Before you can use the features that are described in this article, your system 
 
 Follow these steps to enable and set up the Inventory Visibility adjustment offset feature.
 
-1. Go to **Inventory management** \> **Inventory Visibility** \> **Inventory Visibility integration parameters**.
+1. Go to **Inventory management** > **Inventory Visibility** > **Inventory Visibility integration parameters**.
 1. The **Inventory adjustment offset** tab includes two FastTabs: **Sales order** and **Inventory adjustment journal**. Each FastTab represents a type of transaction that you can set up automatic adjustment offsets for. On the appropriate FastTab, set the following fields:
 
     - **Inventory Visibility offset data source** – Specify the data source that you use Inventory Visibility to post inventory adjustments to (for example, *POS*).

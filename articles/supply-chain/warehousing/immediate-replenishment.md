@@ -32,7 +32,7 @@ Immediate replenishment is used during wave execution if allocation fails for a 
 
 ## Set up immediate replenishment
 
-- Go to **Warehouse management** \> **Setup** \> **Location directives**, and then, on the **Lines** tab, in the **Immediate replenishment template** list, select a replenishment template for wave demand.
+- Go to **Warehouse management** > **Setup** > **Location directives**, and then, on the **Lines** tab, in the **Immediate replenishment template** list, select a replenishment template for wave demand.
 
 The replenishment template is applied if the location directive line fails to allocate a dedicated unit of measure.
 

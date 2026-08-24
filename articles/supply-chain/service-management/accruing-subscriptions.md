@@ -42,17 +42,17 @@ When you post accrued revenue, the **WIP - subscription** account is debited wit
 
 ## Set up accounts for accrual of subscription revenue
 
-1. Go to **Project management and accounting** \> **Setup** \> **Posting** \> **Ledger posting setup**.
+1. Go to **Project management and accounting** > **Setup** > **Posting** > **Ledger posting setup**.
 
 2. Select the **Revenue accounts** tab, and select **WIP - subscription** or **Accrued revenue - subscription** to set up the accounts.
 
 ## Subscription group setup
 
-To be able to accrue revenue for subscriptions, the **Accrue revenue** check box must be selected. This is found on the **Subscription groups** page for the group that is attached to the subscription. Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+To be able to accrue revenue for subscriptions, the **Accrue revenue** check box must be selected. This is found on the **Subscription groups** page for the group that is attached to the subscription. Go to **Service management** > **Setup** > **Service subscriptions** > **Subscription groups**.
 
 ## Enable revenue accrual on a subscription group
 
-Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+Go to **Service management** > **Setup** > **Service subscriptions** > **Subscription groups**.
 
 ## Periods
 
@@ -71,7 +71,7 @@ The following table provides an overview of which accrual periods can be set up 
 Setting up the invoicing period is a mandatory part of the overall subscription group setup. You can decide whether to also set up an accrual period for the subscription group. If you set up an accrual period for the subscription group, this period is suggested in the **Period code** field. This field is found on the **Accrue subscription revenue** page, when you accrue subscription revenue. However, the accrual period is optional information about the subscription group.
 
 > [!NOTE]
-> Use the following path to open the **Accrue subscription revenue** page. Go to **Service management** \> **Periodic** \> **Service subscriptions** \> **Accrue subscription revenue**.
+> Use the following path to open the **Accrue subscription revenue** page. Go to **Service management** > **Periodic** > **Service subscriptions** > **Accrue subscription revenue**.
 
 ## Transactions
 
@@ -79,7 +79,7 @@ You can control the number of ledger transactions that are created when you post
 
 ## Specify the level of posting details to display for accrued transactions
 
-1. Go to **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.
+1. Go to **Project management and accounting** > **Setup** > **Project management and accounting parameters**.
 
 2. On the **Financial** tab, in the **Invoice** field, select **Total** or **Line**.
 

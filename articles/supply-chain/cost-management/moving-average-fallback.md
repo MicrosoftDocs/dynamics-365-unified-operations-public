@@ -25,7 +25,7 @@ To determine which of these cost values should be used in moving average calcula
 
 To select the fallback cost sequence for moving average calculations, follow these steps:
 
-1. Go to **Cost management** \> **Inventory accounting policies setup** \> **Parameters**.
+1. Go to **Cost management** > **Inventory accounting policies setup** > **Parameters**.
 2. On the **Inventory accounting** tab, in the **Moving average** section, set the **Fallback cost sequence** field to one of the following values:
 
     - *Last issue – Active cost – Item price* – This is the default sequence.

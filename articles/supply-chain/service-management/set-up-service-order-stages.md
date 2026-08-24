@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-1. Go to **Service management** \> **Setup** \> **Service orders** \> **Service stages**.
+1. Go to **Service management** > **Setup** > **Service orders** > **Service stages**.
 
 2. Select **New** to create a new record.
 

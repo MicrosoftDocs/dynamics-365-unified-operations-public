@@ -1,19 +1,21 @@
 ---
-title: Consolidate inventory transactions FAQ
+title: Consolidate inventory transactions FAQ (preview)
 description: Find answers to frequently asked questions about inventory transaction consolidation in Microsoft Dynamics 365 Supply Chain Management.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventTransArchiveProcessForm
 ms.topic: how-to
-ms.date: 11/12/2025
+ms.date: 08/24/2026
 ms.custom: 
   - bap-template
 ---
 
-# Consolidate inventory transactions FAQ
+# Consolidate inventory transactions FAQ (preview)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This article provides answers to frequently asked questions about inventory transaction consolidation in Microsoft Dynamics 365 Supply Chain Management.
 

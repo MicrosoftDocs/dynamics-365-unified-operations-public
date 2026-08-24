@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Deprecated master planning overview
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Although we strongly recommend that you migrate to Planning Optimization as soon as possible for the reasons outlined in this article, you can continue to use the deprecated master planning engine while you prepare to migrate without requesting an exception from Microsoft. For more information about how to do so, see [Continue to use deprecated master planning with existing companies](continue-using-deprecated-planning.md).

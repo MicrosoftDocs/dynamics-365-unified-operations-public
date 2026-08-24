@@ -56,7 +56,7 @@ You must be running Supply Chain Management version 10.0.47 or higher to use thi
 
 To choose the pro number generation mode, follow these steps:
 
-1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
+1. Go to **Transportation management** > **Setup** > **Transportation management parameters**.
 1. Open the **General** tab.
 1. On the **Performance settings** FastTab, set **Pro number generation mode** to one of the following values:
     - *Default* – Generate pro numbers inside the current business transaction (*transaction scoped*). The system keeps the number only if the process finishes successfully. If you cancel, or if an error stops the process, the system puts back the number and reuses it. This option enforces continuous sequencing but can increase locking under high parallel load.

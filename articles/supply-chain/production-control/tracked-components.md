@@ -31,7 +31,7 @@ Before you can use the features that are described in this article, your system 
 
 To enable registration of tracked component information in production processes, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters**.
 1. On the **Bills of materials** tab, set the **Enable tracked components** option to *Yes*.
 
 ## Enable registration of tracked components on products
@@ -43,7 +43,7 @@ Before you can use tracked components functionality for a product or its compone
 
 To create a tracked components policy, follow these steps:
 
-1. Go to **Production** \> **Setup** \> **Production** \> **Tracked components policy**.
+1. Go to **Production** > **Setup** > **Production** > **Tracked components policy**.
 1. Use the buttons on the Action Pane to add a new policy or edit an existing one.
 1. For the new or selected policy, set the following fields:
 

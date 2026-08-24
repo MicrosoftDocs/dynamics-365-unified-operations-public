@@ -24,7 +24,7 @@ When you set up the invoice update for batch processing, the sales order of type
 
 ## Post an invoice for a return order
 
-1. Go to **Accounts receivable** \>  **Orders** \> **All sales orders**.
+1. Go to **Accounts receivable** \>  **Orders** > **All sales orders**.
 
 1. Select a sales order for which **Returned order** is displayed in the **Order type** field.
 

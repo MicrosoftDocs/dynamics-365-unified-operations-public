@@ -28,13 +28,13 @@ When you create a vendor account, you enter information about the vendor. This i
 - Set up tax, delivery, invoice, and payment information for the vendor. By default, these settings are copied to new documents that you create for the vendor.
 - Set up default financial dimensions that are used to automatically post transactions with the vendor to financial accounts.
 
-To speed up the process of creating vendor accounts, you can create templates. To create a template, on the **Vendor** page, on the Action Pane, select **Options** \> **Record info**. Then select **Company accounts template**. Company account templates are shared with other users.  
+To speed up the process of creating vendor accounts, you can create templates. To create a template, on the **Vendor** page, on the Action Pane, select **Options** > **Record info**. Then select **Company accounts template**. Company account templates are shared with other users.  
 
 You can also create a user template for your own use. You can't delete a vendor that is associated with other records, such as contacts or products.
 
 ## Create, edit, and manage vendor accounts
 
-To create, edit, and manage vendor accounts, go to **Procurement and sourcing** \> **Vendors** \> **All vendors**. Learn more in [Set up vendor accounts](set-up-vendor-accounts.md).
+To create, edit, and manage vendor accounts, go to **Procurement and sourcing** > **Vendors** > **All vendors**. Learn more in [Set up vendor accounts](set-up-vendor-accounts.md).
 
 ## Vendor account numbers
 
@@ -52,7 +52,7 @@ For each vendor, you can define multiple addresses, each of which is used for a 
 
 You can store contacts for a vendor. These contacts can then be used on documents such as purchase orders or requests for quotation (RFQs).  
 
-To add contacts for a vendor, on the **All vendors** page, on the **Vendor** tab, in the **Set up** group, select **Contacts** \> **Add contacts**.  
+To add contacts for a vendor, on the **All vendors** page, on the **Vendor** tab, in the **Set up** group, select **Contacts** > **Add contacts**.  
 
 You can create vendor contacts from scratch. Alternatively, you can copy details from another person who is already registered in Supply Chain Management, and edit the information as you require.  
 

@@ -27,7 +27,7 @@ The **Compare item prices storage** report is helpful in cases where the output 
 
 Follow these steps to generate and store a **Compare item prices storage** report:
 
-1. Go to **Cost management** \> **Inquiries and reports** \> **Predetermined cost reports** \> **Compare item prices storage**.
+1. Go to **Cost management** > **Inquiries and reports** > **Predetermined cost reports** > **Compare item prices storage**.
 
 1. Select **New** to open the **Compare item prices** pane. Set the following options to define which prices to compare in your report:
 
@@ -46,7 +46,7 @@ Follow these steps to generate and store a **Compare item prices storage** repor
 
 After generating a report, you can view and explore it at any time as follows:
 
-1. Go to **Cost management** \> **Inquiries and reports** \> **Predetermined cost reports** \> **Compare item prices storage**.
+1. Go to **Cost management** > **Inquiries and reports** > **Predetermined cost reports** > **Compare item prices storage**.
 
 1. Select a report from the list.
 
@@ -69,7 +69,7 @@ Each report that you generate is stored in the **Compare item prices** data enti
 
 The following is an example of how to export a **Compare item prices storage** report:
 
-1. Go to **System administration** \> **Workspaces** \> **Data management**.
+1. Go to **System administration** > **Workspaces** > **Data management**.
 
 1. Select the **Export** button in the **Data management** section.
 

@@ -24,7 +24,7 @@ Before you can attach items to service objects, you must create the items on the
 
 Use the following steps to attach an inventory item to a service object:
 
-1. Go to **Service management** \> **Setup** \> **Service objects** \> **Service objects**.
+1. Go to **Service management** > **Setup** > **Service objects** > **Service objects**.
 
 2. In the **Item number** field, select the item to attach to the service object.
 

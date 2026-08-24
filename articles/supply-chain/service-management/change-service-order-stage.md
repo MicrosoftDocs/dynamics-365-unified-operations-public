@@ -16,7 +16,7 @@ ms.search.form: SMAServiceOrderTable
 
 Follow these steps to move a service order to the next stage in the service workflow or revert it to a previous stage.
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**.
+1. Go to **Service management** > **Service orders** > **Service orders**.
 
 2. Select the service order, and then select the **Dispatch** tab.
 

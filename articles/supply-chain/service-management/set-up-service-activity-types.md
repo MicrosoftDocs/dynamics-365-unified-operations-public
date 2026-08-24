@@ -17,8 +17,8 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 1. Do one of the following steps:
-    - Go to **Sales and marketing** \> **Setup** \> **Activities** \> **Activity types**.
-    - Go to **Organization administration** \> **Setup** \> **Activities** \> **Activity types**.
+    - Go to **Sales and marketing** > **Setup** > **Activities** > **Activity types**.
+    - Go to **Organization administration** > **Setup** > **Activities** > **Activity types**.
 
 1. Add a new activity type line.
 1. In the **Type** field, enter a name for the activity type.

@@ -56,7 +56,7 @@ To enable the WMS feature for Inventory Visibility, follow these steps:
     1. *Inventory Visibility integration* (As of Supply Chain Management version 10.0.45, this feature is turned on by default.)
     1. *Enable warehouse items in Inventory Visibility* (As of Supply Chain Management version 10.0.45, this feature is turned on by default. As of version 10.0.49, it's mandatory and can't be turned off.)
 
-1. Go to **Inventory Management** \> **Setup** \> **Inventory Visibility integration parameters**.
+1. Go to **Inventory Management** > **Setup** > **Inventory Visibility integration parameters**.
 1. On the **Enable WMS items** tab, set the **Enable WMS items sync** option to *Yes*. Then save the setup.
 1. Select **Sync WMS data** to sync the WMS data to Inventory Visibility. This step is required because, when you first enable the synchronization of WMS items, only subsequent changes to on-hand quantities of WMS items will be synced to Inventory Visibility. When you select **Sync WMS data**, the system syncs all available WMS data to Inventory Visibility. This synchronization might take a long time, depending on your data volume. Therefore, we recommend that you complete this step during off-peak hours.
 

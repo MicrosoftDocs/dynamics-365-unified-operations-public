@@ -19,7 +19,7 @@ This article explains asset lifecycle states and lifecycle models in Asset Manag
 
 Asset lifecycle states can be set up in asset lifecycle models, where you can define the required lifecycle states for various types of assets. You first set up lifecycle states. You then create a lifecycle model and select lifecycle states for it.
 
-1. Select **Asset management** \> **Setup** \> **Assets** \> **Lifecycle states**.
+1. Select **Asset management** > **Setup** > **Assets** > **Lifecycle states**.
 2. Select **New** to create a new asset lifecycle state.
 3. In the **Lifecycle state** field, enter the lifecycle state ID.
 4. In the **Name** field, enter a description.
@@ -34,7 +34,7 @@ Asset lifecycle states can be set up in asset lifecycle models, where you can de
 
 After you've created the required asset lifecycle states, you can set up lifecycle states in asset lifecycle models.
 
-1. Select **Asset management** \> **Setup** \> **assets** \> **lifecycle models**.
+1. Select **Asset management** > **Setup** > **assets** > **lifecycle models**.
 2. Select **New** to create a new asset lifecycle model.
 3. In the **Lifecycle model** field, enter the lifecycle model ID.
 4. In the **Name** field, enter a description.

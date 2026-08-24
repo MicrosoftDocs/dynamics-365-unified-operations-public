@@ -25,7 +25,7 @@ Two fields are used to configure the receiving process. The **Transfer order rec
 
 To configure the receiving process for a warehouse, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 1. On the **General** tab, on the **Receiving** FastTab, set the following fields:
 
     - **Transfer order receiving process** – Specify whether the registration and cost-update processes should be split for transfer orders.

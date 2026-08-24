@@ -33,7 +33,7 @@ The **Onhand index query preload results** page provides a view for the *On-han
 >
 > If you change the settings for a calculated measure, data on the **Onhand index query preload results** page isn't automatically updated until the related product data is modified.
 >
-> If the **Onhand index query preload results** page doesn't show all the on-hand information that you expect, go to **Inventory management** \> **Periodic tasks** \> **Inventory Visibility integration**, disable the batch job, and then reenable it to do the initial push. All data will be synced to the *On-hand Index Query Preload Results* entity within 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+> If the **Onhand index query preload results** page doesn't show all the on-hand information that you expect, go to **Inventory management** > **Periodic tasks** > **Inventory Visibility integration**, disable the batch job, and then reenable it to do the initial push. All data will be synced to the *On-hand Index Query Preload Results* entity within 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
 <!--KFM: It ins't clear what the "set number", "group by", or "order" settings mean or do. We should add a section that explains this. -->
 

@@ -33,7 +33,7 @@ Before you can use the features that are described in this article, your system 
 
 To set up the electronic signature requirements for the types of records that are used for EBRs, follow these steps:
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic signature** \> **Electronic signature requirements**.
+1. Go to **Organization administration** > **Setup** > **Electronic signature** > **Electronic signature requirements**.
 1. In the left pane, select the row for a feature that you want to turn electronic signature requirements on or off for. For EBRs, the usual expectation is that signatures are required for the following features (as listed in the **Name** column):
 
     - *Activate BOM version*
@@ -55,7 +55,7 @@ To set up the electronic signature requirements for the types of records that ar
 
 To enable EBRs, follow these steps:
 
-1. Go to **Production control** \> **Setup** \> **Production control parameters**.
+1. Go to **Production control** > **Setup** > **Production control parameters**.
 1. On the **Electronic batch record** tab, set the following fields:
 
     - **Use electronic batch records** – Set this option to *Yes* to enable EBRs in your system. When you change the setting to *Yes*, a message notifies you that you must remove approvals on bills of materials (BOMs), formulas, or routes before you edit those records. In this way, the system can capture electronic signatures of the users who perform the edits. While EBRs are enabled, the *block editing* functions for routes and BOMs/formulas are automatically enabled and can't be disabled. The block editing feature for routes and BOMs/formulas prevents those records from being edited after they are approved. Approval must be removed before the records are edited. Then, after editing is completed, approval is required before the records can be used in production.
@@ -67,7 +67,7 @@ To enable EBRs, follow these steps:
 
 Because EBRs are maintained independently of the batch order or production order, a number sequence must be established.
 
-1. Go to **Production control** \> **Setup** \> **Production control parameters**.
+1. Go to **Production control** > **Setup** > **Production control parameters**.
 1. On the **Number sequences** tab, set up a new number sequence for the row where the **Reference** field is set to *Batch production record*.
 
 ### Set up electronics signature requirements
@@ -88,7 +88,7 @@ Each of these journal types provides the following electronic signature options:
 
 To add work instructions to a formula line, follow these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Open or select the item that uses the formula that you want to add instructions to.
 1. On the Action Pane, on the **Engineer** tab, select **Formula versions**.
 1. In the list pane, select the formula version that you want to edit.
@@ -109,7 +109,7 @@ To add work instructions to a formula line, follow these steps:
 
 To add work instructions to a BOM line, follow these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Open or select the item that uses the BOM that you want to add instructions to.
 1. On the Action Pane, on the **Engineer** tab, select **BOM versions**.
 1. In the list pane, select the BOM version that you want to edit.
@@ -130,7 +130,7 @@ To add work instructions to a BOM line, follow these steps:
 
 To add work instructions for an operation line, you must edit the route. When EBRs are used, formula lines for approved routes can't be edited. To add work instructions to a route, follow these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Open or select the item that uses the route that you want to edit.
 1. On the Action Pane, on the **Engineer** tab, in the **View** group, select **Route**.
 1. In the top section, select the route version that you want to edit.
@@ -149,7 +149,7 @@ To add work instructions for an operation line, you must edit the route. When EB
 
 When test plan instructions are associated with a line in a test group, quality orders that reference the test group show the instructions as read-only text. To add test plan instruction to a test group, follow these steps:
 
-1. Go to **Inventory Management** \> **Setup** \> **Quality control** \> **Test groups**.
+1. Go to **Inventory Management** > **Setup** > **Quality control** > **Test groups**.
 1. In the top section, on the **Overview** tab, select the test group that you want to add instructions to.
 1. In the bottom section, on the **Overview** tab, select the test that you want to add instructions to.
 1. On the **Test plan notes** tab, select **Add** on the toolbar to add work instructions for the selected test line.
@@ -175,7 +175,7 @@ The query results show all applicable route versions. The BOM/formula versions a
 
 To run an MMR query, follow these steps:
 
-1. Go to **Production control** \> **Inquiries** \> **Electronic batch records** \> **Master manufacturing record**.
+1. Go to **Production control** > **Inquiries** > **Electronic batch records** > **Master manufacturing record**.
 1. At the top of the page, set up the query by specifying one or more of the following criteria:
 
     - **Item number** – Select the item to list the manufacturing information for. The dropdown list includes only items where the **Production type** field is set to *BOM*, *Formula*, or *Planning item*.
@@ -199,7 +199,7 @@ The query contains the BOM/formula version that was used in the production proce
 
 To run a BPR query, follow these steps:
 
-1. Go to **Production control** \> **Inquiries** \> **Electronic batch records** \> **Batch production record**.
+1. Go to **Production control** > **Inquiries** > **Electronic batch records** > **Batch production record**.
 1. At the top of the page, set up the query by specifying one or more of the following criteria:
 
     - **Item number** – Select the item to list the manufacturing information for. The dropdown list includes only items where the **Production type** field is set to *BOM*, *Formula*, or *Planning item*.

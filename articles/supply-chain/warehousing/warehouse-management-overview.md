@@ -21,7 +21,7 @@ The Warehouse management module lets you manage warehouse processes in manufactu
 
 To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of your company.
 
-- Go to the **Warehouse management parameters** page under **Warehouse management** \> **Setup** to set up general warehouse parameters.
+- Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.
 
 You must configure components for inbound and outbound warehouse process workflows according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
 

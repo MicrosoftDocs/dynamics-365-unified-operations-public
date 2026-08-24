@@ -25,7 +25,7 @@ On the **Route groups** page, you can configure whether a production job uses es
 
 Follow these steps to configure a route group.
 
-1. Go to **Production control** \> **Setup** \> **Routes** \> **Route groups**.
+1. Go to **Production control** > **Setup** > **Routes** > **Route groups**.
 1. Select or create a route group.
 1. On the **General** FastTab, set the **Run time** option to one of the following values:
 
@@ -50,7 +50,7 @@ Before you can use the **Skip time adjustments** option, your system must meet t
 
 Follow these steps to configure whether time adjustments are made to production orders as part of the processing of workers' daily registrations.
 
-1. Go to **Production control** \> **Setup** \> **Manufacturing execution** \> **Production order defaults**.
+1. Go to **Production control** > **Setup** > **Manufacturing execution** > **Production order defaults**.
 1. On the **General** tab, set the **Skip time adjustments** option to one of the following values:
 
     - *No* – Apply adjustments when a supervisor reviews and edits the recorded work times that each worker registers to record time and attendance.

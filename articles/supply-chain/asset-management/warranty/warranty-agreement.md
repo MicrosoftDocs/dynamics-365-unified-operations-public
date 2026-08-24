@@ -25,7 +25,7 @@ The first step is to create any vendor warranty agreements that you have for you
 
 A warranty agreement can include several agreement lines to cover the warranty for work hours, expenses, and items.
 
-1. Select **Asset management** \> **Setup** \> **Assets** \> **Warranty**.
+1. Select **Asset management** > **Setup** > **Assets** > **Warranty**.
 2. Select **New** to create a product.
 3. In the **Warranty** field, enter a warranty ID. 
 4. In the **Name** field, enter a description.

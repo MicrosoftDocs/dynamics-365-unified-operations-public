@@ -11,7 +11,7 @@ ms.search.form:  WMSWorkloadCapacity
 
 # Schedule workload capacity
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can schedule workload capacity for warehouses, and you can also project the current and future workloads for the workers in individual warehouses. You can project the workload for the whole warehouse, or you can project the workload separately for incoming and outgoing workloads.
 
@@ -30,7 +30,7 @@ To schedule and view workloads for warehouses, you must complete the following t
 
 ### Create a workload capacity setup for a warehouse
 
-1. Select **Inventory management** \> **Setup** \> **Warehouse monitoring** \> **Workload capacity**.
+1. Select **Inventory management** > **Setup** > **Warehouse monitoring** > **Workload capacity**.
 2. On the Action Pane, select **New** to create a workload capacity setup.
 3. On the **Warehouses** FastTab, select **New**, and then enter values on the line to associate a warehouse with the workload capacity setup.
 4. Select the **Combined inbound and outbound workload** check box if the **Workload capacity** report should show the total workload for incoming and outgoing transactions in one view.
@@ -53,14 +53,14 @@ If this information isn't specified correctly, you receive a message when you ge
 
 ### Associate a workload capacity setup with a master plan
 
-1. Select **Inventory management** \> **Periodic** \> **Schedule workload**.
+1. Select **Inventory management** > **Periodic** > **Schedule workload**.
 2. In the **Master plan** field, select the master plan to use for workload projections.
 3. In the **Number of days** field, specify the number of days that the workload projection covers.
 4. In the **Workload** field, select the workload setup to associate with the master plan.
 
 ### View workload capacity
 
-1. Select **Inventory management** \> **Inquiries and reports** \> **Physical inventory reports** \> **Workload capacity**.
+1. Select **Inventory management** > **Inquiries and reports** > **Physical inventory reports** > **Workload capacity**.
 2. In the **Number of columns** field, specify the number of columns to show on the report.
 3. In the **Order type** field, select **Planned and confirmed**, **Planned**, or **Confirmed** to indicate the type of orders to project on the report.
 4. In the **Load type** field, select a load type to specify whether the workload capacity should be projected for volume or weight.

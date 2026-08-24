@@ -16,11 +16,11 @@ ms.search.form: WMSJournalTable
 
 When registering a returned item, you may determine that an item should be sent for inspection before it's returned to inventory or disposed of in some other way.
 
-1. Go to **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.
+1. Go to **Inventory management** > **Journals** > **Item arrival** > **Item arrival**.
 
     \-or-
 
-    Go to **Inventory management** \> **Journals** \> **Item arrival** \> **Production input**.
+    Go to **Inventory management** > **Journals** > **Item arrival** > **Production input**.
 
 1. On the **Location journal** form, register the receipt of an item as usual.
 

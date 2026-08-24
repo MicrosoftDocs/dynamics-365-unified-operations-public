@@ -19,7 +19,7 @@ This procedure demonstrates how to use item tracing to identify where items or r
 
 ## Trace an item backwards using a known batch number
 
-1. Go to **Inventory management** \> **Inquiries and reports** \> **Tracking dimensions** \> **Item tracing**.
+1. Go to **Inventory management** > **Inquiries and reports** > **Tracking dimensions** > **Item tracing**.
 2. In the **Item number** field, select *P9100*.
 3. In the list, select the link in the selected row.
 4. In the **Forward or backward** field, select *Backward*.

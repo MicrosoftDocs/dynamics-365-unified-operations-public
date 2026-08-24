@@ -28769,6 +28769,11 @@
       "source_path": "articles/supply-chain/inventory/archive-inventory-transactions.md",
       "redirect_url": "/dynamics365/supply-chain/inventory/inventory-transaction-consolidation",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/procurement-agent-impact-analysis-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-impact-analysis-setup-wizard",
+      "redirect_document_id": false
     }
   ]
 

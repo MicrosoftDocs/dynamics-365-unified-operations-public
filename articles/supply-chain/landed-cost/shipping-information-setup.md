@@ -13,7 +13,7 @@ ms.custom:
 
 # Shipping information setup
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to set up shipping information for the **Landed cost** module.
 
@@ -21,7 +21,7 @@ This article describes how to set up shipping information for the **Landed cost*
 
 Descriptions of goods help identify a voyage, shipping container, or folio of goods, and the goods in it. You can select a description of goods on the shipping container header or the folio header.
 
-To work with descriptions of goods, go to **Landed cost** \> **Shipping information setup** \> **Description of goods**. There, you can view, open, create, and delete records for descriptions of goods. The following table describes the fields that are available for each record.
+To work with descriptions of goods, go to **Landed cost** > **Shipping information setup** > **Description of goods**. There, you can view, open, create, and delete records for descriptions of goods. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -32,7 +32,7 @@ To work with descriptions of goods, go to **Landed cost** \> **Shipping informat
 
 A vessel is the unique name of a ship or vessel that a shipping company or agency uses. When you create a voyage, you must always either select or enter a vessel for it. If you often use the same vessels, you can make it faster and easier to create a new voyage by creating a vessel record for each of them. This approach lets users select the vessel from a list rather than enter the name or number manually each time.
 
-To work with vessels, go to **Landed cost** \> **Shipping information setup** \> **Vessels**. There, you can view, open, create, and delete records for vessels. The following table describes the fields that are available for each record.
+To work with vessels, go to **Landed cost** > **Shipping information setup** > **Vessels**. There, you can view, open, create, and delete records for vessels. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -44,7 +44,7 @@ To work with vessels, go to **Landed cost** \> **Shipping information setup** \>
 
 Each exporter record identifies a vendor or exporter that you can define as the vendor for a voyage. You can associate the exporter with a voyage and use it for reporting.
 
-To work with exporters, go to **Landed cost** \> **Shipping information setup** \> **Exporters**. There, you can view, open, create, and delete records for exporters. The following table describes the fields that are available for each record.
+To work with exporters, go to **Landed cost** > **Shipping information setup** > **Exporters**. There, you can view, open, create, and delete records for exporters. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -55,7 +55,7 @@ To work with exporters, go to **Landed cost** \> **Shipping information setup** 
 
 Use commodity codes to help with customs identification and the calculation of duty rates for goods. You can select commodity codes on the **Released products** page. Use commodity codes for reporting.
 
-To work with commodity codes, go to **Landed cost** \> **Shipping information setup** \> **Commodity codes**. There, you can view, open, create, and delete records for commodity codes. The following table describes the fields that are available for each record.
+To work with commodity codes, go to **Landed cost** > **Shipping information setup** > **Commodity codes**. There, you can view, open, create, and delete records for commodity codes. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -66,7 +66,7 @@ To work with commodity codes, go to **Landed cost** \> **Shipping information se
 
 Customs descriptions help identify goods for customs purposes. You can select a customs description on the **Released products** page or on purchase order lines.
 
-To work with customs descriptions, go to **Landed cost** \> **Shipping information setup** \> **Customs description**. There, you can view, open, create, and delete records for customs descriptions. The following table describes the fields that are available for each record.
+To work with customs descriptions, go to **Landed cost** > **Shipping information setup** > **Customs description**. There, you can view, open, create, and delete records for customs descriptions. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|

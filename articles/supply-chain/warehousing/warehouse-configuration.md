@@ -86,7 +86,7 @@ If multiple workers must be able to process work for some of your warehouse oper
 
 General warehouse work policies let you influence how warehouse work is created and handled. Set up policies to control options such as default work priority values, deferred work processing, work transaction dates, and more. To view and set these policies, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 1. Open the **General** tab.
 1. Expand the **Work** FastTab.
 1. Select policies and set other work options available on this FastTab. Each field has tooltip help. To see the tooltip for a field, hover your mouse pointer over the relevant field label.

@@ -20,7 +20,7 @@ For an engineering product, changes to the lifecycle state connect to the produc
 
 ## Create and manage product lifecycle states
 
-To work with product lifecycle states, go to **Engineering change management \> Setup \> Product lifecycle state** or **Product information management** \> **Setup** \> **Product lifecycle state**. Both paths open the same **Product lifecycle state** page. For complete details about how to work with the settings here to create and configure your lifecycle states, go to [Product lifecycle states](../pim/product-lifecycle.md).
+To work with product lifecycle states, go to **Engineering change management \> Setup \> Product lifecycle state** or **Product information management** > **Setup** > **Product lifecycle state**. Both paths open the same **Product lifecycle state** page. For complete details about how to work with the settings here to create and configure your lifecycle states, go to [Product lifecycle states](../pim/product-lifecycle.md).
 
 ## Lifecycle states for released products and product variants
 

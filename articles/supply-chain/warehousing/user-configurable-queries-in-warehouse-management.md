@@ -11,6 +11,8 @@ ms.search.form: SysQueryForm, WHSWaveTemplateTable, WHSWorkTemplateTable, WHSLoc
 
 # User-configurable queries in warehouse management
 
+[!include [banner](../includes/banner.md)]
+
 The purpose of user-configurable queries is to limit the data that is processed. You might want to limit this data either because of business requirements or for performance reasons. The exact behavior of a query and the way that the results are used depend on the functional areas where that query is used. However, most user-configurable queries have the same basic structure and behavior. The logic resembles the logic of regular SQL queries.
 
 Many places in the **Warehouse management** module must be set up for user-configurable queries. Here are some typical examples:

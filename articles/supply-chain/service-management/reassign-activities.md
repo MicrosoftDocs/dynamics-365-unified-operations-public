@@ -18,7 +18,7 @@ This article describes how to reassign service activities from one worker to ano
 
 Use the following steps to reassign an activity to another worker:
 
-1. Go to **Service management** \> **Periodic** \> **Dispatch board**.
+1. Go to **Service management** > **Periodic** > **Dispatch board**.
 
 2. In the **From date** and **To date** fields, enter dates to define the time period to view activities for.
 

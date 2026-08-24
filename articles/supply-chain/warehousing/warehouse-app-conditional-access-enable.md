@@ -13,6 +13,8 @@ ms.custom:
 
 # Use Microsoft Entra Conditional Access with the Warehouse Management mobile app
 
+[!include [banner](../includes/banner.md)]
+
 The Warehouse Management mobile app supports *brokered authentication*, a sign-in method where an OS-level identity broker, such as Microsoft Authenticator or Intune Company Portal, handles authentication and token management on behalf of the app. When you use brokered authentication, the broker provides Microsoft Entra ID with device identity, compliance status, and security signals during every authentication request.
 
 Brokered authentication makes the app compatible with [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies. Conditional Access is an optional, opt-in policy engine in Microsoft Entra ID that your organization's IT administrators can configure to control access based on conditions such as user identity, device compliance, location, and risk level. For example, you might use Conditional Access to require multifactor authentication (MFA) or block access from unmanaged devices. Conditional Access isn't required to run the Warehouse Management mobile app—enable it only if your organization chooses to enforce these policies.

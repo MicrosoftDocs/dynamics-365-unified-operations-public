@@ -20,7 +20,7 @@ ms.custom:
 
 To assign a price group to a trade agreement, follow these steps:
 
-1. Go to **Pricing management** \> **During-sales pricing** \> **Sales trade agreement price** \> **Trade agreements journals**.
+1. Go to **Pricing management** > **During-sales pricing** > **Sales trade agreement price** > **Trade agreements journals**.
 1. You can assign price groups only to journals that haven't yet been posted. Therefore, set the **Show** filter to *Not posted*.
 1. Find and select the trade agreement journal that you want to assign a price group to.
 1. In the **Price group** column, specify the price group that should be inherited by all lines that are added to the journal.
@@ -39,8 +39,8 @@ To assign price groups to a price adjustment or discount, follow these steps:
 
 1. Follow one of these steps:
 
-    - To work with a price adjustment, go to **Pricing management** \> **During-sales pricing** \> **Price adjustments** \> **Margin component price adjustments**.
-    - To work with a discount, go to **Pricing management** \> **During-sales pricing** \> **Discounts** \> **All discounts**.
+    - To work with a price adjustment, go to **Pricing management** > **During-sales pricing** > **Price adjustments** > **Margin component price adjustments**.
+    - To work with a discount, go to **Pricing management** > **During-sales pricing** > **Discounts** > **All discounts**.
 
 1. In the list pane, select the price adjustment or discount that you want to assign a price group to. The price adjustment or discount that you select must have a status of *Disabled*. (You can view the status on the **General** FastTab.)
 1. On the Action Pane, select **Price groups**.

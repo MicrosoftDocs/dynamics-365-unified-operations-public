@@ -24,7 +24,7 @@ The Inventory Visibility diagnostic tool is turned on by default, and no extra s
 ## Use the Inventory Visibility diagnostic tool
 
 1. Sign in to your Supply Chain Management environment.
-1. Go to **Inventory Management** \> **Set up** \> **Inventory Visibility diagnostic tool**.
+1. Go to **Inventory Management** > **Set up** > **Inventory Visibility diagnostic tool**.
 1. On the **Inventory Visibility diagnostic tool** page, select **Run diagnostic**.
 1. In the **Inventory Visibility on-hand diagnostic process** dialog box, set the following options:
 
@@ -35,5 +35,5 @@ The Inventory Visibility diagnostic tool is turned on by default, and no extra s
 
 1. Select the **Filter** link to open a dialog box where you can set up a filter to limit the set of items that's checked. By default, the **No open quantities** option for the filter is set to *No*. Therefore, the tool checks only for items that have open quantities. You can change the setting of this option as you require.
 1. Select **OK** to apply your settings and return to the **Inventory Visibility diagnostic tool** page.
-1. You receive the following message: "The Inventory Visibility on-hand diagnostic process job is added to the batch queue." To monitor the progress of the batch job, go to **System Administrator** \> **Inquiries** \> **Batch Jobs**.
+1. You receive the following message: "The Inventory Visibility on-hand diagnostic process job is added to the batch queue." To monitor the progress of the batch job, go to **System Administrator** > **Inquiries** > **Batch Jobs**.
 1. When the job has finished running, the Inventory Visibility diagnostic tool shows the results of the test. If you chose not to fix discrepancies, you can fix them now. Rerun the diagnostic, and set the **Fix inventory discrepancy** option and/or the **Only check previous mismatched data** option to *Yes*.

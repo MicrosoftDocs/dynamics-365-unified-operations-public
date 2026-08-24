@@ -16,7 +16,7 @@ ms.search.form: EcoResProductDetailsExtended, EcoResProductPerCompanyImagePart, 
 
 This procedure shows how to add an image to a product.
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. In the grid, find and select the product you want to add an image for.
 1. On the far-right pane, select the **Related information** button :::image type="icon" source="../media/related-information-button.png" border="false"::: to open the **Related information** pane (also called the FactBox pane).
 1. On the **Related information** pane, expand the **Product image** FastTab.

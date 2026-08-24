@@ -23,7 +23,7 @@ Automatic charges (auto charges) are automatically applied when you create a sal
 
 The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to apply charges automatically in the purchase order. To complete this setup, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**.
+1. Go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing parameters**.
 1. On the **Prices** tab, on the **Prices** FastTab, set the following fields:
 
     - **Find auto charges for header** – Set this option to *Yes* if charges should automatically be applied to purchase order headers.
@@ -31,7 +31,7 @@ The **Procurement and sourcing parameters** page has a few settings that are esp
 
 The **Accounts receivable parameters** page also has a few settings that are especially relevant when you want to apply charges automatically in the sales order. To complete this setup, follow these steps:
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Prices** FastTab, set the following fields:
 
     - **Find auto charges for header** – Set this option to *Yes* if charges should automatically be applied to sales quotation and sales order headers.
@@ -43,8 +43,8 @@ To apply charges, you must first define charges codes.
 
 1. Follow one of these steps:
 
-    - For purchase orders: Go to **Procurement and sourcing** \> **Setup** \> **Charges** \> **Charges code**.
-    - For sales orders: Go to **Accounts receivable** \> **Setup** \> **Charges** \> **Charges code**.
+    - For purchase orders: Go to **Procurement and sourcing** > **Setup** > **Charges** > **Charges code**.
+    - For sales orders: Go to **Accounts receivable** > **Setup** > **Charges** > **Charges code**.
 
 1. On the Action Pane, select **New** to create a charges code.
 1. In the header of the new record, set the following fields:
@@ -56,7 +56,7 @@ To apply charges, you must first define charges codes.
     - **Maximum amount** – Enter the maximum amount that's allowed for the charges code. This field is used to validate charges for vendor invoices. It's available only for purchase orders.
 
         > [!NOTE]
-        > To turn on the functionality for validating charges for purchase orders, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**. On the **Invoice validation** FastTab, in the **Invoice validation** section, set the **Enable invoice matching validation** option to *Yes*.
+        > To turn on the functionality for validating charges for purchase orders, go to **Accounts payable** > **Setup** > **Accounts payable parameters**. On the **Invoice validation** FastTab, in the **Invoice validation** section, set the **Enable invoice matching validation** option to *Yes*.
 
 1. The **Posting** FastTab includes **Debit** and **Credit** sections. Set the following fields, depending on the ledger that you want to post the charges to:
 
@@ -74,28 +74,28 @@ Charge groups automatically apply specific charges to a group of customers or ve
 
 To create charge groups for purchase orders, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Charges** \> **Vendor charges group**.
+1. Go to **Procurement and sourcing** > **Setup** > **Charges** > **Vendor charges group**.
 1. On the Action Pane, select **New** to add a row to the grid, and then set the following fields:
 
     - **Charges group** – Enter the name of the charge group.
     - **Description** – Enter a description of the charge group.
 
 1. On the Action Pane, select **Save**.
-1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**, and either open an existing vendor or create a new vendor.
+1. Go to **Procurement and sourcing** > **Vendors** > **All vendors**, and either open an existing vendor or create a new vendor.
 1. On the **Purchase order defaults** FastTab, in the **Purchase order** section, set the **Charges group** field to the charge group that you created.
 
 ### Charge groups for sales orders
 
 To create charge groups for sales orders, follow these steps:
 
-1. Go to **Accounts receivable** \> **Setup** \> **Charges** \> **Customer charge groups**.
+1. Go to **Accounts receivable** > **Setup** > **Charges** > **Customer charge groups**.
 1. On the Action Pane, select **New** to add a row to the grid, and then set the following fields:
 
     - **Charges group** – Enter the name of the charge group.
     - **Description** – Enter a description of the charge group.
 
 1. On the Action Pane, select **Save**.
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and either open an existing customer or create a new customer.
+1. Go to **Accounts receivable** > **Customers** > **All customers**, and either open an existing customer or create a new customer.
 1. On the **Sales order defaults** FastTab, in the **Sales order** section, set the **Charges group** field to the charge group that you created.
 
 ## Define auto charges
@@ -104,8 +104,8 @@ After you set up your charge codes, follow these steps to define the auto charge
 
 1. Follow one of these steps:
 
-    - For purchase orders: Go to **Procurement and sourcing** \> **Setup** \> **Charges** \> **Automatic charges**.
-    - For sales orders: Go to **Accounts receivable** \> **Setup** \> **Charges setup** \> **Auto charges**.
+    - For purchase orders: Go to **Procurement and sourcing** > **Setup** > **Charges** > **Automatic charges**.
+    - For sales orders: Go to **Accounts receivable** > **Setup** > **Charges setup** > **Auto charges**.
 
 1. In the list pane, in the **Level** field, select the level where your auto charge applies:
 

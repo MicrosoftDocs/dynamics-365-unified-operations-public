@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-1. Go to **Service management** \> **Perform periodic tasks** \> **Dispatch board**.
+1. Go to **Service management** > **Perform periodic tasks** > **Dispatch board**.
 1. On the Action Pane, select **Adjust view settings**.
 1. Use the **Adjust view settings** dialog to select the date range and other options for the service activities you want to see. Then select **OK**.
 1. Expand each dispatch team list.

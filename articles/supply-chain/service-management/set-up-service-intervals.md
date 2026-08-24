@@ -17,7 +17,7 @@ ms.custom:
 
 Service interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders.
 
-1. Go to **Service management** \> **Setup** \> **Service agreements** \> **Service intervals**.
+1. Go to **Service management** > **Setup** > **Service agreements** > **Service intervals**.
 2. On the Action Pane, select **New**.
 3. Enter the ID and description of the service interval.
 4. In the **Range** field, select the range.
@@ -28,7 +28,7 @@ Service interval indicates the frequency with which service order lines are crea
 
 You want to create a service interval of 10 days, so you take the following steps.
 
-1. Go to **Service management** \> **Setup** \> **Service agreements** \> **Service intervals**.
+1. Go to **Service management** > **Setup** > **Service agreements** > **Service intervals**.
 2. On the Action Pane, select **New**.
 3. Enter the ID and description of the service interval.
 4. In the **Range** field, select *Daily*.

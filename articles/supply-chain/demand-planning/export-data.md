@@ -24,7 +24,7 @@ Demand planning lets you build a collection of *export profiles*. Each Supply Ch
 
 To run an existing data export profile, follow these steps:
 
-1. On the navigation pane, select **Data management** \> **Export**.
+1. On the navigation pane, select **Data management** > **Export**.
 1. Find the profile for the type of export that you want to run, and select the link for it in the **Name** column.
 
     The details page for the selected profile appears. Supply Chain Management export profiles contain the following tabs:
@@ -41,7 +41,7 @@ To run an existing data export profile, follow these steps:
 
 Each time that your organization has to run a new type of data export, a manager or admin must create a new data export profile. After the profile is created, it becomes available to users, who can run it as often as they require. Each profile exports to either Supply Chain Management or a CSV file, depending on how you set it up. This section describes how to create a profile that exports to your selected Supply Chain Management instance.
 
-1. On the navigation pane, select **Data management** \> **Export**.
+1. On the navigation pane, select **Data management** > **Export**.
 1. On the Action Pane, select **New**.
 1. On the **Select data provider** page, select the **Microsoft finance and operations apps** tile.
 1. A setup wizard is opened. On the **Get started** page, enter a name and description for the new profile. Then select **Next**.
@@ -87,7 +87,7 @@ Typically, a manager or system administrator creates the initial collection of r
 
 To run an existing data export profile, follow these steps:
 
-1. On the navigation pane, select **Data management** \> **Export**.
+1. On the navigation pane, select **Data management** > **Export**.
 1. Find the profile for the type of export that you want to run, and select the link for it in the **Name** column.
 
     The details page for the selected profile appears. CSV export profiles contain the following tabs:
@@ -103,7 +103,7 @@ To run an existing data export profile, follow these steps:
 
 Each time that your organization has to run a new type of data export, a manager or admin must create a new data export profile. After the profile is created, it becomes available to users, who can run it as often as they require. Each profile exports to either Supply Chain Management or a CSV file, depending on how you set it up. This section describes how to create a profile that exports to CSV.
 
-1. On the navigation pane, select **Data management** \> **Export**.
+1. On the navigation pane, select **Data management** > **Export**.
 1. On the Action Pane, select **New**.
 1. On the **Select data provider** page, select the **CSV** tile.
 1. A setup wizard is opened. On the **Get started** page, enter a name and description for the new profile. Then select **Next**.

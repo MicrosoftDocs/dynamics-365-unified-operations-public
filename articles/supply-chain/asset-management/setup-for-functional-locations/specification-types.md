@@ -29,7 +29,7 @@ The attributes that you can set up vary, depending on the element. For example, 
 
 You can create your own attribute types. Additionally, you can transfer product dimensions to the **Attribute types** page.
 
-1. Select **Asset management** \> **Setup** \> **Attribute types**.
+1. Select **Asset management** > **Setup** > **Attribute types**.
 2. The first time that you set up attribute types, select **Create product dimensions** to automatically transfer standard product dimensions.
 3. Select **New** to create a new attribute type.
 4. In the **Attribute type** field, enter a name for the attribute type.

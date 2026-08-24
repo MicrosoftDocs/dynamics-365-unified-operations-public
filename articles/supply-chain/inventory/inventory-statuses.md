@@ -51,14 +51,14 @@ You can change inventory statuses either by using the **On-hand by location** pa
 
 To change inventory status of individually selected records, follow these steps:
 
-1. Go to **Warehouse management** \> **Inquiries and reports** \> **On-hand by location**.
+1. Go to **Warehouse management** > **Inquiries and reports** > **On-hand by location**.
 1. Use the **Site**, **Warehouse**, and **Location** fields to find the relevant location.
 1. On the **Locations** tab, select the location.
 1. On the **On-hand** tab, select the relevant records, and then select the **Inventory status change** button.
 
 To set up a batch job task that selects and updates records, follow these steps:
 
-1. Go to **Warehouse management** \> **Periodic tasks** \> **Warehouse management inventory status change**.
+1. Go to **Warehouse management** > **Periodic tasks** > **Warehouse management inventory status change**.
 1. On the **Parameters** FastTab, set **To inventory status** to the status value you want to update the selected records to.
 1. On the **Records to include** FastTab, select the **Filter** button and set up a query that selects which records to change.
 1. On the **Run in background** FastTab, set **Batch processing** to *Yes*. If you want to run the job at a regular interval, select **Recurrence** and assign the interval.

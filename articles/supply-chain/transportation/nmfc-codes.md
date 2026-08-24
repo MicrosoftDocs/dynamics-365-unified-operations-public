@@ -37,8 +37,8 @@ To create an NMFC code, follow these steps:
 
 1. Follow one of these steps:
 
-    - Go to **Warehouse management** \> **Setup** \> **Inventory** \> **NMFC codes**.
-    - Go to **Transportation management** \> **Setup** \> **Transportation standards** \> **NMFC codes**.
+    - Go to **Warehouse management** > **Setup** > **Inventory** > **NMFC codes**.
+    - Go to **Transportation management** > **Setup** > **Transportation standards** > **NMFC codes**.
 
 1. Select **New** to create an NMFC code. Then set the following fields:
 
@@ -53,8 +53,8 @@ The following example shows how to set up two different NMFC codes that can be u
 
 1. Follow one of these steps:
 
-    - Go to **Warehouse management** \> **Setup** \> **Inventory** \> **NMFC codes**.
-    - Go to **Transportation management** \> **Setup** \> **Transportation standards** \> **NMFC codes**.
+    - Go to **Warehouse management** > **Setup** > **Inventory** > **NMFC codes**.
+    - Go to **Transportation management** > **Setup** > **Transportation standards** > **NMFC codes**.
 
 1. On the Action Pane, select **New**.
 1. On the new line, set the following values:

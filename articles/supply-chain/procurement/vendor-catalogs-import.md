@@ -13,7 +13,7 @@ ms.custom:
 
 # Import vendor catalogs
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Vendor catalogs import
 
@@ -31,11 +31,11 @@ To import vendor catalog data, you must complete the following tasks:
 
 2. Set up a procurement category hierarchy, and assign your vendors to procurement categories. If you use commodity codes, add the commodity codes to the procurement categories. Learn more about setting up a procurement category hierarchy in [Set up a procurement category hierarchy](../procurement/tasks/set-up-procurement-category-hierarchy.md).
 
-3. Configure the vendor for catalog import. Select a vendor, and then select **Procurement** \> **Set up** \> **Configure vendor for catalog import**.
+3. Configure the vendor for catalog import. Select a vendor, and then select **Procurement** > **Set up** > **Configure vendor for catalog import**.
 
 4. Configure workflow for catalog import. Create a CMR file template and share this with your vendor.
 
-5. Select **Procurement and sourcing** \> **Catalogs** \> **Vendor catalogs** to create a vendor catalog. The catalog maintenance request (CMR) files that you receive from your vendor are grouped in this catalog.
+5. Select **Procurement and sourcing** > **Catalogs** > **Vendor catalogs** to create a vendor catalog. The catalog maintenance request (CMR) files that you receive from your vendor are grouped in this catalog.
 
 6. Upload the CMR file.
 
@@ -47,7 +47,7 @@ Approved products are added to the product master and are released to the select
 
 The catalog import file template is an XSD file that you use to create a CMR file for a vendor's products. You can use the CMR file to create a new catalog, replace an existing catalog, or modify an  existing catalog.
 
-1. Go to **Procurement and sourcing** \> **Catalogs** \> **Vendor catalogs** and open the catalog that you want to work with.
+1. Go to **Procurement and sourcing** > **Catalogs** > **Vendor catalogs** and open the catalog that you want to work with.
 
 2. Download a current catalog import template (XSD file). On the **Update catalog** page, on the Action Pane, on the **Catalogs** tab, in the **Related information** group, select **Generate catalog template** and select **Procurement category**.
 

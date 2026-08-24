@@ -19,7 +19,7 @@ This procedure shows you how to create a purchase order for a one-time supplier.
 
 To create a purchase order for a one-time supplier, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
+1. Go to **Procurement and sourcing** > **Purchase orders** > **All purchase orders**.
 2. Select **New**.
 3. Select *Yes* in the **One-time supplier** field. A vendor account is automatically created and assigned to the purchase order. The vendor account is created based on the template that is specified on the **General** tab in the **Accounts payable parameters** page.  
 4. In the **Name** field, type a name for the supplier.

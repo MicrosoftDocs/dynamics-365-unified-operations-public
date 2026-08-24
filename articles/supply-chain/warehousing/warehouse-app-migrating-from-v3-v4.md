@@ -117,7 +117,7 @@ The following authentication changes apply when you use a cloud environment of S
     1. Open the [Azure portal](https://portal.azure.com).
     1. Go to **App Registrations**.
     1. Select your Microsoft Entra ID registration.
-    1. Go to **Manage** \> **Authentication**.
+    1. Go to **Manage** > **Authentication**.
     1. Select **Add a platform**, and then select **Mobile and desktop applications**.
     1. In the **Custom redirect URIs** field, enter `ms-appx-web://microsoft.aad.brokerplugin/{clientId}` (where *{clientId}* is your Microsoft Entra client ID).
 

@@ -61,7 +61,7 @@ To help improve MRP performance, you can set the negative days to a number that 
 
 ### Case 1C: Automatically correlate the item's lead time to the negative days time fence
 
-To automatically correlate the item's lead time to the negative days time fence, use dynamic negative days. To use dynamic negative days, go to **Master planning** \> **Setup** \> **Master planning parameters**, and then, on the **General** tab, in the **Coverage** section, set the **Use dynamic negative days** option to *Yes*. MRP then looks for receipts inside the dynamic negative days time fence. This time fence is calculated by using the following formula:
+To automatically correlate the item's lead time to the negative days time fence, use dynamic negative days. To use dynamic negative days, go to **Master planning** > **Setup** > **Master planning parameters**, and then, on the **General** tab, in the **Coverage** section, set the **Use dynamic negative days** option to *Yes*. MRP then looks for receipts inside the dynamic negative days time fence. This time fence is calculated by using the following formula:
 
 Dynamic negative days time fence = Purchase lead time + Negative days time fence + (Current date – Requirement date)
 

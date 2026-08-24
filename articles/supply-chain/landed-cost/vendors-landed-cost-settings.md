@@ -13,7 +13,7 @@ ms.custom:
 
 # Vendor settings added for Landed cost
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 When you enable the **Landed cost** module, several new fields are added to the existing **Vendors** page. You use these fields to set up the vendors that you'll use together with Landed cost features.
 

@@ -24,7 +24,7 @@ A dispatch board is the central location from which you can view the status of a
 
 To work with the dispatch board, follow these steps:
 
-1. Go to **Service management** \> **Perform periodic tasks** \> **Dispatch board**.
+1. Go to **Service management** > **Perform periodic tasks** > **Dispatch board**.
 1. On the Action Pane, select **Adjust view settings** and then use the **Adjust view settings** dialog to select the date range and other options for the service activities you want to see.
 1. In the grid, select the service activity you want to work with.
 1. Navigate through the tabs in the bottom panel to view and modify the details of the selected service activity.

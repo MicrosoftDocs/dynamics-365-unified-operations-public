@@ -13,6 +13,8 @@ ms.custom:
 
 # Query item data on a mobile device
 
+[!include [banner](../includes/banner.md)]
+
 *Item inquiry* mobile device menu items enable warehouse workers to view key inventory details for specific items, including location, available quantity, and reserved quantity. This feature improves visibility into warehouse stock and supports efficient decision-making during daily operations.
 
 > [!NOTE]
@@ -39,7 +41,7 @@ This information allows the worker to confirm inventory without interrupting act
 
 To enable this functionality, you must configure the mobile device menu item in the system. Create the **Item inquiry** menu item by following these steps.
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new menu item:
     - **Menu item name** – Enter an internal name for the menu item, such as *Item inquiry*.
@@ -50,4 +52,4 @@ To enable this functionality, you must configure the mobile device menu item in 
     - **Activity code** – Select *Item inquiry*.
     - **Use process guide** – This setting is automatically set to *Yes* and can't be changed.
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device menu** and add the new menu item to each menu where workers should access it. Learn more in [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+1. Go to **Warehouse management** > **Setup** > **Mobile device menu** and add the new menu item to each menu where workers should access it. Learn more in [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).

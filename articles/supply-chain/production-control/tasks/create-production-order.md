@@ -21,7 +21,7 @@ This procedure shows how to create a production order. The demo data company use
 
 ## Create a production order
 
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 2. Select **New production order**.
 3. In the **Item number** field, type *D0001*.
 4. In the **Delivery** field, enter a date. The delivery date indicates when the production order should end in order to deliver on time. This date can be used in the scheduling process. For example, you can schedule the order backward from the delivery date.  

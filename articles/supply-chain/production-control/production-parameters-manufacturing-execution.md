@@ -19,7 +19,7 @@ This article provides information about the setup of production parameters for m
 
 Manufacturing execution can be used to register time and item consumption on production jobs or projects. Before you start to use manufacturing execution for job registrations, you must set up various production parameters that define how and when registrations are posted during the production process. The settings of production parameters affect inventory management, production management, and cost calculation.
 
-Before workers start to make registrations on production jobs, you should carefully consider all settings on the **Production order defaults** page. Go to **Production control** \> **Setup** \> **Manufacturing execution** \> **Production order defaults**. If your company uses the multisite functionality, you might want to set up different production parameters for each site. The following tabs are provided on the **Production order defaults** page:
+Before workers start to make registrations on production jobs, you should carefully consider all settings on the **Production order defaults** page. Go to **Production control** > **Setup** > **Manufacturing execution** > **Production order defaults**. If your company uses the multisite functionality, you might want to set up different production parameters for each site. The following tabs are provided on the **Production order defaults** page:
 
 - **General** – General parameter settings for production jobs.
 - **Start** – Parameters that are used when production operations are started.
@@ -34,7 +34,7 @@ On the **Operations** tab, you select which types of production jobs require reg
 Typically, workers make registrations on setup jobs and process jobs. However, if job scheduling is applied, you can select other job types that workers must make registrations on when production orders are processed. For example, you can require registrations on transport jobs.
 
 > [!IMPORTANT]
-> Make sure that you select all relevant job types. Otherwise, jobs might not be available for registration. Your selections should match the selections in the **Job management** column on the **Setup** FastTab of the **Route groups** page (**Production control** \> **Setup** \> **Routes** \> **Route groups**).
+> Make sure that you select all relevant job types. Otherwise, jobs might not be available for registration. Your selections should match the selections in the **Job management** column on the **Setup** FastTab of the **Route groups** page (**Production control** > **Setup** > **Routes** > **Route groups**).
 
 If **Job management** is selected on the route group, this job type is reported as finished on the production order when a job is reported as finished. When all job types that **Job management** is selected for have been reported as finished on an operation, the operation is reported as finished.
 
@@ -53,7 +53,7 @@ On the **Production order defaults** page, automatic BOM consumption is set up i
 
 For each stage, the **Automatic BOM consumption** field lets you select one of three methods for picking items for a production order:
 
-- *Flushing principle* – This option is used in combination with an option that is defined for the BOM. Select **Production control** \> **Production orders** \> **All production orders**. On the **All production orders** page, select a production order in the list, and then, on the Action Pane, open the **Production order** tab and select **BOM**. On the **BOM** page, open the BOM line you want to set. Then open the **Setup** FastTab and select one of the following options in **Flushing principle** field:
+- *Flushing principle* – This option is used in combination with an option that is defined for the BOM. Select **Production control** > **Production orders** > **All production orders**. On the **All production orders** page, select a production order in the list, and then, on the Action Pane, open the **Production order** tab and select **BOM**. On the **BOM** page, open the BOM line you want to set. Then open the **Setup** FastTab and select one of the following options in **Flushing principle** field:
 
     - *Start*
     - *Finish*

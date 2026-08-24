@@ -13,6 +13,7 @@ ms.custom:
 
 # Install, update, or uninstall Traceability (preview)
 
+[!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
 <!-- KFM: Preview until further notice -->
@@ -51,7 +52,7 @@ To use Traceability together with Dynamics 365 Supply Chain Management, you must
 ### Create client secrets for the new Microsoft Entra application
 
 1. In the [Azure portal](https://ms.portal.azure.com/), open the application you registered in the previous section.
-1. In the left navigation pane, select **Manage** \> **Certificates & secrets**.
+1. In the left navigation pane, select **Manage** > **Certificates & secrets**.
 1. On the **Certificates & secrets** page, select **New client secret**.
 1. In the **Add a client secret** dialog, enter a description and choose an expiration date for the secret. Then select **Add**.
 1. The **Certificates & secrets** page now includes your new secret. Copy the **Value** and **Secret ID** of the secret and store it in a secure location. You'll need these values later when [setting up communication with the API](traceability-api.md).
@@ -66,7 +67,7 @@ The Traceability app is part of the Traceability Add-in for Dynamics 365 Supply 
 To install the Traceability app in Power Apps, complete the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the left navigation pane, select **Resources** \> **Dynamics 365 apps**.
+1. On the left navigation pane, select **Resources** > **Dynamics 365 apps**.
 1. Find the *Dynamics 365 Supply Chain Traceability* app on the **Dynamics 365 apps** page. Select **More application actions** (the **...** button) for the app and then select **Manage**.
 1. The **Install Dynamics 365 Supply Chain Traceability** dialog opens. Make the following settings:
     - **Select an environment** – Select the environment where you want to set up the app.

@@ -24,7 +24,7 @@ To create and customize a forecast model, you must first open an existing foreca
 
 Follow these steps to create and customize a forecast model.
 
-1. On the navigation pane, select **Operations** \> **Forecast profiles**.
+1. On the navigation pane, select **Operations** > **Forecast profiles**.
 1. Select the forecast profile that you want to create or customize a forecast model for.
 1. On the **Forecast model** tab, there's always at least one step of the *Input* type at the top of the flow chart. The model is processed from top to bottom, and the last step must be a step of the *Save* type. Add, remove, and arrange steps as you require, and configure settings for each of them. The illustration after this procedure provides guidelines.
 1. After you finish designing your forecast model, select the **Validate** button :::image type="icon" source="media/button-validate-model.png" border="false"::: in the upper-right corner. The system runs a few tests to validate that your model will work, and then provides feedback. Fix any issues that the validation test reports.

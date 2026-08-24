@@ -77,7 +77,7 @@ Set the margin on the master plan when you want to simulate longer lead times or
 
 To apply a safety margin to a coverage group, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage groups**.
 1. In the list pane, select the coverage group.
 1. On the **Other** FastTab, in the **Safety margins in days** section, use the following fields to set the required safety margins (in days):
 
@@ -89,7 +89,7 @@ To apply a safety margin to a coverage group, follow these steps:
 
 To apply a safety margin to a master plan, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. In the list pane, select the master plan.
 1. On the **Safety margins in days** FastTab, use the following fields to set the required safety margins (in days):
 
@@ -101,7 +101,7 @@ To apply a safety margin to a master plan, follow these steps:
 
 Set all safety margins to calculate based on either calendar days or workdays.
 
-1. Go to **Master planning** \> **Setup** \> **Master planning parameters**.
+1. Go to **Master planning** > **Setup** > **Master planning parameters**.
 1. On the **General** tab, in the **Safety margins in days** section, set the **Working days** option to *Yes* to calculate margins based on working days. Set the option to *No* to calculate margins based on calendar days.
 
 For example, a calendar is open from Monday through Friday and closed from Saturday through Sunday. If there's a receipt margin of one day, a requirement date on a Monday produces a delivery date on the previous Friday, because Saturday and Sunday aren't working days.
@@ -185,7 +185,7 @@ To use a soft issue margin, your system must meet the following requirements:
 
 You enable soft issue margin at the coverage group level. To enable the soft issue margin for a coverage group, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage groups**.
 1. Select the coverage group.
 1. On the **Other** FastTab, set the **Soft issue margin** option to *Yes*.
 

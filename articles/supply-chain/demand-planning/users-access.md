@@ -86,7 +86,7 @@ Users who have the *Demand Planning Contributor* role (but not *Demand Planning 
 To set up row-level security, follow these steps:
 
 1. Sign in to Demand planning using a system admin account.
-1. On the navigation pane, select **Configuration** \> **Row level access**.
+1. On the navigation pane, select **Configuration** > **Row level access**.
 1. Do one of the following steps:
     - To add a new row-level access rule, select **New** from the top toolbar. This launches a setup wizard, where each page of the wizard maps to a tab in the edit dialog.
     - To edit an existing row-level access rule, select the rule in the list, and then select **Edit** from the grid toolbar.

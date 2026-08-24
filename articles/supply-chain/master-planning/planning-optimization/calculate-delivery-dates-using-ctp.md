@@ -92,7 +92,7 @@ The system can use any of several methods to calculate delivery date estimates f
 
 The default delivery date control method applies to all new order lines where an override doesn't apply. To select a method, follow these steps:
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Shipments** tab, on the **Delivery control** FastTab, in the **Delivery date control** field, select the method that you want to use as the default method for your company:
 
     - *None* – Don't calculate delivery dates.
@@ -106,7 +106,7 @@ The default delivery date control method applies to all new order lines where an
 
 Assign overrides for specific products when you want to use a delivery date control method other than the one that you set as your global default method.
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Select the product that you want to set up.
 1. On the Action Pane, on the **Manage inventory** tab, in the **Order settings** group, select **Default order settings**.
 1. On the **Default order settings** page, on the **Sales order** FastTab, set the **Override delivery control** option to *Yes*.
@@ -120,7 +120,7 @@ To ensure that the dates are available in good time for all users, set up batch 
 
 To set up a batch job to run a dynamic plan on a regular schedule, follow these steps:
 
-1. Go to **Master planning** \> **Master planning** \> **Run** \> **Master planning**.
+1. Go to **Master planning** > **Master planning** > **Run** > **Master planning**.
 1. In the **Master planning** dialog box, on the **Parameters** FastTab, set the **Master plan** field to the dynamic plan that you want to run.
 1. On the **Run in the background** FastTab, set the **Batch processing** option to *Yes*.
 1. Select **Recurrence**, and set up the schedule as required.
@@ -175,7 +175,7 @@ You can change the **Delivery date control** value for any open order at any tim
 
 To change an order so that it uses CTP at the order header level, follow these steps:
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
 1. Open the sales order that you want to set up, or create a new one.
 1. Select **Header** to open the header information on the **Sales order details** page.
 1. On the **Delivery** FastTab, set the **Delivery date control** field to one of the following values, depending on the planning engine that you're using:
@@ -191,7 +191,7 @@ If you create an order line by using a different delivery date control method, y
 
 To change an order so that it uses CTP at the line level, follow these steps:
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
 1. Open the sales order that you want to set up, or create a new one.
 1. On the **Sales order details** page, on the **Sales order line** FastTab, select the sales order line that you want to set up.
 1. On the **Line details** FastTab, on the **Delivery** tab, set the **Delivery date control** field to one of the following values, depending on the planning engine that you're using:

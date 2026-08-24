@@ -14,6 +14,8 @@ ms.custom:
 
 # Warehouse Management mobile app release notes archive
 
+[!include [banner](../includes/banner.md)]
+
 <!-- NOTE: This article is an archive and isn't listed in the TOC, but should be kept. It's linked to from [What's new or changed in the Warehouse Management mobile app](warehouse-app-whats-new.md) -->
 
 [!include [banner](../includes/banner.md)]

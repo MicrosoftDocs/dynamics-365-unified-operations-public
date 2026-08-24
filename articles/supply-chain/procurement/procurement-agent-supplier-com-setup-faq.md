@@ -40,7 +40,7 @@ Open your project in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamic
 
 ### Symptoms
 
-In the [Power Platform admin center](https://aka.ms/ppac), you go to **Manage** \> **Dynamics 365 Apps** and try to install the applications *Copilot for finance and operations apps* and *Copilot in Microsoft Dynamics 365 Supply Chain Management*, but your finance and operations apps environment isn't shown in the **Select an environment** drop-down list in the install dialog.
+In the [Power Platform admin center](https://aka.ms/ppac), you go to **Manage** > **Dynamics 365 Apps** and try to install the applications *Copilot for finance and operations apps* and *Copilot in Microsoft Dynamics 365 Supply Chain Management*, but your finance and operations apps environment isn't shown in the **Select an environment** drop-down list in the install dialog.
 
 ### Solution
 

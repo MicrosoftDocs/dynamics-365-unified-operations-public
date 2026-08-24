@@ -24,11 +24,11 @@ In Asset Management, you can calculate capacity load on:
 This is useful if you want to get an overview of expected capacity load for a specific period. Calculation of capacity load can be done on all assets or selected assets. You can also make a calculation on maintenance downtime activities or work order pools.
 
 1. Go to one of the following pages, depending on what you want to calculate capacity load for:
-    - **Asset management** \> **Inquiries** \> **Capacity load**
-    - **Asset management** \> **Work order pools** \> **All work order pools**
-    - **Asset management** \> **Work order pools** \> **Active work order pools**
-    - **Asset management** \> **Maintenance downtime activities** \> **All maintenance downtime activities**
-    - **Asset management** \> **Maintenance downtime activities** \> **Active maintenance downtime activities**
+    - **Asset management** > **Inquiries** > **Capacity load**
+    - **Asset management** > **Work order pools** > **All work order pools**
+    - **Asset management** > **Work order pools** > **Active work order pools**
+    - **Asset management** > **Maintenance downtime activities** > **All maintenance downtime activities**
+    - **Asset management** > **Maintenance downtime activities** > **Active maintenance downtime activities**
 
 1. Select the record you want to work with and then, on the Action Pane, select **Capacity load**.
 1. In the **Calculate capacity load** dialog, select a period for the calculation in the **Start date/time** and **End date/time** fields.

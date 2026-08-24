@@ -25,7 +25,7 @@ To use wave processing, specify the following on the **Warehouse management para
 
 To set up warehouse parameters for wave processing, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 
 1. On the **Wave processing** FastTab, make the following settings:
 
@@ -54,5 +54,5 @@ For sales orders and kanban orders, inventory must be reserved before the order 
 
 To require full reservation or allow partial reservation, follow these steps:
 
-1. Go to **Production control** \> **Setup** \> **Production control parameters**.
+1. Go to **Production control** > **Setup** > **Production control parameters**.
 1. On the **General** tab, in the **Release to warehouse** field, select the default setting.

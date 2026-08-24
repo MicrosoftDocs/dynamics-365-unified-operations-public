@@ -25,7 +25,7 @@ Visual displays make it easy for planners to understand time series data and mak
 
 To view generative insights, follow these steps:
 
-1. Open the time series that you want to analyze. For example, on the navigation pane, select **Planning data** \> **Forecasts**, and then select a time series.
+1. Open the time series that you want to analyze. For example, on the navigation pane, select **Planning data** > **Forecasts**, and then select a time series.
 1. The **Generative insights** section appears near the top of the page. Do one of the following steps:
     - If you've never generated insights for the current time series, then select the **Generate insights** button available here. The system then runs the AI model to generate insights for the current time series. The process might take a few minutes, depending on the size of the time series.
     - If you have generated insights for the current time series, then summarized results are already shown. There's also a **Regenerate** button to regenerate the insights, which is useful if you've updated the time series since the last time you generated insights for it.

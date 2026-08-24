@@ -25,7 +25,7 @@ During the *Receiving completed* process, workers and users update the **Load st
 
 Follow these steps to specify how loads that are related to purchase orders are finalized.
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 1. On the **Loads** tab, in the **Capture receiving completed packing slip** field, select one of the following options to specify whether users or workers must enter a packing slip ID when they confirm that receiving is completed:
 
     - *Never* – Workers or users are never required to enter a packing slip ID when they confirm that receiving is completed.
@@ -48,7 +48,7 @@ Follow these steps to specify how loads that are related to purchase orders are 
 The *Receiving completed* periodic task automatically runs the *Receiving completed* process for loads for purchase orders. To set up the task so that it runs automatically, follow these steps:
 
 1. On the **Warehouse management parameters** page, on the **Loads** tab, set the **Load receiving completed confirmation policy for purchase orders** field to *Enabled* or *Enabled with auto post*. The *Receiving completed* periodic task is available only if the field is set to one of these values. Learn more in the [Mark a load as completely received](#receive-complete-confirm) section.
-1. Go to **Warehouse management** \> **Periodic tasks** \> **Receiving completed**.
+1. Go to **Warehouse management** > **Periodic tasks** > **Receiving completed**.
 1. In the **Receiving completed** dialog, on the **Parameters** FastTab, set the **Accept quantity exceptions** option to specify whether differences between the received quantities and the quantities on the load line should be accepted. Set the option to *No* to reject the differences and cancel the confirmation process. Set it to *Yes* to accept the differences and continue the processing.
 1. On the **Records to include** FastTab, set up filters and constraints to define which loads to process. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Microsoft Dynamics 365 Supply Chain Management.
 1. On the **Run in the background** FastTab, specify how, when, and how often to run the task. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
@@ -58,7 +58,7 @@ The *Receiving completed* periodic task automatically runs the *Receiving comple
 
 To set up the *Receiving completed* periodic task so that it includes only loads where work was fully completed, follow these steps:
 
-1. Go to **Warehouse management** \> **Periodic tasks** \> **Receiving completed**.
+1. Go to **Warehouse management** > **Periodic tasks** > **Receiving completed**.
 1. On the **Records to include** FastTab, select **Filter**.
 1. In the query editor dialog, on the **Joins** tab, select the **Loads** join in the list.
 1. On the toolbar, select **Add table join**.

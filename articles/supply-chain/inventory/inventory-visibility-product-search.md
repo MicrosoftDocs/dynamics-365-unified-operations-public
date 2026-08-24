@@ -46,10 +46,10 @@ If your system is running Inventory Visibility version 1.2.2.53 or earlier, you 
 Follow these steps to configure product search for Inventory Visibility.
 
 1. If dual-write isn't already enabled for your Lifecycle Services project, enable it as described in [Dual-write setup from Lifecycle Services](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md).
-1. In Supply Chain Management, go to **System administration** \> **Workspaces** \> **Data management**, and select the **Framework parameters** tile.
+1. In Supply Chain Management, go to **System administration** > **Workspaces** > **Data management**, and select the **Framework parameters** tile.
 1. On the **Data import/export framework parameters** page, on the **Entity settings** tab, select **Refresh entity list**.
 1. The *Refresh entity list* job is added to the batch queue. Wait for the job to be completed.
-1. Go back to **System administration** \> **Workspaces** \> **Data management**, and select the **Dual-write** tile.
+1. Go back to **System administration** > **Workspaces** > **Data management**, and select the **Dual-write** tile.
 1. On the Action Pane, select **Apply solution**.
 1. In the **Apply solution** dialog box, select **Dynamics 365 Product Search Core**, and then select **Apply**.
 1. Wait for the process to be completed. It might take several minutes. When it's completed, the **Dual-write** page is updated and shows all the table maps that were added. Select all the table maps, and then select **Run** on the Action Pane.
@@ -59,7 +59,7 @@ Follow these steps to configure product search for Inventory Visibility.
 
 If some table maps fail to do an initial synchronization because of a permission issue, follow these steps to check your team roles.
 
-1. Sign in to your Dataverse environment, go to **Settings** \> **Security**, and select **Teams**.
+1. Sign in to your Dataverse environment, go to **Settings** > **Security**, and select **Teams**.
 1. Open your team, and select **Manage Roles**.
 1. Make sure that the following role is assigned to your team:
     - *System Administrator*

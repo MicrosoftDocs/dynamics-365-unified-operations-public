@@ -27,7 +27,7 @@ By default, there's a vendor configuration available on the **Vendor request con
 
 It isn't possible to select country/regions for the default configuration, so the **Countries/regions** section can't be changed.
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Vendors** and then select **Vendor request configurations**.
+1. Go to **Procurement and sourcing** > **Setup** > **Vendors** and then select **Vendor request configurations**.
 1. Select the **Fields** tab to set the status of the listed fields.
     - *Hidden* (Not visible)
     - *Displayed* (Visible but not mandatory)
@@ -38,7 +38,7 @@ You can also enter a confirmation message that is displayed when the wizard is f
 
 ## Create a vendor configuration for a specific country/region
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Vendors** and then select **Vendor request configurations**.
+1. Go to **Procurement and sourcing** > **Setup** > **Vendors** and then select **Vendor request configurations**.
 1. Select **New** to create a new configuration, and provide a name for the configuration.
 1. Select **Save**.
 1. Open the **Country/regions** tab to select the country/region that the configuration should be used for.

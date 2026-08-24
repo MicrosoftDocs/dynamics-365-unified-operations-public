@@ -65,7 +65,7 @@ The payment notification service URL is where Adyen sends the payment notificati
 
 To find your payment notification service URL, follow these steps:
 
-1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**.
+1. Go to **Retail and Commerce** > **Headquarters setup** > **Parameters** > **Commerce shared parameters**.
 1. Open the **Payment notifications** tab.
 1. Copy the value shown in the **Payment notifications end point URL** field.
 
@@ -80,7 +80,7 @@ Create a new Microsoft Entra ID application registration in your Azure portal by
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) by using a work or school account.
 1. If your account gives you access to more than one tenant, select your account in the upper-right corner. Then set your portal session to the Microsoft Entra tenant that you want.
-1. In the left pane, select the **Microsoft Entra ID** service, and then select **App registrations** \> **New registration**.
+1. In the left pane, select the **Microsoft Entra ID** service, and then select **App registrations** > **New registration**.
 1. On the **Register an application** page, enter your application's registration information:
 
     - **Name** – Enter a meaningful application name. This name is shown to users of the app.
@@ -125,7 +125,7 @@ Supply Chain Management uses the HMAC and application client ID details to authe
 > [!IMPORTANT]
 > To complete this procedure and save the configuration, sign in to Supply Chain Management by using a user account that has either the *Administrator* or *Commerce Payment Administrator* security role in Microsoft Power Platform.
 
-1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**.
+1. Go to **Retail and Commerce** > **Headquarters setup** > **Parameters** > **Commerce shared parameters**.
 1. Open the **Payment notifications** tab.
 1. Enter the following values:
 
@@ -145,22 +145,22 @@ To test the connection, follow these steps.
 
 In addition to the generic pay-by-link setup described earlier in this article, complete the following steps to enable the pay by link functionality for sales orders.
 
-1. Go to **Accounts receivable  \> Payments setup** \> **Methods of payment**.
+1. Go to **Accounts receivable  \> Payments setup** > **Methods of payment**.
 1. Methods of payment with a **Payment type** of *Credit card* or *Electronic payment* now include a section named **Pay by link** on the **General** FastTab. For each method of payment where you want to enable pay by link, make the following settings:
     - **Allow pay by link** – Set to *Yes* to allow salespeople to create payment links for sales orders that use this method of payment. This setting is required to enable the pay by link functionality for the payment method.
     - **Allow pay later** – Set to *Yes* to allow customers to pay later, enabling scenarios where the customer needs some time to confirm the order but wants to reserve the inventory. Pay-later orders are created with a special hold code and remain on hold for a preconfigured duration (as described in the next step). If the customer makes a payment within this duration, then the order is released for fulfillment; otherwise, the order is systematically canceled. Set to *No* to disable pay-later for a payment method.
 
-1. If you chose to enable the pay-later capability for one or more payment methods, go to **Accounts receivable** \> **Setup** \> **Account receivable parameters**, open the **General** tab, and make the following settings on the **Sales setup** FastTab:
+1. If you chose to enable the pay-later capability for one or more payment methods, go to **Accounts receivable** > **Setup** > **Account receivable parameters**, open the **General** tab, and make the following settings on the **Sales setup** FastTab:
     - **Hold code for payment confirmation** – Select the hold code you want to apply to pay-later orders that aren't paid yet. This hold code is automatically applied to orders that are placed on hold when the salesperson selects the **Pay later** option while creating the payment link.
     - **Order hold timeout for pending payments (minutes)** – Enter the number of minutes system should wait for payment. If the customer doesn't pay before this limit expires, then the system cancels the order.
 
-1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Payments** \> **Process asynchronous payments for sales orders**. In the dialog, expand the **Run in the background** FastTab and select **Recurrence**. Use the settings here to choose how often the system should check for customer payments (for example, every 15 minutes). Then select **OK** twice to close the dialog and save your setting. These settings schedule the *Process asynchronous payments for sales orders* batch job, which checks for customer payments and updates the status of sales orders accordingly.
+1. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Payments** > **Process asynchronous payments for sales orders**. In the dialog, expand the **Run in the background** FastTab and select **Recurrence**. Use the settings here to choose how often the system should check for customer payments (for example, every 15 minutes). Then select **OK** twice to close the dialog and save your setting. These settings schedule the *Process asynchronous payments for sales orders* batch job, which checks for customer payments and updates the status of sales orders accordingly.
 
 ### Customize the behavior of payment links
 
 This step is optional. Complete it only if you want to change the default behavior of the payment links.
 
-1. Go to **Account receivables** \> **Payments setup** \> **Payment services**.
+1. Go to **Account receivables** > **Payments setup** > **Payment services**.
 1. Open payment service for your Adyen connector.
 1. On the **Payment service account** FastTab, in the **Custom settings** property, add key-value pairs for any or all of the following keys (an example is shown later in this step):
     - `PaymentLinkDuration_Orders` – Set the duration for which the payment link is valid. The default value is 24 hours.

@@ -21,7 +21,7 @@ The rebate reduction principle rules apply only when rebate deals overlap. There
 
 ## Manage rebate reduction principles
 
-To work with rebate reduction principles, go to **Rebate management** \> **Setup** \> **Rebate reduction principles**. Then use the buttons on the Action Pane to add and remove reduction principles as required. For each principle, set the fields as described in the following table.
+To work with rebate reduction principles, go to **Rebate management** > **Setup** > **Rebate reduction principles**. Then use the buttons on the Action Pane to add and remove reduction principles as required. For each principle, set the fields as described in the following table.
 
 | Field | Description |
 |---|---|

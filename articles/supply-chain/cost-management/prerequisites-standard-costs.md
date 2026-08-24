@@ -35,7 +35,7 @@ To set up standard costs, follow these steps:
 
 4. Define inventory parameters that are related to standard costs.
 
-    1. Use the **Inventory accounting** tab on the **Inventory accounting policies setup** \> **Parameters** page to define two cost control parameters that are related to standard costs.
+    1. Use the **Inventory accounting** tab on the **Inventory accounting policies setup** > **Parameters** page to define two cost control parameters that are related to standard costs.
 
         - In the **Cost breakdown** field, select *None* or *Sub ledger*. If you select *Sub ledger*, the cost breakdown is an *active* cost breakdown. An active cost breakdown is critical for calculating, retaining, and viewing cost group segmentation across a multilevel product structure for standard cost items. When the cost breakdown is active, you can report and analyze inventory, work in process (WIP), and cost of goods sold (COGS) per cost group in a single-level, multilevel, or total format. When the cost breakdown is active, if you activate a manufactured item's cost, the cost group segmentation is stored in the item's cost record.
 

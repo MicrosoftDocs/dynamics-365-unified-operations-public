@@ -21,7 +21,7 @@ Set up master codes for transportation statuses to interpret codes that are prov
 
 To create a transportation status, follow these steps:
 
-1. Go to **Transportation management** \> **Setup** \> **Transportation status masters**.
+1. Go to **Transportation management** > **Setup** > **Transportation status masters**.
 1. Select **New** to create a transportation status master.
 1. In the **Transportation status master** field, enter a unique code for the transportation status.
 1. In the **Transportation type** field, select either *Shipping carrier* or *Hub* as the type of transportation.
@@ -32,7 +32,7 @@ To create a transportation status, follow these steps:
 
 To map a transportation status to a carrier status, follow these steps:
 
-1. Go to **Transportation management** \> **Setup** \> **Carriers** \> **Carrier transportation status**.
+1. Go to **Transportation management** > **Setup** > **Carriers** > **Carrier transportation status**.
 1. Select **New** to map a code from a shipping carrier to a transportation status master code.
 1. Select the unique ID for the shipping carrier and the carrier service.
 1. Select the transportation status code that you want to map to the selected shipping carrier's code.

@@ -64,7 +64,7 @@ To enable rewaving for your system, you must set up your system to process waves
 
 Before you can use rewaving, your system must be set up to process waves in batch.
 
-1. In the system settings, go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. In the system settings, go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 1. On the **General** tab, on the **Wave Processing** FastTab, set the **Process waves in batch** option to *Yes*.
 1. On the Action Pane, select **Save** to apply the new configuration.
 
@@ -72,7 +72,7 @@ Before you can use rewaving, your system must be set up to process waves in batc
 
 The rewaving process runs as a batch job that you must schedule to run as often as is required for your system. Follow these steps to set up the batch job.
 
-1. Go to **Warehouse Management** \> **Outbound Waves** \> **Auto add shipments to wave**.
+1. Go to **Warehouse Management** > **Outbound Waves** > **Auto add shipments to wave**.
 1. On the **Run in the background** FastTab, set the following fields:
 
     - Set the **Batch processing** option to *Yes*.
@@ -92,7 +92,7 @@ The rewaving process runs as a batch job that you must schedule to run as often 
 
 The cleanup job removes failed and old shipment lines from the *Failed shipment lines* table. You must schedule it to run as often as is required for your system. To set it up, follow these steps:
 
-1. Go to **Warehouse Management** \> **Outbound Waves** \> **Wave processing removed shipment cleanup**.
+1. Go to **Warehouse Management** > **Outbound Waves** > **Wave processing removed shipment cleanup**.
 1. On the **Parameters** FastTab, set the following fields:
 
     - **Cleanup rewave threshold** – Enter the maximum number of retries that the cleanup job allows for a shipping line before it removes that line from the *Failed shipment lines* table. The *Auto add shipments to wave* batch job allows for maximum of five retries, but you can remove shipping lines sooner by entering a lower value here. Values that are more than *5* have no effect.
@@ -111,13 +111,13 @@ The cleanup job removes failed and old shipment lines from the *Failed shipment 
 
 ### Monitor failed shipment lines
 
-To monitor shipment lines that must be rewaved, go to **Warehouse Management** \> **Shipments** \> **Failed shipment lines**. For each failed shipment line, the page shows the line ID, the line's current status, the reason for the failure, and the number of times that the system tried to rewave the line.
+To monitor shipment lines that must be rewaved, go to **Warehouse Management** > **Shipments** > **Failed shipment lines**. For each failed shipment line, the page shows the line ID, the line's current status, the reason for the failure, and the number of times that the system tried to rewave the line.
 
 ### Monitor batch job status
 
 To monitor the status of all batch jobs, adjust their schedules, and fix any issues that arise, follow these steps:
 
-1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
+1. Go to **System administration** > **Inquiries** > **Batch jobs**.
 1. Use the **Filter** field to find the relevant jobs, based on the value that you entered in the **Task description** field when you set up the job. (On this page, the field is named **Job description**.) The default description for this type of job is *Auto add shipments to wave*.
 1. View basic status information about the job in the grid.
 1. Select the **Job ID** value to view more details about the job. From the details, you can edit the job's status, change its recurrence schedule, set alerts, and more.

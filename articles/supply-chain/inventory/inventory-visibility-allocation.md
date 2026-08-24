@@ -155,7 +155,7 @@ Follow these steps to enable inventory allocation and set up allocation groups i
 
 1. Enable the inventory allocation feature.
 
-    1. Go to **Legacy UI** \> **Configuration**.
+    1. Go to **Legacy UI** > **Configuration**.
     1. On the **Feature Management & Settings** tab, turn on the feature that's named *Inventory Allocation*.
     1. Select **Update configuration** in the upper-right corner to apply the new setting.
 

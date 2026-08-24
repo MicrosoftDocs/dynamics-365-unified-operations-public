@@ -21,7 +21,7 @@ This article describes how to set up and use the *inventory log history* feature
 
 To start to keep a log of successfully updated inventory API posts, you must enable the feature in Microsoft Power Apps.
 
-1. Sign in to Power Apps, and go to **Inventory Visibility** \> **Settings** \> **Feature Management**.
+1. Sign in to Power Apps, and go to **Inventory Visibility** > **Settings** > **Feature Management**.
 1. Enable the *Inventory log history* feature.
 1. Go to **Admin settings**, and select **Update configuration**.
 
@@ -33,7 +33,7 @@ After the feature is enabled, you can view the log entries either by using the I
 
 Follow these steps to view the log by using the Inventory Visibility app in Power Apps.
 
-1. Sign in to Power Apps, and go to **Inventory Visibility** \> **Operational visibility** \> **Inventory log history**.
+1. Sign in to Power Apps, and go to **Inventory Visibility** > **Operational visibility** > **Inventory log history**.
 1. To retrieve and view the log details, enter a product ID, organization ID, site ID, warehouse ID, and date range.
 
 ### Retrieve log entries by calling the API

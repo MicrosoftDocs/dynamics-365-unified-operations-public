@@ -73,7 +73,7 @@ If none of these conditions apply, you can delete the contact from the global ve
 After a global vendor is qualified, its contacts are synchronized to Supply Chain Management as party contacts. You can review these relationships by following these steps:
 
 1. Sign in to Supply Chain Management.
-1. Go to **Procurement and sourcing** \> **Vendors** \> **(Preview) Supplier Engagement** \> **All global vendors**.
+1. Go to **Procurement and sourcing** > **Vendors** > **(Preview) Supplier Engagement** > **All global vendors**.
 1. On the list pane, select the relevant global vendor record.
 1. Select the link in the **Name** field.
 1. Expand the **Relationships** FastTab. The **Relationship A to B** column can show the following types of party relationships:

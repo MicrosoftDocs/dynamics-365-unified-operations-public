@@ -81,7 +81,7 @@ You can approve or disapprove a vendor after the vendor reaches *Qualified* stat
 To approve a qualified vendor, follow these steps:
 
 1. [Open the relevant global vendor record](supplier-engagement-global-vendor-info.md#open-a-global-vendor-record), which must have *Qualified* status.
-1. On the command bar, select **Approve** \> **Approve**.
+1. On the command bar, select **Approve** > **Approve**.
 1. Confirm the operation and enter a comment to explain why you approved the vendor.
 1. Select **OK**.
 
@@ -90,7 +90,7 @@ When you approve the vendor, the status changes to *Approved*, and the vendor be
 To disapprove a qualified vendor, follow these steps:
 
 1. [Open the relevant global vendor record](supplier-engagement-global-vendor-info.md#open-a-global-vendor-record), which must have *Qualified* status.
-1. On the command bar, select **Approve** \> **Disapprove**.
+1. On the command bar, select **Approve** > **Disapprove**.
 1. Select the required hold type and reason code.
 1. Enter any comments that are needed.
 1. Confirm the action.
@@ -118,7 +118,7 @@ An authorized user completes the termination review and applies the final status
 
 1. [Open the relevant global vendor record](supplier-engagement-global-vendor-info.md#open-a-global-vendor-record), which must have a pending termination request.
 1. Review the request details and comments.
-1. On the command bar, select **Terminate** \> **Approve** to approve the termination request. Select **Terminate** \> **Disapprove** to reject the request.
+1. On the command bar, select **Terminate** > **Approve** to approve the termination request. Select **Terminate** > **Disapprove** to reject the request.
 
 When you approve the termination request, **Status reason** updates to *Terminated*, the record becomes inactive, a vendor hold is applied to all local vendors, portal access is blocked, and all portal roles are removed.
 

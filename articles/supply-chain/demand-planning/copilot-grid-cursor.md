@@ -19,7 +19,7 @@ The *Copilot grid cursor* offers detailed insights into a selected time-series c
 
 To use the Copilot grid cursor, follow these steps:
 
-1. Open the time series that you want to analyze. For example, on the navigation pane, select **Planning data** \> **Forecasts**, and then select the time series.
+1. Open the time series that you want to analyze. For example, on the navigation pane, select **Planning data** > **Forecasts**, and then select the time series.
 1. In the **Time series values section**, find and select the cell that you want to analyze. After you select the cell, the Copilot grid cursor icon appears to the right of the cell and points to it.
 
     :::image type="content" source="media/copilot-grid-cursor-icon.png" alt-text="The Copilot grid cursor icon.":::

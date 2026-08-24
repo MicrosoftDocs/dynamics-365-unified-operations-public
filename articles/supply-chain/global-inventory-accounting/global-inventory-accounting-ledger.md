@@ -22,7 +22,7 @@ Global Inventory Accounting has its own set of ledgers. Each time an inventory-r
 
 A ledger is a register of debit and credit measures. These measures are classified by using cost elements and subledger accounts. A Global Inventory Accounting ledger is defined by its combination of a currency, a calendar, a convention, and an association with a legal entity.
 
-To set up your Global Inventory Accounting ledgers, go to **Global inventory accounting** \> **Setup** \> **Global inventory accounting ledgers**. For each ledger, set the following fields:
+To set up your Global Inventory Accounting ledgers, go to **Global inventory accounting** > **Setup** > **Global inventory accounting ledgers**. For each ledger, set the following fields:
 
 - **Name** – Enter the name of the ledger.
 - **Description** – Enter a description of the ledger.

@@ -23,7 +23,7 @@ For example, an administrator creates a policy, selects the *Catalog policy* rul
 
 ## Manage purchasing policies
 
-To manage your purchasing policies, go to **Procurement and sourcing** \> **Setup** \> **Policies** \> **Purchasing policies**. From there, you can create, edit, and delete purchasing policies as needed.
+To manage your purchasing policies, go to **Procurement and sourcing** > **Setup** > **Policies** > **Purchasing policies**. From there, you can create, edit, and delete purchasing policies as needed.
 
 ## Assigning policies to organizations
 
@@ -146,6 +146,6 @@ The purchase order creation and demand consolidation rule defines the policy rul
     - **Allow demand consolidation under these conditions** – Define the criteria that determine whether approved purchase requisition lines are eligible for demand consolidation. For each type of purchase requisition line, you can set the criteria by procurement category and vendor. If you select **Allow demand consolidation under these conditions**, you can set the criteria by procurement category and vendor for each type of purchase requisition line. When you select a procurement category, any subcategories for that procurement category are also selected. If you select the **All** option for a specific line type, all purchase requisition lines of that line type are eligible for demand consolidation.
 
 > [!IMPORTANT]
-> If you enable budget control and set purchase requisitions to **Automatically create purchase orders** on approval, also turn on **Run automatic purchase order creation as a batch job** on the **Purchase order creation and demand consolidation** policy rule (**Procurement and sourcing** \> **Setup** \> **Policies** \> **Purchasing policies**). Otherwise, the budget check that runs during requisition release can repeatedly re-trigger the release process, trapping requisition processing in a never-ending loop that degrades performance and can make the system unresponsive. Running automatic purchase order creation as a batch job processes approved requisitions asynchronously and prevents the loop.
+> If you enable budget control and set purchase requisitions to **Automatically create purchase orders** on approval, also turn on **Run automatic purchase order creation as a batch job** on the **Purchase order creation and demand consolidation** policy rule (**Procurement and sourcing** > **Setup** > **Policies** > **Purchasing policies**). Otherwise, the budget check that runs during requisition release can repeatedly re-trigger the release process, trapping requisition processing in a never-ending loop that degrades performance and can make the system unresponsive. Running automatic purchase order creation as a batch job processes approved requisitions asynchronously and prevents the loop.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

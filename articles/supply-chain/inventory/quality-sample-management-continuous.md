@@ -48,19 +48,19 @@ To work through a scenario that shows how to set up and use continuous sampling,
 1. Create a production or batch order for the product with the following information:
     - Choose a warehouse that is enabled for the advanced warehouse processes. Make sure that **Use warehouse management processes** is set to *Yes* for the selected warehouse.
     - Set the quantity for the order to *2,000 pieces*.
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**. Set up an item sampling policy as described in [Quality management item sampling](../inventory/quality-item-sampling.md). On the **Sample management** FastTab, make the following settings to set up continuous sampling:
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Item sampling**. Set up an item sampling policy as described in [Quality management item sampling](../inventory/quality-item-sampling.md). On the **Sample management** FastTab, make the following settings to set up continuous sampling:
     - **Sample inspection method** – Set to *Continuous process*.
     - **Sample size** – Set to *1*.
     - **Unit** – Set to *Sp* (spoonful).
     - **One sample per every** – Set to *2* and *License plate*.
     - **Number of samples per quality order generated** – Set to *2*.
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**. Set up a test group as described in [Quality management test groups](../inventory/quality-test-groups.md). Make sure at least one test is assigned in the bottom section. On the **General** tab in the top section, make the following settings to set up the test group for continuous sampling:
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Test groups**. Set up a test group as described in [Quality management test groups](../inventory/quality-test-groups.md). Make sure at least one test is assigned in the bottom section. On the **General** tab in the top section, make the following settings to set up the test group for continuous sampling:
     - **Update inventory status** – Set to *Yes* to enable inventory status updates based on test results.
     - **Failed quality order status** – Specify the inventory status to apply to the license plate when a quality order fails.
     - **Passed quality order status** – Specify the inventory status to apply to the license plate when a quality order passes.
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Quality associations**. Set up a quality association as described in [Quality associations](../inventory/quality-associations.md). Make the following settings:
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Quality associations**. Set up a quality association as described in [Quality associations](../inventory/quality-associations.md). Make the following settings:
     - **Reference type** – Select **Production*.
     - **Item code** – Select *Table*.
     - **Item** – Select the item from the production or batch order you created for this scenario.
@@ -74,7 +74,7 @@ To work through a scenario that shows how to set up and use continuous sampling,
 1. Report four license plates as finished by following these steps:
  
     1. On the Action Pane, open the **Production order** tab and, from the **Process** group, select **Report as finished**.
-    1. The **Report as finished** dialog opens. Check that the **License plate** dimension is visible in the grid. If it's not visible, select **Inventory** \> **Display dimensions** from the toolbar and then select the **License plate** checkbox in the **Display dimensions** dialog.
+    1. The **Report as finished** dialog opens. Check that the **License plate** dimension is visible in the grid. If it's not visible, select **Inventory** > **Display dimensions** from the toolbar and then select the **License plate** checkbox in the **Display dimensions** dialog.
     1. Create four new license plates by following these steps:
         - Right-click on the right side of the **License plate** field. Then select **View details** from the context menu to open the **License plates** page.
         - On the Action Pane, select **New** to create a new license plate.

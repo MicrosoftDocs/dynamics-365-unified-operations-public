@@ -44,14 +44,14 @@ Item **M9200** must be added to the warehouse. Complete the procedures in the fo
 
 #### Create a new license plate ID
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **License plates**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse** > **License plates**.
 1. On the Action Pane, select **New**.
 1. In the new row, in the **License plate** field, enter *LP6203*.
 1. Select **Save**.
 
 #### Create a standard cost for item M9200 in site 6
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Search on **M9200**.
 1. Select the row for the item, and then, on the Action Pane, on the **Manage costs** tab, in the **Set up** group, select **Item price**.
 1. On the **Item price** page, select the **Pending prices** tab.
@@ -70,7 +70,7 @@ Item **M9200** must be added to the warehouse. Complete the procedures in the fo
 
 #### Create inventory in warehouse 62
 
-1. Go to **Inventory management** \> **Journal entries** \> **Items** \> **Inventory adjustment**.
+1. Go to **Inventory management** > **Journal entries** > **Items** > **Inventory adjustment**.
 1. On the Action Pane, select **New**.
 1. In the **Create inventory journal** dialog box, on the **Overview** FastTab, in the **Warehouse** field, enter *62*. Accept the default values in all the other fields.
 1. Select **OK** to close the dialog box.
@@ -93,14 +93,14 @@ Item **M9200** must be added to the warehouse. Complete the procedures in the fo
 
 You might have to regenerate your wave process methods to make the load building method (*buildLoads*) available.
 
-1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave process methods**.
+1. Go to **Warehouse management** > **Setup** > **Waves** > **Wave process methods**.
 2. Verify that *buildLoads* is present in the list. If it isn't present, select **Regenerate methods** on the Action Pane to add it.
 
 ### Set up wave templates
 
 To take advantage of advanced wave load building, you must include the *buildLoads* method in each relevant [wave template](tasks/configure-wave-processing.md).
 
-1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave templates**.
+1. Go to **Warehouse management** > **Setup** > **Waves** > **Wave templates**.
 1. Select a wave template.
 
     If you're working with the *USMF* demo data, select the *62 Shipping Default* template.
@@ -131,7 +131,7 @@ To take advantage of advanced wave load building, you must include the *buildLoa
 
 Load mix groups establish rules for the types of items that can be combined on a single load. You can set up as many load mix groups as you require. However, to use advanced wave load building, you must have at least one. Follow these steps to create a load mix group.
 
-1. Go to **Warehouse management** \> **Setup** \> **Load** \> **Load mix groups**.
+1. Go to **Warehouse management** > **Setup** > **Load** > **Load mix groups**.
 1. On the Action Pane, select **New** to create a load group.
 1. In the **Load mix group ID** field, enter a name for the new group.
 
@@ -163,7 +163,7 @@ If you're working with the *USMF* demo data, you've now finished this setup.
 
 You can set up as many load build templates as you require. However, to use advanced wave load building, you must have at least one. Follow these steps to create a load build template.
 
-1. Go to **Warehouse Management** \> **Setup** \> **Load** \> **Wave load building templates**.
+1. Go to **Warehouse Management** > **Setup** > **Load** > **Wave load building templates**.
 1. On the Action Pane, select **New** to add a row to the grid.
 1. In the new row, set the following values.
 
@@ -205,7 +205,7 @@ This scenario shows how the settings that were described earlier in this article
 
 ### Create sales orders
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. On the Action Pane, select **New** to open the **Create sales order** dialog box.
 1. In the dialog box, set the following values:
 
