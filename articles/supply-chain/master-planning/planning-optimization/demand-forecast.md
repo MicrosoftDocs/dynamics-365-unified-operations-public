@@ -24,7 +24,7 @@ Use a demand forecast to account for expected demand in your master planning. Yo
 
 To configure a master plan so that it includes a demand forecast, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. Select an existing plan, or create a new plan.
 1. On the **General** FastTab, set the following fields:
 
@@ -44,7 +44,7 @@ To configure a master plan so that it includes a demand forecast, follow these s
 
 To configure a coverage group to include a demand forecast, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Coverage groups**.
 1. Select an existing coverage group, or create a new group.
 1. On the **Other** FastTab, set the following fields:
 
@@ -72,7 +72,7 @@ This section provides information about the different methods that reduce foreca
 
 When you include a forecast in a master plan, select how to reduce the forecast requirements when actual demand is included. Master planning excludes forecast requirements from the past, which means all forecast requirements before today's date.
 
-To include a forecast in a master plan and select the method to reduce forecast requirements, go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**. In the **Forecast model** field, select a forecast model. In the **Method used to reduce forecast requirements** field, select a method. The following options are available:
+To include a forecast in a master plan and select the method to reduce forecast requirements, go to **Master planning** > **Setup** > **Plans** > **Master plans**. In the **Forecast model** field, select a forecast model. In the **Method used to reduce forecast requirements** field, select a method. The following options are available:
 
 - None
 - Percent – reduction key
@@ -287,7 +287,7 @@ Therefore, the system creates the following planned orders.
 
 A forecast reduction key is used in the *Transactions - reduction key* and *Percent- reduction key* methods for reducing forecast requirements. Follow these steps to create and set up a reduction key.
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Reduction keys**.
+1. Go to **Master planning** > **Setup** > **Coverage** > **Reduction keys**.
 1. Select **New** to create a reduction key.
 1. In the **Reduction key** field, enter a unique identifier for the forecast reduction key. Then, in the **Name** field, enter a name.
 1. Define the periods and the reduction key percentage in each period:
@@ -300,12 +300,12 @@ A forecast reduction key is used in the *Transactions - reduction key* and *Perc
 
 A forecast reduction key must be assigned to the coverage group of the item. Follow these steps to assign a reduction key to an item's coverage group.
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**.
 1. On the **Other** FastTab, in the **Reduction key** field, select the reduction key to assign to the coverage group. The reduction key then applies to all items that belong to the coverage group.
 1. To use a reduction key to calculate forecast reduction during master scheduling, you must define this setting in the setup of the forecast plan or the master plan. Go to one of the following locations:
 
-    - **Master planning** \> **Setup** \> **Plans** \> **Forecast plans**
-    - **Master planning** \> **Setup** \> **Plans** \> **Master plans**
+    - **Master planning** > **Setup** > **Plans** > **Forecast plans**
+    - **Master planning** > **Setup** > **Plans** > **Master plans**
 
 1. On the **Forecast plans** or **Master plans** page, on the **General** FastTab, in the **Method used to reduce forecast requirements** field, select either *Percent - reduction key* or *Transactions - reduction key*.
 
@@ -449,7 +449,7 @@ The resulting demand forecast is a single demand for 9 pcs (2 + 3 + 4) on June 1
 
 To create a forecast model, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Demand forecasting** \> **Forecast models**.
+1. Go to **Master planning** > **Setup** > **Demand forecasting** > **Forecast models**.
 1. On the Action Pane, select **New**.
 1. Set the following fields for the new forecast model:
 
@@ -464,7 +464,7 @@ To create a forecast model, follow these steps:
 
 To assign submodels to a forecast model, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Forecast** \> **Forecast models**.
+1. Go to **Inventory management** > **Setup** > **Forecast** > **Forecast models**.
 1. In the list pane, select the forecast model to set up a submodel for.
 1. On the **Submodel** FastTab, select **Add** to add a row to the grid.
 1. In the new row, set the following fields:

@@ -22,7 +22,7 @@ To set up criticality, you first create the criticality types that should be use
 
 ## Set up criticality types
 
-1. Select **Asset management** \> **Setup** \> **Assets** \> **Criticality types**.
+1. Select **Asset management** > **Setup** > **Assets** > **Criticality types**.
 2. Select **New** to create a record.
 3. In the **Criticality** field, enter a number that indicates the criticality.
 4. In the **Name** field, enter a name for the criticality type.
@@ -32,7 +32,7 @@ To set up criticality, you first create the criticality types that should be use
 
 ## Set up asset criticalities
 
-1. Select **Asset management** \> **Setup** \> **Asset criticalities**.
+1. Select **Asset management** > **Setup** > **Asset criticalities**.
 2. Select **New** to create a record.
 3. Depending on the required level of detail for asset criticality, make relevant selections in the **Functional location**, **Asset type**, **Manufacturer**, **Model**, **Asset**, **Job type category**, **Job type**, **Job type variant**, and **Job requirement** fields.
 

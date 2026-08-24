@@ -14,6 +14,7 @@ ms.custom:
 
 # Set up warehouse spatial locations (preview)
 
+[!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: preview until further notice -->
 
@@ -38,7 +39,7 @@ Before you assign coordinates to individual locations, configure the sorting alg
 
 To configure warehouse-level spatial location settings, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Warehouses**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**.
 1. Select the warehouse that you want to configure.
 1. On the **Warehouse** FastTab, in the **Warehouse coordinates configuration** section, make the following settings:
 
@@ -59,7 +60,7 @@ After you configure the warehouse-level settings, assign X, Y, and Z coordinates
 
 To assign coordinates to warehouse locations, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Locations**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Locations**.
 1. Select a location record.
 1. Make the following settings:
 
@@ -78,14 +79,14 @@ To use spatial location sorting during wave processing, add the *Sort picking wo
 
 To add the wave step, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave templates**.
+1. Go to **Warehouse management** > **Setup** > **Waves** > **Wave templates**.
 1. Select the wave template that you want to modify.
 1. On the **Methods** FastTab, in the **Remaining methods** list, find and select the method with **Name** *Sort picking work lines*.
 1. Select the **Add** button (right arrow) to move it to the **Selected methods** list.
 1. Use the **Move up** and **Move down** arrows to position the step after the work creation step (such as *Create work*) and before the release step (if there is one). The sort must run after work is created so that there are pick lines to sort.
 
 > [!NOTE]
-> The *Sort picking work lines* method only appears in the lists on the **Methods** FastTab after the *Warehouse spatial location* feature is turned on in **Feature management**. If the method still doesn't appear, go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave process methods**, and select **Regenerate methods** from the Action Pane.
+> The *Sort picking work lines* method only appears in the lists on the **Methods** FastTab after the *Warehouse spatial location* feature is turned on in **Feature management**. If the method still doesn't appear, go to **Warehouse management** > **Setup** > **Waves** > **Wave process methods**, and select **Regenerate methods** from the Action Pane.
 
 ## Configure batch processing for *Sort picking work lines*
 
@@ -93,7 +94,7 @@ By default, the *Sort picking work lines* step runs synchronously during wave pr
 
 To configure batch processing, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave process methods**.
+1. Go to **Warehouse management** > **Setup** > **Waves** > **Wave process methods**.
 1. Select the *sortPickingWorkLines* method in the list.
 1. On the Action Pane, select **Task configuration**. The **Wave post method task configuration** page opens.
 1. On the Action Pane, select **New** to add a configuration row.

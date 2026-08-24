@@ -21,7 +21,7 @@ There are two methods for registering the receipt of returned items. The first m
 
 You can use the **Arrival overview** page to identify a return shipment by its Return Material Authorization (RMA) number. If a journal name is defined on the **Setup** tab, and journal lines that correspond to the lines selected on the **Arrival overview** page exist, a new journal header is created when you select **Start arrival**.
 
-1. Go to **Inventory management** \> **Periodic** \> **Arrival overview**.
+1. Go to **Inventory management** > **Periodic** > **Arrival overview**.
 
 1. In the **Setup name** field, select **Return order**, and then select **Update**.
 
@@ -43,7 +43,7 @@ You can use the **Arrival overview** page to identify a return shipment by its R
     > [!NOTE]
     > You can also manually create an arrival journal by using the **Item arrival** page.
 
-1. Go to **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.
+1. Go to **Inventory management** > **Journals** > **Item arrival** > **Item arrival**.
 
 1. Select the arrival journal that you just created and then select **Lines** to open the **Journal lines, locations** page.
 
@@ -62,7 +62,7 @@ You can use the **Arrival overview** page to identify a return shipment by its R
 
 As an alternative to using the **Arrival overview** page, you can use the **Registration** page to register the arrival of returned items.
 
-1. Go to **Sales and marketing** \> **Sales returns** \> **All return orders**. Create a new return order or open the return order from the list. On the **Lines** FastTab, select the return order line. Select **Update line**, and then select **Registration**.
+1. Go to **Sales and marketing** > **Sales returns** > **All return orders**. Create a new return order or open the return order from the list. On the **Lines** FastTab, select the return order line. Select **Update line**, and then select **Registration**.
 
 1. Assign a disposition code in the **Disposition code** field, and then select **OK**.
 

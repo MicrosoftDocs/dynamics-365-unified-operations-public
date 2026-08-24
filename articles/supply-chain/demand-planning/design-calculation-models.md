@@ -22,7 +22,7 @@ To create and customize a calculation model, you must first open an existing cal
 
 Follow these steps to create and customize a calculation model.
 
-1. On the navigation pane, select **Operations** \> **Calculations**.
+1. On the navigation pane, select **Operations** > **Calculations**.
 1. Select the calculation profile that you want to create or customize a calculation model for.
 1. On the **Calculation Model** tab, there will always be at least one step (of the *Input* type) at the top of the flow chart. The model is processed from top to bottom, and the last step must be a step of the *Save** type. Add, remove, and arrange steps as you require, and configure settings for each of them. For guidelines, see the illustration after this procedure.
 1. When you've finished designing your calculation model, select the **Validate** button :::image type="icon" source="media/button-validate-model.png" border="false"::: in the upper-right corner. The system runs a few tests to validate that your model will work, and then provides feedback. Fix any issues that the validation test reports.

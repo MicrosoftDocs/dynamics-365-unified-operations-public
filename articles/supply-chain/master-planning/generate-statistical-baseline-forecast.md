@@ -22,7 +22,7 @@ This article provides information about the parameters and filters that are used
 
 When you create a baseline forecast, you must first specify the parameters and filters that are used in the calculation. For example, you can create a baseline forecast that estimates demand based on transaction data from the past year for a specific company, for the coming month, and for a selected group of items.
 
-To generate a demand forecast, go to **Master planning** \> **Forecasting** \> **Demand forecasting** \> **Generate statistical baseline forecast**.
+To generate a demand forecast, go to **Master planning** > **Forecasting** > **Demand forecasting** > **Generate statistical baseline forecast**.
 
 The forecast bucket can be selected at forecast generation time. The available values are Day, Week, and Month.
 

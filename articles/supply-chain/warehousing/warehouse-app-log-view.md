@@ -13,6 +13,8 @@ ms.custom:
 
 # View the app log on a mobile device
 
+[!include [banner](../includes/banner.md)]
+
 The Warehouse Management mobile app maintains a local log of app operations. Use the **Local log view** page to review activity, identify errors, and export logs for troubleshooting with the Microsoft support team.
 
 ## What the app log records

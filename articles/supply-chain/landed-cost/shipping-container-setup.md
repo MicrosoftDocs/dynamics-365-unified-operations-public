@@ -13,7 +13,7 @@ ms.custom:
 
 # Shipping container setup
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to set up shipping containers for the **Landed cost** module.
 
@@ -21,7 +21,7 @@ This article describes how to set up shipping containers for the **Landed cost**
 
 Shipping container types define the types of shipping containers that you can use during shipping and voyages.
 
-To work with the shipping container types, go to **Landed cost** \> **Containers setup** \> **Shipping container types**. You can view, add, and remove records for your container types. The following table describes the fields that are available for each record.
+To work with the shipping container types, go to **Landed cost** > **Containers setup** > **Shipping container types**. You can view, add, and remove records for your container types. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -39,7 +39,7 @@ You don't need to enter shipping container numbers for shipping containers that 
 
 Shipping container records are used only in Landed cost. They aren't available in the standard **Transportation management** module (TMS).
 
-To work with shipping containers, go to **Landed cost** \> **Containers setup** \> **Shipping containers**. There, you can view, add, and remove records for your shipping containers. The following table describes the fields that are available for each record.
+To work with shipping containers, go to **Landed cost** > **Containers setup** > **Shipping containers**. There, you can view, add, and remove records for your shipping containers. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -57,7 +57,7 @@ Unit types provide extra groupings and identification methods for shipping conta
 
 Unit types are used only in Landed cost. They aren't available in TMS.
 
-To work with unit types, go to **Landed cost** \> **Containers setup** \> **Unit types**. You can view, add, and remove records for your unit types. The following table describes the fields that are available for each record.
+To work with unit types, go to **Landed cost** > **Containers setup** > **Unit types**. You can view, add, and remove records for your unit types. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -68,7 +68,7 @@ To work with unit types, go to **Landed cost** \> **Containers setup** \> **Unit
 
 Refrigeration types provide extra groupings and identification methods for shipping containers, usually refrigerated containers. Select a refrigeration type when you set up a container on the **All shipping containers** page.
 
-To work with refrigeration types, go to **Landed cost** \> **Containers setup** \> **Refrigeration types**. You can view, add, and remove records for your refrigeration types. The following table describes the fields that are available for each record.
+To work with refrigeration types, go to **Landed cost** > **Containers setup** > **Refrigeration types**. You can view, add, and remove records for your refrigeration types. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|

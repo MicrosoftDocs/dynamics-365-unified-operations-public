@@ -24,7 +24,7 @@ Workers start work by signing in to the production floor execution interface. Yo
 
 To choose your sign-in requirements, follow these steps:
 
-1. Go to **Time and attendance** \> **Setup** \> **Time and attendance parameters**.
+1. Go to **Time and attendance** > **Setup** > **Time and attendance parameters**.
 1. On the **General** tab, make the following settings:
     - **Use password** – If you want to require a password, set this option to *Yes*. Set it to *No* if you want to allow workers to sign in using only their badge ID or personnel number. If you choose to require a password, you must assign one to each worker account as described later in this article.
     - **Use badge ID** – Set this option to *Yes* to require users to sign in with their badge ID. Set it to *No* to require users to sign in with their personnel number. All worker accounts automatically have a unique personnel number. If you choose to require a badge ID, you must assign one to each worker account as described later in this article.
@@ -36,7 +36,7 @@ Workers sign in with credentials linked to their worker account. You can also se
 
 To set up a worker account, follow these steps:
 
-1. Go to **Human resources** \> **Workers** \> **Workers**.
+1. Go to **Human resources** > **Workers** > **Workers**.
 1. Find and open the account you want to set up or select **New** on the Action Pane to create a new worker account.
 1. Open the **Time registration** tab.
 1. Find the **Activate on registration terminals** button on the **Time registration** FastTab toolbar.

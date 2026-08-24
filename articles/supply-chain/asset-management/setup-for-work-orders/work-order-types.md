@@ -22,7 +22,7 @@ A work order type defines an affiliation with a work order lifecycle model. A wo
 
 For more information about work order lifecycle states and project stages, see [Work order lifecycle states](work-order-lifecycle-states.md).
 
-1. Select **Asset management** \> **Setup** \> **Work orders** \> **Work order types**.
+1. Select **Asset management** > **Setup** > **Work orders** > **Work order types**.
 2. Select **New** to create a work order type.
 3. In the **Work order type** field, enter an ID for the work order type.
 4. In the **Name** field, enter a name.
@@ -32,7 +32,7 @@ For more information about work order lifecycle states and project stages, see [
 7. In the **Mandatory** section, set the relevant options to **Yes** to specify which fault-related or maintenance downtime–related information is added to a work order of this type.
 
     > [!NOTE]
-    > The options in the **Mandatory** section are related to the options on the **Validate** FastTab of the **Work order lifecycle states** page (**Asset management** \> **Setup** \> **Work orders** \> **Lifecycle states**).
+    > The options in the **Mandatory** section are related to the options on the **Validate** FastTab of the **Work order lifecycle states** page (**Asset management** > **Setup** > **Work orders** > **Lifecycle states**).
 
 8. Select **Save**.
 

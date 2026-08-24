@@ -30,7 +30,7 @@ When a CAPA case, CAPA process stage, or CAPA process activity that is assigned 
 
 To set up CAPA worker groups, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA worker groups**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA worker groups**.
 1. Use the buttons on the Action Pane to add new worker groups or edit existing ones as required. (You can also delete existing groups, but only if they aren't assigned to CAPA case activities.)
 1. On the header of the new or selected worker group, set the following fields:
 
@@ -59,7 +59,7 @@ To set up CAPA worker groups, follow these steps:
 
 To set up CAPA categories, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA categories**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA categories**.
 1. Use the buttons on the Action Pane to add new CAPA categories as required. (You can also delete existing categories, but only if they aren't assigned to active CAPA cases.)
 1. For each new CAPA category, set the following fields:
 
@@ -69,7 +69,7 @@ To set up CAPA categories, follow these steps:
 
 To set up custom CAPA subcategories for a category that uses the *User defined* subcategory type, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA categories**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA categories**.
 1. Select the category that you want to define subcategories for. The selected category must have the **CAPA subcategory type** field set to *User defined*.
 1. On the Action Pane, select **User defined CAPA subcategory**.
 1. Use the buttons on the Action Pane to add new subcategories as required. (You can also delete existing subcategories.) 
@@ -89,7 +89,7 @@ To set up custom CAPA subcategories for a category that uses the *User defined* 
 
 To name, describe, and approve CAPA processes, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA processes**.
 
     The **CAPA processes** page shows a list of existing CAPA processes. For each selected process, the following information is shown:
 
@@ -107,7 +107,7 @@ To name, describe, and approve CAPA processes, follow these steps:
 
 To define the stages and activities that make up a CAPA process, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA processes**.
 1. Select or create the CAPA process that you want to work with.
 1. On the Action Pane, on the **Process** tab, select **Details**.
 
@@ -119,7 +119,7 @@ To define the stages and activities that make up a CAPA process, follow these st
     > [!TIP]
     > If you want to create a new process that is similar to an existing process, you can get started quickly by copying the existing process. On the Action Pane, on the **Process** tab, select **Copy from**. Then select the process that you want to copy.
 
-1. Set up the top-level stages. To add a new stage at the bottom of the current stage list, select the top-level heading (the process name), and then, on the Action Pane, select **New** \> **Create level**. (To create a substage for an existing stage, select the parent stage, and then select **New** \> **Create level**.) 
+1. Set up the top-level stages. To add a new stage at the bottom of the current stage list, select the top-level heading (the process name), and then, on the Action Pane, select **New** > **Create level**. (To create a substage for an existing stage, select the parent stage, and then select **New** > **Create level**.) 
 1. For each new stage, review or enter the following information in the right pane:
 
     - **Name** – This field is read-only. For a new stage, its value comes from the value that you enter in the **Purpose** field. It can't be changed later.
@@ -131,7 +131,7 @@ To define the stages and activities that make up a CAPA process, follow these st
     - **Print on report** – Select whether information about this stage should be included on the printed CAPA case report. The available values are *Yes*, *No*, and *Inherit*.
     - **Check for required activities** – Select this checkbox if activities that belong to this stage and that are marked as mandatory must be completed before the stage can be closed.
 
-1. Add activities to each stage. To add a new activity at the bottom of the current activity list for a stage, select the stage, and then, on the Action Pane, select **New** \> **Create action**, **New** \> **Create appointment**, **New** \> **Create event**, or **New** \> **Create task**, depending on the type of activity that you want. All the activity types work in nearly the same way, but slightly different scheduling settings are available for each. 
+1. Add activities to each stage. To add a new activity at the bottom of the current activity list for a stage, select the stage, and then, on the Action Pane, select **New** > **Create action**, **New** > **Create appointment**, **New** > **Create event**, or **New** > **Create task**, depending on the type of activity that you want. All the activity types work in nearly the same way, but slightly different scheduling settings are available for each. 
 1. For each new activity, enter the following information in the right pane:
 
     - The **Name**, **Purpose**, and **Activity number** fields work the same way that they work for stages.
@@ -145,7 +145,7 @@ To define the stages and activities that make up a CAPA process, follow these st
 
 To view all CAPA cases that use a selected CAPA process, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA processes**.
 1. Select or open the CAPA process that you want to view cases for.
 1. On the Action Pane, on the **Process** tab, select **All cases** or **All CAPA cases**.
 
@@ -155,7 +155,7 @@ To view all CAPA cases that use a selected CAPA process, follow these steps:
 
 To set up CAPA resolution types, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA resolution types**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA resolution types**.
 1. Use the buttons on the Action Pane to create new CAPA resolution types as required. (You can also delete existing resolution types.)
 1. For each new CAPA resolution type, enter a name and a description.
 
@@ -165,7 +165,7 @@ To set up CAPA resolution types, follow these steps:
 
 To set up CAPA sources, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA sources**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA sources**.
 1. Use the buttons on the Action Pane to create new CAPA sources as required. (You can also delete existing sources.)
 1. For each new CAPA source, enter a name and a description.
 
@@ -175,7 +175,7 @@ To set up CAPA sources, follow these steps:
 
 To set up CAPA types, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA types**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA types**.
 1. Use the buttons on the Action Pane to create new CAPA types as required. (You can also delete existing types.)
 1. For each new CAPA type, enter a name and a description.
 
@@ -185,7 +185,7 @@ CAPA types let users select a *major/minor classification code* for each CAPA ca
 
 To set up major/minor classification codes, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **Major/minor classification codes**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **Major/minor classification codes**.
 1. Use the buttons on the Action Pane to create new major/minor classification codes as required. (You can also delete existing classification codes.)
 1. For each new CAPA classification code, enter a name and a description.
 
@@ -195,6 +195,6 @@ To set up major/minor classification codes, follow these steps:
 
 To set up CAPA root cause codes, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA root causes**.
+1. Go to **Inventory management** > **Setup** > **CAPA management** > **CAPA root causes**.
 1. Use the buttons on the Action Pane to create new CAPA root causes as required. (You can also delete existing root causes).
 1. For each new CAPA root cause, enter a name and a description.

@@ -19,7 +19,7 @@ ms.custom:
 
 ## View compliance with a service level agreement
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**. Open the details page for the order.
+1. Go to **Service management** > **Service orders** > **Service orders**. Open the details page for the order.
 
 2. On the **General** tab, in the **Compliance** field, view the percentage of time that was spent on the service order compared to the time frame specified in the service level agreement.
 

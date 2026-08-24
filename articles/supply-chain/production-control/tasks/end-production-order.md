@@ -23,7 +23,7 @@ This procedure shows how to end a production order. It is the final procedure ou
 
 To end a production order, follow these steps:
 
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 1. Select a production order that has the status *Reported as finished*.  
 1. On the Action Pane, select **Production order**.
 1. Select **End**. On this page, you can confirm that you want to end the production order.  

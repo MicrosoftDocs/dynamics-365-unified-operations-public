@@ -42,7 +42,7 @@ To delete a portal component, first remove any unmanaged layers. To delete a com
 
 1. Go to the [Power Apps maker portal](https://make.powerapps.com).
 1. Locate the component in the appropriate solution.
-1. Right-click the component, and then select **Advanced** \> **See Solution Layers**.
+1. Right-click the component, and then select **Advanced** > **See Solution Layers**.
 1. Select and remove the unmanaged layer.
 1. After you remove the unmanaged layer, delete the component.
 
@@ -59,7 +59,7 @@ To shut down the Power Pages site, follow these steps:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Power Pages**.
 1. Select your site.
-1. Select **Site Actions** \> **Shut down the site**.
+1. Select **Site Actions** > **Shut down the site**.
 
 The following screenshot shows the Site Actions menu with the **Shut down the site** option.
 

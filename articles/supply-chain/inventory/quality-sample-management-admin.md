@@ -33,10 +33,10 @@ The sample ID number sequence ensures that each sample has a unique identifier f
 
 Follow these steps to create and assign a number sequence for sample IDs:
 
-1. Go to **Organization administration** \> **Number sequences** \> **Number sequences**.
+1. Go to **Organization administration** > **Number sequences** > **Number sequences**.
 1. Create and configure a number sequence for generating sample IDs, as described in [Set up number sequences on an individual basis](../../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md). The number sequence must be defined to use a non-shared scope.
 1. Note the **Number sequence code** that you assign to this number sequence.
-1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters**.
 1. Open the **Number sequences** tab.
 1. Find the row with a **Reference** of *Sample ID* and set the **Number sequence code** field for that row to the number sequence that you created previously in this procedure.
 1. On the Action Pane, select **Save**.
@@ -51,7 +51,7 @@ Sample labels are designed and printed in Zebra Programming Language (ZPL) forma
 
 To design and configure sample label layouts, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample label layouts**.
+1. Go to **Inventory management** > **Setup** > **Sample management** > **Sample label layouts**.
 1. Use the buttons on the Action Pane to create a new calibration label layout or edit an existing one as required. You can also delete existing layouts.
 1. On the header of the new or selected layout, enter details such as the name, description, and dimensions.
 1. On the **Label layout** FastTab, use the large field to design your label layout. For help, consult a ZPL reference.
@@ -68,11 +68,11 @@ Make one or both of the following assignments to specify which label layout to u
 
 - Assign the default label layout, which applies to all samples that don't have a more specific layout assigned to them.
 
-  To do this, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**. Open the **Quality management** tab, and then set the **Default sample label layout** field to the desired label layout.
+  To do this, go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters**. Open the **Quality management** tab, and then set the **Default sample label layout** field to the desired label layout.
 
 - Assign a custom label layout to each specific sample type as needed (overrides the default).
 
-  To do this, go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample types**. Select a sample type, and then set the **Label layout** field to the desired label layout.
+  To do this, go to **Inventory management** > **Setup** > **Sample management** > **Sample types**. Select a sample type, and then set the **Label layout** field to the desired label layout.
 
 ## Configure lifecycle states
 
@@ -80,7 +80,7 @@ Lifecycle states represent the various stages a sample goes through during its l
 
 Follow these steps to manage your lifecycle states:
 
-1. Go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample lifecycle states**.
+1. Go to **Inventory management** > **Setup** > **Sample management** > **Sample lifecycle states**.
 1. Use the buttons on the Action Pane to create a new lifecycle state or edit an existing one as required. You can also delete existing lifecycle states.
 1. Enter the following details for your new or selected lifecycle state:
 
@@ -100,7 +100,7 @@ Sample procedure types define categories and groups for organizing procedures. T
 
 Follow these steps to manage your procedure types:
 
-1. Go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample procedure types**.
+1. Go to **Inventory management** > **Setup** > **Sample management** > **Sample procedure types**.
 1. Use the buttons on the Action Pane to create a new procedure type or edit an existing one as required. You can also delete existing procedure types.
 1. Enter the following details for your new or selected procedure type:
    - **Sample procedure type** – Provide a unique name for the procedure type.
@@ -116,7 +116,7 @@ Sample procedures define the specific steps or actions required for handling sam
 
 Follow these steps to manage your sample procedures:
 
-1. Go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample procedures**.
+1. Go to **Inventory management** > **Setup** > **Sample management** > **Sample procedures**.
 1. Use the buttons on the Action Pane to create a new procedure or edit an existing one as required. You can also delete existing procedures.
 1. Enter the following details in the header of your new or selected procedure:
    - **Sample procedure ID** – Provide a unique name for the procedure.
@@ -133,7 +133,7 @@ Sample types define the classification and processing methods for samples. When 
 
 To manage your sample types, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample types**.
+1. Go to **Inventory management** > **Setup** > **Sample management** > **Sample types**.
 1. Use the buttons on the Action Pane to create a new sample type or edit an existing one as required. You can also delete existing sample types.
 1. Enter the following details in the header of your new or selected sample type:
    - **Sample type** – Enter a unique name for the sample type, such as *Inline* or *Continuous*.
@@ -152,7 +152,7 @@ A sample association defines how and when quality samples are taken for a specif
 
 Follow these steps to define and configure sample associations:
 
-1. Go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample associations**.
+1. Go to **Inventory management** > **Setup** > **Sample management** > **Sample associations**.
 1. Use the buttons on the Action Pane to create a new sample association or edit an existing one as required. You can also delete existing sample associations.
 1. Enter the following details in the top section to set up your new or selected sample association:
    - **Item code** – Select the scope of products to include in the rule. Choose one of the following values:
@@ -178,7 +178,7 @@ Item sampling policies define the criteria for selecting samples. Configuring th
 
 Follow these steps to define an item sampling policy:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Item sampling**.
 1. Use the buttons on the Action Pane to create a new item sampling policy or edit an existing one as required. You can also delete existing policies.
 1. Set up the item sampling policy as described in [Quality management item sampling](../inventory/quality-item-sampling.md).
 1. On the **Sample management** FastTab, set up the settings that are specific for sample management. Make the following settings here.
@@ -217,7 +217,7 @@ The default item status establishes the initial inventory status assigned to new
 
 To configure the default item status for a specific item, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Inventory** \> **Default item status**.
+1. Go to **Warehouse management** > **Setup** > **Inventory** > **Default item status**.
 1. On the Action Pane, select **New** to create a new record.
 1. Enter the following details for your new record:
     - **Item number** – Select the product you want to configure for sample management.
@@ -226,7 +226,7 @@ To configure the default item status for a specific item, follow these steps:
 
 To configure the default item status that is applicable for all item transactions at a specific warehouse, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**.
+1. Go to **Warehouse management** > **Setup** > **Inventory breakdown** > **Warehouses**.
 1. Find and select the warehouse where you want to configure the default item status.
 1. On the **Warehouse** FastTab, set the default inventory status in the **Default inventory status ID** field.
 
@@ -238,7 +238,7 @@ To configure the default item status that is applicable for all item transaction
 
 If you configured sample management to generate samples per license plate, then the **Inventory status** is used to control the status of the license plate. To control the initial status of the license plates generated during production report as finished, set the following fields on the relevant test group:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Test groups**.
 1. Select an existing test group or create a new one.
 1. Select the **General** tab and make the following settings:
     - **Update inventory status** – Set to *Yes* to enable inventory status updates based on test results.
@@ -247,7 +247,7 @@ If you configured sample management to generate samples per license plate, then 
 
 If you configured sample management to generate samples per product batch number, then the batch disposition master is used to control the status of the individual batch number. To control the initial status on batch numbers generated during report as finished, set the following fields on each test group:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Test groups**.
 1. Select an existing test group or create a new one.
 1. Select the **General** tab and make the following settings:
     - **Update batch disposition** – Set to *Yes* to enable update of the tested batch number based on whether the quality order is failing or passing.

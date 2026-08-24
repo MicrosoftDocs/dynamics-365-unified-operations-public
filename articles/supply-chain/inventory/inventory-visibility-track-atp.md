@@ -34,7 +34,7 @@ Before you can use the feature that is described in this article, your system mu
 To configure Supply Chain Management to exchange ATP information with Inventory Visibility, follow these steps:
 
 1. Sign in to Supply Chain Management.
-1. Go to **Inventory Management** \> **Inventory Visibility** \> **Inventory Visibility integration with ATP**.
+1. Go to **Inventory Management** > **Inventory Visibility** > **Inventory Visibility integration with ATP**.
 1. On the Action Pane, select **Enable** to enable the integration. (If you must ever disable the integration, you can select **Disable** here.)
 
 ## Default calculated measure for ATP in Supply Chain Management
@@ -49,8 +49,8 @@ When ATP in Inventory Visibility is integrated with Supply Chain Management, it 
 
 When you use the Inventory Visibility app in Power Apps, you can query and post ATP information.
 
-- To query ATP information, go to **Operational visibility** \> **On hand query**. Be sure to enable the **Query ATP** option.
-- To post ATP information, go to **Operational visibility** \> **Change schedule**. There, you can specify and submit updated schedule information.
+- To query ATP information, go to **Operational visibility** > **On hand query**. Be sure to enable the **Query ATP** option.
+- To post ATP information, go to **Operational visibility** > **Change schedule**. There, you can specify and submit updated schedule information.
 
 Learn more in [Use the Inventory Visibility app UI version 2](inventory-visibility-power-platform.md).
 

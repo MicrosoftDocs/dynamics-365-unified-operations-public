@@ -12,6 +12,8 @@ ms.custom:
 
 # Support policy for the Warehouse Management mobile app
 
+[!include [banner](../includes/banner.md)]
+
 This article describes the support policies for the Warehouse Management mobile app. The policy that applies to you depends on the version you are running:
 
 - **Version 3 (V3)** reaches end of support in May 2026. After that date, Microsoft no longer accepts support cases for V3. Migrate to V4 before May 2026 to keep support coverage.

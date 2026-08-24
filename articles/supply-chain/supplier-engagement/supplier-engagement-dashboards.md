@@ -24,7 +24,7 @@ The Supplier Engagement app includes dashboards that provide a role-based view o
 To open and use the dashboards.
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Menu** area.
-1. On the navigation pane, go to **General** \> **Dashboards**.
+1. On the navigation pane, go to **General** > **Dashboards**.
 1. On the **Dashboards** page, use the list at the top of the page to choose a dashboard. The following dashboards are available:
     - **Global vendor activities overview** – This dashboard helps you track follow-up work and keep vendor-related tasks moving. It can include lists of current and overdue appointments, tasks and their status, and corrective actions.
     - **Global vendor registrations** – This dashboard focuses on the onboarding pipeline. It can include lists of new and pending registration requests and charts that group requests by status reason.

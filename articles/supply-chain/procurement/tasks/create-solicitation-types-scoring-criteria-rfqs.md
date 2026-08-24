@@ -19,7 +19,7 @@ This guide shows you how to create a solicitation type and associate this with a
 
 ## Create a solicitation type
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Request for quotation** \> **Solicitation type**.
+1. Go to **Procurement and sourcing** > **Setup** > **Request for quotation** > **Solicitation type**.
 2. Select **New**.
 3. In the **Name** field, type a value.
 4. In the **Description** field, type a value.
@@ -29,7 +29,7 @@ This guide shows you how to create a solicitation type and associate this with a
 
 ## Use the solicitation type
 
-1. Go to **Procurement and sourcing** \> **Requests for quotations** \> **All requests for quotations**.
+1. Go to **Procurement and sourcing** > **Requests for quotations** > **All requests for quotations**.
 2. Select **New**.
 3. In the **Solicitation type** field, select the solicitation type that you created.
 4. Select **OK**.

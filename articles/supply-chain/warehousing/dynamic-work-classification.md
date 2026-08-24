@@ -41,7 +41,7 @@ To control whether dynamic work classification rules can reclassify work when lo
 
 To configure this setting, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 1. On the **General** tab, open the **Work** FastTab.
 1. Set the **Work classification on load update** field to one of the following values:
     - *Disabled* – No action is performed when a load is updated.
@@ -56,7 +56,7 @@ Classification rules define the Power Fx formulas that determine how work should
 
 To create a rule, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Dynamic work classification rules**.
+1. Go to **Warehouse management** > **Setup** > **Work** > **Dynamic work classification rules**.
 1. Select **New** to create a rule.
 1. Make the following settings in the header of the new rule:
     - **Dynamic work classification rule** – Enter a name for the rule.
@@ -148,7 +148,7 @@ The following table lists the objects that you can reference in an initial work 
 
 After creating a classification rule, associate it with the work template that should use it. During work creation, the system evaluates the rule's formula and applies the returned overrides to the generated work.
 
-Go to **Warehouse management** \> **Setup** \> **Work** \> **Work templates**, select a template, and set the **Dynamic work classification rule** field to the rule you want to use for that template.
+Go to **Warehouse management** > **Setup** > **Work** > **Work templates**, select a template, and set the **Dynamic work classification rule** field to the rule you want to use for that template.
 
 > [!NOTE]
 > When you use dynamic work classification with a work template, make sure the template's grouping settings align with your formula logic. For example, if your formula classifies work based on zone, the work template should group work creation by zone so that each work header contains lines from only one zone.

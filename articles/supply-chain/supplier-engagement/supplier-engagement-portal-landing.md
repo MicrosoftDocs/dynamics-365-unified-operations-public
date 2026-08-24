@@ -92,7 +92,7 @@ When you finalize onboarding:
 
 - The global vendor's **Finalized Date** and **Status** update.
 - The vendor record is ready for qualification and approval by procurement staff.
-- After completing the onboarding wizard, supplier portal users can sign in to the portal and then go to **Setup** \> **Global Vendor Setup** to manage global vendor information whenever needed.
+- After completing the onboarding wizard, supplier portal users can sign in to the portal and then go to **Setup** > **Global Vendor Setup** to manage global vendor information whenever needed.
 
 ## Related information
 

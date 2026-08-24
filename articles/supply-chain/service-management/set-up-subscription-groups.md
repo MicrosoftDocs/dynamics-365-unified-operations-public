@@ -14,7 +14,7 @@ ms.search.form: SMASubscriptionGroup
 
 [!include [banner](../includes/banner.md)]
 
-1. Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+1. Go to **Service management** > **Setup** > **Service subscriptions** > **Subscription groups**.
 
 2. Select **New** to create a new subscription group.
 

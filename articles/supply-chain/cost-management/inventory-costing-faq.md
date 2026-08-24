@@ -106,7 +106,7 @@ As discussed previously, there's no fixed duration for inventory closing or reca
 
 - **Review inventory performance parameters**: You can configure a few parameters to control the performance of closing and recalculation. Here's how to optimize these parameters:
 
-    Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. In the **Closing** section, make the following settings:
+    Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. In the **Closing** section, make the following settings:
 
     - **Extra Batch Helpers**: Set the number of extra threads to spawn based on thread pool availability to aid the running of the respective batch job. The default value for this parameter is *8*. You can increase this value based on the availability of your system resources. Learn more in [batch capacity](../../fin-ops-core/dev-itpro/sysadmin/batch-capacity.md).
     - **Number of items per bundle**: Set the maximum number of items to keep in a bundle. The default value is *40*. An item is always present in a single bundle, and a single thread or task always processes a bundle. If your transactions have many items and a relatively comparable number of transactions per item, keep this value at *40*. If your inventory transactions don't have many items or instead have a large number of transactions for only a few items, set this value to *10*. Modify these values before starting the closing or recalculation process, not during the run.
@@ -122,7 +122,7 @@ If you feel that the operation is running for an unusual amount of time, contact
 
 ### How do I check circularity in BOM journals?
 
-To check circularity in BOM journals, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** \> **Bill of materials**. Enter the required values in **Level of circularity** and **Circularity check strategy**. The **Circularity check strategy** option works with the **Level of circularity** option, so start by looking at the **Level of circularity** setting.
+To check circularity in BOM journals, go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters** > **Bill of materials**. Enter the required values in **Level of circularity** and **Circularity check strategy**. The **Circularity check strategy** option works with the **Level of circularity** option, so start by looking at the **Level of circularity** setting.
 
 The **Level of circularity** setting determines when the system checks for circularity in BOM structures. A circular BOM exists when an item is defined as a component of itself within a BOM structure. A BOM is considered circular regardless of whether it's a first-level component or a lower-level component in the BOM structure that is referenced. Set it to one of the following values:
 
@@ -182,7 +182,7 @@ order by ITEMID, STATUSISSUE, countOfOpenTrans desc;
 
 - To make better use of system resources, run inventory reversals during off-peak business hours.  
 - Run inventory reversals one at a time to avoid errors such as *duplicate reverse is not allowed* or even ledger data corruption.
-- If your reversal run is slow, check the number of batch helpers you're using. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. The **Extra batch helpers** field in the **Closing** section decides the number of parallel threads to use for the reversal task, based on thread pool availability. The recommended and default number of extra batch helpers is *8*. If your reversal run is very slow, consider increasing this value based on the real-time system resources availability.
+- If your reversal run is slow, check the number of batch helpers you're using. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. The **Extra batch helpers** field in the **Closing** section decides the number of parallel threads to use for the reversal task, based on thread pool availability. The recommended and default number of extra batch helpers is *8*. If your reversal run is very slow, consider increasing this value based on the real-time system resources availability.
 
 ### Why did my inventory closing or recalculation end in an error? What should I do?
 
@@ -194,7 +194,7 @@ Common causes include:
 
 - **SQL deadlock or availability issues**: Most of the SQL issues are transient. Retry the operation after selecting the specific voucher and selecting **Resume Calculation**. If the issue persists, check for the exact error from the **Batch jobs** or **Closing and adjustment** page and share them with your partner.
 
-- **Business data corruption and inconsistencies such as rounding or currency issues**: Run a consistency check for the relevant item. Go to **System administration** \> **Periodic tasks** \> **Database** \> **Consistency check**. In the **Consistency check** dialog, set **Module** to *Inventory management*, and set **Check/Fix** to *Check* or *Fix error* (depending or your business requirements). Then expand the **Item** tree and select the checkboxes for **Inventory transactions** and **On-hand**. Then open the **More** menu (three dots) and select *Dialog*. Use the dialog to filter for the exact item you want to check. If required, you can run the check as a batch process in the background. You can view the final check/fix logs from the batch job logs or in the notification panel. If the consistency check doesn't highlight or fix any issues, use the **Potential conflicts - inventory and general ledger** and **Inventory value report storage** reports to drill down further into the discrepancies and inventory postings respectively.
+- **Business data corruption and inconsistencies such as rounding or currency issues**: Run a consistency check for the relevant item. Go to **System administration** > **Periodic tasks** > **Database** > **Consistency check**. In the **Consistency check** dialog, set **Module** to *Inventory management*, and set **Check/Fix** to *Check* or *Fix error* (depending or your business requirements). Then expand the **Item** tree and select the checkboxes for **Inventory transactions** and **On-hand**. Then open the **More** menu (three dots) and select *Dialog*. Use the dialog to filter for the exact item you want to check. If required, you can run the check as a batch process in the background. You can view the final check/fix logs from the batch job logs or in the notification panel. If the consistency check doesn't highlight or fix any issues, use the **Potential conflicts - inventory and general ledger** and **Inventory value report storage** reports to drill down further into the discrepancies and inventory postings respectively.
 
 - **Incorrect business practices**
 
@@ -258,7 +258,7 @@ When the system settles or adjusts inventory through inventory closing or recalc
 
 Run a consistency check for the relevant item by following these steps:
 
-1. Go to **System administration** \> **Periodic tasks** \> **Database** \> **Consistency check**.
+1. Go to **System administration** > **Periodic tasks** > **Database** > **Consistency check**.
 1. In the **Consistency check** dialog, set **Module** to *Inventory management*, and set **Check/Fix** to *Check* or *Fix error* (depending on your business requirements).
 1. Expand the **Item** tree and select the checkboxes for **Inventory transactions** and **On-hand**.
 1. Open the **More** menu (three dots) and select **Dialog**.
@@ -269,7 +269,7 @@ Once this process is completed and if the valuation method for that item is peri
 
 ### Why does my ledger trial balance differ from the inventory value after I run closing, recalculation, or reverse?
 
-Normally, you resolve this issue by rebuilding the trial balance for the corresponding main accounts from **General Ledger** \> **Inquiries and reports** \> **Trial Balance**.
+Normally, you resolve this issue by rebuilding the trial balance for the corresponding main accounts from **General Ledger** > **Inquiries and reports** > **Trial Balance**.
 
 Verify whether the inventory closing, recalculation, or reverse execution completed successfully and whether voucher postings are present. Cross check the status of batch job with the voucher execution status. Check the logs in the Closing and Adjustment form for the corresponding voucher. Once verified, rebuild the trial balance for the specific account where you observe the differences.
 

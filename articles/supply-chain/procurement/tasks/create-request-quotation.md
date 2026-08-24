@@ -77,7 +77,7 @@ To send several RFQs to vendors all at once, follow these steps:
 
 You can configure the system to filter the set of vendors listed on the **Sending request for quotation** dialog based on their status. To set this option, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**
+1. Go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing parameters**
 1. Open the **Request for quotation** tab.
 1. Set **Send all lines default status** to one of the following values:
     - *All* – List all vendors regardless of their status.

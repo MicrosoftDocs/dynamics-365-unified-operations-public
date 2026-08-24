@@ -25,11 +25,11 @@ You can configure master plans on the **Master plans** page.
 
 Because of the speed at which the system processes master planning, you can set up as many plans as you like and run them as often as needed to fit your business requirements. For example, you can run a plan twice a day to always keep up with the latest demand and supply and to have other plans for different forecasts or simulations.
 
-If you use capable to promise (CTP) for Planning Optimization, it runs the plan specified as the **Current dynamic master plan** fields on the **Master planning parameters** page (**Master planning** \> **Setup** \> **Master planning parameters**).
+If you use capable to promise (CTP) for Planning Optimization, it runs the plan specified as the **Current dynamic master plan** fields on the **Master planning parameters** page (**Master planning** > **Setup** > **Master planning parameters**).
 
 ## Types of scheduling methods
 
-For each plan, on the **General** FastTab of the **Master plans** page (**Master planning** \> **Setup** \> **Plans** \> **Master plans**), select the scheduling method that is used for production orders. You can schedule production at the operation level and the job level.
+For each plan, on the **General** FastTab of the **Master plans** page (**Master planning** > **Setup** > **Plans** > **Master plans**), select the scheduling method that is used for production orders. You can schedule production at the operation level and the job level.
 
 ### Operations scheduling
 
@@ -41,7 +41,7 @@ Job scheduling is a more detailed scheduling method, where each operation is div
 
 ## Time fences in days
 
-For each plan, you can select how far in the future master planning calculates various requirements and other considerations. This period is known as a *time fence*. For the best performance in master planning, adjust the time fences to meet your business requirements. For each plan, find the time fences on the **Time fences in days** FastTab of the **Master plans** page (**Master planning** \> **Setup** \> **Plans** \> **Master plans**).
+For each plan, you can select how far in the future master planning calculates various requirements and other considerations. This period is known as a *time fence*. For the best performance in master planning, adjust the time fences to meet your business requirements. For each plan, find the time fences on the **Time fences in days** FastTab of the **Master plans** page (**Master planning** > **Setup** > **Plans** > **Master plans**).
 
 > [!NOTE]
 > The time fences you select indicate how far in the future master planning calculates various requirements and other considerations. The time fences you select on this page override the time fences defined in the coverage group. This means setting a time fence option to *Yes* and defining the days overrides the time fence defined in the coverage group. When you set the option to *No*, the time fence is defined in the coverage group. Finally, if you don't want or need to use an option (for example, you don't want to use action messages), set it to *Yes*, and then set the time fence to **0** (zero) days.
@@ -122,7 +122,7 @@ When you set the **Add the calculated delay to the requirement date** options to
 
 ## Positive and negative days
 
-Positive and negative days affect how master planning suggests planned orders and actions. Set positive and negative days on the item coverage group of the item. You can define the various coverage groups and set their parameters on the **Coverage groups** page (**Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**).
+Positive and negative days affect how master planning suggests planned orders and actions. Set positive and negative days on the item coverage group of the item. You can define the various coverage groups and set their parameters on the **Coverage groups** page (**Master planning** > **Setup** > **Coverage** > **Coverage groups**).
 
 ### Positive days
 

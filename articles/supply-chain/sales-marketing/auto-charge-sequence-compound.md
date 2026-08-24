@@ -39,7 +39,7 @@ The *Sequence and compound for customer charges* feature adds new fields to the 
 
 To set up auto charge compounding and sequencing, follow these steps:
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Prices** FastTab, set the **Find auto charges for header** option to *Yes*.
 1. On the **Charges** FastTab, set the following fields:
 
@@ -64,7 +64,7 @@ To work through this scenario and the other scenarios in this article by using t
 
 To apply a charge that's set to compound, you must first set up the auto charge. Use the following procedure to create an example auto charge. (For more information about the settings, see [Automatic application of charges](../procurement/automatic-charges-allocation.md).)
 
-1. Go to **Accounts receivable** \> **Charges setup** \> **Auto charges**.
+1. Go to **Accounts receivable** > **Charges setup** > **Auto charges**.
 1. In the list pane, set the **Level** field to *Header*.
 1. On the Action Pane, select **New** to create an auto charges record.
 1. On the header of the new record, set the following fields:
@@ -111,7 +111,7 @@ To apply a charge that's set to compound, you must first set up the auto charge.
 
 The charges that you set up can now be automatically applied to a sales quotation or sales order. To apply the charges to a sales order, follow these steps:
 
-1. Go to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and Marketing** > **Sales orders** > **All sales orders**.
 1. On the Action Pane, select **New** to create a sales order.
 1. In the **Create sales order** dialog box, set the **Customer account** field to *US-004*. Then select **OK** to create the order. The selected customer must use the same currency as the auto charges that you set up (*USD*).
 1. The new sales order is opened. On the Action Pane, on the **Sell** tab, in the **Charges** group, select **Maintain charges**.
@@ -171,13 +171,13 @@ The following examples show how the **Value base for header charges** field that
 The following example shows how a value of *Sum of line amounts only* in the **Value base for header charges** field can affect header charge calculations.
 
 1. If you haven't already done so, [set up the auto charges that are specified for example scenario 1](#scenario1).
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Charges** FastTab, set the **Value base for header charges** field to *Sum of line net amounts only*.
-1. Go to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and Marketing** > **Sales orders** > **All sales orders**.
 1. On the Action Pane, select **New** to create a sales order.
 1. In the **Create sales order** dialog box, set the **Customer account** field to *US-004*. Then select **OK** to create the order. The selected customer must use the same currency as the auto charges that you set up (*USD*).
 1. The new sales order is opened. On the **Sales order lines** FastTab, add an order line for any item, and edit the **Quantity** and **Unit price** fields to ensure that the **Net amount** value for the line is 100 USD.
-1. While the new order line is still selected on the **Sales order lines** FastTab, select **Financials** \> **Maintain charges** on the toolbar.
+1. While the new order line is still selected on the **Sales order lines** FastTab, select **Financials** > **Maintain charges** on the toolbar.
 1. On the **Maintain charges** page, on the Action Pane, select **New** to add a charge line. Then set the following values for it:
 
     - **Charge code** – Select *Freight*.
@@ -198,7 +198,7 @@ The following example shows how a value of *Sum of line amounts only* in the **V
 
 The following example shows how a value of *Sum including charge amounts* in the **Value base for header charges** field can affect header charge calculations. This setting affects header charges that have a **Category** value of *Percent*, regardless of whether the **Compound** option is enabled.
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Charges** FastTab, change the value of the **Value base for header charges** field to *Sum including charge amounts*.
 1. Open the sales order that you created in the previous example.
 1. On Action Pane, on the **Sales order** tab, in the **View** group, select **Totals**.
@@ -210,7 +210,7 @@ The following example shows how a value of *Sum including charge amounts* in the
 
 When the **Value base for header charges** field is set to *Sum including charge amounts*, you can include selected sales taxes in the value base calculation. To set up this functionality, following these steps.
 
-1. Go to **Accounts receivable** \> **Charges setup** \> **Auto charges**.
+1. Go to **Accounts receivable** > **Charges setup** > **Auto charges**.
 1. In the list pane, set the **Level** field to *Header*.
 1. Select the auto charge that you want to set up, or create a new one.
 1. On the **Lines** FastTab, select the line that you want to set up, or add a new one.
@@ -228,13 +228,13 @@ The **Re-search on posting** option ensures that header charges are assessed aga
 The following example shows the effect of the **Re-search on posting** option.
 
 1. If you haven't already done so, [set up the auto charges that are specified for example scenario 1](#scenario1).
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Charges** FastTab, set the following values:
 
     - **Re-search on posting** – Set this option to *Yes*.
     - **Value base for header charges** – Select *Sum of line net amounts only*.
 
-1. Go to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and Marketing** > **Sales orders** > **All sales orders**.
 1. On the Action Pane, select **New** to create a sales order.
 1. In the **Create sales order** dialog box, set the **Customer account** field to *US-004*. Then select **OK** to create the order. The selected customer must use the same currency as the auto charges that you set up (*USD*).
 1. The new sales order is opened. On the Action Pane, on the **Sell** tab, in the **Charges** group, select **Maintain charges**.
@@ -283,14 +283,14 @@ The setting of the **Combine charges on combined invoices** option on the **Acco
 The following example shows the effects of the **Combine charges on combined invoices** option.
 
 1. If you haven't already done so, [set up the auto charges that are specified for example scenario 1](#scenario1).
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Charges** FastTab, set the following values:
 
     - **Re-search on posting** – Set this option to *Yes*.
     - **Combine charges on combined invoices** – Set this option to *No*.
     - **Value base for header charges** – Select *Sum of line net amounts only*.
 
-1. Go to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and Marketing** > **Sales orders** > **All sales orders**.
 1. Follow these steps to create a sales order that has one sales line:
 
     1. On the Action Pane, select **New** to create a sales order.
@@ -302,7 +302,7 @@ The following example shows the effects of the **Combine charges on combined inv
 
     In a real warehouse, warehouse workers would now pick and pack both sales orders and register their work by using the Warehouse Management mobile app. However, these steps aren't required to continue this example scenario.
 
-1. Go back to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
+1. Go back to **Sales and Marketing** > **Sales orders** > **All sales orders**.
 1. Find and select the two new sales orders. Then, on the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 1. In the **Posting invoice** dialog box, on the **Parameters** FastTab, set the **Summary update for** field to *Invoice account*.
 1. On the toolbar, select **Arrange**.
@@ -310,10 +310,10 @@ The following example shows the effects of the **Combine charges on combined inv
 1. Select one of the two sales orders. Then, on the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 1. The invoice is opened. On the Action Pane, select **Charges**.
 1. Notice that the header charges have been calculated for each sales order. For each sales order, a header charge of 104 USD is applied. This value is calculated as 100 USD &plus; 2% compound (2% of the line amount \[100 USD\] &plus; 2% of the fixed charge \[100 USD\]). Therefore, the total charges for the invoice are 2 &times; 104 USD = 208 USD.
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Charges** FastTab, change the setting of the **Combine charges on combined invoices** option from *No* to *Yes*.
-1. As you did before, go to **Sales and Marketing** \> **Sales orders** \> **All sales orders**, and create new sales orders for the same account that have identical sales lines. Then pick and pack both sales orders.
-1. Go back to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
+1. As you did before, go to **Sales and Marketing** > **Sales orders** > **All sales orders**, and create new sales orders for the same account that have identical sales lines. Then pick and pack both sales orders.
+1. Go back to **Sales and Marketing** > **Sales orders** > **All sales orders**.
 1. Find and select the two new sales orders. Then, on the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 1. In the **Posting invoice** dialog box, set the **Summary update for** field to *Invoice account*.
 1. On the toolbar, select **Arrange**.
@@ -324,7 +324,7 @@ The following example shows the effects of the **Combine charges on combined inv
 
     In this setup, the fixed auto charge is applied only once (per invoice), and the percentage-based charge that's set to compound is calculated from a value base that's 100 USD less than the header charges that are calculated per sales order.
 
-1. Go back to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
+1. Go back to **Sales and Marketing** > **Sales orders** > **All sales orders**.
 1. Select the first of the two new sales orders. Then, on the Action Pane, on the **Sell** tab, in the **Charges** group, select **Maintain charges**. Make a note of the charges that are shown, and then repeat this step for the second new sales order.
 
     Notice that, as part of combining charges on combined invoices, the auto charges are now present only on the first sales order. This behavior is by design. It ensures that the combination of charges on combined invoices provides the correct charge calculation.
@@ -334,7 +334,7 @@ The following example shows the effects of the **Combine charges on combined inv
 
 ## Pricing management
 
-The features that are described in this article work together with the [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). Pricing management introduces changes to the setup and search for auto charges. Therefore, it also changes some of the behavior that's described in this article. When the Unified pricing management module is [enabled](../unified-pricing-management/upm-pricing-management-enable.md), charges that are set up at **Accounts receivable** \> **Charges setup** don't apply. Instead, only charges that are set up on the auto charges page that's specific to the **Pricing management** module apply to sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management** \> **During-sales pricing** \> **Charges setup** \> **Auto charges**.
+The features that are described in this article work together with the [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). Pricing management introduces changes to the setup and search for auto charges. Therefore, it also changes some of the behavior that's described in this article. When the Unified pricing management module is [enabled](../unified-pricing-management/upm-pricing-management-enable.md), charges that are set up at **Accounts receivable** > **Charges setup** don't apply. Instead, only charges that are set up on the auto charges page that's specific to the **Pricing management** module apply to sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management** > **During-sales pricing** > **Charges setup** > **Auto charges**.
 
 ## Limitations
 

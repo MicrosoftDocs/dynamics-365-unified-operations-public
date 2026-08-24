@@ -25,7 +25,7 @@ When you run the analysis in simulation mode, it displays the products and produ
 
 To find obsolete product variants and assign a product lifecycle state to them, follow these steps:
 
-1. Go to **Product information management** \> **Periodic tasks** \> **Change lifecycle state for obsolete products**.
+1. Go to **Product information management** > **Periodic tasks** > **Change lifecycle state for obsolete products**.
 1. In the **New product lifecycle state** field, select the [product lifecycle state](../product-lifecycle.md) that your company uses to indicate obsolete products.
 1. Set **Run simulation without updating product data** to *Yes*.
 1. In the **Exclude products created within this number of days** field, enter a number.
@@ -37,14 +37,14 @@ To find obsolete product variants and assign a product lifecycle state to them, 
     > Run the simulation in batch if you expect to search a large number of products. Also, don't run the simulation during the most active working time of the company.  
 
 1. Select **OK** to apply your settings and close the dialog.
-1. Go to **Product information management** \> **Inquiries and reports** \> **Product lifecycle state maintenance history**.
+1. Go to **Product information management** > **Inquiries and reports** > **Product lifecycle state maintenance history**.
 1. The **Product lifecycle state maintenance history** page shows the results of the simulation. Review the results and decide whether you want to apply the suggested changes. You might decide to adjust the filter criteria and run the simulation again.
-1. When you're satisfied with the simulation results, go to **Product information management** \> **Periodic tasks** \> **Change lifecycle state for obsolete products**.
+1. When you're satisfied with the simulation results, go to **Product information management** > **Periodic tasks** > **Change lifecycle state for obsolete products**.
 1. Set **Run simulation without updating product data** to *No*.
 1. Expand the **Records to include** FastTab and confirm that it still shows the filter criteria that you used for the simulation that you want to apply.
 1. Depending on how many products and product variants are affected, consider running this job in batch by using the settings on the **Run in the background** FastTab. Make sure that you're not running a large update job during the most active working hours in the company.  
 1. Select **OK**.
-1. Go to **Product information management** \> **Inquiries and reports** \> **Product lifecycle state maintenance history** and confirm that the changes you expected were applied.
+1. Go to **Product information management** > **Inquiries and reports** > **Product lifecycle state maintenance history** and confirm that the changes you expected were applied.
 
 ## Ways to identify obsolete products and product variants
 

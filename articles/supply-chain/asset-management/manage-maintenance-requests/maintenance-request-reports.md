@@ -22,7 +22,7 @@ In Asset Management, you can generate two reports that are related to maintenanc
 
 The **Maintenance request details** report shows various information that is related to maintenance requests.
 
-1. Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request details**.
+1. Select **Asset management** > **Reports** > **Maintenance requests** > **Maintenance request details**.
 2. On the **Records to include** FastTab, you can select specific maintenance requests to include on the report.
 3. On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.
 4. Select **OK** to generate the report.
@@ -35,7 +35,7 @@ The following illustration shows an example of the **Maintenance request details
 
 The **Maintenance request list** report shows a list of all maintenance requests of the same request type.
 
-1. Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request list**.
+1. Select **Asset management** > **Reports** > **Maintenance requests** > **Maintenance request list**.
 2. On the **Records to include** FastTab, you can make selections to define which maintenance requests are included on the report.
 3. On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.
 4. Select **OK** to generate the report.

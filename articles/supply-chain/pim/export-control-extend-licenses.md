@@ -12,6 +12,8 @@ ms.search.form:
 
 # Extend export control license functionality
 
+[!include [banner](../includes/banner.md)]
+
 This article provides information that's useful for developers who are extending license functionality for implementing export controls.
 
 License information is stored in the `msdyn_exportcontrollicense` table. Tracking of licenses is provided only as it pertains to export control. It should not be considered a general-purpose license management subsystem.

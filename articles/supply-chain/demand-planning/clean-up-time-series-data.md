@@ -29,7 +29,7 @@ Only users with the *Demand planning manager* role can access data cleanup. This
 
 ## Open the data cleanup page
 
-To review and clean up time series data, open the Demand planning app, go to the navigation pane, and select **Data management** \> **Data cleanup**.
+To review and clean up time series data, open the Demand planning app, go to the navigation pane, and select **Data management** > **Data cleanup**.
 
 The **Data cleanup** page shows a list of all time series in the system. For each time series, you can see the number of versions, the number of data rows, and whether any references to the time series or its versions still exist.
 
@@ -77,7 +77,7 @@ When you use a time series or time series version as input for a calculation or 
 
 To delete one or more versions of a time series, follow these steps:
 
-1. On the navigation pane, select **Data management** \> **Data cleanup**.
+1. On the navigation pane, select **Data management** > **Data cleanup**.
 1. Find the time series that has the versions you want to delete and select the link in the **Name** column to open the versions view for that time series.
 1. Find a version you want to delete and check the **References** column for that time series version. If it shows that references exist, do the following steps:
     - Select the link in the **References** column to open a dialog that lists the profiles that use your target time series version.
@@ -95,7 +95,7 @@ To delete one or more versions of a time series, follow these steps:
 
 To delete one or more complete time series, including all of their versions and data, follow these steps.
 
-1. On the navigation pane, select **Data management** \> **Data cleanup**.
+1. On the navigation pane, select **Data management** > **Data cleanup**.
 1. Find the time series you want to delete.
 1. Check the **References** column for your selected time series. If it shows that references exist, do the following steps:
     - Select the link in the **References** column to open a dialog that lists the profiles that use your target time series.

@@ -34,7 +34,7 @@ To use asset BOM functionality, you must first set up the required spare parts i
 
 The setup of spare parts history is based on item groups that are created in the **Inventory and warehouse management** module. In Asset Management, you set up item groups so that you can track spare parts history for the items in the selected item groups.
 
-1. Select **Asset management** \> **Setup** \> **Asset** \> **Spare parts item groups**.
+1. Select **Asset management** > **Setup** > **Asset** > **Spare parts item groups**.
 2. Select **New** to set up an item group.
 3. In the **Item group** field, select the group. The name of the group is automatically entered in the **Name** field.
 
@@ -42,15 +42,15 @@ The setup of spare parts history is based on item groups that are created in the
 
 After you post item consumption on a work order, you can view the registered item consumption on the **Asset BOM** page.
 
-1. Select **Asset management** \> **Assets** \> **Active assets**. Select the asset in the list, and then select **Asset BOM**.
+1. Select **Asset management** > **Assets** > **Active assets**. Select the asset in the list, and then select **Asset BOM**.
 
     > [!NOTE]
-    > To view all item consumption registrations on all assets, select **Asset management** \> **Inquiries** \> **Assets** \> **Asset BOM**.
+    > To view all item consumption registrations on all assets, select **Asset management** > **Inquiries** > **Assets** > **Asset BOM**.
 
 2. Select **Update asset BOM**. You can add assets, asset types, and resources to the update as you require by selecting **Select**. Select **OK** to start the update. You can also set up the Update function as a batch job.
-3. If you want to see more information that is related to the items, you can add inventory dimensions. Select **Inventory** \> **Dimensions display**, and then select the check boxes for the dimensions that you want to see. To keep this setup for all assets on the **Asset BOM** page, set the **Save setup** option to *Yes*.
+3. If you want to see more information that is related to the items, you can add inventory dimensions. Select **Inventory** > **Dimensions display**, and then select the check boxes for the dimensions that you want to see. To keep this setup for all assets on the **Asset BOM** page, set the **Save setup** option to *Yes*.
 4. To get an overview of where in Asset Management the item on the selected line is used, in relation to assets, job type defaults, spare parts, and work orders, select **Item where used**.
-5. If you want to see only active item lines, select **View** \> **Current**. To see all item lines, including lines where the expiration date is earlier than the current date, select **View** \> **All**.
+5. If you want to see only active item lines, select **View** > **Current**. To see all item lines, including lines where the expiration date is earlier than the current date, select **View** > **All**.
 
 > [!NOTE]
 > When you've completed a work order, if some items or spare parts that are related to the related asset have expired or have been replaced by other items or spare parts, we recommend that you update the asset BOM accordingly.

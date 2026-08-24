@@ -19,7 +19,7 @@ You can configure mobile device menu items to allow workers to pick any batch, o
 
 To set this option for a mobile device menu item, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 1. Select or create a menu item that has **Use existing work** set to *Yes*.
 1. On the **General** FastTab, set **Pick oldest batch** to one of the following values:
     - *None* – Workers aren't shown any messages and can pick any batch in their location.

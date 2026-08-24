@@ -33,7 +33,7 @@ Learn more in [How Supplier Engagement compares to the vendor collaboration inte
 
 ## Global vendors in Supply Chain Management
 
-In Supply Chain Management, you can access global vendors by going to **Procurement and sourcing** \> **Vendors** \> **Supplier engagement** \> **All global vendors**. The **All global vendors** page shows the following data:
+In Supply Chain Management, you can access global vendors by going to **Procurement and sourcing** > **Vendors** > **Supplier engagement** > **All global vendors**. The **All global vendors** page shows the following data:
 
 - Global vendor name and ID
 - Global vendor status
@@ -50,7 +50,7 @@ Learn more in [Create global vendors from existing data](deploy-configure-scm.md
 
 ## Manage certificates
 
-Local vendor certificate management remains unchanged. With Supplier Engagement and the global vendor model, certificates can now be added at the global vendor level and automatically apply to all associated local vendors. These certificates are marked with a **Global vendor certification** checkbox on the **Certifications** page and can only be created in the Supplier Engagement app. To open the **Certifications** page, go to **Procurement and sourcing** \> **Vendors** \> **All vendors**, select a vendor, and then, on the Action Pane, open the **Vendor** tab and select **Certifications**.
+Local vendor certificate management remains unchanged. With Supplier Engagement and the global vendor model, certificates can now be added at the global vendor level and automatically apply to all associated local vendors. These certificates are marked with a **Global vendor certification** checkbox on the **Certifications** page and can only be created in the Supplier Engagement app. To open the **Certifications** page, go to **Procurement and sourcing** > **Vendors** > **All vendors**, select a vendor, and then, on the Action Pane, open the **Vendor** tab and select **Certifications**.
 
 Learn more in [Manage certificates](supplier-engagement-manage-certificates.md).
 
@@ -62,7 +62,7 @@ Learn more in [Create a global vendor](supplier-engagement-create-global-vendor.
 
 ## Supply risk assessment report
 
-When the Supplier Engagement feature is turned on in Supply Chain Management, the standard **Supply Risk Assessment** report (**Procurement and Sourcing** \> **Inquiries and Reports** \> **Supply Risk Assessment** \> **Supply Risk Assessment**) is enhanced with the following changes:
+When the Supplier Engagement feature is turned on in Supply Chain Management, the standard **Supply Risk Assessment** report (**Procurement and Sourcing** > **Inquiries and Reports** > **Supply Risk Assessment** > **Supply Risk Assessment**) is enhanced with the following changes:
 
 - A **Date** filter is added to enable time-based analysis.
 - A **Global Vendor** filter is introduced as a hierarchy level above vendors.

@@ -19,7 +19,7 @@ This procedure shows how to create an accessorial master for a hub and use that 
 
 ## Set up a hub master
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Accessorial masters**.
+1. Go to **Transportation management** > **Setup** > **Rating** > **Accessorial masters**.
 1. Select **New**.
 1. In the **Accessorial master** field, enter a value.
 1. In the **Name** field, enter a value.
@@ -28,7 +28,7 @@ This procedure shows how to create an accessorial master for a hub and use that 
 
 ## Set up a hub accessorial charge
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Hub accessorial charges**.
+1. Go to **Transportation management** > **Setup** > **Rating** > **Hub accessorial charges**.
 1. Select **New**.
 1. In the **Hub accessorial ID field**, enter a value.
 1. In the **Hub** field, find and select the desired record.

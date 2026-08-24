@@ -52,7 +52,7 @@ Here are some examples to help you understand the difference between fault sympt
 
 Follow these steps to create a list of symptoms that can be used in the fault designer.
 
-1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault symptoms**.
+1. Select **Asset management** > **Setup** > **Fault** > **Fault symptoms**.
 2. Select **New** to create a record.
 3. In the **Fault symptom** field, enter a name for the fault symptom.
 4. In the **Description** field, enter a description.
@@ -62,7 +62,7 @@ Follow these steps to create a list of symptoms that can be used in the fault de
 
 Follow these steps to create a list of areas or locations that can be used in the fault designer.
 
-1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault areas**.
+1. Select **Asset management** > **Setup** > **Fault** > **Fault areas**.
 2. Select **New** to create a record.
 3. In the **Fault area** field, enter a name for the fault area.
 4. In the **Description** field, enter a description.
@@ -72,7 +72,7 @@ Follow these steps to create a list of areas or locations that can be used in th
 
 Follow these steps to create a list of fault types that can be used in the fault designer.
 
-1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault types**.
+1. Select **Asset management** > **Setup** > **Fault** > **Fault types**.
 2. Select **New** to create a record.
 3. In the **Fault type** field, enter a name for the fault type.
 4. In the **Description** field, enter a description.
@@ -82,7 +82,7 @@ Follow these steps to create a list of fault types that can be used in the fault
 
 In the fault designer, you set up fault data on asset types.
 
-1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault designer**.
+1. Select **Asset management** > **Setup** > **Fault** > **Fault designer**.
 2. In the left pane, select the type of asset to set up a fault record for.
 3. On the **Fault symptom** FastTab, select **Add line**, and then, in the **Fault symptom** field, select a fault symptom.
 4. On the **Fault area** FastTab, select **Add line**, and then, in the **Fault area** field select a fault area.
@@ -100,7 +100,7 @@ In the fault designer, you set up fault data on asset types.
 
 Follow these steps to create a list of known fault causes that can be added to a work order or a maintenance request.
 
-1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault causes**.
+1. Select **Asset management** > **Setup** > **Fault** > **Fault causes**.
 2. Select **New** to create a record.
 3. In the **Fault cause** field, enter a name for the fault cause.
 4. In the **Description** field, enter a description.
@@ -110,7 +110,7 @@ Follow these steps to create a list of known fault causes that can be added to a
 
 Follow these steps to create a list of suggestions for remedy and repair that can be added to a work order or a maintenance request.
 
-1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault remedies**.
+1. Select **Asset management** > **Setup** > **Fault** > **Fault remedies**.
 2. Select **New** to create a record.
 3. In the **Fault remedy** field, enter a name for the fault remedy.
 4. In the **Description** field, enter a description.

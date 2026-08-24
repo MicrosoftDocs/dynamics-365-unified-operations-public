@@ -17,7 +17,7 @@ ms.custom:
 
 This article describes how to create an asset in Asset Management.
 
-1. Go to **Asset management** \> **Assets** \> **All assets** or **Active assets**.
+1. Go to **Asset management** > **Assets** > **All assets** or **Active assets**.
 1. Select **New**.
 1. In the **Create assets** dialog, insert data regarding **Asset** (the asset ID) and the asset name. Select date and time for the asset in the **Effective** field. From that date, you're able to install the asset on a functional location and move and replace the asset in an asset structure.
 1. In the **Asset type** field, select the asset type for the asset (mandatory field). If necessary, select **Asset manufacturer** and **Asset model** for the asset. If only one product is up, that product is automatically selected in the **Asset manufacturer** field. The selections available in the **Asset manufacturer** and **Asset model** fields depend on the setup in [Asset manufacturers and models](../setup-for-objects/product-and-model.md).
@@ -49,12 +49,12 @@ The **Service level** and **Criticality** fields relate to work orders created f
 
 ## Asset
 
-You can select a **Resource** for the asset. The resource selection determines which calendar is used for work order scheduling. Resource selection is often used for fixed assets. Resources and resource groups are set up in **Organization administration** \> **Resources** \> **Resource groups** or **Resources**.
+You can select a **Resource** for the asset. The resource selection determines which calendar is used for work order scheduling. Resource selection is often used for fixed assets. Resources and resource groups are set up in **Organization administration** > **Resources** > **Resource groups** or **Resources**.
 
 In the **Fixed assets number** field, you can select a fixed asset to be related to the asset. This is relevant if your asset is related to an investment project.
 
 - If the asset is related to a fixed asset, you can create a work order type to be used for work orders related to an investment project.
-- Information about fixed assets for an asset is related to the **Fixed assets** module in Dynamics 365 Supply Chain Management. This means that in **Fixed assets** \> **Fixed assets** \> **Fixed assets**, you can get an overview of the Asset Management projects that are related to a fixed asset by selecting the asset in the list and viewing the contents on the **Related information** pane, **Associated projects** section.
+- Information about fixed assets for an asset is related to the **Fixed assets** module in Dynamics 365 Supply Chain Management. This means that in **Fixed assets** > **Fixed assets** > **Fixed assets**, you can get an overview of the Asset Management projects that are related to a fixed asset by selecting the asset in the list and viewing the contents on the **Related information** pane, **Associated projects** section.
 
 ## Details
 

@@ -31,8 +31,8 @@ If the calculated values aren't precise, you can adjust them by entering the act
 
 The number of containers considered for a load is calculated based on the weight, volume, and percentage of the container used.
 
-- To set the weight and volume for a container, go to **Warehouse management** \> **Setup** \> **Containers** \> **Container types**.
-- To set the container utilization percentage, go to **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**. Then enter a value in the **Container utilization percentage** field.
+- To set the weight and volume for a container, go to **Warehouse management** > **Setup** > **Containers** > **Container types**.
+- To set the container utilization percentage, go to **Warehouse management** > **Setup** > **Containers** > **Container groups**. Then enter a value in the **Container utilization percentage** field.
 
 To learn more about how to set up the dimensions of a load template, go to [Load templates](/dynamics365/supply-chain/transportation/tasks/load-template).
 

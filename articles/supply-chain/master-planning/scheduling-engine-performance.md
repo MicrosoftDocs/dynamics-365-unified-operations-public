@@ -246,7 +246,7 @@ The following tech conference video provides tips to improve master planning per
 
 ## Viewing scheduling engine input and output
 
-To get specific details about the input and output of the scheduling process, enable logging by going to **Organization administration** \> **Setup** \> **Scheduling** \> **Scheduling tracing cockpit**.
+To get specific details about the input and output of the scheduling process, enable logging by going to **Organization administration** > **Setup** > **Scheduling** > **Scheduling tracing cockpit**.
 
 On this page, select **Enable logging** on the Action Pane, and then run the scheduling for the production order. When complete, return to the **Scheduling tracing cockpit** page and select **Disable logging** on the Action Pane. Refresh the page, and a new line appears in the grid. Select the new line, and then select **Download** on the Action Pane. This action gives you a .zip compressed folder containing the following files:
 

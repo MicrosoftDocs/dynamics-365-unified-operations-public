@@ -47,7 +47,7 @@ A trade allowance agreement is an incentive program where pay-for-performance mo
 
 ### Promotional fund
 
-Funds that are allocated to trade allowance agreements are recorded on the **Funds** page. To open the **Funds** page, select **Sales and marketing** \> **Trade allowances** \> **Funds** \> **Funds**.
+Funds that are allocated to trade allowance agreements are recorded on the **Funds** page. To open the **Funds** page, select **Sales and marketing** > **Trade allowances** > **Funds** > **Funds**.
 
 ![Funds page.](./media/trade-allowance-management-funds-page.png "Funds page")
 
@@ -63,7 +63,7 @@ The **Items** FastTab shows the items that are included in the promotion.
 
 After the fund definition is in place, the next step in promotion planning is to register promotion contracts (which are known as trade allowance agreements), allocate funds, and define performance goals for each Merchandising event.
 
-Trade allowance agreements are recorded on the **Trade allowance agreements** page. To open the **Trade allowance agreements** page, select **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**.
+Trade allowance agreements are recorded on the **Trade allowance agreements** page. To open the **Trade allowance agreements** page, select **Sales and marketing** > **Trade allowances** > **Trade allowance agreements**.
 
 ![Trade allowance agreements page.](./media/trade-allowance-management-agreements-page.png "Trade allowance agreements page")
 
@@ -111,7 +111,7 @@ To apply the agreement to sales orders that meet the agreement's conditions, the
 
 ## Perform sales under the planned merchandising event and generate bill-back claims
 
-When you create a sales order that has lines that fulfill the requirements of the agreement, you can view the related information on the **Sales order** page by selecting **Sales order line** \> **View** \> **Price details**.
+When you create a sales order that has lines that fulfill the requirements of the agreement, you can view the related information on the **Sales order** page by selecting **Sales order line** > **View** > **Price details**.
 
 On the **Price details** page, on the **Rebates** FastTab, the sales clerk can see a bill back from the valid trade allowance agreement (the rebate program ID is shown) and the total amount that is applied to the line. This amount is also shown in the **Rebate amount** field in the **Margin estimation** section of the **Price details** page.
 
@@ -148,9 +148,9 @@ Upon processing the claims, the status has changed to *Mark* and indicates that 
 
 To complete the process, the A/R clerk must now handle the accrual deductions by transferring them to the customers balance as a credit note (liability).
 
-To start the task, on the Action Pane of the **Customer** page, select **Collect** \> **Settle transactions**. Then, on the **Settle transactions** page, select **Functions** \> **Bill back program**. This rebate page shows all the bill-back claims that were previously processed.
+To start the task, on the Action Pane of the **Customer** page, select **Collect** > **Settle transactions**. Then, on the **Settle transactions** page, select **Functions** > **Bill back program**. This rebate page shows all the bill-back claims that were previously processed.
 
-If you want to create a credit note, select the **Mark** check box for all lines, and then select **Functions** \> **Create credit note**.
+If you want to create a credit note, select the **Mark** check box for all lines, and then select **Functions** > **Create credit note**.
 
 Upon credit note creation, a journal is posted. (The journal that is posted is the AR consumption journal, as specified in the A/R parameters.) As a result, the real liability (credit) amount has been moved to the customer balance. Financially, this situation implies that the following events have occurred:
 
@@ -163,11 +163,11 @@ To approve a merchandising event of the *Lump sum* type, select the event on the
 
 Often, in anticipation of bill-backs, customers choose to short-pay selected invoices. To prevent payment reconciliation issues in the future, the A/R clerk registers those short-pays as deductions when they record the actual customer payments. Then, on the Deduction workbench, those customer deductions can easily be settled against the claim amounts that are due from the company.
 
-To register a customer's short-pay in the Payment journal, select **Accounts receivable** \> **Payments** \> **Payment journal**, and create a new payment journal. Then, on the Action Pane, select **Deductions**. On the **Deduction** page, you can create and track the amount that was short-paid.
+To register a customer's short-pay in the Payment journal, select **Accounts receivable** > **Payments** > **Payment journal**, and create a new payment journal. Then, on the Action Pane, select **Deductions**. On the **Deduction** page, you can create and track the amount that was short-paid.
 
 The collection manager is now responsible for settling the open credit note transaction and the short-pay transaction against each other in the Deduction workbench.
 
-To manage deductions, select **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**. The upper section of the page contains lines that represent the short-pays from the customer. The lower section of the page contains the customers open credit transactions.
+To manage deductions, select **Sales and marketing** > **Trade allowances** > **Deductions** > **Deduction workbench**. The upper section of the page contains lines that represent the short-pays from the customer. The lower section of the page contains the customers open credit transactions.
 
 To settle the deduction against the open transaction, mark the deduction line, and then, on the Open transactions tab, mark the line. On the Action Pane, select Maintain > Match.
 
@@ -183,8 +183,8 @@ The **Summary** tab shows the total quantity of products that have been sold und
 
 The **Bill back credits** tab contains the details of individual bill-backs that have been credited to the customer.
 
-To get a more analytical overview of the various performance measures for the promotion, you can use the **Analysis** view. To go to the **Analysis** view, select **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, select **Analysis**.  
+To get a more analytical overview of the various performance measures for the promotion, you can use the **Analysis** view. To go to the **Analysis** view, select **Sales and marketing** > **Trade allowances** > **Trade allowance agreements**. On the Action Pane, select **Analysis**.  
 
-To get a more analytical overview of the various performance measures for the promotion, you can use the **Analysis** view. To go to the **Analysis** view, select **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, select **Analysis**.
+To get a more analytical overview of the various performance measures for the promotion, you can use the **Analysis** view. To go to the **Analysis** view, select **Sales and marketing** > **Trade allowances** > **Trade allowance agreements**. On the Action Pane, select **Analysis**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

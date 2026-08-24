@@ -15,6 +15,8 @@ ms.custom:
 
 # Post to charge account accounting principle
 
+[!include [banner](../includes/banner.md)]
+
 The *post to charge account* accounting principle lets you account for and more easily reconcile any differences that occur in the unit price between a physical posting and financial posting, indirect costs on purchased items, or charges on a purchase order.
 
 Two configurations for Accounts payable charges codes on the **Charges code** page (**Accounts payable \> Charges setup \> Charges code**) can cause a purchase order to affect the valuation of inventory assets:

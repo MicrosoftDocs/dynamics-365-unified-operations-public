@@ -38,7 +38,7 @@ The following illustration shows the relationship between and the hierarchy of e
 
 Break masters define a pricing structure and its breakpoints. The pricing structure uses tiered pricing that is based on the break unit used by the engine. If the shipping carrier charges a certain rate per unit of distance or weight, for example, the break master can reflect this in the rate base.
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Break master**.
+1. Go to **Transportation management** > **Setup** > **Rating** > **Break master**.
 1. On the Action Pane, select **New**.
 1. Enter the following values in the header of the new record.
     - **Break master**: Enter a unique identifier for break master.
@@ -57,7 +57,7 @@ Break masters define a pricing structure and its breakpoints. The pricing struct
 
 Rate masters represent carrier rates. Each rate master can be associated with only one rating metadata ID but can have multiple rate bases and rate base assignments.
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Rate master**.
+1. Go to **Transportation management** > **Setup** > **Rating** > **Rate master**.
 1. On the Action Pane, select **New**.
 1. Enter the following values in the header of the new record.
     - **Rate master**: Enter a unique identifier for rate master.
@@ -68,7 +68,7 @@ Rate masters represent carrier rates. Each rate master can be associated with on
 
 The rate base defines the prices charged by the carrier at each breakpoint defined in an associated break master. You can set up one or multiple rate bases for each rate master to reflect the carrier pricing structure based on factors such as mileage and/or weight.
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Rate master**.
+1. Go to **Transportation management** > **Setup** > **Rating** > **Rate master**.
 1. Select the rate master that you want to add a rate base to.
 1. On the Action Pane, select **Rate base**.
 1. On the Action Pane, select **New**.
@@ -98,7 +98,7 @@ The rate base defines the prices charged by the carrier at each breakpoint defin
 
 Rate base assignments allow you to create several different price points for each carrier depending on destinations, services, or different rate bases. Rate base assignments define which rate base to apply. Use the **Rate base assignments** FastTab to define the rate base assignment for each rate master.
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Rate master**.
+1. Go to **Transportation management** > **Setup** > **Rating** > **Rate master**.
 1. On the **Rate base assignments** FastTab toolbar, select **New** to add a new row to the grid. Then enter values for the following settings for the new row. The columns available here depend on the setup of the rate base assignment metadata, as selected in the **Rating metadata ID** field. The following are standard columns that are always provided.
     - **Name**: Specify a unique identifier for the rate base assignment.
     - **Rate base**: Define the basis on which the rates are calculated.

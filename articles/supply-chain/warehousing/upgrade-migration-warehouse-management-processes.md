@@ -38,7 +38,7 @@ If the source storage dimension groups use the Pallet ID inventory dimension, th
 
 ## Find products that were blocked because of the pallet ID
 
-To view the list of released products that were blocked during upgrade and can't be processed, go to **Inventory management** \> **Setup** \> **Inventory** \> **Items blocked for inventory updates**.
+To view the list of released products that were blocked during upgrade and can't be processed, go to **Inventory management** > **Setup** > **Inventory** > **Items blocked for inventory updates**.
 
 ## Change the storage dimension group for blocked products
 
@@ -54,7 +54,7 @@ To unblock products that were blocked during upgrade, you must select a new stor
 Follow these steps to enable a warehouse to use WMS.
 
 1. Create at least one new location profile.
-1. Go to **Warehouse management** \> **Setup** \> **Enable warehouse management processes** \> **Enable warehouse setup**.
+1. Go to **Warehouse management** > **Setup** > **Enable warehouse management processes** > **Enable warehouse setup**.
 1. On the **Enable warehouse setup** page, add the warehouses that should be enabled to use WMS. You can complete this step either directly on the page or by using the Microsoft Office integration.
 1. Assign a location profile to all the locations. You can easily complete this step directly from the page by using the Microsoft Office integration. You can either export and import the data, or use the data entity processing in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 1. Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, an additional data upgrade will be required.
@@ -91,7 +91,7 @@ Supply Chain Management provides a migration tool to help you change the storage
 
 1. Go to one of the following locations:
 
-    - **Inventory Management** \> **Setup** \> **Inventory** \> **Change storage dimension group for items**
+    - **Inventory Management** > **Setup** > **Inventory** > **Change storage dimension group for items**
     - **Warehouse management** \> **Setup** \> **Enable warehouse management processes** \> **Change storage dimension group for items**
 
 1. On the Action Pane, select **New** to add a row to the grid. Set the following fields for the new row:

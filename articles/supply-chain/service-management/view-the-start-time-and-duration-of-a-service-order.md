@@ -21,19 +21,19 @@ You can also view when the time recording for a service order was started and st
 
 ## View the start time for a service order
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**. Select an order to open the details page.
+1. Go to **Service management** > **Service orders** > **Service orders**. Select an order to open the details page.
 
 2. On the **General** tab, view the time that the work was started for a service order in the **Start time** field.
 
 ## View the time remaining to complete a service order
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**. Select an order to open the details page.
+1. Go to **Service management** > **Service orders** > **Service orders**. Select an order to open the details page.
 
 2. On the **General** tab, view the time remaining to complete a service order in the **Latest completion time** field.
 
 ## View the start time and stop time recording entries for a service order
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**. Select an order to open the details page.
+1. Go to **Service management** > **Service orders** > **Service orders**. Select an order to open the details page.
 
 2. On the Action Pane, select the **Dispatch** tab \> **Time recording** to open the **SLA time recording** page and view the time recording entries for the service order.
 

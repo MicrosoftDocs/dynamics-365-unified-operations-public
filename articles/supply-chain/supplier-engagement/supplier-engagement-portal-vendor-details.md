@@ -29,7 +29,7 @@ After completing onboarding, vendors can manage their organization's data and us
 Use the **Global vendor setup** page to manage your organization's profile, contacts, certificates, and capabilities. The page provides a structured interface for maintaining accurate and up-to-date information that's essential for supplier engagement and compliance. To open the page, complete one of the following steps:
 
 - From the home page, select **Global vendor setup** from the **Vendor details** tile.
-- From the navigation menu, go to **Setup** \> **Global vendor setup**.
+- From the navigation menu, go to **Setup** > **Global vendor setup**.
 
 The following table summarizes the settings available in the **Global vendor setup** page.
 
@@ -50,7 +50,7 @@ Use the **Local vendor setup** page to view and manage your records at the legal
 
 1. Do one of the following steps:
     - From the home page, select **Local Vendor Setup** from the **Vendor details** panel.
-    - From the navigation menu, go to **Setup** \> **For buyer's legal entities**.
+    - From the navigation menu, go to **Setup** > **For buyer's legal entities**.
 
 1. Select the local vendor you want to work with.
 
@@ -85,7 +85,7 @@ The supplier portal provides user management capabilities that vendor administra
 
 To open the **User management** page, sign in to the supplier portal and complete one of the following steps:
     - From the home page, select **Users** from the **Vendor details** panel.
-    - From the navigation menu, go to **Setup** \> **Users**.
+    - From the navigation menu, go to **Setup** > **Users**.
 
 ### Request to add a new user
 

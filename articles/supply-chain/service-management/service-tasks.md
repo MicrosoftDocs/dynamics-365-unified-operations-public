@@ -36,7 +36,7 @@ order lines into service orders.
 
 ## Create a service task
 
-1. Go to **Service management** \> **Setup** \> **Service tasks**.
+1. Go to **Service management** > **Setup** > **Service tasks**.
 2. Create a new line.
 3. Enter the service ID and description.
 
@@ -81,7 +81,7 @@ When you create service orders automatically, you can use service tasks as group
 
 ## Group by service task
 
-1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
+1. Go to **Service management** > **Service agreements** > **Service agreements**.
 2. On the **Setup** tab, select **By service task** in the **Combine service orders** field.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

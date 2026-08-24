@@ -11,6 +11,8 @@ ms.search.form: DataManagementWorkspace, WHSWaveTemplateTable, WHSWorkTemplateTa
 
 # Data entity support for user-configurable queries in warehouse management
 
+[!include [banner](../includes/banner.md)]
+
 One challenge of user-configurable queries is the interaction with data entities. Because the queries are packed in a way that isn't readable by users, it's difficult to make changes to them through the data entities. To address this issue, special JavaScript Object Notation (JSON) fields are added to the warehouse data entities that have user-configurable queries. All relevant warehouse entities are updated with support for these JSON fields.
 
 ## Example
@@ -21,7 +23,7 @@ This article uses the example of a newly created *Location directive actions* qu
 
 To set up a location directive action, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Location directives**.
+1. Go to **Warehouse management** > **Setup** > **Location directives**.
 1. In the **Work order type** field, select *Sales orders*.
 1. On the Action Pane, select **New** to create a location directive.
 1. In the **Name** field, enter *JSON test*.

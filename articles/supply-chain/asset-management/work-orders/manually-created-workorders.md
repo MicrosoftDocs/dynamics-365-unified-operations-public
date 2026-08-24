@@ -22,7 +22,7 @@ You can create work orders manually in two places:
 
 ## Create work order
 
-1. Go to **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
+1. Go to **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 1. Select **New**.
 1. In the **Create work order** dialog, select a work order type in the **Work order type** field.
 1. If necessary, select a **Description**.
@@ -55,7 +55,7 @@ Note the following points:
 
 You can create a work order that is related to an existing work order. This capability is useful if, for example, you want to work with primary and secondary work orders. A new work order is based on a work order job from an existing work order.
 
-1. Select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 1. Select the work order to create a related work order for.
 1. On the Action Pane, on the **Work order** tab, in the **New** group, select **Related work order**.
 1. In the **Create related work order** dialog, in the **Work order job** field, select the work order job to create a related work order for.
@@ -81,13 +81,13 @@ The following illustration shows an example of the **Create related work order**
 :::image type="content" source="media/03-work-orders.png" alt-text="An example of the Create related work order dialog." lightbox="media/03-work-orders.png":::
 
 > [!NOTE]
-> If you've set up a related work order mask in **Asset management parameters** \> **Work orders** tab \> **Related work order mask** field, work order IDs are created according to the mask setup. If no related work order mask is set up, the next available work order ID is used for related work orders.
+> If you've set up a related work order mask in **Asset management parameters** > **Work orders** tab \> **Related work order mask** field, work order IDs are created according to the mask setup. If no related work order mask is set up, the next available work order ID is used for related work orders.
 
 ## Copy a work order
 
 You can quickly create a new work order from an existing work order. This way of working with work orders differs from the creation of work orders based on [maintenance plans](../preventive-and-reactive-maintenance/maintenance-plans.md). It's useful if, for example, a work order contains many work order jobs, and the various jobs should be completed on different assets at regular intervals.
 
-1. Select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 1. Select the work order to copy content from.
 1. On the Action Pane, open the **Work order** tab and, from the **New** group, select **Copy work order**.
 1. The work order setup from the selected work order is shown. You can edit some of the fields as you require.
@@ -103,7 +103,7 @@ The following illustration shows an example of the **Copy work order** dialog.
 
 ## Create a work order based on a maintenance request
 
-1. Select **Asset management** \> **Maintenance requests** \> **All maintenance requests** or **Active maintenance requests**.
+1. Select **Asset management** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests**.
 1. Select the maintenance request to create a work order for, and select **Edit**.
 1. On the Action Pane, open the **Maintenance request** tab and, from the **New** group, select **Work order**.
 1. In the **Work order** dialog, set the fields. If a maintenance job type has been selected in the maintenance request, you can select a different maintenance job type when you create the work order, as you require.

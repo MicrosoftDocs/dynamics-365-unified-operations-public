@@ -28,7 +28,7 @@ An item and its dimensions must be part of only one item allocation key if you u
 
 To create item allocation keys and add a stock-keeping unit (SKU) to them, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Demand forecasting** \> **Item allocation keys**.
+1. Go to **Master planning** > **Setup** > **Demand forecasting** > **Item allocation keys**.
 1. Either select an item allocation key in the list pane, or select **New** on the Action Pane to create a new one. On the header for the new or selected key, set the following fields:
 
     - **Item allocation key** – Enter a unique name for the key.
@@ -51,7 +51,7 @@ Demand forecasting can generate cross-company forecasts. In Dynamics 365 Supply 
 
 To set up your intercompany planning groups, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Intercompany planning groups**.
+1. Go to **Master planning** > **Setup** > **Intercompany planning groups**.
 1. Either select a planning group in the list pane, or select **New** on the Action Pane to create a new one. On the header for the new or selected group, set the following fields:
 
     - **Name** – Enter a unique name for the planning group.
@@ -65,7 +65,7 @@ To set up your intercompany planning groups, follow these steps:
     - **Automatic copy to static plan** – Select this checkbox to copy the result of the plan to the static plan.
     - **Automatic copy to dynamic plan** – Select this checkbox to copy the result of the plan to the dynamic plan.
 
-1. By default, if you don't assign item allocation keys to intercompany planning group members, the system calculates a demand forecast for all items that are assigned to all item allocation keys from all companies. You can find additional filtering options for companies and item allocation keys in the **Generate statistical baseline forecast** dialog box (**Master planning** \> **Forecasting** \> **Demand forecasting** \> **Generate statistical baseline forecast**). To assign item allocation keys to a company in the selected intercompany planning group, select the company, and then, on the **Intercompany planning group members** FastTab, select **Item allocation keys** on the toolbar.
+1. By default, if you don't assign item allocation keys to intercompany planning group members, the system calculates a demand forecast for all items that are assigned to all item allocation keys from all companies. You can find additional filtering options for companies and item allocation keys in the **Generate statistical baseline forecast** dialog box (**Master planning** > **Forecasting** > **Demand forecasting** > **Generate statistical baseline forecast**). To assign item allocation keys to a company in the selected intercompany planning group, select the company, and then, on the **Intercompany planning group members** FastTab, select **Item allocation keys** on the toolbar.
 
 Learn more in [Intercompany planning groups for demand forecasting](intercompany-planning-groups-demand-forecasting.md).
 
@@ -78,7 +78,7 @@ Use the **Demand forecasting parameters** page to set up options that control ho
 
 ### Open the Demand forecasting parameters page
 
-To set up demand forecasting parameters, go to **Master planning** \> **Setup** \> **Demand forecasting** \> **Demand forecasting parameters**. Because demand forecasting runs cross-company, the setup is global. It applies to all legal entities (companies).
+To set up demand forecasting parameters, go to **Master planning** > **Setup** > **Demand forecasting** > **Demand forecasting parameters**. Because demand forecasting runs cross-company, the setup is global. It applies to all legal entities (companies).
 
 ### General settings
 
@@ -110,7 +110,7 @@ You can override the forecast generation method for one or more specific item al
 
 #### Override default forecast algorithm parameters globally
 
-Default forecast algorithm parameters and values are assigned on the **Demand forecasting parameters** page (**Master Planning** \> **Setup** \> **Demand forecasting** \> **Demand forecasting parameters**). However, you can override them globally by using the **Forecast algorithm parameters** FastTab on the **General** tab of the **Demand forecasting parameters** page. (You can also override them for specific allocation keys by using the **Item allocation keys** tab on the **Demand forecasting parameters** page.)
+Default forecast algorithm parameters and values are assigned on the **Demand forecasting parameters** page (**Master Planning** > **Setup** > **Demand forecasting** > **Demand forecasting parameters**). However, you can override them globally by using the **Forecast algorithm parameters** FastTab on the **General** tab of the **Demand forecasting parameters** page. (You can also override them for specific allocation keys by using the **Item allocation keys** tab on the **Demand forecasting parameters** page.)
 
 Use the **Add** and **Remove** buttons on the toolbar to establish the required collection of parameter overrides. For each parameter in the list, select a value in the **Name** field, and then enter an appropriate value in the **Value** field. All parameters that aren't listed here take their values from the settings on the **Demand forecasting parameters** page. For more information about how to use the standard set of parameters and select values for them, see the [Default parameters and values for demand forecasting models](#model-parameters) section.
 
@@ -155,7 +155,7 @@ If you already have an available Azure Machine Learning Studio (classic) workspa
 
 When you use machine learning to generate your forecast planning models, you control machine learning options by setting values for *forecasting algorithm parameters*. Supply Chain Management sends these values to Azure Machine Learning. Use the **Forecasting algorithm parameters** page to control which types of values to provide and which values each should have.
 
-To set up the default parameters and values for demand forecasting models, go to **Master Planning** \> **Setup** \> **Demand forecasting** \> **Forecasting algorithm parameters**. A standard set of parameters is provided. Each parameter has the following fields:
+To set up the default parameters and values for demand forecasting models, go to **Master Planning** > **Setup** > **Demand forecasting** > **Forecasting algorithm parameters**. A standard set of parameters is provided. Each parameter has the following fields:
 
 - **Name** – The name of the parameter, as used by Azure. Usually, you shouldn't change this name unless you've customized the experiment in Azure Machine Learning.
 - **Description** – A common name for the parameter. Use this name to identify the parameter in other places in the system (for example, on the **Demand forecasting parameters** page).
@@ -182,7 +182,7 @@ The following parameters are provided by default. (To revert to this standard li
 - **Seasonality hint** – For seasonal data, provide a hint to the forecasting model to improve forecast accuracy. Format: integer number that represents the number of buckets that a demand pattern repeats itself for. For example, enter *6* for data that repeats itself every six months.
 - **Test set size percentage** – Percentage of historical data to use as a test set for forecast accuracy calculation.
 
-Override the values for these parameters by going to **Master Planning** \> **Setup** \> **Demand forecasting** \> **Demand forecasting parameters**. On the **Demand forecasting parameters** page, you can override the parameters in the following ways:
+Override the values for these parameters by going to **Master Planning** > **Setup** > **Demand forecasting** > **Demand forecasting parameters**. On the **Demand forecasting parameters** page, you can override the parameters in the following ways:
 
 - Use the **General** tab to override the parameters globally.
 - Use the **Item allocation keys** tab to override the parameters for specific item allocation keys. Parameters that you override for a specific item allocation key affect only the forecast of items that are associated with that item allocation key.
@@ -383,7 +383,7 @@ To authenticate by using a service principal with the resources dedicated to dem
 Use the following procedure to connect your Supply Chain Management environment to the machine learning service that you set up in Azure.
 
 1. Sign in to Supply Chain Management.
-1. Go to **Master planning** \> **Setup** \> **Demand forecasting** \> **Demand forecasting parameters**.
+1. Go to **Master planning** > **Setup** > **Demand forecasting** > **Demand forecasting parameters**.
 1. On the **General** tab, make sure that the **Forecast generation strategy** field is set to *Azure Machine Learning Service*.
 1. On the **Item allocation keys** tab, make sure that the **Forecast generation strategy** field is set to *Azure Machine Learning Service* for each allocation key that should use the Azure Machine Learning Service for demand forecasting.
 1. On the **Azure Machine Learning Service** tab, set the following fields:

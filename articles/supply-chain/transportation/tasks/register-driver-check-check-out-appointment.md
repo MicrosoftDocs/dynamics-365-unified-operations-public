@@ -25,7 +25,7 @@ Before you start, an appointment must be set up for a load.
 
 To select or open an appointment in the web client, follow these steps:
 
-1. Go to **Transportation management** \> **Planning** \> **Dock appointment scheduling** \> **Driver check-in and check-out**.
+1. Go to **Transportation management** > **Planning** > **Dock appointment scheduling** > **Driver check-in and check-out**.
 1. Set the **Display completed and canceled appointments** check box as needed, depending on whether you'd like to see previous closed appointments in the grid.
 1. Select an appointment.
 
@@ -84,7 +84,7 @@ The following table describes the possible **Appointment status** that an appoin
 | *Dropped trailer* | The driver checked in and selected the **Dropped trailer** option. |
 | *Completed* | The driver checked in and checked out on time or ahead of schedule. |
 | *Completed late* | The driver checked in and checked out, but after the scheduled deadline. |
-| *Check out warning* | The driver checked in but hasn't checked out, and the alert interval hasn't yet expired. To specify the alert interval, go to **Transportation Management** \> **Setup** \> **Transportation Management parameters**, and then, on the **General** tab, on the **Driver check-in and check out** FastTab, set the **Alert interval** field. |
+| *Check out warning* | The driver checked in but hasn't checked out, and the alert interval hasn't yet expired. To specify the alert interval, go to **Transportation Management** > **Setup** > **Transportation Management parameters**, and then, on the **General** tab, on the **Driver check-in and check out** FastTab, set the **Alert interval** field. |
 | *Late on check in* | The driver hasn't checked in and is now late. |
 | *Late on check out* | The driver checked in but hasn't checked out, and the alert interval has now expired. |
 

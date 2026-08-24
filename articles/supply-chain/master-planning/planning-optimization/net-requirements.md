@@ -23,9 +23,9 @@ The **Net requirements** page shows the net requirements that master planning ca
 
 You can open the **Net requirements** page in any of the following ways:
 
-- Go to **Product information management** \> **Products** \> **Released products**. Select or open a product. Then, on the Action Pane, on the **Plan** tab, in the **Requirement** group, select **Net requirements**.
-- Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**. Open a sales order. Then, on the **Sales order lines** FastTab, on the toolbar, select **Product and supply** \> **Net requirements**.
-- Go to **Master planning** \> **Master planning** \> **Planned orders**. Select or open a planned order. Then, on the Action Pane, on the **View** tab, in the **Requirements** group, select **Requirement profile**.
+- Go to **Product information management** > **Products** > **Released products**. Select or open a product. Then, on the Action Pane, on the **Plan** tab, in the **Requirement** group, select **Net requirements**.
+- Go to **Sales and marketing** > **Sales orders** > **All sales orders**. Open a sales order. Then, on the **Sales order lines** FastTab, on the toolbar, select **Product and supply** > **Net requirements**.
+- Go to **Master planning** > **Master planning** > **Planned orders**. Select or open a planned order. Then, on the Action Pane, on the **View** tab, in the **Requirements** group, select **Requirement profile**.
 
 ## Use the Net requirements page
 
@@ -65,9 +65,9 @@ The lower section of the page provides the following tabs:
 
 The following commands are available on the Action Pane:
 
-- **Update** \> **Master planning** – Run master planning directly from the **Net requirements** page.
-- **Update** \> **Forecast planning** – Run forecast planning directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
-- **Update** \> **Continuity scheduling** – Run continuity scheduling directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
+- **Update** > **Master planning** – Run master planning directly from the **Net requirements** page.
+- **Update** > **Forecast planning** – Run forecast planning directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
+- **Update** > **Continuity scheduling** – Run continuity scheduling directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
 
 ## Example scenario
 
@@ -90,7 +90,7 @@ Before you work through the scenario, prepare the following prerequisites:
 
 Next, you'll open the **Net requirements** page for product *1000* to review how calculated requirements correspond to each other.
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Select the product that has an **Item number** value of *1000*.
 1. On the Action Pane, on the **Plan** tab, in the **Requirement** group, select **Net requirements**.
 1. On the **Net requirements** page, set the **Plan** field to *DynPlan*.

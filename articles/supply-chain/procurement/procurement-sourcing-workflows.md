@@ -45,7 +45,7 @@ The following workflow types are available for Procurement and sourcing.
 
 ## Creating a workflow
 
-To create a workflow, go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing workflows** and create a new workflow by selecting the type of workflow you want to create.
+To create a workflow, go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing workflows** and create a new workflow by selecting the type of workflow you want to create.
 
 In the workflow canvas, you can drag workflow elements into the designer and link the elements into a flow. The workflow elements should be configured. For approval and task workflow elements, you can configure which participant should take action.
 

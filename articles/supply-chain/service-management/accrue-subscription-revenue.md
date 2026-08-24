@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-1. Go to **Service management** \> **Periodic** \> **Service subscriptions** \> **Accrue subscription revenue**.
+1. Go to **Service management** > **Periodic** > **Service subscriptions** > **Accrue subscription revenue**.
 1. In the **Period code** field, select a period code. Revenue is posted for all subscription fee transactions that have the selected period code.
 1. In the **Posting date** field, enter a posting date, and then select **OK**.
 

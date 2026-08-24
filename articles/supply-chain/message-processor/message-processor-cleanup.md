@@ -43,7 +43,7 @@ To configure message cleanup, follow these steps:
 
 Whenever you have at least one message queue set to be cleaned up, the system automatically creates a background process to run the cleanup operation regularly. Follow these steps to review, schedule, and manage this process in the [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md) workspace:
 
-1. Go to **System administration** \> **Setup** \> **Process automation**.
+1. Go to **System administration** > **Setup** > **Process automation**.
 1. Open the **Background processes** tab to view the list of background processes.
 1. Use the **Filter** field to search for the process that has a **Name** of *Cleanup job for the message processor*.
 1. Select the process in the grid and then select **Edit** from the toolbar.
@@ -56,7 +56,7 @@ The [Optimization advisor](../../fin-ops-core/fin-ops/sysadmin/optimization-advi
 
 To turn the rule on or off, or to change the frequency of the rule, follow these steps:
 
-1. Go to **System administration** \> **Periodic tasks** \> **Maintain diagnostic validation rules**.
+1. Go to **System administration** > **Periodic tasks** > **Maintain diagnostic validation rules**.
 1. Find the row where **Rule name** is *Check for aged processed or canceled messages*.
 1. Make the following settings for the rule as needed:
     - **Status** – Set to *Active* or *Inactive*.
@@ -64,7 +64,7 @@ To turn the rule on or off, or to change the frequency of the rule, follow these
 
 To view and act on your optimization opportunities, including those related to cleaning up aged messages, follow these steps:
 
-1. Go to **System administration** \> **Workspaces** \> **Optimization advisor**. Here, you can see a list of optimization opportunities that the system has identified, including those related to message processor cleanup.
+1. Go to **System administration** > **Workspaces** > **Optimization advisor**. Here, you can see a list of optimization opportunities that the system has identified, including those related to message processor cleanup.
 1. Select the row where **Area** is *SCM* and **Optimization opportunity** is *Cleanup job for message processor*.
 1. From the toolbar, select **More information** to learn more about the opportunity and recommended actions.
 1. If you want to act on the opportunity, select **Take action** from the toolbar to open the **Message queue setup** page, and configure the cleanup settings as described previously in this article.

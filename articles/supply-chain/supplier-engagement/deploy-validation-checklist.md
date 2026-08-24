@@ -68,7 +68,7 @@ Check both managed solutions that contain cloud flows so that you can confirm th
 The Supplier Engagement app should contain the sync configuration records created when you deployed the solution.
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Configuration** area.
-1. On the navigation pane, go to **Data Sync** \> **Sync Configs**.
+1. On the navigation pane, go to **Data Sync** > **Sync Configs**.
 1. Confirm that the sync configuration mappings listed in the following table exist on your system.
 
     | Source Table                               | Destination Table                           |
@@ -90,7 +90,7 @@ The Supplier Engagement app should contain the sync configuration records create
 Use the **Modified On** value to confirm that the sync configuration records were refreshed during the latest deployment.
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Configuration** area.
-1. On the navigation pane, go to **Data Sync** \> **Sync Configs**.
+1. On the navigation pane, go to **Data Sync** > **Sync Configs**.
 1. Select **Edit columns**.
 1. In the **Edit columns** dialog, select **Add columns**.
 1. Select **Modified On**, and then select **Close**.

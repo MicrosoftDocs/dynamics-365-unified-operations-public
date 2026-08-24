@@ -27,7 +27,7 @@ Before you can use this feature, your system must meet the following requirement
 
 To change the asset type of one or more existing assets, follow these steps:
 
-1. Go to **Asset management** \> **Assets** \> **All assets**.
+1. Go to **Asset management** > **Assets** > **All assets**.
 1. On the **All assets** list page, select one or more assets that you want to change asset type for. If you select multiple assets, all of them must be of the same asset type.
 1. On the Action Pane, on the **Asset** tab, in the **Maintain** group, select **Change asset type**.
 1. In the **Change asset type** dialog box, on the **Parameters** FastTab, set the following fields:

@@ -30,7 +30,7 @@ You have to run a calculation profile only as often as you import new data into 
 
 To generate a new calculated time series by running an existing calculation profile, follow these steps:
 
-1. On the navigation pane, select **Operations** \> **Calculations**.
+1. On the navigation pane, select **Operations** > **Calculations**.
 1. Find the profile for the type of calculation that you want to run, and select the link for it in the **Name** column.
 
     The details page for the selected profile appears. It contains the following tabs:
@@ -55,7 +55,7 @@ Each time that your organization requires a new type of calculation, a manager o
 
 To create or edit a calculation profile, follow these steps:
 
-1. On the navigation pane, select **Operations** \> **Calculations**.
+1. On the navigation pane, select **Operations** > **Calculations**.
 1. On the Action Pane, select **New**.
 1. A setup wizard is opened. On the **Get started** page, set the following fields:
 

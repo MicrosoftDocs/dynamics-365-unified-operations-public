@@ -21,15 +21,15 @@ You can also create maintenance worker groups and associate maintenance workers 
 
 ## Create workers
 
-1. Select **Asset management** \> **Setup** \> **Workers** \> **Workers**.
+1. Select **Asset management** > **Setup** > **Workers** > **Workers**.
 1. Select **New** to add a worker to the list.
 1. In the **Worker** field, select the worker.
 1. Set the **Active** option to *Yes* to schedule the worker on work orders.
 
-    On the **General** FastTab, the **Resource** and **Description** fields are automatically filled in if a resource is selected for the worker. The **Calendar** field is also automatically filled in if the worker is set up as a resource and a calendar is allocated to that resource on the **Resources** page (**Organization administration** \> **Resources** \> **Resources**).
+    On the **General** FastTab, the **Resource** and **Description** fields are automatically filled in if a resource is selected for the worker. The **Calendar** field is also automatically filled in if the worker is set up as a resource and a calendar is allocated to that resource on the **Resources** page (**Organization administration** > **Resources** > **Resources**).
 
 1. On the **Groups** FastTab, select **Add**, and then select a maintenance worker group for the worker. A worker can be affiliated with more than one group.
-1. In the standard setup, a worker's affiliation with a group is effective from the date when you add the group, and it never expires. This date is shown in the **Effective** field. To see the **Effective** field, select **View** \> **All**. If the worker's affiliation with a group should be limited to a specific period, use the **Effective** and **Expiration** fields to define the period.
+1. In the standard setup, a worker's affiliation with a group is effective from the date when you add the group, and it never expires. This date is shown in the **Effective** field. To see the **Effective** field, select **View** > **All**. If the worker's affiliation with a group should be limited to a specific period, use the **Effective** and **Expiration** fields to define the period.
 1. On the **Functional locations** FastTab, select **Add**, and then select a functional location for the maintenance worker. Also specify which location is the primary functional location for the worker.
 
     > [!NOTE]
@@ -39,7 +39,7 @@ You can also create maintenance worker groups and associate maintenance workers 
 
 ## Create worker groups
 
-1. Select **Asset management** \> **Setup** \> **Workers** \> **Maintenance worker groups**.
+1. Select **Asset management** > **Setup** > **Workers** > **Maintenance worker groups**.
 1. Select **New** to add a worker group to the list.
 1. In the **Maintenance worker group** field, enter a group ID.
 1. In the **Name** field, enter a name.

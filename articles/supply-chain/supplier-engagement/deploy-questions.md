@@ -26,7 +26,7 @@ Deployment questions often come up after the initial installation, especially wh
 If sync configurations are missing or incorrect after deployment, reinstall the anchor solution package components in the environment.
 
 1. Sign in to the [Power Apps maker portal](https://make.powerapps.com/) using the service account that you used for installation.
-1. Go to **Solutions** \> **Managed Solutions**.
+1. Go to **Solutions** > **Managed Solutions**.
 1. Find and delete the *Supplier Engagement Anchor* solution.
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Reinstall the Supplier Engagement package.

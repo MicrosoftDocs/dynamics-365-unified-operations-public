@@ -43,7 +43,7 @@ To use Demand planning in a production environment, each relevant user must have
 Follow these steps to install Demand planning in Power Platform admin center.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Resources** \> **Dynamics 365 apps** on the left navigation pane.
+1. Select **Resources** > **Dynamics 365 apps** on the left navigation pane.
 1. Search for and select the app named *Dynamics 365 Demand Planning Application*.
 1. Select **Install** on the top toolbar.
 1. Select an environment, review the packages that will be installed, and select the **I agree to the terms of service** checkbox.
@@ -54,9 +54,9 @@ Follow these steps to install Demand planning in Power Platform admin center.
 Follow these steps to enable and configure Demand planning in Supply Chain Management.
 
 1. In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the *Demand Planning* feature. (As of Supply Chain Management version 10.0.40, it's turned on by default.)
-1. Go to **System administration** \> **Setup** \> **Demand planning app parameters**.
+1. Go to **System administration** > **Setup** > **Demand planning app parameters**.
 1. On the **General** tab, in the **Demand planning app URL** field, enter the URL where Demand planning is installed.
-1. Go to **Master Planning** \> **Setup** \> **Master planning parameters**.
+1. Go to **Master Planning** > **Setup** > **Master planning parameters**.
 1. On the **Number sequences** tab, in the grid, find the row where the **Reference** field is set to *Demand forecast sequence number*. Then select the link in the **Number sequence** column for that row.
 1. On the details page for the selected number sequence, on the **Performance** FastTab, set the following field:
 

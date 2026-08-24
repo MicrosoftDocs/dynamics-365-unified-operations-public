@@ -32,7 +32,7 @@ To use the features described in this article, your system must meet the followi
 
 To set up the production auto report scenario, you need to define the sensors that are installed on the machines, map those sensors to the corresponding resources and operations in Supply Chain Management, and define thresholds for how many sensor signals correspond to finished units for each operation. Follow these steps to set up the scenario:
 
-1. Go to **Production control** \> **Setup** \> **Sensor Data Intelligence** \> **Scenarios** to open the **Scenarios** page.
+1. Go to **Production control** > **Setup** > **Sensor Data Intelligence** > **Scenarios** to open the **Scenarios** page.
 1. In the **Production auto report** box, select **Configure** to open the setup wizard for this scenario.
 1. On the **Sensors** page, select **New** to add a sensor to the grid. Then set the following fields for it:
     - **Sensor ID** – Enter the ID of the sensor that you're using. (If you're using the Raspberry PI Azure IoT Online Simulator and have set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), enter *AssetDownTime*.)

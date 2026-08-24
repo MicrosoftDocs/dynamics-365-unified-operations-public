@@ -25,7 +25,7 @@ To view information about reason codes that are used to track the progress of se
 
 Reason codes are optional. You can decide whether to require a reason code when you update a service order to a specific service stage.
 
-1. Go to **Service management** \> **Setup** \> **Service orders** \> **Service stages**.
+1. Go to **Service management** > **Setup** > **Service orders** > **Service stages**.
 
 2. On the **Service stages** page, select a service stage, and then select the **Reason** check box for the service stage.
 

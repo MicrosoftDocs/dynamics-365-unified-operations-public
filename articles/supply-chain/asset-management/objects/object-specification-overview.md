@@ -22,11 +22,11 @@ This article provides an overview of asset attributes in Asset Management. Asset
 
 The **Asset attribute overview** page shows a separate line for each asset. The line shows all attribute types that are related to that asset. Follow these steps to open and use the **Asset attribute overview** page.
 
-1. Select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute overview**.
+1. Select **Asset management** > **Inquiries** > **Assets** > **Asset attribute overview**.
 2. In the **Asset type** field, select an asset type.
 3. Select **OK**. A list shows all the assets that use the selected asset type. For each asset, all related asset attribute types are shown on the same line.
 
-The **Asset attribute** page shows a separate line for each attribute type that is used on an asset. To open this page, select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute**.
+The **Asset attribute** page shows a separate line for each attribute type that is used on an asset. To open this page, select **Asset management** > **Inquiries** > **Assets** > **Asset attribute**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

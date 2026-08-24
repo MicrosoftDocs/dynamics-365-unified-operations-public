@@ -74,13 +74,13 @@ The pricing calculation API uses OAuth 2.0 with Microsoft Entra ID (formerly Azu
 Before you can call the API, register your external application in both Microsoft Entra ID and Supply Chain Management. The following procedure describes how to set up the registration.
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with an account that has permissions to manage app registrations.
-1. Go to **Microsoft Entra ID** \> **App registrations** and either select an existing registration or create a new one. Note the **Application (client) ID** value.
+1. Go to **Microsoft Entra ID** > **App registrations** and either select an existing registration or create a new one. Note the **Application (client) ID** value.
 1. Under the same app registration, go to **Certificates & secrets** and select **New client secret**. Enter a description, set the expiration period, and then select **Add**.
 
     > [!IMPORTANT]
     > Copy the secret value immediately after it's generated. The value is only shown once and can't be retrieved later.
 
-1. Sign in to Supply Chain Management and go to **System administration** \> **Setup** \> **Microsoft Entra ID applications**.
+1. Sign in to Supply Chain Management and go to **System administration** > **Setup** > **Microsoft Entra ID applications**.
 1. Select **New** to add a record to the grid. Then set the following fields for it:
     - **Client ID** – Enter the application (client) ID that you noted earlier.
     - **Name** – Enter a descriptive name for the application.

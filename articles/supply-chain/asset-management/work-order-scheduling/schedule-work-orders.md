@@ -17,12 +17,12 @@ ms.custom:
 
 This article explains how to schedule work orders in Asset Management.
 
-The required number of hours for a work order is defined by the sum of forecasted hours minus posted hours. If more time is required, the forecast must be adjusted accordingly. On the **All work orders** page (**Asset management** \> **Work orders** \> **All work orders**) or the **Active work orders** page (**Asset management** \> **Work orders** \> **Active work orders**), you can view or edit forecasts on a work order. Select the work order, and then, on the **Work order** tab, select **Forecast**. After work orders are created and estimated, the next step is to allocate the required maintenance workers and tools.
+The required number of hours for a work order is defined by the sum of forecasted hours minus posted hours. If more time is required, the forecast must be adjusted accordingly. On the **All work orders** page (**Asset management** > **Work orders** > **All work orders**) or the **Active work orders** page (**Asset management** > **Work orders** > **Active work orders**), you can view or edit forecasts on a work order. Select the work order, and then, on the **Work order** tab, select **Forecast**. After work orders are created and estimated, the next step is to allocate the required maintenance workers and tools.
 
 > [!IMPORTANT]
-> Work orders can be scheduled only if their work order lifecycle state allows for scheduling. To set up a lifecycle state so that it allows for scheduling, go to **Asset management** \> **Setup** \> **Work orders** \> **Lifecycle states**, and then, on **General** FastTab, set the **Allow scheduling** option to *Yes*.
+> Work orders can be scheduled only if their work order lifecycle state allows for scheduling. To set up a lifecycle state so that it allows for scheduling, go to **Asset management** > **Setup** > **Work orders** > **Lifecycle states**, and then, on **General** FastTab, set the **Allow scheduling** option to *Yes*.
 
-1. Go to **Asset management** \> **Work orders** \> **All work orders**.
+1. Go to **Asset management** > **Work orders** > **All work orders**.
 1. In the list, select the work orders that you want to schedule. To find the correct work orders, you can sort the list by **Current lifecycle state** value, for example.
 1. On the **General** tab, select **Schedule**.
 1. In the **Schedule work orders** dialog box, you can add selections that are related to the expected start date and service level, as you require. If the scheduling process should observe capacity limitations for resources that are already scheduled for other jobs, make sure that the **Asset**, **Tool**, and **Worker** options are set to *Yes*.
@@ -37,7 +37,7 @@ The required number of hours for a work order is defined by the sum of forecaste
 > [!NOTE]
 > Work orders are scheduled in one cycle per work order, not per work order job.
 >
-> You can also open the **Schedule work orders** dialog box by going to **Asset management** \> **Periodic** \> **Work orders** \> **Schedule work orders**. Make your selections, and then select **OK** to start the work order scheduling process.
+> You can also open the **Schedule work orders** dialog box by going to **Asset management** > **Periodic** > **Work orders** > **Schedule work orders**. Make your selections, and then select **OK** to start the work order scheduling process.
 >
 > On the **Run in the background** FastTab of the **Schedule work orders** dialog box, you can set up work order scheduling as a batch job.
 
@@ -47,12 +47,12 @@ In the following illustration, the **Expected start** field in the **Schedule wo
 
 ![Screenshot of Schedule work orders dialog box where the Expected start field is set to the formula (greaterThanUtcDate(7)).](media/03-work-order-scheduling.png)
 
-On the **Work order types** page (**Asset management** \> **Setup** \> **Work orders** \> **Work order types**), if the **One maintenance worker** option is set to *Yes* for a work order type, that work order type sets up scheduling for a single maintenance worker. If that work order type is used on a work order, the **One maintenance worker** option is automatically set to *Yes* on the **Schedule** FastTab in the **Header** view of the **All work orders** details page. Then, during work order scheduling, all work order jobs that are created on the work order are scheduled to the same maintenance worker. As you require, you can change the setting of the **One maintenance worker** option on the **All work orders** details page to enable either multiple workers or one worker to be scheduled on the work order jobs.
+On the **Work order types** page (**Asset management** > **Setup** > **Work orders** > **Work order types**), if the **One maintenance worker** option is set to *Yes* for a work order type, that work order type sets up scheduling for a single maintenance worker. If that work order type is used on a work order, the **One maintenance worker** option is automatically set to *Yes* on the **Schedule** FastTab in the **Header** view of the **All work orders** details page. Then, during work order scheduling, all work order jobs that are created on the work order are scheduled to the same maintenance worker. As you require, you can change the setting of the **One maintenance worker** option on the **All work orders** details page to enable either multiple workers or one worker to be scheduled on the work order jobs.
 
 The scheduling process in Asset Management includes several factors in the scheduling calculation:
 
 - Calculating scores for both work orders and maintenance workers. Scores for work orders and maintenance workers are set up in Asset management parameters.
-- Checking for matching competencies (that is, skills and certificates) that are required to perform the job. Skills and certificates are set up on maintenance workers in the **Human resources** module. (Go to **Human resources** \> **Workers** \> **Workers**, select a worker in the list, and then, on the **Worker** tab, in the **Competencies** section, select the **Skills** and **Certificates** buttons.) Skills and certificates can also be added to maintenance job types and maintenance job trades. Learn more about competencies and maintenance job types in [Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+- Checking for matching competencies (that is, skills and certificates) that are required to perform the job. Skills and certificates are set up on maintenance workers in the **Human resources** module. (Go to **Human resources** > **Workers** > **Workers**, select a worker in the list, and then, on the **Worker** tab, in the **Competencies** section, select the **Skills** and **Certificates** buttons.) Skills and certificates can also be added to maintenance job types and maintenance job trades. Learn more about competencies and maintenance job types in [Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 ## Scores used in work order scheduling
 
@@ -100,7 +100,7 @@ All the rating scores that are related to calculating which maintenance workers 
 
 ## Competencies used in work order scheduling
 
-Skills and certificate requirements can be set up on maintenance job types (**Asset management** \> **Setup** \> **Jobs** \> **Maintenance job types**) and maintenance job trades (**Asset management** \> **Setup** \> **Jobs** \> **Maintenance job trade**).
+Skills and certificate requirements can be set up on maintenance job types (**Asset management** > **Setup** > **Jobs** > **Maintenance job types**) and maintenance job trades (**Asset management** > **Setup** > **Jobs** > **Maintenance job trade**).
 
 Maintenance job types and maintenance job trades are selected on work order jobs. If skills or certificates have been selected on a maintenance job type or maintenance job trade, and that maintenance job type or maintenance job trade is used on a work order job, only maintenance workers with matching skills and certificates are scheduled to work on the work order.
 
@@ -110,7 +110,7 @@ The **Scheduled work orders gantt chart** provides a graphical interface where y
 
 To view and work with the Gantt chart:
 
-1. Go to **Asset management** \> **Work orders** \> **Scheduled work orders gantt chart**.
+1. Go to **Asset management** > **Work orders** > **Scheduled work orders gantt chart**.
 1. Use the drop-down lists and fields in the **Settings** section to set up which functional location, time span, and time scale to show in the Gantt chart.
 1. Select **Apply**.
 

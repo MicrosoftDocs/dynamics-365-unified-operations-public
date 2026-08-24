@@ -23,7 +23,7 @@ For more information about how to use vendor collaboration if you're a procureme
 
 ## Add new vendor collaboration contacts
 
-To access vendor collaboration, you first need to be added as a vendor collaboration contact. You might also want to add contacts for employees in your company who don't use vendor collaboration. For example, they could be the point of contact for other kinds of procurement information. Add new contacts on the **All contacts** page, which you access from the **Vendor collaboration** \> **Contacts** menu. To add a new contact:
+To access vendor collaboration, you first need to be added as a vendor collaboration contact. You might also want to add contacts for employees in your company who don't use vendor collaboration. For example, they could be the point of contact for other kinds of procurement information. Add new contacts on the **All contacts** page, which you access from the **Vendor collaboration** > **Contacts** menu. To add a new contact:
 
 1. Select **New.**
 1. Enter the contact person details.
@@ -37,7 +37,7 @@ If you want to delete a contact, you can only delete the contacts that you creat
 Only procurement professionals or external vendor administrators can raise vendor collaboration user requests.
 
 - If you're an external vendor, submit requests from the **All contacts** page within the **Vendor collaboration** module.
-- If you're a procurement professional, submit requests from the **View contacts** page. To do this, on the vendor record, in the **Setup** section on the Action Pane, select **Contacts** \> **View contacts**.
+- If you're a procurement professional, submit requests from the **View contacts** page. To do this, on the vendor record, in the **Setup** section on the Action Pane, select **Contacts** > **View contacts**.
 
 You can request to provision a user, deactivate a user, or modify security roles. If you're an external vendor administrator, you must be registered as a contact person for the vendor accounts that you want to make user requests for, and you must have access to the vendor collaboration interface for those vendor accounts.  
 

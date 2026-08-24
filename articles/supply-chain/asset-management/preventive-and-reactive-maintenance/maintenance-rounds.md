@@ -22,7 +22,7 @@ In Asset Management, you can create maintenance rounds for various assets, on wh
 
 ## Set up a maintenance round
 
-1. Go to **Asset management** \> **Setup** \> **Preventive maintenance** \> **Maintenance rounds**.
+1. Go to **Asset management** > **Setup** > **Preventive maintenance** > **Maintenance rounds**.
 1. Select **New** to create a new maintenance round.
 1. Make the following settings in the heading of the new record:
     - **Maintenance round** – Enter a unique ID for the new record.
@@ -67,13 +67,13 @@ The following illustration shows an example of a maintenance round containing th
 When you've set up a maintenance round, you run a schedule job to schedule all the jobs related to the maintenance round.
 
 1. Do one of the following steps:
-    - Go to **Asset management** \> **Periodic** \> **Preventive maintenance** \> **Schedule maintenance rounds**.
+    - Go to **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance rounds**.
 
-    - Go to **Asset management** \> **Maintenance schedule** \> **All maintenance schedule**. Select a maintenance schedule line in the grid. On the Action Pane, open the **Maintenance schedule** tab and, from the **Schedule** group, select **Maintenance rounds**.
+    - Go to **Asset management** > **Maintenance schedule** > **All maintenance schedule**. Select a maintenance schedule line in the grid. On the Action Pane, open the **Maintenance schedule** tab and, from the **Schedule** group, select **Maintenance rounds**.
 
-    - Go to **Asset management** \> **Maintenance schedule** \> **Open maintenance schedule lines**. Select a maintenance schedule line in the grid. On the Action Pane, open the **Maintenance schedule** tab and, from the **Schedule** group, select **Maintenance rounds**.
+    - Go to **Asset management** > **Maintenance schedule** > **Open maintenance schedule lines**. Select a maintenance schedule line in the grid. On the Action Pane, open the **Maintenance schedule** tab and, from the **Schedule** group, select **Maintenance rounds**.
 
-    - Go to **Asset management** \> **Maintenance schedule** \> **Open maintenance schedule pools**. Select a maintenance schedule line in the grid. On the Action Pane, open the **Maintenance schedule** tab and, from the **Schedule** group, select **Maintenance rounds**.
+    - Go to **Asset management** > **Maintenance schedule** > **Open maintenance schedule pools**. Select a maintenance schedule line in the grid. On the Action Pane, open the **Maintenance schedule** tab and, from the **Schedule** group, select **Maintenance rounds**.
 
 1. The **Schedule maintenance rounds** dialog opens.
     :::image type="content" source="media/14-preventive-maintenance.png" alt-text="Set up for a schedule job in the Schedule maintenance rounds dialog." lightbox="media/14-preventive-maintenance.png":::
@@ -90,7 +90,7 @@ When you've set up a maintenance round, you run a schedule job to schedule all t
 
 1. Select **OK**.
 
-1. You're now able to see the maintenance rounds jobs in **Asset management** \> **Maintenance schedule** \> **All maintenance schedule** or **Open maintenance schedule lines**. If the scheduled rounds are connected to a work order pool, you also see maintenance schedule lines in **Open maintenance schedule pools**. Maintenance schedule lines created from a round have the reference type *Maintenance rounds*.
+1. You're now able to see the maintenance rounds jobs in **Asset management** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines**. If the scheduled rounds are connected to a work order pool, you also see maintenance schedule lines in **Open maintenance schedule pools**. Maintenance schedule lines created from a round have the reference type *Maintenance rounds*.
 
 The following  illustration shows the maintenance schedule lines listed on the **All maintenance schedule** page.
 

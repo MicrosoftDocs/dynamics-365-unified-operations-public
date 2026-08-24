@@ -30,8 +30,8 @@ Before you install the Supplier Engagement app and supplier portal on Power Plat
 Use the Power Platform admin center to install the Supplier Engagement app in the target environment.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Go to **Manage** \> **Environments** and open your environment.
-1. On the command bar, select **Resources** \> **Dynamics 365 apps**.
+1. Go to **Manage** > **Environments** and open your environment.
+1. On the command bar, select **Resources** > **Dynamics 365 apps**.
 1. On the command bar, select **Install app**.
 1. Search for *Supplier Engagement in Dynamics 365 Supply Chain Management (Preview)* and select it.
 1. Select **I agree to the terms of service**, and then select **Install**.
@@ -55,7 +55,7 @@ After the app is installed, activate the supplier portal site so that you can co
 
 1. Sign in to the [Power Apps maker portal](https://make.powerapps.com/).
 1. On the navigation pane, select **Solutions** and open **Supplier Engagement Portal Solution**.
-1. Go to **Objects** \> **Sites**, find *Microsoft Dynamics 365 Supplier Portal*, open its **Commands** (three dots) menu, and select **Open**.
+1. Go to **Objects** > **Sites**, find *Microsoft Dynamics 365 Supplier Portal*, open its **Commands** (three dots) menu, and select **Open**.
 1. Wait for the browser to redirect you to the [Power Pages portals](https://make.powerpages.microsoft.com/) site.
 1. Open the **Inactive sites** tab and find *Microsoft Dynamics 365 Supplier Portal*.
 1. Select **Reactivate** for the site.

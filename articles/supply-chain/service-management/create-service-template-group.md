@@ -19,7 +19,7 @@ ms.custom:
 
 You can use service template groups to sort and filter service templates.
 
-1. Go to **Service management** \> **Setup** \> **Service agreements** \> **Service template groups**.
+1. Go to **Service management** > **Setup** > **Service agreements** > **Service template groups**.
 2. Create a new service template group.
 3. Enter the group ID, a description, and a parent service template group, if there is one.
 4. Save the service template group.

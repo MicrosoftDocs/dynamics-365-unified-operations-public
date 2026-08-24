@@ -15,7 +15,7 @@ ms.search.form: SMASubscriptionTable
 
 [!include [banner](../includes/banner.md)]
 
-1. Go to **Service management** \> **Service subscriptions** \> **All service subscriptions**.
+1. Go to **Service management** > **Service subscriptions** > **All service subscriptions**.
 
 2. Select the subscription to update the index or base price for.
 

@@ -125,7 +125,7 @@ To work through the scenario by using the values that are presented in this arti
 
 If you use default Contoso data, you don't need to change the query for the location directive action. However, to make sure that the location directives capture the items on the sales orders when you apply the feature in a non-Contoso environment, create a new location directive. To verify the settings in the demo environment, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Location directives**.
+1. Go to **Warehouse management** > **Setup** > **Location directives**.
 1. In the **Work order type** field, select *Sales orders*.
 1. Select the location directive named *51 Pick*.
 1. On the **Location Directive Actions** FastTab, select the line for the **Pick** action.

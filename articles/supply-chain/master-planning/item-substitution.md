@@ -37,7 +37,7 @@ A plan group is a group of items that can be substituted for a particular materi
 
 To set up plan groups, follow these steps:
 
-1. Go to **Product information management** \> **Setup** \> **Bills of materials and formulas** \> **Plan groups**.
+1. Go to **Product information management** > **Setup** > **Bills of materials and formulas** > **Plan groups**.
 1. Use the buttons on the Action Pane to add, remove, or edit plan groups as required. For each plan group, set the following fields:
 
     - **Plan group** – Specify a unique name for the plan group.
@@ -62,7 +62,7 @@ If you have a demand for the finished item, master planning determines whether t
 
 Follow these steps to set up item substitution for a formula:
 
-1. Go to **Product information management** \> **Bills of materials and formulas** \> **Formulas**.
+1. Go to **Product information management** > **Bills of materials and formulas** > **Formulas**.
 1. Open the formula that you want to set up substitution for.
 1. Find the formula line for the material that you want to be able to substitute. Set the following fields for it:
 
@@ -119,7 +119,7 @@ If you have a demand for the finished item, master planning determines whether t
 
 Follow these steps to set up item substitution for a BOM.
 
-1. Go to **Product information management** \> **Bills of materials and formulas** \> **Bill of materials**.
+1. Go to **Product information management** > **Bills of materials and formulas** > **Bill of materials**.
 1. Open the BOM that you want to set up substitution for.
 1. Find the BOM line for the material that you want to be able to substitute. Set the following fields for it:
 

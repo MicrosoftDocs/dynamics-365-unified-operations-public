@@ -22,7 +22,7 @@ This article explains how the addition of contract lifecycle management (CLM) in
 
 ## View and work with all integrated contracts
 
-To work with integrated contracts in Supply Chain Management, go to **Procurement and sourcing** \> **Contracts** \> **All contracts**. On the **All contracts** page, you can perform the following actions:
+To work with integrated contracts in Supply Chain Management, go to **Procurement and sourcing** > **Contracts** > **All contracts**. On the **All contracts** page, you can perform the following actions:
 
 - **View a list all contracts that were created by using your CLM system.** These contracts are synced from the external system and are read-only here. For each contract, you can view the current status, important dates, and other information.
 - **Find a specific contract.** Use the **Filter** field and/or the filtering and sorting controls that are available through the column headings.
@@ -34,7 +34,7 @@ To work with integrated contracts in Supply Chain Management, go to **Procuremen
 
 While you're working with a vendor record, you can easily identify which contracts are associated with that vendor. To view the contracts that are associated with a specific vendor, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
+1. Go to **Procurement and sourcing** > **Vendors** > **All vendors**.
 1. Find and select the vendor that you want to work with. You must select only one vendor at a time.
 1. On the Action Pane, on the **Procurement** tab, in the **Agreements** group, select **Contracts** to open the **All contracts** page. The page is filtered so that it shows only contracts from the selected vendor.
 
@@ -42,7 +42,7 @@ While you're working with a vendor record, you can easily identify which contrac
 
 When you're using CLM integration, purchase agreements work slightly differently than they work in a non-integrated Supply Chain Management system.
 
-To view your purchase agreements, go to **Procurement and sourcing** \> **Purchase agreements** \> **Purchase agreements**. There, the following differences apply when you use CLM integration:
+To view your purchase agreements, go to **Procurement and sourcing** > **Purchase agreements** > **Purchase agreements**. There, the following differences apply when you use CLM integration:
 
 - The **Purchase agreements** list page includes the following new columns:
 

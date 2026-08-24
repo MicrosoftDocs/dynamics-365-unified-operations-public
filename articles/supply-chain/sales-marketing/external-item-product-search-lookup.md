@@ -28,9 +28,9 @@ To use the features described in this article, your system must meet the followi
 
 External item identifiers are set up on the account for the customer that uses them. You can add external item identifiers to a customer account by following these steps:
 
-1. Go to **Account Receivable** \> **All customers**.
+1. Go to **Account Receivable** > **All customers**.
 1. Find and open the customer you want to set up with external item identifiers.
-1. On the Action Pane, open the **Sell** tab and then select **Setup** \> **External item description**.
+1. On the Action Pane, open the **Sell** tab and then select **Setup** > **External item description**.
 1. The **External item description** page opens, showing the existing external item identifiers for the customer. To add a new one, select **New** on the Action Pane and then enter values for the following fields:
     - **ABC code** – If the customer has assigned an ABC inventory classification to the item, you can note that here. ABC analysis is an inventory management technique that determines the value of inventory items based on their importance to the business.
     - **Item number** – Select your standard (internal) item number for the product.
@@ -45,7 +45,7 @@ External item identifiers are set up on the account for the customer that uses t
 
 When a customer has external item identifiers defined, you can use them to quickly find and add products to sales orders. To do this, follow these steps:
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Either [create a new sales order](tasks/create-sales-orders.md) or open an existing one that you want to add lines to. The sales order must be for a customer that has external item identifiers defined.
 1. Make sure that the **External** column is visible in the grid on the **Sales order line** FastTab. If it isn't, you can add it by doing the following steps:
     1. Open the **Grid options** dropdown list, which is the button with three dots on it located at the right side of the heading row of the grid.

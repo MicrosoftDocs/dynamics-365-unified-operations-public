@@ -49,7 +49,7 @@ Learn more in [Create a bar code for a product](../pim/tasks/create-bar-code-pro
 
 To set up piece picking, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 1. Find and select the mobile device menu item that you want to configure.
 1. On the Action Pane, select **Work confirmation setup**.
 1. Use the buttons on the Action Pane, to add, remove, or edit confirmation settings for each work type as needed. For rows with a **Work type** of *Pick* or *Counting*, make the following settings:

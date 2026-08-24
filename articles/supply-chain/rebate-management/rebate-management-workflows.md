@@ -26,11 +26,11 @@ Users can't manually approve deals. The workflow must always be used.
 
 ## Create and manage Rebate management deal workflows
 
-To work with your Rebate management deal workflows, go to **Rebate management** \> **Setup** \> **Rebate management workflows**. There, you can view, create, and update workflows as required. Only one workflow of this type can be active at a time. For more information about workflows, how to work with the **Rebate management workflows** page, and how to create workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) and its related articles.
+To work with your Rebate management deal workflows, go to **Rebate management** > **Setup** > **Rebate management workflows**. There, you can view, create, and update workflows as required. Only one workflow of this type can be active at a time. For more information about workflows, how to work with the **Rebate management workflows** page, and how to create workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) and its related articles.
 
 ## Use a workflow to activate a deal
 
-To activate a deal through a workflow, open the deal (for example, on the **All rebate management deals** page). Then, on the Action Pane, select **Workflow** \> **Submit**. After the new deal has been processed and approved through the workflow, it will be active and ready to use.
+To activate a deal through a workflow, open the deal (for example, on the **All rebate management deals** page). Then, on the Action Pane, select **Workflow** > **Submit**. After the new deal has been processed and approved through the workflow, it will be active and ready to use.
 
 After a deal has been activated, you can't change most of its setup. If you must change an active deal, first deactivate it, and then create a new deal. If the new deal should resemble the old deal, you can create it by copying the old deal.
 
@@ -62,7 +62,7 @@ Before you can deactivate and resubmit workflows for vendor rebate deals, your s
 
 To deactivate and resubmit a workflow for a vendor rebate deal, follow these steps:
 
-1. Go to **Rebate management** \> **Rebate management deals** \> **All rebate management deals**.
+1. Go to **Rebate management** > **Rebate management deals** > **All rebate management deals**.
 1. Find and select the deal that you want to deactivate, edit, and resubmit. The deal must already be active.
 1. On the Action Pane, on the **Rebate management deals** tab, select **Deactivate**.
 1. Edit the deal as required. Here are some examples of changes that you might make:
@@ -71,6 +71,6 @@ To deactivate and resubmit a workflow for a vendor rebate deal, follow these ste
    - Add one or more new deal lines.
    - Add a new rebate period for an existing deal line.
 
-1. After you finish editing the deal, on the Action Pane, select **Workflow** \> **Submit**.
+1. After you finish editing the deal, on the Action Pane, select **Workflow** > **Submit**.
 
 The resubmission works for both customer rebates and vendor rebates.

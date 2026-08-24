@@ -134,7 +134,7 @@ Follow these steps to install the Inventory Visibility Add-in.
 1. Make sure that the *Dynamics 365 Unified Operations Plan* license is assigned to the user account that you want to use to install the add-in. If the license isn't assigned, assign it.
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the same user account.
 1. Select the environment where you want to install the add-in.
-1. On the top bar, select **Resources** \> **Dynamics 365 apps**.
+1. On the top bar, select **Resources** > **Dynamics 365 apps**.
 1. Select **Install App**.
 1. Select the *Dynamics 365 Finance and Operations Platform Tools* app. This app provides platform support for registering Inventory Visibility. If you have more than one license that provides access to this app, there might be multiple entries for it. In this case, select any entry that has a status of **Enabled**. Then select **Next**.
 1. Agree to the terms of service and select **Install**. Wait for the installation to finish before you move on to the next step. When the installation finishes, the value in the **Status** column changes from *Installing* to *Installed*.
@@ -157,7 +157,7 @@ Follow these steps to install the Inventory Visibility Add-in.
 After you install the add-in, prepare your Supply Chain Management system to work with it by following these steps.
 
 1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility integration* feature. As of Supply Chain Management version 10.0.45, it's mandatory and can't be turned off.
-1. Go to **Inventory Management** \> **Set up** \> **Inventory Visibility Integration parameters**.
+1. Go to **Inventory Management** > **Set up** > **Inventory Visibility Integration parameters**.
 1. Open the **General** tab and make the following settings:
 
     - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. Learn more in [Find your service endpoint and read the configuration](inventory-visibility-power-platform.md#endpoint).
@@ -171,7 +171,7 @@ After you install the add-in, prepare your Supply Chain Management system to wor
     - **Preload a streamlined on-hand query** – This feature provides an aggregated inventory summary for products by configured dimensions. For information about how to enable and set up this feature, see [Preload a streamlined on-hand query](inventory-visibility-preload-on-hand.md).
     - **Track time-series inventory in Inventory Visibility** – This feature enables Supply Chain Management to send its on-hand change schedule to Inventory Visibility to support available-to-promise (ATP) calculations. For information about how to enable and set up this feature, see [Track time-series inventory in Inventory Visibility](inventory-visibility-track-atp.md).
 
-1. After you finish setting up the optional features you selected, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management are now posted to Inventory Visibility.
+1. After you finish setting up the optional features you selected, go to **Inventory Management** > **Periodic tasks** > **Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management are now posted to Inventory Visibility.
 
 > [!NOTE]
 > When you enable the Inventory Visibility integration job, if you receive an error that states that you must update the partition schema, see the [Update partition schema to two if you get an error when enabling the Inventory Visibility integration job](#update-partition-two) section of this article for instructions.
@@ -194,7 +194,7 @@ If you receive this error, follow these steps to update your [partition schema](
 1. Call the `Post` API with a body of `none` to change the partition schema (by using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
 1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature, and [update the configuration](inventory-visibility-power-platform.md#update-configuration).
 1. In Power Apps, [review the runtime configuration](inventory-visibility-power-platform.md#endpoint). The `CachePartitonIdVersion` field should show a value of `ByLocationAndProductIdMod64`.
-1. In Supply Chain Management, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration**, and enable the job.
+1. In Supply Chain Management, go to **Inventory Management** > **Periodic tasks** > **Inventory Visibility Integration**, and enable the job.
 
 ## <a name="update-add-in"></a>Update the Inventory Visibility Add-in
 
@@ -221,7 +221,7 @@ To update an installed version of the Inventory Visibility Add-in to the latest 
 To uninstall the Inventory Visibility Add-in, follow these steps:
 
 1. Sign in to Supply Chain Management.
-1. Go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration**, and disable the job.
+1. Go to **Inventory Management** > **Periodic tasks** > **Inventory Visibility Integration**, and disable the job.
 1. Go to Lifecycle Services and open the page for the environment where you want to uninstall the add-in (see also the [Install the Inventory Visibility Add-in](#install-add-in) section).
 1. Select **Uninstall**.
 

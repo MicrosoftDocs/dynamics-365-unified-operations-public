@@ -17,7 +17,7 @@ ms.custom:
 
 Follow these steps to view your cost object balance. This procedure is intended for the cost controller.
 
-1. Go to **Cost management** \> **Workspaces** \> **Cost administration**.
+1. Go to **Cost management** > **Workspaces** > **Cost administration**.
 1. On the Action Pane, select **Released products**.
 1. Find and select the product you're looking for. If necessary, you can use the **Filter** field to help find it.
 1. On the Action Pane, open the **Manage costs** tab and select **Cost objects**.

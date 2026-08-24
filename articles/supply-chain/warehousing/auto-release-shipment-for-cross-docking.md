@@ -70,7 +70,7 @@ For this scenario, you must have demo data installed, and you must use the **USM
 
 #### Cross-docking template
 
-1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Cross docking templates**.
+1. Go to **Warehouse management** > **Setup** > **Work** > **Cross docking templates**.
 2. Select **New**.
 3. In the **Sequence number** field, enter **1**.
 4. In the **Cross docking template ID** field, enter a name, such as **XDock\_RAF**.
@@ -82,7 +82,7 @@ For this scenario, you must have demo data installed, and you must use the **USM
 
 #### Work classes
 
-1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Work classes**.
+1. Go to **Warehouse management** > **Setup** > **Work** > **Work classes**.
 2. Select **New**.
 3. In the **Work class ID** field, enter a name, such as **CrossDock**.
 4. In the **Work order type** field, select **Cross docking**.
@@ -91,7 +91,7 @@ To limit the types of locations where cross-docked finished goods can be put, yo
 
 #### Work templates
 
-1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Work templates**.
+1. Go to **Warehouse management** > **Setup** > **Work** > **Work templates**.
 2. In the **Work order type** field, select **Cross docking**.
 3. Select **New**.
 4. In the **Sequence number** field, enter **1**.
@@ -108,7 +108,7 @@ A standard put-away process for finished goods requires a **Put** location direc
 
 For cross-docking, as for regular put-away of finished goods, you don't have to create a location directive for the pick work action, because the output location is given. Additionally, this output location is expected to be set up either as the default output location on one of the resource-related records (that is, the resource, resource group relation, or resource group) or as a default production finished goods location for a warehouse.
 
-1. Go to **Warehouse management** \> **Setup** \> **Location directives**.
+1. Go to **Warehouse management** > **Setup** > **Location directives**.
 2. In the **Work order type** field, select **Cross docking**.
 3. Select **New**.
 4. In the **Sequence number** field, enter **1**.
@@ -128,11 +128,11 @@ For cross-docking, as for regular put-away of finished goods, you don't have to 
 
 To cross-dock the quantity of finished goods to the outbound location of the associated sales order, follow these steps:
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 2. Select **New**.
 3. For the sales order header, select customer account **US-001** and a warehouse that is set up for cross-docking that uses the auto-release shipment feature.
 4. Add a line for a finished product, and enter **10** as the quantity.
-5. In the **Sales order lines** section, select **Product and supply** \> **Production order**.
+5. In the **Sales order lines** section, select **Product and supply** > **Production order**.
 6. In the **Create production order** dialog box, review the default values, and then select **Create**. A new production order is created and linked to the sales order (that is, it's reserved and marked).
 7. Optional: Change the value of the **Quantity** field so that it's more than the value that is required to fulfill the sales order. When the production quantity is reported as finished, the system will create cross-docking work for the marked quantity and put-away work for the remaining quantity, according to the regular procedure for handling the put-away of finished goods.
 
@@ -152,13 +152,13 @@ To cross-dock the quantity of finished goods to the outbound location of the ass
 9. On the Action Pane, on the **Production order** tab, in the **Process** group, select **Release**, and then select **OK**. Warehouse pick work is created for the raw materials.
 10. Open and review the work. On the Action Pane, on the **Warehouse** tab, in the **General** group, select **Work details**. Make a note of the work ID.
 11. Sign in to the Warehouse Management mobile app to run work in warehouse 51.
-12. Go to **Production** \> **Production pick**.
+12. Go to **Production** > **Production pick**.
 13. Enter the work ID to start and complete the raw material picking. 
 
     After the work is reported as finished, the quantity of raw materials is available in the production input location (**005** in USMF demo data), and execution of the production order can start.
 
 14. On the **Production order** page, on the Action Pane, on the **Production order** tab, in the **Process** group, select **Start**, and then select **OK**.
-15. In the app, go to **Production** \> **RAF and put away**.
+15. In the app, go to **Production** > **RAF and put away**.
 16. In the **Prod ID** field, enter the production order number and other mandatory details, and then select **OK**.
 
 Notice that the following events occur:

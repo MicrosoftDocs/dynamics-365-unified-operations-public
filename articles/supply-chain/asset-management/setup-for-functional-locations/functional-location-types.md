@@ -24,7 +24,7 @@ This article describes how to create functional location types in Asset Manageme
 
 This procedure shows how to create a default functional location type to be used for a default functional location.
 
-1. Select **Asset management** \> **Setup** \> **Functional locations** \> **Functional location types**.
+1. Select **Asset management** > **Setup** > **Functional locations** > **Functional location types**.
 2. Select **New** to create a functional location type.
 3. Insert a functional location type ID in the **Functional location type** field, for example, *Default*, and a name in the **Name** field.
 4. Select a lifecycle model in the **Functional location lifecycle model** field.
@@ -34,7 +34,7 @@ Now, the default functional location type to be used only on a default functiona
 
 ## Create Functional Location Types
 
-1. Select **Asset Management** \> **Setup** \> **Functional locations** \> **Functional location types**.
+1. Select **Asset Management** > **Setup** > **Functional locations** > **Functional location types**.
 2. Select **New** to create a functional location type.
 3. Insert a functional location type ID in the **Functional location type** field and a name in the **Name** field.
 4. Select a lifecycle model in the **Functional location lifecycle model** field. To learn more about functional location lifecycle states and lifecycle models, go to [Functional location lifecycle states](../setup-for-functional-locations/functional-location-stages.md).
@@ -43,7 +43,7 @@ Now, the default functional location type to be used only on a default functiona
 7. The **Asset type** field is used if you want to automatically create *one* asset for the functional location with the same ID and name as the functional location you're creating. For example, this might be relevant if you create a static functional location, such as a building or a pipeline. In that case, select the asset type you want to use for the automatically created asset. Remember that if you make a selection in this field, the **Multiple assets** toggle button must be set to *No*.
 8. On the **Asset types** FastTab, select the asset types to be related to the functional location type. Select **Add line** and select the asset types. If you add asset types here, only assets using those asset types can be installed on a functional location using this functional location type. If no asset types are selected on the **Asset types** FastTab, all asset types might be installed.
 9. On the **Maintenance plans** FastTab, select the maintenance plans that should automatically be set up on new functional locations using this functional location type. Select **Add line** and select the maintenance plans. If you add maintenance plans here, only those plans can be used on a functional location using this functional location type.
-10. On the **Asset attribute requirements** FastTab, set up the asset attributes that should automatically be set up on new functional locations using this functional location type. Select **Add line** and select the attribute. These attribute requirements function as guidelines. They aren't validated against attributes set up on an asset (to see the attributes, go to **Asset management** \> **Assets** \> **All assets**, select an asset in the list page, and on the Action Pane, open the **General** tab and select **Attributes**). The attribute requirements are shown when you install assets on functional locations.
+10. On the **Asset attribute requirements** FastTab, set up the asset attributes that should automatically be set up on new functional locations using this functional location type. Select **Add line** and select the attribute. These attribute requirements function as guidelines. They aren't validated against attributes set up on an asset (to see the attributes, go to **Asset management** > **Assets** > **All assets**, select an asset in the list page, and on the Action Pane, open the **General** tab and select **Attributes**). The attribute requirements are shown when you install assets on functional locations.
 11. On the **Permitted types** FastTab, select the functional location types that should be valid for sub functional location types related to a parent functional location type, which uses the selected functional location type.
 12. On the **Attributes** FastTab, select the functional location attributes that should automatically be set up on functional locations using this functional location type. Select **Add line** and select the attribute.
 

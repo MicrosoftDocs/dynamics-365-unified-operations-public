@@ -56,7 +56,7 @@ To keep your system running smoothly, follow these performance best practices:
 
 To set up, run, and schedule the *Calculate sales totals* batch job, follow these steps:
 
-1. Go to **Sales and marketing** \> **Periodic tasks** \> **Calculate sales totals**.
+1. Go to **Sales and marketing** > **Periodic tasks** > **Calculate sales totals**.
 
 1. In the **Calculate sales totals** dialog, make the following settings on the **Parameters** FastTab:
 

@@ -52,11 +52,11 @@ Also, you can enable the **Start time** and **End time** fields on the **Project
 
 ## Enable the starting and ending time feature for service orders
 
-1. Select **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.
+1. Select **Project management and accounting** > **Setup** > **Project management and accounting parameters**.
 
 2. Select the **Journals** tab, and then select the **Show start/end times** check box.
 
-3. Select **Project management and accounting** \> **Setup** \> **Journals** \> **Journal names**.
+3. Select **Project management and accounting** > **Setup** > **Journals** > **Journal names**.
 
 4. Select the journal name that is attached to the service order.
 

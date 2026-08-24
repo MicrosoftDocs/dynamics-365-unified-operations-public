@@ -19,7 +19,7 @@ This procedure walks you through the process of creating and posting an inventor
 
 ## Create an inventory adjustment journal
 
-1. Go to **Inventory management** \> **Journal entries** \> **Items** \> **Inventory adjustment**.
+1. Go to **Inventory management** > **Journal entries** > **Items** > **Inventory adjustment**.
 2. Select **New**.
 3. In the **Name** field, select the drop-down button to open the lookup.
 4. In the list, select on the inventory adjustment journal name you want to use. Some other fields are populated based on the setup of the inventory adjustment journal name you select.  

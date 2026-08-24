@@ -25,7 +25,7 @@ Sometimes, a bill of materials (BOM) item must be changed on multiple production
 
 To change a BOM item that's used on any production order, follow these steps:
 
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 1. Select one or more production orders that you want to change. You can change BOM items only for production orders that have a status of *Estimated* or *Scheduled*. (You can't change them for production orders that have a status of *Created*, for example.)
 1. On the Action Pane, on the **Production order** tab, in the **Change** group, select **Change BOM item**.
 1. In the **Change production order BOM item** dialog box, on the **Parameters** FastTab, in the **From item** section, specify the item that you want to change from. Include the item's inventory dimensions.
@@ -60,7 +60,7 @@ It's often useful to change the setup times for routes when improvements are mad
 
 To change a production order route, follow these steps:
 
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 1. Select one or more production orders that you want to change.
 1. On the Action Pane, on the **Production order** tab, in the **Change** group, select **Change route**.
 1. In the **Production order change route item** dialog box, on the **Parameters** FastTab, specify the "from" route and the "to" route.

@@ -42,7 +42,7 @@ During the initial synchronization process, the system can create a qualified gl
 Use this procedure when you want to create a new vendor profile directly in the Supplier Engagement app. After you save the record, the system assigns a unique global vendor number, sets the initial status to *Prospect*, and records *Supplier Engagement* as the origin.
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Menu** area.
-1. On the navigation pane, go to **General** \> **Global vendors**.
+1. On the navigation pane, go to **General** > **Global vendors**.
 1. On the command bar, select **New**.
 1. Enter the vendor details in the fields provided. Use tooltips to understand the purpose of each field. Required fields are marked with an asterisk (*).
 1. On the command bar, select **Save**. Notice the following values, which are generated on save:

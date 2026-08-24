@@ -481,11 +481,11 @@ The following table describes the various work types that you can use work confi
 
 The menu items that you create by using the **Mobile device menu items** page become available to mobile device users after you add them to one or more menus by using the **Mobile device menu** page.
 
-On the **Work users** page (**Warehouse management** \> **Setup** \> **Worker**), you can select the top-level menu that each worker can access on the mobile app. (Learn more in [Mobile device user accounts](mobile-device-work-users.md).) In this way, you can set up a system that supports several different menu structures, where each worker sees only the menu items that are relevant to them.
+On the **Work users** page (**Warehouse management** > **Setup** > **Worker**), you can select the top-level menu that each worker can access on the mobile app. (Learn more in [Mobile device user accounts](mobile-device-work-users.md).) In this way, you can set up a system that supports several different menu structures, where each worker sees only the menu items that are relevant to them.
 
 To set up menus for mobile devices, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu**.
 1. Do one of the following actions:
     - To add a new menu or submenu, on the Action Pane, select **New**.
     - To edit an existing menu or submenu, on the list pane, select the menu you want to edit. Then, on the Action Pane, select **Edit**.

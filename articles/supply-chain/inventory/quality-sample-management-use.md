@@ -100,7 +100,7 @@ Workers can identify inline samples that are ready for testing by using the samp
 
 Here's an example of how to test an inline sample:
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
+1. Go to **Inventory management** > **Periodic tasks** > **Quality management** > **Sample Management Workbench**.
 1. Use the **Filter** field or column filters to find and select the sample registration that you want to test.
 1. On the Action Pane, open the **Sample** tab and select **Quality orders**.
 1. On the Action Pane, select **Quick result entry**.
@@ -120,7 +120,7 @@ If a worker wants to perform more detailed testing, they can manually create a q
 
 Here's an example of how to test a continuous sample:
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
+1. Go to **Inventory management** > **Periodic tasks** > **Quality management** > **Sample Management Workbench**.
 1. Select a row that shows the **Item number** you want to test.
 1. On the Action Pane, open the **Sample** tab and select **Sample relationships**. The **Sample relationships** page shows information about samples and license plates related to the selected sample. You can find the following information here:
     - There is a record for each license plate that has been reported as finished and is waiting for quality testing.
@@ -146,7 +146,7 @@ To support archiving, make sure you define a lifecycle state that represents the
 
 Use the following procedure to change the lifecycle state:
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
+1. Go to **Inventory management** > **Periodic tasks** > **Quality management** > **Sample Management Workbench**.
 1. Use the **Filter** field or column filters to find and select the sample registration that you want to archive.
 1. On the Action Pane, open the **Sample** tab and select **Change lifecycle state**. Choose the desired lifecycle state in the drop-down dialog and select **OK**.
 
@@ -160,7 +160,7 @@ To support sample disposal, make sure you define a lifecycle state that represen
 
 To dispose of a sample, follow these steps:
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
+1. Go to **Inventory management** > **Periodic tasks** > **Quality management** > **Sample Management Workbench**.
 1. Use the **Filter** field or column filters to find and select the sample registration that you want to archive.
 1. On the Action Pane, open the **Sample** tab and select **Change lifecycle state**. Choose the desired lifecycle state in the drop-down dialog and select **OK**.
 

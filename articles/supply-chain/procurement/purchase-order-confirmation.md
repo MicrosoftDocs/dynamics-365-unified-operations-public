@@ -23,7 +23,7 @@ This article describes how to schedule the job, prevent failures when a vendor i
 
 The *Confirm purchase orders* batch job processes purchase orders in bulk. Follow these steps to schedule and configure the batch job:
 
-1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Purchase order confirmation** \> **Confirm purchase orders**.
+1. Go to **Procurement and sourcing** > **Purchase orders** > **Purchase order confirmation** > **Confirm purchase orders**.
 
 1. The **Confirm purchase order** dialog opens.
 

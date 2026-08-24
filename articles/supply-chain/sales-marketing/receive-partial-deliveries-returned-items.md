@@ -22,11 +22,11 @@ If a return shipment contains less than the full quantity of a return order line
 
 ## Register and post a partial quantity
 
-1. After you select a return order for arrival on the **Arrival overview - Warehouse: %1, Dock: %2, Journal name: %3** page, select **Start arrival** to create the arrival journal, and then select **Journals** \> **Show arrivals from receipts** to open the **Location journal** page.
+1. After you select a return order for arrival on the **Arrival overview - Warehouse: %1, Dock: %2, Journal name: %3** page, select **Start arrival** to create the arrival journal, and then select **Journals** > **Show arrivals from receipts** to open the **Location journal** page.
 
 1. Select the line of the journal that you want to work with, and then select **Lines** to open the **Journal lines, locations** page.
 
-1. Select the line of the item number for which only a partial quantity has arrived, and then select **Functions** \> **Split** to open the **Split** page.
+1. Select the line of the item number for which only a partial quantity has arrived, and then select **Functions** > **Split** to open the **Split** page.
 
 1. In the **Split quantity** field, enter the quantity for the total number of items that have been received, and then select **OK**.
 

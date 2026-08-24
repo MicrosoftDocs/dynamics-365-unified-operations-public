@@ -29,7 +29,7 @@ Before you configure Supply Chain Management for Supplier Engagement, complete t
 
 Turn on the feature in **Feature management** before you try to use Supplier Engagement capabilities in Supply Chain Management.
 
-1. Go to **Workspaces** \> **Feature management**.
+1. Go to **Workspaces** > **Feature management**.
 1. If you don't see *Supplier Engagement*, select **Check for updates**.
 1. Select the *Supplier Engagement* feature, and then select **Enable now**.
 
@@ -39,7 +39,7 @@ Learn more in [Feature management overview](/dynamics365/fin-ops-core/fin-ops/ge
 
 Workflow batch jobs must be active so that approval, notification, and due-date processing can continue in the background.
 
-1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
+1. Go to **System administration** > **Inquiries** > **Batch jobs**.
 1. Use the filter in the **Job description** column to find rows that contain *Workflow*.
 1. Select the check box for each of the following jobs:
     - *Workflow message processing*
@@ -81,7 +81,7 @@ The supply risk assessment report is a Power BI report built on data stores that
 
 To see the data refreshed on the supply risk assessment report, you must enable the automated refresh of the entity stores that the report uses. To enable the automated entity store refresh, follow these steps.
 
-1. Go to **System administration** \> **Set up** \> **Entity store**.
+1. Go to **System administration** > **Set up** > **Entity store**.
 1. Use **Filter** to find *PurchaseCube* and *VRMPurchaseCube*.
 1. Select **Edit** on the Action Pane.
 1.Select the *PurchaseCube* record and expand the **General** FastTab. Set **Automatic refresh enabled** to *Yes* and choose a *Recurrence interval* (for example, *Every hour*). Then select **Refresh** to schedule the batch job.
@@ -109,7 +109,7 @@ The *Vendor user request (new user or modify user)* workflow is a standard workf
 
 To start editing the workflow, follow these steps:
 
-1. Go to **System administration** \> **Workflow** \> **User workflows**.
+1. Go to **System administration** > **Workflow** > **User workflows**.
 1. Open the *Vendor user request (new user or modify user)* workflow. The system suggests downloading and opening the workflow editor. You must use the Microsoft Edge browser to download and run the app.
 1. The app opens, showing the default workflow. You can now edit the workflow to modify its behavior as needed, as described in the following sections. Choose which functionality to enable based on your business needs.
 
@@ -131,7 +131,7 @@ If you want to approve supplier portal user requests automatically, follow these
 1. Set **Auto complete action** to *Approve* or *Complete* (depending on which kind of step you are editing). Then select **Close**.
 1. Repeat the previous five steps for each of the other three approval steps in the workflow.
 1. Select **Save and close** to save your changes to the workflow as a new version.
-1. In Supply Chain Management, go back to **System administration** \> **Workflow** \> **User workflows** and select the *Vendor user request (new user or modify user)* workflow. On the Action Pane, open the Workflow tab and select **Versions**. Use the **Workflow versions** dialog to set the new version of the workflow as the active version.
+1. In Supply Chain Management, go back to **System administration** > **Workflow** > **User workflows** and select the *Vendor user request (new user or modify user)* workflow. On the Action Pane, open the Workflow tab and select **Versions**. Use the **Workflow versions** dialog to set the new version of the workflow as the active version.
 
 ### Require internal users to approve supplier portal user requests (optional)
 
@@ -145,7 +145,7 @@ If you want to require internal users (such as the purchasing manager) to approv
 1. Select the **Use final approver** check box.
 1. Select the user who should approve the user request.
 1. Select **Save and close** to save your changes to the workflow as a new version.
-1. In Supply Chain Management, go back to **System administration** \> **Workflow** \> **User workflows** and select the *Vendor user request (new user or modify user)* workflow. On the Action Pane, open the Workflow tab and select **Versions**. Use the **Workflow versions** dialog to set the new version of the workflow as the active version.
+1. In Supply Chain Management, go back to **System administration** > **Workflow** > **User workflows** and select the *Vendor user request (new user or modify user)* workflow. On the Action Pane, open the Workflow tab and select **Versions**. Use the **Workflow versions** dialog to set the new version of the workflow as the active version.
 
 ### Automate guest supplier user provisioning in Microsoft Entra (optional)
 
@@ -169,7 +169,7 @@ To automate guest supplier user provisioning in Microsoft Entra, add a condition
     :::image type="content" source="media/deploy-workflow-diagram.png" alt-text="Screenshot of the completed vendor user request workflow diagram." lightbox="media/deploy-workflow-diagram.png":::
 
 1. Select **Save and close** to save your changes to the workflow as a new version.
-1. In Supply Chain Management, go back to **System administration** \> **Workflow** \> **User workflows** and select the *Vendor user request (new user or modify user)* workflow. On the Action Pane, open the Workflow tab and select **Versions**. Use the **Workflow versions** dialog to set the new version of the workflow as the active version.
+1. In Supply Chain Management, go back to **System administration** > **Workflow** > **User workflows** and select the *Vendor user request (new user or modify user)* workflow. On the Action Pane, open the Workflow tab and select **Versions**. Use the **Workflow versions** dialog to set the new version of the workflow as the active version.
 
 Learn more in [Example of a workflow for provisioning new users and modifying security roles](../procurement/set-up-maintain-vendor-collaboration.md#example-of-a-workflow-for-provisioning-new-users-and-modifying-security-roles).
 
@@ -179,7 +179,7 @@ The vendor category request workflow is triggered when a vendor requests a new p
 
 To create or modify the workflow, follow these steps.
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing workflows**.
+1. Go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing workflows**.
 1. Find or add the *Vendor category request* workflow.
 1. Configure the workflow steps and activate the workflow.
 
@@ -191,7 +191,7 @@ The vendor invoice workflow is triggered when a vendor invoice is submitted.
 
 To create or modify the workflow, follow these steps.
 
-1. Go to **Accounts payable** \> **Setup** \> **Accounts payable workflows**.
+1. Go to **Accounts payable** > **Setup** > **Accounts payable workflows**.
 1. Create or update the vendor invoice workflow that you want suppliers to use.
 1. Activate the workflow after configuration is complete.
 
@@ -201,7 +201,7 @@ Learn more in [Set up options for vendor invoice automation](/dynamics365/financ
 
 Local laws and regulations vary from place to place, so the fields and options available for each vendor must adapt to that vendor's specific country/region. To prepare your system to provide localized features, you must generate the required entity field metadata. To generate the entity field metadata, follow these steps.
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **(Preview) Supplier Engagement** \> **Entity field metadata for supplier portal**.
+1. Go to **Procurement and sourcing** > **Setup** > **(Preview) Supplier Engagement** > **Entity field metadata for supplier portal**.
 1. On the Action Pane, select **Generate entity field metadata**.
 
 ## Create global vendors from existing data
@@ -216,9 +216,9 @@ To run the global vendor creation wizard, follow these steps:
 
 1. Sign in to Supply Chain Management.
 1. Start the wizard in one of the following ways:
-    - Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**, select up to 200 vendors that aren't already linked to global vendors. On the Action Pane, open the **Vendor** tab and, from the **Set up** group, select **Global vendor**.
-    - Go to **Organization administration** \> **Global address book** \> **Global address book**, select up to 200 parties that have a vendor role and aren't already linked to global vendors, and then select **Party** \> **New** \> **Global vendor**.
-    - Go to **Procurement and sourcing** \> **Vendors** \> **Supplier engagement** \> **Global vendor creation**.
+    - Go to **Procurement and sourcing** > **Vendors** > **All vendors**, select up to 200 vendors that aren't already linked to global vendors. On the Action Pane, open the **Vendor** tab and, from the **Set up** group, select **Global vendor**.
+    - Go to **Organization administration** > **Global address book** > **Global address book**, select up to 200 parties that have a vendor role and aren't already linked to global vendors, and then select **Party** > **New** > **Global vendor**.
+    - Go to **Procurement and sourcing** > **Vendors** > **Supplier engagement** > **Global vendor creation**.
 1. The **Global vendor creation** wizard opens. On the **Welcome** page, select **Next**.
 1. If the **Select vendor** page appears, select the vendors that you want to process. Use the **Vendor selection** filter to help find vendors that meet your criteria. Then select **Next**.
 1. The **Check for duplicates** page opens.
@@ -235,7 +235,7 @@ When the wizard finishes, it creates the new global vendors, merges selected par
 
 The global vendor creation wizard runs asynchronously, so use the log to confirm results and handle failures.
 
-1. Go to **Procurement and sourcing** \> **Vendors** \> **Supplier Engagement** \> **Global vendor creation log**.
+1. Go to **Procurement and sourcing** > **Vendors** > **Supplier Engagement** > **Global vendor creation log**.
 1. Review the creation status and failure reason for each record.
 1. If a record has a status of *Error*, select it and then select **Resync**.
 

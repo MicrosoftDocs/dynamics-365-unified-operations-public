@@ -20,7 +20,7 @@ When you create a work order, you might want to define the service levels for it
 
 ## Create a service level
 
-1. Select **Asset management** \> **Setup** \> **Work orders** \> **Service level**.
+1. Select **Asset management** > **Setup** > **Work orders** > **Service level**.
 2. Select **New**.
 3. In the **Service level** field, enter the service level (for example, a number).
 4. In the **Name** field, enter a name.
@@ -37,7 +37,7 @@ When you create a work order, you might want to define the service levels for it
 
 ## Create a description
 
-1. Select **Asset management** \> **Setup** \> **Work orders** \> **Descriptions**.
+1. Select **Asset management** > **Setup** > **Work orders** > **Descriptions**.
 2. Select **New**.
 3. In the **Description** field, enter the description.
 4. Select **Save**.

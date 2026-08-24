@@ -40,7 +40,7 @@ To work through this scenario by using the demo records and values that are spec
 
 Follow these steps to set up a line charge in auto charges.
 
-1. Go to **Accounts receivable** \> **Setup** \> **Charges** \> **Auto charges**. (Similar steps can be completed at **Accounts payable** \> **Setup** \> **Charges** \> **Automatic charges** and **Procurement and sourcing** \> **Setup** \> **Charges** \> **Automatic charges**.)
+1. Go to **Accounts receivable** > **Setup** > **Charges** > **Auto charges**. (Similar steps can be completed at **Accounts payable** > **Setup** > **Charges** > **Automatic charges** and **Procurement and sourcing** > **Setup** > **Charges** > **Automatic charges**.)
 1. In the list pane, set the **Level** field to *Link*.
 1. On the Action Pane, select **New** to create an auto charges record.
 1. On the header of the new record, set the following values:
@@ -81,7 +81,7 @@ Follow these steps to set up a line charge in auto charges.
 
 The charges can now be automatically applied to a sales quotation line or a sales order line. To apply the charges to a sales order line, follow these steps:
 
-1. Go to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and Marketing** > **Sales orders** > **All sales orders**.
 1. On the Action Pane, select **New** to create a sales order.
 1. In the **Create sales order** dialog box, set the **Customer account** field to *US-004*. Then select **OK** to create the order. The selected customer must use the same currency as the auto charges that you set up (*USD*).
 1. The new sales order is opened. On the Action Pane, on the **Sell** tab, in the **Charges** group, select **Maintain charges**.
@@ -97,7 +97,7 @@ The charges can now be automatically applied to a sales quotation line or a sale
 
     The **Net amount** field should show a calculated value of *100*.
 
-1. While the new order line is still selected on the **Sales order lines** FastTab, select **Financials** \> **Maintain charges** on the toolbar.
+1. While the new order line is still selected on the **Sales order lines** FastTab, select **Financials** > **Maintain charges** on the toolbar.
 1. Confirm that the **Maintain charges** page shows the two auto charges that you set up earlier. Then close the page by selecting the back button on the Action Pane.
 1. On Action Pane, on the **Sales order** tab, in the **View** group, select **Totals**.
 1. The **Totals** dialog box shows the different calculation results that apply to the current order. Notice that the value that's shown for **Total Charges** is 4 USD. This value is calculated in the following way:
@@ -117,6 +117,6 @@ The charges can now be automatically applied to a sales quotation line or a sale
 
 ## Pricing management
 
-The features that are described in this article work together with the [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). Pricing management introduces changes to the setup and search of auto charges. Therefore, it also changes some of the behavior that's described in this article. When the Unified pricing management module is [enabled](../unified-pricing-management/upm-pricing-management-enable.md), charges that are set up at **Accounts receivable** \> **Charges setup** don't apply. Instead, only charges that are set up on the auto charges page that's specific to the **Pricing management** module apply to sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management** \> **During-sales pricing** \> **Charges setup** \> **Auto charges**.
+The features that are described in this article work together with the [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). Pricing management introduces changes to the setup and search of auto charges. Therefore, it also changes some of the behavior that's described in this article. When the Unified pricing management module is [enabled](../unified-pricing-management/upm-pricing-management-enable.md), charges that are set up at **Accounts receivable** > **Charges setup** don't apply. Instead, only charges that are set up on the auto charges page that's specific to the **Pricing management** module apply to sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management** > **During-sales pricing** > **Charges setup** > **Auto charges**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,7 +12,7 @@ ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 
 # Flex groups
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Flexible working hours let companies minimize payments for overtime by offering workers extra time off during periods when the workload is low. This feature is relevant, for example, in segments that experience seasonal changes in workload.
 
@@ -23,11 +23,11 @@ You can use flex groups to set the following rules and principles for a worker's
 
 ## Set up flexible working hours in flex groups
 
-- Select **Time and attendance** \> **Setup** \> **Groups** \> **Flex groups** to set up flex groups for flexible hours.
+- Select **Time and attendance** > **Setup** > **Groups** > **Flex groups** to set up flex groups for flexible hours.
 
 ## Associate workers with flex groups
 
-- Select **Time and attendance** \> **Setup** \> **Time registration workers**.
+- Select **Time and attendance** > **Setup** > **Time registration workers**.
 
 ## Rules for flex regulations
 
@@ -53,7 +53,7 @@ You can adjust a flex balance at the following times:
 
 ## Principle for calculating a worker's flex balance
 
-The principle for calculating the hours that the worker's flex balance are adjusted by is set up on the flex group. Select **Time and attendance** \> **Setup** \> **Groups** \> **Flex groups**. 
+The principle for calculating the hours that the worker's flex balance are adjusted by is set up on the flex group. Select **Time and attendance** > **Setup** > **Groups** > **Flex groups**. 
 
 The following two principles can be used:
 
@@ -125,9 +125,9 @@ To account for the flexible hours, you must also define a new pay type. For this
 
 Next, follow these steps to set up a pay type and add lines of the new type to a pay profile.
 
-1. Select **Time and attendance** \> **Setup** \> **Groups** \> **Flex groups**, and then select **New**.
+1. Select **Time and attendance** > **Setup** > **Groups** > **Flex groups**, and then select **New**.
 2. In both the **Flex+** field and the **Flex-** field, specify the new pay type, **FlexCnt**.
-3. Select **Time and attendance** \> **Setup** \> **Pay agreements**, and then select **Agreement lines**.
+3. Select **Time and attendance** > **Setup** > **Pay agreements**, and then select **Agreement lines**.
 4. For **Monday**, for the **Flex+** profile type, add the following three lines.
 
     | Pay type | Description  | From time | To time  | Minimum | Maximum | Factor |

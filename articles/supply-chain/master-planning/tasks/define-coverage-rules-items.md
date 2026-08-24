@@ -21,7 +21,7 @@ This procedure shows how to create coverage rules and override coverage settings
 
 Create a coverage group by following these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage groups**.
 1. Select **New**.
 1. In the **Coverage group** field, enter a value.
 1. In the **Name** field, enter a value.
@@ -40,7 +40,7 @@ Create a coverage group by following these steps:
 
 Create a new product by following these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Select **New**.
 1. In the **Product number** field, enter a value.
 1. In the **Product name** field, enter a value.

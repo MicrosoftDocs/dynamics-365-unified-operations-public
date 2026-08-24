@@ -32,7 +32,7 @@ Sammy, a receiving clerk, wants to know what is expected to be received on the c
 
 ## Arrival overview page
 
-To open the **Arrival overview** page, select **Inventory management** \> **Inbound orders** \> **Arrival overview**. You can view a list of orders that are expected to be received. The overview is divided into a header and lines. The header information is grouped by the order type, expected receipt date, and delivery destination. When you select a header line for arrival, all the detail lines that are related to the receipt reference are selected for arrival in the line details part of the page. When you post all related journal lines, this information isn't shown.
+To open the **Arrival overview** page, select **Inventory management** > **Inbound orders** > **Arrival overview**. You can view a list of orders that are expected to be received. The overview is divided into a header and lines. The header information is grouped by the order type, expected receipt date, and delivery destination. When you select a header line for arrival, all the detail lines that are related to the receipt reference are selected for arrival in the line details part of the page. When you post all related journal lines, this information isn't shown.
 
 ### Arrival overview profiles
 
@@ -86,7 +86,7 @@ Sammy can view the following information:
 
 ### Update journals
 
-To register one or more order lines that are due to be processed, Sammy can select the lines in the overview grid or in the line grid, and then select **Journals** \> **Show arrivals from receipts**. The item arrival headers that match the lines are shown. To update the purchase order product receipt for the registered items, Sammy can access the item arrival journal headers that are ready for update. To access these item arrival journal headers, Sammy selects **Journals** \> **Product receipt ready journals**. All the header lines that are ready for product receipt update in the specified warehouse range are shown. (The header lines that are shown aren't related to the day interval).
+To register one or more order lines that are due to be processed, Sammy can select the lines in the overview grid or in the line grid, and then select **Journals** > **Show arrivals from receipts**. The item arrival headers that match the lines are shown. To update the purchase order product receipt for the registered items, Sammy can access the item arrival journal headers that are ready for update. To access these item arrival journal headers, Sammy selects **Journals** > **Product receipt ready journals**. All the header lines that are ready for product receipt update in the specified warehouse range are shown. (The header lines that are shown aren't related to the day interval).
 
 ### Start an arrival registration
 
@@ -99,9 +99,9 @@ By selecting multiple lines on the **Arrival overview** page, Sammy can start an
 
 When all goods have been registered, the warehouse manager or purchasing manager can update the received items with a product receipt to add the physical cost. To update arrival information and post a product receipt, follow these steps:
 
-1. Select **Inventory management** \> **Inbound orders** \> **Arrival overview**.
-1. On the **Arrival overview** page, select **Journals** \> **Product receipt ready journals** to show a list of the journals that are ready for product receipt update.
-1. Select the journals that you want to update, then select **Functions** \> **Product receipt**.
+1. Select **Inventory management** > **Inbound orders** > **Arrival overview**.
+1. On the **Arrival overview** page, select **Journals** > **Product receipt ready journals** to show a list of the journals that are ready for product receipt update.
+1. Select the journals that you want to update, then select **Functions** > **Product receipt**.
 1. On the **Posting** page, enter the product receipt number, if it isn't already available on the journal, then select **OK** to process the product receipt.
 
 ## Summary

@@ -147,8 +147,8 @@ To implement custom pricing attributes for products, customers, orders, and orde
     ```
 
 1. Build the relevant models, Global Unified Pricing (GUP) or extension, and restart Internet Information Services (IIS). Then, clear the cache for your Microsoft finance and operations apps.
-1. Open your Microsoft finance and operations app and go to **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups**. Select the price attribute group that you want to customize and then use the **Attributes** FastTab to add your custom pricing attributes to it. Update each group as needed.
-1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution Schedule** and run the *1210 Pricing management* job to sync changes to the Channel database.
+1. Open your Microsoft finance and operations app and go to **Pricing management** > **Setup** > **Price attribute groups** > **Price attribute groups**. Select the price attribute group that you want to customize and then use the **Attributes** FastTab to add your custom pricing attributes to it. Update each group as needed.
+1. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution Schedule** and run the *1210 Pricing management* job to sync changes to the Channel database.
 1. For *existing* custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SQL Server Management Studio (SSMS). Here's an example of how to set the `Customization` identifier:
 
     ```SQL
@@ -162,7 +162,7 @@ To implement custom pricing attributes for products, customers, orders, and orde
     :::image type="content" source="media/ssms-customization.png" alt-text="SSMS customization." lightbox="media/ssms-customization.png":::
 
 1. For `Customer` or `Product`, create a trade agreement journal that tests the new custom pricing attribute. For `SalesTable` or `SalesLine`, create an auto charge that tests the new custom pricing attribute. In both cases, make sure to set a specific value.
-1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution Schedule**  and run the *9999 All jobs* job to sync changes to the Channel database.
+1. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution Schedule**  and run the *9999 All jobs* job to sync changes to the Channel database.
 1. In POS, you should see the value configured in the trade agreement journal or that an auto charge was correctly applied.
 
 ## Troubleshooting

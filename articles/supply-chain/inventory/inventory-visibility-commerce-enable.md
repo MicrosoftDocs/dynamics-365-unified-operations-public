@@ -13,6 +13,8 @@ ms.custom:
 
 # Enable Inventory Visibility for Commerce
 
+[!include [banner](../includes/banner.md)]
+
 This article describes how to set up Inventory Visibility for Microsoft Dynamics 365 Commerce Scale Units (CSUs) so that e-commerce, point of sale (POS), or other applications on CSUs can use it for real-time inventory lookup, reservation, and adjustments.
 
 ## Inventory Visibility for Commerce
@@ -60,7 +62,7 @@ Before you can use the features that this article describes, your system must me
 To enable adjustments in Supply Chain Management, follow these steps:
 
 1. Sign in to Supply Chain Management.
-1. Go to **Inventory Management** \> **Inventory Visibility** \> **Inventory Visibility integration**.
+1. Go to **Inventory Management** > **Inventory Visibility** > **Inventory Visibility integration**.
 1. On the **Adjustment** tab, on the **Manage inventory adjustment posting and retry** FastTab, on the toolbar, select **Enable adjustment**.
 
 ## <a name="key-vault"></a>Create a key vault to hold the client secret for Inventory Visibility
@@ -74,7 +76,7 @@ To create a key vault to hold the client secret for Inventory Visibility, follow
 1. Open the key vault that you just created.
 1. On the navigation pane, select **Overview**.
 1. Copy the **Vault URI** value, and paste it into a temporary text file. Label the value so that you can identify it later.
-1. While your key vault is still open, on the navigation pane, select **Object** \> **Secrets**.
+1. While your key vault is still open, on the navigation pane, select **Object** > **Secrets**.
 1. On the toolbar, select **Generate/Import**.
 1. On the **Create a secret** page, set the following fields:
 
@@ -105,7 +107,7 @@ To register a Microsoft Entra application to enable Supply Chain Management and 
     - **Redirect URI** – Leave this field blank.
 
 1. Select **Register** to register the application.
-1. The new app registration is opened. On the navigation pane, select **Manage** \> **Certificates & secrets**.
+1. The new app registration is opened. On the navigation pane, select **Manage** > **Certificates & secrets**.
 1. On the **Client secrets** tab, select **New client secret**.
 1. In the **Add a client secret** dialog box, select an expiration date that meets your needs, and then select **Add**.
 1. The **Certificates & secrets** page now shows details about the new client secret. These details are shown only once and will be hidden when the page is reloaded. Therefore, you must copy them now. Copy the **Value** value, paste it into your temporary text file, and label it.
@@ -119,7 +121,7 @@ After the application is registered, create an access policy to enable it to acc
 1. Open the key vault you created in [Create a key vault to hold the client secret for Inventory Visibility](#key-vault).
 1. On the navigation pane, select **Access policies**.
 1. On the toolbar, select **Create** to open the **Create an access policy** page.
-1. On the **Permissions** tab, under **Secret permissions** \> **Secret Management Operations**, Select the **Get** checkbox. A template isn't required.
+1. On the **Permissions** tab, under **Secret permissions** > **Secret Management Operations**, Select the **Get** checkbox. A template isn't required.
 1. Select **Next**.
 1. On the **Principal** tab, select the application you just registered in this section.
 1. Select **Next**.
@@ -133,7 +135,7 @@ To set up Supply Chain Management to access the new key vault through the new ap
 
 1. Sign in to Supply Chain Management.
 1. Use the company picker to select the same company (legal entity ID) as your Dynamics 365 Commerce channel.
-1. Go to **System administration** \> **Setup** \> **Key Vault parameters**.
+1. Go to **System administration** > **Setup** > **Key Vault parameters**.
 1. On the Action Pane, select **New** to add a record. Set the following fields for it:
 
     - **Name** – Enter a name for the Key Vault record.
@@ -170,7 +172,7 @@ For more information about the settings that are mentioned in this procedure, se
 To set up the integration between Inventory Visibility and Commerce, follow these steps:
 
 1. Sign in to Supply Chain Management.
-1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**.
+1. Go to **Retail and Commerce** > **Headquarters setup** > **Parameters** > **Commerce shared parameters**.
 1. On the **Inventory** tab, set the following fields:
 
     - **Microsoft Entra tenant ID** – Enter the **Directory (tenant) ID** value that you used when you installed the Inventory Visibility add-in (as mentioned in the [Prerequisites](#prerequisites) section).
@@ -184,6 +186,6 @@ To set up the integration between Inventory Visibility and Commerce, follow thes
 
 To run the global configuration job, follow these steps:
 
-1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
+1. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
 1. In the list pane, select the record that's named *1110 Global configuration*.
 1. On the Action Pane, select **Run now**.

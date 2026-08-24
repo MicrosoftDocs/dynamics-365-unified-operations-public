@@ -30,7 +30,7 @@ To use the features described in this article, your system must meet the followi
 
 To set up the connection to your external CLM system, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **CLM integration** \> **Contract management parameters**.
+1. Go to **Procurement and sourcing** > **Setup** > **CLM integration** > **Contract management parameters**.
 1. On the **Connection** tab, on the **General** FastTab, set the following fields:
 
     - **Connection name** – Enter a name to identify the CLM system.
@@ -45,7 +45,7 @@ External navigation links provide the capability to redirect users to an externa
 
 To configure external navigation links, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **CLM integration** \> **Contract management parameters**.
+1. Go to **Procurement and sourcing** > **Setup** > **CLM integration** > **Contract management parameters**.
 1. On the **External navigation links** tab, on the toolbar, select **New**.
 1. On the **New record** page, on the **General** FastTab, set the following fields:
 
@@ -78,7 +78,7 @@ To configure external navigation links, follow these steps:
 
 To review the current status of the connection between Supply Chain Management and the CLM system, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **CLM integration** \> **Contract management parameters**.
+1. Go to **Procurement and sourcing** > **Setup** > **CLM integration** > **Contract management parameters**.
 1. On the **Connection** tab, select the **Connection status** FastTab. Here, the connection status is indicated through one of the following values:
 
     - *Not started* – The system hasn't yet tried to connect.
@@ -93,4 +93,4 @@ The connection status is based on information that your CLM system submits throu
 
 *Contract types* represent the types of external contracts that are either integrated with or accessible from Supply Chain Management. (Examples of external contracts include purchase contracts and non-disclosure contracts.) Contract types are used to help describe each contract that is listed on the [**All contracts** page](../clm-use.md). In most cases, the values are submitted and maintained exclusively by your CLM provider.
 
-To view the names and descriptions of the various contract types that are integrated with your CLM system, go to **Procurement and Sourcing** \> **Setup** \> **CLM integration** \> **Contract types**. Although admins can add, edit, and remove values on the **Contract types** page, you typically should do so only at the direction of your CLM provider or Microsoft Support.
+To view the names and descriptions of the various contract types that are integrated with your CLM system, go to **Procurement and Sourcing** > **Setup** > **CLM integration** > **Contract types**. Although admins can add, edit, and remove values on the **Contract types** page, you typically should do so only at the direction of your CLM provider or Microsoft Support.

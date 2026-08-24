@@ -23,7 +23,7 @@ You can also set up a reason code to help explain why an item was returned. For 
 
 To set up a disposition code, follow these steps:
 
-1. Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Disposition codes**.
+1. Go to **Sales and marketing** > **Setup** > **Sales orders** > **Returns** > **Disposition codes**.
 1. Select **New** to create a new disposition code.
 1. Enter a unique, descriptive name, select an action, and enter a description for the disposition code.
 1. If you want to associate any customer charges with this disposition code, select the **Charges** button to open the **Set up charges** form.

@@ -42,7 +42,7 @@ To customize supplier invitation and notification emails, follow these steps.
 1. Do one of the following steps:
     - If a list of apps opens, select the **Power Platform Environment Settings** app.
     - If the environment opens directly to an app, select the app name on the app header bar at the top to open the list of published apps, and then select **Power Platform Environment Settings**.
-1. On the navigation pane, go to **Templates** \> **Email Templates**.
+1. On the navigation pane, go to **Templates** > **Email Templates**.
 1. Supplier Engagement uses the following templates. Open the template that you want to customize.
     - *Supplier Engagement contact portal access*
     - *Supplier Engagement invitation*
@@ -62,7 +62,7 @@ Cloud flows, which are part of Microsoft Power Automate, automate business proce
 To enable a mailbox for cloud flow notifications, follow these steps.
 
 1. Open the **Power Platform Environment Settings** app in the Power Platform admin center as described previously.
-1. On the navigation pane, go to **Email Configuration** \> **Mailboxes**.
+1. On the navigation pane, go to **Email Configuration** > **Mailboxes**.
 1. Select the mailbox to activate.
 1. On the command bar, select **Activate**. In the **Confirm Mailbox Activation** dialog, select **Activate**.
 1. On the command bar, select **Approve Email**. In the **Approve Primary Email** dialog, select **OK**.
@@ -85,13 +85,13 @@ Although the cloud flows are already present in the system after installation, t
 To create the required connection references and activate the cloud flows, follow these steps:
 
 1. Sign in to the [Power Apps maker portal](https://make.powerapps.com/) and select your environment.
-1. On the navigation pane, select **More** \> **Connections**.
+1. On the navigation pane, select **More** > **Connections**.
 1. On the command bar, select **New connection**.
 1. A list of services opens. Add connections for the **Microsoft Dataverse** service by using the **+** in the **Actions** column.
 1. Add a second connection for the **Microsoft Teams** service.
 1. On the navigation pane, select **Solutions**.
 1. Find and open the solution that has a **Display name** of *Default solution*.
-1. On the navigation pane, go to **Objects** \> **Connection References**.
+1. On the navigation pane, go to **Objects** > **Connection References**.
 1. Use your browser's on-page search function to find connection references that include the text *SupplierEngagement* (in other words, use Ctrl + F to do an on-page search, don't use the filter provided by the site). There should be three of them:
     - *Microsoft Dataverse MicrosoftSupplierEngagement-77aa1*
     - *Microsoft Dataverse msdyn_SupplierEngagementBase-abf2e*
@@ -103,7 +103,7 @@ To create the required connection references and activate the cloud flows, follo
 1. On the navigation pane, select **Back to solutions**.
 1. On the **Solutions** page, open the **Managed** tab.
 1. Find and open the solution that has a **Display name** of *Supplier Engagement Core*.
-1. On the navigation pane, go to **Objects** \> **Cloud flows**.
+1. On the navigation pane, go to **Objects** > **Cloud flows**.
 1. Turn on each cloud flow that shows a **Status** of *Off*. To turn on a flow, select it and then select **Turn on** on the command bar.
 1. Repeat the previous steps to turn on all the cloud flows in the *Supplier Engagement Portal* solution.
 
@@ -121,7 +121,7 @@ Set up rules to detect duplicate global vendor records by making sure that none 
 To enable the duplicate detection rules in the Supplier Engagement solution, follow these steps:
 
 1. Open the **Power Platform Environment Settings** app in the Power Platform admin center as described previously.
-1. On the navigation pane, go to **Data Management** \> **Duplicate Detection Rules**.
+1. On the navigation pane, go to **Data Management** > **Duplicate Detection Rules**.
 1. Select the check box for each of the following rules, and then select **Publish** on the command bar:
     - *Global vendor with same primary phone number*
     - *Global vendor with same email address*

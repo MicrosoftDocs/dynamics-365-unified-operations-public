@@ -13,6 +13,7 @@ ms.custom:
 
 # Traceability app quick start (preview)
 
+[!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
@@ -25,7 +26,7 @@ Usually, the installation process automatically installs demo data when you firs
 To check whether your system has demo data, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **Activity**.
+1. On the left navigation pane, select **Settings** > **Activity**.
 1. Verify that the configuration settings shown in the following table appear on the **Activity** page.
 
     | Company | Activity Code | Activity Type | Source Activity Code | Source Activity Type | Track or not |
@@ -40,7 +41,7 @@ To check whether your system has demo data, follow these steps:
 If you want to explore Traceability by using demo data but don't have the data, follow these steps to import it.
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Home** \> **Get started**.
+1. On the left navigation pane, select **Home** > **Get started**.
 1. In the **Manage environment data** section, on the **Import demo data** tile, select **Import demo data**.
 1. Wait until the import process is complete. The process might take several minutes.
 
@@ -54,7 +55,7 @@ When you're done exploring the demo data, you can remove it from your system, al
 To delete all data from the Traceability Add-in, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Home** \> **Get started**.
+1. On the left navigation pane, select **Home** > **Get started**.
 1. In the **Manage environment data** section, on the **Delete all data** tile, select **Delete all data**.
 1. Wait until the import process is complete. This process might take several minutes.
 
@@ -69,7 +70,7 @@ The demo data describes the components of a manufactured bicycle. The following 
 This section shows how to explore the capabilities of the Traceability app by using the demo data. It describes several common scenarios.
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Trace** \> **Genealogy trace**.
+1. On the left navigation pane, select **Trace** > **Genealogy trace**.
 1. Make a *backwards search*, which lets you enter a unique identifier of a finished good to retrieve its genealogy, activity, and data collection.
 
     Use the search field to look for a specific serial number of a finished good. For example, use the serial number *bike-s0001* or *bike-s0002* to find the genealogy tree of a bike from the demo data.

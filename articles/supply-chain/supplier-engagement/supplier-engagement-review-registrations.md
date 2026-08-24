@@ -30,7 +30,7 @@ Internal users such as global vendor managers and procurement professionals can 
 To open the list of submitted requests, follow these steps:
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Menu** area.
-1. On the navigation pane, select **Portal registrations** \> **Registration requests**.
+1. On the navigation pane, select **Portal registrations** > **Registration requests**.
 1. Use the search field, column filters, sorting options, view selector, and other tools to find the request that you want to review. You might often want to use the view selector or filter by **Status Reason** to focus on requests that are in one of the following states:
     - *New* – Recently submitted requests that are waiting for action
     - *In review* – Requests that are currently being assessed

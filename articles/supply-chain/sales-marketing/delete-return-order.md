@@ -17,7 +17,7 @@ ms.reviewer: kamaybac
 
 Use the **Delete return order** form to delete multiple return orders.
 
-1. Go to **Sales and marketing** \> **Periodic** \> **Clean up** \> **Delete return orders**.
+1. Go to **Sales and marketing** > **Periodic** > **Clean up** > **Delete return orders**.
 
 1. Select **Select** to open the **Sales update** form.
 

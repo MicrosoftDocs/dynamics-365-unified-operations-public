@@ -17,7 +17,7 @@ ms.custom:
 
 This procedure shows you how to manually update the on-hand inventory by using an Inventory movement journal. (You can also update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company *USMF* where all the prerequisites like journal name, item setup, posting profiles, and accounts are available. The guide suggests specific values for the item and dimensions that are used. If you choose a different item, you might need to enter values for different dimensions.
 
-1. Go to **Inventory management** \> **Journal entries** \> **Items** \> **Movement**.
+1. Go to **Inventory management** > **Journal entries** > **Items** > **Movement**.
 1. Select **New**.
 1. In the **Name** field, select *IMov*. Use different journal name templates for different business purposes.  
 1. In the list, select the link in the selected row.

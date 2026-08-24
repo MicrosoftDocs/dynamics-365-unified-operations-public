@@ -12,6 +12,8 @@ ms.search.form:
 
 # Mobile device container packing policies
 
+[!include [banner](../includes/banner.md)]
+
 Mobile device container packing policies let you control the packing process that's supported by the Warehouse Management mobile app.
 
 For more information about how packing containers work with the Warehouse Management mobile app, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). For an example that shows how to set up and use this functionality, see [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).

@@ -21,7 +21,7 @@ This article demonstrates how to create a direct delivery for a sales order. You
 
 ## Set an individual order for direct delivery
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
 2. Select **New**.
 3. Enter or select a value in the **Customer account** field, then select **OK**
 4. Enter or select values in the **Item number** and **Site** fields, then select **Save**.
@@ -60,7 +60,7 @@ This article demonstrates how to create a direct delivery for a sales order. You
 
 ## Create direct deliveries from the workbench
 
-1. Go to **Navigation** \> **Modules** \> **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. Go to **Navigation** > **Modules** > **Accounts receivable** > **Orders** > **All sales orders**.
 2. Select **New**.
 3. Enter or select a value in the **Customer account** field, then select **OK**.
 4. Enter or select a value in the **Item number** and **Site** fields.

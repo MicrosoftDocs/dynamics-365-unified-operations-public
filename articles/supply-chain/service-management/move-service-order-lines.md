@@ -14,7 +14,7 @@ ms.search.form: SMAServiceOrderTable
 
 [!include [banner](../includes/banner.md)]
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**.
+1. Go to **Service management** > **Service orders** > **Service orders**.
 
 2. Open the service order that contains the lines that you want to move to another service order.
 

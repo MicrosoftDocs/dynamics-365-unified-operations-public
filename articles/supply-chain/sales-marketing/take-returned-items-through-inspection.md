@@ -14,7 +14,7 @@ ms.search.form: InventQuarantineOrder
 
 [!include [banner](../includes/banner.md)]
 
-1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.
+1. Go to **Inventory management** > **Periodic** > **Quality management** > **Quarantine orders**.
 
 1. Locate the order line that corresponds to the returned item that you are inspecting.
 
@@ -24,7 +24,7 @@ ms.search.form: InventQuarantineOrder
 1. After examining the item, make a selection in the **Disposition code** field to indicate what should be done with the item and how to handle the related financial transaction. Examples include returning the item to stock and refunding the customer, scrapping the item and sending a replacement to the customer, or returning the item to the customer without credit.
 
     > [!NOTE]
-    > If multiple returned items in a single item number batch cannot be assigned the same disposition code, you must split the quarantine order (**Functions** \> **Split**) to assign a different disposition code to each sub-batch.
+    > If multiple returned items in a single item number batch cannot be assigned the same disposition code, you must split the quarantine order (**Functions** > **Split**) to assign a different disposition code to each sub-batch.
 
 1. When you are finished with the inspection, select **Report as finished** to release the returned items and create an item arrival journal entry. The person or department that receives the items then processes the journal for the items to be returned to inventory.
 

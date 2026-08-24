@@ -23,7 +23,7 @@ First, you set up the required asset types. Next, you create the asset models th
 
 ## Create an asset type
 
-1. Select **Asset management** \> **Setup** \> **Asset types** \> **Asset types**.
+1. Select **Asset management** > **Setup** > **Asset types** > **Asset types**.
 2. Select **New** to create an asset type.
 3. In the **Asset type** field, enter an asset type ID.
 4. In the **Name** field, enter a name.
@@ -44,18 +44,18 @@ First, you set up the required asset types. Next, you create the asset models th
 11. You can also select the condition assessment templates that should be related to the asset type. On the **Condition assessments** FastTab, make your selections by using the methods that are described for maintenance job types in step 8. For more information about condition assessment templates and registrations, see [Condition assessment](../setup-for-objects/condition-assessment.md).
 12. The **Asset model** FastTab shows all the combinations of asset manufacturers and models that are set up on the selected asset type. To see the combinations divided according to manufacturer, select **Asset model** to open the **Asset model** page.
 
-    On the **Asset model** page, you can add asset model–asset type relations. Additionally, on the **Asset types** page, you can add asset manufacturer–asset model relations directly to an asset type. Finally, on the **Asset model** page (**Asset management** \> **Setup** \> **Assets** \> **Asset model**), you can create new asset manufacturer–asset model–asset type relations. Therefore, there are three ways to set up and edit asset manufacturer–asset model–asset type relations. All the available combinations are shown from different perspectives, and you can select your preferred point of entry when you work with the setup.
+    On the **Asset model** page, you can add asset model–asset type relations. Additionally, on the **Asset types** page, you can add asset manufacturer–asset model relations directly to an asset type. Finally, on the **Asset model** page (**Asset management** > **Setup** > **Assets** > **Asset model**), you can create new asset manufacturer–asset model–asset type relations. Therefore, there are three ways to set up and edit asset manufacturer–asset model–asset type relations. All the available combinations are shown from different perspectives, and you can select your preferred point of entry when you work with the setup.
 
 > [!NOTE]
 >
 > - If you select counters on an asset type, the selections are automatically updated on the **Counters** page (**Asset management** > **Setup** > **Assets** > **Asset types** > **Counters**).
 > - The fields in the **Details** section on the **General** FastTab show the number of maintenance job types, counters, attributes, and so on, that are set up on the selected asset type.
 
-Typically, work orders that are manually created are related to corrective maintenance, whereas work orders that are automatically created are related to preventive maintenance. When you manually create work orders, only the maintenance job types that are selected on the **maintenance job types** FastTab of the **Asset types** page can be used. However, automatically created work orders can use all the maintenance job types you create on the **Maintenance job types** page (**Asset management** \> **Setup** \> **Jobs** \> **Maintenance job types**).
+Typically, work orders that are manually created are related to corrective maintenance, whereas work orders that are automatically created are related to preventive maintenance. When you manually create work orders, only the maintenance job types that are selected on the **maintenance job types** FastTab of the **Asset types** page can be used. However, automatically created work orders can use all the maintenance job types you create on the **Maintenance job types** page (**Asset management** > **Setup** > **Jobs** > **Maintenance job types**).
 
 ## Create asset type setup lines
 
-1. Select **Asset management** \> **Setup** \> **Assets** \> **Asset types** \> **Asset type setup**. Alternatively, select **Asset management** \> **Setup** \> **Assets** \> **Asset types** \> **Asset types**, select an asset type, and then select **Asset type setup**.
+1. Select **Asset management** > **Setup** > **Assets** > **Asset types** > **Asset type setup**. Alternatively, select **Asset management** > **Setup** > **Assets** > **Asset types** > **Asset types**, select an asset type, and then select **Asset type setup**.
 2. The first time that you use the **Asset type setup** page, you might find the **Create combinations** button useful. You can use this button to quickly create all combinations of an asset model on an asset type. Select **Create combinations**, select the asset type to create combinations for, and then select **OK**.
 
     > [!NOTE]
@@ -75,7 +75,7 @@ Typically, work orders that are manually created are related to corrective maint
 
 ## Spare parts on the asset type setup
 
-As was described in the "Create asset type setup lines" section, spare parts are set up on asset models on the **Asset type setup** page. Therefore, when you open the **Asset type setup** page, you see only the spare parts that are related to the selected combination of an asset type, asset manufacturer, and asset model. To see a list of all spare part records, open the **Spare parts** page (**Asset management** \> **Inquiries** \> **Spare parts**).
+As was described in the "Create asset type setup lines" section, spare parts are set up on asset models on the **Asset type setup** page. Therefore, when you open the **Asset type setup** page, you see only the spare parts that are related to the selected combination of an asset type, asset manufacturer, and asset model. To see a list of all spare part records, open the **Spare parts** page (**Asset management** > **Inquiries** > **Spare parts**).
 
 On the **Spare parts** page, you can also create new spare parts for existing combinations of an asset type, asset manufacturer, and asset model. You can decide whether you prefer to create spare part records on the **Asset type setup** page or the **Spare parts** page. The **Asset type setup** page provides an overview of data on the selected combination of an asset type, asset manufacturer, and asset model, whereas the **Spare parts** page provides a complete overview of all asset type setup lines. If the **Spare parts** page contains many records, the **Asset type setup** page might give you a better overview.
 

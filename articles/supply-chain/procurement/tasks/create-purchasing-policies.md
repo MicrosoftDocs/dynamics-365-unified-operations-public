@@ -19,11 +19,11 @@ This article shows you how to create purchasing policies to align with your busi
 
 ## Set up policy parameters
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Policies** \> **Purchasing policies**.
+1. Go to **Procurement and sourcing** > **Setup** > **Policies** > **Purchasing policies**.
 2. On the Action Pane, select **Parameters**.
     - Policy precedence rules apply to different levels in your organization. The organizational units that are shown depend on your organizational hierarchy, and on which levels in the hierarchy have been assigned the purpose of Procurement internal control. For example, your organization might have legal entities, cost centers, regions, and departments, but it might be that only some of these have a hierarchy purpose of Procurement internal control. As a default, the organization of type Company is available.  
 3. Select the **Policy rule type parameters** tab.
-4. In the tree, go to **Purchasing policy** \> **Purchase requisition control rule**.
+4. In the tree, go to **Purchasing policy** > **Purchase requisition control rule**.
     - You define the order of precedence for policy resolution at the policy level. However, for some policy types, you can override the order of precedence for individual policy rule types. For example, you might define the order of precedence for purchasing policies to be: cost center, department, company. For the catalog policy rule, you might want the order of precedence to be: department, cost center, company. You can change the order of precedence for the Catalog policy rule. When a worker creates a requisition, the catalog that is displayed is determined by the policies that are associated with the worker's department, then their cost center, and then their company.  
     - If there's more than one organizational level listed, you can use the Up/Down arrows to set the order of precedence for the Purchase requisition control rule.  
 5. Close the page.

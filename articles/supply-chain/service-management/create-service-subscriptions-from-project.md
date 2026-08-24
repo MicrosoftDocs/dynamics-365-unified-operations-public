@@ -17,9 +17,9 @@ ms.custom:
 
 You can create a service subscription from a project in **Project management and accounting**.
 
-1. Go to **Project management and accounting** \> **Projects** \> **All projects**. Open the project that you want to create a subscription for.
+1. Go to **Project management and accounting** > **Projects** > **All projects**. Open the project that you want to create a subscription for.
 
-2. On the **Projects** page, on the Action Pane, on the **Manage** tab, select **Service** \> **Service subscription**.
+2. On the **Projects** page, on the Action Pane, on the **Manage** tab, select **Service** > **Service subscription**.
 
 3. On the **Subscription** page, in the **Service subscription** field, enter a unique identification number. The project number is entered automatically into the subscription for the selected project.
 

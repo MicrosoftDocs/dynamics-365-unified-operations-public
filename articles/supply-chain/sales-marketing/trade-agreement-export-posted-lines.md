@@ -12,6 +12,8 @@ ms.custom:
 ---
 # Export posted trade agreement lines
 
+[!include [banner](../includes/banner.md)]
+
 This article provides step-by-step instructions on how to export posted trade agreement lines. Standard data entities don't support the direct export of posted trade agreement lines. This article describes how to convert posted trade agreement lines to unposted lines, which makes them exportable.
 
 ## Convert posted trade agreement lines
@@ -20,9 +22,9 @@ To convert posted trade agreement lines into unposted lines, follow these steps:
 
 1. Open the list of active trade agreement lines for your vendor or customer.
 
-   - For *purchase trade agreements*, go to **Accounts payable** \> **Vendors** \> **All vendors**. Select the vendor you want to work with. On the Action Pane, open the **Procurement** tab and, from the **Agreements** group, select **Trade agreements**.
+   - For *purchase trade agreements*, go to **Accounts payable** > **Vendors** > **All vendors**. Select the vendor you want to work with. On the Action Pane, open the **Procurement** tab and, from the **Agreements** group, select **Trade agreements**.
 
-   - For *sales trade agreements*, go to **Accounts receivable** \> **Customers** \> **All customers**. Select the customers you want to work with. On the Action Pane, open the **Sell** tab and, from the **Trade agreements** group, select **Agreements**.
+   - For *sales trade agreements*, go to **Accounts receivable** > **Customers** > **All customers**. Select the customers you want to work with. On the Action Pane, open the **Sell** tab and, from the **Trade agreements** group, select **Agreements**.
 
 1. Select the lines you want to convert for eventual export.
 1. On the Action Pane, select **Edit selected lines**.
@@ -33,7 +35,7 @@ To convert posted trade agreement lines into unposted lines, follow these steps:
 
 After you've converted the relevant lines to open trade agreements, you'll be able to export them using the standard data management features of Supply Chain Management. You can export data from this entity to any supported data format (such as comma-separated values (CSV) or Microsoft Excel).
 
-1. Go to **System administration** \> **Workspaces** \> **Data management**.
+1. Go to **System administration** > **Workspaces** > **Data management**.
 1. In the **Import / Export** section, select the **Export** tile.
 1. On the **Export** page, enter a **Group name** for the job.
 1. On the **Selected entities** FastTab toolbar, select **Add entity**.

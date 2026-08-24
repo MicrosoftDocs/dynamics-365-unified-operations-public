@@ -13,7 +13,7 @@ ms.custom:
 
 # Costing parameter values setup
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 When you set up the **Landed cost** module, you can define several sets of common values and related settings for each value. You can then use these values when you select specific types of costing parameter values in other parts of the app. This article explains how to set up these sets of values.
 
@@ -24,7 +24,7 @@ Cost type codes determine the type of cost that you incur when goods arrive at t
 > [!NOTE]
 > If you share the cost type table across legal entities, you must also share the chart of accounts across legal entities. Otherwise, the posting transactions don't work correctly.
 
-To set up your cost type codes, go to **Landed cost** \> **Costing setup** \> **Cost type codes**. Use the buttons on the Action Pane to create new cost type codes, edit existing codes, or delete a selected cost type.
+To set up your cost type codes, go to **Landed cost** > **Costing setup** > **Cost type codes**. Use the buttons on the Action Pane to create new cost type codes, edit existing codes, or delete a selected cost type.
 
 The following table describes the fields that are available for each cost type code.
 
@@ -52,7 +52,7 @@ The following table describes the fields that are available for each cost type c
 
 Vendor cost type groups help determine how *auto cost* charges are found and applied to a voyage. Vendors that have similar import costs are linked together. For example, all vendors from emerging markets pay the same duty percentage for the same type of product that they purchase from an established market.
 
-You can maintain vendor cost type groups by going to **Landed cost** \> **Costing setup** \> **Vendor cost type groups**. The **Vendor cost type groups** page provides a grid that lists all existing vendor cost type groups. You can use the buttons on the Action Pane to add, remove, and edit rows in the grid.
+You can maintain vendor cost type groups by going to **Landed cost** > **Costing setup** > **Vendor cost type groups**. The **Vendor cost type groups** page provides a grid that lists all existing vendor cost type groups. You can use the buttons on the Action Pane to add, remove, and edit rows in the grid.
 
 The following table describes the fields that are available on each row in the grid.
 
@@ -65,7 +65,7 @@ The following table describes the fields that are available on each row in the g
 
 Item cost type groups help determine how *auto cost* charges are found and applied to a voyage. Similar items are linked together. For example, all items that have a duty rate of 5 percent might belong to a specific cost type group.
 
-You can maintain item cost type groups by going to **Landed cost** \> **Costing setup** \> **Item cost type groups**. The **Item cost type groups** page provides a grid that lists all existing item cost type groups. You can use the buttons on the Action Pane to add, remove, and edit rows in the grid.
+You can maintain item cost type groups by going to **Landed cost** > **Costing setup** > **Item cost type groups**. The **Item cost type groups** page provides a grid that lists all existing item cost type groups. You can use the buttons on the Action Pane to add, remove, and edit rows in the grid.
 
 The following table describes the fields that are available on each row in the grid.
 
@@ -81,7 +81,7 @@ The following table describes the fields that are available on each row in the g
 
 Transfer order cost type groups help determine how *auto cost* charges are found. Similar items are linked together. For example, all items that have a duty rate of 7 percent might belong to a specific cost type group.
 
-You can maintain transfer order cost type groups by going to **Landed cost** \> **Costing setup** \> **Transfer order cost type groups**. The **Transfer order cost type groups** page provides a grid that lists all existing transfer order cost type groups. You can use the buttons on the Action Pane to add, remove, and edit rows in the grid.
+You can maintain transfer order cost type groups by going to **Landed cost** > **Costing setup** > **Transfer order cost type groups**. The **Transfer order cost type groups** page provides a grid that lists all existing transfer order cost type groups. You can use the buttons on the Action Pane to add, remove, and edit rows in the grid.
 
 The following table describes the settings that are available on each row in the grid.
 
@@ -97,7 +97,7 @@ The following table describes the settings that are available on each row in the
 
 Use cost templates to set default values for settings that users who get the cost estimate might not know. Cost templates can help reduce complexity in the estimation process by minimizing the selections that users must make to get an accurate estimate.
 
-To work with cost templates, go to **Landed cost** \> **Costing setup** \> **Cost templates**. On the **Cost templates** page, the list pane on the left shows all current cost templates. Use the buttons on the Action Pane to add, remove, and edit templates.
+To work with cost templates, go to **Landed cost** > **Costing setup** > **Cost templates**. On the **Cost templates** page, the list pane on the left shows all current cost templates. Use the buttons on the Action Pane to add, remove, and edit templates.
 
 The following table describes the settings that are available for each template.
 
@@ -117,7 +117,7 @@ Use volumetric divisors to calculate the volumetric weight. Each shipping or fre
 
 For example, a package that you send by air has a volume of 3 cubic meters (m³). The company charges by volumetric weight and applies a volumetric divisor of 6. This divisor divides the volume to determine the volumetric weight. Therefore, the volumetric weight for this example is 3 ÷ 6 = 0.5 kilograms (kg).
 
-To set up volumetric divisors, go to **Landed cost** \> **Costing setup** \> **Volumetric divisors**. The **Volumetric divisors** page provides a grid that lists all existing volumetric divisors. You can use the buttons on the Action Pane to add, remove, and edit rows in the grid.
+To set up volumetric divisors, go to **Landed cost** > **Costing setup** > **Volumetric divisors**. The **Volumetric divisors** page provides a grid that lists all existing volumetric divisors. You can use the buttons on the Action Pane to add, remove, and edit rows in the grid.
 
 The following table describes the fields that are available on each row in the grid.
 

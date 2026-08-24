@@ -21,7 +21,7 @@ The dispatch functionality in Asset Management schedules work orders and work or
 
 To dispatch a work order, follow these steps:
 
-1. Go to **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
+1. Go to **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 1. In the grid, select the work order that you want to dispatch.
 1. On the Action Pane, on the **General** tab, select **Dispatch**.
 1. In the **Schedule work order** dialog box, set the following fields:
@@ -35,7 +35,7 @@ To dispatch a work order, follow these steps:
     - **Verbose** – Set this option to *Yes* if you want the system to show detailed information about the scheduling process. In this case, the Action center shows detailed information about the calculated scores on the work order.
     - **Update forecast** – Set this option to *Yes* to update the forecast so that it reflects any scheduling change that you made in this dialog box.
 
-1. Select **OK**. The work order lifecycle state is automatically updated to the **Scheduled state** value that is specified on the **Lifecycle models** page (**Asset management** \> **Setup** \> **Work orders** \> **Lifecycle models**).
+1. Select **OK**. The work order lifecycle state is automatically updated to the **Scheduled state** value that is specified on the **Lifecycle models** page (**Asset management** > **Setup** > **Work orders** > **Lifecycle models**).
 
 > [!NOTE]
 > To delete the schedule on a work order, select it, and then, on the Action Pane, on the **General** tab, select **Delete schedule**. If you delete the schedule on a work order, remember to manually update the work order lifecycle state.
