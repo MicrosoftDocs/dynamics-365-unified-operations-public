@@ -43,8 +43,8 @@ If you use the master planning features of Supply Chain Management, impact analy
 
 When pegging data is available, impact analysis can trace dependency chains to identify indirectly affected orders, such as those listed on the following pages:
 
-- **Purchase order** \> **Production order** \> **Production order** \> **Sales order**
-- **Purchase order** \> **Transfer order** \> **Sales order**
+- **Purchase order** > **Production order** > **Production order** > **Sales order**
+- **Purchase order** > **Transfer order** > **Sales order**
 
 Pegging enables broader, multilevel impact tracing. When you use the master planning features of Supply Chain Management, the available planning data is richer, which enables deeper and broader impact visibility.
 

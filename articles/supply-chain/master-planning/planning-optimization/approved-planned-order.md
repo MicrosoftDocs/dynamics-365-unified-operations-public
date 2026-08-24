@@ -21,12 +21,12 @@ This article explains how to view, manage, and approve planned orders.
 
 You can view and manage planned orders on any planned orders list page. Go to one of the following places, depending on the type of planned orders that you want to work with:
 
-- **Master planning** \> **Workspaces** \> **Master planning**
-- **Master planning** \> **Master planning** \> **Planned orders**
-- **Production control** \> **Production orders** \> **Planned production orders**
-- **Procurement and sourcing** \> **Purchase orders** \> **Planned purchase orders**
-- **Inventory management** \> **Inbound orders** \> **Planned transfers**
-- **Inventory management** \> **Outbound orders** \> **Planned transfers**
+- **Master planning** > **Workspaces** > **Master planning**
+- **Master planning** > **Master planning** > **Planned orders**
+- **Production control** > **Production orders** > **Planned production orders**
+- **Procurement and sourcing** > **Purchase orders** > **Planned purchase orders**
+- **Inventory management** > **Inbound orders** > **Planned transfers**
+- **Inventory management** > **Outbound orders** > **Planned transfers**
 
 ## View and edit the status of planned orders
 

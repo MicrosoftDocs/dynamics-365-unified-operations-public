@@ -59,7 +59,7 @@ You can choose to keep supply for confirmed demand at the master plan level. Thi
 
 To set a master plan to keep supply for confirmed demand:
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. Select or create a master plan.
 1. On the **General** FastTab, set the **Keep supply for confirmed demand** option to one of the following values:
    - *Yes* – The system identifies confirmed sales lines and preserves the full supply chain linked to them during planning runs. Planned orders that are part of a confirmed supply chain aren't replanned.
@@ -71,7 +71,7 @@ You can choose to keep supply for confirmed demand when you run master planning 
 
 To keep supply for confirmed demand when running a master plan interactively:
 
-1. Go to **Master planning** \> **Master planning** \> **Run** \> **Master planning**.
+1. Go to **Master planning** > **Master planning** > **Run** > **Master planning**.
 1. In the **Master planning** dialog box, on the **Parameters** FastTab, set the **Keep supply for confirmed demand** option to *Yes* or *No*. The behavior is identical to that described in the previous section.
 
 ## Check master planning history to see whether supply was kept for confirmed demand
@@ -80,7 +80,7 @@ After a planning run completes, you can verify whether the **Keep supply for con
 
 To view the history of a master planning run and check whether supply was kept for confirmed demand:
 
-1. Go to **Master planning** \> **Master planning (Workspace)** \> **History**.
+1. Go to **Master planning** > **Master planning (Workspace)** > **History**.
 1. Select the planning run you want to inspect.
 1. On the **Request** FastTab, locate the **Keep supply for confirmed demand** field. The value shows whether confirmed requirements were preserved during that specific run.
 
@@ -98,7 +98,7 @@ To override this behavior, use the **Keep received supply outside positive days*
 
 To set the **Keep received supply outside positive days** parameter on a coverage group:
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**.
 1. Select or create a coverage group.
 1. On the **General** FastTab, set the **Keep received supply outside positive days** option to one of the following values:
    - *No* – Confirmed demand is pegged to on-hand inventory only when the demand falls within the positive days. This setting allows on-hand inventory that was previously backing a confirmed sales line to be reallocated to earlier orders if the supply arrives earlier than required. This is the default setting.

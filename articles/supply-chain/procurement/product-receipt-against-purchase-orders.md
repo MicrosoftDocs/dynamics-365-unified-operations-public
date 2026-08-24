@@ -49,7 +49,7 @@ You can access this page from the **Receipt** action group on the **Purchase ord
 
 To automatically post product receipts for multiple purchase orders, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving products** \> **Post Product receipt**.
+1. Go to **Procurement and sourcing** > **Purchase orders** > **Receiving products** > **Post Product receipt**.
 1. In the **Posting product receipt** dialog, on the **Settings** FastTab toolbar, select **Select**.
 1. In the **Purchase update** dialog, use the **Range** tab to specify selection criteria for finding the purchase orders you want to post.
 1. Select **OK** to return to the **Posting product receipt** dialog. The purchase orders that match the criteria you specified are displayed on the **Overview** FastTab.
@@ -66,7 +66,7 @@ After the system finishes processing product receipts for all lines in the purch
 
 To correct or cancel a product receipt, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving Products** \> **Product receipt**. The **Product receipt journal** page opens.
+1. Go to **Procurement and sourcing** > **Purchase orders** > **Receiving Products** > **Product receipt**. The **Product receipt journal** page opens.
 1. On the **Overview** tab, select the product receipt that you want to correct or cancel.
 1. On the **Overview** tab toolbar, select **Correct** to make corrections or **Cancel** to cancel the product receipt.
 

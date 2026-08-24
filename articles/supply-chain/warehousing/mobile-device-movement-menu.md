@@ -18,7 +18,7 @@ This article explains how to set up a mobile device menu item that lets workers 
 
 Follow these steps to create and configure a mobile device menu item for registering movements in the warehouse.
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 1. On the Action Pane, select **New**.
 1. On the header of the new record, set the following fields:
 
@@ -49,4 +49,4 @@ Follow these steps to create and configure a mobile device menu item for registe
         - *Automatically move full LP* – The system assumes that all warehouse movements are for entire license plates, regardless of the number items that a license plate contains. The worker is never prompted to scan the items. This option works well when, for example, all warehouse movements are for entire pallets.
 
 1. On the Action Pane, select **Save**.
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**, and add the new mobile device menu item to the appropriate new or existing menu.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu**, and add the new mobile device menu item to the appropriate new or existing menu.

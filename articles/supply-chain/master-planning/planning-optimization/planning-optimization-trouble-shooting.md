@@ -133,7 +133,7 @@ For example, you have a master plan named *PlanA*. It runs nightly as a batch jo
 
 To split a large job into several jobs, follow these steps:
 
-1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
+1. Go to **System administration** > **Inquiries** > **Batch jobs**.
 1. In the grid, find the recurring planning job that's timing out. Then select the value in the **Job ID** column to open the job details.
 1. On the Action Pane, select **Change status**.
 1. In the **Select new status** dialog box, select *Withhold*, and then select **OK**.
@@ -181,7 +181,7 @@ To implement this strategy, follow these steps:
 
 1. Open your existing master plan, and modify it so that it covers only a subset of the original items (for example, purchased items). You can make this modification by adding a filter as described in [Applying a plan filter](plan-filters.md#apply-a-plan-filter).
 1. Create another master plan to cover the remaining items. Again, set up a [plan filter](plan-filters.md#apply-a-plan-filter) to include only the items that you want to include in this plan (for example, manufactured items). This plan can be a copy of the original plan that you modify to filter for a different set of items.
-1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
+1. Go to **System administration** > **Inquiries** > **Batch jobs**.
 1. In the grid, find the recurring planning job that's timing out. Then select the value in the **Job ID** column to open the job details.
 1. On the Action Pane, select **Change status**.
 1. In the **Select new status** dialog box, select *Withhold*, and then select **OK**.
@@ -220,7 +220,7 @@ If you receive this message, try one or both of the approaches that are describe
 
 Follow these steps to review your setup for time fences and options that you don't need.
 
-1. Go to **Master Planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
+1. Go to **Master Planning** > **Setup** > **Coverage** > **Coverage groups**.
 1. Review the following settings for each coverage group on the **Coverage groups** page. Consider whether some or all of the values can be smaller but still fulfill your business needs for the different time fences.
 
     - **Coverage time fence (days)**
@@ -230,7 +230,7 @@ Follow these steps to review your setup for time fences and options that you don
     - **Action time fence**
     - **Calculated delays time fence**
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. On the **Master plans** page, check whether the time fences have been overwritten, and consider whether the values can be smaller but still fulfill your business needs for the different time fences. Review the following settings for each plan:
 
     - **Coverage**
@@ -315,7 +315,7 @@ Planning Optimization is a cloud-based service. Occasionally, transient service 
 
 ### Cause 2: Connection lost after a database refresh
 
-If you recently performed a database refresh on your environment, the Planning Optimization connection might be broken. The connection status on the **Planning Optimization parameters** page (**Master planning** \> **Setup** \> **Planning Optimization parameters**) might show *Not connected* even though the add-in appears as installed.
+If you recently performed a database refresh on your environment, the Planning Optimization connection might be broken. The connection status on the **Planning Optimization parameters** page (**Master planning** > **Setup** > **Planning Optimization parameters**) might show *Not connected* even though the add-in appears as installed.
 
 A database refresh is environment-specific, and it resets the Planning Optimization service binding. This is a known behavior.
 

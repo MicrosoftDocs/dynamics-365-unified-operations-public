@@ -26,7 +26,7 @@ Global vendor records hold the supplier information that your organization uses 
 To open a global vendor record, follow these steps:
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Menu** area.
-1. On the navigation pane, go to **General** \> **Global vendors**.
+1. On the navigation pane, go to **General** > **Global vendors**.
 1. On the **Global vendors** page, use the view selector at the upper left to choose which types of global vendors to show, such as **Active global vendors** or **All global vendors**. You can also use the search box and column headings to filter and sort the list.
 1. Select the link in the **Name** column for the global vendor that you want to open.
 

@@ -13,6 +13,8 @@ ms.custom:
 
 # User settings, color themes, and sound themes
 
+[!include [banner](../includes/banner.md)]
+
 This article explains how to use local user settings to personalize the way your Warehouse Management mobile app works, looks, and sounds.
 
 Workers can set their own preferences locally while working on a device by following the instructions in this article.

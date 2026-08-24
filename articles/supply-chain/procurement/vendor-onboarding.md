@@ -97,7 +97,7 @@ For more information about the vendor request configuration, see [Set up and mai
 | Vendor information         | This page contains the vendor name, which is automatically entered from the original prospective vendor registration request. It also contains the organization number, the vendor's telephone number, fax number, and email address, and the vendor's addresses for various purposes. |
 | Contact person information | This page contains the contact person's name, which is automatically entered from the original prospect vendor registration request. It also contains the contact person's telephone number and email address, and the contact person's addresses for various purposes. |
 | Business information       | This page contains tax registration numbers (for various countries or regions) and the numbers of employees. It also indicates whether the business is minority owned. |
-| Procurement categories     | This page contains the procurement categories that the vendor is requesting approval for. The user can select categories in the procurement category hierarchy. You can configure the number of levels that are shown in the hierarchy at **Procurement and sourcing parameters** \> **Vendor collaboration**, under **Procurement and sourcing** \> **Setup**. |
+| Procurement categories     | This page contains the procurement categories that the vendor is requesting approval for. The user can select categories in the procurement category hierarchy. You can configure the number of levels that are shown in the hierarchy at **Procurement and sourcing parameters** > **Vendor collaboration**, under **Procurement and sourcing** > **Setup**. |
 | Questionnaires             | The wizard might include a set of questionnaires for the vendor. Questionnaires that appear in the wizard are configured either on the vendor request or per procurement category. If questionnaires are configured per procurement category, the procurement categories that the vendor requests approval for determine the questionnaires that appear in the wizard. On the **Procurement categories** page, you can add a questionnaire under the relevant category and set the activity type to *Vendor onboarding*. |
 
 When the prospective vendor user completes the vendor registration wizard, a vendor request is created.
@@ -106,7 +106,7 @@ When the prospective vendor user completes the vendor registration wizard, a ven
 
 A vendor request can be created as a draft and manually submitted to a workflow. Alternatively, the vendor request can be automatically submitted to a workflow when the vendor registration wizard is completed. A request can be submitted manually if, for example, a procurement professional wants to assess whether the request should be routed through an approval process before it's submitted to the workflow.
 
-To configure the vendor request so that it's submitted automatically to a workflow when the vendor registration wizard is completed, select **Procurement and sourcing parameters** \> **Vendor collaboration** and then select **Auto submit prospective vendor registration to workflow**.
+To configure the vendor request so that it's submitted automatically to a workflow when the vendor registration wizard is completed, select **Procurement and sourcing parameters** > **Vendor collaboration** and then select **Auto submit prospective vendor registration to workflow**.
 
 ## Vendor requests
 

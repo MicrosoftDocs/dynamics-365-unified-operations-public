@@ -35,7 +35,7 @@ For more information about policies, see [Purchasing policies overview](../procu
 If there are multiple options for procurement categories, select the correct procurement category before you add the lines to the requisition.
 After lines have been added to a requisition, you can add more lines without using external catalogs. Alternatively, you can continue to use external catalogs to add lines.
 
-When the requisition is ready, use the **Workflow** \> **Submit** action to submit it for approval.
+When the requisition is ready, use the **Workflow** > **Submit** action to submit it for approval.
 
 ## Related information
 

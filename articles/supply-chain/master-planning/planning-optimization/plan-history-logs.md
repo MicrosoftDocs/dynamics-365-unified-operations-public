@@ -18,7 +18,7 @@ This article explains how to view the history of planning jobs in Microsoft Dyna
 
 Each time you run a new master planning calculation, the system adds a new history record.
 
-To view the history for a plan, open the plan by going to **Master planning** \> **Setup** \> **Plans** \> **Master plans** and selecting **History**. The history lists all the jobs for the selected plan. The list includes completed and active jobs.
+To view the history for a plan, open the plan by going to **Master planning** > **Setup** > **Plans** > **Master plans** and selecting **History**. The history lists all the jobs for the selected plan. The list includes completed and active jobs.
 
 In addition to seeing the start time and status of jobs, you can view the log for a specific job. The log includes additional information and warnings. Not all jobs have a log. To view the log for a job, select **Log**. Log entries are only stored for 60 days after the date the job finished, after that they are automatically deleted.
 

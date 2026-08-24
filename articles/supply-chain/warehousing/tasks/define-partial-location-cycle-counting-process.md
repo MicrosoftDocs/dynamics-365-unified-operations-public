@@ -18,7 +18,7 @@ When you use cycle count plans to create counting work, you can guide the actual
 
 ## Create a cycle counting work template
 
-1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Work templates**.
+1. Go to **Warehouse management** > **Setup** > **Work** > **Work templates**.
 1. In the **Work order type** field, select *Cycle counting*.
 1. Select **New**.
 1. In the **Sequence number** field, enter a number. The sort order is from the smallest number to the largest number. The value must be more than 0 (zero).  
@@ -42,7 +42,7 @@ When you use cycle count plans to create counting work, you can guide the actual
 
 ## Create a cycle counting plan
 
-1. Go to **Warehouse management** \> **Setup** \> **Cycle counting** \> **Cycle count plans**.
+1. Go to **Warehouse management** > **Setup** > **Cycle counting** > **Cycle count plans**.
 1. Select **New**.
 1. In the **Cycle counting plan ID** field, type a value.
 1. In the **Description** field, type a value.

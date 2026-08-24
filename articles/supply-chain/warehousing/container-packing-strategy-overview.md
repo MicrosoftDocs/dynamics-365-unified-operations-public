@@ -72,7 +72,7 @@ This scenario references values and records that are included in the standard de
 
 To inspect your container types, or to create new container types if they're required, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container types**.
+1. Go to **Warehouse management** > **Setup** > **Containers** > **Container types**.
 1. Make sure that each of the following container types is available in your demo data. Edit or create container types as required.
 
     - Container type 1:
@@ -109,7 +109,7 @@ To inspect your container types, or to create new container types if they're req
 
 To inspect your container groups, or to create new container groups if they're required, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**.
+1. Go to **Warehouse management** > **Setup** > **Containers** > **Container groups**.
 1. Make sure that the following container group is available in your demo data. If it isn't available, select **New** to create it.
 
     - **Container group ID:** *Boxes*
@@ -139,7 +139,7 @@ To inspect your container groups, or to create new container groups if they're r
 
 To create a new container build template, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container build template**.
+1. Go to **Warehouse management** > **Setup** > **Containers** > **Container build template**.
 1. Select **New** to create a container build template that has the following settings:
 
     - **Sequence number:** *1*

@@ -36,7 +36,7 @@ The following screenshot shows an example of a time series where two time fences
 
 To view, create, edit, or delete a time fence, follow these steps:
 
-1. On the navigation pane, select **Configuration** \> **Time fences**.
+1. On the navigation pane, select **Configuration** > **Time fences**.
 
     The **Active time fence rules** page shows a list of active time fences. For each time fence, you can review the name, conditions, role, and other settings.
 

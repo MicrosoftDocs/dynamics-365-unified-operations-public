@@ -13,6 +13,7 @@ ms.custom:
 
 # Integrate Traceability with Supply Chain Management (preview)
 
+[!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
@@ -34,7 +35,7 @@ To integrate Traceability with the purchase goods receipt, your system must meet
 You must configure Traceability to recognize the activity codes that Supply Chain Management submits. Follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **Activity**.
+1. On the left navigation pane, select **Settings** > **Activity**.
 1. The **Activity** page opens. Make sure the following activity codes are available. Learn more in [Configure Traceability](developer/traceability-configure.md).
 
     | Source activity code | Source activity type | Integration Scenario |
@@ -67,7 +68,7 @@ To integrate Traceability with the tracked components feature Supply Chain Manag
 You must configure Traceability to recognize the activity codes that Supply Chain Management submits. Follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **Activity**.
+1. On the left navigation pane, select **Settings** > **Activity**.
 1. The **Activity** page opens. Make sure the following activity codes are available. For more information about these settings, see [Configure Traceability](developer/traceability-configure.md).
 
     | Source activity code | Source activity type | Integration Scenario |
@@ -83,29 +84,29 @@ Set up your Supply Chain Management system to record batch and serial numbers fo
 
 1. Set up a number sequence code for *Product component match ID*.
 
-    1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Number sequences** tab.
+    1. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters** and open the **Number sequences** tab.
     1. Set up a number sequence code for *Product component match ID*.
 
 1. Enable tracked components for bills of materials.
 
-    1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Bills of materials** tab.
+    1. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters** and open the **Bills of materials** tab.
     1. Set **Enable tracked components** to *Yes*.
 
 1. Create tracked component policy.
 
-    1. Go to **Production control** \> **Setup** \> **Production** \> **Tracked components policy**.
+    1. Go to **Production control** > **Setup** > **Production** > **Tracked components policy**.
     1. Create a **Tracked components policy**.
     1. Set **Use tracked components** to *Yes*.
   
 1. Associate the tracked component policy to finished products and components.
 
-    1. Go to **Product information management** \> **Products** \> **Released products** .
+    1. Go to **Product information management** > **Products** > **Released products** .
     1. Open the product you want to set up.
     1. On the **Manage inventory** FastTab, set **Tracked components policy** to the name of the tracked components policy you created earlier.
 
 1. Add the *Tracked components* action to relevant areas of the production floor execution interface.
 
-    1. Go to **Production control** \> **Setup** \> **Manufacturing execution** \> **Configure production floor execution**.
+    1. Go to **Production control** > **Setup** > **Manufacturing execution** > **Configure production floor execution**.
     1. Select a relevant configuration and, from the Action Pane, select **Design tabs**. Add the *Tracked components* action to each relevant tab and toolbar. Repeat this step for each relevant configuration.
 
     If you're using *USMF* [demo data](../../fin-ops-core/dev-itpro/get-started/demo-data.md), open the **Default** configuration, select the *Active jobs* design tab, and add the *Tracked components* action to the **Primary toolbar**.
@@ -135,7 +136,7 @@ To integrate Traceability with sales goods issues, your system must meet the fol
 You must configure Traceability to recognize the activity codes that Supply Chain Management submits. Follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **Activity**.
+1. On the left navigation pane, select **Settings** > **Activity**.
 1. The **Activity** page opens. Make sure the following activity code is available. Learn more in [Configure Traceability](developer/traceability-configure.md).
 
     | Source activity code | Source activity type | Integration Scenario |

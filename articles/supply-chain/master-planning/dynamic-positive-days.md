@@ -34,7 +34,7 @@ Before you can use dynamic positive days, your system must meet the following re
 
 Follow these steps to set up your system to use dynamic positive days.
 
-1. Go to **Master planning** \> **Setup** \> **Master planning parameters**.
+1. Go to **Master planning** > **Setup** > **Master planning parameters**.
 1. On the **General** tab, set the **Use dynamic positive days** option to *Yes*.
 1. On the Action Pane, select **Save**.
 
@@ -45,7 +45,7 @@ Follow these steps to set up your system to use dynamic positive days.
 
 Follow these steps to assign the number of positive days to an item coverage group.
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**.
 1. Select an existing coverage group, or create a new one.
 1. On the **General** FastTab, set the **Positive days** field to the number of positive days that you want to use for the coverage group.
 

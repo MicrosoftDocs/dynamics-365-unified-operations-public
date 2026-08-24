@@ -12,6 +12,8 @@ ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended
 
 # Work with advanced export management for products, sales orders, and sales quotations
 
+[!include [banner](../includes/banner.md)]
+
 The advanced export management feature lets you apply export control rules to sales orders and sales quotations. Individual jurisdictions can be enabled or disabled for each legal entity (company). Therefore, each company can have different export control behaviors and rules.
 
 ## Set up jurisdictions, codes, restrictions, exceptions, and licenses

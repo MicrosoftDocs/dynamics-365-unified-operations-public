@@ -17,7 +17,7 @@ ms.custom:
 
 You can use time windows to optimize the scheduling of service order lines.
 
-1. Go to **Service management** \> **Setup** \> **Service agreements** \> **Time window**.
+1. Go to **Service management** > **Setup** > **Service agreements** > **Time window**.
 2. On the Action Pane, select **New** to create a new time window.
 3. In the **Time window** field, enter a name for the time window.
 4. In the **Description** field, enter a description for the time window.

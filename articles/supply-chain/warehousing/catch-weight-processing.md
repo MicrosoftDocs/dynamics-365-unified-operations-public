@@ -17,7 +17,7 @@ ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuil
 
 ## Prerequisites
 
-To use warehouse management to process catch weight products, turn on the functionality by using a license configuration key. Go to **System administration** \> **Setup** \> **License configuration**. Then, on the **Configuration keys** tab, expand **Trade** \> **Warehouse and Transportation management**, and select the check box for **Catch weight for warehouse**. Turn on both the **Warehouse and Transportation management** license configuration key and the **Process distribution** \> **Catch weight** license configuration keys.
+To use warehouse management to process catch weight products, turn on the functionality by using a license configuration key. Go to **System administration** > **Setup** > **License configuration**. Then, on the **Configuration keys** tab, expand **Trade** > **Warehouse and Transportation management**, and select the check box for **Catch weight for warehouse**. Turn on both the **Warehouse and Transportation management** license configuration key and the **Process distribution** > **Catch weight** license configuration keys.
 
 After the license configuration key is turned on, when you create a released product, you can select **Catch weight**. You can also associate the released product with a storage dimension group that the **Use warehouse management processes** parameter is selected for.
 

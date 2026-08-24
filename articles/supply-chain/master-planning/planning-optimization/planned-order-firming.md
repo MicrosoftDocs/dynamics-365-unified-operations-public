@@ -88,9 +88,9 @@ Grouping and marking options for auto-firming take their values from the **Stand
 
 You define the auto-firming time fence by the number of days that you enter for the relevant coverage setup. You can turn on auto-firming and control the firming time fence in the following ways:
 
-- To define the default firming time fence for a coverage group, go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**, and select a coverage group. Then, on the **Other** FastTab, in the **Automatic firming time fence (days)** field, enter the number of days.
-- To overwrite the firming time fence that you defined for the coverage group for a specific item, go to **Product information management** \> **Released products**. On the Action Pane, select **Plan**, and then select **Item coverage**. On the **General** tab, select **Override time fence**, and then, in the **Automatic firming time fence (days)** field, enter the number of days.
-- To overwrite the firming time fence that you defined for the coverage group and item coverage for a specific master plan, go to **Master planning** \> **Setup** \> **Master plans**, and select a master plan. Then, on the **Time fence in days** FastTab, set the **Firming** option to *Yes*, and enter the number of days.
+- To define the default firming time fence for a coverage group, go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**, and select a coverage group. Then, on the **Other** FastTab, in the **Automatic firming time fence (days)** field, enter the number of days.
+- To overwrite the firming time fence that you defined for the coverage group for a specific item, go to **Product information management** > **Released products**. On the Action Pane, select **Plan**, and then select **Item coverage**. On the **General** tab, select **Override time fence**, and then, in the **Automatic firming time fence (days)** field, enter the number of days.
+- To overwrite the firming time fence that you defined for the coverage group and item coverage for a specific master plan, go to **Master planning** > **Setup** > **Master plans**, and select a master plan. Then, on the **Time fence in days** FastTab, set the **Firming** option to *Yes*, and enter the number of days.
 
 If you set all the previously mentioned time fences to *0* (zero), you effectively disable auto-firming for the relevant covered items.
 
@@ -102,7 +102,7 @@ You can combine auto-firming with query-based firming. For example, a query-base
 
 To firm a planned order by using the query-based firming process, follow these steps:
 
-1. Go to **Master-planning** \> **Master planning** \> **Run** \> **Planned order firming**.
+1. Go to **Master-planning** > **Master planning** > **Run** > **Planned order firming**.
 1. In the **Planned order firming** dialog box, on the **Parameters** FastTab, set the basic processing, marking, and grouping options. These options work just as they do in the **Firming** dialog box. (See the previous section for descriptions.) Then, in the **Plan** section, set the following fields that are unique to the **Planned order firming** dialog box:
 
     - **Plan** – Select the master plan that should be applied during firming of the planned orders that this query finds.
@@ -127,9 +127,9 @@ To firm a planned order by using the query-based firming process, follow these s
 
 ## Track firmed orders
 
-To track planned orders that you firmed, go to **Master-planning** \> **Inquiries and reports** \> **Master planning** \> **Firming history**.
+To track planned orders that you firmed, go to **Master-planning** > **Inquiries and reports** > **Master planning** > **Firming history**.
 
 > [!NOTE]
-> You can also access firming history from any of the planned order pages such as **Master-planning** \> **Master planning** \> **Planned orders**. The system creates firming history data for planned orders that you firm. Therefore, the firming history you see is unrelated to any planned order you select. The firming history you see is similar to the firming history you see when you access **Master-planning** \> **Inquiries and reports** \> **Master planning** \> **Firming history**.
+> You can also access firming history from any of the planned order pages such as **Master-planning** > **Master planning** > **Planned orders**. The system creates firming history data for planned orders that you firm. Therefore, the firming history you see is unrelated to any planned order you select. The firming history you see is similar to the firming history you see when you access **Master-planning** > **Inquiries and reports** > **Master planning** > **Firming history**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

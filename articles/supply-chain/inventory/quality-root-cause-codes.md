@@ -26,7 +26,7 @@ Before you can use the features that are described in this article, your system 
 
 ## Manage root cause codes
 
-1. Go to **Inventory management** \> **Setup** \> **Quality management** \> **Correction root cause codes**.
+1. Go to **Inventory management** > **Setup** > **Quality management** > **Correction root cause codes**.
 1. Use the buttons on the Action Pane to add new root cause codes or edit existing ones. (You can also delete existing codes.)
 1. Set the following fields for each row:
 

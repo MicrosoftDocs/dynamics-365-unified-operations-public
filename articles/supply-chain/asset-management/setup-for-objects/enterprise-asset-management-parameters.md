@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up the general parameters for Asset Management, which relate to assets, work orders, and work order scheduling. Select **Asset management** \> **Setup** \> **Asset management parameters** to open the page.
+This article describes how to set up the general parameters for Asset Management, which relate to assets, work orders, and work order scheduling. Select **Asset management** > **Setup** > **Asset management parameters** to open the page.
 
 > [!NOTE]
 > If you'd like to set up a system that includes demo data for testing Asset Management features, see [Deploy a demo environment](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) for instructions.
@@ -26,7 +26,7 @@ The **Assets** tab provides the following settings:
 
 - **Default functional location** is the standard functional location that's automatically selected on assets when you create new assets.  
 - In the **Standard calendar** field, select a calendar to be used for calculating asset KPIs if no resource is selected on an asset.  
-- In the **View** field, select the standard view that's shown when you open **Asset view** (**Asset management** \> **Assets** \> **Asset view**).
+- In the **View** field, select the standard view that's shown when you open **Asset view** (**Asset management** > **Assets** > **Asset view**).
 - **Default request type** is the standard maintenance request type that's automatically selected when you create a new request.  
 - The project selected in the **Forecast project** field stores forecasts on job types. For each job type, the system automatically creates a new activity on the forecast project. The system then saves forecasts on the job type to the forecast project.  
 - In the **Model** field, select the forecast model used on job type and work order forecasts.

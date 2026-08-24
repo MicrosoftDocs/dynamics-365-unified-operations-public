@@ -13,6 +13,7 @@ ms.custom:
 
 # Configure Traceability (preview)
 
+[!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
@@ -23,7 +24,7 @@ This article describes how to configure the Traceability Add-in.
 The Traceability Add-in for Supply Chain Management provides an API endpoint that you can use to exchange messages with external systems. It lets you integrate Traceability with other systems, such as enterprise resource planning (ERP) systems, warehouse management systems, and quality management systems. To use the API, you need to know the URL of the endpoint. To find it, follow these steps:
 
 1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **System**.
+1. On the left navigation pane, select **Settings** > **System**.
 1. On the **General** tab of the **System** page, you can find the API endpoint URL in the **Endpoint** field. Use the **Copy** button to copy the URL to the clipboard.
 
 ## Exclude products from Traceability
@@ -33,7 +34,7 @@ If you have products that don't need to be traced, you can choose to exclude the
 To exclude or reinclude a product, follow these steps:
 
 1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **Exclude product**.
+1. On the left navigation pane, select **Settings** > **Exclude product**.
 1. The **Exclude product** page opens, showing a list of currently excluded products (if any). Use the buttons in the toolbar to add, remove, or edit rows in the list. For each row, make the following settings:
     - **Company** – Specify the legal entity (company) of the product that shouldn't be traced.
     - **Item number** – Specify the item number of the product that shouldn't be traced.
@@ -56,7 +57,7 @@ You can make the following configuration settings for each activity:
 To configure activities that Traceability traces, follow these steps:
 
 1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **Activity**.
+1. On the left navigation pane, select **Settings** > **Activity**.
 1. The **Activity** page opens, showing a list of activities currently configured for your environment. Use the buttons in the toolbar to add, remove, or edit rows in the list. For each row, make the following settings:
 
     - **Activity code** – Enter a name that identifies the activity to users. Traceability displays this name to identify the activity when users make a genealogy trace.
@@ -94,7 +95,7 @@ The following table lists the source activity codes and types supported by the t
 To configure data collection fields that are traced in Traceability, follow these steps:
 
 1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **Data collections**.
+1. On the left navigation pane, select **Settings** > **Data collections**.
 1. Select the **Add** button on the menu bar to open the initial screen for creating a data collection field.
 1. Make the following settings for the new data collection field:
     - **Name** – Enter the name of the data collection field. The integrated systems use this value to identify the specific field.

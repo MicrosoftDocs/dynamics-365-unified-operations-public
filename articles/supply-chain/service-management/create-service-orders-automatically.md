@@ -25,7 +25,7 @@ When you create service orders manually or automatically from the service agreem
 
 ## Create service orders automatically for a service agreement
 
-1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
+1. Go to **Service management** > **Service agreements** > **Service agreements**.
 1. Select a service agreement.
 1. On the Action Pane, select the **Deliver** tab, and then select **Planned service orders**.
 1. Specify dates in the **From date** and **To date** fields to define the service period.
@@ -36,7 +36,7 @@ When you create service orders manually or automatically from the service agreem
 
 ## Create service orders automatically for several service agreements
 
-1. Go to **Service management** \> **Periodic** \> **Service orders** \> **Create service orders**.
+1. Go to **Service management** > **Periodic** > **Service orders** > **Create service orders**.
 1. Select **Select** to make selections to add or remove criteria to use to create service orders.
 1. Select **OK**.
 

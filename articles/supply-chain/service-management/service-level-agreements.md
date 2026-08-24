@@ -25,7 +25,7 @@ Any number of SLAs can be created to offer service customers different levels of
 
 ## Create a service level agreement
 
-1. Go to **Service management** \> **Setup** \> **Service agreements** \> **Service level agreements**.
+1. Go to **Service management** > **Setup** > **Service agreements** > **Service level agreements**.
 1. Type a name for the service level agreement in the **Service level agreement** field.
 1. Type the time that you want to allow for completion of service calls that are attached to the service level agreement. Then select a calendar if you want to base the service level agreement on a specific calendar.
 
@@ -39,13 +39,13 @@ Service orders that you create automatically aren't attached to an SLA.
 
 ## Apply the service level agreement to the service agreement
 
-1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
+1. Go to **Service management** > **Service agreements** > **Service agreements**.
 1. Select the service agreement that you want to apply the SLA to, and then select **Edit** on the Action Pane.
 1. In the **Service level agreement** field, select the SLA that you want to assign.
 
 ## Apply the service level agreement to the service agreement group
 
-1. Go to **Service management** \> **Setup** \> **Service agreements** \> **Service agreement groups**.
+1. Go to **Service management** > **Setup** > **Service agreements** > **Service agreement groups**.
 1. In the **Service level agreement** field, select the SLA that you want to assign.
 
 ## Track time on a service order against an SLA

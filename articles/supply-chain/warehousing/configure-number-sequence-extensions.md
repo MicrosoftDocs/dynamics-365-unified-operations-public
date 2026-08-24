@@ -38,7 +38,7 @@ To set up number sequence extensions in your system, follow these steps:
     > [!NOTE]
     > This checkbox is available only if the functionality for [wave label printing](configure-wave-label-printing.md) is turned on.
 
-1. Go to **Warehouse management** \> **Setup** \> **Number sequence extensions**
+1. Go to **Warehouse management** > **Setup** > **Number sequence extensions**
 1. On the Action Pane, select **Create default setup**. A GS1-compliant BOL number sequence and three types of SSCC number sequences are created. All these number sequences take the length of your company's GS1 prefix into account.
 
     For more information about how to customize these default number sequences and/or add new sequences, see the next section. You can also remove any of these sequences if you don't need them.
@@ -57,7 +57,7 @@ In the previous section, you generated a default set of number sequences. This s
 
 To create and edit number sequences, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Number sequence extensions**.
+1. Go to **Warehouse management** > **Setup** > **Number sequence extensions**.
 1. On the Action Pane, select **New**.
 1. In the **Number sequence extension** field, enter a name for the new sequence. In the **Description** field, enter a description.
 1. On the **Segments** FastTab, use the buttons on the toolbar to assemble your numbering format by adding, deleting, and arranging segments. In the **Segment** field for each row, assign a segment type to define the purpose and content of that segment. The following table describes the types of segments that are available.

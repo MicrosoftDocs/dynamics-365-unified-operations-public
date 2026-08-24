@@ -20,7 +20,7 @@ This article explains how to set up asset manufacturers and related models in As
 
 ## Set up product-model relations
 
-1. Select **Asset management** \> **Setup** \> **Assets** \> **Manufacturer and model**.
+1. Select **Asset management** > **Setup** > **Assets** > **Manufacturer and model**.
 2. Select **New** to create a new product.
 3. In the **Manufacturer** field, enter a name for the asset manufacturer.
 4. In the **Description** field, enter a description.
@@ -41,7 +41,7 @@ This article explains how to set up asset manufacturers and related models in As
 
 ## Select a manufacturer and model on an object
 
-1. Select **Asset management** \> ***Assets** \> **All assets**.
+1. Select **Asset management** > ***Assets** > **All assets**.
 2. In the **Asset** column, select the link for the asset. The **Details** page appears.
 3. Select **Edit**.
 4. On the **General** FastTab, select values in the **Manufacturer** and **Model** fields.

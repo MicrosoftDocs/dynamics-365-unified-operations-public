@@ -23,7 +23,7 @@ This method of running an inventory aging report is helpful when the output cont
 
 To set up and generate *inventory aging report storage* reports, follow these steps:
 
-1. Go to **Cost management** \> **Inquiries and reports** \> **Inventory aging report storage**.
+1. Go to **Cost management** > **Inquiries and reports** > **Inventory aging report storage**.
 1. Select **New**. The **Inventory aging** dialog opens.
 1. On the **Parameters** FastTab, make the following settings:
     - **Name** – Enter a unique name for the report.
@@ -47,7 +47,7 @@ To set up and generate *inventory aging report storage* reports, follow these st
 
 To view an inventory aging report storage, follow these steps:
 
-1. Go to **Cost management** \> **Inquiries and reports** \> **Inventory aging report storage**.
+1. Go to **Cost management** > **Inquiries and reports** > **Inventory aging report storage**.
 1. On the list pane, select the report that you want to view.
 1. On the Action Pane, select one of the following actions:
     - **View details** – View the report as a form that has a traditional grid layout.
@@ -62,7 +62,7 @@ Every report that you generate is stored in the *Inventory value report storage*
 
 The following example shows how to export an inventory aging report storage report.
 
-1. Go to **System administration** \> **Workspaces** \> **Data management**.
+1. Go to **System administration** > **Workspaces** > **Data management**.
 1. In the **Import / Export** section, select the **Export** tile.
 1. On the **Export** page, enter a **Group name** for the job.
 1. On the **Selected entities** FastTab, select **Add entity**.

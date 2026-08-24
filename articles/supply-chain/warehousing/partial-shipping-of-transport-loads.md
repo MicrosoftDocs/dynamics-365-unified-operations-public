@@ -12,7 +12,7 @@ ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 
 # Partial shipment of a transport load
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 By setting up partial shipment of loads, you can handle loads where the capacity can't be determined until all the sales lines have been added to a load. The process can then be finalized when the exact pallet count is known. Therefore, you don't have to decide which pallets will be assigned to which transport until the moment when a transport is being physically loaded out of the staged inventory.
 
@@ -31,7 +31,7 @@ The setup for partial shipment of loads consists of the following two procedures
 
 You must enable partial loading by setting the loading strategy. You can set the loading strategy after you've created a load.
 
-1. Select **Warehouse management** \> **Loads** \> **All loads**.
+1. Select **Warehouse management** > **Loads** > **All loads**.
 2. Select a load, and then click **Header**.
 3. In the **Loading strategy** field, select **Partial load shipping allowed**.
 
@@ -39,7 +39,7 @@ You must enable partial loading by setting the loading strategy. You can set the
 
 You must create a new menu item that enables transport loads to be loaded. A transport load lets you group work lines from one load or multiple loads. Everything that is added to the transport load can then be shipped by using a mobile scanner.
 
-1. Select **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
+1. Select **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 2. Select **New**, and then, in the **Mode** field, select **Work**.
 3. Set the **Use existing work** option to **Yes**.
 4. On the **General** tab, in the **Directed by** field, select **Transport loading**.
@@ -49,7 +49,7 @@ You must create a new menu item that enables transport loads to be loaded. A tra
 
 This setup lets you confirm a transport load that includes a full load or a partially loaded load to be shipped.
 
-1. Select **Warehouse management** \> **Loads** \> **Transport loads**.
+1. Select **Warehouse management** > **Loads** > **Transport loads**.
 2. On the Action Pane, on the **Ship and receive** tab, in the **Confirm** group, select **Transport**.
 
 

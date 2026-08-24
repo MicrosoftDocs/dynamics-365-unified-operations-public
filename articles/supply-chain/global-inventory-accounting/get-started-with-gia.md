@@ -82,7 +82,7 @@ To install or update the add-in and solution:
 
 If the default language of your Dataverse installation isn't English, follow these steps:
 
-1. Go to **Advanced Setting** \> **Administration** \> **Languages**.
+1. Go to **Advanced Setting** > **Administration** > **Languages**.
 1. Select *English* (*LanguageCode=1033*), and then select **Apply**.
 
 ## Set up the integration
@@ -90,11 +90,11 @@ If the default language of your Dataverse installation isn't English, follow the
 Follow these steps to set up the integration between Global Inventory Accounting and Supply Chain Management.
 
 1. Sign in to Supply Chain Management.
-1. Go to **System administration** \> **Feature Management**.
+1. Go to **System administration** > **Feature Management**.
 1. Select **Check for updates**.
 1. On the **All** tab, search for the feature named *Global inventory accounting*.
 1. Select **Enable now**.
-1. Go to **Global inventory accounting** \> **Setup** \> **Global inventory accounting parameters** \> **Integrations parameters**.
+1. Go to **Global inventory accounting** > **Setup** > **Global inventory accounting parameters** > **Integrations parameters**.
 1. Depending on which version of Supply Chain Management you're running, follow one of these steps:
 
     - **Supply Chain Management version 10.0.19 to 10.0.26**: In the **Data service endpoint** and **Global inventory accounting endpoint** fields, enter the URLs that the Global Inventory Accounting team sent to you by email. (Learn more in the [How to get the Global Inventory Accounting add-in](#sign-up) section.)

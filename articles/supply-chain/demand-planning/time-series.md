@@ -22,7 +22,7 @@ Time series, worksheets, and planning data represent the output from forecasts, 
 
 ## <a name="explore"></a>Explore planning data and worksheets
 
-To view all your planning data, on the navigation pane, select **Planning data** \> **All**. Alternatively, select an appropriate planning data category under **Planning data**. To view shared worksheets, on the navigation pane, select **Home** \> **Worksheets**.
+To view all your planning data, on the navigation pane, select **Planning data** > **All**. Alternatively, select an appropriate planning data category under **Planning data**. To view shared worksheets, on the navigation pane, select **Home** > **Worksheets**.
 
 To open a worksheet or planning data record, select its name in the **Name** column. The following illustration highlights the features on the **Output** tab of the time series details page.
 
@@ -30,7 +30,7 @@ To open a worksheet or planning data record, select its name in the **Name** col
 
 Legend:
 
-1. **Create and select worksheets** – You can use this menu to save the current view (including all filters, overlaid series, and other selections) as a worksheet in the current planning data record. If you've already saved one or more worksheets, you can use this menu to load them. Each worksheet that's created from this menu is also listed on the **Worksheets** page (available at **Home** \> **Worksheets** on the navigation pane). Each worksheet has a share setting that lets you share it with other users or keep it private to yourself. You can also use this menu to delete worksheets.
+1. **Create and select worksheets** – You can use this menu to save the current view (including all filters, overlaid series, and other selections) as a worksheet in the current planning data record. If you've already saved one or more worksheets, you can use this menu to load them. Each worksheet that's created from this menu is also listed on the **Worksheets** page (available at **Home** > **Worksheets** on the navigation pane). Each worksheet has a share setting that lets you share it with other users or keep it private to yourself. You can also use this menu to delete worksheets.
 1. **Current filters** – If you've applied any filters to the data, they're listed next to the **Add filter** button as colored blocks. You can remove any listed filter by selecting its **Close** button (**X**).
 1. **Add filter** – Open a menu where you can choose to filter the time series by any combination of date or dimension values. This filtering affects the key performance indicators (KPIs) that are shown on the **Insights** FastTab, the chart that's shown on the **Timeline** FastTab, and the values that are available on the **Time series values** FastTab. Filters that you add from here are added to the current filters list (2).
 1. **Insights** – This FastTab shows KPIs for the current time series, including total quantity, average quantity, and standard deviation of quantity. These values reflect the filter settings.

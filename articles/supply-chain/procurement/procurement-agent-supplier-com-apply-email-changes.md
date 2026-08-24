@@ -68,7 +68,7 @@ To review and accept changes that the agent suggests based on the emails that it
 > [!IMPORTANT]
 > Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./procurement-agent-supplier-com-setup.md#synchronize-mailboxes-with-dataverse).
 
-1. Go to **Procurement and sourcing** \> **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace.
+1. Go to **Procurement and sourcing** > **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace.
 1. The **(Preview) Emails from vendors** tile indicates the number of emails that require review. Select the tile.
 
     The left side of the **(Preview) Emails from vendors** page lists all the emails that the agent reads. The right side shows summaries that Copilot generates.
@@ -114,6 +114,6 @@ For some fields, a vendor might use values that are synonyms or industry equival
 
 If any teaching is previously saved for all vendors or a specific vendor, you can always find it later, review it, or delete it by following these steps:
 
-1. Go to **Procurement and sourcing** \> **(Preview) Procurement Agent - Supplier communications** \> **(Preview) Emails from vendors**.
+1. Go to **Procurement and sourcing** > **(Preview) Procurement Agent - Supplier communications** > **(Preview) Emails from vendors**.
 1. On the Action Pane, select **Taught items** to view everything that the agent was taught.
 1. If you see any lessons that you want to delete, select them, and then select **Delete** on the Action Pane.

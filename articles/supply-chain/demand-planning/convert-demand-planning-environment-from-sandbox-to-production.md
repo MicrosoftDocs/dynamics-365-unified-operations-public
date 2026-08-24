@@ -13,6 +13,8 @@ ms.custom:
 
 # Convert a Demand planning environment from sandbox to production
 
+[!include [banner](../includes/banner.md)]
+
 You can convert a Demand planning environment from sandbox to production. You might want to do this conversion if, for example, you use a sandbox environment to set up models and check integrations before you use them with production data.
 
 ## Conversion process
@@ -29,7 +31,7 @@ After you convert a Demand planning environment from sandbox to production, the 
 
 To delete import and export profiles, follow these steps:
 
-1. Go to **Data management** \> **Import** or **Data management** \> **Export**.
+1. Go to **Data management** > **Import** or **Data management** > **Export**.
 1. Select the profile to delete.
 1. Select **Delete**.
 
@@ -44,7 +46,7 @@ After you convert a Demand planning environment from sandbox to production, you 
 
 To delete tables and time series, follow these steps:
 
-1. Go to **Data management** \> **Tables and data** or **Planning data** \> **All**.
+1. Go to **Data management** > **Tables and data** or **Planning data** > **All**.
 1. Select the table or time series to delete.
 1. Select **Delete**.
 

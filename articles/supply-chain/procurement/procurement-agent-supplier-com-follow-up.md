@@ -50,8 +50,8 @@ The following procedure explains how to set up agent tasks to find purchase orde
 
 1. Open the **(Preview) Follow-up emails** page by following one of these steps:
 
-    - Go to **Procurement and Sourcing** \> **(Preview) Procurement Agent - Supplier communications** \> **(Preview) Follow-up emails**.
-    - Go to **Procurement and sourcing** \> **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace. A tile named **(Preview) Follow-up emails** indicates the number of emails that require review. Select the tile.
+    - Go to **Procurement and Sourcing** > **(Preview) Procurement Agent - Supplier communications** > **(Preview) Follow-up emails**.
+    - Go to **Procurement and sourcing** > **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace. A tile named **(Preview) Follow-up emails** indicates the number of emails that require review. Select the tile.
 
 1. Follow one of these steps:
 
@@ -106,9 +106,9 @@ Here are some examples of other tasks that you might set up:
 To configure automatic sending of follow-up emails without requiring user review, follow these steps:
 
 1. Sign in to Supply Chain Management as an administrator.
-1. Go to **System administration** \> **Workspaces** \> **Feature management**.
+1. Go to **System administration** > **Workspaces** > **Feature management**.
 1. Make sure the *(Production ready preview) Procurement Agent – Supplier communications - automatically sending follow-up emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure supplier communications features](procurement-agent-supplier-com-setup.md).
-1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
+1. Go to **System administration** > **Setup** > **Email** > **Email parameters**.
 1. Open the **Configuration** tab.
 1. On the **General** FastTab, set **Batch email provider** to *Graph*. This setting turns on the batch email provider.
 1. On the **Enabled interactive email providers** FastTab, make sure that *Graph* is listed in the **Enabled** column.
@@ -124,7 +124,7 @@ When the system automatically sends an email without user review, the email come
 To configure the email address of any user (including the agent identity user):
 
 1. Sign in to Supply Chain Management as an administrator.
-1. Go to **System administration** \> **Users**.
+1. Go to **System administration** > **Users**.
 1. Select the user you want to configure (for example, the [agent identity user](procurement-agent-supplier-com-setup.md#set-up-agent-identity)).
 1. On the Action Pane, select **User options**.
 1. Open the **Account** tab.
@@ -141,7 +141,7 @@ To configure the email address of any user (including the agent identity user):
 
 To choose the recipient of the follow-up emails for a vendor, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
+1. Go to **Procurement and sourcing** > **Vendors** > **All vendors**.
 1. Find and open the target vendor from the list.
 1. The **Contact information** FastTab lists various ways that you can contact the selected vendor and lets you edit the list. Use the settings here to configure the email address the agent should use when sending follow-up emails to this vendor. The agent chooses which contact line to use as follows:
     - If a contact line is set up as the priority email address for purchase order communications, the agent always uses that email address for this vendor, regardless of whether the agent task is set up to send emails per purchase order or grouped per vendor. For details about how to set up this address, see [Set up the priority purchase order communications email address for a vendor](#priority-email).
@@ -156,7 +156,7 @@ To choose the recipient of the follow-up emails for a vendor, follow these steps
 
 As described in the previous section, the agent always uses the contact line that is set up as the priority email address for purchase order communications if such a line exists for the vendor, regardless of whether the agent task is set up to group emails per vendor or per purchase order. To set up this priority address, follow these steps:
 
-1. Go to **Organization administration** \> **Global address book** \> **Address and contact information purpose**.
+1. Go to **Organization administration** > **Global address book** > **Address and contact information purpose**.
 1. At the top-right corner of the grid, open the **Grid options** menu (ellipsis button) and select **Insert columns**.
 1. In the **Insert columns** dialog, select the check box for the row with a **Field value** of *Type*. Then select **Update**. The grid now shows a **Type** column.
 1. If a row already exists with a **Type** of *Purchase Order Communications*, note its **Purpose** name and skip this step. Otherwise, add it by selecting  **New** on the Action Pane and make the following settings for the new row:
@@ -167,7 +167,7 @@ As described in the previous section, the agent always uses the contact line tha
     - **Type** – Select *Purchase Order Communications*.
 
 1. On the Action Pane, select **Save**.
-1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Go to **Accounts payable** > **Vendors** > **All vendors**.
 1. Find and open the vendor you want to set up from the list.
 1. On the **Contact information** FastTab, select the row with the email address you want to send follow-up messages to. Then select **Edit contact information** from the FastTab toolbar.
 1. In the **Edit contact information** dialog, set **Purpose** to the purpose name you found or created earlier in this procedure.
@@ -175,7 +175,7 @@ As described in the previous section, the agent always uses the contact line tha
 
 ## Review and send drafted emails
 
-To review the emails that were previously created for the various configurations, go to **Procurement and Sourcing** \> **(Preview) Procurement Agent - Supplier communications** \> **(Preview) Follow-up emails**. The configurations appear on the left, and the emails for each configuration appear on the right.
+To review the emails that were previously created for the various configurations, go to **Procurement and Sourcing** > **(Preview) Procurement Agent - Supplier communications** > **(Preview) Follow-up emails**. The configurations appear on the left, and the emails for each configuration appear on the right.
 
 Edit each message as required, and then select **Send** to send it to the vendor.
 
@@ -183,7 +183,7 @@ Edit each message as required, and then select **Send** to send it to the vendor
 
 The Procurement Agent includes a batch job that runs the agent automatically. To change the default configuration of the job, follow these steps:
 
-1. Go to **System Administration** \> **Inquiries** \> **Batch jobs**.
+1. Go to **System Administration** > **Inquiries** > **Batch jobs**.
 1. Find and select the job that has a **Job description** that matches the name of the agent configuration, which is described in [Configure task criteria and email settings](#configure-task-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly by using this text in the **Job description** column header filter. The agent name might be different on your system, so check the name before proceeding.
 
     :::image type="content" source="media/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-agent-batch-job.png":::

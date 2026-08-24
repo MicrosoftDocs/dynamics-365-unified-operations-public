@@ -18,7 +18,7 @@ This article describes how to reverse unsaved modifications that you make in a d
 
 Use the following steps to reverse unsaved changes in a dispatch board:
 
-1. Go to **Service management** \> **Periodic** \> **Dispatch board**.
+1. Go to **Service management** > **Periodic** > **Dispatch board**.
 
 2. On the **Dispatch board** page, enter relevant information in the fields, and then select **OK**.
 

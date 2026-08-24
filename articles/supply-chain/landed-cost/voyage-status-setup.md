@@ -13,7 +13,7 @@ ms.custom:
 
 # Voyage status setup
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 On the **Voyage statuses** page, you set up the status values that users can assign to voyages. Users can assign voyage status values to all levels of a voyage: voyage, shipping container, folio, purchase order, and item (purchase lines and transfer order lines). You can use these statuses for two purposes:
 

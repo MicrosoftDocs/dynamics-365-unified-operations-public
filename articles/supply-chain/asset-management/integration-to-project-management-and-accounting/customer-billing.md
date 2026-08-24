@@ -179,7 +179,7 @@ To use the credit limit feature, your system must meet the following requirement
 
 To configure the credit limit check, follow these steps:
 
-1. Go to **Asset Management** \> **Setup** \> **Asset management parameters**.
+1. Go to **Asset Management** > **Setup** > **Asset management parameters**.
 1. Open the **Work orders** tab.
 1. Make the following settings on the **Credit limits** FastTab.
     - **Credit limit check on work order dispatch** – Set to *Yes* to turn on the credit limit check.
@@ -191,7 +191,7 @@ To configure the credit limit check, follow these steps:
 
 To set the credit limit for a customer, follow these steps:
 
-1. Go to **Credit and collections** \> **Customers** \> **All customers**.
+1. Go to **Credit and collections** > **Customers** > **All customers**.
 1. Select and open a customer record (if you're following the examples provided previously, you could choose *US-013* (*Pelican Wholesales*)).
 1. On the **Credit and collections** FastTab, enter the customer's credit limit in the **Credit limit** field.
 1. On the Action Pane, select **Save**.

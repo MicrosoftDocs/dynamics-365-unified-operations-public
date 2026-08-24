@@ -15,6 +15,8 @@ ms.custom:
 
 # Inventory transaction details
 
+[!include [banner](../includes/banner.md)]
+
 Use the **Transactions details** page to view details of any selected inventory transaction.
 
 > [!TIP]

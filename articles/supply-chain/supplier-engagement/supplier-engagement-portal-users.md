@@ -197,14 +197,14 @@ The system provisions the portal user in Dataverse and creates a portal user req
 When you invite a supplier contact to the portal, the system automatically creates a portal user request in Supply Chain Management. To review portal user requests, follow these steps:
 
 1. Open Supply Chain Management.
-1. Go to **Procurement and sourcing** \> **Vendors** \> **Supplier Engagement** \> **Portal user requests**.
+1. Go to **Procurement and sourcing** > **Vendors** > **Supplier Engagement** > **Portal user requests**.
 1. Review and approve or reject the pending requests.
 
 Portal user requests follow a three-level approval workflow. By default, this workflow controls the review and authorization of new users, but administrators can modify the workflow configuration to meet organizational requirements. Learn more in [Set up the vendor user request workflow](deploy-configure-scm.md#set-up-the-vendor-user-request-workflow).
 
 When you approve the request:
 
-- The system creates a new external user account in Supply Chain Management. You can find new portal users at **Procurement and sourcing** \> **Vendors** \> **(Preview) Supplier Engagement** \> **Portal users**.
+- The system creates a new external user account in Supply Chain Management. You can find new portal users at **Procurement and sourcing** > **Vendors** > **(Preview) Supplier Engagement** > **Portal users**.
 - The system automatically assigns the requested security roles. The available roles are listed and described in the [Map web roles to Supply Chain Management roles](#map-web-roles-to-supply-chain-management-roles) section.
 - The system grants access either globally (all organizations) or locally (specific legal entities), depending on how you invited the user in the Supplier Engagement app.
 
@@ -215,8 +215,8 @@ As part of the provisioning workflow, the system initiates an Azure B2B service 
 To change a user's role assignment, follow these steps:
 
 1. In the Supplier Engagement app, do one of the following steps to find the contact record you want to manage:
-    - At the bottom of the navigation pane, select the **Configuration** area, and then select **Portal management** \> **Contacts**.
-    - At the bottom of the navigation pane, select the **Menu** area, and then select **General** \> **Global vendors**. Open the relevant global vendor, and then open the **Contacts** tab.
+    - At the bottom of the navigation pane, select the **Configuration** area, and then select **Portal management** > **Contacts**.
+    - At the bottom of the navigation pane, select the **Menu** area, and then select **General** > **Global vendors**. Open the relevant global vendor, and then open the **Contacts** tab.
 1. Find and open the contact record you want to work with.
 1. Open the **Portal access** tab.
 1. In the **Web roles** section, use the toolbar buttons to add or remove roles as needed.
@@ -238,8 +238,8 @@ The system synchronizes with Supply Chain Management, granting or revoking right
 Administrators can grant or remove access for users whose access is limited to specific legal entities. To manage legal entity access, follow these steps:
 
 1. In the Supplier Engagement app, do one of the following steps to find the contact record you want to manage:
-    - At the bottom of the navigation pane, select the **Configuration** area, and then select **Portal management** \> **Contacts**.
-    - At the bottom of the navigation pane, select the **Menu** area, and then select **General** \> **Global vendors**. Open the relevant global vendor, and then open the **Contacts** tab.
+    - At the bottom of the navigation pane, select the **Configuration** area, and then select **Portal management** > **Contacts**.
+    - At the bottom of the navigation pane, select the **Menu** area, and then select **General** > **Global vendors**. Open the relevant global vendor, and then open the **Contacts** tab.
 1. Find and open the contact record you want to work with.
 1. Open the **Portal access** tab.
 1. In the **Vendor access** section, do one of the following steps:
@@ -253,8 +253,8 @@ The system synchronizes with Supply Chain Management, granting or revoking right
 To revoke a user's access to the supplier portal, follow these steps:
 
 1. In the Supplier Engagement app, do one of the following steps to find the contact record you want to manage:
-    - At the bottom of the navigation pane, select the **Configuration** area, and then select **Portal management** \> **Contacts**.
-    - At the bottom of the navigation pane, select the **Menu** area, and then select **General** \> **Global vendors**. Open the relevant global vendor, and then open the **Contacts** tab.
+    - At the bottom of the navigation pane, select the **Configuration** area, and then select **Portal management** > **Contacts**.
+    - At the bottom of the navigation pane, select the **Menu** area, and then select **General** > **Global vendors**. Open the relevant global vendor, and then open the **Contacts** tab.
 1. Find and open the contact record you want to work with.
 1. On the command bar, select **Deactivate portal access**.
 1. Confirm the action.

@@ -13,6 +13,8 @@ ms.custom:
 
 # Advanced export management overview
 
+[!include [banner](../includes/banner.md)]
+
 Companies that trade internationally in goods that are subject to external regulations and internal policies must keep track of many rules and policies. The advanced export management solution lets you express these rules, even complex ones, by using formulas that are similar to the formulas in Microsoft Excel. The system then ensures that the rules are honored throughout the sales and fulfillment process.
 
 Dynamics 365 Supply Chain Management lets you manage, track, and verify compliance with export control restrictions before you confirm, pick, pack, ship, and invoice sales orders. It can also check sales quotations. You manage your export control policies by using a native Dataverse solution that interfaces directly with your Supply Chain Management instance. Supply Chain Management then enforces compliance with international trade regulations by consulting your export control policies in real time. Because the architecture is based on Dataverse, many other systems that you use can also access your export control rules through the hundreds of connectors that are available for Dataverse. You can also use the rich features of Microsoft Power Platform, such as the [Microsoft Power Fx](/power-platform/power-fx/overview) language, to extend the solution. In this way, your export control administrator can support complex scenarios by using formulas that are similar to the formulas in Excel.

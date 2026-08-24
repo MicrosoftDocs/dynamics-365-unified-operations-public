@@ -25,10 +25,10 @@ The following table lists the pages where you can assign ranks. It also shows ho
 
 | Element | Page | Field name | Calculated priority |
 |---|---|---|---|
-| [Price attribute](upm-price-attribute-groups.md#price-attribute-ranks) | Price attribute groups<br>(**Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups**) | Rank | Same value (No conversion is done.) |
-| [Price group](upm-price-groups-set-up.md) | All price groups<br>(**Pricing management** \> **During-sales pricing** \> **Price groups** \> **All price groups**) | Rank | 1,000 &plus; *Rank* |
-| [Price attribute group combination](upm-price-component-code.md#rank) | Price component codes<br>(**Pricing management** \> **Setup** \> **Price component codes** \> **Price component codes**) | Combination rank | Same value (No conversion is done.) |
-| [Price component code](upm-price-structure-details.md) | Price trees<br>(**Pricing management** \> **Setup** \> **Price component codes** \> **Price trees**) | Pricing sequence | 1,000 &minus; *Sequence* |
+| [Price attribute](upm-price-attribute-groups.md#price-attribute-ranks) | Price attribute groups<br>(**Pricing management** > **Setup** > **Price attribute groups** > **Price attribute groups**) | Rank | Same value (No conversion is done.) |
+| [Price group](upm-price-groups-set-up.md) | All price groups<br>(**Pricing management** > **During-sales pricing** > **Price groups** > **All price groups**) | Rank | 1,000 &plus; *Rank* |
+| [Price attribute group combination](upm-price-component-code.md#rank) | Price component codes<br>(**Pricing management** > **Setup** > **Price component codes** > **Price component codes**) | Combination rank | Same value (No conversion is done.) |
+| [Price component code](upm-price-structure-details.md) | Price trees<br>(**Pricing management** > **Setup** > **Price component codes** > **Price trees**) | Pricing sequence | 1,000 &minus; *Sequence* |
 
 ## Priority application sequence
 
@@ -91,10 +91,10 @@ When the system calculates prices, it checks for priorities for trade agreements
 
 After a calculation, the calculated priorities are shown on sales order lines for the applied pricing rules. To review the calculated priority values, follow these steps:
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Find and open the sales order that you want to check.
 1. On the **Sales order lines** FastTab, select the line that you want to check.
-1. On the toolbar of the **Sales order lines** FastTab, select **Sales order line** \> **View** \> **Price details**.
+1. On the toolbar of the **Sales order lines** FastTab, select **Sales order line** > **View** > **Price details**.
 
     On the **Price details** page, each grid (**Base price**, **Margin component**, and **Discount lines**) includes a **Calculated pricing priority** column. This column shows the calculated priority of each line in the grid.
 

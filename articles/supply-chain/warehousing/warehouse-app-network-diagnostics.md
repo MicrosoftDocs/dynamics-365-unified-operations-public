@@ -13,6 +13,8 @@ ms.custom:
 
 # Check Wi-Fi connectivity and performance
 
+[!include [banner](../includes/banner.md)]
+
 The network diagnostics tool in the Warehouse Management mobile app analyzes the most critical endpoints on your network to quickly identify connectivity problems. Use it as a first step when troubleshooting connection issues. It helps detect common problems such as unreachable networks, DNS resolution failures, and slow connections.
 
 ## What the network diagnostics tool does

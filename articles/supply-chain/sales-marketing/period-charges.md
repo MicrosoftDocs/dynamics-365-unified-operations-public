@@ -20,8 +20,8 @@ The *Period charges* feature introduces the following changes to your system:
 
 - Fields are added to the **Accounts receivable parameters** page to control the period charge calculations.
 - Details are added to the **Free text invoice** details page to accommodate free text invoices that are created for period charges.
-- A new page that's named **Period charge rule** is added under **Accounts receivable** \> **Charges setup** on the navigation pane.
-- A new page that's named **Calculate period charge** is added under **Accounts receivable** \> **Periodic tasks** on the navigation pane.
+- A new page that's named **Period charge rule** is added under **Accounts receivable** > **Charges setup** on the navigation pane.
+- A new page that's named **Calculate period charge** is added under **Accounts receivable** > **Periodic tasks** on the navigation pane.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ Before you can use this feature, your system must meet the following requirement
 
 The **Accounts receivable parameters** page provides several fields that control how period charge calculations work in your system. Follow these steps to configure them.
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Charges** FastTab, set the following fields:
 
     - **Quantity threshold source** – Select one of the following values to specify which type of lines to consider when quantity-based period charge rules are calculated:
@@ -54,7 +54,7 @@ The **Accounts receivable parameters** page provides several fields that control
 
 Period charges are calculated and applied when you run the *Calculate period charge* batch job for a period. You can define period charge rules for a specific customer, site, or warehouse, or for groups of customers, sites, or warehouses. You can also define period charges that apply to all customers, sites, or warehouses. Follow these steps to create, edit, or delete a period charge rule.
 
-1. Go to **Accounts receivable** \> **Charges setup** \> **Period charge rule**.
+1. Go to **Accounts receivable** > **Charges setup** > **Period charge rule**.
 1. Follow one of these steps:
 
     - To add a new rule, select **New** on the Action Pane.
@@ -103,7 +103,7 @@ Period charges are calculated and applied when you run the *Calculate period cha
 
 To calculate period charges and generate free text invoice lines for customers who don't meet the criteria that your period charge rules define, you must run the *Calculate period charge* batch job. You can manually run this batch job, or you can schedule it to run automatically on a recurring basis. Follow these steps to run or schedule the *Calculate period charge* job.
 
-1. Go to **Accounts receivable** \> **Periodic tasks** \> **Calculate period charge**.
+1. Go to **Accounts receivable** > **Periodic tasks** > **Calculate period charge**.
 1. In the **Calculate period charge** dialog box, on the **Parameters** FastTab, set the following fields:
 
     - **Customer account** – Select the invoice account to calculate period charges for. Only invoices for this invoice account will be considered. To calculate period charges for all accounts, leave this field blank.
@@ -120,7 +120,7 @@ To calculate period charges and generate free text invoice lines for customers w
 
 The *Calculate period charge* job creates one or more free text invoices when shortfalls are found. Follow these steps to get more information about free text invoices that period charge calculations create.
 
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+1. Go to **Accounts receivable** > **Invoices** > **All free text invoices**.
 1. Open the free text invoice that you want to inspect.
 1. Select the free text invoice line that you want to inspect, and then, on the **Invoice lines** toolbar, select **Line invoice base**. (The **Line invoice base** page is visible only for free text invoices that are created as a result of a period charge calculation.)
 1. Select the **Period charge rule line** FastTab to view details about the period charge rule that created the selected free text invoice line.

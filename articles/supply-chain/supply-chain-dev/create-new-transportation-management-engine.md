@@ -24,7 +24,7 @@ Transportation management (TMS) engines define the logic that generates and proc
 
 This section explains how to create a class library that has a TMS engine implementation, and how to reference it from a Supply Chain Management model.
 
-1. To deploy your new engines, you must have a model that contains the engines. On the **Dynamics 365** \> **Model Management** menu, select **Create model** to create a new model. On the first page of the **Create model** wizard, name the model *TMSEngines*.
+1. To deploy your new engines, you must have a model that contains the engines. On the **Dynamics 365** > **Model Management** menu, select **Create model** to create a new model. On the first page of the **Create model** wizard, name the model *TMSEngines*.
 
    :::image type="content" source="../transportation/media/012.png" alt-text="Creating a model." lightbox="../transportation/media/012.png":::
 
@@ -109,7 +109,7 @@ This section explains how to create a class library that has a TMS engine implem
     :::image type="content" source="../transportation/media/061.png" alt-text="The new library in Application Explorer's References node." lightbox="../transportation/media/061.png":::
 
 > [!NOTE]
-> If you're testing the new engine directly in the development environment, you might also need to build the entire *TMSEngines* model from **Extensions** \> **Dynamics 365** \> **Build models**. This might resolve the issue if the engine assembly couldn't be found.
+> If you're testing the new engine directly in the development environment, you might also need to build the entire *TMSEngines* model from **Extensions** > **Dynamics 365** > **Build models**. This might resolve the issue if the engine assembly couldn't be found.
 
 ## <a name="deploy-engine-as-package"></a>Deploy the TMS engine as a package
 

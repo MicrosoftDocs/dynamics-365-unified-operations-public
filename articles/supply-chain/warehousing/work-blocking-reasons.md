@@ -36,12 +36,12 @@ No other blocking reasons are supported.
 
 To find all blocked work and check the reasons why each of them blocked, follow these steps:
 
-1. Go to **Warehouse management** \> **Work** \> **All work**.
+1. Go to **Warehouse management** > **Work** > **All work**.
 1. Blocked work records show a check mark in the **Blocked wave** column. You can use the column filter to find all blocked work records at once.
 1. To see the reasons why a work record is shown as blocked, select the link in the **Work ID** column to open the **Work details** page for that work record. Then open the **Blocking reasons** tab, which shows all blocking reasons for that work record, along with who blocked it and the date and time when each reason was applied.
 
 > [!TIP]
-> If you only want to find work that is blocked by replenishment work, you can go to **Warehouse management** \> **Work** \> **Outbound** \> **Work blocked by replenishment work**.
+> If you only want to find work that is blocked by replenishment work, you can go to **Warehouse management** > **Work** > **Outbound** > **Work blocked by replenishment work**.
 
 ## Manually block or unblock work
 
@@ -53,6 +53,6 @@ You can manually unblock work that is currently blocked for one of the following
 - Undefined reason
 - Replenishment overflow capacity
 
-To manually block or unblock work, go to **Warehouse management** \> **Work** \> **All work** and select one or more work records that you want to block or unblock. Then, on the Action Pane, select **Block work** or **Unblock work**.
+To manually block or unblock work, go to **Warehouse management** > **Work** > **All work** and select one or more work records that you want to block or unblock. Then, on the Action Pane, select **Block work** or **Unblock work**.
 
 The system automatically unblocks work that is blocked for other reasons when the blocking reason is resolved.

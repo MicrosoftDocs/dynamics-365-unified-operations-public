@@ -22,7 +22,7 @@ This procedure shows how to change the owner of consignment inventory from the v
 
 ## Create an inventory ownership journal
 
-1. Go to **Inventory management** \> **Journal entries** \> **Items** \> **Inventory ownership change**.
+1. Go to **Inventory management** > **Journal entries** > **Items** > **Inventory ownership change**.
 2. Select **New**. The inventory ownership change journal is used to change the owner of consignment inventory from the vendor to the current legal entity. This change of ownership is done by releasing the on-hand inventory that is owned by the vendor and then receiving that inventory in the current legal entity.  
 3. In the **Name** field, enter or select a value. You can select only inventory journal names that have a journal type of *Ownership change*.  
 4. Select **OK**.

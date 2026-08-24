@@ -21,7 +21,7 @@ You can also create a new address. By default, the new address is transferred to
 
 To add an address to a service order, follow these steps:
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**.
+1. Go to **Service management** > **Service orders** > **Service orders**.
 
 1. Open the service order that you want to create an address for.
 
@@ -40,7 +40,7 @@ To add an address to a service order, follow these steps:
 
 To add an alternative address to a service order, follow these steps:
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**.
+1. Go to **Service management** > **Service orders** > **Service orders**.
 
 1. Open the service order that you want to enter an alternative address for.
 

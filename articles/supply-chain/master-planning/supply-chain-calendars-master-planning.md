@@ -19,7 +19,7 @@ This article provides an overview of supply chain calendars and how they affect 
 
 ## Definition of a calendar
 
-To define a calendar for your organization, go to **Organization administration** \> **Setup** \> **Calendars** \> **Calendars**. Use the buttons on the Action Pane to add, remove, or edit calendars as needed.
+To define a calendar for your organization, go to **Organization administration** > **Setup** > **Calendars** > **Calendars**. Use the buttons on the Action Pane to add, remove, or edit calendars as needed.
 
 To manage the details of a selected calendar, select **Working times** on the Action Pane. Each date entry in a calendar can be open or closed, or it can inherit its open or closed status and working times from the base calendar. You specify the value in the **Control** column on the **Working times** page. For each date, set the **Column** field to one of the following values:
 
@@ -48,7 +48,7 @@ You can assign the coverage group on different pages:
 
 #### Define the lead time for a purchased item
 
-Specify the purchase lead time for an item (and whether only working days should be considered) on the **Default order settings** page for the product. To open this page, go to **Product information management** \> **Products** \> **Released products**, and select **Default order settings**.
+Specify the purchase lead time for an item (and whether only working days should be considered) on the **Default order settings** page for the product. To open this page, go to **Product information management** > **Products** > **Released products**, and select **Default order settings**.
 
 > [!NOTE]
 > The **Working days** checkbox for purchase lead time indicates working days as counted on the coverage group calendar. For example, a coverage group calendar set to allow delivery only on Tuesdays, with a lead time of 10 days and the **Working days** checkbox selected, indicates that it would take 10 weeks (10 Tuesdays) for the item to be delivered. Therefore, in most cases, don't select **Working days** for purchase order lead times.
@@ -66,7 +66,7 @@ You can set up calendars that define each vendor's standard operating hours, suc
 
 #### Define lead times from the trade agreements page
 
-You can set up master planning to include all trade agreements for vendors. Trade agreements are fixed prices or discount agreements that you set up for one or more customers or vendors for the sale or purchase of individual or multiple products. To include the trade agreements during planning, go to **Master planning** \> **Setup** \> **Master planning parameters**, and then, on the **Planned orders** tab, select **Find trade agreements**. Master planning can select the vendor that has either the minimum lead time or the lowest unit price.
+You can set up master planning to include all trade agreements for vendors. Trade agreements are fixed prices or discount agreements that you set up for one or more customers or vendors for the sale or purchase of individual or multiple products. To include the trade agreements during planning, go to **Master planning** > **Setup** > **Master planning parameters**, and then, on the **Planned orders** tab, select **Find trade agreements**. Master planning can select the vendor that has either the minimum lead time or the lowest unit price.
 
 ### Calendar for a warehouse
 
@@ -128,7 +128,7 @@ The customer calendar and the delivery date control method affect the requested 
 
 ### Shipping calendar for a legal entity
 
-Set up a shipping calendar for a legal entity to indicate the dates when the legal entity can ship goods. Go to **Organization administration** \> **Organizations** \> **Legal entities**, select the legal entity, and then, on the **Foreign trade and logistics** tab, in the **Shipping calendar** field, add the calendar. The shipping calendar acts as a source of default values for all warehouse calendars in the legal entity.
+Set up a shipping calendar for a legal entity to indicate the dates when the legal entity can ship goods. Go to **Organization administration** > **Organizations** > **Legal entities**, select the legal entity, and then, on the **Foreign trade and logistics** tab, in the **Shipping calendar** field, add the calendar. The shipping calendar acts as a source of default values for all warehouse calendars in the legal entity.
 
 ## How calendars affect dates in planning
 

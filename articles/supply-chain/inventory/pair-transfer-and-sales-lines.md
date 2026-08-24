@@ -37,10 +37,10 @@ Before you can use the feature described in this article, your system must meet 
 
 To create transfer order lines directly from sales order lines, link the lines together, and (optionally) reserve the transferred inventory, follow these steps:
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Open the sales order for which you want to add lines to a transfer order.
 1. On the **Sales order lines** FastTab, select the lines that you want to add to the transfer order.
-1. On the toolbar of the **Sales order lines** FastTab, select **Product and supply** \> **New** \> **Transfer order**.
+1. On the toolbar of the **Sales order lines** FastTab, select **Product and supply** > **New** > **Transfer order**.
 1. In the **Transfer order** dialog box, set the following fields:
 
     - **From warehouse** – Select the warehouse that the items should be transferred from (source warehouse).
@@ -57,9 +57,9 @@ The new or selected transfer order opens. You can now view the transfer order li
 
 When you review sales orders, you can confirm whether the required transfer order lines exist for each sales order line.
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Open the sales order that you want to review.
-1. On the **Sales order lines** FastTab, on the toolbar, select **Product and supply** \> **View** \> **Related transfer orders**.
+1. On the **Sales order lines** FastTab, on the toolbar, select **Product and supply** > **View** > **Related transfer orders**.
 1. On the **Paired transfer order and sales order lines** page, you can review the following information about all the transfer order lines that are linked to the selected sales order:
 
     - **Item number** – The item number of product on the sales order line and the transfer order line. Select the link to view the item details.
@@ -86,12 +86,12 @@ When you review transfer orders, you can check whether they contain lines that a
 
 1. Follow one of these steps:
 
-    - Go to **Inventory management** \> **Inbound orders** \> **Transfer order**.
-    - Go to **Inventory management** \> **Outbound orders** \> **Transfer order**.
+    - Go to **Inventory management** > **Inbound orders** > **Transfer order**.
+    - Go to **Inventory management** > **Outbound orders** > **Transfer order**.
 
 1. Open the transfer order that you want to review.
 1. On the **Transfer order lines** FastTab, select the line that you want to view the related sales order for.
-1. On the toolbar of the **Transfer order lines** FastTab, select **Inventory** \> **Related sales order**.
+1. On the toolbar of the **Transfer order lines** FastTab, select **Inventory** > **Related sales order**.
 1. On the **Paired transfer order and sales order lines** page, you can review information about the sales order line that is related to the selected transfer order line. The grid columns and Action Pane buttons are the same as the ones that are described in the previous section.
 
 ## Automatic marking between sales and transfer order lines
@@ -103,18 +103,18 @@ Marking matches specific inventory receipts (transfer order line inventory trans
 
 To view and edit markings from a sale order line, follow these steps:
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Open the sales order that you want to review.
 1. On the **Sales order lines** FastTab, select the line that you want to view the marking for.
-1. On the toolbar of the **Sales order lines** FastTab, select **Inventory** \> **Maintain** \> **Marking**.
+1. On the toolbar of the **Sales order lines** FastTab, select **Inventory** > **Maintain** > **Marking**.
 1. The **Marking** dialog box shows the marked quantities. You can edit the markings as required.
 
 To view and edit markings for a specific inventory transaction, follow these steps:
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Open the sales order that you want to review.
 1. On the **Sales order lines** FastTab, select the line that you want to view transactions for.
-1. On the toolbar of the **Sales order lines** FastTab, select **Inventory** \> **View** \> **Transactions**.
+1. On the toolbar of the **Sales order lines** FastTab, select **Inventory** > **View** > **Transactions**.
 1. On the **Inventory transactions** page, select the transaction that you want to inspect. You can inspect both shipment transactions and receipt transactions.
 1. On the Action Pane, on the **Inventory** tab, in the **View** group, select **Marking**.
 1. The **Marking** dialog box shows the marked quantities. You can edit the markings as required.
@@ -123,12 +123,12 @@ To view and edit markings from a transfer order line, follow these steps:
 
 1. Follow one of these steps:
 
-    - Go to **Inventory management** \> **Inbound orders** \> **Transfer order**.
-    - Go to **Inventory management** \> **Outbound orders** \> **Transfer order**.
+    - Go to **Inventory management** > **Inbound orders** > **Transfer order**.
+    - Go to **Inventory management** > **Outbound orders** > **Transfer order**.
 
 1. Open the transfer order that you want to review.
 1. On the **Transfer order lines** FastTab, select the line that you want to view the related sales order for.
-1. On the toolbar of the **Transfer order lines** FastTab, select **Inventory** \> **Transactions**.
+1. On the toolbar of the **Transfer order lines** FastTab, select **Inventory** > **Transactions**.
 1. On the **Inventory transactions** page, select the transaction that you want to inspect.
 1. On the Action Pane, on the **Inventory** tab, in the **View** group, select **Marking**.
 1. The **Marking** dialog box shows the marked quantities. You can edit the markings as required.

@@ -19,7 +19,7 @@ This guide shows how to create an accessorial assignment, carrier accessorial ch
 
 ## Create an accessorial master
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Accessorial masters**.
+1. Go to **Transportation management** > **Setup** > **Rating** > **Accessorial masters**.
 1. Select **New**.
 1. In the **Accessorial master** field, type a value.
 1. In the **Name** field, type a value.
@@ -27,7 +27,7 @@ This guide shows how to create an accessorial assignment, carrier accessorial ch
 
 ## Create a carrier accessorial charge
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Carrier accessorial charges**.
+1. Go to **Transportation management** > **Setup** > **Rating** > **Carrier accessorial charges**.
 1. Select **New**.
 1. In the **Carrier accessorial ID** field, type a value.
 1. In the **Shipping carrier** field, find and select the desired record.
@@ -51,7 +51,7 @@ This guide shows how to create an accessorial assignment, carrier accessorial ch
 
 ## Update the carrier rating profile
 
-1. Go to **Transportation management** \> **Setup** \> **Carriers** \> **Shipping carriers**.
+1. Go to **Transportation management** > **Setup** > **Carriers** > **Shipping carriers**.
 1. In the list, find and select the desired record.
 1. Expand the **Rating profiles** FastTab.
 1. Select **Edit**.

@@ -38,7 +38,7 @@ To associate a base attribute with a product, complete the following setup steps
 
 To look up and edit the actual value of the active ingredient for a batch:
 
-1. Go to **Inventory management** \> **Inquiries and reports** \> **Tracking dimensions** \> **Batches**.
+1. Go to **Inventory management** > **Inquiries and reports** > **Tracking dimensions** > **Batches**.
 1. Select a batch number from the grid.
 1. On the Action Pane, open the **View** tab and then select **Inventory batch attributes**.
 
@@ -98,7 +98,7 @@ The relation between an active ingredient and a complementary ingredient is set 
 
 Follow these steps to set up relations between ingredients.
 
-1. Select **Product information management** \> **Bills and materials and formulas** \> **Formulas**.
+1. Select **Product information management** > **Bills and materials and formulas** > **Formulas**.
 1. Open a formula line, and then select **Ingredients** to open the **Compensating principle** page.
 1. Select the line that represents a compensating principle, and then select the active ingredient to compensate.
 
@@ -133,7 +133,7 @@ You formulate a product that includes ingredients A, B, C, and D for a formula s
 
 ## The batch balancing process
 
-You perform the batch balancing process from the **Batch balancing** page. Select **Cost management** \> **Batch orders**, then, on the **Process** tab, select **Batch balancing**. Batch balancing is available for batch orders that have a status of *Started*.
+You perform the batch balancing process from the **Batch balancing** page. Select **Cost management** > **Batch orders**, then, on the **Process** tab, select **Batch balancing**. Batch balancing is available for batch orders that have a status of *Started*.
 
 In general, you can apply batch balancing to batch orders if the formula has at least one formula line where the **Ingredient type** is *Active*. (For the exception to this rule, see the "Batch orders that aren't applicable for batch balancing" section later in this article.)
 

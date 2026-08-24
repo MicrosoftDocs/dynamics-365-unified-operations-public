@@ -26,7 +26,7 @@ For more information about the setup that is related to the calculation of ratin
 
 ## Set up asset service levels
 
-1. Select **Asset management** \> **Setup** \> **Asset service levels**.
+1. Select **Asset management** > **Setup** > **Asset service levels**.
 2. Select **New** to create a record.
 3. Depending on the detail level that is required for the asset service level, make relevant selections in the **Functional location**, **Asset type**, **Manufacturer**, **Model**, **Asset**, **Work order type**, and **Service level** fields.
 

@@ -19,19 +19,19 @@ You can select any worker as a preferred technician for a service agreement or s
 
 ## Assign employee to a dispatch team
 
-1. Go to **Human resources** \> **Workers** \> **Workers**. Select a worker to open the worker details page. On the Action Pane, select **Setup** \>**Dispatch team** to open the **Dispatch workers** page.
+1. Go to **Human resources** > **Workers** > **Workers**. Select a worker to open the worker details page. On the Action Pane, select **Setup** \>**Dispatch team** to open the **Dispatch workers** page.
 
 2. In the **Dispatch team** field, select the team to assign the worker to.
 
 ## Assign a preferred technician to a service agreement
 
-1. Go to **Service management** \> **Service agreements** \> **Service agreements**. Select a service agreement to open the details page.
+1. Go to **Service management** > **Service agreements** > **Service agreements**. Select a service agreement to open the details page.
 
 2. On the **General** tab, select the **Preferred technician** field, and then select a member of the appropriate dispatch team as the preferred technician for the service agreement.
 
 ## Assign a preferred technician to a service order
 
-1. Go to **Service management** \> **Periodic** \> **Dispatch board**.
+1. Go to **Service management** > **Periodic** > **Dispatch board**.
 
     > [!NOTE]
     > On the **Dispatch board** page, specify a date range for dispatch activities to view. Also, specify whether to display closed activities and whether to limit the dispatch activity list to teams that you belong to or are authorized to monitor. Select **OK** to open the **Dispatch board**.

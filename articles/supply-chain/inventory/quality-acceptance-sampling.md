@@ -90,7 +90,7 @@ To use the features described in this article, your system must meet the followi
 
 To set up your acceptance sampling charts, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling chart**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Acceptance sampling** > **Acceptance sampling chart**.
 1. Use the buttons on the Action Pane to add a new chart or edit an existing one.
 1. On the header of the new or selected chart, set the following fields:
     - **Acceptance sampling chart name** – Enter a name for the sampling chart.
@@ -120,7 +120,7 @@ If you don't use the option to load your charts from a template, you must create
 
 Follow these steps to create inspection levels manually:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Inspection levels**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Acceptance sampling** > **Inspection levels**.
 1. Select **New** to create a new inspection level and set the following fields:
     - **Inspection level** – The identification of the inspection level.
     - **Inspection level type** – Choose between the two types *General* or *Special*, which are used as a criteria to find the code letter in the code letter chart. Learn more about level designations in [Acceptance sampling charts](#acceptance-sampling-charts).
@@ -132,7 +132,7 @@ Follow these steps to create inspection levels manually:
 
 Business users determine AQL indexes based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. If you don't want to use the option to generate the AQL indexes by loading the AQL chart template, then you can use the following steps to create them manually:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling indexes**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Acceptance sampling** > **Acceptance sampling indexes**.
 1. Select **New** to create a new inspection level and set the following fields:
     - **Acceptable quality limit index** – The identification of the acceptance sampling index. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a lot passes or fails inspection.
     - **Description** – User defined description of the acceptance sampling index.
@@ -143,7 +143,7 @@ Business users determine AQL indexes based on how critical the product is, indus
 
 After you create and validate an acceptance sampling chart, you can view the sampling size code letter chart:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling chart**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Acceptance sampling** > **Acceptance sampling chart**.
 1. Select the chart you want to view.
 1. On the Action Pane, select **Sampling size code letter chart**. You can open the corresponding acceptable quality limit chart by selecting **Acceptable quality limit chart**.
 
@@ -151,7 +151,7 @@ After you create and validate an acceptance sampling chart, you can view the sam
 
 To view or edit the acceptable quality limit chart, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling chart**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Acceptance sampling** > **Acceptance sampling chart**.
 1. Select the chart you want to edit.
 1. On the Action Pane, select *Acceptable quality limit chart* to open the chart.
 1. Use the following options to make edits:
@@ -165,7 +165,7 @@ Defect types identify the types of defects that users test for, such as *paint c
 
 To set up defect types, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Defect types**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Acceptance sampling** > **Defect types**.
 1. Select **New** and set the following fields:
     - **Defect type** – Identify the type of defect to test for.
     - **Description** – Enter a detailed description of the defect type.
@@ -188,7 +188,7 @@ Use *item sampling* records to define how much of a product to inspect during a 
 
 To set up item sampling for acceptance sampling, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Item sampling**.
 1. Select **New** to create a new item sampling and set the following fields:
     - **Item sampling** – Enter a name for the item sampling record.
     - **Description** – Enter a short description of the item sampling record.

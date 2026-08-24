@@ -17,7 +17,7 @@ ms.search.form: SMADispatchBoard
 
 This article describes how to view activities in a service order that don’t have a worker assigned to them from a dispatch team.
 
-1. Go to **Service management** \> **Periodic** \> **Dispatch board**.
+1. Go to **Service management** > **Periodic** > **Dispatch board**.
 
 2. In the **Dispatch board** window, enter the start date and end date for the period to view dispatch activity for.
 

@@ -32,7 +32,7 @@ The following functionality is included:
 
 ### Set up a warehouse
 
-1. Go to **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**.
+1. Go to **Inventory management** > **Setup** > **Inventory breakdown** > **Warehouses**.
 1. Create a warehouse of the *Goods shipped* type.
 
 For a warehouse of any other type, in the **Warehouse for items shipped** field, you can specify a **Goods shipped** warehouse that should be used for the shipment of goods when there is postponed passing of property rights.
@@ -41,7 +41,7 @@ For a warehouse of the **Goods shipped** type, you can set a location for items 
 
 ### Set up a posting type and number sequences for passing of property rights
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **General** tab, on the **Sales default values** FastTab, in the **Posting type** field, select the type of posting:
     - *Standard* – Property rights are passed to the buyer when the sales invoice is posted.
     - *Postponed passing of property* – The passing of the property rights to the buyer is postponed when the sales invoice is posted.
@@ -50,14 +50,14 @@ For a warehouse of the **Goods shipped** type, you can set a location for items 
 
 ### Set up a ledger posting group to post shipped goods tax
 
-1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Ledger posting groups**.
+1. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
 1. Select the ledger posting group and on the **General** FastTab in the **Shipped item tax** field, select a ledger account for shipped goods tax.
 
 ### Set up a charge code that uses a transit account
 
 Use the **Charges code** page to set up a charge code. You can allocate the charges by using a transit account.
 
-1. Go to **Accounts receivable** \> **Setup** \> **Charges setup** \> **Charges code**.
+1. Go to **Accounts receivable** > **Setup** > **Charges setup** > **Charges code**.
 1. On the **Posting** FastTab, in the **Debit** section, in the **Type** field, select *Customer/Vendor*.
 1. In the **Credit** section, in the **Type** field, select *Ledger account*.
 1. In the **Credit** section, in the **Posting** field, select the posting type for the credit account.
@@ -66,7 +66,7 @@ Use the **Charges code** page to set up a charge code. You can allocate the char
 
 ### Set up revenue, consumption, and transit accounts to post miscellaneous sales charges
 
-1. Go to **Accounts receivable** \> **Charges setup** \> **Charges posting**.
+1. Go to **Accounts receivable** > **Charges setup** > **Charges posting**.
 1. In the **Misc. charges posting type** field group, select the posting type for miscellaneous charges:
     - *Revenue* – Set up ledger accounts to post revenue for sales miscellaneous charges to.
     - *Consumption* – Set up ledger accounts to post consumption for sales miscellaneous charges to.
@@ -99,7 +99,7 @@ Use the **Charges code** page to set up a charge code. You can allocate the char
 
 ### Set up ledger accounts and offset ledger accounts for shipped goods
 
-1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Posting**.
+1. Go to **Inventory management** > **Setup** > **Posting** > **Posting**.
 1. On the **Sales order** tab, in the left pane, select the type of ledger account to set up for shipped goods:
     - *Goods shipped* – Set up ledger accounts to post the ledger transactions for shipped goods to.
     - *Goods shipped offset* – Set up offset ledger accounts to post the ledger transactions for shipped goods to.
@@ -129,13 +129,13 @@ Use the **Charges code** page to set up a charge code. You can allocate the char
 
 ### Set up a posting type for a customer and an agreement
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
 1. Select a customer account.
 1. On the **Sales order defaults** FastTab, in the **Posting type** field, select the posting type:
     - *Standard* – Property rights are passed to the customer when the sales invoice is posted.
     - *Postponed passing of property* – The passing of the property rights to the customer is postponed when the sales invoice is posted.
   
-1. Go to **Sales and marketing** \> **Sales agreements** \> **Sales agreements**.
+1. Go to **Sales and marketing** > **Sales agreements** > **Sales agreements**.
 1. Select a sales agreement.
 1. Switch to the **Header** view.
 1. On the **Financial** FastTab, in the **Posting type** field, select the posting type:
@@ -148,7 +148,7 @@ Complete the procedures in this section to create a sales order where there is p
 
 ### Create a sales order and post a sales invoice where there is postponed passing of property rights
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
 1. Create a sales order.
 1. Switch to the **Header** view.
 1. On the **Setup** FastTab, in the **Posting type** field, select *Postponed passing of property*.
@@ -174,7 +174,7 @@ The following ledger transactions are generated:
 
 Use the **Allocate charges** dialog box to allocate charges to a posted sales invoice.
 
-1. Go to **Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
+1. Go to **Accounts receivable** > **Inquiries and reports** > **Invoices** > **Invoice journal**.
 1. Select a sales invoice of the **Postponed passing of property** posting type, and then select **Adjustment** to open the **Allocate charges** dialog box.
 1. In the **Posting date** field, enter the date when miscellaneous charges should be posted.
 1. Set the **Credit correction** option to *Yes* to indicate that charges should be posted as credit corrections.
@@ -186,9 +186,9 @@ Use the **Allocate charges** dialog box to allocate charges to a posted sales in
 
 Use the **Cancel shipment** dialog box to cancel a shipment. You can cancel the shipment for goods if the passing of property rights isn't fully or partially registered. When you cancel a shipment, a credit note is created.
 
-1. Go to **Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
+1. Go to **Accounts receivable** > **Inquiries and reports** > **Invoices** > **Invoice journal**.
 1. Select a sales invoice of the *Postponed passing of property* posting type.
-1. Select **Passing of property** \> **Shipment cancellation** to open the **Cancel shipment** dialog box.
+1. Select **Passing of property** > **Shipment cancellation** to open the **Cancel shipment** dialog box.
 1. In the **Processing** section, in the **Date** field, select the date of cancellation.
 1. Set the **Credit correction (physical)** option to *Yes* to indicate that physical inventory update should be posted as a credit correction.
 
@@ -219,9 +219,9 @@ Use the **Cancel shipment** dialog box to cancel a shipment. You can cancel the 
 
 Use the **Register a passing of property** dialog box to register the passing of property rights for a posted sales invoice. Each invoice line in the dialog box contains the quantity that the passing of property rights must be registered for. You can specify a date and the quantity on the invoice line to confirm the passing of property rights. The sales tax charges and miscellaneous charges are recalculated based on the quantity, date of shipment, and the date of the passing of property rights.
 
-1. Go to **Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
+1. Go to **Accounts receivable** > **Inquiries and reports** > **Invoices** > **Invoice journal**.
 1. Select a sales invoice of the **Postponed passing of property** posting type.
-1. Select **Passing of property** \> **Passing of property** to open the **Register a passing of property** dialog box.
+1. Select **Passing of property** > **Passing of property** to open the **Register a passing of property** dialog box.
 1. In the **Processing** section, in the **Date** field, select the date of the passing of property rights.
 1. Use the **Mark** field to select one or more invoice lines for the passing of property rights.
 

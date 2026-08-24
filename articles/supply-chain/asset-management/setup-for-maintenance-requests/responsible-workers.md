@@ -29,7 +29,7 @@ Before you can set up responsible maintenance workers, you must set up the worke
 
 ## Set up responsible maintenance workers
 
-1. Select **Asset management** \> **Setup** \> **Workers** \> **Responsible maintenance workers**.
+1. Select **Asset management** > **Setup** > **Workers** > **Responsible maintenance workers**.
 2. Select **New** to create a record.
 3. First create a default responsible maintenance worker or responsible maintenance worker group setup, where you set only the **Responsible maintenance worker group** field and/or the **Responsible worker** field. Leave the remaining fields blank. This default setup will be used during work order scheduling if no other, more specific combination matches the contents of the work order.
 

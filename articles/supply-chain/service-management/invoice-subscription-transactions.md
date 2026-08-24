@@ -18,13 +18,13 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-1. Go to **Service management** \> **Service subscriptions** \> **All service subscriptions**.
+1. Go to **Service management** > **Service subscriptions** > **All service subscriptions**.
 
 2. Select a service subscription and then select **Edit** or select **Subscription** to create a service subscription.
 
-3. Select **Analyze** \> **Fee transactions**.
+3. Select **Analyze** > **Fee transactions**.
 
-4. Select the fee transaction or fee transactions to invoice, and then select **Functions** \> **Invoice proposal** to open the **Invoice proposals** page.
+4. Select the fee transaction or fee transactions to invoice, and then select **Functions** > **Invoice proposal** to open the **Invoice proposals** page.
 
 5. Select **Create invoice** and enter the appropriate parameters on the **Create invoice** page
 

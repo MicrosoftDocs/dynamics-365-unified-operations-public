@@ -24,7 +24,7 @@ Maintenance budgets are based on the cost types that are used in Asset Managemen
 
 ## Create a maintenance budget
 
-1. Select **Asset management** \> **Inquiries** \> **Maintenance budget** \> **Budget**.
+1. Select **Asset management** > **Inquiries** > **Maintenance budget** > **Budget**.
 2. Select **Create budget**.
 3. In the **Maintenance budget** field, enter a budget ID.
 4. In the **Description** field, enter a description.

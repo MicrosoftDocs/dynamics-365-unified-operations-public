@@ -22,13 +22,13 @@ You can create service orders manually by using a service agreement or by using 
 
 ## Create a service order manually from a service agreement
 
-1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
+1. Go to **Service management** > **Service agreements** > **Service agreements**.
 1. Select a service agreement or create a new service agreement.
 1. Select the **Deliver** tab and in the **Create** group select **Planned service orders** to open the **Create service orders** page.
 
 ## Create a service order manually on the Service orders page
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**.
+1. Go to **Service management** > **Service orders** > **Service orders**.
 1. Select **New** to create a new service order.
 1. Create service order lines for the service order.
 
@@ -37,8 +37,8 @@ You can create service orders manually by using a service agreement or by using 
 
 ## Create a service order from a project
 
-1. Go to **Project management and accounting** \> **Projects** \> **All projects**.
-1. On the **Projects** page, on the Action Pane, select the **Manage** tab \> select **Service** \> **Service orders**.
+1. Go to **Project management and accounting** > **Projects** > **All projects**.
+1. On the **Projects** page, on the Action Pane, select the **Manage** tab \> select **Service** > **Service orders**.
 1. Follow the previous procedure to create a service order manually on the **Service orders** page. The **Project ID** field displays the project reference.
 
 > [!NOTE]
@@ -48,7 +48,7 @@ You can create service orders manually by using a service agreement or by using 
 
 You can create a service order from the **Sales orders** page by using the **Create a new service order based on the sales order** wizard.
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Open the relevant sales order.
 1. On the **Sales order** tab, select **Service order** to start the **Create a new service order based on the sales order** wizard.
 1. Select **Next \>**, and then complete the following steps on the **Select agreement for service order** page:

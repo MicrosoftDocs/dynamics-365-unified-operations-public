@@ -25,11 +25,11 @@ You set up symptoms, diagnosis, and resolution settings. All these can later be 
 
 Use the following setup pages to enter information that will be used to specify the symptoms, the diagnosis, and the resolution, of the repair.
 
-- **Service management** \> **Setup** \> **Repair** \> **Conditions**.
-- **Service management** \> **Setup** \> **Repair** \> **Symptom areas**.
-- **Service management** \> **Setup** \> **Repair** \> **Diagnosis areas**.
-- **Service management** \> **Setup** \> **Repair** \> **Resolutions**.
-- **Service management** \> **Setup** \> **Repair** \> **Repair stages**.
+- **Service management** > **Setup** > **Repair** > **Conditions**.
+- **Service management** > **Setup** > **Repair** > **Symptom areas**.
+- **Service management** > **Setup** > **Repair** > **Diagnosis areas**.
+- **Service management** > **Setup** > **Repair** > **Resolutions**.
+- **Service management** > **Setup** > **Repair** > **Repair stages**.
 
 ## Symptoms and conditions
 
@@ -63,9 +63,9 @@ You can create repair lines for each step in the repair process.
 
 ## Create a repair line on a service order
 
-1. Go to **Service management** \> **Service orders** \> **Service orders**.
+1. Go to **Service management** > **Service orders** > **Service orders**.
 1. Select the service order with the service object that needs repair.
-1. Select **Repair** \> **Repair lines** to open the **Repair lines** page.
+1. Select **Repair** > **Repair lines** to open the **Repair lines** page.
 1. Select **New** to create a new line.
 1. Select a service object. You can select any service object that has been set up with an object relation on the service order.
 1. Select any of the preset symptoms, diagnosis, and execution values that are relevant in the repair line and then select the **Note** tab to create a note on the repair line, if needed.

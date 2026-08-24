@@ -29,7 +29,7 @@ You should analyze the result from the Planning Optimization fit analysis as par
 To run the Planning Optimization fit analysis and view the results, follow these steps:
 
 1. Select a company (legal entity) from the company picker in the navigation bar.
-1. Go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**.
+1. Go to **Master planning** > **Setup** > **Planning Optimization fit analysis**.
 1. On the Action Pane, select **Run analysis**.
 1. The system runs the analysis and then shows the results. For each result that shown, consult the table later in this article to see whether that feature is currently supported for Planning Optimization and, if it isn't yet supported, when support is expected to become available. If no issues exist for your selected company, the result list is blank, and you receive a "No issues found" message.
 1. Repeat this procedure for each company in your organization.

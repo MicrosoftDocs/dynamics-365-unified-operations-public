@@ -13,6 +13,8 @@ ms.custom:
 
 # Run an on-hand consistency check
 
+[!include [banner](../includes/banner.md)]
+
 The on-hand consistency check is a corruption-recovery tool that rebuilds the on-hand inventory tables (`InventSum` and, for warehouse management items, `WHSInventReserve`) from the inventory transactions table (`InventTrans`). Use it when you have confirmed on-hand data corruption—not as a periodic maintenance task.
 
 This article explains when to run the check, how to run it safely, the performance characteristics you should plan for, and how the **Skip on-hand aggregation and clean up in on-hand consistency check** parameter interacts with the standard on-hand database cleanup jobs.
@@ -46,7 +48,7 @@ Here are some rules that illustrate when not to run the on-hand consistency chec
 
 To run the on-hand consistency check, follow these steps:
 
-1. Go to **System administration** \> **Periodic tasks** \> **Database** \> **Consistency check**.
+1. Go to **System administration** > **Periodic tasks** > **Database** > **Consistency check**.
 1. Set **Module** to *Inventory management*.
 1. Expand the **Item** tree, and select the **On-hand** check box. If you suspect transaction-level corruption, select the **Inventory transactions** checkbox too.
 1. Click on the text in the **Item** row (not the check box) so that the entire row has a blue background.
@@ -81,7 +83,7 @@ For very large datasets, you can shorten the run time of the consistency check b
 
 To set this option, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters**.
 1. Open the **General** tab.
 1. In the **On-hand consistency check clean up** field group, set **Skip on-hand aggregation and clean up in on-hand consistency check** to one of the following values:
     - *Yes* – The consistency check skips the on-hand cleanup side effect and focuses solely on rebuilding the on-hand tables. This choice results in a faster run, but zero-quantity rows aren't cleaned up.
@@ -120,9 +122,9 @@ The standalone on-hand cleanup jobs are the correct tool for ongoing database ma
 
 | Job | Path | Purpose |
 |---|---|---|
-| On-hand entries cleanup | **Inventory management** \> **Periodic tasks** \> **Clean up** \> **On-hand entries cleanup** | Deletes closed and unused on-hand entries for items with tracking dimensions. |
-| Warehouse management on-hand entries cleanup | **Inventory management** \> **Periodic tasks** \> **Clean up** \> **Warehouse management on-hand entries cleanup** | Deletes zero-quantity rows in `InventSum` and `WHSInventReserve` for warehouse management items. |
-| On-hand entries aggregation by financial dimensions | **Inventory management** \> **Periodic tasks** \> **Clean up** \> **On-hand entries aggregation by financial dimensions** | Aggregates zero-quantity `InventSum` rows up to the financial inventory dimension level. |
+| On-hand entries cleanup | **Inventory management** > **Periodic tasks** > **Clean up** > **On-hand entries cleanup** | Deletes closed and unused on-hand entries for items with tracking dimensions. |
+| Warehouse management on-hand entries cleanup | **Inventory management** > **Periodic tasks** > **Clean up** > **Warehouse management on-hand entries cleanup** | Deletes zero-quantity rows in `InventSum` and `WHSInventReserve` for warehouse management items. |
+| On-hand entries aggregation by financial dimensions | **Inventory management** > **Periodic tasks** > **Clean up** > **On-hand entries aggregation by financial dimensions** | Aggregates zero-quantity `InventSum` rows up to the financial inventory dimension level. |
 
 Learn more in [Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines?toc=/dynamics365/supply-chain/toc.json) and [Warehouse management on-hand entries cleanup job](/dynamics365/supply-chain/warehousing/onhand-cleanup).
 

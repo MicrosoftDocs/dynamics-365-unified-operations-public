@@ -1,5 +1,5 @@
 ---
-title: Consolidate inventory transactions
+title: Consolidate inventory transactions (preview)
 description: Learn how to consolidate inventory transaction data to help improve system performance with an outline on toggling the feature in your system.
 author: banluo-ms
 ms.author: banluo
@@ -11,13 +11,15 @@ ms.custom:
   - bap-template
 ---
 
-# Consolidate inventory transactions
+# Consolidate inventory transactions (preview)
 
-[!include [banner](../../includes/banner.md)]
-
-[!include [preview-banner](../../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Over time, the inventory transaction table (`InventTrans`) grows and consumes more database space. This article describes how to consolidate data about inventory transactions to help improve system performance and reduce storage consumption.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 > [!NOTE]
 > Only financially updated inventory transactions can be consolidated in a selected closed ledger period. To be consolidated, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.
@@ -83,7 +85,7 @@ The system performs the following validations during the consolidation process t
 
 To allow inventory transaction consolidation without inventory closing, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters**.
 1. Open the **General** tab.
 1. Set **Allow inventory transaction consolidation without inventory closing** to one of the following values:
     - *No* – The system can only consolidate inventory transactions for closed inventory.
@@ -98,7 +100,7 @@ To allow inventory transaction consolidation without inventory closing, follow t
 
 To consolidate inventory transactions, follow these steps:
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **Inventory transaction consolidation**.
+1. Go to **Inventory management** > **Periodic tasks** > **Clean up** > **Inventory transaction consolidation**.
 
     The **Inventory transaction consolidation** page appears and shows a list of consolidated process records.
 

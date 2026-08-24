@@ -31,8 +31,8 @@ Use the following procedure to create, update, or delete certificate types and c
 
 1. Open the Supplier Engagement app, and at the bottom of the navigation pane, select the **Configuration** area.
 1. Do one of the following steps:
-    - To configure certificate types, go to **Configuration** \> **Certificates** \> **Certificate types**.
-    - To configure certifying organizations, go to **Configuration** \> **Certificates** \> **Certifying organizations**.
+    - To configure certificate types, go to **Configuration** > **Certificates** > **Certificate types**.
+    - To configure certifying organizations, go to **Configuration** > **Certificates** > **Certifying organizations**.
 1. Either open an existing record to edit it or, on the command bar, select **New** to create a record. You can also select **Delete** to remove a selected record.
 1. Enter the following information:
     - **Name** – Enter a descriptive name for the certificate type or certifying organization.

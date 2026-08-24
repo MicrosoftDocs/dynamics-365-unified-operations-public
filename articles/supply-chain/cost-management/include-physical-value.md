@@ -13,6 +13,8 @@ ms.custom:
 
 # Options for including physical value in cost calculations
 
+[!include [banner](../includes/banner.md)]
+
 Supply Chain Management provides two options for including physical value in cost calculations:
 
 - Include physical value
@@ -28,7 +30,7 @@ This article explains these options and how to set them up.
 
 You can choose whether the system should consider physically updated transactions when calculating the average cost price for items belonging to a given item model group. To set this option, follow these steps:
 
-1. Go to **Cost management** \> **Inventory accounting policies setup** \> **Item model groups**.
+1. Go to **Cost management** > **Inventory accounting policies setup** > **Item model groups**.
 1. On the list pane, select the item model group that you want to configure (or create a new one).
 1. Expand the **Costing method & cost recognition** FastTab.
 1. Set the **Include physical value** check box to one of the following values:
@@ -79,7 +81,7 @@ To use the feature described in this section, your system must meet the followin
 
 To choose whether the system should include physically updated transactions that haven't yet been financially updated when recalculating weighted average, follow these steps:
 
-1. Go to **Cost management** \> **Inventory accounting policies setup** \> **Item model groups**.
+1. Go to **Cost management** > **Inventory accounting policies setup** > **Item model groups**.
 1. On the list pane, select the item model group that you want to configure (or create a new one).
 1. Expand the **Costing method & cost recognition** FastTab.
 1. Set the **Include physical value in weighted average recalculation** check box to one of the following values:

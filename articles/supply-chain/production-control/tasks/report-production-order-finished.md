@@ -19,7 +19,7 @@ This procedure shows how to report a production order as finished. This is the s
 
 ## Report a production order as finished
 
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 1. Select a production order that has the *Started* status.
 1. On the Action Pane, select **Production order**.
 1. Select **Report as finished**. On this page, you can confirm the quantity of the finished product to be reported as finished.  

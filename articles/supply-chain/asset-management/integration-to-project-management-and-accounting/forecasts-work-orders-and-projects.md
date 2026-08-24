@@ -19,8 +19,8 @@ In Asset Management, integration with the **Project management and accounting** 
 
 Tracking of maintenance job type forecasts requires two settings:
 
-1. Select a project in **Asset management** \> **Setup** \> **Asset management parameters**, and then, on the **Assets** tab, on the **Project** FastTab, in the **Maintenance forecast project** field, select a project.
-1. When you create a maintenance job type default line, an activity number is automatically created for the line on the **Maintenance job type defaults** page (**Asset management** \> **Setup** \> **Jobs** \> **Maintenance job type defaults**).
+1. Select a project in **Asset management** > **Setup** > **Asset management parameters**, and then, on the **Assets** tab, on the **Project** FastTab, in the **Maintenance forecast project** field, select a project.
+1. When you create a maintenance job type default line, an activity number is automatically created for the line on the **Maintenance job type defaults** page (**Asset management** > **Setup** > **Jobs** > **Maintenance job type defaults**).
 
 Maintenance job type forecasts serve two purposes:
 
@@ -31,7 +31,7 @@ To track costs on work order jobs, you must first set up work order projects. Le
 
 ## Work order job projects
 
-When you create a work order job on a work order, the work order project is determined by the setup of the parent project for work orders on the **Work order project setup** page (**Asset management** \> **Setup** \> **Work orders** \> **Project setup**).
+When you create a work order job on a work order, the work order project is determined by the setup of the parent project for work orders on the **Work order project setup** page (**Asset management** > **Setup** > **Work orders** > **Project setup**).
 
 Work order job projects are created by using a combination of the following work order information:
 
@@ -46,7 +46,7 @@ For example, in the following illustration, because of the way that the *Truck E
 
 :::image type="content" source="media/01-integration-to-pma.png" alt-text="Illustration showing that, because of the way that the Truck Engine asset type is set up, every work order job that is created with the Truck Engine asset type will be a sub-project of project ID 000186." lightbox="media/01-integration-to-pma.png":::
 
-The purpose of the project ID on the work order job, and the related activity number, is to track costs that are related to the work order job, and the asset that is selected on it, in the **Project management and accounting** module. (To view the project ID and activity number, select **Asset management** \> **Work orders** \> **All work orders**, and then select the work order. On the **Line details** FastTab, the **Project ID** field shows the project ID, and the **Activity number** field shows the activity number.) For more information about cost control in Asset Management, see [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
+The purpose of the project ID on the work order job, and the related activity number, is to track costs that are related to the work order job, and the asset that is selected on it, in the **Project management and accounting** module. (To view the project ID and activity number, select **Asset management** > **Work orders** > **All work orders**, and then select the work order. On the **Line details** FastTab, the **Project ID** field shows the project ID, and the **Activity number** field shows the activity number.) For more information about cost control in Asset Management, see [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
 
 The following illustration shows a graphical overview of work order projects and related project activities.
 
@@ -64,7 +64,7 @@ To help guarantee that work order lifecycle states and related project stages on
 
 - In the **Project management and accounting** module, project stages are set up on project types on the **Project management and accounting parameters** page.  
 - On the **Project management and accounting parameters** page, use the check boxes to select relevant project stages for all the project types that you'll use. In the following illustrations, five stages (**Created**, **Estimated**, **Scheduled**, **In process**, and **Finished**) have been selected for the **Time and material** and **Internal** project types. Those five stages are relevant to both internal maintenance jobs and service maintenance jobs.
-- In the **Asset Management** module, project types are defined by the project groups that you set up on the **Work order project setup** page > **Project group** tab (**Asset management** \> **Setup** \> **Work orders** \> **Project setup**).  
+- In the **Asset Management** module, project types are defined by the project groups that you set up on the **Work order project setup** page > **Project group** tab (**Asset management** > **Setup** > **Work orders** > **Project setup**).  
 - The project groups that are set up on the **Work order project setup** page are used when you create work orders. When a work order is created, a work order project is automatically created for the work order.  
 - Every work order lifecycle state must have a related project stage.  
 - The project stage that is related to a work order lifecycle state must be defined as an active stage for the project group that is defined in the work order project. The work order project is automatically created on a work order.

@@ -30,14 +30,14 @@ To use finite capacity functionality, you must enable capacity planning globally
 
 To use finite capacity functionality, you must enable capacity planning on the **Master planning parameters** page.
 
-1. Go to **Master planning** \> **Setup** \> **Master planning parameters**.
+1. Go to **Master planning** > **Setup** > **Master planning parameters**.
 1. On the **Planned orders** tab, in the **Capacity planning** section, set the **Production** option to *Yes*.
 
 ### Activate a master plan
 
 You must enable finite capacity planning and scheduling for each master plan where you want to use it.
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. In the list pane, select a master plan that you want to set up to use finite capacity planning and scheduling.
 1. On the **General** FastTab, in the **Planned production orders** section, set the **Finite capacity** option to *Yes*.
 1. Repeat steps 2 and 3 for each additional master plan that you want to set up.
@@ -46,7 +46,7 @@ You must enable finite capacity planning and scheduling for each master plan whe
 
 You must enable finite capacity planning and scheduling for each resource where you want to use it.
 
-1. Go to **Production control** \> **Setup** \> **Resources** \> **Resources**.
+1. Go to **Production control** > **Setup** > **Resources** > **Resources**.
 1. In the list pane, select a resource that you want to set up to use finite capacity planning and scheduling.
 1. On the **Operation** FastTab, in the **Capacity button** section, set the **Finite capacity** option to *Yes*.
 1. Repeat steps 2 and 3 for each additional resource that you want to set up.

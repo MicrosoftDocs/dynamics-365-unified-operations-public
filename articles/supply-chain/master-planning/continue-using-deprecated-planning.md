@@ -13,7 +13,7 @@ ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 
 # Continue to use deprecated master planning with existing companies
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This article applies to **existing deployments** where one or more companies (legal entities) already use the deprecated master planning engine. If you're setting up a new deployment or a new tenant, Planning Optimization is the required engine starting with Supply Chain Management version 10.0.41. For more information, see [Migration to Planning Optimization for master planning](new-master-planning-engine.md).

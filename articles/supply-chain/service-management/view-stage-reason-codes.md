@@ -18,7 +18,7 @@ ms.search.form: SMAServiceOrderTable
 
 View and modify the list of stage reasons for a service order. Use stage reasons to indicate the reason for the status of a service order. For example, you can create a **Canceled** stage that is assigned a reason code of **Canceled by the customer**.
 
-  - Go to **Service management** \> **Service orders** \> **Service orders**. Open a service order.
+  - Go to **Service management** > **Service orders** > **Service orders**. Open a service order.
 
   - On the **Service orders** page, on the Action Pane, on the **Dispatch** tab, select **Stage reasons**.
 

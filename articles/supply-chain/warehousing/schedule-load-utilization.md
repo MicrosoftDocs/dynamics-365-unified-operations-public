@@ -11,7 +11,7 @@ ms.search.form:  WMSSpaceUtilSetup
 
 # Schedule load utilization
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can schedule load utilization for selected location types, and you can also project the current and future load utilization. You can project the load for one or more sites, for the load units (zone or warehouse), or for a combination of a zone and a warehouse.
 
@@ -29,7 +29,7 @@ You can project the space utilization by generating the **Warehouse load utiliza
 
 ### Create a space utilization setup for a warehouse
 
-1. Select **Inventory management** \> **Setup** \> **Warehouse monitoring** \> **Space utilization**.
+1. Select **Inventory management** > **Setup** > **Warehouse monitoring** > **Space utilization**.
 2. Select **New** to create a space utilization setup. Specify an ID and a name for the new setup.
 3. In the **Storage load mode** field, select whether the overview of space utilization should show information by warehouse, zone, or warehouse and zone.
 4. Set the **Exclude blocked locations** option to **Yes** to exclude blocked inventory locations from the calculation of available space. You can block an inventory location for input and output by specifying a blocking cause for the location in the **Input blocked** or **Output blocked** field on the **Other** FastTab on the **Inventory locations** page.
@@ -37,14 +37,14 @@ You can project the space utilization by generating the **Warehouse load utiliza
 
 ### Associate a space utilization setup with a master plan
 
-1. Select **Inventory management** \> **Periodic tasks** \> **Schedule load utilization**.
+1. Select **Inventory management** > **Periodic tasks** > **Schedule load utilization**.
 2. In the **Master plan** field, select a master plan.
 3. In the **Number of days** field, specify the number of days to include in the projection of current and future workloads.
 4. In the **Space utilization** field, select the space utilization setup to use for the projection of current and future workloads.
 
 ### Specify the load utilization projection and view information
 
-1. Select **Inventory management** \> **Inquiries and reports** \> **Physical inventory reports** \> **Warehouse load utilization**.
+1. Select **Inventory management** > **Inquiries and reports** > **Physical inventory reports** > **Warehouse load utilization**.
 2. In the **Show by** field, select the level of the space utilization projection:
 
     - **Site** – Project the space utilization for each site. This projection is useful if, for example, you want to view all the warehouses for a site so that you can balance the space utilization between the warehouses.

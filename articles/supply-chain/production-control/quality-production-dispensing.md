@@ -45,7 +45,7 @@ Before you can use the features that are described in this article, your system 
 
 To set up a journal for dispensing materials to production and batch orders, follow these steps:
 
-1. Go to **Production control** \> **Setup** \> **Production journal names**.
+1. Go to **Production control** > **Setup** > **Production journal names**.
 1. Select **New** to create a journal name for the dispensing pick journal.
 1. Enter a name and a description.
 1. Set the **Dispensing tickets** option to *Yes*.
@@ -56,7 +56,7 @@ To set up a journal for dispensing materials to production and batch orders, fol
 
 All users who should be able to dispense products in the production process must have the *Production dispenser* security role assigned to them. To assign this role to a user, follow these steps:
 
-1. Go to **System administration** \> **Users** \> **Users**.
+1. Go to **System administration** > **Users** > **Users**.
 1. Open the user that you want to enable for production dispensing.
 1. In the **User's roles** section, select **Assign roles**.
 1. In the list, select the *Production dispenser* role.
@@ -66,7 +66,7 @@ All users who should be able to dispense products in the production process must
 
 To require an electronic signature when users post the dispensing pick journal, follow these steps:
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic signature** \> **Electronic signature requirements**.
+1. Go to **Organization administration** > **Setup** > **Electronic signature** > **Electronic signature requirements**.
 1. In the list pane, select the row where the **Name** field is set to *Post dispensing ticket production journal*.
 1. Set the **Signature required** option to *Yes*.
 1. In the list pane, select the row where the **Name** field is set to *Post picking list production journal (non-dispensing)*.
@@ -77,7 +77,7 @@ To require an electronic signature when users post the dispensing pick journal, 
 
 You can create a catalog of measuring devices that are used in the dispensing process. These devices are typically scales. Every dispensing ticket can have a measuring device assigned to it. In the production control parameters, you can set up a default device. To set up a measuring device, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Measuring devices**.
+1. Go to **Inventory management** > **Setup** > **Quality control** > **Measuring devices**.
 1. Use the buttons on the Action Pane to add a new measuring device or edit an existing one. (You can also delete an existing device.)
 1. For the new or selected measuring device, set the following fields:
 
@@ -89,7 +89,7 @@ You can create a catalog of measuring devices that are used in the dispensing pr
 
 To enable production dispensing and configure how it works in your system, you must configure several settings on the **Production control parameters** page. To configure the required production control parameters, follow these steps:
 
-1. Go to **Production control** \> **Setup** \> **Production control parameters**.
+1. Go to **Production control** > **Setup** > **Production control parameters**.
 1. On the **Standard update** tab, set the following fields:
 
     - **Enable dispensing for production** – Set this option to *Yes* to enable production dispensing to be used in a production flow.
@@ -107,7 +107,7 @@ To use a dispensing process, you must configure dispensing options for each rele
 
 To set up a product for the dispensing process, follow these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Create a new product, or open an existing product that you want to set up for dispensing.
 1. On the **Manage inventory** FastTab, in the **Dispensing** section, set the following fields:
 
@@ -123,7 +123,7 @@ To set up a product for the dispensing process, follow these steps:
 
 To create the dispensing ticket and dispensing pick journal for a production or batch order where BOM or formula lines are enabled for dispensing, follow these steps:
 
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 1. Select **New production order** or **New batch order**.
 1. In the dialog, in the **Item number** field, select a product that has an approved BOM or formula version where items are enabled for dispensing.
 1. Leave all other fields in the dialog set at their default value.

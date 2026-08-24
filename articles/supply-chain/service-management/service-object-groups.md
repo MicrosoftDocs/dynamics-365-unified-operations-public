@@ -39,7 +39,7 @@ Create groups that you can assign service objects to. Service objects are invent
 
 To create service object groups, follow these steps:
 
-1. Go to **Service management** \> **Setup** \> **Service objects** \> **Service object groups**.
+1. Go to **Service management** > **Setup** > **Service objects** > **Service object groups**.
 
 2. Select **New** to create a new service object group.
 

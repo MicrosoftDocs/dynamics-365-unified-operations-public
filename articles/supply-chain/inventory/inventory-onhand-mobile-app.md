@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory On-hand mobile app
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > The Inventory On-hand mobile app (preview) is no longer available on the Power Platform Admin Center and is instead being provided as a sample app that you can download from the [scmsamples-InventoryOnHand repository on GitHub](https://github.com/microsoft/scmsamples-InventoryOnHand). The sample app is identical to the previously available first-party app, but is now distributed through GitHub rather than through the Power Platform Admin Center. You can fork the GitHub repository so you can customize it as needed for your scenarios. Previously installed instances of the first-party mobile app will continue to work. Learn more in [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).

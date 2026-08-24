@@ -36,7 +36,7 @@ You first set up the required maintenance job type categories, maintenance job t
 
 ## Create a maintenance job type category
 
-1. Select **Asset management** \> **Setup** \> **Jobs** \> **Maintenance job type categories**.
+1. Select **Asset management** > **Setup** > **Jobs** > **Maintenance job type categories**.
 1. Select **New**.
 1. In the **Maintenance job type category** field, enter an ID for the maintenance job type category.
 1. In the **Name** field, enter a name.
@@ -47,7 +47,7 @@ You first set up the required maintenance job type categories, maintenance job t
 
 ## Create a maintenance job type variant
 
-1. Select **Asset management** \> **Setup** \> **Jobs** \> **Maintenance job type variants**.
+1. Select **Asset management** > **Setup** > **Jobs** > **Maintenance job type variants**.
 1. Select **New**.
 1. In the **Maintenance job type variant** field, enter an ID for the maintenance job type variant.
 1. In the **Description** field, enter a description.
@@ -61,7 +61,7 @@ You first set up the required maintenance job type categories, maintenance job t
 
 ## Create a maintenance job trade
 
-1. Select **Asset management** \> **Setup** \> **Jobs** \> **Maintenance job trade**.
+1. Select **Asset management** > **Setup** > **Jobs** > **Maintenance job trade**.
 1. Select **New**.
 1. In the **Trade** field, enter an ID for the maintenance job trade.
 1. In the **Description** field, enter a description.
@@ -88,7 +88,7 @@ When you create maintenance checklist lines in the maintenance job type default,
 
 **Example 2:** You make a visual inspection of a piece of equipment to assess wear and tear.
 
-1. Select **Asset management** \> **Setup** \> **Maintenance checklists** \> **Maintenance checklist variables**.
+1. Select **Asset management** > **Setup** > **Maintenance checklists** > **Maintenance checklist variables**.
 1. Select **New**.
 1. In the **Variable** field, enter an ID for the maintenance checklist variable.
 1. In the **Name** field, enter a name.
@@ -105,7 +105,7 @@ When you create maintenance checklist lines in the maintenance job type default,
 
 Maintenance checklist templates can be used as a common set of tasks that a worker must perform to complete a work order correctly. The templates are referenced from maintenance checklist lines on the maintenance job type default. Templates can be referenced across multiple maintenance job type default lines. Therefore, you can easily reuse a set of common maintenance checklist tasks. Examples of maintenance checklist templates include general safety instructions, and a list of items and conditions that must be checked on a specific pump or similar models of a conveyor belt.
 
-1. Select **Asset management** \> **Setup** \> **Maintenance checklists** \> **Maintenance checklist templates**.
+1. Select **Asset management** > **Setup** > **Maintenance checklists** > **Maintenance checklist templates**.
 1. Select **New**.
 
     A template ID is automatically entered in the **Maintenance checklist template** field.
@@ -132,7 +132,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 
 ## Create a maintenance job type
 
-1. Select **Asset management** \> **Setup** \> **Jobs** \> **Maintenance job types**.
+1. Select **Asset management** > **Setup** > **Jobs** > **Maintenance job types**.
 1. Select **New**.
 1. In the **Maintenance job type** field, enter an ID for the maintenance job type.
 1. In the **Name** field, enter a name.
@@ -155,11 +155,11 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 
 ## Create maintenance job type default lines and related forecasts, maintenance checklists, tools, description, and attachments
 
-1. Select **Asset management** \> **Setup** \> **Jobs** \> **Maintenance job type defaults**.
+1. Select **Asset management** > **Setup** > **Jobs** > **Maintenance job type defaults**.
 
     –or–
 
-    Select **Asset management** \> **Setup** \> **Jobs** \> **Maintenance job types**, select a maintenance job type, and then select **Maintenance job type defaults**.
+    Select **Asset management** > **Setup** > **Jobs** > **Maintenance job types**, select a maintenance job type, and then select **Maintenance job type defaults**.
 
 1. Select **New**.
 1. In the **Functional location**, **Asset type**, **Manufacturer**, **Model**, and **Asset** fields, select appropriate values, depending on how specific the maintenance job type default should be.
@@ -167,7 +167,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 1. In the **Maintenance job type variant** and **Trade** fields, select a maintenance job type variant and a maintenance job trade as you require.
 1. Select **Forecast**.
 1. On the **Maintenance job type default forecast** page, you can make forecasts on hours, items, and expenses. On the relevant tabs, select **Add**, and make selections to create the required forecasts for the maintenance job type.
-1. On the **Item forecast** tab, you can select inventory dimensions that should be shown on the item line. Select **Inventory** \> **Dimensions**, select the dimensions to show, set the **Save setup** option to *Yes*, and then select **OK**.
+1. On the **Item forecast** tab, you can select inventory dimensions that should be shown on the item line. Select **Inventory** > **Dimensions**, select the dimensions to show, set the **Save setup** option to *Yes*, and then select **OK**.
 1. On the **Item forecast** tab, select **Item where used** to see an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type default, spare parts, and work orders.
 
     The **Maintenance forecast totals** FastTab shows an overview of forecast totals. This overview includes the total number of hours and forecast lines that have been created.
@@ -213,7 +213,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 1. Select **Save** to save the attachment.
 
     > [!NOTE]
-    > Attachments on a maintenance job type default line are printed together with a work order report only if the document types of the attachments are selected on the **Document types** tab of the **Asset management parameters** page (**Asset management** \> **Setup** \> **Asset management parameters**). Examples of attachments include guidelines that explain how to complete a specific job or a predefined maintenance checklist (if you don't use the maintenance checklist functionality for maintenance job type default lines).
+    > Attachments on a maintenance job type default line are printed together with a work order report only if the document types of the attachments are selected on the **Document types** tab of the **Asset management parameters** page (**Asset management** > **Setup** > **Asset management parameters**). Examples of attachments include guidelines that explain how to complete a specific job or a predefined maintenance checklist (if you don't use the maintenance checklist functionality for maintenance job type default lines).
 
     On the **Maintenance job type defaults** page, each line shows the number of forecasted hours, and also the number of lines that have been created for items, expenses, maintenance checklists, and tools. The **Assets** field shows the number of active assets that are related to the maintenance job type default line.
 
@@ -226,13 +226,13 @@ When the system selects the available maintenance job type default that should b
 
 A project activity ID is automatically related to each maintenance job type default line that you create. The project activity is created on the forecast project that is selected in the **Maintenance forecast project** field on the **Assets** tab of the **Asset management parameters** page. The purpose of the project activity is to manage forecasts on hours, items, and expenses in relation to work orders. Maintenance job type forecasts are automatically transferred to the work order line, and they're copied from the forecast project to the work order project that is created for the work order line. The purpose of the project activity is to manage forecasts in relation to work orders.
 
-You can set up a batch job to update maintenance job type default references at regular intervals, or you can manually run the job. To create a batch job or run a manual update, select **Asset management** \> **Periodic** \> **Preventive maintenance** \> **Update maintenance job type default references**.
+You can set up a batch job to update maintenance job type default references at regular intervals, or you can manually run the job. To create a batch job or run a manual update, select **Asset management** > **Periodic** > **Preventive maintenance** > **Update maintenance job type default references**.
 
 ## Overview of maintenance job types that are related to assets
 
 After you've created the required maintenance job type default combinations, you can use the **All assets** page to get an overview of the current maintenance job type default that is related to a specific asset. The overview shows all maintenance job type default combinations that can be used on the asset type that is selected for the asset. These combinations include combinations that have variations of maintenance job type variants and maintenance job trades.
 
-1. Select **Asset management** \> **Assets** \> **All assets** or **Active assets**.
+1. Select **Asset management** > **Assets** > **All assets** or **Active assets**.
 1. In the list, select the asset to see an overview of maintenance job type combinations for.
 1. On the Action Pane, on the **General** tab, in the **Related information** group, select **Maintenance job types**.
 
@@ -247,7 +247,7 @@ After you've created the required maintenance job type default combinations, you
 
 In Asset Management, you can automatically update any changes to maintenance job type forecasts for hour costs, item costs, and expenses that have been updated in other modules. In this way, you help guarantee that your maintenance job type forecasts always use the latest cost prices.
 
-1. Select **Asset management** \> **Periodic** \> **Forecast** \> **Update maintenance job type forecast**.
+1. Select **Asset management** > **Periodic** > **Forecast** > **Update maintenance job type forecast**.
 1. In the **Update maintenance job type forecast** dialog box, on the **Records to include** FastTab, you can add selections for specific maintenance job types as you require. Select **Filter**, and then select **Select** to make the selections.
 1. On the **Run in the background** FastTab, you can set up the automatic update as a batch job, as you require.
 1. Select **OK** to start the forecast update.

@@ -28,7 +28,7 @@ During planning, if there's actual demand, the system pegs it against a planned 
 
 To define safety stock for an item at a specific location, follow these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Select the relevant product in the grid.
 1. On the Action Pane, on the **Plan** tab, select **Item coverage**.
 1. While you're on the **Overview** tab, select **New** on the Action Pane to add a line to the grid.
@@ -65,13 +65,13 @@ Therefore, the **Net requirements** page for item Z0001 might resemble the follo
 
 Use minimum keys to handle seasonal fluctuations in demand. For example, you can decrease the minimum inventory level for an item during the off-season and then gradually increase it during the other months.
 
-To create a minimum key, go to **Master planning** \> **Setup** \> **Coverage** \> **Minimum/maximum keys**. You can then specify the minimum key to adjust the safety stock level by seasonality by setting the **Minimum key** field on the **General** tab of the **Item coverage** page.
+To create a minimum key, go to **Master planning** > **Setup** > **Coverage** > **Minimum/maximum keys**. You can then specify the minimum key to adjust the safety stock level by seasonality by setting the **Minimum key** field on the **General** tab of the **Item coverage** page.
 
 If you're using minimum keys, set the **Minimum periods** option to *Yes* to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you set the option to *No*, the minimum inventory is fulfilled for the current period only.
 
 The following procedure shows an example of how to set up a minimum key that accounts for increased seasonal demand during the spring and summer months.
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Minimum/maximum keys**.
+1. Go to **Master planning** > **Setup** > **Coverage** > **Minimum/maximum keys**.
 1. Select **New** to create a minimum/maximum key.
 1. In the **Minimum or maximum key** field, enter an identifier for the key. In the **Name** field, enter a name for the key.
 1. Set the **Use the effective date** option to *Yes* and leave the **Effective date** field blank to make the key valid from the first day of the current year.
@@ -109,7 +109,7 @@ If the coverage code is *Min/Max*, you can also specify the maximum inventory qu
 
 The minimum quantity is 10, and the maximum quantity is 15. Current on-hand inventory is 4. This situation gives a minimum quantity requirement of 6. However, because the maximum quantity is 15, master planning generates a planned order for 11 items.
 
-For items that follow seasonal demands, you might need to maintain different maximum levels. To set up these levels, define **Maximum keys** by going to **Master planning** \> **Setup** \> **Coverage** \> **Minimum/maximum keys**. Fill in the **Maximum key** field on the **Item coverage** page. You can view the information about the safety stock levels, defined through minimum keys on the **Min/Max** tab, on the **Item coverage** page. Make sure that, for a certain period, the minimum and the maximum values stay in sync.
+For items that follow seasonal demands, you might need to maintain different maximum levels. To set up these levels, define **Maximum keys** by going to **Master planning** > **Setup** > **Coverage** > **Minimum/maximum keys**. Fill in the **Maximum key** field on the **Item coverage** page. You can view the information about the safety stock levels, defined through minimum keys on the **Min/Max** tab, on the **Item coverage** page. Make sure that, for a certain period, the minimum and the maximum values stay in sync.
 
 ## Plan safety stock replenishment for FEFO items
 

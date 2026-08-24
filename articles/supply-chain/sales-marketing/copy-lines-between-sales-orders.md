@@ -17,7 +17,7 @@ ms.custom:
 
 The *copy from all* feature lets you copy sales order lines between sales orders. This feature is useful when you must create an order that is similar to an existing one.
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Either [create a new sales order](tasks/create-sales-orders.md) or open an existing sales order that you want to copy lines to.
 1. On the Action Pane, on the **Sales order** tab, in the **Copy** group, select **From all**.
 1. In the **Copy from all** dialog, on the **Parameters** FastTab, set the following fields:

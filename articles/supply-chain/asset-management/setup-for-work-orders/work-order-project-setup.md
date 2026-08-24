@@ -25,7 +25,7 @@ When you create a work order job on a work order, the project setup in the **Pro
 
     - The parent project (project ID) for a work order job is found in the parent project setup. (For more information about the parent project setup, see the next section.) For example, if you associate a customer or a functional location with a specific parent project, the parent project is used every time that you create work orders for that customer or that functional location. If you don't relate a specific project ID to, for example, a functional location, the next relevant parent project in the work order project setup is used.
     - A project type is required for every project ID. The project type is found in the setup of the project group setup. (For more information about the project group setup, see the next section.) If no match is found in the project group setup, the project group setup on the parent project is used.
-    - The setup for requiring project activities on forecasts and journals is copied from the parent project to the work order project. If the **Hour**, **Expense**, and **Item** options are set to *Yes* for the project that is used as a parent project, a project activity is mandatory on forecasts and journals. (To access these options, select **Project management and accounting** \> **Projects** \> **All Projects**, and then select the project that is used as a parent project. The options are in the **Require activity on journals** section on the **Setup** FastTab.)
+    - The setup for requiring project activities on forecasts and journals is copied from the parent project to the work order project. If the **Hour**, **Expense**, and **Item** options are set to *Yes* for the project that is used as a parent project, a project activity is mandatory on forecasts and journals. (To access these options, select **Project management and accounting** > **Projects** > **All Projects**, and then select the project that is used as a parent project. The options are in the **Require activity on journals** section on the **Setup** FastTab.)
 
 - Financial dimensions are copied from the asset and merged with the parent project.
 
@@ -33,7 +33,7 @@ The next section explains how to set up parent projects and project groups. Pare
 
 ## Set up work order projects
 
-Before you start to create work orders, you must set up work order projects. The **Work order project setup** page (**Asset management** \> **Setup** \> **Work orders** \> **Project setup**) contains two tabs: **Parent project** and **Project group**.
+Before you start to create work orders, you must set up work order projects. The **Work order project setup** page (**Asset management** > **Setup** > **Work orders** > **Project setup**) contains two tabs: **Parent project** and **Project group**.
 
 On the **Parent project** tab, you can set up project relations that can be used if no project is set up on the asset that is selected on the work order job. A parent project setup isn't required if your company uses asset projects. It's relevant only if you want to use work order projects instead of asset projects. In that case, you must set up at least one parent project.
 
@@ -45,7 +45,7 @@ Project groups aren't mandatory. If you don't set up project groups, the parent 
 
 The setup allows for complete integration with the **Project management and accounting** module. Therefore, you can track the costs that are related to work orders in the related projects. The following procedure describes the setup for work order projects.
 
-1. Select **Asset management** \> **Setup** \> **Work orders** \> **Project setup**.
+1. Select **Asset management** > **Setup** > **Work orders** > **Project setup**.
 2. On the **Parent project** tab, select **Add**.
 3. In the **Work order type**, **Functional location**, **Asset type**, and **Asset** fields, select values as you require. For each line that you add, you can set just one field or multiple fields. The number of fields that you set determines the combination that is used when a project ID is selected in Asset Management.
 
@@ -54,7 +54,7 @@ The setup allows for complete integration with the **Project management and acco
 4. In the **Project ID** field, select the project that should be related to the setup that you created in step 3.
 5. If the project setup should be valid for only a limited period, select an end date in the **Expiration** field. Otherwise, select *Never*.
 
-    By default, the start date is the date when you add the work order project to the page. It's controlled by the **Effective** field, which is hidden by default. To show the **Effective** field, select **View** \> **All**. You can then use the **Effective** field together with the **Expiration** field to set up a limited period of validity for the work order project.
+    By default, the start date is the date when you add the work order project to the page. It's controlled by the **Effective** field, which is hidden by default. To show the **Effective** field, select **View** > **All**. You can then use the **Effective** field together with the **Expiration** field to set up a limited period of validity for the work order project.
 
     ![Work orders project setup page.](media/17-setup-for-work-orders.png)
 

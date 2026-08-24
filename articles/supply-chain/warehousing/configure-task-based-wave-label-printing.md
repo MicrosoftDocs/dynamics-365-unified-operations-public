@@ -23,7 +23,7 @@ When you use the *Task based wave label printing* feature, the system first crea
 
 You must first create the new wave step method and enable it for parallel, asynchronous task processing.
 
-1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave process methods**.
+1. Go to **Warehouse management** > **Setup** > **Waves** > **Wave process methods**.
 1. On the Action Pane, select **Regenerate method**. Notice that *waveLabelPrinting* is added to the list of wave process methods that you can use in your shipping wave templates.
 1. Select the record where the **Method name** field is set to *waveLabelPrinting*, and then, on the Action Pane, select **Task configuration**.
 1. On the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
@@ -34,7 +34,7 @@ You must first create the new wave step method and enable it for parallel, async
 
 You can now update an existing wave template so that it uses the *Wave label printing* wave processing method. Alternatively, you can create a new wave template that uses it.
 
-1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave templates**.
+1. Go to **Warehouse management** > **Setup** > **Waves** > **Wave templates**.
 1. On the Action Pane, select **Edit**.
 1. In the list pane, select the wave template to update. (If you're using demo data for testing purposes, you can select *24 Shipping default*.)
 1. On the **Methods** FastTab, in the **Remaining methods** column, select the row where the **Name** field is set to *waveLabelPrinting*.
@@ -53,7 +53,7 @@ If the wave label processing exceeds the wave task processing threshold, task-ba
 
 If wave label generation fails (for example, if conversion of the work quantity to the wave label quantity fails and throws an error), only the appropriate transaction fails. The work that was previously created remains frozen. To correct errors and print the wave labels, follow these steps:
 
-1. Go to **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**.
+1. Go to **Warehouse management** > **Outbound waves** > **Shipment waves** > **All waves**.
 1. Select the relevant wave in the grid.
 1. On the Action Pane, on the **Wave** tab, in the **Print** group, select **Wave labels**.
 1. Follow the on-screen instructions to send the labels for printing.

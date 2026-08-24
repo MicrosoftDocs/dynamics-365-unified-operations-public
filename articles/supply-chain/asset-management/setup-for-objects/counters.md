@@ -32,7 +32,7 @@ A counter registration can be updated manually or automatically based on product
 
 ## Create counter types for asset counter registrations
 
-1. Go to **Asset management** \> **Setup** \> **Asset types** \> **Counters**.
+1. Go to **Asset management** > **Setup** > **Asset types** > **Counters**.
 2. Select **New** to create a new counter type.
 3. Insert an ID in the **Counter** field, and a counter name in the **Name** field.
 4. On the **General** FastTab, select a counter unit in the **Unit** field.

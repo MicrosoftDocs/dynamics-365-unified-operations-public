@@ -16,7 +16,7 @@ ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 
 The cancel work functionality in Microsoft Dynamics 365 Supply Chain Management lets the admin user cancel specific warehouse work that is currently in progress, but that is blocked by the system or can't be completed because of exceptional circumstances. This functionality is an attractive and secure alternative to SQL corrective scripts that fix inconsistent data. However, whereas these scripts are typically requested from IT professionals, the cancel work functionality can be used by users in the company who have admin rights.
 
-You can access the cancel work functionality at **Warehouse management** \> **Periodic tasks** \> **Clean up \> Cancel work**. In the **Cancel work** dialog box, specify the work ID of the work to cancel, and then select **OK**.
+You can access the cancel work functionality at **Warehouse management** > **Periodic tasks** > **Clean up \> Cancel work**. In the **Cancel work** dialog box, specify the work ID of the work to cancel, and then select **OK**.
 
 ## Warehouse work that can be canceled
 

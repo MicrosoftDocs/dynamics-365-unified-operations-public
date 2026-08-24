@@ -12,7 +12,7 @@ ms.search.form:
 
 # Enable change management on existing products
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how you can enable change management for existing products. It also describes cases where your ability to enable change management is limited.
 

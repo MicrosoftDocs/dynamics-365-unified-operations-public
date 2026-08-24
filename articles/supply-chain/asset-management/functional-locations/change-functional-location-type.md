@@ -28,7 +28,7 @@ Before you can use this feature, your system must meet the following requirement
 
 To change the functional location type of one or more existing functional locations, follow these steps:
 
-1. Go to **Asset management** \> **Functional locations** \> **All functional locations**.
+1. Go to **Asset management** > **Functional locations** > **All functional locations**.
 1. On the **All functional locations** list page, select one or more functional locations that you want to change the type for. If you select multiple functional locations, all of them must be of the same type.
 1. On the Action Pane, on the **Functional locations** tab, in the **Maintain** group, select **Change functional location type**.
 1. In the **Change functional location type** dialog box, on the **Parameters** FastTab, set the following fields:

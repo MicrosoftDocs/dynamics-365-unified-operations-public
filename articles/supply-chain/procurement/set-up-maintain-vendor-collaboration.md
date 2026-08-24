@@ -25,7 +25,7 @@ A procurement professional or a vendor that has enough permissions can request t
 
 ### Set up the security roles that are available for selection when a new user request is used for a contact person
 
-1. Select **System administration** \> **Security** \> **External roles**.
+1. Select **System administration** > **Security** > **External roles**.
 2. Select **New**, and then select a security role and the *Vendor* party role.
 
 You might want to add the *Vendor admin (external)* and *Vendor (external)* roles that are provided in Supply Chain Management. Alternatively, you can use security roles that your company has created.
@@ -69,7 +69,7 @@ For information about how to onboard prospective vendors, see [Onboard vendors](
 
 ### Set up a security role that is used when a new prospective vendor user request is submitted
 
-1. Select **System administration** \> **Security** \> **External roles**.
+1. Select **System administration** > **Security** > **External roles**.
 2. Select **New**, and then select a security role and the *Prospective vendor* party role.
 
 You should add the *Vendor prospect (external)* role that is provided in Supply Chain Management.

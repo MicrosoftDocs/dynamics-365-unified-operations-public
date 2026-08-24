@@ -46,7 +46,7 @@ To enable the two systems to communicate with each other, you must enable impers
 To enable carbon emission calculations, you must map the transportation methods in Supply Chain Management to the transportation modes (vehicle types) in Microsoft Sustainability Manager.
 
 1. Sign in to Supply Chain Management.
-1. Go to **Transportation management** \> **Setup** \> **Carriers** \> **Transportation methods**.
+1. Go to **Transportation management** > **Setup** > **Carriers** > **Transportation methods**.
 1. For each transportation method that's listed on the page, use the **Transportation Mode in Microsoft Sustainability Manager** field to identify the matching transportation mode in Microsoft Sustainability Manager.
 
     > [!NOTE]
@@ -58,7 +58,7 @@ To enable carbon emission calculations, you must map the transportation methods 
 
 To complete the setup, you must validate the connection and enable the integration scenario.
 
-1. In Supply Chain Management, go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
+1. In Supply Chain Management, go to **Transportation management** > **Setup** > **Transportation management parameters**.
 1. On the **Microsoft Cloud for Sustainability integration configuration** tab, select **Validate connection** to check whether your Microsoft Power Platform environment is correctly set up and ready for the integration.
 1. When the validation is completed, in the **Model name** field, select the model that best matches the transportation scenario that you want to calculate carbon emissions for:
 

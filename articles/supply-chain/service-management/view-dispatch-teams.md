@@ -16,7 +16,7 @@ ms.search.form: SMADispatchBoard
 
 Service orders on the **Dispatch board** page are grouped by dispatch team.
 
-1. Go to **Service management** \> **Periodic** \> **Dispatch board**.
+1. Go to **Service management** > **Periodic** > **Dispatch board**.
 
 1. On the Action Pane, select **Adjust view settings**.
 

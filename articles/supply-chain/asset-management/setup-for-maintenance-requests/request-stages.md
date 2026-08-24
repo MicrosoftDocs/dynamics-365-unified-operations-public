@@ -22,7 +22,7 @@ Maintenance request lifecycle states define the stages that a request can go thr
 *Depot repair* is a maintenance request type that lets you receive assets from another location so that you can do a maintenance or repair job, and then return the asset after the job is completed. To use depot repair, you must enable its configuration key by following these steps:
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Go to **System administration** \> **Setup** \> **License configuration**.
+1. Go to **System administration** > **Setup** > **License configuration**.
 1. On the **Configuration keys** tab, expand the **Asset management** node and then select the check box for **Inbound/outbound**.
 1. Turn off maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
@@ -30,7 +30,7 @@ Maintenance request lifecycle states define the stages that a request can go thr
 
 To manage the maintenance request lifecycle states that you need, follow these steps:
 
-1. Go to **Asset management** \> **Setup** \> **Maintenance requests** \> **Lifecycle states**.
+1. Go to **Asset management** > **Setup** > **Maintenance requests** > **Lifecycle states**.
     :::image type="content" source="media/02-setup-for-requests.png" alt-text="Screenshot of the Maintenance request lifecycle states page." lightbox="media/02-setup-for-requests.png":::
 
 1. Use the buttons on the Action Pane to add, remove, or edit a lifecycle state.
@@ -56,7 +56,7 @@ To manage the maintenance request lifecycle states that you need, follow these s
 
 After you've created the lifecycle states that are required for your maintenance requests, they can be divided into lifecycle state groups, or lifecycle models. Maintenance request lifecycle models are used to create the flow that can be used for different types of maintenance requests. At a minimum, one standard maintenance request lifecycle model should be created.
 
-1. Go to **Asset management** \> **Setup** \> **Maintenance requests** \> **Lifecycle models**.
+1. Go to **Asset management** > **Setup** > **Maintenance requests** > **Lifecycle models**.
     :::image type="content" source="media/06-setup-for-requests.png" alt-text="Screenshot of the Maintenance request lifecycle models page." lightbox="media/06-setup-for-requests.png":::
 
 1. Use the buttons on the Action Pane to add, remove, or edit a lifecycle model.

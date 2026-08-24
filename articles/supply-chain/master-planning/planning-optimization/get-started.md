@@ -50,7 +50,7 @@ Before you install the Planning Optimization Add-in, make sure the following pre
 - You must sign in to your Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you get an error message regarding missing user permissions while installing the Planning Optimization Add-in, follow these steps:
     1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
     1. Open the environment where you want to install the add-in.
-    1. Go to **Settings** \> **Users** and select your user account from the list to see its details.
+    1. Go to **Settings** > **Users** and select your user account from the list to see its details.
     1. From your user details page, select the **Client Access License (CAL) information** link.
     1. On the **Client Access License (CAL) information** page, make sure that **Access Mode** is set to *Read-Write*.
   
@@ -61,7 +61,7 @@ Before you install the Planning Optimization Add-in, make sure the following pre
 To use Planning Optimization, you must enable its configuration key. follow these steps:
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Go to **System administration** \> **Setup** \> **License configuration**.
+1. Go to **System administration** > **Setup** > **License configuration**.
 1. On the **Configuration keys** tab, select the check box for **Planning Optimization**.
 1. Turn off maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
@@ -93,7 +93,7 @@ After you install the Planning Optimization Add-in for your environment, you mus
 To configure your system to use the Planning Optimization Add-in for master planning, follow these steps:
 
 1. Sign in to Supply Chain Management.
-1. Go to **Master planning** \> **Setup** \> **Planning Optimization parameters**.
+1. Go to **Master planning** > **Setup** > **Planning Optimization parameters**.
 1. Open the **General** tab.
 1. Check the **Connection status**. It shows one of the values listed in the following table.
 

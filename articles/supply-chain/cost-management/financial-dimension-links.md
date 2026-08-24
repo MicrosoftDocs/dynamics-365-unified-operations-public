@@ -26,7 +26,7 @@ When you set up a financial dimension link to a site, you:
 
 To set up a financial dimension link to a site, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
+1. Go to **Inventory management** > **Setup** > **Posting** > **Dimension link**.
 1. On the Action Pane, select **Edit**.
 1. In the **Select the dimension to be linked to the storage dimension, Site** field, select the financial dimension to link to the site inventory dimension.
 1. On the Action Pane, select **Sites** to open the **Sites** page.
@@ -49,7 +49,7 @@ Activating a financial dimension link has the following effects:
 
 To activate a financial dimension link, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
+1. Go to **Inventory management** > **Setup** > **Posting** > **Dimension link**.
 1. On the Action Pane, select **Activate link**.
 1. The **Linked dimension update** dialog opens. Select **OK** to activate the link.
 1. The **Current status** field updates to show that the *Dimension link is active* and the **Select the dimension to be linked to the storage dimension, Site** field becomes inactive.
@@ -67,7 +67,7 @@ You must set up a financial dimension link before you can lock it.
 
 To lock a financial dimension link, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
+1. Go to **Inventory management** > **Setup** > **Posting** > **Dimension link**.
 1. On the Action Pane, select **Lock link**.
 1. The **Linked dimension update** dialog opens. Select **OK** to lock the link. The system updates all open transactions accordingly.
 1. The **Current status** field updates to show that the *Dimension link is locked*.
@@ -80,7 +80,7 @@ You can unlock locked financial dimension links. When you unlock a link, you can
 - Modify the dimension value of the linked financial dimension on open transactions that use both financial dimensions and inventory dimensions.
 - Modify the financial dimension values on the **Sites** page.
 
-1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
+1. Go to **Inventory management** > **Setup** > **Posting** > **Dimension link**.
 1. On the Action Pane, select **Unlock link**.
 1. The **Current status** field updates to show that the *Dimension link is active*.
 
@@ -94,7 +94,7 @@ When you deactivate a financial dimension link, the following changes occur:
 
 To deactivate a financial dimension link, follow these steps:
 
-1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
+1. Go to **Inventory management** > **Setup** > **Posting** > **Dimension link**.
 1. On the Action Pane, select **Deactivate link**.
 1. The **Current status** field updates to show that the *Dimension link is inactive*.
 

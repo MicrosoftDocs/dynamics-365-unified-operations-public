@@ -19,7 +19,7 @@ This article focuses on scheduling a production order with operations scheduling
 
 ## Create a production order
 
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 2. Select **New production order**.
 3. In the **Item number** field, enter or select the item number for the production order.
 4. Select **Create**.

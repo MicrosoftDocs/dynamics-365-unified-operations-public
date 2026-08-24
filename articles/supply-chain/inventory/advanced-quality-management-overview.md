@@ -13,7 +13,7 @@ ms.custom:
 
 # Advanced quality management overview
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Advanced quality management is a suite of quality management features introduced in Microsoft Dynamics 365 Supply Chain Management version 10.0.44. It enhances the existing quality management features by adding many new tools. These tools address core issues that manufacturers face as they try to meet the United States Food and Drug Administration's (FDA's) Quality System Regulation (QSR), part 11 of Title 21 of the Code of Federal Regulations (21 CFR Part 11), current Good Manufacturing Practice (cGMP), and other regulatory and international standards, such as the International Organization for Standardization (ISO) and Six Sigma.
 

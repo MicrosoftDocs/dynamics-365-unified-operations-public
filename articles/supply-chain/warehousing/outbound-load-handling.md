@@ -26,7 +26,7 @@ Each outbound load can be associated with one or more order line quantities for 
 
 To manage the process of shipping your orders, apply an *outbound shipment processing policy* where you set up the desired flow for your shipments.
 
-The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** \> **Setup** \> **Shipping** \> **Outbound shipment processing policies**):
+The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** > **Setup** > **Shipping** > **Outbound shipment processing policies**):
 
 - **Fill entire shipment** – Choose what to do if work creation fails for one or more lines in a shipment (for example, due to location directive failures). This feature only checks for work creation failures and doesn't check whether the full ordered quantity can be fulfilled. Choose one of the following options:
     - *Enabled*: If work creation fails for any line in a shipment, exclude that entire shipment from the wave (create no work for that shipment), regardless of the setting for each customer.
@@ -93,11 +93,11 @@ When you ship a load, the system can generate an *outbound advanced shipping not
 
 ### <a name="load-packing-slip-posting"></a>Load packing slip posting
 
-When you process the *packing slip* from a load, the system updates the related sales order line transactions to *Deducted*. At that point, the invoicing process can begin. The *Load packing slip posting* scheduled task (**Warehouse management** \> **Periodic** \> **Load packing slip posting**) processes *Shipped* outbound loads where the **Load packing slip background posting status** value is set to *Queued*. After successful posting, the system changes the status to *None*. If any errors occur during posting, the status is changed to *Error* instead. For more information about failed postings, you can review the details in the information log that is generated for the batch job.
+When you process the *packing slip* from a load, the system updates the related sales order line transactions to *Deducted*. At that point, the invoicing process can begin. The *Load packing slip posting* scheduled task (**Warehouse management** > **Periodic** > **Load packing slip posting**) processes *Shipped* outbound loads where the **Load packing slip background posting status** value is set to *Queued*. After successful posting, the system changes the status to *None*. If any errors occur during posting, the status is changed to *Error* instead. For more information about failed postings, you can review the details in the information log that is generated for the batch job.
 
 Although the background posting procedure requires a status of *Queued*, you can manually post a load packing slip even if the status is *Error*. After successful posting, the status is changed to *None*.
 
-To enable the *Load packing slip posting* task to work in the background, you must configure appropriate settings on the **Packing slip posting parameters** page (**Warehouse management** \> **Setup** \> **Inventory** \> **Packing slip posting parameters**). Because this task runs in the background, within a batch job, avoid printing to the screen if printing is included in the process.
+To enable the *Load packing slip posting* task to work in the background, you must configure appropriate settings on the **Packing slip posting parameters** page (**Warehouse management** > **Setup** > **Inventory** > **Packing slip posting parameters**). Because this task runs in the background, within a batch job, avoid printing to the screen if printing is included in the process.
 
 > [!TIP]
 > To enable automatic distribution of sales packing slips for each shipment, based on the predetermined values, set the **Packing slip creation policy** value to *Shipment* for the load, and supply **Preallocated packing slip ID** and **Preallocated packing slip document date** values for each associated shipment in the *Packing slip posting parameters* section.

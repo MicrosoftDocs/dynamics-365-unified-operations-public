@@ -84,9 +84,9 @@ Because Planning Optimization treats negative aggregate on-hand as 0, you might 
 
 To configure coverage groups for handling negative on-hand, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**.
 1. Select or create a coverage group, and then set the **Coverage code** field to *Min/Max*.
-1. Go to **Master planning** \> **Master planning** \> **Setup** \> **Coverage** \> **Item coverage** for the relevant items.
+1. Go to **Master planning** > **Master planning** > **Setup** > **Coverage** > **Item coverage** for the relevant items.
 1. Set the **Minimum** field to the lowest inventory level that you want to maintain.
 1. Set the **Maximum** field to the target inventory level for replenishment.
 

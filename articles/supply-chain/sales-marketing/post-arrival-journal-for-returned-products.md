@@ -18,7 +18,7 @@ ms.search.form: WMSArrivalOverview
 
 To process a return, first validate the return quantity, update the quantity field in the item arrival journal. Then select a disposition code or indicate that the returned items have to be inspected. After completing these steps, you can post the item arrival journal for the return order.
 
-1. Go to **Inventory management** \> **Periodic** \> **Arrival overview**.
+1. Go to **Inventory management** > **Periodic** > **Arrival overview**.
 
 1. In the **Setup name** filter, select **Return order**.
 
@@ -26,7 +26,7 @@ To process a return, first validate the return quantity, update the quantity fie
 
 1. Locate the line of the return order that you want to post, select its **Select for arrival** box, and then select **Start arrival**.
 
-1. Go to **Journals** \> **Show arrivals from receipts** to open the **Location journal** page.
+1. Go to **Journals** > **Show arrivals from receipts** to open the **Location journal** page.
 
     > [!TIP]
     > To view detailed information, select a journal, and then select **Lines**.

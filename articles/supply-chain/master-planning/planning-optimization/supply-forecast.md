@@ -21,7 +21,7 @@ Supply forecasts let you specify the supply that you expect to need during a fut
 
 You can specify whether each master plan should consider forecasts when it runs. Use the following procedure to set forecasting options for each plan.
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. Select an existing master plan in the list pane, or select **New** on the Action Pane to create a new one.
 1. On the **General** FastTab, set the following fields:
 
@@ -48,7 +48,7 @@ You can specify whether each master plan should consider forecasts when it runs.
 
 To set options that control how a coverage group reduces its forecast requirements for master plans that use transaction-based reduction, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Coverage groups**.
 1. Select an existing coverage group in the list pane, or select **New** on the Action Pane to create a new one.
 1. On the **Other** FastTab, in the **Reduce forecast by** field, specify how supply forecast requirements should be reduced for items in the coverage group, for master plans where the **Method used to reduce forecast requirements** field is set to *Transactions - reduction key* or *Transactions - dynamic period*. Select one of the following values:
 
@@ -63,7 +63,7 @@ To set options that control how a coverage group reduces its forecast requiremen
 
 To enter a supply forecast for a product, follow these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Select the product that you want to enter a forecast for.
 1. On the Action Pane, on the **Plan** tab, select **Supply forecast**.
 1. On the **Supply forecast** page, on the Action Pane, select **New** to add a forecast to the grid.
@@ -166,7 +166,7 @@ The same rules apply to demand forecasts, with the additional dimensions of cust
 
 Use the following procedure to check whether a planned order was created as a result of a supply forecast.
 
-1. Go to **Master planning** \> **Master planning** \> **Planned orders**.
+1. Go to **Master planning** > **Master planning** > **Planned orders**.
 1. Open the planned order that you want to inspect.
 1. On the **General** FastTab, check the value of the **Supply forecast** field. If the order was created to cover a supply forecast, this field is set to *Yes*.
 

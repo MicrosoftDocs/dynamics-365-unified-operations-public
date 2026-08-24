@@ -23,7 +23,7 @@ Sample reports provide visibility into how the results of a specific test evolve
 
 To analyze sample test results for a production order, follow these steps:
 
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 1. Find and select the order you want to analyze.
 1. From the Action Pane, open the **View** tab and, from the **Manage quality** group, select **Analyze inline sample results** or **Analyze continuous sample results**, depending on which type of sample you want to analyze.
 1. In the dialog, set the following fields:
@@ -38,7 +38,7 @@ Supply Chain Management [stores detailed procedures](quality-sample-management-a
 
 To see the procedures defined for any sample, follow these steps:
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample management workbench**.
+1. Go to **Inventory management** > **Periodic tasks** > **Quality management** > **Sample management workbench**.
 1. Find and select the sample for which you want to view the procedures.
 1. From the Action Pane, open the **Sample** tab and select **Sample procedures**.
 
@@ -48,6 +48,6 @@ Supply Chain Management maintains a full audit trail of all changes made to samp
 
 To view the audit trail for a sample, follow these steps:
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample management workbench**.
+1. Go to **Inventory management** > **Periodic tasks** > **Quality management** > **Sample management workbench**.
 1. Find and select the sample for which you want to view the audit trail.
 1. From the Action Pane, open the **Sample** tab and select **Audit trail**.

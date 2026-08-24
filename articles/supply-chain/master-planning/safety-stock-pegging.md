@@ -32,7 +32,7 @@ Before you can use the features described in this article, ensure your system me
 
 Safety stock pegging options are set at the coverage group level. Follow these steps to set safety stock pegging options for a selected coverage group.
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**.
 1. Follow one of these steps:
 
     - To edit an existing group, select it in the list pane, and then select **Edit** on the Action Pane.

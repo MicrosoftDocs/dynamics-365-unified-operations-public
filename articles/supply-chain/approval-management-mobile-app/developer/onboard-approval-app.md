@@ -58,7 +58,7 @@ To make the Approvals Management mobile app available to users when they sign in
 Follow these steps to install the Approvals Management mobile app.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. On the left navigation pane, select **Resources** \> **Dynamics 365 apps**.
+1. On the left navigation pane, select **Resources** > **Dynamics 365 apps**.
 1. Search for and select the app named *Dynamics 365 Approvals Management*.
 1. On the top toolbar, select **Install**.
 1. Select the environment where you want to install the app, review the packages that will be installed, and select the **I agree to the terms of service** checkbox.
@@ -86,7 +86,7 @@ Users who have the *System administrator* role can use the app to manage all typ
 Follow these steps to add the required security roles to a Supply Chain Management user.
 
 1. Sign in to your Supply Chain Management environment by using an administrator account.
-1. Go to **System administration** \> **Users** \> **Users**.
+1. Go to **System administration** > **Users** > **Users**.
 1. Use the filter to find a user who should be able to use the app.
 1. Open the details page for the selected user by selecting the link in the **User ID** column.
 1. On the **User's roles** FastTab, on the toolbar, select **Assign roles** to open the **Assign roles to user** dialog box.

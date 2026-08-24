@@ -30,7 +30,7 @@ There are two types of time freezes:
 
 To view, create, edit, or delete a time freeze rule, follow these steps:
 
-1. On the navigation pane, select **Configuration** \> **Time freezes**.
+1. On the navigation pane, select **Configuration** > **Time freezes**.
 
     The **Active time freeze rules** page shows a list of active rules. For each rule, you can review the name, conditions, and other settings.
 

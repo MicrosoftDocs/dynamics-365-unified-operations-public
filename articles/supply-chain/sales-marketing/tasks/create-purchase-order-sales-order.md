@@ -33,7 +33,7 @@ To use the options for delivery mode and terms of delivery described in this sec
 
 To configure how the delivery mode and terms of delivery are set for purchase orders that you create from sales orders in various scenarios, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**.
+1. Go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing parameters**.
 1. Open the **Delivery** tab.
 1. On the **Synchronization of mode and terms of delivery** FastTab, make the following settings in the **For delivery type stock** field group. These settings apply to purchase orders that you create from *stocked delivery* sales order lines.
     - **Synchronize on creation** – Controls how the system sets the delivery mode and terms of delivery on purchase orders that you create from *stocked delivery* sales order lines. Choose one of the following options:
@@ -52,7 +52,7 @@ To configure how the delivery mode and terms of delivery are set for purchase or
 
 This procedure shows you how to create a purchase order that's based on a sales order. The product quantities on the purchase order fulfill the demand of the originating sales order. Fulfilling sales demand this way is an alternative to a more comprehensive and optimized method of distribution requirements planning. You can run this procedure by using demo data company *USMF* or your own data.
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 1. Select **New**.
 1. In the **Customer account** field, select the drop-down button to open the lookup.
 1. In the list, find and select the desired record.

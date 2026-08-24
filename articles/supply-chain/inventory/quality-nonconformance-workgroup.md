@@ -26,7 +26,7 @@ Before you can use the features that are described in this article, your system 
 
 ## Manage nonconformance work groups
 
-1. Go to **Inventory management** \> **Setup** \> **Quality management** \> **Non conformance work groups**.
+1. Go to **Inventory management** > **Setup** > **Quality management** > **Non conformance work groups**.
 1. Use the buttons on the Action Pane to create new nonconformance work groups in the grid or edit existing ones. (You can also delete existing work groups.)
 1. Set the following fields for each row:
 

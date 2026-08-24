@@ -33,7 +33,7 @@ When you specify a coverage time fence for a coverage group, the setting applies
 
 To specify a coverage time fence for a coverage group, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
+1. Go to **Master planning** > **Setup** > **Coverage** > **Coverage groups**.
 1. Select an existing coverage group in the list, or create a new coverage group.
 1. On the **General** FastTab, set the **Coverage time fence (days)** field to the number of days that you want to use as the coverage time fence for the coverage group.
 
@@ -43,7 +43,7 @@ Every item (product) belongs to a coverage group. If you don't explicitly assign
 
 To specify a coverage time fence for a specific item, follow these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Select a product in the grid.
 1. On the Action Pane, on the **Plan** tab, in the **Coverage** group, select **Item coverage**.
 1. On the **Item coverage** page, on the **Overview** tab, select or create a row for the site where you want to set a coverage time fence.
@@ -57,7 +57,7 @@ You can specify a coverage time fence at the master plan level. By using this se
 
 To specify a coverage time fence for a specific master plan, follow these steps:
 
-1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
+1. Go to **Master planning** > **Setup** > **Plans** > **Master plans**.
 1. Select an existing master plan in the list, or create a new master plan.
 1. On the **Time fences in days** FastTab, set the **Coverage** option to *Yes*. Then, in the field under the option, enter the number of days that you want to use as the coverage time fence for the master plan.
 

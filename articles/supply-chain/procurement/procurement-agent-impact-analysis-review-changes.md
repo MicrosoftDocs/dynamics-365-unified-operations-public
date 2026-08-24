@@ -33,8 +33,8 @@ The system runs the impact analysis for purchase order line changes only. If a d
 To review if changes have downstream impact, follow these steps:
 
 1. Open the **(Preview) Emails from vendors** page by doing one of the following steps:
-    - Go to **Procurement and sourcing** \> **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace. Then select the **(Preview) Emails from vendors** tile.
-    - Go to **Procurement and sourcing** \> **(Preview) Procurement Agent - Supplier communications** \> **(Preview) Emails from vendors**.
+    - Go to **Procurement and sourcing** > **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace. Then select the **(Preview) Emails from vendors** tile.
+    - Go to **Procurement and sourcing** > **(Preview) Procurement Agent - Supplier communications** > **(Preview) Emails from vendors**.
 
 1. Select an email classified as a *Change request* in the list pane, and then look at the grids on the **Summary** FastTab, where changed field values are highlighted in bold. These changes can be on the purchase order header and/or lines.
 1. Check the **Impact** column on both the **Purchase order header** and **Purchase order line** grids. It shows one of the following values based on the impact analysis results: *Has impact* or *No impact*.
@@ -50,7 +50,7 @@ To review if changes have downstream impact, follow these steps:
 
 When vendors respond to purchase orders through the vendor collaboration interface, you can review proposed changes and their downstream effects directly from the purchase order preparation workspace. If you enabled impact analysis for the vendor collaboration source, the impact results are available alongside the vendor's response so you can decide how to proceed. To review the impact of changes received through the vendor collaboration interface, follow these steps:
 
-1. Go to **Procurement and sourcing** \> **Workspaces** \> **Purchase order preparation**.
+1. Go to **Procurement and sourcing** > **Workspaces** > **Purchase order preparation**.
 1. On the **Orders** FastTab, open the **In external review requires action** tab.
 1. Find and select a purchase order with a **Vendor response status** of *Accepted with changes*.
 1. To view more details about the impact of the proposed change on the selected purchase order, do one of the following steps:

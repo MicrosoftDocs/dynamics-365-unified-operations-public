@@ -20,7 +20,7 @@ You can record the history of an element in a service bill of materials (BOM). E
 
 ## Update a service BOM element
 
-1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
+1. Go to **Service management** > **Service agreements** > **Service agreements**.
 
 2. Select **Edit** to open the **Service agreements** details page.
 
@@ -41,7 +41,7 @@ You can record the history of an element in a service bill of materials (BOM). E
 
 ## Delete a service BOM line
 
-1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
+1. Go to **Service management** > **Service agreements** > **Service agreements**.
 
 2. Select **Edit** to open the **Service agreements** details page.
 

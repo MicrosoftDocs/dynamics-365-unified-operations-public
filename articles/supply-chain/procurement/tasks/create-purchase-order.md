@@ -21,7 +21,7 @@ This article shows you how to create a purchase order manually. The system often
 
 The purchase order header captures information that applies to the entire order, such as the vendor, delivery location, receipt date, and the person placing the order. Follow these steps to start a new purchase order and set the header values that will act as defaults for the order lines you add later.
 
-1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
+1. Go to **Procurement and sourcing** > **Purchase orders** > **All purchase orders**.
 1. Select **New**.
 1. Select vendor account *US-101*. When you select a vendor, the system copies details from the vendor record, such as address, invoice account, delivery terms, and delivery mode, as default values into the order header. You can change these values at any time.  
 1. Expand the **General** section.

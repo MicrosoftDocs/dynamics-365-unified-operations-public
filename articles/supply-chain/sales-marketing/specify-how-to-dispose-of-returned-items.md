@@ -150,7 +150,7 @@ For each disposition code that you define, you must select a disposition action.
 
 ## Select a disposition code for a quarantine order
 
-1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.
+1. Go to **Inventory management** > **Periodic** > **Quality management** > **Quarantine orders**.
 1. For an existing quarantine order, select an action from the **Disposition code** field on the **Overview** tab.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

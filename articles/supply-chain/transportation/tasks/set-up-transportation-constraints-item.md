@@ -19,7 +19,7 @@ This procedure sets up a transportation constraint to prevent a selected item fr
 
 ## Create an item constraint
 
-1. Go to **Transportation management** \> **Setup** \> **Routing** \> **Constraints**.
+1. Go to **Transportation management** > **Setup** > **Routing** > **Constraints**.
 1. Open the **Item** tab.
 1. On the toolbar, select **New**. Enter values for the following columns of the new row:
     - **Item constraint** – Enter a unique identifier for the constraint.

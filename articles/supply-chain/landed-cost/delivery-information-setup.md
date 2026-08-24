@@ -13,7 +13,7 @@ ms.custom:
 
 # Delivery information setup
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to set up delivery information for the **Landed cost** module.
 
@@ -21,7 +21,7 @@ This article describes how to set up delivery information for the **Landed cost*
 
 Shipping ports identify where goods are being shipped from and to. For each voyage, you define a "to" port and a "from" port, based on the journey that you select for the voyage vessel. Shipping ports build the legs of a journey and the voyage activities. Typically, you define them by using the name of the city and the country/region where the physical shipping port is located.
 
-To work with shipping ports, go to **Landed cost** \> **Delivery information setup** \> **Shipping ports**. There, you can view, add, and remove records for your shipping ports. The following table describes the fields that are available for each record.
+To work with shipping ports, go to **Landed cost** > **Delivery information setup** > **Shipping ports**. There, you can view, add, and remove records for your shipping ports. The following table describes the fields that are available for each record.
 
 | Field | Description |
 |---|---|
@@ -32,7 +32,7 @@ To work with shipping ports, go to **Landed cost** \> **Delivery information set
 
 Use the Tracking control center to set up the lead times, status updates, and flow of information that is associated with a voyage as the shipping containers move from one leg to the next. When you create a tracking control record, you associate it with a specific leg of a journey for a voyage. When a voyage updates a leg, the associated record updates and fills in as defined. You can update tracking information for individual voyages from the **All voyages** page.
 
-To open the Tracking control center, go to **Landed cost** \> **Delivery information setup** \> **Tracking control center**.
+To open the Tracking control center, go to **Landed cost** > **Delivery information setup** > **Tracking control center**.
 
 The Tracking control center shows one of three page views, depending on the value that you select in the **Create type** field in the list pane: *Blank*, *Lead time*, or *Status update*. Each create type updates a different set of information that is associated with the progress of a voyage from the point of origin to the final destination.
 
@@ -61,8 +61,8 @@ To add a lead time rule to the Tracking control center, follow these steps:
 
 1. Follow one of these steps:
 
-    - Go to **Landed cost** \> **Multi-leg journey setup** \> **Legs**. Select the leg that you want to set up lead times for. On the Action Pane, select **Tracking control center**. The Tracking control center is preloaded with information about the selected leg.
-    - Go to **Landed cost** \> **Delivery information setup** \> **Tracking control center**. You must then manually select a leg in step 4 of this procedure.
+    - Go to **Landed cost** > **Multi-leg journey setup** > **Legs**. Select the leg that you want to set up lead times for. On the Action Pane, select **Tracking control center**. The Tracking control center is preloaded with information about the selected leg.
+    - Go to **Landed cost** > **Delivery information setup** > **Tracking control center**. You must then manually select a leg in step 4 of this procedure.
 
 1. In the list pane, set the **Create type** field to *Lead time*.
 1. On the Action Pane, select **New**.
@@ -90,8 +90,8 @@ To add a status update rule to the Tracking control center, follow these steps:
 
 1. Follow one of these steps:
 
-    - Go to **Landed cost** \> **Multi-leg journey setup** \> **Legs**. Select the leg that you want to set up a status update for, and then, on the Action Pane, select **Tracking control center**. The Tracking control center is preloaded with information about the selected leg.
-    - Go to **Landed cost** \> **Delivery information setup** \> **Tracking control center**. You must then manually select a leg in step 4 of this procedure.
+    - Go to **Landed cost** > **Multi-leg journey setup** > **Legs**. Select the leg that you want to set up a status update for, and then, on the Action Pane, select **Tracking control center**. The Tracking control center is preloaded with information about the selected leg.
+    - Go to **Landed cost** > **Delivery information setup** > **Tracking control center**. You must then manually select a leg in step 4 of this procedure.
 
 1. In the list pane, set the **Create type** field to *Status update*.
 1. On the Action Pane, select **New**.
@@ -111,7 +111,7 @@ To add a status update rule to the Tracking control center, follow these steps:
 
 You use records that have a **Create type** value of *Blank* to override or enter a field value, based on the data of another field. A field from Landed cost will overwrite data in other areas of Microsoft Dynamics 365 Supply Chain Management, based on rules that are set up in the Tracking control center.
 
-1. Go to **Landed cost** \> **Delivery information setup** \> **Tracking control center**.
+1. Go to **Landed cost** > **Delivery information setup** > **Tracking control center**.
 1. In the list pane, set the **Create type** field to *Blank*.
 1. On the Action Pane, select **New**.
 1. Define the source and destination values, matching criteria, copy action, and other relevant parameters, as required for your rule.

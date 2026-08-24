@@ -29,7 +29,7 @@ To use Warehouse management only mode, you must have at least one *source system
 
 In [Configure your source systems](wms-only-mode-setup.md#source-systems), you can find general information about how to set up source systems so that they can be used with Warehouse management only mode. The following procedure highlights the settings that are important for unannounced returns.
 
-1. Go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse management integration** > **Source systems**.
 1. In the list pane, select the source system that you want to set up. Alternatively, create a new source system 
 1. On the **Inbound shipment orders** FastTab, set the following fields to configure the options for unannounced returns:
 
@@ -51,7 +51,7 @@ To enable workers to process unannounced returns in the warehouse, you must set 
 
 ### Return item receiving policies
 
-Return item receiving policies enable each menu item to process the return correctly. You set them up by going to **Warehouse management** \> **Setup** \> **Mobile device** \> **Return item receiving policies**. Policies that are used with Warehouse management only mode must have the following settings:
+Return item receiving policies enable each menu item to process the return correctly. You set them up by going to **Warehouse management** > **Setup** > **Mobile device** > **Return item receiving policies**. Policies that are used with Warehouse management only mode must have the following settings:
 
 - **Return process** – Select either *Blind return* or *Return details*, depending on the type of return that your menu item should process.
 - **Create return order** – Select *Inbound shipment order*.

@@ -17,7 +17,7 @@ ms.custom:
 
 Service objects are a customer's assets and products for which you can perform a service.
 
-1. Go to **Service management** \> **Setup** \> **Service objects** \> **Service objects**.
+1. Go to **Service management** > **Setup** > **Service objects** > **Service objects**.
 2. On the Action Pane, select **New**.
 3. In the **Description** field, enter a description of the object.
 4. In the **Service object group** field, select the group that the object belongs to.

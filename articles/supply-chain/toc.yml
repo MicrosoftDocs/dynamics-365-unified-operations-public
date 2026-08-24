@@ -1897,7 +1897,7 @@
           href: inventory/on-hand-consistency-check.md
       - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
-      - name: Consolidate inventory transactions
+      - name: Consolidate inventory transactions (preview)
         items:
         - name: Consolidate inventory transactions
           href: inventory/inventory-transaction-consolidation.md

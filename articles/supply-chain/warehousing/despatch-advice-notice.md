@@ -250,7 +250,7 @@ When the update is processed, the header and all child records are overwritten f
 
 Imported messages are queued and then handled by the message processor. To process them, schedule a batch job by following these steps:
 
-1. Go to **System administration** \> **Message processor** \> **Message processor**.
+1. Go to **System administration** > **Message processor** > **Message processor**.
 1. In the **Message queue** field, select **Despatch advice messages**.
 1. Specify a processing interval, and then schedule the batch job.
 
@@ -260,14 +260,14 @@ During processing, each message resolves or creates the inbound load and shipmen
 
 You can monitor despatch advice processing in the following ways:
 
-- **Message processor messages** – Go to **System administration** \> **Message processor** \> **Message processor messages** to review message content, find failed messages, and reprocess them. For more information, see [Message processor messages for warehouse management processes](warehouse-message-processor-messages.md).
+- **Message processor messages** – Go to **System administration** > **Message processor** > **Message processor messages** to review message content, find failed messages, and reprocess them. For more information, see [Message processor messages for warehouse management processes](warehouse-message-processor-messages.md).
 - **Business events** – Set up the *Despatch advice message changed status* [business event](../../fin-ops-core/dev-itpro/business-events/home-page.md) so that downstream systems are alerted when a message succeeds or fails.
 
 ## Inspect the results of processing a despatch advice
 
 After a despatch advice message is accepted, follow these steps to inspect the load that it created:
 
-1. Go to **Warehouse management** \> **Loads** \> **All loads**.
+1. Go to **Warehouse management** > **Loads** > **All loads**.
 1. Find and open the load that was created for the despatch advice.
 1. On the **Load lines** FastTab, review the order numbers, items, and quantities.
 1. On the Action Pane, on the **Ship and receive** tab, in the **Receive** group, select **Packing structure** to review the license plates, cases, and items that were built from the logistic units.

@@ -82,7 +82,7 @@ In some cases, you must start a request for quotation (RFQ) process to identify 
 
 You can control whether the system should update fixed asset fields when you accept an RFQ bid for purchase requisitions that have business rules for fixed asset determination (BRAD). To set this option, follow these steps (requires Supply Chain Management version 10.0.49 or later):
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**.
+1. Go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing parameters**.
 1. Open the **Purchase requisition** tab.
 1. Set **RFQ bid–driven fixed asset field updates** to one of the following values:
     - *Yes* – Reevaluate asset classification and accounting values based on the accepted RFQ bid. This value is the default setting.

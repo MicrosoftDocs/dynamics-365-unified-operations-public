@@ -16,7 +16,7 @@ ms.search.form: SMAServiceObjectTable
 
 A template bill of materials (BOM) can be attached to a service object relation. The service object relation can then be associated with either service orders or service agreements.
 
-1. Go to **Service management** \> **Setup** \> **Service objects** \> **Service objects**.
+1. Go to **Service management** > **Setup** > **Service objects** > **Service objects**.
 
 2. Select a service object.
 

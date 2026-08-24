@@ -23,7 +23,7 @@ You can define any number of product lifecycle states to represent the different
 
 The following procedure describes how to create, configure, and manage product lifecycle states. It explains how to mark a lifecycle state as the default for new released products and how to control which business processes are allowed or blocked for products in a specific lifecycle state.
 
-1. Go to **Product information management** \> **Setup** \> **Product lifecycle state**.
+1. Go to **Product information management** > **Setup** > **Product lifecycle state**.
 1. On the Action Pane, select **Refresh processes** to ensure all of the latest business processes are available for use with your product lifecycle states.
 1. Follow one of these steps:
     - To create a new lifecycle state, select **New** on the Action Pane.
@@ -98,7 +98,7 @@ You can associate a product lifecycle state to newly released products or produc
 
 To manually update the product lifecycle state of an existing released product or product master, follow these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 
 1. Find the product or product master that you want to update. Product masters show a **Product subtype** of *Product master* on the **Released products** page.  
 
@@ -118,7 +118,7 @@ To manually update the product lifecycle state of an existing released product o
 
 To manually update the product lifecycle state of an existing released product variant, follow these steps:
 
-1. Go to **Product information management** \> **Products** \> **Released product variants**.
+1. Go to **Product information management** > **Products** > **Released product variants**.
 
 1. Find the product variant that you want to update. Select or open the record.
 

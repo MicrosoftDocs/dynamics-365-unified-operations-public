@@ -130,7 +130,7 @@ Posting works in two ways, depending on whether you use an approval process for 
 - **Transfer to journal** – Transfer the batch merge details to a new inventory journal. If you've set up automatic reservations, the quantities in the source batches are reserved. The details of the batch merge can't be changed. To modify the batch merge, you must delete the journal. The journal can be used as a task that another employee must perform later. The reservation of the batch quantity to the journal line is secured. This allocation lets a quality planner or a warehouse manager create tasks for their employees.
 - **Post the batch merge** – Post the batch merge directly. This action can be performed after the physical merge has occurred.
 
-You can approve the inventory journal for the batch merge from the **All batch merges** list page. Select **Journal** \> **Post**. After a journal is posted, you can't change the details in the merged batch. After you transfer a batch merge to an inventory journal, you can change the details only if the journal is deleted.
+You can approve the inventory journal for the batch merge from the **All batch merges** list page. Select **Journal** > **Post**. After a journal is posted, you can't change the details in the merged batch. After you transfer a batch merge to an inventory journal, you can change the details only if the journal is deleted.
 
 ## After I merged a catchweight item, why can’t I see the catchweight information in the inventory journal?
 

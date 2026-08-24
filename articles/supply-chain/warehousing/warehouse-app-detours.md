@@ -149,7 +149,7 @@ In this procedure, you configure a data inquiry detour for the **Movement by tem
 
 To create the **Item data inquire** mobile device menu item, follow these steps:
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new menu item:
 
@@ -179,7 +179,7 @@ To create the **Item data inquire** mobile device menu item, follow these steps:
 
 ### Create a menu-specific override and configure the detour for scenario 3
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device steps**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device steps**.
 1. Find and select the step ID named *LocOrLP*.
 1. On the Action Pane, select **Add step configuration**.
 1. In the dropdown dialog, in the **Menu item** field, select *Movement by template*.

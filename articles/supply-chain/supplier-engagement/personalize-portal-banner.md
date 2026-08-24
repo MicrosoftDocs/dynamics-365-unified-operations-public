@@ -37,7 +37,7 @@ The following screenshot shows the banner text on the registration page.
 To update the banner text on registration and onboarding pages, follow these steps:
 
 1. Open the [Power Pages Management app](/power-pages/configure/portal-management-app).
-1. Go to **Content** \> **Content Snippets**.
+1. Go to **Content** > **Content Snippets**.
 1. Find the snippet by name (*Registration/HeaderPageTitle* or *Header/VendorOnboarding*) and open it.
 1. Update the **Value** field with your desired text.
 1. Select **Save**.
@@ -64,7 +64,7 @@ Before you begin, make sure you have the following:
 To replace the banner image, follow these steps:
 
 1. Open the [Power Pages Management app](/power-pages/configure/portal-management-app).
-1. Go to **Content** \> **Web Files**.
+1. Go to **Content** > **Web Files**.
 1. Locate and open the web file named *homepage-banner*.
 
     The following screenshot shows the homepage-banner web file record.

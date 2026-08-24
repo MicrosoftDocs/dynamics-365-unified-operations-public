@@ -19,7 +19,7 @@ When you create a work order, you create work order jobs that have related asset
 
 You might be able to add forecast lines to a work order or delete them from a work order. The setup of the work order lifecycle state, the related project type, and the stage rules that are related to the project type determine whether you can add or edit forecast lines. For more information about work order lifecycle states and related project stages, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Go to **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
+1. Go to **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 2. Select the work order in the list, and then, on the Action Pane, on the **Work order** tab, in the **Project** group, select **Forecast**. The **Work order maintenance forecast** page shows forecast lines from the maintenance job type that is selected on the work order job.
 
 ## Add an hours forecast to a work order
@@ -45,7 +45,7 @@ To create a line for a spare part that isn't on the spare parts list or the asse
 4. In the **Unit** field, select the unit of measure for the quantity.
 5. In the **Cost price** and **Currency** fields, enter appropriate values.
 6. In the **Line property** field, select a line property.
-7. To change the list of dimensions that is shown on the item lines, select **Inventory** \> **Display dimensions**, select the dimensions, and then set the **Save setup** option to *Yes*.
+7. To change the list of dimensions that is shown on the item lines, select **Inventory** > **Display dimensions**, select the dimensions, and then set the **Save setup** option to *Yes*.
 
 To add a spare part from an approved spare parts list, follow these steps:
 
@@ -80,7 +80,7 @@ To get an overview that shows where the item on the selected line is used in rel
 
 If hour costs, item costs, and expenses are updated in other modules, work order forecasts in Asset Management can automatically be updated to reflect those changes. This capability helps guarantee that the latest cost prices are always used in your work order forecasts. You can also do similar updates for [maintenance job type forecasts](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
-1. Go to **Asset management** \> **Periodic** \> **Forecast** \> **Update work order forecast**.
+1. Go to **Asset management** > **Periodic** > **Forecast** > **Update work order forecast**.
 
     :::image type="content" source="media/07-work-orders.png" alt-text="Screenshot of the Update work order forecast dialog box." lightbox="media/07-work-orders.png":::
 

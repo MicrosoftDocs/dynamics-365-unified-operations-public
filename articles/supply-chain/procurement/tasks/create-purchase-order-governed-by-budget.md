@@ -19,7 +19,7 @@ Use this procedure to create a purchase order that is checked for available budg
 
 ## Review the budget control configuration
 
-1. Go to **Budgeting** \> **Setup** \> **Budget control** \> **Budget control configuration**.
+1. Go to **Budgeting** > **Setup** > **Budget control** > **Budget control configuration**.
 1. Select the **Budget funds available** tab.
 1. Select the **Documents and journals** tab.
 1. Select the **Define budget control rules** tab.
@@ -28,7 +28,7 @@ Use this procedure to create a purchase order that is checked for available budg
 
 ## Create a purchase order
 
-1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
+1. Go to **Procurement and sourcing** > **Purchase orders** > **All purchase orders**.
 1. Select **New**.
 1. In the **Vendor account** field, enter or select a value.
 1. Expand the **General** FastTab.
