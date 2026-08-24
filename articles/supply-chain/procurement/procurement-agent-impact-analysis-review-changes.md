@@ -67,7 +67,7 @@ The **Impact analysis** page opens when you select **View details** from either 
 
 ### Filter and item information
 
-The **Filter by** section shows key information about the purchase order and item affected by the proposed change, along with a selector to switch between different lines if the purchase order has multiple lines. If you're using master planning, you can also select the link to see the net requirements details for how the impact was calculated. The information in this section helps you understand which item and purchase order line you're analyzing, and gives you quick access to related information and planning details.
+The **Filter by** section shows key information about the purchase order and item affected by the proposed change, along with a selector to switch between different lines if the purchase order has multiple lines. The information in this section helps you understand which item and purchase order line you're analyzing, and gives you quick access to related information and planning details.
 
 This section provides the following information and features:
 
@@ -106,7 +106,6 @@ The **Impacted inventory** FastTab shows whether the purchase order change cause
 | **Warehouse** | The warehouse where inventory is affected. |
 | **Expected inventory level** | Shows one of the following values to indicate how the change impacts inventory levels:<ul><li>*Below minimum* – Inventory drops below configured safety stock level but remains positive. You still have inventory, but your safety buffer is consumed.</li><li>*Negative* – Inventory goes below zero (complete stockout). You can't fulfill orders from on-hand inventory.</li></ul> |
 | **Expected impact date** | The date when the inventory breach occurs. |
-| **Product dimensions** | Shows the specific product variant affected (such as configuration, size, color, style) if the item has product dimensions configured. |
 
 The inventory projection graph on the **Impacted inventory** FastTab visualizes inventory levels over time, showing how the purchase order change affects your projected inventory. The graph includes a legend with two lines:
 
@@ -129,7 +128,7 @@ Additional visual elements:
 Purchasers can accept changes that:
 
 - Have no or low downstream impact.
-- Have an impact, but the purchaser decides to accept the change anyway. This decision might be because there's no other option but to accept. The purchaser might have followed up with the supplier to request options such as expedited production or shipping and split deliveries, but concluded that nothing else can be done.
+- Have an impact, but the purchaser decides to accept the change anyway. This decision might be because there's no other option but to accept.
   
 To accept changes without going back to the purchase order, see one of the following articles based on how you receive changes from vendors:
 

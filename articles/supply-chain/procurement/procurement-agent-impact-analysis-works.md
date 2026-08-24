@@ -35,6 +35,19 @@ Supplier communications features of the Procurement Agent detect the following k
 - Quantity increases
 - Earlier delivery dates
 
+## Planning data used for the impact analysis
+
+Impact analysis uses planning data available in Dynamics 365 Supply Chain Management. It uses any available markings and peggings between supply and demand orders present in the last-run dynamic plan to trace downstream orders impacted by a purchase order line change.
+
+If you use the master planning features of Supply Chain Management, impact analysis follows the supply and demand chain through pegging relationships in the active dynamic plan to find which planned and confirmed orders depend on changed supply. The dynamic plan used for impact analysis is the one set in the **Current dynamic master plan** field on the **Master planning parameters** page (**Master planning** > **Setup** > **Master planning parameters**).
+
+When pegging data is available, impact analysis can trace dependency chains to identify indirectly affected orders, such as those listed on the following pages:
+
+- **Purchase order** \> **Production order** \> **Production order** \> **Sales order**
+- **Purchase order** \> **Transfer order** \> **Sales order**
+
+Pegging enables broader, multilevel impact tracing. When you use the master planning features of Supply Chain Management, the available planning data is richer, which enables deeper and broader impact visibility.
+
 ## How impact analysis determines impact
 
 Impact analysis evaluates planning and inventory data to place changes into one of the following categories:
@@ -70,16 +83,3 @@ A change has no impact when it meets one of the following conditions:
 The following diagram illustrates how impact analysis evaluates whether a change has impact or not based on the downstream orders and inventory levels.
 
 :::image type="content" source="media/vendor-change-impact-analysis-decision-flowchart.png" alt-text="Diagram showing logic for the impact analysis to determine whether a vendor change has impact." lightbox="media/vendor-change-impact-analysis-decision-flowchart.png":::
-
-### Planning data used for the impact analysis
-
-Impact analysis works regardless of whether you use the master planning features of Supply Chain Management or an external planning system. What differs is how impact analysis traces the changed purchase order through the available planning data to find downstream demand linked to that supply.
-
-If you use external planning systems, impact analysis traces downstream orders based on explicitly defined relationships (markings) only.
-
-If you use the master planning features of Supply Chain Management, then in addition to markings, impact analysis also follows the supply-demand chain through pegging relationships in the active dynamic plan to find which planned and confirmed orders depend on this changed supply. When pegging data is available, impact analysis can trace dependency chains to identify indirectly affected orders, such as:
-
-- Purchase order \> production order \> production order \> sales order
-- Purchase order \> transfer order \> sales order
-
-Pegging enables broader, multi‑level impact tracing. When you use the master planning features of Supply Chain Management, the available planning data is richer, which enables deeper and broader impact visibility.

@@ -2625,14 +2625,14 @@
             href: procurement/procurement-agent-impact-analysis-overview.md
           - name: How impact analysis works
             href: procurement/procurement-agent-impact-analysis-works.md
-          - name: Set up, configure, and test impact analysis
-            href: procurement/procurement-agent-impact-analysis-setup.md
-          - name: Use the agent deployment wizard to set up impact analysis features (preview)
+          - name: Use the agent deployment wizard to set up impact analysis features
             href: procurement/procurement-agent-impact-analysis-setup-wizard.md
           - name: Review impact of purchase order changes from vendors
             href: procurement/procurement-agent-impact-analysis-review-changes.md
           - name: Simulate whether purchase order changes have impact
             href: procurement/procurement-agent-impact-analysis-simulation.md
+          - name: Test impact analysis features
+            href: procurement/procurement-agent-impact-analysis-testing.md
         - name: Supplier communications (production-ready preview)
           items:
           - name: Supplier communications features of the Procurement Agent
