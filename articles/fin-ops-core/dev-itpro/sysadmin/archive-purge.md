@@ -22,14 +22,12 @@ The **Archive with Dataverse long term retention** feature decreases the amount 
 > [!IMPORTANT]
 > **Purge from history archive (Preview) feature is temporarily disabled in production**
 >
-> To prevent potential archived **field-level data issues** in the Datalake, this feature is temporarily disabled in all production environments until further notice. This precautionary measure helps protect the integrity of customer data while the issue is being investigated and resolved.
+> To prevent potential archived **field-level data issues** in the Datalake, this feature is temporarily disabled in all production environments. 
 >
 > **What this change means for you:**
 >
 > - Existing purge jobs that completed aren't affected.
 > - The **Delete history** button is temporarily unavailable in production environments.
->
-> This page will be updated when the feature is re-enabled in production.
 
 ## Prerequisites
 
