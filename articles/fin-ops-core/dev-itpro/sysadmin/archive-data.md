@@ -40,24 +40,6 @@ This feature currently supports archiving the following types of finance and ope
 
 Support for additional data types is planned in future releases.
 
-> [!IMPORTANT]
-> Microsoft identified a synchronization issue that affects certain Data Archive scenarios when synchronizing Dynamics 365 finance and operations data to the [Dataverse-managed data lake](archive-view.md#view-archived-data-in-the-dataverse-managed-data-lake). In these scenarios, private or internal fields aren't copied. To resolve this issue, Microsoft updates the affected fields to make them public.
->
-> The affected fields remain available in your Dynamics 365 finance and operations tables. We will fix the data synchronization issue by copying the missing fields from those tables into our Dataverse-managed data lake.
->
-> When you install the hotfix in your Dynamics 365 finance and operations environment, which makes the affected fields public, the system automatically detects the update. No action on your part is needed. This detection occurs automatically through a [Proactive quality update](../get-started/quality-updates-schedule.md) by June 2026, depending on your current version. Alternatively, you can choose to install the hotfix manually to trigger detection sooner.
->
-> These are the minimum application build versions:
->
-> | Release | Availability | 
-> |---|---|
-> | 10.0.45/Platform update 69 | 10.0.2345.220 or higher|
-> | 10.0.46/Platform update 70 | 10.0.2428.162 or higher|
-> | 10.0.47/Platform update 71 | 10.0.2527.94 or higher|
-> 
-> To support the fix, the system temporarily disables the creation of new archive jobs while allowing any in-progress scheduled jobs to complete. After the data synchronization issue is resolved, the system re-enables the archive jobs. If you need further assistance, contact Microsoft Support.
-
-
 ## How archiving of finance and operations data works
 
 Application administrators can schedule archival jobs and specify criteria for supported functional scenarios. The process archives data from the tables for the functional scenarios to Dataverse long-term retention.
