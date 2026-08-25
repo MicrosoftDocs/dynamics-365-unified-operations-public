@@ -114,7 +114,7 @@ This error can occur in three scenarios:
 
 + The user you specify as **SelfMintingAdminUser** in the CloudEnvironment.config file doesn't have the System Administrator role. To verify that you specify the correct user, sign in to the endpoint and view the user's roles.
 
-+ The user you specify as **SelfMintingAdminUser** in the CloudEnvironment.config file uses a provider other than `https://sts.windows-ppe.net/` or `https://sts.windows.net/`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user.
++ The user you specify as **SelfMintingAdminUser** in the CloudEnvironment.config file uses a provider other than `https://sts.windows.net/`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user.
 
 + If you deploy your finance and operations apps in 21Vianet, make sure that you specify **NetworkDomain="<https://sts.chinacloudapi.cn/>"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
