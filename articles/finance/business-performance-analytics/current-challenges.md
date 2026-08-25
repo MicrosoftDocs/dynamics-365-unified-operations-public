@@ -93,3 +93,15 @@ This limit will be removed in the future.
 ### The size of the data lake folder increases every time Business performance analytics is refreshed
 
 Customers might notice that the size of the data lake folder increases each time that Business performance analytics refreshes its data. This issue occurs because stale folders are cleaned only every 30 days. In the future, stale folders are cleaned more often.
+
+### Administration controls aren't visible for a user in another language
+
+If a user with the Business performance analytics administrator role signs in to Reporting Hub and can't see the **Administration** controls, this can happen when the user's UI language isn't English (currently the only language that Business performance analytics supports). The Microsoft Dataverse sitemap that Business performance analytics uses isn't yet localized for other languages, so some controls don't appear.
+
+As a temporary workaround, switch to English (United States) in the following three places:
+
+1. **Environment language pack**: If English isn't already enabled for the environment, an administrator must add it before any user can select it. For more information, see [Enable languages in the Power Platform admin center](https://learn.microsoft.com/en-us/power-platform/admin/enable-languages).
+1. **Personal Dataverse language**: After English is enabled for the environment, update your personal language preference. For more information, see [Set personal options: Languages tab](https://learn.microsoft.com/en-us/power-apps/user/set-personal-options#languages-tab-options).
+1. **Browser language**: Set English (United States) as the top preferred language in your browser, since the browser's preferred language also affects how Business performance analytics renders.
+
+This is a temporary workaround until Business performance analytics is localized for additional languages.
