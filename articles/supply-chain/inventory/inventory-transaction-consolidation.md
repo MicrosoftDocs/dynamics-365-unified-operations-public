@@ -41,6 +41,8 @@ Before you consolidate inventory transactions, consider the following impacts on
 - **Inventory reports** – Reports that rely on detailed inventory transaction data show consolidated values instead of individual transactions. Affected reports include the inventory aging report and inventory value reports.
 - **Inventory forecasts** – Forecasts that run during consolidated periods might produce different results because they use summary data rather than detailed transaction history.
 - **Transaction-dependent operations** – You can't perform business processes that require the original inventory transactions, such as creating return orders and adjustments, after a period is consolidated.
+- **Inventory settlements clean up** – If you plan to clean up inventory settlements, run *Inventory settlements clean up* before running *Inventory transaction consolidation*. This cleanup allows the system to process relevant closed `InventTrans` records before running the consolidation.
+- **Clean up license plate registration history** – If you plan to clean up license plate registration history, run *Clean up license plate registration history* before running *Inventory transaction consolidation* to help improve consolidation performance.
 
 ## Prerequisites
 
