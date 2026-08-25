@@ -73,7 +73,7 @@ Business performance analytics must be able to create unmanaged customizations i
 - Create solutions that allow the transport of custom reports from one organization to another.
 - Complete setup of the organization after installation.
 
-If the setting "[Block unmanaged customizations](https://learn.microsoft.com/en-us/power-platform/admin/settings-features#block-unmanaged-customizations)" (full doc here [https://learn.microsoft.com/en-us/power-platform/alm/block-unmanaged-customizations](https://learn.microsoft.com/en-us/power-platform/alm/block-unmanaged-customizations)) is enabled on the organization, then Business performance analytics may not work correctly.
+If the [Block unmanaged customizations](https://learn.microsoft.com/en-us/power-platform/admin/settings-features#block-unmanaged-customizations) setting is enabled for the organization, Business performance analytics might not work correctly. For more information, see [Block unmanaged customizations in Dataverse environments](https://learn.microsoft.com/en-us/power-platform/alm/block-unmanaged-customizations).
 
 #### Configure Microsoft Power Platform
 
