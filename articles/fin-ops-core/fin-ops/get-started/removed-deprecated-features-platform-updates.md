@@ -4,7 +4,7 @@ description: Learn about features that have been removed, or that are planned fo
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/09/2026
+ms.date: 08/25/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -50,6 +50,19 @@ For detailed information about objects in finance and operations apps, see the [
 | **Product areas affected** | Microsoft finance and operations applications |
 | **Deployment option** | Cloud and on-premises |
 | **Status** | Deprecated. The Data Integrator templates for Dynamics 365 Field Service will no longer be available after February 28, 2027. This integration works by synchronizing work orders, agreements, inventory, and projects between Field Service and Supply Chain Management. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
+
+
+## Features removed effective November 2026
+
+### Export to Azure Data Lake deprecated November 30, 2026
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft decided to stop developing this feature and replace it with Azure Synapse Link for Dataverse. |
+| **Replaced by another feature?** | Yes |
+| **Product areas affected** | Microsoft finance and operations applications |
+| **Deployment option** | Cloud |
+| **Status** | Export to Azure Data Lake retired on November 1, 2024, and will permanently stop on November 30, 2026. After the service stops, it won't export new or changed data. Files already exported to your data lake remain in place. Microsoft won't grant extensions after November 30, 2026. |
 
 ## Features removed effective September 2026
 
