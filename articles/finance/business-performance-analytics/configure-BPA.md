@@ -40,6 +40,7 @@ Before installing Business performance analytics, complete the following prerequ
 - Configure Dynamics 365 Finance
 - Configure Power Platform Admin Center
 - Enable the Tabular Data Stream endpoint in Power Platform Admin Center
+- Allow unmanaged customizations in the environment
 
 #### Required privileges
 
@@ -63,6 +64,16 @@ Before installing Business performance analytics, complete the following prerequ
 - In Microsoft Dynamics Lifecycle Services:
 
   - The **Organization Admin** role to create environments. Additionally, the **Project owner** or **Environment manager** role must be assigned to the user in the **Project security** role field in Lifecycle Services.
+
+#### Allow unmanaged customizations
+
+Business performance analytics must be able to create unmanaged customizations in the environment where it's installed. This access allows Business performance analytics to (but isn't limited to):
+
+- Create custom reports.
+- Create solutions that allow the transport of custom reports from one organization to another.
+- Complete setup of the organization after installation.
+
+If the [Block unmanaged customizations](/power-platform/admin/settings-features#block-unmanaged-customizations) setting is turned on for the organization, see [Block unmanaged customizations](/power-platform/alm/block-unmanaged-customizations) for more information, since Business performance analytics might not work correctly.
 
 #### Configure Microsoft Power Platform
 
