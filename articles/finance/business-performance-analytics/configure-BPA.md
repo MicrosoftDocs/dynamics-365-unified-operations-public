@@ -41,6 +41,7 @@ Before installing Business performance analytics, complete the following prerequ
 - Configure Power Platform Admin Center
 - Enable the Tabular Data Stream endpoint in Power Platform Admin Center
 - Allow unmanaged customizations in the environment
+- Confirm the Finance and Operations virtual entities solution is installed
 
 #### Required privileges
 
@@ -84,6 +85,14 @@ To configure Microsoft Power Platform for Business performance analytics, follow
 3. Select **Full details** for the environment that you want to use for the setup.
 4. Confirm that the Microsoft Power Platform Integration is shown. If Microsoft Power Platform is set up, the name of the Microsoft Power Platform environment that's linked to the Dynamics 365 Finance environment is listed and shows a status of **Power Platform environment setup is complete**. If Microsoft Power Platform isn't set up, select **Setup**, and follow the prompts. After the setup is successfully completed, the name of the Microsoft Power Platform environment that's linked to the Dynamics 365 Finance environment is listed.
 5. If you set up the integration for an existing Microsoft Power Platform environment, confirm that the linked environment isn't in a disabled state. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). For more information, go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+#### Finance and Operations virtual entities solution
+
+Business performance analytics depends on the Finance and Operations virtual entities solution being installed in the Power Platform environment that's linked to your Dynamics 365 Finance environment. For more information, see [Getting the virtual entity solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution).
+
+If you see an error message that resembles the following, the Finance and Operations virtual entities solution isn't installed:
+
+> Unable to establish connection using data source: 'Finance and Operations Virtual Data Source Configuration', Error: 'The entity with a name = 'mserp_financeandoperationsentity' with namemapping = 'Logical' was not found in the MetadataCache'
 
 #### Configure the Microsoft Entra tenant
 
