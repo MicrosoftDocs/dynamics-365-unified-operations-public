@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: PurchCopilotFollowupTaskResults, PurchOrderProcessReceiptsWorkspace, AppCopilotAgentWorkspace, SysEmailParameters, VendTable, LogisticsLocationRole
 ms.topic: how-to
-ms.date: 08/10/2026
+ms.date: 08/26/2026
 ms.update-cycle: 180-days
 ms.collection:
   - bap-ai-copilot
@@ -107,7 +107,7 @@ To configure automatic sending of follow-up emails without requiring user review
 
 1. Sign in to Supply Chain Management as an administrator.
 1. Go to **System administration** > **Workspaces** > **Feature management**.
-1. Make sure the *(Production ready preview) Procurement Agent – Supplier communications - automatically sending follow-up emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure supplier communications features](procurement-agent-supplier-com-setup.md).
+1. Make sure the *(Production ready preview) Procurement Agent – Supplier communications - automatically sending follow-up emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup-wizard.md).
 1. Go to **System administration** > **Setup** > **Email** > **Email parameters**.
 1. Open the **Configuration** tab.
 1. On the **General** FastTab, set **Batch email provider** to *Graph*. This setting turns on the batch email provider.
@@ -119,13 +119,13 @@ To configure automatic sending of follow-up emails without requiring user review
 
 When a user reviews and sends an email that the agent drafts, the email comes from that user's email address.
 
-When the system automatically sends an email without user review, the email comes from the [agent identity user](procurement-agent-supplier-com-setup.md#set-up-agent-identity) email address.
+When the system automatically sends an email without user review, the email comes from the [agent identity user](procurement-agent-supplier-com-setup-wizard.md) email address.
 
 To configure the email address of any user (including the agent identity user):
 
 1. Sign in to Supply Chain Management as an administrator.
 1. Go to **System administration** > **Users**.
-1. Select the user you want to configure (for example, the [agent identity user](procurement-agent-supplier-com-setup.md#set-up-agent-identity)).
+1. Select the user you want to configure (for example, the [agent identity user](procurement-agent-supplier-com-setup-wizard.md)).
 1. On the Action Pane, select **User options**.
 1. Open the **Account** tab.
 1. On the **Email provider selection** FastTab, make the following settings:
