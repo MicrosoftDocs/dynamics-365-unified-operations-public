@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: AppCopilotAgentWorkspace, PurchOrderProcessReceiptsWorkspace, PurchCopilotInboundEmailWorkspace, PurchCopilotKnowledgeBase
 ms.topic: how-to
-ms.date: 08/10/2026
+ms.date: 08/26/2026
 ms.update-cycle: 180-days
 ms.collection:
   - bap-ai-copilot
@@ -43,13 +43,13 @@ When you review incoming changes that are based on an email, the system shows th
 You need to configure the Procurement Agent to monitor a specific email address for incoming messages from vendors. Follow these steps to complete the configuration.
 
 > [!IMPORTANT]
-> Before you begin, complete the steps in [Set up and configure supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup.md). If you want to send or forward email communications from your own email address for testing, you must also [set up your email address as a vendor contact](procurement-agent-supplier-com-setup.md#own-email).
+> Before you begin, complete the steps in [Set up and configure supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup-wizard.md). If you want to send or forward email communications from your own email address for testing, you must also set up your email address as a vendor contact as described in [Forward emails](procurement-agent-supplier-com-testing.md#forward-emails).
 
-1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](procurement-agent-supplier-com-setup.md#permissions-for-users-who-manage-the-agent-configuration).
+1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](procurement-agent-supplier-com-setup-wizard.md#user-permissions).
 1. Go to **Agents** > **Agents**.
 1. On the **Library** tab, for **Speed up updates in purchase orders with Supplier communications agent**, select **Select**.
 1. On the **Agent configuration** page, use the dropdown menu to specify which vendors the agent should analyze emails for. Select **Any vendor** to track all vendors or **Specific vendors** to track a list of specific vendors that you provide.
-1. Select the mailbox that the agent should monitor. The dropdown menu shows all mailboxes that the sign-in user has access to. If the mailbox that you're looking for isn't in the list, follow the steps in [Synchronize mailboxes with Dataverse](procurement-agent-supplier-com-setup.md#synchronize-mailboxes-with-dataverse).
+1. Select the mailbox that the agent should monitor. The dropdown menu shows all mailboxes that the sign-in user has access to. If the mailbox that you're looking for isn't in the list, you might need to share and synchronize it with Dataverse. Learn more in [Set up and configure supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup-wizard.md).
 1. Select **Activate**.
 
 ## Review and accept changes suggested by the agent
@@ -66,7 +66,7 @@ The agent detects changes in the following fields:
 To review and accept changes that the agent suggests based on the emails that it reads, follow these steps:
 
 > [!IMPORTANT]
-> Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./procurement-agent-supplier-com-setup.md#synchronize-mailboxes-with-dataverse).
+> Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Set up and configure supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup-wizard.md).
 
 1. Go to **Procurement and sourcing** > **Purchase order receipt and follow-up** to open the **Purchase order receipt and follow-up** workspace.
 1. The **(Preview) Emails from vendors** tile indicates the number of emails that require review. Select the tile.

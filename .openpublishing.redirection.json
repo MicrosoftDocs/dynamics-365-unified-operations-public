@@ -28774,7 +28774,11 @@
       "source_path": "articles/supply-chain/procurement/procurement-agent-impact-analysis-setup.md",
       "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-impact-analysis-setup-wizard",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/procurement-agent-supplier-com-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-setup-wizard",
+      "redirect_document_id": false
     }
   ]
-
 }

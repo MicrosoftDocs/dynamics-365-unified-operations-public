@@ -20,8 +20,6 @@
           href: get-started/whats-new-scm-10-0-48.md
         - name: Supply Chain Management 10.0.47 (March 2026)
           href: get-started/whats-new-scm-10-0-47.md
-        - name: Supply Chain Management 10.0.46 (December 2025)
-          href: get-started/whats-new-scm-10-0-46.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -2625,7 +2623,7 @@
             href: procurement/procurement-agent-impact-analysis-overview.md
           - name: How impact analysis works
             href: procurement/procurement-agent-impact-analysis-works.md
-          - name: Use the agent deployment wizard to set up impact analysis features
+          - name: Set up and configure impact analysis features of the Procurement Agent
             href: procurement/procurement-agent-impact-analysis-setup-wizard.md
           - name: Review impact of purchase order changes from vendors
             href: procurement/procurement-agent-impact-analysis-review-changes.md
@@ -2639,9 +2637,7 @@
             href: procurement/procurement-agent-supplier-com-overview.md
           - name: Try out the updates from vendors feature without a complete email setup
             href: procurement/procurement-agent-supplier-com-try-out.md
-          - name: Set up and configure supplier communications features
-            href: procurement/procurement-agent-supplier-com-setup.md
-          - name: Use the agent deployment wizard to set up supplier communications features (preview)
+          - name: Set up and configure supplier communications features of the Procurement Agent
             href: procurement/procurement-agent-supplier-com-setup-wizard.md
           - name: Solve common problems when setting up supplier communications features
             href: procurement/procurement-agent-supplier-com-setup-faq.md

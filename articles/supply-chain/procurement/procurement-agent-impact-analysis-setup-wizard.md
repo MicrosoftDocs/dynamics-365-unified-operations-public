@@ -1,20 +1,19 @@
 ---
-title: Use the agent deployment wizard to set up impact analysis features (production-ready preview)
+title: Set up and configure impact analysis features of the Procurement Agent (production-ready preview)
 description: Learn how to use the agent deployment wizard to set up impact analysis features for the Procurement Agent. Follow this guided setup to configure agents quickly.
 author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 08/10/2026
+ms.date: 08/26/2026
 ms.update-cycle: 180-days
 ms.collection:
   - bap-ai-copilot
 ms.custom:
   - bap-template
 ---
-
-# Use the agent deployment wizard to set up impact analysis features (production-ready preview)
+# Set up and configure impact analysis features of the Procurement Agent (production-ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -23,6 +22,33 @@ ms.custom:
 This article explains how system administrators can use the [agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub to set up and configure the impact analysis features of the Procurement Agent, regardless of whether you're also using the supplier communications features of the agent.
 
 If you're already using supplier communications, you can choose to keep the same Entra ID and connections you created in the supplier communications set-up, or you can create new ones.
+
+## Prerequisites
+
+To use the impact analysis features of the Procurement Agent, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 build 10.39.2117 or later. If you're running 10.0.48, ensure you're running the newest available build.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features don't appear on your system.
+
+    - [*Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
+    - [*Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
+    - *(Production-ready preview) Procurement Agent - Impact analysis*
+
+    > [!TIP]
+    > - If you don't see all of the features you're looking for in the **Feature management** workspace, select **Check for updates** to refresh the list of features.
+    > - If you can't enable the *Agent management* feature, ensure that your environment fulfills all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md), including version requirements and Copilot Studio billing.
+
+- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), ensure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
+    - First, install *Copilot for finance and operations apps* version 1.0.03048.2 or later. If it's already installed, update it to the latest version.
+    - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
+
+- Normally, the Microsoft Copilot Studio agent needed for impact analysis to run is published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of this agent. To check if the agents are successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Ensure that the following Microsoft Copilot Studio agent is published in that environment: *Procurement Agent - Impact Analysis*. If the agent isn't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
+
+## Understand the agent identity user
+
+An *agent identity user* is a dedicated Microsoft Entra ID user account that the Procurement Agent uses to sign in to the systems it connects to. This account isn't a person account for day-to-day business use. Instead, it's a service-style identity that gives the agent the permissions it needs to access Dataverse, Microsoft Copilot Studio, and Supply Chain Management while it performs its work.
+
+You create or select this user during setup because the agent must authenticate to several services and components before it can run impact analysis. The identity user is what allows the agent to read incoming vendor change requests, review the related purchase orders and downstream data, and trigger the processes that evaluate the impact of those changes. The agent deployment wizard uses this identity user as the foundation for the connection and authorization steps you complete to enable impact analysis.
 
 ## Run the agent deployment wizard
 
@@ -34,9 +60,9 @@ To use the agent deployment wizard to set up the impact analysis features, follo
 1. The **Overview** page opens, which provides a summary of the agent deployment wizard and its capabilities. Select **Next** to continue.
 1. The **Check prerequisites** page opens. This step makes sure your environment meets all of the prerequisites for the agent.
     - The deployment wizard automatically checks most of these prerequisites for you. It shows a green check mark for each fulfilled prerequisite. If any of the features or settings aren't enabled, enable them before you continue. Each section provides links to the Power Platform admin center to help you enable the relevant features or settings. Learn more in [Enable or disable Copilot features](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings#enable-or-disable-copilot-features).
-    - Manually verify your Supply Chain Management version in the **Make sure the following apps are up to date with at least the versions noted** section. Impact analysis requires version 10.0.48 or higher. **If you're running 10.0.48, make sure you're running the newest available build.** Mark the **Complete** check after you confirm the version.
+    - In the **Make sure the following apps are up to date with at least the versions noted** section, review this list of required apps and versions. Make sure that the apps listed are installed in your environment and that their versions are equal to or greater than the ones listed. For more information about the required apps and versions, see the [prerequisites](#prerequisites) section.
     - Each time you make changes to meet the prerequisites, go back to the agent deployment wizard and select the **Reload** button at the right side of each section to let the wizard check the status of that section again. When all prerequisites are met, green check marks are shown for all sections.
-    - Your environment might include data loss prevention (DLP) policies that prevent it from creating connections for the Procurement Agent. Make sure that the required connections are allowed in your organization. Learn more in [Advanced connector policies](/power-platform/admin/advanced-connector-policies) and [Data Loss Prevention Policies](/power-platform/admin/wp-data-loss-prevention).
+    - Your environment might include data loss prevention (DLP) policies that prevent it from creating connections for the Procurement Agent. Ensure that the required connections are allowed in your organization. Learn more in [Advanced connector policies](/power-platform/admin/advanced-connector-policies) and [Data Loss Prevention Policies](/power-platform/admin/wp-data-loss-prevention).
 
     When all prerequisites are met, select **Next** to continue.
 
@@ -67,11 +93,13 @@ To use the agent deployment wizard to set up the impact analysis features, follo
     > [!TIP]
     >
     > - If you don't see all of the features you're looking for in the **Feature management** workspace, select **Check for updates** to refresh the list of features.
-    > - If you can't enable the *Agent management* feature, make sure that you fulfill all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md), including version requirements and Copilot Studio billing.
+    > - If you can't enable the *Agent management* feature, ensure that your environment fulfills all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md), including version requirements and Copilot Studio billing.
 
     Select **Next** to continue.
 
 1. The final page of the wizard opens. Select **Finish** to complete the setup.
+
+<a name="trigger-impact-analysis"></a>
 
 ## Configure sources that automatically trigger impact analysis
 

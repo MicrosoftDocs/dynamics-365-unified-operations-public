@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 08/10/2026
+ms.date: 08/26/2026
 ms.update-cycle: 180-days
 ms.collection:
   - bap-ai-copilot
@@ -42,12 +42,13 @@ The agent works by matching incoming vendor emails to existing purchase orders. 
 
 To ensure that you can continuously test in sandbox by using your latest purchase orders and emails, update the sandbox by using the following process.
 
-### Synchronize purchase orders between production and sandbox environments
+### Synchronize data between production and sandbox environments for vendor email matching
 
-When you test in a sandbox environment (Phase 1 or Phase 2 in the following section), the agent needs purchase order data to match against vendor emails. You can export purchase orders from your production environment and import them into your sandbox environment by using the Data management framework.
+When you test in a sandbox environment (Phase 1 or Phase 2 in the following section), the agent needs purchase order data to match against vendor emails. Prepare your sandbox environment by following these steps:
 
-> [!NOTE]
-> This process exports and imports only the purchase order data itself. Related data isn't included. This approach provides sufficient data for the agent to match vendor emails to purchase orders, but it doesn't fully replicate the production data environment.
+1. Run a [full data refresh](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
+
+1. Synchronize just the purchase orders to ensure that your sandbox environment reflects any new delta purchase orders as you progress in your testing. Follow the instructions in the following subsections to export purchase orders from your production environment and import them into your sandbox environment by using the Data management framework.
 
 #### Export purchase orders from the production environment
 
@@ -66,9 +67,9 @@ Follow these steps in the production environment.
 
 To avoid number sequence conflicts when importing purchase orders, enable manual numbering for purchase orders in the sandbox environment.
 
-1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
+1. Go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing parameters**.
 1. Select the **Number sequences** tab.
-1. Find the number sequence that is used for purchase orders and navigate to it.
+1. Find the number sequence that's used for purchase orders and navigate to it.
 1. On the **General** FastTab, set **Manual** to *Yes*.
 
 #### Import purchase orders into the sandbox environment
@@ -80,18 +81,25 @@ Repeat these steps regularly (for example, weekly) to keep the sandbox environme
 1. Select the **Purchase orders composite V3** entity.
 1. Start the import in batch mode.
 
+<a name="forward-emails"></a>
+
 ### Forward emails
 
 This feature requires more setup permissions, test email addresses, and multiple scenarios. Start small and then expand, as described in the following subsections.
 
-#### Phase 1: Forward some emails to a testing email address in a sandbox environment
+#### Phase 1: Forward some emails from a vendor email address to a testing email address in a sandbox environment
 
 This phase lets you test the smallest possible scope. Start with a test email address so you can test without risk. It doesn't matter if you plan to use the purchaser's email in production or a common mailbox for the purchasing department.
 
-- Ask your Microsoft Exchange admin to create the test email address.
+- The agent only reads emails from vendor domains. If you want to send or forward vendor emails from your own email account, you must add your email address as a vendor contact. To add your email address, follow these steps:
+    1. Go to **Procurement and sourcing** > **Vendors** > **All vendors**.
+    1. Create or select a vendor.
+    1. On the **Contact information** FastTab, add a row with your own email address (the one you send or forward test messages from).
+
+- Ask your Microsoft Exchange admin to create a test email address and send the messages to that address.
 - Connect that email address to the sandbox environment where you do the testing.
 - Refresh your data (copy production data to the sandbox) or forward older emails so the system can match them.
-- Forward emails in batches - for example, five emails at a time. Check results and note if there's anything unexpected, and continue until you have a good idea of how it performs.
+- Forward emails in batches—for example, five emails at a time. Check results and note if there's anything unexpected, and continue until you have a good idea of how it performs.
 
 #### Phase 2: Forward emails from selected vendors
 

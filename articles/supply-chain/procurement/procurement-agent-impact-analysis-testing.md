@@ -6,7 +6,7 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 08/24/2026
+ms.date: 08/26/2026
 ms.update-cycle: 180-days
 ms.collection:
   - bap-ai-copilot
@@ -49,7 +49,7 @@ When you select **Save**, it takes a few minutes for supplier communications and
 
 Impact analysis can only find the affected downstream orders when planning data is current. This requirement can cause problems when you test impact analysis with supplier communications in a sandbox environment. If planning data is outdated, you might not find downstream orders such as production, sales, and transfer orders for the purchase order referenced in the incoming email.
 
-You can avoid the risk of a blank results by testing impact analysis with supplier communications in a production environment. In this case, you can use actual vendor emails and up-to-date planning data to see the impact of incoming change requests. Impact analysis doesn't take any action on your behalf—it only runs on incoming change requests that you configure to trigger it. Learn more in [Configure sources that automatically trigger impact analysis](procurement-agent-impact-analysis-setup-wizard.md).
+You can avoid the risk of a blank result by testing impact analysis with supplier communications in a production environment. In this case, you can use actual vendor emails and up-to-date planning data to see the impact of incoming change requests. Impact analysis doesn't take any action on your behalf—it only runs on incoming change requests that you configure to trigger it. Learn more in [Configure sources that automatically trigger impact analysis](procurement-agent-impact-analysis-setup-wizard.md#trigger-impact-analysis).
 
 If you want to test in a sandbox environment, consider refreshing data immediately before testing and verify that the items on the test purchase order are linked to demand orders such as sales, production, or transfer orders. Check this condition on the **Net requirements** page. If you don't want to refresh data, you can create test demand orders and link them to the purchase order you want to test before you run impact analysis. If you use this approach, remember to rerun planning before trying out impact analysis for the test order.
 
