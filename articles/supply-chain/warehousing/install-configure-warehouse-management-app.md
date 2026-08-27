@@ -1,8 +1,8 @@
 ---
 title: Install the Warehouse Management mobile app
 description: Learn how to install the Warehouse Management mobile app on each of your mobile devices and configure it to connect to your environment.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: how-to
 ms.date: 08/16/2026
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 ---
 title: Warehouse app events
 description: Learn about the warehouse app event processing used to process warehouse app event messages as part of a batch job with an outline on setting up batch jobs.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: how-to
 ms.date: 09/02/2020
 ms.custom:

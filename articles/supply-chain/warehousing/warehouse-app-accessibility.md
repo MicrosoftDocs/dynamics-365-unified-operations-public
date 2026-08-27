@@ -1,8 +1,8 @@
 ---
 title: Warehouse Management mobile app accessibility features
 description: Learn about the accessibility features of the Warehouse Management mobile app, including an outline on font and button scaling.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: article
 ms.date: 04/08/2026
 ms.custom: bap-template

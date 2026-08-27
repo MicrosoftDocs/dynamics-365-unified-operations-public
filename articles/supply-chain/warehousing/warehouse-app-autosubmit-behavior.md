@@ -1,8 +1,8 @@
 ---
 title: Data submission behavior in the Warehouse Management mobile app
 description: Learn about the options for how the Warehouse Management mobile app submits scanned data.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to

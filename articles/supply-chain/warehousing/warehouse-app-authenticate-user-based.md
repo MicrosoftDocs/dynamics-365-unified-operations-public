@@ -1,8 +1,8 @@
 ---
 title: User-based authentication for the Warehouse Management mobile app
 description: Learn how to configure the Warehouse Management app to connect to your Dynamics 365 Supply Chain Management environment using user-based authentication.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: how-to
 ms.date: 08/16/2026
 ms.reviewer: kamaybac

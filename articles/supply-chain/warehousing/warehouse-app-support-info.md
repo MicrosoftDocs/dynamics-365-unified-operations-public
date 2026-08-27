@@ -1,8 +1,8 @@
 ---
 title: Support policy for the Warehouse Management mobile app
 description: Learn about the support policies that apply to the Warehouse Management mobile app, including the V3 end-of-support milestone in May 2026 and the rolling 12-month support window for V4 and later releases that starts on May 1, 2027.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.topic: article
 ms.date: 04/28/2026

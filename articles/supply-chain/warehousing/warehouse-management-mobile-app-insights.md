@@ -1,8 +1,8 @@
 ---
 title: Workload insights with Copilot in the Warehouse Management mobile app
 description: Learn about how the Warehouse Management mobile app can show AI-generated insights to warehouse workers to help them better plan their shift.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
