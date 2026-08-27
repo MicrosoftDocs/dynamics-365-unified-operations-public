@@ -4,7 +4,7 @@ description: This article lists the features and enhancements that are included 
 author: johnmichalak
 ms.author: johnmichalak
 ms.reviewer: johnmichalak
-ms.date: 07/27/2026
+ms.date: 08/28/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -43,7 +43,7 @@ This section has a table that lists enhancements included in this release when a
 | Agent foundation | ERP MCP data tool enhancements | Enhancements to the data tools in the Dynamics 365 ERP MCP server include: <br><ul><li>SQL `SELECT` now supports arithmetic between aggregates, for example `SUM(a) - SUM(b)`. <li>Field name validation returns an explicit error for an invalid field instead of failing opaquely or silently returning an unexpected shape. <li>Actions return their full parameter set, including inherited parameters. <li>Added `queryTimeout` support added to the underlying **SysDA** framework for protocol data path requirements. </li></ul><br><p>These enhancements are available in **PU73/10.0.49 PQU-1** (version 7.0.8199.29 and up), and are backported to **PU72/10.0.48 PQU-5** (version 7.0.7996.107 and up) and **PU71/10.0.47 PQU-11** (version 7.0.7858.166 and up). | By default |
 | Agent foundation | ERP MCP form tool enhancements | Enhancements to the form tools in the Dynamics 365 ERP MCP server include: <br><ul><li>Support for **Group Option Button controls** (`FrameOptionButton = Radio` and `Check`), a control family that previously couldn't be read or set. <li>Control resolution hardening: find-by-name, grid group resolution, and a preference for non-lookup controls when setting values, which removes a class of ambiguous-target failures. <li>Menu item label resolution, including resolution via search. <li>Document upload and document viewer control support. </li></ul><br><p>These enhancements are available in **PU73/10.0.49 PQU-1** (version 7.0.8199.29 and up), and are backported to **PU72/10.0.48 PQU-5** (version 7.0.7996.107 and up) and **PU71/10.0.47 PQU-11** (version 7.0.7858.166 and up). | By default |
 | Agent foundation | ERP MCP human-in-the-loop (HITL) tool annotations | Each tool in the Dynamics 365 ERP MCP server is marked with its behavioral contract - whether the tool is read-only, destructive, idempotent, or open-world -- so a calling agent can decide when to stop and ask a human before acting. <br><br><p>This enhancement is available in **PU73/10.0.49 PQU-1** (version 7.0.8199.29 and up), and is backported to **PU72/10.0.48 PQU-5** (version 7.0.7996.107 and up) and **PU71/10.0.47 PQU-11** (version 7.0.7858.166 and up). | By default | 
-
+| Developer tools | Assemblies | The following assemblies were removed in this release. Packages with dependencies on these assemblies need to be updated to specifically include them. <br><ul><li> Microsoft.CortanaIntelligence.RecommendationsServiceClient.dll <li> Microsoft.Azure.Management.DataFactories.dll <li> Microsoft.Azure.Management.Resource.dll <li> Microsoft.Azure.Management.Storage.dll </li></ul> |  |
 
 ### Bug fixes
 
