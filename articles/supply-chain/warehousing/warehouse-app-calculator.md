@@ -1,8 +1,8 @@
 ---
 title: Warehouse Management mobile app calculator
 description: Learn how to use the calculator feature in the Warehouse Management mobile app to perform mathematical calculations with enhanced gesture controls.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

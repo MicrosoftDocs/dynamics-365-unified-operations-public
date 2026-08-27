@@ -1,8 +1,8 @@
 ---
 title: Haptic feedback through external wearable devices
 description: Learn about how haptic feedback with external wearable devices works with the Warehouse Management mobile app.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to

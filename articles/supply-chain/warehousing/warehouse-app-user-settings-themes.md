@@ -1,8 +1,8 @@
 ---
 title: User settings, color themes, and sound themes
 description: Learn how to use local user settings to personalize the way your Warehouse Management mobile app works, looks, and sounds
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to

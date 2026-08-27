@@ -1,8 +1,8 @@
 ---
 title: Check Wi-Fi connectivity and performance
 description: Learn how to use the network diagnostics tool in the Warehouse Management mobile app. Use it to test your Wi-Fi connection and identify potential issues.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to

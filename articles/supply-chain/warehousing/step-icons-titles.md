@@ -1,8 +1,8 @@
 ---
 title: Assign step icons and titles for the Warehouse Management mobile app
 description: Learn how to assign step icons and titles for new or customized task flows for the Warehouse Management mobile app with an outline on toggling this feature.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: how-to
 ms.date: 05/17/2021
 ms.reviewer: kamaybac

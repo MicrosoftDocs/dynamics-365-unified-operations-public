@@ -1,8 +1,8 @@
 ---
 title: Warehouse Management mobile app release schedule
 description: View the targeted release schedule for the Warehouse Management mobile app, and learn how you can plan your own validation and update process around it.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.topic: concept-article
 ms.date: 07/27/2026

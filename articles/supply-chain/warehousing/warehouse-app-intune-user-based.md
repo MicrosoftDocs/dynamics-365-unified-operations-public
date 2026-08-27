@@ -1,8 +1,8 @@
 ---
 title: Mass deploy the mobile app with user-based authentication
 description: Learn how to mass deploy the Warehouse Management app with user-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: how-to
 ms.date: 08/13/2026
 ms.reviewer: kamaybac
