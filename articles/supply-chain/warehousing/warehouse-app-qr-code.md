@@ -1,8 +1,8 @@
 ---
 title: Use a QR code to connect the mobile app to Supply Chain Management
 description: Learn how to generate and scan QR codes to quickly configure the Warehouse Management mobile app.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: how-to
 ms.date: 08/13/2026
 ms.custom: bap-template

@@ -1,8 +1,8 @@
 ---
 title: Advanced bar code scanner configuration
 description: Learn how to fix compatibility issues between the Warehouse Management mobile app and your bar code scanner with an outline on setting up your mobile device.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: how-to
 ms.date: 05/21/2026
 ms.custom: 

@@ -1,8 +1,8 @@
 ---
 title: View the app log on a mobile device
 description: Learn how to use the Local log view page in the Warehouse Management mobile app. The page lets you access and manage logs related to app activity.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to

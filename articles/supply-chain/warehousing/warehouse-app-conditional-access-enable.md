@@ -1,8 +1,8 @@
-﻿---
+---
 title: Use Microsoft Entra Conditional Access with the Warehouse Management mobile app
 description: Learn how to configure the Warehouse Management mobile app and Microsoft Entra ID to use Microsoft Entra Conditional Access on Windows, Android, and iOS.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

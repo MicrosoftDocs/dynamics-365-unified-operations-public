@@ -1,8 +1,8 @@
 ---
 title: Mobile device user settings
 description: Learn how to manage mobile device user settings for warehouse workers, including an outline on creating and managing user settings.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: article
 ms.date: 07/08/2025
 ms.custom: 

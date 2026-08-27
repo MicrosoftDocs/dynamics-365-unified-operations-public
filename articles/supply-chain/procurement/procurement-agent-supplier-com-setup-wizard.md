@@ -40,7 +40,7 @@ Before you can use the supplier communications features of the Procurement Agent
 
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), ensure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. Install or update them in the following order:
     - First, install *Copilot for finance and operations apps* version 1.0.03048.2 or later. If it's already installed, update it to the latest version.
-    - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
+    - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03510.1 or later. If it's already installed, update it to the latest version.
 
 - Normally, the Microsoft Copilot Studio agents needed by supplier communications features are published automatically. However, data loss prevention (DLP) policies on your environment might prevent publishing these agents. To check if the agents are successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Ensure that the following Microsoft Copilot Studio agents are published in that environment:
     - *Supplier communications Agent - inbound*

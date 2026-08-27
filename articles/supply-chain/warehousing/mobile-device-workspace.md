@@ -1,8 +1,8 @@
 ---
 title: Warehouse mobile devices workspace
 description: Learn about the Warehouse mobile devices workspace, which lets you monitor the health of all handheld devices that are used in your warehouses.
-author: MichaelFruergaardPontoppidan
-ms.author: mfp 
+author: pefreita
+ms.author: pefreita
 ms.topic: how-to
 ms.date: 09/09/2025
 ms.custom: bap-template

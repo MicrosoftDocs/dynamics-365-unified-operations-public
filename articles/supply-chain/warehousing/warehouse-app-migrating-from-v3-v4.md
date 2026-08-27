@@ -1,8 +1,8 @@
 ---
 title: Migrate the Warehouse Management mobile app from V3 to V4
 description: Learn how to migrate from Warehouse Management mobile application from version 3 (V3) to version 4 (V4). The article includes information about compatibility, requirements, and the timeline.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.topic: how-to
 ms.date: 08/13/2026
 ms.custom: bap-template

@@ -1,12 +1,12 @@
 ---
 title: What's new or changed in the Warehouse Management mobile app
 description: This article lists the new and changed features for each released version of the Warehouse Management app for Microsoft Dynamics 365 Supply Chain Management.
-author: Mirzaab
-ms.author: mirzaab
+author: pefreita
+ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 05/28/2026
+ms.date: 08/25/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -26,15 +26,75 @@ Starting with version 4.1.1.0, every V4 and later release is tagged with its pub
 > [!TIP]
 > For upcoming release dates, see [Warehouse Management mobile app release schedule](warehouse-app-control-updates.md). That article also describes optional ways to validate a release before it reaches your warehouse floor.
 
+## Release notes for version 4.1.5.0 (August 25, 2026)
+
+Version 4.1.5.0 is a cumulative update that includes new features, improvements, and a broad set of fixes.
+
+### New features in version 4.1.5.0
+
+- **Camera scanning** – The camera scanner now recognizes more barcode formats. No configuration is required because the additional formats are detected automatically. You can also set the color and thickness of the scan frame that outlines the scanning area.
+- **Notification sounds** – You can now select a separate sound for success, failure, and warning notifications. A duplicate re-scan sound setting was also removed.
+- **ProGlove arm scanners** – Added the first version of the bridge for ProGlove arm scanners. Scanner input, including image capture, is now connected to the form flow. Learn more in [Advanced bar code scanner configuration](warehouse-app-adv-scanner-config.md).
+- **Client settings** – Added an editable **Client settings** option for connections. Use these settings in enterprise environments that have specific requirements, such as environments that require Transport Layer Security (TLS) 1.2 or that require workers to sign in every time they start the app. New connections now use user name and password authentication by default.
+
+### Improvements in version 4.1.5.0
+
+- **App startup** – Reduced the work that the app does while it starts, and reduced the size of the fonts and scripts that it loads. The app now starts faster.
+- **Step pages** – Reduced the number of times that a step page redraws itself, so that steps respond faster when values change.
+- **Sign-in performance (Android)** – Removed unnecessary authentication token renewals that added delay to routine requests.
+- **Network communication** – Improved how the app communicates with the server. Network behavior can now be adjusted centrally, without a new app version.
+- **Details cards** – Details cards are now scrollable by default.
+- **Android 16** – The app and its native modules now target Android 16 (API level 36), which meets current Google Play requirements.
+- **Authentication libraries** – Updated the Microsoft Authentication Library (MSAL) and OneAuth libraries to supported versions.
+- **Security** – Applied multiple security fixes and dependency updates.
+- **Performance telemetry** – Round-trip telemetry now matches the measurements that Warehouse Management mobile app version 3 reports, so that you can compare performance between the two versions. Telemetry now also measures how long warehouse tasks take, not just how long the server takes to respond.
+- **Telemetry quality** – Numeric values are now recorded correctly in flow telemetry, and less irrelevant data is logged. Therefore, meaningful signals are easier to find.
+- **Accessibility** – Improved screen reader support and navigation across menus, work cards, the welcome screen, combo boxes, version information, headers, and announcements of selected items.
+- **VoiceOver (iOS)** – Improved VoiceOver support, especially in combo box dialog boxes.
+
+### Bug fixes in version 4.1.5.0
+
+#### All platforms
+
+- **Submitted data** – Fixed an issue where values on the current page could be altered when the page was submitted to the server.
+- **Duplicate work** – Fixed an issue where the app resent a submitted page after a timeout or a gateway error, without notifying the worker. This behavior could cause warehouse work to be completed twice.
+- **Escaped characters** – Fixed an issue where server responses that contained escaped characters were shown incorrectly.
+- **Single sign-on (SSO)** – Fixed a *broker no result* error that prevented workers from signing in.
+- **App startup** – Fixed an issue where a failure in a single part of the app prevented the whole app from starting.
+- **Error messages** – Fixed an issue where the app showed a generic failure message instead of the error message that the server returned.
+- **Error page** – Fixed the layout, icon placement, and animation order on the error page. The page now adjusts correctly when the window is resized.
+- **Calculator** – Fixed an issue where the calculator dropped digits during fast entry.
+- **Spinner control** – Fixed an issue where the spinner didn't respond to tap and drag gestures on desktop devices.
+- **Dialog boxes** – Fixed an issue where a dialog box closed when a worker selected the content inside it.
+- **Promoted fields** – Fixed the formatting of promoted fields and corrected default values that were outside the allowed range. Both now match version 3 behavior.
+
+#### Windows
+
+- **Network failures** – Fixed an issue where the app couldn't reach the Supply Chain Management server or the Microsoft sign-in pages.
+- **Blank page on startup** – Fixed an issue where the app showed a blank white page when it started, including when several RemoteApp sessions ran at the same time.
+- **Camera scanning** – Fixed an issue where the camera scanner incorrectly decoded barcodes that contained group separators.
+- **Layout and display** – Fixed the position of the app window, corrected rendering in high-contrast mode, and fixed an issue where the read-only spinner control cut off long numbers.
+
+#### Android
+
+- **Sign out** – Fixed an issue where signing out didn't sign the worker out completely. The app now clears both the account and the web session of the identity provider. Therefore, the next sign-in correctly prompts for credentials instead of reusing the previous identity.
+- **Barcode scanning** – Fixed an issue where some barcodes couldn't be scanned, because several formats were ignored.
+- **Diagnostic files** – Fixed an issue where diagnostic files were saved to a location where [mobile mass deployment (MDM) solutions](warehouse-app-intune-user-based.md) couldn't retrieve them from locked-down kiosk devices.
+
+#### iOS
+
+- **Barcode scanning** – Fixed an issue where some barcodes couldn't be scanned. Barcode detection now uses Apple Vision.
+- **Scan frame** – Fixed an issue where the scan frame appeared in the wrong position.
+
 ## Release notes for version 4.1.4.0 (May 28, 2026)
 
 Version 4.1.4.0 is a minor update that includes the following features and fixes:
 
-### Features
+### New features in version 4.1.4.0
 
 - **Camera improvements** – Added support for Code 39 Mod 43 barcodes.
 
-### Bug fixes
+### Bug fixes in version 4.1.4.0
 
 - **Right-to-left (RTL) support** – Corrected layout and formatting issues for right-to-left languages.
 - **Submit spinner** – Resolved a UI hang and glitch that occurred when submitting forms.
@@ -47,13 +107,13 @@ Version 4.1.4.0 is a minor update that includes the following features and fixes
 
 Version 4.1.3.0 is a minor update that includes the following fixes and improvements:
 
-### Bug fixes
+### Bug fixes in version 4.1.3.0
 
-- **Label encoding** – Fixed an encoding issue that caused incorrect signs to be displayed on labels.
+- **Label encoding** – Fixed an encoding issue that caused incorrect signs to display on labels.
 - **Quantity selector** – Improved performance of the quantity selector and resolved a concurrency issue.
-- **Calculator** – Fixed an issue where typing in the calculator would reopen the calculator instead of continuing input.
+- **Calculator** – Fixed an issue where typing in the calculator reopened the calculator instead of continuing input.
 
-### Improvements
+### Improvements in version 4.1.3.0
 
 - **Right-to-left (RTL) support** – Improved support for right-to-left languages.
 
@@ -61,11 +121,11 @@ Version 4.1.3.0 is a minor update that includes the following fixes and improvem
 
 Version 4.1.2.0 is a minor update that includes the following fixes and improvements:
 
-### Bug fixes
+### Bug fixes in version 4.1.2.0
 
 - **Components fields** – Fixed an issue that caused `data=1` to appear in some edge case scenarios.
 
-### Improvements
+### Improvements in version 4.1.2.0
 
 - **Diagnostics** – Added the option to clean up authentication data from the **Diagnostics** page.
 - **Windows MDM** – Expanded mobile device management (MDM) configuration collection to support a broader range of MDM providers on Windows.
@@ -77,7 +137,7 @@ Version 4.1.1.0 focuses on performance, small-screen layouts, scanning reliabili
 > [!IMPORTANT]
 > Starting on **May 1, 2027**, version 4 (V4) and every later release of the Warehouse Management mobile app follow a rolling 12-month support window. Microsoft accepts support cases only for releases that were published within the previous 12 months. This policy applies to every release from V4 onward, regardless of whether it's a major, minor, or patch version. The app continues to run on out-of-window releases, but support cases require an in-window version. This policy is critical to maintain the quality, security, and platform compatibility of the app. Learn more in [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy).
 
-### Key improvements
+### Improvements in version 4.1.1.0
 
 - **Performance enhancements** – Faster response times for the calculator, quantity fields, and overall touch interactions.
 - **Small-screen optimization** – Improved layout and rendering for displays around 640 px, optimized for truck-mounted devices.
@@ -85,17 +145,17 @@ Version 4.1.1.0 focuses on performance, small-screen layouts, scanning reliabili
 
 ### Scanning and input improvements
 
-- **New scanning engine** – Hardware scans are now handled by a dedicated global listener for improved reliability. This change also addresses navigation issues on hardware that uses arrow keys.
+- **New scanning engine** – A dedicated global listener now handles hardware scans, so you get improved reliability. This change also addresses navigation issues on hardware that uses arrow keys.
 - **Dialog support** – Scans work correctly while error, confirmation, or option dialogs are displayed.
 - **Duplicate scan protection** – Prevents double actions on devices that send the same barcode through multiple channels.
 - **GS1 barcode support** – Batch numbers that contain GS1 separators (`0x1D`) are now handled correctly, resolving previous disconnection issues.
 - **Navigation fixes** – Restored arrow-key navigation for processes such as Sales picking, and fixed rescanning during quantity confirmation.
 
-### Bug fixes
+### Bug fixes in version 4.1.1.0
 
 #### Layout and display
 
-- **Pallet building** – The **Done** button is now visible on small or nonmaximized windows. The **Correct**, **Cancel**, and **Done** actions are accessible without resizing.
+- **Pallet building** – The **Done** button is now visible on small or nonmaximized windows. You can access the **Correct**, **Cancel**, and **Done** actions without resizing.
 - **Calculator** – Fixed layout problems when using landscape mode on small screens.
 
 #### Windows
@@ -117,11 +177,11 @@ Version 4.1.1.0 focuses on performance, small-screen layouts, scanning reliabili
 
 This update includes critical fixes for authentication workflows, significant battery life optimizations, and expanded hardware support across Android, iOS, and Windows.
 
-### New features
+### New features in version 4.0.39.0
 
 - **Scrollable details card** – Added the option to turn on scrolling for details cards so workers can view more information on one screen without collapsing sections. The scrollable details card is designed for larger screens; on smaller devices, the feature might not work as expected. On smaller screens, switching to landscape mode might reduce the available space, which could affect scrolling behavior.
 
-### Improvements
+### Improvements in version 4.0.39.0
 
 - **Battery consumption** – Optimized background processes and resource management, resulting in an approximate 9% reduction in battery usage during standard operation.
 - **Authentication and connectivity** – Resolved a caching issue where the application incorrectly reused legacy connection data. This fix prevents missing connections and the need to restart the app manually.
@@ -131,7 +191,7 @@ This update includes critical fixes for authentication workflows, significant ba
 - **Windows navigation** – Added support for the Esc key on Windows to facilitate quicker navigation and menu exits.
 - **Legacy pages** – Implemented targeted performance enhancements for legacy UI pages to reduce load times and input lag.
 
-### Fixes
+### Fixes in version 4.0.39.0
 
 - **Entra brokered authentication** – Resolved a critical issue on Android that prevented Microsoft Entra brokered authentication from completing successfully.
 - **iOS scanning** – Fixed a focus-management glitch where success notifications (toast messages) prevented the scanner from immediately returning to a ready state on iOS devices.
@@ -283,7 +343,7 @@ Version 4.0.26.0 includes the following fixes and improvements:
 Version 4.0.25.0 includes the following fixes and improvements:
 
 - Resolved a rendering issue on the **Item Inquiry** page.
-- Fixed a server request timeout that occurred after the quantity spinner component reset incorrectly when navigating between pages.
+- Fixed a server request timeout that occurred after the quantity spinner component reset incorrectly when you navigate between pages.
 - Stopped the quantity spinner from flickering when it landed between two values.
 - Enhanced diagnostic tools for improved troubleshooting.
 - Improved translation quality across the app.
@@ -293,3 +353,7 @@ Version 4.0.25.0 includes the following fixes and improvements:
 ## Version 4.0.24.0
 
 Version 4.0.24.0 of the Warehouse Management mobile app is the first general availability (GA) release of version 4 for all supported platforms (Microsoft Windows, Google Android, and Apple iOS) in all supported regions. Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+
+## Older versions
+
+Notes for versions older than Version 4 are available in the [Warehouse Management mobile app release notes archive](warehouse-app-whats-new-archive.md).
