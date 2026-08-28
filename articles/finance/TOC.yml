@@ -4837,8 +4837,10 @@
                   href: business-performance-planning/bpp-create-cubes.md
                 - name: Create a cube from existing dimensions
                   href: business-performance-planning/BPP-cub-dim.md
-                - name: Create a cube from Excel
+                - name: Create a cube from Excel (preview)
                   href: business-performance-planning/bpp-cube-Excel.md
+                - name: Use Cube navigator
+                  href: business-performance-planning/cube-navigator.md  
                 - name: Create a cube from JSON
                   href: business-performance-planning/bpp-json.md
                 - name: Write-back to budget register entries
