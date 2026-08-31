@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.8
  
 # Allocate bank document charges to a shipment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can allocate bank document charges that you post in the general journal to purchase order lines. The purchase order should have a related letter of credit or import collection.
 

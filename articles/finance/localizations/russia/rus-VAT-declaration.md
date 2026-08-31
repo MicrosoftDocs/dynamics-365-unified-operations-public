@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-01-04
 
 # VAT declaration (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the VAT declaration for Russia in Microsoft Dynamics 365 Finance.
 

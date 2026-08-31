@@ -12,7 +12,7 @@ ms.custom:
 
 # Activate and set up integration with Electronic invoicing
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Before you can activate and set up integration with Electronic invoicing, you must have a Microsoft Dynamics Lifecycle Services (LCS) project that includes Dynamics 365 Finance or Dynamics 365 Supply Chain Management. Additionally, you must deploy those apps in one of the following Azure geographies:
 

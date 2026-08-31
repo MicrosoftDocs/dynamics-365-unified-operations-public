@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Set the TDS parameters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set parameters to activate Tax Deducted at Source (TDS) functionality in specified transactions. This is a necessary step to use the Tax Deducted at Source TDS feature.
 

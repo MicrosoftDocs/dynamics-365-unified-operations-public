@@ -15,7 +15,7 @@ ms.custom:
 
 # Low-cost fixed assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about low-cost fixed assets for Hungary.
 

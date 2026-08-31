@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # How to prepare your Dynamics 365 Finance for French e-Reporting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To enable France e-reporting, complete the following steps:
 

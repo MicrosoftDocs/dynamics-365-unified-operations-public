@@ -15,7 +15,7 @@ ms.search.form: CustPosting, VendParameters
 
 # CFDI layout version 3.3
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Electronic invoice parameters
 

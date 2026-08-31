@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # VAT declaration (Czech Republic)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the value-added tax (VAT) declaration for the Czech Republic. It includes instructions for setting up and generating the VAT declaration and the VAT control statement.
 

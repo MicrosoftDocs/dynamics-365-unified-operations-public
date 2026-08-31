@@ -13,7 +13,7 @@ ms.search.region: Sweden
 
 # VAT declaration (Sweden)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate a value-added tax (VAT) declaration for Sweden in Microsoft Dynamics 365 Finance.
 

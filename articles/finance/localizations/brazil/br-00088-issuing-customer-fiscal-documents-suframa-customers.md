@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Issue customer fiscal documents (for SUFRAMA customers) (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up tax exemptions for the Superintendência da Zona Franca de Manaus (SUFRAMA) region in Brazil with Microsoft Dynamics 365 Finance.
 

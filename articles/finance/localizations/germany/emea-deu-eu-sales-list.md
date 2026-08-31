@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # EU Sales list for Germany
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the European Union (EU) sales list report. The German EU sales list report contains information about the sale of goods and services for reporting in CSV or XML format.
 

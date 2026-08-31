@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Example for generic EU sales list 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and transfer a European Union (EU) sales list. The example uses the **DEMF** legal entity. It also uses Germany as a country/region of the **Domestic** country/region type, and Spain and Sweden as countries/regions of the **EU** country/region type.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2025-03-25
 
 # Frequently Asked Questions: Making Tax Digital (MTD) VAT return integration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This section provides answers to frequently asked questions about Making Tax Digital (MTD) – VAT return integration in Microsoft Dynamics 365 Finance. It helps organizations, partners, and customers resolve common configuration and operational issues when working with the MTD VAT integration feature. The guidance covers setup requirements, security enhancements, troubleshooting submission errors, and best practices for compliance with HMRC standards.
 Use this FAQ as a quick reference when:

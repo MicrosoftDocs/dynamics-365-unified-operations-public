@@ -14,6 +14,8 @@ ms.search.region: Australia
 
 # Business activity statement (BAS)
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides information about the Business activity statement (BAS) for Australia. All businesses submit the BAS form to the Australian Taxation Office (ATO) to report their taxation obligations.
 
 The Business activity statement (BAS) feature helps you fill in your BAS. The statement resembles the calculation worksheet that the ATO provides when you receive the BAS form in the mail.

@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Set up customs clearance
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up customs clearance registration information for products transported across the border of the Russian Federation in Microsoft Dynamics 365 Finance.
 

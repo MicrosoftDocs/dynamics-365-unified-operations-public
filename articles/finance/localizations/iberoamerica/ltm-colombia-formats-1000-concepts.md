@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Add concepts to the lookups in File formats 1000 for Colombia in Electronic Reporting
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to add more concepts to the lookups of the File formats 1000 of Colombia in Electronic Reporting configurations.
 

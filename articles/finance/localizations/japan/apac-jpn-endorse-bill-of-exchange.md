@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Pay a vendor by endorsing a bill of exchange for Japan
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Japan, you can endorse bills of exchange (BOE) to a vendor and use them as a method of payment. A list page for BOEs provides centralized management of the BOE lifecycle.
 

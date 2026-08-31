@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.7
 
 # Bank data usability enhancement
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Companies often need to enter and maintain a large amount of banking information. The cost of entering incorrect bank information can be very high. To help save time and simplify bank data registration, you can import Italian bank information from reliable sources. By using this method, you reduce the risk of errors when entering bank data for customers and vendors.
 

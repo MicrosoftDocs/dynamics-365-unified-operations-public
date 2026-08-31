@@ -15,7 +15,7 @@ ms.custom:
 
 # Settle an endorsed bill of exchange
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to settle an endorsed bill of exchange for Japan in Microsoft Dynamics 365 Finance.
 

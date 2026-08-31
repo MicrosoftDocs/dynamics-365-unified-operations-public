@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Tax inquiry
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Tax document transactions** \> **Posted tax document transactions**.
 1. Select the registration number, and then select **OK**.

@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Set up interest and fines for vendor payments (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up accounts for financial interest and fines, default codes for interest and fines, and interest codes and fine codes for vendors and purchase orders in Brazil with Microsoft Dynamics 365 Finance.
 

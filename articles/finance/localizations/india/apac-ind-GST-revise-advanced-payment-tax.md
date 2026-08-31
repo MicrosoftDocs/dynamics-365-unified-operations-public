@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Revise advance payments that include tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts receivable \> Payments \> Payment journal**.
 1. Create a record.

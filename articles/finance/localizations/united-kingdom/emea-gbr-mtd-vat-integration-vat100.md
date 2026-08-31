@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-08-06
 
 # Generate a VAT declaration in paper format (VAT 100 report)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate a value-added tax (VAT) declaration in paper format for the United Kingdom (UK) in Microsoft Dynamics 365 Finance.
 

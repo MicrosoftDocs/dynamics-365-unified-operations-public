@@ -16,7 +16,7 @@ ms.custom:
 
 # Year-end 1099 reporting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to track the amount paid to each vendor and report that information to US tax authorities in Microsoft Dynamics 365 Finance.
 

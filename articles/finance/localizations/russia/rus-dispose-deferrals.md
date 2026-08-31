@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Dispose of deferrals (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to dispose of deferrals in Russia in Microsoft Dynamics 365 Finance.
 

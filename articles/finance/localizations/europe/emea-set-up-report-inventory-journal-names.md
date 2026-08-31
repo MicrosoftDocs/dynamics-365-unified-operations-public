@@ -15,7 +15,7 @@ ms.search.form: InventJournalName
 
 # Inventory journal reports
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you use configurable inventory reports based on electronic reporting, you need to set up a relationship between a specific report and a journal type.
 

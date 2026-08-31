@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Tax registration info related to address
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 All countries and regions have requirements for supporting various country and region-specific functionalities related to registration numbers that different state offices provide. **Registration IDs** in Dynamics 365 Finance provide a 
 unified framework for managing official identification numbers for legal entities, establishments, customers, vendors, and other parties, in accordance with country and region-specific requirements.

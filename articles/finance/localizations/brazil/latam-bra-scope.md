@@ -13,7 +13,7 @@ ms.custom:
 
 # Scope of the Brazilian localization
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft includes in Microsoft Dynamics 365 Finance for Brazil.
 

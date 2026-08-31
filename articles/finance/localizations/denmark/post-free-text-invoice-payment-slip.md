@@ -15,7 +15,7 @@ ms.custom:
 
 # Post a free text invoice with a payment slip
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can post a free text invoice with a payment slip attachment in a specified format. The payment slip prints with the creditor identification number and invoice number to identify the payment.
 

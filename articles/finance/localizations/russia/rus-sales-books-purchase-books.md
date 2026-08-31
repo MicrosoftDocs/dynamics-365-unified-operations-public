@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Sales books, purchase books, and invoice-factures journals
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with sales books, purchase books, and invoice-factures journals for Russia in Microsoft Dynamics 365 Finance.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Calculate CIAP credit amount (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to calculate the Imposto Sobre Circulação de Mercadorias e Prestação de Serviços (ICMS) Credit Control of Fixed Assets (CIAP) credit amount in Brazil with Microsoft Dynamics 365 Finance.
 

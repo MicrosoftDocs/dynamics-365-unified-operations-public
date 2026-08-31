@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Set up exchange rates for currency transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up exchange rates for currency transactions in Russia in Microsoft Dynamics 365 Finance.
 

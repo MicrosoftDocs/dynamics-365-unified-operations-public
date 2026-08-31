@@ -15,7 +15,7 @@ ms.search.form: AssetParameters
 
 # Calculate average and daily exchange rates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 According to the requirements for accounting foreign currencies under "Act C of 2000 on Accounting," the cost of foreign currency holdings comprises one of the following:
 

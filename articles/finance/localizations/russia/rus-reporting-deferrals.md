@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Reporting for deferrals (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with the various reports that are available for deferrals in Russia with Microsoft Dynamics 365 Finance.
 

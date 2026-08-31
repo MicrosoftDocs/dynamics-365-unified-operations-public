@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.9
 
 # Unique certification
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Italy, withholding tax agents must electronically communicate the Unique certification to the revenue agency to certify the following information:
 

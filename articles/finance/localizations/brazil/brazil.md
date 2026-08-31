@@ -15,7 +15,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Brazil overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Brazil.
   

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.1
 
 # Tips for troubleshooting India GST performance problems
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article lists some tips for troubleshooting India GST performance problems.
 

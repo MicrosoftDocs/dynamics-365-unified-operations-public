@@ -15,7 +15,7 @@ ms.search.form: AssetTable
 
 # Fixed assets location change tracking for Latvia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the change tracking functionality for fixed asset location fields for legal entities with a primary address in Latvia in Microsoft Dynamics 365 Finance.
 

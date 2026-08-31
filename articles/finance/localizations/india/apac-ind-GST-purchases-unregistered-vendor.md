@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Purchases from unregistered vendors
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Create a purchase requisition
 

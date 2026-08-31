@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure electronic invoice parameters for Ecuador
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the information that is required to generate the electronic invoice XML for Ecuador.
 

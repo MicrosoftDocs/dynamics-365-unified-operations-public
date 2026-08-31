@@ -16,7 +16,7 @@ ms.assetid: e5dbbbe1-935f-4fb4-a014-447916051628
 
 # Configure tax integration for China
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the process for configuring tax integration for China.
 

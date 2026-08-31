@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Electronic invoicing coverage for supported and planned countries and regions
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes the current geographical coverage for electronic invoicing in Microsoft Dynamics 365 Finance. It also describes known plans for upcoming electronic invoicing implementations.
 
 Electronic invoicing, or e-invoicing, is the process of sending and receiving invoices in a digital format. E-invoicing is rapidly becoming an important part of business processes and an essential part of compliance with the global and country/region-specific regulatory requirements for both buyers and suppliers.

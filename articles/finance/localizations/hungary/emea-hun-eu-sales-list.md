@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # EU sales list for Hungary
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides information about the European Union (EU) sales list report for Hungary. The Hungarian EU sales list report contains information about purchases and sales of goods and services for reporting in XML format. The Hungarian EU sales list report includes the following fields:
 
 - **EU sales list header:**

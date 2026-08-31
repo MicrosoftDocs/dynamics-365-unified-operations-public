@@ -11,6 +11,8 @@ ms.reviewer: johnmichalak
 
 # Format 1006 file for Colombia configuration
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to set up and issue a format 1006 file in both XML and Excel output formats.
 
 This report includes value added tax (VAT) generated on sales transactions, VAT recovered on purchase returns, and national consumption tax (NCT).

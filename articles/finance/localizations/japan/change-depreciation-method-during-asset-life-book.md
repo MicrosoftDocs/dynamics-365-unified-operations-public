@@ -17,7 +17,7 @@ ms.search.form:
 
 # Change the depreciation method during the asset life for book
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to change the depreciation method for fixed assets under a fixed asset group and book in Japan with Microsoft Dynamics 365 Finance.
 

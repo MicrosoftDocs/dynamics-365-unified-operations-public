@@ -15,7 +15,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Denmark overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > - In May 2022, Denmark updated its bookkeeping law, replacing the 1999 act. This new law, known as the [Danish Bookkeeping Act, no. 700 of 24 May 2022](https://go.microsoft.com/fwlink/?linkid=2259403) (the "Act"), and any issued Executive Orders, govern the bookkeeping responsibilities for commercial enterprises in Denmark, including foreign companies operating there and digital bookkeeping system providers. The law's primary purpose is to prevent tax fraud and promote digital accounting.

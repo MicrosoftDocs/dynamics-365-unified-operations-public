@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-06-30
 
 # VAT statement for Norway
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes country/region-specific information about how to set up the value-added tax (VAT) statement for legal entities that have a primary address in Norway. For more information about general VAT reporting, see [VAT reporting for Europe](../europe/emea-vat-reporting.md).
 

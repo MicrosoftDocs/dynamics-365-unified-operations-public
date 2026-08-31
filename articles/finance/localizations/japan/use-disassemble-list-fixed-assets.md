@@ -15,7 +15,7 @@ ms.custom:
 
 # Use disassemble list for fixed assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use a disassemble list for fixed assets for Japan in Microsoft Dynamics 365 Finance.
 

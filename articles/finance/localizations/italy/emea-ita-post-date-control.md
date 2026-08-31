@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.17
 
 # Unified posting date control
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure chronology control of invoice posting dates within a specific sales tax book section.
 

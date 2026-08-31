@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # EU Sales list for Sweden
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the European Union (EU) sales list report for Sweden in Microsoft Dynamics 365 Finance.
 

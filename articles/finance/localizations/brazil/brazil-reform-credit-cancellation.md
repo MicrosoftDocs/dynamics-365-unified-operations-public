@@ -10,7 +10,7 @@ ms.custom: bap-template
 
 # Set up fiscal notes for credit cancellation in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure tax groups in Globalization Studio and create a fiscal document for credit cancellation in Brazil tax reform in Dynamics 365 Finance.
 

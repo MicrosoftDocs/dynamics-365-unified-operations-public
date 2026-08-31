@@ -14,7 +14,7 @@ ms.custom:
 
 # Customer electronic invoices in Germany
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format was implemented. This article explains how to set up and process customer electronic invoices in **xRechnung** format.
 

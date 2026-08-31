@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Europe overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that help you set up legal entities with a primary address in Europe.
 

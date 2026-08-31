@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Create and post a purchase complementary fiscal document (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create a purchase complementary fiscal document to adjust a purchase fiscal document that was generated for an incorrect price for Brazil in Microsoft Dynamics 365 Finance.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Enter depreciation rate schedule and associate to depreciation profile
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to enter the Japan depreciation rate schedule and associate it with a depreciation profile in Microsoft Dynamics 365 Finance.
 

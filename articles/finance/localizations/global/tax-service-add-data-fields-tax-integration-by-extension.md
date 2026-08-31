@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-04-01
 
 # Add data fields in the tax integration by using extension
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use X++ extensions to add data fields in the tax integration. You can extend these fields to the tax data model of the tax service and use them to determine tax codes. For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 

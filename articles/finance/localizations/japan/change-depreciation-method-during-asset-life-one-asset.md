@@ -16,7 +16,7 @@ ms.custom:
 ---
 # Change the depreciation method during the asset life for one asset
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to change the depreciation method during the asset life for one asset in Japan with Microsoft Dynamics 365 Finance.
 

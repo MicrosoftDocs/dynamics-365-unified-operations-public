@@ -14,7 +14,7 @@ ms.custom:
 
 # Original invoice reference (Eastern Europe)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create sales orders and corrective lines in a credit note for a sales order in Estonia with Microsoft Dynamics 365 Finance.
 

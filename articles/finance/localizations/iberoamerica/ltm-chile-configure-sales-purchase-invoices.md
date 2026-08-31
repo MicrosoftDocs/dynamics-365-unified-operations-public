@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Configure sales and purchase invoices
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use the Latin American (LATAM) features to work with Chilean fiscal documents that are related to sales and purchase transactions. An invoice is represented by a **document class**, not by the invoice transaction. The document class has the same information as a fiscal invoice document, such as the typification, sales point, branch, invoice number structure, and any additional required fields.
 

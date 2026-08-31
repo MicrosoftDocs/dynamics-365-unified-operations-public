@@ -13,7 +13,7 @@ ms.search.region: Global
 
 # Local reports and primary forms in Accounts receivable and Accounts payable
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with the primary forms used in Russian with Microsoft Dynamics 365 Finance.
 

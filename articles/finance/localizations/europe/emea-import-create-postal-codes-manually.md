@@ -15,7 +15,7 @@ ms.custom:
 
 # Import or manually create postal codes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to import and manually create postal codes in the correct format.
 

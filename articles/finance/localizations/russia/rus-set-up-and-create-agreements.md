@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Set up and create agreements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create purchase and sales agreements for Russia in Microsoft Dynamics 365 Finance.
 

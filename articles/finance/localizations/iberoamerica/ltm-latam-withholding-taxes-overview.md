@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # LATAM withholding taxes overview 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 [!include [does not apply to](includes/does-not-apply-to.md)]
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Inventory cost structure
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with the inventory cost structure of miscellaneous charges in inventory transactions for Russia in Microsoft Dynamics 365 Finance.
 

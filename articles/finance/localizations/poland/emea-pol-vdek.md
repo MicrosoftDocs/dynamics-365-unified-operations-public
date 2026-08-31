@@ -15,7 +15,7 @@ ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 
 # VAT declaration with registers (JPK-V7, VDEK)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the value-added tax (VAT) declaration with registers (also known as a JPK-V7, VDEK) in Poland.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-08-07
 
 # Submit a VAT return to HMRC's MTD web service
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to submit a value-added tax (VAT) return to the Making Tax Digital (MTD) web service of His Majesty's Revenue and Customs (HMRC) in Microsoft Dynamics 365 Finance.
 

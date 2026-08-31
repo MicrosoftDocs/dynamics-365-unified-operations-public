@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Issue ICMS tax credit transfer fiscal documents (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create and issue a new tax fiscal document and generate a Nota Fiscal eletrônica (NF-e) in Brazil with Microsoft Dynamics 365 Finance.
 

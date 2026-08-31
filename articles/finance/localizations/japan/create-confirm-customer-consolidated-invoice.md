@@ -15,7 +15,7 @@ ms.search.form: CustConsInvoice_JP
 
 # Create and confirm a customer consolidated invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to consolidate customer invoices each month to calculate the due amount in Japan with Microsoft Dynamics 365 Finance.
 

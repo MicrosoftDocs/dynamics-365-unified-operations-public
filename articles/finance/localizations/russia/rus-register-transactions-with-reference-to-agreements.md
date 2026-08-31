@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Register transactions with reference to agreements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to register agreements transactions for Russia in Microsoft Dynamics 365 Finance.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Italian sales tax books
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and use Italian sales tax books and Italian sales tax book sections.
 

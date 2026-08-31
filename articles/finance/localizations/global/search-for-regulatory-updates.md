@@ -13,7 +13,7 @@ ms.custom:
 
 # Search for country/region-specific regulatory updates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides links to planned and released country/region-specific regulatory updates for Microsoft Dynamics 365 Finance. You must sign in to Microsoft Dynamics Lifecycle Services (LCS) to access this information.
 

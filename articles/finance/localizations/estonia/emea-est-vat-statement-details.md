@@ -15,7 +15,7 @@ ms.search.form: TaxPeriod, TaxReportCollection, TaxReportVoucher
 
 # VAT statement details for Estonia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!NOTE]
 > This feature is replaced by the value-added tax (VAT) declaration functionality. For more information, see [VAT declaration (Estonia)](emea-est-vat-declaration.md).

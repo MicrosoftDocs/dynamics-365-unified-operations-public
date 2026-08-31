@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Making Tax Digital – VAT return submission in the United Kingdom
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the Making Tax Digital for VAT (MTD VAT) feature in Microsoft Dynamics 365 Finance and use it to submit a VAT return in the United Kingdom (UK).
 

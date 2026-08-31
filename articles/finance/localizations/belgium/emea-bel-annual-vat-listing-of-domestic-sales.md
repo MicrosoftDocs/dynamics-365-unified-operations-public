@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Annual VAT listing of domestic sales
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You send the **Invoice turnover** report to the authorities once per year. Use it to report the turnover for Belgian VAT-obliged customers, if that turnover exceeds a specific amount. The report includes invoices from customer transactions where the customers have an enterprise number that is formatted according to the guidelines of the Belgian authorities.
 

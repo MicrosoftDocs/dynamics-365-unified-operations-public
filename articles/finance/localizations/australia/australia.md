@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Australia overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about functionality that supports Australian regulations.
 

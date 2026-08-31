@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Sales where prices include and exclude tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Create a sales order
 

@@ -14,7 +14,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 
 # Use currency conversion
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use currency conversion on free text invoices and purchase orders for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 

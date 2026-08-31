@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Manage fiscal document text in procurement documents (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up fiscal document source text in Brazil with Microsoft Dynamics 365 Finance.
 

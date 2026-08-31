@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Create and transfer transactions to the BLWI (Belgium)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create and transfer transactions to the Belgisch Luxemburgs Wissel Instituut (BLWI) in Belgium by using Microsoft Dynamics 365 Finance.
 

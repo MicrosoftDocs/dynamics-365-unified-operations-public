@@ -14,6 +14,8 @@ ms.search.validFrom: 2022-1-17
 
 # Basis change (dual base) in ICMS-DIF tax calculations for products from suppliers in other states
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes the configuration for calculations of the **ICMS-DIF** tax type when you receive a fiscal document in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
 
 According to the definition in the state law, the Imposto sobre Circulação de Mercadorias e Serviços (ICMS) that you collect must follow this rule:

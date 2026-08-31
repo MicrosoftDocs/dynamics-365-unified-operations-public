@@ -15,7 +15,7 @@ ms.custom:
 
 # Use tax calculation in vendor invoice journal in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes tax calculation in vendor invoice journal in Brazil tax reform solution.
 

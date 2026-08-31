@@ -15,7 +15,7 @@ ms.custom:
 
 # CN-00016 User operation log by China working rule
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to generate a user operation log for China in Microsoft Dynamics 365 Finance.
 

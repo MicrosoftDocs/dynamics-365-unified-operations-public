@@ -16,7 +16,7 @@ ms.assetid: 58d2b515-ccf2-4a23-9880-73bd8ef491a2
 
 # Low-value pool depreciation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the low-value pool depreciation method that's used in Australia. You can allocate low-cost and low-value assets to a low-value pool if their cost or opening adjustable value is less than a specified amount.
 

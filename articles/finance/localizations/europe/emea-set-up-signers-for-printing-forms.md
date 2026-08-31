@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up signers for print forms
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 For legal entities in the Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, set up signers and titles for customers and vendors that print documents such as invoices and cash orders.
 

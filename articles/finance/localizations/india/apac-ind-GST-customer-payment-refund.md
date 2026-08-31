@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-01
 
 # Customer payment refunds
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and configure a customer advance payment journal for customer refunds and validate tax details and financial entries in Microsoft Dynamics 365 Finance.
 

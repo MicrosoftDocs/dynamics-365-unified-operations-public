@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-11-30
 
 # Bank symbols for bank accounts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Constant symbols are set up for bank accounts, and then used on sales orders, purchase orders, customer and vendor invoices, and free text invoices.
 

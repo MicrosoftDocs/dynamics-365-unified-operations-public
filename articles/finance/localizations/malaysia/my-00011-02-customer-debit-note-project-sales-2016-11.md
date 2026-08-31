@@ -15,7 +15,7 @@ ms.custom:
 
 # MY-00011 02 Generate Customer Debit Note for Project sales (November 2016)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and print a project debit note for GST in Malaysia with Microsoft Dynamics 365 Finance. 
 

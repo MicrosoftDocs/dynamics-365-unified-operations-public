@@ -13,7 +13,7 @@ ms.search.region: Global
 
 # Lithuanian Intrastat
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the Lithuanian Intrastat report in Microsoft Dynamics 365 Finance.
 

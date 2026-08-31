@@ -17,7 +17,7 @@ ms.custom:
 
 # Enable the JBA payment file format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to enable the Japanese Bankers Association (JBA) payment file format for Japan in Microsoft Dynamics 365 Finance.
 

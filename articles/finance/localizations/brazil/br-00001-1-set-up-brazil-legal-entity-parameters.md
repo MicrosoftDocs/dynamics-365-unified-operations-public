@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up legal entity parameters (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up Brazilian legal entity parameters in Microsoft Dynamics 365 Finance.
 

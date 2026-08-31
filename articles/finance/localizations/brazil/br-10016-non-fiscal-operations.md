@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Non-fiscal operations (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create nonfiscal document transactions to include in the Sistema Publico de Escrituração Digital Escrituracao Fiscal Digital (SPED EFD) text file in Brazil with Microsoft Dynamics 365 Finance.
 

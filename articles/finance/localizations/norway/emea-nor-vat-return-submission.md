@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-11-18
 
 # Submit a VAT return to the Altinn web service
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to submit a VAT return to the Altinn web service of Norway in Microsoft Dynamics 365 Finance.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 8.1
 
 # Advance reports with budget control (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors in Russia with Microsoft Dynamics 365 Finance.
 

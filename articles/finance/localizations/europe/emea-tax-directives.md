@@ -13,7 +13,7 @@ ms.search.validFrom: 2017-06-30
 ---
 # Tax directives for Europe
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The EU Directive provides regulations that all Member States must follow regarding invoice rules and information that you must include when creating invoices.
 

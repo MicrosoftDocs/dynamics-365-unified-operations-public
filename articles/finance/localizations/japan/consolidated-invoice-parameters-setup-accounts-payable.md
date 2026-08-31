@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure consolidated invoice parameters and setup for accounts payable
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and configure consolidated invoices for Japan in Microsoft Dynamics 365 Finance.
 

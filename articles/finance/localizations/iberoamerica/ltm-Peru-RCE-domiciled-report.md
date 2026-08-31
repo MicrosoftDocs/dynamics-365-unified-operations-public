@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure printing for the Electronic Purchase Register (RCE) for purchases domiciled in Peru
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure printing for the Electronic Purchase Register (RCE) for purchases that are domiciled in Peru in Microsoft Dynamics 365 Finance. An Excel output version of annex 13.5.1 is also included.
 

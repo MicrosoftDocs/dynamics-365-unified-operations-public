@@ -15,7 +15,7 @@ ms.search.form: TaxFiscalDocument_BR, TaxFiscalDocumentCancel_BR, TaxFiscalDocum
 
 # ICMS tax fiscal documents for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains the concept of tax fiscal documents and describes the requirements for generating them.
 

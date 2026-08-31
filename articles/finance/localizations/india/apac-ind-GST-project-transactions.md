@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 7.3.1
 
 # Goods and Service Tax (GST) project transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Create a project category
 

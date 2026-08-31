@@ -15,7 +15,7 @@ ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 
 # Set up company bank accounts for ISO20022 direct debits
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up company-specific bank account information that's required to generate customer payment files.
 

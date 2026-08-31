@@ -15,7 +15,7 @@ ms.custom:
 
 # Acquire a fixed asset and claim the government grant subsidy
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to acquire a fixed asset and claim it for a government grant in Japan with Microsoft Dynamics 365 Finance.
 

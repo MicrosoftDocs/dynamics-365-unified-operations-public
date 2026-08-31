@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Create customer and vendor records with an address in Nicaragua
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Nicaraguan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
 

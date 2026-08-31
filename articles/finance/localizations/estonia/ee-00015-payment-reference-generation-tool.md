@@ -14,7 +14,7 @@ ms.search.form: MainAccount, LedgerJournalTable, LedgerJournalTransDaily
 ---
 # EE-00015 Payment reference generation tool
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to specify number sequences for payment references and create payment reference numbers in Estonia with Microsoft Dynamics 365 Finance.
 

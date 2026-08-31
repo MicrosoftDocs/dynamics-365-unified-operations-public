@@ -14,7 +14,7 @@ ms.search.validFrom: 1900-01-02
 
 # VAT reports
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate value-added tax (VAT) reports to submit to tax authorities in Thailand in Microsoft Dynamics 365 Finance.
 

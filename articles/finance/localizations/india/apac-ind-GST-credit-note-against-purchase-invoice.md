@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-01
 
 # Create a credit note against a purchase invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a credit note against a purchase order invoice in Microsoft Dynamics 365 Finance.
 

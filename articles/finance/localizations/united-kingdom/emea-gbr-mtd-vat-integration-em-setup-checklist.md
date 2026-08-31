@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.22
 
 # Checklist for Electronic messages setup for MTD VAT
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to set up the Electronic messages functionality so that it supports both the **UK MTD VAT TEST** processing for testing purposes and the **UK MTD VAT returns** processing for real-life interoperation with the production web application of Her Majesty's Revenue and Customs (HMRC). Use this information to determine whether you correctly set up the Electronic messages functionality.
 

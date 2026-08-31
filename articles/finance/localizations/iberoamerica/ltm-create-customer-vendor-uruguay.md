@@ -11,6 +11,8 @@ ms.reviewer: johnmichalak
 
 # Create customer and vendor records with an address in Uruguay
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The Uruguayan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. It also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites

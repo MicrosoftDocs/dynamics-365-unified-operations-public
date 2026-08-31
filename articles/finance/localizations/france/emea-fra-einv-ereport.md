@@ -15,6 +15,8 @@ ms.dyn365.ops.version: AX 10.0.48
 
 # Electronic invoicing for France
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance through a certified service provider acting as an Approved Platform (*Platform Agréée* - **PA**).
 
 > [!NOTE]

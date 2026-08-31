@@ -13,7 +13,7 @@ ms.custom:
 
 # Process incoming electronic documents
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can import and process incoming electronic documents, such as vendor electronic invoices, in two ways:
 

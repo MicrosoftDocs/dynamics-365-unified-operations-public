@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up asset retirement obligation for fixed assets for Japan
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Japan, you recognize asset retirement obligation (ARO) for fixed assets that have legal obligations at their retirement. This article explains how to recognize, amortize, and accrue the ARO liability, and how to retire the fixed asset and ARO liability.
 

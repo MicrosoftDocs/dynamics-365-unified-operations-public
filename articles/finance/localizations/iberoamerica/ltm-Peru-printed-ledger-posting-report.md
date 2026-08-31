@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Set up and generate a printed ledger posting report for Peru
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to set up and print the ledger posting report for Peru in Microsoft Dynamics 365 Finance.
 

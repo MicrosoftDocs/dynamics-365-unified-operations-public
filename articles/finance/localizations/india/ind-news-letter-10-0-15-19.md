@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.15, 10.0.16, 10.0.17, 10.0.18, 10.0.19
 
 # What's new or changed for the Indian GST localization in 10.0.15-10.0.19
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides a summary of the new features and critical bug fixes that were released in Microsoft Dynamics 365 Finance versions 10.0.15 through 10.0.19 for the Indian Goods and Services Tax (GST) localization.
 

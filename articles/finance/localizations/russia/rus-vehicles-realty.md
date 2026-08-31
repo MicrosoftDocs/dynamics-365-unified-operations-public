@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Vehicles and realty as fixed assets (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up vehicles and realty as fixed assets for Russia in Microsoft Dynamics 365 Finance.
 

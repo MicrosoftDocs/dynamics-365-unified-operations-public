@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 7.3
 
 # Fiscal service (ESR) integration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Austria, all cash payments must be signed by an external device or service, and they must be securely stored. In the Czech Republic, all cash payments must be sent to the government portal for a fiscal signature. In both countries, a cash receipt must be issued where the signature is printed.
 

@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-10-26
 
 # Set up tax codes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up tax codes in the Tax Calculation feature of Globalization studio workspace. It includes the setup for a simple scenario to make the tax code work and information about some advanced tax code functionality for complex scenarios.
 

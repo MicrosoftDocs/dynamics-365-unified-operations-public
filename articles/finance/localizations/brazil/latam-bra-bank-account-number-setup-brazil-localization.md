@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Set up bank account numbers for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you create a bank account, you must enter the bank account number in a specific format (mask). This mask includes all the attributes that are required to identify a bank account number according to the regulations from the Brazilian Central Bank.
 

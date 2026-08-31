@@ -13,7 +13,7 @@ ms.author: v-federicohe
 
 # Post Ecuadorian refund invoice transactions
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and use refund-type invoices for Ecuador. A refund invoice enables an intermediary to purchase goods and services from a vendor on behalf of another party that is referred to as the beneficiary. The beneficiary then reimburses the intermediary for the invoice amount.
 

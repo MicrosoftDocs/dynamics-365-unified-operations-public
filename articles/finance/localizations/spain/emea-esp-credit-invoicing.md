@@ -14,7 +14,7 @@ ms.custom:
 
 # Create a corrective invoice (Spain)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a corrective invoice for Spain in Microsoft Dynamics 365 Finance.
 

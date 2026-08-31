@@ -15,7 +15,7 @@ ms.search.form: CustPaymMode
 
 # Set up method of payment for ISO20022 direct debit
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting in Microsoft Dynamics 365 Finance.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2024-10-01
 
 # Use vendor electronic invoices in Germany
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To help you comply with country/region-specific regulatory requirements, this article provides information that you can use to start importing incoming vendor electronic invoices in the Germany-specific *xRechnung* format that is based on the Universal Business Language (UBL) syntax in Microsoft Dynamics 365 Finance.
 

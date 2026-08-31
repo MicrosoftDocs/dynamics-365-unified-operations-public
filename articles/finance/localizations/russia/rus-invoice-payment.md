@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Invoices for payment (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to post and print invoices for payment in Russia with Microsoft Dynamics 365 Finance.
 

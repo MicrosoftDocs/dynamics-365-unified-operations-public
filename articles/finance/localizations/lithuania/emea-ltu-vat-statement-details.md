@@ -15,7 +15,7 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 
 # VAT statement details for Lithuania
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a VAT statement for legal entities in Lithuania in Microsoft Dynamics 365 Finance.
 

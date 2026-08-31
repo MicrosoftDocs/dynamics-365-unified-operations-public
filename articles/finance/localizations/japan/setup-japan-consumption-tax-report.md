@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up Japan consumption tax report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the system to support the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 

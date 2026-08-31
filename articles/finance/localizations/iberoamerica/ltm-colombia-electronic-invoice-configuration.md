@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # Get started with Electronic invoicing for Colombia
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 - [Introduction](#get-started-with-electronic-invoicing-for-colombia)
 - [Prerequisites](#prerequisites)
 - [Configure the electronic invoicing feature](#configure-the-electronic-invoicing-feature)
@@ -29,7 +31,6 @@ ms.reviewer: johnmichalak
 - [Issue electronic invoices](#issue-electronic-invoices)
 - [More resources](#more-resources)
 
-[!include [banner](../../includes/banner.md)]
 
 This article provides information to help you get started with Electronic invoicing for Colombia. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Colombian Tax Authorities, Microsoft is partnering with Edicom.
 

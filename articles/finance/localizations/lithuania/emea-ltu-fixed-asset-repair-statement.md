@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Fixed asset repair statement for Lithuania
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to submit repair information for a fixed asset and generate a fixed asset repair report. You must store repair information for all fixed assets.
 

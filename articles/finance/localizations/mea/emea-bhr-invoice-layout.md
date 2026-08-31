@@ -16,7 +16,7 @@ ms.custom:
 
 # Configure invoice layout for Bahrain (BH-00003)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Implement Bahrain-specific invoice layouts by using the concept of *configurable business documents*. For more information about configurable business documents, see the [Business document management overview](../../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md).
 

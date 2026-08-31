@@ -16,7 +16,7 @@ ms.assetid: d4c1d39b-64ec-4ddf-ba27-c0446f80f031
 
 # Import and verify NF-e XML documents and DANFE files for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to import and verify received Nota fiscal eletrônica (NF-e) XML documents and Documento auxiliar da Nota fiscal eletrônica (DANFE) files.
 

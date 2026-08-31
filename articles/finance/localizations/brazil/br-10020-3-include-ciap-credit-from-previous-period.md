@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Include CIAP credit from a previous period (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to use the Imposto Sobre Circulação de Mercadorias e Prestação de Serviços (ICMS) Credit Control of Fixed Assets (CIAP) fixed asset transactions page to create CIAP credit installments in Brazil with Microsoft Dynamics 365 Finance.
 

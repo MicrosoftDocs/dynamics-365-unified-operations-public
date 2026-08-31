@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Set up NF-e parameters for a fiscal establishment (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up parameters for a Nota Fiscal eletrônica (NF-e) for a fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
 

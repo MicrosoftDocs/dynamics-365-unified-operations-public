@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-11-30
 
 # SPED-Reinf (Brazil) 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The SPED-Reinf is a tax statement report that gathers information about withholding tax and other tax information from the Brazilian Internal Revenue Service (RFB) and Social Security. In Brazilian Portuguese, the abbreviation *Reinf* stands for "retenções e outras informações fiscais," or "withholdings and other tax information." The SPED-Reinf was created to assess federal taxes that are withheld for the purpose of Social Security and income taxes, and for activities that aren't related to labor. Examples of these activities include fiscal documents and payments.  
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up basic tax integration profile for China
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up a tax integration profile, update customer settings for issuing VAT invoices, and set up VAT invoice descriptions for China in Microsoft Dynamics 365 Finance.
 

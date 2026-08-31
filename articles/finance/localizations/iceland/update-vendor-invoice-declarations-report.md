@@ -16,7 +16,7 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice
 
 # Update vendor invoice declarations and generate the report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to post a vendor invoice with invoice declaration information attached and generate an invoice declaration report in Microsoft Dynamics 365 Finance.
 

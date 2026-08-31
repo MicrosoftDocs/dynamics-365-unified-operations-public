@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.9
 
 # General ledger simulations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 General ledger simulations enable you to post simulated ledger transactions from the general journal and then review reports that include the simulated transactions.
 

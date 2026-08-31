@@ -16,7 +16,7 @@ ms.assetid: 46e40a3a-784f-4a1e-b185-c4b8ad63518f
 
 # Service electronic fiscal document for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > The Recibo Provisório de Serviços (RPS) text-based integration described in this article reflects a legacy approach that isn't supported under current Brazilian regulations.

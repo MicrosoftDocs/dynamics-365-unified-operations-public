@@ -13,7 +13,7 @@ ms.search.region: Saudi Arabia
 
 # Sales tax for Saudi Arabia
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows you how to set up sales taxes for Saudi Arabia. Before reading this article, you might find it helpful to read [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 

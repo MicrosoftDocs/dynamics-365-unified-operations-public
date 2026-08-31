@@ -15,7 +15,7 @@ ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocu
 
 # Set up the transfer documents for goods movement inside a company
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up transfer documents for goods movement inside a company in Microsoft Dynamics 365 Finance.
 

@@ -15,7 +15,7 @@ ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 
 # Set up company bank accounts for ISO20022 credit transfers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up company-specific bank account information that's required to generate payment files. You set up information required to generate ISO 20022 credit transfer format but depending on the format, there might be other information required. This information might include the **Company ID** or the **Sort code**.
 

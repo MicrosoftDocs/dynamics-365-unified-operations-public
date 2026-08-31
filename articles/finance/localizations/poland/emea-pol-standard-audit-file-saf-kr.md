@@ -17,7 +17,7 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 # SAF Accounting Books - JPK_KR
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to prepare Microsoft Dynamics 365 Finance to report the SAF Accounting Books - JPK_KR that is required for reporting periods before January 1, 2025.
 

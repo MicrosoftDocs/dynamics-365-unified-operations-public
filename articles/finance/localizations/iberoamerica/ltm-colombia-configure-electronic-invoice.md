@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure electronic invoice parameters for Colombia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the information required to generate the electronic invoice XML for Colombia.
 

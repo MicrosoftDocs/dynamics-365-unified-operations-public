@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # TDS calculation on payments and promissory notes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides reference information about the different payment transactions that Tax Deducted at Source (TDS) is calculated on.
 

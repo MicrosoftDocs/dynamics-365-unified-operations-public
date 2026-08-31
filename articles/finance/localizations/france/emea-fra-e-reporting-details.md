@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Data collection and classification for the French e-reporting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This section describes how the **FR-eRep Populate Report Data** action collects source data for the French e-reporting report, how it filters each source transaction, and which section of the report the transaction is classified under. Use this information to reconcile the report content with the underlying subledger data (customer invoice journal, vendor invoice journal, project invoice journal, and tax transactions), and to understand why a specific transaction is included in, or excluded from, a specific report section.
 

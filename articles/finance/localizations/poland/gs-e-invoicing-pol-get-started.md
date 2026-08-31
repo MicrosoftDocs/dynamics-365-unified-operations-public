@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Electronic invoicing for Poland
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to get started with electronic invoicing for Poland in Microsoft Dynamics 365 Finance.
 

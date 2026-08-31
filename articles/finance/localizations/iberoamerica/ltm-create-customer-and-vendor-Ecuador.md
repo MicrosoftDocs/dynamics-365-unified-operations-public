@@ -13,7 +13,7 @@ ms.author: v-cpicon
 
 # Create customer and vendor records with an address in Ecuador
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Ecuadorian customer and vendor configuration contains the fiscal information that is required by the fiscal authorities. It also includes a reference to the document classes that can be used in transactions with customers and vendors.
 

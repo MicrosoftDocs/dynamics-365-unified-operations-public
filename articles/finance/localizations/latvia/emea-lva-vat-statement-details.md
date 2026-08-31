@@ -15,7 +15,7 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 
 # VAT statement details for Latvia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the VAT statement for legal entities in Latvia in Microsoft Dynamics 365 Finance.
 

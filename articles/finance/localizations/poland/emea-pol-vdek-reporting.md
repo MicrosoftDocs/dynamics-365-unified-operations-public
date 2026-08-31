@@ -14,7 +14,7 @@ ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 
 # JPK-V7 reporting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to run a VAT declaration with registers (also known as a JPK-V7, VDEK) for Poland in Microsoft Dynamics 365 Finance.
 

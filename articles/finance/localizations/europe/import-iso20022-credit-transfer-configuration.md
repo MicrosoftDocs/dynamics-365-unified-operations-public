@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolution
 
 # Import ISO20022 credit transfer configuration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to import a vendor payment electronic reporting configuration using Microsoft Dynamics 365 Finance.
 

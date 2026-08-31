@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Advance payments that you settle during invoice posting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following table shows the tax entries that the system generates for the invoice when you settle an advance payment in various scenarios.
 

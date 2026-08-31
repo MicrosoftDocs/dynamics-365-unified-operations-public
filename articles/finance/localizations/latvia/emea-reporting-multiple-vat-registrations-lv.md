@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.39
 
 # Support for multiple VAT registration numbers in reporting for Latvia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the regulatory reports for Latvia that legal entities can use with the functionality for multiple value-added tax (VAT) registration numbers. 
 For more information about this functionality, the prerequisites, and the required setup, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).

@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure SharePoint channels
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Before you configure a Microsoft SharePoint channel to process incoming documents, complete the steps described in [Configure a SharePoint connection](gs-e-invoicing-create-sharepoint-connection.md).
 

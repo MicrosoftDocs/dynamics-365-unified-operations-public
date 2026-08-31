@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure printing for Purchase Vat Books for Bolivia
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and use purchase VAT tax books for Bolivia.
 

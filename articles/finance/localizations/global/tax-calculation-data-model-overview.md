@@ -14,7 +14,7 @@ ms.custom:
 
 # Tax calculation data model
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how the field values in the tax data model are determined in tax calculation transactions.
 

@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTable
 
 # Fixed asset currency revaluation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to revalue fixed asset currency for Russia in Microsoft Dynamics 365 Finance.
 

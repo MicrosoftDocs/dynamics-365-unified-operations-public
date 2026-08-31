@@ -13,6 +13,8 @@ ms.search.region: Italy
 
 # Competence date for transactions in Italy
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides information about the competence date and explains how to turn on the functionality for transactions in Italy.
 
 In Italy, companies must use a posting date when they post transactions. The posting date in the fiscal journal is the date when the company acknowledges the transaction.

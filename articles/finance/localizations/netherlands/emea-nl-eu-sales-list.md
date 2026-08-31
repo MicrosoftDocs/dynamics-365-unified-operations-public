@@ -13,7 +13,7 @@ ms.custom:
 
 # EU sales list for Netherlands
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate the EU sales list for Netherlands in Microsoft Dynamics 365 Finance.
 

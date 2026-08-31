@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Print checks by using the Spanish layout
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to print checks that follow the standards that are required in Spain.
 

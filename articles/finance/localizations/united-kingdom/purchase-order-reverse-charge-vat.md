@@ -17,7 +17,7 @@ ms.search.form:
 
 # GB-00002 Create a purchase order that includes items subject to reverse charge VAT
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a purchase order that includes items subject to reverse charge VAT for the United Kingdom in Microsoft Dynamics 365 Finance.
 

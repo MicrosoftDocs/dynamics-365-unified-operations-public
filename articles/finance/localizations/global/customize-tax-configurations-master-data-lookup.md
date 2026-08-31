@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-04-01
 
 # Customize tax configurations for master data lookup
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Follow the steps in this article to customize tax configurations to extend master data lookup functionality.
 

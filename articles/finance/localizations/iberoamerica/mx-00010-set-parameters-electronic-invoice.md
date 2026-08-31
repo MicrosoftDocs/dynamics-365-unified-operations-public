@@ -15,7 +15,7 @@ ms.search.form: EInvoiceCFDIPACTable_MX, EInvoiceParameters_MX, DigitalCertifica
 
 # MX-00010 Set parameters for an electronic invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up an electronic invoice and a Proveedor autorizado de certificación (PAC) account to get approval and a digital stamp in Microsoft Dynamics 365 Finance.
 

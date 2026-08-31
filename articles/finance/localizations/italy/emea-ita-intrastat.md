@@ -16,7 +16,7 @@ ms.search.validFrom:
 
 # Italian Intrastat
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Overview
 

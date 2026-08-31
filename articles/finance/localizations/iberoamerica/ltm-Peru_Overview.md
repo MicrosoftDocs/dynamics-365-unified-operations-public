@@ -14,7 +14,7 @@ ms.dyn365.ops.version: App 10.0.44
 
 # Perú overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the localization features available for Microsoft Dynamics 365 Finance in Perú. These features help organizations comply with local regulatory requirements, including tax calculation, electronic invoicing, and statutory reporting.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Depreciation rounding
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to round fixed asset depreciation amounts up or down to the nearest whole number.
 

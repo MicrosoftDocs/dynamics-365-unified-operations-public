@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # MX-00020 Set up the chart of accounts for a legal entity in Mexico
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Set up specific parameters in the chart of accounts to generate electronic ledger accounting reports for a Mexican legal entity. This task uses the MXMF demo data company.
 

@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Regulatory Configuration Service merge to the Globalization Studio workspace
 
-[!INCLUDE[banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 

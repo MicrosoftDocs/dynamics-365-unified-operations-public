@@ -16,7 +16,7 @@ ms.assetid: fb4084cf-1061-4286-9f09-0f28a031483d
 
 # Fixed assets depreciation methods for Hungary
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about fixed asset depreciation for legal entities in Hungary. In Hungary, there are four country/region-specific depreciation methods:
 

@@ -15,7 +15,7 @@ ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
 
 # VAT declaration (Switzerland)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate a value-added tax (VAT) declaration in the official XML format (eCH-0217 eMWST standard) for Switzerland in Microsoft Dynamics 365 Finance.
 

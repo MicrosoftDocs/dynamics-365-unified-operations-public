@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # France e-reporting (electronic reporting of transactions) overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 France e-reporting (transmission des données de transaction) is part of the French continuous transaction control (Réforme de la facturation électronique) reform that requires companies to report specific business transactions to the French tax authorities through an approved intermediary platform.
 In Dynamics 365 Finance, the France e-reporting feature enables organizations to:

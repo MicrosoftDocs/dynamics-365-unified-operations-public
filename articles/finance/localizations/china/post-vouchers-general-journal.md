@@ -15,7 +15,7 @@ ms.custom:
 
 # Post vouchers from the general journal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to post Chinese vouchers by using the general journal for China in Microsoft Dynamics 365 Finance.
 

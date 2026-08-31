@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-01-01
 
 # Customer electronic invoices in Denmark
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and process outgoing customer-related electronic invoices in the Denmark-specific **OIOUBL** format in Microsoft Dynamics 365 Finance.
 

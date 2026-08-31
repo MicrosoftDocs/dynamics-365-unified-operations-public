@@ -12,7 +12,7 @@ ms.custom:
 
 # Multiple VAT registration numbers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the functionality for multiple value-added tax (VAT) registration numbers. By using this functionality, you can set up the tax registration numbers of a legal entity and its customers and vendors in different countries or regions. You can then post and settle taxes according to registration in the appropriate country or region.
 

@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Configure Format 1005 file for Colombia
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure and generate the Format 1005 file. The report shows deductible VAT for purchases and sales returns. It outputs an XML file that meets official tax requirements and an Excel file for internal control.
 

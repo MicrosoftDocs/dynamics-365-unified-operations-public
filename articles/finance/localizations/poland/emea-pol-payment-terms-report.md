@@ -13,7 +13,7 @@ ms.search.region: Poland
 
 # Payment terms in commercial transactions report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and generate the payment terms report for Polish legal entities in Microsoft Dynamics 365 Finance.
 

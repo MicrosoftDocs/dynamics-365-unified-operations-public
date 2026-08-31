@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Sales of taxable goods that have tax on shipping charges
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
 1. Create a sales order for a taxable item.

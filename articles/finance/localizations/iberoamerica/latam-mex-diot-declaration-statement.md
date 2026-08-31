@@ -16,7 +16,7 @@ ms.assetid: 0cdb4da3-dca8-4e31-8fd5-8a1f785b5104
 
 # DIOT declaration statement
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the DIOT declaration statement for Mexico.
 

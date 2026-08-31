@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Poland overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides links to documentation resources for Poland. 
 

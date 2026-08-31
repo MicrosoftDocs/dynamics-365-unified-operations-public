@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Transactions through intermediary
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with intermediary deals that are made by an agent in Russia with Microsoft Dynamics 365 Finance.
 

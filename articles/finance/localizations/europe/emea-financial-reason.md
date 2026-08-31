@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 # Financial reason
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Financial reason** feature lets you set up a predefined list of financial reasons that can be used during document registration and posting in the system. This feature can be used globally in legal entities that have a primary address in any country or region.
 

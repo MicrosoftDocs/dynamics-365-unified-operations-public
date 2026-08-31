@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-03-01
 
 # Customs declaration numbers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and track customs declaration numbers for Russia in Microsoft Dynamics 365 Finance.
 

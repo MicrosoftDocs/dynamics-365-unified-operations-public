@@ -15,7 +15,7 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 # Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable) (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to post a fiscal document received from the acquisition of fixed assets and then recover the PIS and COFINS taxes for Brazil n Microsoft Dynamics 365 Finance.
 

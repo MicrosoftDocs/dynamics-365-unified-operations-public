@@ -13,7 +13,7 @@ ms.search.region: France
 
 # Prerequisites to generate an FEC audit file in France
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To generate a compliant Fichier des écritures comptables (FEC) audit file in Microsoft Dynamics 365 Finance, set up the following prerequisites in the legal entity that you generate the FEC from.
 

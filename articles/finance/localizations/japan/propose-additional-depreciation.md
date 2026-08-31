@@ -15,7 +15,7 @@ ms.custom:
 
 # Propose additional depreciation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to propose additional depreciation for Japan in Microsoft Dynamics 365 Finance.
 

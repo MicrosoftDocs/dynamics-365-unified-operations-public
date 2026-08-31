@@ -15,7 +15,7 @@ ms.search.form: CustPaymMode, CustVendPaymReconciliation, LedgerJournalTransCust
 
 # Import payment formats for Sweden
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to import payment formats for Sweden in Microsoft Dynamics 365 Finance.
 

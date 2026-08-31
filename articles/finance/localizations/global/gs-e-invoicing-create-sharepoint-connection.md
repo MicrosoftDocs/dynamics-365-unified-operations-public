@@ -13,7 +13,7 @@ ms.search.validFrom: 2024-01-29
 ---
 # Create a SharePoint connection
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Electronic Invoicing service can read files from Microsoft SharePoint folders and upload files to SharePoint. To ensure that the Electronic Invoicing service can access a specific SharePoint site, you must provide the site credentials to the Electronic Invoicing service. To ensure secure storage of the credentials, don't provide them directly. Instead, store them in an Azure Key Vault, and provide a Key Vault secret.
 

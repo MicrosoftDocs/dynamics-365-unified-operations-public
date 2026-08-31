@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolution
 
 # Import ISO20022 direct debit configuration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to import a customer payment electronic reporting configuration in Microsoft Dynamics 365 Finance.
 

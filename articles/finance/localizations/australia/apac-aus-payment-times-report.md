@@ -14,7 +14,7 @@ ms.search.region: Australia
 
 # Payment times reporting schema
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up, create, and generate the Payment times reporting schema (PTRS) required for Australian legal entities.
 

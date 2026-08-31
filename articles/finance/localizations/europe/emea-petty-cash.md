@@ -15,7 +15,7 @@ ms.search.form: RCashBalance, RCashCountStatementForm, RCashPosting, RCashRemain
 
 # Petty cash for Eastern Europe and Russia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the petty cash functionality that users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia can use to reflect cash operations in the system.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Credit note on cash discount
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information that helps legal entities in the Czech Republic create, post, and print credit notes for cash discounts that they give to customers.
 

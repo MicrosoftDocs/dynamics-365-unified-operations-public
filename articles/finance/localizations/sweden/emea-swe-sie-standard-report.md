@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-05-31
 
 # Export financial information \(SIE\) in Sweden
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to export financial information in Microsoft Dynamics 365 Finance in the mandatory standard for exchanging accounting data electronically between different financial systems, SIE (Standard Import/Export) requirement in Sweden.
 

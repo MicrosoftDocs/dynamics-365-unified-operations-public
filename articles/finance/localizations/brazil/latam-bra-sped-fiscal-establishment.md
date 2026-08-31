@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-11-30
 
 # Enable the Fiscal Establishment dimension
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 SPED-Reinf events R-4010, R-4020, and R-4040 require that you determine a fiscal establishment for non-fiscal operations that you post through a journal. Therefore, you must enable fiscal establishment as a dimension and select it on the lines of a journal.
 

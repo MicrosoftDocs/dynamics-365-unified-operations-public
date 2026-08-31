@@ -16,7 +16,7 @@ ms.assetid: b6861a2c-c132-48a2-97b5-9cb1020e0512
 
 # Electronic invoices (CFDI)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Electronic billing in Mexico requires the Comprobantes fiscales digitales por internet (CFDI) format.
 

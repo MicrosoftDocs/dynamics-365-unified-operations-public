@@ -13,7 +13,7 @@ ms.search.validFrom: 2019-04-01
 
 # Calculation of tax asset and tax liability registers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to calculate tax asset and tax liability registers for Russia in Microsoft Dynamics 365 Finance.
 

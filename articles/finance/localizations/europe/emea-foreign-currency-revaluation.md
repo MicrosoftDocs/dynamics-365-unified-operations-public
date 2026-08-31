@@ -14,7 +14,7 @@ ms.custom:
 
 # Foreign currency revaluation for bank accounts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Revalue foreign currency amounts for bank account transactions
 

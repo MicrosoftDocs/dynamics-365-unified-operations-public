@@ -13,7 +13,7 @@ ms.search.region: Global
 
 # Netherlands Intrastat
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the Netherlands Intrastat report in Microsoft Dynamics 365 Finance.
 

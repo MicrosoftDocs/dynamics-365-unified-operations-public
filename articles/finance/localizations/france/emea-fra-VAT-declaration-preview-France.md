@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-08-02
 
 # VAT declaration (France)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and generate a report for France that you can use to report a value-added tax (VAT) declaration in the [www.impots.gouv.fr](http://www.impots.gouv.fr) online portal by using the exchange of computerized forms (EFI) channel.
 

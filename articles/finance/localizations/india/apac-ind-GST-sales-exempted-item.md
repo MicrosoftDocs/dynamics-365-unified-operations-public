@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Sales of exempted items
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
 1. Create a sales order for an exempted item.

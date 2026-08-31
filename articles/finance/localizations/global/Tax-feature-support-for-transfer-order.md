@@ -14,7 +14,7 @@ ms.custom:
 
 # Tax feature support for transfer orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about tax calculation and posting integration in transfer orders. By using this functionality, you can set up tax calculation and posting in transfer orders for stock transfers. Under European Union (EU) value-added tax (VAT) regulations, stock transfers are considered intra-community supply and intra-community acquisitions.
 

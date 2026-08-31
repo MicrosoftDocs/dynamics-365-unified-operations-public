@@ -14,7 +14,7 @@ ms.search.validFrom: 2022-01-27
 
 # Integration of the asset management module with the fixed asset (Russia) module
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with the the fixed asset module for Russia after integration with the asset management module in Microsoft Dynamics 365 Finance.
 

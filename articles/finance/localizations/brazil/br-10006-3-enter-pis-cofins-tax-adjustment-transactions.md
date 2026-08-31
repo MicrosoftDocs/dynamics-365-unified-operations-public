@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Enter PIS and COFINS tax adjustment transactions (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create and post a journal for manual Program of Social Integration (PIS) and Contribution for the Financing of Social Security (COFINS) tax adjustments by using the adjustment codes defined by the tax authority in Brazil with Microsoft Dynamics 365 Finance.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2023-11-03
 
 # Vendor electronic invoice import in Denmark
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and use vendor electronic invoice import for Denmark from the country-specific **OIOUBL** format in Microsoft Dynamics 365 Finance.
 

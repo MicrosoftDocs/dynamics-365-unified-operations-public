@@ -15,7 +15,7 @@ ms.search.form: EUSalesList
 
 # EU sales list for Spain (Report 349)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the European Union (EU) sales list report for Spain, also known as Report 349, in Microsoft Dynamics 365 Finance.
 

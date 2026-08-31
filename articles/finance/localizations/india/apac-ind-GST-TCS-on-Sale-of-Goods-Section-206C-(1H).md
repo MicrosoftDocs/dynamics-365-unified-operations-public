@@ -17,7 +17,7 @@ ms.custom:
 
 # TCS on sales of goods
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the functionality for Tax Collection at Source (TCS) on sales of goods. For example, it describes how to do the basic setup for TCS deduction on sale of goods transactions, how to calculate TCS on transactions from customers or groups of customers, and how to calculate TCS on transactions when customers don't have a permanent account number (PAN).
 Per section 206C (1H), you must collect TCS when you receive payment from a customer against a sale consideration. When the seller receives the payment, the process debits the TCS amount to the interim account and credits it to the TCS payable account. When the invoice is posted, the process posts the TCS amount to the interim payable account and adds it to the invoice value.

@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # EU Sales list for Latvia
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to set up the European Union (EU) sales list report for Latvia in Microsoft Dynamics 365 Finance.
 
 The Latvian EU sales list report contains information about the sale of goods and services for reporting in XML format.

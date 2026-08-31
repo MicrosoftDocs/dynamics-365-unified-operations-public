@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Sales invoices that are split based on delivery addresses
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts receivable** > **Sales orders** > **All sales orders**.
 1. Create a sales order for taxable items.

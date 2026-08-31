@@ -15,7 +15,7 @@ ms.custom:
 
 # Create and confirm recognition test
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and confirm recognition tests for Japan in Microsoft Dynamics 365 Finance.
 

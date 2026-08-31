@@ -17,7 +17,7 @@ ms.assetid: 5ee3e381-31c4-48ac-9488-0eb1bc524cf5
 
 # Progressive withholding tax for Japan
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about progressive withholding tax in Japan. Per the legal requirement in Japan, the tax percentage changes, depending on the interval in proportion to the invoice amount. The tax ratio also changes, based on the payment amount.
 

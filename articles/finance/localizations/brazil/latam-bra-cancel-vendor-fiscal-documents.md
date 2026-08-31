@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 7.3
 
 # Cancel vendor fiscal documents
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can cancel incorrect vendor fiscal documents that a legal entity generates and issues for vendors that aren't taxpayers. When you cancel an incorrect vendor fiscal document, you create a negative purchase order. When you post a negative purchase order and run the fiscal book integration process, all the tax, ledger, and financial transactions that are related to the purchase order are reversed in the fiscal books.
 

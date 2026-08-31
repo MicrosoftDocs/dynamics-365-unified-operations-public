@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-02-05
 
 # NT2020.005 – Layout and validation updates in the electronic fiscal document (NF-e)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the updates to the XML layout and validation rules that technical note NT2020.005 introduced for generating electronic fiscal document model 55 (NF-e).
 

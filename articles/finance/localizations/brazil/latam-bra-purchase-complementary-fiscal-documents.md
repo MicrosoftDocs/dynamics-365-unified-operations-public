@@ -15,7 +15,7 @@ ms.search.form: BrazilParameters, FBFiscalDocument_BR, PurchComplementaryInvoice
 
 # Purchase complementary fiscal documents for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the concept of a purchase complementary invoice for the Brazilian localization.
 

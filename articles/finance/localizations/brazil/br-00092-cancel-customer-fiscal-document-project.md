@@ -13,7 +13,7 @@ ms.search.region: Brazil
 
 # Cancel a customer fiscal document (project) (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to cancel a customer invoice for a project or fiscal document in Brazil with Microsoft Dynamics 365 Finance.
 

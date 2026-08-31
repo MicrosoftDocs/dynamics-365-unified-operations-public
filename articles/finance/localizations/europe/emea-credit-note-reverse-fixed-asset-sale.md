@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Fixed assets disposal for Estonia and Lithuania
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about credit notes for fixed assets disposal that users in legal entities in Estonia and Lithuania post by using a free text invoice.
 

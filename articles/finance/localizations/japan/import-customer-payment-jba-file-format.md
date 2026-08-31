@@ -15,7 +15,7 @@ ms.custom:
 
 # Import customer payment with JBA file format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to import electronic funds transfer (EFT) files with a Japanese Bankers Association (JBA) file format for Japan in Microsoft Dynamics 365 Finance.
 

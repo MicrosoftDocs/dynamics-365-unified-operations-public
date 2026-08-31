@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure printing for the IGV withholding tax report for Peru
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure printing for the General Sales Tax (IGV) withholding tax report for Peru in Microsoft Dynamics 365 Finance.
 

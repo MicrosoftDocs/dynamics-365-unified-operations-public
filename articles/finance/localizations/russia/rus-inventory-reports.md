@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-03-01
 
 # Inventory reports
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with inventory reports available for Russia in Microsoft Dynamics 365 Finance.
 

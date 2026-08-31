@@ -15,7 +15,7 @@ ms.search.form: AssetParameters, AssetDepreciationProfile
 
 # DE-00002 Depreciation adjustments for additional acquisitions in the second year
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the calculation of depreciation for additional acquisitions in Microsoft Dynamics 365 Finance.
 

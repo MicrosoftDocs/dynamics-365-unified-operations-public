@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.1
 
 # Fixed assets overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Fixed assets (Russia)** module provides automated accounting of fixed assets, intangible assets, and also working clothes, special rigging, and fixed assets that aren't considered valuable, from the time when they are put into operation and posted to the appropriate accounts until they are disposed of.
 

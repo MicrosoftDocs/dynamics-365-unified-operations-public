@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Register an integration point in the ID-porten web portal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Companies that register for value-added tax (VAT) in the territory of Norway have their accounts in the [ID-porten](https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94) web portal. To enable the direct submission of VAT returns to Altinn, you must create an integration point in the company's account in ID-porten. For more information, see [ID-Porten & Authentication](https://skatteetaten.github.io/mva-meldingen/english/idportenauthentication/).
 

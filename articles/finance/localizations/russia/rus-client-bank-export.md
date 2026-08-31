@@ -13,7 +13,7 @@ ms.search.validFrom: 2019-04-01
 
 # Client-Bank interface and reconciliation procedure
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure user settings for electronic outgoing payments created in payment journals by using the Client-Bank system for Russia in Microsoft Dynamics 365 Finance.
 

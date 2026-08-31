@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Service electronic fiscal document using text files (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > The Recibo Provisório de Serviços (RPS) text-based integration described in this article reflects a legacy approach that isn't supported under current Brazilian regulations.

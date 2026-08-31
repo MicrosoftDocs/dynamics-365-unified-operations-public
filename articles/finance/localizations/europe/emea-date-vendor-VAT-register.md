@@ -15,6 +15,8 @@ ms.search.validFrom: 2022-01-15
 
 # Date of vendor VAT register
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 In Microsoft Dynamics 365 Finance version 10.0.24, a new **Date of vendor VAT register** field is available for vendor invoices. This field specifies the date of the taxable supply for a purchase.
 
 To enable the new field, go to the **Feature management** workspace, find and select the **Enable date of vendor VAT register on vendor invoices** feature, and then select **Enable now**.

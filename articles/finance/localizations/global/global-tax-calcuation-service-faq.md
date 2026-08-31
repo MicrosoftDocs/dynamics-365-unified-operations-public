@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # Tax calculation FAQ
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides answers to frequently asked questions about the functionality of the Tax Calculation.
 
 ## Will the Tax Calculation be available on tier-1 machines and on-premises machines?

@@ -14,7 +14,7 @@ ms.search.validFrom: 2022-11-15
 
 # VAT return with direct submission to Altinn
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the **VAT return with direct submission to Altinn** feature in Microsoft Dynamics 365 Finance. This feature can be used to submit value-added tax (VAT) returns in Norway.
 

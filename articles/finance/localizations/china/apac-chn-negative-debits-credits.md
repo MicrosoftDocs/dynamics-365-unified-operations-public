@@ -17,7 +17,7 @@ ms.assetid: 0f23b25b-45e5-4156-9e38-621a97046552
 
 # Display debit and credit amounts in ledger accounts for China
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China.
 

@@ -17,7 +17,7 @@ ms.search.form:
 
 # Set up fixed asset depreciation allocation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create a fixed asset allocation rule and assign a fixed asset allocation rule to a posting profile in Japan with Microsoft Dynamics 365 Finance.
 

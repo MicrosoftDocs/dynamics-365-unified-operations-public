@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # MX-00020 - Specify the RFC registration ID for Mexican bank accounts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This task shows you how to create the bank account for Mexico and assign the RFC tax registration ID. This task uses the MXMF demo company data.
 

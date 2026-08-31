@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.22
 
 # Checklist for electronic messages setup for VAT returns with direct submission to Altinn
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to set up the [Electronic messages](../../general-ledger/electronic-messaging.md) functionality to support the processing of value-added tax (VAT) returns with direct submission to Altinn in Norway. Use the information in this article to determine whether the Electronic messages functionality is correctly set up.
 

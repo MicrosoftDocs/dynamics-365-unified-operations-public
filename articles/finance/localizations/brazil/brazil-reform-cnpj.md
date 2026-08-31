@@ -15,7 +15,7 @@ ms.custom:
 
 # Use the CNPJ validation in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the CNPJ validation in the Brazilian tax reform for 2026.
 

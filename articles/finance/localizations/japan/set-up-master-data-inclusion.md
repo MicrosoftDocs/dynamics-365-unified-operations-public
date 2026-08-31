@@ -17,7 +17,7 @@ ms.custom:
 
 # Set up master data for inclusion of deductible expenses for multiple posting layers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create fixed asset rules with required master data for inclusion of deductible expenses  for multiple posting layers for Japan in Microsoft Dynamics 365 Finance.
 

@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for the Printed General Ledger for Venezuela
 
-[!INCLUDE[banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article explains how to set up and generate the **Printed General Ledger** report for Venezuela. The **Printed General Ledger** report provides detailed information about all transactions that are recorded in the journal, together with the transaction date, journal number, main account, and description. The information is shown in an Excel printout format.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # GST TCS on payment of goods and services
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to deduct Goods and Services Tax (GST) Tax Collected at Source (TCS) on payments of goods and services in Microsoft Dynamics 365.
 

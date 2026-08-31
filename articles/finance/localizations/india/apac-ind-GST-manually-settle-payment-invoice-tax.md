@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Manual settlement of an advance payment and invoice that include tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Tax is posted on both the advance payment and the sales invoice. When these transactions are settled on the **Open transaction editing** page, the double tax entry is reversed.
 

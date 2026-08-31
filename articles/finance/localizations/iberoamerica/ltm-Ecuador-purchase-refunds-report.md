@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure Ecuadorian purchase refunds printing
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The article explains how to configure the Ecuadorian purchase refunds report so that it can be printed. This report provides information about purchase refund transactions, which are used when there are intermediaries in the purchases.
 

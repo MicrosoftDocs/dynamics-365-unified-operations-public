@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Set up deferrals (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up deferrals for Russia in Microsoft Dynamics 365 Finance.
 

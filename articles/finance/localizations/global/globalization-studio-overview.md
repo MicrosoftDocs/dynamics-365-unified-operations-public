@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Globalization Studio overview 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To run their businesses globally, customers must meet multiple country/region-specific requirements for tax compliance and local business practices. This concept is referred to as *localization*. The requirements are complex and are frequently changed by local governments. They often have very tight law enforcement dates.
 

@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 7.3
 # India Goods and Services Tax (GST) overview
 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides detailed information about India Goods and Services Tax (GST). For more information, download the following topics:
 

@@ -15,7 +15,7 @@ ms.search.form: LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, Numbe
 
 # Invoice and packing slip numbering for Latvia and Lithuania
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
 

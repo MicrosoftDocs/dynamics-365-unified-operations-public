@@ -15,7 +15,7 @@ ms.search.form: CustTable, CustBankAccounts, CustDirectDebitMandate, BankAccount
 
 # Set up customers and customer bank accounts for ISO20022 direct debits
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a customer bank account and a customer direct debit mandate, which are required to generate customer payment files like the ISO20022 direct debit. Depending on the configured customer payment formats, additional information not covered in this article might be required for a customer or a customer bank account. 
 

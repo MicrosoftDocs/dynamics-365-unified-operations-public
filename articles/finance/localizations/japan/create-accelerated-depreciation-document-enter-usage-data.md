@@ -15,7 +15,7 @@ ms.custom:
 
 # Create an accelerated depreciation document and enter usage data
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create an accelerated depreciation document and enter usage data for Japan in Microsoft Dynamics 365 Finance.
 

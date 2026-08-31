@@ -15,7 +15,7 @@ ms.search.form: InventJournalAsset
 
 # Move a fixed asset to inventory
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes country/region-specific functionality for Hungary that lets you transfer fixed assets to inventory at the net book value. The status of the fixed asset is set to **Scrapped**, and the net book value is set to 0. Additionally, the quantity of a product in inventory is set to 1, and the cost price is set to the net book value of the fixed asset.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.1
 
 # VAT declaration (Belgium)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 This article describes how to set up the value-added tax (VAT) declaration for Belgium in XML format, and how to preview the VAT declaration and sales and purchase transactions in Microsoft Excel.

@@ -15,7 +15,7 @@ ms.search.form: TaxGroup
 
 # GB-00002 Set up sales tax groups for reverse charge VAT
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up reverse charge sales tax groups for purchasing and sales purposes for the United Kingdom in Microsoft Dynamics 365 Finance.
 

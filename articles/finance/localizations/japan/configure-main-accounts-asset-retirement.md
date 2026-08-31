@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure main accounts for asset retirement obligation posting and market discount rates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure main accounts for asset retirement obligation posting and market discount rates in Japan with Microsoft Dynamics 365 Finance.
 

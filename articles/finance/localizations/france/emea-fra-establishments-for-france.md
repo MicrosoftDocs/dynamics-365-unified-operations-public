@@ -16,6 +16,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Use establishments in France
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 In France, invoices must identify the specific establishment involved in the transaction, in addition to the legal entity of the supplier or customer.
 An establishment represents a physical or operational location where business activity is carried out and is assigned its own official identifier (SIRET).
 

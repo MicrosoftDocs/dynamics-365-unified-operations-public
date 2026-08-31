@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Calculate tax on prices when prices include taxes is enabled
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use the **Exclude from base amount calculation** parameter of a tax code.
 

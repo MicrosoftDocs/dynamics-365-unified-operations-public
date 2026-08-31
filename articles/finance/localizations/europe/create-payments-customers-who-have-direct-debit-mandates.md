@@ -15,7 +15,7 @@ ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJour
 
 # Create payments for a customer who has direct debit mandates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to generate an ISO 20022 direct debit payment file for a customer who has direct debit configured and an invoice to be paid in Microsoft Dynamics 365 Finance.
 

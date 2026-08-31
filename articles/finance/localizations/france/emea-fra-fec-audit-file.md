@@ -13,7 +13,7 @@ ms.search.region: France
 
 # Audit file for France (Fichier des écritures comptables, FEC)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Companies in France must export their accounting transaction data for a fiscal year. They must then provide that data to auditors in Fichier des écritures comptables (FEC) format within a reasonable amount of time.
 

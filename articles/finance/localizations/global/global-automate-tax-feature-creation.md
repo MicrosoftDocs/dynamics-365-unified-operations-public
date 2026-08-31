@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Automate tax feature creation based on tax master data (Preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-04-01
 
 # Cash flow management (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and use cash flow management for Russia in Microsoft Dynamics 365 Finance.
 

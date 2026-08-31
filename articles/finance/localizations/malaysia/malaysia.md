@@ -14,7 +14,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Malaysia overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides links to documentation resources for Malaysia.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.04
 
 # What's new or changed for India GST in 10.0.04 (July 2019)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article summarizes the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.04 for India GST localization.
 .

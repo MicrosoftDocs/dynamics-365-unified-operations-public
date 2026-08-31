@@ -16,7 +16,7 @@ ms.assetid: a5628f89-2ebb-4df2-a8a5-522649fb66da
 
 # Withholding tax for Italy
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
 

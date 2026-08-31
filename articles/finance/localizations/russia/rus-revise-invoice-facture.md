@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Revision factures and corrective factures
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to issue a corrective or revision facture with an original facture for Russia in Microsoft Dynamics 365 Finance.
 

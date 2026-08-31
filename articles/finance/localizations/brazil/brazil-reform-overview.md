@@ -14,7 +14,7 @@ ms.custom:
 
 # Tax reform overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides and overview of the Brazil tax reform solution effective in 2026. It explains how the Advanced Tax Calculation engine supports new tax types and functionality while legacy components remain unchanged during the transition period.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # MY-00006 01 Set up GST relief clauses
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up GST relief causes for Malaysia in Microsoft Dynamics 365 Finance.
 

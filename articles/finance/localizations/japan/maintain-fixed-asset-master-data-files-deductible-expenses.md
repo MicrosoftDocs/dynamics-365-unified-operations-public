@@ -17,7 +17,7 @@ ms.custom:
 
 # Maintain fixed-asset master data files for deductible expenses
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to maintain fixed asset master data files for deductible expenses for Japan in Microsoft Dynamics 365 Finance.
 

@@ -17,7 +17,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Indian Tax Deducted at Source (TDS) overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides detailed information about Indian Tax Deducted at Source (TDS).
 

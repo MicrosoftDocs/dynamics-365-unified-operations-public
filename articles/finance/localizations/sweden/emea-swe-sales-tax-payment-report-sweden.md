@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-11-30
 
 # Sales tax report for Sweden
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the sales tax report for legal entities in Sweden in Microsoft Dynamics 365 Finance.
 

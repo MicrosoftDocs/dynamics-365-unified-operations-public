@@ -13,7 +13,7 @@ ms.search.region: Norway
 
 # Make payments to self-employed persons - RF-1321 for Norway
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate payments to self-employed persons using the RF-1321 report for legal entities in Norway with Microsoft Dynamics 365 Finance.
 

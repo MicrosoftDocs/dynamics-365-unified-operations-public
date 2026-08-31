@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Control code feature for Bolivia
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This feature adds a field named **Control code** to the **Additional data** section in the **LATAM** information when you post a document.
 You can set this entry manually or automatically by using the additional authorization code.

@@ -15,7 +15,7 @@ ms.search.form: CustPaymMode, VendPaymMode
 
 # File formats for methods of payment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes two methods for getting file formats that you can use for methods of payment.
 

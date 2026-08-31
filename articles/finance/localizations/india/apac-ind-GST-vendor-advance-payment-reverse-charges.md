@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Vendor advance payments where there are reverse charges
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts payable** \> **Payments** \> **Vendor Payment journal**.
 1. Create a record.

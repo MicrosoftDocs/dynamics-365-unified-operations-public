@@ -15,7 +15,7 @@ ms.search.form: CustPaymMode, CustVendPaymFormat
 
 # FR-00004 Set up methods of payment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up methods of payment so you can create and post the bill of exchange after approving it from the draw bill of exchange journal in Microsoft Dynamics 365 Finance.
 

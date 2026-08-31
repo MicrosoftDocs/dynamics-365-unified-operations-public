@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Belgium overview
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that should be considered for legal entities with a primary address in Belgium.
 

@@ -17,7 +17,7 @@ ms.custom:
 
 # Update certificate numbers and dates for TDS transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to update the recoverable certificate numbers and dates that were recorded for vendor, customer, and ledger accounts for Tax Deducted at Source (TDS). You can view the certificates for TDS transactions on the **Recoverable certificates** page. You can update the certificates by using the **Update Certificates** page.
 

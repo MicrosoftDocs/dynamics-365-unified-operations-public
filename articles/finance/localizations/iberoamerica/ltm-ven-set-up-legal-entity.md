@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Set up a legal entity and tax information for Venezuela
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a legal entity and tax information for a company in Venezuela by using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company. It contains the tax and legal attributes that are required for the rest of the LATAM configuration.
 

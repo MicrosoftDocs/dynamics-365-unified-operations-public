@@ -16,7 +16,7 @@ ms.custom:
 
 # Dynamics 365 globalization services
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following globalization services can be configured to extend the capabilities that exist in some Microsoft Dynamics 365 online services:
 

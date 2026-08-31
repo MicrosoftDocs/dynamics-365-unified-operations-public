@@ -13,7 +13,7 @@ ms.search.region: India
 
 # Audit trail and edit logs for accounting software in India
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article is intended to help organizations meet the requirements of Rule 3 of Companies (Accounts) Rules, 2014, and the following amendments to it:
 

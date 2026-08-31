@@ -16,7 +16,7 @@ ms.custom:
 
 # Vendor electronic invoice import in Chile
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and use vendor electronic invoice import for Chile from the country-specific XML format in Microsoft Dynamics 365 Finance.
 

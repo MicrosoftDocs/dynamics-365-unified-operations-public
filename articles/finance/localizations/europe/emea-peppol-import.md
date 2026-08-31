@@ -14,7 +14,7 @@ ms.search.validFrom: 2023-01-01
 
 # Import vendor electronic invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and import vendor electronic invoices in formats based on the Pan-European Public Procurement Online ([PEPPOL](https://peppol.org/)) into Microsoft Dynamics 365 Finance.
 

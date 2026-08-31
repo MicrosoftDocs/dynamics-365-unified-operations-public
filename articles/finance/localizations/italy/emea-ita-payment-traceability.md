@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.17
 
 # Italian localization - Payment traceability
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 For Italian companies that work with public sector companies, you might need to control the Tender procedure identification and CIPE codes during end-to-end processing from the original invoice to the payment. Both the Accounts Receivable and Accounts Payable modules can require this control.
 

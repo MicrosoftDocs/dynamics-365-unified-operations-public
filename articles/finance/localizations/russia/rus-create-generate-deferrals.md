@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Create or generate deferrals (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to manually create deferrals and generate them by using a periodic task for Russia in Microsoft Dynamics 365 Finance.
 

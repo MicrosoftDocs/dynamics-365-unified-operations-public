@@ -13,6 +13,8 @@ ms.search.validFrom: 2016-11-30
 
 # EU sales list for Czech Republic
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides information about the EU sales list report for the Czech Republic. The Czech Republic EU sales list report contains information about the sale of goods and services for reporting in XML format. The report includes the following fields:
 
 - **EU sales list header:**

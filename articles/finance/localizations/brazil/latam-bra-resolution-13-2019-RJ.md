@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-12-31
 
 # SPED fiscal resolution 13/2019 RJ
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The state of Rio de Janeiro (RJ) published Resolution 13/2019. This resolution defines how to issue a Nota fiscal eletrônica (NF-e) and how to record the information in the EFD-ICMS/IPI when you run the following operations (Decree No. 27.815/01):
 

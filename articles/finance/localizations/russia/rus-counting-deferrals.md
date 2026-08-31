@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Deferrals counting (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to do deferrals counting for Russia in Microsoft Dynamics 365 Finance.
 

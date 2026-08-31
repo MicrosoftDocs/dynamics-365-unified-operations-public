@@ -14,7 +14,7 @@ ms.custom:
 
 # Storno accounting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Storno accounting uses negative numbers to reverse original journal account entries.
 

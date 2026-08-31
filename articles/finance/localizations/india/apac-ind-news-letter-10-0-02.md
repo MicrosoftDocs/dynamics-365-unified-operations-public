@@ -15,7 +15,7 @@ ms.search.region: India
 
 # What's new or changed for India GST in 10.0.02 (May 2019)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article summarizes the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.02 for India GST localization.
 

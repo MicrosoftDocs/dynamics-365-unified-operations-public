@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Daily operations for advance holders in Russia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to perform daily operations such as handling cash and closing balances for advance holders in Russia with Microsoft Dynamics 365 Finance.
 

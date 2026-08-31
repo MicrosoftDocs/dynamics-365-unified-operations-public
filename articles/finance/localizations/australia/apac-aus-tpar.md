@@ -15,6 +15,8 @@ ms.custom:
 
 # Taxable Payments Annual Report
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to set up and generate the Taxable Payments Annual Report (TPAR) that's required by the Australian Taxation Office (ATO).
 
 Some businesses and government entities in Australia must provide a TPAR to the ATO by August 28 each year. The purpose of a TPAR is to report payments that are made to contractors or subcontractors for specific services, such as building and construction, cleaning, courier, road freight, IT, security, investigation, and surveillance services. The ATO uses the information on a TPAR to identify contractors who didn't meet their tax obligations because, for example, they didn't report all their income or register for goods and services tax (GST). A TPAR also helps contractors verify the income that they report on their tax returns.

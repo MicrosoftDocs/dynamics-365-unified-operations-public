@@ -14,7 +14,7 @@ ms.search.validFrom: 2020-09-06
 
 # Tax point date (Date of VAT register)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to indicate when the tax date is different from the transaction date regarding VAT registration for the UK in Microsoft Dynamics 365 Finance.
 

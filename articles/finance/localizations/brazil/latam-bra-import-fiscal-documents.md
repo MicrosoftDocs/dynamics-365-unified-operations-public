@@ -16,7 +16,7 @@ ms.assetid: b2389297-1359-498f-b755-c20574248ae1
 
 # Import fiscal documents for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
 

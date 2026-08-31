@@ -15,7 +15,7 @@ ms.custom:
 
 # VAT declaration for Latvia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate a value-added tax (VAT) declaration for legal entities in Latvia in Microsoft Dynamics 365 Finance.
 

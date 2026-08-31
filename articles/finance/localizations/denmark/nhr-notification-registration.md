@@ -15,7 +15,7 @@ ms.custom:
 
 # Notification and registration for the NemHandelsRegistret in Denmark
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 According to the Danish bookkeeping act, as of January 2024, all standard systems must notify users that they can register with the NemHandelsRegistret (NHR). The system must also provide information about the registration functionality.
 

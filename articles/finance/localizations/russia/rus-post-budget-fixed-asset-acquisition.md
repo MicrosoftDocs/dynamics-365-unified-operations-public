@@ -15,7 +15,7 @@ ms.search.form: BudgetModel
 
 # Create and post budget journals for fixed asset acquisitions (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and post a budget journal for a fixed asset acquisition for Russia in Microsoft Dynamics 365 Finance.
 

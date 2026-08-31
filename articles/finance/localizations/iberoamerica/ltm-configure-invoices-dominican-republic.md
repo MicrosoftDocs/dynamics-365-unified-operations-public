@@ -13,7 +13,7 @@ ms.author: v-cpicon
 
 # Configure sales and purchase invoices for the Dominican Republic
 
-[!INCLUDE[banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article explains how to start to use fiscal documents that are specific to the Dominican Republic through the Latin American (LATAM) features in purchase and sales transactions. The LATAM localization uses the concept of *document classes* to refer to fiscal documents such as invoices, credit notes, and debit notes. These documents might have to be completed with specific information, such as the typification, sales point, branch, invoice number structure, and additional fields that should be completed.
 

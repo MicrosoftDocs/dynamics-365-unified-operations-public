@@ -13,7 +13,7 @@ ms.search.validFrom: 2018-02-03
 
 # EU sales list for Finland
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the European Union (EU) sales list report for Finland. The Finnish EU sales list report contains information about the sale of goods and services for reporting in text format. The following fields are included on the Finnish EU sales list report:
 

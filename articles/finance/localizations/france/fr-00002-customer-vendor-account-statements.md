@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # FR-00002 Customer and vendor account statements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can print account statements for customers and vendors that display information for a time period that you select. You can use this functionality for legal entities whose primary address is in France.
 

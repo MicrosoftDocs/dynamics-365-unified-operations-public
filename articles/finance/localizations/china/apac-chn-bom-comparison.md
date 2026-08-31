@@ -17,7 +17,7 @@ ms.assetid: e399ab34-4bfa-4b6d-a956-d425c1395ea3
 
 # Bill of materials comparison for China
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about BOM comparison for China.
 

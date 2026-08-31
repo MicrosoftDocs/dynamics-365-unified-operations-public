@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for the VAT withholding certificate for Venezuela
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the value-added tax (VAT) withholding certificate for Venezuela in Microsoft Dynamics 365 Finance. This document contains information about the withholdings that are generated from vendor invoices, debit notes, and credit notes.
 
