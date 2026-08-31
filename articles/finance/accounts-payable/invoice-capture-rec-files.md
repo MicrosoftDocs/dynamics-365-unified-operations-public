@@ -17,7 +17,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 # Invoice capture received files
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Invoice capture, the **Received files** page is a central place where you receive invoice files from different sources.
 

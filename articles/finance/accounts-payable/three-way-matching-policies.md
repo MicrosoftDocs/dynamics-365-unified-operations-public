@@ -16,7 +16,7 @@ ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 
 # Three-way matching policies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides examples of three-way matching.
 

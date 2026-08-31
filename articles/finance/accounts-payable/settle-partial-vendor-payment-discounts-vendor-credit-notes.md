@@ -16,7 +16,7 @@ ms.assetid: 2b19f7fd-9ff9-4ee4-bddf-f582946d008e
 
 # Settle a partial vendor payment that has discounts on credit notes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article walks you through a scenario where a credit memo is settled against an invoice.
 

@@ -19,6 +19,8 @@ ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 
 # Validate invoice dates for French regulation
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 To comply with French invoicing regulations, Dynamics 365 Finance introduces a new validation to ensure that the invoice date isn't earlier than the delivery (confirmed receipt) date. This validation
 is enforced when you post the invoice and prevents non-compliant invoices from being generated.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.38
 
 # Delete master records in financial journals
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to delete the following master records in financial journals:
 

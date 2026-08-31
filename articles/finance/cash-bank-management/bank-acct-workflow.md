@@ -17,7 +17,7 @@ ms.dyn365.ops.version:
 
 # Bank account lifecycle management
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 

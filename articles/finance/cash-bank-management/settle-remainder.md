@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1.3
 
 # Settle remainder
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can settle the amount remaining from settlement activity by applying that amount to a ledger account or another customer.
 You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions.

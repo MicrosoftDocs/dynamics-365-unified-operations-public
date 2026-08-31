@@ -16,7 +16,7 @@ ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 
 # Create a customer invoice
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A **Customer invoice for a sales order** is a bill that relates to a sale, and that an organization gives to a customer. Create this type of customer invoice based on a sales order, which includes order lines and item numbers. You specify and post item numbers in the ledger. Subledger journal entries aren't available for a customer invoice for a sales order. For more information, see [Create sales order invoices](tasks/create-sales-order-invoices.md).
 

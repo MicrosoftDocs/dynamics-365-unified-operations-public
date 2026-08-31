@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 10.0.38
 
 # Finance insights update FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article answers frequently asked questions about updating from Finance insights 1.0.0.x with Export to Data Lake to Finance insights 1.2.x with Business performance analytics.
 

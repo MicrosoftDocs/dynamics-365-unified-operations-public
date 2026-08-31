@@ -13,6 +13,8 @@ ms.search.form: business-performance-analytics
 
 # Dynamics 365 ERP Analytics MCP frequently asked questions
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article answers common questions about the Dynamics 365 ERP Analytics MCP server.
 
 ## What is the ERP Analytics MCP server?

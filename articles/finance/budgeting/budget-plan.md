@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange
 
 # Budget planning
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a guided view of Budget planning in Microsoft Dynamics 365 Finance. This shows how to configure budget planning and how to budget plan using this configuration. This article focuses specifically on the following business processes or tasks:
 

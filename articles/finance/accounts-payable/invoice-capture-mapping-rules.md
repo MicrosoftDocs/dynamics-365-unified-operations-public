@@ -17,7 +17,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 # Invoice capture solution mapping rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mapping rules bring basic master data from Microsoft Dynamics 365 Finance or the enterprise resource planning (ERP) system. After you set up mapping rules, you can derive the information required to create vendor invoices in Finance. When you use mapping rules, the accounts payable (AP) clerk checks the status instead of manually filling in all the missing field values.
 

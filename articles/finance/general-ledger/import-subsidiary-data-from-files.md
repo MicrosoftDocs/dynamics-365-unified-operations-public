@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0.1
 
 # Import subsidiary data from files
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to prepare data from external systems so that you can import it into Microsoft Dynamics 365 Finance. Use the **Consolidate with import** page (**Consolidations \> Consolidate with import**) to prepare the transfer of subsidiary data from external systems.
 

@@ -16,7 +16,7 @@ ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
 
 # Procurement and sourcing in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article introduces you to the public sector procurement and sourcing functionality. This functionality includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
 

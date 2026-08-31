@@ -18,7 +18,7 @@ ms.assetid: d25a681f-49a5-4bfc-aa76-1c6373e35dd8
 
 # Consumption depreciation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the Consumption method of depreciation.
 

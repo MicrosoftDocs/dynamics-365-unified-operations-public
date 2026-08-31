@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Record leases in foreign currencies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Set up asset leasing accounts for leases that use currencies other than the accounting currency or the reporting currency on the **Ledger setup** page. Enter all leases in their transaction currency. In other words, enter leases in the currency that the lease contract specifies. This article explains how to record leases in currencies other than the accounting or reporting currency.
 

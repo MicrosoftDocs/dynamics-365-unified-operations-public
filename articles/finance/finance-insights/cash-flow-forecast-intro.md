@@ -17,7 +17,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Cash forecast
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Cash flow is critical to any business. Even profitable companies can face insolvency if they don't maintain the cash flow to meet immediate needs. The cash flow forecasting capability in Finance insights can help companies monitor and manage their cash balances effectively. This feature uses machine learning to help businesses forecast cash flows more accurately than they have previously. It can also help managers make decisions that optimize opportunities in the context of their current cash position. 
 

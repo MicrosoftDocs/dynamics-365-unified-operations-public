@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Alignment date scenarios
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article provides examples that show how alignment dates work in Subscription billing.
 
 For these examples, a billing detail for a billing schedule has an alignment date of October 31, 2019. The first billing detail for the line ends on October 31, 2019 and is prorated accordingly. The line is automatically renewed by using a renewal start date of November 11.

@@ -18,7 +18,7 @@ ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 
 # Bank statement file import troubleshooting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 >[!NOTE]
 >This functionality will be deprecated September 2022, new users should use electronic reporting.

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.20
 
 # Reference original invoices in credit notes (vendor invoices)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In some countries and regions, legal requirements mandate that printed credit notes or reporting routines include references to the original invoices. This article describes how to create a reference to an original invoice when you create a credit note.
 

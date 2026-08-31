@@ -18,7 +18,7 @@ ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 
 # Straight line service life depreciation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the straight line service life method of depreciation.
 

@@ -12,7 +12,7 @@ audience: Application User
 
 # Set up security for Business performance analytics
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Setting up security in the Business performance analytics app is a critical step in ensuring the security of your organization's data. This article provides an overview of the setup process for role-based, dimension, and report security, and explains how to add users to the app. In Business performance analytics, data access is disabled by default. Follow the steps outlined in this document to grant access to end users.
 

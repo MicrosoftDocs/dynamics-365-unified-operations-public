@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Configure lease parameters
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Several configuration settings affect how Asset leasing behaves. These settings include journal names, general parameters, and posting profile settings.
 

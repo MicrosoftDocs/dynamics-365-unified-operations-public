@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.15
 
 # Troubleshoot cash flow forecasting setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to troubleshoot common problems that can occur when you use **Cash flow forecasting** and the Cash overview Microsoft Power BI reports in Microsoft Dynamics 365 Finance.
 

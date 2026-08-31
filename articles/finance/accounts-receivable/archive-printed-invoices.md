@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.18
 
 # Archive printed customer invoices with hash numbers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In some countries/regions, there is a legal requirement to store calculated hash numbers in the system together with printouts of some documents. Hash numbers can be used for reporting to authorities and during audits.
 

@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Reduce balance depreciation after a split
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the method that Fixed assets uses to calculate depreciation after you split an asset by using the reduce balance method. The depreciation year that you configure in the asset book is the fiscal year. For more information, see [Reduce balance depreciation](reduce-balance-depreciation.md) and [Split a fixed asset](tasks/split-fixed-asset.md).
 

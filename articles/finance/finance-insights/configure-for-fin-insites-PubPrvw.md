@@ -16,7 +16,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Configuration for Finance insights
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This article explains how to configure Dynamics 365 Finance so that your system can use the capabilities that are available in Finance insights.

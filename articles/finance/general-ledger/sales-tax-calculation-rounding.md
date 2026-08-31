@@ -17,7 +17,7 @@ ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 
 # Sales tax calculation and rounding
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of sales tax calculation and rounding in Microsoft Dynamics 365 Finance. It also explains the parameters that are used in the setup for sales tax calculation and rounding, and how those parameters work together.
 

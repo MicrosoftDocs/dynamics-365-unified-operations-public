@@ -13,7 +13,7 @@ ms.topic: how-to
 ---
 # Display the company logo on the customer account statement
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to display the company logo on the customer account statement.
 

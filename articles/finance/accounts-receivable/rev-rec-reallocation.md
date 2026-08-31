@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Revenue recognition reallocation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Reallocation enables organizations to recalculate revenue prices when the terms of a contractual sale are changed. For the purpose of revenue recognition, the sales order documents are considered the contract.
 

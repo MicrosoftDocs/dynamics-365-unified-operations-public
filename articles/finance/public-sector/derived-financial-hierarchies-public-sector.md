@@ -17,7 +17,7 @@ ms.assetid: a1b30d2a-a370-402a-b3bd-d562adca55f0
 
 # Derived financial hierarchies in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the derived financial hierarchies functionality that's available for the public sector.
 

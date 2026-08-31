@@ -16,7 +16,7 @@ ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
 
 # Income statement financial report
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the default report for income statements. It also describes the building blocks that are associated with this report.
 

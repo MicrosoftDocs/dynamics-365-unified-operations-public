@@ -16,7 +16,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 
 # Import currency exchange rates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If a legal entity receives invoices in foreign currencies, you must convert the foreign currency into the local currency. This conversion requires up-to-date exchange rates for different currencies. This article provides an overview of the settings and processing required to import foreign exchange reference rates that exchange rate providers publish, such as OANDA Rates®, the European Central Bank, the Central Bank of Russia, and the Central Bank of the Republic of Türkiye (CBRT).
 

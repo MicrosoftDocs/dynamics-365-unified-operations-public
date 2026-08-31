@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Configure the Finance connection and virtual entities for Budget register entry write-back
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Overview

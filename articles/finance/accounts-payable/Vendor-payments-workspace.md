@@ -15,7 +15,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Vendor payments workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Vendor payments** workspace shows information related to the processing of vendor payments. This workspace includes a **My work** view and an **Analytics** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to vendor payments.
 

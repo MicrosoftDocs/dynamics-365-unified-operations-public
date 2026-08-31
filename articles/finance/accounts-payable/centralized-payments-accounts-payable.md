@@ -16,7 +16,7 @@ ms.assetid: 7bd02e32-2416-4ac6-8a60-85525267fdb7
 
 # Centralized payments for Accounts payable
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.
 

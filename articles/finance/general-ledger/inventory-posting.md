@@ -13,6 +13,8 @@ ms.search.form: InventPosting, InventItemGroup
 
 # Inventory posting
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Use the **Inventory** tab on the **Inventory posting profiles** page to control how inventory transactions are posted to the general ledger. Inventory transactions are transactions that you don't create from sales orders, purchase orders, or production orders. They automatically post the physical and financial updates to the inventory simultaneously. One exception is transfer orders that separate physical and financial updates when you ship and receive the inventory.
 
 The following table shows some examples of inventory transactions.

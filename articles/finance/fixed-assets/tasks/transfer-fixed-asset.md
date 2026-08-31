@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Transfer a fixed asset
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set.  
 

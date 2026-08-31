@@ -18,7 +18,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Year-end close validation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to validate the general ledger year-end close process.
 

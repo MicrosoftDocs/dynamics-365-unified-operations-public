@@ -16,7 +16,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Cash position
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Cash position is the projection of cash flow that is forecast for the near term. It's based on the projection of cash receipts from customers that pay outstanding invoices and orders, and also on the projection of cash disbursements that are paid to vendors for purchase invoices and orders.
 

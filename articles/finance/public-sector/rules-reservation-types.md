@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1
 
 # Set up general budget reservation rules and reservation types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Public sector entities often use general budget reservations to set aside or earmark budgeted funds so that they aren't available for other purposes. To use general budget reservations, you must specify budgetary rules, and you must set up at least one general budget reservation type.
 

@@ -15,7 +15,7 @@ ms.search.form: BudgetControlConfiguration
 
 # Budget control account detail history report 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the **Budget control account detail history** report. This report lets users view budget account entries for the selected financial dimension and legal entity.
 

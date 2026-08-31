@@ -16,7 +16,7 @@ ms.assetid: 1495e7e0-2e39-464c-8da9-f55b1ca1c6bb
 
 # Posting definitions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about posting definitions, and how to define and link them.
 For supported posting types and documents, use posting definitions instead of posting profiles to classify main accounts and financial dimensions on accounting entries. You can view the supported documents and posting types on the **Transaction posting definitions** page.

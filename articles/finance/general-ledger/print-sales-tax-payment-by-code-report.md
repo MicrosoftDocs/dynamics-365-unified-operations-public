@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.11
 
 # Print the Sales tax payment by code report
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To print the **Sales tax payment by code** report, go to **Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales tax payment by code**. By default, the report amounts are in the accounting currency of the legal entity for all reporting codes that you set up on the **Sales tax reporting codes** page.
 

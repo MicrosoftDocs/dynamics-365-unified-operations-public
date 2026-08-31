@@ -16,7 +16,7 @@ ms.assetid: 9d61d1d8-1672-4bd0-ae0d-605b09240890
 
 # Reimbursements in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article answers common questions related to reimbursements in the public sector.
 

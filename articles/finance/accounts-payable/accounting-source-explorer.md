@@ -16,7 +16,7 @@ ms.assetid: 57b95899-7298-43c0-8034-45b5d993cbf2
 
 # Accounting source explorer
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Accounting source explorer** page in Microsoft Dynamics 365 Finance is an inquiry and analysis tool that helps accounting and finance professionals investigate the detailed source information behind general ledger accounting entries. You can find the **Accounting source explorer** under **General ledger** > **Inquiries and reports** >  **Accounting source explorer**.
 

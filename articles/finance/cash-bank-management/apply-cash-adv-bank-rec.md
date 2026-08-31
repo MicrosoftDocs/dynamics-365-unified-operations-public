@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Cash application in advanced bank reconciliation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to complete cash application in advanced bank reconciliation by using the **Modern bank reconciliation** feature.
 

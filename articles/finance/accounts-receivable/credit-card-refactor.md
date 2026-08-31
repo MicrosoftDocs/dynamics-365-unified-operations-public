@@ -17,7 +17,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 # Process incomplete credit card payments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This article provides information about processing incomplete credit card payments.

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.23
 
 # Vendor invoice dates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the dates that appear on vendor invoices.
 

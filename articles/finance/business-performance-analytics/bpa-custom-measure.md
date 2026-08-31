@@ -14,6 +14,8 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 
 # Add custom measures to Business performance analytics (preview)
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 By using Business performance analytics, your organization can extend the semantic model with custom Power BI measures. This article explains how to download the semantic model, add custom measures, export the model artifacts, and upload them back to Business performance analytics to use in custom reports.
 
 ## Prerequisites

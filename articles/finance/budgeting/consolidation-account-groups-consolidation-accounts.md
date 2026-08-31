@@ -16,7 +16,7 @@ ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 
 # Consolidation account groups and additional consolidation accounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about consolidation account groups and additional consolidation accounts, and explains how to use them.
 

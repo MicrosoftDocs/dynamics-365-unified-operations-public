@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Reverse posted lease transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Any transaction that is created through Asset leasing can be reversed. Transactions that are reversed through Asset leasing update your lease data. Therefore, they also update the carrying values of the lease liability and right-of-use (ROU) asset.
 

@@ -16,7 +16,7 @@ ms.assetid: ea3650ac-34a0-4516-b75b-801c2164107d
 
 # General ledger account balances
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports. It also discusses how to update dimension set balances.
 

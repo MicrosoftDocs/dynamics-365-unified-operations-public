@@ -12,6 +12,8 @@ ms.date: 4/13/2026
 
 # Uninstall Business performance analytics
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 You can uninstall Business performance analytics by using either code-based uninstallation or manual uninstallation.  
 
 If you need to reinstall Business performance analytics after uninstalling it, wait four hours before reinstalling.

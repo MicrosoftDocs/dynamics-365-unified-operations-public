@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 # Modifying and deleting financial dimensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to rename, suspend, and delete financial dimensions and their values.
 

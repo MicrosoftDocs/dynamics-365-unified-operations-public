@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Periodic tasks in Recurring contract billing
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes the periodic tasks that are available in Recurring contract billing.
 
 ## Generate invoice

@@ -16,7 +16,7 @@ ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 
 # Vendor posting profiles
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Vendor posting profiles control the posting of vendor transactions to the general ledger.
 

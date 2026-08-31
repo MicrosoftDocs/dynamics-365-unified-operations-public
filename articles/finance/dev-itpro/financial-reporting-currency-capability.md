@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 10.0.8
 
 # Currency capabilities in financial reporting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Financial reporting includes features that support complex currency reporting requirements. Financial reporting can generate reports using any of the following currency amounts:
 

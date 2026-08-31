@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.23
 
 # Generate invoice lines when you import vendor invoices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This article describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.

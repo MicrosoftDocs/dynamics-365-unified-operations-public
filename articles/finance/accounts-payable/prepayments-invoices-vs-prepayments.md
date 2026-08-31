@@ -18,7 +18,7 @@ ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 
 # Prepayment invoices vs. prepayments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes and contrasts two methods that organizations can use for advance payments (prepayments). One method creates a prepayment invoice that's associated with a purchase order. The other method creates prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
 

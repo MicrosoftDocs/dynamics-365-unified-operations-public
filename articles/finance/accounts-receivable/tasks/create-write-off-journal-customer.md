@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a write-off journal for a customer
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This task guide shows how to set up the parameters for write-offs and then write off transactions. This task uses the USMF demo company.
 

@@ -16,7 +16,7 @@ ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 
 # Post with derived books
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use derived books.
 

@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Reverse journal posting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the capabilities in Microsoft Dynamics 365 Finance for reversing either an entire journal, or one or more vouchers from the voucher transaction list, regardless of their origin.
 

@@ -16,7 +16,7 @@ ms.assetid: 7f0a4197-95dd-4969-ade9-154815cf659e
 
 # Take more than the calculated discount for a vendor payment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article walks you through a scenario where a cash discount is taken for an amount that's more than the discount that was originally available on the invoice. This scenario might occur if an organization comes to an agreement with the vendor to pay a smaller amount on the invoice.
 

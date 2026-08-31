@@ -19,7 +19,7 @@ ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 
 # Welcome to Dynamics 365 Finance 
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
 

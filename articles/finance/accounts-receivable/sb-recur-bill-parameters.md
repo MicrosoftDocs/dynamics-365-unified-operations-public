@@ -14,6 +14,9 @@ ms.dyn365.ops.version: 10.0.24
 ---
 
 # Recurring contract billing parameters
+
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Use the **Recurring contract billing parameters** page to set up the default values for billing schedules that are created in Recurring contract billing. (**Subscription billing > Recurring contract billing > Setup > Recurring contract billing parameters**). All billing schedules that you create initially use these default values. However, you can change the values for each billing schedule as you require.
 
 ## General tab

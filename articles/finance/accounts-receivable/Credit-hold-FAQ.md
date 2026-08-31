@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.35
 
 # Credit limit holds FAQ
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article answers some frequently asked questions about credit checks, credit holds, and the warning and error messages that you might receive in Credit management.
 
 To open the **Credit and collections parameters** page, go to **Credit and collections** > **Setup** > **Credit and collections parameters**. To set up the blocking rules, go to **Credit and collections** > **Setup** > **Credit management setup** > **Blocking rules**.

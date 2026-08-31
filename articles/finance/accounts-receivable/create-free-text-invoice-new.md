@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0.4
 
 # Create a free text invoice
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create free text invoices. For the procedure, use the **USMF** demo company.
 

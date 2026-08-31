@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1
 
 # Project accounting with general budget reservations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If your organization uses project accounting, include references to your project in general budget reservations. These references can affect budgeting, committed costs, and the reservation and consumption of funding sources.
 

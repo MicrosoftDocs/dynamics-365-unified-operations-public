@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Generate and post recurring free text invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Recurring invoices are used to invoice customers regularly for the same amount. This recording uses the USMF demo company. T
 

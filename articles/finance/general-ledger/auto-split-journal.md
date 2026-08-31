@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.28
 
 # Automatic split of large financial journals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 Finance, the **Automatic split of large financial journals** feature improves the posting performance of financial journals. The performance improvements are achieved by automatically splitting a financial journal into multiple journals and posting them in batch mode. Batches are split based on a line limit that's defined by Microsoft. This feature works for all types of financial journals except payroll disbursement and fixed assets journals.
 

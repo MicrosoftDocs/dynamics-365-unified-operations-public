@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Audit dimensions in Business performance planning 
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Business performance planning  provides audit tracking for dimension data to enhance transparency, governance, and accountability during planning setup and master data management. This feature is available both in Business performance planning and in the Table edit visual within Power BI. Users can review changes made to dimension records via a side panel showing who made the change, when it occurred, and what was modified.
 
 ## Prerequisites

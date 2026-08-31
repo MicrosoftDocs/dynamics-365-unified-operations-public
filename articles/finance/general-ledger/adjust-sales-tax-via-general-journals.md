@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Adjust sales tax through general journals
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Typically, you generate sales tax transactions during invoice posting and settlement. In some cases, you might want to manually post a sales tax transaction that has a specified sales tax code and amount. You can use this approach to balance a tax account, record a specific tax transaction, or correct a tax discrepancy caused by rounding or configuration issues.
 

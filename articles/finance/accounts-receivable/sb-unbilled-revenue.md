@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Unbilled revenue
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes the unbilled revenue feature that you use to include the amounts for entire billing schedules on the balance sheet. Include these amounts in an unbilled revenue account and an unbilled revenue offset account, and bill the contract through installments.
 
 ## Set up unbilled revenue

@@ -16,7 +16,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Enable cash flow forecasting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure the Cash flow forecasts feature in Finance insights.
 

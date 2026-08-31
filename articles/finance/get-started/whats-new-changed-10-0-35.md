@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.35
 
 # What's new or changed in Dynamics 365 Finance 10.0.35 (July 2023)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 

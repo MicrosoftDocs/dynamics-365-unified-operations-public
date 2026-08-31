@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reclassify fixed assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To reclassify a fixed asset, transfer it to a new fixed asset group or assign a new fixed asset number to it in the same group.
 

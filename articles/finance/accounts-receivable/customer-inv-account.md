@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Customer and invoice accounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 finance and operations apps, invoices are an essential part of the sales process. The assumption is that the customer who places an order also receives the invoice. However, there might be situations where the customer who must be invoiced differs from the customer who places the order. This article explains the concept of customer accounts and invoice use.
 

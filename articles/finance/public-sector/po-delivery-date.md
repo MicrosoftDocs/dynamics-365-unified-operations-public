@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.7
 
 # Calculate the delivery date for a line, based on the lead time
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to calculate a delivery date for a line, based on the vendor's lead time and your organization's working days calendar, as they're specified on the **Quotation** tab of the **Request for quotation reply** page. Vendors can specify a lead time for each line. Then, when you confirm a purchase order, the system calculates a delivery date for a line from the confirmation date, based on the lead time and the working days calendar. If you don't specify a lead time, the system uses the confirmation date as the delivery date, unless the delivery date is automatically calculated.
 

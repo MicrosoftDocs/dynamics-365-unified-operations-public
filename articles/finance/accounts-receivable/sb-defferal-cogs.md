@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Subscription billing deferral COGS adjustment (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article explains how to set up and use the subscription billing deferral cost of goods sold (COGS) adjustment feature in Microsoft Dynamics 365 Finance. 

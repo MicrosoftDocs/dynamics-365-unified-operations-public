@@ -10,6 +10,8 @@ ms.topic: article
 
 # Fixed asset reporting currency adjustment overview
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Use the **Fixed asset reporting currency adjustment** feature to generate and post reporting currency adjustment entries on demand for historical fixed asset depreciation transactions where the **Reporting currency amount** isn't populated.
 
 Rather than modifying historical depreciation transactions directly, the feature creates a dedicated depreciation adjustment transaction that backfills the missing reporting currency values while preserving the integrity and auditability of existing financial records. The result is a transparent and repeatable way to create, review, and post reporting currency corrections, helping ensure that fixed asset balances and net book values are accurately reflected in the correct currency.

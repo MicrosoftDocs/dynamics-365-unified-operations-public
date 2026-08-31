@@ -16,7 +16,7 @@ ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 
 # Set up bank reconciliation matching rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up reconciliation matching rules and reconciliation matching rule sets to help with the bank reconciliation process. Reconciliation matching rules are a set of criteria that filter bank statement lines and bank document (transaction) lines during the reconciliation process.
 

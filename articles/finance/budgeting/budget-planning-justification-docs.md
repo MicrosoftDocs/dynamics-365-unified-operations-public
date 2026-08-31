@@ -16,7 +16,7 @@ ms.assetid: 52576fad-32b9-48f2-8197-c11ec313fc29
 
 # Budget planning justification documents
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Justification documents provide a narrative for those requesting a budget to explain why a specific budget is necessary. 
 

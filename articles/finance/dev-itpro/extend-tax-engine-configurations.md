@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 7.3
 
 # Extend tax engine configurations 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The [Tax engine](../general-ledger/tax-engine.md) (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. This article walks you through the Tax engine configuration extension process using the following example scenarios that apply to India.
 

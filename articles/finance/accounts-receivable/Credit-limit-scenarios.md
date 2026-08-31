@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.21
 
 # Credit limit scenarios
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 In Credit management, assign a credit limit to customers at the customer level. Assign each customer to a *customer credit limit group*, and set a credit limit for each group. Therefore, you can also assign a credit limit to customers at the group level. All customers that you assign to the same customer credit group have the same credit limit.
 
 In general, the system checks group credit limits before individual credit limits. The individual credit limit doesn't always override the group credit limit.

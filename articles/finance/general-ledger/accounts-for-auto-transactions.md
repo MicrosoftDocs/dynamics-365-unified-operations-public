@@ -17,6 +17,8 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Accounts for automatic transactions
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Use the **Accounts for automatic transactions** page (**General ledger > Posting setup > Accounts for automatic transactions**) to define the default main account for each posting type in the system. Although you can configure most posting types on a module-specific or feature-specific page, you can only configure some posting types on the **Accounts for automatic transactions** page.
 
 For example, you can specify the main account for the **Customer balance** posting type in the **Summary** field on the **Customer posting profile** page and use a different main account for each customer profile. You get more granular control over the postings. On the other hand, you can specify the error account only on the **Accounts for automatic transactions** page.

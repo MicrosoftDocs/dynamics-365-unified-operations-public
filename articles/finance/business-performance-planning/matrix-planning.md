@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Matrix planning visual
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how to use the **Matrix planning** visual in the Business performance planning application.
 
 The **Matrix planning** visual is a custom Microsoft Power BI visual that's built to transform the planning experience. It offers a seamless and powerful approach to planning processes such as managing forecasts and budgets. Unlike traditional methods that involve data downloads, manual Excel-based budgeting, and intricate data consolidation, the **Matrix planning** visual streamlines operations on your Power BI dashboard.

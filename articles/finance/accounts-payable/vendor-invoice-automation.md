@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Invoice automation for scanned documents
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the data entities that are available for end-to-end automation of vendor invoices, including invoices with attachments.
 

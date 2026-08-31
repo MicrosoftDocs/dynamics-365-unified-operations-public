@@ -17,7 +17,7 @@ ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 
 # Settlement overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This article provides general information about the settlement process. It describes which transaction types you can settle, and the timing and process for settling them. It also describes the results of the settlement process.

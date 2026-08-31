@@ -18,6 +18,8 @@ ms.search.form:
 
 # Collections process automation FAQ
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article answers some frequently asked questions about the setup of collections process automation. 
 
 ## Collections process automation setup

@@ -13,6 +13,8 @@ ms.search.form: business-performance-analytics
 
 # ERP Analytics MCP technical details
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article covers the technical prerequisites, limitations, and best practices for implementing the Dynamics 365 ERP Analytics MCP server.
 
 ## Prerequisites

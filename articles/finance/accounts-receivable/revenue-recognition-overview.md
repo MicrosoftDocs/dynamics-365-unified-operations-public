@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 8.0.4
 
 # Revenue recognition overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 >[!NOTE]
 >This functionality was deprecated in January 2024. New users should use subscription billing.

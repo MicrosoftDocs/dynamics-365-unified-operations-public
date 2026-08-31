@@ -16,6 +16,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Establish customer payment terms
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 Payment terms determine how you manage due dates and payment discounts. Dynamics 365 Finance includes payment methods that businesses often use. You can add any payment methods that your organization prefers.
 
 When you assign payment terms to customers, those terms are always used on the sales and purchase documents. The document dates on sales and purchase documents are used to calculate due dates for payments.

@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Manage leases through the Lease import framework
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use the Lease import framework to adjust multiple leases in one step. By using this capability, you can save time and ensure more accurate adjustments by reducing the chance of human error. Additionally, this capability can connect Microsoft Dynamics 365 Finance with external data entities to efficiently upload data.
 

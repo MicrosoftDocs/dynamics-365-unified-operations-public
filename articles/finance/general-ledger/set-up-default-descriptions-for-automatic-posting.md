@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up default descriptions for automatic posting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up default text that describes accounting entries that post automatically to the general ledger. Set up default description text by using free-form text or by selecting fixed variables.
 

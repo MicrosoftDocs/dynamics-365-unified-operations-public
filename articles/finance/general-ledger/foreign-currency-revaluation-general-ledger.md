@@ -18,7 +18,7 @@ ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 
 # Foreign currency revaluation for General ledger
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the general ledger foreign currency revaluation process, including setup, running the process, calculation, and how to reverse the revaluation transactions if necessary.
 

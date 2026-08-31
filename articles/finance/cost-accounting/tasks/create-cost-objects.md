@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create cost objects 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create cost objects by importing the cost center financial dimension into Cost accounting via a data connector. The USMF demo company was used to create this procedure. 
 

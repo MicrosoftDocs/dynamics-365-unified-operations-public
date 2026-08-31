@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Specify the cross rate
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the purpose of a cross rate, and how to specify the cross rate when you settle a payment with an invoice. Use a cross rate when the following criteria apply:
 

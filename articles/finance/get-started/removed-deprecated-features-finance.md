@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 33
 
 # Removed or deprecated features in Dynamics 365 Finance
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes features that are removed or planned for removal from Dynamics 365 Finance.
 

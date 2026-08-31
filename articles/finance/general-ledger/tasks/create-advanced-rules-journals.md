@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create advanced rules for journals
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure steps through creating advanced rules for journals. This includes setting up journal control and user posting restrictions. This procedure uses the USMF demo data company.
 

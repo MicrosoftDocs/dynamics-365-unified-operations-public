@@ -18,6 +18,8 @@ ms.search.form:
 
 # Customer page summary responsible AI FAQ
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article answers some frequently asked questions about the **Customer page summary** feature in Microsoft Dynamics 365 Finance.
 
 ## What is Customer page summary?

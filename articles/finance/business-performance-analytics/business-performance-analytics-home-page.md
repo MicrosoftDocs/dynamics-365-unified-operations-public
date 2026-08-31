@@ -13,6 +13,8 @@ ms.search.form: business-performance-analytics
 
 # What is Business performance analytics?
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Business performance analytics is a powerful solution that transforms your organization's data into actionable insights. In today's rapidly evolving business environment, the ability to use data for informed decision-making is critical. Business performance analytics enables users to streamline operations, enhance performance, and drive better business outcomes.
 
 Through its seamless integration with the Microsoft Dynamics 365, Dataverse, and Power BI platforms, Business performance analytics offers a scalable and unified solution for analyzing operational and financial data at an unprecedented level of clarity and efficiency.

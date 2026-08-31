@@ -16,7 +16,7 @@ ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 
 # Create checks that have blank status
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create blank checks. For example, you might create a blank check to record a check that you damaged and can't use for payment.
 

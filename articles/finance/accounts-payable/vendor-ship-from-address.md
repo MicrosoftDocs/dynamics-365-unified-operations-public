@@ -17,6 +17,8 @@ ms.assetid:
 
 # Vendor ship‑from address support on invoices
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Starting in Dynamics 365 Finance version 10.0.48, the **Vendor ship‑from address support on invoices** feature introduces support for specifying and storing a vendor ship‑from address on vendor invoices. The ship‑from address represents the vendor establishment involved in the transaction and is used during invoice processing and posting.
 
 You can capture the address on vendor invoices created from purchase orders and invoice journals. The system immutably stores the address on the posted invoice.

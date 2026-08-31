@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Resolve sales tax differences
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sometimes, the sales tax for a purchase order and the sales tax for the corresponding vendor invoice differ. In this case, you must verify that the sales tax codes and sales tax amounts are correct for the vendor invoice.
 

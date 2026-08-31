@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Set up options for vendor invoice automation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the options for setting up and configuring vendor invoice automation. Invoice automation features use the following types of setup parameters:
 

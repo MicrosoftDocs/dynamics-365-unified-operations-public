@@ -17,7 +17,7 @@ ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
 
 # General ledger in the public sector overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the General ledger functionality that's available for organizations in the public sector.
 

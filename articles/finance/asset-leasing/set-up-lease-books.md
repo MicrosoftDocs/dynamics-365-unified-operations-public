@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Set up lease books
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Lease books contain the accounting policies that determine how a lease is accounted for. In addition to cash basis accounting, Asset leasing supports the following standards:
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0.1
 
 # Export subsidiary data to files
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the **Export** page (**System administration \> Workspaces \> Import/Export**) to export subsidiary data to files that you can import into a consolidated legal entity. For more information about the import and export processes, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-itpro/data-entities/data-import-export-job.md).
 

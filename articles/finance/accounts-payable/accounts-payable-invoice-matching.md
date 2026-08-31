@@ -19,7 +19,7 @@ ms.assetid: 9f3dace7-05d8-4974-8f85-aca2e224876c
 
 # Accounts payable invoice matching overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.
 

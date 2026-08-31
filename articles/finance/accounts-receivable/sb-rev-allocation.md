@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Revenue allocation
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article explains how to set up revenue allocation parameters for a billing schedule. You can set up or edit revenue allocation when you create the billing schedule. When you open the **Revenue allocation** page for an active or terminated billing schedule, the fields are read-only.
 
 ## Specify the revenue allocation for a billing schedule

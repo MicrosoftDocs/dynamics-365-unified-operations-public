@@ -16,7 +16,7 @@ ms.assetid: e54936f5-053b-4ed3-b778-42c7e9aeb7cf
 
 # Settle partial payment before discount date with final payment after discount date
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses the effect of settling payments to invoices for customers. The scenario focuses on the effects in the subledger, not in General ledger.
 

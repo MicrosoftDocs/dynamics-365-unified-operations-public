@@ -16,6 +16,8 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Withholding tax in purchase transactions
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 For vendors who are liable to withholding tax, assign the default **Withholding tax group** on the **All vendors** page.
 
 1. Go to **Navigation pane > Modules > Accounts payable > Vendors > All vendors**.

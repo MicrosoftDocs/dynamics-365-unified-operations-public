@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Consumer price index schedule
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create, delete, review, and process consumer price index (CPI) schedules. Use a CPI schedule to determine the prices for consumer goods and services that you add as billing schedule lines. You can use the CPI schedule with escalation and discount pricing on a billing schedule, or you can manually process it to update the billing amounts on billing schedules. You can manually enter CPI schedules, or you can import them by using the CPI schedule composite entity.
 

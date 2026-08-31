@@ -16,7 +16,7 @@ ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
 
 # Budget analysis in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use the **Budget analysis** page to view posted revenues and expenditures by financial dimension. It also answers frequently asked questions, including differences between the **Budget analysis** page and the **Budget control statistics** page.
 

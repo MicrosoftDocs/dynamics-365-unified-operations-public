@@ -16,6 +16,8 @@ ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 
 # Set up positive pay files by using Electronic reporting
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article explains how to set up positive pay and generate positive pay files by using Electronic reporting.
 
 > [!NOTE]

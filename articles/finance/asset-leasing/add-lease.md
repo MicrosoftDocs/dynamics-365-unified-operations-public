@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Add or copy leases (Preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create a lease from scratch in Asset leasing, and also how to create a lease by copying an existing lease. The process for creating a lease from scratch involves entering information for the new lease and then creating a lease schedule. After you set up at least one lease, you might find it easier to copy the information from an existing lease and then edit that information as you require to create a new lease.
 

@@ -24,7 +24,7 @@ ms.dyn365.ops.version: 10.0.210
 
 # How do I set up balancing financial dimensions?
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the options for setting up and using the Balancing financial dimension feature.
 

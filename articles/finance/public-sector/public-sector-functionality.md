@@ -17,7 +17,7 @@ ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 
 # Public sector home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks.
 

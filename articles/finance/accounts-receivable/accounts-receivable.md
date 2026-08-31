@@ -19,7 +19,7 @@ ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 
 # Accounts receivable home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use Accounts receivable to track customer invoices and incoming payments. 
 

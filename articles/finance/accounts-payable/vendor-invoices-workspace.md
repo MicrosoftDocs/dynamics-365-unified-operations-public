@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Vendor invoice automation workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This article explains how to set up the workspace that's related to vendor invoices and shows the information that's available through Microsoft Power BI. The vendor invoice information in this workspace is filtered for specific users and is shown in a graphical format.

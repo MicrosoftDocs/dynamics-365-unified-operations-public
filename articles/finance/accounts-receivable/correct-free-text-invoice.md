@@ -16,7 +16,7 @@ ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
 
 # Correct a free text invoice
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to correct a free text invoice that you already posted and reissue it as a corrected invoice.
 

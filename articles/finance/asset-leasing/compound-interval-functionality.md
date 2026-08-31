@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Compounding interval functionality
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article helps you choose monthly, quarterly, semiannual, and annual compounding intervals. Use the compounding interval functionality to determine the number of compounding periods per year in a lease's payment schedule. Each of the four examples in this article shows what a lease's payment schedule looks like for a different interval.
 

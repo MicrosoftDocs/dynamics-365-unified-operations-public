@@ -16,7 +16,7 @@ ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
 
 # Process allocations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about allocations, the options for processing them, and how you can use them in budget planning. Use allocations to distribute amounts across multiple ledger account combinations. They help ensure that you charge expenses or revenues to the correct object in accounting.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 
 # Credit and collections overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can manage credit limits for your customers and perform collection activities when they become necessary.
 

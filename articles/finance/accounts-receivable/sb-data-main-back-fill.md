@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Data maintenance job for backfilling deferral schedule line fields
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to backfill deferral schedule lines in Microsoft Dynamics 365 Finance. 
 

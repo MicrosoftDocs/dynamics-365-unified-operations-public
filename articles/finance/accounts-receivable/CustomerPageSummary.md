@@ -18,6 +18,8 @@ ms.search.form:
 
 # Customer page summary
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how the **Customer page summary** feature shows AI-generated text on the customer page.
 
 Enable the **Customer page summary** feature to get an AI-generated summary of a customer's account on the **All customers** page. This feature is powered by Microsoft Azure OpenAI Service's large language model. It's designed to reduce the time that you spend reviewing transaction details for your customers.

@@ -16,7 +16,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Tables used by Customer payment predictions and Cash flow forecasts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article outlines the data tables that are used by the **Customer payment predictions** and **Cash flow forecasts** features in Microsoft Dynamics 365 Finance. These features are part of Finance insights. They help financial professionals use AI-driven models to forecast customer payments and manage future cash positions.
 

@@ -16,7 +16,7 @@ ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 
 # Ledger journal types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the journal types that you can set up for financial journals. Use the **Journal names** page to set up journals that you can use throughout Dynamics 365 Finance.
 

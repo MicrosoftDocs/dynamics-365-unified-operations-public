@@ -16,7 +16,7 @@ ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 
 # Set up and generate positive pay files
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This functionality was deprecated September 2022. New users should use electronic reporting. For more information, see [Set up positive pay files by using Electronic reporting](set-up-positive-pay-er.md).

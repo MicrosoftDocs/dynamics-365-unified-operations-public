@@ -16,7 +16,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # One voucher 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 ## What is One voucher?

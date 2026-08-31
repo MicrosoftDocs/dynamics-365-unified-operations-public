@@ -16,7 +16,7 @@ ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 
 # Settle partial payment before discount date and final payment after discount date
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
 

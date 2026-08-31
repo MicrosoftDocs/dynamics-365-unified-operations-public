@@ -16,7 +16,7 @@ ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 
 # Invoice matching and intercompany purchase orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Set up the purchasing legal entity that participates in an intercompany trade transaction to use accounts payable invoice matching. When you set the **Post invoice with discrepancies** field in the **Accounts payable parameters** page to **Require approval**, the system performs invoice matching validation. In this case, the posting requirements for both intercompany trade and accounts payable invoice matching must be met before you can post intercompany vendor invoices.
 

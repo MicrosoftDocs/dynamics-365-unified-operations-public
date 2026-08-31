@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost control workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Cost control** workspace is a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions (for example, cost centers and product groups) can access reports. Cost accountants fully manage the reports in the workspace, so the layout and data used for reporting are consistent across the whole organization.
 

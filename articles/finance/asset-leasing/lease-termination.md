@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Propose a lease for termination
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If you terminate a lease early, Asset leasing can record a termination journal entry to write off the lease liability, right-of-use (ROU) asset, and accumulated depreciation, and book a gain or loss. The early termination process terminates a lease and its associated lease books. It doesn't terminate individual lease books. This article describes the functionality that lets you propose a lease for termination and process the lease termination journal entry.
 

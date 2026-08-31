@@ -16,7 +16,7 @@ ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 
 # Set up collections
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up the collections functionality. You must complete some setup steps when using the collections capability. Some optional capabilities include customer pools and collections teams.
 

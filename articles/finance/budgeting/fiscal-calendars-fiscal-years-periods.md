@@ -18,7 +18,7 @@ ms.assetid: a968a5e5-585e-4389-aa4e-c885a7e23413
 
 # Fiscal calendars, fiscal years, and periods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses fiscal calendars, fiscal years, and periods, and how to use them for legal entities, fixed assets, and budgeting.
 

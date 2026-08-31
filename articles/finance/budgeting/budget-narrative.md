@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.18
 
 # Budget plan narrative
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 

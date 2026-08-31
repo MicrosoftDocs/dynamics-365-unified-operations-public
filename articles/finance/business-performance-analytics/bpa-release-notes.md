@@ -12,7 +12,7 @@ audience: Application User
 
 # What's new or changed in Business performance analytics
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about what's new or changed in Business performance analytics.  
 

@@ -16,7 +16,7 @@ ms.assetid: 8885478d-67f5-4db8-b97b-c0734216f8dd
 
 # Preliminary budgets and apportionments in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget.
 

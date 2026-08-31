@@ -14,7 +14,7 @@ ms.search.validFrom: 09/25/2024
 
 # Purchase order year-end close
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the required steps and setup for running the purchase order year-end process.
 

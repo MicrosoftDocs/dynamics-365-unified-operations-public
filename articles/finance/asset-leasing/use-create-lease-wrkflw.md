@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Use lease approval workflows
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use workflows to approve asset leases, and how to track the status and history of the workflows. Workflows help bring consistency to the management of lease approvals by providing a standard set of approval steps and assigning specific users who approve each step of the process. An approver can approve a lease, reject it, request a change to it, or assign it to another user for approval. Workflows can also bring more visibility into the approval process by letting you track their status and history. Additionally, you can view a centralized worklist that lists the tasks and approvals that are assigned to specific approvers.
 

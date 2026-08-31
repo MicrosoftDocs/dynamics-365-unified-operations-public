@@ -19,7 +19,7 @@ ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 
 # Cash and bank management home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated 
 with those bank accounts. 

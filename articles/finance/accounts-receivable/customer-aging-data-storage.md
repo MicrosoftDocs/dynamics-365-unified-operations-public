@@ -16,7 +16,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Customer aging data storage
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the process of using external storage for customer aging data. In Microsoft Dynamics 365 Finance, you can run the **Customer aging data storage** process to make the output available for export to an external system. When you run the process, the same aging report options that are available in the system are available to external systems. Starting in Dynamics 365 Finance version 10.0.39, the details are optional instead of always included in the exported data.
 

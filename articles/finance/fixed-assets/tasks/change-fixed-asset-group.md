@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Change a fixed asset group
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Fixed assets should be assigned to the correct fixed assets group. The fixed assets group is used when you:
 

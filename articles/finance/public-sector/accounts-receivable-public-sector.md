@@ -18,7 +18,7 @@ ms.assetid: a411ec87-a209-471c-a141-5f5a92f2e45e
 
 # Accounts receivable in the public sector overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the Accounts receivable functionality that's available for the public sector.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up fixed asset posting profiles
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to set up Fixed asset posting profiles. The examples are for a basic posting profile, though posting profiles must be created for your specific chart of accounts and financial reporting requirements.
 

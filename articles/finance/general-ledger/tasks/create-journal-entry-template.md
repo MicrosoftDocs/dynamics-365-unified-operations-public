@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a journal entry using template
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Posted journal vouchers can be saved as voucher templates and applied in a new journal voucher. This procedure uses the USMF demo company.
 This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.  

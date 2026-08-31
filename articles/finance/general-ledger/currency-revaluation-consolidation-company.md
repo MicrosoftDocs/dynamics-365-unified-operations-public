@@ -16,7 +16,7 @@ ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
 
 # Currency revaluation in a consolidation company
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you consolidate data from one accounting currency to another, you must still run currency revaluation if there's a change in exchange rates, so your account balances are correctly revalued. When you originally consolidate the data, use the **Currency translation** tab to select the initial exchange rates for translation during the consolidation process. After you enter a new exchange rate (for example, in the next month), you must revalue the account balances. The unrealized gains or losses are then updated accordingly, based on the new exchange rate and date. The following example illustrates the accounting entries that are created during the process.
 

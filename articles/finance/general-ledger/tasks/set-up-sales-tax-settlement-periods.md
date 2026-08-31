@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Set up sales tax settlement periods
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up sales tax settlement periods. Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid. A settlement process can be run for a settlement period for a specific date interval. All tax codes associated with the settlement period will be settled. Depending on the setup of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.
 

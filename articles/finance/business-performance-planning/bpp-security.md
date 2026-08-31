@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Set up security for Dynamics 365 Finance Business performance planning
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Setting up security in the Business performance planning app is a critical step in ensuring the security of your organization's data. This article provides an overview of the setup process for role-based security and dimension access.
 
 ## Roles

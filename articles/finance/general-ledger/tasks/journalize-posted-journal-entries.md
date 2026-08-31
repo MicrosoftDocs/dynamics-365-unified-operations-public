@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Journalize posted journal entries
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The journalize process in the general ledger provides a way to group and report on posted voucher entries for your general ledger. Based on the criteria provided, a list of vouchers is generated that uses a unique number sequence and that has the general ledger **Journal number** value as a reference.
 

@@ -15,7 +15,7 @@ ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 
 # Refund payment processing in the customer payment journal
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to provide a refund to clients from the customer payment journal using the ISO20022 credit transfer format.
 

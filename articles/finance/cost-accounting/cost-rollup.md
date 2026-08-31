@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost rollup policy and overhead calculation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Cost accounting helps you understand how costs flow to the products and services that an organization delivers. To achieve cost transparency, you need to allocate costs between cost objects using an appropriate allocation basis. By default, the system allocates costs for the primary cost element. This default allocation works well in some situations, but it has a few implications that you should consider.
 

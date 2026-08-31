@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.25
 
 # Awareness between ledger settlement and year-end close
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 Finance, the **Awareness between ledger settlement and year-end close** functionality, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, are found on the **General Ledger** parameters, specifically on the **Ledger settlement** page. These features are managed through the **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** parameters.
 

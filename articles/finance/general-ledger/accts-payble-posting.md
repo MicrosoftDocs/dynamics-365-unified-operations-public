@@ -17,7 +17,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Accounts payable posting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The primary posting profile for the **Accounts payable** module is the vendor posting profile. This posting profile determines the summary account that is used when vendor balances are posted to the general ledger. A summary account is a main account. It's also referred to as the Accounts payable trade account.
 

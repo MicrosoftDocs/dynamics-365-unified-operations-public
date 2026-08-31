@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up and generate accounts receivable aging information
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This guide helps set up an aging period definition, age customer balances, and view balances in the **Aged balance** list and the **Collections** page. This recording uses the USMF demo company.
 

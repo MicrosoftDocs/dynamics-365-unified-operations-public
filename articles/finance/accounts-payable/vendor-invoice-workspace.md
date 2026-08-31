@@ -17,7 +17,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 # Vendor invoice center workspace overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the **Vendor invoice center** workspace in Microsoft Dynamics 365 Finance. This workspace offers a view of the overall processing status of vendor invoices at different stages. It helps Accounts payable (AP) managers or AP clerks make decisions and handle exceptions more efficiently.
 

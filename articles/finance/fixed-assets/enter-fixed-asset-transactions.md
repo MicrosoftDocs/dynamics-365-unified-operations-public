@@ -16,7 +16,7 @@ ms.assetid: 338c495b-a4d8-461e-b85b-a83faf673730
 
 # Fixed asset transaction options
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the different methods available for creating fixed asset transactions.
 

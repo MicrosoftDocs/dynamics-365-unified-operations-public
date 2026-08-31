@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 # Vendor transactions list page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## View settlements
 

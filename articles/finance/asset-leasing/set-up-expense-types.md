@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Set up expense types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up expense types in Asset leasing. Costs that aren't represented by the payment schedule are known as *expense costs*. Examples of these costs include property taxes, common area maintenance costs, and insurance expenses.
 

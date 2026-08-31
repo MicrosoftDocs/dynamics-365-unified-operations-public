@@ -16,7 +16,7 @@ ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 
 # Set up advanced bank reconciliation import by using Electronic reporting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This article explains how to configure the bank statement import process by using Electronic Reporting (ER). The setup varies depending on the format of the bank statement file that your bank provides. Dynamics 365 Finance supports the following bank statement formats for Advanced Bank Reconciliation:
 

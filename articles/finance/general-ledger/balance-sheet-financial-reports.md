@@ -16,7 +16,7 @@ ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 
 # Balance sheet financial reports
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports.
 

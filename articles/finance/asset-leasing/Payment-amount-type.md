@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Add payment amount types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up payment amount types in Asset leasing. In this way, you can itemize the lease payment amount instead of adding the lump sum amount on the payment schedule lines.
 
