@@ -4,7 +4,7 @@ description: Learn about some current known issues in Business performance analy
 author: lizmora
 ms.author: jiwo
 ms.topic: troubleshooting-general
-ms.date: 06/22/2026
+ms.date: 08/27/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -43,30 +43,30 @@ The status section helps the admin troubleshoot if anything is misconfigured in 
 
 To view and complete messages, follow these steps:
 
-1. On the **Diagnostics** page, the **Messages active** tab displays messages.
+1. On the **Diagnostics** page, select the **Messages active** tab to see active messages.
 1. Expand the messages to view details. These messages require admin attention to fix any errors detected in the app.
 1. After you perform the action, mark the message as **Complete**. This step confirms to telemetry that the action is complete.
-1. You can find all completed messages on the **Completed** tab.
+1. Find all completed messages on the **Completed** tab.
 
 ## Troubleshooting and maintenance reminders
 
 ### By default, the Order to cash data model isn't enabled for customers
 
-Customers must submit a request to Microsoft Support to have the *Order to cash* data model enabled. In the future, this model is automatically enabled for all customers.
+Customers must submit a request to Microsoft Support to enable the *Order to cash* data model. In the future, Microsoft automatically enables this data model for all customers.
 
 ### Custom reports are lost when you uninstall Business performance analytics
 
-If Business performance analytics was uninstalled and then reinstalled, reports can be restored if the following conditions are met:
+If you uninstall and then reinstall Business performance analytics, you can restore reports if the following conditions are true:
 
-- A manual backup was completed. Alternatively, 24 hours have passed, so that the automated backup was completed.
+- You manually back up the reports, or 24 hours pass to trigger an automated backup.
 - The Business performance analytics configuration solution (msdyn\_BpaConfigs) is still installed.
-- No external issues are affecting the data lake.
-- The reinstallation occurs in the same environment. Cross-environment restoration isn't supported.
+- No external issues affect the data lake.
+- You reinstall in the same environment. Cross-environment restoration isn't supported.
 
 To reinstall Business performance analytics and restore reports, follow these steps:
 
 1. Before you uninstall Business performance analytics, confirm that a backup is completed.
-1. Make sure that you don't uninstall the Business performance analytics configuration solution (msdyn\_BpaConfigs).
+1. Ensure that you don't uninstall the Business performance analytics configuration solution (msdyn\_BpaConfigs).
 1. Reinstall Business performance analytics through the Microsoft Power Platform admin center.
 1. After the installation is completed, do a restore.
 
@@ -93,3 +93,15 @@ This limit will be removed in the future.
 ### The size of the data lake folder increases every time Business performance analytics is refreshed
 
 Customers might notice that the size of the data lake folder increases each time that Business performance analytics refreshes its data. This issue occurs because stale folders are cleaned only every 30 days. In the future, stale folders are cleaned more often.
+
+### Administration controls aren't visible for a user in another language
+
+If a user with the Business performance analytics administrator role signs into the **Reporting hub** and can't see the **Administration** controls, this condition can occur when the user's UI language isn't English (currently the only language that Business performance analytics supports). The Microsoft Dataverse sitemap that Business performance analytics uses isn't yet localized for other languages, so some controls don't appear.
+
+As a temporary workaround, switch to English (United States) in the following three places:
+
+1. **Environment language pack**: If English isn't already enabled for the environment, an administrator must add it before any user can select it. For more information, see [Enable languages in the Power Platform admin center](/power-platform/admin/enable-languages).
+1. **Personal Dataverse language**: After English is enabled for the environment, update your personal language preference. For more information, see [Set personal options: Languages tab](/power-apps/user/set-personal-options#languages-tab-options).
+1. **Browser language**: Set English (United States) as the top preferred language in your browser, since the browser's preferred language also affects how Business performance analytics renders.
+
+This is a temporary workaround until Business performance analytics is localized for additional languages.
