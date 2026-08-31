@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure Store Commerce for web to use a custom Microsoft Entra app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Microsoft Entra app.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # E-commerce digital gift cards
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how digital gift cards work in Microsoft Dynamics 365 Commerce e-commerce. It also provides an overview of important configuration steps.
 

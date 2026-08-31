@@ -15,7 +15,7 @@ ms.custom:
 
 # Override POS request handler
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to override a POS request handler in Microsoft Dynamics 365 Commerce.
 

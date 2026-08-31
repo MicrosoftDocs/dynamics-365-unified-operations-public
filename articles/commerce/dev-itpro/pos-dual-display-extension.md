@@ -14,7 +14,7 @@ ms.custom:
 
 # Extend the point of sale (POS) Dual display view
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to extend the point of sale (POS) Dual display view so that it shows custom information in Microsoft Dynamics 365 Commerce.
 

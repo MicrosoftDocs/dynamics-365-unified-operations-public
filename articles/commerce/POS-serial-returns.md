@@ -14,7 +14,7 @@ ms.custom:
 
 # Return serial number–controlled products in POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the capabilities for validating serialized items as part of the return process in Microsoft Dynamics 365 Commerce point of sale (POS).
 

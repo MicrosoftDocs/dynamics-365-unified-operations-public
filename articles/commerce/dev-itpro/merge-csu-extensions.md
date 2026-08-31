@@ -14,7 +14,7 @@ ms.custom:
 
 # Merge Cloud Scale Unit extension packages for deployment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages.
 

@@ -16,7 +16,7 @@ ms.custom:
 
 # Restrict payment methods for returns without a receipt
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to restrict certain payment types for refunds when customers return items without a receipt in Microsoft Dynamics 365 Commerce.
 

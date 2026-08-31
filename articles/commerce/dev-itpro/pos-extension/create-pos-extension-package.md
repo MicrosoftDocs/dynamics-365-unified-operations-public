@@ -14,7 +14,7 @@ ms.custom:
 
 # Create a POS extension package project
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a Point of Sale (POS) extension package project in Microsoft Dynamics 365 Commerce.
 

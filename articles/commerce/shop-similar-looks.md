@@ -14,7 +14,7 @@ ms.custom:
 
 # Enable shop similar looks recommendations
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to enable shop similar looks product recommendations in Microsoft Dynamics 365 Commerce.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Image list module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes image list modules and how to add them to Microsoft Dynamics 365 Commerce site pages.
 

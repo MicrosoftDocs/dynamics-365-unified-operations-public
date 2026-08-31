@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Customer information management for Poland
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes how you can handle customer information, such as the customer's value-added tax (VAT) number, in Retail point of sale (POS) for Poland.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Demo data screen layouts in Store Commerce
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides information about the screen layouts that are included with the demo data set for the Store Commerce point of sale (POS) experiences in Microsoft Dynamics 365 Commerce.
 

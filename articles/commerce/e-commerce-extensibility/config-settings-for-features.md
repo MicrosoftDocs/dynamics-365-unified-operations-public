@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure site builder global configuration settings based on enabled features
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can make global configuration properties in Microsoft Dynamics 365 Commerce site builder visible, hidden, or disabled when specific features are turned on.
 

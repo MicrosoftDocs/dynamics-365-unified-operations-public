@@ -16,7 +16,7 @@ ms.custom:
 
 # Phased Rollout (N-1) installation, configuration, and cutover guide
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!WARNING]
 > - Support for Microsoft Dynamics AX 2012 R3 is ended. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).

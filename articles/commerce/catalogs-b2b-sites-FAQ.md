@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce catalogs for B2B FAQ
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides answers to frequently asked questions about Microsoft Dynamics 365 Commerce [business-to-business (B2B) catalogs](catalogs-b2b-sites.md).
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Create task lists and add tasks
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
 

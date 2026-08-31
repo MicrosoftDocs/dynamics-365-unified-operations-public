@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Create email templates for transactional events
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 
 This article describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.

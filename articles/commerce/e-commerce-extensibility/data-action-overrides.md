@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Data action overrides
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to override default data actions with custom data actions in Dynamics 365 Commerce.
 

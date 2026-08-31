@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Active image module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains active image modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

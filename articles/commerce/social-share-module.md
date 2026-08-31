@@ -14,7 +14,7 @@ ms.custom:
 
 # Social share module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers social share modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

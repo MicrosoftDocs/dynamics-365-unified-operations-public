@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Integrate Customer Voice into e-commerce site pages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to integrate Microsoft Dynamics 365 Customer Voice into Dynamics 365 Commerce e-commerce site pages.
 

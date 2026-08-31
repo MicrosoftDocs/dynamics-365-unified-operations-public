@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up Azure DevOps code sharing and create a build pipeline
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up code sharing by using Microsoft Azure DevOps and create a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code.
 

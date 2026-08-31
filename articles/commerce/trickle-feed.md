@@ -17,7 +17,7 @@ ms.custom:
 
 # Trickle feed-based order creation for retail store transactions
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes trickle feed-based order creation for store transactions in Microsoft Dynamics 365 Commerce.
 

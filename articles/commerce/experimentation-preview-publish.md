@@ -14,6 +14,8 @@ ms.custom:
 
 # Preview and publish an experiment
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article describes how to preview and publish your experiment in Microsoft Dynamics 365 Commerce after you [connect your experiment and edit your variations](experimentation-connect-edit.md). The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate articles.
 
 :::image type="content" source="./media/experimentation_preview_publish.svg" alt-text="Screenshot of the experimentation user journey showing the preview and publish step.":::

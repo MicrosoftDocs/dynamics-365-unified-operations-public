@@ -14,7 +14,7 @@ ms.custom:
 
 # Ship orders from another store by using the Charge send feature
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains the charge send feature in Microsoft Dynamics 365 Commerce.
 

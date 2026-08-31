@@ -14,7 +14,7 @@ ms.custom:
 
 # Cart icon module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to add the cart icon module to site pages in Microsoft Dynamics 365 Commerce.
 

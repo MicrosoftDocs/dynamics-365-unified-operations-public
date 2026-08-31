@@ -16,7 +16,7 @@ ms.custom:
 
 # Channel merchandising configuration validator
 
-[!include[banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes how to use the channel merchandising configuration validator in Microsoft Dynamics 365 Commerce headquarters to find missing and invalid configurations for products, categories, and attributes by channel.
 

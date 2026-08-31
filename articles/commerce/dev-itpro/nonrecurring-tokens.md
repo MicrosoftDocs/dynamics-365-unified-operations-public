@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure nonrecurring payment tokens
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure and use payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
 

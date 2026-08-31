@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Create an online functionality profile
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to set up an online functionality profile in Microsoft Dynamics 365 Commerce.
 

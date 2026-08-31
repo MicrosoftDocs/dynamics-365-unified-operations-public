@@ -14,7 +14,7 @@ ms.custom:
 
 # Optimize images
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can help improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce during the upgrade or go-live process.
 

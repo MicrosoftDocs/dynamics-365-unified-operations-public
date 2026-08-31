@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure product dimension values to appear as swatches
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters. For information about product dimensions, see [Product dimensions](../../supply-chain/pim/product-dimensions.md).
 

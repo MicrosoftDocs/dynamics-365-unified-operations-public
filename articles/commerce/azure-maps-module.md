@@ -14,7 +14,7 @@ ms.custom:
 
 # Azure Maps Module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to configure the Azure Maps module in Microsoft Dynamics 365 Commerce.
 

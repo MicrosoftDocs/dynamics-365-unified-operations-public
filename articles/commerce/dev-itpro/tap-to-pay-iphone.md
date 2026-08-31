@@ -14,7 +14,7 @@ ms.custom:
 
 # Enable Tap to Pay on iPhone to run the Store Commerce app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up and enable Tap to Pay on iPhone to run the Microsoft Dynamics 365 Commerce Store Commerce app.
 

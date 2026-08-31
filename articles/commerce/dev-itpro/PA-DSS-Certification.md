@@ -14,7 +14,7 @@ ms.custom:
 
 # Payment Application Data Security Standards (PA-DSS) certification
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > If you implement a version of Microsoft Dynamics 365 and Microsoft hasn't yet completed the PA-DSS certification, the retailer's Payment Card Industry (PCI) audit and certification might be affected. Specifically, until Microsoft completes the PA-DSS certification for the associated version, PCI certification can become more difficult and involved as the payment application might come into scope of testing during the certification.

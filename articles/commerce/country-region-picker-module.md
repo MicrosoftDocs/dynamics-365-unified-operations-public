@@ -14,7 +14,7 @@ ms.custom:
 
 # Country/region picker module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers the country/region picker module and describes how to configure it in Microsoft Dynamics 365 Commerce.
 

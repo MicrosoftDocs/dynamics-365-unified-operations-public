@@ -15,7 +15,7 @@ ms.collection:
 
 # Streamline your merchandising process with Copilot-based insights
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to use Microsoft Copilot to proactively get a comprehensive summary of insights for the merchandising configurations of your retail channels. Use this summary of insights to simplify your merchandising workflows in Dynamics 365 Commerce. The summary helps you understand the status and performance of your products across different channels. It also helps you identify and fix any issues related to your product, category, and catalog data.
 

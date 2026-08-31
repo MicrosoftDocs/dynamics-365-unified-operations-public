@@ -14,7 +14,7 @@ ms.custom:
 
 # Extension points for packing slips during order fulfillment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use customizations to add extension points to packing slips during customer order fulfillment in Microsoft Dynamics 365 Commerce.
 

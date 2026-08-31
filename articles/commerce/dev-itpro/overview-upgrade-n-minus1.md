@@ -15,7 +15,7 @@ ms.custom:
 
 # Upgrade and N-1 support for Commerce
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!WARNING]
 > - Support for Microsoft Dynamics AX 2012 R3 has ended. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).

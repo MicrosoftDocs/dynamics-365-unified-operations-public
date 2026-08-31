@@ -15,7 +15,7 @@ ms.custom:
 
 # Log extension events to Application Insights
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to log events to [Customer Application Insights](/azure/azure-monitor/app/app-insights-overview) from Microsoft Dynamics 365 Commerce runtime (CRT) and POS extensions.
 

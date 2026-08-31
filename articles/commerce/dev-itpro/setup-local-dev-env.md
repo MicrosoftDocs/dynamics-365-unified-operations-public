@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up a local development environment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a local development environment for the Commerce Scale Unit (CSU) and point of sale (POS) development in Microsoft Dynamics 365 Commerce.
 

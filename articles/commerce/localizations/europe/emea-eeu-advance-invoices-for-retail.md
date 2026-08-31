@@ -14,7 +14,7 @@ ms.custom:
 
 # Advance invoices for Commerce for Eastern Europe
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 The information in this article applies to the Eastern European localization and is specific to the commerce industry.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Add social identity providers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to add social identity providers in the Microsoft Azure portal.
 

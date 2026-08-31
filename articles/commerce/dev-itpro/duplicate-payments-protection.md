@@ -14,7 +14,7 @@ ms.custom:
 
 # Enable duplicate payment protection for payment connector
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to enable duplicate payment protection functionality in a payment connector that manages the integration with a payment terminal in Microsoft Dynamics 365 Commerce. A *payment connector* is an extension library that is written to integrate the POS with a payment terminal.
 

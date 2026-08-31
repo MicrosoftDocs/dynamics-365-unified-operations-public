@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Call server-side data actions with AJAX
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to call server-side data actions by using Asynchronous JavaScript and XML (AJAX) in Microsoft Dynamics 365 Commerce.
 

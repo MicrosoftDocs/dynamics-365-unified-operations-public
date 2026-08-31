@@ -14,7 +14,7 @@ ms.custom:
 
 # Create Commerce payment packaging for finance and operations deployment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to package a payment connector for finance and operations deployment in Microsoft Dynamics 365 Commerce.
 

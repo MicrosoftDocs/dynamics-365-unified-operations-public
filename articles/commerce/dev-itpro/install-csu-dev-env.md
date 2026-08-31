@@ -15,7 +15,7 @@ ms.custom:
 
 # Install Commerce Scale Unit on a development environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides step-by-step instructions on how to install an Internet Information Services (IIS) based Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and Microsoft Dynamics Lifecycle Services (LCS) cloud development environments for Microsoft Dynamics 365 Commerce. This article is divided into sections representing the different actions you must take to complete the installation, and each section should be followed in order. 
 

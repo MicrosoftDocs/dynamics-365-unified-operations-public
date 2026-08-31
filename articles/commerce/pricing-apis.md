@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce pricing APIs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes various pricing APIs that the Microsoft Dynamics 365 Commerce pricing engine provides.
 

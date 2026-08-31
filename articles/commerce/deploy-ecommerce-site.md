@@ -14,7 +14,7 @@ ms.custom:
 
 # Deploy a new e-commerce tenant
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to deploy a new Microsoft Dynamics 365 Commerce e-commerce site by using Microsoft Dynamics Lifecycle Services (LCS).
 

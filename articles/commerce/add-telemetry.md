@@ -14,7 +14,7 @@ ms.custom:
 
 # Add script code to site pages to support telemetry
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to add client-side script code to your site pages to support the collection of client-side telemetry.
 

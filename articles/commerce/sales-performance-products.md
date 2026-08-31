@@ -16,7 +16,7 @@ ms.custom:
 
 # Assess sales performance by product
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to assess sales performance by product in Microsoft Dynamics 365 Commerce.
 

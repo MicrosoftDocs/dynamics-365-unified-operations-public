@@ -14,7 +14,7 @@ ms.custom:
 
 # Linked refunds of previously approved and confirmed transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to enable and use linked refunds in Microsoft Dynamics 365 Commerce.
 

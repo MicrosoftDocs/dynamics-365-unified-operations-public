@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Manage assortments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create and publish a new product assortment in Microsoft Dynamics 365 Commerce.
 

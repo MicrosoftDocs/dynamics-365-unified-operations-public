@@ -14,7 +14,7 @@ ms.custom:
 
 # Choose between Store Commerce app and Store Commerce for web
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the key differences between the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web. It describes various factors that retailers who implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements. It also gives implementers more background, tips, and guidance for factors that they should consider when they deploy Dynamics 365 Commerce. By reviewing and following this guidance as part of the deployment process, implementers can avoid problems that might affect user satisfaction or performance.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Change mode of delivery in POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to configure and use the change mode of delivery operation in Microsoft Dynamics 365 Commerce point of sale (POS).
 

@@ -15,7 +15,7 @@ ms.collection:
 
 # Store report insights by Copilot
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how Microsoft Copilot-generated insights for store reports simplify the process of measuring the performance of your retail channels in Dynamics 365 Commerce.
 

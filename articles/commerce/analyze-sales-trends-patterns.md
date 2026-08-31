@@ -15,7 +15,7 @@ ms.custom:
 
 # Analyze sales trends and patterns
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to study sales trends and patterns in real time in Microsoft Dynamics 365 Commerce.
 

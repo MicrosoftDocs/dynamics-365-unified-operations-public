@@ -14,7 +14,7 @@ ms.custom:
 
 # Migrate a POS extension to the independent packaging model
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article explains how to migrate Microsoft Dynamics 365 Commerce point of sale (POS) extensions to the independent packaging model. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 

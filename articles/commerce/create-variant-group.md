@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Create a variant group
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to create a size, style, or color variant group for a product in Microsoft Dynamics 365 Commerce.
 

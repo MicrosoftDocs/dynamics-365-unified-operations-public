@@ -14,7 +14,7 @@ ms.custom:
 
 # Work with preset layouts
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.
 

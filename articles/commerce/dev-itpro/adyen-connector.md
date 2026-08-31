@@ -15,7 +15,7 @@ ms.custom:
 
 # Dynamics 365 Payment Connector for Adyen overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen and includes a comprehensive list of supported features and functionality. Related articles cover Adyen sign up, configuration of the connector, frequently asked questions, and troubleshooting guidance for some common issues.
 

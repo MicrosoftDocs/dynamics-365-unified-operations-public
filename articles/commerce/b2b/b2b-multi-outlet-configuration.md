@@ -14,7 +14,7 @@ ms.custom:
 ---
 # B2B multioutlet configuration (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to configure business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.

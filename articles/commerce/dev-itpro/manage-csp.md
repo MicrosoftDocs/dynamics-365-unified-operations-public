@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Manage Content Security Policy (CSP)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 

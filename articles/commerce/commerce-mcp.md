@@ -12,6 +12,8 @@ ms.collection:
 ---
 # Dynamics 365 Commerce Model Context Protocol (MCP) server (preview)
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 > [!IMPORTANT]
 > Some or all of the functionality noted in this article is available as part of a [preview release](../fin-ops-core/dev-itpro/get-started/supplemental-terms-previews.md). The content and the functionality are subject to change.
 

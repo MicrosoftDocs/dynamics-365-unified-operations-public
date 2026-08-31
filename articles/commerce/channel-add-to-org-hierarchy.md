@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Add a channel to an organizational hierarchy
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
 

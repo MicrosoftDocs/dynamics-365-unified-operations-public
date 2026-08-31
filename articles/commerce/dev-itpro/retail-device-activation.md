@@ -16,7 +16,7 @@ ms.custom:
 
 # Point of sale (POS) device activation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use guided device activation for Store Commerce for web and the Store Commerce app for Windows, Android, and iOS in Microsoft Dynamics 365 Commerce. This article also explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 

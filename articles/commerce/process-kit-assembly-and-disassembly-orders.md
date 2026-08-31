@@ -14,7 +14,7 @@ ms.custom:
 
 # Process kit assembly and disassembly orders
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to process kit assembly and disassembly orders for retail product kits in Microsoft Dynamics 365 Commerce.
 

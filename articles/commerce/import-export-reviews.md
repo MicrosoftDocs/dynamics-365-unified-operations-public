@@ -14,7 +14,7 @@ ms.custom:
 
 # Import and export ratings and reviews
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to import and export product ratings and reviews in Microsoft Dynamics 365 Commerce.
 

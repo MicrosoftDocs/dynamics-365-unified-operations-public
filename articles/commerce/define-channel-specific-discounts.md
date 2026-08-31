@@ -15,7 +15,7 @@ ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChan
 
 # Define channel-specific discounts
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article reviews the concepts you need to know to create a discount for a specific channel in Microsoft Dynamics 365 Commerce.
 

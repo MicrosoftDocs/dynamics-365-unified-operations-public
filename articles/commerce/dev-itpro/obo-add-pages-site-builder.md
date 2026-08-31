@@ -14,7 +14,7 @@ ms.custom:
 
 # Create and modify B2B pages for on behalf of (OBO) functionality
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create pages for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce site builder. By using these pages, account managers can sign in to a business-to-business (B2B) e-commerce website and perform operations on behalf of B2B buyers.
 

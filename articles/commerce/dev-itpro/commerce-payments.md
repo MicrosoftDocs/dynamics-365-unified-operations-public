@@ -14,7 +14,7 @@ ms.custom:
 
 # Omnichannel Commerce order payments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the omnichannel Commerce order payments feature in Microsoft Dynamics 365 Commerce. This feature lets you edit e-commerce and point of sale (POS) order payments from Commerce headquarters.
 

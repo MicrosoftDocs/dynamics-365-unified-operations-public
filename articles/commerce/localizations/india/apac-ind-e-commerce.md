@@ -14,7 +14,7 @@ ms.custom:
 
 # Goods and Services Tax (GST) integration for e-commerce sites for India
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides an overview of the Microsoft Dynamics 365 Commerce e-commerce functionality that's available for India. It also provides guidelines for setting up the functionality.
 

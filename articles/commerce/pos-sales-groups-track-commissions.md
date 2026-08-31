@@ -15,7 +15,7 @@ ms.custom:
 
 # Track commissions in the point of sale (POS) by using sales groups
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to track commissions by using sales groups in Microsoft Dynamics 365 Commerce point of sale (POS).
 

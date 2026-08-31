@@ -14,7 +14,7 @@ ms.custom:
 
 # Shipping address module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 

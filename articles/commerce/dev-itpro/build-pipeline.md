@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up a build pipeline for the independent-packaging SDK
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a build pipeline for the Microsoft Dynamics 365 Commerce software development kit (SDK). By using this pipeline, you can generate the Cloud Scale Unit (CSU) and self-service deployable packages for extension code by using the new independent extension model.
 

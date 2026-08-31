@@ -14,7 +14,7 @@ ms.custom:
 
 # Account management pages and modules
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes account management pages and modules in Microsoft Dynamics 365 Commerce.
 

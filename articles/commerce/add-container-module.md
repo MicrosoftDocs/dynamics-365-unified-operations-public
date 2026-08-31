@@ -14,7 +14,7 @@ ms.custom:
 
 # Container module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains container modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

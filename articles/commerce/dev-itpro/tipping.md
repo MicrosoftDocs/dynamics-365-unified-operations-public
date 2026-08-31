@@ -15,7 +15,7 @@ ms.custom:
 
 # Support for tipping in the payments SDK
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how the payments software development kit (SDK) for Microsoft Dynamics 365 Commerce supports tip amounts that customers enter through a payment terminal. The purpose of this feature is to add first-class support to the payments SDK by including a separate field for the tip amount in authorization responses.
 

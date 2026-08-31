@@ -14,7 +14,7 @@ ms.custom:
 
 # Channel database extensions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to extend the channel database for different scenarios in Microsoft Dynamics 365 Finance and Dynamics 365 Commerce. The guidance in this article only applies to Dynamics 365 Finance and Dynamics 365 Commerce.
 

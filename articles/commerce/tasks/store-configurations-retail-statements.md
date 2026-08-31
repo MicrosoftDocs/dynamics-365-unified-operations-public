@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Store configurations for Retail statements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains store configurations for Retail statements in Microsoft Dynamics 365 Commerce. It also explains how to configure bank transaction types for payments from Commerce channels.
 

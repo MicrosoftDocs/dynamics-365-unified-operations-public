@@ -14,7 +14,7 @@ ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 
 # Set up retail products
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to set up retail products in Microsoft Dynamics 365 Commerce.
 

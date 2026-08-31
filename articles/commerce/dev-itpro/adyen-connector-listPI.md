@@ -14,7 +14,7 @@ ms.custom:
 
 # Saving online payment instruments with the Adyen connector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the setup and functionality related to saving payment instruments when you use the Adyen "card not present" payment connector for the Microsoft Dynamics 365 Commerce platform.
 

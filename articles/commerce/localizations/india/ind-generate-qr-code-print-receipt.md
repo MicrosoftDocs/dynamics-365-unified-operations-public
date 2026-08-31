@@ -12,7 +12,7 @@ ms.custom:
 ---
 # Generate QR codes and print them on receipts for India
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India in Microsoft Dynamics 365 Commerce.
 

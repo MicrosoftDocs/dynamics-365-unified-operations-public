@@ -13,7 +13,7 @@ ms.author: mirao
 ---
 # Configure and process an exchange on a return order
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to configure an exchange on a return in Microsoft Dynamics 365 Commerce.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # What's new and changed in Dynamics 365 Retail
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article points you to resources that can help you learn about the new features and changes in the latest releases of Microsoft Dynamics 365 Retail.
 

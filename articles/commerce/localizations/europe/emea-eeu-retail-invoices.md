@@ -14,7 +14,7 @@ ms.custom:
 
 # Customer invoices and return sales orders in Eastern European countries/regions
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes how to set up information for customer invoices and return sales orders in Eastern European countries/regions.
 

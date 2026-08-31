@@ -14,7 +14,7 @@ ms.custom:
 
 # E-commerce architectural overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an architectural overview of Microsoft Dynamics 365 Commerce.
 

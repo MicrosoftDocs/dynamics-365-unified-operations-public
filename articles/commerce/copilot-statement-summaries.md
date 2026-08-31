@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-11-05
 
 # Enable Copilot statement posting summaries
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to enable Microsoft Copilot AI-generated statement posting summaries in Microsoft Dynamics 365 Commerce.
 

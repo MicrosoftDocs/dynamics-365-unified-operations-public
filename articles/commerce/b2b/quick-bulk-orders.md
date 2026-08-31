@@ -15,7 +15,7 @@ ms.search.form: RetailOperations
 
 # Place B2B bulk and repeat orders quickly
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 

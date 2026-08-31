@@ -14,7 +14,7 @@ ms.custom:
 
 # Price change tracking
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 

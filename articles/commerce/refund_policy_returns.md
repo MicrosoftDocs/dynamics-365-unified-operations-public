@@ -14,7 +14,7 @@ ms.custom:
 
 # Create and update a returns and refunds policy for a channel
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to set up a returns and refunds policy for a channel in Microsoft Dynamics 365 Commerce.
 

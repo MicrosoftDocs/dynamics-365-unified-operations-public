@@ -12,7 +12,7 @@ ms.custom:
 
 # Modern workflows in Store Commerce POS
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the modernized views in Microsoft Dynamics 365 Commerce Store Commerce. Use the links in this article to learn how to enable each view and explore what's available in each release.
 

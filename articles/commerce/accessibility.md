@@ -14,7 +14,7 @@ ms.custom:
 
 # Accessibility features and capabilities
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
 

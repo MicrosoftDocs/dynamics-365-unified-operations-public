@@ -15,7 +15,7 @@ ms.custom:
 ---
 # Optimize images on product details pages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to optimize images on product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 

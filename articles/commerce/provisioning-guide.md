@@ -14,7 +14,7 @@ ms.custom:
 
 # Provision a Dynamics 365 Commerce sandbox environment
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to provision a Microsoft Dynamics 365 Commerce sandbox environment for demo usage with built-in demo data. The process for setting up a production environment is similar but more elaborate since many of the sandbox environment prerequisites are already provided in the demo data.
 

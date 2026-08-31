@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce chat module proactive chat parameters
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the proactive chat parameters of the Commerce Chat with Omnichannel for Customer Service and Commerce Chat with Microsoft Copilot Studio chat modules in Microsoft Dynamics 365 Commerce.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Product recommendations overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains product recommendations in Microsoft Dynamics 365 Commerce that let customers easily and quickly find products that they want, and also discover products that they didn't originally intend to buy.
 

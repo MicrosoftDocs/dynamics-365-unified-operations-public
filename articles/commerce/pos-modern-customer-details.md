@@ -12,7 +12,7 @@ ms.custom:
 
 # Modernized customer details page in Store Commerce (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Applies to:** Dynamics 365 Commerce version 10.0.48 and later
 

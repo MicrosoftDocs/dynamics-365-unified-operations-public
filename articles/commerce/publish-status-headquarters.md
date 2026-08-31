@@ -14,7 +14,7 @@ ms.custom:
 
 # View product search publishing status in headquarters
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to view product search publishing status in Microsoft Dynamics 365 Commerce headquarters.
 

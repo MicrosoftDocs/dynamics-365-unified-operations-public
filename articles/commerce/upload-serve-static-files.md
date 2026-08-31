@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Upload and serve static files
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to upload and serve static files in Microsoft Dynamics 365 Commerce site builder.
 

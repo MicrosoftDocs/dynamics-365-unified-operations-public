@@ -16,7 +16,7 @@ ms.custom:
 
 # Monitor sales and margin performance
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to monitor sales and margin performance in real time using Microsoft Dynamics 365 Commerce.
 

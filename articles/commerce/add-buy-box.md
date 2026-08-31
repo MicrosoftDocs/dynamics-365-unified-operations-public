@@ -14,7 +14,7 @@ ms.custom:
 
 # Buy box module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes buy box modules and explains how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

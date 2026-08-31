@@ -14,7 +14,7 @@ ms.custom:
 
 # Multiple available payment methods for in-store pickup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers the capabilities of Microsoft Dynamics 365 Commerce point of sale (POS) when one or more pre-existing payment methods are available to use for a transaction.
 

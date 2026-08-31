@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Commerce runtime (CRT) services
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains Commerce runtime (CRT) services, the libraries that contain the business logic for the commerce channel and pricing functionality in Microsoft Dynamics 365 Commerce.
 

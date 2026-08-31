@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure sales tax for online orders
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of sales tax group selection for different online order types in Microsoft Dynamics 365 Commerce, using either destination-based or customer account-based tax settings.
 

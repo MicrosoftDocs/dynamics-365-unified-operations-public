@@ -14,7 +14,7 @@ ms.custom:
 
 # Header module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 

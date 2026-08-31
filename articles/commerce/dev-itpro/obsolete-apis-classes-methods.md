@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Obsolete and removed APIs, classes, and methods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the obsolete and removed APIs, classes, and methods in Microsoft Dynamics 365 Commerce.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Catalog picker module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers catalog picker modules and describes how to add them to Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce sites.
 

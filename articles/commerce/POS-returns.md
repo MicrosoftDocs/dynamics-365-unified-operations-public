@@ -14,7 +14,7 @@ ms.custom:
 
 # Create returns in POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to initiate returns for cash-and-carry transactions or customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Commerce inventory management
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the types of documents you can use to manage inventory in Microsoft Dynamics 365 Commerce.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Home page overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the home page in Microsoft Dynamics 365 Commerce.
 

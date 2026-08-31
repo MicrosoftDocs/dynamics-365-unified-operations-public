@@ -19,7 +19,7 @@ ms.custom:
 
 # E-commerce site overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the support for e-commerce sites in Microsoft Dynamics 365 Commerce. It includes information about how e-commerce online stores are initialized and managed in Dynamics 365 Commerce. It also provides links to more information about online stores, and about how to set up and configure an e-commerce site. Although this article covers many of the basics, it doesn't cover everything that is required to set up a production e-commerce site. More advanced articles can be found in the Dynamics 365 Commerce documentation.
 

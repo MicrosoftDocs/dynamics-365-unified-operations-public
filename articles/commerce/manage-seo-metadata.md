@@ -14,7 +14,7 @@ ms.custom:
 
 # Manage SEO metadata
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
 

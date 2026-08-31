@@ -15,7 +15,7 @@ ms.custom:
 
 # Device management implementation guidance
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of device management functionality in a Microsoft Dynamics 365 Commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 

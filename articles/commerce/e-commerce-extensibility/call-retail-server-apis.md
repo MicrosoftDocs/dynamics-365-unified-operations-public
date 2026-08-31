@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Call Commerce Scale Unit APIs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
 

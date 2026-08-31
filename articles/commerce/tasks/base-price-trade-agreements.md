@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Base price and trade agreements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create channel-specific sales price trade agreements in Microsoft Dynamics 365 Commerce.
 

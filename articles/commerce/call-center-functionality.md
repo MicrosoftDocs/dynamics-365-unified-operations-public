@@ -18,7 +18,7 @@ ms.custom:
 
 # Call center sales functionality
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes call center sales functionality in Microsoft Dynamics 365 Commerce.
 

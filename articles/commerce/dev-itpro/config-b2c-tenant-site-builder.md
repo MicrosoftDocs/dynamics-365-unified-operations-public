@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure your B2C tenant in Commerce site builder
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce site builder.
 

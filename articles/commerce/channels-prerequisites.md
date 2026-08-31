@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Channel setup prerequisites
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.
 

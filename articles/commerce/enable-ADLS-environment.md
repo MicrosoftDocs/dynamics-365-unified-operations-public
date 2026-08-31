@@ -15,7 +15,7 @@ ms.custom:
 
 # Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides instructions on how to connect an Azure Data Lake Storage Gen2 solution to a Dynamics 365 Commerce environment's Entity store. This step is required before you can enable product recommendations.
 

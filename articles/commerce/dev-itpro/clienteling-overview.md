@@ -16,7 +16,7 @@ ms.custom:
 
 # Clienteling overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of new clienteling capabilities available in Microsoft Dynamics 365 Commerce.
 

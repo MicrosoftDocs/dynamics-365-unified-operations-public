@@ -14,7 +14,7 @@ ms.custom:
 
 # CLI command reference
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 

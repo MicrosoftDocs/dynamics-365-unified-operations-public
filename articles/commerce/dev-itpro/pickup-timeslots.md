@@ -14,7 +14,7 @@ ms.custom:
 
 # Create and update time slots for customer pickup
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create, configure, and update customer pickup time slots in Microsoft Dynamics 365 Commerce headquarters.
 

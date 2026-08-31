@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure Google Pay with Adyen
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!WARNING]
 > The Dynamics 365 Commerce pattern for Google Pay Express isn't currently recommended for regions enforcing Payment Services Directive Two (PSD2) requirements. The payment module for Google Pay support calculates the final order price after returning to the Commerce checkout page when it acquires the delivery address information for a user's order. PSD2 recommends that users see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the newer Google Pay direct module available to support express flows by updating order details within the Google Pay payment window when a delivery address is selected.

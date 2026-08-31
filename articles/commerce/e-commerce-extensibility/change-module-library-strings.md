@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Change module library static strings
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to change module library strings in Microsoft Dynamics 365 Commerce.
 

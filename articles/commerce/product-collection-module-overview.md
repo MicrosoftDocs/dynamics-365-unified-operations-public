@@ -14,7 +14,7 @@ ms.custom:
 
 # Product collection modules
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 

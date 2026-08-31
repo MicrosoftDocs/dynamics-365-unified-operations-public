@@ -14,7 +14,7 @@ ms.custom:
 
 # Seamless offline switch for gift card and credit memo operations
 
-[!include [banner](../finance/includes/banner.md)]
+[!INCLUDE [banner](../finance/includes/banner.md)]
 
 This article provides an overview of improvements that provide a seamless offline switch for specific payment types in Microsoft Dynamics 365 Commerce.
 

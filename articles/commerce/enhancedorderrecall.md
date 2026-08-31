@@ -17,7 +17,7 @@ ms.custom:
 
 # Recall order operation in POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes feature capabilities available for improved order recall pages in POS in Microsoft Dynamics 365 Commerce.
 

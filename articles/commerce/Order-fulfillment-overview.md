@@ -14,7 +14,7 @@ ms.custom:
 
 # Store order fulfillment
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of store order fulfillment in Microsoft Dynamics 365 Commerce.
 

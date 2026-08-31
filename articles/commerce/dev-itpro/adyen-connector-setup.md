@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up Dynamics 365 Payment Connector for Adyen
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen. For an overview of the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md).
 

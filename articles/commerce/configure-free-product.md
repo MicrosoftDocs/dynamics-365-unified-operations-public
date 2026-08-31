@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure a product to be purchased for free
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to configure a product so that customers can purchase it for free in Microsoft Dynamics 365 Commerce.
 

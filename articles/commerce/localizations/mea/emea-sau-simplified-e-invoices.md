@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Generate and submit simplified electronic invoices for Saudi Arabia
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 > [!NOTE]
 > The functionality described in this article supports the Phase 2 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia.

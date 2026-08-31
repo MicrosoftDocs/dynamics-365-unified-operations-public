@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure theme style presets
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to add style variables, known as style presets, to custom themes in Microsoft Dynamics 365 Commerce site builder.
 

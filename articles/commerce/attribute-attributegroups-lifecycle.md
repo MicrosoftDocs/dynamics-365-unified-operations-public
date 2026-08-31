@@ -15,7 +15,7 @@ ms.custom:
 
 # Manage attributes and attribute groups
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce.
 

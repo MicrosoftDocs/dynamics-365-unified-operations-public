@@ -14,7 +14,7 @@ ms.custom:
 
 # Convert asynchronous customers to synchronous customers
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to convert asynchronous customers to synchronous customers in Microsoft Dynamics 365 Commerce.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Templates and layouts overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of templates and layouts in Microsoft Dynamics 365 Commerce.
 

@@ -17,7 +17,7 @@ ms.custom:
 ---
 # Create call center orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article walks through an example procedure where a call center user looks up a customer, creates a new order, searches for a product, and collects payment from the customer in Microsoft Dynamics 365 Commerce. The procedure uses the USRT demo data company and is intended for sales order clerks. 
 

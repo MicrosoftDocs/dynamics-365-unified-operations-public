@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Preview and debug a module
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to test a Microsoft Dynamics 365 Commerce module by previewing and debugging it in a web browser.
 

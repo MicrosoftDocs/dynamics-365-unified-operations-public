@@ -14,7 +14,7 @@ ms.custom:
 
 # Publish an online store catalog
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of how to publish catalogs from the Commerce module to a Microsoft Dynamics 365 Commerce online store.
 

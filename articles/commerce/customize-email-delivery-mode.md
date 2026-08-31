@@ -14,7 +14,7 @@ ms.custom:
 
 # Customize transactional emails by mode of delivery
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to set up custom email templates for specific notification types and modes of delivery in Microsoft Dynamics 365 Commerce.
 

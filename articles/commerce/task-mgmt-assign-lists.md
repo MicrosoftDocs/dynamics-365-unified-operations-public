@@ -14,7 +14,7 @@ ms.custom:
 
 # Assign task lists to stores or employees
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.
 

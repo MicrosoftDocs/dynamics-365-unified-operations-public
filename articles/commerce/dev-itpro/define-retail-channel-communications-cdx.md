@@ -15,7 +15,7 @@ ms.custom:
 
 # Commerce Data Exchange and commerce channel communications
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of Commerce Data Exchange and its components. It explains the part that each component plays in the transfer of data between Microsoft Dynamics 365 Commerce headquarters and channels.
 

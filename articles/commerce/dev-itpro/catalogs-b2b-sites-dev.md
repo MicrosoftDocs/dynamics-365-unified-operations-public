@@ -14,7 +14,7 @@ ms.custom:
 
 # Extensibility impact of Commerce catalogs for B2B customizations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the extensibility impact of the **Commerce catalogs for B2B** feature in Microsoft Dynamics 365 Commerce.
 

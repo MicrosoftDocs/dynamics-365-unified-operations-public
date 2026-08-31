@@ -14,7 +14,7 @@ ms.custom:
 
 # Opt out of web activity event collection
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to allow visitors to your Microsoft Dynamics 365 Commerce site to opt out of web activity event collection.
 

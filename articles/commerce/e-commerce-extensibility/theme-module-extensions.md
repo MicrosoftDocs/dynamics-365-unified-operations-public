@@ -14,7 +14,7 @@ ms.custom:
 
 # Extend a theme to add module extensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce.
 

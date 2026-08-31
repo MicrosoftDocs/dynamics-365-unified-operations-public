@@ -14,7 +14,7 @@ ms.custom:
 
 # Footer module  
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers footer modules and describes how to create them in Microsoft Dynamics 365 Commerce.
 

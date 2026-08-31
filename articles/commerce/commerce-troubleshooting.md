@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-07-12
 
 # Dynamics 365 Commerce troubleshooting and FAQs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides links to troubleshooting resources and frequently asked question articles for Microsoft Dynamics 365 Commerce.
 

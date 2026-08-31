@@ -14,7 +14,7 @@ ms.custom:
 
 # Check-in for pickup module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the check-in for pickup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Commerce Data Exchange implementation guidance
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article is for people who implement functionality related to data synchronization (Commerce Data Exchange, \[CDX\]) in a Microsoft Dynamics 365 Commerce environment. It provides an overview, implementation tips, and guidance that you should consider as you plan your implementation. It covers pages, setup, configuration, best practices, and more.
 

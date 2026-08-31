@@ -14,7 +14,7 @@ ms.custom:
 ---
 # User-defined certificate profiles for retail stores
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce. This functionality extends the [Manage secrets for retail channels](../../dev-itpro/manage-secrets.md) feature by adding support for local certificates.
 

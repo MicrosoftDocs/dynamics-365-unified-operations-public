@@ -14,7 +14,7 @@ ms.custom:
 
 # Ratings and reviews FAQ
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
 

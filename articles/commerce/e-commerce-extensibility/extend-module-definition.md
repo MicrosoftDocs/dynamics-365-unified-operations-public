@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Extend a module definition file
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to extend a module definition file in Microsoft Dynamics 365 Commerce. For example, you can create an extended module of another module to add new configuration fields.
 

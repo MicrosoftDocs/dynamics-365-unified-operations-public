@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Add languages to your site
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
 

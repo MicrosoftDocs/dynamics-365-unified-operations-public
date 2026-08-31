@@ -17,7 +17,7 @@ ms.custom:
 
 # What's new or changed in Dynamics 365 Commerce 10.0.39 (April 2024)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.39. This version has a build number of 10.0.1860.32 and is available on the following schedule:
 

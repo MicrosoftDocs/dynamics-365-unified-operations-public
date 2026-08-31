@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up a build pipeline for a fiscal integration sample
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article explains how to set up build and release pipelines for a [fiscal integration sample](../dev-itpro/fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK). By using the [independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can generate and release the Cloud Scale Unit and self-service deployable packages for the sample code.
 

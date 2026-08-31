@@ -16,7 +16,7 @@ ms.custom:
 
 # Connect peripherals to the point of sale (POS)
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to connect peripherals to your Retail POS.
 

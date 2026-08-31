@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Fiscal registration service integration sample for Germany
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
 

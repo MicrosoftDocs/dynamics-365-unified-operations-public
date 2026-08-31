@@ -15,7 +15,7 @@ ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 
 # Configure cash denominations for the point of sale (POS)
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to configure cash denominations for Microsoft Dynamics 365 Commerce point of sale (POS).
 

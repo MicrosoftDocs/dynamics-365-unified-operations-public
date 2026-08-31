@@ -15,7 +15,7 @@ ms.custom:
 
 # Get started with e-commerce online extensibility development
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of e-commerce customization development using the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 

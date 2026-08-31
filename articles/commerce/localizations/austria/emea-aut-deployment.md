@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Deployment guidelines for cash registers for Austria
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for Austria. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, includes samples of the integration with the EFSTA System and
 Electronical Fiscal Register Software. For more information about the localization for Austria, see [Fiscal registration service integration sample for Austria](../dev-itpro/emea-aut-fi-sample.md).

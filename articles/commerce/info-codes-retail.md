@@ -16,7 +16,7 @@ ms.custom:
 
 # Info codes and info code groups
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of info codes and info code groups and how to use them in Microsoft Dynamics 365 Commerce.
 

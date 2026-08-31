@@ -14,7 +14,7 @@ ms.custom:
 
 # Inventory-aware product listing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how organizations can configure inventory-aware product listing pages on their Microsoft Dynamics 365 Commerce e-commerce sites. Product listing pages include category landing pages and search results pages.
 

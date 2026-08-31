@@ -14,7 +14,7 @@ ms.custom:
 
 # Product comparison modules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes product comparison modules and how to implement them on Microsoft Dynamics 365 Commerce e-commerce websites.
 

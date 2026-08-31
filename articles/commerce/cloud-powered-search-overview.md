@@ -12,7 +12,7 @@ ms.search.validFrom: 2019-10-31
 
 # Cloud-powered search overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 

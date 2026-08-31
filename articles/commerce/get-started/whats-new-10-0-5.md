@@ -21,7 +21,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # What's new or changed in Dynamics 365 for Retail version 10.0.5
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes features that are new or changed in Dynamics 365 Retail in 10.0.5. 
 

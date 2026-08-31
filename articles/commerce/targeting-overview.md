@@ -14,7 +14,7 @@ ms.custom:
 
 # Device, market, and geolocation targeting
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
 

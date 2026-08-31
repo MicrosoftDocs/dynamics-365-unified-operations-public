@@ -14,7 +14,7 @@ ms.custom:
 
 # Prorate header charges to matching sales lines
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the functionality for grouping header-level autocharges and prorating them to sales lines in Microsoft Dynamics 365 Commerce. This functionality is available for transactions that are created at the point of sale (POS) in Retail version 10.0.1 and sales that are created in a call center in Retail version 10.0.2.
 

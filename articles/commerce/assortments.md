@@ -13,7 +13,7 @@ ms.search.validFrom: 2017-11-21
 
 # Assortment management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the basic concepts of assortment management in Microsoft Dynamics 365 Commerce and provides implementation considerations for your project.
 

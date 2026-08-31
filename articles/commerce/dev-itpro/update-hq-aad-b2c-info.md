@@ -14,7 +14,7 @@ ms.custom:
 
 # Update Commerce headquarters with Microsoft Entra B2C information
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to update Microsoft Dynamics 365 Commerce headquarters with new Microsoft Entra business-to-consumer (B2C) information.
 

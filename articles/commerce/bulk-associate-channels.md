@@ -12,7 +12,7 @@ ms.search.validFrom: 2019-10-31
 
 # Bulk associate channels with e-commerce sites
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes a Microsoft Dynamics 365 Commerce feature that lets site authors use a wizard experience to bulk associate multiple channels with their e-commerce sites.
 

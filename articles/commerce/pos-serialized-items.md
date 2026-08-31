@@ -14,7 +14,7 @@ ms.custom:
 
 # Work with serialized items in the POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to manage serialized items in Microsoft Dynamics 365 Commerce point of sale (POS).
 

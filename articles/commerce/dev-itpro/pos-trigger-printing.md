@@ -14,7 +14,7 @@ ms.custom:
 
 # Store Commerce app triggers and printing
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to use triggers to capture events that occur before and after any Microsoft Dynamics 365 Commerce Store Commerce app operations.
 

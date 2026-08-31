@@ -15,7 +15,7 @@ ms.custom:
 
 # Commerce Scale Unit (self-hosted)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of Microsoft Dynamics 365 Commerce Scale Unit (self-hosted), and when to use it.
 

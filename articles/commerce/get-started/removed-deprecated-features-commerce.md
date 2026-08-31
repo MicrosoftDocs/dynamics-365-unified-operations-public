@@ -15,7 +15,7 @@ ms.custom:
 
 # Removed or deprecated features in Dynamics 365 Commerce
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
 This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.

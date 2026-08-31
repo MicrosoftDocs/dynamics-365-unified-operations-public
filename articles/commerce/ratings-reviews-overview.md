@@ -13,7 +13,7 @@ ms.search.validFrom: 2019-10-31
 
 # Ratings and reviews overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains ratings and reviews in Microsoft Dynamics 365 Commerce.
 

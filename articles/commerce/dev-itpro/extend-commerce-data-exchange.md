@@ -16,7 +16,7 @@ ms.custom:
 
 # Extend Commerce Data Exchange - Real-time Service
 
-[!Include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can extend Commerce Data Exchange (CDX) - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables clients to interact with Commerce functionality in real time. Finance and operations databases and classes can't be accessed directly from Retail server. You should access them through the CDX class extension by using the finance and operations and Commerce Runtime extension.
 

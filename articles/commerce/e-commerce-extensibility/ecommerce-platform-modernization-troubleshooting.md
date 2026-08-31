@@ -14,7 +14,7 @@ ms.custom:
 
 # Troubleshoot the Node.js 24 upgrade
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article helps you diagnose and fix common `yarn install` and `yarn build` failures that you might encounter when you upgrade the Microsoft Dynamics 365 Commerce online SDK environment to **Node.js 24**. It complements the step-by-step guidance in [E-commerce platform modernization](ecommerce-platform-modernization.md).
 

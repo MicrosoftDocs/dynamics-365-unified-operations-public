@@ -16,7 +16,7 @@ ms.custom:
 
 # Add recommendations to the transaction screen
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to add a recommendations control to the transaction screen on a point of sale (POS) device by using the screen layout designer in Microsoft Dynamics 365 Commerce. Learn more in [Add product recommendations on POS](product.md).
 

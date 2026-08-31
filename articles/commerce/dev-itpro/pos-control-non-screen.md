@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Add custom controls to nonscreen designer-based POS views
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to add a custom control to a nonscreen layout designer-based view in Microsoft Dynamics 365 Commerce.
 

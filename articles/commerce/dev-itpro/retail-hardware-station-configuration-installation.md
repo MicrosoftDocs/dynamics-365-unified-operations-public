@@ -16,7 +16,7 @@ ms.custom:
 
 # Configure and install Retail hardware station
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure, download, install, and uninstall the legacy Retail hardware station by using self-service functionality.
 

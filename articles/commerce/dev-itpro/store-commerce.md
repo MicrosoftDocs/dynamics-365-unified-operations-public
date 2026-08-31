@@ -14,7 +14,7 @@ ms.custom:
 
 # Store Commerce app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows. It applies to Dynamics 365 Commerce versions 10.0.25 and later.
 

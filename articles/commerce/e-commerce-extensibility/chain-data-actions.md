@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Chain data actions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to chain data actions in Microsoft Dynamics 365 Commerce.
 

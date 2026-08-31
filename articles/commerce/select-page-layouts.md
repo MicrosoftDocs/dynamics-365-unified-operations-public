@@ -14,7 +14,7 @@ ms.custom:
 
 # Select page layouts
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to create and select page layouts in Microsoft Dynamics 365 Commerce.
 

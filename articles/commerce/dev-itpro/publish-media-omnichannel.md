@@ -14,7 +14,7 @@ ms.custom:
 
 # Publish media assignments
 
-[!include[banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes how to publish media assignments by using omnichannel media management in Microsoft Dynamics 365 Commerce.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Select an in-store topology
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the various Microsoft Dynamics 365 Commerce in-store topologies.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Work with publish groups
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 

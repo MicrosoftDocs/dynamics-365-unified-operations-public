@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Prepayments in Dynamics 365 Commerce
 
-[!include[banner](../finance/includes/banner.md)]
+[!INCLUDE [banner](../finance/includes/banner.md)]
 
 This article provides an overview of processing for prepayment transactions in Microsoft Dynamics 365 Commerce.
 

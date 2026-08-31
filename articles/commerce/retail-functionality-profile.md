@@ -16,7 +16,7 @@ ms.custom:
 ---
 # Create a retail functionality profile
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to create a functionality profile in Microsoft Dynamics 365 Commerce.
 

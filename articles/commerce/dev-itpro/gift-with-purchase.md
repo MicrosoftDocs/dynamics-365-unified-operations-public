@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure gift with purchase promotions
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes how to configure "gift with purchase" promotions in Microsoft Dynamics 365 Commerce.
 

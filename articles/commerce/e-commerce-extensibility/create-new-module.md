@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Create a new module
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create a new module in Microsoft Dynamics 365 Commerce.
 

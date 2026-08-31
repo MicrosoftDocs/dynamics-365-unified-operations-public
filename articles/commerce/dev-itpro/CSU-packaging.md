@@ -14,7 +14,7 @@ ms.custom:
 
 # Create a Cloud Scale Unit extension package
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU).
 

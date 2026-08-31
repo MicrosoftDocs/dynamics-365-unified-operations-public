@@ -14,7 +14,7 @@ ms.custom:
 
 # Gift card module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

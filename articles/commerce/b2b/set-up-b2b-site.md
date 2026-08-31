@@ -13,7 +13,7 @@ ms.search.form: RetailOperations
 
 # Set up a B2B e-commerce site
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
 

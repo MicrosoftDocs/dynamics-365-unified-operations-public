@@ -14,7 +14,7 @@ ms.custom:
 
 # Module React component file
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the module React component file in Microsoft Dynamics 365 Commerce.
 

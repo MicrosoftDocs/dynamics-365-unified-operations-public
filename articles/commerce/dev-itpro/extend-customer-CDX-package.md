@@ -14,7 +14,7 @@ ms.custom:
 
 # Extend the customer CDX package to add custom data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to extend the customer Commerce Data Exchange (CDX) package to add custom data in Microsoft Dynamics 365 Commerce.
 

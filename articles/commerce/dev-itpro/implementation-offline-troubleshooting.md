@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce offline implementation troubleshooting
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of troubleshooting for offline implementations of Microsoft Dynamics 365 Commerce. It focuses on troubleshooting details that are related to the use of offline functionality. The article is intended for customers who implement offline functionality related to the Dynamics 365 Commerce Modern POS or Store Commerce application.
 

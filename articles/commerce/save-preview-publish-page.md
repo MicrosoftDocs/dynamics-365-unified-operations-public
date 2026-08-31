@@ -14,7 +14,7 @@ ms.custom:
 
 # Save, preview, and publish a page
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to save, preview, and publish a page in Microsoft Dynamics 365 Commerce.
 

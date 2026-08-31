@@ -15,7 +15,7 @@ ms.custom:
 
 # Create user flow policies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create user flow policies in the Microsoft Azure portal.
 

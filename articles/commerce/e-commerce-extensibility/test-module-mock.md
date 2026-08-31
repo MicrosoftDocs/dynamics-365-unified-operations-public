@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Test modules with module mocks
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to test Microsoft Dynamics 365 Commerce modules by using module mocks.
 

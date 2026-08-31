@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Configure the functionality profile for a sales representative
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This procedure shows how to configure a store's functionality profile settings that apply to sales representatives by using the USRT demo data company.
 

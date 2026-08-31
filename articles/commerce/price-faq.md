@@ -14,7 +14,7 @@ ms.custom:
 
 # Price FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about pricing and discounts in Microsoft Dynamics 365 Commerce.
 

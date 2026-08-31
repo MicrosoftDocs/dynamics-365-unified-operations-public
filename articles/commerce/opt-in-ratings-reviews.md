@@ -14,7 +14,7 @@ ms.custom:
 
 # Opt in to use ratings and reviews
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to opt in to use ratings and reviews on your Microsoft Dynamics 365 Commerce site.
 

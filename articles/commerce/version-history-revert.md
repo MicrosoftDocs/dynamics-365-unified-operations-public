@@ -15,7 +15,7 @@ ms.custom:
 
 # View version history to revert pages and fragments
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to view the version history for a page or fragment in Microsoft Dynamics 365 Commerce site builder.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up order fulfillment for stores
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to set up store order fulfillment in Microsoft Dynamics 365 Commerce.
 

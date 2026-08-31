@@ -15,7 +15,7 @@ ms.custom:
 
 # Manage Bing Maps for your organization
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can manage Bing Maps for your application. When you turn on Bing Maps, people can view a map of a store, warehouse, or other location when creating orders. 
 
