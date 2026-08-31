@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Mass hire projects
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Mass hire projects enable human resources specialists to create multiple positions and efficiently hire workers into those positions.

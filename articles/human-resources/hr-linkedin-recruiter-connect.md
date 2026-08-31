@@ -10,6 +10,8 @@ ms.topic: article
 
 # Integration for LinkedIn overview
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 Integration for LinkedIn in the Recruiting add-on that organizations use to post jobs to LinkedIn for both recruiters and candidates. If your organization already has a valid LinkedIn Recruiter or LinkedIn job posting license, you can activate the integration directly in the Recruiting add-on settings. An administrator authenticates the LinkedIn account, maps the required permissions, and enables job distribution.
 
 The LinkedIn job posting integration enables recruiters to publish job advertisements from Dynamics 365 Human Resources directly to LinkedIn. It uses secure authentication and controlled API-based communication between LinkedIn and the Recruiting add-on.

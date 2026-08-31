@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Human Resources customer merge FAQ
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 ## What is customer merge?

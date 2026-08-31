@@ -14,6 +14,8 @@ ms.search.region: Global
 
 # Update time and attendance information in Dynamics 365 Human Resources
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 You can update time and attendance information for your workers in various ways.
 
 This article discusses how to post indirect activities costs, adjust flex time, adjust registrations with future timestamps, unit count, and statistical payroll balances, clean up old time and attendance registrations, and deactivate past workers.

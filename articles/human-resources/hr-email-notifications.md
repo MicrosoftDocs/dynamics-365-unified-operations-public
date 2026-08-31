@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefits email notification
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 [!include [banner](../includes/preview-banner.md)]
 

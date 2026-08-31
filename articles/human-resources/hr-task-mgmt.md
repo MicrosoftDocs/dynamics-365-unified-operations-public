@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Task management
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 Task management helps you create tasks that must be completed to hire (onboard), terminate (offboard), and transfer (transition) employees. Task management uses the concept of checklists. A checklist is a list of onboarding, offboarding, or transition tasks. Task management uses checklists to group tasks together and assign them to individuals or groups. The checklist functionality for onboarding, offboarding, and transitions is similar.
 
 ## Checklist overview

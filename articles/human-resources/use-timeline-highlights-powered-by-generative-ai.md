@@ -9,6 +9,8 @@ ms.date: 04/02/2026
 
 # Timeline highlights with generative AI in Dynamics 365
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!INCLUDE [use-timeline-highlights-powered-by-generative-ai](~/../shared-content/shared/dynamics365-core/use-timeline-highlights-powered-by-generative-ai.md)]
 
 ### Related information

@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Modify reporting relationships for a position
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This procedure shows how to change the reporting relationship for an employee. Use the reporting relationship to route documents through workflow. This procedure also shows how to assign the employee to additional hierarchies. For example, an employee might be part of a project team with an informal reporting relationship to a project supervisor. You can define additional reporting relationships on the position to accommodate various project or matrix scenarios. The demo data company used to create this procedure is USMF.

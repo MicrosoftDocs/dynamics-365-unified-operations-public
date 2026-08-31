@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure shared parameters
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Set up shared parameters for records that are shared across companies, such as **Position** records. This article explains how to set up Human resources parameters across legal entities.

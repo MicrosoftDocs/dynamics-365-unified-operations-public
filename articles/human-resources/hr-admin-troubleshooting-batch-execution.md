@@ -24,6 +24,8 @@ ms.dyn365.ops.version: Platform update 42
 
 # Reset stuck batch jobs
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 ## Issue

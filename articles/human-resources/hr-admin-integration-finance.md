@@ -26,6 +26,8 @@ ms.custom: sfi-image-nochange
 
 # Configure integration with Finance
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 To integrate Dynamics 365 Human Resources with Dynamics 365 Finance, use the Human Resources to Finance template in [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources to Finance template enables data flow for jobs, positions, and workers. The template allows data to flow from Human Resources into Finance, but doesn't allow data to flow from Finance into Human Resources.

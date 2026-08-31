@@ -25,6 +25,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Create coverage options
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 Coverage options determine who should be covered, or how much coverage is available in an insurance plan. For example, for a medical plan, you might have an **Employee only** option, an **Employee + 1** option, and a **Family** option. For life insurance, you might offer coverage for **1 x salary** or **2 x salary**.
 

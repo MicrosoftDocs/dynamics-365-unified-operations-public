@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Onboard users to use the HR Recruiting app
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains how to onboard users so they can use the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
 Users who have licenses are seamlessly onboarded to your Dataverse instance in the background through automatic synchronization with Microsoft Entra ID.

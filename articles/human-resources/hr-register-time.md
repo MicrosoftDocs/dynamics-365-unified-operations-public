@@ -14,6 +14,8 @@ ms.search.region: Global
 
 # Register time for workers
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 Supervisors or team leaders calculate time registrations that workers on their teams submit. To make the process of calculating those registrations more efficient, supervisors and team leaders can plan for absences by creating absence registrations in advance.
 
 By registering absences in advance, you can plan for holidays, external training courses, parental leave, and other types of absence registrations that you know about before they actually occur. You can register a planned absence for a group of workers or for an individual worker.

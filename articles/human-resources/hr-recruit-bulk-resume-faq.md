@@ -12,6 +12,8 @@ ms.reviewer: twheeloc
 
 # FAQ for Human Resources recruiting with Bulk resume upload
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 These frequently asked questions (FAQ) describe the AI impact of Human Resources recruiting with Bulk resume upload in Microsoft Dynamics 365 Human Resources.
 
 ## What is Bulk resume upload?

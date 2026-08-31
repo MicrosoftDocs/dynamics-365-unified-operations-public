@@ -16,6 +16,8 @@ ms.search.region: Global
 
 # Set up time and attendance information in Dynamics 365 Human Resources
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains how to set up calculation and approval groups for time and attendance, and how to set up absence information through absence setups and absence groups.
 
 ## Set up calculation and approval groups for time and attendance

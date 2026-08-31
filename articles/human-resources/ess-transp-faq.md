@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Human Resource
 
 # Employee self service leave summary: Transparency FAQ
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article answers some frequently asked questions about the **Employee self service leave summary** feature.
 
 ## What is Employee self service leave summary?

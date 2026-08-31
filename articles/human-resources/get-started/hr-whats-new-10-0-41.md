@@ -15,6 +15,8 @@ ms.search.region: Global
 
 # What's new or changed in Dynamics 365 Human Resources version 10.0.41 (September 2024)
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 [!include [banner](../../includes/preview-banner.md)]
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.41. This version has a build number of 10.0.2015.16 and is available on the following schedule:

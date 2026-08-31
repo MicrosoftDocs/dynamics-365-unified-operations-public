@@ -12,6 +12,8 @@ ms.search.region: Global
 
 # Time and attendance information
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 Time and attendance features enable you to enter and process time and attendance registrations.
 
 ## About time and attendance

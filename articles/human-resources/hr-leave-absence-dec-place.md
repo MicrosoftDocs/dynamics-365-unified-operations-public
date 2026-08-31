@@ -14,6 +14,8 @@ ms.custom:
 
 # Configure the number of decimal places in Leave and absence
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 You can set the number of decimal places that display in the **Leave and absence** module to a minimum of two and a maximum of six.
 
 ## Set the number of decimal places

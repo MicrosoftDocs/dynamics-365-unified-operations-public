@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure eligibility rules and options
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 After you configure the required parameters for Benefits management, create the eligibility rules, bundles, periods, and programs that you associate with your benefit plans.
 
 Use eligibility rules to determine whether employees are eligible for a plan. Employees must meet the condition of at least one rule to be considered eligible for the benefit. For example, you have two rules on a plan. The first rule (line 1) states that the employee type must be **Employee**. The second rule (line 2) states that the employee must be employed full-time. Therefore, employees who meet rule 1 are eligible even if they're employed only part-time.

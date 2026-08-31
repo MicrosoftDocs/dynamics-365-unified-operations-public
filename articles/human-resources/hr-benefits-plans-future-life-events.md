@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure future life events
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 [!include [banner](../includes/preview-banner.md)]
 

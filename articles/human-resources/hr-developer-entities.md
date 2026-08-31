@@ -26,6 +26,7 @@ ms.custom: sfi-image-nochange
 
 # Dataverse tables
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 [!include [LCS freeze](includes/lcs-freeze-banner.md)]

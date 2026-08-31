@@ -25,6 +25,8 @@ ms.custom: sfi-image-nochange
 
 # Security configuration concepts for virtual table-based integrations
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes an architecture for using [Microsoft Dataverse virtual tables (entities)](../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md) to build an integration between Dynamics 365 Human Resources and a third-party system. The focus of the article is on the security configuration, and on the authentication and authorization aspects that are required between the system boundaries to build a functional, secure system.

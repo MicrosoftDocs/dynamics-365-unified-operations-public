@@ -27,6 +27,8 @@ ms.custom:
 
 # Ready to pay
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!NOTE]

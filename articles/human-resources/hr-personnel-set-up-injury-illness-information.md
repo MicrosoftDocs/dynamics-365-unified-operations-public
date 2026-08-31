@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up injury and illness information
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Employers need to know when their employees suffer injuries or illnesses because of hazards in the workplace. Use the **Injury and illness** page to set up information that facilitates reporting of workplace injuries or illnesses. You can set up types of injuries and illnesses, including types of treatments, costs, and outcomes. This procedure uses the **USMF** demo data company.

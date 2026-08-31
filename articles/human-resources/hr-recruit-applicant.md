@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Applicants in HR recruiting app
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article describes applicants and activities in the HR Recruiting app in Microsoft Dynamics 365 Human Resources. *Applicants* are candidates who submit applications for job vacancies. Recruiters can view applicants by going to **Job ads** > **Applicants**.
 
 ## View the applications for a job

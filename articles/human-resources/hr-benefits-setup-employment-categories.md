@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Create employment categories
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Set up employment categories in Dynamics 365 Human Resources to match your workers.

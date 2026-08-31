@@ -24,6 +24,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create and open job requisition
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Recruitment projects help you manage your recruiting process. After creating a recruitment project, you can complete the following tasks:

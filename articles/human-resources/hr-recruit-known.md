@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Human Resources
 
 # HR Recruiting app known issues 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the known issues in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
