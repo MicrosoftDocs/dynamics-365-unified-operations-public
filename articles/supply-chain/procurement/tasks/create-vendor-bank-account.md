@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a vendor bank account
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows you how to create a bank account for a vendor. You can use this procedure in demo data company USMF.
 

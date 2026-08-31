@@ -13,7 +13,7 @@ ms.custom:
 
 # Create service task relations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can associate service tasks with service agreements or service orders in order to describe the service task to be completed for the agreement or order. This information is available to service technicians and customers.
 

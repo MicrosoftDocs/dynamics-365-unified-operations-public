@@ -15,7 +15,7 @@ ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability, WrkCtrResou
 
 # Operations resources
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities.
 

@@ -12,7 +12,7 @@ ms.assetid: 88a964af-14eb-4c5c-945b-388e5908362c
 
 # Remove outliers from historical transaction data when calculating a demand forecast
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 This article describes how to exclude outliers from the historical data that is used to calculate a demand forecast. By excluding outliers, you can improve forecast accuracy.

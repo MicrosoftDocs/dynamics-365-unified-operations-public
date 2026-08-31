@@ -10,7 +10,7 @@ ms.author: henrikan
 ---
 # Generate a constrained plan
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a plan that takes into account both material and capacity constraints. The plan ensures that manufacturing doesn't start before materials are available and resources are not overbooked. 
 

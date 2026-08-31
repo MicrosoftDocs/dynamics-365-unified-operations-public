@@ -13,7 +13,7 @@ ms.custom:
 
 # Query item data on a mobile device
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Item inquiry* mobile device menu items enable warehouse workers to view key inventory details for specific items, including location, available quantity, and reserved quantity. This feature improves visibility into warehouse stock and supports efficient decision-making during daily operations.
 

@@ -12,7 +12,7 @@ ms.search.form: GUPPricingTree, GUPParameters, GUPPriceComponentCodeSetup
 
 # Arrange price component codes into a price structure
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Regardless of whether you're using a single price structure or multiple price structures, you use the same basic procedure to arrange your price component codes into a price structure. The only difference is that, if you use multiple price structures, you also define a condition to select the structure that's used in each situation.
 

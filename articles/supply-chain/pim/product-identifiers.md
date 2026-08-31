@@ -13,7 +13,7 @@ ms.custom:
 
 # Product identifiers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory Visibility app user interface version
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Inventory Visibility app runs in Microsoft Power Apps. The current version of the app supports two versions of the user interface. You can choose which version you prefer to use. The following versions are available:
 

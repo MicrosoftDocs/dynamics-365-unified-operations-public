@@ -13,7 +13,7 @@ ms.custom:
 
 # View current WIP status on a production order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to view a work in progress (WIP) statement for a production order. This procedure is intended for the cost controller.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Work with customer service overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Customer service supports professional, service-based companies and manufacturing service organizations.
 

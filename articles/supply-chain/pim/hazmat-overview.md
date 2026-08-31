@@ -11,7 +11,7 @@ ms.search.form:
 
 # Hazardous materials overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To remain compliant with shipping and transport regulations, organizations that ship materials classified as dangerous goods must include additional paperwork with their shipments. The hazardous materials feature lets you store information related to released items. Use this information to help prepare shipping documentation. An organization that ships dangerous goods must have its own processes and procedures for managing the shipping process. Microsoft Dynamics 365 Supply Chain Management is just a tool that can help generate the required documents.
 

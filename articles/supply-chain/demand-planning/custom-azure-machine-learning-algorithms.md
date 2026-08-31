@@ -12,7 +12,7 @@ ms.search.form:
 
 # Use your own custom Azure Machine Learning algorithms in Demand planning
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In addition to the standard forecasting algorithms provided with Demand planning, you can also create your own custom algorithms and use them in your [Demand planning forecast models](design-forecast-models.md). To do so, you must create and publish your algorithms using Microsoft Azure Machine Learning, set up a connection from Demand planning to Azure, and place one of the following types of steps to your forecast models as needed (instead of using the standard *Forecast* step):
 

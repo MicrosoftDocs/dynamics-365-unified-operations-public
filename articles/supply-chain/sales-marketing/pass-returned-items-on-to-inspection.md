@@ -12,7 +12,7 @@ ms.search.form: WMSJournalTable
 
 # Pass returned items on to inspection
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When registering a returned item, you may determine that an item should be sent for inspection before it's returned to inventory or disposed of in some other way.
 

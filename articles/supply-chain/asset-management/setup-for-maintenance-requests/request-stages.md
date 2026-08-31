@@ -13,7 +13,7 @@ ms.custom:
 
 # Maintenance request lifecycle states
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Maintenance request lifecycle states define the stages that a request can go through. Examples include *Created*, *Active*, and *Ended*. When a maintenance request is converted to a work order, the maintenance request lifecycle state should be updated to *Ended* or *Closed* to indicate that the maintenance request is no longer active. On the **All maintenance requests** list page, you can view all maintenance requests, regardless of their lifecycle state.
 

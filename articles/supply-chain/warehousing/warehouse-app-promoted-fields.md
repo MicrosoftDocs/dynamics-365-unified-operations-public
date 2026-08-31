@@ -11,7 +11,7 @@ ms.search.form: WHSMobileAppFlowStepSelectPromotedFields, WHSMobileAppFlowStepLi
 
 # Configure promoted fields for steps in the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to promote and highlight specific information for any step in the task flows for the Warehouse Management mobile app. This capability can help focus workers' attention on the most important fields as they work through a flow. For each step in every process, admins can select which fields to promote and which fields to highlight.
 

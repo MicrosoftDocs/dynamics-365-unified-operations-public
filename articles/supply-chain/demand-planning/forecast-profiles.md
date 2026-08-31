@@ -12,7 +12,7 @@ ms.search.form:
 
 # Work with forecast profiles
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Demand planning lets you build a collection of *forecast profiles*. Each profile takes an existing time series as input, prepares the data, and then runs forecasting algorithms to create a new time series that predicts demand over a coming period.
 

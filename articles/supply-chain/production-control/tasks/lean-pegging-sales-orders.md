@@ -12,7 +12,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTre
 
 # Lean pegging from sales orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans. After validating the pegging tree, all the kanban jobs are planned. This is useful for order scenarios where the order taker needs to ensure that production can start right away. The demo data company used to create this procedure is USMF. This procedure is intended for the advanced order taker working in a lean company.
 

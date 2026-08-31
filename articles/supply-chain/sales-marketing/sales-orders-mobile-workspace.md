@@ -12,7 +12,7 @@ ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
 
 # Sales orders mobile workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a vendor account
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create a vendor account, and add an address and contact information. The procedure doesn't show how to populate all fields for purchasing and financial purposes. To learn more about those fields, read the field descriptions. You can use this procedure in demo data company USMF or on your own data. Procurement professionals or accounts receivable personnel typically create vendor accounts.
 

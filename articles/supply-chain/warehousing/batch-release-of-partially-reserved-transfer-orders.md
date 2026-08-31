@@ -11,7 +11,7 @@ ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
 
 # Batch release of partially reserved transfer orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The functionality for batch release of partially reserved transfer orders lets
 you partially release transfer orders to a warehouse by using a batch job.

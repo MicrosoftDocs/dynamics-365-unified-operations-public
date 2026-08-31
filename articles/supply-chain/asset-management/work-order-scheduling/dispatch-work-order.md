@@ -13,7 +13,7 @@ ms.custom:
 
 # Dispatch work orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The dispatch functionality in Asset Management schedules work orders and work order jobs.
 

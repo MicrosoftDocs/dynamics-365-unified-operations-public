@@ -12,7 +12,7 @@ ms.search.form: EcoResProductDetailsExtended, BOMConsistOf, PmfFormulaCoBy, BOMR
 
 # Copy co-products from an existing formula version
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to copy co-products from an existing formula version to a different formula version for a released product. It is a prerequisite that there is at least one formula version associated with co-products. The demo data company USP2 is used to create this procedure.
 

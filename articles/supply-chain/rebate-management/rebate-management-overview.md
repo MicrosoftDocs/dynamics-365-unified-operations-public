@@ -13,7 +13,7 @@ ms.custom:
 
 # Rebate management module overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use the **Rebate management** module to create contracts, deals, or agreements between your business and its customers or vendors, so that you can calculate rebates, deductions, and royalties. Rebate management tracks and maintains rebate and deduction transactions in a central location where users can effectively create, review, and process them.
 

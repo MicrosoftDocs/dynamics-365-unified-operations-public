@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up an appointment for a load
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to set up and plan a dock appointment for an inbound or an outbound load. The appointment reflects a date and time agreed with the carrier for picking up or dropping off a load based on a sales, purchase, or transfer order. Scheduling an appointment can be done after the load has been created and is typically done by a transportation coordinator.
 

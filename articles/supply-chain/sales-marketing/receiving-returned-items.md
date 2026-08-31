@@ -12,7 +12,7 @@ ms.search.form: SMAServiceOrderTable
 
 # Receive returned items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When a return shipment arrives, you match it to a return order that has already been created.
 

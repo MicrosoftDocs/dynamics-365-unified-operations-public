@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory Visibility inventory allocation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Business background and purpose
 

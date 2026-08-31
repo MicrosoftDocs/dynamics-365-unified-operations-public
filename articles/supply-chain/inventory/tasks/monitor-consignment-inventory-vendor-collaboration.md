@@ -13,7 +13,7 @@ ms.custom:
 
 # Monitor consignment inventory using vendor collaboration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to use vendor collaboration to see information about the stock level of product that you placed in consignment with a customer. You can also monitor the consumption of the stock when the customer takes ownership of the inventory.
 

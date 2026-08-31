@@ -15,7 +15,7 @@ ms.custom:
 
 # Demand forecasting setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 This article describes how to set up demand forecasting.  

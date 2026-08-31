@@ -13,7 +13,7 @@ ms.custom:
 
 # Warehouse Management mobile app calculator
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Warehouse Management mobile app includes a built-in calculator that provides essential numerical entry and mathematical computation capabilities. It enables workers to perform calculations without leaving their current workflow.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Process over/under transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When the orders in a voyage are processed, the system expects the item quantity that is received in the final destination warehouse for consumption to match the quantity specified on the purchase order lines associated with the voyage. However, because the exact quantity on the purchase order lines isn't always received in the warehouse, the **Landed cost** module defines a set of rules that handle over-receiving and under-receiving of goods. These rules are especially important because the original purchase order has been invoiced and can no longer be modified.
 

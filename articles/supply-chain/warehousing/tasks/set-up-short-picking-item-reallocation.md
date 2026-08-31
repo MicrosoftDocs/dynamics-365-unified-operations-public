@@ -12,7 +12,7 @@ ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException
 
 # Set up short picking item reallocation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to enable warehouse workers to quickly find alternative locations isn’t sufficient inventory at the location they’re directed to.  
 

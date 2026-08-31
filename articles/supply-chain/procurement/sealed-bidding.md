@@ -14,7 +14,7 @@ ms.custom:
 
 # Sealed bidding for RFQs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sealed bidding keeps vendor bid replies secret until they're unsealed by purchasing personnel. All bids that are related to a request for quotation (RFQ) are first available to be unsealed upon bid expiry. Before a bid is unsealed, only users with dedicated user roles and who represent the vendor can access it.
 

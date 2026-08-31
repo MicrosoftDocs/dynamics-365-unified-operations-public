@@ -13,7 +13,7 @@ ms.custom:
 
 # Coverage settings
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Master scheduling uses coverage settings to calculate item requirements.
 

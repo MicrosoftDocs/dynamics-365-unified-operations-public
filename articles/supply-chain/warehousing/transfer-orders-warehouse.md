@@ -12,7 +12,7 @@ ms.search.form: InventLocation,CustVendTransportPoint2Point
 
 # Set up warehouses for transfer orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use warehouse levels to create a hierarchy that supports transfer orders between warehouses. With this setup, master scheduling calculates item requirements at the individual warehouse level and generates planned transfer orders from an assigned source warehouse to fulfill them.
 

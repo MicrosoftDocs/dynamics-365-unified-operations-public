@@ -12,7 +12,7 @@ ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 
 # Packing materials and fees
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Packing material fees are paid to a recycling company at specific intervals. An amount is paid, per unit of weight, for each material that a packing unit consists of. Although packing material fees are calculated and reported, no ledger transactions are posted, because the fees aren't considered taxes that must be paid to an authority.
 

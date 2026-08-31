@@ -14,7 +14,7 @@ ms.assetid: 7f05c031-a446-4168-8cce-03a6305f5c4d
 
 # Master planning and multisite functionality overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 

@@ -11,7 +11,7 @@ ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 
 # Deferred processing of manual inventory movement
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use deferred processing of manual inventory movement in Microsoft Dynamics 365 Supply Chain Management.
 

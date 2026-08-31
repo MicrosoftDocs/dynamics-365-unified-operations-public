@@ -12,7 +12,7 @@ ms.search.form: KanbanBoardTransferJob
 
 # Transfer materials with kanban jobs
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on executing a withdrawal kanban job to transfer materials. The demo data company used to create this procedure is USMF. This procedure is intended for the warehouse worker.
 

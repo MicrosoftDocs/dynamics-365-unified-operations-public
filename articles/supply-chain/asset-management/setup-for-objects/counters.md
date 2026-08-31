@@ -13,7 +13,7 @@ ms.custom:
 
 # Counters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The article explains how to create counter types in Asset Management. Counter types are used to make counter registrations on assets, for example, regarding number of production hours, or quantity produced on the asset. Asset types are related to the counter types. This means that a counter can only be used on an asset if the counter is set up on the asset type used on the asset.
 

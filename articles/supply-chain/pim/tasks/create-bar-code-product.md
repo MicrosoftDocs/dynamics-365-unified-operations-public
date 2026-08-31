@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a bar code for a product
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to manually create a bar code by using item number M0001 as an example. The demo data company for this procedure is USMF.
 

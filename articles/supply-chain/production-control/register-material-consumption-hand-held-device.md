@@ -12,7 +12,7 @@ ms.assetid: 75ee68e0-4b9f-4f4d-b286-f498e0eb73fa
 
 # Register material consumption using a mobile device
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes a workflow that enables registration of raw material consumption in production by using a handheld device.
 

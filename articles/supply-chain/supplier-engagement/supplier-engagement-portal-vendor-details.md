@@ -14,7 +14,7 @@ ms.custom:
 
 # Manage vendor details, local vendors, and users in the supplier portal (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

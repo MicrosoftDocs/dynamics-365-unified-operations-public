@@ -12,7 +12,7 @@ ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 
 # Configure fields for the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to define and configure the names and priorities of fields shown in the Warehouse Management mobile app.
 

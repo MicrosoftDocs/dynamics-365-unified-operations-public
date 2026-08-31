@@ -12,7 +12,7 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFi
 
 # Consolidate shipments released to the warehouse using automatic release of sales orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure. The orders will automatically be consolidated into shipments, based on rules that are defined as shipment consolidation policies.
 

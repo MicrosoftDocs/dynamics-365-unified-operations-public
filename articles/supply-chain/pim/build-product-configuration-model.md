@@ -13,7 +13,7 @@ ms.custom:
 
 # Product configuration overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In both business-to-business and business-to-consumer relationships, you often need to configure products to meet special requirements.
 

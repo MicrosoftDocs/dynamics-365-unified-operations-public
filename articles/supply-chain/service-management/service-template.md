@@ -12,7 +12,7 @@ ms.search.form: SMAAgreementTable
 
 # Service templates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can define a service agreement as a template and copy the lines of the template later into another service agreement or into a service order.
 

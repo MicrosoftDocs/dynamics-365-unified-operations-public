@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory journal approval workflows
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up and use inventory journal approval workflows for various types of physical inventory transactions, such as issues and receipts, inventory movements, bills of materials (BOMs), and the reconciliation of physical inventory. Inventory journal workflows help ensure that only approved inventory journals can be posted to transactions.
 

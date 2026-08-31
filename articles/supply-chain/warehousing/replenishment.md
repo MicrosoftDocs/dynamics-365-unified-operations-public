@@ -13,7 +13,7 @@ ms.custom:
 
 # Replenishment overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the replenishment strategies that are available for warehouses that use the functionality in Warehouse management. The information in this article doesn't apply to the warehousing solution that's available in Inventory management.
 

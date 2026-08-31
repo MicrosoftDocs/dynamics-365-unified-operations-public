@@ -12,7 +12,7 @@ ms.search.form:
 
 # Look up applicable prices and discounts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order. The procedure walks through a specific example, and you need follow the example using the USMF demo company in order to select the necessary values.
 

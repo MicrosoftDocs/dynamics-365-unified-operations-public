@@ -13,7 +13,7 @@ ms.custom:
 
 # Transfer physical inventory within the warehouse
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create and post an inventory transfer journal to register movement of an item from one location in a warehouse to another. Before you start, set up an inventory journal name for inventory transfers. You can follow this procedure in the [demo data](../../../fin-ops-core/dev-itpro/get-started/demo-data.md) company USMF using the example values that are shown, or you can use your own data if you have products and locations set up. A warehouse employee normally carries out these tasks.
 

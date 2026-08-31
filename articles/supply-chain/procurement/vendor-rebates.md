@@ -13,7 +13,7 @@ ms.custom:
 
 # Vendor rebates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Vendor rebates help companies better manage their supplier rebate programs by automating tasks required to administer, track, and claim earned rebates.
 

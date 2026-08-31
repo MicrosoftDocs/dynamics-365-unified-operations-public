@@ -13,7 +13,7 @@ ms.custom:
 
 # Enable and configure unannounced returns in Warehouse management only mode
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up Microsoft Dynamics 365 Supply Chain Management to handle unannounced returns when you use Warehouse management only mode. Most aspects of the unannounced returns process work in the same way, regardless of whether you use Warehouse management only mode. This article highlights the differences. Learn more about the unannounced returns process and how to set it up in [Receive unannounced sales returns](sales-returns-unannounced.md).
 

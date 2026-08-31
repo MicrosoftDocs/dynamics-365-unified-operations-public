@@ -12,7 +12,7 @@ ms.search.form:
 
 # Create and manage Customer portal users
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In the out-of-box implementation, users can't self-register for websites created by using the Customer portal. To sign in and use a website, users must be invited by the admin. Users are intentionally blocked from self-registering.
 

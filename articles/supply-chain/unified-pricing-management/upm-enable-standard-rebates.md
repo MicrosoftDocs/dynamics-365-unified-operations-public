@@ -13,7 +13,7 @@ ms.custom:
 
 # Enable non-attribute based rebate management deals in Unified pricing management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the Rebate management module to create contracts, deals, or agreements between a business and its customers or vendors, so that you can calculate rebates, deductions, and royalties. When you enable Unified pricing, you can determine rebates based on pricing attributes.
 

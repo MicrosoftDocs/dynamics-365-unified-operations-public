@@ -12,7 +12,7 @@ ms.search.form:
 
 # Monitor Warehouse Management usage and performance
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management emits telemetry data for various Warehouse Management activities and operations, including both the Supply Chain Management tenant and the Warehouse Management mobile app. Telemetry data helps provide insight into the activities and general health of your tenants and devices, so that you can diagnose problems and analyze operations that affect performance. Use [Application Insights](/azure/azure-monitor/app/app-insights-overview), an Azure service that's optimized for this purpose, to collect and process telemetry data.
 

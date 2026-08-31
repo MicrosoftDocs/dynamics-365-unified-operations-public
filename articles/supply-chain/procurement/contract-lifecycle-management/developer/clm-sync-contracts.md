@@ -13,7 +13,7 @@ ms.custom:
 
 # Synchronize contracts
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article describes the scenarios, data entities, and integration methods that are available for the synchronization of contracts and related purchase agreements from an external contract lifecycle management (CLM) system to Microsoft Dynamics 365 Supply Chain Management. The integration process establishes a workflow that transfers contracts and related purchase agreements from the CLM system to Supply Chain Management. The CLM system is assumed to function as the master system for managing contracts.
 

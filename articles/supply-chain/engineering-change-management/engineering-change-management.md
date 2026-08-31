@@ -12,7 +12,7 @@ ms.search.form:  EngChgEcmRequestSelection,EngChgEcmRequestProducts,EngChgEcmReq
 
 # Manage changes to engineering products
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Engineering change management provides structured processes for managing changes to engineering products. Use the *engineering change request* process to propose and request changes, and then use the *engineering change order* process to make those changes. Users can create engineering change requests or engineering change orders. A process exists for reviewing and approving them, assessing their impact on existing transactions, and following up on them.
 

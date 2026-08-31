@@ -13,7 +13,7 @@ ms.custom:
 
 # Shipping information setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up shipping information for the **Landed cost** module.
 

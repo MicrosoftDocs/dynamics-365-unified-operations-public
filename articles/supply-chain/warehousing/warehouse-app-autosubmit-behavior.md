@@ -13,7 +13,7 @@ ms.custom:
 
 # Data submission behavior in the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Warehouse Management mobile app supports two options for how it submits scanned data: *auto submit* and *manual submit*. This article explains the differences between these options and how to configure them.
 

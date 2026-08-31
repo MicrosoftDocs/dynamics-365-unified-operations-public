@@ -12,7 +12,7 @@ ms.search.form:
 
 # Replenishment strategies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The templates defined on the **Replenishment templates** page include wave demand replenishment template lines that you use to select how replenishment is done. Each line now includes a **Replenishment strategy** field.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Create service objects  
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Service objects are a customer's assets and products for which you can perform a service.
 

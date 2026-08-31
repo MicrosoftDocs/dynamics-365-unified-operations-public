@@ -12,7 +12,7 @@ ms.search.form: EntAssetCounter
 
 # Manual update of asset counters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 

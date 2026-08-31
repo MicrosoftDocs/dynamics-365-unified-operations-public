@@ -13,7 +13,7 @@ ms.custom:
 
 # Manually created work orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can create work orders manually in two places:
 

@@ -12,7 +12,7 @@ ms.search.form:
 
 # Work split
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Work split functionality lets you split large work IDs (that is, work orders that have several lines) into several smaller work IDs that you can then assign to multiple warehouse workers. In this way, the same work creation number can be picked simultaneously by several warehouse workers.
 

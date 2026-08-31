@@ -12,7 +12,7 @@ ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu
 
 # Set up a mobile device menu item for completing work of type Purchase order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to set up a Mobile device menu item. In this example, the menu item is used for performing work of type Purchase order. The work class that's associated with the menu item determines which work is valid. You can use this guide in demo data company USMF. This procedure is typically carried out by a warehouse manager.
 

@@ -13,7 +13,7 @@ ms.search.form: WHSLocationProfile,WHSLocation
 
 # Warehouse location status
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management includes several location fields that give you flexibility when you work with and maintain locations. You can include location statuses in the location directive query to provide better control over warehouse flow.
 

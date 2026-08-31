@@ -15,7 +15,7 @@ ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 
 # Commercial invoices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create and print a commercial invoice when you use transportation management processes (TMS).
 

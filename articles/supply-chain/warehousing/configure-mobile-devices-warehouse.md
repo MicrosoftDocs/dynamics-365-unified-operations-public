@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up mobile devices for warehouse work
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure the menu items that warehouse workers use to perform their work in the Warehouse Management mobile app.
 

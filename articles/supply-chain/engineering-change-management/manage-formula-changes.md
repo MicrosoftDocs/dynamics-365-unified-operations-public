@@ -11,7 +11,7 @@ ms.search.form:
 
 # Manage changes in formulas and their ingredients
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If you're using the process manufacturing capabilities of Microsoft Dynamics 365 Supply Chain Management, you can also use the related formula management capabilities to manage the following changes:
 

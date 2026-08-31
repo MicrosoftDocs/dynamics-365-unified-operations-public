@@ -13,7 +13,7 @@ ms.custom:
 
 # Copilot grid cursor
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Copilot grid cursor* offers detailed insights into a selected time-series cell's value, including its original value, manual adjustments, and full adjustment history. User comments are also shown, to help make the changes easier to understand.
 

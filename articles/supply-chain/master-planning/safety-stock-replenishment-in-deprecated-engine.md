@@ -13,7 +13,7 @@ ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTabl
 
 # Safety stock fulfillment with the deprecated master planning engine
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how safety stock functionality differs when you use the deprecated master planning engine compared to when you use Planning Optimization. For more information about safety stock, including information that applies to both planning engines, see [Safety stock fulfillment for items](safety-stock-replenishment.md).
 

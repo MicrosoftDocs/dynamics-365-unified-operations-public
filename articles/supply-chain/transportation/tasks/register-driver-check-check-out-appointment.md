@@ -13,7 +13,7 @@ ms.custom:
 
 # Register driver check-in and check-out for an appointment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to register driver check-in and check-out events, which represent drivers arriving to or leaving from a facility. The events can be registered using either the web client or the Warehouse Management mobile app. To learn how to add the required menu items to the Warehouse Management mobile app, go to [Set up mobile devices for warehouse work](/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse).
 

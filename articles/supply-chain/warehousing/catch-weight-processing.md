@@ -13,7 +13,7 @@ ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuil
 
 # Catch weight product processing with warehouse management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Prerequisites
 

@@ -11,7 +11,7 @@ ms.search.form: PCProductConfigurationModelListPage, PCProductConfigurationModel
 
 # Product configuration model calculations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create calculations for attributes in a product configuration model.
 

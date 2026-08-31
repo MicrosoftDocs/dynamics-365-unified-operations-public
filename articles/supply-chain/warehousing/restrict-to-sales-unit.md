@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Restrict to sales unit
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the *Restrict to sales unit* functionality and provides an example scenario.
 

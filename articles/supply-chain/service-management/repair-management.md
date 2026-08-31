@@ -15,7 +15,7 @@ ms.custom:
 
 # Repair management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 For repair management you can group problems systematically. This is to help with the suggestion of solutions that have been successful in the past.
 

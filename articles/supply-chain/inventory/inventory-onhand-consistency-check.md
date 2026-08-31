@@ -13,7 +13,7 @@ ms.custom:
 
 # Run on-hand consistency checks while Inventory Visibility is enabled
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management provides an on-hand consistency check tool that you can use to recalculate inventory on-hand list data based on inventory transactions for selected items or all items. The tool analyzes the inventory transactions (`InventTrans`) table and then reconstructs the `InventSum` and `WHSInventReserve` tables.
 

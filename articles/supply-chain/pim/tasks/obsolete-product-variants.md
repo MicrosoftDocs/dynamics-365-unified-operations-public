@@ -12,7 +12,7 @@ ms.search.form:
 
 # Find obsolete released products or variants
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to find obsolete released products or product variants and how to associate a [product lifecycle state](../product-lifecycle.md) to the obsolete products. It also explains how to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
 

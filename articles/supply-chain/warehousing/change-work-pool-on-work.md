@@ -12,7 +12,7 @@ ms.search.form:  WHSWorkPool,WHSWorkTemplateTable
 
 # Change work pool on work
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use work pools to organize work into groups. For example, you can create a work pool to classify work that occurs in a specific warehouse location.
 

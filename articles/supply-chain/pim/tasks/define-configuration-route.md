@@ -12,7 +12,7 @@ ms.search.form: BOMTable
 
 # Define configuration route
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented.
 

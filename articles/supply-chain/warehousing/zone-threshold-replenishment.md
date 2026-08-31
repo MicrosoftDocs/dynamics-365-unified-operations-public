@@ -12,7 +12,7 @@ ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSReq
 
 # Zone threshold replenishment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zone-based replenishment uses a minimum/maximum (min/max) [replenishment](replenishment.md) strategy, but it evaluates whole warehouse zones instead of just individual locations. Therefore, warehouse managers can more quickly learn when additional inventory is required in a picking zone.
 

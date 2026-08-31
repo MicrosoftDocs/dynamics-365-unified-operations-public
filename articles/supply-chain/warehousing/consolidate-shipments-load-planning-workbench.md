@@ -12,7 +12,7 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSOu
 
 # Consolidate shipments by releasing to warehouse from the outbound load planning workbench
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article presents a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.
 

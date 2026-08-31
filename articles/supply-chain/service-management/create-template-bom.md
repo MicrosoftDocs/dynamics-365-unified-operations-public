@@ -15,7 +15,7 @@ ms.custom:
 
 # Create a template BOM
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can create a template bill of materials (BOM) by using any of the following methods. For all methods, the **From date** and **To date** fields are optional and for information only.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory Visibility Add-in overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Inventory Visibility Add-in (also referred to as the *Inventory Visibility service*) provides an independent and highly scalable microservice that enables real-time on-hand inventory change postings and visibility tracking across all your data sources and channels. It provides a platform that lets you manage your global inventory by using functionality that includes (but isn't limited to) the following list:
 

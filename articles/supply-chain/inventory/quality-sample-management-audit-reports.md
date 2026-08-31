@@ -13,7 +13,7 @@ ms.custom:
 
 # Sample management reports and auditing
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes tools that support quality management through reporting, auditing, and procedural guidance. Reports provide insights into trends in test results for specific tests, helping you monitor quality performance over time. Audit trails track changes and actions for compliance and traceability. Sample procedures are step-by-step instructions that workers can access while processing samples through different lifecycle states, ensuring consistency in activities such as collection and testing.
 

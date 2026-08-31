@@ -12,7 +12,7 @@ ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEc
 
 # Engineering versions and engineering product categories
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Engineering products evolve during their product lifecycle for many reasons. For example, changes might be introduced to improve product serviceability, change a component because the supplier no longer offers it, respond to new insights, or fix mistakes in the initial design. Many reasons exist for storing these changes as part of an ongoing product without overwriting previous data. Here are some of these reasons:
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Update standard costs in a non-manufacturing environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides guidance for updating standard costs in a non-manufacturing environment.
 

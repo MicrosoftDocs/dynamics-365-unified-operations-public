@@ -13,7 +13,7 @@ ms.custom:
 
 # Service activities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Create service activities to define and maintain tasks in a service order. A service order can include one or more service activities to be performed by a worker.
 

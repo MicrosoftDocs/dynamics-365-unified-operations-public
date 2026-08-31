@@ -13,7 +13,7 @@ ms.custom:
 
 # Engineering change management overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Feature summary
 

@@ -13,7 +13,7 @@ ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, 
 
 # Containerization
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to automate the containerization of loads. Automated containerization creates containers and the picking work for shipments when a wave is processed.
 

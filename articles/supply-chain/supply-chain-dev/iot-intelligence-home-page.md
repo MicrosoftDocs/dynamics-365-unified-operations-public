@@ -15,7 +15,7 @@ ms.custom:
 
 # IoT Intelligence now replaced by Sensor Data Intelligence
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 The IoT Intelligence feature has been updated to version 2.0 and, at the same time, renamed to *Sensor Data Intelligence*. The new version is currently available as a preview feature for Supply Chain Management version 10.0.30 or later.
 

@@ -12,7 +12,7 @@ ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegra
 
 # Work with Warehouse management only mode in Supply Chain Management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
 

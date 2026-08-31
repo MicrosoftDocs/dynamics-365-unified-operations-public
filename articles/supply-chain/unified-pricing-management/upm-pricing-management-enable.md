@@ -12,7 +12,7 @@ ms.search.form:
 
 # Turn on the Unified pricing management module for your system
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Prerequisites
 

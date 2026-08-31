@@ -13,7 +13,7 @@ ms.custom:
 
 # Approvals Management mobile app FAQ and known issues
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides answers to several frequently asked questions (FAQ) about the Approvals Management mobile app. It also describes some known issues that affect the app and explains how to work around them.
 

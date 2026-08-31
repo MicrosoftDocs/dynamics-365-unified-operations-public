@@ -13,7 +13,7 @@ ms.custom:
 
 # Cost categories used in production routing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about cost categories that apply to manufacturing environments that use routing.
 

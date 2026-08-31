@@ -12,7 +12,7 @@ ms.search.form: EntAssetWorkOrderType
 
 # Work order types
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

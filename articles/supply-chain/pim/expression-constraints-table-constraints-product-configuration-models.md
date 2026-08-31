@@ -12,7 +12,7 @@ ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 
 # Expression constraints and table constraints in product configuration models
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
 

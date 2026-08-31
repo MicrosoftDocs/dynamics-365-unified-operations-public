@@ -15,7 +15,7 @@ ms.custom:
 
 # Create reason codes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Setup** > **Service orders** > **Stage reason codes**.
 

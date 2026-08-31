@@ -13,7 +13,7 @@ ms.custom:
 
 # Calculate prices and discounts without creating sales orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Unified pricing management in Dynamics 365 Supply Chain Management can calculate customer and volume-specific prices and discounts without requiring you to create a sales order. This capability is useful both when creating quotes and when integrating with external selling systems where you need to calculate prices without creating a sales order. To trigger pricing and discount calculations programmatically, you just need to provide product, quantity, and customer details.
 

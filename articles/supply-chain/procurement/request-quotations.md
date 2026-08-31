@@ -13,7 +13,7 @@ ms.custom:
 
 # Requests for quotation (RFQs) overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase. In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify. You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.
 

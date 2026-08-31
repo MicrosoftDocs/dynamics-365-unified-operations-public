@@ -13,7 +13,7 @@ ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecution
 
 # Inventory value reports
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Inventory value reports provide details about your inventory physical and financial quantities and amounts. You can view the reports in many different ways. For example, you can show totals or transactions, or filter by items or a time range. You can view cost of goods sold (COGS) values or work in process (WIP) values, and set other options.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Load templates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you create a new load, you can assign a load template. The load template contains information about equipment, and about measures such as the height, width, depth, and volume of the load.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Create purchase orders from sales orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Set options for how delivery mode and terms of delivery are set for purchase orders created from sales orders
 

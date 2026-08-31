@@ -12,7 +12,7 @@ ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelLi
 
 # Solver strategy for product configuration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can use the solver strategy to improve the performance of product configuration.
 

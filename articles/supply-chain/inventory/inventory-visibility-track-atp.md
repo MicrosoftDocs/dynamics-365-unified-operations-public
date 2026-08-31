@@ -13,7 +13,7 @@ ms.custom:
 
 # Track time-series inventory in Inventory Visibility
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Inventory Visibility service enables external systems to query Microsoft Dynamics 365 Supply Chain Management for inventory changes that will occur up to 180 days in the future. In this way, users who work in an external system can view future inventory availability details and make accurate projections about when orders can be delivered.
 

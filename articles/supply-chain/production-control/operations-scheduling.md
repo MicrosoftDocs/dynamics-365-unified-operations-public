@@ -15,7 +15,7 @@ ms.search.form: ProdSchedule
 
 # Operations scheduling
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 

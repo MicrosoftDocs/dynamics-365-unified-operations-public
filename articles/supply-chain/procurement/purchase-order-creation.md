@@ -13,7 +13,7 @@ ms.custom:
 
 # Create purchase orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the process and options when you manually create a purchase order.
 

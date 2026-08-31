@@ -13,7 +13,7 @@ ms.custom:
 
 # Clean up processed and canceled message processor messages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The [message processor](../message-processor/message-processor.md) is a framework that processes messages in the system, such as those related to inventory transactions, sales orders, and more. Over time, processed and canceled messages, that are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency.
 

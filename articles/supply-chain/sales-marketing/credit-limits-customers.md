@@ -12,7 +12,7 @@ ms.search.form: CustParameters
 
 # Credit limits for customers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Setting a credit limit lets you specify the maximum amount of credit to extend
 to your customers. If a credit limit is specified, it's checked automatically

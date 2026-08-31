@@ -12,7 +12,7 @@ ms.search.form: ReqCreatePlanWorkspace, ReqProcessList
 
 # Cancel a job that was created using the deprecated master planning engine
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 There are multiple options for canceling a job that was created using the deprecated master planning engine. For example, you might want to cancel a master planning job if it was started by mistake or is running longer than expected and you want to end it.
 

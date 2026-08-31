@@ -13,7 +13,7 @@ ms.custom:
 
 # Enable Inventory Visibility for Commerce
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up Inventory Visibility for Microsoft Dynamics 365 Commerce Scale Units (CSUs) so that e-commerce, point of sale (POS), or other applications on CSUs can use it for real-time inventory lookup, reservation, and adjustments.
 

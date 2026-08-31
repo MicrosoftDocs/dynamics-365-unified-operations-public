@@ -15,7 +15,7 @@ ms.custom:
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.37. This version has a build number of 10.0.1725 and is available on the following schedule:
 

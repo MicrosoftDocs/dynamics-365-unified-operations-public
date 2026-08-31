@@ -13,7 +13,7 @@ ms.search.form: SMAServiceObjectRelation
 
 # Delete a service BOM
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Service agreements** > **Service agreements**. Select the service agreement that you want to delete a service bill of materials (BOM) from.
 1. On the Action Pane, select **Service objects**.

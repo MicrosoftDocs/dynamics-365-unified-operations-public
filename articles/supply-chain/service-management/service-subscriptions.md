@@ -13,7 +13,7 @@ ms.custom:
 
 # Service subscriptions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Subscriptions are based on a time-and-materials project. You can create subscriptions from a project, from the **Service subscriptions** page, or by using a service subscription group.
 

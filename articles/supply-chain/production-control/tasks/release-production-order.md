@@ -12,7 +12,7 @@ ms.search.form: ProdTableListPage, ProdParmRelease, SrsReportViewerForm, ProdSet
 
 # Release a production order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to release a production order. The demo data company used to create this procedure is USMF. This is the fourth procedure out of seven which explains the production order lifecycle.
 

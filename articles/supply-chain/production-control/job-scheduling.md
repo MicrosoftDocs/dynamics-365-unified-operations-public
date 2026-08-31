@@ -13,7 +13,7 @@ ms.custom:
 
 # Job scheduling
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about job scheduling, which is a more detailed form of scheduling than operations scheduling. Use job scheduling to schedule individual jobs or shop orders, and to control the manufacturing environment.
 

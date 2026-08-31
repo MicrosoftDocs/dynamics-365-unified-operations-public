@@ -13,7 +13,7 @@ ms.custom:
 
 # View cost entries for a cost object
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to view cost entries for a cost object. This procedure is intended for the cost controller.
 

@@ -12,7 +12,7 @@ ms.search.form: EntAssetRequestTableCreate
 
 # Create maintenance requests
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

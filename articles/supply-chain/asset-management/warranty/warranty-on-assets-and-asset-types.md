@@ -12,7 +12,7 @@ ms.search.form:
 
 # Warranties on assets and asset types
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

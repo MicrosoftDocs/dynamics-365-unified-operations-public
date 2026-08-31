@@ -11,7 +11,7 @@ ms.search.form: ReqTransOverview
 
 # Net requirements and pegging information with the deprecated master planning engine
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you run master planning, it's important that you understand its output, how existing supply covers the demand, and why specific supply was generated. You can use the **Net requirements** page to better understand the calculated requirements that master planning produces.
 

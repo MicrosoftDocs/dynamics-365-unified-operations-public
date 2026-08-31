@@ -13,7 +13,7 @@ ms.custom:
 
 # Use establishments on sales order lines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about how to configure, default, and validate establishments on sales order lines to meet invoice compliance requirements.
 

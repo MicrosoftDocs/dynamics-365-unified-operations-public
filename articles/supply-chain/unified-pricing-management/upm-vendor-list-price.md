@@ -12,7 +12,7 @@ ms.search.form:
 
 # Vendor list prices and price adjustments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In some cases, Unified pricing management can derive a product's sales price from the vendor's list price or procurement price. For example, this functionality can be used for the trade of items in the retail and distribution industry, where products are procured from vendors and sold to customers.
 

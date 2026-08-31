@@ -12,7 +12,7 @@ ms.search.form: EngChgEcoResProductLifecycleStateChange
 
 # Product lifecycle states and transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As an engineering product goes through its lifecycle, you need to control which transactions are allowed for each lifecycle state. For example, don't add products that aren't in a mature state to a sales order. Alternatively, if a product is reaching its end-of-life state, you might want to control the inflow of that product.
 

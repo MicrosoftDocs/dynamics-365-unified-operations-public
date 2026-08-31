@@ -13,7 +13,7 @@ ms.search.form: SMADispatchBoard
 
 # Monitor service activities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Dispatch board** page provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.
 

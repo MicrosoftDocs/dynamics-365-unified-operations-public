@@ -11,7 +11,7 @@ ms.author: henrikan
 
 # Monitor a master planning run
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Use a Gantt chart to visualize master planning progress
 

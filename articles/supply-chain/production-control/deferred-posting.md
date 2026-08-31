@@ -13,7 +13,7 @@ ms.custom:
 
 # Make finished goods physically available before posting to journals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When a worker reports a manufactured item as finished, the system registers it as available for further physical processing (such as shipment or putaway). During this process, the system also posts one or more journals (such as the report as the finished journal, picking list journal, and route card journal). If you want to make your items physically available before all postings are processed, you can set up the system to defer the journal postings. A batch job manages deferred postings and processes them as system resources allow.
 

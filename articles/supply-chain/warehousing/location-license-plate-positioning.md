@@ -13,7 +13,7 @@ ms.search.form:  WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 
 # Location license plate positioning
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 License plate location positioning shows where a license plate is located in a multi-pallet location, such as a location that uses double-deep pallet racking.
 

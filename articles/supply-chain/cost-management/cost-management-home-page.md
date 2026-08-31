@@ -13,7 +13,7 @@ ms.custom:
 
 # Cost management home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [Cost management (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) helps you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It's the process of defining, managing, and reporting [Inventory accounting](cost-object.md) and [Manufacturing accounting](bom-calculations.md).
 

@@ -12,7 +12,7 @@ ms.search.form: WHSWorkCluster, WHSClusterProfile
 
 # System-directed cluster picking
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Cluster picking is a piece picking process that lets you pick items for multiple orders at the same time by clustering them into pick clusters. You then have to visit the pick location only one time. Typically, this functionality is used with small order picking or quantities that are less than case quantities.
 

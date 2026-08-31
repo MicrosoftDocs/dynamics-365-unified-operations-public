@@ -12,7 +12,7 @@ ms.search.form: SMADispatchBoard
 
 # Reverse changes in a dispatch board
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to reverse unsaved modifications that you make in a dispatch board. For example, you assign a worker to a service activity, save the information, and then later decide to assign a different worker to the service activity. You modify the worker in the dispatch board, and then, before saving the change, learn that the worker just assigned is not available. You can reverse the unsaved modification so that the original worker is reassigned to the service order.
 

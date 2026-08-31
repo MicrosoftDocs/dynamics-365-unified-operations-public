@@ -12,7 +12,7 @@ ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 
 # Cancel warehouse work for exception handling
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The cancel work functionality in Microsoft Dynamics 365 Supply Chain Management lets the admin user cancel specific warehouse work that is currently in progress, but that is blocked by the system or can't be completed because of exceptional circumstances. This functionality is an attractive and secure alternative to SQL corrective scripts that fix inconsistent data. However, whereas these scripts are typically requested from IT professionals, the cancel work functionality can be used by users in the company who have admin rights.
 

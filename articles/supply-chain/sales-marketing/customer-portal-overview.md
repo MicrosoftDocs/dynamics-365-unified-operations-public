@@ -13,7 +13,7 @@ ms.search.form:
 
 # Customer portal for Dynamics 365 Supply Chain Management overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## What is the Customer portal?
 

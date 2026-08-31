@@ -13,7 +13,7 @@ ms.custom:
 
 # Plan freight transportation routes with multiple stops
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the various elements that you use to plan transportation routes in Dynamics 365 Supply Chain Management.
 

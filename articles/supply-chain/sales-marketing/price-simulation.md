@@ -12,7 +12,7 @@ ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 
 # Price simulation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about price simulation for quotations. Price simulation helps you to evaluate the effect of deductions on the future sales price during the quotation process, before you commit to a specific price.
 

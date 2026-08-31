@@ -12,7 +12,7 @@ ms.search.form:
 
 # Export and download data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you've finished creating, analyzing, and editing a forecast, you can export it back to Microsoft Dynamics 365 Supply Chain Management. Alternatively, you can download the data as a comma-separated values (CSV) file that can be viewed in Excel.
 

@@ -12,7 +12,7 @@ ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 
 # Flex groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Flexible working hours let companies minimize payments for overtime by offering workers extra time off during periods when the workload is low. This feature is relevant, for example, in segments that experience seasonal changes in workload.
 

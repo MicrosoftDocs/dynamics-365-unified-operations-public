@@ -11,7 +11,7 @@ ms.search.form: CustTable, VendTable, EcoResProductListPage
 
 # Set up charges on intercompany orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can set up charges to be added to intercompany orders. When a charge is added to an intercompany sales order, it is automatically synchronized to the intercompany purchase order. This works both ways—from the intercompany sales order to the purchase order and the other way around.
 

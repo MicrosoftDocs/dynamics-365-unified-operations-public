@@ -13,7 +13,7 @@ ms.custom:
 
 # Update tracking for put away
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Update tracking for put away* periodic task is designed to be run as a nightly recurring batch. It identifies which voyages have received all inventory transactions, and which voyages don't have a value for the actual end date. It then sets the actual end date to the current date as required.
 

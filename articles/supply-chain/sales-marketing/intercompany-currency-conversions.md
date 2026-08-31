@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Intercompany currency conversions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When the currency code on the original sales order and the intercompany purchase order differ, the following fields are currency-converted if synchronization is enabled:
 

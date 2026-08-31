@@ -12,7 +12,7 @@ ms.search.form:  COOVendorCerts
 
 # Country of origin
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country/region of origin. The country of origin feature lets you link a product to its country/region of origin and keep track of its product certifications.
 

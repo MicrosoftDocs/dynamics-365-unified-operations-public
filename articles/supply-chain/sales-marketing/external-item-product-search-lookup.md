@@ -13,7 +13,7 @@ ms.custom:
 
 # Use external item identifiers to add products to orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you're adding an item to a sales order, you can search for it using its external item identifier or external description/name. You can define external item identifiers and descriptions for each customer, allowing you to use the customer's terminology when adding products to orders.
 

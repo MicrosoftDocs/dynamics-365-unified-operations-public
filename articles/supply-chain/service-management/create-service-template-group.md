@@ -15,7 +15,7 @@ ms.custom:
 
 # Create a service template group  
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use service template groups to sort and filter service templates.
 

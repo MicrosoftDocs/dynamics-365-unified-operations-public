@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a purchase order governed by budget
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use this procedure to create a purchase order that is checked for available budget.
 

@@ -13,7 +13,7 @@ ms.search.form:
 
 # Supply Chain Management troubleshooting and FAQs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Troubleshooting articles
 

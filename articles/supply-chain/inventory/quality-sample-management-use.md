@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage and process samples
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Sample management is a component of quality control in manufacturing. It ensures that products meet regulatory and quality standards. The processes described in this article serve as an example of how you can implement sample management. However, the specific details might vary depending on your company's branch, industry, and practices. By tailoring the sample management process to your organization's needs, you can maintain compliance, improve operational efficiency, and ensure product integrity.
 

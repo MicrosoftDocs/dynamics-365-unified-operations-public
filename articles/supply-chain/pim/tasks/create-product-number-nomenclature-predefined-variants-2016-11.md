@@ -12,7 +12,7 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResN
 
 # Create a product number nomenclature for predefined product variants
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group. The demo data company used to create this procedure is USMF. The new product number nomenclature is assigned to the Color and Size product dimension group. This task would typically be done by a product designer.
 

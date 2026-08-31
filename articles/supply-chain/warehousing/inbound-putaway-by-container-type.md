@@ -12,7 +12,7 @@ ms.search.form: WHSContainerType, WHSAllowedContainerTypeGroup, WHSLocationProfi
 
 # Manage inbound putaway based on container types
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you run warehouse receiving processes for various types of handling units (such as octabin pallets or Euro-pallets in different sizes), you can use container types to optimize the putaway process. Instead of using the item master's volumetric data to calculate the capacity of the putaway location, you can link each license plate registration to a container type that holds the physical dimension data. That data can then be used to select a valid putaway location.
 

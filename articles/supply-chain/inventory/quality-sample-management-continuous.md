@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up continuous sampling
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Prerequisites
 

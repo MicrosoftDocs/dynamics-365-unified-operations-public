@@ -12,7 +12,7 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 
 # Create sales price selection criteria
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create a sales price selection criterion for attribute-based sales price models. This procedure requires that at least one sales price model be available. This example uses the price model for the Speaker solution sales price model in the USMF demo data company. Typically, a product manager uses this procedure.
 

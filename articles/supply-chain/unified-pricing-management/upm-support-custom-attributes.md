@@ -13,7 +13,7 @@ ms.custom:
 
 # Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, orders, and order lines. It provides the following two components that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Keep supply for confirmed demand in Planning Optimization
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The *keep supply for confirmed demand* feature ensures that customer commitments provided by capable-to-promise (CTP) functionality are strictly preserved between planning runs. This functionality is applied across all BOM levels, meaning that all derived requirements originating from a confirmed sales line are preserved. Such requirements are referred to as *confirmed requirements*.
 

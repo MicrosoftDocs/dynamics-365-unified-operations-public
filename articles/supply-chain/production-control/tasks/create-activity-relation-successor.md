@@ -12,7 +12,7 @@ ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanA
 
 # Create activity relation - Successor
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The flow of activities in a lean production flow is documented through activity relations. This recording shows how to create an activity relation.
 

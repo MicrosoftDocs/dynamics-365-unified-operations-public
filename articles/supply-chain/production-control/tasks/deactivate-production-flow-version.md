@@ -12,7 +12,7 @@ ms.search.form: LeanProductionFlow
 
 # Deactivate a production flow version
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When an active production flow version is no longer needed, it can be deactivated. You should only use this option if all kanban rules and activities have ended and will not be activated again. Note that the expiry date of all kanban rules related to this production flow version will be updated with the current date and time. 
 

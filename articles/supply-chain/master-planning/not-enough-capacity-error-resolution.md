@@ -13,7 +13,7 @@ ms.custom:
 
 # Fix the "Not enough capacity could be found" scheduling engine error
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you run scheduling, you might receive the following error message:
 

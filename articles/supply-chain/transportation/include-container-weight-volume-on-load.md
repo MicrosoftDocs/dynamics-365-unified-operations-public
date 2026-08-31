@@ -13,7 +13,7 @@ ms.custom:
 
 # Include container weight and volume on load
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The functionality for including the container weight and volume on a load provides a clear representation of the total weight and volume of containers and items in a load.
 

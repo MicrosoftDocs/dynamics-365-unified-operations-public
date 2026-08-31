@@ -12,7 +12,7 @@ ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, In
 
 # Enter sales agreements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. You can run this procedure in demo data company USMF or on your own data.
 

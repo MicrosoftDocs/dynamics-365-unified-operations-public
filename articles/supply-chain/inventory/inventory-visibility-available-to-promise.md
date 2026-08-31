@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory Visibility on-hand change schedules and ATP
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up the *On-hand change schedule* feature to schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that's available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability.
 

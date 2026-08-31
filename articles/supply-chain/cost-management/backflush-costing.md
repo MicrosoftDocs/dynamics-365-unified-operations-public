@@ -13,7 +13,7 @@ ms.custom:
 
 # Backflush costing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article introduces the concept of backflush costing that is used for Lean manufacturing.
 

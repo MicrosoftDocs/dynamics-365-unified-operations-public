@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Set up parameters to post an intercompany order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When an intercompany customer invoice is posted, you can set it up to post both the intercompany purchase order and the original customer invoice automatically.
 

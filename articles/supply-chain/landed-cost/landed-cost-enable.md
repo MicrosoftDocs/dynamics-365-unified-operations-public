@@ -13,7 +13,7 @@ ms.custom:
 
 # Turn on the Landed cost module and related features for your system
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Landed cost** module itself is always turned on and can't be turned off, but several of its add-on features are optional. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of each feature and turn it on as needed. In the **Feature management** workspace in Microsoft Dynamics 365 Supply Chain Management, every feature in this table is listed under the **Transportation management** module. Preview features are marked as such; other features are generally available.
 

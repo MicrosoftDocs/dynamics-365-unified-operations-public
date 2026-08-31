@@ -15,7 +15,7 @@ ms.custom:
 
 # Service objects overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Service objects are a customer's assets and products for which you can perform a service. Depending on the type of service you provide, objects can be tangible or intangible:
 

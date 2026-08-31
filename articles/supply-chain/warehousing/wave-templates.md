@@ -13,7 +13,7 @@ ms.custom:
 
 # Wave templates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up the criteria that determine whether waves are processed manually or automatically, and the work that is generated for a warehouse when a wave is processed. You specify the criteria by setting up wave templates and queries that match a wave with released lines in sales orders, production orders, and kanbans.
 

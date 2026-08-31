@@ -12,7 +12,7 @@ ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
 
 # Order entry deadlines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about order entry deadlines. An order entry deadline is a cut-off time that determines whether a customer order is treated (and fulfilled) as if it was received on the current day or the next day.
 

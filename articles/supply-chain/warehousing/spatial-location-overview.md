@@ -14,7 +14,7 @@ ms.custom:
 
 # Warehouse spatial location overview (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: preview until further notice -->
 

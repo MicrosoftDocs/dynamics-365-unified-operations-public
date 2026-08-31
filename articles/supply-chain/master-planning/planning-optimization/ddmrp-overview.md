@@ -13,7 +13,7 @@ ms.custom:
 
 # Demand Driven Material Requirements Planning (DDMRP) overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 For years, companies have used material requirements planning (MRP) as a system for calculating the materials and components that are required to manufacture a product. However, supply chains have changed. Parts have longer lead times because companies increasingly source them from overseas. Therefore, many companies experience stockouts or overstocks because they don't know how much inventory to stock. There's also more market fluctuation (sometimes inaccurately forecast), and customers are demanding products at a short lead time. Therefore, there are supply chain shortages all over the world. In addition, MRP tools often give planners thousands of actions to do. Therefore, it's hard to know what to focus on. Often, the solution to many of these issues is to switch to Demand Driven Material Requirements Planning (DDMRP).
 

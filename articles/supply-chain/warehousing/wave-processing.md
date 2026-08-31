@@ -13,7 +13,7 @@ ms.search.form:  WHSWaveTemplateTable, WHSParameters, whswavetablecreatenew, WHS
 
 # Wave creation and processing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order. You can create waves for the following types of orders:
 

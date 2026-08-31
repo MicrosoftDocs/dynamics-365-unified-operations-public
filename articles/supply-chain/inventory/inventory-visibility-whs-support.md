@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory Visibility support for WMS items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes Inventory Visibility support for items that are enabled for warehouse management processes (WMS). The feature that adds this capability to Inventory Visibility is named *Advanced WMS*.
 

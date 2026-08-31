@@ -13,7 +13,7 @@ ms.custom:
 
 # Use financial tags in procurement documents
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [Financial tags](../../finance/general-ledger/financial-tag.md) let you attach reporting context to procurement transactions. They help you track the business purpose behind purchases throughout the procurement lifecycle. For example, a company could tag all purchases related to an employee onboarding initiative, making it easy to find and analyze the associated spending later—without relying on document descriptions or manual tracking.
 

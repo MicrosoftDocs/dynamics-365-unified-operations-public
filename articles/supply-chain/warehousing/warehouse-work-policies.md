@@ -13,7 +13,7 @@ ms.search.form: WHSWorkPolicy
 
 # Work policies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up the system and the Warehouse Management mobile app to support work policies. Use this functionality to quickly register inventory without creating putaway work when you receive purchase or transfer orders, or when you complete manufacturing processes. This article provides general information. For detailed information related to license plate receiving, see [License plate receiving via the Warehouse Management mobile app](warehousing-mobile-device-app-license-plate-receiving.md).
 

@@ -13,7 +13,7 @@ ms.search.form:
 
 # Register goods shipped to customers (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In accordance with Russian legislation, a company must register the shipment of goods when goods are transported to a customer. When goods are shipped, ownership of the goods is transferred from the seller to the buyer. This transfer of ownership is also referred to as the passing of property rights.
 

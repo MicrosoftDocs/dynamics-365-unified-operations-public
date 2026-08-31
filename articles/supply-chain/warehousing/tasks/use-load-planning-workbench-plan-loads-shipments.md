@@ -13,7 +13,7 @@ ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanni
 
 # Plan loads and shipments by using the outbound load planning workbench
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to use the outbound load planning workbench to create a load for a sales order. As a prerequisite, create the sales order first. This procedure is part of the daily work for the transportation coordinator. The demo data company used to create this procedure is USMF.
 

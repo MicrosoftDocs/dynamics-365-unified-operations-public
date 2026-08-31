@@ -13,7 +13,7 @@ ms.custom:
 
 # Run an on-hand consistency check
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The on-hand consistency check is a corruption-recovery tool that rebuilds the on-hand inventory tables (`InventSum` and, for warehouse management items, `WHSInventReserve`) from the inventory transactions table (`InventTrans`). Use it when you have confirmed on-hand data corruption—not as a periodic maintenance task.
 

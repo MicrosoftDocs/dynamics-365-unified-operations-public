@@ -13,7 +13,7 @@ ms.custom:
 
 # Maintenance rounds
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Asset Management, you can create maintenance rounds for various assets, on which you need to carry out a similar task at regular intervals. For example, lubrication jobs or safety inspection jobs that need to be carried out on several machines within the same intervals. First step is to create a maintenance round, including assets that require the same form of maintenance job. Next, you schedule the maintenance rounds. When you have completed the maintenance rounds schedule, you can see all the job records relating to the round in the **All maintenance schedule** and **Open maintenance schedule lines**.
 

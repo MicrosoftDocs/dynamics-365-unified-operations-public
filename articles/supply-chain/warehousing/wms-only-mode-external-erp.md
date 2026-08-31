@@ -12,7 +12,7 @@ ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace,
 
 # Warehouse management only mode with external ERP systems
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to perform day-to-day warehousing tasks when you use Warehouse only mode to integrate with an external enterprise resource planning (ERP) system.
 

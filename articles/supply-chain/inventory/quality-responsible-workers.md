@@ -12,7 +12,7 @@ ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 
 # Workers responsible for approving nonconformances
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure workers that are responsible for approving nonconformances.
 

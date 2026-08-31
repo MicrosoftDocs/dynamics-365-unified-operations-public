@@ -12,7 +12,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 # Improve master planning performance
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the various options that can help you improve the performance of master planning or troubleshoot issues. It includes information about parameters and settings, as well as recommended configurations and actions. Also included is a summary of all the important parameters that you should consider when you have long-running master planning jobs.
 

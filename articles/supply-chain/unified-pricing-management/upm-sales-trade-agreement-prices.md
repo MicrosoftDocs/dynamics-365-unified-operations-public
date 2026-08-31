@@ -12,7 +12,7 @@ ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, P
 
 # Sales trade agreement prices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Sales trade agreement prices* are negotiated prices for specific products that apply to specific customers. For sales where a sales trade agreement applies, this price takes priority over the item base price.
 

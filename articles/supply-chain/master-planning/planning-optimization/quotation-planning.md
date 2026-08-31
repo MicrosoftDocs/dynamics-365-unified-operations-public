@@ -11,7 +11,7 @@ ms.search.form: SalesQuotationListPage, ReqPlanSched, SalesQuotationTable, smmOp
 
 # Plan based on quotations and RFQs
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Quotations and requests for quotations (RFQs) represent possible or even likely future orders. Therefore, it makes sense to consider them during master planning, so that extra supply can be planned based on existing RFQs and the likelihood that each quotation will become an actual order. This article describes how to set up master planning to consider quotations and RFQs when it generates planned orders.
 

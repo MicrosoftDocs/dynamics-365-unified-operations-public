@@ -13,7 +13,7 @@ ms.custom:
 
 # Transportation management number sequence
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the **Number sequences** page in the transportation management module to set up various pro numbers. Carriers use pro numbers to organize and track the progress of each shipment.
 

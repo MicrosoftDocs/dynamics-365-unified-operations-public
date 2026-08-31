@@ -13,7 +13,7 @@ ms.custom:
 
 # Service intervals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The service agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders automatically.
 

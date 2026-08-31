@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up rate masters, rate bases, and break masters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up rates that are returned when using the rate route workbench as part of load planning or building. Rate engines use the configuration of rating profiles, rate masters, rate base assignments, rate bases, and break masters to determine the query structure. The logistics manager usually sets up these options based on the contracts signed with the carriers.
 

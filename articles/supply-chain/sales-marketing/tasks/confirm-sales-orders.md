@@ -13,7 +13,7 @@ ms.custom:
 
 # Confirm sales orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure demonstrates how to confirm sales orders. You see how to confirm a single order, and how to confirm multiple orders at once. A sales order processor typically carries out these tasks.
 

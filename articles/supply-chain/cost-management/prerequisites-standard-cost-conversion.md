@@ -13,7 +13,7 @@ ms.custom:
 
 # Prerequisites for a standard cost conversion
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses tasks to perform before you run a standard cost conversion.
 

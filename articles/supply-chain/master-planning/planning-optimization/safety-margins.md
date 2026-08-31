@@ -13,7 +13,7 @@ ms.custom:
 
 # Safety margins
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how safety margins work during master planning.
 

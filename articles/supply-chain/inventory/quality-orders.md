@@ -13,7 +13,7 @@ ms.custom:
 
 # Quality orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results in Microsoft Dynamics 365 Supply Chain Management.
 

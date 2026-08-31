@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up disposition codes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can set up disposition codes to specify how to process an item returned by a customer. For example, create a disposition code named *Repair and return* to indicate that the returned item should be repaired and then returned to the customer. For more examples of disposition codes that are typically used for items returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).
 

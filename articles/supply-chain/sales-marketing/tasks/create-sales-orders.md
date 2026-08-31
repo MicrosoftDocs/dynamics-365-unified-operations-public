@@ -13,7 +13,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmF
 
 # Create sales orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create a sales order. You can use the step-by-step process in demo data company *USMF*. Typically, a sales order processor creates sales orders.
 

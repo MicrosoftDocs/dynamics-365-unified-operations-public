@@ -13,7 +13,7 @@ ms.custom:
 
 # Material substitution in manufacturing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to substitute materials during the production process. There are three methods for doing so:
 

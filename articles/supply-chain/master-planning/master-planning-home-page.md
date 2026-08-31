@@ -13,7 +13,7 @@ ms.custom:
 
 # Master planning home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 At its core, master planning helps you determine and balance the future need for raw materials and capacity to meet your goals. Master planning assesses the following questions:
 

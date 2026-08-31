@@ -13,7 +13,7 @@ ms.custom:
 
 # Create an asset
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create an asset in Asset Management.
 

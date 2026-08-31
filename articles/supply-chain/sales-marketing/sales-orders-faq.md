@@ -13,7 +13,7 @@ ms.custom:
  
 # Sales order FAQs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article addresses frequently asked questions that come up when working with sales orders in Dynamics 365 Supply Chain Management.
 

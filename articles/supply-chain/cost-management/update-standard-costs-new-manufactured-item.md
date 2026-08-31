@@ -13,7 +13,7 @@ ms.custom:
 
 # Update standard costs for a new manufactured item
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides guidance for updating standard costs for a new manufactured item.
 

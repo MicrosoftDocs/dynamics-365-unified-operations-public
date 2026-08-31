@@ -13,7 +13,7 @@ ms.custom:
 
 # Transportation management modes and methods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The transportation management  mode represents the type of transport that the carrier uses for freight deliveries, such as less than load (LTL), truckload (TL), or parcel. The transportation method represents the form of transport that the carrier uses for freight deliveries, such as air, ground, ocean, or rail.
 

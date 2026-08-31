@@ -12,7 +12,7 @@ ms.assetid: fe08c2e6-9cc5-4e34-bbb2-cd07843403b5
 
 # Explosion of a BOM version
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.
 

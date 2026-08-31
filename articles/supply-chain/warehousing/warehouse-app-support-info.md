@@ -12,7 +12,7 @@ ms.custom:
 
 # Support policy for the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the support policies for the Warehouse Management mobile app. The policy that applies to you depends on the version you are running:
 

@@ -12,7 +12,7 @@ ms.search.form: EntAssetCostControlFault
 
 # Asset fault cost control
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Product receipt against purchase orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the various options for registering products as received.
 

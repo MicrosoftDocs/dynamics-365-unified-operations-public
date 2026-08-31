@@ -12,7 +12,7 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 
 # Transfer data for product models
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Exporting data for a product configuration model requires that you have at least one product model available. This procedure uses the High end speaker model in the demo company USMF to show you how to export data for this model.
 

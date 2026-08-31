@@ -13,7 +13,7 @@ ms.custom:
 
 # Asset Management mobile app FAQs and known issues
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 [!INCLUDE [asset-management-sample-app](../../includes/asset-management-sample-app.md)]
 

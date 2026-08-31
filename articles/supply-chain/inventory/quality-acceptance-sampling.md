@@ -13,7 +13,7 @@ ms.custom:
 
 # Acceptance sampling
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 *Acceptance sampling* is a quality control method that uses statistical analysis to evaluate a batch or lot of products. Instead of checking every item, you examine a subset of items to determine whether the entire lot meets predefined quality standards. This approach is widely used in manufacturing and supply chain operations to balance inspection effort with quality assurance.
 

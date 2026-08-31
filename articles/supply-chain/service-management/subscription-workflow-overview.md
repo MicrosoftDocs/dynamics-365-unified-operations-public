@@ -12,7 +12,7 @@ ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 
 # Subscription workflow overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You are the subscriptions administrator for a light company that offers subscriptions for lighting rig maintenance. A customer contacts your company to purchase a yearly subscription for lighting rig maintenance.
 

@@ -12,7 +12,7 @@ ms.search.form:
 
 # Create work orders from maintenance requests
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

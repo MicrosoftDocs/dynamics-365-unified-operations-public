@@ -13,7 +13,7 @@ ms.custom:
 
 # Item substitution for formulas and bills of materials
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use substitute materials during planning for items that use formulas or bills of materials (BOMs). When you set up item substitution for a formula or BOM, you can specify a group of items that can serve as substitutes for a particular material. You can also specify the priority of each substitute material in the group. When master planning runs, it uses the preferred material if it's available. If the preferred material isn't available, master planning uses the substitute material that has the highest priority and is available. If no substitute materials are available, master planning creates a planned order for the preferred material.
 

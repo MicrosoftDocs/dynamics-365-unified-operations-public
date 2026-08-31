@@ -11,7 +11,7 @@ ms.search.form: WHSRFMenuItem, WHSOutboundLoadPlanningWorkbench
 
 # Anchoring
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides details about the anchoring process. It describes the configuration that is required and the logic that is run when a warehouse worker changes either the staging location or the loading location.
 

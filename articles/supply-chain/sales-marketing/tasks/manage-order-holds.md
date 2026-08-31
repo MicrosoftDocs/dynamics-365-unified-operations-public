@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage order holds
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds. An order might be placed on hold for various reasons. For example, you might hold an order until a customer address or payment method can be verified or until a manager can review the customer's credit limit. While the order on hold, it can't be processed by the warehouse for shipping.
 

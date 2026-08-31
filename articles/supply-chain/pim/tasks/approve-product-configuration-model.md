@@ -12,7 +12,7 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 
 # Approve a product configuration model
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Running this procedure requires that at least one product configuration model is available. This procedure uses the High end speaker model in the demo data company USMF. Note that this model has already been approved, but the procedure walks you through the entire process.
 

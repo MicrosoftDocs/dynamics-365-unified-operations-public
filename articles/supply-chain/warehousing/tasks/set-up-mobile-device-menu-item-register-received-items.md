@@ -12,7 +12,7 @@ ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 
 # Set up a mobile device menu item to register received items
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article focuses on the setup of a mobile device menu item. This menu item is used for registration of the receipt of items ordered via purchase orders. 
 

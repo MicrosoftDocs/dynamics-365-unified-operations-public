@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory tag counting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory.
 

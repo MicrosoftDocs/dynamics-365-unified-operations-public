@@ -16,7 +16,7 @@ ms.custom:
 # Global Inventory Accounting ledger
 
 [!INCLUDE [global-inventory-accounting-deprecation-banner](../includes/global-inventory-accounting-deprecation-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Global Inventory Accounting has its own set of ledgers. Each time an inventory-related transaction is processed for a relevant legal entity, the system can account for that transaction in any number of Global Inventory Accounting ledgers, as required.
 

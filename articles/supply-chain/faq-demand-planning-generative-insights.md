@@ -14,7 +14,7 @@ ms.collection:
 
 # Responsible AI FAQ for Generative insights for Demand planning (production-ready preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->

@@ -11,7 +11,7 @@ ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
 
 # Check intercompany order price discrepancies
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can use this procedure to check for price discrepancies on intercompany orders.
 

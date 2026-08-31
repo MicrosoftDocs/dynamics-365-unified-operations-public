@@ -11,7 +11,7 @@ ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup
 
 # Replenishment methods and quantity modification
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about replenishment methods. It also explains how the multiple order quantity for a product affects the result.
 

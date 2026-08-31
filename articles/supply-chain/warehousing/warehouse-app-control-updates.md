@@ -13,7 +13,7 @@ ms.custom:
 
 # Warehouse Management mobile app release schedule
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft doesn't force version upgrades for the Warehouse Management mobile app. You can decide when a new version reaches each of your devices, and you can stay on your preferred version for as long as you like. However, Microsoft normally supports each release for one year. Version 4 and later releases follow a rolling 12-month support window, with each release eligible for support cases only while its publication date falls within the previous 12 months. For details, see [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy). Therefore, you should plan for at least one update per device per year.
 

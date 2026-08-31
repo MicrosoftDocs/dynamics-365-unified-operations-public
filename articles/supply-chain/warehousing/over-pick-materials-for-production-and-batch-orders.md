@@ -13,7 +13,7 @@ ms.custom:
 
 # Over-pick materials for production and batch orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how warehouse managers can configure Microsoft Dynamics 365 Supply Chain Management to allow and set limits on over-picking of raw materials. Over-picking occurs when a worker picks slightly more material than is specified for a production order. Over-picking can be relevant in situations where it's more efficient for workers to over-pick by rounding up to the nearest packing unit, or where it's more efficient to pick the full content of nearly empty locations to free up space.
 

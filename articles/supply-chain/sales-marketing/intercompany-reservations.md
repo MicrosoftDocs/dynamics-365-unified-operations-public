@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Intercompany reservations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you create an intercompany purchase order line directly from an original sales order line, the two lines are marked against each other. This marking controls the reservation, cost, and intercompany chain. You can view the marking on the sales order line by selecting **Inventory** > **Marking**, and then closing the dialog box that is displayed.
 

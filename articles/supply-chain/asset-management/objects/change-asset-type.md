@@ -12,7 +12,7 @@ ms.search.form:
 
 # Change the asset type of existing assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to change the [asset type](../setup-for-objects/object-types.md) of an existing asset.
 

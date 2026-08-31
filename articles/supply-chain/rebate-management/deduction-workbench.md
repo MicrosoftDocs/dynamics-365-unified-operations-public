@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage deductions using the deduction workbench
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use the deduction workbench to process customer payments that include deductions.
 

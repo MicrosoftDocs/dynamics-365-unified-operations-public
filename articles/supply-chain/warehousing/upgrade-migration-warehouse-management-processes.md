@@ -12,7 +12,7 @@ ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventT
 
 # Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the *WMSII* module, to Dynamics 365 Supply Chain Management.
 

@@ -12,7 +12,7 @@ ms.search.form: WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSPar
 
 # Create or modify an inbound load
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create or modify an inbound load. You can use a purchase order or an inbound shipment order to create an inbound load either automatically or manually. You can also modify an existing inbound load by adding more lines or updating the quantities, for example.
 

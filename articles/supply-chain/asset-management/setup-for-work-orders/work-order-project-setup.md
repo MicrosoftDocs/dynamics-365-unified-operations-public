@@ -13,7 +13,7 @@ ms.custom:
 
 # Work order project setup
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In the **Asset management** module, a project relation is required for every work order job. The project that is associated with a work order job lets you track costs on various projects that are related to Asset Management, such as internal maintenance projects, service management projects, and investment projects.
 

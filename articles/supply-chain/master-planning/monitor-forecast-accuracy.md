@@ -12,7 +12,7 @@ ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
 
 # Monitor forecast accuracy
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 This article describes the types of forecast accuracy that Microsoft Dynamics 365 Supply Chain Management calculates, and explains how you can view the accuracy values.

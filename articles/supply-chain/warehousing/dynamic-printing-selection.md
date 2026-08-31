@@ -12,7 +12,7 @@ ms.search.form: WHSLicensePlateLabel, WHSWorkUserdefaultLabelPrinterTable, WHSLo
 
 # Dynamic printer selection
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up your system to dynamically select a printer when printing [license plate labels](print-license-plate-labels-using-label-layouts.md) and [container labels](print-container-labels.md).
 

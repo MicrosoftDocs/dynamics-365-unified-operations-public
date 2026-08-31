@@ -13,7 +13,7 @@ ms.custom:
 
 # GS1 bar codes and QR codes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Warehouse workers often complete several tasks when they use a mobile device scanner to register movements of an item, pallet, or container. These tasks can include both scanning bar codes and manually entering information on the mobile device. The bar codes use a company-specific format that are defined and managed by using Microsoft Dynamics 365 Supply Chain Management.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Process guide framework
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article provides information about the process guide framework for developers who are extending the warehouse mobile processes in X++. The warehouse mobile processes are extensible because the processes are broken into small steps. The business logic and user interface building of each step is extracted into individual classes, which allows for extensibility.
 

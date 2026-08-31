@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up price groups for Unified pricing management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To create and manage [price groups](upm-price-groups-overview.md) that you can associate with attributes, follow these steps:
 

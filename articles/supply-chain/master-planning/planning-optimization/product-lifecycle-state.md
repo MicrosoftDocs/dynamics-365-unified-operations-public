@@ -12,7 +12,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 # Exclude products that have specific product lifecycle states
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Released products and released product versions include a **Product lifecycle state** field. This field lets you control, among other things, which products are included during master planning. You can add, remove, and edit lifecycle states as required by going to **Product information management \> Setup \> Product lifecycle state**. For each product lifecycle state, set the **Is active for planning** option to *Yes* if products that have that state should be included during master planning. When the option is set to *No*, the associated products and variants will be excluded from all master planning and all calculations at the bill of materials (BOM) level.
 

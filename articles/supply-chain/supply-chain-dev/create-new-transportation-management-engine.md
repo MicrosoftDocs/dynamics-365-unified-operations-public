@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a new transportation management engine
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes how to create a new transportation management engine in Dynamics 365 Supply Chain Management.

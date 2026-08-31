@@ -12,7 +12,7 @@ ms.search.form:
 
 # Work order report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 You can generate a work order report that shows detailed information about one or more work orders that you select.

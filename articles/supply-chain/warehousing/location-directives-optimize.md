@@ -12,7 +12,7 @@ ms.search.form:
 
 # Optimize location directive queries
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Because of recent improvements to the on-hand inventory data model, location directive queries can now run much faster than before. However, if you've been running Microsoft Dynamics 365 Supply Chain Management for a while, you might have many older location directives that still use queries that were designed for the old data model. The *Optimize location directive queries* tool identifies location directive queries that use a suboptimal query pattern and transforms them so that they use the optimal querying approach that the new data model enables.
 

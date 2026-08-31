@@ -13,7 +13,7 @@ ms.custom:
 
 # Approved customer lists
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You might sell products and services on a recurring basis to specific customers or groups of customers who are preapproved for these purchases based on their previous and ongoing business relationship. By preapproving customers, you expedite the sales order process and shipment of the product. In addition, you ensure that the product is sold only to customers who are authorized to buy it and prevent it from being sold to other customers.
 

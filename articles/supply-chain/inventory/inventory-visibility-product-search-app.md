@@ -13,7 +13,7 @@ ms.custom:
 
 # Search for products using the Inventory Visibility app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. It provides the following benefits:
 

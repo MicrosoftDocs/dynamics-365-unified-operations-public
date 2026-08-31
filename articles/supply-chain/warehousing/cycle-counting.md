@@ -13,7 +13,7 @@ ms.custom:
 
 # Cycle counting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can use cycle counting with the warehousing solution that's available in Warehouse management. This article doesn't apply to the warehousing solution that's available in Inventory management.
 

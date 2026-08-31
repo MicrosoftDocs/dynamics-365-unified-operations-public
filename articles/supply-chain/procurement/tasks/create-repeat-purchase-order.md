@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a repeat purchase order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO. You can create repeat orders by using two methods. Use the actions available at the document level from the Action Pane, or use the line detail actions. The document level actions are intended for creating a new purchase order by adding lines and header information from another order, while the line details action is mainly for adding lines to an existing order. You can use the example shown in this guide in the USMF demo data company. A purchasing agent typically carries out this task.
 

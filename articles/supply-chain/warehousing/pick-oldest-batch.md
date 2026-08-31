@@ -13,7 +13,7 @@ ms.custom:
 
 # Pick oldest batch on a mobile device
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can configure mobile device menu items to allow workers to pick any batch, or to force or warn them to pick the oldest batch in their current location. The option effects pick work for batch below items.
 

@@ -13,7 +13,7 @@ ms.search.form: SMASubscriptionTable
 
 # Reduction days example
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You have created a subscription transaction for a customer's maintenance subscription, as described in the following table.
 

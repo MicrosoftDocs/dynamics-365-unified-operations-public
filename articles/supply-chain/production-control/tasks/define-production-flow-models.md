@@ -12,7 +12,7 @@ ms.search.form: LeanProductionFlowModel
 
 # Define production flow models
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Production flow models describe how the capacity of lean manufacturing work cells is calculated and maintained. Therefore the definition of a production flow model is a prerequisite of the definition of work cells. The demo data company used to create this procedure is USMF.
 

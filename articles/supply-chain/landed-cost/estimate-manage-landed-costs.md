@@ -13,7 +13,7 @@ ms.custom:
 
 # Estimate and manage landed costs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The system uses your [auto cost setup](auto-cost-setup.md) to estimate your landed cost. You can also define various scenarios to deliver a more accurate estimate. The system stores these scenarios so you can review them later and compare them to actual costs on a report. You can also update the item price.
 

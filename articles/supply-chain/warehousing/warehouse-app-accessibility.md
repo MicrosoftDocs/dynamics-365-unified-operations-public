@@ -12,7 +12,7 @@ ms.search.form:
 
 # Warehouse Management mobile app accessibility features
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the accessibility features of the Warehouse Management mobile app. Workers can configure these settings locally on the device through its **Settings**. Administrators can also set defaults remotely as described in [Mobile device user settings](mobile-device-user-settings.md).
 

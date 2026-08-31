@@ -12,7 +12,7 @@ ms.search.form:  WHSWorkLocationChange, WHSWorkLineDetails
 
 # Work line details
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Work line details** page shows a comprehensive, sortable, and filterable list of the individual work lines in your system. It provides a complete overview of work that is being planned and executed in the warehouse. You can easily switch between viewing all work lines and viewing only open work lines. Details that are provided for each line include the work status, item number, location, work quantity, load ID, and shipment ID.
 

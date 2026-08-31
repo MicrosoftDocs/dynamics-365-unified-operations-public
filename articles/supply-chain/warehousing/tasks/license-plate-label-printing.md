@@ -12,7 +12,7 @@ ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPag
 
 # Enable license plate label printing
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. You can run this procedure in demo data company USMF. If you're run it using your own data, you need to have a number sequence set up for license plates. You need to set up a label printer before you begin this task. Go to Organization administration > Setup > Network printers. On the Action Pane, click Options, and then click the Download document routing agent installer button. Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Synchronize master data
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article describes the data entities and integration methods that you can use to sync master data between Microsoft Dynamics 365 Supply Chain Management and an external contract lifecycle management (CLM) system. Master data is essential for the CLM system to integrate contracts and related purchase agreements into Supply Chain Management. Supply Chain Management functions as the master system for providing the master data.
 

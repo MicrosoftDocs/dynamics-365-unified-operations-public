@@ -13,7 +13,7 @@ ms.custom:
 
 # Export data using custom APIs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview
 

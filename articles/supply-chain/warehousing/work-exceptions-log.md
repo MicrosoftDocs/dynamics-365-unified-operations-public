@@ -13,7 +13,7 @@ ms.custom:
 
 # View and manage the work exceptions log
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Work exceptions are work-related errors that can occur during warehouse operations (such as discrepancies in inventory or missing goods at a given location). The system registers these exceptions in the work exceptions log, which lets managers track and diagnose issues related to warehouse workflows such as pick or pack procedures.
 

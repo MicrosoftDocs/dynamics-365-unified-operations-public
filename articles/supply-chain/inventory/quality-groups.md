@@ -12,7 +12,7 @@ ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 
 # Item quality groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A quality group represents common testing requirements for items. This article describes how to use and create item quality groups to logically group products so that they can be assigned to quality associations for the automatic generation of quality orders.
 

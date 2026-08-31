@@ -13,7 +13,7 @@ ms.custom:
 
 # Monitor and control message processor messages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The message processor is a framework for processing messages that represent events. It has the following properties:
 

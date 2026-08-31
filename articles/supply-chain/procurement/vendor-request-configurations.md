@@ -13,7 +13,7 @@ ms.custom:
 
 # Vendor request configurations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To complete a vendor request, a vendor contact person must complete the prospective vendor registration wizard.
 

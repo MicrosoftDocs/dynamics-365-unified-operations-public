@@ -14,11 +14,10 @@ ms.custom:
 
 # Warehouse Management mobile app release notes archive
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <!-- NOTE: This article is an archive and isn't listed in the TOC, but should be kept. It's linked to from [What's new or changed in the Warehouse Management mobile app](warehouse-app-whats-new.md) -->
 
-[!include [banner](../includes/banner.md)]
 
 This article provides an archive of release notes for older versions of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management. For the latest release notes, see [What's new or changed in the Warehouse Management mobile app](warehouse-app-whats-new.md).
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Planning Optimization fit analysis
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Planning Optimization fit analysis helps you identify where the result might differ between the deprecated master planning engine and Planning Optimization. The system runs this analysis based on your current setup and data.
 

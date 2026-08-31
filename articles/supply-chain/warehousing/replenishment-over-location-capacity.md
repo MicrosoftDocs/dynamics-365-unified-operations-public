@@ -12,7 +12,7 @@ ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 
 # Replenishment over location capacity
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Some high-volume or space-constrained warehouses must ship more quantity of an item in a day than can fit in the picking location. The *Replenishment over location capacity* feature enables all replenishment work required for the day to be created and manages the availability of that replenishment work to ensure that the picking location doesn't runs out of inventory or go above capacity.
 

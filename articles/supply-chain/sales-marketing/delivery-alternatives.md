@@ -12,7 +12,7 @@ ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 
 # Delivery alternatives
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sales order takers can use the **Delivery alternatives** page to discover alternative order fulfillment options.
 

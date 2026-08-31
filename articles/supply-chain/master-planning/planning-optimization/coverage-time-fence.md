@@ -13,7 +13,7 @@ ms.custom:
 
 # Coverage time fences
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up *coverage time fences*. Planners can define the planning horizon (the coverage time fence in days), and exclude supply and demand that falls beyond that horizon. Therefore, coverage time fences help prevent "noise" caused by supply suggestions that don't require attention for months. Examples include next year's forecast and customer orders that are placed far beyond the normal lead time.
 

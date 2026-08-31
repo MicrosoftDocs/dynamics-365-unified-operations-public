@@ -12,7 +12,7 @@ ms.search.form: EcoResTrackingDimensionGroup
 
 # Serial number capturing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use the **Capture serial number** field on the **Tracking dimension groups** page for items that use the warehouse management processes. Depending on the setting of this field, the actual serial number value on inventory transactions (on-hand inventory) isn't populated until later in the process, even if serial numbers are activated for the items.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Warehouse mobile device tracking dimensions and license plate picking behavior
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 One of the design goals of the warehouse mobile device picking flows is to minimize the amount scanning and keying required from the worker. To this end, some fields on the mobile device are either prepopulated value or skipped entirely. This article explains some of these cases. Some behaviors differ based on which warehouse mobile device flow you're using and how your on-hand inventory looks in terms of license plates and tracking dimension combinations.
 

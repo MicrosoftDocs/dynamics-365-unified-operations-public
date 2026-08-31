@@ -13,7 +13,7 @@ ms.custom:
 
 # Schedule maintenance plans
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Preventive maintenance scheduling generates calendar entries on assets based on the maintenance plans set up on the assets. You can schedule calendar entries based on selected maintenance plans, asset types, and assets.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Landed cost reports
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Outstanding invoices
 

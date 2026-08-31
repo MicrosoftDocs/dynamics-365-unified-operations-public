@@ -15,7 +15,7 @@ ms.custom:
 
 # USMCA certification of origin
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This feature lets you print the certification of origin documents required by the United States-Mexico-Canada Agreement (USMCA).
 

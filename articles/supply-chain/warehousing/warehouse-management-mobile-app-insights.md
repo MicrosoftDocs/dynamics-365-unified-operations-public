@@ -16,7 +16,7 @@ ms.collection:
 
 # Workload insights with Copilot in the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Warehouse Management mobile app provides a *workload* page that shows work summaries and AI-generated insights to help warehouse workers better plan their shift. The information can include the following details:
 

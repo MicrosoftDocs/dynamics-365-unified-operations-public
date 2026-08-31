@@ -12,7 +12,7 @@ ms.search.form:
 
 # Unified pricing management module overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the **Unified pricing management** module for Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management. For a video overview, see [Pricing Management Overview in Dynamics 365 Supply Chain Management - TechTalk](https://www.youtube.com/watch?v=Pc9nBoHN5m0).
 

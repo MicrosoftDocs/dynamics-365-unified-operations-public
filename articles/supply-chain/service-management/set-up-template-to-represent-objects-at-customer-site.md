@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up template to represent objects at customer site
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use this procedure to set up a template that represents objects at a customer site.
 

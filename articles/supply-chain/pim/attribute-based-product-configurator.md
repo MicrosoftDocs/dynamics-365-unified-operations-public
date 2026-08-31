@@ -12,7 +12,7 @@ ms.search.form:
 
 # Attribute-based sales prices for constraint-based product configuration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. You can build several sales price models for each product configuration model.
 

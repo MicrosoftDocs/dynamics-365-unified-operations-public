@@ -13,7 +13,7 @@ ms.custom:
 
 # Intercompany planning
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 For some organizations, logistics operations depend on other legal entities (companies) in the organization. Handle these operations by using intercompany sales and purchases because each legal entity has a separate chart of accounts.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # User-based authentication for the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Warehouse Management mobile app supports the following types of user-based authentication:
 

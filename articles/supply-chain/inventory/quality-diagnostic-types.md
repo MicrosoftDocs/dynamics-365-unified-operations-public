@@ -12,7 +12,7 @@ ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 
 # Diagnostic types for nonconformances
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use and create diagnostic types that can be used with nonconformances.
 

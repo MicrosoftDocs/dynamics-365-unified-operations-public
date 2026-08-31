@@ -13,7 +13,7 @@ ms.custom:
 
 # Safety stock fulfillment for items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Safety stock is an item quantity that you hold in inventory to reduce the risk that the item runs out of stock. Use safety stock when the demand from sales orders is more than planned for final goods, and when a supplier can't deliver additional units in the expected time.
 

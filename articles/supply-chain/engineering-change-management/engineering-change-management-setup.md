@@ -12,7 +12,7 @@ ms.search.form: EngChgProductParameters, EngChgEcmSeverityTable, EngChgEcmSeveri
 
 # Establish common values for engineering change management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you set up engineering change management, you must establish several collections of values that will be used to fill in drop-down lists in other parts of the user interface (UI). You should specify these values according to the types of products that you produce and your specific business needs.
 

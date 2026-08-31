@@ -12,7 +12,7 @@ ms.search.form:  WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssign
 
 # Outbound sorting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This functionality makes it easier to handle small containers and helps warehouse workers better plan and organize pallet capacity in the truck. When you use outbound sorting, you can sort packed containers to the correct pallet after they have been at a packing station. You can also build a packing hierarchy.
 

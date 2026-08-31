@@ -15,7 +15,7 @@ ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttC
 
 # Gantt chart for job scheduling
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
 

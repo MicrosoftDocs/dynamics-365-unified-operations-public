@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory marking
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the options that are available for marking inventory in firmed orders.
 

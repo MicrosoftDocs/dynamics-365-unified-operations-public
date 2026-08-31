@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up an external catalog for PunchOut e-procurement
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 By using the external catalog, you can ensure that the product and price information that you subsequently process in Supply Chain Management is accurate and up to date.
 

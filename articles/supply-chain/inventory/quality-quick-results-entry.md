@@ -1,4 +1,4 @@
-﻿---
+---
 title: Enter quality test results quickly
 description: Learn how to use the Quick results entry page, which consolidates data from all tests into a single view to streamline the entry process.
 author: johanhoffmann
@@ -13,7 +13,7 @@ ms.custom:
 
 # Enter quality test results quickly
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Quick results entry** page makes the process of entering quality order test results faster and more flexible than the **Quality order line results** page. The **Quick results entry** page consolidates data from all tests into a single view to streamline the result entry process. Quantities are automatically populated based on the quality order quantities. Other details are also populated, such as minimum, maximum, and target values.
 

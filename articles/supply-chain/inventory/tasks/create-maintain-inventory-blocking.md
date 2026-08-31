@@ -13,7 +13,7 @@ ms.custom:
 
 # Create and maintain an inventory blocking
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents. Before you start the procedures in this article, you must have an item that physical on-hand inventory is available for.
 

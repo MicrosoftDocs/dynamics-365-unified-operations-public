@@ -13,7 +13,7 @@ ms.custom:
 
 # Customize the production floor execution interface
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 Developers can extend current forms or create their own forms and buttons for the production floor execution interface. After you've added the code for these new elements, admins or shop floor managers can easily add them to the interface by using the standard configuration controls.
 

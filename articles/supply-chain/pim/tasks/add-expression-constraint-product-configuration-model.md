@@ -12,7 +12,7 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 
 # Add an expression constraint to a product configuration model
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how you can add a new constraint expression to a product configuration model. It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal. The procedure uses the High end speaker component in the demo company USMF.
 

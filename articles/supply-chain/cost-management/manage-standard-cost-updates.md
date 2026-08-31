@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage standard cost updates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Updates to standard cost data can be managed by using two different approaches&mdash;the one-version approach or the two-version approach.
 

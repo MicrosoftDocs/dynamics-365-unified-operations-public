@@ -13,7 +13,7 @@ ms.custom:
 
 # Outbound process overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the outbound process in Inventory management.
 

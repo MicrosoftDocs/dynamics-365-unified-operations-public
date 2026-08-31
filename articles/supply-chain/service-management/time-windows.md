@@ -13,7 +13,7 @@ ms.custom:
 
 # Time windows  
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use time windows to optimize the scheduling of service order lines. You can set up the system so that it automatically creates service orders. Based on the criteria specified by a time window, you can connect as many service order lines as possible to as few service orders as possible.
 

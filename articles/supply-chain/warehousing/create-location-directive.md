@@ -13,7 +13,7 @@ ms.custom:
 
 # Work with location directives
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items are picked, and where the picked items are put. Location directives consist of a header and associated lines. You create them for specific *work order types*.
 

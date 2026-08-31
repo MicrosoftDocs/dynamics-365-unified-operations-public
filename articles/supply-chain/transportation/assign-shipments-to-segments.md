@@ -13,7 +13,7 @@ ms.custom:
 
 # Assign shipments to related route segments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure the system to apportion freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process. It also describes how this feature works.
 

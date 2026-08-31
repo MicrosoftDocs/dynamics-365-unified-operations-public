@@ -13,7 +13,7 @@ ms.custom:
 
 # Release to warehouse
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides details about the release to warehouse process. It describes entities that are created when you release an order to the warehouse and options that you can use to initiate the process.
 

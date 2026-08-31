@@ -12,7 +12,7 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSSh
 
 # Shipment consolidation policies overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Shipment consolidation policies allow for automated shipment consolidation during automated and manual release to the warehouse.
 

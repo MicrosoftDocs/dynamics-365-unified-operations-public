@@ -14,7 +14,7 @@ ms.custom:
 
 # Inventory Visibility inventory summary
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Inventory summary** page is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. Inventory summary data is periodically synced from Inventory Visibility.
 

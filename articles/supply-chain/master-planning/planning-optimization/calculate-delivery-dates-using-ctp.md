@@ -13,7 +13,7 @@ ms.custom:
 
 # Calculate sales order delivery dates using CTP
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Capable-to-promise (CTP) functionality lets you give customers realistic dates for when you can promise specific goods. For each sales line, you can provide a date that takes account of existing on-hand inventory, production capacity, and transportation times.
 

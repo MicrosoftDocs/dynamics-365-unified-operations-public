@@ -13,7 +13,7 @@ ms.custom:
 
 # Load building workbench
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The load building workbench lets you apply load building strategies when you create loads.
 

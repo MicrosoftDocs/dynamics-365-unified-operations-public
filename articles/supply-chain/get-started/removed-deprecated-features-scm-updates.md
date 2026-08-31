@@ -12,7 +12,7 @@ ms.search.form:
 
 # Removed or deprecated features in Dynamics 365 Supply Chain Management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article is updated as new removed or deprecated features are documented for Dynamics 365 Supply Chain Management.
 

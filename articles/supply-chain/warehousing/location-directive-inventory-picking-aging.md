@@ -12,7 +12,7 @@ ms.search.form:  WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 
 # Location directive inventory picking aging
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking. These strategies work in conjunction with the aging dates that are recorded for locations to track when inventory first entered the warehouse. The *Location directive inventory picking aging* feature uses the date on the location to determine aging. The *Warehouse location status* feature updates the date on the location, based on the date from the license plate.
 

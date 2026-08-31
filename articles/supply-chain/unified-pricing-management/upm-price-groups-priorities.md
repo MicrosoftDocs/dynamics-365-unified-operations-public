@@ -13,7 +13,7 @@ ms.custom:
 
 # Price group priorities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In situations where more than one price calculation can apply, the system evaluates the priority of each group to determine which one should apply. This article explains how the priority is evaluated.
 

@@ -12,7 +12,7 @@ ms.search.form:
 
 # Warehouse management only mode FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about Warehouse management only mode.
 

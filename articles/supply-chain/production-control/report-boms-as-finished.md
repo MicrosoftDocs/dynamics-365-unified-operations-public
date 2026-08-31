@@ -12,7 +12,7 @@ ms.assetid: 510d05a3-0073-438d-b0c4-b6a6df1882ea
 
 # Report BOMs as finished
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about reporting BOMs as finished.
 

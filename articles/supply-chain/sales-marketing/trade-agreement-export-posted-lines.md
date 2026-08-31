@@ -12,7 +12,7 @@ ms.custom:
 ---
 # Export posted trade agreement lines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides step-by-step instructions on how to export posted trade agreement lines. Standard data entities don't support the direct export of posted trade agreement lines. This article describes how to convert posted trade agreement lines to unposted lines, which makes them exportable.
 

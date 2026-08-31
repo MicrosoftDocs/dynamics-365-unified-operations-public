@@ -13,7 +13,7 @@ ms.custom:
 
 # Calendars and master planning
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of supply chain calendars and how they affect master planning. It explains the different calendars that the master planning engine uses, including how they affect the shipping and receiving dates in the planned orders. It also provides recommendations for assigning, using, and updating calendars.
 

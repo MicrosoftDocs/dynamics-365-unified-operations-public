@@ -13,7 +13,7 @@ ms.custom:
 
 # Phantom items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes, in detail, how the *Phantom* line type can be used for the lines of a bill of materials (BOM) and a formula.
 

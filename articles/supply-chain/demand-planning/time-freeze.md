@@ -13,7 +13,7 @@ ms.custom:
 
 # Limit automatic time series updates with time freezes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Time freezes* let planners define rules that prevent the system from automatically updating selected cells in existing time series when a forecast gets recalculated (such as when you use [rolling forecasts](rolling-forecasts.md) or when you manually rerun a forecast to update an existing time series). Time freezes are similar to [time fences](time-fences.md), which are used to prevent users from *manually* editing certain time series values. However, time freezes only prevent *automated* updates that would otherwise occur when you rerun a forecast; users can still edit those values manually in the time series.
 

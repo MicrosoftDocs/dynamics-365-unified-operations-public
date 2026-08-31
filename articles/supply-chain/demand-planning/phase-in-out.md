@@ -13,7 +13,7 @@ ms.search.form:
 
 # Use phase in/out functionality to simulate planned changes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Phase in/out functionality lets you set up forecasts and calculations that simulate changes that you plan to make. Here are some examples:
 

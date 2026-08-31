@@ -12,7 +12,7 @@ ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLooku
 
 # Create a BOM line event kanban rule
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This task focuses on the setup needed to create an event kanban rule to ensure supply for production BOM lines in a mixed lean and classic production environment. The demo data company used to create this task is USMF. This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product.
 

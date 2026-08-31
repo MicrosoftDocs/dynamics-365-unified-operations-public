@@ -13,7 +13,7 @@ ms.custom:
 
 # Transportation management statuses
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Set up master codes for transportation statuses to interpret codes that are provided by your shipping carriers. This lets you integrate with shipping carriers to provide a status. The transportation status that you provide for a transportation master status code can help you track the status of a load, shipment, or container. The specific transportation status for a load, shipment, or container can only be updated through data integration and not manually through the user interface.
 

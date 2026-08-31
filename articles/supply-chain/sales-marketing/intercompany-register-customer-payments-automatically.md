@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Register payments automatically for intercompany customer invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management creates a customer transaction when an intercompany customer invoice is posted. This customer transaction remains open until it is settled, which means that it has been paid. When the corresponding intercompany purchase order is invoice updated, a vendor transaction matching the customer transaction is created. This vendor transaction also remains open until it is settled. To reduce the risk of differences, an accounts receivable payment journal can be automatically created and posted when the accounts payable payment journal is posted.
 

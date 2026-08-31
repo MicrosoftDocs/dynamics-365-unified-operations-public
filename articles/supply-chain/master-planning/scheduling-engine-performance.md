@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Improve scheduling engine performance
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The resource scheduling engine schedules routes for planned and released production orders.
 

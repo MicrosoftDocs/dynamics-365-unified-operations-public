@@ -11,7 +11,7 @@ ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWav
 
 # Visibility into material exceptions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In the **Production floor management** workspace, three tiles give you better visibility into exceptions for raw materials for production orders and batch orders:
 

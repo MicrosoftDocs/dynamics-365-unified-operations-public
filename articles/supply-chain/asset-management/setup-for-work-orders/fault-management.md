@@ -12,7 +12,7 @@ ms.search.form: EntAssetFaultArea, EntAssetFaultDesigner, EntAssetFaultCopyFromO
 
 # Fault management
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

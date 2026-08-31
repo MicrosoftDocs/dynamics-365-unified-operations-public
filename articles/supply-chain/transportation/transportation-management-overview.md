@@ -13,7 +13,7 @@ ms.custom:
 
 # Transportation management overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article gives an overview of the transportation management functionality in Supply Chain Management.
 

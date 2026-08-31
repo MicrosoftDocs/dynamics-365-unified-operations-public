@@ -13,7 +13,7 @@ ms.search.form:
 
 # Maintenance downtime for work orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 You can create maintenance downtime registrations on the asset that is selected on a work order. This capability is useful if you want to register maintenance downtime on one or more machines in the production area. You first create the maintenance downtime reason codes that you want to use, such as **Breakdown** and **Planned stop**. This step is done on the **Maintenance downtime reason codes** page. You can then create maintenance downtime registrations on the **Maintenance downtime** page and add the relevant maintenance downtime reason codes.

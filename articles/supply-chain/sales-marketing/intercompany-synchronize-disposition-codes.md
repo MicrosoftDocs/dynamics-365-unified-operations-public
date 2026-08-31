@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Synchronize intercompany disposition codes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To support intercompany returns, Microsoft Dynamics 365 Supply Chain Management enables you to map externally defined disposition codes to the corresponding internal disposition codes. When an intercompany chain is being set up, the disposition actions in the two companies that are mapped to each other must be the same. If they differ, the synchronization process will be unsuccessful.
 

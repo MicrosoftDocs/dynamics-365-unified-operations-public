@@ -12,7 +12,7 @@ ms.search.form: WrkCtrCapability
 
 # Define resource capabilities
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Resource capabilities describe what operations resources can do. During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources. This task guide will help you create a resource capability and assign it to a resource. The demo data company used to create this task is USMF.
 

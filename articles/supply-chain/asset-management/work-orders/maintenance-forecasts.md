@@ -13,7 +13,7 @@ ms.custom:
 
 # Maintenance forecasts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you create a work order, you create work order jobs that have related assets and maintenance job types. When you select a maintenance job type that contains maintenance forecasts, the forecasts are automatically copied to the work order.
 

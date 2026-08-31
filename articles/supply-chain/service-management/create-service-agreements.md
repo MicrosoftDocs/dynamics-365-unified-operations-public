@@ -15,7 +15,7 @@ ms.custom:
 
 # Create service agreements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use features in the Service management, Project management, and Accounting modules to create service agreements.
 

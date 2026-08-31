@@ -12,7 +12,7 @@ ms.search.form: JmgPayTable, JmgPayRate, JmgPayAgreementTable, JmgPayAgreementLi
 
 # Enable the payroll process for time and attendance
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to enable the payroll process for time and attendance. The demo data company used to create this procedure is USMF.
 

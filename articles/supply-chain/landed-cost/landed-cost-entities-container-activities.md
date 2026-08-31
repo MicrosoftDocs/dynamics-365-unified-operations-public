@@ -11,7 +11,7 @@ ms.search.form:
 
 # Container activities entity
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Container activities are used to track the progress of shipping containers. A record is created for each leg that is assigned to the journey template that is selected at the time of shipping container creation. Records are also created when the shipping container is created via a data entity.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Intercompany parameters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In an intercompany organization, you can set up parameters that determine how you trade between different legal entities. The fields that you select determine these parameters. You can select different combinations to reflect different trading scenarios.
 

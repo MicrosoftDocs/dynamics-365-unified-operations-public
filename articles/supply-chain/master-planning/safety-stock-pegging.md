@@ -13,7 +13,7 @@ ms.search.form:
 
 # Safety stock pegging options
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Most industries prioritize customer demand over [safety stock](safety-stock-replenishment.md). Therefore, when you must both replenish safety stock and fulfill a customer order, the system uses existing planned orders to cover the customer demand instead of leaving those planned orders pegged against safety stock.
 
