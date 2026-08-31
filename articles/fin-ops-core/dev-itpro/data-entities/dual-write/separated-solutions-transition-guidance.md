@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Transition from the Dual-write Application Orchestration package to split packages
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Before March 2022, when customers set up dual-write, they had to install the Dual-write Application Orchestration package from Microsoft Marketplace. This package contained solutions for all application logic, including all table maps. Therefore, customers were in an "all or nothing" situation, where they had to install all solutions, even if they needed to use only a subset.
 

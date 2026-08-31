@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-03-16
 
 # Troubleshoot live synchronization problems
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Microsoft Dataverse. Specifically, it provides information that can help you fix problems with live synchronization.
 

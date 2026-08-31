@@ -16,7 +16,7 @@ ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 
 # Configure automated tasks in a workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This article explains how to configure the properties for an automated task.

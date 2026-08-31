@@ -13,7 +13,7 @@ ms.search.validFrom: 2020-01-06
 
 # Switch between vendor designs
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 ## Vendor data flow
 

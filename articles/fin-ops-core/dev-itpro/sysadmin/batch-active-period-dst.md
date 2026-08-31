@@ -16,7 +16,7 @@ ms.assetid: a6685c6f-74bf-4f09-a19d-76130d7ce2da
 
 # Daylight saving time support for active batch periods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Finance version 10.0.12 includes a **Daylight Saving Time support for batch job active periods** feature that you can turn on in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). This feature introduces daylight saving time (DST) support for the [active periods for batch jobs](activeperiod.md) and lets you associate your active periods with different time zones.
 

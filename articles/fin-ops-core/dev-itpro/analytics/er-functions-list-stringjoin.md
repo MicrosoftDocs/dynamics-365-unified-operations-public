@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # STRINGJOIN ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `STRINGJOIN` function returns a *String* value that consists of concatenated values of the specified field from the specified list. The values can be separated by the specified delimiter.
 

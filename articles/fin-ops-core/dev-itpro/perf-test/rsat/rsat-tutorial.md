@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 # Regression suite automation tool tutorial
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!NOTE]
 > Use your internet browser tools to download and save this page in PDF format.

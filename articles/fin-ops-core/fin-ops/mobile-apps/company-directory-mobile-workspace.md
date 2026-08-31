@@ -16,7 +16,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Company directory mobile workspace
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 [!include [mobile app deprecation](../../dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 This article provides information about the **Company directory** mobile workspace. This workspace lets users view and contact other employees in their organization.

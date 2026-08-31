@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Data entity export performance tips
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides tips that can help improve performance during export.
 

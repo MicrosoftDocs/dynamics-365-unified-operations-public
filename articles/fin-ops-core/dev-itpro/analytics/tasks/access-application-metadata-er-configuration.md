@@ -15,7 +15,7 @@ ms.search.form:
 
 # Access application metadata by using ER configuration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a Regulatory configuration service (RCS) user in the System Administrator or Electronic Reporting Developer role can design a new Electronic reporting (ER) model mapping by using the application metadata. You access application metadata by using an ER metadata configuration that contains a sample set of metadata to access foreign trade transactions. To complete these steps, in RCS you must first complete the steps in the article, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md) procedure. Then complete the steps in the article, [Prepare application metadata to be used in RCS](prepare-application-metadata-rcs.md).
 

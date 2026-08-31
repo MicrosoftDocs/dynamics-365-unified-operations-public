@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 20
 
 # Extended data types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Extended data types (EDTs) have a rich extension model that lets extenders change specific behaviors.
 

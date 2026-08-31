@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1.3
 
 # Export a database
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use Microsoft Dynamics Lifecycle Services to export a database from a sandbox user acceptance testing (UAT) environment to the Asset library.
 

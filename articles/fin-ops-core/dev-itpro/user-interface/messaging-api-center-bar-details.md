@@ -18,7 +18,7 @@ ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
 
 # Messaging APIs - Action center, message bar, and message details
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the messaging system in finance and operations apps, specifically in terms of the application programming interfaces (APIs) that are used to create and route messages to end users.  
 

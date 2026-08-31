@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8
 
 # Apply updates and extensions to Commerce Scale Unit (cloud)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If you're updating a Tier-2 sandbox or production environment on application version 8.1.2 or newer and have initialized Commerce Scale Unit (CSU), you'll also need to update channel components. This article shows how to apply updates and extensions to CSU.
 

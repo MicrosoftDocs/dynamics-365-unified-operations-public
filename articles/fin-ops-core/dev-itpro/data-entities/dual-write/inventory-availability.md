@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-05-26
 
 # Inventory availability in dual-write
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 By using inventory availability, you can check your inventory before you add a product to the **Quotations**, **Orders**, or **Invoices** page in Microsoft Dynamics 365 Sales. For example, checking inventory and determining a fulfillment date is one key task in the [prospect-to-cash](../../../fin-ops/data-entities/dual-write-prospect-to-cash.md) process.
 
@@ -58,7 +58,8 @@ When you select the **On-hand Inventory** button on the **Quotes**, **Orders**, 
 The following templates are available for exposing the onhand inventory data.
 
 Finance and operations apps | Customer engagement apps     | Description
----|---|---
+---
+|---|---
 [CDS inventory on-hand entries](mapping-reference.md#145) | msdyn_inventoryonhandentries |
 [CDS inventory on-hand requests](mapping-reference.md#147) | msdyn_inventoryonhandrequests |
 

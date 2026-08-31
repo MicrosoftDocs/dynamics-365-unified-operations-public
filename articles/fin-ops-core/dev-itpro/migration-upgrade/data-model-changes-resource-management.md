@@ -15,7 +15,7 @@ ms.assetid: 46d23d3e-b5ef-43a7-ae9d-a1e202cc8abc
 
 # Project resource scheduling data model
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Project resource scheduling data model.
 

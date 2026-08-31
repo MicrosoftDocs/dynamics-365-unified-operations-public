@@ -16,7 +16,7 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 # Cross-company data sources in Electronic reporting (ER)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can design Electronic reporting (ER) formats to generate outgoing documents in various formats. When you generate a document, an ER format calls data sources that you configured in a corresponding ER model mapping. To configure access to application tables for record retrieval, use ER data sources of the **Table records** type. When the accessing table is a shared table (that is, a table where data is saved without a company identifier), this data source returns all records. When the accessing table is a company-dependent table (that is, a table where data is saved per company), this data source returns only the records saved for the current company (that is, the company context that the ER format is running under).
 

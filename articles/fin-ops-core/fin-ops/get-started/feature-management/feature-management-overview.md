@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.2
 
 # Feature management overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Features are added and updated in every release. The Feature management experience provides a workspace to view a list of features delivered in each release. You can then use the workspace to view feature documentation, and to enable or disable features.
 

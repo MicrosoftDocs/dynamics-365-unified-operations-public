@@ -18,7 +18,7 @@ ms.custom:
 
 # Add links to your organization's legal terms and privacy statement
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 Finance, Supply Chain Management, and Commerce.
 

@@ -15,7 +15,7 @@ ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
 
 # Metadata search in Visual Studio
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use metadata search to search your code and metadata for any patterns and content.
 

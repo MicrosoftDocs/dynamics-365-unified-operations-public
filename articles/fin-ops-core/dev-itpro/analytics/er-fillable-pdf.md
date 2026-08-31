@@ -15,7 +15,7 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 # Design ER configurations to fill in PDF templates
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The procedures in this article provide examples that show how a user in either the **System administrator** role or the **Electronic reporting developer** role can configure an Electronic reporting (ER) format that generates reports as PDF files by using fillable PDF documents as report templates. You can perform these steps in any company of Dynamics 365 Finance or Regulatory Configuration Services (RCS).
 

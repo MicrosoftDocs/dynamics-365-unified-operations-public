@@ -16,7 +16,7 @@ ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 
 # Report Designer interface
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article explains how to navigate through Report designer and how to use the various options to meet your specific requirements.
 

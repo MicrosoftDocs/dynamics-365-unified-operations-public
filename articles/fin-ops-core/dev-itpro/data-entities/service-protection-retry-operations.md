@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 52
 
 # Retry operations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes retry operations that you can implement if application programming interface (API) requests are throttled because they reach service protection API limits.
 

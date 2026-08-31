@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Default financial dimensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains default financial dimensions for developers. It explains where the dimensions originate, the application programming interfaces (APIs) that are used to merge them, and how you use them to create ledger dimensions. The article includes examples that show the user interface (UI), SQL table queries, and the output of those queries. It also includes some explanation of APIs and examples of how they're used.
 

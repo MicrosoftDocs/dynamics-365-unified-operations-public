@@ -16,7 +16,7 @@ ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 
 # Modify electronic reporting formats by reapplying Excel templates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the Electronic reporting (ER) tool to generate business documents in an electronic format. To generate a business document, create an ER format, and then use the ER designer to define the layout of the business document and specify the data that should be included in it. Then, run the ER format to generate the business document.
 

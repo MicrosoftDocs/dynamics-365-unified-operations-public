@@ -14,7 +14,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Add analytics to workspaces by using Microsoft Power BI Embedded
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This feature is supported in finance and operations (version 7.2 and later).

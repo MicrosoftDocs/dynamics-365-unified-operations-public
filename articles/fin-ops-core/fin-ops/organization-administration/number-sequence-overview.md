@@ -17,7 +17,7 @@ ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 
 # Number sequences overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use number sequences to generate readable, unique identifiers for master data records and transaction records that need identifiers. A master data record or transaction record that needs an identifier is called a *reference*.
 

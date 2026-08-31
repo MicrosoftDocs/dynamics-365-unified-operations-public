@@ -15,7 +15,7 @@ ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 
 # Batch parallelism and multi-threading in Dynamics 365 finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the different approaches that are available for breaking large batch jobs into small fragments in Microsoft Dynamics 365 finance and operations apps.
 

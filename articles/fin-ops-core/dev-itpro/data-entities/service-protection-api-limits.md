@@ -15,7 +15,7 @@ ms.search.validFrom: 2022-04-21
 
 # Service protection API limits
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about limits for service protection application programming interfaces (APIs) for the finance and operations apps service.
 

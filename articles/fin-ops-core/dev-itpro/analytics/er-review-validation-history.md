@@ -17,7 +17,7 @@ ms.assetid:
 
 # Review Electronic reporting (ER) validation history
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to review the validation history for Electronic reporting (ER) configurations.
 Validation history lets you return to previous validation runs to confirm which configuration versions were validated, when they were validated, and what errors or warnings were reported.

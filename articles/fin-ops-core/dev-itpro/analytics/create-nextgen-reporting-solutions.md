@@ -15,7 +15,7 @@ ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
 
 # Create reporting solutions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This tutorial shows how to export data and create a report, expand predefined views and add navigation to charts, use the free-form report designer, and customize the parameter experience.
 

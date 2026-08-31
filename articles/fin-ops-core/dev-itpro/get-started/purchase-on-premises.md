@@ -19,7 +19,7 @@ ms.service: dynamics-365-op
 
 # Buy Finance + Operations (on-premises)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Microsoft Dynamics 365 Finance + Operations (on-premises) offers various license types to best suit the needs of your organization. To better understand how Finance + Operations (on-premises) is licensed, work with your partner, who can access the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). When you're ready to purchase licenses for your organization, work with your partner to follow the steps that are outlined in this article.
 

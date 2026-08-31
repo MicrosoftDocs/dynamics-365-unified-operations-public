@@ -17,6 +17,8 @@ ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 
 # Human resources business events overview
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 Business events provide a mechanism that enables external systems to receive notifications from finance and operations apps. In this way, the systems can perform business actions in response to the business events.
 
 Business events occur when a business process runs. During a business process, users perform business actions to complete the tasks that make up that business process.

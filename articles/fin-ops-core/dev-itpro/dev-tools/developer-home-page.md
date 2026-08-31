@@ -14,7 +14,7 @@ ms.collection: get-started
 
 # Develop and customize home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides links to topics about development.
 

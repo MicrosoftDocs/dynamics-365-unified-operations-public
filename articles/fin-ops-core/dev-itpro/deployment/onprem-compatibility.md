@@ -16,7 +16,7 @@ ms.service: dynamics-365-op
 
 # Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains which versions of dependent software are compatible with different versions of Microsoft Dynamics 365 Finance + Operations (on-premises). These software requirements (where applicable) are relevant to all non-Microsoft managed environments, including development boxes, cloud-hosted environments, and similar setups.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.15
 
 # Add-ins overview
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Add-ins provide a way to extend the functionality of finance and operations apps. You can install and manage all add-ins through the environment details page for sandbox and production environments in Microsoft Dynamics Lifecycle Services (LCS). For more information about the architecture and how to unlock this feature, see [Microsoft Power Platform integration with finance and operations apps](overview.md).
 

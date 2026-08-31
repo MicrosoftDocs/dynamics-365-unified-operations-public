@@ -14,7 +14,7 @@ ms.dyn365.ops.version:
 
 # Support for finance and operations operated by 21Vianet in China
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Finance and operations apps provide many self-service support options and support through 21Vianet.
 

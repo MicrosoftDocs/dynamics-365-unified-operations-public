@@ -16,7 +16,7 @@ ms.custom:
 
 # HierarchyViewer control
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
 

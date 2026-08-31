@@ -14,7 +14,7 @@ ms.custom:
 
 # Make fields on mobile app pages clickable
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 The fields on a mobile app page can be customized so that they are shown as email addresses, phone numbers, or URLs.

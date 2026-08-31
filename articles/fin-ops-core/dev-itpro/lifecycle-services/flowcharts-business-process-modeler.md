@@ -16,7 +16,7 @@ ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 
 # Flowcharts in Business process modeler (BPM)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 > [!IMPORTANT]
@@ -50,7 +50,8 @@ The following table describes the activities that can appear in flowcharts.
 | Roles                     | Role swimlane. Add roles when a process requires actions by multiple roles to complete. Swimlanes list the default roles that can perform the action. |
 
 ### 
---->
+---
+>
 
 ### View a connected flowchart
 
@@ -87,7 +88,8 @@ You can import a business process model flowchart from an existing business proc
 1.  Select an existing task that doesn't have an associated flowchart, right-click it to display the app bar, and then select **Import**.
 1.  On the **Import business process model** page, select a library to import from, and then select the appropriate business process. Only business processes with existing model flowcharts appear in the list.
 1.  When the **Do you want to copy** message appears, select **Yes**. When the import finishes, the flowchart is associated with the original task. Gap information and the version history are also copied.
---->
+---
+>
 
 ### Export a flowchart as a Visio file
 
@@ -143,6 +145,7 @@ Unconnected flowcharts, such as a Visio diagram, can be helpful for describing h
 A business process with an unconnected Visio flowchart associated with it shows a document icon on its title bar: [![Flowchart BPM topic2.](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Select the document icon to view the flowchart.
 -   Select **Download** on the Visio page to download the flowchart.
---->
+---
+>
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

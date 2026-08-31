@@ -15,6 +15,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Enter applicant and application data manually
 
+[!INCLUDE [banner](../../../../includes/banner.md)]
+
 > [!NOTE]
 > This article refers to the recruiting functionality as Recruitment projects. It focuses on applicants, applications, and recruitment projects.  
 

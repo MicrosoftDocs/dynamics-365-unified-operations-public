@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Release 10.0.6
 
 # What's new or changed in finance and operations apps version 10.0.6 (November 2019)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 
 This article describes features that are either new or changed in finance and operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management for version 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](#additional-resources).

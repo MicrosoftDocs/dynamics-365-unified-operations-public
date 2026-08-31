@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Database point-in-time restore (PITR)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use Microsoft Dynamics Lifecycle Services to perform the point-in-time restore (PITR) for a sandbox user acceptance testing (UAT) environment or a production environment (live). Microsoft maintains [automated backups](/azure/sql-database/sql-database-automated-backups) of the business and financial reporting databases for 28 days for production environments and seven days for sandbox environments.
 

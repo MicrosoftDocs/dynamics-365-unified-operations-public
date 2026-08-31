@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 24
 
 # Workflow business events
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Workflow business events are generated at various points in the processing of a workflow.
 

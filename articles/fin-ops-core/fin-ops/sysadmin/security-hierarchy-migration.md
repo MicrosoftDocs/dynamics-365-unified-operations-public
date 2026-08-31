@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Data migration for the user security process hierarchy and security categories
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The security governance feature offers options for both backing up data as XML and restoring it from XML in different scenarios. This article describes specific scenarios for data migration and explains the steps that are involved in backing up data, restoring data, and verifying restored data. Learn more about the import process in [Import an existing category](security-category.md#import-an-existing-category).

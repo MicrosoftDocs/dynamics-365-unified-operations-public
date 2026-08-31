@@ -19,7 +19,7 @@ ms.custom:
 
 # Supported data source types for ER components
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to design an ER solution that you can run in the Microsoft Dynamics 365 Finance application to [generate](er-overview-components.md#format-components-for-outgoing-electronic-documents) an outbound business document or [parse](er-overview-components.md#format-components-for-incoming-electronic-documents) an inbound business document. To fill in a generated document with application data or update the application database by using data from an inbound business document, configure your ER solution to specify how the data should be fetched from the appropriate data storage, transformed in accordance with the layout of the processed document, and formatted based on specific requirements. To specify data fetching, transformation, and formatting, use different types of ER data sources. The following ER data source types are currently supported for Finance:
 

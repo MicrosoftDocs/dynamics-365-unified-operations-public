@@ -18,7 +18,7 @@ ms.custom:
 
 # Add new fields to a business document template in Microsoft Excel
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can add new fields to a template that generates business documents in Microsoft Excel format. Add these fields as placeholders to fill generated documents with the required information from the application. For every field that you add, you can also specify a binding to the data sources to specify what application data to enter in the field when you use the template to generate business documents.
 

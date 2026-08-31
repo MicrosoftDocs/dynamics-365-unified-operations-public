@@ -15,7 +15,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Benefits Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the **Benefits** Microsoft Power BI content. It explains how to access the included reports and provides information about the data model and entities that were used to build the content.
 

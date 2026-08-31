@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 11
 
 # Extend table maps that you use as interfaces
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **SalesPurchLine** and **SalesPurchTable** table maps expose a set of common fields and methods that a variety of product features use. Refactor the mapping of fields and the implementation of methods into a class hierarchy. Some of these changes include:
 

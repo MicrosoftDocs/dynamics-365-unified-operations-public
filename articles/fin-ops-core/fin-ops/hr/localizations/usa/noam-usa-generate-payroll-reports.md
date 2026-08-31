@@ -16,7 +16,7 @@ ms.assetid: 92b0da78-1c42-46f7-b1a2-334d75e625f3
 
 # Standard payroll reports
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes the standard payroll reports that help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
 

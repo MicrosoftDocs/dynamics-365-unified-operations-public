@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Configure Electronic reporting parameters for business documents
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Business document management** is built on top of the ER framework. Complete configuring the ER parameters to start working with **Business document management**.
 

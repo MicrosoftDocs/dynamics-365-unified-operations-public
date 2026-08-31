@@ -16,7 +16,7 @@ ms.custom:
 
 # Certificate rotation
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You might need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. This article shows you how to replace the existing certificates and update the references within the environment to use the new certificates.
 

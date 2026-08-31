@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce data residency
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Choose a region
 

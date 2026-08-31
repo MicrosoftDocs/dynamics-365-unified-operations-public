@@ -16,7 +16,7 @@ ms.custom:
 
 # Visual Studio add-ins that support form patterns
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The tools for Visual Studio include a number of add-ins that support pattern usage. 
 

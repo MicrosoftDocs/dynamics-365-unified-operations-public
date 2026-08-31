@@ -17,7 +17,7 @@ ms.search.form:
 
 # ER Design a configuration for generating reports in OPENXML format (November 2016)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. Use this configuration for processing vendor payments.
 

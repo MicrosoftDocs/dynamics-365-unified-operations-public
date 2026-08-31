@@ -17,7 +17,7 @@ ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 
 # Power BI content home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The following PowerBI.com solutions are available for application environments.
 

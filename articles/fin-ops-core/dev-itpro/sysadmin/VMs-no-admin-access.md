@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 12
 
 # Development and build VMs that don't allow admin access FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access.
 

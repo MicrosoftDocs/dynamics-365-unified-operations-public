@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Region migration to support zone redundancy FAQ
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Azure provides multiple regions that support [zone redundancy](/azure/reliability/availability-zones-overview). Zone redundancy enables environments to continue operating seamlessly even when a data center failure or other unforeseen incident occurs. Zone redundancy enhances the resilience of an environment and helps improve overall service continuity. To use these capabilities, an environment must reside in a [region that supports zone redundancy](/azure/reliability/availability-zones-service-support).
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.0
 
 # Create a database export
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 You can create a database export from a sandbox environment to the project's asset library. Note that the same validation rules from the details page in Microsoft Dynamics Lifecycle Services apply to the application programming interface (API).
 

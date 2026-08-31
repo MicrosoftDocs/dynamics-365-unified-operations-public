@@ -16,6 +16,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # License usage summary overview
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The **Security Governance License Usage Summary** is a tool in Dynamics 365 Finance & Operations that helps system administrators, licensing managers, and compliance officers see which licenses each user needs based on their assigned security roles. Instead of just giving raw license counts, this feature shows how each user's security roles - and the permissions within those roles - translate into licensing requirements.
 
 :::image type="content" source="media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::

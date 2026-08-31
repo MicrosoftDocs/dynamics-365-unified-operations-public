@@ -17,7 +17,7 @@ ms.custom:
 
 # Slider and MessageBox dialogs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dialogs
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # List of configurable business documents
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides the list of Electronic reporting (ER) configurations that are released in Dynamics 365 Finance to support configurable business documents.
 

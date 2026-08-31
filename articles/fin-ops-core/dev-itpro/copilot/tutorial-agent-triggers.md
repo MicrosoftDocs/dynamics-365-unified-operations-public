@@ -15,7 +15,7 @@ ms.search.region: Global
 
 # Tutorial: Trigger autonomous agents with business events
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Business events in finance and operations apps provide a powerful mechanism for integrating external systems and automating workflows. These events are emitted when specific business actions occur, such as confirming a purchase order or approving a requisition. Use these events to notify external systems or trigger downstream processes. Learn more about the business events framework in finance and operations apps in [Business events overview](../business-events/home-page.md).
 

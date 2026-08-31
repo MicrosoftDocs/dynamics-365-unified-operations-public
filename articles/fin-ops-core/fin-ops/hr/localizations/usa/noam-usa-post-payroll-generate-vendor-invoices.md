@@ -16,7 +16,7 @@ ms.assetid: c16043b0-ccdc-4d4d-bf18-67d4c7e3e5f0
 
 # Post payroll distributions and generate vendor invoices
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article walks you through the process for posting payroll distributions and generating the required vendor invoices.
 

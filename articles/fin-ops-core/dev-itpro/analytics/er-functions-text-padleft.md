@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # PADLEFT ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `PADLEFT` function returns a *String* value of the specified length, where the start of the specified string is padded with the specified characters.
 

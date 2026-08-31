@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build automation that uses Microsoft-hosted agents and Azure Pipelines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Azure DevOps, you can automate the process of building X++ code and creating deployable packages on any Windows build agent. These agents include [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted). This approach helps you avoid the setup, maintenance, and cost of deploying build virtual machines (VMs). It also lets you reuse the existing setup of build agents to run other .NET build automation.
 

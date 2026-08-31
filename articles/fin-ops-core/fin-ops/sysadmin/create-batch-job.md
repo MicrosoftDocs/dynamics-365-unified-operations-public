@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a batch job
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 A batch job is a group of tasks that you submit to an Application Object Server (AOS) instance for automatic processing. The batch job runs by using the security credentials of the user who created the job. Use the following procedure to create a batch job. The demo data company used to create this procedure is USMF.
 

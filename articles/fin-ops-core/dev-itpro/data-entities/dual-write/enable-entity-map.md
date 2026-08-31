@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Enable table maps for dual-write
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To enable table maps for dual-write, go to **Workspaces \> Data management**, and select the **Dual Write** tile.
 

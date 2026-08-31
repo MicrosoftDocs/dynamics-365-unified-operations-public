@@ -13,7 +13,7 @@ ms.date: 03/05/2026
 
 # Create AI tools with finance and operations business logic (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
  
 Finance and operations apps let you create AI tools to extend the capabilities of agents and copilots that invoke business logic in finance and operations apps. You can add these tools to the in-app Copilot for finance and operations apps, other Microsoft copilots or agents, or custom agents.

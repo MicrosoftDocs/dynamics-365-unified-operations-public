@@ -16,6 +16,8 @@ ms.collection:
 
 # Add knowledge to generative help and guidance with Copilot
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 Microsoft Copilot uses *knowledge sources* as the basis for the information that it provides to users. Copilot capabilities in finance and operations apps include the out-of-box *conversational boosting* topic. This topic uses [generative answers in Copilot Studio](/microsoft-copilot-studio/nlu-boost-conversations) to answer user questions based on information from the knowledge sources that were added to it.
 
 You can add knowledge to the Copilot help and guidance feature by uploading files to Copilot Studio (in file formats such as PDF, RTF, or Word). If you want to add other types of knowledge (such as from Sharepoint or other data sources), then you must add your own topic in the Copilot for Finance and Operations apps agent in Copilot Studio.

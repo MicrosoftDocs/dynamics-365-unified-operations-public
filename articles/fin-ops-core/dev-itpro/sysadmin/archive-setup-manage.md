@@ -10,6 +10,8 @@ ms.reviewer: johnmichalak
 ---
 # Set up and manage archive data in finance and operations apps
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes how to set up and manage archive data in finance and operations apps.
 
 ## Required privileges

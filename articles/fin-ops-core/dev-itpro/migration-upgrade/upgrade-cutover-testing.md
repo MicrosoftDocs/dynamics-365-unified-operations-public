@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Upgrade from AX 2012 - Cutover testing (Mock cutover)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 

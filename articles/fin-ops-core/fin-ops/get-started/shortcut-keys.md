@@ -16,7 +16,7 @@ ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 
 # Keyboard shortcuts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Keyboard shortcuts can help you quickly and efficiently enter data in finance and operations apps. 
 

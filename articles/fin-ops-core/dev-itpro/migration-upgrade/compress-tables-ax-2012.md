@@ -14,7 +14,7 @@ ms.search.form: 2022-04-08
 
 # Compress tables in Microsoft Dynamics AX 2012 environments
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to compress tables in Microsoft Dynamics AX 2012 environments.
 

@@ -15,7 +15,7 @@ ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
 
 # Employee competencies and development Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the Employee competencies and development Power BI content. 
 

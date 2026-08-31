@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.12
 
 # Extensible data security policies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of Extensible Data Security (XDS) policies in finance and operations apps. By using XDS, developers can supplement role-based security by restricting access to table records based on security policies. The query in the policy applies a filter, so only records that satisfy the filter conditions are accessible from the restricted tables.
 

@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 
 # Archive table naming reference
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This reference shows how Microsoft-provided tables are named across the archive framework layers. Each row maps the same logical entity as it moves through the archive pipeline: from the live transaction table in Dynamics 365 finance and operations, to the history table, to the finance and operations data entity, and finally to the Dataverse-managed data lake table.
 

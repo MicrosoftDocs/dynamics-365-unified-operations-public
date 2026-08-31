@@ -15,7 +15,7 @@ ms.search.validFrom: 2022-01-21
 
 # Uninstall dual-write application orchestration solutions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to uninstall dual-write application orchestration solutions.
 

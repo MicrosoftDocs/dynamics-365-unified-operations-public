@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Document Reporting Services
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the integrated reporting solutions that are available. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 

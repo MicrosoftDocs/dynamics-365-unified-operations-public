@@ -16,7 +16,7 @@ ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 
 # View and export field descriptions
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]

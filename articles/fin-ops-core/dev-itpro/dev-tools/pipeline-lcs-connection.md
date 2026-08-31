@@ -14,6 +14,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a Dynamics Lifecycle Services connection in Azure pipelines
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Microsoft Azure DevOps includes several pipeline tasks that you can use to perform actions in Microsoft Dynamics Lifecycle Services. For example, you can upload assets, download assets, and service an environment. To make the connection work with Dynamics Lifecycle Services, you must set up a new service connection in Azure DevOps. This service connection provides the authentication details that are required to connect to Dynamics Lifecycle Services. For more information about service connections in Azure DevOps, see [Service connections](/azure/devops/pipelines/library/service-endpoints).
 
 This article assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).

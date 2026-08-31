@@ -15,7 +15,7 @@ ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 
 # Settle transactions by using CustTrans::settleTransaction
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## CustTrans::settleTransact is obsolete
 

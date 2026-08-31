@@ -17,7 +17,7 @@ ms.custom:
 
 # Build operational workspaces
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 

@@ -17,7 +17,7 @@ ms.custom:
 
 # Show pages side-by-side using the Open in new window feature
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to display pages side by side.
 

@@ -17,7 +17,7 @@ ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 
 # Organization administration home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article points to content that helps power users and administrators configure the system to work smoothly and effectively for your organization and business.
 

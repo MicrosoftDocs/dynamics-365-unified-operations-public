@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ math runtime functions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the math runtime functions.
 

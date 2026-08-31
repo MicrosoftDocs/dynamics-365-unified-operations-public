@@ -15,7 +15,7 @@ ms.service: dynamics-365-op
 ---
 # Redeploy on-premises environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 At some point, you might need to redeploy your on-premises environment. This need might arise when you want to apply a new platform update or because of changes or problems in your implementation. Before you delete the environment you're currently working with, save your configuration settings so you can use them when you redeploy. This article describes how to save configuration settings and how to redeploy your environment.
 

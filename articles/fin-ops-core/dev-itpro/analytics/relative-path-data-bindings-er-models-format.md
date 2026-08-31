@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 
 # Use a relative path in data bindings of ER models and formats
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Electronic reporting (ER) tool lets you define electronic format structures and then describe how to fill those structures by using data and algorithms that exist in the application. For more information, see [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md). To specify the data flow for retrieving finance and operations data and using it to generate an electronic document, complete the following steps:
 

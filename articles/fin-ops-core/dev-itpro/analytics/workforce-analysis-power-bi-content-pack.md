@@ -16,7 +16,7 @@ ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 
 # Workforce metrics Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the **Workforce metrics** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 

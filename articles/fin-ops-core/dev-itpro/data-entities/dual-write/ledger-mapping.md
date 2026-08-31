@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-06
 
 # Integrated ledger
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In a business application, ledger data defines the core setup for how a company does business. For example, ledger data describes the fiscal year the company follows, the currencies it transacts in, and the accounts it uses. This article describes the integration of this core financial data.
 
@@ -24,7 +24,8 @@ In a business application, ledger data defines the core setup for how a company 
 Ledger data includes a collection of core financial table maps that work together during data interaction, as shown in the following table.
 
 | Finance and operations apps | Customer engagement apps     | Description |
----------------------------------|----------------------------------|------------
+---
+------------------------------|----------------------------------|------------
 | [CDS Exchange Rates](mapping-reference.md#123) | msdyn_currencyexchangerates | |
 | [Chart of accounts](mapping-reference.md#121) | msdyn_chartofaccountses | |
 | [Currencies](mapping-reference.md#218) | transactioncurrencies | |

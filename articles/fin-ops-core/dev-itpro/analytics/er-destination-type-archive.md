@@ -16,7 +16,7 @@ ms.assetid:
 
 # Archive ER destination type
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can configure an archive destination for each **Folder** or **File** component of an Electronic reporting (ER) format configured to generate outbound documents. Based on the destination setting, the system stores a generated document as an attachment of a record in the ER jobs list. To view the results, go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**.
 

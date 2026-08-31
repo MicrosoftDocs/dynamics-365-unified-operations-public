@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1.3
 
 # Destructive testing 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Database movement operations are a suite of self-service actions that you can use as part of data application lifecycle management (DataALM). In some situations, you need to perform destructive testing on an environment. In this context, destructive testing means that the environment is no longer useful for continued testing. Destructive testing is typical in an implementation lifecycle during Conference Room Pilots. This tutorial shows how to use database movement operations to facilitate destructive testing.
 

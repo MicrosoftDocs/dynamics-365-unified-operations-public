@@ -12,7 +12,7 @@ ms.search.validFrom: 2022-05-12
 
 # Execution restrictions for specific data export projects
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can't run some data export projects in finance and operations environments that run version 10.0.22 or earlier.
 

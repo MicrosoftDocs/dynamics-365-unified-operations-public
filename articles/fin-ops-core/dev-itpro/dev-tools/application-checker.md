@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 25
 
 # Application checker
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The application checker tool is a set of technologies that you can use to gain insight into your application code (both source and metadata) in ways that weren't possible before. This technology represents both source code and metadata in XML. It provides rich search facilities by using the XQuery language to express declarative queries over the source code. The current implementation runs inside a BaseX repository, which runs locally on the developer's computer.
 

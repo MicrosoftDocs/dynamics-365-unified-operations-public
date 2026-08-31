@@ -16,7 +16,7 @@ ms.search.validFrom: 2017-07-8
 
 # Synchronize agreement invoices in Field Service to free text invoices in Supply Chain Management
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 
 

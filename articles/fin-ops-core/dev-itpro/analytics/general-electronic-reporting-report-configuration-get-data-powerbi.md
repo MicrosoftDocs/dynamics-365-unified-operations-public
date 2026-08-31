@@ -15,7 +15,7 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 # Configure Electronic reporting (ER) to pull data into Power BI
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services. As an example, this article uses Intrastat transactions as business data that you must transfer. The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import and export activities on the Power BI report.
 

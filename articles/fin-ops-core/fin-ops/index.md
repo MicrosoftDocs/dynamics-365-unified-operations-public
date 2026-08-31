@@ -16,7 +16,7 @@ ms.search.form: DefaultDashboard
 
 # Finance and operations application documentation
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Learn how to make finance and operations applications work for your business, using the resources in this article to find great content for end users, developers, and IT professionals. 
 

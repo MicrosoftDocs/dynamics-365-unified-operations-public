@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-03-29
 
 # Integrate RSAT with Azure Pipelines
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Set up Microsoft Azure Pipelines to automate the scheduling and execution of test suites through the Regression suite automation tool (RSAT).
 

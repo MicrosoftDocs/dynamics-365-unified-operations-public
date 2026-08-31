@@ -16,7 +16,7 @@ ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 
 # Mobile app home page
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 [!include [mobile app deprecation](../../dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 This article describes the **Finance and operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.

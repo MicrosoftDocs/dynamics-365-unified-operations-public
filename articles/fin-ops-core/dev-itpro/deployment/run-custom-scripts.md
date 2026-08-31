@@ -14,7 +14,7 @@ ms.custom:
 
 # Run custom X++ scripts with zero downtime
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services or suspend your system. Therefore, you can correct minor data inconsistencies without causing any disruptive downtime.
 

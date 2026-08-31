@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # List of ER functions of the text category
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Electronic reporting (ER) text functions can be used to perform operations on data sources of the *String* data type. This article provides a summary of these functions.
 

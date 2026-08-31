@@ -14,7 +14,7 @@ ms.custom:
 
 # Localize mobile workspaces
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 You can use workspace classes to provide localization support to workspaces.

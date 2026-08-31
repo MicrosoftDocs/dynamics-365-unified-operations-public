@@ -15,7 +15,7 @@ ms.search.form: VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym, Ba
 
 # ER Generate electronic documents for payments using a format configuration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can use a new Electronic reporting (ER) format configuration to generate electronic documents for processing payments. You can perform these steps in the GBSI sample company.
 

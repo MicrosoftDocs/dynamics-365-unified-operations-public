@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 # Use cases for business events
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 

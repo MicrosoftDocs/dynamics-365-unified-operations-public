@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # User-configurable queries
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create configurable queries and use them with the process automation framework. If a process won't support user-configurable queries via the **SysQueryForm** form, you can skip this task.
 

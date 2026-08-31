@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0
 
 # Multiple Lifecycle Services projects and environments on one Microsoft Entra tenant
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

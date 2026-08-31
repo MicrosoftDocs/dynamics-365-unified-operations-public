@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Uninstall a package
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Occasionally, you might need to uninstall a deployable package. For example, you might be reorganizing your source code. Alternatively, you no longer require an independent software vendor (ISV) product and didn't renew the license. Therefore, you must remove the package.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 14
 
 # Relax model restrictions to refactor overlayering into extensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Starting with version 8.0, development tools for finance and operations apps don't allow customization of Microsoft code by using overlayering. Instead, use extension capabilities to modify and add behavior. The "no overlayering" restriction is a key part of the product evolution toward providing customers with a cloud service that is simple to update and always running the most recent version possible to allow all customers to receive the benefits of the latest features and fixes.
 

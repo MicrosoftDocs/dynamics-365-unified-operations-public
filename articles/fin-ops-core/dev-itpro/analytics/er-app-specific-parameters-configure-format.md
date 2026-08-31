@@ -16,7 +16,7 @@ ms.assetid:
 
 # Configure ER formats to use parameters that are specified per legal entity
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview
 

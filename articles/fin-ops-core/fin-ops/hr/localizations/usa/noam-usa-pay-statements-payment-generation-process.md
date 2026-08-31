@@ -16,7 +16,7 @@ ms.assetid: 0fd018c4-a786-4d36-97eb-7087521bb9f2
 
 # Pay statements and payment generation FAQ
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article answers questions that are related to activities that go beyond standard payroll processing. Examples include payments that are made to workers outside Payroll and final payments to terminated workers.
 

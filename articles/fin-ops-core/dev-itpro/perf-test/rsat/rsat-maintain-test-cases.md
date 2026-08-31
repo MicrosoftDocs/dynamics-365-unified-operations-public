@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintain test cases in Regression suite automation tool (RSAT)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Regression suite automation tool (RSAT) lets you maintain test cases and attachments in the tool itself. In earlier versions, you had to use Microsoft Azure DevOps to maintain test cases and then switch to RSAT to run tests. Therefore, newer versions offer better usability and help improve productivity. Many operations can be done completely in RSAT, and it's also easier to work with test suites.
 

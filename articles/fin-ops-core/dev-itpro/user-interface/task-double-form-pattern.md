@@ -17,7 +17,7 @@ ms.custom:
 
 # Task Double form pattern
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Task Double form pattern. This pattern was previously used to present a parent and child entity in the same form.
 

@@ -16,7 +16,7 @@ ms.assetid: 6b3c8e46-96b2-4503-9f85-8408f9f97620
 
 # Set up garnishments and tax levies
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article explains how to set up garnishments and tax levies. Use the benefit framework to create and manage garnishments and tax levies. This framework helps ensure that the effect that garnishments and tax levies have on payroll is handled correctly.
 

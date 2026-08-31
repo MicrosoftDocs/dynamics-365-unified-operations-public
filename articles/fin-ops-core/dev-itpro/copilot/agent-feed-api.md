@@ -15,7 +15,7 @@ ms.search.region: Global
 
 # Agent feed developer documentation (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The guidance applies to Dynamics 365 finance and operations version 10.0.47. 

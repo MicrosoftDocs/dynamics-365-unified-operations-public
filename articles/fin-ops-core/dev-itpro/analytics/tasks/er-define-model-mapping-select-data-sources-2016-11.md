@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappin
 
 # Define ER model mappings and select data sources for them
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model. Bind the data sources to individual components of the selected data model at design time. The data sources populate business data to that data model at runtime. In this example, you select data sources for an existing data model created for the sample company Litware, Inc.
 

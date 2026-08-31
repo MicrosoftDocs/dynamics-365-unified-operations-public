@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Roles violating segregation of duties
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 The **Roles violating segregation of duties** view shows all roles that violate segregation of duties rules. It also shows how many violations of this type exist for each role.
 

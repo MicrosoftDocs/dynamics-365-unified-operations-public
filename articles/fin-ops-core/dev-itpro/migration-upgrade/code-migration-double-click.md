@@ -17,7 +17,7 @@ ms.custom:
 
 # Code migration - Mouse double-click logic
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In finance and operations, the **mouseDblClick()** override has been deprecated, and you will need to move this logic to new controls.
 

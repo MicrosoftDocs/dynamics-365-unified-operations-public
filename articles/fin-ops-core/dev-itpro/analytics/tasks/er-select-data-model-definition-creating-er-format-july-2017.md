@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Select data model definitions when you create formats
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).
 

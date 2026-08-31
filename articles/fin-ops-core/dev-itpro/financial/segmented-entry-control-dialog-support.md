@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Support for Segmented Entry controls on dialogs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Describes the code pattern to add Segmented Entry controls to dialogs.
 

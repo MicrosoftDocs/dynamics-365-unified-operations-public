@@ -17,7 +17,7 @@ ms.assetid:
 
 # CONTAINS ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `CONTAINS` function determines whether the specified input contains the specified text. It returns a *Boolean* value of **TRUE** if the specified input contains the specified text. Otherwise, it returns a *Boolean* value of **FALSE**.
 

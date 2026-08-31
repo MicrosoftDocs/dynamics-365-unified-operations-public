@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # End-to-end scenario for the Fleet Management sample application
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 

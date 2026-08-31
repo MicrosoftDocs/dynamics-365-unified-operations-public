@@ -13,7 +13,7 @@ ms.dyn365.ops.version: 10.0.12
 
 # Import or export a customized security configuration by using Data management 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to export and import a customized security configuration across environments by using the [Data management framework](../data-entities/data-entities-data-packages.md). Use this functionality when you need to move a customized security configuration from a test environment to a production environment.
 

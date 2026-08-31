@@ -12,7 +12,7 @@ ms.search.form: 2022-04-08
 
 # Devirtualize company data
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article outlines the process for devirtualizing company data in Microsoft Dynamics AX 2012 in preparation for an upgrade to Dynamics 365 finance and operations apps.
 

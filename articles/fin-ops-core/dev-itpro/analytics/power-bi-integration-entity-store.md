@@ -16,7 +16,7 @@ ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
 
 # Power BI integration with Entity store
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Entity store is an operational data store that's included with Microsoft Dynamics 365 Finance. This article describes how Entity store enables Power BI integration.
 

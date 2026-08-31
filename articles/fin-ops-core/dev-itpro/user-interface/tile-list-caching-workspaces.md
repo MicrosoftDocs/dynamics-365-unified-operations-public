@@ -18,7 +18,7 @@ ms.custom:
 
 # Tile and list caching for workspaces
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 It's important that workspaces perform well, and that they be responsive (that is, the data that appears in a workspace is refreshed as expected and kept up to date). This article discusses framework support for caching data that is used for tiles and lists.
 

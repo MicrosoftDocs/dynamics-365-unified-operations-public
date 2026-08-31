@@ -15,7 +15,7 @@ ms.assetid: f03f1fc6-4f8f-4f42-8e38-5ecba8eac413
 
 # Control extensibility
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the architecture that developers use to extend the user interface and define new user interface patterns.
 

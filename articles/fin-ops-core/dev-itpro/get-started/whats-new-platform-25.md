@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform 25
 
 # What's new or changed in Dynamics 365 Finance platform update 25 (April 2019)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes features that are new or changed in Dynamics 365 Finance platform update 25. This version has a build number of 7.0.5222. For more information about Platform update 25, see [Additional resources](#additional-resources).
 

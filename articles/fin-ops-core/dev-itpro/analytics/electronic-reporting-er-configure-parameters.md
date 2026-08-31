@@ -17,7 +17,7 @@ ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a
 
 # Configure the Electronic reporting (ER) framework
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up the basic functionality for Electronic reporting (ER). It also describes the steps that you must complete before you can set up ER.
 

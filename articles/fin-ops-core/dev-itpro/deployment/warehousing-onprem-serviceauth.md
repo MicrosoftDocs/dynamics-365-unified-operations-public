@@ -15,7 +15,7 @@ ms.service: dynamics-365-op
 
 # Service-based authentication for the Warehouse Management mobile app in on-premises deployments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > The authentication methods that are described in this topic are now deprecated. We strongly recommend that you authenticate with [device code flow](warehousing-onprem-userauth.md) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md).

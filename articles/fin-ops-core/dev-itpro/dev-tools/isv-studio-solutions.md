@@ -15,7 +15,7 @@ ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 
 # Link X++ modules from ISV packages by using ISV Studio
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Independent software vendors (ISVs) can link their X++ modules to their registered products and solutions by using [Microsoft Power Platform ISV Studio](/powerapps/developer/data-platform/isv-app-management). Linking enables ISVs to monitor the success and usage of their applications in finance and operations apps.
 

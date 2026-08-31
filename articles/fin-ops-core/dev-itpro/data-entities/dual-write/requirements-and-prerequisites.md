@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 <!-- markdownlint-disable MD025 -->
 # System requirements and prerequisites troubleshooting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Verify requirements and grant access
 

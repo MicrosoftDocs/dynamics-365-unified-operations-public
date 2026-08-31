@@ -19,7 +19,7 @@ ms.custom: sfi-image-nochange
 
 # Configure SQL Server Reporting Services for on-premises deployments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the steps in this article to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment.
 

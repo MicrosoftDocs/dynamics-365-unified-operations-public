@@ -14,7 +14,7 @@ ms.search.form: 2022-04-08
 
 # Migrate document attachments from Dynamics AX 2012
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to migrate document attachments from Microsoft Dynamics AX 2012.
 

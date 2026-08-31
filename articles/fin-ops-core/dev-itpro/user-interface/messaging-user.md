@@ -15,7 +15,7 @@ ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
 
 # Messaging system for finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the rich, powerful messaging system in finance and operations apps.
 

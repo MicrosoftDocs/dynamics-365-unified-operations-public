@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 17
 
 # AX 2009 migration – Install the Data migration tool
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up the Data migration tool (DMT) so that you can migrate data from Microsoft Dynamics AX 2009 to finance and operations.
 

@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Create and refresh virtual entities automatically
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about automatic creation and refreshes of virtual entities for finance and operations apps in Dataverse.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Business logic events
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 By using mobile workspace business logic events, developers can specify workspace configuration to enhance capability and implement business-scenario-specific behaviors. All mobile business logic runs in the process of the mobile app. The Operations mobile app framework controls the business logic execution flow. 

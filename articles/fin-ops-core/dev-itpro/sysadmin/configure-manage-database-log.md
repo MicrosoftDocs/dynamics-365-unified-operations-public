@@ -15,7 +15,7 @@ ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 
 # Configure database logging
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Database logging provides a way to track specific types of changes to the tables and fields in Finance and Operation apps. You can track changes such as insert, update, delete, and rename key operations. When you configure logging for a table or field, the system stores a record of every change to that table or field in the database log table, **sysdatabaselog**, in the environment database.
 

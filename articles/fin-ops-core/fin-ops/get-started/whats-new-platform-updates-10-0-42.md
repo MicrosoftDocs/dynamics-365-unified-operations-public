@@ -14,7 +14,7 @@ ms.search.region: Global
 ---
 # Platform updates for version 10.0.42 of finance and operations apps (December 2024)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the features that are included in the platform updates for version 10.0.42 of finance and operations apps. This version has a build number of 7.0.7452.15 and is available on the following schedule:
 

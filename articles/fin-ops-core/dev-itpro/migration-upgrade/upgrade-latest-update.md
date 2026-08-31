@@ -16,7 +16,7 @@ ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 
 # Process for moving to the latest update of finance and operations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the process of updating or upgrading to the latest release of finance and operations. It describes the overall process and supported scenarios, but it doesn't provide detailed instructions for every step of the process.
 

@@ -17,7 +17,7 @@ ms.custom:
 
 # Extensible control programming reference
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides reference content for extensible control programming.
 

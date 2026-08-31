@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.22
 
 # Data events
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Data events are events that are based on changes to data in finance and operations apps. You can enable create, update, and delete (CUD) events for each entity. For example, when you enable the **Create** event for the **Purchase order headers V2** entity, an event notification is emitted every time that a new purchase order is created in the database.
 
@@ -81,4 +81,3 @@ For more information on virtual fields, see [Computed columns and virtual fields
         - As a result, the event framework can't reliably emit notifications for entities based on views.
         - Any Business Eventid saved in enviorment variables for ALM process of the power automate should store the Business Event ID and not the Business Event Label. This condition can cause creation or orphan records and doesn't trigger the power automate.
 
-[!include[banner](../includes/banner.md)]

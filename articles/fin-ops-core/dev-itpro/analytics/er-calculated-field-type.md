@@ -16,7 +16,7 @@ ms.assetid:
 
 # Support parameterized calls of ER data sources of the Calculated field type
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can design an Electronic reporting (ER) data source by using the **Calculated field** type. This data source can contain an ER expression that, when executed, can be controlled by the values of the parameter arguments configured in a binding that calls this data source. By configuring parameterized calls of such a data source, you can reuse a single data source in many bindings. This approach reduces the total number of data sources that you must configure in ER model mappings or ER formats. It also simplifies the configured ER component, which reduces maintenance costs and the cost of use by other consumers.
 

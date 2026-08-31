@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customize the user interface
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The process automation framework supports some customizations of the user interface (UI). Most of this article is optional, because the framework provides default values for everything. The only exception is the **ProcessScheduleSeries** form. If you intend to show the **ProcessScheduleSeries** form for a specific product area, customizations are required so that the framework can show data that is specific to that product area.
 

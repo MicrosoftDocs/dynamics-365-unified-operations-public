@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Capabilities that were postponed from Dynamics AX 2012
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article lists features from Microsoft Dynamics AX 2012 that Microsoft postponed delivery of. In the following table, the **Current status** column indicates whether the feature is available since the version 7.0.
 

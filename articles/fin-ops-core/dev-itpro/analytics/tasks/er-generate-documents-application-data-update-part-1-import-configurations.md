@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Import configurations to generate documents that have application data
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, "ER Create a configuration provider and mark it as active".
 

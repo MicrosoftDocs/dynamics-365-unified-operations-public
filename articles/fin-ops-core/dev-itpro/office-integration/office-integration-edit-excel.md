@@ -21,7 +21,7 @@ ms.custom:
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Learn about creating Open in Office experiences for Excel and Word.
 

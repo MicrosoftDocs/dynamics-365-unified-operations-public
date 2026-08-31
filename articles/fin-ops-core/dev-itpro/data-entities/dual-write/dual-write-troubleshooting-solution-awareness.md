@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-06
 
 # Troubleshoot issues related to solution awareness
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix problems that are related to solution awareness.
 

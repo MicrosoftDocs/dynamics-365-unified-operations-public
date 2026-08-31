@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # What's new or changed for extensibility
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides links to extensibility updates.
 

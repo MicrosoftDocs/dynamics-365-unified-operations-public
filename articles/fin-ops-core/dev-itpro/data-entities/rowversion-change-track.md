@@ -17,6 +17,8 @@ ms.dyn365.ops.version: 10.0.31
 
 # Row version change tracking for tables and data entities
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 Finance and operations apps include a change tracking functionality option that's known as *row version change tracking*. By using this option, you can use Microsoft Dataverse for incremental synchronization of data. Change tracking is a prerequisite for several features, such as Data archival, Synapse integration, Mobile offline, and Relevance search. The eventual goal is to unify all existing finance and operations data synchronization frameworks into one that's based on Dataverse synchronization services.
 
 For row version change tracking functionality, add a new column of type **rowversion** to all tables in the data entity that requires change tracking. For more information about the **rowversion** column type, see [rowversion](/sql/t-sql/data-types/rowversion-transact-sql). For information about how to add a **rowversion** column to a table, see [Enable row version change tracking for tables](rowversion-change-track.md#enable-row-version-change-tracking-for-tables).

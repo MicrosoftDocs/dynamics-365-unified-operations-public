@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange
 
 # <a id="legacy-abort"></a>Cancel a running batch job
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Cancel a batch job
 

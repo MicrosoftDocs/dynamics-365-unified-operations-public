@@ -15,7 +15,7 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 # Create a workflow type
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 To add workflow support for a document, you must create a workflow type. After you create a workflow type, you can use it to create workflow configurations for the document. This article provides links to the procedures for creating a workflow type.
 

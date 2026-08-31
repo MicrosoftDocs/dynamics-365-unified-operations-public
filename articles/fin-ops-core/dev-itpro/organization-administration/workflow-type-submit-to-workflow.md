@@ -15,7 +15,7 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 # Create a SubmitToWorkflow class 
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 A workflow starts when the user selects the **Submit** button on the workflow toolbar. The **Submit** button connects to an action menu item that calls the **main** method of a class you create to activate a workflow. This article describes how to create a **SubmitToWorkflow** class and use the name of the workflow type to activate the workflow.
 

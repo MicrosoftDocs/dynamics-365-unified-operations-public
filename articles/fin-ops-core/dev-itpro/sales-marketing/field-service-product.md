@@ -16,7 +16,7 @@ ms.search.validFrom: 2017-07-8
 
 # Synchronize products in Supply Chain Management to products in Field Service
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article discusses the templates and underlying task that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365  Field Service.
 

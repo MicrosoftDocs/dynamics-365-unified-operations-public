@@ -17,7 +17,7 @@ ms.custom:
 
 # Simple List form pattern
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Simple List form pattern. This pattern is used to maintain data for simple entities.
 

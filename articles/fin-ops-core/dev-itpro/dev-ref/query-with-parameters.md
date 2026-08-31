@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Mitigate a SQL injection attack
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 An SQL injection attack happens when someone passes malicious data values to Microsoft SQL Server in a query string. Those values can cause lots of damage in a database. SQL injection can occur if you're not careful about how you use a query to pass data that comes from an uncontrolled source, such as user input, to SQL Server. SQL injection isn't usually an issue in finance and operations apps, because the built-in data access statements in X++ prevent it. However, if you use Direct-SQL, SQL injection can occur when raw SQL code is passed to the server.
 

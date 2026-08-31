@@ -15,6 +15,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Upload assets by using Azure Pipelines
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 You can automate the upload of assets to the Asset library in Microsoft Dynamics Lifecycle Services by using the **Dynamics Lifecycle Services Asset Upload** task in Azure DevOps. This task is available only in **Releases** pipelines.
 
 This article assumes you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Apply updates to cloud environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use Microsoft Dynamics Lifecycle Services to automatically apply updates to cloud environments.
 

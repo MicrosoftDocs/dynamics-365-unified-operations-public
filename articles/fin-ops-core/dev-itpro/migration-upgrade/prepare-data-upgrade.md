@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Upgrade from AX 2012 - Preupgrade checklist for data upgrade
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 

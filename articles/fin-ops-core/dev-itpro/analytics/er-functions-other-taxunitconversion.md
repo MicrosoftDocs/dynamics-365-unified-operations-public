@@ -17,7 +17,7 @@ ms.dyn365.ops.version: App AX10.0.40/Plat Update64
 
 # TAXUNITCONVERSION ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `TAXUNITCONVERSION` function returns a *Real* value that represents the quantity result of converting the specified unit from transaction to the specified unit in tax configuration. And it should be noticed that this function requires context that from an original sourcing system. The method `ConverUnit` in interface `IExternalAPIProvider` must be implemented in a sourcing Enterprise resource planning (ERP) environment.
 

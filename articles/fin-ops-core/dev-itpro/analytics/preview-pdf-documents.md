@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 28
 
 # Preview PDF documents by using a PDF viewer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF Preview option. Finance and operations applications deliver a modern experience to preview business documents that the service produces. You can use the built-in toolbar to navigate and download the document or to print to locally connected devices.
 

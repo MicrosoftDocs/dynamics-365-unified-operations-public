@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extend the Person search report
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Person search report for finance and operations apps uses an intelligent search processor that manages a collection of entities for a single person. The Person search report searches finance and operations data and creates a set of resulting identifiers. Each result references a search category, such as Customer, and a result record in a related table. For information about using the Person search report, see [Person search report](privacy-person-search-report.md).
 

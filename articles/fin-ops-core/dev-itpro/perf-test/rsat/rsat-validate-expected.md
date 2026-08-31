@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Validate expected values
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Validating expected values is an important part of a test case. Define validation parameters when you author your test cases by using Task Recorder. While recording, right-click on a control and select **CurrentValue** under the **Task Recorder > Validate** menu. This action adds a validation step that you can use with the Regression suite automation tool. The control value becomes a validation variable in the automatically generated Excel parameters file. The following image shows the menu item.
 

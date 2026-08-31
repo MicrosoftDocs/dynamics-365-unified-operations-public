@@ -16,7 +16,7 @@ ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 
 # Upgrade budget planning
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Budget planning in Microsoft Dynamics AX 2012 and Dynamics 365 Finance has significant differences. Some features weren't upgraded and require reconfiguration. This article explains what you need to reconfigure and describes new features to consider after the upgrade.  
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 1611
 
 # User identity requirements for Financial Reporting
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Financial Reporting in finance and operations apps **doesn't support external authentication**.
 

@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 8.1.1
 
 # Troubleshoot environments deployed through self-service deployment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
 This article explains how to troubleshoot problems in an environment that you deployed by using the [self-service deployment](infrastructure-stack.md) experience. When a user reports a problem, use various tools in Microsoft Dynamics Lifecycle Services to troubleshoot. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the problem was reported.

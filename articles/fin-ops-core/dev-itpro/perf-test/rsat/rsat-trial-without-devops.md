@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Trial mode without Azure DevOps
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can use the Regression suite automation tool (RSAT) in trial mode. The benefit of trial mode is that it doesn't require connections to Microsoft Azure DevOps.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-11-09
 
 # Dynamics 365 Finance and Supply Chain Management in US Government Community Cloud (GCC)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Qualified government and private entities can access select Microsoft Dynamics 365 United States (US) Government products. The following types of entities are eligible:
 

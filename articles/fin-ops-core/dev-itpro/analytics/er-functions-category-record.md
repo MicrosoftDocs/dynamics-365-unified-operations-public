@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # List of ER functions in the record category
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Electronic reporting (ER) record functions can be used to extract information from, and perform operations on, data sources of the *Container (record)* data type. This article provides a summary of these functions.
 

@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 
 # Build your own custom archive scenario
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to build a complete custom archive scenario from scratch by using only custom tables. By using this approach, you can archive custom business transactions independently of Microsoft-managed archive scenarios.
 

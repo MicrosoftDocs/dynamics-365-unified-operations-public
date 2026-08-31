@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 50
 
 # Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 

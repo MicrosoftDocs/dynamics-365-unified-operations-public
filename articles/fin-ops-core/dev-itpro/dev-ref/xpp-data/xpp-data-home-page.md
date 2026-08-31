@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ data selection and manipulation overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use SQL statements, either interactively or in source code, to retrieve and modify data stored in the database. Use the **select** statement and API methods for these tasks:
 

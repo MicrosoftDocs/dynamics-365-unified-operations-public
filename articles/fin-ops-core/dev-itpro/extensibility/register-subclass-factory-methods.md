@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Register subclasses for factory methods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Class inheritance is a central concept in X++, as in other object-oriented languages. The X++ business logic uses the object-oriented strategy pattern. In this pattern, you encapsulate variations in behavior by using subclasses, and the business process uses an abstract base class or interface. A factory method determines the variation that it uses by creating an instance of a specific subclass.
 

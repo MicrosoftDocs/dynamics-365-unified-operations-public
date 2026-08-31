@@ -15,7 +15,7 @@ ms.assetid: cb5aff3b-5b29-44f7-9c6f-6b055c043996
 
 # Retail channel performance PowerBI.com solution
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Microsoft deprecated this PowerBI.com solution. For more information, see [Power BI content packs available on Marketplace](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-marketplace).

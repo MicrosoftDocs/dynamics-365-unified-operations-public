@@ -15,7 +15,7 @@ ms.search.validFrom: 2018-12-01
 
 # Synchronize inventory transfers and adjustments from Field Service to Supply Chain Management
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article discusses the templates and underlying tasks that are used to synchronize inventory adjustments and transfers from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 

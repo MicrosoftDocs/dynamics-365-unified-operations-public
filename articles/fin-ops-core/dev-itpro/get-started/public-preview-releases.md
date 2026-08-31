@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 11
 
 # Service update availability
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft is committed to delivering predictable service updates. These service updates are made generally available for self-deployment before Microsoft automatically applies them. The timing of the package release for self-update relative to the production autoupdates varies. Customers can choose from two autoupdate windows that are four weeks apart for each service update. Organizations can select the update window that better accommodates their validation process and operational schedules. To determine the timing of self-update and autoupdates for upcoming releases, including the second autoupdate window see, [Targeted release schedule (dates subject to change)](#targeted-release-schedule-dates-subject-to-change). To learn more about twice autoupdate window options, see [One Version service updates FAQ](../../dev-itpro/get-started/one-version.md).
 

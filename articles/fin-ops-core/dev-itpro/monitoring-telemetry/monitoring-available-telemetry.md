@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Available telemetry
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] includes robust, out-of-the-box telemetry capabilities when you enable Application Insights. These capabilities provide critical insights into various aspects of the system and help you monitor performance, diagnose issues, and optimize operations. This article provides an overview of the types of telemetry that are available and corresponding resources.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 # Before you buy
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 New to Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce? Use the following step-by-step guidance whether you're still evaluating or ready to make a purchase.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 20
 
 # Write extensible methods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Before making a method extensible, assess the exposed functionality of the method and the impact that the extensions might have on the scenario where the method is used. For example, depending on the business scenario, there's low risk if you enable extensions to initialize a table record but high risk if you enable extensions to skip a specific validation. Consider the impact if the method is extended in parallel with other extensions.
 

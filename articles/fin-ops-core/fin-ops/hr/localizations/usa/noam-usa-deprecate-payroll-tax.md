@@ -24,6 +24,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Deprecation of US payroll tax updates
 
+[!INCLUDE [banner](../../../../../includes/banner.md)]
+
 This article describes the deprecation of tax updates for US payroll.
 
 Starting with Microsoft Dynamics 365 Finance version 10.0.40, tax updates are retired for the US payroll feature. Customers can now choose among different third-party solutions that are available on Marketplace and other integrations with Dynamics 365 Human Resources.

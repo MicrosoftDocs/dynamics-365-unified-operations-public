@@ -18,7 +18,7 @@ ms.assetid: a765a61c-52a3-45c5-b578-68b9249c592a
 
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 20 (September 2018)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 20. This version was released in September 2018 and has a build number of 7.0.5030.
 

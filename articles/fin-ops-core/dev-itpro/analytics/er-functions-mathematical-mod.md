@@ -16,6 +16,8 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # MOD ER function
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The `MOD` function is available for Finance and Operations **10.0.49** and later.
 
 The `MOD` function returns the remainder after a number is divided by another number. In other words, it returns the modulus of the specified numbers.

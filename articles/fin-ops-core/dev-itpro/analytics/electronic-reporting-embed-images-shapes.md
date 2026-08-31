@@ -16,7 +16,7 @@ ms.assetid:
 
 # Embed images and shapes in documents that you generate by using ER
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use the Electronic reporting (ER) tool to design reports that you can run to generate required electronic documents. Use Microsoft Excel or Microsoft Word documents to specify the layout of a report. The ER Operations designer lets you attach the Excel or Word document as a template for the report. The named elements in the attached template are associated with the format elements of the ER report. Format elements of the report are bound to data sources. These elements specify the data that will be entered, at runtime, in the documents that are generated.
 

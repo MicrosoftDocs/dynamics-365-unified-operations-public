@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Platform updates for version 10.0.14 of finance and operations apps (November 2020)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the features that are included in the platform updates for version 10.0.14 of finance and operations apps. This version has a build number of 7.0.5778 and is available on the following schedule:
 

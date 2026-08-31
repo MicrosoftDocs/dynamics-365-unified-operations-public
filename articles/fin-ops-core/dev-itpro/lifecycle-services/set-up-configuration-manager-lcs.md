@@ -15,7 +15,7 @@ ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
 
 # Set up Configuration manager
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

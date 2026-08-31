@@ -16,7 +16,7 @@ ms.assetid: 018a11ae-854c-4f36-9358-8c39baca882d
 
 # Generate electronic documents and update application data by using ER
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can design Electronic reporting (ER) formats that the application uses to generate outgoing electronic documents. You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data.
 

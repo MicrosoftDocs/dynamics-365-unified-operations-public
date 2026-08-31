@@ -16,7 +16,7 @@ ms.custom:
 
 # Public JavaScript APIs for extensible controls
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article shows where to find documentation about the public JavaScript APIs that can be used by extensible controls. 
 

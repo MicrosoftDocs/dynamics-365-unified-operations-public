@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-07-01
 
 # Upgrade from AX 2012 – Data upgrade FAQ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
 

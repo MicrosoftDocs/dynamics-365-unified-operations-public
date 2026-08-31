@@ -15,7 +15,7 @@ ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
 
 # Tools add-ins for Visual Studio
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article reviews the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
 

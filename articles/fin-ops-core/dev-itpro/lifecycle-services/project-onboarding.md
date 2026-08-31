@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Project onboarding
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 

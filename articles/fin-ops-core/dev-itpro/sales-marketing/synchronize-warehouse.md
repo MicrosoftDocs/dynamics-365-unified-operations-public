@@ -15,7 +15,7 @@ ms.search.validFrom: 2018-12-01
 
 # Synchronize warehouses from Supply Chain Management to Field Service
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article discusses the templates and underlying tasks that are used to synchronize warehouses from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 

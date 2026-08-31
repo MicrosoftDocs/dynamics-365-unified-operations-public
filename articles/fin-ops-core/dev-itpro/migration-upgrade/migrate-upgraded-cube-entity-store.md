@@ -16,7 +16,7 @@ ms.assetid: e992cdd8-abe8-42d0-97ad-6165822abbba
 
 # Migrate upgraded AX 2012 R3 sales cubes to the entity store
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In this tutorial, you migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a finance and operations application. You use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # API, class, and table resources
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes where to find API documentation in Visual Studio and Microsoft Learn.
 

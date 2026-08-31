@@ -13,6 +13,8 @@ ms.date: 8/17/2026
 
 # Security for Dynamics 365 ERP MCP
 
+[!INCLUDE [banner](../../../../includes/banner.md)]
+
 The Dynamics 365 ERP MCP server lets agent clients connect to Dynamics 365 finance and operations apps through the Model Context Protocol (MCP). The interaction model is different from traditional integrations because requests are initiated through an AI assistant, but the security model doesn't change. MCP requests are governed by the same authentication, authorization, business logic, and data controls that apply to other finance and operations app experiences.
 
 ## Security model

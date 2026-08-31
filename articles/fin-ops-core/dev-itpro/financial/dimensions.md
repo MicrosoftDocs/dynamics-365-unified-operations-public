@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Support for different dimension patterns
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To support different dimension patterns, use a set of framework data entities as data sources in other entities that involve dimensions.
 

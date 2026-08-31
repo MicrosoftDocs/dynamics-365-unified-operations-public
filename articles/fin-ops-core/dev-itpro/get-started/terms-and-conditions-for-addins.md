@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.7
 
 # Terms and conditions for add-ins to Microsoft Dynamics 365 finance and operations apps
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Add-ins are features of Microsoft Dynamics 365 finance and operations apps. The terms and conditions of the agreement under which you obtained this service govern the use of finance and operations and related add-ins that are generally available.
 

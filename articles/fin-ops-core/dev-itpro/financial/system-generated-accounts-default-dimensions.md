@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Avoid validation errors for dynamic accounts in default dimensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to keep dynamic accounts separate from default financial dimensions in customizations and integrations. A dynamic account identifies the account for a journal line based on its account type. Mixing a non-ledger dynamic account into a default dimension can cause validation errors that block journal entry, posting, batch, or integration operations. Use this guidance when your customizations and integrations create accounts, copy dimensions, or call financial dimension APIs.
 

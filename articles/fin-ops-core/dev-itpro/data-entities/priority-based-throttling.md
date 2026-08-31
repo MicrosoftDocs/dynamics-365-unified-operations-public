@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Platform update 37
 
 # Throttling prioritization
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about priority-based throttling for Open Data Protocol (OData) and custom service-based integrations.
 

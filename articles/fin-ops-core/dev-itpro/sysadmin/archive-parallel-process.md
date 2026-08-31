@@ -10,7 +10,7 @@ ms.topic: article
 
 # Parallel processing for archive jobs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Finance and Operations archive jobs can now run simultaneously across legal entities. Previously, jobs ran one at a time in sequential order.
 

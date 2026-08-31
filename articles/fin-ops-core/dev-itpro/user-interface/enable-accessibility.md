@@ -15,7 +15,7 @@ ms.custom:
 
 # Accessibility in forms, products, and controls
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes best practices for enabling accessibility in your form, product, or control. It also includes an accessibility checklist.
 

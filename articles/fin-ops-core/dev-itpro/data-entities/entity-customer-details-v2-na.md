@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customer details V2 entity
 description: Learn about the Customer details V2 data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
@@ -11,6 +11,8 @@ ms.collection: FastTrack
 ---
 
 # Customer details V2 entity
+
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 The **Customer details V2** entity supports updating the specialized fields for a customer. It doesn't support creating customers.
 

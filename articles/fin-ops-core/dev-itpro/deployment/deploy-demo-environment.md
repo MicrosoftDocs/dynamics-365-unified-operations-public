@@ -17,7 +17,7 @@ ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
 
 # Deploy a demo environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to deploy a demo environment on Microsoft Azure by using Microsoft Dynamics Lifecycle Services. This article applies to deploying a demo environment for:
 

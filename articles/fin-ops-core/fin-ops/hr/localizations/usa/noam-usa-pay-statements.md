@@ -16,7 +16,7 @@ ms.assetid: b20b94d2-6d5e-45a8-88c3-f8657caaee13
 
 # Generate and work with pay statements
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes the process for generating pay statements. It also describes other tasks, such as reversing a pay statement, that you might have to complete after you generate pay statements.
 

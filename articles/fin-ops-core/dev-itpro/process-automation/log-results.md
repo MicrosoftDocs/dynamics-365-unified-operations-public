@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Log results and messages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The process automation framework supports logging of results and messages. There are two reasons why a process should log results and messages:
 

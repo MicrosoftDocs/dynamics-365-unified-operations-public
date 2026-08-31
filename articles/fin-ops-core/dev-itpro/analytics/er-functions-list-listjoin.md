@@ -16,7 +16,7 @@ ms.assetid:
 
 # LISTJOIN ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `LISTJOIN` function returns a *Record list* value that represents a new joined list of records that is created from the specified arguments.
 

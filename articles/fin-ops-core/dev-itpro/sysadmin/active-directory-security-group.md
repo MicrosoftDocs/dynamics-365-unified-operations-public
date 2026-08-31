@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 7.0
 
 # Microsoft Entra ID security groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Microsoft Entra ID security groups** is a legacy feature that organizations use to assign roles and organizations to users based on their memberships in Microsoft Entra ID security groups. Learn more about Microsoft Entra ID security groups in [Microsoft Entra ID security groups](/windows-server/identity/ad-ds/manage/understand-security-groups). The feature also enables just-in-time (JIT) provisioning of users when they sign in to the finance and operations environment for the first time.
 

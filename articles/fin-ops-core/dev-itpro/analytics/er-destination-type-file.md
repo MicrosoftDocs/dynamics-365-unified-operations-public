@@ -16,7 +16,7 @@ ms.assetid:
 
 # File destination
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can configure a file destination for each FOLDER or FILE component of an Electronic reporting (ER) format configured to generate outbound documents. Based on the setting of the destination, the generated document is available for download from the web browser.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Comparison of cloud and on-premises features
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article shows a comparison of features available in cloud versus on-premises versions for the following applications:
 

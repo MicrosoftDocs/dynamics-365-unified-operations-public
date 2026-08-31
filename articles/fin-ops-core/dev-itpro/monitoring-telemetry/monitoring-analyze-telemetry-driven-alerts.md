@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Use telemetry-based alerts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When a [!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] environment emits telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], you can use that telemetry to create proactive alerts. Here are some examples of alerting scenarios:
 
@@ -31,7 +31,9 @@ Use the following tools to define and set up alerts on telemetry events:
 
 [!INCLUDE[pbimetrics](includes/include-telemetry-alerting-powerbi-metrics.md)]
 
-### Create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]
+### Create alerts in
+
+[!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]
 
 To create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], follow these steps:
 

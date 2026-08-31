@@ -16,7 +16,7 @@ ms.custom:
 
 # Microsoft Office-style user interface in Business document management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 By using Business document management, business users can edit business document templates by using a Microsoft 365 Apps for business or the appropriate Microsoft 365 desktop applications. Edits might include design changes or new deployments, or users might add placeholders to include more data without changing the source code. For more information about how to work with Business document management, see [Business document management overview](er-business-document-management.md).
 

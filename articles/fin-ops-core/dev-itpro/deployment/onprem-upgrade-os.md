@@ -15,6 +15,8 @@ ms.service: dynamics-365-op
 
 # Upgrade Windows Server in Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to upgrade Windows Server in your Microsoft Dynamics 365 Finance + Operations (on-premises) environments.
 
 ## Prerequisites for upgrading Windows Server

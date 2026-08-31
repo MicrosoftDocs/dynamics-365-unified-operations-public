@@ -16,7 +16,7 @@ ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 
 # Warehouse performance Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes what's included in the **Warehouse performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 

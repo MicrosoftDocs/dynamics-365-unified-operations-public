@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage access to sensitive data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 System administrators can use the **User log** page to keep an audit log of users who sign in to the system. Knowing who signs in can help protect your organization's data. The enhanced user logging capability helps administrators identify roles that provide access to sensitive data.
 

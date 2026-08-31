@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Encryption in finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Encryption at rest
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Define the dependency of ER configurations on other components
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To complete these steps, you must first complete the steps in the task guide, **ER Manage model mapping configurations**, and you must have access to Microsoft Dynamics Lifecycle Services.
 

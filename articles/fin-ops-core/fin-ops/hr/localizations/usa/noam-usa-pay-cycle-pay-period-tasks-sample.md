@@ -16,7 +16,7 @@ ms.assetid: d635184b-0905-43ab-841d-9f6cc95ab861
 
 # Set up pay cycles and pay periods
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 Pay cycles determine the intervals that workers are paid in. This article explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position.
 

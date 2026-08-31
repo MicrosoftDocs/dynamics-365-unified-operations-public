@@ -15,7 +15,7 @@ ms.search.validFrom: 2019-07-15
 
 # Integrated customer master
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can master customer data in more than one Dynamics 365 application. For example, you can create a customer row through sales activity in Dynamics 365 Sales (a customer engagement app), or you can create a customer row through retail activity in Dynamics 365 Commerce (a finance and operations app). No matter where the customer data originates, it's integrated behind the scenes. Integrated customer master gives you the flexibility to master customer data in any Dynamics 365 application and provides a comprehensive view of the customer across the Dynamics 365 application suite.
 
@@ -38,7 +38,8 @@ When a non-sellable contact participates in a quotation or order process, set **
 Customer data includes all information about the customer, such as the customer group, addresses, contact information, payment profile, invoice profile, and loyalty status. A collection of table maps works together during customer data interaction, as shown in the following table.
 
 | Finance and operations apps | Customer engagement apps         | Description |
-----------------------------|---------------------------------|------------
+---
+-------------------------|---------------------------------|------------
 | [CDS Contacts V2](mapping-reference.md#115) | contacts | This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors. |
 | [Customer groups](mapping-reference.md#126) | msdyn_customergroups | This template synchronizes customer group information. |
 | [Customer payment method](mapping-reference.md#127) | msdyn_customerpaymentmethods | This template synchronizes customer payment method information. |

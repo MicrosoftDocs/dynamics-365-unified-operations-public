@@ -17,7 +17,7 @@ ms.assetid:
 
 # Performance and memory considerations for ER
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how the Electronic reporting (ER) engine manages memory during report execution, and how that management affects reports that process large volumes of data.
 

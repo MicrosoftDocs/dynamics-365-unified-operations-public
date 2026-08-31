@@ -15,7 +15,7 @@ ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
 
 # Add financial dimensions to aggregate measurements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This feature lets power users include financial dimensions in ready-made Microsoft Power BI reports. Power users can also create new Power BI reports that use financial dimensions.
 

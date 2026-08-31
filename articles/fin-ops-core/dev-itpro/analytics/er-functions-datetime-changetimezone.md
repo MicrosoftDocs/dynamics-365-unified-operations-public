@@ -16,7 +16,7 @@ ms.assetid:
 
 # CHANGETIMEZONE ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `CHANGETIMEZONE` function returns a *[DateTime](er-formula-supported-data-types-primitive.md#datetime)* value in Coordinated Universal Time (Greenwich Mean Time \[GMT\]) that is converted from a given date/time value in one time zone to a date/time value in another time zone.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Available reports for security 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The following reports are available to help with security, licenses, roles, and duties:
 
@@ -26,7 +26,6 @@ The following reports are available to help with security, licenses, roles, and 
 
 ## User activity aging report
 
-[!include[banner](../../../finance/includes/banner.md)]
 
 The **User activity aging** report tracks information about sign-in to Dynamics 365 finance and operations apps. Therefore, it helps administrators effectively monitor user activity. Some of the most common monitoring ranges are 10, 30, 60, 90, and 120 days. The day ranges are configurable and can be customized to suit the organization's needs. The data on this report can be used to optimize licensing costs.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.30
 
 # Branching overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Branching configurations for X++ repositories (repos) vary, depending on the development team's preference and the finance and operations app lifecycle. If the implementation already has a preferred branching structure, and it meets the [minimum branching criteria](#minimum-branching-criteria) outlined later in this article, use it to manage new development. Alternatively, evaluate the other branching structure options that are explained in this article.
 

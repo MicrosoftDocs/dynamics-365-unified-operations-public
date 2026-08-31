@@ -17,6 +17,8 @@ ms.collection: get-started
 
 # Set up dual-write security roles and permissions
 
+[!INCLUDE [banner](../../../../includes/banner.md)]
+
 This article describes the special security roles and permissions that dual-write requires to work as expected.
 
 ## Assign security roles to Microsoft Dataverse users

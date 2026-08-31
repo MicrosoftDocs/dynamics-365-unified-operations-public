@@ -13,7 +13,7 @@ ms.assetid: 8e32ba2f-6cc1-4bfd-9c79-42a8392fa812
 
 # Filters and Toolbar subpatterns
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
 

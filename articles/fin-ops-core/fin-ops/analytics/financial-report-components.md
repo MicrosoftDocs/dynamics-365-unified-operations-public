@@ -16,7 +16,7 @@ ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 
 # Financial report components
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes how the components, or building blocks, of report definitions are used in financial reporting. These building blocks include row definitions, column definitions, and reporting tree definitions. The article explains how to organize and lock building blocks.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use formulas as parameters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Regression suite automation tool (RSAT) uses parameter files where you can change values for tests. You can specify fixed values or even use Microsoft Excel formulas to make values more dynamic. Excel is the client that's used to maintain the parameters, and the most recent versions of RSAT use Power Fx to evaluate formulas during playback.
 

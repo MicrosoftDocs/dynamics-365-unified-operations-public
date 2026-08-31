@@ -16,7 +16,7 @@ ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
 
 # Lifecycle Services user guide
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [Lifecycle deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

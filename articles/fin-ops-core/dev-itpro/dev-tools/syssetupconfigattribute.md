@@ -14,6 +14,8 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # SysSetupConfigAttribute attribute
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The system processes X++ classes that implement the `SysSetup` interface as part of database synchronization. Custom X++ classes that implement `SysSetup` also run as part of database synchronization.
 
 Attributes provide a way to associate metadata, or declarative information, with code such as assemblies, types, methods, and properties. After you associate an attribute with a program entity, you can query it at runtime by using reflection.

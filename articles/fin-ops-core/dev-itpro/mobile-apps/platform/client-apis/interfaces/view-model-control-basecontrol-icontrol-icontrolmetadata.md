@@ -13,7 +13,7 @@ ms.custom:
 
 # ControlMetadata type
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Interface for the metadata of a control. Overriding control metadata can modify a controls' look and behavior.

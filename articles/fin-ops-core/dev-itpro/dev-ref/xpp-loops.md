@@ -15,7 +15,7 @@ ms.devlang: xpp
 
 # X++ loop statements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes loop statements in X++. 
 

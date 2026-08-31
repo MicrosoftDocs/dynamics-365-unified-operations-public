@@ -16,7 +16,7 @@ ms.assetid:
 
 # Backup storage of ER templates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 By using the [Electronic reporting (ER) overview](general-electronic-reporting.md), business users can configure formats for outbound documents that meet the legal requirements of various countries and regions. Configured ER formats can use predefined templates to generate outbound documents in various formats, such as Microsoft Excel workbooks, Microsoft Word documents, or PDF documents. The templates are filled with data that the configured dataflow for generated documents requires.
 

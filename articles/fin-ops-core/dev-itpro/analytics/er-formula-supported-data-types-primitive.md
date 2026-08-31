@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Supported primitive data types for Electronic reporting formulas
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the primitive data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. Here is a list of the primitive data types:
 

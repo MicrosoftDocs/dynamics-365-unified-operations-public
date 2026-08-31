@@ -17,7 +17,7 @@ ms.custom:
 
 # Keyboard shortcuts for extensible controls
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Keyboard shortcuts are an important consideration when you create any extensible control. This article provides information that will help you choose keyboard shortcuts for your extensible controls. It also outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 

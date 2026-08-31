@@ -18,7 +18,7 @@ ms.search.validFrom: 2020-01-06
 
 # Dual-write overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 ## What is dual-write?

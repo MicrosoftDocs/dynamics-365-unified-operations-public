@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 
 # Import files in XML format with optional attributes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can design Electronic reporting (ER) formats to parse incoming electronic documents in XML format. You can specify certain attributes of XML elements as optional in the designed ER format. This option allows you to handle incoming files with and without these XML attributes properly. You can then use the content from these files to update application data.
 

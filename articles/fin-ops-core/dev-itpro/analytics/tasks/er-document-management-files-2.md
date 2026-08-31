@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelCo
 
 # ER Use Document Management files in format outputs (Part 2 - Extend data model)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. You can perform these steps in any company.
 

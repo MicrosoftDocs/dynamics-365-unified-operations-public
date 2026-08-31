@@ -20,7 +20,7 @@ ms.custom:
 
 [!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article reviews Microsoft Office integration concepts and features. The integration depends on several technologies:
 

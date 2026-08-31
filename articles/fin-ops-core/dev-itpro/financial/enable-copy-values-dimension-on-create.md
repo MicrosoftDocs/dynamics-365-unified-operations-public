@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Enable copy values on create for financial dimensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to enable the **Copy values to this dimension on each new [DimensionName] created** feature for custom entity-backed financial dimensions or for entity-backed dimensions that don't support it out of the box.
 

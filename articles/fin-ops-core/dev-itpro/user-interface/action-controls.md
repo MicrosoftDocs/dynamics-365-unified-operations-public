@@ -18,7 +18,7 @@ ms.assetid: 93b61e0c-b9bc-48fc-a9b7-874a8b0aeebd
 
 # Action controls
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Actions are an essential component of any enterprise resource planning (ERP) system. Users trigger actions by using a mouse click, keyboard, or touch.
 

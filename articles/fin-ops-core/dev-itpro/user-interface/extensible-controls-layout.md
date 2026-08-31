@@ -17,7 +17,7 @@ ms.custom:
 
 # Extensible control layout guidelines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.
 

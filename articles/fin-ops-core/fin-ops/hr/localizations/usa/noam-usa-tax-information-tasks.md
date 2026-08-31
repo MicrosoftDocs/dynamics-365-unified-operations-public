@@ -16,7 +16,7 @@ ms.assetid: 5fc7b03b-0a18-4dd5-a717-85e40fbbf357
 
 # Set up taxes, tax regions, tax codes, and tax groups
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 

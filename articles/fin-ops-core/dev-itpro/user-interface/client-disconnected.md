@@ -16,7 +16,7 @@ search.app:
 
 # Client internet connectivity
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The configuration of the local network for a deployment of Dynamics 365 Finance + Operations (on-premises) can affect the features that are available in the web client. If the network configuration doesn't allow a client machine to access the internet, the following degradations in the web client occur:
 

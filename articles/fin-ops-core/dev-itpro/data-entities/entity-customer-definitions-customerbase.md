@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customer definitions entity
 description: Learn about the Customer definitions data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
@@ -11,6 +11,8 @@ ms.collection: FastTrack
 ---
 
 # Customer definitions entity
+
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 The **Customers definitions** entity supports creating and updating customers; and includes the most common fields for a typical customer.
 

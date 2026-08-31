@@ -15,7 +15,7 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 # Trace the execution of ER formats to troubleshoot performance issues
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As part of the process of designing Electronic reporting (ER) configurations to generate electronic documents, you define the method that gets data out of the application and puts it in the generated output. The ER performance trace feature helps you significantly reduce the time and cost involved in collecting the details of ER format execution and using them to troubleshoot performance problems. This tutorial provides guidelines about how to take performance traces for executed ER formats, and how to use the information from these traces to help improve performance.
 

@@ -13,7 +13,7 @@ ms.search.validFrom: 2020-01-06
 
 # Company concept in Dataverse
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 In finance and operations, the concept of a *company* is both a legal construct and a business construct. It's also a security and visibility boundary for data. Users always work in the context of a single company, and most of the data is striped by company.
 

@@ -15,7 +15,7 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 # Create a workflow category
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 When you create a workflow type, you must assign it to a workflow category. The workflow category determines whether the workflow type is available in a specific module. If an appropriate workflow category doesn't already exist, you must create it.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # PartMetadata type
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Part metadata type.

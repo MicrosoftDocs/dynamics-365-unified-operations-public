@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Deploy and use a continuous build and test automation environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to deploy and use an environment that supports continuous build and test automation.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ and C# comparison
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article compares X++ and C# syntax and programming.
 
@@ -567,11 +567,13 @@ The output to the Infolog is as follows:
 
 ```xpp
 Message (14:16:08)
--------- SPORTS --------
+---
+----- SPORTS --------
 1 , []
 2 , []
 3 , [Baseball]
--------- YEARS --------
+---
+----- YEARS --------
 1 , 0
 2 , 0
 3 , 0
@@ -626,11 +628,13 @@ public class Pgm_CSharp
 The output from the C# program to the command line console is as follows:
 
 ```Console
--------- SPORTS --------
+---
+----- SPORTS --------
 0 , []
 1 , []
 2 , [Baseball]
--------- YEARS --------
+---
+----- YEARS --------
 0 , [0]
 1 , [0]
 2 , [0]

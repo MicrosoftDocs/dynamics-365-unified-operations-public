@@ -16,7 +16,7 @@ ms.assetid: d6530f02-bbee-4d8e-94e7-173aecb4452e
 
 # Set up payroll for workers
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This article provides information about these tasks and the fields that are used to complete them.
 

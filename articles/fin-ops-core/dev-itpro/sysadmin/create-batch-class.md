@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform Update50
 
 # Create a batch class
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 finance and operations apps, batch processing efficiently performs tasks in the background without affecting system performance. This article explains how to create a batch class by using `RunBaseBatch` as the base class.
 

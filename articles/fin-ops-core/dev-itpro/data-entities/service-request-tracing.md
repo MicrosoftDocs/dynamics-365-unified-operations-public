@@ -15,7 +15,7 @@ ms.search.validFrom: 2022-04-07
 
 # Service request tracing
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As a best practice when you develop data integrations with finance and operations service endpoints, include a request identifier in the request header. By using this identifier, you can trace the request through the service. Your client application should generate and log a client request ID (`x-ms-client-request-id`) value and send it in the application programming interface (API) request header. This value is a globally unique identifier (GUID) that uniquely identifies each client request.
 

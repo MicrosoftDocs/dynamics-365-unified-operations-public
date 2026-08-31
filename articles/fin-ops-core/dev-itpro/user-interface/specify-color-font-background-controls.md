@@ -17,7 +17,7 @@ ms.custom:
 
 # Font and background colors for input, table, and grid controls
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the new color picker control that lets users select a color.
 

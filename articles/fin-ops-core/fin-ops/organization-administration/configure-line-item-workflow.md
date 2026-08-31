@@ -16,7 +16,7 @@ ms.assetid: 3237347e-71d5-4569-bc9a-0d0fc9410b78
 
 # Configure line item workflows
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure a line item workflow element.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Respond by using EventHandlerResult
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Some delegate methods request a response from subscribing delegate handler methods. The delegate calling logic uses the response from a potential subscriber when it continues execution after the response is received. These delegate methods usually have a signature that has an **EventHandlerResult** parameter as the last parameter. However, because of the support for the **EventHandlerAcceptResult** and **EventHandlerRejectResult** types, the parameter can be of any type that implements the **IEventHandlerResult** interface.
 

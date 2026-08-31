@@ -16,6 +16,8 @@ ms.custom:
 
 # Prepare for finance and operations apps user license validation
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article helps administrators prepare for **per-user license validation** for Dynamics 365 finance and operations apps. It provides **step-by-step** guidance to align licensing with security roles and prevent user access disruptions when per-user license validation goes into effect.
 
 Each step includes **Why**, **What**, and **How** explanations that are clear, actionable, and aligned with security governance best practices.

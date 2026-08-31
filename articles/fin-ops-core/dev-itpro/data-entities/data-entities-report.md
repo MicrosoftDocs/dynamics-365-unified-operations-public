@@ -17,7 +17,7 @@ ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 
 # Find information about standard data entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]

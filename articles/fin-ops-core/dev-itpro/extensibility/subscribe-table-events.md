@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Perform business actions throughout the lifecycle of table records
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As part of your business workflows, you regularly insert, update, and delete records. To customize the system behavior, hook into some of the record operations that are most often used. For example, you can fill extra fields on the record, perform extra data validation, or insert extra data into related tables. Several events that are available on the table let you achieve those customizations through extensions. Your code can subscribe to these events, and can insert your logic before or after the event runs.
 

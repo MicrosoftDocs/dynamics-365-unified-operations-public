@@ -16,7 +16,7 @@ ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
 
 # Plan for the global address book and other address books
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the considerations and decisions that you must make during the planning process before you set up and configure the global address book and any additional address books. Some of the decisions require that you confirm the decisions made for other areas of the product, such as the organization hierarchy.
 

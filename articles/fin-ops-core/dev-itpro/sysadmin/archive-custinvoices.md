@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Archive Dynamics 365 Finance customer invoice data
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to archive Microsoft Dynamics 365 Finance customer invoice data.
 

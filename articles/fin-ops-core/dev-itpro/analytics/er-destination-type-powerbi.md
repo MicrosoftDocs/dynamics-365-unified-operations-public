@@ -16,7 +16,7 @@ ms.assetid:
 
 # Power BI destination
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can configure a Microsoft Power BI destination for each folder or file component of an Electronic reporting (ER) format configured to generate outbound documents. Based on the setting of the destination, a generated document is stored in a previously configured SharePoint folder.
 

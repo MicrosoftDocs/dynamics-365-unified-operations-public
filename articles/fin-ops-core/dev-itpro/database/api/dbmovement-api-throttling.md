@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.0
 
 # Throttling
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of throttling for the Database Movement application programming interface (API).
 

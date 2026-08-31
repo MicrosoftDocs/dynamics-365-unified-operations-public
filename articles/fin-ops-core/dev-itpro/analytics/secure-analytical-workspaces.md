@@ -15,7 +15,7 @@ ms.assetid:
 
 # Secure analytical workspaces and reports by using Power BI Embedded
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This feature is supported in Microsoft Dynamics 365 Finance, Enterprise edition (July 2017) (version 7.2), and later releases.

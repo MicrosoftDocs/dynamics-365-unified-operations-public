@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # SPLITLISTBYLIMIT ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `SPLITLISTBYLIMIT` function splits the specified list into a new list of sublists (batches). The number of records in each batch is dynamically calculated. The function then returns the result as a new *Record list* value that consists of the batches.
 

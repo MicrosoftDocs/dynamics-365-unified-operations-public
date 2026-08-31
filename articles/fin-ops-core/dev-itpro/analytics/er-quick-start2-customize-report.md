@@ -17,7 +17,7 @@ ms.assetid:
 
 # Adjust an ER format to generate a custom electronic document
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The procedures in this article explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
 

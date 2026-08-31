@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Monitor replication for the Data migration toolkit
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Data migration toolkit for Microsoft Dynamics 365 is used for self-service environments. It uses SQL replication to transfer data from the customer's on-premises SQL Server instance to the Azure SQL database that's used for Dynamics 365.
 

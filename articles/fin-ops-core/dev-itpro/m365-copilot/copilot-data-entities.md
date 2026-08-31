@@ -14,6 +14,8 @@ ms.reviewer: johnmichalak
 
 # Entities eligible for copilot
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article contains a list of entities eligible for copilot.
 
 - AbbreviationsEntity

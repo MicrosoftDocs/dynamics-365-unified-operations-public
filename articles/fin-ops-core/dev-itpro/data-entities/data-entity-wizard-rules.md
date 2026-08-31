@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Data entity wizard rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 32
 
 # What's new or changed in Platform update 32 for finance and operations apps (February 2020)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article lists features that are new or changed for Platform update 32 for finance and operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
 

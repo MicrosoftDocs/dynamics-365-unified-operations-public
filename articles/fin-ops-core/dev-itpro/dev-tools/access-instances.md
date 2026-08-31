@@ -17,7 +17,7 @@ ms.custom:
 
 # Deploy and access development environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to access development instances, configure local development virtual machines (VMs), and find important configuration settings for developers and administrators.
 

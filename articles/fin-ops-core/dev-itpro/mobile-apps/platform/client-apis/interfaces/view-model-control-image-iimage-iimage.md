@@ -13,7 +13,7 @@ ms.custom:
 
 # Image type
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Image control interface for representing images in the mobile app.

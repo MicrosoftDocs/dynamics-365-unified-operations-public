@@ -18,7 +18,7 @@ ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 
 # Electronic reporting (ER) overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that are designed and released as part of the solution.
 

@@ -16,7 +16,7 @@ ms.custom:
 
 # Tabular Fields subpattern
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format. 
 

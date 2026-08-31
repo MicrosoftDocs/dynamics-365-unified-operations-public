@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.0
 
 # Environment lifecycle operations - Core concepts
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Every day, administrators perform lifecycle operations on their environments. These operations include common activities such as backing up and restoring data and refreshing sandbox environments with new transactions from production instances. This article provides an overview of core concepts for environment lifecycle operations and includes links to more detailed scenario articles.
 

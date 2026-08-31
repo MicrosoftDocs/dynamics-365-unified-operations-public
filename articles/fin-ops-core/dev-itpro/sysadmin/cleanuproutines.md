@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, cleanup routines are available in various modules. This article provides an overview of the routines that are currently available. The information is organized according to modules.
 

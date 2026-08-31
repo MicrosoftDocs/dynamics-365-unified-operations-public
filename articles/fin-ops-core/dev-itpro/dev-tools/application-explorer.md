@@ -15,7 +15,7 @@ ms.assetid: cf2154eb-56a9-4867-b1ef-85690440b177
 
 # Application Explorer
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article reviews Application Explorer, and the various views and filtering methods in it. The article also describes how to work with elements in Application Explorer.
 

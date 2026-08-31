@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # List of ER functions in the container category
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [Electronic reporting (ER)](general-electronic-reporting.md) container [functions](er-formula-language.md#Functions) can be used to perform operations that involve data sources of the *Container* data type. These operations occur when the processing data represents a collection of binary data in binary large object (BLOB) format. This article provides a summary of these functions.
 

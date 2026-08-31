@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 7.3
 
 # Optimization advisor overview
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes how you can use Optimization advisor to help ensure optimal configuration of finance and operations.
 

@@ -20,7 +20,7 @@ ms.custom:
 
 # In-place upgrade process for on-premises environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides the detailed process for upgrading on-premises environments of Finance + Operations (on-premises) from version 7.x to 10.0.x.  
 

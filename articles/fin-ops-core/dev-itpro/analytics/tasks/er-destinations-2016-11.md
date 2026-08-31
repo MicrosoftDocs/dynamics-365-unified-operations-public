@@ -15,7 +15,7 @@ ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestination
 
 # ER Configure destinations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file. The demo data company used to create this procedure is DEMF. Germany is the country\region of the legal entity's primary address, but you can use any legal entity for this procedure. 
 

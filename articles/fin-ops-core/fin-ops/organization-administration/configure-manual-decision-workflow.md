@@ -16,7 +16,7 @@ ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 
 # Configure manual decisions in a workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This article explains how to configure the properties of a manual decision.

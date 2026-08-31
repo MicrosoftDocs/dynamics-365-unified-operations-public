@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.36
 
 # Financial tag defaulting rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Financial tag defaulting enables you to define rules as Power Fx formulas that automatically populate financial tag fields on records such as `LedgerJournalTrans`. When you create, modify, or save a record, the applicable rules execute to default tag values.
 

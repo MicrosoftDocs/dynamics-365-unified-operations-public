@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 15
 
 # Alerts overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## About alerts
 Alerts from a notification system for critical events in the system. Use alerts to stay informed about events that you want to track during the workday. You can easily create your own set of alert rules so that you're alerted about deliveries that are overdue, orders that are deleted, prices that change, or other events that you must respond to.

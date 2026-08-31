@@ -15,6 +15,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Deploy assets by using Azure Pipelines
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 You can use the **Dynamics Lifecycle Services Asset Deployment** task in Microsoft Azure DevOps to automate the deployment of assets that are stored in the Asset library in Microsoft Dynamics Lifecycle Services to specific environments. However, this task has the following limitations that you should consider:
 
 * The task is available only in **Releases** pipelines.

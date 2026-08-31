@@ -13,7 +13,7 @@ ms.custom:
 
 # Part type
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Part control type. A part is a container control that contains only a page, allowing for a page to be embedded within a page.

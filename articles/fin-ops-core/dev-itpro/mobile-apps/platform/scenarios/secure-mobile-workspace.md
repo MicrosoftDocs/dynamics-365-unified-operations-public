@@ -14,7 +14,7 @@ ms.custom:
 
 # Help secure mobile workspaces
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 This article describes how to limit a user's access to a workspace.

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.12
 
 # Enable Microsoft Dataverse virtual entities
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Because many entities that are available in finance and operations apps are enabled for Open Data Protocol (OData), the entities aren't available as virtual entities in Microsoft Dataverse by default. After you complete configuration for finance and operations apps virtual entities in Dataverse, you can enable the virtual entities in the Dataverse environment. Administrators can then determine which entities to expose as virtual entities that can be used in Dataverse.
 

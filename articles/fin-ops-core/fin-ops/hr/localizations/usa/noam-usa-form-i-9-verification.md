@@ -16,7 +16,7 @@ ms.assetid: d740ddb6-b8d7-4c12-b920-1f8afa25d026
 
 # Form I-9 verification
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who work in the United States. The form documents that the employer verified the identity of the new employee and that the employee is authorized to work in the United States.
 

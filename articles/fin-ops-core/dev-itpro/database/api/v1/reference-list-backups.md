@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.0
 
 # List database backups
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 You can retrieve a list of database backups from the Project asset library.
 

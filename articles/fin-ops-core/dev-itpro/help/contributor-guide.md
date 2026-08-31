@@ -14,6 +14,8 @@ ms.dyn365.ops.version: Operations
 
 # Contribute to the Help
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes how to contribute to our content in our [MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) GitHub repo.
 
  For information about how to deploy custom Help, see [Custom Help overview](custom-help-overview.md).

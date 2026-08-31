@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-06
 
 # Filter intercompany orders to avoid syncing Orders and OrderLines
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can filter intercompany orders so that the **Orders** and **OrderLines** tables aren't synced. In some scenarios, the intercompany order details aren't required in a customer engagement app.
 

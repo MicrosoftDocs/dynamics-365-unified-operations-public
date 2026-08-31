@@ -17,7 +17,7 @@ ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 
 # Electronic signatures overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of electronic signatures and describes how you can use them.
 

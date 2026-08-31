@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Run processes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To run in the process automation framework, a process must implement the **ProcessAutomationTask** interface. The framework uses this interface to provide an instance of **ProcessScheduleWorkItem**. That instance contains information about the series, the occurrence that is being run (if applicable), and the execution ID. You must create the batch task that has to be run, and you must provide the task to the framework. The framework then creates the batch header and the tasks that are provided.
 

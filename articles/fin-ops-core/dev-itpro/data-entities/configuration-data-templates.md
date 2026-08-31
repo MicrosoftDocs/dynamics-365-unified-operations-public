@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 7
 ---
 # Configuration data templates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Configuration data templates are predefined lists of entities for each module area that you can use in a data project. You can create, view, and modify these templates by using the **Template** page in the **Data management** workspace.
 

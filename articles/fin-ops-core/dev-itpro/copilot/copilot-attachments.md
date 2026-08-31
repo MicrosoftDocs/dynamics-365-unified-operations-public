@@ -15,7 +15,7 @@ ms.search.region: Global
 
 # File attachments in Copilot for finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The chat experience for Copilot for finance and operations apps lets you attach files, like a screenshot of the current browser window for your finance and operations apps client session. The file is part of your chat session, and you work with it by adding extended topics or tools to Copilot to create custom experiences for your environment.
 

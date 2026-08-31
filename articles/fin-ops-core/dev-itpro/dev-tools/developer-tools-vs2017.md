@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Visual Studio requirements for X++
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the Visual Studio components that are required to run the **Visual Studio** extension for X++.
 

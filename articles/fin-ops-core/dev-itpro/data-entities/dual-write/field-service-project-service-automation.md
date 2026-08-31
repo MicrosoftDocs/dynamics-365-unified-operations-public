@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Support for Field Service and Project Service Automation solutions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Support for Field Service solutions
 

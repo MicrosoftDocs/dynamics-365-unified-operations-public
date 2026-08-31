@@ -15,7 +15,7 @@ ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
 
 # Extending number of decimals for selected data types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to extend the number of decimals for selected data types. You can create extensions of specific extended data types of the type Real, to change the number of decimals for certain scenarios. To change the number of decimals, change the **NoOfDecimals** property as needed.
 

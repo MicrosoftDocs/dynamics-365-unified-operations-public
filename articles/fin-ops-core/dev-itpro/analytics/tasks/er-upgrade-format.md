@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDrop
 
 # ER Upgrade your format by adopting a new, base version of that format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration. This procedure explains how to create a custom version of a format based on the format received from a configuration provider (CP). It also explains how to adopt a new, base version of that format.
 

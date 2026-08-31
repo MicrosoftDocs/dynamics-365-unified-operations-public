@@ -16,7 +16,7 @@ ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 
 # Configure workflow properties
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure the various properties of a workflow.
 

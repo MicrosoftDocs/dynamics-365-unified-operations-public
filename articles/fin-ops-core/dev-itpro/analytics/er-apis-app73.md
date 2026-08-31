@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # ER framework API changes for Application update 7.3
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how the API of the Electronic reporting (ER) framework is changed in Dynamics 365 Finance, Enterprise edition Application update 7.3.
 

@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Computed columns and virtual fields in data entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have. It includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.
 

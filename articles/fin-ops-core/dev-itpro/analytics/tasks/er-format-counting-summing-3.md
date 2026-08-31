@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner, ERDataSourceA
 
 # ER Configure format to do counting and summing (Part 3 - Use computations to make the output)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output. You can perform these steps in any company.
 

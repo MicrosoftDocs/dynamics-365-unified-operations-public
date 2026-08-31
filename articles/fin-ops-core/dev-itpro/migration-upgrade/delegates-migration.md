@@ -15,7 +15,7 @@ ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d
 
 # Solve dependencies among models by using delegates during code migration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how delegate methods define a contract between the delegate instance and the delegate handler.
 

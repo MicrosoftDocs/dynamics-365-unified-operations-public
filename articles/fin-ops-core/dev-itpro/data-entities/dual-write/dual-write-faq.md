@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dual-write FAQ
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article lists frequently asked questions about dual-write and provides brief answers to help you quickly get the information that you need.
 

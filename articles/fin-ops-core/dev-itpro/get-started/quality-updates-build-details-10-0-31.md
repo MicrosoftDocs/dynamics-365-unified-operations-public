@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.29
 
 # Version 10.0.31 PQU release 3 build information
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 | WorkItemID | Title | Release | Build | Lifecycle Services link | Area | Sub-area |
 | --- | --- | --- | --- | --- | --- | --- |

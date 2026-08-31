@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Use Business document management to edit templates
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Business users can access business document templates for editing in the **Business document management** workspace. Only the following users can access the **Business document management** workspace:
 

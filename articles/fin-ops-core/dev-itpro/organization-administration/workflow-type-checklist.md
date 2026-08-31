@@ -15,7 +15,7 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 # Workflow type checklist
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes the steps that are required to create a new workflow type. Use workflow types to create configurations for a workflow.
 

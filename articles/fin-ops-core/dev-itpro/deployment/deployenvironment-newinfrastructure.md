@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1.1
 
 # Deploy a new environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
 This article walks through the process of deploying sandbox (Tier 2 and above) and production environments by using the [self-service deployment](infrastructure-stack.md) experience. Use the following procedure to deploy these environments.

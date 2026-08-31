@@ -16,7 +16,7 @@ ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 
 # Reporting tree definitions in financial reports
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides information about reporting tree definitions. A reporting tree definition is a report component, or building block, that helps define the structure and hierarchy of your organization.
 

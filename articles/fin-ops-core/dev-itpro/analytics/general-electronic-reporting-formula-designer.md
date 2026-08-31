@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # Formula designer in Electronic reporting (ER)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. The formulas support various types of functions, including text, date and time, mathematical, logical, information, and data type conversion functions, as well as other business domain–specific functions.
 

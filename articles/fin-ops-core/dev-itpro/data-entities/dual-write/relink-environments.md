@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-04-07
 
 # Unlink and relink dual-write environments
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you unlink and relink a Dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to reset the connection, and how to delete the data in the key tables.
 

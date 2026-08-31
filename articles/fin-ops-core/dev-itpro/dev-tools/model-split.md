@@ -15,7 +15,7 @@ ms.assetid: feaa09c5-efc7-4594-921e-b42536b18852
 
 # Model split
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the split of the stack into three main models: the Application Platform, the Application Foundation, and the Application Suite.
 

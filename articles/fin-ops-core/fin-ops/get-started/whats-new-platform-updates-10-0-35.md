@@ -16,7 +16,7 @@ ms.search.validFrom: 2022-10-14
 
 # Platform updates for version 10.0.35 of finance and operations apps (August 2023)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article lists the features that are included in the platform updates for version 10.0.35 of finance and operations apps. This version has a build number of 7.0.6972 and is available on the following schedule:
 

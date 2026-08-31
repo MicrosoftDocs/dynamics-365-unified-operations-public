@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 10.0.6
 
 # Design a new ER configuration to generate reports in Word format
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To generate reports as Microsoft Word documents, design a template for the reports by using, for example, the Word desktop application. The following illustration shows the sample template for the control report that you can generate to show details of processed vendor payments.
 

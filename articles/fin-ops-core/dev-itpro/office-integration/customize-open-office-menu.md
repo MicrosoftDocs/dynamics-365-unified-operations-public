@@ -19,7 +19,7 @@ ms.custom:
 
 [!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Most pages include an Open in Microsoft Office menu. This topics provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 

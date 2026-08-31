@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Considerations for initial synchronization
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Before you start dual-write on a table, run an initial synchronization to handle existing data on both sides: finance and operations apps and customer engagement apps. You can skip the initial synchronization if you don't need to sync data between the two environments.
 

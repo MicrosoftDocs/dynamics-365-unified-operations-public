@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Open Data Protocol (OData)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 

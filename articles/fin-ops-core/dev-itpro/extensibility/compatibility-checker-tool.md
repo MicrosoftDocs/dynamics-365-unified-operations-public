@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 34
 
 # Compatibility checker tool
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The compatibility checker tool can detect metadata breaking changes against a specified baseline release or update. In this way, it helps ensure backward compatibility. Microsoft uses the tool to help ensure metadata compatibility.
 

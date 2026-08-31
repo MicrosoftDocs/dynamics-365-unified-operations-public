@@ -17,7 +17,7 @@ ms.custom:
 
 # Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).

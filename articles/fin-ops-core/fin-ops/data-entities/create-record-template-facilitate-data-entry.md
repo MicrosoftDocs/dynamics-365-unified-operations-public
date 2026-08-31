@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a record template to facilitate data entry
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article shows how to create a record template so that you don't have to enter field values that you use often for each new record. In this procedure, you create a new record for new laptops that you add to your fixed assets. This procedure uses the USMF sample company.
 

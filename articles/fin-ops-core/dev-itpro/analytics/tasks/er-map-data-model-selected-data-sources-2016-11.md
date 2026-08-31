@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappin
 
 # ER Map data model to selected data sources
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected data sources. You use this model mapping as a data source in a format configuration that manages electronic payment documents. In this example, you map a data model for sample company, Litware, Inc. to data sources. To complete these steps, you must first complete the steps in the "Select data sources for model mapping" procedure.
 

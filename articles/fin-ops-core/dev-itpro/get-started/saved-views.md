@@ -15,7 +15,7 @@ ms.custom:
 
 # Saved views
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Personalization plays an important role in allowing users and organizations to optimize the user experience to meet their needs. For more information on personalization, see [Personalize the user experience](personalize-user-experience.md).
 

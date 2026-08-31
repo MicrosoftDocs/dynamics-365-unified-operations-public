@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.11
 
 # Process automation
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Process automation makes it easy to schedule processes that the batch server runs. The updated calendar view of the scheduled work lets end users view and take action on scheduled and completed work.
 

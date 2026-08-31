@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Edit a legal entity after dual-write setup 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The dual-write wizard enables you to add or remove a company or legal entity after dual-write setup. You don't need to unlink and relink your dual-write environment.
 

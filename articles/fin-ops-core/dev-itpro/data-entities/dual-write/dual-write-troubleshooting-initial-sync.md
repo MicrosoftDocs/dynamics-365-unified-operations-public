@@ -16,7 +16,7 @@ ms.custom:
 
 # Troubleshoot problems during initial synchronization
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix problems that might occur during initial synchronization.
 

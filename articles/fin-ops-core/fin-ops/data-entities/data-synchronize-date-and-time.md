@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Synchronize date and time in import jobs
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Set the time zone for your import job to Coordinated Universal Time (UTC). If you use a different setting, you might see unexpected dates and times in your imported data. Without the correct setting, the import process converts the UTC date to the local format, and then system settings convert it again.
 

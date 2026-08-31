@@ -15,7 +15,7 @@ ms.assetid: ca4b2ccf-d68d-4344-833e-1c45d966246c
 
 # Power BI Embedded integration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can embed Microsoft Power BI content that partners and independent software vendors (ISVs) develop directly into Microsoft Dynamics 365 Finance. This article describes some of the ways that you can use the Microsoft Power BI Embedded integration.
 
